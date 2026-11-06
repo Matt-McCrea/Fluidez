@@ -319,6 +319,8 @@
 /* the English translation under a Spanish sentence (Verbos): there to help, so small */
 .g-gap { white-space: nowrap; }
 .g-sub { margin: -10px 0 18px; font-size: .86rem; line-height: 1.4; color: var(--muted); font-weight: 450; }
+.g-peek { background: none; border: 0; padding: 4px 0; font: inherit; font-size: .82rem; color: var(--muted); text-decoration: underline; cursor: pointer; }
+.g-fb-en { font-style: italic; }
 
 /* the 3-2-1 over a Contrarreloj round that was hidden (locked phone, another
    app in front): the clock is stopped until it reaches nothing */
@@ -412,6 +414,7 @@
   background: var(--bad-bg); border-left: 3px solid var(--bad);
 }
 .g-shell[data-state="near"] .g-correct { background: var(--panel-2); border-left-color: var(--warn); }
+.g-shell[data-state="good"] .g-correct.is-right { background: var(--panel-2); border-left-color: var(--good, #1f9d78); }
 .g-fb-label {
   font-size: .68rem; text-transform: uppercase; letter-spacing: .09em; font-weight: 750;
   color: var(--bad); flex: none;

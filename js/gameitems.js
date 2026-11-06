@@ -381,7 +381,7 @@ window.GameItems = (function () {
     return idx;
   }
   function index() { return IDX || buildIndex(); }
-  function reset() { IDX = null; GRIND = null; }
+  function reset() { IDX = null; GRIND = null; PGRIND = null; }
 
   // ---- what the round should lean towards ----------------------------------
   // Games are not a separate silo: given a few equally good candidates, take
@@ -1340,7 +1340,9 @@ window.GameItems = (function () {
     A1: ['presente'],
     A2: ['preterito', 'imperfecto', 'perfecto', 'futuro', 'imperativo'],
     B1: ['condicional', 'presubj', 'plusc', 'impneg'],
-    B2: ['impsubj', 'futperf', 'condperf', 'perfsubj']
+    B2: ['impsubj', 'futperf', 'condperf', 'perfsubj'],
+    // not an engine tense: haber's imperfect subjunctive plus the participle; the sentence bank (data/verb-gaps.js) is its only source
+    C1: ['pluscsubj']
   };
   function tensesForBand(band) {
     var out = [];
@@ -1402,21 +1404,73 @@ window.GameItems = (function () {
     return it;
   }
 
+  /* ---- VERB GAPS: THE SENTENCE BANK ---------------------------------------
+   * data/verb-gaps.js (tools/build-verb-gaps.js) is what Verbos deals from:
+   * sentences whose trigger alone decides the form, with the wrong options
+   * already chosen. The English is NOT on screen (the Spanish must decide);
+   * it is one tap away (item.hint) and in the correction. A miss explains
+   * itself in the language of the player's band: Spanish from B1, English
+   * below, the other one tap away (note / noteAlt). */
+  var VG_KEY = 'fluidez.vgrecent', VG_KEEP = 60, vgMem = null;
+  function vgRecent() {
+    try { var r = JSON.parse(localStorage.getItem(VG_KEY)); vgMem = Array.isArray(r) ? r : []; } catch (e) {}
+    return vgMem || (vgMem = []);
+  }
+  function vgRemember(q) {
+    var r = vgRecent().slice();
+    r.push(q);
+    vgMem = r;
+    if (r.length > VG_KEEP) r.splice(0, r.length - VG_KEEP);
+    try { localStorage.setItem(VG_KEY, JSON.stringify(r)); } catch (e) {}
+  }
+  function vgFor(tk) {
+    return (window.VERB_GAPS || []).filter(function (x) { return x.t === tk; });
+  }
+  function bandIx(b) { var i = BANDS.indexOf(b); return i < 0 ? 0 : i; }
+
+  function bankItem(tk, rng) {
+    var pb = bandIx(playerBand());
+    var cands = vgFor(tk).filter(function (x) { return bandIx(x.b) <= pb + 1; });
+    if (!cands.length) cands = vgFor(tk);
+    if (!cands.length) return null;
+    var recent = vgRecent();
+    var fresh = cands.filter(function (x) { return recent.indexOf(x.q) === -1; });
+    if (!fresh.length) {                      // everything is recent: take the one dealt longest ago
+      fresh = [cands.slice().sort(function (a, b) { return recent.lastIndexOf(a.q) - recent.lastIndexOf(b.q); })[0]];
+    }
+    // the player's band first, one band up half as likely, below the band a little less than that
+    var wOf = function (x) { var d = bandIx(x.b) - pb; return d === 0 ? 4 : d > 0 ? 2 : 1; };
+    var total = fresh.reduce(function (s, x) { return s + wOf(x); }, 0), at = rnd(rng) * total, g = fresh[0];
+    for (var i = 0; i < fresh.length; i++) { at -= wOf(fresh[i]); if (at < 0) { g = fresh[i]; break; } }
+    vgRemember(g.q);
+    var id = 'vt:' + g.i + ':' + g.t;
+    var es = g.w || null, en = g.we || null, inEs = pb >= 2;
+    return { kind: 'grammar', play: answeredRight(id) ? 'type' : 'choose', cefr: g.b, inf: g.i,
+      topic: 'tense:' + g.t, id: id, prompt: g.q.replace(/___+/g, '＿＿＿'), answer: g.a,
+      accept: [g.a].concat(g.x || []), options: E.shuffle(g.o.slice()),
+      sub: null, peek: g.e || null,
+      note: inEs ? es : en, noteAlt: inEs ? en : es, noteAltLabel: inEs ? 'in English' : 'en español',
+      bonus: 20 + (TENSE_BONUS[g.t] || 0) / 2 };
+  }
+
   function sverbItem(rung, rng, opts) {
     var band = playerBand();
     var base = tensesForBand(band);
     var chosen = opts && opts.tenses && opts.tenses.length ? opts.tenses : null;
-    var tenses = chosen || base;
-    var tensePool = base.concat((chosen || []).filter(function (t) { return base.indexOf(t) === -1; }));
+    var tenses = (chosen || base).filter(function (t) { return t !== 'pluscsubj' || vgFor(t).length; });
+    if (!tenses.length) tenses = base.filter(function (t) { return t !== 'pluscsubj'; });
+    // the engine cannot conjugate pluscsubj, so the old path never sees it
+    var tensePool = base.concat((chosen || []).filter(function (t) { return base.indexOf(t) === -1; }))
+      .filter(function (t) { return t !== 'pluscsubj'; });
     for (var i = 0; i < 6; i++) {
       var tk = pick(tenses, rng);
-      var it = verbGapItem(tk, rng, tensePool) || verbFormItem(tk, rung, rng);
+      var it = bankItem(tk, rng) || (tk === 'pluscsubj' ? null : verbGapItem(tk, rng, tensePool) || verbFormItem(tk, rung, rng));
       if (it) return it;
     }
     return null;
   }
 
-  function sphraseItem(rung, rng) {
+  function legacyPhraseItem(rung, rng) {
     var idx = index(), band = bandOf(rung);
     for (var i = 0; i < 18; i++) {
       var got = fromBands(idx.pairs, band, rng);
@@ -1511,13 +1565,19 @@ window.GameItems = (function () {
     return chosen.length === 3 ? chosen : null;
   }
   function isSmall(e) { return !e.verb && !e.th && !/^(el|la|los|las)\s/i.test(e.es); }
-  function grindPick(opts, rng) {
-    var G = grindList();
+  /* grindPick deals from any ranked list shaped like grindList() ({ list, byTheme };
+   * entries carry es, id, pos, c). Palabras uses the word list; Frases passes the
+   * phrase list and a `sub` key, so a Jugar round keeps one grind state per list.
+   * G.bandCap holds back NEW entries more than a band above the player's. */
+  function grindPick(opts, rng, G, sub) {
+    G = G || grindList();
     if (!G.list.length) return null;
     var st = (opts && opts.grind) || { asked: 0, newN: 0, used: {} };
+    if (sub) { if (opts && opts.grind) st = st[sub] = st[sub] || { asked: 0, newN: 0, used: {} }; }
     st.used = st.used || {}; st.asked = st.asked || 0; st.newN = st.newN || 0;
     st.small = st.small || 0; st.content = st.content || 0; st.verbs = st.verbs || 0;
-    var L = opts && opts.theme && G.byTheme[opts.theme] ? G.byTheme[opts.theme] : G.list;
+    var L = !sub && opts && opts.theme && G.byTheme[opts.theme] ? G.byTheme[opts.theme] : G.list;
+    var capIx = G.bandCap ? bandIx(playerBand()) + 1 : 9;
     var store = srsStore(), td = window.SRS && window.SRS.today ? window.SRS.today() : Math.floor(Date.now() / 864e5);
     /* A new word a B1+ player gets right at first sight was already theirs:
      * it does not use up the round's allowance of new words, so somebody who
@@ -1540,6 +1600,7 @@ window.GameItems = (function () {
            * así) are the top of any frequency list, and ten of them in a row
            * is a grammar lesson, not a vocabulary payoff. New words come three
            * content words to one small word, each list in rank order. */
+          if (bandIx(e.c) > capIx) continue;
           if (isSmall(e)) { if (!freshSmall) freshSmall = e; }
           else if (e.verb) { if (!freshVerb) freshVerb = e; }
           else if (!freshWord) freshWord = e;
@@ -1556,7 +1617,7 @@ window.GameItems = (function () {
       var freshContent = freshVerb && (!freshWord || st.verbs * 2 < st.content - st.verbs) ? freshVerb : (freshWord || freshVerb);
       fresh = freshSmall && (!freshContent || st.small * 3 < st.content) ? freshSmall : (freshContent || freshSmall);
       var counted = opts && opts.count;
-      var allowNew = counted && opts.gkind === 'sword' ? st.newN < 4 : st.newN * 3 <= st.asked;
+      var allowNew = counted && (opts.gkind === 'sword' || opts.gkind === 'sphrase') ? st.newN < 4 : st.newN * 3 <= st.asked;
       var got = null, mode = null;
       if (due.length) {
         due.sort(function (a, b) { return a.d - b.d || a.e.pos - b.e.pos; });
@@ -1608,6 +1669,71 @@ window.GameItems = (function () {
     if (!wrong) return null;
     item.play = 'choose';
     return item;
+  }
+
+  /* ---- FRASES --------------------------------------------------------------
+   * data/phrases.js (tools/build-phrases.js), dealt by the same grind as Palabras
+   * (due, missed, new in list order, the new-per-round cap, the B1+ free pass).
+   * English shown, Spanish asked: tapped (four Spanish phrases of the same theme
+   * and tier) until it has been answered right once, then typed at six words or
+   * fewer and built from chips at seven or eight. SRS ids are p:<es>. */
+  var PGRIND = null;
+  function phraseWords(es) { return es.replace(/[.,;:!?¿¡"“”]/g, '').replace(/\s+/g, ' ').trim().split(' '); }
+  function phraseList() {
+    if (PGRIND) return PGRIND;
+    var list = [], byTheme = {}, byEn = {};
+    (window.PHRASES || []).forEach(function (p, i) {
+      if (!p || !p.es || !p.en) return;
+      var e = { es: p.es, en: p.en, alt: p.alt || [], th: p.th || 'frases', c: p.b || 'A1', tier: p.t || 1, note: p.n || null,
+                id: 'p:' + p.es, pos: list.length, verb: false, n: phraseWords(p.es).length };
+      list.push(e);
+      (byTheme[e.th] = byTheme[e.th] || []).push(e);
+      (byEn[e.en.toLowerCase()] = byEn[e.en.toLowerCase()] || []).push(e);
+    });
+    PGRIND = { list: list, byTheme: byTheme, byEn: byEn, bandCap: true };
+    return PGRIND;
+  }
+  function phraseDistractors(e, G, rng) {
+    var chosen = [];
+    function ok(o) {
+      if (o.es === e.es || o.en.toLowerCase() === e.en.toLowerCase() || e.alt.indexOf(o.es) !== -1) return false;
+      for (var i = 0; i < chosen.length; i++) if (chosen[i].es === o.es || chosen[i].en.toLowerCase() === o.en.toLowerCase()) return false;
+      return true;
+    }
+    var th = G.byTheme[e.th] || [];
+    var stages = [
+      function () { return th.filter(function (o) { return o.tier === e.tier; }); },
+      function () { return th; },
+      function () { return G.list.filter(function (o) { return o.tier === e.tier && Math.abs(o.n - e.n) <= 2; }); },
+      function () { return G.list; }
+    ];
+    for (var s = 0; s < stages.length && chosen.length < 3; s++) {
+      var pool = E.shuffle(stages[s]().slice(), rng);
+      for (var i = 0; i < pool.length && chosen.length < 3; i++) if (ok(pool[i])) chosen.push(pool[i]);
+    }
+    return chosen.length === 3 ? chosen : null;
+  }
+  function sphraseItem(rung, rng, opts) {
+    var G = phraseList();
+    if (!G.list.length) return legacyPhraseItem(rung, rng);
+    var p = grindPick(opts, rng, G, 'ph');
+    if (!p) return null;
+    var e = p.e, known = answeredRight(e.id);
+    var item = pairItem({ es: e.es, en: e.en, n: e.n, note: e.note, id: e.id, bonus: 0 }, e.c, known && e.n >= 7 && e.n <= 8);
+    item.grind = p.mode; item.firstSight = p.mode === 'new'; item.rank = e.pos + 1; item.noteOnRight = !!e.note;
+    if (known && e.n <= 6) { item.play = 'type'; item.accept = [e.es].concat(e.alt); return item; }
+    if (known && e.n <= 8) return item;                       // built from chips
+    var wrong = phraseDistractors(e, G, rng);
+    if (!wrong) return null;
+    item.play = 'choose'; delete item.words; delete item.reveal; item.answer = e.es;
+    item.options = E.shuffle([e.es].concat(wrong.map(function (o) { return o.es; })), rng);
+    return item;
+  }
+  function phraseCoverage() {
+    var G = phraseList(), store = srsStore(), of = Math.floor(G.list.length / 100) * 100 || G.list.length, n = 0;
+    G.list.forEach(function (e) { var c = store[e.id]; if (c && typeof c === 'object' && c.reps > 0) n++; });
+    n = Math.min(n, of);
+    return { n: n, of: of, text: 'Conoces ' + thousands(n) + ' de las ' + thousands(of) + ' frases más comunes' };
   }
 
   /* How much of the most common Spanish this player has answered right at least
@@ -1706,7 +1832,7 @@ window.GameItems = (function () {
       case 'tense':     return tenseItem(rung, rng, opts);
       case 'sverb':     return sverbItem(rung, rng, opts);
       case 'sword':     return swordItem(rung, rng, opts);
-      case 'sphrase':   return sphraseItem(rung, rng);
+      case 'sphrase':   return sphraseItem(rung, rng, opts);
       case 'smix':      return smixItem(rung, rng, opts);
       case 'mixed':     return mixedItem(rung, rng, opts);
       default:          return mixedItem(rung, rng, opts);
@@ -1915,7 +2041,7 @@ window.GameItems = (function () {
     answeredRight: answeredRight, tensesForBand: tensesForBand,
     listenRate: listenRate, bandForLevel: bandForLevel,
     enKey: enKey, altsFor: altsFor,
-    coverage: coverage, grindThemes: grindThemes, grindList: grindList, owned: owned, relampagoItem: relampagoItem, OWN_MIN: OWN_MIN,
+    coverage: coverage, phraseCoverage: phraseCoverage, phraseList: phraseList, grindThemes: grindThemes, grindList: grindList, owned: owned, relampagoItem: relampagoItem, OWN_MIN: OWN_MIN,
     contrastDecks: contrastDecks, contrastRound: contrastRound, bothRight: bothRight, bothRightCount: bothRightCount
   };
 })();

@@ -1,0 +1,131 @@
+#T2
+Vivo en un apartamento|I live in an apartment||vivienda|A2
+Mi casa tiene tres cuartos|My house has three bedrooms|Mi casa tiene tres habitaciones|vivienda|A2|Cuarto is the usual word for bedroom in Colombia.
+Pago el arriendo mañana|I'm paying the rent tomorrow||vivienda|B1|Arriendo is rent in Colombia.
+Vivo con mis padres|I live with my parents||vivienda|A2
+Voy a cocinar la cena|I'm going to cook dinner||vivienda|A2
+Tengo que lavar la ropa|I have to do the laundry||vivienda|A2
+Se fue la luz|The power went out||vivienda|B1
+No hay agua|There's no water||vivienda|A2
+Abre la ventana, por favor|Open the window, please|Abra la ventana, por favor|vivienda|A2
+Cierra la puerta, por favor|Close the door, please|Cierre la puerta, por favor|vivienda|A2
+Apaga la luz|Turn off the light|Apague la luz|vivienda|A2
+Prende el televisor|Turn on the TV|Prenda el televisor|vivienda|A2|Prender = to turn on, usual in Colombia.
+Saca la basura|Take out the trash|Saque la basura|vivienda|A2
+Mi vecino hace mucho ruido|My neighbor makes a lot of noise||vivienda|B1
+Hoy está nublado|It's cloudy today||naturaleza|A2
+Va a llover|It's going to rain||naturaleza|A2
+Hace mucho viento|It's very windy||naturaleza|A2
+Está haciendo mucho sol|The sun is really strong||naturaleza|A2
+Hoy hace buen clima|The weather is nice today||naturaleza|A2
+¿Qué clima hace en Medellín?|What's the weather like in Medellín?||naturaleza|A2
+Llevo paraguas|I'm taking an umbrella|Llevo el paraguas|naturaleza|A2
+Está haciendo un frío terrible|It's terribly cold||naturaleza|B1
+Estoy muy emocionado|I'm very excited (said by a man)|Estoy muy emocionada|caracter|A2
+Estoy muy nervioso|I'm very nervous (said by a man)|Estoy muy nerviosa|caracter|A2
+Estoy enojado contigo|I'm angry with you (said by a man)|Estoy enojada contigo|caracter|A2
+Estoy preocupado|I'm worried (said by a man)|Estoy preocupada|caracter|A2
+Estoy aburrido|I'm bored (said by a man)|Estoy aburrida|caracter|A2
+Me siento muy solo|I feel very alone (said by a man)|Me siento muy sola|caracter|B1
+Estoy harto de esto|I'm fed up with this (said by a man)|Estoy harta de esto|caracter|B1
+Me da miedo|It scares me||caracter|A2
+Me da vergüenza|I'm embarrassed||caracter|B1
+Estoy muy contento|I'm very glad (said by a man)|Estoy muy contenta|caracter|A2
+Él es muy amable|He is very kind|Ella es muy amable|caracter|A2
+Eres muy simpático|You're very nice (to a man)|Eres muy simpática|caracter|A2
+Qué bonita tu casa|Your house is beautiful|Qué linda tu casa|vivienda|A2
+Me encanta tu camisa|I love your shirt||compras|A2
+Te ves muy bien|You look great|Se ve muy bien|relaciones|A2
+Qué buena idea|What a good idea||basicas|A2
+Eso suena bien|That sounds good||basicas|A2
+Me parece buena idea|I think it's a good idea||basicas|A2
+Pienso que sí|I think so||basicas|A2
+Creo que no|I don't think so||basicas|A2
+No lo creo|I doubt it||basicas|A2
+Eso depende|It depends||basicas|A2
+¿Tú qué piensas?|What do you think?|¿Usted qué piensa?|basicas|A2
+En mi opinión, es mejor|In my opinion, it's better||basicas|B1
+Prefiero el té|I prefer tea||alimentacion|A2
+Me parece caro|It seems expensive to me||compras|A2
+Es muy interesante|It's very interesting||basicas|A2
+Es una buena película|It's a good movie||arte|A2
+La comida estuvo deliciosa|The food was delicious||alimentacion|A2
+Me gusta la música latina|I like Latin music||arte|A2
+Toco la guitarra|I play the guitar||arte|A2
+Me gusta ver series|I like watching series||medios|A2
+Leo todas las noches|I read every night||ocio|A2
+Voy al gimnasio|I go to the gym||ocio|A2
+Juego fútbol con mis amigos|I play soccer with my friends||ocio|A2
+Me gusta caminar|I like to walk||ocio|A2
+Este fin de semana viajo|I'm traveling this weekend||ocio|A2
+El año pasado viajé a Cartagena|Last year I traveled to Cartagena||viajes|A2
+Ayer fui al supermercado|I went to the supermarket yesterday||compras|A2
+Mañana voy a trabajar|Tomorrow I'm going to work||trabajo|A2
+Anoche dormí muy mal|I slept very badly last night||salud|A2
+Esta mañana desayuné huevos|This morning I had eggs for breakfast||alimentacion|A2
+Normalmente almuerzo a las doce|I usually have lunch at noon||alimentacion|A2
+Cenamos tarde|We eat dinner late||alimentacion|A2
+Hace un año que vivo aquí|I've lived here for a year||vivienda|B1
+¿Cuánto tiempo llevas aquí?|How long have you been here?|¿Cuánto tiempo lleva aquí?|viajes|B1
+Es mi primera vez aquí|It's my first time here||viajes|A2
+¿Es tu primera vez aquí?|Is this your first time here?|¿Es su primera vez aquí?|viajes|B1
+Perdón por llegar tarde|Sorry for being late||basicas|A2
+Perdón por la molestia|Sorry for the trouble||basicas|B1
+Fue sin querer|It was an accident|Fue sin intención|basicas|A2
+Fue mi culpa|It was my fault||basicas|A2
+No fue mi culpa|It wasn't my fault||basicas|A2
+Lo olvidé|I forgot||basicas|A2
+Se me olvidó|I forgot it, it slipped my mind|Se me pasó|basicas|B1
+Se me perdió el celular|I lost my phone||medios|B1
+Me robaron la cartera|They stole my wallet|Me robaron el bolso|servicios|B1
+Necesito llamar a la policía|I need to call the police||servicios|B1
+Hubo un accidente|There was an accident||servicios|A2
+Llame a una ambulancia|Call an ambulance||servicios|B1
+¿Dónde queda el hospital?|Where is the hospital?||salud|A2
+Estoy esperando una respuesta|I'm waiting for an answer||trabajo|A2
+Le mando el informe hoy|I'll send you the report today||trabajo|B1
+Necesito más tiempo|I need more time||trabajo|A2
+Ya terminé|I'm done|Ya acabé|trabajo|A2
+Todavía no he terminado|I haven't finished yet||trabajo|B1
+Me ascendieron en el trabajo|I got promoted at work||trabajo|B1
+Renuncié ayer|I quit yesterday||trabajo|B1
+Me pagan los viernes|I get paid on Fridays||economia|B1
+Trabajo medio tiempo|I work part time||trabajo|B1
+Tengo un día libre|I have a day off||trabajo|A2
+Estoy de vacaciones|I'm on vacation||ocio|A2
+Voy a presentar el examen|I'm going to take the exam||educacion|B1
+Saqué buena nota|I got a good grade||educacion|B1
+Perdí la materia|I failed the class||educacion|B1
+Estudio todos los días|I study every day||educacion|A2
+Tengo que entregar la tarea|I have to hand in the homework||educacion|B1
+¿A qué te dedicas?|What do you do for a living?|¿A qué se dedica?|identidad|A2
+Soy ingeniero|I'm an engineer (said by a man)|Soy ingeniera|identidad|A2
+Soy casado|I'm married (said by a man)|Soy casada|identidad|A2
+Estoy soltero|I'm single (said by a man)|Estoy soltera|identidad|A2
+Tengo una hija|I have a daughter||relaciones|A2
+Mi mamá cocina muy bien|My mom cooks very well||relaciones|A2
+Mi papá trabaja mucho|My dad works a lot||relaciones|A2
+Mis abuelos viven en el campo|My grandparents live in the countryside||relaciones|A2
+Tengo novia|I have a girlfriend||relaciones|A2
+Quiero presentarte a mi amigo|I want to introduce you to my friend||relaciones|B1
+Somos de la misma ciudad|We are from the same city||relaciones|B1
+Hablamos mañana|We'll talk tomorrow||relaciones|A2
+Hace mucho no te veía|I haven't seen you in a long time||relaciones|B1
+¡Cuánto tiempo sin verte!|Long time no see!||relaciones|B1
+Me alegra verte|I'm glad to see you|Me alegra verlo|relaciones|A2
+Gracias por la invitación|Thanks for the invitation||relaciones|A2
+Llevo una botella de vino|I'm bringing a bottle of wine||relaciones|B1
+Que lo pases bien|Have a good time|Que lo disfrutes|relaciones|B1
+Me tengo que ir ya|I have to leave now||basicas|A2
+¿Puedo usar su baño?|May I use your bathroom? (formal)|¿Puedo usar tu baño?|servicios|A2
+¿Me presta su lapicero?|Could I borrow your pen? (formal)|¿Me prestas tu lapicero?|educacion|A2|Lapicero is the common word for ballpoint pen in Colombia.
+¿Está ocupado este puesto?|Is this seat taken?|¿Está ocupado este asiento?|servicios|A2|Puesto = seat or place in line in Colombia.
+¿Quién sigue en la fila?|Who's next in line?|¿Quién es el último?|servicios|B1
+Necesito un recibo|I need a receipt||servicios|A2
+Quiero hacer una queja|I want to make a complaint||servicios|B1
+Esto no funciona|This doesn't work||servicios|A2
+Está dañado|It's broken||servicios|B1|Dañado is the usual Colombian word for broken.
+¿Me lo puede arreglar?|Can you fix it for me?||servicios|B1
+Quiero devolver esto|I want to return this||compras|B1
+Es para un regalo|It's for a gift||compras|A2
+¿Me lo puede envolver?|Can you wrap it for me?||compras|B1

@@ -52,7 +52,7 @@ const FUNC = new Set(('de la que el en y a los se del las un por con no una su p
   'entre cuando muy sin sobre también tambien me hasta hay donde quien desde todo nos durante todos uno les ni contra otros ese eso ante ellos e ' +
   'esto mí antes algunos qué que unos yo otro otras otra él tanto esa estos mucho quienes nada muchos cual poco ella estar estas algunas algo nosotros ' +
   'mi mis tú te ti tu tus ellas nosotras vosotros vosotras os así asi aquí aqui allí ahí ahora hacia según segun tras bajo salvo pues sino mientras ' +
-  'aunque cada tan tal qué quién cuál cómo dónde cuándo cuánto aquel aquella aquello aquellos aquellas esas mío mía suyo suya').split(/\s+/));
+  'aunque cada tan tal qué quién cuál cómo dónde cuándo cuánto aquel aquella aquello aquellos aquellas esas mío mía suyo suya unas').split(/\s+/));
 const PH_STOP = new Set('de la el que a en y por un una se los las con para del al lo su sus mi tu me te le les no es o'.split(' '));
 /* verb forms that are really a preposition/adverb/pronoun */
 const FORM_STOP = new Set([...FUNC]);
@@ -107,6 +107,12 @@ function compute() {
     (n.pcic || []).forEach(p => { if (!th && notion[p]) th = notion[p]; });
     cand.push({ es: n.es, en: n.en || n.title, cefr: n.band || null, theme: th, src: 'g', graphTheme: !!th });
   });
+  /* tools/freq/additions.json: common words VOCAB and the graph lack. { es, en, th, c, g?, f? }.
+   * f = the subtitle form(s) whose count ranks it (default: the word itself, its plural, its
+   * feminine); an expression such as "a través de" names its content word. Added entries are
+   * always words, never phrases, and are dropped when the spelling is already listed. */
+  const ADD = readJson('additions.json', []);
+  ADD.forEach(a => cand.push({ es: a.es, en: a.en, cefr: a.c || null, theme: a.th || null, src: 'a', add: a }));
   const byKey = new Map();
   /* a musical-note gloss ("E (musical note)") must not shadow the word it shares a spelling with (mi, si) */
   cand.sort((a, b) => (/musical note/.test(a.en) ? 1 : 0) - (/musical note/.test(b.en) ? 1 : 0));
@@ -121,8 +127,8 @@ function compute() {
     if (bare.split(/\s+/).some(t => PROF.has(t))) { stats.excluded.profanity.push(es); return; }
     const key = bare.toLowerCase();
     const prev = byKey.get(key);
-    if (prev) { if (!prev.theme && c.theme) prev.theme = c.theme; if (!prev.cefr && c.cefr) prev.cefr = c.cefr; return; }
-    byKey.set(key, { key, bare, es, hasArt, en: c.en, cefr: c.cefr, theme: c.theme, src: c.src });
+    if (prev) { if (c.add) { (stats.additionsDup = stats.additionsDup || []).push(es); return; } if (!prev.theme && c.theme) prev.theme = c.theme; if (!prev.cefr && c.cefr) prev.cefr = c.cefr; return; }
+    byKey.set(key, { key, bare, es, hasArt, en: c.en, cefr: c.cefr, theme: c.theme, src: c.src, add: c.add });
   });
   const ents = [...byKey.values()];
 
@@ -150,7 +156,7 @@ function compute() {
       (arr || []).forEach(f => String(f || '').split(/\s*[\/,]\s*|\s+o\s+/).forEach(g => {
         const p = g.replace(/^no /, '').split(/\s+/);
         if (COMPOUND.has(t.key)) add(p[p.length - 1]);
-        else { if (refl && p.length > 1) p.shift(); if (p.length === 1) add(p[0]); }
+        else { if (refl && p.length > 1) p.shift(); if (p.length === 1) { add(p[0]); if (t.key === 'impsubj') add(p[0].replace(/(ra|ras|ramos|rais|ran)$/, m => ({ ra: 'se', ras: 'ses', ramos: 'semos', rais: 'seis', ran: 'sen' }[m]))); } }
       }));
     });
     add(v.inf.replace(/se$/, ''));
@@ -193,6 +199,14 @@ function compute() {
       return t + weight(r, f) * cnt(f) * ((r.unique + 1) / tot);
     }, 0));
   });
+  /* verb overrides: overrides.json key "v:<infinitive>" { share } scales a score a homograph
+   * inflated (coser: cosa, cosas), { rank: "exclude" } drops it. */
+  verbs.forEach(r => {
+    const o = OV['v:' + r.inf];
+    if (!o) return;
+    if (o.rank === 'exclude') r.gone = true;
+    else if (o.share) r.score = Math.round(r.score * o.share);
+  });
   const allVerbForms = new Set();
   verbs.forEach(r => r.forms.forEach(f => allVerbForms.add(f)));
 
@@ -208,6 +222,12 @@ function compute() {
     if (!e.hasArt && !/\s/.test(e.bare) && (verbs.has(e.bare))) {
       const r = verbs.get(e.bare); // fill the verb's cefr/theme from its VOCAB/graph entry
       r.cefr = e.cefr; r.theme = e.theme; r.vocabEs = e.es; return;
+    }
+    if (e.add && e.add.f) {
+      e.forms = [].concat(e.add.f);
+      e.score = e.forms.reduce((t, f) => t + cnt(f), 0);
+      words.push(e);
+      return;
     }
     if (/\s/.test(e.bare)) {
       const toks = e.bare.split(/\s+/).map(t => t.replace(/[.,;:¿?¡!]/g, '').toLowerCase()).filter(Boolean);
@@ -263,7 +283,10 @@ function compute() {
       if (!ov) return;
       e.ov = ov;
       if (ov.show) e.es = ov.show;
-      if (ov.rank === 'exclude') { e.gone = true; return; }
+      /* f: rank by these subtitle forms instead (a headword whose own spelling is the wrong one) */
+      if (ov.f) e.score = [].concat(ov.f).reduce((t, f) => t + cnt(f), 0);
+      /* into: an excluded plural hands its count to the singular entry that stays */
+      if (ov.rank === 'exclude') { e.gone = true; if (ov.into) { const t = list.find(x => x.es === ov.into); if (t) t.score += e.score; } return; }
       if (ov.rank === 'demote') e.score = Math.floor(e.score * (ov.share || DEMOTE));
       else if (typeof ov.rank === 'number') moves.push(e);
     });
@@ -300,7 +323,7 @@ function compute() {
   });
   verbOut.forEach(r => { if (!r.cefr && r.refl) { const b = verbs.get(r.base); if (b) r.cefr = b.cefr; } });
   // profanity among verbs
-  const verbFinal = verbOut.filter(r => !PROF.has(r.inf.replace(/se$/, '')) || (stats.excluded.profanity.push(r.inf), false));
+  const verbFinal = verbOut.filter(r => !r.gone).filter(r => !PROF.has(r.inf.replace(/se$/, '')) || (stats.excluded.profanity.push(r.inf), false));
 
   /* tools/freq/glosses.json: reviewed prompts. { "<es as listed>": { en, th (theme or null), g: 1 } }.
    * en replaces the gloss, th replaces the theme (null clears it), g: 1 marks a grammar word the
@@ -316,12 +339,14 @@ function compute() {
     o.c = e.cefr || null;
     o.r = i + 1;
     if (e.sp) o.sp = 1;
+    if (e.add && e.add.g) o.g = 1;
     const gl = GL[es];
     if (gl && kind !== 'p') {
       glUsed.add(es);
       if (gl.en) o.en = gl.en;
       if (Object.prototype.hasOwnProperty.call(gl, 'th')) o.th = gl.th || null;
       if (gl.g) o.g = 1;
+      if (gl.sp) o.sp = 1;
     }
     return o;
   });
@@ -336,7 +361,7 @@ function compute() {
 
 function serialise(data) {
   const lit = o => '{es:' + JSON.stringify(o.es) + ',en:' + JSON.stringify(o.en) + (o.th ? ',th:' + JSON.stringify(o.th) : '') +
-    (o.c ? ',c:"' + o.c + '"' : '') + ',r:' + o.r + (o.g ? ',g:1' : '') + '}';
+    (o.c ? ',c:"' + o.c + '"' : '') + ',r:' + o.r + (o.g ? ',g:1' : '') + (o.sp ? ',sp:1' : '') + '}';
   const arr = l => '[\n' + l.map(lit).join(',\n') + '\n]';
   return `/* ============================================================================
  * WORD RANK — GENERATED. Do not edit by hand.

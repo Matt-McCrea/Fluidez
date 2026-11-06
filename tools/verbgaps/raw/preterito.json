@@ -1,0 +1,2538 @@
+[
+ {
+  "q": "Ayer ___ (llegar) tarde a la oficina porque había mucho tráfico.",
+  "inf": "llegar",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "llegué",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Ayer fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Yesterday fixes a specific past moment: preterite.",
+  "en": "Yesterday I got to the office late because there was a lot of traffic.",
+  "band": "A2"
+ },
+ {
+  "q": "Anoche mis vecinos ___ (hacer) una fiesta que duró hasta las tres.",
+  "inf": "hacer",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "hicieron",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Anoche fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last night fixes a specific past moment: preterite.",
+  "en": "Last night my neighbors threw a party that lasted until three.",
+  "band": "A2"
+ },
+ {
+  "q": "El sábado pasado Valentina ___ (ir) a la finca con sus primos.",
+  "inf": "ir",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "fue",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "El sábado pasado fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last Saturday fixes a specific past moment: preterite.",
+  "en": "Last Saturday Valentina went to the farm with her cousins.",
+  "band": "A2"
+ },
+ {
+  "q": "Hace dos años nosotros ___ (viajar) a Cartagena en diciembre.",
+  "inf": "viajar",
+  "tense": "preterito",
+  "person": "nosotros",
+  "answer": "viajamos",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto"
+  ],
+  "why_es": "Hace dos años fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Two years ago fixes a specific past moment: preterite.",
+  "en": "Two years ago we traveled to Cartagena in December.",
+  "band": "A2"
+ },
+ {
+  "q": "Mi hermano ___ (terminar) la carrera en 2019 en la Nacional.",
+  "inf": "terminar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "terminó",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "En 2019 fija un momento concreto ya pasado: pretérito.",
+  "why_en": "In 2019 fixes a specific past moment: preterite.",
+  "en": "My brother finished his degree in 2019 at the Nacional.",
+  "band": "A2"
+ },
+ {
+  "q": "Hoy en la mañana yo ___ (tomar) el bus equivocado.",
+  "inf": "tomar",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "tomé",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Hoy en la mañana fija un momento concreto ya pasado: pretérito.",
+  "why_en": "This morning fixes a specific past moment: preterite.",
+  "en": "This morning I took the wrong bus.",
+  "band": "A2"
+ },
+ {
+  "q": "La semana pasada tú ___ (perder) el celular en un taxi, ¿cierto?",
+  "inf": "perder",
+  "tense": "preterito",
+  "person": "tú",
+  "answer": "perdiste",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "La semana pasada fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last week fixes a specific past moment: preterite.",
+  "en": "Last week you lost your phone in a taxi, right?",
+  "band": "A2"
+ },
+ {
+  "q": "El lunes el jefe nos ___ (decir) que la reunión era el viernes.",
+  "inf": "decir",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "dijo",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "El lunes fija un momento concreto ya pasado: pretérito.",
+  "why_en": "On Monday fixes a specific past moment: preterite.",
+  "en": "On Monday the boss told us the meeting was on Friday.",
+  "band": "A2"
+ },
+ {
+  "q": "Esta mañana a las siete yo ___ (romper) un vaso al lavar los platos.",
+  "inf": "romper",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "rompí",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Esta mañana fija un momento concreto ya pasado: pretérito.",
+  "why_en": "This morning fixes a specific past moment: preterite.",
+  "en": "This morning at seven I broke a glass washing the dishes.",
+  "band": "A2"
+ },
+ {
+  "q": "Ayer yo ___ (ver) a tu hermano en el centro comercial.",
+  "inf": "ver",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "vi",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Ayer fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Yesterday fixes a specific past moment: preterite.",
+  "en": "Yesterday I saw your brother at the mall.",
+  "band": "A2"
+ },
+ {
+  "q": "Anoche los niños ___ (dormir) muy poco por el ruido de la calle.",
+  "inf": "dormir",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "durmieron",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Anoche fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last night fixes a specific past moment: preterite.",
+  "en": "Last night the kids slept very little because of the street noise.",
+  "band": "A2"
+ },
+ {
+  "q": "El año pasado mi empresa ___ (abrir) una oficina en Medellín.",
+  "inf": "abrir",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "abrió",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "El año pasado fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last year fixes a specific past moment: preterite.",
+  "en": "Last year my company opened an office in Medellín.",
+  "band": "A2"
+ },
+ {
+  "q": "El domingo ___ (nacer) el hijo de mi prima Sandra.",
+  "inf": "nacer",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "nació",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "El domingo fija un momento concreto ya pasado: pretérito.",
+  "why_en": "On Sunday fixes a specific past moment: preterite.",
+  "en": "On Sunday my cousin Sandra's son was born.",
+  "band": "A2"
+ },
+ {
+  "q": "Ayer a las cinco tú ___ (salir) de la oficina más temprano que de costumbre.",
+  "inf": "salir",
+  "tense": "preterito",
+  "person": "tú",
+  "answer": "saliste",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Ayer a las cinco fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Yesterday at five fixes a specific past moment: preterite.",
+  "en": "Yesterday at five you left the office earlier than usual.",
+  "band": "A2"
+ },
+ {
+  "q": "En marzo de 2020 nosotros ___ (cerrar) el restaurante por la pandemia.",
+  "inf": "cerrar",
+  "tense": "preterito",
+  "person": "nosotros",
+  "answer": "cerramos",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto"
+  ],
+  "why_es": "En marzo de 2020 fija un momento concreto ya pasado: pretérito.",
+  "why_en": "In March 2020 fixes a specific past moment: preterite.",
+  "en": "In March 2020 we closed the restaurant because of the pandemic.",
+  "band": "A2"
+ },
+ {
+  "q": "Hace tres días nosotros ___ (comprar) un carro usado.",
+  "inf": "comprar",
+  "tense": "preterito",
+  "person": "nosotros",
+  "answer": "compramos",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto"
+  ],
+  "why_es": "Hace tres días fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Three days ago fixes a specific past moment: preterite.",
+  "en": "Three days ago we bought a used car.",
+  "band": "A2"
+ },
+ {
+  "q": "Anoche yo ___ (leer) hasta muy tarde y hoy estoy muerto.",
+  "inf": "leer",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "leí",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Anoche fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last night fixes a specific past moment: preterite.",
+  "en": "Last night I read until very late and today I am dead tired.",
+  "band": "A2"
+ },
+ {
+  "q": "La semana pasada los vecinos ___ (arreglar) el techo del edificio.",
+  "inf": "arreglar",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "arreglaron",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "La semana pasada fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last week fixes a specific past moment: preterite.",
+  "en": "Last week the neighbors fixed the roof of the building.",
+  "band": "A2"
+ },
+ {
+  "q": "Ayer tú ___ (preparar) un sancocho para toda la familia, ¿no?",
+  "inf": "preparar",
+  "tense": "preterito",
+  "person": "tú",
+  "answer": "preparaste",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Ayer fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Yesterday fixes a specific past moment: preterite.",
+  "en": "Yesterday you made a sancocho for the whole family, right?",
+  "band": "A2"
+ },
+ {
+  "q": "Hace una hora ella ___ (pedir) una cita con el médico.",
+  "inf": "pedir",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "pidió",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "\"Hace una hora\": un hecho terminado en un momento pasado va en pretérito.",
+  "why_en": "\"An hour ago\": a finished event at a past moment takes the preterite.",
+  "en": "An hour ago she made an appointment with the doctor.",
+  "band": "A2"
+ },
+ {
+  "q": "El martes mis primos ___ (venir) a visitarnos sin avisar.",
+  "inf": "venir",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "vinieron",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "El martes fija un momento concreto ya pasado: pretérito.",
+  "why_en": "On Tuesday fixes a specific past moment: preterite.",
+  "en": "On Tuesday my cousins came to visit us without warning.",
+  "band": "A2"
+ },
+ {
+  "q": "Anoche nosotros ___ (poner) la mesa para diez personas.",
+  "inf": "poner",
+  "tense": "preterito",
+  "person": "nosotros",
+  "answer": "pusimos",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto"
+  ],
+  "why_es": "Anoche fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last night fixes a specific past moment: preterite.",
+  "en": "Last night we set the table for ten people.",
+  "band": "A2"
+ },
+ {
+  "q": "En 2015 yo ___ (conseguir) mi primer trabajo en un banco.",
+  "inf": "conseguir",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "conseguí",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "En 2015 fija un momento concreto ya pasado: pretérito.",
+  "why_en": "In 2015 fixes a specific past moment: preterite.",
+  "en": "In 2015 I got my first job at a bank.",
+  "band": "A2"
+ },
+ {
+  "q": "Anoche ___ (llover) durísimo en Bogotá y se inundó la calle.",
+  "inf": "llover",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "llovió",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Anoche fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last night fixes a specific past moment: preterite.",
+  "en": "Last night it rained hard in Bogotá and the street flooded.",
+  "band": "A2"
+ },
+ {
+  "q": "El viernes pasado tú ___ (traer) la torta al cumpleaños de Marta.",
+  "inf": "traer",
+  "tense": "preterito",
+  "person": "tú",
+  "answer": "trajiste",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "El viernes pasado fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last Friday fixes a specific past moment: preterite.",
+  "en": "Last Friday you brought the cake to Marta's birthday.",
+  "band": "A2"
+ },
+ {
+  "q": "Hace una semana Ana ___ (empezar) a trabajar en el hospital.",
+  "inf": "empezar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "empezó",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Hace una semana fija un momento concreto ya pasado: pretérito.",
+  "why_en": "A week ago fixes a specific past moment: preterite.",
+  "en": "A week ago Ana started working at the hospital.",
+  "band": "A2"
+ },
+ {
+  "q": "Esta mañana yo ___ (encontrar) mis llaves debajo del sofá.",
+  "inf": "encontrar",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "encontré",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Esta mañana fija un momento concreto ya pasado: pretérito.",
+  "why_en": "This morning fixes a specific past moment: preterite.",
+  "en": "This morning I found my keys under the sofa.",
+  "band": "A2"
+ },
+ {
+  "q": "El año pasado mis tíos ___ (comprar) una finca cerca de Cali.",
+  "inf": "comprar",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "compraron",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "El año pasado fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last year fixes a specific past moment: preterite.",
+  "en": "Last year my aunt and uncle bought a farm near Cali.",
+  "band": "A2"
+ },
+ {
+  "q": "Ayer ___ (haber) un accidente en la autopista, por eso llegué tarde.",
+  "inf": "haber",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "hubo",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Ayer fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Yesterday fixes a specific past moment: preterite.",
+  "en": "Yesterday there was an accident on the highway, that is why I was late.",
+  "band": "A2"
+ },
+ {
+  "q": "Anoche yo ___ (recibir) un mensaje raro de un número desconocido.",
+  "inf": "recibir",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "recibí",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Anoche fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last night fixes a specific past moment: preterite.",
+  "en": "Last night I got a strange message from an unknown number.",
+  "band": "A2"
+ },
+ {
+  "q": "El jueves pasado el profesor ___ (explicar) el tema otra vez.",
+  "inf": "explicar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "explicó",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "El jueves fija un momento concreto ya pasado: pretérito.",
+  "why_en": "On Thursday fixes a specific past moment: preterite.",
+  "en": "Last Thursday the teacher explained the topic again.",
+  "band": "A2"
+ },
+ {
+  "q": "Hace diez minutos ___ (sonar) el timbre; creo que llegó el domiciliario.",
+  "inf": "sonar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "sonó",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Hace diez minutos fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Ten minutes ago fixes a specific past moment: preterite.",
+  "en": "The doorbell rang ten minutes ago; I think the delivery person arrived.",
+  "band": "A2"
+ },
+ {
+  "q": "Ayer mi jefe ___ (firmar) el contrato con los nuevos clientes.",
+  "inf": "firmar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "firmó",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Ayer fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Yesterday fixes a specific past moment: preterite.",
+  "en": "Yesterday my boss signed the contract with the new clients.",
+  "band": "A2"
+ },
+ {
+  "q": "El sábado en la noche nosotros ___ (bailar) salsa hasta la madrugada.",
+  "inf": "bailar",
+  "tense": "preterito",
+  "person": "nosotros",
+  "answer": "bailamos",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto"
+  ],
+  "why_es": "El sábado en la noche fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Saturday night fixes a specific past moment: preterite.",
+  "en": "On Saturday night we danced salsa until dawn.",
+  "band": "A2"
+ },
+ {
+  "q": "En diciembre de 2022 yo ___ (conocer) a mi esposa en una fiesta.",
+  "inf": "conocer",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "conocí",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "En diciembre de 2022 fija un momento concreto ya pasado: pretérito.",
+  "why_en": "In December 2022 fixes a specific past moment: preterite.",
+  "en": "In December 2022 I met my wife at a party.",
+  "band": "A2"
+ },
+ {
+  "q": "Anoche yo ___ (saber) por mi hermana que te mudas a Pereira.",
+  "inf": "saber",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "supe",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Anoche fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last night fixes a specific past moment: preterite.",
+  "en": "Last night I found out from my sister that you are moving to Pereira.",
+  "band": "B1"
+ },
+ {
+  "q": "Hoy en la mañana mi hijo ___ (tomar) el bus de las cinco.",
+  "inf": "tomar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "tomó",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Hoy en la mañana fija un momento concreto ya pasado: pretérito.",
+  "why_en": "This morning fixes a specific past moment: preterite.",
+  "en": "This morning my son took the five o'clock bus.",
+  "band": "A2"
+ },
+ {
+  "q": "El miércoles pasado ellos ___ (volver) de Cali en el último vuelo.",
+  "inf": "volver",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "volvieron",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "El miércoles pasado fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last Wednesday fixes a specific past moment: preterite.",
+  "en": "Last Wednesday they came back from Cali on the last flight.",
+  "band": "A2"
+ },
+ {
+  "q": "Anoche el equipo ___ (ganar) dos a cero contra el Nacional.",
+  "inf": "ganar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "ganó",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Anoche fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last night fixes a specific past moment: preterite.",
+  "en": "Last night the team won two to nothing against Nacional.",
+  "band": "A2"
+ },
+ {
+  "q": "Ayer yo ___ (pagar) el arriendo con diez días de atraso.",
+  "inf": "pagar",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "pagué",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Ayer fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Yesterday fixes a specific past moment: preterite.",
+  "en": "Yesterday I paid the rent ten days late.",
+  "band": "A2"
+ },
+ {
+  "q": "Hace un mes mis papás ___ (vender) su casa y se fueron al campo.",
+  "inf": "vender",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "vendieron",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Hace un mes fija un momento concreto ya pasado: pretérito.",
+  "why_en": "A month ago fixes a specific past moment: preterite.",
+  "en": "A month ago my parents sold their house and moved to the countryside.",
+  "band": "A2"
+ },
+ {
+  "q": "Ayer a las ocho de la noche mi abuela ___ (morir) en su casa, tranquila.",
+  "inf": "morir",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "murió",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Ayer a las ocho fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Yesterday at eight fixes a specific past moment: preterite.",
+  "en": "Yesterday at eight in the evening my grandmother died at home, peacefully.",
+  "band": "B1"
+ },
+ {
+  "q": "El año pasado tú ___ (aprender) a manejar.",
+  "inf": "aprender",
+  "tense": "preterito",
+  "person": "tú",
+  "answer": "aprendiste",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "El año pasado fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last year fixes a specific past moment: preterite.",
+  "en": "Last year you learned to drive.",
+  "band": "A2"
+ },
+ {
+  "q": "Anoche nosotros ___ (decidir) vender el apartamento.",
+  "inf": "decidir",
+  "tense": "preterito",
+  "person": "nosotros",
+  "answer": "decidimos",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto"
+  ],
+  "why_es": "Anoche fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last night fixes a specific past moment: preterite.",
+  "en": "Last night we decided to sell the apartment.",
+  "band": "A2"
+ },
+ {
+  "q": "Ayer en la tarde el alcalde ___ (anunciar) nuevas obras en el barrio.",
+  "inf": "anunciar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "anunció",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "\"Ayer en la tarde\": un hecho terminado en el pasado va en pretérito.",
+  "why_en": "\"Yesterday afternoon\": a finished past event takes the preterite.",
+  "en": "Yesterday afternoon the mayor announced new works in the neighbourhood.",
+  "band": "B1"
+ },
+ {
+  "q": "El domingo pasado yo ___ (cocinar) para quince personas.",
+  "inf": "cocinar",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "cociné",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "El domingo pasado fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last Sunday fixes a specific past moment: preterite.",
+  "en": "Last Sunday I cooked for fifteen people.",
+  "band": "A2"
+ },
+ {
+  "q": "Ayer tú ___ (dejar) el paraguas en el restaurante.",
+  "inf": "dejar",
+  "tense": "preterito",
+  "person": "tú",
+  "answer": "dejaste",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Ayer fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Yesterday fixes a specific past moment: preterite.",
+  "en": "Yesterday you left your umbrella at the restaurant.",
+  "band": "A2"
+ },
+ {
+  "q": "La semana pasada tú ___ (sacar) la mejor nota del curso.",
+  "inf": "sacar",
+  "tense": "preterito",
+  "person": "tú",
+  "answer": "sacaste",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "La semana pasada fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last week fixes a specific past moment: preterite.",
+  "en": "Last week you got the best grade in the class.",
+  "band": "A2"
+ },
+ {
+  "q": "Anoche a las dos el perro de los vecinos ___ (empezar) a ladrar.",
+  "inf": "empezar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "empezó",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Anoche a las dos fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last night at two fixes a specific past moment: preterite.",
+  "en": "Last night at two the neighbors' dog started barking.",
+  "band": "A2"
+ },
+ {
+  "q": "Ayer Camilo y yo ___ (gastar) toda la plata en el mercado.",
+  "inf": "gastar",
+  "tense": "preterito",
+  "person": "nosotros",
+  "answer": "gastamos",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto"
+  ],
+  "why_es": "Ayer fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Yesterday fixes a specific past moment: preterite.",
+  "en": "Yesterday Camilo and I spent all the money at the market.",
+  "band": "A2"
+ },
+ {
+  "q": "Ayer los estudiantes ___ (entregar) el trabajo final a las ocho.",
+  "inf": "entregar",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "entregaron",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Ayer fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Yesterday fixes a specific past moment: preterite.",
+  "en": "Yesterday the students handed in the final paper at eight.",
+  "band": "A2"
+ },
+ {
+  "q": "El viernes pasado tú ___ (hablar) con el gerente por la mañana, ¿no?",
+  "inf": "hablar",
+  "tense": "preterito",
+  "person": "tú",
+  "answer": "hablaste",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "El viernes fija un momento concreto ya pasado: pretérito.",
+  "why_en": "On Friday fixes a specific past moment: preterite.",
+  "en": "Last Friday you talked to the manager in the morning, didn't you?",
+  "band": "A2"
+ },
+ {
+  "q": "Hace cinco años yo ___ (dejar) de fumar.",
+  "inf": "dejar",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "dejé",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Hace cinco años fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Five years ago fixes a specific past moment: preterite.",
+  "en": "Five years ago I quit smoking.",
+  "band": "A2"
+ },
+ {
+  "q": "En 2014 Colombia ___ (llegar) a cuartos de final en el Mundial.",
+  "inf": "llegar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "llegó",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "En 2014 fija un momento concreto ya pasado: pretérito.",
+  "why_en": "In 2014 fixes a specific past moment: preterite.",
+  "en": "In 2014 Colombia reached the quarterfinals of the World Cup.",
+  "band": "B1"
+ },
+ {
+  "q": "Esta mañana mis hermanos ___ (salir) sin desayunar.",
+  "inf": "salir",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "salieron",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Esta mañana fija un momento concreto ya pasado: pretérito.",
+  "why_en": "This morning fixes a specific past moment: preterite.",
+  "en": "This morning my brothers left without having breakfast.",
+  "band": "A2"
+ },
+ {
+  "q": "Ayer en la tarde Lucía se ___ (cortar) el dedo cocinando.",
+  "inf": "cortar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "cortó",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Ayer en la tarde fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Yesterday afternoon fixes a specific past moment: preterite.",
+  "en": "Yesterday afternoon Lucía cut her finger while cooking.",
+  "band": "A2"
+ },
+ {
+  "q": "Anoche yo ___ (oír) un ruido raro en el patio.",
+  "inf": "oír",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "oí",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Anoche fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last night fixes a specific past moment: preterite.",
+  "en": "Last night I heard a strange noise in the yard.",
+  "band": "A2"
+ },
+ {
+  "q": "La semana pasada nosotros ___ (conseguir) boletas para el concierto.",
+  "inf": "conseguir",
+  "tense": "preterito",
+  "person": "nosotros",
+  "answer": "conseguimos",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto"
+  ],
+  "why_es": "La semana pasada fija un momento concreto ya pasado: pretérito.",
+  "why_en": "Last week fixes a specific past moment: preterite.",
+  "en": "Last week we got tickets for the concert.",
+  "band": "A2"
+ },
+ {
+  "q": "El lunes mi jefa por fin ___ (poder) hablar con el cliente.",
+  "inf": "poder",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "pudo",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "El lunes, por fin fija un momento concreto ya pasado: pretérito.",
+  "why_en": "On Monday, at last fixes a specific past moment: preterite.",
+  "en": "On Monday my boss was finally able to talk to the client.",
+  "band": "B1"
+ },
+ {
+  "q": "Hace unos días nosotros ___ (tener) una reunión con el banco.",
+  "inf": "tener",
+  "tense": "preterito",
+  "person": "nosotros",
+  "answer": "tuvimos",
+  "use": "pretérito: hecho terminado en un momento concreto",
+  "confuse": [
+   "imperfecto",
+   "perfecto"
+  ],
+  "why_es": "Hace unos días fija un momento concreto ya pasado: pretérito.",
+  "why_en": "A few days ago fixes a specific past moment: preterite.",
+  "en": "A few days ago we had a meeting with the bank.",
+  "band": "A2"
+ },
+ {
+  "q": "Entraste, ___ (saludar) a todos y te sentaste a la mesa.",
+  "inf": "saludar",
+  "tense": "preterito",
+  "person": "tú",
+  "answer": "saludaste",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Llegó... se sentó cuenta hechos que se suceden: pretérito.",
+  "why_en": "He arrived... he sat down narrates events one after another: preterite.",
+  "en": "You arrived, greeted everyone and sat at the table.",
+  "band": "A2"
+ },
+ {
+  "q": "Entré a la casa, ___ (dejar) las bolsas y llamé a mi mamá.",
+  "inf": "dejar",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "dejé",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Entré... llamé cuenta hechos que se suceden: pretérito.",
+  "why_en": "I came in... I called narrates events one after another: preterite.",
+  "en": "I went into the house, left the bags and called my mom.",
+  "band": "A2"
+ },
+ {
+  "q": "Yo abrí la puerta, ___ (mirar) alrededor y salí corriendo.",
+  "inf": "mirar",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "miré",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Abrió... salió cuenta hechos que se suceden: pretérito.",
+  "why_en": "She opened... she ran out narrates events one after another: preterite.",
+  "en": "I opened the door, looked around and ran out.",
+  "band": "A2"
+ },
+ {
+  "q": "Primero tú ___ (cortar) las cebollas y después las freíste.",
+  "inf": "cortar",
+  "tense": "preterito",
+  "person": "tú",
+  "answer": "cortaste",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Primero... después cuenta hechos que se suceden: pretérito.",
+  "why_en": "First... then narrates events one after another: preterite.",
+  "en": "First you chopped the onions and then you fried them.",
+  "band": "A2"
+ },
+ {
+  "q": "Los profesores entraron, ___ (cerrar) la puerta y empezaron la clase.",
+  "inf": "cerrar",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "cerraron",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Entró... empezó cuenta hechos que se suceden: pretérito.",
+  "why_en": "She came in... she began narrates events one after another: preterite.",
+  "en": "The teachers came in, closed the door and started class.",
+  "band": "A2"
+ },
+ {
+  "q": "Ayer me levanté, ___ (desayunar) rápido y salí corriendo.",
+  "inf": "desayunar",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "desayuné",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Me levanté... salí cuenta hechos que se suceden: pretérito.",
+  "why_en": "I got up... I left narrates events one after another: preterite.",
+  "en": "Yesterday I got up, had a quick breakfast and ran out.",
+  "band": "A2"
+ },
+ {
+  "q": "Los ladrones rompieron la ventana, ___ (entrar) y se llevaron el computador.",
+  "inf": "entrar",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "entraron",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Rompieron... se llevaron cuenta hechos que se suceden: pretérito.",
+  "why_en": "They broke... they took narrates events one after another: preterite.",
+  "en": "The thieves broke the window, got in and took the computer.",
+  "band": "A2"
+ },
+ {
+  "q": "Saqué las llaves, ___ (abrir) el carro y arranqué.",
+  "inf": "abrir",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "abrí",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Sacó... arrancó cuenta hechos que se suceden: pretérito.",
+  "why_en": "She took out... she drove off narrates events one after another: preterite.",
+  "en": "I took out the keys, opened the car and drove off.",
+  "band": "A2"
+ },
+ {
+  "q": "Primero llamé al banco, luego ___ (escribir) un correo y por último salí.",
+  "inf": "escribir",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "escribí",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Primero... luego... por último cuenta hechos que se suceden: pretérito.",
+  "why_en": "First... then... finally narrates events one after another: preterite.",
+  "en": "First I called the bank, then I wrote an email and finally I left.",
+  "band": "A2"
+ },
+ {
+  "q": "Mi papá pagó la cuenta, ___ (tomar) su abrigo y nos fuimos.",
+  "inf": "tomar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "tomó",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Pagó... nos fuimos cuenta hechos que se suceden: pretérito.",
+  "why_en": "He paid... we left narrates events one after another: preterite.",
+  "en": "My dad paid the bill, took his coat and we left.",
+  "band": "A2"
+ },
+ {
+  "q": "Tú llegaste, ___ (ver) el desorden y empezaste a gritar.",
+  "inf": "ver",
+  "tense": "preterito",
+  "person": "tú",
+  "answer": "viste",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Llegaste... empezaste cuenta hechos que se suceden: pretérito.",
+  "why_en": "You arrived... you started narrates events one after another: preterite.",
+  "en": "You arrived, saw the mess and started yelling.",
+  "band": "A2"
+ },
+ {
+  "q": "Los niños comieron, se ___ (lavar) los dientes y se acostaron.",
+  "inf": "lavar",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "lavaron",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Comieron... se acostaron cuenta hechos que se suceden: pretérito.",
+  "why_en": "They ate... they went to bed narrates events one after another: preterite.",
+  "en": "The kids ate, brushed their teeth and went to bed.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando terminó la película, nos pusimos los abrigos y ___ (salir) del cine.",
+  "inf": "salir",
+  "tense": "preterito",
+  "person": "nosotros",
+  "answer": "salimos",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto"
+  ],
+  "why_es": "Terminó... nos pusimos cuenta hechos que se suceden: pretérito.",
+  "why_en": "Ended... we put on narrates events one after another: preterite.",
+  "en": "When the movie ended, we put on our coats and left the theater.",
+  "band": "A2"
+ },
+ {
+  "q": "Valeria abrió la nevera, ___ (sacar) la leche y se sirvió un vaso.",
+  "inf": "sacar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "sacó",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Abrió... se sirvió cuenta hechos que se suceden: pretérito.",
+  "why_en": "She opened... she poured narrates events one after another: preterite.",
+  "en": "Valeria opened the fridge, took out the milk and poured herself a glass.",
+  "band": "A2"
+ },
+ {
+  "q": "El mesero trajo la cuenta, yo ___ (pagar) y dejé propina.",
+  "inf": "pagar",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "pagué",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Trajo... dejé cuenta hechos que se suceden: pretérito.",
+  "why_en": "He brought... I left narrates events one after another: preterite.",
+  "en": "The waiter brought the bill, I paid and left a tip.",
+  "band": "A2"
+ },
+ {
+  "q": "Camilo apagó la luz, ___ (dar) las buenas noches y se acostó.",
+  "inf": "dar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "dio",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Apagó... se acostó cuenta hechos que se suceden: pretérito.",
+  "why_en": "He turned off... he went to bed narrates events one after another: preterite.",
+  "en": "Camilo turned off the light, said good night and went to bed.",
+  "band": "A2"
+ },
+ {
+  "q": "Primero ustedes ___ (llenar) el formulario y luego hicieron la fila.",
+  "inf": "llenar",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "llenaron",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Primero... luego cuenta hechos que se suceden: pretérito.",
+  "why_en": "First... then narrates events one after another: preterite.",
+  "en": "First you filled out the form and then you stood in line.",
+  "band": "A2"
+ },
+ {
+  "q": "Los vecinos oyeron el grito, ___ (salir) a la calle y llamaron a la policía.",
+  "inf": "salir",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "salieron",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Oyeron... llamaron cuenta hechos que se suceden: pretérito.",
+  "why_en": "They heard... they called narrates events one after another: preterite.",
+  "en": "The neighbors heard the scream, went out to the street and called the police.",
+  "band": "A2"
+ },
+ {
+  "q": "Me caí, me ___ (levantar) rápido y seguí corriendo.",
+  "inf": "levantar",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "levanté",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Me caí... seguí cuenta hechos que se suceden: pretérito.",
+  "why_en": "I fell... I kept going narrates events one after another: preterite.",
+  "en": "I fell, got up quickly and kept running.",
+  "band": "A2"
+ },
+ {
+  "q": "Leíste la carta, ___ (llorar) un rato y la guardaste.",
+  "inf": "llorar",
+  "tense": "preterito",
+  "person": "tú",
+  "answer": "lloraste",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Leyó... la guardó cuenta hechos que se suceden: pretérito.",
+  "why_en": "She read... she put away narrates events one after another: preterite.",
+  "en": "You read the letter, cried for a while and put it away.",
+  "band": "A2"
+ },
+ {
+  "q": "Tú pusiste el agua a hervir, ___ (echar) la pasta y esperaste diez minutos.",
+  "inf": "echar",
+  "tense": "preterito",
+  "person": "tú",
+  "answer": "echaste",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Pusiste... esperaste cuenta hechos que se suceden: pretérito.",
+  "why_en": "You put... you waited narrates events one after another: preterite.",
+  "en": "You put the water on to boil, added the pasta and waited ten minutes.",
+  "band": "A2"
+ },
+ {
+  "q": "El taxista paró, se ___ (bajar) y me ayudó con las maletas.",
+  "inf": "bajar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "bajó",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Paró... me ayudó cuenta hechos que se suceden: pretérito.",
+  "why_en": "He stopped... he helped narrates events one after another: preterite.",
+  "en": "The taxi driver stopped, got out and helped me with the bags.",
+  "band": "A2"
+ },
+ {
+  "q": "Ellos compraron las boletas, ___ (entrar) al teatro y buscaron sus asientos.",
+  "inf": "entrar",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "entraron",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Compraron... buscaron cuenta hechos que se suceden: pretérito.",
+  "why_en": "They bought... they looked for narrates events one after another: preterite.",
+  "en": "They bought the tickets, went into the theater and looked for their seats.",
+  "band": "A2"
+ },
+ {
+  "q": "Yo veía televisión cuando ___ (sonar) el teléfono.",
+  "inf": "sonar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "sonó",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "When cuts into what was going on: preterite.",
+  "en": "I was watching TV when the phone rang.",
+  "band": "A2"
+ },
+ {
+  "q": "Mientras cocinaba, yo me ___ (cortar) el dedo.",
+  "inf": "cortar",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "corté",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Mientras cocinaba irrumpe en lo que pasaba: pretérito.",
+  "why_en": "While she was cooking cuts into what was going on: preterite.",
+  "en": "While I was cooking, I cut my finger.",
+  "band": "A2"
+ },
+ {
+  "q": "Caminábamos por el parque cuando ___ (empezar) a llover.",
+  "inf": "empezar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "empezó",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Caminábamos... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "We were walking... when cuts into what was going on: preterite.",
+  "en": "We were walking in the park when it started to rain.",
+  "band": "A2"
+ },
+ {
+  "q": "Valentina estudiaba en su cuarto cuando se ___ (ir) la luz.",
+  "inf": "ir",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "fue",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Estudiaba... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "She was studying... when cuts into what was going on: preterite.",
+  "en": "Valentina was studying in her room when the power went out.",
+  "band": "A2"
+ },
+ {
+  "q": "Manejaba hacia el trabajo cuando me ___ (llamar) mi jefe.",
+  "inf": "llamar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "llamó",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Manejaba... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "I was driving... when cuts into what was going on: preterite.",
+  "en": "I was driving to work when my boss called me.",
+  "band": "A2"
+ },
+ {
+  "q": "Estábamos cenando cuando ___ (aparecer) los primos de Cali.",
+  "inf": "aparecer",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "aparecieron",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Estábamos cenando... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "We were having dinner... when cuts into what was going on: preterite.",
+  "en": "We were having dinner when the cousins from Cali showed up.",
+  "band": "A2"
+ },
+ {
+  "q": "Tú dormías cuando ___ (entrar) los ladrones a la casa de al lado.",
+  "inf": "entrar",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "entraron",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Dormías... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "You were sleeping... when cuts into what was going on: preterite.",
+  "en": "You were asleep when the thieves broke into the house next door.",
+  "band": "A2"
+ },
+ {
+  "q": "Salía de la oficina cuando ___ (ver) a mi exjefe en la calle.",
+  "inf": "ver",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "vi",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Salía... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "I was leaving... when cuts into what was going on: preterite.",
+  "en": "I was leaving the office when I saw my old boss on the street.",
+  "band": "A2"
+ },
+ {
+  "q": "Tú jugabas fútbol cuando te ___ (romper) la pierna.",
+  "inf": "romper",
+  "tense": "preterito",
+  "person": "tú",
+  "answer": "rompiste",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Jugaba... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "He was playing... when cuts into what was going on: preterite.",
+  "en": "You were playing soccer when you broke your leg.",
+  "band": "A2"
+ },
+ {
+  "q": "Hablábamos por teléfono cuando se ___ (cortar) la llamada.",
+  "inf": "cortar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "cortó",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Hablábamos... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "We were talking... when cuts into what was going on: preterite.",
+  "en": "We were on the phone when the call dropped.",
+  "band": "A2"
+ },
+ {
+  "q": "Los niños jugaban en el patio cuando ___ (empezar) la tormenta.",
+  "inf": "empezar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "empezó",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Jugaban... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "They were playing... when cuts into what was going on: preterite.",
+  "en": "The kids were playing in the yard when the storm began.",
+  "band": "A2"
+ },
+ {
+  "q": "Ana y yo bajábamos las escaleras cuando se nos ___ (caer) las bolsas.",
+  "inf": "caer",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "cayeron",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Bajaba... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "She was going down... when cuts into what was going on: preterite.",
+  "en": "Ana and I were going down the stairs when we dropped the bags.",
+  "band": "A2"
+ },
+ {
+  "q": "Yo leía en la biblioteca cuando mi celular ___ (sonar).",
+  "inf": "sonar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "sonó",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Leía... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "I was reading... when cuts into what was going on: preterite.",
+  "en": "I was reading in the library when my phone rang.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando tú ___ (llamar), yo estaba en la ducha.",
+  "inf": "llamar",
+  "tense": "preterito",
+  "person": "tú",
+  "answer": "llamaste",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Yo estaba en la ducha irrumpe en lo que pasaba: pretérito.",
+  "why_en": "I was in the shower cuts into what was going on: preterite.",
+  "en": "When you called, I was in the shower.",
+  "band": "A2"
+ },
+ {
+  "q": "Estaba lavando los platos cuando ___ (oír) un grito.",
+  "inf": "oír",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "oí",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Estaba lavando... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "I was washing... when cuts into what was going on: preterite.",
+  "en": "I was washing the dishes when I heard a scream.",
+  "band": "A2"
+ },
+ {
+  "q": "Llegué a casa, ___ (abrir) la nevera y me senté a comer.",
+  "inf": "abrir",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "abrí",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Llegué... me senté cuenta hechos que se suceden: pretérito.",
+  "why_en": "I arrived... I sat narrates events one after another: preterite.",
+  "en": "I got home, opened the fridge and sat down to eat.",
+  "band": "A2"
+ },
+ {
+  "q": "Mis tíos se despidieron, ___ (subir) al carro y se fueron.",
+  "inf": "subir",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "subieron",
+  "use": "pretérito: secuencia de hechos terminados",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Se despidieron... se fueron cuenta hechos que se suceden: pretérito.",
+  "why_en": "They said goodbye... they left narrates events one after another: preterite.",
+  "en": "My aunt and uncle said goodbye, got in the car and left.",
+  "band": "A2"
+ },
+ {
+  "q": "Preparaba el almuerzo cuando de repente se ___ (ir) la luz.",
+  "inf": "ir",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "fue",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Preparaba... de repente irrumpe en lo que pasaba: pretérito.",
+  "why_en": "I was making... suddenly cuts into what was going on: preterite.",
+  "en": "I was making lunch when suddenly the power went out.",
+  "band": "A2"
+ },
+ {
+  "q": "Mi abuelo dormía la siesta cuando ___ (llegar) el cartero y tocó el timbre.",
+  "inf": "llegar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "llegó",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Dormía... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "He was sleeping... when cuts into what was going on: preterite.",
+  "en": "My grandfather was napping when the mailman arrived and rang the bell.",
+  "band": "A2"
+ },
+ {
+  "q": "Íbamos en el bus cuando ___ (subir) un vendedor con una caja de dulces.",
+  "inf": "subir",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "subió",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Íbamos... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "We were riding... when cuts into what was going on: preterite.",
+  "en": "We were on the bus when a vendor got on with a box of candy.",
+  "band": "A2"
+ },
+ {
+  "q": "Yo esperaba el semáforo cuando un amigo me ___ (saludar) desde el otro lado.",
+  "inf": "saludar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "saludó",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Esperaba... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "I was waiting... when cuts into what was going on: preterite.",
+  "en": "I was waiting at the light when a friend waved to me from the other side.",
+  "band": "A2"
+ },
+ {
+  "q": "Valentina hablaba con su mamá cuando se le ___ (acabar) la batería del celular.",
+  "inf": "acabar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "acabó",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Hablaba... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "She was talking... when cuts into what was going on: preterite.",
+  "en": "Valentina was talking to her mom when her phone battery died.",
+  "band": "B1"
+ },
+ {
+  "q": "Corría por el parque cuando me ___ (caer) al suelo.",
+  "inf": "caer",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "caí",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Corría... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "I was running... when cuts into what was going on: preterite.",
+  "en": "I was running in the park when I fell to the ground.",
+  "band": "A2"
+ },
+ {
+  "q": "Los vecinos peleaban cuando ___ (llegar) la policía.",
+  "inf": "llegar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "llegó",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Peleaban... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "They were fighting... when cuts into what was going on: preterite.",
+  "en": "The neighbors were fighting when the police arrived.",
+  "band": "A2"
+ },
+ {
+  "q": "Tú almorzabas tranquilo cuando ___ (llamar) tu jefe para pedirte un informe.",
+  "inf": "llamar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "llamó",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Almorzabas... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "You were having lunch... when cuts into what was going on: preterite.",
+  "en": "You were having a calm lunch when your boss called to ask for a report.",
+  "band": "A2"
+ },
+ {
+  "q": "Hacíamos la fila del banco cuando ___ (anunciar) que el sistema estaba caído.",
+  "inf": "anunciar",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "anunciaron",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Hacíamos la fila... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "We were in line... when cuts into what was going on: preterite.",
+  "en": "We were in line at the bank when they announced the system was down.",
+  "band": "B1"
+ },
+ {
+  "q": "La profesora explicaba la lección cuando alguien ___ (abrir) la puerta.",
+  "inf": "abrir",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "abrió",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Explicaba... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "She was explaining... when cuts into what was going on: preterite.",
+  "en": "The teacher was explaining the lesson when someone opened the door.",
+  "band": "A2"
+ },
+ {
+  "q": "Estudiaba para el examen cuando mi hermano ___ (entrar) y apagó la luz.",
+  "inf": "entrar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "entró",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Estudiaba... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "I was studying... when cuts into what was going on: preterite.",
+  "en": "I was studying for the exam when my brother came in and turned off the light.",
+  "band": "A2"
+ },
+ {
+  "q": "Camilo cruzaba la calle cuando ___ (aparecer) una moto a toda velocidad.",
+  "inf": "aparecer",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "apareció",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Cruzaba... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "He was crossing... when cuts into what was going on: preterite.",
+  "en": "Camilo was crossing the street when a motorcycle appeared at full speed.",
+  "band": "B1"
+ },
+ {
+  "q": "Ellos discutían cuando alguien ___ (tocar) a la puerta.",
+  "inf": "tocar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "tocó",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Discutían... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "They were arguing... when cuts into what was going on: preterite.",
+  "en": "They were arguing when someone knocked on the door.",
+  "band": "A2"
+ },
+ {
+  "q": "Veíamos el partido cuando ___ (venir) tus papás a pedir prestada la escalera.",
+  "inf": "venir",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "vinieron",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Veíamos... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "We were watching... when cuts into what was going on: preterite.",
+  "en": "We were watching the game when your parents came to borrow the ladder.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo hablaba con Marta cuando me ___ (dar) cuenta de que no tenía la billetera.",
+  "inf": "dar",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "di",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Hablaba... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "I was talking... when cuts into what was going on: preterite.",
+  "en": "I was talking to Marta when I realized I didn't have my wallet.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo regaba las matas cuando me ___ (acordar) de la cita con el médico.",
+  "inf": "acordar",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "acordé",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Regaba... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "She was watering... when cuts into what was going on: preterite.",
+  "en": "I was watering the plants when I remembered the doctor's appointment.",
+  "band": "B1"
+ },
+ {
+  "q": "Pedro dormía profundo cuando el despertador ___ (sonar) por error.",
+  "inf": "sonar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "sonó",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Dormía... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "He was sleeping... when cuts into what was going on: preterite.",
+  "en": "Pedro was sound asleep when the alarm went off by mistake.",
+  "band": "A2"
+ },
+ {
+  "q": "Nadábamos en el río cuando alguien ___ (gritar) que venía la creciente.",
+  "inf": "gritar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "gritó",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Nadábamos... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "We were swimming... when cuts into what was going on: preterite.",
+  "en": "We were swimming in the river when someone yelled that the flood was coming.",
+  "band": "B1"
+ },
+ {
+  "q": "Hacía la tarea cuando mis amigos me ___ (invitar) a jugar fútbol.",
+  "inf": "invitar",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "invitaron",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Hacía la tarea... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "I was doing homework... when cuts into what was going on: preterite.",
+  "en": "I was doing my homework when my friends invited me to play soccer.",
+  "band": "A2"
+ },
+ {
+  "q": "Durante tres horas nosotros ___ (esperar) el bus en la terminal.",
+  "inf": "esperar",
+  "tense": "preterito",
+  "person": "nosotros",
+  "answer": "esperamos",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto"
+  ],
+  "why_es": "Durante tres horas delimita un periodo ya terminado: pretérito.",
+  "why_en": "For three hours bounds a finished period: preterite.",
+  "en": "We waited three hours for the bus at the terminal.",
+  "band": "A2"
+ },
+ {
+  "q": "Ayer toda la tarde yo ___ (estudiar) para el examen de matemáticas.",
+  "inf": "estudiar",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "estudié",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Ayer toda la tarde delimita un periodo ya terminado: pretérito.",
+  "why_en": "All afternoon yesterday bounds a finished period: preterite.",
+  "en": "Yesterday all afternoon I studied for the math exam.",
+  "band": "A2"
+ },
+ {
+  "q": "Mi abuelo ___ (vivir) en Pasto durante cuarenta años y luego se mudó a Cali.",
+  "inf": "vivir",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "vivió",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Durante cuarenta años... luego se mudó delimita un periodo ya terminado: pretérito.",
+  "why_en": "For forty years... then he moved bounds a finished period: preterite.",
+  "en": "My grandfather lived in Pasto for forty years and then moved to Cali.",
+  "band": "B1"
+ },
+ {
+  "q": "Ayer ustedes ___ (trabajar) ocho horas seguidas sin descanso.",
+  "inf": "trabajar",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "trabajaron",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Ayer... ocho horas seguidas delimita un periodo ya terminado: pretérito.",
+  "why_en": "Yesterday... eight hours straight bounds a finished period: preterite.",
+  "en": "Yesterday you worked eight hours straight without a break.",
+  "band": "A2"
+ },
+ {
+  "q": "El año pasado tú ___ (estar) dos meses en Argentina por trabajo.",
+  "inf": "estar",
+  "tense": "preterito",
+  "person": "tú",
+  "answer": "estuviste",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "El año pasado... dos meses delimita un periodo ya terminado: pretérito.",
+  "why_en": "Last year... two months bounds a finished period: preterite.",
+  "en": "Last year you spent two months in Argentina for work.",
+  "band": "A2"
+ },
+ {
+  "q": "Anoche ___ (llover) durante cuatro horas sin parar.",
+  "inf": "llover",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "llovió",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Anoche... cuatro horas delimita un periodo ya terminado: pretérito.",
+  "why_en": "Last night... four hours bounds a finished period: preterite.",
+  "en": "Last night it rained for four hours without stopping.",
+  "band": "A2"
+ },
+ {
+  "q": "El sábado tú ___ (dormir) diez horas y despertaste como nuevo.",
+  "inf": "dormir",
+  "tense": "preterito",
+  "person": "tú",
+  "answer": "dormiste",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "El sábado... diez horas delimita un periodo ya terminado: pretérito.",
+  "why_en": "On Saturday... ten hours bounds a finished period: preterite.",
+  "en": "On Saturday you slept ten hours and woke up like new.",
+  "band": "A2"
+ },
+ {
+  "q": "Mis padres ___ (ser) novios durante seis años antes de casarse.",
+  "inf": "ser",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "fueron",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Durante seis años antes de casarse delimita un periodo ya terminado: pretérito.",
+  "why_en": "For six years before marrying bounds a finished period: preterite.",
+  "en": "My parents dated for six years before getting married.",
+  "band": "A2"
+ },
+ {
+  "q": "Yo ___ (tener) fiebre tres días y luego me mejoré.",
+  "inf": "tener",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "tuve",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Tres días y luego delimita un periodo ya terminado: pretérito.",
+  "why_en": "Three days and then bounds a finished period: preterite.",
+  "en": "I had a fever for three days and then got better.",
+  "band": "A2"
+ },
+ {
+  "q": "Esa vez yo ___ (esperar) una hora entera en la fila del banco.",
+  "inf": "esperar",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "esperé",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Esa vez... una hora entera delimita un periodo ya terminado: pretérito.",
+  "why_en": "That time... a whole hour bounds a finished period: preterite.",
+  "en": "That time I waited a whole hour in line at the bank.",
+  "band": "A2"
+ },
+ {
+  "q": "Ayer la reunión ___ (durar) casi dos horas.",
+  "inf": "durar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "duró",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Ayer... casi dos horas delimita un periodo ya terminado: pretérito.",
+  "why_en": "Yesterday... almost two hours bounds a finished period: preterite.",
+  "en": "Yesterday the meeting lasted almost two hours.",
+  "band": "A2"
+ },
+ {
+  "q": "Los obreros ___ (trabajar) toda la noche del martes para terminar la calle.",
+  "inf": "trabajar",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "trabajaron",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Toda la noche del martes delimita un periodo ya terminado: pretérito.",
+  "why_en": "All Tuesday night bounds a finished period: preterite.",
+  "en": "The workers worked all Tuesday night to finish the street.",
+  "band": "A2"
+ },
+ {
+  "q": "Hace años mi tía ___ (enseñar) inglés en un colegio durante diez años.",
+  "inf": "enseñar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "enseñó",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Hace años... durante diez años delimita un periodo ya terminado: pretérito.",
+  "why_en": "Years ago... for ten years bounds a finished period: preterite.",
+  "en": "Years ago my aunt taught English at a school for ten years.",
+  "band": "B1"
+ },
+ {
+  "q": "El domingo nosotros ___ (caminar) por el centro histórico cuatro horas.",
+  "inf": "caminar",
+  "tense": "preterito",
+  "person": "nosotros",
+  "answer": "caminamos",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto"
+  ],
+  "why_es": "El domingo... cuatro horas delimita un periodo ya terminado: pretérito.",
+  "why_en": "On Sunday... four hours bounds a finished period: preterite.",
+  "en": "On Sunday we walked around the historic center for four hours.",
+  "band": "A2"
+ },
+ {
+  "q": "Marta ___ (estar) en el hospital una semana y salió muy bien.",
+  "inf": "estar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "estuvo",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Una semana y salió delimita un periodo ya terminado: pretérito.",
+  "why_en": "A week and she left bounds a finished period: preterite.",
+  "en": "Marta was in the hospital for a week and came out fine.",
+  "band": "A2"
+ },
+ {
+  "q": "Anoche tú ___ (hablar) con tu novia por dos horas.",
+  "inf": "hablar",
+  "tense": "preterito",
+  "person": "tú",
+  "answer": "hablaste",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Anoche... por dos horas delimita un periodo ya terminado: pretérito.",
+  "why_en": "Last night... for two hours bounds a finished period: preterite.",
+  "en": "Last night you talked with your girlfriend for two hours.",
+  "band": "A2"
+ },
+ {
+  "q": "En 2018 yo ___ (vivir) seis meses en Medellín por un curso.",
+  "inf": "vivir",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "viví",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "En 2018... seis meses delimita un periodo ya terminado: pretérito.",
+  "why_en": "In 2018... six months bounds a finished period: preterite.",
+  "en": "In 2018 I lived in Medellín for six months for a course.",
+  "band": "A2"
+ },
+ {
+  "q": "El sábado mis hijos ___ (jugar) videojuegos toda la tarde.",
+  "inf": "jugar",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "jugaron",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "El sábado... toda la tarde delimita un periodo ya terminado: pretérito.",
+  "why_en": "On Saturday... all afternoon bounds a finished period: preterite.",
+  "en": "On Saturday my kids played video games all afternoon.",
+  "band": "A2"
+ },
+ {
+  "q": "Anoche la banda ___ (tocar) durante tres horas en la plaza.",
+  "inf": "tocar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "tocó",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Anoche... tres horas delimita un periodo ya terminado: pretérito.",
+  "why_en": "Last night... three hours bounds a finished period: preterite.",
+  "en": "Last night the band played for three hours in the square.",
+  "band": "A2"
+ },
+ {
+  "q": "Ayer yo ___ (caminar) una hora para llegar a casa porque no había buses.",
+  "inf": "caminar",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "caminé",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Ayer... una hora delimita un periodo ya terminado: pretérito.",
+  "why_en": "Yesterday... one hour bounds a finished period: preterite.",
+  "en": "Yesterday I walked an hour to get home because there were no buses.",
+  "band": "A2"
+ },
+ {
+  "q": "Anoche mi jefe se ___ (quedar) en la oficina hasta las diez.",
+  "inf": "quedar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "quedó",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Anoche... hasta las diez delimita un periodo ya terminado: pretérito.",
+  "why_en": "Last night... until ten bounds a finished period: preterite.",
+  "en": "Last night my boss stayed at the office until ten.",
+  "band": "A2"
+ },
+ {
+  "q": "El año pasado yo ___ (trabajar) en esa tienda solo cuatro meses.",
+  "inf": "trabajar",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "trabajé",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "El año pasado... cuatro meses delimita un periodo ya terminado: pretérito.",
+  "why_en": "Last year... four months bounds a finished period: preterite.",
+  "en": "Last year I worked at that store for only four months.",
+  "band": "A2"
+ },
+ {
+  "q": "Ayer ustedes ___ (bailar) toda la noche en la fiesta de Andrea.",
+  "inf": "bailar",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "bailaron",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Ayer... toda la noche delimita un periodo ya terminado: pretérito.",
+  "why_en": "Yesterday... all night bounds a finished period: preterite.",
+  "en": "Yesterday you danced all night at Andrea's party.",
+  "band": "A2"
+ },
+ {
+  "q": "Nosotros ___ (vivir) diez años en ese barrio y nos fuimos en 2020.",
+  "inf": "vivir",
+  "tense": "preterito",
+  "person": "nosotros",
+  "answer": "vivimos",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto"
+  ],
+  "why_es": "Diez años... nos fuimos en 2020 delimita un periodo ya terminado: pretérito.",
+  "why_en": "Ten years... we left in 2020 bounds a finished period: preterite.",
+  "en": "We lived in that neighborhood for ten years and left in 2020.",
+  "band": "B1"
+ },
+ {
+  "q": "El domingo pasado nosotros ___ (leer) el libro entero en un solo día.",
+  "inf": "leer",
+  "tense": "preterito",
+  "person": "nosotros",
+  "answer": "leímos",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "\"El domingo pasado\": un hecho terminado en un momento pasado va en pretérito.",
+  "why_en": "\"Last Sunday\": a finished event at a past moment takes the preterite.",
+  "en": "Last Sunday we read the whole book in a single day.",
+  "band": "A2"
+ },
+ {
+  "q": "La obra ___ (durar) dos años y por fin la entregaron.",
+  "inf": "durar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "duró",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Dos años y por fin delimita un periodo ya terminado: pretérito.",
+  "why_en": "Two years and at last bounds a finished period: preterite.",
+  "en": "The construction lasted two years and was finally delivered.",
+  "band": "B1"
+ },
+ {
+  "q": "Esa noche el niño ___ (llorar) hasta las dos de la mañana.",
+  "inf": "llorar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "lloró",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Esa noche... hasta las dos delimita un periodo ya terminado: pretérito.",
+  "why_en": "That night... until two bounds a finished period: preterite.",
+  "en": "That night the boy cried until two in the morning.",
+  "band": "A2"
+ },
+ {
+  "q": "Hace dos veranos nosotros ___ (pasar) un mes entero en la costa.",
+  "inf": "pasar",
+  "tense": "preterito",
+  "person": "nosotros",
+  "answer": "pasamos",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto"
+  ],
+  "why_es": "Hace dos veranos... un mes entero delimita un periodo ya terminado: pretérito.",
+  "why_en": "Two summers ago... a whole month bounds a finished period: preterite.",
+  "en": "Two summers ago we spent a whole month on the coast.",
+  "band": "A2"
+ },
+ {
+  "q": "Ayer yo ___ (estudiar) cuatro horas seguidas en la biblioteca.",
+  "inf": "estudiar",
+  "tense": "preterito",
+  "person": "yo",
+  "answer": "estudié",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Ayer... cuatro horas seguidas delimita un periodo ya terminado: pretérito.",
+  "why_en": "Yesterday... four hours straight bounds a finished period: preterite.",
+  "en": "Yesterday I studied four hours straight at the library.",
+  "band": "A2"
+ },
+ {
+  "q": "Ellos ___ (esperar) toda la mañana el resultado del examen y nunca llegó.",
+  "inf": "esperar",
+  "tense": "preterito",
+  "person": "ellos",
+  "answer": "esperaron",
+  "use": "pretérito: periodo cerrado",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Toda la mañana... nunca llegó delimita un periodo ya terminado: pretérito.",
+  "why_en": "All morning... it never came bounds a finished period: preterite.",
+  "en": "They waited all morning for the exam result and it never came.",
+  "band": "B1"
+ },
+ {
+  "q": "Mis papás veían una novela cuando ___ (llamar) la tía Rosa desde Pereira.",
+  "inf": "llamar",
+  "tense": "preterito",
+  "person": "él/ella",
+  "answer": "llamó",
+  "use": "pretérito: hecho que interrumpe una acción en curso",
+  "confuse": [
+   "imperfecto",
+   "perfecto",
+   "presente"
+  ],
+  "why_es": "Veían... cuando irrumpe en lo que pasaba: pretérito.",
+  "why_en": "They were watching... when cuts into what was going on: preterite.",
+  "en": "My parents were watching a soap opera when Aunt Rosa called from Pereira.",
+  "band": "A2"
+ }
+]

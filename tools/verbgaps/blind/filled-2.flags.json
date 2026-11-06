@@ -1,0 +1,254 @@
+[
+ {
+  "id": 1161,
+  "s": "La ventana está quebrada; no sé, los niños habrán roto con la pelota.",
+  "problem": "Missing direct object clitic: 'habrán roto' needs 'la' (la ventana).",
+  "fix": "La ventana está quebrada; no sé, los niños la habrán roto con la pelota."
+ },
+ {
+  "id": 1171,
+  "s": "Daniel está muy dormido; no sé, habrá bebido demasiado café anoche.",
+  "problem": "Semantic contradiction: too much coffee does not explain being very sleepy.",
+  "fix": "Daniel no pudo dormir; no sé, habrá bebido demasiado café anoche."
+ },
+ {
+  "id": 665,
+  "s": "Muchachos, ¿ayudarían a bajar estas cajas?",
+  "problem": "Missing pronoun: ayudar needs 'me' (or 'nos') here; '¿ayudarían a bajar...?' sounds incomplete.",
+  "fix": "Muchachos, ¿me ayudarían a bajar estas cajas?"
+ },
+ {
+  "id": 417,
+  "s": "Cuando terminó el partido, ya pasaba de las nueve.",
+  "problem": "Agreement: with hours the verb is plural ('pasaban de las nueve').",
+  "fix": "Cuando terminó el partido, ya pasaban de las nueve."
+ },
+ {
+  "id": 1289,
+  "s": "De haberme avisado, mis vecinos me habrían ayudado con la mudanza.",
+  "problem": "Logic: 'de haberme avisado' makes the neighbours the ones who warned; helping does not follow. Reads garbled.",
+  "fix": "De haberlo sabido, mis vecinos me habrían ayudado con la mudanza."
+ },
+ {
+  "id": 2009,
+  "s": "Nicolás, presta tu cargador a tu prima, por favor.",
+  "problem": "Missing doubled indirect object clitic; natural speech requires 'préstale ... a tu prima'.",
+  "fix": "Nicolás, préstale tu cargador a tu prima, por favor."
+ },
+ {
+  "id": 2177,
+  "s": "Catalina, no prestes plata a ese tipo, que nunca paga.",
+  "problem": "Missing doubled indirect object clitic ('no le prestes plata a ese tipo').",
+  "fix": "Catalina, no le prestes plata a ese tipo, que nunca paga."
+ },
+ {
+  "id": 2217,
+  "s": "Ingeniero, no diga nada al cliente hasta hablar con el jefe.",
+  "problem": "Missing doubled indirect object clitic ('no le diga nada al cliente').",
+  "fix": "Ingeniero, no le diga nada al cliente hasta hablar con el jefe."
+ },
+ {
+  "id": 2247,
+  "s": "Niños, no den de comer a ese perro, que muerde.",
+  "problem": "Missing doubled indirect object clitic ('no le den de comer a ese perro').",
+  "fix": "Niños, no le den de comer a ese perro, que muerde."
+ },
+ {
+  "id": 2279,
+  "s": "Daniela, no escribas a Pedro hoy; déjalo tranquilo.",
+  "problem": "Missing doubled indirect object clitic ('no le escribas a Pedro').",
+  "fix": "Daniela, no le escribas a Pedro hoy; déjalo tranquilo."
+ },
+ {
+  "id": 2149,
+  "s": "Carolina, no hagas caso a esos rumores.",
+  "problem": "Missing doubled indirect object clitic ('no les hagas caso a esos rumores').",
+  "fix": "Carolina, no les hagas caso a esos rumores."
+ },
+ {
+  "id": 2173,
+  "s": "Hermano, no hagas caso a esos tipos; te van a meter en problemas.",
+  "problem": "Missing doubled indirect object clitic ('no les hagas caso a esos tipos').",
+  "fix": "Hermano, no les hagas caso a esos tipos; te van a meter en problemas."
+ },
+ {
+  "id": 1909,
+  "s": "Ojalá tú hubieras hecho caso a los médicos hace años.",
+  "problem": "Missing doubled indirect object clitic ('les hubieras hecho caso a los médicos').",
+  "fix": "Ojalá tú les hubieras hecho caso a los médicos hace años."
+ },
+ {
+  "id": 2191,
+  "s": "Cristian, no des tu clave a nadie.",
+  "problem": "Missing doubled indirect object clitic with 'a nadie' ('no le des tu clave a nadie').",
+  "fix": "Cristian, no le des tu clave a nadie."
+ },
+ {
+  "id": 2059,
+  "s": "Señor, dé su cédula en la ventanilla.",
+  "problem": "'Dar la cédula en la ventanilla' is unnatural; one 'entrega' or 'presenta' it.",
+  "fix": "Señor, entregue su cédula en la ventanilla."
+ },
+ {
+  "id": 409,
+  "s": "eran las siete en punto cuando empezó la misa.",
+  "problem": "Sentence starts with a lowercase letter.",
+  "fix": "Eran las siete en punto cuando empezó la misa."
+ },
+ {
+  "id": 641,
+  "s": "serían las diez cuando mi papá llegó a la casa.",
+  "problem": "Sentence starts with a lowercase letter.",
+  "fix": "Serían las diez cuando mi papá llegó a la casa."
+ },
+ {
+  "id": 709,
+  "s": "¿vería usted algún inconveniente en cambiar la cita?",
+  "problem": "Sentence starts with a lowercase letter.",
+  "fix": "¿Vería usted algún inconveniente en cambiar la cita?"
+ },
+ {
+  "id": 2183,
+  "s": "Oscar, no juegues con fuego, que es peligroso.",
+  "problem": "Accent: the name is Óscar (as in id 2029).",
+  "fix": "Óscar, no juegues con fuego, que es peligroso."
+ },
+ {
+  "id": 1103,
+  "s": "Para cuando abra el concierto, nosotros ya habremos encontrado los asientos.",
+  "problem": "A concert does not 'abrir'; it starts.",
+  "fix": "Para cuando empiece el concierto, nosotros ya habremos encontrado los asientos."
+ },
+ {
+  "id": 463,
+  "s": "Mira el reloj de la sala: serán las tres, más o menos.",
+  "problem": "Semantically odd: if you look at the clock you know the time, so the conjecture 'serán las tres' makes no sense.",
+  "fix": "No veo el reloj de la sala, pero serán las tres, más o menos."
+ },
+ {
+  "id": 1153,
+  "s": "El mensaje salió raro; no sé, habré escrito mal el número.",
+  "problem": "Cause and effect do not match: a wrong number explains a message not arriving, not one that 'came out weird'.",
+  "fix": "El mensaje no le llegó; no sé, habré escrito mal el número."
+ },
+ {
+  "id": 1253,
+  "s": "Si hubieran tenido las fotos, los abuelos nos habrían mostrado el álbum.",
+  "problem": "Semantic mismatch: having 'the photos' leading to showing 'the album' is muddled.",
+  "fix": "Si hubieran encontrado el álbum, los abuelos nos habrían mostrado las fotos."
+ },
+ {
+  "id": 841,
+  "s": "Mi hijo se ha hecho muy alto desde diciembre.",
+  "problem": "'Hacerse alto' is unnatural; Colombians say 'ponerse alto' or 'crecer'.",
+  "fix": "Mi hijo se ha puesto muy alto desde diciembre."
+ },
+ {
+  "id": 1279,
+  "s": "Sin el altavoz, no los habríamos escuchado en la última fila aquel día.",
+  "problem": "'Altavoz' is Spain-leaning; Colombia says 'parlante'.",
+  "fix": "Sin el parlante, no los habríamos escuchado en la última fila aquel día."
+ },
+ {
+  "id": 1737,
+  "s": "No creo que el carro ya se haya roto otra vez.",
+  "problem": "For a car, Colombians say 'dañarse', not 'romperse'.",
+  "fix": "No creo que el carro ya se haya dañado otra vez."
+ },
+ {
+  "id": 1503,
+  "s": "Llevo el carro al taller antes de que el motor se rompa del todo.",
+  "problem": "For a motor, Colombians say 'dañarse', not 'romperse'.",
+  "fix": "Llevo el carro al taller antes de que el motor se dañe del todo."
+ },
+ {
+  "id": 127,
+  "s": "Si para la lluvia, salimos a caminar.",
+  "problem": "'Si para la lluvia' is ambiguous ('para' reads as the preposition) and unnatural word order.",
+  "fix": "Si la lluvia para, salimos a caminar."
+ },
+ {
+  "id": 759,
+  "s": "Ya he visto yo esa película tres veces y todavía me gusta.",
+  "problem": "Postverbal subject pronoun in a plain statement sounds unnatural; a Colombian would put it first or drop it.",
+  "fix": "Yo ya he visto esa película tres veces y todavía me gusta."
+ },
+ {
+  "id": 761,
+  "s": "Ya hemos hecho nosotros todas las maletas; solo falta salir.",
+  "problem": "Postverbal subject pronoun in a plain statement sounds unnatural; a Colombian would put it first or drop it.",
+  "fix": "Nosotros ya hemos hecho todas las maletas; solo falta salir."
+ },
+ {
+  "id": 767,
+  "s": "Aún no hemos abierto nosotros el regalo que nos mandó mi tía.",
+  "problem": "Postverbal subject pronoun in a plain statement sounds unnatural; a Colombian would put it first or drop it.",
+  "fix": "Nosotros aún no hemos abierto el regalo que nos mandó mi tía."
+ },
+ {
+  "id": 769,
+  "s": "Ya he probado yo todos los restaurantes de la calle; este es el mejor.",
+  "problem": "Postverbal subject pronoun in a plain statement sounds unnatural; a Colombian would put it first or drop it.",
+  "fix": "Yo ya he probado todos los restaurantes de la calle; este es el mejor."
+ },
+ {
+  "id": 823,
+  "s": "Últimamente no hemos sabido nosotros nada de Juliana.",
+  "problem": "Postverbal subject pronoun in a plain statement sounds unnatural; a Colombian would put it first or drop it.",
+  "fix": "Últimamente nosotros no hemos sabido nada de Juliana."
+ },
+ {
+  "id": 839,
+  "s": "Siempre han vivido ellos en el mismo barrio, desde que se casaron.",
+  "problem": "Postverbal subject pronoun in a plain statement sounds unnatural; a Colombian would put it first or drop it.",
+  "fix": "Ellos siempre han vivido en el mismo barrio, desde que se casaron."
+ },
+ {
+  "id": 847,
+  "s": "Nunca hemos ido nosotros al mar en Semana Santa; siempre nos quedamos.",
+  "problem": "Postverbal subject pronoun in a plain statement sounds unnatural; a Colombian would put it first or drop it.",
+  "fix": "Nosotros nunca hemos ido al mar en Semana Santa; siempre nos quedamos."
+ },
+ {
+  "id": 855,
+  "s": "Ya he explicado yo esto en clase, pero lo repito.",
+  "problem": "Postverbal subject pronoun in a plain statement sounds unnatural; a Colombian would put it first or drop it.",
+  "fix": "Yo ya he explicado esto en clase, pero lo repito."
+ },
+ {
+  "id": 857,
+  "s": "Todavía no hemos mirado nosotros el correo de la universidad.",
+  "problem": "Postverbal subject pronoun in a plain statement sounds unnatural; a Colombian would put it first or drop it.",
+  "fix": "Nosotros todavía no hemos mirado el correo de la universidad."
+ },
+ {
+  "id": 859,
+  "s": "Ya he llamado yo a todos mis amigos y nadie puede ir.",
+  "problem": "Postverbal subject pronoun in a plain statement sounds unnatural; a Colombian would put it first or drop it.",
+  "fix": "Yo ya he llamado a todos mis amigos y nadie puede ir."
+ },
+ {
+  "id": 863,
+  "s": "Aún no hemos recibido nosotros respuesta del banco.",
+  "problem": "Postverbal subject pronoun in a plain statement sounds unnatural; a Colombian would put it first or drop it.",
+  "fix": "Nosotros aún no hemos recibido respuesta del banco."
+ },
+ {
+  "id": 865,
+  "s": "Ya he olvidado yo cuántas veces me ha mentido.",
+  "problem": "Postverbal subject pronoun in a plain statement sounds unnatural; a Colombian would put it first or drop it.",
+  "fix": "Yo ya he olvidado cuántas veces me ha mentido."
+ },
+ {
+  "id": 867,
+  "s": "Últimamente he ido yo al gimnasio todas las mañanas.",
+  "problem": "Postverbal subject pronoun in a plain statement sounds unnatural; a Colombian would put it first or drop it.",
+  "fix": "Últimamente yo he ido al gimnasio todas las mañanas."
+ },
+ {
+  "id": 889,
+  "s": "Todo este tiempo hemos esperado nosotros una llamada tuya.",
+  "problem": "Postverbal subject pronoun in a plain statement sounds unnatural; a Colombian would put it first or drop it.",
+  "fix": "Todo este tiempo nosotros hemos esperado una llamada tuya."
+ }
+]

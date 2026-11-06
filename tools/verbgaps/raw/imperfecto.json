@@ -1,0 +1,2561 @@
+[
+ {
+  "q": "De niño, yo ___ (jugar) fútbol en la calle todas las tardes.",
+  "inf": "jugar",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "jugaba",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "De niño marca una costumbre del pasado: imperfecto.",
+  "why_en": "As a child marks a habit in the past: imperfect.",
+  "en": "As a child I played soccer in the street every afternoon.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando vivíamos en Cartagena, nosotros ___ (ir) a la playa los domingos.",
+  "inf": "ir",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "íbamos",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando vivíamos marca una costumbre del pasado: imperfecto.",
+  "why_en": "When we lived marks a habit in the past: imperfect.",
+  "en": "When we lived in Cartagena, we went to the beach on Sundays.",
+  "band": "A2"
+ },
+ {
+  "q": "Mi abuela siempre nos ___ (preparar) arepas cuando íbamos a su casa.",
+  "inf": "preparar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "preparaba",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Siempre... cuando íbamos marca una costumbre del pasado: imperfecto.",
+  "why_en": "Always... whenever we went marks a habit in the past: imperfect.",
+  "en": "My grandmother always made us arepas when we went to her house.",
+  "band": "A2"
+ },
+ {
+  "q": "Todos los veranos mis primos ___ (venir) a pasar un mes con nosotros.",
+  "inf": "venir",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "venían",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Todos los veranos (en el pasado) marca una costumbre del pasado: imperfecto.",
+  "why_en": "Every summer (in the past) marks a habit in the past: imperfect.",
+  "en": "Every summer my cousins came to spend a month with us.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando era niña, Valentina ___ (tener) un perro llamado Chispa.",
+  "inf": "tener",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "tenía",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando era niña marca una costumbre del pasado: imperfecto.",
+  "why_en": "When she was a girl marks a habit in the past: imperfect.",
+  "en": "When she was a girl, Valentina had a dog called Chispa.",
+  "band": "A2"
+ },
+ {
+  "q": "En esa época tú te ___ (levantar) a las cinco para ir a la escuela.",
+  "inf": "levantar",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "levantabas",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "En esa época marca una costumbre del pasado: imperfecto.",
+  "why_en": "Back then marks a habit in the past: imperfect.",
+  "en": "Back then you got up at five to go to school.",
+  "band": "A2"
+ },
+ {
+  "q": "Tú ___ (trabajar) en una fábrica cuando yo era pequeño.",
+  "inf": "trabajar",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "trabajabas",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando yo era pequeño marca una costumbre del pasado: imperfecto.",
+  "why_en": "When I was little marks a habit in the past: imperfect.",
+  "en": "You worked at a factory when I was little.",
+  "band": "A2"
+ },
+ {
+  "q": "Los domingos, después de misa, toda la familia ___ (comer) en casa de los abuelos.",
+  "inf": "comer",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "comía",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Los domingos (de entonces) marca una costumbre del pasado: imperfecto.",
+  "why_en": "On Sundays (back then) marks a habit in the past: imperfect.",
+  "en": "On Sundays after mass, the whole family ate at my grandparents' house.",
+  "band": "A2"
+ },
+ {
+  "q": "De joven, yo ___ (tocar) la trompeta en una orquesta.",
+  "inf": "tocar",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "tocaba",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "De joven marca una costumbre del pasado: imperfecto.",
+  "why_en": "When he was young marks a habit in the past: imperfect.",
+  "en": "When I was young, I played the trumpet in an orchestra.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando estudiábamos en el colegio, nosotros ___ (hacer) la tarea juntos.",
+  "inf": "hacer",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "hacíamos",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando estudiábamos marca una costumbre del pasado: imperfecto.",
+  "why_en": "When we studied marks a habit in the past: imperfect.",
+  "en": "When we were in school, we did our homework together.",
+  "band": "A2"
+ },
+ {
+  "q": "Antes yo ___ (fumar) mucho, pero lo dejé hace años.",
+  "inf": "fumar",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "fumaba",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Antes... lo dejé marca una costumbre del pasado: imperfecto.",
+  "why_en": "Before... I quit marks a habit in the past: imperfect.",
+  "en": "I used to smoke a lot, but I quit years ago.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando éramos pequeños, mis hermanos y yo ___ (dormir) en el mismo cuarto.",
+  "inf": "dormir",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "dormíamos",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando éramos pequeños marca una costumbre del pasado: imperfecto.",
+  "why_en": "When we were little marks a habit in the past: imperfect.",
+  "en": "When we were little, my brothers and I slept in the same room.",
+  "band": "A2"
+ },
+ {
+  "q": "Mi mamá nos ___ (leer) un cuento todas las noches cuando éramos niños.",
+  "inf": "leer",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "leía",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Todas las noches... éramos niños marca una costumbre del pasado: imperfecto.",
+  "why_en": "Every night... we were kids marks a habit in the past: imperfect.",
+  "en": "My mom read us a story every night when we were kids.",
+  "band": "A2"
+ },
+ {
+  "q": "En el pueblo de mi abuela, la gente ___ (salir) a conversar cada tarde.",
+  "inf": "salir",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "salía",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "En el pueblo de mi abuela, cada tarde marca una costumbre del pasado: imperfecto.",
+  "why_en": "In my grandmother's town, each afternoon marks a habit in the past: imperfect.",
+  "en": "In my grandmother's town, people came out to chat at their doors every afternoon.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando tú eras bebé, siempre ___ (llorar) si te dejábamos solo.",
+  "inf": "llorar",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "llorabas",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando tú eras bebé, siempre marca una costumbre del pasado: imperfecto.",
+  "why_en": "When you were a baby, always marks a habit in the past: imperfect.",
+  "en": "When you were a baby, you always cried if we left you alone.",
+  "band": "A2"
+ },
+ {
+  "q": "Antes los niños ___ (jugar) en la calle hasta que oscurecía.",
+  "inf": "jugar",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "jugaban",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Antes... hasta que oscurecía marca una costumbre del pasado: imperfecto.",
+  "why_en": "Before... until it got dark marks a habit in the past: imperfect.",
+  "en": "In the past kids played in the street until it got dark.",
+  "band": "A2"
+ },
+ {
+  "q": "De pequeño, yo ___ (creer) que los gatos hablaban de noche.",
+  "inf": "creer",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "creía",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "De pequeño marca una costumbre del pasado: imperfecto.",
+  "why_en": "As a little kid marks a habit in the past: imperfect.",
+  "en": "As a little kid I believed cats talked at night.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando trabajaba en el banco, yo ___ (tomar) el bus a las seis.",
+  "inf": "tomar",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "tomaba",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando trabajaba marca una costumbre del pasado: imperfecto.",
+  "why_en": "When I worked marks a habit in the past: imperfect.",
+  "en": "When I worked at the bank, I took the bus at six.",
+  "band": "A2"
+ },
+ {
+  "q": "En la finca de mis abuelos, nosotros ___ (comer) frutas directamente del árbol.",
+  "inf": "comer",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "comíamos",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "En la finca (de entonces) marca una costumbre del pasado: imperfecto.",
+  "why_en": "At the farm (back then) marks a habit in the past: imperfect.",
+  "en": "At my grandparents' farm we ate fruit straight from the tree.",
+  "band": "A2"
+ },
+ {
+  "q": "De adolescente, tú ___ (escribir) en tu diario todos los días.",
+  "inf": "escribir",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "escribías",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Todos los días cuando era adolescente marca una costumbre del pasado: imperfecto.",
+  "why_en": "Every day when she was a teenager marks a habit in the past: imperfect.",
+  "en": "As a teenager you wrote in your diary every day.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando vivías en Bogotá, tú ___ (caminar) al trabajo, ¿no?",
+  "inf": "caminar",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "caminabas",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando vivías marca una costumbre del pasado: imperfecto.",
+  "why_en": "When you lived marks a habit in the past: imperfect.",
+  "en": "When you lived in Bogotá, you walked to work, right?",
+  "band": "A2"
+ },
+ {
+  "q": "Antes mis vecinos ___ (poner) música a todo volumen los viernes, pero ya no.",
+  "inf": "poner",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "ponían",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Antes... pero ya no marca una costumbre del pasado: imperfecto.",
+  "why_en": "Before... but not anymore marks a habit in the past: imperfect.",
+  "en": "My neighbors used to play loud music on Fridays, but not anymore.",
+  "band": "B1"
+ },
+ {
+  "q": "De niña, yo ___ (pasar) las vacaciones en la finca de mi tío.",
+  "inf": "pasar",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "pasaba",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "De niña marca una costumbre del pasado: imperfecto.",
+  "why_en": "As a girl marks a habit in the past: imperfect.",
+  "en": "As a girl, I spent my vacations at my uncle's farm.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando éramos novios, él me ___ (mandar) flores cada semana.",
+  "inf": "mandar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "mandaba",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando éramos novios marca una costumbre del pasado: imperfecto.",
+  "why_en": "When we were dating marks a habit in the past: imperfect.",
+  "en": "When we were dating, he sent me flowers every week.",
+  "band": "A2"
+ },
+ {
+  "q": "En el colegio, nosotros ___ (vender) dulces cada viernes para pagar el paseo.",
+  "inf": "vender",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "vendíamos",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cada viernes (en el colegio) marca una costumbre del pasado: imperfecto.",
+  "why_en": "Every Friday (at school) marks a habit in the past: imperfect.",
+  "en": "At school we sold candy every Friday to pay for the trip.",
+  "band": "A2"
+ },
+ {
+  "q": "Mi abuelo ___ (contar) historias de la guerra cada vez que lo visitábamos.",
+  "inf": "contar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "contaba",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cada vez que lo visitábamos marca una costumbre del pasado: imperfecto.",
+  "why_en": "Whenever we visited him marks a habit in the past: imperfect.",
+  "en": "My grandfather told war stories every time we visited him.",
+  "band": "B1"
+ },
+ {
+  "q": "En aquella época, yo ___ (ganar) muy poco y no ahorraba nada.",
+  "inf": "ganar",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "ganaba",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "En aquella época marca una costumbre del pasado: imperfecto.",
+  "why_en": "Back in those days marks a habit in the past: imperfect.",
+  "en": "Back then I earned very little and saved nothing.",
+  "band": "A2"
+ },
+ {
+  "q": "Mis tíos ___ (visitar) a la abuela cada domingo antes de mudarse a España.",
+  "inf": "visitar",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "visitaban",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cada domingo antes de mudarse marca una costumbre del pasado: imperfecto.",
+  "why_en": "Every Sunday before moving marks a habit in the past: imperfect.",
+  "en": "My aunt and uncle visited Grandma every Sunday before moving to Spain.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando íbamos a la escuela, ustedes ___ (pasar) por mi casa para caminar juntos.",
+  "inf": "pasar",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "pasaban",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando íbamos a la escuela marca una costumbre del pasado: imperfecto.",
+  "why_en": "When we went to school marks a habit in the past: imperfect.",
+  "en": "When we went to school, you came by my house so we could walk together.",
+  "band": "B1"
+ },
+ {
+  "q": "Siempre que llovía, mi papá me ___ (llevar) al colegio en el carro.",
+  "inf": "llevar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "llevaba",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Siempre que llovía marca una costumbre del pasado: imperfecto.",
+  "why_en": "Whenever it rained marks a habit in the past: imperfect.",
+  "en": "Whenever it rained, my dad drove me to school.",
+  "band": "A2"
+ },
+ {
+  "q": "De chico, yo ___ (ver) dibujos animados todos los sábados en la mañana.",
+  "inf": "ver",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "veía",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "De chico... todos los sábados marca una costumbre del pasado: imperfecto.",
+  "why_en": "As a kid... every Saturday marks a habit in the past: imperfect.",
+  "en": "As a kid I watched cartoons every Saturday morning.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando eras estudiante, tú ___ (vivir) con tres compañeros en un apartamento chiquito.",
+  "inf": "vivir",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "vivías",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando era estudiante marca una costumbre del pasado: imperfecto.",
+  "why_en": "When he was a student marks a habit in the past: imperfect.",
+  "en": "When you were a student, you lived with three roommates in a tiny apartment.",
+  "band": "A2"
+ },
+ {
+  "q": "De niños, cada diciembre ___ (viajar) a Pereira a ver a los abuelos.",
+  "inf": "viajar",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "viajábamos",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cada diciembre (de entonces) marca una costumbre del pasado: imperfecto.",
+  "why_en": "Each December (back then) marks a habit in the past: imperfect.",
+  "en": "As children, every December we travelled to Pereira to see our grandparents.",
+  "band": "A2"
+ },
+ {
+  "q": "En esos años tú ___ (cantar) en un coro todos los jueves.",
+  "inf": "cantar",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "cantabas",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "En esos años marca una costumbre del pasado: imperfecto.",
+  "why_en": "In those years marks a habit in the past: imperfect.",
+  "en": "In those years you sang in a choir every Thursday.",
+  "band": "A2"
+ },
+ {
+  "q": "Mis papás ___ (cuidar) un huerto detrás de la casa cuando yo era niño.",
+  "inf": "cuidar",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "cuidaban",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando yo era niño marca una costumbre del pasado: imperfecto.",
+  "why_en": "When I was a kid marks a habit in the past: imperfect.",
+  "en": "My parents tended a garden behind the house when I was a kid.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando yo estaba en primaria, mi profesora nos ___ (dar) dulces los viernes.",
+  "inf": "dar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "daba",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando estaba en primaria marca una costumbre del pasado: imperfecto.",
+  "why_en": "When I was in elementary school marks a habit in the past: imperfect.",
+  "en": "When I was in elementary school, my teacher gave us candy on Fridays.",
+  "band": "A2"
+ },
+ {
+  "q": "Antes de tener hijos, nosotros ___ (salir) a cenar todos los sábados.",
+  "inf": "salir",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "salíamos",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Antes de tener hijos marca una costumbre del pasado: imperfecto.",
+  "why_en": "Before having kids marks a habit in the past: imperfect.",
+  "en": "Before having kids, we went out to dinner every Saturday.",
+  "band": "A2"
+ },
+ {
+  "q": "De joven, tú ___ (bailar) cumbia en las fiestas del pueblo.",
+  "inf": "bailar",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "bailabas",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "De joven marca una costumbre del pasado: imperfecto.",
+  "why_en": "When she was young marks a habit in the past: imperfect.",
+  "en": "When you were young, you danced cumbia at the town parties.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando eras chiquito, tú siempre ___ (pedir) lo mismo en el restaurante.",
+  "inf": "pedir",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "pedías",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando eras chiquito, siempre marca una costumbre del pasado: imperfecto.",
+  "why_en": "When you were little, always marks a habit in the past: imperfect.",
+  "en": "When you were little, you always ordered the same thing at the restaurant.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando yo era chiquita, las señoras del barrio se ___ (sentar) afuera a conversar.",
+  "inf": "sentar",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "sentaban",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando yo era chiquita marca una costumbre del pasado: imperfecto.",
+  "why_en": "When I was little marks a habit in the past: imperfect.",
+  "en": "When I was little, the ladies in the neighborhood sat outside to chat.",
+  "band": "B1"
+ },
+ {
+  "q": "Los fines de semana mi papá nos ___ (sacar) al parque cuando éramos chicos.",
+  "inf": "sacar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "sacaba",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando éramos chicos marca una costumbre del pasado: imperfecto.",
+  "why_en": "When we were kids marks a habit in the past: imperfect.",
+  "en": "On weekends my dad took us out to the park when we were kids.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando estudiaba en la universidad, yo ___ (ayudar) los sábados en una librería.",
+  "inf": "ayudar",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "ayudaba",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando estudiaba marca una costumbre del pasado: imperfecto.",
+  "why_en": "When I studied marks a habit in the past: imperfect.",
+  "en": "When I was at university, I helped out at a bookstore on Saturdays.",
+  "band": "B1"
+ },
+ {
+  "q": "De niño, yo ___ (decir) que quería ser piloto cada vez que veía un avión.",
+  "inf": "decir",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "decía",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cada vez que veía marca una costumbre del pasado: imperfecto.",
+  "why_en": "Every time he saw marks a habit in the past: imperfect.",
+  "en": "As a kid I said I wanted to be a pilot every time I saw a plane.",
+  "band": "A2"
+ },
+ {
+  "q": "Antes la gente ___ (escribir) cartas; ahora todo es por WhatsApp.",
+  "inf": "escribir",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "escribía",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Antes... ahora marca una costumbre del pasado: imperfecto.",
+  "why_en": "Before... now marks a habit in the past: imperfect.",
+  "en": "People used to write letters; now everything is by WhatsApp.",
+  "band": "B1"
+ },
+ {
+  "q": "En el colegio, tú siempre ___ (sacar) las mejores notas.",
+  "inf": "sacar",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "sacabas",
+  "use": "imperfecto: hábito en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "En el colegio, siempre marca una costumbre del pasado: imperfecto.",
+  "why_en": "At school, always marks a habit in the past: imperfect.",
+  "en": "At school you always got the best grades.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando llegamos a la fiesta, ___ (haber) mucha gente y la música sonaba fuerte.",
+  "inf": "haber",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "había",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando llegamos describe el fondo de la escena: imperfecto.",
+  "why_en": "When we arrived describes the scene background: imperfect.",
+  "en": "When we got to the party, there were lots of people and the music was loud.",
+  "band": "A2"
+ },
+ {
+  "q": "Ayer, cuando salí de la casa, ___ (hacer) mucho frío.",
+  "inf": "hacer",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "hacía",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando salí describe el fondo de la escena: imperfecto.",
+  "why_en": "When I left describes the scene background: imperfect.",
+  "en": "Yesterday when I left the house, it was very cold.",
+  "band": "A2"
+ },
+ {
+  "q": "Anoche yo no quise salir porque ___ (estar) muy cansado.",
+  "inf": "estar",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "estaba",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Porque describe el fondo de la escena: imperfecto.",
+  "why_en": "Because describes the scene background: imperfect.",
+  "en": "Last night I didn't want to go out because I was very tired.",
+  "band": "A2"
+ },
+ {
+  "q": "No fuimos a la playa porque cuando nos levantamos ___ (llover) muy fuerte.",
+  "inf": "llover",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "llovía",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Lo que pasaba cuando ocurrió otra cosa (cuando nos levantamos) va en imperfecto.",
+  "why_en": "What was going on when something else happened (when we got up) takes the imperfect.",
+  "en": "We did not go to the beach because when we got up it was raining very hard.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando entré al cuarto, la ventana ___ (estar) abierta y las luces apagadas.",
+  "inf": "estar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "estaba",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando entré describe el fondo de la escena: imperfecto.",
+  "why_en": "When I came in describes the scene background: imperfect.",
+  "en": "When I entered the room, the window was open and the lights were off.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando yo era niño, la casa de mis abuelos ___ (quedar) lejos del pueblo.",
+  "inf": "quedar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "quedaba",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando yo era niño describe el fondo de la escena: imperfecto.",
+  "why_en": "When I was a boy describes the scene background: imperfect.",
+  "en": "When I was a boy, my grandparents' house was far from town.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando te conocí, tú ___ (estar) muy delgado y llevabas el pelo largo.",
+  "inf": "estar",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "estabas",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando conocí a Pedro describe el fondo de la escena: imperfecto.",
+  "why_en": "When I met Pedro describes the scene background: imperfect.",
+  "en": "When I met you, you were very thin and wore your hair long.",
+  "band": "A2"
+ },
+ {
+  "q": "Esa mañana yo me veía triste porque ___ (extrañar) a mi abuela.",
+  "inf": "extrañar",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "extrañaba",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Esa mañana... porque describe el fondo de la escena: imperfecto.",
+  "why_en": "That morning... because describes the scene background: imperfect.",
+  "en": "That morning I looked sad because I missed my grandmother.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegó la ambulancia, el herido ya no ___ (poder) hablar.",
+  "inf": "poder",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "podía",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando llegó la ambulancia describe el fondo de la escena: imperfecto.",
+  "why_en": "When the ambulance arrived describes the scene background: imperfect.",
+  "en": "When the ambulance arrived, the injured man could no longer speak.",
+  "band": "B1"
+ },
+ {
+  "q": "Nosotros no salimos porque ___ (deber) terminar la tarea y estábamos cansados.",
+  "inf": "deber",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "debíamos",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Porque... estábamos cansados describe el fondo de la escena: imperfecto.",
+  "why_en": "Because... we were tired describes the scene background: imperfect.",
+  "en": "We didn't go out because we had a lot of homework and were tired.",
+  "band": "A2"
+ },
+ {
+  "q": "Compré ese carro porque ___ (costar) poco y tenía poco kilometraje.",
+  "inf": "costar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "costaba",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Compré... porque describe el fondo de la escena: imperfecto.",
+  "why_en": "I bought... because describes the scene background: imperfect.",
+  "en": "I bought that car because it was cheap and had low mileage.",
+  "band": "A2"
+ },
+ {
+  "q": "Me quedé en casa porque me ___ (doler) la cabeza.",
+  "inf": "doler",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "dolía",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Me quedé... porque describe el fondo de la escena: imperfecto.",
+  "why_en": "I stayed... because describes the scene background: imperfect.",
+  "en": "I stayed home because I had a headache.",
+  "band": "B1"
+ },
+ {
+  "q": "Los niños no querían dormir porque ___ (haber) tormenta afuera.",
+  "inf": "haber",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "había",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "No querían dormir porque describe el fondo de la escena: imperfecto.",
+  "why_en": "They didn't want to sleep because describes the scene background: imperfect.",
+  "en": "The kids didn't want to sleep because there was a storm outside.",
+  "band": "A2"
+ },
+ {
+  "q": "Yo no te llamé porque no ___ (tener) tu número.",
+  "inf": "tener",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "tenía",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "No te llamé porque describe el fondo de la escena: imperfecto.",
+  "why_en": "I didn't call you because describes the scene background: imperfect.",
+  "en": "I didn't call you because I didn't have your number.",
+  "band": "A2"
+ },
+ {
+  "q": "El restaurante estaba lleno y los meseros ___ (correr) de mesa en mesa.",
+  "inf": "correr",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "corrían",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Estaba lleno describe el fondo de la escena: imperfecto.",
+  "why_en": "It was full describes the scene background: imperfect.",
+  "en": "The restaurant was packed and the waiters were running from table to table.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegué al aeropuerto, mucha gente ___ (esperar) en la fila.",
+  "inf": "esperar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "esperaba",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando llegué describe el fondo de la escena: imperfecto.",
+  "why_en": "When I arrived describes the scene background: imperfect.",
+  "en": "When I got to the airport, many people were waiting in line.",
+  "band": "A2"
+ },
+ {
+  "q": "Ese día llevabas un vestido rojo y ___ (parecer) muy feliz.",
+  "inf": "parecer",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "parecías",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Llevaba un vestido rojo describe el fondo de la escena: imperfecto.",
+  "why_en": "She was wearing a red dress describes the scene background: imperfect.",
+  "en": "That day you wore a red dress and looked very happy.",
+  "band": "B1"
+ },
+ {
+  "q": "Antes de la reunión, tú te ___ (ver) muy nervioso y no parabas de caminar.",
+  "inf": "ver",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "veías",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Antes de la reunión describe el fondo de la escena: imperfecto.",
+  "why_en": "Before the meeting describes the scene background: imperfect.",
+  "en": "Before the meeting, you looked very nervous and kept pacing.",
+  "band": "B1"
+ },
+ {
+  "q": "Me gustó la película porque la historia me ___ (parecer) muy original.",
+  "inf": "parecer",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "parecía",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Me gustó... porque describe el fondo de la escena: imperfecto. También vale el pretérito.",
+  "why_en": "I liked... because describes the scene background: imperfect. The preterite also works.",
+  "en": "I liked the movie because the story was very original.",
+  "band": "A2",
+  "also": [
+   "pareció"
+  ]
+ },
+ {
+  "q": "Cuando salimos de misa, ___ (hacer) un sol espectacular.",
+  "inf": "hacer",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "hacía",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "\"Cuando salimos\": el tiempo que hacía es el fondo de la escena, en imperfecto.",
+  "why_en": "\"When we came out\": the weather is the background of the scene, in the imperfect.",
+  "en": "When we came out of Mass, there was glorious sunshine.",
+  "band": "A2"
+ },
+ {
+  "q": "En la plaza ___ (haber) olor a frutas frescas y a café recién hecho.",
+  "inf": "haber",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "había",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "En la plaza (de aquel día) describe el fondo de la escena: imperfecto.",
+  "why_en": "In the market (that day) describes the scene background: imperfect.",
+  "en": "The market smelled of fresh fruit and freshly made coffee.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi abuelo no oía bien, así que nosotros le ___ (hablar) más fuerte.",
+  "inf": "hablar",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "hablábamos",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Mi abuelo no oía bien describe el fondo de la escena: imperfecto.",
+  "why_en": "My grandfather didn't hear well describes the scene background: imperfect.",
+  "en": "My grandfather didn't hear well, so we spoke to him louder.",
+  "band": "B1"
+ },
+ {
+  "q": "Esa tarde estaba solo y no ___ (saber) qué hacer.",
+  "inf": "saber",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "sabía",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Esa tarde estaba solo describe el fondo de la escena: imperfecto.",
+  "why_en": "That afternoon he was alone describes the scene background: imperfect.",
+  "en": "That afternoon I was alone and didn't know what to do.",
+  "band": "A2"
+ },
+ {
+  "q": "Nos asustamos porque la calle ___ (estar) completamente oscura.",
+  "inf": "estar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "estaba",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Nos asustamos porque describe el fondo de la escena: imperfecto.",
+  "why_en": "We got scared because describes the scene background: imperfect.",
+  "en": "We got scared because the street was completely dark.",
+  "band": "A2"
+ },
+ {
+  "q": "Camilo ___ (ser) muy tímido de niño.",
+  "inf": "ser",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "era",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "De niño describe el fondo de la escena: imperfecto.",
+  "why_en": "As a child describes the scene background: imperfect.",
+  "en": "Camilo was very shy as a child.",
+  "band": "A2"
+ },
+ {
+  "q": "Mi primo no entendía la clase porque el profesor ___ (hablar) demasiado rápido.",
+  "inf": "hablar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "hablaba",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "No entendía... porque describe el fondo de la escena: imperfecto.",
+  "why_en": "He didn't understand... because describes the scene background: imperfect.",
+  "en": "My cousin didn't understand the class because the teacher spoke too fast.",
+  "band": "B1"
+ },
+ {
+  "q": "Hacía calor y los turistas ___ (buscar) sombra debajo de los árboles.",
+  "inf": "buscar",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "buscaban",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Hacía calor describe el fondo de la escena: imperfecto.",
+  "why_en": "It was hot describes the scene background: imperfect.",
+  "en": "It was hot and the tourists were looking for shade under the trees.",
+  "band": "A2"
+ },
+ {
+  "q": "Ayer en el centro ___ (haber) tanto tráfico que tardé dos horas.",
+  "inf": "haber",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "había",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Ayer... tanto... que describe el fondo de la escena: imperfecto. También vale el pretérito.",
+  "why_en": "Yesterday... so much... that describes the scene background: imperfect. The preterite also works.",
+  "en": "Yesterday downtown there was so much traffic that it took me two hours.",
+  "band": "B1",
+  "also": [
+   "hubo"
+  ]
+ },
+ {
+  "q": "Cuando entré a la cocina, mi hermana ___ (llorar) y no quería decirme por qué.",
+  "inf": "llorar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "lloraba",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando entré describe el fondo de la escena: imperfecto.",
+  "why_en": "When I came in describes the scene background: imperfect.",
+  "en": "When I walked into the kitchen, my sister was crying and wouldn't tell me why.",
+  "band": "B1"
+ },
+ {
+  "q": "El profesor de química siempre les ___ (gritar) cuando estaba de mal genio.",
+  "inf": "gritar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "gritaba",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "\"Siempre... cuando estaba\": una costumbre del pasado va en imperfecto.",
+  "why_en": "\"Always... when he was\": a past habit takes the imperfect.",
+  "en": "The chemistry teacher always shouted at them when he was in a bad mood.",
+  "band": "B1"
+ },
+ {
+  "q": "Aquel invierno nosotros ___ (vivir) en un cuarto sin calefacción y pasábamos mucho frío.",
+  "inf": "vivir",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "vivíamos",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Aquel invierno... pasábamos describe el fondo de la escena: imperfecto.",
+  "why_en": "That winter... we suffered describes the scene background: imperfect.",
+  "en": "That winter we lived in a room without heating and were very cold.",
+  "band": "B1"
+ },
+ {
+  "q": "Tú tenías hambre y por eso ___ (querer) pedir otra pizza.",
+  "inf": "querer",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "querías",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Tenías hambre describe el fondo de la escena: imperfecto.",
+  "why_en": "You were hungry describes the scene background: imperfect.",
+  "en": "You were hungry and that is why you wanted to order another pizza.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando mis abuelos eran jóvenes, no ___ (existir) internet.",
+  "inf": "existir",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "existía",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Describir cómo era el pasado (cuando eran jóvenes) pide imperfecto.",
+  "why_en": "Describing how the past was (when they were young) takes the imperfect.",
+  "en": "When my grandparents were young, the internet did not exist.",
+  "band": "B1"
+ },
+ {
+  "q": "Ellos se quedaron callados porque nadie ___ (saber) qué responder.",
+  "inf": "saber",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "sabía",
+  "use": "imperfecto: descripción y fondo",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Se quedaron callados porque describe el fondo de la escena: imperfecto. También vale el pretérito.",
+  "why_en": "They fell silent because describes the scene background: imperfect. The preterite also works.",
+  "en": "They fell silent because nobody knew what to answer.",
+  "band": "B1",
+  "also": [
+   "supo"
+  ]
+ },
+ {
+  "q": "Yo ___ (lavar) los platos cuando sonó el teléfono.",
+  "inf": "lavar",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "lavaba",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando sonó dice qué estaba en curso: imperfecto.",
+  "why_en": "When it rang says what was in progress: imperfect.",
+  "en": "I was washing the dishes when the phone rang.",
+  "band": "A2"
+ },
+ {
+  "q": "Nosotros ___ (manejar) hacia el trabajo cuando se nos pinchó una llanta.",
+  "inf": "manejar",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "manejábamos",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando se le pinchó dice qué estaba en curso: imperfecto.",
+  "why_en": "When it got punctured says what was in progress: imperfect.",
+  "en": "We were driving to work when we got a flat tire.",
+  "band": "B1"
+ },
+ {
+  "q": "Mis papás ___ (ver) televisión cuando se fue la luz.",
+  "inf": "ver",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "veían",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando se fue la luz dice qué estaba en curso: imperfecto.",
+  "why_en": "When the power went out says what was in progress: imperfect.",
+  "en": "My parents were watching TV when the power went out.",
+  "band": "A2"
+ },
+ {
+  "q": "Tú ___ (cruzar) la calle cuando el semáforo cambió a rojo.",
+  "inf": "cruzar",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "cruzabas",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando cambió dice qué estaba en curso: imperfecto.",
+  "why_en": "When it changed says what was in progress: imperfect.",
+  "en": "You were crossing the street when the light turned red.",
+  "band": "A2"
+ },
+ {
+  "q": "Nosotros ___ (comer) cuando llegó el técnico del internet.",
+  "inf": "comer",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "comíamos",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando llegó dice qué estaba en curso: imperfecto.",
+  "why_en": "When he arrived says what was in progress: imperfect.",
+  "en": "We were eating when the internet technician arrived.",
+  "band": "A2"
+ },
+ {
+  "q": "Yo ___ (hablar) por teléfono cuando alguien tocó a la puerta.",
+  "inf": "hablar",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "hablaba",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando alguien tocó dice qué estaba en curso: imperfecto.",
+  "why_en": "When someone knocked says what was in progress: imperfect.",
+  "en": "I was on the phone when someone knocked on the door.",
+  "band": "A2"
+ },
+ {
+  "q": "Los niños ___ (dormir) cuando empezó la tormenta.",
+  "inf": "dormir",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "dormían",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando empezó dice qué estaba en curso: imperfecto.",
+  "why_en": "When it started says what was in progress: imperfect.",
+  "en": "The kids were sleeping when the storm began.",
+  "band": "A2"
+ },
+ {
+  "q": "Yo ___ (leer) en el sofá cuando oí un golpe en la ventana.",
+  "inf": "leer",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "leía",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando oí dice qué estaba en curso: imperfecto.",
+  "why_en": "When I heard says what was in progress: imperfect.",
+  "en": "I was reading on the sofa when I heard a bang on the window.",
+  "band": "A2"
+ },
+ {
+  "q": "Tú ___ (cocinar) cuando llegaron los invitados antes de tiempo.",
+  "inf": "cocinar",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "cocinabas",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando llegaron dice qué estaba en curso: imperfecto.",
+  "why_en": "When they arrived says what was in progress: imperfect.",
+  "en": "You were cooking when the guests arrived early.",
+  "band": "A2"
+ },
+ {
+  "q": "El abuelo ___ (caminar) por el parque cuando se encontró con un viejo amigo.",
+  "inf": "caminar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "caminaba",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando se encontró dice qué estaba en curso: imperfecto.",
+  "why_en": "When he ran into says what was in progress: imperfect.",
+  "en": "Grandpa was walking in the park when he ran into an old friend.",
+  "band": "B1"
+ },
+ {
+  "q": "Tú ___ (estudiar) en la biblioteca cuando te llamó tu mamá.",
+  "inf": "estudiar",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "estudiabas",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando te llamó dice qué estaba en curso: imperfecto.",
+  "why_en": "When she called you says what was in progress: imperfect.",
+  "en": "You were studying at the library when your mom called you.",
+  "band": "A2"
+ },
+ {
+  "q": "Mientras ___ (bajar) del bus, vimos a Camilo en la esquina.",
+  "inf": "bajar",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "bajábamos",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "\"Mientras\" con una acción en curso en el pasado pide imperfecto.",
+  "why_en": "\"Mientras\" with an action in progress in the past takes the imperfect.",
+  "en": "As we were getting off the bus, we saw Camilo on the corner.",
+  "band": "A2"
+ },
+ {
+  "q": "Ellos ___ (jugar) cartas cuando entró la policía.",
+  "inf": "jugar",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "jugaban",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando entró dice qué estaba en curso: imperfecto.",
+  "why_en": "When it came in says what was in progress: imperfect.",
+  "en": "They were playing cards when the police came in.",
+  "band": "A2"
+ },
+ {
+  "q": "Yo ___ (escribir) un correo cuando se apagó el computador.",
+  "inf": "escribir",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "escribía",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando se apagó dice qué estaba en curso: imperfecto.",
+  "why_en": "When it shut off says what was in progress: imperfect.",
+  "en": "I was writing an email when the computer shut off.",
+  "band": "A2"
+ },
+ {
+  "q": "Yo ___ (pagar) en la caja cuando me di cuenta de que no tenía plata.",
+  "inf": "pagar",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "pagaba",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando me di cuenta dice qué estaba en curso: imperfecto.",
+  "why_en": "When I realized says what was in progress: imperfect.",
+  "en": "I was paying at the register when I realized I had no money.",
+  "band": "B1"
+ },
+ {
+  "q": "Los vecinos ___ (arreglar) la moto en la calle cuando empezó a llover.",
+  "inf": "arreglar",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "arreglaban",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando empezó dice qué estaba en curso: imperfecto.",
+  "why_en": "When it began says what was in progress: imperfect.",
+  "en": "The neighbors were fixing the motorcycle in the street when it started to rain.",
+  "band": "B1"
+ },
+ {
+  "q": "Pedro ___ (subir) al bus cuando se dio cuenta de que había olvidado el celular.",
+  "inf": "subir",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "subía",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando se dio cuenta dice qué estaba en curso: imperfecto.",
+  "why_en": "When he realized says what was in progress: imperfect.",
+  "en": "Pedro was boarding the bus when he realized he had forgotten his phone.",
+  "band": "B1"
+ },
+ {
+  "q": "Mis primos ___ (bailar) cuando se acabó la música.",
+  "inf": "bailar",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "bailaban",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando se acabó dice qué estaba en curso: imperfecto.",
+  "why_en": "When it ended says what was in progress: imperfect.",
+  "en": "My cousins were dancing when the music ended.",
+  "band": "A2"
+ },
+ {
+  "q": "Tú ___ (preparar) la presentación cuando se dañó el proyector.",
+  "inf": "preparar",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "preparabas",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando se dañó dice qué estaba en curso: imperfecto.",
+  "why_en": "When it broke says what was in progress: imperfect.",
+  "en": "You were preparing the presentation when the projector broke.",
+  "band": "B1"
+ },
+ {
+  "q": "La profesora ___ (escribir) en el tablero cuando se rompió la tiza.",
+  "inf": "escribir",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "escribía",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando se rompió dice qué estaba en curso: imperfecto.",
+  "why_en": "When it broke says what was in progress: imperfect.",
+  "en": "The teacher was writing on the board when the chalk broke.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo ___ (salir) del banco cuando un hombre me gritó.",
+  "inf": "salir",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "salía",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando un hombre me gritó dice qué estaba en curso: imperfecto.",
+  "why_en": "When a man yelled at me says what was in progress: imperfect.",
+  "en": "I was leaving the bank when a man yelled at me.",
+  "band": "A2"
+ },
+ {
+  "q": "Ellos ___ (tomar) café en la terraza cuando empezó el temblor.",
+  "inf": "tomar",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "tomaban",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando empezó dice qué estaba en curso: imperfecto.",
+  "why_en": "When it began says what was in progress: imperfect.",
+  "en": "They were having coffee on the terrace when the tremor started.",
+  "band": "B1"
+ },
+ {
+  "q": "Nosotros ___ (pensar) en renunciar cuando nuestro jefe nos ofreció un ascenso.",
+  "inf": "pensar",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "pensábamos",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando su jefe le ofreció dice qué estaba en curso: imperfecto.",
+  "why_en": "When her boss offered says what was in progress: imperfect.",
+  "en": "We were thinking of quitting when our boss offered us a promotion.",
+  "band": "B1"
+ },
+ {
+  "q": "Nosotros ___ (hablar) de ti justo cuando entraste.",
+  "inf": "hablar",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "hablábamos",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Justo cuando entraste dice qué estaba en curso: imperfecto.",
+  "why_en": "Just when you came in says what was in progress: imperfect.",
+  "en": "We were talking about you just when you walked in.",
+  "band": "B1"
+ },
+ {
+  "q": "Camila ___ (esperar) el ascensor cuando vio a su exnovio.",
+  "inf": "esperar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "esperaba",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando vio dice qué estaba en curso: imperfecto.",
+  "why_en": "When she saw says what was in progress: imperfect.",
+  "en": "Camila was waiting for the elevator when she saw her ex.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo ___ (buscar) las llaves cuando mi mamá las encontró en mi chaqueta.",
+  "inf": "buscar",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "buscaba",
+  "use": "imperfecto: acción en curso interrumpida",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando mi mamá las encontró dice qué estaba en curso: imperfecto.",
+  "why_en": "When my mom found them says what was in progress: imperfect.",
+  "en": "I was looking for my keys when my mom found them in my jacket.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando sonó la alarma, ___ (ser) las cinco en punto.",
+  "inf": "ser",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "eran",
+  "use": "imperfecto: edad y hora en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Las cinco en punto da la edad o la hora de entonces: imperfecto.",
+  "why_en": "Five o'clock sharp gives the age or time then: imperfect.",
+  "en": "When the alarm rang, it was five o'clock sharp.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando me casé, mi esposa ___ (tener) veintidós años.",
+  "inf": "tener",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "tenía",
+  "use": "imperfecto: edad y hora en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando me casé da la edad o la hora de entonces: imperfecto.",
+  "why_en": "When I got married gives the age or time then: imperfect.",
+  "en": "When I got married, my wife was twenty two.",
+  "band": "A2"
+ },
+ {
+  "q": "Yo ___ (tener) diez años cuando mi familia se mudó a Medellín.",
+  "inf": "tener",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "tenía",
+  "use": "imperfecto: edad y hora en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Diez años cuando da la edad o la hora de entonces: imperfecto.",
+  "why_en": "Ten years old when gives the age or time then: imperfect.",
+  "en": "I was ten when my family moved to Medellín.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando salimos del cine, ___ (faltar) diez minutos para las doce.",
+  "inf": "faltar",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "faltaban",
+  "use": "imperfecto: edad y hora en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando salimos del cine da la edad o la hora de entonces: imperfecto.",
+  "why_en": "When we left the movies gives the age or time then: imperfect.",
+  "en": "When we left the theater, it was ten minutes to twelve.",
+  "band": "B1"
+ },
+ {
+  "q": "___ (ser) las siete en punto cuando empezó la misa.",
+  "inf": "ser",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "eran",
+  "use": "imperfecto: edad y hora en el pasado",
+  "confuse": [
+   "preterito",
+   "presente",
+   "impsubj"
+  ],
+  "why_es": "La hora en el pasado va siempre en imperfecto: eran las siete.",
+  "why_en": "Clock time in the past always takes the imperfect: eran las siete.",
+  "en": "It was seven o'clock sharp when Mass began.",
+  "band": "B1"
+ },
+ {
+  "q": "Ya ___ (pasar) de las diez cuando por fin llegaron los invitados.",
+  "inf": "pasar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "pasaba",
+  "use": "imperfecto: edad y hora en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando por fin llegaron da la edad o la hora de entonces: imperfecto.",
+  "why_en": "When they finally arrived gives the age or time then: imperfect.",
+  "en": "It was already past ten when the guests finally arrived.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi abuelo ya ___ (andar) por los ochenta cuando lo conocí.",
+  "inf": "andar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "andaba",
+  "use": "imperfecto: edad y hora en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando lo conocí da la edad o la hora de entonces: imperfecto.",
+  "why_en": "When I met him gives the age or time then: imperfect.",
+  "en": "My grandfather was already around eighty when I met him.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando ella se fue de la casa, ___ (faltar) poco para la medianoche.",
+  "inf": "faltar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "faltaba",
+  "use": "imperfecto: edad y hora en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando se fue... casi medianoche da la edad o la hora de entonces: imperfecto.",
+  "why_en": "When she left... almost midnight gives the age or time then: imperfect.",
+  "en": "When she left the house, it was almost midnight.",
+  "band": "A2"
+ },
+ {
+  "q": "Cuando mi papá murió, yo apenas ___ (ser) un adolescente.",
+  "inf": "ser",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "era",
+  "use": "imperfecto: edad y hora en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando murió... apenas da la edad o la hora de entonces: imperfecto.",
+  "why_en": "When he died... barely gives the age or time then: imperfect.",
+  "en": "When my dad died, I was barely a teenager.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando me casé, yo ya ___ (andar) por los treinta.",
+  "inf": "andar",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "andaba",
+  "use": "imperfecto: edad y hora en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando me casé... ya da la edad o la hora de entonces: imperfecto.",
+  "why_en": "When I got married... already gives the age or time then: imperfect.",
+  "en": "When I got married, I was already around thirty.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi mamá ___ (andar) por los cuarenta cuando yo nací.",
+  "inf": "andar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "andaba",
+  "use": "imperfecto: edad y hora en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando yo nací da la edad o la hora de entonces: imperfecto.",
+  "why_en": "When I was born gives the age or time then: imperfect.",
+  "en": "My mom was around forty when I was born.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando empecé a trabajar aquí, ___ (faltar) poco para Navidad.",
+  "inf": "faltar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "faltaba",
+  "use": "imperfecto: edad y hora en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando empecé da la edad o la hora de entonces: imperfecto.",
+  "why_en": "When I started gives the age or time then: imperfect.",
+  "en": "When I started working here, Christmas was close.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando terminó el partido, ya ___ (pasar) de las nueve.",
+  "inf": "pasar",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "pasaban",
+  "use": "imperfecto: edad y hora en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando terminó el partido da la edad o la hora de entonces: imperfecto.",
+  "why_en": "When the match ended gives the age or time then: imperfect.",
+  "en": "When the match ended, it was already past nine.",
+  "band": "B1"
+ },
+ {
+  "q": "Tú ya ___ (llevar) tres meses en la empresa cuando te ascendieron.",
+  "inf": "llevar",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "llevabas",
+  "use": "imperfecto: edad y hora en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando te ascendieron da la edad o la hora de entonces: imperfecto.",
+  "why_en": "When they promoted you gives the age or time then: imperfect.",
+  "en": "You had been at the company three months when they promoted you.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi hermana ___ (llevar) un año sin trabajo cuando por fin la llamaron.",
+  "inf": "llevar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "llevaba",
+  "use": "imperfecto: edad y hora en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando por fin la llamaron da la edad o la hora de entonces: imperfecto.",
+  "why_en": "When they finally called her gives the age or time then: imperfect.",
+  "en": "My sister had been out of work for a year when they finally called her.",
+  "band": "B2"
+ },
+ {
+  "q": "Nosotros ___ (llevar) horas esperando cuando por fin abrieron la puerta.",
+  "inf": "llevar",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "llevábamos",
+  "use": "imperfecto: edad y hora en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando por fin abrieron da la edad o la hora de entonces: imperfecto.",
+  "why_en": "When they finally opened gives the age or time then: imperfect.",
+  "en": "We had been waiting for hours when they finally opened the door.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando nos mudamos aquí, mi hija todavía no ___ (caminar).",
+  "inf": "caminar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "caminaba",
+  "use": "imperfecto: edad y hora en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cuando nos mudamos... todavía no da la edad o la hora de entonces: imperfecto.",
+  "why_en": "When we moved... not yet gives the age or time then: imperfect.",
+  "en": "When we moved here, my daughter wasn't walking yet.",
+  "band": "B1"
+ },
+ {
+  "q": "A los quince años, yo ya ___ (trabajar) los fines de semana.",
+  "inf": "trabajar",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "trabajaba",
+  "use": "imperfecto: edad y hora en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "A los quince años da la edad o la hora de entonces: imperfecto.",
+  "why_en": "At fifteen gives the age or time then: imperfect.",
+  "en": "At fifteen I was already working on weekends.",
+  "band": "B1"
+ },
+ {
+  "q": "A los veinte años nosotros ___ (vivir) solos y pagábamos nuestro propio arriendo.",
+  "inf": "vivir",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "vivíamos",
+  "use": "imperfecto: edad y hora en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "A los veinte años da la edad o la hora de entonces: imperfecto.",
+  "why_en": "At twenty gives the age or time then: imperfect.",
+  "en": "At twenty we lived on our own and paid our own rent.",
+  "band": "B1"
+ },
+ {
+  "q": "A esa edad, tú ya ___ (saber) leer y escribir.",
+  "inf": "saber",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "sabías",
+  "use": "imperfecto: edad y hora en el pasado",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "A esa edad da la edad o la hora de entonces: imperfecto.",
+  "why_en": "At that age gives the age or time then: imperfect.",
+  "en": "At that age you could already read and write.",
+  "band": "B1"
+ },
+ {
+  "q": "Mientras mi mamá cocinaba, yo ___ (poner) la mesa.",
+  "inf": "poner",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "ponía",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Mientras cocinaba une acciones que duraban a la vez: imperfecto.",
+  "why_en": "While she cooked links actions going on together: imperfect.",
+  "en": "While my mom cooked, I set the table.",
+  "band": "A2"
+ },
+ {
+  "q": "Mientras tú ___ (estudiar), tu hermano jugaba videojuegos.",
+  "inf": "estudiar",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "estudiabas",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Mientras... jugaba une acciones que duraban a la vez: imperfecto.",
+  "why_en": "While... was playing links actions going on together: imperfect.",
+  "en": "While you studied, your brother played video games.",
+  "band": "A2"
+ },
+ {
+  "q": "Mientras nosotros ___ (limpiar) la casa, los niños dormían en el cuarto.",
+  "inf": "limpiar",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "limpiábamos",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "\"Mientras\" con una acción en curso en el pasado pide imperfecto.",
+  "why_en": "\"Mientras\" with an action in progress in the past takes the imperfect.",
+  "en": "While we were cleaning the house, the children were sleeping in the bedroom.",
+  "band": "A2"
+ },
+ {
+  "q": "Tú escuchabas música mientras ___ (lavar) los platos.",
+  "inf": "lavar",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "lavabas",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Escuchaba... mientras une acciones que duraban a la vez: imperfecto.",
+  "why_en": "He was listening... while links actions going on together: imperfect.",
+  "en": "You listened to music while you washed the dishes.",
+  "band": "A2"
+ },
+ {
+  "q": "Mientras ustedes ___ (esperar) afuera, el médico atendía a mi papá.",
+  "inf": "esperar",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "esperaban",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Mientras... atendía une acciones que duraban a la vez: imperfecto.",
+  "why_en": "While... was seeing links actions going on together: imperfect.",
+  "en": "While you waited outside, the doctor was seeing my dad.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo hablaba por teléfono mientras ___ (manejar).",
+  "inf": "manejar",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "manejaba",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Hablaba... mientras une acciones que duraban a la vez: imperfecto.",
+  "why_en": "I was talking... while links actions going on together: imperfect.",
+  "en": "I was talking on the phone while I was driving.",
+  "band": "A2"
+ },
+ {
+  "q": "Mientras Ana leía, su esposo ___ (ver) el partido.",
+  "inf": "ver",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "veía",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Mientras leía une acciones que duraban a la vez: imperfecto.",
+  "why_en": "While she read links actions going on together: imperfect.",
+  "en": "While Ana was reading, her husband watched the game.",
+  "band": "A2"
+ },
+ {
+  "q": "Mientras yo ___ (cocinar), mi hermana me contaba su día.",
+  "inf": "cocinar",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "cocinaba",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Mientras... me contaba une acciones que duraban a la vez: imperfecto.",
+  "why_en": "While... was telling me links actions going on together: imperfect.",
+  "en": "While I cooked, my sister told me about her day.",
+  "band": "A2"
+ },
+ {
+  "q": "Los obreros trabajaban mientras el jefe los ___ (mirar) desde la oficina.",
+  "inf": "mirar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "miraba",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Trabajaban mientras une acciones que duraban a la vez: imperfecto.",
+  "why_en": "They worked while links actions going on together: imperfect.",
+  "en": "The workers worked while the boss watched them from the office.",
+  "band": "B1"
+ },
+ {
+  "q": "Mientras caminábamos, nosotros nos ___ (contar) nuestros planes.",
+  "inf": "contar",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "contábamos",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Mientras caminábamos une acciones que duraban a la vez: imperfecto.",
+  "why_en": "While we walked links actions going on together: imperfect.",
+  "en": "While we walked, we told each other our plans.",
+  "band": "A2"
+ },
+ {
+  "q": "Tú cantabas mientras ___ (cortar) las verduras.",
+  "inf": "cortar",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "cortabas",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Cantabas mientras une acciones que duraban a la vez: imperfecto.",
+  "why_en": "You sang while links actions going on together: imperfect.",
+  "en": "You sang while you chopped the vegetables.",
+  "band": "A2"
+ },
+ {
+  "q": "Mientras ellos ___ (hacer) el informe, yo contestaba los correos.",
+  "inf": "hacer",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "hacían",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Mientras... contestaba une acciones que duraban a la vez: imperfecto.",
+  "why_en": "While... was answering links actions going on together: imperfect.",
+  "en": "While they made the report, I answered the emails.",
+  "band": "B1"
+ },
+ {
+  "q": "Mientras llovía afuera, nosotros ___ (jugar) cartas en la sala.",
+  "inf": "jugar",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "jugábamos",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Mientras llovía une acciones que duraban a la vez: imperfecto.",
+  "why_en": "While it rained links actions going on together: imperfect.",
+  "en": "While it rained outside, we played cards in the living room.",
+  "band": "A2"
+ },
+ {
+  "q": "Mientras el bebé ___ (dormir), su mamá aprovechaba para descansar.",
+  "inf": "dormir",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "dormía",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Mientras... aprovechaba une acciones que duraban a la vez: imperfecto.",
+  "why_en": "While... took advantage links actions going on together: imperfect.",
+  "en": "While the baby slept, his mom took the chance to rest.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo arreglaba el jardín mientras mi papá ___ (pintar) la cerca.",
+  "inf": "pintar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "pintaba",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Arreglaba mientras une acciones que duraban a la vez: imperfecto.",
+  "why_en": "I was fixing while links actions going on together: imperfect.",
+  "en": "I tended the garden while my dad painted the fence.",
+  "band": "B1"
+ },
+ {
+  "q": "Los vecinos ___ (bailar) mientras nosotros preparábamos la comida.",
+  "inf": "bailar",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "bailaban",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Mientras preparábamos une acciones que duraban a la vez: imperfecto.",
+  "why_en": "While we prepared links actions going on together: imperfect.",
+  "en": "The neighbors danced while we prepared the food.",
+  "band": "A2"
+ },
+ {
+  "q": "Mientras tú ___ (cambiar) la llanta, yo cuidaba las maletas.",
+  "inf": "cambiar",
+  "tense": "imperfecto",
+  "person": "tú",
+  "answer": "cambiabas",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Mientras... cuidaba une acciones que duraban a la vez: imperfecto.",
+  "why_en": "While... was watching links actions going on together: imperfect.",
+  "en": "While you changed the tire, I watched the bags.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo ___ (llorar) con la película cuando mi hermano entró a la sala.",
+  "inf": "llorar",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "lloraba",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Una acción en curso interrumpida (cuando entró) va en imperfecto.",
+  "why_en": "An action in progress that gets interrupted (when he came in) takes the imperfect.",
+  "en": "I was crying at the film when my brother came into the living room.",
+  "band": "A2"
+ },
+ {
+  "q": "Mientras la profesora ___ (explicar), los estudiantes tomaban apuntes.",
+  "inf": "explicar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "explicaba",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Mientras... tomaban une acciones que duraban a la vez: imperfecto.",
+  "why_en": "While... took links actions going on together: imperfect.",
+  "en": "While the teacher explained, the students took notes.",
+  "band": "A2"
+ },
+ {
+  "q": "Camila hacía la tarea mientras sus papás ___ (cenar).",
+  "inf": "cenar",
+  "tense": "imperfecto",
+  "person": "ellos",
+  "answer": "cenaban",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Hacía mientras une acciones que duraban a la vez: imperfecto.",
+  "why_en": "She was doing while links actions going on together: imperfect.",
+  "en": "Camila did her homework while her parents had dinner.",
+  "band": "A2"
+ },
+ {
+  "q": "Mientras yo ___ (ir) al trabajo, mi esposo llevaba a los niños a la escuela.",
+  "inf": "ir",
+  "tense": "imperfecto",
+  "person": "yo",
+  "answer": "iba",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Mientras... llevaba une acciones que duraban a la vez: imperfecto.",
+  "why_en": "While... was taking links actions going on together: imperfect.",
+  "en": "While I went to work, my husband took the kids to school.",
+  "band": "B1"
+ },
+ {
+  "q": "Los músicos tocaban mientras la gente ___ (comer).",
+  "inf": "comer",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "comía",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Tocaban mientras une acciones que duraban a la vez: imperfecto.",
+  "why_en": "They played while links actions going on together: imperfect.",
+  "en": "The musicians played while the people ate.",
+  "band": "A2"
+ },
+ {
+  "q": "Mientras nosotros ___ (esperar) el bus, empezó a caer una llovizna.",
+  "inf": "esperar",
+  "tense": "imperfecto",
+  "person": "nosotros",
+  "answer": "esperábamos",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Mientras... empezó une acciones que duraban a la vez: imperfecto.",
+  "why_en": "While... began links actions going on together: imperfect.",
+  "en": "While we waited for the bus, a drizzle began to fall.",
+  "band": "B1"
+ },
+ {
+  "q": "Mientras mi papá ___ (manejar), mi mamá nos cantaba canciones.",
+  "inf": "manejar",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "manejaba",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Mientras... nos cantaba une acciones que duraban a la vez: imperfecto.",
+  "why_en": "While... sang to us links actions going on together: imperfect.",
+  "en": "While my dad drove, my mom sang us songs.",
+  "band": "A2"
+ },
+ {
+  "q": "Mientras Pedro ___ (dormir) en el sofá, nosotros preparábamos la sorpresa.",
+  "inf": "dormir",
+  "tense": "imperfecto",
+  "person": "él/ella",
+  "answer": "dormía",
+  "use": "imperfecto: mientras + acción en curso",
+  "confuse": [
+   "preterito",
+   "condicional",
+   "impsubj"
+  ],
+  "why_es": "Mientras... preparábamos une acciones que duraban a la vez: imperfecto.",
+  "why_en": "While... we prepared links actions going on together: imperfect.",
+  "en": "While Pedro slept on the sofa, we prepared the surprise.",
+  "band": "B1"
+ }
+]

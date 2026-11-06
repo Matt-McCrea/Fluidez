@@ -45,7 +45,7 @@ describe('conjugation parity with the old engine', () => {
   }
 
   test('covers every old verb', () => {
-    expect(OLD_VERBS.length).toBe(1165);
+    expect(OLD_VERBS.length).toBe(1166);
   });
 
   test('every difference is a whitelisted fix, with exactly the expected forms', () => {

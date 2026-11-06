@@ -1,0 +1,7566 @@
+[
+ {
+  "id": "v1002",
+  "q": "Mi abuela ___ (vivir) sola en un apartamento del centro, y la visito cada semana.",
+  "options": [
+   "vivió",
+   "vive",
+   "vivirá",
+   "vivía"
+  ]
+ },
+ {
+  "id": "v1005",
+  "q": "Tú ___ (abrir) la tienda a las ocho, ¿cierto? Yo llego a las nueve.",
+  "options": [
+   "abriste",
+   "abres",
+   "abras",
+   "abrías"
+  ]
+ },
+ {
+  "id": "v1008",
+  "q": "Ojalá que no ___ (haber) tráfico esta tarde.",
+  "options": [
+   "haya",
+   "habrá",
+   "ha",
+   "hubiera"
+  ]
+ },
+ {
+  "id": "v1011",
+  "q": "Mi suegra insiste en que su hijo ___ (comer) más verduras.",
+  "options": [
+   "coma",
+   "comiera",
+   "come",
+   "comerá"
+  ]
+ },
+ {
+  "id": "v1014",
+  "q": "No es verdad que ustedes ya ___ (pagar) la matrícula.",
+  "options": [
+   "han pagado",
+   "paguen",
+   "hayan pagado",
+   "hubieran pagado"
+  ]
+ },
+ {
+  "id": "v1017",
+  "q": "El abogado dice que el juez ___ (aceptar) nuestra apelación.",
+  "options": [
+   "aceptaría",
+   "acepte",
+   "aceptará",
+   "aceptaba"
+  ]
+ },
+ {
+  "id": "v1020",
+  "q": "Mi hijo no sale sin que yo ___ (saber) adónde va.",
+  "options": [
+   "sé",
+   "sepa",
+   "sabré",
+   "supiera"
+  ]
+ },
+ {
+  "id": "v1023",
+  "q": "Todos estos años ___ (cuidar) yo a mis papás sin quejarme.",
+  "options": [
+   "he cuidado",
+   "cuidé",
+   "había cuidado",
+   "haya cuidado"
+  ]
+ },
+ {
+  "id": "v1026",
+  "q": "El profesor exigió que todos ___ (escribir) el ensayo a mano.",
+  "options": [
+   "escribieran",
+   "escribían",
+   "escriban",
+   "escribirían"
+  ]
+ },
+ {
+  "id": "v1029",
+  "q": "Después de que tú ___ (comer), lavamos los platos juntos.",
+  "options": [
+   "comerás",
+   "comieras",
+   "comes",
+   "comas"
+  ]
+ },
+ {
+  "id": "v1032",
+  "q": "Cuando me dieron la noticia, yo ya la ___ (escuchar) en la radio.",
+  "options": [
+   "he escuchado",
+   "escuchaba",
+   "hubiera escuchado",
+   "había escuchado"
+  ]
+ },
+ {
+  "id": "v1035",
+  "q": "Ellos se quedaron callados porque nadie ___ (saber) qué responder.",
+  "options": [
+   "supo",
+   "sabría",
+   "supiera",
+   "sabía"
+  ]
+ },
+ {
+  "id": "v1038",
+  "q": "Mis papás ___ (ver) las noticias cada noche, así que nadie habla.",
+  "options": [
+   "vean",
+   "vieron",
+   "veían",
+   "ven"
+  ]
+ },
+ {
+  "id": "v1041",
+  "q": "Queremos contratar a un chef que ___ (preparar) comida peruana.",
+  "options": [
+   "preparara",
+   "prepara",
+   "preparará",
+   "prepare"
+  ]
+ },
+ {
+  "id": "v1044",
+  "q": "Necesitábamos una secretaria que ___ (saber) de contabilidad.",
+  "options": [
+   "sabía",
+   "sabría",
+   "sepa",
+   "supiera"
+  ]
+ },
+ {
+  "id": "v1047",
+  "q": "Ellos discutían cuando alguien ___ (tocar) a la puerta.",
+  "options": [
+   "ha tocado",
+   "toca",
+   "tocaba",
+   "tocó"
+  ]
+ },
+ {
+  "id": "v1050",
+  "q": "Yo que ustedes, ___ (probar) el ajiaco de ese restaurante.",
+  "options": [
+   "probaré",
+   "probara",
+   "probaría"
+  ]
+ },
+ {
+  "id": "v1053",
+  "q": "Te lo juro: nunca más te ___ (decir) una mentira.",
+  "options": [
+   "diga",
+   "decía",
+   "diré",
+   "diría"
+  ]
+ },
+ {
+  "id": "v1056",
+  "q": "Nos dijeron que la tienda ___ (abrir) a las nueve.",
+  "options": [
+   "abriría",
+   "abría",
+   "abrirá"
+  ]
+ },
+ {
+  "id": "v1059",
+  "q": "En los últimos meses, el dólar ___ (bajar) y los viajes son más baratos.",
+  "options": [
+   "haya bajado",
+   "ha bajado",
+   "había bajado",
+   "bajó"
+  ]
+ },
+ {
+  "id": "v1062",
+  "q": "Yo que tú, ___ (poner) el despertador a las cinco.",
+  "options": [
+   "pondría",
+   "pusiera",
+   "pondré"
+  ]
+ },
+ {
+  "id": "v1065",
+  "q": "Juliana, ___ (encender) la luz, no veo nada.",
+  "options": [
+   "enciendas",
+   "enciende",
+   "no enciendas",
+   "enciendes"
+  ]
+ },
+ {
+  "id": "v1068",
+  "q": "Jorge, ___ (traer) a tu perro a la oficina, por favor.",
+  "options": [
+   "traigas",
+   "trae",
+   "no traigas",
+   "traes"
+  ]
+ },
+ {
+  "id": "v1071",
+  "q": "Voy a entrar sin que nadie me ___ (ver).",
+  "options": [
+   "viera",
+   "veo",
+   "vea",
+   "veré"
+  ]
+ },
+ {
+  "id": "v1074",
+  "q": "Ojalá ellos nunca se ___ (ir) de este barrio.",
+  "options": [
+   "habían ido",
+   "hubieran ido",
+   "habrían ido",
+   "fueran"
+  ]
+ },
+ {
+  "id": "v1077",
+  "q": "Ese camino está peligroso; ___ (ir) por ahí, tomemos la autopista.",
+  "options": [
+   "no vayamos",
+   "vamos",
+   "vayamos"
+  ]
+ },
+ {
+  "id": "v1080",
+  "q": "Hermano, ___ (seguir) derecho hasta la esquina y gira.",
+  "options": [
+   "sigue",
+   "no sigas",
+   "sigues",
+   "sigas"
+  ]
+ },
+ {
+  "id": "v1083",
+  "q": "Mi jefe no está en su oficina; no sé, ___ (salir) a una reunión.",
+  "options": [
+   "habrá salido",
+   "haya salido",
+   "saldrá",
+   "habría salido"
+  ]
+ },
+ {
+  "id": "v1086",
+  "q": "No creo que nadie ___ (traducir) este libro al español.",
+  "options": [
+   "traduzca",
+   "ha traducido",
+   "haya traducido",
+   "hubiera traducido"
+  ]
+ },
+ {
+  "id": "v1089",
+  "q": "De haber nacido en otra época, tú ___ (tener) otra vida.",
+  "options": [
+   "tendrías",
+   "habrás tenido",
+   "habrías tenido",
+   "habías tenido"
+  ]
+ },
+ {
+  "id": "v1092",
+  "q": "¿Qué le ___ (pasar) anoche a Camilo? Llegó con mala cara.",
+  "options": [
+   "pasaría",
+   "pasará",
+   "pasaba"
+  ]
+ },
+ {
+  "id": "v1095",
+  "q": "Si hubiera habido menos tráfico, mis tíos ___ (salir) más tarde.",
+  "options": [
+   "habrían salido",
+   "saldrían",
+   "habrán salido",
+   "habían salido"
+  ]
+ },
+ {
+  "id": "v1098",
+  "q": "Esa cartera se ve de cuero fino; ___ (valer) bastante plata.",
+  "options": [
+   "valdrá",
+   "valía",
+   "valdría",
+   "valga"
+  ]
+ },
+ {
+  "id": "v1101",
+  "q": "Nosotros ___ (bajar) del bus cuando vimos a Camilo.",
+  "options": [
+   "bajábamos",
+   "bajaríamos",
+   "bajamos",
+   "bajáramos"
+  ]
+ },
+ {
+  "id": "v1104",
+  "q": "Dijeron en la radio que la lluvia ___ (parar) por la tarde.",
+  "options": [
+   "parará",
+   "paraba",
+   "pararía"
+  ]
+ },
+ {
+  "id": "v1107",
+  "q": "Cuando volví al pueblo, mi sobrino ya ___ (crecer) mucho.",
+  "options": [
+   "ha crecido",
+   "crecía",
+   "hubiera crecido",
+   "había crecido"
+  ]
+ },
+ {
+  "id": "v1110",
+  "q": "Quería que mi hijo ___ (aprender) a manejar bicicleta.",
+  "options": [
+   "aprendería",
+   "aprenda",
+   "aprendía",
+   "aprendiera"
+  ]
+ },
+ {
+  "id": "v1113",
+  "q": "Ayer ___ (llegar) tarde a la oficina porque había mucho tráfico.",
+  "options": [
+   "llego",
+   "llegaba",
+   "he llegado",
+   "llegué"
+  ]
+ },
+ {
+  "id": "v1116",
+  "q": "Mejor ___ (esperar) aquí hasta que pare la lluvia, ¿no crees?",
+  "options": [
+   "esperaríamos",
+   "esperamos",
+   "esperaremos",
+   "esperemos"
+  ]
+ },
+ {
+  "id": "v1119",
+  "q": "Le dejo mi dirección a Carlos para que me ___ (buscar) el sábado.",
+  "options": [
+   "buscará",
+   "buscara",
+   "busca",
+   "busque"
+  ]
+ },
+ {
+  "id": "v1122",
+  "q": "El jueves próximo el alcalde ___ (visitar) nuestro barrio.",
+  "options": [
+   "visitaría",
+   "visite",
+   "visitará"
+  ]
+ },
+ {
+  "id": "v1125",
+  "q": "Tú escuchabas música mientras ___ (lavar) los platos.",
+  "options": [
+   "lavarías",
+   "lavaras",
+   "lavabas",
+   "lavaste"
+  ]
+ },
+ {
+  "id": "v1128",
+  "q": "A fin de mes tú ___ (recibir) el primer pago.",
+  "options": [
+   "recibirías",
+   "recibas",
+   "recibirás"
+  ]
+ },
+ {
+  "id": "v1131",
+  "q": "En toda mi vida ___ (ver) yo tanta lluvia.",
+  "options": [
+   "he visto",
+   "haya visto",
+   "había visto",
+   "vi"
+  ]
+ },
+ {
+  "id": "v1134",
+  "q": "Ustedes dos, ___ (esperar) aquí mientras busco las llaves.",
+  "options": [
+   "no esperen",
+   "esperen",
+   "esperarán",
+   "esperan"
+  ]
+ },
+ {
+  "id": "v1137",
+  "q": "Si tú ___ (llamar) a la policía, el ladrón no se habría escapado.",
+  "options": [
+   "llamaras",
+   "hubieras llamado",
+   "habrías llamado",
+   "habías llamado"
+  ]
+ },
+ {
+  "id": "v1140",
+  "q": "Vamos, ___ (salir) ya, que se hace tarde.",
+  "options": [
+   "salgamos",
+   "saldremos",
+   "saldríamos",
+   "salimos"
+  ]
+ },
+ {
+  "id": "v1143",
+  "q": "Si hubiera un parque cerca, los niños ___ (salir) más.",
+  "options": [
+   "salieran",
+   "saldrían",
+   "saldrán"
+  ]
+ },
+ {
+  "id": "v1146",
+  "q": "Muchachos, ___ (venir) a cenar, ya está lista la comida.",
+  "options": [
+   "vienen",
+   "no vengan",
+   "vengan",
+   "vendrán"
+  ]
+ },
+ {
+  "id": "v1149",
+  "q": "Los vecinos oyeron el grito, ___ (salir) a la calle y llamaron a la policía.",
+  "options": [
+   "salían",
+   "salieron",
+   "salen",
+   "han salido"
+  ]
+ },
+ {
+  "id": "v1152",
+  "q": "El sábado tú ___ (dormir) diez horas y despertaste como nuevo.",
+  "options": [
+   "dormías",
+   "dormiste",
+   "duermes",
+   "has dormido"
+  ]
+ },
+ {
+  "id": "v1155",
+  "q": "Niños, ___ (tocar) los cables, que dan corrientazo.",
+  "options": [
+   "no toquen",
+   "toquen",
+   "tocan"
+  ]
+ },
+ {
+  "id": "v1158",
+  "q": "Los niños comieron, se ___ (lavar) los dientes y se acostaron.",
+  "options": [
+   "lavaron",
+   "lavan",
+   "lavaban",
+   "han lavado"
+  ]
+ },
+ {
+  "id": "v1161",
+  "q": "Tú jugabas fútbol cuando te ___ (romper) la pierna.",
+  "options": [
+   "rompías",
+   "has roto",
+   "rompiste",
+   "rompes"
+  ]
+ },
+ {
+  "id": "v1164",
+  "q": "No creo que yo ___ (dormir) más de tres horas esta semana.",
+  "options": [
+   "he dormido",
+   "duerma",
+   "haya dormido",
+   "hubiera dormido"
+  ]
+ },
+ {
+  "id": "v1167",
+  "q": "Con tanto estudio, ___ (pasar) el examen sin problema.",
+  "options": [
+   "pasarías",
+   "pasarás",
+   "pases",
+   "pasabas"
+  ]
+ },
+ {
+  "id": "v1170",
+  "q": "Al final de la temporada, los Millonarios ya ___ (ganar) tres títulos.",
+  "options": [
+   "habrán ganado",
+   "ganarán",
+   "habrían ganado",
+   "hayan ganado"
+  ]
+ },
+ {
+  "id": "v1173",
+  "q": "Si yo ___ (leer) el contrato, no lo habría firmado.",
+  "options": [
+   "hubiera leído",
+   "leyera",
+   "había leído",
+   "habría leído"
+  ]
+ },
+ {
+  "id": "v1176",
+  "q": "Ojalá yo ___ (estudiar) música de joven.",
+  "options": [
+   "estudiara",
+   "hubiera estudiado",
+   "había estudiado",
+   "habría estudiado"
+  ]
+ },
+ {
+  "id": "v1179",
+  "q": "Si cerraran la calle, nosotros ___ (caminar) mucho más para llegar.",
+  "options": [
+   "caminaremos",
+   "camináramos",
+   "caminaríamos"
+  ]
+ },
+ {
+  "id": "v1182",
+  "q": "Cuando los invitados lleguen, el mesero ___ (servir) el vino.",
+  "options": [
+   "serviría",
+   "sirva",
+   "servirá"
+  ]
+ },
+ {
+  "id": "v1185",
+  "q": "Si yo ___ (poner) la alarma, no me habría quedado dormido.",
+  "options": [
+   "habría puesto",
+   "había puesto",
+   "pusiera",
+   "hubiera puesto"
+  ]
+ },
+ {
+  "id": "v1188",
+  "q": "Nos habló como si nosotros ___ (necesitar) su permiso.",
+  "options": [
+   "necesitaríamos",
+   "necesitemos",
+   "necesitábamos",
+   "necesitáramos"
+  ]
+ },
+ {
+  "id": "v1191",
+  "q": "Mi hijo no habla del colegio; ___ (pensar) que no me importa.",
+  "options": [
+   "pensaba",
+   "piense",
+   "pensaría",
+   "pensará"
+  ]
+ },
+ {
+  "id": "v1194",
+  "q": "Sin tu mensaje de ayer, yo ___ (olvidar) la cita.",
+  "options": [
+   "habré olvidado",
+   "había olvidado",
+   "olvidaría",
+   "habría olvidado"
+  ]
+ },
+ {
+  "id": "v1197",
+  "q": "Cuando empezó la clase, los estudiantes todavía no ___ (aparecer).",
+  "options": [
+   "aparecieron",
+   "han aparecido",
+   "hubieran aparecido",
+   "habían aparecido"
+  ]
+ },
+ {
+  "id": "v1200",
+  "q": "Pensamos que para el mediodía ya ___ (recoger) todas las maletas.",
+  "options": [
+   "habremos recogido",
+   "habíamos recogido",
+   "habríamos recogido",
+   "recogeríamos"
+  ]
+ },
+ {
+  "id": "v1203",
+  "q": "No creo que el banco ya ___ (cerrar) la caja; son las tres.",
+  "options": [
+   "haya cerrado",
+   "hubiera cerrado",
+   "cierre",
+   "ha cerrado"
+  ]
+ },
+ {
+  "id": "v1206",
+  "q": "En lo que va del mes, ustedes ___ (escribir) muy pocos correos.",
+  "options": [
+   "hayan escrito",
+   "han escrito",
+   "habían escrito",
+   "escribieron"
+  ]
+ },
+ {
+  "id": "v1209",
+  "q": "Por lo general, mis vecinos ___ (salir) de la casa antes de las seis.",
+  "options": [
+   "salían",
+   "salen",
+   "salgan",
+   "salieron"
+  ]
+ },
+ {
+  "id": "v1212",
+  "q": "Creo que Ana viene, pero no creo que ___ (traer) a su novio.",
+  "options": [
+   "traiga",
+   "traerá",
+   "trajera",
+   "trae"
+  ]
+ },
+ {
+  "id": "v1215",
+  "q": "Aunque Camilo me lo ___ (pedir) de rodillas, no lo perdono.",
+  "options": [
+   "pedirá",
+   "pidiera",
+   "pida",
+   "pide"
+  ]
+ },
+ {
+  "id": "v1218",
+  "q": "Niños, ___ (escribir) en las paredes, que acabo de pintar.",
+  "options": [
+   "escriben",
+   "no escriban",
+   "escriban"
+  ]
+ },
+ {
+  "id": "v1221",
+  "q": "Johana, ___ (venir) mañana si estás enferma.",
+  "options": [
+   "ven",
+   "no vengas",
+   "vengas",
+   "vienes"
+  ]
+ },
+ {
+  "id": "v1224",
+  "q": "Esconde el pastel antes de que los niños lo ___ (encontrar).",
+  "options": [
+   "encuentran",
+   "encuentren",
+   "encontraran",
+   "encontrarán"
+  ]
+ },
+ {
+  "id": "v1227",
+  "q": "Es normal que tu hermano ya se ___ (cansar) de esperar.",
+  "options": [
+   "haya cansado",
+   "hubiera cansado",
+   "ha cansado",
+   "canse"
+  ]
+ },
+ {
+  "id": "v1230",
+  "q": "Alicia, ___ (dejar) eso ahí, por favor.",
+  "options": [
+   "deja",
+   "no dejes",
+   "dejas",
+   "dejes"
+  ]
+ },
+ {
+  "id": "v1233",
+  "q": "Me prometí que para los treinta ya ___ (ahorrar) lo suficiente.",
+  "options": [
+   "había ahorrado",
+   "ahorraría",
+   "habría ahorrado",
+   "habré ahorrado"
+  ]
+ },
+ {
+  "id": "v1236",
+  "q": "Hay luz en la casa vecina; ni idea, los dueños ___ (volver) del viaje.",
+  "options": [
+   "volverán",
+   "habrían vuelto",
+   "habrán vuelto",
+   "hayan vuelto"
+  ]
+ },
+ {
+  "id": "v1239",
+  "q": "Ya comimos bastante; ___ (pedir) más postre, pidamos la cuenta.",
+  "options": [
+   "no pidamos",
+   "pidamos",
+   "pedimos"
+  ]
+ },
+ {
+  "id": "v1242",
+  "q": "Escribo la lista para que no se nos ___ (olvidar) nada.",
+  "options": [
+   "olvide",
+   "olvida",
+   "olvidará",
+   "olvidara"
+  ]
+ },
+ {
+  "id": "v1245",
+  "q": "No me parecería justo que ellos ___ (pagar) más que nosotros.",
+  "options": [
+   "pagaran",
+   "pagaban",
+   "paguen",
+   "pagarían"
+  ]
+ },
+ {
+  "id": "v1248",
+  "q": "Si yo ___ (tener) más plata, me compraría un carro.",
+  "options": [
+   "tuviera",
+   "tenga",
+   "tendría",
+   "tenía"
+  ]
+ },
+ {
+  "id": "v1251",
+  "q": "Ese perro ladra sin parar; ___ (querer) salir.",
+  "options": [
+   "querría",
+   "quería",
+   "querrá",
+   "quiera"
+  ]
+ },
+ {
+  "id": "v1254",
+  "q": "Si mis amigos ___ (invitar) a Sofía, ella habría ido.",
+  "options": [
+   "habían invitado",
+   "invitaran",
+   "hubieran invitado",
+   "habrían invitado"
+  ]
+ },
+ {
+  "id": "v1257",
+  "q": "La calle está mojada; no sé, ___ (llover) en la noche.",
+  "options": [
+   "haya llovido",
+   "lloverá",
+   "habría llovido",
+   "habrá llovido"
+  ]
+ },
+ {
+  "id": "v1260",
+  "q": "A los dieciocho, yo ___ (pesar) unos sesenta kilos.",
+  "options": [
+   "pesaba",
+   "pesaré",
+   "pesaría"
+  ]
+ },
+ {
+  "id": "v1263",
+  "q": "El pastel quedó duro; ni idea, ___ (hacer) mal la mezcla.",
+  "options": [
+   "hayamos hecho",
+   "habríamos hecho",
+   "haremos",
+   "habremos hecho"
+  ]
+ },
+ {
+  "id": "v1266",
+  "q": "Yo abrí la puerta, ___ (mirar) alrededor y salí corriendo.",
+  "options": [
+   "he mirado",
+   "miro",
+   "miraba",
+   "miré"
+  ]
+ },
+ {
+  "id": "v1269",
+  "q": "La vecina contó que su hijo ya se ___ (ir) a vivir a Canadá.",
+  "options": [
+   "ha ido",
+   "iba",
+   "hubiera ido",
+   "había ido"
+  ]
+ },
+ {
+  "id": "v1272",
+  "q": "Si nosotros ___ (hacer) la reserva ayer, tendríamos mesa esta noche.",
+  "options": [
+   "hiciéramos",
+   "habíamos hecho",
+   "habríamos hecho",
+   "hubiéramos hecho"
+  ]
+ },
+ {
+  "id": "v1275",
+  "q": "Si ustedes ___ (querer) ir a la playa, nos habrían dicho antes.",
+  "options": [
+   "hubieran querido",
+   "habrían querido",
+   "quisieran",
+   "habían querido"
+  ]
+ },
+ {
+  "id": "v1278",
+  "q": "Mañana sacas buena nota si ___ (estudiar) esta noche.",
+  "options": [
+   "estudiaras",
+   "estudias",
+   "estudies",
+   "estudiarás"
+  ]
+ },
+ {
+  "id": "v1281",
+  "q": "Mi abuelo ___ (vivir) en Pasto durante cuarenta años y luego se mudó a Cali.",
+  "options": [
+   "ha vivido",
+   "vivió",
+   "vive",
+   "vivía"
+  ]
+ },
+ {
+  "id": "v1284",
+  "q": "Anoche mi jefe se ___ (quedar) en la oficina hasta las diez.",
+  "options": [
+   "ha quedado",
+   "quedó",
+   "queda",
+   "quedaba"
+  ]
+ },
+ {
+  "id": "v1287",
+  "q": "Nunca ___ (viajar) en avión; me da miedo.",
+  "options": [
+   "había viajado",
+   "haya viajado",
+   "he viajado",
+   "viajé"
+  ]
+ },
+ {
+  "id": "v1290",
+  "q": "Lamentaba que nosotros no ___ (hablar) más antes de que ella se mudara.",
+  "options": [
+   "habláramos",
+   "habríamos hablado",
+   "hubiéramos hablado",
+   "habíamos hablado"
+  ]
+ },
+ {
+  "id": "v1293",
+  "q": "Hasta la semana pasada, yo todavía no ___ (recibir) la respuesta del banco.",
+  "options": [
+   "recibí",
+   "había recibido",
+   "hubiera recibido",
+   "he recibido"
+  ]
+ },
+ {
+  "id": "v1296",
+  "q": "Cuando llegué al aeropuerto, mucha gente ___ (esperar) en la fila.",
+  "options": [
+   "esperó",
+   "esperaba",
+   "esperara",
+   "esperaría"
+  ]
+ },
+ {
+  "id": "v1299",
+  "q": "Dudo que Daniela ya ___ (entregar) el trabajo; está en casa.",
+  "options": [
+   "hubiera entregado",
+   "haya entregado",
+   "ha entregado",
+   "entregue"
+  ]
+ },
+ {
+  "id": "v1302",
+  "q": "Si ustedes ___ (aceptar) mi propuesta, comienzo la próxima semana.",
+  "options": [
+   "aceptan",
+   "aceptaran",
+   "aceptarán",
+   "acepten"
+  ]
+ },
+ {
+  "id": "v1305",
+  "q": "Ellos ___ (hablar) por teléfono desde hace dos horas.",
+  "options": [
+   "hablen",
+   "hablaron",
+   "hablan",
+   "hablaban"
+  ]
+ },
+ {
+  "id": "v1308",
+  "q": "Quiero que mis hijos ___ (aprender) inglés desde pequeños.",
+  "options": [
+   "aprenden",
+   "aprenderán",
+   "aprendan",
+   "aprendieran"
+  ]
+ },
+ {
+  "id": "v1311",
+  "q": "Después de que mis hijos ___ (crecer), voy a viajar más.",
+  "options": [
+   "crecen",
+   "crecerán",
+   "crezcan",
+   "crecieran"
+  ]
+ },
+ {
+  "id": "v1314",
+  "q": "Nunca ___ (tener) yo un perro, pero me encantaría.",
+  "options": [
+   "tuve",
+   "he tenido",
+   "había tenido",
+   "haya tenido"
+  ]
+ },
+ {
+  "id": "v1317",
+  "q": "Hasta ahora nadie nos ___ (decir) cuánto cuesta la reparación.",
+  "options": [
+   "ha dicho",
+   "dijo",
+   "había dicho",
+   "haya dicho"
+  ]
+ },
+ {
+  "id": "v1320",
+  "q": "Con una llamada a tiempo, mis tíos ___ (evitar) el problema anoche.",
+  "options": [
+   "habrían evitado",
+   "habrán evitado",
+   "evitarían",
+   "habían evitado"
+  ]
+ },
+ {
+  "id": "v1323",
+  "q": "Yo que Laura, no ___ (firmar) ese contrato.",
+  "options": [
+   "firmaré",
+   "firmaría",
+   "firmara"
+  ]
+ },
+ {
+  "id": "v1326",
+  "q": "Últimamente ___ (dormir) muy mal por el ruido de la obra.",
+  "options": [
+   "dormí",
+   "había dormido",
+   "he dormido",
+   "haya dormido"
+  ]
+ },
+ {
+  "id": "v1329",
+  "q": "En cuanto la lluvia ___ (parar), salimos a caminar.",
+  "options": [
+   "para",
+   "parará",
+   "pare",
+   "parara"
+  ]
+ },
+ {
+  "id": "v1332",
+  "q": "Ojalá ellos ___ (ser) más amables con los clientes.",
+  "options": [
+   "serían",
+   "sean",
+   "eran",
+   "fueran"
+  ]
+ },
+ {
+  "id": "v1335",
+  "q": "Pedro, tú ___ (tener) que hablar con ella antes de que sea tarde.",
+  "options": [
+   "tuvieras",
+   "tendrás",
+   "tendrías"
+  ]
+ },
+ {
+  "id": "v1338",
+  "q": "Mi perro no quiere comer; ni idea, ___ (comer) algo en la calle.",
+  "options": [
+   "habría comido",
+   "haya comido",
+   "comerá",
+   "habrá comido"
+  ]
+ },
+ {
+  "id": "v1341",
+  "q": "Si no ___ (llover) tanto, el partido se habría jugado.",
+  "options": [
+   "lloviera",
+   "habría llovido",
+   "había llovido",
+   "hubiera llovido"
+  ]
+ },
+ {
+  "id": "v1344",
+  "q": "Hijos, ___ (cuidar) a su hermanita mientras no estoy.",
+  "options": [
+   "cuidarán",
+   "cuidan",
+   "no cuiden",
+   "cuiden"
+  ]
+ },
+ {
+  "id": "v1347",
+  "q": "Ojalá ___ (pasar) yo todo el día en la playa en vez de la oficina.",
+  "options": [
+   "pasaba",
+   "pase",
+   "pasaría",
+   "pasara"
+  ]
+ },
+ {
+  "id": "v1350",
+  "q": "Profesor, ___ (repetir) la pregunta, por favor.",
+  "options": [
+   "repita",
+   "no repita",
+   "repetirá",
+   "repite"
+  ]
+ },
+ {
+  "id": "v1353",
+  "q": "Antes de que ___ (abrir) el restaurante, haremos una prueba de cocina.",
+  "options": [
+   "abrieran",
+   "abran",
+   "abrirán",
+   "abren"
+  ]
+ },
+ {
+  "id": "v1356",
+  "q": "Si yo ___ (poder), te ayudo con la mudanza este fin de semana.",
+  "options": [
+   "pueda",
+   "puedo",
+   "pudiera",
+   "podré"
+  ]
+ },
+ {
+  "id": "v1359",
+  "q": "Los vecinos del tercer piso ___ (ser) muy amables y siempre saludan.",
+  "options": [
+   "son",
+   "eran",
+   "serán",
+   "fueron"
+  ]
+ },
+ {
+  "id": "v1362",
+  "q": "Niños, ___ (dar) de comer a ese perro, que es de la calle.",
+  "options": [
+   "dan",
+   "no den",
+   "den"
+  ]
+ },
+ {
+  "id": "v1365",
+  "q": "Tú ___ (trabajar) en una fábrica cuando yo era pequeño.",
+  "options": [
+   "trabajarías",
+   "trabajaras",
+   "trabajabas",
+   "trabajaste"
+  ]
+ },
+ {
+  "id": "v1368",
+  "q": "Últimamente mi jefe ___ (pedir) más informes de lo normal.",
+  "options": [
+   "pidió",
+   "ha pedido",
+   "haya pedido",
+   "había pedido"
+  ]
+ },
+ {
+  "id": "v1371",
+  "q": "Sebastián, ___ (usar) el casco cuando andes en bicicleta.",
+  "options": [
+   "usas",
+   "usa",
+   "no uses",
+   "uses"
+  ]
+ },
+ {
+  "id": "v1374",
+  "q": "Mientras yo ___ (ir) al trabajo, mi esposo llevaba a los niños a la escuela.",
+  "options": [
+   "iba",
+   "fuera",
+   "fui",
+   "iría"
+  ]
+ },
+ {
+  "id": "v1377",
+  "q": "Valentina, ___ (ir) sola a esa calle de noche.",
+  "options": [
+   "no vayas",
+   "vayas",
+   "ve",
+   "vas"
+  ]
+ },
+ {
+  "id": "v1380",
+  "q": "Me preocupa que mi hijo todavía no ___ (llamar).",
+  "options": [
+   "hubiera llamado",
+   "ha llamado",
+   "haya llamado",
+   "llame"
+  ]
+ },
+ {
+  "id": "v1383",
+  "q": "Si Dios quiere, el otro año yo ___ (abrir) mi propio restaurante.",
+  "options": [
+   "abriría",
+   "abría",
+   "abriré",
+   "abra"
+  ]
+ },
+ {
+  "id": "v1386",
+  "q": "Valentina estudiaba en su cuarto cuando se ___ (ir) la luz.",
+  "options": [
+   "iba",
+   "fue",
+   "ha ido",
+   "va"
+  ]
+ },
+ {
+  "id": "v1389",
+  "q": "Nicolás, ___ (prestar) tu cargador a tu prima, por favor.",
+  "options": [
+   "presta",
+   "prestas",
+   "prestes",
+   "no prestes"
+  ]
+ },
+ {
+  "id": "v1392",
+  "q": "Cuando el niño llegó, sus primos ya ___ (romper) la ventana.",
+  "options": [
+   "habían roto",
+   "rompían",
+   "han roto",
+   "hubieran roto"
+  ]
+ },
+ {
+  "id": "v1395",
+  "q": "Rosa, ___ (volver) a pelear con tu hermana.",
+  "options": [
+   "no vuelvas",
+   "vuelves",
+   "vuelve",
+   "vuelvas"
+  ]
+ },
+ {
+  "id": "v1398",
+  "q": "Es posible que mañana ___ (llover) en Bogotá.",
+  "options": [
+   "llueve",
+   "lloverá",
+   "llueva",
+   "lloviera"
+  ]
+ },
+ {
+  "id": "v1401",
+  "q": "Esperamos que ustedes ya ___ (decidir) cuál casa comprar para entonces.",
+  "options": [
+   "han decidido",
+   "decidan",
+   "hayan decidido",
+   "hubieran decidido"
+  ]
+ },
+ {
+  "id": "v1404",
+  "q": "Mis primos ___ (bailar) cuando se acabó la música.",
+  "options": [
+   "bailaban",
+   "bailaron",
+   "bailarían",
+   "bailaran"
+  ]
+ },
+ {
+  "id": "v1407",
+  "q": "Esta sopa huele delicioso; ___ (llevar) cilantro.",
+  "options": [
+   "lleve",
+   "llevaría",
+   "llevaba",
+   "llevará"
+  ]
+ },
+ {
+  "id": "v1410",
+  "q": "Cuando yo era chiquita, las señoras del barrio se ___ (sentar) afuera a conversar.",
+  "options": [
+   "sentarían",
+   "sentaran",
+   "sentaron",
+   "sentaban"
+  ]
+ },
+ {
+  "id": "v1413",
+  "q": "Por favor, no lo toques: ese reloj ___ (costar) más de un millón de pesos.",
+  "options": [
+   "costaba",
+   "costará",
+   "costó",
+   "cuesta"
+  ]
+ },
+ {
+  "id": "v1416",
+  "q": "Es increíble que yo ___ (olvidar) tu cumpleaños otra vez.",
+  "options": [
+   "he olvidado",
+   "olvide",
+   "hubiera olvidado",
+   "haya olvidado"
+  ]
+ },
+ {
+  "id": "v1419",
+  "q": "Mi computador ___ (funcionar) muy lento hoy; creo que necesita una revisión.",
+  "options": [
+   "funcionaba",
+   "funcionó",
+   "funcionará",
+   "funciona"
+  ]
+ },
+ {
+  "id": "v1422",
+  "q": "Tengo miedo de que mi perro se ___ (perder) en el parque.",
+  "options": [
+   "perderá",
+   "pierde",
+   "perdiera",
+   "pierda"
+  ]
+ },
+ {
+  "id": "v1425",
+  "q": "No hay nadie que ___ (conocer) este barrio mejor que doña Rosa.",
+  "options": [
+   "conociera",
+   "conozca",
+   "conocerá",
+   "conoce"
+  ]
+ },
+ {
+  "id": "v1428",
+  "q": "David, ___ (subir) y dile a tu hermano que baje.",
+  "options": [
+   "subas",
+   "sube",
+   "no subas",
+   "subes"
+  ]
+ },
+ {
+  "id": "v1431",
+  "q": "Hasta la compra del apartamento, yo nunca ___ (firmar) un contrato tan largo.",
+  "options": [
+   "he firmado",
+   "había firmado",
+   "hubiera firmado",
+   "firmé"
+  ]
+ },
+ {
+  "id": "v1434",
+  "q": "Los niños jugaban en el patio cuando ___ (empezar) la tormenta.",
+  "options": [
+   "ha empezado",
+   "empieza",
+   "empezó",
+   "empezaba"
+  ]
+ },
+ {
+  "id": "v1437",
+  "q": "Ojalá ___ (sentir) yo menos presión en el trabajo.",
+  "options": [
+   "sentía",
+   "sentiría",
+   "sintiera",
+   "sienta"
+  ]
+ },
+ {
+  "id": "v1440",
+  "q": "Cuando ya ___ (comer) todos, sirvo el postre.",
+  "options": [
+   "hubieran comido",
+   "hayan comido",
+   "coman",
+   "han comido"
+  ]
+ },
+ {
+  "id": "v1443",
+  "q": "No conozco a nadie que ___ (viajar) solo por Asia.",
+  "options": [
+   "ha viajado",
+   "haya viajado",
+   "hubiera viajado",
+   "viaje"
+  ]
+ },
+ {
+  "id": "v1446",
+  "q": "Todavía no ___ (poder) hablar con el gerente.",
+  "options": [
+   "haya podido",
+   "he podido",
+   "pude",
+   "había podido"
+  ]
+ },
+ {
+  "id": "v1449",
+  "q": "Hace rato que tú ___ (decir) que vas a llamarlo, pero no llamas.",
+  "options": [
+   "dices",
+   "digas",
+   "dijiste",
+   "decías"
+  ]
+ },
+ {
+  "id": "v1452",
+  "q": "Mi abuela trabajó mucho para que sus hijos ___ (estudiar).",
+  "options": [
+   "estudiarían",
+   "estudien",
+   "estudiaran",
+   "estudiaban"
+  ]
+ },
+ {
+  "id": "v1455",
+  "q": "Hace diez minutos ___ (sonar) el timbre; creo que llegó el domiciliario.",
+  "options": [
+   "sonaba",
+   "suena",
+   "sonó",
+   "ha sonado"
+  ]
+ },
+ {
+  "id": "v1458",
+  "q": "Si yo ___ (conseguir) la beca, habría estudiado en Madrid.",
+  "options": [
+   "había conseguido",
+   "hubiera conseguido",
+   "habría conseguido",
+   "consiguiera"
+  ]
+ },
+ {
+  "id": "v1461",
+  "q": "Mi hija ___ (empezar) las clases a las siete, así que yo madrugo.",
+  "options": [
+   "empezó",
+   "empieza",
+   "empezaba",
+   "empiece"
+  ]
+ },
+ {
+  "id": "v1464",
+  "q": "Lamenté que ellos ___ (perder) la casa por una deuda.",
+  "options": [
+   "perdieran",
+   "perdían",
+   "pierdan",
+   "perderían"
+  ]
+ },
+ {
+  "id": "v1467",
+  "q": "Los vecinos todavía no ___ (traer) la escalera que les prestamos.",
+  "options": [
+   "han traído",
+   "habían traído",
+   "trajeron",
+   "hayan traído"
+  ]
+ },
+ {
+  "id": "v1470",
+  "q": "Cuando Ana ___ (terminar) la tarea, podrá salir a jugar.",
+  "options": [
+   "termina",
+   "terminará",
+   "termine",
+   "terminara"
+  ]
+ },
+ {
+  "id": "v1473",
+  "q": "Salimos antes de que ___ (empezar) la tormenta.",
+  "options": [
+   "empiece",
+   "empezaba",
+   "empezara",
+   "empezaría"
+  ]
+ },
+ {
+  "id": "v1476",
+  "q": "Buscábamos una casa que ___ (costar) menos de cien millones.",
+  "options": [
+   "costara",
+   "cueste",
+   "costaba",
+   "costaría"
+  ]
+ },
+ {
+  "id": "v1479",
+  "q": "Si el médico hubiera insistido, mi abuela ___ (seguir) el tratamiento.",
+  "options": [
+   "habría seguido",
+   "seguiría",
+   "habrá seguido",
+   "había seguido"
+  ]
+ },
+ {
+  "id": "v1482",
+  "q": "Si me ofrecieran ese puesto, lo ___ (aceptar) sin pensarlo.",
+  "options": [
+   "aceptara",
+   "aceptaré",
+   "aceptaría"
+  ]
+ },
+ {
+  "id": "v1485",
+  "q": "Ya ___ (vivir) yo en cinco ciudades distintas.",
+  "options": [
+   "había vivido",
+   "haya vivido",
+   "viví",
+   "he vivido"
+  ]
+ },
+ {
+  "id": "v1488",
+  "q": "Paula, ___ (ser) tan dura contigo misma.",
+  "options": [
+   "sé",
+   "eres",
+   "seas",
+   "no seas"
+  ]
+ },
+ {
+  "id": "v1491",
+  "q": "Laura siempre ___ (querer) estudiar música y por fin se anima.",
+  "options": [
+   "había querido",
+   "quiso",
+   "haya querido",
+   "ha querido"
+  ]
+ },
+ {
+  "id": "v1494",
+  "q": "Ayer tú ___ (dejar) el paraguas en el restaurante.",
+  "options": [
+   "dejas",
+   "dejabas",
+   "has dejado",
+   "dejaste"
+  ]
+ },
+ {
+  "id": "v1497",
+  "q": "Si esta mañana nosotros ___ (seguir) el mapa, ya estaríamos en el hotel.",
+  "options": [
+   "habríamos seguido",
+   "habíamos seguido",
+   "siguiéramos",
+   "hubiéramos seguido"
+  ]
+ },
+ {
+  "id": "v1500",
+  "q": "Ojalá que mis papás ya ___ (recoger) las maletas.",
+  "options": [
+   "recojan",
+   "hayan recogido",
+   "hubieran recogido",
+   "han recogido"
+  ]
+ },
+ {
+  "id": "v1503",
+  "q": "Mi hermana me pidió que ___ (entrar) sin hacer ruido.",
+  "options": [
+   "entraba",
+   "entrara",
+   "entraría",
+   "entre"
+  ]
+ },
+ {
+  "id": "v1506",
+  "q": "Si el apartamento ___ (costar) menos, lo alquilaríamos.",
+  "options": [
+   "costara",
+   "cueste",
+   "costaba",
+   "costaría"
+  ]
+ },
+ {
+  "id": "v1509",
+  "q": "Cuando pasé por tu casa, tú todavía no ___ (abrir) la tienda.",
+  "options": [
+   "has abierto",
+   "hubieras abierto",
+   "habías abierto",
+   "abriste"
+  ]
+ },
+ {
+  "id": "v1512",
+  "q": "No creo que ellos ya ___ (descubrir) quién fue.",
+  "options": [
+   "descubran",
+   "hubieran descubierto",
+   "hayan descubierto",
+   "han descubierto"
+  ]
+ },
+ {
+  "id": "v1515",
+  "q": "Cuando por fin contestaste, yo ya te ___ (llamar) cinco veces.",
+  "options": [
+   "hubiera llamado",
+   "había llamado",
+   "llamaba",
+   "he llamado"
+  ]
+ },
+ {
+  "id": "v1518",
+  "q": "Si hubiera tenido la llave, yo ___ (abrir) la puerta sin molestar.",
+  "options": [
+   "abriría",
+   "habría abierto",
+   "había abierto",
+   "habré abierto"
+  ]
+ },
+ {
+  "id": "v1521",
+  "q": "Me da dolor de barriga si yo ___ (comer) tanto dulce.",
+  "options": [
+   "como",
+   "comiera",
+   "comeré",
+   "coma"
+  ]
+ },
+ {
+  "id": "v1524",
+  "q": "Licenciado, ___ (firmar) ese contrato sin leerlo.",
+  "options": [
+   "firma",
+   "no firme",
+   "firme"
+  ]
+ },
+ {
+  "id": "v1527",
+  "q": "Cuando estudiaba en la universidad, yo ___ (ayudar) los sábados en una librería.",
+  "options": [
+   "ayudara",
+   "ayudé",
+   "ayudaba",
+   "ayudaría"
+  ]
+ },
+ {
+  "id": "v1530",
+  "q": "Pedro, ___ (venir) tarde mañana; hay reunión a las siete.",
+  "options": [
+   "ven",
+   "vengas",
+   "no vengas",
+   "vienes"
+  ]
+ },
+ {
+  "id": "v1533",
+  "q": "Alejandro, ___ (recordar) llamar al doctor.",
+  "options": [
+   "recuerdas",
+   "recuerda",
+   "no recuerdes",
+   "recuerdes"
+  ]
+ },
+ {
+  "id": "v1536",
+  "q": "Ella nos advirtió que no ___ (abrir) esa puerta.",
+  "options": [
+   "abriéramos",
+   "abramos",
+   "abriríamos",
+   "abríamos"
+  ]
+ },
+ {
+  "id": "v1539",
+  "q": "El domingo nosotros ___ (caminar) por el centro histórico cuatro horas.",
+  "options": [
+   "caminamos",
+   "caminábamos",
+   "hemos caminado"
+  ]
+ },
+ {
+  "id": "v1542",
+  "q": "Si hubiéramos tenido internet, ___ (saber) lo que pasaba.",
+  "options": [
+   "habremos sabido",
+   "habríamos sabido",
+   "sabríamos",
+   "habíamos sabido"
+  ]
+ },
+ {
+  "id": "v1545",
+  "q": "Mis amigos quieren que yo ___ (ir) con ellos a Cartagena.",
+  "options": [
+   "voy",
+   "fuera",
+   "vaya",
+   "iré"
+  ]
+ },
+ {
+  "id": "v1548",
+  "q": "Fue una pena que la tienda ya ___ (cerrar) cuando llegamos.",
+  "options": [
+   "había cerrado",
+   "cerrara",
+   "hubiera cerrado",
+   "habría cerrado"
+  ]
+ },
+ {
+  "id": "v1551",
+  "q": "Últimamente yo ___ (pensar) mucho en renunciar.",
+  "options": [
+   "he pensado",
+   "pensé",
+   "había pensado",
+   "haya pensado"
+  ]
+ },
+ {
+  "id": "v1554",
+  "q": "Tal vez no ___ (funcionar) el plan, pero vale la pena intentarlo.",
+  "options": [
+   "funcione",
+   "funciona",
+   "funcionará",
+   "funcionara"
+  ]
+ },
+ {
+  "id": "v1557",
+  "q": "Me contaron que tú ya ___ (empezar) a trabajar antes de graduarte.",
+  "options": [
+   "empezabas",
+   "hubieras empezado",
+   "has empezado",
+   "habías empezado"
+  ]
+ },
+ {
+  "id": "v1560",
+  "q": "Mis papás ___ (estar) de vacaciones en Cartagena ahora mismo.",
+  "options": [
+   "estaban",
+   "estarán",
+   "estuvieron",
+   "están"
+  ]
+ },
+ {
+  "id": "v1563",
+  "q": "Me quedé en casa porque me ___ (doler) la cabeza.",
+  "options": [
+   "dolió",
+   "dolería",
+   "doliera",
+   "dolía"
+  ]
+ },
+ {
+  "id": "v1566",
+  "q": "Mientras tú ___ (estudiar), tu hermano jugaba videojuegos.",
+  "options": [
+   "estudiarías",
+   "estudiaste",
+   "estudiaras",
+   "estudiabas"
+  ]
+ },
+ {
+  "id": "v1569",
+  "q": "Cada mañana yo ___ (ir) a trotar, llueva o haga sol.",
+  "options": [
+   "vaya",
+   "fui",
+   "iba",
+   "voy"
+  ]
+ },
+ {
+  "id": "v1572",
+  "q": "No creíamos que usted ya ___ (resolver) el problema antes del almuerzo.",
+  "options": [
+   "había resuelto",
+   "habría resuelto",
+   "resolviera",
+   "hubiera resuelto"
+  ]
+ },
+ {
+  "id": "v1575",
+  "q": "Yo ___ (salir) del banco cuando un hombre me gritó.",
+  "options": [
+   "saldría",
+   "salía",
+   "saliera",
+   "salí"
+  ]
+ },
+ {
+  "id": "v1578",
+  "q": "Ojalá ustedes me ___ (escuchar) cuando se lo advertí.",
+  "options": [
+   "escucharan",
+   "hubieran escuchado",
+   "habrían escuchado",
+   "habían escuchado"
+  ]
+ },
+ {
+  "id": "v1581",
+  "q": "Apenas yo ___ (conseguir) la visa, compro los pasajes.",
+  "options": [
+   "conseguiré",
+   "consiguiera",
+   "consiga",
+   "consigo"
+  ]
+ },
+ {
+  "id": "v1584",
+  "q": "Ayer ustedes ___ (bailar) toda la noche en la fiesta de Andrea.",
+  "options": [
+   "han bailado",
+   "bailan",
+   "bailaron",
+   "bailaban"
+  ]
+ },
+ {
+  "id": "v1587",
+  "q": "Me encanta que tú ___ (cantar) en las reuniones familiares.",
+  "options": [
+   "cantarás",
+   "cantes",
+   "cantaras",
+   "cantas"
+  ]
+ },
+ {
+  "id": "v1590",
+  "q": "No conozco a nadie que ___ (vivir) en esa torre.",
+  "options": [
+   "viviera",
+   "viva",
+   "vivirá",
+   "vive"
+  ]
+ },
+ {
+  "id": "v1593",
+  "q": "De haber llegado antes, tú ___ (ver) el final del partido.",
+  "options": [
+   "habías visto",
+   "habrías visto",
+   "verías",
+   "habrás visto"
+  ]
+ },
+ {
+  "id": "v1596",
+  "q": "No te preocupes, yo te ___ (traer) el pan mañana.",
+  "options": [
+   "traeré",
+   "traía",
+   "traería",
+   "traiga"
+  ]
+ },
+ {
+  "id": "v1599",
+  "q": "Camilo no contesta el celular; ___ (estar) dormido.",
+  "options": [
+   "esté",
+   "estaría",
+   "estará",
+   "estaba"
+  ]
+ },
+ {
+  "id": "v1602",
+  "q": "Se fue de la fiesta como si alguien lo ___ (llamar) idiota.",
+  "options": [
+   "había llamado",
+   "habría llamado",
+   "hubiera llamado",
+   "llamara"
+  ]
+ },
+ {
+  "id": "v1605",
+  "q": "Valentina hablaba con su mamá cuando se le ___ (acabar) la batería del celular.",
+  "options": [
+   "acababa",
+   "acabó",
+   "acaba",
+   "ha acabado"
+  ]
+ },
+ {
+  "id": "v1608",
+  "q": "En lo que va de la semana, yo ___ (dormir) apenas cuatro horas diarias.",
+  "options": [
+   "he dormido",
+   "dormí",
+   "haya dormido",
+   "había dormido"
+  ]
+ },
+ {
+  "id": "v1611",
+  "q": "Camilo ___ (ser) muy tímido de niño.",
+  "options": [
+   "era",
+   "fuera",
+   "fue",
+   "sería"
+  ]
+ },
+ {
+  "id": "v1614",
+  "q": "Últimamente nosotros ___ (salir) poco porque llueve demasiado.",
+  "options": [
+   "hemos salido",
+   "habíamos salido",
+   "salimos",
+   "hayamos salido"
+  ]
+ },
+ {
+  "id": "v1617",
+  "q": "Esa tarde hacía mucho calor; ___ (hacer) unos treinta grados.",
+  "options": [
+   "hará",
+   "haría",
+   "hacía"
+  ]
+ },
+ {
+  "id": "v1620",
+  "q": "Ustedes, ___ (llevar) paraguas, dicen que llueve.",
+  "options": [
+   "llevan",
+   "llevarán",
+   "lleven",
+   "no lleven"
+  ]
+ },
+ {
+  "id": "v1623",
+  "q": "Mientras tú ___ (cambiar) la llanta, yo cuidaba las maletas.",
+  "options": [
+   "cambiabas",
+   "cambiaste",
+   "cambiarías",
+   "cambiaras"
+  ]
+ },
+ {
+  "id": "v1626",
+  "q": "No creo que yo ___ (entender) bien las instrucciones.",
+  "options": [
+   "haya entendido",
+   "he entendido",
+   "entienda",
+   "hubiera entendido"
+  ]
+ },
+ {
+  "id": "v1629",
+  "q": "Me prometí que para el lunes ya ___ (presentar) la solicitud.",
+  "options": [
+   "habría presentado",
+   "habré presentado",
+   "presentaría",
+   "había presentado"
+  ]
+ },
+ {
+  "id": "v1632",
+  "q": "Tan pronto como ustedes ___ (recibir) el correo, respóndanme.",
+  "options": [
+   "recibirán",
+   "recibieran",
+   "reciben",
+   "reciban"
+  ]
+ },
+ {
+  "id": "v1635",
+  "q": "Fue increíble que el equipo ___ (ganar) ese partido.",
+  "options": [
+   "gane",
+   "ganaba",
+   "ganaría",
+   "ganara"
+  ]
+ },
+ {
+  "id": "v1638",
+  "q": "De pequeño, yo ___ (creer) que los gatos hablaban de noche.",
+  "options": [
+   "creería",
+   "creí",
+   "creyera",
+   "creía"
+  ]
+ },
+ {
+  "id": "v1641",
+  "q": "El próximo año escolar mis niños ___ (cambiar) de colegio.",
+  "options": [
+   "cambien",
+   "cambiarían",
+   "cambiarán"
+  ]
+ },
+ {
+  "id": "v1644",
+  "q": "El año entrante mi hermana ___ (terminar) la carrera de derecho.",
+  "options": [
+   "termine",
+   "terminaría",
+   "terminará"
+  ]
+ },
+ {
+  "id": "v1647",
+  "q": "Hasta entonces nosotros nunca ___ (ver) el mar.",
+  "options": [
+   "hemos visto",
+   "hubiéramos visto",
+   "vimos",
+   "habíamos visto"
+  ]
+ },
+ {
+  "id": "v1650",
+  "q": "Si yo ___ (ver) un fantasma, saldría corriendo.",
+  "options": [
+   "vea",
+   "viera",
+   "veía",
+   "vería"
+  ]
+ },
+ {
+  "id": "v1653",
+  "q": "El correo no llegó; ni idea, Marta lo ___ (enviar) a otra dirección.",
+  "options": [
+   "habría enviado",
+   "haya enviado",
+   "habrá enviado",
+   "enviará"
+  ]
+ },
+ {
+  "id": "v1656",
+  "q": "Cuando busqué mi paraguas, no estaba; no sé, lo ___ (dejar) en el bus.",
+  "options": [
+   "habré dejado",
+   "había dejado",
+   "habría dejado",
+   "dejaría"
+  ]
+ },
+ {
+  "id": "v1659",
+  "q": "Nos avisaron que para las ocho ya ___ (venir) todos los invitados.",
+  "options": [
+   "habrían venido",
+   "habían venido",
+   "habrán venido",
+   "vendrían"
+  ]
+ },
+ {
+  "id": "v1662",
+  "q": "Hoy en la mañana mi hijo ___ (tomar) el bus de las cinco.",
+  "options": [
+   "toma",
+   "tomó",
+   "ha tomado",
+   "tomaba"
+  ]
+ },
+ {
+  "id": "v1665",
+  "q": "Niños, ___ (bajar) rápido, ya llegó el bus.",
+  "options": [
+   "bajarán",
+   "bajen",
+   "no bajen",
+   "bajan"
+  ]
+ },
+ {
+  "id": "v1668",
+  "q": "Anoche nosotros ___ (poner) la mesa para diez personas.",
+  "options": [
+   "hemos puesto",
+   "pusimos",
+   "poníamos"
+  ]
+ },
+ {
+  "id": "v1671",
+  "q": "Yo ___ (saber) dónde está tu llave: está en la mesa.",
+  "options": [
+   "sepa",
+   "supe",
+   "sé",
+   "sabía"
+  ]
+ },
+ {
+  "id": "v1674",
+  "q": "Cuando me jubile, yo ya ___ (trabajar) más de cuarenta años.",
+  "options": [
+   "trabajaré",
+   "haya trabajado",
+   "habré trabajado",
+   "habría trabajado"
+  ]
+ },
+ {
+  "id": "v1677",
+  "q": "En lo que va del año, el dólar ___ (subir) más de lo esperado.",
+  "options": [
+   "subió",
+   "ha subido",
+   "haya subido",
+   "había subido"
+  ]
+ },
+ {
+  "id": "v1680",
+  "q": "Tú siempre ___ (decir) la verdad, aunque duela.",
+  "options": [
+   "dijiste",
+   "dices",
+   "digas",
+   "decías"
+  ]
+ },
+ {
+  "id": "v1683",
+  "q": "Ana nos explicó que alguien ya ___ (abrir) la puerta cuando ella llegó.",
+  "options": [
+   "había abierto",
+   "hubiera abierto",
+   "ha abierto",
+   "abría"
+  ]
+ },
+ {
+  "id": "v1686",
+  "q": "Dudo mucho que mis primos ___ (querer) vender la finca.",
+  "options": [
+   "quieran",
+   "quisieran",
+   "quieren",
+   "querrán"
+  ]
+ },
+ {
+  "id": "v1689",
+  "q": "No creo que ustedes ya ___ (cumplir) con todos los requisitos.",
+  "options": [
+   "han cumplido",
+   "cumplan",
+   "hayan cumplido",
+   "hubieran cumplido"
+  ]
+ },
+ {
+  "id": "v1692",
+  "q": "Mientras llovía afuera, nosotros ___ (jugar) cartas en la sala.",
+  "options": [
+   "jugamos",
+   "jugaríamos",
+   "jugábamos",
+   "jugáramos"
+  ]
+ },
+ {
+  "id": "v1695",
+  "q": "En tu situación, yo ___ (buscar) ayuda profesional.",
+  "options": [
+   "buscaría",
+   "buscaré",
+   "buscara"
+  ]
+ },
+ {
+  "id": "v1698",
+  "q": "El mes entrante Pedro y Sofía ___ (firmar) el contrato del apartamento.",
+  "options": [
+   "firmarán",
+   "firmarían",
+   "firmen"
+  ]
+ },
+ {
+  "id": "v1701",
+  "q": "Si ustedes ___ (seguir) estudiando juntos, aprenderían más rápido.",
+  "options": [
+   "siguieran",
+   "seguirían",
+   "sigan",
+   "seguían"
+  ]
+ },
+ {
+  "id": "v1704",
+  "q": "La obra ___ (durar) dos años y por fin la entregaron.",
+  "options": [
+   "ha durado",
+   "duró",
+   "duraba",
+   "dura"
+  ]
+ },
+ {
+  "id": "v1707",
+  "q": "Beatriz, ___ (faltar) a la fiesta de Daniel por trabajar.",
+  "options": [
+   "faltas",
+   "faltes",
+   "falta",
+   "no faltes"
+  ]
+ },
+ {
+  "id": "v1710",
+  "q": "No creo que mis padres ya ___ (vender) la casa.",
+  "options": [
+   "han vendido",
+   "vendan",
+   "hubieran vendido",
+   "hayan vendido"
+  ]
+ },
+ {
+  "id": "v1713",
+  "q": "Cuando llegue el domingo, tú ya ___ (ver) todos los capítulos de la serie.",
+  "options": [
+   "habrías visto",
+   "verás",
+   "hayas visto",
+   "habrás visto"
+  ]
+ },
+ {
+  "id": "v1716",
+  "q": "Hay mucha gente; ___ (parar) el carro en esa calle, busquemos parqueadero.",
+  "options": [
+   "paramos",
+   "paremos",
+   "no paremos"
+  ]
+ },
+ {
+  "id": "v1719",
+  "q": "Mientras mi mamá cocinaba, yo ___ (poner) la mesa.",
+  "options": [
+   "puse",
+   "pusiera",
+   "pondría",
+   "ponía"
+  ]
+ },
+ {
+  "id": "v1722",
+  "q": "Nos saludó como si nunca se ___ (pelear) con nosotros.",
+  "options": [
+   "peleara",
+   "habría peleado",
+   "había peleado",
+   "hubiera peleado"
+  ]
+ },
+ {
+  "id": "v1725",
+  "q": "Tú ___ (cocinar) cuando llegaron los invitados antes de tiempo.",
+  "options": [
+   "cocinarías",
+   "cocinabas",
+   "cocinaras",
+   "cocinaste"
+  ]
+ },
+ {
+  "id": "v1728",
+  "q": "Gabriela, ___ (abrir) esa puerta, que hay un perro bravo.",
+  "options": [
+   "abres",
+   "abras",
+   "no abras",
+   "abre"
+  ]
+ },
+ {
+  "id": "v1731",
+  "q": "Cuando llegues a Bogotá, mi tía te ___ (llamar) para invitarte a almorzar.",
+  "options": [
+   "llame",
+   "llamará",
+   "llamaría"
+  ]
+ },
+ {
+  "id": "v1734",
+  "q": "Ojalá mi papá ___ (dejar) de fumar antes de enfermarse.",
+  "options": [
+   "habría dejado",
+   "hubiera dejado",
+   "dejara",
+   "había dejado"
+  ]
+ },
+ {
+  "id": "v1737",
+  "q": "Son las seis y no llega; ___ (haber) un accidente en la vía.",
+  "options": [
+   "haya",
+   "habrá",
+   "había",
+   "habría"
+  ]
+ },
+ {
+  "id": "v1740",
+  "q": "Dudo que el bus ___ (pasar) antes de las seis.",
+  "options": [
+   "pase",
+   "pasará",
+   "pasara",
+   "pasa"
+  ]
+ },
+ {
+  "id": "v1743",
+  "q": "No sé por qué Ana no contesta; se ___ (dormir) temprano.",
+  "options": [
+   "habrá dormido",
+   "habría dormido",
+   "haya dormido",
+   "dormirá"
+  ]
+ },
+ {
+  "id": "v1746",
+  "q": "Si Valentina prueba este postre, ___ (pedir) otro.",
+  "options": [
+   "pida",
+   "pediría",
+   "pedirá",
+   "pedía"
+  ]
+ },
+ {
+  "id": "v1749",
+  "q": "Esta noche nosotros ___ (cenar) donde mis suegros, ¿vienes?",
+  "options": [
+   "cenemos",
+   "cenamos",
+   "cenábamos"
+  ]
+ },
+ {
+  "id": "v1752",
+  "q": "Mis vecinos ___ (hacer) obras desde hace una semana y no se puede dormir.",
+  "options": [
+   "hicieron",
+   "hacen",
+   "hagan",
+   "hacían"
+  ]
+ },
+ {
+  "id": "v1755",
+  "q": "Mis papás todavía no ___ (conocer) mi casa nueva.",
+  "options": [
+   "han conocido",
+   "conocieron",
+   "hayan conocido",
+   "habían conocido"
+  ]
+ },
+ {
+  "id": "v1758",
+  "q": "Si la profesora ___ (hablar) más despacio, entenderíamos todo.",
+  "options": [
+   "hablara",
+   "hablaba",
+   "hablaría",
+   "hable"
+  ]
+ },
+ {
+  "id": "v1761",
+  "q": "Llevo el carro al taller antes de que el motor se ___ (romper) del todo.",
+  "options": [
+   "rompa",
+   "rompiera",
+   "rompe",
+   "romperá"
+  ]
+ },
+ {
+  "id": "v1764",
+  "q": "Para el verano, la empresa ya ___ (abrir) la nueva sede.",
+  "options": [
+   "abrirá",
+   "habría abierto",
+   "habrá abierto",
+   "haya abierto"
+  ]
+ },
+ {
+  "id": "v1767",
+  "q": "Los jóvenes de hoy ___ (vivir) mejor que nosotros.",
+  "options": [
+   "vivirían",
+   "vivan",
+   "vivirán",
+   "vivían"
+  ]
+ },
+ {
+  "id": "v1770",
+  "q": "En la plaza ___ (haber) olor a frutas frescas y a café recién hecho.",
+  "options": [
+   "había",
+   "hubo",
+   "habría",
+   "hubiera"
+  ]
+ },
+ {
+  "id": "v1773",
+  "q": "Si tú ___ (venir) conmigo, nos divertiríamos mucho.",
+  "options": [
+   "vinieras",
+   "vendrías",
+   "vengas",
+   "venías"
+  ]
+ },
+ {
+  "id": "v1776",
+  "q": "Yo ___ (lavar) los platos cuando sonó el teléfono.",
+  "options": [
+   "lavaba",
+   "lavaría",
+   "lavé",
+   "lavara"
+  ]
+ },
+ {
+  "id": "v1779",
+  "q": "Mientras yo ___ (cocinar), mi hermana me contaba su día.",
+  "options": [
+   "cocinaría",
+   "cocinaba",
+   "cociné",
+   "cocinara"
+  ]
+ },
+ {
+  "id": "v1782",
+  "q": "Sofía, ___ (ver) esta película juntas este sábado, ¿sí?",
+  "options": [
+   "vemos",
+   "veremos",
+   "veríamos",
+   "veamos"
+  ]
+ },
+ {
+  "id": "v1785",
+  "q": "Hace rato no responde; ___ (andar) sin batería.",
+  "options": [
+   "andaba",
+   "andaría",
+   "ande",
+   "andará"
+  ]
+ },
+ {
+  "id": "v1788",
+  "q": "Ya ___ (decir) yo mil veces que no quiero ir.",
+  "options": [
+   "haya dicho",
+   "dije",
+   "había dicho",
+   "he dicho"
+  ]
+ },
+ {
+  "id": "v1791",
+  "q": "Tu hermana temía que tú ___ (perder) el vuelo.",
+  "options": [
+   "perderías",
+   "pierdas",
+   "perdías",
+   "perdieras"
+  ]
+ },
+ {
+  "id": "v1794",
+  "q": "Aunque tu jefe no lo ___ (aprobar), presentaremos la idea.",
+  "options": [
+   "aprobará",
+   "aprobara",
+   "aprueba",
+   "apruebe"
+  ]
+ },
+ {
+  "id": "v1797",
+  "q": "A los quince años, yo ya ___ (trabajar) los fines de semana.",
+  "options": [
+   "trabajaría",
+   "trabajara",
+   "trabajé",
+   "trabajaba"
+  ]
+ },
+ {
+  "id": "v1800",
+  "q": "Después de que ya ___ (ver) la casa, decidimos si la compramos.",
+  "options": [
+   "veamos",
+   "hubiéramos visto",
+   "hayamos visto",
+   "hemos visto"
+  ]
+ },
+ {
+  "id": "v1803",
+  "q": "Es imprescindible que usted ___ (traducir) este contrato antes del lunes.",
+  "options": [
+   "traducirá",
+   "tradujera",
+   "traduzca",
+   "traduce"
+  ]
+ },
+ {
+  "id": "v1806",
+  "q": "Hasta ese momento, tú nunca me ___ (decir) la verdad.",
+  "options": [
+   "hubieras dicho",
+   "habías dicho",
+   "has dicho",
+   "dijiste"
+  ]
+ },
+ {
+  "id": "v1809",
+  "q": "Señor Vargas, ___ (hacer) la fila como todos.",
+  "options": [
+   "no haga",
+   "haga",
+   "hará",
+   "hace"
+  ]
+ },
+ {
+  "id": "v1812",
+  "q": "Si ellos ___ (traer) el regalo, ya lo habríamos abierto.",
+  "options": [
+   "trajeran",
+   "hubieran traído",
+   "habrían traído",
+   "habían traído"
+  ]
+ },
+ {
+  "id": "v1815",
+  "q": "Ustedes, ___ (seguir) esa calle hasta el parque.",
+  "options": [
+   "sigan",
+   "seguirán",
+   "no sigan",
+   "siguen"
+  ]
+ },
+ {
+  "id": "v1818",
+  "q": "Santiago, ___ (levantar) la mano si tienes preguntas.",
+  "options": [
+   "levantes",
+   "no levantes",
+   "levanta",
+   "levantas"
+  ]
+ },
+ {
+  "id": "v1821",
+  "q": "Niños, ___ (subir) a ese árbol, que las ramas están secas.",
+  "options": [
+   "suben",
+   "no suban",
+   "suban"
+  ]
+ },
+ {
+  "id": "v1824",
+  "q": "En cuanto el doctor ya ___ (revisar) los resultados, te llamará.",
+  "options": [
+   "ha revisado",
+   "haya revisado",
+   "hubiera revisado",
+   "revise"
+  ]
+ },
+ {
+  "id": "v1827",
+  "q": "Cuando estudiábamos en el colegio, nosotros ___ (hacer) la tarea juntos.",
+  "options": [
+   "hicimos",
+   "hacíamos",
+   "hiciéramos",
+   "haríamos"
+  ]
+ },
+ {
+  "id": "v1830",
+  "q": "El domingo ___ (nacer) el hijo de mi prima Sandra.",
+  "options": [
+   "nació",
+   "nace",
+   "nacía",
+   "ha nacido"
+  ]
+ },
+ {
+  "id": "v1833",
+  "q": "Sara, ___ (mirar) el celular mientras manejas.",
+  "options": [
+   "no mires",
+   "mires",
+   "mira",
+   "miras"
+  ]
+ },
+ {
+  "id": "v1836",
+  "q": "Nico, ___ (comer) tanto dulce antes de cenar.",
+  "options": [
+   "come",
+   "comas",
+   "no comas",
+   "comes"
+  ]
+ },
+ {
+  "id": "v1839",
+  "q": "Si nosotros ___ (conocer) mejor la ciudad, no nos perderíamos.",
+  "options": [
+   "conoceríamos",
+   "conozcamos",
+   "conociéramos",
+   "conocíamos"
+  ]
+ },
+ {
+  "id": "v1842",
+  "q": "Si no ___ (haber) tanto tráfico, yo habría llegado al concierto.",
+  "options": [
+   "había habido",
+   "hubiera habido",
+   "hubiera",
+   "habría habido"
+  ]
+ },
+ {
+  "id": "v1845",
+  "q": "Hasta ahora, la empresa no ___ (ofrecer) ninguna solución.",
+  "options": [
+   "ha ofrecido",
+   "ofreció",
+   "había ofrecido",
+   "haya ofrecido"
+  ]
+ },
+ {
+  "id": "v1848",
+  "q": "Aquel invierno nosotros ___ (vivir) en un cuarto sin calefacción y pasábamos mucho frío.",
+  "options": [
+   "vivíamos",
+   "viviríamos",
+   "vivimos",
+   "viviéramos"
+  ]
+ },
+ {
+  "id": "v1851",
+  "q": "Ojalá nosotros ___ (tener) una casa en la playa.",
+  "options": [
+   "teníamos",
+   "tuviéramos",
+   "tengamos",
+   "tendríamos"
+  ]
+ },
+ {
+  "id": "v1854",
+  "q": "Dejé la luz encendida para que tú ___ (poder) ver.",
+  "options": [
+   "puedas",
+   "podías",
+   "pudieras",
+   "podrías"
+  ]
+ },
+ {
+  "id": "v1857",
+  "q": "No pienso que ustedes ___ (necesitar) tanta ayuda.",
+  "options": [
+   "necesitan",
+   "necesitarán",
+   "necesitaran",
+   "necesiten"
+  ]
+ },
+ {
+  "id": "v1860",
+  "q": "Me aseguraste que para las seis tú ya ___ (salir) de la oficina.",
+  "options": [
+   "habías salido",
+   "saldrías",
+   "habrás salido",
+   "habrías salido"
+  ]
+ },
+ {
+  "id": "v1863",
+  "q": "Isabel, ___ (perder) el tiempo con esa gente.",
+  "options": [
+   "pierdas",
+   "pierde",
+   "pierdes",
+   "no pierdas"
+  ]
+ },
+ {
+  "id": "v1866",
+  "q": "Si yo ___ (saber) que venías, te habría esperado.",
+  "options": [
+   "supiera",
+   "habría sabido",
+   "había sabido",
+   "hubiera sabido"
+  ]
+ },
+ {
+  "id": "v1869",
+  "q": "No creo que Tomás ___ (vivir) solo en esa casa.",
+  "options": [
+   "vivirá",
+   "viviera",
+   "vive",
+   "viva"
+  ]
+ },
+ {
+  "id": "v1872",
+  "q": "Ayer a las ocho de la noche mi abuela ___ (morir) en su casa, tranquila.",
+  "options": [
+   "moría",
+   "ha muerto",
+   "muere",
+   "murió"
+  ]
+ },
+ {
+  "id": "v1875",
+  "q": "Hasta esa vez, los niños nunca ___ (salir) solos a la calle.",
+  "options": [
+   "han salido",
+   "hubieran salido",
+   "habían salido",
+   "salieron"
+  ]
+ },
+ {
+  "id": "v1878",
+  "q": "Óscar, ___ (guardar) esto en tu mochila.",
+  "options": [
+   "guarda",
+   "no guardes",
+   "guardes",
+   "guardas"
+  ]
+ },
+ {
+  "id": "v1881",
+  "q": "Es bueno que los niños ___ (jugar) afuera todos los días.",
+  "options": [
+   "jugaran",
+   "jueguen",
+   "jugarán",
+   "juegan"
+  ]
+ },
+ {
+  "id": "v1884",
+  "q": "Pasado mañana la tienda ___ (abrir) a las seis de la mañana.",
+  "options": [
+   "abrirá",
+   "abra",
+   "abriría"
+  ]
+ },
+ {
+  "id": "v1887",
+  "q": "El próximo sábado ellos ___ (viajar) a Santa Marta en carro.",
+  "options": [
+   "viajan",
+   "viajaban",
+   "viajen",
+   "viajaron"
+  ]
+ },
+ {
+  "id": "v1890",
+  "q": "Si yo ___ (decir) eso en la oficina, me despedirían.",
+  "options": [
+   "dijera",
+   "diga",
+   "decía",
+   "diría"
+  ]
+ },
+ {
+  "id": "v1893",
+  "q": "Corría por el parque cuando me ___ (caer) al suelo.",
+  "options": [
+   "he caído",
+   "caigo",
+   "caí",
+   "caía"
+  ]
+ },
+ {
+  "id": "v1896",
+  "q": "Si el jefe supiera lo del error, ___ (preguntar) quién fue.",
+  "options": [
+   "preguntara",
+   "preguntaría",
+   "preguntará"
+  ]
+ },
+ {
+  "id": "v1899",
+  "q": "Cuando regreses del viaje, yo ya ___ (olvidar) esta discusión.",
+  "options": [
+   "olvidaré",
+   "habré olvidado",
+   "haya olvidado",
+   "habría olvidado"
+  ]
+ },
+ {
+  "id": "v1902",
+  "q": "Es sorprendente que nuestro equipo ___ (ganar) cuatro partidos seguidos.",
+  "options": [
+   "haya ganado",
+   "ha ganado",
+   "hubiera ganado",
+   "gane"
+  ]
+ },
+ {
+  "id": "v1905",
+  "q": "Mi hermana ___ (llevar) un año sin trabajo cuando por fin la llamaron.",
+  "options": [
+   "llevaba",
+   "llevara",
+   "llevó",
+   "llevaría"
+  ]
+ },
+ {
+  "id": "v1908",
+  "q": "Si tú ___ (recoger) a los niños, yo habría cocinado.",
+  "options": [
+   "hubieras recogido",
+   "habrías recogido",
+   "habías recogido",
+   "recogieras"
+  ]
+ },
+ {
+  "id": "v1911",
+  "q": "Hace tres días nosotros ___ (comprar) un carro usado.",
+  "options": [
+   "comprábamos",
+   "compramos",
+   "hemos comprado"
+  ]
+ },
+ {
+  "id": "v1914",
+  "q": "Cuando mi hijo ya ___ (aprender) a leer, le compraré una biblioteca.",
+  "options": [
+   "ha aprendido",
+   "aprenda",
+   "haya aprendido",
+   "hubiera aprendido"
+  ]
+ },
+ {
+  "id": "v1917",
+  "q": "Me aseguraste que tú ya ___ (leer) el contrato.",
+  "options": [
+   "habías leído",
+   "has leído",
+   "leías",
+   "hubieras leído"
+  ]
+ },
+ {
+  "id": "v1920",
+  "q": "Hasta ahora, la presidente ___ (mantener) su palabra.",
+  "options": [
+   "ha mantenido",
+   "mantuvo",
+   "había mantenido",
+   "haya mantenido"
+  ]
+ },
+ {
+  "id": "v1923",
+  "q": "No quise almorzar con ellos porque yo ya ___ (comer).",
+  "options": [
+   "había comido",
+   "comía",
+   "he comido",
+   "hubiera comido"
+  ]
+ },
+ {
+  "id": "v1926",
+  "q": "Si hubiera tenido tu número, te ___ (llamar) desde el aeropuerto.",
+  "options": [
+   "habré llamado",
+   "habría llamado",
+   "llamaría",
+   "había llamado"
+  ]
+ },
+ {
+  "id": "v1929",
+  "q": "Si tú no me ___ (decir) esa mentira aquella vez, todavía confiaría en ti.",
+  "options": [
+   "habías dicho",
+   "dijeras",
+   "hubieras dicho",
+   "habrías dicho"
+  ]
+ },
+ {
+  "id": "v1932",
+  "q": "¿Ya ___ (decidir) tú qué vas a estudiar?",
+  "options": [
+   "habías decidido",
+   "decidiste",
+   "hayas decidido",
+   "has decidido"
+  ]
+ },
+ {
+  "id": "v1935",
+  "q": "No dejaremos la oficina hasta que ya ___ (enviar) todos los correos.",
+  "options": [
+   "hubiéramos enviado",
+   "hemos enviado",
+   "enviemos",
+   "hayamos enviado"
+  ]
+ },
+ {
+  "id": "v1938",
+  "q": "Me dijo que su jefe ya ___ (salir) a almorzar.",
+  "options": [
+   "hubiera salido",
+   "ha salido",
+   "salía",
+   "había salido"
+  ]
+ },
+ {
+  "id": "v1941",
+  "q": "Pedro dormía profundo cuando el despertador ___ (sonar) por error.",
+  "options": [
+   "ha sonado",
+   "suena",
+   "sonaba",
+   "sonó"
+  ]
+ },
+ {
+  "id": "v1944",
+  "q": "El año pasado mi empresa ___ (abrir) una oficina en Medellín.",
+  "options": [
+   "ha abierto",
+   "abre",
+   "abría",
+   "abrió"
+  ]
+ },
+ {
+  "id": "v1947",
+  "q": "Esta carretera no estaba así; no sé, ___ (pasar) un camión por aquí.",
+  "options": [
+   "habríamos pasado",
+   "pasaremos",
+   "hayamos pasado",
+   "habremos pasado"
+  ]
+ },
+ {
+  "id": "v1950",
+  "q": "Si yo ___ (dar) mi opinión entonces, ahora no tendría este problema.",
+  "options": [
+   "diera",
+   "había dado",
+   "habría dado",
+   "hubiera dado"
+  ]
+ },
+ {
+  "id": "v1953",
+  "q": "Cuando tú ___ (ver) a tu mamá, salúdala de mi parte.",
+  "options": [
+   "vieras",
+   "veas",
+   "verás",
+   "ves"
+  ]
+ },
+ {
+  "id": "v1956",
+  "q": "Hijos, ___ (abrir) la puerta a ningún extraño.",
+  "options": [
+   "abren",
+   "abran",
+   "no abran"
+  ]
+ },
+ {
+  "id": "v1959",
+  "q": "Salía de la oficina cuando ___ (ver) a mi exjefe en la calle.",
+  "options": [
+   "he visto",
+   "vi",
+   "veo",
+   "veía"
+  ]
+ },
+ {
+  "id": "v1962",
+  "q": "Si ustedes ___ (llamar) antes, les habríamos guardado una mesa.",
+  "options": [
+   "hubieran llamado",
+   "llamaran",
+   "habrían llamado",
+   "habían llamado"
+  ]
+ },
+ {
+  "id": "v1965",
+  "q": "Dentro de tres días la universidad ___ (publicar) los resultados.",
+  "options": [
+   "publique",
+   "publicará",
+   "publicaría"
+  ]
+ },
+ {
+  "id": "v1968",
+  "q": "Si encuentras mis llaves, me las ___ (traer), ¿sí?",
+  "options": [
+   "traigas",
+   "traías",
+   "traerás",
+   "traerías"
+  ]
+ },
+ {
+  "id": "v1971",
+  "q": "Después de que cene, Sofía ___ (lavar) los platos.",
+  "options": [
+   "lavará",
+   "lave",
+   "lavaría"
+  ]
+ },
+ {
+  "id": "v1974",
+  "q": "Queremos que ustedes ___ (conocer) a nuestra familia.",
+  "options": [
+   "conocen",
+   "conozcan",
+   "conocerán",
+   "conocieran"
+  ]
+ },
+ {
+  "id": "v1977",
+  "q": "Mis hermanos siempre ___ (jugar) al fútbol los domingos.",
+  "options": [
+   "han jugado",
+   "hayan jugado",
+   "jugaron",
+   "habían jugado"
+  ]
+ },
+ {
+  "id": "v1980",
+  "q": "Hasta el lunes, tú nunca ___ (perder) las llaves.",
+  "options": [
+   "habías perdido",
+   "hubieras perdido",
+   "perdiste",
+   "has perdido"
+  ]
+ },
+ {
+  "id": "v1983",
+  "q": "Cuando nos sentamos en el estadio, los jugadores ya ___ (entrar) a la cancha.",
+  "options": [
+   "han entrado",
+   "hubieran entrado",
+   "habían entrado",
+   "entraban"
+  ]
+ },
+ {
+  "id": "v1986",
+  "q": "En 2014 Colombia ___ (llegar) a cuartos de final en el Mundial.",
+  "options": [
+   "llegaba",
+   "llega",
+   "llegó",
+   "ha llegado"
+  ]
+ },
+ {
+  "id": "v1989",
+  "q": "Cuando ella se fue de la casa, ___ (faltar) poco para la medianoche.",
+  "options": [
+   "faltó",
+   "faltaba",
+   "faltaría",
+   "faltara"
+  ]
+ },
+ {
+  "id": "v1992",
+  "q": "Si hubieras estudiado más, ___ (ganar) la beca.",
+  "options": [
+   "habrías ganado",
+   "ganarías",
+   "habrás ganado",
+   "habías ganado"
+  ]
+ },
+ {
+  "id": "v1995",
+  "q": "Señor, ___ (dejar) el carro aquí, que es salida de ambulancias.",
+  "options": [
+   "no deje",
+   "deje",
+   "deja"
+  ]
+ },
+ {
+  "id": "v1998",
+  "q": "Mientras los niños dormían, nosotros ___ (limpiar) la casa.",
+  "options": [
+   "limpiaríamos",
+   "limpiábamos",
+   "limpiamos",
+   "limpiáramos"
+  ]
+ },
+ {
+  "id": "v2001",
+  "q": "Hablas como si ___ (conocer) a todos los famosos.",
+  "options": [
+   "conozcas",
+   "conocías",
+   "conocieras",
+   "conocerías"
+  ]
+ },
+ {
+  "id": "v2004",
+  "q": "Para cuando termine el festival, nosotros ya ___ (ver) todas las películas.",
+  "options": [
+   "veremos",
+   "habríamos visto",
+   "habremos visto",
+   "hayamos visto"
+  ]
+ },
+ {
+  "id": "v2007",
+  "q": "Si fuera tan amable, ¿me ___ (mostrar) el menú?",
+  "options": [
+   "mostraba",
+   "mostrará",
+   "mostraría"
+  ]
+ },
+ {
+  "id": "v2010",
+  "q": "Para diciembre, Camilo ya ___ (ahorrar) lo suficiente para el carro.",
+  "options": [
+   "haya ahorrado",
+   "ahorrará",
+   "habría ahorrado",
+   "habrá ahorrado"
+  ]
+ },
+ {
+  "id": "v2013",
+  "q": "Los profesores esperan que los estudiantes ya ___ (leer) el capítulo para el lunes.",
+  "options": [
+   "lean",
+   "hubieran leído",
+   "han leído",
+   "hayan leído"
+  ]
+ },
+ {
+  "id": "v2016",
+  "q": "Me encanta que nosotros ___ (conocer) a tanta gente nueva este mes.",
+  "options": [
+   "conozcamos",
+   "hubiéramos conocido",
+   "hemos conocido",
+   "hayamos conocido"
+  ]
+ },
+ {
+  "id": "v2019",
+  "q": "Para el 2028, ya ___ (construir) el nuevo puente sobre el río.",
+  "options": [
+   "habrían construido",
+   "construirán",
+   "hayan construido",
+   "habrán construido"
+  ]
+ },
+ {
+  "id": "v2022",
+  "q": "Ya ___ (hacer) nosotros todas las maletas; solo falta salir.",
+  "options": [
+   "habíamos hecho",
+   "hicimos",
+   "hayamos hecho",
+   "hemos hecho"
+  ]
+ },
+ {
+  "id": "v2025",
+  "q": "Termina la tarea antes de que tu mamá ___ (volver).",
+  "options": [
+   "volviera",
+   "vuelve",
+   "volverá",
+   "vuelva"
+  ]
+ },
+ {
+  "id": "v2028",
+  "q": "Camilo no vino a la fiesta. Ni idea, se ___ (olvidar) de la invitación.",
+  "options": [
+   "haya olvidado",
+   "habrá olvidado",
+   "habría olvidado",
+   "olvidará"
+  ]
+ },
+ {
+  "id": "v2031",
+  "q": "Anoche ___ (llover) durante cuatro horas sin parar.",
+  "options": [
+   "ha llovido",
+   "llovió",
+   "llueve",
+   "llovía"
+  ]
+ },
+ {
+  "id": "v2034",
+  "q": "Mi hijo se ___ (hacer) muy alto desde diciembre.",
+  "options": [
+   "ha hecho",
+   "había hecho",
+   "haya hecho",
+   "hizo"
+  ]
+ },
+ {
+  "id": "v2037",
+  "q": "Yo en tu lugar, ___ (pedir) una segunda opinión.",
+  "options": [
+   "pidiera",
+   "pediría",
+   "pediré"
+  ]
+ },
+ {
+  "id": "v2040",
+  "q": "Me molestó que nadie ___ (lavar) los platos desde el lunes.",
+  "options": [
+   "lavara",
+   "habría lavado",
+   "hubiera lavado",
+   "había lavado"
+  ]
+ },
+ {
+  "id": "v2043",
+  "q": "Es bueno que ya ___ (aprender) a manejar, Pablo.",
+  "options": [
+   "hubieras aprendido",
+   "hayas aprendido",
+   "aprendas",
+   "has aprendido"
+  ]
+ },
+ {
+  "id": "v2046",
+  "q": "Camila se rió como si nadie le ___ (contar) la mala noticia.",
+  "options": [
+   "había contado",
+   "hubiera contado",
+   "habría contado",
+   "contara"
+  ]
+ },
+ {
+  "id": "v2049",
+  "q": "Si el jefe me ___ (dar) permiso, habría ido a la boda.",
+  "options": [
+   "hubiera dado",
+   "habría dado",
+   "había dado",
+   "diera"
+  ]
+ },
+ {
+  "id": "v2052",
+  "q": "Daniela, ___ (escribir) a Pedro hoy; déjalo tranquilo.",
+  "options": [
+   "no escribas",
+   "escribas",
+   "escribe",
+   "escribes"
+  ]
+ },
+ {
+  "id": "v2055",
+  "q": "Ellos ___ (tomar) café en la terraza cuando empezó el temblor.",
+  "options": [
+   "tomaran",
+   "tomaron",
+   "tomaban",
+   "tomarían"
+  ]
+ },
+ {
+  "id": "v2058",
+  "q": "Nadie atiende en el banco; quién sabe, ___ (cerrar) por una emergencia.",
+  "options": [
+   "cerrarán",
+   "hayan cerrado",
+   "habrán cerrado",
+   "habrían cerrado"
+  ]
+ },
+ {
+  "id": "v2061",
+  "q": "Me fastidia que Julián ya ___ (olvidar) las llaves dos veces esta semana.",
+  "options": [
+   "ha olvidado",
+   "haya olvidado",
+   "hubiera olvidado",
+   "olvide"
+  ]
+ },
+ {
+  "id": "v2064",
+  "q": "Calculábamos que en un año ya ___ (pagar) la deuda.",
+  "options": [
+   "habríamos pagado",
+   "pagaríamos",
+   "habremos pagado",
+   "habíamos pagado"
+  ]
+ },
+ {
+  "id": "v2067",
+  "q": "Es urgente que el alcalde ___ (arreglar) esta calle.",
+  "options": [
+   "arregle",
+   "arreglará",
+   "arregla",
+   "arreglara"
+  ]
+ },
+ {
+  "id": "v2070",
+  "q": "Mi carro ___ (hacer) un ruido raro desde hace una semana.",
+  "options": [
+   "hace",
+   "hacía",
+   "hizo",
+   "haga"
+  ]
+ },
+ {
+  "id": "v2073",
+  "q": "La mesa está en otro lugar; no sé, alguien la ___ (mover).",
+  "options": [
+   "moverá",
+   "habría movido",
+   "habrá movido",
+   "haya movido"
+  ]
+ },
+ {
+  "id": "v2076",
+  "q": "Señor, ___ (hacer) fila en esa caja; está cerrada.",
+  "options": [
+   "haga",
+   "no haga",
+   "hace"
+  ]
+ },
+ {
+  "id": "v2079",
+  "q": "Mis papás me contaron que ya ___ (terminar) de pagar la casa.",
+  "options": [
+   "habían terminado",
+   "han terminado",
+   "terminaban",
+   "hubieran terminado"
+  ]
+ },
+ {
+  "id": "v2082",
+  "q": "Tal vez Mateo ___ (decidir) quedarse, pero no estoy segura.",
+  "options": [
+   "decidiera",
+   "decide",
+   "decidirá",
+   "decida"
+  ]
+ },
+ {
+  "id": "v2085",
+  "q": "Si tú ___ (tener) un perro, saldrías a caminar más.",
+  "options": [
+   "tendrías",
+   "tenías",
+   "tengas",
+   "tuvieras"
+  ]
+ },
+ {
+  "id": "v2088",
+  "q": "A Carolina le molestaba que su novio ___ (fumar) tanto.",
+  "options": [
+   "fumaba",
+   "fumaría",
+   "fume",
+   "fumara"
+  ]
+ },
+ {
+  "id": "v2091",
+  "q": "Hijos, ___ (cruzar) la calle sin mirar a ambos lados.",
+  "options": [
+   "crucen",
+   "cruzan",
+   "no crucen"
+  ]
+ },
+ {
+  "id": "v2094",
+  "q": "Mi papá nunca me ___ (decir) una mentira.",
+  "options": [
+   "había dicho",
+   "dijo",
+   "haya dicho",
+   "ha dicho"
+  ]
+ },
+ {
+  "id": "v2097",
+  "q": "Mi profesora recordó que nosotros ya ___ (ver) ese tema el mes anterior.",
+  "options": [
+   "veíamos",
+   "hemos visto",
+   "hubiéramos visto",
+   "habíamos visto"
+  ]
+ },
+ {
+  "id": "v2100",
+  "q": "Tan pronto como Camilo ___ (empezar) a trabajar, ahorrará para la moto.",
+  "options": [
+   "empieza",
+   "empezara",
+   "empezará",
+   "empiece"
+  ]
+ },
+ {
+  "id": "v2103",
+  "q": "Hace unos días nosotros ___ (tener) una reunión con el banco.",
+  "options": [
+   "hemos tenido",
+   "teníamos",
+   "tuvimos"
+  ]
+ },
+ {
+  "id": "v2106",
+  "q": "Cuando mis tíos ___ (regresar) de Europa, haremos una fiesta.",
+  "options": [
+   "regresarán",
+   "regresen",
+   "regresaran",
+   "regresan"
+  ]
+ },
+ {
+  "id": "v2109",
+  "q": "Mi hija está muy callada; quién sabe, ___ (ver) algo que la asustó.",
+  "options": [
+   "habrá visto",
+   "habría visto",
+   "haya visto",
+   "verá"
+  ]
+ },
+ {
+  "id": "v2112",
+  "q": "Le contamos a la abuela que ya ___ (comprar) los pasajes.",
+  "options": [
+   "comprábamos",
+   "hubiéramos comprado",
+   "habíamos comprado",
+   "hemos comprado"
+  ]
+ },
+ {
+  "id": "v2115",
+  "q": "Luis, ___ (llegar) tarde; mañana sales a las cinco.",
+  "options": [
+   "llegues",
+   "llegas",
+   "no llegues",
+   "llega"
+  ]
+ },
+ {
+  "id": "v2118",
+  "q": "Cuando terminó la película, nos pusimos los abrigos y ___ (salir) del cine.",
+  "options": [
+   "salimos",
+   "hemos salido",
+   "salíamos"
+  ]
+ },
+ {
+  "id": "v2121",
+  "q": "___ (ser) mejor llamar a tu mamá antes de salir.",
+  "options": [
+   "sería",
+   "fuera",
+   "será"
+  ]
+ },
+ {
+  "id": "v2124",
+  "q": "No creo que nadie ___ (abrir) esta puerta en años.",
+  "options": [
+   "haya abierto",
+   "hubiera abierto",
+   "ha abierto",
+   "abra"
+  ]
+ },
+ {
+  "id": "v2127",
+  "q": "Ayer en el centro ___ (haber) tanto tráfico que tardé dos horas.",
+  "options": [
+   "había",
+   "hubiera",
+   "hubo",
+   "habría"
+  ]
+ },
+ {
+  "id": "v2130",
+  "q": "¿Qué ___ (hacer) tú esta noche? Hay fiesta en mi casa.",
+  "options": [
+   "hiciste",
+   "hagas",
+   "haces",
+   "hacías"
+  ]
+ },
+ {
+  "id": "v2133",
+  "q": "Anoche los niños ___ (dormir) muy poco por el ruido de la calle.",
+  "options": [
+   "dormían",
+   "duermen",
+   "durmieron",
+   "han dormido"
+  ]
+ },
+ {
+  "id": "v2136",
+  "q": "Ayer tú ___ (preparar) un sancocho para toda la familia, ¿no?",
+  "options": [
+   "preparabas",
+   "preparaste",
+   "preparas",
+   "has preparado"
+  ]
+ },
+ {
+  "id": "v2139",
+  "q": "Camilo aseguró que nunca ___ (volver) a esa ciudad.",
+  "options": [
+   "volvería",
+   "volverá",
+   "volvía"
+  ]
+ },
+ {
+  "id": "v2142",
+  "q": "Si hubiera pasado a mi lado, Pedro ___ (sentir) el olor a café.",
+  "options": [
+   "habría sentido",
+   "habrá sentido",
+   "sentiría",
+   "había sentido"
+  ]
+ },
+ {
+  "id": "v2145",
+  "q": "Si Camilo estudiara más, ___ (sacar) mejores notas.",
+  "options": [
+   "sacará",
+   "sacaría",
+   "sacara"
+  ]
+ },
+ {
+  "id": "v2148",
+  "q": "Yo que ella, ___ (tomar) un taxi hasta allá.",
+  "options": [
+   "tomaré",
+   "tomaría",
+   "tomara"
+  ]
+ },
+ {
+  "id": "v2151",
+  "q": "No imaginaba que el viaje ___ (salir) tan caro.",
+  "options": [
+   "saldrá",
+   "saldría",
+   "salía"
+  ]
+ },
+ {
+  "id": "v2154",
+  "q": "Esta tarde el técnico ___ (venir) a revisar el internet.",
+  "options": [
+   "vendrá",
+   "vendría",
+   "venga"
+  ]
+ },
+ {
+  "id": "v2157",
+  "q": "Esperábamos que la lluvia ___ (parar) antes del partido.",
+  "options": [
+   "pararía",
+   "pare",
+   "paraba",
+   "parara"
+  ]
+ },
+ {
+  "id": "v2160",
+  "q": "Los obreros ___ (trabajar) toda la noche del martes para terminar la calle.",
+  "options": [
+   "han trabajado",
+   "trabajan",
+   "trabajaban",
+   "trabajaron"
+  ]
+ },
+ {
+  "id": "v2163",
+  "q": "Hasta que conoció a Mateo, Laura nunca se ___ (enamorar).",
+  "options": [
+   "ha enamorado",
+   "hubiera enamorado",
+   "enamoró",
+   "había enamorado"
+  ]
+ },
+ {
+  "id": "v2166",
+  "q": "Sin el altavoz, no los ___ (escuchar) en la última fila aquel día.",
+  "options": [
+   "habremos escuchado",
+   "escucharíamos",
+   "habíamos escuchado",
+   "habríamos escuchado"
+  ]
+ },
+ {
+  "id": "v2169",
+  "q": "Ya ___ (probar) yo todos los restaurantes de la calle; este es el mejor.",
+  "options": [
+   "había probado",
+   "probé",
+   "haya probado",
+   "he probado"
+  ]
+ },
+ {
+  "id": "v2172",
+  "q": "Si yo ___ (pagar) hoy, mañana tenemos la reserva confirmada.",
+  "options": [
+   "pagara",
+   "pagaré",
+   "pague",
+   "pago"
+  ]
+ },
+ {
+  "id": "v2175",
+  "q": "Es mejor que nosotros nos ___ (quedar) aquí hasta que pare la lluvia.",
+  "options": [
+   "quedamos",
+   "quedáramos",
+   "quedaremos",
+   "quedemos"
+  ]
+ },
+ {
+  "id": "v2178",
+  "q": "Cuando íbamos a la escuela, ustedes ___ (pasar) por mi casa para caminar juntos.",
+  "options": [
+   "pasarían",
+   "pasaban",
+   "pasaran",
+   "pasaron"
+  ]
+ },
+ {
+  "id": "v2181",
+  "q": "Para fin de mes, yo ya ___ (lograr) bajar cinco kilos.",
+  "options": [
+   "habré logrado",
+   "habría logrado",
+   "haya logrado",
+   "lograré"
+  ]
+ },
+ {
+  "id": "v2184",
+  "q": "Con tu receta, yo ___ (hacer) un mejor pastel el domingo pasado.",
+  "options": [
+   "habré hecho",
+   "había hecho",
+   "habría hecho",
+   "haría"
+  ]
+ },
+ {
+  "id": "v2187",
+  "q": "Mi tío me prestó plata para que ___ (pagar) la matrícula.",
+  "options": [
+   "pagaba",
+   "pagaría",
+   "pagara",
+   "pague"
+  ]
+ },
+ {
+  "id": "v2190",
+  "q": "En ese restaurante, nosotros ___ (pedir) otra cosa el sábado.",
+  "options": [
+   "habíamos pedido",
+   "habríamos pedido",
+   "habremos pedido",
+   "pediríamos"
+  ]
+ },
+ {
+  "id": "v2193",
+  "q": "¿Alguna vez ___ (ganar) tú un premio?",
+  "options": [
+   "hayas ganado",
+   "has ganado",
+   "habías ganado",
+   "ganaste"
+  ]
+ },
+ {
+  "id": "v2196",
+  "q": "Mis primos ___ (parecer) muy felices en esta foto de la boda.",
+  "options": [
+   "parecen",
+   "parezcan",
+   "parecieron",
+   "parecían"
+  ]
+ },
+ {
+  "id": "v2199",
+  "q": "Nosotros ___ (pasar) las vacaciones en Santa Marta desde hace años.",
+  "options": [
+   "pasamos",
+   "pasaremos",
+   "pasábamos",
+   "pasemos"
+  ]
+ },
+ {
+  "id": "v2202",
+  "q": "Si hubieras escuchado a tu mamá ayer, ___ (saber) qué hacer.",
+  "options": [
+   "habías sabido",
+   "sabrías",
+   "habrías sabido",
+   "habrás sabido"
+  ]
+ },
+ {
+  "id": "v2205",
+  "q": "Cuando me llames a las dos, yo ya ___ (comer) y estaré lista para salir.",
+  "options": [
+   "comeré",
+   "haya comido",
+   "habré comido",
+   "habría comido"
+  ]
+ },
+ {
+  "id": "v2208",
+  "q": "Ese señor ___ (pasar) de los cincuenta, ¿no?",
+  "options": [
+   "pasaría",
+   "pasará",
+   "pase",
+   "pasaba"
+  ]
+ },
+ {
+  "id": "v2211",
+  "q": "Pensé que la película ___ (empezar) a las siete.",
+  "options": [
+   "empezaría",
+   "empezará",
+   "empezaba"
+  ]
+ },
+ {
+  "id": "v2214",
+  "q": "Te guardo un puesto si tú ___ (llegar) temprano.",
+  "options": [
+   "llegas",
+   "llegues",
+   "llegarás",
+   "llegaras"
+  ]
+ },
+ {
+  "id": "v2217",
+  "q": "Para el sábado, el paquete ya ___ (llegar) a mi casa.",
+  "options": [
+   "habría llegado",
+   "habrá llegado",
+   "llegará",
+   "haya llegado"
+  ]
+ },
+ {
+  "id": "v2220",
+  "q": "Cuando entré a la cocina, mis hermanos ya ___ (poner) los platos.",
+  "options": [
+   "han puesto",
+   "ponían",
+   "habían puesto",
+   "hubieran puesto"
+  ]
+ },
+ {
+  "id": "v2223",
+  "q": "No creo que yo ___ (llegar) antes de las diez.",
+  "options": [
+   "llego",
+   "llegaré",
+   "llegue",
+   "llegara"
+  ]
+ },
+ {
+  "id": "v2226",
+  "q": "Estudiantes, ___ (leer) el capítulo tres para el lunes.",
+  "options": [
+   "lean",
+   "leen",
+   "leerán",
+   "no lean"
+  ]
+ },
+ {
+  "id": "v2229",
+  "q": "Me da rabia que la gente ___ (tirar) basura en la calle.",
+  "options": [
+   "tire",
+   "tira",
+   "tirara",
+   "tirará"
+  ]
+ },
+ {
+  "id": "v2232",
+  "q": "Es increíble que hasta ahora nadie ___ (pedir) disculpas.",
+  "options": [
+   "pida",
+   "haya pedido",
+   "ha pedido",
+   "hubiera pedido"
+  ]
+ },
+ {
+  "id": "v2235",
+  "q": "Últimamente Ana ___ (mirar) mucho el celular en clase.",
+  "options": [
+   "había mirado",
+   "haya mirado",
+   "miró",
+   "ha mirado"
+  ]
+ },
+ {
+  "id": "v2238",
+  "q": "Mamá, ___ (llamar) a la clínica ahora; yo te aviso apenas llegue.",
+  "options": [
+   "llama",
+   "llamas",
+   "llames",
+   "no llames"
+  ]
+ },
+ {
+  "id": "v2241",
+  "q": "Mientras el bebé ___ (dormir), su mamá aprovechaba para descansar.",
+  "options": [
+   "dormiría",
+   "durmió",
+   "durmiera",
+   "dormía"
+  ]
+ },
+ {
+  "id": "v2244",
+  "q": "Los ladrones rompieron la ventana, ___ (entrar) y se llevaron el computador.",
+  "options": [
+   "entran",
+   "entraban",
+   "han entrado",
+   "entraron"
+  ]
+ },
+ {
+  "id": "v2247",
+  "q": "Ojalá que mañana no ___ (llover) durante el partido.",
+  "options": [
+   "llueve",
+   "lloverá",
+   "lloviera",
+   "llueva"
+  ]
+ },
+ {
+  "id": "v2250",
+  "q": "Cuando yo era niño, la casa de mis abuelos ___ (quedar) lejos del pueblo.",
+  "options": [
+   "quedaría",
+   "quedara",
+   "quedó",
+   "quedaba"
+  ]
+ },
+ {
+  "id": "v2253",
+  "q": "Me dio rabia que tú no me ___ (esperar).",
+  "options": [
+   "esperabas",
+   "esperaras",
+   "esperarías",
+   "esperes"
+  ]
+ },
+ {
+  "id": "v2256",
+  "q": "¿Por qué ___ (llorar) ese niño? Está solo en la banca.",
+  "options": [
+   "lloraba",
+   "llore",
+   "llorará",
+   "lloraría"
+  ]
+ },
+ {
+  "id": "v2259",
+  "q": "Hay que arreglar el techo antes de que ___ (llegar) las lluvias.",
+  "options": [
+   "llegarán",
+   "llegaran",
+   "lleguen",
+   "llegan"
+  ]
+ },
+ {
+  "id": "v2262",
+  "q": "Si Daniela ___ (ver) el mensaje, habría contestado enseguida.",
+  "options": [
+   "habría visto",
+   "hubiera visto",
+   "viera",
+   "había visto"
+  ]
+ },
+ {
+  "id": "v2265",
+  "q": "Si ustedes llegan temprano, ___ (conseguir) buenos puestos.",
+  "options": [
+   "consigan",
+   "conseguirán",
+   "conseguían",
+   "conseguirían"
+  ]
+ },
+ {
+  "id": "v2268",
+  "q": "Dudé que yo ___ (entender) bien el mensaje de Camilo.",
+  "options": [
+   "entendía",
+   "entendiera",
+   "entendería",
+   "entienda"
+  ]
+ },
+ {
+  "id": "v2271",
+  "q": "Chicos, ___ (empezar) la clase, ya son las ocho.",
+  "options": [
+   "empecemos",
+   "empezaríamos",
+   "empezamos",
+   "empezaremos"
+  ]
+ },
+ {
+  "id": "v2274",
+  "q": "Si Mateo ___ (practicar) más, habría ganado el torneo.",
+  "options": [
+   "habría practicado",
+   "había practicado",
+   "hubiera practicado",
+   "practicara"
+  ]
+ },
+ {
+  "id": "v2277",
+  "q": "Ustedes, ___ (ser) tan exigentes con el nuevo.",
+  "options": [
+   "son",
+   "no sean",
+   "sean"
+  ]
+ },
+ {
+  "id": "v2280",
+  "q": "Camila, ___ (poner) esto en la nevera, que se daña.",
+  "options": [
+   "pones",
+   "no pongas",
+   "pon",
+   "pongas"
+  ]
+ },
+ {
+  "id": "v2283",
+  "q": "Chicos, ___ (jugar) pelota dentro de la casa.",
+  "options": [
+   "no jueguen",
+   "jueguen",
+   "juegan"
+  ]
+ },
+ {
+  "id": "v2286",
+  "q": "Habló de la ciudad como si ya ___ (vivir) allá por años.",
+  "options": [
+   "hubiera vivido",
+   "había vivido",
+   "habría vivido",
+   "viviera"
+  ]
+ },
+ {
+  "id": "v2289",
+  "q": "Ayer mi jefe ___ (firmar) el contrato con los nuevos clientes.",
+  "options": [
+   "firmó",
+   "ha firmado",
+   "firmaba",
+   "firma"
+  ]
+ },
+ {
+  "id": "v2292",
+  "q": "Señora, ___ (tomar) asiento, ya la atienden.",
+  "options": [
+   "tomará",
+   "tome",
+   "toma",
+   "no tome"
+  ]
+ },
+ {
+  "id": "v2295",
+  "q": "Es lamentable que tantos jóvenes ya ___ (abandonar) sus estudios.",
+  "options": [
+   "han abandonado",
+   "abandonen",
+   "hayan abandonado",
+   "hubieran abandonado"
+  ]
+ },
+ {
+  "id": "v2298",
+  "q": "Falta una maleta en el carro; quién sabe, la ___ (olvidar) en el hotel.",
+  "options": [
+   "habríamos olvidado",
+   "olvidaremos",
+   "habremos olvidado",
+   "hayamos olvidado"
+  ]
+ },
+ {
+  "id": "v2301",
+  "q": "En lo que va de este año, mis abuelos ___ (venir) dos veces a visitarnos.",
+  "options": [
+   "han venido",
+   "vinieron",
+   "habían venido",
+   "hayan venido"
+  ]
+ },
+ {
+  "id": "v2304",
+  "q": "Para el miércoles, los clientes ya ___ (recibir) el pedido.",
+  "options": [
+   "habrán recibido",
+   "recibirán",
+   "habrían recibido",
+   "hayan recibido"
+  ]
+ },
+ {
+  "id": "v2307",
+  "q": "Camila, ___ (gastar) toda la plata en ropa este mes.",
+  "options": [
+   "gastas",
+   "no gastes",
+   "gasta",
+   "gastes"
+  ]
+ },
+ {
+  "id": "v2310",
+  "q": "Últimamente los precios ___ (subir) mucho en el mercado.",
+  "options": [
+   "habían subido",
+   "hayan subido",
+   "subieron",
+   "han subido"
+  ]
+ },
+ {
+  "id": "v2313",
+  "q": "Últimamente tú ___ (comer) muy poco, ¿te pasa algo?",
+  "options": [
+   "habías comido",
+   "comiste",
+   "hayas comido",
+   "has comido"
+  ]
+ },
+ {
+  "id": "v2316",
+  "q": "Yo en tu caso, ___ (pensar) bien antes de renunciar.",
+  "options": [
+   "pensaré",
+   "pensara",
+   "pensaría"
+  ]
+ },
+ {
+  "id": "v2319",
+  "q": "Si no hubiera llovido, nosotros ___ (ver) el desfile completo.",
+  "options": [
+   "habíamos visto",
+   "veríamos",
+   "habremos visto",
+   "habríamos visto"
+  ]
+ },
+ {
+  "id": "v2322",
+  "q": "No creo que Mariana ya ___ (salir) de la oficina.",
+  "options": [
+   "ha salido",
+   "hubiera salido",
+   "salga",
+   "haya salido"
+  ]
+ },
+ {
+  "id": "v2325",
+  "q": "Si hubiéramos pasado por Popayán, ___ (probar) las empanadas de pipián.",
+  "options": [
+   "habremos probado",
+   "habíamos probado",
+   "probaríamos",
+   "habríamos probado"
+  ]
+ },
+ {
+  "id": "v2328",
+  "q": "Voy a esperar hasta que mi mamá ___ (contestar) el teléfono.",
+  "options": [
+   "conteste",
+   "contestará",
+   "contestara",
+   "contesta"
+  ]
+ },
+ {
+  "id": "v2331",
+  "q": "El domingo nosotros ___ (ir) a la finca de mis abuelos; ven con nosotros.",
+  "options": [
+   "íbamos",
+   "vayamos",
+   "vamos",
+   "fuimos"
+  ]
+ },
+ {
+  "id": "v2334",
+  "q": "Bebé, ___ (mover) la cabeza que te cae el jugo.",
+  "options": [
+   "mueves",
+   "muevas",
+   "no muevas",
+   "mueve"
+  ]
+ },
+ {
+  "id": "v2337",
+  "q": "Cuando llegó el plomero, nosotros ya ___ (arreglar) el tubo.",
+  "options": [
+   "hubiéramos arreglado",
+   "habíamos arreglado",
+   "arreglábamos",
+   "hemos arreglado"
+  ]
+ },
+ {
+  "id": "v2340",
+  "q": "Para el lunes, tú ya ___ (decidir) si aceptas el trabajo.",
+  "options": [
+   "hayas decidido",
+   "habrás decidido",
+   "habrías decidido",
+   "decidirás"
+  ]
+ },
+ {
+  "id": "v2343",
+  "q": "Señor Torres, ___ (leer) este documento antes de firmar.",
+  "options": [
+   "lea",
+   "leerá",
+   "no lea",
+   "lee"
+  ]
+ },
+ {
+  "id": "v2346",
+  "q": "Nuestro vuelo ___ (partir) mañana a las seis, así que hay que madrugar.",
+  "options": [
+   "parte",
+   "parta",
+   "partió",
+   "partía"
+  ]
+ },
+ {
+  "id": "v2349",
+  "q": "Jamás ___ (cantar) yo en público.",
+  "options": [
+   "canté",
+   "haya cantado",
+   "he cantado",
+   "había cantado"
+  ]
+ },
+ {
+  "id": "v2352",
+  "q": "En diez minutos, nosotros ya ___ (terminar) de cenar.",
+  "options": [
+   "terminaremos",
+   "hayamos terminado",
+   "habremos terminado",
+   "habríamos terminado"
+  ]
+ },
+ {
+  "id": "v2355",
+  "q": "Si tú te ___ (poner) el casco, la caída no habría sido tan grave.",
+  "options": [
+   "habías puesto",
+   "hubieras puesto",
+   "habrías puesto",
+   "pusieras"
+  ]
+ },
+ {
+  "id": "v2358",
+  "q": "No es posible que ya se ___ (acabar) la leche; la compré ayer.",
+  "options": [
+   "haya acabado",
+   "ha acabado",
+   "hubiera acabado",
+   "acabe"
+  ]
+ },
+ {
+  "id": "v2361",
+  "q": "No creía que tú ___ (poder) cargar esa maleta tan pesada.",
+  "options": [
+   "pudieras",
+   "podrías",
+   "puedas",
+   "podías"
+  ]
+ },
+ {
+  "id": "v2364",
+  "q": "Anoche yo ___ (oír) un ruido raro en el patio.",
+  "options": [
+   "he oído",
+   "oí",
+   "oía",
+   "oigo"
+  ]
+ },
+ {
+  "id": "v2367",
+  "q": "Niños, ___ (hacer) silencio, el bebé duerme.",
+  "options": [
+   "hacen",
+   "harán",
+   "hagan",
+   "no hagan"
+  ]
+ },
+ {
+  "id": "v2370",
+  "q": "Ayer los estudiantes ___ (entregar) el trabajo final a las ocho.",
+  "options": [
+   "entregaban",
+   "han entregado",
+   "entregaron",
+   "entregan"
+  ]
+ },
+ {
+  "id": "v2373",
+  "q": "Carlos confesó que ya ___ (perder) el celular dos veces.",
+  "options": [
+   "había perdido",
+   "ha perdido",
+   "perdía",
+   "hubiera perdido"
+  ]
+ },
+ {
+  "id": "v2376",
+  "q": "No parece que la sopa ___ (estar) lista todavía.",
+  "options": [
+   "esté",
+   "está",
+   "estará",
+   "estuviera"
+  ]
+ },
+ {
+  "id": "v2379",
+  "q": "En lo que va del año, mi hermana ___ (ahorrar) dos millones.",
+  "options": [
+   "había ahorrado",
+   "ha ahorrado",
+   "ahorró",
+   "haya ahorrado"
+  ]
+ },
+ {
+  "id": "v2382",
+  "q": "Mis padres querían que nosotros nos ___ (casar) en la iglesia.",
+  "options": [
+   "casábamos",
+   "casáramos",
+   "casemos",
+   "casaríamos"
+  ]
+ },
+ {
+  "id": "v2385",
+  "q": "Si tuvieras tiempo, ¿___ (venir) conmigo a la finca?",
+  "options": [
+   "vendrás",
+   "vinieras",
+   "vendrías"
+  ]
+ },
+ {
+  "id": "v2388",
+  "q": "Si no se hubiera lastimado, mi hijo ___ (jugar) el partido final.",
+  "options": [
+   "habrá jugado",
+   "jugaría",
+   "había jugado",
+   "habría jugado"
+  ]
+ },
+ {
+  "id": "v2391",
+  "q": "Si Valentina ___ (querer), podría ser médica.",
+  "options": [
+   "quería",
+   "querría",
+   "quiera",
+   "quisiera"
+  ]
+ },
+ {
+  "id": "v2394",
+  "q": "Yo ___ (hablar) por teléfono cuando alguien tocó a la puerta.",
+  "options": [
+   "hablé",
+   "hablara",
+   "hablaría",
+   "hablaba"
+  ]
+ },
+ {
+  "id": "v2397",
+  "q": "¿Cuánto ___ (valer) esa moto cuando tu papá la compró?",
+  "options": [
+   "valía",
+   "valdrá",
+   "valdría"
+  ]
+ },
+ {
+  "id": "v2400",
+  "q": "Cuando llegó el ascensor, los demás ya ___ (bajar) por las escaleras.",
+  "options": [
+   "bajaban",
+   "hubieran bajado",
+   "han bajado",
+   "habían bajado"
+  ]
+ },
+ {
+  "id": "v2403",
+  "q": "Si seguimos por esta calle, ___ (llegar) al parque en cinco minutos.",
+  "options": [
+   "llegábamos",
+   "lleguemos",
+   "llegaremos",
+   "llegaríamos"
+  ]
+ },
+ {
+  "id": "v2406",
+  "q": "Armando, ___ (devolver) el libro a la biblioteca.",
+  "options": [
+   "devuelvas",
+   "no devuelvas",
+   "devuelve",
+   "devuelves"
+  ]
+ },
+ {
+  "id": "v2409",
+  "q": "Los domingos, después de misa, toda la familia ___ (comer) en casa de los abuelos.",
+  "options": [
+   "comiera",
+   "comía",
+   "comería",
+   "comió"
+  ]
+ },
+ {
+  "id": "v2412",
+  "q": "Cuando termines la carrera, tus papás ya se ___ (ir) a vivir al campo.",
+  "options": [
+   "hayan ido",
+   "habrán ido",
+   "habrían ido",
+   "irán"
+  ]
+ },
+ {
+  "id": "v2415",
+  "q": "Yo que el entrenador, ___ (sacar) al portero.",
+  "options": [
+   "sacaría",
+   "sacara",
+   "sacaré"
+  ]
+ },
+ {
+  "id": "v2418",
+  "q": "Cuando nos preguntaron el destino, nosotros ya ___ (decidir) viajar a Cartagena.",
+  "options": [
+   "habíamos decidido",
+   "decidíamos",
+   "hubiéramos decidido",
+   "hemos decidido"
+  ]
+ },
+ {
+  "id": "v2421",
+  "q": "Cuando me llamaste, todavía no ___ (llegar) a la oficina.",
+  "options": [
+   "hubiera llegado",
+   "llegué",
+   "había llegado",
+   "he llegado"
+  ]
+ },
+ {
+  "id": "v2424",
+  "q": "Señores, ___ (fumar) en esta zona; es solo para no fumadores.",
+  "options": [
+   "fuman",
+   "no fumen",
+   "fumen"
+  ]
+ },
+ {
+  "id": "v2427",
+  "q": "De haberme avisado, mis vecinos me ___ (ayudar) con la mudanza.",
+  "options": [
+   "ayudarían",
+   "habrían ayudado",
+   "habían ayudado",
+   "habrán ayudado"
+  ]
+ },
+ {
+  "id": "v2430",
+  "q": "A Daniela le encantaría que nosotros ___ (ir) a su fiesta.",
+  "options": [
+   "fuéramos",
+   "vayamos",
+   "iríamos",
+   "íbamos"
+  ]
+ },
+ {
+  "id": "v2433",
+  "q": "Ayer no vi a Sofía en clase; ___ (estar) enferma.",
+  "options": [
+   "estaría",
+   "estará",
+   "estaba"
+  ]
+ },
+ {
+  "id": "v2436",
+  "q": "Cuando yo ___ (salir) del trabajo, te llamo.",
+  "options": [
+   "salga",
+   "saliera",
+   "salgo",
+   "saldré"
+  ]
+ },
+ {
+  "id": "v2439",
+  "q": "Es una suerte que nadie ___ (resultar) herido en el choque.",
+  "options": [
+   "ha resultado",
+   "hubiera resultado",
+   "haya resultado",
+   "resulte"
+  ]
+ },
+ {
+  "id": "v2442",
+  "q": "¿Ya ___ (terminar) tú el informe, o todavía no?",
+  "options": [
+   "terminaste",
+   "habías terminado",
+   "has terminado",
+   "hayas terminado"
+  ]
+ },
+ {
+  "id": "v2445",
+  "q": "Estoy feliz de que ustedes ___ (venir) a vivir cerca.",
+  "options": [
+   "vengan",
+   "vienen",
+   "vinieran",
+   "vendrán"
+  ]
+ },
+ {
+  "id": "v2448",
+  "q": "Cuando se fue la luz, nosotros ya ___ (acabar) de cenar.",
+  "options": [
+   "habíamos acabado",
+   "hemos acabado",
+   "acabábamos",
+   "hubiéramos acabado"
+  ]
+ },
+ {
+  "id": "v2451",
+  "q": "Mi mamá ___ (comprar) las papas en la plaza; dice que son más frescas.",
+  "options": [
+   "compra",
+   "compraba",
+   "compró",
+   "compre"
+  ]
+ },
+ {
+  "id": "v2454",
+  "q": "Lamento que tu papá ___ (estar) tan enfermo.",
+  "options": [
+   "estuviera",
+   "esté",
+   "está",
+   "estará"
+  ]
+ },
+ {
+  "id": "v2457",
+  "q": "De haber sido más joven, mi abuelo ___ (viajar) por toda Suramérica.",
+  "options": [
+   "viajaría",
+   "habrá viajado",
+   "habría viajado",
+   "había viajado"
+  ]
+ },
+ {
+  "id": "v2460",
+  "q": "Les avisamos que nosotros ya ___ (llegar) al hotel.",
+  "options": [
+   "llegábamos",
+   "hemos llegado",
+   "hubiéramos llegado",
+   "habíamos llegado"
+  ]
+ },
+ {
+  "id": "v2463",
+  "q": "Hasta ese viaje, mis papás nunca ___ (viajar) en avión.",
+  "options": [
+   "hubieran viajado",
+   "viajaron",
+   "han viajado",
+   "habían viajado"
+  ]
+ },
+ {
+  "id": "v2466",
+  "q": "Dentro de una hora ___ (comenzar) la clase, así que apúrate.",
+  "options": [
+   "comience",
+   "comenzó",
+   "comenzaba",
+   "comienza"
+  ]
+ },
+ {
+  "id": "v2469",
+  "q": "Hasta la muerte de mi perro, yo nunca ___ (llorar) en público.",
+  "options": [
+   "he llorado",
+   "hubiera llorado",
+   "lloré",
+   "había llorado"
+  ]
+ },
+ {
+  "id": "v2472",
+  "q": "Tú ___ (parecer) cansado; ¿por qué no te sientas un rato?",
+  "options": [
+   "parecías",
+   "parezcas",
+   "pareciste",
+   "pareces"
+  ]
+ },
+ {
+  "id": "v2475",
+  "q": "Cuando lleguemos al estadio, los jugadores ya ___ (empezar) a calentar.",
+  "options": [
+   "hayan empezado",
+   "habrían empezado",
+   "empezarán",
+   "habrán empezado"
+  ]
+ },
+ {
+  "id": "v2478",
+  "q": "Me da orgullo que mis alumnos ___ (crecer) tanto este año.",
+  "options": [
+   "crezcan",
+   "hubieran crecido",
+   "hayan crecido",
+   "han crecido"
+  ]
+ },
+ {
+  "id": "v2481",
+  "q": "Tú ___ (preparar) la presentación cuando se dañó el proyector.",
+  "options": [
+   "prepararas",
+   "prepararías",
+   "preparabas",
+   "preparaste"
+  ]
+ },
+ {
+  "id": "v2484",
+  "q": "En lo que va del año, la ciudad ___ (recibir) más turistas que nunca.",
+  "options": [
+   "haya recibido",
+   "ha recibido",
+   "había recibido",
+   "recibió"
+  ]
+ },
+ {
+  "id": "v2487",
+  "q": "Mi hermana no quiere cenar; se ___ (sentir) mal.",
+  "options": [
+   "sienta",
+   "sentirá",
+   "sentía",
+   "sentiría"
+  ]
+ },
+ {
+  "id": "v2490",
+  "q": "Ana, ___ (olvidar) las llaves, por favor.",
+  "options": [
+   "no olvides",
+   "olvidas",
+   "olvides",
+   "olvida"
+  ]
+ },
+ {
+  "id": "v2493",
+  "q": "Para el próximo mes, mis abuelos ya ___ (cumplir) sesenta años de casados.",
+  "options": [
+   "habrán cumplido",
+   "habrían cumplido",
+   "hayan cumplido",
+   "cumplirán"
+  ]
+ },
+ {
+  "id": "v2496",
+  "q": "Ojalá mis papás ___ (llevar) a los niños al parque hoy, pero llueve.",
+  "options": [
+   "lleven",
+   "llevarían",
+   "llevaran",
+   "llevaban"
+  ]
+ },
+ {
+  "id": "v2499",
+  "q": "¿Alguna vez ___ (buscar) tú tu nombre en internet?",
+  "options": [
+   "buscaste",
+   "hayas buscado",
+   "has buscado",
+   "habías buscado"
+  ]
+ },
+ {
+  "id": "v2502",
+  "q": "Si tú me explicaras mejor, yo ___ (entender) el tema.",
+  "options": [
+   "entendería",
+   "entendiera",
+   "entenderé"
+  ]
+ },
+ {
+  "id": "v2505",
+  "q": "Hoy en día Camilo ___ (trabajar) en una panadería de lunes a sábado.",
+  "options": [
+   "trabaja",
+   "trabajó",
+   "trabajará",
+   "trabajaba"
+  ]
+ },
+ {
+  "id": "v2508",
+  "q": "Me duele que ustedes ___ (gritar) tanto en la casa.",
+  "options": [
+   "griten",
+   "gritarán",
+   "gritan",
+   "gritaran"
+  ]
+ },
+ {
+  "id": "v2511",
+  "q": "Si ellos ___ (querer) quedarse, nosotros los habríamos recibido.",
+  "options": [
+   "habrían querido",
+   "hubieran querido",
+   "habían querido",
+   "quisieran"
+  ]
+ },
+ {
+  "id": "v2514",
+  "q": "Juan, ___ (manejar) si tomaste licor.",
+  "options": [
+   "maneja",
+   "manejes",
+   "no manejes",
+   "manejas"
+  ]
+ },
+ {
+  "id": "v2517",
+  "q": "Mi abuelo siempre decía que yo ___ (ir) lejos.",
+  "options": [
+   "iré",
+   "iría",
+   "iba"
+  ]
+ },
+ {
+  "id": "v2520",
+  "q": "Nos alegra que Pedro ___ (trabajar) con nosotros ahora.",
+  "options": [
+   "trabaje",
+   "trabaja",
+   "trabajara",
+   "trabajará"
+  ]
+ },
+ {
+  "id": "v2523",
+  "q": "Chicos, ___ (mover) esas sillas hacia la pared.",
+  "options": [
+   "muevan",
+   "mueven",
+   "moverán",
+   "no muevan"
+  ]
+ },
+ {
+  "id": "v2526",
+  "q": "Entraste, ___ (saludar) a todos y te sentaste a la mesa.",
+  "options": [
+   "has saludado",
+   "saludaste",
+   "saludabas",
+   "saludas"
+  ]
+ },
+ {
+  "id": "v2529",
+  "q": "Un año ___ (tener) doce meses y casi cincuenta y dos semanas.",
+  "options": [
+   "tenía",
+   "tiene",
+   "tuvo",
+   "tendrá"
+  ]
+ },
+ {
+  "id": "v2532",
+  "q": "Esta noche ___ (hacer) mucho frío en la montaña.",
+  "options": [
+   "haría",
+   "hará",
+   "haga"
+  ]
+ },
+ {
+  "id": "v2535",
+  "q": "Dentro de dos años, nosotros ya ___ (ahorrar) para la cuota inicial.",
+  "options": [
+   "habríamos ahorrado",
+   "ahorraremos",
+   "hayamos ahorrado",
+   "habremos ahorrado"
+  ]
+ },
+ {
+  "id": "v2538",
+  "q": "Cuando recibas este mensaje, yo ya ___ (pasar) por tu oficina.",
+  "options": [
+   "haya pasado",
+   "pasaré",
+   "habría pasado",
+   "habré pasado"
+  ]
+ },
+ {
+  "id": "v2541",
+  "q": "Dudo que tus primos ___ (viajar) alguna vez en avión.",
+  "options": [
+   "han viajado",
+   "hubieran viajado",
+   "viajen",
+   "hayan viajado"
+  ]
+ },
+ {
+  "id": "v2544",
+  "q": "Me molesta que Camilo todavía no me ___ (enviar) el archivo.",
+  "options": [
+   "envíe",
+   "hubiera enviado",
+   "ha enviado",
+   "haya enviado"
+  ]
+ },
+ {
+  "id": "v2547",
+  "q": "Ojalá mi hermano ___ (vivir) más cerca, pero está en Canadá.",
+  "options": [
+   "viviría",
+   "vivía",
+   "viva",
+   "viviera"
+  ]
+ },
+ {
+  "id": "v2550",
+  "q": "Si nosotros ___ (conocer) el camino, no nos habríamos perdido.",
+  "options": [
+   "conociéramos",
+   "habíamos conocido",
+   "habríamos conocido",
+   "hubiéramos conocido"
+  ]
+ },
+ {
+  "id": "v2553",
+  "q": "Tengo la cara marcada; ni idea, ___ (dormir) sobre la almohada mal puesta.",
+  "options": [
+   "habría dormido",
+   "haya dormido",
+   "habré dormido",
+   "dormiré"
+  ]
+ },
+ {
+  "id": "v2556",
+  "q": "Pensé que mis amigos ya se ___ (enterar) de la noticia.",
+  "options": [
+   "hubieran enterado",
+   "habían enterado",
+   "enteraban",
+   "han enterado"
+  ]
+ },
+ {
+  "id": "v2559",
+  "q": "Mis vecinos viajan mucho; quién sabe, ___ (conseguir) un buen trabajo.",
+  "options": [
+   "hayan conseguido",
+   "habrán conseguido",
+   "habrían conseguido",
+   "conseguirán"
+  ]
+ },
+ {
+  "id": "v2562",
+  "q": "Sin la beca, mis hermanos no ___ (poder) estudiar fuera.",
+  "options": [
+   "habrían podido",
+   "habrán podido",
+   "habían podido",
+   "podrían"
+  ]
+ },
+ {
+  "id": "v2565",
+  "q": "Si ustedes ___ (traer) los documentos, hoy mismo les entregamos el carné.",
+  "options": [
+   "traen",
+   "traigan",
+   "trajeran",
+   "traerán"
+  ]
+ },
+ {
+  "id": "v2568",
+  "q": "Tú ___ (estudiar) inglés desde hace dos años, ¿verdad?",
+  "options": [
+   "estudiabas",
+   "estudies",
+   "estudias",
+   "estudiaste"
+  ]
+ },
+ {
+  "id": "v2571",
+  "q": "Mi vecino no salió hoy; quién sabe, se ___ (sentir) mal.",
+  "options": [
+   "sentirá",
+   "haya sentido",
+   "habrá sentido",
+   "habría sentido"
+  ]
+ },
+ {
+  "id": "v2574",
+  "q": "Trabajo los domingos para que mis hijos ___ (estudiar) en un buen colegio.",
+  "options": [
+   "estudian",
+   "estudien",
+   "estudiaran",
+   "estudiarán"
+  ]
+ },
+ {
+  "id": "v2577",
+  "q": "Apenas ___ (dar) las ocho cuando empezó la misa.",
+  "options": [
+   "daban",
+   "dieron",
+   "dieran",
+   "darían"
+  ]
+ },
+ {
+  "id": "v2580",
+  "q": "En la reunión de mañana el gerente ___ (presentar) el nuevo plan.",
+  "options": [
+   "presentará",
+   "presente",
+   "presentaría"
+  ]
+ },
+ {
+  "id": "v2583",
+  "q": "Le recordé a mi jefe que yo ya se lo ___ (decir) por correo.",
+  "options": [
+   "había dicho",
+   "hubiera dicho",
+   "he dicho",
+   "decía"
+  ]
+ },
+ {
+  "id": "v2586",
+  "q": "Valentina me contó que ___ (vivir) en Cali el año siguiente.",
+  "options": [
+   "vivirá",
+   "viviría",
+   "vivía"
+  ]
+ },
+ {
+  "id": "v2589",
+  "q": "Si yo ___ (empezar) a ahorrar a los veinte, ahora tendría una casa.",
+  "options": [
+   "había empezado",
+   "habría empezado",
+   "hubiera empezado",
+   "empezara"
+  ]
+ },
+ {
+  "id": "v2592",
+  "q": "Si tú ___ (ir) al centro, tráeme un par de medias.",
+  "options": [
+   "vas",
+   "irás",
+   "vayas",
+   "fueras"
+  ]
+ },
+ {
+  "id": "v2595",
+  "q": "No conocía a nadie en la oficina que ___ (hablar) alemán.",
+  "options": [
+   "hablara",
+   "hable",
+   "hablaba",
+   "hablaría"
+  ]
+ },
+ {
+  "id": "v2598",
+  "q": "Rosa, ___ (decidir) ya, que el restaurante cierra.",
+  "options": [
+   "decide",
+   "decidas",
+   "decides",
+   "no decidas"
+  ]
+ },
+ {
+  "id": "v2601",
+  "q": "Chicos, ___ (contestar) las preguntas en silencio.",
+  "options": [
+   "contestarán",
+   "contesten",
+   "contestan",
+   "no contesten"
+  ]
+ },
+ {
+  "id": "v2604",
+  "q": "Descubrí que alguien ya ___ (entrar) a mi cuarto mientras yo no estaba.",
+  "options": [
+   "ha entrado",
+   "entraba",
+   "había entrado",
+   "hubiera entrado"
+  ]
+ },
+ {
+  "id": "v2607",
+  "q": "Es probable que nosotros ya ___ (perder) el último bus.",
+  "options": [
+   "perdamos",
+   "hemos perdido",
+   "hayamos perdido",
+   "hubiéramos perdido"
+  ]
+ },
+ {
+  "id": "v2610",
+  "q": "Cuando mi papá murió, yo apenas ___ (ser) un adolescente.",
+  "options": [
+   "fuera",
+   "fui",
+   "sería",
+   "era"
+  ]
+ },
+ {
+  "id": "v2613",
+  "q": "Esperamos que el paquete ya ___ (salir) de la aduana.",
+  "options": [
+   "ha salido",
+   "hubiera salido",
+   "salga",
+   "haya salido"
+  ]
+ },
+ {
+  "id": "v2616",
+  "q": "Don Jorge, ___ (llamar) a mi hijo si se le ofrece algo.",
+  "options": [
+   "llamará",
+   "no llame",
+   "llama",
+   "llame"
+  ]
+ },
+ {
+  "id": "v2619",
+  "q": "Dudo que Ricardo ___ (ver) alguna vez una película en blanco y negro.",
+  "options": [
+   "vea",
+   "hubiera visto",
+   "ha visto",
+   "haya visto"
+  ]
+ },
+ {
+  "id": "v2622",
+  "q": "Si mi suegra ___ (tomar) café, le prepararía uno.",
+  "options": [
+   "tome",
+   "tomaría",
+   "tomaba",
+   "tomara"
+  ]
+ },
+ {
+  "id": "v2625",
+  "q": "Llueve a cántaros; ___ (cocinar) hoy, mejor pidamos domicilio.",
+  "options": [
+   "cocinemos",
+   "cocinamos",
+   "no cocinemos"
+  ]
+ },
+ {
+  "id": "v2628",
+  "q": "Sin el apagón de anoche, nosotros ___ (terminar) la película.",
+  "options": [
+   "habíamos terminado",
+   "habríamos terminado",
+   "habremos terminado",
+   "terminaríamos"
+  ]
+ },
+ {
+  "id": "v2631",
+  "q": "No parece que alguien ya ___ (limpiar) la cocina.",
+  "options": [
+   "hubiera limpiado",
+   "haya limpiado",
+   "limpie",
+   "ha limpiado"
+  ]
+ },
+ {
+  "id": "v2634",
+  "q": "No me parece que ellos ___ (merecer) ese premio.",
+  "options": [
+   "merecerán",
+   "merezcan",
+   "merecieran",
+   "merecen"
+  ]
+ },
+ {
+  "id": "v2637",
+  "q": "Cuando llegues a la casa, yo ya ___ (preparar) la comida.",
+  "options": [
+   "habré preparado",
+   "habría preparado",
+   "haya preparado",
+   "prepararé"
+  ]
+ },
+ {
+  "id": "v2640",
+  "q": "Hasta que lo conocí, mi abuelo nunca ___ (ver) un computador.",
+  "options": [
+   "ha visto",
+   "hubiera visto",
+   "había visto",
+   "vio"
+  ]
+ },
+ {
+  "id": "v2643",
+  "q": "En diciembre mis primos ___ (venir) desde Bucaramanga para la novena.",
+  "options": [
+   "vengan",
+   "vendrán",
+   "vendrían"
+  ]
+ },
+ {
+  "id": "v2646",
+  "q": "Si tú ___ (hablar) más despacio, te entenderíamos mejor.",
+  "options": [
+   "hablabas",
+   "hablaras",
+   "hables",
+   "hablarías"
+  ]
+ },
+ {
+  "id": "v2649",
+  "q": "Últimamente ___ (ir) yo al gimnasio todas las mañanas.",
+  "options": [
+   "fui",
+   "he ido",
+   "haya ido",
+   "había ido"
+  ]
+ },
+ {
+  "id": "v2652",
+  "q": "Antes del examen del jueves, nosotros ya ___ (leer) los tres capítulos.",
+  "options": [
+   "habremos leído",
+   "hayamos leído",
+   "leeremos",
+   "habríamos leído"
+  ]
+ },
+ {
+  "id": "v2655",
+  "q": "Niños, ___ (tener) cuidado con la estufa caliente.",
+  "options": [
+   "tengan",
+   "no tengan",
+   "tienen",
+   "tendrán"
+  ]
+ },
+ {
+  "id": "v2658",
+  "q": "Si me hubieras llamado anoche, yo te ___ (llevar) a casa en el carro.",
+  "options": [
+   "llevaría",
+   "había llevado",
+   "habría llevado",
+   "habré llevado"
+  ]
+ },
+ {
+  "id": "v2661",
+  "q": "Estoy feliz de que ya ___ (conseguir) tu visa, Marcos.",
+  "options": [
+   "has conseguido",
+   "hubieras conseguido",
+   "hayas conseguido",
+   "consigas"
+  ]
+ },
+ {
+  "id": "v2664",
+  "q": "De haber sido tú, yo no ___ (firmar) ese contrato.",
+  "options": [
+   "firmaría",
+   "habría firmado",
+   "había firmado",
+   "habré firmado"
+  ]
+ },
+ {
+  "id": "v2667",
+  "q": "Si los precios ___ (bajar), compraríamos la casa.",
+  "options": [
+   "bajaran",
+   "bajarían",
+   "bajen",
+   "bajaban"
+  ]
+ },
+ {
+  "id": "v2670",
+  "q": "Cuando llegó la cuenta, la señora todavía no ___ (pedir) el postre.",
+  "options": [
+   "había pedido",
+   "pidió",
+   "ha pedido",
+   "hubiera pedido"
+  ]
+ },
+ {
+  "id": "v2673",
+  "q": "Chicos, ___ (venir) sin la tarea, por favor.",
+  "options": [
+   "no vengan",
+   "vengan",
+   "vienen"
+  ]
+ },
+ {
+  "id": "v2676",
+  "q": "Para el viernes yo ya ___ (terminar) el informe.",
+  "options": [
+   "habría terminado",
+   "habré terminado",
+   "terminaré",
+   "haya terminado"
+  ]
+ },
+ {
+  "id": "v2679",
+  "q": "Dicen que este fin de semana ___ (llover) en toda la región.",
+  "options": [
+   "llueva",
+   "llovería",
+   "lloverá",
+   "llovía"
+  ]
+ },
+ {
+  "id": "v2682",
+  "q": "Cuando terminó el partido, ya ___ (pasar) de las nueve.",
+  "options": [
+   "pasaría",
+   "pasó",
+   "pasaba",
+   "pasara"
+  ]
+ },
+ {
+  "id": "v2685",
+  "q": "Señores, ___ (firmar) cada hoja del contrato.",
+  "options": [
+   "no firmen",
+   "firman",
+   "firmarán",
+   "firmen"
+  ]
+ },
+ {
+  "id": "v2688",
+  "q": "Señores pasajeros, ___ (poner) sus maletas en el pasillo.",
+  "options": [
+   "ponen",
+   "pongan",
+   "no pongan"
+  ]
+ },
+ {
+  "id": "v2691",
+  "q": "Me gustaría que tú ___ (venir) a la boda de mi prima.",
+  "options": [
+   "venías",
+   "vendrías",
+   "vengas",
+   "vinieras"
+  ]
+ },
+ {
+  "id": "v2694",
+  "q": "Anunciaron que para las diez ya ___ (empezar) la ceremonia.",
+  "options": [
+   "habían empezado",
+   "habrán empezado",
+   "empezarían",
+   "habrían empezado"
+  ]
+ },
+ {
+  "id": "v2697",
+  "q": "Si Pedro me ___ (pedir) perdón, lo perdonaría.",
+  "options": [
+   "pida",
+   "pediría",
+   "pedía",
+   "pidiera"
+  ]
+ },
+ {
+  "id": "v2700",
+  "q": "Si nosotros ___ (ir) en carro, habríamos llegado más rápido.",
+  "options": [
+   "fuéramos",
+   "habíamos ido",
+   "habríamos ido",
+   "hubiéramos ido"
+  ]
+ },
+ {
+  "id": "v2703",
+  "q": "Si yo ___ (poder) hacerlo, lo habría hecho sin pensarlo.",
+  "options": [
+   "habría podido",
+   "hubiera podido",
+   "pudiera",
+   "había podido"
+  ]
+ },
+ {
+  "id": "v2706",
+  "q": "Para el domingo, tú ya ___ (aceptar) la oferta, ¿verdad?",
+  "options": [
+   "hayas aceptado",
+   "habrás aceptado",
+   "habrías aceptado",
+   "aceptarás"
+  ]
+ },
+ {
+  "id": "v2709",
+  "q": "Nos convendría que el banco ___ (abrir) más temprano.",
+  "options": [
+   "abriera",
+   "abría",
+   "abriría",
+   "abra"
+  ]
+ },
+ {
+  "id": "v2712",
+  "q": "Si trabajáramos menos horas, ___ (vivir) más tranquilos.",
+  "options": [
+   "viviéramos",
+   "viviríamos",
+   "viviremos"
+  ]
+ },
+ {
+  "id": "v2715",
+  "q": "Si nosotros no ___ (perder) el tiquete ayer, estaríamos ya en Cartagena.",
+  "options": [
+   "perdiéramos",
+   "habríamos perdido",
+   "hubiéramos perdido",
+   "habíamos perdido"
+  ]
+ },
+ {
+  "id": "v2718",
+  "q": "Si pudiera elegir, yo ___ (vivir) cerca del mar.",
+  "options": [
+   "viviera",
+   "viviría",
+   "viviré"
+  ]
+ },
+ {
+  "id": "v2721",
+  "q": "Quédate en la casa hasta que la tormenta ___ (pasar).",
+  "options": [
+   "pasara",
+   "pase",
+   "pasará",
+   "pasa"
+  ]
+ },
+ {
+  "id": "v2724",
+  "q": "Hasta el momento yo no ___ (recibir) ninguna respuesta.",
+  "options": [
+   "he recibido",
+   "recibí",
+   "haya recibido",
+   "había recibido"
+  ]
+ },
+ {
+  "id": "v2727",
+  "q": "Niños, ___ (gritar) en la biblioteca.",
+  "options": [
+   "no griten",
+   "gritan",
+   "griten"
+  ]
+ },
+ {
+  "id": "v2730",
+  "q": "Cuando Valentina quiso explicarme, su hermano ya me lo ___ (decir) todo.",
+  "options": [
+   "había dicho",
+   "hubiera dicho",
+   "ha dicho",
+   "decía"
+  ]
+ },
+ {
+  "id": "v2733",
+  "q": "Si sigue así, para el lunes mi jefe ya ___ (perder) la paciencia.",
+  "options": [
+   "perderá",
+   "haya perdido",
+   "habrá perdido",
+   "habría perdido"
+  ]
+ },
+ {
+  "id": "v2736",
+  "q": "Yo ___ (volver) a casa a pie porque la oficina queda cerca.",
+  "options": [
+   "volví",
+   "vuelva",
+   "vuelvo",
+   "volvía"
+  ]
+ },
+ {
+  "id": "v2739",
+  "q": "Mi cuaderno no está en el bolso; ni idea, lo ___ (sacar) sin darme cuenta.",
+  "options": [
+   "habré sacado",
+   "sacaré",
+   "haya sacado",
+   "habría sacado"
+  ]
+ },
+ {
+  "id": "v2742",
+  "q": "Con mejor clima el fin de semana pasado, ___ (poder) ir al lago.",
+  "options": [
+   "habríamos podido",
+   "podríamos",
+   "habremos podido",
+   "habíamos podido"
+  ]
+ },
+ {
+  "id": "v2745",
+  "q": "Chicos, ___ (decir) la verdad, ¿quién rompió el vidrio?",
+  "options": [
+   "dirán",
+   "digan",
+   "dicen",
+   "no digan"
+  ]
+ },
+ {
+  "id": "v2748",
+  "q": "Mi jefe nunca ___ (responder) correos antes de las nueve; no te preocupes.",
+  "options": [
+   "respondía",
+   "responde",
+   "respondió",
+   "responda"
+  ]
+ },
+ {
+  "id": "v2751",
+  "q": "La profe sonríe mucho hoy; ___ (traer) buenas noticias.",
+  "options": [
+   "traería",
+   "traía",
+   "traerá",
+   "traiga"
+  ]
+ },
+ {
+  "id": "v2754",
+  "q": "Celebramos todos juntos si nosotros ___ (ganar) el partido.",
+  "options": [
+   "ganemos",
+   "ganaremos",
+   "ganamos",
+   "ganáramos"
+  ]
+ },
+ {
+  "id": "v2757",
+  "q": "Valentina nunca ___ (montar) a caballo.",
+  "options": [
+   "ha montado",
+   "montó",
+   "había montado",
+   "haya montado"
+  ]
+ },
+ {
+  "id": "v2760",
+  "q": "Ya ___ (pasar) de las diez cuando por fin llegaron los invitados.",
+  "options": [
+   "pasó",
+   "pasara",
+   "pasaría",
+   "pasaba"
+  ]
+ },
+ {
+  "id": "v2763",
+  "q": "Dijeron que para diciembre ya ___ (abrir) el nuevo centro comercial.",
+  "options": [
+   "habrá abierto",
+   "había abierto",
+   "abriría",
+   "habría abierto"
+  ]
+ },
+ {
+  "id": "v2766",
+  "q": "Sobró mucha comida; ni idea, ___ (preparar) demasiado.",
+  "options": [
+   "habríamos preparado",
+   "hayamos preparado",
+   "prepararemos",
+   "habremos preparado"
+  ]
+ },
+ {
+  "id": "v2769",
+  "q": "Señor, ___ (dar) su cédula en la ventanilla.",
+  "options": [
+   "dará",
+   "da",
+   "no dé",
+   "dé"
+  ]
+ },
+ {
+  "id": "v2772",
+  "q": "Si los dueños hubieran sabido, ___ (pagar) la cuenta de la luz.",
+  "options": [
+   "habrán pagado",
+   "pagarían",
+   "habían pagado",
+   "habrían pagado"
+  ]
+ },
+ {
+  "id": "v2775",
+  "q": "Yo que mi hermana, ___ (estudiar) otra carrera.",
+  "options": [
+   "estudiara",
+   "estudiaré",
+   "estudiaría"
+  ]
+ },
+ {
+  "id": "v2778",
+  "q": "En lo que va del año, nosotros ___ (firmar) tres contratos grandes.",
+  "options": [
+   "hayamos firmado",
+   "hemos firmado",
+   "habíamos firmado",
+   "firmamos"
+  ]
+ },
+ {
+  "id": "v2781",
+  "q": "Cuando ya ___ (recoger) los platos, apagamos la luz.",
+  "options": [
+   "recojamos",
+   "hayamos recogido",
+   "hubiéramos recogido",
+   "hemos recogido"
+  ]
+ },
+ {
+  "id": "v2784",
+  "q": "Cuando ya ___ (volver) todos de vacaciones, hacemos la reunión.",
+  "options": [
+   "hayan vuelto",
+   "vuelvan",
+   "hubieran vuelto",
+   "han vuelto"
+  ]
+ },
+ {
+  "id": "v2787",
+  "q": "Felipe, ___ (mirar) esto, qué increíble.",
+  "options": [
+   "mires",
+   "no mires",
+   "mira",
+   "miras"
+  ]
+ },
+ {
+  "id": "v2790",
+  "q": "Si yo me ___ (casar) a los veinte, hoy tendría hijos grandes.",
+  "options": [
+   "habría casado",
+   "casara",
+   "hubiera casado",
+   "había casado"
+  ]
+ },
+ {
+  "id": "v2793",
+  "q": "Mi abuela no encuentra las gafas; se ___ (quedar) en la cocina.",
+  "options": [
+   "queden",
+   "quedarán",
+   "quedaban",
+   "quedarían"
+  ]
+ },
+ {
+  "id": "v2796",
+  "q": "Si tú ___ (ir) al médico la semana pasada, no estarías peor ahora.",
+  "options": [
+   "habrías ido",
+   "hubieras ido",
+   "fueras",
+   "habías ido"
+  ]
+ },
+ {
+  "id": "v2799",
+  "q": "Señores, ___ (tomar) asiento, por favor.",
+  "options": [
+   "tomen",
+   "no tomen",
+   "toman",
+   "tomarán"
+  ]
+ },
+ {
+  "id": "v2802",
+  "q": "Si llamas ahora, la doctora te ___ (dar) la cita hoy mismo.",
+  "options": [
+   "dará",
+   "dé",
+   "daría",
+   "daba"
+  ]
+ },
+ {
+  "id": "v2805",
+  "q": "Hay gritos en el estadio; no sé, los locales ___ (ganar).",
+  "options": [
+   "ganarán",
+   "hayan ganado",
+   "habrán ganado",
+   "habrían ganado"
+  ]
+ },
+ {
+  "id": "v2808",
+  "q": "Dudo que tú ya ___ (poner) la mesa; no oigo nada.",
+  "options": [
+   "has puesto",
+   "hubieras puesto",
+   "hayas puesto",
+   "pongas"
+  ]
+ },
+ {
+  "id": "v2811",
+  "q": "Felipe, ___ (llamar) a Rosa tan tarde; ya está durmiendo.",
+  "options": [
+   "llama",
+   "no llames",
+   "llames",
+   "llamas"
+  ]
+ },
+ {
+  "id": "v2814",
+  "q": "Lleva una chaqueta en caso de que ___ (hacer) frío en la noche.",
+  "options": [
+   "haga",
+   "hace",
+   "hiciera",
+   "hará"
+  ]
+ },
+ {
+  "id": "v2817",
+  "q": "Dijiste que ya me ___ (devolver) el libro, pero no lo tengo.",
+  "options": [
+   "habías devuelto",
+   "devolvías",
+   "has devuelto",
+   "hubieras devuelto"
+  ]
+ },
+ {
+  "id": "v2820",
+  "q": "¿Ya ___ (pagar) ustedes todas las cuotas del carro?",
+  "options": [
+   "habían pagado",
+   "han pagado",
+   "pagaron",
+   "hayan pagado"
+  ]
+ },
+ {
+  "id": "v2823",
+  "q": "El domingo pasado yo ___ (cocinar) para quince personas.",
+  "options": [
+   "cocinaba",
+   "he cocinado",
+   "cociné",
+   "cocino"
+  ]
+ },
+ {
+  "id": "v2826",
+  "q": "Cuando empecé a trabajar aquí, ___ (faltar) poco para Navidad.",
+  "options": [
+   "faltaría",
+   "faltó",
+   "faltaba",
+   "faltara"
+  ]
+ },
+ {
+  "id": "v2829",
+  "q": "Mi hermana me suplicó que le ___ (prestar) el celular.",
+  "options": [
+   "prestara",
+   "preste",
+   "prestaba",
+   "prestaría"
+  ]
+ },
+ {
+  "id": "v2832",
+  "q": "___ (ser) las diez cuando mi papá llegó a la casa.",
+  "options": [
+   "serían",
+   "serán",
+   "eran"
+  ]
+ },
+ {
+  "id": "v2835",
+  "q": "Después de esta cirugía, tu abuelo ___ (caminar) mucho mejor.",
+  "options": [
+   "camine",
+   "caminaba",
+   "caminaría",
+   "caminará"
+  ]
+ },
+ {
+  "id": "v2838",
+  "q": "Buenas tardes, me ___ (gustar) un jugo de mora, por favor.",
+  "options": [
+   "gustará",
+   "gustaba",
+   "gustaría"
+  ]
+ },
+ {
+  "id": "v2841",
+  "q": "Los vecinos peleaban cuando ___ (llegar) la policía.",
+  "options": [
+   "ha llegado",
+   "llegaba",
+   "llega",
+   "llegó"
+  ]
+ },
+ {
+  "id": "v2844",
+  "q": "La semana pasada tú ___ (sacar) la mejor nota del curso.",
+  "options": [
+   "has sacado",
+   "sacabas",
+   "sacas",
+   "sacaste"
+  ]
+ },
+ {
+  "id": "v2847",
+  "q": "No había ninguna casa que nos ___ (gustar) en esa zona.",
+  "options": [
+   "gustaría",
+   "guste",
+   "gustaba",
+   "gustara"
+  ]
+ },
+ {
+  "id": "v2850",
+  "q": "Cocinaron como si ya ___ (hacer) esa receta cien veces.",
+  "options": [
+   "habían hecho",
+   "habrían hecho",
+   "hicieran",
+   "hubieran hecho"
+  ]
+ },
+ {
+  "id": "v2853",
+  "q": "Si tú ___ (dar) un paso más, te caerías.",
+  "options": [
+   "des",
+   "dieras",
+   "dabas",
+   "darías"
+  ]
+ },
+ {
+  "id": "v2856",
+  "q": "Nadie contesta el timbre; quién sabe, todos se ___ (dormir) temprano.",
+  "options": [
+   "habrán dormido",
+   "habrían dormido",
+   "hayan dormido",
+   "dormirán"
+  ]
+ },
+ {
+  "id": "v2859",
+  "q": "Niños, ___ (guardar) los juguetes antes de acostarse.",
+  "options": [
+   "guardarán",
+   "no guarden",
+   "guarden",
+   "guardan"
+  ]
+ },
+ {
+  "id": "v2862",
+  "q": "Pagaré la cuenta sin que ustedes lo ___ (notar).",
+  "options": [
+   "notarán",
+   "notaran",
+   "noten",
+   "notan"
+  ]
+ },
+ {
+  "id": "v2865",
+  "q": "No había nadie que ___ (saber) arreglar la nevera.",
+  "options": [
+   "sabría",
+   "sabía",
+   "supiera",
+   "sepa"
+  ]
+ },
+ {
+  "id": "v2868",
+  "q": "Dudo que para cuando lleguemos ya ___ (abrir) el museo.",
+  "options": [
+   "hubiera abierto",
+   "haya abierto",
+   "abra",
+   "ha abierto"
+  ]
+ },
+ {
+  "id": "v2871",
+  "q": "Mi mamá preguntó si yo ya ___ (hacer) la tarea.",
+  "options": [
+   "había hecho",
+   "hubiera hecho",
+   "hacía",
+   "he hecho"
+  ]
+ },
+ {
+  "id": "v2874",
+  "q": "Niños, ___ (comer) todo, que mañana hay colegio.",
+  "options": [
+   "coman",
+   "no coman",
+   "comen",
+   "comerán"
+  ]
+ },
+ {
+  "id": "v2877",
+  "q": "Estudiaba para el examen cuando mi hermano ___ (entrar) y apagó la luz.",
+  "options": [
+   "entró",
+   "entra",
+   "entraba",
+   "ha entrado"
+  ]
+ },
+ {
+  "id": "v2880",
+  "q": "Si usted ___ (ver) a Marta, dígale que me llame.",
+  "options": [
+   "verá",
+   "viera",
+   "ve",
+   "vea"
+  ]
+ },
+ {
+  "id": "v2883",
+  "q": "Los niños no querían dormir porque ___ (haber) tormenta afuera.",
+  "options": [
+   "hubo",
+   "hubiera",
+   "había",
+   "habría"
+  ]
+ },
+ {
+  "id": "v2886",
+  "q": "El jefe está de mal humor; ___ (pedir) permiso hoy, esperemos al lunes.",
+  "options": [
+   "no pidamos",
+   "pidamos",
+   "pedimos"
+  ]
+ },
+ {
+  "id": "v2889",
+  "q": "Si mi mamá viviera aquí, nos ___ (traer) arepas cada semana.",
+  "options": [
+   "traería",
+   "traerá",
+   "trajera"
+  ]
+ },
+ {
+  "id": "v2892",
+  "q": "Nosotros ___ (hablar) de ti justo cuando entraste.",
+  "options": [
+   "hablaríamos",
+   "hablábamos",
+   "hablamos",
+   "habláramos"
+  ]
+ },
+ {
+  "id": "v2895",
+  "q": "Todos los veranos mis primos ___ (venir) a pasar un mes con nosotros.",
+  "options": [
+   "vendrían",
+   "venían",
+   "vinieron",
+   "vinieran"
+  ]
+ },
+ {
+  "id": "v2898",
+  "q": "Mi abuelo ya ___ (andar) por los ochenta cuando lo conocí.",
+  "options": [
+   "anduvo",
+   "andaría",
+   "andaba",
+   "anduviera"
+  ]
+ },
+ {
+  "id": "v2901",
+  "q": "Valentina no me saludó; no sé, se ___ (molestar) conmigo.",
+  "options": [
+   "habría molestado",
+   "molestará",
+   "habrá molestado",
+   "haya molestado"
+  ]
+ },
+ {
+  "id": "v2904",
+  "q": "Los estudiantes se ven confundidos; ni idea, ___ (entender) mal la tarea.",
+  "options": [
+   "habrán entendido",
+   "entenderán",
+   "habrían entendido",
+   "hayan entendido"
+  ]
+ },
+ {
+  "id": "v2907",
+  "q": "Si la policía hubiera visto las fotos, ___ (creer) en su historia.",
+  "options": [
+   "creería",
+   "habría creído",
+   "habrá creído",
+   "había creído"
+  ]
+ },
+ {
+  "id": "v2910",
+  "q": "Voy a lavar los platos antes de que tú ___ (volver) de la tienda.",
+  "options": [
+   "volverás",
+   "volvieras",
+   "vuelves",
+   "vuelvas"
+  ]
+ },
+ {
+  "id": "v2913",
+  "q": "Busco una amiga que ya ___ (sufrir) un divorcio.",
+  "options": [
+   "sufra",
+   "hubiera sufrido",
+   "ha sufrido",
+   "haya sufrido"
+  ]
+ },
+ {
+  "id": "v2916",
+  "q": "Es raro que Mateo no ___ (decir) nada hasta ahora.",
+  "options": [
+   "diga",
+   "ha dicho",
+   "hubiera dicho",
+   "haya dicho"
+  ]
+ },
+ {
+  "id": "v2919",
+  "q": "Si Laura ___ (nacer) en Cartagena, habría crecido junto al mar.",
+  "options": [
+   "naciera",
+   "había nacido",
+   "habría nacido",
+   "hubiera nacido"
+  ]
+ },
+ {
+  "id": "v2922",
+  "q": "Cuando entré al cuarto, mi hijo todavía no se ___ (despertar).",
+  "options": [
+   "despertó",
+   "hubiera despertado",
+   "ha despertado",
+   "había despertado"
+  ]
+ },
+ {
+  "id": "v2925",
+  "q": "Si hubiera habido más voluntarios, ___ (empezar) la obra en marzo.",
+  "options": [
+   "empezaríamos",
+   "habíamos empezado",
+   "habremos empezado",
+   "habríamos empezado"
+  ]
+ },
+ {
+  "id": "v2928",
+  "q": "Paula, ___ (mover) tu bolso, que no cabe aquí.",
+  "options": [
+   "muevas",
+   "no muevas",
+   "mueves",
+   "mueve"
+  ]
+ },
+ {
+  "id": "v2931",
+  "q": "Si hubieras manejado más despacio, no ___ (pasar) nada.",
+  "options": [
+   "habrías pasado",
+   "habrás pasado",
+   "habías pasado",
+   "pasarías"
+  ]
+ },
+ {
+  "id": "v2934",
+  "q": "Yo ___ (dar) clases de inglés los martes y jueves; hoy es martes.",
+  "options": [
+   "daba",
+   "dé",
+   "doy",
+   "di"
+  ]
+ },
+ {
+  "id": "v2937",
+  "q": "El entrenador manda que los jugadores ___ (correr) cinco vueltas.",
+  "options": [
+   "correrán",
+   "corrieran",
+   "corran",
+   "corren"
+  ]
+ },
+ {
+  "id": "v2940",
+  "q": "Mi vida, ___ (dormir) un rato, estás agotada.",
+  "options": [
+   "no duermas",
+   "duerme",
+   "duermas",
+   "duermes"
+  ]
+ },
+ {
+  "id": "v2943",
+  "q": "Yo que ustedes, ___ (salir) más temprano para evitar el trancón.",
+  "options": [
+   "saldría",
+   "saliera",
+   "saldré"
+  ]
+ },
+ {
+  "id": "v2946",
+  "q": "Pensábamos que para el mediodía los obreros ya ___ (acabar) el piso.",
+  "options": [
+   "habrían acabado",
+   "habrán acabado",
+   "habían acabado",
+   "acabarían"
+  ]
+ },
+ {
+  "id": "v2949",
+  "q": "En cuanto sepamos algo, les ___ (mandar) un mensaje.",
+  "options": [
+   "mandemos",
+   "mandaremos",
+   "mandaríamos"
+  ]
+ },
+ {
+  "id": "v2952",
+  "q": "Yo que ustedes, no ___ (manejar) con esta lluvia.",
+  "options": [
+   "manejara",
+   "manejaría",
+   "manejaré"
+  ]
+ },
+ {
+  "id": "v2955",
+  "q": "Creí que tú ___ (venir) con nosotros a la fiesta.",
+  "options": [
+   "venías",
+   "vendrías",
+   "vendrás"
+  ]
+ },
+ {
+  "id": "v2958",
+  "q": "Es necesario que para entonces los técnicos ya ___ (instalar) el sistema.",
+  "options": [
+   "hayan instalado",
+   "han instalado",
+   "hubieran instalado",
+   "instalen"
+  ]
+ },
+ {
+  "id": "v2961",
+  "q": "Si Camilo ___ (estudiar) más, habría aprobado el examen.",
+  "options": [
+   "hubiera estudiado",
+   "había estudiado",
+   "habría estudiado",
+   "estudiara"
+  ]
+ },
+ {
+  "id": "v2964",
+  "q": "Ojalá tú ___ (hacer) caso a los médicos hace años.",
+  "options": [
+   "hubieras hecho",
+   "habrías hecho",
+   "habías hecho",
+   "hicieras"
+  ]
+ },
+ {
+  "id": "v2967",
+  "q": "Nosotros ___ (pensar) en renunciar cuando nuestro jefe nos ofreció un ascenso.",
+  "options": [
+   "pensaríamos",
+   "pensábamos",
+   "pensamos",
+   "pensáramos"
+  ]
+ },
+ {
+  "id": "v2970",
+  "q": "Yo no ___ (pensar) en renunciar si mi jefe me hubiera escuchado.",
+  "options": [
+   "pensaría",
+   "habré pensado",
+   "habría pensado",
+   "había pensado"
+  ]
+ },
+ {
+  "id": "v2973",
+  "q": "Daniel, ___ (poner) los pies en la mesa.",
+  "options": [
+   "pones",
+   "pon",
+   "no pongas",
+   "pongas"
+  ]
+ },
+ {
+  "id": "v2976",
+  "q": "Si mi hijo hubiera tenido miedo, ___ (volver) a casa corriendo.",
+  "options": [
+   "habría vuelto",
+   "volvería",
+   "habrá vuelto",
+   "había vuelto"
+  ]
+ },
+ {
+  "id": "v2979",
+  "q": "Tú comes como si no ___ (comer) desde ayer.",
+  "options": [
+   "comieras",
+   "comas",
+   "comías",
+   "comerías"
+  ]
+ },
+ {
+  "id": "v2982",
+  "q": "Ayer a las cinco tú ___ (salir) de la oficina más temprano que de costumbre.",
+  "options": [
+   "has salido",
+   "saliste",
+   "salías",
+   "sales"
+  ]
+ },
+ {
+  "id": "v2985",
+  "q": "Señora, ___ (cruzar) la calle con el semáforo en rojo.",
+  "options": [
+   "cruce",
+   "cruza",
+   "no cruce"
+  ]
+ },
+ {
+  "id": "v2988",
+  "q": "Si nos mudáramos a Pereira, mis hijos ___ (crecer) en un lugar más tranquilo.",
+  "options": [
+   "crecerán",
+   "crecieran",
+   "crecerían"
+  ]
+ },
+ {
+  "id": "v2991",
+  "q": "Creímos que ellos ya ___ (llegar) al hotel, pero seguían en el bus.",
+  "options": [
+   "llegaban",
+   "han llegado",
+   "hubieran llegado",
+   "habían llegado"
+  ]
+ },
+ {
+  "id": "v2994",
+  "q": "Muchachos, ___ (poner) sus maletas aquí.",
+  "options": [
+   "no pongan",
+   "ponen",
+   "pondrán",
+   "pongan"
+  ]
+ },
+ {
+  "id": "v2997",
+  "q": "Mi equipo ___ (ganar) el campeonato este año, ya verás.",
+  "options": [
+   "ganaría",
+   "ganaba",
+   "gane",
+   "ganará"
+  ]
+ },
+ {
+  "id": "v3000",
+  "q": "Si no hubieras tomado tanto café, ___ (dormir) bien anoche.",
+  "options": [
+   "habrás dormido",
+   "habías dormido",
+   "dormirías",
+   "habrías dormido"
+  ]
+ },
+ {
+  "id": "v3003",
+  "q": "Aunque me ___ (ofrecer) el doble, no vendo mi finca.",
+  "options": [
+   "ofrecieran",
+   "ofrecerán",
+   "ofrecen",
+   "ofrezcan"
+  ]
+ },
+ {
+  "id": "v3006",
+  "q": "Disculpa, ¿tú ___ (saber) cómo llegar al Parque Simón Bolívar desde aquí?",
+  "options": [
+   "sabías",
+   "sepas",
+   "sabes",
+   "supiste"
+  ]
+ },
+ {
+  "id": "v3009",
+  "q": "Es importante que tú ___ (tomar) agua durante el partido.",
+  "options": [
+   "tomarás",
+   "tomaras",
+   "tomes",
+   "tomas"
+  ]
+ },
+ {
+  "id": "v3012",
+  "q": "Qué pena que yo no ___ (poder) ir a tu boda.",
+  "options": [
+   "podré",
+   "pueda",
+   "pudiera",
+   "puedo"
+  ]
+ },
+ {
+  "id": "v3015",
+  "q": "Si los vecinos ___ (poner) la denuncia, la policía habría venido.",
+  "options": [
+   "habrían puesto",
+   "hubieran puesto",
+   "pusieran",
+   "habían puesto"
+  ]
+ },
+ {
+  "id": "v3018",
+  "q": "Si los niños ___ (dormir) la siesta, tendríamos un rato tranquilo.",
+  "options": [
+   "durmieran",
+   "duerman",
+   "dormían",
+   "dormirían"
+  ]
+ },
+ {
+  "id": "v3021",
+  "q": "Señor conductor, ___ (parar) en la próxima, por favor.",
+  "options": [
+   "pare",
+   "parará",
+   "no pare",
+   "para"
+  ]
+ },
+ {
+  "id": "v3024",
+  "q": "Es una buena señal que ya ___ (bajar) la fiebre.",
+  "options": [
+   "ha bajado",
+   "hubiera bajado",
+   "haya bajado",
+   "baje"
+  ]
+ },
+ {
+  "id": "v3027",
+  "q": "Hace dos veranos nosotros ___ (pasar) un mes entero en la costa.",
+  "options": [
+   "hemos pasado",
+   "pasamos",
+   "pasábamos"
+  ]
+ },
+ {
+  "id": "v3030",
+  "q": "Mis papás nunca me ___ (gritar) delante de mis amigos.",
+  "options": [
+   "gritaron",
+   "han gritado",
+   "hayan gritado",
+   "habían gritado"
+  ]
+ },
+ {
+  "id": "v3033",
+  "q": "Quizás el vuelo se ___ (retrasar), pero no hay certeza.",
+  "options": [
+   "retrase",
+   "retrasa",
+   "retrasara",
+   "retrasará"
+  ]
+ },
+ {
+  "id": "v3036",
+  "q": "El doctor te aconseja que ___ (dejar) el cigarrillo ya mismo.",
+  "options": [
+   "dejes",
+   "dejarás",
+   "dejas",
+   "dejaras"
+  ]
+ },
+ {
+  "id": "v3039",
+  "q": "Quedaste en que para el jueves tú ya me ___ (escribir) el informe.",
+  "options": [
+   "habías escrito",
+   "habrías escrito",
+   "escribirías",
+   "habrás escrito"
+  ]
+ },
+ {
+  "id": "v3042",
+  "q": "Ellos ___ (jugar) cartas cuando entró la policía.",
+  "options": [
+   "jugaron",
+   "jugarían",
+   "jugaban",
+   "jugaran"
+  ]
+ },
+ {
+  "id": "v3045",
+  "q": "Cada diciembre nosotros ___ (viajar) a Pereira a ver a los abuelos.",
+  "options": [
+   "viajamos",
+   "viajaríamos",
+   "viajábamos",
+   "viajáramos"
+  ]
+ },
+ {
+  "id": "v3048",
+  "q": "Hasta ahora, la profesora nunca nos ___ (dejar) tarea de fin de semana.",
+  "options": [
+   "ha dejado",
+   "dejó",
+   "había dejado",
+   "haya dejado"
+  ]
+ },
+ {
+  "id": "v3051",
+  "q": "Yo ya ___ (terminar) la tarea cuando mi mamá me pidió ayuda.",
+  "options": [
+   "había terminado",
+   "he terminado",
+   "terminaba",
+   "hubiera terminado"
+  ]
+ },
+ {
+  "id": "v3054",
+  "q": "Oigo una moto afuera; ___ (llegar) mi sobrino.",
+  "options": [
+   "llegaba",
+   "llegará",
+   "llegaría",
+   "llegue"
+  ]
+ },
+ {
+  "id": "v3057",
+  "q": "Me miró como si nunca me ___ (ver) en la vida.",
+  "options": [
+   "viera",
+   "hubiera visto",
+   "había visto",
+   "habría visto"
+  ]
+ },
+ {
+  "id": "v3060",
+  "q": "Doctor, ¿___ (poder) explicarme otra vez los resultados?",
+  "options": [
+   "podrá",
+   "podía",
+   "podría"
+  ]
+ },
+ {
+  "id": "v3063",
+  "q": "Los niños ___ (dormir) cuando empezó la tormenta.",
+  "options": [
+   "dormirían",
+   "durmieron",
+   "durmieran",
+   "dormían"
+  ]
+ },
+ {
+  "id": "v3066",
+  "q": "Si hoy ___ (llover), cancelaríamos el paseo.",
+  "options": [
+   "llueva",
+   "llovería",
+   "llovía",
+   "lloviera"
+  ]
+ },
+ {
+  "id": "v3069",
+  "q": "En tu lugar, yo no ___ (dejar) el trabajo todavía.",
+  "options": [
+   "dejara",
+   "dejaré",
+   "dejaría"
+  ]
+ },
+ {
+  "id": "v3072",
+  "q": "Ana dudaba que el bus ___ (llegar) a tiempo.",
+  "options": [
+   "llegue",
+   "llegaría",
+   "llegaba",
+   "llegara"
+  ]
+ },
+ {
+  "id": "v3075",
+  "q": "Yo veía televisión cuando ___ (sonar) el teléfono.",
+  "options": [
+   "ha sonado",
+   "suena",
+   "sonaba",
+   "sonó"
+  ]
+ },
+ {
+  "id": "v3078",
+  "q": "Mi mamá quería que nosotros ___ (comer) en su casa los domingos.",
+  "options": [
+   "comeríamos",
+   "comíamos",
+   "comamos",
+   "comiéramos"
+  ]
+ },
+ {
+  "id": "v3081",
+  "q": "Estudiantes, ___ (escribir) un párrafo corto sobre su familia.",
+  "options": [
+   "escribirán",
+   "no escriban",
+   "escriban",
+   "escriben"
+  ]
+ },
+ {
+  "id": "v3084",
+  "q": "El profesor parecía enojado y ___ (gritar) a todos.",
+  "options": [
+   "gritara",
+   "gritaría",
+   "gritaba",
+   "gritó"
+  ]
+ },
+ {
+  "id": "v3087",
+  "q": "Hacía la tarea cuando mis amigos me ___ (invitar) a jugar fútbol.",
+  "options": [
+   "invitan",
+   "invitaron",
+   "han invitado",
+   "invitaban"
+  ]
+ },
+ {
+  "id": "v3090",
+  "q": "Me emociona que mi hija ya ___ (escribir) su primer cuento.",
+  "options": [
+   "haya escrito",
+   "hubiera escrito",
+   "escriba",
+   "ha escrito"
+  ]
+ },
+ {
+  "id": "v3093",
+  "q": "Yo de ti, ___ (preguntar) al profesor antes del examen.",
+  "options": [
+   "preguntaría",
+   "preguntara",
+   "preguntaré"
+  ]
+ },
+ {
+  "id": "v3096",
+  "q": "Esta mañana mis hermanos ___ (salir) sin desayunar.",
+  "options": [
+   "salieron",
+   "han salido",
+   "salen",
+   "salían"
+  ]
+ },
+ {
+  "id": "v3099",
+  "q": "Pedro no contesta desde anoche; no sé, ___ (dejar) el celular apagado.",
+  "options": [
+   "dejará",
+   "haya dejado",
+   "habrá dejado",
+   "habría dejado"
+  ]
+ },
+ {
+  "id": "v3102",
+  "q": "Para las seis de la tarde, nosotros ya ___ (hacer) todas las compras.",
+  "options": [
+   "haremos",
+   "hayamos hecho",
+   "habremos hecho",
+   "habríamos hecho"
+  ]
+ },
+ {
+  "id": "v3105",
+  "q": "Doctor Pérez, ___ (apagar) el celular; estamos en cirugía.",
+  "options": [
+   "no apague",
+   "apaga",
+   "apague"
+  ]
+ },
+ {
+  "id": "v3108",
+  "q": "Cuando te presenté a Laura, tú ya la ___ (conocer) en la universidad.",
+  "options": [
+   "habías conocido",
+   "has conocido",
+   "hubieras conocido",
+   "conocías"
+  ]
+ },
+ {
+  "id": "v3111",
+  "q": "Yo esperaba el semáforo cuando un amigo me ___ (saludar) desde el otro lado.",
+  "options": [
+   "saludó",
+   "saluda",
+   "saludaba",
+   "ha saludado"
+  ]
+ },
+ {
+  "id": "v3114",
+  "q": "Mis abuelos no ___ (conocer) internet cuando eran jóvenes.",
+  "options": [
+   "conocieran",
+   "conocían",
+   "conocieron",
+   "conocerían"
+  ]
+ },
+ {
+  "id": "v3117",
+  "q": "Necesito un apartamento que ___ (quedar) cerca del trabajo.",
+  "options": [
+   "queda",
+   "quedará",
+   "quede",
+   "quedara"
+  ]
+ },
+ {
+  "id": "v3120",
+  "q": "Si yo ___ (tomar) el vuelo de esta mañana, ya estaría en casa.",
+  "options": [
+   "tomara",
+   "había tomado",
+   "hubiera tomado",
+   "habría tomado"
+  ]
+ },
+ {
+  "id": "v3123",
+  "q": "Ojalá yo ___ (tocar) la guitarra tan bien como Andrés.",
+  "options": [
+   "tocara",
+   "toque",
+   "tocaba",
+   "tocaría"
+  ]
+ },
+ {
+  "id": "v3126",
+  "q": "Me da pena que tantos negocios ya ___ (cerrar) en este barrio.",
+  "options": [
+   "hayan cerrado",
+   "han cerrado",
+   "cierren",
+   "hubieran cerrado"
+  ]
+ },
+ {
+  "id": "v3129",
+  "q": "El año que viene yo ___ (entrar) a la universidad.",
+  "options": [
+   "entraba",
+   "entro",
+   "entré",
+   "entre"
+  ]
+ },
+ {
+  "id": "v3132",
+  "q": "Cuando ya ___ (hablar) con tu jefe, dime qué te dijo.",
+  "options": [
+   "hables",
+   "hayas hablado",
+   "has hablado",
+   "hubieras hablado"
+  ]
+ },
+ {
+  "id": "v3135",
+  "q": "Es probable que Ana ya ___ (regresar) a la casa.",
+  "options": [
+   "regrese",
+   "ha regresado",
+   "haya regresado",
+   "hubiera regresado"
+  ]
+ },
+ {
+  "id": "v3138",
+  "q": "Sofía, ___ (correr) por el pasillo, que te vas a caer.",
+  "options": [
+   "corres",
+   "corre",
+   "corras",
+   "no corras"
+  ]
+ },
+ {
+  "id": "v3141",
+  "q": "Ojalá ___ (haber) más tiempo en el día para todo.",
+  "options": [
+   "habría",
+   "haya",
+   "había",
+   "hubiera"
+  ]
+ },
+ {
+  "id": "v3144",
+  "q": "Desde que empezó el curso, tú ___ (aprender) muchísimo.",
+  "options": [
+   "aprendiste",
+   "hayas aprendido",
+   "habías aprendido",
+   "has aprendido"
+  ]
+ },
+ {
+  "id": "v3147",
+  "q": "Lucía está muy seria; no sé, se ___ (enterar) de algo.",
+  "options": [
+   "habría enterado",
+   "haya enterado",
+   "enterará",
+   "habrá enterado"
+  ]
+ },
+ {
+  "id": "v3150",
+  "q": "Tú ___ (leer) el mismo libro desde hace dos semanas.",
+  "options": [
+   "leas",
+   "leías",
+   "leíste",
+   "lees"
+  ]
+ },
+ {
+  "id": "v3153",
+  "q": "Cuando mis papás vean mi nota, ___ (decir) que valió la pena.",
+  "options": [
+   "dirían",
+   "digan",
+   "dirán"
+  ]
+ },
+ {
+  "id": "v3156",
+  "q": "Qué bueno que ustedes ___ (poder) venir mañana.",
+  "options": [
+   "podrán",
+   "pudieran",
+   "puedan",
+   "pueden"
+  ]
+ },
+ {
+  "id": "v3159",
+  "q": "Profesora, ___ (cancelar) la clase; todos venimos a estudiar.",
+  "options": [
+   "cancela",
+   "cancele",
+   "no cancele"
+  ]
+ },
+ {
+  "id": "v3162",
+  "q": "Los músicos tocaban mientras la gente ___ (comer).",
+  "options": [
+   "comiera",
+   "comía",
+   "comería",
+   "comió"
+  ]
+ },
+ {
+  "id": "v3165",
+  "q": "A los veinte años nosotros ___ (vivir) solos y pagábamos nuestro propio arriendo.",
+  "options": [
+   "vivíamos",
+   "viviríamos",
+   "viviéramos",
+   "vivimos"
+  ]
+ },
+ {
+  "id": "v3168",
+  "q": "Si ganáramos la lotería, nosotros ___ (viajar) por toda Suramérica.",
+  "options": [
+   "viajáramos",
+   "viajaríamos",
+   "viajaremos"
+  ]
+ },
+ {
+  "id": "v3171",
+  "q": "Ojalá no ___ (llover) ayer; el paseo habría sido perfecto.",
+  "options": [
+   "habría llovido",
+   "lloviera",
+   "hubiera llovido",
+   "había llovido"
+  ]
+ },
+ {
+  "id": "v3174",
+  "q": "Cuando éramos novios, él me ___ (mandar) flores cada semana.",
+  "options": [
+   "mandó",
+   "mandara",
+   "mandaba",
+   "mandaría"
+  ]
+ },
+ {
+  "id": "v3177",
+  "q": "Laura, ___ (tener) paciencia, ya casi llegamos.",
+  "options": [
+   "tienes",
+   "ten",
+   "no tengas",
+   "tengas"
+  ]
+ },
+ {
+  "id": "v3180",
+  "q": "Para cuando salgas de clase, ya ___ (empezar) a llover.",
+  "options": [
+   "habrá empezado",
+   "empezará",
+   "haya empezado",
+   "habría empezado"
+  ]
+ },
+ {
+  "id": "v3183",
+  "q": "Mi mamá quería que yo me ___ (poner) un abrigo.",
+  "options": [
+   "pusiera",
+   "pondría",
+   "ponga",
+   "ponía"
+  ]
+ },
+ {
+  "id": "v3186",
+  "q": "Me juró que ___ (cuidar) a mi gato mientras yo viajaba.",
+  "options": [
+   "cuidará",
+   "cuidaría",
+   "cuidaba"
+  ]
+ },
+ {
+  "id": "v3189",
+  "q": "Cuando tú ___ (llamar), yo estaba en la ducha.",
+  "options": [
+   "llamabas",
+   "llamas",
+   "llamaste",
+   "has llamado"
+  ]
+ },
+ {
+  "id": "v3192",
+  "q": "Cuando me lo contaron, yo ya lo ___ (oír) de boca de mi prima.",
+  "options": [
+   "he oído",
+   "oía",
+   "había oído",
+   "hubiera oído"
+  ]
+ },
+ {
+  "id": "v3195",
+  "q": "Primero llamé al banco, luego ___ (escribir) un correo y por último salí.",
+  "options": [
+   "escribí",
+   "escribía",
+   "he escrito",
+   "escribo"
+  ]
+ },
+ {
+  "id": "v3198",
+  "q": "Me sorprendió que tú ya ___ (leer) el libro cuando te lo presté.",
+  "options": [
+   "hubieras leído",
+   "habías leído",
+   "leyeras",
+   "habrías leído"
+  ]
+ },
+ {
+  "id": "v3201",
+  "q": "La semana pasada nosotros ___ (conseguir) boletas para el concierto.",
+  "options": [
+   "conseguimos",
+   "conseguíamos",
+   "hemos conseguido"
+  ]
+ },
+ {
+  "id": "v3204",
+  "q": "En diciembre de 2022 yo ___ (conocer) a mi esposa en una fiesta.",
+  "options": [
+   "he conocido",
+   "conocí",
+   "conocía",
+   "conozco"
+  ]
+ },
+ {
+  "id": "v3207",
+  "q": "Hasta ahora, nosotros ___ (conseguir) ahorrar muy poco.",
+  "options": [
+   "conseguimos",
+   "habíamos conseguido",
+   "hemos conseguido",
+   "hayamos conseguido"
+  ]
+ },
+ {
+  "id": "v3210",
+  "q": "Quiero preparar la sorpresa sin que Lucía lo ___ (descubrir).",
+  "options": [
+   "descubrirá",
+   "descubre",
+   "descubra",
+   "descubriera"
+  ]
+ },
+ {
+  "id": "v3213",
+  "q": "Cuando mi hermano volvió de la fiesta, yo ya me ___ (dormir).",
+  "options": [
+   "hubiera dormido",
+   "he dormido",
+   "dormía",
+   "había dormido"
+  ]
+ },
+ {
+  "id": "v3216",
+  "q": "De niño, yo ___ (decir) que quería ser piloto cada vez que veía un avión.",
+  "options": [
+   "dije",
+   "dijera",
+   "diría",
+   "decía"
+  ]
+ },
+ {
+  "id": "v3219",
+  "q": "Últimamente Sofía ___ (aprender) muchísimo en su clase de pintura.",
+  "options": [
+   "había aprendido",
+   "haya aprendido",
+   "aprendió",
+   "ha aprendido"
+  ]
+ },
+ {
+  "id": "v3222",
+  "q": "Hace un año que ellos ___ (arreglar) la casa y todavía no terminan.",
+  "options": [
+   "arreglen",
+   "arreglaban",
+   "arreglaron",
+   "arreglan"
+  ]
+ },
+ {
+  "id": "v3225",
+  "q": "Hace tres horas que tú ___ (estudiar) en la biblioteca, y no paras.",
+  "options": [
+   "estudiabas",
+   "estudiaste",
+   "estudies",
+   "estudias"
+  ]
+ },
+ {
+  "id": "v3228",
+  "q": "Cuando el profesor preguntó, nadie respondió; quién sabe, no ___ (leer) el capítulo.",
+  "options": [
+   "habremos leído",
+   "leeríamos",
+   "habíamos leído",
+   "habríamos leído"
+  ]
+ },
+ {
+  "id": "v3231",
+  "q": "Si no cierras la ventana, ___ (entrar) el frío.",
+  "options": [
+   "entre",
+   "entrará",
+   "entraba",
+   "entraría"
+  ]
+ },
+ {
+  "id": "v3234",
+  "q": "El mar ___ (cubrir) más de dos tercios del planeta.",
+  "options": [
+   "cubra",
+   "cubre",
+   "cubría",
+   "cubrió"
+  ]
+ },
+ {
+  "id": "v3237",
+  "q": "Tío Ernesto, ___ (manejar) con tanta lluvia; te lo pido.",
+  "options": [
+   "no manejes",
+   "manejas",
+   "manejes",
+   "maneja"
+  ]
+ },
+ {
+  "id": "v3240",
+  "q": "Cuando ya ___ (cubrir) los gastos, repartimos la ganancia.",
+  "options": [
+   "hayamos cubierto",
+   "cubramos",
+   "hubiéramos cubierto",
+   "hemos cubierto"
+  ]
+ },
+ {
+  "id": "v3243",
+  "q": "Si ella me llamara, yo le ___ (contar) todo.",
+  "options": [
+   "contara",
+   "contaría",
+   "contaré"
+  ]
+ },
+ {
+  "id": "v3246",
+  "q": "El domingo por la noche yo ___ (volver) a Barranquilla.",
+  "options": [
+   "vuelva",
+   "volveré",
+   "volvería"
+  ]
+ },
+ {
+  "id": "v3249",
+  "q": "Si la profesora ___ (explicar) mejor, habríamos entendido.",
+  "options": [
+   "había explicado",
+   "habría explicado",
+   "hubiera explicado",
+   "explicara"
+  ]
+ },
+ {
+  "id": "v3252",
+  "q": "Cuando salgas del examen, me ___ (contar) todo.",
+  "options": [
+   "contarás",
+   "cuentes",
+   "contarías"
+  ]
+ },
+ {
+  "id": "v3255",
+  "q": "Si se cae el jugo, tu camisa ___ (quedar) manchada.",
+  "options": [
+   "quedará",
+   "quedaría",
+   "quede",
+   "quedaba"
+  ]
+ },
+ {
+  "id": "v3258",
+  "q": "Los fines de semana mi papá nos ___ (sacar) al parque cuando éramos chicos.",
+  "options": [
+   "sacaba",
+   "sacara",
+   "sacó",
+   "sacaría"
+  ]
+ },
+ {
+  "id": "v3261",
+  "q": "Antes de Navidad, yo ya ___ (leer) los cinco libros de Gabo.",
+  "options": [
+   "haya leído",
+   "habré leído",
+   "leeré",
+   "habría leído"
+  ]
+ },
+ {
+  "id": "v3264",
+  "q": "Hasta que ustedes terminen, yo no me ___ (ir) de la oficina.",
+  "options": [
+   "iría",
+   "iré",
+   "vaya"
+  ]
+ },
+ {
+  "id": "v3267",
+  "q": "Me llegó un mensaje raro; ni idea, alguien se ___ (equivocar) de número.",
+  "options": [
+   "habría equivocado",
+   "equivocará",
+   "habrá equivocado",
+   "haya equivocado"
+  ]
+ },
+ {
+  "id": "v3270",
+  "q": "Los últimos años ___ (ser) difíciles para los pequeños comerciantes.",
+  "options": [
+   "han sido",
+   "fueron",
+   "habían sido",
+   "hayan sido"
+  ]
+ },
+ {
+  "id": "v3273",
+  "q": "Anoche ___ (llover) durísimo en Bogotá y se inundó la calle.",
+  "options": [
+   "llovió",
+   "llovía",
+   "ha llovido",
+   "llueve"
+  ]
+ },
+ {
+  "id": "v3276",
+  "q": "El lunes mi jefa por fin ___ (poder) hablar con el cliente.",
+  "options": [
+   "ha podido",
+   "pudo",
+   "podía",
+   "puede"
+  ]
+ },
+ {
+  "id": "v3279",
+  "q": "La tienda está vacía; ni idea, todos se ___ (ir) a almorzar.",
+  "options": [
+   "habrían ido",
+   "habrán ido",
+   "irán",
+   "hayan ido"
+  ]
+ },
+ {
+  "id": "v3282",
+  "q": "Para el fin de semana, los precios del mercado ya ___ (bajar).",
+  "options": [
+   "habrían bajado",
+   "bajarán",
+   "habrán bajado",
+   "hayan bajado"
+  ]
+ },
+ {
+  "id": "v3285",
+  "q": "Si nosotros ___ (vivir) en la costa, saldríamos a la playa todos los días.",
+  "options": [
+   "vivamos",
+   "viviríamos",
+   "viviéramos",
+   "vivíamos"
+  ]
+ },
+ {
+  "id": "v3288",
+  "q": "Si yo ___ (ser) más joven en esa época, habría emigrado.",
+  "options": [
+   "había sido",
+   "habría sido",
+   "fuera",
+   "hubiera sido"
+  ]
+ },
+ {
+  "id": "v3291",
+  "q": "Espero que Ana ya ___ (llegar) a Medellín; todavía no me escribe.",
+  "options": [
+   "ha llegado",
+   "hubiera llegado",
+   "llegue",
+   "haya llegado"
+  ]
+ },
+ {
+  "id": "v3294",
+  "q": "Trabajamos como si ___ (tener) todo el tiempo del mundo.",
+  "options": [
+   "teníamos",
+   "tendríamos",
+   "tengamos",
+   "tuviéramos"
+  ]
+ },
+ {
+  "id": "v3297",
+  "q": "El banco aseguró que para el martes ya ___ (recibir) mi pago.",
+  "options": [
+   "había recibido",
+   "habrá recibido",
+   "recibiría",
+   "habría recibido"
+  ]
+ }
+]

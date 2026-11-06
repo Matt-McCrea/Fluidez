@@ -1,0 +1,157 @@
+#T3
+Me da igual|I don't mind, it's all the same to me|Me da lo mismo|basicas|B1
+Ni modo|Oh well, nothing to be done||basicas|B1|Ni modo is more Mexican but understood and used in Colombia.
+De una|Sure, right away, let's do it|Dale de una|basicas|B1|"De una" is Colombian slang for right away or yes, let's go.
+Vale la pena|It's worth it|Sí vale la pena|basicas|B1
+Échame una mano|Give me a hand|Écheme una mano|basicas|B1
+Estoy pendiente|I'm keeping an eye out|Estoy atento|basicas|B1|Estar pendiente = to keep track of something.
+Esté pendiente|Keep an eye out (formal)||basicas|B1
+De pronto llueve|It might rain||naturaleza|B1|De pronto = maybe, perhaps, in Colombia.
+De pronto no puedo ir|Maybe I won't be able to go||ocio|B1
+Ahorita te llamo|I'll call you in a bit||medios|B1|Ahorita is vague: soon, in a moment, or even right now.
+Ahorita vengo|I'll be right back||basicas|B1
+Ya mismo salgo|I'm leaving right now||ocio|B1
+A la orden|At your service, how can I help?||servicios|B1|Shopkeepers say it to greet customers.
+Con mucho gusto|With pleasure||servicios|B1
+No hay de qué|Don't mention it||basicas|B1
+Qué pena con usted|I'm sorry about that (formal)||basicas|B1|Qué pena con usted is a polite way to apologize.
+Qué pena molestarlo|Sorry to bother you||basicas|B1
+Qué chévere|How cool|Qué bacano|basicas|A2|Chévere and bacano both mean cool, great in Colombia.
+Está muy bacano|It's really cool||basicas|B1
+Parce, ¿qué hubo?|Hey buddy, what's up?|Parcero, ¿qué hubo?|relaciones|B1|Parce is Colombian slang for buddy, mostly among young people.
+Vamos de rumba|Let's go out partying||ocio|B1|Rumba = party, rumbear = to party.
+Estoy de parche con mis amigos|I'm hanging out with my friends||ocio|B1|Parche = a group of friends.
+Está muy tenaz|It's really tough||basicas|B1|Tenaz is Colombian slang for tough, difficult, intense.
+Estoy full de trabajo|I'm swamped with work||trabajo|B1
+Toca esperar|We have to wait||basicas|B1|Tocar = to have to, in Colombia.
+Me tocó pagar a mí|I ended up having to pay||economia|B1
+Me tocó madrugar|I had to get up early||trabajo|B1
+Hágale, pues|Alright then, go for it||basicas|B1
+No más, gracias|That's all, thanks||servicios|B1|No más after a verb often means just or only.
+Pilas con eso|Watch out for that||basicas|B1|Pilas = be alert, in Colombia.
+¿Sí o qué?|Right or what?||basicas|B1
+Qué oso|How embarrassing||caracter|B1
+Estoy de buenas hoy|I'm in a good mood today||caracter|B1
+Estoy de malas hoy|I'm in a bad mood today||caracter|B1
+Hagamos una vaca|Let's all chip in||economia|B1|Hacer una vaca = to pool money.
+Vamos a camellar|Let's get to work||trabajo|B1|Camellar = to work hard, Colombian slang.
+Estoy sin un peso|I'm broke|Estoy sin plata|economia|B1
+Está carísimo|It's super expensive||compras|B1
+Me salió barato|It turned out cheap||compras|B1
+Me costó un ojo de la cara|It cost me an arm and a leg||compras|B2
+Eso es un robo|That's a rip off||compras|B1
+Le hago un precio|I'll give you a deal||compras|B1
+Se acabó la plata|The money ran out||economia|B1
+Ando corto de plata|I'm short of money||economia|B1
+Hay que ahorrar|We have to save||economia|B1
+Me da lo mismo, de verdad|I really don't mind||basicas|B1
+No me importa|I don't care||basicas|A2
+No te preocupes|Don't worry|No se preocupe|basicas|A2
+Tranquilo, no pasa nada|Relax, it's nothing||basicas|B1
+No te metas en eso|Stay out of it|No se meta en eso|relaciones|B1
+Eso no es asunto mío|That's none of my business||relaciones|B1
+Cada quien con lo suyo|Each to their own||relaciones|B1
+Cuenta conmigo|Count on me|Cuente conmigo|relaciones|B1
+Puedes contar conmigo|You can count on me|Puede contar conmigo|relaciones|B1
+Me hace falta tiempo|I'm short of time||basicas|B1
+Me hace falta un café|I need a coffee||alimentacion|B1
+Me hacen falta mis amigos|I miss my friends||relaciones|B1
+Me cae bien|I like him, he's nice||relaciones|B1|Caer bien = to like someone, to get along with.
+Me cae mal|I don't like him||relaciones|B1
+Nos llevamos muy bien|We get along very well||relaciones|B1
+Se pelearon ayer|They had a fight yesterday||relaciones|B1
+Ya hicimos las paces|We've made up||relaciones|B1
+Me quedé sin palabras|I was speechless||caracter|B1
+Se me hizo tarde|I ran late||ocio|B1
+Se me fue el tiempo|Time got away from me||ocio|B1
+Me dieron ganas de llorar|I felt like crying||caracter|B1
+Me dan ganas de dormir|I feel like sleeping||cuerpo|B1
+Tengo ganas de viajar|I feel like traveling||viajes|B1
+No tengo ganas de salir|I don't feel like going out||ocio|B1
+Me muero de hambre|I'm starving||alimentacion|B1
+Me muero de sueño|I'm dying of sleepiness||cuerpo|B1
+Me muero de la risa|I'm dying of laughter||caracter|B1
+Estoy que me caigo del sueño|I'm about to fall asleep on my feet||cuerpo|B2
+Se me hizo agua la boca|My mouth watered||alimentacion|B2
+Me quedé dormido|I fell asleep (said by a man)|Me quedé dormida|cuerpo|B1
+Me desperté tarde|I woke up late||cuerpo|A2
+Me levanté temprano|I got up early||cuerpo|A2
+Me acosté tarde|I went to bed late||cuerpo|A2
+Me cansé de esperar|I got tired of waiting||caracter|B1
+Estoy de mal humor|I'm in a bad mood||caracter|B1
+Me sacas de quicio|You drive me crazy|Me saca de quicio|caracter|B2
+Eso me tiene preocupado|That has me worried||caracter|B1
+Eso me da rabia|That makes me angry||caracter|B1
+Me lo imaginaba|I figured||basicas|B1
+No me lo esperaba|I didn't expect it||basicas|B1
+Qué casualidad|What a coincidence||basicas|B1
+Qué suerte tienes|You're so lucky|Qué suerte tiene|basicas|B1
+Qué mala suerte|What bad luck||basicas|B1
+Con razón|No wonder||basicas|B1
+Ya veo|I see||basicas|B1
+Ya caigo|Now I get it|Ya entiendo|basicas|B1
+Ahora entiendo|Now I understand||basicas|B1
+No me digas|You don't say, no way||basicas|B1
+¿En serio?|Seriously?|¿De verdad?|basicas|A2
+¿Cómo así?|What do you mean?||basicas|B1|"¿Cómo así?" shows surprise in Colombia.
+Más bien|Rather, more like||basicas|B1
+Por lo menos|At least||basicas|B1
+Sin embargo, funciona|However, it works||basicas|B2
+Al fin y al cabo|After all, at the end of the day||basicas|B2
+Por si acaso|Just in case||basicas|B1
+Mejor dicho|In other words||basicas|B1
+O sea, no puedo|I mean, I can't||basicas|B1
+Es decir, no|That is to say, no||basicas|B1
+Dime la verdad|Tell me the truth|Dígame la verdad|basicas|A2
+Cuéntame más|Tell me more|Cuénteme más|basicas|A2
+Cuéntame todo|Tell me everything|Cuénteme todo|basicas|B1
+Me contaron que te casas|I heard you're getting married|Me contaron que se casa|relaciones|B1
+Se corrió la voz|Word got around||relaciones|B2
+Dicen que va a llover|They say it's going to rain||naturaleza|B1
+Parece que va a llover|It looks like rain||naturaleza|B1
+Parece mentira|It's hard to believe||basicas|B2
+Ni idea|No idea||basicas|B1
+No tengo ni idea|I have no idea||basicas|B1
+Quién sabe|Who knows||basicas|B1
+Eso espero|I hope so||basicas|B1
+Ojalá que sí|I hope so, I wish||basicas|B1
+Ojalá no llueva|I hope it doesn't rain||naturaleza|B1
+Ojalá pudiera ir|I wish I could go||ocio|B2
+Si pudiera, iría|If I could, I'd go||ocio|B2
+Si tuviera plata, viajaría|If I had money, I'd travel||economia|B2
+Si me llamas, te contesto|If you call me, I'll answer||medios|B1
+Cuando llegue, te aviso|When I arrive, I'll let you know||medios|B1
+Apenas salga, te llamo|As soon as I leave, I'll call you||medios|B1
+Antes de que se me olvide|Before I forget||basicas|B1
+Para que lo sepas|Just so you know||basicas|B1
+Por cierto, ¿cómo vas?|By the way, how are you doing?||basicas|B1
+A propósito, ¿vienes?|By the way, are you coming?||basicas|B1
+Mientras tanto, espera|In the meantime, wait||basicas|B1
+De todos modos, gracias|Anyway, thanks||basicas|B1
+En todo caso, llámame|In any case, call me||basicas|B1
+En realidad, no sé|Actually, I don't know||basicas|B1
+La verdad, no me gusta|To be honest, I don't like it||basicas|B1
+Honestamente, prefiero otro|Honestly, I prefer another||basicas|B1
+Cambiando de tema|Changing the subject||basicas|B2
+Hablando de eso|Speaking of that||basicas|B1
+A mi modo de ver|The way I see it||basicas|B2
+Desde mi punto de vista|From my point of view||basicas|B2
+Tengo mis dudas|I have my doubts||basicas|B2
+No estoy seguro|I'm not sure (said by a man)|No estoy segura|basicas|A2
+Estoy seguro de eso|I'm sure about that (said by a man)|Estoy segura de eso|basicas|B1
+Me suena familiar|It sounds familiar||basicas|B1
+Eso no tiene sentido|That makes no sense||basicas|B1
+Tiene sentido|It makes sense||basicas|B1
+Todo salió bien|Everything went well||basicas|B1
+Todo salió mal|Everything went wrong||basicas|B1
+Salió todo al revés|Everything went the opposite way||basicas|B2
+Más vale tarde que nunca|Better late than never||basicas|B2
+Poco a poco|Little by little||basicas|B1
+Paso a paso|Step by step||basicas|B1
+Uno nunca sabe|You never know||basicas|B1
+Así es la vida|That's life||basicas|B1
+Así son las cosas|That's how things are||basicas|B1
+Es pan comido|It's a piece of cake||basicas|B2
+Eso está difícil|That's going to be hard||basicas|B1
+Me parece raro|It seems strange to me||basicas|B1
+Está por verse|That remains to be seen||basicas|B2

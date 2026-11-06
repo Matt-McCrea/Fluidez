@@ -1,0 +1,2573 @@
+[
+ {
+  "q": "Mi mamá quería que yo ___ (estudiar) medicina.",
+  "inf": "estudiar",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "estudiara",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Quería que + subjuntivo (deseo); quería es pasado, imperfecto: estudiara.",
+  "why_en": "Quería que takes the subjunctive (desire); quería is past, so the imperfect: estudiara.",
+  "en": "My mom wanted me to study medicine.",
+  "band": "B2"
+ },
+ {
+  "q": "Anoche Camilo me pidió que lo ___ (llamar) antes de salir, y así lo hice.",
+  "inf": "llamar",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "llamara",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Me pidió que + subjuntivo (petición); pidió es pasado, imperfecto: llamara.",
+  "why_en": "Me pidió que takes the subjunctive (request); pidió is past, so the imperfect: llamara.",
+  "en": "Last night Camilo asked me to call him before going out, and I did.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi jefe nos pidió que ___ (llegar) temprano el lunes pasado.",
+  "inf": "llegar",
+  "tense": "impsubj",
+  "person": "nosotros",
+  "answer": "llegáramos",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Nos pidió que + subjuntivo (petición); pidió es pasado, imperfecto: llegáramos.",
+  "why_en": "Nos pidió que takes the subjunctive (request); pidió is past, so the imperfect: llegáramos.",
+  "en": "My boss asked us to arrive early last Monday.",
+  "band": "B2"
+ },
+ {
+  "q": "No creía que tú ___ (poder) cargar esa maleta tan pesada.",
+  "inf": "poder",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "pudieras",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "No creía que + subjuntivo (duda); creía es pasado, imperfecto: pudieras.",
+  "why_en": "No creía que takes the subjunctive (doubt); creía is past, so the imperfect: pudieras.",
+  "en": "I didn't think you could carry that heavy suitcase.",
+  "band": "B2"
+ },
+ {
+  "q": "Me alegró mucho que ustedes ___ (venir) a mi graduación.",
+  "inf": "venir",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "vinieran",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Me alegró que + subjuntivo (emoción); alegró es pasado, imperfecto: vinieran.",
+  "why_en": "Me alegró que takes the subjunctive (emotion); alegró is past, so the imperfect: vinieran.",
+  "en": "I was so glad you all came to my graduation.",
+  "band": "B2"
+ },
+ {
+  "q": "Era importante que Valentina ___ (dormir) bien antes del examen.",
+  "inf": "dormir",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "durmiera",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Era importante que + subjuntivo (valoración); era es pasado, imperfecto: durmiera.",
+  "why_en": "Era importante que takes the subjunctive (judgment); era is past, so the imperfect: durmiera.",
+  "en": "It was important that Valentina sleep well before the exam.",
+  "band": "B2"
+ },
+ {
+  "q": "Los vecinos nos rogaron que ___ (bajar) la música.",
+  "inf": "bajar",
+  "tense": "impsubj",
+  "person": "nosotros",
+  "answer": "bajáramos",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Nos rogaron que + subjuntivo (petición); rogaron es pasado, imperfecto: bajáramos.",
+  "why_en": "Nos rogaron que takes the subjunctive (request); rogaron is past, so the imperfect: bajáramos.",
+  "en": "The neighbors begged us to turn the music down.",
+  "band": "B2"
+ },
+ {
+  "q": "Ana dudaba que el bus ___ (llegar) a tiempo.",
+  "inf": "llegar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "llegara",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Dudaba que + subjuntivo (duda); dudaba es pasado, imperfecto: llegara.",
+  "why_en": "Dudaba que takes the subjunctive (doubt); dudaba is past, so the imperfect: llegara.",
+  "en": "Ana doubted the bus would arrive on time.",
+  "band": "B2"
+ },
+ {
+  "q": "Me molestó que nadie me ___ (decir) nada del cambio.",
+  "inf": "decir",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "dijera",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Me molestó que + subjuntivo (emoción); molestó es pasado, imperfecto: dijera.",
+  "why_en": "Me molestó que takes the subjunctive (emotion); molestó is past, so the imperfect: dijera.",
+  "en": "It bothered me that nobody told me anything about the change.",
+  "band": "B2"
+ },
+ {
+  "q": "Esperábamos que la lluvia ___ (parar) antes del partido.",
+  "inf": "parar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "parara",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Esperábamos que + subjuntivo (deseo); esperábamos es pasado, imperfecto: parara.",
+  "why_en": "Esperábamos que takes the subjunctive (wish); esperábamos is past, so the imperfect: parara.",
+  "en": "We were hoping the rain would stop before the match.",
+  "band": "B2"
+ },
+ {
+  "q": "Le pedí a Sofía que me ___ (traer) el cargador.",
+  "inf": "traer",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "trajera",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Le pedí que + subjuntivo (petición); pedí es pasado, imperfecto: trajera.",
+  "why_en": "Le pedí que takes the subjunctive (request); pedí is past, so the imperfect: trajera.",
+  "en": "I asked Sofía to bring me the charger.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi papá no permitió que mis primos ___ (jugar) en la calle.",
+  "inf": "jugar",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "jugaran",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "No permitió que + subjuntivo (influencia); permitió es pasado, imperfecto: jugaran.",
+  "why_en": "No permitió que takes the subjunctive (influence); permitió is past, so the imperfect: jugaran.",
+  "en": "My dad didn't let my cousins play in the street.",
+  "band": "B2"
+ },
+ {
+  "q": "El profesor exigió que todos ___ (escribir) el ensayo a mano.",
+  "inf": "escribir",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "escribieran",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Exigió que + subjuntivo (orden); exigió es pasado, imperfecto: escribieran.",
+  "why_en": "Exigió que takes the subjunctive (order); exigió is past, so the imperfect: escribieran.",
+  "en": "The teacher demanded that everyone write the essay by hand.",
+  "band": "B2"
+ },
+ {
+  "q": "Dudaba que el computador ___ (funcionar) después de la caída.",
+  "inf": "funcionar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "funcionara",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Dudaba que + subjuntivo (duda); dudaba es pasado, imperfecto: funcionara.",
+  "why_en": "Dudaba que takes the subjunctive (doubt); dudaba is past, so the imperfect: funcionara.",
+  "en": "I doubted the computer would work after the fall.",
+  "band": "B2"
+ },
+ {
+  "q": "Nos sorprendió que Mateo ___ (ganar) el concurso de cocina.",
+  "inf": "ganar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "ganara",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Nos sorprendió que + subjuntivo (emoción); sorprendió es pasado, imperfecto: ganara.",
+  "why_en": "Nos sorprendió que takes the subjunctive (emotion); sorprendió is past, so the imperfect: ganara.",
+  "en": "We were surprised that Mateo won the cooking contest.",
+  "band": "B2"
+ },
+ {
+  "q": "Yo no quería que mis hijos ___ (crecer) tan rápido.",
+  "inf": "crecer",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "crecieran",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "No quería que + subjuntivo (deseo); quería es pasado, imperfecto: crecieran.",
+  "why_en": "No quería que takes the subjunctive (desire); quería is past, so the imperfect: crecieran.",
+  "en": "I didn't want my kids to grow up so fast.",
+  "band": "B2"
+ },
+ {
+  "q": "Tu hermana temía que tú ___ (perder) el vuelo.",
+  "inf": "perder",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "perdieras",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Temía que + subjuntivo (emoción); temía es pasado, imperfecto: perdieras.",
+  "why_en": "Temía que takes the subjunctive (fear); temía is past, so the imperfect: perdieras.",
+  "en": "Your sister was afraid you would miss the flight.",
+  "band": "B2"
+ },
+ {
+  "q": "Era necesario que nosotros ___ (salir) antes de las seis.",
+  "inf": "salir",
+  "tense": "impsubj",
+  "person": "nosotros",
+  "answer": "saliéramos",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Era necesario que + subjuntivo (valoración); era es pasado, imperfecto: saliéramos.",
+  "why_en": "Era necesario que takes the subjunctive (judgment); era is past, so the imperfect: saliéramos.",
+  "en": "It was necessary for us to leave before six.",
+  "band": "B2"
+ },
+ {
+  "q": "No había nadie que ___ (saber) arreglar la nevera.",
+  "inf": "saber",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "supiera",
+  "use": "oración de relativo con antecedente desconocido en pasado",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "No había nadie que + subjuntivo (antecedente inexistente); había es pasado, imperfecto: supiera.",
+  "why_en": "No había nadie que takes the subjunctive (nonexistent antecedent); había is past, so the imperfect: supiera.",
+  "en": "There was nobody who knew how to fix the fridge.",
+  "band": "B2"
+ },
+ {
+  "q": "No encontré ningún restaurante que ___ (abrir) los lunes.",
+  "inf": "abrir",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "abriera",
+  "use": "oración de relativo con antecedente desconocido en pasado",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Ningún restaurante que + subjuntivo (antecedente inexistente); encontré es pasado, imperfecto: abriera.",
+  "why_en": "Ningún restaurante que + subjunctive (nonexistent antecedent); encontré is past, so imperfect.",
+  "en": "I didn't find any restaurant that opened on Mondays.",
+  "band": "B2"
+ },
+ {
+  "q": "Ana llamó a su mamá anoche para que ___ (saber) la noticia antes que nadie.",
+  "inf": "saber",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "supiera",
+  "use": "para que, antes de que, sin que tras un verbo en pasado",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Llamó para que + subjuntivo (finalidad); llamó es pasado, imperfecto: supiera.",
+  "why_en": "Llamó para que takes the subjunctive (purpose); llamó is past, so the imperfect: supiera.",
+  "en": "Ana called her mom last night so she would hear the news before anyone else.",
+  "band": "B2"
+ },
+ {
+  "q": "Salimos antes de que ___ (empezar) la tormenta.",
+  "inf": "empezar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "empezara",
+  "use": "para que, antes de que, sin que tras un verbo en pasado",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Salimos antes de que + subjuntivo (tiempo anterior); salimos es pasado, imperfecto: empezara.",
+  "why_en": "Salimos antes de que takes the subjunctive (time before); salimos is past, so the imperfect: empezara.",
+  "en": "We left before the storm started.",
+  "band": "B2"
+ },
+ {
+  "q": "Se fue sin que nadie la ___ (ver).",
+  "inf": "ver",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "viera",
+  "use": "para que, antes de que, sin que tras un verbo en pasado",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Se fue sin que + subjuntivo (algo que no pasa); fue es pasado, imperfecto: viera.",
+  "why_en": "Se fue sin que takes the subjunctive (something not happening); fue is past, so the imperfect: viera.",
+  "en": "She left without anybody seeing her.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi abuela trabajó mucho para que sus hijos ___ (estudiar).",
+  "inf": "estudiar",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "estudiaran",
+  "use": "para que, antes de que, sin que tras un verbo en pasado",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Trabajó para que + subjuntivo (finalidad); trabajó es pasado, imperfecto: estudiaran.",
+  "why_en": "Trabajó para que takes the subjunctive (purpose); trabajó is past, so the imperfect: estudiaran.",
+  "en": "My grandmother worked hard so her children could study.",
+  "band": "B2"
+ },
+ {
+  "q": "Le hablé despacio para que ella me ___ (entender).",
+  "inf": "entender",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "entendiera",
+  "use": "para que, antes de que, sin que tras un verbo en pasado",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Le hablé para que + subjuntivo (finalidad); hablé es pasado, imperfecto: entendiera.",
+  "why_en": "Le hablé para que takes the subjunctive (purpose); hablé is past, so the imperfect: entendiera.",
+  "en": "I spoke slowly so that she would understand me.",
+  "band": "B2"
+ },
+ {
+  "q": "Compré dos entradas para que mi amigo y yo ___ (ir) al concierto de anoche.",
+  "inf": "ir",
+  "tense": "impsubj",
+  "person": "nosotros",
+  "answer": "fuéramos",
+  "use": "para que, antes de que, sin que tras un verbo en pasado",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Compré dos entradas para que + subjuntivo (finalidad); compré es pasado, imperfecto: fuéramos.",
+  "why_en": "Compré dos entradas para que takes the subjunctive (purpose); compré is past, so the imperfect: fuéramos.",
+  "en": "I bought two tickets so my friend and I could go to last night's concert.",
+  "band": "B2"
+ },
+ {
+  "q": "Me gustaría que mi novio ___ (conocer) a mis papás.",
+  "inf": "conocer",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "conociera",
+  "use": "verbo principal en condicional + que",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Me gustaría que + subjuntivo (deseo); gustaría es condicional, así que imperfecto: conociera.",
+  "why_en": "Me gustaría que takes the subjunctive (desire); gustaría is conditional, so the imperfect: conociera.",
+  "en": "I would like my boyfriend to meet my parents.",
+  "band": "B2"
+ },
+ {
+  "q": "Preferiría que ustedes ___ (hablar) con él primero.",
+  "inf": "hablar",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "hablaran",
+  "use": "verbo principal en condicional + que",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Preferiría que + subjuntivo (preferencia); preferiría es condicional, así que imperfecto: hablaran.",
+  "why_en": "Preferiría que takes the subjunctive (preference); preferiría is conditional, so the imperfect: hablaran.",
+  "en": "I would prefer that you talk to him first.",
+  "band": "B2"
+ },
+ {
+  "q": "Sería mejor que te ___ (quedar) en casa hoy.",
+  "inf": "quedar",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "quedaras",
+  "use": "verbo principal en condicional + que",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Sería mejor que + subjuntivo (valoración); sería es condicional, así que imperfecto: quedaras.",
+  "why_en": "Sería mejor que takes the subjunctive (judgment); sería is conditional, so the imperfect: quedaras.",
+  "en": "It would be better if you stayed home today.",
+  "band": "B2"
+ },
+ {
+  "q": "A Daniela le encantaría que nosotros ___ (ir) a su fiesta.",
+  "inf": "ir",
+  "tense": "impsubj",
+  "person": "nosotros",
+  "answer": "fuéramos",
+  "use": "verbo principal en condicional + que",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Le encantaría que + subjuntivo (deseo); encantaría es condicional, así que imperfecto: fuéramos.",
+  "why_en": "Le encantaría que takes the subjunctive (desire); encantaría is conditional, so the imperfect: fuéramos.",
+  "en": "Daniela would love us to come to her party.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi jefe querría que yo ___ (trabajar) también los sábados.",
+  "inf": "trabajar",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "trabajara",
+  "use": "verbo principal en condicional + que",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Querría que + subjuntivo (deseo); querría es condicional, así que imperfecto: trabajara.",
+  "why_en": "Querría que takes the subjunctive (desire); querría is conditional, so the imperfect: trabajara.",
+  "en": "My boss would want me to work Saturdays too.",
+  "band": "B2"
+ },
+ {
+  "q": "No me parecería justo que ellos ___ (pagar) más que nosotros.",
+  "inf": "pagar",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "pagaran",
+  "use": "verbo principal en condicional + que",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "No me parecería justo que + subjuntivo (valoración); parecería es condicional, así que imperfecto: pagaran.",
+  "why_en": "No me parecería justo que + subjunctive (judgment); parecería is conditional, so imperfect.",
+  "en": "It wouldn't seem fair to me for them to pay more than us.",
+  "band": "C1"
+ },
+ {
+  "q": "Si yo ___ (tener) más plata, me compraría un carro.",
+  "inf": "tener",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "tuviera",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (compraría).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (compraría).",
+  "en": "If I had more money, I would buy a car.",
+  "band": "B2"
+ },
+ {
+  "q": "Si Camilo ___ (vivir) cerca, nos visitaría más seguido.",
+  "inf": "vivir",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "viviera",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (visitaría).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (visitaría).",
+  "en": "If Camilo lived nearby, he would visit us more often.",
+  "band": "B2"
+ },
+ {
+  "q": "Si tú ___ (venir) conmigo, nos divertiríamos mucho.",
+  "inf": "venir",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "vinieras",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (divertiríamos).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (divertiríamos).",
+  "en": "If you came with me, we would have a lot of fun.",
+  "band": "B2"
+ },
+ {
+  "q": "Si nosotros ___ (poder) viajar, iríamos a Cartagena.",
+  "inf": "poder",
+  "tense": "impsubj",
+  "person": "nosotros",
+  "answer": "pudiéramos",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (iríamos).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (iríamos).",
+  "en": "If we could travel, we would go to Cartagena.",
+  "band": "B2"
+ },
+ {
+  "q": "Si mis vecinos ___ (hacer) menos ruido, dormiría mejor.",
+  "inf": "hacer",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "hicieran",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (dormiría).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (dormiría).",
+  "en": "If my neighbors made less noise, I would sleep better.",
+  "band": "B2"
+ },
+ {
+  "q": "Si yo ___ (ser) tú, hablaría con el jefe hoy mismo.",
+  "inf": "ser",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "fuera",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si yo fuera tú: consejo irreal, imperfecto de subjuntivo; el consejo va en condicional (hablaría).",
+  "why_en": "Si yo fuera tú: an unreal situation takes the imperfect subjunctive; the advice is conditional (hablaría).",
+  "en": "If I were you, I would talk to the boss today.",
+  "band": "B2"
+ },
+ {
+  "q": "Si el apartamento ___ (costar) menos, lo alquilaríamos.",
+  "inf": "costar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "costara",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (alquilaríamos).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (alquilaríamos).",
+  "en": "If the apartment cost less, we would rent it.",
+  "band": "B2"
+ },
+ {
+  "q": "Si ustedes ___ (querer) ayudar, terminaríamos más rápido.",
+  "inf": "querer",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "quisieran",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (terminaríamos).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (terminaríamos).",
+  "en": "If you wanted to help, we would finish faster.",
+  "band": "B2"
+ },
+ {
+  "q": "Si tú ___ (dormir) más temprano, no estarías tan cansado.",
+  "inf": "dormir",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "durmieras",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (estarías).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (estarías).",
+  "en": "If you went to bed earlier, you wouldn't be so tired.",
+  "band": "B2"
+ },
+ {
+  "q": "Si yo ___ (poner) la mesa, ¿tú cocinarías hoy?",
+  "inf": "poner",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "pusiera",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (cocinarías).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (cocinarías).",
+  "en": "If I set the table, would you cook today?",
+  "band": "B2"
+ },
+ {
+  "q": "Si Laura ___ (salir) más, conocería a más gente.",
+  "inf": "salir",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "saliera",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (conocería).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (conocería).",
+  "en": "If Laura went out more, she would meet more people.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hoy ___ (hacer) sol, iríamos a la piscina.",
+  "inf": "hacer",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "hiciera",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (iríamos).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (iríamos).",
+  "en": "If it were sunny today, we would go to the pool.",
+  "band": "B2"
+ },
+ {
+  "q": "Si yo ___ (decir) eso en la oficina, me despedirían.",
+  "inf": "decir",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "dijera",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (despedirían).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (despedirían).",
+  "en": "If I said that at the office, they would fire me.",
+  "band": "B2"
+ },
+ {
+  "q": "Si tú me ___ (traer) café, te lo agradecería mucho.",
+  "inf": "traer",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "trajeras",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (agradecería).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (agradecería).",
+  "en": "If you brought me coffee, I would really appreciate it.",
+  "band": "B2"
+ },
+ {
+  "q": "Si los precios ___ (bajar), compraríamos la casa.",
+  "inf": "bajar",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "bajaran",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (compraríamos).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (compraríamos).",
+  "en": "If prices dropped, we would buy the house.",
+  "band": "B2"
+ },
+ {
+  "q": "Si ella ___ (dar) clases, sería una gran profesora.",
+  "inf": "dar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "diera",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (sería).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (sería).",
+  "en": "If she taught classes, she would be a great teacher.",
+  "band": "B2"
+ },
+ {
+  "q": "Si yo ___ (ir) al médico ahora, perdería toda la tarde.",
+  "inf": "ir",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "fuera",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (perdería).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (perdería).",
+  "en": "If I went to the doctor now, I would lose the whole afternoon.",
+  "band": "B2"
+ },
+ {
+  "q": "Ojalá mi hermano ___ (vivir) más cerca, pero está en Canadá.",
+  "inf": "vivir",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "viviera",
+  "use": "ojalá + imperfecto de subjuntivo: deseo improbable o imposible",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Ojalá + deseo contrario a la realidad (\"está en Canadá\"): imperfecto de subjuntivo (viviera).",
+  "why_en": "Ojalá + a wish contrary to reality (\"está en Canadá\") takes the imperfect subjunctive (viviera).",
+  "en": "I wish my brother lived closer to us.",
+  "band": "B2"
+ },
+ {
+  "q": "Ojalá yo ___ (poder) hablar inglés como tú.",
+  "inf": "poder",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "pudiera",
+  "use": "ojalá + imperfecto de subjuntivo: deseo improbable o imposible",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Ojalá + deseo contrario a la realidad: imperfecto de subjuntivo (pudiera).",
+  "why_en": "Ojalá + a wish contrary to reality takes the imperfect subjunctive (pudiera).",
+  "en": "I wish I could speak English like you.",
+  "band": "B2"
+ },
+ {
+  "q": "Ojalá nosotros ___ (tener) una casa en la playa.",
+  "inf": "tener",
+  "tense": "impsubj",
+  "person": "nosotros",
+  "answer": "tuviéramos",
+  "use": "ojalá + imperfecto de subjuntivo: deseo improbable o imposible",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Ojalá + deseo contrario a la realidad: imperfecto de subjuntivo (tuviéramos).",
+  "why_en": "Ojalá + a wish contrary to reality takes the imperfect subjunctive (tuviéramos).",
+  "en": "I wish we had a house on the beach.",
+  "band": "B2"
+ },
+ {
+  "q": "Me habla como si yo no ___ (saber) nada de cocina.",
+  "inf": "saber",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "supiera",
+  "use": "como si + imperfecto de subjuntivo",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Como si + comparación irreal; habla y la comparación van a la vez: imperfecto (supiera).",
+  "why_en": "Como si + unreal comparison; same time as habla, so the imperfect (supiera).",
+  "en": "She talks to me as if I knew nothing about cooking.",
+  "band": "B2"
+ },
+ {
+  "q": "Tu vecina nos mira como si nosotros ___ (ser) extraños.",
+  "inf": "ser",
+  "tense": "impsubj",
+  "person": "nosotros",
+  "answer": "fuéramos",
+  "use": "como si + imperfecto de subjuntivo",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Como si + comparación irreal; mira y la comparación van a la vez: imperfecto (fuéramos).",
+  "why_en": "Como si + unreal comparison; same time as mira, so the imperfect (fuéramos).",
+  "en": "Your neighbor looks at us as if we were strangers.",
+  "band": "B2"
+ },
+ {
+  "q": "Hablas como si ___ (conocer) a todos los famosos.",
+  "inf": "conocer",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "conocieras",
+  "use": "como si + imperfecto de subjuntivo",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Como si + comparación irreal; hablas y la comparación van a la vez: imperfecto (conocieras).",
+  "why_en": "Como si + unreal comparison; same time as hablas, so the imperfect (conocieras).",
+  "en": "You talk as if you knew every celebrity.",
+  "band": "B2"
+ },
+ {
+  "q": "Buenas tardes, señor. ___ (querer) hablar con el gerente.",
+  "inf": "querer",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "quisiera",
+  "use": "quisiera: petición cortés",
+  "confuse": [
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Cortesía: usa imperfecto de subjuntivo.",
+  "why_en": "Cortesía: polite quisiera uses the imperfect subjunctive.",
+  "en": "Good afternoon, sir. I would like to speak with the manager.",
+  "band": "B2",
+  "drop": true
+ },
+ {
+  "q": "Buenas tardes, señora. ___ (querer) pedirle un favor.",
+  "inf": "querer",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "quisiera",
+  "use": "quisiera: petición cortés",
+  "confuse": [
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Quisiera: usa imperfecto de subjuntivo.",
+  "why_en": "Quisiera: polite quisiera uses the imperfect subjunctive.",
+  "en": "Good afternoon, ma'am. I would like to ask you a favor.",
+  "band": "B2",
+  "drop": true
+ },
+ {
+  "q": "En el colegio, mi profesora me recomendó que ___ (leer) más novelas.",
+  "inf": "leer",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "leyera",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Me recomendó que + subjuntivo (consejo); recomendó es pasado, imperfecto: leyera.",
+  "why_en": "Me recomendó que takes the subjunctive (advice); recomendó is past, so the imperfect: leyera.",
+  "en": "At school, my teacher recommended that I read more novels.",
+  "band": "B2"
+ },
+ {
+  "q": "Hace años los médicos le aconsejaron a mi abuelo que ___ (dejar) el cigarrillo.",
+  "inf": "dejar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "dejara",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Le aconsejaron que + subjuntivo (consejo); aconsejaron es pasado, imperfecto: dejara.",
+  "why_en": "Le aconsejaron que takes the subjunctive (advice); aconsejaron is past, so the imperfect: dejara.",
+  "en": "Years ago the doctors advised my grandfather to give up smoking.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi suegra insistió en que ___ (comer) un poco más de sopa.",
+  "inf": "comer",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "comiera",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Insistió en que + subjuntivo (influencia); insistió es pasado, imperfecto: comiera.",
+  "why_en": "Insistió en que takes the subjunctive (influence); insistió is past, so the imperfect: comiera.",
+  "en": "My mother-in-law insisted that I eat a little more soup.",
+  "band": "B2"
+ },
+ {
+  "q": "Nadie creía que Pedro ___ (ser) capaz de renunciar.",
+  "inf": "ser",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "fuera",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Nadie creía que + subjuntivo (duda); creía es pasado, imperfecto: fuera.",
+  "why_en": "Nadie creía que takes the subjunctive (doubt); creía is past, so the imperfect: fuera.",
+  "en": "Nobody believed Pedro was capable of quitting.",
+  "band": "B2"
+ },
+ {
+  "q": "No era verdad que ellos ___ (estar) peleados.",
+  "inf": "estar",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "estuvieran",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "No era verdad que + subjuntivo (duda); era es pasado, imperfecto: estuvieran.",
+  "why_en": "No era verdad que takes the subjunctive (doubt); era is past, so the imperfect: estuvieran.",
+  "en": "It wasn't true that they were on bad terms.",
+  "band": "B2"
+ },
+ {
+  "q": "Me dio rabia que tú no me ___ (esperar).",
+  "inf": "esperar",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "esperaras",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Me dio rabia que + subjuntivo (emoción); dio es pasado, imperfecto: esperaras.",
+  "why_en": "Me dio rabia que takes the subjunctive (emotion); dio is past, so the imperfect: esperaras.",
+  "en": "It made me angry that you didn't wait for me.",
+  "band": "B2"
+ },
+ {
+  "q": "Mis padres querían que nosotros nos ___ (casar) en la iglesia.",
+  "inf": "casarse",
+  "tense": "impsubj",
+  "person": "nosotros",
+  "answer": "casáramos",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Querían que + subjuntivo (deseo); querían es pasado, imperfecto: casáramos.",
+  "why_en": "Querían que takes the subjunctive (desire); querían is past, so the imperfect: casáramos.",
+  "en": "My parents wanted us to get married in church.",
+  "band": "B2"
+ },
+ {
+  "q": "Te rogué que no ___ (contar) nada, y lo contaste todo.",
+  "inf": "contar",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "contaras",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Te rogué que no + subjuntivo (petición); rogué es pasado, imperfecto: contaras.",
+  "why_en": "Te rogué que no takes the subjunctive (request); rogué is past, so the imperfect: contaras.",
+  "en": "I begged you not to tell anything, and you told everything.",
+  "band": "B2"
+ },
+ {
+  "q": "Fue increíble que el equipo ___ (ganar) ese partido.",
+  "inf": "ganar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "ganara",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Fue increíble que + subjuntivo (valoración); fue es pasado, imperfecto: ganara.",
+  "why_en": "Fue increíble que takes the subjunctive (judgment); fue is past, so the imperfect: ganara.",
+  "en": "It was incredible that the team won that match.",
+  "band": "C1"
+ },
+ {
+  "q": "Nos extrañó que la tienda ___ (estar) cerrada a esa hora.",
+  "inf": "estar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "estuviera",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Nos extrañó que + subjuntivo (emoción); extrañó es pasado, imperfecto: estuviera.",
+  "why_en": "Nos extrañó que takes the subjunctive (emotion); extrañó is past, so the imperfect: estuviera.",
+  "en": "It surprised us that the store was closed at that hour.",
+  "band": "B2"
+ },
+ {
+  "q": "La directora ordenó que los estudiantes ___ (salir) del salón.",
+  "inf": "salir",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "salieran",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Ordenó que + subjuntivo (orden); ordenó es pasado, imperfecto: salieran.",
+  "why_en": "Ordenó que takes the subjunctive (order); ordenó is past, so the imperfect: salieran.",
+  "en": "The principal ordered the students to leave the room.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi hermana me suplicó que le ___ (prestar) el celular.",
+  "inf": "prestar",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "prestara",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Me suplicó que + subjuntivo (petición); suplicó es pasado, imperfecto: prestara.",
+  "why_en": "Me suplicó que takes the subjunctive (request); suplicó is past, so the imperfect: prestara.",
+  "en": "My sister begged me to lend her my cell phone.",
+  "band": "B2"
+ },
+ {
+  "q": "Sentí vergüenza de que mis amigos me ___ (ver) llorando.",
+  "inf": "ver",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "vieran",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Sentí vergüenza de que + subjuntivo (emoción); sentí es pasado, imperfecto: vieran.",
+  "why_en": "Sentí vergüenza de que takes the subjunctive (emotion); sentí is past, so the imperfect: vieran.",
+  "en": "I felt embarrassed that my friends saw me crying.",
+  "band": "B2"
+ },
+ {
+  "q": "Era raro que Luis no ___ (contestar) el teléfono.",
+  "inf": "contestar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "contestara",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Era raro que + subjuntivo (valoración); era es pasado, imperfecto: contestara.",
+  "why_en": "Era raro que takes the subjunctive (judgment); era is past, so the imperfect: contestara.",
+  "en": "It was strange that Luis didn't answer the phone.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi jefa temía que nosotros ___ (perder) al cliente.",
+  "inf": "perder",
+  "tense": "impsubj",
+  "person": "nosotros",
+  "answer": "perdiéramos",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Temía que + subjuntivo (emoción); temía es pasado, imperfecto: perdiéramos.",
+  "why_en": "Temía que takes the subjunctive (fear); temía is past, so the imperfect: perdiéramos.",
+  "en": "My boss was afraid we would lose the client.",
+  "band": "B2"
+ },
+ {
+  "q": "Tu mamá prefería que tú ___ (vivir) con ella.",
+  "inf": "vivir",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "vivieras",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Prefería que + subjuntivo (preferencia); prefería es pasado, imperfecto: vivieras.",
+  "why_en": "Prefería que takes the subjunctive (preference); prefería is past, so the imperfect: vivieras.",
+  "en": "Your mom preferred that you live with her.",
+  "band": "B2"
+ },
+ {
+  "q": "Les pedí a mis vecinos que ___ (cuidar) al perro el fin de semana pasado.",
+  "inf": "cuidar",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "cuidaran",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Les pedí que + subjuntivo (petición); pedí es pasado, imperfecto: cuidaran.",
+  "why_en": "Les pedí que takes the subjunctive (request); pedí is past, so the imperfect: cuidaran.",
+  "en": "I asked my neighbours to look after the dog last weekend.",
+  "band": "B2"
+ },
+ {
+  "q": "A Carolina le molestaba que su novio ___ (fumar) tanto.",
+  "inf": "fumar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "fumara",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Le molestaba que + subjuntivo (emoción); molestaba es pasado, imperfecto: fumara.",
+  "why_en": "Le molestaba que takes the subjunctive (emotion); molestaba is past, so the imperfect: fumara.",
+  "en": "It bothered Carolina that her boyfriend smoked so much.",
+  "band": "B2"
+ },
+ {
+  "q": "Nunca pensé que yo ___ (llegar) a ser jefe de la oficina.",
+  "inf": "llegar",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "llegara",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Nunca pensé que + subjuntivo (duda); pensé es pasado, imperfecto: llegara; también vale el condicional.",
+  "why_en": "Nunca pensé que takes the subjunctive (doubt); pensé is past, so the imperfect; the conditional also works.",
+  "en": "I never thought I would become head of the office.",
+  "band": "C1",
+  "also": [
+   "llegaría"
+  ]
+ },
+ {
+  "q": "El conductor nos pidió que ___ (bajar) del bus.",
+  "inf": "bajar",
+  "tense": "impsubj",
+  "person": "nosotros",
+  "answer": "bajáramos",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Nos pidió que + subjuntivo (petición); pidió es pasado, imperfecto: bajáramos.",
+  "why_en": "Nos pidió que takes the subjunctive (request); pidió is past, so the imperfect: bajáramos.",
+  "en": "The driver asked us to get off the bus.",
+  "band": "B2"
+ },
+ {
+  "q": "Era imposible que ellos ___ (llegar) tan pronto.",
+  "inf": "llegar",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "llegaran",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Era imposible que + subjuntivo (valoración); era es pasado, imperfecto: llegaran.",
+  "why_en": "Era imposible que takes the subjunctive (judgment); era is past, so the imperfect: llegaran.",
+  "en": "It was impossible for them to arrive so soon.",
+  "band": "B2"
+ },
+ {
+  "q": "Me encantó que ustedes me ___ (invitar) a cenar.",
+  "inf": "invitar",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "invitaran",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Me encantó que + subjuntivo (emoción); encantó es pasado, imperfecto: invitaran.",
+  "why_en": "Me encantó que takes the subjunctive (emotion); encantó is past, so the imperfect: invitaran.",
+  "en": "I loved that you invited me to dinner.",
+  "band": "B2"
+ },
+ {
+  "q": "Quería que mi hijo ___ (aprender) a manejar bicicleta.",
+  "inf": "aprender",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "aprendiera",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Quería que + subjuntivo (deseo); quería es pasado, imperfecto: aprendiera.",
+  "why_en": "Quería que takes the subjunctive (desire); quería is past, so the imperfect: aprendiera.",
+  "en": "I wanted my son to learn to ride a bike.",
+  "band": "B2"
+ },
+ {
+  "q": "No pensé que la película ___ (durar) tres horas.",
+  "inf": "durar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "durara",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "No pensé que + subjuntivo (duda); pensé es pasado, imperfecto: durara; también vale el condicional.",
+  "why_en": "No pensé que takes the subjunctive (doubt); pensé is past, so the imperfect; the conditional also works.",
+  "en": "I didn't think the movie would last three hours.",
+  "band": "B2",
+  "also": [
+   "duraría"
+  ]
+ },
+ {
+  "q": "Ella nos advirtió que no ___ (abrir) esa puerta.",
+  "inf": "abrir",
+  "tense": "impsubj",
+  "person": "nosotros",
+  "answer": "abriéramos",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Nos advirtió que no + subjuntivo (influencia); advirtió es pasado, imperfecto: abriéramos.",
+  "why_en": "Nos advirtió que no takes the subjunctive (influence); advirtió is past, so the imperfect: abriéramos.",
+  "en": "She warned us not to open that door.",
+  "band": "C1"
+ },
+ {
+  "q": "Me gustaría que tú ___ (venir) a la boda de mi prima.",
+  "inf": "venir",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "vinieras",
+  "use": "verbo principal en condicional + que",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Me gustaría que + subjuntivo (deseo); gustaría es condicional, así que imperfecto: vinieras.",
+  "why_en": "Me gustaría que takes the subjunctive (desire); gustaría is conditional, so the imperfect: vinieras.",
+  "en": "I would like you to come to my cousin's wedding.",
+  "band": "B2"
+ },
+ {
+  "q": "Sería increíble que ellos ___ (volver) a vivir aquí.",
+  "inf": "volver",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "volvieran",
+  "use": "verbo principal en condicional + que",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Sería increíble que + subjuntivo (valoración); sería es condicional, así que imperfecto: volvieran.",
+  "why_en": "Sería increíble que takes the subjunctive (judgment); sería is conditional, so the imperfect: volvieran.",
+  "en": "It would be incredible if they came back to live here.",
+  "band": "B2"
+ },
+ {
+  "q": "A mi mamá le encantaría que yo ___ (cocinar) más en casa.",
+  "inf": "cocinar",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "cocinara",
+  "use": "verbo principal en condicional + que",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Le encantaría que + subjuntivo (deseo); encantaría es condicional, así que imperfecto: cocinara.",
+  "why_en": "Le encantaría que takes the subjunctive (desire); encantaría is conditional, so the imperfect: cocinara.",
+  "en": "My mom would love me to cook at home more.",
+  "band": "B2"
+ },
+ {
+  "q": "Nos convendría que el banco ___ (abrir) más temprano.",
+  "inf": "abrir",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "abriera",
+  "use": "verbo principal en condicional + que",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Nos convendría que + subjuntivo (valoración); convendría es condicional, así que imperfecto: abriera.",
+  "why_en": "Nos convendría que takes the subjunctive (judgment); convendría is conditional, so the imperfect: abriera.",
+  "en": "It would suit us if the bank opened earlier.",
+  "band": "C1"
+ },
+ {
+  "q": "No querría que tú ___ (pensar) que estoy enojado.",
+  "inf": "pensar",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "pensaras",
+  "use": "verbo principal en condicional + que",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "No querría que + subjuntivo (deseo); querría es condicional, así que imperfecto: pensaras.",
+  "why_en": "No querría que takes the subjunctive (desire); querría is conditional, so the imperfect: pensaras.",
+  "en": "I wouldn't want you to think I'm angry.",
+  "band": "B2"
+ },
+ {
+  "q": "¿Te molestaría que yo ___ (abrir) la ventana?",
+  "inf": "abrir",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "abriera",
+  "use": "verbo principal en condicional + que",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "¿Te molestaría que + subjuntivo (emoción); molestaría es condicional: imperfecto; vale también el presente.",
+  "why_en": "¿Te molestaría que + subjunctive (emotion); molestaría is conditional, so imperfect; present works too.",
+  "en": "Would it bother you if I opened the window?",
+  "band": "B2",
+  "also": [
+   "abra"
+  ]
+ },
+ {
+  "q": "Mi papá estaría feliz si nosotros ___ (visitar) el pueblo más seguido.",
+  "inf": "visitar",
+  "tense": "impsubj",
+  "person": "nosotros",
+  "answer": "visitáramos",
+  "use": "verbo principal en condicional + que",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (estaría).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (estaría).",
+  "en": "My dad would be happy if we visited the town more often.",
+  "band": "B2"
+ },
+ {
+  "q": "Si nosotros ___ (vivir) en la costa, saldríamos a la playa todos los días.",
+  "inf": "vivir",
+  "tense": "impsubj",
+  "person": "nosotros",
+  "answer": "viviéramos",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (saldríamos).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (saldríamos).",
+  "en": "If we lived on the coast, we would go to the beach every day.",
+  "band": "B2"
+ },
+ {
+  "q": "Si tú ___ (hablar) más despacio, te entenderíamos mejor.",
+  "inf": "hablar",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "hablaras",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (entenderíamos).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (entenderíamos).",
+  "en": "If you spoke more slowly, we would understand you better.",
+  "band": "B2"
+ },
+ {
+  "q": "Si Valentina ___ (querer), podría ser médica.",
+  "inf": "querer",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "quisiera",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (podría).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (podría).",
+  "en": "If Valentina wanted to, she could be a doctor.",
+  "band": "B2"
+ },
+ {
+  "q": "Si mis amigos ___ (estar) aquí, la fiesta sería perfecta.",
+  "inf": "estar",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "estuvieran",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (sería).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (sería).",
+  "en": "If my friends were here, the party would be perfect.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hoy ___ (llover), cancelaríamos el paseo.",
+  "inf": "llover",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "lloviera",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (cancelaríamos).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (cancelaríamos).",
+  "en": "If it rained today, we would cancel the outing.",
+  "band": "B2"
+ },
+ {
+  "q": "Si tú ___ (tener) un perro, saldrías a caminar más.",
+  "inf": "tener",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "tuvieras",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (saldrías).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (saldrías).",
+  "en": "If you had a dog, you would walk more.",
+  "band": "B2"
+ },
+ {
+  "q": "Si los niños ___ (dormir) la siesta, tendríamos un rato tranquilo.",
+  "inf": "dormir",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "durmieran",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (tendríamos).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (tendríamos).",
+  "en": "If the kids napped, we would have a quiet moment.",
+  "band": "B2"
+ },
+ {
+  "q": "Si yo ___ (ver) un fantasma, saldría corriendo.",
+  "inf": "ver",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "viera",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (saldría).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (saldría).",
+  "en": "If I saw a ghost, I would run away.",
+  "band": "B2"
+ },
+ {
+  "q": "Si ustedes ___ (traer) el computador, trabajaríamos aquí.",
+  "inf": "traer",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "trajeran",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (trabajaríamos).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (trabajaríamos).",
+  "en": "If you brought the computer, we would work here.",
+  "band": "B2"
+ },
+ {
+  "q": "Si nosotros ___ (ir) en moto, llegaríamos en diez minutos.",
+  "inf": "ir",
+  "tense": "impsubj",
+  "person": "nosotros",
+  "answer": "fuéramos",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (llegaríamos).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (llegaríamos).",
+  "en": "If we went by motorcycle, we would arrive in ten minutes.",
+  "band": "B2"
+ },
+ {
+  "q": "Si Pedro me ___ (pedir) perdón, lo perdonaría.",
+  "inf": "pedir",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "pidiera",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (perdonaría).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (perdonaría).",
+  "en": "If Pedro asked me for forgiveness, I would forgive him.",
+  "band": "B2"
+ },
+ {
+  "q": "Si ella ___ (leer) esto, se pondría muy triste.",
+  "inf": "leer",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "leyera",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (pondría).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (pondría).",
+  "en": "If she read this, she would get very sad.",
+  "band": "B2"
+ },
+ {
+  "q": "Si tú ___ (salir) conmigo, te presentaría a mis amigos.",
+  "inf": "salir",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "salieras",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (presentaría).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (presentaría).",
+  "en": "If you went out with me, I would introduce you to my friends.",
+  "band": "B2"
+ },
+ {
+  "q": "Si yo ___ (ganar) el doble, me iría a vivir al campo.",
+  "inf": "ganar",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "ganara",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (iría).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (iría).",
+  "en": "If I earned double, I would go live in the countryside.",
+  "band": "B2"
+ },
+ {
+  "q": "Si nosotros ___ (conocer) mejor la ciudad, no nos perderíamos.",
+  "inf": "conocer",
+  "tense": "impsubj",
+  "person": "nosotros",
+  "answer": "conociéramos",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (perderíamos).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (perderíamos).",
+  "en": "If we knew the city better, we wouldn't get lost.",
+  "band": "B2"
+ },
+ {
+  "q": "Si tú ___ (dar) un paso más, te caerías.",
+  "inf": "dar",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "dieras",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (caerías).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (caerías).",
+  "en": "If you took one more step, you would fall.",
+  "band": "B2"
+ },
+ {
+  "q": "Si no ___ (hacer) tanto frío, saldríamos al parque.",
+  "inf": "hacer",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "hiciera",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (saldríamos).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (saldríamos).",
+  "en": "If it weren't so cold, we would go out to the park.",
+  "band": "B2"
+ },
+ {
+  "q": "Ojalá ___ (haber) más tiempo en el día para todo.",
+  "inf": "haber",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "hubiera",
+  "use": "ojalá + imperfecto de subjuntivo: deseo improbable o imposible",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Ojalá + deseo poco probable: imperfecto de subjuntivo; si es posible, también vale el presente.",
+  "why_en": "Ojalá + an unlikely wish takes the imperfect subjunctive; if it is possible, the present also works.",
+  "en": "I wish there were more time in the day for everything.",
+  "band": "B2",
+  "also": [
+   "haya"
+  ]
+ },
+ {
+  "q": "Ojalá yo ___ (tocar) la guitarra tan bien como Andrés.",
+  "inf": "tocar",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "tocara",
+  "use": "ojalá + imperfecto de subjuntivo: deseo improbable o imposible",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Ojalá + deseo contrario a la realidad: imperfecto de subjuntivo (tocara).",
+  "why_en": "Ojalá + a wish contrary to reality takes the imperfect subjunctive (tocara).",
+  "en": "I wish I played the guitar as well as Andrés.",
+  "band": "B2"
+ },
+ {
+  "q": "Ojalá ellos ___ (ser) más amables con los clientes.",
+  "inf": "ser",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "fueran",
+  "use": "ojalá + imperfecto de subjuntivo: deseo improbable o imposible",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Ojalá + deseo poco probable: imperfecto de subjuntivo; si es posible, también vale el presente.",
+  "why_en": "Ojalá + an unlikely wish takes the imperfect subjunctive; if it is possible, the present also works.",
+  "en": "I wish they were kinder to the customers.",
+  "band": "B2",
+  "also": [
+   "sean"
+  ]
+ },
+ {
+  "q": "Mis hijos corren por la casa como si ___ (estar) en un estadio.",
+  "inf": "estar",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "estuvieran",
+  "use": "como si + imperfecto de subjuntivo",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Como si + comparación irreal; corren y la comparación van a la vez: imperfecto (estuvieran).",
+  "why_en": "Como si + unreal comparison; same time as corren, so the imperfect (estuvieran).",
+  "en": "My kids run around the house as if they were in a stadium.",
+  "band": "B2"
+ },
+ {
+  "q": "Me trata como si yo no ___ (existir).",
+  "inf": "existir",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "existiera",
+  "use": "como si + imperfecto de subjuntivo",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Como si + comparación irreal; trata y la comparación van a la vez: imperfecto (existiera).",
+  "why_en": "Como si + unreal comparison; same time as trata, so the imperfect (existiera).",
+  "en": "He treats me as if I didn't exist.",
+  "band": "B2"
+ },
+ {
+  "q": "Tú hablas como si lo ___ (saber) todo, pero no sabes nada.",
+  "inf": "saber",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "supieras",
+  "use": "como si + imperfecto de subjuntivo",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Como si + comparación irreal; hablas y la comparación van a la vez: imperfecto (supieras).",
+  "why_en": "Como si + unreal comparison; same time as hablas, so the imperfect (supieras).",
+  "en": "You talk as if you knew everything, but you know nothing.",
+  "band": "B2"
+ },
+ {
+  "q": "Trabajamos como si ___ (tener) todo el tiempo del mundo.",
+  "inf": "tener",
+  "tense": "impsubj",
+  "person": "nosotros",
+  "answer": "tuviéramos",
+  "use": "como si + imperfecto de subjuntivo",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Como si + comparación irreal; trabajamos y la comparación van a la vez: imperfecto (tuviéramos).",
+  "why_en": "Como si + unreal comparison; same time as trabajamos, so the imperfect (tuviéramos).",
+  "en": "We work as if we had all the time in the world.",
+  "band": "B2"
+ },
+ {
+  "q": "Salimos temprano para que los niños no se ___ (cansar) en el camino.",
+  "inf": "cansarse",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "cansaran",
+  "use": "para que, antes de que, sin que tras un verbo en pasado",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Salimos para que + subjuntivo (finalidad); salimos es pasado, imperfecto: cansaran.",
+  "why_en": "Salimos para que takes the subjunctive (purpose); salimos is past, so the imperfect: cansaran.",
+  "en": "We left early so the kids wouldn't get tired on the way.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi tío me prestó plata para que ___ (pagar) la matrícula.",
+  "inf": "pagar",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "pagara",
+  "use": "para que, antes de que, sin que tras un verbo en pasado",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Me prestó plata para que + subjuntivo (finalidad); prestó es pasado, imperfecto: pagara.",
+  "why_en": "Me prestó plata para que takes the subjunctive (purpose); prestó is past, so the imperfect: pagara.",
+  "en": "My uncle lent me money so I could pay tuition.",
+  "band": "B2"
+ },
+ {
+  "q": "Entramos sin que el portero nos ___ (ver).",
+  "inf": "ver",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "viera",
+  "use": "para que, antes de que, sin que tras un verbo en pasado",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Entramos sin que + subjuntivo (algo que no pasa); entramos es pasado, imperfecto: viera.",
+  "why_en": "Entramos sin que takes the subjunctive (something not happening); entramos is past, so the imperfect: viera.",
+  "en": "We got in without the doorman seeing us.",
+  "band": "B2"
+ },
+ {
+  "q": "Llegamos a casa antes de que mi papá se ___ (despertar).",
+  "inf": "despertarse",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "despertara",
+  "use": "para que, antes de que, sin que tras un verbo en pasado",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Llegamos antes de que + subjuntivo (tiempo anterior); llegamos es pasado, imperfecto: despertara.",
+  "why_en": "Llegamos antes de que takes the subjunctive (time before); llegamos is past, so the imperfect: despertara.",
+  "en": "We got home before my dad woke up.",
+  "band": "B2"
+ },
+ {
+  "q": "Ayer le escribí a Tomás para que ___ (venir) a recogerme, y vino.",
+  "inf": "venir",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "viniera",
+  "use": "para que, antes de que, sin que tras un verbo en pasado",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Le escribí para que + subjuntivo (finalidad); escribí es pasado, imperfecto: viniera.",
+  "why_en": "Le escribí para que takes the subjunctive (purpose); escribí is past, so the imperfect: viniera.",
+  "en": "Yesterday I wrote to Tomás so he would come and pick me up, and he came.",
+  "band": "B2"
+ },
+ {
+  "q": "Dejé la luz encendida para que tú ___ (poder) ver.",
+  "inf": "poder",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "pudieras",
+  "use": "para que, antes de que, sin que tras un verbo en pasado",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Dejé la luz para que + subjuntivo (finalidad); dejé es pasado, imperfecto: pudieras.",
+  "why_en": "Dejé la luz para que takes the subjunctive (purpose); dejé is past, so the imperfect: pudieras.",
+  "en": "I left the light on so you could see.",
+  "band": "B2"
+ },
+ {
+  "q": "Quería un trabajo que me ___ (permitir) viajar.",
+  "inf": "permitir",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "permitiera",
+  "use": "oración de relativo con antecedente desconocido en pasado",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Quería un trabajo que + subjuntivo (antecedente desconocido); quería es pasado, imperfecto: permitiera.",
+  "why_en": "Quería un trabajo que + subjunctive (unknown antecedent); quería is past, so imperfect.",
+  "en": "I wanted a job that would let me travel.",
+  "band": "B2"
+ },
+ {
+  "q": "No había ninguna casa que nos ___ (gustar) en esa zona.",
+  "inf": "gustar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "gustara",
+  "use": "oración de relativo con antecedente desconocido en pasado",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "No había ninguna casa que + subjuntivo (antecedente inexistente); había es pasado, imperfecto: gustara.",
+  "why_en": "No había ninguna casa que + subjunctive (nonexistent antecedent); había is past, so imperfect.",
+  "en": "There wasn't any house we liked in that area.",
+  "band": "B2"
+ },
+ {
+  "q": "No conocía a nadie en la oficina que ___ (hablar) alemán.",
+  "inf": "hablar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "hablara",
+  "use": "oración de relativo con antecedente desconocido en pasado",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "No conocía a nadie que + subjuntivo (antecedente inexistente); conocía es pasado, imperfecto: hablara.",
+  "why_en": "No conocía a nadie que + subjunctive (nonexistent antecedent); conocía is past, so imperfect.",
+  "en": "I didn't know anyone in the office who spoke German.",
+  "band": "B2"
+ },
+ {
+  "q": "Necesitábamos una secretaria que ___ (saber) de contabilidad.",
+  "inf": "saber",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "supiera",
+  "use": "oración de relativo con antecedente desconocido en pasado",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Necesitábamos una secretaria que + subjuntivo (antecedente desconocido); necesitábamos es pasado, imperfecto.",
+  "why_en": "Necesitábamos una secretaria que + subjunctive (unknown antecedent); necesitábamos is past, so imperfect.",
+  "en": "We needed a secretary who knew accounting.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi mamá quería que yo me ___ (poner) un abrigo.",
+  "inf": "ponerse",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "pusiera",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Quería que + subjuntivo (deseo); quería es pasado, imperfecto: pusiera.",
+  "why_en": "Quería que takes the subjunctive (desire); quería is past, so the imperfect: pusiera.",
+  "en": "My mom wanted me to put on a coat.",
+  "band": "B2"
+ },
+ {
+  "q": "Fue una lástima que tus abuelos no nos ___ (acompañar) a la boda.",
+  "inf": "acompañar",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "acompañaran",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Fue una lástima que + subjuntivo (emoción); fue es pasado, imperfecto: acompañaran.",
+  "why_en": "Fue una lástima que takes the subjunctive (emotion); fue is past, so the imperfect: acompañaran.",
+  "en": "It was a shame your grandparents didn't go to the wedding.",
+  "band": "B2"
+ },
+ {
+  "q": "Dudé que yo ___ (entender) bien el mensaje de Camilo.",
+  "inf": "entender",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "entendiera",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Dudé que + subjuntivo (duda); dudé es pasado, imperfecto: entendiera.",
+  "why_en": "Dudé que takes the subjunctive (doubt); dudé is past, so the imperfect: entendiera.",
+  "en": "I doubted I had understood Camilo's message correctly.",
+  "band": "B2"
+ },
+ {
+  "q": "Si yo ___ (dar) clases de inglés, ganaría más plata.",
+  "inf": "dar",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "diera",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (ganaría).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (ganaría).",
+  "en": "If I taught English classes, I would earn more money.",
+  "band": "B2"
+ },
+ {
+  "q": "Ojalá mis papás ___ (llevar) a los niños al parque hoy, pero llueve.",
+  "inf": "llevar",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "llevaran",
+  "use": "ojalá + imperfecto de subjuntivo: deseo improbable o imposible",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Ojalá + deseo contrario a la realidad (\"pero llueve\"): imperfecto de subjuntivo (llevaran).",
+  "why_en": "Ojalá + a wish contrary to reality (\"pero llueve\") takes the imperfect subjunctive (llevaran).",
+  "en": "I wish my parents would take the kids to the park today, but it's raining.",
+  "band": "B2"
+ },
+ {
+  "q": "Ojalá yo ___ (pasar) todo el día en la playa y no en la oficina.",
+  "inf": "pasar",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "pasara",
+  "use": "ojalá + imperfecto de subjuntivo: deseo improbable o imposible",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Ojalá + deseo contrario a la realidad: imperfecto de subjuntivo (pasara).",
+  "why_en": "Ojalá + a wish contrary to reality takes the imperfect subjunctive (pasara).",
+  "en": "I wish I spent the whole day at the beach instead of the office.",
+  "band": "B2"
+ },
+ {
+  "q": "Si los vecinos ___ (llamar) a la policía, el ruido pararía.",
+  "inf": "llamar",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "llamaran",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (pararía).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (pararía).",
+  "en": "If the neighbors called the police, the noise would stop.",
+  "band": "B2"
+ },
+ {
+  "q": "Lamenté que ellos ___ (perder) la casa por una deuda.",
+  "inf": "perder",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "perdieran",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Lamenté que + subjuntivo (emoción); lamenté es pasado, imperfecto: perdieran.",
+  "why_en": "Lamenté que takes the subjunctive (emotion); lamenté is past, so the imperfect: perdieran.",
+  "en": "I was sorry they lost the house over a debt.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi mamá quería que nosotros ___ (comer) en su casa los domingos.",
+  "inf": "comer",
+  "tense": "impsubj",
+  "person": "nosotros",
+  "answer": "comiéramos",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Quería que + subjuntivo (deseo); quería es pasado, imperfecto: comiéramos.",
+  "why_en": "Quería que takes the subjunctive (desire); quería is past, so the imperfect: comiéramos.",
+  "en": "My mom wanted us to eat at her house on Sundays.",
+  "band": "B2"
+ },
+ {
+  "q": "Si la profesora ___ (hablar) más despacio, entenderíamos todo.",
+  "inf": "hablar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "hablara",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (entenderíamos).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (entenderíamos).",
+  "en": "If the teacher spoke more slowly, we would understand everything.",
+  "band": "B2"
+ },
+ {
+  "q": "Esperábamos que el doctor nos ___ (dar) buenas noticias.",
+  "inf": "dar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "diera",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Esperábamos que + subjuntivo (deseo); esperábamos es pasado, imperfecto: diera.",
+  "why_en": "Esperábamos que takes the subjunctive (wish); esperábamos is past, so the imperfect: diera.",
+  "en": "We hoped the doctor would give us good news.",
+  "band": "B2"
+ },
+ {
+  "q": "Ojalá yo ___ (sentir) menos presión en el trabajo.",
+  "inf": "sentir",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "sintiera",
+  "use": "ojalá + imperfecto de subjuntivo: deseo improbable o imposible",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Ojalá + deseo poco probable: imperfecto de subjuntivo; si es posible, también vale el presente.",
+  "why_en": "Ojalá + an unlikely wish takes the imperfect subjunctive; if it is possible, the present also works.",
+  "en": "I wish I felt less pressure at work.",
+  "band": "B2",
+  "also": [
+   "sienta"
+  ]
+ },
+ {
+  "q": "Si ustedes ___ (seguir) estudiando juntos, aprenderían más rápido.",
+  "inf": "seguir",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "siguieran",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (aprenderían).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (aprenderían).",
+  "en": "If you kept studying together, you would learn faster.",
+  "band": "B2"
+ },
+ {
+  "q": "Camilo trabaja como si el mundo se ___ (acabar) mañana.",
+  "inf": "acabar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "acabara",
+  "use": "como si + imperfecto de subjuntivo",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Como si + comparación irreal; trabaja y la comparación van a la vez: imperfecto (acabara).",
+  "why_en": "Como si + unreal comparison; same time as trabaja, so the imperfect (acabara).",
+  "en": "Camilo works as if the world were ending tomorrow.",
+  "band": "B2"
+ },
+ {
+  "q": "Si mi hermano ___ (buscar) trabajo en serio, encontraría uno.",
+  "inf": "buscar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "buscara",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (encontraría).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (encontraría).",
+  "en": "If my brother looked for a job seriously, he would find one.",
+  "band": "C1"
+ },
+ {
+  "q": "Preferiríamos que ustedes ___ (esperar) afuera un momento.",
+  "inf": "esperar",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "esperaran",
+  "use": "verbo principal en condicional + que",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Preferiríamos que + subjuntivo (preferencia); preferiríamos es condicional, así que imperfecto: esperaran.",
+  "why_en": "Preferiríamos que + subjunctive (preference); preferiríamos is conditional, so imperfect.",
+  "en": "We would prefer that you wait outside for a moment.",
+  "band": "B2"
+ },
+ {
+  "q": "Nos habló como si nosotros ___ (necesitar) su permiso.",
+  "inf": "necesitar",
+  "tense": "impsubj",
+  "person": "nosotros",
+  "answer": "necesitáramos",
+  "use": "como si + imperfecto de subjuntivo",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Como si + comparación irreal; habló y la comparación van a la vez: imperfecto (necesitáramos).",
+  "why_en": "Como si + unreal comparison; same time as habló, so the imperfect (necesitáramos).",
+  "en": "He spoke to us as if we needed his permission.",
+  "band": "B2"
+ },
+ {
+  "q": "Si Ana ___ (sentir) miedo, nos lo diría.",
+  "inf": "sentir",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "sintiera",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (diría).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (diría).",
+  "en": "If Ana felt afraid, she would tell us.",
+  "band": "B2"
+ },
+ {
+  "q": "Ojalá tú ___ (pensar) en tu salud tanto como en tu trabajo.",
+  "inf": "pensar",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "pensaras",
+  "use": "ojalá + imperfecto de subjuntivo: deseo improbable o imposible",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Ojalá + deseo poco probable: imperfecto de subjuntivo; si es posible, también vale el presente.",
+  "why_en": "Ojalá + an unlikely wish takes the imperfect subjunctive; if it is possible, the present also works.",
+  "en": "I wish you thought about your health as much as your work.",
+  "band": "B2",
+  "also": [
+   "pienses"
+  ]
+ },
+ {
+  "q": "Si nosotros ___ (volver) a nacer, escogeríamos el mismo pueblo.",
+  "inf": "volver",
+  "tense": "impsubj",
+  "person": "nosotros",
+  "answer": "volviéramos",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (escogeríamos).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (escogeríamos).",
+  "en": "If we were born again, we would choose the same town.",
+  "band": "C1"
+ },
+ {
+  "q": "Mi jefe no creía que yo ___ (trabajar) tan rápido.",
+  "inf": "trabajar",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "trabajara",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "No creía que + subjuntivo (duda); creía es pasado, imperfecto: trabajara.",
+  "why_en": "No creía que takes the subjunctive (doubt); creía is past, so the imperfect: trabajara.",
+  "en": "My boss didn't believe I could work that fast.",
+  "band": "B2"
+ },
+ {
+  "q": "Me molestó que tú me ___ (mirar) con esa cara.",
+  "inf": "mirar",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "miraras",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Me molestó que + subjuntivo (emoción); molestó es pasado, imperfecto: miraras.",
+  "why_en": "Me molestó que takes the subjunctive (emotion); molestó is past, so the imperfect: miraras.",
+  "en": "It bothered me that you looked at me with that face.",
+  "band": "B2"
+ },
+ {
+  "q": "Si mi suegra ___ (tomar) café, le prepararía uno.",
+  "inf": "tomar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "tomara",
+  "use": "si + imperfecto de subjuntivo: condición irreal del presente",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Si + hipótesis irreal ahora: imperfecto de subjuntivo; el resultado va en condicional (prepararía).",
+  "why_en": "Si + unreal situation now takes the imperfect subjunctive; the result is conditional (prepararía).",
+  "en": "If my mother-in-law liked coffee, I would make her one.",
+  "band": "C1"
+ },
+ {
+  "q": "Nos extrañó que ellos no ___ (jugar) el partido de hoy.",
+  "inf": "jugar",
+  "tense": "impsubj",
+  "person": "ellos",
+  "answer": "jugaran",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Nos extrañó que + subjuntivo (emoción); extrañó es pasado, imperfecto: jugaran.",
+  "why_en": "Nos extrañó que takes the subjunctive (emotion); extrañó is past, so the imperfect: jugaran.",
+  "en": "It surprised us that they weren't playing today's match.",
+  "band": "B2"
+ },
+ {
+  "q": "Buscábamos una casa que ___ (costar) menos de cien millones.",
+  "inf": "costar",
+  "tense": "impsubj",
+  "person": "él/ella",
+  "answer": "costara",
+  "use": "oración de relativo con antecedente desconocido en pasado",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Buscábamos una casa que + subjuntivo (antecedente desconocido); buscábamos es pasado, imperfecto: costara.",
+  "why_en": "Buscábamos una casa que + subjunctive (unknown antecedent); buscábamos is past, so imperfect.",
+  "en": "We were looking for a house that cost less than a hundred million.",
+  "band": "B2"
+ },
+ {
+  "q": "Tu mamá deseaba que tú ___ (encontrar) un buen trabajo.",
+  "inf": "encontrar",
+  "tense": "impsubj",
+  "person": "tú",
+  "answer": "encontraras",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Deseaba que + subjuntivo (deseo); deseaba es pasado, imperfecto: encontraras.",
+  "why_en": "Deseaba que takes the subjunctive (desire); deseaba is past, so the imperfect: encontraras.",
+  "en": "Your mom wished you would find a good job.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi hermana me pidió que ___ (entrar) sin hacer ruido.",
+  "inf": "entrar",
+  "tense": "impsubj",
+  "person": "yo",
+  "answer": "entrara",
+  "use": "verbo principal en pasado + que (deseo, emoción, duda)",
+  "confuse": [
+   "presubj",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Me pidió que + subjuntivo (petición); pidió es pasado, imperfecto: entrara.",
+  "why_en": "Me pidió que takes the subjunctive (request); pidió is past, so the imperfect: entrara.",
+  "en": "My sister asked me to come in without making noise.",
+  "band": "B2"
+ }
+]

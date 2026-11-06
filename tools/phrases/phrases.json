@@ -1,0 +1,6064 @@
+[
+ {
+  "es": "Hola, ¿cómo vas?",
+  "en": "Hi, how's it going?",
+  "alt": [
+   "Buenas, ¿cómo vas?"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Cómo estás?",
+  "en": "How are you?",
+  "alt": [
+   "¿Cómo está usted?"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1,
+  "note": "Add (formal) in the English to ask for the usted form."
+ },
+ {
+  "es": "Buenos días",
+  "en": "Good morning",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Buenas tardes",
+  "en": "Good afternoon",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Buenas noches",
+  "en": "Good evening or good night",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Hasta luego",
+  "en": "See you later",
+  "alt": [
+   "Nos vemos"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Hasta mañana",
+  "en": "See you tomorrow",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Chao, cuídate",
+  "en": "Bye, take care",
+  "alt": [
+   "Adiós, cuídate"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Mucho gusto",
+  "en": "Nice to meet you",
+  "alt": [
+   "Encantado de conocerte",
+   "Encantada de conocerte"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Gracias, amigo",
+  "en": "Thanks, buddy",
+  "alt": [
+   "Gracias, amiga"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Muchas gracias",
+  "en": "Thank you very much",
+  "alt": [
+   "Mil gracias"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "De nada",
+  "en": "You're welcome",
+  "alt": [
+   "Con gusto"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1,
+  "note": "Con gusto is the very common Colombian reply to thanks."
+ },
+ {
+  "es": "Por favor",
+  "en": "Please",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Perdón, señor",
+  "en": "Sorry, sir",
+  "alt": [
+   "Disculpa, señor"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Con permiso",
+  "en": "Excuse me, may I pass",
+  "alt": [
+   "Con su permiso"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1,
+  "note": "Said when squeezing past someone or entering a room."
+ },
+ {
+  "es": "Disculpe, señora",
+  "en": "Excuse me, ma'am",
+  "alt": [
+   "Perdone, señora"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Sí, claro",
+  "en": "Yes, of course",
+  "alt": [
+   "Sí, por supuesto"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "No, gracias",
+  "en": "No, thank you",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "No sé",
+  "en": "I don't know",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "No entiendo",
+  "en": "I don't understand",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Está bien",
+  "en": "It's fine",
+  "alt": [
+   "Todo bien"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Estoy bien",
+  "en": "I'm fine",
+  "alt": [
+   "Estoy bien, gracias"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Más o menos",
+  "en": "So so",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Me llamo Ana",
+  "en": "My name is Ana",
+  "alt": [
+   "Mi nombre es Ana"
+  ],
+  "th": "identidad",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Cómo te llamas?",
+  "en": "What's your name?",
+  "alt": [
+   "¿Cómo se llama usted?"
+  ],
+  "th": "identidad",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿De dónde eres?",
+  "en": "Where are you from?",
+  "alt": [
+   "¿De dónde es usted?"
+  ],
+  "th": "identidad",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Soy de Colombia",
+  "en": "I'm from Colombia",
+  "alt": [],
+  "th": "identidad",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Soy de Estados Unidos",
+  "en": "I'm from the United States",
+  "alt": [],
+  "th": "identidad",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Hablo un poco de español",
+  "en": "I speak a little Spanish",
+  "alt": [],
+  "th": "identidad",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Hablas inglés?",
+  "en": "Do you speak English?",
+  "alt": [
+   "¿Habla inglés?"
+  ],
+  "th": "identidad",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Cuántos años tienes?",
+  "en": "How old are you?",
+  "alt": [
+   "¿Cuántos años tiene?"
+  ],
+  "th": "identidad",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Tengo treinta años",
+  "en": "I'm thirty years old",
+  "alt": [],
+  "th": "identidad",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Qué haces?",
+  "en": "What are you doing?",
+  "alt": [
+   "¿Qué hace?"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Qué más?",
+  "en": "What's up?",
+  "alt": [
+   "¿Qué hubo?"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1,
+  "note": "The standard casual Colombian greeting, like \"what's new\"."
+ },
+ {
+  "es": "¿Y tú?",
+  "en": "And you?",
+  "alt": [
+   "¿Y usted?"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Todo bien",
+  "en": "All good",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Igualmente, gracias",
+  "en": "Likewise, thanks",
+  "alt": [
+   "Igual, gracias"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Bienvenido a casa",
+  "en": "Welcome home (to a man)",
+  "alt": [
+   "Bienvenida a casa"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Buen provecho",
+  "en": "Enjoy your meal",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¡Salud, amigos!",
+  "en": "Cheers, everyone!",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Feliz cumpleaños",
+  "en": "Happy birthday",
+  "alt": [],
+  "th": "relaciones",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Feliz Navidad",
+  "en": "Merry Christmas",
+  "alt": [],
+  "th": "relaciones",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Buen viaje",
+  "en": "Have a good trip",
+  "alt": [],
+  "th": "viajes",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Que te vaya bien",
+  "en": "Hope it goes well for you",
+  "alt": [
+   "Que le vaya bien"
+  ],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "Cuídate mucho",
+  "en": "Take care",
+  "alt": [
+   "Cuídese mucho"
+  ],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "¿Cómo dijo?",
+  "en": "Sorry, what did you say?",
+  "alt": [
+   "¿Cómo dices?",
+   "¿Qué dijiste?"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Otra vez, por favor",
+  "en": "Again, please",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Más despacio, por favor",
+  "en": "Slower, please",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Puedes repetir?",
+  "en": "Can you repeat that?",
+  "alt": [
+   "¿Puede repetir?"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Qué significa eso?",
+  "en": "What does that mean?",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Cómo se dice \"table\" en español?",
+  "en": "How do you say \"table\" in Spanish?",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "No hablo muy bien",
+  "en": "I don't speak very well",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Estoy aprendiendo español",
+  "en": "I'm learning Spanish",
+  "alt": [],
+  "th": "educacion",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Necesito ayuda",
+  "en": "I need help",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Me puede ayudar?",
+  "en": "Can you help me?",
+  "alt": [
+   "¿Me ayudas?"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Un momento, por favor",
+  "en": "One moment, please",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Espere un momento",
+  "en": "Wait a moment (formal)",
+  "alt": [
+   "Espera un momento"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Claro que sí",
+  "en": "Of course",
+  "alt": [
+   "Por supuesto"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Ya estoy listo",
+  "en": "I'm ready (said by a man)",
+  "alt": [
+   "Ya estoy lista"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1,
+  "note": "Very common in Colombia for \"ok, done, ready\"."
+ },
+ {
+  "es": "Dale, listo",
+  "en": "Okay, sounds good",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1,
+  "note": "Common in Colombia to agree to a plan."
+ },
+ {
+  "es": "Tienes razón",
+  "en": "You're right",
+  "alt": [
+   "Tiene razón"
+  ],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "Estoy de acuerdo",
+  "en": "I agree",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "No estoy de acuerdo",
+  "en": "I disagree",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "Tal vez sí",
+  "en": "Maybe so",
+  "alt": [
+   "Quizás sí",
+   "Quizá sí"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Yo también",
+  "en": "Me too",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Yo tampoco",
+  "en": "Me neither",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "¡Qué bueno!",
+  "en": "How great!",
+  "alt": [
+   "¡Qué bien!"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¡Qué lástima!",
+  "en": "What a pity!",
+  "alt": [
+   "¡Qué pesar!"
+  ],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "¡Qué rico!",
+  "en": "How delicious!",
+  "alt": [
+   "¡Qué delicia!"
+  ],
+  "th": "alimentacion",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¡Qué bonito!",
+  "en": "How nice!",
+  "alt": [
+   "¡Qué lindo!"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¡Qué susto!",
+  "en": "What a scare!",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "¡Qué pena!",
+  "en": "How embarrassing, I'm sorry",
+  "alt": [
+   "¡Qué vergüenza!"
+  ],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1,
+  "note": "Qué pena in Colombia often means \"sorry\" or \"how embarrassing\"."
+ },
+ {
+  "es": "¡Muchas felicitaciones!",
+  "en": "Congratulations!",
+  "alt": [
+   "¡Muchas felicidades!"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¡Ten cuidado!",
+  "en": "Be careful!",
+  "alt": [
+   "¡Tenga cuidado!"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¡Ayúdeme, por favor!",
+  "en": "Help me, please!",
+  "alt": [
+   "¡Auxilio, por favor!"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¡Qué increíble!",
+  "en": "How incredible!",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¡Qué perfecto!",
+  "en": "How perfect!",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¡Qué sorpresa!",
+  "en": "What a surprise!",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Estoy cansado",
+  "en": "I'm tired (said by a man)",
+  "alt": [
+   "Estoy cansada"
+  ],
+  "th": "caracter",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Tengo hambre",
+  "en": "I'm hungry",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Tengo sed",
+  "en": "I'm thirsty",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Tengo sueño",
+  "en": "I'm sleepy",
+  "alt": [],
+  "th": "cuerpo",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Tengo frío",
+  "en": "I'm cold",
+  "alt": [],
+  "th": "cuerpo",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Tengo calor",
+  "en": "I'm hot",
+  "alt": [],
+  "th": "cuerpo",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Estoy feliz",
+  "en": "I'm happy",
+  "alt": [],
+  "th": "caracter",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Estoy triste",
+  "en": "I'm sad",
+  "alt": [],
+  "th": "caracter",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Estoy enfermo",
+  "en": "I'm sick (said by a man)",
+  "alt": [
+   "Estoy enferma"
+  ],
+  "th": "salud",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Estoy ocupado",
+  "en": "I'm busy (said by a man)",
+  "alt": [
+   "Estoy ocupada"
+  ],
+  "th": "trabajo",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Estoy perdido",
+  "en": "I'm lost (said by a man)",
+  "alt": [
+   "Estoy perdida"
+  ],
+  "th": "viajes",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Dónde está el baño?",
+  "en": "Where is the bathroom?",
+  "alt": [
+   "¿Dónde queda el baño?"
+  ],
+  "th": "servicios",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Dónde estamos?",
+  "en": "Where are we?",
+  "alt": [],
+  "th": "viajes",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Dónde vives?",
+  "en": "Where do you live?",
+  "alt": [
+   "¿Dónde vive usted?"
+  ],
+  "th": "vivienda",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Vivo en Bogotá",
+  "en": "I live in Bogotá",
+  "alt": [],
+  "th": "vivienda",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Qué hora es?",
+  "en": "What time is it?",
+  "alt": [],
+  "th": "ocio",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Son las tres",
+  "en": "It's three o'clock",
+  "alt": [],
+  "th": "ocio",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Es la una",
+  "en": "It's one o'clock",
+  "alt": [],
+  "th": "ocio",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿A qué hora?",
+  "en": "At what time?",
+  "alt": [],
+  "th": "ocio",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Cuánto cuesta?",
+  "en": "How much does it cost?",
+  "alt": [
+   "¿Cuánto vale?",
+   "¿Cuánto cuesta esto?"
+  ],
+  "th": "compras",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Cuánto es?",
+  "en": "How much is it?",
+  "alt": [
+   "¿Cuánto le debo?"
+  ],
+  "th": "compras",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Es muy caro",
+  "en": "It's very expensive",
+  "alt": [],
+  "th": "compras",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Es barato",
+  "en": "It's cheap",
+  "alt": [],
+  "th": "compras",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Quiero esto",
+  "en": "I want this",
+  "alt": [],
+  "th": "compras",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Quiero agua",
+  "en": "I want water",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Un café, por favor",
+  "en": "A coffee, please",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Un tinto, por favor",
+  "en": "A black coffee, please",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A1",
+  "tier": 1,
+  "note": "Tinto is the Colombian word for a small black coffee."
+ },
+ {
+  "es": "Agua, por favor",
+  "en": "Water, please",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "La cuenta, por favor",
+  "en": "The check, please",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Tengo una pregunta",
+  "en": "I have a question",
+  "alt": [],
+  "th": "educacion",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Qué es esto?",
+  "en": "What is this?",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Quién es?",
+  "en": "Who is it?",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Por qué?",
+  "en": "Why?",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Cuándo es?",
+  "en": "When is it?",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Cuánto tiempo?",
+  "en": "How long?",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Cuál prefieres?",
+  "en": "Which one do you prefer?",
+  "alt": [
+   "¿Cuál prefiere?"
+  ],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "¿Qué quieres?",
+  "en": "What do you want?",
+  "alt": [
+   "¿Qué quiere?"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Cómo te fue?",
+  "en": "How did it go?",
+  "alt": [
+   "¿Cómo le fue?"
+  ],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "¿Qué pasó?",
+  "en": "What happened?",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Qué te pasa?",
+  "en": "What's wrong with you?",
+  "alt": [
+   "¿Qué le pasa?"
+  ],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "¿Estás listo?",
+  "en": "Are you ready? (to a man)",
+  "alt": [
+   "¿Estás lista?"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Puedo entrar?",
+  "en": "May I come in?",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Puedo pasar?",
+  "en": "May I come through?",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Adelante, por favor",
+  "en": "Go ahead, please",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Pase, por favor",
+  "en": "Come in, please (formal)",
+  "alt": [
+   "Siga, por favor"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1,
+  "note": "Siga is very common in Colombia for \"come in\"."
+ },
+ {
+  "es": "Siéntate, por favor",
+  "en": "Sit down, please",
+  "alt": [
+   "Siéntese, por favor"
+  ],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Gracias por todo",
+  "en": "Thanks for everything",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "Gracias por venir",
+  "en": "Thanks for coming",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "Lo siento mucho",
+  "en": "I'm very sorry",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "No hay problema",
+  "en": "No problem",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "No pasa nada",
+  "en": "It's okay, don't worry",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "Quédate tranquilo",
+  "en": "Stay calm (to a man)",
+  "alt": [
+   "Quédate tranquila"
+  ],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "Tengo que irme",
+  "en": "I have to go",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "Nos vemos mañana",
+  "en": "See you tomorrow, then",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Que descanses",
+  "en": "Have a good rest",
+  "alt": [
+   "Que descanse"
+  ],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "Que tengas un buen día",
+  "en": "Have a good day",
+  "alt": [
+   "Que tenga un buen día"
+  ],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "Que te mejores",
+  "en": "Get well soon",
+  "alt": [
+   "Que se mejore"
+  ],
+  "th": "salud",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "Estoy en casa",
+  "en": "I'm at home",
+  "alt": [],
+  "th": "vivienda",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Estoy en el trabajo",
+  "en": "I'm at work",
+  "alt": [],
+  "th": "trabajo",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Voy al trabajo",
+  "en": "I'm going to work",
+  "alt": [],
+  "th": "trabajo",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Voy a casa",
+  "en": "I'm going home",
+  "alt": [],
+  "th": "vivienda",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Soy estudiante",
+  "en": "I'm a student",
+  "alt": [],
+  "th": "educacion",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Trabajo en una oficina",
+  "en": "I work in an office",
+  "alt": [],
+  "th": "trabajo",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Tengo dos hermanos",
+  "en": "I have two brothers",
+  "alt": [],
+  "th": "relaciones",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Es mi amigo",
+  "en": "He is my friend",
+  "alt": [
+   "Es mi amiga"
+  ],
+  "th": "relaciones",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Esta es mi familia",
+  "en": "This is my family",
+  "alt": [],
+  "th": "relaciones",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Te quiero",
+  "en": "I love you (to family or friends)",
+  "alt": [
+   "Te amo"
+  ],
+  "th": "relaciones",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Te extraño",
+  "en": "I miss you",
+  "alt": [
+   "Te echo de menos"
+  ],
+  "th": "relaciones",
+  "b": "A2",
+  "tier": 1
+ },
+ {
+  "es": "Me gusta mucho",
+  "en": "I like it a lot",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "No me gusta",
+  "en": "I don't like it",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Me encanta",
+  "en": "I love it",
+  "alt": [],
+  "th": "basicas",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Está muy rico",
+  "en": "It's very tasty",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Hace calor",
+  "en": "It's hot out",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Hace frío",
+  "en": "It's cold out",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Está lloviendo",
+  "en": "It's raining",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Hoy hace sol",
+  "en": "It's sunny today",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Es lunes",
+  "en": "It's Monday",
+  "alt": [],
+  "th": "ocio",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "Hoy es viernes",
+  "en": "Today is Friday",
+  "alt": [],
+  "th": "ocio",
+  "b": "A1",
+  "tier": 1
+ },
+ {
+  "es": "¿Me regala un tinto, por favor?",
+  "en": "Can I have a black coffee, please?",
+  "alt": [
+   "¿Me da un tinto, por favor?",
+   "¿Me regalas un tinto, por favor?"
+  ],
+  "th": "alimentacion",
+  "b": "A2",
+  "tier": 2,
+  "note": "regalar = to give, in polite requests in Colombia"
+ },
+ {
+  "es": "¿Qué me recomienda?",
+  "en": "What do you recommend? (formal)",
+  "alt": [
+   "¿Qué me recomiendas?"
+  ],
+  "th": "alimentacion",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Quisiera pedir, por favor",
+  "en": "I'd like to order, please",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Para mí, el pollo",
+  "en": "The chicken for me",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Tienen menú del día?",
+  "en": "Do you have a set lunch?",
+  "alt": [
+   "¿Hay menú del día?"
+  ],
+  "th": "alimentacion",
+  "b": "A2",
+  "tier": 2,
+  "note": "Corrientazo or almuerzo ejecutivo is the cheap set lunch in Colombia."
+ },
+ {
+  "es": "Sin cebolla, por favor",
+  "en": "No onion, please",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Con poco picante",
+  "en": "With little spice",
+  "alt": [
+   "Con poquito picante"
+  ],
+  "th": "alimentacion",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Soy vegetariano",
+  "en": "I'm a vegetarian (said by a man)",
+  "alt": [
+   "Soy vegetariana"
+  ],
+  "th": "alimentacion",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Soy alérgico a las nueces",
+  "en": "I'm allergic to nuts (said by a man)",
+  "alt": [
+   "Soy alérgica a las nueces"
+  ],
+  "th": "salud",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Me trae otra cerveza?",
+  "en": "Could you bring me another beer?",
+  "alt": [
+   "¿Me traes otra cerveza?"
+  ],
+  "th": "alimentacion",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Un jugo de mora, por favor",
+  "en": "A blackberry juice, please",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Para llevar, por favor",
+  "en": "To go, please",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Se puede pagar con tarjeta?",
+  "en": "Can I pay by card?",
+  "alt": [
+   "¿Aceptan tarjeta?"
+  ],
+  "th": "compras",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Puedo pagar en efectivo?",
+  "en": "Can I pay in cash?",
+  "alt": [],
+  "th": "compras",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Quédese con el cambio",
+  "en": "Keep the change",
+  "alt": [],
+  "th": "compras",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "¿Me da el recibo?",
+  "en": "Can I have the receipt?",
+  "alt": [
+   "¿Me regala el recibo?"
+  ],
+  "th": "compras",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Estoy buscando una camiseta",
+  "en": "I'm looking for a T shirt",
+  "alt": [],
+  "th": "compras",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Tiene esto en otra talla?",
+  "en": "Do you have this in another size?",
+  "alt": [
+   "¿Lo tiene en otra talla?"
+  ],
+  "th": "compras",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Me lo puedo probar?",
+  "en": "Can I try it on?",
+  "alt": [
+   "¿Me la puedo probar?"
+  ],
+  "th": "compras",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Me queda grande",
+  "en": "It's too big on me",
+  "alt": [],
+  "th": "compras",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Me queda muy apretado",
+  "en": "It's too tight on me",
+  "alt": [],
+  "th": "compras",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Tiene algo más barato?",
+  "en": "Do you have anything cheaper?",
+  "alt": [
+   "¿Hay algo más barato?"
+  ],
+  "th": "compras",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Me puede hacer un descuento?",
+  "en": "Can you give me a discount?",
+  "alt": [
+   "¿Me haces un descuento?"
+  ],
+  "th": "compras",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Voy a pensarlo",
+  "en": "I'll think about it",
+  "alt": [],
+  "th": "compras",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Me lo llevo",
+  "en": "I'll take it",
+  "alt": [],
+  "th": "compras",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Solo estoy mirando",
+  "en": "I'm just looking",
+  "alt": [],
+  "th": "compras",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿A qué hora abren?",
+  "en": "What time do you open?",
+  "alt": [
+   "¿A qué hora abren ustedes?"
+  ],
+  "th": "servicios",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿A qué hora cierran?",
+  "en": "What time do you close?",
+  "alt": [],
+  "th": "servicios",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Hay un cajero cerca?",
+  "en": "Is there an ATM nearby?",
+  "alt": [
+   "¿Hay un cajero por aquí?"
+  ],
+  "th": "servicios",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Necesito cambiar dinero",
+  "en": "I need to change money",
+  "alt": [],
+  "th": "economia",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "No tengo plata",
+  "en": "I don't have any money",
+  "alt": [],
+  "th": "economia",
+  "b": "A2",
+  "tier": 2,
+  "note": "Plata is the everyday word for money in Colombia."
+ },
+ {
+  "es": "No tengo cambio",
+  "en": "I don't have change",
+  "alt": [],
+  "th": "economia",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Tiene cambio de cien mil?",
+  "en": "Do you have change for a hundred thousand?",
+  "alt": [],
+  "th": "economia",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "¿Dónde queda la estación?",
+  "en": "Where is the station?",
+  "alt": [
+   "¿Dónde está la estación?"
+  ],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Siga derecho",
+  "en": "Keep going straight",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Gire a la derecha",
+  "en": "Turn right",
+  "alt": [
+   "Doble a la derecha"
+  ],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Gire a la izquierda",
+  "en": "Turn left",
+  "alt": [
+   "Doble a la izquierda"
+  ],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Está a dos cuadras",
+  "en": "It's two blocks away",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2,
+  "note": "Colombian addresses are by cuadra (block)."
+ },
+ {
+  "es": "Queda muy cerca",
+  "en": "It's very close",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Queda muy lejos",
+  "en": "It's very far",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Cómo llego al centro?",
+  "en": "How do I get downtown?",
+  "alt": [
+   "¿Cómo se llega al centro?"
+  ],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Cuál es la dirección?",
+  "en": "What's the address?",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Estoy esperando el bus",
+  "en": "I'm waiting for the bus",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Este bus va al aeropuerto?",
+  "en": "Does this bus go to the airport?",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Dónde me bajo?",
+  "en": "Where do I get off?",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Me bajo aquí, por favor",
+  "en": "I'm getting off here, please",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Cuánto cuesta el pasaje?",
+  "en": "How much is the fare?",
+  "alt": [
+   "¿Cuánto vale el pasaje?"
+  ],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Un taxi, por favor",
+  "en": "A taxi, please",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Lléveme al hotel, por favor",
+  "en": "Take me to the hotel, please",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Cuánto se demora?",
+  "en": "How long does it take?",
+  "alt": [
+   "¿Cuánto se tarda?"
+  ],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2,
+  "note": "Demorar = to take time, the usual verb in Colombia."
+ },
+ {
+  "es": "Hay mucho trancón",
+  "en": "There's a lot of traffic",
+  "alt": [
+   "Hay mucho tráfico"
+  ],
+  "th": "viajes",
+  "b": "B1",
+  "tier": 2,
+  "note": "Trancón is Colombian for traffic jam."
+ },
+ {
+  "es": "Perdí el vuelo",
+  "en": "I missed my flight",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Mi vuelo salió tarde",
+  "en": "My flight left late",
+  "alt": [],
+  "th": "viajes",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Tengo una reserva",
+  "en": "I have a reservation",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Hay habitaciones libres?",
+  "en": "Are there any free rooms?",
+  "alt": [
+   "¿Hay habitaciones disponibles?"
+  ],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Cuál es la clave del wifi?",
+  "en": "What's the wifi password?",
+  "alt": [
+   "¿Cuál es la contraseña del wifi?"
+  ],
+  "th": "servicios",
+  "b": "A2",
+  "tier": 2,
+  "note": "Clave is the usual Colombian word for password."
+ },
+ {
+  "es": "Mi maleta no llegó",
+  "en": "My suitcase didn't arrive",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Quiero comprar un boleto",
+  "en": "I want to buy a ticket",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Un boleto de ida, por favor",
+  "en": "A one way ticket, please",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Salgo mañana temprano",
+  "en": "I leave early tomorrow",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Qué día es hoy?",
+  "en": "What day is today?",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Qué fecha es hoy?",
+  "en": "What's the date today?",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Hoy es quince de marzo",
+  "en": "Today is March fifteenth",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Mi cumpleaños es en mayo",
+  "en": "My birthday is in May",
+  "alt": [],
+  "th": "relaciones",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Llego a las ocho",
+  "en": "I arrive at eight",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Son las diez y media",
+  "en": "It's half past ten",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Es un cuarto para las cinco",
+  "en": "It's a quarter to five",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Son las seis y cuarto",
+  "en": "It's a quarter past six",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Es muy temprano",
+  "en": "It's very early",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Es muy tarde",
+  "en": "It's very late",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Llego en diez minutos",
+  "en": "I'll be there in ten minutes",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Voy tarde",
+  "en": "I'm running late",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Qué vas a hacer hoy?",
+  "en": "What are you going to do today?",
+  "alt": [
+   "¿Qué va a hacer hoy?"
+  ],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Qué planes tienes?",
+  "en": "What plans do you have?",
+  "alt": [
+   "¿Qué planes tiene?"
+  ],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Quieres tomar algo?",
+  "en": "Do you want to get a drink?",
+  "alt": [
+   "¿Quiere tomar algo?"
+  ],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Quieres venir con nosotros?",
+  "en": "Do you want to come with us?",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Vamos al cine",
+  "en": "Let's go to the movies",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Salimos esta noche?",
+  "en": "Shall we go out tonight?",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Me gustaría ir",
+  "en": "I'd like to go",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Nos vemos a las siete",
+  "en": "We'll meet at seven",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Dónde nos encontramos?",
+  "en": "Where shall we meet?",
+  "alt": [
+   "¿Dónde nos vemos?"
+  ],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Te espero en la entrada",
+  "en": "I'll wait for you at the entrance",
+  "alt": [
+   "Te espero afuera"
+  ],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Estoy llegando",
+  "en": "I'm almost there",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2,
+  "note": "Said when you are on your way."
+ },
+ {
+  "es": "Ya voy",
+  "en": "I'm coming",
+  "alt": [
+   "Ya voy para allá"
+  ],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2,
+  "note": "Colombians say \"ya voy\" meaning soon, not necessarily right now."
+ },
+ {
+  "es": "No puedo ir",
+  "en": "I can't go",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Otro día será",
+  "en": "Another day then",
+  "alt": [],
+  "th": "ocio",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Me da pereza salir",
+  "en": "I can't be bothered to go out",
+  "alt": [],
+  "th": "ocio",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Hagamos un asado",
+  "en": "Let's have a barbecue",
+  "alt": [],
+  "th": "ocio",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "¿Cuál es tu número?",
+  "en": "What's your number?",
+  "alt": [
+   "¿Cuál es su número?"
+  ],
+  "th": "medios",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Te llamo más tarde",
+  "en": "I'll call you later",
+  "alt": [],
+  "th": "medios",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Llámame cuando llegues",
+  "en": "Call me when you arrive",
+  "alt": [],
+  "th": "medios",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "No contesta el teléfono",
+  "en": "He isn't answering the phone",
+  "alt": [
+   "No contesta el celular"
+  ],
+  "th": "medios",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Se me acabó la batería",
+  "en": "My battery died",
+  "alt": [],
+  "th": "medios",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "No tengo señal",
+  "en": "I have no signal",
+  "alt": [],
+  "th": "medios",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Me quedé sin datos",
+  "en": "I ran out of data",
+  "alt": [],
+  "th": "medios",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Te mando un mensaje",
+  "en": "I'll send you a message",
+  "alt": [
+   "Te escribo un mensaje"
+  ],
+  "th": "medios",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Te escribo por WhatsApp",
+  "en": "I'll message you on WhatsApp",
+  "alt": [],
+  "th": "medios",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Mándame la ubicación",
+  "en": "Send me the location",
+  "alt": [
+   "Envíame la ubicación"
+  ],
+  "th": "medios",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Aló, ¿quién habla?",
+  "en": "Hello, who's speaking?",
+  "alt": [],
+  "th": "medios",
+  "b": "A2",
+  "tier": 2,
+  "note": "Aló is the phone greeting in Colombia."
+ },
+ {
+  "es": "No se escucha bien",
+  "en": "I can't hear well",
+  "alt": [],
+  "th": "medios",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Se cortó la llamada",
+  "en": "The call dropped",
+  "alt": [],
+  "th": "medios",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Déjame un mensaje de voz",
+  "en": "Leave me a voice message",
+  "alt": [],
+  "th": "medios",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Revisa tu correo",
+  "en": "Check your email",
+  "alt": [
+   "Revise su correo"
+  ],
+  "th": "medios",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Cargo el celular",
+  "en": "I'm charging my phone",
+  "alt": [],
+  "th": "medios",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Tengo una reunión a las nueve",
+  "en": "I have a meeting at nine",
+  "alt": [],
+  "th": "trabajo",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Trabajo desde casa",
+  "en": "I work from home",
+  "alt": [],
+  "th": "trabajo",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Salgo del trabajo a las seis",
+  "en": "I leave work at six",
+  "alt": [],
+  "th": "trabajo",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Mi jefe está en reunión",
+  "en": "My boss is in a meeting",
+  "alt": [],
+  "th": "trabajo",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Tengo mucho trabajo",
+  "en": "I have a lot of work",
+  "alt": [],
+  "th": "trabajo",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Estoy buscando trabajo",
+  "en": "I'm looking for a job",
+  "alt": [],
+  "th": "trabajo",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Mañana tengo examen",
+  "en": "I have an exam tomorrow",
+  "alt": [],
+  "th": "educacion",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Estudio medicina",
+  "en": "I study medicine",
+  "alt": [],
+  "th": "educacion",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "No entendí la tarea",
+  "en": "I didn't understand the homework",
+  "alt": [],
+  "th": "educacion",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Tengo clase a las ocho",
+  "en": "I have class at eight",
+  "alt": [],
+  "th": "educacion",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Me duele la cabeza",
+  "en": "My head hurts",
+  "alt": [],
+  "th": "salud",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Me duele el estómago",
+  "en": "My stomach hurts",
+  "alt": [],
+  "th": "salud",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Tengo fiebre",
+  "en": "I have a fever",
+  "alt": [],
+  "th": "salud",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Tengo tos",
+  "en": "I have a cough",
+  "alt": [],
+  "th": "salud",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Estoy resfriado",
+  "en": "I have a cold (said by a man)",
+  "alt": [
+   "Estoy resfriada"
+  ],
+  "th": "salud",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Necesito un médico",
+  "en": "I need a doctor",
+  "alt": [],
+  "th": "salud",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Tengo cita con el doctor",
+  "en": "I have an appointment with the doctor",
+  "alt": [],
+  "th": "salud",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Dónde queda la farmacia?",
+  "en": "Where is the pharmacy?",
+  "alt": [],
+  "th": "salud",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Me siento mal",
+  "en": "I feel bad",
+  "alt": [],
+  "th": "salud",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Me siento mejor",
+  "en": "I feel better",
+  "alt": [],
+  "th": "salud",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "No he dormido bien",
+  "en": "I haven't slept well",
+  "alt": [],
+  "th": "salud",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Soy alérgico a la penicilina",
+  "en": "I'm allergic to penicillin (said by a man)",
+  "alt": [
+   "Soy alérgica a la penicilina"
+  ],
+  "th": "salud",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Tome una pastilla cada ocho horas",
+  "en": "Take one pill every eight hours",
+  "alt": [],
+  "th": "salud",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Tengo que descansar",
+  "en": "I need to rest",
+  "alt": [],
+  "th": "salud",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Vivo en un apartamento",
+  "en": "I live in an apartment",
+  "alt": [],
+  "th": "vivienda",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Mi casa tiene tres cuartos",
+  "en": "My house has three bedrooms",
+  "alt": [
+   "Mi casa tiene tres habitaciones"
+  ],
+  "th": "vivienda",
+  "b": "A2",
+  "tier": 2,
+  "note": "Cuarto is the usual word for bedroom in Colombia."
+ },
+ {
+  "es": "Pago el arriendo mañana",
+  "en": "I'm paying the rent tomorrow",
+  "alt": [],
+  "th": "vivienda",
+  "b": "B1",
+  "tier": 2,
+  "note": "Arriendo is rent in Colombia."
+ },
+ {
+  "es": "Vivo con mis padres",
+  "en": "I live with my parents",
+  "alt": [],
+  "th": "vivienda",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Voy a cocinar la cena",
+  "en": "I'm going to cook dinner",
+  "alt": [],
+  "th": "vivienda",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Tengo que lavar la ropa",
+  "en": "I have to do the laundry",
+  "alt": [],
+  "th": "vivienda",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Se fue la luz",
+  "en": "The power went out",
+  "alt": [],
+  "th": "vivienda",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "No hay agua",
+  "en": "There's no water",
+  "alt": [],
+  "th": "vivienda",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Abre la ventana, por favor",
+  "en": "Open the window, please",
+  "alt": [
+   "Abra la ventana, por favor"
+  ],
+  "th": "vivienda",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Cierra la puerta, por favor",
+  "en": "Close the door, please",
+  "alt": [
+   "Cierre la puerta, por favor"
+  ],
+  "th": "vivienda",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Apaga la luz",
+  "en": "Turn off the light",
+  "alt": [
+   "Apague la luz"
+  ],
+  "th": "vivienda",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Prende el televisor",
+  "en": "Turn on the TV",
+  "alt": [
+   "Prenda el televisor"
+  ],
+  "th": "vivienda",
+  "b": "A2",
+  "tier": 2,
+  "note": "Prender = to turn on, usual in Colombia."
+ },
+ {
+  "es": "Saca la basura",
+  "en": "Take out the trash",
+  "alt": [
+   "Saque la basura"
+  ],
+  "th": "vivienda",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Mi vecino hace mucho ruido",
+  "en": "My neighbor makes a lot of noise",
+  "alt": [],
+  "th": "vivienda",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Hoy está nublado",
+  "en": "It's cloudy today",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Va a llover",
+  "en": "It's going to rain",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Hace mucho viento",
+  "en": "It's very windy",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Está haciendo mucho sol",
+  "en": "The sun is really strong",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Hoy hace buen clima",
+  "en": "The weather is nice today",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Qué clima hace en Medellín?",
+  "en": "What's the weather like in Medellín?",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Llevo paraguas",
+  "en": "I'm taking an umbrella",
+  "alt": [
+   "Llevo el paraguas"
+  ],
+  "th": "naturaleza",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Está haciendo un frío terrible",
+  "en": "It's terribly cold",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Estoy muy emocionado",
+  "en": "I'm very excited (said by a man)",
+  "alt": [
+   "Estoy muy emocionada"
+  ],
+  "th": "caracter",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Estoy muy nervioso",
+  "en": "I'm very nervous (said by a man)",
+  "alt": [
+   "Estoy muy nerviosa"
+  ],
+  "th": "caracter",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Estoy enojado contigo",
+  "en": "I'm angry with you (said by a man)",
+  "alt": [
+   "Estoy enojada contigo"
+  ],
+  "th": "caracter",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Estoy preocupado",
+  "en": "I'm worried (said by a man)",
+  "alt": [
+   "Estoy preocupada"
+  ],
+  "th": "caracter",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Estoy aburrido",
+  "en": "I'm bored (said by a man)",
+  "alt": [
+   "Estoy aburrida"
+  ],
+  "th": "caracter",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Me siento muy solo",
+  "en": "I feel very alone (said by a man)",
+  "alt": [
+   "Me siento muy sola"
+  ],
+  "th": "caracter",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Estoy harto de esto",
+  "en": "I'm fed up with this (said by a man)",
+  "alt": [
+   "Estoy harta de esto"
+  ],
+  "th": "caracter",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Me da miedo",
+  "en": "It scares me",
+  "alt": [],
+  "th": "caracter",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Me da vergüenza",
+  "en": "I'm embarrassed",
+  "alt": [],
+  "th": "caracter",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Estoy muy contento",
+  "en": "I'm very glad (said by a man)",
+  "alt": [
+   "Estoy muy contenta"
+  ],
+  "th": "caracter",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Él es muy amable",
+  "en": "He is very kind",
+  "alt": [
+   "Ella es muy amable"
+  ],
+  "th": "caracter",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Eres muy simpático",
+  "en": "You're very nice (to a man)",
+  "alt": [
+   "Eres muy simpática"
+  ],
+  "th": "caracter",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Qué bonita tu casa",
+  "en": "Your house is beautiful",
+  "alt": [
+   "Qué linda tu casa"
+  ],
+  "th": "vivienda",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Me encanta tu camisa",
+  "en": "I love your shirt",
+  "alt": [],
+  "th": "compras",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Te ves muy bien",
+  "en": "You look great",
+  "alt": [
+   "Se ve muy bien"
+  ],
+  "th": "relaciones",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Qué buena idea",
+  "en": "What a good idea",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Eso suena bien",
+  "en": "That sounds good",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Me parece buena idea",
+  "en": "I think it's a good idea",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Pienso que sí",
+  "en": "I think so",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Creo que no",
+  "en": "I don't think so",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "No lo creo",
+  "en": "I doubt it",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Eso depende",
+  "en": "It depends",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Tú qué piensas?",
+  "en": "What do you think?",
+  "alt": [
+   "¿Usted qué piensa?"
+  ],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "En mi opinión, es mejor",
+  "en": "In my opinion, it's better",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Prefiero el té",
+  "en": "I prefer tea",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Me parece caro",
+  "en": "It seems expensive to me",
+  "alt": [],
+  "th": "compras",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Es muy interesante",
+  "en": "It's very interesting",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Es una buena película",
+  "en": "It's a good movie",
+  "alt": [],
+  "th": "arte",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "La comida estuvo deliciosa",
+  "en": "The food was delicious",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Me gusta la música latina",
+  "en": "I like Latin music",
+  "alt": [],
+  "th": "arte",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Toco la guitarra",
+  "en": "I play the guitar",
+  "alt": [],
+  "th": "arte",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Me gusta ver series",
+  "en": "I like watching series",
+  "alt": [],
+  "th": "medios",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Leo todas las noches",
+  "en": "I read every night",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Voy al gimnasio",
+  "en": "I go to the gym",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Juego fútbol con mis amigos",
+  "en": "I play soccer with my friends",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Me gusta caminar",
+  "en": "I like to walk",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Este fin de semana viajo",
+  "en": "I'm traveling this weekend",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "El año pasado viajé a Cartagena",
+  "en": "Last year I traveled to Cartagena",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Ayer fui al supermercado",
+  "en": "I went to the supermarket yesterday",
+  "alt": [],
+  "th": "compras",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Mañana voy a trabajar",
+  "en": "Tomorrow I'm going to work",
+  "alt": [],
+  "th": "trabajo",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Anoche dormí muy mal",
+  "en": "I slept very badly last night",
+  "alt": [],
+  "th": "salud",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Esta mañana desayuné huevos",
+  "en": "This morning I had eggs for breakfast",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Normalmente almuerzo a las doce",
+  "en": "I usually have lunch at noon",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Cenamos tarde",
+  "en": "We eat dinner late",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Hace un año que vivo aquí",
+  "en": "I've lived here for a year",
+  "alt": [],
+  "th": "vivienda",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "¿Cuánto tiempo llevas aquí?",
+  "en": "How long have you been here?",
+  "alt": [
+   "¿Cuánto tiempo lleva aquí?"
+  ],
+  "th": "viajes",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Es mi primera vez aquí",
+  "en": "It's my first time here",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Es tu primera vez aquí?",
+  "en": "Is this your first time here?",
+  "alt": [
+   "¿Es su primera vez aquí?"
+  ],
+  "th": "viajes",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Perdón por llegar tarde",
+  "en": "Sorry for being late",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Perdón por la molestia",
+  "en": "Sorry for the trouble",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Fue sin querer",
+  "en": "It was an accident",
+  "alt": [
+   "Fue sin intención"
+  ],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Fue mi culpa",
+  "en": "It was my fault",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "No fue mi culpa",
+  "en": "It wasn't my fault",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Lo olvidé",
+  "en": "I forgot",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Se me olvidó",
+  "en": "I forgot it, it slipped my mind",
+  "alt": [
+   "Se me pasó"
+  ],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Se me perdió el celular",
+  "en": "I lost my phone",
+  "alt": [],
+  "th": "medios",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Me robaron la cartera",
+  "en": "They stole my wallet",
+  "alt": [
+   "Me robaron el bolso"
+  ],
+  "th": "servicios",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Necesito llamar a la policía",
+  "en": "I need to call the police",
+  "alt": [],
+  "th": "servicios",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Hubo un accidente",
+  "en": "There was an accident",
+  "alt": [],
+  "th": "servicios",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Llame a una ambulancia",
+  "en": "Call an ambulance",
+  "alt": [],
+  "th": "servicios",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "¿Dónde queda el hospital?",
+  "en": "Where is the hospital?",
+  "alt": [],
+  "th": "salud",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Estoy esperando una respuesta",
+  "en": "I'm waiting for an answer",
+  "alt": [],
+  "th": "trabajo",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Le mando el informe hoy",
+  "en": "I'll send you the report today",
+  "alt": [],
+  "th": "trabajo",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Necesito más tiempo",
+  "en": "I need more time",
+  "alt": [],
+  "th": "trabajo",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Ya terminé",
+  "en": "I'm done",
+  "alt": [
+   "Ya acabé"
+  ],
+  "th": "trabajo",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Todavía no he terminado",
+  "en": "I haven't finished yet",
+  "alt": [],
+  "th": "trabajo",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Me ascendieron en el trabajo",
+  "en": "I got promoted at work",
+  "alt": [],
+  "th": "trabajo",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Renuncié ayer",
+  "en": "I quit yesterday",
+  "alt": [],
+  "th": "trabajo",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Me pagan los viernes",
+  "en": "I get paid on Fridays",
+  "alt": [],
+  "th": "economia",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Trabajo medio tiempo",
+  "en": "I work part time",
+  "alt": [],
+  "th": "trabajo",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Tengo un día libre",
+  "en": "I have a day off",
+  "alt": [],
+  "th": "trabajo",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Estoy de vacaciones",
+  "en": "I'm on vacation",
+  "alt": [],
+  "th": "ocio",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Voy a presentar el examen",
+  "en": "I'm going to take the exam",
+  "alt": [],
+  "th": "educacion",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Saqué buena nota",
+  "en": "I got a good grade",
+  "alt": [],
+  "th": "educacion",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Perdí la materia",
+  "en": "I failed the class",
+  "alt": [],
+  "th": "educacion",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Estudio todos los días",
+  "en": "I study every day",
+  "alt": [],
+  "th": "educacion",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Tengo que entregar la tarea",
+  "en": "I have to hand in the homework",
+  "alt": [],
+  "th": "educacion",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "¿A qué te dedicas?",
+  "en": "What do you do for a living?",
+  "alt": [
+   "¿A qué se dedica?"
+  ],
+  "th": "identidad",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Soy ingeniero",
+  "en": "I'm an engineer (said by a man)",
+  "alt": [
+   "Soy ingeniera"
+  ],
+  "th": "identidad",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Soy casado",
+  "en": "I'm married (said by a man)",
+  "alt": [
+   "Soy casada"
+  ],
+  "th": "identidad",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Estoy soltero",
+  "en": "I'm single (said by a man)",
+  "alt": [
+   "Estoy soltera"
+  ],
+  "th": "identidad",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Tengo una hija",
+  "en": "I have a daughter",
+  "alt": [],
+  "th": "relaciones",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Mi mamá cocina muy bien",
+  "en": "My mom cooks very well",
+  "alt": [],
+  "th": "relaciones",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Mi papá trabaja mucho",
+  "en": "My dad works a lot",
+  "alt": [],
+  "th": "relaciones",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Mis abuelos viven en el campo",
+  "en": "My grandparents live in the countryside",
+  "alt": [],
+  "th": "relaciones",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Tengo novia",
+  "en": "I have a girlfriend",
+  "alt": [],
+  "th": "relaciones",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Quiero presentarte a mi amigo",
+  "en": "I want to introduce you to my friend",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Somos de la misma ciudad",
+  "en": "We are from the same city",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Hablamos mañana",
+  "en": "We'll talk tomorrow",
+  "alt": [],
+  "th": "relaciones",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Hace mucho no te veía",
+  "en": "I haven't seen you in a long time",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "¡Cuánto tiempo sin verte!",
+  "en": "Long time no see!",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Me alegra verte",
+  "en": "I'm glad to see you",
+  "alt": [
+   "Me alegra verlo"
+  ],
+  "th": "relaciones",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Gracias por la invitación",
+  "en": "Thanks for the invitation",
+  "alt": [],
+  "th": "relaciones",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Llevo una botella de vino",
+  "en": "I'm bringing a bottle of wine",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Que lo pases bien",
+  "en": "Have a good time",
+  "alt": [
+   "Que lo disfrutes"
+  ],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Me tengo que ir ya",
+  "en": "I have to leave now",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Puedo usar su baño?",
+  "en": "May I use your bathroom? (formal)",
+  "alt": [
+   "¿Puedo usar tu baño?"
+  ],
+  "th": "servicios",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Me presta su lapicero?",
+  "en": "Could I borrow your pen? (formal)",
+  "alt": [
+   "¿Me prestas tu lapicero?"
+  ],
+  "th": "educacion",
+  "b": "A2",
+  "tier": 2,
+  "note": "Lapicero is the common word for ballpoint pen in Colombia."
+ },
+ {
+  "es": "¿Está ocupado este puesto?",
+  "en": "Is this seat taken?",
+  "alt": [
+   "¿Está ocupado este asiento?"
+  ],
+  "th": "servicios",
+  "b": "A2",
+  "tier": 2,
+  "note": "Puesto = seat or place in line in Colombia."
+ },
+ {
+  "es": "¿Quién sigue en la fila?",
+  "en": "Who's next in line?",
+  "alt": [
+   "¿Quién es el último?"
+  ],
+  "th": "servicios",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Necesito un recibo",
+  "en": "I need a receipt",
+  "alt": [],
+  "th": "servicios",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Quiero hacer una queja",
+  "en": "I want to make a complaint",
+  "alt": [],
+  "th": "servicios",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Esto no funciona",
+  "en": "This doesn't work",
+  "alt": [],
+  "th": "servicios",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "Está dañado",
+  "en": "It's broken",
+  "alt": [],
+  "th": "servicios",
+  "b": "B1",
+  "tier": 2,
+  "note": "Dañado is the usual Colombian word for broken."
+ },
+ {
+  "es": "¿Me lo puede arreglar?",
+  "en": "Can you fix it for me?",
+  "alt": [],
+  "th": "servicios",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Quiero devolver esto",
+  "en": "I want to return this",
+  "alt": [],
+  "th": "compras",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Es para un regalo",
+  "en": "It's for a gift",
+  "alt": [],
+  "th": "compras",
+  "b": "A2",
+  "tier": 2
+ },
+ {
+  "es": "¿Me lo puede envolver?",
+  "en": "Can you wrap it for me?",
+  "alt": [],
+  "th": "compras",
+  "b": "B1",
+  "tier": 2
+ },
+ {
+  "es": "Me da igual",
+  "en": "I don't mind, it's all the same to me",
+  "alt": [
+   "Me da lo mismo"
+  ],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Ni modo",
+  "en": "Oh well, nothing to be done",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3,
+  "note": "Ni modo is more Mexican but understood and used in Colombia."
+ },
+ {
+  "es": "De una",
+  "en": "Sure, right away, let's do it",
+  "alt": [
+   "Dale de una"
+  ],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3,
+  "note": "\"De una\" is Colombian slang for right away or yes, let's go."
+ },
+ {
+  "es": "Vale la pena",
+  "en": "It's worth it",
+  "alt": [
+   "Sí vale la pena"
+  ],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Échame una mano",
+  "en": "Give me a hand",
+  "alt": [
+   "Écheme una mano"
+  ],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Estoy pendiente",
+  "en": "I'm keeping an eye out",
+  "alt": [
+   "Estoy atento"
+  ],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3,
+  "note": "Estar pendiente = to keep track of something."
+ },
+ {
+  "es": "Esté pendiente",
+  "en": "Keep an eye out (formal)",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "De pronto llueve",
+  "en": "It might rain",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "B1",
+  "tier": 3,
+  "note": "De pronto = maybe, perhaps, in Colombia."
+ },
+ {
+  "es": "De pronto no puedo ir",
+  "en": "Maybe I won't be able to go",
+  "alt": [],
+  "th": "ocio",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Ahorita te llamo",
+  "en": "I'll call you in a bit",
+  "alt": [],
+  "th": "medios",
+  "b": "B1",
+  "tier": 3,
+  "note": "Ahorita is vague: soon, in a moment, or even right now."
+ },
+ {
+  "es": "Ahorita vengo",
+  "en": "I'll be right back",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Ya mismo salgo",
+  "en": "I'm leaving right now",
+  "alt": [],
+  "th": "ocio",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "A la orden",
+  "en": "At your service, how can I help?",
+  "alt": [],
+  "th": "servicios",
+  "b": "B1",
+  "tier": 3,
+  "note": "Shopkeepers say it to greet customers."
+ },
+ {
+  "es": "Con mucho gusto",
+  "en": "With pleasure",
+  "alt": [],
+  "th": "servicios",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "No hay de qué",
+  "en": "Don't mention it",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Qué pena con usted",
+  "en": "I'm sorry about that (formal)",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3,
+  "note": "Qué pena con usted is a polite way to apologize."
+ },
+ {
+  "es": "Qué pena molestarlo",
+  "en": "Sorry to bother you",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Qué chévere",
+  "en": "How cool",
+  "alt": [
+   "Qué bacano"
+  ],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 3,
+  "note": "Chévere and bacano both mean cool, great in Colombia."
+ },
+ {
+  "es": "Está muy bacano",
+  "en": "It's really cool",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Parce, ¿qué hubo?",
+  "en": "Hey buddy, what's up?",
+  "alt": [
+   "Parcero, ¿qué hubo?"
+  ],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3,
+  "note": "Parce is Colombian slang for buddy, mostly among young people."
+ },
+ {
+  "es": "Vamos de rumba",
+  "en": "Let's go out partying",
+  "alt": [],
+  "th": "ocio",
+  "b": "B1",
+  "tier": 3,
+  "note": "Rumba = party, rumbear = to party."
+ },
+ {
+  "es": "Estoy de parche con mis amigos",
+  "en": "I'm hanging out with my friends",
+  "alt": [],
+  "th": "ocio",
+  "b": "B1",
+  "tier": 3,
+  "note": "Parche = a group of friends."
+ },
+ {
+  "es": "Está muy tenaz",
+  "en": "It's really tough",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3,
+  "note": "Tenaz is Colombian slang for tough, difficult, intense."
+ },
+ {
+  "es": "Estoy full de trabajo",
+  "en": "I'm swamped with work",
+  "alt": [],
+  "th": "trabajo",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Toca esperar",
+  "en": "We have to wait",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3,
+  "note": "Tocar = to have to, in Colombia."
+ },
+ {
+  "es": "Me tocó pagar a mí",
+  "en": "I ended up having to pay",
+  "alt": [],
+  "th": "economia",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me tocó madrugar",
+  "en": "I had to get up early",
+  "alt": [],
+  "th": "trabajo",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Hágale, pues",
+  "en": "Alright then, go for it",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "No más, gracias",
+  "en": "That's all, thanks",
+  "alt": [],
+  "th": "servicios",
+  "b": "B1",
+  "tier": 3,
+  "note": "No más after a verb often means just or only."
+ },
+ {
+  "es": "Pilas con eso",
+  "en": "Watch out for that",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3,
+  "note": "Pilas = be alert, in Colombia."
+ },
+ {
+  "es": "¿Sí o qué?",
+  "en": "Right or what?",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Qué oso",
+  "en": "How embarrassing",
+  "alt": [],
+  "th": "caracter",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Estoy de buenas hoy",
+  "en": "I'm in a good mood today",
+  "alt": [],
+  "th": "caracter",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Estoy de malas hoy",
+  "en": "I'm in a bad mood today",
+  "alt": [],
+  "th": "caracter",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Hagamos una vaca",
+  "en": "Let's all chip in",
+  "alt": [],
+  "th": "economia",
+  "b": "B1",
+  "tier": 3,
+  "note": "Hacer una vaca = to pool money."
+ },
+ {
+  "es": "Vamos a camellar",
+  "en": "Let's get to work",
+  "alt": [],
+  "th": "trabajo",
+  "b": "B1",
+  "tier": 3,
+  "note": "Camellar = to work hard, Colombian slang."
+ },
+ {
+  "es": "Estoy sin un peso",
+  "en": "I'm broke",
+  "alt": [
+   "Estoy sin plata"
+  ],
+  "th": "economia",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Está carísimo",
+  "en": "It's super expensive",
+  "alt": [],
+  "th": "compras",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me salió barato",
+  "en": "It turned out cheap",
+  "alt": [],
+  "th": "compras",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me costó un ojo de la cara",
+  "en": "It cost me an arm and a leg",
+  "alt": [],
+  "th": "compras",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Eso es un robo",
+  "en": "That's a rip off",
+  "alt": [],
+  "th": "compras",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Le hago un precio",
+  "en": "I'll give you a deal",
+  "alt": [],
+  "th": "compras",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Se acabó la plata",
+  "en": "The money ran out",
+  "alt": [],
+  "th": "economia",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Ando corto de plata",
+  "en": "I'm short of money",
+  "alt": [],
+  "th": "economia",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Hay que ahorrar",
+  "en": "We have to save",
+  "alt": [],
+  "th": "economia",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me da lo mismo, de verdad",
+  "en": "I really don't mind",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "No me importa",
+  "en": "I don't care",
+  "alt": [],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "No te preocupes",
+  "en": "Don't worry",
+  "alt": [
+   "No se preocupe"
+  ],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Tranquilo, no pasa nada",
+  "en": "Relax, it's nothing",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "No te metas en eso",
+  "en": "Stay out of it",
+  "alt": [
+   "No se meta en eso"
+  ],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Eso no es asunto mío",
+  "en": "That's none of my business",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Cada quien con lo suyo",
+  "en": "Each to their own",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Cuenta conmigo",
+  "en": "Count on me",
+  "alt": [
+   "Cuente conmigo"
+  ],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Puedes contar conmigo",
+  "en": "You can count on me",
+  "alt": [
+   "Puede contar conmigo"
+  ],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me hace falta tiempo",
+  "en": "I'm short of time",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me hace falta un café",
+  "en": "I need a coffee",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me hacen falta mis amigos",
+  "en": "I miss my friends",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me cae bien",
+  "en": "I like him, he's nice",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3,
+  "note": "Caer bien = to like someone, to get along with."
+ },
+ {
+  "es": "Me cae mal",
+  "en": "I don't like him",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Nos llevamos muy bien",
+  "en": "We get along very well",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Se pelearon ayer",
+  "en": "They had a fight yesterday",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Ya hicimos las paces",
+  "en": "We've made up",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me quedé sin palabras",
+  "en": "I was speechless",
+  "alt": [],
+  "th": "caracter",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Se me hizo tarde",
+  "en": "I ran late",
+  "alt": [],
+  "th": "ocio",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Se me fue el tiempo",
+  "en": "Time got away from me",
+  "alt": [],
+  "th": "ocio",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me dieron ganas de llorar",
+  "en": "I felt like crying",
+  "alt": [],
+  "th": "caracter",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me dan ganas de dormir",
+  "en": "I feel like sleeping",
+  "alt": [],
+  "th": "cuerpo",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Tengo ganas de viajar",
+  "en": "I feel like traveling",
+  "alt": [],
+  "th": "viajes",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "No tengo ganas de salir",
+  "en": "I don't feel like going out",
+  "alt": [],
+  "th": "ocio",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me muero de hambre",
+  "en": "I'm starving",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me muero de sueño",
+  "en": "I'm dying of sleepiness",
+  "alt": [],
+  "th": "cuerpo",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me muero de la risa",
+  "en": "I'm dying of laughter",
+  "alt": [],
+  "th": "caracter",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Estoy que me caigo del sueño",
+  "en": "I'm about to fall asleep on my feet",
+  "alt": [],
+  "th": "cuerpo",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Se me hizo agua la boca",
+  "en": "My mouth watered",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Me quedé dormido",
+  "en": "I fell asleep (said by a man)",
+  "alt": [
+   "Me quedé dormida"
+  ],
+  "th": "cuerpo",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me desperté tarde",
+  "en": "I woke up late",
+  "alt": [],
+  "th": "cuerpo",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Me levanté temprano",
+  "en": "I got up early",
+  "alt": [],
+  "th": "cuerpo",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Me acosté tarde",
+  "en": "I went to bed late",
+  "alt": [],
+  "th": "cuerpo",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Me cansé de esperar",
+  "en": "I got tired of waiting",
+  "alt": [],
+  "th": "caracter",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Estoy de mal humor",
+  "en": "I'm in a bad mood",
+  "alt": [],
+  "th": "caracter",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me sacas de quicio",
+  "en": "You drive me crazy",
+  "alt": [
+   "Me saca de quicio"
+  ],
+  "th": "caracter",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Eso me tiene preocupado",
+  "en": "That has me worried",
+  "alt": [],
+  "th": "caracter",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Eso me da rabia",
+  "en": "That makes me angry",
+  "alt": [],
+  "th": "caracter",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me lo imaginaba",
+  "en": "I figured",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "No me lo esperaba",
+  "en": "I didn't expect it",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Qué casualidad",
+  "en": "What a coincidence",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Qué suerte tienes",
+  "en": "You're so lucky",
+  "alt": [
+   "Qué suerte tiene"
+  ],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Qué mala suerte",
+  "en": "What bad luck",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Con razón",
+  "en": "No wonder",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Ya veo",
+  "en": "I see",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Ya caigo",
+  "en": "Now I get it",
+  "alt": [
+   "Ya entiendo"
+  ],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Ahora entiendo",
+  "en": "Now I understand",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "No me digas",
+  "en": "You don't say, no way",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "¿En serio?",
+  "en": "Seriously?",
+  "alt": [
+   "¿De verdad?"
+  ],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "¿Cómo así?",
+  "en": "What do you mean?",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3,
+  "note": "\"¿Cómo así?\" shows surprise in Colombia."
+ },
+ {
+  "es": "Más bien",
+  "en": "Rather, more like",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Por lo menos",
+  "en": "At least",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Sin embargo, funciona",
+  "en": "However, it works",
+  "alt": [],
+  "th": "basicas",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Al fin y al cabo",
+  "en": "After all, at the end of the day",
+  "alt": [],
+  "th": "basicas",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Por si acaso",
+  "en": "Just in case",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Mejor dicho",
+  "en": "In other words",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "O sea, no puedo",
+  "en": "I mean, I can't",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Es decir, no",
+  "en": "That is to say, no",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Dime la verdad",
+  "en": "Tell me the truth",
+  "alt": [
+   "Dígame la verdad"
+  ],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Cuéntame más",
+  "en": "Tell me more",
+  "alt": [
+   "Cuénteme más"
+  ],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Cuéntame todo",
+  "en": "Tell me everything",
+  "alt": [
+   "Cuénteme todo"
+  ],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me contaron que te casas",
+  "en": "I heard you're getting married",
+  "alt": [
+   "Me contaron que se casa"
+  ],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Se corrió la voz",
+  "en": "Word got around",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Dicen que va a llover",
+  "en": "They say it's going to rain",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Parece que va a llover",
+  "en": "It looks like rain",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Parece mentira",
+  "en": "It's hard to believe",
+  "alt": [],
+  "th": "basicas",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Ni idea",
+  "en": "No idea",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "No tengo ni idea",
+  "en": "I have no idea",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Quién sabe",
+  "en": "Who knows",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Eso espero",
+  "en": "I hope so",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Ojalá que sí",
+  "en": "I hope so, I wish",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Ojalá no llueva",
+  "en": "I hope it doesn't rain",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Ojalá pudiera ir",
+  "en": "I wish I could go",
+  "alt": [],
+  "th": "ocio",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Si pudiera, iría",
+  "en": "If I could, I'd go",
+  "alt": [],
+  "th": "ocio",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Si tuviera plata, viajaría",
+  "en": "If I had money, I'd travel",
+  "alt": [],
+  "th": "economia",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Si me llamas, te contesto",
+  "en": "If you call me, I'll answer",
+  "alt": [],
+  "th": "medios",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Cuando llegue, te aviso",
+  "en": "When I arrive, I'll let you know",
+  "alt": [],
+  "th": "medios",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Apenas salga, te llamo",
+  "en": "As soon as I leave, I'll call you",
+  "alt": [],
+  "th": "medios",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Antes de que se me olvide",
+  "en": "Before I forget",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Para que lo sepas",
+  "en": "Just so you know",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Por cierto, ¿cómo vas?",
+  "en": "By the way, how are you doing?",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "A propósito, ¿vienes?",
+  "en": "By the way, are you coming?",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Mientras tanto, espera",
+  "en": "In the meantime, wait",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "De todos modos, gracias",
+  "en": "Anyway, thanks",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "En todo caso, llámame",
+  "en": "In any case, call me",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "En realidad, no sé",
+  "en": "Actually, I don't know",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "La verdad, no me gusta",
+  "en": "To be honest, I don't like it",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Honestamente, prefiero otro",
+  "en": "Honestly, I prefer another",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Cambiando de tema",
+  "en": "Changing the subject",
+  "alt": [],
+  "th": "basicas",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Hablando de eso",
+  "en": "Speaking of that",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "A mi modo de ver",
+  "en": "The way I see it",
+  "alt": [],
+  "th": "basicas",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Desde mi punto de vista",
+  "en": "From my point of view",
+  "alt": [],
+  "th": "basicas",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Tengo mis dudas",
+  "en": "I have my doubts",
+  "alt": [],
+  "th": "basicas",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "No estoy seguro",
+  "en": "I'm not sure (said by a man)",
+  "alt": [
+   "No estoy segura"
+  ],
+  "th": "basicas",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Estoy seguro de eso",
+  "en": "I'm sure about that (said by a man)",
+  "alt": [
+   "Estoy segura de eso"
+  ],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me suena familiar",
+  "en": "It sounds familiar",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Eso no tiene sentido",
+  "en": "That makes no sense",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Tiene sentido",
+  "en": "It makes sense",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Todo salió bien",
+  "en": "Everything went well",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Todo salió mal",
+  "en": "Everything went wrong",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Salió todo al revés",
+  "en": "Everything went the opposite way",
+  "alt": [],
+  "th": "basicas",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Más vale tarde que nunca",
+  "en": "Better late than never",
+  "alt": [],
+  "th": "basicas",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Poco a poco",
+  "en": "Little by little",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Paso a paso",
+  "en": "Step by step",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Uno nunca sabe",
+  "en": "You never know",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Así es la vida",
+  "en": "That's life",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Así son las cosas",
+  "en": "That's how things are",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Es pan comido",
+  "en": "It's a piece of cake",
+  "alt": [],
+  "th": "basicas",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Eso está difícil",
+  "en": "That's going to be hard",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me parece raro",
+  "en": "It seems strange to me",
+  "alt": [],
+  "th": "basicas",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Está por verse",
+  "en": "That remains to be seen",
+  "alt": [],
+  "th": "basicas",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Me duele la espalda",
+  "en": "My back hurts",
+  "alt": [],
+  "th": "cuerpo",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Me torcí el tobillo",
+  "en": "I twisted my ankle",
+  "alt": [],
+  "th": "cuerpo",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me corté el dedo",
+  "en": "I cut my finger",
+  "alt": [],
+  "th": "cuerpo",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me mareo en el carro",
+  "en": "I get carsick",
+  "alt": [],
+  "th": "salud",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me siento mareado",
+  "en": "I feel dizzy (said by a man)",
+  "alt": [
+   "Me siento mareada"
+  ],
+  "th": "salud",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Tengo la nariz tapada",
+  "en": "My nose is blocked",
+  "alt": [],
+  "th": "salud",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Tengo dolor de garganta",
+  "en": "I have a sore throat",
+  "alt": [],
+  "th": "salud",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Necesito tomar agua",
+  "en": "I need to drink water",
+  "alt": [],
+  "th": "cuerpo",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Debería hacer más ejercicio",
+  "en": "I should exercise more",
+  "alt": [],
+  "th": "salud",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Tengo la presión alta",
+  "en": "I have high blood pressure",
+  "alt": [],
+  "th": "salud",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Me hicieron un examen de sangre",
+  "en": "They gave me a blood test",
+  "alt": [],
+  "th": "salud",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Me recetó unas pastillas",
+  "en": "He prescribed me some pills",
+  "alt": [],
+  "th": "salud",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Me dieron la incapacidad",
+  "en": "They gave me a sick note",
+  "alt": [],
+  "th": "salud",
+  "b": "B2",
+  "tier": 3,
+  "note": "Incapacidad = medical leave certificate in Colombia."
+ },
+ {
+  "es": "Mañana tengo una cirugía",
+  "en": "I have surgery tomorrow",
+  "alt": [],
+  "th": "salud",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "No he comido nada hoy",
+  "en": "I haven't eaten anything today",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Ponle más sal",
+  "en": "Add more salt",
+  "alt": [
+   "Póngale más sal"
+  ],
+  "th": "alimentacion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Está muy dulce",
+  "en": "It's very sweet",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Está un poco salado",
+  "en": "It's a little salty",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me sobró comida",
+  "en": "I had food left over",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me quedé con hambre",
+  "en": "I was still hungry",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Invito yo",
+  "en": "It's on me",
+  "alt": [
+   "Yo invito"
+  ],
+  "th": "alimentacion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Pagamos a medias",
+  "en": "We split the bill",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Cada uno paga lo suyo",
+  "en": "Everyone pays their own",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Voy a hacer mercado",
+  "en": "I'm going grocery shopping",
+  "alt": [],
+  "th": "compras",
+  "b": "B1",
+  "tier": 3,
+  "note": "Hacer mercado = to do the weekly grocery shop in Colombia."
+ },
+ {
+  "es": "Se me acabó el café",
+  "en": "I ran out of coffee",
+  "alt": [],
+  "th": "alimentacion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Aprendí mucho hoy",
+  "en": "I learned a lot today",
+  "alt": [],
+  "th": "educacion",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "No me alcanzó el tiempo",
+  "en": "I ran out of time",
+  "alt": [],
+  "th": "educacion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Repasé toda la noche",
+  "en": "I studied all night",
+  "alt": [],
+  "th": "educacion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me fue bien en el examen",
+  "en": "I did well on the exam",
+  "alt": [],
+  "th": "educacion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me estoy preparando para el examen",
+  "en": "I'm getting ready for the exam",
+  "alt": [],
+  "th": "educacion",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Voy a hacer una maestría",
+  "en": "I'm going to do a master's degree",
+  "alt": [],
+  "th": "educacion",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "¿Me puede explicar otra vez?",
+  "en": "Can you explain it to me again?",
+  "alt": [],
+  "th": "educacion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "No sé cómo se escribe",
+  "en": "I don't know how it's spelled",
+  "alt": [],
+  "th": "educacion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "¿Cómo se pronuncia esto?",
+  "en": "How do you pronounce this?",
+  "alt": [],
+  "th": "educacion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Estoy mejorando mi español",
+  "en": "I'm improving my Spanish",
+  "alt": [],
+  "th": "educacion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Cometí un error",
+  "en": "I made a mistake",
+  "alt": [],
+  "th": "educacion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Tenemos que hablar",
+  "en": "We need to talk",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Necesito hablar contigo",
+  "en": "I need to talk to you",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Confío en ti",
+  "en": "I trust you",
+  "alt": [
+   "Confío en usted"
+  ],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me siento a gusto contigo",
+  "en": "I feel comfortable with you",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Nunca me escuchas",
+  "en": "You never listen to me",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Pónganse de acuerdo",
+  "en": "Come to an agreement (you all)",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Se casaron en diciembre",
+  "en": "They got married in December",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Estoy esperando un bebé",
+  "en": "I'm expecting a baby",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Mi hermana es mayor que yo",
+  "en": "My sister is older than me",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Se parece mucho a su papá",
+  "en": "He looks a lot like his dad",
+  "alt": [],
+  "th": "relaciones",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Es muy callado",
+  "en": "He is very quiet",
+  "alt": [],
+  "th": "caracter",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Es muy terco",
+  "en": "He is very stubborn",
+  "alt": [],
+  "th": "caracter",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Ella es muy trabajadora",
+  "en": "She is very hardworking",
+  "alt": [],
+  "th": "caracter",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Es una persona muy sincera",
+  "en": "He is a very sincere person",
+  "alt": [],
+  "th": "caracter",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Soy una persona tranquila",
+  "en": "I'm a calm person",
+  "alt": [],
+  "th": "caracter",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "No soy muy paciente",
+  "en": "I'm not very patient",
+  "alt": [],
+  "th": "caracter",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me gusta estar solo",
+  "en": "I like being alone (said by a man)",
+  "alt": [
+   "Me gusta estar sola"
+  ],
+  "th": "caracter",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Soy colombiano",
+  "en": "I'm Colombian (said by a man)",
+  "alt": [
+   "Soy colombiana"
+  ],
+  "th": "identidad",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Soy estadounidense",
+  "en": "I'm American",
+  "alt": [],
+  "th": "identidad",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Nací en Texas",
+  "en": "I was born in Texas",
+  "alt": [],
+  "th": "identidad",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Crecí en una ciudad pequeña",
+  "en": "I grew up in a small city",
+  "alt": [],
+  "th": "identidad",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Llevo tres años en Colombia",
+  "en": "I've been in Colombia for three years",
+  "alt": [],
+  "th": "identidad",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Mi lengua materna es el inglés",
+  "en": "My native language is English",
+  "alt": [],
+  "th": "identidad",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "¿Cómo se llama esto en español?",
+  "en": "What is this called in Spanish?",
+  "alt": [],
+  "th": "identidad",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Soy católico",
+  "en": "I'm Catholic (said by a man)",
+  "alt": [
+   "Soy católica"
+  ],
+  "th": "religion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Voy a misa los domingos",
+  "en": "I go to Mass on Sundays",
+  "alt": [],
+  "th": "religion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Dios mío",
+  "en": "My God",
+  "alt": [],
+  "th": "religion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Gracias a Dios",
+  "en": "Thank God",
+  "alt": [],
+  "th": "religion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Si Dios quiere",
+  "en": "God willing",
+  "alt": [],
+  "th": "religion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Que Dios te bendiga",
+  "en": "God bless you",
+  "alt": [
+   "Que Dios lo bendiga"
+  ],
+  "th": "religion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Qué Dios la bendiga",
+  "en": "May God bless her",
+  "alt": [],
+  "th": "religion",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Hoy es día festivo",
+  "en": "Today is a holiday",
+  "alt": [],
+  "th": "ocio",
+  "b": "B1",
+  "tier": 3,
+  "note": "Colombia has many puentes festivos, long holiday weekends."
+ },
+ {
+  "es": "Celebramos la Navidad en familia",
+  "en": "We celebrate Christmas with family",
+  "alt": [],
+  "th": "religion",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Voy a votar el domingo",
+  "en": "I'm going to vote on Sunday",
+  "alt": [],
+  "th": "politica",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Las elecciones son en mayo",
+  "en": "The elections are in May",
+  "alt": [],
+  "th": "politica",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "No me gusta la política",
+  "en": "I don't like politics",
+  "alt": [],
+  "th": "politica",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "El gobierno subió los impuestos",
+  "en": "The government raised taxes",
+  "alt": [],
+  "th": "politica",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Hay una marcha en el centro",
+  "en": "There's a march downtown",
+  "alt": [],
+  "th": "politica",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "La ley cambió el año pasado",
+  "en": "The law changed last year",
+  "alt": [],
+  "th": "politica",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Los precios subieron mucho",
+  "en": "Prices went up a lot",
+  "alt": [],
+  "th": "economia",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Todo está más caro",
+  "en": "Everything is more expensive",
+  "alt": [],
+  "th": "economia",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Tengo que pagar los impuestos",
+  "en": "I have to pay taxes",
+  "alt": [],
+  "th": "economia",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Quiero abrir una cuenta de ahorros",
+  "en": "I want to open a savings account",
+  "alt": [],
+  "th": "economia",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Pedí un préstamo al banco",
+  "en": "I took out a loan from the bank",
+  "alt": [],
+  "th": "economia",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Me llegó la factura de la luz",
+  "en": "The electricity bill arrived",
+  "alt": [],
+  "th": "economia",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "El dólar subió hoy",
+  "en": "The dollar went up today",
+  "alt": [],
+  "th": "economia",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Estoy ahorrando para un carro",
+  "en": "I'm saving up for a car",
+  "alt": [],
+  "th": "economia",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Vamos a hacer un presupuesto",
+  "en": "Let's make a budget",
+  "alt": [],
+  "th": "economia",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Me subieron el sueldo",
+  "en": "They raised my salary",
+  "alt": [],
+  "th": "economia",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Llovió toda la noche",
+  "en": "It rained all night",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Hay mucha neblina",
+  "en": "There's a lot of fog",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Está temblando",
+  "en": "There's an earthquake",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Vamos a la montaña",
+  "en": "Let's go to the mountains",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "La playa está llena",
+  "en": "The beach is crowded",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me encantan los animales",
+  "en": "I love animals",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Hay que cuidar el planeta",
+  "en": "We have to take care of the planet",
+  "alt": [],
+  "th": "naturaleza",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Quiero ver ese museo",
+  "en": "I want to see that museum",
+  "alt": [],
+  "th": "arte",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Me gusta pintar",
+  "en": "I like to paint",
+  "alt": [],
+  "th": "arte",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Fui a un concierto anoche",
+  "en": "I went to a concert last night",
+  "alt": [],
+  "th": "arte",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Esa novela es muy buena",
+  "en": "That novel is very good",
+  "alt": [],
+  "th": "arte",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Estoy leyendo un libro",
+  "en": "I'm reading a book",
+  "alt": [],
+  "th": "arte",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "La obra empieza a las ocho",
+  "en": "The play starts at eight",
+  "alt": [],
+  "th": "arte",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Escucho música todo el día",
+  "en": "I listen to music all day",
+  "alt": [],
+  "th": "arte",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Me gusta bailar salsa",
+  "en": "I like dancing salsa",
+  "alt": [],
+  "th": "arte",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Vi las noticias esta mañana",
+  "en": "I watched the news this morning",
+  "alt": [],
+  "th": "medios",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Lo vi en Instagram",
+  "en": "I saw it on Instagram",
+  "alt": [],
+  "th": "medios",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Eso salió en las noticias",
+  "en": "That was on the news",
+  "alt": [],
+  "th": "medios",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Eso es mentira",
+  "en": "That's a lie",
+  "alt": [],
+  "th": "medios",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Es una noticia falsa",
+  "en": "It's fake news",
+  "alt": [],
+  "th": "medios",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "No tengo internet",
+  "en": "I don't have internet",
+  "alt": [],
+  "th": "medios",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Se cayó el internet",
+  "en": "The internet went down",
+  "alt": [],
+  "th": "medios",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Descarga la aplicación",
+  "en": "Download the app",
+  "alt": [
+   "Descargue la aplicación"
+  ],
+  "th": "medios",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Mándame el enlace",
+  "en": "Send me the link",
+  "alt": [
+   "Envíeme el enlace"
+  ],
+  "th": "medios",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Actualiza el celular",
+  "en": "Update your phone",
+  "alt": [
+   "Actualice el celular"
+  ],
+  "th": "medios",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Eso lo dice la ciencia",
+  "en": "Science says so",
+  "alt": [],
+  "th": "ciencia",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Hicieron un estudio nuevo",
+  "en": "They did a new study",
+  "alt": [],
+  "th": "ciencia",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Hay que probarlo primero",
+  "en": "We have to test it first",
+  "alt": [],
+  "th": "ciencia",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "La tecnología avanza rápido",
+  "en": "Technology moves fast",
+  "alt": [],
+  "th": "ciencia",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "La reunión se aplazó",
+  "en": "The meeting was postponed",
+  "alt": [],
+  "th": "trabajo",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Quedamos en vernos el lunes",
+  "en": "We agreed to meet on Monday",
+  "alt": [],
+  "th": "trabajo",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Estamos en contacto",
+  "en": "Let's stay in touch",
+  "alt": [],
+  "th": "trabajo",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Te copio el correo",
+  "en": "I'll copy you on the email",
+  "alt": [
+   "Le copio el correo"
+  ],
+  "th": "trabajo",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Estoy atrasado con el trabajo",
+  "en": "I'm behind on work (said by a man)",
+  "alt": [
+   "Estoy atrasada con el trabajo"
+  ],
+  "th": "trabajo",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Me ofrecieron un puesto",
+  "en": "They offered me a position",
+  "alt": [],
+  "th": "trabajo",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Mi jefe es muy exigente",
+  "en": "My boss is very demanding",
+  "alt": [],
+  "th": "trabajo",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Hoy hay paro de buses",
+  "en": "There's a bus strike today",
+  "alt": [],
+  "th": "viajes",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Tomé el metro",
+  "en": "I took the metro",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Tomé un taxi",
+  "en": "I took a taxi",
+  "alt": [],
+  "th": "viajes",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Pedí un carro por la aplicación",
+  "en": "I ordered a car on the app",
+  "alt": [],
+  "th": "viajes",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Perdón, me equivoqué de calle",
+  "en": "Sorry, I took the wrong street",
+  "alt": [],
+  "th": "viajes",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Nos perdimos en el camino",
+  "en": "We got lost on the way",
+  "alt": [],
+  "th": "viajes",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Nos quedamos sin gasolina",
+  "en": "We ran out of gas",
+  "alt": [],
+  "th": "viajes",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Hay que hacer cola",
+  "en": "You have to wait in line",
+  "alt": [],
+  "th": "servicios",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Hay que sacar turno",
+  "en": "You have to take a number",
+  "alt": [],
+  "th": "servicios",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Estoy haciendo una diligencia",
+  "en": "I'm running an errand",
+  "alt": [],
+  "th": "servicios",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Voy a hacer una vuelta",
+  "en": "I'm going to run an errand",
+  "alt": [],
+  "th": "servicios",
+  "b": "B2",
+  "tier": 3
+ },
+ {
+  "es": "Mañana pasa el camión de la basura",
+  "en": "The garbage truck comes tomorrow",
+  "alt": [],
+  "th": "vivienda",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Se dañó la lavadora",
+  "en": "The washing machine broke",
+  "alt": [],
+  "th": "vivienda",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Estoy limpiando la casa",
+  "en": "I'm cleaning the house",
+  "alt": [],
+  "th": "vivienda",
+  "b": "A2",
+  "tier": 3
+ },
+ {
+  "es": "Nos mudamos el mes que viene",
+  "en": "We're moving next month",
+  "alt": [],
+  "th": "vivienda",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Busco apartamento para arrendar",
+  "en": "I'm looking for an apartment to rent",
+  "alt": [],
+  "th": "vivienda",
+  "b": "B1",
+  "tier": 3
+ },
+ {
+  "es": "Pintamos la sala de blanco",
+  "en": "We painted the living room white",
+  "alt": [],
+  "th": "vivienda",
+  "b": "B1",
+  "tier": 3
+ }
+]

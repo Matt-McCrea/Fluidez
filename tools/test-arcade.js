@@ -1024,7 +1024,7 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     ok(modes.length === 2 && /Tranquilo · 10 preguntas/.test(textOf(modes[0])) &&
        /Contrarreloj · 60 s/.test(textOf(modes[1])), 'the sheet does not offer Tranquilo and Contrarreloj');
     const chips = has('arc-chip');
-    ok(chips.length === 1 + W.ENGINE.TENSES.length && /Todos los de tu nivel/.test(textOf(chips[0])),
+    ok(chips.length === 2 + W.ENGINE.TENSES.length && /Todos los de tu nivel/.test(textOf(chips[0])),
        `the tense picker has ${chips.length} chips`);
     ok(chips[0].cls().includes('on'), '"Todos los de tu nivel" is not the default');
     chips.filter(c => c.textContent === (W.ENGINE.TENSE_LABEL.condicional || 'condicional'))[0].click();
@@ -1116,10 +1116,13 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     localStorage.removeItem('fluidez.srs');
 
     // tenses by band, cumulative
-    const counts = { A1: 1, A2: 6, B1: 10, B2: 14, C1: 14 };
+    const counts = { A1: 1, A2: 6, B1: 10, B2: 14, C1: 15 };
     Object.keys(counts).forEach(b => ok(GI.tensesForBand(b).length === counts[b], `${b} has ${GI.tensesForBand(b).length} tenses, wanted ${counts[b]}`));
     ok(GI.tensesForBand('A1').join() === 'presente', 'A1 is not the present alone');
 
+    // Verbos, first the old path (no bank), then the bank
+    const REAL_VG = W.VERB_GAPS;
+    W.VERB_GAPS = [];
     // Verbos: a sentence with a gap, tapped until known, then typed
     W.Profile.set('A1'); GI.reset();
     let vs = draws('sverb', 120, { tapFirst: true });
@@ -1156,6 +1159,96 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
       ok(fb.every(i => i.play === 'choose' && i.options.length === 4), 'a fallback verb item is not tapped first');
     }
     W.Profile.set('B1'); GI.reset();
+    W.VERB_GAPS = REAL_VG;
+
+    // Verbos from the sentence bank (data/verb-gaps.js), tested on a fixture of our own
+    {
+      const mk = (q, inf, t, p, a, o, b, extra) => Object.assign({ q, i: inf, t, p, a, o, w: 'Porque ' + inf + ' aqui.', we: 'Because ' + inf + ' here.', e: 'English of ' + inf, b }, extra || {});
+      const FX = [
+        mk('Ojalá que mañana no ___ (llover) durante el partido.', 'llover', 'presubj', 'él/ella', 'llueva', ['llueva', 'llueve', 'lloviera', 'lloverá'], 'B1'),
+        mk('Si ___ (tener) más tiempo, Camilo viajaría más.', 'tener', 'impsubj', 'yo', 'tuviera', ['tuviera', 'tendría', 'tenga', 'tenía'], 'B2', { x: ['tuviese'] }),
+        mk('Si ___ (saber), te habría llamado antes.', 'saber', 'pluscsubj', 'yo', 'hubiera sabido', ['hubiera sabido', 'había sabido', 'supiera', 'habría sabido'], 'C1', { x: ['hubiese sabido'] }),
+        mk('Todos los días Ana ___ (correr) en el parque.', 'correr', 'presente', 'él/ella', 'corre', ['corre', 'corrió', 'corría', 'correrá'], 'A1'),
+        mk('Mi papá siempre ___ (leer) el periódico.', 'leer', 'presente', 'él/ella', 'lee', ['lee', 'leyó', 'leía', 'leerá'], 'A1'),
+        mk('Los lunes yo ___ (trabajar) desde casa.', 'trabajar', 'presente', 'yo', 'trabajo', ['trabajo', 'trabajé', 'trabajaba', 'trabajaré'], 'A1'),
+        mk('Cada mañana Valentina ___ (beber) jugo de mango.', 'beber', 'presente', 'él/ella', 'bebe', ['bebe', 'bebió', 'bebía', 'beberá'], 'A1'),
+        mk('Cuando yo ___ (llegar) a casa, te llamo.', 'llegar', 'presubj', 'yo', 'llegue', ['llegue', 'llego', 'llegaré', 'llegara'], 'C1')
+      ];
+      W.VERB_GAPS = FX;
+      localStorage.removeItem('fluidez.vgrecent'); localStorage.removeItem('fluidez.srs');
+      W.Profile.set('B1'); GI.reset();
+      const qs = FX.map(f => f.q.replace(/___/, '＿＿＿'));
+      let vs2 = draws('sverb', 40, { tenses: ['presubj'] });
+      ok(vs2.length === 40 && vs2.every(i => i.topic === 'tense:presubj' && qs.indexOf(i.prompt) !== -1), 'Verbos did not deal from VERB_GAPS');
+      ok(vs2.every(i => i.prompt !== qs[7]), 'a C1 sentence was dealt to a B1 player (more than one band up)');
+      ok(vs2.every(i => { const f = FX.filter(x => x.q.replace(/___/, '＿＿＿') === i.prompt)[0]; return f && i.options.length === f.o.length && f.o.every(o => i.options.indexOf(o) !== -1) && i.answer === f.a; }),
+         'the options are not the item\'s o');
+      ok(vs2.every(i => i.sub === null && i.peek && i.id === 'vt:' + i.inf + ':presubj'), 'English not withheld, or the SRS id changed');
+      // the band's default set honours the tense filter
+      W.Profile.set('C1'); GI.reset(); localStorage.removeItem('fluidez.vgrecent');
+      let allT = {};
+      draws('sverb', 200, {}).forEach(i => { allT[i.topic] = 1; });
+      ok(allT['tense:pluscsubj'] === 1 && allT['tense:impsubj'] === 1 && allT['tense:presente'] === 1, 'the default C1 set does not reach pluscsubj and the rest');
+      const pc = draws('sverb', 20, { tenses: ['pluscsubj'] });
+      ok(pc.length === 20 && pc.every(i => i.topic === 'tense:pluscsubj'), 'the pluscsubj chip tense was not honoured');
+      // typed accepts the -se twin
+      localStorage.setItem('fluidez.srs', JSON.stringify({ 'vt:saber:pluscsubj': { reps: 2 }, 'vt:tener:impsubj': { reps: 2 } }));
+      const ty = draws('sverb', 10, { tenses: ['pluscsubj'] })[0];
+      ok(ty.play === 'type' && ty.accept.indexOf('hubiera sabido') !== -1 && ty.accept.indexOf('hubiese sabido') !== -1, 'typed does not accept the -se twin');
+      const ty2 = draws('sverb', 10, { tenses: ['impsubj'] })[0];
+      ok(ty2.play === 'type' && ty2.accept.join() === 'tuviera,tuviese', 'typed impsubj does not accept both forms');
+      localStorage.removeItem('fluidez.srs');
+      // no repeats within a round: four presente sentences, four draws
+      W.Profile.set('A1'); GI.reset(); localStorage.removeItem('fluidez.vgrecent');
+      const four = draws('sverb', 4, { tenses: ['presente'] });
+      ok(new Set(four.map(i => i.prompt)).size === 4, 'a sentence repeated inside a round');
+      const next4 = draws('sverb', 3, { tenses: ['presente'] });
+      const rec = JSON.parse(localStorage.getItem('fluidez.vgrecent'));
+      ok(next4.length === 3 && rec.length === 7, `recent sentences are not remembered (${rec.length} of 7)`);
+      ok(new Set(next4.map(i => i.prompt)).size === 3, 'a sentence repeated across rounds while fresh ones remained');
+      // a tense with no bank items falls back to the corpus path
+      W.Profile.set('B1'); GI.reset();
+      const fbk = draws('sverb', 30, { tenses: ['condicional'] });
+      ok(fbk.length > 20 && fbk.every(i => i.topic === 'tense:condicional'), 'a tense with no bank items did not fall back');
+      // why, by band
+      W.Profile.set('A2'); GI.reset(); localStorage.removeItem('fluidez.vgrecent');
+      const a2 = draws('sverb', 1, { tenses: ['presubj'] })[0];
+      ok(a2.note === 'Because llover here.' && a2.noteAlt === 'Porque llover aqui.', 'A2 does not get the English reason first');
+      W.Profile.set('B1'); GI.reset(); localStorage.removeItem('fluidez.vgrecent');
+      const b1 = draws('sverb', 1, { tenses: ['presubj'] })[0];
+      ok(b1.note === 'Porque llover aqui.' && b1.noteAlt === 'Because llover here.', 'B1 does not get the Spanish reason first');
+
+      // on screen: English hidden until asked; the reason only after a miss
+      localStorage.removeItem('fluidez.vgrecent'); localStorage.removeItem('fluidez.srs');
+      W.VERB_GAPS = FX.slice(0, 1);
+      W.Profile.set('B1'); GI.reset();
+      const q2 = [], r2 = [];
+      const sST = global.setTimeout, sRAF = global.requestAnimationFrame;
+      global.setTimeout = fn => { q2.push(fn); return q2.length; };
+      global.requestAnimationFrame = fn => { r2.push(fn); return r2.length; };
+      try {
+        W.Games.setListRenderer(function () { W.Shell.go(); });
+        W.Shell.go();
+        STAGE.all(n => n.cls().includes('arc-tile'))[0].click();
+        STAGE.all(n => n.cls().includes('arc-chip')).filter(c => /Todos/.test(c.textContent))[0].click();
+        STAGE.all(n => n.cls().includes('arc-chip')).filter(c => c.textContent === (W.ENGINE.TENSE_LABEL.presubj || 'presubj'))[0].click();
+        STAGE.all(n => n.cls().includes('arc-mode'))[0].click();
+        const on = c => STAGE.all(n => n.cls().includes(c));
+        ok(on('g-sub').length === 1 && !/English of/.test(on('g-sub')[0].textContent), 'the English is on screen before it is asked for');
+        on('g-peek')[0].click();
+        ok(/English of llover/.test(on('g-sub')[0].textContent), 'ver en inglés did not reveal the English');
+        const wrong = on('g-opt').filter(o => o.textContent !== 'llueva')[0];
+        wrong.click();
+        const fb = on('g-correct')[0];
+        ok(!!fb && /llueva/.test(fb.textContent) && /Porque llover aqui\./.test(fb.textContent) && /English of llover/.test(fb.textContent), 'the miss box lacks the answer, the Spanish reason or the English');
+        on('g-peek').filter(b => /English/.test(b.textContent))[0].click();
+        ok(/Because llover here\./.test(on('g-correct')[0].textContent), 'the other-language reason is not one tap away');
+        on('g-exit')[0].click(); while (q2.length) q2.shift()();
+      } finally { global.setTimeout = sST; global.requestAnimationFrame = sRAF; }
+      localStorage.removeItem('fluidez.vgrecent');
+      W.VERB_GAPS = REAL_VG;
+      W.Profile.set('B1'); GI.reset();
+    }
 
     // Palabras: the grind. English shown, Spanish options; typed only once answered right
     {
@@ -1316,14 +1409,123 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
       W.Profile.set('B1'); GI.reset();
     }
 
-    // Frases: typed at six words or fewer, chips up to eight, nothing longer
-    const fr = draws('sphrase', 300, {});
-    ok(fr.length > 250, `Frases dealt only ${fr.length} of 300`);
+    // Frases: the grind over data/phrases.js. Tapped first, then typed (6 words or fewer) or built (7 to 8)
+    {
+      const P = W.PHRASES, PL = GI.phraseList().list;
+      ok(P.length >= 700 && PL.length === P.length, `PHRASES has ${P.length} entries, the list ${PL.length}`);
+      localStorage.removeItem('fluidez.srs');
+      W.Profile.set('A1'); GI.reset();
+      const nw = es => es.replace(/[.,;:!?¿¡"“”]/g, '').trim().split(/\s+/).length;
+      const playP = (n, opts, st) => { const out = []; for (let i = 0; i < n; i++) { const it = GI.next('sphrase', 1, rng, Object.assign({ grind: st }, opts)); if (it) out.push(it); } return out; };
+      const fresh = () => ({ asked: 0, newN: 0, used: {} });
+      const td = W.SRS.today();
+
+      // a fresh A1 player: new phrases in list order (those within one band), all tapped, four Spanish options
+      let pr1 = playP(10, { count: 10, gkind: 'sphrase' }, fresh());
+      ok(pr1.length === 10, `a fresh Frases round dealt ${pr1.length} of 10`);
+      ok(pr1.every(i => i.play === 'choose' && i.options.length === 4 && i.options.indexOf(i.answer) !== -1 && new Set(i.options).size === 4),
+         'a fresh Frases item is not a four-way choice');
+      ok(pr1.every(i => /^p:/.test(i.id) && i.id === 'p:' + i.answer && i.kind === 'translate'), 'a Frases item has no p:<es> id');
+      const okBand = e => ['A1', 'A2'].indexOf(e.c) !== -1;
+      const firstNew = PL.filter(okBand).slice(0, 10).map(e => e.es);
+      ok(pr1.map(i => i.answer).join('|') === firstNew.join('|'),
+         `the new phrases are not the first ten in list order: ${pr1.filter(i => i.grind === 'new').map(i => i.answer)}`);
+      ok(pr1.every(i => PL.find(e => e.es === i.answer).c !== 'C1' && PL.find(e => e.es === i.answer).c !== 'B2'), 'an A1 player was dealt a phrase two bands up');
+      let sameEn = 0;
+      pr1.forEach(i => i.options.forEach(o => { if (o !== i.answer && PL.find(e => e.es === o).en.toLowerCase() === i.prompt.toLowerCase()) sameEn++; }));
+      ok(sameEn === 0, 'a Frases option shares the English');
+      console.log('  Frases fresh A1 first ten: ' + pr1.map(i => i.prompt + ' -> ' + i.answer + ' [' + i.grind + ']').join('; '));
+
+      // second round: round one's phrases answered right come back typed or built; misses stay tapped
+      pr1.forEach((it, i) => { W.SRS.enrol(it.id); if (i % 5 !== 4) W.SRS.grade(it.id, true); });
+      const pr2 = playP(10, { count: 10, gkind: 'sphrase' }, fresh());
+      ok(pr2.filter(i => i.play === 'type' || i.play === 'build').length >= 4, 'round two of Frases did not come back typed or built');
+      ok(pr2.filter(i => i.grind === 'new').length <= 4, 'Frases round two broke the new cap');
+      ok(pr2.every(i => i.play !== 'type' || nw(i.answer) <= 6) && pr2.every(i => i.play !== 'build' || (nw(i.answer) >= 7 && nw(i.answer) <= 8)),
+         'Frases typed/built at the wrong length');
+      ok(pr2.every(i => i.play !== 'choose' || !PL.find(e => e.es === i.answer) || !answered(i.id)), 'an answered phrase came back tapped');
+      console.log('  Frases second round: ' + pr2.map(i => i.grind + '/' + i.play).join(', '));
+      function answered(id) { const c = JSON.parse(localStorage.getItem('fluidez.srs') || '{}')[id]; return !!(c && c.reps > 0); }
+
+      // typed accepts es and every alt, ignoring the marks; built is chips without punctuation
+      const withAlt = PL.find(e => e.alt.length && e.n <= 6), withQ = PL.find(e => /^¿/.test(e.es) && e.n <= 6);
+      const longer = PL.find(e => e.n >= 7 && e.n <= 8 && e.c === 'A1') || PL.find(e => e.n >= 7 && e.n <= 8 && ['A1', 'A2'].indexOf(e.c) !== -1);
+      const sKnown = {};
+      [withAlt, withQ, longer].filter(Boolean).forEach((e, k) => { sKnown[e.id] = { reps: 2, due: td - 1 - k, last: td - 9, box: 2 }; });
+      localStorage.setItem('fluidez.srs', JSON.stringify(sKnown));
+      const dealt = playP(3, {}, fresh());
+      const byEs = es => dealt.find(i => i.answer === es || i.reveal === es);
+      const ta = byEs(withAlt.es);
+      ok(ta && ta.play === 'type', 'a due phrase six words or shorter is not typed');
+      withAlt.alt.forEach(a => ok(GI.grade(ta, a) === 'good', `alt "${a}" is not accepted`));
+      ok(GI.grade(ta, withAlt.es) === 'good', 'the main Spanish is not accepted');
+      const tq = byEs(withQ.es);
+      ok(GI.grade(tq, withQ.es.replace(/[¿¡?!.]/g, '')) === 'good', 'the typed check does not ignore ¿ and the final mark');
+      ok(GI.grade(tq, 'xyz qwe') === 'wrong', 'a wrong typed phrase passes');
+      if (longer) {
+        const tb = byEs(longer.es);
+        ok(tb && tb.play === 'build' && tb.words.join(' ') === nw(longer.es) && true || (tb && tb.play === 'build' && tb.words.length === nw(longer.es) && !/[.,;:!?¿¡]/.test(tb.words.join(''))),
+           'a 7 to 8 word phrase is not built from clean chips');
+      }
+
+      // the cap in a Tranquilo round with fillers, and a note in the feedback item
+      const fill = {};
+      PL.slice(0, 30).forEach((e, i) => { fill[e.id] = { reps: 2, due: td + 3 + i, last: td - 1, box: 2 }; });
+      localStorage.setItem('fluidez.srs', JSON.stringify(fill));
+      for (let t = 0; t < 5; t++) {
+        const rr = playP(10, { count: 10, gkind: 'sphrase' }, fresh());
+        ok(rr.filter(i => i.grind === 'new').length === 4 && rr.filter(i => i.grind === 'new').every(i => PL.findIndex(e => e.es === i.answer) >= 30),
+           'a Tranquilo Frases round with fillers did not hold to four new phrases');
+        ok(new Set(rr.map(i => i.answer)).size === 10, 'a phrase came twice in one round');
+      }
+      const timedN = playP(30, {}, fresh()).filter(i => i.grind === 'new').length;
+      ok(timedN >= 8 && timedN <= 12, `Contrarreloj Frases dealt ${timedN} new of 30, wanted about a third`);
+
+      // a due and a missed phrase come before new ones, whatever the band
+      const hi = PL.find(e => e.c === 'C1' || e.c === 'B2');
+      if (hi) {
+        const sHi = {}; sHi[hi.id] = { reps: 0, due: td, box: 0 };
+        localStorage.setItem('fluidez.srs', JSON.stringify(sHi));
+        const rh = playP(2, { count: 10, gkind: 'sphrase' }, fresh());
+        ok(rh[0].answer === hi.es && rh[0].grind === 'due', 'a missed phrase above the player\'s band did not come back first');
+      }
+
+      // B1+: a right answer at first sight does not use up the cap
+      localStorage.removeItem('fluidez.srs'); W.Profile.set('B1'); GI.reset();
+      {
+        const st = fresh(); let newSeen = 0;
+        for (let i = 0; i < 12; i++) {
+          const it = GI.next('sphrase', 1, rng, { grind: st, count: 12, gkind: 'sphrase' });
+          if (!it) break;
+          if (it.grind === 'new') newSeen++;
+          W.SRS.enrol(it.id); W.SRS.grade(it.id, true);
+        }
+        ok(newSeen > 4, `a B1 player who knows the phrases was held to ${newSeen} new`);
+      }
+      W.Profile.set('A1'); GI.reset(); localStorage.removeItem('fluidez.srs');
+
+      // a note rides on the item for the feedback box, whether the answer was right or not
+      const withNote = PL.find(e => e.note && ['A1', 'A2'].indexOf(e.c) !== -1);
+      if (withNote) {
+        const sn = {}; sn[withNote.id] = { reps: 0, due: td, box: 0 };
+        localStorage.setItem('fluidez.srs', JSON.stringify(sn));
+        const ni = playP(1, { count: 10, gkind: 'sphrase' }, fresh())[0];
+        ok(ni.answer === withNote.es && ni.note === withNote.note && ni.noteOnRight, 'a phrase note is not on the item');
+        const gr = fs.readFileSync(path.join(ROOT, 'js/gameround.js'), 'utf8');
+        ok(/item\.noteOnRight && item\.note/.test(gr) && /item\.note \|\|/.test(gr), 'the round does not show a phrase note after a right answer and a miss');
+      }
+
+      // coverage
+      localStorage.removeItem('fluidez.srs');
+      let pc = GI.phraseCoverage();
+      ok(pc.n === 0 && pc.of === 700 && pc.text === 'Conoces 0 de las 700 frases más comunes', `phrase coverage reads "${pc.text}"`);
+      const sc = {}; PL.slice(0, 120).forEach(e => { sc[e.id] = { reps: 1, due: td + 5 }; }); sc[PL[300].id] = { reps: 0, due: td };
+      localStorage.setItem('fluidez.srs', JSON.stringify(sc));
+      pc = GI.phraseCoverage();
+      ok(pc.n === 120 && pc.text === 'Conoces 120 de las 700 frases más comunes', `phrase coverage reads "${pc.text}"`);
+      localStorage.removeItem('fluidez.srs'); W.Profile.set('B1'); GI.reset();
+    }
     const wc = i => String(i.es).trim().split(/\s+/).length;
-    ok(fr.every(i => wc(i) <= 8), 'Frases dealt a phrase longer than eight words');
-    ok(fr.filter(i => i.play === 'type').every(i => wc(i) <= 6), 'Frases asked a long phrase typed');
-    ok(fr.filter(i => i.play === 'build').every(i => wc(i) >= 7), 'Frases built a short phrase from chips');
-    ok(fr.some(i => i.play === 'build') && fr.some(i => i.play === 'type'), 'Frases uses only one way of answering');
 
     // Jugar: 45% verbs, 40% words, 15% phrases
     const mix = draws('smix', 1500, { tapFirst: true });

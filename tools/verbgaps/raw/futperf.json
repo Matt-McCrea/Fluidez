@@ -1,0 +1,2576 @@
+[
+ {
+  "q": "Para el viernes yo ya ___ (terminar) el informe.",
+  "inf": "terminar",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré terminado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para el viernes ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para el viernes ya\" the action will be finished before a future point.",
+  "en": "By Friday I will have finished the report.",
+  "band": "B2"
+ },
+ {
+  "q": "Para el próximo lunes, mis padres ya ___ (volver) de Cartagena.",
+  "inf": "volver",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán vuelto",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para el próximo lunes ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para el próximo lunes ya\" the action will be finished before a future point.",
+  "en": "By next Monday, my parents will have come back from Cartagena.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando llegues a la casa, yo ya ___ (preparar) la comida.",
+  "inf": "preparar",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré preparado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"cuando llegues, yo ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"cuando llegues, yo ya\" the action will be finished before a future point.",
+  "en": "By the time you get home, I will have made the food.",
+  "band": "B2"
+ },
+ {
+  "q": "Dentro de diez años, tú ya ___ (pagar) toda la hipoteca.",
+  "inf": "pagar",
+  "tense": "futperf",
+  "person": "tú",
+  "answer": "habrás pagado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"dentro de diez años ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"dentro de diez años ya\" the action will be finished before a future point.",
+  "en": "Ten years from now, you will have paid off the whole mortgage.",
+  "band": "B2"
+ },
+ {
+  "q": "Para diciembre, Camilo ya ___ (ahorrar) lo suficiente para el carro.",
+  "inf": "ahorrar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá ahorrado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para diciembre ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para diciembre ya\" the action will be finished before a future point.",
+  "en": "By December, Camilo will have saved enough for the car.",
+  "band": "B2"
+ },
+ {
+  "q": "A las nueve de la noche, yo ya ___ (salir) del trabajo.",
+  "inf": "salir",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré salido",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"a las nueve ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"a las nueve ya\" the action will be finished before a future point.",
+  "en": "By nine at night, I will have left work.",
+  "band": "B2"
+ },
+ {
+  "q": "Para cuando lleguen los invitados, nosotros ya ___ (poner) la mesa.",
+  "inf": "poner",
+  "tense": "futperf",
+  "person": "nosotros",
+  "answer": "habremos puesto",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para cuando lleguen ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para cuando lleguen ya\" the action will be finished before a future point.",
+  "en": "By the time the guests arrive, we will have set the table.",
+  "band": "B2"
+ },
+ {
+  "q": "Antes del examen del jueves, nosotros ya ___ (leer) los tres capítulos.",
+  "inf": "leer",
+  "tense": "futperf",
+  "person": "nosotros",
+  "answer": "habremos leído",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"antes del examen ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"antes del examen ya\" the action will be finished before a future point.",
+  "en": "Before Thursday's exam, we will have read the three chapters.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando termines la carrera, tus papás ya se ___ (ir) a vivir al campo.",
+  "inf": "ir",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán ido",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"cuando termines ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"cuando termines ya\" the action will be finished before a future point.",
+  "en": "By the time you finish university, your parents will have moved to the countryside.",
+  "band": "B2"
+ },
+ {
+  "q": "Para el verano, la empresa ya ___ (abrir) la nueva sede.",
+  "inf": "abrir",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá abierto",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para el verano ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para el verano ya\" the action will be finished before a future point.",
+  "en": "By summer, the company will have opened the new office.",
+  "band": "B2"
+ },
+ {
+  "q": "Para la semana próxima, el plomero ya ___ (arreglar) el techo.",
+  "inf": "arreglar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá arreglado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para la semana próxima ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para la semana próxima ya\" the action will be finished before a future point.",
+  "en": "By next week, the plumber will have fixed the roof.",
+  "band": "B2"
+ },
+ {
+  "q": "Mañana a esta hora, nosotros ya ___ (llegar) a Medellín.",
+  "inf": "llegar",
+  "tense": "futperf",
+  "person": "nosotros",
+  "answer": "habremos llegado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"mañana a esta hora ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"mañana a esta hora ya\" the action will be finished before a future point.",
+  "en": "Tomorrow at this time, we will have arrived in Medellín.",
+  "band": "B2"
+ },
+ {
+  "q": "Para el 2030, yo ya ___ (aprender) inglés perfecto.",
+  "inf": "aprender",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré aprendido",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para el 2030 ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para el 2030 ya\" the action will be finished before a future point.",
+  "en": "By 2030, I will have learned perfect English.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando tengas treinta años, tú ya ___ (conocer) medio mundo.",
+  "inf": "conocer",
+  "tense": "futperf",
+  "person": "tú",
+  "answer": "habrás conocido",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"Cuando tengas treinta, ya\": terminado antes de un punto futuro; también vale el futuro.",
+  "why_en": "\"When you are thirty, already\": done before a future point; the simple future also works.",
+  "en": "By the time you are thirty, you will have seen half the world.",
+  "band": "B2",
+  "also": [
+   "conocerás"
+  ]
+ },
+ {
+  "q": "Dentro de una hora, la reunión ya ___ (acabar).",
+  "inf": "acabar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá acabado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"dentro de una hora ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"dentro de una hora ya\" the action will be finished before a future point.",
+  "en": "In an hour, the meeting will have ended.",
+  "band": "B2"
+ },
+ {
+  "q": "Para el sábado, el paquete ya ___ (llegar) a mi casa.",
+  "inf": "llegar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá llegado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para el sábado ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para el sábado ya\" the action will be finished before a future point.",
+  "en": "By Saturday, the package will have arrived at my house.",
+  "band": "B2"
+ },
+ {
+  "q": "Antes de las doce, los obreros ya ___ (terminar) de pintar.",
+  "inf": "terminar",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán terminado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"antes de las doce ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"antes de las doce ya\" the action will be finished before a future point.",
+  "en": "Before noon, the workers will have finished painting.",
+  "band": "B2"
+ },
+ {
+  "q": "Para cuando salgas de clase, ya ___ (empezar) a llover.",
+  "inf": "empezar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá empezado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para cuando salgas ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para cuando salgas ya\" the action will be finished before a future point.",
+  "en": "By the time you get out of class, it will have started to rain.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando me jubile, yo ya ___ (trabajar) más de cuarenta años.",
+  "inf": "trabajar",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré trabajado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"cuando me jubile ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"cuando me jubile ya\" the action will be finished before a future point.",
+  "en": "By the time I retire, I will have worked more than forty years.",
+  "band": "B2"
+ },
+ {
+  "q": "Para el cumpleaños de Sofía, nosotros ya ___ (vender) la casa.",
+  "inf": "vender",
+  "tense": "futperf",
+  "person": "nosotros",
+  "answer": "habremos vendido",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para el cumpleaños ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para el cumpleaños ya\" the action will be finished before a future point.",
+  "en": "By Sofía's birthday, we will have sold the house.",
+  "band": "B2"
+ },
+ {
+  "q": "Para el lunes, tú ya ___ (decidir) si aceptas el trabajo.",
+  "inf": "decidir",
+  "tense": "futperf",
+  "person": "tú",
+  "answer": "habrás decidido",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para el lunes ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para el lunes ya\" the action will be finished before a future point.",
+  "en": "By Monday, you will have decided whether to accept the job.",
+  "band": "B2"
+ },
+ {
+  "q": "Al final de la temporada, los Millonarios ya ___ (ganar) tres títulos.",
+  "inf": "ganar",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán ganado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"al final de la temporada ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"al final de la temporada ya\" the action will be finished before a future point.",
+  "en": "By the end of the season, Millonarios will have won three titles.",
+  "band": "B2"
+ },
+ {
+  "q": "Para la próxima semana, yo ya ___ (escribir) las primeras cien páginas.",
+  "inf": "escribir",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré escrito",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para la próxima semana ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para la próxima semana ya\" the action will be finished before a future point.",
+  "en": "By next week, I will have written the first hundred pages.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando regreses, tu sobrino ya ___ (crecer) diez centímetros.",
+  "inf": "crecer",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá crecido",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"cuando regreses ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"cuando regreses ya\" the action will be finished before a future point.",
+  "en": "By the time you return, your nephew will have grown ten centimeters.",
+  "band": "B2"
+ },
+ {
+  "q": "Para las seis de la tarde, nosotros ya ___ (hacer) todas las compras.",
+  "inf": "hacer",
+  "tense": "futperf",
+  "person": "nosotros",
+  "answer": "habremos hecho",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para las seis ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para las seis ya\" the action will be finished before a future point.",
+  "en": "By six in the evening, we will have done all the shopping.",
+  "band": "B2"
+ },
+ {
+  "q": "Para el miércoles, los clientes ya ___ (recibir) el pedido.",
+  "inf": "recibir",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán recibido",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para el miércoles ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para el miércoles ya\" the action will be finished before a future point.",
+  "en": "By Wednesday, the customers will have received the order.",
+  "band": "B2"
+ },
+ {
+  "q": "Dentro de un año, yo ya ___ (cambiar) de carrera.",
+  "inf": "cambiar",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré cambiado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"dentro de un año ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"dentro de un año ya\" the action will be finished before a future point.",
+  "en": "Within a year, I will have changed my major.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando llegue el domingo, tú ya ___ (ver) todos los capítulos de la serie.",
+  "inf": "ver",
+  "tense": "futperf",
+  "person": "tú",
+  "answer": "habrás visto",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"cuando llegue el domingo ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"cuando llegue el domingo ya\" the action will be finished before a future point.",
+  "en": "By Sunday, you will have watched every episode of the series.",
+  "band": "B2"
+ },
+ {
+  "q": "Dentro de cien años, todas estas plantas ya ___ (morir).",
+  "inf": "morir",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán muerto",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"dentro de cien años ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"dentro de cien años ya\" the action will be finished before a future point.",
+  "en": "A hundred years from now, all these plants will have died.",
+  "band": "B2"
+ },
+ {
+  "q": "Para fin de año, nosotros ya ___ (viajar) a cinco países.",
+  "inf": "viajar",
+  "tense": "futperf",
+  "person": "nosotros",
+  "answer": "habremos viajado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para fin de año ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para fin de año ya\" the action will be finished before a future point.",
+  "en": "By the end of the year, we will have traveled to five countries.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando termine el semestre, yo ya les ___ (dar) las notas.",
+  "inf": "dar",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré dado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"cuando termine ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"cuando termine ya\" the action will be finished before a future point.",
+  "en": "By the time the semester ends, I will have given them their grades.",
+  "band": "B2"
+ },
+ {
+  "q": "Para el próximo diciembre, mi hermano ya se ___ (casar).",
+  "inf": "casarse",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá casado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para el próximo diciembre ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para el próximo diciembre ya\" the action will be finished before a future point.",
+  "en": "By next December, my brother will have gotten married.",
+  "band": "B2"
+ },
+ {
+  "q": "A las diez, los bancos ya ___ (cerrar), así que vamos temprano.",
+  "inf": "cerrar",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán cerrado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"a las diez ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"a las diez ya\" the action will be finished before a future point.",
+  "en": "By ten, the banks will have closed, so let's go early.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando salga el sol, tú ya me ___ (llamar) tres veces, seguro.",
+  "inf": "llamar",
+  "tense": "futperf",
+  "person": "tú",
+  "answer": "habrás llamado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"cuando salga el sol ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"cuando salga el sol ya\" the action will be finished before a future point.",
+  "en": "By sunrise, you will surely have called me three times.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando abran la tienda, yo ya ___ (comprar) el regalo por internet.",
+  "inf": "comprar",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré comprado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"cuando abran ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"cuando abran ya\" the action will be finished before a future point.",
+  "en": "By the time they open the shop, I will have bought the gift online.",
+  "band": "B2"
+ },
+ {
+  "q": "Para cuando suene el despertador, nosotros ya ___ (salir) de la finca.",
+  "inf": "salir",
+  "tense": "futperf",
+  "person": "nosotros",
+  "answer": "habremos salido",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para cuando suene ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para cuando suene ya\" the action will be finished before a future point.",
+  "en": "By the time the alarm rings, we will have left the farm.",
+  "band": "B2"
+ },
+ {
+  "q": "Si sigue así, para el lunes mi jefe ya ___ (perder) la paciencia.",
+  "inf": "perder",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá perdido",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para el lunes ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para el lunes ya\" the action will be finished before a future point.",
+  "en": "If it goes on like this, by Monday my boss will have lost his patience.",
+  "band": "B2"
+ },
+ {
+  "q": "Para el próximo mes, mis abuelos ya ___ (cumplir) sesenta años de casados.",
+  "inf": "cumplir",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán cumplido",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"Para el próximo mes, ya\": terminado antes de un punto futuro; también vale el futuro.",
+  "why_en": "\"By next month, already\": done before a future point; the simple future also works.",
+  "en": "By next month, my grandparents will have been married sixty years.",
+  "band": "B2",
+  "also": [
+   "cumplirán"
+  ]
+ },
+ {
+  "q": "Cuando me llames, yo ya ___ (volver) de la reunión.",
+  "inf": "volver",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré vuelto",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"cuando me llames ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"cuando me llames ya\" the action will be finished before a future point.",
+  "en": "By the time you call me, I will have come back from the meeting.",
+  "band": "B2"
+ },
+ {
+  "q": "Para la fiesta, tú ya ___ (llevar) los regalos a la casa de Marta.",
+  "inf": "llevar",
+  "tense": "futperf",
+  "person": "tú",
+  "answer": "habrás llevado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para la fiesta ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para la fiesta ya\" the action will be finished before a future point.",
+  "en": "By the party, you will have taken the gifts to Marta's house.",
+  "band": "B2"
+ },
+ {
+  "q": "Para el jueves, el técnico ya ___ (poner) el internet.",
+  "inf": "poner",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá puesto",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para el jueves ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para el jueves ya\" the action will be finished before a future point.",
+  "en": "By Thursday, the technician will have put in the internet.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando lleguemos al estadio, los jugadores ya ___ (empezar) a calentar.",
+  "inf": "empezar",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán empezado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"cuando lleguemos ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"cuando lleguemos ya\" the action will be finished before a future point.",
+  "en": "By the time we reach the stadium, the players will have started warming up.",
+  "band": "B2"
+ },
+ {
+  "q": "Dentro de dos años, nosotros ya ___ (ahorrar) para la cuota inicial.",
+  "inf": "ahorrar",
+  "tense": "futperf",
+  "person": "nosotros",
+  "answer": "habremos ahorrado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"dentro de dos años ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"dentro de dos años ya\" the action will be finished before a future point.",
+  "en": "Within two years, we will have saved for the down payment.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando recibas este mensaje, yo ya ___ (pasar) por tu oficina.",
+  "inf": "pasar",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré pasado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"cuando recibas ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"cuando recibas ya\" the action will be finished before a future point.",
+  "en": "By the time you get this message, I will have stopped by your office.",
+  "band": "B2"
+ },
+ {
+  "q": "Para el final del curso, cada estudiante ya ___ (descubrir) su vocación.",
+  "inf": "descubrir",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá descubierto",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para el final del curso ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para el final del curso ya\" the action will be finished before a future point.",
+  "en": "By the end of the course, each student will have discovered their calling.",
+  "band": "B2"
+ },
+ {
+  "q": "Antes del viernes, ellos ya me ___ (enviar) el contrato firmado.",
+  "inf": "enviar",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán enviado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"antes del viernes ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"antes del viernes ya\" the action will be finished before a future point.",
+  "en": "Before Friday, they will have sent me the signed contract.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando amanezca, tú ya ___ (dormir) lo suficiente para trabajar.",
+  "inf": "dormir",
+  "tense": "futperf",
+  "person": "tú",
+  "answer": "habrás dormido",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"cuando amanezca ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"cuando amanezca ya\" the action will be finished before a future point.",
+  "en": "By dawn, you will have slept enough to work.",
+  "band": "B2"
+ },
+ {
+  "q": "Antes de Navidad, yo ya ___ (leer) los cinco libros de Gabo.",
+  "inf": "leer",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré leído",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"antes de Navidad ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"antes de Navidad ya\" the action will be finished before a future point.",
+  "en": "Before Christmas, I will have read all five of Gabo's books.",
+  "band": "B2"
+ },
+ {
+  "q": "Para marzo, nosotros ya ___ (conseguir) la visa.",
+  "inf": "conseguir",
+  "tense": "futperf",
+  "person": "nosotros",
+  "answer": "habremos conseguido",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para marzo ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para marzo ya\" the action will be finished before a future point.",
+  "en": "By March, we will have gotten the visa.",
+  "band": "B2"
+ },
+ {
+  "q": "Para las tres, mi mamá ya ___ (recoger) a los niños del colegio.",
+  "inf": "recoger",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá recogido",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para las tres ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para las tres ya\" the action will be finished before a future point.",
+  "en": "By three, my mom will have picked up the kids from school.",
+  "band": "B2"
+ },
+ {
+  "q": "Para el 2028, ya ___ (construir) el nuevo puente sobre el río.",
+  "inf": "construir",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán construido",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para el 2028 ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para el 2028 ya\" the action will be finished before a future point.",
+  "en": "By 2028, they will have built the new bridge over the river.",
+  "band": "B2"
+ },
+ {
+  "q": "Para fin de mes, yo ya ___ (lograr) bajar cinco kilos.",
+  "inf": "lograr",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré logrado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para fin de mes ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para fin de mes ya\" the action will be finished before a future point.",
+  "en": "By the end of the month, I will have managed to lose five kilos.",
+  "band": "B2"
+ },
+ {
+  "q": "Para cuando llegue tu tío, tú ya ___ (limpiar) todo el cuarto.",
+  "inf": "limpiar",
+  "tense": "futperf",
+  "person": "tú",
+  "answer": "habrás limpiado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para cuando llegue ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para cuando llegue ya\" the action will be finished before a future point.",
+  "en": "By the time your uncle arrives, you will have cleaned the whole room.",
+  "band": "B2"
+ },
+ {
+  "q": "Para junio, nosotros ya ___ (hacer) los dos exámenes finales.",
+  "inf": "hacer",
+  "tense": "futperf",
+  "person": "nosotros",
+  "answer": "habremos hecho",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para junio ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para junio ya\" the action will be finished before a future point.",
+  "en": "By June, we will have taken both final exams.",
+  "band": "B2"
+ },
+ {
+  "q": "Para cuando abras el correo, Marta ya te ___ (mandar) las fotos.",
+  "inf": "mandar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá mandado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para cuando abras ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para cuando abras ya\" the action will be finished before a future point.",
+  "en": "By the time you open your email, Marta will have sent you the photos.",
+  "band": "B2"
+ },
+ {
+  "q": "Para el martes, los candidatos ya ___ (presentar) sus propuestas.",
+  "inf": "presentar",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán presentado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para el martes ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para el martes ya\" the action will be finished before a future point.",
+  "en": "By Tuesday, the candidates will have presented their proposals.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando regreses del viaje, yo ya ___ (olvidar) esta discusión.",
+  "inf": "olvidar",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré olvidado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"cuando regreses ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"cuando regreses ya\" the action will be finished before a future point.",
+  "en": "By the time you get back from the trip, I will have forgotten this argument.",
+  "band": "B2"
+ },
+ {
+  "q": "Dentro de unos años, tú ya ___ (cambiar) de opinión sobre esto.",
+  "inf": "cambiar",
+  "tense": "futperf",
+  "person": "tú",
+  "answer": "habrás cambiado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"dentro de unos años ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"dentro de unos años ya\" the action will be finished before a future point.",
+  "en": "In a few years, you will have changed your mind about this.",
+  "band": "B2"
+ },
+ {
+  "q": "Para cuando empiece el concierto, nosotros ya ___ (encontrar) los asientos.",
+  "inf": "encontrar",
+  "tense": "futperf",
+  "person": "nosotros",
+  "answer": "habremos encontrado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para cuando empiece ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para cuando empiece ya\" the action will be finished before a future point.",
+  "en": "By the time the concert starts, we will have found our seats.",
+  "band": "B2"
+ },
+ {
+  "q": "Antes del mediodía, yo ya ___ (firmar) el contrato del apartamento.",
+  "inf": "firmar",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré firmado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"antes del mediodía ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"antes del mediodía ya\" the action will be finished before a future point.",
+  "en": "Before noon, I will have signed the apartment lease.",
+  "band": "B2"
+ },
+ {
+  "q": "Para el fin de semana, los precios del mercado ya ___ (bajar).",
+  "inf": "bajar",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán bajado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para el fin de semana ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para el fin de semana ya\" the action will be finished before a future point.",
+  "en": "By the weekend, the market prices will have gone down.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando lleguen los bomberos, el incendio ya se ___ (acabar) solo.",
+  "inf": "acabar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá acabado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"cuando lleguen ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"cuando lleguen ya\" the action will be finished before a future point.",
+  "en": "By the time the firefighters arrive, the fire will have burned out on its own.",
+  "band": "B2"
+ },
+ {
+  "q": "Para el domingo, tú ya ___ (aceptar) la oferta, ¿verdad?",
+  "inf": "aceptar",
+  "tense": "futperf",
+  "person": "tú",
+  "answer": "habrás aceptado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para el domingo ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para el domingo ya\" the action will be finished before a future point.",
+  "en": "By Sunday, you will have accepted the offer, right?",
+  "band": "B2"
+ },
+ {
+  "q": "Para fin de año, esta remodelación ya nos ___ (costar) todo el ahorro.",
+  "inf": "costar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá costado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para fin de año ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para fin de año ya\" the action will be finished before a future point.",
+  "en": "By the end of the year, this remodeling will already have cost us all our savings.",
+  "band": "B2"
+ },
+ {
+  "q": "Para las ocho, el panadero ya ___ (sacar) el pan del horno.",
+  "inf": "sacar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá sacado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para las ocho ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para las ocho ya\" the action will be finished before a future point.",
+  "en": "By eight, the baker will have taken the bread out of the oven.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando lleguemos, los demás ya se ___ (ir).",
+  "inf": "ir",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán ido",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"cuando lleguemos ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"cuando lleguemos ya\" the action will be finished before a future point.",
+  "en": "By the time we arrive, the others will have left.",
+  "band": "B2"
+ },
+ {
+  "q": "Antes de la boda, yo ya les ___ (decir) la verdad a mis papás.",
+  "inf": "decir",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré dicho",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"antes de la boda ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"antes de la boda ya\" the action will be finished before a future point.",
+  "en": "Before the wedding, I will have told my parents the truth.",
+  "band": "B2"
+ },
+ {
+  "q": "Para cuando yo llegue, tú ya ___ (pedir) el almuerzo.",
+  "inf": "pedir",
+  "tense": "futperf",
+  "person": "tú",
+  "answer": "habrás pedido",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para cuando yo llegue ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para cuando yo llegue ya\" the action will be finished before a future point.",
+  "en": "By the time I arrive, you will have ordered lunch.",
+  "band": "B2"
+ },
+ {
+  "q": "En diez minutos, nosotros ya ___ (terminar) de cenar.",
+  "inf": "terminar",
+  "tense": "futperf",
+  "person": "nosotros",
+  "answer": "habremos terminado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"en diez minutos ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"en diez minutos ya\" the action will be finished before a future point.",
+  "en": "In ten minutes, we will have finished dinner.",
+  "band": "B2"
+ },
+ {
+  "q": "Para cuando leas este mensaje, yo ya ___ (salir) del país.",
+  "inf": "salir",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré salido",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"Para cuando leas, ya\": algo terminado antes de un momento futuro pide futuro perfecto.",
+  "why_en": "\"By the time you read, already\": done before a future moment takes the future perfect.",
+  "en": "By the time you read this message, I will have left the country.",
+  "band": "B2"
+ },
+ {
+  "q": "Para el lunes, los albañiles ya ___ (dar) las llaves del apartamento.",
+  "inf": "dar",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán dado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para el lunes ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para el lunes ya\" the action will be finished before a future point.",
+  "en": "By Monday, the builders will have handed over the apartment keys.",
+  "band": "B2"
+ },
+ {
+  "q": "Para la reunión del miércoles, yo ya ___ (hablar) con todos los jefes.",
+  "inf": "hablar",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré hablado",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para la reunión ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para la reunión ya\" the action will be finished before a future point.",
+  "en": "By Wednesday's meeting, I will have talked to all the bosses.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando me llames a las dos, yo ya ___ (comer) y estaré lista para salir.",
+  "inf": "comer",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré comido",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"cuando me llames ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"cuando me llames ya\" the action will be finished before a future point.",
+  "en": "When you call me at two, I will have eaten and be ready to go.",
+  "band": "B2"
+ },
+ {
+  "q": "Para la celebración, mis tíos ya ___ (traer) el pastel desde Bogotá.",
+  "inf": "traer",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán traído",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para la celebración ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para la celebración ya\" the action will be finished before a future point.",
+  "en": "By the celebration, my aunt and uncle will have brought the cake from Bogotá.",
+  "band": "B2"
+ },
+ {
+  "q": "Para cuando termine el festival, nosotros ya ___ (ver) todas las películas.",
+  "inf": "ver",
+  "tense": "futperf",
+  "person": "nosotros",
+  "answer": "habremos visto",
+  "use": "acción terminada antes de un punto futuro",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Con \"para cuando termine ya\" la acción estará terminada antes de un punto futuro.",
+  "why_en": "With \"para cuando termine ya\" the action will be finished before a future point.",
+  "en": "By the time the festival ends, we will have seen all the movies.",
+  "band": "B2"
+ },
+ {
+  "q": "Camilo no vino a la fiesta. Ni idea, se ___ (olvidar) de la invitación.",
+  "inf": "olvidar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá olvidado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "Camilo didn't come to the party. No idea, he must have forgotten about the invitation.",
+  "band": "B2"
+ },
+ {
+  "q": "No sé por qué Ana no contesta; se ___ (dormir) temprano.",
+  "inf": "dormir",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá dormido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé por qué\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé por qué\" marks a guess about the past: future perfect.",
+  "en": "I don't know why Ana isn't answering; she must have gone to sleep early.",
+  "band": "B2"
+ },
+ {
+  "q": "Quién sabe dónde están las llaves; alguien se las ___ (llevar).",
+  "inf": "llevar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá llevado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"quién sabe\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"quién sabe\" marks a guess about the past: future perfect.",
+  "en": "Who knows where the keys are; someone must have taken them.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi vecino no salió hoy; quién sabe, se ___ (sentir) mal.",
+  "inf": "sentir",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá sentido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"quién sabe\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"quién sabe\" marks a guess about the past: future perfect.",
+  "en": "My neighbor didn't go out today; who knows, he must have felt sick.",
+  "band": "B2"
+ },
+ {
+  "q": "La calle está mojada; no sé, ___ (llover) en la noche.",
+  "inf": "llover",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá llovido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect.",
+  "en": "The street is wet; I don't know, it must have rained in the night.",
+  "band": "B2"
+ },
+ {
+  "q": "No sé por qué llora el niño; se ___ (caer) del columpio.",
+  "inf": "caer",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá caído",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé por qué\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé por qué\" marks a guess about the past: future perfect.",
+  "en": "I don't know why the boy is crying; he must have fallen off the swing.",
+  "band": "B2"
+ },
+ {
+  "q": "No encuentro mi billetera; no sé, la ___ (dejar) en el taxi.",
+  "inf": "dejar",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré dejado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect.",
+  "en": "I can't find my wallet; I don't know, I must have left it in the taxi.",
+  "band": "B2"
+ },
+ {
+  "q": "Mis primos no han llegado; quién sabe, ___ (perder) el vuelo.",
+  "inf": "perder",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán perdido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"quién sabe\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"quién sabe\" marks a guess about the past: future perfect.",
+  "en": "My cousins haven't arrived; who knows, they must have missed the flight.",
+  "band": "B2"
+ },
+ {
+  "q": "Valentina no me saludó; no sé, se ___ (molestar) conmigo.",
+  "inf": "molestar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá molestado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect.",
+  "en": "Valentina didn't greet me; I don't know, she must have gotten upset with me.",
+  "band": "B2"
+ },
+ {
+  "q": "No sé qué pasó con el pastel; los niños se lo ___ (comer).",
+  "inf": "comer",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán comido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé qué pasó\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé qué pasó\" marks a guess about the past: future perfect.",
+  "en": "I don't know what happened to the cake; the kids must have eaten it.",
+  "band": "B2"
+ },
+ {
+  "q": "El profesor no vino; ni idea, se ___ (quedar) atrapado en el tráfico.",
+  "inf": "quedar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá quedado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto. También se oye el condicional perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect. The conditional perfect is also heard.",
+  "en": "The teacher didn't come; no idea, he must have gotten stuck in traffic.",
+  "band": "B2",
+  "also": [
+   "habría quedado"
+  ]
+ },
+ {
+  "q": "Me llegó un mensaje raro; ni idea, alguien se ___ (equivocar) de número.",
+  "inf": "equivocarse",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá equivocado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "I got a strange message; no idea, someone must have dialed the wrong number.",
+  "band": "B2"
+ },
+ {
+  "q": "Hace una hora que no sé nada de Pedro; se ___ (quedar) sin batería.",
+  "inf": "quedar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá quedado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé nada de\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé nada de\" marks a guess about the past: future perfect.",
+  "en": "I haven't heard from Pedro for an hour; his phone must have died.",
+  "band": "B2"
+ },
+ {
+  "q": "La puerta amaneció abierta; no sé, alguien ___ (olvidar) cerrarla.",
+  "inf": "olvidar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá olvidado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect.",
+  "en": "The door was open this morning; I don't know, someone must have forgotten to close it.",
+  "band": "B2"
+ },
+ {
+  "q": "Estás pálida, Laura; quién sabe, ___ (comer) algo que te cayó mal.",
+  "inf": "comer",
+  "tense": "futperf",
+  "person": "tú",
+  "answer": "habrás comido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"quién sabe\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"quién sabe\" marks a guess about the past: future perfect.",
+  "en": "You look pale, Laura; who knows, you must have eaten something that upset you.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi mamá me mira muy seria; ni idea de qué ___ (hacer) yo ahora.",
+  "inf": "hacer",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré hecho",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea de qué\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea de qué\" marks a guess about the past: future perfect.",
+  "en": "My mom is looking at me very seriously; no idea what I must have done now.",
+  "band": "B2"
+ },
+ {
+  "q": "Tengo la pantalla bloqueada; ni idea, ___ (tocar) algo sin querer.",
+  "inf": "tocar",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré tocado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "My screen is locked; no idea, I must have touched something by accident.",
+  "band": "B2"
+ },
+ {
+  "q": "Nadie abre la puerta; no sé, mis papás ___ (salir) temprano.",
+  "inf": "salir",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán salido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect.",
+  "en": "Nobody opens the door; I don't know, my parents must have gone out early.",
+  "band": "B2"
+ },
+ {
+  "q": "Esta no es la calle del restaurante; no sé, nos ___ (equivocar) de salida.",
+  "inf": "equivocarse",
+  "tense": "futperf",
+  "person": "nosotros",
+  "answer": "habremos equivocado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect.",
+  "en": "This isn't the restaurant's street; I don't know, we must have taken the wrong exit.",
+  "band": "B2"
+ },
+ {
+  "q": "El vaso está en el piso; ni idea, el gato lo ___ (romper).",
+  "inf": "romper",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá roto",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "The glass is on the floor; no idea, the cat must have broken it.",
+  "band": "B2"
+ },
+ {
+  "q": "Los vecinos no pagaron la cuota; quién sabe, se ___ (quedar) sin plata este mes.",
+  "inf": "quedar",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán quedado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"quién sabe\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"quién sabe\" marks a guess about the past: future perfect.",
+  "en": "The neighbors didn't pay the fee; who knows, they must have run out of money this month.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi jefe no está en su oficina; no sé, ___ (salir) a una reunión.",
+  "inf": "salir",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá salido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect.",
+  "en": "My boss isn't in his office; I don't know, he must have gone out to a meeting.",
+  "band": "B2"
+ },
+ {
+  "q": "Tu hermano no llegó a clase; ni idea, ___ (perder) el bus.",
+  "inf": "perder",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá perdido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "Your brother didn't make it to class; no idea, he must have missed the bus.",
+  "band": "B2"
+ },
+ {
+  "q": "Esta carretera no estaba así; no sé, ___ (pasar) un camión por aquí.",
+  "inf": "pasar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá pasado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect.",
+  "en": "This road wasn't like this; I don't know, a truck must have gone by here.",
+  "band": "B2"
+ },
+ {
+  "q": "Los vecinos tienen otro carro; quién sabe, ___ (vender) el viejo.",
+  "inf": "vender",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán vendido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"quién sabe\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"quién sabe\" marks a guess about the past: future perfect.",
+  "en": "The neighbors have another car; who knows, they must have sold the old one.",
+  "band": "B2"
+ },
+ {
+  "q": "Lucía está muy seria; no sé, se ___ (enterar) de algo.",
+  "inf": "enterarse",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá enterado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect.",
+  "en": "Lucía is very serious; I don't know, she must have found something out.",
+  "band": "B2"
+ },
+ {
+  "q": "La tienda está vacía; ni idea, todos se ___ (ir) a almorzar.",
+  "inf": "ir",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán ido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "The store is empty; no idea, everyone must have gone to lunch.",
+  "band": "B2"
+ },
+ {
+  "q": "El horno está prendido; no sé, ___ (dejar) la comida adentro.",
+  "inf": "dejar",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré dejado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect.",
+  "en": "The oven is on; I don't know, I must have left the food inside.",
+  "band": "B2"
+ },
+ {
+  "q": "Los invitados no han llegado; quién sabe, se ___ (equivocar) de hora.",
+  "inf": "equivocarse",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán equivocado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"quién sabe\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"quién sabe\" marks a guess about the past: future perfect.",
+  "en": "The guests haven't arrived; who knows, they must have gotten the time wrong.",
+  "band": "B2"
+ },
+ {
+  "q": "El paquete no ha llegado; ni idea, se ___ (perder) en el correo.",
+  "inf": "perder",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá perdido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "The package hasn't arrived; no idea, it must have gotten lost in the mail.",
+  "band": "B2"
+ },
+ {
+  "q": "Ya no hay nadie en la oficina; no sé, ___ (terminar) más temprano.",
+  "inf": "terminar",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán terminado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect.",
+  "en": "There's no one in the office anymore; I don't know, they must have finished earlier.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi abuela se durmió en el sofá; ni idea, se ___ (cansar) con tanta visita.",
+  "inf": "cansar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá cansado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "My grandmother fell asleep on the sofa; no idea, she must have gotten tired from so many visitors.",
+  "band": "B2"
+ },
+ {
+  "q": "Esos dos llegaron felices; quién sabe, ___ (encontrar) lo que buscaban.",
+  "inf": "encontrar",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán encontrado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"quién sabe\" marca una suposición sobre el pasado: futuro perfecto. También se oye el condicional perfecto.",
+  "why_en": "\"quién sabe\" marks a guess about the past: future perfect. The conditional perfect is also heard.",
+  "en": "Those two arrived happy; who knows, they must have found what they were looking for.",
+  "band": "B2",
+  "also": [
+   "habrían encontrado"
+  ]
+ },
+ {
+  "q": "El mensaje no le llegó; no sé, ___ (escribir) mal el número.",
+  "inf": "escribir",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré escrito",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto. También se oye el condicional perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect. The conditional perfect is also heard.",
+  "en": "The message never reached her; I don't know, I must have typed the number wrong.",
+  "band": "B2",
+  "also": [
+   "habría escrito"
+  ]
+ },
+ {
+  "q": "El tráfico está parado; ni idea, ___ (ocurrir) un accidente.",
+  "inf": "ocurrir",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá ocurrido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "Traffic is stopped; no idea, there must have been an accident.",
+  "band": "B2"
+ },
+ {
+  "q": "La puerta del garaje está abierta; no sé, la ___ (dejar) así anoche.",
+  "inf": "dejar",
+  "tense": "futperf",
+  "person": "nosotros",
+  "answer": "habremos dejado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect.",
+  "en": "The garage door is open; I don't know, we must have left it that way last night.",
+  "band": "B2"
+ },
+ {
+  "q": "Hoy pagué más por el arroz; ___ (subir) otra vez el precio.",
+  "inf": "subir",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá subido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "Suponer algo ya pasado (hoy pagué más) se hace con futuro perfecto.",
+  "why_en": "Guessing about something already past (I paid more today) uses the future perfect.",
+  "en": "Today I paid more for rice; the price must have gone up again.",
+  "band": "B2"
+ },
+ {
+  "q": "Sofía no me llamó; ni idea, ___ (decidir) no ir.",
+  "inf": "decidir",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá decidido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "Sofía didn't call me; no idea, she must have decided not to go.",
+  "band": "B2"
+ },
+ {
+  "q": "Hay gritos en el estadio; no sé, los locales ___ (ganar).",
+  "inf": "ganar",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán ganado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect.",
+  "en": "There are cheers from the stadium; I don't know, the home team must have won.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi hija está muy callada; quién sabe, ___ (ver) algo que la asustó.",
+  "inf": "ver",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá visto",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"quién sabe\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"quién sabe\" marks a guess about the past: future perfect.",
+  "en": "My daughter is very quiet; who knows, she must have seen something that scared her.",
+  "band": "B2"
+ },
+ {
+  "q": "Ana me evita; ni idea, ___ (decir) algo que le molestó.",
+  "inf": "decir",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré dicho",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "Ana is avoiding me; no idea, I must have said something that bothered her.",
+  "band": "B2"
+ },
+ {
+  "q": "La ventana está quebrada; no sé, los niños la ___ (romper) con la pelota.",
+  "inf": "romper",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán roto",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect.",
+  "en": "The window is broken; I don't know, the kids must have broken it with the ball.",
+  "band": "B2"
+ },
+ {
+  "q": "No encuentro el cargador; ni idea, mi hermano lo ___ (poner) en su cuarto.",
+  "inf": "poner",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá puesto",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "I can't find the charger; no idea, my brother must have put it in his room.",
+  "band": "B2"
+ },
+ {
+  "q": "Tengo cinco llamadas perdidas; quién sabe, mis papás ___ (llamar) por algo urgente.",
+  "inf": "llamar",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán llamado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"quién sabe\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"quién sabe\" marks a guess about the past: future perfect.",
+  "en": "I have five missed calls; who knows, my parents must have called about something urgent.",
+  "band": "B2"
+ },
+ {
+  "q": "Esta no es la parada; ni idea, nos ___ (pasar) de calle.",
+  "inf": "pasar",
+  "tense": "futperf",
+  "person": "nosotros",
+  "answer": "habremos pasado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "This isn't the stop; no idea, we must have gone past our street.",
+  "band": "B2"
+ },
+ {
+  "q": "Pedro no contesta desde anoche; no sé, ___ (dejar) el celular apagado.",
+  "inf": "dejar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá dejado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect.",
+  "en": "Pedro hasn't answered since last night; I don't know, he must have left his phone off.",
+  "band": "B2"
+ },
+ {
+  "q": "Nadie atiende en el banco; quién sabe, ___ (cerrar) por una emergencia.",
+  "inf": "cerrar",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán cerrado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"quién sabe\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"quién sabe\" marks a guess about the past: future perfect.",
+  "en": "No one is helping at the bank; who knows, they must have closed for an emergency.",
+  "band": "B2"
+ },
+ {
+  "q": "Estás de mal humor, Camilo; ni idea, te ___ (pelear) con tu novia.",
+  "inf": "pelearse",
+  "tense": "futperf",
+  "person": "tú",
+  "answer": "habrás peleado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "You're in a bad mood, Camilo; no idea, you must have fought with your girlfriend.",
+  "band": "B2"
+ },
+ {
+  "q": "La hija de Ana habla inglés muy bien; ni idea, ___ (aprender) en el colegio.",
+  "inf": "aprender",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá aprendido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "Ana's daughter speaks English very well; no idea, she must have learned it at school.",
+  "band": "B2"
+ },
+ {
+  "q": "Mis vecinos viajan mucho; quién sabe, ___ (conseguir) un buen trabajo.",
+  "inf": "conseguir",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán conseguido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"quién sabe\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"quién sabe\" marks a guess about the past: future perfect.",
+  "en": "My neighbors travel a lot; who knows, they must have gotten a good job.",
+  "band": "B2"
+ },
+ {
+  "q": "Tengo la cara marcada; ni idea, ___ (dormir) sobre la almohada mal puesta.",
+  "inf": "dormir",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré dormido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "My face has a mark; no idea, I must have slept on the pillow wrong.",
+  "band": "B2"
+ },
+ {
+  "q": "Daniel no pudo dormir; no sé, ___ (beber) demasiado café anoche.",
+  "inf": "beber",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá bebido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto. También se oye el condicional perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect. The conditional perfect is also heard.",
+  "en": "Daniel couldn't sleep; I don't know, he must have drunk too much coffee last night.",
+  "band": "B2",
+  "also": [
+   "habría bebido"
+  ]
+ },
+ {
+  "q": "Falta una maleta en el carro; quién sabe, la ___ (olvidar) en el hotel.",
+  "inf": "olvidar",
+  "tense": "futperf",
+  "person": "nosotros",
+  "answer": "habremos olvidado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"quién sabe\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"quién sabe\" marks a guess about the past: future perfect.",
+  "en": "A suitcase is missing from the car; who knows, we must have left it at the hotel.",
+  "band": "B2"
+ },
+ {
+  "q": "Los estudiantes se ven confundidos; ni idea, ___ (entender) mal la tarea.",
+  "inf": "entender",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán entendido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "The students look confused; no idea, they must have misunderstood the assignment.",
+  "band": "B2"
+ },
+ {
+  "q": "El árbol está en el suelo; no sé, se ___ (caer) con el viento.",
+  "inf": "caer",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá caído",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect.",
+  "en": "The tree is on the ground; I don't know, it must have fallen in the wind.",
+  "band": "B2"
+ },
+ {
+  "q": "Hay luz en la casa vecina; ni idea, los dueños ___ (volver) del viaje.",
+  "inf": "volver",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán vuelto",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "The lights are on at the house next door; no idea, the owners must have come back from their trip.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi cuaderno no está en el bolso; ni idea, lo ___ (sacar) sin darme cuenta.",
+  "inf": "sacar",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré sacado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "My notebook isn't in my bag; no idea, I must have taken it out without noticing.",
+  "band": "B2"
+ },
+ {
+  "q": "El plato está casi vacío; quién sabe, Mateo ___ (probar) un poco de todo.",
+  "inf": "probar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá probado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"quién sabe\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"quién sabe\" marks a guess about the past: future perfect.",
+  "en": "The plate is almost empty; who knows, Mateo must have tried a bit of everything.",
+  "band": "B2"
+ },
+ {
+  "q": "La torta quedó dura; ni idea, ___ (hacer) mal la mezcla.",
+  "inf": "hacer",
+  "tense": "futperf",
+  "person": "nosotros",
+  "answer": "habremos hecho",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "The cake came out hard; no idea, we must have made the batter wrong.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi jefe llegó sonriendo; no sé, ___ (cambiar) de humor en el fin de semana.",
+  "inf": "cambiar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá cambiado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect.",
+  "en": "My boss arrived smiling; I don't know, his mood must have changed over the weekend.",
+  "band": "B2"
+ },
+ {
+  "q": "Los meseros están felices; quién sabe, ___ (sacar) buena propina hoy.",
+  "inf": "sacar",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán sacado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"quién sabe\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"quién sabe\" marks a guess about the past: future perfect.",
+  "en": "The waiters are happy; who knows, they must have made good tips today.",
+  "band": "B2"
+ },
+ {
+  "q": "Pareces asustada, Marta; ni idea, ___ (ver) algo raro en el pasillo.",
+  "inf": "ver",
+  "tense": "futperf",
+  "person": "tú",
+  "answer": "habrás visto",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "You look scared, Marta; no idea, you must have seen something strange in the hallway.",
+  "band": "B2"
+ },
+ {
+  "q": "El motor hace ruido; no sé, se ___ (romper) una pieza.",
+  "inf": "romper",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá roto",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect.",
+  "en": "The engine is making noise; I don't know, a part must have broken.",
+  "band": "B2"
+ },
+ {
+  "q": "El correo no llegó; ni idea, Marta lo ___ (enviar) a otra dirección.",
+  "inf": "enviar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá enviado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "The email didn't arrive; no idea, Marta must have sent it to another address.",
+  "band": "B2"
+ },
+ {
+  "q": "Tengo un cobro de más; quién sabe, ___ (pagar) dos veces el recibo.",
+  "inf": "pagar",
+  "tense": "futperf",
+  "person": "yo",
+  "answer": "habré pagado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"quién sabe\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"quién sabe\" marks a guess about the past: future perfect.",
+  "en": "I have an extra charge; who knows, I must have paid the bill twice.",
+  "band": "B2"
+ },
+ {
+  "q": "Los vecinos se quejan; ni idea, ___ (oír) la música de anoche.",
+  "inf": "oír",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán oído",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto. También se oye el condicional perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect. The conditional perfect is also heard.",
+  "en": "The neighbors are complaining; no idea, they must have heard last night's music.",
+  "band": "B2",
+  "also": [
+   "habrían oído"
+  ]
+ },
+ {
+  "q": "La mesa está en otro lugar; no sé, alguien la ___ (mover).",
+  "inf": "mover",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá movido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect.",
+  "en": "The table is in a different place; I don't know, someone must have moved it.",
+  "band": "B2"
+ },
+ {
+  "q": "Sobró mucha comida; ni idea, ___ (preparar) demasiado.",
+  "inf": "preparar",
+  "tense": "futperf",
+  "person": "nosotros",
+  "answer": "habremos preparado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "There was a lot of food left over; no idea, we must have made too much.",
+  "band": "B2"
+ },
+ {
+  "q": "Nadie contesta el timbre; quién sabe, todos se ___ (dormir) temprano.",
+  "inf": "dormir",
+  "tense": "futperf",
+  "person": "ellos",
+  "answer": "habrán dormido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"quién sabe\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"quién sabe\" marks a guess about the past: future perfect.",
+  "en": "No one answers the doorbell; who knows, everyone must have gone to bed early.",
+  "band": "B2"
+ },
+ {
+  "q": "Hay mucha gente saliendo del cine; quién sabe, ya ___ (acabar) la función.",
+  "inf": "acabar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá acabado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"quién sabe\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"quién sabe\" marks a guess about the past: future perfect.",
+  "en": "Lots of people are leaving the cinema; who knows, the show must have ended already.",
+  "band": "B2"
+ },
+ {
+  "q": "Tu mamá está enojada, Pablo; ni idea, le ___ (decir) algo sin pensar.",
+  "inf": "decir",
+  "tense": "futperf",
+  "person": "tú",
+  "answer": "habrás dicho",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "Your mom is angry, Pablo; no idea, you must have said something without thinking.",
+  "band": "B2"
+ },
+ {
+  "q": "Llegamos y el lugar estaba cerrado; ni idea, ___ (escribir) mal la fecha.",
+  "inf": "escribir",
+  "tense": "futperf",
+  "person": "nosotros",
+  "answer": "habremos escrito",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto. También se oye el condicional perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect. The conditional perfect is also heard.",
+  "en": "We arrived and the place was closed; no idea, we must have written the date wrong.",
+  "band": "B2",
+  "also": [
+   "habríamos escrito"
+  ]
+ },
+ {
+  "q": "El cliente no responde; no sé, ___ (cambiar) de proveedor.",
+  "inf": "cambiar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá cambiado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"no sé\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"no sé\" marks a guess about the past: future perfect.",
+  "en": "The client isn't responding; I don't know, they must have switched suppliers.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi perro no quiere comer; ni idea, ___ (comer) algo en la calle.",
+  "inf": "comer",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá comido",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "My dog won't eat; no idea, he must have eaten something in the street.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi hermano no durmió en la casa; ni idea, se ___ (quedar) donde un amigo.",
+  "inf": "quedar",
+  "tense": "futperf",
+  "person": "él/ella",
+  "answer": "habrá quedado",
+  "use": "probabilidad sobre el pasado",
+  "confuse": [
+   "futuro",
+   "condperf",
+   "perfsubj"
+  ],
+  "why_es": "\"ni idea\" marca una suposición sobre el pasado: futuro perfecto.",
+  "why_en": "\"ni idea\" marks a guess about the past: future perfect.",
+  "en": "My brother didn't sleep at home; no idea, he must have stayed at a friend's.",
+  "band": "B2"
+ }
+]

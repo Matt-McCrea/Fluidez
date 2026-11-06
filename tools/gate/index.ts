@@ -109,6 +109,13 @@ export function runGate(d: Data, sink: Sink): void {
   for (const f of exactDuplicates(applyDupes)) push(f);
   for (const [L, texts] of applyByLevel) for (const f of frameOveruse(`apply L${L}`, AF, texts)) push(f);
 
+  // ---- verb gaps: the sentence with its answer filled in; duplicates are errors, frames per tense
+  const VF = 'data/verb-gaps.js';
+  const vg = (d.VERB_GAPS ?? []).map((g: any, i: number) => ({ file: VF, path: `verbgaps[${i}]`, text: String(g.q ?? '').replace(/___\s*\([^)]*\)/, String(g.a ?? '')), t: String(g.t) }));
+  for (const f of exactDuplicates(vg)) push(f);
+  for (const f of nearDuplicates(vg)) push(f);
+  for (const t of new Set(vg.map((x) => x.t))) for (const f of frameOveruse(`verb gaps ${t}`, VF, vg.filter((x) => x.t === t).map((x) => x.text))) push(f);
+
   // ---- writing
   const wd: DupItem[] = d.WRITING_TASKS.map((t) => ({ file: 'data/writing.js', path: t.id, text: String(t.prompt ?? '') }));
   for (const f of exactDuplicates(wd)) push(f);

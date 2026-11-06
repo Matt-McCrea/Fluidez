@@ -113,7 +113,15 @@
   function currentFocus() { if (!FULL()) return null; var a = loadArc(); return a.focus || null; }
   function setArcFocus(f) { var a = loadArc(); a.focus = f || null; saveArc(a); applyFocus(); }
 
+  /* The Verbos bank's one tense the engine has no entry for (hubiera + participle). */
+  function verbosTenses() {
+    var keys = window.ENGINE.TENSES.map(function (t) { return t.key; });
+    var i = keys.indexOf('perfsubj');
+    keys.splice(i === -1 ? keys.length : i + 1, 0, 'pluscsubj');
+    return keys;
+  }
   function tenseLabel(k) {
+    if (k === 'pluscsubj') return 'Pluscuamperfecto de subjuntivo';
     return (window.ENGINE && window.ENGINE.TENSE_LABEL && window.ENGINE.TENSE_LABEL[k]) || k;
   }
   function themeLabel(id) {
@@ -510,7 +518,7 @@
   function chosenTenses() {
     var a = loadArc(), ts = a.tenses;
     if (!ts || !ts.length || !window.ENGINE) return [];
-    var known = window.ENGINE.TENSES.map(function (t) { return t.key; });
+    var known = verbosTenses();
     return ts.filter(function (t) { return known.indexOf(t) !== -1; });
   }
   function saveTenses(ts) { var a = loadArc(); a.tenses = ts; saveArc(a); }
@@ -555,19 +563,23 @@
       }
       all.addEventListener('click', function () { sel = []; saveTenses(sel); paint(); });
       chips.appendChild(all);
-      window.ENGINE.TENSES.forEach(function (t) {
-        var b = el('button', 'arc-chip', tenseLabel(t.key));
+      verbosTenses().forEach(function (tkey) {
+        var b = el('button', 'arc-chip', tenseLabel(tkey));
         b.type = 'button';
         b.addEventListener('click', function () {
-          var i = sel.indexOf(t.key);
-          if (i === -1) sel.push(t.key); else sel.splice(i, 1);
+          var i = sel.indexOf(tkey);
+          if (i === -1) sel.push(tkey); else sel.splice(i, 1);
           saveTenses(sel); paint();
         });
-        byKey[t.key] = b;
+        byKey[tkey] = b;
         chips.appendChild(b);
       });
       paint();
       wrap.appendChild(chips);
+    }
+
+    if (g.key === 'frases' && window.GameItems && window.GameItems.phraseCoverage) {
+      wrap.appendChild(el('div', 'arc-progress', null)).appendChild(el('div', 'arc-progress-all', window.GameItems.phraseCoverage().text));
     }
 
     if (g.key === 'palabras' && window.GameItems && window.GameItems.coverage) {

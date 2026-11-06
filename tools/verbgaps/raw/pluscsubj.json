@@ -1,0 +1,2564 @@
+[
+ {
+  "q": "Si yo ___ (saber) que venías, te habría esperado.",
+  "inf": "saber",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera sabido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (te habría esperado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (te habría esperado).",
+  "en": "If I had known you were coming, I would have waited for you.",
+  "band": "C1"
+ },
+ {
+  "q": "Si Camilo ___ (estudiar) más, habría aprobado el examen.",
+  "inf": "estudiar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera estudiado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría aprobado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría aprobado).",
+  "en": "If Camilo had studied more, he would have passed the exam.",
+  "band": "C1"
+ },
+ {
+  "q": "Si tú me ___ (avisar), habría llegado a tiempo.",
+  "inf": "avisar",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras avisado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría llegado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría llegado).",
+  "en": "If you had told me, I would have arrived on time.",
+  "band": "C1"
+ },
+ {
+  "q": "Si nosotros ___ (salir) más temprano, no nos habríamos quedado en el trancón.",
+  "inf": "salir",
+  "tense": "pluscsubj",
+  "person": "nosotros",
+  "answer": "hubiéramos salido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (nos habríamos quedado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (nos habríamos quedado).",
+  "en": "If we had left earlier, we would not have got stuck in the traffic jam.",
+  "band": "C1"
+ },
+ {
+  "q": "Si mis papás ___ (venir), la fiesta habría sido mejor.",
+  "inf": "venir",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran venido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría sido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría sido).",
+  "en": "If my parents had come, the party would have been better.",
+  "band": "C1"
+ },
+ {
+  "q": "Si yo ___ (tener) tu número, te habría llamado ayer.",
+  "inf": "tener",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera tenido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (te habría llamado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (te habría llamado).",
+  "en": "If I had had your number, I would have called you yesterday.",
+  "band": "C1"
+ },
+ {
+  "q": "Si Valentina ___ (decir) la verdad ayer, hoy no estaría en problemas.",
+  "inf": "decir",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera dicho",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (estaría).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (estaría).",
+  "en": "If Valentina had told the truth, she wouldn't be in trouble.",
+  "band": "C1"
+ },
+ {
+  "q": "Si tú ___ (ir) al médico la semana pasada, no estarías peor ahora.",
+  "inf": "ir",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras ido",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (estarías).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (estarías).",
+  "en": "If you had gone to the doctor in time, you wouldn't be worse now.",
+  "band": "C1"
+ },
+ {
+  "q": "Si no ___ (llover) tanto, el partido se habría jugado.",
+  "inf": "llover",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera llovido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (se habría jugado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (se habría jugado).",
+  "en": "If it hadn't rained so much, the match would have been played.",
+  "band": "C1"
+ },
+ {
+  "q": "Si ustedes ___ (llamar) antes, les habríamos guardado una mesa.",
+  "inf": "llamar",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran llamado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (les habríamos guardado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (les habríamos guardado).",
+  "en": "If you had called earlier, we would have saved you a table.",
+  "band": "C1"
+ },
+ {
+  "q": "Si yo ___ (nacer) en otra ciudad, mi vida sería distinta.",
+  "inf": "nacer",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera nacido",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (sería).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (sería).",
+  "en": "If I had been born in another city, my life would be different.",
+  "band": "C1"
+ },
+ {
+  "q": "Si el bus no ___ (pasar) tan lleno, me habría subido.",
+  "inf": "pasar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera pasado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (me habría subido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (me habría subido).",
+  "en": "If the bus hadn't come so full, I would have gotten on.",
+  "band": "C1"
+ },
+ {
+  "q": "Si hace diez años nosotros ___ (comprar) esa casa, ahora tendríamos una deuda enorme.",
+  "inf": "comprar",
+  "tense": "pluscsubj",
+  "person": "nosotros",
+  "answer": "hubiéramos comprado",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (tendríamos).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (tendríamos).",
+  "en": "If we had bought that house, we would have a huge debt now.",
+  "band": "C1"
+ },
+ {
+  "q": "Si tú ___ (hacer) caso, no habrías perdido la plata.",
+  "inf": "hacer",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras hecho",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habrías perdido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habrías perdido).",
+  "en": "If you had listened, you wouldn't have lost the money.",
+  "band": "C1"
+ },
+ {
+  "q": "Si mi abuela ___ (vivir) más años, habría conocido a mis hijos.",
+  "inf": "vivir",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera vivido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría conocido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría conocido).",
+  "en": "If my grandmother had lived longer, she would have met my kids.",
+  "band": "C1"
+ },
+ {
+  "q": "Si los vecinos ___ (poner) la denuncia, la policía habría venido.",
+  "inf": "poner",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran puesto",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría venido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría venido).",
+  "en": "If the neighbors had filed the report, the police would have come.",
+  "band": "C1"
+ },
+ {
+  "q": "Si yo ___ (ver) el letrero, no habría entrado por ahí.",
+  "inf": "ver",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera visto",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría entrado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría entrado).",
+  "en": "If I had seen the sign, I wouldn't have gone in that way.",
+  "band": "C1"
+ },
+ {
+  "q": "Si Ana ___ (aceptar) el empleo el año pasado, hoy viviría en Medellín.",
+  "inf": "aceptar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera aceptado",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (viviría).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (viviría).",
+  "en": "If Ana had accepted the job, she would live in Medellín today.",
+  "band": "C1"
+ },
+ {
+  "q": "Si ustedes ___ (traer) paraguas, no se habrían mojado.",
+  "inf": "traer",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran traído",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (se habrían mojado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (se habrían mojado).",
+  "en": "If you had brought umbrellas, you wouldn't have gotten wet.",
+  "band": "C1"
+ },
+ {
+  "q": "Si tú ___ (pedir) ayuda, todos te habríamos ayudado.",
+  "inf": "pedir",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras pedido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (te habríamos ayudado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (te habríamos ayudado).",
+  "en": "If you had asked for help, we would all have helped you.",
+  "band": "C1"
+ },
+ {
+  "q": "Si nosotros ___ (poder) elegir, habríamos escogido otro hotel.",
+  "inf": "poder",
+  "tense": "pluscsubj",
+  "person": "nosotros",
+  "answer": "hubiéramos podido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habríamos escogido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habríamos escogido).",
+  "en": "If we had been able to choose, we would have picked another hotel.",
+  "band": "C1"
+ },
+ {
+  "q": "Si el jefe me ___ (dar) permiso, habría ido a la boda.",
+  "inf": "dar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera dado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría ido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría ido).",
+  "en": "If the boss had given me permission, I would have gone to the wedding.",
+  "band": "C1"
+ },
+ {
+  "q": "Si yo ___ (leer) el contrato, no lo habría firmado.",
+  "inf": "leer",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera leído",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (lo habría firmado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (lo habría firmado).",
+  "en": "If I had read the contract, I wouldn't have signed it.",
+  "band": "C1"
+ },
+ {
+  "q": "Si mis hermanos ___ (cuidar) mejor el carro hace años, hoy seguiría funcionando.",
+  "inf": "cuidar",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran cuidado",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (seguiría).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (seguiría).",
+  "en": "If my brothers had taken better care of the car, it would still run.",
+  "band": "C1"
+ },
+ {
+  "q": "Si tú ___ (ser) más paciente, habrías conseguido el puesto.",
+  "inf": "ser",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras sido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habrías conseguido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habrías conseguido).",
+  "en": "If you had been more patient, you would have gotten the position.",
+  "band": "C1"
+ },
+ {
+  "q": "Si Laura ___ (estar) aquí ayer, habría visto el accidente.",
+  "inf": "estar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera estado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría visto).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría visto).",
+  "en": "If Laura had been here yesterday, she would have seen the accident.",
+  "band": "C1"
+ },
+ {
+  "q": "Si nosotros no ___ (perder) el tiquete ayer, estaríamos ya en Cartagena.",
+  "inf": "perder",
+  "tense": "pluscsubj",
+  "person": "nosotros",
+  "answer": "hubiéramos perdido",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (estaríamos).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (estaríamos).",
+  "en": "If we hadn't lost the ticket, we would already be in Cartagena.",
+  "band": "C1"
+ },
+ {
+  "q": "Si yo ___ (empezar) a ahorrar a los veinte, ahora tendría una casa.",
+  "inf": "empezar",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera empezado",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (tendría).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (tendría).",
+  "en": "If I had started saving at twenty, I would have a house now.",
+  "band": "C1"
+ },
+ {
+  "q": "Si ellos ___ (querer) quedarse, nosotros los habríamos recibido.",
+  "inf": "querer",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran querido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habríamos recibido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habríamos recibido).",
+  "en": "If they had wanted to stay, we would have welcomed them.",
+  "band": "C1"
+ },
+ {
+  "q": "Si el doctor ___ (llegar) cinco minutos antes, el paciente se habría salvado.",
+  "inf": "llegar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera llegado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (se habría salvado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (se habría salvado).",
+  "en": "If the doctor had arrived five minutes earlier, the patient would have been saved.",
+  "band": "C1"
+ },
+ {
+  "q": "Si tú ___ (escuchar) a tu mamá aquella vez, no estarías en este lío.",
+  "inf": "escuchar",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras escuchado",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (estarías).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (estarías).",
+  "en": "If you had listened to your mom, you wouldn't be in this mess.",
+  "band": "C1"
+ },
+ {
+  "q": "Si yo ___ (dormir) mejor anoche, hoy no estaría tan cansada.",
+  "inf": "dormir",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera dormido",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (estaría).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (estaría).",
+  "en": "If I had slept better last night, I wouldn't be so tired today.",
+  "band": "C1"
+ },
+ {
+  "q": "Si ustedes ___ (decidir) rápido, habrían alcanzado los boletos.",
+  "inf": "decidir",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran decidido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habrían alcanzado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habrían alcanzado).",
+  "en": "If you had decided quickly, you would have gotten the tickets.",
+  "band": "C1"
+ },
+ {
+  "q": "Si Mateo ___ (aprender) inglés de niño, hoy hablaría perfecto.",
+  "inf": "aprender",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera aprendido",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (hablaría).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (hablaría).",
+  "en": "If Mateo had learned English as a kid, he would speak perfectly today.",
+  "band": "C1"
+ },
+ {
+  "q": "Si nosotros ___ (mirar) el mapa, no nos habríamos perdido.",
+  "inf": "mirar",
+  "tense": "pluscsubj",
+  "person": "nosotros",
+  "answer": "hubiéramos mirado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (nos habríamos perdido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (nos habríamos perdido).",
+  "en": "If we had looked at the map, we would not have got lost.",
+  "band": "C1"
+ },
+ {
+  "q": "Si tú ___ (traducir) el documento a tiempo, el cliente no se habría quejado.",
+  "inf": "traducir",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras traducido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (se habría quejado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (se habría quejado).",
+  "en": "If you had translated the document on time, the client wouldn't have complained.",
+  "band": "C1"
+ },
+ {
+  "q": "Si el cocinero ___ (probar) la sopa, la habría corregido.",
+  "inf": "probar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera probado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (la habría corregido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (la habría corregido).",
+  "en": "If the cook had tasted the soup, he would have fixed it.",
+  "band": "C1"
+ },
+ {
+  "q": "Si yo ___ (poner) la alarma, no me habría quedado dormido.",
+  "inf": "poner",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera puesto",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (me habría quedado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (me habría quedado).",
+  "en": "If I had set the alarm, I wouldn't have overslept.",
+  "band": "C1"
+ },
+ {
+  "q": "Si mis amigos ___ (invitar) a Sofía, ella habría ido.",
+  "inf": "invitar",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran invitado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría ido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría ido).",
+  "en": "If my friends had invited Sofía, she would have gone.",
+  "band": "C1"
+ },
+ {
+  "q": "Si tú ___ (guardar) el archivo, no habrías perdido el trabajo.",
+  "inf": "guardar",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras guardado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habrías perdido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habrías perdido).",
+  "en": "If you had saved the file, you wouldn't have lost the work.",
+  "band": "C1"
+ },
+ {
+  "q": "Si la empresa ___ (pagar) a tiempo, no habríamos renunciado.",
+  "inf": "pagar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera pagado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habríamos renunciado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habríamos renunciado).",
+  "en": "If the company had paid on time, we wouldn't have quit.",
+  "band": "C1"
+ },
+ {
+  "q": "Si nosotros ___ (hacer) la reserva ayer, tendríamos mesa esta noche.",
+  "inf": "hacer",
+  "tense": "pluscsubj",
+  "person": "nosotros",
+  "answer": "hubiéramos hecho",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (tendríamos).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (tendríamos).",
+  "en": "If we had made a reservation, we would have a table tonight.",
+  "band": "C1"
+ },
+ {
+  "q": "Si yo ___ (salir) con ellos, me habría divertido más.",
+  "inf": "salir",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera salido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (me habría divertido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (me habría divertido).",
+  "en": "If I had gone out with them, I would have had more fun.",
+  "band": "C1"
+ },
+ {
+  "q": "Si ella no ___ (romper) el celular, me habría llamado.",
+  "inf": "romper",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera roto",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (me habría llamado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (me habría llamado).",
+  "en": "If she hadn't broken her cell phone, she would have called me.",
+  "band": "C1"
+ },
+ {
+  "q": "Si ustedes ___ (seguir) mis consejos el año pasado, hoy estarían mejor.",
+  "inf": "seguir",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran seguido",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (estarían).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (estarían).",
+  "en": "If you had followed my advice, you would be better off today.",
+  "band": "C1"
+ },
+ {
+  "q": "Si tú no me ___ (decir) esa mentira aquella vez, todavía confiaría en ti.",
+  "inf": "decir",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras dicho",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (confiaría).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (confiaría).",
+  "en": "If you hadn't lied, I would still trust you.",
+  "band": "C1"
+ },
+ {
+  "q": "Si Pedro ___ (volver) antes, habría visto a su abuelo.",
+  "inf": "volver",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera vuelto",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría visto).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría visto).",
+  "en": "If Pedro had come back sooner, he would have seen his grandfather.",
+  "band": "C1"
+ },
+ {
+  "q": "Si yo ___ (tomar) el otro bus, habría llegado a las ocho.",
+  "inf": "tomar",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera tomado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría llegado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría llegado).",
+  "en": "If I had taken the other bus, I would have arrived at eight.",
+  "band": "C1"
+ },
+ {
+  "q": "Si nosotros ___ (escribir) la carta antes, nos habrían respondido.",
+  "inf": "escribir",
+  "tense": "pluscsubj",
+  "person": "nosotros",
+  "answer": "hubiéramos escrito",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (nos habrían respondido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (nos habrían respondido).",
+  "en": "If we had written the letter earlier, they would have answered us.",
+  "band": "C1"
+ },
+ {
+  "q": "Si ellos ___ (ganar) la final del año pasado, serían campeones hoy.",
+  "inf": "ganar",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran ganado",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (serían).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (serían).",
+  "en": "If they had won that match, they would be champions today.",
+  "band": "C1"
+ },
+ {
+  "q": "Si tú ___ (cerrar) la puerta, el perro no se habría escapado.",
+  "inf": "cerrar",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras cerrado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (se habría escapado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (se habría escapado).",
+  "en": "If you had closed the door, the dog wouldn't have escaped.",
+  "band": "C1"
+ },
+ {
+  "q": "Si mi mamá se ___ (enterar), me habría regañado.",
+  "inf": "enterarse",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera enterado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (me habría regañado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (me habría regañado).",
+  "en": "If my mom had found out, she would have scolded me.",
+  "band": "C1"
+ },
+ {
+  "q": "Si yo ___ (conseguir) la beca, habría estudiado en Madrid.",
+  "inf": "conseguir",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera conseguido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría estudiado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría estudiado).",
+  "en": "If I had gotten the scholarship, I would have studied in Madrid.",
+  "band": "C1"
+ },
+ {
+  "q": "Si el equipo ___ (jugar) mejor, habríamos ganado.",
+  "inf": "jugar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera jugado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habríamos ganado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habríamos ganado).",
+  "en": "If the team had played better, we would have won.",
+  "band": "C1"
+ },
+ {
+  "q": "Si ustedes me ___ (decir) la hora, yo habría estado allá.",
+  "inf": "decir",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran dicho",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría estado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría estado).",
+  "en": "If you had told me the time, I would have been there.",
+  "band": "C1"
+ },
+ {
+  "q": "Si nosotros ___ (ir) en carro, habríamos llegado más rápido.",
+  "inf": "ir",
+  "tense": "pluscsubj",
+  "person": "nosotros",
+  "answer": "hubiéramos ido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habríamos llegado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habríamos llegado).",
+  "en": "If we had gone by car, we would have arrived faster.",
+  "band": "C1"
+ },
+ {
+  "q": "Si tú ___ (tener) cuidado, no te habrías caído.",
+  "inf": "tener",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras tenido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (te habrías caído).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (te habrías caído).",
+  "en": "If you had been careful, you wouldn't have fallen.",
+  "band": "C1"
+ },
+ {
+  "q": "Si la profesora ___ (explicar) mejor, habríamos entendido.",
+  "inf": "explicar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera explicado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habríamos entendido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habríamos entendido).",
+  "en": "If the teacher had explained better, we would have understood.",
+  "band": "C1"
+ },
+ {
+  "q": "Si yo ___ (olvidar) la cita, mi jefe se habría enojado.",
+  "inf": "olvidar",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera olvidado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (se habría enojado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (se habría enojado).",
+  "en": "If I had forgotten the appointment, my boss would have been angry.",
+  "band": "C1"
+ },
+ {
+  "q": "Si ellos no ___ (vender) la finca en 2010, hoy serían ricos.",
+  "inf": "vender",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran vendido",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (serían).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (serían).",
+  "en": "If they hadn't sold the farm, they would be rich today.",
+  "band": "C1"
+ },
+ {
+  "q": "Si Laura ___ (nacer) en Cartagena, habría crecido junto al mar.",
+  "inf": "nacer",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera nacido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría crecido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría crecido).",
+  "en": "If Laura had been born in Cartagena, she would have grown up by the sea.",
+  "band": "C1"
+ },
+ {
+  "q": "Ojalá no ___ (decir) yo eso en la reunión de ayer.",
+  "inf": "decir",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera dicho",
+  "use": "ojalá + pluscuamperfecto de subjuntivo: deseo sobre el pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Ojalá + deseo sobre el pasado (\"de ayer\"): ya no se puede cambiar, pluscuamperfecto.",
+  "why_en": "Ojalá + a wish about the past (\"de ayer\"): it can't change, so the pluperfect.",
+  "en": "I wish I hadn't said that in yesterday's meeting.",
+  "band": "C1"
+ },
+ {
+  "q": "Ojalá tú me ___ (avisar) a tiempo; ayer perdí la entrega.",
+  "inf": "avisar",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras avisado",
+  "use": "ojalá + pluscuamperfecto de subjuntivo: deseo sobre el pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Ojalá + deseo sobre el pasado (\"ayer perdí\"): ya no se puede cambiar, pluscuamperfecto.",
+  "why_en": "Ojalá + a wish about the past (\"ayer perdí\"): it can't change, so the pluperfect.",
+  "en": "I wish you had told me in time; yesterday I missed the deadline.",
+  "band": "C1"
+ },
+ {
+  "q": "Ojalá nosotros ___ (comprar) esa casa cuando estaba barata.",
+  "inf": "comprar",
+  "tense": "pluscsubj",
+  "person": "nosotros",
+  "answer": "hubiéramos comprado",
+  "use": "ojalá + pluscuamperfecto de subjuntivo: deseo sobre el pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Ojalá + deseo sobre el pasado (\"cuando estaba barata\"): ya no se puede cambiar, pluscuamperfecto.",
+  "why_en": "Ojalá + a wish about the past (\"cuando estaba barata\"): it can't change, so the pluperfect.",
+  "en": "I wish we had bought that house when it was cheap.",
+  "band": "C1"
+ },
+ {
+  "q": "Ojalá mi abuelo, que murió hace diez años, ___ (conocer) a sus bisnietos.",
+  "inf": "conocer",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera conocido",
+  "use": "ojalá + pluscuamperfecto de subjuntivo: deseo sobre el pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Ojalá + deseo sobre el pasado (\"murió\"): ya no se puede cambiar, pluscuamperfecto.",
+  "why_en": "Ojalá + a wish about the past (\"murió\"): it can't change, so the pluperfect.",
+  "en": "I wish my grandfather, who died ten years ago, had met his great-grandchildren.",
+  "band": "C1"
+ },
+ {
+  "q": "Ojalá ustedes ___ (venir) con nosotros el año pasado.",
+  "inf": "venir",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran venido",
+  "use": "ojalá + pluscuamperfecto de subjuntivo: deseo sobre el pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Ojalá + deseo sobre el pasado (\"el año pasado\"): ya no se puede cambiar, pluscuamperfecto.",
+  "why_en": "Ojalá + a wish about the past (\"el año pasado\"): it can't change, so the pluperfect.",
+  "en": "I wish you had come with us last year.",
+  "band": "C1"
+ },
+ {
+  "q": "Ojalá yo ___ (estudiar) música de joven.",
+  "inf": "estudiar",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera estudiado",
+  "use": "ojalá + pluscuamperfecto de subjuntivo: deseo sobre el pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Ojalá + deseo sobre el pasado (\"de joven\"): ya no se puede cambiar, pluscuamperfecto.",
+  "why_en": "Ojalá + a wish about the past (\"de joven\"): it can't change, so the pluperfect.",
+  "en": "I wish I had studied music when I was young.",
+  "band": "C1"
+ },
+ {
+  "q": "Ojalá no ___ (llover) ayer; el paseo habría sido perfecto.",
+  "inf": "llover",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera llovido",
+  "use": "ojalá + pluscuamperfecto de subjuntivo: deseo sobre el pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Ojalá + deseo sobre el pasado (\"ayer\"): ya no se puede cambiar, pluscuamperfecto.",
+  "why_en": "Ojalá + a wish about the past (\"ayer\"): it can't change, so the pluperfect.",
+  "en": "I wish it hadn't rained yesterday; the outing would have been perfect.",
+  "band": "C1"
+ },
+ {
+  "q": "Ojalá tú les ___ (hacer) caso a los médicos hace años.",
+  "inf": "hacer",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras hecho",
+  "use": "ojalá + pluscuamperfecto de subjuntivo: deseo sobre el pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Ojalá + deseo sobre el pasado (\"hace años\"): ya no se puede cambiar, pluscuamperfecto.",
+  "why_en": "Ojalá + a wish about the past (\"hace años\"): it can't change, so the pluperfect.",
+  "en": "I wish you had listened to the doctors years ago.",
+  "band": "C1"
+ },
+ {
+  "q": "Los extrañamos mucho; ojalá nunca se ___ (ir) del barrio.",
+  "inf": "irse",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran ido",
+  "use": "ojalá + pluscuamperfecto de subjuntivo: deseo sobre el pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Ojalá + deseo sobre el pasado (\"los extrañamos\"): ya no se puede cambiar, pluscuamperfecto.",
+  "why_en": "Ojalá + a wish about the past (\"los extrañamos\"): it can't change, so the pluperfect.",
+  "en": "We miss them a lot; I wish they had never left the neighbourhood.",
+  "band": "C1"
+ },
+ {
+  "q": "Ojalá Ana ___ (poder) quedarse a la fiesta anoche.",
+  "inf": "poder",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera podido",
+  "use": "ojalá + pluscuamperfecto de subjuntivo: deseo sobre el pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Ojalá + deseo sobre el pasado (\"anoche\"): ya no se puede cambiar, pluscuamperfecto.",
+  "why_en": "Ojalá + a wish about the past (\"anoche\"): it can't change, so the pluperfect.",
+  "en": "I wish Ana had been able to stay at the party last night.",
+  "band": "C1"
+ },
+ {
+  "q": "La vimos en el celular; ojalá la ___ (ver) en el cine.",
+  "inf": "ver",
+  "tense": "pluscsubj",
+  "person": "nosotros",
+  "answer": "hubiéramos visto",
+  "use": "ojalá + pluscuamperfecto de subjuntivo: deseo sobre el pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Ojalá + deseo sobre el pasado (\"la vimos\"): ya no se puede cambiar, pluscuamperfecto.",
+  "why_en": "Ojalá + a wish about the past (\"la vimos\"): it can't change, so the pluperfect.",
+  "en": "We watched it on the phone; I wish we had seen it at the cinema.",
+  "band": "C1"
+ },
+ {
+  "q": "Ojalá yo ___ (traer) el paraguas esta mañana.",
+  "inf": "traer",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera traído",
+  "use": "ojalá + pluscuamperfecto de subjuntivo: deseo sobre el pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Ojalá + deseo sobre el pasado (\"esta mañana\"): ya no se puede cambiar, pluscuamperfecto.",
+  "why_en": "Ojalá + a wish about the past (\"esta mañana\"): it can't change, so the pluperfect.",
+  "en": "I wish I had brought the umbrella this morning.",
+  "band": "C1"
+ },
+ {
+  "q": "Ojalá ustedes me ___ (escuchar) cuando se lo advertí.",
+  "inf": "escuchar",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran escuchado",
+  "use": "ojalá + pluscuamperfecto de subjuntivo: deseo sobre el pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Ojalá + deseo sobre el pasado (\"cuando se lo advertí\"): ya no se puede cambiar, pluscuamperfecto.",
+  "why_en": "Ojalá + a wish about the past (\"cuando se lo advertí\"): it can't change, so the pluperfect.",
+  "en": "I wish you had listened to me when I warned you.",
+  "band": "C1"
+ },
+ {
+  "q": "Mi papá ya está enfermo; ojalá ___ (dejar) de fumar hace años.",
+  "inf": "dejar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera dejado",
+  "use": "ojalá + pluscuamperfecto de subjuntivo: deseo sobre el pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Ojalá + deseo sobre el pasado (\"hace años\"): ya no se puede cambiar, pluscuamperfecto.",
+  "why_en": "Ojalá + a wish about the past (\"hace años\"): it can't change, so the pluperfect.",
+  "en": "My dad is already sick; I wish he had quit smoking years ago.",
+  "band": "C1"
+ },
+ {
+  "q": "Ojalá tú no ___ (perder) el vuelo a Japón el año pasado.",
+  "inf": "perder",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras perdido",
+  "use": "ojalá + pluscuamperfecto de subjuntivo: deseo sobre el pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Ojalá + deseo sobre el pasado (\"el año pasado\"): ya no se puede cambiar, pluscuamperfecto.",
+  "why_en": "Ojalá + a wish about the past (\"el año pasado\"): it can't change, so the pluperfect.",
+  "en": "I wish you had not missed the flight to Japan last year.",
+  "band": "C1"
+ },
+ {
+  "q": "Ojalá nosotros ___ (salir) diez minutos antes de la lluvia.",
+  "inf": "salir",
+  "tense": "pluscsubj",
+  "person": "nosotros",
+  "answer": "hubiéramos salido",
+  "use": "ojalá + pluscuamperfecto de subjuntivo: deseo sobre el pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Ojalá + deseo sobre el pasado (\"antes de la lluvia\"): ya no se puede cambiar, pluscuamperfecto.",
+  "why_en": "Ojalá + a wish about the past (\"antes de la lluvia\"): it can't change, so the pluperfect.",
+  "en": "I wish we had left ten minutes before the rain.",
+  "band": "C1"
+ },
+ {
+  "q": "No creía que ya se ___ (acabar) los boletos cuando llegué.",
+  "inf": "acabar",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran acabado",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "No creía que + subjuntivo (duda); \"ya... cuando llegué\" va antes de creía: pluscuamperfecto.",
+  "why_en": "No creía que takes the subjunctive (doubt); \"ya... cuando llegué\" is before creía: pluperfect.",
+  "en": "I didn't believe all the tickets had run out when I arrived.",
+  "band": "C1"
+ },
+ {
+  "q": "Me sorprendió que, para el lunes, los obreros ya ___ (terminar) la obra.",
+  "inf": "terminar",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran terminado",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Me sorprendió que + subjuntivo (emoción); \"para el lunes, ya\" va antes de sorprendió: pluscuamperfecto.",
+  "why_en": "Me sorprendió que takes the subjunctive (emotion); \"para el lunes, ya\" is before sorprendió: pluperfect.",
+  "en": "It surprised me that the work was already finished by Monday.",
+  "band": "C1"
+ },
+ {
+  "q": "Cuando llegamos, dudaba que alguien ya ___ (limpiar) la casa.",
+  "inf": "limpiar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera limpiado",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Dudaba que + subjuntivo (duda); \"ya... cuando llegamos\" va antes de dudaba: pluscuamperfecto.",
+  "why_en": "Dudaba que takes the subjunctive (doubt); \"ya... cuando llegamos\" is before dudaba: pluperfect.",
+  "en": "When we arrived, I doubted that anyone had already cleaned the house.",
+  "band": "C1"
+ },
+ {
+  "q": "Me dio pena que tú ya te ___ (ir) cuando por fin llegué.",
+  "inf": "irse",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras ido",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Me dio pena que + subjuntivo (emoción); \"ya... cuando llegué\" va antes de dio: pluscuamperfecto.",
+  "why_en": "Me dio pena que takes the subjunctive (emotion); \"ya... cuando llegué\" is before dio: pluperfect.",
+  "en": "I felt sorry that you had already left when I finally arrived.",
+  "band": "C1"
+ },
+ {
+  "q": "Era increíble que a los cuarenta años él nunca ___ (viajar) en avión.",
+  "inf": "viajar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera viajado",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Era increíble que + subjuntivo (valoración); \"nunca... a los cuarenta\" va antes de era: pluscuamperfecto.",
+  "why_en": "Era increíble que takes the subjunctive (judgment); \"nunca... a los cuarenta\" is before era: pluperfect.",
+  "en": "It was incredible that he had never flown at forty.",
+  "band": "C1"
+ },
+ {
+  "q": "Esperaba que para entonces ya ___ (mejorar) el clima.",
+  "inf": "mejorar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera mejorado",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Esperaba que + subjuntivo (deseo); \"para entonces ya\" va antes de esperaba: pluscuamperfecto.",
+  "why_en": "Esperaba que takes the subjunctive (desire); \"para entonces ya\" is before esperaba: pluperfect.",
+  "en": "I hoped the weather would have already improved by then.",
+  "band": "C1"
+ },
+ {
+  "q": "Nos alegró que ustedes ya ___ (hablar) con el dueño antes de la reunión.",
+  "inf": "hablar",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran hablado",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Nos alegró que + subjuntivo (emoción); \"antes de la reunión\" va antes de alegró: pluscuamperfecto.",
+  "why_en": "Nos alegró que takes the subjunctive (emotion); \"antes de la reunión\" is before alegró: pluperfect.",
+  "en": "We were glad you had already spoken to the owner before the meeting.",
+  "band": "C1"
+ },
+ {
+  "q": "Mi mamá temía que yo ya ___ (gastar) toda la plata de la semana.",
+  "inf": "gastar",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera gastado",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Temía que + subjuntivo (emoción); \"ya... toda la plata\" va antes de temía: pluscuamperfecto.",
+  "why_en": "Temía que takes the subjunctive (fear); \"ya... toda la plata\" is before temía: pluperfect.",
+  "en": "My mom feared I had already spent the whole week's money.",
+  "band": "C1"
+ },
+ {
+  "q": "Nos sorprendió que Marta ya ___ (renunciar) antes de que el jefe lo supiera.",
+  "inf": "renunciar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera renunciado",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Nos sorprendió que + subjuntivo (emoción); \"ya... antes de que\" va antes de sorprendió: pluscuamperfecto.",
+  "why_en": "Nos sorprendió que takes the subjunctive (emotion); \"ya... antes de que\" is before sorprendió: pluperfect.",
+  "en": "It surprised us that Marta had already quit before the boss knew.",
+  "band": "C1"
+ },
+ {
+  "q": "Dudábamos que Camilo ___ (olvidar) la cita tan importante del día anterior.",
+  "inf": "olvidar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera olvidado",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Dudábamos que + subjuntivo (duda); \"del día anterior\" va antes de dudábamos: pluscuamperfecto.",
+  "why_en": "Dudábamos que takes the subjunctive (doubt); \"del día anterior\" is before dudábamos: pluperfect.",
+  "en": "We doubted that Camilo had forgotten the important appointment of the day before.",
+  "band": "C1"
+ },
+ {
+  "q": "Lamentaba que nosotros no ___ (hablar) más antes de que ella se mudara.",
+  "inf": "hablar",
+  "tense": "pluscsubj",
+  "person": "nosotros",
+  "answer": "hubiéramos hablado",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Lamentaba que (emoción) + subjuntivo; lo ya ocurrido va en pluscuamperfecto; también vale habláramos.",
+  "why_en": "Lamentaba que (emotion) takes the subjunctive; the earlier event is pluperfect; habláramos also works.",
+  "en": "I regretted that we hadn't talked more before she moved.",
+  "band": "C1",
+  "also": [
+   "habláramos"
+  ]
+ },
+ {
+  "q": "Me molestó que nadie ___ (lavar) los platos desde el lunes.",
+  "inf": "lavar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera lavado",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Me molestó que + subjuntivo (emoción); \"desde el lunes\" va antes de molestó: pluscuamperfecto.",
+  "why_en": "Me molestó que takes the subjunctive (emotion); \"desde el lunes\" is before molestó: pluperfect.",
+  "en": "It bothered me that nobody had washed the dishes since Monday.",
+  "band": "C1"
+ },
+ {
+  "q": "Cuando abrí la nevera, me extrañó que alguien ya se ___ (comer) el postre.",
+  "inf": "comer",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera comido",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Me extrañó que (emoción); \"ya\" lo pone antes: pluscuamperfecto; en el habla también comiera.",
+  "why_en": "Me extrañó que (emotion); \"ya\" puts it earlier: pluperfect; in speech comiera also works.",
+  "en": "When I opened the fridge, I was surprised that someone had already eaten the dessert.",
+  "band": "C1",
+  "also": [
+   "comiera"
+  ]
+ },
+ {
+  "q": "Me alegré de que mis amigos ya ___ (llegar) cuando salí del trabajo.",
+  "inf": "llegar",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran llegado",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Me alegré de que + subjuntivo (emoción); \"ya... cuando salí\" va antes de alegré: pluscuamperfecto.",
+  "why_en": "Me alegré de que takes the subjunctive (emotion); \"ya... cuando salí\" is before alegré: pluperfect.",
+  "en": "I was glad my friends had already arrived when I got off work.",
+  "band": "C1"
+ },
+ {
+  "q": "No creíamos que usted ya ___ (resolver) el problema antes del almuerzo.",
+  "inf": "resolver",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera resuelto",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "No creíamos que + subjuntivo (duda); \"antes del almuerzo\" va antes de creíamos: pluscuamperfecto.",
+  "why_en": "No creíamos que takes the subjunctive (doubt); \"antes del almuerzo\" is before creíamos: pluperfect.",
+  "en": "We didn't believe that you had already solved the problem before lunch.",
+  "band": "C1"
+ },
+ {
+  "q": "Fue una pena que la tienda ya ___ (cerrar) cuando llegamos.",
+  "inf": "cerrar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera cerrado",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Fue una pena que + subjuntivo (emoción); \"ya... cuando llegamos\" va antes de fue: pluscuamperfecto.",
+  "why_en": "Fue una pena que takes the subjunctive (emotion); \"ya... cuando llegamos\" is before fue: pluperfect.",
+  "en": "It was a shame the store had already closed when we arrived.",
+  "band": "C1"
+ },
+ {
+  "q": "Ella no pensaba que nosotros ___ (estar) en esa ciudad antes de conocernos.",
+  "inf": "estar",
+  "tense": "pluscsubj",
+  "person": "nosotros",
+  "answer": "hubiéramos estado",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "No pensaba que + subjuntivo (duda); \"antes de conocernos\" va antes de pensaba: pluscuamperfecto.",
+  "why_en": "No pensaba que takes the subjunctive (doubt); \"antes de conocernos\" is before pensaba: pluperfect.",
+  "en": "She didn't think we had been in that city before meeting.",
+  "band": "C1"
+ },
+ {
+  "q": "Me sorprendió que tú ya ___ (leer) el libro cuando te lo presté.",
+  "inf": "leer",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras leído",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Me sorprendió que + subjuntivo (emoción); algo anterior a sorprendió: pluscuamperfecto.",
+  "why_en": "Me sorprendió que + subjunctive (emotion); earlier than sorprendió: pluperfect.",
+  "en": "It surprised me that you had already read the book when I lent it to you.",
+  "band": "C1"
+ },
+ {
+  "q": "Mis padres no creían que yo ya ___ (aprobar) todos los exámenes.",
+  "inf": "aprobar",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera aprobado",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "No creían que + subjuntivo (duda); \"ya... todos los exámenes\" va antes de creían: pluscuamperfecto.",
+  "why_en": "No creían que takes the subjunctive (doubt); \"ya... todos los exámenes\" is before creían: pluperfect.",
+  "en": "My parents could not believe I had already passed all the exams.",
+  "band": "C1"
+ },
+ {
+  "q": "Dudaba que ya ___ (publicar) la noticia antes de las diez.",
+  "inf": "publicar",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran publicado",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Dudaba que + subjuntivo (duda); \"antes de las diez\" va antes de dudaba: pluscuamperfecto.",
+  "why_en": "Dudaba que takes the subjunctive (doubt); \"antes de las diez\" is before dudaba: pluperfect.",
+  "en": "I doubted they had already published the news before ten.",
+  "band": "C1"
+ },
+ {
+  "q": "Temíamos que los ladrones ya ___ (entrar) cuando volvimos a casa.",
+  "inf": "entrar",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran entrado",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Temíamos que + subjuntivo (emoción); \"ya... cuando volvimos\" va antes de temíamos: pluscuamperfecto.",
+  "why_en": "Temíamos que takes the subjunctive (fear); \"ya... cuando volvimos\" is before temíamos: pluperfect.",
+  "en": "We feared the thieves had already broken in when we got home.",
+  "band": "C1"
+ },
+ {
+  "q": "Nos extrañó que Pedro nunca ___ (probar) el ajiaco antes de esa noche.",
+  "inf": "probar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera probado",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Nos extrañó que + subjuntivo (emoción); \"nunca... antes de esa noche\" va antes de extrañó: pluscuamperfecto.",
+  "why_en": "Nos extrañó que takes the subjunctive (emotion); \"nunca... antes de esa noche\" is before extrañó: pluperfect.",
+  "en": "It surprised us that Pedro had never tried ajiaco before that night.",
+  "band": "C1"
+ },
+ {
+  "q": "Me pareció raro que el profesor ya ___ (corregir) los exámenes antes de la clase.",
+  "inf": "corregir",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera corregido",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Me pareció raro que + subjuntivo (valoración); \"antes de la clase\" va antes de pareció: pluscuamperfecto.",
+  "why_en": "Me pareció raro que takes the subjunctive (judgment); \"antes de la clase\" is before pareció: pluperfect.",
+  "en": "It seemed odd that the teacher had already graded the exams before class.",
+  "band": "C1"
+ },
+ {
+  "q": "Esperábamos que para las seis ya ___ (volver) los niños del paseo.",
+  "inf": "volver",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran vuelto",
+  "use": "verbo principal en pasado + acción anterior ya completada",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Esperábamos que + subjuntivo (deseo); \"para las seis ya\" va antes de esperábamos: pluscuamperfecto.",
+  "why_en": "Esperábamos que takes the subjunctive (desire); \"para las seis ya\" is before esperábamos: pluperfect.",
+  "en": "We hoped the kids would already be back from the outing by six.",
+  "band": "C1"
+ },
+ {
+  "q": "Me miró como si nunca me ___ (ver) en la vida.",
+  "inf": "ver",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera visto",
+  "use": "como si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Como si + comparación irreal sobre algo anterior (\"nunca\"): pluscuamperfecto.",
+  "why_en": "Como si + unreal comparison about something earlier (\"nunca\"): pluperfect.",
+  "en": "He looked at me as if he had never seen me in his life.",
+  "band": "C1"
+ },
+ {
+  "q": "Nos saludó como si nunca se ___ (pelear) con nosotros.",
+  "inf": "pelearse",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera peleado",
+  "use": "como si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Como si + comparación irreal sobre algo anterior (\"nunca\"): pluscuamperfecto.",
+  "why_en": "Como si + unreal comparison about something earlier (\"nunca\"): pluperfect.",
+  "en": "He greeted us as if he had never fought with us.",
+  "band": "C1"
+ },
+ {
+  "q": "Habló de la ciudad como si ya ___ (vivir) allá por años.",
+  "inf": "vivir",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera vivido",
+  "use": "como si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Como si + comparación irreal sobre algo anterior (\"ya... por años\"): pluscuamperfecto.",
+  "why_en": "Como si + unreal comparison about something earlier (\"ya... por años\"): pluperfect.",
+  "en": "He spoke of the city as if he had lived there for years.",
+  "band": "C1"
+ },
+ {
+  "q": "Te ves cansado, como si no ___ (dormir) en toda la semana.",
+  "inf": "dormir",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras dormido",
+  "use": "como si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Como si + comparación irreal sobre algo anterior (\"en toda la semana\"): pluscuamperfecto.",
+  "why_en": "Como si + unreal comparison about something earlier (\"en toda la semana\"): pluperfect.",
+  "en": "You look tired, as if you hadn't slept all week.",
+  "band": "C1"
+ },
+ {
+  "q": "Contestaste como si ___ (leer) el libro entero, y solo viste la portada.",
+  "inf": "leer",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras leído",
+  "use": "como si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Como si + comparación irreal sobre algo anterior (\"el libro entero\"): pluscuamperfecto.",
+  "why_en": "Como si + unreal comparison about something earlier (\"el libro entero\"): pluperfect.",
+  "en": "You answered as if you had read the whole book, and you only saw the cover.",
+  "band": "C1"
+ },
+ {
+  "q": "Cocinaron como si ya ___ (hacer) esa receta cien veces.",
+  "inf": "hacer",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran hecho",
+  "use": "como si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Como si + comparación irreal sobre algo anterior (\"cien veces\"): pluscuamperfecto.",
+  "why_en": "Como si + unreal comparison about something earlier (\"cien veces\"): pluperfect.",
+  "en": "They cooked as if they had made that recipe a hundred times.",
+  "band": "C1"
+ },
+ {
+  "q": "Me trató como si yo le ___ (robar) algo.",
+  "inf": "robar",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera robado",
+  "use": "como si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Como si + comparación irreal sobre algo anterior: pluscuamperfecto; en el habla también robara.",
+  "why_en": "Como si + unreal comparison about something earlier: pluperfect; in speech robara also works.",
+  "en": "He treated me as if I had stolen something from him.",
+  "band": "C1",
+  "also": [
+   "robara"
+  ]
+ },
+ {
+  "q": "Mi hermano se quedó callado, como si nos ___ (escuchar) toda la discusión.",
+  "inf": "escuchar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera escuchado",
+  "use": "como si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Como si + comparación irreal sobre algo anterior (\"toda la discusión\"): pluscuamperfecto.",
+  "why_en": "Como si + unreal comparison about something earlier (\"toda la discusión\"): pluperfect.",
+  "en": "My brother stayed quiet, as if he had heard the whole argument.",
+  "band": "C1"
+ },
+ {
+  "q": "Si yo ___ (tomar) el vuelo de esta mañana, ya estaría en casa.",
+  "inf": "tomar",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera tomado",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (estaría).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (estaría).",
+  "en": "If I had taken the six o'clock flight, I would already be home.",
+  "band": "C1"
+ },
+ {
+  "q": "Si tú ___ (guardar) la plata el año pasado, ahora podrías viajar.",
+  "inf": "guardar",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras guardado",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (podrías).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (podrías).",
+  "en": "If you had saved the money last year, you could travel now.",
+  "band": "C1"
+ },
+ {
+  "q": "Si mi papá ___ (estudiar) en la universidad de joven, hoy tendría otro trabajo.",
+  "inf": "estudiar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera estudiado",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (tendría).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (tendría).",
+  "en": "If my dad had gone to college, he would have another job today.",
+  "band": "C1"
+ },
+ {
+  "q": "Si ellos se ___ (mudar) a Bogotá en 2015, hoy hablarían distinto.",
+  "inf": "mudarse",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran mudado",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (hablarían).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (hablarían).",
+  "en": "If they had moved to Bogotá in 2015, they would speak differently today.",
+  "band": "C1"
+ },
+ {
+  "q": "Si yo me ___ (casar) a los veinte, hoy tendría hijos grandes.",
+  "inf": "casarse",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera casado",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (tendría).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (tendría).",
+  "en": "If I had married at twenty, I would have grown kids today.",
+  "band": "C1"
+ },
+ {
+  "q": "Si Sofía ___ (aprender) a manejar antes, ahora no dependería de nadie.",
+  "inf": "aprender",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera aprendido",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (dependería).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (dependería).",
+  "en": "If Sofía had learned to drive earlier, she wouldn't depend on anyone now.",
+  "band": "C1"
+ },
+ {
+  "q": "Si ustedes ___ (llegar) a las siete como prometieron, ahora estaríamos cenando juntos.",
+  "inf": "llegar",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran llegado",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (estaríamos).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (estaríamos).",
+  "en": "If you had arrived at seven, we would be having dinner together now.",
+  "band": "C1"
+ },
+ {
+  "q": "Si nosotros no ___ (perder) el bus esta mañana, ahora estaríamos en la playa.",
+  "inf": "perder",
+  "tense": "pluscsubj",
+  "person": "nosotros",
+  "answer": "hubiéramos perdido",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (estaríamos).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (estaríamos).",
+  "en": "If we hadn't missed the bus this morning, we would be at the beach now.",
+  "band": "C1"
+ },
+ {
+  "q": "Si tú ___ (venir) como dijiste, ahora estarías aquí con nosotros.",
+  "inf": "venir",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras venido",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (estarías).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (estarías).",
+  "en": "If you had come as you said, you would be here with us now.",
+  "band": "C1"
+ },
+ {
+  "q": "Si la empresa ___ (invertir) en eso hace años, hoy tendría más clientes.",
+  "inf": "invertir",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera invertido",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (tendría).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (tendría).",
+  "en": "If the company had invested in that years ago, it would have more customers today.",
+  "band": "C1"
+ },
+ {
+  "q": "Si no ___ (haber) tanto tráfico, yo habría llegado al concierto.",
+  "inf": "haber",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera habido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría llegado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría llegado).",
+  "en": "If there hadn't been so much traffic, I would have made it to the concert.",
+  "band": "C1"
+ },
+ {
+  "q": "Si Daniela ___ (ver) el mensaje, habría contestado enseguida.",
+  "inf": "ver",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera visto",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría contestado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría contestado).",
+  "en": "If Daniela had seen the message, she would have answered right away.",
+  "band": "C1"
+ },
+ {
+  "q": "Si ustedes ___ (querer) ir a la playa, nos lo habrían dicho antes.",
+  "inf": "querer",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran querido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (nos habrían dicho).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (nos habrían dicho).",
+  "en": "If you had wanted to go to the beach, you would have told us before.",
+  "band": "C1"
+ },
+ {
+  "q": "Si yo ___ (poder) hacerlo, lo habría hecho sin pensarlo.",
+  "inf": "poder",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera podido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (lo habría hecho).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (lo habría hecho).",
+  "en": "If I could have done it, I would have done it without thinking.",
+  "band": "C1"
+ },
+ {
+  "q": "Si tú te ___ (poner) el casco, la caída no habría sido tan grave.",
+  "inf": "ponerse",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras puesto",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría sido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría sido).",
+  "en": "If you had put on the helmet, the fall wouldn't have been so serious.",
+  "band": "C1"
+ },
+ {
+  "q": "Si nosotros ___ (abrir) el negocio en 2020, habríamos quebrado.",
+  "inf": "abrir",
+  "tense": "pluscsubj",
+  "person": "nosotros",
+  "answer": "hubiéramos abierto",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habríamos quebrado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habríamos quebrado).",
+  "en": "If we had opened the business in 2020, we would have gone bankrupt.",
+  "band": "C1"
+ },
+ {
+  "q": "Si ellos ___ (traer) el regalo, ya lo habríamos abierto.",
+  "inf": "traer",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran traído",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (lo habríamos abierto).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (lo habríamos abierto).",
+  "en": "If they had brought the gift, we would have already opened it.",
+  "band": "C1"
+ },
+ {
+  "q": "Si yo ___ (conocer) a Andrés antes, no me habría casado.",
+  "inf": "conocer",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera conocido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (me habría casado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (me habría casado).",
+  "en": "If I had known Andrés earlier, I wouldn't have married.",
+  "band": "C1"
+ },
+ {
+  "q": "Si mis papás me ___ (dejar), habría viajado sola a los dieciocho.",
+  "inf": "dejar",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran dejado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría viajado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría viajado).",
+  "en": "If my parents had let me, I would have traveled alone at eighteen.",
+  "band": "C1"
+ },
+ {
+  "q": "Si tú ___ (recoger) a los niños, yo habría cocinado.",
+  "inf": "recoger",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras recogido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría cocinado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría cocinado).",
+  "en": "If you had picked up the kids, I would have cooked.",
+  "band": "C1"
+ },
+ {
+  "q": "Si la película ___ (empezar) más temprano, habríamos alcanzado el último bus.",
+  "inf": "empezar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera empezado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habríamos alcanzado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habríamos alcanzado).",
+  "en": "If the movie had started earlier, we would have caught the last bus.",
+  "band": "C1"
+ },
+ {
+  "q": "Si yo ___ (pedir) el préstamo, no habría tenido que vender el carro.",
+  "inf": "pedir",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera pedido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría tenido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría tenido).",
+  "en": "If I had asked for the loan, I wouldn't have had to sell the car.",
+  "band": "C1"
+ },
+ {
+  "q": "Si la profesora ___ (permitir) usar el celular, todos habríamos terminado.",
+  "inf": "permitir",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera permitido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habríamos terminado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habríamos terminado).",
+  "en": "If the teacher had allowed phones, we would all have finished.",
+  "band": "C1"
+ },
+ {
+  "q": "Si nosotros ___ (escuchar) la alarma, nos habríamos levantado.",
+  "inf": "escuchar",
+  "tense": "pluscsubj",
+  "person": "nosotros",
+  "answer": "hubiéramos escuchado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado: condicional perfecto.",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is the conditional perfect.",
+  "en": "If we had heard the alarm, we would have gotten up.",
+  "band": "C1"
+ },
+ {
+  "q": "Si los dueños ___ (arreglar) el techo, la casa no se habría inundado.",
+  "inf": "arreglar",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran arreglado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (se habría inundado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (se habría inundado).",
+  "en": "If the owners had fixed the roof, the house wouldn't have flooded.",
+  "band": "C1"
+ },
+ {
+  "q": "Si tú ___ (llamar) a la policía, el ladrón no se habría escapado.",
+  "inf": "llamar",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras llamado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (se habría escapado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (se habría escapado).",
+  "en": "If you had called the police, the thief wouldn't have escaped.",
+  "band": "C1"
+ },
+ {
+  "q": "Si yo ___ (leer) tu mensaje, no habría salido de casa.",
+  "inf": "leer",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera leído",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría salido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría salido).",
+  "en": "If I had read your message, I wouldn't have left the house.",
+  "band": "C1"
+ },
+ {
+  "q": "Si no ___ (existir) internet, no habríamos podido trabajar desde casa.",
+  "inf": "existir",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera existido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + hipótesis irreal del pasado: pluscuamperfecto; para un estado también vale existiera.",
+  "why_en": "Si + an unreal past takes the pluperfect subjunctive; for a state, existiera also works.",
+  "en": "If the internet hadn't existed, we wouldn't have been able to work from home.",
+  "band": "C1",
+  "also": [
+   "existiera"
+  ]
+ },
+ {
+  "q": "Si ustedes ___ (reservar) con tiempo, habrían encontrado habitación.",
+  "inf": "reservar",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran reservado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habrían encontrado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habrían encontrado).",
+  "en": "If you had booked in advance, you would have found a room.",
+  "band": "C1"
+ },
+ {
+  "q": "Si yo ___ (ser) más joven en esa época, habría emigrado.",
+  "inf": "ser",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera sido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría emigrado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría emigrado).",
+  "en": "If I had been younger back then, I would have emigrated.",
+  "band": "C1"
+ },
+ {
+  "q": "Si nosotros ___ (esperar) un minuto más, ella habría llegado.",
+  "inf": "esperar",
+  "tense": "pluscsubj",
+  "person": "nosotros",
+  "answer": "hubiéramos esperado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría llegado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría llegado).",
+  "en": "If we had waited one more minute, she would have arrived.",
+  "band": "C1"
+ },
+ {
+  "q": "Si tú ___ (enviar) el correo ayer, ya tendrías respuesta.",
+  "inf": "enviar",
+  "tense": "pluscsubj",
+  "person": "tú",
+  "answer": "hubieras enviado",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (tendrías).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (tendrías).",
+  "en": "If you had sent the email yesterday, you would have an answer by now.",
+  "band": "C1"
+ },
+ {
+  "q": "Si mi jefe me ___ (avisar) del cambio de horario, no habría perdido la reunión.",
+  "inf": "avisar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera avisado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría perdido).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría perdido).",
+  "en": "If my boss had told me about the schedule change, I wouldn't have missed the meeting.",
+  "band": "C1"
+ },
+ {
+  "q": "Si Andrés y Paula ___ (saber) el precio, no habrían comprado el sofá.",
+  "inf": "saber",
+  "tense": "pluscsubj",
+  "person": "ellos",
+  "answer": "hubieran sabido",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habrían comprado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habrían comprado).",
+  "en": "If Andrés and Paula had known the price, they wouldn't have bought the sofa.",
+  "band": "C1"
+ },
+ {
+  "q": "Si yo ___ (dar) mi opinión entonces, ahora no tendría este problema.",
+  "inf": "dar",
+  "tense": "pluscsubj",
+  "person": "yo",
+  "answer": "hubiera dado",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (tendría).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (tendría).",
+  "en": "If I had given my opinion then, I wouldn't have this problem now.",
+  "band": "C1"
+ },
+ {
+  "q": "Si Mateo ___ (practicar) más, habría ganado el torneo.",
+  "inf": "practicar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera practicado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría ganado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría ganado).",
+  "en": "If Mateo had practiced more, he would have won the tournament.",
+  "band": "C1"
+ },
+ {
+  "q": "Camila se rió como si nadie le ___ (contar) la mala noticia.",
+  "inf": "contar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera contado",
+  "use": "como si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Como si + comparación irreal sobre algo anterior (\"nadie le contara\"): pluscuamperfecto.",
+  "why_en": "Como si + unreal comparison about something earlier (\"nadie le contara\"): pluperfect.",
+  "en": "Camila laughed as if nobody had told her the bad news.",
+  "band": "C1"
+ },
+ {
+  "q": "Se fue de la fiesta como si alguien lo ___ (llamar) idiota.",
+  "inf": "llamar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera llamado",
+  "use": "como si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Como si + comparación irreal sobre algo anterior (\"alguien lo llamara\"): pluscuamperfecto.",
+  "why_en": "Como si + unreal comparison about something earlier (\"alguien lo llamara\"): pluperfect.",
+  "en": "He left the party as if someone had called him an idiot.",
+  "band": "C1"
+ },
+ {
+  "q": "Si esta mañana nosotros ___ (seguir) el mapa, ya estaríamos en el hotel.",
+  "inf": "seguir",
+  "tense": "pluscsubj",
+  "person": "nosotros",
+  "answer": "hubiéramos seguido",
+  "use": "condicional mixta: si + pluscuamperfecto de subjuntivo, resultado actual",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; el resultado se nota hoy, condicional simple (estaríamos).",
+  "why_en": "Si + unreal past: pluperfect subjunctive; result felt now, so simple conditional (estaríamos).",
+  "en": "If we had followed the map this morning, we would already be at the hotel.",
+  "band": "C1"
+ },
+ {
+  "q": "Ana tiene los ojos hinchados, como si ___ (llorar) toda la noche.",
+  "inf": "llorar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera llorado",
+  "use": "como si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Como si + comparación irreal sobre algo anterior (\"toda la noche\"): pluscuamperfecto.",
+  "why_en": "Como si + unreal comparison about something earlier (\"toda la noche\"): pluperfect.",
+  "en": "Ana's eyes are swollen, as if she had cried all night.",
+  "band": "C1"
+ },
+ {
+  "q": "Si el árbitro ___ (mirar) esa falta, habría pitado penal.",
+  "inf": "mirar",
+  "tense": "pluscsubj",
+  "person": "él/ella",
+  "answer": "hubiera mirado",
+  "use": "si + pluscuamperfecto de subjuntivo: condición irreal del pasado",
+  "confuse": [
+   "plusc",
+   "impsubj",
+   "condperf"
+  ],
+  "why_es": "Si + irreal en el pasado: pluscuamperfecto; resultado en condicional compuesto (habría pitado).",
+  "why_en": "Si + unreal past takes the pluperfect subjunctive; the result is conditional perfect (habría pitado).",
+  "en": "If the referee had looked at that foul, he would have called a penalty.",
+  "band": "C1"
+ }
+]

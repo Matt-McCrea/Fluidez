@@ -1,0 +1,2891 @@
+[
+ {
+  "q": "¿Alguna vez ___ (probar) tú el sancocho de gallina?",
+  "inf": "probar",
+  "tense": "perfecto",
+  "person": "tú",
+  "answer": "has probado",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Alguna vez\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Alguna vez\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Have you ever tried chicken sancocho?",
+  "band": "A2",
+  "also": [
+   "probaste"
+  ]
+ },
+ {
+  "q": "Nunca ___ (viajar) en avión; me da miedo.",
+  "inf": "viajar",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he viajado",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Nunca\": una experiencia de vida pide pretérito perfecto.",
+  "why_en": "\"Nunca\": a life experience takes the present perfect.",
+  "en": "I have never traveled by plane; it scares me.",
+  "band": "A2"
+ },
+ {
+  "q": "Mis abuelos jamás ___ (salir) del país.",
+  "inf": "salir",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han salido",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Jamás\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Jamás\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "My grandparents have never left the country.",
+  "band": "A2",
+  "also": [
+   "salieron"
+  ]
+ },
+ {
+  "q": "¿___ (ver) ustedes alguna vez un eclipse total?",
+  "inf": "ver",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han visto",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Alguna vez\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Alguna vez\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Have you ever seen a total eclipse?",
+  "band": "A2",
+  "also": [
+   "vieron"
+  ]
+ },
+ {
+  "q": "Camilo nunca ___ (leer) un libro entero, ni siquiera en el colegio.",
+  "inf": "leer",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha leído",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Nunca\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Nunca\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Camilo has never read a whole book, not even in school.",
+  "band": "A2",
+  "also": [
+   "leyó"
+  ]
+ },
+ {
+  "q": "Nosotros nunca ___ (estar) en San Andrés.",
+  "inf": "estar",
+  "tense": "perfecto",
+  "person": "nosotros",
+  "answer": "hemos estado",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Nunca\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Nunca\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "We have never been to San Andrés.",
+  "band": "A2",
+  "also": [
+   "estuvimos"
+  ]
+ },
+ {
+  "q": "¿Alguna vez se ___ (perder) usted en el centro de Bogotá?",
+  "inf": "perder",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha perdido",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Alguna vez\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Alguna vez\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Have you ever gotten lost in downtown Bogotá?",
+  "band": "A2",
+  "also": [
+   "perdió"
+  ]
+ },
+ {
+  "q": "En mi vida ___ (comer) algo tan picante.",
+  "inf": "comer",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he comido",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En mi vida\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"En mi vida\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "I have never eaten anything so spicy in my life.",
+  "band": "A2",
+  "also": [
+   "comí"
+  ]
+ },
+ {
+  "q": "Valentina nunca ___ (montar) a caballo.",
+  "inf": "montar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha montado",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Nunca\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Nunca\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Valentina has never ridden a horse.",
+  "band": "A2",
+  "also": [
+   "montó"
+  ]
+ },
+ {
+  "q": "Jamás ___ (conocer) a una persona tan generosa como tu mamá.",
+  "inf": "conocer",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he conocido",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Jamás\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Jamás\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "I have never met a person as generous as your mom.",
+  "band": "A2",
+  "also": [
+   "conocí"
+  ]
+ },
+ {
+  "q": "¿Alguna vez ___ (hacer) tú trampa en un examen?",
+  "inf": "hacer",
+  "tense": "perfecto",
+  "person": "tú",
+  "answer": "has hecho",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Alguna vez\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Alguna vez\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Have you ever cheated on an exam?",
+  "band": "A2",
+  "also": [
+   "hiciste"
+  ]
+ },
+ {
+  "q": "Mis hijos nunca ___ (tocar) la nieve.",
+  "inf": "tocar",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han tocado",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Nunca\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Nunca\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "My kids have never touched snow.",
+  "band": "A2",
+  "also": [
+   "tocaron"
+  ]
+ },
+ {
+  "q": "Mi papá nunca me ___ (decir) una mentira.",
+  "inf": "decir",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha dicho",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Nunca\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Nunca\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "My dad has never told me a lie.",
+  "band": "A2",
+  "also": [
+   "dijo"
+  ]
+ },
+ {
+  "q": "¿Alguna vez ___ (sentir) ustedes un temblor en Bogotá?",
+  "inf": "sentir",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han sentido",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Alguna vez\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Alguna vez\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Have you ever felt an earthquake in Bogotá?",
+  "band": "A2",
+  "also": [
+   "sintieron"
+  ]
+ },
+ {
+  "q": "Yo ya ___ (ver) esa película tres veces y todavía me gusta.",
+  "inf": "ver",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he visto",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Ya, tres veces\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Ya, tres veces\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "I have already seen that movie three times and I still like it.",
+  "band": "A2",
+  "also": [
+   "vi"
+  ]
+ },
+ {
+  "q": "Mi mamá ya te ___ (llamar) dos veces y no contestas.",
+  "inf": "llamar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha llamado",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Ya, dos veces\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Ya, dos veces\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "My mom has already called you twice and you do not answer.",
+  "band": "A2",
+  "also": [
+   "llamó"
+  ]
+ },
+ {
+  "q": "Nosotros ya ___ (hacer) todas las maletas; solo falta salir.",
+  "inf": "hacer",
+  "tense": "perfecto",
+  "person": "nosotros",
+  "answer": "hemos hecho",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Ya\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Ya\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "We have already packed all the bags; we only need to leave.",
+  "band": "A2",
+  "also": [
+   "hicimos"
+  ]
+ },
+ {
+  "q": "¿Ya ___ (terminar) tú el informe, o todavía no?",
+  "inf": "terminar",
+  "tense": "perfecto",
+  "person": "tú",
+  "answer": "has terminado",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Ya, o todavía no\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Ya, o todavía no\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "Have you finished the report yet, or not yet?",
+  "band": "A2",
+  "also": [
+   "terminaste"
+  ]
+ },
+ {
+  "q": "Todavía no ___ (llegar) el paquete que pedí hace una semana.",
+  "inf": "llegar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha llegado",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Todavía no\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Todavía no\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "The package I ordered a week ago still has not arrived.",
+  "band": "A2",
+  "also": [
+   "llegó"
+  ]
+ },
+ {
+  "q": "Todavía no ___ (poder) hablar con el gerente.",
+  "inf": "poder",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he podido",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Todavía no\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Todavía no\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "I still have not been able to talk to the manager.",
+  "band": "A2",
+  "also": [
+   "pude"
+  ]
+ },
+ {
+  "q": "Mis primos todavía no ___ (decidir) a dónde viajar.",
+  "inf": "decidir",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han decidido",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Todavía no\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Todavía no\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "My cousins still have not decided where to travel.",
+  "band": "A2",
+  "also": [
+   "decidieron"
+  ]
+ },
+ {
+  "q": "El plomero todavía no ___ (venir) y llevamos tres días sin agua.",
+  "inf": "venir",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha venido",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Todavía no\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Todavía no\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "The plumber still has not come and we have gone three days without water.",
+  "band": "A2",
+  "also": [
+   "vino"
+  ]
+ },
+ {
+  "q": "Nosotros aún no ___ (abrir) el regalo que nos mandó mi tía.",
+  "inf": "abrir",
+  "tense": "perfecto",
+  "person": "nosotros",
+  "answer": "hemos abierto",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Aún no\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Aún no\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "We still have not opened the gift my aunt sent us.",
+  "band": "A2",
+  "also": [
+   "abrimos"
+  ]
+ },
+ {
+  "q": "¿Ya ___ (escribir) ustedes a la profesora?",
+  "inf": "escribir",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han escrito",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Ya\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Ya\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Have you already written to the teacher?",
+  "band": "A2",
+  "also": [
+   "escribieron"
+  ]
+ },
+ {
+  "q": "Yo ya ___ (probar) todos los restaurantes de la calle; este es el mejor.",
+  "inf": "probar",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he probado",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Ya, todos\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Ya, todos\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "I have already tried every restaurant on the street; this one is the best.",
+  "band": "A2",
+  "also": [
+   "probé"
+  ]
+ },
+ {
+  "q": "Daniela todavía no ___ (encontrar) trabajo, pero sigue buscando.",
+  "inf": "encontrar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha encontrado",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Todavía no\": lo hecho hasta ahora pide pretérito perfecto.",
+  "why_en": "\"Todavía no\": what has happened so far takes the present perfect.",
+  "en": "Daniela still has not found a job, but she keeps looking.",
+  "band": "A2"
+ },
+ {
+  "q": "Últimamente ___ (dormir) muy mal por el ruido de la obra.",
+  "inf": "dormir",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he dormido",
+  "use": "últimamente: un periodo que llega hasta hoy",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con Últimamente, el periodo llega hasta hoy\": perfecto.",
+  "why_en": "\"With Últimamente, the period reaches today\": present perfect.",
+  "en": "Lately I have been sleeping badly because of the noise from the construction.",
+  "band": "A2"
+ },
+ {
+  "q": "Últimamente mi hermano ___ (estar) muy callado.",
+  "inf": "estar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha estado",
+  "use": "últimamente: un periodo que llega hasta hoy",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con Últimamente, el periodo llega hasta hoy\": perfecto.",
+  "why_en": "\"With Últimamente, the period reaches today\": present perfect.",
+  "en": "Lately my brother has been very quiet.",
+  "band": "A2"
+ },
+ {
+  "q": "Últimamente los precios ___ (subir) mucho en el mercado.",
+  "inf": "subir",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han subido",
+  "use": "últimamente: un periodo que llega hasta hoy",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con Últimamente, el periodo llega hasta hoy\": perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"With Últimamente, the period reaches today\": present perfect. In Colombia the preterite is also used.",
+  "en": "Lately prices have gone up a lot at the market.",
+  "band": "A2",
+  "also": [
+   "subieron"
+  ]
+ },
+ {
+  "q": "Últimamente nosotros ___ (salir) poco porque llueve demasiado.",
+  "inf": "salir",
+  "tense": "perfecto",
+  "person": "nosotros",
+  "answer": "hemos salido",
+  "use": "últimamente: un periodo que llega hasta hoy",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con Últimamente, el periodo llega hasta hoy\": perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"With Últimamente, the period reaches today\": present perfect. In Colombia the preterite is also used.",
+  "en": "Lately we have been going out little because it rains too much.",
+  "band": "A2",
+  "also": [
+   "salimos"
+  ]
+ },
+ {
+  "q": "Últimamente tú ___ (trabajar) demasiado, descansa un poco.",
+  "inf": "trabajar",
+  "tense": "perfecto",
+  "person": "tú",
+  "answer": "has trabajado",
+  "use": "últimamente: un periodo que llega hasta hoy",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con Últimamente, el periodo llega hasta hoy\": perfecto.",
+  "why_en": "\"With Últimamente, the period reaches today\": present perfect.",
+  "en": "Lately you have been working too much, rest a little.",
+  "band": "A2"
+ },
+ {
+  "q": "Últimamente Sofía ___ (aprender) muchísimo en su clase de pintura.",
+  "inf": "aprender",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha aprendido",
+  "use": "últimamente: un periodo que llega hasta hoy",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con Últimamente, el periodo llega hasta hoy\": perfecto.",
+  "why_en": "\"With Últimamente, the period reaches today\": present perfect.",
+  "en": "Lately Sofía has learned a great deal in her painting class.",
+  "band": "A2"
+ },
+ {
+  "q": "Últimamente ___ (llover) casi todas las tardes en Bogotá.",
+  "inf": "llover",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha llovido",
+  "use": "últimamente: un periodo que llega hasta hoy",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con Últimamente, el periodo llega hasta hoy\": perfecto.",
+  "why_en": "\"With Últimamente, the period reaches today\": present perfect.",
+  "en": "Lately it has rained almost every afternoon in Bogotá.",
+  "band": "A2"
+ },
+ {
+  "q": "En lo que va del año, la empresa ___ (crecer) un diez por ciento.",
+  "inf": "crecer",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha crecido",
+  "use": "en lo que va del año o del mes: periodo todavía abierto",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En lo que va del año\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En lo que va del año\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far this year, the company has grown ten percent.",
+  "band": "B1",
+  "also": [
+   "creció"
+  ]
+ },
+ {
+  "q": "En lo que va del mes, yo ___ (gastar) casi todo el sueldo.",
+  "inf": "gastar",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he gastado",
+  "use": "en lo que va del año o del mes: periodo todavía abierto",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En lo que va del mes\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En lo que va del mes\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far this month, I have spent almost my whole salary.",
+  "band": "B1",
+  "also": [
+   "gasté"
+  ]
+ },
+ {
+  "q": "En lo que va del año, nosotros ___ (viajar) tres veces a Cartagena.",
+  "inf": "viajar",
+  "tense": "perfecto",
+  "person": "nosotros",
+  "answer": "hemos viajado",
+  "use": "en lo que va del año o del mes: periodo todavía abierto",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En lo que va del año\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En lo que va del año\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far this year, we have traveled to Cartagena three times.",
+  "band": "B1",
+  "also": [
+   "viajamos"
+  ]
+ },
+ {
+  "q": "En lo que va del semestre, ustedes ___ (faltar) a clase seis veces.",
+  "inf": "faltar",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han faltado",
+  "use": "en lo que va del año o del mes: periodo todavía abierto",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En lo que va del semestre\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En lo que va del semestre\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far this semester, you have missed class six times.",
+  "band": "B1",
+  "also": [
+   "faltaron"
+  ]
+ },
+ {
+  "q": "En lo que va de la semana, mi jefe ___ (llegar) tarde dos veces.",
+  "inf": "llegar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha llegado",
+  "use": "en lo que va del año o del mes: periodo todavía abierto",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En lo que va de la semana\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En lo que va de la semana\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far this week, my boss has arrived late twice.",
+  "band": "B1",
+  "also": [
+   "llegó"
+  ]
+ },
+ {
+  "q": "En lo que va del año, Pedro ___ (bajar) diez kilos.",
+  "inf": "bajar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha bajado",
+  "use": "en lo que va del año o del mes: periodo todavía abierto",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En lo que va del año\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En lo que va del año\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far this year, Pedro has lost ten kilos.",
+  "band": "B1",
+  "also": [
+   "bajó"
+  ]
+ },
+ {
+  "q": "En lo que va del año, tú ___ (visitar) a tu familia solo una vez.",
+  "inf": "visitar",
+  "tense": "perfecto",
+  "person": "tú",
+  "answer": "has visitado",
+  "use": "en lo que va del año o del mes: periodo todavía abierto",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En lo que va del año\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En lo que va del año\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far this year, you have visited your family only once.",
+  "band": "B1",
+  "also": [
+   "visitaste"
+  ]
+ },
+ {
+  "q": "Hasta ahora, mis hijos nunca ___ (romper) un plato.",
+  "inf": "romper",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han roto",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Hasta ahora, nunca\": algo que llega hasta el presente pide perfecto.",
+  "why_en": "\"Hasta ahora, nunca\": something that reaches the present takes the present perfect.",
+  "en": "Until now, my kids have never broken a plate.",
+  "band": "B1"
+ },
+ {
+  "q": "Desde que vivo aquí, mis vecinos siempre me ___ (ayudar).",
+  "inf": "ayudar",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han ayudado",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Desde que vivo aquí\": algo que llega hasta el presente pide perfecto.",
+  "why_en": "\"Desde que vivo aquí\": something that reaches the present takes the present perfect.",
+  "en": "Since I have lived here, my neighbors have always helped me.",
+  "band": "B1"
+ },
+ {
+  "q": "Hasta hoy nadie ___ (descubrir) quién dejó esa carta.",
+  "inf": "descubrir",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha descubierto",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Hasta hoy\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Hasta hoy\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "To this day nobody has discovered who left that letter.",
+  "band": "B1",
+  "also": [
+   "descubrió"
+  ]
+ },
+ {
+  "q": "Hasta el momento yo no ___ (recibir) ninguna respuesta.",
+  "inf": "recibir",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he recibido",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Hasta el momento\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Hasta el momento\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far I have not received any answer.",
+  "band": "B1",
+  "also": [
+   "recibí"
+  ]
+ },
+ {
+  "q": "Laura siempre ___ (querer) estudiar música y por fin se anima.",
+  "inf": "querer",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha querido",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Siempre\": algo que llega hasta el presente pide perfecto.",
+  "why_en": "\"Siempre\": something that reaches the present takes the present perfect.",
+  "en": "Laura has always wanted to study music and is finally going for it.",
+  "band": "B1"
+ },
+ {
+  "q": "Desde que lo conozco, Camilo siempre ___ (ser) puntual.",
+  "inf": "ser",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha sido",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Desde que lo conozco\": algo que llega hasta el presente pide perfecto.",
+  "why_en": "\"Desde que lo conozco\": something that reaches the present takes the present perfect.",
+  "en": "Since I have known him, Camilo has always been punctual.",
+  "band": "B1"
+ },
+ {
+  "q": "Hasta ahora, esta ciudad nunca ___ (tener) un metro.",
+  "inf": "tener",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha tenido",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Hasta ahora, nunca\": algo que llega hasta el presente pide perfecto.",
+  "why_en": "\"Hasta ahora, nunca\": something that reaches the present takes the present perfect.",
+  "en": "Until now, this city has never had a metro.",
+  "band": "B1"
+ },
+ {
+  "q": "Con los años, mi abuelo se ___ (volver) muy olvidadizo.",
+  "inf": "volver",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha vuelto",
+  "use": "resultado o cambio que importa ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con los años\": un cambio que llega hasta hoy pide perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Con los años\": a change that reaches today takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Over the years, my grandfather has become very forgetful.",
+  "band": "B1",
+  "also": [
+   "volvió"
+  ]
+ },
+ {
+  "q": "Mi barrio ___ (cambiar) mucho desde que llegué.",
+  "inf": "cambiar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha cambiado",
+  "use": "resultado o cambio que importa ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Desde que llegué\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Desde que llegué\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "My neighborhood has changed a lot since I arrived.",
+  "band": "B1",
+  "also": [
+   "cambió"
+  ]
+ },
+ {
+  "q": "Los últimos años ___ (ser) difíciles para los pequeños comerciantes.",
+  "inf": "ser",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han sido",
+  "use": "resultado o cambio que importa ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Los últimos años\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Los últimos años\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "The last few years have been hard for small merchants.",
+  "band": "B1",
+  "also": [
+   "fueron"
+  ]
+ },
+ {
+  "q": "¿Alguna vez ___ (escribir) tú una carta de amor?",
+  "inf": "escribir",
+  "tense": "perfecto",
+  "person": "tú",
+  "answer": "has escrito",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Alguna vez\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Alguna vez\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Have you ever written a love letter?",
+  "band": "A2",
+  "also": [
+   "escribiste"
+  ]
+ },
+ {
+  "q": "Yo nunca ___ (tener) un perro, pero me encantaría.",
+  "inf": "tener",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he tenido",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Nunca\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Nunca\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "I have never had a dog, but I would love to.",
+  "band": "A2",
+  "also": [
+   "tuve"
+  ]
+ },
+ {
+  "q": "Mi tío jamás ___ (pagar) un impuesto a tiempo.",
+  "inf": "pagar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha pagado",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Jamás\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Jamás\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "My uncle has never paid a tax on time.",
+  "band": "A2",
+  "also": [
+   "pagó"
+  ]
+ },
+ {
+  "q": "¿___ (visitar) ustedes alguna vez el Eje Cafetero?",
+  "inf": "visitar",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han visitado",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Alguna vez\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Alguna vez\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Have you ever visited the coffee region?",
+  "band": "A2",
+  "also": [
+   "visitaron"
+  ]
+ },
+ {
+  "q": "Nunca ___ (oír) yo una canción tan triste.",
+  "inf": "oír",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he oído",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Nunca\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Nunca\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "I have never heard such a sad song.",
+  "band": "A2",
+  "also": [
+   "oí"
+  ]
+ },
+ {
+  "q": "Ana jamás ___ (dejar) un trabajo a medias.",
+  "inf": "dejar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha dejado",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Jamás\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Jamás\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Ana has never left a job half done.",
+  "band": "A2",
+  "also": [
+   "dejó"
+  ]
+ },
+ {
+  "q": "¿Alguna vez ___ (ganar) tú un premio?",
+  "inf": "ganar",
+  "tense": "perfecto",
+  "person": "tú",
+  "answer": "has ganado",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Alguna vez\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Alguna vez\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Have you ever won a prize?",
+  "band": "A2",
+  "also": [
+   "ganaste"
+  ]
+ },
+ {
+  "q": "Mis papás nunca me ___ (gritar) delante de mis amigos.",
+  "inf": "gritar",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han gritado",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Nunca\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Nunca\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "My parents have never yelled at me in front of my friends.",
+  "band": "A2",
+  "also": [
+   "gritaron"
+  ]
+ },
+ {
+  "q": "Nosotros nunca ___ (correr) un maratón, pero lo vamos a intentar.",
+  "inf": "correr",
+  "tense": "perfecto",
+  "person": "nosotros",
+  "answer": "hemos corrido",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Nunca\": una experiencia de vida pide pretérito perfecto.",
+  "why_en": "\"Nunca\": a life experience takes the present perfect.",
+  "en": "We have never run a marathon, but we are going to try.",
+  "band": "A2"
+ },
+ {
+  "q": "Doctor, ¿alguna vez se ___ (romper) usted un hueso?",
+  "inf": "romper",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha roto",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Alguna vez\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Alguna vez\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Doctor, have you ever broken a bone?",
+  "band": "A2",
+  "also": [
+   "rompió"
+  ]
+ },
+ {
+  "q": "Jamás ___ (cantar) yo en público.",
+  "inf": "cantar",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he cantado",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Jamás\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Jamás\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "I have never sung in public.",
+  "band": "A2",
+  "also": [
+   "canté"
+  ]
+ },
+ {
+  "q": "Ya ___ (decir) yo mil veces que no quiero ir.",
+  "inf": "decir",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he dicho",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Ya, mil veces\": lo hecho hasta ahora pide pretérito perfecto.",
+  "why_en": "\"Ya, mil veces\": what has happened so far takes the present perfect.",
+  "en": "I have told you a thousand times that I do not want to go.",
+  "band": "A2"
+ },
+ {
+  "q": "¿Ya ___ (pagar) ustedes todas las cuotas del carro?",
+  "inf": "pagar",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han pagado",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Ya, todas\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Ya, todas\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Have you already paid all the car installments?",
+  "band": "A2",
+  "also": [
+   "pagaron"
+  ]
+ },
+ {
+  "q": "Todavía no ___ (salir) el sol y ya hace calor.",
+  "inf": "salir",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha salido",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Todavía no\": lo hecho hasta ahora pide pretérito perfecto.",
+  "why_en": "\"Todavía no\": what has happened so far takes the present perfect.",
+  "en": "The sun has not come out yet and it is already hot.",
+  "band": "A2"
+ },
+ {
+  "q": "Pedro todavía no ___ (traer) los documentos que le pedí.",
+  "inf": "traer",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha traído",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Todavía no\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Todavía no\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Pedro still has not brought the documents I asked him for.",
+  "band": "A2",
+  "also": [
+   "trajo"
+  ]
+ },
+ {
+  "q": "Ya ___ (vivir) yo en cinco ciudades distintas.",
+  "inf": "vivir",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he vivido",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Ya, cinco ciudades\": lo hecho hasta ahora pide pretérito perfecto.",
+  "why_en": "\"Ya, cinco ciudades\": what has happened so far takes the present perfect.",
+  "en": "I have already lived in five different cities.",
+  "band": "A2"
+ },
+ {
+  "q": "Mi hermana ya ___ (leer) todos los libros de García Márquez.",
+  "inf": "leer",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha leído",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Ya, todos\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Ya, todos\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "My sister has already read all of García Márquez's books.",
+  "band": "A2",
+  "also": [
+   "leyó"
+  ]
+ },
+ {
+  "q": "Los obreros todavía no ___ (poner) la puerta del baño.",
+  "inf": "poner",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han puesto",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Todavía no\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Todavía no\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "The workers still have not put in the bathroom door.",
+  "band": "A2",
+  "also": [
+   "pusieron"
+  ]
+ },
+ {
+  "q": "¿Todavía no ___ (cerrar) tú la ventana? Hace mucho frío.",
+  "inf": "cerrar",
+  "tense": "perfecto",
+  "person": "tú",
+  "answer": "has cerrado",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Todavía no\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Todavía no\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Have you still not closed the window? It is very cold.",
+  "band": "A2",
+  "also": [
+   "cerraste"
+  ]
+ },
+ {
+  "q": "Aún no ___ (lograr) recordar dónde dejé las gafas.",
+  "inf": "lograr",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he logrado",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Aún no\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Aún no\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "I still have not managed to remember where I left my glasses.",
+  "band": "A2",
+  "also": [
+   "logré"
+  ]
+ },
+ {
+  "q": "Los vecinos todavía no ___ (traer) la escalera que les prestamos.",
+  "inf": "traer",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han traído",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Todavía no\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Todavía no\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "The neighbors still have not brought back the ladder we lent them.",
+  "band": "A2",
+  "also": [
+   "trajeron"
+  ]
+ },
+ {
+  "q": "Ya ___ (pasar) tres horas y el médico no llega.",
+  "inf": "pasar",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han pasado",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Ya, tres horas\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Ya, tres horas\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Three hours have already passed and the doctor has not arrived.",
+  "band": "A2",
+  "also": [
+   "pasaron"
+  ]
+ },
+ {
+  "q": "¿Ya ___ (decidir) tú qué vas a estudiar?",
+  "inf": "decidir",
+  "tense": "perfecto",
+  "person": "tú",
+  "answer": "has decidido",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Ya\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Ya\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Have you already decided what you are going to study?",
+  "band": "A2",
+  "also": [
+   "decidiste"
+  ]
+ },
+ {
+  "q": "Últimamente la gente ___ (usar) mucho más las bicicletas en la ciudad.",
+  "inf": "usar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha usado",
+  "use": "últimamente: un periodo que llega hasta hoy",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con Últimamente, el periodo llega hasta hoy\": perfecto.",
+  "why_en": "\"With Últimamente, the period reaches today\": present perfect.",
+  "en": "Lately people have been using bicycles much more in the city.",
+  "band": "A2"
+ },
+ {
+  "q": "Últimamente yo ___ (pensar) mucho en renunciar.",
+  "inf": "pensar",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he pensado",
+  "use": "últimamente: un periodo que llega hasta hoy",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con Últimamente, el periodo llega hasta hoy\": perfecto.",
+  "why_en": "\"With Últimamente, the period reaches today\": present perfect.",
+  "en": "Lately I have been thinking a lot about quitting.",
+  "band": "A2"
+ },
+ {
+  "q": "Últimamente mis papás ___ (hablar) mucho de mudarse a la finca.",
+  "inf": "hablar",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han hablado",
+  "use": "últimamente: un periodo que llega hasta hoy",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con Últimamente, el periodo llega hasta hoy\": perfecto.",
+  "why_en": "\"With Últimamente, the period reaches today\": present perfect.",
+  "en": "Lately my parents have talked a lot about moving to the farm.",
+  "band": "A2"
+ },
+ {
+  "q": "Últimamente ustedes ___ (llegar) tarde a clase.",
+  "inf": "llegar",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han llegado",
+  "use": "últimamente: un periodo que llega hasta hoy",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con Últimamente, el periodo llega hasta hoy\": perfecto.",
+  "why_en": "\"With Últimamente, the period reaches today\": present perfect.",
+  "en": "Lately you have been arriving late to class.",
+  "band": "A2"
+ },
+ {
+  "q": "Últimamente ___ (hacer) mucho calor en Cali.",
+  "inf": "hacer",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha hecho",
+  "use": "últimamente: un periodo que llega hasta hoy",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con Últimamente, el periodo llega hasta hoy\": perfecto.",
+  "why_en": "\"With Últimamente, the period reaches today\": present perfect.",
+  "en": "Lately it has been very hot in Cali.",
+  "band": "A2"
+ },
+ {
+  "q": "Últimamente nosotros no ___ (saber) nada de Juliana.",
+  "inf": "saber",
+  "tense": "perfecto",
+  "person": "nosotros",
+  "answer": "hemos sabido",
+  "use": "últimamente: un periodo que llega hasta hoy",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con Últimamente, el periodo llega hasta hoy\": perfecto.",
+  "why_en": "\"With Últimamente, the period reaches today\": present perfect.",
+  "en": "Lately we have not heard anything from Juliana.",
+  "band": "A2"
+ },
+ {
+  "q": "En lo que va del año, el equipo ___ (ganar) cinco partidos seguidos.",
+  "inf": "ganar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha ganado",
+  "use": "en lo que va del año o del mes: periodo todavía abierto",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En lo que va del año\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En lo que va del año\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far this year, the team has won five matches in a row.",
+  "band": "B1",
+  "also": [
+   "ganó"
+  ]
+ },
+ {
+  "q": "En lo que va del año, yo ___ (leer) doce libros.",
+  "inf": "leer",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he leído",
+  "use": "en lo que va del año o del mes: periodo todavía abierto",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En lo que va del año\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En lo que va del año\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far this year, I have read twelve books.",
+  "band": "B1",
+  "also": [
+   "leí"
+  ]
+ },
+ {
+  "q": "En lo que va del mes, ustedes ___ (pagar) tres facturas atrasadas.",
+  "inf": "pagar",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han pagado",
+  "use": "en lo que va del año o del mes: periodo todavía abierto",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En lo que va del mes\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En lo que va del mes\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far this month, you have paid three overdue bills.",
+  "band": "B1",
+  "also": [
+   "pagaron"
+  ]
+ },
+ {
+  "q": "En lo que va de este año, mis abuelos ___ (venir) dos veces a visitarnos.",
+  "inf": "venir",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han venido",
+  "use": "en lo que va del año o del mes: periodo todavía abierto",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En lo que va de este año\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En lo que va de este año\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far this year, my grandparents have come to visit us twice.",
+  "band": "B1",
+  "also": [
+   "vinieron"
+  ]
+ },
+ {
+  "q": "En lo que va del año, la ciudad ___ (recibir) más turistas que nunca.",
+  "inf": "recibir",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha recibido",
+  "use": "en lo que va del año o del mes: periodo todavía abierto",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En lo que va del año\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En lo que va del año\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far this year, the city has received more tourists than ever.",
+  "band": "B1",
+  "also": [
+   "recibió"
+  ]
+ },
+ {
+  "q": "En lo que va del año, tú ___ (cambiar) tres veces de celular.",
+  "inf": "cambiar",
+  "tense": "perfecto",
+  "person": "tú",
+  "answer": "has cambiado",
+  "use": "en lo que va del año o del mes: periodo todavía abierto",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En lo que va del año\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En lo que va del año\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far this year, you have changed phones three times.",
+  "band": "B1",
+  "also": [
+   "cambiaste"
+  ]
+ },
+ {
+  "q": "Siempre ___ (creer) nosotros que la honestidad es lo más importante.",
+  "inf": "creer",
+  "tense": "perfecto",
+  "person": "nosotros",
+  "answer": "hemos creído",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Siempre\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Siempre\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "We have always believed that honesty is the most important thing.",
+  "band": "B1",
+  "also": [
+   "creímos"
+  ]
+ },
+ {
+  "q": "Hasta ahora, la profesora nunca nos ___ (dejar) tarea de fin de semana.",
+  "inf": "dejar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha dejado",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Hasta ahora, nunca\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Hasta ahora, nunca\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "Until now, the teacher has never given us weekend homework.",
+  "band": "B1",
+  "also": [
+   "dejó"
+  ]
+ },
+ {
+  "q": "Desde que empezó el curso, tú ___ (aprender) muchísimo.",
+  "inf": "aprender",
+  "tense": "perfecto",
+  "person": "tú",
+  "answer": "has aprendido",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Desde que empezó el curso\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Desde que empezó el curso\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "Since the course started, you have learned a great deal.",
+  "band": "B1",
+  "also": [
+   "aprendiste"
+  ]
+ },
+ {
+  "q": "Hasta ahora nadie nos ___ (decir) cuánto cuesta la reparación.",
+  "inf": "decir",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha dicho",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Hasta ahora, nadie\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Hasta ahora, nadie\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "Until now nobody has told us how much the repair costs.",
+  "band": "B1",
+  "also": [
+   "dijo"
+  ]
+ },
+ {
+  "q": "Mi abuela siempre ___ (preparar) el almuerzo para toda la familia los domingos.",
+  "inf": "preparar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha preparado",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Siempre\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Siempre\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "My grandmother has always made Sunday lunch for the whole family.",
+  "band": "B1",
+  "also": [
+   "preparó"
+  ]
+ },
+ {
+  "q": "Hasta hoy, ellos no me ___ (pedir) disculpas.",
+  "inf": "pedir",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han pedido",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Hasta hoy\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Hasta hoy\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "To this day, they have not apologized to me.",
+  "band": "B1",
+  "also": [
+   "pidieron"
+  ]
+ },
+ {
+  "q": "Desde pequeña, Valentina ___ (tener) una voz increíble.",
+  "inf": "tener",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha tenido",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Desde pequeña\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Desde pequeña\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "Since she was little, Valentina has had an incredible voice.",
+  "band": "B1",
+  "also": [
+   "tuvo"
+  ]
+ },
+ {
+  "q": "Todos estos años ___ (cuidar) yo a mis papás sin quejarme.",
+  "inf": "cuidar",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he cuidado",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Todos estos años\": algo que llega hasta el presente pide perfecto.",
+  "why_en": "\"Todos estos años\": something that reaches the present takes the present perfect.",
+  "en": "All these years I have taken care of my parents without complaining.",
+  "band": "B1"
+ },
+ {
+  "q": "Hasta ahora, nosotros ___ (conseguir) ahorrar muy poco.",
+  "inf": "conseguir",
+  "tense": "perfecto",
+  "person": "nosotros",
+  "answer": "hemos conseguido",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Hasta ahora\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Hasta ahora\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far, we have managed to save very little.",
+  "band": "B1",
+  "also": [
+   "conseguimos"
+  ]
+ },
+ {
+  "q": "Ellos siempre ___ (vivir) en el mismo barrio, desde que se casaron.",
+  "inf": "vivir",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han vivido",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Siempre, desde que\": algo que llega hasta el presente pide perfecto.",
+  "why_en": "\"Siempre, desde que\": something that reaches the present takes the present perfect.",
+  "en": "They have always lived in the same neighborhood, since they got married.",
+  "band": "B1"
+ },
+ {
+  "q": "En los últimos veinte años, la tecnología ___ (cambiar) nuestra forma de trabajar.",
+  "inf": "cambiar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha cambiado",
+  "use": "resultado o cambio que importa ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En los últimos veinte años\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En los últimos veinte años\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "In the last twenty years, technology has changed the way we work.",
+  "band": "B2",
+  "also": [
+   "cambió"
+  ]
+ },
+ {
+  "q": "Mi hijo se ___ (poner) muy alto desde diciembre.",
+  "inf": "poner",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha puesto",
+  "use": "resultado o cambio que importa ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Desde diciembre\": un cambio que llega hasta hoy pide perfecto.",
+  "why_en": "\"Desde diciembre\": a change that reaches today takes the present perfect.",
+  "en": "My son has gotten very tall since December.",
+  "band": "B1"
+ },
+ {
+  "q": "Con los meses, ellos se ___ (acercar) cada vez más.",
+  "inf": "acercar",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han acercado",
+  "use": "resultado o cambio que importa ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con los meses\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Con los meses\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "Over the months, they have grown closer and closer.",
+  "band": "B1",
+  "also": [
+   "acercaron"
+  ]
+ },
+ {
+  "q": "Nuestra relación se ___ (volver) más fuerte en estos años.",
+  "inf": "volver",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha vuelto",
+  "use": "resultado o cambio que importa ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En estos años\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En estos años\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "Our relationship has become stronger over these years.",
+  "band": "B1",
+  "also": [
+   "volvió"
+  ]
+ },
+ {
+  "q": "La ciudad ___ (crecer) muchísimo en las últimas décadas.",
+  "inf": "crecer",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha crecido",
+  "use": "resultado o cambio que importa ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En las últimas décadas\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En las últimas décadas\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "The city has grown enormously in recent decades.",
+  "band": "B1",
+  "also": [
+   "creció"
+  ]
+ },
+ {
+  "q": "¿Alguna vez ___ (ir) tú a un concierto de Carlos Vives?",
+  "inf": "ir",
+  "tense": "perfecto",
+  "person": "tú",
+  "answer": "has ido",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Alguna vez\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Alguna vez\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Have you ever gone to a Carlos Vives concert?",
+  "band": "A2",
+  "also": [
+   "fuiste"
+  ]
+ },
+ {
+  "q": "Mi mamá nunca ___ (beber) alcohol.",
+  "inf": "beber",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha bebido",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Nunca\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Nunca\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "My mom has never drunk alcohol.",
+  "band": "A2",
+  "also": [
+   "bebió"
+  ]
+ },
+ {
+  "q": "Nosotros nunca ___ (ir) al mar en Semana Santa; siempre nos quedamos.",
+  "inf": "ir",
+  "tense": "perfecto",
+  "person": "nosotros",
+  "answer": "hemos ido",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Nunca\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Nunca\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "We have never gone to the sea in Holy Week; we always stay home.",
+  "band": "A2",
+  "also": [
+   "fuimos"
+  ]
+ },
+ {
+  "q": "Jamás ___ (olvidar) yo el día que nació mi hija.",
+  "inf": "olvidar",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he olvidado",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Jamás\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Jamás\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "I have never forgotten the day my daughter was born.",
+  "band": "A2",
+  "also": [
+   "olvidé"
+  ]
+ },
+ {
+  "q": "¿Alguna vez ___ (dar) ustedes clases a niños?",
+  "inf": "dar",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han dado",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Alguna vez\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Alguna vez\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Have you ever taught children?",
+  "band": "A2",
+  "also": [
+   "dieron"
+  ]
+ },
+ {
+  "q": "Mi jefe nunca ___ (aceptar) una excusa.",
+  "inf": "aceptar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha aceptado",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Nunca\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Nunca\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "My boss has never accepted an excuse.",
+  "band": "A2",
+  "also": [
+   "aceptó"
+  ]
+ },
+ {
+  "q": "Nunca en mi vida ___ (ver) yo tanta lluvia como este mes.",
+  "inf": "ver",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he visto",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Nunca en mi vida\": una experiencia pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Nunca en mi vida\": an experience takes the present perfect; in Colombia also the preterite.",
+  "en": "Never in my life have I seen as much rain as this month.",
+  "band": "A2",
+  "also": [
+   "vi"
+  ]
+ },
+ {
+  "q": "¿Nunca ___ (escuchar) ustedes hablar de este pueblo?",
+  "inf": "escuchar",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han escuchado",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Nunca\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Nunca\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Have you never heard of this town?",
+  "band": "A2",
+  "also": [
+   "escucharon"
+  ]
+ },
+ {
+  "q": "¿Alguna vez ___ (buscar) tú tu nombre en internet?",
+  "inf": "buscar",
+  "tense": "perfecto",
+  "person": "tú",
+  "answer": "has buscado",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Alguna vez\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Alguna vez\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Have you ever searched for your name on the internet?",
+  "band": "A2",
+  "also": [
+   "buscaste"
+  ]
+ },
+ {
+  "q": "Mis abuelos nunca ___ (enviar) un mensaje de texto.",
+  "inf": "enviar",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han enviado",
+  "use": "experiencia de vida: alguna vez, nunca, jamás",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Nunca\": una experiencia de vida pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Nunca\": a life experience takes the present perfect. In Colombia the preterite is also used.",
+  "en": "My grandparents have never sent a text message.",
+  "band": "A2",
+  "also": [
+   "enviaron"
+  ]
+ },
+ {
+  "q": "Yo ya ___ (explicar) esto en clase, pero lo repito.",
+  "inf": "explicar",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he explicado",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Ya\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Ya\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "I have already explained this in class, but I will repeat it.",
+  "band": "A2",
+  "also": [
+   "expliqué"
+  ]
+ },
+ {
+  "q": "¿Ya ___ (conocer) tú a los suegros de Camila?",
+  "inf": "conocer",
+  "tense": "perfecto",
+  "person": "tú",
+  "answer": "has conocido",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Ya\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Ya\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Have you already met Camila's in-laws?",
+  "band": "A2",
+  "also": [
+   "conociste"
+  ]
+ },
+ {
+  "q": "Nosotros todavía no ___ (mirar) el correo de la universidad.",
+  "inf": "mirar",
+  "tense": "perfecto",
+  "person": "nosotros",
+  "answer": "hemos mirado",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Todavía no\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Todavía no\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "We still have not checked the university email.",
+  "band": "A2",
+  "also": [
+   "miramos"
+  ]
+ },
+ {
+  "q": "Mi hija todavía no ___ (aprender) a montar en bicicleta.",
+  "inf": "aprender",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha aprendido",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Todavía no\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Todavía no\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "My daughter still has not learned to ride a bike.",
+  "band": "A2",
+  "also": [
+   "aprendió"
+  ]
+ },
+ {
+  "q": "Yo ya ___ (llamar) a todos mis amigos y nadie puede ir.",
+  "inf": "llamar",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he llamado",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Ya, a todos\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Ya, a todos\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "I have already called all my friends and nobody can go.",
+  "band": "A2",
+  "also": [
+   "llamé"
+  ]
+ },
+ {
+  "q": "Todavía no ___ (sacar) la plata del cajero.",
+  "inf": "sacar",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he sacado",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Todavía no\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Todavía no\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "I still have not taken the money out of the ATM.",
+  "band": "A2",
+  "also": [
+   "saqué"
+  ]
+ },
+ {
+  "q": "Mis papás todavía no ___ (conocer) mi casa nueva.",
+  "inf": "conocer",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han conocido",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Todavía no\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Todavía no\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "My parents still have not seen my new house.",
+  "band": "A2",
+  "also": [
+   "conocieron"
+  ]
+ },
+ {
+  "q": "Ellas todavía no ___ (ir) a la reunión de padres.",
+  "inf": "ir",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han ido",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Todavía no\": lo hecho hasta ahora pide pretérito perfecto.",
+  "why_en": "\"Todavía no\": what has happened so far takes the present perfect.",
+  "en": "They still have not gone to the parents' meeting.",
+  "band": "A2"
+ },
+ {
+  "q": "Nosotros aún no ___ (recibir) respuesta del banco.",
+  "inf": "recibir",
+  "tense": "perfecto",
+  "person": "nosotros",
+  "answer": "hemos recibido",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Aún no\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Aún no\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "We still have not received an answer from the bank.",
+  "band": "A2",
+  "also": [
+   "recibimos"
+  ]
+ },
+ {
+  "q": "¿Todavía no ___ (empezar) ustedes a cenar? Ya es tarde.",
+  "inf": "empezar",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han empezado",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Todavía no\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Todavía no\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "Have you still not started dinner? It is already late.",
+  "band": "A2",
+  "also": [
+   "empezaron"
+  ]
+ },
+ {
+  "q": "Yo ya ___ (olvidar) cuántas veces me ha mentido.",
+  "inf": "olvidar",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he olvidado",
+  "use": "ya y todavía no: lo hecho o no hecho hasta ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Ya\": lo hecho hasta ahora pide pretérito perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Ya\": what has happened so far takes the present perfect. In Colombia the preterite is also used.",
+  "en": "I have already lost count of how many times he has lied to me.",
+  "band": "A2",
+  "also": [
+   "olvidé"
+  ]
+ },
+ {
+  "q": "Últimamente Ana ___ (mirar) mucho el celular en clase.",
+  "inf": "mirar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha mirado",
+  "use": "últimamente: un periodo que llega hasta hoy",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con Últimamente, el periodo llega hasta hoy\": perfecto.",
+  "why_en": "\"With Últimamente, the period reaches today\": present perfect.",
+  "en": "Lately Ana has been looking at her phone a lot in class.",
+  "band": "A2"
+ },
+ {
+  "q": "Últimamente yo ___ (ir) al gimnasio todas las mañanas.",
+  "inf": "ir",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he ido",
+  "use": "últimamente: un periodo que llega hasta hoy",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con Últimamente, el periodo llega hasta hoy\": perfecto.",
+  "why_en": "\"With Últimamente, the period reaches today\": present perfect.",
+  "en": "Lately I have been going to the gym every morning.",
+  "band": "A2"
+ },
+ {
+  "q": "Últimamente mis vecinos ___ (poner) la música muy alta.",
+  "inf": "poner",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han puesto",
+  "use": "últimamente: un periodo que llega hasta hoy",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con Últimamente, el periodo llega hasta hoy\": perfecto.",
+  "why_en": "\"With Últimamente, the period reaches today\": present perfect.",
+  "en": "Lately my neighbors have been playing the music very loud.",
+  "band": "A2"
+ },
+ {
+  "q": "Últimamente tú ___ (comer) muy poco, ¿te pasa algo?",
+  "inf": "comer",
+  "tense": "perfecto",
+  "person": "tú",
+  "answer": "has comido",
+  "use": "últimamente: un periodo que llega hasta hoy",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con Últimamente, el periodo llega hasta hoy\": perfecto.",
+  "why_en": "\"With Últimamente, the period reaches today\": present perfect.",
+  "en": "Lately you have been eating very little, is something wrong?",
+  "band": "A2"
+ },
+ {
+  "q": "Últimamente mi jefe ___ (pedir) más informes de lo normal.",
+  "inf": "pedir",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha pedido",
+  "use": "últimamente: un periodo que llega hasta hoy",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con Últimamente, el periodo llega hasta hoy\": perfecto.",
+  "why_en": "\"With Últimamente, the period reaches today\": present perfect.",
+  "en": "Lately my boss has been asking for more reports than usual.",
+  "band": "A2"
+ },
+ {
+  "q": "Últimamente nosotros ___ (escuchar) mucha música colombiana.",
+  "inf": "escuchar",
+  "tense": "perfecto",
+  "person": "nosotros",
+  "answer": "hemos escuchado",
+  "use": "últimamente: un periodo que llega hasta hoy",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con Últimamente, el periodo llega hasta hoy\": perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"With Últimamente, the period reaches today\": present perfect. In Colombia the preterite is also used.",
+  "en": "Lately we have been listening to a lot of Colombian music.",
+  "band": "A2",
+  "also": [
+   "escuchamos"
+  ]
+ },
+ {
+  "q": "Últimamente las clases ___ (terminar) más tarde de lo normal.",
+  "inf": "terminar",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han terminado",
+  "use": "últimamente: un periodo que llega hasta hoy",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con Últimamente, el periodo llega hasta hoy\": perfecto.",
+  "why_en": "\"With Últimamente, the period reaches today\": present perfect.",
+  "en": "Lately classes have been ending later than usual.",
+  "band": "A2"
+ },
+ {
+  "q": "En lo que va del año, mi hermana ___ (ahorrar) dos millones.",
+  "inf": "ahorrar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha ahorrado",
+  "use": "en lo que va del año o del mes: periodo todavía abierto",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En lo que va del año\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En lo que va del año\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far this year, my sister has saved two million pesos.",
+  "band": "B1",
+  "also": [
+   "ahorró"
+  ]
+ },
+ {
+  "q": "En lo que va del año, nosotros ___ (firmar) tres contratos grandes.",
+  "inf": "firmar",
+  "tense": "perfecto",
+  "person": "nosotros",
+  "answer": "hemos firmado",
+  "use": "en lo que va del año o del mes: periodo todavía abierto",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En lo que va del año\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En lo que va del año\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far this year, we have signed three big contracts.",
+  "band": "B1",
+  "also": [
+   "firmamos"
+  ]
+ },
+ {
+  "q": "En lo que va del año, ellos ___ (abrir) dos sucursales nuevas.",
+  "inf": "abrir",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han abierto",
+  "use": "en lo que va del año o del mes: periodo todavía abierto",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En lo que va del año\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En lo que va del año\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far this year, they have opened two new branches.",
+  "band": "B1",
+  "also": [
+   "abrieron"
+  ]
+ },
+ {
+  "q": "En lo que va de la semana, yo ___ (dormir) apenas cuatro horas diarias.",
+  "inf": "dormir",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he dormido",
+  "use": "en lo que va del año o del mes: periodo todavía abierto",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En lo que va de la semana\": el periodo sigue abierto, así que va el perfecto.",
+  "why_en": "\"En lo que va de la semana\": the period is still open, so the present perfect.",
+  "en": "So far this week, I have slept barely four hours a day.",
+  "band": "B1"
+ },
+ {
+  "q": "En lo que va del mes, ustedes ___ (escribir) muy pocos correos.",
+  "inf": "escribir",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han escrito",
+  "use": "en lo que va del año o del mes: periodo todavía abierto",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En lo que va del mes\": el periodo sigue abierto, así que va el perfecto.",
+  "why_en": "\"En lo que va del mes\": the period is still open, so the present perfect.",
+  "en": "So far this month, you have written very few emails.",
+  "band": "B1"
+ },
+ {
+  "q": "En lo que va del año, el dólar ___ (subir) más de lo esperado.",
+  "inf": "subir",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha subido",
+  "use": "en lo que va del año o del mes: periodo todavía abierto",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En lo que va del año\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En lo que va del año\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far this year, the dollar has gone up more than expected.",
+  "band": "B1",
+  "also": [
+   "subió"
+  ]
+ },
+ {
+  "q": "En lo que va del año, tú ___ (mandar) siete solicitudes de empleo.",
+  "inf": "mandar",
+  "tense": "perfecto",
+  "person": "tú",
+  "answer": "has mandado",
+  "use": "en lo que va del año o del mes: periodo todavía abierto",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En lo que va del año\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En lo que va del año\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far this year, you have sent seven job applications.",
+  "band": "B1",
+  "also": [
+   "mandaste"
+  ]
+ },
+ {
+  "q": "Desde pequeño, Camilo ___ (querer) ser piloto.",
+  "inf": "querer",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha querido",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Desde pequeño\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Desde pequeño\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "Since he was little, Camilo has wanted to be a pilot.",
+  "band": "B1",
+  "also": [
+   "quiso"
+  ]
+ },
+ {
+  "q": "Hasta ahora, yo ___ (entender) solo la mitad de la explicación.",
+  "inf": "entender",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he entendido",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Hasta ahora\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Hasta ahora\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far, I have understood only half of the explanation.",
+  "band": "B1",
+  "also": [
+   "entendí"
+  ]
+ },
+ {
+  "q": "Hasta el momento, los resultados ___ (ser) mejores de lo esperado.",
+  "inf": "ser",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han sido",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Hasta el momento\": algo que llega hasta el presente pide perfecto.",
+  "why_en": "\"Hasta el momento\": something that reaches the present takes the present perfect.",
+  "en": "So far, the results have been better than expected.",
+  "band": "B1"
+ },
+ {
+  "q": "Desde que me mudé, no ___ (volver) a ver a mis primos.",
+  "inf": "volver",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he vuelto",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Desde que me mudé\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Desde que me mudé\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "Since I moved, I have not seen my cousins again.",
+  "band": "B1",
+  "also": [
+   "volví"
+  ]
+ },
+ {
+  "q": "Yo siempre ___ (tener) la costumbre de levantarme temprano.",
+  "inf": "tener",
+  "tense": "perfecto",
+  "person": "yo",
+  "answer": "he tenido",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Siempre\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Siempre\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "I have always had the habit of getting up early.",
+  "band": "B1",
+  "also": [
+   "tuve"
+  ]
+ },
+ {
+  "q": "Mis hermanos siempre ___ (jugar) al fútbol los domingos.",
+  "inf": "jugar",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han jugado",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Siempre\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Siempre\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "My brothers have always played soccer on Sundays.",
+  "band": "B1",
+  "also": [
+   "jugaron"
+  ]
+ },
+ {
+  "q": "Hasta ahora, la empresa no ___ (ofrecer) ninguna solución.",
+  "inf": "ofrecer",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha ofrecido",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Hasta ahora, no\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Hasta ahora, no\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "So far, the company has not offered any solution.",
+  "band": "B1",
+  "also": [
+   "ofreció"
+  ]
+ },
+ {
+  "q": "Desde que se fue, su mamá ___ (llorar) todos los días.",
+  "inf": "llorar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha llorado",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Desde que se fue\": algo que llega hasta el presente pide perfecto.",
+  "why_en": "\"Desde que se fue\": something that reaches the present takes the present perfect.",
+  "en": "Since he left, his mother has cried every day.",
+  "band": "B1"
+ },
+ {
+  "q": "Hasta ahora, la presidente ___ (mantener) su palabra.",
+  "inf": "mantener",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha mantenido",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Hasta ahora\": algo que llega hasta el presente pide perfecto.",
+  "why_en": "\"Hasta ahora\": something that reaches the present takes the present perfect.",
+  "en": "So far, the president has kept her word.",
+  "band": "B2"
+ },
+ {
+  "q": "Todo este tiempo nosotros ___ (esperar) una llamada tuya.",
+  "inf": "esperar",
+  "tense": "perfecto",
+  "person": "nosotros",
+  "answer": "hemos esperado",
+  "use": "hasta ahora, desde que, siempre: lo que llega al presente",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Todo este tiempo\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Todo este tiempo\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "All this time we have been waiting for a call from you.",
+  "band": "B1",
+  "also": [
+   "esperamos"
+  ]
+ },
+ {
+  "q": "Con el trabajo nuevo, Laura se ___ (convertir) en otra persona.",
+  "inf": "convertir",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha convertido",
+  "use": "resultado o cambio que importa ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Con el trabajo nuevo\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"Con el trabajo nuevo\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "With the new job, Laura has become a different person.",
+  "band": "B1",
+  "also": [
+   "convirtió"
+  ]
+ },
+ {
+  "q": "La música colombiana ___ (llegar) a todo el mundo en los últimos años.",
+  "inf": "llegar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha llegado",
+  "use": "resultado o cambio que importa ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En los últimos años\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En los últimos años\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "Colombian music has reached the whole world in recent years.",
+  "band": "B1",
+  "also": [
+   "llegó"
+  ]
+ },
+ {
+  "q": "El internet ___ (acercar) a familias que viven muy lejos.",
+  "inf": "acercar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha acercado",
+  "use": "resultado o cambio que importa ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "Un cambio que llega hasta hoy pide perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "A change that reaches today takes the present perfect. In Colombia the preterite is also used.",
+  "en": "The internet has brought closer families who live far apart.",
+  "band": "B2",
+  "also": [
+   "acercó"
+  ]
+ },
+ {
+  "q": "En los últimos meses, el dólar ___ (bajar) y los viajes son más baratos.",
+  "inf": "bajar",
+  "tense": "perfecto",
+  "person": "él/ella",
+  "answer": "ha bajado",
+  "use": "resultado o cambio que importa ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"En los últimos meses\": pide perfecto; en Colombia también el pretérito.",
+  "why_en": "\"En los últimos meses\": takes the present perfect; Colombia also uses the preterite.",
+  "en": "In recent months, the dollar has dropped and trips are cheaper.",
+  "band": "B1",
+  "also": [
+   "bajó"
+  ]
+ },
+ {
+  "q": "Estos años me ___ (dar) mucha experiencia en el trabajo.",
+  "inf": "dar",
+  "tense": "perfecto",
+  "person": "ellos",
+  "answer": "han dado",
+  "use": "resultado o cambio que importa ahora",
+  "confuse": [
+   "preterito",
+   "plusc",
+   "perfsubj"
+  ],
+  "why_es": "\"Estos años\": un cambio que llega hasta hoy pide perfecto. En Colombia también se usa el pretérito.",
+  "why_en": "\"Estos años\": a change that reaches today takes the present perfect. In Colombia the preterite is also used.",
+  "en": "These years have given me a lot of work experience.",
+  "band": "B1",
+  "also": [
+   "dieron"
+  ]
+ }
+]

@@ -1,0 +1,1505 @@
+[
+ {
+  "id": "r5000",
+  "pick": "he visto",
+  "ok": [
+   "he visto"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5001",
+  "pick": "ha roto",
+  "ok": [
+   "ha roto"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5002",
+  "pick": "había tocado",
+  "ok": [
+   "había tocado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5003",
+  "pick": "había ganado",
+  "ok": [
+   "había ganado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5004",
+  "pick": "habían pasado",
+  "ok": [
+   "habían pasado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5005",
+  "pick": "había ganado",
+  "ok": [
+   "había ganado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5006",
+  "pick": "había pasado",
+  "ok": [
+   "había pasado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5007",
+  "pick": "había dejado",
+  "ok": [
+   "había dejado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5008",
+  "pick": "habían casado",
+  "ok": [
+   "habían casado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5009",
+  "pick": "habías escondido",
+  "ok": [
+   "habías escondido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5010",
+  "pick": "habías visto",
+  "ok": [
+   "habías visto"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5011",
+  "pick": "habías visto",
+  "ok": [
+   "habías visto"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5012",
+  "pick": "había vuelto",
+  "ok": [
+   "había vuelto"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5013",
+  "pick": "habíamos cenado",
+  "ok": [
+   "habíamos cenado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5014",
+  "pick": "había visto",
+  "ok": [
+   "había visto"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5015",
+  "pick": "hubiera conocido",
+  "ok": [
+   "hubiera conocido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5016",
+  "pick": "hubieras perdido",
+  "ok": [
+   "hubieras perdido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5017",
+  "pick": "hubiera aprobado",
+  "ok": [
+   "hubiera aprobado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5018",
+  "pick": "hubieras avisado",
+  "ok": [
+   "hubieras avisado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5019",
+  "pick": "hubiéramos visto",
+  "ok": [
+   "hubiéramos visto"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5020",
+  "pick": "hubiera llorado",
+  "ok": [
+   "hubiera llorado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5021",
+  "pick": "hubieran ido",
+  "ok": [
+   "hubieran ido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5022",
+  "pick": "hubiera dejado",
+  "ok": [
+   "hubiera dejado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5023",
+  "pick": "hubiéramos mirado",
+  "ok": [
+   "hubiéramos mirado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5024",
+  "pick": "hubiéramos salido",
+  "ok": [
+   "hubiéramos salido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5025",
+  "pick": "veías",
+  "ok": [
+   "veías"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5026",
+  "pick": "llovía",
+  "ok": [
+   "llovía"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5027",
+  "pick": "lloraba",
+  "ok": [
+   "lloraba"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5028",
+  "pick": "hacía",
+  "ok": [
+   "hacía"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5029",
+  "pick": "bajábamos",
+  "ok": [
+   "bajábamos"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5030",
+  "pick": "limpiábamos",
+  "ok": [
+   "limpiábamos"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5031",
+  "pick": "eran",
+  "ok": [
+   "eran"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5032",
+  "pick": "viajábamos",
+  "ok": [
+   "viajábamos"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5033",
+  "pick": "gritaba",
+  "ok": [
+   "gritaba"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5034",
+  "pick": "existía",
+  "ok": [
+   "existía"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5035",
+  "pick": "vuelvo",
+  "ok": [
+   "vuelvo"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5036",
+  "pick": "hablaste",
+  "ok": [
+   "hablaste"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5037",
+  "pick": "leímos",
+  "ok": [
+   "leímos"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5038",
+  "pick": "anunció",
+  "ok": [
+   "anunció"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5039",
+  "pick": "pidió",
+  "ok": [
+   "pidió"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5040",
+  "pick": "rompí",
+  "ok": [
+   "rompí"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5041",
+  "pick": "explicó",
+  "ok": [
+   "explicó"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5042",
+  "pick": "viajemos",
+  "ok": [
+   "viajemos"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5043",
+  "pick": "comamos",
+  "ok": [
+   "comamos"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5044",
+  "pick": "volvamos",
+  "ok": [
+   "volvamos"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5045",
+  "pick": "paguemos",
+  "ok": [
+   "paguemos"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5046",
+  "pick": "veamos",
+  "ok": [
+   "veamos"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5047",
+  "pick": "empecemos",
+  "ok": [
+   "empecemos"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5048",
+  "pick": "deja",
+  "ok": [
+   "deja"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5049",
+  "pick": "no sigas",
+  "ok": [
+   "no sigas"
+  ],
+  "natural": false,
+  "note": "ambiguous which driver el chofer is; no sigas fits if it is the taxi driver, sigue if someone else is driving"
+ },
+ {
+  "id": "r5050",
+  "pick": "no lleven",
+  "ok": [
+   "no lleven"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5051",
+  "pick": "no cambies",
+  "ok": [
+   "no cambies"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5052",
+  "pick": "no camines",
+  "ok": [
+   "no camines"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5053",
+  "pick": "no traiga",
+  "ok": [
+   "no traiga"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5054",
+  "pick": "no vayas",
+  "ok": [
+   "no vayas"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5055",
+  "pick": "no traigas",
+  "ok": [
+   "no traigas"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5056",
+  "pick": "no den",
+  "ok": [
+   "no den"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5057",
+  "pick": "no llames",
+  "ok": [
+   "no llames"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5058",
+  "pick": "no muevas",
+  "ok": [
+   "no muevas"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5059",
+  "pick": "no apague",
+  "ok": [
+   "no apague"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5060",
+  "pick": "estará",
+  "ok": [
+   "estará"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5061",
+  "pick": "estará",
+  "ok": [
+   "estará"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5062",
+  "pick": "probarás",
+  "ok": [
+   "probarás"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5063",
+  "pick": "pasará",
+  "ok": [
+   "pasará"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5064",
+  "pick": "conocerá",
+  "ok": [
+   "conocerá"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5065",
+  "pick": "estará",
+  "ok": [
+   "estará"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5066",
+  "pick": "estarán",
+  "ok": [
+   "estarán"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5067",
+  "pick": "será",
+  "ok": [
+   "será"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5068",
+  "pick": "hablarían",
+  "ok": [
+   "hablarían"
+  ],
+  "natural": false,
+  "note": "conjecture conditional in a question put to ustedes about their own talk is odd; ¿De qué hablaron? is natural"
+ },
+ {
+  "id": "r5069",
+  "pick": "iría",
+  "ok": [
+   "iría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5070",
+  "pick": "mandaría",
+  "ok": [
+   "mandaría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5071",
+  "pick": "habría",
+  "ok": [
+   "habría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5072",
+  "pick": "esperaría",
+  "ok": [
+   "esperaría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5073",
+  "pick": "estaría",
+  "ok": [
+   "estaría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5074",
+  "pick": "llegarían",
+  "ok": [
+   "llegarían"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5075",
+  "pick": "recibirían",
+  "ok": [
+   "recibirían"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5076",
+  "pick": "tendría",
+  "ok": [
+   "tendría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5077",
+  "pick": "podrías",
+  "ok": [
+   "podrías"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5078",
+  "pick": "pagarían",
+  "ok": [
+   "pagarían"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5079",
+  "pick": "funcionaría",
+  "ok": [
+   "funcionaría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5080",
+  "pick": "ayudarías",
+  "ok": [
+   "ayudarías"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5081",
+  "pick": "estarían",
+  "ok": [
+   "estarían"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5082",
+  "pick": "llevaríamos",
+  "ok": [
+   "llevaríamos"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5083",
+  "pick": "habría",
+  "ok": [
+   "habría"
+  ],
+  "natural": false,
+  "note": "no light in the barrio is the blackout itself, so the conjecture is circular"
+ },
+ {
+  "id": "r5084",
+  "pick": "costaría",
+  "ok": [
+   "costaría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5085",
+  "pick": "daría",
+  "ok": [
+   "daría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5086",
+  "pick": "querría",
+  "ok": [
+   "querría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5087",
+  "pick": "duraría",
+  "ok": [
+   "duraría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5088",
+  "pick": "traería",
+  "ok": [
+   "traería"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5089",
+  "pick": "habría",
+  "ok": [
+   "habría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5090",
+  "pick": "sabría",
+  "ok": [
+   "sabría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5091",
+  "pick": "ganarían",
+  "ok": [
+   "ganarían"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5092",
+  "pick": "extrañaría",
+  "ok": [
+   "extrañaría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5093",
+  "pick": "pesaría",
+  "ok": [
+   "pesaría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5094",
+  "pick": "haría",
+  "ok": [
+   "haría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5095",
+  "pick": "valdría",
+  "ok": [
+   "valdría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5096",
+  "pick": "estaría",
+  "ok": [
+   "estaría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5097",
+  "pick": "abriría",
+  "ok": [
+   "abriría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5098",
+  "pick": "pararía",
+  "ok": [
+   "pararía"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5099",
+  "pick": "empezaría",
+  "ok": [
+   "empezaría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5100",
+  "pick": "vendrías",
+  "ok": [
+   "vendrías"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5101",
+  "pick": "devolverían",
+  "ok": [
+   "devolverían"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5102",
+  "pick": "serían",
+  "ok": [
+   "serían"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5103",
+  "pick": "dejarías",
+  "ok": [
+   "dejarías"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5104",
+  "pick": "descansaría",
+  "ok": [
+   "descansaría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5105",
+  "pick": "preguntaría",
+  "ok": [
+   "preguntaría"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5106",
+  "pick": "sería",
+  "ok": [
+   "sería"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5107",
+  "pick": "sería",
+  "ok": [
+   "sería"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5108",
+  "pick": "tendrías",
+  "ok": [
+   "tendrías"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5109",
+  "pick": "volvería",
+  "ok": [
+   "volvería"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5110",
+  "pick": "habría perdido",
+  "ok": [
+   "habría perdido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5111",
+  "pick": "habrían leído",
+  "ok": [
+   "habrían leído"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5112",
+  "pick": "habrías dormido",
+  "ok": [
+   "habrías dormido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5113",
+  "pick": "habríamos vuelto",
+  "ok": [
+   "habríamos vuelto"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5114",
+  "pick": "habríamos visto",
+  "ok": [
+   "habríamos visto"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5115",
+  "pick": "habríamos recogido",
+  "ok": [
+   "habríamos recogido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5116",
+  "pick": "habría arreglado",
+  "ok": [
+   "habría arreglado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5117",
+  "pick": "habría hecho",
+  "ok": [
+   "habría hecho"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5118",
+  "pick": "habrían venido",
+  "ok": [
+   "habrían venido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5119",
+  "pick": "habrían empezado",
+  "ok": [
+   "habrían empezado"
+  ],
+  "natural": false,
+  "note": "no singular habría empezado option; plural only works with an implied ellos starting la ceremonia, which reads as subject"
+ },
+ {
+  "id": "r5120",
+  "pick": "habría abierto",
+  "ok": [
+   "habría abierto"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5121",
+  "pick": "habría recibido",
+  "ok": [
+   "habría recibido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5122",
+  "pick": "habría sentido",
+  "ok": [
+   "habría sentido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5123",
+  "pick": "habríamos vivido",
+  "ok": [
+   "habríamos vivido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5124",
+  "pick": "habría dormido",
+  "ok": [
+   "habría dormido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5125",
+  "pick": "habría escogido",
+  "ok": [
+   "habría escogido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5126",
+  "pick": "habrían ganado",
+  "ok": [
+   "habrían ganado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5127",
+  "pick": "habría casado",
+  "ok": [
+   "habría casado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5128",
+  "pick": "habría estudiado",
+  "ok": [
+   "habría estudiado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5129",
+  "pick": "habrían tenido",
+  "ok": [
+   "habrían tenido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5130",
+  "pick": "habrías tenido",
+  "ok": [
+   "habrías tenido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5131",
+  "pick": "habrías sabido",
+  "ok": [
+   "habrías sabido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5132",
+  "pick": "habrían podido",
+  "ok": [
+   "habrían podido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5133",
+  "pick": "habría firmado",
+  "ok": [
+   "habría firmado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5134",
+  "pick": "habría creído",
+  "ok": [
+   "habría creído"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5135",
+  "pick": "habría pasado",
+  "ok": [
+   "habría pasado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5136",
+  "pick": "habría costado",
+  "ok": [
+   "habría costado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5137",
+  "pick": "habría renunciado",
+  "ok": [
+   "habría renunciado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5138",
+  "pick": "habrá quedado",
+  "ok": [
+   "habrá quedado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5139",
+  "pick": "habrán sacado",
+  "ok": [
+   "habrán sacado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5140",
+  "pick": "habré salido",
+  "ok": [
+   "habré salido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5141",
+  "pick": "habrá subido",
+  "ok": [
+   "habrá subido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5142",
+  "pick": "habrá cambiado",
+  "ok": [
+   "habrá cambiado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5143",
+  "pick": "habrá costado",
+  "ok": [
+   "habrá costado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5144",
+  "pick": "habrá pasado",
+  "ok": [
+   "habrá pasado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5145",
+  "pick": "habrán muerto",
+  "ok": [
+   "habrán muerto"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5146",
+  "pick": "habrá roto",
+  "ok": [
+   "habrá roto"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5147",
+  "pick": "rueguen",
+  "ok": [
+   "rueguen"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5148",
+  "pick": "pida",
+  "ok": [
+   "pida"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5149",
+  "pick": "ofrezcan",
+  "ok": [
+   "ofrezcan"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5150",
+  "pick": "apruebe",
+  "ok": [
+   "apruebe"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5151",
+  "pick": "cueste",
+  "ok": [
+   "cueste"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5152",
+  "pick": "viajemos",
+  "ok": [
+   "viajemos"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5153",
+  "pick": "vaya",
+  "ok": [
+   "vaya"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5154",
+  "pick": "estén",
+  "ok": [
+   "estén"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5155",
+  "pick": "funcione",
+  "ok": [
+   "funcione"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5156",
+  "pick": "venda",
+  "ok": [
+   "venda",
+   "vendiera"
+  ],
+  "natural": true,
+  "note": "vendiera also natural: doubt about a past sale or a hypothetical"
+ },
+ {
+  "id": "r5157",
+  "pick": "conozca",
+  "ok": [
+   "conozca"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5158",
+  "pick": "pueda",
+  "ok": [
+   "pueda"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5159",
+  "pick": "llegue",
+  "ok": [
+   "llegue"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5160",
+  "pick": "hables",
+  "ok": [
+   "hables"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5161",
+  "pick": "fuéramos",
+  "ok": [
+   "fuéramos"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5162",
+  "pick": "cuidaran",
+  "ok": [
+   "cuidaran"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5163",
+  "pick": "dejara",
+  "ok": [
+   "dejara"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5164",
+  "pick": "visitáramos",
+  "ok": [
+   "visitáramos"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5165",
+  "pick": "supiera",
+  "ok": [
+   "supiera"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5166",
+  "pick": "viniera",
+  "ok": [
+   "viniera"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5167",
+  "pick": "llamara",
+  "ok": [
+   "llamara"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5168",
+  "pick": "llegáramos",
+  "ok": [
+   "llegáramos"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5169",
+  "pick": "leyera",
+  "ok": [
+   "leyera"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5170",
+  "pick": "supieras",
+  "ok": [
+   "supieras"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5171",
+  "pick": "haya conocido",
+  "ok": [
+   "haya conocido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5172",
+  "pick": "haya cubierto",
+  "ok": [
+   "haya cubierto"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5173",
+  "pick": "haya muerto",
+  "ok": [
+   "haya muerto"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5174",
+  "pick": "hayan trabajado",
+  "ok": [
+   "hayan trabajado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5175",
+  "pick": "hayas leído",
+  "ok": [
+   "hayas leído"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5176",
+  "pick": "haya entregado",
+  "ok": [
+   "haya entregado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5177",
+  "pick": "haya trabajado",
+  "ok": [
+   "haya trabajado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5178",
+  "pick": "hayan visto",
+  "ok": [
+   "hayan visto"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5179",
+  "pick": "haya leído",
+  "ok": [
+   "haya leído"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5180",
+  "pick": "hayan terminado",
+  "ok": [
+   "hayan terminado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5181",
+  "pick": "hayas hecho",
+  "ok": [
+   "hayas hecho"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5182",
+  "pick": "haya traducido",
+  "ok": [
+   "haya traducido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5183",
+  "pick": "haya dormido",
+  "ok": [
+   "haya dormido"
+  ],
+  "natural": false,
+  "note": "clunky: esta semana and hasta ahora redundant; no creo haber dormido would be natural"
+ },
+ {
+  "id": "r5184",
+  "pick": "haya entendido",
+  "ok": [
+   "haya entendido"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5185",
+  "pick": "haya viajado",
+  "ok": [
+   "haya viajado"
+  ],
+  "natural": true
+ },
+ {
+  "id": "r5186",
+  "pick": "seguiría",
+  "ok": [
+   "seguiría"
+  ],
+  "natural": true
+ }
+]

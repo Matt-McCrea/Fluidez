@@ -1,0 +1,6378 @@
+[
+{
+"id": "v1001",
+"pick": "estuvieran",
+"ok": [
+"estuvieran"
+],
+"natural": true
+},
+{
+"id": "v1004",
+"pick": "visitáramos",
+"ok": [
+"visitáramos",
+"visitemos"
+],
+"natural": true,
+"note": "present subjunctive also heard after conditional for a future visit"
+},
+{
+"id": "v1007",
+"pick": "hubieras traducido",
+"ok": [
+"hubieras traducido"
+],
+"natural": true
+},
+{
+"id": "v1010",
+"pick": "viera",
+"ok": [
+"viera"
+],
+"natural": true
+},
+{
+"id": "v1013",
+"pick": "tomaba",
+"ok": [
+"tomaba"
+],
+"natural": true
+},
+{
+"id": "v1016",
+"pick": "viven",
+"ok": [
+"viven"
+],
+"natural": true
+},
+{
+"id": "v1019",
+"pick": "no tires",
+"ok": [
+"no tires"
+],
+"natural": true
+},
+{
+"id": "v1022",
+"pick": "pague",
+"ok": [
+"pague"
+],
+"natural": true
+},
+{
+"id": "v1025",
+"pick": "habían pagado",
+"ok": [
+"habían pagado"
+],
+"natural": true
+},
+{
+"id": "v1028",
+"pick": "comerán",
+"ok": [
+"comerán"
+],
+"natural": true
+},
+{
+"id": "v1031",
+"pick": "abramos",
+"ok": [
+"abramos"
+],
+"natural": true
+},
+{
+"id": "v1034",
+"pick": "habría terminado",
+"ok": [
+"habría terminado"
+],
+"natural": true
+},
+{
+"id": "v1037",
+"pick": "contará",
+"ok": [
+"contará"
+],
+"natural": true
+},
+{
+"id": "v1040",
+"pick": "cerraron",
+"ok": [
+"cerraron"
+],
+"natural": true
+},
+{
+"id": "v1043",
+"pick": "hubiera traído",
+"ok": [
+"hubiera traído"
+],
+"natural": true
+},
+{
+"id": "v1046",
+"pick": "supieras",
+"ok": [
+"supieras",
+"sepas"
+],
+"natural": true,
+"note": "para que sepas fine when the news is still relevant now"
+},
+{
+"id": "v1049",
+"pick": "habrían ganado",
+"ok": [
+"habrían ganado",
+"ganarían"
+],
+"natural": true,
+"note": "no time anchor: past counterfactual or future hypothetical both fit"
+},
+{
+"id": "v1052",
+"pick": "haya arreglado",
+"ok": [
+"haya arreglado",
+"arregle"
+],
+"natural": true,
+"note": "que ya arregle (already works on) also natural"
+},
+{
+"id": "v1055",
+"pick": "cierra",
+"ok": [
+"cierra"
+],
+"natural": true
+},
+{
+"id": "v1058",
+"pick": "había dado",
+"ok": [
+"había dado"
+],
+"natural": true
+},
+{
+"id": "v1061",
+"pick": "cumpla",
+"ok": [
+"cumpla"
+],
+"natural": true
+},
+{
+"id": "v1064",
+"pick": "hubiéramos escuchado",
+"ok": [
+"hubiéramos escuchado"
+],
+"natural": true
+},
+{
+"id": "v1067",
+"pick": "han pasado",
+"ok": [
+"han pasado",
+"pasaron"
+],
+"natural": true,
+"note": "ya pasaron tres horas common in Colombia"
+},
+{
+"id": "v1070",
+"pick": "hubieran terminado",
+"ok": [
+"hubieran terminado"
+],
+"natural": true
+},
+{
+"id": "v1073",
+"pick": "habíamos bajado",
+"ok": [
+"habíamos bajado"
+],
+"natural": true
+},
+{
+"id": "v1076",
+"pick": "vendan",
+"ok": [
+"vendan"
+],
+"natural": true
+},
+{
+"id": "v1079",
+"pick": "hayan arreglado",
+"ok": [
+"hayan arreglado"
+],
+"natural": true
+},
+{
+"id": "v1082",
+"pick": "hayan visto",
+"ok": [
+"hayan visto",
+"vean"
+],
+"natural": true,
+"note": "no tense anchor: could be about seeing them now"
+},
+{
+"id": "v1085",
+"pick": "habrá olvidado",
+"ok": [
+"habrá olvidado"
+],
+"natural": true
+},
+{
+"id": "v1088",
+"pick": "habrías entendido",
+"ok": [
+"habrías entendido"
+],
+"natural": true
+},
+{
+"id": "v1091",
+"pick": "veo",
+"ok": [
+"veo"
+],
+"natural": true
+},
+{
+"id": "v1094",
+"pick": "canten",
+"ok": [
+"canten"
+],
+"natural": true
+},
+{
+"id": "v1097",
+"pick": "habría dado",
+"ok": [
+"habría dado"
+],
+"natural": true
+},
+{
+"id": "v1100",
+"pick": "pedías",
+"ok": [
+"pedías"
+],
+"natural": true
+},
+{
+"id": "v1103",
+"pick": "llega",
+"ok": [
+"llega"
+],
+"natural": true
+},
+{
+"id": "v1106",
+"pick": "manejaba",
+"ok": [
+"manejaba"
+],
+"natural": true
+},
+{
+"id": "v1109",
+"pick": "habrían cerrado",
+"ok": [
+"habrían cerrado"
+],
+"natural": true
+},
+{
+"id": "v1112",
+"pick": "llevaré",
+"ok": [
+"llevaré"
+],
+"natural": true
+},
+{
+"id": "v1115",
+"pick": "no suelten",
+"ok": [
+"no suelten"
+],
+"natural": true
+},
+{
+"id": "v1118",
+"pick": "habrías vuelto",
+"ok": [
+"habrías vuelto"
+],
+"natural": true
+},
+{
+"id": "v1121",
+"pick": "han sido",
+"ok": [
+"han sido"
+],
+"natural": true
+},
+{
+"id": "v1124",
+"pick": "había hecho",
+"ok": [
+"había hecho"
+],
+"natural": true
+},
+{
+"id": "v1127",
+"pick": "vivimos",
+"ok": [
+"vivimos"
+],
+"natural": true
+},
+{
+"id": "v1130",
+"pick": "habíamos comprado",
+"ok": [
+"habíamos comprado",
+"compramos"
+],
+"natural": true,
+"note": "preterite with nunca antes de also natural in LatAm"
+},
+{
+"id": "v1133",
+"pick": "resulta",
+"ok": [
+"resulta"
+],
+"natural": true
+},
+{
+"id": "v1136",
+"pick": "ganara",
+"ok": [
+"ganara"
+],
+"natural": true
+},
+{
+"id": "v1139",
+"pick": "subía",
+"ok": [
+"subía"
+],
+"natural": true
+},
+{
+"id": "v1142",
+"pick": "cuenta",
+"ok": [
+"cuenta"
+],
+"natural": true
+},
+{
+"id": "v1145",
+"pick": "descansemos",
+"ok": [
+"descansemos"
+],
+"natural": true
+},
+{
+"id": "v1148",
+"pick": "han pedido",
+"ok": [
+"han pedido",
+"pidieron"
+],
+"natural": true,
+"note": "hasta hoy no me pidieron also common in LatAm"
+},
+{
+"id": "v1151",
+"pick": "entrará",
+"ok": [
+"entrará"
+],
+"natural": true
+},
+{
+"id": "v1154",
+"pick": "sentirías",
+"ok": [
+"sentirías"
+],
+"natural": true
+},
+{
+"id": "v1157",
+"pick": "habría mejorado",
+"ok": [
+"habría mejorado"
+],
+"natural": true
+},
+{
+"id": "v1160",
+"pick": "siento",
+"ok": [
+"siento"
+],
+"natural": true
+},
+{
+"id": "v1163",
+"pick": "no juegues",
+"ok": [
+"no juegues"
+],
+"natural": true
+},
+{
+"id": "v1166",
+"pick": "subirán",
+"ok": [
+"subirán"
+],
+"natural": true
+},
+{
+"id": "v1169",
+"pick": "quitará",
+"ok": [
+"quitará"
+],
+"natural": true
+},
+{
+"id": "v1172",
+"pick": "perdieras",
+"ok": [
+"perdieras",
+"hubieras perdido"
+],
+"natural": true,
+"note": "no time anchor: present wish or past regret"
+},
+{
+"id": "v1175",
+"pick": "había encontrado",
+"ok": [
+"había encontrado"
+],
+"natural": true
+},
+{
+"id": "v1178",
+"pick": "llegan",
+"ok": [
+"llegan"
+],
+"natural": true
+},
+{
+"id": "v1181",
+"pick": "habrán vuelto",
+"ok": [
+"habrán vuelto"
+],
+"natural": true
+},
+{
+"id": "v1184",
+"pick": "leímos",
+"ok": [
+"leímos",
+"hemos leído"
+],
+"natural": true,
+"note": "no time anchor, present perfect possible"
+},
+{
+"id": "v1187",
+"pick": "habré dejado",
+"ok": [
+"habré dejado"
+],
+"natural": true
+},
+{
+"id": "v1190",
+"pick": "eran",
+"ok": [
+"eran"
+],
+"natural": true
+},
+{
+"id": "v1193",
+"pick": "hubiera enterado",
+"ok": [
+"hubiera enterado"
+],
+"natural": true
+},
+{
+"id": "v1196",
+"pick": "trajeras",
+"ok": [
+"trajeras"
+],
+"natural": true
+},
+{
+"id": "v1199",
+"pick": "comamos",
+"ok": [
+"comamos",
+"comemos"
+],
+"natural": true,
+"note": "comemos tranquilos as suggestion very natural"
+},
+{
+"id": "v1202",
+"pick": "habré escrito",
+"ok": [
+"habré escrito"
+],
+"natural": true
+},
+{
+"id": "v1205",
+"pick": "quedaría",
+"ok": [
+"quedaría"
+],
+"natural": true
+},
+{
+"id": "v1208",
+"pick": "extrañaba",
+"ok": [
+"extrañaba"
+],
+"natural": true
+},
+{
+"id": "v1211",
+"pick": "hubiera avisado",
+"ok": [
+"hubiera avisado"
+],
+"natural": true
+},
+{
+"id": "v1214",
+"pick": "anunció",
+"ok": [
+"anunció",
+"ha anunciado",
+"anuncia"
+],
+"natural": true,
+"note": "esta tarde allows preterite, perfect or scheduled present"
+},
+{
+"id": "v1217",
+"pick": "han ido",
+"ok": [
+"han ido"
+],
+"natural": true
+},
+{
+"id": "v1220",
+"pick": "han pagado",
+"ok": [
+"han pagado",
+"pagaron"
+],
+"natural": true,
+"note": "preterite also used with en lo que va del mes in LatAm"
+},
+{
+"id": "v1223",
+"pick": "habremos conseguido",
+"ok": [
+"habremos conseguido"
+],
+"natural": true
+},
+{
+"id": "v1226",
+"pick": "habrá probado",
+"ok": [
+"habrá probado"
+],
+"natural": true
+},
+{
+"id": "v1229",
+"pick": "viniera",
+"ok": [
+"viniera",
+"venga"
+],
+"natural": true,
+"note": "para que venga fine when the pickup is still pending"
+},
+{
+"id": "v1232",
+"pick": "saldríamos",
+"ok": [
+"saldríamos"
+],
+"natural": true
+},
+{
+"id": "v1235",
+"pick": "cuidan",
+"ok": [
+"cuidan"
+],
+"natural": true
+},
+{
+"id": "v1238",
+"pick": "habría salido",
+"ok": [
+"habría salido"
+],
+"natural": true
+},
+{
+"id": "v1241",
+"pick": "dura",
+"ok": [
+"dura"
+],
+"natural": true
+},
+{
+"id": "v1244",
+"pick": "vuelve",
+"ok": [
+"vuelve"
+],
+"natural": true
+},
+{
+"id": "v1247",
+"pick": "sea",
+"ok": [
+"sea"
+],
+"natural": true
+},
+{
+"id": "v1250",
+"pick": "cenaremos",
+"ok": [
+"cenaremos"
+],
+"natural": true
+},
+{
+"id": "v1253",
+"pick": "busca",
+"ok": [
+"busca"
+],
+"natural": true
+},
+{
+"id": "v1256",
+"pick": "no vuelvas",
+"ok": [
+"no vuelvas"
+],
+"natural": true
+},
+{
+"id": "v1259",
+"pick": "sentirá",
+"ok": [
+"sentirá"
+],
+"natural": true
+},
+{
+"id": "v1262",
+"pick": "sientas",
+"ok": [
+"sientas"
+],
+"natural": true
+},
+{
+"id": "v1265",
+"pick": "pasarías",
+"ok": [
+"pasarías"
+],
+"natural": true
+},
+{
+"id": "v1268",
+"pick": "no pidas",
+"ok": [
+"no pidas"
+],
+"natural": true
+},
+{
+"id": "v1271",
+"pick": "hubiera aprobado",
+"ok": [
+"hubiera aprobado",
+"aprobara"
+],
+"natural": true,
+"note": "aprobara also defensible"
+},
+{
+"id": "v1274",
+"pick": "no molestes",
+"ok": [
+"no molestes"
+],
+"natural": true
+},
+{
+"id": "v1277",
+"pick": "preparas",
+"ok": [
+"preparas"
+],
+"natural": true
+},
+{
+"id": "v1280",
+"pick": "hubiera robado",
+"ok": [
+"hubiera robado",
+"robara"
+],
+"natural": true,
+"note": "como si robara also used colloquially for past"
+},
+{
+"id": "v1283",
+"pick": "había manejado",
+"ok": [
+"había manejado",
+"manejé"
+],
+"natural": true,
+"note": "nunca manejé also natural in LatAm"
+},
+{
+"id": "v1286",
+"pick": "costaba",
+"ok": [
+"costaba"
+],
+"natural": true
+},
+{
+"id": "v1289",
+"pick": "digas",
+"ok": [
+"digas"
+],
+"natural": true
+},
+{
+"id": "v1292",
+"pick": "habrás dormido",
+"ok": [
+"habrás dormido"
+],
+"natural": true
+},
+{
+"id": "v1295",
+"pick": "ha llegado",
+"ok": [
+"ha llegado",
+"llegó"
+],
+"natural": true,
+"note": "todavía no llegó common in LatAm"
+},
+{
+"id": "v1298",
+"pick": "perdiste",
+"ok": [
+"perdiste"
+],
+"natural": true
+},
+{
+"id": "v1301",
+"pick": "empezó",
+"ok": [
+"empezó"
+],
+"natural": true
+},
+{
+"id": "v1304",
+"pick": "aprenderán",
+"ok": [
+"aprenderán"
+],
+"natural": true
+},
+{
+"id": "v1307",
+"pick": "fue",
+"ok": [
+"fue"
+],
+"natural": true
+},
+{
+"id": "v1310",
+"pick": "pagué",
+"ok": [
+"pagué"
+],
+"natural": true
+},
+{
+"id": "v1313",
+"pick": "has hecho",
+"ok": [
+"has hecho",
+"hiciste"
+],
+"natural": true,
+"note": "alguna vez hiciste very common in LatAm"
+},
+{
+"id": "v1316",
+"pick": "esperamos",
+"ok": [
+"esperamos"
+],
+"natural": true
+},
+{
+"id": "v1319",
+"pick": "llueva",
+"ok": [
+"llueva"
+],
+"natural": true
+},
+{
+"id": "v1322",
+"pick": "ha crecido",
+"ok": [
+"ha crecido",
+"creció"
+],
+"natural": true,
+"note": "preterite also fine"
+},
+{
+"id": "v1325",
+"pick": "encontraremos",
+"ok": [
+"encontraremos"
+],
+"natural": true
+},
+{
+"id": "v1328",
+"pick": "he sacado",
+"ok": [
+"he sacado",
+"saqué"
+],
+"natural": true,
+"note": "todavía no saqué common in LatAm"
+},
+{
+"id": "v1331",
+"pick": "habías escondido",
+"ok": [
+"habías escondido",
+"escondías"
+],
+"natural": true,
+"note": "habitual escondías also fits"
+},
+{
+"id": "v1334",
+"pick": "hubiera jugado",
+"ok": [
+"hubiera jugado"
+],
+"natural": true
+},
+{
+"id": "v1337",
+"pick": "prueben",
+"ok": [
+"prueben"
+],
+"natural": true
+},
+{
+"id": "v1340",
+"pick": "no copien",
+"ok": [
+"no copien"
+],
+"natural": true
+},
+{
+"id": "v1343",
+"pick": "necesito",
+"ok": [
+"necesito"
+],
+"natural": true
+},
+{
+"id": "v1346",
+"pick": "hubieran hablado",
+"ok": [
+"hubieran hablado"
+],
+"natural": true
+},
+{
+"id": "v1349",
+"pick": "costaba",
+"ok": [
+"costaba"
+],
+"natural": true
+},
+{
+"id": "v1352",
+"pick": "cuida",
+"ok": [
+"cuida"
+],
+"natural": true
+},
+{
+"id": "v1355",
+"pick": "perdonaré",
+"ok": [
+"perdonaré"
+],
+"natural": true
+},
+{
+"id": "v1358",
+"pick": "hubieras guardado",
+"ok": [
+"hubieras guardado"
+],
+"natural": true
+},
+{
+"id": "v1361",
+"pick": "ganara",
+"ok": [
+"ganara"
+],
+"natural": true
+},
+{
+"id": "v1364",
+"pick": "hubieran llegado",
+"ok": [
+"hubieran llegado"
+],
+"natural": true
+},
+{
+"id": "v1367",
+"pick": "sabrán",
+"ok": [
+"sabrán"
+],
+"natural": true
+},
+{
+"id": "v1370",
+"pick": "hubiera mirado",
+"ok": [
+"hubiera mirado"
+],
+"natural": true
+},
+{
+"id": "v1373",
+"pick": "estuviste",
+"ok": [
+"estuviste"
+],
+"natural": true
+},
+{
+"id": "v1376",
+"pick": "llamara",
+"ok": [
+"llamara",
+"llame"
+],
+"natural": true,
+"note": "que lo llame fine when the call is still pending"
+},
+{
+"id": "v1379",
+"pick": "dio",
+"ok": [
+"dio"
+],
+"natural": true
+},
+{
+"id": "v1382",
+"pick": "habré tocado",
+"ok": [
+"habré tocado"
+],
+"natural": true
+},
+{
+"id": "v1385",
+"pick": "llorabas",
+"ok": [
+"llorabas"
+],
+"natural": true
+},
+{
+"id": "v1388",
+"pick": "habías recibido",
+"ok": [
+"habías recibido"
+],
+"natural": true
+},
+{
+"id": "v1391",
+"pick": "manejábamos",
+"ok": [
+"manejábamos"
+],
+"natural": true
+},
+{
+"id": "v1394",
+"pick": "habrá decidido",
+"ok": [
+"habrá decidido"
+],
+"natural": true
+},
+{
+"id": "v1397",
+"pick": "hubiera pasado",
+"ok": [
+"hubiera pasado"
+],
+"natural": true
+},
+{
+"id": "v1400",
+"pick": "no dejes",
+"ok": [
+"no dejes"
+],
+"natural": true
+},
+{
+"id": "v1403",
+"pick": "será",
+"ok": [
+"será"
+],
+"natural": true
+},
+{
+"id": "v1406",
+"pick": "hubiera mejorado",
+"ok": [
+"hubiera mejorado"
+],
+"natural": true
+},
+{
+"id": "v1409",
+"pick": "había dormido",
+"ok": [
+"había dormido",
+"durmió"
+],
+"natural": true,
+"note": "nunca durmió also natural in LatAm"
+},
+{
+"id": "v1412",
+"pick": "pareció",
+"ok": [
+"pareció",
+"parecía"
+],
+"natural": true,
+"note": "imperfect parecía equally fine"
+},
+{
+"id": "v1415",
+"pick": "haya leído",
+"ok": [
+"haya leído",
+"lea"
+],
+"natural": true,
+"note": "que lea (volunteer to read) also grammatical"
+},
+{
+"id": "v1418",
+"pick": "aprendiste",
+"ok": [
+"aprendiste"
+],
+"natural": true
+},
+{
+"id": "v1421",
+"pick": "vuelva",
+"ok": [
+"vuelva"
+],
+"natural": true
+},
+{
+"id": "v1424",
+"pick": "salga",
+"ok": [
+"salga"
+],
+"natural": true
+},
+{
+"id": "v1427",
+"pick": "habríamos ahorrado",
+"ok": [
+"habríamos ahorrado"
+],
+"natural": true
+},
+{
+"id": "v1430",
+"pick": "habrá puesto",
+"ok": [
+"habrá puesto"
+],
+"natural": true
+},
+{
+"id": "v1433",
+"pick": "ha aprendido",
+"ok": [
+"ha aprendido",
+"aprendió"
+],
+"natural": true,
+"note": "todavía no aprendió common in LatAm"
+},
+{
+"id": "v1436",
+"pick": "vivimos",
+"ok": [
+"vivimos"
+],
+"natural": true
+},
+{
+"id": "v1439",
+"pick": "hubiera dicho",
+"ok": [
+"hubiera dicho"
+],
+"natural": true
+},
+{
+"id": "v1442",
+"pick": "maneje",
+"ok": [
+"maneje"
+],
+"natural": true
+},
+{
+"id": "v1445",
+"pick": "habrá aprendido",
+"ok": [
+"habrá aprendido"
+],
+"natural": true
+},
+{
+"id": "v1448",
+"pick": "hubiera vivido",
+"ok": [
+"hubiera vivido"
+],
+"natural": true
+},
+{
+"id": "v1451",
+"pick": "habrá perdido",
+"ok": [
+"habrá perdido"
+],
+"natural": true
+},
+{
+"id": "v1454",
+"pick": "limpia",
+"ok": [
+"limpia"
+],
+"natural": true
+},
+{
+"id": "v1457",
+"pick": "necesitan",
+"ok": [
+"necesitan"
+],
+"natural": true
+},
+{
+"id": "v1460",
+"pick": "hubieras avisado",
+"ok": [
+"hubieras avisado",
+"avisaras"
+],
+"natural": true,
+"note": "no time anchor: future wish avisaras also possible"
+},
+{
+"id": "v1463",
+"pick": "sabrán",
+"ok": [
+"sabrán"
+],
+"natural": true
+},
+{
+"id": "v1466",
+"pick": "sonó",
+"ok": [
+"sonó"
+],
+"natural": true
+},
+{
+"id": "v1469",
+"pick": "funcionaría",
+"ok": [
+"funcionaría",
+"funcionaba"
+],
+"natural": true,
+"note": "funcionaba also fine as reported state"
+},
+{
+"id": "v1472",
+"pick": "hubiera estudiado",
+"ok": [
+"hubiera estudiado"
+],
+"natural": true
+},
+{
+"id": "v1475",
+"pick": "sé",
+"ok": [
+"sé"
+],
+"natural": true
+},
+{
+"id": "v1478",
+"pick": "habrán quedado",
+"ok": [
+"habrán quedado"
+],
+"natural": true
+},
+{
+"id": "v1481",
+"pick": "habrá recogido",
+"ok": [
+"habrá recogido"
+],
+"natural": true
+},
+{
+"id": "v1484",
+"pick": "pagará",
+"ok": [
+"pagará"
+],
+"natural": true
+},
+{
+"id": "v1487",
+"pick": "quedaras",
+"ok": [
+"quedaras"
+],
+"natural": true
+},
+{
+"id": "v1490",
+"pick": "había pedido",
+"ok": [
+"había pedido"
+],
+"natural": true
+},
+{
+"id": "v1493",
+"pick": "lloraba",
+"ok": [
+"lloraba"
+],
+"natural": true
+},
+{
+"id": "v1496",
+"pick": "vendieron",
+"ok": [
+"vendieron"
+],
+"natural": true
+},
+{
+"id": "v1499",
+"pick": "llevábamos",
+"ok": [
+"llevábamos"
+],
+"natural": true
+},
+{
+"id": "v1502",
+"pick": "disculpe",
+"ok": [
+"disculpe"
+],
+"natural": true
+},
+{
+"id": "v1505",
+"pick": "habrás peleado",
+"ok": [
+"habrás peleado"
+],
+"natural": true
+},
+{
+"id": "v1508",
+"pick": "voy",
+"ok": [
+"voy"
+],
+"natural": true
+},
+{
+"id": "v1511",
+"pick": "hicieran",
+"ok": [
+"hicieran"
+],
+"natural": true
+},
+{
+"id": "v1514",
+"pick": "había partido",
+"ok": [
+"había partido"
+],
+"natural": true
+},
+{
+"id": "v1517",
+"pick": "no mire",
+"ok": [
+"no mire"
+],
+"natural": true
+},
+{
+"id": "v1520",
+"pick": "no comamos",
+"ok": [
+"no comamos"
+],
+"natural": true
+},
+{
+"id": "v1523",
+"pick": "había caído",
+"ok": [
+"había caído"
+],
+"natural": true
+},
+{
+"id": "v1526",
+"pick": "había probado",
+"ok": [
+"había probado",
+"probé"
+],
+"natural": true,
+"note": "nunca probé also natural in LatAm"
+},
+{
+"id": "v1529",
+"pick": "ayuda",
+"ok": [
+"ayuda"
+],
+"natural": true
+},
+{
+"id": "v1532",
+"pick": "ayudarías",
+"ok": [
+"ayudarías",
+"ayudarás"
+],
+"natural": true,
+"note": "ayudarás fine since the move is still ahead"
+},
+{
+"id": "v1535",
+"pick": "permitiera",
+"ok": [
+"permitiera"
+],
+"natural": true
+},
+{
+"id": "v1538",
+"pick": "han roto",
+"ok": [
+"han roto"
+],
+"natural": true
+},
+{
+"id": "v1541",
+"pick": "hiciera",
+"ok": [
+"hiciera"
+],
+"natural": true
+},
+{
+"id": "v1544",
+"pick": "duele",
+"ok": [
+"duele"
+],
+"natural": true
+},
+{
+"id": "v1547",
+"pick": "hubieran reservado",
+"ok": [
+"hubieran reservado"
+],
+"natural": true
+},
+{
+"id": "v1550",
+"pick": "había comido",
+"ok": [
+"había comido",
+"comió"
+],
+"natural": true,
+"note": "nunca comió also natural in LatAm"
+},
+{
+"id": "v1553",
+"pick": "habría comprado",
+"ok": [
+"habría comprado"
+],
+"natural": true
+},
+{
+"id": "v1556",
+"pick": "hubieran decidido",
+"ok": [
+"hubieran decidido"
+],
+"natural": true
+},
+{
+"id": "v1559",
+"pick": "salimos",
+"ok": [
+"salimos"
+],
+"natural": true
+},
+{
+"id": "v1562",
+"pick": "habías regresado",
+"ok": [
+"habías regresado"
+],
+"natural": true
+},
+{
+"id": "v1565",
+"pick": "habías dejado",
+"ok": [
+"habías dejado"
+],
+"natural": true
+},
+{
+"id": "v1568",
+"pick": "cuidaban",
+"ok": [
+"cuidaban"
+],
+"natural": true
+},
+{
+"id": "v1571",
+"pick": "hablaría",
+"ok": [
+"hablaría"
+],
+"natural": true
+},
+{
+"id": "v1574",
+"pick": "hubieras guardado",
+"ok": [
+"hubieras guardado"
+],
+"natural": true
+},
+{
+"id": "v1577",
+"pick": "divertirán",
+"ok": [
+"divertirán"
+],
+"natural": true
+},
+{
+"id": "v1580",
+"pick": "habían llevado",
+"ok": [
+"habían llevado"
+],
+"natural": true
+},
+{
+"id": "v1583",
+"pick": "durmieras",
+"ok": [
+"durmieras"
+],
+"natural": true
+},
+{
+"id": "v1586",
+"pick": "habrá cambiado",
+"ok": [
+"habrá cambiado"
+],
+"natural": true
+},
+{
+"id": "v1589",
+"pick": "supiera",
+"ok": [
+"supiera"
+],
+"natural": true
+},
+{
+"id": "v1592",
+"pick": "llueve",
+"ok": [
+"llueve"
+],
+"natural": true
+},
+{
+"id": "v1595",
+"pick": "tendrás",
+"ok": [
+"tendrás"
+],
+"natural": true
+},
+{
+"id": "v1598",
+"pick": "habrían encontrado",
+"ok": [
+"habrían encontrado"
+],
+"natural": true
+},
+{
+"id": "v1601",
+"pick": "podré",
+"ok": [
+"podré"
+],
+"natural": true
+},
+{
+"id": "v1604",
+"pick": "llamaran",
+"ok": [
+"llamaran"
+],
+"natural": true
+},
+{
+"id": "v1607",
+"pick": "perdemos",
+"ok": [
+"perdemos"
+],
+"natural": true
+},
+{
+"id": "v1610",
+"pick": "caminabas",
+"ok": [
+"caminabas"
+],
+"natural": true
+},
+{
+"id": "v1613",
+"pick": "habremos puesto",
+"ok": [
+"habremos puesto"
+],
+"natural": true
+},
+{
+"id": "v1616",
+"pick": "habíamos pagado",
+"ok": [
+"habíamos pagado"
+],
+"natural": true
+},
+{
+"id": "v1619",
+"pick": "estaba",
+"ok": [
+"estaba"
+],
+"natural": true
+},
+{
+"id": "v1622",
+"pick": "hubiéramos perdido",
+"ok": [
+"hubiéramos perdido"
+],
+"natural": true
+},
+{
+"id": "v1625",
+"pick": "habré aprendido",
+"ok": [
+"habré aprendido"
+],
+"natural": true
+},
+{
+"id": "v1628",
+"pick": "buscaban",
+"ok": [
+"buscaban"
+],
+"natural": true
+},
+{
+"id": "v1631",
+"pick": "hubiéramos abierto",
+"ok": [
+"hubiéramos abierto"
+],
+"natural": true
+},
+{
+"id": "v1634",
+"pick": "lleven",
+"ok": [
+"lleven"
+],
+"natural": true
+},
+{
+"id": "v1637",
+"pick": "diga",
+"ok": [
+"diga"
+],
+"natural": true
+},
+{
+"id": "v1640",
+"pick": "habré dicho",
+"ok": [
+"habré dicho"
+],
+"natural": true
+},
+{
+"id": "v1643",
+"pick": "terminaría",
+"ok": [
+"terminaría"
+],
+"natural": true
+},
+{
+"id": "v1646",
+"pick": "creo",
+"ok": [
+"creo"
+],
+"natural": true
+},
+{
+"id": "v1649",
+"pick": "verán",
+"ok": [
+"verán"
+],
+"natural": true
+},
+{
+"id": "v1652",
+"pick": "hubieras hecho",
+"ok": [
+"hubieras hecho"
+],
+"natural": true
+},
+{
+"id": "v1655",
+"pick": "haya enseñado",
+"ok": [
+"haya enseñado"
+],
+"natural": true
+},
+{
+"id": "v1658",
+"pick": "habría puesto",
+"ok": [
+"habría puesto"
+],
+"natural": true
+},
+{
+"id": "v1661",
+"pick": "habrán equivocado",
+"ok": [
+"habrán equivocado"
+],
+"natural": true
+},
+{
+"id": "v1664",
+"pick": "hubiera aceptado",
+"ok": [
+"hubiera aceptado"
+],
+"natural": true
+},
+{
+"id": "v1667",
+"pick": "firmen",
+"ok": [
+"firmen"
+],
+"natural": true
+},
+{
+"id": "v1670",
+"pick": "haya nacido",
+"ok": [
+"haya nacido"
+],
+"natural": true
+},
+{
+"id": "v1673",
+"pick": "había leído",
+"ok": [
+"había leído"
+],
+"natural": true
+},
+{
+"id": "v1676",
+"pick": "llegáramos",
+"ok": [
+"llegáramos",
+"lleguemos"
+],
+"natural": true,
+"note": "lleguemos fine since Monday is still ahead"
+},
+{
+"id": "v1679",
+"pick": "lean",
+"ok": [
+"lean"
+],
+"natural": true
+},
+{
+"id": "v1682",
+"pick": "llueve",
+"ok": [
+"llueve"
+],
+"natural": true
+},
+{
+"id": "v1685",
+"pick": "habrá puesto",
+"ok": [
+"habrá puesto"
+],
+"natural": true
+},
+{
+"id": "v1688",
+"pick": "habríamos ido",
+"ok": [
+"habríamos ido"
+],
+"natural": true
+},
+{
+"id": "v1691",
+"pick": "apareció",
+"ok": [
+"apareció"
+],
+"natural": true
+},
+{
+"id": "v1694",
+"pick": "hubieras sido",
+"ok": [
+"hubieras sido"
+],
+"natural": true
+},
+{
+"id": "v1697",
+"pick": "habría acabado",
+"ok": [
+"habría acabado"
+],
+"natural": true
+},
+{
+"id": "v1700",
+"pick": "habrían dejado",
+"ok": [
+"habrían dejado"
+],
+"natural": true
+},
+{
+"id": "v1703",
+"pick": "quiera",
+"ok": [
+"quiera"
+],
+"natural": true
+},
+{
+"id": "v1706",
+"pick": "corta",
+"ok": [
+"corta"
+],
+"natural": true
+},
+{
+"id": "v1709",
+"pick": "jueguen",
+"ok": [
+"jueguen"
+],
+"natural": true
+},
+{
+"id": "v1712",
+"pick": "duermen",
+"ok": [
+"duermen"
+],
+"natural": true
+},
+{
+"id": "v1715",
+"pick": "manejaba",
+"ok": [
+"manejaba"
+],
+"natural": true
+},
+{
+"id": "v1718",
+"pick": "gane",
+"ok": [
+"gane"
+],
+"natural": true
+},
+{
+"id": "v1721",
+"pick": "no levanten",
+"ok": [
+"no levanten"
+],
+"natural": true
+},
+{
+"id": "v1724",
+"pick": "hubieran seguido",
+"ok": [
+"hubieran seguido"
+],
+"natural": true
+},
+{
+"id": "v1727",
+"pick": "preparaba",
+"ok": [
+"preparaba"
+],
+"natural": true
+},
+{
+"id": "v1730",
+"pick": "quisieran",
+"ok": [
+"quisieran"
+],
+"natural": true
+},
+{
+"id": "v1733",
+"pick": "compraron",
+"ok": [
+"compraron"
+],
+"natural": true
+},
+{
+"id": "v1736",
+"pick": "no fume",
+"ok": [
+"no fume"
+],
+"natural": true
+},
+{
+"id": "v1739",
+"pick": "he explicado",
+"ok": [
+"he explicado",
+"expliqué"
+],
+"natural": true,
+"note": "ya expliqué equally natural"
+},
+{
+"id": "v1742",
+"pick": "no subas",
+"ok": [
+"no subas"
+],
+"natural": true
+},
+{
+"id": "v1745",
+"pick": "estarían",
+"ok": [
+"estarían",
+"estaban"
+],
+"natural": true,
+"note": "estaban as plain statement also fits"
+},
+{
+"id": "v1748",
+"pick": "hagamos",
+"ok": [
+"hagamos"
+],
+"natural": true
+},
+{
+"id": "v1751",
+"pick": "laven",
+"ok": [
+"laven"
+],
+"natural": true
+},
+{
+"id": "v1754",
+"pick": "no salgan",
+"ok": [
+"no salgan"
+],
+"natural": true
+},
+{
+"id": "v1757",
+"pick": "entraron",
+"ok": [
+"entraron"
+],
+"natural": true
+},
+{
+"id": "v1760",
+"pick": "escucharían",
+"ok": [
+"escucharían"
+],
+"natural": true
+},
+{
+"id": "v1763",
+"pick": "no perdamos",
+"ok": [
+"no perdamos"
+],
+"natural": true
+},
+{
+"id": "v1766",
+"pick": "habríamos corrido",
+"ok": [
+"habríamos corrido"
+],
+"natural": true
+},
+{
+"id": "v1769",
+"pick": "han acercado",
+"ok": [
+"han acercado",
+"acercaron"
+],
+"natural": true,
+"note": "preterite se acercaron also fine"
+},
+{
+"id": "v1772",
+"pick": "di",
+"ok": [
+"di"
+],
+"natural": true
+},
+{
+"id": "v1775",
+"pick": "habríamos equivocado",
+"ok": [
+"habríamos equivocado"
+],
+"natural": true
+},
+{
+"id": "v1778",
+"pick": "habríamos vivido",
+"ok": [
+"habríamos vivido",
+"viviríamos"
+],
+"natural": true,
+"note": "no time anchor: could be present result (viviríamos)"
+},
+{
+"id": "v1781",
+"pick": "vendría",
+"ok": [
+"vendría"
+],
+"natural": true
+},
+{
+"id": "v1784",
+"pick": "pidió",
+"ok": [
+"pidió",
+"ha pedido",
+"pide"
+],
+"natural": true,
+"note": "hoy en la tarde allows past, perfect or planned present"
+},
+{
+"id": "v1787",
+"pick": "ahorre",
+"ok": [
+"ahorre"
+],
+"natural": true
+},
+{
+"id": "v1790",
+"pick": "cantemos",
+"ok": [
+"cantemos"
+],
+"natural": true
+},
+{
+"id": "v1793",
+"pick": "sepa",
+"ok": [
+"sepa"
+],
+"natural": true
+},
+{
+"id": "v1796",
+"pick": "no empujes",
+"ok": [
+"no empujes"
+],
+"natural": true
+},
+{
+"id": "v1799",
+"pick": "arreglaban",
+"ok": [
+"arreglaban"
+],
+"natural": true
+},
+{
+"id": "v1802",
+"pick": "empezarán",
+"ok": [
+"empezarán"
+],
+"natural": true
+},
+{
+"id": "v1805",
+"pick": "probarás",
+"ok": [
+"probarás"
+],
+"natural": false,
+"note": "natural answer prueba is not an option; future as command is stilted"
+},
+{
+"id": "v1808",
+"pick": "querías",
+"ok": [
+"querías"
+],
+"natural": true
+},
+{
+"id": "v1811",
+"pick": "ha vuelto",
+"ok": [
+"ha vuelto",
+"había vuelto",
+"volvió"
+],
+"natural": true,
+"note": "no past frame: could be now (ha vuelto, no volvió) or a past night (había vuelto)"
+},
+{
+"id": "v1814",
+"pick": "habremos equivocado",
+"ok": [
+"habremos equivocado"
+],
+"natural": true
+},
+{
+"id": "v1817",
+"pick": "han ayudado",
+"ok": [
+"han ayudado"
+],
+"natural": true
+},
+{
+"id": "v1820",
+"pick": "podremos",
+"ok": [
+"podremos",
+"podríamos"
+],
+"natural": true,
+"note": "podríamos also common after si + present"
+},
+{
+"id": "v1823",
+"pick": "habrá roto",
+"ok": [
+"habrá roto"
+],
+"natural": true
+},
+{
+"id": "v1826",
+"pick": "hubiéramos visto",
+"ok": [
+"hubiéramos visto",
+"viéramos"
+],
+"natural": true,
+"note": "no time anchor: could be a wish about a film not yet seen"
+},
+{
+"id": "v1829",
+"pick": "he oído",
+"ok": [
+"he oído",
+"oí"
+],
+"natural": true,
+"note": "nunca oí also natural in LatAm"
+},
+{
+"id": "v1832",
+"pick": "habían decidido",
+"ok": [
+"habían decidido"
+],
+"natural": true
+},
+{
+"id": "v1835",
+"pick": "está",
+"ok": [
+"está"
+],
+"natural": true
+},
+{
+"id": "v1838",
+"pick": "haya usado",
+"ok": [
+"haya usado"
+],
+"natural": true
+},
+{
+"id": "v1841",
+"pick": "han sentido",
+"ok": [
+"han sentido",
+"sintieron"
+],
+"natural": true,
+"note": "alguna vez sintieron very common in LatAm"
+},
+{
+"id": "v1844",
+"pick": "hayas encontrado",
+"ok": [
+"hayas encontrado"
+],
+"natural": true
+},
+{
+"id": "v1847",
+"pick": "habrán terminado",
+"ok": [
+"habrán terminado"
+],
+"natural": true
+},
+{
+"id": "v1850",
+"pick": "diera",
+"ok": [
+"diera"
+],
+"natural": true
+},
+{
+"id": "v1853",
+"pick": "haya cuidado",
+"ok": [
+"haya cuidado"
+],
+"natural": true
+},
+{
+"id": "v1856",
+"pick": "hayan puesto",
+"ok": [
+"hayan puesto"
+],
+"natural": true
+},
+{
+"id": "v1859",
+"pick": "haya preparado",
+"ok": [
+"haya preparado"
+],
+"natural": true
+},
+{
+"id": "v1862",
+"pick": "ponga",
+"ok": [
+"ponga"
+],
+"natural": true
+},
+{
+"id": "v1865",
+"pick": "había tenido",
+"ok": [
+"había tenido",
+"tuvo"
+],
+"natural": true,
+"note": "nunca tuvo also natural in LatAm"
+},
+{
+"id": "v1868",
+"pick": "hayan recibido",
+"ok": [
+"hayan recibido"
+],
+"natural": true
+},
+{
+"id": "v1871",
+"pick": "crecerá",
+"ok": [
+"crecerá"
+],
+"natural": true
+},
+{
+"id": "v1874",
+"pick": "habíamos cenado",
+"ok": [
+"habíamos cenado",
+"cenábamos"
+],
+"natural": true,
+"note": "ya cenábamos (were already eating) also fits"
+},
+{
+"id": "v1877",
+"pick": "cerramos",
+"ok": [
+"cerramos"
+],
+"natural": true
+},
+{
+"id": "v1880",
+"pick": "no dejen",
+"ok": [
+"no dejen"
+],
+"natural": true
+},
+{
+"id": "v1883",
+"pick": "había ocurrido",
+"ok": [
+"había ocurrido"
+],
+"natural": true
+},
+{
+"id": "v1886",
+"pick": "ponían",
+"ok": [
+"ponían"
+],
+"natural": true
+},
+{
+"id": "v1889",
+"pick": "intentarías",
+"ok": [
+"intentarías"
+],
+"natural": true
+},
+{
+"id": "v1892",
+"pick": "ganaba",
+"ok": [
+"ganaba"
+],
+"natural": true
+},
+{
+"id": "v1895",
+"pick": "canta",
+"ok": [
+"canta"
+],
+"natural": true
+},
+{
+"id": "v1898",
+"pick": "sabe",
+"ok": [
+"sabe"
+],
+"natural": true
+},
+{
+"id": "v1901",
+"pick": "pagaba",
+"ok": [
+"pagaba"
+],
+"natural": true
+},
+{
+"id": "v1904",
+"pick": "suban",
+"ok": [
+"suban"
+],
+"natural": true
+},
+{
+"id": "v1907",
+"pick": "hubiéramos oído",
+"ok": [
+"hubiéramos oído",
+"oyéramos"
+],
+"natural": true,
+"note": "como si oyéramos (simultaneous) also fits"
+},
+{
+"id": "v1910",
+"pick": "habrán roto",
+"ok": [
+"habrán roto"
+],
+"natural": false,
+"note": "needs reflexive se habrá roto una pieza; plural habrán roto has no subject"
+},
+{
+"id": "v1913",
+"pick": "habían conocido",
+"ok": [
+"habían conocido"
+],
+"natural": true
+},
+{
+"id": "v1916",
+"pick": "hubiera tenido",
+"ok": [
+"hubiera tenido"
+],
+"natural": true
+},
+{
+"id": "v1919",
+"pick": "habría dormido",
+"ok": [
+"habría dormido",
+"dormiría"
+],
+"natural": true,
+"note": "durmió is the natural answer and is missing; conditional readings both work"
+},
+{
+"id": "v1922",
+"pick": "compraría",
+"ok": [
+"compraría"
+],
+"natural": true
+},
+{
+"id": "v1925",
+"pick": "dijo",
+"ok": [
+"dijo"
+],
+"natural": true
+},
+{
+"id": "v1928",
+"pick": "llamo",
+"ok": [
+"llamo"
+],
+"natural": true
+},
+{
+"id": "v1931",
+"pick": "habrían decidido",
+"ok": [
+"habrían decidido",
+"habrán decidido"
+],
+"natural": true,
+"note": "habrán decidido also used for conjecture from the present"
+},
+{
+"id": "v1934",
+"pick": "cuide",
+"ok": [
+"cuide"
+],
+"natural": true
+},
+{
+"id": "v1937",
+"pick": "quieren",
+"ok": [
+"quieren"
+],
+"natural": true
+},
+{
+"id": "v1940",
+"pick": "pagué",
+"ok": [
+"pagué"
+],
+"natural": true
+},
+{
+"id": "v1943",
+"pick": "abra",
+"ok": [
+"abra"
+],
+"natural": true
+},
+{
+"id": "v1946",
+"pick": "hubiéramos salido",
+"ok": [
+"hubiéramos salido"
+],
+"natural": true
+},
+{
+"id": "v1949",
+"pick": "vendrá",
+"ok": [
+"vendrá"
+],
+"natural": true
+},
+{
+"id": "v1952",
+"pick": "rompí",
+"ok": [
+"rompí",
+"he roto"
+],
+"natural": true,
+"note": "he roto also fine with esta mañana"
+},
+{
+"id": "v1955",
+"pick": "hubiera limpiado",
+"ok": [
+"hubiera limpiado"
+],
+"natural": true
+},
+{
+"id": "v1958",
+"pick": "leyera",
+"ok": [
+"leyera"
+],
+"natural": true
+},
+{
+"id": "v1961",
+"pick": "esperé",
+"ok": [
+"esperé"
+],
+"natural": true
+},
+{
+"id": "v1964",
+"pick": "cantabas",
+"ok": [
+"cantabas"
+],
+"natural": true
+},
+{
+"id": "v1967",
+"pick": "valdrá",
+"ok": [
+"valdrá"
+],
+"natural": true
+},
+{
+"id": "v1970",
+"pick": "haya pasado",
+"ok": [
+"haya pasado"
+],
+"natural": true
+},
+{
+"id": "v1973",
+"pick": "visite",
+"ok": [
+"visite"
+],
+"natural": true
+},
+{
+"id": "v1976",
+"pick": "cansaran",
+"ok": [
+"cansaran"
+],
+"natural": true
+},
+{
+"id": "v1979",
+"pick": "paso",
+"ok": [
+"paso"
+],
+"natural": true
+},
+{
+"id": "v1982",
+"pick": "daría",
+"ok": [
+"daría",
+"dará"
+],
+"natural": true,
+"note": "dará fine since December is still ahead"
+},
+{
+"id": "v1985",
+"pick": "compraré",
+"ok": [
+"compraré"
+],
+"natural": true
+},
+{
+"id": "v1988",
+"pick": "habríamos conseguido",
+"ok": [
+"habríamos conseguido"
+],
+"natural": true
+},
+{
+"id": "v1991",
+"pick": "has probado",
+"ok": [
+"has probado",
+"probaste"
+],
+"natural": true,
+"note": "alguna vez probaste very common in LatAm"
+},
+{
+"id": "v1994",
+"pick": "hayas recibido",
+"ok": [
+"hayas recibido"
+],
+"natural": true
+},
+{
+"id": "v1997",
+"pick": "ofrecería",
+"ok": [
+"ofrecería"
+],
+"natural": true
+},
+{
+"id": "v2000",
+"pick": "hubieras dormido",
+"ok": [
+"hubieras dormido"
+],
+"natural": true
+},
+{
+"id": "v2003",
+"pick": "hayamos pagado",
+"ok": [
+"hayamos pagado"
+],
+"natural": true
+},
+{
+"id": "v2006",
+"pick": "mantienen",
+"ok": [
+"mantienen"
+],
+"natural": true
+},
+{
+"id": "v2009",
+"pick": "pon",
+"ok": [
+"pon"
+],
+"natural": true
+},
+{
+"id": "v2012",
+"pick": "hubieras pedido",
+"ok": [
+"hubieras pedido"
+],
+"natural": true
+},
+{
+"id": "v2015",
+"pick": "ha hecho",
+"ok": [
+"ha hecho"
+],
+"natural": true
+},
+{
+"id": "v2018",
+"pick": "estén",
+"ok": [
+"estén",
+"están"
+],
+"natural": true,
+"note": "tal vez takes indicative too"
+},
+{
+"id": "v2021",
+"pick": "hayan terminado",
+"ok": [
+"hayan terminado",
+"terminen"
+],
+"natural": true,
+"note": "terminen also fine as a general statement"
+},
+{
+"id": "v2024",
+"pick": "iremos",
+"ok": [
+"iremos"
+],
+"natural": true
+},
+{
+"id": "v2027",
+"pick": "empiezo",
+"ok": [
+"empiezo"
+],
+"natural": true
+},
+{
+"id": "v2030",
+"pick": "venga",
+"ok": [
+"venga"
+],
+"natural": true
+},
+{
+"id": "v2033",
+"pick": "corrían",
+"ok": [
+"corrían"
+],
+"natural": true
+},
+{
+"id": "v2036",
+"pick": "habrás visto",
+"ok": [
+"habrás visto"
+],
+"natural": true
+},
+{
+"id": "v2039",
+"pick": "hayan decidido",
+"ok": [
+"hayan decidido"
+],
+"natural": true
+},
+{
+"id": "v2042",
+"pick": "prometas",
+"ok": [
+"prometas"
+],
+"natural": true
+},
+{
+"id": "v2045",
+"pick": "habría hecho",
+"ok": [
+"habría hecho"
+],
+"natural": true
+},
+{
+"id": "v2048",
+"pick": "pregunta",
+"ok": [
+"pregunta"
+],
+"natural": true
+},
+{
+"id": "v2051",
+"pick": "trabajara",
+"ok": [
+"trabajara"
+],
+"natural": true
+},
+{
+"id": "v2054",
+"pick": "quisiera",
+"ok": [
+"quisiera",
+"quiero"
+],
+"natural": true,
+"note": "quiero pedirle un favor equally natural"
+},
+{
+"id": "v2057",
+"pick": "comemos",
+"ok": [
+"comemos"
+],
+"natural": true
+},
+{
+"id": "v2060",
+"pick": "tendrá",
+"ok": [
+"tendrá",
+"tenía"
+],
+"natural": true,
+"note": "tenía gripa as plain fact also fits"
+},
+{
+"id": "v2063",
+"pick": "tenía",
+"ok": [
+"tenía"
+],
+"natural": true
+},
+{
+"id": "v2066",
+"pick": "tomaré",
+"ok": [
+"tomaré"
+],
+"natural": true
+},
+{
+"id": "v2069",
+"pick": "hubieras leído",
+"ok": [
+"hubieras leído"
+],
+"natural": true
+},
+{
+"id": "v2072",
+"pick": "habría terminado",
+"ok": [
+"habría terminado"
+],
+"natural": true
+},
+{
+"id": "v2075",
+"pick": "habrán cambiado",
+"ok": [
+"habrán cambiado"
+],
+"natural": false,
+"note": "subject el cliente is singular but the plural habrán cambiado is the only perfect conjecture form"
+},
+{
+"id": "v2078",
+"pick": "salieran",
+"ok": [
+"salieran"
+],
+"natural": true
+},
+{
+"id": "v2081",
+"pick": "habrá perdido",
+"ok": [
+"habrá perdido"
+],
+"natural": true
+},
+{
+"id": "v2084",
+"pick": "habré comprado",
+"ok": [
+"habré comprado"
+],
+"natural": true
+},
+{
+"id": "v2087",
+"pick": "habíamos sentado",
+"ok": [
+"habíamos sentado"
+],
+"natural": true
+},
+{
+"id": "v2090",
+"pick": "estuvieran",
+"ok": [
+"estuvieran"
+],
+"natural": true
+},
+{
+"id": "v2093",
+"pick": "no vuelvan",
+"ok": [
+"no vuelvan"
+],
+"natural": true
+},
+{
+"id": "v2096",
+"pick": "hayan vendido",
+"ok": [
+"hayan vendido"
+],
+"natural": true
+},
+{
+"id": "v2099",
+"pick": "has mandado",
+"ok": [
+"has mandado",
+"mandaste"
+],
+"natural": true,
+"note": "mandaste also used in LatAm with en lo que va del año"
+},
+{
+"id": "v2102",
+"pick": "llegaría",
+"ok": [
+"llegaría"
+],
+"natural": true
+},
+{
+"id": "v2105",
+"pick": "miras",
+"ok": [
+"miras"
+],
+"natural": true
+},
+{
+"id": "v2108",
+"pick": "han enviado",
+"ok": [
+"han enviado",
+"enviaron"
+],
+"natural": true,
+"note": "nunca enviaron also natural in LatAm"
+},
+{
+"id": "v2111",
+"pick": "habrán vendido",
+"ok": [
+"habrán vendido"
+],
+"natural": true
+},
+{
+"id": "v2114",
+"pick": "jugaban",
+"ok": [
+"jugaban"
+],
+"natural": true
+},
+{
+"id": "v2117",
+"pick": "habría perdido",
+"ok": [
+"habría perdido"
+],
+"natural": false,
+"note": "speaker conjecturing whether they themselves missed the bus is odd"
+},
+{
+"id": "v2120",
+"pick": "volvamos",
+"ok": [
+"volvamos",
+"volvemos"
+],
+"natural": true,
+"note": "volvemos al hotel as proposal also natural"
+},
+{
+"id": "v2123",
+"pick": "subirán",
+"ok": [
+"subirán"
+],
+"natural": true
+},
+{
+"id": "v2126",
+"pick": "habrán enviado",
+"ok": [
+"habrán enviado"
+],
+"natural": true
+},
+{
+"id": "v2129",
+"pick": "estaba",
+"ok": [
+"estaba"
+],
+"natural": true
+},
+{
+"id": "v2132",
+"pick": "oí",
+"ok": [
+"oí"
+],
+"natural": true
+},
+{
+"id": "v2135",
+"pick": "he leído",
+"ok": [
+"he leído",
+"leí"
+],
+"natural": true,
+"note": "leí also used in LatAm with en lo que va del año"
+},
+{
+"id": "v2138",
+"pick": "había decidido",
+"ok": [
+"había decidido"
+],
+"natural": true
+},
+{
+"id": "v2141",
+"pick": "pienso",
+"ok": [
+"pienso"
+],
+"natural": true
+},
+{
+"id": "v2144",
+"pick": "no manejes",
+"ok": [
+"no manejes"
+],
+"natural": true
+},
+{
+"id": "v2147",
+"pick": "habían empezado",
+"ok": [
+"habían empezado"
+],
+"natural": true
+},
+{
+"id": "v2150",
+"pick": "cortabas",
+"ok": [
+"cortabas"
+],
+"natural": true
+},
+{
+"id": "v2153",
+"pick": "cueste",
+"ok": [
+"cueste",
+"cuesta"
+],
+"natural": true,
+"note": "aunque cuesta (known fact) also correct"
+},
+{
+"id": "v2156",
+"pick": "hayan comido",
+"ok": [
+"hayan comido"
+],
+"natural": true
+},
+{
+"id": "v2159",
+"pick": "sea",
+"ok": [
+"sea"
+],
+"natural": true
+},
+{
+"id": "v2162",
+"pick": "haya abierto",
+"ok": [
+"haya abierto"
+],
+"natural": true
+},
+{
+"id": "v2165",
+"pick": "habría ayudado",
+"ok": [
+"habría ayudado"
+],
+"natural": true
+},
+{
+"id": "v2168",
+"pick": "haya roto",
+"ok": [
+"haya roto"
+],
+"natural": true
+},
+{
+"id": "v2171",
+"pick": "habían cambiado",
+"ok": [
+"habían cambiado"
+],
+"natural": true
+},
+{
+"id": "v2174",
+"pick": "querría",
+"ok": [
+"querría",
+"quería"
+],
+"natural": true,
+"note": "quería as plain statement also fits"
+},
+{
+"id": "v2177",
+"pick": "ha leído",
+"ok": [
+"ha leído",
+"leyó"
+],
+"natural": true,
+"note": "ya leyó common in LatAm"
+},
+{
+"id": "v2180",
+"pick": "tenía",
+"ok": [
+"tenía"
+],
+"natural": true
+},
+{
+"id": "v2183",
+"pick": "hemos ido",
+"ok": [
+"hemos ido",
+"fuimos"
+],
+"natural": true,
+"note": "nunca fuimos also natural"
+},
+{
+"id": "v2186",
+"pick": "han puesto",
+"ok": [
+"han puesto",
+"pusieron"
+],
+"natural": true,
+"note": "todavía no pusieron common in LatAm"
+},
+{
+"id": "v2189",
+"pick": "ha llegado",
+"ok": [
+"ha llegado",
+"llegó"
+],
+"natural": true,
+"note": "llegó also used in LatAm"
+},
+{
+"id": "v2192",
+"pick": "toca",
+"ok": [
+"toca"
+],
+"natural": true
+},
+{
+"id": "v2195",
+"pick": "habrían invitado",
+"ok": [
+"habrían invitado"
+],
+"natural": true
+},
+{
+"id": "v2198",
+"pick": "habían roto",
+"ok": [
+"habían roto"
+],
+"natural": true
+},
+{
+"id": "v2201",
+"pick": "encontremos",
+"ok": [
+"encontremos"
+],
+"natural": true
+},
+{
+"id": "v2204",
+"pick": "hubieran llegado",
+"ok": [
+"hubieran llegado"
+],
+"natural": true
+},
+{
+"id": "v2207",
+"pick": "pediría",
+"ok": [
+"pediría"
+],
+"natural": true
+},
+{
+"id": "v2210",
+"pick": "cuidemos",
+"ok": [
+"cuidemos"
+],
+"natural": true
+},
+{
+"id": "v2213",
+"pick": "duraría",
+"ok": [
+"duraría",
+"duraba"
+],
+"natural": true,
+"note": "duraba also fine"
+},
+{
+"id": "v2216",
+"pick": "traería",
+"ok": [
+"traería",
+"traerá"
+],
+"natural": true,
+"note": "traerá fine since the dinner is still ahead"
+},
+{
+"id": "v2219",
+"pick": "enseñó",
+"ok": [
+"enseñó"
+],
+"natural": true
+},
+{
+"id": "v2222",
+"pick": "hayan escrito",
+"ok": [
+"hayan escrito"
+],
+"natural": true
+},
+{
+"id": "v2225",
+"pick": "han puesto",
+"ok": [
+"han puesto"
+],
+"natural": true
+},
+{
+"id": "v2228",
+"pick": "haga",
+"ok": [
+"haga"
+],
+"natural": true
+},
+{
+"id": "v2231",
+"pick": "hubiera podido",
+"ok": [
+"hubiera podido"
+],
+"natural": true
+},
+{
+"id": "v2234",
+"pick": "habría decidido",
+"ok": [
+"habría decidido"
+],
+"natural": true
+},
+{
+"id": "v2237",
+"pick": "hayan acabado",
+"ok": [
+"hayan acabado"
+],
+"natural": true
+},
+{
+"id": "v2240",
+"pick": "sería",
+"ok": [
+"sería",
+"será"
+],
+"natural": true,
+"note": "¿será posible? equally polite in Colombia"
+},
+{
+"id": "v2243",
+"pick": "no pongas",
+"ok": [
+"no pongas"
+],
+"natural": true
+},
+{
+"id": "v2246",
+"pick": "hubieran arreglado",
+"ok": [
+"hubieran arreglado"
+],
+"natural": true
+},
+{
+"id": "v2249",
+"pick": "no pague",
+"ok": [
+"no pague"
+],
+"natural": true
+},
+{
+"id": "v2252",
+"pick": "trata",
+"ok": [
+"trata"
+],
+"natural": true
+},
+{
+"id": "v2255",
+"pick": "no tengan",
+"ok": [
+"no tengan"
+],
+"natural": true
+},
+{
+"id": "v2258",
+"pick": "tendría",
+"ok": [
+"tendría"
+],
+"natural": true
+},
+{
+"id": "v2261",
+"pick": "trabajo",
+"ok": [
+"trabajo"
+],
+"natural": true
+},
+{
+"id": "v2264",
+"pick": "entraron",
+"ok": [
+"entraron"
+],
+"natural": true
+},
+{
+"id": "v2267",
+"pick": "aprenden",
+"ok": [
+"aprenden"
+],
+"natural": true
+},
+{
+"id": "v2270",
+"pick": "habrían cancelado",
+"ok": [
+"habrían cancelado"
+],
+"natural": true
+},
+{
+"id": "v2273",
+"pick": "escucha",
+"ok": [
+"escucha"
+],
+"natural": true
+},
+{
+"id": "v2276",
+"pick": "sintiera",
+"ok": [
+"sintiera"
+],
+"natural": true
+},
+{
+"id": "v2279",
+"pick": "sales",
+"ok": [
+"sales"
+],
+"natural": true
+},
+{
+"id": "v2282",
+"pick": "toquen",
+"ok": [
+"toquen"
+],
+"natural": true
+},
+{
+"id": "v2285",
+"pick": "empezó",
+"ok": [
+"empezó"
+],
+"natural": true
+},
+{
+"id": "v2288",
+"pick": "prestarías",
+"ok": [
+"prestarías"
+],
+"natural": true
+},
+{
+"id": "v2291",
+"pick": "había",
+"ok": [
+"había",
+"habrá",
+"habría"
+],
+"natural": true,
+"note": "no time anchor: party could be past (había, habría) or upcoming (habrá)"
+},
+{
+"id": "v2294",
+"pick": "no coman",
+"ok": [
+"no coman"
+],
+"natural": true
+},
+{
+"id": "v2297",
+"pick": "hubiéramos escrito",
+"ok": [
+"hubiéramos escrito"
+],
+"natural": true
+},
+{
+"id": "v2300",
+"pick": "abre",
+"ok": [
+"abre"
+],
+"natural": true
+},
+{
+"id": "v2303",
+"pick": "haya hecho",
+"ok": [
+"haya hecho"
+],
+"natural": true
+},
+{
+"id": "v2306",
+"pick": "viviera",
+"ok": [
+"viviera"
+],
+"natural": true
+},
+{
+"id": "v2309",
+"pick": "haya ahorrado",
+"ok": [
+"haya ahorrado"
+],
+"natural": true
+},
+{
+"id": "v2312",
+"pick": "escriba",
+"ok": [
+"escriba"
+],
+"natural": true
+},
+{
+"id": "v2315",
+"pick": "habríamos preparado",
+"ok": [
+"habríamos preparado"
+],
+"natural": true
+},
+{
+"id": "v2318",
+"pick": "habríamos viajado",
+"ok": [
+"habríamos viajado"
+],
+"natural": true
+},
+{
+"id": "v2321",
+"pick": "sabría",
+"ok": [
+"sabría",
+"sabía"
+],
+"natural": true,
+"note": "sabía as plain statement also fits"
+},
+{
+"id": "v2324",
+"pick": "cierre",
+"ok": [
+"cierre"
+],
+"natural": true
+},
+{
+"id": "v2327",
+"pick": "estamos",
+"ok": [
+"estamos"
+],
+"natural": true
+},
+{
+"id": "v2330",
+"pick": "habrían comprado",
+"ok": [
+"habrían comprado"
+],
+"natural": true
+},
+{
+"id": "v2333",
+"pick": "daba",
+"ok": [
+"daba"
+],
+"natural": true
+},
+{
+"id": "v2336",
+"pick": "tengas",
+"ok": [
+"tengas"
+],
+"natural": true
+},
+{
+"id": "v2339",
+"pick": "habían vendido",
+"ok": [
+"habían vendido"
+],
+"natural": true
+},
+{
+"id": "v2342",
+"pick": "llamó",
+"ok": [
+"llamó"
+],
+"natural": true
+},
+{
+"id": "v2345",
+"pick": "hubiera llegado",
+"ok": [
+"hubiera llegado"
+],
+"natural": true
+},
+{
+"id": "v2348",
+"pick": "no esperemos",
+"ok": [
+"no esperemos"
+],
+"natural": true
+},
+{
+"id": "v2351",
+"pick": "comprendan",
+"ok": [
+"comprendan"
+],
+"natural": true
+},
+{
+"id": "v2354",
+"pick": "ganará",
+"ok": [
+"ganará"
+],
+"natural": true
+},
+{
+"id": "v2357",
+"pick": "haya perdido",
+"ok": [
+"haya perdido"
+],
+"natural": true
+},
+{
+"id": "v2360",
+"pick": "dormía",
+"ok": [
+"dormía"
+],
+"natural": true
+},
+{
+"id": "v2363",
+"pick": "faltaban",
+"ok": [
+"faltaban"
+],
+"natural": true
+},
+{
+"id": "v2366",
+"pick": "habré firmado",
+"ok": [
+"habré firmado"
+],
+"natural": true
+},
+{
+"id": "v2369",
+"pick": "llama",
+"ok": [
+"llama"
+],
+"natural": true
+},
+{
+"id": "v2372",
+"pick": "bailamos",
+"ok": [
+"bailamos"
+],
+"natural": true
+},
+{
+"id": "v2375",
+"pick": "han dado",
+"ok": [
+"han dado",
+"dieron"
+],
+"natural": true,
+"note": "dieron also fine"
+},
+{
+"id": "v2378",
+"pick": "llovía",
+"ok": [
+"llovía"
+],
+"natural": true
+},
+{
+"id": "v2381",
+"pick": "manejo",
+"ok": [
+"manejo"
+],
+"natural": true
+},
+{
+"id": "v2384",
+"pick": "no entres",
+"ok": [
+"no entres"
+],
+"natural": true
+},
+{
+"id": "v2387",
+"pick": "habremos dejado",
+"ok": [
+"habremos dejado"
+],
+"natural": true
+},
+{
+"id": "v2390",
+"pick": "llame",
+"ok": [
+"llame"
+],
+"natural": true
+},
+{
+"id": "v2393",
+"pick": "ganaban",
+"ok": [
+"ganaban"
+],
+"natural": true
+},
+{
+"id": "v2396",
+"pick": "muestra",
+"ok": [
+"muestra"
+],
+"natural": true
+},
+{
+"id": "v2399",
+"pick": "has cerrado",
+"ok": [
+"has cerrado",
+"cerraste"
+],
+"natural": true,
+"note": "todavía no cerraste common in LatAm"
+},
+{
+"id": "v2402",
+"pick": "hayas escrito",
+"ok": [
+"hayas escrito"
+],
+"natural": true
+},
+{
+"id": "v2405",
+"pick": "dormirá",
+"ok": [
+"dormirá"
+],
+"natural": true
+},
+{
+"id": "v2408",
+"pick": "empiece",
+"ok": [
+"empiece"
+],
+"natural": true
+},
+{
+"id": "v2411",
+"pick": "había visto",
+"ok": [
+"había visto"
+],
+"natural": true
+},
+{
+"id": "v2414",
+"pick": "estudiara",
+"ok": [
+"estudiara"
+],
+"natural": true
+},
+{
+"id": "v2417",
+"pick": "han dado",
+"ok": [
+"han dado",
+"dieron"
+],
+"natural": true,
+"note": "alguna vez dieron common in LatAm"
+},
+{
+"id": "v2420",
+"pick": "habrán dado",
+"ok": [
+"habrán dado"
+],
+"natural": true
+},
+{
+"id": "v2423",
+"pick": "pondré",
+"ok": [
+"pondré"
+],
+"natural": true
+},
+{
+"id": "v2426",
+"pick": "fuera",
+"ok": [
+"fuera"
+],
+"natural": true
+},
+{
+"id": "v2429",
+"pick": "extrañaba",
+"ok": [
+"extrañaba",
+"extrañaría"
+],
+"natural": true,
+"note": "extrañaría as conjecture also fits"
+},
+{
+"id": "v2432",
+"pick": "había escrito",
+"ok": [
+"había escrito"
+],
+"natural": true
+},
+{
+"id": "v2435",
+"pick": "hubieran dejado",
+"ok": [
+"hubieran dejado"
+],
+"natural": true
+},
+{
+"id": "v2438",
+"pick": "llego",
+"ok": [
+"llego"
+],
+"natural": true
+},
+{
+"id": "v2441",
+"pick": "habremos costado",
+"ok": [
+"habremos costado"
+],
+"natural": false,
+"note": "subject is la remodelación, so it needs habrá costado; every option is first person plural"
+},
+{
+"id": "v2444",
+"pick": "hemos mirado",
+"ok": [
+"hemos mirado",
+"miramos"
+],
+"natural": true,
+"note": "todavía no miramos common in LatAm"
+},
+{
+"id": "v2447",
+"pick": "hayas venido",
+"ok": [
+"hayas venido"
+],
+"natural": true
+},
+{
+"id": "v2450",
+"pick": "ayudarían",
+"ok": [
+"ayudarían"
+],
+"natural": true
+},
+{
+"id": "v2453",
+"pick": "no pierdan",
+"ok": [
+"no pierdan"
+],
+"natural": true
+},
+{
+"id": "v2456",
+"pick": "pagamos",
+"ok": [
+"pagamos",
+"paguemos"
+],
+"natural": true,
+"note": "paguemos also natural as proposal"
+},
+{
+"id": "v2459",
+"pick": "cambiaría",
+"ok": [
+"cambiaría"
+],
+"natural": true
+},
+{
+"id": "v2462",
+"pick": "haya visto",
+"ok": [
+"haya visto"
+],
+"natural": true
+},
+{
+"id": "v2465",
+"pick": "disfruten",
+"ok": [
+"disfruten"
+],
+"natural": true
+},
+{
+"id": "v2468",
+"pick": "empecemos",
+"ok": [
+"empecemos"
+],
+"natural": true
+},
+{
+"id": "v2471",
+"pick": "pase",
+"ok": [
+"pase"
+],
+"natural": true
+},
+{
+"id": "v2474",
+"pick": "íbamos",
+"ok": [
+"íbamos"
+],
+"natural": true
+},
+{
+"id": "v2477",
+"pick": "volviéramos",
+"ok": [
+"volviéramos"
+],
+"natural": true
+},
+{
+"id": "v2480",
+"pick": "tengo",
+"ok": [
+"tengo"
+],
+"natural": true
+},
+{
+"id": "v2483",
+"pick": "salgan",
+"ok": [
+"salgan"
+],
+"natural": true
+},
+{
+"id": "v2486",
+"pick": "cambiaría",
+"ok": [
+"cambiaría"
+],
+"natural": true
+},
+{
+"id": "v2489",
+"pick": "habrían mostrado",
+"ok": [
+"habrían mostrado"
+],
+"natural": true
+},
+{
+"id": "v2492",
+"pick": "corre",
+"ok": [
+"corre"
+],
+"natural": true
+},
+{
+"id": "v2495",
+"pick": "pague",
+"ok": [
+"pague"
+],
+"natural": true
+},
+{
+"id": "v2498",
+"pick": "he gastado",
+"ok": [
+"he gastado",
+"gasté"
+],
+"natural": true,
+"note": "gasté also used in LatAm with en lo que va del mes"
+},
+{
+"id": "v2501",
+"pick": "habrían venido",
+"ok": [
+"habrían venido"
+],
+"natural": true
+},
+{
+"id": "v2504",
+"pick": "duermo",
+"ok": [
+"duermo"
+],
+"natural": true
+},
+{
+"id": "v2507",
+"pick": "habíamos hecho",
+"ok": [
+"habíamos hecho",
+"hicimos"
+],
+"natural": true,
+"note": "nunca hicimos also natural in LatAm"
+},
+{
+"id": "v2510",
+"pick": "habré hecho",
+"ok": [
+"habré hecho"
+],
+"natural": true
+},
+{
+"id": "v2513",
+"pick": "quiere",
+"ok": [
+"quiere"
+],
+"natural": true
+},
+{
+"id": "v2516",
+"pick": "no saltes",
+"ok": [
+"no saltes"
+],
+"natural": true
+},
+{
+"id": "v2519",
+"pick": "hubiéramos podido",
+"ok": [
+"hubiéramos podido"
+],
+"natural": true
+},
+{
+"id": "v2522",
+"pick": "no quiten",
+"ok": [
+"no quiten"
+],
+"natural": true
+},
+{
+"id": "v2525",
+"pick": "habré dejado",
+"ok": [
+"habré dejado"
+],
+"natural": true
+},
+{
+"id": "v2528",
+"pick": "abriría",
+"ok": [
+"abriría"
+],
+"natural": true
+},
+{
+"id": "v2531",
+"pick": "salíamos",
+"ok": [
+"salíamos"
+],
+"natural": true
+},
+{
+"id": "v2534",
+"pick": "terminen",
+"ok": [
+"terminen"
+],
+"natural": true
+},
+{
+"id": "v2537",
+"pick": "habría ido",
+"ok": [
+"habría ido"
+],
+"natural": true
+},
+{
+"id": "v2540",
+"pick": "cortará",
+"ok": [
+"cortará"
+],
+"natural": true
+},
+{
+"id": "v2543",
+"pick": "no cuenten",
+"ok": [
+"no cuenten"
+],
+"natural": true
+},
+{
+"id": "v2546",
+"pick": "no camine",
+"ok": [
+"no camine"
+],
+"natural": true
+},
+{
+"id": "v2549",
+"pick": "hagas",
+"ok": [
+"hagas"
+],
+"natural": true
+},
+{
+"id": "v2552",
+"pick": "había tomado",
+"ok": [
+"había tomado"
+],
+"natural": true
+},
+{
+"id": "v2555",
+"pick": "preguntemos",
+"ok": [
+"preguntemos"
+],
+"natural": true
+},
+{
+"id": "v2558",
+"pick": "vivamos",
+"ok": [
+"vivamos"
+],
+"natural": true
+},
+{
+"id": "v2561",
+"pick": "ganaríamos",
+"ok": [
+"ganaríamos"
+],
+"natural": true
+},
+{
+"id": "v2564",
+"pick": "duró",
+"ok": [
+"duró"
+],
+"natural": true
+},
+{
+"id": "v2567",
+"pick": "habrás pedido",
+"ok": [
+"habrás pedido"
+],
+"natural": true
+},
+{
+"id": "v2570",
+"pick": "esperaba",
+"ok": [
+"esperaba"
+],
+"natural": true
+},
+{
+"id": "v2573",
+"pick": "ha perdido",
+"ok": [
+"ha perdido",
+"perdió"
+],
+"natural": true,
+"note": "alguna vez se perdió common in LatAm"
+},
+{
+"id": "v2576",
+"pick": "escribías",
+"ok": [
+"escribías"
+],
+"natural": true
+},
+{
+"id": "v2579",
+"pick": "saldré",
+"ok": [
+"saldré"
+],
+"natural": true
+},
+{
+"id": "v2582",
+"pick": "jugaran",
+"ok": [
+"jugaran"
+],
+"natural": true
+},
+{
+"id": "v2585",
+"pick": "pensemos",
+"ok": [
+"pensemos"
+],
+"natural": true
+},
+{
+"id": "v2588",
+"pick": "aceptaría",
+"ok": [
+"aceptaría"
+],
+"natural": true
+},
+{
+"id": "v2591",
+"pick": "decidimos",
+"ok": [
+"decidimos"
+],
+"natural": true
+},
+{
+"id": "v2594",
+"pick": "hubiera empezado",
+"ok": [
+"hubiera empezado"
+],
+"natural": true
+},
+{
+"id": "v2597",
+"pick": "jugaba",
+"ok": [
+"jugaba"
+],
+"natural": true
+},
+{
+"id": "v2600",
+"pick": "gastamos",
+"ok": [
+"gastamos"
+],
+"natural": true
+},
+{
+"id": "v2603",
+"pick": "hubiera leído",
+"ok": [
+"hubiera leído"
+],
+"natural": true
+},
+{
+"id": "v2606",
+"pick": "compra",
+"ok": [
+"compra"
+],
+"natural": true
+},
+{
+"id": "v2609",
+"pick": "leas",
+"ok": [
+"leas"
+],
+"natural": true
+},
+{
+"id": "v2612",
+"pick": "cierre",
+"ok": [
+"cierre"
+],
+"natural": true
+},
+{
+"id": "v2615",
+"pick": "cenamos",
+"ok": [
+"cenamos"
+],
+"natural": true
+},
+{
+"id": "v2618",
+"pick": "sabía",
+"ok": [
+"sabía"
+],
+"natural": true
+},
+{
+"id": "v2621",
+"pick": "perdiéramos",
+"ok": [
+"perdiéramos"
+],
+"natural": true
+},
+{
+"id": "v2624",
+"pick": "salieras",
+"ok": [
+"salieras"
+],
+"natural": true
+},
+{
+"id": "v2627",
+"pick": "hubieran dicho",
+"ok": [
+"hubieran dicho"
+],
+"natural": true
+},
+{
+"id": "v2630",
+"pick": "no esperes",
+"ok": [
+"no esperes"
+],
+"natural": true
+},
+{
+"id": "v2633",
+"pick": "cambia",
+"ok": [
+"cambia"
+],
+"natural": true
+},
+{
+"id": "v2636",
+"pick": "hubiera viajado",
+"ok": [
+"hubiera viajado"
+],
+"natural": true
+},
+{
+"id": "v2639",
+"pick": "fuera",
+"ok": [
+"fuera"
+],
+"natural": true
+},
+{
+"id": "v2642",
+"pick": "habíamos leído",
+"ok": [
+"habíamos leído"
+],
+"natural": true
+},
+{
+"id": "v2645",
+"pick": "hubiera vuelto",
+"ok": [
+"hubiera vuelto"
+],
+"natural": true
+},
+{
+"id": "v2648",
+"pick": "hemos corrido",
+"ok": [
+"hemos corrido"
+],
+"natural": true
+},
+{
+"id": "v2651",
+"pick": "escribía",
+"ok": [
+"escribía"
+],
+"natural": true
+},
+{
+"id": "v2654",
+"pick": "había pagado",
+"ok": [
+"había pagado"
+],
+"natural": true
+},
+{
+"id": "v2657",
+"pick": "no pague",
+"ok": [
+"no pague"
+],
+"natural": true
+},
+{
+"id": "v2660",
+"pick": "hubo",
+"ok": [
+"hubo"
+],
+"natural": true
+},
+{
+"id": "v2663",
+"pick": "había aceptado",
+"ok": [
+"había aceptado"
+],
+"natural": true
+},
+{
+"id": "v2666",
+"pick": "hayamos puesto",
+"ok": [
+"hayamos puesto"
+],
+"natural": true
+},
+{
+"id": "v2669",
+"pick": "volveré",
+"ok": [
+"volveré"
+],
+"natural": true
+},
+{
+"id": "v2672",
+"pick": "salgamos",
+"ok": [
+"salgamos"
+],
+"natural": true
+},
+{
+"id": "v2675",
+"pick": "espere",
+"ok": [
+"espere"
+],
+"natural": true
+},
+{
+"id": "v2678",
+"pick": "habrías costado",
+"ok": [
+"habrías costado"
+],
+"natural": false,
+"note": "subject is el arreglo, so it needs habría costado; every option is second person"
+},
+{
+"id": "v2681",
+"pick": "has cambiado",
+"ok": [
+"has cambiado",
+"cambiaste"
+],
+"natural": true,
+"note": "cambiaste also used in LatAm with en lo que va del año"
+},
+{
+"id": "v2684",
+"pick": "cortaste",
+"ok": [
+"cortaste"
+],
+"natural": true
+},
+{
+"id": "v2687",
+"pick": "cayeron",
+"ok": [
+"cayeron"
+],
+"natural": true
+},
+{
+"id": "v2690",
+"pick": "verías",
+"ok": [
+"verías"
+],
+"natural": true
+},
+{
+"id": "v2693",
+"pick": "habría funcionado",
+"ok": [
+"habría funcionado"
+],
+"natural": true
+},
+{
+"id": "v2696",
+"pick": "habríamos quedado",
+"ok": [
+"habríamos quedado"
+],
+"natural": true
+},
+{
+"id": "v2699",
+"pick": "estabas",
+"ok": [
+"estabas"
+],
+"natural": true
+},
+{
+"id": "v2702",
+"pick": "hayas contestado",
+"ok": [
+"hayas contestado"
+],
+"natural": true
+},
+{
+"id": "v2705",
+"pick": "hayas terminado",
+"ok": [
+"hayas terminado"
+],
+"natural": true
+},
+{
+"id": "v2708",
+"pick": "vienes",
+"ok": [
+"vienes"
+],
+"natural": true
+},
+{
+"id": "v2711",
+"pick": "ha convertido",
+"ok": [
+"ha convertido",
+"convirtió"
+],
+"natural": true,
+"note": "se convirtió also fine"
+},
+{
+"id": "v2714",
+"pick": "hubiera probado",
+"ok": [
+"hubiera probado"
+],
+"natural": true
+},
+{
+"id": "v2717",
+"pick": "habría traído",
+"ok": [
+"habría traído"
+],
+"natural": true
+},
+{
+"id": "v2720",
+"pick": "he visto",
+"ok": [
+"he visto",
+"vi"
+],
+"natural": true,
+"note": "ya vi esa película tres veces common in LatAm"
+},
+{
+"id": "v2723",
+"pick": "pruebe",
+"ok": [
+"pruebe"
+],
+"natural": true
+},
+{
+"id": "v2726",
+"pick": "ha vuelto",
+"ok": [
+"ha vuelto",
+"volvió"
+],
+"natural": true,
+"note": "se volvió also fine"
+},
+{
+"id": "v2729",
+"pick": "puedas",
+"ok": [
+"puedas"
+],
+"natural": true
+},
+{
+"id": "v2732",
+"pick": "hayan probado",
+"ok": [
+"hayan probado"
+],
+"natural": true
+},
+{
+"id": "v2735",
+"pick": "quisiera",
+"ok": [
+"quisiera",
+"quiero"
+],
+"natural": true,
+"note": "quiero hablar con el gerente equally natural"
+},
+{
+"id": "v2738",
+"pick": "estudiabas",
+"ok": [
+"estudiabas"
+],
+"natural": true
+},
+{
+"id": "v2741",
+"pick": "habíamos pensado",
+"ok": [
+"habíamos pensado",
+"pensamos"
+],
+"natural": true,
+"note": "nunca pensamos also natural in LatAm"
+},
+{
+"id": "v2744",
+"pick": "sabías",
+"ok": [
+"sabías"
+],
+"natural": true
+},
+{
+"id": "v2747",
+"pick": "abrí",
+"ok": [
+"abrí"
+],
+"natural": true
+},
+{
+"id": "v2750",
+"pick": "explicaba",
+"ok": [
+"explicaba"
+],
+"natural": true
+},
+{
+"id": "v2753",
+"pick": "hicieron",
+"ok": [
+"hicieron"
+],
+"natural": true
+},
+{
+"id": "v2756",
+"pick": "habrá arreglado",
+"ok": [
+"habrá arreglado"
+],
+"natural": true
+},
+{
+"id": "v2759",
+"pick": "saldrá",
+"ok": [
+"saldrá"
+],
+"natural": true
+},
+{
+"id": "v2762",
+"pick": "habrían venido",
+"ok": [
+"habrían venido",
+"habrán venido"
+],
+"natural": true,
+"note": "habrán venido also used for conjecture from the present"
+},
+{
+"id": "v2765",
+"pick": "baja",
+"ok": [
+"baja"
+],
+"natural": true
+},
+{
+"id": "v2768",
+"pick": "habrían vendido",
+"ok": [
+"habrían vendido"
+],
+"natural": true
+},
+{
+"id": "v2771",
+"pick": "veían",
+"ok": [
+"veían"
+],
+"natural": true
+},
+{
+"id": "v2774",
+"pick": "haya firmado",
+"ok": [
+"haya firmado"
+],
+"natural": true
+},
+{
+"id": "v2777",
+"pick": "han decidido",
+"ok": [
+"han decidido",
+"decidieron"
+],
+"natural": true,
+"note": "todavía no decidieron common in LatAm"
+},
+{
+"id": "v2780",
+"pick": "he entendido",
+"ok": [
+"he entendido",
+"entendí"
+],
+"natural": true,
+"note": "entendí also used in LatAm"
+},
+{
+"id": "v2783",
+"pick": "no traigan",
+"ok": [
+"no traigan"
+],
+"natural": true
+},
+{
+"id": "v2786",
+"pick": "recuerde",
+"ok": [
+"recuerde"
+],
+"natural": true
+},
+{
+"id": "v2789",
+"pick": "hayas arreglado",
+"ok": [
+"hayas arreglado"
+],
+"natural": true
+},
+{
+"id": "v2792",
+"pick": "pasaría",
+"ok": [
+"pasaría",
+"pasará"
+],
+"natural": true,
+"note": "¿qué le pasará? equally common for conjecture"
+},
+{
+"id": "v2795",
+"pick": "hubieras tenido",
+"ok": [
+"hubieras tenido"
+],
+"natural": true
+},
+{
+"id": "v2798",
+"pick": "habrá quedado",
+"ok": [
+"habrá quedado"
+],
+"natural": true
+},
+{
+"id": "v2801",
+"pick": "duerme",
+"ok": [
+"duerme"
+],
+"natural": true
+},
+{
+"id": "v2804",
+"pick": "habrán terminado",
+"ok": [
+"habrán terminado"
+],
+"natural": true
+},
+{
+"id": "v2807",
+"pick": "hubieran vuelto",
+"ok": [
+"hubieran vuelto"
+],
+"natural": true
+},
+{
+"id": "v2810",
+"pick": "haya salido",
+"ok": [
+"haya salido"
+],
+"natural": true
+},
+{
+"id": "v2813",
+"pick": "habría tomado",
+"ok": [
+"habría tomado"
+],
+"natural": true
+},
+{
+"id": "v2816",
+"pick": "he conocido",
+"ok": [
+"he conocido",
+"conocí"
+],
+"natural": true,
+"note": "jamás conocí also natural"
+},
+{
+"id": "v2819",
+"pick": "hubieran acabado",
+"ok": [
+"hubieran acabado"
+],
+"natural": true
+},
+{
+"id": "v2822",
+"pick": "no gastemos",
+"ok": [
+"no gastemos"
+],
+"natural": true
+},
+{
+"id": "v2825",
+"pick": "habría querido",
+"ok": [
+"habría querido",
+"querría"
+],
+"natural": true,
+"note": "querría (present result) also fits"
+},
+{
+"id": "v2828",
+"pick": "para",
+"ok": [
+"para"
+],
+"natural": true
+},
+{
+"id": "v2831",
+"pick": "habré dicho",
+"ok": [
+"habré dicho"
+],
+"natural": true
+},
+{
+"id": "v2834",
+"pick": "tengo",
+"ok": [
+"tengo"
+],
+"natural": true
+},
+{
+"id": "v2837",
+"pick": "llamaría",
+"ok": [
+"llamaría"
+],
+"natural": true
+},
+{
+"id": "v2840",
+"pick": "habías conocido",
+"ok": [
+"habías conocido",
+"conocías"
+],
+"natural": true,
+"note": "ya conocías (knew) also fine"
+},
+{
+"id": "v2843",
+"pick": "habría estudiado",
+"ok": [
+"habría estudiado",
+"estudiaría"
+],
+"natural": true,
+"note": "estudiaría (would be studying now) also fits"
+},
+{
+"id": "v2846",
+"pick": "juguemos",
+"ok": [
+"juguemos"
+],
+"natural": true
+},
+{
+"id": "v2849",
+"pick": "habrá acabado",
+"ok": [
+"habrá acabado"
+],
+"natural": true
+},
+{
+"id": "v2852",
+"pick": "cumplirá",
+"ok": [
+"cumplirá"
+],
+"natural": true
+},
+{
+"id": "v2855",
+"pick": "creería",
+"ok": [
+"creería"
+],
+"natural": true
+},
+{
+"id": "v2858",
+"pick": "habrían tenido",
+"ok": [
+"habrían tenido",
+"tendrían"
+],
+"natural": true,
+"note": "tendrían (present result) also fits"
+},
+{
+"id": "v2861",
+"pick": "habría podido",
+"ok": [
+"habría podido"
+],
+"natural": true
+},
+{
+"id": "v2864",
+"pick": "pudiera",
+"ok": [
+"pudiera"
+],
+"natural": true
+},
+{
+"id": "v2867",
+"pick": "explicó",
+"ok": [
+"explicó",
+"explica"
+],
+"natural": true,
+"note": "el jueves could be past or upcoming"
+},
+{
+"id": "v2870",
+"pick": "vendíamos",
+"ok": [
+"vendíamos"
+],
+"natural": true
+},
+{
+"id": "v2873",
+"pick": "hubiera tomado",
+"ok": [
+"hubiera tomado"
+],
+"natural": true
+},
+{
+"id": "v2876",
+"pick": "salga",
+"ok": [
+"salga"
+],
+"natural": true
+},
+{
+"id": "v2879",
+"pick": "hablarás",
+"ok": [
+"hablarás"
+],
+"natural": true
+},
+{
+"id": "v2882",
+"pick": "han empezado",
+"ok": [
+"han empezado",
+"empezaron"
+],
+"natural": true,
+"note": "todavía no empezaron common in LatAm"
+},
+{
+"id": "v2885",
+"pick": "llamaría",
+"ok": [
+"llamaría"
+],
+"natural": true
+},
+{
+"id": "v2888",
+"pick": "no apagues",
+"ok": [
+"no apagues"
+],
+"natural": true
+},
+{
+"id": "v2891",
+"pick": "hayas ido",
+"ok": [
+"hayas ido"
+],
+"natural": true
+},
+{
+"id": "v2894",
+"pick": "hablaste",
+"ok": [
+"hablaste"
+],
+"natural": true
+},
+{
+"id": "v2897",
+"pick": "bajen",
+"ok": [
+"bajen"
+],
+"natural": true
+},
+{
+"id": "v2900",
+"pick": "hayan llegado",
+"ok": [
+"hayan llegado"
+],
+"natural": true
+},
+{
+"id": "v2903",
+"pick": "haya aprobado",
+"ok": [
+"haya aprobado"
+],
+"natural": true
+},
+{
+"id": "v2906",
+"pick": "no pares",
+"ok": [
+"no pares"
+],
+"natural": false,
+"note": "to mean stand it needs the reflexive no te pares"
+},
+{
+"id": "v2909",
+"pick": "esperaban",
+"ok": [
+"esperaban"
+],
+"natural": true
+},
+{
+"id": "v2912",
+"pick": "escribiré",
+"ok": [
+"escribiré"
+],
+"natural": true
+},
+{
+"id": "v2915",
+"pick": "bailaban",
+"ok": [
+"bailaban"
+],
+"natural": true
+},
+{
+"id": "v2918",
+"pick": "esperaron",
+"ok": [
+"esperaron"
+],
+"natural": true
+},
+{
+"id": "v2921",
+"pick": "arregle",
+"ok": [
+"arregle"
+],
+"natural": true
+},
+{
+"id": "v2924",
+"pick": "fueron",
+"ok": [
+"fueron"
+],
+"natural": true
+},
+{
+"id": "v2927",
+"pick": "habríamos logrado",
+"ok": [
+"habríamos logrado"
+],
+"natural": true
+},
+{
+"id": "v2930",
+"pick": "habría puesto",
+"ok": [
+"habría puesto"
+],
+"natural": true
+},
+{
+"id": "v2933",
+"pick": "manejen",
+"ok": [
+"manejen"
+],
+"natural": true
+},
+{
+"id": "v2936",
+"pick": "no abramos",
+"ok": [
+"no abramos"
+],
+"natural": true
+},
+{
+"id": "v2939",
+"pick": "quedaría",
+"ok": [
+"quedaría"
+],
+"natural": true
+},
+{
+"id": "v2942",
+"pick": "desayuné",
+"ok": [
+"desayuné"
+],
+"natural": true
+},
+{
+"id": "v2945",
+"pick": "hemos escuchado",
+"ok": [
+"hemos escuchado",
+"escuchamos"
+],
+"natural": true,
+"note": "present escuchamos also natural with últimamente"
+},
+{
+"id": "v2948",
+"pick": "oye",
+"ok": [
+"oye"
+],
+"natural": true
+},
+{
+"id": "v2951",
+"pick": "has trabajado",
+"ok": [
+"has trabajado"
+],
+"natural": true
+},
+{
+"id": "v2954",
+"pick": "sal",
+"ok": [
+"sal"
+],
+"natural": true
+},
+{
+"id": "v2957",
+"pick": "estuviera",
+"ok": [
+"estuviera"
+],
+"natural": true
+},
+{
+"id": "v2960",
+"pick": "vuelva",
+"ok": [
+"vuelva"
+],
+"natural": true
+},
+{
+"id": "v2963",
+"pick": "habrá muerto",
+"ok": [
+"habrá muerto"
+],
+"natural": false,
+"note": "subject todas estas plantas is plural; every option is singular"
+},
+{
+"id": "v2966",
+"pick": "hemos recibido",
+"ok": [
+"hemos recibido",
+"recibimos"
+],
+"natural": true,
+"note": "aún no recibimos common in LatAm"
+},
+{
+"id": "v2969",
+"pick": "habrían descubierto",
+"ok": [
+"habrían descubierto"
+],
+"natural": true
+},
+{
+"id": "v2972",
+"pick": "jugarían",
+"ok": [
+"jugarían"
+],
+"natural": true
+},
+{
+"id": "v2975",
+"pick": "compraría",
+"ok": [
+"compraría"
+],
+"natural": true
+},
+{
+"id": "v2978",
+"pick": "han escuchado",
+"ok": [
+"han escuchado",
+"escucharon"
+],
+"natural": true,
+"note": "¿nunca escucharon? common in LatAm"
+},
+{
+"id": "v2981",
+"pick": "invitaran",
+"ok": [
+"invitaran"
+],
+"natural": true
+},
+{
+"id": "v2984",
+"pick": "lee",
+"ok": [
+"lee"
+],
+"natural": true
+},
+{
+"id": "v2987",
+"pick": "no tengas",
+"ok": [
+"no tengas"
+],
+"natural": true
+},
+{
+"id": "v2990",
+"pick": "han escrito",
+"ok": [
+"han escrito",
+"escribieron"
+],
+"natural": true,
+"note": "¿ya escribieron? common in LatAm"
+},
+{
+"id": "v2993",
+"pick": "corte",
+"ok": [
+"corte"
+],
+"natural": true
+},
+{
+"id": "v2996",
+"pick": "pague",
+"ok": [
+"pague"
+],
+"natural": true
+},
+{
+"id": "v2999",
+"pick": "hubiera conocido",
+"ok": [
+"hubiera conocido"
+],
+"natural": true
+},
+{
+"id": "v3002",
+"pick": "encontremos",
+"ok": [
+"encontremos"
+],
+"natural": true
+},
+{
+"id": "v3005",
+"pick": "había muerto",
+"ok": [
+"había muerto"
+],
+"natural": true
+},
+{
+"id": "v3008",
+"pick": "habrían ido",
+"ok": [
+"habrían ido",
+"habrán ido"
+],
+"natural": true,
+"note": "habrán ido also used for conjecture from the present"
+},
+{
+"id": "v3011",
+"pick": "ha estado",
+"ok": [
+"ha estado"
+],
+"natural": true
+},
+{
+"id": "v3014",
+"pick": "hayan cenado",
+"ok": [
+"hayan cenado"
+],
+"natural": true
+},
+{
+"id": "v3017",
+"pick": "habría costado",
+"ok": [
+"habría costado"
+],
+"natural": true
+},
+{
+"id": "v3020",
+"pick": "traiga",
+"ok": [
+"traiga"
+],
+"natural": true
+},
+{
+"id": "v3023",
+"pick": "lees",
+"ok": [
+"lees"
+],
+"natural": true
+},
+{
+"id": "v3026",
+"pick": "acabara",
+"ok": [
+"acabara"
+],
+"natural": true
+},
+{
+"id": "v3029",
+"pick": "habían ganado",
+"ok": [
+"habían ganado"
+],
+"natural": false,
+"note": "subject el equipo visitante is singular; every option is plural"
+},
+{
+"id": "v3032",
+"pick": "habrá crecido",
+"ok": [
+"habrá crecido"
+],
+"natural": true
+},
+{
+"id": "v3035",
+"pick": "conocerá",
+"ok": [
+"conocerá",
+"conocía",
+"conocería"
+],
+"natural": true,
+"note": "conocía (fact) and conocería (past conjecture) also fit"
+},
+{
+"id": "v3038",
+"pick": "hayas lavado",
+"ok": [
+"hayas lavado"
+],
+"natural": true
+},
+{
+"id": "v3041",
+"pick": "jugaron",
+"ok": [
+"jugaron"
+],
+"natural": true
+},
+{
+"id": "v3044",
+"pick": "hable",
+"ok": [
+"hable"
+],
+"natural": true
+},
+{
+"id": "v3047",
+"pick": "escribimos",
+"ok": [
+"escribimos"
+],
+"natural": true
+},
+{
+"id": "v3050",
+"pick": "acordé",
+"ok": [
+"acordé"
+],
+"natural": true
+},
+{
+"id": "v3053",
+"pick": "escuchen",
+"ok": [
+"escuchen"
+],
+"natural": true
+},
+{
+"id": "v3056",
+"pick": "aprendería",
+"ok": [
+"aprendería"
+],
+"natural": true
+},
+{
+"id": "v3059",
+"pick": "habría leído",
+"ok": [
+"habría leído"
+],
+"natural": true
+},
+{
+"id": "v3062",
+"pick": "estará",
+"ok": [
+"estará"
+],
+"natural": true
+},
+{
+"id": "v3065",
+"pick": "salga",
+"ok": [
+"salga"
+],
+"natural": true
+},
+{
+"id": "v3068",
+"pick": "estuvo",
+"ok": [
+"estuvo"
+],
+"natural": true
+},
+{
+"id": "v3071",
+"pick": "baje",
+"ok": [
+"baje"
+],
+"natural": true
+},
+{
+"id": "v3074",
+"pick": "preparará",
+"ok": [
+"preparará"
+],
+"natural": false,
+"note": "natural answer está/estará preparando is missing; preparará reads as a future plan"
+},
+{
+"id": "v3077",
+"pick": "habríamos bailado",
+"ok": [
+"habríamos bailado"
+],
+"natural": true
+},
+{
+"id": "v3080",
+"pick": "llevabas",
+"ok": [
+"llevabas"
+],
+"natural": true
+},
+{
+"id": "v3083",
+"pick": "hubieras ido",
+"ok": [
+"hubieras ido"
+],
+"natural": true
+},
+{
+"id": "v3086",
+"pick": "buscamos",
+"ok": [
+"buscamos"
+],
+"natural": true
+},
+{
+"id": "v3089",
+"pick": "llegarán",
+"ok": [
+"llegarán"
+],
+"natural": true
+},
+{
+"id": "v3092",
+"pick": "hacía",
+"ok": [
+"hacía",
+"hizo"
+],
+"natural": true,
+"note": "hizo un sol also fine"
+},
+{
+"id": "v3095",
+"pick": "suba",
+"ok": [
+"suba"
+],
+"natural": true
+},
+{
+"id": "v3098",
+"pick": "leyera",
+"ok": [
+"leyera",
+"lea"
+],
+"natural": true,
+"note": "que lea fine when the advice still applies"
+},
+{
+"id": "v3101",
+"pick": "viste",
+"ok": [
+"viste"
+],
+"natural": true
+},
+{
+"id": "v3104",
+"pick": "permita",
+"ok": [
+"permita"
+],
+"natural": true
+},
+{
+"id": "v3107",
+"pick": "estaría",
+"ok": [
+"estaría"
+],
+"natural": true
+},
+{
+"id": "v3110",
+"pick": "no prestes",
+"ok": [
+"no prestes"
+],
+"natural": true
+},
+{
+"id": "v3113",
+"pick": "habían hablado",
+"ok": [
+"habían hablado",
+"hablaron"
+],
+"natural": true,
+"note": "nunca hablaron also natural in LatAm"
+},
+{
+"id": "v3116",
+"pick": "acompañaran",
+"ok": [
+"acompañaran"
+],
+"natural": true
+},
+{
+"id": "v3119",
+"pick": "no hagas",
+"ok": [
+"no hagas"
+],
+"natural": true
+},
+{
+"id": "v3122",
+"pick": "lleve",
+"ok": [
+"lleve"
+],
+"natural": true
+},
+{
+"id": "v3125",
+"pick": "hubieran cuidado",
+"ok": [
+"hubieran cuidado"
+],
+"natural": true
+},
+{
+"id": "v3128",
+"pick": "contábamos",
+"ok": [
+"contábamos"
+],
+"natural": true
+},
+{
+"id": "v3131",
+"pick": "no traiga",
+"ok": [
+"no traiga",
+"traiga"
+],
+"natural": true,
+"note": "nothing in the sentence says pets are banned; traiga is equally possible"
+},
+{
+"id": "v3134",
+"pick": "crecieran",
+"ok": [
+"crecieran"
+],
+"natural": true
+},
+{
+"id": "v3137",
+"pick": "habría arreglado",
+"ok": [
+"habría arreglado",
+"habrá arreglado"
+],
+"natural": true,
+"note": "habrá arreglado fine if Friday is still ahead"
+},
+{
+"id": "v3140",
+"pick": "llegan",
+"ok": [
+"llegan"
+],
+"natural": true
+},
+{
+"id": "v3143",
+"pick": "no cortes",
+"ok": [
+"no cortes"
+],
+"natural": false,
+"note": "needs the reflexive no te cortes tanto el pelo"
+},
+{
+"id": "v3146",
+"pick": "aprende",
+"ok": [
+"aprende"
+],
+"natural": true
+},
+{
+"id": "v3149",
+"pick": "supe",
+"ok": [
+"supe"
+],
+"natural": true
+},
+{
+"id": "v3152",
+"pick": "trajiste",
+"ok": [
+"trajiste"
+],
+"natural": true
+},
+{
+"id": "v3155",
+"pick": "habían olvidado",
+"ok": [
+"habían olvidado"
+],
+"natural": true
+},
+{
+"id": "v3158",
+"pick": "habían pasado",
+"ok": [
+"habían pasado"
+],
+"natural": false,
+"note": "la policía is singular (había pasado); every option is plural"
+},
+{
+"id": "v3161",
+"pick": "molestaría",
+"ok": [
+"molestaría"
+],
+"natural": true
+},
+{
+"id": "v3164",
+"pick": "habrías elegido",
+"ok": [
+"habrías elegido"
+],
+"natural": true
+},
+{
+"id": "v3167",
+"pick": "haya conseguido",
+"ok": [
+"haya conseguido"
+],
+"natural": true
+},
+{
+"id": "v3170",
+"pick": "habrías dormido",
+"ok": [
+"habrías dormido"
+],
+"natural": false,
+"note": "dormir temprano is odd; it needs te habrías dormido or te habrías acostado"
+},
+{
+"id": "v3173",
+"pick": "veremos",
+"ok": [
+"veremos"
+],
+"natural": true
+},
+{
+"id": "v3176",
+"pick": "funcionara",
+"ok": [
+"funcionara"
+],
+"natural": true
+},
+{
+"id": "v3179",
+"pick": "conociera",
+"ok": [
+"conociera"
+],
+"natural": true
+},
+{
+"id": "v3182",
+"pick": "llevas",
+"ok": [
+"llevas"
+],
+"natural": true
+},
+{
+"id": "v3185",
+"pick": "habrían llegado",
+"ok": [
+"habrían llegado"
+],
+"natural": true
+},
+{
+"id": "v3188",
+"pick": "beben",
+"ok": [
+"beben"
+],
+"natural": true
+},
+{
+"id": "v3191",
+"pick": "hayan leído",
+"ok": [
+"hayan leído"
+],
+"natural": true
+},
+{
+"id": "v3194",
+"pick": "habrás llevado",
+"ok": [
+"habrás llevado"
+],
+"natural": true
+},
+{
+"id": "v3197",
+"pick": "seas",
+"ok": [
+"seas"
+],
+"natural": true
+},
+{
+"id": "v3200",
+"pick": "no compremos",
+"ok": [
+"no compremos"
+],
+"natural": true
+},
+{
+"id": "v3203",
+"pick": "no tomen",
+"ok": [
+"no tomen"
+],
+"natural": true
+},
+{
+"id": "v3206",
+"pick": "no venga",
+"ok": [
+"no venga"
+],
+"natural": true
+},
+{
+"id": "v3209",
+"pick": "importaría",
+"ok": [
+"importaría"
+],
+"natural": true
+},
+{
+"id": "v3212",
+"pick": "habían mandado",
+"ok": [
+"habían mandado"
+],
+"natural": true
+},
+{
+"id": "v3215",
+"pick": "entenderás",
+"ok": [
+"entenderás"
+],
+"natural": true
+},
+{
+"id": "v3218",
+"pick": "podríamos",
+"ok": [
+"podríamos"
+],
+"natural": true
+},
+{
+"id": "v3221",
+"pick": "hubiera nacido",
+"ok": [
+"hubiera nacido"
+],
+"natural": true
+},
+{
+"id": "v3224",
+"pick": "terminó",
+"ok": [
+"terminó"
+],
+"natural": true
+},
+{
+"id": "v3227",
+"pick": "haz",
+"ok": [
+"haz"
+],
+"natural": true
+},
+{
+"id": "v3230",
+"pick": "venderé",
+"ok": [
+"venderé"
+],
+"natural": true
+},
+{
+"id": "v3233",
+"pick": "no lleguen",
+"ok": [
+"no lleguen"
+],
+"natural": true
+},
+{
+"id": "v3236",
+"pick": "comiera",
+"ok": [
+"comiera"
+],
+"natural": true
+},
+{
+"id": "v3239",
+"pick": "tuve",
+"ok": [
+"tuve"
+],
+"natural": true
+},
+{
+"id": "v3242",
+"pick": "no contestes",
+"ok": [
+"no contestes"
+],
+"natural": true
+},
+{
+"id": "v3245",
+"pick": "no esperen",
+"ok": [
+"no esperen"
+],
+"natural": true
+},
+{
+"id": "v3248",
+"pick": "hayas entregado",
+"ok": [
+"hayas entregado"
+],
+"natural": true
+},
+{
+"id": "v3251",
+"pick": "haya encontrado",
+"ok": [
+"haya encontrado"
+],
+"natural": true
+},
+{
+"id": "v3254",
+"pick": "lleguemos",
+"ok": [
+"lleguemos",
+"llegáramos"
+],
+"natural": true,
+"note": "no time anchor: llegáramos possible for a past trip"
+},
+{
+"id": "v3257",
+"pick": "habría dado",
+"ok": [
+"habría dado"
+],
+"natural": true
+},
+{
+"id": "v3260",
+"pick": "hubieran entrado",
+"ok": [
+"hubieran entrado"
+],
+"natural": true
+},
+{
+"id": "v3263",
+"pick": "ha bajado",
+"ok": [
+"ha bajado",
+"bajó"
+],
+"natural": true,
+"note": "bajó also used in LatAm with en lo que va del año"
+},
+{
+"id": "v3266",
+"pick": "corté",
+"ok": [
+"corté"
+],
+"natural": true
+},
+{
+"id": "v3269",
+"pick": "habían ido",
+"ok": [
+"habían ido"
+],
+"natural": true
+},
+{
+"id": "v3272",
+"pick": "habrá caído",
+"ok": [
+"habrá caído"
+],
+"natural": true
+},
+{
+"id": "v3275",
+"pick": "habría hecho",
+"ok": [
+"habría hecho",
+"habrá hecho"
+],
+"natural": true,
+"note": "habrá hecho fine if the arrival is still ahead"
+},
+{
+"id": "v3278",
+"pick": "traería",
+"ok": [
+"traería"
+],
+"natural": true
+},
+{
+"id": "v3281",
+"pick": "hemos sabido",
+"ok": [
+"hemos sabido"
+],
+"natural": true
+},
+{
+"id": "v3284",
+"pick": "harás",
+"ok": [
+"harás",
+"harías"
+],
+"natural": true,
+"note": "harías also common after si + present"
+},
+{
+"id": "v3287",
+"pick": "habías hecho",
+"ok": [
+"habías hecho"
+],
+"natural": true
+},
+{
+"id": "v3290",
+"pick": "no creas",
+"ok": [
+"no creas"
+],
+"natural": true
+},
+{
+"id": "v3293",
+"pick": "habría vivido",
+"ok": [
+"habría vivido"
+],
+"natural": true
+},
+{
+"id": "v3296",
+"pick": "jugaremos",
+"ok": [
+"jugaremos"
+],
+"natural": true
+},
+{
+"id": "v3299",
+"pick": "llegaran",
+"ok": [
+"llegaran"
+],
+"natural": true
+}
+]

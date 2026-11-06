@@ -1,0 +1,129 @@
+#T2
+¿Me regala un tinto, por favor?|Can I have a black coffee, please?|¿Me da un tinto, por favor?;¿Me regalas un tinto, por favor?|alimentacion|A2|regalar = to give, in polite requests in Colombia
+¿Qué me recomienda?|What do you recommend? (formal)|¿Qué me recomiendas?|alimentacion|A2
+Quisiera pedir, por favor|I'd like to order, please||alimentacion|A2
+Para mí, el pollo|The chicken for me||alimentacion|A2
+¿Tienen menú del día?|Do you have a set lunch?|¿Hay menú del día?|alimentacion|A2|Corrientazo or almuerzo ejecutivo is the cheap set lunch in Colombia.
+Sin cebolla, por favor|No onion, please||alimentacion|A2
+Con poco picante|With little spice|Con poquito picante|alimentacion|A2
+Soy vegetariano|I'm a vegetarian (said by a man)|Soy vegetariana|alimentacion|A2
+Soy alérgico a las nueces|I'm allergic to nuts (said by a man)|Soy alérgica a las nueces|salud|A2
+¿Me trae otra cerveza?|Could you bring me another beer?|¿Me traes otra cerveza?|alimentacion|A2
+Un jugo de mora, por favor|A blackberry juice, please||alimentacion|A2
+Para llevar, por favor|To go, please||alimentacion|A2
+¿Se puede pagar con tarjeta?|Can I pay by card?|¿Aceptan tarjeta?|compras|A2
+¿Puedo pagar en efectivo?|Can I pay in cash?||compras|A2
+Quédese con el cambio|Keep the change||compras|B1
+¿Me da el recibo?|Can I have the receipt?|¿Me regala el recibo?|compras|A2
+Estoy buscando una camiseta|I'm looking for a T shirt||compras|A2
+¿Tiene esto en otra talla?|Do you have this in another size?|¿Lo tiene en otra talla?|compras|A2
+¿Me lo puedo probar?|Can I try it on?|¿Me la puedo probar?|compras|A2
+Me queda grande|It's too big on me||compras|A2
+Me queda muy apretado|It's too tight on me||compras|A2
+¿Tiene algo más barato?|Do you have anything cheaper?|¿Hay algo más barato?|compras|A2
+¿Me puede hacer un descuento?|Can you give me a discount?|¿Me haces un descuento?|compras|B1
+Voy a pensarlo|I'll think about it||compras|A2
+Me lo llevo|I'll take it||compras|A2
+Solo estoy mirando|I'm just looking||compras|A2
+¿A qué hora abren?|What time do you open?|¿A qué hora abren ustedes?|servicios|A2
+¿A qué hora cierran?|What time do you close?||servicios|A2
+¿Hay un cajero cerca?|Is there an ATM nearby?|¿Hay un cajero por aquí?|servicios|A2
+Necesito cambiar dinero|I need to change money||economia|A2
+No tengo plata|I don't have any money||economia|A2|Plata is the everyday word for money in Colombia.
+No tengo cambio|I don't have change||economia|A2
+¿Tiene cambio de cien mil?|Do you have change for a hundred thousand?||economia|B1
+¿Dónde queda la estación?|Where is the station?|¿Dónde está la estación?|viajes|A2
+Siga derecho|Keep going straight||viajes|A2
+Gire a la derecha|Turn right|Doble a la derecha|viajes|A2
+Gire a la izquierda|Turn left|Doble a la izquierda|viajes|A2
+Está a dos cuadras|It's two blocks away||viajes|A2|Colombian addresses are by cuadra (block).
+Queda muy cerca|It's very close||viajes|A2
+Queda muy lejos|It's very far||viajes|A2
+¿Cómo llego al centro?|How do I get downtown?|¿Cómo se llega al centro?|viajes|A2
+¿Cuál es la dirección?|What's the address?||viajes|A2
+Estoy esperando el bus|I'm waiting for the bus||viajes|A2
+¿Este bus va al aeropuerto?|Does this bus go to the airport?||viajes|A2
+¿Dónde me bajo?|Where do I get off?||viajes|A2
+Me bajo aquí, por favor|I'm getting off here, please||viajes|A2
+¿Cuánto cuesta el pasaje?|How much is the fare?|¿Cuánto vale el pasaje?|viajes|A2
+Un taxi, por favor|A taxi, please||viajes|A2
+Lléveme al hotel, por favor|Take me to the hotel, please||viajes|A2
+¿Cuánto se demora?|How long does it take?|¿Cuánto se tarda?|viajes|A2|Demorar = to take time, the usual verb in Colombia.
+Hay mucho trancón|There's a lot of traffic|Hay mucho tráfico|viajes|B1|Trancón is Colombian for traffic jam.
+Perdí el vuelo|I missed my flight||viajes|A2
+Mi vuelo salió tarde|My flight left late||viajes|B1
+Tengo una reserva|I have a reservation||viajes|A2
+¿Hay habitaciones libres?|Are there any free rooms?|¿Hay habitaciones disponibles?|viajes|A2
+¿Cuál es la clave del wifi?|What's the wifi password?|¿Cuál es la contraseña del wifi?|servicios|A2|Clave is the usual Colombian word for password.
+Mi maleta no llegó|My suitcase didn't arrive||viajes|A2
+Quiero comprar un boleto|I want to buy a ticket||viajes|A2
+Un boleto de ida, por favor|A one way ticket, please||viajes|A2
+Salgo mañana temprano|I leave early tomorrow||viajes|A2
+¿Qué día es hoy?|What day is today?||ocio|A2
+¿Qué fecha es hoy?|What's the date today?||ocio|A2
+Hoy es quince de marzo|Today is March fifteenth||ocio|A2
+Mi cumpleaños es en mayo|My birthday is in May||relaciones|A2
+Llego a las ocho|I arrive at eight||ocio|A2
+Son las diez y media|It's half past ten||ocio|A2
+Es un cuarto para las cinco|It's a quarter to five||ocio|A2
+Son las seis y cuarto|It's a quarter past six||ocio|A2
+Es muy temprano|It's very early||ocio|A2
+Es muy tarde|It's very late||ocio|A2
+Llego en diez minutos|I'll be there in ten minutes||ocio|A2
+Voy tarde|I'm running late||ocio|A2
+¿Qué vas a hacer hoy?|What are you going to do today?|¿Qué va a hacer hoy?|ocio|A2
+¿Qué planes tienes?|What plans do you have?|¿Qué planes tiene?|ocio|A2
+¿Quieres tomar algo?|Do you want to get a drink?|¿Quiere tomar algo?|ocio|A2
+¿Quieres venir con nosotros?|Do you want to come with us?||ocio|A2
+Vamos al cine|Let's go to the movies||ocio|A2
+¿Salimos esta noche?|Shall we go out tonight?||ocio|A2
+Me gustaría ir|I'd like to go||ocio|A2
+Nos vemos a las siete|We'll meet at seven||ocio|A2
+¿Dónde nos encontramos?|Where shall we meet?|¿Dónde nos vemos?|ocio|A2
+Te espero en la entrada|I'll wait for you at the entrance|Te espero afuera|ocio|A2
+Estoy llegando|I'm almost there||ocio|A2|Said when you are on your way.
+Ya voy|I'm coming|Ya voy para allá|ocio|A2|Colombians say "ya voy" meaning soon, not necessarily right now.
+No puedo ir|I can't go||ocio|A2
+Otro día será|Another day then||ocio|B1
+Me da pereza salir|I can't be bothered to go out||ocio|B1
+Hagamos un asado|Let's have a barbecue||ocio|B1
+¿Cuál es tu número?|What's your number?|¿Cuál es su número?|medios|A2
+Te llamo más tarde|I'll call you later||medios|A2
+Llámame cuando llegues|Call me when you arrive||medios|A2
+No contesta el teléfono|He isn't answering the phone|No contesta el celular|medios|A2
+Se me acabó la batería|My battery died||medios|A2
+No tengo señal|I have no signal||medios|A2
+Me quedé sin datos|I ran out of data||medios|B1
+Te mando un mensaje|I'll send you a message|Te escribo un mensaje|medios|A2
+Te escribo por WhatsApp|I'll message you on WhatsApp||medios|A2
+Mándame la ubicación|Send me the location|Envíame la ubicación|medios|A2
+Aló, ¿quién habla?|Hello, who's speaking?||medios|A2|Aló is the phone greeting in Colombia.
+No se escucha bien|I can't hear well||medios|A2
+Se cortó la llamada|The call dropped||medios|B1
+Déjame un mensaje de voz|Leave me a voice message||medios|B1
+Revisa tu correo|Check your email|Revise su correo|medios|A2
+Cargo el celular|I'm charging my phone||medios|A2
+Tengo una reunión a las nueve|I have a meeting at nine||trabajo|A2
+Trabajo desde casa|I work from home||trabajo|A2
+Salgo del trabajo a las seis|I leave work at six||trabajo|A2
+Mi jefe está en reunión|My boss is in a meeting||trabajo|A2
+Tengo mucho trabajo|I have a lot of work||trabajo|A2
+Estoy buscando trabajo|I'm looking for a job||trabajo|A2
+Mañana tengo examen|I have an exam tomorrow||educacion|A2
+Estudio medicina|I study medicine||educacion|A2
+No entendí la tarea|I didn't understand the homework||educacion|A2
+Tengo clase a las ocho|I have class at eight||educacion|A2
+Me duele la cabeza|My head hurts||salud|A2
+Me duele el estómago|My stomach hurts||salud|A2
+Tengo fiebre|I have a fever||salud|A2
+Tengo tos|I have a cough||salud|A2
+Estoy resfriado|I have a cold (said by a man)|Estoy resfriada|salud|A2
+Necesito un médico|I need a doctor||salud|A2
+Tengo cita con el doctor|I have an appointment with the doctor||salud|A2
+¿Dónde queda la farmacia?|Where is the pharmacy?||salud|A2
+Me siento mal|I feel bad||salud|A2
+Me siento mejor|I feel better||salud|A2
+No he dormido bien|I haven't slept well||salud|B1
+Soy alérgico a la penicilina|I'm allergic to penicillin (said by a man)|Soy alérgica a la penicilina|salud|B1
+Tome una pastilla cada ocho horas|Take one pill every eight hours||salud|B1
+Tengo que descansar|I need to rest||salud|A2

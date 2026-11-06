@@ -1,0 +1,3432 @@
+[
+ {
+  "q": "Mi mamá quiere que yo ___ (volver) temprano hoy.",
+  "inf": "volver",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "vuelva",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "My mom wants me to come back early today.",
+  "band": "B1"
+ },
+ {
+  "q": "Camilo, necesito que tú ___ (llamar) a tu abuela esta noche.",
+  "inf": "llamar",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "llames",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "Camilo, I need you to call your grandmother tonight.",
+  "band": "B1"
+ },
+ {
+  "q": "La profesora pide que Valentina ___ (leer) el texto en voz alta.",
+  "inf": "leer",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "lea",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "The teacher asks Valentina to read the text out loud.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi jefe prefiere que nosotros ___ (trabajar) desde la casa los viernes.",
+  "inf": "trabajar",
+  "tense": "presubj",
+  "person": "nosotros",
+  "answer": "trabajemos",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "My boss prefers that we work from home on Fridays.",
+  "band": "B1"
+ },
+ {
+  "q": "Los doctores recomiendan que los niños ___ (dormir) nueve horas.",
+  "inf": "dormir",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "duerman",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "The doctors recommend that children sleep nine hours.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi esposa me pide que ___ (comprar) leche y huevos.",
+  "inf": "comprar",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "compre",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "My wife asks me to buy milk and eggs.",
+  "band": "B1"
+ },
+ {
+  "q": "Te ruego que ___ (decir) la verdad, Andrés.",
+  "inf": "decir",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "digas",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "I beg you to tell the truth, Andrés.",
+  "band": "B2"
+ },
+ {
+  "q": "La profesora no permite que los estudiantes ___ (usar) el celular.",
+  "inf": "usar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "usen",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "The teacher does not allow students to use their phones.",
+  "band": "B1"
+ },
+ {
+  "q": "Mis papás insisten en que nosotros ___ (ir) a la fiesta del domingo.",
+  "inf": "ir",
+  "tense": "presubj",
+  "person": "nosotros",
+  "answer": "vayamos",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "My parents insist that we go to Sunday's party.",
+  "band": "B2"
+ },
+ {
+  "q": "El gerente exige que todos los empleados ___ (firmar) el contrato hoy.",
+  "inf": "firmar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "firmen",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "The manager demands that all employees sign the contract today.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi hermana quiere que yo le ___ (prestar) mi carro.",
+  "inf": "prestar",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "preste",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "My sister wants me to lend her my car.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi papá no deja que mi hermano ___ (manejar) de noche.",
+  "inf": "manejar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "maneje",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "My dad does not let my brother drive at night.",
+  "band": "B1"
+ },
+ {
+  "q": "Sugiero que nosotros ___ (salir) más temprano para evitar el tráfico.",
+  "inf": "salir",
+  "tense": "presubj",
+  "person": "nosotros",
+  "answer": "salgamos",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "I suggest we leave earlier to avoid the traffic.",
+  "band": "B2"
+ },
+ {
+  "q": "Quiero que mis hijos ___ (aprender) inglés desde pequeños.",
+  "inf": "aprender",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "aprendan",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "I want my children to learn English from a young age.",
+  "band": "B1"
+ },
+ {
+  "q": "Necesito que alguien me ___ (ayudar) con la mudanza.",
+  "inf": "ayudar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "ayude",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "I need someone to help me with the move.",
+  "band": "B1"
+ },
+ {
+  "q": "El doctor te aconseja que ___ (dejar) el cigarrillo ya mismo.",
+  "inf": "dejar",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "dejes",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "The doctor advises you to quit smoking right away.",
+  "band": "B2"
+ },
+ {
+  "q": "La abuela quiere que Pedro ___ (venir) a almorzar el domingo.",
+  "inf": "venir",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "venga",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "Grandma wants Pedro to come for lunch on Sunday.",
+  "band": "B1"
+ },
+ {
+  "q": "Les prohíbo a ustedes que ___ (tocar) mis cosas.",
+  "inf": "tocar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "toquen",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "I forbid you to touch my things.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi profesor quiere que yo ___ (escribir) un ensayo corto.",
+  "inf": "escribir",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "escriba",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "My teacher wants me to write a short essay.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi amor, quiero que tú ___ (ser) muy feliz.",
+  "inf": "ser",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "seas",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "My love, I want you to be very happy.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi jefe pide que Laura ___ (tener) listo el informe mañana.",
+  "inf": "tener",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "tenga",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "My boss asks that Laura have the report ready tomorrow.",
+  "band": "B1"
+ },
+ {
+  "q": "Queremos que ustedes ___ (conocer) a nuestra familia.",
+  "inf": "conocer",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "conozcan",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "We want you to meet our family.",
+  "band": "B1"
+ },
+ {
+  "q": "Prefiero que el mesero nos ___ (traer) la cuenta ahora.",
+  "inf": "traer",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "traiga",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "I prefer that the waiter bring us the bill now.",
+  "band": "B1"
+ },
+ {
+  "q": "Juan, necesito que me ___ (dar) tu dirección.",
+  "inf": "dar",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "des",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "Juan, I need you to give me your address.",
+  "band": "B1"
+ },
+ {
+  "q": "El entrenador manda que los jugadores ___ (correr) cinco vueltas.",
+  "inf": "correr",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "corran",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "The coach orders the players to run five laps.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi mamá me manda que ___ (hacer) la tarea primero.",
+  "inf": "hacer",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "haga",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "My mom tells me to do my homework first.",
+  "band": "B1"
+ },
+ {
+  "q": "Sebastián, te pido que ___ (esperar) un momento.",
+  "inf": "esperar",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "esperes",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "Sebastián, I ask you to wait a moment.",
+  "band": "B2"
+ },
+ {
+  "q": "La maestra nos pide que ___ (hablar) en inglés durante la clase.",
+  "inf": "hablar",
+  "tense": "presubj",
+  "person": "nosotros",
+  "answer": "hablemos",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "The teacher asks us to speak English during class.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi suegra insiste en que su hijo ___ (comer) más verduras.",
+  "inf": "comer",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "coma",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "My mother-in-law insists that her son eat more vegetables.",
+  "band": "B2"
+ },
+ {
+  "q": "Mis amigos quieren que yo ___ (ir) con ellos a Cartagena.",
+  "inf": "ir",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "vaya",
+  "use": "influencia: querer, pedir, necesitar que + subjuntivo",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Un verbo de influencia (querer, pedir, exigir) con otro sujeto pide subjuntivo.",
+  "why_en": "A verb of influence with a new subject takes the subjunctive.",
+  "en": "My friends want me to go to Cartagena with them.",
+  "band": "B1"
+ },
+ {
+  "q": "Le pido a Dios que Ana ___ (llegar) bien a Medellín esta noche.",
+  "inf": "llegar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "llegue",
+  "use": "esperar que + presente de subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Le pido a Dios que\": un deseo sobre otra persona pide presente de subjuntivo.",
+  "why_en": "\"Le pido a Dios que\": a wish about someone else takes the present subjunctive.",
+  "en": "I pray that Ana gets to Medellín safely tonight.",
+  "band": "B1"
+ },
+ {
+  "q": "Espero que ustedes ___ (disfrutar) mucho el viaje.",
+  "inf": "disfrutar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "disfruten",
+  "use": "esperar que + presente de subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Esperar que algo pase pide presente de subjuntivo.",
+  "why_en": "Esperar que something happens takes the present subjunctive.",
+  "en": "I hope you enjoy the trip a lot.",
+  "band": "B1"
+ },
+ {
+  "q": "Esperamos que el clima ___ (mejorar) antes del sábado.",
+  "inf": "mejorar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "mejore",
+  "use": "esperar que + presente de subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Esperar que algo pase pide presente de subjuntivo.",
+  "why_en": "Esperar que something happens takes the present subjunctive.",
+  "en": "We hope the weather improves before Saturday.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi mamá espera que yo ___ (conseguir) trabajo pronto.",
+  "inf": "conseguir",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "consiga",
+  "use": "esperar que + presente de subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Esperar que algo pase pide presente de subjuntivo.",
+  "why_en": "Esperar que something happens takes the present subjunctive.",
+  "en": "My mom hopes I find a job soon.",
+  "band": "B1"
+ },
+ {
+  "q": "Espero que tú ___ (poder) venir a mi cumpleaños.",
+  "inf": "poder",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "puedas",
+  "use": "esperar que + presente de subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Esperar que algo pase pide presente de subjuntivo.",
+  "why_en": "Esperar que something happens takes the present subjunctive.",
+  "en": "I hope you can come to my birthday.",
+  "band": "B1"
+ },
+ {
+  "q": "Los vecinos esperan que el ruido ___ (parar) pronto.",
+  "inf": "parar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "pare",
+  "use": "esperar que + presente de subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Esperar que algo pase pide presente de subjuntivo.",
+  "why_en": "Esperar que something happens takes the present subjunctive.",
+  "en": "The neighbors hope the noise stops soon.",
+  "band": "B1"
+ },
+ {
+  "q": "Espero que nosotros ___ (encontrar) un apartamento bonito este mes.",
+  "inf": "encontrar",
+  "tense": "presubj",
+  "person": "nosotros",
+  "answer": "encontremos",
+  "use": "esperar que + presente de subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Esperar que algo pase pide presente de subjuntivo.",
+  "why_en": "Esperar que something happens takes the present subjunctive.",
+  "en": "I hope we find a nice apartment this month.",
+  "band": "B2"
+ },
+ {
+  "q": "Ojalá que mañana ___ (hacer) sol para la caminata.",
+  "inf": "hacer",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "haga",
+  "use": "ojalá + presente de subjuntivo: deseo posible",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Ojalá con un deseo que todavía puede cumplirse pide presente de subjuntivo.",
+  "why_en": "Ojalá with a wish that can still come true takes the present subjunctive.",
+  "en": "I hope it's sunny tomorrow for the hike.",
+  "band": "B1"
+ },
+ {
+  "q": "Ojalá que mañana no ___ (llover) durante el partido.",
+  "inf": "llover",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "llueva",
+  "use": "ojalá + presente de subjuntivo: deseo posible",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Ojalá con un deseo posible: presente de subjuntivo; también vale el imperfecto.",
+  "why_en": "Ojalá with a possible wish: present subjunctive; the imperfect subjunctive also works.",
+  "en": "I hope it doesn't rain during the match tomorrow.",
+  "band": "B1",
+  "also": [
+   "lloviera"
+  ]
+ },
+ {
+  "q": "Ojalá tú ___ (ganar) el concurso la próxima semana.",
+  "inf": "ganar",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "ganes",
+  "use": "ojalá + presente de subjuntivo: deseo posible",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Ojalá con un deseo posible: presente de subjuntivo; también vale el imperfecto.",
+  "why_en": "Ojalá with a possible wish: present subjunctive; the imperfect subjunctive also works.",
+  "en": "I hope you win the contest next week.",
+  "band": "B1",
+  "also": [
+   "ganaras"
+  ]
+ },
+ {
+  "q": "Ojalá el consulado nos ___ (dar) la visa antes de diciembre.",
+  "inf": "dar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "dé",
+  "use": "ojalá + presente de subjuntivo: deseo posible",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Ojalá con un deseo posible: presente de subjuntivo; también vale el imperfecto.",
+  "why_en": "Ojalá with a possible wish: present subjunctive; the imperfect subjunctive also works.",
+  "en": "I hope the consulate gives us the visa before December.",
+  "band": "B1",
+  "also": [
+   "diera"
+  ]
+ },
+ {
+  "q": "Ojalá que mis papás ___ (venir) a mi graduación.",
+  "inf": "venir",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "vengan",
+  "use": "ojalá + presente de subjuntivo: deseo posible",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Ojalá con un deseo posible: presente de subjuntivo; también vale el imperfecto.",
+  "why_en": "Ojalá with a possible wish: present subjunctive; the imperfect subjunctive also works.",
+  "en": "I hope my parents come to my graduation.",
+  "band": "B1",
+  "also": [
+   "vinieran"
+  ]
+ },
+ {
+  "q": "Ojalá yo ___ (pasar) el examen de mañana.",
+  "inf": "pasar",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "pase",
+  "use": "ojalá + presente de subjuntivo: deseo posible",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Ojalá con un deseo que todavía puede cumplirse pide presente de subjuntivo.",
+  "why_en": "Ojalá with a wish that can still come true takes the present subjunctive.",
+  "en": "I hope I pass tomorrow's exam.",
+  "band": "B1"
+ },
+ {
+  "q": "Ojalá que nosotros ___ (llegar) a tiempo al aeropuerto.",
+  "inf": "llegar",
+  "tense": "presubj",
+  "person": "nosotros",
+  "answer": "lleguemos",
+  "use": "ojalá + presente de subjuntivo: deseo posible",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Ojalá con un deseo posible: presente de subjuntivo; también vale el imperfecto.",
+  "why_en": "Ojalá with a possible wish: present subjunctive; the imperfect subjunctive also works.",
+  "en": "I hope we get to the airport on time.",
+  "band": "B1",
+  "also": [
+   "llegáramos"
+  ]
+ },
+ {
+  "q": "Ojalá que no ___ (haber) tráfico esta tarde.",
+  "inf": "haber",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "haya",
+  "use": "ojalá + presente de subjuntivo: deseo posible",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Ojalá con un deseo posible: presente de subjuntivo; también vale el imperfecto.",
+  "why_en": "Ojalá with a possible wish: present subjunctive; the imperfect subjunctive also works.",
+  "en": "I hope there's no traffic this afternoon.",
+  "band": "B1",
+  "also": [
+   "hubiera"
+  ]
+ },
+ {
+  "q": "Me alegra mucho que tú ___ (estar) mejor, Camila.",
+  "inf": "estar",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "estés",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Una emoción ante lo que hace otro pide subjuntivo.",
+  "why_en": "An emotion about what someone else does takes the subjunctive.",
+  "en": "I'm so glad you're better, Camila.",
+  "band": "B1"
+ },
+ {
+  "q": "Me molesta que los vecinos ___ (poner) música tan fuerte.",
+  "inf": "poner",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "pongan",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Una emoción ante lo que hace otro pide subjuntivo.",
+  "why_en": "An emotion about what someone else does takes the subjunctive.",
+  "en": "It bothers me that the neighbors play music so loud.",
+  "band": "B1"
+ },
+ {
+  "q": "Lamento que tu papá ___ (estar) tan enfermo.",
+  "inf": "estar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "esté",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Una emoción ante lo que hace otro pide subjuntivo.",
+  "why_en": "An emotion about what someone else does takes the subjunctive.",
+  "en": "I'm sorry your dad is so sick.",
+  "band": "B1"
+ },
+ {
+  "q": "Me sorprende que Daniela no ___ (saber) nada del asunto.",
+  "inf": "saber",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "sepa",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Una emoción ante lo que hace otro pide subjuntivo.",
+  "why_en": "An emotion about what someone else does takes the subjunctive.",
+  "en": "It surprises me that Daniela knows nothing about the matter.",
+  "band": "B2"
+ },
+ {
+  "q": "Temo que mi jefe se ___ (molestar) con nosotros.",
+  "inf": "molestar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "moleste",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Una emoción ante lo que hace otro pide subjuntivo.",
+  "why_en": "An emotion about what someone else does takes the subjunctive.",
+  "en": "I'm afraid my boss will get annoyed with us.",
+  "band": "B2"
+ },
+ {
+  "q": "Me preocupa que ustedes ___ (manejar) tan rápido de noche.",
+  "inf": "manejar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "manejen",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Una emoción ante lo que hace otro pide subjuntivo.",
+  "why_en": "An emotion about what someone else does takes the subjunctive.",
+  "en": "It worries me that you drive so fast at night.",
+  "band": "B1"
+ },
+ {
+  "q": "Me encanta que tú ___ (cantar) en las reuniones familiares.",
+  "inf": "cantar",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "cantes",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Una emoción ante lo que hace otro pide subjuntivo.",
+  "why_en": "An emotion about what someone else does takes the subjunctive.",
+  "en": "I love that you sing at family gatherings.",
+  "band": "B1"
+ },
+ {
+  "q": "Estoy feliz de que ustedes ___ (venir) a vivir cerca.",
+  "inf": "venir",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "vengan",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Una emoción ante lo que hace otro pide subjuntivo.",
+  "why_en": "An emotion about what someone else does takes the subjunctive.",
+  "en": "I'm happy that you're coming to live nearby.",
+  "band": "B1"
+ },
+ {
+  "q": "Me da pena que Sara no ___ (querer) venir con nosotros.",
+  "inf": "querer",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "quiera",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Una emoción ante lo que hace otro pide subjuntivo.",
+  "why_en": "An emotion about what someone else does takes the subjunctive.",
+  "en": "It saddens me that Sara doesn't want to come with us.",
+  "band": "B2"
+ },
+ {
+  "q": "Tengo miedo de que mi perro se ___ (perder) en el parque.",
+  "inf": "perder",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "pierda",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Una emoción ante lo que hace otro pide subjuntivo.",
+  "why_en": "An emotion about what someone else does takes the subjunctive.",
+  "en": "I'm afraid my dog will get lost in the park.",
+  "band": "B2"
+ },
+ {
+  "q": "Me gusta que mis hijos ___ (leer) antes de dormir.",
+  "inf": "leer",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "lean",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Una emoción ante lo que hace otro pide subjuntivo.",
+  "why_en": "An emotion about what someone else does takes the subjunctive.",
+  "en": "I like that my children read before going to sleep.",
+  "band": "B1"
+ },
+ {
+  "q": "Qué bueno que ustedes ___ (poder) venir mañana.",
+  "inf": "poder",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "puedan",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Una emoción ante lo que hace otro pide subjuntivo.",
+  "why_en": "An emotion about what someone else does takes the subjunctive.",
+  "en": "How nice that you can come tomorrow.",
+  "band": "B1"
+ },
+ {
+  "q": "Me da rabia que la gente ___ (tirar) basura en la calle.",
+  "inf": "tirar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "tire",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Una emoción ante lo que hace otro pide subjuntivo.",
+  "why_en": "An emotion about what someone else does takes the subjunctive.",
+  "en": "It makes me angry that people throw trash in the street.",
+  "band": "B2"
+ },
+ {
+  "q": "Nos alegra que Pedro ___ (trabajar) con nosotros ahora.",
+  "inf": "trabajar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "trabaje",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Una emoción ante lo que hace otro pide subjuntivo.",
+  "why_en": "An emotion about what someone else does takes the subjunctive.",
+  "en": "We're glad that Pedro works with us now.",
+  "band": "B1"
+ },
+ {
+  "q": "Me duele que ustedes ___ (gritar) tanto en la casa.",
+  "inf": "gritar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "griten",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Una emoción ante lo que hace otro pide subjuntivo.",
+  "why_en": "An emotion about what someone else does takes the subjunctive.",
+  "en": "It hurts me that you shout so much in the house.",
+  "band": "B2"
+ },
+ {
+  "q": "Me emociona que mi hija ___ (empezar) la universidad este año.",
+  "inf": "empezar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "empiece",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Una emoción ante lo que hace otro pide subjuntivo.",
+  "why_en": "An emotion about what someone else does takes the subjunctive.",
+  "en": "It thrills me that my daughter starts university this year.",
+  "band": "B1"
+ },
+ {
+  "q": "Me asusta que mi papá ___ (subir) al techo para arreglar la antena.",
+  "inf": "subir",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "suba",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Una emoción ante lo que hace otro pide subjuntivo.",
+  "why_en": "An emotion about what someone else does takes the subjunctive.",
+  "en": "It scares me that my dad climbs onto the roof to fix the antenna.",
+  "band": "B2"
+ },
+ {
+  "q": "Me extraña que Luis no ___ (responder) mis mensajes.",
+  "inf": "responder",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "responda",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Una emoción ante lo que hace otro pide subjuntivo.",
+  "why_en": "An emotion about what someone else does takes the subjunctive.",
+  "en": "It strikes me as odd that Luis doesn't answer my messages.",
+  "band": "B2"
+ },
+ {
+  "q": "Qué pena que yo no ___ (poder) ir a tu boda el próximo sábado.",
+  "inf": "poder",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "pueda",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "\"Qué pena que\" expresa una emoción y pide subjuntivo.",
+  "why_en": "\"Qué pena que\" expresses a feeling and takes the subjunctive.",
+  "en": "What a shame I can't go to your wedding next Saturday.",
+  "band": "B1"
+ },
+ {
+  "q": "Me da gusto que nosotros ___ (vivir) tan cerca ahora.",
+  "inf": "vivir",
+  "tense": "presubj",
+  "person": "nosotros",
+  "answer": "vivamos",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Una emoción ante lo que hace otro pide subjuntivo.",
+  "why_en": "An emotion about what someone else does takes the subjunctive.",
+  "en": "I'm glad that we live so close now.",
+  "band": "B1"
+ },
+ {
+  "q": "Me molesta que mi jefe ___ (cambiar) el horario sin avisar.",
+  "inf": "cambiar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "cambie",
+  "use": "emoción ante lo que hace otro: me alegra, me molesta, temo que",
+  "confuse": [
+   "presente",
+   "impsubj",
+   "futuro"
+  ],
+  "why_es": "Una emoción ante lo que hace otro pide subjuntivo.",
+  "why_en": "An emotion about what someone else does takes the subjunctive.",
+  "en": "It bothers me that my boss changes the schedule without notice.",
+  "band": "B1"
+ },
+ {
+  "q": "No creo que Mariana ___ (tener) tiempo para ayudarnos hoy.",
+  "inf": "tener",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "tenga",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "I don't think Mariana has time to help us today.",
+  "band": "B1"
+ },
+ {
+  "q": "Dudo que el bus ___ (pasar) antes de las seis.",
+  "inf": "pasar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "pase",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "I doubt the bus will come by before six.",
+  "band": "B1"
+ },
+ {
+  "q": "No es verdad que yo ___ (ser) el culpable de todo esto.",
+  "inf": "ser",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "sea",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "It's not true that I'm the one to blame for all this.",
+  "band": "B1"
+ },
+ {
+  "q": "No pienso que ustedes ___ (necesitar) tanta ayuda.",
+  "inf": "necesitar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "necesiten",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "I don't think you need that much help.",
+  "band": "B1"
+ },
+ {
+  "q": "Niego que nosotros ___ (saber) algo del robo.",
+  "inf": "saber",
+  "tense": "presubj",
+  "person": "nosotros",
+  "answer": "sepamos",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "I deny that we know anything about the robbery.",
+  "band": "B2"
+ },
+ {
+  "q": "No creo que Tomás ___ (vivir) solo en esa casa.",
+  "inf": "vivir",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "viva",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "I don't think Tomás lives alone in that house.",
+  "band": "B1"
+ },
+ {
+  "q": "No parece que la sopa ___ (estar) lista todavía.",
+  "inf": "estar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "esté",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "It doesn't look like the soup is ready yet.",
+  "band": "B2"
+ },
+ {
+  "q": "No estoy segura de que tú ___ (entender) la pregunta.",
+  "inf": "entender",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "entiendas",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "I'm not sure you understand the question.",
+  "band": "B2"
+ },
+ {
+  "q": "Es imposible que tú ___ (ver) algo con tan poca luz.",
+  "inf": "ver",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "veas",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "It's impossible for you to see anything in such little light.",
+  "band": "B1"
+ },
+ {
+  "q": "No digo que el examen ___ (ser) fácil, pero se puede aprobar.",
+  "inf": "ser",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "sea",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "I'm not saying the exam is easy, but you can pass it.",
+  "band": "B2"
+ },
+ {
+  "q": "Dudo mucho que mis primos ___ (querer) vender la finca.",
+  "inf": "querer",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "quieran",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "I really doubt my cousins want to sell the farm.",
+  "band": "B1"
+ },
+ {
+  "q": "No creo que esta camisa ___ (costar) más de cincuenta mil pesos.",
+  "inf": "costar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "cueste",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "I don't think this shirt costs more than fifty thousand pesos.",
+  "band": "B1"
+ },
+ {
+  "q": "No es verdad que los precios ___ (bajar) este mes.",
+  "inf": "bajar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "bajen",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "It's not true that prices are going down this month.",
+  "band": "B1"
+ },
+ {
+  "q": "No creo que yo ___ (llegar) antes de las diez.",
+  "inf": "llegar",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "llegue",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "I don't think I'll arrive before ten.",
+  "band": "B1"
+ },
+ {
+  "q": "Dudo que Santiago ___ (recordar) mi dirección después de tanto tiempo.",
+  "inf": "recordar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "recuerde",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "I doubt Santiago remembers my address after so long.",
+  "band": "B2"
+ },
+ {
+  "q": "No creo que la plata ___ (bastar) para todo el viaje.",
+  "inf": "bastar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "baste",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "I don't think the money will be enough for the whole trip.",
+  "band": "B2"
+ },
+ {
+  "q": "No creo que Laura ___ (vender) su carro tan barato.",
+  "inf": "vender",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "venda",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"No creo que\" expresa duda y pide subjuntivo.",
+  "why_en": "\"No creo que\" expresses doubt and takes the subjunctive.",
+  "en": "I don't think Laura will sell her car so cheaply.",
+  "band": "B2",
+  "also": [
+   "vendiera"
+  ]
+ },
+ {
+  "q": "No es que yo no ___ (querer) ayudarte, es que no puedo.",
+  "inf": "querer",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "quiera",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "It's not that I don't want to help you, it's that I can't.",
+  "band": "B2"
+ },
+ {
+  "q": "No creo que el partido ___ (empezar) a las ocho.",
+  "inf": "empezar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "empiece",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "I don't think the match starts at eight.",
+  "band": "B1"
+ },
+ {
+  "q": "No me parece que ellos ___ (merecer) ese premio.",
+  "inf": "merecer",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "merezcan",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "I don't think they deserve that prize.",
+  "band": "B2"
+ },
+ {
+  "q": "Dudo que el médico ___ (abrir) el consultorio hoy.",
+  "inf": "abrir",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "abra",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "I doubt the doctor opens the office today.",
+  "band": "B1"
+ },
+ {
+  "q": "No creo que los niños ___ (aceptar) esa propuesta.",
+  "inf": "aceptar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "acepten",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "I don't think the kids will accept that proposal.",
+  "band": "B1"
+ },
+ {
+  "q": "No es seguro que Pablo ___ (ganar) las elecciones del barrio.",
+  "inf": "ganar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "gane",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Dudar o negar algo pide subjuntivo; afirmarlo pide indicativo.",
+  "why_en": "Doubting or denying takes the subjunctive; affirming takes the indicative.",
+  "en": "It's not certain that Pablo will win the neighborhood elections.",
+  "band": "B2"
+ },
+ {
+  "q": "Creo que Ana viene, pero no creo que ___ (traer) a su novio.",
+  "inf": "traer",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "traiga",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Creo que pide indicativo; no creo que pide subjuntivo.",
+  "why_en": "Creo que takes the indicative; no creo que takes the subjunctive.",
+  "en": "I think Ana is coming, but I don't think she'll bring her boyfriend.",
+  "band": "B2"
+ },
+ {
+  "q": "Estoy seguro de que viene, pero dudo que ___ (salir) temprano.",
+  "inf": "salir",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "salga",
+  "use": "duda y negación: no creo que, dudo que, no es verdad que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Estoy seguro de que va con indicativo; dudo que va con subjuntivo.",
+  "why_en": "Estoy seguro de que takes the indicative; dudo que takes the subjunctive.",
+  "en": "I'm sure he's coming, but I doubt he'll leave early.",
+  "band": "B2"
+ },
+ {
+  "q": "Es importante que tú ___ (tomar) agua durante el partido.",
+  "inf": "tomar",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "tomes",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "It's important that you drink water during the match.",
+  "band": "B1"
+ },
+ {
+  "q": "Es mejor que nosotros nos ___ (quedar) aquí hasta que pare la lluvia.",
+  "inf": "quedar",
+  "tense": "presubj",
+  "person": "nosotros",
+  "answer": "quedemos",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "It's better that we stay here until the rain stops.",
+  "band": "B1"
+ },
+ {
+  "q": "Es posible que mañana ___ (llover) en Bogotá.",
+  "inf": "llover",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "llueva",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "It's possible that it will rain in Bogotá tomorrow.",
+  "band": "B1"
+ },
+ {
+  "q": "Es necesario que usted ___ (presentar) su cédula en la entrada.",
+  "inf": "presentar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "presente",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "It's necessary that you show your ID at the entrance.",
+  "band": "B1"
+ },
+ {
+  "q": "Es probable que Camilo ___ (venir) con su novia.",
+  "inf": "venir",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "venga",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "It's likely that Camilo will come with his girlfriend.",
+  "band": "B1"
+ },
+ {
+  "q": "Conviene que ustedes ___ (llevar) paraguas hoy.",
+  "inf": "llevar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "lleven",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "It's advisable that you bring umbrellas today.",
+  "band": "B2"
+ },
+ {
+  "q": "Es increíble que con veinte años tú ya ___ (hablar) cinco idiomas.",
+  "inf": "hablar",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "hables",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "It's incredible that at twenty you already speak five languages.",
+  "band": "B1"
+ },
+ {
+  "q": "Es una lástima que mi tío, que vive lejos, no ___ (conocer) a mi hijo.",
+  "inf": "conocer",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "conozca",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "It's a shame that my uncle, who lives far away, doesn't know my son.",
+  "band": "B2"
+ },
+ {
+  "q": "Hace falta que alguien ___ (cerrar) las ventanas antes de salir.",
+  "inf": "cerrar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "cierre",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "Someone needs to close the windows before leaving.",
+  "band": "B2"
+ },
+ {
+  "q": "Basta con que usted ___ (firmar) aquí y listo.",
+  "inf": "firmar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "firme",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "It's enough for you to sign here and that's it.",
+  "band": "B2"
+ },
+ {
+  "q": "Es raro que mi gato no ___ (comer) hoy.",
+  "inf": "comer",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "coma",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "It's strange that my cat isn't eating today.",
+  "band": "B1"
+ },
+ {
+  "q": "Es esencial que los pacientes ___ (tomar) la pastilla cada ocho horas.",
+  "inf": "tomar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "tomen",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "It's essential that patients take the pill every eight hours.",
+  "band": "B2"
+ },
+ {
+  "q": "Es urgente que el alcalde ___ (arreglar) esta calle.",
+  "inf": "arreglar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "arregle",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "It's urgent that the mayor fix this street.",
+  "band": "B2"
+ },
+ {
+  "q": "Es mejor que yo ___ (pagar) la cuenta; tú pagaste la otra vez.",
+  "inf": "pagar",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "pague",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "It's better that I pay the bill; you paid last time.",
+  "band": "B1"
+ },
+ {
+  "q": "No es necesario que ustedes ___ (traer) nada; yo cocino.",
+  "inf": "traer",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "traigan",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "You don't need to bring anything; I'll cook.",
+  "band": "B1"
+ },
+ {
+  "q": "Es fundamental que los estudiantes ___ (entender) el problema antes de resolverlo.",
+  "inf": "entender",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "entiendan",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "It's essential that students understand the problem before solving it.",
+  "band": "B2"
+ },
+ {
+  "q": "Es bueno que los niños ___ (jugar) afuera todos los días.",
+  "inf": "jugar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "jueguen",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "It's good that kids play outside every day.",
+  "band": "B1"
+ },
+ {
+  "q": "Es difícil que Valentina ___ (cambiar) de opinión.",
+  "inf": "cambiar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "cambie",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "It's unlikely that Valentina will change her mind.",
+  "band": "B2"
+ },
+ {
+  "q": "Es normal que tú ___ (sentir) miedo antes de la entrevista.",
+  "inf": "sentir",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "sientas",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "It's normal for you to feel scared before the interview.",
+  "band": "B1"
+ },
+ {
+  "q": "Puede que mis padres ___ (vender) la casa el año entrante.",
+  "inf": "vender",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "vendan",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "My parents may sell the house next year.",
+  "band": "B2"
+ },
+ {
+  "q": "Es una pena que la tienda ___ (cerrar) tan temprano.",
+  "inf": "cerrar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "cierre",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "It's a pity that the store closes so early.",
+  "band": "B1"
+ },
+ {
+  "q": "Es imprescindible que usted ___ (traducir) este contrato antes del lunes.",
+  "inf": "traducir",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "traduzca",
+  "use": "valoración impersonal: es importante que, es mejor que, es posible que",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Una valoración impersonal (es importante que...) pide subjuntivo.",
+  "why_en": "An impersonal evaluation (it is important that...) takes the subjunctive.",
+  "en": "It's essential that you translate this contract before Monday.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando yo ___ (salir) del trabajo, te llamo.",
+  "inf": "salir",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "salga",
+  "use": "cuando + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Cuando con sentido de futuro pide subjuntivo, no futuro.",
+  "why_en": "Cuando with future meaning takes the subjunctive, not the future.",
+  "en": "When I get off work, I'll call you.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando tú ___ (tener) hijos, vas a entender a tu mamá.",
+  "inf": "tener",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "tengas",
+  "use": "cuando + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Cuando con sentido de futuro pide subjuntivo, no futuro.",
+  "why_en": "Cuando with future meaning takes the subjunctive, not the future.",
+  "en": "When you have kids, you'll understand your mom.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando Ana ___ (terminar) la tarea, podrá salir a jugar.",
+  "inf": "terminar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "termine",
+  "use": "cuando + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Cuando con sentido de futuro pide subjuntivo, no futuro.",
+  "why_en": "Cuando with future meaning takes the subjunctive, not the future.",
+  "en": "When Ana finishes her homework, she can go out to play.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando ustedes ___ (visitar) Cartagena, no se pierdan el Castillo.",
+  "inf": "visitar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "visiten",
+  "use": "cuando + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Cuando con sentido de futuro pide subjuntivo, no futuro.",
+  "why_en": "Cuando with future meaning takes the subjunctive, not the future.",
+  "en": "When you visit Cartagena, don't miss the Castle.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando nosotros ___ (ganar) la lotería, compraremos una finca.",
+  "inf": "ganar",
+  "tense": "presubj",
+  "person": "nosotros",
+  "answer": "ganemos",
+  "use": "cuando + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Cuando con sentido de futuro pide subjuntivo, no futuro.",
+  "why_en": "Cuando with future meaning takes the subjunctive, not the future.",
+  "en": "When we win the lottery, we'll buy a farm.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando mi hermano ___ (cumplir) dieciocho años, sacará la licencia.",
+  "inf": "cumplir",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "cumpla",
+  "use": "cuando + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Cuando con sentido de futuro pide subjuntivo, no futuro.",
+  "why_en": "Cuando with future meaning takes the subjunctive, not the future.",
+  "en": "When my brother turns eighteen, he'll get his license.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando tú ___ (ver) a tu mamá, salúdala de mi parte.",
+  "inf": "ver",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "veas",
+  "use": "cuando + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Cuando con sentido de futuro pide subjuntivo, no futuro.",
+  "why_en": "Cuando with future meaning takes the subjunctive, not the future.",
+  "en": "When you see your mom, say hi from me.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando mi jefe ___ (volver) de viaje, hablaremos del aumento.",
+  "inf": "volver",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "vuelva",
+  "use": "cuando + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Cuando con sentido de futuro pide subjuntivo, no futuro.",
+  "why_en": "Cuando with future meaning takes the subjunctive, not the future.",
+  "en": "When my boss gets back from his trip, we'll talk about the raise.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando yo ___ (ahorrar) suficiente plata, me voy de viaje.",
+  "inf": "ahorrar",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "ahorre",
+  "use": "cuando + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Cuando con sentido de futuro pide subjuntivo, no futuro.",
+  "why_en": "Cuando with future meaning takes the subjunctive, not the future.",
+  "en": "When I save enough money, I'm going on a trip.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando tú ___ (abrir) el paquete, vas a ver una sorpresa.",
+  "inf": "abrir",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "abras",
+  "use": "cuando + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Cuando con sentido de futuro pide subjuntivo, no futuro.",
+  "why_en": "Cuando with future meaning takes the subjunctive, not the future.",
+  "en": "When you open the package, you'll see a surprise.",
+  "band": "B1"
+ },
+ {
+  "q": "En cuanto yo ___ (saber) algo, te aviso.",
+  "inf": "saber",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "sepa",
+  "use": "en cuanto / tan pronto como + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "En cuanto y tan pronto como sobre el futuro piden subjuntivo.",
+  "why_en": "En cuanto and tan pronto como about the future take the subjunctive.",
+  "en": "As soon as I know something, I'll let you know.",
+  "band": "B1"
+ },
+ {
+  "q": "En cuanto la lluvia ___ (parar), salimos a caminar.",
+  "inf": "parar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "pare",
+  "use": "en cuanto / tan pronto como + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "En cuanto y tan pronto como sobre el futuro piden subjuntivo.",
+  "why_en": "En cuanto and tan pronto como about the future take the subjunctive.",
+  "en": "As soon as the rain stops, we'll go out for a walk.",
+  "band": "B1"
+ },
+ {
+  "q": "Tan pronto como ustedes ___ (recibir) el correo, respóndanme.",
+  "inf": "recibir",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "reciban",
+  "use": "en cuanto / tan pronto como + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "En cuanto y tan pronto como sobre el futuro piden subjuntivo.",
+  "why_en": "En cuanto and tan pronto como about the future take the subjunctive.",
+  "en": "As soon as you get the email, answer me.",
+  "band": "B1"
+ },
+ {
+  "q": "En cuanto el doctor ___ (llamar) a Lucía, ella te cuenta.",
+  "inf": "llamar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "llame",
+  "use": "en cuanto / tan pronto como + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "En cuanto y tan pronto como sobre el futuro piden subjuntivo.",
+  "why_en": "En cuanto and tan pronto como about the future take the subjunctive.",
+  "en": "As soon as the doctor calls Lucía, she'll tell you.",
+  "band": "B1"
+ },
+ {
+  "q": "Apenas yo ___ (conseguir) la visa, compro los pasajes.",
+  "inf": "conseguir",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "consiga",
+  "use": "en cuanto / tan pronto como + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "En cuanto y tan pronto como sobre el futuro piden subjuntivo.",
+  "why_en": "En cuanto and tan pronto como about the future take the subjunctive.",
+  "en": "As soon as I get the visa, I'll buy the tickets.",
+  "band": "B1"
+ },
+ {
+  "q": "Tan pronto como mis padres ___ (vender) la finca, se mudan al pueblo.",
+  "inf": "vender",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "vendan",
+  "use": "en cuanto / tan pronto como + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "En cuanto y tan pronto como sobre el futuro piden subjuntivo.",
+  "why_en": "En cuanto and tan pronto como about the future take the subjunctive.",
+  "en": "As soon as my parents sell the farm, they're moving to town.",
+  "band": "B2"
+ },
+ {
+  "q": "En cuanto el paquete ___ (salir) de la bodega, le avisamos.",
+  "inf": "salir",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "salga",
+  "use": "en cuanto / tan pronto como + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "En cuanto y tan pronto como sobre el futuro piden subjuntivo.",
+  "why_en": "En cuanto and tan pronto como about the future take the subjunctive.",
+  "en": "As soon as the package leaves the warehouse, we'll let you know.",
+  "band": "B1"
+ },
+ {
+  "q": "Tan pronto como Camilo ___ (empezar) a trabajar, ahorrará para la moto.",
+  "inf": "empezar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "empiece",
+  "use": "en cuanto / tan pronto como + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "En cuanto y tan pronto como sobre el futuro piden subjuntivo.",
+  "why_en": "En cuanto and tan pronto como about the future take the subjunctive.",
+  "en": "As soon as Camilo starts working, he'll save for the motorcycle.",
+  "band": "B1"
+ },
+ {
+  "q": "No me voy hasta que tú me ___ (decir) la verdad.",
+  "inf": "decir",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "digas",
+  "use": "hasta que + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Hasta que + acción que aún no ocurre: presente de subjuntivo (digas), no indicativo.",
+  "why_en": "Hasta que + an action not yet done takes the present subjunctive (digas), not the indicative.",
+  "en": "I'm not leaving until you tell me the truth.",
+  "band": "B1"
+ },
+ {
+  "q": "Voy a esperar hasta que mi mamá ___ (contestar) el teléfono.",
+  "inf": "contestar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "conteste",
+  "use": "hasta que + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Hasta que + acción que aún no ocurre: presente de subjuntivo (conteste), no indicativo.",
+  "why_en": "Hasta que + an action not yet done takes the present subjunctive (conteste), not the indicative.",
+  "en": "I'll wait until my mom answers the phone.",
+  "band": "B1"
+ },
+ {
+  "q": "Seguiremos buscando hasta que nosotros ___ (encontrar) las llaves.",
+  "inf": "encontrar",
+  "tense": "presubj",
+  "person": "nosotros",
+  "answer": "encontremos",
+  "use": "hasta que + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Hasta que + acción que aún no ocurre: presente de subjuntivo (encontremos), no indicativo.",
+  "why_en": "Hasta que + an action not yet done takes the present subjunctive (encontremos), not the indicative.",
+  "en": "We'll keep looking until we find them in this house.",
+  "band": "B1"
+ },
+ {
+  "q": "No te levantes hasta que el doctor te lo ___ (permitir).",
+  "inf": "permitir",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "permita",
+  "use": "hasta que + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Hasta que + acción que aún no ocurre: presente de subjuntivo (permita), no indicativo.",
+  "why_en": "Hasta que + an action not yet done takes the present subjunctive (permita), not the indicative.",
+  "en": "Don't get up until the doctor allows it.",
+  "band": "B2"
+ },
+ {
+  "q": "Quédate en la casa hasta que la tormenta ___ (pasar).",
+  "inf": "pasar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "pase",
+  "use": "hasta que + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Hasta que + acción que aún no ocurre: presente de subjuntivo (pase), no indicativo.",
+  "why_en": "Hasta que + an action not yet done takes the present subjunctive (pase), not the indicative.",
+  "en": "Stay in the house until the storm passes.",
+  "band": "B1"
+ },
+ {
+  "q": "Los obreros trabajarán hasta que ellos ___ (terminar) el techo.",
+  "inf": "terminar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "terminen",
+  "use": "hasta que + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Hasta que + acción que aún no ocurre: presente de subjuntivo (terminen), no indicativo.",
+  "why_en": "Hasta que + an action not yet done takes the present subjunctive (terminen), not the indicative.",
+  "en": "The workers will keep going until they finish the roof.",
+  "band": "B1"
+ },
+ {
+  "q": "Después de que tú ___ (comer), lavamos los platos juntos.",
+  "inf": "comer",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "comas",
+  "use": "después de que + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Después de que sobre algo que aún no pasa pide subjuntivo.",
+  "why_en": "Después de que about something that has not happened yet takes the subjunctive.",
+  "en": "After you eat, we'll wash the dishes together.",
+  "band": "B1"
+ },
+ {
+  "q": "Después de que mis hijos ___ (crecer), voy a viajar más.",
+  "inf": "crecer",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "crezcan",
+  "use": "después de que + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Después de que sobre algo que aún no pasa pide subjuntivo.",
+  "why_en": "Después de que about something that has not happened yet takes the subjunctive.",
+  "en": "After my kids grow up, I'm going to travel more.",
+  "band": "B2"
+ },
+ {
+  "q": "Después de que yo ___ (pagar) el arriendo, solo me quedarán veinte mil pesos.",
+  "inf": "pagar",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "pague",
+  "use": "después de que + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Después de que sobre algo que aún no pasa pide subjuntivo.",
+  "why_en": "Después de que about something that has not happened yet takes the subjunctive.",
+  "en": "After I pay the rent, I'll only have twenty thousand pesos left.",
+  "band": "B1"
+ },
+ {
+  "q": "Después de que ustedes ___ (instalar) el programa, reinicien el computador.",
+  "inf": "instalar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "instalen",
+  "use": "después de que + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Después de que sobre algo que aún no pasa pide subjuntivo.",
+  "why_en": "Después de que about something that has not happened yet takes the subjunctive.",
+  "en": "After you install the program, restart the computer.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando mis tíos ___ (regresar) de Europa, haremos una fiesta.",
+  "inf": "regresar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "regresen",
+  "use": "cuando + subjuntivo con sentido de futuro",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Cuando con sentido de futuro pide subjuntivo, no futuro.",
+  "why_en": "Cuando with future meaning takes the subjunctive, not the future.",
+  "en": "When my aunt and uncle get back from Europe, we'll have a party.",
+  "band": "B1"
+ },
+ {
+  "q": "Te explico otra vez para que tú ___ (entender) bien.",
+  "inf": "entender",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "entiendas",
+  "use": "para que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Para que + otro sujeto: finalidad, siempre subjuntivo; presente porque el plan es futuro (entiendas).",
+  "why_en": "Para que + a different subject: purpose, always subjunctive; present since the aim is ahead (entiendas).",
+  "en": "I'll explain again so that you understand well.",
+  "band": "B1"
+ },
+ {
+  "q": "Trabajo los domingos para que mis hijos ___ (estudiar) en un buen colegio.",
+  "inf": "estudiar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "estudien",
+  "use": "para que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Para que + otro sujeto: finalidad, siempre subjuntivo; presente porque el plan es futuro (estudien).",
+  "why_en": "Para que + a different subject: purpose, always subjunctive; present since the aim is ahead (estudien).",
+  "en": "I work on Sundays so that my kids can study at a good school.",
+  "band": "B1"
+ },
+ {
+  "q": "Le dejo mi dirección a Carlos para que me ___ (buscar) el sábado.",
+  "inf": "buscar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "busque",
+  "use": "para que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Para que + otro sujeto: finalidad, siempre subjuntivo; presente porque el plan es futuro (busque).",
+  "why_en": "Para que + a different subject: purpose, always subjunctive; present since the aim is ahead (busque).",
+  "en": "I'm leaving Carlos my address so he can pick me up on Saturday.",
+  "band": "B1"
+ },
+ {
+  "q": "Hablo despacio para que los turistas me ___ (comprender).",
+  "inf": "comprender",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "comprendan",
+  "use": "para que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Para que + otro sujeto: finalidad, siempre subjuntivo; presente porque el plan es futuro (comprendan).",
+  "why_en": "Para que + a different subject: purpose, always subjunctive; present since the aim is ahead (comprendan).",
+  "en": "I speak slowly so that the tourists understand me.",
+  "band": "B1"
+ },
+ {
+  "q": "Voy a abrir la ventana para que ___ (entrar) aire.",
+  "inf": "entrar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "entre",
+  "use": "para que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Para que + otro sujeto: finalidad, siempre subjuntivo; presente porque el plan es futuro (entre).",
+  "why_en": "Para que + a different subject: purpose, always subjunctive; present since the aim is ahead (entre).",
+  "en": "I'm going to open the window so air comes in.",
+  "band": "B1"
+ },
+ {
+  "q": "Mis papás ahorran para que yo ___ (estudiar) medicina.",
+  "inf": "estudiar",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "estudie",
+  "use": "para que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Para que + otro sujeto: finalidad, siempre subjuntivo; presente porque el plan es futuro (estudie).",
+  "why_en": "Para que + a different subject: purpose, always subjunctive; present since the aim is ahead (estudie).",
+  "en": "My parents save so that I can study medicine.",
+  "band": "B1"
+ },
+ {
+  "q": "Te presto mi chaqueta para que no ___ (tener) frío.",
+  "inf": "tener",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "tengas",
+  "use": "para que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Para que + otro sujeto: finalidad, siempre subjuntivo; presente porque el plan es futuro (tengas).",
+  "why_en": "Para que + a different subject: purpose, always subjunctive; present since the aim is ahead (tengas).",
+  "en": "I'll lend you my jacket so you don't get cold.",
+  "band": "B1"
+ },
+ {
+  "q": "Escribo la lista para que no se nos ___ (olvidar) nada.",
+  "inf": "olvidar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "olvide",
+  "use": "para que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Para que + otro sujeto: finalidad, siempre subjuntivo; presente porque el plan es futuro (olvide).",
+  "why_en": "Para que + a different subject: purpose, always subjunctive; present since the aim is ahead (olvide).",
+  "en": "I'm writing the list so that we don't forget anything.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi jefe nos da el viernes libre para que ___ (descansar) un poco.",
+  "inf": "descansar",
+  "tense": "presubj",
+  "person": "nosotros",
+  "answer": "descansemos",
+  "use": "para que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Para que + otro sujeto: finalidad, siempre subjuntivo; presente porque el plan es futuro (descansemos).",
+  "why_en": "Para que + a different subject: purpose, always subjunctive; present since the aim is ahead (descansemos).",
+  "en": "My boss gives us Friday off so we can rest a bit.",
+  "band": "B1"
+ },
+ {
+  "q": "Dame la dirección para que el taxista me ___ (llevar) directo.",
+  "inf": "llevar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "lleve",
+  "use": "para que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Para que + otro sujeto: finalidad, siempre subjuntivo; presente porque el plan es futuro (lleve).",
+  "why_en": "Para que + a different subject: purpose, always subjunctive; present since the aim is ahead (lleve).",
+  "en": "Give me the address so the taxi driver takes me straight there.",
+  "band": "B1"
+ },
+ {
+  "q": "Llámame antes de que ___ (ser) muy tarde.",
+  "inf": "ser",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "sea",
+  "use": "antes de que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Antes de que: lo que pasa después aún no ocurrió, subjuntivo presente (sea).",
+  "why_en": "Antes de que: the later event has not happened yet, so present subjunctive (sea).",
+  "en": "Call me before it gets too late.",
+  "band": "B1"
+ },
+ {
+  "q": "Termina la tarea antes de que tu mamá ___ (volver).",
+  "inf": "volver",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "vuelva",
+  "use": "antes de que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Antes de que: lo que pasa después aún no ocurrió, subjuntivo presente (vuelva).",
+  "why_en": "Antes de que: the later event has not happened yet, so present subjunctive (vuelva).",
+  "en": "Finish your homework before your mom comes back.",
+  "band": "B1"
+ },
+ {
+  "q": "Voy a lavar los platos antes de que tú ___ (volver) de la tienda.",
+  "inf": "volver",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "vuelvas",
+  "use": "antes de que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Antes de que: lo que pasa después aún no ocurrió, subjuntivo presente (vuelvas).",
+  "why_en": "Antes de que: the later event has not happened yet, so present subjunctive (vuelvas).",
+  "en": "I'm going to wash the dishes before you get back from the store.",
+  "band": "B2"
+ },
+ {
+  "q": "Esconde el pastel antes de que los niños lo ___ (encontrar).",
+  "inf": "encontrar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "encuentren",
+  "use": "antes de que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Antes de que: lo que pasa después aún no ocurrió, subjuntivo presente (encuentren).",
+  "why_en": "Antes de que: the later event has not happened yet, so present subjunctive (encuentren).",
+  "en": "Hide the cake before the kids find it.",
+  "band": "B2"
+ },
+ {
+  "q": "Quiero cerrar el trato antes de que mis socios ___ (cambiar) de opinión.",
+  "inf": "cambiar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "cambien",
+  "use": "antes de que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Antes de que: lo que pasa después aún no ocurrió, subjuntivo presente (cambien).",
+  "why_en": "Antes de que: the later event has not happened yet, so present subjunctive (cambien).",
+  "en": "I want to close the deal before my partners change their minds.",
+  "band": "B2"
+ },
+ {
+  "q": "Avísame antes de que nosotros ___ (empezar) la reunión.",
+  "inf": "empezar",
+  "tense": "presubj",
+  "person": "nosotros",
+  "answer": "empecemos",
+  "use": "antes de que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Antes de que: lo que pasa después aún no ocurrió, subjuntivo presente (empecemos).",
+  "why_en": "Antes de que: the later event has not happened yet, so present subjunctive (empecemos).",
+  "en": "Let me know before we start the meeting.",
+  "band": "B1"
+ },
+ {
+  "q": "Hay que arreglar el techo antes de que ___ (llegar) las lluvias.",
+  "inf": "llegar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "lleguen",
+  "use": "antes de que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Antes de que: lo que pasa después aún no ocurrió, subjuntivo presente (lleguen).",
+  "why_en": "Antes de que: the later event has not happened yet, so present subjunctive (lleguen).",
+  "en": "The roof has to be fixed before the rains arrive.",
+  "band": "B1"
+ },
+ {
+  "q": "Llevo el carro al taller antes de que el motor se ___ (dañar) del todo.",
+  "inf": "dañarse",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "dañe",
+  "use": "antes de que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Antes de que: lo que pasa después aún no ocurrió, subjuntivo presente (dañe).",
+  "why_en": "Antes de que: the later event has not happened yet, so present subjunctive (dañe).",
+  "en": "I'm taking the car to the shop before the engine breaks down completely.",
+  "band": "B2"
+ },
+ {
+  "q": "Pagaremos la deuda antes de que los intereses ___ (subir).",
+  "inf": "subir",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "suban",
+  "use": "antes de que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Antes de que: lo que pasa después aún no ocurrió, subjuntivo presente (suban).",
+  "why_en": "Antes de que: the later event has not happened yet, so present subjunctive (suban).",
+  "en": "We'll pay the debt before the interest goes up.",
+  "band": "B2"
+ },
+ {
+  "q": "Antes de que ___ (abrir) el restaurante, haremos una prueba de cocina.",
+  "inf": "abrir",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "abran",
+  "use": "antes de que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Antes de que: lo que pasa después aún no ocurrió, subjuntivo presente (abran).",
+  "why_en": "Antes de que: the later event has not happened yet, so present subjunctive (abran).",
+  "en": "Before the restaurant opens, we'll do a kitchen test.",
+  "band": "B1"
+ },
+ {
+  "q": "Voy a entrar sin que nadie me ___ (ver).",
+  "inf": "ver",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "vea",
+  "use": "sin que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Sin que + otro sujeto: la acción no se da, siempre subjuntivo presente (vea).",
+  "why_en": "Sin que + a different subject: the action does not happen, always present subjunctive (vea).",
+  "en": "I'm going to go in without anyone seeing me.",
+  "band": "B2"
+ },
+ {
+  "q": "No puedes usar mi computador sin que yo te lo ___ (permitir).",
+  "inf": "permitir",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "permita",
+  "use": "sin que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Sin que + otro sujeto: la acción no se da, siempre subjuntivo presente (permita).",
+  "why_en": "Sin que + a different subject: the action does not happen, always present subjunctive (permita).",
+  "en": "You can't use my computer without me allowing it.",
+  "band": "B2"
+ },
+ {
+  "q": "Quiero preparar la sorpresa sin que Lucía lo ___ (descubrir).",
+  "inf": "descubrir",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "descubra",
+  "use": "sin que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Sin que + otro sujeto: la acción no se da, siempre subjuntivo presente (descubra).",
+  "why_en": "Sin que + a different subject: the action does not happen, always present subjunctive (descubra).",
+  "en": "I want to prepare the surprise without Lucía finding out.",
+  "band": "B2"
+ },
+ {
+  "q": "Nadie sale de aquí sin que el guardia lo ___ (revisar).",
+  "inf": "revisar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "revise",
+  "use": "sin que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Sin que + otro sujeto: la acción no se da, siempre subjuntivo presente (revise).",
+  "why_en": "Sin que + a different subject: the action does not happen, always present subjunctive (revise).",
+  "en": "Nobody leaves here without the guard checking them.",
+  "band": "B2"
+ },
+ {
+  "q": "Pagaré la cuenta sin que ustedes lo ___ (notar).",
+  "inf": "notar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "noten",
+  "use": "sin que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Sin que + otro sujeto: la acción no se da, siempre subjuntivo presente (noten).",
+  "why_en": "Sin que + a different subject: the action does not happen, always present subjunctive (noten).",
+  "en": "I'll pay the bill without you noticing.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi hijo no sale sin que yo ___ (saber) adónde va.",
+  "inf": "saber",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "sepa",
+  "use": "sin que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Sin que + otro sujeto: la acción no se da, siempre subjuntivo presente (sepa).",
+  "why_en": "Sin que + a different subject: the action does not happen, always present subjunctive (sepa).",
+  "en": "My son doesn't go out without me knowing where he's going.",
+  "band": "B2"
+ },
+ {
+  "q": "No firmes nada sin que tu abogado lo ___ (leer).",
+  "inf": "leer",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "lea",
+  "use": "sin que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Sin que + otro sujeto: la acción no se da, siempre subjuntivo presente (lea).",
+  "why_en": "Sin que + a different subject: the action does not happen, always present subjunctive (lea).",
+  "en": "Don't sign anything without your lawyer reading it.",
+  "band": "B2"
+ },
+ {
+  "q": "Quiero irme sin que nadie ___ (hacer) preguntas.",
+  "inf": "hacer",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "haga",
+  "use": "sin que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Sin que + otro sujeto: la acción no se da, siempre subjuntivo presente (haga).",
+  "why_en": "Sin que + a different subject: the action does not happen, always present subjunctive (haga).",
+  "en": "I want to leave without anyone asking questions.",
+  "band": "B2"
+ },
+ {
+  "q": "Iremos a la finca, a menos que ___ (llover) mucho.",
+  "inf": "llover",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "llueva",
+  "use": "a menos que / con tal de que / en caso de que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "A menos que, con tal de que y en caso de que piden subjuntivo.",
+  "why_en": "A menos que, con tal de que and en caso de que take the subjunctive.",
+  "en": "We'll go to the farm, unless it rains a lot.",
+  "band": "B2"
+ },
+ {
+  "q": "No te lo digo a menos que tú me ___ (prometer) guardar el secreto.",
+  "inf": "prometer",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "prometas",
+  "use": "a menos que / con tal de que / en caso de que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "A menos que, con tal de que y en caso de que piden subjuntivo.",
+  "why_en": "A menos que, con tal de que and en caso de que take the subjunctive.",
+  "en": "I won't tell you unless you promise to keep the secret.",
+  "band": "B2"
+ },
+ {
+  "q": "Voy a ir a la cita, a menos que Pedro la ___ (cancelar).",
+  "inf": "cancelar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "cancele",
+  "use": "a menos que / con tal de que / en caso de que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "A menos que, con tal de que y en caso de que piden subjuntivo.",
+  "why_en": "A menos que, con tal de que and en caso de que take the subjunctive.",
+  "en": "I'll go to the appointment unless Pedro cancels it.",
+  "band": "B2"
+ },
+ {
+  "q": "Te presto el carro con tal de que lo ___ (devolver) lleno de gasolina.",
+  "inf": "devolver",
+  "tense": "presubj",
+  "person": "tú",
+  "answer": "devuelvas",
+  "use": "a menos que / con tal de que / en caso de que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "A menos que, con tal de que y en caso de que piden subjuntivo.",
+  "why_en": "A menos que, con tal de que and en caso de que take the subjunctive.",
+  "en": "I'll lend you the car as long as you return it with a full tank.",
+  "band": "B2"
+ },
+ {
+  "q": "Lleva una chaqueta en caso de que ___ (hacer) frío en la noche.",
+  "inf": "hacer",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "haga",
+  "use": "a menos que / con tal de que / en caso de que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "A menos que, con tal de que y en caso de que piden subjuntivo.",
+  "why_en": "A menos que, con tal de que and en caso de que take the subjunctive.",
+  "en": "Take a jacket in case it gets cold at night.",
+  "band": "B2"
+ },
+ {
+  "q": "Guarda el recibo en caso de que Marta lo ___ (necesitar).",
+  "inf": "necesitar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "necesite",
+  "use": "a menos que / con tal de que / en caso de que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "A menos que, con tal de que y en caso de que piden subjuntivo.",
+  "why_en": "A menos que, con tal de que and en caso de que take the subjunctive.",
+  "en": "Keep the receipt in case Marta needs it.",
+  "band": "B2"
+ },
+ {
+  "q": "No saldremos esta noche, a menos que ustedes ___ (insistir).",
+  "inf": "insistir",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "insistan",
+  "use": "a menos que / con tal de que / en caso de que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "A menos que, con tal de que y en caso de que piden subjuntivo.",
+  "why_en": "A menos que, con tal de que and en caso de que take the subjunctive.",
+  "en": "We won't go out tonight unless you insist.",
+  "band": "B2"
+ },
+ {
+  "q": "Empiezo mañana, con tal de que mi jefe me ___ (dar) permiso.",
+  "inf": "dar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "dé",
+  "use": "a menos que / con tal de que / en caso de que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "A menos que, con tal de que y en caso de que piden subjuntivo.",
+  "why_en": "A menos que, con tal de que and en caso de que take the subjunctive.",
+  "en": "I'll start tomorrow, as long as my boss gives me permission.",
+  "band": "B2"
+ },
+ {
+  "q": "Busco a alguien que ___ (arreglar) computadores.",
+  "inf": "arreglar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "arregle",
+  "use": "antecedente desconocido: busco a alguien que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si la persona o cosa no se conoce o no existe, el verbo va en subjuntivo.",
+  "why_en": "If the person or thing is unknown or may not exist, the verb is subjunctive.",
+  "en": "I'm looking for someone who fixes computers.",
+  "band": "B1"
+ },
+ {
+  "q": "No hay nadie que ___ (conocer) este barrio mejor que doña Rosa.",
+  "inf": "conocer",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "conozca",
+  "use": "antecedente desconocido: busco a alguien que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si la persona o cosa no se conoce o no existe, el verbo va en subjuntivo.",
+  "why_en": "If the person or thing is unknown or may not exist, the verb is subjunctive.",
+  "en": "There's no one who knows this neighborhood better than Doña Rosa.",
+  "band": "B2"
+ },
+ {
+  "q": "Necesito un apartamento que ___ (quedar) cerca del trabajo.",
+  "inf": "quedar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "quede",
+  "use": "antecedente desconocido: busco a alguien que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si la persona o cosa no se conoce o no existe, el verbo va en subjuntivo.",
+  "why_en": "If the person or thing is unknown or may not exist, the verb is subjunctive.",
+  "en": "I need an apartment that's close to work.",
+  "band": "B1"
+ },
+ {
+  "q": "Queremos contratar a un chef que ___ (preparar) comida peruana.",
+  "inf": "preparar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "prepare",
+  "use": "antecedente desconocido: busco a alguien que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si la persona o cosa no se conoce o no existe, el verbo va en subjuntivo.",
+  "why_en": "If the person or thing is unknown or may not exist, the verb is subjunctive.",
+  "en": "We want to hire a chef who prepares Peruvian food.",
+  "band": "B1"
+ },
+ {
+  "q": "No conozco a nadie que ___ (vivir) en esa torre.",
+  "inf": "vivir",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "viva",
+  "use": "antecedente desconocido: busco a alguien que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si la persona o cosa no se conoce o no existe, el verbo va en subjuntivo.",
+  "why_en": "If the person or thing is unknown or may not exist, the verb is subjunctive.",
+  "en": "I don't know anyone who lives in that tower.",
+  "band": "B1"
+ },
+ {
+  "q": "¿Hay alguien aquí que ___ (hablar) alemán?",
+  "inf": "hablar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "hable",
+  "use": "antecedente desconocido: busco a alguien que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si la persona o cosa no se conoce o no existe, el verbo va en subjuntivo.",
+  "why_en": "If the person or thing is unknown or may not exist, the verb is subjunctive.",
+  "en": "Is there anyone here who speaks German?",
+  "band": "B1"
+ },
+ {
+  "q": "Quiero un jugo que no ___ (llevar) azúcar.",
+  "inf": "llevar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "lleve",
+  "use": "antecedente desconocido: busco a alguien que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si la persona o cosa no se conoce o no existe, el verbo va en subjuntivo.",
+  "why_en": "If the person or thing is unknown or may not exist, the verb is subjunctive.",
+  "en": "I want a juice that has no sugar.",
+  "band": "B1"
+ },
+ {
+  "q": "Busco una casa que ___ (costar) menos de trescientos millones.",
+  "inf": "costar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "cueste",
+  "use": "antecedente desconocido: busco a alguien que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si la persona o cosa no se conoce o no existe, el verbo va en subjuntivo.",
+  "why_en": "If the person or thing is unknown or may not exist, the verb is subjunctive.",
+  "en": "I'm looking for a house that costs less than three hundred million.",
+  "band": "B2"
+ },
+ {
+  "q": "No hay nada en esta tienda que me ___ (gustar).",
+  "inf": "gustar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "guste",
+  "use": "antecedente desconocido: busco a alguien que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si la persona o cosa no se conoce o no existe, el verbo va en subjuntivo.",
+  "why_en": "If the person or thing is unknown or may not exist, the verb is subjunctive.",
+  "en": "There's nothing in this store that I like.",
+  "band": "B1"
+ },
+ {
+  "q": "Necesitamos una niñera que ___ (cuidar) bien a los niños.",
+  "inf": "cuidar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "cuide",
+  "use": "antecedente desconocido: busco a alguien que + subjuntivo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si la persona o cosa no se conoce o no existe, el verbo va en subjuntivo.",
+  "why_en": "If the person or thing is unknown or may not exist, the verb is subjunctive.",
+  "en": "We need a nanny who takes good care of the kids.",
+  "band": "B1"
+ },
+ {
+  "q": "Aunque mañana mis primos me ___ (ofrecer) el doble, no les vendo la finca.",
+  "inf": "ofrecer",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "ofrezcan",
+  "use": "aunque + subjuntivo: situación hipotética",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Aunque con algo por ver pide subjuntivo; si es poco probable, también el imperfecto.",
+  "why_en": "Aunque with something still to come takes the subjunctive; if unlikely, also the imperfect.",
+  "en": "Even if my cousins offer me double tomorrow, I won't sell them the farm.",
+  "band": "B2",
+  "also": [
+   "ofrecieran"
+  ]
+ },
+ {
+  "q": "Aunque mañana ___ (caer) un aguacero, no cancelamos el paseo.",
+  "inf": "caer",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "caiga",
+  "use": "aunque + subjuntivo: situación hipotética",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Aunque con algo hipotético o por ver pide subjuntivo.",
+  "why_en": "Aunque with something hypothetical or still to be seen takes the subjunctive.",
+  "en": "Even if a downpour hits tomorrow, we won't cancel the outing.",
+  "band": "B2"
+ },
+ {
+  "q": "Aunque algún día Camilo me lo ___ (pedir) de rodillas, no lo perdono.",
+  "inf": "pedir",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "pida",
+  "use": "aunque + subjuntivo: situación hipotética",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Aunque con algo por ver pide subjuntivo; si es poco probable, también el imperfecto.",
+  "why_en": "Aunque with something still to come takes the subjunctive; if unlikely, also the imperfect.",
+  "en": "Even if one day Camilo begs me on his knees, I won't forgive him.",
+  "band": "B2",
+  "also": [
+   "pidiera"
+  ]
+ },
+ {
+  "q": "Aunque ustedes me lo ___ (rogar) mañana, no voy a cambiar de idea.",
+  "inf": "rogar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "rueguen",
+  "use": "aunque + subjuntivo: situación hipotética",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Aunque con algo por ver pide subjuntivo; si es poco probable, también el imperfecto.",
+  "why_en": "Aunque with something still to come takes the subjunctive; if unlikely, also the imperfect.",
+  "en": "Even if you beg me tomorrow, I am not going to change my mind.",
+  "band": "B2",
+  "also": [
+   "rogaran"
+  ]
+ },
+ {
+  "q": "Aunque tu jefe no lo ___ (aprobar) mañana, presentaremos la idea igual.",
+  "inf": "aprobar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "apruebe",
+  "use": "aunque + subjuntivo: situación hipotética",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Aunque con algo hipotético o por ver pide subjuntivo.",
+  "why_en": "Aunque with something hypothetical or still to be seen takes the subjunctive.",
+  "en": "Even if your boss doesn't approve it tomorrow, we will present the idea anyway.",
+  "band": "B2"
+ },
+ {
+  "q": "Todavía no sé el precio, pero aunque ___ (costar) mucho, lo compro.",
+  "inf": "costar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "cueste",
+  "use": "aunque + subjuntivo: situación hipotética",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Aunque\" con algo que no se sabe todavía pide presente de subjuntivo.",
+  "why_en": "\"Aunque\" with something not yet known takes the present subjunctive.",
+  "en": "I don't know the price yet, but even if it costs a lot, I'll buy it.",
+  "band": "B2"
+ },
+ {
+  "q": "Puede que yo no ___ (ir) a la fiesta; todavía lo estoy pensando.",
+  "inf": "ir",
+  "tense": "presubj",
+  "person": "yo",
+  "answer": "vaya",
+  "use": "tal vez / quizás + subjuntivo: duda",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Es posible que\" / \"puede que\" siempre piden subjuntivo.",
+  "why_en": "\"Es posible que\" / \"puede que\" always take the subjunctive.",
+  "en": "I may not go to the party; I'm still thinking about it.",
+  "band": "B2"
+ },
+ {
+  "q": "Tal vez Mateo ___ (decidir) quedarse, pero no estoy segura.",
+  "inf": "decidir",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "decida",
+  "use": "tal vez / quizás + subjuntivo: duda",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Tal vez y quizás con duda real aceptan subjuntivo.",
+  "why_en": "Tal vez and quizás with real doubt take the subjunctive.",
+  "en": "Maybe Mateo will decide to stay, but I'm not sure.",
+  "band": "B2"
+ },
+ {
+  "q": "Quizás el vuelo se ___ (retrasar), pero no hay certeza.",
+  "inf": "retrasar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "retrase",
+  "use": "tal vez / quizás + subjuntivo: duda",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Tal vez y quizás con duda real aceptan subjuntivo.",
+  "why_en": "Tal vez and quizás with real doubt take the subjunctive.",
+  "en": "Maybe the flight will be delayed, but there's no certainty.",
+  "band": "B2"
+ },
+ {
+  "q": "Es posible que ustedes ___ (estar) en lo cierto, pero yo lo dudo.",
+  "inf": "estar",
+  "tense": "presubj",
+  "person": "ellos",
+  "answer": "estén",
+  "use": "tal vez / quizás + subjuntivo: duda",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Es posible que\" / \"puede que\" siempre piden subjuntivo.",
+  "why_en": "\"Es posible que\" / \"puede que\" always take the subjunctive.",
+  "en": "You may be right, but I doubt it.",
+  "band": "B2"
+ },
+ {
+  "q": "Es posible que nosotros ___ (viajar) en diciembre; aún no lo decidimos.",
+  "inf": "viajar",
+  "tense": "presubj",
+  "person": "nosotros",
+  "answer": "viajemos",
+  "use": "tal vez / quizás + subjuntivo: duda",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Es posible que\" / \"puede que\" siempre piden subjuntivo.",
+  "why_en": "\"Es posible que\" / \"puede que\" always take the subjunctive.",
+  "en": "We may travel in December; we haven't decided yet.",
+  "band": "B2"
+ },
+ {
+  "q": "Puede que el plan no ___ (funcionar), pero vale la pena intentarlo.",
+  "inf": "funcionar",
+  "tense": "presubj",
+  "person": "él/ella",
+  "answer": "funcione",
+  "use": "tal vez / quizás + subjuntivo: duda",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Es posible que\" / \"puede que\" siempre piden subjuntivo.",
+  "why_en": "\"Es posible que\" / \"puede que\" always take the subjunctive.",
+  "en": "The plan may not work, but it is worth trying.",
+  "band": "B2"
+ }
+]

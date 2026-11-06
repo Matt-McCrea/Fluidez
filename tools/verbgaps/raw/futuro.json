@@ -1,0 +1,2505 @@
+[
+ {
+  "q": "El año entrante mi hermana ___ (terminar) la carrera de derecho.",
+  "inf": "terminar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "terminará",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"El año entrante\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"El año entrante\" points to the future: simple future.",
+  "en": "Next year my sister will finish her law degree.",
+  "band": "A2"
+ },
+ {
+  "q": "Dentro de dos semanas nos ___ (ir) a vivir a Cali.",
+  "inf": "ir",
+  "tense": "futuro",
+  "person": "nosotros",
+  "answer": "iremos",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"Dentro de dos semanas\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"Dentro de dos semanas\" points to the future: simple future.",
+  "en": "In two weeks we will go to live in Cali.",
+  "band": "A2"
+ },
+ {
+  "q": "En diciembre mis primos ___ (venir) desde Bucaramanga para la novena.",
+  "inf": "venir",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "vendrán",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"En diciembre\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"En diciembre\" points to the future: simple future.",
+  "en": "In December my cousins will come from Bucaramanga for the novena.",
+  "band": "A2"
+ },
+ {
+  "q": "Mañana a esta hora yo ___ (estar) en el avión.",
+  "inf": "estar",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "estaré",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"Mañana a esta hora\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"Mañana a esta hora\" points to the future: simple future.",
+  "en": "Tomorrow at this time I will be on the plane.",
+  "band": "A2"
+ },
+ {
+  "q": "El próximo lunes ustedes ___ (empezar) el curso de inglés.",
+  "inf": "empezar",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "empezarán",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"El próximo lunes\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"El próximo lunes\" points to the future: simple future.",
+  "en": "Next Monday you will start the English course.",
+  "band": "A2"
+ },
+ {
+  "q": "Dentro de un mes tú ___ (tener) tu propio apartamento.",
+  "inf": "tener",
+  "tense": "futuro",
+  "person": "tú",
+  "answer": "tendrás",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"Dentro de un mes\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"Dentro de un mes\" points to the future: simple future.",
+  "en": "In a month you will have your own apartment.",
+  "band": "A2"
+ },
+ {
+  "q": "El sábado de la semana entrante los vecinos ___ (hacer) una fiesta.",
+  "inf": "hacer",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "harán",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"El sábado de la semana entrante\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"El sábado de la semana entrante\" points to the future: simple future.",
+  "en": "Next week on Saturday the neighbors will throw a party.",
+  "band": "A2"
+ },
+ {
+  "q": "El año que viene yo ___ (salir) de vacaciones en junio.",
+  "inf": "salir",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "saldré",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"El año que viene\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"El año que viene\" points to the future: simple future.",
+  "en": "Next year I will go on vacation in June.",
+  "band": "A2"
+ },
+ {
+  "q": "Pasado mañana la tienda ___ (abrir) a las seis de la mañana.",
+  "inf": "abrir",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "abrirá",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"Pasado mañana\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"Pasado mañana\" points to the future: simple future.",
+  "en": "The day after tomorrow the store will open at six in the morning.",
+  "band": "A2"
+ },
+ {
+  "q": "Dentro de poco Valentina ___ (cumplir) quince años.",
+  "inf": "cumplir",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "cumplirá",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"Dentro de poco\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"Dentro de poco\" points to the future: simple future.",
+  "en": "Soon Valentina will turn fifteen.",
+  "band": "A2"
+ },
+ {
+  "q": "Ana no contesta; ___ (estar) en reunión.",
+  "inf": "estar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "estará",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "\"Ana no contesta\": una suposición sobre ahora va en futuro.",
+  "why_en": "\"Ana no contesta\": a guess about the present takes the future.",
+  "en": "Ana is not answering; she must be in a meeting.",
+  "band": "B1"
+ },
+ {
+  "q": "Camilo no contesta el celular; ___ (estar) dormido.",
+  "inf": "estar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "estará",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "\"Camilo no contesta\": una suposición sobre ahora va en futuro.",
+  "why_en": "\"Camilo no contesta\": a guess about the present takes the future.",
+  "en": "Camilo is not answering his phone; he must be asleep.",
+  "band": "B1"
+ },
+ {
+  "q": "Ya son casi las ocho; mis papás ___ (estar) por llegar.",
+  "inf": "estar",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "estarán",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "It is almost eight; my parents must be about to arrive.",
+  "band": "B1"
+ },
+ {
+  "q": "No veo el reloj de la sala, pero ___ (ser) las tres, más o menos.",
+  "inf": "ser",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "serán",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "\"Más o menos\": una suposición sobre ahora va en futuro.",
+  "why_en": "\"Más o menos\": a guess about the present takes the future.",
+  "en": "I can't see the living room clock, but it must be around three.",
+  "band": "B1"
+ },
+ {
+  "q": "Hay mucho trancón; mi hermano ___ (venir) atrasado.",
+  "inf": "venir",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "vendrá",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "There is heavy traffic; my brother must be coming late.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi jefe no contesta el celular; ___ (estar) en una reunión.",
+  "inf": "estar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "estará",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Suponer algo del presente (no contesta) se hace con futuro.",
+  "why_en": "Guessing about the present (he isn't answering) uses the future.",
+  "en": "My boss isn't answering his phone; he must be in a meeting.",
+  "band": "B1"
+ },
+ {
+  "q": "Esa cartera se ve de cuero fino; ___ (valer) bastante plata.",
+  "inf": "valer",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "valdrá",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "That purse looks like fine leather; it must be worth a lot of money.",
+  "band": "B1"
+ },
+ {
+  "q": "¿Quién ___ (ser) a esta hora? Voy a ver.",
+  "inf": "ser",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "será",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una pregunta de duda sobre ahora va en futuro.",
+  "why_en": "A wondering question about now takes the future.",
+  "en": "Who can it be at this hour? I will go see.",
+  "band": "B1"
+ },
+ {
+  "q": "Los niños no hacen ruido; ___ (ver) una película.",
+  "inf": "ver",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "verán",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "The kids are not making noise; they must be watching a movie.",
+  "band": "B1"
+ },
+ {
+  "q": "Tu mamá se ___ (preocupar) mucho, no la has llamado.",
+  "inf": "preocupar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "preocupará",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "Your mom must be very worried, you have not called her.",
+  "band": "B1"
+ },
+ {
+  "q": "Se oye música arriba; los vecinos ___ (bailar).",
+  "inf": "bailar",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "bailarán",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "Music is playing upstairs; the neighbors must be dancing.",
+  "band": "B1"
+ },
+ {
+  "q": "¿Cuántos años ___ (tener) tu abuelo? Se ve muy joven.",
+  "inf": "tener",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "tendrá",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una pregunta de duda sobre ahora va en futuro.",
+  "why_en": "A wondering question about now takes the future.",
+  "en": "How old can your grandfather be? He looks so young.",
+  "band": "B1"
+ },
+ {
+  "q": "Luis no está en la casa; ___ (andar) por el centro.",
+  "inf": "andar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "andará",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "Luis is not at home; he must be out downtown.",
+  "band": "B1"
+ },
+ {
+  "q": "¿Dónde está mi vecina? No abre; ___ (estar) de viaje por trabajo.",
+  "inf": "estar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "estará",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Suponer algo del presente (¿dónde está?) se hace con futuro.",
+  "why_en": "Guessing about the present (where is she?) uses the future.",
+  "en": "Where is my neighbour? She doesn't answer; she must be away for work.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegues a Bogotá, mi tía te ___ (llamar) para invitarte a almorzar.",
+  "inf": "llamar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "llamará",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"cuando\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"cuando\" + subjunctive, the main clause takes the future.",
+  "en": "When you get to Bogotá, my aunt will call you to invite you to lunch.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando termine el semestre, nosotros ___ (viajar) a la costa.",
+  "inf": "viajar",
+  "tense": "futuro",
+  "person": "nosotros",
+  "answer": "viajaremos",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"cuando\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"cuando\" + subjunctive, the main clause takes the future.",
+  "en": "When the semester ends, we will travel to the coast.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando seas mamá, ___ (entender) por qué me preocupo tanto.",
+  "inf": "entender",
+  "tense": "futuro",
+  "person": "tú",
+  "answer": "entenderás",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"cuando\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"cuando\" + subjunctive, the main clause takes the future.",
+  "en": "When you are a mom, you will understand why I worry so much.",
+  "band": "B2"
+ },
+ {
+  "q": "En cuanto salga el sol, los niños ___ (salir) a jugar al parque.",
+  "inf": "salir",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "saldrán",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"en cuanto\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"en cuanto\" + subjunctive, the main clause takes the future.",
+  "en": "As soon as the sun comes out, the kids will go out to play in the park.",
+  "band": "B1"
+ },
+ {
+  "q": "Hasta que no pagues la deuda, el banco no te ___ (dar) otro crédito.",
+  "inf": "dar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "dará",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"hasta que\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"hasta que\" + subjunctive, the main clause takes the future.",
+  "en": "Until you pay the debt, the bank will not give you another loan.",
+  "band": "B2"
+ },
+ {
+  "q": "Después de que llegue mi hermano, yo ___ (poder) viajar tranquila.",
+  "inf": "poder",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "podré",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"después de que\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"después de que\" + subjunctive, the main clause takes the future.",
+  "en": "After my brother arrives, I will be able to travel calmly.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando nazca el bebé, Laura ___ (dejar) de trabajar un tiempo.",
+  "inf": "dejar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "dejará",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"cuando\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"cuando\" + subjunctive, the main clause takes the future.",
+  "en": "When the baby is born, Laura will stop working for a while.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando tengamos plata, nosotros ___ (comprar) un carro.",
+  "inf": "comprar",
+  "tense": "futuro",
+  "person": "nosotros",
+  "answer": "compraremos",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"cuando\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"cuando\" + subjunctive, the main clause takes the future.",
+  "en": "When we have money, we will buy a car.",
+  "band": "B1"
+ },
+ {
+  "q": "Si llueve mañana, nosotros nos ___ (quedar) en la casa.",
+  "inf": "quedar",
+  "tense": "futuro",
+  "person": "nosotros",
+  "answer": "quedaremos",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If it rains tomorrow, we will stay home.",
+  "band": "A2"
+ },
+ {
+  "q": "Si estudias esta noche, mañana ___ (sacar) buena nota.",
+  "inf": "sacar",
+  "tense": "futuro",
+  "person": "tú",
+  "answer": "sacarás",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If you study tonight, tomorrow you will get a good grade.",
+  "band": "A2"
+ },
+ {
+  "q": "Si no te apuras, ___ (perder) el bus.",
+  "inf": "perder",
+  "tense": "futuro",
+  "person": "tú",
+  "answer": "perderás",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If you do not hurry, you will miss the bus.",
+  "band": "A2"
+ },
+ {
+  "q": "Si Camilo me ayuda, yo ___ (terminar) más rápido.",
+  "inf": "terminar",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "terminaré",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If Camilo helps me, I will finish faster.",
+  "band": "A2"
+ },
+ {
+  "q": "Si hay trancón en la autopista, mis papás ___ (llegar) tarde.",
+  "inf": "llegar",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "llegarán",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If there is traffic on the highway, my parents will arrive late.",
+  "band": "A2"
+ },
+ {
+  "q": "Si ahorramos un poco cada mes, ___ (poder) viajar en diciembre.",
+  "inf": "poder",
+  "tense": "futuro",
+  "person": "nosotros",
+  "answer": "podremos",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro. También se oye el condicional.",
+  "why_en": "With si + present, the result takes the future. The conditional is also heard.",
+  "en": "If we save a little each month, we will be able to travel in December.",
+  "band": "A2",
+  "also": [
+   "podríamos"
+  ]
+ },
+ {
+  "q": "Si Ana no contesta, yo le ___ (escribir) un mensaje.",
+  "inf": "escribir",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "escribiré",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If Ana does not answer, I will write her a message.",
+  "band": "A2"
+ },
+ {
+  "q": "Si no comes ahora, después ___ (tener) hambre.",
+  "inf": "tener",
+  "tense": "futuro",
+  "person": "tú",
+  "answer": "tendrás",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If you do not eat now, you will be hungry later.",
+  "band": "A2"
+ },
+ {
+  "q": "Te prometo que mañana ___ (hacer) la tarea temprano.",
+  "inf": "hacer",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "haré",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "\"Te prometo\": una promesa o predicción va en futuro.",
+  "why_en": "\"Te prometo\": a promise or prediction takes the future.",
+  "en": "I promise I will do my homework early tomorrow.",
+  "band": "A2"
+ },
+ {
+  "q": "No te preocupes, yo te ___ (traer) el pan mañana.",
+  "inf": "traer",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "traeré",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Una promesa va en futuro.",
+  "why_en": "A promise takes the future.",
+  "en": "Do not worry, I will bring you the bread tomorrow.",
+  "band": "A2"
+ },
+ {
+  "q": "Dicen que este fin de semana ___ (llover) en toda la región.",
+  "inf": "llover",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "lloverá",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Un pronóstico va en futuro.",
+  "why_en": "A forecast takes the future.",
+  "en": "They say it will rain all over the region this weekend.",
+  "band": "A2"
+ },
+ {
+  "q": "Te lo juro: nunca más te ___ (decir) una mentira.",
+  "inf": "decir",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "diré",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "\"Te lo juro\": una promesa o predicción va en futuro.",
+  "why_en": "\"Te lo juro\": a promise or prediction takes the future.",
+  "en": "I swear: I will never tell you a lie again.",
+  "band": "A2"
+ },
+ {
+  "q": "Algún día ustedes ___ (ver) que yo tenía razón.",
+  "inf": "ver",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "verán",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "\"Algún día\": una promesa o predicción va en futuro.",
+  "why_en": "\"Algún día\": a promise or prediction takes the future.",
+  "en": "Someday you will see that I was right.",
+  "band": "A2"
+ },
+ {
+  "q": "Mi equipo ___ (ganar) el campeonato este año, ya verás.",
+  "inf": "ganar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "ganará",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "\"Ya verás\": una promesa o predicción va en futuro.",
+  "why_en": "\"Ya verás\": a promise or prediction takes the future.",
+  "en": "My team will win the championship this year, you will see.",
+  "band": "A2"
+ },
+ {
+  "q": "Con este examen, ustedes ___ (saber) quién estudió de verdad.",
+  "inf": "saber",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "sabrán",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Una predicción va en futuro.",
+  "why_en": "A prediction takes the future.",
+  "en": "With this exam, you will know who really studied.",
+  "band": "A2"
+ },
+ {
+  "q": "No lo dudes, Valentina ___ (ser) una gran doctora.",
+  "inf": "ser",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "será",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "\"No lo dudes\": una promesa o predicción va en futuro.",
+  "why_en": "\"No lo dudes\": a promise or prediction takes the future.",
+  "en": "Do not doubt it, Valentina will be a great doctor.",
+  "band": "A2"
+ },
+ {
+  "q": "Yo me ___ (poner) a dieta desde el lunes, lo prometo.",
+  "inf": "poner",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "pondré",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "\"Lo prometo\": una promesa o predicción va en futuro.",
+  "why_en": "\"Lo prometo\": a promise or prediction takes the future.",
+  "en": "I will go on a diet starting Monday, I promise.",
+  "band": "A2"
+ },
+ {
+  "q": "Dentro de cinco años mi hijo ___ (estudiar) medicina en Medellín.",
+  "inf": "estudiar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "estudiará",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"Dentro de cinco años\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"Dentro de cinco años\" points to the future: simple future.",
+  "en": "In five years my son will study medicine in Medellín.",
+  "band": "A2"
+ },
+ {
+  "q": "El próximo semestre nosotros ___ (ver) cálculo y estadística.",
+  "inf": "ver",
+  "tense": "futuro",
+  "person": "nosotros",
+  "answer": "veremos",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"El próximo semestre\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"El próximo semestre\" points to the future: simple future.",
+  "en": "Next semester we will take calculus and statistics.",
+  "band": "A2"
+ },
+ {
+  "q": "A fin de mes tú ___ (recibir) el primer pago.",
+  "inf": "recibir",
+  "tense": "futuro",
+  "person": "tú",
+  "answer": "recibirás",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"A fin de mes\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"A fin de mes\" points to the future: simple future.",
+  "en": "At the end of the month you will receive the first payment.",
+  "band": "A2"
+ },
+ {
+  "q": "En la reunión de mañana el gerente ___ (presentar) el nuevo plan.",
+  "inf": "presentar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "presentará",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"Mañana\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"Mañana\" points to the future: simple future.",
+  "en": "At tomorrow's meeting the manager will present the new plan.",
+  "band": "A2"
+ },
+ {
+  "q": "El domingo por la noche yo ___ (volver) a Barranquilla.",
+  "inf": "volver",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "volveré",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"El domingo por la noche\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"El domingo por la noche\" points to the future: simple future.",
+  "en": "On Sunday night I will go back to Barranquilla.",
+  "band": "A2"
+ },
+ {
+  "q": "En 2030 la ciudad ___ (contar) con una línea nueva de metro.",
+  "inf": "contar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "contará",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"En 2030\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"En 2030\" points to the future: simple future.",
+  "en": "By 2030 the city will have a new metro line.",
+  "band": "B1"
+ },
+ {
+  "q": "La semana entrante ustedes ___ (conocer) a mis suegros.",
+  "inf": "conocer",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "conocerán",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"La semana entrante\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"La semana entrante\" points to the future: simple future.",
+  "en": "Next week you will meet my in-laws.",
+  "band": "A2"
+ },
+ {
+  "q": "El mes entrante Pedro y Sofía ___ (firmar) el contrato del apartamento.",
+  "inf": "firmar",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "firmarán",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"El mes entrante\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"El mes entrante\" points to the future: simple future.",
+  "en": "Next month Pedro and Sofía will sign the apartment contract.",
+  "band": "A2"
+ },
+ {
+  "q": "Dentro de tres días la universidad ___ (publicar) los resultados.",
+  "inf": "publicar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "publicará",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"Dentro de tres días\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"Dentro de tres días\" points to the future: simple future.",
+  "en": "In three days the university will publish the results.",
+  "band": "A2"
+ },
+ {
+  "q": "Esta noche ___ (hacer) mucho frío en la montaña.",
+  "inf": "hacer",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "hará",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"Esta noche\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"Esta noche\" points to the future: simple future.",
+  "en": "Tonight it will be very cold in the mountains.",
+  "band": "A2"
+ },
+ {
+  "q": "El próximo viernes yo ___ (pagar) el arriendo sin falta.",
+  "inf": "pagar",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "pagaré",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"El próximo viernes\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"El próximo viernes\" points to the future: simple future.",
+  "en": "Next Friday I will pay the rent without fail.",
+  "band": "A2"
+ },
+ {
+  "q": "Mañana temprano los obreros ___ (arreglar) el techo.",
+  "inf": "arreglar",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "arreglarán",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"Mañana temprano\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"Mañana temprano\" points to the future: simple future.",
+  "en": "Early tomorrow the workers will fix the roof.",
+  "band": "A2"
+ },
+ {
+  "q": "Son las seis y no llega; ___ (haber) un accidente en la vía.",
+  "inf": "haber",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "habrá",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "It is six and he has not arrived; there must be an accident on the road.",
+  "band": "B2"
+ },
+ {
+  "q": "Camila se ve cansada; ___ (dormir) muy poco últimamente.",
+  "inf": "dormir",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "dormirá",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "Camila looks tired; she must be sleeping very little lately.",
+  "band": "B1"
+ },
+ {
+  "q": "Ese señor ___ (pasar) de los cincuenta, ¿no?",
+  "inf": "pasar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "pasará",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "\"Unos cincuenta\": una suposición sobre ahora va en futuro.",
+  "why_en": "\"Unos cincuenta\": a guess about the present takes the future.",
+  "en": "That man must be over fifty, right?",
+  "band": "B1"
+ },
+ {
+  "q": "La nevera hace un ruido raro; se ___ (romper).",
+  "inf": "romper",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "romperá",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "The fridge is making a strange noise; it must be breaking down.",
+  "band": "B1"
+ },
+ {
+  "q": "Nadie abre la puerta; los vecinos ___ (dormir) la siesta.",
+  "inf": "dormir",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "dormirán",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "Nobody opens the door; the neighbors must be taking a nap.",
+  "band": "B1"
+ },
+ {
+  "q": "¿Por qué ___ (llorar) ese niño? Está solo en la banca.",
+  "inf": "llorar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "llorará",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una pregunta de duda sobre ahora va en futuro.",
+  "why_en": "A wondering question about now takes the future.",
+  "en": "Why can that boy be crying? He is alone on the bench.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi hermana no quiere cenar; se ___ (sentir) mal.",
+  "inf": "sentir",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "sentirá",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "My sister does not want dinner; she must feel sick.",
+  "band": "B1"
+ },
+ {
+  "q": "Esta sopa huele delicioso; ___ (llevar) cilantro.",
+  "inf": "llevar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "llevará",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "This soup smells delicious; it must have cilantro in it.",
+  "band": "B1"
+ },
+ {
+  "q": "Ese equipo juega muy bien; ___ (ganar) casi todos sus partidos.",
+  "inf": "ganar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "ganará",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "That team plays very well; it must win almost all its matches.",
+  "band": "B1"
+ },
+ {
+  "q": "Huele a arepa asada; la vecina ___ (estar) cocinando otra vez.",
+  "inf": "estar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "estará",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Suponer algo del presente (huele) se hace con futuro.",
+  "why_en": "Guessing about the present (it smells) uses the future.",
+  "en": "It smells of grilled arepa; the neighbour must be cooking again.",
+  "band": "B1"
+ },
+ {
+  "q": "Tu papá ___ (sentir) orgullo de ti, aunque no lo diga.",
+  "inf": "sentir",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "sentirá",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "Your dad must feel proud of you, even if he does not say it.",
+  "band": "B1"
+ },
+ {
+  "q": "Ellos ___ (saber) más que nosotros; llevan veinte años en el negocio.",
+  "inf": "saber",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "sabrán",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "They must know more than we do; they have been in the business for twenty years.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando veas la casa, ___ (querer) comprarla.",
+  "inf": "querer",
+  "tense": "futuro",
+  "person": "tú",
+  "answer": "querrás",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"cuando\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"cuando\" + subjunctive, the main clause takes the future.",
+  "en": "When you see the house, you will want to buy it.",
+  "band": "B1"
+ },
+ {
+  "q": "En cuanto llegue el taxi, nosotros ___ (bajar) las maletas.",
+  "inf": "bajar",
+  "tense": "futuro",
+  "person": "nosotros",
+  "answer": "bajaremos",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"en cuanto\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"en cuanto\" + subjunctive, the main clause takes the future.",
+  "en": "As soon as the taxi arrives, we will bring the suitcases down.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando Camilo cumpla dieciocho, ___ (sacar) la licencia de conducción.",
+  "inf": "sacar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "sacará",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"cuando\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"cuando\" + subjunctive, the main clause takes the future.",
+  "en": "When Camilo turns eighteen, he will get his driver's license.",
+  "band": "B1"
+ },
+ {
+  "q": "Hasta que ustedes terminen, yo no me ___ (ir) de la oficina.",
+  "inf": "ir",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "iré",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"hasta que\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"hasta que\" + subjunctive, the main clause takes the future.",
+  "en": "Until you finish, I will not leave the office.",
+  "band": "B2"
+ },
+ {
+  "q": "Después de que cene, Sofía ___ (lavar) los platos.",
+  "inf": "lavar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "lavará",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"después de que\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"después de que\" + subjunctive, the main clause takes the future.",
+  "en": "After she has dinner, Sofía will wash the dishes.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando mis hijos crezcan, ___ (vender) esta casa y me iré al campo.",
+  "inf": "vender",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "venderé",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"cuando\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"cuando\" + subjunctive, the main clause takes the future.",
+  "en": "When my children grow up, I will sell this house and move to the countryside.",
+  "band": "B1"
+ },
+ {
+  "q": "Tan pronto como pueda, te ___ (devolver) la plata.",
+  "inf": "devolver",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "devolveré",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"tan pronto como\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"tan pronto como\" + subjunctive, the main clause takes the future.",
+  "en": "As soon as I can, I will give you back the money.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando los invitados lleguen, el mesero ___ (servir) el vino.",
+  "inf": "servir",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "servirá",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"cuando\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"cuando\" + subjunctive, the main clause takes the future.",
+  "en": "When the guests arrive, the waiter will serve the wine.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando salgas del examen, me ___ (contar) todo.",
+  "inf": "contar",
+  "tense": "futuro",
+  "person": "tú",
+  "answer": "contarás",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"cuando\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"cuando\" + subjunctive, the main clause takes the future.",
+  "en": "When you come out of the exam, you will tell me everything.",
+  "band": "B1"
+ },
+ {
+  "q": "Si sigues así, tu jefe se ___ (molestar).",
+  "inf": "molestar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "molestará",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If you keep this up, your boss will get annoyed.",
+  "band": "A2"
+ },
+ {
+  "q": "Si llamas ahora, la doctora te ___ (dar) la cita hoy mismo.",
+  "inf": "dar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "dará",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If you call now, the doctor will give you an appointment today.",
+  "band": "A2"
+ },
+ {
+  "q": "Si vienes a Cartagena, te ___ (llevar) a la Ciudad Amurallada.",
+  "inf": "llevar",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "llevaré",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If you come to Cartagena, I will take you to the Walled City.",
+  "band": "A2"
+ },
+ {
+  "q": "Si el jefe nos deja salir temprano, ___ (ir) al cine.",
+  "inf": "ir",
+  "tense": "futuro",
+  "person": "nosotros",
+  "answer": "iremos",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If the boss lets us leave early, we will go to the movies.",
+  "band": "A2"
+ },
+ {
+  "q": "Si mis papás no me prestan el carro, yo ___ (tomar) el bus.",
+  "inf": "tomar",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "tomaré",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If my parents do not lend me the car, I will take the bus.",
+  "band": "A2"
+ },
+ {
+  "q": "Si ganas el concurso, ¿qué ___ (hacer) con el premio?",
+  "inf": "hacer",
+  "tense": "futuro",
+  "person": "tú",
+  "answer": "harás",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro. También se oye el condicional.",
+  "why_en": "With si + present, the result takes the future. The conditional is also heard.",
+  "en": "If you win the contest, what will you do with the prize?",
+  "band": "A2",
+  "also": [
+   "harías"
+  ]
+ },
+ {
+  "q": "Si se cae el jugo, tu camisa ___ (quedar) manchada.",
+  "inf": "quedar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "quedará",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If the juice spills, your shirt will end up stained.",
+  "band": "A2"
+ },
+ {
+  "q": "Si no pagan hoy, la empresa les ___ (cortar) el servicio.",
+  "inf": "cortar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "cortará",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If they do not pay today, the company will cut off their service.",
+  "band": "A2"
+ },
+ {
+  "q": "Después de esta cirugía, tu abuelo ___ (caminar) mucho mejor.",
+  "inf": "caminar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "caminará",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Una predicción va en futuro.",
+  "why_en": "A prediction takes the future.",
+  "en": "After this surgery, your grandfather will walk much better.",
+  "band": "A2"
+ },
+ {
+  "q": "Te garantizo que este celular te ___ (durar) años.",
+  "inf": "durar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "durará",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "\"Te garantizo\": una promesa o predicción va en futuro.",
+  "why_en": "\"Te garantizo\": a promise or prediction takes the future.",
+  "en": "I guarantee this cell phone will last you years.",
+  "band": "A2"
+ },
+ {
+  "q": "Mi hijo ___ (ser) ingeniero algún día, estoy segura.",
+  "inf": "ser",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "será",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "\"Estoy segura\": una promesa o predicción va en futuro.",
+  "why_en": "\"Estoy segura\": a promise or prediction takes the future.",
+  "en": "My son will be an engineer someday, I am sure.",
+  "band": "A2"
+ },
+ {
+  "q": "No te lo ___ (perdonar) nunca si me mientes otra vez.",
+  "inf": "perdonar",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "perdonaré",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Una advertencia sobre lo que pasará va en futuro.",
+  "why_en": "A warning about what will happen takes the future.",
+  "en": "I will never forgive you if you lie to me again.",
+  "band": "A2"
+ },
+ {
+  "q": "Esta vez sí ___ (cumplir) mi palabra, de verdad.",
+  "inf": "cumplir",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "cumpliré",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "\"De verdad\": una promesa o predicción va en futuro.",
+  "why_en": "\"De verdad\": a promise or prediction takes the future.",
+  "en": "This time I will keep my word, really.",
+  "band": "A2"
+ },
+ {
+  "q": "Mañana ustedes ___ (aprender) a hacer sancocho.",
+  "inf": "aprender",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "aprenderán",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Una promesa va en futuro.",
+  "why_en": "A promise takes the future.",
+  "en": "Tomorrow you will learn to make sancocho.",
+  "band": "A2"
+ },
+ {
+  "q": "Te aseguro que ustedes se ___ (divertir) en la feria.",
+  "inf": "divertir",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "divertirán",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "\"Te aseguro\": una promesa o predicción va en futuro.",
+  "why_en": "\"Te aseguro\": a promise or prediction takes the future.",
+  "en": "I assure you that you will have fun at the fair.",
+  "band": "A2"
+ },
+ {
+  "q": "Con tanto estudio, ___ (pasar) el examen sin problema.",
+  "inf": "pasar",
+  "tense": "futuro",
+  "person": "tú",
+  "answer": "pasarás",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Una predicción va en futuro.",
+  "why_en": "A prediction takes the future.",
+  "en": "With so much studying, you will pass the exam with no problem.",
+  "band": "A2"
+ },
+ {
+  "q": "Si Dios quiere, el otro año yo ___ (abrir) mi propio restaurante.",
+  "inf": "abrir",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "abriré",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "\"Si Dios quiere\": una promesa o predicción va en futuro.",
+  "why_en": "\"Si Dios quiere\": a promise or prediction takes the future.",
+  "en": "God willing, next year I will open my own restaurant.",
+  "band": "A2"
+ },
+ {
+  "q": "El año entrante los precios ___ (subir) otra vez.",
+  "inf": "subir",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "subirán",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"El año entrante\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"El año entrante\" points to the future: simple future.",
+  "en": "Next year prices will go up again.",
+  "band": "A2"
+ },
+ {
+  "q": "Mañana en la tarde yo ___ (llevar) a mi mamá al médico.",
+  "inf": "llevar",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "llevaré",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"Mañana en la tarde\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"Mañana en la tarde\" points to the future: simple future.",
+  "en": "Tomorrow afternoon I will take my mom to the doctor.",
+  "band": "A2"
+ },
+ {
+  "q": "El próximo mes Juan ___ (comenzar) a trabajar en un banco.",
+  "inf": "comenzar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "comenzará",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"El próximo mes\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"El próximo mes\" points to the future: simple future.",
+  "en": "Next month Juan will start working at a bank.",
+  "band": "A2"
+ },
+ {
+  "q": "Dentro de unos años tú ___ (recordar) esta época con cariño.",
+  "inf": "recordar",
+  "tense": "futuro",
+  "person": "tú",
+  "answer": "recordarás",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"Dentro de unos años\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"Dentro de unos años\" points to the future: simple future.",
+  "en": "In a few years you will remember this time fondly.",
+  "band": "B1"
+ },
+ {
+  "q": "El jueves próximo el alcalde ___ (visitar) nuestro barrio.",
+  "inf": "visitar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "visitará",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"El jueves próximo\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"El jueves próximo\" points to the future: simple future.",
+  "en": "Next Thursday the mayor will visit our neighborhood.",
+  "band": "A2"
+ },
+ {
+  "q": "A las diez de la noche nosotros ___ (cenar) en un restaurante de Usaquén.",
+  "inf": "cenar",
+  "tense": "futuro",
+  "person": "nosotros",
+  "answer": "cenaremos",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"A las diez de la noche\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"A las diez de la noche\" points to the future: simple future.",
+  "en": "At ten tonight we will have dinner at a restaurant in Usaquén.",
+  "band": "A2"
+ },
+ {
+  "q": "Dentro de una hora te ___ (enviar) el archivo por correo.",
+  "inf": "enviar",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "enviaré",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"Dentro de una hora\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"Dentro de una hora\" points to the future: simple future.",
+  "en": "In an hour I will send you the file by email.",
+  "band": "A2"
+ },
+ {
+  "q": "Esta tarde el técnico ___ (venir) a revisar el internet.",
+  "inf": "venir",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "vendrá",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"Esta tarde\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"Esta tarde\" points to the future: simple future.",
+  "en": "This afternoon the technician will come to check the internet.",
+  "band": "A2"
+ },
+ {
+  "q": "El próximo año escolar mis niños ___ (cambiar) de colegio.",
+  "inf": "cambiar",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "cambiarán",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"El próximo año escolar\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"El próximo año escolar\" points to the future: simple future.",
+  "en": "Next school year my kids will change schools.",
+  "band": "A2"
+ },
+ {
+  "q": "A partir de enero, la empresa ___ (pagar) los sueldos cada quince días.",
+  "inf": "pagar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "pagará",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"A partir de enero\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"A partir de enero\" points to the future: simple future.",
+  "en": "Starting in January, the company will pay salaries every two weeks.",
+  "band": "B1"
+ },
+ {
+  "q": "Algún día yo ___ (escribir) un libro sobre mi pueblo.",
+  "inf": "escribir",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "escribiré",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"Algún día\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"Algún día\" points to the future: simple future.",
+  "en": "Someday I will write a book about my hometown.",
+  "band": "A2"
+ },
+ {
+  "q": "El domingo nosotros ___ (jugar) contra el equipo de Pereira.",
+  "inf": "jugar",
+  "tense": "futuro",
+  "person": "nosotros",
+  "answer": "jugaremos",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"El domingo\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"El domingo\" points to the future: simple future.",
+  "en": "On Sunday we will play against the Pereira team.",
+  "band": "A2"
+ },
+ {
+  "q": "Mañana el colegio ___ (cerrar) a las doce por el paro.",
+  "inf": "cerrar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "cerrará",
+  "use": "futuro con marcador de tiempo: lo que pasará",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "\"Mañana\" apunta al futuro: va el futuro simple.",
+  "why_en": "\"Mañana\" points to the future: simple future.",
+  "en": "Tomorrow the school will close at noon because of the strike.",
+  "band": "A2"
+ },
+ {
+  "q": "Esa señora siempre te saluda con cariño; ___ (conocer) a tu mamá.",
+  "inf": "conocer",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "conocerá",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Suponer algo del presente (siempre te saluda) se hace con futuro.",
+  "why_en": "Guessing about the present (she always greets you) uses the future.",
+  "en": "That lady always greets you warmly; she must know your mom.",
+  "band": "B1"
+ },
+ {
+  "q": "Hace rato no responde; ___ (andar) sin batería.",
+  "inf": "andar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "andará",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "He has not answered for a while; he must be out of battery.",
+  "band": "B1"
+ },
+ {
+  "q": "¿Qué le ___ (pasar) a Marta? Está llorando en el baño.",
+  "inf": "pasar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "pasará",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Preguntarse algo del presente (está llorando) se hace con futuro.",
+  "why_en": "Wondering about the present (she is crying) uses the future.",
+  "en": "What can be wrong with Marta? She is crying in the bathroom.",
+  "band": "B1"
+ },
+ {
+  "q": "Con ese acento, ellos ___ (venir) de la costa.",
+  "inf": "venir",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "vendrán",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "With that accent, they must come from the coast.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi abuela no encuentra las gafas; ___ (estar) en la cocina, como siempre.",
+  "inf": "estar",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "estarán",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Suponer algo del presente (no las encuentra) se hace con futuro.",
+  "why_en": "Guessing about the present (she can't find them) uses the future.",
+  "en": "My grandmother can't find her glasses; they'll be in the kitchen, as always.",
+  "band": "B2"
+ },
+ {
+  "q": "El restaurante está lleno; la comida ___ (valer) la pena.",
+  "inf": "valer",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "valdrá",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "The restaurant is packed; the food must be worth it.",
+  "band": "B1"
+ },
+ {
+  "q": "Hoy no pasa el bus; los conductores ___ (seguir) en paro.",
+  "inf": "seguir",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "seguirán",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "The bus is not running today; the drivers must still be on strike.",
+  "band": "B1"
+ },
+ {
+  "q": "Ese perro ladra sin parar; ___ (querer) salir.",
+  "inf": "querer",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "querrá",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "That dog barks nonstop; it must want to go out.",
+  "band": "B1"
+ },
+ {
+  "q": "Luis bosteza todo el tiempo; ___ (necesitar) un tinto.",
+  "inf": "necesitar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "necesitará",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "Luis keeps yawning; he must need a coffee.",
+  "band": "B1"
+ },
+ {
+  "q": "No hay nadie en la oficina; todos ___ (comer) afuera.",
+  "inf": "comer",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "comerán",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "Nobody is in the office; everyone must be eating out.",
+  "band": "B1"
+ },
+ {
+  "q": "¿Cuánto ___ (costar) un pasaje a Leticia? Debe ser caro.",
+  "inf": "costar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "costará",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una pregunta de duda sobre ahora va en futuro. También se oye el condicional.",
+  "why_en": "A wondering question about now takes the future. The conditional is also heard.",
+  "en": "How much can a ticket to Leticia cost? It must be expensive.",
+  "band": "B1",
+  "also": [
+   "costaría"
+  ]
+ },
+ {
+  "q": "Oigo una moto afuera; ___ (ser) mi sobrino, que siempre llega a esta hora.",
+  "inf": "ser",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "será",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Suponer algo del presente (oigo una moto) se hace con futuro.",
+  "why_en": "Guessing about the present (I hear a motorbike) uses the future.",
+  "en": "I hear a motorbike outside; it must be my nephew, he always arrives at this time.",
+  "band": "B1"
+ },
+ {
+  "q": "La profe sonríe mucho hoy; ___ (traer) buenas noticias.",
+  "inf": "traer",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "traerá",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "The teacher is smiling a lot today; she must have good news.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi hijo no habla del colegio; ___ (pensar) que no me importa.",
+  "inf": "pensar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "pensará",
+  "use": "futuro de probabilidad: una suposición sobre el presente",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Una suposición sobre ahora, sin hecho seguro, va en futuro.",
+  "why_en": "A guess about the present, with no sure fact, takes the future.",
+  "en": "My son does not talk about school; he must think I do not care.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando estés en Cali, seguro que ___ (probar) el cholado.",
+  "inf": "probar",
+  "tense": "futuro",
+  "person": "tú",
+  "answer": "probarás",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "\"Seguro que\" predice algo futuro (cuando estés): futuro.",
+  "why_en": "\"Seguro que\" predicts something future (when you are there): future.",
+  "en": "When you are in Cali, you will surely try cholado.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando mis papás vean mi nota, ___ (decir) que valió la pena.",
+  "inf": "decir",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "dirán",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"cuando\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"cuando\" + subjunctive, the main clause takes the future.",
+  "en": "When my parents see my grade, they will say it was worth it.",
+  "band": "B1"
+ },
+ {
+  "q": "Mientras no llueva más, el río no ___ (crecer).",
+  "inf": "crecer",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "crecerá",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"mientras\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"mientras\" + subjunctive, the main clause takes the future.",
+  "en": "As long as it does not rain more, the river will not rise.",
+  "band": "B2"
+ },
+ {
+  "q": "Apenas abra el banco, yo ___ (sacar) la plata.",
+  "inf": "sacar",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "sacaré",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"apenas\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"apenas\" + subjunctive, the main clause takes the future.",
+  "en": "As soon as the bank opens, I will withdraw the money.",
+  "band": "B1"
+ },
+ {
+  "q": "Antes de que cierren, nosotros ___ (llegar) al mercado.",
+  "inf": "llegar",
+  "tense": "futuro",
+  "person": "nosotros",
+  "answer": "llegaremos",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"antes de que\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"antes de que\" + subjunctive, the main clause takes the future.",
+  "en": "Before they close, we will get to the market.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando consigas trabajo, ___ (ayudar) a tus papás con el arriendo.",
+  "inf": "ayudar",
+  "tense": "futuro",
+  "person": "tú",
+  "answer": "ayudarás",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"cuando\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"cuando\" + subjunctive, the main clause takes the future.",
+  "en": "When you get a job, you will help your parents with the rent.",
+  "band": "B1"
+ },
+ {
+  "q": "En cuanto sepamos algo, les ___ (mandar) un mensaje.",
+  "inf": "mandar",
+  "tense": "futuro",
+  "person": "nosotros",
+  "answer": "mandaremos",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"en cuanto\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"en cuanto\" + subjunctive, the main clause takes the future.",
+  "en": "As soon as we know something, we will send you a message.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando abran las puertas, la gente ___ (entrar) corriendo.",
+  "inf": "entrar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "entrará",
+  "use": "cuando + presente de subjuntivo: la principal va en futuro",
+  "confuse": [
+   "condicional",
+   "presubj"
+  ],
+  "why_es": "Tras \"cuando\" + subjuntivo, la principal va en futuro.",
+  "why_en": "After \"cuando\" + subjunctive, the main clause takes the future.",
+  "en": "When they open the doors, the crowd will rush in.",
+  "band": "B1"
+ },
+ {
+  "q": "Si el examen me sale mal, mi mamá me ___ (quitar) el celular.",
+  "inf": "quitar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "quitará",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If the exam goes badly, my mom will take away my cell phone.",
+  "band": "A2"
+ },
+ {
+  "q": "Si Valentina prueba este postre, ___ (pedir) otro.",
+  "inf": "pedir",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "pedirá",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If Valentina tries this dessert, she will ask for another.",
+  "band": "A2"
+ },
+ {
+  "q": "Si encuentras mis llaves, me las ___ (traer), ¿sí?",
+  "inf": "traer",
+  "tense": "futuro",
+  "person": "tú",
+  "answer": "traerás",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If you find my keys, you will bring them to me, right?",
+  "band": "A2"
+ },
+ {
+  "q": "Si seguimos por esta calle, ___ (llegar) al parque en cinco minutos.",
+  "inf": "llegar",
+  "tense": "futuro",
+  "person": "nosotros",
+  "answer": "llegaremos",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If we keep going down this street, we will reach the park in five minutes.",
+  "band": "A2"
+ },
+ {
+  "q": "Si el niño sigue corriendo, se ___ (caer).",
+  "inf": "caer",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "caerá",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If the boy keeps running, he will fall.",
+  "band": "A2"
+ },
+ {
+  "q": "Si no cierras la ventana, ___ (entrar) el frío.",
+  "inf": "entrar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "entrará",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If you do not close the window, the cold will come in.",
+  "band": "A2"
+ },
+ {
+  "q": "Si el banco me aprueba el préstamo, ___ (comprar) la casa.",
+  "inf": "comprar",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "compraré",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If the bank approves my loan, I will buy the house.",
+  "band": "A2"
+ },
+ {
+  "q": "Si ustedes llegan temprano, ___ (conseguir) buenos puestos.",
+  "inf": "conseguir",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "conseguirán",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If you arrive early, you will get good seats.",
+  "band": "A2"
+ },
+ {
+  "q": "Si Pedro vende el lote, ___ (ganar) mucho dinero.",
+  "inf": "ganar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "ganará",
+  "use": "si + presente: el resultado va en futuro",
+  "confuse": [
+   "condicional",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con si + presente, el resultado va en futuro.",
+  "why_en": "With si + present, the result takes the future.",
+  "en": "If Pedro sells the lot, he will make a lot of money.",
+  "band": "A2"
+ },
+ {
+  "q": "No se preocupen, ___ (encontrar) una solución juntos.",
+  "inf": "encontrar",
+  "tense": "futuro",
+  "person": "nosotros",
+  "answer": "encontraremos",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Una promesa va en futuro.",
+  "why_en": "A promise takes the future.",
+  "en": "Do not worry, we will find a solution together.",
+  "band": "A2"
+ },
+ {
+  "q": "Seguro que la vida nos ___ (llevar) por buen camino.",
+  "inf": "llevar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "llevará",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "\"Seguro que\": una promesa o predicción va en futuro.",
+  "why_en": "\"Seguro que\": a promise or prediction takes the future.",
+  "en": "Surely life will lead us down a good road.",
+  "band": "B1"
+ },
+ {
+  "q": "Prometo que no ___ (volver) a llegar tarde.",
+  "inf": "volver",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "volveré",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "\"Prometo\": una promesa o predicción va en futuro.",
+  "why_en": "\"Prometo\": a promise or prediction takes the future.",
+  "en": "I promise I will not be late again.",
+  "band": "A2"
+ },
+ {
+  "q": "Los jóvenes de hoy ___ (vivir) mejor que nosotros.",
+  "inf": "vivir",
+  "tense": "futuro",
+  "person": "ellos",
+  "answer": "vivirán",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Una predicción va en futuro.",
+  "why_en": "A prediction takes the future.",
+  "en": "Young people today will live better than we do.",
+  "band": "A2"
+ },
+ {
+  "q": "El abogado dice que el juez ___ (aceptar) nuestra apelación.",
+  "inf": "aceptar",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "aceptará",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Una predicción va en futuro. También se oye el condicional.",
+  "why_en": "A prediction takes the future. The conditional is also heard.",
+  "en": "The lawyer says the judge will accept our appeal.",
+  "band": "B1",
+  "also": [
+   "aceptaría"
+  ]
+ },
+ {
+  "q": "Tranquila, mi amor, todo ___ (salir) bien.",
+  "inf": "salir",
+  "tense": "futuro",
+  "person": "él/ella",
+  "answer": "saldrá",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "\"Tranquila\": una promesa o predicción va en futuro.",
+  "why_en": "\"Tranquila\": a promise or prediction takes the future.",
+  "en": "Relax, my love, everything will turn out fine.",
+  "band": "A2"
+ },
+ {
+  "q": "Te ___ (esperar) en la puerta del teatro, no te demores.",
+  "inf": "esperar",
+  "tense": "futuro",
+  "person": "yo",
+  "answer": "esperaré",
+  "use": "promesa o predicción",
+  "confuse": [
+   "condicional",
+   "presubj",
+   "imperfecto"
+  ],
+  "why_es": "Una promesa va en futuro.",
+  "why_en": "A promise takes the future.",
+  "en": "I will wait for you at the theater door, do not take long.",
+  "band": "A2"
+ }
+]

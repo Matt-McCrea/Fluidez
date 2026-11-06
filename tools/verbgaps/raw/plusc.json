@@ -1,0 +1,2591 @@
+[
+ {
+  "q": "Cuando llegué a la estación, el bus ya ___ (salir).",
+  "inf": "salir",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había salido",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando llegué\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando llegué\" the action came before another past moment.",
+  "en": "When I got to the station, the bus had already left.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando Camilo llamó, nosotros ya ___ (cenar) y estábamos lavando los platos.",
+  "inf": "cenar",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos cenado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando Camilo llamó\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando Camilo llamó\" the action came before another past moment.",
+  "en": "When Camilo called, we had already had dinner and were washing the dishes.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo ya ___ (terminar) la tarea cuando mi mamá me pidió ayuda.",
+  "inf": "terminar",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había terminado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando me pidió\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando me pidió\" the action came before another past moment.",
+  "en": "I had already finished my homework when my mom asked me for help.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando fuimos a la tienda, ya ___ (vender) todos los pasteles.",
+  "inf": "vender",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían vendido",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando fuimos\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando fuimos\" the action came before another past moment.",
+  "en": "When we went to the store, they had already sold all the pastries.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegué a tu casa, tú ya ___ (hacer) la maleta.",
+  "inf": "hacer",
+  "tense": "plusc",
+  "person": "tú",
+  "answer": "habías hecho",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando llegué\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando llegué\" the action came before another past moment.",
+  "en": "When I got to your house, you had already packed.",
+  "band": "B1"
+ },
+ {
+  "q": "Llegamos al cine y la película ya ___ (empezar).",
+  "inf": "empezar",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había empezado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"llegamos y ya\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"llegamos y ya\" the action came before another past moment.",
+  "en": "We got to the cinema and the movie had already started.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando abrimos la puerta, los invitados ya ___ (llegar).",
+  "inf": "llegar",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían llegado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando abrimos\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando abrimos\" the action came before another past moment.",
+  "en": "When we opened the door, the guests had already arrived.",
+  "band": "B1"
+ },
+ {
+  "q": "No quise almorzar con ellos porque yo ya ___ (comer).",
+  "inf": "comer",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había comido",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"porque ya\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"porque ya\" the action came before another past moment.",
+  "en": "I didn't want to have lunch with them because I had already eaten.",
+  "band": "B1"
+ },
+ {
+  "q": "Antes de mudarnos a Medellín, nosotros ya ___ (vivir) en tres ciudades.",
+  "inf": "vivir",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos vivido",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"antes de mudarnos\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"antes de mudarnos\" the action came before another past moment.",
+  "en": "Before moving to Medellín, we had already lived in three cities.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando Valentina quiso explicarme, su hermano ya me lo ___ (decir) todo.",
+  "inf": "decir",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había dicho",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando quiso\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando quiso\" the action came before another past moment.",
+  "en": "When Valentina tried to explain, her brother had already told me everything.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando el niño llegó, sus primos ya ___ (romper) la ventana.",
+  "inf": "romper",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían roto",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando llegó\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando llegó\" the action came before another past moment.",
+  "en": "When the boy arrived, his cousins had already broken the window.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando salió la serie, yo ya ___ (ver) la película en el cine.",
+  "inf": "ver",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había visto",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando salió\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando salió\" the action came before another past moment.",
+  "en": "When the series came out, I had already seen the movie in the cinema.",
+  "band": "B1"
+ },
+ {
+  "q": "Su abuelo ya ___ (morir) cuando ella nació.",
+  "inf": "morir",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había muerto",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando nació\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando nació\" the action came before another past moment.",
+  "en": "Her grandfather had already died when she was born.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegaron los invitados, nosotros ya ___ (poner) la mesa.",
+  "inf": "poner",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos puesto",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando llegaron\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando llegaron\" the action came before another past moment.",
+  "en": "When the guests arrived, we had already set the table.",
+  "band": "B1"
+ },
+ {
+  "q": "Antes de la reunión, yo ya ___ (escribir) el informe completo.",
+  "inf": "escribir",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había escrito",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"antes de la reunión\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"antes de la reunión\" the action came before another past moment.",
+  "en": "Before the meeting, I had already written the whole report.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando fui a buscarte, tú ya ___ (volver) a casa.",
+  "inf": "volver",
+  "tense": "plusc",
+  "person": "tú",
+  "answer": "habías vuelto",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando fui\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando fui\" the action came before another past moment.",
+  "en": "When I went to look for you, you had already gone back home.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegamos al banco, ya ___ (abrir) las puertas.",
+  "inf": "abrir",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían abierto",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando llegamos\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando llegamos\" the action came before another past moment.",
+  "en": "When we got to the bank, they had already opened the doors.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando prendimos el televisor, los locales ya ___ (meter) dos goles.",
+  "inf": "meter",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían metido",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando prendimos\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando prendimos\" the action came before another past moment.",
+  "en": "When we turned on the TV, the home team had already scored two goals.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando mi hermano volvió de la fiesta, yo ya me ___ (dormir).",
+  "inf": "dormir",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había dormido",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando volvió\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando volvió\" the action came before another past moment.",
+  "en": "When my brother got back from the party, I had already fallen asleep.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegamos a la panadería, ya ___ (cerrar).",
+  "inf": "cerrar",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había cerrado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando llegamos\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando llegamos\" the action came before another past moment.",
+  "en": "When we got to the bakery, it had already closed.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando fuimos al mercado, los vecinos ya ___ (comprar) toda la fruta.",
+  "inf": "comprar",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían comprado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando fuimos\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando fuimos\" the action came before another past moment.",
+  "en": "When we went to the market, the neighbors had already bought all the fruit.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando mi profesor mencionó el libro, yo ya lo ___ (leer).",
+  "inf": "leer",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había leído",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando mencionó\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando mencionó\" the action came before another past moment.",
+  "en": "When my teacher mentioned the book, I had already read it.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando te presenté a Laura, tú ya la ___ (ver) una vez en la universidad.",
+  "inf": "ver",
+  "tense": "plusc",
+  "person": "tú",
+  "answer": "habías visto",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando te presenté\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando te presenté\" the action came before another past moment.",
+  "en": "When I introduced you to Laura, you had already seen her once at the university.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando quise pagar la cuenta, Andrés ya la ___ (pagar).",
+  "inf": "pagar",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había pagado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando quise\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando quise\" the action came before another past moment.",
+  "en": "When I wanted to pay the bill, Andrés had already paid it.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegó el plomero, nosotros ya ___ (arreglar) el tubo.",
+  "inf": "arreglar",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos arreglado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando llegó\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando llegó\" the action came before another past moment.",
+  "en": "When the plumber arrived, we had already fixed the pipe.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llamé a mis tíos, ellos ya se ___ (ir) al aeropuerto.",
+  "inf": "ir",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían ido",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando llamé\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando llamé\" the action came before another past moment.",
+  "en": "When I called my aunt and uncle, they had already left for the airport.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando me pidieron la copia, yo ya la ___ (traer) a la oficina.",
+  "inf": "traer",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había traído",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando me pidieron\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando me pidieron\" the action came before another past moment.",
+  "en": "When they asked me for the copy, I had already brought it to the office.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegó mi papá, mi mamá ya ___ (hacer) el almuerzo.",
+  "inf": "hacer",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había hecho",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando llegó\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando llegó\" the action came before another past moment.",
+  "en": "When my dad arrived, my mom had already made lunch.",
+  "band": "B1"
+ },
+ {
+  "q": "Nosotros ya ___ (leer) esa novela cuando nos invitaron a ver la película.",
+  "inf": "leer",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos leído",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando nos invitaron\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando nos invitaron\" the action came before another past moment.",
+  "en": "We had already read that novel when they invited us to see the movie.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando entré a la cocina, mis hermanos ya ___ (poner) los platos.",
+  "inf": "poner",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían puesto",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando entré\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando entré\" the action came before another past moment.",
+  "en": "When I walked into the kitchen, my brothers had already put out the plates.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando me lo contaron, yo ya lo ___ (oír) de boca de mi prima.",
+  "inf": "oír",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había oído",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando me lo contaron\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando me lo contaron\" the action came before another past moment.",
+  "en": "When they told me, I had already heard it from my cousin.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando Sofía regresó de Cali, su novio ya ___ (volver) a Bogotá.",
+  "inf": "volver",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había vuelto",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando regresó\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando regresó\" the action came before another past moment.",
+  "en": "When Sofía came back from Cali, her boyfriend had already gone back to Bogotá.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegué al taller, tú ya ___ (empezar) a pintar la pared.",
+  "inf": "empezar",
+  "tense": "plusc",
+  "person": "tú",
+  "answer": "habías empezado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando llegué\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando llegué\" the action came before another past moment.",
+  "en": "When I got to the workshop, you had already started painting the wall.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando se fue la luz, nosotros ya ___ (acabar) de cenar.",
+  "inf": "acabar",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos acabado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando se fue\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando se fue\" the action came before another past moment.",
+  "en": "When the power went out, we had already finished dinner.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegamos a la casa, mis papás ya ___ (salir) para la finca.",
+  "inf": "salir",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían salido",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando llegamos\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando llegamos\" the action came before another past moment.",
+  "en": "When we got to the house, my parents had already left for the farm.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando me ofrecieron café, yo ya ___ (tomar) tres tazas.",
+  "inf": "tomar",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había tomado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando me ofrecieron\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando me ofrecieron\" the action came before another past moment.",
+  "en": "When they offered me coffee, I had already had three cups.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando el profesor pidió el ensayo, Daniela ya lo ___ (escribir).",
+  "inf": "escribir",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había escrito",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando pidió\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando pidió\" the action came before another past moment.",
+  "en": "When the teacher asked for the essay, Daniela had already written it.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegó la policía, los ladrones ya se ___ (llevar) el carro.",
+  "inf": "llevar",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían llevado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando llegó\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando llegó\" the action came before another past moment.",
+  "en": "When the police arrived, the thieves had already driven off with the car.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando encontré la billetera, yo ya ___ (perder) la esperanza.",
+  "inf": "perder",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había perdido",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando encontré\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando encontré\" the action came before another past moment.",
+  "en": "When I found the wallet, I had already lost hope.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegamos, la abuela ya ___ (preparar) los tamales para todos.",
+  "inf": "preparar",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había preparado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando llegamos\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando llegamos\" the action came before another past moment.",
+  "en": "When we arrived, grandma had already made tamales for everyone.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando nos sentamos en el estadio, los jugadores ya ___ (entrar) a la cancha.",
+  "inf": "entrar",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían entrado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando nos sentamos\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando nos sentamos\" the action came before another past moment.",
+  "en": "When we sat down in the stadium, the players had already come onto the field.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando me dieron la noticia, yo ya la ___ (escuchar) en la radio.",
+  "inf": "escuchar",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había escuchado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando me dieron\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando me dieron\" the action came before another past moment.",
+  "en": "When they gave me the news, I had already heard it on the radio.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando te llamé, tú ya me ___ (dejar) tres mensajes.",
+  "inf": "dejar",
+  "tense": "plusc",
+  "person": "tú",
+  "answer": "habías dejado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando te llamé\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando te llamé\" the action came before another past moment.",
+  "en": "When I called you, you had already left me three messages.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando nos preguntaron el destino, nosotros ya ___ (decidir) viajar a Cartagena.",
+  "inf": "decidir",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos decidido",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando nos preguntaron\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando nos preguntaron\" the action came before another past moment.",
+  "en": "When they asked us the destination, we had already decided to travel to Cartagena.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando amaneció, Pedro ya se ___ (quedar) dormido en el sofá.",
+  "inf": "quedar",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había quedado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando amaneció\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando amaneció\" the action came before another past moment.",
+  "en": "By dawn, Pedro had already fallen asleep on the sofa.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando les mostré la foto, ellos ya ___ (olvidar) mi nombre.",
+  "inf": "olvidar",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían olvidado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando les mostré\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando les mostré\" the action came before another past moment.",
+  "en": "When I showed them the photo, they had already forgotten my name.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegó el nuevo jefe, yo ya ___ (cambiar) de trabajo.",
+  "inf": "cambiar",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había cambiado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando llegó\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando llegó\" the action came before another past moment.",
+  "en": "When the new boss arrived, I had already changed jobs.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando te escribí, tú ya ___ (recibir) el paquete del correo.",
+  "inf": "recibir",
+  "tense": "plusc",
+  "person": "tú",
+  "answer": "habías recibido",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando te escribí\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando te escribí\" the action came before another past moment.",
+  "en": "When I wrote to you, you had already received the package from the post office.",
+  "band": "B1"
+ },
+ {
+  "q": "Para cuando llegó el recibo, nosotros ya ___ (pagar) la luz.",
+  "inf": "pagar",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos pagado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"para cuando llegó\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"para cuando llegó\" the action came before another past moment.",
+  "en": "By the time the bill came, we had already paid the electricity.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando fui a pedir el puesto, otra persona ya lo ___ (conseguir).",
+  "inf": "conseguir",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había conseguido",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando fui\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando fui\" the action came before another past moment.",
+  "en": "When I went to ask for the job, someone else had already gotten it.",
+  "band": "B1"
+ },
+ {
+  "q": "Para cuando regresaron del viaje, sus hijos ya ___ (romper) la lámpara.",
+  "inf": "romper",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían roto",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"para cuando regresaron\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"para cuando regresaron\" the action came before another past moment.",
+  "en": "By the time they got back from the trip, their kids had already broken the lamp.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando entré a la universidad, yo ya ___ (aprender) a programar.",
+  "inf": "aprender",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había aprendido",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando entré\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando entré\" the action came before another past moment.",
+  "en": "When I started university, I had already learned to program.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegó el mesero, tú ya ___ (beber) todo el jugo.",
+  "inf": "beber",
+  "tense": "plusc",
+  "person": "tú",
+  "answer": "habías bebido",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando llegó\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando llegó\" the action came before another past moment.",
+  "en": "When the waiter came, you had already drunk all the juice.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando empezó a llover, nosotros ya ___ (correr) cinco kilómetros.",
+  "inf": "correr",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos corrido",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando empezó\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando empezó\" the action came before another past moment.",
+  "en": "When it started to rain, we had already run five kilometers.",
+  "band": "B1"
+ },
+ {
+  "q": "Hasta ese día yo nunca ___ (probar) el ají.",
+  "inf": "probar",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había probado",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Nunca antes de un momento pasado: pluscuamperfecto; en Colombia también el pretérito.",
+  "why_en": "Never before a past moment: past perfect; in Colombia the preterite is also used.",
+  "en": "Until that day I had never tried hot sauce.",
+  "band": "B1",
+  "also": [
+   "probé"
+  ]
+ },
+ {
+  "q": "Hasta entonces nosotros nunca ___ (ver) el mar.",
+  "inf": "ver",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos visto",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"hasta entonces\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"hasta entonces\" we look back from a past moment at what had not happened yet.",
+  "en": "Until then we had never seen the sea.",
+  "band": "B1"
+ },
+ {
+  "q": "Hasta ese viaje, mis papás nunca ___ (viajar) en avión.",
+  "inf": "viajar",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían viajado",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"hasta ese viaje\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"hasta ese viaje\" we look back from a past moment at what had not happened yet.",
+  "en": "Until that trip, my parents had never flown.",
+  "band": "B1"
+ },
+ {
+  "q": "Hasta esa noche, Valentina nunca ___ (comer) sushi.",
+  "inf": "comer",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había comido",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Nunca antes de un momento pasado: pluscuamperfecto; en Colombia también el pretérito.",
+  "why_en": "Never before a past moment: past perfect; in Colombia the preterite is also used.",
+  "en": "Until that night, Valentina had never eaten sushi.",
+  "band": "B1",
+  "also": [
+   "comió"
+  ]
+ },
+ {
+  "q": "Antes de ese examen, yo nunca ___ (manejar) en la autopista.",
+  "inf": "manejar",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había manejado",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Nunca antes de un momento pasado: pluscuamperfecto; en Colombia también el pretérito.",
+  "why_en": "Never before a past moment: past perfect; in Colombia the preterite is also used.",
+  "en": "Before that exam, I had never driven on the highway.",
+  "band": "B1",
+  "also": [
+   "manejé"
+  ]
+ },
+ {
+  "q": "Hasta ese momento, tú nunca me ___ (decir) la verdad.",
+  "inf": "decir",
+  "tense": "plusc",
+  "person": "tú",
+  "answer": "habías dicho",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"hasta ese momento\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"hasta ese momento\" we look back from a past moment at what had not happened yet.",
+  "en": "Until that moment, you had never told me the truth.",
+  "band": "B1"
+ },
+ {
+  "q": "Hasta aquel año, nosotros nunca ___ (tener) carro propio.",
+  "inf": "tener",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos tenido",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"hasta aquel año\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"hasta aquel año\" we look back from a past moment at what had not happened yet.",
+  "en": "Until that year, we had never had a car of our own.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegamos a Bariloche, mis primos nunca ___ (conocer) la nieve.",
+  "inf": "conocer",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían conocido",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando llegamos\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"cuando llegamos\" we look back from a past moment at what had not happened yet.",
+  "en": "When we got to Bariloche, my cousins had never seen snow.",
+  "band": "B1"
+ },
+ {
+  "q": "Hasta que conoció a Mateo, Laura nunca se ___ (enamorar).",
+  "inf": "enamorarse",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había enamorado",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"hasta que conoció\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"hasta que conoció\" we look back from a past moment at what had not happened yet.",
+  "en": "Until she met Mateo, Laura had never fallen in love.",
+  "band": "B1"
+ },
+ {
+  "q": "Hasta la muerte de mi perro, yo nunca ___ (llorar) en público.",
+  "inf": "llorar",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había llorado",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"hasta la muerte\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"hasta la muerte\" we look back from a past moment at what had not happened yet.",
+  "en": "Until my dog died, I had never cried in public.",
+  "band": "B1"
+ },
+ {
+  "q": "Hasta esa fiesta, tú nunca ___ (cantar) delante de nadie.",
+  "inf": "cantar",
+  "tense": "plusc",
+  "person": "tú",
+  "answer": "habías cantado",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"hasta esa fiesta\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"hasta esa fiesta\" we look back from a past moment at what had not happened yet.",
+  "en": "Until that party, you had never sung in front of anyone.",
+  "band": "B1"
+ },
+ {
+  "q": "Hasta esa tarde, los gemelos nunca se ___ (pelear).",
+  "inf": "pelearse",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían peleado",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"hasta esa tarde\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"hasta esa tarde\" we look back from a past moment at what had not happened yet.",
+  "en": "Until that afternoon, the twins had never fought.",
+  "band": "B1"
+ },
+ {
+  "q": "Antes de abrir la tienda, nosotros nunca ___ (comprar) nada al por mayor.",
+  "inf": "comprar",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos comprado",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Nunca antes de un momento pasado: pluscuamperfecto; en Colombia también el pretérito.",
+  "why_en": "Never before a past moment: past perfect; in Colombia the preterite is also used.",
+  "en": "Before opening the shop, we had never bought anything wholesale.",
+  "band": "B1",
+  "also": [
+   "compramos"
+  ]
+ },
+ {
+  "q": "Hasta ese paseo, mi hija nunca ___ (montar) a caballo.",
+  "inf": "montar",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había montado",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"hasta ese paseo\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"hasta ese paseo\" we look back from a past moment at what had not happened yet.",
+  "en": "Until that outing, my daughter had never ridden a horse.",
+  "band": "B1"
+ },
+ {
+  "q": "Hasta la compra del apartamento, yo nunca ___ (firmar) un contrato tan largo.",
+  "inf": "firmar",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había firmado",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"hasta la compra\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"hasta la compra\" we look back from a past moment at what had not happened yet.",
+  "en": "Until I bought the apartment, I had never signed such a long contract.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando me llamaste, todavía no ___ (llegar) a la oficina.",
+  "inf": "llegar",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había llegado",
+  "use": "todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"todavía no\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"todavía no\" we look back from a past moment at what had not happened yet.",
+  "en": "When you called me, I still hadn't gotten to the office.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando entré al cuarto, mi hijo todavía no se ___ (despertar).",
+  "inf": "despertarse",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había despertado",
+  "use": "todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"todavía no\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"todavía no\" we look back from a past moment at what had not happened yet.",
+  "en": "When I went into the room, my son still hadn't woken up.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando abrió el restaurante, los clientes todavía no ___ (decidir) qué pedir.",
+  "inf": "decidir",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían decidido",
+  "use": "todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"todavía no\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"todavía no\" we look back from a past moment at what had not happened yet.",
+  "en": "When the restaurant opened, the customers still hadn't decided what to order.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando sonó el timbre, nosotros todavía no ___ (terminar) de limpiar.",
+  "inf": "terminar",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos terminado",
+  "use": "todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"todavía no\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"todavía no\" we look back from a past moment at what had not happened yet.",
+  "en": "When the doorbell rang, we still hadn't finished cleaning.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando pasé por tu casa, tú todavía no ___ (abrir) la tienda.",
+  "inf": "abrir",
+  "tense": "plusc",
+  "person": "tú",
+  "answer": "habías abierto",
+  "use": "todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"todavía no\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"todavía no\" we look back from a past moment at what had not happened yet.",
+  "en": "When I passed by your house, you still hadn't opened the shop.",
+  "band": "B1"
+ },
+ {
+  "q": "Anoche a las diez, Camilo todavía no ___ (volver) del trabajo.",
+  "inf": "volver",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había vuelto",
+  "use": "todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "\"Anoche a las diez, todavía no\": antes de un momento pasado, pluscuamperfecto.",
+  "why_en": "\"Last night at ten, still not\": before a past moment, past perfect.",
+  "en": "Last night at ten, Camilo still had not come back from work.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando empezó la clase, los estudiantes todavía no ___ (aparecer).",
+  "inf": "aparecer",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían aparecido",
+  "use": "todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"todavía no\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"todavía no\" we look back from a past moment at what had not happened yet.",
+  "en": "When class started, the students still hadn't shown up.",
+  "band": "B1"
+ },
+ {
+  "q": "Al terminar el mes, yo todavía no ___ (conseguir) trabajo.",
+  "inf": "conseguir",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había conseguido",
+  "use": "todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"todavía no\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"todavía no\" we look back from a past moment at what had not happened yet.",
+  "en": "By the end of the month, I still hadn't found a job.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegó el taxi, nosotros todavía no ___ (bajar) las maletas.",
+  "inf": "bajar",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos bajado",
+  "use": "todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"todavía no\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"todavía no\" we look back from a past moment at what had not happened yet.",
+  "en": "When the taxi came, we still hadn't brought down the suitcases.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegó la cuenta, la señora todavía no ___ (pedir) el postre.",
+  "inf": "pedir",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había pedido",
+  "use": "todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"todavía no\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"todavía no\" we look back from a past moment at what had not happened yet.",
+  "en": "When the bill came, the lady still hadn't ordered dessert.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando serví la sopa, tú todavía no ___ (probar) la ensalada.",
+  "inf": "probar",
+  "tense": "plusc",
+  "person": "tú",
+  "answer": "habías probado",
+  "use": "todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"todavía no\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"todavía no\" we look back from a past moment at what had not happened yet.",
+  "en": "When I served the soup, you still hadn't tried the salad.",
+  "band": "B1"
+ },
+ {
+  "q": "Hasta la semana pasada, yo todavía no ___ (recibir) la respuesta del banco.",
+  "inf": "recibir",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había recibido",
+  "use": "todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"todavía no\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"todavía no\" we look back from a past moment at what had not happened yet.",
+  "en": "Until last week, I still hadn't gotten the bank's reply.",
+  "band": "B1"
+ },
+ {
+  "q": "Antes de este torneo, mi equipo nunca ___ (ganar) un campeonato.",
+  "inf": "ganar",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había ganado",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Nunca antes de un momento pasado: pluscuamperfecto; en Colombia también el pretérito.",
+  "why_en": "Never before a past moment: past perfect; in Colombia the preterite is also used.",
+  "en": "Before this tournament, my team had never won a championship.",
+  "band": "B1",
+  "also": [
+   "ganó"
+  ]
+ },
+ {
+  "q": "Hasta el lunes, tú nunca ___ (perder) las llaves.",
+  "inf": "perder",
+  "tense": "plusc",
+  "person": "tú",
+  "answer": "habías perdido",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"hasta el lunes\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"hasta el lunes\" we look back from a past moment at what had not happened yet.",
+  "en": "Until Monday, you had never lost your keys.",
+  "band": "B1"
+ },
+ {
+  "q": "Hasta esa noche, el bebé nunca ___ (dormir) seis horas seguidas.",
+  "inf": "dormir",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había dormido",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Nunca antes de un momento pasado: pluscuamperfecto; en Colombia también el pretérito.",
+  "why_en": "Never before a past moment: past perfect; in Colombia the preterite is also used.",
+  "en": "Until that night, the baby had never slept six hours straight.",
+  "band": "B1",
+  "also": [
+   "durmió"
+  ]
+ },
+ {
+  "q": "Hasta los treinta años, yo nunca ___ (ir) a un concierto.",
+  "inf": "ir",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había ido",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"hasta los treinta\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"hasta los treinta\" we look back from a past moment at what had not happened yet.",
+  "en": "Until I was thirty, I had never been to a concert.",
+  "band": "B1"
+ },
+ {
+  "q": "Antes de la llamada de Ana, nosotros nunca ___ (pensar) en mudarnos.",
+  "inf": "pensar",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos pensado",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Nunca antes de un momento pasado: pluscuamperfecto; en Colombia también el pretérito.",
+  "why_en": "Never before a past moment: past perfect; in Colombia the preterite is also used.",
+  "en": "Before Ana's call, we had never thought about moving.",
+  "band": "B1",
+  "also": [
+   "pensamos"
+  ]
+ },
+ {
+  "q": "Hasta esa reunión, los dos socios nunca ___ (hablar) de plata.",
+  "inf": "hablar",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían hablado",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Nunca antes de un momento pasado: pluscuamperfecto; en Colombia también el pretérito.",
+  "why_en": "Never before a past moment: past perfect; in Colombia the preterite is also used.",
+  "en": "Until that meeting, the two partners had never talked about money.",
+  "band": "B1",
+  "also": [
+   "hablaron"
+  ]
+ },
+ {
+  "q": "Hasta que cumplió setenta años, mi abuelo nunca ___ (ver) un computador.",
+  "inf": "ver",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había visto",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "\"Hasta que cumplió\": nunca antes de un momento pasado; en Colombia también el pretérito.",
+  "why_en": "\"Until he turned\": never before a past moment; in Colombia also the preterite.",
+  "en": "Until he turned seventy, my grandfather had never seen a computer.",
+  "band": "B1",
+  "also": [
+   "vio"
+  ]
+ },
+ {
+  "q": "Hasta aquel día, yo nunca le ___ (dar) un abrazo a mi papá.",
+  "inf": "dar",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había dado",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"hasta aquel día\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"hasta aquel día\" we look back from a past moment at what had not happened yet.",
+  "en": "Until that day, I had never given my dad a hug.",
+  "band": "B1"
+ },
+ {
+  "q": "Me dijo que su jefe ya ___ (salir) a almorzar.",
+  "inf": "salir",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había salido",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"me dijo que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"me dijo que ya\", what happened before that moment takes the past perfect.",
+  "en": "She told me her boss had already gone out to lunch.",
+  "band": "B1"
+ },
+ {
+  "q": "Mis papás me contaron que ya ___ (terminar) de pagar la casa.",
+  "inf": "terminar",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían terminado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"me contaron que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"me contaron que ya\", what happened before that moment takes the past perfect.",
+  "en": "My parents told me they had already finished paying off the house.",
+  "band": "B1"
+ },
+ {
+  "q": "Le dije a la profesora que yo ya le ___ (dar) mi tarea.",
+  "inf": "dar",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había dado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"le dije que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"le dije que ya\", what happened before that moment takes the past perfect.",
+  "en": "I told the teacher I had already handed in my homework.",
+  "band": "B1"
+ },
+ {
+  "q": "Les avisamos que nosotros ya ___ (llegar) al hotel.",
+  "inf": "llegar",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos llegado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"les avisamos que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"les avisamos que ya\", what happened before that moment takes the past perfect.",
+  "en": "We let them know that we had already gotten to the hotel.",
+  "band": "B1"
+ },
+ {
+  "q": "Me aseguraste que tú ya ___ (leer) el contrato.",
+  "inf": "leer",
+  "tense": "plusc",
+  "person": "tú",
+  "answer": "habías leído",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"me aseguraste que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"me aseguraste que ya\", what happened before that moment takes the past perfect.",
+  "en": "You assured me that you had already read the contract.",
+  "band": "B1"
+ },
+ {
+  "q": "Carlos confesó que ya ___ (perder) el celular dos veces.",
+  "inf": "perder",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había perdido",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"confesó que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"confesó que ya\", what happened before that moment takes the past perfect.",
+  "en": "Carlos confessed that he had already lost his phone twice.",
+  "band": "B1"
+ },
+ {
+  "q": "Los vecinos dijeron que la policía ya ___ (pasar) por la cuadra.",
+  "inf": "pasar",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había pasado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"dijeron que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"dijeron que ya\", what happened before that moment takes the past perfect.",
+  "en": "The neighbors said the police had already come down the block.",
+  "band": "B1"
+ },
+ {
+  "q": "Le recordé a mi jefe que yo ya se lo ___ (decir) por correo.",
+  "inf": "decir",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había dicho",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"le recordé que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"le recordé que ya\", what happened before that moment takes the past perfect.",
+  "en": "I reminded my boss that I had already told him by email.",
+  "band": "B1"
+ },
+ {
+  "q": "Le contamos a la abuela que ya ___ (comprar) los pasajes.",
+  "inf": "comprar",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos comprado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"le contamos que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"le contamos que ya\", what happened before that moment takes the past perfect.",
+  "en": "We told grandma that we had already bought the tickets.",
+  "band": "B1"
+ },
+ {
+  "q": "Ana nos explicó que alguien ya ___ (abrir) la puerta cuando ella llegó.",
+  "inf": "abrir",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había abierto",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"nos explicó que\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"nos explicó que\", what happened before that moment takes the past perfect.",
+  "en": "Ana explained to us that someone had already opened the door when she got there.",
+  "band": "B1"
+ },
+ {
+  "q": "Me contaste que ya ___ (ver) a mis papás una vez antes de la boda.",
+  "inf": "ver",
+  "tense": "plusc",
+  "person": "tú",
+  "answer": "habías visto",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"me contaste que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"me contaste que ya\", what happened before that moment takes the past perfect.",
+  "en": "You told me you had already seen my parents once before the wedding.",
+  "band": "B2"
+ },
+ {
+  "q": "Pensé que mis amigos ya se ___ (enterar) de la noticia.",
+  "inf": "enterarse",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían enterado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"pensé que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"pensé que ya\", what happened before that moment takes the past perfect.",
+  "en": "I thought my friends had already heard the news.",
+  "band": "B1"
+ },
+ {
+  "q": "Me di cuenta de que yo ya ___ (oír) esa canción antes.",
+  "inf": "oír",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había oído",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"me di cuenta de que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"me di cuenta de que ya\", what happened before that moment takes the past perfect.",
+  "en": "I realized that I had already heard that song before.",
+  "band": "B1"
+ },
+ {
+  "q": "La vecina contó que su hijo ya se ___ (ir) a vivir a Canadá.",
+  "inf": "irse",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había ido",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"contó que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"contó que ya\", what happened before that moment takes the past perfect.",
+  "en": "The neighbor said her son had already gone to live in Canada.",
+  "band": "B1"
+ },
+ {
+  "q": "Le dijimos al cliente que ya le ___ (escribir) tres veces.",
+  "inf": "escribir",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos escrito",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"le dijimos que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"le dijimos que ya\", what happened before that moment takes the past perfect.",
+  "en": "We told the client that we had already written to him three times.",
+  "band": "B1"
+ },
+ {
+  "q": "El locutor anunció que el equipo visitante ya ___ (ganar) el primer partido.",
+  "inf": "ganar",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había ganado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"anunció que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"anunció que ya\", what happened before that moment takes the past perfect.",
+  "en": "The announcer said the visiting team had already won the first game.",
+  "band": "B1"
+ },
+ {
+  "q": "Dijiste que ya me ___ (devolver) el libro, pero no lo tengo.",
+  "inf": "devolver",
+  "tense": "plusc",
+  "person": "tú",
+  "answer": "habías devuelto",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"dijiste que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"dijiste que ya\", what happened before that moment takes the past perfect.",
+  "en": "You said you had already given me the book back, but I don't have it.",
+  "band": "B1"
+ },
+ {
+  "q": "Le dije a mi mamá que ya ___ (encontrar) las llaves.",
+  "inf": "encontrar",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había encontrado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"le dije que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"le dije que ya\", what happened before that moment takes the past perfect.",
+  "en": "I told my mom that I had already found the keys.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi hermana me contó que se ___ (caer) de la bicicleta el día anterior.",
+  "inf": "caer",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había caído",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"me contó que\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"me contó que\", what happened before that moment takes the past perfect.",
+  "en": "My sister told me she had fallen off her bike the day before.",
+  "band": "B1"
+ },
+ {
+  "q": "Nos informaron que las clases ya ___ (empezar) la semana anterior.",
+  "inf": "empezar",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían empezado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"nos informaron que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"nos informaron que ya\", what happened before that moment takes the past perfect.",
+  "en": "They informed us that classes had already started the week before.",
+  "band": "B1"
+ },
+ {
+  "q": "El portero me avisó que alguien ya ___ (recoger) mi paquete.",
+  "inf": "recoger",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había recogido",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"me avisó que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"me avisó que ya\", what happened before that moment takes the past perfect.",
+  "en": "The doorman told me someone had already picked up my package.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi mamá descubrió que la noche anterior tú le ___ (esconder) el control.",
+  "inf": "esconder",
+  "tense": "plusc",
+  "person": "tú",
+  "answer": "habías escondido",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "\"La noche anterior\" a otro hecho pasado (descubrió): pluscuamperfecto.",
+  "why_en": "\"The night before\" another past event (she found out): past perfect.",
+  "en": "My mom found out that the night before you had hidden the remote from her.",
+  "band": "B1"
+ },
+ {
+  "q": "Pensé que ya ___ (cambiar) el horario del tren, pero no.",
+  "inf": "cambiar",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían cambiado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"pensé que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"pensé que ya\", what happened before that moment takes the past perfect.",
+  "en": "I thought they had already changed the train schedule, but they hadn't.",
+  "band": "B2"
+ },
+ {
+  "q": "El policía explicó que el accidente ya ___ (ocurrir) cuando llegaron las ambulancias.",
+  "inf": "ocurrir",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había ocurrido",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"explicó que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"explicó que ya\", what happened before that moment takes the past perfect.",
+  "en": "The officer explained that the accident had already happened when the ambulances arrived.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando fui a visitarla en marzo, Valentina ya ___ (dejar) su trabajo en el banco.",
+  "inf": "dejar",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había dejado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "\"Ya\", antes de otro hecho pasado (fui en marzo): pluscuamperfecto.",
+  "why_en": "\"Ya\", before another past event (I went in March): past perfect.",
+  "en": "When I went to visit her in March, Valentina had already left her job at the bank.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando volví de viaje en enero, mis primos ya se ___ (casar).",
+  "inf": "casarse",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían casado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "\"Ya\", antes de otro hecho pasado (cuando volví): pluscuamperfecto.",
+  "why_en": "\"Ya\", before another past event (when I came back): past perfect.",
+  "en": "When I came back from my trip in January, my cousins had already got married.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi hermano dijo que él ya ___ (pedir) la pizza.",
+  "inf": "pedir",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había pedido",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"dijo que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"dijo que ya\", what happened before that moment takes the past perfect.",
+  "en": "My brother said he had already ordered the pizza.",
+  "band": "B1"
+ },
+ {
+  "q": "Descubrí que alguien ya ___ (entrar) a mi cuarto mientras yo no estaba.",
+  "inf": "entrar",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había entrado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"descubrí que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"descubrí que ya\", what happened before that moment takes the past perfect.",
+  "en": "I discovered that someone had already gotten into my room while I was away.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi profesora recordó que nosotros ya ___ (ver) ese tema el mes anterior.",
+  "inf": "ver",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos visto",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"el mes anterior\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"el mes anterior\", what happened before that moment takes the past perfect.",
+  "en": "My teacher reminded us that we had already covered that topic the month before.",
+  "band": "B1"
+ },
+ {
+  "q": "Sofía me confesó que ya ___ (aceptar) otra oferta.",
+  "inf": "aceptar",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había aceptado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"me confesó que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"me confesó que ya\", what happened before that moment takes the past perfect.",
+  "en": "Sofía confessed to me that she had already accepted another offer.",
+  "band": "B1"
+ },
+ {
+  "q": "Nos explicaron que el tren ya ___ (partir) cuando llegamos.",
+  "inf": "partir",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había partido",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"nos explicaron que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"nos explicaron que ya\", what happened before that moment takes the past perfect.",
+  "en": "They explained to us that the train had already departed when we arrived.",
+  "band": "B1"
+ },
+ {
+  "q": "El mesero dijo que alguien ya ___ (reservar) esa mesa.",
+  "inf": "reservar",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había reservado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"dijo que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"dijo que ya\", what happened before that moment takes the past perfect.",
+  "en": "The waiter said someone had already reserved that table.",
+  "band": "B1"
+ },
+ {
+  "q": "Pensé que tú ya ___ (regresar) de la oficina.",
+  "inf": "regresar",
+  "tense": "plusc",
+  "person": "tú",
+  "answer": "habías regresado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"pensé que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"pensé que ya\", what happened before that moment takes the past perfect.",
+  "en": "I thought you had already gotten back from the office.",
+  "band": "B1"
+ },
+ {
+  "q": "Creímos que ellos ya ___ (llegar) al hotel, pero seguían en el bus.",
+  "inf": "llegar",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían llegado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"creímos que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"creímos que ya\", what happened before that moment takes the past perfect.",
+  "en": "We thought they had already reached the hotel, but they were still on the bus.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi mamá preguntó si yo ya ___ (hacer) la tarea.",
+  "inf": "hacer",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había hecho",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"preguntó si ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"preguntó si ya\", what happened before that moment takes the past perfect.",
+  "en": "My mom asked whether I had already done my homework.",
+  "band": "B1"
+ },
+ {
+  "q": "Le pregunté a Pablo si ya ___ (leer) los resultados.",
+  "inf": "leer",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había leído",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"le pregunté si ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"le pregunté si ya\", what happened before that moment takes the past perfect.",
+  "en": "I asked Pablo whether he had already read the results.",
+  "band": "B1"
+ },
+ {
+  "q": "Camila me preguntó si nosotros ya ___ (comer).",
+  "inf": "comer",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos comido",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"me preguntó si ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"me preguntó si ya\", what happened before that moment takes the past perfect.",
+  "en": "Camila asked me whether we had already eaten.",
+  "band": "B1"
+ },
+ {
+  "q": "Los inspectores querían saber si los dueños ya ___ (pagar) los impuestos.",
+  "inf": "pagar",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían pagado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"querían saber si ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"querían saber si ya\", what happened before that moment takes the past perfect.",
+  "en": "The inspectors wanted to know whether the owners had already paid their taxes.",
+  "band": "B2"
+ },
+ {
+  "q": "Imaginé que ya ___ (pasar) lo peor de la tormenta.",
+  "inf": "pasar",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había pasado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"imaginé que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"imaginé que ya\", what happened before that moment takes the past perfect.",
+  "en": "I imagined the worst of the storm had already passed.",
+  "band": "B2"
+ },
+ {
+  "q": "Les conté que yo ya ___ (decidir) vender el carro.",
+  "inf": "decidir",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había decidido",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"les conté que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"les conté que ya\", what happened before that moment takes the past perfect.",
+  "en": "I told them I had already decided to sell the car.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi vecino juró que antes de ese día nunca ___ (tocar) mi carro.",
+  "inf": "tocar",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había tocado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Nunca antes de un momento pasado: pluscuamperfecto; en Colombia también el pretérito.",
+  "why_en": "Never before a past moment: past perfect; in Colombia the preterite is also used.",
+  "en": "My neighbour swore he had never touched my car before that day.",
+  "band": "B2",
+  "also": [
+   "tocó"
+  ]
+ },
+ {
+  "q": "Mi jefa aseguró que nosotros ya ___ (volver) de almorzar cuando llamaron.",
+  "inf": "volver",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos vuelto",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"aseguró que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"aseguró que ya\", what happened before that moment takes the past perfect.",
+  "en": "My boss swore we had already gotten back from lunch when they called.",
+  "band": "B2"
+ },
+ {
+  "q": "Los de la tienda dijeron que ya ___ (mandar) mi pedido el lunes.",
+  "inf": "mandar",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían mandado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"dijeron que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"dijeron que ya\", what happened before that moment takes the past perfect.",
+  "en": "The store people said they had already sent my order on Monday.",
+  "band": "B1"
+ },
+ {
+  "q": "Me contaron que tú ya ___ (empezar) a trabajar antes de graduarte.",
+  "inf": "empezar",
+  "tense": "plusc",
+  "person": "tú",
+  "answer": "habías empezado",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"me contaron que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"me contaron que ya\", what happened before that moment takes the past perfect.",
+  "en": "They told me you had already started working before graduating.",
+  "band": "B1"
+ },
+ {
+  "q": "La noticia decía que los rescatistas ya ___ (conseguir) llegar a la cueva.",
+  "inf": "conseguir",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían conseguido",
+  "use": "estilo indirecto: lo anterior a lo dicho",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Tras \"la noticia decía que ya\", lo que pasó antes de ese momento va en pluscuamperfecto.",
+  "why_en": "After \"la noticia decía que ya\", what happened before that moment takes the past perfect.",
+  "en": "The news said the rescuers had already managed to reach the cave.",
+  "band": "B2"
+ },
+ {
+  "q": "Hasta esa noche, yo nunca ___ (sentir) tanto miedo.",
+  "inf": "sentir",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había sentido",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"hasta esa noche\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"hasta esa noche\" we look back from a past moment at what had not happened yet.",
+  "en": "Until that night, I had never felt so much fear.",
+  "band": "B1"
+ },
+ {
+  "q": "Antes de entrar al banco, Laura nunca ___ (tener) un trabajo fijo.",
+  "inf": "tener",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había tenido",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Nunca antes de un momento pasado: pluscuamperfecto; en Colombia también el pretérito.",
+  "why_en": "Never before a past moment: past perfect; in Colombia the preterite is also used.",
+  "en": "Before joining the bank, Laura had never had a steady job.",
+  "band": "B1",
+  "also": [
+   "tuvo"
+  ]
+ },
+ {
+  "q": "Hasta esa vez, los niños nunca ___ (salir) solos a la calle.",
+  "inf": "salir",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían salido",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"hasta esa vez\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"hasta esa vez\" we look back from a past moment at what had not happened yet.",
+  "en": "Until that time, the kids had never gone out into the street alone.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegamos, Pedro todavía no ___ (llamar) al médico.",
+  "inf": "llamar",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había llamado",
+  "use": "todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"todavía no\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"todavía no\" we look back from a past moment at what had not happened yet.",
+  "en": "When we arrived, Pedro still hadn't called the doctor.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando revisé el correo, mis jefes todavía no ___ (contestar).",
+  "inf": "contestar",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían contestado",
+  "use": "todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"todavía no\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"todavía no\" we look back from a past moment at what had not happened yet.",
+  "en": "When I checked my email, my bosses still hadn't replied.",
+  "band": "B1"
+ },
+ {
+  "q": "Hasta esa semana, nosotros nunca ___ (hacer) una reunión por video.",
+  "inf": "hacer",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos hecho",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Nunca antes de un momento pasado: pluscuamperfecto; en Colombia también el pretérito.",
+  "why_en": "Never before a past moment: past perfect; in Colombia the preterite is also used.",
+  "en": "Until that week, we had never held a video meeting.",
+  "band": "B1",
+  "also": [
+   "hicimos"
+  ]
+ },
+ {
+  "q": "Antes de mudarte, tú nunca me ___ (escribir) una carta.",
+  "inf": "escribir",
+  "tense": "plusc",
+  "person": "tú",
+  "answer": "habías escrito",
+  "use": "nunca o todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Nunca antes de un momento pasado: pluscuamperfecto; en Colombia también el pretérito.",
+  "why_en": "Never before a past moment: past perfect; in Colombia the preterite is also used.",
+  "en": "Before you moved, you had never written me a letter.",
+  "band": "B1",
+  "also": [
+   "escribiste"
+  ]
+ },
+ {
+  "q": "Al terminar la clase, yo todavía no ___ (entender) la tarea.",
+  "inf": "entender",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había entendido",
+  "use": "todavía no había antes de un momento pasado",
+  "confuse": [
+   "preterito",
+   "perfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"todavía no\" se mira desde un momento pasado a lo que no había ocurrido.",
+  "why_en": "With \"todavía no\" we look back from a past moment at what had not happened yet.",
+  "en": "By the end of class, I still hadn't understood the assignment.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando miré el reloj, ya ___ (pasar) las doce.",
+  "inf": "pasar",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían pasado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando miré\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando miré\" the action came before another past moment.",
+  "en": "When I looked at the clock, it was already past twelve.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando por fin contestaste, yo ya te ___ (llamar) cinco veces.",
+  "inf": "llamar",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había llamado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando contestaste\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando contestaste\" the action came before another past moment.",
+  "en": "When you finally answered, I had already called you five times.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando entró el profesor, nosotros ya nos ___ (sentar).",
+  "inf": "sentar",
+  "tense": "plusc",
+  "person": "nosotros",
+  "answer": "habíamos sentado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando entró\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando entró\" the action came before another past moment.",
+  "en": "When the teacher came in, we had already sat down.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando volví al pueblo, mi sobrino ya ___ (crecer) mucho.",
+  "inf": "crecer",
+  "tense": "plusc",
+  "person": "él/ella",
+  "answer": "había crecido",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando volví\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando volví\" the action came before another past moment.",
+  "en": "When I went back to the town, my nephew had already grown a lot.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegó el ascensor, los demás ya ___ (bajar) por las escaleras.",
+  "inf": "bajar",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían bajado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando llegó\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando llegó\" the action came before another past moment.",
+  "en": "When the elevator came, the others had already gone down the stairs.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando sonó la alarma, yo ya me ___ (levantar).",
+  "inf": "levantar",
+  "tense": "plusc",
+  "person": "yo",
+  "answer": "había levantado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando sonó\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando sonó\" the action came before another past moment.",
+  "en": "When the alarm rang, I had already gotten up.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando te propuse el plan, tú ya ___ (invitar) a Marta.",
+  "inf": "invitar",
+  "tense": "plusc",
+  "person": "tú",
+  "answer": "habías invitado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando te propuse\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando te propuse\" the action came before another past moment.",
+  "en": "When I suggested the plan, you had already invited Marta.",
+  "band": "B1"
+ },
+ {
+  "q": "Cuando llegó mi carta, ellos ya ___ (enviar) la suya.",
+  "inf": "enviar",
+  "tense": "plusc",
+  "person": "ellos",
+  "answer": "habían enviado",
+  "use": "antes de otro momento pasado: ya + pluscuamperfecto",
+  "confuse": [
+   "perfecto",
+   "imperfecto",
+   "pluscsubj"
+  ],
+  "why_es": "Con \"cuando llegó\" la acción es anterior a otro momento pasado.",
+  "why_en": "With \"cuando llegó\" the action came before another past moment.",
+  "en": "When my letter arrived, they had already sent theirs.",
+  "band": "B1"
+ }
+]

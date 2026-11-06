@@ -1,0 +1,2479 @@
+[
+ {
+  "q": "Camilo, ___ (tocar) esa olla, que está hirviendo.",
+  "inf": "tocar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no toques",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Camilo: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Camilo: a prohibition or warning takes no + present subjunctive.",
+  "en": "Camilo, don't touch that pot, it's boiling.",
+  "band": "B1"
+ },
+ {
+  "q": "Sofía, ___ (correr) por el pasillo, que te vas a caer.",
+  "inf": "correr",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no corras",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Sofía: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Sofía: a prohibition or warning takes no + present subjunctive.",
+  "en": "Sofía, don't run in the hallway, you'll fall.",
+  "band": "B1"
+ },
+ {
+  "q": "Mijo, ___ (hablar) con la boca llena.",
+  "inf": "hablar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no hables",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Regaño a un hijo: lleva no + presente de subjuntivo.",
+  "why_en": "Regaño a un hijo: a prohibition or warning takes no + present subjunctive.",
+  "en": "Son, don't talk with your mouth full.",
+  "band": "B1"
+ },
+ {
+  "q": "Valentina, ___ (ir) sola a esa calle de noche.",
+  "inf": "ir",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no vayas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Valentina: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Valentina: a prohibition or warning takes no + present subjunctive.",
+  "en": "Valentina, don't go alone to that street at night.",
+  "band": "B1"
+ },
+ {
+  "q": "Laura, ___ (salir) sin paraguas, que está lloviendo.",
+  "inf": "salir",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no salgas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Laura: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Laura: a prohibition or warning takes no + present subjunctive.",
+  "en": "Laura, don't go out without an umbrella, it's raining.",
+  "band": "B1"
+ },
+ {
+  "q": "Daniel, ___ (poner) los pies en la mesa.",
+  "inf": "poner",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no pongas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Regaño a Daniel: lleva no + presente de subjuntivo.",
+  "why_en": "Regaño a Daniel: a prohibition or warning takes no + present subjunctive.",
+  "en": "Daniel, don't put your feet on the table.",
+  "band": "B1"
+ },
+ {
+  "q": "Ana, ___ (olvidar) las llaves, por favor.",
+  "inf": "olvidar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no olvides",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Petición a Ana: lleva no + presente de subjuntivo.",
+  "why_en": "Petición a Ana: a prohibition or warning takes no + present subjunctive.",
+  "en": "Ana, please don't forget the keys.",
+  "band": "B1"
+ },
+ {
+  "q": "Pedro, ___ (venir) tarde mañana; hay reunión a las siete.",
+  "inf": "venir",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no vengas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Pedro: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Pedro: a prohibition or warning takes no + present subjunctive.",
+  "en": "Pedro, don't come late tomorrow; there's a meeting at seven.",
+  "band": "B1"
+ },
+ {
+  "q": "Sebastián, ___ (tirar) la basura en la calle.",
+  "inf": "tirar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no tires",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Regaño a Sebastián: lleva no + presente de subjuntivo.",
+  "why_en": "Regaño a Sebastián: a prohibition or warning takes no + present subjunctive.",
+  "en": "Sebastián, don't throw the trash in the street.",
+  "band": "B1"
+ },
+ {
+  "q": "Carolina, ___ (hacer) caso a esos rumores.",
+  "inf": "hacer",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no hagas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Consejo a Carolina: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a Carolina: a prohibition or warning takes no + present subjunctive.",
+  "en": "Carolina, don't pay attention to those rumors.",
+  "band": "B1",
+  "drop": true
+ },
+ {
+  "q": "Juan, ___ (manejar) si tomaste licor.",
+  "inf": "manejar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no manejes",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Juan: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Juan: a prohibition or warning takes no + present subjunctive.",
+  "en": "Juan, don't drive if you've been drinking.",
+  "band": "B1"
+ },
+ {
+  "q": "Mamá, ___ (llamar) a la clínica todavía; espera a que yo llegue.",
+  "inf": "llamar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no llames",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Pedido a mamá: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a mamá: a prohibition or warning takes no + present subjunctive.",
+  "en": "Mom, don't call the clinic yet; wait until I get there.",
+  "band": "B1"
+ },
+ {
+  "q": "Gabriela, ___ (abrir) esa puerta, que hay un perro bravo.",
+  "inf": "abrir",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no abras",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Gabriela: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Gabriela: a prohibition or warning takes no + present subjunctive.",
+  "en": "Gabriela, don't open that door, there's a mean dog.",
+  "band": "B1"
+ },
+ {
+  "q": "Nico, ___ (comer) tanto dulce antes de cenar.",
+  "inf": "comer",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no comas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Regaño a Nico: lleva no + presente de subjuntivo.",
+  "why_en": "Regaño a Nico: a prohibition or warning takes no + present subjunctive.",
+  "en": "Nico, don't eat so many sweets before dinner.",
+  "band": "B1"
+ },
+ {
+  "q": "Marta, ___ (levantar) esa caja sola; pesa mucho.",
+  "inf": "levantar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no levantes",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Marta: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Marta: a prohibition or warning takes no + present subjunctive.",
+  "en": "Marta, don't lift that box alone; it's heavy.",
+  "band": "B1"
+ },
+ {
+  "q": "Felipe, ___ (llamar) a Rosa tan tarde; ya está durmiendo.",
+  "inf": "llamar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no llames",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Consejo a Felipe: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a Felipe: a prohibition or warning takes no + present subjunctive.",
+  "en": "Felipe, don't call Rosa so late; she's already asleep.",
+  "band": "B1"
+ },
+ {
+  "q": "Isabel, ___ (perder) el tiempo con esa gente.",
+  "inf": "perder",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no pierdas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Consejo a Isabel: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a Isabel: a prohibition or warning takes no + present subjunctive.",
+  "en": "Isabel, don't waste your time on those people.",
+  "band": "B1"
+ },
+ {
+  "q": "Miguel, ___ (dejar) la ventana abierta, que entra el frío.",
+  "inf": "dejar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no dejes",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Miguel: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Miguel: a prohibition or warning takes no + present subjunctive.",
+  "en": "Miguel, don't leave the window open, the cold gets in.",
+  "band": "B1"
+ },
+ {
+  "q": "Paula, ___ (ser) tan dura contigo misma.",
+  "inf": "ser",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no seas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Consejo a Paula: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a Paula: a prohibition or warning takes no + present subjunctive.",
+  "en": "Paula, don't be so hard on yourself.",
+  "band": "B1"
+ },
+ {
+  "q": "Andrés, ___ (tener) miedo; yo estoy contigo.",
+  "inf": "tener",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no tengas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Consuelo a Andrés: lleva no + presente de subjuntivo.",
+  "why_en": "Consuelo a Andrés: a prohibition or warning takes no + present subjunctive.",
+  "en": "Andrés, don't be afraid; I'm with you.",
+  "band": "B1"
+ },
+ {
+  "q": "Lucía, ___ (volver) a casa por ese parque oscuro.",
+  "inf": "volver",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no vuelvas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Lucía: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Lucía: a prohibition or warning takes no + present subjunctive.",
+  "en": "Lucía, don't go home through that dark park.",
+  "band": "B1"
+ },
+ {
+  "q": "Hijo, ___ (decir) mentiras otra vez, por favor.",
+  "inf": "decir",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no digas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Pedido a un hijo: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a un hijo: a prohibition or warning takes no + present subjunctive.",
+  "en": "Son, please don't tell lies again.",
+  "band": "B1"
+ },
+ {
+  "q": "Camila, ___ (gastar) toda la plata en ropa este mes.",
+  "inf": "gastar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no gastes",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Consejo a Camila: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a Camila: a prohibition or warning takes no + present subjunctive.",
+  "en": "Camila, don't spend all the money on clothes this month.",
+  "band": "B1"
+ },
+ {
+  "q": "Santiago, ___ (empujar) a tu hermanita, que se lastima.",
+  "inf": "empujar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no empujes",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Regaño a Santiago: lleva no + presente de subjuntivo.",
+  "why_en": "Regaño a Santiago: a prohibition or warning takes no + present subjunctive.",
+  "en": "Santiago, don't push your little sister, she'll get hurt.",
+  "band": "B1"
+ },
+ {
+  "q": "Diana, ___ (contestar) ese número; es una estafa.",
+  "inf": "contestar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no contestes",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Diana: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Diana: a prohibition or warning takes no + present subjunctive.",
+  "en": "Diana, don't answer that number; it's a scam.",
+  "band": "B1"
+ },
+ {
+  "q": "Mateo, ___ (poner) tanta sal en la sopa.",
+  "inf": "poner",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no pongas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Pedido a Mateo: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a Mateo: a prohibition or warning takes no + present subjunctive.",
+  "en": "Mateo, don't put so much salt in the soup.",
+  "band": "B1"
+ },
+ {
+  "q": "Sara, ___ (mirar) el celular mientras manejas.",
+  "inf": "mirar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no mires",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Sara: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Sara: a prohibition or warning takes no + present subjunctive.",
+  "en": "Sara, don't look at your phone while driving.",
+  "band": "B1"
+ },
+ {
+  "q": "Jorge, ___ (traer) a tu perro a la oficina; el jefe es alérgico.",
+  "inf": "traer",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no traigas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Pedido a Jorge: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a Jorge: a prohibition or warning takes no + present subjunctive.",
+  "en": "Jorge, don't bring your dog to the office; the boss is allergic.",
+  "band": "B1"
+ },
+ {
+  "q": "Natalia, ___ (esperar) más; la oferta se acaba hoy.",
+  "inf": "esperar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no esperes",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Consejo a Natalia: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a Natalia: a prohibition or warning takes no + present subjunctive.",
+  "en": "Natalia, don't wait any longer; the offer ends today.",
+  "band": "B1"
+ },
+ {
+  "q": "Carlos, ___ (hablar) en clase, que viene el profesor.",
+  "inf": "hablar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no hables",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Carlos: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Carlos: a prohibition or warning takes no + present subjunctive.",
+  "en": "Carlos, don't talk in class, the teacher is coming.",
+  "band": "B1"
+ },
+ {
+  "q": "Valeria, ___ (pagar) en efectivo en esa zona; te pueden robar.",
+  "inf": "pagar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no pagues",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Consejo a Valeria: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a Valeria: a prohibition or warning takes no + present subjunctive.",
+  "en": "Valeria, don't pay in cash in that area; you could get robbed.",
+  "band": "B1"
+ },
+ {
+  "q": "Luis, ___ (llegar) tarde; mañana sales a las cinco.",
+  "inf": "llegar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no llegues",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Consejo a Luis: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a Luis: a prohibition or warning takes no + present subjunctive.",
+  "en": "Luis, don't be late; tomorrow you leave at five.",
+  "band": "B1"
+ },
+ {
+  "q": "Alejandra, ___ (manejar) tan rápido; hay niños.",
+  "inf": "manejar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no manejes",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Alejandra: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Alejandra: a prohibition or warning takes no + present subjunctive.",
+  "en": "Alejandra, don't drive so fast; there are kids.",
+  "band": "B1"
+ },
+ {
+  "q": "Hermano, ___ (hacer) caso a esos tipos; te van a meter en problemas.",
+  "inf": "hacer",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no hagas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Consejo a un hermano: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a un hermano: a prohibition or warning takes no + present subjunctive.",
+  "en": "Brother, don't listen to those guys; they'll get you into trouble.",
+  "band": "B1",
+  "drop": true
+ },
+ {
+  "q": "Julián, ___ (leer) mis mensajes, que son privados.",
+  "inf": "leer",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no leas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Julián: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Julián: a prohibition or warning takes no + present subjunctive.",
+  "en": "Julián, don't read my messages, they're private.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi amor, ___ (cocinar) hoy; pedimos pizza.",
+  "inf": "cocinar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no cocines",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Pedido a un esposo: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a un esposo: a prohibition or warning takes no + present subjunctive.",
+  "en": "Honey, don't cook today; we'll order pizza.",
+  "band": "B1"
+ },
+ {
+  "q": "Tía Clara, ___ (cargar) esas bolsas; yo te ayudo.",
+  "inf": "cargar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no cargues",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Pedido a tía Clara: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a tía Clara: a prohibition or warning takes no + present subjunctive.",
+  "en": "Aunt Clara, don't carry those bags; I'll help you.",
+  "band": "B1"
+ },
+ {
+  "q": "Catalina, ___ (prestar) plata a ese tipo, que nunca paga.",
+  "inf": "prestar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no prestes",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Consejo a Catalina: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a Catalina: a prohibition or warning takes no + present subjunctive.",
+  "en": "Catalina, don't lend money to that guy, he never pays.",
+  "band": "B1",
+  "drop": true
+ },
+ {
+  "q": "Ricardo, ___ (apagar) el computador; todavía estoy trabajando.",
+  "inf": "apagar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no apagues",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Pedido a Ricardo: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a Ricardo: a prohibition or warning takes no + present subjunctive.",
+  "en": "Ricardo, don't turn off the computer; I'm still working.",
+  "band": "B1"
+ },
+ {
+  "q": "Emilia, ___ (llorar), que todo va a salir bien.",
+  "inf": "llorar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no llores",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Consuelo a Emilia: lleva no + presente de subjuntivo.",
+  "why_en": "Consuelo a Emilia: a prohibition or warning takes no + present subjunctive.",
+  "en": "Emilia, don't cry, everything will turn out fine.",
+  "band": "B1"
+ },
+ {
+  "q": "Fernando, ___ (entrar) con los zapatos sucios.",
+  "inf": "entrar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no entres",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Regaño a Fernando: lleva no + presente de subjuntivo.",
+  "why_en": "Regaño a Fernando: a prohibition or warning takes no + present subjunctive.",
+  "en": "Fernando, don't come in with dirty shoes.",
+  "band": "B1"
+ },
+ {
+  "q": "Pablo, ___ (creer) todo lo que ves en internet.",
+  "inf": "creer",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no creas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Consejo a Pablo: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a Pablo: a prohibition or warning takes no + present subjunctive.",
+  "en": "Pablo, don't believe everything you see on the internet.",
+  "band": "B1"
+ },
+ {
+  "q": "Juliana, ___ (ir) a la peluquería todavía; te queda lindo el pelo largo.",
+  "inf": "ir",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no vayas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Consejo a Juliana: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a Juliana: a prohibition or warning takes no + present subjunctive.",
+  "en": "Juliana, don't go to the hairdresser yet; long hair really suits you.",
+  "band": "B1"
+ },
+ {
+  "q": "Mariana, ___ (seguir) a ese taxi; el chofer no conoce el camino.",
+  "inf": "seguir",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no sigas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Mariana: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Mariana: a prohibition or warning takes no + present subjunctive.",
+  "en": "Mariana, don't follow that taxi; the driver doesn't know the way.",
+  "band": "B1",
+  "drop": true
+ },
+ {
+  "q": "Óscar, ___ (jugar) con fuego, que es peligroso.",
+  "inf": "jugar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no juegues",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Óscar: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Óscar: a prohibition or warning takes no + present subjunctive.",
+  "en": "Óscar, don't play with fire, it's dangerous.",
+  "band": "B1"
+ },
+ {
+  "q": "Bebé, ___ (mover) la cabeza mientras te corto el pelo.",
+  "inf": "mover",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no muevas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Pedido a un bebé: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a un bebé: a prohibition or warning takes no + present subjunctive.",
+  "en": "Baby, don't move your head while I cut your hair.",
+  "band": "B1"
+ },
+ {
+  "q": "Tatiana, ___ (caminar) tan cerca del borde, que te puedes caer.",
+  "inf": "caminar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no camines",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Tatiana: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Tatiana: a prohibition or warning takes no + present subjunctive.",
+  "en": "Tatiana, don't walk so close to the edge, you could fall.",
+  "band": "B1"
+ },
+ {
+  "q": "Hugo, ___ (cambiar) de canal todavía; quiero ver el final del partido.",
+  "inf": "cambiar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no cambies",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Pedido a Hugo: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a Hugo: a prohibition or warning takes no + present subjunctive.",
+  "en": "Hugo, don't change the channel yet; I want to see the end of the match.",
+  "band": "B1"
+ },
+ {
+  "q": "Silvia, ___ (pedir) el pescado; aquí lo guardan varios días.",
+  "inf": "pedir",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no pidas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Consejo a Silvia: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a Silvia: a prohibition or warning takes no + present subjunctive.",
+  "en": "Silvia, don't order the fish; they keep it for days here.",
+  "band": "B1"
+ },
+ {
+  "q": "Manuel, ___ (comprar) ese celular; viene dañado.",
+  "inf": "comprar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no compres",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Consejo a Manuel: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a Manuel: a prohibition or warning takes no + present subjunctive.",
+  "en": "Manuel, don't buy that cell phone; it's defective.",
+  "band": "B1"
+ },
+ {
+  "q": "Adriana, ___ (subir) a esa moto sin casco.",
+  "inf": "subir",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no subas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Adriana: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Adriana: a prohibition or warning takes no + present subjunctive.",
+  "en": "Adriana, don't get on that motorcycle without a helmet.",
+  "band": "B1"
+ },
+ {
+  "q": "Rosa, ___ (volver) a pelear con tu hermana.",
+  "inf": "volver",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no vuelvas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Regaño a Rosa: lleva no + presente de subjuntivo.",
+  "why_en": "Regaño a Rosa: a prohibition or warning takes no + present subjunctive.",
+  "en": "Rosa, don't fight with your sister again.",
+  "band": "B1"
+ },
+ {
+  "q": "Cristian, ___ (dar) tu clave a nadie.",
+  "inf": "dar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no des",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Cristian: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Cristian: a prohibition or warning takes no + present subjunctive.",
+  "en": "Cristian, don't give your password to anyone.",
+  "band": "B1",
+  "drop": true
+ },
+ {
+  "q": "Mi vida, ___ (saltar) en la cama, que se daña.",
+  "inf": "saltar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no saltes",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Regaño a un niño: lleva no + presente de subjuntivo.",
+  "why_en": "Regaño a un niño: a prohibition or warning takes no + present subjunctive.",
+  "en": "Sweetie, don't jump on the bed, it'll break.",
+  "band": "B1"
+ },
+ {
+  "q": "Johana, ___ (venir) mañana si estás enferma.",
+  "inf": "venir",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no vengas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Consejo a Johana: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a Johana: a prohibition or warning takes no + present subjunctive.",
+  "en": "Johana, don't come tomorrow if you're sick.",
+  "band": "B1"
+ },
+ {
+  "q": "Alberto, ___ (manejar) sin el cinturón puesto, por favor.",
+  "inf": "manejar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no manejes",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Alberto: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Alberto: a prohibition or warning takes no + present subjunctive.",
+  "en": "Alberto, don't drive without a seatbelt.",
+  "band": "B1"
+ },
+ {
+  "q": "Beatriz, ___ (faltar) a la fiesta de Daniel por trabajar.",
+  "inf": "faltar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no faltes",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Consejo a Beatriz: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a Beatriz: a prohibition or warning takes no + present subjunctive.",
+  "en": "Beatriz, don't miss Daniel's party because of work.",
+  "band": "B1"
+ },
+ {
+  "q": "Señor, ___ (dejar) el carro aquí, que es salida de ambulancias.",
+  "inf": "dejar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no deje",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Advertencia a un señor: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a un señor: a prohibition or warning takes no + present subjunctive.",
+  "en": "Sir, don't leave the car here, it's an ambulance exit.",
+  "band": "B1"
+ },
+ {
+  "q": "Señora, ___ (cruzar) la calle con el semáforo en rojo.",
+  "inf": "cruzar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no cruce",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Advertencia a una señora: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a una señora: a prohibition or warning takes no + present subjunctive.",
+  "en": "Ma'am, don't cross the street on a red light.",
+  "band": "B1"
+ },
+ {
+  "q": "Doctor, ___ (salir) todavía; el paciente lo necesita.",
+  "inf": "salir",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no salga",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Pedido a un doctor: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a un doctor: a prohibition or warning takes no + present subjunctive.",
+  "en": "Doctor, don't leave yet; the patient needs you.",
+  "band": "B1"
+ },
+ {
+  "q": "Don Luis, ___ (pagar) nada; yo le arreglo el computador gratis.",
+  "inf": "pagar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no pague",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Aviso a don Luis: lleva no + presente de subjuntivo.",
+  "why_en": "Aviso a don Luis: a prohibition or warning takes no + present subjunctive.",
+  "en": "Don Luis, don't pay anything; I'll fix your computer for free.",
+  "band": "B1"
+ },
+ {
+  "q": "Profesor, ___ (cambiar) la diapositiva; todavía estoy copiando.",
+  "inf": "cambiar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no cambie",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Pedido al profesor: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido al profesor: a prohibition or warning takes no + present subjunctive.",
+  "en": "Professor, don't change the slide; I'm still copying.",
+  "band": "B1"
+ },
+ {
+  "q": "Señor, ___ (dejar) su maleta sola en el aeropuerto.",
+  "inf": "dejar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no deje",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Advertencia a un señor: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a un señor: a prohibition or warning takes no + present subjunctive.",
+  "en": "Sir, don't leave your suitcase alone at the airport.",
+  "band": "B1"
+ },
+ {
+  "q": "Doña Marta, ___ (bajar) sola; espere que yo la ayudo.",
+  "inf": "bajar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no baje",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Pedido a doña Marta: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a doña Marta: a prohibition or warning takes no + present subjunctive.",
+  "en": "Doña Marta, don't go down alone; wait, I'll help you.",
+  "band": "B1"
+ },
+ {
+  "q": "Señorita, ___ (olvidar) su cambio, por favor.",
+  "inf": "olvidar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no olvide",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Pedido a una señorita: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a una señorita: a prohibition or warning takes no + present subjunctive.",
+  "en": "Miss, please don't forget your change.",
+  "band": "B1"
+ },
+ {
+  "q": "Señor conductor, ___ (arrancar) todavía; falta gente por subir.",
+  "inf": "arrancar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no arranque",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Pedido al conductor: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido al conductor: a prohibition or warning takes no + present subjunctive.",
+  "en": "Driver, don't pull out yet; people are still boarding.",
+  "band": "B1"
+ },
+ {
+  "q": "Licenciado, ___ (firmar) ese contrato sin leerlo.",
+  "inf": "firmar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no firme",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Consejo a un licenciado: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a un licenciado: a prohibition or warning takes no + present subjunctive.",
+  "en": "Counselor, don't sign that contract without reading it.",
+  "band": "B1"
+ },
+ {
+  "q": "Señora Ramírez, ___ (abrir) esa puerta, que hay un perro suelto.",
+  "inf": "abrir",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no abra",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Advertencia a la señora Ramírez: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a la señora Ramírez: a prohibition or warning takes no + present subjunctive.",
+  "en": "Mrs. Ramírez, don't open that door, there's a loose dog.",
+  "band": "B1"
+ },
+ {
+  "q": "Oficial, ___ (disparar); es un malentendido.",
+  "inf": "disparar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no dispare",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Súplica a un oficial: lleva no + presente de subjuntivo.",
+  "why_en": "Súplica a un oficial: a prohibition or warning takes no + present subjunctive.",
+  "en": "Officer, don't shoot; it's a misunderstanding.",
+  "band": "B1"
+ },
+ {
+  "q": "Señor, ___ (fumar) aquí, por favor; hay niños.",
+  "inf": "fumar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no fume",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Pedido a un señor: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a un señor: a prohibition or warning takes no + present subjunctive.",
+  "en": "Sir, please don't smoke here; there are children.",
+  "band": "B1"
+ },
+ {
+  "q": "Don Pedro, ___ (pagar) todo hoy; puede dar la mitad.",
+  "inf": "pagar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no pague",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Consejo a don Pedro: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a don Pedro: a prohibition or warning takes no + present subjunctive.",
+  "en": "Don Pedro, don't pay everything today; you can give half.",
+  "band": "B1"
+ },
+ {
+  "q": "Señora, ___ (tocar) la fruta con las manos, por favor.",
+  "inf": "tocar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no toque",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Pedido a una señora: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a una señora: a prohibition or warning takes no + present subjunctive.",
+  "en": "Ma'am, please don't touch the fruit with your hands.",
+  "band": "B1"
+ },
+ {
+  "q": "Doctora, ___ (olvidar) mi cita del viernes.",
+  "inf": "olvidar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no olvide",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Pedido a la doctora: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a la doctora: a prohibition or warning takes no + present subjunctive.",
+  "en": "Doctor, don't forget my appointment on Friday.",
+  "band": "B1"
+ },
+ {
+  "q": "Señor Gómez, ___ (venir) mañana; la oficina estará cerrada.",
+  "inf": "venir",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no venga",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Aviso al señor Gómez: lleva no + presente de subjuntivo.",
+  "why_en": "Aviso al señor Gómez: a prohibition or warning takes no + present subjunctive.",
+  "en": "Mr. Gómez, don't come tomorrow; the office will be closed.",
+  "band": "B1"
+ },
+ {
+  "q": "Señor, ___ (gritar); el vuelo sale a tiempo.",
+  "inf": "gritar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no grite",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Pedido a un señor: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a un señor: a prohibition or warning takes no + present subjunctive.",
+  "en": "Sir, don't shout; the flight leaves on time.",
+  "band": "B1"
+ },
+ {
+  "q": "Profesora, ___ (cancelar) la clase; todos venimos a estudiar.",
+  "inf": "cancelar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no cancele",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Pedido a la profesora: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a la profesora: a prohibition or warning takes no + present subjunctive.",
+  "en": "Professor, don't cancel the class; we all came to study.",
+  "band": "B1"
+ },
+ {
+  "q": "Señor, ___ (hacer) fila en esa caja; está cerrada.",
+  "inf": "hacer",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no haga",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Aviso a un señor: lleva no + presente de subjuntivo.",
+  "why_en": "Aviso a un señor: a prohibition or warning takes no + present subjunctive.",
+  "en": "Sir, don't line up at that register; it's closed.",
+  "band": "B1"
+ },
+ {
+  "q": "Señora, la próxima vez ___ (traer) la mascota; aquí no se permiten animales.",
+  "inf": "traer",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no traiga",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Aviso a una señora: lleva no + presente de subjuntivo.",
+  "why_en": "Aviso a una señora: a prohibition or warning takes no + present subjunctive.",
+  "en": "Madam, next time don't bring the pet; animals are not allowed here.",
+  "band": "B1"
+ },
+ {
+  "q": "Ingeniero, ___ (decir) nada al cliente hasta hablar con el jefe.",
+  "inf": "decir",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no diga",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Consejo a un ingeniero: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a un ingeniero: a prohibition or warning takes no + present subjunctive.",
+  "en": "Engineer, don't tell the client anything until you talk to the boss.",
+  "band": "B1",
+  "drop": true
+ },
+ {
+  "q": "Señor, ___ (entrar) sin tapabocas, que es obligatorio.",
+  "inf": "entrar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no entre",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Aviso a un señor: lleva no + presente de subjuntivo.",
+  "why_en": "Aviso a un señor: a prohibition or warning takes no + present subjunctive.",
+  "en": "Sir, don't come in without a mask, it's mandatory.",
+  "band": "B1"
+ },
+ {
+  "q": "Tío Ernesto, ___ (manejar) con tanta lluvia; te lo pido.",
+  "inf": "manejar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no manejes",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Pedido al tío Ernesto: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido al tío Ernesto: a prohibition or warning takes no + present subjunctive.",
+  "en": "Uncle Ernesto, don't drive in such heavy rain; I'm asking you.",
+  "band": "B1"
+ },
+ {
+  "q": "Señora Elena, ___ (parar) ahora; ya casi llegamos a la cima.",
+  "inf": "parar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no pare",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Ánimo a la señora Elena: lleva no + presente de subjuntivo.",
+  "why_en": "Ánimo a la señora Elena: a prohibition or warning takes no + present subjunctive.",
+  "en": "Mrs. Elena, don't stop now; we're almost at the top.",
+  "band": "B1"
+ },
+ {
+  "q": "Señor, ___ (mirar) abajo; esa escalera es muy alta.",
+  "inf": "mirar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no mire",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Advertencia a un señor: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a un señor: a prohibition or warning takes no + present subjunctive.",
+  "en": "Sir, don't look down; that ladder is very high.",
+  "band": "B1"
+ },
+ {
+  "q": "Doctor Pérez, ___ (apagar) el celular; van a llamar del laboratorio.",
+  "inf": "apagar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no apague",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Pedido al doctor Pérez: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido al doctor Pérez: a prohibition or warning takes no + present subjunctive.",
+  "en": "Dr Pérez, don't switch off your phone; the lab is going to call.",
+  "band": "B1"
+ },
+ {
+  "q": "Niños, ___ (correr) en la cocina, que se pueden quemar.",
+  "inf": "correr",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no corran",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Advertencia a niños: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a niños: a prohibition or warning takes no + present subjunctive.",
+  "en": "Kids, don't run in the kitchen, you could get burned.",
+  "band": "B1"
+ },
+ {
+  "q": "Chicos, ___ (jugar) pelota dentro de la casa.",
+  "inf": "jugar",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no jueguen",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Regaño a unos chicos: lleva no + presente de subjuntivo.",
+  "why_en": "Regaño a unos chicos: a prohibition or warning takes no + present subjunctive.",
+  "en": "Kids, don't play ball inside the house.",
+  "band": "B1"
+ },
+ {
+  "q": "Muchachos, ___ (hacer) tanto ruido, que los vecinos duermen.",
+  "inf": "hacer",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no hagan",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Pedido a muchachos: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a muchachos: a prohibition or warning takes no + present subjunctive.",
+  "en": "Guys, don't make so much noise, the neighbors are sleeping.",
+  "band": "B1"
+ },
+ {
+  "q": "Niños, ___ (tocar) los cables, que dan corrientazo.",
+  "inf": "tocar",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no toquen",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Advertencia a niños: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a niños: a prohibition or warning takes no + present subjunctive.",
+  "en": "Kids, don't touch the wires, you could get shocked.",
+  "band": "B1"
+ },
+ {
+  "q": "Estudiantes, ___ (copiar) en el examen; hay cámaras.",
+  "inf": "copiar",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no copien",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Aviso a estudiantes: lleva no + presente de subjuntivo.",
+  "why_en": "Aviso a estudiantes: a prohibition or warning takes no + present subjunctive.",
+  "en": "Students, don't cheat on the exam; there are cameras.",
+  "band": "B1"
+ },
+ {
+  "q": "Chicos, ___ (venir) sin la tarea, por favor.",
+  "inf": "venir",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no vengan",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Pedido a chicos: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a chicos: a prohibition or warning takes no + present subjunctive.",
+  "en": "Guys, please don't come without your homework.",
+  "band": "B1"
+ },
+ {
+  "q": "Niños, ___ (comer) dulces antes del almuerzo.",
+  "inf": "comer",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no coman",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Regaño a niños: lleva no + presente de subjuntivo.",
+  "why_en": "Regaño a niños: a prohibition or warning takes no + present subjunctive.",
+  "en": "Kids, don't eat candy before lunch.",
+  "band": "B1"
+ },
+ {
+  "q": "Señores, ___ (fumar) en esta zona; es solo para no fumadores.",
+  "inf": "fumar",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no fumen",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Aviso a unos señores: lleva no + presente de subjuntivo.",
+  "why_en": "Aviso a unos señores: a prohibition or warning takes no + present subjunctive.",
+  "en": "Gentlemen, don't smoke in this area.",
+  "band": "B1"
+ },
+ {
+  "q": "Chicos, ___ (ir) a la piscina sin permiso de un adulto.",
+  "inf": "ir",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no vayan",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Advertencia a chicos: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a chicos: a prohibition or warning takes no + present subjunctive.",
+  "en": "Kids, don't go to the pool without an adult's permission.",
+  "band": "B1"
+ },
+ {
+  "q": "Muchachos, ___ (poner) la música tan alta después de las diez.",
+  "inf": "poner",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no pongan",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Pedido a muchachos: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a muchachos: a prohibition or warning takes no + present subjunctive.",
+  "en": "Guys, don't play the music so loud after ten.",
+  "band": "B1"
+ },
+ {
+  "q": "Niños, ___ (gritar) en la biblioteca.",
+  "inf": "gritar",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no griten",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Regaño a niños: lleva no + presente de subjuntivo.",
+  "why_en": "Regaño a niños: a prohibition or warning takes no + present subjunctive.",
+  "en": "Kids, don't yell in the library.",
+  "band": "B1"
+ },
+ {
+  "q": "Compañeros, ___ (olvidar) la reunión del jueves a las nueve.",
+  "inf": "olvidar",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no olviden",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Aviso a compañeros: lleva no + presente de subjuntivo.",
+  "why_en": "Aviso a compañeros: a prohibition or warning takes no + present subjunctive.",
+  "en": "Colleagues, don't forget Thursday's meeting at nine.",
+  "band": "B1"
+ },
+ {
+  "q": "Hijos, ___ (abrir) la puerta a ningún extraño.",
+  "inf": "abrir",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no abran",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Advertencia a hijos: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a hijos: a prohibition or warning takes no + present subjunctive.",
+  "en": "Kids, don't open the door to any stranger.",
+  "band": "B1"
+ },
+ {
+  "q": "Señoras y señores, ___ (levantar) la voz; estamos en un hospital.",
+  "inf": "levantar",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no levanten",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Aviso a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Aviso a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "Ladies and gentlemen, don't raise your voices; we're in a hospital.",
+  "band": "B1"
+ },
+ {
+  "q": "Chicos, ___ (salir) del salón hasta que suene el timbre.",
+  "inf": "salir",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no salgan",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Aviso a chicos: lleva no + presente de subjuntivo.",
+  "why_en": "Aviso a chicos: a prohibition or warning takes no + present subjunctive.",
+  "en": "Kids, don't leave the classroom until the bell rings.",
+  "band": "B1"
+ },
+ {
+  "q": "Ustedes dos, ___ (quitar) el control a su hermana otra vez.",
+  "inf": "quitar",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no quiten",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Regaño a dos hermanos: lleva no + presente de subjuntivo.",
+  "why_en": "Regaño a dos hermanos: a prohibition or warning takes no + present subjunctive.",
+  "en": "You two, don't take the remote from your sister again.",
+  "band": "B1",
+  "drop": true
+ },
+ {
+  "q": "Niños, ___ (subir) a ese árbol, que las ramas están secas.",
+  "inf": "subir",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no suban",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Advertencia a niños: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a niños: a prohibition or warning takes no + present subjunctive.",
+  "en": "Kids, don't climb that tree, the branches are dry.",
+  "band": "B1"
+ },
+ {
+  "q": "Amigos, ___ (traer) regalos a la fiesta; solo vengan.",
+  "inf": "traer",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no traigan",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Pedido a amigos: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a amigos: a prohibition or warning takes no + present subjunctive.",
+  "en": "Friends, don't bring gifts to the party; just come.",
+  "band": "B1"
+ },
+ {
+  "q": "Señores clientes, ___ (pagar) en la entrada; se paga al salir.",
+  "inf": "pagar",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no paguen",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Aviso a clientes: lleva no + presente de subjuntivo.",
+  "why_en": "Aviso a clientes: a prohibition or warning takes no + present subjunctive.",
+  "en": "Dear customers, don't pay at the entrance; you pay on the way out.",
+  "band": "B1"
+ },
+ {
+  "q": "Chicos, ___ (seguir) a ese desconocido.",
+  "inf": "seguir",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no sigan",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Advertencia a chicos: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a chicos: a prohibition or warning takes no + present subjunctive.",
+  "en": "Kids, don't follow that stranger.",
+  "band": "B1"
+ },
+ {
+  "q": "Muchachos, ___ (tener) miedo; el perro es manso.",
+  "inf": "tener",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no tengan",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Consuelo a muchachos: lleva no + presente de subjuntivo.",
+  "why_en": "Consuelo a muchachos: a prohibition or warning takes no + present subjunctive.",
+  "en": "Guys, don't be afraid; the dog is gentle.",
+  "band": "B1"
+ },
+ {
+  "q": "Niños, ___ (tomar) agua de la llave, que está sucia.",
+  "inf": "tomar",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no tomen",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Advertencia a niños: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a niños: a prohibition or warning takes no + present subjunctive.",
+  "en": "Kids, don't drink water from the tap, it's dirty.",
+  "band": "B1"
+ },
+ {
+  "q": "Primos, ___ (llegar) con las manos vacías; mi mamá se ofende.",
+  "inf": "llegar",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no lleguen",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Consejo a primos: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a primos: a prohibition or warning takes no + present subjunctive.",
+  "en": "Cousins, don't arrive empty handed; my mom gets offended.",
+  "band": "B1"
+ },
+ {
+  "q": "Ustedes, ___ (ser) tan exigentes con el nuevo.",
+  "inf": "ser",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no sean",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Pedido a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "You all, don't be so demanding with the new guy.",
+  "band": "B1"
+ },
+ {
+  "q": "Niños, ___ (dar) de comer a ese perro, que muerde.",
+  "inf": "dar",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no den",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Advertencia a niños: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a niños: a prohibition or warning takes no + present subjunctive.",
+  "en": "Kids, don't feed that dog, it bites.",
+  "band": "B1",
+  "drop": true
+ },
+ {
+  "q": "Amigos, ___ (contar) a nadie lo que hablamos hoy.",
+  "inf": "contar",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no cuenten",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Pedido a amigos: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a amigos: a prohibition or warning takes no + present subjunctive.",
+  "en": "Friends, don't tell anyone what we talked about today.",
+  "band": "B1",
+  "drop": true
+ },
+ {
+  "q": "Chicos, ___ (mirar) el celular mientras el profesor explica.",
+  "inf": "mirar",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no miren",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Regaño a chicos: lleva no + presente de subjuntivo.",
+  "why_en": "Regaño a chicos: a prohibition or warning takes no + present subjunctive.",
+  "en": "Guys, don't look at your phones while the teacher explains.",
+  "band": "B1"
+ },
+ {
+  "q": "Hijos, ___ (esperar) a su papá despiertos; llega muy tarde.",
+  "inf": "esperar",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no esperen",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Consejo a hijos: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a hijos: a prohibition or warning takes no + present subjunctive.",
+  "en": "Kids, don't wait up for your dad; he gets in very late.",
+  "band": "B1"
+ },
+ {
+  "q": "Compañeros, ___ (perder) la calma; lo vamos a resolver.",
+  "inf": "perder",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no pierdan",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Ánimo a compañeros: lleva no + presente de subjuntivo.",
+  "why_en": "Ánimo a compañeros: a prohibition or warning takes no + present subjunctive.",
+  "en": "Colleagues, don't lose your cool; we'll solve it.",
+  "band": "B1"
+ },
+ {
+  "q": "Niños, ___ (escribir) en las paredes, que acabo de pintar.",
+  "inf": "escribir",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no escriban",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Regaño a niños: lleva no + presente de subjuntivo.",
+  "why_en": "Regaño a niños: a prohibition or warning takes no + present subjunctive.",
+  "en": "Kids, don't write on the walls, I just painted them.",
+  "band": "B1"
+ },
+ {
+  "q": "Señores, ___ (dejar) los carros en doble fila, que bloquean el tránsito.",
+  "inf": "dejar",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no dejen",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Aviso a unos señores: lleva no + presente de subjuntivo.",
+  "why_en": "Aviso a unos señores: a prohibition or warning takes no + present subjunctive.",
+  "en": "Gentlemen, don't double park, you're blocking traffic.",
+  "band": "B1"
+ },
+ {
+  "q": "Muchachos, ___ (llevar) esa caja solos; es muy pesada y se pueden lastimar.",
+  "inf": "llevar",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no lleven",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Consejo a muchachos: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a muchachos: a prohibition or warning takes no + present subjunctive.",
+  "en": "Guys, don't carry that box on your own; it is very heavy and you could get hurt.",
+  "band": "B1"
+ },
+ {
+  "q": "Chicos, ___ (volver) tarde de la fiesta, por favor.",
+  "inf": "volver",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no vuelvan",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Pedido a chicos: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a chicos: a prohibition or warning takes no + present subjunctive.",
+  "en": "Guys, please don't come back late from the party.",
+  "band": "B1"
+ },
+ {
+  "q": "Niños, ___ (decir) mentiras al profesor; siempre se entera.",
+  "inf": "decir",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no digan",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Consejo a niños: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a niños: a prohibition or warning takes no + present subjunctive.",
+  "en": "Kids, don't lie to the teacher; he always finds out.",
+  "band": "B1",
+  "drop": true
+ },
+ {
+  "q": "Amigos, ___ (salir) a esta hora; hay un derrumbe en la vía.",
+  "inf": "salir",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no salgan",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Advertencia a amigos: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a amigos: a prohibition or warning takes no + present subjunctive.",
+  "en": "Friends, don't leave at this hour; there's a landslide on the road.",
+  "band": "B1"
+ },
+ {
+  "q": "Ustedes, ___ (creer) nada de lo que diga ese vendedor.",
+  "inf": "creer",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no crean",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Consejo a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "You all, don't believe anything that salesman says.",
+  "band": "B1"
+ },
+ {
+  "q": "Hijos, ___ (cruzar) la calle sin mirar a ambos lados.",
+  "inf": "cruzar",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no crucen",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Advertencia a hijos: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a hijos: a prohibition or warning takes no + present subjunctive.",
+  "en": "Kids, don't cross the street without looking both ways.",
+  "band": "B1"
+ },
+ {
+  "q": "Niños, ___ (soltar) la mano de su mamá en el centro comercial.",
+  "inf": "soltar",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no suelten",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Advertencia a niños: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a niños: a prohibition or warning takes no + present subjunctive.",
+  "en": "Kids, don't let go of your mom's hand in the mall.",
+  "band": "B1"
+ },
+ {
+  "q": "Vamos tarde: ___ (esperar) más a Camilo; salgamos ya.",
+  "inf": "esperar",
+  "tense": "impneg",
+  "person": "nosotros",
+  "answer": "no esperemos",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Propuesta a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Propuesta a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "We're late: let's not wait any longer for Camilo; let's go now.",
+  "band": "B1"
+ },
+ {
+  "q": "Es nuestro secreto: ___ (decir) nada a los vecinos.",
+  "inf": "decir",
+  "tense": "impneg",
+  "person": "nosotros",
+  "answer": "no digamos",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Propuesta a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Propuesta a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "It's a secret: let's not tell the neighbors anything.",
+  "band": "B1",
+  "drop": true
+ },
+ {
+  "q": "Ya comimos bastante; ___ (pedir) más postre, pidamos la cuenta.",
+  "inf": "pedir",
+  "tense": "impneg",
+  "person": "nosotros",
+  "answer": "no pidamos",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Propuesta a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Propuesta a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "We've eaten enough; let's not order more dessert.",
+  "band": "B1"
+ },
+ {
+  "q": "Ese camino está peligroso; ___ (ir) por ahí, tomemos la autopista.",
+  "inf": "ir",
+  "tense": "impneg",
+  "person": "nosotros",
+  "answer": "no vayamos",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Propuesta a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Propuesta a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "That road is dangerous; let's not go that way, let's take the highway.",
+  "band": "B1"
+ },
+ {
+  "q": "Falta poco para el examen; ___ (perder) más tiempo, estudiemos.",
+  "inf": "perder",
+  "tense": "impneg",
+  "person": "nosotros",
+  "answer": "no perdamos",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Propuesta a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Propuesta a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "The exam is soon; let's not waste more time.",
+  "band": "B1"
+ },
+ {
+  "q": "Nos queda poca plata; ___ (gastar) más hoy.",
+  "inf": "gastar",
+  "tense": "impneg",
+  "person": "nosotros",
+  "answer": "no gastemos",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Propuesta a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Propuesta a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "We have little money left; let's not spend more today.",
+  "band": "B1"
+ },
+ {
+  "q": "Se nota que está bravo; ___ (hablar) del tema ahora, esperemos.",
+  "inf": "hablar",
+  "tense": "impneg",
+  "person": "nosotros",
+  "answer": "no hablemos",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Propuesta a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Propuesta a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "You can tell he's mad; let's not talk about it now.",
+  "band": "B1"
+ },
+ {
+  "q": "Si el trancón sigue, ___ (esperar) aquí; mejor busquemos otra ruta.",
+  "inf": "esperar",
+  "tense": "impneg",
+  "person": "nosotros",
+  "answer": "no esperemos",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Propuesta a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Propuesta a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "If the traffic jam continues, let's not wait here; let's find another route.",
+  "band": "B1"
+ },
+ {
+  "q": "La carne huele raro; ___ (comer) eso, pidamos otra cosa.",
+  "inf": "comer",
+  "tense": "impneg",
+  "person": "nosotros",
+  "answer": "no comamos",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Propuesta a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Propuesta a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "The meat smells odd; let's not eat that.",
+  "band": "B1"
+ },
+ {
+  "q": "Está muy oscuro; ___ (abrir) esa puerta sin linterna, busquemos una.",
+  "inf": "abrir",
+  "tense": "impneg",
+  "person": "nosotros",
+  "answer": "no abramos",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Propuesta a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Propuesta a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "It's very dark; let's not open that door without a flashlight.",
+  "band": "B1"
+ },
+ {
+  "q": "Todavía no confirman nada; ___ (comprar) los pasajes, esperemos.",
+  "inf": "comprar",
+  "tense": "impneg",
+  "person": "nosotros",
+  "answer": "no compremos",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Propuesta a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Propuesta a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "They haven't confirmed anything yet; let's not buy the tickets yet.",
+  "band": "C1"
+ },
+ {
+  "q": "Es un tema delicado; ___ (tocar) eso en la cena, hablemos de otra cosa.",
+  "inf": "tocar",
+  "tense": "impneg",
+  "person": "nosotros",
+  "answer": "no toquemos",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Propuesta a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Propuesta a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "It's a delicate subject; let's not bring it up at dinner.",
+  "band": "B1"
+ },
+ {
+  "q": "Esa tienda es carísima; ___ (entrar), sigamos caminando.",
+  "inf": "entrar",
+  "tense": "impneg",
+  "person": "nosotros",
+  "answer": "no entremos",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Propuesta a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Propuesta a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "That store is very expensive; let's not go in, let's keep walking.",
+  "band": "B1"
+ },
+ {
+  "q": "Ya es muy tarde; ___ (llamar) a Sofía, dejémosla dormir.",
+  "inf": "llamar",
+  "tense": "impneg",
+  "person": "nosotros",
+  "answer": "no llamemos",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Propuesta a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Propuesta a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "It's very late; let's not call Sofía, she's sleeping.",
+  "band": "B1"
+ },
+ {
+  "q": "El jefe está de mal humor; ___ (pedir) permiso hoy, esperemos al lunes.",
+  "inf": "pedir",
+  "tense": "impneg",
+  "person": "nosotros",
+  "answer": "no pidamos",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Propuesta a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Propuesta a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "The boss is in a bad mood; let's not ask for time off today.",
+  "band": "B1"
+ },
+ {
+  "q": "Estamos bien así; ___ (cambiar) nada del plan.",
+  "inf": "cambiar",
+  "tense": "impneg",
+  "person": "nosotros",
+  "answer": "no cambiemos",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Propuesta a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Propuesta a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "We're fine like this; let's not change anything in the plan.",
+  "band": "B1"
+ },
+ {
+  "q": "Valentina, ___ (cerrar) la puerta con llave; yo todavía no llego.",
+  "inf": "cerrar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no cierres",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Pedido a Valentina: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a Valentina: a prohibition or warning takes no + present subjunctive.",
+  "en": "Valentina, don't lock the door; I haven't arrived yet.",
+  "band": "B1"
+ },
+ {
+  "q": "Mateo, ___ (beber) esa agua, que está sucia.",
+  "inf": "beber",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no bebas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Mateo: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Mateo: a prohibition or warning takes no + present subjunctive.",
+  "en": "Mateo, don't drink that water, it's dirty.",
+  "band": "B1"
+ },
+ {
+  "q": "Daniela, ___ (escribir) a Pedro hoy; déjalo tranquilo.",
+  "inf": "escribir",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no escribas",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Consejo a Daniela: lleva no + presente de subjuntivo.",
+  "why_en": "Consejo a Daniela: a prohibition or warning takes no + present subjunctive.",
+  "en": "Daniela, don't write to Pedro today; leave him alone.",
+  "band": "B1",
+  "drop": true
+ },
+ {
+  "q": "Sergio, ___ (hablar) así a tu abuela, que está mayor.",
+  "inf": "hablar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no hables",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Regaño a Sergio: lleva no + presente de subjuntivo.",
+  "why_en": "Regaño a Sergio: a prohibition or warning takes no + present subjunctive.",
+  "en": "Sergio, don't talk to your grandmother like that, she's old.",
+  "band": "B1",
+  "drop": true
+ },
+ {
+  "q": "Don Jaime, ___ (caminar) solo a esta hora; hay toque de queda.",
+  "inf": "caminar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no camine",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Advertencia a don Jaime: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a don Jaime: a prohibition or warning takes no + present subjunctive.",
+  "en": "Don Jaime, don't walk alone at this hour; there's a curfew.",
+  "band": "B1"
+ },
+ {
+  "q": "Llueve a cántaros; ___ (cocinar) hoy, mejor pidamos domicilio.",
+  "inf": "cocinar",
+  "tense": "impneg",
+  "person": "nosotros",
+  "answer": "no cocinemos",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Propuesta a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Propuesta a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "It's pouring; let's not cook today, let's order delivery.",
+  "band": "B1"
+ },
+ {
+  "q": "Padre, ___ (cerrar) la iglesia todavía; falta mucha gente.",
+  "inf": "cerrar",
+  "tense": "impneg",
+  "person": "usted",
+  "answer": "no cierre",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Pedido a un padre: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a un padre: a prohibition or warning takes no + present subjunctive.",
+  "en": "Father, don't close the church yet; many people are still coming.",
+  "band": "B1"
+ },
+ {
+  "q": "Esteban, ___ (molestar) al bebé, que se acaba de dormir.",
+  "inf": "molestar",
+  "tense": "impneg",
+  "person": "tú",
+  "answer": "no molestes",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente",
+   "presubj"
+  ],
+  "why_es": "Advertencia a Esteban: lleva no + presente de subjuntivo.",
+  "why_en": "Advertencia a Esteban: a prohibition or warning takes no + present subjunctive.",
+  "en": "Esteban, don't bother the baby, he just fell asleep.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi mamá duerme; ___ (escuchar) música en la sala, hablemos bajito.",
+  "inf": "escuchar",
+  "tense": "impneg",
+  "person": "nosotros",
+  "answer": "no escuchemos",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Propuesta a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Propuesta a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "My mom is sleeping; let's not play music in the living room, let's talk quietly.",
+  "band": "B1"
+ },
+ {
+  "q": "Señores pasajeros, ___ (poner) sus maletas en el pasillo.",
+  "inf": "poner",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no pongan",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Aviso a pasajeros: lleva no + presente de subjuntivo.",
+  "why_en": "Aviso a pasajeros: a prohibition or warning takes no + present subjunctive.",
+  "en": "Passengers, please don't put your suitcases in the aisle.",
+  "band": "B1"
+ },
+ {
+  "q": "Hay mucha gente; ___ (parar) el carro en esa calle, busquemos parqueadero.",
+  "inf": "parar",
+  "tense": "impneg",
+  "person": "nosotros",
+  "answer": "no paremos",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Propuesta a un grupo: lleva no + presente de subjuntivo.",
+  "why_en": "Propuesta a un grupo: a prohibition or warning takes no + present subjunctive.",
+  "en": "There are lots of people; let's not stop the car on that street, let's find parking.",
+  "band": "B1"
+ },
+ {
+  "q": "Muchachos, ___ (contar) nada de la sorpresa a Marta.",
+  "inf": "contar",
+  "tense": "impneg",
+  "person": "ustedes",
+  "answer": "no cuenten",
+  "use": "prohibición o advertencia con destinatario claro",
+  "confuse": [
+   "imperativo",
+   "presente"
+  ],
+  "why_es": "Pedido a muchachos: lleva no + presente de subjuntivo.",
+  "why_en": "Pedido a muchachos: a prohibition or warning takes no + present subjunctive.",
+  "en": "Guys, don't tell Marta anything about the surprise.",
+  "band": "B1",
+  "drop": true
+ }
+]

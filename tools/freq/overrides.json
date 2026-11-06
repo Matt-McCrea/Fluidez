@@ -204,5 +204,1146 @@
  "el bravo": {
   "show": "bravo",
   "note": "adjective stored with a stray article in VOCAB; shown without it"
+ },
+ "llaves": {
+  "rank": "exclude",
+  "into": "la llave",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "huevos": {
+  "rank": "exclude",
+  "into": "el huevo",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "seguros": {
+  "rank": "exclude",
+  "into": "el seguro",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "derechos": {
+  "rank": "exclude",
+  "into": "el derecho",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "estudios": {
+  "rank": "exclude",
+  "into": "el estudio",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "botas": {
+  "rank": "exclude",
+  "into": "la bota",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "recursos": {
+  "rank": "exclude",
+  "into": "el recurso",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "alas": {
+  "rank": "exclude",
+  "into": "el ala",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "el diamantes": {
+  "rank": "exclude",
+  "into": "el diamante",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "daños": {
+  "rank": "exclude",
+  "into": "el daño",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "gastos": {
+  "rank": "exclude",
+  "into": "el gasto",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "bodas": {
+  "rank": "exclude",
+  "into": "la boda",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "países": {
+  "rank": "exclude",
+  "into": "el país",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "aguas": {
+  "rank": "exclude",
+  "into": "el agua",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "bolsas": {
+  "rank": "exclude",
+  "into": "la bolsa",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "guantes": {
+  "rank": "exclude",
+  "into": "el guante",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "asientos": {
+  "rank": "exclude",
+  "into": "el asiento",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "riesgos": {
+  "rank": "exclude",
+  "into": "el riesgo",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "los hombros": {
+  "rank": "exclude",
+  "into": "el hombro",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "síntomas": {
+  "rank": "exclude",
+  "into": "el síntoma",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "parientes": {
+  "rank": "exclude",
+  "into": "el pariente",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "la olas": {
+  "rank": "exclude",
+  "into": "la ola",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "anuncios": {
+  "rank": "exclude",
+  "into": "el anuncio",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "ahorros": {
+  "rank": "exclude",
+  "into": "el ahorro",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "gotas": {
+  "rank": "exclude",
+  "into": "la gota",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "pérdidas": {
+  "rank": "exclude",
+  "into": "la pérdida",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "antepasados": {
+  "rank": "exclude",
+  "into": "el antepasado",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "ingredientes": {
+  "rank": "exclude",
+  "into": "el ingrediente",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "cohetes": {
+  "rank": "exclude",
+  "into": "el cohete",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "cereales": {
+  "rank": "exclude",
+  "into": "el cereal",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "inmigrantes": {
+  "rank": "exclude",
+  "into": "inmigrante",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "vitaminas": {
+  "rank": "exclude",
+  "into": "la vitamina",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "temperaturas": {
+  "rank": "exclude",
+  "into": "la temperatura",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "cultivos": {
+  "rank": "exclude",
+  "into": "el cultivo",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "transportes": {
+  "rank": "exclude",
+  "into": "el transporte",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "ácidos": {
+  "rank": "exclude",
+  "into": "el ácido",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "butacas": {
+  "rank": "exclude",
+  "into": "la butaca",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "fríjoles": {
+  "rank": "exclude",
+  "into": "el fríjol",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "los zapatos": {
+  "rank": "exclude",
+  "into": "el zapato",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "galletas": {
+  "rank": "exclude",
+  "into": "la galleta",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "normas": {
+  "rank": "exclude",
+  "into": "la norma",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "ganancias": {
+  "rank": "exclude",
+  "into": "la ganancia",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "artes": {
+  "rank": "exclude",
+  "into": "arte",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "la tijera": {
+  "rank": "exclude",
+  "into": "tijeras",
+  "note": "plural of an entry that stays; its count moves to the singular"
+ },
+ "la arma": {
+  "show": "el arma",
+  "note": "feminine noun, el before the stressed a"
+ },
+ "la alma": {
+  "show": "el alma",
+  "note": "feminine noun, el before the stressed a"
+ },
+ "el leo": {
+  "rank": "exclude",
+  "note": "zodiac sign only; leo is mostly I read"
+ },
+ "el man": {
+  "rank": "exclude",
+  "note": "English man in subtitles, not a Spanish noun"
+ },
+ "san": {
+  "rank": "exclude",
+  "note": "only before a name"
+ },
+ "la jurado": {
+  "show": "el jurado",
+  "note": "jury or juror, el jurado"
+ },
+ "v:coser": {
+  "rank": "demote",
+  "share": 0.04,
+  "note": "cosa and cosas are the noun; coser itself is rare"
+ },
+ "v:acercar": {
+  "rank": "demote",
+  "share": 0.35,
+  "note": "acerca (acerca de, about) is a preposition"
+ },
+ "v:enamorar": {
+  "rank": "demote",
+  "share": 0.5,
+  "note": "mostly the adjective enamorado"
+ },
+ "v:armar": {
+  "rank": "demote",
+  "share": 0.4,
+  "note": "arma and armas are the noun"
+ },
+ "v:crear": {
+  "rank": "demote",
+  "share": 0.25,
+  "note": "creo, crees, cree are creer"
+ },
+ "v:sentar": {
+  "rank": "demote",
+  "share": 0.35,
+  "note": "siento, siente, sientes are sentir"
+ },
+ "v:valer": {
+  "rank": "demote",
+  "share": 0.35,
+  "note": "vale is mostly the Spain OK"
+ },
+ "v:partir": {
+  "rank": "demote",
+  "share": 0.5,
+  "note": "parte and partes are the noun"
+ },
+ "v:tardar": {
+  "rank": "demote",
+  "share": 0.5,
+  "note": "tarde and tardes are the adverb and noun"
+ },
+ "v:unir": {
+  "rank": "demote",
+  "share": 0.2,
+  "note": "unas is the article"
+ },
+ "v:librar": {
+  "rank": "demote",
+  "share": 0.2,
+  "note": "libro, libre and libras are other words"
+ },
+ "v:charlar": {
+  "rank": "demote",
+  "share": 0.4,
+  "note": "charles is the name"
+ },
+ "v:parir": {
+  "rank": "demote",
+  "share": 0.08,
+  "note": "parís is the city, pare the imperative of parar"
+ },
+ "v:datar": {
+  "rank": "demote",
+  "share": 0.1,
+  "note": "date and data are English"
+ },
+ "v:silenciar": {
+  "rank": "demote",
+  "share": 0.05,
+  "note": "silencio is the noun"
+ },
+ "v:sangrar": {
+  "rank": "demote",
+  "share": 0.5,
+  "note": "sangre is the noun"
+ },
+ "v:adelantar": {
+  "rank": "demote",
+  "share": 0.3,
+  "note": "adelante is the adverb"
+ },
+ "v:pesar": {
+  "rank": "demote",
+  "share": 0.5,
+  "note": "a pesar de, el pesar"
+ },
+ "v:cuidar": {
+  "rank": "demote",
+  "share": 0.55,
+  "note": "cuidado is mostly the noun and the warning"
+ },
+ "v:enterar": {
+  "rank": "demote",
+  "share": 0.5,
+  "note": "entero and entera are the adjective"
+ },
+ "v:extrañar": {
+  "rank": "demote",
+  "share": 0.5,
+  "note": "extraño and extraña are the adjective"
+ },
+ "v:enfermar": {
+  "rank": "demote",
+  "share": 0.15,
+  "note": "enfermo and enferma are the adjective"
+ },
+ "v:suponer": {
+  "rank": "demote",
+  "share": 0.6,
+  "note": "por supuesto"
+ },
+ "v:formar": {
+  "rank": "demote",
+  "share": 0.6,
+  "note": "forma and formas are the noun"
+ },
+ "v:callar": {
+  "rank": "demote",
+  "share": 0.6,
+  "note": "calle and calles are the street"
+ },
+ "v:mejorar": {
+  "rank": "demote",
+  "share": 0.7,
+  "note": "mejores is the adjective"
+ },
+ "v:jurar": {
+  "rank": "demote",
+  "share": 0.7,
+  "note": "jurado is the noun"
+ },
+ "el tío": {
+  "rank": "demote",
+  "share": 0.12,
+  "note": "in subtitles tío is Spain slang for guy; the uncle is the Latin American sense"
+ },
+ "la tía": {
+  "rank": "demote",
+  "share": 0.12,
+  "note": "in subtitles tía is Spain slang for girl; the aunt is the Latin American sense"
+ },
+ "el callado": {
+  "show": "callado",
+  "note": "headword corrected: el callado to callado"
+ },
+ "el satisfecho": {
+  "show": "satisfecho",
+  "note": "headword corrected: el satisfecho to satisfecho"
+ },
+ "el simpático": {
+  "show": "simpático",
+  "note": "headword corrected: el simpático to simpático"
+ },
+ "el tímido": {
+  "show": "tímido",
+  "note": "headword corrected: el tímido to tímido"
+ },
+ "el vago": {
+  "show": "vago",
+  "note": "headword corrected: el vago to vago"
+ },
+ "el educado": {
+  "show": "educado",
+  "note": "headword corrected: el educado to educado"
+ },
+ "el tierno": {
+  "show": "tierno",
+  "note": "headword corrected: el tierno to tierno"
+ },
+ "el electrónico": {
+  "show": "electrónico",
+  "note": "headword corrected: el electrónico to electrónico"
+ },
+ "el femenino": {
+  "show": "femenino",
+  "note": "headword corrected: el femenino to femenino"
+ },
+ "el químico": {
+  "show": "químico",
+  "note": "headword corrected: el químico to químico"
+ },
+ "el secundario": {
+  "show": "secundario",
+  "note": "headword corrected: el secundario to secundario"
+ },
+ "la águila": {
+  "show": "el águila",
+  "note": "headword corrected: la águila to el águila"
+ },
+ "volante": {
+  "show": "el volante",
+  "note": "headword corrected: volante to el volante"
+ },
+ "maletín": {
+  "show": "el maletín",
+  "note": "headword corrected: maletín to el maletín"
+ },
+ "menú": {
+  "show": "el menú",
+  "note": "headword corrected: menú to el menú"
+ },
+ "automóvil": {
+  "show": "el automóvil",
+  "note": "headword corrected: automóvil to el automóvil"
+ },
+ "la astronauta": {
+  "show": "el/la astronauta",
+  "note": "headword corrected: la astronauta to el/la astronauta"
+ },
+ "el bendito": {
+  "show": "bendito",
+  "note": "headword corrected: el bendito to bendito"
+ },
+ "filete": {
+  "show": "el filete",
+  "note": "headword corrected: filete to el filete"
+ },
+ "el divino": {
+  "show": "divino",
+  "note": "headword corrected: el divino to divino"
+ },
+ "el recto": {
+  "show": "recto",
+  "note": "headword corrected: el recto to recto"
+ },
+ "el sobrio": {
+  "show": "sobrio",
+  "note": "headword corrected: el sobrio to sobrio"
+ },
+ "el íntimo": {
+  "show": "íntimo",
+  "note": "headword corrected: el íntimo to íntimo"
+ },
+ "acoso": {
+  "show": "el acoso",
+  "note": "headword corrected: acoso to el acoso"
+ },
+ "el masculino": {
+  "show": "masculino",
+  "note": "headword corrected: el masculino to masculino"
+ },
+ "violín": {
+  "show": "el violín",
+  "note": "headword corrected: violín to el violín"
+ },
+ "banquete": {
+  "show": "el banquete",
+  "note": "headword corrected: banquete to el banquete"
+ },
+ "bufete": {
+  "show": "el bufete",
+  "note": "headword corrected: bufete to el bufete"
+ },
+ "la optimista": {
+  "show": "optimista",
+  "note": "headword corrected: la optimista to optimista"
+ },
+ "el animado": {
+  "show": "animado",
+  "note": "headword corrected: el animado to animado"
+ },
+ "el labor": {
+  "show": "la labor",
+  "note": "headword corrected: el labor to la labor"
+ },
+ "el discreto": {
+  "show": "discreto",
+  "note": "headword corrected: el discreto to discreto"
+ },
+ "aperitivo": {
+  "show": "el aperitivo",
+  "note": "headword corrected: aperitivo to el aperitivo"
+ },
+ "el biológico": {
+  "show": "biológico",
+  "note": "headword corrected: el biológico to biológico"
+ },
+ "el universal": {
+  "show": "universal",
+  "note": "headword corrected: el universal to universal"
+ },
+ "la taxista": {
+  "show": "el/la taxista",
+  "note": "headword corrected: la taxista to el/la taxista"
+ },
+ "paraguas": {
+  "show": "el paraguas",
+  "note": "headword corrected: paraguas to el paraguas"
+ },
+ "el blando": {
+  "show": "blando",
+  "note": "headword corrected: el blando to blando"
+ },
+ "la demócrata": {
+  "show": "el/la demócrata",
+  "note": "headword corrected: la demócrata to el/la demócrata"
+ },
+ "el estropeado": {
+  "show": "estropeado",
+  "note": "headword corrected: el estropeado to estropeado"
+ },
+ "el tóxico": {
+  "show": "tóxico",
+  "note": "headword corrected: el tóxico to tóxico"
+ },
+ "estante": {
+  "show": "el estante",
+  "note": "headword corrected: estante to el estante"
+ },
+ "atún": {
+  "show": "el atún",
+  "note": "headword corrected: atún to el atún"
+ },
+ "el crudo": {
+  "show": "crudo",
+  "note": "headword corrected: el crudo to crudo"
+ },
+ "la tazón": {
+  "show": "el tazón",
+  "note": "headword corrected: la tazón to el tazón"
+ },
+ "el artístico": {
+  "show": "artístico",
+  "note": "headword corrected: el artístico to artístico"
+ },
+ "el genético": {
+  "show": "genético",
+  "note": "headword corrected: el genético to genético"
+ },
+ "la contratista": {
+  "show": "el/la contratista",
+  "note": "headword corrected: la contratista to el/la contratista"
+ },
+ "el travieso": {
+  "show": "travieso",
+  "note": "headword corrected: el travieso to travieso"
+ },
+ "el apasionado": {
+  "show": "apasionado",
+  "note": "headword corrected: el apasionado to apasionado"
+ },
+ "recipiente": {
+  "show": "el recipiente",
+  "note": "headword corrected: recipiente to el recipiente"
+ },
+ "el peludo": {
+  "show": "peludo",
+  "note": "headword corrected: el peludo to peludo"
+ },
+ "el amargo": {
+  "show": "amargo",
+  "note": "headword corrected: el amargo to amargo"
+ },
+ "el comunitario": {
+  "show": "comunitario",
+  "note": "headword corrected: el comunitario to comunitario"
+ },
+ "saliva": {
+  "show": "la saliva",
+  "note": "headword corrected: saliva to la saliva"
+ },
+ "fusil": {
+  "show": "el fusil",
+  "note": "headword corrected: fusil to el fusil"
+ },
+ "votante": {
+  "show": "el/la votante",
+  "note": "headword corrected: votante to el/la votante"
+ },
+ "la socialista": {
+  "show": "el/la socialista",
+  "note": "headword corrected: la socialista to el/la socialista"
+ },
+ "el disgustado": {
+  "show": "disgustado",
+  "note": "headword corrected: el disgustado to disgustado"
+ },
+ "el orgánico": {
+  "show": "orgánico",
+  "note": "headword corrected: el orgánico to orgánico"
+ },
+ "la accionista": {
+  "show": "el/la accionista",
+  "note": "headword corrected: la accionista to el/la accionista"
+ },
+ "el tacaño": {
+  "show": "tacaño",
+  "note": "headword corrected: el tacaño to tacaño"
+ },
+ "la alga": {
+  "show": "el alga",
+  "note": "headword corrected: la alga to el alga"
+ },
+ "carril": {
+  "show": "el carril",
+  "note": "headword corrected: carril to el carril"
+ },
+ "reptil": {
+  "show": "el reptil",
+  "note": "headword corrected: reptil to el reptil"
+ },
+ "el devoto": {
+  "show": "devoto",
+  "note": "headword corrected: el devoto to devoto"
+ },
+ "el inseguro": {
+  "show": "inseguro",
+  "note": "headword corrected: el inseguro to inseguro"
+ },
+ "la aula": {
+  "show": "el aula",
+  "note": "headword corrected: la aula to el aula"
+ },
+ "la contrabandista": {
+  "show": "el/la contrabandista",
+  "note": "headword corrected: la contrabandista to el/la contrabandista"
+ },
+ "la recepcionista": {
+  "show": "el/la recepcionista",
+  "note": "headword corrected: la recepcionista to el/la recepcionista"
+ },
+ "la tranvía": {
+  "show": "el tranvía",
+  "note": "headword corrected: la tranvía to el tranvía"
+ },
+ "la pianista": {
+  "show": "el/la pianista",
+  "note": "headword corrected: la pianista to el/la pianista"
+ },
+ "el exquisito": {
+  "show": "exquisito",
+  "note": "headword corrected: el exquisito to exquisito"
+ },
+ "la guionista": {
+  "show": "el/la guionista",
+  "note": "headword corrected: la guionista to el/la guionista"
+ },
+ "carné": {
+  "show": "el carné",
+  "note": "headword corrected: carné to el carné"
+ },
+ "el gestión": {
+  "show": "la gestión",
+  "note": "headword corrected: el gestión to la gestión"
+ },
+ "el currículum": {
+  "show": "el currículum",
+  "note": "headword corrected: el currículum to el currículum"
+ },
+ "hobby": {
+  "show": "el hobby",
+  "note": "headword corrected: hobby to el hobby"
+ },
+ "el acogedor": {
+  "show": "acogedor",
+  "note": "headword corrected: el acogedor to acogedor"
+ },
+ "el dolido": {
+  "show": "dolido",
+  "note": "headword corrected: el dolido to dolido"
+ },
+ "el salado": {
+  "show": "salado",
+  "note": "headword corrected: el salado to salado"
+ },
+ "la budista": {
+  "show": "el/la budista",
+  "note": "headword corrected: la budista to el/la budista"
+ },
+ "champú": {
+  "show": "el champú",
+  "note": "headword corrected: champú to el champú"
+ },
+ "el comunión": {
+  "show": "la comunión",
+  "note": "headword corrected: el comunión to la comunión"
+ },
+ "contribuyente": {
+  "show": "el/la contribuyente",
+  "note": "headword corrected: contribuyente to el/la contribuyente"
+ },
+ "el árido": {
+  "show": "árido",
+  "note": "headword corrected: el árido to árido"
+ },
+ "el solidario": {
+  "show": "solidario",
+  "note": "headword corrected: el solidario to solidario"
+ },
+ "el céntrico": {
+  "show": "céntrico",
+  "note": "headword corrected: el céntrico to céntrico"
+ },
+ "el inorgánico": {
+  "show": "inorgánico",
+  "note": "headword corrected: el inorgánico to inorgánico"
+ },
+ "el didáctico": {
+  "show": "didáctico",
+  "note": "headword corrected: el didáctico to didáctico"
+ },
+ "el costero": {
+  "show": "costero",
+  "note": "headword corrected: el costero to costero"
+ },
+ "el ideológico": {
+  "show": "ideológico",
+  "note": "headword corrected: el ideológico to ideológico"
+ },
+ "el metafísico": {
+  "show": "metafísico",
+  "note": "headword corrected: el metafísico to metafísico"
+ },
+ "el dietético": {
+  "show": "dietético",
+  "note": "headword corrected: el dietético to dietético"
+ },
+ "el escotado": {
+  "show": "escotado",
+  "note": "headword corrected: el escotado to escotado"
+ },
+ "el esquelético": {
+  "show": "esquelético",
+  "note": "headword corrected: el esquelético to esquelético"
+ },
+ "el fotogénico": {
+  "show": "fotogénico",
+  "note": "headword corrected: el fotogénico to fotogénico"
+ },
+ "el ginecológico": {
+  "show": "ginecológico",
+  "note": "headword corrected: el ginecológico to ginecológico"
+ },
+ "el insulso": {
+  "show": "insulso",
+  "note": "headword corrected: el insulso to insulso"
+ },
+ "el lúdico": {
+  "show": "lúdico",
+  "note": "headword corrected: el lúdico to lúdico"
+ },
+ "el pedagógico": {
+  "show": "pedagógico",
+  "note": "headword corrected: el pedagógico to pedagógico"
+ },
+ "el austero": {
+  "show": "austero",
+  "note": "headword corrected: el austero to austero"
+ },
+ "el rellenito": {
+  "show": "rellenito",
+  "note": "headword corrected: el rellenito to rellenito"
+ },
+ "la dulzón": {
+  "show": "dulzón",
+  "note": "headword corrected: la dulzón to dulzón"
+ },
+ "el urbano": {
+  "show": "urbano",
+  "note": "headword corrected: el urbano to urbano"
+ },
+ "el viudo": {
+  "show": "viudo",
+  "note": "headword corrected: el viudo to viudo"
+ },
+ "el hablador": {
+  "show": "hablador",
+  "note": "headword corrected: el hablador to hablador"
+ },
+ "el publicitario": {
+  "show": "publicitario",
+  "note": "headword corrected: el publicitario to publicitario"
+ },
+ "el hospitalario": {
+  "show": "hospitalario",
+  "note": "headword corrected: el hospitalario to hospitalario"
+ },
+ "el liso": {
+  "show": "liso",
+  "note": "headword corrected: el liso to liso"
+ },
+ "el antipático": {
+  "show": "antipático",
+  "note": "headword corrected: el antipático to antipático"
+ },
+ "el botánico": {
+  "show": "botánico",
+  "note": "headword corrected: el botánico to botánico"
+ },
+ "el ecológico": {
+  "show": "ecológico",
+  "note": "headword corrected: el ecológico to ecológico"
+ },
+ "el terapéutico": {
+  "show": "terapéutico",
+  "note": "headword corrected: el terapéutico to terapéutico"
+ },
+ "el cívico": {
+  "show": "cívico",
+  "note": "headword corrected: el cívico to cívico"
+ },
+ "el frívolo": {
+  "show": "frívolo",
+  "note": "headword corrected: el frívolo to frívolo"
+ },
+ "el rústico": {
+  "show": "rústico",
+  "note": "headword corrected: el rústico to rústico"
+ },
+ "el inexperto": {
+  "show": "inexperto",
+  "note": "headword corrected: el inexperto to inexperto"
+ },
+ "el corpulento": {
+  "show": "corpulento",
+  "note": "headword corrected: el corpulento to corpulento"
+ },
+ "el íntegro": {
+  "show": "íntegro",
+  "note": "headword corrected: el íntegro to íntegro"
+ },
+ "el filosófico": {
+  "show": "filosófico",
+  "note": "headword corrected: el filosófico to filosófico"
+ },
+ "el glotón": {
+  "show": "glotón",
+  "note": "headword corrected: el glotón to glotón"
+ },
+ "el metropolitano": {
+  "show": "metropolitano",
+  "note": "headword corrected: el metropolitano to metropolitano"
+ },
+ "el parlamentario": {
+  "show": "parlamentario",
+  "note": "headword corrected: el parlamentario to parlamentario"
+ },
+ "el manso": {
+  "show": "manso",
+  "note": "headword corrected: el manso to manso"
+ },
+ "el geográfico": {
+  "show": "geográfico",
+  "note": "headword corrected: el geográfico to geográfico"
+ },
+ "el accidentado": {
+  "show": "accidentado",
+  "note": "headword corrected: el accidentado to accidentado"
+ },
+ "el ortodoxo": {
+  "show": "ortodoxo",
+  "note": "headword corrected: el ortodoxo to ortodoxo"
+ },
+ "el temerario": {
+  "show": "temerario",
+  "note": "headword corrected: el temerario to temerario"
+ },
+ "el bordado": {
+  "show": "bordado",
+  "note": "headword corrected: el bordado to bordado"
+ },
+ "el marítimo": {
+  "show": "marítimo",
+  "note": "headword corrected: el marítimo to marítimo"
+ },
+ "el presunto": {
+  "show": "presunto",
+  "note": "headword corrected: el presunto to presunto"
+ },
+ "el robusto": {
+  "show": "robusto",
+  "note": "headword corrected: el robusto to robusto"
+ },
+ "el agrícola": {
+  "show": "agrícola",
+  "note": "headword corrected: el agrícola to agrícola"
+ },
+ "la agrícola": {
+  "show": "agrícola",
+  "note": "headword corrected: la agrícola to agrícola"
+ },
+ "el burgués": {
+  "show": "burgués",
+  "note": "headword corrected: el burgués to burgués"
+ },
+ "el pediatra": {
+  "show": "pediatra",
+  "note": "headword corrected: el pediatra to pediatra"
+ },
+ "la pediatra": {
+  "show": "el/la pediatra",
+  "note": "headword corrected: la pediatra to el/la pediatra"
+ },
+ "la aristócrata": {
+  "show": "el/la aristócrata",
+  "note": "headword corrected: la aristócrata to el/la aristócrata"
+ },
+ "la guitarrista": {
+  "show": "el/la guitarrista",
+  "note": "headword corrected: la guitarrista to el/la guitarrista"
+ },
+ "la hincha": {
+  "show": "el/la hincha",
+  "note": "headword corrected: la hincha to el/la hincha"
+ },
+ "la novelista": {
+  "show": "el/la novelista",
+  "note": "headword corrected: la novelista to el/la novelista"
+ },
+ "la solista": {
+  "show": "el/la solista",
+  "note": "headword corrected: la solista to el/la solista"
+ },
+ "la semifinal": {
+  "show": "la semifinal",
+  "note": "headword corrected: la semifinal to la semifinal"
+ },
+ "la anestesista": {
+  "show": "el/la anestesista",
+  "note": "headword corrected: la anestesista to el/la anestesista"
+ },
+ "la economista": {
+  "show": "el/la economista",
+  "note": "headword corrected: la economista to el/la economista"
+ },
+ "la altruista": {
+  "show": "el/la altruista",
+  "note": "headword corrected: la altruista to el/la altruista"
+ },
+ "la ecologista": {
+  "show": "el/la ecologista",
+  "note": "headword corrected: la ecologista to el/la ecologista"
+ },
+ "la cónyuge": {
+  "show": "el/la cónyuge",
+  "note": "headword corrected: la cónyuge to el/la cónyuge"
+ },
+ "el cónyuge": {
+  "show": "el/la cónyuge",
+  "note": "headword corrected: el cónyuge to el/la cónyuge"
+ },
+ "la anagrama": {
+  "show": "el anagrama",
+  "note": "headword corrected: la anagrama to el anagrama"
+ },
+ "la guardarropa": {
+  "show": "el guardarropa",
+  "note": "headword corrected: la guardarropa to el guardarropa"
+ },
+ "álgebra": {
+  "show": "el álgebra",
+  "note": "headword corrected: álgebra to el álgebra"
+ },
+ "la álgebra": {
+  "show": "el álgebra",
+  "note": "headword corrected: la álgebra to el álgebra"
+ },
+ "sacacorchos": {
+  "show": "el sacacorchos",
+  "note": "headword corrected: sacacorchos to el sacacorchos"
+ },
+ "abrelatas": {
+  "show": "el abrelatas",
+  "note": "headword corrected: abrelatas to el abrelatas"
+ },
+ "abrecartas": {
+  "show": "el abrecartas",
+  "note": "headword corrected: abrecartas to el abrecartas"
+ },
+ "yogur": {
+  "show": "el yogur",
+  "note": "headword corrected: yogur to el yogur"
+ },
+ "rímel": {
+  "show": "el rímel",
+  "note": "headword corrected: rímel to el rímel"
+ },
+ "chat": {
+  "show": "el chat",
+  "note": "headword corrected: chat to el chat"
+ },
+ "clip": {
+  "show": "el clip",
+  "note": "headword corrected: clip to el clip"
+ },
+ "gel": {
+  "show": "el gel",
+  "note": "headword corrected: gel to el gel"
+ },
+ "el house": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
+ },
+ "el baby": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
+ },
+ "el top": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
+ },
+ "re": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
+ },
+ "bajas": {
+  "rank": "exclude",
+  "note": "plural or inflected form of an entry that stays; its count moves there",
+  "into": "bajo"
+ },
+ "altas": {
+  "rank": "exclude",
+  "note": "plural or inflected form of an entry that stays; its count moves there",
+  "into": "alto"
+ },
+ "el out": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
+ },
+ "la plana": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
+ },
+ "la adema": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
+ },
+ "obstante": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
+ },
+ "el tac": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
+ },
+ "el saturno": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
+ },
+ "camarones": {
+  "rank": "exclude",
+  "note": "plural or inflected form of an entry that stays; its count moves there",
+  "into": "el camarón"
+ },
+ "nueces": {
+  "rank": "exclude",
+  "note": "plural or inflected form of an entry that stays; its count moves there",
+  "into": "la nuez"
+ },
+ "dni": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
+ },
+ "pc": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
+ },
+ "la fa": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
+ },
+ "el capricornio": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
+ },
+ "llegarle": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
+ },
+ "venirle": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
+ },
+ "írsele": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
+ },
+ "la líneacontinua": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
+ },
+ "la iberia": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
+ },
+ "sabbat": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
+ },
+ "el zum": {
+  "rank": "exclude",
+  "note": "leftover: not a stand-alone word to learn, or English, or a fragment"
  }
 }

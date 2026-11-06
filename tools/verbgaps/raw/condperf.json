@@ -1,0 +1,2595 @@
+[
+ {
+  "q": "Si hubiera sabido la verdad, te lo ___ (decir) de inmediato.",
+  "inf": "decir",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría dicho",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera sabido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera sabido\", the unreal past result takes the conditional perfect.",
+  "en": "If I had known the truth, I would have told you right away.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiéramos salido más temprano, ___ (llegar) a tiempo al aeropuerto.",
+  "inf": "llegar",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos llegado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiéramos salido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiéramos salido\", the unreal past result takes the conditional perfect.",
+  "en": "If we had left earlier, we would have gotten to the airport on time.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubieras estudiado más, ___ (ganar) la beca.",
+  "inf": "ganar",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías ganado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieras estudiado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieras estudiado\", the unreal past result takes the conditional perfect.",
+  "en": "If you had studied more, you would have won the scholarship.",
+  "band": "B2"
+ },
+ {
+  "q": "Si mis papás hubieran sabido, ___ (venir) a visitarnos.",
+  "inf": "venir",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían venido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieran sabido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieran sabido\", the unreal past result takes the conditional perfect.",
+  "en": "If my parents had known, they would have come to visit us.",
+  "band": "B2"
+ },
+ {
+  "q": "Si Ana hubiera tenido plata, ___ (comprar) el apartamento.",
+  "inf": "comprar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría comprado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera tenido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera tenido\", the unreal past result takes the conditional perfect.",
+  "en": "If Ana had had money, she would have bought the apartment.",
+  "band": "B2"
+ },
+ {
+  "q": "Yo ___ (ir) contigo al concierto si me hubieras invitado.",
+  "inf": "ir",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría ido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si me hubieras invitado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si me hubieras invitado\", the unreal past result takes the conditional perfect.",
+  "en": "I would have gone with you to the concert if you had invited me.",
+  "band": "B2"
+ },
+ {
+  "q": "Si no hubiera llovido, nosotros ___ (ver) el desfile completo.",
+  "inf": "ver",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos visto",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si no hubiera llovido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si no hubiera llovido\", the unreal past result takes the conditional perfect.",
+  "en": "If it hadn't rained, we would have seen the whole parade.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubieras manejado más despacio, no ___ (pasar) nada.",
+  "inf": "pasar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría pasado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieras manejado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieras manejado\", the unreal past result takes the conditional perfect.",
+  "en": "If you had driven more slowly, nothing would have happened.",
+  "band": "B2"
+ },
+ {
+  "q": "Los estudiantes ___ (aprobar) el examen si hubieran estudiado juntos.",
+  "inf": "aprobar",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían aprobado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieran estudiado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieran estudiado\", the unreal past result takes the conditional perfect.",
+  "en": "The students would have passed the exam if they had studied together.",
+  "band": "B2"
+ },
+ {
+  "q": "Si mi jefe hubiera visto el error, lo ___ (poner) en el informe.",
+  "inf": "poner",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría puesto",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera visto\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera visto\", the unreal past result takes the conditional perfect.",
+  "en": "If my boss had seen the mistake, he would have put it in the report.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiera tenido tiempo, yo ___ (hacer) la cena para todos.",
+  "inf": "hacer",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría hecho",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera tenido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera tenido\", the unreal past result takes the conditional perfect.",
+  "en": "If I had had time, I would have made dinner for everyone.",
+  "band": "B2"
+ },
+ {
+  "q": "Si no hubiera hecho tanto frío, nos ___ (quedar) en la playa.",
+  "inf": "quedar",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos quedado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si no hubiera hecho\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si no hubiera hecho\", the unreal past result takes the conditional perfect.",
+  "en": "If it hadn't been so cold, we would have stayed at the beach.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubieras escuchado a tu mamá, ayer ___ (saber) qué hacer en la reunión.",
+  "inf": "saber",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías sabido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieras escuchado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieras escuchado\", the unreal past result takes the conditional perfect.",
+  "en": "If you had listened to your mom, yesterday you would have known what to do in the meeting.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiera habido menos tráfico, mis tíos ___ (salir) más tarde.",
+  "inf": "salir",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían salido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera habido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera habido\", the unreal past result takes the conditional perfect.",
+  "en": "If there had been less traffic, my aunt and uncle would have left later.",
+  "band": "B2"
+ },
+ {
+  "q": "Si Mateo hubiera recordado, ___ (traer) los documentos.",
+  "inf": "traer",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría traído",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera recordado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera recordado\", the unreal past result takes the conditional perfect.",
+  "en": "If Mateo had remembered, he would have brought the documents.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiera sabido que estaba lleno, yo ___ (escoger) otro restaurante.",
+  "inf": "escoger",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría escogido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera sabido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera sabido\", the unreal past result takes the conditional perfect.",
+  "en": "If I had known it was full, I would have chosen another restaurant.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiéramos viajado a Cartagena, ___ (conocer) a tu familia.",
+  "inf": "conocer",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos conocido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiéramos viajado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiéramos viajado\", the unreal past result takes the conditional perfect.",
+  "en": "If we had traveled to Cartagena, we would have met your family.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubieras salido a las seis, no ___ (perder) el bus.",
+  "inf": "perder",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías perdido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieras salido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieras salido\", the unreal past result takes the conditional perfect.",
+  "en": "If you had left at six, you wouldn't have missed the bus.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubieran vendido el carro, ___ (tener) plata para el viaje del mes pasado.",
+  "inf": "tener",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían tenido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieran vendido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieran vendido\", the unreal past result takes the conditional perfect.",
+  "en": "If they had sold the car, they would have had money for last month's trip.",
+  "band": "B2"
+ },
+ {
+  "q": "Si Laura hubiera conocido a Pedro antes, se ___ (casar) con él hace años.",
+  "inf": "casarse",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría casado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera conocido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera conocido\", the unreal past result takes the conditional perfect.",
+  "en": "If Laura had met Pedro earlier, she would have married him years ago.",
+  "band": "B2"
+ },
+ {
+  "q": "Si me hubieran dado permiso, yo ___ (poder) quedarme hasta tarde.",
+  "inf": "poder",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría podido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si me hubieran dado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si me hubieran dado\", the unreal past result takes the conditional perfect.",
+  "en": "If they had given me permission, I could have stayed out late.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiéramos reservado, ___ (cenar) en ese restaurante.",
+  "inf": "cenar",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos cenado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiéramos reservado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiéramos reservado\", the unreal past result takes the conditional perfect.",
+  "en": "If we had made a reservation, we would have eaten at that restaurant.",
+  "band": "B2"
+ },
+ {
+  "q": "Si no hubieras tomado tanto café, ___ (dormir) bien anoche.",
+  "inf": "dormir",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías dormido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si no hubieras tomado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si no hubieras tomado\", the unreal past result takes the conditional perfect.",
+  "en": "If you hadn't had so much coffee, you would have slept well last night.",
+  "band": "B2"
+ },
+ {
+  "q": "Si los vecinos hubieran mirado la cámara, ___ (descubrir) al ladrón.",
+  "inf": "descubrir",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían descubierto",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieran mirado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieran mirado\", the unreal past result takes the conditional perfect.",
+  "en": "If the neighbors had looked at the camera, they would have found the thief.",
+  "band": "B2"
+ },
+ {
+  "q": "Si mi hermano hubiera estado en la ciudad, nos ___ (ayudar) con la mudanza.",
+  "inf": "ayudar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría ayudado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera estado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera estado\", the unreal past result takes the conditional perfect.",
+  "en": "If my brother had been in town, he would have helped us move.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiera tenido tu dirección, te ___ (escribir) una carta.",
+  "inf": "escribir",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría escrito",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera tenido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera tenido\", the unreal past result takes the conditional perfect.",
+  "en": "If I had had your address, I would have written you a letter.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiera habido música, nosotros ___ (bailar) toda la noche.",
+  "inf": "bailar",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos bailado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera habido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera habido\", the unreal past result takes the conditional perfect.",
+  "en": "If there had been music, we would have danced all night.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubieras leído las instrucciones, ___ (entender) cómo funcionaba.",
+  "inf": "entender",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías entendido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieras leído\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieras leído\", the unreal past result takes the conditional perfect.",
+  "en": "If you had read the instructions, you would have understood how it worked.",
+  "band": "B2"
+ },
+ {
+  "q": "Si el bus no se hubiera dañado, los niños ___ (llegar) al colegio.",
+  "inf": "llegar",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían llegado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si no se hubiera dañado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si no se hubiera dañado\", the unreal past result takes the conditional perfect.",
+  "en": "If the bus hadn't broken down, the kids would have gotten to school.",
+  "band": "B2"
+ },
+ {
+  "q": "Si Camilo hubiera tenido más valor, le ___ (dar) un abrazo a su papá.",
+  "inf": "dar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría dado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera tenido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera tenido\", the unreal past result takes the conditional perfect.",
+  "en": "If Camilo had had more courage, he would have hugged his dad.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiera nacido en Bogotá, yo ___ (vivir) cerca de mis abuelos toda la infancia.",
+  "inf": "vivir",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría vivido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera nacido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera nacido\", the unreal past result takes the conditional perfect.",
+  "en": "If I had been born in Bogotá, I would have lived near my grandparents all through childhood.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiéramos sabido del almuerzo, no ___ (comer) antes de salir.",
+  "inf": "comer",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos comido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiéramos sabido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiéramos sabido\", the unreal past result takes the conditional perfect.",
+  "en": "If we had known about lunch, we wouldn't have eaten before leaving.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubieras tenido el libro, ___ (leer) el capítulo antes de la clase.",
+  "inf": "leer",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías leído",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieras tenido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieras tenido\", the unreal past result takes the conditional perfect.",
+  "en": "If you had had the book, you would have read the chapter before class.",
+  "band": "B2"
+ },
+ {
+  "q": "Si Marta hubiera llamado, mis papás la ___ (invitar) a la cena.",
+  "inf": "invitar",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían invitado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera llamado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera llamado\", the unreal past result takes the conditional perfect.",
+  "en": "If Marta had called, my parents would have invited her to dinner.",
+  "band": "B2"
+ },
+ {
+  "q": "Si mi hijo hubiera tenido miedo, ___ (volver) a casa corriendo.",
+  "inf": "volver",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría vuelto",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera tenido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera tenido\", the unreal past result takes the conditional perfect.",
+  "en": "If my son had been scared, he would have run back home.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubieras pedido el favor a tiempo, yo ___ (mandar) el paquete ayer.",
+  "inf": "mandar",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría mandado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieras pedido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieras pedido\", the unreal past result takes the conditional perfect.",
+  "en": "If you had asked for the favor in time, I would have sent the package yesterday.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiéramos gastado menos, ___ (ahorrar) para un carro nuevo.",
+  "inf": "ahorrar",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos ahorrado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiéramos gastado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiéramos gastado\", the unreal past result takes the conditional perfect.",
+  "en": "If we had spent less, we would have saved for a new car.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubieras llegado antes, ___ (decidir) con nosotros el destino.",
+  "inf": "decidir",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías decidido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieras llegado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieras llegado\", the unreal past result takes the conditional perfect.",
+  "en": "If you had arrived earlier, you would have chosen the destination with us.",
+  "band": "B2"
+ },
+ {
+  "q": "Si el dueño hubiera querido, ___ (cerrar) la tienda en enero.",
+  "inf": "cerrar",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían cerrado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera querido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera querido\", the unreal past result takes the conditional perfect.",
+  "en": "If the owner had wanted to, he would have closed the shop in January.",
+  "band": "B2"
+ },
+ {
+  "q": "Si Valentina hubiera preguntado, el profesor le ___ (explicar) el problema.",
+  "inf": "explicar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría explicado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera preguntado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera preguntado\", the unreal past result takes the conditional perfect.",
+  "en": "If Valentina had asked, the teacher would have explained the problem to her.",
+  "band": "B2"
+ },
+ {
+  "q": "Si me hubieras llamado anoche, yo te ___ (llevar) a casa en el carro.",
+  "inf": "llevar",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría llevado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si me hubieras llamado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si me hubieras llamado\", the unreal past result takes the conditional perfect.",
+  "en": "If you had called me last night, I would have driven you home.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiéramos pasado por Popayán, ___ (probar) las empanadas de pipián.",
+  "inf": "probar",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos probado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiéramos pasado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiéramos pasado\", the unreal past result takes the conditional perfect.",
+  "en": "If we had gone through Popayán, we would have tried the pipián empanadas.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubieras escuchado la alarma, ___ (parar) el carro enseguida.",
+  "inf": "parar",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías parado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieras escuchado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieras escuchado\", the unreal past result takes the conditional perfect.",
+  "en": "If you had heard the alarm, you would have stopped the car right away.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubieran buscado mejor, los niños ___ (encontrar) las llaves.",
+  "inf": "encontrar",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían encontrado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieran buscado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieran buscado\", the unreal past result takes the conditional perfect.",
+  "en": "If they had looked harder, the kids would have found the keys.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiera pasado a mi lado, Pedro ___ (sentir) el olor a café.",
+  "inf": "sentir",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría sentido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera pasado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera pasado\", the unreal past result takes the conditional perfect.",
+  "en": "If he had walked by me, Pedro would have smelled the coffee.",
+  "band": "B2"
+ },
+ {
+  "q": "Yo no ___ (renunciar) el año pasado si mi jefe me hubiera escuchado.",
+  "inf": "renunciar",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría renunciado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si me hubiera escuchado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si me hubiera escuchado\", the unreal past result takes the conditional perfect.",
+  "en": "I would not have quit last year if my boss had listened to me.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiera habido más voluntarios, ___ (empezar) la obra en marzo.",
+  "inf": "empezar",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos empezado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera habido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera habido\", the unreal past result takes the conditional perfect.",
+  "en": "If there had been more volunteers, we would have started the work in March.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubieras sabido su nombre, le ___ (hablar) en la fiesta.",
+  "inf": "hablar",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías hablado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieras sabido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieras sabido\", the unreal past result takes the conditional perfect.",
+  "en": "If you had known her name, you would have talked to her at the party.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubieran tenido otra opción, los jefes no me ___ (dejar) ir.",
+  "inf": "dejar",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían dejado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieran tenido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieran tenido\", the unreal past result takes the conditional perfect.",
+  "en": "If they had had another option, the bosses wouldn't have let me go.",
+  "band": "B2"
+ },
+ {
+  "q": "Si el médico hubiera insistido, mi abuela ___ (seguir) el tratamiento.",
+  "inf": "seguir",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría seguido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera insistido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera insistido\", the unreal past result takes the conditional perfect.",
+  "en": "If the doctor had insisted, my grandmother would have continued the treatment.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiera tenido la llave, yo ___ (abrir) la puerta sin molestar.",
+  "inf": "abrir",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría abierto",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera tenido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera tenido\", the unreal past result takes the conditional perfect.",
+  "en": "If I had had the key, I would have opened the door without bothering anyone.",
+  "band": "B2"
+ },
+ {
+  "q": "Si no hubiéramos estado cansados, ___ (correr) la carrera completa.",
+  "inf": "correr",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos corrido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si no hubiéramos estado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si no hubiéramos estado\", the unreal past result takes the conditional perfect.",
+  "en": "If we hadn't been tired, we would have run the whole race.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubieras conocido a Sandra antes, te ___ (casar) con ella.",
+  "inf": "casarse",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías casado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieras conocido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieras conocido\", the unreal past result takes the conditional perfect.",
+  "en": "If you had met Sandra earlier, you would have married her.",
+  "band": "B2"
+ },
+ {
+  "q": "Si los dueños hubieran sabido, ___ (pagar) la cuenta de la luz.",
+  "inf": "pagar",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían pagado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieran sabido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieran sabido\", the unreal past result takes the conditional perfect.",
+  "en": "If the owners had known, they would have paid the electricity bill.",
+  "band": "B2"
+ },
+ {
+  "q": "Si la policía hubiera visto las fotos a tiempo, le ___ (creer) a Marta.",
+  "inf": "creer",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría creído",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera visto\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera visto\", the unreal past result takes the conditional perfect.",
+  "en": "If the police had seen the photos in time, they would have believed Marta.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiera perdido la billetera aquí, yo la ___ (buscar) toda la noche.",
+  "inf": "buscar",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría buscado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera perdido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera perdido\", the unreal past result takes the conditional perfect.",
+  "en": "If I had lost my wallet here, I would have looked for it all night.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiéramos tenido internet, ___ (saber) lo que pasaba.",
+  "inf": "saber",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos sabido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiéramos tenido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiéramos tenido\", the unreal past result takes the conditional perfect.",
+  "en": "If we had had internet, we would have known what was happening.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubieras cuidado el carro, no te ___ (costar) tanto el arreglo.",
+  "inf": "costar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría costado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieras cuidado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieras cuidado\", the unreal past result takes the conditional perfect.",
+  "en": "If you had taken care of the car, the repair wouldn't have cost you so much.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubieran encontrado el álbum, los abuelos nos ___ (mostrar) las fotos.",
+  "inf": "mostrar",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían mostrado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieran encontrado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieran encontrado\", the unreal past result takes the conditional perfect.",
+  "en": "If they had found the album, our grandparents would have shown us the photos.",
+  "band": "B2"
+ },
+ {
+  "q": "Si no se hubiera lastimado, mi hijo ___ (jugar) el partido final.",
+  "inf": "jugar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría jugado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si no se hubiera lastimado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si no se hubiera lastimado\", the unreal past result takes the conditional perfect.",
+  "en": "If he hadn't gotten hurt, my son would have played the final game.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiera sabido de la fiesta, yo ___ (salir) más temprano del trabajo.",
+  "inf": "salir",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría salido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera sabido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera sabido\", the unreal past result takes the conditional perfect.",
+  "en": "If I had known about the party, I would have left work earlier.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiera hecho calor, ___ (tomar) jugo en el parque.",
+  "inf": "tomar",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos tomado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera hecho\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera hecho\", the unreal past result takes the conditional perfect.",
+  "en": "If it had been warm, we would have had juice in the park.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubieras tenido mi correo, me ___ (enviar) las fotos esa noche.",
+  "inf": "enviar",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías enviado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubieras tenido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubieras tenido\", the unreal past result takes the conditional perfect.",
+  "en": "If you had had my email, you would have sent me the photos that night.",
+  "band": "B2"
+ },
+ {
+  "q": "Si el precio hubiera sido mejor, los dueños ___ (vender) la finca.",
+  "inf": "vender",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían vendido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera sido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera sido\", the unreal past result takes the conditional perfect.",
+  "en": "If the price had been better, the owners would have sold the farm.",
+  "band": "B2"
+ },
+ {
+  "q": "Si Sofía hubiera tenido el permiso, ___ (entrar) a la reunión.",
+  "inf": "entrar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría entrado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera tenido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera tenido\", the unreal past result takes the conditional perfect.",
+  "en": "If Sofía had had permission, she would have gone into the meeting.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiera tenido tu número, te ___ (llamar) desde el aeropuerto.",
+  "inf": "llamar",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría llamado",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera tenido\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera tenido\", the unreal past result takes the conditional perfect.",
+  "en": "If I had had your number, I would have called you from the airport.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiéramos enviado la solicitud, ___ (recibir) respuesta en abril.",
+  "inf": "recibir",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos recibido",
+  "use": "resultado irreal en el pasado: si + pluscuamperfecto de subjuntivo",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiéramos enviado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiéramos enviado\", the unreal past result takes the conditional perfect.",
+  "en": "If we had sent the application, we would have gotten an answer in April.",
+  "band": "B2"
+ },
+ {
+  "q": "Sin tu ayuda, no lo ___ (lograr) el año pasado.",
+  "inf": "lograr",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos logrado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"sin tu ayuda\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"sin tu ayuda\" sets up what would have happened in the past.",
+  "en": "Without your help, we would not have managed it last year.",
+  "band": "B2"
+ },
+ {
+  "q": "Con una semana más, yo ___ (terminar) el proyecto el mes pasado.",
+  "inf": "terminar",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría terminado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"con una semana más\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"con una semana más\" sets up what would have happened in the past.",
+  "en": "With one more week, I would have finished the project last month.",
+  "band": "B2"
+ },
+ {
+  "q": "De haber salido temprano, el viaje ___ (ser) mucho más corto.",
+  "inf": "ser",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría sido",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"de haber salido\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"de haber salido\" sets up what would have happened in the past.",
+  "en": "Had we left early, the trip would have been much shorter.",
+  "band": "B2"
+ },
+ {
+  "q": "Me ___ (gustar) ir a tu boda, pero estaba fuera del país.",
+  "inf": "gustar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría gustado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"pero estaba fuera\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"pero estaba fuera\" sets up what would have happened in the past.",
+  "en": "I would have liked to go to your wedding, but I was out of the country.",
+  "band": "B2"
+ },
+ {
+  "q": "Sin el trancón de ayer, ___ (llegar) a la hora de siempre.",
+  "inf": "llegar",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos llegado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"sin el trancón de ayer\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"sin el trancón de ayer\" sets up what would have happened in the past.",
+  "en": "Without yesterday's traffic jam, we would have arrived at the usual time.",
+  "band": "B2"
+ },
+ {
+  "q": "Sin la beca, mis hermanos no ___ (poder) estudiar fuera el año pasado.",
+  "inf": "poder",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían podido",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Un resultado irreal en el pasado (anclado en el pasado) va en condicional perfecto.",
+  "why_en": "An unreal result in the past (anchored in the past) takes the conditional perfect.",
+  "en": "Without the scholarship, my brothers could not have studied abroad last year.",
+  "band": "B2"
+ },
+ {
+  "q": "De haber sido más joven, mi abuelo ___ (viajar) por toda Suramérica.",
+  "inf": "viajar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría viajado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"de haber sido\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"de haber sido\" sets up what would have happened in the past.",
+  "en": "Had he been younger, my grandfather would have traveled all over South America.",
+  "band": "B2"
+ },
+ {
+  "q": "En tu lugar, yo no le ___ (dar) mi número ayer.",
+  "inf": "dar",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría dado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"en tu lugar ayer\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"en tu lugar ayer\" sets up what would have happened in the past.",
+  "en": "In your place, I would not have given him my number yesterday.",
+  "band": "B2"
+ },
+ {
+  "q": "Sin esa beca, nosotros nunca ___ (vivir) en Madrid esos dos años.",
+  "inf": "vivir",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos vivido",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Un resultado irreal en el pasado (anclado en el pasado) va en condicional perfecto.",
+  "why_en": "An unreal result in the past (anchored in the past) takes the conditional perfect.",
+  "en": "Without that scholarship, we would never have lived in Madrid those two years.",
+  "band": "B2"
+ },
+ {
+  "q": "Sin tantos cambios, el plan de ayer ___ (funcionar) mejor.",
+  "inf": "funcionar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría funcionado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"sin tantos cambios\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"sin tantos cambios\" sets up what would have happened in the past.",
+  "en": "Without so many changes, yesterday's plan would have worked better.",
+  "band": "B2"
+ },
+ {
+  "q": "De haber nacido en 1900, tú ___ (tener) una infancia muy distinta.",
+  "inf": "tener",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías tenido",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"de haber nacido\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"de haber nacido\" sets up what would have happened in the past.",
+  "en": "Had you been born in 1900, you would have had a very different childhood.",
+  "band": "B2"
+ },
+ {
+  "q": "Con un buen micrófono, los chicos ___ (cantar) mejor anoche.",
+  "inf": "cantar",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían cantado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"con un buen micrófono anoche\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"con un buen micrófono anoche\" sets up what would have happened in the past.",
+  "en": "With a good microphone, the kids would have sung better last night.",
+  "band": "B2"
+ },
+ {
+  "q": "Sin tu llamada, mi mamá no se ___ (poner) tan contenta ayer.",
+  "inf": "poner",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría puesto",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"sin tu llamada ayer\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"sin tu llamada ayer\" sets up what would have happened in the past.",
+  "en": "Without your call, my mom would not have been so happy yesterday.",
+  "band": "B2"
+ },
+ {
+  "q": "En ese restaurante, nosotros ___ (pedir) otra cosa el sábado.",
+  "inf": "pedir",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos pedido",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"el sábado\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"el sábado\" sets up what would have happened in the past.",
+  "en": "At that restaurant, we would have ordered something else on Saturday.",
+  "band": "B2"
+ },
+ {
+  "q": "Sin la ventana abierta, tú no ___ (ver) el amanecer aquella mañana.",
+  "inf": "ver",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías visto",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"sin la ventana abierta\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"sin la ventana abierta\" sets up what would have happened in the past.",
+  "en": "Without the open window, you wouldn't have seen the sunrise that morning.",
+  "band": "B2"
+ },
+ {
+  "q": "Con tu abrigo, yo no ___ (sentir) tanto frío en la montaña el sábado.",
+  "inf": "sentir",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría sentido",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Un resultado irreal en el pasado (anclado en el pasado) va en condicional perfecto.",
+  "why_en": "An unreal result in the past (anchored in the past) takes the conditional perfect.",
+  "en": "With your coat, I would not have felt so cold on the mountain on Saturday.",
+  "band": "B2"
+ },
+ {
+  "q": "Si no hubieran parado la fiesta, nadie ___ (dormir) bien esa noche.",
+  "inf": "dormir",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría dormido",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si no hubieran parado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si no hubieran parado\", the unreal past result takes the conditional perfect.",
+  "en": "If they had not stopped the party, nobody would have slept well that night.",
+  "band": "B2"
+ },
+ {
+  "q": "Sin el parlante, no los ___ (escuchar) en la última fila aquel día.",
+  "inf": "escuchar",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos escuchado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"Sin el parlante aquel día\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"Sin el parlante aquel día\" sets up what would have happened in the past.",
+  "en": "Without the speaker, we wouldn't have heard them in the back row that day.",
+  "band": "B2"
+ },
+ {
+  "q": "Con más tiempo, yo ___ (tomar) el curso completo el semestre pasado.",
+  "inf": "tomar",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría tomado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"con más tiempo\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"con más tiempo\" sets up what would have happened in the past.",
+  "en": "With more time, I would have taken the whole course last semester.",
+  "band": "B2"
+ },
+ {
+  "q": "Con más información, tú ___ (elegir) otra universidad en ese entonces.",
+  "inf": "elegir",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías elegido",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"con más información\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"con más información\" sets up what would have happened in the past.",
+  "en": "With more information, you would have chosen another university back then.",
+  "band": "B2"
+ },
+ {
+  "q": "De haber sabido del examen, yo ___ (estudiar) toda la noche.",
+  "inf": "estudiar",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría estudiado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"de haber sabido\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"de haber sabido\" sets up what would have happened in the past.",
+  "en": "Had I known about the exam, I would have studied all night.",
+  "band": "B2"
+ },
+ {
+  "q": "De haber llegado antes, tú ___ (ver) el final del partido.",
+  "inf": "ver",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías visto",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"de haber llegado\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"de haber llegado\" sets up what would have happened in the past.",
+  "en": "Had you arrived earlier, you would have seen the end of the match.",
+  "band": "B2"
+ },
+ {
+  "q": "De haber tenido la dirección, nosotros ___ (ir) directo a la casa.",
+  "inf": "ir",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos ido",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"de haber tenido\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"de haber tenido\" sets up what would have happened in the past.",
+  "en": "Had we had the address, we would have gone straight to the house.",
+  "band": "B2"
+ },
+ {
+  "q": "De haber ahorrado más, mis papás ___ (comprar) la finca.",
+  "inf": "comprar",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían comprado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"de haber ahorrado\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"de haber ahorrado\" sets up what would have happened in the past.",
+  "en": "Had they saved more, my parents would have bought the farm.",
+  "band": "B2"
+ },
+ {
+  "q": "De haber pedido ayuda, Laura ___ (terminar) la tesis a tiempo.",
+  "inf": "terminar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría terminado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"de haber pedido\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"de haber pedido\" sets up what would have happened in the past.",
+  "en": "Had she asked for help, Laura would have finished her thesis on time.",
+  "band": "B2"
+ },
+ {
+  "q": "En tu lugar, yo no ___ (firmar) ese contrato la semana pasada.",
+  "inf": "firmar",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría firmado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Un resultado irreal en el pasado (anclado en el pasado) va en condicional perfecto.",
+  "why_en": "An unreal result in the past (anchored in the past) takes the conditional perfect.",
+  "en": "In your place, I would not have signed that contract last week.",
+  "band": "B2"
+ },
+ {
+  "q": "De haber llovido, los organizadores ___ (cancelar) el desfile.",
+  "inf": "cancelar",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían cancelado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"de haber llovido\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"de haber llovido\" sets up what would have happened in the past.",
+  "en": "Had it rained, the organizers would have called off the parade.",
+  "band": "B2"
+ },
+ {
+  "q": "De haberlo sabido, mis vecinos me ___ (ayudar) con la mudanza.",
+  "inf": "ayudar",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían ayudado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"De haberlo sabido\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"De haberlo sabido\" sets up what would have happened in the past.",
+  "en": "Had they let me know, my neighbors would have helped me with the move.",
+  "band": "B2"
+ },
+ {
+  "q": "De haber sabido que venías, nosotros ___ (preparar) tu comida favorita.",
+  "inf": "preparar",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos preparado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"de haber sabido\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"de haber sabido\" sets up what would have happened in the past.",
+  "en": "Had we known you were coming, we would have made your favorite food.",
+  "band": "B2"
+ },
+ {
+  "q": "Si hubiera entrado a la universidad en 2015, mi hermano ___ (estudiar) medicina.",
+  "inf": "estudiar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría estudiado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Con \"si hubiera entrado\", el resultado irreal del pasado va en condicional perfecto.",
+  "why_en": "With \"si hubiera entrado\", the unreal past result takes the conditional perfect.",
+  "en": "If he had got into university in 2015, my brother would have studied medicine.",
+  "band": "B2"
+ },
+ {
+  "q": "Sin la lluvia de anoche, el río no ___ (crecer) tanto.",
+  "inf": "crecer",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría crecido",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"sin la lluvia de anoche\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"sin la lluvia de anoche\" sets up what would have happened in the past.",
+  "en": "Without last night's rain, the river would not have risen so much.",
+  "band": "B2"
+ },
+ {
+  "q": "Con tu receta, yo ___ (hacer) un mejor pastel el domingo pasado.",
+  "inf": "hacer",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría hecho",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"el domingo pasado\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"el domingo pasado\" sets up what would have happened in the past.",
+  "en": "With your recipe, I would have made a better cake last Sunday.",
+  "band": "B2"
+ },
+ {
+  "q": "Sin tantos invitados, la fiesta de ayer ___ (costar) la mitad.",
+  "inf": "costar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría costado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"sin tantos invitados ayer\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"sin tantos invitados ayer\" sets up what would have happened in the past.",
+  "en": "With fewer guests, yesterday's party would have cost half as much.",
+  "band": "B2"
+ },
+ {
+  "q": "Sin el accidente de la semana pasada, nosotros ___ (viajar) a Santa Marta.",
+  "inf": "viajar",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos viajado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"la semana pasada\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"la semana pasada\" sets up what would have happened in the past.",
+  "en": "Without last week's accident, we would have traveled to Santa Marta.",
+  "band": "B2"
+ },
+ {
+  "q": "Con un poco más de suerte, ellos ___ (ganar) la final el sábado pasado.",
+  "inf": "ganar",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían ganado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Un resultado irreal en el pasado (anclado en el pasado) va en condicional perfecto.",
+  "why_en": "An unreal result in the past (anchored in the past) takes the conditional perfect.",
+  "en": "With a bit more luck, they would have won the final last Saturday.",
+  "band": "B2"
+ },
+ {
+  "q": "Sin tu mensaje de ayer, yo ___ (olvidar) la cita.",
+  "inf": "olvidar",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría olvidado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"sin tu mensaje de ayer\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"sin tu mensaje de ayer\" sets up what would have happened in the past.",
+  "en": "Without your message yesterday, I would have forgotten the appointment.",
+  "band": "B2"
+ },
+ {
+  "q": "Con una llamada a tiempo, mis tíos ___ (evitar) el problema anoche.",
+  "inf": "evitar",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían evitado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"anoche\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"anoche\" sets up what would have happened in the past.",
+  "en": "With a timely call, my aunt and uncle would have avoided the problem last night.",
+  "band": "B2"
+ },
+ {
+  "q": "Sin el apagón de anoche, nosotros ___ (terminar) la película.",
+  "inf": "terminar",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos terminado",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"sin el apagón de anoche\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"sin el apagón de anoche\" sets up what would have happened in the past.",
+  "en": "Without last night's blackout, we would have finished the movie.",
+  "band": "B2"
+ },
+ {
+  "q": "Con mejor clima el fin de semana pasado, ___ (poder) ir al lago.",
+  "inf": "poder",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos podido",
+  "use": "lo que habría pasado en otras circunstancias",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"el fin de semana pasado\" plantea lo que habría pasado en el pasado.",
+  "why_en": "\"el fin de semana pasado\" sets up what would have happened in the past.",
+  "en": "With better weather last weekend, we could have gone to the lake.",
+  "band": "B2"
+ },
+ {
+  "q": "Prometí que para junio yo ya ___ (terminar) la tesis.",
+  "inf": "terminar",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría terminado",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Tras \"prometí que para junio ya\", el futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "After \"prometí que para junio ya\", a future perfect seen from the past is the conditional perfect.",
+  "en": "I promised that by June I would have finished my thesis.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi jefe dijo que para el viernes ya ___ (arreglar) el sistema, pero sigue dañado.",
+  "inf": "arreglar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría arreglado",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Lo que se anunció en el pasado y no se cumplió va en condicional perfecto.",
+  "why_en": "What was announced in the past and did not happen takes the conditional perfect.",
+  "en": "My boss said he would have fixed the system by Friday, but it is still broken.",
+  "band": "B2"
+ },
+ {
+  "q": "Nos avisaron que para las ocho ya ___ (venir) todos los invitados, pero llegaron tarde.",
+  "inf": "venir",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían venido",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Lo que se anunció en el pasado y no se cumplió va en condicional perfecto.",
+  "why_en": "What was announced in the past and did not happen takes the conditional perfect.",
+  "en": "They told us all the guests would have come by eight, but they arrived late.",
+  "band": "B2"
+ },
+ {
+  "q": "Calculábamos que en un año ya ___ (pagar) la deuda.",
+  "inf": "pagar",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos pagado",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Tras \"calculábamos que en un año ya\", el futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "After \"calculábamos que en un año ya\", a future perfect seen from the past is the conditional perfect.",
+  "en": "We figured that within a year we would have paid off the debt.",
+  "band": "B2"
+ },
+ {
+  "q": "Me aseguraste que para las seis tú ya ___ (salir) de la oficina.",
+  "inf": "salir",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías salido",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Tras \"me aseguraste que para las seis ya\", el futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "After \"me aseguraste que para las seis ya\", a future perfect seen from the past is the conditional perfect.",
+  "en": "You assured me that by six you would have left the office.",
+  "band": "B2"
+ },
+ {
+  "q": "Dijeron que para diciembre ya ___ (abrir) el nuevo centro comercial, y todavía no abre.",
+  "inf": "abrir",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría abierto",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Lo que se anunció en el pasado y no se cumplió va en condicional perfecto.",
+  "why_en": "What was announced in the past and did not happen takes the conditional perfect.",
+  "en": "They said the new mall would have opened by December, and it still hasn't.",
+  "band": "B2"
+ },
+ {
+  "q": "Le prometí a mi profesor que para el lunes ya ___ (leer) el libro.",
+  "inf": "leer",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría leído",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Tras \"le prometí que para el lunes ya\", el futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "After \"le prometí que para el lunes ya\", a future perfect seen from the past is the conditional perfect.",
+  "en": "I promised my teacher that by Monday I would have read the book.",
+  "band": "B2"
+ },
+ {
+  "q": "Esperaban que para fin de año ya ___ (vender) todas las casas.",
+  "inf": "vender",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían vendido",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Tras \"esperaban que para fin de año ya\", el futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "After \"esperaban que para fin de año ya\", a future perfect seen from the past is the conditional perfect.",
+  "en": "They hoped that by the end of the year they would have sold all the houses.",
+  "band": "B2"
+ },
+ {
+  "q": "Les dijimos que para las nueve ya ___ (volver), pero llegamos a las once.",
+  "inf": "volver",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos vuelto",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"Para las nueve ya\", dicho en el pasado: condicional perfecto; también volveríamos.",
+  "why_en": "\"By nine already\", said in the past: conditional perfect; volveríamos also works.",
+  "en": "We told them we would be back by nine, but we got home at eleven.",
+  "band": "B2",
+  "also": [
+   "volveríamos"
+  ]
+ },
+ {
+  "q": "El banco aseguró que para el martes ya ___ (recibir) mi pago, y nada.",
+  "inf": "recibir",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría recibido",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Lo que se anunció en el pasado y no se cumplió va en condicional perfecto.",
+  "why_en": "What was announced in the past and did not happen takes the conditional perfect.",
+  "en": "The bank assured me I would have received my payment by Tuesday, and nothing.",
+  "band": "B2"
+ },
+ {
+  "q": "Pensé que para el año siguiente tú ya ___ (aprender) a manejar.",
+  "inf": "aprender",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías aprendido",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Tras \"pensé que para el año siguiente ya\", el futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "After \"pensé que para el año siguiente ya\", a future perfect seen from the past is the conditional perfect.",
+  "en": "I thought that by the following year you would have learned to drive.",
+  "band": "B2"
+ },
+ {
+  "q": "Mis abuelos decían que para el 2000 el mundo ya ___ (cambiar) por completo.",
+  "inf": "cambiar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría cambiado",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Tras \"decían que para el 2000 ya\", el futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "After \"decían que para el 2000 ya\", a future perfect seen from the past is the conditional perfect.",
+  "en": "My grandparents used to say that by 2000 the world would have changed completely.",
+  "band": "C1"
+ },
+ {
+  "q": "Me prometí que para los treinta ya ___ (ahorrar) lo suficiente.",
+  "inf": "ahorrar",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría ahorrado",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Tras \"me prometí que para los treinta ya\", el futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "After \"me prometí que para los treinta ya\", a future perfect seen from the past is the conditional perfect.",
+  "en": "I promised myself that by thirty I would have saved enough.",
+  "band": "B2"
+ },
+ {
+  "q": "El constructor juró que para marzo ya ___ (acabar) la casa.",
+  "inf": "acabar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría acabado",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Tras \"juró que para marzo ya\", el futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "After \"juró que para marzo ya\", a future perfect seen from the past is the conditional perfect.",
+  "en": "The builder swore that by March he would have finished the house.",
+  "band": "B2"
+ },
+ {
+  "q": "Creíamos que para entonces ya ___ (conseguir) la visa.",
+  "inf": "conseguir",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos conseguido",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Tras \"creíamos que para entonces ya\", el futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "After \"creíamos que para entonces ya\", a future perfect seen from the past is the conditional perfect.",
+  "en": "We believed that by then we would have gotten the visa.",
+  "band": "B2"
+ },
+ {
+  "q": "Anunciaron que para las diez ya ___ (empezar) la ceremonia, pero se atrasó.",
+  "inf": "empezar",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían empezado",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Lo que se anunció en el pasado y no se cumplió va en condicional perfecto.",
+  "why_en": "What was announced in the past and did not happen takes the conditional perfect.",
+  "en": "They announced the ceremony would have started by ten, but it ran late.",
+  "band": "B2",
+  "drop": true
+ },
+ {
+  "q": "Me dije que para el domingo yo ya ___ (decidir) qué hacer.",
+  "inf": "decidir",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría decidido",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Tras \"me dije que para el domingo ya\", el futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "After \"me dije que para el domingo ya\", a future perfect seen from the past is the conditional perfect.",
+  "en": "I told myself that by Sunday I would have decided what to do.",
+  "band": "B2"
+ },
+ {
+  "q": "Quedaste en que para el jueves tú ya me ___ (escribir) el informe.",
+  "inf": "escribir",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías escrito",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Tras \"quedaste en que para el jueves ya\", el futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "After \"quedaste en que para el jueves ya\", a future perfect seen from the past is the conditional perfect.",
+  "en": "You agreed that by Thursday you would have written the report for me.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi mamá prometió que para mi llegada ya ___ (hacer) el almuerzo, y así fue.",
+  "inf": "hacer",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría hecho",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"Para mi llegada ya\", prometido en el pasado: condicional perfecto.",
+  "why_en": "\"By my arrival already\", promised in the past: conditional perfect.",
+  "en": "My mom promised she would have lunch ready by the time I arrived, and so she did.",
+  "band": "B2"
+ },
+ {
+  "q": "Nos dijeron que para la semana siguiente ya ___ (mandar) el pedido.",
+  "inf": "mandar",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían mandado",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Tras \"para la semana siguiente ya\", el futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "After \"para la semana siguiente ya\", a future perfect seen from the past is the conditional perfect.",
+  "en": "They told us that by the following week they would have sent the order.",
+  "band": "B2"
+ },
+ {
+  "q": "Pensábamos que para el domingo ya ___ (ver) todos los museos, pero llovió.",
+  "inf": "ver",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos visto",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"Pensábamos que para el domingo ya\": un futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "\"We thought by Sunday already\": a future perfect seen from the past is the conditional perfect.",
+  "en": "We thought we would have seen all the museums by Sunday, but it rained.",
+  "band": "B2"
+ },
+ {
+  "q": "Supuse que para el jueves yo ya ___ (poner) todo en orden.",
+  "inf": "poner",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría puesto",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Tras \"supuse que para el jueves ya\", el futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "After \"supuse que para el jueves ya\", a future perfect seen from the past is the conditional perfect.",
+  "en": "I figured that by Thursday I would have put everything in order.",
+  "band": "B2"
+ },
+ {
+  "q": "Los médicos dijeron que para mayo mi abuelo ya ___ (mejorar) bastante.",
+  "inf": "mejorar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría mejorado",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Tras \"dijeron que para mayo ya\", el futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "After \"dijeron que para mayo ya\", a future perfect seen from the past is the conditional perfect.",
+  "en": "The doctors said that by May my grandfather would have improved a lot.",
+  "band": "B2"
+ },
+ {
+  "q": "Pensábamos que para el mediodía los obreros ya ___ (acabar) el piso.",
+  "inf": "acabar",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían acabado",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Tras \"pensábamos que para el mediodía ya\", el futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "After \"pensábamos que para el mediodía ya\", a future perfect seen from the past is the conditional perfect.",
+  "en": "We thought that by noon the workers would have finished the floor.",
+  "band": "B2"
+ },
+ {
+  "q": "Creyó que para Navidad tú ya ___ (volver) a Colombia.",
+  "inf": "volver",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías vuelto",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Tras \"creyó que para Navidad ya\", el futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "After \"creyó que para Navidad ya\", a future perfect seen from the past is the conditional perfect.",
+  "en": "She believed that by Christmas you would have come back to Colombia.",
+  "band": "B2"
+ },
+ {
+  "q": "Calculé que para las cinco yo ya ___ (pasar) por el banco.",
+  "inf": "pasar",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría pasado",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Tras \"calculé que para las cinco ya\", el futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "After \"calculé que para las cinco ya\", a future perfect seen from the past is the conditional perfect.",
+  "en": "I figured that by five I would have gone by the bank.",
+  "band": "B2"
+ },
+ {
+  "q": "Dijo que para el 30 los inquilinos ya ___ (pagar) el arriendo.",
+  "inf": "pagar",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían pagado",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Tras \"dijo que para el 30 ya\", el futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "After \"dijo que para el 30 ya\", a future perfect seen from the past is the conditional perfect.",
+  "en": "He said that by the 30th the tenants would have paid the rent.",
+  "band": "B2"
+ },
+ {
+  "q": "Llegamos tarde y no quedaba pastel; ni idea, los invitados se lo ___ (comer).",
+  "inf": "comer",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían comido",
+  "use": "probabilidad sobre algo anterior a un momento pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"ni idea\" supone algo anterior a un momento pasado. También se oye el futuro perfecto.",
+  "why_en": "\"ni idea\" guesses at something before a past moment. The future perfect is also heard.",
+  "en": "We arrived late and there was no cake left; no idea, the guests must have eaten it.",
+  "band": "C1",
+  "also": [
+   "habrán comido"
+  ]
+ },
+ {
+  "q": "Cuando llamé a su casa, nadie contestó; quién sabe, ya se ___ (ir) todos.",
+  "inf": "ir",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían ido",
+  "use": "probabilidad sobre algo anterior a un momento pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"quién sabe\" supone algo anterior a un momento pasado. También se oye el futuro perfecto.",
+  "why_en": "\"quién sabe\" guesses at something before a past moment. The future perfect is also heard.",
+  "en": "When I called their house nobody answered; who knows, they must have all left already.",
+  "band": "C1",
+  "also": [
+   "habrán ido"
+  ]
+ },
+ {
+  "q": "Cuando busqué mi paraguas, no estaba; no sé, lo ___ (dejar) en el bus.",
+  "inf": "dejar",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría dejado",
+  "use": "probabilidad sobre algo anterior a un momento pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"no sé\" supone algo anterior a un momento pasado. También se oye el futuro perfecto.",
+  "why_en": "\"no sé\" guesses at something before a past moment. The future perfect is also heard.",
+  "en": "When I looked for my umbrella it wasn't there; I don't know, I must have left it on the bus.",
+  "band": "C1",
+  "also": [
+   "habré dejado"
+  ]
+ },
+ {
+  "q": "Cuando llegamos al hotel, nadie nos esperaba; ni idea, nos ___ (equivocar) de fecha.",
+  "inf": "equivocarse",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos equivocado",
+  "use": "probabilidad sobre algo anterior a un momento pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"ni idea\" supone algo anterior a un momento pasado.",
+  "why_en": "\"ni idea\" guesses at something before a past moment.",
+  "en": "When we got to the hotel nobody expected us; no idea, we must have mixed up the date.",
+  "band": "C1"
+ },
+ {
+  "q": "Cuando llegó el técnico, el jefe no estaba; ni idea, ___ (salir) por atrás.",
+  "inf": "salir",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría salido",
+  "use": "probabilidad sobre algo anterior a un momento pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"ni idea\" supone algo anterior a un momento pasado.",
+  "why_en": "\"ni idea\" guesses at something before a past moment.",
+  "en": "When the technician arrived the boss wasn't there; no idea, he must have left through the back.",
+  "band": "C1"
+ },
+ {
+  "q": "Cuando fuimos al restaurante, estaba vacío; no sé, ___ (decidir) cerrar temprano.",
+  "inf": "decidir",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían decidido",
+  "use": "probabilidad sobre algo anterior a un momento pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"no sé\" supone algo anterior a un momento pasado. También se oye el futuro perfecto.",
+  "why_en": "\"no sé\" guesses at something before a past moment. The future perfect is also heard.",
+  "en": "When we went to the restaurant it was empty; I don't know, they must have decided to close early.",
+  "band": "C1",
+  "also": [
+   "habrán decidido"
+  ]
+ },
+ {
+  "q": "Cuando te llamé ayer, no sabías de la reunión; ni idea, ___ (olvidar) mi mensaje.",
+  "inf": "olvidar",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías olvidado",
+  "use": "probabilidad sobre algo anterior a un momento pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"ni idea\" supone algo anterior a un momento pasado. También se oye el futuro perfecto.",
+  "why_en": "\"ni idea\" guesses at something before a past moment. The future perfect is also heard.",
+  "en": "When I called you yesterday you didn't know about the meeting; no idea, you must have forgotten my message.",
+  "band": "C1",
+  "also": [
+   "habrás olvidado"
+  ]
+ },
+ {
+  "q": "Cuando llegamos a la finca, el camino estaba limpio; ni idea, alguien ___ (pasar) antes.",
+  "inf": "pasar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría pasado",
+  "use": "probabilidad sobre algo anterior a un momento pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"ni idea\" supone algo anterior a un momento pasado. También se oye el futuro perfecto.",
+  "why_en": "\"ni idea\" guesses at something before a past moment. The future perfect is also heard.",
+  "en": "When we got to the farm the road was clean; no idea, someone must have gone by before.",
+  "band": "C1",
+  "also": [
+   "habrá pasado"
+  ]
+ },
+ {
+  "q": "Cuando entré a la oficina, estaba oscura; no sé, todos se ___ (ir) a almorzar.",
+  "inf": "ir",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían ido",
+  "use": "probabilidad sobre algo anterior a un momento pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"no sé\" supone algo anterior a un momento pasado. También se oye el futuro perfecto.",
+  "why_en": "\"no sé\" guesses at something before a past moment. The future perfect is also heard.",
+  "en": "When I went into the office it was dark; I don't know, everyone must have gone to lunch.",
+  "band": "C1",
+  "also": [
+   "habrán ido"
+  ]
+ },
+ {
+  "q": "Cuando Pablo por fin llegó, la clase ya terminaba; ni idea, ___ (perder) el bus.",
+  "inf": "perder",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría perdido",
+  "use": "probabilidad sobre algo anterior a un momento pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"ni idea\" supone algo anterior a un momento pasado. También se oye el futuro perfecto.",
+  "why_en": "\"ni idea\" guesses at something before a past moment. The future perfect is also heard.",
+  "en": "When Pablo finally arrived, class was ending; no idea, he must have missed the bus.",
+  "band": "C1",
+  "also": [
+   "habrá perdido"
+  ]
+ },
+ {
+  "q": "Cuando el profesor preguntó, los estudiantes se callaron; quién sabe, no ___ (leer) el capítulo.",
+  "inf": "leer",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían leído",
+  "use": "probabilidad sobre algo anterior a un momento pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"quién sabe\" supone algo anterior a un momento pasado. También se oye el futuro perfecto.",
+  "why_en": "\"quién sabe\" guesses at something before a past moment. The future perfect is also heard.",
+  "en": "When the teacher asked, the students went quiet; who knows, they must not have read the chapter.",
+  "band": "C1",
+  "also": [
+   "habrán leído"
+  ]
+ },
+ {
+  "q": "Cuando vi el vaso vacío, pensé en Carlos; ni idea, ___ (tomar) todo el jugo.",
+  "inf": "tomar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría tomado",
+  "use": "probabilidad sobre algo anterior a un momento pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"ni idea\" supone algo anterior a un momento pasado. También se oye el futuro perfecto.",
+  "why_en": "\"ni idea\" guesses at something before a past moment. The future perfect is also heard.",
+  "en": "When I saw the empty glass I thought of Carlos; no idea, he must have drunk all the juice.",
+  "band": "C1",
+  "also": [
+   "habrá tomado"
+  ]
+ },
+ {
+  "q": "Cuando abrimos la tienda, ya había fila; quién sabe, ___ (venir) desde las cinco.",
+  "inf": "venir",
+  "tense": "condperf",
+  "person": "ellos",
+  "answer": "habrían venido",
+  "use": "probabilidad sobre algo anterior a un momento pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"quién sabe\" supone algo anterior a un momento pasado. También se oye el futuro perfecto.",
+  "why_en": "\"quién sabe\" guesses at something before a past moment. The future perfect is also heard.",
+  "en": "When we opened the shop there was already a line; who knows, they must have arrived at five.",
+  "band": "C1",
+  "also": [
+   "habrán venido"
+  ]
+ },
+ {
+  "q": "Cuando te escribí esa noche, no respondiste; ni idea, te ___ (dormir) temprano.",
+  "inf": "dormir",
+  "tense": "condperf",
+  "person": "tú",
+  "answer": "habrías dormido",
+  "use": "probabilidad sobre algo anterior a un momento pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"ni idea\" supone algo anterior a un momento pasado. También se oye el futuro perfecto.",
+  "why_en": "\"ni idea\" guesses at something before a past moment. The future perfect is also heard.",
+  "en": "When I wrote to you that night, you didn't answer; no idea, you must have fallen asleep early.",
+  "band": "C1",
+  "also": [
+   "habrás dormido"
+  ]
+ },
+ {
+  "q": "Cuando saludé a Elena, ni me miró; no sé, se ___ (molestar) por algo.",
+  "inf": "molestar",
+  "tense": "condperf",
+  "person": "él/ella",
+  "answer": "habría molestado",
+  "use": "probabilidad sobre algo anterior a un momento pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"no sé\" supone algo anterior a un momento pasado. También se oye el futuro perfecto.",
+  "why_en": "\"no sé\" guesses at something before a past moment. The future perfect is also heard.",
+  "en": "When I greeted Elena she didn't even look at me; I don't know, she must have gotten upset about something.",
+  "band": "C1",
+  "also": [
+   "habrá molestado"
+  ]
+ },
+ {
+  "q": "Me prometí que para el lunes ya ___ (presentar) la solicitud.",
+  "inf": "presentar",
+  "tense": "condperf",
+  "person": "yo",
+  "answer": "habría presentado",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "Tras \"me prometí que para el lunes ya\", el futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "After \"me prometí que para el lunes ya\", a future perfect seen from the past is the conditional perfect.",
+  "en": "I promised myself that by Monday I would have submitted the application.",
+  "band": "B2"
+ },
+ {
+  "q": "Creíamos que para el mediodía ya ___ (recoger) todo, pero no alcanzamos.",
+  "inf": "recoger",
+  "tense": "condperf",
+  "person": "nosotros",
+  "answer": "habríamos recogido",
+  "use": "futuro perfecto visto desde el pasado",
+  "confuse": [
+   "condicional",
+   "futperf",
+   "plusc"
+  ],
+  "why_es": "\"Creíamos que para el mediodía ya\": un futuro perfecto visto desde el pasado es condicional perfecto.",
+  "why_en": "\"We thought by noon already\": a future perfect seen from the past is the conditional perfect.",
+  "en": "We thought we would have packed everything up by noon, but we didn't make it.",
+  "band": "B2"
+ }
+]

@@ -417,7 +417,10 @@ window.GameRound = (function () {
        * a deck round (that already IS a fixed list) and never twice in one
        * round. */
       var revisit = null;
-      if (!cfg.deck && !cfg.topic && !cfg.draw && seen > 0 && seen % 4 === 3 && GI.missDeck) {
+      /* Not in Palabras or Frases: their grind already deals a missed item
+       * first, tapped, and this would ask it a second time, typed. */
+      var grinds = cfg.kind === 'sword' || cfg.kind === 'sphrase';
+      if (!cfg.deck && !cfg.topic && !cfg.draw && !grinds && seen > 0 && seen % 4 === 3 && GI.missDeck) {
         /* Checked AFTER building the item, not before: usedPrompts is keyed by
          * keyOf(), which is the prompt as it ends up on screen, and a deck
          * entry does not know yet whether it will be asked typed or tapped. */
@@ -553,6 +556,24 @@ window.GameRound = (function () {
      * with the clock stopped throughout and Enter to move on early. */
     function showFeedback(item, result, timedOut, then) {
       shell.dataset.state = result;
+      if (result === 'good' && item.noteOnRight && item.note) {
+        /* A phrase with a note (Frases) shows it after a right answer too: one small
+         * line, the clock paused, and it moves on by itself or on Seguir. */
+        pause();
+        clear(fbHost);
+        var nbox = el('div', 'g-correct is-right');
+        nbox.appendChild(el('span', 'g-fb-note', item.note));
+        fbHost.appendChild(nbox);
+        var nrow = el('div', 'g-fb-actions'), ngo = el('button', 'g-continue', 'Seguir →');
+        ngo.type = 'button';
+        nrow.appendChild(ngo);
+        fbHost.appendChild(nrow);
+        var nt = setTimeout(ndone, 2600);
+        function ndone() { clearTimeout(nt); if (ended) return; resume(); then(); }
+        ngo.addEventListener('click', ndone);
+        setTimeout(function () { if (!ended) pendingContinue = ndone; }, 0);
+        return;
+      }
       if (result === 'good') { setTimeout(function () { if (!ended) then(); }, 170); return; }
 
       pause();
@@ -598,7 +619,20 @@ window.GameRound = (function () {
       var why = item.kind === 'listen'
         ? [item.gloss, item.note].filter(Boolean).join(' · ')
         : (item.note || (item.reveal && item.reveal !== item.answer ? item.reveal : null));
-      if (why) box.appendChild(el('span', 'g-fb-note', why));
+      var whyEl = null;
+      if (why) { whyEl = el('span', 'g-fb-note', why); box.appendChild(whyEl); }
+      if (item.noteAlt && whyEl) {
+        var alt = el('button', 'g-peek', item.noteAltLabel || 'in English');
+        alt.type = 'button';
+        var showing = 0, texts = [why, item.noteAlt];
+        alt.addEventListener('click', function () {
+          showing = 1 - showing;
+          whyEl.textContent = texts[showing];
+          alt.textContent = showing ? 'volver' : (item.noteAltLabel || 'in English');
+        });
+        box.appendChild(alt);
+      }
+      if (item.peek) box.appendChild(el('span', 'g-fb-note g-fb-en', item.peek));
       fbHost.appendChild(box);
 
       var row2 = el('div', 'g-fb-actions');
@@ -709,7 +743,16 @@ window.GameRound = (function () {
     /* The English under a Spanish sentence (Verbos): small, and only when the
      * item carries one. */
     function subEl(item) {
-      return item.sub ? el('div', 'g-sub', item.sub) : null;
+      if (item.sub) return el('div', 'g-sub', item.sub);
+      if (!item.peek) return null;
+      /* The English is withheld (the Spanish has to decide the answer) and
+       * one tap away. */
+      var box = el('div', 'g-sub');
+      var b = el('button', 'g-peek', 'ver en inglés');
+      b.type = 'button';
+      b.addEventListener('click', function () { box.textContent = item.peek; box.classList.add('shown'); });
+      box.appendChild(b);
+      return box;
     }
 
     function renderChoose(item) {
@@ -949,6 +992,12 @@ window.GameRound = (function () {
         over.appendChild(covEl);
       }
 
+      if (cfg.kind === 'sphrase' && GI.phraseCoverage) {
+        var pcov = el('div', 'g-over-cover');
+        pcov.appendChild(el('div', 'g-over-cover-all', GI.phraseCoverage().text));
+        over.appendChild(pcov);
+      }
+
       var again = el('button', 'g-again', cfg.againLabel || 'Otra vez');
       again.type = 'button';
       again.addEventListener('click', function () { if (cfg.again) cfg.again(); else run(host, cfg); });
@@ -983,8 +1032,11 @@ window.GameRound = (function () {
         /* Says what actually happens now. It used to claim these were "in
          * Puntos débiles", which was true only of their topic, only once three
          * misses shared one, and only in a round you had to go and pick. */
+        // Palabras and Frases deal a miss first in the next round (their grind); the rest revisit one in four
         over.appendChild(el('p', 'g-over-note',
-          'Volverán: una de cada cuatro preguntas sale de tus fallos.'));
+          cfg.kind === 'sword' || cfg.kind === 'sphrase'
+            ? 'Volverán al principio de tu próxima ronda.'
+            : 'Volverán: una de cada cuatro preguntas sale de tus fallos.'));
       }
 
       /* The rematch. Chess's post-game analysis works because it is a story

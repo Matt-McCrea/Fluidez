@@ -707,6 +707,7 @@ var LIB = (() => {
     { inf: "desenchufar", en: "to unplug", type: "ar" },
     { inf: "enchufar", en: "to plug in", type: "ar" },
     { inf: "estropearse", en: "to break down, to spoil", type: "ar" },
+    { inf: "da\xF1arse", en: "to break down, to get damaged", type: "ar" },
     { inf: "averiarse", en: "to break down (machine)", type: "ar", forms: { presente: ["aver\xEDo", "aver\xEDas", "aver\xEDa", "averiamos", "averi\xE1is", "aver\xEDan"], presubj: ["aver\xEDe", "aver\xEDes", "aver\xEDe", "averiemos", "averi\xE9is", "aver\xEDen"] } },
     { inf: "ingresar", en: "to be admitted (hospital), to deposit", type: "ar" },
     { inf: "robar", en: "to steal", type: "ar" },

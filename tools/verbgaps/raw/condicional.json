@@ -1,0 +1,2562 @@
+[
+ {
+  "q": "Si tuviera más plata, yo ___ (comprar) un apartamento en Chapinero.",
+  "inf": "comprar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "compraría",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If I had more money, I would buy an apartment in Chapinero.",
+  "band": "B1"
+ },
+ {
+  "q": "Si ganáramos la lotería, nosotros ___ (viajar) por toda Suramérica.",
+  "inf": "viajar",
+  "tense": "condicional",
+  "person": "nosotros",
+  "answer": "viajaríamos",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If we won the lottery, we would travel all over South America.",
+  "band": "B1"
+ },
+ {
+  "q": "Si Camilo estudiara más, ___ (sacar) mejores notas.",
+  "inf": "sacar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "sacaría",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If Camilo studied more, he would get better grades.",
+  "band": "B1"
+ },
+ {
+  "q": "Si yo fuera tú, no le ___ (decir) nada a nadie.",
+  "inf": "decir",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "diría",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If I were you, I would not tell anyone anything.",
+  "band": "B1"
+ },
+ {
+  "q": "Si vivieras en Medellín, ___ (ver) a tu familia más seguido.",
+  "inf": "ver",
+  "tense": "condicional",
+  "person": "tú",
+  "answer": "verías",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If you lived in Medellín, you would see your family more often.",
+  "band": "B1"
+ },
+ {
+  "q": "Si mi jefe me diera un día libre, ___ (ir) a la finca.",
+  "inf": "ir",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "iría",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If my boss gave me a day off, I would go to the farm.",
+  "band": "B1"
+ },
+ {
+  "q": "Si ustedes me dijeran la verdad, yo les ___ (creer).",
+  "inf": "creer",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "creería",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If you told me the truth, I would believe you.",
+  "band": "B1"
+ },
+ {
+  "q": "Si hiciera sol, los niños ___ (jugar) en el patio.",
+  "inf": "jugar",
+  "tense": "condicional",
+  "person": "ellos",
+  "answer": "jugarían",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If it were sunny, the kids would play in the yard.",
+  "band": "B1"
+ },
+ {
+  "q": "Si pudiera elegir, yo ___ (vivir) cerca del mar.",
+  "inf": "vivir",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "viviría",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If I could choose, I would live near the sea.",
+  "band": "B1"
+ },
+ {
+  "q": "Si tuvieras tiempo, ¿___ (venir) conmigo a la finca?",
+  "inf": "venir",
+  "tense": "condicional",
+  "person": "tú",
+  "answer": "vendrías",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If you had time, would you come with me to the farm?",
+  "band": "B1"
+ },
+ {
+  "q": "Si no lloviera tanto, nosotros ___ (salir) a caminar.",
+  "inf": "salir",
+  "tense": "condicional",
+  "person": "nosotros",
+  "answer": "saldríamos",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If it did not rain so much, we would go out for a walk.",
+  "band": "B1"
+ },
+ {
+  "q": "Si Ana supiera cocinar, ___ (abrir) un restaurante.",
+  "inf": "abrir",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "abriría",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If Ana knew how to cook, she would open a restaurant.",
+  "band": "B1"
+ },
+ {
+  "q": "Si el apartamento fuera más barato, ellos lo ___ (tomar).",
+  "inf": "tomar",
+  "tense": "condicional",
+  "person": "ellos",
+  "answer": "tomarían",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If the apartment were cheaper, they would take it.",
+  "band": "B1"
+ },
+ {
+  "q": "Si dejaras de fumar, te ___ (sentir) mucho mejor.",
+  "inf": "sentir",
+  "tense": "condicional",
+  "person": "tú",
+  "answer": "sentirías",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If you quit smoking, you would feel much better.",
+  "band": "B1"
+ },
+ {
+  "q": "Buenas tardes, me ___ (gustar) un jugo de mora, por favor.",
+  "inf": "gustar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "gustaría",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"por favor\": una petición cortés lleva condicional.",
+  "why_en": "Con \"por favor\": a polite request takes the conditional.",
+  "en": "Good afternoon, I would like a blackberry juice, please.",
+  "band": "B1"
+ },
+ {
+  "q": "¿Le ___ (importar) cerrar la ventana, por favor?",
+  "inf": "importar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "importaría",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"¿Le...?\" y \"por favor\": una petición cortés lleva condicional.",
+  "why_en": "Con \"¿Le...?\" y \"por favor\": a polite request takes the conditional.",
+  "en": "Would you mind closing the window, please?",
+  "band": "B1"
+ },
+ {
+  "q": "Disculpe, señor, ¿___ (poder) usted decirme dónde queda la estación?",
+  "inf": "poder",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "podría",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"Disculpe\": una petición cortés lleva condicional.",
+  "why_en": "Con \"Disculpe\": a polite request takes the conditional.",
+  "en": "Excuse me, sir, could you tell me where the station is?",
+  "band": "B1"
+ },
+ {
+  "q": "Camilo, ¿me ___ (pasar) la sal, por favor?",
+  "inf": "pasar",
+  "tense": "condicional",
+  "person": "tú",
+  "answer": "pasarías",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"por favor\": una petición cortés lleva condicional.",
+  "why_en": "Con \"por favor\": a polite request takes the conditional.",
+  "en": "Camilo, would you pass me the salt, please?",
+  "band": "B1"
+ },
+ {
+  "q": "¿Les ___ (molestar) si abrimos la puerta un momento?",
+  "inf": "molestar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "molestaría",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"si abrimos\": una petición cortés lleva condicional.",
+  "why_en": "Con \"si abrimos\": a polite request takes the conditional.",
+  "en": "Would it bother you if we opened the door for a moment?",
+  "band": "B1"
+ },
+ {
+  "q": "Disculpe, ¿___ (tener) usted un minuto para hablar?",
+  "inf": "tener",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "tendría",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"Disculpe\": una petición cortés lleva condicional.",
+  "why_en": "Con \"Disculpe\": a polite request takes the conditional.",
+  "en": "Excuse me, would you have a minute to talk?",
+  "band": "B1"
+ },
+ {
+  "q": "Profesora, ¿___ (ser) posible entregar el trabajo mañana?",
+  "inf": "ser",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "sería",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Con \"¿...posible?\": una petición cortés lleva condicional. También se dice ¿será posible?",
+  "why_en": "Con \"¿...posible?\": a polite request takes the conditional. ¿Será posible? also works.",
+  "en": "Professor, would it be possible to hand in the work tomorrow?",
+  "band": "B1",
+  "also": [
+   "será"
+  ]
+ },
+ {
+  "q": "Chicos, ¿___ (bajar) un poco la música, por favor?",
+  "inf": "bajar",
+  "tense": "condicional",
+  "person": "ellos",
+  "answer": "bajarían",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"por favor\": una petición cortés lleva condicional.",
+  "why_en": "Con \"por favor\": a polite request takes the conditional.",
+  "en": "Guys, would you turn the music down a bit, please?",
+  "band": "B1"
+ },
+ {
+  "q": "Señor, ¿me ___ (dar) su nombre completo, por favor?",
+  "inf": "dar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "daría",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"por favor\": una petición cortés lleva condicional.",
+  "why_en": "Con \"por favor\": a polite request takes the conditional.",
+  "en": "Sir, could you give me your full name, please?",
+  "band": "B1",
+  "drop": true
+ },
+ {
+  "q": "Yo que tú, ___ (hablar) con tu jefe hoy mismo.",
+  "inf": "hablar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "hablaría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo que tú\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo que tú\": advice takes the conditional.",
+  "en": "If I were you, I would talk to your boss today.",
+  "band": "B1"
+ },
+ {
+  "q": "En tu lugar, yo ___ (aceptar) esa oferta.",
+  "inf": "aceptar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "aceptaría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"En tu lugar\": para aconsejar se usa el condicional.",
+  "why_en": "\"En tu lugar\": advice takes the conditional.",
+  "en": "In your place, I would accept that offer.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo en tu lugar, no ___ (esperar) más.",
+  "inf": "esperar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "esperaría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo en tu lugar\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo en tu lugar\": advice takes the conditional.",
+  "en": "If I were you, I would not wait any longer.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo que ustedes, ___ (salir) más temprano para evitar el trancón.",
+  "inf": "salir",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "saldría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo que ustedes\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo que ustedes\": advice takes the conditional.",
+  "en": "If I were you, I would leave earlier to avoid the traffic jam.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo que Valentina, ___ (cambiar) de trabajo.",
+  "inf": "cambiar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "cambiaría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo que Valentina\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo que Valentina\": advice takes the conditional.",
+  "en": "If I were Valentina, I would change jobs.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo que Pedro, le ___ (pedir) perdón a su mamá.",
+  "inf": "pedir",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "pediría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo que Pedro\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo que Pedro\": advice takes the conditional.",
+  "en": "If I were Pedro, I would ask his mom for forgiveness.",
+  "band": "B1"
+ },
+ {
+  "q": "Con esa gripa, yo me ___ (quedar) en cama hoy.",
+  "inf": "quedar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "quedaría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Con esa gripa, yo\": para aconsejar se usa el condicional.",
+  "why_en": "\"Con esa gripa, yo\": advice takes the conditional.",
+  "en": "With that flu, I would stay in bed today.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo que tú, no le ___ (prestar) plata a ese tipo.",
+  "inf": "prestar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "prestaría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo que tú\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo que tú\": advice takes the conditional.",
+  "en": "If I were you, I would not lend that guy money.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo en su lugar, señora, ___ (llamar) a un abogado.",
+  "inf": "llamar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "llamaría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo en su lugar\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo en su lugar\": advice takes the conditional.",
+  "en": "If I were you, ma'am, I would call a lawyer.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi jefe dijo que ___ (llegar) a las ocho, pero no apareció.",
+  "inf": "llegar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "llegaría",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "\"Dijo que\": tras un verbo en pasado, lo que vendría va en condicional.",
+  "why_en": "\"Dijo que\": after a past verb, what was to come takes the conditional.",
+  "en": "My boss said he would arrive at eight, but he never showed up.",
+  "band": "B2"
+ },
+ {
+  "q": "Ayer Ana me prometió que me ___ (llamar) al día siguiente.",
+  "inf": "llamar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "llamaría",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "\"Prometió que, al día siguiente\": tras un verbo en pasado, lo que vendría va en condicional.",
+  "why_en": "\"Prometió que, al día siguiente\": after a past verb, what was to come takes the conditional.",
+  "en": "Yesterday Ana promised she would call me the next day.",
+  "band": "B2"
+ },
+ {
+  "q": "Pensábamos que el viaje ___ (durar) dos horas, pero fueron cinco.",
+  "inf": "durar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "duraría",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "\"Pensábamos que\": tras un verbo en pasado, lo que vendría va en condicional.",
+  "why_en": "\"Pensábamos que\": after a past verb, what was to come takes the conditional.",
+  "en": "We thought the trip would last two hours, but it took five.",
+  "band": "B2"
+ },
+ {
+  "q": "Camilo aseguró que nunca ___ (volver) a esa ciudad, y al año volvió.",
+  "inf": "volver",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "volvería",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "\"Aseguró que\": tras un verbo en pasado, lo que vendría va en condicional.",
+  "why_en": "\"Aseguró que\": after a past verb, what was to come takes the conditional.",
+  "en": "Camilo swore he would never go back to that city, and a year later he did.",
+  "band": "B2"
+ },
+ {
+  "q": "Nos dijeron que la tienda ___ (abrir) a las nueve, pero abrió a las diez.",
+  "inf": "abrir",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "abriría",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "\"Nos dijeron que\": tras un verbo en pasado, lo que vendría va en condicional. También se oye el imperfecto.",
+  "why_en": "\"Nos dijeron que\": after a past verb, what was to come takes the conditional. The imperfect is also heard.",
+  "en": "They told us the shop would open at nine, but it opened at ten.",
+  "band": "B2",
+  "also": [
+   "abría"
+  ]
+ },
+ {
+  "q": "Creí que tú ___ (venir) con nosotros a la fiesta.",
+  "inf": "venir",
+  "tense": "condicional",
+  "person": "tú",
+  "answer": "vendrías",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "\"Creí que\": tras un verbo en pasado, lo que vendría va en condicional. También se oye el imperfecto.",
+  "why_en": "\"Creí que\": after a past verb, what was to come takes the conditional. The imperfect is also heard.",
+  "en": "I thought you would come with us to the party.",
+  "band": "B2",
+  "also": [
+   "venías"
+  ]
+ },
+ {
+  "q": "Valentina me contó que ___ (vivir) en Cali el año siguiente.",
+  "inf": "vivir",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "viviría",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "\"Me contó que, el año siguiente\": tras un verbo en pasado, lo que vendría va en condicional.",
+  "why_en": "\"Me contó que, el año siguiente\": after a past verb, what was to come takes the conditional.",
+  "en": "Valentina told me she would live in Cali the following year.",
+  "band": "B2"
+ },
+ {
+  "q": "Anunciaron que al día siguiente ___ (llover) en toda la zona.",
+  "inf": "llover",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "llovería",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "\"Anunciaron que, al día siguiente\": tras un verbo en pasado, lo que vendría va en condicional.",
+  "why_en": "\"Anunciaron que, al día siguiente\": after a past verb, what was to come takes the conditional.",
+  "en": "They announced that it would rain across the whole area the next day.",
+  "band": "B2"
+ },
+ {
+  "q": "Yo sabía que tú ___ (poder) con ese examen.",
+  "inf": "poder",
+  "tense": "condicional",
+  "person": "tú",
+  "answer": "podrías",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "\"Sabía que\": tras un verbo en pasado, lo que vendría va en condicional. También se oye el imperfecto.",
+  "why_en": "\"Sabía que\": after a past verb, what was to come takes the conditional. The imperfect is also heard.",
+  "en": "I knew you would be able to handle that exam.",
+  "band": "B2",
+  "also": [
+   "podías"
+  ]
+ },
+ {
+  "q": "Pensé que nosotros ___ (ganar) el partido fácilmente.",
+  "inf": "ganar",
+  "tense": "condicional",
+  "person": "nosotros",
+  "answer": "ganaríamos",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "\"Pensé que\": tras un verbo en pasado, lo que vendría va en condicional.",
+  "why_en": "\"Pensé que\": after a past verb, what was to come takes the conditional.",
+  "en": "I thought we would win the match easily.",
+  "band": "B2"
+ },
+ {
+  "q": "___ (ser) las diez cuando mi papá llegó a la casa.",
+  "inf": "ser",
+  "tense": "condicional",
+  "person": "ellos",
+  "answer": "serían",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "\"Cuando llegó\": una suposición sobre el pasado va en condicional. También se oye el imperfecto.",
+  "why_en": "\"Cuando llegó\": a guess about the past takes the conditional. The imperfect is also heard.",
+  "en": "It must have been ten when my dad got home.",
+  "band": "B2",
+  "also": [
+   "eran"
+  ]
+ },
+ {
+  "q": "Ayer no vi a Sofía en clase; ___ (estar) enferma.",
+  "inf": "estar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "estaría",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "Una suposición sobre el pasado va en condicional. También se oye el imperfecto.",
+  "why_en": "A guess about the past takes the conditional. The imperfect is also heard.",
+  "en": "Yesterday I did not see Sofía in class; she must have been sick.",
+  "band": "B2",
+  "also": [
+   "estaba"
+  ]
+ },
+ {
+  "q": "¿Quién ___ (ser) ese hombre que preguntó por ti anoche?",
+  "inf": "ser",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "sería",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Una pregunta de duda sobre el pasado va en condicional.",
+  "why_en": "A wondering question about the past takes the conditional.",
+  "en": "Who could that man have been who asked for you last night?",
+  "band": "B2",
+  "drop": true
+ },
+ {
+  "q": "Cuando salimos de la fiesta, ___ (llevar) allí casi seis horas.",
+  "inf": "llevar",
+  "tense": "condicional",
+  "person": "nosotros",
+  "answer": "llevaríamos",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "Una suposición sobre el pasado va en condicional. También se oye el imperfecto.",
+  "why_en": "A guess about the past takes the conditional. The imperfect is also heard.",
+  "en": "When we left the party, we must have been there almost six hours.",
+  "band": "B2",
+  "also": [
+   "llevábamos"
+  ]
+ },
+ {
+  "q": "Aquella noche no había luz en el barrio; ___ (haber) un apagón.",
+  "inf": "haber",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "habría",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "Una suposición sobre el pasado va en condicional. También se oye el imperfecto.",
+  "why_en": "A guess about the past takes the conditional. The imperfect is also heard.",
+  "en": "That night there was no light in the neighborhood; there must have been a blackout.",
+  "band": "B2",
+  "also": [
+   "había"
+  ],
+  "drop": true
+ },
+ {
+  "q": "Esa casa ___ (costar) mucho cuando la compraron.",
+  "inf": "costar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "costaría",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "Una suposición sobre el pasado va en condicional. También se oye el imperfecto.",
+  "why_en": "A guess about the past takes the conditional. The imperfect is also heard.",
+  "en": "That house must have cost a lot when they bought it.",
+  "band": "B2",
+  "also": [
+   "costaba"
+  ]
+ },
+ {
+  "q": "¿Qué le ___ (pasar) anoche a Camilo? Llegó con mala cara.",
+  "inf": "pasar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "pasaría",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Una pregunta de duda sobre el pasado va en condicional.",
+  "why_en": "A wondering question about the past takes the conditional.",
+  "en": "What could have happened to Camilo last night? He came in looking bad.",
+  "band": "B2"
+ },
+ {
+  "q": "Si Laura trabajara en casa, ___ (ahorrar) mucho en transporte.",
+  "inf": "ahorrar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "ahorraría",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If Laura worked from home, she would save a lot on transportation.",
+  "band": "B1"
+ },
+ {
+  "q": "Si yo hablara mejor inglés, ___ (buscar) trabajo en Estados Unidos.",
+  "inf": "buscar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "buscaría",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If I spoke better English, I would look for work in the United States.",
+  "band": "B1"
+ },
+ {
+  "q": "Si fueras más puntual, tus compañeros te ___ (escuchar) más.",
+  "inf": "escuchar",
+  "tense": "condicional",
+  "person": "ellos",
+  "answer": "escucharían",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If you were more punctual, your coworkers would listen to you more.",
+  "band": "B1"
+ },
+ {
+  "q": "Si hubiera un parque cerca, los niños ___ (salir) más.",
+  "inf": "salir",
+  "tense": "condicional",
+  "person": "ellos",
+  "answer": "saldrían",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If there were a park nearby, the kids would go out more.",
+  "band": "B1"
+ },
+ {
+  "q": "Si no tuviéramos tanto trabajo, ___ (poder) descansar el domingo.",
+  "inf": "poder",
+  "tense": "condicional",
+  "person": "nosotros",
+  "answer": "podríamos",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If we did not have so much work, we could rest on Sunday.",
+  "band": "B1"
+ },
+ {
+  "q": "Si mi mamá viviera aquí, nos ___ (traer) arepas cada semana.",
+  "inf": "traer",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "traería",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If my mom lived here, she would bring us arepas every week.",
+  "band": "B1"
+ },
+ {
+  "q": "Si Pedro quisiera a Marta, le ___ (escribir) más seguido.",
+  "inf": "escribir",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "escribiría",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If Pedro loved Marta, he would write to her more often.",
+  "band": "B1"
+ },
+ {
+  "q": "Si el carro no se dañara tanto, yo no ___ (gastar) tanto en el taller.",
+  "inf": "gastar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "gastaría",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If the car did not break down so much, I would not spend so much at the shop.",
+  "band": "B1"
+ },
+ {
+  "q": "Si me ofrecieran ese puesto, lo ___ (aceptar) sin pensarlo.",
+  "inf": "aceptar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "aceptaría",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If they offered me that position, I would accept it without thinking.",
+  "band": "B1"
+ },
+ {
+  "q": "Si los precios bajaran, la gente ___ (comprar) más.",
+  "inf": "comprar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "compraría",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If prices went down, people would buy more.",
+  "band": "B1"
+ },
+ {
+  "q": "Si tú me enseñaras, yo ___ (aprender) a tocar guitarra rápido.",
+  "inf": "aprender",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "aprendería",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If you taught me, I would learn to play guitar quickly.",
+  "band": "B1"
+ },
+ {
+  "q": "Si mi hermano me pidiera plata, yo se la ___ (dar).",
+  "inf": "dar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "daría",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If my brother asked me for money, I would give it to him.",
+  "band": "B1"
+ },
+ {
+  "q": "Si todos ayudáramos, la limpieza ___ (terminar) en una hora.",
+  "inf": "terminar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "terminaría",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If we all helped, the cleaning would be done in an hour.",
+  "band": "B1"
+ },
+ {
+  "q": "Si el jefe supiera lo del error, ___ (preguntar) quién fue.",
+  "inf": "preguntar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "preguntaría",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If the boss knew about the mistake, he would ask who did it.",
+  "band": "B1"
+ },
+ {
+  "q": "Disculpe, ¿___ (saber) usted a qué hora cierra el banco?",
+  "inf": "saber",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "sabría",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"Disculpe\": una petición cortés lleva condicional.",
+  "why_en": "Con \"Disculpe\": a polite request takes the conditional.",
+  "en": "Excuse me, would you happen to know what time the bank closes?",
+  "band": "B1"
+ },
+ {
+  "q": "Mamá, si terminara las tareas, ¿me ___ (dejar) ir a la fiesta?",
+  "inf": "dejar",
+  "tense": "condicional",
+  "person": "tú",
+  "answer": "dejarías",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "presente",
+   "impsubj"
+  ],
+  "why_es": "Si con imperfecto de subjuntivo (si terminara) pide condicional en la otra parte.",
+  "why_en": "Si with the imperfect subjunctive (si terminara) takes the conditional in the other half.",
+  "en": "Mom, if I finished my homework, would you let me go to the party?",
+  "band": "B1"
+ },
+ {
+  "q": "Doctor, ¿___ (poder) explicarme otra vez los resultados?",
+  "inf": "poder",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "podría",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"Doctor, ¿...?\": una petición cortés lleva condicional.",
+  "why_en": "Con \"Doctor, ¿...?\": a polite request takes the conditional.",
+  "en": "Doctor, could you explain the results to me again?",
+  "band": "B1"
+ },
+ {
+  "q": "Me ___ (encantar) conocer su finca algún día, doña Rosa.",
+  "inf": "encantar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "encantaría",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"doña Rosa\": una petición cortés lleva condicional.",
+  "why_en": "Con \"doña Rosa\": a polite request takes the conditional.",
+  "en": "I would love to see your farm someday, doña Rosa.",
+  "band": "B1"
+ },
+ {
+  "q": "Papá, ¿me ___ (prestar) el carro este sábado?",
+  "inf": "prestar",
+  "tense": "condicional",
+  "person": "tú",
+  "answer": "prestarías",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"Papá, ¿me...?\": una petición cortés lleva condicional.",
+  "why_en": "Con \"Papá, ¿me...?\": a polite request takes the conditional.",
+  "en": "Dad, would you lend me the car this Saturday?",
+  "band": "B1"
+ },
+ {
+  "q": "Muchachos, ¿me ___ (ayudar) a bajar estas cajas?",
+  "inf": "ayudar",
+  "tense": "condicional",
+  "person": "ellos",
+  "answer": "ayudarían",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"Muchachos, ¿...?\": una petición cortés lleva condicional.",
+  "why_en": "Con \"Muchachos, ¿...?\": a polite request takes the conditional.",
+  "en": "Guys, would you help carry these boxes down?",
+  "band": "B1"
+ },
+ {
+  "q": "Por favor, ¿___ (hacer) usted el favor de esperar un momento?",
+  "inf": "hacer",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "haría",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"Por favor\": una petición cortés lleva condicional.",
+  "why_en": "Con \"Por favor\": a polite request takes the conditional.",
+  "en": "Please, would you do me the favor of waiting a moment?",
+  "band": "B1"
+ },
+ {
+  "q": "Si no es molestia, ¿___ (cuidar) usted mi maleta un momento?",
+  "inf": "cuidar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "cuidaría",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"Si no es molestia\": una petición cortés lleva condicional.",
+  "why_en": "Con \"Si no es molestia\": a polite request takes the conditional.",
+  "en": "If it is no trouble, would you watch my suitcase for a moment?",
+  "band": "B1"
+ },
+ {
+  "q": "Si yo fuera tú, ___ (descansar) un poco; estás pálido.",
+  "inf": "descansar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "descansaría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj",
+   "presente"
+  ],
+  "why_es": "\"Si yo fuera tú\": un consejo se da en condicional.",
+  "why_en": "\"If I were you\": advice is given in the conditional.",
+  "en": "If I were you, I would rest a bit; you look pale.",
+  "band": "B1"
+ },
+ {
+  "q": "Antes de salir mañana, ___ (ser) mejor llamar a tu mamá.",
+  "inf": "ser",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "sería",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "preterito"
+  ],
+  "why_es": "Un consejo suave (sería mejor) va en condicional; también se dice será mejor.",
+  "why_en": "Gentle advice (it would be better) takes the conditional; será mejor also works.",
+  "en": "Before going out tomorrow, it would be better to call your mom.",
+  "band": "B1",
+  "also": [
+   "será"
+  ]
+ },
+ {
+  "q": "Si yo fuera tú, le ___ (preguntar) al profesor antes del examen.",
+  "inf": "preguntar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "preguntaría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Si yo fuera tú\": un consejo se da en condicional.",
+  "why_en": "\"If I were you\": advice is given in the conditional.",
+  "en": "If I were you, I would ask the teacher before the exam.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo que Laura, no ___ (firmar) ese contrato.",
+  "inf": "firmar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "firmaría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo que Laura\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo que Laura\": advice takes the conditional.",
+  "en": "If I were Laura, I would not sign that contract.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo que ustedes, ___ (probar) el ajiaco de ese restaurante.",
+  "inf": "probar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "probaría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo que ustedes\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo que ustedes\": advice takes the conditional.",
+  "en": "If I were you, I would try the ajiaco at that restaurant.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo que mi hermana, ___ (estudiar) otra carrera.",
+  "inf": "estudiar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "estudiaría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo que mi hermana\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo que mi hermana\": advice takes the conditional.",
+  "en": "If I were my sister, I would study a different degree.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo que tú, ___ (poner) el despertador a las cinco.",
+  "inf": "poner",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "pondría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo que tú\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo que tú\": advice takes the conditional.",
+  "en": "If I were you, I would set the alarm for five.",
+  "band": "B1"
+ },
+ {
+  "q": "Pedro, tú ___ (tener) que hablar con ella antes de que sea tarde.",
+  "inf": "tener",
+  "tense": "condicional",
+  "person": "tú",
+  "answer": "tendrías",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj",
+   "imperfecto"
+  ],
+  "why_es": "Un consejo suave va en condicional. También se dice con futuro.",
+  "why_en": "Soft advice takes the conditional. The future also works.",
+  "en": "Pedro, you should talk to her before it is too late.",
+  "band": "B1",
+  "also": [
+   "tendrás"
+  ]
+ },
+ {
+  "q": "Yo en tu caso, ___ (pensar) bien antes de renunciar.",
+  "inf": "pensar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "pensaría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo en tu caso\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo en tu caso\": advice takes the conditional.",
+  "en": "In your case, I would think hard before quitting.",
+  "band": "B1"
+ },
+ {
+  "q": "Pensé que la película ___ (empezar) a las siete.",
+  "inf": "empezar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "empezaría",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "\"Pensé que\": tras un verbo en pasado, lo que vendría va en condicional. También se oye el imperfecto.",
+  "why_en": "\"Pensé que\": after a past verb, what was to come takes the conditional. The imperfect is also heard.",
+  "en": "I thought the movie would start at seven.",
+  "band": "B2",
+  "also": [
+   "empezaba"
+  ]
+ },
+ {
+  "q": "Me juró que ___ (cuidar) a mi gato mientras yo viajaba.",
+  "inf": "cuidar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "cuidaría",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "\"Me juró que\": tras un verbo en pasado, lo que vendría va en condicional.",
+  "why_en": "\"Me juró que\": after a past verb, what was to come takes the conditional.",
+  "en": "He swore he would take care of my cat while I traveled.",
+  "band": "B2"
+ },
+ {
+  "q": "Dijeron que los obreros ___ (terminar) el techo ese mismo día.",
+  "inf": "terminar",
+  "tense": "condicional",
+  "person": "ellos",
+  "answer": "terminarían",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "\"Dijeron que, ese mismo día\": tras un verbo en pasado, lo que vendría va en condicional.",
+  "why_en": "\"Dijeron que, ese mismo día\": after a past verb, what was to come takes the conditional.",
+  "en": "They said the workers would finish the roof that same day.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi mamá creía que yo ___ (estudiar) medicina.",
+  "inf": "estudiar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "estudiaría",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "\"Creía que\": tras un verbo en pasado, lo que vendría va en condicional.",
+  "why_en": "\"Creía que\": after a past verb, what was to come takes the conditional.",
+  "en": "My mom believed I would study medicine.",
+  "band": "B2"
+ },
+ {
+  "q": "Prometiste que ___ (ayudar) con la mudanza, y ayer no viniste.",
+  "inf": "ayudar",
+  "tense": "condicional",
+  "person": "tú",
+  "answer": "ayudarías",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "\"Prometiste que\": tras un verbo en pasado, lo que vendría va en condicional. También se oye el imperfecto.",
+  "why_en": "\"Prometiste que\": after a past verb, what was to come takes the conditional. The imperfect is also heard.",
+  "en": "You promised you would help with the move, and yesterday you didn't come.",
+  "band": "B2",
+  "also": [
+   "ayudabas"
+  ]
+ },
+ {
+  "q": "No imaginaba que el viaje ___ (salir) tan caro.",
+  "inf": "salir",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "saldría",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "\"No imaginaba que\": tras un verbo en pasado, lo que vendría va en condicional.",
+  "why_en": "\"No imaginaba que\": after a past verb, what was to come takes the conditional.",
+  "en": "I did not imagine that the trip would turn out so expensive.",
+  "band": "B2"
+ },
+ {
+  "q": "Dijo que se ___ (ir) a vivir con su novia al mes siguiente.",
+  "inf": "ir",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "iría",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "presente"
+  ],
+  "why_es": "\"Dijo que\" + algo posterior: condicional; también se oye el imperfecto.",
+  "why_en": "\"Dijo que\" + something later: conditional; the imperfect is also heard.",
+  "en": "He said he would move in with his girlfriend the following month.",
+  "band": "B2",
+  "also": [
+   "iba"
+  ]
+ },
+ {
+  "q": "El gerente anunció que la empresa ___ (dar) un bono en diciembre, pero no cumplió.",
+  "inf": "dar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "daría",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "\"Anunció que\": tras un verbo en pasado, lo que vendría va en condicional. También se oye el imperfecto.",
+  "why_en": "\"Anunció que\": after a past verb, what was to come takes the conditional. The imperfect is also heard.",
+  "en": "The manager announced the company would give a bonus in December, but it didn't.",
+  "band": "B2",
+  "also": [
+   "daba"
+  ]
+ },
+ {
+  "q": "Sabíamos que ellos nunca ___ (recibir) a un extraño en su casa.",
+  "inf": "recibir",
+  "tense": "condicional",
+  "person": "ellos",
+  "answer": "recibirían",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "\"Sabíamos que\": tras un verbo en pasado, lo que vendría va en condicional. También se oye el imperfecto.",
+  "why_en": "\"Sabíamos que\": after a past verb, what was to come takes the conditional. The imperfect is also heard.",
+  "en": "We knew they would never welcome a stranger into their home.",
+  "band": "B2",
+  "also": [
+   "recibían"
+  ]
+ },
+ {
+  "q": "Le dije que yo lo ___ (esperar) hasta el lunes, pero no vino.",
+  "inf": "esperar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "esperaría",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "\"Le dije que\": tras un verbo en pasado, lo que vendría va en condicional. También se oye el imperfecto.",
+  "why_en": "\"Le dije que\": after a past verb, what was to come takes the conditional. The imperfect is also heard.",
+  "en": "I told him I would wait for him until Monday, but he didn't come.",
+  "band": "B2",
+  "also": [
+   "esperaba"
+  ]
+ },
+ {
+  "q": "¿Cuántos años ___ (tener) tu abuela cuando se casó?",
+  "inf": "tener",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "tendría",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "Una pregunta de duda sobre el pasado va en condicional. También se oye el imperfecto.",
+  "why_en": "A wondering question about the past takes the conditional. The imperfect is also heard.",
+  "en": "How old would your grandmother have been when she got married?",
+  "band": "B2",
+  "also": [
+   "tenía"
+  ]
+ },
+ {
+  "q": "Anoche el tráfico estaba terrible; ___ (haber) un partido en el estadio.",
+  "inf": "haber",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "habría",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "Una suposición sobre el pasado va en condicional. También se oye el imperfecto.",
+  "why_en": "A guess about the past takes the conditional. The imperfect is also heard.",
+  "en": "Last night traffic was terrible; there must have been a game at the stadium.",
+  "band": "B2",
+  "also": [
+   "había"
+  ]
+ },
+ {
+  "q": "Salió de la oficina sonriendo; ___ (recibir) un ascenso.",
+  "inf": "recibir",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "recibiría",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Una suposición sobre el pasado va en condicional.",
+  "why_en": "A guess about the past takes the conditional.",
+  "en": "He left the office smiling; he must have gotten a promotion.",
+  "band": "B2"
+ },
+ {
+  "q": "No contestaron el teléfono ayer; ___ (estar) de viaje.",
+  "inf": "estar",
+  "tense": "condicional",
+  "person": "ellos",
+  "answer": "estarían",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "Una suposición sobre el pasado va en condicional. También se oye el imperfecto.",
+  "why_en": "A guess about the past takes the conditional. The imperfect is also heard.",
+  "en": "They did not answer the phone yesterday; they must have been traveling.",
+  "band": "B2",
+  "also": [
+   "estaban"
+  ]
+ },
+ {
+  "q": "Esa tarde hacía mucho calor; ___ (hacer) unos treinta grados.",
+  "inf": "hacer",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "haría",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "Una suposición sobre el pasado va en condicional. También se oye el imperfecto.",
+  "why_en": "A guess about the past takes the conditional. The imperfect is also heard.",
+  "en": "It was very hot that afternoon; it must have been about thirty degrees.",
+  "band": "B2",
+  "also": [
+   "hacía"
+  ]
+ },
+ {
+  "q": "¿Cuánto ___ (valer) esa moto cuando tu papá la compró?",
+  "inf": "valer",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "valdría",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "Una pregunta de duda sobre el pasado va en condicional. También se oye el imperfecto.",
+  "why_en": "A wondering question about the past takes the conditional. The imperfect is also heard.",
+  "en": "How much would that motorcycle have cost when your dad bought it?",
+  "band": "B2",
+  "also": [
+   "valía"
+  ]
+ },
+ {
+  "q": "Por la forma en que hablaba, ___ (venir) de Antioquia.",
+  "inf": "venir",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "vendría",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Una suposición sobre el pasado va en condicional.",
+  "why_en": "A guess about the past takes the conditional.",
+  "en": "From the way he spoke, he must have come from Antioquia.",
+  "band": "B2"
+ },
+ {
+  "q": "Alguien tocó la puerta a medianoche; ___ (querer) pedir ayuda.",
+  "inf": "querer",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "querría",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "Una suposición sobre el pasado va en condicional. También se oye el imperfecto.",
+  "why_en": "A guess about the past takes the conditional. The imperfect is also heard.",
+  "en": "Someone knocked on the door at midnight; they must have wanted to ask for help.",
+  "band": "B2",
+  "also": [
+   "quería"
+  ]
+ },
+ {
+  "q": "Anoche se oía mucho ruido; ¿cuántas personas ___ (haber) en la fiesta?",
+  "inf": "haber",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "habría",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "Una pregunta de duda sobre el pasado va en condicional. También se oye el imperfecto.",
+  "why_en": "A wondering question about the past takes the conditional. The imperfect is also heard.",
+  "en": "Last night there was a lot of noise; how many people might have been at the party?",
+  "band": "B2",
+  "also": [
+   "había"
+  ]
+ },
+ {
+  "q": "Si trabajáramos menos horas, ___ (vivir) más tranquilos.",
+  "inf": "vivir",
+  "tense": "condicional",
+  "person": "nosotros",
+  "answer": "viviríamos",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If we worked fewer hours, we would live more peacefully.",
+  "band": "B1"
+ },
+ {
+  "q": "Si tú me explicaras mejor, yo ___ (entender) el tema.",
+  "inf": "entender",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "entendería",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If you explained it better, I would understand the topic.",
+  "band": "B1"
+ },
+ {
+  "q": "Si el bus pasara más seguido, muchos no ___ (usar) el carro.",
+  "inf": "usar",
+  "tense": "condicional",
+  "person": "ellos",
+  "answer": "usarían",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If the bus came more often, many people would not use the car.",
+  "band": "B1"
+ },
+ {
+  "q": "Si Juan no perdiera tanto tiempo, ___ (conseguir) más clientes.",
+  "inf": "conseguir",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "conseguiría",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If Juan did not waste so much time, he would get more clients.",
+  "band": "B1"
+ },
+ {
+  "q": "Si yo fuera presidente, ___ (cambiar) las leyes de tránsito.",
+  "inf": "cambiar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "cambiaría",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If I were president, I would change the traffic laws.",
+  "band": "B1"
+ },
+ {
+  "q": "Si nos mudáramos a Pereira, mis hijos ___ (crecer) en un lugar más tranquilo.",
+  "inf": "crecer",
+  "tense": "condicional",
+  "person": "ellos",
+  "answer": "crecerían",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If we moved to Pereira, my kids would grow up in a calmer place.",
+  "band": "B1"
+ },
+ {
+  "q": "Si hubiera menos trancón, nosotros ___ (llegar) puntuales.",
+  "inf": "llegar",
+  "tense": "condicional",
+  "person": "nosotros",
+  "answer": "llegaríamos",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If there were less traffic, we would arrive on time.",
+  "band": "B1"
+ },
+ {
+  "q": "Si ella me llamara, yo le ___ (contar) todo.",
+  "inf": "contar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "contaría",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If she called me, I would tell her everything.",
+  "band": "B1"
+ },
+ {
+  "q": "Si no tuvieras tanto miedo, ___ (intentar) el negocio.",
+  "inf": "intentar",
+  "tense": "condicional",
+  "person": "tú",
+  "answer": "intentarías",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If you were not so scared, you would try the business.",
+  "band": "B1"
+ },
+ {
+  "q": "Si cerraran la calle, nosotros ___ (caminar) mucho más para llegar.",
+  "inf": "caminar",
+  "tense": "condicional",
+  "person": "nosotros",
+  "answer": "caminaríamos",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If they closed the street, we would walk much farther to get there.",
+  "band": "B1"
+ },
+ {
+  "q": "Si mi abuelo estuviera vivo, ___ (estar) orgulloso de ti.",
+  "inf": "estar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "estaría",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If my grandfather were alive, he would be proud of you.",
+  "band": "B1"
+ },
+ {
+  "q": "Si nevara en Bogotá, la ciudad ___ (quedar) paralizada.",
+  "inf": "quedar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "quedaría",
+  "use": "resultado de si + imperfecto de subjuntivo",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "Si + imperfecto de subjuntivo pide condicional en el resultado.",
+  "why_en": "Si + imperfect subjunctive takes the conditional in the result.",
+  "en": "If it snowed in Bogotá, the city would be paralyzed.",
+  "band": "B1"
+ },
+ {
+  "q": "¿Le ___ (parecer) bien si nos vemos a las cinco?",
+  "inf": "parecer",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "parecería",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"¿Le...?\": una petición cortés lleva condicional.",
+  "why_en": "Con \"¿Le...?\": a polite request takes the conditional.",
+  "en": "Would it seem all right to you if we meet at five?",
+  "band": "B1"
+ },
+ {
+  "q": "¿___ (ver) usted algún inconveniente en cambiar la cita?",
+  "inf": "ver",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "vería",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"usted\": una petición cortés lleva condicional.",
+  "why_en": "Con \"usted\": a polite request takes the conditional.",
+  "en": "Would you see any problem in changing the appointment?",
+  "band": "B1"
+ },
+ {
+  "q": "Me ___ (venir) muy bien un descanso, la verdad.",
+  "inf": "venir",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "vendría",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Un deseo cortés va en condicional.",
+  "why_en": "A polite wish takes the conditional.",
+  "en": "A rest would do me good, to be honest.",
+  "band": "B1"
+ },
+ {
+  "q": "Mesero, ¿nos ___ (traer) la cuenta, por favor?",
+  "inf": "traer",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "traería",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"por favor\": una petición cortés lleva condicional.",
+  "why_en": "Con \"por favor\": a polite request takes the conditional.",
+  "en": "Waiter, would you bring us the check, please?",
+  "band": "B1"
+ },
+ {
+  "q": "¿Me ___ (hacer) el favor de firmar aquí, señor?",
+  "inf": "hacer",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "haría",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"el favor\": una petición cortés lleva condicional.",
+  "why_en": "Con \"el favor\": a polite request takes the conditional.",
+  "en": "Would you do me the favor of signing here, sir?",
+  "band": "B1"
+ },
+ {
+  "q": "Si fuera tan amable, ¿me ___ (mostrar) el menú?",
+  "inf": "mostrar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "mostraría",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"Si fuera tan amable\": una petición cortés lleva condicional.",
+  "why_en": "Con \"Si fuera tan amable\": a polite request takes the conditional.",
+  "en": "If you would be so kind, would you show me the menu?",
+  "band": "B1"
+ },
+ {
+  "q": "Con mucho gusto yo les ___ (ofrecer) un café, si me permiten.",
+  "inf": "ofrecer",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "ofrecería",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"si me permiten\": una petición cortés lleva condicional.",
+  "why_en": "Con \"si me permiten\": a polite request takes the conditional.",
+  "en": "I would gladly offer you a coffee, if you allow me.",
+  "band": "B1"
+ },
+ {
+  "q": "¿Le ___ (gustar) conocer la oficina nueva, licenciado?",
+  "inf": "gustar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "gustaría",
+  "use": "cortesía: petición o deseo suave",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Con \"licenciado\": una petición cortés lleva condicional.",
+  "why_en": "Con \"licenciado\": a polite request takes the conditional.",
+  "en": "Would you like to see the new office, sir?",
+  "band": "B1"
+ },
+ {
+  "q": "Yo que tú, ___ (hablar) más despacio en la entrevista.",
+  "inf": "hablar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "hablaría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo que tú\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo que tú\": advice takes the conditional.",
+  "en": "If I were you, I would speak more slowly in the interview.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo en tu lugar, ___ (pedir) una segunda opinión.",
+  "inf": "pedir",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "pediría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo en tu lugar\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo en tu lugar\": advice takes the conditional.",
+  "en": "If I were you, I would ask for a second opinion.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo que Camilo, ___ (vender) esa moto.",
+  "inf": "vender",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "vendería",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo que Camilo\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo que Camilo\": advice takes the conditional.",
+  "en": "If I were Camilo, I would sell that motorcycle.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo que ustedes, no ___ (manejar) con esta lluvia.",
+  "inf": "manejar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "manejaría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo que ustedes\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo que ustedes\": advice takes the conditional.",
+  "en": "If I were you, I would not drive in this rain.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo en tu lugar, ___ (seguir) estudiando.",
+  "inf": "seguir",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "seguiría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo de ti\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo de ti\": advice takes the conditional.",
+  "en": "If I were you, I would keep studying.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo que ella, ___ (tomar) un taxi hasta allá.",
+  "inf": "tomar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "tomaría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo que ella\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo que ella\": advice takes the conditional.",
+  "en": "If I were her, I would take a taxi there.",
+  "band": "B1"
+ },
+ {
+  "q": "En tu lugar, yo no ___ (dejar) el trabajo todavía.",
+  "inf": "dejar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "dejaría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"En tu lugar\": para aconsejar se usa el condicional.",
+  "why_en": "\"En tu lugar\": advice takes the conditional.",
+  "en": "In your place, I would not quit the job yet.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo que mis papás, ___ (alquilar) la casa.",
+  "inf": "alquilar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "alquilaría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo que mis papás\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo que mis papás\": advice takes the conditional.",
+  "en": "If I were my parents, I would rent out the house.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo que tú, ___ (leer) el contrato con calma antes de firmar.",
+  "inf": "leer",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "leería",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo que tú\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo que tú\": advice takes the conditional.",
+  "en": "If I were you, I would read the contract calmly before signing.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo que el entrenador, ___ (sacar) al portero.",
+  "inf": "sacar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "sacaría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"Yo que el entrenador\": para aconsejar se usa el condicional.",
+  "why_en": "\"Yo que el entrenador\": advice takes the conditional.",
+  "en": "If I were the coach, I would take out the goalkeeper.",
+  "band": "B1"
+ },
+ {
+  "q": "En tu situación, yo ___ (buscar) ayuda profesional.",
+  "inf": "buscar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "buscaría",
+  "use": "consejo: yo que tú, en tu lugar",
+  "confuse": [
+   "futuro",
+   "impsubj"
+  ],
+  "why_es": "\"En tu situación\": para aconsejar se usa el condicional.",
+  "why_en": "\"En tu situación\": advice takes the conditional.",
+  "en": "In your situation, I would look for professional help.",
+  "band": "B1"
+ },
+ {
+  "q": "Dijo que ___ (mandar) el paquete esa misma semana.",
+  "inf": "mandar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "mandaría",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "presente"
+  ],
+  "why_es": "\"Dijo que\" + algo posterior: condicional; también se oye el imperfecto.",
+  "why_en": "\"Dijo que\" + something later: conditional; the imperfect is also heard.",
+  "en": "He said he would send the package that same week.",
+  "band": "B2",
+  "also": [
+   "mandaba"
+  ]
+ },
+ {
+  "q": "Pensábamos que ellos ___ (llegar) más temprano.",
+  "inf": "llegar",
+  "tense": "condicional",
+  "person": "ellos",
+  "answer": "llegarían",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "\"Pensábamos que\": tras un verbo en pasado, lo que vendría va en condicional. También se oye el imperfecto.",
+  "why_en": "\"Pensábamos que\": after a past verb, what was to come takes the conditional. The imperfect is also heard.",
+  "en": "We thought they would arrive earlier.",
+  "band": "B2",
+  "also": [
+   "llegaban"
+  ]
+ },
+ {
+  "q": "El técnico aseguró que el computador ___ (funcionar) bien, pero se dañó otra vez.",
+  "inf": "funcionar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "funcionaría",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "\"Me aseguró que\": tras un verbo en pasado, lo que vendría va en condicional. También se oye el imperfecto.",
+  "why_en": "\"Me aseguró que\": after a past verb, what was to come takes the conditional. The imperfect is also heard.",
+  "en": "The technician assured me the computer would work fine, but it broke again.",
+  "band": "B2",
+  "also": [
+   "funcionaba"
+  ]
+ },
+ {
+  "q": "Ana me escribió que ___ (traer) el postre a la cena, pero llegó sin nada.",
+  "inf": "traer",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "traería",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "\"Me escribió que\": tras un verbo en pasado, lo que vendría va en condicional. También se oye el imperfecto.",
+  "why_en": "\"Me escribió que\": after a past verb, what was to come takes the conditional. The imperfect is also heard.",
+  "en": "Ana wrote to me that she would bring dessert to dinner, but she arrived with nothing.",
+  "band": "B2",
+  "also": [
+   "traía"
+  ]
+ },
+ {
+  "q": "Creíamos que la reunión ___ (durar) una hora.",
+  "inf": "durar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "duraría",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "\"Creíamos que\": tras un verbo en pasado, lo que vendría va en condicional. También se oye el imperfecto.",
+  "why_en": "\"Creíamos que\": after a past verb, what was to come takes the conditional. The imperfect is also heard.",
+  "en": "We believed the meeting would last an hour.",
+  "band": "B2",
+  "also": [
+   "duraba"
+  ]
+ },
+ {
+  "q": "Mi abuelo siempre decía que yo ___ (ir) lejos.",
+  "inf": "ir",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "iría",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "\"Siempre decía que\": tras un verbo en pasado, lo que vendría va en condicional.",
+  "why_en": "\"Siempre decía que\": after a past verb, what was to come takes the conditional.",
+  "en": "My grandfather always said I would go far.",
+  "band": "B2"
+ },
+ {
+  "q": "Dijeron en la radio que la lluvia ___ (parar) por la tarde, pero siguió lloviendo.",
+  "inf": "parar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "pararía",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "\"Dijeron que\": tras un verbo en pasado, lo que vendría va en condicional. También se oye el imperfecto.",
+  "why_en": "\"Dijeron que\": after a past verb, what was to come takes the conditional. The imperfect is also heard.",
+  "en": "They said on the radio the rain would stop in the afternoon, but it kept raining.",
+  "band": "B2",
+  "also": [
+   "paraba"
+  ]
+ },
+ {
+  "q": "Anoche entendí que ustedes ___ (pagar) la cuenta, pero nadie pagó.",
+  "inf": "pagar",
+  "tense": "condicional",
+  "person": "ellos",
+  "answer": "pagarían",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "\"Entendí que\": tras un verbo en pasado, lo que vendría va en condicional. También se oye el imperfecto.",
+  "why_en": "\"Entendí que\": after a past verb, what was to come takes the conditional. The imperfect is also heard.",
+  "en": "Last night I understood you would pay the bill, but nobody paid.",
+  "band": "B2",
+  "also": [
+   "pagaban"
+  ]
+ },
+ {
+  "q": "El técnico juró que el aire acondicionado ___ (quedar) listo esa tarde.",
+  "inf": "quedar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "quedaría",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "\"Juró que, esa tarde\": tras un verbo en pasado, lo que vendría va en condicional.",
+  "why_en": "\"Juró que, esa tarde\": after a past verb, what was to come takes the conditional.",
+  "en": "The technician swore the air conditioning would be ready that afternoon.",
+  "band": "B2"
+ },
+ {
+  "q": "Nos prometieron que nos ___ (devolver) la plata en una semana, y nada.",
+  "inf": "devolver",
+  "tense": "condicional",
+  "person": "ellos",
+  "answer": "devolverían",
+  "use": "futuro en el pasado: lo que iba a pasar",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "\"Nos prometieron que\": lo que vendría va en condicional; también se oye el imperfecto.",
+  "why_en": "\"They promised\": what was to come takes the conditional; the imperfect is also heard.",
+  "en": "They promised they would give us the money back in a week, and nothing.",
+  "band": "B2",
+  "also": [
+   "devolvían"
+  ]
+ },
+ {
+  "q": "El vecino gritaba mucho anoche; ___ (estar) borracho.",
+  "inf": "estar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "estaría",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "Una suposición sobre el pasado va en condicional. También se oye el imperfecto.",
+  "why_en": "A guess about the past takes the conditional. The imperfect is also heard.",
+  "en": "The neighbor was shouting a lot last night; he must have been drunk.",
+  "band": "B2",
+  "also": [
+   "estaba"
+  ]
+ },
+ {
+  "q": "Mi abuelo ___ (trabajar) unos doce años en esa fábrica antes de jubilarse.",
+  "inf": "trabajar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "trabajaría",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "\"Unos doce años\": una suposición sobre el pasado va en condicional.",
+  "why_en": "\"Unos doce años\": a guess about the past takes the conditional.",
+  "en": "My grandfather must have worked about twelve years at that factory before retiring.",
+  "band": "B2"
+ },
+ {
+  "q": "El ladrón entró por la ventana; ___ (saber) que no había nadie.",
+  "inf": "saber",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "sabría",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "Una suposición sobre el pasado va en condicional. También se oye el imperfecto.",
+  "why_en": "A guess about the past takes the conditional. The imperfect is also heard.",
+  "en": "The thief came in through the window; he must have known no one was there.",
+  "band": "B2",
+  "also": [
+   "sabía"
+  ]
+ },
+ {
+  "q": "A los dieciocho, yo ___ (pesar) unos sesenta kilos.",
+  "inf": "pesar",
+  "tense": "condicional",
+  "person": "yo",
+  "answer": "pesaría",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "\"Unos sesenta\": una suposición sobre el pasado va en condicional. También se oye el imperfecto.",
+  "why_en": "\"Unos sesenta\": a guess about the past takes the conditional. The imperfect is also heard.",
+  "en": "At eighteen, I must have weighed about sixty kilos.",
+  "band": "B2",
+  "also": [
+   "pesaba"
+  ]
+ },
+ {
+  "q": "Ese año ___ (llover) casi todos los días en el pueblo.",
+  "inf": "llover",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "llovería",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Una suposición sobre el pasado va en condicional.",
+  "why_en": "A guess about the past takes the conditional.",
+  "en": "That year it must have rained almost every day in the town.",
+  "band": "B2",
+  "drop": true
+ },
+ {
+  "q": "¿De qué ___ (hablar) ustedes anoche? Se rieron mucho.",
+  "inf": "hablar",
+  "tense": "condicional",
+  "person": "ellos",
+  "answer": "hablarían",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "Una pregunta de duda sobre el pasado va en condicional. También se oye el imperfecto.",
+  "why_en": "A wondering question about the past takes the conditional. The imperfect is also heard.",
+  "en": "What could you have been talking about last night? You laughed a lot.",
+  "band": "B2",
+  "also": [
+   "hablaban"
+  ],
+  "drop": true
+ },
+ {
+  "q": "No me saludó en la calle; no me ___ (ver).",
+  "inf": "ver",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "vería",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Una suposición sobre el pasado va en condicional.",
+  "why_en": "A guess about the past takes the conditional.",
+  "en": "He did not greet me on the street; he must not have seen me.",
+  "band": "B2"
+ },
+ {
+  "q": "En esa época mis papás ___ (ganar) muy poco.",
+  "inf": "ganar",
+  "tense": "condicional",
+  "person": "ellos",
+  "answer": "ganarían",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "Una suposición sobre el pasado va en condicional. También se oye el imperfecto.",
+  "why_en": "A guess about the past takes the conditional. The imperfect is also heard.",
+  "en": "My parents must have earned very little back then.",
+  "band": "B2",
+  "also": [
+   "ganaban"
+  ]
+ },
+ {
+  "q": "Mi tía llegó con unas bolsas enormes; ___ (gastar) medio sueldo.",
+  "inf": "gastar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "gastaría",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto"
+  ],
+  "why_es": "Una suposición sobre el pasado va en condicional.",
+  "why_en": "A guess about the past takes the conditional.",
+  "en": "My aunt arrived with huge bags; she must have spent half a paycheck.",
+  "band": "B2"
+ },
+ {
+  "q": "Esa noche Daniela lloró en el carro; ___ (extrañar) a su mamá.",
+  "inf": "extrañar",
+  "tense": "condicional",
+  "person": "él/ella",
+  "answer": "extrañaría",
+  "use": "condicional de probabilidad: una suposición sobre el pasado",
+  "confuse": [
+   "futuro",
+   "imperfecto",
+   "impsubj"
+  ],
+  "why_es": "Una suposición sobre el pasado va en condicional. También se oye el imperfecto.",
+  "why_en": "A guess about the past takes the conditional. The imperfect is also heard.",
+  "en": "That night Daniela cried in the car; she must have missed her mom.",
+  "band": "B2",
+  "also": [
+   "extrañaba"
+  ]
+ }
+]

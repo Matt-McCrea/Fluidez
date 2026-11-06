@@ -1,0 +1,2571 @@
+[
+ {
+  "q": "Espero que Ana ya ___ (llegar) a Medellín; todavía no me escribe.",
+  "inf": "llegar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya llegado",
+  "use": "esperar que + pretérito perfecto de subjuntivo: acción ya completada",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Con ya, esperar que pide haya + participio: lo hecho.",
+  "why_en": "With ya, esperar que takes haya + participle: what is already done.",
+  "en": "I hope Ana has already arrived in Medellín; she hasn't written me yet.",
+  "band": "B2"
+ },
+ {
+  "q": "Espero que ustedes ya ___ (comer) algo antes de venir.",
+  "inf": "comer",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan comido",
+  "use": "esperar que + pretérito perfecto de subjuntivo: acción ya completada",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Con ya, esperar que pide haya + participio: lo hecho.",
+  "why_en": "With ya, esperar que takes haya + participle: what is already done.",
+  "en": "I hope you have already eaten something before coming.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi mamá espera que yo ya ___ (conseguir) trabajo para diciembre.",
+  "inf": "conseguir",
+  "tense": "perfsubj",
+  "person": "yo",
+  "answer": "haya conseguido",
+  "use": "esperar que + pretérito perfecto de subjuntivo: acción ya completada",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Con ya, esperar que pide haya + participio: lo hecho.",
+  "why_en": "With ya, esperar que takes haya + participle: what is already done.",
+  "en": "My mom hopes I will have found a job by December.",
+  "band": "B2"
+ },
+ {
+  "q": "Espero que tú ya ___ (recibir) mi mensaje.",
+  "inf": "recibir",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas recibido",
+  "use": "esperar que + pretérito perfecto de subjuntivo: acción ya completada",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Con ya, esperar que pide haya + participio: lo hecho.",
+  "why_en": "With ya, esperar que takes haya + participle: what is already done.",
+  "en": "I hope you have already received my message.",
+  "band": "B2"
+ },
+ {
+  "q": "Los profesores esperan que los estudiantes ya ___ (leer) el capítulo para el lunes.",
+  "inf": "leer",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan leído",
+  "use": "esperar que + pretérito perfecto de subjuntivo: acción ya completada",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Con ya, esperar que pide haya + participio: lo hecho.",
+  "why_en": "With ya, esperar que takes haya + participle: what is already done.",
+  "en": "The teachers hope the students will have read the chapter by Monday.",
+  "band": "B2"
+ },
+ {
+  "q": "Esperamos que el paquete ya ___ (salir) de la aduana.",
+  "inf": "salir",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya salido",
+  "use": "esperar que + pretérito perfecto de subjuntivo: acción ya completada",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Con ya, esperar que pide haya + participio: lo hecho.",
+  "why_en": "With ya, esperar que takes haya + participle: what is already done.",
+  "en": "We hope the package has already cleared customs.",
+  "band": "B2"
+ },
+ {
+  "q": "Espero que nosotros ya ___ (terminar) la mudanza para el sábado.",
+  "inf": "terminar",
+  "tense": "perfsubj",
+  "person": "nosotros",
+  "answer": "hayamos terminado",
+  "use": "esperar que + pretérito perfecto de subjuntivo: acción ya completada",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Con ya, esperar que pide haya + participio: lo hecho.",
+  "why_en": "With ya, esperar que takes haya + participle: what is already done.",
+  "en": "I hope we will have finished the move by Saturday.",
+  "band": "B2"
+ },
+ {
+  "q": "Ojalá que Sofía ya ___ (encontrar) las llaves.",
+  "inf": "encontrar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya encontrado",
+  "use": "ojalá + pretérito perfecto de subjuntivo",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Ojalá sobre algo que ya debió pasar pide haya + participio.",
+  "why_en": "Ojalá about something that should already have happened takes haya + participle.",
+  "en": "I hope Sofía has already found the keys.",
+  "band": "B2"
+ },
+ {
+  "q": "Ojalá que mis papás ya ___ (recoger) las maletas.",
+  "inf": "recoger",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan recogido",
+  "use": "ojalá + pretérito perfecto de subjuntivo",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Ojalá sobre algo que ya debió pasar pide haya + participio.",
+  "why_en": "Ojalá about something that should already have happened takes haya + participle.",
+  "en": "I hope my parents have already picked up their suitcases.",
+  "band": "B2"
+ },
+ {
+  "q": "Ojalá que Pedro ya ___ (pagar) la cuenta de la luz.",
+  "inf": "pagar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya pagado",
+  "use": "ojalá + pretérito perfecto de subjuntivo",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Ojalá sobre algo que ya debió pasar pide haya + participio.",
+  "why_en": "Ojalá about something that should already have happened takes haya + participle.",
+  "en": "I hope Pedro has already paid the electricity bill.",
+  "band": "B2"
+ },
+ {
+  "q": "Ojalá ya ___ (pasar) lo peor de la tormenta.",
+  "inf": "pasar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya pasado",
+  "use": "ojalá + pretérito perfecto de subjuntivo",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Ojalá sobre algo que ya debió pasar pide haya + participio.",
+  "why_en": "Ojalá about something that should already have happened takes haya + participle.",
+  "en": "I hope the worst of the storm has already passed.",
+  "band": "B2"
+ },
+ {
+  "q": "Ojalá que tú ya ___ (arreglar) el problema con el banco.",
+  "inf": "arreglar",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas arreglado",
+  "use": "ojalá + pretérito perfecto de subjuntivo",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Ojalá sobre algo que ya debió pasar pide haya + participio.",
+  "why_en": "Ojalá about something that should already have happened takes haya + participle.",
+  "en": "I hope you have already sorted out the problem with the bank.",
+  "band": "B2"
+ },
+ {
+  "q": "Ojalá que el doctor ya ___ (abrir) el consultorio; tengo cita.",
+  "inf": "abrir",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya abierto",
+  "use": "ojalá + pretérito perfecto de subjuntivo",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Ojalá sobre algo que ya debió pasar pide haya + participio.",
+  "why_en": "Ojalá about something that should already have happened takes haya + participle.",
+  "en": "I hope the doctor has already opened the office; I have an appointment.",
+  "band": "B2"
+ },
+ {
+  "q": "Ojalá que ya me ___ (llegar) el giro cuando vaya al banco.",
+  "inf": "llegar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya llegado",
+  "use": "ojalá + pretérito perfecto de subjuntivo",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Ojalá sobre algo que ya debió pasar pide haya + participio.",
+  "why_en": "Ojalá about something that should already have happened takes haya + participle.",
+  "en": "I hope my transfer has arrived by the time I go to the bank.",
+  "band": "B2"
+ },
+ {
+  "q": "Me alegra que ya ___ (terminar) tus exámenes, Laura.",
+  "inf": "terminar",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas terminado",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "I'm glad you've finished your exams, Laura.",
+  "band": "B2"
+ },
+ {
+  "q": "Me molesta que Camilo todavía no me ___ (enviar) el archivo.",
+  "inf": "enviar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya enviado",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "It bothers me that Camilo still hasn't sent me the file.",
+  "band": "B2"
+ },
+ {
+  "q": "Me sorprende que ustedes nunca ___ (probar) el ajiaco.",
+  "inf": "probar",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan probado",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "It surprises me that you have never tried ajiaco.",
+  "band": "B2"
+ },
+ {
+  "q": "Me da mucha alegría que ya ___ (nacer) tu bebé.",
+  "inf": "nacer",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya nacido",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "It makes me very happy that your baby has been born.",
+  "band": "B2"
+ },
+ {
+  "q": "Qué bueno que el técnico ya ___ (arreglar) el computador.",
+  "inf": "arreglar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya arreglado",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "How nice that the technician has already fixed the computer.",
+  "band": "B2"
+ },
+ {
+  "q": "Lamento que tu hermana ya ___ (perder) dos empleos este año.",
+  "inf": "perder",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya perdido",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "I'm sorry your sister has already lost two jobs this year.",
+  "band": "B2"
+ },
+ {
+  "q": "Me preocupa que mi hijo todavía no ___ (llamar).",
+  "inf": "llamar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya llamado",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "It worries me that my son still hasn't called.",
+  "band": "B2"
+ },
+ {
+  "q": "Me sorprende que tú nunca ___ (ir) a la playa.",
+  "inf": "ir",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas ido",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "It surprises me that you have never been to the beach.",
+  "band": "B2"
+ },
+ {
+  "q": "Estoy feliz de que ya ___ (conseguir) tu visa, Marcos.",
+  "inf": "conseguir",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas conseguido",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "I'm happy you've already gotten your visa, Marcos.",
+  "band": "B2"
+ },
+ {
+  "q": "Me alegra mucho que hasta ahora todo ___ (salir) bien.",
+  "inf": "salir",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya salido",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "I'm very glad that everything has gone well so far.",
+  "band": "B2"
+ },
+ {
+  "q": "Me emociona que mi hija ya ___ (escribir) su primer cuento.",
+  "inf": "escribir",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya escrito",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "It thrills me that my daughter has already written her first story.",
+  "band": "B2"
+ },
+ {
+  "q": "Es una pena que ustedes todavía no ___ (visitar) el museo.",
+  "inf": "visitar",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan visitado",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "It's a pity that you still haven't visited the museum.",
+  "band": "B2"
+ },
+ {
+  "q": "Me asusta que el perro ya ___ (comer) chocolate.",
+  "inf": "comer",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya comido",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "It scares me that the dog has already eaten chocolate.",
+  "band": "B2"
+ },
+ {
+  "q": "Me alegra que mis primos ya ___ (volver) de su viaje.",
+  "inf": "volver",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan vuelto",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "I'm glad my cousins are already back from their trip.",
+  "band": "B2"
+ },
+ {
+  "q": "Nos encanta que ustedes ya ___ (decidir) casarse.",
+  "inf": "decidir",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan decidido",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "We love that you've already decided to get married.",
+  "band": "B2"
+ },
+ {
+  "q": "Me fastidia que Julián ya ___ (olvidar) las llaves dos veces esta semana.",
+  "inf": "olvidar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya olvidado",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "It annoys me that Julián has already forgotten his keys twice this week.",
+  "band": "B2"
+ },
+ {
+  "q": "Me alegra que tú ya ___ (probar) el sancocho de mi mamá.",
+  "inf": "probar",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas probado",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "I'm glad you've already tried my mom's sancocho.",
+  "band": "B2"
+ },
+ {
+  "q": "Temo que ya se me ___ (olvidar) cerrar el gas.",
+  "inf": "olvidar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya olvidado",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "I'm afraid I've already forgotten to turn off the gas.",
+  "band": "B2"
+ },
+ {
+  "q": "Me tranquiliza que tu mamá ya ___ (hablar) con el doctor.",
+  "inf": "hablar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya hablado",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "It reassures me that your mom has already talked to the doctor.",
+  "band": "B2"
+ },
+ {
+  "q": "No creo que Mariana ya ___ (salir) de la oficina.",
+  "inf": "salir",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya salido",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I don't think Mariana has left the office yet.",
+  "band": "B2"
+ },
+ {
+  "q": "Dudo que ellos ya ___ (llegar) al hotel.",
+  "inf": "llegar",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan llegado",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I doubt they have already arrived at the hotel.",
+  "band": "B2"
+ },
+ {
+  "q": "No creo que tú ya ___ (leer) todo el libro; te lo presté ayer.",
+  "inf": "leer",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas leído",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I don't think you have already read the whole book; I lent it to you yesterday.",
+  "band": "B2"
+ },
+ {
+  "q": "No es verdad que yo ___ (decir) eso, Pablo.",
+  "inf": "decir",
+  "tense": "perfsubj",
+  "person": "yo",
+  "answer": "haya dicho",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "It's not true that I said that, Pablo.",
+  "band": "B2"
+ },
+ {
+  "q": "Dudo que Ricardo ___ (ver) alguna vez una película en blanco y negro.",
+  "inf": "ver",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya visto",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I doubt Ricardo has ever seen a black and white movie.",
+  "band": "B2"
+ },
+ {
+  "q": "No creo que mis padres ya ___ (vender) la casa.",
+  "inf": "vender",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan vendido",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I don't think my parents have already sold the house.",
+  "band": "B2"
+ },
+ {
+  "q": "No pienso que el jefe ya ___ (revisar) tu informe.",
+  "inf": "revisar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya revisado",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I don't think the boss has already gone over your report.",
+  "band": "B2"
+ },
+ {
+  "q": "No creo que nadie ___ (abrir) esta puerta en años.",
+  "inf": "abrir",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya abierto",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I don't think anyone has opened this door in years.",
+  "band": "B2"
+ },
+ {
+  "q": "Dudo que ustedes ___ (escribir) tanto en una sola noche.",
+  "inf": "escribir",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan escrito",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I doubt you wrote that much in a single night.",
+  "band": "B2"
+ },
+ {
+  "q": "No creo que nosotros ___ (hacer) todo lo posible hasta ahora.",
+  "inf": "hacer",
+  "tense": "perfsubj",
+  "person": "nosotros",
+  "answer": "hayamos hecho",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I don't think we have done everything possible so far.",
+  "band": "B2"
+ },
+ {
+  "q": "No es posible que ya se ___ (acabar) la leche; la compré ayer.",
+  "inf": "acabar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya acabado",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "It's not possible that the milk has run out already; I bought it yesterday.",
+  "band": "B2"
+ },
+ {
+  "q": "Dudo que tú ya ___ (poner) la mesa; no oigo nada.",
+  "inf": "poner",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas puesto",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I doubt you've already set the table; I don't hear anything.",
+  "band": "B2"
+ },
+ {
+  "q": "No creo que el carro ya se ___ (dañar) otra vez.",
+  "inf": "dañarse",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya dañado",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I don't think the car has broken down again already.",
+  "band": "B2"
+ },
+ {
+  "q": "Dudo que Lucía ___ (preparar) todo esto sola.",
+  "inf": "preparar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya preparado",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I doubt Lucía has prepared all this by herself.",
+  "band": "B2"
+ },
+ {
+  "q": "No es cierto que mi hermano ya ___ (firmar) el contrato.",
+  "inf": "firmar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya firmado",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "It's not true that my brother has already signed the contract.",
+  "band": "B2"
+ },
+ {
+  "q": "No creo que ellos ya ___ (descubrir) quién fue.",
+  "inf": "descubrir",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan descubierto",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I don't think they have already found out who it was.",
+  "band": "B2"
+ },
+ {
+  "q": "Dudo que alguien ya ___ (cubrir) los gastos del viaje de junio.",
+  "inf": "cubrir",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya cubierto",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I doubt anyone has already covered the costs of the June trip.",
+  "band": "B2"
+ },
+ {
+  "q": "No creo que esa planta ya se ___ (morir); la regué ayer.",
+  "inf": "morir",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya muerto",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I don't think that plant has died already; I watered it yesterday.",
+  "band": "B2"
+ },
+ {
+  "q": "No es verdad que ustedes ya ___ (pagar) la matrícula.",
+  "inf": "pagar",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan pagado",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "It's not true that you have already paid the tuition.",
+  "band": "B2"
+ },
+ {
+  "q": "No creo que él alguna vez ___ (robar) nada.",
+  "inf": "robar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya robado",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I don't think he has ever stolen anything.",
+  "band": "B2"
+ },
+ {
+  "q": "Dudo que Daniela ya ___ (entregar) el trabajo; está en casa.",
+  "inf": "entregar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya entregado",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I doubt Daniela has already handed in the paper; she's at home.",
+  "band": "B2"
+ },
+ {
+  "q": "Hice todo mal ayer; no creo que yo ___ (entender) bien las instrucciones.",
+  "inf": "entender",
+  "tense": "perfsubj",
+  "person": "yo",
+  "answer": "haya entendido",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I did everything wrong yesterday; I don't think I understood the instructions well.",
+  "band": "B2"
+ },
+ {
+  "q": "No estoy segura de que mis papás ya ___ (comprar) los pasajes.",
+  "inf": "comprar",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan comprado",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I'm not sure my parents have already bought the tickets.",
+  "band": "B2"
+ },
+ {
+  "q": "No creo que el banco ya ___ (cerrar) la caja; son las tres.",
+  "inf": "cerrar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya cerrado",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I don't think the bank has already closed the till; it's three o'clock.",
+  "band": "B2"
+ },
+ {
+  "q": "No parece que alguien ya ___ (limpiar) la cocina.",
+  "inf": "limpiar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya limpiado",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "It doesn't look like anyone has cleaned the kitchen yet.",
+  "band": "B2"
+ },
+ {
+  "q": "Dudo que Tomás ___ (ahorrar) algo en toda su vida.",
+  "inf": "ahorrar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya ahorrado",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I doubt Tomás has saved anything in his whole life.",
+  "band": "B2"
+ },
+ {
+  "q": "Estoy segura de que ya llegó, pero no creo que ___ (ver) mi mensaje.",
+  "inf": "ver",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya visto",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Estoy segura de que va con indicativo; no creo que va con haya + participio.",
+  "why_en": "Estoy segura de que takes the indicative; no creo que takes haya + participle.",
+  "en": "I'm sure it's already arrived, but I don't think he has seen my message.",
+  "band": "B2"
+ },
+ {
+  "q": "No creo que hasta ahora nadie ___ (traducir) este libro al español.",
+  "inf": "traducir",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya traducido",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I don't think anyone has translated this book into Spanish so far.",
+  "band": "B2"
+ },
+ {
+  "q": "No es verdad que el tren ya ___ (salir).",
+  "inf": "salir",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya salido",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "It's not true that the train has already left.",
+  "band": "B2"
+ },
+ {
+  "q": "Dudo que tus primos ___ (viajar) alguna vez en avión.",
+  "inf": "viajar",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan viajado",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I doubt your cousins have ever flown on a plane.",
+  "band": "B2"
+ },
+ {
+  "q": "Es posible que se me ___ (perder) el celular en el bus.",
+  "inf": "perder",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya perdido",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's possible I lost my phone on the bus.",
+  "band": "B2"
+ },
+ {
+  "q": "Es probable que Ana ya ___ (regresar) a la casa.",
+  "inf": "regresar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya regresado",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's likely that Ana has already gotten back home.",
+  "band": "B2"
+ },
+ {
+  "q": "Puede que mis tíos ya ___ (recibir) mi invitación.",
+  "inf": "recibir",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan recibido",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "My aunt and uncle may have already received my invitation.",
+  "band": "B2"
+ },
+ {
+  "q": "Es increíble que ustedes ya ___ (terminar) todo el trabajo de la semana.",
+  "inf": "terminar",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan terminado",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's incredible that you have already finished all the week's work.",
+  "band": "B2"
+ },
+ {
+  "q": "Es una lástima que todavía no ___ (venir) a conocer mi casa nueva.",
+  "inf": "venir",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas venido",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's a shame you still haven't come to see my new house.",
+  "band": "B2"
+ },
+ {
+  "q": "Es raro que Mateo no ___ (decir) nada hasta ahora.",
+  "inf": "decir",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya dicho",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's strange that Mateo hasn't said anything so far.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando llegue el taxi, espero que tú ya ___ (hacer) la maleta.",
+  "inf": "hacer",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas hecho",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "\"Espero que ya\": esperar algo ya terminado pide haya + participio.",
+  "why_en": "\"Espero que ya\": hoping something is already done takes haya + participle.",
+  "en": "When the taxi comes, I hope you will have packed your suitcase.",
+  "band": "B2"
+ },
+ {
+  "q": "Es bueno que ya ___ (aprender) a manejar, Pablo.",
+  "inf": "aprender",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas aprendido",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's good that you've already learned to drive, Pablo.",
+  "band": "B2"
+ },
+ {
+  "q": "Es imposible que ellos ___ (ver) las noticias anoche; no había señal.",
+  "inf": "ver",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan visto",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "They can't have seen the news last night; there was no signal.",
+  "band": "B2"
+ },
+ {
+  "q": "Es extraño que el gerente todavía no ___ (responder) mi correo.",
+  "inf": "responder",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya respondido",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's odd that the manager still hasn't answered my email.",
+  "band": "B2"
+ },
+ {
+  "q": "Es probable que ya ___ (empezar) la película.",
+  "inf": "empezar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya empezado",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's likely that the movie has already started.",
+  "band": "B2"
+ },
+ {
+  "q": "Es normal que tu hermano ya se ___ (cansar) de esperar.",
+  "inf": "cansar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya cansado",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's normal that your brother has already gotten tired of waiting.",
+  "band": "B2"
+ },
+ {
+  "q": "Es fantástico que los científicos ya ___ (descubrir) una cura.",
+  "inf": "descubrir",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan descubierto",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's fantastic that scientists have already discovered a cure.",
+  "band": "B2"
+ },
+ {
+  "q": "Es una pena que Rosa nunca ___ (conocer) a su bisabuela; murió antes.",
+  "inf": "conocer",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya conocido",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio. También se oye hubiera conocido.",
+  "why_en": "An evaluation of something already done takes haya + participle. Hubiera conocido is also heard.",
+  "en": "It's a pity Rosa never met her great-grandmother; she died before.",
+  "band": "B2",
+  "also": [
+   "hubiera conocido"
+  ]
+ },
+ {
+  "q": "Es una suerte que nadie ___ (resultar) herido en el choque.",
+  "inf": "resultar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya resultado",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's lucky that nobody got hurt in the crash.",
+  "band": "B2"
+ },
+ {
+  "q": "Es posible que los vecinos ya ___ (vender) el apartamento.",
+  "inf": "vender",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan vendido",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's possible that the neighbors have already sold the apartment.",
+  "band": "B2"
+ },
+ {
+  "q": "Es sorprendente que nuestro equipo ___ (ganar) cuatro partidos seguidos.",
+  "inf": "ganar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya ganado",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's surprising that our team has won four games in a row.",
+  "band": "B2"
+ },
+ {
+  "q": "Es injusto que este mes ustedes ya ___ (trabajar) tres fines de semana.",
+  "inf": "trabajar",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan trabajado",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's unfair that this month you have already worked three weekends.",
+  "band": "B2"
+ },
+ {
+  "q": "Puede que nosotros ya ___ (cometer) un error con la cuenta.",
+  "inf": "cometer",
+  "tense": "perfsubj",
+  "person": "nosotros",
+  "answer": "hayamos cometido",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "We may have already made a mistake with the bill.",
+  "band": "B2"
+ },
+ {
+  "q": "Es increíble que yo ___ (olvidar) tu cumpleaños otra vez.",
+  "inf": "olvidar",
+  "tense": "perfsubj",
+  "person": "yo",
+  "answer": "haya olvidado",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's incredible that I forgot your birthday again.",
+  "band": "B2"
+ },
+ {
+  "q": "Es una vergüenza que el alcalde todavía no ___ (cumplir) su promesa.",
+  "inf": "cumplir",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya cumplido",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's shameful that the mayor still hasn't kept his promise.",
+  "band": "B2"
+ },
+ {
+  "q": "Es posible que ya se ___ (acabar) las entradas para el concierto.",
+  "inf": "acabar",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan acabado",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's possible that the concert tickets have already sold out.",
+  "band": "B2"
+ },
+ {
+  "q": "Es una buena señal que ya ___ (bajar) la fiebre.",
+  "inf": "bajar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya bajado",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's a good sign that the fever has already gone down.",
+  "band": "B2"
+ },
+ {
+  "q": "Es curioso que ninguno de ellos ___ (estudiar) el contrato completo.",
+  "inf": "estudiar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya estudiado",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's curious that none of them has studied the whole contract.",
+  "band": "B2"
+ },
+ {
+  "q": "Es increíble que hasta ahora nadie ___ (pedir) disculpas.",
+  "inf": "pedir",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya pedido",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's incredible that nobody has apologized so far.",
+  "band": "B2"
+ },
+ {
+  "q": "Escríbeme cuando ya ___ (entrar) al edificio, Valentina.",
+  "inf": "entrar",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas entrado",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio. También vale el presente de subjuntivo.",
+  "why_en": "An action that will be finished before another takes haya + participle. The present subjunctive also works.",
+  "en": "Text me when you've already gotten into the building, Valentina.",
+  "band": "B2",
+  "also": [
+   "entres"
+  ]
+ },
+ {
+  "q": "Cuando ya ___ (contestar) todas las preguntas, ven a verme, Sofía.",
+  "inf": "contestar",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas contestado",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio.",
+  "why_en": "An action that will be finished before another takes haya + participle.",
+  "en": "When you've answered all the questions, come see me, Sofía.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando ya ___ (firmar) todos el contrato, no habrá marcha atrás.",
+  "inf": "firmar",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan firmado",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio. También vale el presente de subjuntivo.",
+  "why_en": "An action that will be finished before another takes haya + participle. The present subjunctive also works.",
+  "en": "Once everyone has signed the contract, there's no going back.",
+  "band": "B2",
+  "also": [
+   "firmen"
+  ]
+ },
+ {
+  "q": "Cuando ya ___ (probar) los dos platos, me dices cuál prefieres.",
+  "inf": "probar",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas probado",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio. También vale el presente de subjuntivo.",
+  "why_en": "An action that will be finished before another takes haya + participle. The present subjunctive also works.",
+  "en": "When you've tried both dishes, tell me which one you prefer.",
+  "band": "B2",
+  "also": [
+   "pruebes"
+  ]
+ },
+ {
+  "q": "Después de que ya ___ (ver) la casa, decidimos si la compramos.",
+  "inf": "ver",
+  "tense": "perfsubj",
+  "person": "nosotros",
+  "answer": "hayamos visto",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio.",
+  "why_en": "An action that will be finished before another takes haya + participle.",
+  "en": "After we've seen the house, we'll decide whether to buy it.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando ya ___ (recoger) los platos, apagamos la luz.",
+  "inf": "recoger",
+  "tense": "perfsubj",
+  "person": "nosotros",
+  "answer": "hayamos recogido",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio.",
+  "why_en": "An action that will be finished before another takes haya + participle.",
+  "en": "When we've cleared the dishes, we'll turn off the light.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando ya ___ (comer) todos, sirvo el postre.",
+  "inf": "comer",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan comido",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio.",
+  "why_en": "An action that will be finished before another takes haya + participle.",
+  "en": "When everyone has eaten, I'll serve dessert.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando ya ___ (hablar) con tu jefe, dime qué te dijo.",
+  "inf": "hablar",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas hablado",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio.",
+  "why_en": "An action that will be finished before another takes haya + participle.",
+  "en": "When you've talked to your boss, tell me what he said.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando ya ___ (pagar) la deuda, empezaremos a ahorrar.",
+  "inf": "pagar",
+  "tense": "perfsubj",
+  "person": "nosotros",
+  "answer": "hayamos pagado",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio.",
+  "why_en": "An action that will be finished before another takes haya + participle.",
+  "en": "Once we've paid off the debt, we'll start saving.",
+  "band": "B2"
+ },
+ {
+  "q": "Después de que ya ___ (leer) el contrato, firmen donde está la X.",
+  "inf": "leer",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan leído",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio.",
+  "why_en": "An action that will be finished before another takes haya + participle.",
+  "en": "After you've read the contract, sign where the X is.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando mi hijo ya ___ (aprender) a leer, le compraré una biblioteca.",
+  "inf": "aprender",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya aprendido",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio.",
+  "why_en": "An action that will be finished before another takes haya + participle.",
+  "en": "Once my son has learned to read, I'll buy him a library.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando ya ___ (cubrir) los gastos, repartimos la ganancia.",
+  "inf": "cubrir",
+  "tense": "perfsubj",
+  "person": "nosotros",
+  "answer": "hayamos cubierto",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio.",
+  "why_en": "An action that will be finished before another takes haya + participle.",
+  "en": "Once we've covered the expenses, we'll split the profit.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando los técnicos ya ___ (instalar) la cocina, traeremos los muebles.",
+  "inf": "instalar",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan instalado",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio. También vale el presente de subjuntivo.",
+  "why_en": "An action that will be finished before another takes haya + participle. The present subjunctive also works.",
+  "en": "Once the technicians have installed the kitchen, we'll bring the furniture.",
+  "band": "B2",
+  "also": [
+   "instalen"
+  ]
+ },
+ {
+  "q": "En cuanto el doctor ya ___ (revisar) los resultados, te llamará.",
+  "inf": "revisar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya revisado",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio.",
+  "why_en": "An action that will be finished before another takes haya + participle.",
+  "en": "As soon as the doctor has gone over the results, he'll call you.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando ya me ___ (llegar) el sueldo, te pago lo que te debo.",
+  "inf": "llegar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya llegado",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio. También vale el presente de subjuntivo.",
+  "why_en": "An action that will be finished before another takes haya + participle. The present subjunctive also works.",
+  "en": "Once my salary has come in, I'll pay you what I owe you.",
+  "band": "B2",
+  "also": [
+   "llegue"
+  ]
+ },
+ {
+  "q": "No dejaremos la oficina hasta que ya ___ (enviar) todos los correos.",
+  "inf": "enviar",
+  "tense": "perfsubj",
+  "person": "nosotros",
+  "answer": "hayamos enviado",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio.",
+  "why_en": "An action that will be finished before another takes haya + participle.",
+  "en": "We won't leave the office until we have sent all the emails.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando ya ___ (volver) todos de vacaciones, hacemos la reunión.",
+  "inf": "volver",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan vuelto",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio.",
+  "why_en": "An action that will be finished before another takes haya + participle.",
+  "en": "Once everyone is back from vacation, we'll hold the meeting.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando ya ___ (escribir) tres páginas, puedes descansar un rato, hijo.",
+  "inf": "escribir",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas escrito",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio.",
+  "why_en": "An action that will be finished before another takes haya + participle.",
+  "en": "When you've written three pages, you can rest a while, son.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando ya ___ (poner) las decoraciones, llegan los invitados.",
+  "inf": "poner",
+  "tense": "perfsubj",
+  "person": "nosotros",
+  "answer": "hayamos puesto",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio.",
+  "why_en": "An action that will be finished before another takes haya + participle.",
+  "en": "By the time we've put up the decorations, the guests arrive.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando ya ___ (decir) todo lo que querías, me toca hablar a mí.",
+  "inf": "decir",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas dicho",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio.",
+  "why_en": "An action that will be finished before another takes haya + participle.",
+  "en": "When you've said everything you wanted, it's my turn to talk.",
+  "band": "B2"
+ },
+ {
+  "q": "Busco a alguien que ya ___ (trabajar) en un restaurante.",
+  "inf": "trabajar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya trabajado",
+  "use": "antecedente desconocido con experiencia previa: busco a alguien que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Un antecedente desconocido con experiencia previa pide haya + participio.",
+  "why_en": "An unknown antecedent with past experience takes haya + participle.",
+  "en": "I'm looking for someone who has already worked in a restaurant.",
+  "band": "B2"
+ },
+ {
+  "q": "Necesitamos una niñera que ya ___ (cuidar) bebés.",
+  "inf": "cuidar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya cuidado",
+  "use": "antecedente desconocido con experiencia previa: busco a alguien que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Un antecedente desconocido con experiencia previa pide haya + participio.",
+  "why_en": "An unknown antecedent with past experience takes haya + participle.",
+  "en": "We need a nanny who has already looked after babies.",
+  "band": "B2"
+ },
+ {
+  "q": "No hay nadie en la oficina que ___ (usar) este programa antes.",
+  "inf": "usar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya usado",
+  "use": "antecedente desconocido con experiencia previa: busco a alguien que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Un antecedente desconocido con experiencia previa pide haya + participio.",
+  "why_en": "An unknown antecedent with past experience takes haya + participle.",
+  "en": "There's no one in the office who has used this program before.",
+  "band": "B2"
+ },
+ {
+  "q": "¿Hay alguien aquí que ya ___ (leer) este libro?",
+  "inf": "leer",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya leído",
+  "use": "antecedente desconocido con experiencia previa: busco a alguien que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Un antecedente desconocido con experiencia previa pide haya + participio.",
+  "why_en": "An unknown antecedent with past experience takes haya + participle.",
+  "en": "Is there anyone here who has already read this book?",
+  "band": "B2"
+ },
+ {
+  "q": "Queremos un mecánico que ya ___ (trabajar) antes con carros eléctricos.",
+  "inf": "trabajar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya trabajado",
+  "use": "antecedente desconocido con experiencia previa: busco a alguien que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Un antecedente desconocido con experiencia previa pide haya + participio.",
+  "why_en": "An unknown antecedent with past experience takes haya + participle.",
+  "en": "We want a mechanic who has already worked with electric cars before.",
+  "band": "B2"
+ },
+ {
+  "q": "No conozco a nadie que alguna vez ___ (viajar) solo por Asia.",
+  "inf": "viajar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya viajado",
+  "use": "antecedente desconocido con experiencia previa: busco a alguien que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Un antecedente desconocido con experiencia previa pide haya + participio.",
+  "why_en": "An unknown antecedent with past experience takes haya + participle.",
+  "en": "I don't know anyone who has ever travelled alone around Asia.",
+  "band": "B2"
+ },
+ {
+  "q": "Busco un profesor que ___ (enseñar) inglés a adultos antes.",
+  "inf": "enseñar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya enseñado",
+  "use": "antecedente desconocido con experiencia previa: busco a alguien que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Un antecedente desconocido con experiencia previa pide haya + participio.",
+  "why_en": "An unknown antecedent with past experience takes haya + participle.",
+  "en": "I'm looking for a teacher who has taught English to adults before.",
+  "band": "B2"
+ },
+ {
+  "q": "Hasta ahora no hay un solo estudiante que ___ (entregar) la tarea completa.",
+  "inf": "entregar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya entregado",
+  "use": "antecedente desconocido con experiencia previa: busco a alguien que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Un antecedente desconocido con experiencia previa pide haya + participio.",
+  "why_en": "An unknown antecedent with past experience takes haya + participle.",
+  "en": "So far there isn't a single student who has handed in the full assignment.",
+  "band": "B2"
+ },
+ {
+  "q": "Necesito a alguien que ya ___ (hacer) este trámite en la notaría.",
+  "inf": "hacer",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya hecho",
+  "use": "antecedente desconocido con experiencia previa: busco a alguien que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Un antecedente desconocido con experiencia previa pide haya + participio.",
+  "why_en": "An unknown antecedent with past experience takes haya + participle.",
+  "en": "I need someone who has already done this procedure at the notary.",
+  "band": "B2"
+ },
+ {
+  "q": "Contrataremos a quien ya ___ (vivir) fuera del país.",
+  "inf": "vivir",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya vivido",
+  "use": "antecedente desconocido con experiencia previa: busco a alguien que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Un antecedente desconocido con experiencia previa pide haya + participio.",
+  "why_en": "An unknown antecedent with past experience takes haya + participle.",
+  "en": "We'll hire someone who has already lived abroad.",
+  "band": "B2"
+ },
+ {
+  "q": "Quiero que para el viernes ya ___ (entregar) el informe, Camilo.",
+  "inf": "entregar",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas entregado",
+  "use": "para / antes de + fecha límite: ya haya + participio",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Con ya y un plazo, el subjuntivo compuesto marca lo terminado.",
+  "why_en": "With ya and a deadline, the compound subjunctive marks what is finished.",
+  "en": "I want you to have handed in the report by Friday, Camilo.",
+  "band": "B2"
+ },
+ {
+  "q": "Dudo que para el lunes ya ___ (terminar) la obra.",
+  "inf": "terminar",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan terminado",
+  "use": "para / antes de + fecha límite: ya haya + participio",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Con ya y un plazo, el subjuntivo compuesto marca lo terminado.",
+  "why_en": "With ya and a deadline, the compound subjunctive marks what is finished.",
+  "en": "I doubt the construction will be finished by Monday.",
+  "band": "B2"
+ },
+ {
+  "q": "Mi papá espera que para diciembre yo ya ___ (pagar) la mitad de la deuda.",
+  "inf": "pagar",
+  "tense": "perfsubj",
+  "person": "yo",
+  "answer": "haya pagado",
+  "use": "para / antes de + fecha límite: ya haya + participio",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Con ya y un plazo, el subjuntivo compuesto marca lo terminado.",
+  "why_en": "With ya and a deadline, the compound subjunctive marks what is finished.",
+  "en": "My dad hopes that by December I will have paid half of the debt.",
+  "band": "B2"
+ },
+ {
+  "q": "Es necesario que para entonces los técnicos ya ___ (instalar) el sistema.",
+  "inf": "instalar",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan instalado",
+  "use": "para / antes de + fecha límite: ya haya + participio",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Con ya y un plazo, el subjuntivo compuesto marca lo terminado.",
+  "why_en": "With ya and a deadline, the compound subjunctive marks what is finished.",
+  "en": "It's necessary that the technicians have installed the system by then.",
+  "band": "B2"
+ },
+ {
+  "q": "Ojalá que para mañana ya ___ (pasar) el dolor de muela.",
+  "inf": "pasar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya pasado",
+  "use": "para / antes de + fecha límite: ya haya + participio",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Con ya y un plazo, el subjuntivo compuesto marca lo terminado.",
+  "why_en": "With ya and a deadline, the compound subjunctive marks what is finished.",
+  "en": "I hope the toothache is gone by tomorrow.",
+  "band": "B2"
+ },
+ {
+  "q": "No creo que para el sábado los albañiles ya ___ (arreglar) el techo.",
+  "inf": "arreglar",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan arreglado",
+  "use": "para / antes de + fecha límite: ya haya + participio",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Con ya y un plazo, el subjuntivo compuesto marca lo terminado.",
+  "why_en": "With ya and a deadline, the compound subjunctive marks what is finished.",
+  "en": "I don't think the masons will have fixed the roof by Saturday.",
+  "band": "B2"
+ },
+ {
+  "q": "Es posible que para entonces ya ___ (nacer) el bebé.",
+  "inf": "nacer",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya nacido",
+  "use": "para / antes de + fecha límite: ya haya + participio",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Con ya y un plazo, el subjuntivo compuesto marca lo terminado.",
+  "why_en": "With ya and a deadline, the compound subjunctive marks what is finished.",
+  "en": "It's possible that the baby will have been born by then.",
+  "band": "B2"
+ },
+ {
+  "q": "Queremos que para las ocho ya ___ (poner) la mesa, chicos.",
+  "inf": "poner",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan puesto",
+  "use": "para / antes de + fecha límite: ya haya + participio",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Con ya y un plazo, el subjuntivo compuesto marca lo terminado.",
+  "why_en": "With ya and a deadline, the compound subjunctive marks what is finished.",
+  "en": "We want you to have set the table by eight, kids.",
+  "band": "B2"
+ },
+ {
+  "q": "Necesito que, para cuando yo vuelva, ya ___ (lavar) los platos, hijo.",
+  "inf": "lavar",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas lavado",
+  "use": "para / antes de + fecha límite: ya haya + participio",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Con ya y un plazo, el subjuntivo compuesto marca lo terminado.",
+  "why_en": "With ya and a deadline, the compound subjunctive marks what is finished.",
+  "en": "I need the dishes washed by the time I get back, son.",
+  "band": "B2"
+ },
+ {
+  "q": "Dudo que para cuando lleguemos ya ___ (abrir) el museo.",
+  "inf": "abrir",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya abierto",
+  "use": "para / antes de + fecha límite: ya haya + participio",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Con ya y un plazo, el subjuntivo compuesto marca lo terminado.",
+  "why_en": "With ya and a deadline, the compound subjunctive marks what is finished.",
+  "en": "I doubt the museum will have opened by the time we get there.",
+  "band": "B2"
+ },
+ {
+  "q": "Espero que tú ya ___ (cenar) cuando yo llegue, amor.",
+  "inf": "cenar",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas cenado",
+  "use": "esperar que + pretérito perfecto de subjuntivo: acción ya completada",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Con ya, esperar que pide haya + participio: lo hecho.",
+  "why_en": "With ya, esperar que takes haya + participle: what is already done.",
+  "en": "I hope you've already had dinner by the time I get there, love.",
+  "band": "B2"
+ },
+ {
+  "q": "Esperamos que ustedes ya ___ (decidir) cuál casa comprar para entonces.",
+  "inf": "decidir",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan decidido",
+  "use": "esperar que + pretérito perfecto de subjuntivo: acción ya completada",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Con ya, esperar que pide haya + participio: lo hecho.",
+  "why_en": "With ya, esperar que takes haya + participle: what is already done.",
+  "en": "We hope you will have decided which house to buy by then.",
+  "band": "B2"
+ },
+ {
+  "q": "Esta semana no creo que yo ___ (dormir) ni diez horas hasta ahora.",
+  "inf": "dormir",
+  "tense": "perfsubj",
+  "person": "yo",
+  "answer": "haya dormido",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "This week I don't think I have slept even ten hours so far.",
+  "band": "B2",
+  "drop": true
+ },
+ {
+  "q": "Dudo que nosotros ya ___ (recibir) la respuesta del banco.",
+  "inf": "recibir",
+  "tense": "perfsubj",
+  "person": "nosotros",
+  "answer": "hayamos recibido",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I doubt we have already received the bank's answer.",
+  "band": "B2"
+ },
+ {
+  "q": "No creo que tú alguna vez ___ (probar) algo tan picante.",
+  "inf": "probar",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas probado",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I don't think you've ever tried anything so spicy.",
+  "band": "B2"
+ },
+ {
+  "q": "No creo que Ricardo ya ___ (cargar) el celular; sigue apagado.",
+  "inf": "cargar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya cargado",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I don't think Ricardo has charged his phone yet; it's still off.",
+  "band": "B2"
+ },
+ {
+  "q": "No creo que ustedes ya ___ (cumplir) con todos los requisitos.",
+  "inf": "cumplir",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan cumplido",
+  "use": "duda o negación sobre algo ya hecho: no creo que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Dudar de algo ya hecho pide haya + participio.",
+  "why_en": "Doubting something already done takes haya + participle.",
+  "en": "I don't think you have already met all the requirements.",
+  "band": "B2"
+ },
+ {
+  "q": "Es fundamental que la junta ya ___ (aprobar) el presupuesto antes de la reunión.",
+  "inf": "aprobar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya aprobado",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's essential that the board has approved the budget before the meeting.",
+  "band": "B2"
+ },
+ {
+  "q": "Es posible que yo ya ___ (oír) esa canción, pero no me acuerdo.",
+  "inf": "oír",
+  "tense": "perfsubj",
+  "person": "yo",
+  "answer": "haya oído",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's possible I've already heard that song, but I don't remember.",
+  "band": "B2"
+ },
+ {
+  "q": "Es probable que nosotros ya ___ (perder) el último bus.",
+  "inf": "perder",
+  "tense": "perfsubj",
+  "person": "nosotros",
+  "answer": "hayamos perdido",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's likely that we've already missed the last bus.",
+  "band": "B2"
+ },
+ {
+  "q": "Es una suerte que tú ___ (encontrar) trabajo tan rápido.",
+  "inf": "encontrar",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas encontrado",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's lucky that you found a job so quickly.",
+  "band": "B2"
+ },
+ {
+  "q": "Es extraño que la profesora no ___ (corregir) los exámenes todavía.",
+  "inf": "corregir",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya corregido",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's odd that the teacher hasn't graded the exams yet.",
+  "band": "B2"
+ },
+ {
+  "q": "Es lamentable que tantos jóvenes ya ___ (abandonar) sus estudios.",
+  "inf": "abandonar",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan abandonado",
+  "use": "valoración o posibilidad sobre algo ya hecho: es posible que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una valoración sobre algo ya hecho pide haya + participio.",
+  "why_en": "An evaluation of something already done takes haya + participle.",
+  "en": "It's regrettable that so many young people have already dropped out.",
+  "band": "B2"
+ },
+ {
+  "q": "Me da orgullo que mis alumnos ___ (crecer) tanto este año.",
+  "inf": "crecer",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan crecido",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "It makes me proud that my students have grown so much this year.",
+  "band": "B2"
+ },
+ {
+  "q": "Qué alivio que ya ___ (cobrar) tu primer sueldo, Julián.",
+  "inf": "cobrar",
+  "tense": "perfsubj",
+  "person": "tú",
+  "answer": "hayas cobrado",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "What a relief that you've already collected your first paycheck, Julián.",
+  "band": "B2"
+ },
+ {
+  "q": "Me encanta que nosotros ___ (conocer) a tanta gente nueva este mes.",
+  "inf": "conocer",
+  "tense": "perfsubj",
+  "person": "nosotros",
+  "answer": "hayamos conocido",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "I love that we've met so many new people this month.",
+  "band": "B2"
+ },
+ {
+  "q": "Me da pena que tantos negocios ya ___ (cerrar) en este barrio.",
+  "inf": "cerrar",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan cerrado",
+  "use": "emoción ante algo ya hecho: me alegra que hayas...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una emoción ante algo ya hecho pide haya + participio.",
+  "why_en": "An emotion about something already done takes haya + participle.",
+  "en": "It saddens me that so many businesses have already closed in this neighborhood.",
+  "band": "B2"
+ },
+ {
+  "q": "Busco una amiga que ya ___ (sufrir) un divorcio.",
+  "inf": "sufrir",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya sufrido",
+  "use": "antecedente desconocido con experiencia previa: busco a alguien que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Un antecedente desconocido con experiencia previa pide haya + participio.",
+  "why_en": "An unknown antecedent with past experience takes haya + participle.",
+  "en": "I'm looking for a friend who has already been through a divorce.",
+  "band": "B2"
+ },
+ {
+  "q": "No hay nadie aquí que alguna vez ___ (montar) a caballo.",
+  "inf": "montar",
+  "tense": "perfsubj",
+  "person": "él/ella",
+  "answer": "haya montado",
+  "use": "antecedente desconocido con experiencia previa: busco a alguien que haya...",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Un antecedente desconocido con experiencia previa pide haya + participio.",
+  "why_en": "An unknown antecedent with past experience takes haya + participle.",
+  "en": "There's no one here who has ever ridden a horse.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando ya ___ (cenar) los niños, los acostamos.",
+  "inf": "cenar",
+  "tense": "perfsubj",
+  "person": "ellos",
+  "answer": "hayan cenado",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio.",
+  "why_en": "An action that will be finished before another takes haya + participle.",
+  "en": "Once the kids have had dinner, we'll put them to bed.",
+  "band": "B2"
+ },
+ {
+  "q": "Cuando ya ___ (guardar) todo en el baúl, nos vamos.",
+  "inf": "guardar",
+  "tense": "perfsubj",
+  "person": "nosotros",
+  "answer": "hayamos guardado",
+  "use": "cuando / en cuanto / después de que + haya + participio: futuro completado",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Una acción que estará terminada antes de otra pide haya + participio.",
+  "why_en": "An action that will be finished before another takes haya + participle.",
+  "en": "Once we've put everything in the trunk, we'll go.",
+  "band": "B2"
+ },
+ {
+  "q": "Ojalá que para mi cumpleaños yo ya ___ (ahorrar) para el viaje.",
+  "inf": "ahorrar",
+  "tense": "perfsubj",
+  "person": "yo",
+  "answer": "haya ahorrado",
+  "use": "para / antes de + fecha límite: ya haya + participio",
+  "confuse": [
+   "perfecto",
+   "presubj",
+   "pluscsubj"
+  ],
+  "why_es": "Con ya y un plazo, el subjuntivo compuesto marca lo terminado.",
+  "why_en": "With ya and a deadline, the compound subjunctive marks what is finished.",
+  "en": "I hope that by my birthday I will have saved up for the trip.",
+  "band": "B2"
+ }
+]

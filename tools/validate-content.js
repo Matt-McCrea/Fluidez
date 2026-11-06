@@ -941,7 +941,7 @@ function checkProbes(l, tag) {
    * corpus for the lessons, so loading a second copy of it would cost 2.2 MB
    * to save a walk it can afford. js/arcade.js is that build's boot. Both are
    * checked below against the arcade's own page and worker instead. */
-  const ARCADE_ONLY = new Set(['data/game-index.js', 'data/word-rank.js', 'js/arcade.js', 'js/study.js']);
+  const ARCADE_ONLY = new Set(['data/game-index.js', 'data/word-rank.js', 'data/verb-gaps.js', 'data/phrases.js', 'js/arcade.js', 'js/study.js']);
 
   /* The two whole-corpus files are SOURCES, not page scripts: node tools and
    * the content gate read them, tools/split-data.ts cuts them into
@@ -1061,6 +1061,28 @@ function checkProbes(l, tag) {
          'data/word-rank.js is stale — the vocabulary, graph, verbs or tools/freq changed. ' +
          'Run: node tools/build-frequency.js');
     } catch (e) { ok(false, 'could not check data/word-rank.js: ' + e.message); }
+
+    /* The Verbos sentence bank is compiled from tools/verbgaps/raw/*.json. */
+    ok(aHtml && aHtml.indexOf('../data/verb-gaps.js') !== -1 && aHtml.indexOf('../data/verb-gaps.js') < aHtml.indexOf('../js/gameitems.js'),
+       'juegos/index.html must load ../data/verb-gaps.js before ../js/gameitems.js');
+    try {
+      const out = require('child_process').spawnSync(process.execPath,
+        [path.join(__dirname, 'build-verb-gaps.js'), '--check'], { encoding: 'utf8' });
+      ok(out.status === 0,
+         'data/verb-gaps.js is stale — tools/verbgaps/raw or judged.json changed. ' +
+         'Run: node tools/build-verb-gaps.js');
+    } catch (e) { ok(false, 'could not check data/verb-gaps.js: ' + e.message); }
+
+    /* The Frases bank is compiled from tools/phrases/phrases.json. */
+    ok(aHtml && aHtml.indexOf('../data/phrases.js') !== -1 && aHtml.indexOf('../data/phrases.js') < aHtml.indexOf('../js/gameitems.js'),
+       'juegos/index.html must load ../data/phrases.js before ../js/gameitems.js');
+    try {
+      const out = require('child_process').spawnSync(process.execPath,
+        [path.join(__dirname, 'build-phrases.js'), '--check'], { encoding: 'utf8' });
+      ok(out.status === 0,
+         'data/phrases.js is stale — tools/phrases/phrases.json changed. ' +
+         'Run: node tools/build-phrases.js');
+    } catch (e) { ok(false, 'could not check data/phrases.js: ' + e.message); }
   }
 
   /* The profiles were renamed from beginner/standard/refresher to A1-C1, and
@@ -1159,7 +1181,7 @@ function checkProbes(l, tag) {
   });
   /* Computed names (window.BANK_ + band) end in an underscore and are injected by band; GAME_INDEX belongs to the
    * arcade page (juegos/), which loads data/game-index.js itself, and gameitems.js falls back without it. */
-  const OPTIONAL = new Set(['GAME_INDEX', 'WORD_RANK']);
+  const OPTIONAL = new Set(['GAME_INDEX', 'WORD_RANK', 'VERB_GAPS', 'PHRASES']);
   for (const [name, from] of reads) {
     if (/_$/.test(name) || OPTIONAL.has(name)) continue;
     const def = new RegExp('(?:window\\.|^|[\\s;,(])' + name + '\\s*=(?!=)|window\\[[^\\]]*\\]\\s*=', 'm');

@@ -1,0 +1,157 @@
+#T1
+Hola, ¿cómo vas?|Hi, how's it going?|Buenas, ¿cómo vas?|basicas|A1
+¿Cómo estás?|How are you?|¿Cómo está usted?|basicas|A1|Add (formal) in the English to ask for the usted form.
+Buenos días|Good morning||basicas|A1
+Buenas tardes|Good afternoon||basicas|A1
+Buenas noches|Good evening or good night||basicas|A1
+Hasta luego|See you later|Nos vemos|basicas|A1
+Hasta mañana|See you tomorrow||basicas|A1
+Chao, cuídate|Bye, take care|Adiós, cuídate|basicas|A1
+Mucho gusto|Nice to meet you|Encantado de conocerte;Encantada de conocerte|basicas|A1
+Gracias, amigo|Thanks, buddy|Gracias, amiga|basicas|A1
+Muchas gracias|Thank you very much|Mil gracias|basicas|A1
+De nada|You're welcome|Con gusto|basicas|A1|Con gusto is the very common Colombian reply to thanks.
+Por favor|Please||basicas|A1
+Perdón, señor|Sorry, sir|Disculpa, señor|basicas|A1
+Con permiso|Excuse me, may I pass|Con su permiso|basicas|A1|Said when squeezing past someone or entering a room.
+Disculpe, señora|Excuse me, ma'am|Perdone, señora|basicas|A1
+Sí, claro|Yes, of course|Sí, por supuesto|basicas|A1
+No, gracias|No, thank you||basicas|A1
+No sé|I don't know||basicas|A1
+No entiendo|I don't understand||basicas|A1
+Está bien|It's fine|Todo bien|basicas|A1
+Estoy bien|I'm fine|Estoy bien, gracias|basicas|A1
+Más o menos|So so||basicas|A1
+Me llamo Ana|My name is Ana|Mi nombre es Ana|identidad|A1
+¿Cómo te llamas?|What's your name?|¿Cómo se llama usted?|identidad|A1
+¿De dónde eres?|Where are you from?|¿De dónde es usted?|identidad|A1
+Soy de Colombia|I'm from Colombia||identidad|A1
+Soy de Estados Unidos|I'm from the United States||identidad|A1
+Hablo un poco de español|I speak a little Spanish||identidad|A1
+¿Hablas inglés?|Do you speak English?|¿Habla inglés?|identidad|A1
+¿Cuántos años tienes?|How old are you?|¿Cuántos años tiene?|identidad|A1
+Tengo treinta años|I'm thirty years old||identidad|A1
+¿Qué haces?|What are you doing?|¿Qué hace?|basicas|A1
+¿Qué más?|What's up?|¿Qué hubo?|basicas|A1|The standard casual Colombian greeting, like "what's new".
+¿Y tú?|And you?|¿Y usted?|basicas|A1
+Todo bien|All good||basicas|A1
+Igualmente, gracias|Likewise, thanks|Igual, gracias|basicas|A1
+Bienvenido a casa|Welcome home (to a man)|Bienvenida a casa|basicas|A1
+Buen provecho|Enjoy your meal||alimentacion|A1
+¡Salud, amigos!|Cheers, everyone!||alimentacion|A1
+Feliz cumpleaños|Happy birthday||relaciones|A1
+Feliz Navidad|Merry Christmas||relaciones|A1
+Buen viaje|Have a good trip||viajes|A1
+Que te vaya bien|Hope it goes well for you|Que le vaya bien|basicas|A2
+Cuídate mucho|Take care|Cuídese mucho|basicas|A2
+¿Cómo dijo?|Sorry, what did you say?|¿Cómo dices?;¿Qué dijiste?|basicas|A1
+Otra vez, por favor|Again, please||basicas|A1
+Más despacio, por favor|Slower, please||basicas|A1
+¿Puedes repetir?|Can you repeat that?|¿Puede repetir?|basicas|A1
+¿Qué significa eso?|What does that mean?||basicas|A1
+¿Cómo se dice "table" en español?|How do you say "table" in Spanish?||basicas|A1
+No hablo muy bien|I don't speak very well||basicas|A1
+Estoy aprendiendo español|I'm learning Spanish||educacion|A1
+Necesito ayuda|I need help||basicas|A1
+¿Me puede ayudar?|Can you help me?|¿Me ayudas?|basicas|A1
+Un momento, por favor|One moment, please||basicas|A1
+Espere un momento|Wait a moment (formal)|Espera un momento|basicas|A1
+Claro que sí|Of course|Por supuesto|basicas|A1
+Ya estoy listo|I'm ready (said by a man)|Ya estoy lista|basicas|A1|Very common in Colombia for "ok, done, ready".
+Dale, listo|Okay, sounds good||basicas|A2|Common in Colombia to agree to a plan.
+Tienes razón|You're right|Tiene razón|basicas|A2
+Estoy de acuerdo|I agree||basicas|A2
+No estoy de acuerdo|I disagree||basicas|A2
+Tal vez sí|Maybe so|Quizás sí;Quizá sí|basicas|A1
+Yo también|Me too||basicas|A1
+Yo tampoco|Me neither||basicas|A2
+¡Qué bueno!|How great!|¡Qué bien!|basicas|A1
+¡Qué lástima!|What a pity!|¡Qué pesar!|basicas|A2
+¡Qué rico!|How delicious!|¡Qué delicia!|alimentacion|A1
+¡Qué bonito!|How nice!|¡Qué lindo!|basicas|A1
+¡Qué susto!|What a scare!||basicas|A2
+¡Qué pena!|How embarrassing, I'm sorry|¡Qué vergüenza!|basicas|A2|Qué pena in Colombia often means "sorry" or "how embarrassing".
+¡Muchas felicitaciones!|Congratulations!|¡Muchas felicidades!|basicas|A1
+¡Ten cuidado!|Be careful!|¡Tenga cuidado!|basicas|A1
+¡Ayúdeme, por favor!|Help me, please!|¡Auxilio, por favor!|basicas|A1
+¡Qué increíble!|How incredible!||basicas|A1
+¡Qué perfecto!|How perfect!||basicas|A1
+¡Qué sorpresa!|What a surprise!||basicas|A1
+Estoy cansado|I'm tired (said by a man)|Estoy cansada|caracter|A1
+Tengo hambre|I'm hungry||alimentacion|A1
+Tengo sed|I'm thirsty||alimentacion|A1
+Tengo sueño|I'm sleepy||cuerpo|A1
+Tengo frío|I'm cold||cuerpo|A1
+Tengo calor|I'm hot||cuerpo|A1
+Estoy feliz|I'm happy||caracter|A1
+Estoy triste|I'm sad||caracter|A1
+Estoy enfermo|I'm sick (said by a man)|Estoy enferma|salud|A1
+Estoy ocupado|I'm busy (said by a man)|Estoy ocupada|trabajo|A1
+Estoy perdido|I'm lost (said by a man)|Estoy perdida|viajes|A1
+¿Dónde está el baño?|Where is the bathroom?|¿Dónde queda el baño?|servicios|A1
+¿Dónde estamos?|Where are we?||viajes|A1
+¿Dónde vives?|Where do you live?|¿Dónde vive usted?|vivienda|A1
+Vivo en Bogotá|I live in Bogotá||vivienda|A1
+¿Qué hora es?|What time is it?||ocio|A1
+Son las tres|It's three o'clock||ocio|A1
+Es la una|It's one o'clock||ocio|A1
+¿A qué hora?|At what time?||ocio|A1
+¿Cuánto cuesta?|How much does it cost?|¿Cuánto vale?;¿Cuánto cuesta esto?|compras|A1
+¿Cuánto es?|How much is it?|¿Cuánto le debo?|compras|A1
+Es muy caro|It's very expensive||compras|A1
+Es barato|It's cheap||compras|A1
+Quiero esto|I want this||compras|A1
+Quiero agua|I want water||alimentacion|A1
+Un café, por favor|A coffee, please||alimentacion|A1
+Un tinto, por favor|A black coffee, please||alimentacion|A1|Tinto is the Colombian word for a small black coffee.
+Agua, por favor|Water, please||alimentacion|A1
+La cuenta, por favor|The check, please||alimentacion|A1
+Tengo una pregunta|I have a question||educacion|A1
+¿Qué es esto?|What is this?||basicas|A1
+¿Quién es?|Who is it?||basicas|A1
+¿Por qué?|Why?||basicas|A1
+¿Cuándo es?|When is it?||basicas|A1
+¿Cuánto tiempo?|How long?||basicas|A1
+¿Cuál prefieres?|Which one do you prefer?|¿Cuál prefiere?|basicas|A2
+¿Qué quieres?|What do you want?|¿Qué quiere?|basicas|A1
+¿Cómo te fue?|How did it go?|¿Cómo le fue?|basicas|A2
+¿Qué pasó?|What happened?||basicas|A1
+¿Qué te pasa?|What's wrong with you?|¿Qué le pasa?|basicas|A2
+¿Estás listo?|Are you ready? (to a man)|¿Estás lista?|basicas|A1
+¿Puedo entrar?|May I come in?||basicas|A1
+¿Puedo pasar?|May I come through?||basicas|A1
+Adelante, por favor|Go ahead, please||basicas|A1
+Pase, por favor|Come in, please (formal)|Siga, por favor|basicas|A1|Siga is very common in Colombia for "come in".
+Siéntate, por favor|Sit down, please|Siéntese, por favor|basicas|A1
+Gracias por todo|Thanks for everything||basicas|A2
+Gracias por venir|Thanks for coming||basicas|A2
+Lo siento mucho|I'm very sorry||basicas|A2
+No hay problema|No problem||basicas|A1
+No pasa nada|It's okay, don't worry||basicas|A2
+Quédate tranquilo|Stay calm (to a man)|Quédate tranquila|basicas|A2
+Tengo que irme|I have to go||basicas|A2
+Nos vemos mañana|See you tomorrow, then||basicas|A1
+Que descanses|Have a good rest|Que descanse|basicas|A2
+Que tengas un buen día|Have a good day|Que tenga un buen día|basicas|A2
+Que te mejores|Get well soon|Que se mejore|salud|A2
+Estoy en casa|I'm at home||vivienda|A1
+Estoy en el trabajo|I'm at work||trabajo|A1
+Voy al trabajo|I'm going to work||trabajo|A1
+Voy a casa|I'm going home||vivienda|A1
+Soy estudiante|I'm a student||educacion|A1
+Trabajo en una oficina|I work in an office||trabajo|A1
+Tengo dos hermanos|I have two brothers||relaciones|A1
+Es mi amigo|He is my friend|Es mi amiga|relaciones|A1
+Esta es mi familia|This is my family||relaciones|A1
+Te quiero|I love you (to family or friends)|Te amo|relaciones|A1
+Te extraño|I miss you|Te echo de menos|relaciones|A2
+Me gusta mucho|I like it a lot||basicas|A1
+No me gusta|I don't like it||basicas|A1
+Me encanta|I love it||basicas|A1
+Está muy rico|It's very tasty||alimentacion|A1
+Hace calor|It's hot out||naturaleza|A1
+Hace frío|It's cold out||naturaleza|A1
+Está lloviendo|It's raining||naturaleza|A1
+Hoy hace sol|It's sunny today||naturaleza|A1
+Es lunes|It's Monday||ocio|A1
+Hoy es viernes|Today is Friday||ocio|A1

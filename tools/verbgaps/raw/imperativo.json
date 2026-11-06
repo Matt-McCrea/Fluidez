@@ -1,0 +1,2573 @@
+[
+ {
+  "q": "Camilo, ___ (cerrar) la puerta, por favor.",
+  "inf": "cerrar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "cierra",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Camilo, close the door, please.",
+  "band": "A1"
+ },
+ {
+  "q": "Sofía, ___ (venir) aquí un momento.",
+  "inf": "venir",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "ven",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Sofía, come here a moment.",
+  "band": "A2"
+ },
+ {
+  "q": "Mateo, ___ (hacer) tu tarea antes de jugar.",
+  "inf": "hacer",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "haz",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Mateo, do your homework before playing.",
+  "band": "A2"
+ },
+ {
+  "q": "Lucas, ___ (decir) la verdad, ¿qué pasó?",
+  "inf": "decir",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "di",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Lucas, tell the truth, what happened?",
+  "band": "A2"
+ },
+ {
+  "q": "Valentina, ___ (poner) la mesa, que ya vamos a comer.",
+  "inf": "poner",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "pon",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Valentina, set the table, we're about to eat.",
+  "band": "A2"
+ },
+ {
+  "q": "Pedro, ___ (salir) de la cocina, por favor.",
+  "inf": "salir",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "sal",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Pedro, get out of the kitchen, please.",
+  "band": "A2"
+ },
+ {
+  "q": "Juan, ___ (ser) amable con tu hermana.",
+  "inf": "ser",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "sé",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Juan, be kind to your sister.",
+  "band": "A2"
+ },
+ {
+  "q": "Hijo, ___ (ir) a tu cuarto y ordénalo.",
+  "inf": "ir",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "ve",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Son, go to your room and tidy it up.",
+  "band": "A2"
+ },
+ {
+  "q": "Laura, ___ (tener) paciencia, ya casi llegamos.",
+  "inf": "tener",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "ten",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Laura, be patient, we're almost there.",
+  "band": "A2"
+ },
+ {
+  "q": "Andrés, ___ (abrir) la ventana, que hace calor.",
+  "inf": "abrir",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "abre",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Andrés, open the window, it's hot.",
+  "band": "A1"
+ },
+ {
+  "q": "Carolina, ___ (escuchar) bien las instrucciones.",
+  "inf": "escuchar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "escucha",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Carolina, listen carefully to the instructions.",
+  "band": "A1"
+ },
+ {
+  "q": "Daniel, ___ (llamar) a tu abuela hoy.",
+  "inf": "llamar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "llama",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Daniel, call your grandmother today.",
+  "band": "A1"
+ },
+ {
+  "q": "Hija, ___ (comer) un poco más de sopa.",
+  "inf": "comer",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "come",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Daughter, eat a little more soup.",
+  "band": "A1"
+ },
+ {
+  "q": "Sara, ___ (leer) el primer párrafo en voz alta.",
+  "inf": "leer",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "lee",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Sara, read the first paragraph out loud.",
+  "band": "A1"
+ },
+ {
+  "q": "Tomás, ___ (esperar) aquí, ya vuelvo.",
+  "inf": "esperar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "espera",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Tomás, wait here, I'll be right back.",
+  "band": "A1"
+ },
+ {
+  "q": "Julián, ___ (apagar) el televisor, ya es tarde.",
+  "inf": "apagar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "apaga",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Julián, turn off the TV, it's late.",
+  "band": "A1"
+ },
+ {
+  "q": "Ana, ___ (tomar) un poco de agua.",
+  "inf": "tomar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "toma",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Ana, drink some water.",
+  "band": "A1"
+ },
+ {
+  "q": "Felipe, ___ (mirar) esto, qué increíble.",
+  "inf": "mirar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "mira",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Felipe, look at this, how incredible.",
+  "band": "A1"
+ },
+ {
+  "q": "Luisa, ___ (pagar) la cuenta, que yo no traje plata.",
+  "inf": "pagar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "paga",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Luisa, pay the bill, I didn't bring any money.",
+  "band": "A1"
+ },
+ {
+  "q": "Nicolás, ___ (traer) tu cargador, por favor; el celular de tu prima se apagó.",
+  "inf": "traer",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "trae",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Nicolás, bring your charger, please; your cousin's phone died.",
+  "band": "A2"
+ },
+ {
+  "q": "Clara, ___ (ayudar) a tu papá con las bolsas.",
+  "inf": "ayudar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "ayuda",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Clara, help your dad with the bags.",
+  "band": "A1"
+ },
+ {
+  "q": "David, ___ (subir) y dile a tu hermano que baje.",
+  "inf": "subir",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "sube",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "David, go up and tell your brother to come down.",
+  "band": "A1"
+ },
+ {
+  "q": "Marta, ___ (escribir) tu nombre aquí.",
+  "inf": "escribir",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "escribe",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Marta, write your name here.",
+  "band": "A1"
+ },
+ {
+  "q": "Pablo, ___ (traer) el computador cuando vengas.",
+  "inf": "traer",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "trae",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Pablo, bring the computer when you come.",
+  "band": "A2"
+ },
+ {
+  "q": "Gabriela, ___ (abrazar) a tu tía, que ya se va.",
+  "inf": "abrazar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "abraza",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Gabriela, give your aunt a hug.",
+  "band": "A2"
+ },
+ {
+  "q": "Santiago, ___ (levantar) la mano si tienes preguntas.",
+  "inf": "levantar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "levanta",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Santiago, raise your hand if you have questions.",
+  "band": "A2"
+ },
+ {
+  "q": "Diana, ___ (cantar) con nosotros esta canción.",
+  "inf": "cantar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "canta",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Diana, sing this song with us.",
+  "band": "A1"
+ },
+ {
+  "q": "Sebastián, ___ (usar) el casco cuando andes en bicicleta.",
+  "inf": "usar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "usa",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Sebastián, wear your helmet when you ride your bike.",
+  "band": "A2"
+ },
+ {
+  "q": "Lucía, ___ (cuidar) a tu hermanito mientras salgo.",
+  "inf": "cuidar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "cuida",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Lucía, look after your little brother while I'm out.",
+  "band": "A2"
+ },
+ {
+  "q": "Hermano, ___ (seguir) derecho hasta la esquina y gira.",
+  "inf": "seguir",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "sigue",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Brother, keep going straight to the corner and turn.",
+  "band": "A2"
+ },
+ {
+  "q": "Carlos, ___ (probar) esta salsa, está deliciosa.",
+  "inf": "probar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "prueba",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Carlos, try this sauce, it's delicious.",
+  "band": "A2"
+ },
+ {
+  "q": "Elena, ___ (volver) temprano, que mañana madrugamos.",
+  "inf": "volver",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "vuelve",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Elena, come back early, we're getting up early tomorrow.",
+  "band": "A2"
+ },
+ {
+  "q": "Mi vida, ___ (dormir) un rato, estás agotada.",
+  "inf": "dormir",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "duerme",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "My dear, sleep a while, you're exhausted.",
+  "band": "A2"
+ },
+ {
+  "q": "Miguel, ___ (pedir) la cuenta, por favor.",
+  "inf": "pedir",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "pide",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Miguel, ask for the bill, please.",
+  "band": "A2"
+ },
+ {
+  "q": "Paula, ___ (mover) tu bolso, que no cabe aquí.",
+  "inf": "mover",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "mueve",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Paula, move your bag, it doesn't fit here.",
+  "band": "A2"
+ },
+ {
+  "q": "Jorge, ___ (correr) o perderás el bus.",
+  "inf": "correr",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "corre",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Jorge, run or you'll miss the bus.",
+  "band": "A1"
+ },
+ {
+  "q": "Isabel, ___ (empezar) por el primer ejercicio.",
+  "inf": "empezar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "empieza",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Isabel, start with the first exercise.",
+  "band": "A2"
+ },
+ {
+  "q": "Rafael, ___ (manejar) despacio, por favor.",
+  "inf": "manejar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "maneja",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Rafael, drive slowly, please.",
+  "band": "A2"
+ },
+ {
+  "q": "Catalina, ___ (cortar) las cebollas en cubitos.",
+  "inf": "cortar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "corta",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Catalina, cut the onions into small cubes.",
+  "band": "A1"
+ },
+ {
+  "q": "Óscar, ___ (guardar) esto en tu mochila.",
+  "inf": "guardar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "guarda",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Óscar, put this away in your backpack.",
+  "band": "A1"
+ },
+ {
+  "q": "Valeria, ___ (enviar) el mensaje antes de las cinco.",
+  "inf": "enviar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "envía",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Valeria, send the message before five.",
+  "band": "A2"
+ },
+ {
+  "q": "Alejandro, ___ (recordar) llamar al doctor.",
+  "inf": "recordar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "recuerda",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Alejandro, remember to call the doctor.",
+  "band": "A2"
+ },
+ {
+  "q": "Mariana, ___ (cambiar) de canal, esto es aburrido.",
+  "inf": "cambiar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "cambia",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Mariana, change the channel, this is boring.",
+  "band": "A1"
+ },
+ {
+  "q": "Esteban, ___ (jugar) afuera, que aquí molestas.",
+  "inf": "jugar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "juega",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Esteban, play outside, you're a nuisance in here.",
+  "band": "A1"
+ },
+ {
+  "q": "Natalia, ___ (preguntar) en recepción si hay habitación.",
+  "inf": "preguntar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "pregunta",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Natalia, ask at reception if there's a room.",
+  "band": "A2"
+ },
+ {
+  "q": "Fernando, ___ (preparar) el café, ya voy.",
+  "inf": "preparar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "prepara",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Fernando, make the coffee, I'm coming.",
+  "band": "A1"
+ },
+ {
+  "q": "Teresa, ___ (sentar) al niño en su silla.",
+  "inf": "sentar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "sienta",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Teresa, sit the boy in his chair.",
+  "band": "A2"
+ },
+ {
+  "q": "Cariño, ___ (limpiar) tu cuarto antes de salir.",
+  "inf": "limpiar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "limpia",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Sweetie, clean your room before going out.",
+  "band": "A1"
+ },
+ {
+  "q": "Roberto, ___ (comprar) pan cuando pases por la tienda.",
+  "inf": "comprar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "compra",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Roberto, buy bread when you pass by the store.",
+  "band": "A1"
+ },
+ {
+  "q": "Paola, ___ (perdonar) a tu hermano, fue sin querer.",
+  "inf": "perdonar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "perdona",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Paola, forgive your brother, it was an accident.",
+  "band": "A2"
+ },
+ {
+  "q": "Eduardo, ___ (mostrar) tus fotos del viaje.",
+  "inf": "mostrar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "muestra",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Eduardo, show us your trip photos.",
+  "band": "A2"
+ },
+ {
+  "q": "Camila, ___ (explicar) cómo funciona esto, por favor.",
+  "inf": "explicar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "explica",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Camila, explain how this works, please.",
+  "band": "A2"
+ },
+ {
+  "q": "Sergio, ___ (aprender) a decir que no.",
+  "inf": "aprender",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "aprende",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Sergio, learn to say no.",
+  "band": "A2"
+ },
+ {
+  "q": "Juliana, ___ (encender) la luz, no veo nada.",
+  "inf": "encender",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "enciende",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Juliana, turn on the light, I can't see anything.",
+  "band": "A2"
+ },
+ {
+  "q": "Armando, ___ (devolver) el libro a la biblioteca.",
+  "inf": "devolver",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "devuelve",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Armando, return the book to the library.",
+  "band": "A2"
+ },
+ {
+  "q": "Rosa, ___ (decidir) ya, que el restaurante cierra.",
+  "inf": "decidir",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "decide",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Rosa, decide now, the restaurant is closing.",
+  "band": "A2"
+ },
+ {
+  "q": "Manuel, ___ (contar) hasta diez y respira.",
+  "inf": "contar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "cuenta",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Manuel, count to ten and breathe.",
+  "band": "A2"
+ },
+ {
+  "q": "Alicia, ___ (dejar) las llaves en la mesa para no perderlas.",
+  "inf": "dejar",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "deja",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Alicia, leave the keys on the table so we don't lose them.",
+  "band": "A1"
+ },
+ {
+  "q": "Ricardo, ___ (servir) café para todos, por favor.",
+  "inf": "servir",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "sirve",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Ricardo, serve coffee for everybody, please.",
+  "band": "A2"
+ },
+ {
+  "q": "Camila, ___ (poner) esto en la nevera, que se daña.",
+  "inf": "poner",
+  "tense": "imperativo",
+  "person": "tú",
+  "answer": "pon",
+  "use": "imperativo de tú: instrucciones y pedidos",
+  "confuse": [
+   "presente",
+   "presubj",
+   "impneg"
+  ],
+  "why_es": "Hablas a un tú por su nombre: el imperativo de tú es la forma corta.",
+  "why_en": "You address a tú by name: the tú command is the short form.",
+  "en": "Camila, put this in the fridge, it will spoil.",
+  "band": "A2"
+ },
+ {
+  "q": "Señor Ramírez, ___ (firmar) aquí, por favor.",
+  "inf": "firmar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "firme",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Mr. Ramírez, sign here, please.",
+  "band": "A2"
+ },
+ {
+  "q": "Señora, ___ (tomar) asiento, ya la atienden.",
+  "inf": "tomar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "tome",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Ma'am, have a seat, they'll be with you shortly.",
+  "band": "A1"
+ },
+ {
+  "q": "Doctora, ___ (explicar) con calma qué debo hacer.",
+  "inf": "explicar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "explique",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Doctor, please explain calmly what I should do.",
+  "band": "A2"
+ },
+ {
+  "q": "Don Alberto, ___ (venir) a comer con nosotros.",
+  "inf": "venir",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "venga",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Don Alberto, come eat with us.",
+  "band": "A2"
+ },
+ {
+  "q": "Profesor, ___ (repetir) la pregunta, por favor.",
+  "inf": "repetir",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "repita",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Professor, repeat the question, please.",
+  "band": "A2"
+ },
+ {
+  "q": "Señor, ___ (seguir) derecho dos cuadras y gire a la izquierda.",
+  "inf": "seguir",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "siga",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Sir, keep straight for two blocks and turn left.",
+  "band": "A2"
+ },
+ {
+  "q": "Doña Rosa, ___ (tener) cuidado con el escalón.",
+  "inf": "tener",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "tenga",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Doña Rosa, mind the step.",
+  "band": "A2"
+ },
+ {
+  "q": "Señora Gómez, ___ (esperar) un momento, ya la atiendo.",
+  "inf": "esperar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "espere",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Mrs. Gómez, wait a moment, I'll be right with you.",
+  "band": "A1"
+ },
+ {
+  "q": "Joven, ___ (ser) amable y mueva su carro.",
+  "inf": "ser",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "sea",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Young man, be kind and move your car.",
+  "band": "A2"
+ },
+ {
+  "q": "Señor, ___ (entregar) su cédula en la ventanilla.",
+  "inf": "entregar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "entregue",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Sir, hand in your ID at the window.",
+  "band": "A2"
+ },
+ {
+  "q": "Doctor Pérez, ___ (ayudar) a mi mamá, por favor.",
+  "inf": "ayudar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "ayude",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Doctor Pérez, help my mom, please.",
+  "band": "A2"
+ },
+ {
+  "q": "Señora, ___ (poner) sus cosas en la bandeja.",
+  "inf": "poner",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "ponga",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Ma'am, put your things on the tray.",
+  "band": "A2"
+ },
+ {
+  "q": "Señor Torres, ___ (leer) este documento antes de firmar.",
+  "inf": "leer",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "lea",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Mr. Torres, read this document before signing.",
+  "band": "A1"
+ },
+ {
+  "q": "Doña Marta, ___ (ir) con cuidado, la calle está mojada.",
+  "inf": "ir",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "vaya",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Doña Marta, go carefully, the street is wet.",
+  "band": "A2"
+ },
+ {
+  "q": "Señor conductor, ___ (parar) en la próxima, por favor.",
+  "inf": "parar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "pare",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Driver, stop at the next one, please.",
+  "band": "A1"
+ },
+ {
+  "q": "Licenciado, ___ (escribir) su nombre completo aquí.",
+  "inf": "escribir",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "escriba",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Sir, write your full name here.",
+  "band": "A1"
+ },
+ {
+  "q": "Señora, ___ (pasar) por aquí, su mesa está lista.",
+  "inf": "pasar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "pase",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Ma'am, come this way, your table is ready.",
+  "band": "A1"
+ },
+ {
+  "q": "Don Jorge, ___ (llamar) a mi hijo si se le ofrece algo.",
+  "inf": "llamar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "llame",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Don Jorge, call my son if you need anything.",
+  "band": "A1"
+ },
+ {
+  "q": "Señorita, ___ (traer) la cuenta, por favor.",
+  "inf": "traer",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "traiga",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Miss, bring the bill, please.",
+  "band": "A2"
+ },
+ {
+  "q": "Señor Vargas, ___ (hacer) la fila como todos.",
+  "inf": "hacer",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "haga",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Mr. Vargas, get in line like everybody else.",
+  "band": "A2"
+ },
+ {
+  "q": "Doctora Ruiz, ___ (salir) por esta puerta.",
+  "inf": "salir",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "salga",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Dr. Ruiz, go out through this door.",
+  "band": "A2"
+ },
+ {
+  "q": "Señor, ___ (mostrar) su boleto al entrar.",
+  "inf": "mostrar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "muestre",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Sir, show your ticket when you enter.",
+  "band": "A2"
+ },
+ {
+  "q": "Profesora, ___ (explicar) otra vez el ejercicio.",
+  "inf": "explicar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "explique",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Professor, explain the exercise again.",
+  "band": "A2"
+ },
+ {
+  "q": "Señora Luz, ___ (probar) este pastel, lo hice hoy.",
+  "inf": "probar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "pruebe",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Mrs. Luz, try this cake, I made it today.",
+  "band": "A2"
+ },
+ {
+  "q": "Joven, ___ (bajar) la música, por favor.",
+  "inf": "bajar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "baje",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Young man, turn the music down, please.",
+  "band": "A1"
+ },
+ {
+  "q": "Don Hernán, ___ (cuidar) su espalda y no cargue eso.",
+  "inf": "cuidar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "cuide",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Don Hernán, take care of your back and don't carry that.",
+  "band": "A2"
+ },
+ {
+  "q": "Señor Díaz, ___ (pagar) en caja, por favor.",
+  "inf": "pagar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "pague",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Mr. Díaz, pay at the register, please.",
+  "band": "A1"
+ },
+ {
+  "q": "Señora, ___ (disculpar) la demora, por favor.",
+  "inf": "disculpar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "disculpe",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Ma'am, please excuse the delay.",
+  "band": "A2"
+ },
+ {
+  "q": "Doctor, ___ (recetar) algo para el dolor, por favor.",
+  "inf": "recetar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "recete",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Doctor, prescribe something for the pain, please.",
+  "band": "A2"
+ },
+ {
+  "q": "Señor, ___ (guardar) su celular durante la clase.",
+  "inf": "guardar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "guarde",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Sir, put your phone away during class.",
+  "band": "A1"
+ },
+ {
+  "q": "Señora Ana, ___ (mantener) la calma, estamos aquí para ayudarla.",
+  "inf": "mantener",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "mantenga",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Mrs. Ana, keep calm, we're here to help you.",
+  "band": "A2"
+ },
+ {
+  "q": "Para la sopa, señora, primero ___ (cortar) las papas en cubos.",
+  "inf": "cortar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "corte",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "For the soup, ma'am, first cut the potatoes into cubes.",
+  "band": "A1"
+ },
+ {
+  "q": "Señor, ___ (visitar) el centro histórico, es hermoso.",
+  "inf": "visitar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "visite",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Sir, visit the historic center, it's beautiful.",
+  "band": "A1"
+ },
+ {
+  "q": "Doña Carmen, ___ (cerrar) la puerta con llave.",
+  "inf": "cerrar",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "cierre",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Doña Carmen, lock the door.",
+  "band": "A1"
+ },
+ {
+  "q": "Señor Salazar, ___ (dormir) bien y tome mucha agua.",
+  "inf": "dormir",
+  "tense": "imperativo",
+  "person": "usted",
+  "answer": "duerma",
+  "use": "imperativo de usted: instrucciones y pedidos formales",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un usted (señor, señora): el imperativo toma la forma de usted.",
+  "why_en": "You address an usted (señor, señora): the command uses the usted form.",
+  "en": "Mr. Salazar, sleep well and drink plenty of water.",
+  "band": "A2"
+ },
+ {
+  "q": "Chicos, ___ (abrir) sus libros en la página diez.",
+  "inf": "abrir",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "abran",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Kids, open your books to page ten.",
+  "band": "A1"
+ },
+ {
+  "q": "Niños, ___ (lavar) los platos antes de salir a jugar.",
+  "inf": "lavar",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "laven",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Kids, wash the dishes before going out to play.",
+  "band": "A1"
+ },
+ {
+  "q": "Muchachos, ___ (venir) a cenar, ya está lista la comida.",
+  "inf": "venir",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "vengan",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Guys, come have dinner, the food is ready.",
+  "band": "A2"
+ },
+ {
+  "q": "Señores, ___ (tomar) asiento, por favor.",
+  "inf": "tomar",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "tomen",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Gentlemen, take a seat, please.",
+  "band": "A1"
+ },
+ {
+  "q": "Chicos, ___ (ser) buenos con su abuela.",
+  "inf": "ser",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "sean",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Kids, be good to your grandmother.",
+  "band": "A2"
+ },
+ {
+  "q": "Niños, ___ (hacer) silencio, el bebé duerme.",
+  "inf": "hacer",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "hagan",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Kids, be quiet, the baby is sleeping.",
+  "band": "A2"
+ },
+ {
+  "q": "Muchachos, ___ (poner) sus maletas aquí.",
+  "inf": "poner",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "pongan",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Guys, put your suitcases here.",
+  "band": "A2"
+ },
+ {
+  "q": "Estudiantes, ___ (leer) el capítulo tres para el lunes.",
+  "inf": "leer",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "lean",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Students, read chapter three for Monday.",
+  "band": "A1"
+ },
+ {
+  "q": "Niños, ___ (ir) a dormir, ya es muy tarde.",
+  "inf": "ir",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "vayan",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Kids, go to sleep, it's very late.",
+  "band": "A2"
+ },
+ {
+  "q": "Chicos, ___ (decir) la verdad, ¿quién rompió el vidrio?",
+  "inf": "decir",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "digan",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Kids, tell the truth, who broke the glass?",
+  "band": "A2"
+ },
+ {
+  "q": "Señores pasajeros, ___ (guardar) sus maletas debajo del asiento.",
+  "inf": "guardar",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "guarden",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Passengers, store your bags under the seat.",
+  "band": "A2"
+ },
+ {
+  "q": "Ustedes dos, ___ (esperar) aquí mientras busco las llaves.",
+  "inf": "esperar",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "esperen",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "You two, wait here while I look for the keys.",
+  "band": "A1"
+ },
+ {
+  "q": "Niños, ___ (guardar) los juguetes antes de acostarse.",
+  "inf": "guardar",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "guarden",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Kids, put your toys away before going to bed.",
+  "band": "A1"
+ },
+ {
+  "q": "Chicos, ___ (escuchar) con mucha atención, por favor.",
+  "inf": "escuchar",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "escuchen",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Kids, listen very carefully, please.",
+  "band": "A1"
+ },
+ {
+  "q": "Muchachos, ___ (salir) de la piscina, que va a llover.",
+  "inf": "salir",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "salgan",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Guys, get out of the pool, it's going to rain.",
+  "band": "A2"
+ },
+ {
+  "q": "Amigos, ___ (probar) este sancocho, está buenísimo.",
+  "inf": "probar",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "prueben",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Friends, try this sancocho, it's delicious.",
+  "band": "A2"
+ },
+ {
+  "q": "Niños, ___ (tener) cuidado con la estufa caliente.",
+  "inf": "tener",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "tengan",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Kids, be careful with the hot stove.",
+  "band": "A2"
+ },
+ {
+  "q": "Chicos, ___ (contestar) las preguntas en silencio.",
+  "inf": "contestar",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "contesten",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Kids, answer the questions in silence.",
+  "band": "A2"
+ },
+ {
+  "q": "Ustedes, ___ (seguir) esa calle hasta el parque.",
+  "inf": "seguir",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "sigan",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "You all, follow that street to the park.",
+  "band": "A2"
+ },
+ {
+  "q": "Niños, ___ (saludar) a la señora con respeto.",
+  "inf": "saludar",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "saluden",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Kids, greet the lady respectfully.",
+  "band": "A2"
+ },
+ {
+  "q": "Muchachos, ___ (recoger) sus cosas, ya cerramos.",
+  "inf": "recoger",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "recojan",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Guys, pick up your things, we're closing.",
+  "band": "A2"
+ },
+ {
+  "q": "Estudiantes, ___ (escribir) un párrafo corto sobre su familia.",
+  "inf": "escribir",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "escriban",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Students, write a short paragraph about your family.",
+  "band": "A1"
+ },
+ {
+  "q": "Señores, ___ (pasar) por este lado, por favor.",
+  "inf": "pasar",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "pasen",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Gentlemen, come through this side, please.",
+  "band": "A1"
+ },
+ {
+  "q": "Chicos, ___ (jugar) en el patio, no en la sala.",
+  "inf": "jugar",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "jueguen",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Kids, play in the yard, not in the living room.",
+  "band": "A1"
+ },
+ {
+  "q": "Niños, ___ (bajar) rápido, ya llegó el bus.",
+  "inf": "bajar",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "bajen",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Kids, come down fast, the bus is here.",
+  "band": "A1"
+ },
+ {
+  "q": "Ustedes, ___ (llevar) paraguas, dicen que llueve.",
+  "inf": "llevar",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "lleven",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "You all, take umbrellas, they say it will rain.",
+  "band": "A2"
+ },
+ {
+  "q": "Hijos, ___ (cuidar) a su hermanita mientras no estoy.",
+  "inf": "cuidar",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "cuiden",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Kids, look after your little sister while I'm gone.",
+  "band": "A2"
+ },
+ {
+  "q": "Chicos, ___ (cantar) conmigo el cumpleaños feliz.",
+  "inf": "cantar",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "canten",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Kids, sing happy birthday with me.",
+  "band": "A1"
+ },
+ {
+  "q": "Muchachos, ___ (empezar) sin mí, voy a llegar tarde.",
+  "inf": "empezar",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "empiecen",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Guys, start without me, I'm going to be late.",
+  "band": "A2"
+ },
+ {
+  "q": "Niños, ___ (comer) todo, que mañana hay colegio.",
+  "inf": "comer",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "coman",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Kids, eat everything, there's school tomorrow.",
+  "band": "A1"
+ },
+ {
+  "q": "Señores, ___ (firmar) cada hoja del contrato.",
+  "inf": "firmar",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "firmen",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Gentlemen, sign each page of the contract.",
+  "band": "A2"
+ },
+ {
+  "q": "Chicos, ___ (mover) esas sillas hacia la pared.",
+  "inf": "mover",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "muevan",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Kids, move those chairs toward the wall.",
+  "band": "A2"
+ },
+ {
+  "q": "Ustedes, ___ (mirar) esta foto, ¡mi abuelo con veinte años!",
+  "inf": "mirar",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "miren",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "You all, look at this photo, my grandpa at twenty!",
+  "band": "A1"
+ },
+ {
+  "q": "Niños, ___ (traer) sus cuadernos mañana.",
+  "inf": "traer",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "traigan",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Kids, bring your notebooks tomorrow.",
+  "band": "A2"
+ },
+ {
+  "q": "Amigas, ___ (disfrutar) la fiesta, se lo merecen.",
+  "inf": "disfrutar",
+  "tense": "imperativo",
+  "person": "ustedes",
+  "answer": "disfruten",
+  "use": "imperativo de ustedes: instrucciones a un grupo",
+  "confuse": [
+   "presente",
+   "futuro",
+   "impneg"
+  ],
+  "why_es": "Hablas a un grupo (chicos, ustedes): el imperativo toma la forma de ustedes.",
+  "why_en": "You address a group (chicos, ustedes): the command uses the ustedes form.",
+  "en": "Girls, enjoy the party, you deserve it.",
+  "band": "A1"
+ },
+ {
+  "q": "Vamos, ___ (salir) ya, que se hace tarde.",
+  "inf": "salir",
+  "tense": "imperativo",
+  "person": "nosotros",
+  "answer": "salgamos",
+  "use": "imperativo de nosotros: sugerencia o invitación",
+  "confuse": [
+   "presente",
+   "futuro",
+   "condicional"
+  ],
+  "why_es": "Una invitación a hacer algo juntos usa el imperativo de nosotros.",
+  "why_en": "An invitation to do something together uses the nosotros command.",
+  "en": "Come on, let's leave now, it's getting late.",
+  "band": "B1"
+ },
+ {
+  "q": "Mejor ___ (esperar) aquí hasta que pare la lluvia, ¿no crees?",
+  "inf": "esperar",
+  "tense": "imperativo",
+  "person": "nosotros",
+  "answer": "esperemos",
+  "use": "imperativo de nosotros: sugerencia o invitación",
+  "confuse": [
+   "presente",
+   "futuro",
+   "condicional"
+  ],
+  "why_es": "Invitar a hacer algo juntos: imperativo de nosotros; en Colombia también el presente.",
+  "why_en": "Inviting others to do something together: nosotros command; the present is also heard.",
+  "en": "Better let's wait here until the rain stops, don't you think?",
+  "band": "B1",
+  "also": [
+   "esperamos"
+  ]
+ },
+ {
+  "q": "¡Ánimo, equipo! ___ (jugar) con todo hoy.",
+  "inf": "jugar",
+  "tense": "imperativo",
+  "person": "nosotros",
+  "answer": "juguemos",
+  "use": "imperativo de nosotros: sugerencia o invitación",
+  "confuse": [
+   "presente",
+   "futuro",
+   "condicional"
+  ],
+  "why_es": "Una invitación a hacer algo juntos usa el imperativo de nosotros.",
+  "why_en": "An invitation to do something together uses the nosotros command.",
+  "en": "Come on, team! Let's play with everything we have today.",
+  "band": "B1"
+ },
+ {
+  "q": "Chicos, ___ (empezar) la clase, ya son las ocho.",
+  "inf": "empezar",
+  "tense": "imperativo",
+  "person": "nosotros",
+  "answer": "empecemos",
+  "use": "imperativo de nosotros: sugerencia o invitación",
+  "confuse": [
+   "presente",
+   "condicional",
+   "impneg"
+  ],
+  "why_es": "Invitar a hacer algo juntos: imperativo de nosotros; en Colombia también el presente.",
+  "why_en": "Inviting others to do something together: nosotros command; the present is also heard.",
+  "en": "Kids, let's start class, it's already eight.",
+  "band": "B1",
+  "also": [
+   "empezamos"
+  ]
+ },
+ {
+  "q": "Ya basta de gritos, ___ (hablar) con calma.",
+  "inf": "hablar",
+  "tense": "imperativo",
+  "person": "nosotros",
+  "answer": "hablemos",
+  "use": "imperativo de nosotros: sugerencia o invitación",
+  "confuse": [
+   "presente",
+   "futuro",
+   "condicional"
+  ],
+  "why_es": "Una invitación a hacer algo juntos usa el imperativo de nosotros.",
+  "why_en": "An invitation to do something together uses the nosotros command.",
+  "en": "Enough shouting, let's talk calmly.",
+  "band": "B1"
+ },
+ {
+  "q": "No hay prisa, ___ (comer) tranquilos y luego pagamos.",
+  "inf": "comer",
+  "tense": "imperativo",
+  "person": "nosotros",
+  "answer": "comamos",
+  "use": "imperativo de nosotros: sugerencia o invitación",
+  "confuse": [
+   "presente",
+   "condicional",
+   "impneg"
+  ],
+  "why_es": "Invitar a hacer algo juntos: imperativo de nosotros; en Colombia también el presente.",
+  "why_en": "Inviting others to do something together: nosotros command; the present is also heard.",
+  "en": "There's no rush, let's eat calmly and pay afterwards.",
+  "band": "B1",
+  "also": [
+   "comemos"
+  ]
+ },
+ {
+  "q": "Sofía, ___ (ver) esta película juntas este sábado, ¿sí?",
+  "inf": "ver",
+  "tense": "imperativo",
+  "person": "nosotros",
+  "answer": "veamos",
+  "use": "imperativo de nosotros: sugerencia o invitación",
+  "confuse": [
+   "presente",
+   "condicional",
+   "impneg"
+  ],
+  "why_es": "Invitar a hacer algo juntos: imperativo de nosotros; en Colombia también el presente.",
+  "why_en": "Inviting others to do something together: nosotros command; the present is also heard.",
+  "en": "Sofía, let's watch this movie together this Saturday, okay?",
+  "band": "B1",
+  "also": [
+   "vemos"
+  ]
+ },
+ {
+  "q": "Mamá, ___ (hacer) una torta para el cumpleaños de papá.",
+  "inf": "hacer",
+  "tense": "imperativo",
+  "person": "nosotros",
+  "answer": "hagamos",
+  "use": "imperativo de nosotros: sugerencia o invitación",
+  "confuse": [
+   "presente",
+   "futuro",
+   "condicional"
+  ],
+  "why_es": "Una invitación a hacer algo juntos usa el imperativo de nosotros.",
+  "why_en": "An invitation to do something together uses the nosotros command.",
+  "en": "Mom, let's make a cake for Dad's birthday.",
+  "band": "B1"
+ },
+ {
+  "q": "Esta casa es de todos; ___ (mantener) limpia la casa entre todos.",
+  "inf": "mantener",
+  "tense": "imperativo",
+  "person": "nosotros",
+  "answer": "mantengamos",
+  "use": "imperativo de nosotros: sugerencia o invitación",
+  "confuse": [
+   "presente",
+   "futuro",
+   "condicional"
+  ],
+  "why_es": "Una invitación a hacer algo juntos usa el imperativo de nosotros.",
+  "why_en": "An invitation to do something together uses the nosotros command.",
+  "en": "It belongs to all of us, so let's keep the house clean together.",
+  "band": "B1"
+ },
+ {
+  "q": "Hace mucho calor, ___ (abrir) las ventanas.",
+  "inf": "abrir",
+  "tense": "imperativo",
+  "person": "nosotros",
+  "answer": "abramos",
+  "use": "imperativo de nosotros: sugerencia o invitación",
+  "confuse": [
+   "presente",
+   "futuro",
+   "condicional"
+  ],
+  "why_es": "Una invitación a hacer algo juntos usa el imperativo de nosotros.",
+  "why_en": "An invitation to do something together uses the nosotros command.",
+  "en": "It's very hot, let's open the windows.",
+  "band": "B1"
+ },
+ {
+  "q": "Estamos perdidos, ___ (buscar) a alguien que sepa cómo llegar.",
+  "inf": "buscar",
+  "tense": "imperativo",
+  "person": "nosotros",
+  "answer": "busquemos",
+  "use": "imperativo de nosotros: sugerencia o invitación",
+  "confuse": [
+   "presente",
+   "futuro",
+   "condicional"
+  ],
+  "why_es": "Una invitación a hacer algo juntos usa el imperativo de nosotros.",
+  "why_en": "An invitation to do something together uses the nosotros command.",
+  "en": "We're lost, let's find someone who knows how to get there.",
+  "band": "B1"
+ },
+ {
+  "q": "Niños, ___ (leer) un cuento antes de dormir.",
+  "inf": "leer",
+  "tense": "imperativo",
+  "person": "nosotros",
+  "answer": "leamos",
+  "use": "imperativo de nosotros: sugerencia o invitación",
+  "confuse": [
+   "presente",
+   "futuro",
+   "condicional"
+  ],
+  "why_es": "Una invitación a hacer algo juntos usa el imperativo de nosotros.",
+  "why_en": "An invitation to do something together uses the nosotros command.",
+  "en": "Kids, let's read a story before bed.",
+  "band": "B1"
+ },
+ {
+  "q": "Ya comimos, ___ (pagar) la cuenta y nos vamos.",
+  "inf": "pagar",
+  "tense": "imperativo",
+  "person": "nosotros",
+  "answer": "paguemos",
+  "use": "imperativo de nosotros: sugerencia o invitación",
+  "confuse": [
+   "presente",
+   "condicional",
+   "impneg"
+  ],
+  "why_es": "Invitar a hacer algo juntos: imperativo de nosotros; en Colombia también el presente.",
+  "why_en": "Inviting others to do something together: nosotros command; the present is also heard.",
+  "en": "We've eaten, so let's pay the bill and go.",
+  "band": "B1",
+  "also": [
+   "pagamos"
+  ]
+ },
+ {
+  "q": "Tenemos ahorros: ___ (viajar) en vacaciones y no lo pensemos más.",
+  "inf": "viajar",
+  "tense": "imperativo",
+  "person": "nosotros",
+  "answer": "viajemos",
+  "use": "imperativo de nosotros: sugerencia o invitación",
+  "confuse": [
+   "presente",
+   "futuro",
+   "condicional"
+  ],
+  "why_es": "Invitar a hacer algo juntos: imperativo de nosotros; en Colombia también el presente.",
+  "why_en": "Inviting others to do something together: nosotros command; the present is also heard.",
+  "en": "We have savings: let's travel on holiday and stop thinking about it.",
+  "band": "B1",
+  "also": [
+   "viajamos"
+  ]
+ },
+ {
+  "q": "Es una oportunidad única, ___ (aprovechar) cada minuto.",
+  "inf": "aprovechar",
+  "tense": "imperativo",
+  "person": "nosotros",
+  "answer": "aprovechemos",
+  "use": "imperativo de nosotros: sugerencia o invitación",
+  "confuse": [
+   "presente",
+   "futuro",
+   "condicional"
+  ],
+  "why_es": "Una invitación a hacer algo juntos usa el imperativo de nosotros.",
+  "why_en": "An invitation to do something together uses the nosotros command.",
+  "en": "It's a unique opportunity, let's make the most of every minute.",
+  "band": "B1"
+ },
+ {
+  "q": "Antes de decidir, ___ (pensar) bien las opciones.",
+  "inf": "pensar",
+  "tense": "imperativo",
+  "person": "nosotros",
+  "answer": "pensemos",
+  "use": "imperativo de nosotros: sugerencia o invitación",
+  "confuse": [
+   "presente",
+   "futuro",
+   "condicional"
+  ],
+  "why_es": "Una invitación a hacer algo juntos usa el imperativo de nosotros.",
+  "why_en": "An invitation to do something together uses the nosotros command.",
+  "en": "Before deciding, let's think the options through.",
+  "band": "B1"
+ },
+ {
+  "q": "Está muy oscuro, ___ (encender) las luces.",
+  "inf": "encender",
+  "tense": "imperativo",
+  "person": "nosotros",
+  "answer": "encendamos",
+  "use": "imperativo de nosotros: sugerencia o invitación",
+  "confuse": [
+   "presente",
+   "futuro",
+   "condicional"
+  ],
+  "why_es": "Una invitación a hacer algo juntos usa el imperativo de nosotros.",
+  "why_en": "An invitation to do something together uses the nosotros command.",
+  "en": "It's very dark, let's turn on the lights.",
+  "band": "B1"
+ },
+ {
+  "q": "Mi amor, ___ (celebrar) esta noche, nos lo merecemos.",
+  "inf": "celebrar",
+  "tense": "imperativo",
+  "person": "nosotros",
+  "answer": "celebremos",
+  "use": "imperativo de nosotros: sugerencia o invitación",
+  "confuse": [
+   "presente",
+   "futuro",
+   "condicional"
+  ],
+  "why_es": "Una invitación a hacer algo juntos usa el imperativo de nosotros.",
+  "why_en": "An invitation to do something together uses the nosotros command.",
+  "en": "My love, let's celebrate tonight, we deserve it.",
+  "band": "B1"
+ },
+ {
+  "q": "Todos juntos, ___ (cantar) el himno con orgullo.",
+  "inf": "cantar",
+  "tense": "imperativo",
+  "person": "nosotros",
+  "answer": "cantemos",
+  "use": "imperativo de nosotros: sugerencia o invitación",
+  "confuse": [
+   "presente",
+   "futuro",
+   "condicional"
+  ],
+  "why_es": "Una invitación a hacer algo juntos usa el imperativo de nosotros.",
+  "why_en": "An invitation to do something together uses the nosotros command.",
+  "en": "All together, let's sing the anthem with pride.",
+  "band": "B1"
+ },
+ {
+  "q": "Ya vimos todo el museo y estoy cansada; ___ (volver) al hotel, ¿sí?",
+  "inf": "volver",
+  "tense": "imperativo",
+  "person": "nosotros",
+  "answer": "volvamos",
+  "use": "imperativo de nosotros: sugerencia o invitación",
+  "confuse": [
+   "presente",
+   "condicional",
+   "impneg"
+  ],
+  "why_es": "Invitar a hacer algo juntos: imperativo de nosotros; en Colombia también el presente.",
+  "why_en": "Inviting others to do something together: nosotros command; the present is also heard.",
+  "en": "We have seen the whole museum and I am tired; let's go back to the hotel, OK?",
+  "band": "B1",
+  "also": [
+   "volvemos"
+  ]
+ }
+]

@@ -1,0 +1,139 @@
+#T3
+Me duele la espalda|My back hurts||cuerpo|A2
+Me torcí el tobillo|I twisted my ankle||cuerpo|B1
+Me corté el dedo|I cut my finger||cuerpo|B1
+Me mareo en el carro|I get carsick||salud|B1
+Me siento mareado|I feel dizzy (said by a man)|Me siento mareada|salud|B1
+Tengo la nariz tapada|My nose is blocked||salud|B1
+Tengo dolor de garganta|I have a sore throat||salud|A2
+Necesito tomar agua|I need to drink water||cuerpo|A2
+Debería hacer más ejercicio|I should exercise more||salud|B1
+Tengo la presión alta|I have high blood pressure||salud|B2
+Me hicieron un examen de sangre|They gave me a blood test||salud|B2
+Me recetó unas pastillas|He prescribed me some pills||salud|B2
+Me dieron la incapacidad|They gave me a sick note||salud|B2|Incapacidad = medical leave certificate in Colombia.
+Mañana tengo una cirugía|I have surgery tomorrow||salud|B2
+No he comido nada hoy|I haven't eaten anything today||alimentacion|B1
+Ponle más sal|Add more salt|Póngale más sal|alimentacion|B1
+Está muy dulce|It's very sweet||alimentacion|A2
+Está un poco salado|It's a little salty||alimentacion|B1
+Me sobró comida|I had food left over||alimentacion|B1
+Me quedé con hambre|I was still hungry||alimentacion|B1
+Invito yo|It's on me|Yo invito|alimentacion|B1
+Pagamos a medias|We split the bill||alimentacion|B1
+Cada uno paga lo suyo|Everyone pays their own||alimentacion|B2
+Voy a hacer mercado|I'm going grocery shopping||compras|B1|Hacer mercado = to do the weekly grocery shop in Colombia.
+Se me acabó el café|I ran out of coffee||alimentacion|B1
+Aprendí mucho hoy|I learned a lot today||educacion|A2
+No me alcanzó el tiempo|I ran out of time||educacion|B1
+Repasé toda la noche|I studied all night||educacion|B1
+Me fue bien en el examen|I did well on the exam||educacion|B1
+Me estoy preparando para el examen|I'm getting ready for the exam||educacion|B2
+Voy a hacer una maestría|I'm going to do a master's degree||educacion|B2
+¿Me puede explicar otra vez?|Can you explain it to me again?||educacion|B1
+No sé cómo se escribe|I don't know how it's spelled||educacion|B1
+¿Cómo se pronuncia esto?|How do you pronounce this?||educacion|B1
+Estoy mejorando mi español|I'm improving my Spanish||educacion|B1
+Cometí un error|I made a mistake||educacion|B1
+Tenemos que hablar|We need to talk||relaciones|B1
+Necesito hablar contigo|I need to talk to you||relaciones|B1
+Confío en ti|I trust you|Confío en usted|relaciones|B1
+Me siento a gusto contigo|I feel comfortable with you||relaciones|B2
+Nunca me escuchas|You never listen to me||relaciones|B1
+Pónganse de acuerdo|Come to an agreement (you all)||relaciones|B2
+Se casaron en diciembre|They got married in December||relaciones|B1
+Estoy esperando un bebé|I'm expecting a baby||relaciones|B1
+Mi hermana es mayor que yo|My sister is older than me||relaciones|B1
+Se parece mucho a su papá|He looks a lot like his dad||relaciones|B1
+Es muy callado|He is very quiet||caracter|B1
+Es muy terco|He is very stubborn||caracter|B1
+Ella es muy trabajadora|She is very hardworking||caracter|B1
+Es una persona muy sincera|He is a very sincere person||caracter|B1
+Soy una persona tranquila|I'm a calm person||caracter|B1
+No soy muy paciente|I'm not very patient||caracter|B1
+Me gusta estar solo|I like being alone (said by a man)|Me gusta estar sola|caracter|B1
+Soy colombiano|I'm Colombian (said by a man)|Soy colombiana|identidad|A2
+Soy estadounidense|I'm American||identidad|A2
+Nací en Texas|I was born in Texas||identidad|A2
+Crecí en una ciudad pequeña|I grew up in a small city||identidad|B1
+Llevo tres años en Colombia|I've been in Colombia for three years||identidad|B1
+Mi lengua materna es el inglés|My native language is English||identidad|B1
+¿Cómo se llama esto en español?|What is this called in Spanish?||identidad|B1
+Soy católico|I'm Catholic (said by a man)|Soy católica|religion|B1
+Voy a misa los domingos|I go to Mass on Sundays||religion|B1
+Dios mío|My God||religion|B1
+Gracias a Dios|Thank God||religion|B1
+Si Dios quiere|God willing||religion|B1
+Que Dios te bendiga|God bless you|Que Dios lo bendiga|religion|B1
+Qué Dios la bendiga|May God bless her||religion|B2
+Hoy es día festivo|Today is a holiday||ocio|B1|Colombia has many puentes festivos, long holiday weekends.
+Celebramos la Navidad en familia|We celebrate Christmas with family||religion|B1
+Voy a votar el domingo|I'm going to vote on Sunday||politica|B1
+Las elecciones son en mayo|The elections are in May||politica|B1
+No me gusta la política|I don't like politics||politica|B1
+El gobierno subió los impuestos|The government raised taxes||politica|B2
+Hay una marcha en el centro|There's a march downtown||politica|B2
+La ley cambió el año pasado|The law changed last year||politica|B2
+Los precios subieron mucho|Prices went up a lot||economia|B1
+Todo está más caro|Everything is more expensive||economia|B1
+Tengo que pagar los impuestos|I have to pay taxes||economia|B1
+Quiero abrir una cuenta de ahorros|I want to open a savings account||economia|B1
+Pedí un préstamo al banco|I took out a loan from the bank||economia|B2
+Me llegó la factura de la luz|The electricity bill arrived||economia|B1
+El dólar subió hoy|The dollar went up today||economia|B1
+Estoy ahorrando para un carro|I'm saving up for a car||economia|B1
+Vamos a hacer un presupuesto|Let's make a budget||economia|B2
+Me subieron el sueldo|They raised my salary||economia|B1
+Llovió toda la noche|It rained all night||naturaleza|B1
+Hay mucha neblina|There's a lot of fog||naturaleza|B1
+Está temblando|There's an earthquake||naturaleza|B1
+Vamos a la montaña|Let's go to the mountains||naturaleza|A2
+La playa está llena|The beach is crowded||naturaleza|B1
+Me encantan los animales|I love animals||naturaleza|A2
+Hay que cuidar el planeta|We have to take care of the planet||naturaleza|B1
+Quiero ver ese museo|I want to see that museum||arte|A2
+Me gusta pintar|I like to paint||arte|A2
+Fui a un concierto anoche|I went to a concert last night||arte|B1
+Esa novela es muy buena|That novel is very good||arte|B1
+Estoy leyendo un libro|I'm reading a book||arte|A2
+La obra empieza a las ocho|The play starts at eight||arte|B1
+Escucho música todo el día|I listen to music all day||arte|A2
+Me gusta bailar salsa|I like dancing salsa||arte|A2
+Vi las noticias esta mañana|I watched the news this morning||medios|B1
+Lo vi en Instagram|I saw it on Instagram||medios|B1
+Eso salió en las noticias|That was on the news||medios|B1
+Eso es mentira|That's a lie||medios|B1
+Es una noticia falsa|It's fake news||medios|B2
+No tengo internet|I don't have internet||medios|A2
+Se cayó el internet|The internet went down||medios|B1
+Descarga la aplicación|Download the app|Descargue la aplicación|medios|B1
+Mándame el enlace|Send me the link|Envíeme el enlace|medios|B1
+Actualiza el celular|Update your phone|Actualice el celular|medios|B2
+Eso lo dice la ciencia|Science says so||ciencia|B2
+Hicieron un estudio nuevo|They did a new study||ciencia|B2
+Hay que probarlo primero|We have to test it first||ciencia|B2
+La tecnología avanza rápido|Technology moves fast||ciencia|B1
+La reunión se aplazó|The meeting was postponed||trabajo|B2
+Quedamos en vernos el lunes|We agreed to meet on Monday||trabajo|B1
+Estamos en contacto|Let's stay in touch||trabajo|B1
+Te copio el correo|I'll copy you on the email|Le copio el correo|trabajo|B2
+Estoy atrasado con el trabajo|I'm behind on work (said by a man)|Estoy atrasada con el trabajo|trabajo|B1
+Me ofrecieron un puesto|They offered me a position||trabajo|B1
+Mi jefe es muy exigente|My boss is very demanding||trabajo|B1
+Hoy hay paro de buses|There's a bus strike today||viajes|B2
+Tomé el metro|I took the metro||viajes|A2
+Tomé un taxi|I took a taxi||viajes|A2
+Pedí un carro por la aplicación|I ordered a car on the app||viajes|B1
+Perdón, me equivoqué de calle|Sorry, I took the wrong street||viajes|B1
+Nos perdimos en el camino|We got lost on the way||viajes|B1
+Nos quedamos sin gasolina|We ran out of gas||viajes|B1
+Hay que hacer cola|You have to wait in line||servicios|B1
+Hay que sacar turno|You have to take a number||servicios|B1
+Estoy haciendo una diligencia|I'm running an errand||servicios|B1
+Voy a hacer una vuelta|I'm going to run an errand||servicios|B2
+Mañana pasa el camión de la basura|The garbage truck comes tomorrow||vivienda|B1
+Se dañó la lavadora|The washing machine broke||vivienda|B1
+Estoy limpiando la casa|I'm cleaning the house||vivienda|A2
+Nos mudamos el mes que viene|We're moving next month||vivienda|B1
+Busco apartamento para arrendar|I'm looking for an apartment to rent||vivienda|B1
+Pintamos la sala de blanco|We painted the living room white||vivienda|B1

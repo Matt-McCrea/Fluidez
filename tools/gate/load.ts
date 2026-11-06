@@ -5,13 +5,15 @@ import { fileURLToPath } from 'node:url';
 import vm from 'node:vm';
 
 export const ROOT = fileURLToPath(new URL('../../', import.meta.url));
-const FILES = ['data/verbs.js', 'data/vocab.js', 'data/idioms.js', 'data/connectors.js', 'data/passages.js', 'data/apply.js', 'data/writing.js', 'data/topics.js', 'data/strand-lessons.js'];
+const FILES = ['data/verbs.js', 'data/vocab.js', 'data/idioms.js', 'data/connectors.js', 'data/passages.js', 'data/apply.js', 'data/writing.js', 'data/topics.js', 'data/strand-lessons.js', 'data/verb-gaps.js'];
 
 export interface Data {
   PASSAGES: any[]; APPLY_ITEMS: any[]; WRITING_TASKS: any[]; STRAND_LESSONS: any[]; TOPICS: any[];
   VOCAB: any[]; IDIOMS: any[]; CONNECTORS: any[];
   /** Teaching scripts, one entry per window.SCRIPTS_<BAND> found in data/scripts/*.js. */
   SCRIPTS?: ScriptFile[];
+  /** The Verbos sentence bank (data/verb-gaps.js), absent in a tree that has not built it. */
+  VERB_GAPS?: any[];
 }
 
 export interface ScriptFile { file: string; scripts: Record<string, any> }
@@ -34,13 +36,14 @@ export function loadData(root = ROOT): Data {
   vm.createContext(ctx);
   for (const f of FILES) {
     try { vm.runInContext(readFileSync(root + f, 'utf8'), ctx, { filename: f }); }
-    catch (e) { if (f !== 'data/connectors.js') throw e; }
+    catch (e) { if (f !== 'data/connectors.js' && f !== 'data/verb-gaps.js') throw e; }
   }
   const w = ctx.window;
   return {
     PASSAGES: w.PASSAGES ?? [], APPLY_ITEMS: w.APPLY_ITEMS ?? [], WRITING_TASKS: w.WRITING_TASKS ?? [], STRAND_LESSONS: w.STRAND_LESSONS ?? [],
     TOPICS: w.TOPICS ?? [], VOCAB: w.VOCAB ?? [], IDIOMS: w.IDIOMS ?? [], CONNECTORS: w.CONNECTORS ?? [],
     SCRIPTS: loadScripts(root),
+    VERB_GAPS: w.VERB_GAPS ?? [],
   };
 }
 
@@ -110,6 +113,14 @@ export function* strings(d: Data): Generator<Str> {
   }
   f = 'data/vocab.js';
   for (const [i, v] of d.VOCAB.entries()) { if (v.variety) continue; const a = S(f, `vocab[${i}].es`, v.es, true, true), b = S(f, `vocab[${i}].en`, v.en); if (a) yield a; if (b) yield b; }
+  // verb gaps: the sentence with its answer filled in is the Spanish the learner reads
+  f = 'data/verb-gaps.js';
+  for (const [i, g] of arr(d.VERB_GAPS).entries()) {
+    const a = S(f, `verbgaps[${i}].q`, String(g?.q ?? '').replace(/___\s*\([^)]*\)/, String(g?.a ?? '')), true);
+    if (a) yield a;
+    for (const k of ['we', 'e'] as const) { const s = S(f, `verbgaps[${i}].${k}`, g?.[k]); if (s) yield s; }
+    const w = S(f, `verbgaps[${i}].w`, g?.w, true); if (w) yield w;
+  }
   f = 'data/idioms.js';
   for (const [i, v] of d.IDIOMS.entries()) { const a = S(f, `idioms[${i}].es`, v.es, true, true), b = S(f, `idioms[${i}].en`, v.en), c = S(f, `idioms[${i}].lit`, v.lit); if (a) yield a; if (b) yield b; if (c) yield c; }
   f = 'data/strand-lessons.js';

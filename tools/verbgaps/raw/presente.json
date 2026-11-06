@@ -1,0 +1,2566 @@
+[
+ {
+  "q": "Mi mamá se queja porque yo siempre ___ (llegar) tarde a cenar.",
+  "inf": "llegar",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "llego",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Siempre marca una costumbre de ahora: presente.",
+  "why_en": "Always marks a present routine: present tense.",
+  "en": "My mom complains that I always get to dinner late.",
+  "band": "A1"
+ },
+ {
+  "q": "Hoy en día Camilo ___ (trabajar) en una panadería de lunes a sábado.",
+  "inf": "trabajar",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "trabaja",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "Hoy en día marca una costumbre de ahora: presente.",
+  "why_en": "Nowadays marks a present routine: present tense.",
+  "en": "These days Camilo works at a bakery from Monday to Saturday.",
+  "band": "A1"
+ },
+ {
+  "q": "Por lo general, mis vecinos ___ (salir) de la casa antes de las seis.",
+  "inf": "salir",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "salen",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Por lo general marca una costumbre de ahora: presente.",
+  "why_en": "Generally marks a present routine: present tense.",
+  "en": "As a rule, my neighbors leave the house before six.",
+  "band": "A1"
+ },
+ {
+  "q": "Yo casi nunca ___ (tomar) café después de las tres de la tarde.",
+  "inf": "tomar",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "tomo",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Casi nunca marca una costumbre de ahora: presente.",
+  "why_en": "Almost never marks a present routine: present tense.",
+  "en": "I almost never drink coffee after three in the afternoon.",
+  "band": "A1"
+ },
+ {
+  "q": "Tú siempre ___ (decir) la verdad, aunque duela.",
+  "inf": "decir",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "dices",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Siempre marca una costumbre de ahora: presente.",
+  "why_en": "Always marks a present routine: present tense.",
+  "en": "You always tell the truth, even if it hurts.",
+  "band": "A2"
+ },
+ {
+  "q": "Normalmente tú ___ (venir) a la oficina en bus, ¿verdad?",
+  "inf": "venir",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "vienes",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Normalmente marca una costumbre de ahora: presente.",
+  "why_en": "Normally marks a present routine: present tense.",
+  "en": "You normally come to the office by bus, right?",
+  "band": "A1"
+ },
+ {
+  "q": "Mis papás ___ (ver) las noticias cada noche, así que nadie habla.",
+  "inf": "ver",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "ven",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Cada noche marca una costumbre de ahora: presente.",
+  "why_en": "Every night marks a present routine: present tense.",
+  "en": "My parents watch the news every night, so nobody talks.",
+  "band": "A1"
+ },
+ {
+  "q": "Cada mañana yo ___ (ir) a trotar, llueva o haga sol.",
+  "inf": "ir",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "voy",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Cada mañana marca una costumbre de ahora: presente.",
+  "why_en": "Every morning marks a present routine: present tense.",
+  "en": "Every morning I go jogging, rain or shine.",
+  "band": "A1"
+ },
+ {
+  "q": "Por lo general, nosotros ___ (hacer) el mercado en la plaza los domingos.",
+  "inf": "hacer",
+  "tense": "presente",
+  "person": "nosotros",
+  "answer": "hacemos",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Por lo general marca una costumbre de ahora: presente.",
+  "why_en": "Generally marks a present routine: present tense.",
+  "en": "We generally do the grocery shopping at the market on Sundays.",
+  "band": "A1"
+ },
+ {
+  "q": "Mi jefe nunca ___ (responder) correos antes de las nueve; no te preocupes.",
+  "inf": "responder",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "responde",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Nunca marca una costumbre de ahora: presente.",
+  "why_en": "Never marks a present routine: present tense.",
+  "en": "My boss never answers emails before nine, so don't worry.",
+  "band": "A2"
+ },
+ {
+  "q": "Mi hija ___ (empezar) las clases a las siete, así que yo madrugo.",
+  "inf": "empezar",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "empieza",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Así que yo también madrugo marca una costumbre de ahora: presente.",
+  "why_en": "So I also get up early marks a present routine: present tense.",
+  "en": "My daughter starts classes at seven, so I get up early.",
+  "band": "A1"
+ },
+ {
+  "q": "Nosotros ___ (cenar) a las siete, y a esa hora ya tengo hambre.",
+  "inf": "cenar",
+  "tense": "presente",
+  "person": "nosotros",
+  "answer": "cenamos",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "imperfecto",
+   "presubj",
+   "futuro"
+  ],
+  "why_es": "Ya tengo hambre marca una costumbre de ahora: presente.",
+  "why_en": "I am already hungry marks a present routine: present tense.",
+  "en": "We have dinner at seven, and by then I am already hungry.",
+  "band": "A1"
+ },
+ {
+  "q": "Mis abuelos ___ (caminar) por el parque cada tarde, aunque haga frío.",
+  "inf": "caminar",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "caminan",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Cada tarde marca una costumbre de ahora: presente.",
+  "why_en": "Every afternoon marks a present routine: present tense.",
+  "en": "My grandparents walk in the park every afternoon, even when it is cold.",
+  "band": "A1"
+ },
+ {
+  "q": "Tú siempre ___ (llevar) el paraguas, por si acaso, ¿no?",
+  "inf": "llevar",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "llevas",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Siempre marca una costumbre de ahora: presente.",
+  "why_en": "Always marks a present routine: present tense.",
+  "en": "You always carry an umbrella, just in case, right?",
+  "band": "A1"
+ },
+ {
+  "q": "Yo ___ (leer) las noticias en el celular mientras tomo el desayuno.",
+  "inf": "leer",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "leo",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Mientras tomo marca una costumbre de ahora: presente.",
+  "why_en": "While I have marks a present routine: present tense.",
+  "en": "I read the news on my phone while I have breakfast.",
+  "band": "A1"
+ },
+ {
+  "q": "Los domingos nosotros ___ (preparar) el almuerzo para toda la familia, y es delicioso.",
+  "inf": "preparar",
+  "tense": "presente",
+  "person": "nosotros",
+  "answer": "preparamos",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "imperfecto",
+   "presubj",
+   "futuro"
+  ],
+  "why_es": "Los domingos marca una costumbre de ahora: presente.",
+  "why_en": "On Sundays marks a present routine: present tense.",
+  "en": "On Sundays we cook lunch for the whole family, and it is delicious.",
+  "band": "A1"
+ },
+ {
+  "q": "Ana y yo nos ___ (escribir) todas las semanas, aunque vivimos lejos.",
+  "inf": "escribir",
+  "tense": "presente",
+  "person": "nosotros",
+  "answer": "escribimos",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "imperfecto",
+   "presubj",
+   "futuro"
+  ],
+  "why_es": "Aunque vivimos lejos marca una costumbre de ahora: presente.",
+  "why_en": "Even though we live far apart marks a present routine: present tense.",
+  "en": "Ana and I write to each other every week, even though we live far apart.",
+  "band": "A2"
+ },
+ {
+  "q": "Yo ___ (dormir) la siesta después de almorzar, y nadie me molesta.",
+  "inf": "dormir",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "duermo",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Y nadie lo molesta marca una costumbre de ahora: presente.",
+  "why_en": "And nobody bothers him marks a present routine: present tense.",
+  "en": "I take a nap after lunch, and nobody bothers me.",
+  "band": "A1"
+ },
+ {
+  "q": "Cuando hace calor, los niños ___ (beber) mucha agua fría.",
+  "inf": "beber",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "beben",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Cuando hace calor marca una costumbre de ahora: presente.",
+  "why_en": "When it is hot marks a present routine: present tense.",
+  "en": "When it is hot, the kids drink a lot of cold water.",
+  "band": "A1"
+ },
+ {
+  "q": "Yo ___ (pagar) el celular a principio de mes, así nunca me cortan la línea.",
+  "inf": "pagar",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "pago",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "A principio de mes marca una costumbre de ahora: presente.",
+  "why_en": "At the start of the month marks a present routine: present tense.",
+  "en": "I pay the phone bill at the start of the month, so they never cut my line.",
+  "band": "A2"
+ },
+ {
+  "q": "Camila y Andrés ___ (cuidar) a su sobrino los viernes, mientras sus papás trabajan.",
+  "inf": "cuidar",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "cuidan",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Mientras sus papás trabajan marca una costumbre de ahora: presente.",
+  "why_en": "While his parents work marks a present routine: present tense.",
+  "en": "Camila and Andrés look after their nephew on Fridays while his parents work.",
+  "band": "A2"
+ },
+ {
+  "q": "Mi mamá ___ (comprar) las papas en la plaza; dice que son más frescas.",
+  "inf": "comprar",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "compra",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Porque dice marca una costumbre de ahora: presente.",
+  "why_en": "Because she says marks a present routine: present tense.",
+  "en": "My mom always buys potatoes at the market because she says they are fresher.",
+  "band": "A1"
+ },
+ {
+  "q": "Tú ___ (abrir) la tienda a las ocho, ¿cierto? Yo llego a las nueve.",
+  "inf": "abrir",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "abres",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Yo llego marca una costumbre de ahora: presente.",
+  "why_en": "I arrive marks a present routine: present tense.",
+  "en": "You open the shop at eight, right? I get there at nine.",
+  "band": "A1"
+ },
+ {
+  "q": "Mis amigos ___ (venir) a mi casa cada viernes, y yo les cocino.",
+  "inf": "venir",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "vienen",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Y yo les cocino marca una costumbre de ahora: presente.",
+  "why_en": "And I cook for them marks a present routine: present tense.",
+  "en": "My friends come to my place every Friday, and I cook for them.",
+  "band": "A1"
+ },
+ {
+  "q": "Yo ___ (dar) clases de inglés los martes y jueves; hoy es martes.",
+  "inf": "dar",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "doy",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Hoy es martes marca una costumbre de ahora: presente.",
+  "why_en": "Today is Tuesday marks a present routine: present tense.",
+  "en": "I teach English on Tuesdays and Thursdays; today is Tuesday.",
+  "band": "A2"
+ },
+ {
+  "q": "Los lunes tú ___ (salir) temprano porque tienes cita con el médico.",
+  "inf": "salir",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "sales",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Porque tiene cita marca una costumbre de ahora: presente.",
+  "why_en": "Because she has an appointment marks a present routine: present tense.",
+  "en": "On Mondays you leave early because you have a doctor's appointment.",
+  "band": "A1"
+ },
+ {
+  "q": "Nosotros ___ (comer) en la cafetería porque la comida es barata.",
+  "inf": "comer",
+  "tense": "presente",
+  "person": "nosotros",
+  "answer": "comemos",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Porque la comida es barata marca una costumbre de ahora: presente.",
+  "why_en": "Because the food is cheap marks a present routine: present tense.",
+  "en": "We eat at the cafeteria because the food is cheap.",
+  "band": "A1"
+ },
+ {
+  "q": "Mi vecino ___ (tocar) la guitarra todas las noches y no me deja dormir.",
+  "inf": "tocar",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "toca",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Y no me deja dormir marca una costumbre de ahora: presente.",
+  "why_en": "And it keeps me from sleeping marks a present routine: present tense.",
+  "en": "My neighbor plays the guitar every night and doesn't let me sleep.",
+  "band": "A2"
+ },
+ {
+  "q": "Todos los días yo ___ (volver) a casa a pie; la oficina queda cerca.",
+  "inf": "volver",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "vuelvo",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "\"Todos los días\": una costumbre del presente va en presente.",
+  "why_en": "\"Every day\": a present habit takes the present.",
+  "en": "Every day I walk home; the office is close by.",
+  "band": "A1"
+ },
+ {
+  "q": "Los fines de semana yo ___ (manejar) hasta la finca, y mis papás me acompañan.",
+  "inf": "manejar",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "manejo",
+  "use": "presente: hábito o rutina",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Y yo lo acompaño marca una costumbre de ahora: presente.",
+  "why_en": "And I go with him marks a present routine: present tense.",
+  "en": "On weekends I drive out to the farm, and my parents come with me.",
+  "band": "A2"
+ },
+ {
+  "q": "Yo ___ (ser) enfermera y trabajo en un hospital de Medellín.",
+  "inf": "ser",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "soy",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "Y trabaja muestra cómo es o está algo ahora: presente.",
+  "why_en": "And she works shows how things are now: present tense.",
+  "en": "I am a nurse and work at a hospital in Medellín.",
+  "band": "A1"
+ },
+ {
+  "q": "Hoy ___ (estar) muy nublado, así que llévate una chaqueta.",
+  "inf": "estar",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "está",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "Hoy muestra cómo es o está algo ahora: presente.",
+  "why_en": "Today shows how things are now: present tense.",
+  "en": "It is very cloudy today, so take a jacket.",
+  "band": "A1"
+ },
+ {
+  "q": "Te presento a mi familia: yo ___ (tener) dos hermanos menores.",
+  "inf": "tener",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "tengo",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Te presento muestra cómo es o está algo ahora: presente.",
+  "why_en": "Let me introduce shows how things are now: present tense.",
+  "en": "Let me introduce my family: I have two younger brothers.",
+  "band": "A1"
+ },
+ {
+  "q": "Mi abuela ___ (vivir) sola en un apartamento del centro, y la visito cada semana.",
+  "inf": "vivir",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "vive",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "Y la visito muestra cómo es o está algo ahora: presente.",
+  "why_en": "And I visit her shows how things are now: present tense.",
+  "en": "My grandmother lives alone in an apartment near downtown, and I visit her weekly.",
+  "band": "A1"
+ },
+ {
+  "q": "Camilo ___ (querer) estudiar medicina, pero sus papás prefieren derecho.",
+  "inf": "querer",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "quiere",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "condicional"
+  ],
+  "why_es": "Prefieren muestra cómo es o está algo ahora: presente.",
+  "why_en": "They prefer shows how things are now: present tense.",
+  "en": "Camilo wants to study medicine, but his parents prefer law.",
+  "band": "A2"
+ },
+ {
+  "q": "Yo ___ (saber) dónde está tu llave: está en la mesa.",
+  "inf": "saber",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "sé",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Está en la mesa muestra cómo es o está algo ahora: presente.",
+  "why_en": "It is on the table shows how things are now: present tense.",
+  "en": "I know where your key is: it is on the table.",
+  "band": "A2"
+ },
+ {
+  "q": "Mis primos ___ (parecer) muy felices en esta foto de la boda.",
+  "inf": "parecer",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "parecen",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "En esta foto muestra cómo es o está algo ahora: presente.",
+  "why_en": "In this photo shows how things are now: present tense.",
+  "en": "My cousins look very happy in this wedding photo.",
+  "band": "A2",
+  "also": [
+   "parecían"
+  ]
+ },
+ {
+  "q": "Esa película ___ (durar) casi tres horas, así que lleva palomitas.",
+  "inf": "durar",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "dura",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "Así que lleva muestra cómo es o está algo ahora: presente.",
+  "why_en": "So bring shows how things are now: present tense.",
+  "en": "That movie lasts almost three hours, so bring popcorn.",
+  "band": "A2"
+ },
+ {
+  "q": "Por favor, no lo toques: ese reloj ___ (costar) más de un millón de pesos.",
+  "inf": "costar",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "cuesta",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "No lo toques muestra cómo es o está algo ahora: presente.",
+  "why_en": "Don't touch it shows how things are now: present tense.",
+  "en": "Please don't touch it: that watch costs over a million pesos.",
+  "band": "A2"
+ },
+ {
+  "q": "Tú ___ (conocer) muy bien a mi prima Laura, así que dime cómo es.",
+  "inf": "conocer",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "conoces",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Dime muestra cómo es o está algo ahora: presente.",
+  "why_en": "Tell me shows how things are now: present tense.",
+  "en": "You know my cousin Laura very well, so tell me what she is like.",
+  "band": "A2"
+ },
+ {
+  "q": "Mi computador ___ (funcionar) muy lento hoy; creo que necesita una revisión.",
+  "inf": "funcionar",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "funciona",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "Hoy; creo que necesita muestra cómo es o está algo ahora: presente.",
+  "why_en": "Today; I think it needs shows how things are now: present tense.",
+  "en": "My computer is running very slowly today; I think it needs a checkup.",
+  "band": "A2"
+ },
+ {
+  "q": "Los vecinos del tercer piso ___ (ser) muy amables y siempre saludan.",
+  "inf": "ser",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "son",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "Y siempre saludan muestra cómo es o está algo ahora: presente.",
+  "why_en": "And they always say hi shows how things are now: present tense.",
+  "en": "The neighbors on the third floor are very kind and always say hello.",
+  "band": "A1"
+ },
+ {
+  "q": "Tú ___ (parecer) cansado; ¿por qué no te sientas un rato?",
+  "inf": "parecer",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "pareces",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Por qué no te sientas muestra cómo es o está algo ahora: presente.",
+  "why_en": "Why don't you sit shows how things are now: present tense.",
+  "en": "You look tired; why don't you sit down for a while?",
+  "band": "A2"
+ },
+ {
+  "q": "Yo ___ (necesitar) un favor tuyo: ¿me prestas veinte mil pesos?",
+  "inf": "necesitar",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "necesito",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "presubj",
+   "futuro"
+  ],
+  "why_es": "Me prestas muestra cómo es o está algo ahora: presente.",
+  "why_en": "Can you lend me shows how things are now: present tense.",
+  "en": "I need a favor from you: can you lend me twenty thousand pesos?",
+  "band": "A2"
+ },
+ {
+  "q": "Esta sopa ___ (saber) delicioso, pero todavía está muy caliente.",
+  "inf": "saber",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "sabe",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "Todavía está caliente muestra cómo es o está algo ahora: presente.",
+  "why_en": "It is still hot shows how things are now: present tense.",
+  "en": "This soup tastes delicious, but it is still very hot.",
+  "band": "A2"
+ },
+ {
+  "q": "Mis papás ___ (estar) de vacaciones en Cartagena ahora mismo.",
+  "inf": "estar",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "están",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "Ahora mismo muestra cómo es o está algo ahora: presente.",
+  "why_en": "Right now shows how things are now: present tense.",
+  "en": "My parents are on vacation in Cartagena right now.",
+  "band": "A1"
+ },
+ {
+  "q": "Yo no ___ (entender) esta pregunta; ¿me la puedes explicar?",
+  "inf": "entender",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "entiendo",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Puedes explicar muestra cómo es o está algo ahora: presente.",
+  "why_en": "Can you explain shows how things are now: present tense.",
+  "en": "I don't understand this question; can you explain it to me?",
+  "band": "A1",
+  "also": [
+   "entendí"
+  ]
+ },
+ {
+  "q": "Yo ___ (creer) que la reunión es mañana, pero no estoy seguro.",
+  "inf": "creer",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "creo",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "Pero no está segura muestra cómo es o está algo ahora: presente.",
+  "why_en": "But she is not sure shows how things are now: present tense.",
+  "en": "I believe the meeting is tomorrow, but I am not sure.",
+  "band": "A2"
+ },
+ {
+  "q": "Nosotros ___ (pensar) en cambiar de apartamento porque el arriendo está carísimo.",
+  "inf": "pensar",
+  "tense": "presente",
+  "person": "nosotros",
+  "answer": "pensamos",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "imperfecto",
+   "presubj",
+   "futuro"
+  ],
+  "why_es": "Porque el arriendo está carísimo muestra cómo es o está algo ahora: presente.",
+  "why_en": "Because the rent is very expensive shows how things are now: present tense.",
+  "en": "We are thinking about moving apartments because the rent is very expensive.",
+  "band": "A2",
+  "also": [
+   "pensábamos"
+  ]
+ },
+ {
+  "q": "Mi abuelo ___ (oír) muy poco, así que háblale fuerte.",
+  "inf": "oír",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "oye",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Háblale muestra cómo es o está algo ahora: presente.",
+  "why_en": "Speak to him shows how things are now: present tense.",
+  "en": "My grandfather hears very little, so speak to him loudly.",
+  "band": "A2"
+ },
+ {
+  "q": "Todos dicen que mi nuevo jefe ___ (tratar) muy bien a su equipo.",
+  "inf": "tratar",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "trata",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "Todos dicen muestra cómo es o está algo ahora: presente.",
+  "why_en": "Everyone says shows how things are now: present tense.",
+  "en": "Everyone says my new boss treats his team very well.",
+  "band": "A2"
+ },
+ {
+  "q": "Disculpa, ¿tú ___ (saber) cómo llegar al Parque Simón Bolívar desde aquí?",
+  "inf": "saber",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "sabes",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde aquí muestra cómo es o está algo ahora: presente.",
+  "why_en": "From here shows how things are now: present tense.",
+  "en": "Excuse me, do you know how to get to Simón Bolívar Park from here?",
+  "band": "A2"
+ },
+ {
+  "q": "Mis hijos ___ (querer) pizza otra vez, pero hoy cocino arroz con pollo.",
+  "inf": "querer",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "quieren",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Hoy cocino muestra cómo es o está algo ahora: presente.",
+  "why_en": "Today I am cooking shows how things are now: present tense.",
+  "en": "My kids want pizza again, but today I am making rice with chicken.",
+  "band": "A2"
+ },
+ {
+  "q": "Yo ___ (deber) entregar un informe hoy y no puedo salir contigo.",
+  "inf": "deber",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "debo",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "presubj",
+   "futuro"
+  ],
+  "why_es": "Hoy y no puedo muestra cómo es o está algo ahora: presente.",
+  "why_en": "Today and I cannot shows how things are now: present tense.",
+  "en": "I have to hand in a report today and cannot go out with you.",
+  "band": "A1"
+ },
+ {
+  "q": "Camilo y yo ___ (estar) muy contentos con el apartamento, que queda cerca del trabajo.",
+  "inf": "estar",
+  "tense": "presente",
+  "person": "nosotros",
+  "answer": "estamos",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Que queda cerca muestra cómo es o está algo ahora: presente.",
+  "why_en": "Which is close shows how things are now: present tense.",
+  "en": "Camilo and I are very happy with the apartment, which is close to work.",
+  "band": "A2"
+ },
+ {
+  "q": "Yo me ___ (llamar) Valentina, pero todos me dicen Vale.",
+  "inf": "llamar",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "llamo",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "Todos le dicen muestra cómo es o está algo ahora: presente.",
+  "why_en": "Everyone calls her shows how things are now: present tense.",
+  "en": "My name is Valentina, but everyone calls me Vale.",
+  "band": "A1"
+ },
+ {
+  "q": "Ellos ___ (mantener) la casa muy limpia aunque tienen tres perros.",
+  "inf": "mantener",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "mantienen",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Aunque tienen muestra cómo es o está algo ahora: presente.",
+  "why_en": "Even though they have shows how things are now: present tense.",
+  "en": "They keep the house very clean even though they have three dogs.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo ___ (sentir) un dolor fuerte en la rodilla; creo que debo ir al médico.",
+  "inf": "sentir",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "siento",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Creo que debo muestra cómo es o está algo ahora: presente.",
+  "why_en": "I think I should shows how things are now: present tense.",
+  "en": "I feel a sharp pain in my knee; I think I should see a doctor.",
+  "band": "A2"
+ },
+ {
+  "q": "Esta calle ___ (quedar) muy lejos del centro, mejor tomamos un taxi.",
+  "inf": "quedar",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "queda",
+  "use": "presente: estado o hecho actual",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "Mejor tomamos muestra cómo es o está algo ahora: presente.",
+  "why_en": "We had better take shows how things are now: present tense.",
+  "en": "This street is very far from downtown, we had better take a taxi.",
+  "band": "A2"
+ },
+ {
+  "q": "El sol ___ (salir) por el oriente y se oculta por el occidente.",
+  "inf": "salir",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "sale",
+  "use": "presente: verdad general",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Verdad de siempre expresa algo que siempre es verdad: presente.",
+  "why_en": "A fact of nature states something always true: present tense.",
+  "en": "The sun rises in the east and sets in the west.",
+  "band": "A1"
+ },
+ {
+  "q": "Quien ___ (buscar), encuentra, dice el refrán.",
+  "inf": "buscar",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "busca",
+  "use": "presente: verdad general",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "Un refrán expresa algo que siempre es verdad: presente.",
+  "why_en": "A proverb states something always true: present tense.",
+  "en": "He who seeks, finds.",
+  "band": "A2"
+ },
+ {
+  "q": "Los perros ___ (oír) sonidos que las personas no pueden oír.",
+  "inf": "oír",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "oyen",
+  "use": "presente: verdad general",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "No pueden expresa algo que siempre es verdad: presente.",
+  "why_en": "Cannot states something always true: present tense.",
+  "en": "Dogs hear sounds that people cannot hear.",
+  "band": "B1"
+ },
+ {
+  "q": "En Colombia el café ___ (crecer) mejor en las montañas.",
+  "inf": "crecer",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "crece",
+  "use": "presente: verdad general",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "Un hecho general expresa algo que siempre es verdad: presente.",
+  "why_en": "A general fact states something always true: present tense.",
+  "en": "In Colombia coffee grows best in the mountains.",
+  "band": "A2"
+ },
+ {
+  "q": "Las plantas ___ (necesitar) luz y agua para vivir.",
+  "inf": "necesitar",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "necesitan",
+  "use": "presente: verdad general",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "Un hecho general expresa algo que siempre es verdad: presente.",
+  "why_en": "A general fact states something always true: present tense.",
+  "en": "Plants need light and water to live.",
+  "band": "A1"
+ },
+ {
+  "q": "Los bebés ___ (dormir) muchas horas durante el día.",
+  "inf": "dormir",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "duermen",
+  "use": "presente: verdad general",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Un hecho general expresa algo que siempre es verdad: presente.",
+  "why_en": "A general fact states something always true: present tense.",
+  "en": "Babies sleep many hours during the day.",
+  "band": "A2"
+ },
+ {
+  "q": "Los gatos ___ (ver) mejor que las personas en la oscuridad.",
+  "inf": "ver",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "ven",
+  "use": "presente: verdad general",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Un hecho general expresa algo que siempre es verdad: presente.",
+  "why_en": "A general fact states something always true: present tense.",
+  "en": "Cats see better than people in the dark.",
+  "band": "A2"
+ },
+ {
+  "q": "La Tierra ___ (dar) una vuelta alrededor del sol cada año.",
+  "inf": "dar",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "da",
+  "use": "presente: verdad general",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Cada año expresa algo que siempre es verdad: presente.",
+  "why_en": "Every year states something always true: present tense.",
+  "en": "The Earth makes one trip around the sun every year.",
+  "band": "A2"
+ },
+ {
+  "q": "En Bogotá ___ (llover) casi todas las tardes del año.",
+  "inf": "llover",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "llueve",
+  "use": "presente: verdad general",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "Casi todas las tardes expresa algo que siempre es verdad: presente.",
+  "why_en": "Almost every afternoon states something always true: present tense.",
+  "en": "In Bogotá it rains almost every afternoon of the year.",
+  "band": "A2"
+ },
+ {
+  "q": "Un año ___ (tener) doce meses y casi cincuenta y dos semanas.",
+  "inf": "tener",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "tiene",
+  "use": "presente: verdad general",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "Un hecho general expresa algo que siempre es verdad: presente.",
+  "why_en": "A general fact states something always true: present tense.",
+  "en": "A year has twelve months and almost fifty two weeks.",
+  "band": "A1"
+ },
+ {
+  "q": "El español ___ (ser) la lengua oficial de Colombia, y hay muchas lenguas indígenas.",
+  "inf": "ser",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "es",
+  "use": "presente: verdad general",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "Un hecho actual expresa algo que siempre es verdad: presente.",
+  "why_en": "A current fact states something always true: present tense.",
+  "en": "Spanish is the official language of Colombia, and there are many indigenous languages.",
+  "band": "A1"
+ },
+ {
+  "q": "Dos más dos ___ (ser) cuatro, no cinco.",
+  "inf": "ser",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "son",
+  "use": "presente: verdad general",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "futuro"
+  ],
+  "why_es": "Una verdad matemática expresa algo que siempre es verdad: presente.",
+  "why_en": "A mathematical truth states something always true: present tense.",
+  "en": "Two plus two is four, not five.",
+  "band": "A1"
+ },
+ {
+  "q": "Las abejas ___ (producir) la miel que comemos.",
+  "inf": "producir",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "producen",
+  "use": "presente: verdad general",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Un hecho general expresa algo que siempre es verdad: presente.",
+  "why_en": "A general fact states something always true: present tense.",
+  "en": "Bees make the honey we eat.",
+  "band": "B1"
+ },
+ {
+  "q": "Los niños ___ (aprender) rápido cuando juegan.",
+  "inf": "aprender",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "aprenden",
+  "use": "presente: verdad general",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Cuando juegan expresa algo que siempre es verdad: presente.",
+  "why_en": "When they play states something always true: present tense.",
+  "en": "Kids learn fast when they play.",
+  "band": "A2"
+ },
+ {
+  "q": "El mar ___ (cubrir) más de dos tercios del planeta.",
+  "inf": "cubrir",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "cubre",
+  "use": "presente: verdad general",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Un hecho general expresa algo que siempre es verdad: presente.",
+  "why_en": "A general fact states something always true: present tense.",
+  "en": "The sea covers more than two thirds of the planet.",
+  "band": "B1"
+ },
+ {
+  "q": "Nuestro vuelo ___ (partir) mañana a las seis, así que hay que madrugar.",
+  "inf": "partir",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "parte",
+  "use": "presente con valor de futuro y marcador",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Mañana a las seis con un plan fijo admite presente.",
+  "why_en": "Tomorrow at six with a fixed plan takes the present.",
+  "en": "Our flight leaves tomorrow at six, so we have to get up early.",
+  "band": "A2"
+ },
+ {
+  "q": "Esta noche nosotros ___ (cenar) donde mis suegros, ¿vienes?",
+  "inf": "cenar",
+  "tense": "presente",
+  "person": "nosotros",
+  "answer": "cenamos",
+  "use": "presente con valor de futuro y marcador",
+  "confuse": [
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Esta noche con un plan fijo admite presente.",
+  "why_en": "Tonight with a fixed plan takes the present.",
+  "en": "Tonight we have dinner at my in-laws', are you coming?",
+  "band": "A2"
+ },
+ {
+  "q": "El próximo lunes yo ___ (empezar) mi trabajo nuevo.",
+  "inf": "empezar",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "empiezo",
+  "use": "presente con valor de futuro y marcador",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "El próximo lunes con un plan fijo admite presente.",
+  "why_en": "Next Monday with a fixed plan takes the present.",
+  "en": "Next Monday I start my new job.",
+  "band": "A2"
+ },
+ {
+  "q": "Mañana yo ___ (ir) al dentista a las tres.",
+  "inf": "ir",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "voy",
+  "use": "presente con valor de futuro y marcador",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Mañana con un plan fijo admite presente.",
+  "why_en": "Tomorrow with a fixed plan takes the present.",
+  "en": "Tomorrow I go to the dentist at three.",
+  "band": "A2"
+ },
+ {
+  "q": "Este viernes mis primos ___ (llegar) de Cartagena, y los recogemos en el aeropuerto.",
+  "inf": "llegar",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "llegan",
+  "use": "presente con valor de futuro y marcador",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Este viernes con un plan fijo admite presente.",
+  "why_en": "This Friday with a fixed plan takes the present.",
+  "en": "My cousins arrive from Cartagena this Friday, and we pick them up at the airport.",
+  "band": "A2"
+ },
+ {
+  "q": "¿Qué ___ (hacer) tú esta noche? Hay fiesta en mi casa.",
+  "inf": "hacer",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "haces",
+  "use": "presente con valor de futuro y marcador",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Esta noche con un plan fijo admite presente.",
+  "why_en": "Tonight with a fixed plan takes the present.",
+  "en": "What are you doing tonight? There is a party at my place.",
+  "band": "A1"
+ },
+ {
+  "q": "Mi hermana ___ (cumplir) treinta años el próximo mes.",
+  "inf": "cumplir",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "cumple",
+  "use": "presente con valor de futuro y marcador",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "El próximo mes con un plan fijo admite presente.",
+  "why_en": "Next month with a fixed plan takes the present.",
+  "en": "My sister turns thirty next month.",
+  "band": "A2"
+ },
+ {
+  "q": "El domingo nosotros ___ (ir) a la finca de mis abuelos; ven con nosotros.",
+  "inf": "ir",
+  "tense": "presente",
+  "person": "nosotros",
+  "answer": "vamos",
+  "use": "presente con valor de futuro y marcador",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "El domingo con un plan fijo admite presente.",
+  "why_en": "On Sunday with a fixed plan takes the present.",
+  "en": "On Sunday we go to my grandparents' farm; come with us.",
+  "band": "A2"
+ },
+ {
+  "q": "Esta tarde yo ___ (pasar) por tu casa para recoger el libro.",
+  "inf": "pasar",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "paso",
+  "use": "presente con valor de futuro y marcador",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Esta tarde con un plan fijo admite presente.",
+  "why_en": "This afternoon with a fixed plan takes the present.",
+  "en": "This afternoon I will stop by your place to pick up the book.",
+  "band": "A2"
+ },
+ {
+  "q": "El próximo sábado ellos ___ (viajar) a Santa Marta en carro.",
+  "inf": "viajar",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "viajan",
+  "use": "presente con valor de futuro y marcador",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "El próximo sábado con un plan fijo admite presente.",
+  "why_en": "Next Saturday with a fixed plan takes the present.",
+  "en": "Next Saturday they travel to Santa Marta by car.",
+  "band": "A2"
+ },
+ {
+  "q": "Dentro de una hora ___ (comenzar) la clase, así que apúrate.",
+  "inf": "comenzar",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "comienza",
+  "use": "presente con valor de futuro y marcador",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Dentro de una hora con un plan fijo admite presente.",
+  "why_en": "In an hour with a fixed plan takes the present.",
+  "en": "Class starts in an hour, so hurry up.",
+  "band": "A2"
+ },
+ {
+  "q": "Mañana yo no ___ (trabajar) porque es festivo.",
+  "inf": "trabajar",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "trabajo",
+  "use": "presente con valor de futuro y marcador",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Mañana con un plan fijo admite presente.",
+  "why_en": "Tomorrow with a fixed plan takes the present.",
+  "en": "Tomorrow I don't work because it is a holiday.",
+  "band": "A1"
+ },
+ {
+  "q": "Esta noche tú ___ (preparar) la comida y yo lavo los platos, ¿de acuerdo?",
+  "inf": "preparar",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "preparas",
+  "use": "presente con valor de futuro y marcador",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Esta noche con un plan fijo admite presente.",
+  "why_en": "Tonight with a fixed plan takes the present.",
+  "en": "Tonight you make dinner and I wash the dishes, deal?",
+  "band": "A2"
+ },
+ {
+  "q": "El año que viene yo ___ (entrar) a la universidad.",
+  "inf": "entrar",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "entro",
+  "use": "presente con valor de futuro y marcador",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "El año que viene con un plan fijo admite presente.",
+  "why_en": "Next year with a fixed plan takes the present.",
+  "en": "Next year I start university.",
+  "band": "A2"
+ },
+ {
+  "q": "El jueves nosotros ___ (pasar) la tarde en tu casa; yo llevo las crispetas.",
+  "inf": "pasar",
+  "tense": "presente",
+  "person": "nosotros",
+  "answer": "pasamos",
+  "use": "presente con valor de futuro y marcador",
+  "confuse": [
+   "imperfecto",
+   "presubj",
+   "futuro"
+  ],
+  "why_es": "El jueves con un plan fijo admite presente.",
+  "why_en": "On Thursday with a fixed plan takes the present.",
+  "en": "On Thursday we spend the afternoon at your place; I bring the popcorn.",
+  "band": "A2",
+  "also": [
+   "pasaremos"
+  ]
+ },
+ {
+  "q": "Mis tíos ___ (vivir) en Canadá desde hace diez años y todavía extrañan el ajiaco.",
+  "inf": "vivir",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "viven",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace diez años sigue vigente hoy: pide presente.",
+  "why_en": "For ten years still holds today: it takes the present.",
+  "en": "My aunt and uncle have lived in Canada for ten years and still miss ajiaco.",
+  "band": "A2"
+ },
+ {
+  "q": "Yo ___ (trabajar) en esta empresa desde hace tres años.",
+  "inf": "trabajar",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "trabajo",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace tres años sigue vigente hoy: pide presente.",
+  "why_en": "For three years still holds today: it takes the present.",
+  "en": "I have worked at this company for three years.",
+  "band": "A2"
+ },
+ {
+  "q": "Nosotros ___ (esperar) el bus desde hace veinte minutos y ya estamos desesperados.",
+  "inf": "esperar",
+  "tense": "presente",
+  "person": "nosotros",
+  "answer": "esperamos",
+  "use": "desde hace + presente",
+  "confuse": [
+   "imperfecto",
+   "presubj",
+   "futuro"
+  ],
+  "why_es": "Desde hace veinte minutos sigue vigente hoy: pide presente.",
+  "why_en": "For twenty minutes still holds today: it takes the present.",
+  "en": "We have been waiting for the bus for twenty minutes and we are desperate.",
+  "band": "A2"
+ },
+ {
+  "q": "Tú ___ (estudiar) inglés desde hace dos años, ¿verdad?",
+  "inf": "estudiar",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "estudias",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace dos años sigue vigente hoy: pide presente.",
+  "why_en": "For two years still holds today: it takes the present.",
+  "en": "You have been studying English for two years, right?",
+  "band": "A2"
+ },
+ {
+  "q": "Mis vecinos ___ (hacer) obras desde hace una semana y no se puede dormir.",
+  "inf": "hacer",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "hacen",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace una semana sigue vigente hoy: pide presente.",
+  "why_en": "For a week still holds today: it takes the present.",
+  "en": "For a week my neighbors have been doing construction in the building, and nobody can sleep.",
+  "band": "B1"
+ },
+ {
+  "q": "Nosotros ___ (buscar) casa desde hace meses, pero todo está carísimo.",
+  "inf": "buscar",
+  "tense": "presente",
+  "person": "nosotros",
+  "answer": "buscamos",
+  "use": "desde hace + presente",
+  "confuse": [
+   "imperfecto",
+   "presubj",
+   "futuro"
+  ],
+  "why_es": "Desde hace meses sigue vigente hoy: pide presente.",
+  "why_en": "For months still holds today: it takes the present.",
+  "en": "We have been looking for a house for months, but everything is very expensive.",
+  "band": "A2"
+ },
+ {
+  "q": "Tú ___ (leer) el mismo libro desde hace dos semanas.",
+  "inf": "leer",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "lees",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace dos semanas sigue vigente hoy: pide presente.",
+  "why_en": "For two weeks still holds today: it takes the present.",
+  "en": "You have been reading the same book for two weeks.",
+  "band": "A2"
+ },
+ {
+  "q": "Tú ___ (mirar) el celular desde hace un rato sin decir nada.",
+  "inf": "mirar",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "miras",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace un rato sigue vigente hoy: pide presente.",
+  "why_en": "For a while still holds today: it takes the present.",
+  "en": "For a while you have been looking at your phone without saying anything.",
+  "band": "A2"
+ },
+ {
+  "q": "El perro de Lucía ___ (dormir) desde hace horas, ni se mueve.",
+  "inf": "dormir",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "duerme",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace horas sigue vigente hoy: pide presente.",
+  "why_en": "For hours still holds today: it takes the present.",
+  "en": "Lucía's dog has been sleeping for hours, he doesn't even move.",
+  "band": "A2"
+ },
+ {
+  "q": "Mis padres ___ (estar) casados desde hace treinta años y siguen de novios.",
+  "inf": "estar",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "están",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace treinta años sigue vigente hoy: pide presente.",
+  "why_en": "For thirty years still holds today: it takes the present.",
+  "en": "My parents have been married for thirty years and still act like sweethearts.",
+  "band": "A2"
+ },
+ {
+  "q": "Mi mamá ___ (llamar) a mi tía desde hace una hora, pero nadie contesta.",
+  "inf": "llamar",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "llama",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace una hora sigue vigente hoy: pide presente.",
+  "why_en": "For an hour still holds today: it takes the present.",
+  "en": "My mom has been calling my aunt for an hour, but nobody answers.",
+  "band": "A2"
+ },
+ {
+  "q": "Yo ___ (tener) tos desde hace tres días; creo que es gripa.",
+  "inf": "tener",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "tengo",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace tres días sigue vigente hoy: pide presente.",
+  "why_en": "For three days still holds today: it takes the present.",
+  "en": "I have had a cough for three days; I think it is the flu.",
+  "band": "A2"
+ },
+ {
+  "q": "Nosotros ___ (pasar) las vacaciones en Santa Marta desde hace años.",
+  "inf": "pasar",
+  "tense": "presente",
+  "person": "nosotros",
+  "answer": "pasamos",
+  "use": "desde hace + presente",
+  "confuse": [
+   "imperfecto",
+   "presubj",
+   "futuro"
+  ],
+  "why_es": "Desde hace años sigue vigente hoy: pide presente.",
+  "why_en": "For years still holds today: it takes the present.",
+  "en": "For years we have spent our vacations in Santa Marta.",
+  "band": "A2"
+ },
+ {
+  "q": "Ellos ___ (hablar) por teléfono desde hace dos horas.",
+  "inf": "hablar",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "hablan",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace dos horas sigue vigente hoy: pide presente.",
+  "why_en": "For two hours still holds today: it takes the present.",
+  "en": "They have been talking on the phone for two hours.",
+  "band": "A2"
+ },
+ {
+  "q": "Tú ___ (conocer) a Lucía desde hace años, ¿no?",
+  "inf": "conocer",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "conoces",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace años sigue vigente hoy: pide presente.",
+  "why_en": "For years still holds today: it takes the present.",
+  "en": "You have known Lucía for years, right?",
+  "band": "A2"
+ },
+ {
+  "q": "Desde hace mucho tiempo mi abuelo no ___ (bajar) a la calle.",
+  "inf": "bajar",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "baja",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace mucho tiempo sigue vigente hoy: pide presente.",
+  "why_en": "For a long time still holds today: it takes the present.",
+  "en": "My grandfather hasn't gone down to the street in a long time.",
+  "band": "B1"
+ },
+ {
+  "q": "Yo ___ (querer) hablar contigo desde hace días, pero nunca contestas.",
+  "inf": "querer",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "quiero",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace días sigue vigente hoy: pide presente.",
+  "why_en": "For days still holds today: it takes the present.",
+  "en": "I have wanted to talk to you for days, but you never answer.",
+  "band": "B1",
+  "also": [
+   "quería"
+  ]
+ },
+ {
+  "q": "Yo ___ (jugar) tenis desde hace cinco años y juego bastante bien.",
+  "inf": "jugar",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "juego",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace cinco años sigue vigente hoy: pide presente.",
+  "why_en": "For five years still holds today: it takes the present.",
+  "en": "I have played tennis for five years and play quite well.",
+  "band": "A2"
+ },
+ {
+  "q": "Mi carro ___ (hacer) un ruido raro desde hace una semana.",
+  "inf": "hacer",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "hace",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace una semana sigue vigente hoy: pide presente.",
+  "why_en": "For a week still holds today: it takes the present.",
+  "en": "My car has been making a strange noise for a week.",
+  "band": "A2"
+ },
+ {
+  "q": "Nosotros ___ (vivir) en este barrio desde hace veinte años.",
+  "inf": "vivir",
+  "tense": "presente",
+  "person": "nosotros",
+  "answer": "vivimos",
+  "use": "desde hace + presente",
+  "confuse": [
+   "imperfecto",
+   "presubj",
+   "futuro"
+  ],
+  "why_es": "Desde hace veinte años sigue vigente hoy: pide presente.",
+  "why_en": "For twenty years still holds today: it takes the present.",
+  "en": "We have lived in this neighborhood for twenty years.",
+  "band": "A2"
+ },
+ {
+  "q": "Mis hijos ___ (pedir) un perro desde hace meses, y yo digo que no.",
+  "inf": "pedir",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "piden",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace meses sigue vigente hoy: pide presente.",
+  "why_en": "For months still holds today: it takes the present.",
+  "en": "My kids have been asking for a dog for months, and I say no.",
+  "band": "A2"
+ },
+ {
+  "q": "Hace tres horas que tú ___ (estudiar) en la biblioteca, y no paras.",
+  "inf": "estudiar",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "estudias",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Hace tres horas que sigue vigente hoy: pide presente.",
+  "why_en": "It has been three hours that still holds today: it takes the present.",
+  "en": "You have been studying at the library for three hours and you don't stop.",
+  "band": "B1"
+ },
+ {
+  "q": "Hace dos meses que yo ___ (vivir) en Medellín y me encanta.",
+  "inf": "vivir",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "vivo",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Hace dos meses que sigue vigente hoy: pide presente.",
+  "why_en": "It has been two months that still holds today: it takes the present.",
+  "en": "I have lived in Medellín for two months and I love it.",
+  "band": "A2"
+ },
+ {
+  "q": "Hace un año que ellos ___ (arreglar) la casa y todavía no terminan.",
+  "inf": "arreglar",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "arreglan",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Hace un año que sigue vigente hoy: pide presente.",
+  "why_en": "It has been a year that still holds today: it takes the present.",
+  "en": "They have been fixing up the house for a year and still haven't finished.",
+  "band": "B1"
+ },
+ {
+  "q": "¿Desde cuándo te ___ (doler) tanto la muela?",
+  "inf": "doler",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "duele",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde cuándo sigue vigente hoy: pide presente.",
+  "why_en": "Since when still holds today: it takes the present.",
+  "en": "How long has your tooth been hurting this much?",
+  "band": "B1"
+ },
+ {
+  "q": "Hace rato que tú ___ (decir) que vas a llamarlo, pero no llamas.",
+  "inf": "decir",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "dices",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Hace rato que sigue vigente hoy: pide presente.",
+  "why_en": "It has been a while that still holds today: it takes the present.",
+  "en": "You have been saying for a while that you will call him, but you don't.",
+  "band": "B1"
+ },
+ {
+  "q": "Desde hace tiempo yo ___ (pensar) en renunciar a mi trabajo.",
+  "inf": "pensar",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "pienso",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace tiempo sigue vigente hoy: pide presente.",
+  "why_en": "For some time still holds today: it takes the present.",
+  "en": "For some time I have been thinking about quitting my job.",
+  "band": "A2"
+ },
+ {
+  "q": "Nosotros ___ (vender) arepas en esta esquina desde hace diez años.",
+  "inf": "vender",
+  "tense": "presente",
+  "person": "nosotros",
+  "answer": "vendemos",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace diez años sigue vigente hoy: pide presente.",
+  "why_en": "For ten years still holds today: it takes the present.",
+  "en": "We have sold arepas on this corner for ten years.",
+  "band": "A2"
+ },
+ {
+  "q": "Desde hace dos días yo me ___ (sentir) mal y no voy a clases.",
+  "inf": "sentir",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "siento",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace dos días sigue vigente hoy: pide presente.",
+  "why_en": "For two days still holds today: it takes the present.",
+  "en": "For two days I have felt ill and haven't gone to class.",
+  "band": "A2"
+ },
+ {
+  "q": "Yo no ___ (ver) a mis primos desde hace un año.",
+  "inf": "ver",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "veo",
+  "use": "desde hace + presente",
+  "confuse": [
+   "preterito",
+   "imperfecto",
+   "presubj"
+  ],
+  "why_es": "Desde hace un año sigue vigente hoy: pide presente.",
+  "why_en": "For a year still holds today: it takes the present.",
+  "en": "I haven't seen my cousins in a year.",
+  "band": "A2"
+ },
+ {
+  "q": "Nos quedamos en casa y vemos una película si mañana ___ (llover).",
+  "inf": "llover",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "llueve",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If it rains tomorrow, we stay home and watch a movie.",
+  "band": "A2"
+ },
+ {
+  "q": "Te guardo un puesto si tú ___ (llegar) temprano.",
+  "inf": "llegar",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "llegas",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If you arrive early, I will save you a seat.",
+  "band": "A2"
+ },
+ {
+  "q": "Si ustedes ___ (querer), los invitamos a cenar el sábado.",
+  "inf": "querer",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "quieren",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If you want, we will invite you to dinner on Saturday.",
+  "band": "A2"
+ },
+ {
+  "q": "Hablo yo con el cliente si tú no ___ (venir) a la reunión.",
+  "inf": "venir",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "vienes",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If you don't come to the meeting, I will talk to the client.",
+  "band": "A2"
+ },
+ {
+  "q": "Si yo ___ (poder), te ayudo con la mudanza este fin de semana.",
+  "inf": "poder",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "puedo",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If I can, I will help you with the move this weekend.",
+  "band": "A2"
+ },
+ {
+  "q": "Si nosotros ___ (salir) ahora, llegamos antes de las ocho.",
+  "inf": "salir",
+  "tense": "presente",
+  "person": "nosotros",
+  "answer": "salimos",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If we leave now, we get there before eight.",
+  "band": "A2"
+ },
+ {
+  "q": "Si no ___ (tener) plata hoy, no compres nada.",
+  "inf": "tener",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "tienes",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If you have no money today, don't buy anything.",
+  "band": "A2"
+ },
+ {
+  "q": "Empezamos el proyecto el lunes si ellos ___ (decir) que sí.",
+  "inf": "decir",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "dicen",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If they say yes, we start the project on Monday.",
+  "band": "A2"
+ },
+ {
+  "q": "Si la lluvia ___ (parar), salimos a caminar.",
+  "inf": "parar",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "para",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If the rain stops, we go out for a walk.",
+  "band": "A2"
+ },
+ {
+  "q": "Mañana sacas buena nota si ___ (estudiar) esta noche.",
+  "inf": "estudiar",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "estudias",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If you study tonight, you will get a good grade tomorrow.",
+  "band": "A2"
+ },
+ {
+  "q": "Celebramos todos juntos si nosotros ___ (ganar) el partido.",
+  "inf": "ganar",
+  "tense": "presente",
+  "person": "nosotros",
+  "answer": "ganamos",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If we win the game, we all celebrate together.",
+  "band": "A2"
+ },
+ {
+  "q": "Llamo a un cerrajero si no ___ (encontrar) las llaves.",
+  "inf": "encontrar",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "encuentro",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If I can't find the keys, I will call a locksmith.",
+  "band": "A2"
+ },
+ {
+  "q": "Si usted ___ (ver) a Marta, dígale que me llame.",
+  "inf": "ver",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "ve",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If you see Marta, tell her to call me.",
+  "band": "A2"
+ },
+ {
+  "q": "Si los niños ___ (dormir) la siesta, podemos hablar tranquilos.",
+  "inf": "dormir",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "duermen",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If the kids nap, we can talk in peace.",
+  "band": "A2"
+ },
+ {
+  "q": "Si lo que dices ___ (resultar) cierto, tienes que denunciarlo.",
+  "inf": "resultar",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "resulta",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If what you say is true, you have to report it.",
+  "band": "B1"
+ },
+ {
+  "q": "Si no ___ (saber) la respuesta, pregúntale a la profesora.",
+  "inf": "saber",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "sabes",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If you don't know the answer, ask the teacher.",
+  "band": "A2"
+ },
+ {
+  "q": "Me da dolor de barriga si yo ___ (comer) tanto dulce.",
+  "inf": "comer",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "como",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If I eat that much sweet stuff, I get a stomachache.",
+  "band": "B1"
+ },
+ {
+  "q": "Si yo ___ (pagar) hoy, mañana tenemos la reserva confirmada.",
+  "inf": "pagar",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "pago",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If I pay today, we will have the reservation confirmed tomorrow.",
+  "band": "A2"
+ },
+ {
+  "q": "Si ___ (seguir) lloviendo así, el río va a crecer.",
+  "inf": "seguir",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "sigue",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If it keeps raining like this, the river will rise.",
+  "band": "B1"
+ },
+ {
+  "q": "Esperamos una hora al siguiente si nosotros ___ (perder) este bus.",
+  "inf": "perder",
+  "tense": "presente",
+  "person": "nosotros",
+  "answer": "perdemos",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If we miss this bus, we wait an hour for the next one.",
+  "band": "A2"
+ },
+ {
+  "q": "Si ustedes ___ (llegar) tarde, la puerta ya estará cerrada.",
+  "inf": "llegar",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "llegan",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "preterito",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If you arrive late, the door will already be closed.",
+  "band": "B1"
+ },
+ {
+  "q": "Si tú me ___ (prestar) el cargador, te invito a un jugo.",
+  "inf": "prestar",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "prestas",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If you lend me the charger, I will buy you a juice.",
+  "band": "A2"
+ },
+ {
+  "q": "Si ustedes ___ (aceptar) mi propuesta, comienzo la próxima semana.",
+  "inf": "aceptar",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "aceptan",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If you accept my proposal, I start next week.",
+  "band": "A2"
+ },
+ {
+  "q": "Entra mucho frío si ellos no ___ (cerrar) la ventana.",
+  "inf": "cerrar",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "cierran",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If they don't close the window, a lot of cold gets in.",
+  "band": "B1"
+ },
+ {
+  "q": "Si ___ (empezar) a llover, corre al carro.",
+  "inf": "empezar",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "empieza",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If it starts to rain, run to the car.",
+  "band": "A2"
+ },
+ {
+  "q": "Si yo ___ (tomar) café por la noche, no puedo dormir.",
+  "inf": "tomar",
+  "tense": "presente",
+  "person": "yo",
+  "answer": "tomo",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If I drink coffee at night, I can't sleep.",
+  "band": "B1"
+ },
+ {
+  "q": "Si tú ___ (ir) al centro, tráeme un par de medias.",
+  "inf": "ir",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "vas",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If you go downtown, bring me a pair of socks.",
+  "band": "A2"
+ },
+ {
+  "q": "Si tú ___ (leer) esto, te vas a poner feliz.",
+  "inf": "leer",
+  "tense": "presente",
+  "person": "tú",
+  "answer": "lees",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If you read this, you will be happy.",
+  "band": "A2"
+ },
+ {
+  "q": "Si nosotros ___ (poner) la música muy alta, los vecinos se quejan.",
+  "inf": "poner",
+  "tense": "presente",
+  "person": "nosotros",
+  "answer": "ponemos",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If we play the music very loud, the neighbors complain.",
+  "band": "B1"
+ },
+ {
+  "q": "Si Mateo ___ (volver) temprano, cenamos juntos.",
+  "inf": "volver",
+  "tense": "presente",
+  "person": "él/ella",
+  "answer": "vuelve",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If Mateo comes back early, we have dinner together.",
+  "band": "A2"
+ },
+ {
+  "q": "Si ustedes ___ (traer) los documentos, hoy mismo les entregamos el carné.",
+  "inf": "traer",
+  "tense": "presente",
+  "person": "ellos",
+  "answer": "traen",
+  "use": "si + presente en condición real",
+  "confuse": [
+   "futuro",
+   "presubj",
+   "impsubj"
+  ],
+  "why_es": "Si + presente plantea una condición real: presente.",
+  "why_en": "Si + present sets a real condition: present tense.",
+  "en": "If you bring the documents, we give you the card today.",
+  "band": "B1"
+ }
+]

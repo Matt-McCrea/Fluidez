@@ -667,8 +667,8 @@ window.VERBS = [
 { inf:'retener', en:'to retain, to hold back', type:'er', like:'tener' },
 { inf:'conservar', en:'to preserve, to keep', type:'ar' },
 { inf:'recuperar', en:'to recover, to get back', type:'ar' },
-{ inf:'devolver', en:'to give back, to return', type:'er', stem:'ue' },
-{ inf:'resolver', en:'to resolve, to solve', type:'er', stem:'ue' },
+{ inf:'devolver', en:'to give back, to return', type:'er', stem:'ue', part:'devuelto' },
+{ inf:'resolver', en:'to resolve, to solve', type:'er', stem:'ue', part:'resuelto' },
 { inf:'solucionar', en:'to solve', type:'ar' },
 { inf:'arreglar', en:'to fix, to sort out', type:'ar' },
 { inf:'reparar', en:'to repair', type:'ar' },
@@ -1013,6 +1013,7 @@ window.VERBS = [
 { inf:'desenchufar', en:'to unplug', type:'ar' },
 { inf:'enchufar', en:'to plug in', type:'ar' },
 { inf:'estropearse', en:'to break down, to spoil', type:'ar' },
+{ inf:'dañarse', en:'to break down, to get damaged', type:'ar' },
 { inf:'averiarse', en:'to break down (machine)', type:'ar', forms:{
   presente:['averío','averías','avería','averiamos','averiáis','averían'],
   presubj:['averíe','averíes','averíe','averiemos','averiéis','averíen'] } },

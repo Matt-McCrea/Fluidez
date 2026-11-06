@@ -1,0 +1,188 @@
+[
+ {
+  "id": 1312,
+  "s": "Mis abuelos decían que para el 2000 el mundo ya habrían cambiado por completo.",
+  "problem": "Agreement: singular subject 'el mundo' with plural 'habrían'.",
+  "fix": "Mis abuelos decían que para el 2000 el mundo ya habría cambiado por completo."
+ },
+ {
+  "id": 2086,
+  "s": "Niños, laven las manos antes de comer.",
+  "problem": "Missing reflexive: washing one's own hands needs 'lávense'.",
+  "fix": "Niños, lávense las manos antes de comer."
+ },
+ {
+  "id": 626,
+  "s": "Yo de Valentina, cambiaría de trabajo.",
+  "problem": "'Yo de X' is a Spain-only construction; Colombian speakers say 'Yo que X' or 'Yo en el lugar de X'.",
+  "fix": "Yo que Valentina, cambiaría de trabajo."
+ },
+ {
+  "id": 1184,
+  "s": "Tengo una cuenta de más; quién sabe, habré pagado dos veces el recibo.",
+  "problem": "'Tengo una cuenta de más' is unclear. The intended meaning is an extra charge.",
+  "fix": "Tengo un cobro de más; quién sabe, habré pagado dos veces el recibo."
+ },
+ {
+  "id": 2128,
+  "s": "Esta es de todos, cuidemos la casa entre todos.",
+  "problem": "'Esta es de todos' has no clear referent before 'la casa'; the sentence is garbled.",
+  "fix": "Esta casa es de todos; cuidémosla entre todos."
+ },
+ {
+  "id": 748,
+  "s": "¿han visto ustedes alguna vez un eclipse total?",
+  "problem": "A question opening a sentence must be capitalized after ¿.",
+  "fix": "¿Han visto ustedes alguna vez un eclipse total?"
+ },
+ {
+  "id": 798,
+  "s": "¿han visitado ustedes alguna vez el Eje Cafetero?",
+  "problem": "A question opening a sentence must be capitalized after ¿.",
+  "fix": "¿Han visitado ustedes alguna vez el Eje Cafetero?"
+ },
+ {
+  "id": 2122,
+  "s": "¡Ánimo, equipo! juguemos con todo hoy.",
+  "problem": "The sentence after ¡Ánimo, equipo! starts a new sentence and needs a capital.",
+  "fix": "¡Ánimo, equipo! Juguemos con todo hoy."
+ },
+ {
+  "id": 484,
+  "s": "Si no te das prisa, perderás el bus.",
+  "problem": "'Darse prisa' sounds peninsular; Colombian speakers say 'apurarse'.",
+  "fix": "Si no te apuras, perderás el bus."
+ },
+ {
+  "id": 1444,
+  "s": "Basta con que usted firme aquí y ya está.",
+  "problem": "'Y ya está' is peninsular; Colombian speakers say 'y listo'.",
+  "fix": "Basta con que usted firme aquí y listo."
+ },
+ {
+  "id": 1670,
+  "s": "Ojalá pasara yo todo el día en la playa en vez de la oficina.",
+  "problem": "Missing preposition in 'en vez de la oficina' ('en vez de en la oficina'), and the subject after the verb sounds unnatural.",
+  "fix": "Ojalá yo pasara todo el día en la playa en vez de en la oficina."
+ },
+ {
+  "id": 1676,
+  "s": "Ojalá sintiera yo menos presión en el trabajo.",
+  "problem": "The subject 'yo' after the verb sounds unnatural here.",
+  "fix": "Ojalá yo sintiera menos presión en el trabajo."
+ },
+ {
+  "id": 956,
+  "s": "Cuando llegamos a Pasto, mis primos nunca habían conocido la nieve.",
+  "problem": "Semantically odd: Pasto has no snow, and arriving there does not connect to the cousins never having seen snow.",
+  "fix": "Cuando llegamos a Bariloche, mis primos nunca habían conocido la nieve."
+ },
+ {
+  "id": 1168,
+  "s": "Mi hija habla inglés muy bien; ni idea, habrá aprendido en el colegio.",
+  "problem": "Semantically odd: a parent would know where their own daughter learned English, so 'ni idea' does not fit.",
+  "fix": "La hija de Ana habla inglés muy bien; ni idea, habrá aprendido en el colegio."
+ },
+ {
+  "id": 1962,
+  "s": "Si ustedes hubieran querido ir a la playa, nos habrían dicho antes.",
+  "problem": "Missing direct object clitic: 'nos lo habrían dicho'.",
+  "fix": "Si ustedes hubieran querido ir a la playa, nos lo habrían dicho antes."
+ },
+ {
+  "id": 2014,
+  "s": "Gabriela, da un abrazo a tu tía.",
+  "problem": "Unnatural without the doubled indirect object clitic; Colombian speakers say 'dale un abrazo a tu tía'.",
+  "fix": "Gabriela, dale un abrazo a tu tía."
+ },
+ {
+  "id": 2104,
+  "s": "Niños, den las gracias a la señora.",
+  "problem": "Unnatural without the doubled clitic: 'denle las gracias a la señora'.",
+  "fix": "Niños, denle las gracias a la señora."
+ },
+ {
+  "id": 2130,
+  "s": "Estamos perdidos, preguntemos a alguien cómo llegar.",
+  "problem": "Unnatural without the doubled clitic: 'preguntémosle a alguien'.",
+  "fix": "Estamos perdidos, preguntémosle a alguien cómo llegar."
+ },
+ {
+  "id": 2238,
+  "s": "Ustedes dos, no quiten el control a su hermana otra vez.",
+  "problem": "Unnatural without the doubled clitic: 'no le quiten el control a su hermana'.",
+  "fix": "Ustedes dos, no le quiten el control a su hermana otra vez."
+ },
+ {
+  "id": 2248,
+  "s": "Amigos, no cuenten a nadie lo que hablamos hoy.",
+  "problem": "Unnatural without the doubled clitic: 'no le cuenten a nadie'.",
+  "fix": "Amigos, no le cuenten a nadie lo que hablamos hoy."
+ },
+ {
+  "id": 2256,
+  "s": "Niños, no digan mentiras al profesor; siempre se entera.",
+  "problem": "Unnatural without the doubled clitic: 'no le digan mentiras al profesor'.",
+  "fix": "Niños, no le digan mentiras al profesor; siempre se entera."
+ },
+ {
+  "id": 2262,
+  "s": "Es nuestro secreto: no digamos nada a los vecinos.",
+  "problem": "Unnatural without the doubled clitic: 'no les digamos nada a los vecinos'.",
+  "fix": "Es nuestro secreto: no les digamos nada a los vecinos."
+ },
+ {
+  "id": 2280,
+  "s": "Sergio, no hables así a tu abuela, que está mayor.",
+  "problem": "Unnatural without the doubled clitic: 'no le hables así a tu abuela'.",
+  "fix": "Sergio, no le hables así a tu abuela, que está mayor."
+ },
+ {
+  "id": 2288,
+  "s": "Muchachos, no cuenten nada de la sorpresa a Marta.",
+  "problem": "Unnatural without the doubled clitic: 'no le cuenten nada a Marta'.",
+  "fix": "Muchachos, no le cuenten nada de la sorpresa a Marta."
+ },
+ {
+  "id": 2052,
+  "s": "Doctora, diga qué debo hacer.",
+  "problem": "Missing 'me'. 'Doctora, diga qué debo hacer' is curt and incomplete; Colombian speakers say 'dígame'.",
+  "fix": "Doctora, dígame qué debo hacer."
+ },
+ {
+  "id": 1356,
+  "s": "Te sugiero que nosotros salgamos más temprano para evitar el tráfico.",
+  "problem": "Odd pronoun frame: 'te sugiero que nosotros' mixes addressee and subject; it should be 'sugiero que salgamos'.",
+  "fix": "Sugiero que nosotros salgamos más temprano para evitar el tráfico."
+ },
+ {
+  "id": 796,
+  "s": "Nunca he tenido yo un perro, pero me encantaría.",
+  "problem": "The subject 'yo' after the verb sounds unnatural: 'Nunca he tenido yo un perro'.",
+  "fix": "Yo nunca he tenido un perro, pero me encantaría."
+ },
+ {
+  "id": 860,
+  "s": "Todavía no he sacado yo la plata del cajero.",
+  "problem": "The subject 'yo' after the verb sounds unnatural.",
+  "fix": "Todavía no he sacado la plata del cajero."
+ },
+ {
+  "id": 884,
+  "s": "Siempre he tenido yo la costumbre de levantarme temprano.",
+  "problem": "The subject 'yo' after the verb sounds unnatural.",
+  "fix": "Yo siempre he tenido la costumbre de levantarme temprano."
+ },
+ {
+  "id": 1114,
+  "s": "Para cuando leas este mensaje, ya habré salido yo del país.",
+  "problem": "The subject 'yo' after the verb sounds unnatural.",
+  "fix": "Para cuando leas este mensaje, yo ya habré salido del país."
+ },
+ {
+  "id": 1178,
+  "s": "El pastel quedó duro; ni idea, habremos hecho mal la mezcla.",
+  "problem": "In Colombia 'pastel' is a savoury pastry; a cake that comes out hard is 'la torta'.",
+  "fix": "La torta quedó dura; ni idea, habremos hecho mal la mezcla."
+ }
+]

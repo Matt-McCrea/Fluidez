@@ -1,0 +1,4695 @@
+[
+ {
+  "id": "imperativo:143",
+  "q": "Tenemos ahorros, ___ (viajar) en las vacaciones.",
+  "key": "viajemos",
+  "options": [
+   "viajemos",
+   "viajamos",
+   "viajaremos",
+   "viajaríamos"
+  ],
+  "why": "also acceptable: viajaremos",
+  "note": "statement of plan is as natural as hortative"
+ },
+ {
+  "id": "perfecto:55",
+  "q": "Ana jamás ___ (dejar) un trabajo a medias.",
+  "key": "ha dejado",
+  "options": [
+   "ha dejado",
+   "dejó",
+   "había dejado",
+   "haya dejado"
+  ],
+  "why": "also acceptable: dejó",
+  "note": "jamás + preterite natural in LatAm"
+ },
+ {
+  "id": "perfecto:120",
+  "q": "Ya ___ (olvidar) yo cuántas veces me ha mentido.",
+  "key": "he olvidado",
+  "options": [
+   "he olvidado",
+   "olvidé",
+   "había olvidado",
+   "haya olvidado"
+  ],
+  "why": "also acceptable: olvidé",
+  "note": "ya olvidé is natural in LatAm"
+ },
+ {
+  "id": "pluscsubj:89",
+  "q": "Cuando abrí la nevera, me extrañó que alguien ya se ___ (comer) el postre.",
+  "key": "hubiera comido",
+  "options": [
+   "hubiera comido",
+   "había comido",
+   "comiera",
+   "habría comido"
+  ],
+  "why": "also acceptable: comiera",
+  "note": "imperfect subjunctive common for anterior in speech"
+ },
+ {
+  "id": "perfecto:103",
+  "q": "Jamás ___ (olvidar) yo el día que nació mi hija.",
+  "key": "he olvidado",
+  "options": [
+   "he olvidado",
+   "olvidé",
+   "había olvidado",
+   "haya olvidado"
+  ],
+  "why": "also acceptable: olvidé",
+  "note": "LatAm preterite; olvidaré would be most natural but absent"
+ },
+ {
+  "id": "condperf:140",
+  "q": "Cuando llegamos a la finca, el camino estaba limpio; ni idea, alguien ___ (pasar) antes.",
+  "key": "habría pasado",
+  "options": [
+   "habría pasado",
+   "pasaría",
+   "habrá pasado",
+   "había pasado"
+  ],
+  "why": "also acceptable: habrá pasado",
+  "note": "both conjecture forms natural"
+ },
+ {
+  "id": "plusc:81",
+  "q": "Antes de este torneo, mi equipo nunca ___ (ganar) un campeonato.",
+  "key": "habían ganado",
+  "options": [
+   "habían ganado",
+   "ganaron",
+   "han ganado",
+   "hubieran ganado"
+  ],
+  "why": "unnatural",
+  "note": "all options plural but subject mi equipo is singular; should be había ganado"
+ },
+ {
+  "id": "condperf:147",
+  "q": "Cuando saludé a Elena, ni me miró; no sé, se ___ (molestar) por algo.",
+  "key": "habría molestado",
+  "options": [
+   "habría molestado",
+   "molestaría",
+   "habrá molestado",
+   "había molestado"
+  ],
+  "why": "picked habrá molestado; also acceptable: habrá molestado",
+  "note": "both conjecture forms natural"
+ },
+ {
+  "id": "futuro:23",
+  "q": "Mi vecina no sale hace días; ___ (viajar) por trabajo.",
+  "key": "viajará",
+  "options": [
+   "viajará",
+   "viajaría",
+   "viajaba",
+   "viaje"
+  ],
+  "why": "picked viajaría; unnatural",
+  "note": "weak: conditional of conjecture is the only fit; habrá viajado or estará de viaje would be clearer"
+ },
+ {
+  "id": "perfsubj:102",
+  "q": "Cuando ya me ___ (llegar) el sueldo, te pago lo que te debo.",
+  "key": "haya llegado",
+  "options": [
+   "haya llegado",
+   "ha llegado",
+   "llegue",
+   "hubiera llegado"
+  ],
+  "why": "also acceptable: llegue",
+  "note": "cuando ya me llegue equally natural"
+ },
+ {
+  "id": "condperf:114",
+  "q": "Les dijimos que para las nueve ya ___ (volver) del cine.",
+  "key": "habríamos vuelto",
+  "options": [
+   "habríamos vuelto",
+   "volveríamos",
+   "habremos vuelto",
+   "habíamos vuelto"
+  ],
+  "why": "also acceptable: volveríamos",
+  "note": "simple conditional also natural with para las nueve"
+ },
+ {
+  "id": "impsubj:141",
+  "q": "Ojalá tú ___ (pensar) en tu salud tanto como en tu trabajo.",
+  "key": "pensaras",
+  "options": [
+   "pensaras",
+   "pienses",
+   "pensabas",
+   "pensarías"
+  ],
+  "why": "also acceptable: pienses",
+  "note": "ojalá + present also fine for a realistic wish"
+ },
+ {
+  "id": "perfsubj:90",
+  "q": "Cuando ya ___ (firmar) todos el contrato, no habrá marcha atrás.",
+  "key": "hayan firmado",
+  "options": [
+   "hayan firmado",
+   "han firmado",
+   "firmen",
+   "hubieran firmado"
+  ],
+  "why": "also acceptable: firmen",
+  "note": "cuando ya firmen equally natural"
+ },
+ {
+  "id": "condicional:145",
+  "q": "¿De qué ___ (hablar) ustedes anoche? Se rieron mucho.",
+  "key": "hablarían",
+  "options": [
+   "hablarían",
+   "hablarán",
+   "hablaban"
+  ],
+  "why": "picked hablaban",
+  "note": ""
+ },
+ {
+  "id": "condicional:86",
+  "q": "Dijo que se ___ (ir) a vivir con su novia al mes siguiente.",
+  "key": "iría",
+  "options": [
+   "iría",
+   "irá",
+   "iba"
+  ],
+  "why": "also acceptable: iba",
+  "note": "imperfect for planned future in the past is natural"
+ },
+ {
+  "id": "condperf:126",
+  "q": "Planeamos que para el domingo ya ___ (ver) todos los museos.",
+  "key": "habríamos visto",
+  "options": [
+   "habríamos visto",
+   "veríamos",
+   "habremos visto",
+   "habíamos visto"
+  ],
+  "why": "picked habremos visto; also acceptable: habremos visto",
+  "note": "planeamos can be present or preterite"
+ },
+ {
+  "id": "condperf:139",
+  "q": "Cuando te llamé ayer, no sabías de la reunión; ni idea, ___ (olvidar) mi mensaje.",
+  "key": "habrías olvidado",
+  "options": [
+   "habrías olvidado",
+   "olvidarías",
+   "habrás olvidado",
+   "habías olvidado"
+  ],
+  "why": "also acceptable: habrás olvidado",
+  "note": "both conjecture forms natural"
+ },
+ {
+  "id": "imperfecto:62",
+  "q": "Antes de la reunión, tú te ___ (ver) muy nervioso.",
+  "key": "veías",
+  "options": [
+   "veías",
+   "viste",
+   "verías",
+   "vieras"
+  ],
+  "why": "also acceptable: viste",
+  "note": "te viste muy nervioso (completed impression) also natural"
+ },
+ {
+  "id": "perfecto:69",
+  "q": "Aún no ___ (lograr) recordar dónde dejé las gafas.",
+  "key": "he logrado",
+  "options": [
+   "he logrado",
+   "logré",
+   "había logrado",
+   "haya logrado"
+  ],
+  "why": "also acceptable: logré",
+  "note": "aún no logré natural in LatAm"
+ },
+ {
+  "id": "plusc:142",
+  "q": "Cuando miré el reloj, ya ___ (pasar) las doce.",
+  "key": "había pasado",
+  "options": [
+   "había pasado",
+   "ha pasado",
+   "pasaba",
+   "hubiera pasado"
+  ],
+  "why": "unnatural",
+  "note": "las doce is plural: ya habían pasado las doce; options only singular"
+ },
+ {
+  "id": "perfecto:144",
+  "q": "Todo este tiempo ___ (esperar) nosotros una llamada tuya.",
+  "key": "hemos esperado",
+  "options": [
+   "hemos esperado",
+   "esperamos",
+   "habíamos esperado",
+   "hayamos esperado"
+  ],
+  "why": "also acceptable: esperamos",
+  "note": "preterite also natural for the period"
+ },
+ {
+  "id": "presente:48",
+  "q": "Nosotros ___ (pensar) en cambiar de apartamento porque el arriendo está carísimo.",
+  "key": "pensamos",
+  "options": [
+   "pensamos",
+   "pensábamos",
+   "pensemos",
+   "pensaremos"
+  ],
+  "why": "also acceptable: pensábamos",
+  "note": "softened imperfect we were thinking is very common"
+ },
+ {
+  "id": "condicional:130",
+  "q": "Dijo que ___ (mandar) el paquete esa misma semana.",
+  "key": "mandaría",
+  "options": [
+   "mandaría",
+   "mandará",
+   "mandaba"
+  ],
+  "why": "also acceptable: mandaba",
+  "note": "imperfect for planned future in the past"
+ },
+ {
+  "id": "perfsubj:49",
+  "q": "Dudo que alguien ___ (cubrir) los gastos del viaje.",
+  "key": "haya cubierto",
+  "options": [
+   "haya cubierto",
+   "ha cubierto",
+   "cubra",
+   "hubiera cubierto"
+  ],
+  "why": "picked cubra; also acceptable: cubra",
+  "note": "context does not fix time"
+ },
+ {
+  "id": "futperf:146",
+  "q": "Llegamos y el lugar estaba cerrado; ni idea, ___ (escribir) mal la fecha.",
+  "key": "habremos escrito",
+  "options": [
+   "habremos escrito",
+   "escribiremos",
+   "habríamos escrito",
+   "hayamos escrito"
+  ],
+  "why": "also acceptable: habríamos escrito",
+  "note": "both conjecture forms natural"
+ },
+ {
+  "id": "condicional:64",
+  "q": "Mamá, ¿me ___ (dejar) ir a la fiesta de Daniela?",
+  "key": "dejaría",
+  "options": [
+   "dejaría",
+   "dejará",
+   "dejaba"
+  ],
+  "why": "also acceptable: dejaba",
+  "note": "polite imperfect me dejaba ir is colloquial Colombian"
+ },
+ {
+  "id": "presubj:191",
+  "q": "Aunque ustedes ___ (rogar), no voy a cambiar de idea.",
+  "key": "rueguen",
+  "options": [
+   "rueguen",
+   "ruegan",
+   "rogarán",
+   "rogaran"
+  ],
+  "why": "also acceptable: rogaran",
+  "note": "aunque + imperfect subjunctive for a hypothetical"
+ },
+ {
+  "id": "plusc:113",
+  "q": "Me enteré de que Valentina ya ___ (dejar) su trabajo en el banco.",
+  "key": "había dejado",
+  "options": [
+   "había dejado",
+   "ha dejado",
+   "dejaba",
+   "hubiera dejado"
+  ],
+  "why": "also acceptable: ha dejado",
+  "note": "present perfect fine when the news is current"
+ },
+ {
+  "id": "perfecto:48",
+  "q": "Mi barrio ___ (cambiar) mucho desde que llegué.",
+  "key": "ha cambiado",
+  "options": [
+   "ha cambiado",
+   "cambió",
+   "había cambiado",
+   "haya cambiado"
+  ],
+  "why": "also acceptable: cambió",
+  "note": "LatAm preterite with desde que"
+ },
+ {
+  "id": "perfecto:130",
+  "q": "En lo que va del año, ellos ___ (abrir) dos sucursales nuevas.",
+  "key": "han abierto",
+  "options": [
+   "han abierto",
+   "abrieron",
+   "habían abierto",
+   "hayan abierto"
+  ],
+  "why": "also acceptable: abrieron",
+  "note": "LatAm preterite with en lo que va del año"
+ },
+ {
+  "id": "condperf:144",
+  "q": "Cuando vi el vaso vacío, pensé en Carlos; ni idea, ___ (tomar) todo el jugo.",
+  "key": "habría tomado",
+  "options": [
+   "habría tomado",
+   "tomaría",
+   "habrá tomado",
+   "había tomado"
+  ],
+  "why": "also acceptable: habrá tomado",
+  "note": "both conjecture forms natural"
+ },
+ {
+  "id": "perfsubj:50",
+  "q": "No creo que esa planta ___ (morir) por falta de agua; la regué ayer.",
+  "key": "haya muerto",
+  "options": [
+   "haya muerto",
+   "ha muerto",
+   "muera",
+   "hubiera muerto"
+  ],
+  "why": "also acceptable: muera",
+  "note": "future reading also fits"
+ },
+ {
+  "id": "pluscsubj:64",
+  "q": "Ojalá mi abuelo ___ (conocer) a sus bisnietos.",
+  "key": "hubiera conocido",
+  "options": [
+   "hubiera conocido",
+   "había conocido",
+   "conociera",
+   "habría conocido"
+  ],
+  "why": "picked conociera; also acceptable: conociera",
+  "note": "depends on whether the abuelo is alive"
+ },
+ {
+  "id": "perfecto:22",
+  "q": "Aún no ___ (abrir) nosotros el regalo que nos mandó mi tía.",
+  "key": "hemos abierto",
+  "options": [
+   "hemos abierto",
+   "abrimos",
+   "habíamos abierto",
+   "hayamos abierto"
+  ],
+  "why": "also acceptable: abrimos",
+  "note": "aún no + preterite natural in LatAm"
+ },
+ {
+  "id": "condicional:91",
+  "q": "Anoche el tráfico estaba terrible; ___ (haber) un partido en el estadio.",
+  "key": "habría",
+  "options": [
+   "habría",
+   "habrá",
+   "había"
+  ],
+  "why": "also acceptable: había",
+  "note": "statement or conjecture both natural"
+ },
+ {
+  "id": "perfecto:7",
+  "q": "En mi vida ___ (comer) algo tan picante.",
+  "key": "he comido",
+  "options": [
+   "he comido",
+   "comí",
+   "había comido",
+   "haya comido"
+  ],
+  "why": "also acceptable: comí",
+  "note": "en mi vida + preterite natural in LatAm"
+ },
+ {
+  "id": "perfecto:33",
+  "q": "En lo que va del año, la empresa ___ (crecer) un diez por ciento.",
+  "key": "ha crecido",
+  "options": [
+   "ha crecido",
+   "creció",
+   "había crecido",
+   "haya crecido"
+  ],
+  "why": "also acceptable: creció",
+  "note": "LatAm preterite with en lo que va del año"
+ },
+ {
+  "id": "perfecto:5",
+  "q": "Nosotros nunca ___ (estar) en San Andrés.",
+  "key": "hemos estado",
+  "options": [
+   "hemos estado",
+   "estuvimos",
+   "habíamos estado",
+   "hayamos estado"
+  ],
+  "why": "also acceptable: estuvimos",
+  "note": "nunca + preterite natural in LatAm"
+ },
+ {
+  "id": "condicional:89",
+  "q": "Le dije que yo lo ___ (esperar) hasta el lunes.",
+  "key": "esperaría",
+  "options": [
+   "esperaría",
+   "esperaré",
+   "esperaba"
+  ],
+  "why": "also acceptable: esperaba",
+  "note": "imperfect for future in the past is colloquial"
+ },
+ {
+  "id": "futperf:108",
+  "q": "El mensaje salió raro; no sé, ___ (escribir) mal el número.",
+  "key": "habré escrito",
+  "options": [
+   "habré escrito",
+   "escribiré",
+   "habría escrito",
+   "haya escrito"
+  ],
+  "why": "also acceptable: habría escrito",
+  "note": "both conjecture forms natural"
+ },
+ {
+  "id": "condicional:140",
+  "q": "El vecino gritaba mucho anoche; ___ (estar) borracho.",
+  "key": "estaría",
+  "options": [
+   "estaría",
+   "estará",
+   "estaba"
+  ],
+  "why": "also acceptable: estaba",
+  "note": "statement or conjecture both natural"
+ },
+ {
+  "id": "condicional:71",
+  "q": "Tú ___ (deber) descansar un poco, estás pálido.",
+  "key": "deberías",
+  "options": [
+   "deberías",
+   "deberás",
+   "debieras"
+  ],
+  "why": "also acceptable: debieras",
+  "note": "debiera is an accepted variant"
+ },
+ {
+  "id": "perfsubj:80",
+  "q": "No es justo que ustedes ___ (trabajar) tanto este mes sin descanso.",
+  "key": "hayan trabajado",
+  "options": [
+   "hayan trabajado",
+   "han trabajado",
+   "trabajen",
+   "hubieran trabajado"
+  ],
+  "why": "picked trabajen; also acceptable: trabajen",
+  "note": "este mes allows ongoing or completed reading"
+ },
+ {
+  "id": "plusc:129",
+  "q": "Mi vecino juró que él nunca ___ (tocar) mi carro.",
+  "key": "había tocado",
+  "options": [
+   "había tocado",
+   "tocó",
+   "ha tocado",
+   "hubiera tocado"
+  ],
+  "why": "also acceptable: tocó",
+  "note": "preterite common in reported speech"
+ },
+ {
+  "id": "imperfecto:48",
+  "q": "El sábado no fuimos a la playa porque ___ (llover) muy fuerte.",
+  "key": "llovía",
+  "options": [
+   "llovía",
+   "llovió",
+   "llovería",
+   "lloviera"
+  ],
+  "why": "picked llovió; also acceptable: llovió",
+  "note": "background imperfect also natural"
+ },
+ {
+  "id": "futperf:87",
+  "q": "Hace una hora no sé nada de Pedro; ___ (quedar) sin batería.",
+  "key": "habrá quedado",
+  "options": [
+   "habrá quedado",
+   "quedará",
+   "habría quedado",
+   "haya quedado"
+  ],
+  "why": "unnatural",
+  "note": "quedar sin batería needs se: se habrá quedado"
+ },
+ {
+  "id": "perfecto:105",
+  "q": "Mi jefe nunca ___ (aceptar) una excusa.",
+  "key": "ha aceptado",
+  "options": [
+   "ha aceptado",
+   "aceptó",
+   "había aceptado",
+   "haya aceptado"
+  ],
+  "why": "also acceptable: aceptó",
+  "note": "nunca + preterite natural in LatAm"
+ },
+ {
+  "id": "presubj:41",
+  "q": "Ojalá que mis papás ___ (venir) a mi graduación.",
+  "key": "vengan",
+  "options": [
+   "vengan",
+   "vienen",
+   "vinieran",
+   "vendrán"
+  ],
+  "why": "also acceptable: vinieran",
+  "note": "ojalá + imperfect subjunctive also fine"
+ },
+ {
+  "id": "perfsubj:100",
+  "q": "Cuando los técnicos ya ___ (instalar) la cocina, traeremos los muebles.",
+  "key": "hayan instalado",
+  "options": [
+   "hayan instalado",
+   "han instalado",
+   "instalen",
+   "hubieran instalado"
+  ],
+  "why": "also acceptable: instalen",
+  "note": "cuando ya instalen equally natural"
+ },
+ {
+  "id": "futperf:135",
+  "q": "Los de la mesa de al lado pagaron rápido; quién sabe, ___ (sacar) buena propina.",
+  "key": "habrán sacado",
+  "options": [
+   "habrán sacado",
+   "sacarán",
+   "habrían sacado",
+   "hayan sacado"
+  ],
+  "why": "unnatural",
+  "note": "illogical: diners who paid quickly do not sacar propina"
+ },
+ {
+  "id": "condperf:82",
+  "q": "Con ese abrigo, yo no ___ (sentir) frío en la montaña.",
+  "key": "habría sentido",
+  "options": [
+   "habría sentido",
+   "sentiría",
+   "habré sentido",
+   "había sentido"
+  ],
+  "why": "picked sentiría; also acceptable: sentiría",
+  "note": "no time anchor; past or present hypothetical"
+ },
+ {
+  "id": "perfecto:36",
+  "q": "En lo que va del semestre, ustedes ___ (faltar) a clase seis veces.",
+  "key": "han faltado",
+  "options": [
+   "han faltado",
+   "faltaron",
+   "habían faltado",
+   "hayan faltado"
+  ],
+  "why": "also acceptable: faltaron",
+  "note": "LatAm preterite with en lo que va del semestre"
+ },
+ {
+  "id": "presubj:198",
+  "q": "Quizás nosotros ___ (viajar) en diciembre, aún no lo decidimos.",
+  "key": "viajemos",
+  "options": [
+   "viajemos",
+   "viajamos",
+   "viajaremos",
+   "viajáramos"
+  ],
+  "why": "also acceptable: viajaremos",
+  "note": "quizás + future indicative is standard"
+ },
+ {
+  "id": "perfecto:95",
+  "q": "En los últimos veinte años, la tecnología ___ (cambiar) nuestra forma de trabajar.",
+  "key": "ha cambiado",
+  "options": [
+   "ha cambiado",
+   "cambió",
+   "había cambiado",
+   "haya cambiado"
+  ],
+  "why": "also acceptable: cambió",
+  "note": "LatAm preterite with en los últimos años"
+ },
+ {
+  "id": "presubj:40",
+  "q": "Ojalá el consulado nos ___ (dar) la visa antes de diciembre.",
+  "key": "dé",
+  "options": [
+   "dé",
+   "da",
+   "diera",
+   "dará"
+  ],
+  "why": "also acceptable: diera",
+  "note": "ojalá + imperfect subjunctive also fine"
+ },
+ {
+  "id": "condicional:131",
+  "q": "Pensábamos que ellos ___ (llegar) más temprano.",
+  "key": "llegarían",
+  "options": [
+   "llegarían",
+   "llegarán",
+   "llegaban"
+  ],
+  "why": "also acceptable: llegaban",
+  "note": "imperfect for future in the past is colloquial"
+ },
+ {
+  "id": "perfsubj:88",
+  "q": "Escríbeme cuando ya ___ (entrar) al edificio, Valentina.",
+  "key": "hayas entrado",
+  "options": [
+   "hayas entrado",
+   "has entrado",
+   "entres",
+   "hubieras entrado"
+  ],
+  "why": "also acceptable: entres",
+  "note": "cuando ya entres equally natural"
+ },
+ {
+  "id": "condperf:141",
+  "q": "Cuando entré a la oficina, estaba oscura; no sé, todos se ___ (ir) a almorzar.",
+  "key": "habrían ido",
+  "options": [
+   "habrían ido",
+   "irían",
+   "habrán ido",
+   "habían ido"
+  ],
+  "why": "also acceptable: habrán ido",
+  "note": "both conjecture forms natural"
+ },
+ {
+  "id": "perfecto:64",
+  "q": "Pedro todavía no ___ (traer) los documentos que le pedí.",
+  "key": "ha traído",
+  "options": [
+   "ha traído",
+   "trajo",
+   "había traído",
+   "haya traído"
+  ],
+  "why": "also acceptable: trajo",
+  "note": "todavía no + preterite natural in LatAm"
+ },
+ {
+  "id": "impsubj:75",
+  "q": "Nunca pensé que yo ___ (llegar) a ser jefe de la oficina.",
+  "key": "llegara",
+  "options": [
+   "llegara",
+   "llegue",
+   "llegaba",
+   "llegaría"
+  ],
+  "why": "picked llegaría",
+  "note": ""
+ },
+ {
+  "id": "presubj:194",
+  "q": "Quizás yo no ___ (ir) a la fiesta, todavía lo estoy pensando.",
+  "key": "vaya",
+  "options": [
+   "vaya",
+   "voy",
+   "iré",
+   "fuera"
+  ],
+  "why": "also acceptable: iré",
+  "note": "quizás + future indicative is standard"
+ },
+ {
+  "id": "condicional:90",
+  "q": "¿Cuántos años ___ (tener) tu abuela cuando se casó?",
+  "key": "tendría",
+  "options": [
+   "tendría",
+   "tendrá",
+   "tenía"
+  ],
+  "why": "picked tenía",
+  "note": ""
+ },
+ {
+  "id": "presubj:39",
+  "q": "Ojalá tú ___ (ganar) el concurso la próxima semana.",
+  "key": "ganes",
+  "options": [
+   "ganes",
+   "ganas",
+   "ganaras",
+   "ganarás"
+  ],
+  "why": "also acceptable: ganaras",
+  "note": "ojalá + imperfect subjunctive also fine"
+ },
+ {
+  "id": "perfecto:47",
+  "q": "Con los años, mi abuelo se ___ (volver) muy olvidadizo.",
+  "key": "ha vuelto",
+  "options": [
+   "ha vuelto",
+   "volvió",
+   "había vuelto",
+   "haya vuelto"
+  ],
+  "why": "also acceptable: volvió",
+  "note": "preterite also natural with con los años"
+ },
+ {
+  "id": "condicional:88",
+  "q": "Sabíamos que ellos nunca ___ (recibir) a un extraño en su casa.",
+  "key": "recibirían",
+  "options": [
+   "recibirían",
+   "recibirán",
+   "recibían"
+  ],
+  "why": "also acceptable: recibían",
+  "note": "habitual imperfect also fits"
+ },
+ {
+  "id": "perfecto:52",
+  "q": "Mi tío jamás ___ (pagar) un impuesto a tiempo.",
+  "key": "ha pagado",
+  "options": [
+   "ha pagado",
+   "pagó",
+   "había pagado",
+   "haya pagado"
+  ],
+  "why": "also acceptable: pagó",
+  "note": "jamás + preterite natural in LatAm"
+ },
+ {
+  "id": "condicional:22",
+  "q": "Señor, ¿me ___ (dar) su nombre completo, por favor?",
+  "key": "daría",
+  "options": [
+   "daría",
+   "dará",
+   "daba"
+  ],
+  "why": "also acceptable: daba",
+  "note": "polite imperfect me daba is colloquial Colombian"
+ },
+ {
+  "id": "condicional:44",
+  "q": "¿Quién ___ (ser) ese hombre que preguntó por ti anoche?",
+  "key": "sería",
+  "options": [
+   "sería",
+   "será",
+   "era"
+  ],
+  "why": "also acceptable: era",
+  "note": "plain past question also natural"
+ },
+ {
+  "id": "presubj:82",
+  "q": "No supongo que Laura ___ (vender) su carro tan barato.",
+  "key": "venda",
+  "options": [
+   "venda",
+   "vende",
+   "venderá",
+   "vendiera"
+  ],
+  "why": "unnatural",
+  "note": "no supongo que is unnatural; no creo que"
+ },
+ {
+  "id": "futperf:85",
+  "q": "El profesor no vino; ni idea, se ___ (quedar) atrapado en el tráfico.",
+  "key": "habrá quedado",
+  "options": [
+   "habrá quedado",
+   "quedará",
+   "habría quedado",
+   "haya quedado"
+  ],
+  "why": "also acceptable: habría quedado",
+  "note": "both conjecture forms natural"
+ },
+ {
+  "id": "perfecto:114",
+  "q": "Ya ___ (llamar) yo a todos mis amigos y nadie puede ir.",
+  "key": "he llamado",
+  "options": [
+   "he llamado",
+   "llamé",
+   "había llamado",
+   "haya llamado"
+  ],
+  "why": "also acceptable: llamé",
+  "note": "ya + preterite natural in LatAm"
+ },
+ {
+  "id": "futuro:122",
+  "q": "¿Cuánto ___ (costar) un pasaje a Leticia? Debe ser caro.",
+  "key": "costará",
+  "options": [
+   "costará",
+   "costaría",
+   "costaba",
+   "cueste"
+  ],
+  "why": "also acceptable: costaría",
+  "note": "conditional also natural for a hypothetical purchase"
+ },
+ {
+  "id": "perfecto:59",
+  "q": "Doctor, ¿alguna vez ___ (romper) usted un hueso?",
+  "key": "ha roto",
+  "options": [
+   "ha roto",
+   "rompió",
+   "había roto",
+   "haya roto"
+  ],
+  "why": "also acceptable: rompió; unnatural",
+  "note": "romper un hueso needs se: se ha roto; alguna vez + preterite also fine in LatAm"
+ },
+ {
+  "id": "perfsubj:76",
+  "q": "Es una pena que Rosa nunca ___ (conocer) a su bisabuela.",
+  "key": "haya conocido",
+  "options": [
+   "haya conocido",
+   "ha conocido",
+   "conozca",
+   "hubiera conocido"
+  ],
+  "why": "also acceptable: hubiera conocido",
+  "note": "pluperfect subjunctive fine for a long-past fact"
+ },
+ {
+  "id": "perfsubj:35",
+  "q": "No creo que tú ___ (leer) todo el libro en un día.",
+  "key": "hayas leído",
+  "options": [
+   "hayas leído",
+   "has leído",
+   "leas",
+   "hubieras leído"
+  ],
+  "why": "picked leas; also acceptable: leas",
+  "note": "could be ability (future) or completed act"
+ },
+ {
+  "id": "futperf:140",
+  "q": "Los vecinos se quejan; ni idea, ___ (oír) la música de anoche.",
+  "key": "habrán oído",
+  "options": [
+   "habrán oído",
+   "oirán",
+   "habrían oído",
+   "hayan oído"
+  ],
+  "why": "also acceptable: habrían oído",
+  "note": "both conjecture forms natural"
+ },
+ {
+  "id": "pluscsubj:136",
+  "q": "Si no ___ (existir) internet, no habríamos podido trabajar desde casa.",
+  "key": "hubiera existido",
+  "options": [
+   "hubiera existido",
+   "había existido",
+   "existiera",
+   "habría existido"
+  ],
+  "why": "also acceptable: existiera",
+  "note": "atemporal condition allows imperfect subjunctive"
+ },
+ {
+  "id": "futperf:107",
+  "q": "Esos dos llegaron felices; quién sabe, ___ (encontrar) lo que buscaban.",
+  "key": "habrán encontrado",
+  "options": [
+   "habrán encontrado",
+   "encontrarán",
+   "habrían encontrado",
+   "hayan encontrado"
+  ],
+  "why": "also acceptable: habrían encontrado",
+  "note": "both conjecture forms natural"
+ },
+ {
+  "id": "perfecto:91",
+  "q": "Desde pequeña, Valentina ___ (tener) una voz increíble.",
+  "key": "ha tenido",
+  "options": [
+   "ha tenido",
+   "tuvo",
+   "había tenido",
+   "haya tenido"
+  ],
+  "why": "also acceptable: tuvo",
+  "note": "preterite natural in LatAm"
+ },
+ {
+  "id": "perfecto:53",
+  "q": "¿___ (visitar) ustedes alguna vez el Eje Cafetero?",
+  "key": "han visitado",
+  "options": [
+   "han visitado",
+   "visitaron",
+   "habían visitado",
+   "hayan visitado"
+  ],
+  "why": "also acceptable: visitaron",
+  "note": "alguna vez + preterite standard in Colombia"
+ },
+ {
+  "id": "condicional:40",
+  "q": "Yo sabía que tú ___ (poder) con ese examen.",
+  "key": "podrías",
+  "options": [
+   "podrías",
+   "podrás",
+   "podías"
+  ],
+  "why": "picked podías; also acceptable: podías",
+  "note": "conditional also fits I knew you would manage"
+ },
+ {
+  "id": "perfecto:3",
+  "q": "¿___ (ver) ustedes alguna vez un eclipse total?",
+  "key": "han visto",
+  "options": [
+   "han visto",
+   "vieron",
+   "habían visto",
+   "hayan visto"
+  ],
+  "why": "also acceptable: vieron",
+  "note": "alguna vez + preterite standard in Colombia"
+ },
+ {
+  "id": "perfecto:111",
+  "q": "¿Ya ___ (conocer) tú a los suegros de Camila?",
+  "key": "has conocido",
+  "options": [
+   "has conocido",
+   "conociste",
+   "habías conocido",
+   "hayas conocido"
+  ],
+  "why": "also acceptable: conociste",
+  "note": "ya + preterite standard in Colombia"
+ },
+ {
+  "id": "perfecto:42",
+  "q": "Hasta hoy nadie ___ (descubrir) quién dejó esa carta.",
+  "key": "ha descubierto",
+  "options": [
+   "ha descubierto",
+   "descubrió",
+   "había descubierto",
+   "haya descubierto"
+  ],
+  "why": "also acceptable: descubrió",
+  "note": "preterite natural in LatAm"
+ },
+ {
+  "id": "condperf:15",
+  "q": "Si hubiera sabido que estaba lleno, yo ___ (pedir) otro restaurante.",
+  "key": "habría pedido",
+  "options": [
+   "habría pedido",
+   "pediría",
+   "habré pedido",
+   "había pedido"
+  ],
+  "why": "unnatural",
+  "note": "pedir otro restaurante is an odd collocation; habría escogido / ido a otro"
+ },
+ {
+  "id": "impsubj:87",
+  "q": "¿Te molestaría que yo ___ (abrir) la ventana?",
+  "key": "abriera",
+  "options": [
+   "abriera",
+   "abra",
+   "abría",
+   "abriría"
+  ],
+  "why": "also acceptable: abra",
+  "note": "present subjunctive also common after molestaría"
+ },
+ {
+  "id": "perfecto:35",
+  "q": "En lo que va del año, nosotros ___ (viajar) tres veces a Cartagena.",
+  "key": "hemos viajado",
+  "options": [
+   "hemos viajado",
+   "viajamos",
+   "habíamos viajado",
+   "hayamos viajado"
+  ],
+  "why": "also acceptable: viajamos",
+  "note": "LatAm preterite with en lo que va del año"
+ },
+ {
+  "id": "condicional:137",
+  "q": "Entendí que ustedes ___ (pagar) la cuenta.",
+  "key": "pagarían",
+  "options": [
+   "pagarían",
+   "pagarán",
+   "pagaban"
+  ],
+  "why": "also acceptable: pagaban",
+  "note": "imperfect for future in the past is colloquial"
+ },
+ {
+  "id": "perfecto:15",
+  "q": "Mi mamá ya te ___ (llamar) dos veces y no contestas.",
+  "key": "ha llamado",
+  "options": [
+   "ha llamado",
+   "llamó",
+   "había llamado",
+   "haya llamado"
+  ],
+  "why": "also acceptable: llamó",
+  "note": "ya + preterite standard in Colombia"
+ },
+ {
+  "id": "plusc:114",
+  "q": "Supe que mis primos ya se ___ (casar) por la iglesia.",
+  "key": "habían casado",
+  "options": [
+   "habían casado",
+   "han casado",
+   "casaban",
+   "hubieran casado"
+  ],
+  "why": "also acceptable: han casado",
+  "note": "present perfect fine when the news is current"
+ },
+ {
+  "id": "perfecto:79",
+  "q": "En lo que va del año, el equipo ___ (ganar) cinco partidos seguidos.",
+  "key": "ha ganado",
+  "options": [
+   "ha ganado",
+   "ganó",
+   "había ganado",
+   "haya ganado"
+  ],
+  "why": "also acceptable: ganó",
+  "note": "LatAm preterite with en lo que va del año"
+ },
+ {
+  "id": "presubj:98",
+  "q": "Es una lástima que mi tío no ___ (conocer) a mi hijo.",
+  "key": "conozca",
+  "options": [
+   "conozca",
+   "conoce",
+   "conocerá",
+   "conociera"
+  ],
+  "why": "also acceptable: conociera",
+  "note": "depends on whether the tío is alive"
+ },
+ {
+  "id": "perfecto:4",
+  "q": "Camilo nunca ___ (leer) un libro entero, ni siquiera en el colegio.",
+  "key": "ha leído",
+  "options": [
+   "ha leído",
+   "leyó",
+   "había leído",
+   "haya leído"
+  ],
+  "why": "also acceptable: leyó",
+  "note": "nunca + preterite natural in LatAm"
+ },
+ {
+  "id": "perfecto:135",
+  "q": "Desde pequeño, Camilo ___ (querer) ser piloto.",
+  "key": "ha querido",
+  "options": [
+   "ha querido",
+   "quiso",
+   "había querido",
+   "haya querido"
+  ],
+  "why": "also acceptable: quiso",
+  "note": "preterite natural in LatAm"
+ },
+ {
+  "id": "preterito:51",
+  "q": "El viernes tú ___ (hablar) con el gerente por la mañana, ¿no?",
+  "key": "hablaste",
+  "options": [
+   "hablaste",
+   "hablabas",
+   "has hablado",
+   "hablas"
+  ],
+  "why": "also acceptable: hablas",
+  "note": "el viernes can be last or next Friday"
+ },
+ {
+  "id": "perfsubj:91",
+  "q": "Cuando ya ___ (probar) los dos platos, me dices cuál prefieres.",
+  "key": "hayas probado",
+  "options": [
+   "hayas probado",
+   "has probado",
+   "pruebes",
+   "hubieras probado"
+  ],
+  "why": "also acceptable: pruebes",
+  "note": "cuando ya pruebes equally natural"
+ },
+ {
+  "id": "condperf:133",
+  "q": "Llegamos tarde y no quedaba pastel; ni idea, los invitados se lo ___ (comer).",
+  "key": "habrían comido",
+  "options": [
+   "habrían comido",
+   "comerían",
+   "habrán comido",
+   "habían comido"
+  ],
+  "why": "also acceptable: habrán comido",
+  "note": "both conjecture forms natural"
+ },
+ {
+  "id": "perfecto:2",
+  "q": "Mis abuelos jamás ___ (salir) del país.",
+  "key": "han salido",
+  "options": [
+   "han salido",
+   "salieron",
+   "habían salido",
+   "hayan salido"
+  ],
+  "why": "also acceptable: salieron",
+  "note": "jamás + preterite natural in LatAm"
+ },
+ {
+  "id": "presente:88",
+  "q": "El jueves nosotros ___ (pasar) la tarde en tu casa; yo llevo las crispetas.",
+  "key": "pasamos",
+  "options": [
+   "pasamos",
+   "pasábamos",
+   "pasemos",
+   "pasaremos"
+  ],
+  "why": "picked pasaremos; also acceptable: pasaremos",
+  "note": "present for scheduled future is natural"
+ },
+ {
+  "id": "perfecto:21",
+  "q": "El plomero todavía no ___ (venir) y llevamos tres días sin agua.",
+  "key": "ha venido",
+  "options": [
+   "ha venido",
+   "vino",
+   "había venido",
+   "haya venido"
+  ],
+  "why": "also acceptable: vino",
+  "note": "todavía no + preterite natural in LatAm"
+ },
+ {
+  "id": "futperf:126",
+  "q": "Daniel está muy dormido; no sé, ___ (beber) demasiado café anoche.",
+  "key": "habrá bebido",
+  "options": [
+   "habrá bebido",
+   "beberá",
+   "habría bebido",
+   "haya bebido"
+  ],
+  "why": "also acceptable: habría bebido",
+  "note": "both conjecture forms natural"
+ },
+ {
+  "id": "impsubj:25",
+  "q": "Compré dos entradas para que mi amigo y yo ___ (ir) al concierto.",
+  "key": "fuéramos",
+  "options": [
+   "fuéramos",
+   "vayamos",
+   "íbamos",
+   "iríamos"
+  ],
+  "why": "also acceptable: vayamos",
+  "note": "present subjunctive fine for a future concert"
+ },
+ {
+  "id": "impsubj:73",
+  "q": "Les pedí a mis vecinos que ___ (cuidar) al perro.",
+  "key": "cuidaran",
+  "options": [
+   "cuidaran",
+   "cuiden",
+   "cuidaban",
+   "cuidarían"
+  ],
+  "why": "also acceptable: cuiden",
+  "note": "present subjunctive fine if the favour is still pending"
+ },
+ {
+  "id": "plusc:140",
+  "q": "Antes de mudarte, tú nunca me ___ (escribir) una carta.",
+  "key": "habías escrito",
+  "options": [
+   "habías escrito",
+   "escribiste",
+   "has escrito",
+   "hubieras escrito"
+  ],
+  "why": "also acceptable: escribiste",
+  "note": "preterite natural with antes de mudarte"
+ },
+ {
+  "id": "impneg:43",
+  "q": "Mariana, ___ (seguir) a ese carro; nos vamos a perder.",
+  "key": "no sigas",
+  "options": [
+   "no sigas",
+   "sigue",
+   "sigues",
+   "sigas"
+  ],
+  "why": "picked sigue",
+  "note": ""
+ },
+ {
+  "id": "pluscsubj:3",
+  "q": "Si nosotros ___ (salir) más temprano, no habríamos quedado en el trancón.",
+  "key": "hubiéramos salido",
+  "options": [
+   "hubiéramos salido",
+   "habíamos salido",
+   "saliéramos",
+   "habríamos salido"
+  ],
+  "why": "unnatural",
+  "note": "quedar en el trancón needs nos: no nos habríamos quedado"
+ },
+ {
+  "id": "perfecto:147",
+  "q": "El internet ___ (acercar) a familias que viven muy lejos.",
+  "key": "ha acercado",
+  "options": [
+   "ha acercado",
+   "acercó",
+   "había acercado",
+   "haya acercado"
+  ],
+  "why": "also acceptable: acercó",
+  "note": "preterite natural in LatAm"
+ },
+ {
+  "id": "impsubj:80",
+  "q": "No pensé que la película ___ (durar) tres horas.",
+  "key": "durara",
+  "options": [
+   "durara",
+   "dure",
+   "duraba",
+   "duraría"
+  ],
+  "why": "also acceptable: duraría",
+  "note": "conditional is standard after no pensé que"
+ },
+ {
+  "id": "condicional:139",
+  "q": "Nos prometieron que nos ___ (devolver) la plata en una semana.",
+  "key": "devolverían",
+  "options": [
+   "devolverían",
+   "devolverán",
+   "devolvían"
+  ],
+  "why": "also acceptable: devolvían",
+  "note": "imperfect for future in the past is colloquial"
+ },
+ {
+  "id": "condicional:45",
+  "q": "Cuando salimos de la fiesta, ___ (llevar) allí casi seis horas.",
+  "key": "llevaríamos",
+  "options": [
+   "llevaríamos",
+   "llevaremos",
+   "llevábamos"
+  ],
+  "why": "picked llevábamos",
+  "note": ""
+ },
+ {
+  "id": "futperf:69",
+  "q": "Antes de que termine el día, el abogado ya te ___ (llamar).",
+  "key": "habrá llamado",
+  "options": [
+   "habrá llamado",
+   "llamará",
+   "habría llamado",
+   "haya llamado"
+  ],
+  "why": "also acceptable: llamará",
+  "note": "simple future equally natural"
+ },
+ {
+  "id": "presente:105",
+  "q": "Yo ___ (querer) hablar contigo desde hace días, pero nunca contestas.",
+  "key": "quiero",
+  "options": [
+   "quiero",
+   "quise",
+   "quería",
+   "quiera"
+  ],
+  "why": "also acceptable: quería",
+  "note": "quería hablar contigo desde hace días is very natural"
+ },
+ {
+  "id": "perfecto:89",
+  "q": "Mi abuela siempre ___ (preparar) el almuerzo para toda la familia los domingos.",
+  "key": "ha preparado",
+  "options": [
+   "ha preparado",
+   "preparó",
+   "había preparado",
+   "haya preparado"
+  ],
+  "why": "also acceptable: preparó",
+  "note": "preterite if she is gone; plain prepara would be most natural but absent"
+ },
+ {
+  "id": "perfecto:101",
+  "q": "Mi mamá nunca ___ (beber) alcohol.",
+  "key": "ha bebido",
+  "options": [
+   "ha bebido",
+   "bebió",
+   "había bebido",
+   "haya bebido"
+  ],
+  "why": "also acceptable: bebió",
+  "note": "nunca + preterite common in LatAm for life experience"
+ },
+ {
+  "id": "perfecto:138",
+  "q": "Desde que me mudé, no ___ (volver) a ver a mis primos.",
+  "key": "he vuelto",
+  "options": [
+   "he vuelto",
+   "volví",
+   "había vuelto",
+   "haya vuelto"
+  ],
+  "why": "also acceptable: volví",
+  "note": "LatAm preterite with desde que is common"
+ },
+ {
+  "id": "perfecto:100",
+  "q": "¿Alguna vez ___ (ir) tú a un concierto de Carlos Vives?",
+  "key": "has ido",
+  "options": [
+   "has ido",
+   "fuiste",
+   "habías ido",
+   "hayas ido"
+  ],
+  "why": "also acceptable: fuiste",
+  "note": "alguna vez + preterite standard in Colombia"
+ },
+ {
+  "id": "perfecto:11",
+  "q": "Mis hijos nunca ___ (tocar) la nieve.",
+  "key": "han tocado",
+  "options": [
+   "han tocado",
+   "tocaron",
+   "habían tocado",
+   "hayan tocado"
+  ],
+  "why": "also acceptable: tocaron",
+  "note": "nunca + preterite acceptable in LatAm"
+ },
+ {
+  "id": "presente:46",
+  "q": "Yo no ___ (entender) esta pregunta; ¿me la puedes explicar?",
+  "key": "entiendo",
+  "options": [
+   "entiendo",
+   "entendí",
+   "entendía",
+   "entienda"
+  ],
+  "why": "also acceptable: entendí",
+  "note": "no entendí la pregunta is very common"
+ },
+ {
+  "id": "perfecto:146",
+  "q": "La música colombiana ___ (llegar) a todo el mundo en los últimos años.",
+  "key": "ha llegado",
+  "options": [
+   "ha llegado",
+   "llegó",
+   "había llegado",
+   "haya llegado"
+  ],
+  "why": "also acceptable: llegó",
+  "note": "en los últimos años takes preterite in LatAm too"
+ },
+ {
+  "id": "perfecto:50",
+  "q": "¿Alguna vez ___ (escribir) tú una carta de amor?",
+  "key": "has escrito",
+  "options": [
+   "has escrito",
+   "escribiste",
+   "habías escrito",
+   "hayas escrito"
+  ],
+  "why": "also acceptable: escribiste",
+  "note": "alguna vez + preterite standard in Colombia"
+ },
+ {
+  "id": "futperf:13",
+  "q": "Cuando tengas treinta años, tú ya ___ (conocer) medio mundo.",
+  "key": "habrás conocido",
+  "options": [
+   "habrás conocido",
+   "conocerás",
+   "habrías conocido",
+   "hayas conocido"
+  ],
+  "why": "also acceptable: conocerás",
+  "note": "simple future also natural with cuando tengas"
+ },
+ {
+  "id": "perfsubj:115",
+  "q": "No hay un solo estudiante que ___ (entregar) la tarea completa.",
+  "key": "haya entregado",
+  "options": [
+   "haya entregado",
+   "ha entregado",
+   "entregue",
+   "hubiera entregado"
+  ],
+  "why": "also acceptable: entregue",
+  "note": "habitual reading with present subjunctive also fine"
+ },
+ {
+  "id": "perfecto:139",
+  "q": "Siempre ___ (tener) yo la costumbre de levantarme temprano.",
+  "key": "he tenido",
+  "options": [
+   "he tenido",
+   "tuve",
+   "había tenido",
+   "haya tenido"
+  ],
+  "why": "also acceptable: tuve",
+  "note": "siempre tuve la costumbre equally natural"
+ },
+ {
+  "id": "perfecto:85",
+  "q": "Siempre ___ (creer) nosotros que la honestidad es lo más importante.",
+  "key": "hemos creído",
+  "options": [
+   "hemos creído",
+   "creímos",
+   "habíamos creído",
+   "hayamos creído"
+  ],
+  "why": "also acceptable: creímos",
+  "note": "siempre creímos equally natural"
+ },
+ {
+  "id": "imperfecto:142",
+  "q": "Yo ___ (llorar) mientras veía la película.",
+  "key": "lloraba",
+  "options": [
+   "lloraba",
+   "lloré",
+   "lloraría",
+   "llorara"
+  ],
+  "why": "also acceptable: lloré",
+  "note": "lloré mientras veía is natural (completed event)"
+ },
+ {
+  "id": "condicional:46",
+  "q": "Aquella noche no había luz en el barrio; ___ (haber) un apagón.",
+  "key": "habría",
+  "options": [
+   "habría",
+   "habrá",
+   "había"
+  ],
+  "why": "picked había",
+  "note": ""
+ },
+ {
+  "id": "perfecto:39",
+  "q": "En lo que va del año, tú ___ (visitar) a tu familia solo una vez.",
+  "key": "has visitado",
+  "options": [
+   "has visitado",
+   "visitaste",
+   "habías visitado",
+   "hayas visitado"
+  ],
+  "why": "also acceptable: visitaste",
+  "note": "LatAm preterite with en lo que va del año"
+ },
+ {
+  "id": "impsubj:58",
+  "q": "Los médicos le aconsejaron que ___ (dejar) el cigarrillo.",
+  "key": "dejara",
+  "options": [
+   "dejara",
+   "deje",
+   "dejaba",
+   "dejaría"
+  ],
+  "why": "also acceptable: deje",
+  "note": "present subjunctive after past main ok when advice still applies"
+ },
+ {
+  "id": "impsubj:88",
+  "q": "Mi papá estaría feliz de que nosotros ___ (visitar) el pueblo.",
+  "key": "visitáramos",
+  "options": [
+   "visitáramos",
+   "visitemos",
+   "visitábamos",
+   "visitaríamos"
+  ],
+  "why": "also acceptable: visitemos",
+  "note": "present subjunctive also heard after conditional for a future visit"
+ },
+ {
+  "id": "impsubj:20",
+  "q": "Te llamé para que ___ (saber) la noticia primero.",
+  "key": "supieras",
+  "options": [
+   "supieras",
+   "sepas",
+   "sabías",
+   "sabrías"
+  ],
+  "why": "also acceptable: sepas",
+  "note": "para que sepas fine when the news is still relevant now"
+ },
+ {
+  "id": "condperf:101",
+  "q": "Con un poco más de suerte, ellos ___ (ganar) la final el sábado.",
+  "key": "habrían ganado",
+  "options": [
+   "habrían ganado",
+   "ganarían",
+   "habrán ganado",
+   "habían ganado"
+  ],
+  "why": "also acceptable: ganarían",
+  "note": "no time anchor: past counterfactual or future hypothetical both fit"
+ },
+ {
+  "id": "perfsubj:112",
+  "q": "Queremos un mecánico que ya ___ (arreglar) carros eléctricos.",
+  "key": "haya arreglado",
+  "options": [
+   "haya arreglado",
+   "ha arreglado",
+   "arregle",
+   "hubiera arreglado"
+  ],
+  "why": "also acceptable: arregle",
+  "note": "que ya arregle (already works on) also natural"
+ },
+ {
+  "id": "perfecto:71",
+  "q": "Ya ___ (pasar) tres horas y el médico no llega.",
+  "key": "han pasado",
+  "options": [
+   "han pasado",
+   "pasaron",
+   "habían pasado",
+   "hayan pasado"
+  ],
+  "why": "also acceptable: pasaron",
+  "note": "ya pasaron tres horas common in Colombia"
+ },
+ {
+  "id": "perfsubj:71",
+  "q": "Es imposible que ellos ___ (ver) las noticias; no hay señal.",
+  "key": "hayan visto",
+  "options": [
+   "hayan visto",
+   "han visto",
+   "vean",
+   "hubieran visto"
+  ],
+  "why": "also acceptable: vean",
+  "note": "no tense anchor: could be about seeing them now"
+ },
+ {
+  "id": "presubj:30",
+  "q": "Espero que Ana ___ (llegar) bien a Medellín esta noche.",
+  "key": "llegue",
+  "options": [
+   "llegue",
+   "llega",
+   "llegará",
+   "llegara"
+  ],
+  "why": "picked llega",
+  "note": ""
+ },
+ {
+  "id": "plusc:66",
+  "q": "Antes de abrir la tienda, nosotros nunca ___ (comprar) nada al por mayor.",
+  "key": "habíamos comprado",
+  "options": [
+   "habíamos comprado",
+   "compramos",
+   "hemos comprado",
+   "hubiéramos comprado"
+  ],
+  "why": "also acceptable: compramos",
+  "note": "preterite with nunca antes de also natural in LatAm"
+ },
+ {
+  "id": "perfecto:90",
+  "q": "Hasta hoy, ellos no me ___ (pedir) disculpas.",
+  "key": "han pedido",
+  "options": [
+   "han pedido",
+   "pidieron",
+   "habían pedido",
+   "hayan pedido"
+  ],
+  "why": "also acceptable: pidieron",
+  "note": "hasta hoy no me pidieron also common in LatAm"
+ },
+ {
+  "id": "futperf:111",
+  "q": "Los precios están muy altos; quién sabe, ___ (subir) otra vez.",
+  "key": "habrán subido",
+  "options": [
+   "habrán subido",
+   "subirán",
+   "habrían subido",
+   "hayan subido"
+  ],
+  "why": "picked subirán",
+  "note": ""
+ },
+ {
+  "id": "pluscsubj:75",
+  "q": "Ojalá tú no ___ (perder) la oportunidad de viajar a Japón.",
+  "key": "hubieras perdido",
+  "options": [
+   "hubieras perdido",
+   "habías perdido",
+   "perdieras",
+   "habrías perdido"
+  ],
+  "why": "picked perdieras; also acceptable: perdieras",
+  "note": "no time anchor: present wish or past regret"
+ },
+ {
+  "id": "preterito:143",
+  "q": "Nosotros ___ (leer) el libro entero en un solo día.",
+  "key": "leímos",
+  "options": [
+   "leímos",
+   "leíamos",
+   "hemos leído",
+   "leemos"
+  ],
+  "why": "also acceptable: hemos leído",
+  "note": "no time anchor, present perfect possible"
+ },
+ {
+  "id": "imperativo:135",
+  "q": "No hay prisa, ___ (comer) tranquilos y luego pagamos.",
+  "key": "comamos",
+  "options": [
+   "comamos",
+   "comemos",
+   "comeremos",
+   "comeríamos"
+  ],
+  "why": "also acceptable: comemos",
+  "note": "comemos tranquilos as suggestion very natural"
+ },
+ {
+  "id": "preterito:44",
+  "q": "Esta tarde el alcalde ___ (anunciar) nuevas obras en el barrio.",
+  "key": "anunció",
+  "options": [
+   "anunció",
+   "anunciaba",
+   "ha anunciado",
+   "anuncia"
+  ],
+  "why": "also acceptable: ha anunciado, anuncia",
+  "note": "esta tarde allows preterite, perfect or scheduled present"
+ },
+ {
+  "id": "perfecto:81",
+  "q": "En lo que va del mes, ustedes ___ (pagar) tres facturas atrasadas.",
+  "key": "han pagado",
+  "options": [
+   "han pagado",
+   "pagaron",
+   "habían pagado",
+   "hayan pagado"
+  ],
+  "why": "also acceptable: pagaron",
+  "note": "preterite also used with en lo que va del mes in LatAm"
+ },
+ {
+  "id": "impsubj:117",
+  "q": "Le escribí a Tomás para que ___ (venir) a recogerme.",
+  "key": "viniera",
+  "options": [
+   "viniera",
+   "venga",
+   "venía",
+   "vendría"
+  ],
+  "why": "also acceptable: venga",
+  "note": "para que venga fine when the pickup is still pending"
+ },
+ {
+  "id": "pluscsubj:95",
+  "q": "Mis padres no creían que yo ___ (aprobar) todos los exámenes del semestre anterior.",
+  "key": "hubiera aprobado",
+  "options": [
+   "hubiera aprobado",
+   "había aprobado",
+   "aprobara",
+   "habría aprobado"
+  ],
+  "why": "also acceptable: aprobara",
+  "note": "aprobara also defensible"
+ },
+ {
+  "id": "pluscsubj:107",
+  "q": "Me trató como si yo le ___ (robar) algo.",
+  "key": "hubiera robado",
+  "options": [
+   "hubiera robado",
+   "había robado",
+   "robara",
+   "habría robado"
+  ],
+  "why": "also acceptable: robara",
+  "note": "como si robara also used colloquially for past"
+ },
+ {
+  "id": "plusc:58",
+  "q": "Antes de ese examen, yo nunca ___ (manejar) en la autopista.",
+  "key": "había manejado",
+  "options": [
+   "había manejado",
+   "manejé",
+   "he manejado",
+   "hubiera manejado"
+  ],
+  "why": "also acceptable: manejé",
+  "note": "nunca manejé also natural in LatAm"
+ },
+ {
+  "id": "perfecto:18",
+  "q": "Todavía no ___ (llegar) el paquete que pedí hace una semana.",
+  "key": "ha llegado",
+  "options": [
+   "ha llegado",
+   "llegó",
+   "había llegado",
+   "haya llegado"
+  ],
+  "why": "also acceptable: llegó",
+  "note": "todavía no llegó common in LatAm"
+ },
+ {
+  "id": "perfecto:10",
+  "q": "¿Alguna vez ___ (hacer) tú trampa en un examen?",
+  "key": "has hecho",
+  "options": [
+   "has hecho",
+   "hiciste",
+   "habías hecho",
+   "hayas hecho"
+  ],
+  "why": "also acceptable: hiciste",
+  "note": "alguna vez hiciste very common in LatAm"
+ },
+ {
+  "id": "perfecto:99",
+  "q": "La ciudad ___ (crecer) muchísimo en las últimas décadas.",
+  "key": "ha crecido",
+  "options": [
+   "ha crecido",
+   "creció",
+   "había crecido",
+   "haya crecido"
+  ],
+  "why": "also acceptable: creció",
+  "note": "preterite also fine"
+ },
+ {
+  "id": "perfecto:115",
+  "q": "Todavía no ___ (sacar) yo la plata del cajero.",
+  "key": "he sacado",
+  "options": [
+   "he sacado",
+   "saqué",
+   "había sacado",
+   "haya sacado"
+  ],
+  "why": "also acceptable: saqué",
+  "note": "todavía no saqué common in LatAm"
+ },
+ {
+  "id": "plusc:110",
+  "q": "Mi mamá descubrió que tú le ___ (esconder) el control remoto.",
+  "key": "habías escondido",
+  "options": [
+   "habías escondido",
+   "has escondido",
+   "escondías",
+   "hubieras escondido"
+  ],
+  "why": "also acceptable: escondías",
+  "note": "habitual escondías also fits"
+ },
+ {
+  "id": "condicional:47",
+  "q": "Esa casa ___ (costar) mucho cuando la compraron.",
+  "key": "costaría",
+  "options": [
+   "costaría",
+   "costará",
+   "costaba"
+  ],
+  "why": "picked costaba",
+  "note": ""
+ },
+ {
+  "id": "impsubj:1",
+  "q": "Camilo me pidió que lo ___ (llamar) antes de salir.",
+  "key": "llamara",
+  "options": [
+   "llamara",
+   "llame",
+   "llamaba",
+   "llamaría"
+  ],
+  "why": "also acceptable: llame",
+  "note": "que lo llame fine when the call is still pending"
+ },
+ {
+  "id": "plusc:83",
+  "q": "Hasta esa noche, el bebé nunca ___ (dormir) seis horas seguidas.",
+  "key": "había dormido",
+  "options": [
+   "había dormido",
+   "durmió",
+   "ha dormido",
+   "hubiera dormido"
+  ],
+  "why": "also acceptable: durmió",
+  "note": "nunca durmió also natural in LatAm"
+ },
+ {
+  "id": "imperfecto:63",
+  "q": "Me gustó la película porque la historia me ___ (parecer) muy original.",
+  "key": "parecía",
+  "options": [
+   "parecía",
+   "pareció",
+   "parecería",
+   "pareciera"
+  ],
+  "why": "picked pareció; also acceptable: pareció",
+  "note": "imperfect parecía equally fine"
+ },
+ {
+  "id": "perfsubj:111",
+  "q": "¿Hay alguien aquí que ___ (leer) este libro?",
+  "key": "haya leído",
+  "options": [
+   "haya leído",
+   "ha leído",
+   "lea",
+   "hubiera leído"
+  ],
+  "why": "also acceptable: lea",
+  "note": "que lea (volunteer to read) also grammatical"
+ },
+ {
+  "id": "perfecto:113",
+  "q": "Mi hija todavía no ___ (aprender) a montar en bicicleta.",
+  "key": "ha aprendido",
+  "options": [
+   "ha aprendido",
+   "aprendió",
+   "había aprendido",
+   "haya aprendido"
+  ],
+  "why": "also acceptable: aprendió",
+  "note": "todavía no aprendió common in LatAm"
+ },
+ {
+  "id": "pluscsubj:62",
+  "q": "Ojalá tú me ___ (avisar) a tiempo de la entrega.",
+  "key": "hubieras avisado",
+  "options": [
+   "hubieras avisado",
+   "habías avisado",
+   "avisaras",
+   "habrías avisado"
+  ],
+  "why": "also acceptable: avisaras",
+  "note": "no time anchor: future wish avisaras also possible"
+ },
+ {
+  "id": "condicional:132",
+  "q": "Me aseguró que el computador ___ (funcionar) bien después de la reparación.",
+  "key": "funcionaría",
+  "options": [
+   "funcionaría",
+   "funcionará",
+   "funcionaba"
+  ],
+  "why": "also acceptable: funcionaba",
+  "note": "funcionaba also fine as reported state"
+ },
+ {
+  "id": "plusc:54",
+  "q": "Hasta ese día yo nunca ___ (probar) el ají.",
+  "key": "había probado",
+  "options": [
+   "había probado",
+   "probé",
+   "he probado",
+   "hubiera probado"
+  ],
+  "why": "also acceptable: probé",
+  "note": "nunca probé also natural in LatAm"
+ },
+ {
+  "id": "condicional:84",
+  "q": "Prometiste que ___ (ayudar) con la mudanza.",
+  "key": "ayudarías",
+  "options": [
+   "ayudarías",
+   "ayudarás",
+   "ayudabas"
+  ],
+  "why": "also acceptable: ayudarás",
+  "note": "ayudarás fine since the move is still ahead"
+ },
+ {
+  "id": "plusc:57",
+  "q": "Hasta esa noche, Valentina nunca ___ (comer) sushi.",
+  "key": "había comido",
+  "options": [
+   "había comido",
+   "comió",
+   "ha comido",
+   "hubiera comido"
+  ],
+  "why": "also acceptable: comió",
+  "note": "nunca comió also natural in LatAm"
+ },
+ {
+  "id": "impneg:115",
+  "q": "Muchachos, ___ (llevar) esa caja entre los dos; es muy pesada.",
+  "key": "no lleven",
+  "options": [
+   "no lleven",
+   "lleven",
+   "llevan"
+  ],
+  "why": "picked lleven",
+  "note": ""
+ },
+ {
+  "id": "impsubj:2",
+  "q": "Mi jefe nos pidió que ___ (llegar) temprano el lunes.",
+  "key": "llegáramos",
+  "options": [
+   "llegáramos",
+   "lleguemos",
+   "llegábamos",
+   "llegaríamos"
+  ],
+  "why": "also acceptable: lleguemos",
+  "note": "lleguemos fine since Monday is still ahead"
+ },
+ {
+  "id": "perfecto:110",
+  "q": "Ya ___ (explicar) yo esto en clase, pero lo repito.",
+  "key": "he explicado",
+  "options": [
+   "he explicado",
+   "expliqué",
+   "había explicado",
+   "haya explicado"
+  ],
+  "why": "also acceptable: expliqué",
+  "note": "ya expliqué equally natural"
+ },
+ {
+  "id": "condicional:93",
+  "q": "No contestaron el teléfono ayer; ___ (estar) de viaje.",
+  "key": "estarían",
+  "options": [
+   "estarían",
+   "estarán",
+   "estaban"
+  ],
+  "why": "also acceptable: estaban",
+  "note": "estaban as plain statement also fits"
+ },
+ {
+  "id": "perfecto:97",
+  "q": "Con los meses, ellos se ___ (acercar) cada vez más.",
+  "key": "han acercado",
+  "options": [
+   "han acercado",
+   "acercaron",
+   "habían acercado",
+   "hayan acercado"
+  ],
+  "why": "also acceptable: acercaron",
+  "note": "preterite se acercaron also fine"
+ },
+ {
+  "id": "condperf:75",
+  "q": "Sin esa beca, nosotros nunca ___ (vivir) en Madrid.",
+  "key": "habríamos vivido",
+  "options": [
+   "habríamos vivido",
+   "viviríamos",
+   "habremos vivido",
+   "habíamos vivido"
+  ],
+  "why": "also acceptable: viviríamos",
+  "note": "no time anchor: could be present result (viviríamos)"
+ },
+ {
+  "id": "preterito:19",
+  "q": "Hoy en la tarde ella ___ (pedir) una cita con el médico.",
+  "key": "pidió",
+  "options": [
+   "pidió",
+   "pedía",
+   "ha pedido",
+   "pide"
+  ],
+  "why": "also acceptable: ha pedido, pide",
+  "note": "hoy en la tarde allows past, perfect or planned present"
+ },
+ {
+  "id": "futuro:126",
+  "q": "Cuando estés en Cali, ___ (probar) el cholado.",
+  "key": "probarás",
+  "options": [
+   "probarás",
+   "probarías",
+   "pruebes"
+  ],
+  "why": "unnatural",
+  "note": "natural answer prueba is not an option; future as command is stilted"
+ },
+ {
+  "id": "plusc:74",
+  "q": "A las diez de la noche, Camilo todavía no ___ (volver) del trabajo.",
+  "key": "había vuelto",
+  "options": [
+   "había vuelto",
+   "volvió",
+   "ha vuelto",
+   "hubiera vuelto"
+  ],
+  "why": "picked ha vuelto; also acceptable: ha vuelto, volvió",
+  "note": "no past frame: could be now (ha vuelto, no volvió) or a past night (había vuelto)"
+ },
+ {
+  "id": "futuro:37",
+  "q": "Si ahorramos un poco cada mes, ___ (poder) viajar en diciembre.",
+  "key": "podremos",
+  "options": [
+   "podremos",
+   "podríamos",
+   "podíamos",
+   "podamos"
+  ],
+  "why": "also acceptable: podríamos",
+  "note": "podríamos also common after si + present"
+ },
+ {
+  "id": "pluscsubj:71",
+  "q": "Ojalá nosotros ___ (ver) la película en el cine, no en el celular.",
+  "key": "hubiéramos visto",
+  "options": [
+   "hubiéramos visto",
+   "habíamos visto",
+   "viéramos",
+   "habríamos visto"
+  ],
+  "why": "also acceptable: viéramos",
+  "note": "no time anchor: could be a wish about a film not yet seen"
+ },
+ {
+  "id": "perfecto:54",
+  "q": "Nunca ___ (oír) yo una canción tan triste.",
+  "key": "he oído",
+  "options": [
+   "he oído",
+   "oí",
+   "había oído",
+   "haya oído"
+  ],
+  "why": "also acceptable: oí",
+  "note": "nunca oí also natural in LatAm"
+ },
+ {
+  "id": "perfecto:13",
+  "q": "¿Alguna vez ___ (sentir) ustedes un temblor en Bogotá?",
+  "key": "han sentido",
+  "options": [
+   "han sentido",
+   "sintieron",
+   "habían sentido",
+   "hayan sentido"
+  ],
+  "why": "also acceptable: sintieron",
+  "note": "alguna vez sintieron very common in LatAm"
+ },
+ {
+  "id": "plusc:135",
+  "q": "Antes de entrar al banco, Laura nunca ___ (tener) un trabajo fijo.",
+  "key": "había tenido",
+  "options": [
+   "había tenido",
+   "tuvo",
+   "ha tenido",
+   "hubiera tenido"
+  ],
+  "why": "also acceptable: tuvo",
+  "note": "nunca tuvo also natural in LatAm"
+ },
+ {
+  "id": "plusc:1",
+  "q": "Cuando Camilo llamó, nosotros ya ___ (cenar).",
+  "key": "habíamos cenado",
+  "options": [
+   "habíamos cenado",
+   "hemos cenado",
+   "cenábamos",
+   "hubiéramos cenado"
+  ],
+  "why": "also acceptable: cenábamos",
+  "note": "ya cenábamos (were already eating) also fits"
+ },
+ {
+  "id": "pluscsubj:148",
+  "q": "Salimos corriendo como si ___ (oír) un trueno.",
+  "key": "hubiéramos oído",
+  "options": [
+   "hubiéramos oído",
+   "habíamos oído",
+   "oyéramos",
+   "habríamos oído"
+  ],
+  "why": "also acceptable: oyéramos",
+  "note": "como si oyéramos (simultaneous) also fits"
+ },
+ {
+  "id": "futperf:137",
+  "q": "El motor hace ruido; no sé, ___ (romper) una pieza.",
+  "key": "habrán roto",
+  "options": [
+   "habrán roto",
+   "romperán",
+   "habrían roto",
+   "hayan roto"
+  ],
+  "why": "unnatural",
+  "note": "needs reflexive se habrá roto una pieza; plural habrán roto has no subject"
+ },
+ {
+  "id": "condperf:83",
+  "q": "Con tanto ruido, nadie ___ (dormir) bien esa noche.",
+  "key": "habría dormido",
+  "options": [
+   "habría dormido",
+   "dormiría",
+   "habrá dormido",
+   "había dormido"
+  ],
+  "why": "also acceptable: dormiría",
+  "note": "durmió is the natural answer and is missing; conditional readings both work"
+ },
+ {
+  "id": "condperf:138",
+  "q": "Cuando fuimos al restaurante, estaba vacío; no sé, ___ (decidir) cerrar temprano.",
+  "key": "habrían decidido",
+  "options": [
+   "habrían decidido",
+   "decidirían",
+   "habrán decidido",
+   "habían decidido"
+  ],
+  "why": "also acceptable: habrán decidido",
+  "note": "habrán decidido also used for conjecture from the present"
+ },
+ {
+  "id": "preterito:8",
+  "q": "Esta mañana yo ___ (romper) un vaso al lavar los platos.",
+  "key": "rompí",
+  "options": [
+   "rompí",
+   "rompía",
+   "he roto",
+   "rompo"
+  ],
+  "why": "also acceptable: he roto",
+  "note": "he roto also fine with esta mañana"
+ },
+ {
+  "id": "condicional:87",
+  "q": "El gerente anunció que la empresa ___ (dar) un bono en diciembre.",
+  "key": "daría",
+  "options": [
+   "daría",
+   "dará",
+   "daba"
+  ],
+  "why": "also acceptable: dará",
+  "note": "dará fine since December is still ahead"
+ },
+ {
+  "id": "perfecto:0",
+  "q": "¿Alguna vez ___ (probar) tú el sancocho de gallina?",
+  "key": "has probado",
+  "options": [
+   "has probado",
+   "probaste",
+   "habías probado",
+   "hayas probado"
+  ],
+  "why": "also acceptable: probaste",
+  "note": "alguna vez probaste very common in LatAm"
+ },
+ {
+  "id": "presubj:197",
+  "q": "Tal vez ustedes ___ (estar) en lo cierto, pero yo lo dudo.",
+  "key": "estén",
+  "options": [
+   "estén",
+   "están",
+   "estarán",
+   "estuvieran"
+  ],
+  "why": "also acceptable: están",
+  "note": "tal vez takes indicative too"
+ },
+ {
+  "id": "perfsubj:66",
+  "q": "Es increíble que ustedes ___ (terminar) tanto trabajo en un día.",
+  "key": "hayan terminado",
+  "options": [
+   "hayan terminado",
+   "han terminado",
+   "terminen",
+   "hubieran terminado"
+  ],
+  "why": "also acceptable: terminen",
+  "note": "terminen also fine as a general statement"
+ },
+ {
+  "id": "impsubj:56",
+  "q": "Buenas tardes, señora. ___ (querer) pedirle un favor.",
+  "key": "quisiera",
+  "options": [
+   "quisiera",
+   "quiero",
+   "quiera"
+  ],
+  "why": "also acceptable: quiero",
+  "note": "quiero pedirle un favor equally natural"
+ },
+ {
+  "id": "futuro:15",
+  "q": "Mi jefe no vino hoy; ___ (tener) gripa.",
+  "key": "tendrá",
+  "options": [
+   "tendrá",
+   "tendría",
+   "tenía",
+   "tenga"
+  ],
+  "why": "also acceptable: tenía",
+  "note": "tenía gripa as plain fact also fits"
+ },
+ {
+  "id": "futperf:147",
+  "q": "El cliente no responde; no sé, ___ (cambiar) de proveedor.",
+  "key": "habrán cambiado",
+  "options": [
+   "habrán cambiado",
+   "cambiarán",
+   "habrían cambiado",
+   "hayan cambiado"
+  ],
+  "why": "unnatural",
+  "note": "subject el cliente is singular but the plural habrán cambiado is the only perfect conjecture form"
+ },
+ {
+  "id": "perfecto:134",
+  "q": "En lo que va del año, tú ___ (mandar) siete solicitudes de empleo.",
+  "key": "has mandado",
+  "options": [
+   "has mandado",
+   "mandaste",
+   "habías mandado",
+   "hayas mandado"
+  ],
+  "why": "also acceptable: mandaste",
+  "note": "mandaste also used in LatAm with en lo que va del año"
+ },
+ {
+  "id": "perfecto:109",
+  "q": "Mis abuelos nunca ___ (enviar) un mensaje de texto.",
+  "key": "han enviado",
+  "options": [
+   "han enviado",
+   "enviaron",
+   "habían enviado",
+   "hayan enviado"
+  ],
+  "why": "also acceptable: enviaron",
+  "note": "nunca enviaron also natural in LatAm"
+ },
+ {
+  "id": "condperf:142",
+  "q": "Cuando por fin llegué, la clase ya terminaba; ni idea, ___ (perder) el bus anterior.",
+  "key": "habría perdido",
+  "options": [
+   "habría perdido",
+   "perdería",
+   "habré perdido",
+   "había perdido"
+  ],
+  "why": "unnatural",
+  "note": "speaker conjecturing whether they themselves missed the bus is odd"
+ },
+ {
+  "id": "imperativo:149",
+  "q": "Ya vimos todo el museo, ___ (volver) al hotel.",
+  "key": "volvamos",
+  "options": [
+   "volvamos",
+   "volvemos",
+   "volveremos",
+   "volveríamos"
+  ],
+  "why": "also acceptable: volvemos",
+  "note": "volvemos al hotel as proposal also natural"
+ },
+ {
+  "id": "perfecto:80",
+  "q": "En lo que va del año, yo ___ (leer) doce libros.",
+  "key": "he leído",
+  "options": [
+   "he leído",
+   "leí",
+   "había leído",
+   "haya leído"
+  ],
+  "why": "also acceptable: leí",
+  "note": "leí also used in LatAm with en lo que va del año"
+ },
+ {
+  "id": "presubj:193",
+  "q": "Aunque ___ (costar) un ojo de la cara, compraré ese carro.",
+  "key": "cueste",
+  "options": [
+   "cueste",
+   "cuesta",
+   "costará",
+   "costara"
+  ],
+  "why": "also acceptable: cuesta",
+  "note": "aunque cuesta (known fact) also correct"
+ },
+ {
+  "id": "condicional:97",
+  "q": "Alguien tocó la puerta a medianoche; ___ (querer) pedir ayuda.",
+  "key": "querría",
+  "options": [
+   "querría",
+   "querrá",
+   "quería"
+  ],
+  "why": "also acceptable: quería",
+  "note": "quería as plain statement also fits"
+ },
+ {
+  "id": "perfecto:66",
+  "q": "Mi hermana ya ___ (leer) todos los libros de García Márquez.",
+  "key": "ha leído",
+  "options": [
+   "ha leído",
+   "leyó",
+   "había leído",
+   "haya leído"
+  ],
+  "why": "also acceptable: leyó",
+  "note": "ya leyó common in LatAm"
+ },
+ {
+  "id": "perfecto:102",
+  "q": "Nunca ___ (ir) nosotros al mar en Semana Santa; siempre nos quedamos.",
+  "key": "hemos ido",
+  "options": [
+   "hemos ido",
+   "fuimos",
+   "habíamos ido",
+   "hayamos ido"
+  ],
+  "why": "also acceptable: fuimos",
+  "note": "nunca fuimos also natural"
+ },
+ {
+  "id": "perfecto:67",
+  "q": "Los obreros todavía no ___ (poner) la puerta del baño.",
+  "key": "han puesto",
+  "options": [
+   "han puesto",
+   "pusieron",
+   "habían puesto",
+   "hayan puesto"
+  ],
+  "why": "also acceptable: pusieron",
+  "note": "todavía no pusieron common in LatAm"
+ },
+ {
+  "id": "perfecto:37",
+  "q": "En lo que va de la semana, mi jefe ___ (llegar) tarde dos veces.",
+  "key": "ha llegado",
+  "options": [
+   "ha llegado",
+   "llegó",
+   "había llegado",
+   "haya llegado"
+  ],
+  "why": "also acceptable: llegó",
+  "note": "llegó also used in LatAm"
+ },
+ {
+  "id": "condicional:134",
+  "q": "Creíamos que la reunión ___ (durar) una hora.",
+  "key": "duraría",
+  "options": [
+   "duraría",
+   "durará",
+   "duraba"
+  ],
+  "why": "also acceptable: duraba",
+  "note": "duraba also fine"
+ },
+ {
+  "id": "condicional:133",
+  "q": "Ana me escribió que ___ (traer) el postre a la cena.",
+  "key": "traería",
+  "options": [
+   "traería",
+   "traerá",
+   "traía"
+  ],
+  "why": "also acceptable: traerá",
+  "note": "traerá fine since the dinner is still ahead"
+ },
+ {
+  "id": "condicional:20",
+  "q": "Profesora, ¿___ (ser) posible entregar el trabajo mañana?",
+  "key": "sería",
+  "options": [
+   "sería",
+   "será",
+   "era"
+  ],
+  "why": "also acceptable: será",
+  "note": "¿será posible? equally polite in Colombia"
+ },
+ {
+  "id": "condicional:98",
+  "q": "¿Cuántas personas ___ (haber) en la fiesta de Daniela?",
+  "key": "habría",
+  "options": [
+   "habría",
+   "habrá",
+   "había"
+  ],
+  "why": "picked había; also acceptable: había, habrá",
+  "note": "no time anchor: party could be past (había, habría) or upcoming (habrá)"
+ },
+ {
+  "id": "condicional:142",
+  "q": "El ladrón entró por la ventana; ___ (saber) que no había nadie.",
+  "key": "sabría",
+  "options": [
+   "sabría",
+   "sabrá",
+   "sabía"
+  ],
+  "why": "also acceptable: sabía",
+  "note": "sabía as plain statement also fits"
+ },
+ {
+  "id": "perfecto:149",
+  "q": "Estos años me ___ (dar) mucha experiencia en el trabajo.",
+  "key": "han dado",
+  "options": [
+   "han dado",
+   "dieron",
+   "habían dado",
+   "hayan dado"
+  ],
+  "why": "also acceptable: dieron",
+  "note": "dieron also fine"
+ },
+ {
+  "id": "condicional:144",
+  "q": "Ese año ___ (llover) casi todos los días en el pueblo.",
+  "key": "llovería",
+  "options": [
+   "llovería",
+   "lloverá",
+   "llovía"
+  ],
+  "why": "picked llovía",
+  "note": ""
+ },
+ {
+  "id": "condicional:147",
+  "q": "En esa época mis papás ___ (ganar) muy poco.",
+  "key": "ganarían",
+  "options": [
+   "ganarían",
+   "ganarán",
+   "ganaban"
+  ],
+  "why": "picked ganaban",
+  "note": ""
+ },
+ {
+  "id": "perfecto:68",
+  "q": "¿Todavía no ___ (cerrar) tú la ventana? Hace mucho frío.",
+  "key": "has cerrado",
+  "options": [
+   "has cerrado",
+   "cerraste",
+   "habías cerrado",
+   "hayas cerrado"
+  ],
+  "why": "also acceptable: cerraste",
+  "note": "todavía no cerraste common in LatAm"
+ },
+ {
+  "id": "perfecto:104",
+  "q": "¿Alguna vez ___ (dar) ustedes clases a niños?",
+  "key": "han dado",
+  "options": [
+   "han dado",
+   "dieron",
+   "habían dado",
+   "hayan dado"
+  ],
+  "why": "also acceptable: dieron",
+  "note": "alguna vez dieron common in LatAm"
+ },
+ {
+  "id": "condicional:149",
+  "q": "Esa noche Daniela lloró en el carro; ___ (extrañar) a su mamá.",
+  "key": "extrañaría",
+  "options": [
+   "extrañaría",
+   "extrañará",
+   "extrañaba"
+  ],
+  "why": "picked extrañaba; also acceptable: extrañaba",
+  "note": "extrañaría as conjecture also fits"
+ },
+ {
+  "id": "futperf:63",
+  "q": "Para fin de año, esta remodelación ya nos ___ (costar) todo el ahorro.",
+  "key": "habremos costado",
+  "options": [
+   "habremos costado",
+   "costaremos",
+   "habríamos costado",
+   "hayamos costado"
+  ],
+  "why": "unnatural",
+  "note": "subject is la remodelación, so it needs habrá costado; every option is first person plural"
+ },
+ {
+  "id": "perfecto:112",
+  "q": "Todavía no ___ (mirar) nosotros el correo de la universidad.",
+  "key": "hemos mirado",
+  "options": [
+   "hemos mirado",
+   "miramos",
+   "habíamos mirado",
+   "hayamos mirado"
+  ],
+  "why": "also acceptable: miramos",
+  "note": "todavía no miramos common in LatAm"
+ },
+ {
+  "id": "imperativo:142",
+  "q": "Ya comimos, ___ (pagar) la cuenta y nos vamos.",
+  "key": "paguemos",
+  "options": [
+   "paguemos",
+   "pagamos",
+   "pagaremos",
+   "pagaríamos"
+  ],
+  "why": "picked pagamos; also acceptable: pagamos",
+  "note": "paguemos also natural as proposal"
+ },
+ {
+  "id": "perfecto:34",
+  "q": "En lo que va del mes, yo ___ (gastar) casi todo el sueldo.",
+  "key": "he gastado",
+  "options": [
+   "he gastado",
+   "gasté",
+   "había gastado",
+   "haya gastado"
+  ],
+  "why": "also acceptable: gasté",
+  "note": "gasté also used in LatAm with en lo que va del mes"
+ },
+ {
+  "id": "plusc:139",
+  "q": "Hasta esa semana, nosotros nunca ___ (hacer) una reunión por video.",
+  "key": "habíamos hecho",
+  "options": [
+   "habíamos hecho",
+   "hicimos",
+   "hemos hecho",
+   "hubiéramos hecho"
+  ],
+  "why": "also acceptable: hicimos",
+  "note": "nunca hicimos also natural in LatAm"
+ },
+ {
+  "id": "perfsubj:69",
+  "q": "Es mejor que tú ya ___ (hacer) la maleta; el taxi llega pronto.",
+  "key": "hayas hecho",
+  "options": [
+   "hayas hecho",
+   "has hecho",
+   "hagas",
+   "hubieras hecho"
+  ],
+  "why": "picked hagas",
+  "note": ""
+ },
+ {
+  "id": "perfecto:6",
+  "q": "¿Alguna vez se ___ (perder) usted en el centro de Bogotá?",
+  "key": "ha perdido",
+  "options": [
+   "ha perdido",
+   "perdió",
+   "había perdido",
+   "haya perdido"
+  ],
+  "why": "also acceptable: perdió",
+  "note": "alguna vez se perdió common in LatAm"
+ },
+ {
+  "id": "impneg:47",
+  "q": "Hugo, ___ (cambiar) de canal, que están dando el partido.",
+  "key": "no cambies",
+  "options": [
+   "no cambies",
+   "cambia",
+   "cambias",
+   "cambies"
+  ],
+  "why": "picked cambia",
+  "note": ""
+ },
+ {
+  "id": "condperf:57",
+  "q": "Si hubieras cuidado el carro, no te ___ (costar) tanto el arreglo.",
+  "key": "habrías costado",
+  "options": [
+   "habrías costado",
+   "costarías",
+   "habrás costado",
+   "habías costado"
+  ],
+  "why": "unnatural",
+  "note": "subject is el arreglo, so it needs habría costado; every option is second person"
+ },
+ {
+  "id": "perfecto:84",
+  "q": "En lo que va del año, tú ___ (cambiar) tres veces de celular.",
+  "key": "has cambiado",
+  "options": [
+   "has cambiado",
+   "cambiaste",
+   "habías cambiado",
+   "hayas cambiado"
+  ],
+  "why": "also acceptable: cambiaste",
+  "note": "cambiaste also used in LatAm with en lo que va del año"
+ },
+ {
+  "id": "perfecto:145",
+  "q": "Con el trabajo nuevo, Laura se ___ (convertir) en otra persona.",
+  "key": "ha convertido",
+  "options": [
+   "ha convertido",
+   "convirtió",
+   "había convertido",
+   "haya convertido"
+  ],
+  "why": "also acceptable: convirtió",
+  "note": "se convirtió also fine"
+ },
+ {
+  "id": "perfecto:14",
+  "q": "Ya ___ (ver) yo esa película tres veces y todavía me gusta.",
+  "key": "he visto",
+  "options": [
+   "he visto",
+   "vi",
+   "había visto",
+   "haya visto"
+  ],
+  "why": "also acceptable: vi",
+  "note": "ya vi esa película tres veces common in LatAm"
+ },
+ {
+  "id": "perfecto:98",
+  "q": "Nuestra relación se ___ (volver) más fuerte en estos años.",
+  "key": "ha vuelto",
+  "options": [
+   "ha vuelto",
+   "volvió",
+   "había vuelto",
+   "haya vuelto"
+  ],
+  "why": "also acceptable: volvió",
+  "note": "se volvió also fine"
+ },
+ {
+  "id": "impsubj:55",
+  "q": "Buenas tardes, señor. ___ (querer) hablar con el gerente.",
+  "key": "quisiera",
+  "options": [
+   "quisiera",
+   "quiero",
+   "quiera"
+  ],
+  "why": "also acceptable: quiero",
+  "note": "quiero hablar con el gerente equally natural"
+ },
+ {
+  "id": "plusc:85",
+  "q": "Antes de la llamada de Ana, nosotros nunca ___ (pensar) en mudarnos.",
+  "key": "habíamos pensado",
+  "options": [
+   "habíamos pensado",
+   "pensamos",
+   "hemos pensado",
+   "hubiéramos pensado"
+  ],
+  "why": "also acceptable: pensamos",
+  "note": "nunca pensamos also natural in LatAm"
+ },
+ {
+  "id": "condperf:145",
+  "q": "Cuando abrimos la tienda, ya había fila; quién sabe, ___ (venir) desde las cinco.",
+  "key": "habrían venido",
+  "options": [
+   "habrían venido",
+   "vendrían",
+   "habrán venido",
+   "habían venido"
+  ],
+  "why": "also acceptable: habrán venido",
+  "note": "habrán venido also used for conjecture from the present"
+ },
+ {
+  "id": "perfecto:20",
+  "q": "Mis primos todavía no ___ (decidir) a dónde viajar.",
+  "key": "han decidido",
+  "options": [
+   "han decidido",
+   "decidieron",
+   "habían decidido",
+   "hayan decidido"
+  ],
+  "why": "also acceptable: decidieron",
+  "note": "todavía no decidieron common in LatAm"
+ },
+ {
+  "id": "perfecto:136",
+  "q": "Hasta ahora, yo ___ (entender) solo la mitad de la explicación.",
+  "key": "he entendido",
+  "options": [
+   "he entendido",
+   "entendí",
+   "había entendido",
+   "haya entendido"
+  ],
+  "why": "also acceptable: entendí",
+  "note": "entendí also used in LatAm"
+ },
+ {
+  "id": "futuro:114",
+  "q": "¿Qué le ___ (pasar) a Marta? Hoy no vino a clase.",
+  "key": "pasará",
+  "options": [
+   "pasará",
+   "pasaría",
+   "pasaba",
+   "pase"
+  ],
+  "why": "picked pasaría; also acceptable: pasaría",
+  "note": "¿qué le pasará? equally common for conjecture"
+ },
+ {
+  "id": "perfecto:9",
+  "q": "Jamás ___ (conocer) a una persona tan generosa como tu mamá.",
+  "key": "he conocido",
+  "options": [
+   "he conocido",
+   "conocí",
+   "había conocido",
+   "haya conocido"
+  ],
+  "why": "also acceptable: conocí",
+  "note": "jamás conocí also natural"
+ },
+ {
+  "id": "condperf:19",
+  "q": "Si Laura hubiera conocido a Pedro antes, ___ (querer) casarse con él.",
+  "key": "habría querido",
+  "options": [
+   "habría querido",
+   "querría",
+   "habrá querido",
+   "había querido"
+  ],
+  "why": "also acceptable: querría",
+  "note": "querría (present result) also fits"
+ },
+ {
+  "id": "plusc:99",
+  "q": "Me contaste que tú ya ___ (conocer) a mis papás antes de la boda.",
+  "key": "habías conocido",
+  "options": [
+   "habías conocido",
+   "has conocido",
+   "conocías",
+   "hubieras conocido"
+  ],
+  "why": "also acceptable: conocías",
+  "note": "ya conocías (knew) also fine"
+ },
+ {
+  "id": "condperf:96",
+  "q": "De haber entrado a la universidad, mi hermano ___ (estudiar) medicina.",
+  "key": "habría estudiado",
+  "options": [
+   "habría estudiado",
+   "estudiaría",
+   "habrá estudiado",
+   "había estudiado"
+  ],
+  "why": "also acceptable: estudiaría",
+  "note": "estudiaría (would be studying now) also fits"
+ },
+ {
+  "id": "condperf:18",
+  "q": "Si hubieran vendido el carro, ___ (tener) plata para el viaje.",
+  "key": "habrían tenido",
+  "options": [
+   "habrían tenido",
+   "tendrían",
+   "habrán tenido",
+   "habían tenido"
+  ],
+  "why": "also acceptable: tendrían",
+  "note": "tendrían (present result) also fits"
+ },
+ {
+  "id": "preterito:30",
+  "q": "El jueves el profesor ___ (explicar) el tema otra vez.",
+  "key": "explicó",
+  "options": [
+   "explicó",
+   "explicaba",
+   "ha explicado",
+   "explica"
+  ],
+  "why": "also acceptable: explica",
+  "note": "el jueves could be past or upcoming"
+ },
+ {
+  "id": "presubj:97",
+  "q": "Es increíble que tú ___ (hablar) cinco idiomas.",
+  "key": "hables",
+  "options": [
+   "hables",
+   "hablas",
+   "hablarás",
+   "hablaras"
+  ],
+  "why": "picked hablarás",
+  "note": ""
+ },
+ {
+  "id": "perfecto:119",
+  "q": "¿Todavía no ___ (empezar) ustedes a cenar? Ya es tarde.",
+  "key": "han empezado",
+  "options": [
+   "han empezado",
+   "empezaron",
+   "habían empezado",
+   "hayan empezado"
+  ],
+  "why": "also acceptable: empezaron",
+  "note": "todavía no empezaron common in LatAm"
+ },
+ {
+  "id": "impneg:46",
+  "q": "Tatiana, ___ (parar) tan cerca del borde.",
+  "key": "no pares",
+  "options": [
+   "no pares",
+   "para",
+   "paras",
+   "pares"
+  ],
+  "why": "unnatural",
+  "note": "to mean stand it needs the reflexive no te pares"
+ },
+ {
+  "id": "perfecto:126",
+  "q": "Últimamente nosotros ___ (escuchar) mucha música colombiana.",
+  "key": "hemos escuchado",
+  "options": [
+   "hemos escuchado",
+   "escuchamos",
+   "habíamos escuchado",
+   "hayamos escuchado"
+  ],
+  "why": "also acceptable: escuchamos",
+  "note": "present escuchamos also natural with últimamente"
+ },
+ {
+  "id": "futperf:28",
+  "q": "Dentro de cien años, todas estas plantas ya ___ (morir).",
+  "key": "habrá muerto",
+  "options": [
+   "habrá muerto",
+   "morirá",
+   "habría muerto",
+   "haya muerto"
+  ],
+  "why": "unnatural",
+  "note": "subject todas estas plantas is plural; every option is singular"
+ },
+ {
+  "id": "perfecto:118",
+  "q": "Aún no ___ (recibir) nosotros respuesta del banco.",
+  "key": "hemos recibido",
+  "options": [
+   "hemos recibido",
+   "recibimos",
+   "habíamos recibido",
+   "hayamos recibido"
+  ],
+  "why": "also acceptable: recibimos",
+  "note": "aún no recibimos common in LatAm"
+ },
+ {
+  "id": "perfecto:107",
+  "q": "¿Nunca ___ (escuchar) ustedes hablar de este pueblo?",
+  "key": "han escuchado",
+  "options": [
+   "han escuchado",
+   "escucharon",
+   "habían escuchado",
+   "hayan escuchado"
+  ],
+  "why": "also acceptable: escucharon",
+  "note": "¿nunca escucharon? common in LatAm"
+ },
+ {
+  "id": "perfecto:23",
+  "q": "¿Ya ___ (escribir) ustedes a la profesora?",
+  "key": "han escrito",
+  "options": [
+   "han escrito",
+   "escribieron",
+   "habían escrito",
+   "hayan escrito"
+  ],
+  "why": "also acceptable: escribieron",
+  "note": "¿ya escribieron? common in LatAm"
+ },
+ {
+  "id": "condperf:134",
+  "q": "Cuando llamé a su casa, nadie contestó; quién sabe, ya se ___ (ir) todos.",
+  "key": "habrían ido",
+  "options": [
+   "habrían ido",
+   "irían",
+   "habrán ido",
+   "habían ido"
+  ],
+  "why": "also acceptable: habrán ido",
+  "note": "habrán ido also used for conjecture from the present"
+ },
+ {
+  "id": "plusc:104",
+  "q": "El locutor anunció que el equipo visitante ya ___ (ganar) el primer partido.",
+  "key": "habían ganado",
+  "options": [
+   "habían ganado",
+   "han ganado",
+   "ganaban",
+   "hubieran ganado"
+  ],
+  "why": "unnatural",
+  "note": "subject el equipo visitante is singular; every option is plural"
+ },
+ {
+  "id": "futuro:112",
+  "q": "Esa señora te saludó con tanto cariño; ___ (conocer) a tu mamá.",
+  "key": "conocerá",
+  "options": [
+   "conocerá",
+   "conocería",
+   "conocía",
+   "conozca"
+  ],
+  "why": "also acceptable: conocía, conocería",
+  "note": "conocía (fact) and conocería (past conjecture) also fit"
+ },
+ {
+  "id": "futuro:70",
+  "q": "Aquí huele a quemado; alguien ___ (preparar) arepas.",
+  "key": "preparará",
+  "options": [
+   "preparará",
+   "prepararía",
+   "preparaba",
+   "prepare"
+  ],
+  "why": "unnatural",
+  "note": "natural answer está/estará preparando is missing; preparará reads as a future plan"
+ },
+ {
+  "id": "imperfecto:64",
+  "q": "Ese día ___ (hacer) un sol espectacular y toda la gente estaba en la calle.",
+  "key": "hacía",
+  "options": [
+   "hacía",
+   "hizo",
+   "haría",
+   "hiciera"
+  ],
+  "why": "also acceptable: hizo",
+  "note": "hizo un sol also fine"
+ },
+ {
+  "id": "impsubj:57",
+  "q": "Mi profesora me recomendó que ___ (leer) más novelas.",
+  "key": "leyera",
+  "options": [
+   "leyera",
+   "lea",
+   "leía",
+   "leería"
+  ],
+  "why": "also acceptable: lea",
+  "note": "que lea fine when the advice still applies"
+ },
+ {
+  "id": "plusc:86",
+  "q": "Hasta esa reunión, los dos socios nunca ___ (hablar) de plata.",
+  "key": "habían hablado",
+  "options": [
+   "habían hablado",
+   "hablaron",
+   "han hablado",
+   "hubieran hablado"
+  ],
+  "why": "also acceptable: hablaron",
+  "note": "nunca hablaron also natural in LatAm"
+ },
+ {
+  "id": "impneg:77",
+  "q": "Señora, ___ (traer) la mascota al restaurante.",
+  "key": "no traiga",
+  "options": [
+   "no traiga",
+   "traiga",
+   "trae"
+  ],
+  "why": "also acceptable: traiga",
+  "note": "nothing in the sentence says pets are banned; traiga is equally possible"
+ },
+ {
+  "id": "condperf:107",
+  "q": "Mi jefe dijo que para el viernes ya ___ (arreglar) el sistema.",
+  "key": "habría arreglado",
+  "options": [
+   "habría arreglado",
+   "arreglaría",
+   "habrá arreglado",
+   "había arreglado"
+  ],
+  "why": "also acceptable: habrá arreglado",
+  "note": "habrá arreglado fine if Friday is still ahead"
+ },
+ {
+  "id": "impneg:42",
+  "q": "Juliana, ___ (cortar) tanto el pelo; te queda lindo largo.",
+  "key": "no cortes",
+  "options": [
+   "no cortes",
+   "corta",
+   "cortas",
+   "cortes"
+  ],
+  "why": "unnatural",
+  "note": "needs the reflexive no te cortes tanto el pelo"
+ },
+ {
+  "id": "plusc:95",
+  "q": "Los vecinos dijeron que la policía ya ___ (pasar) por la cuadra.",
+  "key": "habían pasado",
+  "options": [
+   "habían pasado",
+   "han pasado",
+   "pasaban",
+   "hubieran pasado"
+  ],
+  "why": "unnatural",
+  "note": "la policía is singular (había pasado); every option is plural"
+ },
+ {
+  "id": "condperf:146",
+  "q": "Cuando te escribí esa noche, no respondiste; ni idea, ___ (dormir) temprano.",
+  "key": "habrías dormido",
+  "options": [
+   "habrías dormido",
+   "dormirías",
+   "habrás dormido",
+   "habías dormido"
+  ],
+  "why": "unnatural",
+  "note": "dormir temprano is odd; it needs te habrías dormido or te habrías acostado"
+ },
+ {
+  "id": "presubj:43",
+  "q": "Ojalá que nosotros ___ (llegar) a tiempo al aeropuerto.",
+  "key": "lleguemos",
+  "options": [
+   "lleguemos",
+   "llegamos",
+   "llegáramos",
+   "llegaremos"
+  ],
+  "why": "also acceptable: llegáramos",
+  "note": "no time anchor: llegáramos possible for a past trip"
+ },
+ {
+  "id": "perfecto:38",
+  "q": "En lo que va del año, Pedro ___ (bajar) diez kilos.",
+  "key": "ha bajado",
+  "options": [
+   "ha bajado",
+   "bajó",
+   "había bajado",
+   "haya bajado"
+  ],
+  "why": "also acceptable: bajó",
+  "note": "bajó also used in LatAm with en lo que va del año"
+ },
+ {
+  "id": "condperf:124",
+  "q": "Mi mamá prometió que para mi llegada ya ___ (hacer) el almuerzo.",
+  "key": "habría hecho",
+  "options": [
+   "habría hecho",
+   "haría",
+   "habrá hecho",
+   "había hecho"
+  ],
+  "why": "also acceptable: habrá hecho",
+  "note": "habrá hecho fine if the arrival is still ahead"
+ },
+ {
+  "id": "futuro:87",
+  "q": "Si ganas el concurso, ¿qué ___ (hacer) con el premio?",
+  "key": "harás",
+  "options": [
+   "harás",
+   "harías",
+   "hacías",
+   "hagas"
+  ],
+  "why": "also acceptable: harías",
+  "note": "harías also common after si + present"
+ },
+ {
+  "id": "presubj:44",
+  "q": "Ojalá que no ___ (haber) tráfico esta tarde.",
+  "key": "haya",
+  "options": [
+   "haya",
+   "ha",
+   "hubiera",
+   "habrá"
+  ],
+  "why": "also acceptable: hubiera",
+  "note": "ojalá + imperfect subjunctive also fine for a less likely wish"
+ },
+ {
+  "id": "futuro:147",
+  "q": "El abogado dice que el juez ___ (aceptar) nuestra apelación.",
+  "key": "aceptará",
+  "options": [
+   "aceptará",
+   "aceptaría",
+   "acepte",
+   "aceptaba"
+  ],
+  "why": "also acceptable: aceptaría",
+  "note": "conditional works as a hedged prediction"
+ },
+ {
+  "id": "imperfecto:78",
+  "q": "Ellos se quedaron callados porque nadie ___ (saber) qué responder.",
+  "key": "sabía",
+  "options": [
+   "sabía",
+   "supo",
+   "sabría",
+   "supiera"
+  ],
+  "why": "also acceptable: supo",
+  "note": "nadie supo qué responder is equally natural"
+ },
+ {
+  "id": "condicional:36",
+  "q": "Nos dijeron que la tienda ___ (abrir) a las nueve.",
+  "key": "abriría",
+  "options": [
+   "abriría",
+   "abrirá",
+   "abría"
+  ],
+  "why": "also acceptable: abría, abrirá",
+  "note": "reported schedule: abría or abrirá also natural"
+ },
+ {
+  "id": "perfecto:148",
+  "q": "En los últimos meses, el dólar ___ (bajar) y los viajes son más baratos.",
+  "key": "ha bajado",
+  "options": [
+   "ha bajado",
+   "bajó",
+   "había bajado",
+   "haya bajado"
+  ],
+  "why": "also acceptable: bajó",
+  "note": "LatAm uses preterite for recent periods"
+ },
+ {
+  "id": "impneg:27",
+  "q": "Jorge, ___ (traer) a tu perro a la oficina, por favor.",
+  "key": "no traigas",
+  "options": [
+   "no traigas",
+   "trae",
+   "traes",
+   "traigas"
+  ],
+  "why": "picked trae; also acceptable: trae",
+  "note": "context does not say whether bringing the dog is wanted"
+ },
+ {
+  "id": "pluscsubj:69",
+  "q": "Ojalá ellos nunca se ___ (ir) de este barrio.",
+  "key": "hubieran ido",
+  "options": [
+   "hubieran ido",
+   "habían ido",
+   "fueran",
+   "habrían ido"
+  ],
+  "why": "also acceptable: fueran",
+  "note": "fueran reads as a wish about the future"
+ },
+ {
+  "id": "perfsubj:60",
+  "q": "No creo que nadie ___ (traducir) este libro al español.",
+  "key": "haya traducido",
+  "options": [
+   "haya traducido",
+   "ha traducido",
+   "traduzca",
+   "hubiera traducido"
+  ],
+  "why": "picked traduzca; also acceptable: traduzca",
+  "note": "future vs so far, both fine"
+ },
+ {
+  "id": "condperf:77",
+  "q": "De haber nacido en otra época, tú ___ (tener) otra vida.",
+  "key": "habrías tenido",
+  "options": [
+   "habrías tenido",
+   "tendrías",
+   "habrás tenido",
+   "habías tenido"
+  ],
+  "why": "also acceptable: tendrías",
+  "note": "tendrías for a present consequence is natural"
+ },
+ {
+  "id": "imperfecto:90",
+  "q": "Nosotros ___ (bajar) del bus cuando vimos a Camilo.",
+  "key": "bajábamos",
+  "options": [
+   "bajábamos",
+   "bajamos",
+   "bajaríamos",
+   "bajáramos"
+  ],
+  "why": "also acceptable: bajamos",
+  "note": "bajamos reads as sequence: got off when we saw him"
+ },
+ {
+  "id": "condicional:136",
+  "q": "Dijeron en la radio que la lluvia ___ (parar) por la tarde.",
+  "key": "pararía",
+  "options": [
+   "pararía",
+   "parará",
+   "paraba"
+  ],
+  "why": "also acceptable: parará",
+  "note": "reported future can keep the future"
+ },
+ {
+  "id": "imperativo:131",
+  "q": "Mejor ___ (esperar) aquí hasta que pare la lluvia, ¿no crees?",
+  "key": "esperemos",
+  "options": [
+   "esperemos",
+   "esperamos",
+   "esperaremos",
+   "esperaríamos"
+  ],
+  "why": "also acceptable: esperamos",
+  "note": "mejor + present indicative is common in Colombia"
+ },
+ {
+  "id": "perfecto:106",
+  "q": "En toda mi vida ___ (ver) yo tanta lluvia.",
+  "key": "he visto",
+  "options": [
+   "he visto",
+   "vi",
+   "había visto",
+   "haya visto"
+  ],
+  "why": "unnatural",
+  "note": "affirmative \"en toda mi vida he visto tanta lluvia\" is odd; needs nunca... había visto"
+ },
+ {
+  "id": "perfsubj:130",
+  "q": "No creo que yo ___ (dormir) más de tres horas esta semana.",
+  "key": "haya dormido",
+  "options": [
+   "haya dormido",
+   "he dormido",
+   "duerma",
+   "hubiera dormido"
+  ],
+  "why": "also acceptable: duerma",
+  "note": "duerma covers the rest of the week"
+ },
+ {
+  "id": "condperf:149",
+  "q": "Pensamos que para el mediodía ya ___ (recoger) todas las maletas.",
+  "key": "habríamos recogido",
+  "options": [
+   "habríamos recogido",
+   "recogeríamos",
+   "habremos recogido",
+   "habíamos recogido"
+  ],
+  "why": "picked habremos recogido; also acceptable: habremos recogido",
+  "note": "pensamos can be present or preterite"
+ },
+ {
+  "id": "presubj:190",
+  "q": "Aunque Camilo me lo ___ (pedir) de rodillas, no lo perdono.",
+  "key": "pida",
+  "options": [
+   "pida",
+   "pide",
+   "pedirá",
+   "pidiera"
+  ],
+  "why": "also acceptable: pidiera",
+  "note": "both concessive forms natural"
+ },
+ {
+  "id": "imperativo:57",
+  "q": "Alicia, ___ (dejar) eso ahí, por favor.",
+  "key": "deja",
+  "options": [
+   "deja",
+   "dejas",
+   "dejes",
+   "no dejes"
+  ],
+  "why": "also acceptable: no dejes",
+  "note": "context does not force affirmative or negative"
+ },
+ {
+  "id": "condicional:143",
+  "q": "A los dieciocho, yo ___ (pesar) unos sesenta kilos.",
+  "key": "pesaría",
+  "options": [
+   "pesaría",
+   "pesaré",
+   "pesaba"
+  ],
+  "why": "picked pesaba",
+  "note": ""
+ },
+ {
+  "id": "pluscsubj:87",
+  "q": "Lamentaba que nosotros no ___ (hablar) más antes de que ella se mudara.",
+  "key": "hubiéramos hablado",
+  "options": [
+   "hubiéramos hablado",
+   "habíamos hablado",
+   "habláramos",
+   "habríamos hablado"
+  ],
+  "why": "also acceptable: habláramos",
+  "note": "simple imperfect subjunctive also acceptable here"
+ },
+ {
+  "id": "perfecto:51",
+  "q": "Nunca ___ (tener) yo un perro, pero me encantaría.",
+  "key": "he tenido",
+  "options": [
+   "he tenido",
+   "tuve",
+   "había tenido",
+   "haya tenido"
+  ],
+  "why": "also acceptable: tuve",
+  "note": "LatAm nunca + preterite is natural"
+ },
+ {
+  "id": "perfecto:88",
+  "q": "Hasta ahora nadie nos ___ (decir) cuánto cuesta la reparación.",
+  "key": "ha dicho",
+  "options": [
+   "ha dicho",
+   "dijo",
+   "había dicho",
+   "haya dicho"
+  ],
+  "why": "also acceptable: dijo",
+  "note": "LatAm preterite with hasta ahora is common"
+ },
+ {
+  "id": "impsubj:108",
+  "q": "Ojalá ellos ___ (ser) más amables con los clientes.",
+  "key": "fueran",
+  "options": [
+   "fueran",
+   "sean",
+   "eran",
+   "serían"
+  ],
+  "why": "picked sean; also acceptable: sean",
+  "note": "ojalá with present or imperfect subjunctive both fine"
+ },
+ {
+  "id": "condicional:78",
+  "q": "Pedro, tú ___ (tener) que hablar con ella antes de que sea tarde.",
+  "key": "tendrías",
+  "options": [
+   "tendrías",
+   "tendrás",
+   "tuvieras"
+  ],
+  "why": "also acceptable: tendrás",
+  "note": "advice with conditional or future both natural"
+ },
+ {
+  "id": "impneg:108",
+  "q": "Niños, ___ (dar) de comer a ese perro, que es de la calle.",
+  "key": "no den",
+  "options": [
+   "no den",
+   "den",
+   "dan"
+  ],
+  "why": "also acceptable: den",
+  "note": "\"que es de la calle\" can motivate feeding it or not"
+ },
+ {
+  "id": "impsubj:134",
+  "q": "Ojalá ___ (sentir) yo menos presión en el trabajo.",
+  "key": "sintiera",
+  "options": [
+   "sintiera",
+   "sienta",
+   "sentía",
+   "sentiría"
+  ],
+  "why": "also acceptable: sienta",
+  "note": "ojalá with present or imperfect subjunctive both fine"
+ },
+ {
+  "id": "perfsubj:113",
+  "q": "No conozco a nadie que ___ (viajar) solo por Asia.",
+  "key": "haya viajado",
+  "options": [
+   "haya viajado",
+   "ha viajado",
+   "viaje",
+   "hubiera viajado"
+  ],
+  "why": "also acceptable: viaje",
+  "note": "present subjunctive for a habit also fine"
+ },
+ {
+  "id": "perfecto:19",
+  "q": "Todavía no ___ (poder) hablar con el gerente.",
+  "key": "he podido",
+  "options": [
+   "he podido",
+   "pude",
+   "había podido",
+   "haya podido"
+  ],
+  "why": "also acceptable: pude",
+  "note": "LatAm todavía no + preterite is natural"
+ },
+ {
+  "id": "perfecto:70",
+  "q": "Los vecinos todavía no ___ (traer) la escalera que les prestamos.",
+  "key": "han traído",
+  "options": [
+   "han traído",
+   "trajeron",
+   "habían traído",
+   "hayan traído"
+  ],
+  "why": "also acceptable: trajeron",
+  "note": "LatAm todavía no + preterite is natural"
+ },
+ {
+  "id": "presubj:199",
+  "q": "Tal vez no ___ (funcionar) el plan, pero vale la pena intentarlo.",
+  "key": "funcione",
+  "options": [
+   "funcione",
+   "funciona",
+   "funcionará",
+   "funcionara"
+  ],
+  "why": "also acceptable: funciona",
+  "note": "tal vez also takes the indicative"
+ },
+ {
+  "id": "perfecto:29",
+  "q": "Últimamente nosotros ___ (salir) poco porque llueve demasiado.",
+  "key": "hemos salido",
+  "options": [
+   "hemos salido",
+   "salimos",
+   "habíamos salido",
+   "hayamos salido"
+  ],
+  "why": "also acceptable: salimos",
+  "note": "present habitual salimos is natural with últimamente"
+ },
+ {
+  "id": "condicional:94",
+  "q": "Esa tarde hacía mucho calor; ___ (hacer) unos treinta grados.",
+  "key": "haría",
+  "options": [
+   "haría",
+   "hará",
+   "hacía"
+  ],
+  "why": "also acceptable: hacía",
+  "note": "plain statement hacía also fits"
+ },
+ {
+  "id": "perfsubj:54",
+  "q": "No creo que yo ___ (entender) bien las instrucciones.",
+  "key": "haya entendido",
+  "options": [
+   "haya entendido",
+   "he entendido",
+   "entienda",
+   "hubiera entendido"
+  ],
+  "why": "also acceptable: entienda",
+  "note": "present understanding also fine"
+ },
+ {
+  "id": "condperf:135",
+  "q": "Cuando busqué mi paraguas, no estaba; no sé, lo ___ (dejar) en el bus.",
+  "key": "habría dejado",
+  "options": [
+   "habría dejado",
+   "dejaría",
+   "habré dejado",
+   "había dejado"
+  ],
+  "why": "picked habré dejado; also acceptable: habré dejado",
+  "note": "conjecture from now or from the narrative past"
+ },
+ {
+  "id": "condperf:108",
+  "q": "Nos avisaron que para las ocho ya ___ (venir) todos los invitados.",
+  "key": "habrían venido",
+  "options": [
+   "habrían venido",
+   "vendrían",
+   "habrán venido",
+   "habían venido"
+  ],
+  "why": "also acceptable: habrán venido",
+  "note": "reported future can keep the future"
+ },
+ {
+  "id": "perfecto:133",
+  "q": "En lo que va del año, el dólar ___ (subir) más de lo esperado.",
+  "key": "ha subido",
+  "options": [
+   "ha subido",
+   "subió",
+   "había subido",
+   "haya subido"
+  ],
+  "why": "also acceptable: subió",
+  "note": "LatAm preterite for the current period"
+ },
+ {
+  "id": "pluscsubj:74",
+  "q": "Ojalá mi papá ___ (dejar) de fumar antes de enfermarse.",
+  "key": "hubiera dejado",
+  "options": [
+   "hubiera dejado",
+   "había dejado",
+   "dejara",
+   "habría dejado"
+  ],
+  "why": "also acceptable: dejara",
+  "note": "dejara reads as a wish that he quits before illness"
+ },
+ {
+  "id": "perfecto:116",
+  "q": "Mis papás todavía no ___ (conocer) mi casa nueva.",
+  "key": "han conocido",
+  "options": [
+   "han conocido",
+   "conocieron",
+   "habían conocido",
+   "hayan conocido"
+  ],
+  "why": "also acceptable: conocieron",
+  "note": "LatAm todavía no + preterite"
+ },
+ {
+  "id": "imperativo:136",
+  "q": "Sofía, ___ (ver) esta película juntas este sábado, ¿sí?",
+  "key": "veamos",
+  "options": [
+   "veamos",
+   "vemos",
+   "veremos",
+   "veríamos"
+  ],
+  "why": "also acceptable: vemos",
+  "note": "Colombian proposals with present indicative + ¿sí?"
+ },
+ {
+  "id": "presubj:192",
+  "q": "Aunque tu jefe no lo ___ (aprobar), presentaremos la idea.",
+  "key": "apruebe",
+  "options": [
+   "apruebe",
+   "aprueba",
+   "aprobará",
+   "aprobara"
+  ],
+  "why": "also acceptable: aprueba",
+  "note": "indicative if the disapproval is known"
+ },
+ {
+  "id": "perfecto:141",
+  "q": "Hasta ahora, la empresa no ___ (ofrecer) ninguna solución.",
+  "key": "ha ofrecido",
+  "options": [
+   "ha ofrecido",
+   "ofreció",
+   "había ofrecido",
+   "haya ofrecido"
+  ],
+  "why": "also acceptable: ofreció",
+  "note": "LatAm preterite with hasta ahora"
+ },
+ {
+  "id": "perfecto:72",
+  "q": "¿Ya ___ (decidir) tú qué vas a estudiar?",
+  "key": "has decidido",
+  "options": [
+   "has decidido",
+   "decidiste",
+   "habías decidido",
+   "hayas decidido"
+  ],
+  "why": "also acceptable: decidiste",
+  "note": "¿Ya decidiste...? is the everyday Colombian form"
+ },
+ {
+  "id": "futperf:98",
+  "q": "Esta carretera no estaba así; no sé, ___ (pasar) un camión por aquí.",
+  "key": "habremos pasado",
+  "options": [
+   "habremos pasado",
+   "pasaremos",
+   "habríamos pasado",
+   "hayamos pasado"
+  ],
+  "why": "unnatural",
+  "note": "subject is un camión but every option is nosotros; should be habrá pasado"
+ },
+ {
+  "id": "perfecto:140",
+  "q": "Mis hermanos siempre ___ (jugar) al fútbol los domingos.",
+  "key": "han jugado",
+  "options": [
+   "han jugado",
+   "jugaron",
+   "habían jugado",
+   "hayan jugado"
+  ],
+  "why": "also acceptable: jugaron",
+  "note": "no present option; past habit with preterite also fits"
+ },
+ {
+  "id": "imperfecto:127",
+  "q": "Mientras los niños dormían, nosotros ___ (limpiar) la casa.",
+  "key": "limpiábamos",
+  "options": [
+   "limpiábamos",
+   "limpiamos",
+   "limpiaríamos",
+   "limpiáramos"
+  ],
+  "why": "also acceptable: limpiamos",
+  "note": "completed cleaning during their sleep also fits"
+ },
+ {
+  "id": "perfecto:16",
+  "q": "Ya ___ (hacer) nosotros todas las maletas; solo falta salir.",
+  "key": "hemos hecho",
+  "options": [
+   "hemos hecho",
+   "hicimos",
+   "habíamos hecho",
+   "hayamos hecho"
+  ],
+  "why": "also acceptable: hicimos",
+  "note": "LatAm ya + preterite"
+ },
+ {
+  "id": "perfecto:12",
+  "q": "Mi papá nunca me ___ (decir) una mentira.",
+  "key": "ha dicho",
+  "options": [
+   "ha dicho",
+   "dijo",
+   "había dicho",
+   "haya dicho"
+  ],
+  "why": "also acceptable: dijo",
+  "note": "LatAm nunca + preterite"
+ },
+ {
+  "id": "condicional:72",
+  "q": "___ (ser) mejor llamar a tu mamá antes de salir.",
+  "key": "sería",
+  "options": [
+   "sería",
+   "será",
+   "fuera"
+  ],
+  "why": "also acceptable: será",
+  "note": "será mejor and sería mejor both everyday"
+ },
+ {
+  "id": "imperfecto:72",
+  "q": "Ayer en el centro ___ (haber) tanto tráfico que tardé dos horas.",
+  "key": "había",
+  "options": [
+   "había",
+   "hubo",
+   "habría",
+   "hubiera"
+  ],
+  "why": "picked hubo; also acceptable: hubo",
+  "note": "both describe the traffic"
+ },
+ {
+  "id": "condicional:35",
+  "q": "Camilo aseguró que nunca ___ (volver) a esa ciudad.",
+  "key": "volvería",
+  "options": [
+   "volvería",
+   "volverá",
+   "volvía"
+  ],
+  "why": "also acceptable: volverá",
+  "note": "reported future can keep the future"
+ },
+ {
+  "id": "perfecto:24",
+  "q": "Ya ___ (probar) yo todos los restaurantes de la calle; este es el mejor.",
+  "key": "he probado",
+  "options": [
+   "he probado",
+   "probé",
+   "había probado",
+   "haya probado"
+  ],
+  "why": "also acceptable: probé",
+  "note": "LatAm ya + preterite"
+ },
+ {
+  "id": "perfecto:56",
+  "q": "¿Alguna vez ___ (ganar) tú un premio?",
+  "key": "has ganado",
+  "options": [
+   "has ganado",
+   "ganaste",
+   "habías ganado",
+   "hayas ganado"
+  ],
+  "why": "also acceptable: ganaste",
+  "note": "LatAm alguna vez + preterite"
+ },
+ {
+  "id": "presente:36",
+  "q": "Mis primos ___ (parecer) muy felices en esta foto de la boda.",
+  "key": "parecen",
+  "options": [
+   "parecen",
+   "parecieron",
+   "parecían",
+   "parezcan"
+  ],
+  "why": "also acceptable: parecían",
+  "note": "describing a photo in past also natural"
+ },
+ {
+  "id": "condperf:12",
+  "q": "Si hubieras escuchado a tu mamá ayer, ___ (saber) qué hacer.",
+  "key": "habrías sabido",
+  "options": [
+   "habrías sabido",
+   "sabrías",
+   "habrás sabido",
+   "habías sabido"
+  ],
+  "why": "also acceptable: sabrías",
+  "note": "sabrías for knowing now also fits"
+ },
+ {
+  "id": "condicional:80",
+  "q": "Pensé que la película ___ (empezar) a las siete.",
+  "key": "empezaría",
+  "options": [
+   "empezaría",
+   "empezará",
+   "empezaba"
+  ],
+  "why": "also acceptable: empezaba",
+  "note": "both natural for a reported schedule"
+ },
+ {
+  "id": "impneg:11",
+  "q": "Mamá, ___ (llamar) a la clínica ahora; yo te aviso apenas llegue.",
+  "key": "no llames",
+  "options": [
+   "no llames",
+   "llama",
+   "llamas",
+   "llames"
+  ],
+  "why": "also acceptable: llama",
+  "note": "\"yo te aviso apenas llegue\" fits telling her to call or not"
+ },
+ {
+  "id": "presubj:38",
+  "q": "Ojalá que mañana no ___ (llover) durante el partido.",
+  "key": "llueva",
+  "options": [
+   "llueva",
+   "llueve",
+   "lloviera",
+   "lloverá"
+  ],
+  "why": "also acceptable: lloviera",
+  "note": "ojalá + imperfect subjunctive for a less likely wish"
+ },
+ {
+  "id": "imperativo:133",
+  "q": "Chicos, ___ (empezar) la clase, ya son las ocho.",
+  "key": "empecemos",
+  "options": [
+   "empecemos",
+   "empezamos",
+   "empezaremos",
+   "empezaríamos"
+  ],
+  "why": "also acceptable: empezamos",
+  "note": "Colombian proposals with present indicative"
+ },
+ {
+  "id": "perfecto:82",
+  "q": "En lo que va de este año, mis abuelos ___ (venir) dos veces a visitarnos.",
+  "key": "han venido",
+  "options": [
+   "han venido",
+   "vinieron",
+   "habían venido",
+   "hayan venido"
+  ],
+  "why": "also acceptable: vinieron",
+  "note": "LatAm preterite for the current period"
+ },
+ {
+  "id": "perfecto:28",
+  "q": "Últimamente los precios ___ (subir) mucho en el mercado.",
+  "key": "han subido",
+  "options": [
+   "han subido",
+   "subieron",
+   "habían subido",
+   "hayan subido"
+  ],
+  "why": "also acceptable: subieron",
+  "note": "LatAm preterite with últimamente for a completed rise"
+ },
+ {
+  "id": "impneg:45",
+  "q": "Bebé, ___ (mover) la cabeza que te cae el jugo.",
+  "key": "no muevas",
+  "options": [
+   "no muevas",
+   "mueve",
+   "mueves",
+   "muevas"
+  ],
+  "why": "also acceptable: mueve",
+  "note": "\"que te cae el jugo\" can mean move away or keep still"
+ },
+ {
+  "id": "perfecto:60",
+  "q": "Jamás ___ (cantar) yo en público.",
+  "key": "he cantado",
+  "options": [
+   "he cantado",
+   "canté",
+   "había cantado",
+   "haya cantado"
+  ],
+  "why": "also acceptable: canté",
+  "note": "LatAm jamás + preterite"
+ },
+ {
+  "id": "perfecto:128",
+  "q": "En lo que va del año, mi hermana ___ (ahorrar) dos millones.",
+  "key": "ha ahorrado",
+  "options": [
+   "ha ahorrado",
+   "ahorró",
+   "había ahorrado",
+   "haya ahorrado"
+  ],
+  "why": "also acceptable: ahorró",
+  "note": "LatAm preterite for the current period"
+ },
+ {
+  "id": "condicional:95",
+  "q": "¿Cuánto ___ (valer) esa moto cuando tu papá la compró?",
+  "key": "valdría",
+  "options": [
+   "valdría",
+   "valdrá",
+   "valía"
+  ],
+  "why": "picked valía",
+  "note": ""
+ },
+ {
+  "id": "condicional:43",
+  "q": "Ayer no vi a Sofía en clase; ___ (estar) enferma.",
+  "key": "estaría",
+  "options": [
+   "estaría",
+   "estará",
+   "estaba"
+  ],
+  "why": "also acceptable: estaba",
+  "note": "plain statement also fits"
+ },
+ {
+  "id": "perfecto:17",
+  "q": "¿Ya ___ (terminar) tú el informe, o todavía no?",
+  "key": "has terminado",
+  "options": [
+   "has terminado",
+   "terminaste",
+   "habías terminado",
+   "hayas terminado"
+  ],
+  "why": "also acceptable: terminaste",
+  "note": "LatAm ya + preterite"
+ },
+ {
+  "id": "perfecto:83",
+  "q": "En lo que va del año, la ciudad ___ (recibir) más turistas que nunca.",
+  "key": "ha recibido",
+  "options": [
+   "ha recibido",
+   "recibió",
+   "había recibido",
+   "haya recibido"
+  ],
+  "why": "also acceptable: recibió",
+  "note": "LatAm preterite for the current period"
+ },
+ {
+  "id": "futperf:37",
+  "q": "Para el próximo mes, mis abuelos ya ___ (cumplir) sesenta años de casados.",
+  "key": "habrán cumplido",
+  "options": [
+   "habrán cumplido",
+   "cumplirán",
+   "habrían cumplido",
+   "hayan cumplido"
+  ],
+  "why": "also acceptable: cumplirán",
+  "note": "future simple equally natural for an anniversary"
+ },
+ {
+  "id": "perfecto:108",
+  "q": "¿Alguna vez ___ (buscar) tú tu nombre en internet?",
+  "key": "has buscado",
+  "options": [
+   "has buscado",
+   "buscaste",
+   "habías buscado",
+   "hayas buscado"
+  ],
+  "why": "also acceptable: buscaste",
+  "note": "LatAm alguna vez + preterite"
+ },
+ {
+  "id": "pluscsubj:34",
+  "q": "Si nosotros ___ (conocer) el camino, no nos habríamos perdido.",
+  "key": "hubiéramos conocido",
+  "options": [
+   "hubiéramos conocido",
+   "habíamos conocido",
+   "conociéramos",
+   "habríamos conocido"
+  ],
+  "why": "also acceptable: conociéramos",
+  "note": "mixed conditional with a lasting state also fine"
+ },
+ {
+  "id": "condperf:72",
+  "q": "Sin la beca, mis hermanos no ___ (poder) estudiar fuera.",
+  "key": "habrían podido",
+  "options": [
+   "habrían podido",
+   "podrían",
+   "habrán podido",
+   "habían podido"
+  ],
+  "why": "also acceptable: podrían",
+  "note": "no time marker; present consequence also fits"
+ },
+ {
+  "id": "imperfecto:109",
+  "q": "Apenas ___ (dar) las ocho cuando empezó la misa.",
+  "key": "daban",
+  "options": [
+   "daban",
+   "dieron",
+   "darían",
+   "dieran"
+  ],
+  "why": "also acceptable: dieron",
+  "note": "apenas dieron las ocho cuando is also natural"
+ },
+ {
+  "id": "plusc:87",
+  "q": "Hasta que lo conocí, mi abuelo nunca ___ (ver) un computador.",
+  "key": "había visto",
+  "options": [
+   "había visto",
+   "vio",
+   "ha visto",
+   "hubiera visto"
+  ],
+  "why": "unnatural",
+  "note": "\"hasta que lo conocí\" has the wrong subject/object; should be hasta que lo conoció (el computador)"
+ },
+ {
+  "id": "condperf:92",
+  "q": "De haber sido tú, yo no ___ (firmar) ese contrato.",
+  "key": "habría firmado",
+  "options": [
+   "habría firmado",
+   "firmaría",
+   "habré firmado",
+   "había firmado"
+  ],
+  "why": "also acceptable: firmaría; unnatural",
+  "note": "\"de haber sido tú\" is awkward (yo que tú / en tu lugar); firmaría also fits"
+ },
+ {
+  "id": "condperf:121",
+  "q": "Anunciaron que para las diez ya ___ (empezar) la ceremonia.",
+  "key": "habrían empezado",
+  "options": [
+   "habrían empezado",
+   "empezarían",
+   "habrán empezado",
+   "habían empezado"
+  ],
+  "why": "also acceptable: habrán empezado",
+  "note": "reported future can keep the future"
+ },
+ {
+  "id": "perfecto:43",
+  "q": "Hasta el momento yo no ___ (recibir) ninguna respuesta.",
+  "key": "he recibido",
+  "options": [
+   "he recibido",
+   "recibí",
+   "había recibido",
+   "haya recibido"
+  ],
+  "why": "also acceptable: recibí",
+  "note": "LatAm preterite with hasta el momento"
+ },
+ {
+  "id": "presente:28",
+  "q": "Yo ___ (volver) a casa a pie porque la oficina queda cerca.",
+  "key": "vuelvo",
+  "options": [
+   "vuelvo",
+   "volví",
+   "volvía",
+   "vuelva"
+  ],
+  "why": "also acceptable: volví",
+  "note": "no time marker; a single past event also fits"
+ },
+ {
+  "id": "perfecto:8",
+  "q": "Valentina nunca ___ (montar) a caballo.",
+  "key": "ha montado",
+  "options": [
+   "ha montado",
+   "montó",
+   "había montado",
+   "haya montado"
+  ],
+  "why": "also acceptable: montó",
+  "note": "LatAm nunca + preterite"
+ },
+ {
+  "id": "condperf:111",
+  "q": "Dijeron que para diciembre ya ___ (abrir) el nuevo centro comercial.",
+  "key": "habría abierto",
+  "options": [
+   "habría abierto",
+   "abriría",
+   "habrá abierto",
+   "había abierto"
+  ],
+  "why": "also acceptable: habrá abierto",
+  "note": "reported future can keep the future"
+ },
+ {
+  "id": "perfecto:129",
+  "q": "En lo que va del año, nosotros ___ (firmar) tres contratos grandes.",
+  "key": "hemos firmado",
+  "options": [
+   "hemos firmado",
+   "firmamos",
+   "habíamos firmado",
+   "hayamos firmado"
+  ],
+  "why": "also acceptable: firmamos",
+  "note": "LatAm preterite for the current period"
+ },
+ {
+  "id": "futuro:116",
+  "q": "Mi abuela no encuentra las gafas; se ___ (quedar) en la cocina.",
+  "key": "quedarán",
+  "options": [
+   "quedarán",
+   "quedarían",
+   "quedaban",
+   "queden"
+  ],
+  "why": "picked quedarían",
+  "note": ""
+ },
+ {
+  "id": "perfecto:62",
+  "q": "¿Ya ___ (pagar) ustedes todas las cuotas del carro?",
+  "key": "han pagado",
+  "options": [
+   "han pagado",
+   "pagaron",
+   "habían pagado",
+   "hayan pagado"
+  ],
+  "why": "also acceptable: pagaron",
+  "note": "LatAm ya + preterite"
+ },
+ {
+  "id": "condicional:42",
+  "q": "___ (ser) las diez cuando mi papá llegó a la casa.",
+  "key": "serían",
+  "options": [
+   "serían",
+   "serán",
+   "eran"
+  ],
+  "why": "picked eran; also acceptable: eran",
+  "note": "serían as a guess about the time also fits"
+ },
+ {
+  "id": "condperf:54",
+  "q": "Si la policía hubiera visto las fotos, ___ (creer) en su historia.",
+  "key": "habría creído",
+  "options": [
+   "habría creído",
+   "creería",
+   "habrá creído",
+   "había creído"
+  ],
+  "why": "also acceptable: creería",
+  "note": "present consequence also fits"
+ },
+ {
+  "id": "condperf:7",
+  "q": "Si hubieras manejado más despacio, no ___ (pasar) nada.",
+  "key": "habrías pasado",
+  "options": [
+   "habrías pasado",
+   "pasarías",
+   "habrás pasado",
+   "habías pasado"
+  ],
+  "why": "unnatural",
+  "note": "subject is nada, but every option is a tú form; should be no habría pasado nada"
+ },
+ {
+  "id": "condicional:37",
+  "q": "Creí que tú ___ (venir) con nosotros a la fiesta.",
+  "key": "vendrías",
+  "options": [
+   "vendrías",
+   "vendrás",
+   "venías"
+  ],
+  "why": "also acceptable: venías",
+  "note": "both natural after creí que"
+ },
+ {
+  "id": "condperf:45",
+  "q": "Yo no ___ (pensar) en renunciar si mi jefe me hubiera escuchado.",
+  "key": "habría pensado",
+  "options": [
+   "habría pensado",
+   "pensaría",
+   "habré pensado",
+   "había pensado"
+  ],
+  "why": "also acceptable: pensaría",
+  "note": "present consequence: I would not be thinking of quitting"
+ },
+ {
+  "id": "impsubj:111",
+  "q": "Tú comes como si no ___ (comer) desde ayer.",
+  "key": "comieras",
+  "options": [
+   "comieras",
+   "comas",
+   "comías",
+   "comerías"
+  ],
+  "why": "unnatural",
+  "note": "desde ayer wants hubieras comido, which is not offered"
+ },
+ {
+  "id": "presubj:188",
+  "q": "Aunque me ___ (ofrecer) el doble, no vendo mi finca.",
+  "key": "ofrezcan",
+  "options": [
+   "ofrezcan",
+   "ofrecen",
+   "ofrecerán",
+   "ofrecieran"
+  ],
+  "why": "picked ofrecieran; also acceptable: ofrecieran",
+  "note": "both concessive forms natural"
+ },
+ {
+  "id": "presubj:63",
+  "q": "Qué pena que yo no ___ (poder) ir a tu boda.",
+  "key": "pueda",
+  "options": [
+   "pueda",
+   "puedo",
+   "pudiera",
+   "podré"
+  ],
+  "why": "also acceptable: pudiera",
+  "note": "no time marker; the wedding could be past"
+ },
+ {
+  "id": "perfecto:57",
+  "q": "Mis papás nunca me ___ (gritar) delante de mis amigos.",
+  "key": "han gritado",
+  "options": [
+   "han gritado",
+   "gritaron",
+   "habían gritado",
+   "hayan gritado"
+  ],
+  "why": "also acceptable: gritaron",
+  "note": "LatAm nunca + preterite"
+ },
+ {
+  "id": "imperfecto:32",
+  "q": "Cada diciembre nosotros ___ (viajar) a Pereira a ver a los abuelos.",
+  "key": "viajábamos",
+  "options": [
+   "viajábamos",
+   "viajamos",
+   "viajaríamos",
+   "viajáramos"
+  ],
+  "why": "picked viajamos; also acceptable: viajamos",
+  "note": "no time marker; past habit also fits"
+ },
+ {
+  "id": "perfecto:86",
+  "q": "Hasta ahora, la profesora nunca nos ___ (dejar) tarea de fin de semana.",
+  "key": "ha dejado",
+  "options": [
+   "ha dejado",
+   "dejó",
+   "había dejado",
+   "haya dejado"
+  ],
+  "why": "also acceptable: dejó",
+  "note": "LatAm preterite with hasta ahora"
+ },
+ {
+  "id": "futuro:123",
+  "q": "Oigo una moto afuera; ___ (llegar) mi sobrino.",
+  "key": "llegará",
+  "options": [
+   "llegará",
+   "llegaría",
+   "llegaba",
+   "llegue"
+  ],
+  "why": "unnatural",
+  "note": "future of a punctual verb reads as a prediction; natural is será mi sobrino or habrá llegado"
+ },
+ {
+  "id": "imperfecto:74",
+  "q": "El profesor parecía enojado y ___ (gritar) a todos.",
+  "key": "gritaba",
+  "options": [
+   "gritaba",
+   "gritó",
+   "gritaría",
+   "gritara"
+  ],
+  "why": "also acceptable: gritó",
+  "note": "single outburst or ongoing scene both fit"
+ },
+ {
+  "id": "condicional:73",
+  "q": "Yo de ti, ___ (preguntar) al profesor antes del examen.",
+  "key": "preguntaría",
+  "options": [
+   "preguntaría",
+   "preguntaré",
+   "preguntara"
+  ],
+  "why": "unnatural",
+  "note": "\"yo de ti\" is Spain-flavoured; Colombia says yo que tú or yo en tu lugar"
+ },
+ {
+  "id": "impneg:83",
+  "q": "Doctor Pérez, ___ (apagar) el celular; estamos en cirugía.",
+  "key": "no apague",
+  "options": [
+   "no apague",
+   "apague",
+   "apaga"
+  ],
+  "why": "picked apague",
+  "note": ""
+ },
+ {
+  "id": "plusc:22",
+  "q": "Cuando te presenté a Laura, tú ya la ___ (conocer) en la universidad.",
+  "key": "habías conocido",
+  "options": [
+   "habías conocido",
+   "has conocido",
+   "conocías",
+   "hubieras conocido"
+  ],
+  "why": "picked conocías; also acceptable: conocías",
+  "note": "both natural for prior acquaintance"
+ },
+ {
+  "id": "imperfecto:77",
+  "q": "Mis abuelos no ___ (conocer) internet cuando eran jóvenes.",
+  "key": "conocían",
+  "options": [
+   "conocían",
+   "conocieron",
+   "conocerían",
+   "conocieran"
+  ],
+  "why": "also acceptable: conocieron",
+  "note": "no conocieron internet is also natural"
+ },
+ {
+  "id": "impsubj:106",
+  "q": "Ojalá ___ (haber) más tiempo en el día para todo.",
+  "key": "hubiera",
+  "options": [
+   "hubiera",
+   "haya",
+   "había",
+   "habría"
+  ],
+  "why": "also acceptable: haya",
+  "note": "ojalá with present or imperfect subjunctive both fine"
+ },
+ {
+  "id": "perfecto:87",
+  "q": "Desde que empezó el curso, tú ___ (aprender) muchísimo.",
+  "key": "has aprendido",
+  "options": [
+   "has aprendido",
+   "aprendiste",
+   "habías aprendido",
+   "hayas aprendido"
+  ],
+  "why": "also acceptable: aprendiste",
+  "note": "LatAm preterite with desde que"
+ },
+ {
+  "id": "perfecto:93",
+  "q": "Hasta ahora, nosotros ___ (conseguir) ahorrar muy poco.",
+  "key": "hemos conseguido",
+  "options": [
+   "hemos conseguido",
+   "conseguimos",
+   "habíamos conseguido",
+   "hayamos conseguido"
+  ],
+  "why": "also acceptable: conseguimos",
+  "note": "LatAm preterite with hasta ahora"
+ },
+ {
+  "id": "condperf:143",
+  "q": "Cuando el profesor preguntó, nadie respondió; quién sabe, no ___ (leer) el capítulo.",
+  "key": "habríamos leído",
+  "options": [
+   "habríamos leído",
+   "leeríamos",
+   "habremos leído",
+   "habíamos leído"
+  ],
+  "why": "unnatural",
+  "note": "nadie respondió and quién sabe point to them, but every option is nosotros; should be no habrán leído"
+ },
+ {
+  "id": "perfecto:49",
+  "q": "Los últimos años ___ (ser) difíciles para los pequeños comerciantes.",
+  "key": "han sido",
+  "options": [
+   "han sido",
+   "fueron",
+   "habían sido",
+   "hayan sido"
+  ],
+  "why": "also acceptable: fueron",
+  "note": "LatAm preterite for a closed span"
+ },
+ {
+  "id": "condperf:115",
+  "q": "El banco aseguró que para el martes ya ___ (recibir) mi pago.",
+  "key": "habría recibido",
+  "options": [
+   "habría recibido",
+   "recibiría",
+   "habrá recibido",
+   "había recibido"
+  ],
+  "why": "also acceptable: habrá recibido",
+  "note": "reported future can keep the future"
+ }
+]
