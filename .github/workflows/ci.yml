@@ -1,6 +1,12 @@
-# Typecheck, tests, content gate and build for the TypeScript app in app/, on
-# every push to `next` and on every pull request. Deployment lives in the
-# fluidez-next repo and is not touched here.
+# Checks for what `next` ships: the app at the repo root (index.html, js/,
+# data/) and the Juegos arcade (juegos/). Typecheck, the test suite, the
+# content validator and every tools/test-*.js, on every push to `next` and on
+# every pull request.
+#
+# This used to test the TypeScript rebuild in app/. That app is built from the
+# `rebuild` branch by the fluidez-next repo and is no longer developed here, so
+# its tests drifted as the shared data moved on and every push to `next` failed
+# (6 Nov 2026). It is not checked here any more.
 name: CI
 
 on:
@@ -19,18 +25,21 @@ jobs:
   app:
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    defaults:
-      run:
-        working-directory: app
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: app/package-lock.json
+          cache-dependency-path: package-lock.json
       - run: npm ci
       - run: npm run typecheck
       - run: npm test
-      - run: npm run gate
-      - run: npm run build
+      - run: node tools/validate-content.js
+      - name: tools/test-*.js
+        run: |
+          for t in tools/test-*.js; do
+            echo "::group::$t"
+            node "$t" || { echo "::error::$t failed"; exit 1; }
+            echo "::endgroup::"
+          done
