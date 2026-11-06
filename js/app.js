@@ -77,8 +77,26 @@ window.App = (function () {
         window.Shell.go('inicio');
         if (window.Profile && window.Profile.applyTheme) window.Profile.applyTheme();
       });
+    } else {
+      deepLink();
     }
   });
+
+  /* index.html?lesson=<id> opens that grammar lesson, the way the syllabus does.
+   * The Juegos arcade (juegos/) links here from its tense cards. The parameter
+   * is dropped from the address afterwards so a reload does not reopen it. */
+  function deepLink() {
+    var m = /[?&]lesson=([^&#]+)/.exec(location.search || '');
+    if (!m || !window.LessonRun || !window.Shell) return;
+    var id;
+    try { id = decodeURIComponent(m[1]); } catch (e) { return; }
+    try { history.replaceState(null, '', location.pathname + (location.hash || '')); } catch (e) {}
+    window.Shell.openOverlay();
+    window.LessonRun.run({ type: 'grammar', id: id }, function () {
+      window.Shell.closeOverlay();
+      window.Shell.go('inicio');
+    });
+  }
 
   return { go: go };
 })();

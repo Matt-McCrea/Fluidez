@@ -346,7 +346,13 @@ window.GameRound = (function () {
        * being thrown away and half of another's, and "Mis fallos" could stay
        * empty however much you played. */
       if (result === 'good' || result === 'near') {
-        if (item.id && S) { S.enrol(item.id); S.grade(item.id, true); }
+        if (item.id && S) {
+          /* the card must be looked at BEFORE enrol: a typed right answer on an item the player has never met is
+           * permanently learnt (js/srs.js, rule a); a tapped one never is */
+          var fresh = !S.isEnrolled(item.id);
+          S.enrol(item.id);
+          S.grade(item.id, true, { typed: item.play === 'type', fresh: fresh });
+        }
         // Getting it right is how a mistake stops being one. Same shape as the
         // record below, so ErrorLog files both under the same key.
         if (window.ErrorLog && window.ErrorLog.credit) {
@@ -355,7 +361,10 @@ window.GameRound = (function () {
         }
         return;
       }
-      if (item.id && S) S.enrol(item.id);      // eligible sooner, but not lapsed
+      if (item.id && S) {
+        S.enrol(item.id);                      // eligible sooner, but not lapsed
+        if (S.isLearnt && S.isLearnt(item.id)) S.grade(item.id, false);   // a learnt item missed anywhere loses the flag
+      }
       if (window.ErrorLog) {
         /* es/en as well as front/back, because js/study.js needs to know
          * which side is which to build a card that asks meaning → Spanish.

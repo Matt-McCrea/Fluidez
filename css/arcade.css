@@ -332,3 +332,113 @@ body { background:var(--bg); color:var(--text); }
 .arc-progress { margin: 0 0 14px; }
 .arc-progress-all { font-weight: 700; font-size: .95rem; }
 .arc-progress-theme { color: var(--muted); font-size: .84rem; margin-top: 2px; }
+
+/* ---- stage 4: Tu progreso, the weekly check, tense cards ------------------
+   Everything here reads the tokens at the top of the file, so a light theme
+   would reskin it with the rest. Status colours: green dominado, gold casi,
+   red por aprender, muted sin probar. */
+.arc-bar { height:5px; border-radius:99px; background:var(--panel-2); overflow:hidden; margin-top:6px; }
+.arc-bar i { display:block; height:100%; background:var(--accent); border-radius:99px; min-width:0; }
+
+.arc-prog { margin-top:22px; }
+.arc-prog .arc-group { margin-top:0; }
+.arc-prow {
+  display:block; width:100%; text-align:left; font:inherit; color:inherit;
+  background:var(--panel); border:1px solid var(--border); border-radius:12px;
+  padding:11px 14px 12px; margin-bottom:8px;
+}
+button.arc-prow { cursor:pointer; }
+button.arc-prow:active { transform:translateY(1px); }
+.arc-prow-k { font-size:.62rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-right:8px; }
+.arc-prow-v { font-size:.98rem; font-weight:750; font-variant-numeric:tabular-nums; }
+.arc-prow-s { display:block; margin-top:7px; font-size:.74rem; color:var(--muted); }
+.arc-link {
+  background:none; border:0; padding:0; font:inherit; color:var(--accent-2);
+  text-decoration:underline; cursor:pointer;
+}
+
+.arc-tchips { display:flex; flex-wrap:wrap; gap:5px; margin-top:9px; }
+.arc-tchip {
+  display:inline-flex; align-items:center; gap:5px; font:inherit; font-size:.68rem;
+  color:var(--text); background:transparent; border:1px solid var(--border);
+  border-radius:999px; padding:3px 8px 3px 6px; cursor:default;
+}
+button.arc-tchip { cursor:pointer; }
+.arc-tchip em { font-style:normal; color:var(--muted); font-variant-numeric:tabular-nums; }
+.arc-tdot { width:8px; height:8px; border-radius:50%; background:var(--muted); display:inline-block; }
+.arc-tchip[data-s="dominado"] { border-color:var(--good); }
+.arc-tchip[data-s="dominado"] .arc-tdot { background:var(--good); }
+.arc-tchip[data-s="casi"] { border-color:var(--warn); }
+.arc-tchip[data-s="casi"] .arc-tdot { background:var(--warn); }
+.arc-tchip[data-s="aprender"] { border-color:var(--bad); }
+.arc-tchip[data-s="aprender"] .arc-tdot { background:var(--bad); }
+.arc-tchip[data-s="sin"] { color:var(--muted); }
+
+.arc-drow { margin-bottom:10px; }
+.arc-drow-k { font-size:.88rem; font-weight:650; }
+.arc-drow-v { float:right; font-size:.82rem; color:var(--muted); font-variant-numeric:tabular-nums; }
+
+.arc-check {
+  position:relative; border:1px solid var(--border); border-radius:var(--radius);
+  background:linear-gradient(135deg, color-mix(in srgb, var(--warn) 16%, var(--panel)) 0%, var(--panel) 65%);
+  padding:15px 18px 16px; margin-bottom:18px; overflow:hidden;
+}
+.arc-check::after { content:''; position:absolute; inset:0 auto 0 0; width:3px; background:var(--warn); }
+.arc-check-k { display:block; font-size:.62rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--warn); margin-bottom:5px; }
+.arc-check b { display:block; font-size:1.1rem; font-weight:700; line-height:1.25; }
+.arc-check-s { display:block; margin-top:5px; font-size:.8rem; color:var(--muted); }
+.arc-check-row { display:flex; gap:10px; margin-top:13px; flex-wrap:wrap; }
+.arc-btn {
+  font:inherit; font-size:.88rem; font-weight:650; cursor:pointer; color:var(--text);
+  background:transparent; border:1px solid var(--border); border-radius:12px; padding:10px 15px;
+}
+.arc-btn.on { background:var(--accent); border-color:var(--accent); color:#06222a; }
+.arc-btn:active { transform:translateY(1px); }
+
+.arc-checkrun { --game:var(--accent); }
+.arc-check-pos { font-size:.88rem; color:var(--muted); margin:6px 0 2px; }
+.arc-check-pos b { color:var(--text); }
+.arc-check-q { margin-top:22px; }
+.arc-check-note { min-height:2.6em; margin:14px 0 6px; font-size:.86rem; line-height:1.45; color:var(--muted); }
+.arc-check-next { width:100%; }
+.arc-check-next[hidden] { display:none; }
+.arc-check-lvl { margin-top:18px; }
+.arc-next { width:100%; margin-bottom:12px; }
+
+.arc-lang {
+  margin-left:auto; font:inherit; font-size:.72rem; font-weight:700; letter-spacing:.08em;
+  background:transparent; color:var(--muted); border:1px solid var(--border);
+  border-radius:8px; padding:4px 9px; cursor:pointer;
+}
+.arc-when { margin:0; padding-left:18px; font-size:.92rem; line-height:1.55; }
+.arc-when li { margin-bottom:3px; }
+.arc-how { margin:0; font-size:.92rem; line-height:1.55; }
+.arc-when b, .arc-how b, .arc-ex-es b { font-weight:750; color:var(--accent-2); }
+.arc-ctable { margin:12px 0 0; border:1px solid var(--border); border-radius:12px; background:var(--panel); padding:8px 14px; }
+.arc-ctable-v { font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); padding:3px 0 5px; }
+.arc-ctable-r { display:flex; justify-content:space-between; padding:3px 0; font-size:.95rem; }
+.arc-ctable-r span { color:var(--muted); }
+.arc-ex { margin-bottom:10px; }
+.arc-ex-es { font-size:.98rem; line-height:1.4; }
+.arc-ex-en { font-size:.76rem; color:var(--muted); margin-top:2px; }
+a.arc-mode { text-decoration:none; }
+
+.arc-chipwrap { display:inline-flex; align-items:center; gap:3px; }
+.arc-chipq {
+  width:22px; height:22px; border-radius:50%; font:inherit; font-size:.72rem; font-weight:700;
+  border:1px solid var(--border); background:transparent; color:var(--muted); cursor:pointer; padding:0;
+}
+.arc-chipq:hover { color:var(--text); border-color:var(--accent); }
+
+/* ---- Prueba de palabras ------------------------------------------------- */
+.arc-wtbtn { display:block; width:100%; margin:0 0 8px; padding:12px 14px; border-radius:12px; cursor:pointer;
+  border:1px solid var(--g, var(--border)); background:transparent; color:var(--text); font:inherit; font-weight:700; }
+.arc-wtsub { margin-top:0; }
+.arc-wt-rank { color:var(--muted); font-size:.82rem; margin:6px 0 4px; }
+.arc-wt-prompt { font-size:1.6rem; font-weight:800; margin:6px 0 16px; line-height:1.2; }
+.arc-wt-input { width:100%; box-sizing:border-box; }
+.arc-wt-fb { min-height:2.2em; margin:10px 0; font-size:1.2rem; font-weight:700; }
+.arc-wt-fb.good { color:var(--good, #2a8a3a); }
+.arc-wt-fb.bad { color:var(--bad, #b3382c); }
+.arc-wt-idk { margin-top:6px; }
+.arc-wt-sum { font-size:1.1rem; font-weight:700; }

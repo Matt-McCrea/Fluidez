@@ -424,6 +424,7 @@
     if (!FULL()) {
       var jg = G.GAMES.filter(function (g) { return g.key === 'jugar'; })[0];
       if (jg) wrap.appendChild(jugarCard(jg));
+      if (window.TenseCheck && window.TenseCheck.due()) wrap.appendChild(checkCard());
     }
 
     // the shelf
@@ -472,6 +473,7 @@
       grid.appendChild(tile);
     });
     wrap.appendChild(grid);
+    if (!FULL() && window.TenseCheck) wrap.appendChild(progressPanel());
 
     var foot = el('div', 'arc-foot');
     foot.textContent = 'Tu nivel y tu memoria son los mismos que en Fluidez: lo que aciertas aquí cuenta allí.';
@@ -534,8 +536,8 @@
    * questions with no clock for a few stops on a bus, or sixty seconds against
    * the record. Verbos adds its tense picker, because the useful question for a
    * verb drill is "which tense", and the answer should survive to next time. */
-  function sheet(g) {
-    pushView('sheet');
+  function sheet(g, noPush) {
+    if (noPush) VIEW = 'sheet'; else pushView('sheet');
     var h = host();
     clear(h);
     var wrap = el('div', 'arc-stats');
@@ -572,7 +574,15 @@
           saveTenses(sel); paint();
         });
         byKey[tkey] = b;
-        chips.appendChild(b);
+        if (hasCard(tkey)) {
+          var cw = el('span', 'arc-chipwrap');
+          var q = el('button', 'arc-chipq', '?');
+          q.type = 'button';
+          q.setAttribute('aria-label', 'Ficha de ' + tenseLabel(tkey));
+          q.addEventListener('click', function () { tenseCard(tkey); });
+          cw.appendChild(b); cw.appendChild(q);
+          chips.appendChild(cw);
+        } else chips.appendChild(b);
       });
       paint();
       wrap.appendChild(chips);
@@ -593,6 +603,11 @@
       }
       paintProgress();
       wrap.appendChild(prog);
+      var tb = el('button', 'arc-wtbtn', '¿Ya sabes español? Marca las que conoces');
+      tb.type = 'button';
+      tb.addEventListener('click', function () { wordTest(g); });
+      wrap.appendChild(tb);
+      wrap.appendChild(el('p', 'arc-sub arc-wtsub', 'Escribe cada palabra, sin parar y sin reloj. Las que aciertas no vuelven a preguntarse nunca.'));
       wrap.appendChild(el('div', 'arc-group', 'Tema'));
       var tchips = el('div', 'arc-chips'), tby = {};
       function paintT() {
@@ -626,6 +641,105 @@
     mode('c', 'Contrarreloj · 60 s', 'el reloj se para si bloqueas el celular');
     wrap.appendChild(modes);
     h.appendChild(wrap);
+  }
+
+  /* PRUEBA DE PALABRAS. Endless, no clock, no score: one word at a time down the
+   * frequency list, English shown, Spanish typed. Right = permanently learnt
+   * (GameItems.wordTestRight); "No la sé" or wrong = the answer for a moment and
+   * the word enrolled as new for Palabras. The position is kept in
+   * fluidez.arcade (wordTest: { pos, marked }) so the next visit resumes. */
+  function wordTest(g) {
+    var GI3 = window.GameItems, h = host();
+    VIEW = 'wtest';                         // shares the sheet's history entry, as a round does
+    var arc = loadArc(), wt = arc.wordTest || {};
+    var pos = wt.pos || 0, marked = wt.marked || 0, session = 0, asked = 0;
+    var cur = null, locked = false, timer = null;
+    function persist() { var a = loadArc(); a.wordTest = { pos: pos, marked: marked }; saveArc(a); }
+    clear(h);
+    var wrap = el('div', 'arc-stats arc-wt');
+    wrap.style.setProperty('--g', g.hue);
+    var top = el('div', 'arc-stats-top');
+    var fin = el('button', 'arc-back', 'Terminar');
+    fin.type = 'button';
+    top.appendChild(fin);
+    top.appendChild(el('h2', null, 'Prueba de palabras'));
+    wrap.appendChild(top);
+    var count = el('p', 'arc-sub arc-wt-count');
+    var rankEl = el('div', 'arc-wt-rank');
+    var promptEl = el('div', 'arc-wt-prompt');
+    var input = el('input', 'g-input arc-wt-input');
+    input.type = 'text'; input.autocomplete = 'off'; input.autocapitalize = 'off'; input.spellcheck = false;
+    input.enterKeyHint = 'go'; input.setAttribute('aria-label', 'Tu respuesta');
+    var fb = el('div', 'arc-wt-fb');
+    var idk = el('button', 'arc-wtbtn arc-wt-idk', 'No la sé');
+    idk.type = 'button';
+    wrap.appendChild(count); wrap.appendChild(rankEl); wrap.appendChild(promptEl);
+    wrap.appendChild(input);
+    if (UI && UI.accentBar) wrap.appendChild(UI.accentBar(function () { return input; }));
+    wrap.appendChild(fb); wrap.appendChild(idk);
+    h.appendChild(wrap);
+
+    function paintCount() { count.textContent = 'Llevas ' + num(marked) + ' marcadas como sabidas'; }
+    function sfx(k) { try { if (GS && GS.sfx) GS.sfx(k); } catch (e) {} }
+    function next() {
+      clearTimeout(timer);
+      if (VIEW !== 'wtest') return;               // left by the back gesture
+      locked = false; fb.textContent = ''; fb.className = 'arc-wt-fb';
+      input.value = ''; input.className = 'g-input arc-wt-input'; input.disabled = false;
+      var n = GI3.wordTestNext(pos);
+      paintCount();
+      if (!n) { cur = null; promptEl.textContent = 'Has llegado al final de la lista.'; rankEl.textContent = ''; input.hidden = true; idk.hidden = true; return; }
+      cur = n; pos = n.pos;
+      persist();
+      rankEl.textContent = 'palabra ' + thousandsA(n.rank) + ' de ' + thousandsA(n.total);
+      promptEl.textContent = n.e.en;
+      try { input.focus(); } catch (e) {}
+    }
+    function thousandsA(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.'); }
+    function right() {
+      if (locked || !cur) return; locked = true;
+      GI3.wordTestRight(cur.e);
+      marked++; session++; asked++; pos = cur.pos + 1;
+      input.classList.add('right'); fb.textContent = '✓'; fb.className = 'arc-wt-fb good';
+      sfx('good'); persist(); paintCount();
+      timer = setTimeout(next, 350);
+    }
+    function miss() {
+      if (locked || !cur) return; locked = true;
+      GI3.wordTestMiss(cur.e);
+      asked++; pos = cur.pos + 1;
+      input.classList.add('wrong'); input.disabled = true;
+      fb.textContent = cur.e.es; fb.className = 'arc-wt-fb bad';
+      sfx('wrong'); persist();
+      timer = setTimeout(next, 1600);
+      fb.onclick = function () { fb.onclick = null; next(); };
+    }
+    input.addEventListener('input', function () {
+      if (locked || !cur) return;
+      if (GI3.wordTestGrade(cur.e, input.value) === 'good') right();
+    });
+    input.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter' || locked || !cur) return;
+      e.preventDefault();
+      if (!input.value.trim()) return;
+      if (GI3.wordTestGrade(cur.e, input.value) === 'good') right(); else miss();
+    });
+    idk.addEventListener('click', miss);
+    fin.addEventListener('click', function () {
+      clearTimeout(timer); persist();
+      clear(h);
+      var sw = el('div', 'arc-stats arc-wt');
+      sw.style.setProperty('--g', g.hue);
+      sw.appendChild(el('h2', null, 'Prueba de palabras'));
+      sw.appendChild(el('p', 'arc-wt-sum', session === 0 ? 'No has marcado ninguna esta vez.' : 'Has marcado ' + num(session) + (session === 1 ? ' palabra' : ' palabras') + ' como sabidas.'));
+      sw.appendChild(el('p', 'arc-sub', 'En total llevas ' + num(marked) + '. Las demás ya están en Palabras, para aprenderlas.'));
+      var bk = el('button', 'arc-wtbtn', 'Volver a Palabras');
+      bk.type = 'button';
+      bk.addEventListener('click', function () { sheet(g, true); });
+      sw.appendChild(bk);
+      h.appendChild(sw);
+    });
+    next();
   }
 
   function startShelf(g, m) {
@@ -682,6 +796,345 @@
         });
       }
     });
+  }
+
+  /* ---- TU PROGRESO, THE WEEKLY CHECK, THE TENSE CARDS (stage 4) ------------
+   * The logic lives in js/tensecheck.js (TenseCheck); this is its drawing.
+   * Three things share one idea: the games feed the SRS, so the SRS can say how
+   * far you have got, test the tenses once a week, and name the next one. */
+  var TC = function () { return window.TenseCheck; };
+  var STATUS_TEXT = { dominado: 'dominado', casi: 'casi', aprender: 'por aprender', sin: 'sin probar' };
+  function cards() { return window.TENSE_CARDS || null; }
+  function hasCard(k) { var c = cards(); return !!(c && c[k]); }
+  function bandIndexNow() { var b = window.Profile ? window.Profile.current() : 'A1'; var i = ['A1', 'A2', 'B1', 'B2', 'C1'].indexOf(b); return i < 0 ? 0 : i; }
+  function cardLang() { var a = loadArc(); return a.cl === 'es' || a.cl === 'en' ? a.cl : (bandIndexNow() >= 2 ? 'es' : 'en'); }
+
+  function bar(n, of, hue) {
+    var b = el('div', 'arc-bar');
+    var f = el('i');
+    f.style.setProperty('width', (of ? Math.min(100, Math.round(100 * n / of)) : 0) + '%');
+    if (hue) f.style.setProperty('background', hue);
+    b.appendChild(f);
+    return b;
+  }
+  /* "*x*" is bold in the card data; everything else is plain text. */
+  function rich(parent, text) {
+    String(text || '').split(/(\*[^*]+\*)/).forEach(function (part) {
+      if (!part) return;
+      if (/^\*[^*]+\*$/.test(part)) parent.appendChild(el('b', null, part.slice(1, -1)));
+      else parent.appendChild(document.createTextNode ? document.createTextNode(part) : el('span', null, part));
+    });
+    return parent;
+  }
+  function topBar(title, onBack) {
+    var top = el('div', 'arc-stats-top');
+    var back = el('button', 'arc-back', '←');
+    back.type = 'button';
+    back.setAttribute('aria-label', 'Volver');
+    back.addEventListener('click', onBack || goBack);
+    top.appendChild(back);
+    top.appendChild(el('h2', null, title));
+    return top;
+  }
+  var SHORT = { presente: 'Presente', preterito: 'Pretérito', imperfecto: 'Imperfecto', perfecto: 'Perfecto',
+    futuro: 'Futuro', imperativo: 'Imperativo', condicional: 'Condicional', plusc: 'Pluscuam.',
+    presubj: 'Pres. subj.', impneg: 'Imp. neg.', impsubj: 'Imperf. subj.', futperf: 'Fut. perf.',
+    perfsubj: 'Perf. subj.', condperf: 'Cond. perf.', pluscsubj: 'Pluscuam. subj.' };
+  function tenseChip(k, status, onTap) {
+    var b = el('button', 'arc-tchip');
+    b.type = 'button';
+    b.setAttribute('data-s', status);
+    b.appendChild(el('i', 'arc-tdot'));
+    b.appendChild(el('span', null, SHORT[k] || tenseLabel(k)));
+    b.setAttribute('title', tenseLabel(k) + ': ' + STATUS_TEXT[status]);
+    b.setAttribute('aria-label', tenseLabel(k) + ', ' + STATUS_TEXT[status]);
+    if (onTap) b.addEventListener('click', onTap);
+    return b;
+  }
+  function ago(ms) {
+    if (!ms) return null;
+    var d = Math.floor((Date.now() - ms) / 86400000);
+    return d <= 0 ? 'hoy' : d === 1 ? 'ayer' : 'hace ' + d + ' días';
+  }
+
+  /* ---- the panel on the board ---------------------------------------------- */
+  function progressPanel() {
+    var T = TC();
+    var pr = T.progress();
+    var panel = el('section', 'arc-prog');
+    panel.appendChild(el('div', 'arc-group', 'Tu progreso'));
+
+    var w = pr.words, nx = w.next;
+    var rw = el('button', 'arc-prow');
+    rw.type = 'button';
+    rw.appendChild(el('span', 'arc-prow-k', 'Palabras'));
+    rw.appendChild(el('span', 'arc-prow-v', T.thousands(nx.n) + ' de ' + T.thousands(nx.of)));
+    rw.appendChild(bar(nx.n, nx.of, '#6f8f2a'));
+    rw.appendChild(el('span', 'arc-prow-s', 'las ' + T.thousands(nx.m) + ' más comunes · ver por tema ›'));
+    rw.addEventListener('click', wordsDetail);
+    panel.appendChild(rw);
+
+    var rv = el('div', 'arc-prow');
+    rv.appendChild(el('span', 'arc-prow-k', 'Verbos'));
+    rv.appendChild(el('span', 'arc-prow-v', pr.verbs + (pr.verbs === 1 ? ' verbo conocido' : ' verbos conocidos')));
+    var chips = el('div', 'arc-tchips');
+    T.LADDER.forEach(function (k) {
+      chips.appendChild(tenseChip(k, pr.tenses[k], hasCard(k) ? function () { tenseCard(k); } : null));
+    });
+    rv.appendChild(chips);
+    var at = T.lastCheckAt();
+    var sub = el('span', 'arc-prow-s', at ? 'último chequeo ' + ago(at) + ' · ' : 'sin chequeo todavía · ');
+    var go = el('button', 'arc-link', 'hacer el chequeo');
+    go.type = 'button';
+    go.addEventListener('click', checkRun);
+    sub.appendChild(go);
+    rv.appendChild(sub);
+    panel.appendChild(rv);
+
+    var ph = pr.phrases;
+    var rf = el('div', 'arc-prow');
+    rf.appendChild(el('span', 'arc-prow-k', 'Frases'));
+    rf.appendChild(el('span', 'arc-prow-v', T.thousands(ph.n) + ' de ' + T.thousands(ph.of)));
+    rf.appendChild(bar(ph.n, ph.of, '#1d7f8c'));
+    panel.appendChild(rf);
+    return panel;
+  }
+
+  function wordsDetail() {
+    pushView('words');
+    var h = host(); clear(h);
+    var T = TC(), w = T.wordProgress();
+    var wrap = el('div', 'arc-stats');
+    wrap.appendChild(topBar('Palabras'));
+    wrap.appendChild(el('p', 'arc-sub', 'Cuentan las palabras que has acertado al menos una vez. Son ' + T.thousands(w.total) + ' en total.'));
+    wrap.appendChild(el('div', 'arc-group', 'Las más comunes'));
+    w.marks.forEach(function (m) {
+      var r = el('div', 'arc-drow');
+      r.appendChild(el('span', 'arc-drow-k', 'Las ' + T.thousands(m.m)));
+      r.appendChild(el('span', 'arc-drow-v', T.thousands(m.n) + ' de ' + T.thousands(m.of)));
+      r.appendChild(bar(m.n, m.of, '#6f8f2a'));
+      wrap.appendChild(r);
+    });
+    wrap.appendChild(el('div', 'arc-group', 'Por tema'));
+    w.themes.slice().sort(function (a, b) { var x = themeLabel(a.id), y = themeLabel(b.id); return x < y ? -1 : x > y ? 1 : 0; })
+      .forEach(function (t) {
+        var r = el('div', 'arc-drow');
+        r.appendChild(el('span', 'arc-drow-k', themeLabel(t.id)));
+        r.appendChild(el('span', 'arc-drow-v', t.n + ' de ' + t.of));
+        r.appendChild(bar(t.n, t.of, '#6f8f2a'));
+        wrap.appendChild(r);
+      });
+    h.appendChild(wrap);
+  }
+
+  /* ---- the card on the board -------------------------------------------------- */
+  function checkCard() {
+    var c = el('div', 'arc-check');
+    c.appendChild(el('span', 'arc-check-k', 'Chequeo semanal'));
+    c.appendChild(el('b', null, 'Mira qué tiempos ya dominas'));
+    c.appendChild(el('span', 'arc-check-s', 'Tres frases por tiempo, sin reloj. Te dice cuál aprender después.'));
+    var row = el('div', 'arc-check-row');
+    var go = el('button', 'arc-btn on', 'Empezar · 3 min');
+    go.type = 'button';
+    go.addEventListener('click', checkRun);
+    var later = el('button', 'arc-btn', 'Más tarde');
+    later.type = 'button';
+    later.addEventListener('click', function () { TC().snooze(); board(); });
+    row.appendChild(go); row.appendChild(later);
+    c.appendChild(row);
+    return c;
+  }
+
+  /* ---- the check -------------------------------------------------------------- */
+  function checkRun() {
+    pushView('check');
+    drawCheck(TC().session());
+  }
+  function drawCheck(s) {
+    if (s.done) { checkResults(s); return; }
+    var h = host(); clear(h);
+    var wrap = el('div', 'arc-stats arc-checkrun');
+    wrap.style.setProperty('--g', '#b5711a');
+    wrap.appendChild(topBar('Chequeo semanal'));
+    var t = s.tense(), g = s.item();
+    var pos = el('div', 'arc-check-pos');
+    pos.appendChild(el('b', null, tenseLabel(t)));
+    pos.appendChild(el('span', null, ' · ' + (s.index() + 1) + ' de ' + s.count()));
+    wrap.appendChild(pos);
+    wrap.appendChild(bar(s.step() + s.index() / Math.max(1, s.count()), s.steps(), 'var(--accent)'));
+    wrap.appendChild(el('div', 'g-prompt arc-check-q', g.q.replace(/___+/g, '＿＿＿')));
+    var opts = el('div', 'g-options');
+    var btns = [];
+    var note = el('div', 'arc-check-note');
+    var more = el('button', 'arc-btn on arc-check-next', 'Seguir');
+    more.type = 'button';
+    more.hidden = true;
+    var inEs = bandIndexNow() >= 2;
+    (window.ENGINE ? window.ENGINE.shuffle(g.o.slice()) : g.o.slice()).forEach(function (o) {
+      var b = el('button', 'g-opt', o);
+      b.type = 'button';
+      b.addEventListener('click', function () {
+        var r = s.answer(o);
+        if (!r) return;
+        btns.forEach(function (x) {
+          x.disabled = true;
+          if (x.textContent === r.answer) x.classList.add('right');
+        });
+        if (!r.right) b.classList.add('wrong');
+        var why = inEs ? r.why : r.whyEn;
+        note.textContent = (r.right ? '' : 'Era «' + r.answer + '». ') + (why || '');
+        more.hidden = false;
+      });
+      btns.push(b);
+      opts.appendChild(b);
+    });
+    wrap.appendChild(opts);
+    wrap.appendChild(note);
+    more.addEventListener('click', function () { s.next(); drawCheck(s); });
+    wrap.appendChild(more);
+    h.appendChild(wrap);
+  }
+
+  function checkResults(s) {
+    var T = TC(), h = host(); clear(h);
+    var wrap = el('div', 'arc-stats');
+    wrap.appendChild(topBar('Tu chequeo', board));
+    var res = {};
+    T.LADDER.forEach(function (k) { res[k] = s.res[k] || 'sin'; });
+    wrap.appendChild(el('p', 'arc-sub', s.stopped
+      ? 'Paramos aquí: dos tiempos seguidos salieron difíciles, y no hace falta seguir.'
+      : 'Has pasado por todos los tiempos.'));
+    var chips = el('div', 'arc-tchips');
+    T.LADDER.forEach(function (k) {
+      var c = tenseChip(k, res[k], hasCard(k) ? function () { tenseCard(k); } : null);
+      if (s.score[k]) c.appendChild(el('em', null, s.score[k]));
+      chips.appendChild(c);
+    });
+    wrap.appendChild(chips);
+
+    var cur = window.Profile ? window.Profile.current() : 'A1';
+    var sug = s.suggested;
+    var box = el('div', 'arc-check arc-check-lvl');
+    if (sug !== cur) {
+      box.appendChild(el('span', 'arc-check-k', 'Tu nivel'));
+      box.appendChild(el('b', null, 'Por lo que has contestado, encajas en ' + sug));
+      box.appendChild(el('span', 'arc-check-s', 'Ahora tienes ' + cur + '. Las rondas siguen tu nivel.'));
+      var row = el('div', 'arc-check-row');
+      var chg = el('button', 'arc-btn on', 'Cambiar mi nivel a ' + sug);
+      chg.type = 'button';
+      chg.addEventListener('click', function () {
+        if (window.Profile) window.Profile.set(sug);
+        document.documentElement.setAttribute('data-level', sug);
+        box.textContent = '';
+        box.appendChild(el('b', null, 'Nivel cambiado a ' + sug));
+      });
+      var keep = el('button', 'arc-btn', 'Mantener');
+      keep.type = 'button';
+      keep.addEventListener('click', function () { box.textContent = ''; box.appendChild(el('b', null, 'Te quedas en ' + cur)); });
+      row.appendChild(chg); row.appendChild(keep);
+      box.appendChild(row);
+    } else {
+      box.appendChild(el('span', 'arc-check-k', 'Tu nivel'));
+      box.appendChild(el('b', null, cur + ' te encaja'));
+    }
+    wrap.appendChild(box);
+
+    var nt = s.nextTense;
+    if (nt) {
+      var nb = el('button', 'arc-mode on arc-next');
+      nb.type = 'button';
+      nb.style.setProperty('--g', '#b5711a');
+      nb.appendChild(el('b', null, 'Siguiente tiempo: ' + tenseLabel(nt)));
+      nb.appendChild(el('span', null, hasCard(nt) ? 'una ficha corta y diez preguntas' : 'diez preguntas para practicarlo'));
+      nb.addEventListener('click', function () { if (hasCard(nt)) tenseCard(nt); else practiceTense(nt); });
+      wrap.appendChild(nb);
+    } else {
+      wrap.appendChild(el('p', 'arc-sub', 'No te falta ningún tiempo de los que probamos.'));
+    }
+    var done = el('button', 'arc-btn', 'Volver al tablero');
+    done.type = 'button';
+    done.addEventListener('click', board);
+    wrap.appendChild(done);
+    h.appendChild(wrap);
+  }
+
+  /* ---- the tense card ----------------------------------------------------------- */
+  function practiceTense(k) {
+    VIEW = 'round';
+    G.open('verbos2', board, { key: 'verbos2:t', count: 10, duration: null, tenses: [k] });
+  }
+  function tenseCard(k) {
+    var C = cards(), c = C && C[k];
+    pushView('card');
+    var h = host(); clear(h);
+    var lang = cardLang();
+    var wrap = el('div', 'arc-stats arc-tcard');
+    wrap.style.setProperty('--g', '#b5711a');
+    var top = topBar(c ? (c.name[lang] || tenseLabel(k)) : tenseLabel(k));
+    if (c) {
+      var tg = el('button', 'arc-lang', lang === 'es' ? 'EN' : 'ES');
+      tg.type = 'button';
+      tg.setAttribute('aria-label', lang === 'es' ? 'Show in English' : 'Ver en español');
+      tg.addEventListener('click', function () {
+        var a = loadArc(); a.cl = lang === 'es' ? 'en' : 'es'; saveArc(a); tenseCard(k);
+      });
+      top.appendChild(tg);
+    }
+    wrap.appendChild(top);
+
+    if (c) {
+      wrap.appendChild(el('div', 'arc-group', lang === 'es' ? 'Cuándo se usa' : 'When it is used'));
+      var ul = el('ul', 'arc-when');
+      c.when.forEach(function (w) { ul.appendChild(rich(el('li'), w[lang])); });
+      wrap.appendChild(ul);
+
+      wrap.appendChild(el('div', 'arc-group', lang === 'es' ? 'Cómo se forma' : 'How it is formed'));
+      wrap.appendChild(rich(el('p', 'arc-how'), c.how[lang]));
+      var tb = el('div', 'arc-ctable');
+      tb.appendChild(el('div', 'arc-ctable-v', c.table.verb));
+      c.table.forms.forEach(function (f, i) {
+        var r = el('div', 'arc-ctable-r');
+        r.appendChild(el('span', null, c.table.persons[i]));
+        r.appendChild(el('b', null, f));
+        tb.appendChild(r);
+      });
+      wrap.appendChild(tb);
+      if (c.irregular && c.irregular[lang]) {
+        wrap.appendChild(el('div', 'arc-group', lang === 'es' ? 'Ojo con' : 'Watch out'));
+        wrap.appendChild(rich(el('p', 'arc-how'), c.irregular[lang]));
+      }
+      wrap.appendChild(el('div', 'arc-group', lang === 'es' ? 'Ejemplos' : 'Examples'));
+      c.examples.forEach(function (ex) {
+        var e = el('div', 'arc-ex');
+        e.appendChild(rich(el('div', 'arc-ex-es'), ex.es));
+        e.appendChild(el('div', 'arc-ex-en', ex.en));
+        wrap.appendChild(e);
+      });
+      if (c.contrast && c.contrast[lang]) {
+        wrap.appendChild(el('div', 'arc-group', lang === 'es' ? 'No lo confundas' : 'Do not mix it up'));
+        wrap.appendChild(rich(el('p', 'arc-how'), c.contrast[lang]));
+      }
+    } else {
+      wrap.appendChild(el('p', 'arc-sub', 'Todavía no hay ficha de este tiempo. Practícalo igualmente.'));
+    }
+
+    var btns = el('div', 'arc-modes');
+    var pb = el('button', 'arc-mode on');
+    pb.type = 'button';
+    pb.appendChild(el('b', null, 'Practicar ' + (c ? (c.name[lang] || tenseLabel(k)) : tenseLabel(k)) + ' · 10 preguntas'));
+    pb.appendChild(el('span', null, 'Tranquilo, sin reloj, solo este tiempo'));
+    pb.addEventListener('click', function () { practiceTense(k); });
+    btns.appendChild(pb);
+    var url = TC().lessonUrl(k);
+    if (url) {
+      var a = el('a', 'arc-mode arc-lesson');
+      a.setAttribute('href', url);
+      a.appendChild(el('b', null, 'Ver la lección completa en Fluidez'));
+      a.appendChild(el('span', null, 'se abre la app grande'));
+      btns.appendChild(a);
+    }
+    wrap.appendChild(btns);
+    h.appendChild(wrap);
   }
 
   /* ---- the numbers -------------------------------------------------------

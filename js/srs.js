@@ -2,8 +2,8 @@
  * SRS — the spaced-repetition scheduler. Every item keeps an FSRS card
  * (window.LIB.fsrs, stored as `fs`), graded from how the learner actually
  * answered: right or wrong, hint used, speed against that item's own typical
- * speed, "I don't know". Nothing graduates out of retrieval: a card whose
- * stability passes 180 days is simply rarely due.
+ * speed, "I don't know". A card whose stability passes 180 days is simply
+ * rarely due. The one way out of retrieval is PERMANENTLY LEARNT (below).
  *
  * Generic and content-agnostic: it schedules any item by a stable string id.
  * Views decide what an item *is* and enrol it the first time it is taught.
@@ -17,6 +17,24 @@
  *
  * Meta (retention choice, seconds per card, today's plan, the zero-new
  * streak) lives in the same store under the reserved key "__meta".
+ *
+ * ---- permanently learnt (owner's decision, 6 Nov 2026) ----
+ * Matthew is against eternal reviews: an item the player demonstrably owns
+ * must stop coming back. A record carries `learnt: true` and `learntAt` (day)
+ * and never falls due again, in the arcade or the main app (they share this
+ * store). It is a NEW field; the old `dominado` stays dead (v4 dropped it).
+ * An item becomes learnt when
+ *   (a) it is answered right by TYPING the first time the player ever sees it
+ *       (no card existed before): grade(id, true, { typed: true }), where a
+ *       caller that enrolled the card first also passes fresh: true. A right
+ *       TAP never does it, since a tap can be process of elimination; or
+ *   (b) it is answered right at a review that came 180 days or more after its
+ *       previous review (FSRS elapsed time), whatever the way of answering; or
+ *   (c) learn(id) is called (the word test, which is rule (a) by definition).
+ * A learnt item answered wrong (or "I don't know") ANYWHERE loses the flag and
+ * goes back to normal scheduling with an ordinary lapse. Learnt items still
+ * count as known everywhere progress is shown (reps > 0, passed). Their stored
+ * `due` is pushed far out so a reader that only looks at `due` skips them too.
  *
  * ---- leeches ----
  * Missed 6 times lifetime or 3 times in a row. A leech is not removed: it is
@@ -40,6 +58,8 @@ window.SRS = (function () {
   var META = '__meta';
   var DAY = 86400000;
   var INTERVALS = [0, 1, 2, 4, 8, 16, 32, 64, 120, 180];   // old box table, now only a display scale
+  var LEARNT_GAP = 180;       // days between two reviews that make a right answer permanent
+  var LEARNT_DUE = 36500;     // a learnt record's stored due day: about a century out
   var LEECH_LIFETIME = 6;
   var LEECH_STREAK = 3;
   var LEECH_RECOVER = 2;     // consecutive correct that clears a leech flag
@@ -62,13 +82,15 @@ window.SRS = (function () {
 
   function fillDefaults(it) {
     it = it || {};
-    return {
+    var o = {
       box: it.box || 0, due: it.due != null ? it.due : today(),
       reps: it.reps || 0, lapses: it.lapses || 0,
       consecCorrect: it.consecCorrect || 0, consecMiss: it.consecMiss || 0,
       leech: !!it.leech, passed: !!it.passed || (it.box || 0) > 0,
       last: it.last, lat: it.lat, fs: it.fs
     };
+    if (it.learnt) { o.learnt = true; o.learntAt = it.learntAt; }
+    return o;
   }
 
   // stability in days to the old ten boxes: the largest box whose interval fits
@@ -220,9 +242,21 @@ window.SRS = (function () {
     var t = nowMs(), td = today();
     // Only an item that had been reviewed before has a gap; a first answer has none.
     var prevLast = it.reps > 0 ? it.last : null;
-    it.reps++;
+    var existed = !!s[id];
+    var wasLearnt = !!it.learnt;
     var F = fsrs();
     var right = ok && !unsure;
+    /* rule (b): elapsed time since the previous review, from the FSRS card when it has one */
+    var elapsed = null;
+    if (it.reps > 0) {
+      if (it.fs && it.fs.last_review !== undefined && it.fs.last_review !== null) elapsed = (t - it.fs.last_review) / DAY;
+      else if (it.last != null) elapsed = td - it.last;
+    }
+    /* rule (a): typed right, first time ever seen. `fresh` overrides "no record yet" for callers that enrol first. */
+    var firstSight = m.fresh != null ? !!m.fresh : !existed;
+    var makeLearnt = right && ((m.typed && firstSight) || (elapsed != null && elapsed >= LEARNT_GAP));
+    it.reps++;
+    if (wasLearnt && !right) { delete it.learnt; delete it.learntAt; }
     if (right) {
       it.consecCorrect++; it.consecMiss = 0;
       if (it.leech && it.consecCorrect >= LEECH_RECOVER) it.leech = false;
@@ -255,6 +289,11 @@ window.SRS = (function () {
       it.due = td + INTERVALS[it.box];
     }
     it.last = td;
+    if (makeLearnt || (wasLearnt && right)) {
+      it.learnt = true; it.learntAt = (makeLearnt || it.learntAt == null) ? td : it.learntAt;
+      it.leech = false; it.due = td + LEARNT_DUE; it.box = Math.max(it.box, 9);
+      if (it.fs) it.fs.due = midnightMs(it.due);
+    }
     s[id] = it;
     var cm = m.cardMs != null ? m.cardMs : m.latencyMs;
     if (isFinite(cm) && cm > 0) {
@@ -270,9 +309,23 @@ window.SRS = (function () {
   }
 
   // Due for normal review. A leech is simply due again later, like anything else.
-  function isDue(id) { var it = state(id); return !!it && it.due <= today(); }
+  function isDue(id) { var it = state(id); return !!it && !it.learnt && it.due <= today(); }
+  function isLearnt(id) { var it = state(id); return !!it && !!it.learnt; }
+  /* learn(id): the item is permanently learnt from now on (creating its record when there is none). */
+  function learn(id) {
+    if (id === META) return;
+    var s = load(), td = today();
+    var it = s[id] || fillDefaults();
+    if (!it.reps) it.reps = 1;
+    it.passed = true; it.leech = false; it.consecMiss = 0; it.consecCorrect = Math.max(1, it.consecCorrect || 0);
+    it.last = td; it.learnt = true; it.learntAt = td; it.due = td + LEARNT_DUE; it.box = Math.max(it.box || 0, 9);
+    var F = fsrs();
+    if (F && !it.fs) { ensureFs(it); }
+    if (it.fs) it.fs.due = midnightMs(it.due);
+    s[id] = it; save(s);
+  }
   function boxOf(id) { var it = state(id); return it ? it.box : 0; }   // 0 = new / fragile; derived from stability
-  function isDominado() { return false; }                              // retired: nothing leaves retrieval
+  function isDominado() { return false; }                              // retired for good; see learnt
   function isLeech(id) { var it = state(id); return !!it && it.leech; }
   function lapsesOf(id) { var it = state(id); return it ? it.lapses : 0; }
   function passed(id) { var it = state(id); return !!it && it.passed; }
@@ -317,7 +370,7 @@ window.SRS = (function () {
     var due = [], fresh = [];
     pool.forEach(function (it) {
       var st = s[it.id];
-      if (st) { if (st.due <= today()) due.push(it); }
+      if (st) { if (!st.learnt && st.due <= today()) due.push(it); }
       else fresh.push(it);
     });
     due = orderDue(due, s);
@@ -384,7 +437,7 @@ window.SRS = (function () {
   }
   function dueIn(pool) {
     var s = load(), td = today(), n = 0;
-    pool.forEach(function (it) { var st = s[it.id]; if (st && st.due <= td) n++; });
+    pool.forEach(function (it) { var st = s[it.id]; if (st && !st.learnt && st.due <= td) n++; });
     return n;
   }
   function plan(pool, opts) {
@@ -409,7 +462,7 @@ window.SRS = (function () {
   // weak-spot buckets.
   function duePriority(pool, n) {
     var s = load();
-    var due = pool.filter(function (it) { var st = s[it.id]; return st && !st.leech && st.due <= today(); });
+    var due = pool.filter(function (it) { var st = s[it.id]; return st && !st.leech && !st.learnt && st.due <= today(); });
     due = orderDue(due, s);
     return n == null ? due : due.slice(0, n);
   }
@@ -444,7 +497,7 @@ window.SRS = (function () {
 
   return {
     enrol: enrol, grade: grade, reviewLogKey: LOG_KEY, isDue: isDue, isEnrolled: isEnrolled, boxOf: boxOf,
-    isDominado: isDominado, isLeech: isLeech, lapsesOf: lapsesOf, passed: passed, stabilityOf: stabilityOf,
+    isDominado: isDominado, isLearnt: isLearnt, learn: learn, isLeech: isLeech, lapsesOf: lapsesOf, passed: passed, stabilityOf: stabilityOf,
     batch: batch, duePriority: duePriority, freshItems: freshItems,
     dueCount: dueCount, enrolledCount: enrolledCount, today: today,
     plan: plan, computePlan: computePlan, noteNew: noteNew, zeroStreak: zeroStreak, secondsPerCard: secondsPerCard,

@@ -415,14 +415,14 @@ window.StageReview = (function () {
      * extra holds the ordered ids still to ask, plus the running tallies. */
     var ex = (ctx && ctx.step && ctx.step.extra) || {};
     var resumed = Array.isArray(ex.queue);
-    var batch;
+    var batch, freshIds = {};     // ids that had no card before this deck: a typed right first answer makes one permanently learnt
     if (resumed) {
       var byId = {};
       all.forEach(function (it) { byId[it.id] = it; });
       batch = ex.queue.map(function (id) { return byId[id]; }).filter(Boolean);
     } else {
       batch = deckFor(all, cap, fresh, !pr.orderedVocab, prefer, ctx);
-      batch.forEach(function (it) { S.enrol(it.id); });
+      batch.forEach(function (it) { if (!S.isEnrolled(it.id)) freshIds[it.id] = 1; S.enrol(it.id); });
     }
 
     // recognition distractors: other English glosses of the same kind
@@ -496,7 +496,8 @@ window.StageReview = (function () {
       opts = opts || {};
       stamp();
       var meta = { usedHint: hinted, latencyMs: Math.max(0, answeredAt - shownAt),
-                   cardMs: Math.max(0, Date.now() - shownAt), unsure: !!opts.unsure };
+                   cardMs: Math.max(0, Date.now() - shownAt), unsure: !!opts.unsure,
+                   typed: !!opts.typed && !hinted, fresh: !!freshIds[cur.id] };
       var id = cur.id, prior = missed[id];
       queue.shift(); seen++;
       if (good) {
@@ -642,7 +643,7 @@ window.StageReview = (function () {
       }
       body.appendChild(controls);
       var locked = false, revealed = false;
-      function good() { if (locked) return; locked = true; stamp(); feedback.textContent = '¡Correcto! ' + R.back; feedback.className = 'feedback good'; setTimeout(function () { advance(true); }, 350); }
+      function good() { if (locked) return; locked = true; stamp(); feedback.textContent = '¡Correcto! ' + R.back; feedback.className = 'feedback good'; setTimeout(function () { advance(true, { typed: true }); }, 350); }
       /* A two-meaning gloss or a gender bracket accepts any one of its parts.
        *
        * Read off `cur`, the pool card, NOT off `R`: resolve() returns only

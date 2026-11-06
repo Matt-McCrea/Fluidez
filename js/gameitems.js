@@ -1595,6 +1595,7 @@ window.GameItems = (function () {
         var e = L[i];
         if (st.used[e.es]) continue;
         var c = store[e.id];
+        if (c && c.learnt) continue;                   // permanently learnt: never dealt, due, missed, recent or new
         if (!c || typeof c !== 'object' || (!(c.reps > 0) && (c.due == null ? 0 : c.due) > td)) {
           /* SMALL words (no article, not a verb, no theme: de, que, por, ya,
            * así) are the top of any frequency list, and ten of them in a row
@@ -1764,6 +1765,37 @@ window.GameItems = (function () {
     }
     return out;
   }
+  /* ---- PRUEBA DE PALABRAS ---------------------------------------------------
+   * An endless test down the frequency-ranked list: the player types each
+   * word's Spanish, and every right one is PERMANENTLY LEARNT at once (typed,
+   * first sight, so rule (a) of js/srs.js by definition). wordTestNext(pos)
+   * returns the first entry at or after rank index `pos` that the player has
+   * not already answered right or learnt; wordTestGrade is the same acceptance
+   * as Palabras typed answers (article optional, an accent slip is right);
+   * wordTestMiss enrols the word as NEW (first asked tomorrow, so the grind
+   * deals it as a new word) and learns nothing. */
+  function wordTestNext(pos) {
+    var G = grindList(), store = srsStore();
+    for (var i = Math.max(0, pos || 0); i < G.list.length; i++) {
+      var e = G.list[i], c = store[e.id];
+      if (c && typeof c === 'object' && (c.learnt || c.reps > 0)) continue;
+      return { e: e, pos: i, rank: i + 1, total: G.list.length };
+    }
+    return null;
+  }
+  function wordTestAccept(e) {
+    var G = grindList(), acc = [e.es, bareEs(e.es)];
+    (G.byEn[e.en.toLowerCase()] || []).forEach(function (o) {
+      if (o.es !== e.es) { acc.push(o.es); acc.push(bareEs(o.es)); }
+    });
+    return acc.filter(function (a, i) { return acc.indexOf(a) === i; });
+  }
+  function wordTestGrade(e, input) {
+    var r = grade({ kind: 'vocab', answer: e.es, accept: wordTestAccept(e) }, input);
+    return r === 'wrong' ? 'wrong' : 'good';
+  }
+  function wordTestRight(e) { if (window.SRS) window.SRS.learn(e.id); }
+  function wordTestMiss(e) { if (window.SRS) window.SRS.enrol(e.id, 1); }
   function grindThemes() {
     var G = grindList();
     return Object.keys(G.byTheme).map(function (id) { return { id: id, label: themeShort(id), count: G.byTheme[id].length }; });
@@ -2041,7 +2073,7 @@ window.GameItems = (function () {
     answeredRight: answeredRight, tensesForBand: tensesForBand,
     listenRate: listenRate, bandForLevel: bandForLevel,
     enKey: enKey, altsFor: altsFor,
-    coverage: coverage, phraseCoverage: phraseCoverage, phraseList: phraseList, grindThemes: grindThemes, grindList: grindList, owned: owned, relampagoItem: relampagoItem, OWN_MIN: OWN_MIN,
+    coverage: coverage, phraseCoverage: phraseCoverage, phraseList: phraseList, grindThemes: grindThemes, grindList: grindList, wordTestNext: wordTestNext, wordTestGrade: wordTestGrade, wordTestRight: wordTestRight, wordTestMiss: wordTestMiss, owned: owned, relampagoItem: relampagoItem, OWN_MIN: OWN_MIN,
     contrastDecks: contrastDecks, contrastRound: contrastRound, bothRight: bothRight, bothRightCount: bothRightCount
   };
 })();

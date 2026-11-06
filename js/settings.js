@@ -28,7 +28,7 @@ window.Settings = (function () {
      * 'fluidez.focus', 'fluidez.themes', 'fluidez.aboutme', which belongs to js/focus.js and holds the themed
      * track — writing a games focus there would silently cancel a track the
      * learner had started. */
-    'fluidez.arcade', 'fluidez.vgrecent',
+    'fluidez.arcade', 'fluidez.vgrecent', 'fluidez.tensecheck',
     // whether today's study pack has been finished (js/study.js)
     'fluidez.study',
     'fluidez.onboarded', 'fluidez.voice', 'fluidez.suggest',

@@ -941,7 +941,7 @@ function checkProbes(l, tag) {
    * corpus for the lessons, so loading a second copy of it would cost 2.2 MB
    * to save a walk it can afford. js/arcade.js is that build's boot. Both are
    * checked below against the arcade's own page and worker instead. */
-  const ARCADE_ONLY = new Set(['data/game-index.js', 'data/word-rank.js', 'data/verb-gaps.js', 'data/phrases.js', 'js/arcade.js', 'js/study.js']);
+  const ARCADE_ONLY = new Set(['data/game-index.js', 'data/word-rank.js', 'data/verb-gaps.js', 'data/phrases.js', 'data/tense-cards.js', 'js/arcade.js', 'js/study.js', 'js/tensecheck.js']);
 
   /* The two whole-corpus files are SOURCES, not page scripts: node tools and
    * the content gate read them, tools/split-data.ts cuts them into
@@ -1073,6 +1073,44 @@ function checkProbes(l, tag) {
          'Run: node tools/build-verb-gaps.js');
     } catch (e) { ok(false, 'could not check data/verb-gaps.js: ' + e.message); }
 
+    /* The tense cards (Juegos weekly check) load before the board, the file
+     * must exist because the worker precaches it, and when a generator for it
+     * exists it must not be stale. The mapping from a tense to the lesson that
+     * teaches it (js/tensecheck.js) may only name lessons that exist: a strand
+     * lesson in data/lessons/index.js, or a tense lesson, whose id is the
+     * tense key itself (js/lessons.js builds one for every engine tense). */
+    ok(aHtml && aHtml.indexOf('../data/tense-cards.js') !== -1 && aHtml.indexOf('../data/tense-cards.js') < aHtml.indexOf('../js/arcade.js'),
+       'juegos/index.html must load ../data/tense-cards.js before ../js/arcade.js');
+    ok(aHtml && aHtml.indexOf('../js/tensecheck.js') !== -1 && aHtml.indexOf('../js/tensecheck.js') < aHtml.indexOf('../js/arcade.js'),
+       'juegos/index.html must load ../js/tensecheck.js before ../js/arcade.js');
+    ok(fs.existsSync(path.join(__dirname, '..', 'data/tense-cards.js')),
+       'data/tense-cards.js is missing but juegos/index.html and sw.js load it');
+    {
+      const gen = path.join(__dirname, 'tensecards/build.js');
+      if (fs.existsSync(gen)) {
+        try {
+          const out = require('child_process').spawnSync(process.execPath, [gen, '--check'], { encoding: 'utf8' });
+          ok(out.status === 0, 'data/tense-cards.js is stale — tools/tensecards changed. Run: node tools/tensecards/build.js');
+        } catch (e) { ok(false, 'could not check data/tense-cards.js: ' + e.message); }
+      }
+      try {
+        const sandbox = { window: {} };
+        new Function('window', read('js/tensecheck.js'))(sandbox.window);
+        const TCk = sandbox.window.TenseCheck;
+        const idx = new Function('window', read('data/lessons/index.js') + '; return window.LESSONS_INDEX;')({});
+        TCk.LADDER.forEach(t => {
+          const id = TCk.LESSON[t];
+          const isTenseLesson = id === t && ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'impneg', 'impsubj', 'futperf', 'perfsubj', 'condperf'].indexOf(t) !== -1;
+          ok(isTenseLesson || (id && idx.ids[id]), `js/tensecheck.js maps ${t} to lesson "${id}", which does not exist`);
+        });
+        if (fs.existsSync(path.join(__dirname, '..', 'data/tense-cards.js'))) {
+          const w2 = {};
+          new Function('window', read('data/tense-cards.js'))(w2);
+          TCk.LADDER.forEach(t => ok(w2.TENSE_CARDS && w2.TENSE_CARDS[t], `data/tense-cards.js has no card for ${t}`));
+        }
+      } catch (e) { ok(false, 'could not check the tense-card mapping: ' + e.message); }
+    }
+
     /* The Frases bank is compiled from tools/phrases/phrases.json. */
     ok(aHtml && aHtml.indexOf('../data/phrases.js') !== -1 && aHtml.indexOf('../data/phrases.js') < aHtml.indexOf('../js/gameitems.js'),
        'juegos/index.html must load ../data/phrases.js before ../js/gameitems.js');
@@ -1181,7 +1219,7 @@ function checkProbes(l, tag) {
   });
   /* Computed names (window.BANK_ + band) end in an underscore and are injected by band; GAME_INDEX belongs to the
    * arcade page (juegos/), which loads data/game-index.js itself, and gameitems.js falls back without it. */
-  const OPTIONAL = new Set(['GAME_INDEX', 'WORD_RANK', 'VERB_GAPS', 'PHRASES']);
+  const OPTIONAL = new Set(['GAME_INDEX', 'WORD_RANK', 'VERB_GAPS', 'PHRASES', 'TENSE_CARDS']);
   for (const [name, from] of reads) {
     if (/_$/.test(name) || OPTIONAL.has(name)) continue;
     const def = new RegExp('(?:window\\.|^|[\\s;,(])' + name + '\\s*=(?!=)|window\\[[^\\]]*\\]\\s*=', 'm');

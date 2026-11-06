@@ -1045,6 +1045,44 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
       ok(JSON.parse(localStorage.getItem('fluidez.arcade')).wtheme === 'alimentacion', 'the theme choice was not remembered');
       ok(/ en Comida/.test(textOf(has('arc-progress')[0])), 'the theme progress line is missing');
       ok(!has('arc-chip')[0].cls().includes('on') && food.cls().includes('on'), 'the chosen theme does not look chosen');
+      {
+        // Prueba de palabras: endless, typed, right = learnt, "No la sé" = enrolled as new, resumes
+        const GL = W.GameItems.grindList().list;
+        const real = global.setTimeout, q = [];
+        global.setTimeout = fn => { q.push(fn); return q.length; };
+        const flushQ = () => { while (q.length) q.shift()(); };
+        localStorage.removeItem('fluidez.srs'); W.SRS._reset();
+        W.SRS.learn(GL[3].id);
+        const btn = has('arc-wtbtn')[0];
+        ok(!!btn && /¿Ya sabes español\? Marca las que conoces/.test(textOf(btn)), 'no word-test button on the Palabras sheet');
+        btn.click();
+        const pr = () => has('arc-wt-prompt')[0].textContent;
+        const inp = () => has('arc-wt-input')[0];
+        const type = v => { inp().value = v; inp().dispatchEvent({ type: 'input' }); };
+        ok(pr() === GL[0].en && /^palabra 1 de /.test(has('arc-wt-rank')[0].textContent), 'the word test did not open on rank 1: ' + pr());
+        ok(/Llevas 0 marcadas como sabidas/.test(textOf(has('arc-wt-count')[0])), 'running count missing');
+        type(GL[0].es); flushQ();
+        ok(W.SRS.isLearnt(GL[0].id) && pr() === GL[1].en, 'typing it right did not learn it and move on');
+        ok(/Llevas 1 marcadas/.test(textOf(has('arc-wt-count')[0])), 'running count did not move');
+        has('arc-wt-idk')[0].click();
+        ok(has('arc-wt-fb')[0].textContent === GL[1].es && W.SRS.isEnrolled(GL[1].id) && !W.SRS.isLearnt(GL[1].id), '"No la sé" did not show the answer and enrol the word');
+        flushQ();
+        ok(pr() === GL[2].en, 'did not move to rank 3');
+        inp().value = 'zzzz'; inp().dispatchEvent({ type: 'keydown', key: 'Enter', preventDefault() {} }); flushQ();
+        ok(W.SRS.isEnrolled(GL[2].id) && !W.SRS.isLearnt(GL[2].id) && pr() === GL[4].en, 'a wrong word was not enrolled, or the learnt rank 4 was not skipped');
+        has('arc-back')[0].click();                       // Terminar
+        ok(/Has marcado 1 palabra como sabidas/.test(textOf(has('arc-wt-sum')[0])), 'no summary on leaving');
+        ok(JSON.parse(localStorage.getItem('fluidez.arcade')).wordTest.pos >= 4, 'the position was not remembered');
+        has('arc-wtbtn')[0].click();                       // Volver a Palabras
+        ok(/Conoces 2 de las 1\.000/.test(textOf(has('arc-progress')[0])), 'coverage after the test reads ' + textOf(has('arc-progress')[0]));
+        has('arc-wtbtn')[0].click();                       // test again
+        ok(pr() === GL[4].en && /Llevas 1 marcadas/.test(textOf(has('arc-wt-count')[0])), 'the word test did not resume at rank 5');
+        has('arc-back')[0].click(); has('arc-wtbtn')[0].click();
+        global.setTimeout = real;
+        localStorage.removeItem('fluidez.srs'); W.SRS._reset();
+        localStorage.removeItem('fluidez.arcade');
+        localStorage.removeItem('fluidez.arcade');
+      }
     }
     STAGE.all(n => n.cls().includes('arc-back'))[0].click();
 
@@ -1404,6 +1442,47 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
          `theme coverage reads "${cv.theme && cv.theme.text}"`);
       localStorage.removeItem('fluidez.srs');
 
+      // permanently learnt: never dealt, never new, still counted as known
+      {
+        localStorage.removeItem('fluidez.srs'); W.SRS._reset();
+        const L0 = G.slice(0, 40);
+        L0.slice(0, 30).forEach(e => W.SRS.learn(e.id));
+        W.SRS.enrol(L0[30].id);                              // due today, not learnt: still dealt
+        const cv30 = GI.coverage(null);
+        const st = { asked: 0, newN: 0, used: {} }, seen = {};
+        W.Profile.set('C1'); GI.reset();
+        for (let i = 0; i < 60; i++) {
+          const it = GI.next('sword', 1, rng, { grind: st, count: 10, gkind: 'sword' });
+          if (it) seen[it.id] = it.grind;
+        }
+        ok(L0.slice(0, 30).every(e => !(e.id in seen)), 'the grind dealt a permanently learnt word');
+        ok(L0[30].id in seen, 'an enrolled, unlearnt word is still dealt');
+        ok(cv30.n === 30 && cv30.total === 30, 'learnt words do not count as known in the coverage line: ' + JSON.stringify(cv30));
+        W.SRS.grade(L0[0].id, false);                        // missed anywhere: back in the grind
+        ok(!W.SRS.isLearnt(L0[0].id), 'a wrong answer did not un-learn a word');
+        W.Profile.set('B1'); GI.reset();
+      }
+      // the word test
+      {
+        localStorage.removeItem('fluidez.srs');
+        W.SRS._reset();
+        W.SRS.learn(G[1].id);                                // already learnt: skipped
+        W.SRS.grade(G[2].id, true);                          // already answered right: skipped
+        let n0 = GI.wordTestNext(0);
+        ok(n0 && n0.pos === 0 && n0.rank === 1 && n0.total === G.length, 'the word test does not start at rank 1');
+        ok(GI.wordTestNext(1).pos === 3, 'the word test did not skip learnt and known words, in rank order');
+        ok(GI.wordTestGrade(G[0], G[0].es) === 'good' && GI.wordTestGrade(G[0], G[0].es.replace(/^(el|la|los|las)\s+/i, '')) === 'good' &&
+           GI.wordTestGrade(G[0], 'zzzz') === 'wrong', 'the word test acceptance (article optional) is off');
+        GI.wordTestRight(G[0]);
+        ok(W.SRS.isLearnt(G[0].id) && !W.SRS.isDue(G[0].id), 'a right word-test answer did not learn the word');
+        GI.wordTestMiss(G[3]);
+        ok(W.SRS.isEnrolled(G[3].id) && !W.SRS.isLearnt(G[3].id) && !W.SRS.passed(G[3].id) && !W.SRS.isDue(G[3].id),
+           'a missed word-test word is not enrolled as new');
+        const st2 = { asked: 0, newN: 0, used: {} };
+        ok(GI.coverage(null).n === 3, 'coverage after the word test ' + GI.coverage(null).n);
+        localStorage.removeItem('fluidez.srs'); W.SRS._reset();
+      }
+
       // old behaviour kept: a known word comes back typed, a missed one tapped
       const typedN = 0;
       W.Profile.set('B1'); GI.reset();
@@ -1562,6 +1641,281 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
   }
 
   console.log('  board drew ' + tiles.length + ' tiles; stats panel renders and returns');
+}
+
+/* ---- stage 4: Tu progreso, the weekly check, tense cards, the deep link ------
+ * js/tensecheck.js decides, js/arcade.js draws. The numbers come from a seeded
+ * SRS, the check runs through its session and through the DOM, the card is
+ * drawn from a fixture (not the generated file, which has its own gate), and
+ * every tense must map to a lesson that exists. */
+{
+  const TCk = W.TenseCheck, GI = W.GameItems, GS = W.GameScore;
+  ok(!!TCk, 'js/tensecheck.js did not load (is it in juegos/sw.js ASSETS?)');
+  const has = cls => STAGE.all(n => n.cls().includes(cls));
+  const btn = re => STAGE.all(n => n.tagName === 'BUTTON' && re.test(n.textContent))[0];
+  const reset = () => ['fluidez.srs', 'fluidez.tensecheck', 'fluidez.games', 'fluidez.arcade', 'fluidez.vgrecent']
+    .forEach(k => localStorage.removeItem(k));
+  const FIX = {};
+  TCk.LADDER.forEach(k => {
+    FIX[k] = {
+      name: { es: 'Nombre ' + k, en: 'Name ' + k },
+      when: [{ es: 'Hábitos: *siempre* y *a veces*.', en: 'Habits: *always*.' }, { es: 'Otro uso.', en: 'Other use.' }],
+      how: { es: 'Quita la terminación y añade *-o*.', en: 'Drop the ending and add *-o*.' },
+      table: { verb: 'hablar', forms: ['hablo', 'hablas', 'habla', 'hablamos', 'hablan'], persons: ['yo', 'tú', 'él', 'nosotros', 'ellos'] },
+      irregular: k === 'presente' ? null : { es: 'Ojo: *tengo*.', en: 'Careful: *tengo*.' },
+      examples: [{ es: 'Yo *hablo* mucho.', en: 'I talk a lot.' }, { es: 'Tú *hablas* poco.', en: 'You talk little.' }, { es: 'Ella *habla* bien.', en: 'She talks well.' }],
+      contrast: { es: 'No lo confundas con otro.', en: 'Do not mix it up.' }
+    };
+  });
+  const realCards = W.TENSE_CARDS;
+  W.TENSE_CARDS = FIX;
+  W.arcadeFull = false;
+  reset(); W.Profile.set('B1'); GI.reset();
+  let seed4 = 7;
+  const rng4 = () => { seed4 = (seed4 * 1103515245 + 12345) & 0x7fffffff; return seed4 / 0x7fffffff; };
+  const gapOf = prompt => W.VERB_GAPS.filter(x => x.q.replace(/___+/g, '＿＿＿') === prompt.replace(/\s*$/, ''))[0];
+
+  /* the mapping: every tense has a lesson, and the lesson exists */
+  {
+    (0, eval)(fs.readFileSync(path.join(ROOT, 'data/lessons/index.js'), 'utf8'));
+    const tenseLessons = ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'impneg', 'impsubj', 'futperf', 'perfsubj', 'condperf'];
+    TCk.LADDER.forEach(t => {
+      const id = TCk.lessonFor(t);
+      ok(!!id, `no lesson mapped for ${t}`);
+      ok(tenseLessons.indexOf(id) !== -1 || !!W.LESSONS_INDEX.ids[id], `${t} maps to "${id}", which is not a lesson`);
+      ok(TCk.lessonUrl(t) === '../index.html?lesson=' + encodeURIComponent(id), `lessonUrl(${t}) is malformed`);
+    });
+    ok(W.ENGINE.TENSES.every(t => !!TCk.lessonFor(t.key)), 'an engine tense has no lesson mapping');
+    ok(JSON.stringify(TCk.LADDER) === JSON.stringify(['presente', 'preterito', 'imperfecto', 'perfecto', 'futuro', 'imperativo', 'condicional',
+      'plusc', 'presubj', 'impneg', 'impsubj', 'futperf', 'perfsubj', 'condperf', 'pluscsubj']), 'the check ladder is not in the agreed order');
+  }
+
+  /* the panel numbers, from a seeded SRS */
+  {
+    const L = GI.grindList().list, srs = {};
+    L.slice(0, 820).forEach(e => { srs[e.id] = { reps: 1 }; });
+    L.slice(1000, 1100).forEach(e => { srs[e.id] = { reps: 1 }; });
+    srs['vt:llegar:presente'] = { reps: 1 }; srs['vt:llegar:preterito'] = { reps: 3 };
+    srs['vt:comer:presente'] = { reps: 2 }; srs['vt:hablar:presente'] = { reps: 0 };
+    const PL = GI.phraseList().list;
+    PL.slice(0, 12).forEach(e => { srs[e.id] = { reps: 1 }; });
+    localStorage.setItem('fluidez.srs', JSON.stringify(srs));
+    const wp = TCk.wordProgress();
+    ok(wp.total === 920, `known words: ${wp.total}, wanted 920`);
+    ok(wp.marks[0].n === 820 && wp.marks[0].of === 1000, `top 1.000 reads ${JSON.stringify(wp.marks[0])}`);
+    ok(wp.marks[1].n === 920 && wp.marks[1].of === 2000, `top 2.000 reads ${JSON.stringify(wp.marks[1])}`);
+    ok(wp.next.m === 1000, 'the next milestone is not the 1.000');
+    ok(wp.themes.length === GI.grindThemes().length, 'the detail view would miss a theme');
+    ok(TCk.verbsKnown() === 2, `verbos conocidos: ${TCk.verbsKnown()}, wanted 2 (llegar, comer)`);
+    ok(TCk.phraseProgress().n === 12, 'phrases known miscounted');
+    W.Shell.go();
+    const txt = STAGE.textContent;
+    ok(/Tu progreso/.test(txt) && /820 de 1\.000/.test(txt), 'the board has no Palabras progress row');
+    ok(/2 verbos conocidos/.test(txt), 'the board has no verb count');
+    ok(new RegExp('12 de ' + String(TCk.phraseProgress().of).replace(/(\d)(?=(\d{3})$)/, '$1.')).test(txt), 'the board has no Frases row');
+    ok(has('arc-tchip').length === 15 && has('arc-tchip').every(c => c.getAttribute('data-s') === 'sin'), 'unchecked tenses should all read sin probar');
+    btn(/^Palabras/) ; // the row is the button
+    STAGE.all(n => n.cls().includes('arc-prow') && n.tagName === 'BUTTON')[0].click();
+    ok(has('arc-drow').length === 3 + wp.themes.length, 'the words detail does not list 3 milestones plus every theme');
+    ok(/920 de 2\.000/.test(STAGE.textContent), 'the words detail lacks the 2.000 line');
+    STAGE.all(n => n.cls().includes('arc-back'))[0].click();
+    ok(has('arc-prog').length === 1, 'back from the words detail did not restore the board');
+  }
+
+  /* when the check is offered */
+  {
+    reset();
+    const T0 = 1.8e12, DAY = 86400000;
+    ok(TCk.due(T0) === false, 'offered with no rounds played');
+    for (let i = 0; i < 2; i++) GS.record('verbos2:t', { score: 100, combo: 1, band: 'B1', run: 1, seen: 10, right: 7, ms: 60000 });
+    ok(TCk.due(T0) === false, 'offered after 2 rounds');
+    GS.record('jugar:c', { score: 100, combo: 1, band: 'B1', run: 1, seen: 10, right: 7, ms: 60000 });
+    ok(TCk.playedRounds() === 3 && TCk.due(T0) === true, 'not offered after never checking and 3 rounds');
+    W.Shell.go();
+    ok(has('arc-check').length === 1 && /Chequeo semanal/.test(STAGE.textContent), 'the board shows no check card when due');
+    ok(!!btn(/^Empezar · 3 min$/) && !!btn(/^Más tarde$/), 'the check card lacks its two buttons');
+    const jIx = STAGE.all(n => true).indexOf(has('arc-jugar')[0]), cIx = STAGE.all(n => true).indexOf(has('arc-check')[0]),
+      gIx = STAGE.all(n => true).indexOf(has('arc-grid')[0]);
+    ok(jIx < cIx && cIx < gIx, 'the check card is not between Jugar and the tiles');
+    btn(/^Más tarde$/).click();
+    ok(has('arc-check').length === 0, 'the card stayed after Más tarde');
+    const sn = JSON.parse(localStorage.getItem('fluidez.tensecheck')).snooze;
+    ok(sn > Date.now() + 1.9 * DAY && sn < Date.now() + 2.1 * DAY, 'the snooze is not two days');
+    ok(TCk.due(Date.now() + DAY) === false && TCk.due(Date.now() + 2.1 * DAY) === true, 'the snooze does not end after two days');
+    localStorage.setItem('fluidez.tensecheck', JSON.stringify({ at: T0 - 6 * DAY, res: {} }));
+    ok(TCk.due(T0) === false, 'offered 6 days after a check');
+    localStorage.setItem('fluidez.tensecheck', JSON.stringify({ at: T0 - 7 * DAY, res: {} }));
+    ok(TCk.due(T0) === true, 'not offered 7 days after a check');
+    localStorage.setItem('fluidez.tensecheck', JSON.stringify({ at: T0 - 8 * DAY, res: {}, snooze: T0 + DAY }));
+    ok(TCk.due(T0) === false, 'a snooze did not hold the card back');
+  }
+
+  /* picking the items */
+  {
+    reset();
+    const all = W.VERB_GAPS.filter(x => x.t === 'presente');
+    const recent = all.slice(0, all.length - 6).map(x => x.q);
+    localStorage.setItem('fluidez.vgrecent', JSON.stringify(recent));
+    for (let k = 0; k < 20; k++) {
+      const got = TCk.pickItems('presente', rng4);
+      ok(got.length === 3, 'did not pick three items');
+      ok(got.every(g => recent.indexOf(g.q) === -1), 'picked a sentence dealt in the last rounds');
+      ok(new Set(got.map(g => g.i)).size === 3, 'picked a verb twice');
+    }
+    localStorage.removeItem('fluidez.vgrecent');
+    ['condicional', 'plusc'].forEach(t => {
+      const u = TCk.usualBand(t), ix = b => ['A1', 'A2', 'B1', 'B2', 'C1'].indexOf(b);
+      const pool = W.VERB_GAPS.filter(x => x.t === t && ix(x.b) <= ix(u));
+      if (new Set(pool.map(x => x.i)).size >= 3) {
+        for (let k = 0; k < 20; k++) ok(TCk.pickItems(t, rng4).every(g => ix(g.b) <= ix(u)), `${t}: picked above its usual band ${u}`);
+      }
+    });
+  }
+
+  /* the flow */
+  {
+    const run = (right) => {
+      reset();
+      const s = TCk.session(rng4, { at: 1.8e12 });
+      let guard = 0;
+      while (!s.done && guard++ < 100) {
+        const g = s.item(), t = s.tense();
+        const r = s.answer(right(t, s.index()) ? g.a : g.o.filter(x => x !== g.a)[0]);
+        ok(!!r && r.right === right(t, s.index()), 'answer() graded wrongly');
+        s.next();
+      }
+      return s;
+    };
+    // everything right: all 15, dominado, C1, nothing left to learn
+    let s = run(() => true);
+    ok(s.done && !s.stopped && Object.keys(s.res).length === 15 && Object.keys(s.res).every(k => s.res[k] === 'dominado'),
+       'a perfect check did not end with fifteen dominado');
+    ok(s.suggested === 'C1' && s.nextTense === null, `perfect check: suggested ${s.suggested}, next ${s.nextTense}`);
+    const saved = JSON.parse(localStorage.getItem('fluidez.tensecheck'));
+    ok(saved.at === 1.8e12 && saved.res.presente === 'dominado' && saved.res.pluscsubj === 'dominado', 'the result was not saved');
+    ok(!TCk.due(1.8e12 + 6 * 86400000) && TCk.due(1.8e12 + 7 * 86400000), 'the next check is not a week away');
+    // the SRS saw the answers
+    const srs = JSON.parse(localStorage.getItem('fluidez.srs') || '{}');
+    ok(Object.keys(srs).some(id => /^vt:/.test(id) && srs[id].reps > 0), 'the check wrote nothing to the SRS');
+
+    // two bad tenses in a row stop it: 0/3 and 1/3 both count
+    s = run((t, i) => t === 'presente' || (t === 'preterito' ? i === 0 : false));
+    ok(s.stopped && Object.keys(s.res).join() === 'presente,preterito,imperfecto', 'did not stop after two weak tenses: ' + Object.keys(s.res));
+    ok(s.res.presente === 'dominado' && s.res.preterito === 'aprender' && s.res.imperfecto === 'aprender', '1/3 must be por aprender');
+    ok(s.suggested === 'A1' && s.nextTense === 'preterito', `stopped check: suggested ${s.suggested}, next ${s.nextTense}`);
+    ok(TCk.statuses().perfecto === 'sin' && TCk.statuses().preterito === 'aprender', 'tenses not reached are not sin probar');
+
+    // a good tense in between resets the count; 2/3 is casi
+    s = run((t, i) => {
+      if (t === 'presente') return i !== 1;                 // 2/3: casi
+      if (t === 'preterito') return false;                  // 0/3
+      if (t === 'imperfecto') return true;                  // resets
+      if (t === 'perfecto') return false;                   // 0/3, count is 1
+      return true;
+    });
+    ok(!s.stopped && Object.keys(s.res).length === 15, 'a good tense in between did not reset the stop count');
+    ok(s.res.presente === 'casi' && s.res.preterito === 'aprender' && s.res.imperfecto === 'dominado', 'statuses wrong after a mixed check');
+    ok(s.nextTense === 'preterito', 'the next tense is not the first por aprender');
+
+    // the suggested band
+    const mk = (n) => { const o = {}; TCk.LADDER.forEach((t, i) => { o[t] = 'sin'; }); GI.tensesForBand('C1').forEach(t => { o[t] = 'sin'; }); return o; };
+    const res = mk();
+    GI.tensesForBand('A2').forEach(t => { res[t] = t === 'futuro' ? 'casi' : 'dominado'; });
+    ok(TCk.suggestBand(res) === 'A2', 'A1 and A2 tenses known should suggest A2');
+    GI.tensesForBand('B1').forEach(t => { res[t] = 'dominado'; });
+    ok(TCk.suggestBand(res) === 'B1', 'B1 tenses known should suggest B1');
+    res.presente = 'aprender';
+    ok(TCk.suggestBand(res) === 'A1', 'a weak presente must floor at A1');
+    ok(TCk.suggestBand(mk()) === 'A1', 'nothing known must still read A1');
+  }
+
+  /* the check through the screen */
+  {
+    reset(); W.Profile.set('B1');
+    for (let i = 0; i < 3; i++) GS.record('verbos2:t', { score: 100, combo: 1, band: 'B1', run: 1, seen: 10, right: 7, ms: 60000 });
+    const sweep = (rightFor) => {
+      let guard = 0;
+      while (has('arc-check-q').length && guard++ < 100) {
+        const g = gapOf(has('arc-check-q')[0].textContent);
+        ok(!!g, 'the check showed a sentence that is not in the bank');
+        const t = g.t;
+        ok(has('arc-check-pos')[0].textContent.indexOf(W.ENGINE.TENSE_LABEL[t] || 'subjuntivo') !== -1 || t === 'pluscsubj', 'the check header names another tense');
+        const o = has('g-opt');
+        ok(o.length === g.o.length, 'the check offers the wrong number of options');
+        const want = rightFor(t) ? g.a : g.o.filter(x => x !== g.a)[0];
+        o.filter(b => b.textContent === want)[0].click();
+        ok(has('g-opt').filter(b => b.cls().includes('right')).length === 1, 'the right answer is not marked');
+        btn(/^Seguir$/).click();
+      }
+    };
+    W.Shell.go();
+    btn(/^Empezar · 3 min$/).click();
+    ok(has('arc-check-q').length === 1 && !has('g-secs').length, 'the check shows no question, or shows a clock');
+    sweep(() => true);
+    ok(/Tu chequeo/.test(STAGE.textContent) && has('arc-tchip').length === 15 && has('arc-tchip').every(c => c.getAttribute('data-s') === 'dominado'),
+       'the results do not show fifteen dominado chips');
+    ok(/encajas en C1/.test(STAGE.textContent), 'the results do not suggest C1');
+    btn(/^Cambiar mi nivel a C1$/).click();
+    ok(W.Profile.current() === 'C1', 'Cambiar mi nivel did not write the profile');
+    ok(has('arc-next').length === 0, 'a next tense is offered after a perfect check');
+    W.Profile.set('B1');
+
+    // a failing check: next tense, its card, the practice round, the lesson link
+    reset();
+    for (let i = 0; i < 3; i++) GS.record('verbos2:t', { score: 100, combo: 1, band: 'B1', run: 1, seen: 10, right: 7, ms: 60000 });
+    W.Shell.go();
+    btn(/^Empezar · 3 min$/).click();
+    sweep(t => t === 'presente');
+    ok(/Paramos aquí/.test(STAGE.textContent), 'the stop is not explained');
+    ok(!!btn(/^Mantener$/) && /encajas en A1/.test(STAGE.textContent), 'no Mantener / A1 suggestion');
+    btn(/^Mantener$/).click();
+    ok(W.Profile.current() === 'B1', 'Mantener changed the level');
+    const nx = has('arc-next')[0];
+    ok(!!nx && /Siguiente tiempo: Pretérito/.test(nx.textContent), 'the next tense is not Pretérito');
+    nx.click();
+    const card = STAGE.textContent;
+    ok(/Nombre preterito/.test(card), 'the card is not in Spanish at B1');
+    ok(has('arc-when')[0].all(n => n.tagName === 'LI').length === 2, 'the card does not list the when lines');
+    ok(has('arc-when')[0].all(n => n.tagName === 'B').map(n => n.textContent).join() === 'siempre,a veces', 'starred words are not bold');
+    ok(has('arc-ctable-r').length === 5 && /hablamos/.test(card), 'the conjugation table is not drawn');
+    ok(has('arc-ex').length === 3 && has('arc-ex-es').every(e => e.all(n => n.tagName === 'B').length === 1), 'three examples with the form in bold expected');
+    ok(has('arc-ex-en').length === 3 && /Ella habla bien|She talks well/.test(card), 'examples lack their English');
+    ok(/Ojo: tengo/.test(card) && /No lo confundas con otro/.test(card), 'irregular or contrast missing');
+    const lesson = has('arc-lesson')[0];
+    ok(!!lesson && lesson.getAttribute('href') === '../index.html?lesson=preterito', 'the lesson link is missing or wrong');
+    ok(!!btn(/^Practicar Nombre preterito · 10 preguntas/), 'the practice button is missing');
+    btn(/^EN$/).click();
+    ok(/Name preterito/.test(STAGE.textContent) && JSON.parse(localStorage.getItem('fluidez.arcade')).cl === 'en', 'the language toggle did not switch to English');
+    ok(/Habits: always/.test(STAGE.textContent), 'the English when line is missing');
+    btn(/^Practicar Name preterito · 10 preguntas/).click();
+    ok(/^1 \/ 10$/.test(has('g-secs')[0].textContent), 'the practice round is not Tranquilo with ten questions');
+    const q1 = has('g-prompt')[0].textContent.replace(/\s*\([^()]*\)\s*$/, '');
+    ok(W.VERB_GAPS.some(x => x.t === 'preterito' && x.q.replace(/___+/g, '＿＿＿').indexOf(q1.slice(0, 20)) === 0), 'the practice round dealt another tense: ' + q1);
+    const x = has('g-exit')[0]; if (x) x.click();
+    ok(/Tu progreso/.test(STAGE.textContent), 'leaving the practice round did not return to the board');
+    ok(JSON.parse(localStorage.getItem('fluidez.arcade')).tenses === undefined, 'the practice round changed the saved tense picker');
+  }
+
+  /* the "?" on the Verbos sheet, and no cards at all */
+  {
+    reset(); W.Profile.set('B1');
+    W.Shell.go();
+    STAGE.all(n => n.cls().includes('arc-tile'))[0].click();
+    ok(has('arc-chipq').length === W.ENGINE.TENSES.length + 1, `${has('arc-chipq').length} "?" buttons on the sheet`);
+    has('arc-chipq')[0].click();
+    ok(/Nombre presente/.test(STAGE.textContent), 'the "?" did not open the card');
+    delete W.TENSE_CARDS;
+    W.Shell.go();
+    STAGE.all(n => n.cls().includes('arc-tile'))[0].click();
+    ok(has('arc-chipq').length === 0, 'the "?" shows without cards');
+    STAGE.all(n => n.cls().includes('arc-back'))[0].click();
+    ok(has('arc-tchip').length === 15 && has('arc-tchip').every(c => !c._on.click), 'chips are tappable with no cards');
+    W.Profile.set('A1');
+    // the full flow still works without TENSE_CARDS: the next tense goes straight to practice
+  }
+  W.TENSE_CARDS = realCards;
+  reset(); W.Profile.set('B1'); GI.reset();
+  console.log('  stage 4: panel numbers, check trigger and flow, cards, practice round, ' + TCk.LADDER.length + ' lesson links');
 }
 
 /* ---- the league (js/liga.js) ---------------------------------------------
