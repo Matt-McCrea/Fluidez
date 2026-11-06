@@ -1033,7 +1033,19 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     ok(!has('arc-chip')[0].cls().includes('on'), '"Todos" still looks chosen after picking a tense');
     STAGE.all(n => n.cls().includes('arc-back'))[0].click();
     shelfTiles[1].click();
-    ok(has('arc-chip').length === 0, 'Palabras offers a tense picker');
+    ok(!has('arc-chip').some(c => /Todos los de tu nivel/.test(textOf(c))), 'Palabras offers a tense picker');
+    {
+      const tc = has('arc-chip');
+      ok(tc.length >= 16 && /Las más comunes/.test(textOf(tc[0])) && tc[0].cls().includes('on'),
+         `the Palabras theme row has ${tc.length} chips and "Las más comunes" is not the default`);
+      ok(/Conoces 0 de las 1\.000 palabras más comunes/.test(textOf(has('arc-progress')[0])), 'the Palabras sheet has no progress line');
+      const food = tc.filter(c => /Comida/.test(textOf(c)))[0];
+      ok(!!food, 'no Comida theme chip');
+      food.click();
+      ok(JSON.parse(localStorage.getItem('fluidez.arcade')).wtheme === 'alimentacion', 'the theme choice was not remembered');
+      ok(/ en Comida/.test(textOf(has('arc-progress')[0])), 'the theme progress line is missing');
+      ok(!has('arc-chip')[0].cls().includes('on') && food.cls().includes('on'), 'the chosen theme does not look chosen');
+    }
     STAGE.all(n => n.cls().includes('arc-back'))[0].click();
 
     // timers and frames under the test's control from here
@@ -1145,20 +1157,164 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     }
     W.Profile.set('B1'); GI.reset();
 
-    // Palabras: English shown, Spanish options; typed only once answered
-    let ws = draws('sword', 150, {});
-    ok(ws.length > 120 && ws.every(i => i.play === 'choose' && i.options.length === 4),
-       'Palabras did not deal four-way choices');
-    ok(ws.every(i => i.options.indexOf(i.answer) !== -1 && i.prompt !== i.answer), 'a Palabras item is malformed');
-    const vocAll = {};
-    ['A1', 'A2', 'B1', 'B2', 'C1'].forEach(b => (GI.index().vocab[b] || []).forEach(w => { vocAll['v:' + w.es + ':meaning'] = { reps: 1 }; }));
-    localStorage.setItem('fluidez.srs', JSON.stringify(vocAll));
-    ws = draws('sword', 150, {});
-    const typedN = ws.filter(i => i.play === 'type').length;
-    ok(typedN > 100, `only ${typedN} of ${ws.length} known words came back typed`);
-    ok(ws.filter(i => i.play === 'type').every(i => GI.grade(i, i.answer.replace(/^(el|la|los|las)\s+/, '')) === 'good'),
-       'the article is not optional when a word is typed');
-    localStorage.removeItem('fluidez.srs');
+    // Palabras: the grind. English shown, Spanish options; typed only once answered right
+    {
+      const G = GI.grindList().list;
+      ok(G.length > 5000, `the ranked list has only ${G.length} entries`);
+      ok(G.every(e => !e.g), 'a grammar word is in the ranked list');
+      const WR = W.WORD_RANK;
+      const gram = [].concat(WR.words, WR.verbs).filter(e => e.g).map(e => e.es);
+      localStorage.removeItem('fluidez.srs');
+      W.Profile.set('A1'); GI.reset();
+      const rank = es => G.findIndex(e => e.es === es);
+      const play = (n, opts, st) => { const out = []; for (let i = 0; i < n; i++) { const it = GI.next('sword', 1, rng, Object.assign({ grind: st }, opts)); if (it) out.push(it); } return out; };
+
+      // fresh player: four options, new words in rank order, the cap holds, verbs share the list
+      let st = { asked: 0, newN: 0, used: {} };
+      let r1 = play(10, { count: 10, gkind: 'sword' }, st);
+      ok(r1.length === 10, `a fresh round dealt ${r1.length} of 10`);
+      ok(r1.every(i => i.play === 'choose' && i.options.length === 4 && i.options.indexOf(i.answer) !== -1 && i.prompt !== i.answer),
+         'a fresh Palabras item is malformed');
+      ok(r1.every(i => /^v:.+:meaning$/.test(i.id)), 'a Palabras item has no v:<es>:meaning id');
+      const newOnes = r1.filter(i => i.grind === 'new');
+      ok(newOnes.length >= 4, 'a fresh player was not given new words');
+      // content words and small words (de, que, por) each come in rank order, three to one
+      const small = es => { const e = G.find(x => x.es === es); return e && !e.verb && !e.th && !/^(el|la|los|las)\s/i.test(e.es); };
+      const inOrder = list => list.every((x, i) => i === 0 || x > list[i - 1]);
+      // ... and among content words, verbs and the rest each in rank order, one verb to two
+      const isVerb = es => { const e = G.find(x => x.es === es); return e && e.verb; };
+      const cRanks = newOnes.filter(i => !small(i.answer)).map(i => rank(i.answer));
+      const vRanks = newOnes.filter(i => !small(i.answer) && isVerb(i.answer)).map(i => rank(i.answer));
+      const wRanks = newOnes.filter(i => !small(i.answer) && !isVerb(i.answer)).map(i => rank(i.answer));
+      const sRanks = newOnes.filter(i => small(i.answer)).map(i => rank(i.answer));
+      ok(inOrder(vRanks) && inOrder(wRanks) && inOrder(sRanks),
+         `new words are not in rank order: ${vRanks.join(',')} / ${wRanks.join(',')} / ${sRanks.join(',')}`);
+      ok(wRanks[0] === G.findIndex(e => !small(e.es) && !e.verb), 'a fresh player did not start at the most common noun or adjective');
+      ok(vRanks.length * 2 <= wRanks.length + 2, `too many verbs among new words: ${vRanks.length} of ${cRanks.length}`);
+      ok(sRanks.length * 3 <= cRanks.length + 3, `too many small words: ${sRanks.length} of ${newOnes.length}`);
+      ok(r1.every(i => gram.indexOf(i.answer) === -1), 'a grammar word was asked');
+      console.log('  fresh A1 first ten: ' + r1.map(i => i.answer + ' (' + i.prompt + ')').join('; '));
+
+      // a second round the same day: round one's words, answered right, come back TYPED
+      r1.forEach((it, i) => { if (i % 5 !== 4) { W.SRS.enrol(it.id); W.SRS.grade(it.id, true); } else W.SRS.enrol(it.id); });
+      const r2 = play(10, { count: 10, gkind: 'sword' }, { asked: 0, newN: 0, used: {} });
+      const typedBack = r2.filter(i => i.play === 'type').length;
+      ok(typedBack >= 4, `only ${typedBack} of round two came back typed`);
+      ok(r2.filter(i => i.grind === 'new').length <= 4, 'round two broke the new-word cap');
+      ok(r2.filter(i => i.grind === 'due').length === 2 && r2[0].grind === 'due', 'the two misses of round one were not due first in round two');
+      console.log('  second round: ' + r2.map(i => i.grind + (i.play === 'type' ? '/typed' : '')).join(', '));
+      localStorage.removeItem('fluidez.srs');
+
+      // the cap: with something to fill, at most four of ten are new
+      const store0 = {};
+      G.slice(0, 40).forEach((e, i) => { store0[e.id] = { reps: 2, due: W.SRS.today() + 3 + i, last: W.SRS.today() - 1, box: 2 }; });
+      localStorage.setItem('fluidez.srs', JSON.stringify(store0));
+      for (let t = 0; t < 5; t++) {
+        st = { asked: 0, newN: 0, used: {} };
+        const rr = play(10, { count: 10, gkind: 'sword' }, st);
+        ok(rr.filter(i => i.grind === 'new').length <= 4, 'a Tranquilo round asked more than four new words');
+        ok(rr.filter(i => i.grind === 'new').length === 4, 'a Tranquilo round with fillers did not reach its four new words');
+        ok(rr.filter(i => i.grind === 'recent').length === 6, 'the other six were not recently learned words');
+        ok(new Set(rr.map(i => i.answer)).size === 10, 'a word came twice in one round');
+        ok(rr.filter(i => i.grind === 'new').every(i => rank(i.answer) >= 40), 'a new word was one already answered');
+        ok(rr.filter(i => i.grind === 'recent').every(i => i.play === 'type' || i.options), 'a recent word is neither typed nor tapped');
+      }
+      // timed: about one in three
+      st = { asked: 0, newN: 0, used: {} };
+      const rt = play(30, {}, st);
+      const tn = rt.filter(i => i.grind === 'new').length;
+      ok(tn >= 8 && tn <= 11, `Contrarreloj dealt ${tn} new words of 30, wanted about a third`);
+
+      // due before new; the most overdue first; a missed word (enrolled, never graded) is due
+      const td = W.SRS.today();
+      const s2 = Object.assign({}, store0);
+      s2[G[200].id] = { reps: 3, due: td - 5, last: td - 20, box: 2 };
+      s2[G[300].id] = { reps: 0, due: td, box: 0 };
+      localStorage.setItem('fluidez.srs', JSON.stringify(s2));
+      st = { asked: 0, newN: 0, used: {} };
+      const rd = play(3, { count: 10, gkind: 'sword' }, st);
+      ok(rd[0].answer === G[200].es && rd[1].answer === G[300].es, `due cards did not come first: ${rd.map(i => i.answer)}`);
+      ok(rd[0].grind === 'due' && rd[1].grind === 'due' && rd[2].grind === 'new', 'due then new is not the order');
+      ok(rd[0].play === 'type', 'a due word that was answered right before is not typed');
+      ok(rd[1].play === 'choose', 'a missed word (never answered right) is not tapped');
+      {
+        // the lowest-ranked unseen word of its own kind (small word, verb, or other)
+        const kindOf = e => (!e.verb && !e.th && !/^(el|la|los|las)\s/i.test(e.es)) ? 's' : e.verb ? 'v' : 'w';
+        const got = G[rank(rd[2].answer)], seenIds = s2;
+        const first = G.find(e => kindOf(e) === kindOf(got) && !(seenIds[e.id] && (seenIds[e.id].reps > 0 || seenIds[e.id].due <= td)));
+        ok(first && first.es === got.es, `the new word is not the lowest-ranked unseen one of its kind: ${got.es}`);
+      }
+
+      // typed: article optional, and another entry with the same gloss is accepted
+      const withArt = G.find(e => /^(el|la) /.test(e.es));
+      const s3 = {}; s3[withArt.id] = { reps: 2, due: td - 1, last: td - 9, box: 2 };
+      localStorage.setItem('fluidez.srs', JSON.stringify(s3));
+      const ti = play(1, {}, { asked: 0, newN: 0, used: {} })[0];
+      ok(ti.answer === withArt.es && ti.play === 'type', 'the due typed word was not dealt');
+      ok(GI.grade(ti, withArt.es.replace(/^(el|la) /, '')) === 'good', 'the article is not optional');
+      const twin = G.find(e => G.some(o => o !== e && o.en.toLowerCase() === e.en.toLowerCase() && o.es.indexOf(' ') === -1 && e.es.indexOf(' ') === -1));
+      if (twin) {
+        const other = G.find(o => o !== twin && o.en.toLowerCase() === twin.en.toLowerCase());
+        const s4 = {}; s4[twin.id] = { reps: 2, due: td - 1, last: td - 9, box: 2 };
+        localStorage.setItem('fluidez.srs', JSON.stringify(s4));
+        const ti2 = play(1, {}, { asked: 0, newN: 0, used: {} })[0];
+        ok(ti2.play === 'type' && GI.grade(ti2, other.es) === 'good', 'a word with the same English gloss is not accepted when typed');
+      }
+
+      // theme filter: only that theme, in rank order
+      localStorage.removeItem('fluidez.srs');
+      const themes = GI.grindThemes();
+      ok(themes.length >= 15 && themes.every(t => t.label && t.label !== t.id), 'the themes have no Spanish labels');
+      const th = themes.find(t => t.id === 'alimentacion') || themes[0];
+      st = { asked: 0, newN: 0, used: {} };
+      const rth = play(10, { theme: th.id, count: 10, gkind: 'sword' }, st);
+      ok(rth.length === 10 && rth.every(i => G[rank(i.answer)].th === th.id), 'a theme round dealt words from another theme');
+      const rrV = rth.filter(i => G[rank(i.answer)].verb).map(i => rank(i.answer));
+      const rrW = rth.filter(i => !G[rank(i.answer)].verb).map(i => rank(i.answer));
+      const ord = l => l.every((x, i) => i === 0 || x > l[i - 1]);
+      ok(ord(rrV) && ord(rrW), 'a theme round is not in rank order');
+
+      // options: no two share a gloss, distractors come from the answer's theme when it has one
+      let bad = 0, offTheme = 0, dup = 0, n = 0;
+      const gl = es => G[rank(es)];
+      for (let k = 0; k < 400; k++) {
+        const it = GI.next('sword', 1, rng, { grind: { asked: 0, newN: 0, used: {} } });
+        if (!it || !it.options) continue;
+        n++;
+        const es = it.options.map(gl);
+        if (new Set(it.options).size !== 4) dup++;
+        for (let a = 0; a < 4; a++) for (let b = a + 1; b < 4; b++) {
+          const ga = Object.keys(es[a].gl), gb = Object.keys(es[b].gl);
+          if (ga.some(x => gb.indexOf(x) !== -1) || es[a].en.toLowerCase() === es[b].en.toLowerCase()) bad++;
+        }
+      }
+      ok(n > 300 && bad === 0 && dup === 0, `${bad} option pairs share a gloss, ${dup} repeated options over ${n} items`);
+
+      // coverage
+      localStorage.removeItem('fluidez.srs');
+      let cv = GI.coverage(null);
+      ok(cv.n === 0 && cv.of === 1000 && cv.text === 'Conoces 0 de las 1.000 palabras más comunes', `coverage reads "${cv.text}"`);
+      const s5 = {};
+      G.slice(0, 700).forEach(e => { s5[e.id] = { reps: 1, due: td + 5 }; });
+      s5[G[800].id] = { reps: 0, due: td };                 // a miss is not known
+      localStorage.setItem('fluidez.srs', JSON.stringify(s5));
+      cv = GI.coverage(null);
+      ok(cv.n === 700 && cv.of === 1000 && /Conoces 700 de las 1\.000/.test(cv.text), `coverage reads "${cv.text}"`);
+      const s6 = {};
+      G.slice(0, 1200).forEach(e => { s6[e.id] = { reps: 1, due: td + 5 }; });
+      localStorage.setItem('fluidez.srs', JSON.stringify(s6));
+      cv = GI.coverage(null);
+      ok(cv.of === 2000 && cv.n === 1200 && /de las 2\.000/.test(cv.text), `past a thousand the line reads "${cv.text}"`);
+      const inTh = G.filter(e => e.th === th.id), known = inTh.filter(e => e.pos < 1200).length;
+      cv = GI.coverage(th.id);
+      ok(cv.theme && cv.theme.n === known && cv.theme.of === inTh.length && cv.theme.text === `${known} de ${inTh.length} en ${th.label}`.replace(/\B(?=(\d{3})+(?!\d))/g, '.'),
+         `theme coverage reads "${cv.theme && cv.theme.text}"`);
+      localStorage.removeItem('fluidez.srs');
+
+      // old behaviour kept: a known word comes back typed, a missed one tapped
+      const typedN = 0;
+      W.Profile.set('B1'); GI.reset();
+    }
 
     // Frases: typed at six words or fewer, chips up to eight, nothing longer
     const fr = draws('sphrase', 300, {});

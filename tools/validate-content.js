@@ -941,7 +941,7 @@ function checkProbes(l, tag) {
    * corpus for the lessons, so loading a second copy of it would cost 2.2 MB
    * to save a walk it can afford. js/arcade.js is that build's boot. Both are
    * checked below against the arcade's own page and worker instead. */
-  const ARCADE_ONLY = new Set(['data/game-index.js', 'js/arcade.js', 'js/study.js']);
+  const ARCADE_ONLY = new Set(['data/game-index.js', 'data/word-rank.js', 'js/arcade.js', 'js/study.js']);
 
   /* The two whole-corpus files are SOURCES, not page scripts: node tools and
    * the content gate read them, tools/split-data.ts cuts them into
@@ -1048,6 +1048,19 @@ function checkProbes(l, tag) {
          'data/game-index.js is stale — the corpus changed since it was generated. ' +
          'Run: node tools/build-game-index.js');
     } catch (e) { ok(false, 'could not check data/game-index.js: ' + e.message); }
+
+    /* The frequency ranking is generated from the vocabulary, the graph, the
+     * verbs and tools/freq/. If any of them moved, Palabras would rank
+     * yesterday's words. */
+    ok(aHtml && aHtml.indexOf('../data/word-rank.js') !== -1 && aHtml.indexOf('../data/word-rank.js') < aHtml.indexOf('../js/gameitems.js'),
+       'juegos/index.html must load ../data/word-rank.js before ../js/gameitems.js');
+    try {
+      const out = require('child_process').spawnSync(process.execPath,
+        [path.join(__dirname, 'build-frequency.js'), '--check'], { encoding: 'utf8' });
+      ok(out.status === 0,
+         'data/word-rank.js is stale — the vocabulary, graph, verbs or tools/freq changed. ' +
+         'Run: node tools/build-frequency.js');
+    } catch (e) { ok(false, 'could not check data/word-rank.js: ' + e.message); }
   }
 
   /* The profiles were renamed from beginner/standard/refresher to A1-C1, and
@@ -1146,7 +1159,7 @@ function checkProbes(l, tag) {
   });
   /* Computed names (window.BANK_ + band) end in an underscore and are injected by band; GAME_INDEX belongs to the
    * arcade page (juegos/), which loads data/game-index.js itself, and gameitems.js falls back without it. */
-  const OPTIONAL = new Set(['GAME_INDEX']);
+  const OPTIONAL = new Set(['GAME_INDEX', 'WORD_RANK']);
   for (const [name, from] of reads) {
     if (/_$/.test(name) || OPTIONAL.has(name)) continue;
     const def = new RegExp('(?:window\\.|^|[\\s;,(])' + name + '\\s*=(?!=)|window\\[[^\\]]*\\]\\s*=', 'm');

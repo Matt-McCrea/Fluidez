@@ -209,6 +209,8 @@
       list.appendChild(b);
     });
     wrap.appendChild(list);
+    wrap.appendChild(el('p', 'arc-foot',
+      'Frecuencias: FrequencyWords (OpenSubtitles 2018), CC BY-SA 4.0'));
     h.appendChild(wrap);
   }
 
@@ -512,6 +514,13 @@
     return ts.filter(function (t) { return known.indexOf(t) !== -1; });
   }
   function saveTenses(ts) { var a = loadArc(); a.tenses = ts; saveArc(a); }
+  /* Palabras: "" is the whole ranked list, otherwise one theme that has words. */
+  function chosenWordTheme() {
+    var a = loadArc(), id = a.wtheme;
+    if (!id || !window.GameItems || !window.GameItems.grindThemes) return '';
+    return window.GameItems.grindThemes().some(function (t) { return t.id === id; }) ? id : '';
+  }
+  function saveWordTheme(id) { var a = loadArc(); a.wtheme = id || ''; saveArc(a); }
 
   /* THE SHEET. Tapping a tile does not start a round, it asks which kind: ten
    * questions with no clock for a few stops on a bus, or sixty seconds against
@@ -561,6 +570,36 @@
       wrap.appendChild(chips);
     }
 
+    if (g.key === 'palabras' && window.GameItems && window.GameItems.coverage) {
+      var GI2 = window.GameItems, wt = chosenWordTheme();
+      var prog = el('div', 'arc-progress');
+      function paintProgress() {
+        clear(prog);
+        var cv = GI2.coverage(wt || null);
+        prog.appendChild(el('div', 'arc-progress-all', cv.text));
+        if (cv.theme) prog.appendChild(el('div', 'arc-progress-theme', cv.theme.text));
+      }
+      paintProgress();
+      wrap.appendChild(prog);
+      wrap.appendChild(el('div', 'arc-group', 'Tema'));
+      var tchips = el('div', 'arc-chips'), tby = {};
+      function paintT() {
+        Object.keys(tby).forEach(function (k) { tby[k].classList.toggle('on', k === (wt || '')); });
+      }
+      function tchip(id, label) {
+        var b = el('button', 'arc-chip', label);
+        b.type = 'button';
+        b.addEventListener('click', function () { wt = id; saveWordTheme(id); paintT(); paintProgress(); });
+        tby[id] = b;
+        tchips.appendChild(b);
+      }
+      tchip('', 'Las más comunes');
+      GI2.grindThemes().sort(function (a, b) { return a.label < b.label ? -1 : 1; })
+        .forEach(function (t) { tchip(t.id, t.label); });
+      paintT();
+      wrap.appendChild(tchips);
+    }
+
     var last = lastMode();
     var modes = el('div', 'arc-modes');
     function mode(m, title, note) {
@@ -572,7 +611,7 @@
       modes.appendChild(b);
     }
     mode('t', 'Tranquilo · 10 preguntas', 'sin reloj; la rapidez solo suma puntos');
-    mode('c', 'Contrarreloj · 60 s', 'el reloj para si se bloquea el móvil');
+    mode('c', 'Contrarreloj · 60 s', 'el reloj se para si bloqueas el celular');
     wrap.appendChild(modes);
     h.appendChild(wrap);
   }
@@ -585,6 +624,7 @@
     var extra = m === 't' ? { key: modeKey(g, 't'), count: 10, duration: null }
                           : { key: modeKey(g, 'c'), duration: 60000 };
     if (g.key === 'verbos2') { var ts = chosenTenses(); if (ts.length) extra.tenses = ts; }
+    if (g.key === 'palabras') { var wth = chosenWordTheme(); if (wth) extra.theme = wth; }
     G.open(g.key, board, extra);
   }
 

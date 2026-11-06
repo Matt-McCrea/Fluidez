@@ -63,6 +63,8 @@ window.GameRound = (function () {
      * Without a duration the engine used to mean sudden death; a count is
      * neither that nor a sprint, so it is named explicitly. */
     var counted = !!cfg.count;
+    // Palabras: what this round has already dealt and how many words were new (GameItems.swordItem)
+    var grindState = { asked: 0, newN: 0, used: {} };
     var perItemClock = !cfg.duration && !counted;
 
     var startedAt = Date.now();
@@ -438,7 +440,8 @@ window.GameRound = (function () {
                             : GI.next(cfg.kind, rung, rng,
                                 { silent: cfg.silent, tense: cfg.lockTense, tenses: cfg.tenses,
                                   anyBand: cfg.anyBand, theme: cfg.theme, only: cfg.only,
-                                  tapFirst: cfg.tapFirst });
+                                  tapFirst: cfg.tapFirst, grind: grindState,
+                                  count: cfg.count || 0, gkind: cfg.kind });
         if (!got) continue;
         fallback = got;
         if (!usedPrompts[keyOf(got)]) { item = got; break; }
@@ -936,6 +939,14 @@ window.GameRound = (function () {
             : rated.delta === 0 ? 'sin cambios'
             : (rated.delta > 0 ? '▴ ' : '▾ ') + Math.abs(rated.delta)));
         over.appendChild(rEl);
+      }
+
+      if (cfg.kind === 'sword' && GI.coverage) {
+        var cov = GI.coverage(cfg.theme);
+        var covEl = el('div', 'g-over-cover');
+        covEl.appendChild(el('div', 'g-over-cover-all', cov.text));
+        if (cov.theme) covEl.appendChild(el('div', 'g-over-cover-theme', cov.theme.text));
+        over.appendChild(covEl);
       }
 
       var again = el('button', 'g-again', cfg.againLabel || 'Otra vez');

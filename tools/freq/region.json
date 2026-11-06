@@ -1,0 +1,19 @@
+{
+  "_note": "Spain word -> the Latin American (Colombian) word Fluidez teaches. The subtitle corpus leans to Spain, so the LatAm word takes the pair's combined count and the Spain word is kept at 5% and marked sp: 1, which the arcade grind skips. See tools/build-frequency.js.",
+  "el coche": "el carro",
+  "el móvil": "el celular",
+  "el ordenador": "la computadora",
+  "la patata": "la papa",
+  "el zumo": "el jugo",
+  "el jersey": "el suéter",
+  "la tarta": "la torta",
+  "el frigorífico": "la nevera",
+  "el bolígrafo": "el lapicero",
+  "el camarero": "el mesero",
+  "el plátano": "el banano",
+  "el billete": "el boleto",
+  "conducir": "manejar",
+  "coger": "agarrar",
+  "aparcar": "estacionar",
+  "enfadarse": "enojarse"
+}

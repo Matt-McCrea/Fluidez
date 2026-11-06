@@ -381,7 +381,7 @@ window.GameItems = (function () {
     return idx;
   }
   function index() { return IDX || buildIndex(); }
-  function reset() { IDX = null; }
+  function reset() { IDX = null; GRIND = null; }
 
   // ---- what the round should lean towards ----------------------------------
   // Games are not a separate silo: given a few equally good candidates, take
@@ -1428,10 +1428,219 @@ window.GameItems = (function () {
     return null;
   }
 
+  /* ---- PALABRAS: THE GRIND -------------------------------------------------
+   * One ranked list (data/word-rank.js): words and verbs-as-words merged by real
+   * frequency, about three words to a verb, grammar words (g: 1) left out. Each
+   * question is, in this order: a card that is DUE (the SRS says so; a word
+   * missed this week is enrolled and due too), a word missed recently that is not
+   * due yet, the next NEW word in rank order (capped per round), a recently
+   * learned word to fill, and only then new words beyond the cap.
+   *
+   * KNOWN. A card counts as known once it has a right answer (reps > 0), the same
+   * test that makes it come back typed. A word answered right on its first sight,
+   * tapped, is graded good by the round (gameround writeBack) exactly like any
+   * other right answer, so it is known at once and is typed next time. At B1 and
+   * above that is also how a strong player moves through the easy words: a right
+   * first answer graduates it, nothing else is asked of them.
+   *
+   * IDS are the main app's: v:<es>:meaning, verbs included. */
+  var MILESTONES = [1000, 2000, 3000, 5000];
+  var GRIND = null;
+  function glossSet(en) {
+    var out = {};
+    String(en || '').toLowerCase().replace(/\([^)]*\)/g, ' ').split(/[;,\/]|\bor\b/).forEach(function (p) {
+      p = p.replace(/^\s*(to|the|a|an)\s+/, '').replace(/\s+/g, ' ').trim();
+      if (p) out[p] = 1;
+    });
+    return out;
+  }
+  function glossClash(a, b) {
+    for (var k in a.gl) if (b.gl[k]) return true;
+    return a.en.toLowerCase() === b.en.toLowerCase();
+  }
+  function bareEs(es) { return es.replace(/^(el|la|los|las)\s+/i, ''); }
+  function grindList() {
+    if (GRIND) return GRIND;
+    var WR = window.WORD_RANK, seen = {}, list = [];
+    function add(e, verb) {
+      // g: a grammar word the English cannot single out; sp: the Spain word for something taught the LatAm way
+      if (!e || !e.es || !e.en || e.g || e.sp) return;
+      var es = String(e.es).trim();
+      if (!es || seen[es] || es.toLowerCase() === String(e.en).trim().toLowerCase()) return;
+      seen[es] = 1;
+      /* A reflexive spin-off (hacerse, pasarse) sits right behind its base in
+       * the verb ranking, which put "to become (by effort)" ahead of every
+       * common noun. It waits until well after the base instead. */
+      var refl = verb && /se$/.test(es) && baseVerbs[es.slice(0, -2)];
+      list.push({ es: es, en: String(e.en), th: e.th || null, c: e.c || 'A1', r: e.r || 0, verb: verb,
+                  key: verb ? (e.r || 0) * (refl ? 12 : 3) : (e.r || 0), id: 'v:' + es + ':meaning', gl: glossSet(e.en) });
+    }
+    var baseVerbs = {};
+    if (WR) (WR.verbs || []).forEach(function (v) { if (v && v.es && !/se$/.test(v.es)) baseVerbs[v.es] = 1; });
+    if (WR) { (WR.verbs || []).forEach(function (v) { add(v, true); }); (WR.words || []).forEach(function (w) { add(w, false); }); }
+    list.sort(function (a, b) { return a.key - b.key || (a.verb === b.verb ? 0 : a.verb ? -1 : 1); });
+    var byTheme = {}, byEn = {};
+    list.forEach(function (e, i) {
+      e.pos = i; e.shape = e.verb ? 'v' : wordKind(e.es);
+      if (e.th) (byTheme[e.th] = byTheme[e.th] || []).push(e);
+      (byEn[e.en.toLowerCase()] = byEn[e.en.toLowerCase()] || []).push(e);
+    });
+    GRIND = { list: list, byTheme: byTheme, byEn: byEn };
+    return GRIND;
+  }
+  function grindDistractors(e, G, rng) {
+    var chosen = [];
+    function ok(o) {
+      if (o.es === e.es || bareEs(o.es) === bareEs(e.es) || glossClash(e, o)) return false;
+      for (var i = 0; i < chosen.length; i++) if (glossClash(chosen[i], o) || chosen[i].es === o.es) return false;
+      return true;
+    }
+    var th = e.th ? G.byTheme[e.th] : null;
+    function near(o, d) { return Math.abs(o.pos - e.pos) <= d; }
+    var stages = [
+      function () { return th ? th.filter(function (o) { return near(o, 300) && o.shape === e.shape; }) : []; },
+      function () { return th ? th.filter(function (o) { return near(o, 300); }) : []; },
+      function () { return G.list.filter(function (o) { return near(o, 300) && o.shape === e.shape; }); },
+      function () { return G.list.filter(function (o) { return near(o, 1000) && o.shape === e.shape; }); },
+      function () { return G.list; }
+    ];
+    for (var s = 0; s < stages.length && chosen.length < 3; s++) {
+      var pool = E.shuffle(stages[s]().slice(), rng);
+      for (var i = 0; i < pool.length && chosen.length < 3; i++) if (ok(pool[i])) chosen.push(pool[i]);
+    }
+    return chosen.length === 3 ? chosen : null;
+  }
+  function isSmall(e) { return !e.verb && !e.th && !/^(el|la|los|las)\s/i.test(e.es); }
+  function grindPick(opts, rng) {
+    var G = grindList();
+    if (!G.list.length) return null;
+    var st = (opts && opts.grind) || { asked: 0, newN: 0, used: {} };
+    st.used = st.used || {}; st.asked = st.asked || 0; st.newN = st.newN || 0;
+    st.small = st.small || 0; st.content = st.content || 0; st.verbs = st.verbs || 0;
+    var L = opts && opts.theme && G.byTheme[opts.theme] ? G.byTheme[opts.theme] : G.list;
+    var store = srsStore(), td = window.SRS && window.SRS.today ? window.SRS.today() : Math.floor(Date.now() / 864e5);
+    /* A new word a B1+ player gets right at first sight was already theirs:
+     * it does not use up the round's allowance of new words, so somebody who
+     * knows the basics moves through them at their own speed instead of being
+     * held to four a round and re-asked the rest. Below B1 a right first tap
+     * may be a guess, and it counts. */
+    if (st.lastNew) {
+      var ln = store[st.lastNew];
+      if (ln && ln.reps > 0 && /^(B1|B2|C1)$/.test(playerBand())) st.newN = Math.max(0, st.newN - 1);
+      st.lastNew = null;
+    }
+    for (var pass = 0; pass < 2; pass++) {
+      var due = [], missed = [], recent = [], fresh = null, freshVerb = null, freshWord = null, freshSmall = null, any = [];
+      for (var i = 0; i < L.length; i++) {
+        var e = L[i];
+        if (st.used[e.es]) continue;
+        var c = store[e.id];
+        if (!c || typeof c !== 'object' || (!(c.reps > 0) && (c.due == null ? 0 : c.due) > td)) {
+          /* SMALL words (no article, not a verb, no theme: de, que, por, ya,
+           * así) are the top of any frequency list, and ten of them in a row
+           * is a grammar lesson, not a vocabulary payoff. New words come three
+           * content words to one small word, each list in rank order. */
+          if (isSmall(e)) { if (!freshSmall) freshSmall = e; }
+          else if (e.verb) { if (!freshVerb) freshVerb = e; }
+          else if (!freshWord) freshWord = e;
+          continue;                                    // no break: due cards further down still count
+        }
+        any.push(e);
+        var d = c.due == null ? 0 : c.due;
+        if (d <= td) due.push({ e: e, d: d });
+        else if (c.consecMiss > 0) missed.push({ e: e, l: c.last || 0 });
+        else if (c.reps > 0) recent.push({ e: e, l: c.last || 0 });
+      }
+      /* and among content words, one verb to two nouns or adjectives: the
+       * verbs' summed forms put twenty of them ahead of the first noun */
+      var freshContent = freshVerb && (!freshWord || st.verbs * 2 < st.content - st.verbs) ? freshVerb : (freshWord || freshVerb);
+      fresh = freshSmall && (!freshContent || st.small * 3 < st.content) ? freshSmall : (freshContent || freshSmall);
+      var counted = opts && opts.count;
+      var allowNew = counted && opts.gkind === 'sword' ? st.newN < 4 : st.newN * 3 <= st.asked;
+      var got = null, mode = null;
+      if (due.length) {
+        due.sort(function (a, b) { return a.d - b.d || a.e.pos - b.e.pos; });
+        got = pick(due.filter(function (x) { return x.d === due[0].d; }).slice(0, 5), rng).e; mode = 'due';
+      } else if (missed.length) {
+        missed.sort(function (a, b) { return b.l - a.l; });
+        got = missed[0].e; mode = 'missed';
+      } else if (fresh && allowNew) {
+        got = fresh; mode = 'new';
+      } else if (recent.length) {
+        recent.sort(function (a, b) { return b.l - a.l; });
+        got = pick(recent.slice(0, 12), rng).e; mode = 'recent';
+      } else if (fresh) {
+        got = fresh; mode = 'new';
+      } else if (any.length) {
+        got = pick(any, rng); mode = 'again';
+      }
+      if (got) {
+        st.used[got.es] = 1; st.asked++;
+        if (mode === 'new') {
+          st.newN++; st.lastNew = got.id;
+          if (isSmall(got)) st.small++; else { st.content++; if (got.verb) st.verbs++; }
+        }
+        return { e: got, mode: mode, G: G };
+      }
+      st.used = {};                                   // the whole list has been dealt this round: start over
+    }
+    return null;
+  }
+
   function swordItem(rung, rng, opts) {
-    var o = { anyBand: true, tapFirst: true };
-    if (opts) { o.theme = opts.theme; o.only = opts.only; }
-    return vocabItem(rung, rng, o);
+    var p = grindPick(opts, rng);
+    if (!p) return null;
+    var e = p.e, G = p.G;
+    var short = e.es.split(/\s+/).length <= 3 && TYPEABLE.test(e.es) && !/^\*/.test(e.es);
+    var item = { kind: 'vocab', cefr: e.c, bonus: 0, id: e.id, topic: null, note: null, es: e.es,
+                 prompt: e.en, answer: e.es, grind: p.mode, rank: e.pos + 1, firstSight: p.mode === 'new' };
+    var wrong = grindDistractors(e, G, rng);
+    if (wrong) item.options = E.shuffle([e.es].concat(wrong.map(function (o) { return o.es; })), rng);
+    if (short && answeredRight(e.id)) {
+      item.play = 'type';
+      var acc = [e.es, bareEs(e.es)];
+      (G.byEn[e.en.toLowerCase()] || []).forEach(function (o) {
+        if (o.es !== e.es) { acc.push(o.es); acc.push(bareEs(o.es)); }
+      });
+      item.accept = acc.filter(function (a, i) { return acc.indexOf(a) === i; });
+      return item;
+    }
+    if (!wrong) return null;
+    item.play = 'choose';
+    return item;
+  }
+
+  /* How much of the most common Spanish this player has answered right at least
+   * once. N is counted inside the first milestone above the TOTAL known, so it
+   * reads "Conoces 742 de las 1.000 palabras más comunes" and moves on to 2.000
+   * once the first thousand is behind them. With a theme: that theme alone. */
+  function thousands(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.'); }
+  function themeShort(id) {
+    var t = (window.THEMES || []).filter(function (x) { return x.id === id; })[0];
+    return t ? (t.short || t.es || id) : id;
+  }
+  function coverage(theme) {
+    var G = grindList(), store = srsStore(), L = G.list;
+    function known(e) { var c = store[e.id]; return !!(c && typeof c === 'object' && c.reps > 0); }
+    var total = 0;
+    L.forEach(function (e) { if (known(e)) total++; });
+    var M = L.length;
+    for (var i = 0; i < MILESTONES.length; i++) if (MILESTONES[i] > total) { M = Math.min(MILESTONES[i], L.length); break; }
+    var n = 0;
+    for (var j = 0; j < M; j++) if (known(L[j])) n++;
+    var out = { n: n, of: M, total: total, theme: null,
+                text: 'Conoces ' + thousands(n) + ' de las ' + thousands(M) + ' palabras más comunes' };
+    if (theme && G.byTheme[theme]) {
+      var tn = 0;
+      G.byTheme[theme].forEach(function (e) { if (known(e)) tn++; });
+      out.theme = { id: theme, n: tn, of: G.byTheme[theme].length, label: themeShort(theme),
+                    text: thousands(tn) + ' de ' + thousands(G.byTheme[theme].length) + ' en ' + themeShort(theme) };
+    }
+    return out;
+  }
+  function grindThemes() {
+    var G = grindList();
+    return Object.keys(G.byTheme).map(function (id) { return { id: id, label: themeShort(id), count: G.byTheme[id].length }; });
   }
 
   /* Jugar: forty-five parts verbs, forty words, fifteen phrases. */
@@ -1706,7 +1915,7 @@ window.GameItems = (function () {
     answeredRight: answeredRight, tensesForBand: tensesForBand,
     listenRate: listenRate, bandForLevel: bandForLevel,
     enKey: enKey, altsFor: altsFor,
-    owned: owned, relampagoItem: relampagoItem, OWN_MIN: OWN_MIN,
+    coverage: coverage, grindThemes: grindThemes, grindList: grindList, owned: owned, relampagoItem: relampagoItem, OWN_MIN: OWN_MIN,
     contrastDecks: contrastDecks, contrastRound: contrastRound, bothRight: bothRight, bothRightCount: bothRightCount
   };
 })();

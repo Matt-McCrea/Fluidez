@@ -732,3 +732,7 @@
 .g-uno-deck-meta { color: var(--muted); font-size: .82rem; }
 .g-uno-why { min-height: 1.4em; margin: 14px 0 8px; color: var(--muted); font-size: .95rem; }
 .g-uno-next { margin: 4px 0 0; }
+
+.g-over-cover { text-align: center; margin: 8px 0 12px; }
+.g-over-cover-all { font-weight: 700; }
+.g-over-cover-theme { color: var(--muted); font-size: .9rem; margin-top: 2px; }

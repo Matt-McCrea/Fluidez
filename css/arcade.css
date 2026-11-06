@@ -327,3 +327,8 @@ body { background:var(--bg); color:var(--text); }
   border-radius:999px; padding:8px 13px; font:inherit; font-size:.84rem; cursor:pointer;
 }
 .arc-chip.on { background:var(--accent); border-color:var(--accent); color:#06222a; font-weight:700; }
+
+/* Palabras: how much of the common Spanish is known */
+.arc-progress { margin: 0 0 14px; }
+.arc-progress-all { font-weight: 700; font-size: .95rem; }
+.arc-progress-theme { color: var(--muted); font-size: .84rem; margin-top: 2px; }

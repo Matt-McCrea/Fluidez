@@ -1,0 +1,208 @@
+{
+ "la gracia": {
+  "rank": "demote",
+  "note": "gracias (thanks) is the same count; plural of gracia is not meant"
+ },
+ "el do": {
+  "rank": "demote",
+  "note": "'do' is mostly English in subtitles and dos (two) is its plural spelling"
+ },
+ "el dicho": {
+  "rank": "demote",
+  "note": "dicho is mostly the participle of decir",
+  "share": 0.1
+ },
+ "el dado": {
+  "rank": "demote",
+  "note": "dado is mostly the participle of dar",
+  "share": 0.1
+ },
+ "el estado": {
+  "rank": "demote",
+  "note": "estado is mostly the participle of estar",
+  "share": 0.2
+ },
+ "el oído": {
+  "rank": "demote",
+  "note": "oído is mostly the participle of oír",
+  "share": 0.15
+ },
+ "el ganado": {
+  "rank": "demote",
+  "note": "ganado is mostly the participle of ganar",
+  "share": 0.15
+ },
+ "el vino": {
+  "rank": "demote",
+  "note": "vino is mostly the preterite of venir",
+  "share": 0.3
+ },
+ "el recuerdo": {
+  "rank": "demote",
+  "note": "recuerdo is often the verb (I remember)",
+  "share": 0.5
+ },
+ "el puesto": {
+  "rank": "demote",
+  "note": "puesto is often the participle of poner",
+  "share": 0.4
+ },
+ "el odio": {
+  "rank": "demote",
+  "note": "odio is often the verb (I hate)",
+  "share": 0.3
+ },
+ "el traje": {
+  "rank": "demote",
+  "note": "traje is often the verb (I brought)",
+  "share": 0.5
+ },
+ "el encuentro": {
+  "rank": "demote",
+  "note": "encuentro is often the verb (I find)",
+  "share": 0.4
+ },
+ "la muestra": {
+  "rank": "demote",
+  "note": "muestra is often the verb mostrar",
+  "share": 0.3
+ },
+ "el partido": {
+  "rank": "demote",
+  "note": "partido is often the participle of partir",
+  "share": 0.5
+ },
+ "el pedido": {
+  "rank": "demote",
+  "note": "pedido is often the participle of pedir",
+  "share": 0.5
+ },
+ "la sal": {
+  "rank": "demote",
+  "note": "sal is often the imperative of salir",
+  "share": 0.5
+ },
+ "la disculpa": {
+  "rank": "demote",
+  "note": "disculpa is often the imperative of disculpar",
+  "share": 0.5
+ },
+ "la pregunta": {
+  "rank": "demote",
+  "note": "pregunta is often the verb preguntar",
+  "share": 0.6
+ },
+ "el vestido": {
+  "rank": "demote",
+  "note": "vestido is often the participle of vestir",
+  "share": 0.6
+ },
+ "la llamada": {
+  "rank": "demote",
+  "note": "llamada is often the participle of llamar",
+  "share": 0.6
+ },
+ "el trato": {
+  "rank": "demote",
+  "note": "trato is often the verb tratar",
+  "share": 0.6
+ },
+ "el deseo": {
+  "rank": "demote",
+  "note": "deseo is often the verb (I wish)",
+  "share": 0.6
+ },
+ "el regalo": {
+  "rank": "demote",
+  "note": "regalo is often the verb (I give)",
+  "share": 0.7
+ },
+ "el sobre": {
+  "rank": "demote",
+  "note": "sobre is a preposition"
+ },
+ "el este": {
+  "rank": "demote",
+  "note": "este is a demonstrative"
+ },
+ "la buena": {
+  "rank": "exclude",
+  "note": "gloss is a layout/phrase note, unusable as a prompt"
+ },
+ "la mala": {
+  "rank": "exclude",
+  "note": "gloss is a layout/phrase note, unusable as a prompt"
+ },
+ "el buen": {
+  "rank": "exclude",
+  "note": "gloss is a layout/phrase note, unusable as a prompt"
+ },
+ "gran": {
+  "rank": "exclude",
+  "note": "gloss is a layout/phrase note, unusable as a prompt"
+ },
+ "el serio": {
+  "show": "serio",
+  "note": "adjective stored with a stray article in VOCAB; shown without it"
+ },
+ "el rico": {
+  "show": "rico",
+  "note": "adjective stored with a stray article in VOCAB; shown without it"
+ },
+ "el duro": {
+  "show": "duro",
+  "note": "adjective stored with a stray article in VOCAB; shown without it"
+ },
+ "la agradable": {
+  "show": "agradable",
+  "note": "adjective stored with a stray article in VOCAB; shown without it"
+ },
+ "el justo": {
+  "show": "justo",
+  "note": "adjective stored with a stray article in VOCAB; shown without it"
+ },
+ "el joven": {
+  "show": "joven",
+  "note": "adjective stored with a stray article in VOCAB; shown without it"
+ },
+ "el contento": {
+  "show": "contento",
+  "note": "adjective stored with a stray article in VOCAB; shown without it"
+ },
+ "el abierto": {
+  "show": "abierto",
+  "note": "adjective stored with a stray article in VOCAB; shown without it"
+ },
+ "el limpio": {
+  "show": "limpio",
+  "note": "adjective stored with a stray article in VOCAB; shown without it"
+ },
+ "el sucio": {
+  "show": "sucio",
+  "note": "adjective stored with a stray article in VOCAB; shown without it"
+ },
+ "el privado": {
+  "show": "privado",
+  "note": "adjective stored with a stray article in VOCAB; shown without it"
+ },
+ "el nacional": {
+  "show": "nacional",
+  "note": "adjective stored with a stray article in VOCAB; shown without it"
+ },
+ "el antiguo": {
+  "show": "antiguo",
+  "note": "adjective stored with a stray article in VOCAB; shown without it"
+ },
+ "el político": {
+  "show": "político",
+  "note": "adjective stored with a stray article in VOCAB; shown without it"
+ },
+ "el trabajador": {
+  "show": "trabajador",
+  "note": "adjective stored with a stray article in VOCAB; shown without it"
+ },
+ "el bravo": {
+  "show": "bravo",
+  "note": "adjective stored with a stray article in VOCAB; shown without it"
+ }
+}
