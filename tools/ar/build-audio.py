@@ -19,7 +19,7 @@ VOICES = {  # two voices per variety, picked by the text so a word always has th
 
 def name_for(item):
     h = hashlib.sha1((item['text'] + '|' + item['v']).encode('utf-8')).hexdigest()[:10]
-    return ('l-' if item['kind'] == 'letter' else item['v'][0] + '-') + h + '.mp3'
+    return ('l-' if item['kind'] == 'letter' else {'msa': 'm', 'lev': 's', 'egy': 'e'}[item['v']] + '-') + h + '.mp3'   # l- is precached
 
 async def one(item, sem, fails):
     fn = os.path.join(AUD, name_for(item))

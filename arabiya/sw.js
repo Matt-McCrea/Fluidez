@@ -10,7 +10,7 @@
  *
  * ASSETS must mirror every <script>/<link> in index.html plus the data files.
  * ========================================================================== */
-var CACHE_VERSION = 't75f94702';
+var CACHE_VERSION = 't55073bac';
 var CACHE_NAME = 'talaqa-' + CACHE_VERSION;
 
 /* The letter clips (audio/l-*.mp3) are read from data/audio.js at install and
