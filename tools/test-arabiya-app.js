@@ -97,14 +97,15 @@ const allText = () => STAGE.textContent;
 
 const store = {}, written = [], DOCL = {}, WINL = {}, HIST = [];
 const played = [];
-class AudioStub { constructor() { this.src = ''; } pause() {} play() { played.push(this.src); return Promise.resolve(); } }
+class AudioStub { constructor() { this.src = ''; } pause() {} setAttribute() {} play() { return Promise.resolve(); } }   // fetch records the clip
 /* clips are fetched from bundles and played through Web Audio: the fetch records the bundle */
 const fetchStub = url => { played.push(url); return Promise.resolve({ ok: true, arrayBuffer: () => Promise.resolve(new ArrayBuffer(8)) }); };
 class AudioCtxStub { constructor() { this.state = 'running'; this.destination = {}; } resume() {} createBuffer() { return {}; }
   createBufferSource() { return { connect() {}, start() {}, stop() {} }; } decodeAudioData(b, ok) { ok({ duration: 1 }); } }
 const ctx = {
   console, setTimeout, clearTimeout, Date, Math, JSON, Object, Array, String, Number, Promise, Error, RegExp, parseInt, parseFloat,
-  Audio: AudioStub, fetch: fetchStub, AudioContext: AudioCtxStub,
+  Audio: AudioStub, fetch: fetchStub, AudioContext: AudioCtxStub, Blob: class { constructor(p) { this.p = p; } },
+  URL: { createObjectURL: () => 'blob:x', revokeObjectURL() {} },
   localStorage: {
     getItem: k => (k in store ? store[k] : null),
     setItem: (k, v) => { written.push(k); store[k] = String(v); },
