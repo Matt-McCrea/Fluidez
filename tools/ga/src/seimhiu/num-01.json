@@ -1,0 +1,1292 @@
+[
+ {
+  "q": "Níl aon ___ (bainne) againn.",
+  "base": "bainne",
+  "r": "len",
+  "e": "We have no milk.",
+  "w": "Aon (any, one) takes séimhiú: bainne becomes bhainne.",
+  "wg": "Aon + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Níl aon ___ (peann) agam.",
+  "base": "peann",
+  "r": "len",
+  "e": "I have no pen.",
+  "w": "Aon (any, one) takes séimhiú: peann becomes pheann.",
+  "wg": "Aon + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "An bhfuil aon ___ (ceist) agat?",
+  "base": "ceist",
+  "r": "len",
+  "e": "Have you any question?",
+  "w": "Aon (any, one) takes séimhiú: ceist becomes cheist.",
+  "wg": "Aon + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Níl aon ___ (cara) aige anseo.",
+  "base": "cara",
+  "r": "len",
+  "e": "He has no friend here.",
+  "w": "Aon (any, one) takes séimhiú: cara becomes chara.",
+  "wg": "Aon + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Níl aon ___ (bus) ann inniu.",
+  "base": "bus",
+  "r": "len",
+  "e": "There is no bus today.",
+  "w": "Aon (any, one) takes séimhiú: bus becomes bhus.",
+  "wg": "Aon + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "An bhfuil aon ___ (caife) fágtha?",
+  "base": "caife",
+  "r": "len",
+  "e": "Is there any coffee left?",
+  "w": "Aon (any, one) takes séimhiú: caife becomes chaife.",
+  "wg": "Aon + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Níl aon ___ (fadhb) ann.",
+  "base": "fadhb",
+  "r": "len",
+  "e": "There is no problem.",
+  "w": "Aon (any, one) takes séimhiú: fadhb becomes fhadhb.",
+  "wg": "Aon + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Níl aon ___ (ciall) leis.",
+  "base": "ciall",
+  "r": "len",
+  "e": "There is no sense to it.",
+  "w": "Aon (any, one) takes séimhiú: ciall becomes chiall.",
+  "wg": "Aon + séimhiú.",
+  "b": "A2",
+  "t": "num"
+ },
+ {
+  "q": "Níor ith mé aon ___ (bricfeasta).",
+  "base": "bricfeasta",
+  "r": "len",
+  "e": "I ate no breakfast.",
+  "w": "Aon (any, one) takes séimhiú: bricfeasta becomes bhricfeasta.",
+  "wg": "Aon + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Ní raibh aon ___ (carr) ar an mbóthar.",
+  "base": "carr",
+  "r": "len",
+  "e": "There was no car on the road.",
+  "w": "Aon (any, one) takes séimhiú: carr becomes charr.",
+  "wg": "Aon + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá aon ___ (cat) amháin agam.",
+  "base": "cat",
+  "r": "len",
+  "e": "I have one cat.",
+  "w": "Aon (any, one) takes séimhiú: cat becomes chat.",
+  "wg": "Aon + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Cheannaigh mé aon ___ (cóta) amháin.",
+  "base": "cóta",
+  "r": "len",
+  "e": "I bought one coat.",
+  "w": "Aon (any, one) takes séimhiú: cóta becomes chóta.",
+  "wg": "Aon + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "An bhfuil aon ___ (post) agat?",
+  "base": "post",
+  "r": "len",
+  "e": "Have you any job?",
+  "w": "Aon (any, one) takes séimhiú: post becomes phost.",
+  "wg": "Aon + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Ní fhaca mé aon ___ (gadhar).",
+  "base": "gadhar",
+  "r": "len",
+  "e": "I didn't see any dog.",
+  "w": "Aon (any, one) takes séimhiú: gadhar becomes ghadhar.",
+  "wg": "Aon + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Níl aon ___ (pingin) agam.",
+  "base": "pingin",
+  "r": "len",
+  "e": "I haven't a penny.",
+  "w": "Aon (any, one) takes séimhiú: pingin becomes phingin.",
+  "wg": "Aon + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Níl aon ___ (cáis) sa chuisneoir.",
+  "base": "cáis",
+  "r": "len",
+  "e": "There is no cheese in the fridge.",
+  "w": "Aon (any, one) takes séimhiú: cáis becomes cháis.",
+  "wg": "Aon + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Níl aon ___ (duine) sa teach.",
+  "base": "duine",
+  "r": "none",
+  "e": "There is nobody in the house.",
+  "w": "Aon does not lenite d, t or s: duine stays duine.",
+  "wg": "Aon: ní shéimhítear d, t ná s.",
+  "b": "B1",
+  "t": "num"
+ },
+ {
+  "q": "Níl aon ___ (tuairim) agam.",
+  "base": "tuairim",
+  "r": "none",
+  "e": "I have no idea.",
+  "w": "Aon does not lenite d, t or s: tuairim stays tuairim.",
+  "wg": "Aon: ní shéimhítear d, t ná s.",
+  "b": "B1",
+  "t": "num"
+ },
+ {
+  "q": "An bhfuil aon ___ (tae) agat?",
+  "base": "tae",
+  "r": "none",
+  "e": "Have you any tea?",
+  "w": "Aon does not lenite d, t or s: tae stays tae.",
+  "wg": "Aon: ní shéimhítear d, t ná s.",
+  "b": "B1",
+  "t": "num"
+ },
+ {
+  "q": "Níl aon ___ (siúcra) againn.",
+  "base": "siúcra",
+  "r": "none",
+  "e": "We have no sugar.",
+  "w": "Aon does not lenite d, t or s: siúcra stays siúcra.",
+  "wg": "Aon: ní shéimhítear d, t ná s.",
+  "b": "B1",
+  "t": "num"
+ },
+ {
+  "q": "Níl aon ___ (seans) ann.",
+  "base": "seans",
+  "r": "none",
+  "e": "There is no chance.",
+  "w": "Aon does not lenite d, t or s: seans stays seans.",
+  "wg": "Aon: ní shéimhítear d, t ná s.",
+  "b": "B1",
+  "t": "num"
+ },
+ {
+  "q": "Níl aon ___ (deoch) fágtha.",
+  "base": "deoch",
+  "r": "none",
+  "e": "There is no drink left.",
+  "w": "Aon does not lenite d, t or s: deoch stays deoch.",
+  "wg": "Aon: ní shéimhítear d, t ná s.",
+  "b": "B1",
+  "t": "num"
+ },
+ {
+  "q": "Ní raibh aon ___ (duine) ag an doras.",
+  "base": "duine",
+  "r": "none",
+  "e": "There was nobody at the door.",
+  "w": "Aon does not lenite d, t or s: duine stays duine.",
+  "wg": "Aon: ní shéimhítear d, t ná s.",
+  "b": "B1",
+  "t": "num"
+ },
+ {
+  "q": "Níl aon ___ (dabht) faoi.",
+  "base": "dabht",
+  "r": "none",
+  "e": "There is no doubt about it.",
+  "w": "Aon does not lenite d, t or s: dabht stays dabht.",
+  "wg": "Aon: ní shéimhítear d, t ná s.",
+  "b": "B1",
+  "t": "num"
+ },
+ {
+  "q": "Níl aon ___ (salann) ann.",
+  "base": "salann",
+  "r": "none",
+  "e": "There is no salt in it.",
+  "w": "Aon does not lenite d, t or s: salann stays salann.",
+  "wg": "Aon: ní shéimhítear d, t ná s.",
+  "b": "B1",
+  "t": "num"
+ },
+ {
+  "q": "Níl aon ___ (teach) ar an tsráid seo.",
+  "base": "teach",
+  "r": "none",
+  "e": "There is no house on this street.",
+  "w": "Aon does not lenite d, t or s: teach stays teach.",
+  "wg": "Aon: ní shéimhítear d, t ná s.",
+  "b": "B1",
+  "t": "num"
+ },
+ {
+  "q": "Tá dhá ___ (cat) agam.",
+  "base": "cat",
+  "r": "len",
+  "e": "I have two cats.",
+  "w": "Dhá (two) takes séimhiú: cat becomes chat. The noun stays singular.",
+  "wg": "Dhá + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Cheannaigh mé dhá ___ (cupán) inné.",
+  "base": "cupán",
+  "r": "len",
+  "e": "I bought two cups yesterday.",
+  "w": "Dhá (two) takes séimhiú: cupán becomes chupán. The noun stays singular.",
+  "wg": "Dhá + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá dhá ___ (bord) sa chistin.",
+  "base": "bord",
+  "r": "len",
+  "e": "There are two tables in the kitchen.",
+  "w": "Dhá (two) takes séimhiú: bord becomes bhord. The noun stays singular.",
+  "wg": "Dhá + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá dhá ___ (pláta) ar an mbord.",
+  "base": "pláta",
+  "r": "len",
+  "e": "There are two plates on the table.",
+  "w": "Dhá (two) takes séimhiú: pláta becomes phláta. The noun stays singular.",
+  "wg": "Dhá + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá dhá ___ (gloine) sa chófra.",
+  "base": "gloine",
+  "r": "len",
+  "e": "There are two glasses in the press.",
+  "w": "Dhá (two) takes séimhiú: gloine becomes ghloine. The noun stays singular.",
+  "wg": "Dhá + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Ól dhá ___ (buidéal) uisce.",
+  "base": "buidéal",
+  "r": "len",
+  "e": "Drink two bottles of water.",
+  "w": "Dhá (two) takes séimhiú: buidéal becomes bhuidéal. The noun stays singular.",
+  "wg": "Dhá + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá dhá ___ (teach) acu.",
+  "base": "teach",
+  "r": "len",
+  "e": "They have two houses.",
+  "w": "Dhá (two) takes séimhiú: teach becomes theach. The noun stays singular.",
+  "wg": "Dhá + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá dhá ___ (doras) sa seomra.",
+  "base": "doras",
+  "r": "len",
+  "e": "There are two doors in the room.",
+  "w": "Dhá (two) takes séimhiú: doras becomes dhoras. The noun stays singular.",
+  "wg": "Dhá + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá dhá ___ (carr) ag mo thuismitheoirí.",
+  "base": "carr",
+  "r": "len",
+  "e": "My parents have two cars.",
+  "w": "Dhá (two) takes séimhiú: carr becomes charr. The noun stays singular.",
+  "wg": "Dhá + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá dhá ___ (cóta) ar an gcathaoir.",
+  "base": "cóta",
+  "r": "len",
+  "e": "There are two coats on the chair.",
+  "w": "Dhá (two) takes séimhiú: cóta becomes chóta. The noun stays singular.",
+  "wg": "Dhá + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Thug sé dhá ___ (punt) dom.",
+  "base": "punt",
+  "r": "len",
+  "e": "He gave me two pounds.",
+  "w": "Dhá (two) takes séimhiú: punt becomes phunt. The noun stays singular.",
+  "wg": "Dhá + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá dhá ___ (ticéad) agam don cheolchoirm.",
+  "base": "ticéad",
+  "r": "len",
+  "e": "I have two tickets for the concert.",
+  "w": "Dhá (two) takes séimhiú: ticéad becomes thicéad. The noun stays singular.",
+  "wg": "Dhá + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá dhá ___ (fuinneog) sa seomra seo.",
+  "base": "fuinneog",
+  "r": "len",
+  "e": "There are two windows in this room.",
+  "w": "Dhá (two) takes séimhiú: fuinneog becomes fhuinneog. The noun stays singular.",
+  "wg": "Dhá + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá dhá ___ (cathaoir) sa ghairdín.",
+  "base": "cathaoir",
+  "r": "len",
+  "e": "There are two chairs in the garden.",
+  "w": "Dhá (two) takes séimhiú: cathaoir becomes chathaoir. The noun stays singular.",
+  "wg": "Dhá + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá dhá ___ (bó) sa pháirc.",
+  "base": "bó",
+  "r": "len",
+  "e": "There are two cows in the field.",
+  "w": "Dhá (two) takes séimhiú: bó becomes bhó. The noun stays singular.",
+  "wg": "Dhá + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá dhá ___ (cluas) ar an gcat.",
+  "base": "cluas",
+  "r": "len",
+  "e": "The cat has two ears.",
+  "w": "Dhá (two) takes séimhiú: cluas becomes chluas. The noun stays singular.",
+  "wg": "Dhá + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Bhí dhá ___ (bus) ag an stad.",
+  "base": "bus",
+  "r": "len",
+  "e": "There were two buses at the stop.",
+  "w": "Dhá (two) takes séimhiú: bus becomes bhus. The noun stays singular.",
+  "wg": "Dhá + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá dhá ___ (céad) duine anseo.",
+  "base": "céad",
+  "r": "len",
+  "e": "There are two hundred people here.",
+  "w": "Dhá (two) takes séimhiú: céad becomes chéad. The noun stays singular.",
+  "wg": "Dhá + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá dhá ___ (gúna) nua aici.",
+  "base": "gúna",
+  "r": "len",
+  "e": "She has two new dresses.",
+  "w": "Dhá (two) takes séimhiú: gúna becomes ghúna. The noun stays singular.",
+  "wg": "Dhá + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá dhá ___ (peann) i mo mhála.",
+  "base": "peann",
+  "r": "len",
+  "e": "There are two pens in my bag.",
+  "w": "Dhá (two) takes séimhiú: peann becomes pheann. The noun stays singular.",
+  "wg": "Dhá + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá trí ___ (cat) ag Áine.",
+  "base": "cat",
+  "r": "len",
+  "e": "Áine has three cats.",
+  "w": "Trí (three) takes séimhiú: cat becomes chat. The noun stays singular.",
+  "wg": "Trí + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Cheannaigh sí trí ___ (pionta) bainne ar maidin.",
+  "base": "pionta",
+  "r": "len",
+  "e": "She bought three pints of milk this morning.",
+  "w": "Trí (three) takes séimhiú: pionta becomes phionta. The noun stays singular.",
+  "wg": "Trí + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá trí ___ (bord) sa seomra.",
+  "base": "bord",
+  "r": "len",
+  "e": "There are three tables in the room.",
+  "w": "Trí (three) takes séimhiú: bord becomes bhord. The noun stays singular.",
+  "wg": "Trí + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá trí ___ (cupán) ar an mbord.",
+  "base": "cupán",
+  "r": "len",
+  "e": "There are three cups on the table.",
+  "w": "Trí (three) takes séimhiú: cupán becomes chupán. The noun stays singular.",
+  "wg": "Trí + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Bhí trí ___ (capall) sa pháirc.",
+  "base": "capall",
+  "r": "len",
+  "e": "There were three horses in the field.",
+  "w": "Trí (three) takes séimhiú: capall becomes chapall. The noun stays singular.",
+  "wg": "Trí + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá trí ___ (cearc) againn.",
+  "base": "cearc",
+  "r": "len",
+  "e": "We have three hens.",
+  "w": "Trí (three) takes séimhiú: cearc becomes chearc. The noun stays singular.",
+  "wg": "Trí + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá trí ___ (teach) ar an mbóthar seo.",
+  "base": "teach",
+  "r": "len",
+  "e": "There are three houses on this road.",
+  "w": "Trí (three) takes séimhiú: teach becomes theach. The noun stays singular.",
+  "wg": "Trí + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Thug sí trí ___ (punt) dó.",
+  "base": "punt",
+  "r": "len",
+  "e": "She gave him three pounds.",
+  "w": "Trí (three) takes séimhiú: punt becomes phunt. The noun stays singular.",
+  "wg": "Trí + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá trí ___ (céad) bó ar an bhfeirm.",
+  "base": "céad",
+  "r": "len",
+  "e": "There are three hundred cows on the farm.",
+  "w": "Trí (three) takes séimhiú: céad becomes chéad. The noun stays singular.",
+  "wg": "Trí + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Ith trí ___ (práta).",
+  "base": "práta",
+  "r": "len",
+  "e": "Eat three potatoes.",
+  "w": "Trí (three) takes séimhiú: práta becomes phráta. The noun stays singular.",
+  "wg": "Trí + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá trí ___ (bosca) sa charr.",
+  "base": "bosca",
+  "r": "len",
+  "e": "There are three boxes in the car.",
+  "w": "Trí (three) takes séimhiú: bosca becomes bhosca. The noun stays singular.",
+  "wg": "Trí + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá trí ___ (gadhar) ag an bhfeirmeoir.",
+  "base": "gadhar",
+  "r": "len",
+  "e": "The farmer has three dogs.",
+  "w": "Trí (three) takes séimhiú: gadhar becomes ghadhar. The noun stays singular.",
+  "wg": "Trí + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Bhí trí ___ (cóisir) againn i mbliana.",
+  "base": "cóisir",
+  "r": "len",
+  "e": "We had three parties this year.",
+  "w": "Trí (three) takes séimhiú: cóisir becomes chóisir. The noun stays singular.",
+  "wg": "Trí + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá ceithre ___ (cathaoir) sa chistin.",
+  "base": "cathaoir",
+  "r": "len",
+  "e": "There are four chairs in the kitchen.",
+  "w": "Ceithre (four) takes séimhiú: cathaoir becomes chathaoir. The noun stays singular.",
+  "wg": "Ceithre + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá ceithre ___ (cos) ar an mbord.",
+  "base": "cos",
+  "r": "len",
+  "e": "The table has four legs.",
+  "w": "Ceithre (four) takes séimhiú: cos becomes chos. The noun stays singular.",
+  "wg": "Ceithre + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá ceithre ___ (bó) ag m'uncail.",
+  "base": "bó",
+  "r": "len",
+  "e": "My uncle has four cows.",
+  "w": "Ceithre (four) takes séimhiú: bó becomes bhó. The noun stays singular.",
+  "wg": "Ceithre + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Cheannaigh mé ceithre ___ (ticéad).",
+  "base": "ticéad",
+  "r": "len",
+  "e": "I bought four tickets.",
+  "w": "Ceithre (four) takes séimhiú: ticéad becomes thicéad. The noun stays singular.",
+  "wg": "Ceithre + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá ceithre ___ (fuinneog) sa teach.",
+  "base": "fuinneog",
+  "r": "len",
+  "e": "There are four windows in the house.",
+  "w": "Ceithre (four) takes séimhiú: fuinneog becomes fhuinneog. The noun stays singular.",
+  "wg": "Ceithre + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá ceithre ___ (cupán) sa chófra.",
+  "base": "cupán",
+  "r": "len",
+  "e": "There are four cups in the press.",
+  "w": "Ceithre (four) takes séimhiú: cupán becomes chupán. The noun stays singular.",
+  "wg": "Ceithre + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Bhí ceithre ___ (carr) sa charrchlós.",
+  "base": "carr",
+  "r": "len",
+  "e": "There were four cars in the car park.",
+  "w": "Ceithre (four) takes séimhiú: carr becomes charr. The noun stays singular.",
+  "wg": "Ceithre + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá ceithre ___ (punt) i mo phóca.",
+  "base": "punt",
+  "r": "len",
+  "e": "There are four pounds in my pocket.",
+  "w": "Ceithre (four) takes séimhiú: punt becomes phunt. The noun stays singular.",
+  "wg": "Ceithre + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá ceithre ___ (pláta) salach sa doirteal.",
+  "base": "pláta",
+  "r": "len",
+  "e": "There are four dirty plates in the sink.",
+  "w": "Ceithre (four) takes séimhiú: pláta becomes phláta. The noun stays singular.",
+  "wg": "Ceithre + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá ceithre ___ (céad) dalta sa scoil.",
+  "base": "céad",
+  "r": "len",
+  "e": "There are four hundred pupils in the school.",
+  "w": "Ceithre (four) takes séimhiú: céad becomes chéad. The noun stays singular.",
+  "wg": "Ceithre + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá cúig ___ (punt) agam.",
+  "base": "punt",
+  "r": "len",
+  "e": "I have five pounds.",
+  "w": "Cúig (five) takes séimhiú: punt becomes phunt. The noun stays singular.",
+  "wg": "Cúig + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá cúig ___ (cupán) ar an mbord.",
+  "base": "cupán",
+  "r": "len",
+  "e": "There are five cups on the table.",
+  "w": "Cúig (five) takes séimhiú: cupán becomes chupán. The noun stays singular.",
+  "wg": "Cúig + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Bhí cúig ___ (bus) déanach inniu.",
+  "base": "bus",
+  "r": "len",
+  "e": "Five buses were late today.",
+  "w": "Cúig (five) takes séimhiú: bus becomes bhus. The noun stays singular.",
+  "wg": "Cúig + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá cúig ___ (cat) ag mo sheanmháthair.",
+  "base": "cat",
+  "r": "len",
+  "e": "My grandmother has five cats.",
+  "w": "Cúig (five) takes séimhiú: cat becomes chat. The noun stays singular.",
+  "wg": "Cúig + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Cheannaigh sé cúig ___ (buidéal) fíona.",
+  "base": "buidéal",
+  "r": "len",
+  "e": "He bought five bottles of wine.",
+  "w": "Cúig (five) takes séimhiú: buidéal becomes bhuidéal. The noun stays singular.",
+  "wg": "Cúig + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá cúig ___ (teach) sa bhaile beag.",
+  "base": "teach",
+  "r": "len",
+  "e": "There are five houses in the little village.",
+  "w": "Cúig (five) takes séimhiú: teach becomes theach. The noun stays singular.",
+  "wg": "Cúig + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá cúig ___ (céad) leabhar sa leabharlann.",
+  "base": "céad",
+  "r": "len",
+  "e": "There are five hundred books in the library.",
+  "w": "Cúig (five) takes séimhiú: céad becomes chéad. The noun stays singular.",
+  "wg": "Cúig + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá cúig ___ (cearc) sa ghairdín.",
+  "base": "cearc",
+  "r": "len",
+  "e": "There are five hens in the garden.",
+  "w": "Cúig (five) takes séimhiú: cearc becomes chearc. The noun stays singular.",
+  "wg": "Cúig + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá cúig ___ (pionta) bainne sa chuisneoir.",
+  "base": "pionta",
+  "r": "len",
+  "e": "There are five pints of milk in the fridge.",
+  "w": "Cúig (five) takes séimhiú: pionta becomes phionta. The noun stays singular.",
+  "wg": "Cúig + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá cúig ___ (gloine) ar an mbord.",
+  "base": "gloine",
+  "r": "len",
+  "e": "There are five glasses on the table.",
+  "w": "Cúig (five) takes séimhiú: gloine becomes ghloine. The noun stays singular.",
+  "wg": "Cúig + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá sé ___ (cathaoir) sa seomra.",
+  "base": "cathaoir",
+  "r": "len",
+  "e": "There are six chairs in the room.",
+  "w": "Sé (six) takes séimhiú: cathaoir becomes chathaoir. The noun stays singular.",
+  "wg": "Sé + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá sé ___ (capall) ar an bhfeirm.",
+  "base": "capall",
+  "r": "len",
+  "e": "There are six horses on the farm.",
+  "w": "Sé (six) takes séimhiú: capall becomes chapall. The noun stays singular.",
+  "wg": "Sé + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Cheannaigh mé sé ___ (pionta) bainne.",
+  "base": "pionta",
+  "r": "len",
+  "e": "I bought six pints of milk.",
+  "w": "Sé (six) takes séimhiú: pionta becomes phionta. The noun stays singular.",
+  "wg": "Sé + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá sé ___ (cupán) sa chófra.",
+  "base": "cupán",
+  "r": "len",
+  "e": "There are six cups in the press.",
+  "w": "Sé (six) takes séimhiú: cupán becomes chupán. The noun stays singular.",
+  "wg": "Sé + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá sé ___ (teach) nua ar an tsráid.",
+  "base": "teach",
+  "r": "len",
+  "e": "There are six new houses on the street.",
+  "w": "Sé (six) takes séimhiú: teach becomes theach. The noun stays singular.",
+  "wg": "Sé + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá sé ___ (punt) ar an mbord.",
+  "base": "punt",
+  "r": "len",
+  "e": "There are six pounds on the table.",
+  "w": "Sé (six) takes séimhiú: punt becomes phunt. The noun stays singular.",
+  "wg": "Sé + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Bhí sé ___ (cluiche) againn an mhí seo.",
+  "base": "cluiche",
+  "r": "len",
+  "e": "We had six matches this month.",
+  "w": "Sé (six) takes séimhiú: cluiche becomes chluiche. The noun stays singular.",
+  "wg": "Sé + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá sé ___ (céad) duine ag an gcluiche.",
+  "base": "céad",
+  "r": "len",
+  "e": "There are six hundred people at the match.",
+  "w": "Sé (six) takes séimhiú: céad becomes chéad. The noun stays singular.",
+  "wg": "Sé + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá sé ___ (bosca) sa gharáiste.",
+  "base": "bosca",
+  "r": "len",
+  "e": "There are six boxes in the garage.",
+  "w": "Sé (six) takes séimhiú: bosca becomes bhosca. The noun stays singular.",
+  "wg": "Sé + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá sé ___ (fuinneog) sa chistin.",
+  "base": "fuinneog",
+  "r": "len",
+  "e": "There are six windows in the kitchen.",
+  "w": "Sé (six) takes séimhiú: fuinneog becomes fhuinneog. The noun stays singular.",
+  "wg": "Sé + séimhiú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá seacht ___ (cat) ag an mbean sin.",
+  "base": "cat",
+  "r": "ecl",
+  "e": "That woman has seven cats.",
+  "w": "Seacht (seven) takes urú: cat becomes gcat. The noun stays singular.",
+  "wg": "Seacht + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá seacht ___ (bord) sa bhialann.",
+  "base": "bord",
+  "r": "ecl",
+  "e": "There are seven tables in the restaurant.",
+  "w": "Seacht (seven) takes urú: bord becomes mbord. The noun stays singular.",
+  "wg": "Seacht + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá seacht ___ (doras) sa teach.",
+  "base": "doras",
+  "r": "ecl",
+  "e": "There are seven doors in the house.",
+  "w": "Seacht (seven) takes urú: doras becomes ndoras. The noun stays singular.",
+  "wg": "Seacht + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Bhí seacht ___ (bó) sa pháirc.",
+  "base": "bó",
+  "r": "ecl",
+  "e": "There were seven cows in the field.",
+  "w": "Seacht (seven) takes urú: bó becomes mbó. The noun stays singular.",
+  "wg": "Seacht + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Cheannaigh mé seacht ___ (ticéad).",
+  "base": "ticéad",
+  "r": "ecl",
+  "e": "I bought seven tickets.",
+  "w": "Seacht (seven) takes urú: ticéad becomes dticéad. The noun stays singular.",
+  "wg": "Seacht + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá seacht ___ (cupán) ar an mbord.",
+  "base": "cupán",
+  "r": "ecl",
+  "e": "There are seven cups on the table.",
+  "w": "Seacht (seven) takes urú: cupán becomes gcupán. The noun stays singular.",
+  "wg": "Seacht + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá seacht ___ (céad) dalta sa scoil.",
+  "base": "céad",
+  "r": "ecl",
+  "e": "There are seven hundred pupils in the school.",
+  "w": "Seacht (seven) takes urú: céad becomes gcéad. The noun stays singular.",
+  "wg": "Seacht + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá seacht ___ (úll) sa mhála.",
+  "base": "úll",
+  "r": "ecl",
+  "e": "There are seven apples in the bag.",
+  "w": "Seacht (seven) takes urú: úll becomes n-úll. The noun stays singular.",
+  "wg": "Seacht + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá seacht ___ (euro) ar an mbord.",
+  "base": "euro",
+  "r": "ecl",
+  "e": "There are seven euro on the table.",
+  "w": "Seacht (seven) takes urú: euro becomes n-euro. The noun stays singular.",
+  "wg": "Seacht + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá seacht ___ (punt) agam.",
+  "base": "punt",
+  "r": "ecl",
+  "e": "I have seven pounds.",
+  "w": "Seacht (seven) takes urú: punt becomes bpunt. The noun stays singular.",
+  "wg": "Seacht + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá seacht ___ (fuinneog) sa seomra.",
+  "base": "fuinneog",
+  "r": "ecl",
+  "e": "There are seven windows in the room.",
+  "w": "Seacht (seven) takes urú: fuinneog becomes bhfuinneog. The noun stays singular.",
+  "wg": "Seacht + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá ocht ___ (cathaoir) sa chistin.",
+  "base": "cathaoir",
+  "r": "ecl",
+  "e": "There are eight chairs in the kitchen.",
+  "w": "Ocht (eight) takes urú: cathaoir becomes gcathaoir. The noun stays singular.",
+  "wg": "Ocht + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá ocht ___ (cat) sa teach sin.",
+  "base": "cat",
+  "r": "ecl",
+  "e": "There are eight cats in that house.",
+  "w": "Ocht (eight) takes urú: cat becomes gcat. The noun stays singular.",
+  "wg": "Ocht + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Bhí ocht ___ (carr) sa charrchlós.",
+  "base": "carr",
+  "r": "ecl",
+  "e": "There were eight cars in the car park.",
+  "w": "Ocht (eight) takes urú: carr becomes gcarr. The noun stays singular.",
+  "wg": "Ocht + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá ocht ___ (capall) ag an bhfeirmeoir.",
+  "base": "capall",
+  "r": "ecl",
+  "e": "The farmer has eight horses.",
+  "w": "Ocht (eight) takes urú: capall becomes gcapall. The noun stays singular.",
+  "wg": "Ocht + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá ocht ___ (oráiste) sa bhosca.",
+  "base": "oráiste",
+  "r": "ecl",
+  "e": "There are eight oranges in the box.",
+  "w": "Ocht (eight) takes urú: oráiste becomes n-oráiste. The noun stays singular.",
+  "wg": "Ocht + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Cheannaigh sí ocht ___ (pláta) nua.",
+  "base": "pláta",
+  "r": "ecl",
+  "e": "She bought eight new plates.",
+  "w": "Ocht (eight) takes urú: pláta becomes bpláta. The noun stays singular.",
+  "wg": "Ocht + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá ocht ___ (céad) duine sa bhaile.",
+  "base": "céad",
+  "r": "ecl",
+  "e": "There are eight hundred people in the town.",
+  "w": "Ocht (eight) takes urú: céad becomes gcéad. The noun stays singular.",
+  "wg": "Ocht + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá ocht ___ (euro) sa sparán.",
+  "base": "euro",
+  "r": "ecl",
+  "e": "There are eight euro in the purse.",
+  "w": "Ocht (eight) takes urú: euro becomes n-euro. The noun stays singular.",
+  "wg": "Ocht + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá ocht ___ (teach) ar an tsráid.",
+  "base": "teach",
+  "r": "ecl",
+  "e": "There are eight houses on the street.",
+  "w": "Ocht (eight) takes urú: teach becomes dteach. The noun stays singular.",
+  "wg": "Ocht + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá naoi ___ (bó) ar an bhfeirm.",
+  "base": "bó",
+  "r": "ecl",
+  "e": "There are nine cows on the farm.",
+  "w": "Naoi (nine) takes urú: bó becomes mbó. The noun stays singular.",
+  "wg": "Naoi + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá naoi ___ (cupán) sa doirteal.",
+  "base": "cupán",
+  "r": "ecl",
+  "e": "There are nine cups in the sink.",
+  "w": "Naoi (nine) takes urú: cupán becomes gcupán. The noun stays singular.",
+  "wg": "Naoi + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá naoi ___ (pláta) ar an mbord.",
+  "base": "pláta",
+  "r": "ecl",
+  "e": "There are nine plates on the table.",
+  "w": "Naoi (nine) takes urú: pláta becomes bpláta. The noun stays singular.",
+  "wg": "Naoi + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Bhí naoi ___ (bus) ag an stáisiún.",
+  "base": "bus",
+  "r": "ecl",
+  "e": "There were nine buses at the station.",
+  "w": "Naoi (nine) takes urú: bus becomes mbus. The noun stays singular.",
+  "wg": "Naoi + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá naoi ___ (éan) sa chrann.",
+  "base": "éan",
+  "r": "ecl",
+  "e": "There are nine birds in the tree.",
+  "w": "Naoi (nine) takes urú: éan becomes n-éan. The noun stays singular.",
+  "wg": "Naoi + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá naoi ___ (gadhar) aige.",
+  "base": "gadhar",
+  "r": "ecl",
+  "e": "He has nine dogs.",
+  "w": "Naoi (nine) takes urú: gadhar becomes ngadhar. The noun stays singular.",
+  "wg": "Naoi + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá naoi ___ (céad) euro sa bhanc.",
+  "base": "céad",
+  "r": "ecl",
+  "e": "There are nine hundred euro in the bank.",
+  "w": "Naoi (nine) takes urú: céad becomes gcéad. The noun stays singular.",
+  "wg": "Naoi + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá naoi ___ (ticéad) fágtha.",
+  "base": "ticéad",
+  "r": "ecl",
+  "e": "There are nine tickets left.",
+  "w": "Naoi (nine) takes urú: ticéad becomes dticéad. The noun stays singular.",
+  "wg": "Naoi + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá deich ___ (punt) agam.",
+  "base": "punt",
+  "r": "ecl",
+  "e": "I have ten pounds.",
+  "w": "Deich (ten) takes urú: punt becomes bpunt. The noun stays singular.",
+  "wg": "Deich + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá deich ___ (bord) sa seomra ranga.",
+  "base": "bord",
+  "r": "ecl",
+  "e": "There are ten tables in the classroom.",
+  "w": "Deich (ten) takes urú: bord becomes mbord. The noun stays singular.",
+  "wg": "Deich + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá deich ___ (fuinneog) sa teach mór.",
+  "base": "fuinneog",
+  "r": "ecl",
+  "e": "There are ten windows in the big house.",
+  "w": "Deich (ten) takes urú: fuinneog becomes bhfuinneog. The noun stays singular.",
+  "wg": "Deich + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá deich ___ (cearc) againn.",
+  "base": "cearc",
+  "r": "ecl",
+  "e": "We have ten hens.",
+  "w": "Deich (ten) takes urú: cearc becomes gcearc. The noun stays singular.",
+  "wg": "Deich + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Cheannaigh mé deich ___ (buidéal) uisce.",
+  "base": "buidéal",
+  "r": "ecl",
+  "e": "I bought ten bottles of water.",
+  "w": "Deich (ten) takes urú: buidéal becomes mbuidéal. The noun stays singular.",
+  "wg": "Deich + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá deich ___ (cathaoir) sa halla.",
+  "base": "cathaoir",
+  "r": "ecl",
+  "e": "There are ten chairs in the hall.",
+  "w": "Deich (ten) takes urú: cathaoir becomes gcathaoir. The noun stays singular.",
+  "wg": "Deich + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Cosnaíonn an ticéad deich ___ (euro).",
+  "base": "euro",
+  "r": "ecl",
+  "e": "The ticket costs ten euro.",
+  "w": "Deich (ten) takes urú: euro becomes n-euro. The noun stays singular.",
+  "wg": "Deich + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá deich ___ (teach) sa bhaile beag.",
+  "base": "teach",
+  "r": "ecl",
+  "e": "There are ten houses in the village.",
+  "w": "Deich (ten) takes urú: teach becomes dteach. The noun stays singular.",
+  "wg": "Deich + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá deich ___ (úll) sa chiseán.",
+  "base": "úll",
+  "r": "ecl",
+  "e": "There are ten apples in the basket.",
+  "w": "Deich (ten) takes urú: úll becomes n-úll. The noun stays singular.",
+  "wg": "Deich + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Bhí deich ___ (cupán) tae ar an mbord.",
+  "base": "cupán",
+  "r": "ecl",
+  "e": "There were ten cups of tea on the table.",
+  "w": "Deich (ten) takes urú: cupán becomes gcupán. The noun stays singular.",
+  "wg": "Deich + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá deich ___ (asal) sa pháirc.",
+  "base": "asal",
+  "r": "ecl",
+  "e": "There are ten donkeys in the field.",
+  "w": "Deich (ten) takes urú: asal becomes n-asal. The noun stays singular.",
+  "wg": "Deich + urú.",
+  "b": "A1",
+  "t": "num"
+ },
+ {
+  "q": "Tá seacht ___ (ubh) sa bhosca.",
+  "base": "ubh",
+  "r": "ecl",
+  "e": "There are seven eggs in the box.",
+  "w": "Seacht (seven) takes urú: ubh becomes n-ubh. The noun stays singular.",
+  "wg": "Seacht + urú.",
+  "b": "A1",
+  "t": "num"
+ }
+]

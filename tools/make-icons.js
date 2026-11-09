@@ -4,6 +4,7 @@
  * colour, which is exactly what the Fluidez icon is.
  *
  *   node tools/make-icons.js            write juegos/icons/*.png
+ *   node tools/make-icons.js --target gaeilge   write gaeilge/icons/*.png
  *   node tools/make-icons.js --list     show a few emoji the system font has
  *
  * WHY IT IS GENERATED. The arcade first shipped wearing the app's wave, so two
@@ -36,15 +37,28 @@
 'use strict';
 const fs = require('fs'), path = require('path'), zlib = require('zlib');
 const ROOT = path.join(__dirname, '..');
-const OUT = path.join(ROOT, 'juegos', 'icons');
+/* --target <name> picks the app: `juegos` (the default) or `gaeilge`
+ * (Líofa: a shamrock on dark green). */
+const targetAt = process.argv.indexOf('--target');
+const TARGET = targetAt === -1 ? 'juegos' : process.argv[targetAt + 1];
+const OUT = path.join(ROOT, TARGET, 'icons');
 const FONT = '/System/Library/Fonts/Apple Color Emoji.ttc';
 
 /* ---- the bits you change ------------------------------------------------- */
-const ICON = {
-  emoji: '🔥',
-  bg: [226, 106, 26],           // flat orange, the way Fluidez sits on flat teal
-  inset: 0.66                   // share of the tile the emoji fills
+const ICONS = {
+  juegos: {
+    emoji: '🔥',
+    bg: [226, 106, 26],         // flat orange, the way Fluidez sits on flat teal
+    inset: 0.66                 // share of the tile the emoji fills
+  },
+  gaeilge: {
+    emoji: '☘️',
+    bg: [15, 61, 46],           // flat dark green
+    inset: 0.66
+  }
 };
+if (!ICONS[TARGET]) { console.error('make-icons: unknown --target ' + TARGET + ' (juegos or gaeilge)'); process.exit(1); }
+const ICON = ICONS[TARGET];
 const SIZES = [
   { file: 'icon-192.png', size: 192 },
   { file: 'icon-512.png', size: 512 },
@@ -228,4 +242,4 @@ SIZES.forEach(s => {
   console.log('  ' + path.relative(ROOT, file) + '  ' + s.size + '×' + s.size +
               '  ' + Math.round(fs.statSync(file).size / 1024) + ' KB');
 });
-console.log('\nRun `node tools/bump-cache.js` so installed copies fetch them.');
+console.log('\nRun `node tools/bump-cache.js` so installed copies fetch them' + (TARGET === 'juegos' ? '.' : ' (and bump CACHE_VERSION in ' + TARGET + '/sw.js by hand).'));

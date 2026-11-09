@@ -1,0 +1,1217 @@
+[
+ {
+  "q": "___ múinteoir mé.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "I'm a teacher.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ dochtúir thú.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "You're a doctor.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ garda é.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "He's a guard.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ feirmeoir í.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "She's a farmer.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ siopadóir mé.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "I'm a shopkeeper.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ cócaire thú.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "You're a cook.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ altra é.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "He's a nurse.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ innealtóir í.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "She's an engineer.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ dalta mé.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "I'm a pupil.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ ceoltóir thú.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "You're a musician.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ tiománaí bus é.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "He's a bus driver.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ mac léinn í.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "She's a student.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ fiaclóir mé.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "I'm a dentist.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ píolóta thú.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "You're a pilot.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ scríbhneoir é.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "He's a writer.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ múinteoir maith mé.",
+  "a": "Ní",
+  "o": [
+   "Ní",
+   "Níl",
+   "Tá",
+   "Bhí"
+  ],
+  "e": "I'm not a good teacher.",
+  "w": "Not + a noun: ní, the negative of is.",
+  "wg": "Ní: diúltach na copaile.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ dochtúir maith é.",
+  "a": "Ní",
+  "o": [
+   "Ní",
+   "Níl",
+   "Tá",
+   "Bhí"
+  ],
+  "e": "He's not a good doctor.",
+  "w": "Not + a noun: ní, the negative of is.",
+  "wg": "Ní: diúltach na copaile.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ garda maith í.",
+  "a": "Ní",
+  "o": [
+   "Ní",
+   "Níl",
+   "Tá",
+   "Bhí"
+  ],
+  "e": "She's not a good guard.",
+  "w": "Not + a noun: ní, the negative of is.",
+  "wg": "Ní: diúltach na copaile.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ dalta maith thú.",
+  "a": "Ní",
+  "o": [
+   "Ní",
+   "Níl",
+   "Tá",
+   "Bhí"
+  ],
+  "e": "You're not a good pupil.",
+  "w": "Not + a noun: ní, the negative of is.",
+  "wg": "Ní: diúltach na copaile.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ feirmeoir maith mé.",
+  "a": "Ní",
+  "o": [
+   "Ní",
+   "Níl",
+   "Tá",
+   "Bhí"
+  ],
+  "e": "I'm not a good farmer.",
+  "w": "Not + a noun: ní, the negative of is.",
+  "wg": "Ní: diúltach na copaile.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ cócaire maith é.",
+  "a": "Ní",
+  "o": [
+   "Ní",
+   "Níl",
+   "Tá",
+   "Bhí"
+  ],
+  "e": "He's not a good cook.",
+  "w": "Not + a noun: ní, the negative of is.",
+  "wg": "Ní: diúltach na copaile.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ ceoltóir maith í.",
+  "a": "Ní",
+  "o": [
+   "Ní",
+   "Níl",
+   "Tá",
+   "Bhí"
+  ],
+  "e": "She's not a good musician.",
+  "w": "Not + a noun: ní, the negative of is.",
+  "wg": "Ní: diúltach na copaile.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ múinteoirí muid.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "We're teachers.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ dochtúirí iad.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "They're doctors.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ daltaí sibh.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "You're all pupils.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ gardaí iad.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "They're guards.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ ceoltóirí muid.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "We're musicians.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ feirmeoirí iad.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "They're farmers.",
+  "w": "A job or what someone is, as a noun: is.",
+  "wg": "Ainmfhocal: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ Éireannach mé.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "I'm Irish.",
+  "w": "Where you are from, as a noun: is.",
+  "wg": "Náisiúntacht: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ Sasanach é.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "He's English.",
+  "w": "Where you are from, as a noun: is.",
+  "wg": "Náisiúntacht: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ Francach í.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "She's French.",
+  "w": "Where you are from, as a noun: is.",
+  "wg": "Náisiúntacht: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ Albanach thú.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "You're Scottish.",
+  "w": "Where you are from, as a noun: is.",
+  "wg": "Náisiúntacht: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ Meiriceánach é.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "He's American.",
+  "w": "Where you are from, as a noun: is.",
+  "wg": "Náisiúntacht: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ Spáinneach í.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "She's Spanish.",
+  "w": "Where you are from, as a noun: is.",
+  "wg": "Náisiúntacht: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ Gearmánach mé.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "I'm German.",
+  "w": "Where you are from, as a noun: is.",
+  "wg": "Náisiúntacht: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ Polannach í.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "She's Polish.",
+  "w": "Where you are from, as a noun: is.",
+  "wg": "Náisiúntacht: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ Éireannaigh muid.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "We're Irish.",
+  "w": "Where you are from, as a noun: is.",
+  "wg": "Náisiúntacht: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ Meiriceánaigh iad.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "They're American.",
+  "w": "Where you are from, as a noun: is.",
+  "wg": "Náisiúntacht: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ Francaigh sibh.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "You're all French.",
+  "w": "Where you are from, as a noun: is.",
+  "wg": "Náisiúntacht: is.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ mise Seán.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "I'm Seán.",
+  "w": "Saying who you are: is mise.",
+  "wg": "Is mise: cé thú féin.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ mise Máire.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "I'm Máire.",
+  "w": "Saying who you are: is mise.",
+  "wg": "Is mise: cé thú féin.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ mise an múinteoir nua.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "I'm the new teacher.",
+  "w": "Saying who you are: is mise.",
+  "wg": "Is mise: cé thú féin.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ í seo mo mháthair.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "This is my mother.",
+  "w": "Introducing someone: is í seo, is é seo.",
+  "wg": "Is é seo, is í seo.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ é seo m'athair.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "This is my father.",
+  "w": "Introducing someone: is í seo, is é seo.",
+  "wg": "Is é seo, is í seo.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ é seo mo theach.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "This is my house.",
+  "w": "This is X: is é seo.",
+  "wg": "Is é seo.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ iad seo mo pháistí.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "These are my children.",
+  "w": "These are X: is iad seo.",
+  "wg": "Is iad seo.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ é sin an bus go Gaillimh.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "That's the bus to Galway.",
+  "w": "That is X: is é sin.",
+  "wg": "Is é sin.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ é Seán mo dheartháir.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "Seán is my brother.",
+  "w": "X is Y, two nouns: is é.",
+  "wg": "Dhá ainmfhocal: is é.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ í Áine mo chara.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "Áine is my friend.",
+  "w": "X is Y, two nouns: is í.",
+  "wg": "Dhá ainmfhocal: is í.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ cathair mhór í Corcaigh.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "Cork is a big city.",
+  "w": "X is a Y: is + noun.",
+  "wg": "Is + ainmfhocal.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ tír álainn í Éire.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "Ireland is a beautiful country.",
+  "w": "X is a Y: is + noun.",
+  "wg": "Is + ainmfhocal.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ teanga dheas í an Ghaeilge.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "Irish is a nice language.",
+  "w": "X is a Y: is + noun.",
+  "wg": "Is + ainmfhocal.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ duine deas é.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "He's a nice person.",
+  "w": "A kind of person, a noun: is.",
+  "wg": "Is + ainmfhocal.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ cailín cliste í.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "She's a clever girl.",
+  "w": "A kind of person, a noun: is.",
+  "wg": "Is + ainmfhocal.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ buachaill maith é.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "He's a good boy.",
+  "w": "A kind of person, a noun: is.",
+  "wg": "Is + ainmfhocal.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ lá breá é.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "It's a fine day.",
+  "w": "It is a day, a noun: is.",
+  "wg": "Is + ainmfhocal.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ scéal maith é sin.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "That's a good story.",
+  "w": "A noun: is.",
+  "wg": "Is + ainmfhocal.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ as Corcaigh mé.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "I'm from Cork.",
+  "w": "Where you come from: is as.",
+  "wg": "Is as: d'áit dhúchais.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ as Gaillimh í.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "She's from Galway.",
+  "w": "Where you come from: is as.",
+  "wg": "Is as: d'áit dhúchais.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ as Meiriceá iad.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "They're from America.",
+  "w": "Where you come from: is as.",
+  "wg": "Is as: d'áit dhúchais.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ as Baile Átha Cliath é.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "He's from Dublin.",
+  "w": "Where you come from: is as.",
+  "wg": "Is as: d'áit dhúchais.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ liomsa an mála sin.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "That bag is mine.",
+  "w": "Owning: is liom.",
+  "wg": "Úinéireacht: is liom.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ leatsa an cóta seo.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "This coat is yours.",
+  "w": "Owning: is le.",
+  "wg": "Úinéireacht: is le.",
+  "b": "A1",
+  "t": "is"
+ },
+ {
+  "q": "___ maith liom tae.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "I like tea.",
+  "w": "Liking: is maith liom.",
+  "wg": "Is maith liom.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ breá léi an fharraige.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "She loves the sea.",
+  "w": "Loving: is breá le.",
+  "wg": "Is breá le.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ fearr liom caife.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "I prefer coffee.",
+  "w": "Preferring: is fearr le.",
+  "wg": "Is fearr le.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ féidir liom snámh.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "I can swim.",
+  "w": "Can: is féidir le.",
+  "wg": "Is féidir le.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ ainmhí é an madra.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "The dog is an animal.",
+  "w": "X is a Y: is + noun.",
+  "wg": "Is + ainmfhocal.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ deoch fhuar í an liomanáid.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "Lemonade is a cold drink.",
+  "w": "X is a Y: is + noun.",
+  "wg": "Is + ainmfhocal.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ fear mór é a athair.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "His father is a big man.",
+  "w": "A kind of person, a noun: is.",
+  "wg": "Is + ainmfhocal.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ cuma liom.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "I don't mind.",
+  "w": "Is cuma liom: I don't mind.",
+  "wg": "Is cuma liom.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ peileadóir maith é Seán.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "Seán is a good footballer.",
+  "w": "A kind of person, a noun: is.",
+  "wg": "Is + ainmfhocal.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ amhránaí iontach í.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "She's a great singer.",
+  "w": "A kind of person, a noun: is.",
+  "wg": "Is + ainmfhocal.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ mise do mhúinteoir nua.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "I'm your new teacher.",
+  "w": "Saying who you are: is mise.",
+  "wg": "Is mise: cé thú féin.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ í Máire an duine is sine.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "Máire is the oldest.",
+  "w": "X is the Y: is í.",
+  "wg": "Is í.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ é seo an seomra ranga.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "This is the classroom.",
+  "w": "This is X: is é seo.",
+  "wg": "Is é seo.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ cara liom í.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "She's a friend of mine.",
+  "w": "A friend, a noun: is.",
+  "wg": "Is cara liom í.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ deartháir liom é.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "He's a brother of mine.",
+  "w": "A brother, a noun: is.",
+  "wg": "Is + ainmfhocal.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ oíche fhuar í.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "It's a cold night.",
+  "w": "It is a night, a noun: is.",
+  "wg": "Is + ainmfhocal.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ bean dheas í.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Beidh",
+   "Níl"
+  ],
+  "e": "She's a nice woman.",
+  "w": "A kind of person, a noun: is.",
+  "wg": "Is + ainmfhocal.",
+  "b": "A2",
+  "t": "is"
+ },
+ {
+  "q": "___ fear grinn é.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "He's a funny man.",
+  "w": "A kind of person, a noun: is.",
+  "wg": "Is + ainmfhocal.",
+  "b": "A2",
+  "t": "is"
+ }
+]

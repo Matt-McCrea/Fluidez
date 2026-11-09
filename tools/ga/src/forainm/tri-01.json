@@ -1,0 +1,65 @@
+[
+ {
+  "q": "Chuaigh an fuacht ___ (trí + muid).",
+  "prep": "trí",
+  "p": "muid",
+  "e": "The cold went right through us.",
+  "w": "Through someone or something: trí + muid = trínn.",
+  "wg": "Trí dhuine nó trí rud: trí + muid = trínn.",
+  "b": "B2"
+ },
+ {
+  "q": "Chuaigh an fuacht ___ (trí + sibh).",
+  "prep": "trí",
+  "p": "sibh",
+  "e": "The cold went right through you all.",
+  "w": "Through someone or something: trí + sibh = tríbh.",
+  "wg": "Trí dhuine nó trí rud: trí + sibh = tríbh.",
+  "b": "B2"
+ },
+ {
+  "q": "Chuaigh an fuacht ___ (trí + iad).",
+  "prep": "trí",
+  "p": "siad",
+  "e": "The cold went right through them.",
+  "w": "Through someone or something: trí + iad = tríothu.",
+  "wg": "Trí dhuine nó trí rud: trí + iad = tríothu.",
+  "b": "B2"
+ },
+ {
+  "q": "Chuaigh an fuacht ___ (trí + mé).",
+  "prep": "trí",
+  "p": "me",
+  "e": "The cold went right through me.",
+  "w": "Through someone or something: trí + mé = tríom.",
+  "wg": "Trí dhuine nó trí rud: trí + mé = tríom.",
+  "b": "B2"
+ },
+ {
+  "q": "Chuaigh an fuacht ___ (trí + tú).",
+  "prep": "trí",
+  "p": "tu",
+  "e": "The cold went right through you.",
+  "w": "Through someone or something: trí + tú = tríot.",
+  "wg": "Trí dhuine nó trí rud: trí + tú = tríot.",
+  "b": "B2"
+ },
+ {
+  "q": "Chuaigh an solas ___ (trí + é).",
+  "prep": "trí",
+  "p": "se",
+  "e": "The light went through it.",
+  "w": "Through someone or something: trí + é = tríd.",
+  "wg": "Trí dhuine nó trí rud: trí + é = tríd.",
+  "b": "B2"
+ },
+ {
+  "q": "Chuaigh an solas ___ (trí + í).",
+  "prep": "trí",
+  "p": "si",
+  "e": "The light went through it.",
+  "w": "Through someone or something: trí + í = tríthi.",
+  "wg": "Trí dhuine nó trí rud: trí + í = tríthi.",
+  "b": "B2"
+ }
+]

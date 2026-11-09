@@ -1,0 +1,1262 @@
+[
+ {
+  "q": "___ mé tuirseach anois.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "I'm tired now.",
+  "w": "How someone is, an adjective: tá.",
+  "wg": "Aidiacht: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ sí sásta leis an obair.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "She's happy with the work.",
+  "w": "How someone is, an adjective: tá.",
+  "wg": "Aidiacht: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ sé tinn inniu.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "He's sick today.",
+  "w": "How someone is, an adjective: tá.",
+  "wg": "Aidiacht: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ tú déanach arís.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "You're late again.",
+  "w": "How someone is, an adjective: tá.",
+  "wg": "Aidiacht: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ siad gnóthach anois.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "They're busy now.",
+  "w": "How someone is, an adjective: tá.",
+  "wg": "Aidiacht: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ mé réidh.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "I'm ready.",
+  "w": "How someone is, an adjective: tá.",
+  "wg": "Aidiacht: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ an tae te.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "The tea is hot.",
+  "w": "How someone is, an adjective: tá.",
+  "wg": "Aidiacht: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ an seomra glan anois.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "The room is clean now.",
+  "w": "How someone is, an adjective: tá.",
+  "wg": "Aidiacht: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ an bia go hálainn.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "The food is lovely.",
+  "w": "How someone is, an adjective: tá.",
+  "wg": "Aidiacht: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ mé go maith, go raibh maith agat.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "I'm well, thank you.",
+  "w": "How someone is, an adjective: tá.",
+  "wg": "Aidiacht: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ an siopa dúnta.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "The shop is closed.",
+  "w": "How someone is, an adjective: tá.",
+  "wg": "Aidiacht: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ an doras oscailte.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "The door is open.",
+  "w": "How someone is, an adjective: tá.",
+  "wg": "Aidiacht: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ mo mháthair ceart go leor.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "My mother is all right.",
+  "w": "How someone is, an adjective: tá.",
+  "wg": "Aidiacht: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ an leabhar seo suimiúil.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "This book is interesting.",
+  "w": "How someone is, an adjective: tá.",
+  "wg": "Aidiacht: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ an fhuinneog briste.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "The window is broken.",
+  "w": "How someone is, an adjective: tá.",
+  "wg": "Aidiacht: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ mé sa bhaile.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "I'm at home.",
+  "w": "Where someone is: tá.",
+  "wg": "Áit: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ sé sa chistin.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "He's in the kitchen.",
+  "w": "Where someone is: tá.",
+  "wg": "Áit: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ sí ar scoil.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "She's at school.",
+  "w": "Where someone is: tá.",
+  "wg": "Áit: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ siad i nGaillimh.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "They're in Galway.",
+  "w": "Where someone is: tá.",
+  "wg": "Áit: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ muid ar an mbus.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "We're on the bus.",
+  "w": "Where someone is: tá.",
+  "wg": "Áit: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ an cat faoin mbord.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "The cat is under the table.",
+  "w": "Where someone is: tá.",
+  "wg": "Áit: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ na heochracha ar an mbord.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "The keys are on the table.",
+  "w": "Where someone is: tá.",
+  "wg": "Áit: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ an stáisiún in aice leis an mbanc.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "The station is beside the bank.",
+  "w": "Where someone is: tá.",
+  "wg": "Áit: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ m'athair ag an obair.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "My father is at work.",
+  "w": "Where someone is: tá.",
+  "wg": "Áit: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ an bainne sa chuisneoir.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "The milk is in the fridge.",
+  "w": "Where someone is: tá.",
+  "wg": "Áit: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ ocras orm.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "I'm hungry.",
+  "w": "A feeling on you: tá ... orm.",
+  "wg": "Mothúchán: tá ... orm.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ tart air.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "He's thirsty.",
+  "w": "A feeling on you: tá ... orm.",
+  "wg": "Mothúchán: tá ... orm.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ áthas orainn.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "We're happy.",
+  "w": "A feeling on you: tá ... orm.",
+  "wg": "Mothúchán: tá ... orm.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ brón uirthi.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "She's sad.",
+  "w": "A feeling on you: tá ... orm.",
+  "wg": "Mothúchán: tá ... orm.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ eagla orthu.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "They're afraid.",
+  "w": "A feeling on you: tá ... orm.",
+  "wg": "Mothúchán: tá ... orm.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ slaghdán orm.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "I have a cold.",
+  "w": "A feeling on you: tá ... orm.",
+  "wg": "Mothúchán: tá ... orm.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ deifir orainn.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "We're in a hurry.",
+  "w": "A feeling on you: tá ... orm.",
+  "wg": "Mothúchán: tá ... orm.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ sí ag obair.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "She's working.",
+  "w": "Doing something now: tá + ag + verbal noun.",
+  "wg": "Tá + ag + ainm briathartha.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ siad ag ithe.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "They're eating.",
+  "w": "Doing something now: tá + ag + verbal noun.",
+  "wg": "Tá + ag + ainm briathartha.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ mé ag foghlaim Gaeilge.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "I'm learning Irish.",
+  "w": "Doing something now: tá + ag + verbal noun.",
+  "wg": "Tá + ag + ainm briathartha.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ sé ag léamh an nuachtáin.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "He's reading the newspaper.",
+  "w": "Doing something now: tá + ag + verbal noun.",
+  "wg": "Tá + ag + ainm briathartha.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ na páistí ag imirt peile.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "The children are playing football.",
+  "w": "Doing something now: tá + ag + verbal noun.",
+  "wg": "Tá + ag + ainm briathartha.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ muid ag fanacht leis an mbus.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "We're waiting for the bus.",
+  "w": "Doing something now: tá + ag + verbal noun.",
+  "wg": "Tá + ag + ainm briathartha.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ tú ag caint go tapa.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "You're talking fast.",
+  "w": "Doing something now: tá + ag + verbal noun.",
+  "wg": "Tá + ag + ainm briathartha.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ sí ag ól caife.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "She's drinking coffee.",
+  "w": "Doing something now: tá + ag + verbal noun.",
+  "wg": "Tá + ag + ainm briathartha.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ sé ag cur báistí.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "It's raining.",
+  "w": "The weather: tá.",
+  "wg": "An aimsir: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ sé fuar inniu.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "It's cold today.",
+  "w": "The weather: tá.",
+  "wg": "An aimsir: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ an lá go hálainn.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "The day is beautiful.",
+  "w": "The weather: tá.",
+  "wg": "An aimsir: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ sé grianmhar anois.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "It's sunny now.",
+  "w": "The weather: tá.",
+  "wg": "An aimsir: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ an aimsir go dona.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "The weather is bad.",
+  "w": "The weather: tá.",
+  "wg": "An aimsir: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ carr nua agam.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "I have a new car.",
+  "w": "Having: tá ... ag.",
+  "wg": "Seilbh: tá ... agam.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ beirt pháistí acu.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "They have two children.",
+  "w": "Having: tá ... ag.",
+  "wg": "Seilbh: tá ... agam.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ madra aici.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "She has a dog.",
+  "w": "Having: tá ... ag.",
+  "wg": "Seilbh: tá ... agam.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ an cupán ar an mbord.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "The cup is on the table.",
+  "w": "Where someone is: tá.",
+  "wg": "Áit: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ mé an-sásta inniu.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "I'm very happy today.",
+  "w": "How someone is, an adjective: tá.",
+  "wg": "Aidiacht: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ an leanbh ina chodladh.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "The baby is asleep.",
+  "w": "How someone is, an adjective: tá.",
+  "wg": "Aidiacht: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ sé a seacht a chlog.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "It's seven o'clock.",
+  "w": "The time: tá sé.",
+  "wg": "An t-am: tá sé.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ an Ghaeilge deacair.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "Irish is difficult.",
+  "w": "How someone is, an adjective: tá.",
+  "wg": "Aidiacht: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ siad ag dul abhaile.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "They're going home.",
+  "w": "Doing something now: tá + ag + verbal noun.",
+  "wg": "Tá + ag + ainm briathartha.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ an bus ag teacht.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "The bus is coming.",
+  "w": "Doing something now: tá + ag + verbal noun.",
+  "wg": "Tá + ag + ainm briathartha.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ sé ag éirí dorcha.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "It's getting dark.",
+  "w": "The weather: tá.",
+  "wg": "An aimsir: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ tuirse an domhain orm.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "I'm exhausted.",
+  "w": "A feeling on you: tá ... orm.",
+  "wg": "Mothúchán: tá ... orm.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ mo dheartháir sa Spáinn.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "My brother is in Spain.",
+  "w": "Where someone is: tá.",
+  "wg": "Áit: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ sibh go hiontach.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "You're all great.",
+  "w": "How someone is, an adjective: tá.",
+  "wg": "Aidiacht: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ fáilte romhat.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "You're welcome.",
+  "w": "A welcome before you: tá fáilte romhat.",
+  "wg": "Tá fáilte romhat.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ an dinnéar réidh.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "Dinner is ready.",
+  "w": "How someone is, an adjective: tá.",
+  "wg": "Aidiacht: tá.",
+  "b": "A1",
+  "t": "ta"
+ },
+ {
+  "q": "___ mé tuirseach ar chor ar bith.",
+  "a": "Níl",
+  "o": [
+   "Níl",
+   "Ní",
+   "Is",
+   "Ba"
+  ],
+  "e": "I'm not tired at all.",
+  "w": "Not, with an adjective, place, feeling or doing: níl, never ní.",
+  "wg": "Níl: diúltach an bhriathair bí.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ sé sa bhaile anois.",
+  "a": "Níl",
+  "o": [
+   "Níl",
+   "Ní",
+   "Is",
+   "Ba"
+  ],
+  "e": "He's not at home now.",
+  "w": "Not, with an adjective, place, feeling or doing: níl, never ní.",
+  "wg": "Níl: diúltach an bhriathair bí.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ ocras ar bith orm.",
+  "a": "Níl",
+  "o": [
+   "Níl",
+   "Ní",
+   "Is",
+   "Ba"
+  ],
+  "e": "I'm not hungry at all.",
+  "w": "Not, with an adjective, place, feeling or doing: níl, never ní.",
+  "wg": "Níl: diúltach an bhriathair bí.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ mé cinnte.",
+  "a": "Níl",
+  "o": [
+   "Níl",
+   "Ní",
+   "Is",
+   "Ba"
+  ],
+  "e": "I'm not sure.",
+  "w": "Not, with an adjective, place, feeling or doing: níl, never ní.",
+  "wg": "Níl: diúltach an bhriathair bí.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ a fhios agam.",
+  "a": "Níl",
+  "o": [
+   "Níl",
+   "Ní",
+   "Is",
+   "Ba"
+  ],
+  "e": "I don't know.",
+  "w": "Not, with an adjective, place, feeling or doing: níl, never ní.",
+  "wg": "Níl: diúltach an bhriathair bí.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ an siopa oscailte inniu.",
+  "a": "Níl",
+  "o": [
+   "Níl",
+   "Ní",
+   "Is",
+   "Ba"
+  ],
+  "e": "The shop isn't open today.",
+  "w": "Not, with an adjective, place, feeling or doing: níl, never ní.",
+  "wg": "Níl: diúltach an bhriathair bí.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ siad ag obair inniu.",
+  "a": "Níl",
+  "o": [
+   "Níl",
+   "Ní",
+   "Is",
+   "Ba"
+  ],
+  "e": "They're not working today.",
+  "w": "Not, with an adjective, place, feeling or doing: níl, never ní.",
+  "wg": "Níl: diúltach an bhriathair bí.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ airgead ar bith agam.",
+  "a": "Níl",
+  "o": [
+   "Níl",
+   "Ní",
+   "Is",
+   "Ba"
+  ],
+  "e": "I have no money at all.",
+  "w": "Not, with an adjective, place, feeling or doing: níl, never ní.",
+  "wg": "Níl: diúltach an bhriathair bí.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ sé ag cur báistí anois.",
+  "a": "Níl",
+  "o": [
+   "Níl",
+   "Ní",
+   "Is",
+   "Ba"
+  ],
+  "e": "It's not raining now.",
+  "w": "Not, with an adjective, place, feeling or doing: níl, never ní.",
+  "wg": "Níl: diúltach an bhriathair bí.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ an t-uisce te.",
+  "a": "Níl",
+  "o": [
+   "Níl",
+   "Ní",
+   "Is",
+   "Ba"
+  ],
+  "e": "The water isn't hot.",
+  "w": "Not, with an adjective, place, feeling or doing: níl, never ní.",
+  "wg": "Níl: diúltach an bhriathair bí.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ tú go maith?",
+  "a": "An bhfuil",
+  "o": [
+   "An bhfuil",
+   "An",
+   "Ar",
+   "Is"
+  ],
+  "e": "Are you well?",
+  "w": "A question with an adjective, place, feeling or doing: an bhfuil.",
+  "wg": "Ceist le bí: an bhfuil.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ sé sa bhaile?",
+  "a": "An bhfuil",
+  "o": [
+   "An bhfuil",
+   "An",
+   "Ar",
+   "Is"
+  ],
+  "e": "Is he at home?",
+  "w": "A question with an adjective, place, feeling or doing: an bhfuil.",
+  "wg": "Ceist le bí: an bhfuil.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ ocras ort?",
+  "a": "An bhfuil",
+  "o": [
+   "An bhfuil",
+   "An",
+   "Ar",
+   "Is"
+  ],
+  "e": "Are you hungry?",
+  "w": "A question with an adjective, place, feeling or doing: an bhfuil.",
+  "wg": "Ceist le bí: an bhfuil.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ siad ag teacht?",
+  "a": "An bhfuil",
+  "o": [
+   "An bhfuil",
+   "An",
+   "Ar",
+   "Is"
+  ],
+  "e": "Are they coming?",
+  "w": "A question with an adjective, place, feeling or doing: an bhfuil.",
+  "wg": "Ceist le bí: an bhfuil.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ an siopa oscailte?",
+  "a": "An bhfuil",
+  "o": [
+   "An bhfuil",
+   "An",
+   "Ar",
+   "Is"
+  ],
+  "e": "Is the shop open?",
+  "w": "A question with an adjective, place, feeling or doing: an bhfuil.",
+  "wg": "Ceist le bí: an bhfuil.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ peann agat?",
+  "a": "An bhfuil",
+  "o": [
+   "An bhfuil",
+   "An",
+   "Ar",
+   "Is"
+  ],
+  "e": "Do you have a pen?",
+  "w": "A question with an adjective, place, feeling or doing: an bhfuil.",
+  "wg": "Ceist le bí: an bhfuil.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ sé fuar amuigh?",
+  "a": "An bhfuil",
+  "o": [
+   "An bhfuil",
+   "An",
+   "Ar",
+   "Is"
+  ],
+  "e": "Is it cold outside?",
+  "w": "A question with an adjective, place, feeling or doing: an bhfuil.",
+  "wg": "Ceist le bí: an bhfuil.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ a fhios agat?",
+  "a": "An bhfuil",
+  "o": [
+   "An bhfuil",
+   "An",
+   "Ar",
+   "Is"
+  ],
+  "e": "Do you know?",
+  "w": "A question with an adjective, place, feeling or doing: an bhfuil.",
+  "wg": "Ceist le bí: an bhfuil.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ sibh réidh?",
+  "a": "An bhfuil",
+  "o": [
+   "An bhfuil",
+   "An",
+   "Ar",
+   "Is"
+  ],
+  "e": "Are you all ready?",
+  "w": "A question with an adjective, place, feeling or doing: an bhfuil.",
+  "wg": "Ceist le bí: an bhfuil.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ mé sa bhaile amárach.",
+  "a": "Beidh",
+  "o": [
+   "Beidh",
+   "Bhí",
+   "Is",
+   "Ba"
+  ],
+  "e": "I'll be at home tomorrow.",
+  "w": "Will be: beidh, the future of tá.",
+  "wg": "Beidh: an aimsir fháistineach.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ sé fuar anocht.",
+  "a": "Beidh",
+  "o": [
+   "Beidh",
+   "Bhí",
+   "Is",
+   "Ba"
+  ],
+  "e": "It'll be cold tonight.",
+  "w": "Will be: beidh, the future of tá.",
+  "wg": "Beidh: an aimsir fháistineach.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ siad anseo ar a sé.",
+  "a": "Beidh",
+  "o": [
+   "Beidh",
+   "Bhí",
+   "Is",
+   "Ba"
+  ],
+  "e": "They'll be here at six.",
+  "w": "Will be: beidh, the future of tá.",
+  "wg": "Beidh: an aimsir fháistineach.",
+  "b": "A2",
+  "t": "ta"
+ },
+ {
+  "q": "___ sí sásta leis sin amárach.",
+  "a": "Beidh",
+  "o": [
+   "Beidh",
+   "Bhí",
+   "Is",
+   "Ba"
+  ],
+  "e": "She'll be happy with that tomorrow.",
+  "w": "Will be: beidh, the future of tá.",
+  "wg": "Beidh: an aimsir fháistineach.",
+  "b": "A2",
+  "t": "ta"
+ }
+]

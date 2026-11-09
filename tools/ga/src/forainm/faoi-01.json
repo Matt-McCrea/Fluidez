@@ -1,0 +1,218 @@
+[
+ {
+  "q": "Bhí siad ag gáire ___ (faoi + í).",
+  "prep": "faoi",
+  "p": "si",
+  "e": "They were laughing at her.",
+  "w": "Laughing at someone is gáire faoi: faoi + í = fúithi.",
+  "wg": "Gáire faoi: faoi + í = fúithi.",
+  "b": "A2"
+ },
+ {
+  "q": "Bhí siad ag gáire ___ (faoi + muid).",
+  "prep": "faoi",
+  "p": "muid",
+  "e": "They were laughing at us.",
+  "w": "Laughing at someone is gáire faoi: faoi + muid = fúinn.",
+  "wg": "Gáire faoi: faoi + muid = fúinn.",
+  "b": "A2"
+ },
+ {
+  "q": "Bhí siad ag gáire ___ (faoi + sibh).",
+  "prep": "faoi",
+  "p": "sibh",
+  "e": "They were laughing at you all.",
+  "w": "Laughing at someone is gáire faoi: faoi + sibh = fúibh.",
+  "wg": "Gáire faoi: faoi + sibh = fúibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Bhí siad ag gáire ___ (faoi + mé).",
+  "prep": "faoi",
+  "p": "me",
+  "e": "They were laughing at me.",
+  "w": "Laughing at someone is gáire faoi: faoi + mé = fúm.",
+  "wg": "Gáire faoi: faoi + mé = fúm.",
+  "b": "A2"
+ },
+ {
+  "q": "Inis dom ___ (faoi + tú).",
+  "prep": "faoi",
+  "p": "tu",
+  "e": "Tell me about you.",
+  "w": "About someone: faoi + tú = fút.",
+  "wg": "Faoi dhuine: faoi + tú = fút.",
+  "b": "A2"
+ },
+ {
+  "q": "Inis dom ___ (faoi + é).",
+  "prep": "faoi",
+  "p": "se",
+  "e": "Tell me about him.",
+  "w": "About someone: faoi + é = faoi.",
+  "wg": "Faoi dhuine: faoi + é = faoi.",
+  "b": "A2"
+ },
+ {
+  "q": "Inis dom ___ (faoi + í).",
+  "prep": "faoi",
+  "p": "si",
+  "e": "Tell me about her.",
+  "w": "About someone: faoi + í = fúithi.",
+  "wg": "Faoi dhuine: faoi + í = fúithi.",
+  "b": "A2"
+ },
+ {
+  "q": "Inis dom ___ (faoi + muid).",
+  "prep": "faoi",
+  "p": "muid",
+  "e": "Tell me about us.",
+  "w": "About someone: faoi + muid = fúinn.",
+  "wg": "Faoi dhuine: faoi + muid = fúinn.",
+  "b": "A2"
+ },
+ {
+  "q": "Chuala mé a lán ___ (faoi + muid).",
+  "prep": "faoi",
+  "p": "muid",
+  "e": "I've heard a lot about us.",
+  "w": "About someone: faoi + muid = fúinn.",
+  "wg": "Faoi dhuine: faoi + muid = fúinn.",
+  "b": "A2"
+ },
+ {
+  "q": "Chuala mé a lán ___ (faoi + sibh).",
+  "prep": "faoi",
+  "p": "sibh",
+  "e": "I've heard a lot about you all.",
+  "w": "About someone: faoi + sibh = fúibh.",
+  "wg": "Faoi dhuine: faoi + sibh = fúibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Chuala mé a lán ___ (faoi + iad).",
+  "prep": "faoi",
+  "p": "siad",
+  "e": "I've heard a lot about them.",
+  "w": "About someone: faoi + iad = fúthu.",
+  "wg": "Faoi dhuine: faoi + iad = fúthu.",
+  "b": "A2"
+ },
+ {
+  "q": "Chuala mé a lán ___ (faoi + tú).",
+  "prep": "faoi",
+  "p": "tu",
+  "e": "I've heard a lot about you.",
+  "w": "About someone: faoi + tú = fút.",
+  "wg": "Faoi dhuine: faoi + tú = fút.",
+  "b": "A2"
+ },
+ {
+  "q": "Cad a cheapann tú ___ (faoi + mé)?",
+  "prep": "faoi",
+  "p": "me",
+  "e": "What do you think of me?",
+  "w": "About someone: faoi + mé = fúm.",
+  "wg": "Faoi dhuine: faoi + mé = fúm.",
+  "b": "A2"
+ },
+ {
+  "q": "Cad a cheapann tú ___ (faoi + é)?",
+  "prep": "faoi",
+  "p": "se",
+  "e": "What do you think of him?",
+  "w": "About someone: faoi + é = faoi.",
+  "wg": "Faoi dhuine: faoi + é = faoi.",
+  "b": "A2"
+ },
+ {
+  "q": "Cad a cheapann tú ___ (faoi + í)?",
+  "prep": "faoi",
+  "p": "si",
+  "e": "What do you think of her?",
+  "w": "About someone: faoi + í = fúithi.",
+  "wg": "Faoi dhuine: faoi + í = fúithi.",
+  "b": "A2"
+ },
+ {
+  "q": "Cad a cheapann tú ___ (faoi + muid)?",
+  "prep": "faoi",
+  "p": "muid",
+  "e": "What do you think of us?",
+  "w": "About someone: faoi + muid = fúinn.",
+  "wg": "Faoi dhuine: faoi + muid = fúinn.",
+  "b": "A2"
+ },
+ {
+  "q": "Bhí siad ag caint ___ (faoi + í) aréir.",
+  "prep": "faoi",
+  "p": "si",
+  "e": "They were talking about her last night.",
+  "w": "About someone: faoi + í = fúithi.",
+  "wg": "Faoi dhuine: faoi + í = fúithi.",
+  "b": "A2"
+ },
+ {
+  "q": "Bhí siad ag caint ___ (faoi + muid) aréir.",
+  "prep": "faoi",
+  "p": "muid",
+  "e": "They were talking about us last night.",
+  "w": "About someone: faoi + muid = fúinn.",
+  "wg": "Faoi dhuine: faoi + muid = fúinn.",
+  "b": "A2"
+ },
+ {
+  "q": "Bhí siad ag caint ___ (faoi + sibh) aréir.",
+  "prep": "faoi",
+  "p": "sibh",
+  "e": "They were talking about you all last night.",
+  "w": "About someone: faoi + sibh = fúibh.",
+  "wg": "Faoi dhuine: faoi + sibh = fúibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Bhí siad ag caint ___ (faoi + mé) aréir.",
+  "prep": "faoi",
+  "p": "me",
+  "e": "They were talking about me last night.",
+  "w": "About someone: faoi + mé = fúm.",
+  "wg": "Faoi dhuine: faoi + mé = fúm.",
+  "b": "A2"
+ },
+ {
+  "q": "Ná bí buartha ___ (faoi + mé).",
+  "prep": "faoi",
+  "p": "me",
+  "e": "Don't worry about me.",
+  "w": "About someone: faoi + mé = fúm.",
+  "wg": "Faoi dhuine: faoi + mé = fúm.",
+  "b": "A2"
+ },
+ {
+  "q": "Ná bí buartha ___ (faoi + é).",
+  "prep": "faoi",
+  "p": "se",
+  "e": "Don't worry about him.",
+  "w": "About someone: faoi + é = faoi.",
+  "wg": "Faoi dhuine: faoi + é = faoi.",
+  "b": "A2"
+ },
+ {
+  "q": "Ná bí buartha ___ (faoi + í).",
+  "prep": "faoi",
+  "p": "si",
+  "e": "Don't worry about her.",
+  "w": "About someone: faoi + í = fúithi.",
+  "wg": "Faoi dhuine: faoi + í = fúithi.",
+  "b": "A2"
+ },
+ {
+  "q": "Ná bí buartha ___ (faoi + muid).",
+  "prep": "faoi",
+  "p": "muid",
+  "e": "Don't worry about us.",
+  "w": "About someone: faoi + muid = fúinn.",
+  "wg": "Faoi dhuine: faoi + muid = fúinn.",
+  "b": "A2"
+ }
+]

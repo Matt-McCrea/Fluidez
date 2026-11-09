@@ -1,0 +1,326 @@
+[
+ {
+  "q": "Teastaíonn cupán caife ___ (ó + tú).",
+  "prep": "ó",
+  "p": "tu",
+  "e": "You want a cup of coffee.",
+  "w": "Wanting comes from you: ó + tú = uait.",
+  "wg": "Teastaíonn ó: ó + tú = uait.",
+  "b": "A2"
+ },
+ {
+  "q": "Teastaíonn cupán caife ___ (ó + é).",
+  "prep": "ó",
+  "p": "se",
+  "e": "He wants a cup of coffee.",
+  "w": "Wanting comes from you: ó + é = uaidh.",
+  "wg": "Teastaíonn ó: ó + é = uaidh.",
+  "b": "A2"
+ },
+ {
+  "q": "Teastaíonn cupán caife ___ (ó + í).",
+  "prep": "ó",
+  "p": "si",
+  "e": "She wants a cup of coffee.",
+  "w": "Wanting comes from you: ó + í = uaithi.",
+  "wg": "Teastaíonn ó: ó + í = uaithi.",
+  "b": "A2"
+ },
+ {
+  "q": "Teastaíonn cupán caife ___ (ó + muid).",
+  "prep": "ó",
+  "p": "muid",
+  "e": "We want a cup of coffee.",
+  "w": "Wanting comes from you: ó + muid = uainn.",
+  "wg": "Teastaíonn ó: ó + muid = uainn.",
+  "b": "A2"
+ },
+ {
+  "q": "Teastaíonn cupán caife ___ (ó + sibh).",
+  "prep": "ó",
+  "p": "sibh",
+  "e": "You all want a cup of coffee.",
+  "w": "Wanting comes from you: ó + sibh = uaibh.",
+  "wg": "Teastaíonn ó: ó + sibh = uaibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Cad atá ___ (ó + muid)?",
+  "prep": "ó",
+  "p": "muid",
+  "e": "What do we want?",
+  "w": "Wanting comes from you: ó + muid = uainn.",
+  "wg": "Teastaíonn ó: ó + muid = uainn.",
+  "b": "A2"
+ },
+ {
+  "q": "Cad atá ___ (ó + sibh)?",
+  "prep": "ó",
+  "p": "sibh",
+  "e": "What do you all want?",
+  "w": "Wanting comes from you: ó + sibh = uaibh.",
+  "wg": "Teastaíonn ó: ó + sibh = uaibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Cad atá ___ (ó + iad)?",
+  "prep": "ó",
+  "p": "siad",
+  "e": "What do they want?",
+  "w": "Wanting comes from you: ó + iad = uathu.",
+  "wg": "Teastaíonn ó: ó + iad = uathu.",
+  "b": "A2"
+ },
+ {
+  "q": "Cad atá ___ (ó + tú)?",
+  "prep": "ó",
+  "p": "tu",
+  "e": "What do you want?",
+  "w": "Wanting comes from you: ó + tú = uait.",
+  "wg": "Teastaíonn ó: ó + tú = uait.",
+  "b": "A2"
+ },
+ {
+  "q": "Cad atá ___ (ó + é)?",
+  "prep": "ó",
+  "p": "se",
+  "e": "What does he want?",
+  "w": "Wanting comes from you: ó + é = uaidh.",
+  "wg": "Teastaíonn ó: ó + é = uaidh.",
+  "b": "A2"
+ },
+ {
+  "q": "Teastaíonn cabhair ___ (ó + mé).",
+  "prep": "ó",
+  "p": "me",
+  "e": "I need help.",
+  "w": "Wanting comes from you: ó + mé = uaim.",
+  "wg": "Teastaíonn ó: ó + mé = uaim.",
+  "b": "A2"
+ },
+ {
+  "q": "Teastaíonn cabhair ___ (ó + tú).",
+  "prep": "ó",
+  "p": "tu",
+  "e": "You need help.",
+  "w": "Wanting comes from you: ó + tú = uait.",
+  "wg": "Teastaíonn ó: ó + tú = uait.",
+  "b": "A2"
+ },
+ {
+  "q": "Teastaíonn cabhair ___ (ó + é).",
+  "prep": "ó",
+  "p": "se",
+  "e": "He needs help.",
+  "w": "Wanting comes from you: ó + é = uaidh.",
+  "wg": "Teastaíonn ó: ó + é = uaidh.",
+  "b": "A2"
+ },
+ {
+  "q": "Teastaíonn cabhair ___ (ó + í).",
+  "prep": "ó",
+  "p": "si",
+  "e": "She needs help.",
+  "w": "Wanting comes from you: ó + í = uaithi.",
+  "wg": "Teastaíonn ó: ó + í = uaithi.",
+  "b": "A2"
+ },
+ {
+  "q": "Teastaíonn cabhair ___ (ó + muid).",
+  "prep": "ó",
+  "p": "muid",
+  "e": "We need help.",
+  "w": "Wanting comes from you: ó + muid = uainn.",
+  "wg": "Teastaíonn ó: ó + muid = uainn.",
+  "b": "A2"
+ },
+ {
+  "q": "Fuair mé litir ___ (ó + muid) inné.",
+  "prep": "ó",
+  "p": "muid",
+  "e": "I got a letter from us yesterday.",
+  "w": "From someone: ó + muid = uainn.",
+  "wg": "Ó dhuine: ó + muid = uainn.",
+  "b": "A2"
+ },
+ {
+  "q": "Fuair mé litir ___ (ó + sibh) inné.",
+  "prep": "ó",
+  "p": "sibh",
+  "e": "I got a letter from you all yesterday.",
+  "w": "From someone: ó + sibh = uaibh.",
+  "wg": "Ó dhuine: ó + sibh = uaibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Fuair mé litir ___ (ó + iad) inné.",
+  "prep": "ó",
+  "p": "siad",
+  "e": "I got a letter from them yesterday.",
+  "w": "From someone: ó + iad = uathu.",
+  "wg": "Ó dhuine: ó + iad = uathu.",
+  "b": "A2"
+ },
+ {
+  "q": "Fuair mé litir ___ (ó + tú) inné.",
+  "prep": "ó",
+  "p": "tu",
+  "e": "I got a letter from you yesterday.",
+  "w": "From someone: ó + tú = uait.",
+  "wg": "Ó dhuine: ó + tú = uait.",
+  "b": "A2"
+ },
+ {
+  "q": "Teastaíonn ___ (ó + iad) dul abhaile.",
+  "prep": "ó",
+  "p": "siad",
+  "e": "They want to go home.",
+  "w": "Wanting comes from you: ó + iad = uathu.",
+  "wg": "Teastaíonn ó: ó + iad = uathu.",
+  "b": "A2"
+ },
+ {
+  "q": "Teastaíonn ___ (ó + mé) dul abhaile.",
+  "prep": "ó",
+  "p": "me",
+  "e": "I want to go home.",
+  "w": "Wanting comes from you: ó + mé = uaim.",
+  "wg": "Teastaíonn ó: ó + mé = uaim.",
+  "b": "A2"
+ },
+ {
+  "q": "Teastaíonn ___ (ó + tú) dul abhaile.",
+  "prep": "ó",
+  "p": "tu",
+  "e": "You want to go home.",
+  "w": "Wanting comes from you: ó + tú = uait.",
+  "wg": "Teastaíonn ó: ó + tú = uait.",
+  "b": "A2"
+ },
+ {
+  "q": "Teastaíonn ___ (ó + é) dul abhaile.",
+  "prep": "ó",
+  "p": "se",
+  "e": "He wants to go home.",
+  "w": "Wanting comes from you: ó + é = uaidh.",
+  "wg": "Teastaíonn ó: ó + é = uaidh.",
+  "b": "A2"
+ },
+ {
+  "q": "Teastaíonn ___ (ó + í) dul abhaile.",
+  "prep": "ó",
+  "p": "si",
+  "e": "She wants to go home.",
+  "w": "Wanting comes from you: ó + í = uaithi.",
+  "wg": "Teastaíonn ó: ó + í = uaithi.",
+  "b": "A2"
+ },
+ {
+  "q": "Chuala mé an scéal ___ (ó + muid).",
+  "prep": "ó",
+  "p": "muid",
+  "e": "I heard the story from us.",
+  "w": "From someone: ó + muid = uainn.",
+  "wg": "Ó dhuine: ó + muid = uainn.",
+  "b": "A2"
+ },
+ {
+  "q": "Chuala mé an scéal ___ (ó + sibh).",
+  "prep": "ó",
+  "p": "sibh",
+  "e": "I heard the story from you all.",
+  "w": "From someone: ó + sibh = uaibh.",
+  "wg": "Ó dhuine: ó + sibh = uaibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Chuala mé an scéal ___ (ó + iad).",
+  "prep": "ó",
+  "p": "siad",
+  "e": "I heard the story from them.",
+  "w": "From someone: ó + iad = uathu.",
+  "wg": "Ó dhuine: ó + iad = uathu.",
+  "b": "A2"
+ },
+ {
+  "q": "Chuala mé an scéal ___ (ó + tú).",
+  "prep": "ó",
+  "p": "tu",
+  "e": "I heard the story from you.",
+  "w": "From someone: ó + tú = uait.",
+  "wg": "Ó dhuine: ó + tú = uait.",
+  "b": "A2"
+ },
+ {
+  "q": "An bhfuil aon rud eile ___ (ó + tú)?",
+  "prep": "ó",
+  "p": "tu",
+  "e": "Do you want anything else?",
+  "w": "Wanting comes from you: ó + tú = uait.",
+  "wg": "Teastaíonn ó: ó + tú = uait.",
+  "b": "A2"
+ },
+ {
+  "q": "An bhfuil aon rud eile ___ (ó + é)?",
+  "prep": "ó",
+  "p": "se",
+  "e": "Does he want anything else?",
+  "w": "Wanting comes from you: ó + é = uaidh.",
+  "wg": "Teastaíonn ó: ó + é = uaidh.",
+  "b": "A2"
+ },
+ {
+  "q": "An bhfuil aon rud eile ___ (ó + í)?",
+  "prep": "ó",
+  "p": "si",
+  "e": "Does she want anything else?",
+  "w": "Wanting comes from you: ó + í = uaithi.",
+  "wg": "Teastaíonn ó: ó + í = uaithi.",
+  "b": "A2"
+ },
+ {
+  "q": "An bhfuil aon rud eile ___ (ó + muid)?",
+  "prep": "ó",
+  "p": "muid",
+  "e": "Do we want anything else?",
+  "w": "Wanting comes from you: ó + muid = uainn.",
+  "wg": "Teastaíonn ó: ó + muid = uainn.",
+  "b": "A2"
+ },
+ {
+  "q": "Ní theastaíonn aon rud ___ (ó + tú).",
+  "prep": "ó",
+  "p": "tu",
+  "e": "You don't want anything.",
+  "w": "Wanting comes from you: ó + tú = uait.",
+  "wg": "Teastaíonn ó: ó + tú = uait.",
+  "b": "A2"
+ },
+ {
+  "q": "Ní theastaíonn aon rud ___ (ó + é).",
+  "prep": "ó",
+  "p": "se",
+  "e": "He doesn't want anything.",
+  "w": "Wanting comes from you: ó + é = uaidh.",
+  "wg": "Teastaíonn ó: ó + é = uaidh.",
+  "b": "A2"
+ },
+ {
+  "q": "Ní theastaíonn aon rud ___ (ó + í).",
+  "prep": "ó",
+  "p": "si",
+  "e": "She doesn't want anything.",
+  "w": "Wanting comes from you: ó + í = uaithi.",
+  "wg": "Teastaíonn ó: ó + í = uaithi.",
+  "b": "A2"
+ },
+ {
+  "q": "Ní theastaíonn aon rud ___ (ó + muid).",
+  "prep": "ó",
+  "p": "muid",
+  "e": "We don't want anything.",
+  "w": "Wanting comes from you: ó + muid = uainn.",
+  "wg": "Teastaíonn ó: ó + muid = uainn.",
+  "b": "A2"
+ }
+]

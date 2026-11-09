@@ -1,0 +1,2945 @@
+[
+ {
+  "q": "An múinteoir thú? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Are you a teacher? Yes, I am.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A1",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An múinteoir thú? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Are you a teacher? No, I'm not.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An dochtúir é? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Is he a doctor? No, he isn't.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An garda í? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Is she a guard? Yes, she is.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A1",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An dalta thú? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Are you a pupil? No, I'm not.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An dalta thú? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Are you a pupil? Yes, I am.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A1",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An Éireannach thú? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Are you Irish? Yes, I am.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A1",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An Sasanach é? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Is he English? No, he isn't.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An Francach í? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Is she French? Yes, she is.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A1",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An Francach í? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Is she French? No, she isn't.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An feirmeoir é d'athair? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Is your father a farmer? No, he isn't.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An altra í do mháthair? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Is your mother a nurse? Yes, she is.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A1",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An mac léinn thú? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Are you a student? No, I'm not.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An mac léinn thú? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Are you a student? Yes, I am.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A1",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An cócaire é Seán? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Is Seán a cook? Yes, he is.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A1",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An ceoltóir í Áine? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Is Áine a musician? No, she isn't.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An Albanach thú? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Are you Scottish? Yes, I am.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A1",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An Albanach thú? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Are you Scottish? No, I'm not.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An Meiriceánach é? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Is he American? No, he isn't.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An innealtóir í? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Is she an engineer? Yes, she is.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A1",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An siopadóir é? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Is he a shopkeeper? No, he isn't.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An siopadóir é? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Is he a shopkeeper? Yes, he is.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A1",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An daltaí iad? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Are they pupils? Yes, they are.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A2",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An múinteoirí sibh? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Are you all teachers? No, we aren't.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An Éireannaigh iad? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Are they Irish? Yes, they are.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A2",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An Éireannaigh iad? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Are they Irish? No, they aren't.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An cara leat é? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Is he a friend of yours? No, he isn't.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An deirfiúr leat í? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Is she a sister of yours? Yes, she is.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A2",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An scríbhneoir é? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Is he a writer? No, he isn't.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An scríbhneoir é? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Is he a writer? Yes, he is.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A2",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An Gearmánach í? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Is she German? Yes, she is.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A2",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An fiaclóir thú? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Are you a dentist? No, I'm not.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An tiománaí bus é? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Is he a bus driver? Yes, he is.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A2",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An tiománaí bus é? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Is he a bus driver? No, he isn't.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An píolóta í? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Is she a pilot? No, she isn't.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An Spáinneach thú? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Are you Spanish? Yes, I am.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A2",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An as Corcaigh thú? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Are you from Cork? No, I'm not.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An as Corcaigh thú? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Are you from Cork? Yes, I am.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A2",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An as Gaillimh é? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Is he from Galway? Yes, he is.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A2",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An as Meiriceá iad? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Are they from America? No, they aren't.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An buachaill maith é? ___ (yes)",
+  "pol": "yes",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Tá",
+   "Bhí",
+   "Ní hea"
+  ],
+  "e": "Is he a good boy? Yes, he is.",
+  "w": "An is question with a noun: yes is is ea.",
+  "wg": "Ceist leis an gcopail: is ea.",
+  "b": "A2",
+  "t": "cop",
+  "x": [
+   "Sea"
+  ]
+ },
+ {
+  "q": "An buachaill maith é? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Is he a good boy? No, he isn't.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An cathair mhór í Corcaigh? ___ (no)",
+  "pol": "no",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Níl",
+   "Ní",
+   "Is ea"
+  ],
+  "e": "Is Cork a big city? No, it isn't.",
+  "w": "An is question with a noun: no is ní hea.",
+  "wg": "Ceist leis an gcopail: ní hea.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An maith leat tae? ___ (yes)",
+  "pol": "yes",
+  "a": "Is maith",
+  "o": [
+   "Is maith",
+   "Ba mhaith",
+   "Tá",
+   "Ní maith"
+  ],
+  "e": "Do you like tea? Yes, I do.",
+  "w": "An maith le: answer with the adjective, is maith.",
+  "wg": "An maith leat? Is maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith leat caife? ___ (no)",
+  "pol": "no",
+  "a": "Ní maith",
+  "o": [
+   "Ní maith",
+   "Níor mhaith",
+   "Níl",
+   "Is maith"
+  ],
+  "e": "Do you like coffee? No, I don't.",
+  "w": "An maith le: no is ní maith.",
+  "wg": "An maith leat? Ní maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith leat caife? ___ (yes)",
+  "pol": "yes",
+  "a": "Is maith",
+  "o": [
+   "Is maith",
+   "Ba mhaith",
+   "Tá",
+   "Ní maith"
+  ],
+  "e": "Do you like coffee? Yes, I do.",
+  "w": "An maith le: answer with the adjective, is maith.",
+  "wg": "An maith leat? Is maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith leis peil? ___ (yes)",
+  "pol": "yes",
+  "a": "Is maith",
+  "o": [
+   "Is maith",
+   "Ba mhaith",
+   "Tá",
+   "Ní maith"
+  ],
+  "e": "Does he like football? Yes, he does.",
+  "w": "An maith le: answer with the adjective, is maith.",
+  "wg": "An maith leat? Is maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith léi an scoil? ___ (no)",
+  "pol": "no",
+  "a": "Ní maith",
+  "o": [
+   "Ní maith",
+   "Níor mhaith",
+   "Níl",
+   "Is maith"
+  ],
+  "e": "Does she like school? No, she doesn't.",
+  "w": "An maith le: no is ní maith.",
+  "wg": "An maith leat? Ní maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith libh an ceol seo? ___ (yes)",
+  "pol": "yes",
+  "a": "Is maith",
+  "o": [
+   "Is maith",
+   "Ba mhaith",
+   "Tá",
+   "Ní maith"
+  ],
+  "e": "Do you all like this music? Yes, we do.",
+  "w": "An maith le: answer with the adjective, is maith.",
+  "wg": "An maith leat? Is maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith leo an bia anseo? ___ (no)",
+  "pol": "no",
+  "a": "Ní maith",
+  "o": [
+   "Ní maith",
+   "Níor mhaith",
+   "Níl",
+   "Is maith"
+  ],
+  "e": "Do they like the food here? No, they don't.",
+  "w": "An maith le: no is ní maith.",
+  "wg": "An maith leat? Ní maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith leo an bia anseo? ___ (yes)",
+  "pol": "yes",
+  "a": "Is maith",
+  "o": [
+   "Is maith",
+   "Ba mhaith",
+   "Tá",
+   "Ní maith"
+  ],
+  "e": "Do they like the food here? Yes, they do.",
+  "w": "An maith le: answer with the adjective, is maith.",
+  "wg": "An maith leat? Is maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith leat seacláid? ___ (yes)",
+  "pol": "yes",
+  "a": "Is maith",
+  "o": [
+   "Is maith",
+   "Ba mhaith",
+   "Tá",
+   "Ní maith"
+  ],
+  "e": "Do you like chocolate? Yes, I do.",
+  "w": "An maith le: answer with the adjective, is maith.",
+  "wg": "An maith leat? Is maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith leat an Ghaeilge? ___ (no)",
+  "pol": "no",
+  "a": "Ní maith",
+  "o": [
+   "Ní maith",
+   "Níor mhaith",
+   "Níl",
+   "Is maith"
+  ],
+  "e": "Do you like Irish? No, I don't.",
+  "w": "An maith le: no is ní maith.",
+  "wg": "An maith leat? Ní maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith leis an madra? ___ (yes)",
+  "pol": "yes",
+  "a": "Is maith",
+  "o": [
+   "Is maith",
+   "Ba mhaith",
+   "Tá",
+   "Ní maith"
+  ],
+  "e": "Does he like the dog? Yes, he does.",
+  "w": "An maith le: answer with the adjective, is maith.",
+  "wg": "An maith leat? Is maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith léi bainne? ___ (no)",
+  "pol": "no",
+  "a": "Ní maith",
+  "o": [
+   "Ní maith",
+   "Níor mhaith",
+   "Níl",
+   "Is maith"
+  ],
+  "e": "Does she like milk? No, she doesn't.",
+  "w": "An maith le: no is ní maith.",
+  "wg": "An maith leat? Ní maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith léi bainne? ___ (yes)",
+  "pol": "yes",
+  "a": "Is maith",
+  "o": [
+   "Is maith",
+   "Ba mhaith",
+   "Tá",
+   "Ní maith"
+  ],
+  "e": "Does she like milk? Yes, she does.",
+  "w": "An maith le: answer with the adjective, is maith.",
+  "wg": "An maith leat? Is maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith leat do phost? ___ (yes)",
+  "pol": "yes",
+  "a": "Is maith",
+  "o": [
+   "Is maith",
+   "Ba mhaith",
+   "Tá",
+   "Ní maith"
+  ],
+  "e": "Do you like your job? Yes, I do.",
+  "w": "An maith le: answer with the adjective, is maith.",
+  "wg": "An maith leat? Is maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith libh an aimsir anseo? ___ (no)",
+  "pol": "no",
+  "a": "Ní maith",
+  "o": [
+   "Ní maith",
+   "Níor mhaith",
+   "Níl",
+   "Is maith"
+  ],
+  "e": "Do you all like the weather here? No, we don't.",
+  "w": "An maith le: no is ní maith.",
+  "wg": "An maith leat? Ní maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith leo snámh? ___ (yes)",
+  "pol": "yes",
+  "a": "Is maith",
+  "o": [
+   "Is maith",
+   "Ba mhaith",
+   "Tá",
+   "Ní maith"
+  ],
+  "e": "Do they like swimming? Yes, they do.",
+  "w": "An maith le: answer with the adjective, is maith.",
+  "wg": "An maith leat? Is maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith leat iasc? ___ (no)",
+  "pol": "no",
+  "a": "Ní maith",
+  "o": [
+   "Ní maith",
+   "Níor mhaith",
+   "Níl",
+   "Is maith"
+  ],
+  "e": "Do you like fish? No, I don't.",
+  "w": "An maith le: no is ní maith.",
+  "wg": "An maith leat? Ní maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith leat iasc? ___ (yes)",
+  "pol": "yes",
+  "a": "Is maith",
+  "o": [
+   "Is maith",
+   "Ba mhaith",
+   "Tá",
+   "Ní maith"
+  ],
+  "e": "Do you like fish? Yes, I do.",
+  "w": "An maith le: answer with the adjective, is maith.",
+  "wg": "An maith leat? Is maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith leat an scannán seo? ___ (yes)",
+  "pol": "yes",
+  "a": "Is maith",
+  "o": [
+   "Is maith",
+   "Ba mhaith",
+   "Tá",
+   "Ní maith"
+  ],
+  "e": "Do you like this film? Yes, I do.",
+  "w": "An maith le: answer with the adjective, is maith.",
+  "wg": "An maith leat? Is maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith leis an teach nua? ___ (no)",
+  "pol": "no",
+  "a": "Ní maith",
+  "o": [
+   "Ní maith",
+   "Níor mhaith",
+   "Níl",
+   "Is maith"
+  ],
+  "e": "Does he like the new house? No, he doesn't.",
+  "w": "An maith le: no is ní maith.",
+  "wg": "An maith leat? Ní maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith léi damhsa? ___ (yes)",
+  "pol": "yes",
+  "a": "Is maith",
+  "o": [
+   "Is maith",
+   "Ba mhaith",
+   "Tá",
+   "Ní maith"
+  ],
+  "e": "Does she like dancing? Yes, she does.",
+  "w": "An maith le: answer with the adjective, is maith.",
+  "wg": "An maith leat? Is maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith leat an samhradh? ___ (no)",
+  "pol": "no",
+  "a": "Ní maith",
+  "o": [
+   "Ní maith",
+   "Níor mhaith",
+   "Níl",
+   "Is maith"
+  ],
+  "e": "Do you like the summer? No, I don't.",
+  "w": "An maith le: no is ní maith.",
+  "wg": "An maith leat? Ní maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith leat an samhradh? ___ (yes)",
+  "pol": "yes",
+  "a": "Is maith",
+  "o": [
+   "Is maith",
+   "Ba mhaith",
+   "Tá",
+   "Ní maith"
+  ],
+  "e": "Do you like the summer? Yes, I do.",
+  "w": "An maith le: answer with the adjective, is maith.",
+  "wg": "An maith leat? Is maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith leat cáis? ___ (yes)",
+  "pol": "yes",
+  "a": "Is maith",
+  "o": [
+   "Is maith",
+   "Ba mhaith",
+   "Tá",
+   "Ní maith"
+  ],
+  "e": "Do you like cheese? Yes, I do.",
+  "w": "An maith le: answer with the adjective, is maith.",
+  "wg": "An maith leat? Is maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An maith libh an múinteoir nua? ___ (no)",
+  "pol": "no",
+  "a": "Ní maith",
+  "o": [
+   "Ní maith",
+   "Níor mhaith",
+   "Níl",
+   "Is maith"
+  ],
+  "e": "Do you all like the new teacher? No, we don't.",
+  "w": "An maith le: no is ní maith.",
+  "wg": "An maith leat? Ní maith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An breá leat an fharraige? ___ (yes)",
+  "pol": "yes",
+  "a": "Is breá",
+  "o": [
+   "Is breá",
+   "Ba bhreá",
+   "Tá",
+   "Ní breá"
+  ],
+  "e": "Do you love the sea? Yes, I do.",
+  "w": "An breá le: answer with the same word, is breá.",
+  "wg": "An breá leat? Is breá.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An breá leat ceol? ___ (yes)",
+  "pol": "yes",
+  "a": "Is breá",
+  "o": [
+   "Is breá",
+   "Ba bhreá",
+   "Tá",
+   "Ní breá"
+  ],
+  "e": "Do you love music? Yes, I do.",
+  "w": "An breá le: answer with the same word, is breá.",
+  "wg": "An breá leat? Is breá.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An breá leis an trá? ___ (yes)",
+  "pol": "yes",
+  "a": "Is breá",
+  "o": [
+   "Is breá",
+   "Ba bhreá",
+   "Tá",
+   "Ní breá"
+  ],
+  "e": "Does he love the beach? Yes, he does.",
+  "w": "An breá le: answer with the same word, is breá.",
+  "wg": "An breá leat? Is breá.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An breá léi an sneachta? ___ (yes)",
+  "pol": "yes",
+  "a": "Is breá",
+  "o": [
+   "Is breá",
+   "Ba bhreá",
+   "Tá",
+   "Ní breá"
+  ],
+  "e": "Does she love the snow? Yes, she does.",
+  "w": "An breá le: answer with the same word, is breá.",
+  "wg": "An breá leat? Is breá.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An breá leo an Nollaig? ___ (yes)",
+  "pol": "yes",
+  "a": "Is breá",
+  "o": [
+   "Is breá",
+   "Ba bhreá",
+   "Tá",
+   "Ní breá"
+  ],
+  "e": "Do they love Christmas? Yes, they do.",
+  "w": "An breá le: answer with the same word, is breá.",
+  "wg": "An breá leat? Is breá.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An breá libh an chathair? ___ (yes)",
+  "pol": "yes",
+  "a": "Is breá",
+  "o": [
+   "Is breá",
+   "Ba bhreá",
+   "Tá",
+   "Ní breá"
+  ],
+  "e": "Do you all love the city? Yes, we do.",
+  "w": "An breá le: answer with the same word, is breá.",
+  "wg": "An breá leat? Is breá.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An fearr leat tae ná caife? ___ (yes)",
+  "pol": "yes",
+  "a": "Is fearr",
+  "o": [
+   "Is fearr",
+   "B'fhearr",
+   "Tá",
+   "Ní fearr"
+  ],
+  "e": "Do you prefer tea to coffee? Yes, I do.",
+  "w": "An fearr le: answer with the same word, is fearr.",
+  "wg": "An fearr leat? Is fearr.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An fearr leis peil ná iománaíocht? ___ (yes)",
+  "pol": "yes",
+  "a": "Is fearr",
+  "o": [
+   "Is fearr",
+   "B'fhearr",
+   "Tá",
+   "Ní fearr"
+  ],
+  "e": "Does he prefer football to hurling? Yes, he does.",
+  "w": "An fearr le: answer with the same word, is fearr.",
+  "wg": "An fearr leat? Is fearr.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An fearr léi an samhradh ná an geimhreadh? ___ (yes)",
+  "pol": "yes",
+  "a": "Is fearr",
+  "o": [
+   "Is fearr",
+   "B'fhearr",
+   "Tá",
+   "Ní fearr"
+  ],
+  "e": "Does she prefer summer to winter? Yes, she does.",
+  "w": "An fearr le: answer with the same word, is fearr.",
+  "wg": "An fearr leat? Is fearr.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An fearr leat an bus ná an traein? ___ (yes)",
+  "pol": "yes",
+  "a": "Is fearr",
+  "o": [
+   "Is fearr",
+   "B'fhearr",
+   "Tá",
+   "Ní fearr"
+  ],
+  "e": "Do you prefer the bus to the train? Yes, I do.",
+  "w": "An fearr le: answer with the same word, is fearr.",
+  "wg": "An fearr leat? Is fearr.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An fearr leo an chathair ná an tuath? ___ (yes)",
+  "pol": "yes",
+  "a": "Is fearr",
+  "o": [
+   "Is fearr",
+   "B'fhearr",
+   "Tá",
+   "Ní fearr"
+  ],
+  "e": "Do they prefer the city to the country? Yes, they do.",
+  "w": "An fearr le: answer with the same word, is fearr.",
+  "wg": "An fearr leat? Is fearr.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith leat cupán tae? ___ (yes)",
+  "pol": "yes",
+  "a": "Ba mhaith",
+  "o": [
+   "Ba mhaith",
+   "Is maith",
+   "Bheadh",
+   "Níor mhaith"
+  ],
+  "e": "Would you like a cup of tea? Yes, I would.",
+  "w": "Ar mhaith le: yes is ba mhaith.",
+  "wg": "Ar mhaith leat? Ba mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith leat teacht linn? ___ (yes)",
+  "pol": "yes",
+  "a": "Ba mhaith",
+  "o": [
+   "Ba mhaith",
+   "Is maith",
+   "Bheadh",
+   "Níor mhaith"
+  ],
+  "e": "Would you like to come with us? Yes, I would.",
+  "w": "Ar mhaith le: yes is ba mhaith.",
+  "wg": "Ar mhaith leat? Ba mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith leat teacht linn? ___ (no)",
+  "pol": "no",
+  "a": "Níor mhaith",
+  "o": [
+   "Níor mhaith",
+   "Ní maith",
+   "Ní bheadh",
+   "Ba mhaith"
+  ],
+  "e": "Would you like to come with us? No, I wouldn't.",
+  "w": "Ar mhaith le: no is níor mhaith.",
+  "wg": "Ar mhaith leat? Níor mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith leat ceapaire? ___ (no)",
+  "pol": "no",
+  "a": "Níor mhaith",
+  "o": [
+   "Níor mhaith",
+   "Ní maith",
+   "Ní bheadh",
+   "Ba mhaith"
+  ],
+  "e": "Would you like a sandwich? No, I wouldn't.",
+  "w": "Ar mhaith le: no is níor mhaith.",
+  "wg": "Ar mhaith leat? Níor mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith leis dul abhaile? ___ (yes)",
+  "pol": "yes",
+  "a": "Ba mhaith",
+  "o": [
+   "Ba mhaith",
+   "Is maith",
+   "Bheadh",
+   "Níor mhaith"
+  ],
+  "e": "Would he like to go home? Yes, he would.",
+  "w": "Ar mhaith le: yes is ba mhaith.",
+  "wg": "Ar mhaith leat? Ba mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith léi fanacht? ___ (yes)",
+  "pol": "yes",
+  "a": "Ba mhaith",
+  "o": [
+   "Ba mhaith",
+   "Is maith",
+   "Bheadh",
+   "Níor mhaith"
+  ],
+  "e": "Would she like to stay? Yes, she would.",
+  "w": "Ar mhaith le: yes is ba mhaith.",
+  "wg": "Ar mhaith leat? Ba mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith léi fanacht? ___ (no)",
+  "pol": "no",
+  "a": "Níor mhaith",
+  "o": [
+   "Níor mhaith",
+   "Ní maith",
+   "Ní bheadh",
+   "Ba mhaith"
+  ],
+  "e": "Would she like to stay? No, she wouldn't.",
+  "w": "Ar mhaith le: no is níor mhaith.",
+  "wg": "Ar mhaith leat? Níor mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith libh dul amach anocht? ___ (no)",
+  "pol": "no",
+  "a": "Níor mhaith",
+  "o": [
+   "Níor mhaith",
+   "Ní maith",
+   "Ní bheadh",
+   "Ba mhaith"
+  ],
+  "e": "Would you all like to go out tonight? No, we wouldn't.",
+  "w": "Ar mhaith le: no is níor mhaith.",
+  "wg": "Ar mhaith leat? Níor mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith leo bia? ___ (yes)",
+  "pol": "yes",
+  "a": "Ba mhaith",
+  "o": [
+   "Ba mhaith",
+   "Is maith",
+   "Bheadh",
+   "Níor mhaith"
+  ],
+  "e": "Would they like food? Yes, they would.",
+  "w": "Ar mhaith le: yes is ba mhaith.",
+  "wg": "Ar mhaith leat? Ba mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith leat suí síos? ___ (yes)",
+  "pol": "yes",
+  "a": "Ba mhaith",
+  "o": [
+   "Ba mhaith",
+   "Is maith",
+   "Bheadh",
+   "Níor mhaith"
+  ],
+  "e": "Would you like to sit down? Yes, I would.",
+  "w": "Ar mhaith le: yes is ba mhaith.",
+  "wg": "Ar mhaith leat? Ba mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith leat suí síos? ___ (no)",
+  "pol": "no",
+  "a": "Níor mhaith",
+  "o": [
+   "Níor mhaith",
+   "Ní maith",
+   "Ní bheadh",
+   "Ba mhaith"
+  ],
+  "e": "Would you like to sit down? No, I wouldn't.",
+  "w": "Ar mhaith le: no is níor mhaith.",
+  "wg": "Ar mhaith leat? Níor mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith leat an scannán a fheiceáil? ___ (no)",
+  "pol": "no",
+  "a": "Níor mhaith",
+  "o": [
+   "Níor mhaith",
+   "Ní maith",
+   "Ní bheadh",
+   "Ba mhaith"
+  ],
+  "e": "Would you like to see the film? No, I wouldn't.",
+  "w": "Ar mhaith le: no is níor mhaith.",
+  "wg": "Ar mhaith leat? Níor mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith leat siúlóid? ___ (yes)",
+  "pol": "yes",
+  "a": "Ba mhaith",
+  "o": [
+   "Ba mhaith",
+   "Is maith",
+   "Bheadh",
+   "Níor mhaith"
+  ],
+  "e": "Would you like a walk? Yes, I would.",
+  "w": "Ar mhaith le: yes is ba mhaith.",
+  "wg": "Ar mhaith leat? Ba mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith leis deoch? ___ (yes)",
+  "pol": "yes",
+  "a": "Ba mhaith",
+  "o": [
+   "Ba mhaith",
+   "Is maith",
+   "Bheadh",
+   "Níor mhaith"
+  ],
+  "e": "Would he like a drink? Yes, he would.",
+  "w": "Ar mhaith le: yes is ba mhaith.",
+  "wg": "Ar mhaith leat? Ba mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith leis deoch? ___ (no)",
+  "pol": "no",
+  "a": "Níor mhaith",
+  "o": [
+   "Níor mhaith",
+   "Ní maith",
+   "Ní bheadh",
+   "Ba mhaith"
+  ],
+  "e": "Would he like a drink? No, he wouldn't.",
+  "w": "Ar mhaith le: no is níor mhaith.",
+  "wg": "Ar mhaith leat? Níor mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith léi dul go Gaillimh? ___ (no)",
+  "pol": "no",
+  "a": "Níor mhaith",
+  "o": [
+   "Níor mhaith",
+   "Ní maith",
+   "Ní bheadh",
+   "Ba mhaith"
+  ],
+  "e": "Would she like to go to Galway? No, she wouldn't.",
+  "w": "Ar mhaith le: no is níor mhaith.",
+  "wg": "Ar mhaith leat? Níor mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith libh cáca? ___ (yes)",
+  "pol": "yes",
+  "a": "Ba mhaith",
+  "o": [
+   "Ba mhaith",
+   "Is maith",
+   "Bheadh",
+   "Níor mhaith"
+  ],
+  "e": "Would you all like cake? Yes, we would.",
+  "w": "Ar mhaith le: yes is ba mhaith.",
+  "wg": "Ar mhaith leat? Ba mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith leo imirt? ___ (yes)",
+  "pol": "yes",
+  "a": "Ba mhaith",
+  "o": [
+   "Ba mhaith",
+   "Is maith",
+   "Bheadh",
+   "Níor mhaith"
+  ],
+  "e": "Would they like to play? Yes, they would.",
+  "w": "Ar mhaith le: yes is ba mhaith.",
+  "wg": "Ar mhaith leat? Ba mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith leo imirt? ___ (no)",
+  "pol": "no",
+  "a": "Níor mhaith",
+  "o": [
+   "Níor mhaith",
+   "Ní maith",
+   "Ní bheadh",
+   "Ba mhaith"
+  ],
+  "e": "Would they like to play? No, they wouldn't.",
+  "w": "Ar mhaith le: no is níor mhaith.",
+  "wg": "Ar mhaith leat? Níor mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith leat níos mó? ___ (no)",
+  "pol": "no",
+  "a": "Níor mhaith",
+  "o": [
+   "Níor mhaith",
+   "Ní maith",
+   "Ní bheadh",
+   "Ba mhaith"
+  ],
+  "e": "Would you like more? No, I wouldn't.",
+  "w": "Ar mhaith le: no is níor mhaith.",
+  "wg": "Ar mhaith leat? Níor mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith leat caife? ___ (yes)",
+  "pol": "yes",
+  "a": "Ba mhaith",
+  "o": [
+   "Ba mhaith",
+   "Is maith",
+   "Bheadh",
+   "Níor mhaith"
+  ],
+  "e": "Would you like coffee? Yes, I would.",
+  "w": "Ar mhaith le: yes is ba mhaith.",
+  "wg": "Ar mhaith leat? Ba mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith leat cabhair? ___ (yes)",
+  "pol": "yes",
+  "a": "Ba mhaith",
+  "o": [
+   "Ba mhaith",
+   "Is maith",
+   "Bheadh",
+   "Níor mhaith"
+  ],
+  "e": "Would you like help? Yes, I would.",
+  "w": "Ar mhaith le: yes is ba mhaith.",
+  "wg": "Ar mhaith leat? Ba mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith leat cabhair? ___ (no)",
+  "pol": "no",
+  "a": "Níor mhaith",
+  "o": [
+   "Níor mhaith",
+   "Ní maith",
+   "Ní bheadh",
+   "Ba mhaith"
+  ],
+  "e": "Would you like help? No, I wouldn't.",
+  "w": "Ar mhaith le: no is níor mhaith.",
+  "wg": "Ar mhaith leat? Níor mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "Ar mhaith leat Gaeilge a fhoghlaim? ___ (no)",
+  "pol": "no",
+  "a": "Níor mhaith",
+  "o": [
+   "Níor mhaith",
+   "Ní maith",
+   "Ní bheadh",
+   "Ba mhaith"
+  ],
+  "e": "Would you like to learn Irish? No, I wouldn't.",
+  "w": "Ar mhaith le: no is níor mhaith.",
+  "wg": "Ar mhaith leat? Níor mhaith.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir leat snámh? ___ (yes)",
+  "pol": "yes",
+  "a": "Is féidir",
+  "o": [
+   "Is féidir",
+   "Tá",
+   "Ba mhaith",
+   "Ní féidir"
+  ],
+  "e": "Can you swim? Yes, I can.",
+  "w": "An féidir le: yes is is féidir.",
+  "wg": "An féidir leat? Is féidir.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir leat teacht amárach? ___ (yes)",
+  "pol": "yes",
+  "a": "Is féidir",
+  "o": [
+   "Is féidir",
+   "Tá",
+   "Ba mhaith",
+   "Ní féidir"
+  ],
+  "e": "Can you come tomorrow? Yes, I can.",
+  "w": "An féidir le: yes is is féidir.",
+  "wg": "An féidir leat? Is féidir.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir leat teacht amárach? ___ (no)",
+  "pol": "no",
+  "a": "Ní féidir",
+  "o": [
+   "Ní féidir",
+   "Níl",
+   "Níor mhaith",
+   "Is féidir"
+  ],
+  "e": "Can you come tomorrow? No, I can't.",
+  "w": "An féidir le: no is ní féidir.",
+  "wg": "An féidir leat? Ní féidir.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir leis tiomáint? ___ (no)",
+  "pol": "no",
+  "a": "Ní féidir",
+  "o": [
+   "Ní féidir",
+   "Níl",
+   "Níor mhaith",
+   "Is féidir"
+  ],
+  "e": "Can he drive? No, he can't.",
+  "w": "An féidir le: no is ní féidir.",
+  "wg": "An féidir leat? Ní féidir.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir léi Gaeilge a labhairt? ___ (yes)",
+  "pol": "yes",
+  "a": "Is féidir",
+  "o": [
+   "Is féidir",
+   "Tá",
+   "Ba mhaith",
+   "Ní féidir"
+  ],
+  "e": "Can she speak Irish? Yes, she can.",
+  "w": "An féidir le: yes is is féidir.",
+  "wg": "An féidir leat? Is féidir.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir libh fanacht? ___ (yes)",
+  "pol": "yes",
+  "a": "Is féidir",
+  "o": [
+   "Is féidir",
+   "Tá",
+   "Ba mhaith",
+   "Ní féidir"
+  ],
+  "e": "Can you all wait? Yes, we can.",
+  "w": "An féidir le: yes is is féidir.",
+  "wg": "An féidir leat? Is féidir.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir libh fanacht? ___ (no)",
+  "pol": "no",
+  "a": "Ní féidir",
+  "o": [
+   "Ní féidir",
+   "Níl",
+   "Níor mhaith",
+   "Is féidir"
+  ],
+  "e": "Can you all wait? No, we can't.",
+  "w": "An féidir le: no is ní féidir.",
+  "wg": "An féidir leat? Ní féidir.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir leo an obair a dhéanamh? ___ (no)",
+  "pol": "no",
+  "a": "Ní féidir",
+  "o": [
+   "Ní féidir",
+   "Níl",
+   "Níor mhaith",
+   "Is féidir"
+  ],
+  "e": "Can they do the work? No, they can't.",
+  "w": "An féidir le: no is ní féidir.",
+  "wg": "An féidir leat? Ní féidir.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir liom suí anseo? ___ (yes)",
+  "pol": "yes",
+  "a": "Is féidir",
+  "o": [
+   "Is féidir",
+   "Tá",
+   "Ba mhaith",
+   "Ní féidir"
+  ],
+  "e": "Can I sit here? Yes, you can.",
+  "w": "An féidir le: yes is is féidir.",
+  "wg": "An féidir leat? Is féidir.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir liom cabhrú leat? ___ (yes)",
+  "pol": "yes",
+  "a": "Is féidir",
+  "o": [
+   "Is féidir",
+   "Tá",
+   "Ba mhaith",
+   "Ní féidir"
+  ],
+  "e": "Can I help you? Yes, you can.",
+  "w": "An féidir le: yes is is féidir.",
+  "wg": "An féidir leat? Is féidir.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir liom cabhrú leat? ___ (no)",
+  "pol": "no",
+  "a": "Ní féidir",
+  "o": [
+   "Ní féidir",
+   "Níl",
+   "Níor mhaith",
+   "Is féidir"
+  ],
+  "e": "Can I help you? No, you can't.",
+  "w": "An féidir le: no is ní féidir.",
+  "wg": "An féidir leat? Ní féidir.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir leat cabhrú liom? ___ (no)",
+  "pol": "no",
+  "a": "Ní féidir",
+  "o": [
+   "Ní féidir",
+   "Níl",
+   "Níor mhaith",
+   "Is féidir"
+  ],
+  "e": "Can you help me? No, I can't.",
+  "w": "An féidir le: no is ní féidir.",
+  "wg": "An féidir leat? Ní féidir.",
+  "b": "A1",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir leat é a fheiceáil? ___ (yes)",
+  "pol": "yes",
+  "a": "Is féidir",
+  "o": [
+   "Is féidir",
+   "Tá",
+   "Ba mhaith",
+   "Ní féidir"
+  ],
+  "e": "Can you see it? Yes, I can.",
+  "w": "An féidir le: yes is is féidir.",
+  "wg": "An féidir leat? Is féidir.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir leat an doras a oscailt? ___ (yes)",
+  "pol": "yes",
+  "a": "Is féidir",
+  "o": [
+   "Is féidir",
+   "Tá",
+   "Ba mhaith",
+   "Ní féidir"
+  ],
+  "e": "Can you open the door? Yes, I can.",
+  "w": "An féidir le: yes is is féidir.",
+  "wg": "An féidir leat? Is féidir.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir leat an doras a oscailt? ___ (no)",
+  "pol": "no",
+  "a": "Ní féidir",
+  "o": [
+   "Ní féidir",
+   "Níl",
+   "Níor mhaith",
+   "Is féidir"
+  ],
+  "e": "Can you open the door? No, I can't.",
+  "w": "An féidir le: no is ní féidir.",
+  "wg": "An féidir leat? Ní féidir.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir liom dul abhaile? ___ (no)",
+  "pol": "no",
+  "a": "Ní féidir",
+  "o": [
+   "Ní féidir",
+   "Níl",
+   "Níor mhaith",
+   "Is féidir"
+  ],
+  "e": "Can I go home? No, you can't.",
+  "w": "An féidir le: no is ní féidir.",
+  "wg": "An féidir leat? Ní féidir.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir leis seinm? ___ (yes)",
+  "pol": "yes",
+  "a": "Is féidir",
+  "o": [
+   "Is féidir",
+   "Tá",
+   "Ba mhaith",
+   "Ní féidir"
+  ],
+  "e": "Can he play music? Yes, he can.",
+  "w": "An féidir le: yes is is féidir.",
+  "wg": "An féidir leat? Is féidir.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir léi teacht linn? ___ (yes)",
+  "pol": "yes",
+  "a": "Is féidir",
+  "o": [
+   "Is féidir",
+   "Tá",
+   "Ba mhaith",
+   "Ní féidir"
+  ],
+  "e": "Can she come with us? Yes, she can.",
+  "w": "An féidir le: yes is is féidir.",
+  "wg": "An féidir leat? Is féidir.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir léi teacht linn? ___ (no)",
+  "pol": "no",
+  "a": "Ní féidir",
+  "o": [
+   "Ní féidir",
+   "Níl",
+   "Níor mhaith",
+   "Is féidir"
+  ],
+  "e": "Can she come with us? No, she can't.",
+  "w": "An féidir le: no is ní féidir.",
+  "wg": "An féidir leat? Ní féidir.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir libh é a chloisteáil? ___ (no)",
+  "pol": "no",
+  "a": "Ní féidir",
+  "o": [
+   "Ní féidir",
+   "Níl",
+   "Níor mhaith",
+   "Is féidir"
+  ],
+  "e": "Can you all hear it? No, we can't.",
+  "w": "An féidir le: no is ní féidir.",
+  "wg": "An féidir leat? Ní féidir.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir liom an fón a úsáid? ___ (yes)",
+  "pol": "yes",
+  "a": "Is féidir",
+  "o": [
+   "Is féidir",
+   "Tá",
+   "Ba mhaith",
+   "Ní féidir"
+  ],
+  "e": "Can I use the phone? Yes, you can.",
+  "w": "An féidir le: yes is is féidir.",
+  "wg": "An féidir leat? Is féidir.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir liom an fón a úsáid? ___ (no)",
+  "pol": "no",
+  "a": "Ní féidir",
+  "o": [
+   "Ní féidir",
+   "Níl",
+   "Níor mhaith",
+   "Is féidir"
+  ],
+  "e": "Can I use the phone? No, you can't.",
+  "w": "An féidir le: no is ní féidir.",
+  "wg": "An féidir leat? Ní féidir.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An féidir leo fanacht anocht? ___ (no)",
+  "pol": "no",
+  "a": "Ní féidir",
+  "o": [
+   "Ní féidir",
+   "Níl",
+   "Níor mhaith",
+   "Is féidir"
+  ],
+  "e": "Can they stay tonight? No, they can't.",
+  "w": "An féidir le: no is ní féidir.",
+  "wg": "An féidir leat? Ní féidir.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An gá dom fanacht? ___ (yes)",
+  "pol": "yes",
+  "a": "Is gá",
+  "o": [
+   "Is gá",
+   "Tá",
+   "Ba mhaith",
+   "Ní gá"
+  ],
+  "e": "Do I have to wait? Yes, you do.",
+  "w": "An gá do: yes is is gá.",
+  "wg": "An gá dom? Is gá.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An gá dom fanacht? ___ (no)",
+  "pol": "no",
+  "a": "Ní gá",
+  "o": [
+   "Ní gá",
+   "Níl",
+   "Ní maith",
+   "Is gá"
+  ],
+  "e": "Do I have to wait? No, you don't.",
+  "w": "An gá do: no is ní gá.",
+  "wg": "An gá dom? Ní gá.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An gá dúinn imeacht anois? ___ (no)",
+  "pol": "no",
+  "a": "Ní gá",
+  "o": [
+   "Ní gá",
+   "Níl",
+   "Ní maith",
+   "Is gá"
+  ],
+  "e": "Do we have to leave now? No, you don't.",
+  "w": "An gá do: no is ní gá.",
+  "wg": "An gá dom? Ní gá.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An gá dom ticéad a cheannach? ___ (yes)",
+  "pol": "yes",
+  "a": "Is gá",
+  "o": [
+   "Is gá",
+   "Tá",
+   "Ba mhaith",
+   "Ní gá"
+  ],
+  "e": "Do I need to buy a ticket? Yes, you do.",
+  "w": "An gá do: yes is is gá.",
+  "wg": "An gá dom? Is gá.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An gá dom ticéad a cheannach? ___ (no)",
+  "pol": "no",
+  "a": "Ní gá",
+  "o": [
+   "Ní gá",
+   "Níl",
+   "Ní maith",
+   "Is gá"
+  ],
+  "e": "Do I need to buy a ticket? No, you don't.",
+  "w": "An gá do: no is ní gá.",
+  "wg": "An gá dom? Ní gá.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An gá duit obair amárach? ___ (no)",
+  "pol": "no",
+  "a": "Ní gá",
+  "o": [
+   "Ní gá",
+   "Níl",
+   "Ní maith",
+   "Is gá"
+  ],
+  "e": "Do you have to work tomorrow? No, I don't.",
+  "w": "An gá do: no is ní gá.",
+  "wg": "An gá dom? Ní gá.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An gá dó teacht? ___ (yes)",
+  "pol": "yes",
+  "a": "Is gá",
+  "o": [
+   "Is gá",
+   "Tá",
+   "Ba mhaith",
+   "Ní gá"
+  ],
+  "e": "Does he have to come? Yes, he does.",
+  "w": "An gá do: yes is is gá.",
+  "wg": "An gá dom? Is gá.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An gá dó teacht? ___ (no)",
+  "pol": "no",
+  "a": "Ní gá",
+  "o": [
+   "Ní gá",
+   "Níl",
+   "Ní maith",
+   "Is gá"
+  ],
+  "e": "Does he have to come? No, he doesn't.",
+  "w": "An gá do: no is ní gá.",
+  "wg": "An gá dom? Ní gá.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An gá di an scrúdú a dhéanamh? ___ (no)",
+  "pol": "no",
+  "a": "Ní gá",
+  "o": [
+   "Ní gá",
+   "Níl",
+   "Ní maith",
+   "Is gá"
+  ],
+  "e": "Does she have to do the exam? No, she doesn't.",
+  "w": "An gá do: no is ní gá.",
+  "wg": "An gá dom? Ní gá.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An gá dóibh íoc? ___ (yes)",
+  "pol": "yes",
+  "a": "Is gá",
+  "o": [
+   "Is gá",
+   "Tá",
+   "Ba mhaith",
+   "Ní gá"
+  ],
+  "e": "Do they have to pay? Yes, they do.",
+  "w": "An gá do: yes is is gá.",
+  "wg": "An gá dom? Is gá.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An gá dóibh íoc? ___ (no)",
+  "pol": "no",
+  "a": "Ní gá",
+  "o": [
+   "Ní gá",
+   "Níl",
+   "Ní maith",
+   "Is gá"
+  ],
+  "e": "Do they have to pay? No, they don't.",
+  "w": "An gá do: no is ní gá.",
+  "wg": "An gá dom? Ní gá.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An gá dom cóta a thabhairt liom? ___ (no)",
+  "pol": "no",
+  "a": "Ní gá",
+  "o": [
+   "Ní gá",
+   "Níl",
+   "Ní maith",
+   "Is gá"
+  ],
+  "e": "Do I need to bring a coat? No, you don't.",
+  "w": "An gá do: no is ní gá.",
+  "wg": "An gá dom? Ní gá.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An cuimhin leat an lá sin? ___ (yes)",
+  "pol": "yes",
+  "a": "Is cuimhin",
+  "o": [
+   "Is cuimhin",
+   "Tá",
+   "Is maith",
+   "Ní cuimhin"
+  ],
+  "e": "Do you remember that day? Yes, I do.",
+  "w": "An cuimhin le: yes is is cuimhin.",
+  "wg": "An cuimhin leat? Is cuimhin.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An cuimhin leat a ainm? ___ (yes)",
+  "pol": "yes",
+  "a": "Is cuimhin",
+  "o": [
+   "Is cuimhin",
+   "Tá",
+   "Is maith",
+   "Ní cuimhin"
+  ],
+  "e": "Do you remember his name? Yes, I do.",
+  "w": "An cuimhin le: yes is is cuimhin.",
+  "wg": "An cuimhin leat? Is cuimhin.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An cuimhin leat a ainm? ___ (no)",
+  "pol": "no",
+  "a": "Ní cuimhin",
+  "o": [
+   "Ní cuimhin",
+   "Níl",
+   "Ní maith",
+   "Is cuimhin"
+  ],
+  "e": "Do you remember his name? No, I don't.",
+  "w": "An cuimhin le: no is ní cuimhin.",
+  "wg": "An cuimhin leat? Ní cuimhin.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An cuimhin leis an scoil? ___ (yes)",
+  "pol": "yes",
+  "a": "Is cuimhin",
+  "o": [
+   "Is cuimhin",
+   "Tá",
+   "Is maith",
+   "Ní cuimhin"
+  ],
+  "e": "Does he remember the school? Yes, he does.",
+  "w": "An cuimhin le: yes is is cuimhin.",
+  "wg": "An cuimhin leat? Is cuimhin.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An cuimhin léi an t-amhrán? ___ (yes)",
+  "pol": "yes",
+  "a": "Is cuimhin",
+  "o": [
+   "Is cuimhin",
+   "Tá",
+   "Is maith",
+   "Ní cuimhin"
+  ],
+  "e": "Does she remember the song? Yes, she does.",
+  "w": "An cuimhin le: yes is is cuimhin.",
+  "wg": "An cuimhin leat? Is cuimhin.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An cuimhin léi an t-amhrán? ___ (no)",
+  "pol": "no",
+  "a": "Ní cuimhin",
+  "o": [
+   "Ní cuimhin",
+   "Níl",
+   "Ní maith",
+   "Is cuimhin"
+  ],
+  "e": "Does she remember the song? No, she doesn't.",
+  "w": "An cuimhin le: no is ní cuimhin.",
+  "wg": "An cuimhin leat? Ní cuimhin.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An cuimhin leat mé? ___ (yes)",
+  "pol": "yes",
+  "a": "Is cuimhin",
+  "o": [
+   "Is cuimhin",
+   "Tá",
+   "Is maith",
+   "Ní cuimhin"
+  ],
+  "e": "Do you remember me? Yes, I do.",
+  "w": "An cuimhin le: yes is is cuimhin.",
+  "wg": "An cuimhin leat? Is cuimhin.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An cuimhin libh an sneachta mór? ___ (yes)",
+  "pol": "yes",
+  "a": "Is cuimhin",
+  "o": [
+   "Is cuimhin",
+   "Tá",
+   "Is maith",
+   "Ní cuimhin"
+  ],
+  "e": "Do you all remember the big snow? Yes, we do.",
+  "w": "An cuimhin le: yes is is cuimhin.",
+  "wg": "An cuimhin leat? Is cuimhin.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An cuimhin libh an sneachta mór? ___ (no)",
+  "pol": "no",
+  "a": "Ní cuimhin",
+  "o": [
+   "Ní cuimhin",
+   "Níl",
+   "Ní maith",
+   "Is cuimhin"
+  ],
+  "e": "Do you all remember the big snow? No, we don't.",
+  "w": "An cuimhin le: no is ní cuimhin.",
+  "wg": "An cuimhin leat? Ní cuimhin.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An cuimhin leo an seanteach? ___ (yes)",
+  "pol": "yes",
+  "a": "Is cuimhin",
+  "o": [
+   "Is cuimhin",
+   "Tá",
+   "Is maith",
+   "Ní cuimhin"
+  ],
+  "e": "Do they remember the old house? Yes, they do.",
+  "w": "An cuimhin le: yes is is cuimhin.",
+  "wg": "An cuimhin leat? Is cuimhin.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An fíor é sin? ___ (yes)",
+  "pol": "yes",
+  "a": "Is fíor",
+  "o": [
+   "Is fíor",
+   "Tá",
+   "Bhí",
+   "Ní fíor"
+  ],
+  "e": "Is that true? Yes, it is.",
+  "w": "An fíor: answer with the same word, is fíor.",
+  "wg": "An fíor? Is fíor.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An fíor é sin? ___ (no)",
+  "pol": "no",
+  "a": "Ní fíor",
+  "o": [
+   "Ní fíor",
+   "Níl",
+   "Ní raibh",
+   "Is fíor"
+  ],
+  "e": "Is that true? No, it isn't.",
+  "w": "An fíor: answer with the same word, ní fíor.",
+  "wg": "An fíor? Ní fíor.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An fíor go bhfuil sé ag pósadh? ___ (yes)",
+  "pol": "yes",
+  "a": "Is fíor",
+  "o": [
+   "Is fíor",
+   "Tá",
+   "Bhí",
+   "Ní fíor"
+  ],
+  "e": "Is it true that he's getting married? Yes, it is.",
+  "w": "An fíor: answer with the same word, is fíor.",
+  "wg": "An fíor? Is fíor.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An fíor go bhfuil sí tinn? ___ (no)",
+  "pol": "no",
+  "a": "Ní fíor",
+  "o": [
+   "Ní fíor",
+   "Níl",
+   "Ní raibh",
+   "Is fíor"
+  ],
+  "e": "Is it true that she's sick? No, it isn't.",
+  "w": "An fíor: answer with the same word, ní fíor.",
+  "wg": "An fíor? Ní fíor.",
+  "b": "A2",
+  "t": "cop"
+ },
+ {
+  "q": "An leatsa an mála seo? ___ (yes)",
+  "pol": "yes",
+  "a": "Is liom",
+  "o": [
+   "Is liom",
+   "Is leat",
+   "Tá",
+   "Ní liom"
+  ],
+  "e": "Is this bag yours? Yes, it is.",
+  "w": "Ownership with is le: the answer keeps le, turned round: Is liom.",
+  "wg": "An leatsa? Is liom.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "An leatsa an cóta seo? ___ (no)",
+  "pol": "no",
+  "a": "Ní liom",
+  "o": [
+   "Ní liom",
+   "Ní leat",
+   "Níl",
+   "Is liom"
+  ],
+  "e": "Is this coat yours? No, it isn't.",
+  "w": "Ownership with is le: the answer keeps le, turned round: Ní liom.",
+  "wg": "An leatsa? Ní liom.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "An leatsa an rothar sin? ___ (yes)",
+  "pol": "yes",
+  "a": "Is liom",
+  "o": [
+   "Is liom",
+   "Is leat",
+   "Tá",
+   "Ní liom"
+  ],
+  "e": "Is that bike yours? Yes, it is.",
+  "w": "Ownership with is le: the answer keeps le, turned round: Is liom.",
+  "wg": "An leatsa? Is liom.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "An leatsa an fón seo? ___ (no)",
+  "pol": "no",
+  "a": "Ní liom",
+  "o": [
+   "Ní liom",
+   "Ní leat",
+   "Níl",
+   "Is liom"
+  ],
+  "e": "Is this phone yours? No, it isn't.",
+  "w": "Ownership with is le: the answer keeps le, turned round: Ní liom.",
+  "wg": "An leatsa? Ní liom.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "An le Seán an carr seo? ___ (yes)",
+  "pol": "yes",
+  "a": "Is leis",
+  "o": [
+   "Is leis",
+   "Is léi",
+   "Tá",
+   "Ní leis"
+  ],
+  "e": "Is this car Seán's? Yes, it is.",
+  "w": "Ownership with is le: the answer keeps le, turned round: Is leis.",
+  "wg": "An leatsa? Is leis.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "An le Máire an leabhar seo? ___ (yes)",
+  "pol": "yes",
+  "a": "Is léi",
+  "o": [
+   "Is léi",
+   "Is leis",
+   "Tá",
+   "Ní léi"
+  ],
+  "e": "Is this book Máire's? Yes, it is.",
+  "w": "Ownership with is le: the answer keeps le, turned round: Is léi.",
+  "wg": "An leatsa? Is léi.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "An libhse an teach sin? ___ (yes)",
+  "pol": "yes",
+  "a": "Is linn",
+  "o": [
+   "Is linn",
+   "Is libh",
+   "Tá",
+   "Ní linn"
+  ],
+  "e": "Is that house yours? Yes, it is.",
+  "w": "Ownership with is le: the answer keeps le, turned round: Is linn.",
+  "wg": "An leatsa? Is linn.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "An leo an madra sin? ___ (no)",
+  "pol": "no",
+  "a": "Ní leo",
+  "o": [
+   "Ní leo",
+   "Ní linn",
+   "Níl",
+   "Is leo"
+  ],
+  "e": "Is that dog theirs? No, it isn't.",
+  "w": "Ownership with is le: the answer keeps le, turned round: Ní leo.",
+  "wg": "An leatsa? Ní leo.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "An tusa Seán? ___ (yes)",
+  "pol": "yes",
+  "a": "Is mé",
+  "o": [
+   "Is mé",
+   "Is tú",
+   "Tá",
+   "Ní mé"
+  ],
+  "e": "Are you Seán? Yes, I am.",
+  "w": "Who or which one: answer with the pronoun, Is mé.",
+  "wg": "Freagair leis an bhforainm: Is mé.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "An tusa an múinteoir nua? ___ (yes)",
+  "pol": "yes",
+  "a": "Is mé",
+  "o": [
+   "Is mé",
+   "Is tú",
+   "Tá",
+   "Ní mé"
+  ],
+  "e": "Are you the new teacher? Yes, I am.",
+  "w": "Who or which one: answer with the pronoun, Is mé.",
+  "wg": "Freagair leis an bhforainm: Is mé.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "An tusa Máire? ___ (no)",
+  "pol": "no",
+  "a": "Ní mé",
+  "o": [
+   "Ní mé",
+   "Ní tú",
+   "Níl",
+   "Is mé"
+  ],
+  "e": "Are you Máire? No, I'm not.",
+  "w": "Who or which one: answer with the pronoun, Ní mé.",
+  "wg": "Freagair leis an bhforainm: Ní mé.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "An é seo do theach? ___ (yes)",
+  "pol": "yes",
+  "a": "Is é",
+  "o": [
+   "Is é",
+   "Is í",
+   "Tá",
+   "Ní hé"
+  ],
+  "e": "Is this your house? Yes, it is.",
+  "w": "Who or which one: answer with the pronoun, Is é.",
+  "wg": "Freagair leis an bhforainm: Is é.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "An é seo do mhála? ___ (no)",
+  "pol": "no",
+  "a": "Ní hé",
+  "o": [
+   "Ní hé",
+   "Ní hí",
+   "Níl",
+   "Is é"
+  ],
+  "e": "Is this your bag? No, it isn't.",
+  "w": "Who or which one: answer with the pronoun, Ní hé.",
+  "wg": "Freagair leis an bhforainm: Ní hé.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "An í seo do mháthair? ___ (yes)",
+  "pol": "yes",
+  "a": "Is í",
+  "o": [
+   "Is í",
+   "Is é",
+   "Tá",
+   "Ní hí"
+  ],
+  "e": "Is this your mother? Yes, she is.",
+  "w": "Who or which one: answer with the pronoun, Is í.",
+  "wg": "Freagair leis an bhforainm: Is í.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "An í sin do dheirfiúr? ___ (no)",
+  "pol": "no",
+  "a": "Ní hí",
+  "o": [
+   "Ní hí",
+   "Ní hé",
+   "Níl",
+   "Is í"
+  ],
+  "e": "Is that your sister? No, she isn't.",
+  "w": "Who or which one: answer with the pronoun, Ní hí.",
+  "wg": "Freagair leis an bhforainm: Ní hí.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "An iad seo do pháistí? ___ (yes)",
+  "pol": "yes",
+  "a": "Is iad",
+  "o": [
+   "Is iad",
+   "Is é",
+   "Tá",
+   "Ní hiad"
+  ],
+  "e": "Are these your children? Yes, they are.",
+  "w": "Who or which one: answer with the pronoun, Is iad.",
+  "wg": "Freagair leis an bhforainm: Is iad.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "An iad sin na heochracha? ___ (no)",
+  "pol": "no",
+  "a": "Ní hiad",
+  "o": [
+   "Ní hiad",
+   "Ní hé",
+   "Níl",
+   "Is iad"
+  ],
+  "e": "Are those the keys? No, they aren't.",
+  "w": "Who or which one: answer with the pronoun, Ní hiad.",
+  "wg": "Freagair leis an bhforainm: Ní hiad.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "An é Seán an captaen? ___ (yes)",
+  "pol": "yes",
+  "a": "Is é",
+  "o": [
+   "Is é",
+   "Is í",
+   "Tá",
+   "Ní hé"
+  ],
+  "e": "Is Seán the captain? Yes, he is.",
+  "w": "Who or which one: answer with the pronoun, Is é.",
+  "wg": "Freagair leis an bhforainm: Is é.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "An í Áine an bainisteoir? ___ (yes)",
+  "pol": "yes",
+  "a": "Is í",
+  "o": [
+   "Is í",
+   "Is é",
+   "Tá",
+   "Ní hí"
+  ],
+  "e": "Is Áine the manager? Yes, she is.",
+  "w": "Who or which one: answer with the pronoun, Is í.",
+  "wg": "Freagair leis an bhforainm: Is í.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "An é seo an bus go Gaillimh? ___ (no)",
+  "pol": "no",
+  "a": "Ní hé",
+  "o": [
+   "Ní hé",
+   "Ní hí",
+   "Níl",
+   "Is é"
+  ],
+  "e": "Is this the bus to Galway? No, it isn't.",
+  "w": "Who or which one: answer with the pronoun, Ní hé.",
+  "wg": "Freagair leis an bhforainm: Ní hé.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "Nach álainn an lá é? ___ (yes)",
+  "pol": "yes",
+  "a": "Is álainn",
+  "o": [
+   "Is álainn",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "Isn't it a beautiful day? Yes, it is.",
+  "w": "Nach + adjective: answer with the same adjective, is álainn.",
+  "wg": "Nach álainn? Is álainn.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "Nach deas an aimsir í? ___ (yes)",
+  "pol": "yes",
+  "a": "Is deas",
+  "o": [
+   "Is deas",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "Isn't the weather nice? Yes, it is.",
+  "w": "Nach + adjective: answer with the same adjective, is deas.",
+  "wg": "Nach álainn? Is deas.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "Nach fuar an oíche í? ___ (yes)",
+  "pol": "yes",
+  "a": "Is fuar",
+  "o": [
+   "Is fuar",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "Isn't it a cold night? Yes, it is.",
+  "w": "Nach + adjective: answer with the same adjective, is fuar.",
+  "wg": "Nach álainn? Is fuar.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "Nach maith an scéal é? ___ (yes)",
+  "pol": "yes",
+  "a": "Is maith",
+  "o": [
+   "Is maith",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "Isn't that good news? Yes, it is.",
+  "w": "Nach + adjective: answer with the same adjective, is maith.",
+  "wg": "Nach álainn? Is maith.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "Nach breá an radharc é? ___ (yes)",
+  "pol": "yes",
+  "a": "Is breá",
+  "o": [
+   "Is breá",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "Isn't it a fine view? Yes, it is.",
+  "w": "Nach + adjective: answer with the same adjective, is breá.",
+  "wg": "Nach álainn? Is breá.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "Nach mór an trua é? ___ (yes)",
+  "pol": "yes",
+  "a": "Is mór",
+  "o": [
+   "Is mór",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "Isn't it a great pity? Yes, it is.",
+  "w": "Nach + adjective: answer with the same adjective, is mór.",
+  "wg": "Nach álainn? Is mór.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "Nach deacair an cheist í? ___ (yes)",
+  "pol": "yes",
+  "a": "Is deacair",
+  "o": [
+   "Is deacair",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "Isn't it a hard question? Yes, it is.",
+  "w": "Nach + adjective: answer with the same adjective, is deacair.",
+  "wg": "Nach álainn? Is deacair.",
+  "b": "B1",
+  "t": "cop"
+ },
+ {
+  "q": "Nach blasta an bia é? ___ (yes)",
+  "pol": "yes",
+  "a": "Is blasta",
+  "o": [
+   "Is blasta",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "Isn't the food tasty? Yes, it is.",
+  "w": "Nach + adjective: answer with the same adjective, is blasta.",
+  "wg": "Nach álainn? Is blasta.",
+  "b": "B1",
+  "t": "cop"
+ }
+]

@@ -1,0 +1,542 @@
+[
+ {
+  "q": "Thug mé an leabhar ___ (do + muid).",
+  "prep": "do",
+  "p": "muid",
+  "e": "I gave the book to us.",
+  "w": "Giving goes to someone: do + muid = dúinn.",
+  "wg": "Tabhair do: do + muid = dúinn.",
+  "b": "A2"
+ },
+ {
+  "q": "Thug mé an leabhar ___ (do + sibh).",
+  "prep": "do",
+  "p": "sibh",
+  "e": "I gave the book to you all.",
+  "w": "Giving goes to someone: do + sibh = daoibh.",
+  "wg": "Tabhair do: do + sibh = daoibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Thug mé an leabhar ___ (do + iad).",
+  "prep": "do",
+  "p": "siad",
+  "e": "I gave the book to them.",
+  "w": "Giving goes to someone: do + iad = dóibh.",
+  "wg": "Tabhair do: do + iad = dóibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Thug mé an leabhar ___ (do + tú).",
+  "prep": "do",
+  "p": "tu",
+  "e": "I gave the book to you.",
+  "w": "Giving goes to someone: do + tú = duit.",
+  "wg": "Tabhair do: do + tú = duit.",
+  "b": "A2"
+ },
+ {
+  "q": "Inis ___ (do + iad) an scéal.",
+  "prep": "do",
+  "p": "siad",
+  "e": "Tell them the story.",
+  "w": "Telling or showing goes to someone: do + iad = dóibh.",
+  "wg": "Inis do, taispeáin do: do + iad = dóibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Inis ___ (do + mé) an scéal.",
+  "prep": "do",
+  "p": "me",
+  "e": "Tell me the story.",
+  "w": "Telling or showing goes to someone: do + mé = dom.",
+  "wg": "Inis do, taispeáin do: do + mé = dom.",
+  "b": "A2"
+ },
+ {
+  "q": "Inis ___ (do + é) an scéal.",
+  "prep": "do",
+  "p": "se",
+  "e": "Tell him the story.",
+  "w": "Telling or showing goes to someone: do + é = dó.",
+  "wg": "Inis do, taispeáin do: do + é = dó.",
+  "b": "A2"
+ },
+ {
+  "q": "Inis ___ (do + í) an scéal.",
+  "prep": "do",
+  "p": "si",
+  "e": "Tell her the story.",
+  "w": "Telling or showing goes to someone: do + í = di.",
+  "wg": "Inis do, taispeáin do: do + í = di.",
+  "b": "A2"
+ },
+ {
+  "q": "Cad is ainm ___ (do + muid)?",
+  "prep": "do",
+  "p": "muid",
+  "e": "What's our name?",
+  "w": "Cad is ainm: the name is \"to\" you: do + muid = dúinn.",
+  "wg": "Cad is ainm do: do + muid = dúinn.",
+  "b": "A1"
+ },
+ {
+  "q": "Cad is ainm ___ (do + sibh)?",
+  "prep": "do",
+  "p": "sibh",
+  "e": "What's your name?",
+  "w": "Cad is ainm: the name is \"to\" you: do + sibh = daoibh.",
+  "wg": "Cad is ainm do: do + sibh = daoibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Cad is ainm ___ (do + iad)?",
+  "prep": "do",
+  "p": "siad",
+  "e": "What's their name?",
+  "w": "Cad is ainm: the name is \"to\" you: do + iad = dóibh.",
+  "wg": "Cad is ainm do: do + iad = dóibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Cad is ainm ___ (do + tú)?",
+  "prep": "do",
+  "p": "tu",
+  "e": "What's your name?",
+  "w": "Cad is ainm: the name is \"to\" you: do + tú = duit.",
+  "wg": "Cad is ainm do: do + tú = duit.",
+  "b": "A1"
+ },
+ {
+  "q": "Thug sí comhairle ___ (do + mé).",
+  "prep": "do",
+  "p": "me",
+  "e": "She gave me advice.",
+  "w": "Giving goes to someone: do + mé = dom.",
+  "wg": "Tabhair do: do + mé = dom.",
+  "b": "A2"
+ },
+ {
+  "q": "Thug sí comhairle ___ (do + tú).",
+  "prep": "do",
+  "p": "tu",
+  "e": "She gave you advice.",
+  "w": "Giving goes to someone: do + tú = duit.",
+  "wg": "Tabhair do: do + tú = duit.",
+  "b": "A2"
+ },
+ {
+  "q": "Thug sí comhairle ___ (do + é).",
+  "prep": "do",
+  "p": "se",
+  "e": "She gave him advice.",
+  "w": "Giving goes to someone: do + é = dó.",
+  "wg": "Tabhair do: do + é = dó.",
+  "b": "A2"
+ },
+ {
+  "q": "Thug sí comhairle ___ (do + muid).",
+  "prep": "do",
+  "p": "muid",
+  "e": "She gave us advice.",
+  "w": "Giving goes to someone: do + muid = dúinn.",
+  "wg": "Tabhair do: do + muid = dúinn.",
+  "b": "A2"
+ },
+ {
+  "q": "Tabhair ___ (do + muid) an t-airgead.",
+  "prep": "do",
+  "p": "muid",
+  "e": "Give us the money.",
+  "w": "Giving goes to someone: do + muid = dúinn.",
+  "wg": "Tabhair do: do + muid = dúinn.",
+  "b": "A2"
+ },
+ {
+  "q": "Tabhair ___ (do + iad) an t-airgead.",
+  "prep": "do",
+  "p": "siad",
+  "e": "Give them the money.",
+  "w": "Giving goes to someone: do + iad = dóibh.",
+  "wg": "Tabhair do: do + iad = dóibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Tabhair ___ (do + mé) an t-airgead.",
+  "prep": "do",
+  "p": "me",
+  "e": "Give me the money.",
+  "w": "Giving goes to someone: do + mé = dom.",
+  "wg": "Tabhair do: do + mé = dom.",
+  "b": "A2"
+ },
+ {
+  "q": "Tabhair ___ (do + é) an t-airgead.",
+  "prep": "do",
+  "p": "se",
+  "e": "Give him the money.",
+  "w": "Giving goes to someone: do + é = dó.",
+  "wg": "Tabhair do: do + é = dó.",
+  "b": "A2"
+ },
+ {
+  "q": "Cheannaigh mé bronntanas ___ (do + tú).",
+  "prep": "do",
+  "p": "tu",
+  "e": "I bought you a present.",
+  "w": "For someone: do + tú = duit.",
+  "wg": "Do dhuine: do + tú = duit.",
+  "b": "A2"
+ },
+ {
+  "q": "Cheannaigh mé bronntanas ___ (do + é).",
+  "prep": "do",
+  "p": "se",
+  "e": "I bought him a present.",
+  "w": "For someone: do + é = dó.",
+  "wg": "Do dhuine: do + é = dó.",
+  "b": "A2"
+ },
+ {
+  "q": "Cheannaigh mé bronntanas ___ (do + í).",
+  "prep": "do",
+  "p": "si",
+  "e": "I bought her a present.",
+  "w": "For someone: do + í = di.",
+  "wg": "Do dhuine: do + í = di.",
+  "b": "A2"
+ },
+ {
+  "q": "Cheannaigh mé bronntanas ___ (do + muid).",
+  "prep": "do",
+  "p": "muid",
+  "e": "I bought us a present.",
+  "w": "For someone: do + muid = dúinn.",
+  "wg": "Do dhuine: do + muid = dúinn.",
+  "b": "A2"
+ },
+ {
+  "q": "Scríobh sé amhrán ___ (do + muid).",
+  "prep": "do",
+  "p": "muid",
+  "e": "He wrote a song for us.",
+  "w": "For someone: do + muid = dúinn.",
+  "wg": "Do dhuine: do + muid = dúinn.",
+  "b": "A2"
+ },
+ {
+  "q": "Scríobh sé amhrán ___ (do + sibh).",
+  "prep": "do",
+  "p": "sibh",
+  "e": "He wrote a song for you all.",
+  "w": "For someone: do + sibh = daoibh.",
+  "wg": "Do dhuine: do + sibh = daoibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Scríobh sé amhrán ___ (do + iad).",
+  "prep": "do",
+  "p": "siad",
+  "e": "He wrote a song for them.",
+  "w": "For someone: do + iad = dóibh.",
+  "wg": "Do dhuine: do + iad = dóibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Scríobh sé amhrán ___ (do + mé).",
+  "prep": "do",
+  "p": "me",
+  "e": "He wrote a song for me.",
+  "w": "For someone: do + mé = dom.",
+  "wg": "Do dhuine: do + mé = dom.",
+  "b": "A2"
+ },
+ {
+  "q": "Taispeáin ___ (do + í) an pictiúr.",
+  "prep": "do",
+  "p": "si",
+  "e": "Show her the picture.",
+  "w": "Telling or showing goes to someone: do + í = di.",
+  "wg": "Inis do, taispeáin do: do + í = di.",
+  "b": "A2"
+ },
+ {
+  "q": "Taispeáin ___ (do + muid) an pictiúr.",
+  "prep": "do",
+  "p": "muid",
+  "e": "Show us the picture.",
+  "w": "Telling or showing goes to someone: do + muid = dúinn.",
+  "wg": "Inis do, taispeáin do: do + muid = dúinn.",
+  "b": "A2"
+ },
+ {
+  "q": "Taispeáin ___ (do + iad) an pictiúr.",
+  "prep": "do",
+  "p": "siad",
+  "e": "Show them the picture.",
+  "w": "Telling or showing goes to someone: do + iad = dóibh.",
+  "wg": "Inis do, taispeáin do: do + iad = dóibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Taispeáin ___ (do + mé) an pictiúr.",
+  "prep": "do",
+  "p": "me",
+  "e": "Show me the picture.",
+  "w": "Telling or showing goes to someone: do + mé = dom.",
+  "wg": "Inis do, taispeáin do: do + mé = dom.",
+  "b": "A2"
+ },
+ {
+  "q": "Mínigh ___ (do + mé) é.",
+  "prep": "do",
+  "p": "me",
+  "e": "Explain it to me.",
+  "w": "Telling or showing goes to someone: do + mé = dom.",
+  "wg": "Inis do, taispeáin do: do + mé = dom.",
+  "b": "A2"
+ },
+ {
+  "q": "Mínigh ___ (do + é) é.",
+  "prep": "do",
+  "p": "se",
+  "e": "Explain it to him.",
+  "w": "Telling or showing goes to someone: do + é = dó.",
+  "wg": "Inis do, taispeáin do: do + é = dó.",
+  "b": "A2"
+ },
+ {
+  "q": "Mínigh ___ (do + í) é.",
+  "prep": "do",
+  "p": "si",
+  "e": "Explain it to her.",
+  "w": "Telling or showing goes to someone: do + í = di.",
+  "wg": "Inis do, taispeáin do: do + í = di.",
+  "b": "A2"
+ },
+ {
+  "q": "Mínigh ___ (do + muid) é.",
+  "prep": "do",
+  "p": "muid",
+  "e": "Explain it to us.",
+  "w": "Telling or showing goes to someone: do + muid = dúinn.",
+  "wg": "Inis do, taispeáin do: do + muid = dúinn.",
+  "b": "A2"
+ },
+ {
+  "q": "Rinne mé cupán tae ___ (do + tú).",
+  "prep": "do",
+  "p": "tu",
+  "e": "I made you a cup of tea.",
+  "w": "For someone: do + tú = duit.",
+  "wg": "Do dhuine: do + tú = duit.",
+  "b": "A2"
+ },
+ {
+  "q": "Rinne mé cupán tae ___ (do + é).",
+  "prep": "do",
+  "p": "se",
+  "e": "I made him a cup of tea.",
+  "w": "For someone: do + é = dó.",
+  "wg": "Do dhuine: do + é = dó.",
+  "b": "A2"
+ },
+ {
+  "q": "Rinne mé cupán tae ___ (do + í).",
+  "prep": "do",
+  "p": "si",
+  "e": "I made her a cup of tea.",
+  "w": "For someone: do + í = di.",
+  "wg": "Do dhuine: do + í = di.",
+  "b": "A2"
+ },
+ {
+  "q": "Rinne mé cupán tae ___ (do + muid).",
+  "prep": "do",
+  "p": "muid",
+  "e": "I made us a cup of tea.",
+  "w": "For someone: do + muid = dúinn.",
+  "wg": "Do dhuine: do + muid = dúinn.",
+  "b": "A2"
+ },
+ {
+  "q": "D'oscail sé an doras ___ (do + muid).",
+  "prep": "do",
+  "p": "muid",
+  "e": "He opened the door for us.",
+  "w": "For someone: do + muid = dúinn.",
+  "wg": "Do dhuine: do + muid = dúinn.",
+  "b": "A2"
+ },
+ {
+  "q": "D'oscail sé an doras ___ (do + sibh).",
+  "prep": "do",
+  "p": "sibh",
+  "e": "He opened the door for you all.",
+  "w": "For someone: do + sibh = daoibh.",
+  "wg": "Do dhuine: do + sibh = daoibh.",
+  "b": "A2"
+ },
+ {
+  "q": "D'oscail sé an doras ___ (do + iad).",
+  "prep": "do",
+  "p": "siad",
+  "e": "He opened the door for them.",
+  "w": "For someone: do + iad = dóibh.",
+  "wg": "Do dhuine: do + iad = dóibh.",
+  "b": "A2"
+ },
+ {
+  "q": "D'oscail sé an doras ___ (do + mé).",
+  "prep": "do",
+  "p": "me",
+  "e": "He opened the door for me.",
+  "w": "For someone: do + mé = dom.",
+  "wg": "Do dhuine: do + mé = dom.",
+  "b": "A2"
+ },
+ {
+  "q": "Thug siad cuireadh ___ (do + mé).",
+  "prep": "do",
+  "p": "me",
+  "e": "They invited me.",
+  "w": "Giving goes to someone: do + mé = dom.",
+  "wg": "Tabhair do: do + mé = dom.",
+  "b": "A2"
+ },
+ {
+  "q": "Thug siad cuireadh ___ (do + tú).",
+  "prep": "do",
+  "p": "tu",
+  "e": "They invited you.",
+  "w": "Giving goes to someone: do + tú = duit.",
+  "wg": "Tabhair do: do + tú = duit.",
+  "b": "A2"
+ },
+ {
+  "q": "Thug siad cuireadh ___ (do + é).",
+  "prep": "do",
+  "p": "se",
+  "e": "They invited him.",
+  "w": "Giving goes to someone: do + é = dó.",
+  "wg": "Tabhair do: do + é = dó.",
+  "b": "A2"
+ },
+ {
+  "q": "Thug siad cuireadh ___ (do + í).",
+  "prep": "do",
+  "p": "si",
+  "e": "They invited her.",
+  "w": "Giving goes to someone: do + í = di.",
+  "wg": "Tabhair do: do + í = di.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá sé go maith ___ (do + iad).",
+  "prep": "do",
+  "p": "siad",
+  "e": "It's good for them.",
+  "w": "For someone: do + iad = dóibh.",
+  "wg": "Do dhuine: do + iad = dóibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá sé go maith ___ (do + mé).",
+  "prep": "do",
+  "p": "me",
+  "e": "It's good for me.",
+  "w": "For someone: do + mé = dom.",
+  "wg": "Do dhuine: do + mé = dom.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá sé go maith ___ (do + tú).",
+  "prep": "do",
+  "p": "tu",
+  "e": "It's good for you.",
+  "w": "For someone: do + tú = duit.",
+  "wg": "Do dhuine: do + tú = duit.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá sé go maith ___ (do + é).",
+  "prep": "do",
+  "p": "se",
+  "e": "It's good for him.",
+  "w": "For someone: do + é = dó.",
+  "wg": "Do dhuine: do + é = dó.",
+  "b": "A2"
+ },
+ {
+  "q": "Ar inis tú ___ (do + mé) faoi?",
+  "prep": "do",
+  "p": "me",
+  "e": "Did you tell me about it?",
+  "w": "Telling or showing goes to someone: do + mé = dom.",
+  "wg": "Inis do, taispeáin do: do + mé = dom.",
+  "b": "A2"
+ },
+ {
+  "q": "Ar inis tú ___ (do + é) faoi?",
+  "prep": "do",
+  "p": "se",
+  "e": "Did you tell him about it?",
+  "w": "Telling or showing goes to someone: do + é = dó.",
+  "wg": "Inis do, taispeáin do: do + é = dó.",
+  "b": "A2"
+ },
+ {
+  "q": "Ar inis tú ___ (do + í) faoi?",
+  "prep": "do",
+  "p": "si",
+  "e": "Did you tell her about it?",
+  "w": "Telling or showing goes to someone: do + í = di.",
+  "wg": "Inis do, taispeáin do: do + í = di.",
+  "b": "A2"
+ },
+ {
+  "q": "Ar inis tú ___ (do + muid) faoi?",
+  "prep": "do",
+  "p": "muid",
+  "e": "Did you tell us about it?",
+  "w": "Telling or showing goes to someone: do + muid = dúinn.",
+  "wg": "Inis do, taispeáin do: do + muid = dúinn.",
+  "b": "A2"
+ },
+ {
+  "q": "Lig ___ (do + muid) imeacht.",
+  "prep": "do",
+  "p": "muid",
+  "e": "Let us go.",
+  "w": "Giving goes to someone: do + muid = dúinn.",
+  "wg": "Tabhair do: do + muid = dúinn.",
+  "b": "A2"
+ },
+ {
+  "q": "Lig ___ (do + iad) imeacht.",
+  "prep": "do",
+  "p": "siad",
+  "e": "Let them go.",
+  "w": "Giving goes to someone: do + iad = dóibh.",
+  "wg": "Tabhair do: do + iad = dóibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Lig ___ (do + mé) imeacht.",
+  "prep": "do",
+  "p": "me",
+  "e": "Let me go.",
+  "w": "Giving goes to someone: do + mé = dom.",
+  "wg": "Tabhair do: do + mé = dom.",
+  "b": "A2"
+ },
+ {
+  "q": "Lig ___ (do + é) imeacht.",
+  "prep": "do",
+  "p": "se",
+  "e": "Let him go.",
+  "w": "Giving goes to someone: do + é = dó.",
+  "wg": "Tabhair do: do + é = dó.",
+  "b": "A2"
+ }
+]

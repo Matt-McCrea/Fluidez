@@ -1,0 +1,137 @@
+[
+ {
+  "q": "D'fhiafraigh sí ___ (de + mé) cén t-am é.",
+  "prep": "de",
+  "p": "me",
+  "e": "She asked me what time it was.",
+  "w": "Asking someone is fiafraigh de: de + mé = díom.",
+  "wg": "Fiafraigh de: de + mé = díom.",
+  "b": "B1"
+ },
+ {
+  "q": "D'fhiafraigh sí ___ (de + tú) cén t-am é.",
+  "prep": "de",
+  "p": "tu",
+  "e": "She asked you what time it was.",
+  "w": "Asking someone is fiafraigh de: de + tú = díot.",
+  "wg": "Fiafraigh de: de + tú = díot.",
+  "b": "B1"
+ },
+ {
+  "q": "D'fhiafraigh sí ___ (de + é) cén t-am é.",
+  "prep": "de",
+  "p": "se",
+  "e": "She asked him what time it was.",
+  "w": "Asking someone is fiafraigh de: de + é = de.",
+  "wg": "Fiafraigh de: de + é = de.",
+  "b": "B1"
+ },
+ {
+  "q": "D'fhiafraigh sí ___ (de + muid) cén t-am é.",
+  "prep": "de",
+  "p": "muid",
+  "e": "She asked us what time it was.",
+  "w": "Asking someone is fiafraigh de: de + muid = dínn.",
+  "wg": "Fiafraigh de: de + muid = dínn.",
+  "b": "B1"
+ },
+ {
+  "q": "D'fhiafraigh sí ___ (de + sibh) cén t-am é.",
+  "prep": "de",
+  "p": "sibh",
+  "e": "She asked you all what time it was.",
+  "w": "Asking someone is fiafraigh de: de + sibh = díbh.",
+  "wg": "Fiafraigh de: de + sibh = díbh.",
+  "b": "B1"
+ },
+ {
+  "q": "Fiafraigh ___ (de + é) cá bhfuil an stáisiún.",
+  "prep": "de",
+  "p": "se",
+  "e": "Ask him where the station is.",
+  "w": "Asking someone is fiafraigh de: de + é = de.",
+  "wg": "Fiafraigh de: de + é = de.",
+  "b": "B1"
+ },
+ {
+  "q": "Fiafraigh ___ (de + í) cá bhfuil an stáisiún.",
+  "prep": "de",
+  "p": "si",
+  "e": "Ask her where the station is.",
+  "w": "Asking someone is fiafraigh de: de + í = di.",
+  "wg": "Fiafraigh de: de + í = di.",
+  "b": "B1"
+ },
+ {
+  "q": "Fiafraigh ___ (de + muid) cá bhfuil an stáisiún.",
+  "prep": "de",
+  "p": "muid",
+  "e": "Ask us where the station is.",
+  "w": "Asking someone is fiafraigh de: de + muid = dínn.",
+  "wg": "Fiafraigh de: de + muid = dínn.",
+  "b": "B1"
+ },
+ {
+  "q": "Fiafraigh ___ (de + iad) cá bhfuil an stáisiún.",
+  "prep": "de",
+  "p": "siad",
+  "e": "Ask them where the station is.",
+  "w": "Asking someone is fiafraigh de: de + iad = díobh.",
+  "wg": "Fiafraigh de: de + iad = díobh.",
+  "b": "B1"
+ },
+ {
+  "q": "Fiafraigh ___ (de + mé) cá bhfuil an stáisiún.",
+  "prep": "de",
+  "p": "me",
+  "e": "Ask me where the station is.",
+  "w": "Asking someone is fiafraigh de: de + mé = díom.",
+  "wg": "Fiafraigh de: de + mé = díom.",
+  "b": "B1"
+ },
+ {
+  "q": "Thit an hata ___ (de + é).",
+  "prep": "de",
+  "p": "se",
+  "e": "The hat fell off him.",
+  "w": "Off someone: de + é = de.",
+  "wg": "De dhuine: de + é = de.",
+  "b": "B1"
+ },
+ {
+  "q": "Thit an hata ___ (de + í).",
+  "prep": "de",
+  "p": "si",
+  "e": "The hat fell off her.",
+  "w": "Off someone: de + í = di.",
+  "wg": "De dhuine: de + í = di.",
+  "b": "B1"
+ },
+ {
+  "q": "Thit an hata ___ (de + muid).",
+  "prep": "de",
+  "p": "muid",
+  "e": "The hat fell off us.",
+  "w": "Off someone: de + muid = dínn.",
+  "wg": "De dhuine: de + muid = dínn.",
+  "b": "B1"
+ },
+ {
+  "q": "Thit an hata ___ (de + sibh).",
+  "prep": "de",
+  "p": "sibh",
+  "e": "The hat fell off you all.",
+  "w": "Off someone: de + sibh = díbh.",
+  "wg": "De dhuine: de + sibh = díbh.",
+  "b": "B1"
+ },
+ {
+  "q": "Thit an hata ___ (de + iad).",
+  "prep": "de",
+  "p": "siad",
+  "e": "The hat fell off them.",
+  "w": "Off someone: de + iad = díobh.",
+  "wg": "De dhuine: de + iad = díobh.",
+  "b": "B1"
+ }
+]

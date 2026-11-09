@@ -1,0 +1,830 @@
+[
+ {
+  "q": "Tá carr nua ___ (ag + mé).",
+  "prep": "ag",
+  "p": "me",
+  "e": "I have a new car.",
+  "w": "Having is \"at\" you: ag + mé = agam.",
+  "wg": "Seilbh: ag + mé = agam.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá carr nua ___ (ag + tú).",
+  "prep": "ag",
+  "p": "tu",
+  "e": "You have a new car.",
+  "w": "Having is \"at\" you: ag + tú = agat.",
+  "wg": "Seilbh: ag + tú = agat.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá carr nua ___ (ag + é).",
+  "prep": "ag",
+  "p": "se",
+  "e": "He has a new car.",
+  "w": "Having is \"at\" you: ag + é = aige.",
+  "wg": "Seilbh: ag + é = aige.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá carr nua ___ (ag + í).",
+  "prep": "ag",
+  "p": "si",
+  "e": "She has a new car.",
+  "w": "Having is \"at\" you: ag + í = aici.",
+  "wg": "Seilbh: ag + í = aici.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá madra beag ___ (ag + í).",
+  "prep": "ag",
+  "p": "si",
+  "e": "She has a little dog.",
+  "w": "Having is \"at\" you: ag + í = aici.",
+  "wg": "Seilbh: ag + í = aici.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá madra beag ___ (ag + muid).",
+  "prep": "ag",
+  "p": "muid",
+  "e": "We have a little dog.",
+  "w": "Having is \"at\" you: ag + muid = againn.",
+  "wg": "Seilbh: ag + muid = againn.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá madra beag ___ (ag + sibh).",
+  "prep": "ag",
+  "p": "sibh",
+  "e": "You all have a little dog.",
+  "w": "Having is \"at\" you: ag + sibh = agaibh.",
+  "wg": "Seilbh: ag + sibh = agaibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá madra beag ___ (ag + iad).",
+  "prep": "ag",
+  "p": "siad",
+  "e": "They have a little dog.",
+  "w": "Having is \"at\" you: ag + iad = acu.",
+  "wg": "Seilbh: ag + iad = acu.",
+  "b": "A1"
+ },
+ {
+  "q": "An bhfuil peann ___ (ag + tú)?",
+  "prep": "ag",
+  "p": "tu",
+  "e": "Do you have a pen?",
+  "w": "Having is \"at\" you: ag + tú = agat.",
+  "wg": "Seilbh: ag + tú = agat.",
+  "b": "A1"
+ },
+ {
+  "q": "An bhfuil peann ___ (ag + é)?",
+  "prep": "ag",
+  "p": "se",
+  "e": "Does he have a pen?",
+  "w": "Having is \"at\" you: ag + é = aige.",
+  "wg": "Seilbh: ag + é = aige.",
+  "b": "A1"
+ },
+ {
+  "q": "An bhfuil peann ___ (ag + í)?",
+  "prep": "ag",
+  "p": "si",
+  "e": "Does she have a pen?",
+  "w": "Having is \"at\" you: ag + í = aici.",
+  "wg": "Seilbh: ag + í = aici.",
+  "b": "A1"
+ },
+ {
+  "q": "An bhfuil peann ___ (ag + muid)?",
+  "prep": "ag",
+  "p": "muid",
+  "e": "Do we have a pen?",
+  "w": "Having is \"at\" you: ag + muid = againn.",
+  "wg": "Seilbh: ag + muid = againn.",
+  "b": "A1"
+ },
+ {
+  "q": "Níl aon airgead ___ (ag + é).",
+  "prep": "ag",
+  "p": "se",
+  "e": "He doesn't have any money.",
+  "w": "Having is \"at\" you: ag + é = aige.",
+  "wg": "Seilbh: ag + é = aige.",
+  "b": "A1"
+ },
+ {
+  "q": "Níl aon airgead ___ (ag + í).",
+  "prep": "ag",
+  "p": "si",
+  "e": "She doesn't have any money.",
+  "w": "Having is \"at\" you: ag + í = aici.",
+  "wg": "Seilbh: ag + í = aici.",
+  "b": "A1"
+ },
+ {
+  "q": "Níl aon airgead ___ (ag + muid).",
+  "prep": "ag",
+  "p": "muid",
+  "e": "We don't have any money.",
+  "w": "Having is \"at\" you: ag + muid = againn.",
+  "wg": "Seilbh: ag + muid = againn.",
+  "b": "A1"
+ },
+ {
+  "q": "Níl aon airgead ___ (ag + sibh).",
+  "prep": "ag",
+  "p": "sibh",
+  "e": "You all don't have any money.",
+  "w": "Having is \"at\" you: ag + sibh = agaibh.",
+  "wg": "Seilbh: ag + sibh = agaibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá beirt deartháireacha ___ (ag + sibh).",
+  "prep": "ag",
+  "p": "sibh",
+  "e": "You all have two brothers.",
+  "w": "Having is \"at\" you: ag + sibh = agaibh.",
+  "wg": "Seilbh: ag + sibh = agaibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá beirt deartháireacha ___ (ag + iad).",
+  "prep": "ag",
+  "p": "siad",
+  "e": "They have two brothers.",
+  "w": "Having is \"at\" you: ag + iad = acu.",
+  "wg": "Seilbh: ag + iad = acu.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá beirt deartháireacha ___ (ag + mé).",
+  "prep": "ag",
+  "p": "me",
+  "e": "I have two brothers.",
+  "w": "Having is \"at\" you: ag + mé = agam.",
+  "wg": "Seilbh: ag + mé = agam.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá beirt deartháireacha ___ (ag + tú).",
+  "prep": "ag",
+  "p": "tu",
+  "e": "You have two brothers.",
+  "w": "Having is \"at\" you: ag + tú = agat.",
+  "wg": "Seilbh: ag + tú = agat.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá teach mór ___ (ag + tú) faoin tuath.",
+  "prep": "ag",
+  "p": "tu",
+  "e": "You have a big house in the country.",
+  "w": "Having is \"at\" you: ag + tú = agat.",
+  "wg": "Seilbh: ag + tú = agat.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá teach mór ___ (ag + é) faoin tuath.",
+  "prep": "ag",
+  "p": "se",
+  "e": "He has a big house in the country.",
+  "w": "Having is \"at\" you: ag + é = aige.",
+  "wg": "Seilbh: ag + é = aige.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá teach mór ___ (ag + í) faoin tuath.",
+  "prep": "ag",
+  "p": "si",
+  "e": "She has a big house in the country.",
+  "w": "Having is \"at\" you: ag + í = aici.",
+  "wg": "Seilbh: ag + í = aici.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá teach mór ___ (ag + muid) faoin tuath.",
+  "prep": "ag",
+  "p": "muid",
+  "e": "We have a big house in the country.",
+  "w": "Having is \"at\" you: ag + muid = againn.",
+  "wg": "Seilbh: ag + muid = againn.",
+  "b": "A1"
+ },
+ {
+  "q": "Bhí rothar dearg ___ (ag + muid) fadó.",
+  "prep": "ag",
+  "p": "muid",
+  "e": "We had a red bike long ago.",
+  "w": "Having is \"at\" you: ag + muid = againn.",
+  "wg": "Seilbh: ag + muid = againn.",
+  "b": "A1"
+ },
+ {
+  "q": "Bhí rothar dearg ___ (ag + sibh) fadó.",
+  "prep": "ag",
+  "p": "sibh",
+  "e": "You all had a red bike long ago.",
+  "w": "Having is \"at\" you: ag + sibh = agaibh.",
+  "wg": "Seilbh: ag + sibh = agaibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Bhí rothar dearg ___ (ag + iad) fadó.",
+  "prep": "ag",
+  "p": "siad",
+  "e": "They had a red bike long ago.",
+  "w": "Having is \"at\" you: ag + iad = acu.",
+  "wg": "Seilbh: ag + iad = acu.",
+  "b": "A1"
+ },
+ {
+  "q": "Bhí rothar dearg ___ (ag + mé) fadó.",
+  "prep": "ag",
+  "p": "me",
+  "e": "I had a red bike long ago.",
+  "w": "Having is \"at\" you: ag + mé = agam.",
+  "wg": "Seilbh: ag + mé = agam.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá Gaeilge mhaith ___ (ag + mé).",
+  "prep": "ag",
+  "p": "me",
+  "e": "I speak good Irish.",
+  "w": "Having is \"at\" you: ag + mé = agam.",
+  "wg": "Seilbh: ag + mé = agam.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá Gaeilge mhaith ___ (ag + tú).",
+  "prep": "ag",
+  "p": "tu",
+  "e": "You speak good Irish.",
+  "w": "Having is \"at\" you: ag + tú = agat.",
+  "wg": "Seilbh: ag + tú = agat.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá Gaeilge mhaith ___ (ag + é).",
+  "prep": "ag",
+  "p": "se",
+  "e": "He speaks good Irish.",
+  "w": "Having is \"at\" you: ag + é = aige.",
+  "wg": "Seilbh: ag + é = aige.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá Gaeilge mhaith ___ (ag + í).",
+  "prep": "ag",
+  "p": "si",
+  "e": "She speaks good Irish.",
+  "w": "Having is \"at\" you: ag + í = aici.",
+  "wg": "Seilbh: ag + í = aici.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá a lán oibre ___ (ag + í) inniu.",
+  "prep": "ag",
+  "p": "si",
+  "e": "She has a lot of work today.",
+  "w": "Having is \"at\" you: ag + í = aici.",
+  "wg": "Seilbh: ag + í = aici.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá a lán oibre ___ (ag + muid) inniu.",
+  "prep": "ag",
+  "p": "muid",
+  "e": "We have a lot of work today.",
+  "w": "Having is \"at\" you: ag + muid = againn.",
+  "wg": "Seilbh: ag + muid = againn.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá a lán oibre ___ (ag + sibh) inniu.",
+  "prep": "ag",
+  "p": "sibh",
+  "e": "You all have a lot of work today.",
+  "w": "Having is \"at\" you: ag + sibh = agaibh.",
+  "wg": "Seilbh: ag + sibh = agaibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá a lán oibre ___ (ag + iad) inniu.",
+  "prep": "ag",
+  "p": "siad",
+  "e": "They have a lot of work today.",
+  "w": "Having is \"at\" you: ag + iad = acu.",
+  "wg": "Seilbh: ag + iad = acu.",
+  "b": "A1"
+ },
+ {
+  "q": "Níl am ___ (ag + iad) anois.",
+  "prep": "ag",
+  "p": "siad",
+  "e": "They don't have time now.",
+  "w": "Having is \"at\" you: ag + iad = acu.",
+  "wg": "Seilbh: ag + iad = acu.",
+  "b": "A1"
+ },
+ {
+  "q": "Níl am ___ (ag + mé) anois.",
+  "prep": "ag",
+  "p": "me",
+  "e": "I don't have time now.",
+  "w": "Having is \"at\" you: ag + mé = agam.",
+  "wg": "Seilbh: ag + mé = agam.",
+  "b": "A1"
+ },
+ {
+  "q": "Níl am ___ (ag + tú) anois.",
+  "prep": "ag",
+  "p": "tu",
+  "e": "You don't have time now.",
+  "w": "Having is \"at\" you: ag + tú = agat.",
+  "wg": "Seilbh: ag + tú = agat.",
+  "b": "A1"
+ },
+ {
+  "q": "Níl am ___ (ag + é) anois.",
+  "prep": "ag",
+  "p": "se",
+  "e": "He doesn't have time now.",
+  "w": "Having is \"at\" you: ag + é = aige.",
+  "wg": "Seilbh: ag + é = aige.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá aithne ___ (ag + é) ar Sheán.",
+  "prep": "ag",
+  "p": "se",
+  "e": "He knows Seán.",
+  "w": "Knowing a person is aithne ag: ag + é = aige.",
+  "wg": "Aithne ag duine ar dhuine: ag + é = aige.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá aithne ___ (ag + í) ar Sheán.",
+  "prep": "ag",
+  "p": "si",
+  "e": "She knows Seán.",
+  "w": "Knowing a person is aithne ag: ag + í = aici.",
+  "wg": "Aithne ag duine ar dhuine: ag + í = aici.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá aithne ___ (ag + muid) ar Sheán.",
+  "prep": "ag",
+  "p": "muid",
+  "e": "We know Seán.",
+  "w": "Knowing a person is aithne ag: ag + muid = againn.",
+  "wg": "Aithne ag duine ar dhuine: ag + muid = againn.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá aithne ___ (ag + sibh) ar Sheán.",
+  "prep": "ag",
+  "p": "sibh",
+  "e": "You all know Seán.",
+  "w": "Knowing a person is aithne ag: ag + sibh = agaibh.",
+  "wg": "Aithne ag duine ar dhuine: ag + sibh = agaibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá suim mhór ___ (ag + sibh) sa cheol.",
+  "prep": "ag",
+  "p": "sibh",
+  "e": "You're all very interested in music.",
+  "w": "Having is \"at\" you: ag + sibh = agaibh.",
+  "wg": "Seilbh: ag + sibh = agaibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá suim mhór ___ (ag + iad) sa cheol.",
+  "prep": "ag",
+  "p": "siad",
+  "e": "They're very interested in music.",
+  "w": "Having is \"at\" you: ag + iad = acu.",
+  "wg": "Seilbh: ag + iad = acu.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá suim mhór ___ (ag + mé) sa cheol.",
+  "prep": "ag",
+  "p": "me",
+  "e": "I'm very interested in music.",
+  "w": "Having is \"at\" you: ag + mé = agam.",
+  "wg": "Seilbh: ag + mé = agam.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá suim mhór ___ (ag + tú) sa cheol.",
+  "prep": "ag",
+  "p": "tu",
+  "e": "You're very interested in music.",
+  "w": "Having is \"at\" you: ag + tú = agat.",
+  "wg": "Seilbh: ag + tú = agat.",
+  "b": "A2"
+ },
+ {
+  "q": "Beidh cóisir ___ (ag + tú) Dé Sathairn.",
+  "prep": "ag",
+  "p": "tu",
+  "e": "You will have a party on Saturday.",
+  "w": "Having is \"at\" you: ag + tú = agat.",
+  "wg": "Seilbh: ag + tú = agat.",
+  "b": "A1"
+ },
+ {
+  "q": "Beidh cóisir ___ (ag + é) Dé Sathairn.",
+  "prep": "ag",
+  "p": "se",
+  "e": "He will have a party on Saturday.",
+  "w": "Having is \"at\" you: ag + é = aige.",
+  "wg": "Seilbh: ag + é = aige.",
+  "b": "A1"
+ },
+ {
+  "q": "Beidh cóisir ___ (ag + í) Dé Sathairn.",
+  "prep": "ag",
+  "p": "si",
+  "e": "She will have a party on Saturday.",
+  "w": "Having is \"at\" you: ag + í = aici.",
+  "wg": "Seilbh: ag + í = aici.",
+  "b": "A1"
+ },
+ {
+  "q": "Beidh cóisir ___ (ag + muid) Dé Sathairn.",
+  "prep": "ag",
+  "p": "muid",
+  "e": "We will have a party on Saturday.",
+  "w": "Having is \"at\" you: ag + muid = againn.",
+  "wg": "Seilbh: ag + muid = againn.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá fón póca nua ___ (ag + muid).",
+  "prep": "ag",
+  "p": "muid",
+  "e": "We have a new mobile phone.",
+  "w": "Having is \"at\" you: ag + muid = againn.",
+  "wg": "Seilbh: ag + muid = againn.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá fón póca nua ___ (ag + sibh).",
+  "prep": "ag",
+  "p": "sibh",
+  "e": "You all have a new mobile phone.",
+  "w": "Having is \"at\" you: ag + sibh = agaibh.",
+  "wg": "Seilbh: ag + sibh = agaibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá fón póca nua ___ (ag + iad).",
+  "prep": "ag",
+  "p": "siad",
+  "e": "They have a new mobile phone.",
+  "w": "Having is \"at\" you: ag + iad = acu.",
+  "wg": "Seilbh: ag + iad = acu.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá fón póca nua ___ (ag + mé).",
+  "prep": "ag",
+  "p": "me",
+  "e": "I have a new mobile phone.",
+  "w": "Having is \"at\" you: ag + mé = agam.",
+  "wg": "Seilbh: ag + mé = agam.",
+  "b": "A1"
+ },
+ {
+  "q": "Cé mhéad páiste atá ___ (ag + tú)?",
+  "prep": "ag",
+  "p": "tu",
+  "e": "How many children do you have?",
+  "w": "Having is \"at\" you: ag + tú = agat.",
+  "wg": "Seilbh: ag + tú = agat.",
+  "b": "A1"
+ },
+ {
+  "q": "Cé mhéad páiste atá ___ (ag + é)?",
+  "prep": "ag",
+  "p": "se",
+  "e": "How many children does he have?",
+  "w": "Having is \"at\" you: ag + é = aige.",
+  "wg": "Seilbh: ag + é = aige.",
+  "b": "A1"
+ },
+ {
+  "q": "Cé mhéad páiste atá ___ (ag + í)?",
+  "prep": "ag",
+  "p": "si",
+  "e": "How many children does she have?",
+  "w": "Having is \"at\" you: ag + í = aici.",
+  "wg": "Seilbh: ag + í = aici.",
+  "b": "A1"
+ },
+ {
+  "q": "Cé mhéad páiste atá ___ (ag + muid)?",
+  "prep": "ag",
+  "p": "muid",
+  "e": "How many children do we have?",
+  "w": "Having is \"at\" you: ag + muid = againn.",
+  "wg": "Seilbh: ag + muid = againn.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá an eochair ___ (ag + í).",
+  "prep": "ag",
+  "p": "si",
+  "e": "She has the key.",
+  "w": "Having is \"at\" you: ag + í = aici.",
+  "wg": "Seilbh: ag + í = aici.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá an eochair ___ (ag + muid).",
+  "prep": "ag",
+  "p": "muid",
+  "e": "We have the key.",
+  "w": "Having is \"at\" you: ag + muid = againn.",
+  "wg": "Seilbh: ag + muid = againn.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá an eochair ___ (ag + sibh).",
+  "prep": "ag",
+  "p": "sibh",
+  "e": "You all have the key.",
+  "w": "Having is \"at\" you: ag + sibh = agaibh.",
+  "wg": "Seilbh: ag + sibh = agaibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá an eochair ___ (ag + iad).",
+  "prep": "ag",
+  "p": "siad",
+  "e": "They have the key.",
+  "w": "Having is \"at\" you: ag + iad = acu.",
+  "wg": "Seilbh: ag + iad = acu.",
+  "b": "A1"
+ },
+ {
+  "q": "Bhí am iontach ___ (ag + iad) sa Spáinn.",
+  "prep": "ag",
+  "p": "siad",
+  "e": "They had a great time in Spain.",
+  "w": "Having is \"at\" you: ag + iad = acu.",
+  "wg": "Seilbh: ag + iad = acu.",
+  "b": "A1"
+ },
+ {
+  "q": "Bhí am iontach ___ (ag + mé) sa Spáinn.",
+  "prep": "ag",
+  "p": "me",
+  "e": "I had a great time in Spain.",
+  "w": "Having is \"at\" you: ag + mé = agam.",
+  "wg": "Seilbh: ag + mé = agam.",
+  "b": "A1"
+ },
+ {
+  "q": "Bhí am iontach ___ (ag + tú) sa Spáinn.",
+  "prep": "ag",
+  "p": "tu",
+  "e": "You had a great time in Spain.",
+  "w": "Having is \"at\" you: ag + tú = agat.",
+  "wg": "Seilbh: ag + tú = agat.",
+  "b": "A1"
+ },
+ {
+  "q": "Bhí am iontach ___ (ag + é) sa Spáinn.",
+  "prep": "ag",
+  "p": "se",
+  "e": "He had a great time in Spain.",
+  "w": "Having is \"at\" you: ag + é = aige.",
+  "wg": "Seilbh: ag + é = aige.",
+  "b": "A1"
+ },
+ {
+  "q": "Níl tuairim ___ (ag + é).",
+  "prep": "ag",
+  "p": "se",
+  "e": "He has no idea.",
+  "w": "Having is \"at\" you: ag + é = aige.",
+  "wg": "Seilbh: ag + é = aige.",
+  "b": "A1"
+ },
+ {
+  "q": "Níl tuairim ___ (ag + í).",
+  "prep": "ag",
+  "p": "si",
+  "e": "She has no idea.",
+  "w": "Having is \"at\" you: ag + í = aici.",
+  "wg": "Seilbh: ag + í = aici.",
+  "b": "A1"
+ },
+ {
+  "q": "Níl tuairim ___ (ag + muid).",
+  "prep": "ag",
+  "p": "muid",
+  "e": "We have no idea.",
+  "w": "Having is \"at\" you: ag + muid = againn.",
+  "wg": "Seilbh: ag + muid = againn.",
+  "b": "A1"
+ },
+ {
+  "q": "Níl tuairim ___ (ag + sibh).",
+  "prep": "ag",
+  "p": "sibh",
+  "e": "You all have no idea.",
+  "w": "Having is \"at\" you: ag + sibh = agaibh.",
+  "wg": "Seilbh: ag + sibh = agaibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá deirfiúr amháin ___ (ag + sibh).",
+  "prep": "ag",
+  "p": "sibh",
+  "e": "You all have one sister.",
+  "w": "Having is \"at\" you: ag + sibh = agaibh.",
+  "wg": "Seilbh: ag + sibh = agaibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá deirfiúr amháin ___ (ag + iad).",
+  "prep": "ag",
+  "p": "siad",
+  "e": "They have one sister.",
+  "w": "Having is \"at\" you: ag + iad = acu.",
+  "wg": "Seilbh: ag + iad = acu.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá deirfiúr amháin ___ (ag + mé).",
+  "prep": "ag",
+  "p": "me",
+  "e": "I have one sister.",
+  "w": "Having is \"at\" you: ag + mé = agam.",
+  "wg": "Seilbh: ag + mé = agam.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá deirfiúr amháin ___ (ag + tú).",
+  "prep": "ag",
+  "p": "tu",
+  "e": "You have one sister.",
+  "w": "Having is \"at\" you: ag + tú = agat.",
+  "wg": "Seilbh: ag + tú = agat.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá post nua ___ (ag + tú) sa bhanc.",
+  "prep": "ag",
+  "p": "tu",
+  "e": "You have a new job in the bank.",
+  "w": "Having is \"at\" you: ag + tú = agat.",
+  "wg": "Seilbh: ag + tú = agat.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá post nua ___ (ag + é) sa bhanc.",
+  "prep": "ag",
+  "p": "se",
+  "e": "He has a new job in the bank.",
+  "w": "Having is \"at\" you: ag + é = aige.",
+  "wg": "Seilbh: ag + é = aige.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá post nua ___ (ag + í) sa bhanc.",
+  "prep": "ag",
+  "p": "si",
+  "e": "She has a new job in the bank.",
+  "w": "Having is \"at\" you: ag + í = aici.",
+  "wg": "Seilbh: ag + í = aici.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá post nua ___ (ag + muid) sa bhanc.",
+  "prep": "ag",
+  "p": "muid",
+  "e": "We have a new job in the bank.",
+  "w": "Having is \"at\" you: ag + muid = againn.",
+  "wg": "Seilbh: ag + muid = againn.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá ticéid ___ (ag + muid) don cheolchoirm.",
+  "prep": "ag",
+  "p": "muid",
+  "e": "We have tickets for the concert.",
+  "w": "Having is \"at\" you: ag + muid = againn.",
+  "wg": "Seilbh: ag + muid = againn.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá ticéid ___ (ag + sibh) don cheolchoirm.",
+  "prep": "ag",
+  "p": "sibh",
+  "e": "You all have tickets for the concert.",
+  "w": "Having is \"at\" you: ag + sibh = agaibh.",
+  "wg": "Seilbh: ag + sibh = agaibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá ticéid ___ (ag + iad) don cheolchoirm.",
+  "prep": "ag",
+  "p": "siad",
+  "e": "They have tickets for the concert.",
+  "w": "Having is \"at\" you: ag + iad = acu.",
+  "wg": "Seilbh: ag + iad = acu.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá ticéid ___ (ag + mé) don cheolchoirm.",
+  "prep": "ag",
+  "p": "me",
+  "e": "I have tickets for the concert.",
+  "w": "Having is \"at\" you: ag + mé = agam.",
+  "wg": "Seilbh: ag + mé = agam.",
+  "b": "A1"
+ },
+ {
+  "q": "An bhfuil deartháir ___ (ag + muid)?",
+  "prep": "ag",
+  "p": "muid",
+  "e": "Do we have a brother?",
+  "w": "Having is \"at\" you: ag + muid = againn.",
+  "wg": "Seilbh: ag + muid = againn.",
+  "b": "A1"
+ },
+ {
+  "q": "An bhfuil deartháir ___ (ag + sibh)?",
+  "prep": "ag",
+  "p": "sibh",
+  "e": "Do you all have a brother?",
+  "w": "Having is \"at\" you: ag + sibh = agaibh.",
+  "wg": "Seilbh: ag + sibh = agaibh.",
+  "b": "A1"
+ },
+ {
+  "q": "An bhfuil deartháir ___ (ag + iad)?",
+  "prep": "ag",
+  "p": "siad",
+  "e": "Do they have a brother?",
+  "w": "Having is \"at\" you: ag + iad = acu.",
+  "wg": "Seilbh: ag + iad = acu.",
+  "b": "A1"
+ },
+ {
+  "q": "An bhfuil deartháir ___ (ag + tú)?",
+  "prep": "ag",
+  "p": "tu",
+  "e": "Do you have a brother?",
+  "w": "Having is \"at\" you: ag + tú = agat.",
+  "wg": "Seilbh: ag + tú = agat.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá cat dubh ___ (ag + í) sa bhaile.",
+  "prep": "ag",
+  "p": "si",
+  "e": "She has a black cat at home.",
+  "w": "Having is \"at\" you: ag + í = aici.",
+  "wg": "Seilbh: ag + í = aici.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá cat dubh ___ (ag + muid) sa bhaile.",
+  "prep": "ag",
+  "p": "muid",
+  "e": "We have a black cat at home.",
+  "w": "Having is \"at\" you: ag + muid = againn.",
+  "wg": "Seilbh: ag + muid = againn.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá cat dubh ___ (ag + sibh) sa bhaile.",
+  "prep": "ag",
+  "p": "sibh",
+  "e": "You all have a black cat at home.",
+  "w": "Having is \"at\" you: ag + sibh = agaibh.",
+  "wg": "Seilbh: ag + sibh = agaibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá cat dubh ___ (ag + iad) sa bhaile.",
+  "prep": "ag",
+  "p": "siad",
+  "e": "They have a black cat at home.",
+  "w": "Having is \"at\" you: ag + iad = acu.",
+  "wg": "Seilbh: ag + iad = acu.",
+  "b": "A1"
+ }
+]

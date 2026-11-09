@@ -5,3 +5,6 @@ node_modules/
 spec/
 tools/harvest/cache/
 js/lib.bundle.js.map
+
+# Líofa: BuNaMo and the frequency list, cloned by hand (see tools/ga/build-verbs.js)
+tools/ga/vendor/

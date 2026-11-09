@@ -1,0 +1,164 @@
+[
+ {
+  "q": "Tá mé bródúil ___ (as + muid).",
+  "prep": "as",
+  "p": "muid",
+  "e": "I'm proud of us.",
+  "w": "Proud of and trust in take as: as + muid = asainn.",
+  "wg": "Bródúil as, muinín as: as + muid = asainn.",
+  "b": "B1"
+ },
+ {
+  "q": "Tá mé bródúil ___ (as + sibh).",
+  "prep": "as",
+  "p": "sibh",
+  "e": "I'm proud of you all.",
+  "w": "Proud of and trust in take as: as + sibh = asaibh.",
+  "wg": "Bródúil as, muinín as: as + sibh = asaibh.",
+  "b": "B1"
+ },
+ {
+  "q": "Tá mé bródúil ___ (as + iad).",
+  "prep": "as",
+  "p": "siad",
+  "e": "I'm proud of them.",
+  "w": "Proud of and trust in take as: as + iad = astu.",
+  "wg": "Bródúil as, muinín as: as + iad = astu.",
+  "b": "B1"
+ },
+ {
+  "q": "Tá mé bródúil ___ (as + tú).",
+  "prep": "as",
+  "p": "tu",
+  "e": "I'm proud of you.",
+  "w": "Proud of and trust in take as: as + tú = asat.",
+  "wg": "Bródúil as, muinín as: as + tú = asat.",
+  "b": "B1"
+ },
+ {
+  "q": "Tá mé bródúil ___ (as + é).",
+  "prep": "as",
+  "p": "se",
+  "e": "I'm proud of him.",
+  "w": "Proud of and trust in take as: as + é = as.",
+  "wg": "Bródúil as, muinín as: as + é = as.",
+  "b": "B1"
+ },
+ {
+  "q": "Tá muinín agam ___ (as + tú).",
+  "prep": "as",
+  "p": "tu",
+  "e": "I trust you.",
+  "w": "Proud of and trust in take as: as + tú = asat.",
+  "wg": "Bródúil as, muinín as: as + tú = asat.",
+  "b": "B1"
+ },
+ {
+  "q": "Tá muinín agam ___ (as + é).",
+  "prep": "as",
+  "p": "se",
+  "e": "I trust him.",
+  "w": "Proud of and trust in take as: as + é = as.",
+  "wg": "Bródúil as, muinín as: as + é = as.",
+  "b": "B1"
+ },
+ {
+  "q": "Tá muinín agam ___ (as + í).",
+  "prep": "as",
+  "p": "si",
+  "e": "I trust her.",
+  "w": "Proud of and trust in take as: as + í = aisti.",
+  "wg": "Bródúil as, muinín as: as + í = aisti.",
+  "b": "B1"
+ },
+ {
+  "q": "Tá muinín agam ___ (as + muid).",
+  "prep": "as",
+  "p": "muid",
+  "e": "I trust us.",
+  "w": "Proud of and trust in take as: as + muid = asainn.",
+  "wg": "Bródúil as, muinín as: as + muid = asainn.",
+  "b": "B1"
+ },
+ {
+  "q": "Tá muinín agam ___ (as + sibh).",
+  "prep": "as",
+  "p": "sibh",
+  "e": "I trust you all.",
+  "w": "Proud of and trust in take as: as + sibh = asaibh.",
+  "wg": "Bródúil as, muinín as: as + sibh = asaibh.",
+  "b": "B1"
+ },
+ {
+  "q": "Bhain siad geit ___ (as + í).",
+  "prep": "as",
+  "p": "si",
+  "e": "They gave her a fright.",
+  "w": "Getting something out of it: as + í = aisti.",
+  "wg": "Taitneamh as: as + í = aisti.",
+  "b": "B1"
+ },
+ {
+  "q": "Bhain siad geit ___ (as + muid).",
+  "prep": "as",
+  "p": "muid",
+  "e": "They gave us a fright.",
+  "w": "Getting something out of it: as + muid = asainn.",
+  "wg": "Taitneamh as: as + muid = asainn.",
+  "b": "B1"
+ },
+ {
+  "q": "Bhain siad geit ___ (as + sibh).",
+  "prep": "as",
+  "p": "sibh",
+  "e": "They gave you all a fright.",
+  "w": "Getting something out of it: as + sibh = asaibh.",
+  "wg": "Taitneamh as: as + sibh = asaibh.",
+  "b": "B1"
+ },
+ {
+  "q": "Bhain siad geit ___ (as + mé).",
+  "prep": "as",
+  "p": "me",
+  "e": "They gave me a fright.",
+  "w": "Getting something out of it: as + mé = asam.",
+  "wg": "Taitneamh as: as + mé = asam.",
+  "b": "B1"
+ },
+ {
+  "q": "Bhain mé an-taitneamh ___ (as + é).",
+  "prep": "as",
+  "p": "se",
+  "e": "I really enjoyed it.",
+  "w": "Getting something out of it: as + é = as.",
+  "wg": "Taitneamh as: as + é = as.",
+  "b": "B1"
+ },
+ {
+  "q": "Bhain mé an-taitneamh ___ (as + í).",
+  "prep": "as",
+  "p": "si",
+  "e": "I really enjoyed it.",
+  "w": "Getting something out of it: as + í = aisti.",
+  "wg": "Taitneamh as: as + í = aisti.",
+  "b": "B1"
+ },
+ {
+  "q": "Bain sult ___ (as + í)!",
+  "prep": "as",
+  "p": "si",
+  "e": "Enjoy it!",
+  "w": "Getting something out of it: as + í = aisti.",
+  "wg": "Taitneamh as: as + í = aisti.",
+  "b": "B1"
+ },
+ {
+  "q": "Bain sult ___ (as + é)!",
+  "prep": "as",
+  "p": "se",
+  "e": "Enjoy it!",
+  "w": "Getting something out of it: as + é = as.",
+  "wg": "Taitneamh as: as + é = as.",
+  "b": "B1"
+ }
+]

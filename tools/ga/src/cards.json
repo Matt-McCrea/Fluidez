@@ -1,0 +1,346 @@
+{
+"lait": {
+  "kind": "tense", "topic": "lait",
+  "name": { "ga": "An Aimsir Láithreach", "en": "The present" },
+  "when": [
+    { "en": "Habits and things that are true: *gach lá*, *de ghnáth*, *i gcónaí*.", "ga": "Nósanna agus fírinní: *gach lá*, *de ghnáth*, *i gcónaí*." },
+    { "en": "What you do in general: *Ólaim tae.* I drink tea.", "ga": "Rudaí a dhéanann tú go ginearálta: *Ólaim tae.*" },
+    { "en": "For something happening right now, Irish uses *tá* + *ag*: *Tá mé ag ól tae.*", "ga": "Rud atá ag tarlú anois: *Tá mé ag ól tae.*" }
+  ],
+  "how": { "en": "Add *-ann* (broad) or *-eann* (slender) to the root: *ólann*, *briseann*. Verbs ending in *-igh* take *-aíonn* or *-íonn*: *ceannaíonn*, *éiríonn*. *Mé* and *muid* join the verb: *ólaim*, *ólaimid*.", "ga": "Cuir *-ann* nó *-eann* leis an bhfréamh: *ólann*, *briseann*. Briathra *-igh*: *ceannaíonn*, *éiríonn*. *Ólaim*, *ólaimid*." },
+  "table": { "head": ["", "ól (drink)", "ceannaigh (buy)"], "rows": [
+    ["mé", "ólaim", "ceannaím"], ["tú", "ólann tú", "ceannaíonn tú"], ["sé / sí", "ólann sé", "ceannaíonn sí"],
+    ["muid", "ólaimid", "ceannaímid"], ["sibh", "ólann sibh", "ceannaíonn sibh"], ["siad", "ólann siad", "ceannaíonn siad"],
+    ["not", "ní ólaim", "ní cheannaím"], ["question", "an ólann tú?", "an gceannaíonn tú?"] ] },
+  "ex": [
+    { "ga": "Ólaim caife gach maidin.", "en": "I drink coffee every morning." },
+    { "ga": "Ní thuigeann sé Fraincis.", "en": "He doesn't understand French." },
+    { "ga": "An gceannaíonn tú an nuachtán?", "en": "Do you buy the newspaper?" }
+  ],
+  "tip": { "en": "*Ní* puts séimhiú on the verb (*ní cheannaím*); *an*, *go* and *nach* put urú on it (*an gceannaíonn*).", "ga": "Séimhiú i ndiaidh *ní*; urú i ndiaidh *an*, *go*, *nach*." }
+},
+"gnathlait": {
+  "kind": "tense", "topic": "gnathlait",
+  "name": { "ga": "Bíonn: an Aimsir Ghnáthláithreach", "en": "Bíonn: the habitual present of bí" },
+  "when": [
+    { "en": "*Tá* is how things are now. *Bíonn* is how things usually are.", "ga": "*Tá*: mar atá anois. *Bíonn*: mar a bhíonn de ghnáth." },
+    { "en": "*Tá mé tuirseach.* I am tired (now). *Bím tuirseach gach oíche.* I am (usually) tired every night.", "ga": "*Tá mé tuirseach.* *Bím tuirseach gach oíche.*" },
+    { "en": "Look for *gach*, *de ghnáth*, *i gcónaí*, *uaireanta*, *nuair a*.", "ga": "Comharthaí: *gach*, *de ghnáth*, *i gcónaí*, *uaireanta*." }
+  ],
+  "how": { "en": "Only *bí* has this extra tense. Every other verb uses its ordinary present for habits.", "ga": "Níl an aimsir seo ach ag *bí*. Úsáideann gach briathar eile an aimsir láithreach." },
+  "table": { "head": ["", "now", "usually"], "rows": [
+    ["mé", "tá mé", "bím"], ["tú", "tá tú", "bíonn tú"], ["sé / sí", "tá sé", "bíonn sí"],
+    ["muid", "táimid", "bímid"], ["sibh", "tá sibh", "bíonn sibh"], ["siad", "tá siad", "bíonn siad"],
+    ["not", "níl mé", "ní bhím"], ["question", "an bhfuil tú?", "an mbíonn tú?"] ] },
+  "ex": [
+    { "ga": "Bíonn sé fuar i mí Eanáir.", "en": "It is (usually) cold in January." },
+    { "ga": "Ní bhíonn an bus déanach riamh.", "en": "The bus is never late." },
+    { "ga": "An mbíonn tú sa bhaile ag an deireadh seachtaine?", "en": "Are you (usually) at home at the weekend?" }
+  ],
+  "tip": { "en": "If you could add \"usually\" in English, Irish wants *bíonn*.", "ga": "Má tá \"de ghnáth\" i gceist, *bíonn*." }
+},
+"caite": {
+  "kind": "tense", "topic": "caite",
+  "name": { "ga": "An Aimsir Chaite", "en": "The past" },
+  "when": [
+    { "en": "Something that happened and finished: *inné*, *aréir*, *anuraidh*, *an tseachtain seo caite*.", "ga": "Rud a tharla agus atá thart: *inné*, *aréir*, *anuraidh*." }
+  ],
+  "how": { "en": "Take the root (the command form) and put séimhiú on it: *cuir* becomes *chuir*. Before a vowel or *f*, add *d'*: *d'ól*, *d'fhan*. *Muid* joins the verb: *chuireamar*.", "ga": "Séimhiú ar an bhfréamh: *chuir*. *D'* roimh ghuta nó *f*: *d'ól*, *d'fhan*. *Chuireamar*." },
+  "table": { "head": ["", "cuir (put)", "ól (drink)"], "rows": [
+    ["mé", "chuir mé", "d'ól mé"], ["tú", "chuir tú", "d'ól tú"], ["sé / sí", "chuir sé", "d'ól sí"],
+    ["muid", "chuireamar", "d'ólamar"], ["sibh", "chuir sibh", "d'ól sibh"], ["siad", "chuir siad", "d'ól siad"],
+    ["not", "níor chuir mé", "níor ól mé"], ["question", "ar chuir tú?", "ar ól tú?"] ] },
+  "ex": [
+    { "ga": "Chuir mé glao ar mo mháthair aréir.", "en": "I phoned my mother last night." },
+    { "ga": "D'fhan siad sa bhaile inné.", "en": "They stayed at home yesterday." },
+    { "ga": "Níor ith sé a dhinnéar.", "en": "He didn't eat his dinner." }
+  ],
+  "tip": { "en": "Regular verbs use *níor*, *ar*, *gur*, *nár* in the past. Six irregulars keep *ní*, *an*, *go*, *nach*: see the card on dependent forms.", "ga": "*Níor*, *ar*, *gur*, *nár* san aimsir chaite, ach amháin sé bhriathar neamhrialta." }
+},
+"fhaist": {
+  "kind": "tense", "topic": "fhaist",
+  "name": { "ga": "An Aimsir Fháistineach", "en": "The future" },
+  "when": [
+    { "en": "What will happen: *amárach*, *anocht*, *an tseachtain seo chugainn*, *ar ball*.", "ga": "Rud a tharlóidh: *amárach*, *anocht*, *an tseachtain seo chugainn*." }
+  ],
+  "how": { "en": "Add *-faidh* or *-fidh* to the root: *ólfaidh*, *rithfidh*. Verbs in *-igh* take *-óidh* or *-eoidh*: *ceannóidh*, *éireoidh*. *Muid* joins: *ólfaimid*. No séimhiú.", "ga": "*-faidh* nó *-fidh*: *ólfaidh*, *rithfidh*. *-óidh* nó *-eoidh*: *ceannóidh*. *Ólfaimid*." },
+  "table": { "head": ["", "ól (drink)", "ceannaigh (buy)"], "rows": [
+    ["mé", "ólfaidh mé", "ceannóidh mé"], ["tú", "ólfaidh tú", "ceannóidh tú"], ["sé / sí", "ólfaidh sé", "ceannóidh sí"],
+    ["muid", "ólfaimid", "ceannóimid"], ["sibh", "ólfaidh sibh", "ceannóidh sibh"], ["siad", "ólfaidh siad", "ceannóidh siad"],
+    ["not", "ní ólfaidh mé", "ní cheannóidh mé"], ["question", "an ólfaidh tú?", "an gceannóidh tú?"] ] },
+  "ex": [
+    { "ga": "Feicfidh mé thú amárach.", "en": "I'll see you tomorrow." },
+    { "ga": "Rachaimid go Gaillimh an samhradh seo chugainn.", "en": "We'll go to Galway next summer." },
+    { "ga": "An mbeidh tú sa bhaile anocht?", "en": "Will you be at home tonight?" }
+  ],
+  "tip": { "en": "Irregulars to know: *beidh*, *rachaidh*, *tiocfaidh*, *gheobhaidh*, *déarfaidh*, *íosfaidh*, *tabharfaidh*.", "ga": "*Beidh*, *rachaidh*, *tiocfaidh*, *gheobhaidh*, *déarfaidh*, *íosfaidh*." }
+},
+"coinn": {
+  "kind": "tense", "topic": "coinn",
+  "name": { "ga": "An Modh Coinníollach", "en": "The conditional" },
+  "when": [
+    { "en": "What would happen: *I would go*, *she would buy*.", "ga": "Rud a tharlódh: *rachainn*, *cheannódh sí*." },
+    { "en": "After *dá* (if, unreal) both halves are conditional: *Dá mbeinn saibhir, cheannóinn teach.*", "ga": "I ndiaidh *dá*, an modh coinníollach sa dá chuid: *Dá mbeinn saibhir, cheannóinn teach.*" },
+    { "en": "Polite requests: *Ar mhaith leat...?* Would you like...?", "ga": "Iarratais bhéasacha: *Ar mhaith leat...?*" }
+  ],
+  "how": { "en": "Séimhiú (or *d'*) like the past, then *-fadh* / *-feadh* (or *-ódh* / *-eodh* for *-igh* verbs). Four persons join the verb: *-fainn* (I), *-fá* (you), *-faimis* (we), *-faidís* (they).", "ga": "Séimhiú nó *d'*, ansin *-fadh* / *-feadh* (*-ódh* / *-eodh*). *-fainn*, *-fá*, *-faimis*, *-faidís*." },
+  "table": { "head": ["", "ól (drink)", "ceannaigh (buy)"], "rows": [
+    ["mé", "d'ólfainn", "cheannóinn"], ["tú", "d'ólfá", "cheannófá"], ["sé / sí", "d'ólfadh sé", "cheannódh sí"],
+    ["muid", "d'ólfaimis", "cheannóimis"], ["sibh", "d'ólfadh sibh", "cheannódh sibh"], ["siad", "d'ólfaidís", "cheannóidís"],
+    ["not", "ní ólfainn", "ní cheannóinn"], ["if", "dá n-ólfainn", "dá gceannóinn"] ] },
+  "ex": [
+    { "ga": "Dá mbeadh an t-am agam, rachainn leat.", "en": "If I had the time, I would go with you." },
+    { "ga": "Ar mhaith leat cupán tae?", "en": "Would you like a cup of tea?" },
+    { "ga": "Ní dhéanfainn é sin riamh.", "en": "I would never do that." }
+  ],
+  "tip": { "en": "*Dá* puts urú on the verb: *dá mbeinn*, *dá rachfá*, *dá n-ólfadh sé*.", "ga": "Urú i ndiaidh *dá*: *dá mbeinn*, *dá n-ólfadh sé*." }
+},
+"gnath": {
+  "kind": "tense", "topic": "gnath",
+  "name": { "ga": "An Aimsir Ghnáthchaite", "en": "The past habitual" },
+  "when": [
+    { "en": "What used to happen again and again: *I used to walk to school.*", "ga": "Rud a tharlaíodh arís is arís: *Shiúlainn ar scoil.*" },
+    { "en": "Look for *nuair a bhí mé óg*, *fadó*, *gach samhradh*, *i gcónaí* with a past setting.", "ga": "Comharthaí: *nuair a bhí mé óg*, *fadó*, *gach samhradh*." }
+  ],
+  "how": { "en": "Séimhiú (or *d'*) like the past, then *-adh* / *-eadh* (or *-aíodh* / *-íodh* for *-igh* verbs). Four persons join the verb: *-ainn* (I), *-tá* (you), *-aimis* (we), *-aidís* (they).", "ga": "Séimhiú nó *d'*, ansin *-adh* / *-eadh*. *-ainn*, *-tá*, *-aimis*, *-aidís*." },
+  "table": { "head": ["", "siúil (walk)", "ól (drink)"], "rows": [
+    ["mé", "shiúlainn", "d'ólainn"], ["tú", "shiúltá", "d'óltá"], ["sé / sí", "shiúladh sé", "d'óladh sí"],
+    ["muid", "shiúlaimis", "d'ólaimis"], ["sibh", "shiúladh sibh", "d'óladh sibh"], ["siad", "shiúlaidís", "d'ólaidís"],
+    ["not", "ní shiúlainn", "ní ólainn"], ["question", "an siúltá?", "an óltá?"] ] },
+  "ex": [
+    { "ga": "Nuair a bhí mé óg, shiúlainn ar scoil.", "en": "When I was young, I used to walk to school." },
+    { "ga": "Théimis go Ciarraí gach samhradh.", "en": "We used to go to Kerry every summer." },
+    { "ga": "Bhíodh mo sheanmháthair ag canadh i gcónaí.", "en": "My grandmother was always singing." }
+  ],
+  "tip": { "en": "The past tells one event (*chuaigh mé*, I went). The habitual tells a pattern (*théinn*, I used to go).", "ga": "*Chuaigh mé*: uair amháin. *Théinn*: arís is arís." }
+},
+"ord": {
+  "kind": "tense", "topic": "ord",
+  "name": { "ga": "An Modh Ordaitheach", "en": "Commands" },
+  "when": [
+    { "en": "Telling someone to do something: *Suigh síos!* Sit down!", "ga": "Ag rá le duine rud a dhéanamh: *Suigh síos!*" },
+    { "en": "*Ná* for don't: *Ná bris é!* Don't break it!", "ga": "*Ná* le rud a chosc: *Ná bris é!*" }
+  ],
+  "how": { "en": "To one person, the bare root: *ól*, *suigh*, *ceannaigh*. To more than one, add *-aigí* or *-igí*: *ólaigí*, *suígí*. Let's: *-aimis*: *ólaimis*. *Ná* puts *h* before a vowel: *ná hól*.", "ga": "Duine amháin: *ól*, *suigh*. Níos mó: *ólaigí*, *suígí*. *Ólaimis*. *Ná hól*." },
+  "table": { "head": ["", "one person", "more than one", "let's"], "rows": [
+    ["ól", "ól", "ólaigí", "ólaimis"], ["suigh", "suigh", "suígí", "suímis"], ["ceannaigh", "ceannaigh", "ceannaígí", "ceannaímis"],
+    ["téigh", "téigh", "téigí", "téimis"], ["tar", "tar", "tagaigí", "tagaimis"], ["bí", "bí", "bígí", "bímis"] ] },
+  "ex": [
+    { "ga": "Tar isteach agus suigh síos.", "en": "Come in and sit down." },
+    { "ga": "Ná hith an cáca sin!", "en": "Don't eat that cake!" },
+    { "ga": "Bígí ciúin, a pháistí!", "en": "Be quiet, children!" }
+  ],
+  "tip": { "en": "The command form is the verb's dictionary form, the root every other tense is built on.", "ga": "Is í an fhoirm ordaitheach fréamh an bhriathair." }
+},
+"saor": {
+  "kind": "tense", "topic": "saor",
+  "name": { "ga": "An Briathar Saor", "en": "The autonomous verb" },
+  "when": [
+    { "en": "An action with no named doer: *Tógadh an teach in 1990.* The house was built in 1990.", "ga": "Gníomh gan duine a ainmniú: *Tógadh an teach in 1990.*" },
+    { "en": "English often says \"was done\" or \"people do\": *Labhraítear Gaeilge anseo.* Irish is spoken here.", "ga": "*Labhraítear Gaeilge anseo.*" }
+  ],
+  "how": { "en": "One form per tense, no person after it. Present *-tar* / *-tear*, past *-adh* / *-eadh* (no séimhiú), future *-far* / *-fear*, conditional *-faí* / *-fí*.", "ga": "Láithreach *-tar*, caite *-adh* (gan séimhiú), fáistineach *-far*, coinníollach *-faí*." },
+  "table": { "head": ["", "tóg (build)", "déan (do)"], "rows": [
+    ["present", "tógtar", "déantar"], ["past", "tógadh", "rinneadh"], ["future", "tógfar", "déanfar"],
+    ["conditional", "thógfaí", "dhéanfaí"], ["not (past)", "níor tógadh", "ní dhearnadh"] ] },
+  "ex": [
+    { "ga": "Rugadh mé i gCorcaigh.", "en": "I was born in Cork." },
+    { "ga": "Díoltar bainne sa siopa sin.", "en": "Milk is sold in that shop." },
+    { "ga": "Fógrófar na torthaí amárach.", "en": "The results will be announced tomorrow." }
+  ],
+  "tip": { "en": "*Rugadh mé* (I was born) is the one everybody needs: *beir*, past autonomous.", "ga": "*Rugadh mé i...*: an briathar saor is coitianta." }
+},
+"ag": {
+  "kind": "tense", "topic": "ag",
+  "name": { "ga": "Ag + an tAinm Briathartha", "en": "-ing: ag + the verbal noun" },
+  "when": [
+    { "en": "Something in progress: *Tá mé ag obair.* I am working. *Bhí sí ag rith.* She was running.", "ga": "Rud atá ar siúl: *Tá mé ag obair.* *Bhí sí ag rith.*" },
+    { "en": "Irish has no -ing ending. It uses *bí* in any tense + *ag* + the verbal noun.", "ga": "*Bí* + *ag* + an t-ainm briathartha." }
+  ],
+  "how": { "en": "Every verb has a verbal noun, and many must simply be learnt: *ól*, *ithe*, *déanamh*, *dul*, *teacht*, *fáil*, *rá*, *feiceáil*, *imirt*, *ceannach*.", "ga": "Tá ainm briathartha ag gach briathar: *ól*, *ithe*, *déanamh*, *dul*, *teacht*, *fáil*." },
+  "table": { "head": ["verb", "verbal noun", "example"], "rows": [
+    ["ith (eat)", "ithe", "tá mé ag ithe"], ["téigh (go)", "dul", "tá sé ag dul abhaile"], ["déan (do)", "déanamh", "cad atá tú a dhéanamh?"],
+    ["imir (play)", "imirt", "bhí siad ag imirt"], ["ceannaigh (buy)", "ceannach", "beimid ag ceannach"], ["foghlaim (learn)", "foghlaim", "tá mé ag foghlaim Gaeilge"] ] },
+  "ex": [
+    { "ga": "Tá mé ag foghlaim Gaeilge.", "en": "I am learning Irish." },
+    { "ga": "Bhí na páistí ag imirt sa pháirc.", "en": "The children were playing in the park." },
+    { "ga": "Beidh mé ag obair amárach.", "en": "I'll be working tomorrow." }
+  ],
+  "tip": { "en": "*Tá mé tar éis ithe* means I have just eaten: *tar éis* + verbal noun.", "ga": "*Tá mé tar éis ithe*: díreach déanta." }
+},
+"dep": {
+  "kind": "grammar", "topic": "dep",
+  "name": { "ga": "Foirmeacha Spleácha", "en": "Dependent forms" },
+  "when": [
+    { "en": "Six irregular verbs change shape in the past after *ní*, *an*, *go* and *nach*.", "ga": "Athraíonn sé bhriathar neamhrialta san aimsir chaite i ndiaidh *ní*, *an*, *go*, *nach*." },
+    { "en": "*Chonaic mé é.* I saw him. *Ní fhaca mé é.* I didn't see him. *An bhfaca tú é?* Did you see him?", "ga": "*Chonaic mé é.* *Ní fhaca mé é.* *An bhfaca tú é?*" }
+  ],
+  "how": { "en": "After *ní* the dependent form takes séimhiú; after *an*, *go*, *nach* it takes urú. *Fuair* is odd: *ní bhfuair*. *Dúirt* never changes.", "ga": "Séimhiú i ndiaidh *ní*, urú i ndiaidh *an*, *go*, *nach*. *Ní bhfuair*. *Ní dúirt*." },
+  "table": { "head": ["verb", "said", "not", "question"], "rows": [
+    ["bí (be)", "bhí", "ní raibh", "an raibh?"], ["feic (see)", "chonaic", "ní fhaca", "an bhfaca?"],
+    ["déan (do)", "rinne", "ní dhearna", "an ndearna?"], ["téigh (go)", "chuaigh", "ní dheachaigh", "an ndeachaigh?"],
+    ["faigh (get)", "fuair", "ní bhfuair", "an bhfuair?"], ["abair (say)", "dúirt", "ní dúirt", "an ndúirt?"] ] },
+  "ex": [
+    { "ga": "Ní raibh mé ann.", "en": "I wasn't there." },
+    { "ga": "An ndeachaigh tú go dtí an cluiche?", "en": "Did you go to the match?" },
+    { "ga": "Dúirt sé go ndearna sé é.", "en": "He said that he did it." }
+  ],
+  "tip": { "en": "In the present, only *bí* has this: *tá*, *níl*, *an bhfuil?*, *go bhfuil*.", "ga": "San aimsir láithreach: *tá*, *níl*, *an bhfuil?*" }
+},
+"seimhiu": {
+  "kind": "grammar", "topic": "seimhiu",
+  "name": { "ga": "An Séimhiú", "en": "Séimhiú (lenition)" },
+  "when": [
+    { "en": "An *h* after the first letter softens the sound: *cara* becomes *mo chara* (my friend).", "ga": "*h* i ndiaidh na chéad litreach: *mo chara*." },
+    { "en": "After *mo*, *do*, *a* (his): *mo mháthair*, *do theach*, *a bhróga*.", "ga": "I ndiaidh *mo*, *do*, *a* (fir.): *mo mháthair*." },
+    { "en": "After *an* on a feminine noun: *an bhean*, *an fhuinneog*.", "ga": "I ndiaidh *an* ar ainmfhocal baininscneach: *an bhean*." },
+    { "en": "After *ar*, *de*, *do*, *faoi*, *mar*, *ó*, *roimh*, *thar*, *trí*, *um*: *ar bhord*, *ó Shéamas*.", "ga": "I ndiaidh *ar*, *de*, *do*, *faoi*, *ó*...: *ar bhord*." },
+    { "en": "After *aon* to *sé* (1 to 6) with a noun: *trí bhó*; after *ní* and in the past: *ní thuigim*, *cheannaigh mé*.", "ga": "*Trí bhó*; *ní thuigim*, *cheannaigh mé*." }
+  ],
+  "how": { "en": "Only b c d f g m p s t take it. *S* only before a vowel or l n r (never sc, sp, st, sm). Vowels, l, n, r and h never change.", "ga": "b c d f g m p s t amháin. Ní ghlacann sc, sp, st, sm é." },
+  "table": { "head": ["letter", "word", "with séimhiú"], "rows": [
+    ["b", "bord", "mo bhord"], ["c", "cara", "mo chara"], ["d", "deartháir", "mo dheartháir"], ["f", "freagra", "mo fhreagra"],
+    ["g", "gúna", "mo ghúna"], ["m", "máthair", "mo mháthair"], ["p", "páiste", "mo pháiste"], ["s", "súil", "mo shúil"], ["t", "teach", "mo theach"] ] },
+  "ex": [
+    { "ga": "Seo é mo chara Seán.", "en": "This is my friend Seán." },
+    { "ga": "Tá an bhean ag an doras.", "en": "The woman is at the door." },
+    { "ga": "Fuair mé litir ó Shíle.", "en": "I got a letter from Síle." }
+  ],
+  "tip": { "en": "*Mo* and *do* become *m'* and *d'* before a vowel or *fh*: *m'athair*, *d'fhón*.", "ga": "*M'athair*, *d'fhón*." }
+},
+"uru": {
+  "kind": "grammar", "topic": "uru",
+  "name": { "ga": "An tUrú", "en": "Urú (eclipsis)" },
+  "when": [
+    { "en": "A new letter in front hides the first one's sound: *i gCorcaigh* (in Cork), *ár dteach* (our house).", "ga": "Litir nua chun tosaigh: *i gCorcaigh*, *ár dteach*." },
+    { "en": "After *ár*, *bhur*, *a* (their): *ár mbord*, *a gcairde*.", "ga": "I ndiaidh *ár*, *bhur*, *a* (iolra): *ár mbord*." },
+    { "en": "After *i* (in): *i mBaile Átha Cliath*, *i nGaillimh*, *in Éirinn*.", "ga": "I ndiaidh *i*: *i mBaile Átha Cliath*, *i nGaillimh*." },
+    { "en": "After a preposition + *an*: *ar an mbord*, *ag an doras*, *leis an bhfear*.", "ga": "Réamhfhocal + *an*: *ar an mbord*, *leis an bhfear*." },
+    { "en": "After *seacht* to *deich* (7 to 10): *seacht mbó*; after *an*, *go*, *nach*, *dá* with verbs: *an dtuigeann tú?*", "ga": "*Seacht mbó*; *an dtuigeann tú?*, *dá mbeinn*." }
+  ],
+  "how": { "en": "b to mb, c to gc, d to nd, f to bhf, g to ng, p to bp, t to dt, and a vowel takes *n-*: *ár n-athair*. Before a capital no hyphen: *i nÉirinn*.", "ga": "mb, gc, nd, bhf, ng, bp, dt, n- roimh ghuta: *ár n-athair*, *i nÉirinn*." },
+  "table": { "head": ["letter", "word", "with urú"], "rows": [
+    ["b", "bord", "ár mbord"], ["c", "cara", "ár gcara"], ["d", "doras", "ár ndoras"], ["f", "fón", "ár bhfón"],
+    ["g", "geata", "ár ngeata"], ["p", "páiste", "ár bpáiste"], ["t", "teach", "ár dteach"], ["vowel", "athair", "ár n-athair"] ] },
+  "ex": [
+    { "ga": "Tá cónaí orm i gCorcaigh.", "en": "I live in Cork." },
+    { "ga": "Chuir sí an cupán ar an mbord.", "en": "She put the cup on the table." },
+    { "ga": "Tá ár gcairde ag teacht anocht.", "en": "Our friends are coming tonight." }
+  ],
+  "tip": { "en": "*Ag an* and *leis an* with d or t: no urú (*ag an doras*). The dentals resist after *an*.", "ga": "Ní chuirtear urú ar d ná t i ndiaidh *an*: *ag an doras*." }
+},
+"prefix": {
+  "kind": "grammar", "topic": "prefix",
+  "name": { "ga": "t- agus h", "en": "The t and h prefixes" },
+  "when": [
+    { "en": "*An* + a masculine noun starting with a vowel: *an t-uisce*, *an t-arán*, *an tAthair*.", "ga": "*An* + ainmfhocal firinscneach a thosaíonn le guta: *an t-uisce*." },
+    { "en": "*An* + a feminine noun starting with s (+ vowel or l n r): *an tsráid*, *an tseachtain*.", "ga": "*An* + ainmfhocal baininscneach le s: *an tsráid*." },
+    { "en": "*h* before a vowel after *a* (her), *na* (plural), *le*, *go*, *ná*, *Dé*: *a hathair*, *na hoícheanta*, *le hÉamonn*, *go hálainn*.", "ga": "*h* roimh ghuta: *a hathair*, *na hoícheanta*, *go hálainn*." }
+  ],
+  "how": { "en": "*A* means his, her or their, and the mutation tells you which: *a athair* his father, *a hathair* her father, *a n-athair* their father.", "ga": "*A athair*, *a hathair*, *a n-athair*." },
+  "table": { "head": ["", "athair", "cara"], "rows": [
+    ["his", "a athair", "a chara"], ["her", "a hathair", "a cara"], ["their", "a n-athair", "a gcara"] ] },
+  "ex": [
+    { "ga": "Tá an t-uisce fuar.", "en": "The water is cold." },
+    { "ga": "Tá a hathair ina dhochtúir.", "en": "Her father is a doctor." },
+    { "ga": "Bhí an lá go hálainn.", "en": "The day was lovely." }
+  ],
+  "tip": { "en": "No hyphen before a capital: *an tAontas*, *le hÉirinn*.", "ga": "Gan fleiscín roimh cheannlitir: *an tAontas*." }
+},
+"copail": {
+  "kind": "grammar", "topic": "copail",
+  "name": { "ga": "Tá nó Is", "en": "Tá or Is: two verbs for \"be\"" },
+  "when": [
+    { "en": "*Is* says what something IS: a noun about a noun. *Is múinteoir mé.* I am a teacher.", "ga": "*Is*: cad é rud. *Is múinteoir mé.*" },
+    { "en": "*Tá* says how or where something is: *Tá mé tuirseach.* *Tá sé sa chistin.*", "ga": "*Tá*: conas nó cá bhfuil rud. *Tá mé tuirseach.*" },
+    { "en": "Likes and preferences use *is*: *Is maith liom tae.* *Is fearr liom caife.*", "ga": "*Is maith liom*, *is fearr liom*." }
+  ],
+  "how": { "en": "*Is* has its own small set: *is* (is), *ní* (is not), *an* (is it?), *nach* (isn't it?), *ba* (was, would be). The answer to a copula question is *is ea* or *ní hea*.", "ga": "*Is*, *ní*, *an*, *nach*, *ba*. Freagra: *is ea*, *ní hea*." },
+  "table": { "head": ["", "is", "tá"], "rows": [
+    ["job", "is dochtúir í", "tá sí ina dochtúir"], ["identity", "is mise Seán", ""], ["feeling", "", "tá mé sásta"],
+    ["place", "", "tá sé sa bhaile"], ["liking", "is maith liom é", ""], ["past", "ba mhúinteoir é", "bhí sé tuirseach"] ] },
+  "ex": [
+    { "ga": "Is Éireannach í.", "en": "She is Irish." },
+    { "ga": "Ní maith liom bainne.", "en": "I don't like milk." },
+    { "ga": "An dalta thú? Is ea.", "en": "Are you a student? Yes." }
+  ],
+  "tip": { "en": "*Tá mé i mo mhúinteoir* also means I am a teacher: *tá* + *i mo / i do / ina* + noun.", "ga": "*Tá mé i mo mhúinteoir* = *is múinteoir mé*." }
+},
+"forainm": {
+  "kind": "grammar", "topic": "forainm",
+  "name": { "ga": "Forainmneacha Réamhfhoclacha", "en": "Prepositions with pronouns" },
+  "when": [
+    { "en": "Irish joins a preposition and a pronoun into one word: *ag* + *mé* = *agam* (at me).", "ga": "Réamhfhocal + forainm in aon fhocal amháin: *agam*." },
+    { "en": "Having: *Tá carr agam.* I have a car (a car is at me).", "ga": "*Tá carr agam.*" },
+    { "en": "Feelings sit on you: *Tá ocras orm.* I'm hungry. *Tá brón orthu.* They're sad.", "ga": "*Tá ocras orm.* *Tá brón orthu.*" },
+    { "en": "Liking goes with *le*: *Is maith liom é.* Giving goes with *do*: *Thug mé dó é.*", "ga": "*Is maith liom é.* *Thug mé dó é.*" }
+  ],
+  "how": { "en": "Learn them as sets of seven: me, you, him, her, us, you all, them.", "ga": "Foghlaim iad ina seacht gcinn." },
+  "table": { "head": ["", "ag", "ar", "le", "do"], "rows": [
+    ["mé", "agam", "orm", "liom", "dom"], ["tú", "agat", "ort", "leat", "duit"], ["é", "aige", "air", "leis", "dó"],
+    ["í", "aici", "uirthi", "léi", "di"], ["muid", "againn", "orainn", "linn", "dúinn"], ["sibh", "agaibh", "oraibh", "libh", "daoibh"], ["iad", "acu", "orthu", "leo", "dóibh"] ] },
+  "ex": [
+    { "ga": "Tá madra agus cat againn.", "en": "We have a dog and a cat." },
+    { "ga": "Cad atá ort?", "en": "What's wrong with you?" },
+    { "ga": "Is breá léi ceol.", "en": "She loves music." }
+  ],
+  "tip": { "en": "Others to know: *ó* (*uaim*: I want, from me), *chuig* (*chugam*), *as*, *de*, *faoi*, *i* (*ionam*).", "ga": "*Uaim*, *chugam*, *asam*, *díom*, *fúm*, *ionam*." }
+},
+"freagair": {
+  "kind": "grammar", "topic": "freagair",
+  "name": { "ga": "Sea agus Ní hea", "en": "Answering yes and no" },
+  "when": [
+    { "en": "Irish has no single word for yes or no. You answer with the verb of the question.", "ga": "Níl focal amháin ann do yes nó no. Freagraíonn tú leis an mbriathar." },
+    { "en": "*An bhfuil tú tuirseach?* *Tá.* (yes) *Níl.* (no)", "ga": "*An bhfuil tú tuirseach?* *Tá.* *Níl.*" },
+    { "en": "*An bhfaca tú é?* *Chonaic.* *Ní fhaca.*", "ga": "*An bhfaca tú é?* *Chonaic.* *Ní fhaca.*" }
+  ],
+  "how": { "en": "Same verb, same tense, person turned round: asked about *tú*, you answer for *mé* (*An dtuigeann tú?* *Tuigim.*). Copula questions take *is ea* / *ní hea*, or repeat the adjective: *An maith leat é?* *Is maith.*", "ga": "An briathar céanna: *An dtuigeann tú?* *Tuigim.* *Is ea* / *ní hea*; *Is maith*." },
+  "table": { "head": ["question", "yes", "no"], "rows": [
+    ["An bhfuil...?", "Tá", "Níl"], ["An raibh...?", "Bhí", "Ní raibh"], ["Ar ól tú...?", "D'ól", "Níor ól"],
+    ["An rachaidh tú?", "Rachaidh", "Ní rachaidh"], ["An dtuigeann tú?", "Tuigim", "Ní thuigim"], ["An múinteoir thú?", "Is ea", "Ní hea"] ] },
+  "ex": [
+    { "ga": "An ndearna tú d'obair bhaile? Rinne.", "en": "Did you do your homework? Yes." },
+    { "ga": "An mbeidh tú ann? Ní bheidh.", "en": "Will you be there? No." },
+    { "ga": "Ar mhaith leat tae? Ba mhaith.", "en": "Would you like tea? Yes." }
+  ],
+  "tip": { "en": "*Sea* (short for *is ea*) is the everyday yes when there is no clear verb.", "ga": "*Sea*: an \"yes\" ginearálta." }
+},
+"ginideach": {
+  "kind": "grammar", "topic": "ginideach",
+  "name": { "ga": "An Tuiseal Ginideach", "en": "The genitive (of)" },
+  "when": [
+    { "en": "\"The X of the Y\": *doras an tí* (the door of the house), *hata an fhir* (the man's hat).", "ga": "*Doras an tí*, *hata an fhir*." },
+    { "en": "After *ag* + verbal noun, the object goes genitive: *ag ól tae*, *ag déanamh na hoibre*.", "ga": "*Ag ól tae*, *ag déanamh na hoibre*." },
+    { "en": "After some prepositions: *ar feadh*, *i rith*, *tar éis*, *chun*, *timpeall*: *i rith na seachtaine*.", "ga": "*I rith na seachtaine*, *tar éis an dinnéir*." }
+  ],
+  "how": { "en": "Masculine: *an* + séimhiú, and the word often ends slender: *an fear*, *an fhir*. Feminine: *na* + *h* before a vowel, and often *-e* at the end: *an bhean*, *na mná*; *an oifig*, *na hoifige*.", "ga": "Firinscneach: *an fhir*. Baininscneach: *na mná*, *na hoifige*." },
+  "table": { "head": ["", "nominative", "of the..."], "rows": [
+    ["fear (m)", "an fear", "an fhir"], ["teach (m)", "an teach", "an tí"], ["bean (f)", "an bhean", "na mná"],
+    ["scoil (f)", "an scoil", "na scoile"], ["obair (f)", "an obair", "na hoibre"], ["plural", "na daoine", "na ndaoine"] ] },
+  "ex": [
+    { "ga": "Tá eochair an chairr agam.", "en": "I have the car key." },
+    { "ga": "Bhí mé ag ithe an dinnéir.", "en": "I was eating the dinner." },
+    { "ga": "Tá sé i lár an bhaile.", "en": "It's in the middle of the town." }
+  ],
+  "tip": { "en": "A beginner can lean on set phrases first: *bean an tí*, *lár an bhaile*, *i rith an lae*.", "ga": "Tosaigh le nathanna: *bean an tí*, *i rith an lae*." }
+},
+"uimhreacha": {
+  "kind": "grammar", "topic": "uimhreacha",
+  "name": { "ga": "Uimhreacha", "en": "Numbers" },
+  "when": [
+    { "en": "Counting on their own: *a haon*, *a dó*, *a trí*, *a ceathair*, *a cúig*, *a sé*, *a seacht*, *a hocht*, *a naoi*, *a deich*.", "ga": "*A haon, a dó, a trí...*" },
+    { "en": "With a noun: *aon* to *sé* lenite, *seacht* to *deich* eclipse: *trí chat*, *ocht gcat*. The noun stays singular.", "ga": "*Trí chat*, *ocht gcat*." },
+    { "en": "People have their own numbers: *duine*, *beirt*, *triúr*, *ceathrar*, *cúigear*, *seisear*, *seachtar*, *ochtar*, *naonúr*, *deichniúr*.", "ga": "*Duine, beirt, triúr, ceathrar...*" }
+  ],
+  "how": { "en": "*Dhá* (two) is used before a noun, *a dó* when counting: *dhá chupán*. *Bliain* has its own forms: *bliain*, *dhá bhliain*, *trí bliana*.", "ga": "*Dhá chupán*; *trí bliana*." },
+  "table": { "head": ["", "cat", "bord", "people"], "rows": [
+    ["1", "cat amháin", "bord amháin", "duine"], ["2", "dhá chat", "dhá bhord", "beirt"], ["3", "trí chat", "trí bhord", "triúr"],
+    ["6", "sé chat", "sé bhord", "seisear"], ["7", "seacht gcat", "seacht mbord", "seachtar"], ["10", "deich gcat", "deich mbord", "deichniúr"] ] },
+  "ex": [
+    { "ga": "Tá beirt deartháireacha agam.", "en": "I have two brothers." },
+    { "ga": "Cheannaigh mé trí phionta bainne.", "en": "I bought three pints of milk." },
+    { "ga": "Tá sé seacht mbliana d'aois.", "en": "He is seven years old." }
+  ],
+  "tip": { "en": "Ages use *bliain*: *aon bhliain déag*, *fiche bliain*, *tríocha bliain*.", "ga": "*Fiche bliain d'aois*." }
+}
+}

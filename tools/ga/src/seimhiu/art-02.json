@@ -1,0 +1,1472 @@
+[
+ {
+  "q": "Chuir sí an cupán ar an ___ (bord).",
+  "base": "bord",
+  "r": "ecl",
+  "e": "She put the cup on the table.",
+  "w": "Preposition + an: urú. bord becomes mbord.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an cat ar an ___ (cathaoir).",
+  "base": "cathaoir",
+  "r": "ecl",
+  "e": "The cat is on the chair.",
+  "w": "Preposition + an: urú. cathaoir becomes gcathaoir.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an bia ar an ___ (pláta).",
+  "base": "pláta",
+  "r": "ecl",
+  "e": "The food is on the plate.",
+  "w": "Preposition + an: urú. pláta becomes bpláta.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí mé ar an ___ (bus) ar maidin.",
+  "base": "bus",
+  "r": "ecl",
+  "e": "I was on the bus this morning.",
+  "w": "Preposition + an: urú. bus becomes mbus.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Labhair mé leis ar an ___ (fón).",
+  "base": "fón",
+  "r": "ecl",
+  "e": "I spoke to him on the phone.",
+  "w": "Preposition + an: urú. fón becomes bhfón.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá teach ar an ___ (cnoc).",
+  "base": "cnoc",
+  "r": "ecl",
+  "e": "There is a house on the hill.",
+  "w": "Preposition + an: urú. cnoc becomes gcnoc.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an leabhar ar an ___ (bord) sa halla.",
+  "base": "bord",
+  "r": "ecl",
+  "e": "The book is on the table in the hall.",
+  "w": "Preposition + an: urú. bord becomes mbord.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí bád ar an ___ (farraige).",
+  "base": "farraige",
+  "r": "ecl",
+  "e": "There was a boat on the sea.",
+  "w": "Preposition + an: urú. farraige becomes bhfarraige.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí mé ag an ___ (cluiche) aréir.",
+  "base": "cluiche",
+  "r": "ecl",
+  "e": "I was at the match last night.",
+  "w": "Preposition + an: urú. cluiche becomes gcluiche.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhuail mé leis ag an ___ (geata).",
+  "base": "geata",
+  "r": "ecl",
+  "e": "I met him at the gate.",
+  "w": "Preposition + an: urú. geata becomes ngeata.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá siopa ag an ___ (cúinne).",
+  "base": "cúinne",
+  "r": "ecl",
+  "e": "There is a shop at the corner.",
+  "w": "Preposition + an: urú. cúinne becomes gcúinne.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá sí ag an ___ (fuinneog).",
+  "base": "fuinneog",
+  "r": "ecl",
+  "e": "She is at the window.",
+  "w": "Preposition + an: urú. fuinneog becomes bhfuinneog.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Fan ag an ___ (crosbhóthar).",
+  "base": "crosbhóthar",
+  "r": "ecl",
+  "e": "Wait at the crossroads.",
+  "w": "Preposition + an: urú. crosbhóthar becomes gcrosbhóthar.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí siad ag an ___ (pictiúrlann).",
+  "base": "pictiúrlann",
+  "r": "ecl",
+  "e": "They were at the cinema.",
+  "w": "Preposition + an: urú. pictiúrlann becomes bpictiúrlann.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an carr ag an ___ (garáiste).",
+  "base": "garáiste",
+  "r": "ecl",
+  "e": "The car is at the garage.",
+  "w": "Preposition + an: urú. garáiste becomes ngaráiste.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá muid ag an ___ (bialann).",
+  "base": "bialann",
+  "r": "ecl",
+  "e": "We are at the restaurant.",
+  "w": "Preposition + an: urú. bialann becomes mbialann.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí slua mór ag an ___ (ceolchoirm).",
+  "base": "ceolchoirm",
+  "r": "ecl",
+  "e": "There was a big crowd at the concert.",
+  "w": "Preposition + an: urú. ceolchoirm becomes gceolchoirm.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Labhair mé leis an ___ (fear).",
+  "base": "fear",
+  "r": "ecl",
+  "e": "I spoke to the man.",
+  "w": "Preposition + an: urú. fear becomes bhfear.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí sí ag caint leis an ___ (bean).",
+  "base": "bean",
+  "r": "ecl",
+  "e": "She was talking to the woman.",
+  "w": "Preposition + an: urú. bean becomes mbean.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Chuaigh mé ann leis an ___ (cailín).",
+  "base": "cailín",
+  "r": "ecl",
+  "e": "I went there with the girl.",
+  "w": "Preposition + an: urú. cailín becomes gcailín.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí mé ag imirt leis an ___ (buachaill).",
+  "base": "buachaill",
+  "r": "ecl",
+  "e": "I was playing with the boy.",
+  "w": "Preposition + an: urú. buachaill becomes mbuachaill.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá sé ag caint leis an ___ (garda).",
+  "base": "garda",
+  "r": "ecl",
+  "e": "He is talking to the guard.",
+  "w": "Preposition + an: urú. garda becomes ngarda.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Chuaigh sí ann leis an ___ (páiste).",
+  "base": "páiste",
+  "r": "ecl",
+  "e": "She went there with the child.",
+  "w": "Preposition + an: urú. páiste becomes bpáiste.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá mé ag dul chuig an ___ (cluiche).",
+  "base": "cluiche",
+  "r": "ecl",
+  "e": "I am going to the match.",
+  "w": "Preposition + an: urú. cluiche becomes gcluiche.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Chuaigh sí chuig an ___ (pictiúrlann).",
+  "base": "pictiúrlann",
+  "r": "ecl",
+  "e": "She went to the cinema.",
+  "w": "Preposition + an: urú. pictiúrlann becomes bpictiúrlann.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Scríobh mé litir chuig an ___ (comharsa).",
+  "base": "comharsa",
+  "r": "ecl",
+  "e": "I wrote a letter to the neighbour.",
+  "w": "Preposition + an: urú. comharsa becomes gcomharsa.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá mé ag dul chuig an ___ (bialann).",
+  "base": "bialann",
+  "r": "ecl",
+  "e": "I am going to the restaurant.",
+  "w": "Preposition + an: urú. bialann becomes mbialann.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Chuaigh muid chuig an ___ (ceolchoirm).",
+  "base": "ceolchoirm",
+  "r": "ecl",
+  "e": "We went to the concert.",
+  "w": "Preposition + an: urú. ceolchoirm becomes gceolchoirm.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tóg an bainne as an ___ (cuisneoir).",
+  "base": "cuisneoir",
+  "r": "ecl",
+  "e": "Take the milk out of the fridge.",
+  "w": "Preposition + an: urú. cuisneoir becomes gcuisneoir.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tháinig sé as an ___ (cistin).",
+  "base": "cistin",
+  "r": "ecl",
+  "e": "He came out of the kitchen.",
+  "w": "Preposition + an: urú. cistin becomes gcistin.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Ól as an ___ (cupán).",
+  "base": "cupán",
+  "r": "ecl",
+  "e": "Drink from the cup.",
+  "w": "Preposition + an: urú. cupán becomes gcupán.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhain sé an t-airgead as an ___ (bosca).",
+  "base": "bosca",
+  "r": "ecl",
+  "e": "He took the money out of the box.",
+  "w": "Preposition + an: urú. bosca becomes mbosca.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Léim an cat as an ___ (bosca).",
+  "base": "bosca",
+  "r": "ecl",
+  "e": "The cat jumped out of the box.",
+  "w": "Preposition + an: urú. bosca becomes mbosca.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tháinig sí as an ___ (bialann).",
+  "base": "bialann",
+  "r": "ecl",
+  "e": "She came out of the restaurant.",
+  "w": "Preposition + an: urú. bialann becomes mbialann.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí an t-uisce ag teacht as an ___ (píobán).",
+  "base": "píobán",
+  "r": "ecl",
+  "e": "The water was coming out of the pipe.",
+  "w": "Preposition + an: urú. píobán becomes bpíobán.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá cáca ar an ___ (pláta).",
+  "base": "pláta",
+  "r": "ecl",
+  "e": "There is a cake on the plate.",
+  "w": "Preposition + an: urú. pláta becomes bpláta.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Shiúil sé thar an ___ (geata).",
+  "base": "geata",
+  "r": "ecl",
+  "e": "He walked past the gate.",
+  "w": "Preposition + an: urú. geata becomes ngeata.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Léim an madra thar an ___ (claí).",
+  "base": "claí",
+  "r": "ecl",
+  "e": "The dog jumped over the fence.",
+  "w": "Preposition + an: urú. claí becomes gclaí.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Chuaigh muid thar an ___ (cnoc).",
+  "base": "cnoc",
+  "r": "ecl",
+  "e": "We went over the hill.",
+  "w": "Preposition + an: urú. cnoc becomes gcnoc.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tháinig an solas tríd an ___ (fuinneog).",
+  "base": "fuinneog",
+  "r": "ecl",
+  "e": "The light came through the window.",
+  "w": "Preposition + an: urú. fuinneog becomes bhfuinneog.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Shiúil muid tríd an ___ (páirc).",
+  "base": "páirc",
+  "r": "ecl",
+  "e": "We walked through the field.",
+  "w": "Preposition + an: urú. páirc becomes bpáirc.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Chuaigh siad tríd an ___ (coill).",
+  "base": "coill",
+  "r": "ecl",
+  "e": "They went through the wood.",
+  "w": "Preposition + an: urú. coill becomes gcoill.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Shiúil sí tríd an ___ (cathair).",
+  "base": "cathair",
+  "r": "ecl",
+  "e": "She walked through the city.",
+  "w": "Preposition + an: urú. cathair becomes gcathair.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá eagla air roimh an ___ (gadhar).",
+  "base": "gadhar",
+  "r": "ecl",
+  "e": "He is afraid of the dog.",
+  "w": "Preposition + an: urú. gadhar becomes ngadhar.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá eagla orm roimh an ___ (fiaclóir).",
+  "base": "fiaclóir",
+  "r": "ecl",
+  "e": "I am afraid of the dentist.",
+  "w": "Preposition + an: urú. fiaclóir becomes bhfiaclóir.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá eagla uirthi roimh an ___ (cat).",
+  "base": "cat",
+  "r": "ecl",
+  "e": "She is afraid of the cat.",
+  "w": "Preposition + an: urú. cat becomes gcat.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Cuir an hata ar an ___ (cathaoir).",
+  "base": "cathaoir",
+  "r": "ecl",
+  "e": "Put the hat on the chair.",
+  "w": "Preposition + an: urú. cathaoir becomes gcathaoir.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an seanfhear ar an ___ (binse).",
+  "base": "binse",
+  "r": "ecl",
+  "e": "The old man is on the bench.",
+  "w": "Preposition + an: urú. binse becomes mbinse.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí sé ar an ___ (bóthar) go Gaillimh.",
+  "base": "bóthar",
+  "r": "ecl",
+  "e": "He was on the road to Galway.",
+  "w": "Preposition + an: urú. bóthar becomes mbóthar.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí mé ar an ___ (feirm) inné.",
+  "base": "feirm",
+  "r": "ecl",
+  "e": "I was on the farm yesterday.",
+  "w": "Preposition + an: urú. feirm becomes bhfeirm.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Cheannaigh mé ticéad ag an ___ (cuntar).",
+  "base": "cuntar",
+  "r": "ecl",
+  "e": "I bought a ticket at the counter.",
+  "w": "Preposition + an: urú. cuntar becomes gcuntar.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Fan liom ag an ___ (cearnóg).",
+  "base": "cearnóg",
+  "r": "ecl",
+  "e": "Wait for me at the square.",
+  "w": "Preposition + an: urú. cearnóg becomes gcearnóg.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí siad ag an ___ (cóisir) aréir.",
+  "base": "cóisir",
+  "r": "ecl",
+  "e": "They were at the party last night.",
+  "w": "Preposition + an: urú. cóisir becomes gcóisir.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá mé ag fanacht leis an ___ (bus).",
+  "base": "bus",
+  "r": "ecl",
+  "e": "I am waiting for the bus.",
+  "w": "Preposition + an: urú. bus becomes mbus.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Chuaigh sé ar an ___ (bád) go hÁrainn.",
+  "base": "bád",
+  "r": "ecl",
+  "e": "He went on the boat to Aran.",
+  "w": "Preposition + an: urú. bád becomes mbád.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an páiste ar an ___ (cathaoir) ard.",
+  "base": "cathaoir",
+  "r": "ecl",
+  "e": "The child is on the high chair.",
+  "w": "Preposition + an: urú. cathaoir becomes gcathaoir.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Ná suigh ar an ___ (féar).",
+  "base": "féar",
+  "r": "ecl",
+  "e": "Don't sit on the grass.",
+  "w": "Preposition + an: urú. féar becomes bhféar.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá cóisir ag an ___ (club) anocht.",
+  "base": "club",
+  "r": "ecl",
+  "e": "There is a party at the club tonight.",
+  "w": "Preposition + an: urú. club becomes gclub.",
+  "wg": "Réamhfhocal + an: urú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an bhean ag an ___ (doras).",
+  "base": "doras",
+  "r": "none",
+  "e": "The woman is at the door.",
+  "w": "After preposition + an, d and t resist urú: doras stays doras.",
+  "wg": "Ní chuirtear urú ar d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Shiúil sé amach tríd an ___ (doras).",
+  "base": "doras",
+  "r": "none",
+  "e": "He walked out through the door.",
+  "w": "After preposition + an, d and t resist urú: doras stays doras.",
+  "wg": "Ní chuirtear urú ar d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Chuaigh muid ar an ___ (traein) go Corcaigh.",
+  "base": "traein",
+  "r": "none",
+  "e": "We went on the train to Cork.",
+  "w": "After preposition + an, d and t resist urú: traein stays traein.",
+  "wg": "Ní chuirtear urú ar d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Chonaic mé é ar an ___ (teilifís).",
+  "base": "teilifís",
+  "r": "none",
+  "e": "I saw it on the television.",
+  "w": "After preposition + an, d and t resist urú: teilifís stays teilifís.",
+  "wg": "Ní chuirtear urú ar d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Thit an cupán ar an ___ (talamh).",
+  "base": "talamh",
+  "r": "none",
+  "e": "The cup fell on the ground.",
+  "w": "After preposition + an, d and t resist urú: talamh stays talamh.",
+  "wg": "Ní chuirtear urú ar d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Chuaigh sé chuig an ___ (dochtúir).",
+  "base": "dochtúir",
+  "r": "none",
+  "e": "He went to the doctor.",
+  "w": "After preposition + an, d and t resist urú: dochtúir stays dochtúir.",
+  "wg": "Ní chuirtear urú ar d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Labhair mé leis an ___ (dochtúir).",
+  "base": "dochtúir",
+  "r": "none",
+  "e": "I spoke to the doctor.",
+  "w": "After preposition + an, d and t resist urú: dochtúir stays dochtúir.",
+  "wg": "Ní chuirtear urú ar d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tháinig sí as an ___ (teach).",
+  "base": "teach",
+  "r": "none",
+  "e": "She came out of the house.",
+  "w": "After preposition + an, d and t resist urú: teach stays teach.",
+  "wg": "Ní chuirtear urú ar d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Bhí siad ag an ___ (trá) inné.",
+  "base": "trá",
+  "r": "none",
+  "e": "They were at the beach yesterday.",
+  "w": "After preposition + an, d and t resist urú: trá stays trá.",
+  "wg": "Ní chuirtear urú ar d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Chuir sé móin ar an ___ (tine).",
+  "base": "tine",
+  "r": "none",
+  "e": "He put turf on the fire.",
+  "w": "After preposition + an, d and t resist urú: tine stays tine.",
+  "wg": "Ní chuirtear urú ar d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Shiúil muid thar an ___ (droichead).",
+  "base": "droichead",
+  "r": "none",
+  "e": "We walked over the bridge.",
+  "w": "After preposition + an, d and t resist urú: droichead stays droichead.",
+  "wg": "Ní chuirtear urú ar d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Bhí mé ag caint leis an ___ (tiománaí).",
+  "base": "tiománaí",
+  "r": "none",
+  "e": "I was talking to the driver.",
+  "w": "After preposition + an, d and t resist urú: tiománaí stays tiománaí.",
+  "wg": "Ní chuirtear urú ar d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an carr ag an ___ (teach).",
+  "base": "teach",
+  "r": "none",
+  "e": "The car is at the house.",
+  "w": "After preposition + an, d and t resist urú: teach stays teach.",
+  "wg": "Ní chuirtear urú ar d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá eagla air roimh an ___ (dorchadas).",
+  "base": "dorchadas",
+  "r": "none",
+  "e": "He is afraid of the dark.",
+  "w": "After preposition + an, d and t resist urú: dorchadas stays dorchadas.",
+  "wg": "Ní chuirtear urú ar d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Thit an leabhar ar an ___ (urlár).",
+  "base": "urlár",
+  "r": "none",
+  "e": "The book fell on the floor.",
+  "w": "Preposition + an before a vowel: no change. urlár stays urlár.",
+  "wg": "Guta: gan athrú i ndiaidh réamhfhocal + an.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá sé ag an ___ (ospidéal) inniu.",
+  "base": "ospidéal",
+  "r": "none",
+  "e": "He is at the hospital today.",
+  "w": "Preposition + an before a vowel: no change. ospidéal stays ospidéal.",
+  "wg": "Guta: gan athrú i ndiaidh réamhfhocal + an.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Fan liom ag an ___ (aerfort).",
+  "base": "aerfort",
+  "r": "none",
+  "e": "Wait for me at the airport.",
+  "w": "Preposition + an before a vowel: no change. aerfort stays aerfort.",
+  "wg": "Guta: gan athrú i ndiaidh réamhfhocal + an.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Chuaigh muid chuig an ___ (oileán).",
+  "base": "oileán",
+  "r": "none",
+  "e": "We went to the island.",
+  "w": "Preposition + an before a vowel: no change. oileán stays oileán.",
+  "wg": "Guta: gan athrú i ndiaidh réamhfhocal + an.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí siad ag an ___ (ollmhargadh).",
+  "base": "ollmhargadh",
+  "r": "none",
+  "e": "They were at the supermarket.",
+  "w": "Preposition + an before a vowel: no change. ollmhargadh stays ollmhargadh.",
+  "wg": "Guta: gan athrú i ndiaidh réamhfhocal + an.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tháinig sé as an ___ (oifig).",
+  "base": "oifig",
+  "r": "none",
+  "e": "He came out of the office.",
+  "w": "Preposition + an before a vowel: no change. oifig stays oifig.",
+  "wg": "Guta: gan athrú i ndiaidh réamhfhocal + an.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí mé ag an ___ (Aifreann) Dé Domhnaigh.",
+  "base": "Aifreann",
+  "r": "none",
+  "e": "I was at Mass on Sunday.",
+  "w": "Preposition + an before a vowel: no change. Aifreann stays Aifreann.",
+  "wg": "Guta: gan athrú i ndiaidh réamhfhocal + an.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá mé ag dul chuig an ___ (ollscoil).",
+  "base": "ollscoil",
+  "r": "none",
+  "e": "I am going to the university.",
+  "w": "Preposition + an before a vowel: no change. ollscoil stays ollscoil.",
+  "wg": "Guta: gan athrú i ndiaidh réamhfhocal + an.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an t-arán ar an ___ (urlár).",
+  "base": "urlár",
+  "r": "none",
+  "e": "The bread is on the floor.",
+  "w": "Preposition + an before a vowel: no change. urlár stays urlár.",
+  "wg": "Guta: gan athrú i ndiaidh réamhfhocal + an.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí mé ag caint leis an ___ (iascaire).",
+  "base": "iascaire",
+  "r": "none",
+  "e": "I was talking to the fisherman.",
+  "w": "Preposition + an before a vowel: no change. iascaire stays iascaire.",
+  "wg": "Guta: gan athrú i ndiaidh réamhfhocal + an.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí mé ag siúl ar an ___ (sráid).",
+  "base": "sráid",
+  "r": "ts",
+  "e": "I was walking on the street.",
+  "w": "Preposition + an + a feminine noun in s: t in front. sráid becomes tsráid.",
+  "wg": "Réamhfhocal + an + s baininscneach: ts.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Chonaic mé í ar an ___ (sráid) inné.",
+  "base": "sráid",
+  "r": "ts",
+  "e": "I saw her on the street yesterday.",
+  "w": "Preposition + an + a feminine noun in s: t in front. sráid becomes tsráid.",
+  "wg": "Réamhfhocal + an + s baininscneach: ts.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Bhí mé ag caint leis an ___ (seanmháthair).",
+  "base": "seanmháthair",
+  "r": "ts",
+  "e": "I was talking to the grandmother.",
+  "w": "Preposition + an + a feminine noun in s: t in front. seanmháthair becomes tseanmháthair.",
+  "wg": "Réamhfhocal + an + s baininscneach: ts.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá siopa nua ar an ___ (sráid) seo.",
+  "base": "sráid",
+  "r": "ts",
+  "e": "There is a new shop on this street.",
+  "w": "Preposition + an + a feminine noun in s: t in front. sráid becomes tsráid.",
+  "wg": "Réamhfhocal + an + s baininscneach: ts.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Bhí siad ag an ___ (sochraid) inné.",
+  "base": "sochraid",
+  "r": "ts",
+  "e": "They were at the funeral yesterday.",
+  "w": "Preposition + an + a feminine noun in s: t in front. sochraid becomes tsochraid.",
+  "wg": "Réamhfhocal + an + s baininscneach: ts.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Shiúil sí síos ar an ___ (sráid) mhór.",
+  "base": "sráid",
+  "r": "ts",
+  "e": "She walked down the main street.",
+  "w": "Preposition + an + a feminine noun in s: t in front. sráid becomes tsráid.",
+  "wg": "Réamhfhocal + an + s baininscneach: ts.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá sí sa ___ (cistin).",
+  "base": "cistin",
+  "r": "len",
+  "e": "She is in the kitchen.",
+  "w": "Sa (in the) takes séimhiú: cistin becomes chistin.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá na páistí sa ___ (gairdín).",
+  "base": "gairdín",
+  "r": "len",
+  "e": "The children are in the garden.",
+  "w": "Sa (in the) takes séimhiú: gairdín becomes ghairdín.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an bhó sa ___ (páirc).",
+  "base": "páirc",
+  "r": "len",
+  "e": "The cow is in the field.",
+  "w": "Sa (in the) takes séimhiú: páirc becomes pháirc.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "D'ith muid sa ___ (bialann) aréir.",
+  "base": "bialann",
+  "r": "len",
+  "e": "We ate in the restaurant last night.",
+  "w": "Sa (in the) takes séimhiú: bialann becomes bhialann.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an t-airgead sa ___ (banc).",
+  "base": "banc",
+  "r": "len",
+  "e": "The money is in the bank.",
+  "w": "Sa (in the) takes séimhiú: banc becomes bhanc.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá mo mhála sa ___ (carr).",
+  "base": "carr",
+  "r": "len",
+  "e": "My bag is in the car.",
+  "w": "Sa (in the) takes séimhiú: carr becomes charr.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá cónaí orm sa ___ (cathair).",
+  "base": "cathair",
+  "r": "len",
+  "e": "I live in the city.",
+  "w": "Sa (in the) takes séimhiú: cathair becomes chathair.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí muid sa ___ (pictiúrlann) aréir.",
+  "base": "pictiúrlann",
+  "r": "len",
+  "e": "We were in the cinema last night.",
+  "w": "Sa (in the) takes séimhiú: pictiúrlann becomes phictiúrlann.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá na bréagáin sa ___ (bosca).",
+  "base": "bosca",
+  "r": "len",
+  "e": "The toys are in the box.",
+  "w": "Sa (in the) takes séimhiú: bosca becomes bhosca.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an bainne sa ___ (cuisneoir).",
+  "base": "cuisneoir",
+  "r": "len",
+  "e": "The milk is in the fridge.",
+  "w": "Sa (in the) takes séimhiú: cuisneoir becomes chuisneoir.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an carr sa ___ (garáiste).",
+  "base": "garáiste",
+  "r": "len",
+  "e": "The car is in the garage.",
+  "w": "Sa (in the) takes séimhiú: garáiste becomes gharáiste.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an cóta sa ___ (cófra).",
+  "base": "cófra",
+  "r": "len",
+  "e": "The coat is in the wardrobe.",
+  "w": "Sa (in the) takes séimhiú: cófra becomes chófra.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí mé sa ___ (baile) mór inniu.",
+  "base": "baile",
+  "r": "len",
+  "e": "I was in town today.",
+  "w": "Sa (in the) takes séimhiú: baile becomes bhaile.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá sé sa ___ (baile) anois.",
+  "base": "baile",
+  "r": "len",
+  "e": "He is at home now.",
+  "w": "Sa (in the) takes séimhiú: baile becomes bhaile.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá tae sa ___ (cupán).",
+  "base": "cupán",
+  "r": "len",
+  "e": "There is tea in the cup.",
+  "w": "Sa (in the) takes séimhiú: cupán becomes chupán.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an t-uisce sa ___ (buidéal).",
+  "base": "buidéal",
+  "r": "len",
+  "e": "The water is in the bottle.",
+  "w": "Sa (in the) takes séimhiú: buidéal becomes bhuidéal.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí sí ag obair sa ___ (feirm).",
+  "base": "feirm",
+  "r": "len",
+  "e": "She was working on the farm.",
+  "w": "Sa (in the) takes séimhiú: feirm becomes fheirm.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí mé ag snámh sa ___ (farraige).",
+  "base": "farraige",
+  "r": "len",
+  "e": "I was swimming in the sea.",
+  "w": "Sa (in the) takes séimhiú: farraige becomes fharraige.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá crann mór sa ___ (coill).",
+  "base": "coill",
+  "r": "len",
+  "e": "There is a big tree in the wood.",
+  "w": "Sa (in the) takes séimhiú: coill becomes choill.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá sé ina chónaí sa ___ (Gearmáin).",
+  "base": "Gearmáin",
+  "r": "len",
+  "e": "He lives in Germany.",
+  "w": "Sa (in the) takes séimhiú: Gearmáin becomes Ghearmáin.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí mé sa ___ (Frainc) anuraidh.",
+  "base": "Frainc",
+  "r": "len",
+  "e": "I was in France last year.",
+  "w": "Sa (in the) takes séimhiú: Frainc becomes Fhrainc.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá sí ag obair sa ___ (Breatain) Bheag.",
+  "base": "Breatain",
+  "r": "len",
+  "e": "She works in Wales.",
+  "w": "Sa (in the) takes séimhiú: Breatain becomes Bhreatain.",
+  "wg": "Sa + séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an fheoil sa ___ (cuisneoir).",
+  "base": "cuisneoir",
+  "r": "len",
+  "e": "The meat is in the fridge.",
+  "w": "Sa (in the) takes séimhiú: cuisneoir becomes chuisneoir.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí slua mór sa ___ (cearnóg).",
+  "base": "cearnóg",
+  "r": "len",
+  "e": "There was a big crowd in the square.",
+  "w": "Sa (in the) takes séimhiú: cearnóg becomes chearnóg.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí sé sa ___ (club) aréir.",
+  "base": "club",
+  "r": "len",
+  "e": "He was in the club last night.",
+  "w": "Sa (in the) takes séimhiú: club becomes chlub.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá na prátaí sa ___ (pota).",
+  "base": "pota",
+  "r": "len",
+  "e": "The potatoes are in the pot.",
+  "w": "Sa (in the) takes séimhiú: pota becomes phota.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá sé ag obair sa ___ (bialann) sin.",
+  "base": "bialann",
+  "r": "len",
+  "e": "He works in that restaurant.",
+  "w": "Sa (in the) takes séimhiú: bialann becomes bhialann.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá mé sa ___ (teach).",
+  "base": "teach",
+  "r": "none",
+  "e": "I am in the house.",
+  "w": "Sa takes séimhiú, but d and t resist it: teach stays teach.",
+  "wg": "Sa: ní shéimhítear d ná t.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Bhí muid sa ___ (traein) ar feadh uair an chloig.",
+  "base": "traein",
+  "r": "none",
+  "e": "We were on the train for an hour.",
+  "w": "Sa takes séimhiú, but d and t resist it: traein stays traein.",
+  "wg": "Sa: ní shéimhítear d ná t.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá cónaí orthu sa ___ (tír) seo.",
+  "base": "tír",
+  "r": "none",
+  "e": "They live in this country.",
+  "w": "Sa takes séimhiú, but d and t resist it: tír stays tír.",
+  "wg": "Sa: ní shéimhítear d ná t.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá sé sa ___ (teach) ósta.",
+  "base": "teach",
+  "r": "none",
+  "e": "He is in the hotel.",
+  "w": "Sa takes séimhiú, but d and t resist it: teach stays teach.",
+  "wg": "Sa: ní shéimhítear d ná t.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Bhí mé sa ___ (Tuirc) anuraidh.",
+  "base": "Tuirc",
+  "r": "none",
+  "e": "I was in Turkey last year.",
+  "w": "Sa takes séimhiú, but d and t resist it: Tuirc stays Tuirc.",
+  "wg": "Sa: ní shéimhítear d ná t.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Is é an duine is fearr sa ___ (domhan) é.",
+  "base": "domhan",
+  "r": "none",
+  "e": "He is the best person in the world.",
+  "w": "Sa takes séimhiú, but d and t resist it: domhan stays domhan.",
+  "wg": "Sa: ní shéimhítear d ná t.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Thit an cupán den ___ (bord).",
+  "base": "bord",
+  "r": "len",
+  "e": "The cup fell off the table.",
+  "w": "Den (off the, of the) takes séimhiú: bord becomes bhord.",
+  "wg": "Den + séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Thit sé den ___ (cathaoir).",
+  "base": "cathaoir",
+  "r": "len",
+  "e": "He fell off the chair.",
+  "w": "Den (off the, of the) takes séimhiú: cathaoir becomes chathaoir.",
+  "wg": "Den + séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Thuirling sí den ___ (bus).",
+  "base": "bus",
+  "r": "len",
+  "e": "She got off the bus.",
+  "w": "Den (off the, of the) takes séimhiú: bus becomes bhus.",
+  "wg": "Den + séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Thit an t-úll den ___ (crann).",
+  "base": "crann",
+  "r": "len",
+  "e": "The apple fell from the tree.",
+  "w": "Den (off the, of the) takes séimhiú: crann becomes chrann.",
+  "wg": "Den + séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Ghlan sí an salachar den ___ (pláta).",
+  "base": "pláta",
+  "r": "len",
+  "e": "She cleaned the dirt off the plate.",
+  "w": "Den (off the, of the) takes séimhiú: pláta becomes phláta.",
+  "wg": "Den + séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Léim an cat den ___ (cathaoir).",
+  "base": "cathaoir",
+  "r": "len",
+  "e": "The cat jumped off the chair.",
+  "w": "Den (off the, of the) takes séimhiú: cathaoir becomes chathaoir.",
+  "wg": "Den + séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Thug mé bláthanna don ___ (bean).",
+  "base": "bean",
+  "r": "len",
+  "e": "I gave flowers to the woman.",
+  "w": "Don (to the, for the) takes séimhiú: bean becomes bhean.",
+  "wg": "Don + séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Thug sé an leabhar don ___ (páiste).",
+  "base": "páiste",
+  "r": "len",
+  "e": "He gave the book to the child.",
+  "w": "Don (to the, for the) takes séimhiú: páiste becomes pháiste.",
+  "wg": "Don + séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Thug mé an t-airgead don ___ (fear).",
+  "base": "fear",
+  "r": "len",
+  "e": "I gave the money to the man.",
+  "w": "Don (to the, for the) takes séimhiú: fear becomes fhear.",
+  "wg": "Don + séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Thug sí bia don ___ (cat).",
+  "base": "cat",
+  "r": "len",
+  "e": "She gave food to the cat.",
+  "w": "Don (to the, for the) takes séimhiú: cat becomes chat.",
+  "wg": "Don + séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Inis an scéal don ___ (cailín).",
+  "base": "cailín",
+  "r": "len",
+  "e": "Tell the story to the girl.",
+  "w": "Don (to the, for the) takes séimhiú: cailín becomes chailín.",
+  "wg": "Don + séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Thug mé cúnamh don ___ (comharsa).",
+  "base": "comharsa",
+  "r": "len",
+  "e": "I gave help to the neighbour.",
+  "w": "Don (to the, for the) takes séimhiú: comharsa becomes chomharsa.",
+  "wg": "Don + séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Thaispeáin sé an pictiúr don ___ (garda).",
+  "base": "garda",
+  "r": "len",
+  "e": "He showed the picture to the guard.",
+  "w": "Don (to the, for the) takes séimhiú: garda becomes gharda.",
+  "wg": "Don + séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Thug sí an ticéad don ___ (buachaill).",
+  "base": "buachaill",
+  "r": "len",
+  "e": "She gave the ticket to the boy.",
+  "w": "Don (to the, for the) takes séimhiú: buachaill becomes bhuachaill.",
+  "wg": "Don + séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an bronntanas seo don ___ (bean) sin.",
+  "base": "bean",
+  "r": "len",
+  "e": "This present is for that woman.",
+  "w": "Don (to the, for the) takes séimhiú: bean becomes bhean.",
+  "wg": "Don + séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Thuirling muid den ___ (traein) i nGaillimh.",
+  "base": "traein",
+  "r": "none",
+  "e": "We got off the train in Galway.",
+  "w": "Den takes séimhiú, but d and t resist it: traein stays traein.",
+  "wg": "Den: ní shéimhítear d ná t.",
+  "b": "B2",
+  "t": "art"
+ },
+ {
+  "q": "Thug mé an litir don ___ (dochtúir).",
+  "base": "dochtúir",
+  "r": "none",
+  "e": "I gave the letter to the doctor.",
+  "w": "Don takes séimhiú, but d and t resist it: dochtúir stays dochtúir.",
+  "wg": "Don: ní shéimhítear d ná t.",
+  "b": "B2",
+  "t": "art"
+ },
+ {
+  "q": "Thug sé an t-airgead don ___ (tiománaí).",
+  "base": "tiománaí",
+  "r": "none",
+  "e": "He gave the money to the driver.",
+  "w": "Don takes séimhiú, but d and t resist it: tiománaí stays tiománaí.",
+  "wg": "Don: ní shéimhítear d ná t.",
+  "b": "B2",
+  "t": "art"
+ },
+ {
+  "q": "Thit an pláta den ___ (tábla).",
+  "base": "tábla",
+  "r": "none",
+  "e": "The plate fell off the table.",
+  "w": "Den takes séimhiú, but d and t resist it: tábla stays tábla.",
+  "wg": "Den: ní shéimhítear d ná t.",
+  "b": "B2",
+  "t": "art"
+ },
+ {
+  "q": "Tá na ___ (páistí) sa ghairdín.",
+  "base": "páistí",
+  "r": "none",
+  "e": "The children are in the garden.",
+  "w": "Na with a plural noun changes nothing before a consonant.",
+  "wg": "Na + iolra: gan athrú roimh chonsan.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá na ___ (bróga) faoin leaba.",
+  "base": "bróga",
+  "r": "none",
+  "e": "The shoes are under the bed.",
+  "w": "Na with a plural noun changes nothing before a consonant.",
+  "wg": "Na + iolra: gan athrú roimh chonsan.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá na ___ (cailíní) ag canadh.",
+  "base": "cailíní",
+  "r": "none",
+  "e": "The girls are singing.",
+  "w": "Na with a plural noun changes nothing before a consonant.",
+  "wg": "Na + iolra: gan athrú roimh chonsan.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá na ___ (cupáin) salach.",
+  "base": "cupáin",
+  "r": "none",
+  "e": "The cups are dirty.",
+  "w": "Na with a plural noun changes nothing before a consonant.",
+  "wg": "Na + iolra: gan athrú roimh chonsan.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Cá bhfuil na ___ (ticéid)?",
+  "base": "ticéid",
+  "r": "none",
+  "e": "Where are the tickets?",
+  "w": "Na with a plural noun changes nothing before a consonant.",
+  "wg": "Na + iolra: gan athrú roimh chonsan.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá na ___ (fir) ag obair.",
+  "base": "fir",
+  "r": "none",
+  "e": "The men are working.",
+  "w": "Na with a plural noun changes nothing before a consonant.",
+  "wg": "Na + iolra: gan athrú roimh chonsan.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá na ___ (gadhair) ag tafann.",
+  "base": "gadhair",
+  "r": "none",
+  "e": "The dogs are barking.",
+  "w": "Na with a plural noun changes nothing before a consonant.",
+  "wg": "Na + iolra: gan athrú roimh chonsan.",
+  "b": "A2",
+  "t": "art"
+ }
+]

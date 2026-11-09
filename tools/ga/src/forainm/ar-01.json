@@ -1,0 +1,911 @@
+[
+ {
+  "q": "Tá ocras ___ (ar + iad).",
+  "prep": "ar",
+  "p": "siad",
+  "e": "They're hungry.",
+  "w": "Feelings are on you: ar + iad = orthu.",
+  "wg": "Mothúcháin: ar + iad = orthu.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá ocras ___ (ar + mé).",
+  "prep": "ar",
+  "p": "me",
+  "e": "I'm hungry.",
+  "w": "Feelings are on you: ar + mé = orm.",
+  "wg": "Mothúcháin: ar + mé = orm.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá ocras ___ (ar + tú).",
+  "prep": "ar",
+  "p": "tu",
+  "e": "You're hungry.",
+  "w": "Feelings are on you: ar + tú = ort.",
+  "wg": "Mothúcháin: ar + tú = ort.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá ocras ___ (ar + é).",
+  "prep": "ar",
+  "p": "se",
+  "e": "He's hungry.",
+  "w": "Feelings are on you: ar + é = air.",
+  "wg": "Mothúcháin: ar + é = air.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá ocras ___ (ar + í).",
+  "prep": "ar",
+  "p": "si",
+  "e": "She's hungry.",
+  "w": "Feelings are on you: ar + í = uirthi.",
+  "wg": "Mothúcháin: ar + í = uirthi.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá tart ___ (ar + é).",
+  "prep": "ar",
+  "p": "se",
+  "e": "He's thirsty.",
+  "w": "Feelings are on you: ar + é = air.",
+  "wg": "Mothúcháin: ar + é = air.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá tart ___ (ar + í).",
+  "prep": "ar",
+  "p": "si",
+  "e": "She's thirsty.",
+  "w": "Feelings are on you: ar + í = uirthi.",
+  "wg": "Mothúcháin: ar + í = uirthi.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá tart ___ (ar + muid).",
+  "prep": "ar",
+  "p": "muid",
+  "e": "We're thirsty.",
+  "w": "Feelings are on you: ar + muid = orainn.",
+  "wg": "Mothúcháin: ar + muid = orainn.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá tart ___ (ar + sibh).",
+  "prep": "ar",
+  "p": "sibh",
+  "e": "You're all thirsty.",
+  "w": "Feelings are on you: ar + sibh = oraibh.",
+  "wg": "Mothúcháin: ar + sibh = oraibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá tuirse ___ (ar + sibh).",
+  "prep": "ar",
+  "p": "sibh",
+  "e": "You're all tired.",
+  "w": "Feelings are on you: ar + sibh = oraibh.",
+  "wg": "Mothúcháin: ar + sibh = oraibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá tuirse ___ (ar + iad).",
+  "prep": "ar",
+  "p": "siad",
+  "e": "They're tired.",
+  "w": "Feelings are on you: ar + iad = orthu.",
+  "wg": "Mothúcháin: ar + iad = orthu.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá tuirse ___ (ar + mé).",
+  "prep": "ar",
+  "p": "me",
+  "e": "I'm tired.",
+  "w": "Feelings are on you: ar + mé = orm.",
+  "wg": "Mothúcháin: ar + mé = orm.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá tuirse ___ (ar + tú).",
+  "prep": "ar",
+  "p": "tu",
+  "e": "You're tired.",
+  "w": "Feelings are on you: ar + tú = ort.",
+  "wg": "Mothúcháin: ar + tú = ort.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá áthas ___ (ar + tú) inniu.",
+  "prep": "ar",
+  "p": "tu",
+  "e": "You're happy today.",
+  "w": "Feelings are on you: ar + tú = ort.",
+  "wg": "Mothúcháin: ar + tú = ort.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá áthas ___ (ar + é) inniu.",
+  "prep": "ar",
+  "p": "se",
+  "e": "He's happy today.",
+  "w": "Feelings are on you: ar + é = air.",
+  "wg": "Mothúcháin: ar + é = air.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá áthas ___ (ar + í) inniu.",
+  "prep": "ar",
+  "p": "si",
+  "e": "She's happy today.",
+  "w": "Feelings are on you: ar + í = uirthi.",
+  "wg": "Mothúcháin: ar + í = uirthi.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá áthas ___ (ar + muid) inniu.",
+  "prep": "ar",
+  "p": "muid",
+  "e": "We're happy today.",
+  "w": "Feelings are on you: ar + muid = orainn.",
+  "wg": "Mothúcháin: ar + muid = orainn.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá brón ___ (ar + muid).",
+  "prep": "ar",
+  "p": "muid",
+  "e": "We're sad.",
+  "w": "Feelings are on you: ar + muid = orainn.",
+  "wg": "Mothúcháin: ar + muid = orainn.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá brón ___ (ar + sibh).",
+  "prep": "ar",
+  "p": "sibh",
+  "e": "You're all sad.",
+  "w": "Feelings are on you: ar + sibh = oraibh.",
+  "wg": "Mothúcháin: ar + sibh = oraibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá brón ___ (ar + iad).",
+  "prep": "ar",
+  "p": "siad",
+  "e": "They're sad.",
+  "w": "Feelings are on you: ar + iad = orthu.",
+  "wg": "Mothúcháin: ar + iad = orthu.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá brón ___ (ar + mé).",
+  "prep": "ar",
+  "p": "me",
+  "e": "I'm sad.",
+  "w": "Feelings are on you: ar + mé = orm.",
+  "wg": "Mothúcháin: ar + mé = orm.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá eagla ___ (ar + mé) roimh mhadraí.",
+  "prep": "ar",
+  "p": "me",
+  "e": "I'm afraid of dogs.",
+  "w": "Feelings are on you: ar + mé = orm.",
+  "wg": "Mothúcháin: ar + mé = orm.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá eagla ___ (ar + tú) roimh mhadraí.",
+  "prep": "ar",
+  "p": "tu",
+  "e": "You're afraid of dogs.",
+  "w": "Feelings are on you: ar + tú = ort.",
+  "wg": "Mothúcháin: ar + tú = ort.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá eagla ___ (ar + é) roimh mhadraí.",
+  "prep": "ar",
+  "p": "se",
+  "e": "He's afraid of dogs.",
+  "w": "Feelings are on you: ar + é = air.",
+  "wg": "Mothúcháin: ar + é = air.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá eagla ___ (ar + í) roimh mhadraí.",
+  "prep": "ar",
+  "p": "si",
+  "e": "She's afraid of dogs.",
+  "w": "Feelings are on you: ar + í = uirthi.",
+  "wg": "Mothúcháin: ar + í = uirthi.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá fearg ___ (ar + í) anois.",
+  "prep": "ar",
+  "p": "si",
+  "e": "She's angry now.",
+  "w": "Feelings are on you: ar + í = uirthi.",
+  "wg": "Mothúcháin: ar + í = uirthi.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá fearg ___ (ar + muid) anois.",
+  "prep": "ar",
+  "p": "muid",
+  "e": "We're angry now.",
+  "w": "Feelings are on you: ar + muid = orainn.",
+  "wg": "Mothúcháin: ar + muid = orainn.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá fearg ___ (ar + sibh) anois.",
+  "prep": "ar",
+  "p": "sibh",
+  "e": "You're all angry now.",
+  "w": "Feelings are on you: ar + sibh = oraibh.",
+  "wg": "Mothúcháin: ar + sibh = oraibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá fearg ___ (ar + iad) anois.",
+  "prep": "ar",
+  "p": "siad",
+  "e": "They're angry now.",
+  "w": "Feelings are on you: ar + iad = orthu.",
+  "wg": "Mothúcháin: ar + iad = orthu.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá slaghdán ___ (ar + iad).",
+  "prep": "ar",
+  "p": "siad",
+  "e": "They have a cold.",
+  "w": "An illness is on you: ar + iad = orthu.",
+  "wg": "Tinneas: ar + iad = orthu.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá slaghdán ___ (ar + mé).",
+  "prep": "ar",
+  "p": "me",
+  "e": "I have a cold.",
+  "w": "An illness is on you: ar + mé = orm.",
+  "wg": "Tinneas: ar + mé = orm.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá slaghdán ___ (ar + tú).",
+  "prep": "ar",
+  "p": "tu",
+  "e": "You have a cold.",
+  "w": "An illness is on you: ar + tú = ort.",
+  "wg": "Tinneas: ar + tú = ort.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá slaghdán ___ (ar + é).",
+  "prep": "ar",
+  "p": "se",
+  "e": "He has a cold.",
+  "w": "An illness is on you: ar + é = air.",
+  "wg": "Tinneas: ar + é = air.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá tinneas cinn ___ (ar + é).",
+  "prep": "ar",
+  "p": "se",
+  "e": "He has a headache.",
+  "w": "An illness is on you: ar + é = air.",
+  "wg": "Tinneas: ar + é = air.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá tinneas cinn ___ (ar + í).",
+  "prep": "ar",
+  "p": "si",
+  "e": "She has a headache.",
+  "w": "An illness is on you: ar + í = uirthi.",
+  "wg": "Tinneas: ar + í = uirthi.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá tinneas cinn ___ (ar + muid).",
+  "prep": "ar",
+  "p": "muid",
+  "e": "We have a headache.",
+  "w": "An illness is on you: ar + muid = orainn.",
+  "wg": "Tinneas: ar + muid = orainn.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá tinneas cinn ___ (ar + sibh).",
+  "prep": "ar",
+  "p": "sibh",
+  "e": "You all have a headache.",
+  "w": "An illness is on you: ar + sibh = oraibh.",
+  "wg": "Tinneas: ar + sibh = oraibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá deifir ___ (ar + sibh).",
+  "prep": "ar",
+  "p": "sibh",
+  "e": "You're all in a hurry.",
+  "w": "Feelings are on you: ar + sibh = oraibh.",
+  "wg": "Mothúcháin: ar + sibh = oraibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá deifir ___ (ar + iad).",
+  "prep": "ar",
+  "p": "siad",
+  "e": "They're in a hurry.",
+  "w": "Feelings are on you: ar + iad = orthu.",
+  "wg": "Mothúcháin: ar + iad = orthu.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá deifir ___ (ar + mé).",
+  "prep": "ar",
+  "p": "me",
+  "e": "I'm in a hurry.",
+  "w": "Feelings are on you: ar + mé = orm.",
+  "wg": "Mothúcháin: ar + mé = orm.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá deifir ___ (ar + tú).",
+  "prep": "ar",
+  "p": "tu",
+  "e": "You're in a hurry.",
+  "w": "Feelings are on you: ar + tú = ort.",
+  "wg": "Mothúcháin: ar + tú = ort.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá náire ___ (ar + tú).",
+  "prep": "ar",
+  "p": "tu",
+  "e": "You're embarrassed.",
+  "w": "Feelings are on you: ar + tú = ort.",
+  "wg": "Mothúcháin: ar + tú = ort.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá náire ___ (ar + é).",
+  "prep": "ar",
+  "p": "se",
+  "e": "He's embarrassed.",
+  "w": "Feelings are on you: ar + é = air.",
+  "wg": "Mothúcháin: ar + é = air.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá náire ___ (ar + í).",
+  "prep": "ar",
+  "p": "si",
+  "e": "She's embarrassed.",
+  "w": "Feelings are on you: ar + í = uirthi.",
+  "wg": "Mothúcháin: ar + í = uirthi.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá náire ___ (ar + muid).",
+  "prep": "ar",
+  "p": "muid",
+  "e": "We're embarrassed.",
+  "w": "Feelings are on you: ar + muid = orainn.",
+  "wg": "Mothúcháin: ar + muid = orainn.",
+  "b": "A2"
+ },
+ {
+  "q": "Cad atá ___ (ar + muid)?",
+  "prep": "ar",
+  "p": "muid",
+  "e": "What's wrong with us?",
+  "w": "Feelings are on you: ar + muid = orainn.",
+  "wg": "Mothúcháin: ar + muid = orainn.",
+  "b": "A1"
+ },
+ {
+  "q": "Cad atá ___ (ar + sibh)?",
+  "prep": "ar",
+  "p": "sibh",
+  "e": "What's wrong with you all?",
+  "w": "Feelings are on you: ar + sibh = oraibh.",
+  "wg": "Mothúcháin: ar + sibh = oraibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Cad atá ___ (ar + iad)?",
+  "prep": "ar",
+  "p": "siad",
+  "e": "What's wrong with them?",
+  "w": "Feelings are on you: ar + iad = orthu.",
+  "wg": "Mothúcháin: ar + iad = orthu.",
+  "b": "A1"
+ },
+ {
+  "q": "Cad atá ___ (ar + mé)?",
+  "prep": "ar",
+  "p": "me",
+  "e": "What's wrong with me?",
+  "w": "Feelings are on you: ar + mé = orm.",
+  "wg": "Mothúcháin: ar + mé = orm.",
+  "b": "A1"
+ },
+ {
+  "q": "Cén t-ainm atá ___ (ar + muid)?",
+  "prep": "ar",
+  "p": "muid",
+  "e": "What's our name?",
+  "w": "A name is on you here: ar + muid = orainn.",
+  "wg": "Ainm: ar + muid = orainn.",
+  "b": "A1"
+ },
+ {
+  "q": "Cén t-ainm atá ___ (ar + sibh)?",
+  "prep": "ar",
+  "p": "sibh",
+  "e": "What's your name?",
+  "w": "A name is on you here: ar + sibh = oraibh.",
+  "wg": "Ainm: ar + sibh = oraibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Cén t-ainm atá ___ (ar + iad)?",
+  "prep": "ar",
+  "p": "siad",
+  "e": "What's their name?",
+  "w": "A name is on you here: ar + iad = orthu.",
+  "wg": "Ainm: ar + iad = orthu.",
+  "b": "A1"
+ },
+ {
+  "q": "Cén t-ainm atá ___ (ar + tú)?",
+  "prep": "ar",
+  "p": "tu",
+  "e": "What's your name?",
+  "w": "A name is on you here: ar + tú = ort.",
+  "wg": "Ainm: ar + tú = ort.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá fiche euro ___ (ar + í) do Sheán.",
+  "prep": "ar",
+  "p": "si",
+  "e": "She owes Seán twenty euro.",
+  "w": "A debt is on you: ar + í = uirthi.",
+  "wg": "Fiacha: ar + í = uirthi.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá fiche euro ___ (ar + muid) do Sheán.",
+  "prep": "ar",
+  "p": "muid",
+  "e": "We owe Seán twenty euro.",
+  "w": "A debt is on you: ar + muid = orainn.",
+  "wg": "Fiacha: ar + muid = orainn.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá fiche euro ___ (ar + sibh) do Sheán.",
+  "prep": "ar",
+  "p": "sibh",
+  "e": "You all owe Seán twenty euro.",
+  "w": "A debt is on you: ar + sibh = oraibh.",
+  "wg": "Fiacha: ar + sibh = oraibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá fiche euro ___ (ar + iad) do Sheán.",
+  "prep": "ar",
+  "p": "siad",
+  "e": "They owe Seán twenty euro.",
+  "w": "A debt is on you: ar + iad = orthu.",
+  "wg": "Fiacha: ar + iad = orthu.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá imní ___ (ar + iad) faoin scrúdú.",
+  "prep": "ar",
+  "p": "siad",
+  "e": "They're worried about the exam.",
+  "w": "Feelings are on you: ar + iad = orthu.",
+  "wg": "Mothúcháin: ar + iad = orthu.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá imní ___ (ar + mé) faoin scrúdú.",
+  "prep": "ar",
+  "p": "me",
+  "e": "I'm worried about the exam.",
+  "w": "Feelings are on you: ar + mé = orm.",
+  "wg": "Mothúcháin: ar + mé = orm.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá imní ___ (ar + tú) faoin scrúdú.",
+  "prep": "ar",
+  "p": "tu",
+  "e": "You're worried about the exam.",
+  "w": "Feelings are on you: ar + tú = ort.",
+  "wg": "Mothúcháin: ar + tú = ort.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá imní ___ (ar + é) faoin scrúdú.",
+  "prep": "ar",
+  "p": "se",
+  "e": "He's worried about the exam.",
+  "w": "Feelings are on you: ar + é = air.",
+  "wg": "Mothúcháin: ar + é = air.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá codladh ___ (ar + é).",
+  "prep": "ar",
+  "p": "se",
+  "e": "He's sleepy.",
+  "w": "Feelings are on you: ar + é = air.",
+  "wg": "Mothúcháin: ar + é = air.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá codladh ___ (ar + í).",
+  "prep": "ar",
+  "p": "si",
+  "e": "She's sleepy.",
+  "w": "Feelings are on you: ar + í = uirthi.",
+  "wg": "Mothúcháin: ar + í = uirthi.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá codladh ___ (ar + muid).",
+  "prep": "ar",
+  "p": "muid",
+  "e": "We're sleepy.",
+  "w": "Feelings are on you: ar + muid = orainn.",
+  "wg": "Mothúcháin: ar + muid = orainn.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá codladh ___ (ar + sibh).",
+  "prep": "ar",
+  "p": "sibh",
+  "e": "You're all sleepy.",
+  "w": "Feelings are on you: ar + sibh = oraibh.",
+  "wg": "Mothúcháin: ar + sibh = oraibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Bhí ionadh ___ (ar + sibh).",
+  "prep": "ar",
+  "p": "sibh",
+  "e": "You were all surprised.",
+  "w": "Feelings are on you: ar + sibh = oraibh.",
+  "wg": "Mothúcháin: ar + sibh = oraibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Bhí ionadh ___ (ar + iad).",
+  "prep": "ar",
+  "p": "siad",
+  "e": "They were surprised.",
+  "w": "Feelings are on you: ar + iad = orthu.",
+  "wg": "Mothúcháin: ar + iad = orthu.",
+  "b": "A2"
+ },
+ {
+  "q": "Bhí ionadh ___ (ar + mé).",
+  "prep": "ar",
+  "p": "me",
+  "e": "I was surprised.",
+  "w": "Feelings are on you: ar + mé = orm.",
+  "wg": "Mothúcháin: ar + mé = orm.",
+  "b": "A2"
+ },
+ {
+  "q": "Bhí ionadh ___ (ar + tú).",
+  "prep": "ar",
+  "p": "tu",
+  "e": "You were surprised.",
+  "w": "Feelings are on you: ar + tú = ort.",
+  "wg": "Mothúcháin: ar + tú = ort.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá cóta dubh ___ (ar + tú).",
+  "prep": "ar",
+  "p": "tu",
+  "e": "You're wearing a black coat.",
+  "w": "Clothes are on you: ar + tú = ort.",
+  "wg": "Éadaí: ar + tú = ort.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá cóta dubh ___ (ar + é).",
+  "prep": "ar",
+  "p": "se",
+  "e": "He's wearing a black coat.",
+  "w": "Clothes are on you: ar + é = air.",
+  "wg": "Éadaí: ar + é = air.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá cóta dubh ___ (ar + í).",
+  "prep": "ar",
+  "p": "si",
+  "e": "She's wearing a black coat.",
+  "w": "Clothes are on you: ar + í = uirthi.",
+  "wg": "Éadaí: ar + í = uirthi.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá cóta dubh ___ (ar + muid).",
+  "prep": "ar",
+  "p": "muid",
+  "e": "We're wearing a black coat.",
+  "w": "Clothes are on you: ar + muid = orainn.",
+  "wg": "Éadaí: ar + muid = orainn.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá ___ (ar + muid) imeacht anois.",
+  "prep": "ar",
+  "p": "muid",
+  "e": "We have to leave now.",
+  "w": "Tá ar means must: ar + muid = orainn.",
+  "wg": "Tá ar = caithfidh: ar + muid = orainn.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá ___ (ar + sibh) imeacht anois.",
+  "prep": "ar",
+  "p": "sibh",
+  "e": "You all have to leave now.",
+  "w": "Tá ar means must: ar + sibh = oraibh.",
+  "wg": "Tá ar = caithfidh: ar + sibh = oraibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá ___ (ar + iad) imeacht anois.",
+  "prep": "ar",
+  "p": "siad",
+  "e": "They have to leave now.",
+  "w": "Tá ar means must: ar + iad = orthu.",
+  "wg": "Tá ar = caithfidh: ar + iad = orthu.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá ___ (ar + mé) imeacht anois.",
+  "prep": "ar",
+  "p": "me",
+  "e": "I have to leave now.",
+  "w": "Tá ar means must: ar + mé = orm.",
+  "wg": "Tá ar = caithfidh: ar + mé = orm.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá ___ (ar + mé) obair go dian.",
+  "prep": "ar",
+  "p": "me",
+  "e": "I have to work hard.",
+  "w": "Tá ar means must: ar + mé = orm.",
+  "wg": "Tá ar = caithfidh: ar + mé = orm.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá ___ (ar + tú) obair go dian.",
+  "prep": "ar",
+  "p": "tu",
+  "e": "You have to work hard.",
+  "w": "Tá ar means must: ar + tú = ort.",
+  "wg": "Tá ar = caithfidh: ar + tú = ort.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá ___ (ar + é) obair go dian.",
+  "prep": "ar",
+  "p": "se",
+  "e": "He has to work hard.",
+  "w": "Tá ar means must: ar + é = air.",
+  "wg": "Tá ar = caithfidh: ar + é = air.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá ___ (ar + í) obair go dian.",
+  "prep": "ar",
+  "p": "si",
+  "e": "She has to work hard.",
+  "w": "Tá ar means must: ar + í = uirthi.",
+  "wg": "Tá ar = caithfidh: ar + í = uirthi.",
+  "b": "A2"
+ },
+ {
+  "q": "Bhí an-ocras ___ (ar + í) aréir.",
+  "prep": "ar",
+  "p": "si",
+  "e": "She was very hungry last night.",
+  "w": "Feelings are on you: ar + í = uirthi.",
+  "wg": "Mothúcháin: ar + í = uirthi.",
+  "b": "A1"
+ },
+ {
+  "q": "Bhí an-ocras ___ (ar + muid) aréir.",
+  "prep": "ar",
+  "p": "muid",
+  "e": "We were very hungry last night.",
+  "w": "Feelings are on you: ar + muid = orainn.",
+  "wg": "Mothúcháin: ar + muid = orainn.",
+  "b": "A1"
+ },
+ {
+  "q": "Bhí an-ocras ___ (ar + sibh) aréir.",
+  "prep": "ar",
+  "p": "sibh",
+  "e": "You were all very hungry last night.",
+  "w": "Feelings are on you: ar + sibh = oraibh.",
+  "wg": "Mothúcháin: ar + sibh = oraibh.",
+  "b": "A1"
+ },
+ {
+  "q": "Bhí an-ocras ___ (ar + iad) aréir.",
+  "prep": "ar",
+  "p": "siad",
+  "e": "They were very hungry last night.",
+  "w": "Feelings are on you: ar + iad = orthu.",
+  "wg": "Mothúcháin: ar + iad = orthu.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá fuacht ___ (ar + iad).",
+  "prep": "ar",
+  "p": "siad",
+  "e": "They're cold.",
+  "w": "Feelings are on you: ar + iad = orthu.",
+  "wg": "Mothúcháin: ar + iad = orthu.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá fuacht ___ (ar + mé).",
+  "prep": "ar",
+  "p": "me",
+  "e": "I'm cold.",
+  "w": "Feelings are on you: ar + mé = orm.",
+  "wg": "Mothúcháin: ar + mé = orm.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá fuacht ___ (ar + tú).",
+  "prep": "ar",
+  "p": "tu",
+  "e": "You're cold.",
+  "w": "Feelings are on you: ar + tú = ort.",
+  "wg": "Mothúcháin: ar + tú = ort.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá fuacht ___ (ar + é).",
+  "prep": "ar",
+  "p": "se",
+  "e": "He's cold.",
+  "w": "Feelings are on you: ar + é = air.",
+  "wg": "Mothúcháin: ar + é = air.",
+  "b": "A1"
+ },
+ {
+  "q": "Cuirfidh mé glaoch ___ (ar + muid) anocht.",
+  "prep": "ar",
+  "p": "muid",
+  "e": "I'll call us tonight.",
+  "w": "You put a call on someone: ar + muid = orainn.",
+  "wg": "Glaoch ar dhuine: ar + muid = orainn.",
+  "b": "A2"
+ },
+ {
+  "q": "Cuirfidh mé glaoch ___ (ar + sibh) anocht.",
+  "prep": "ar",
+  "p": "sibh",
+  "e": "I'll call you all tonight.",
+  "w": "You put a call on someone: ar + sibh = oraibh.",
+  "wg": "Glaoch ar dhuine: ar + sibh = oraibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Cuirfidh mé glaoch ___ (ar + iad) anocht.",
+  "prep": "ar",
+  "p": "siad",
+  "e": "I'll call them tonight.",
+  "w": "You put a call on someone: ar + iad = orthu.",
+  "wg": "Glaoch ar dhuine: ar + iad = orthu.",
+  "b": "A2"
+ },
+ {
+  "q": "Cuirfidh mé glaoch ___ (ar + tú) anocht.",
+  "prep": "ar",
+  "p": "tu",
+  "e": "I'll call you tonight.",
+  "w": "You put a call on someone: ar + tú = ort.",
+  "wg": "Glaoch ar dhuine: ar + tú = ort.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá aiféala ___ (ar + sibh).",
+  "prep": "ar",
+  "p": "sibh",
+  "e": "You're all sorry.",
+  "w": "Feelings are on you: ar + sibh = oraibh.",
+  "wg": "Mothúcháin: ar + sibh = oraibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá aiféala ___ (ar + iad).",
+  "prep": "ar",
+  "p": "siad",
+  "e": "They're sorry.",
+  "w": "Feelings are on you: ar + iad = orthu.",
+  "wg": "Mothúcháin: ar + iad = orthu.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá aiféala ___ (ar + mé).",
+  "prep": "ar",
+  "p": "me",
+  "e": "I'm sorry.",
+  "w": "Feelings are on you: ar + mé = orm.",
+  "wg": "Mothúcháin: ar + mé = orm.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá aiféala ___ (ar + tú).",
+  "prep": "ar",
+  "p": "tu",
+  "e": "You're sorry.",
+  "w": "Feelings are on you: ar + tú = ort.",
+  "wg": "Mothúcháin: ar + tú = ort.",
+  "b": "A2"
+ },
+ {
+  "q": "An bhfuil ocras ___ (ar + muid)?",
+  "prep": "ar",
+  "p": "muid",
+  "e": "Are we hungry?",
+  "w": "Feelings are on you: ar + muid = orainn.",
+  "wg": "Mothúcháin: ar + muid = orainn.",
+  "b": "A1"
+ },
+ {
+  "q": "An bhfuil ocras ___ (ar + sibh)?",
+  "prep": "ar",
+  "p": "sibh",
+  "e": "Are you all hungry?",
+  "w": "Feelings are on you: ar + sibh = oraibh.",
+  "wg": "Mothúcháin: ar + sibh = oraibh.",
+  "b": "A1"
+ },
+ {
+  "q": "An bhfuil ocras ___ (ar + iad)?",
+  "prep": "ar",
+  "p": "siad",
+  "e": "Are they hungry?",
+  "w": "Feelings are on you: ar + iad = orthu.",
+  "wg": "Mothúcháin: ar + iad = orthu.",
+  "b": "A1"
+ },
+ {
+  "q": "An bhfuil ocras ___ (ar + tú)?",
+  "prep": "ar",
+  "p": "tu",
+  "e": "Are you hungry?",
+  "w": "Feelings are on you: ar + tú = ort.",
+  "wg": "Mothúcháin: ar + tú = ort.",
+  "b": "A1"
+ }
+]

@@ -1,0 +1,992 @@
+[
+ {
+  "q": "Tá a ___ (deartháir, her) i gCorcaigh.",
+  "base": "deartháir",
+  "r": "none",
+  "e": "Her brother is in Cork.",
+  "w": "Here a means her: no change before a consonant, deartháir stays deartháir.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chaill sí a ___ (peann, her).",
+  "base": "peann",
+  "r": "none",
+  "e": "She lost her pen.",
+  "w": "Here a means her: no change before a consonant, peann stays peann.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (teach, her) beag.",
+  "base": "teach",
+  "r": "none",
+  "e": "Her house is small.",
+  "w": "Here a means her: no change before a consonant, teach stays teach.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "D'ith sí a ___ (dinnéar, her).",
+  "base": "dinnéar",
+  "r": "none",
+  "e": "She ate her dinner.",
+  "w": "Here a means her: no change before a consonant, dinnéar stays dinnéar.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chuir sí a ___ (cóta, her) uirthi.",
+  "base": "cóta",
+  "r": "none",
+  "e": "She put on her coat.",
+  "w": "Here a means her: no change before a consonant, cóta stays cóta.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (carr, her) dearg.",
+  "base": "carr",
+  "r": "none",
+  "e": "Her car is red.",
+  "w": "Here a means her: no change before a consonant, carr stays carr.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is é Seán a ___ (cara, her).",
+  "base": "cara",
+  "r": "none",
+  "e": "Seán is her friend.",
+  "w": "Here a means her: no change before a consonant, cara stays cara.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (gruaig, her) fada.",
+  "base": "gruaig",
+  "r": "none",
+  "e": "Her hair is long.",
+  "w": "Here a means her: no change before a consonant, gruaig stays gruaig.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Bhris sí a ___ (cos, her).",
+  "base": "cos",
+  "r": "none",
+  "e": "She broke her leg.",
+  "w": "Here a means her: no change before a consonant, cos stays cos.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (seomra, her) glan.",
+  "base": "seomra",
+  "r": "none",
+  "e": "Her room is clean.",
+  "w": "Here a means her: no change before a consonant, seomra stays seomra.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (seanmháthair, her) ochtó bliain d'aois.",
+  "base": "seanmháthair",
+  "r": "none",
+  "e": "Her grandmother is eighty years old.",
+  "w": "Here a means her: no change before a consonant, seanmháthair stays seanmháthair.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (páiste, her) ina chodladh.",
+  "base": "páiste",
+  "r": "none",
+  "e": "Her child is asleep.",
+  "w": "Here a means her: no change before a consonant, páiste stays páiste.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chaill sí a ___ (fón, her).",
+  "base": "fón",
+  "r": "none",
+  "e": "She lost her phone.",
+  "w": "Here a means her: no change before a consonant, fón stays fón.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (geansaí, her) gorm.",
+  "base": "geansaí",
+  "r": "none",
+  "e": "Her jumper is blue.",
+  "w": "Here a means her: no change before a consonant, geansaí stays geansaí.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (bróga, her) faoin leaba.",
+  "base": "bróga",
+  "r": "none",
+  "e": "Her shoes are under the bed.",
+  "w": "Here a means her: no change before a consonant, bróga stays bróga.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (tuismitheoirí, her) ar saoire.",
+  "base": "tuismitheoirí",
+  "r": "none",
+  "e": "Her parents are on holiday.",
+  "w": "Here a means her: no change before a consonant, tuismitheoirí stays tuismitheoirí.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "D'ól sí a ___ (caife, her).",
+  "base": "caife",
+  "r": "none",
+  "e": "She drank her coffee.",
+  "w": "Here a means her: no change before a consonant, caife stays caife.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (gairdín, her) lán de bhláthanna.",
+  "base": "gairdín",
+  "r": "none",
+  "e": "Her garden is full of flowers.",
+  "w": "Here a means her: no change before a consonant, gairdín stays gairdín.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (post, her) suimiúil.",
+  "base": "post",
+  "r": "none",
+  "e": "Her job is interesting.",
+  "w": "Here a means her: no change before a consonant, post stays post.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Nigh sí a ___ (gruaig, her) aréir.",
+  "base": "gruaig",
+  "r": "none",
+  "e": "She washed her hair last night.",
+  "w": "Here a means her: no change before a consonant, gruaig stays gruaig.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (deirfiúr, her) ina dochtúir.",
+  "base": "deirfiúr",
+  "r": "none",
+  "e": "Her sister is a doctor.",
+  "w": "Here a means her: no change before a consonant, deirfiúr stays deirfiúr.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Cá bhfuil a ___ (ticéad, her)?",
+  "base": "ticéad",
+  "r": "none",
+  "e": "Where is her ticket?",
+  "w": "Here a means her: no change before a consonant, ticéad stays ticéad.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (cat, her) bán.",
+  "base": "cat",
+  "r": "none",
+  "e": "Her cat is white.",
+  "w": "Here a means her: no change before a consonant, cat stays cat.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Rinne sí dearmad ar a ___ (pas, her).",
+  "base": "pas",
+  "r": "none",
+  "e": "She forgot her passport.",
+  "w": "Here a means her: no change before a consonant, pas stays pas.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (clann, her) i nDoire.",
+  "base": "clann",
+  "r": "none",
+  "e": "Her family is in Derry.",
+  "w": "Here a means her: no change before a consonant, clann stays clann.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (súile, her) glasa.",
+  "base": "súile",
+  "r": "none",
+  "e": "Her eyes are green.",
+  "w": "Here a means her: no change before a consonant, súile stays súile.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chonaic Áine a ___ (comharsa, her) inné.",
+  "base": "comharsa",
+  "r": "none",
+  "e": "Áine saw her neighbour yesterday.",
+  "w": "Here a means her: no change before a consonant, comharsa stays comharsa.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (teach, their) i nDoire.",
+  "base": "teach",
+  "r": "ecl",
+  "e": "Their house is in Derry.",
+  "w": "Here a means their, so urú: teach becomes dteach.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Dhíol siad a ___ (carr, their).",
+  "base": "carr",
+  "r": "ecl",
+  "e": "They sold their car.",
+  "w": "Here a means their, so urú: carr becomes gcarr.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (páistí, their) ar scoil.",
+  "base": "páistí",
+  "r": "ecl",
+  "e": "Their children are at school.",
+  "w": "Here a means their, so urú: páistí becomes bpáistí.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (tuismitheoirí, their) sa bhaile.",
+  "base": "tuismitheoirí",
+  "r": "ecl",
+  "e": "Their parents are at home.",
+  "w": "Here a means their, so urú: tuismitheoirí becomes dtuismitheoirí.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "D'ith siad a ___ (dinnéar, their).",
+  "base": "dinnéar",
+  "r": "ecl",
+  "e": "They ate their dinner.",
+  "w": "Here a means their, so urú: dinnéar becomes ndinnéar.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chuir siad a ___ (cótaí, their) orthu.",
+  "base": "cótaí",
+  "r": "ecl",
+  "e": "They put on their coats.",
+  "w": "Here a means their, so urú: cótaí becomes gcótaí.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is iad seo a ___ (cairde, their).",
+  "base": "cairde",
+  "r": "ecl",
+  "e": "These are their friends.",
+  "w": "Here a means their, so urú: cairde becomes gcairde.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (gairdín, their) an-mhór.",
+  "base": "gairdín",
+  "r": "ecl",
+  "e": "Their garden is very big.",
+  "w": "Here a means their, so urú: gairdín becomes ngairdín.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (cat, their) tinn.",
+  "base": "cat",
+  "r": "ecl",
+  "e": "Their cat is sick.",
+  "w": "Here a means their, so urú: cat becomes gcat.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chaill siad a ___ (ticéid, their).",
+  "base": "ticéid",
+  "r": "ecl",
+  "e": "They lost their tickets.",
+  "w": "Here a means their, so urú: ticéid becomes dticéid.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (bróga, their) fliuch.",
+  "base": "bróga",
+  "r": "ecl",
+  "e": "Their shoes are wet.",
+  "w": "Here a means their, so urú: bróga becomes mbróga.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (deartháir, their) i Sasana.",
+  "base": "deartháir",
+  "r": "ecl",
+  "e": "Their brother is in England.",
+  "w": "Here a means their, so urú: deartháir becomes ndeartháir.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (clann, their) mór.",
+  "base": "clann",
+  "r": "ecl",
+  "e": "Their family is big.",
+  "w": "Here a means their, so urú: clann becomes gclann.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chaill siad a ___ (poist, their).",
+  "base": "poist",
+  "r": "ecl",
+  "e": "They lost their jobs.",
+  "w": "Here a means their, so urú: poist becomes bpoist.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Bhí a ___ (bricfeasta, their) fuar.",
+  "base": "bricfeasta",
+  "r": "ecl",
+  "e": "Their breakfast was cold.",
+  "w": "Here a means their, so urú: bricfeasta becomes mbricfeasta.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (feirm, their) i gCiarraí.",
+  "base": "feirm",
+  "r": "ecl",
+  "e": "Their farm is in Kerry.",
+  "w": "Here a means their, so urú: feirm becomes bhfeirm.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Cá bhfuil a ___ (fóin, their)?",
+  "base": "fóin",
+  "r": "ecl",
+  "e": "Where are their phones?",
+  "w": "Here a means their, so urú: fóin becomes bhfóin.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (doras, their) dearg.",
+  "base": "doras",
+  "r": "ecl",
+  "e": "Their door is red.",
+  "w": "Here a means their, so urú: doras becomes ndoras.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (gadhar, their) ag tafann.",
+  "base": "gadhar",
+  "r": "ecl",
+  "e": "Their dog is barking.",
+  "w": "Here a means their, so urú: gadhar becomes ngadhar.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Thóg siad a ___ (bagáiste, their) leo.",
+  "base": "bagáiste",
+  "r": "ecl",
+  "e": "They took their luggage with them.",
+  "w": "Here a means their, so urú: bagáiste becomes mbagáiste.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (deirfiúr, their) pósta.",
+  "base": "deirfiúr",
+  "r": "ecl",
+  "e": "Their sister is married.",
+  "w": "Here a means their, so urú: deirfiúr becomes ndeirfiúr.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Sin é a ___ (bád, their).",
+  "base": "bád",
+  "r": "ecl",
+  "e": "That is their boat.",
+  "w": "Here a means their, so urú: bád becomes mbád.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (comharsana, their) deas.",
+  "base": "comharsana",
+  "r": "ecl",
+  "e": "Their neighbours are nice.",
+  "w": "Here a means their, so urú: comharsana becomes gcomharsana.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (athair, their) ag obair.",
+  "base": "athair",
+  "r": "ecl",
+  "e": "Their father is working.",
+  "w": "Here a means their, so urú: athair becomes n-athair.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (iníon, their) sé bliana d'aois.",
+  "base": "iníon",
+  "r": "ecl",
+  "e": "Their daughter is six years old.",
+  "w": "Here a means their, so urú: iníon becomes n-iníon.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (árasán, their) i mBaile Átha Cliath.",
+  "base": "árasán",
+  "r": "ecl",
+  "e": "Their flat is in Dublin.",
+  "w": "Here a means their, so urú: árasán becomes n-árasán.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (aintín, their) ar cuairt.",
+  "base": "aintín",
+  "r": "ecl",
+  "e": "Their aunt is visiting.",
+  "w": "Here a means their, so urú: aintín becomes n-aintín.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá ár ___ (teach) i gCorcaigh.",
+  "base": "teach",
+  "r": "ecl",
+  "e": "Our house is in Cork.",
+  "w": "Ár (our) takes urú: teach becomes dteach.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Bhí ár ___ (cairde) anseo aréir.",
+  "base": "cairde",
+  "r": "ecl",
+  "e": "Our friends were here last night.",
+  "w": "Ár (our) takes urú: cairde becomes gcairde.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Seo é ár ___ (carr) nua.",
+  "base": "carr",
+  "r": "ecl",
+  "e": "This is our new car.",
+  "w": "Ár (our) takes urú: carr becomes gcarr.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá ár ___ (gairdín) beag.",
+  "base": "gairdín",
+  "r": "ecl",
+  "e": "Our garden is small.",
+  "w": "Ár (our) takes urú: gairdín becomes ngairdín.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá ár ___ (tuismitheoirí) sa bhaile.",
+  "base": "tuismitheoirí",
+  "r": "ecl",
+  "e": "Our parents are at home.",
+  "w": "Ár (our) takes urú: tuismitheoirí becomes dtuismitheoirí.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá ár ___ (páistí) ar scoil.",
+  "base": "páistí",
+  "r": "ecl",
+  "e": "Our children are at school.",
+  "w": "Ár (our) takes urú: páistí becomes bpáistí.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá ár ___ (doras) ar oscailt.",
+  "base": "doras",
+  "r": "ecl",
+  "e": "Our door is open.",
+  "w": "Ár (our) takes urú: doras becomes ndoras.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "D'ith muid ár ___ (dinnéar) sa chistin.",
+  "base": "dinnéar",
+  "r": "ecl",
+  "e": "We ate our dinner in the kitchen.",
+  "w": "Ár (our) takes urú: dinnéar becomes ndinnéar.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá ár ___ (cat) faoin leaba.",
+  "base": "cat",
+  "r": "ecl",
+  "e": "Our cat is under the bed.",
+  "w": "Ár (our) takes urú: cat becomes gcat.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá ár ___ (bricfeasta) réidh.",
+  "base": "bricfeasta",
+  "r": "ecl",
+  "e": "Our breakfast is ready.",
+  "w": "Ár (our) takes urú: bricfeasta becomes mbricfeasta.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Seo í ár ___ (cistin).",
+  "base": "cistin",
+  "r": "ecl",
+  "e": "This is our kitchen.",
+  "w": "Ár (our) takes urú: cistin becomes gcistin.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá ár ___ (feirm) mór.",
+  "base": "feirm",
+  "r": "ecl",
+  "e": "Our farm is big.",
+  "w": "Ár (our) takes urú: feirm becomes bhfeirm.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá ár ___ (bus) déanach.",
+  "base": "bus",
+  "r": "ecl",
+  "e": "Our bus is late.",
+  "w": "Ár (our) takes urú: bus becomes mbus.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chaill muid ár ___ (ticéid).",
+  "base": "ticéid",
+  "r": "ecl",
+  "e": "We lost our tickets.",
+  "w": "Ár (our) takes urú: ticéid becomes dticéid.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá ár ___ (deartháir) i Meiriceá.",
+  "base": "deartháir",
+  "r": "ecl",
+  "e": "Our brother is in America.",
+  "w": "Ár (our) takes urú: deartháir becomes ndeartháir.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is é Pádraig ár ___ (comharsa).",
+  "base": "comharsa",
+  "r": "ecl",
+  "e": "Pádraig is our neighbour.",
+  "w": "Ár (our) takes urú: comharsa becomes gcomharsa.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá ár ___ (gadhar) ag tafann.",
+  "base": "gadhar",
+  "r": "ecl",
+  "e": "Our dog is barking.",
+  "w": "Ár (our) takes urú: gadhar becomes ngadhar.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá ár ___ (baile) go hálainn.",
+  "base": "baile",
+  "r": "ecl",
+  "e": "Our town is beautiful.",
+  "w": "Ár (our) takes urú: baile becomes mbaile.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is í an Ghaeilge ár ___ (teanga).",
+  "base": "teanga",
+  "r": "ecl",
+  "e": "Irish is our language.",
+  "w": "Ár (our) takes urú: teanga becomes dteanga.",
+  "wg": "Ár + urú.",
+  "b": "A2",
+  "t": "poss"
+ },
+ {
+  "q": "Tá ár ___ (foireann) go maith i mbliana.",
+  "base": "foireann",
+  "r": "ecl",
+  "e": "Our team is good this year.",
+  "w": "Ár (our) takes urú: foireann becomes bhfoireann.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá ár ___ (bord) rómhór don chistin.",
+  "base": "bord",
+  "r": "ecl",
+  "e": "Our table is too big for the kitchen.",
+  "w": "Ár (our) takes urú: bord becomes mbord.",
+  "wg": "Ár + urú.",
+  "b": "A2",
+  "t": "poss"
+ },
+ {
+  "q": "Ár ___ (Athair), atá ar neamh.",
+  "base": "Athair",
+  "r": "ecl",
+  "e": "Our Father, who art in heaven.",
+  "w": "Ár takes urú, and before a capital the n has no hyphen: nAthair.",
+  "wg": "Ár + urú: nAthair.",
+  "b": "B1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá ár ___ (ceacht) deacair inniu.",
+  "base": "ceacht",
+  "r": "ecl",
+  "e": "Our lesson is hard today.",
+  "w": "Ár (our) takes urú: ceacht becomes gceacht.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "D'fhág muid ár ___ (cótaí) sa charr.",
+  "base": "cótaí",
+  "r": "ecl",
+  "e": "We left our coats in the car.",
+  "w": "Ár (our) takes urú: cótaí becomes gcótaí.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá ár ___ (athair) tinn.",
+  "base": "athair",
+  "r": "ecl",
+  "e": "Our father is sick.",
+  "w": "Ár (our) takes urú: athair becomes n-athair.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá ár ___ (iníon) ocht mbliana d'aois.",
+  "base": "iníon",
+  "r": "ecl",
+  "e": "Our daughter is eight years old.",
+  "w": "Ár (our) takes urú: iníon becomes n-iníon.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá ár ___ (árasán) beag ach deas.",
+  "base": "árasán",
+  "r": "ecl",
+  "e": "Our flat is small but nice.",
+  "w": "Ár (our) takes urú: árasán becomes n-árasán.",
+  "wg": "Ár + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá ár ___ (oifig) ar an dara hurlár.",
+  "base": "oifig",
+  "r": "ecl",
+  "e": "Our office is on the second floor.",
+  "w": "Ár (our) takes urú: oifig becomes n-oifig.",
+  "wg": "Ár + urú.",
+  "b": "A2",
+  "t": "poss"
+ },
+ {
+  "q": "Cá bhfuil bhur ___ (teach)?",
+  "base": "teach",
+  "r": "ecl",
+  "e": "Where is your house? (to more than one)",
+  "w": "Bhur (your, plural) takes urú: teach becomes dteach.",
+  "wg": "Bhur + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "An bhfuil bhur ___ (cótaí) agaibh?",
+  "base": "cótaí",
+  "r": "ecl",
+  "e": "Have you all got your coats?",
+  "w": "Bhur (your, plural) takes urú: cótaí becomes gcótaí.",
+  "wg": "Bhur + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Cuirigí bhur ___ (pinn) síos.",
+  "base": "pinn",
+  "r": "ecl",
+  "e": "Put your pens down, everyone.",
+  "w": "Bhur (your, plural) takes urú: pinn becomes bpinn.",
+  "wg": "Bhur + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá bhur ___ (dinnéar) réidh.",
+  "base": "dinnéar",
+  "r": "ecl",
+  "e": "Your dinner is ready, everyone.",
+  "w": "Bhur (your, plural) takes urú: dinnéar becomes ndinnéar.",
+  "wg": "Bhur + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Oscailigí bhur ___ (cóipleabhair).",
+  "base": "cóipleabhair",
+  "r": "ecl",
+  "e": "Open your copybooks, everyone.",
+  "w": "Bhur (your, plural) takes urú: cóipleabhair becomes gcóipleabhair.",
+  "wg": "Bhur + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "An iad seo bhur ___ (páistí)?",
+  "base": "páistí",
+  "r": "ecl",
+  "e": "Are these your children? (to a couple)",
+  "w": "Bhur (your, plural) takes urú: páistí becomes bpáistí.",
+  "wg": "Bhur + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Cá bhfuil bhur ___ (tuismitheoirí)?",
+  "base": "tuismitheoirí",
+  "r": "ecl",
+  "e": "Where are your parents? (to children)",
+  "w": "Bhur (your, plural) takes urú: tuismitheoirí becomes dtuismitheoirí.",
+  "wg": "Bhur + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá bhur ___ (bus) anseo.",
+  "base": "bus",
+  "r": "ecl",
+  "e": "Your bus is here, everyone.",
+  "w": "Bhur (your, plural) takes urú: bus becomes mbus.",
+  "wg": "Bhur + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Taispeáinigí bhur ___ (ticéid).",
+  "base": "ticéid",
+  "r": "ecl",
+  "e": "Show your tickets, everyone.",
+  "w": "Bhur (your, plural) takes urú: ticéid becomes dticéid.",
+  "wg": "Bhur + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is maith liom bhur ___ (gairdín).",
+  "base": "gairdín",
+  "r": "ecl",
+  "e": "I like your garden. (to a couple)",
+  "w": "Bhur (your, plural) takes urú: gairdín becomes ngairdín.",
+  "wg": "Bhur + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá bhur ___ (carr) sa bhealach.",
+  "base": "carr",
+  "r": "ecl",
+  "e": "Your car is in the way. (to a couple)",
+  "w": "Bhur (your, plural) takes urú: carr becomes gcarr.",
+  "wg": "Bhur + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Cá bhfuil bhur ___ (cairde)?",
+  "base": "cairde",
+  "r": "ecl",
+  "e": "Where are your friends? (to more than one)",
+  "w": "Bhur (your, plural) takes urú: cairde becomes gcairde.",
+  "wg": "Bhur + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Conas atá bhur ___ (athair)?",
+  "base": "athair",
+  "r": "ecl",
+  "e": "How is your father? (to brothers and sisters)",
+  "w": "Bhur (your, plural) takes urú: athair becomes n-athair.",
+  "wg": "Bhur + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá bhur ___ (árasán) go deas.",
+  "base": "árasán",
+  "r": "ecl",
+  "e": "Your flat is nice. (to a couple)",
+  "w": "Bhur (your, plural) takes urú: árasán becomes n-árasán.",
+  "wg": "Bhur + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Ithigí bhur ___ (bricfeasta).",
+  "base": "bricfeasta",
+  "r": "ecl",
+  "e": "Eat your breakfast, everyone.",
+  "w": "Bhur (your, plural) takes urú: bricfeasta becomes mbricfeasta.",
+  "wg": "Bhur + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Cuirigí bhur ___ (bróga) oraibh.",
+  "base": "bróga",
+  "r": "ecl",
+  "e": "Put on your shoes, everyone.",
+  "w": "Bhur (your, plural) takes urú: bróga becomes mbróga.",
+  "wg": "Bhur + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Dúnaigí bhur ___ (doirse).",
+  "base": "doirse",
+  "r": "ecl",
+  "e": "Close your doors, everyone.",
+  "w": "Bhur (your, plural) takes urú: doirse becomes ndoirse.",
+  "wg": "Bhur + urú.",
+  "b": "A1",
+  "t": "poss"
+ }
+]

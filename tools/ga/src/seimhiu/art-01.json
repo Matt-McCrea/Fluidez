@@ -1,0 +1,1552 @@
+[
+ {
+  "q": "Tá an ___ (bean) sa chistin.",
+  "base": "bean",
+  "r": "len",
+  "e": "The woman is in the kitchen.",
+  "w": "Bean is feminine, so an gives it séimhiú: bean becomes bhean.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Dún an ___ (fuinneog), le do thoil.",
+  "base": "fuinneog",
+  "r": "len",
+  "e": "Close the window, please.",
+  "w": "Fuinneog is feminine, so an gives it séimhiú: fuinneog becomes fhuinneog.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (cistin) glan anois.",
+  "base": "cistin",
+  "r": "len",
+  "e": "The kitchen is clean now.",
+  "w": "Cistin is feminine, so an gives it séimhiú: cistin becomes chistin.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (grian) ag taitneamh.",
+  "base": "grian",
+  "r": "len",
+  "e": "The sun is shining.",
+  "w": "Grian is feminine, so an gives it séimhiú: grian becomes ghrian.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (bó) sa pháirc.",
+  "base": "bó",
+  "r": "len",
+  "e": "The cow is in the field.",
+  "w": "Bó is feminine, so an gives it séimhiú: bó becomes bhó.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (cathaoir) briste.",
+  "base": "cathaoir",
+  "r": "len",
+  "e": "The chair is broken.",
+  "w": "Cathaoir is feminine, so an gives it séimhiú: cathaoir becomes chathaoir.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (gaoth) láidir inniu.",
+  "base": "gaoth",
+  "r": "len",
+  "e": "The wind is strong today.",
+  "w": "Gaoth is feminine, so an gives it séimhiú: gaoth becomes ghaoth.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (feoil) blasta.",
+  "base": "feoil",
+  "r": "len",
+  "e": "The meat is tasty.",
+  "w": "Feoil is feminine, so an gives it séimhiú: feoil becomes fheoil.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Is maith liom an ___ (cáis) seo.",
+  "base": "cáis",
+  "r": "len",
+  "e": "I like this cheese.",
+  "w": "Cáis is feminine, so an gives it séimhiú: cáis becomes cháis.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (páirc) fliuch.",
+  "base": "páirc",
+  "r": "len",
+  "e": "The field is wet.",
+  "w": "Páirc is feminine, so an gives it séimhiú: páirc becomes pháirc.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (bialann) dúnta.",
+  "base": "bialann",
+  "r": "len",
+  "e": "The restaurant is closed.",
+  "w": "Bialann is feminine, so an gives it séimhiú: bialann becomes bhialann.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (cathair) gnóthach.",
+  "base": "cathair",
+  "r": "len",
+  "e": "The city is busy.",
+  "w": "Cathair is feminine, so an gives it séimhiú: cathair becomes chathair.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (cearc) sa ghairdín.",
+  "base": "cearc",
+  "r": "len",
+  "e": "The hen is in the garden.",
+  "w": "Cearc is feminine, so an gives it séimhiú: cearc becomes chearc.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (gloine) folamh.",
+  "base": "gloine",
+  "r": "len",
+  "e": "The glass is empty.",
+  "w": "Gloine is feminine, so an gives it séimhiú: gloine becomes ghloine.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Cá bhfuil an ___ (bróg) eile?",
+  "base": "bróg",
+  "r": "len",
+  "e": "Where is the other shoe?",
+  "w": "Bróg is feminine, so an gives it séimhiú: bróg becomes bhróg.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (caora) sa pháirc.",
+  "base": "caora",
+  "r": "len",
+  "e": "The sheep is in the field.",
+  "w": "Caora is feminine, so an gives it séimhiú: caora becomes chaora.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (farraige) ciúin inniu.",
+  "base": "farraige",
+  "r": "len",
+  "e": "The sea is calm today.",
+  "w": "Farraige is feminine, so an gives it séimhiú: farraige becomes fharraige.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (beoir) fuar.",
+  "base": "beoir",
+  "r": "len",
+  "e": "The beer is cold.",
+  "w": "Beoir is feminine, so an gives it séimhiú: beoir becomes bheoir.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (Gaeilge) go hálainn.",
+  "base": "Gaeilge",
+  "r": "len",
+  "e": "Irish is beautiful.",
+  "w": "Gaeilge is feminine, so an gives it séimhiú: Gaeilge becomes Ghaeilge.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (gealach) lán anocht.",
+  "base": "gealach",
+  "r": "len",
+  "e": "The moon is full tonight.",
+  "w": "Gealach is feminine, so an gives it séimhiú: gealach becomes ghealach.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (báisteach) ag titim.",
+  "base": "báisteach",
+  "r": "len",
+  "e": "The rain is falling.",
+  "w": "Báisteach is feminine, so an gives it séimhiú: báisteach becomes bháisteach.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (feirm) mór.",
+  "base": "feirm",
+  "r": "len",
+  "e": "The farm is big.",
+  "w": "Feirm is feminine, so an gives it séimhiú: feirm becomes fheirm.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (cearnóg) lán daoine.",
+  "base": "cearnóg",
+  "r": "len",
+  "e": "The square is full of people.",
+  "w": "Cearnóg is feminine, so an gives it séimhiú: cearnóg becomes chearnóg.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Chonaic mé an ___ (bean) inné.",
+  "base": "bean",
+  "r": "len",
+  "e": "I saw the woman yesterday.",
+  "w": "Bean is feminine, so an gives it séimhiú: bean becomes bhean.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (pictiúrlann) dúnta inniu.",
+  "base": "pictiúrlann",
+  "r": "len",
+  "e": "The cinema is closed today.",
+  "w": "Pictiúrlann is feminine, so an gives it séimhiú: pictiúrlann becomes phictiúrlann.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (cathaoir) seo compordach.",
+  "base": "cathaoir",
+  "r": "len",
+  "e": "This chair is comfortable.",
+  "w": "Cathaoir is feminine, so an gives it séimhiú: cathaoir becomes chathaoir.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (ceist) deacair.",
+  "base": "ceist",
+  "r": "len",
+  "e": "The question is hard.",
+  "w": "Ceist is feminine, so an gives it séimhiú: ceist becomes cheist.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Cá bhfuil an ___ (cistin)?",
+  "base": "cistin",
+  "r": "len",
+  "e": "Where is the kitchen?",
+  "w": "Cistin is feminine, so an gives it séimhiú: cistin becomes chistin.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (pian) go dona.",
+  "base": "pian",
+  "r": "len",
+  "e": "The pain is bad.",
+  "w": "Pian is feminine, so an gives it séimhiú: pian becomes phian.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (cóisir) ag tosú.",
+  "base": "cóisir",
+  "r": "len",
+  "e": "The party is starting.",
+  "w": "Cóisir is feminine, so an gives it séimhiú: cóisir becomes chóisir.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (Cáisc) ag teacht.",
+  "base": "Cáisc",
+  "r": "len",
+  "e": "Easter is coming.",
+  "w": "Cáisc is feminine, so an gives it séimhiú: Cáisc becomes Cháisc.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (beach) ag eitilt.",
+  "base": "beach",
+  "r": "len",
+  "e": "The bee is flying.",
+  "w": "Beach is feminine, so an gives it séimhiú: beach becomes bheach.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (fiacail) seo tinn.",
+  "base": "fiacail",
+  "r": "len",
+  "e": "This tooth is sore.",
+  "w": "Fiacail is feminine, so an gives it séimhiú: fiacail becomes fhiacail.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (comharsa) nua cairdiúil.",
+  "base": "comharsa",
+  "r": "len",
+  "e": "The new neighbour is friendly.",
+  "w": "Comharsa is feminine, so an gives it séimhiú: comharsa becomes chomharsa.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Bhí an ___ (cóisir) go hiontach.",
+  "base": "cóisir",
+  "r": "len",
+  "e": "The party was great.",
+  "w": "Cóisir is feminine, so an gives it séimhiú: cóisir becomes chóisir.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (bialann) seo go maith.",
+  "base": "bialann",
+  "r": "len",
+  "e": "This restaurant is good.",
+  "w": "Bialann is feminine, so an gives it séimhiú: bialann becomes bhialann.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (foireann) ag imirt go maith.",
+  "base": "foireann",
+  "r": "len",
+  "e": "The team is playing well.",
+  "w": "Foireann is feminine, so an gives it séimhiú: foireann becomes fhoireann.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Is í an ___ (Fraincis) a theanga.",
+  "base": "Fraincis",
+  "r": "len",
+  "e": "French is his language.",
+  "w": "Fraincis is feminine, so an gives it séimhiú: Fraincis becomes Fhraincis.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (coill) dorcha.",
+  "base": "coill",
+  "r": "len",
+  "e": "The wood is dark.",
+  "w": "Coill is feminine, so an gives it séimhiú: coill becomes choill.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (banaltra) an-chineálta.",
+  "base": "banaltra",
+  "r": "len",
+  "e": "The nurse is very kind.",
+  "w": "Banaltra is feminine, so an gives it séimhiú: banaltra becomes bhanaltra.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (cuairt) thart.",
+  "base": "cuairt",
+  "r": "len",
+  "e": "The visit is over.",
+  "w": "Cuairt is feminine, so an gives it séimhiú: cuairt becomes chuairt.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí an ___ (timpiste) uafásach.",
+  "base": "timpiste",
+  "r": "none",
+  "e": "The accident was terrible.",
+  "w": "Timpiste is feminine, but d and t resist séimhiú after an.",
+  "wg": "Ní shéimhítear d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Thug an ___ (bean) úll dom.",
+  "base": "bean",
+  "r": "len",
+  "e": "The woman gave me an apple.",
+  "w": "Bean is feminine, so an gives it séimhiú: bean becomes bhean.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (Gearmáin) mór.",
+  "base": "Gearmáin",
+  "r": "len",
+  "e": "Germany is big.",
+  "w": "Gearmáin is feminine, so an gives it séimhiú: an Ghearmáin.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (Breatain) Bheag álainn.",
+  "base": "Breatain",
+  "r": "len",
+  "e": "Wales is beautiful.",
+  "w": "Breatain is feminine, so an gives it séimhiú: an Bhreatain Bheag.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (fear) ag an doras.",
+  "base": "fear",
+  "r": "none",
+  "e": "The man is at the door.",
+  "w": "Fear is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (bord) sa chistin.",
+  "base": "bord",
+  "r": "none",
+  "e": "The table is in the kitchen.",
+  "w": "Bord is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (cupán) briste.",
+  "base": "cupán",
+  "r": "none",
+  "e": "The cup is broken.",
+  "w": "Cupán is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (cat) ina chodladh.",
+  "base": "cat",
+  "r": "none",
+  "e": "The cat is asleep.",
+  "w": "Cat is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (buachaill) tinn.",
+  "base": "buachaill",
+  "r": "none",
+  "e": "The boy is sick.",
+  "w": "Buachaill is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (cailín) ag canadh.",
+  "base": "cailín",
+  "r": "none",
+  "e": "The girl is singing.",
+  "w": "Cailín is masculine, though it means girl, so an changes nothing: an cailín.",
+  "wg": "Firinscneach é cailín: gan athrú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Chonaic mé an ___ (cailín) ar an mbus.",
+  "base": "cailín",
+  "r": "none",
+  "e": "I saw the girl on the bus.",
+  "w": "Cailín is masculine, though it means girl, so an changes nothing: an cailín.",
+  "wg": "Firinscneach é cailín: gan athrú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (páiste) ag gáire.",
+  "base": "páiste",
+  "r": "none",
+  "e": "The child is laughing.",
+  "w": "Páiste is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (gairdín) go hálainn.",
+  "base": "gairdín",
+  "r": "none",
+  "e": "The garden is lovely.",
+  "w": "Gairdín is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (bus) déanach.",
+  "base": "bus",
+  "r": "none",
+  "e": "The bus is late.",
+  "w": "Bus is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (capall) sa pháirc.",
+  "base": "capall",
+  "r": "none",
+  "e": "The horse is in the field.",
+  "w": "Capall is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (bainne) sa chuisneoir.",
+  "base": "bainne",
+  "r": "none",
+  "e": "The milk is in the fridge.",
+  "w": "Bainne is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (caife) te.",
+  "base": "caife",
+  "r": "none",
+  "e": "The coffee is hot.",
+  "w": "Caife is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (cóta) ar an gcathaoir.",
+  "base": "cóta",
+  "r": "none",
+  "e": "The coat is on the chair.",
+  "w": "Cóta is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (dinnéar) réidh.",
+  "base": "dinnéar",
+  "r": "none",
+  "e": "Dinner is ready.",
+  "w": "Dinnéar is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Cá bhfuil an ___ (peann)?",
+  "base": "peann",
+  "r": "none",
+  "e": "Where is the pen?",
+  "w": "Peann is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (bosca) folamh.",
+  "base": "bosca",
+  "r": "none",
+  "e": "The box is empty.",
+  "w": "Bosca is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (ceacht) furasta.",
+  "base": "ceacht",
+  "r": "none",
+  "e": "The lesson is easy.",
+  "w": "Ceacht is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (cluiche) ag tosú.",
+  "base": "cluiche",
+  "r": "none",
+  "e": "The game is starting.",
+  "w": "Cluiche is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (gúna) go deas.",
+  "base": "gúna",
+  "r": "none",
+  "e": "The dress is nice.",
+  "w": "Gúna is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Cá bhfuil an ___ (buidéal)?",
+  "base": "buidéal",
+  "r": "none",
+  "e": "Where is the bottle?",
+  "w": "Buidéal is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (garda) ag caint leis.",
+  "base": "garda",
+  "r": "none",
+  "e": "The guard is talking to him.",
+  "w": "Garda is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (bricfeasta) blasta.",
+  "base": "bricfeasta",
+  "r": "none",
+  "e": "The breakfast is tasty.",
+  "w": "Bricfeasta is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (gadhar) ag tafann.",
+  "base": "gadhar",
+  "r": "none",
+  "e": "The dog is barking.",
+  "w": "Gadhar is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (bád) sa chuan.",
+  "base": "bád",
+  "r": "none",
+  "e": "The boat is in the harbour.",
+  "w": "Bád is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (crann) ard.",
+  "base": "crann",
+  "r": "none",
+  "e": "The tree is tall.",
+  "w": "Crann is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (cnoc) glas.",
+  "base": "cnoc",
+  "r": "none",
+  "e": "The hill is green.",
+  "w": "Cnoc is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (pictiúr) ar an mballa.",
+  "base": "pictiúr",
+  "r": "none",
+  "e": "The picture is on the wall.",
+  "w": "Pictiúr is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Is maith liom an ___ (ceapaire) seo.",
+  "base": "ceapaire",
+  "r": "none",
+  "e": "I like this sandwich.",
+  "w": "Ceapaire is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (fón) ar an mbord.",
+  "base": "fón",
+  "r": "none",
+  "e": "The phone is on the table.",
+  "w": "Fón is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (teach) mór.",
+  "base": "teach",
+  "r": "none",
+  "e": "The house is big.",
+  "w": "Teach is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (doras) dúnta.",
+  "base": "doras",
+  "r": "none",
+  "e": "The door is closed.",
+  "w": "Doras is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (tae) láidir.",
+  "base": "tae",
+  "r": "none",
+  "e": "The tea is strong.",
+  "w": "Tae is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (dochtúir) anseo.",
+  "base": "dochtúir",
+  "r": "none",
+  "e": "The doctor is here.",
+  "w": "Dochtúir is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (dalta) cliste.",
+  "base": "dalta",
+  "r": "none",
+  "e": "The pupil is clever.",
+  "w": "Dalta is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (deoch) fuar.",
+  "base": "deoch",
+  "r": "none",
+  "e": "The drink is cold.",
+  "w": "Deoch is feminine, but d and t resist séimhiú after an.",
+  "wg": "Ní shéimhítear d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (tine) te.",
+  "base": "tine",
+  "r": "none",
+  "e": "The fire is hot.",
+  "w": "Tine is feminine, but d and t resist séimhiú after an.",
+  "wg": "Ní shéimhítear d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (teanga) deacair.",
+  "base": "teanga",
+  "r": "none",
+  "e": "The language is hard.",
+  "w": "Teanga is feminine, but d and t resist séimhiú after an.",
+  "wg": "Ní shéimhítear d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (traein) ag teacht.",
+  "base": "traein",
+  "r": "none",
+  "e": "The train is coming.",
+  "w": "Traein is feminine, but d and t resist séimhiú after an.",
+  "wg": "Ní shéimhítear d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (deirfiúr) is óige anseo.",
+  "base": "deirfiúr",
+  "r": "none",
+  "e": "The youngest sister is here.",
+  "w": "Deirfiúr is feminine, but d and t resist séimhiú after an.",
+  "wg": "Ní shéimhítear d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (teilifís) ar siúl.",
+  "base": "teilifís",
+  "r": "none",
+  "e": "The television is on.",
+  "w": "Teilifís is feminine, but d and t resist séimhiú after an.",
+  "wg": "Ní shéimhítear d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (trá) álainn.",
+  "base": "trá",
+  "r": "none",
+  "e": "The beach is beautiful.",
+  "w": "Trá starts with t, and t resists séimhiú after an: an trá.",
+  "wg": "Ní shéimhítear t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Is maith liom an ___ (deoch) seo.",
+  "base": "deoch",
+  "r": "none",
+  "e": "I like this drink.",
+  "w": "Deoch is feminine, but d and t resist séimhiú after an.",
+  "wg": "Ní shéimhítear d ná t i ndiaidh an.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Bhí an ___ (oíche) fuar.",
+  "base": "oíche",
+  "r": "none",
+  "e": "The night was cold.",
+  "w": "Oíche is feminine, so it takes no t- after an.",
+  "wg": "Baininscneach: gan t- roimh ghuta.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (áit) seo go hálainn.",
+  "base": "áit",
+  "r": "none",
+  "e": "This place is lovely.",
+  "w": "Áit is feminine, so it takes no t- after an.",
+  "wg": "Baininscneach: gan t- roimh ghuta.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (obair) crua.",
+  "base": "obair",
+  "r": "none",
+  "e": "The work is hard.",
+  "w": "Obair is feminine, so it takes no t- after an.",
+  "wg": "Baininscneach: gan t- roimh ghuta.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (aimsir) go breá inniu.",
+  "base": "aimsir",
+  "r": "none",
+  "e": "The weather is fine today.",
+  "w": "Aimsir is feminine, so it takes no t- after an.",
+  "wg": "Baininscneach: gan t- roimh ghuta.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (iníon) is sine pósta.",
+  "base": "iníon",
+  "r": "none",
+  "e": "The eldest daughter is married.",
+  "w": "Iníon is feminine, so it takes no t- after an.",
+  "wg": "Baininscneach: gan t- roimh ghuta.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (oifig) dúnta.",
+  "base": "oifig",
+  "r": "none",
+  "e": "The office is closed.",
+  "w": "Oifig is feminine, so it takes no t- after an.",
+  "wg": "Baininscneach: gan t- roimh ghuta.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (ollscoil) mór.",
+  "base": "ollscoil",
+  "r": "none",
+  "e": "The university is big.",
+  "w": "Ollscoil is feminine, so it takes no t- after an.",
+  "wg": "Baininscneach: gan t- roimh ghuta.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (abhainn) ard inniu.",
+  "base": "abhainn",
+  "r": "none",
+  "e": "The river is high today.",
+  "w": "Abhainn is feminine, so it takes no t- after an.",
+  "wg": "Baininscneach: gan t- roimh ghuta.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí an ___ (aintín) anseo inné.",
+  "base": "aintín",
+  "r": "none",
+  "e": "The aunt was here yesterday.",
+  "w": "Aintín is feminine, so it takes no t- after an.",
+  "wg": "Baininscneach: gan t- roimh ghuta.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (ubh) bruite.",
+  "base": "ubh",
+  "r": "none",
+  "e": "The egg is boiled.",
+  "w": "Ubh is feminine, so it takes no t- after an.",
+  "wg": "Baininscneach: gan t- roimh ghuta.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (eaglais) ar an gcnoc.",
+  "base": "eaglais",
+  "r": "none",
+  "e": "The church is on the hill.",
+  "w": "Eaglais is feminine, so it takes no t- after an.",
+  "wg": "Baininscneach: gan t- roimh ghuta.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (uisce) te go leor.",
+  "base": "uisce",
+  "r": "t",
+  "e": "The water is warm enough.",
+  "w": "Uisce is masculine and starts with a vowel, so an puts t- in front: t-uisce.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (arán) úr.",
+  "base": "arán",
+  "r": "t",
+  "e": "The bread is fresh.",
+  "w": "Arán is masculine and starts with a vowel, so an puts t- in front: t-arán.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Cá bhfuil an ___ (im)?",
+  "base": "im",
+  "r": "t",
+  "e": "Where is the butter?",
+  "w": "Im is masculine and starts with a vowel, so an puts t- in front: t-im.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (úll) seo milis.",
+  "base": "úll",
+  "r": "t",
+  "e": "This apple is sweet.",
+  "w": "Úll is masculine and starts with a vowel, so an puts t- in front: t-úll.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (ospidéal) gar don stáisiún.",
+  "base": "ospidéal",
+  "r": "t",
+  "e": "The hospital is near the station.",
+  "w": "Ospidéal is masculine and starts with a vowel, so an puts t- in front: t-ospidéal.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (éan) ag canadh.",
+  "base": "éan",
+  "r": "t",
+  "e": "The bird is singing.",
+  "w": "Éan is masculine and starts with a vowel, so an puts t- in front: t-éan.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (urlár) salach.",
+  "base": "urlár",
+  "r": "t",
+  "e": "The floor is dirty.",
+  "w": "Urlár is masculine and starts with a vowel, so an puts t- in front: t-urlár.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Ith an ___ (oráiste).",
+  "base": "oráiste",
+  "r": "t",
+  "e": "Eat the orange.",
+  "w": "Oráiste is masculine and starts with a vowel, so an puts t- in front: t-oráiste.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (anraith) te.",
+  "base": "anraith",
+  "r": "t",
+  "e": "The soup is hot.",
+  "w": "Anraith is masculine and starts with a vowel, so an puts t- in front: t-anraith.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (asal) sa pháirc.",
+  "base": "asal",
+  "r": "t",
+  "e": "The donkey is in the field.",
+  "w": "Asal is masculine and starts with a vowel, so an puts t- in front: t-asal.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (iasc) blasta.",
+  "base": "iasc",
+  "r": "t",
+  "e": "The fish is tasty.",
+  "w": "Iasc is masculine and starts with a vowel, so an puts t- in front: t-iasc.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Is maith liom an ___ (ainm) sin.",
+  "base": "ainm",
+  "r": "t",
+  "e": "I like that name.",
+  "w": "Ainm is masculine and starts with a vowel, so an puts t- in front: t-ainm.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (airgead) sa bhanc.",
+  "base": "airgead",
+  "r": "t",
+  "e": "The money is in the bank.",
+  "w": "Airgead is masculine and starts with a vowel, so an puts t- in front: t-airgead.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (am) ag imeacht.",
+  "base": "am",
+  "r": "t",
+  "e": "Time is passing.",
+  "w": "Am is masculine and starts with a vowel, so an puts t- in front: t-am.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (aerfort) mór.",
+  "base": "aerfort",
+  "r": "t",
+  "e": "The airport is big.",
+  "w": "Aerfort is masculine and starts with a vowel, so an puts t- in front: t-aerfort.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (árasán) ar an tríú hurlár.",
+  "base": "árasán",
+  "r": "t",
+  "e": "The flat is on the third floor.",
+  "w": "Árasán is masculine and starts with a vowel, so an puts t- in front: t-árasán.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (oileán) beag.",
+  "base": "oileán",
+  "r": "t",
+  "e": "The island is small.",
+  "w": "Oileán is masculine and starts with a vowel, so an puts t- in front: t-oileán.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (earrach) ag teacht.",
+  "base": "earrach",
+  "r": "t",
+  "e": "Spring is coming.",
+  "w": "Earrach is masculine and starts with a vowel, so an puts t- in front: t-earrach.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (Aifreann) ar a deich.",
+  "base": "Aifreann",
+  "r": "t",
+  "e": "Mass is at ten.",
+  "w": "Aifreann is masculine and starts with a capital vowel, so t with no hyphen: an tAifreann.",
+  "wg": "An + firinscneach + guta: tAifreann.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (údar) cáiliúil.",
+  "base": "údar",
+  "r": "t",
+  "e": "The author is famous.",
+  "w": "Údar is masculine and starts with a vowel, so an puts t- in front: t-údar.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (eolas) agam.",
+  "base": "eolas",
+  "r": "t",
+  "e": "I have the information.",
+  "w": "Eolas is masculine and starts with a vowel, so an puts t- in front: t-eolas.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (ollmhargadh) dúnta.",
+  "base": "ollmhargadh",
+  "r": "t",
+  "e": "The supermarket is closed.",
+  "w": "Ollmhargadh is masculine and starts with a vowel, so an puts t- in front: t-ollmhargadh.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (amhrán) go deas.",
+  "base": "amhrán",
+  "r": "t",
+  "e": "The song is nice.",
+  "w": "Amhrán is masculine and starts with a vowel, so an puts t- in front: t-amhrán.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (inneall) briste.",
+  "base": "inneall",
+  "r": "t",
+  "e": "The engine is broken.",
+  "w": "Inneall is masculine and starts with a vowel, so an puts t- in front: t-inneall.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (uachtar) reoite blasta.",
+  "base": "uachtar",
+  "r": "t",
+  "e": "The ice cream is tasty.",
+  "w": "Uachtar is masculine and starts with a vowel, so an puts t- in front: t-uachtar.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (iascaire) sa bhád.",
+  "base": "iascaire",
+  "r": "t",
+  "e": "The fisherman is in the boat.",
+  "w": "Iascaire is masculine and starts with a vowel, so an puts t- in front: t-iascaire.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (otharcharr) ag teacht.",
+  "base": "otharcharr",
+  "r": "t",
+  "e": "The ambulance is coming.",
+  "w": "Otharcharr is masculine and starts with a vowel, so an puts t- in front: t-otharcharr.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Chonaic mé an ___ (eitleán) sa spéir.",
+  "base": "eitleán",
+  "r": "t",
+  "e": "I saw the plane in the sky.",
+  "w": "Eitleán is masculine and starts with a vowel, so an puts t- in front: t-eitleán.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (uisce) ag fiuchadh.",
+  "base": "uisce",
+  "r": "t",
+  "e": "The water is boiling.",
+  "w": "Uisce is masculine and starts with a vowel, so an puts t- in front: t-uisce.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (Aontas) Eorpach mór.",
+  "base": "Aontas",
+  "r": "t",
+  "e": "The European Union is big.",
+  "w": "Aontas is masculine and starts with a capital vowel, so t with no hyphen: an tAontas.",
+  "wg": "An + firinscneach + guta: tAontas.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "D'ól sé an ___ (uisce) go léir.",
+  "base": "uisce",
+  "r": "t",
+  "e": "He drank all the water.",
+  "w": "Uisce is masculine and starts with a vowel, so an puts t- in front: t-uisce.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Cheannaigh mé an ___ (arán) inniu.",
+  "base": "arán",
+  "r": "t",
+  "e": "I bought the bread today.",
+  "w": "Arán is masculine and starts with a vowel, so an puts t- in front: t-arán.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (athair) ag obair inniu.",
+  "base": "athair",
+  "r": "t",
+  "e": "The father is working today.",
+  "w": "Athair is masculine and starts with a vowel, so an puts t- in front: t-athair.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (aonach) ar siúl inniu.",
+  "base": "aonach",
+  "r": "t",
+  "e": "The fair is on today.",
+  "w": "Aonach is masculine and starts with a vowel, so an puts t- in front: t-aonach.",
+  "wg": "An + firinscneach + guta: t-.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (sráid) ciúin anocht.",
+  "base": "sráid",
+  "r": "ts",
+  "e": "The street is quiet tonight.",
+  "w": "Sráid is feminine and starts with s, so an puts t in front: tsráid.",
+  "wg": "An + baininscneach + s: ts.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Bhí an ___ (seachtain) fada.",
+  "base": "seachtain",
+  "r": "ts",
+  "e": "The week was long.",
+  "w": "Seachtain is feminine and starts with s, so an puts t in front: tseachtain.",
+  "wg": "An + baininscneach + s: ts.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (seanmháthair) ag ól tae.",
+  "base": "seanmháthair",
+  "r": "ts",
+  "e": "The grandmother is drinking tea.",
+  "w": "Seanmháthair is feminine and starts with s, so an puts t in front: tseanmháthair.",
+  "wg": "An + baininscneach + s: ts.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (Seapáin) i bhfad uainn.",
+  "base": "Seapáin",
+  "r": "ts",
+  "e": "Japan is far from us.",
+  "w": "Seapáin is feminine and starts with s, so an puts t in front: an tSeapáin.",
+  "wg": "An + baininscneach + s: tSeapáin.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (Sín) an-mhór.",
+  "base": "Sín",
+  "r": "ts",
+  "e": "China is very big.",
+  "w": "Sín is feminine and starts with s, so an puts t in front: an tSín.",
+  "wg": "An + baininscneach + s: tSín.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Bhí an ___ (sochraid) brónach.",
+  "base": "sochraid",
+  "r": "ts",
+  "e": "The funeral was sad.",
+  "w": "Sochraid is feminine and starts with s, so an puts t in front: tsochraid.",
+  "wg": "An + baininscneach + s: ts.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (siopadóireacht) déanta.",
+  "base": "siopadóireacht",
+  "r": "ts",
+  "e": "The shopping is done.",
+  "w": "Siopadóireacht is feminine and starts with s, so an puts t in front: tsiopadóireacht.",
+  "wg": "An + baininscneach + s: ts.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (síocháin) tábhachtach.",
+  "base": "síocháin",
+  "r": "ts",
+  "e": "Peace is important.",
+  "w": "Síocháin is feminine and starts with s, so an puts t in front: tsíocháin.",
+  "wg": "An + baininscneach + s: ts.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (seilf) lán de leabhair.",
+  "base": "seilf",
+  "r": "ts",
+  "e": "The shelf is full of books.",
+  "w": "Seilf is feminine and starts with s, so an puts t in front: tseilf.",
+  "wg": "An + baininscneach + s: ts.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Beidh mé ann an ___ (seachtain) seo chugainn.",
+  "base": "seachtain",
+  "r": "ts",
+  "e": "I will be there next week.",
+  "w": "Seachtain is feminine and starts with s, so an puts t in front: tseachtain.",
+  "wg": "An + baininscneach + s: ts.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Bhí an ___ (seachtain) seo caite gnóthach.",
+  "base": "seachtain",
+  "r": "ts",
+  "e": "Last week was busy.",
+  "w": "Seachtain is feminine and starts with s, so an puts t in front: tseachtain.",
+  "wg": "An + baininscneach + s: ts.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (sráid) seo fada.",
+  "base": "sráid",
+  "r": "ts",
+  "e": "This street is long.",
+  "w": "Sráid is feminine and starts with s, so an puts t in front: tsráid.",
+  "wg": "An + baininscneach + s: ts.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Is í an ___ (sláinte) an rud is tábhachtaí.",
+  "base": "sláinte",
+  "r": "ts",
+  "e": "Health is the most important thing.",
+  "w": "Sláinte is feminine and starts with s, so an puts t in front: tsláinte.",
+  "wg": "An + baininscneach + s: ts.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Chonaic mé an ___ (seanbhean) inné.",
+  "base": "seanbhean",
+  "r": "ts",
+  "e": "I saw the old woman yesterday.",
+  "w": "Seanbhean is feminine and starts with s, so an puts t in front: tseanbhean.",
+  "wg": "An + baininscneach + s: ts.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (sneachta) bán.",
+  "base": "sneachta",
+  "r": "none",
+  "e": "The snow is white.",
+  "w": "Sneachta is masculine, so an puts no t before its s.",
+  "wg": "Firinscneach: gan t roimh s.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Is é an ___ (Satharn) an lá is fearr.",
+  "base": "Satharn",
+  "r": "none",
+  "e": "Saturday is the best day.",
+  "w": "Satharn is masculine, so an puts no t before its s.",
+  "wg": "Firinscneach: gan t roimh s.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (siopa) dúnta.",
+  "base": "siopa",
+  "r": "none",
+  "e": "The shop is closed.",
+  "w": "Siopa is masculine, so an puts no t before its s.",
+  "wg": "Firinscneach: gan t roimh s.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (seomra) fuar.",
+  "base": "seomra",
+  "r": "none",
+  "e": "The room is cold.",
+  "w": "Seomra is masculine, so an puts no t before its s.",
+  "wg": "Firinscneach: gan t roimh s.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (sicín) blasta.",
+  "base": "sicín",
+  "r": "none",
+  "e": "The chicken is tasty.",
+  "w": "Sicín is masculine, so an puts no t before its s.",
+  "wg": "Firinscneach: gan t roimh s.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (salann) ar an mbord.",
+  "base": "salann",
+  "r": "none",
+  "e": "The salt is on the table.",
+  "w": "Salann is masculine, so an puts no t before its s.",
+  "wg": "Firinscneach: gan t roimh s.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (samhradh) ag teacht.",
+  "base": "samhradh",
+  "r": "none",
+  "e": "Summer is coming.",
+  "w": "Samhradh is masculine, so an puts no t before its s.",
+  "wg": "Firinscneach: gan t roimh s.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (seanfhear) ina shuí.",
+  "base": "seanfhear",
+  "r": "none",
+  "e": "The old man is sitting.",
+  "w": "Seanfhear is masculine, so an puts no t before its s.",
+  "wg": "Firinscneach: gan t roimh s.",
+  "b": "B1",
+  "t": "art"
+ }
+]

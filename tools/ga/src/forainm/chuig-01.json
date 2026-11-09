@@ -1,0 +1,182 @@
+[
+ {
+  "q": "Scríobh mé litir ___ (chuig + tú).",
+  "prep": "chuig",
+  "p": "tu",
+  "e": "I wrote you a letter.",
+  "w": "Sending or coming towards someone: chuig + tú = chugat.",
+  "wg": "Chuig duine: chuig + tú = chugat.",
+  "b": "A2"
+ },
+ {
+  "q": "Scríobh mé litir ___ (chuig + é).",
+  "prep": "chuig",
+  "p": "se",
+  "e": "I wrote him a letter.",
+  "w": "Sending or coming towards someone: chuig + é = chuige.",
+  "wg": "Chuig duine: chuig + é = chuige.",
+  "b": "A2"
+ },
+ {
+  "q": "Scríobh mé litir ___ (chuig + í).",
+  "prep": "chuig",
+  "p": "si",
+  "e": "I wrote her a letter.",
+  "w": "Sending or coming towards someone: chuig + í = chuici.",
+  "wg": "Chuig duine: chuig + í = chuici.",
+  "b": "A2"
+ },
+ {
+  "q": "Scríobh mé litir ___ (chuig + muid).",
+  "prep": "chuig",
+  "p": "muid",
+  "e": "I wrote us a letter.",
+  "w": "Sending or coming towards someone: chuig + muid = chugainn.",
+  "wg": "Chuig duine: chuig + muid = chugainn.",
+  "b": "A2"
+ },
+ {
+  "q": "Cuirfidh mé ríomhphost ___ (chuig + muid) amárach.",
+  "prep": "chuig",
+  "p": "muid",
+  "e": "I'll send us an email tomorrow.",
+  "w": "Sending or coming towards someone: chuig + muid = chugainn.",
+  "wg": "Chuig duine: chuig + muid = chugainn.",
+  "b": "A2"
+ },
+ {
+  "q": "Cuirfidh mé ríomhphost ___ (chuig + sibh) amárach.",
+  "prep": "chuig",
+  "p": "sibh",
+  "e": "I'll send you all an email tomorrow.",
+  "w": "Sending or coming towards someone: chuig + sibh = chugaibh.",
+  "wg": "Chuig duine: chuig + sibh = chugaibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Cuirfidh mé ríomhphost ___ (chuig + iad) amárach.",
+  "prep": "chuig",
+  "p": "siad",
+  "e": "I'll send them an email tomorrow.",
+  "w": "Sending or coming towards someone: chuig + iad = chucu.",
+  "wg": "Chuig duine: chuig + iad = chucu.",
+  "b": "A2"
+ },
+ {
+  "q": "Cuirfidh mé ríomhphost ___ (chuig + tú) amárach.",
+  "prep": "chuig",
+  "p": "tu",
+  "e": "I'll send you an email tomorrow.",
+  "w": "Sending or coming towards someone: chuig + tú = chugat.",
+  "wg": "Chuig duine: chuig + tú = chugat.",
+  "b": "A2"
+ },
+ {
+  "q": "Seol an grianghraf ___ (chuig + é).",
+  "prep": "chuig",
+  "p": "se",
+  "e": "Send him the photo.",
+  "w": "Sending or coming towards someone: chuig + é = chuige.",
+  "wg": "Chuig duine: chuig + é = chuige.",
+  "b": "A2"
+ },
+ {
+  "q": "Seol an grianghraf ___ (chuig + í).",
+  "prep": "chuig",
+  "p": "si",
+  "e": "Send her the photo.",
+  "w": "Sending or coming towards someone: chuig + í = chuici.",
+  "wg": "Chuig duine: chuig + í = chuici.",
+  "b": "A2"
+ },
+ {
+  "q": "Seol an grianghraf ___ (chuig + muid).",
+  "prep": "chuig",
+  "p": "muid",
+  "e": "Send us the photo.",
+  "w": "Sending or coming towards someone: chuig + muid = chugainn.",
+  "wg": "Chuig duine: chuig + muid = chugainn.",
+  "b": "A2"
+ },
+ {
+  "q": "Seol an grianghraf ___ (chuig + iad).",
+  "prep": "chuig",
+  "p": "siad",
+  "e": "Send them the photo.",
+  "w": "Sending or coming towards someone: chuig + iad = chucu.",
+  "wg": "Chuig duine: chuig + iad = chucu.",
+  "b": "A2"
+ },
+ {
+  "q": "Tháinig sí ___ (chuig + muid) inné.",
+  "prep": "chuig",
+  "p": "muid",
+  "e": "She came over to us yesterday.",
+  "w": "Sending or coming towards someone: chuig + muid = chugainn.",
+  "wg": "Chuig duine: chuig + muid = chugainn.",
+  "b": "A2"
+ },
+ {
+  "q": "Tháinig sí ___ (chuig + sibh) inné.",
+  "prep": "chuig",
+  "p": "sibh",
+  "e": "She came over to you all yesterday.",
+  "w": "Sending or coming towards someone: chuig + sibh = chugaibh.",
+  "wg": "Chuig duine: chuig + sibh = chugaibh.",
+  "b": "A2"
+ },
+ {
+  "q": "Tháinig sí ___ (chuig + iad) inné.",
+  "prep": "chuig",
+  "p": "siad",
+  "e": "She came over to them yesterday.",
+  "w": "Sending or coming towards someone: chuig + iad = chucu.",
+  "wg": "Chuig duine: chuig + iad = chucu.",
+  "b": "A2"
+ },
+ {
+  "q": "Tháinig sí ___ (chuig + mé) inné.",
+  "prep": "chuig",
+  "p": "me",
+  "e": "She came over to me yesterday.",
+  "w": "Sending or coming towards someone: chuig + mé = chugam.",
+  "wg": "Chuig duine: chuig + mé = chugam.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá an bus ag teacht ___ (chuig + é).",
+  "prep": "chuig",
+  "p": "se",
+  "e": "The bus is coming towards him.",
+  "w": "Sending or coming towards someone: chuig + é = chuige.",
+  "wg": "Chuig duine: chuig + é = chuige.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá an bus ag teacht ___ (chuig + í).",
+  "prep": "chuig",
+  "p": "si",
+  "e": "The bus is coming towards her.",
+  "w": "Sending or coming towards someone: chuig + í = chuici.",
+  "wg": "Chuig duine: chuig + í = chuici.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá an bus ag teacht ___ (chuig + muid).",
+  "prep": "chuig",
+  "p": "muid",
+  "e": "The bus is coming towards us.",
+  "w": "Sending or coming towards someone: chuig + muid = chugainn.",
+  "wg": "Chuig duine: chuig + muid = chugainn.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá an bus ag teacht ___ (chuig + sibh).",
+  "prep": "chuig",
+  "p": "sibh",
+  "e": "The bus is coming towards you all.",
+  "w": "Sending or coming towards someone: chuig + sibh = chugaibh.",
+  "wg": "Chuig duine: chuig + sibh = chugaibh.",
+  "b": "A2"
+ }
+]

@@ -1,0 +1,692 @@
+[
+ {
+  "q": "___ mhaith liom cupán tae.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "I'd like a cup of tea.",
+  "w": "Would like: ba mhaith le, with séimhiú.",
+  "wg": "Ba mhaith le: an modh coinníollach.",
+  "b": "A1",
+  "t": "ba"
+ },
+ {
+  "q": "___ mhaith leis dul abhaile.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "He'd like to go home.",
+  "w": "Would like: ba mhaith le, with séimhiú.",
+  "wg": "Ba mhaith le: an modh coinníollach.",
+  "b": "A1",
+  "t": "ba"
+ },
+ {
+  "q": "___ mhaith linn teacht.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "We'd like to come.",
+  "w": "Would like: ba mhaith le, with séimhiú.",
+  "wg": "Ba mhaith le: an modh coinníollach.",
+  "b": "A1",
+  "t": "ba"
+ },
+ {
+  "q": "___ mhaith léi ceapaire.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "She'd like a sandwich.",
+  "w": "Would like: ba mhaith le, with séimhiú.",
+  "wg": "Ba mhaith le: an modh coinníollach.",
+  "b": "A1",
+  "t": "ba"
+ },
+ {
+  "q": "___ mhaith leo fanacht anseo.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "They'd like to stay here.",
+  "w": "Would like: ba mhaith le, with séimhiú.",
+  "wg": "Ba mhaith le: an modh coinníollach.",
+  "b": "A1",
+  "t": "ba"
+ },
+ {
+  "q": "___ bhreá liom dul go hÉirinn.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "I'd love to go to Ireland.",
+  "w": "Would love: ba bhreá le.",
+  "wg": "Ba bhreá le.",
+  "b": "A1",
+  "t": "ba"
+ },
+ {
+  "q": "___ bhreá léi cuairt a thabhairt ort.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "She'd love to visit you.",
+  "w": "Would love: ba bhreá le.",
+  "wg": "Ba bhreá le.",
+  "b": "A1",
+  "t": "ba"
+ },
+ {
+  "q": "___ mhúinteoir é fadó.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "He was a teacher long ago.",
+  "w": "Was, with a noun: ba, and séimhiú after it.",
+  "wg": "Ba: an chopail san aimsir chaite.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ dhochtúir í a máthair.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "Her mother was a doctor.",
+  "w": "Was, with a noun: ba, and séimhiú after it.",
+  "wg": "Ba: an chopail san aimsir chaite.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ gharda é a athair.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "His father was a guard.",
+  "w": "Was, with a noun: ba, and séimhiú after it.",
+  "wg": "Ba: an chopail san aimsir chaite.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ cheoltóir maith é.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "He was a good musician.",
+  "w": "Was, with a noun: ba, and séimhiú after it.",
+  "wg": "Ba: an chopail san aimsir chaite.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ dhuine deas í.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "She was a nice person.",
+  "w": "Was, with a noun: ba, and séimhiú after it.",
+  "wg": "Ba: an chopail san aimsir chaite.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ bhliain mhaith í.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "It was a good year.",
+  "w": "Was, with a noun: ba, and séimhiú after it.",
+  "wg": "Ba: an chopail san aimsir chaite.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ bhuachaill cliste é.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "He was a clever boy.",
+  "w": "Was, with a noun: ba, and séimhiú after it.",
+  "wg": "Ba: an chopail san aimsir chaite.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ dheas an lá é inné.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "It was a nice day yesterday.",
+  "w": "Was, with a noun: ba, and séimhiú after it.",
+  "wg": "Ba: an chopail san aimsir chaite.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ bhreá linn teacht ar ais.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "We'd love to come back.",
+  "w": "Would love: ba bhreá le.",
+  "wg": "Ba bhreá le.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ mhaith liom dul ann.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "I'd like to go there.",
+  "w": "Would like: ba mhaith le, with séimhiú.",
+  "wg": "Ba mhaith le: an modh coinníollach.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ é Seán an captaen anuraidh.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "Seán was the captain last year.",
+  "w": "Was, with a noun: ba, and séimhiú after it.",
+  "wg": "Ba: an chopail san aimsir chaite.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ mhaith liom é sin a fheiceáil.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "I'd like to see that.",
+  "w": "Would like: ba mhaith le, with séimhiú.",
+  "wg": "Ba mhaith le: an modh coinníollach.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ cheart duit fanacht.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "You should stay.",
+  "w": "Should: ba cheart do.",
+  "wg": "Ba cheart do.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ cheart dúinn imeacht anois.",
+  "a": "Ba",
+  "o": [
+   "Ba",
+   "Is",
+   "Bhí",
+   "Tá"
+  ],
+  "e": "We should leave now.",
+  "w": "Should: ba cheart do.",
+  "wg": "Ba cheart do.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ mé tuirseach inné.",
+  "a": "Bhí",
+  "o": [
+   "Bhí",
+   "Ba",
+   "Is",
+   "Tá"
+  ],
+  "e": "I was tired yesterday.",
+  "w": "Was, with an adjective, place or feeling: bhí.",
+  "wg": "Bhí: bí san aimsir chaite.",
+  "b": "A1",
+  "t": "ba"
+ },
+ {
+  "q": "___ sé fuar aréir.",
+  "a": "Bhí",
+  "o": [
+   "Bhí",
+   "Ba",
+   "Is",
+   "Tá"
+  ],
+  "e": "It was cold last night.",
+  "w": "Was, with an adjective, place or feeling: bhí.",
+  "wg": "Bhí: bí san aimsir chaite.",
+  "b": "A1",
+  "t": "ba"
+ },
+ {
+  "q": "___ siad sa Fhrainc anuraidh.",
+  "a": "Bhí",
+  "o": [
+   "Bhí",
+   "Ba",
+   "Is",
+   "Tá"
+  ],
+  "e": "They were in France last year.",
+  "w": "Was, with an adjective, place or feeling: bhí.",
+  "wg": "Bhí: bí san aimsir chaite.",
+  "b": "A1",
+  "t": "ba"
+ },
+ {
+  "q": "___ áthas mór orainn inné.",
+  "a": "Bhí",
+  "o": [
+   "Bhí",
+   "Ba",
+   "Is",
+   "Tá"
+  ],
+  "e": "We were very happy yesterday.",
+  "w": "Was, with an adjective, place or feeling: bhí.",
+  "wg": "Bhí: bí san aimsir chaite.",
+  "b": "A1",
+  "t": "ba"
+ },
+ {
+  "q": "___ sí tinn an tseachtain seo caite.",
+  "a": "Bhí",
+  "o": [
+   "Bhí",
+   "Ba",
+   "Is",
+   "Tá"
+  ],
+  "e": "She was sick last week.",
+  "w": "Was, with an adjective, place or feeling: bhí.",
+  "wg": "Bhí: bí san aimsir chaite.",
+  "b": "A1",
+  "t": "ba"
+ },
+ {
+  "q": "___ an scannán go maith aréir.",
+  "a": "Bhí",
+  "o": [
+   "Bhí",
+   "Ba",
+   "Is",
+   "Tá"
+  ],
+  "e": "The film was good last night.",
+  "w": "Was, with an adjective, place or feeling: bhí.",
+  "wg": "Bhí: bí san aimsir chaite.",
+  "b": "A1",
+  "t": "ba"
+ },
+ {
+  "q": "___ mé ag obair inné.",
+  "a": "Bhí",
+  "o": [
+   "Bhí",
+   "Ba",
+   "Is",
+   "Tá"
+  ],
+  "e": "I was working yesterday.",
+  "w": "Was, with an adjective, place or feeling: bhí.",
+  "wg": "Bhí: bí san aimsir chaite.",
+  "b": "A1",
+  "t": "ba"
+ },
+ {
+  "q": "___ ocras orthu aréir.",
+  "a": "Bhí",
+  "o": [
+   "Bhí",
+   "Ba",
+   "Is",
+   "Tá"
+  ],
+  "e": "They were hungry last night.",
+  "w": "Was, with an adjective, place or feeling: bhí.",
+  "wg": "Bhí: bí san aimsir chaite.",
+  "b": "A1",
+  "t": "ba"
+ },
+ {
+  "q": "___ an siopa dúnta inné.",
+  "a": "Bhí",
+  "o": [
+   "Bhí",
+   "Ba",
+   "Is",
+   "Tá"
+  ],
+  "e": "The shop was closed yesterday.",
+  "w": "Was, with an adjective, place or feeling: bhí.",
+  "wg": "Bhí: bí san aimsir chaite.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ carr dearg againn fadó.",
+  "a": "Bhí",
+  "o": [
+   "Bhí",
+   "Ba",
+   "Is",
+   "Tá"
+  ],
+  "e": "We had a red car long ago.",
+  "w": "Was, with an adjective, place or feeling: bhí.",
+  "wg": "Bhí: bí san aimsir chaite.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ sé ag cur báistí inné.",
+  "a": "Bhí",
+  "o": [
+   "Bhí",
+   "Ba",
+   "Is",
+   "Tá"
+  ],
+  "e": "It was raining yesterday.",
+  "w": "Was, with an adjective, place or feeling: bhí.",
+  "wg": "Bhí: bí san aimsir chaite.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ sé ina chónaí anseo fadó.",
+  "a": "Bhí",
+  "o": [
+   "Bhí",
+   "Ba",
+   "Is",
+   "Tá"
+  ],
+  "e": "He lived here long ago.",
+  "w": "Was, with an adjective, place or feeling: bhí.",
+  "wg": "Bhí: bí san aimsir chaite.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ mé i mo mhúinteoir fadó.",
+  "a": "Bhí",
+  "o": [
+   "Bhí",
+   "Ba",
+   "Is",
+   "Tá"
+  ],
+  "e": "I was a teacher long ago.",
+  "w": "Was, with an adjective, place or feeling: bhí.",
+  "wg": "Bhí: bí san aimsir chaite.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ an-spraoi againn aréir.",
+  "a": "Bhí",
+  "o": [
+   "Bhí",
+   "Ba",
+   "Is",
+   "Tá"
+  ],
+  "e": "We had great fun last night.",
+  "w": "Was, with an adjective, place or feeling: bhí.",
+  "wg": "Bhí: bí san aimsir chaite.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ tú déanach inné.",
+  "a": "Bhí",
+  "o": [
+   "Bhí",
+   "Ba",
+   "Is",
+   "Tá"
+  ],
+  "e": "You were late yesterday.",
+  "w": "Was, with an adjective, place or feeling: bhí.",
+  "wg": "Bhí: bí san aimsir chaite.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ na páistí sa pháirc inné.",
+  "a": "Bhí",
+  "o": [
+   "Bhí",
+   "Ba",
+   "Is",
+   "Tá"
+  ],
+  "e": "The children were in the park yesterday.",
+  "w": "Was, with an adjective, place or feeling: bhí.",
+  "wg": "Bhí: bí san aimsir chaite.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ an aimsir go hálainn anuraidh.",
+  "a": "Bhí",
+  "o": [
+   "Bhí",
+   "Ba",
+   "Is",
+   "Tá"
+  ],
+  "e": "The weather was lovely last year.",
+  "w": "Was, with an adjective, place or feeling: bhí.",
+  "wg": "Bhí: bí san aimsir chaite.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ mhaith leat cupán tae?",
+  "a": "Ar",
+  "o": [
+   "Ar",
+   "An",
+   "Is",
+   "Bhí"
+  ],
+  "e": "Would you like a cup of tea?",
+  "w": "Would you like: ar mhaith, the question form of ba mhaith.",
+  "wg": "Ar mhaith leat: ceist.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ mhaith leo teacht linn?",
+  "a": "Ar",
+  "o": [
+   "Ar",
+   "An",
+   "Is",
+   "Bhí"
+  ],
+  "e": "Would they like to come with us?",
+  "w": "Would you like: ar mhaith, the question form of ba mhaith.",
+  "wg": "Ar mhaith leat: ceist.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ mhaith libh dul amach?",
+  "a": "Ar",
+  "o": [
+   "Ar",
+   "An",
+   "Is",
+   "Bhí"
+  ],
+  "e": "Would you all like to go out?",
+  "w": "Would you like: ar mhaith, the question form of ba mhaith.",
+  "wg": "Ar mhaith leat: ceist.",
+  "b": "A2",
+  "t": "ba"
+ },
+ {
+  "q": "___ fhearr leat tae nó caife?",
+  "a": "Arbh",
+  "o": [
+   "Arbh",
+   "Ar",
+   "An",
+   "Ba"
+  ],
+  "e": "Would you prefer tea or coffee?",
+  "w": "Would you prefer: arbh fhearr, ar becomes arbh before f.",
+  "wg": "Arbh fhearr leat: ceist.",
+  "b": "B1",
+  "t": "ba"
+ },
+ {
+  "q": "___ sé go deas dá dtiocfá.",
+  "a": "Bheadh",
+  "o": [
+   "Bheadh",
+   "Ba",
+   "Beidh",
+   "Is"
+  ],
+  "e": "It would be nice if you came.",
+  "w": "Would be, with an adjective or place: bheadh. Dá needs it.",
+  "wg": "Bheadh: bí sa mhodh coinníollach.",
+  "b": "B1",
+  "t": "ba"
+ },
+ {
+  "q": "___ an lá níos fearr dá mbeadh an ghrian ann.",
+  "a": "Bheadh",
+  "o": [
+   "Bheadh",
+   "Ba",
+   "Beidh",
+   "Is"
+  ],
+  "e": "The day would be better if the sun were out.",
+  "w": "Would be, with an adjective or place: bheadh. Dá needs it.",
+  "wg": "Bheadh: bí sa mhodh coinníollach.",
+  "b": "B1",
+  "t": "ba"
+ },
+ {
+  "q": "___ an teach te dá mbeadh tine ann.",
+  "a": "Bheadh",
+  "o": [
+   "Bheadh",
+   "Ba",
+   "Beidh",
+   "Is"
+  ],
+  "e": "The house would be warm if there were a fire.",
+  "w": "Would be, with an adjective or place: bheadh. Dá needs it.",
+  "wg": "Bheadh: bí sa mhodh coinníollach.",
+  "b": "B1",
+  "t": "ba"
+ },
+ {
+  "q": "___ áthas orm dá bhfeicfinn í.",
+  "a": "Bheadh",
+  "o": [
+   "Bheadh",
+   "Ba",
+   "Beidh",
+   "Is"
+  ],
+  "e": "I'd be glad if I saw her.",
+  "w": "Would be, with an adjective or place: bheadh. Dá needs it.",
+  "wg": "Bheadh: bí sa mhodh coinníollach.",
+  "b": "B1",
+  "t": "ba"
+ }
+]

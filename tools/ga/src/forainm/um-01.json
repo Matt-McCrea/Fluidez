@@ -1,0 +1,65 @@
+[
+ {
+  "q": "Chuir mé mo chóta ___ (um + mé).",
+  "prep": "um",
+  "p": "me",
+  "e": "I put my coat on.",
+  "w": "Putting clothes on yourself: um + mé = umam.",
+  "wg": "Éadaí umat: um + mé = umam.",
+  "b": "B2"
+ },
+ {
+  "q": "Chuir tú do chóta ___ (um + tú).",
+  "prep": "um",
+  "p": "tu",
+  "e": "You put your coat on.",
+  "w": "Putting clothes on yourself: um + tú = umat.",
+  "wg": "Éadaí umat: um + tú = umat.",
+  "b": "B2"
+ },
+ {
+  "q": "Chuir sé a chóta ___ (um + é).",
+  "prep": "um",
+  "p": "se",
+  "e": "He put his coat on.",
+  "w": "Putting clothes on yourself: um + é = uime.",
+  "wg": "Éadaí umat: um + é = uime.",
+  "b": "B2"
+ },
+ {
+  "q": "Chuir sí a cóta ___ (um + í).",
+  "prep": "um",
+  "p": "si",
+  "e": "She put her coat on.",
+  "w": "Putting clothes on yourself: um + í = uimpi.",
+  "wg": "Éadaí umat: um + í = uimpi.",
+  "b": "B2"
+ },
+ {
+  "q": "Chuireamar ár gcótaí ___ (um + muid).",
+  "prep": "um",
+  "p": "muid",
+  "e": "We put our coats on.",
+  "w": "Putting clothes on yourself: um + muid = umainn.",
+  "wg": "Éadaí umat: um + muid = umainn.",
+  "b": "B2"
+ },
+ {
+  "q": "Chuir sibh bhur gcótaí ___ (um + sibh).",
+  "prep": "um",
+  "p": "sibh",
+  "e": "You all put your coats on.",
+  "w": "Putting clothes on yourself: um + sibh = umaibh.",
+  "wg": "Éadaí umat: um + sibh = umaibh.",
+  "b": "B2"
+ },
+ {
+  "q": "Chuir siad a gcótaí ___ (um + iad).",
+  "prep": "um",
+  "p": "siad",
+  "e": "They put their coats on.",
+  "w": "Putting clothes on yourself: um + iad = umpu.",
+  "wg": "Éadaí umat: um + iad = umpu.",
+  "b": "B2"
+ }
+]

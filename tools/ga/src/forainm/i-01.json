@@ -1,0 +1,101 @@
+[
+ {
+  "q": "Chreid mé ___ (i + í) i gcónaí.",
+  "prep": "i",
+  "p": "si",
+  "e": "I always believed in her.",
+  "w": "In someone or something: i + í = inti.",
+  "wg": "I nduine nó i rud: i + í = inti.",
+  "b": "B1"
+ },
+ {
+  "q": "Chreid mé ___ (i + sibh) i gcónaí.",
+  "prep": "i",
+  "p": "sibh",
+  "e": "I always believed in you all.",
+  "w": "In someone or something: i + sibh = ionaibh.",
+  "wg": "I nduine nó i rud: i + sibh = ionaibh.",
+  "b": "B1"
+ },
+ {
+  "q": "Chreid mé ___ (i + iad) i gcónaí.",
+  "prep": "i",
+  "p": "siad",
+  "e": "I always believed in them.",
+  "w": "In someone or something: i + iad = iontu.",
+  "wg": "I nduine nó i rud: i + iad = iontu.",
+  "b": "B1"
+ },
+ {
+  "q": "Chreid mé ___ (i + tú) i gcónaí.",
+  "prep": "i",
+  "p": "tu",
+  "e": "I always believed in you.",
+  "w": "In someone or something: i + tú = ionat.",
+  "wg": "I nduine nó i rud: i + tú = ionat.",
+  "b": "B1"
+ },
+ {
+  "q": "Chreid mé ___ (i + é) i gcónaí.",
+  "prep": "i",
+  "p": "se",
+  "e": "I always believed in him.",
+  "w": "In someone or something: i + é = ann.",
+  "wg": "I nduine nó i rud: i + é = ann.",
+  "b": "B1"
+ },
+ {
+  "q": "Cuir an bainne ___ (i + é).",
+  "prep": "i",
+  "p": "se",
+  "e": "Put the milk in it.",
+  "w": "In someone or something: i + é = ann.",
+  "wg": "I nduine nó i rud: i + é = ann.",
+  "b": "B1"
+ },
+ {
+  "q": "Cuir an bainne ___ (i + í).",
+  "prep": "i",
+  "p": "si",
+  "e": "Put the milk in it.",
+  "w": "In someone or something: i + í = inti.",
+  "wg": "I nduine nó i rud: i + í = inti.",
+  "b": "B1"
+ },
+ {
+  "q": "Chuir sé suim ___ (i + muid).",
+  "prep": "i",
+  "p": "muid",
+  "e": "He took an interest in us.",
+  "w": "In someone or something: i + muid = ionainn.",
+  "wg": "I nduine nó i rud: i + muid = ionainn.",
+  "b": "B1"
+ },
+ {
+  "q": "Chuir sé suim ___ (i + sibh).",
+  "prep": "i",
+  "p": "sibh",
+  "e": "He took an interest in you all.",
+  "w": "In someone or something: i + sibh = ionaibh.",
+  "wg": "I nduine nó i rud: i + sibh = ionaibh.",
+  "b": "B1"
+ },
+ {
+  "q": "Chuir sé suim ___ (i + iad).",
+  "prep": "i",
+  "p": "siad",
+  "e": "He took an interest in them.",
+  "w": "In someone or something: i + iad = iontu.",
+  "wg": "I nduine nó i rud: i + iad = iontu.",
+  "b": "B1"
+ },
+ {
+  "q": "Chuir sé suim ___ (i + mé).",
+  "prep": "i",
+  "p": "me",
+  "e": "He took an interest in me.",
+  "w": "In someone or something: i + mé = ionam.",
+  "wg": "I nduine nó i rud: i + mé = ionam.",
+  "b": "B1"
+ }
+]

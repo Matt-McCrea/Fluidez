@@ -1,0 +1,83 @@
+[
+ {
+  "q": "Chuaigh an bus ___ (thar + sibh).",
+  "prep": "thar",
+  "p": "sibh",
+  "e": "The bus went past you all.",
+  "w": "Past or over someone: thar + sibh = tharaibh.",
+  "wg": "Thar dhuine: thar + sibh = tharaibh.",
+  "b": "B2"
+ },
+ {
+  "q": "Chuaigh an bus ___ (thar + iad).",
+  "prep": "thar",
+  "p": "siad",
+  "e": "The bus went past them.",
+  "w": "Past or over someone: thar + iad = tharstu.",
+  "wg": "Thar dhuine: thar + iad = tharstu.",
+  "b": "B2"
+ },
+ {
+  "q": "Chuaigh an bus ___ (thar + mé).",
+  "prep": "thar",
+  "p": "me",
+  "e": "The bus went past me.",
+  "w": "Past or over someone: thar + mé = tharam.",
+  "wg": "Thar dhuine: thar + mé = tharam.",
+  "b": "B2"
+ },
+ {
+  "q": "Chuaigh an bus ___ (thar + tú).",
+  "prep": "thar",
+  "p": "tu",
+  "e": "The bus went past you.",
+  "w": "Past or over someone: thar + tú = tharat.",
+  "wg": "Thar dhuine: thar + tú = tharat.",
+  "b": "B2"
+ },
+ {
+  "q": "Chuaigh an bus ___ (thar + é).",
+  "prep": "thar",
+  "p": "se",
+  "e": "The bus went past him.",
+  "w": "Past or over someone: thar + é = thairis.",
+  "wg": "Thar dhuine: thar + é = thairis.",
+  "b": "B2"
+ },
+ {
+  "q": "Shiúil sé ___ (thar + muid) gan focal.",
+  "prep": "thar",
+  "p": "muid",
+  "e": "He walked past us without a word.",
+  "w": "Past or over someone: thar + muid = tharainn.",
+  "wg": "Thar dhuine: thar + muid = tharainn.",
+  "b": "B2"
+ },
+ {
+  "q": "Shiúil sé ___ (thar + sibh) gan focal.",
+  "prep": "thar",
+  "p": "sibh",
+  "e": "He walked past you all without a word.",
+  "w": "Past or over someone: thar + sibh = tharaibh.",
+  "wg": "Thar dhuine: thar + sibh = tharaibh.",
+  "b": "B2"
+ },
+ {
+  "q": "Shiúil sé ___ (thar + iad) gan focal.",
+  "prep": "thar",
+  "p": "siad",
+  "e": "He walked past them without a word.",
+  "w": "Past or over someone: thar + iad = tharstu.",
+  "wg": "Thar dhuine: thar + iad = tharstu.",
+  "b": "B2"
+ },
+ {
+  "q": "Shiúil sé ___ (thar + mé) gan focal.",
+  "prep": "thar",
+  "p": "me",
+  "e": "He walked past me without a word.",
+  "w": "Past or over someone: thar + mé = tharam.",
+  "wg": "Thar dhuine: thar + mé = tharam.",
+  "b": "B2"
+ }
+]

@@ -1,0 +1,602 @@
+[
+ {
+  "q": "Tá mé ___ mhúinteoir.",
+  "a": "i mo",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "I'm a teacher.",
+  "w": "i mo matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + i mo + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá mé ___ dhochtúir.",
+  "a": "i mo",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "I'm a doctor.",
+  "w": "i mo matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + i mo + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Bhí mé ___ gharda fadó.",
+  "a": "i mo",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "I was a guard long ago.",
+  "w": "i mo matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + i mo + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá mé ___ chónaí i nGaillimh.",
+  "a": "i mo",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "I live in Galway.",
+  "w": "i mo matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + i mo + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá mé ___ shuí.",
+  "a": "i mo",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "I'm sitting.",
+  "w": "i mo matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + i mo + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá tú ___ mhúinteoir maith.",
+  "a": "i do",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "You're a good teacher.",
+  "w": "i do matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + i do + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "An bhfuil tú ___ chónaí anseo?",
+  "a": "i do",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "Do you live here?",
+  "w": "i do matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + i do + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá tú ___ dhalta anois.",
+  "a": "i do",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "You're a pupil now.",
+  "w": "i do matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + i do + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Bhí tú ___ chodladh.",
+  "a": "i do",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "You were asleep.",
+  "w": "i do matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + i do + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá sé ___ dhochtúir.",
+  "a": "ina",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "He's a doctor.",
+  "w": "ina matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + ina + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá sé ___ chónaí i gCorcaigh.",
+  "a": "ina",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "He lives in Cork.",
+  "w": "ina matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + ina + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Bhí sé ___ fheirmeoir.",
+  "a": "ina",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "He was a farmer.",
+  "w": "ina matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + ina + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá sí ___ dochtúir.",
+  "a": "ina",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "She's a doctor.",
+  "w": "ina matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + ina + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá sí ___ múinteoir sa scoil.",
+  "a": "ina",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "She's a teacher in the school.",
+  "w": "ina matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + ina + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá sí ___ cónaí i Sligeach.",
+  "a": "ina",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "She lives in Sligo.",
+  "w": "ina matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + ina + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Bhí sí ___ codladh.",
+  "a": "ina",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "She was asleep.",
+  "w": "ina matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + ina + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá siad ___ ndochtúirí.",
+  "a": "ina",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "They're doctors.",
+  "w": "ina matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + ina + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá siad ___ gcónaí in Éirinn.",
+  "a": "ina",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "They live in Ireland.",
+  "w": "ina matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + ina + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Bhí siad ___ ndaltaí anseo.",
+  "a": "ina",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "They were pupils here.",
+  "w": "ina matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + ina + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá muid ___ múinteoirí.",
+  "a": "inár",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "We're teachers.",
+  "w": "inár matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + inár + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá muid ___ gcónaí faoin tuath.",
+  "a": "inár",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "We live in the country.",
+  "w": "inár matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + inár + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Bhí muid ___ ndaltaí le chéile.",
+  "a": "inár",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "We were pupils together.",
+  "w": "inár matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + inár + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá muid ___ suí sa chistin.",
+  "a": "inár",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "We're sitting in the kitchen.",
+  "w": "inár matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + inár + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Bhí mé ___ chodladh.",
+  "a": "i mo",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "I was asleep.",
+  "w": "i mo matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + i mo + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá mé ___ dhúiseacht.",
+  "a": "i mo",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "I'm awake.",
+  "w": "i mo matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + i mo + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá sé ___ shuí.",
+  "a": "ina",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "He's sitting down.",
+  "w": "ina matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + ina + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá sí ___ seasamh.",
+  "a": "ina",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "She's standing.",
+  "w": "ina matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + ina + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá siad ___ seasamh.",
+  "a": "ina",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "They're standing.",
+  "w": "ina matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + ina + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá tú ___ sheasamh.",
+  "a": "i do",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "You're standing.",
+  "w": "i do matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + i do + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Bhí sé ___ mhúinteoir anseo.",
+  "a": "ina",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "He was a teacher here.",
+  "w": "ina matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + ina + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá muid ___ ndúiseacht.",
+  "a": "inár",
+  "o": [
+   "i mo",
+   "i do",
+   "ina",
+   "inár"
+  ],
+  "e": "We're awake.",
+  "w": "inár matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + inár + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "Tá sibh ___ ndaltaí maithe.",
+  "a": "in bhur",
+  "o": [
+   "in bhur",
+   "ina",
+   "inár",
+   "i do"
+  ],
+  "e": "You're all good pupils.",
+  "w": "in bhur matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + in bhur + ainmfhocal.",
+  "b": "B1",
+  "t": "mo"
+ },
+ {
+  "q": "An bhfuil sibh ___ gcónaí anseo?",
+  "a": "in bhur",
+  "o": [
+   "in bhur",
+   "ina",
+   "inár",
+   "i do"
+  ],
+  "e": "Do you all live here?",
+  "w": "in bhur matches the person: mé i mo, tú i do, sé, sí, siad ina, muid inár, sibh in bhur.",
+  "wg": "Tá + in bhur + ainmfhocal.",
+  "b": "B1",
+  "t": "mo"
+ },
+ {
+  "q": "___ mé i mo mhúinteoir.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "I'm a teacher.",
+  "w": "With i mo or ina, the verb is tá, not is.",
+  "wg": "Tá + i mo / ina.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "___ sí ina dochtúir.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "She's a doctor.",
+  "w": "With i mo or ina, the verb is tá, not is.",
+  "wg": "Tá + i mo / ina.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "___ sé ina gharda.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "He's a guard.",
+  "w": "With i mo or ina, the verb is tá, not is.",
+  "wg": "Tá + i mo / ina.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "___ siad ina gcónaí i nGaillimh.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "They live in Galway.",
+  "w": "With i mo or ina, the verb is tá, not is.",
+  "wg": "Tá + i mo / ina.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "___ tú i do dhalta maith.",
+  "a": "Tá",
+  "o": [
+   "Tá",
+   "Is",
+   "Ba",
+   "Ní"
+  ],
+  "e": "You're a good pupil.",
+  "w": "With i mo or ina, the verb is tá, not is.",
+  "wg": "Tá + i mo / ina.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "___ dochtúir í.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "She's a doctor.",
+  "w": "Without i mo or ina, a job takes is.",
+  "wg": "Is + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ },
+ {
+  "q": "___ garda í a deirfiúr.",
+  "a": "Is",
+  "o": [
+   "Is",
+   "Tá",
+   "Bhí",
+   "Níl"
+  ],
+  "e": "Her sister is a guard.",
+  "w": "Without i mo or ina, a job takes is.",
+  "wg": "Is + ainmfhocal.",
+  "b": "A2",
+  "t": "mo"
+ }
+]

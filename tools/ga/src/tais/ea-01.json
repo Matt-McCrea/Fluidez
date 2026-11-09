@@ -1,0 +1,797 @@
+[
+ {
+  "q": "___ múinteoir thú?",
+  "a": "An",
+  "o": [
+   "An",
+   "An bhfuil",
+   "Is",
+   "Tá"
+  ],
+  "e": "Are you a teacher?",
+  "w": "A question with is and a noun: an, no bhfuil.",
+  "wg": "Ceist leis an gcopail: an.",
+  "b": "A1",
+  "t": "ea"
+ },
+ {
+  "q": "___ Éireannach í?",
+  "a": "An",
+  "o": [
+   "An",
+   "An bhfuil",
+   "Is",
+   "Tá"
+  ],
+  "e": "Is she Irish?",
+  "w": "A question with is and a noun: an, no bhfuil.",
+  "wg": "Ceist leis an gcopail: an.",
+  "b": "A1",
+  "t": "ea"
+ },
+ {
+  "q": "___ tusa Seán?",
+  "a": "An",
+  "o": [
+   "An",
+   "An bhfuil",
+   "Is",
+   "Tá"
+  ],
+  "e": "Are you Seán?",
+  "w": "A question with is and a noun: an, no bhfuil.",
+  "wg": "Ceist leis an gcopail: an.",
+  "b": "A1",
+  "t": "ea"
+ },
+ {
+  "q": "___ é seo do mhála?",
+  "a": "An",
+  "o": [
+   "An",
+   "An bhfuil",
+   "Is",
+   "Tá"
+  ],
+  "e": "Is this your bag?",
+  "w": "A question with is and a noun: an, no bhfuil.",
+  "wg": "Ceist leis an gcopail: an.",
+  "b": "A1",
+  "t": "ea"
+ },
+ {
+  "q": "___ dochtúir é?",
+  "a": "An",
+  "o": [
+   "An",
+   "An bhfuil",
+   "Is",
+   "Tá"
+  ],
+  "e": "Is he a doctor?",
+  "w": "A question with is and a noun: an, no bhfuil.",
+  "wg": "Ceist leis an gcopail: an.",
+  "b": "A1",
+  "t": "ea"
+ },
+ {
+  "q": "___ í sin do dheirfiúr?",
+  "a": "An",
+  "o": [
+   "An",
+   "An bhfuil",
+   "Is",
+   "Tá"
+  ],
+  "e": "Is that your sister?",
+  "w": "A question with is and a noun: an, no bhfuil.",
+  "wg": "Ceist leis an gcopail: an.",
+  "b": "A1",
+  "t": "ea"
+ },
+ {
+  "q": "___ maith leat caife?",
+  "a": "An",
+  "o": [
+   "An",
+   "An bhfuil",
+   "Is",
+   "Tá"
+  ],
+  "e": "Do you like coffee?",
+  "w": "A question with is and a noun: an, no bhfuil.",
+  "wg": "Ceist leis an gcopail: an.",
+  "b": "A1",
+  "t": "ea"
+ },
+ {
+  "q": "___ féidir leat snámh?",
+  "a": "An",
+  "o": [
+   "An",
+   "An bhfuil",
+   "Is",
+   "Tá"
+  ],
+  "e": "Can you swim?",
+  "w": "A question with is and a noun: an, no bhfuil.",
+  "wg": "Ceist leis an gcopail: an.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "___ fearr leat tae nó caife?",
+  "a": "An",
+  "o": [
+   "An",
+   "An bhfuil",
+   "Is",
+   "Tá"
+  ],
+  "e": "Do you prefer tea or coffee?",
+  "w": "A question with is and a noun: an, no bhfuil.",
+  "wg": "Ceist leis an gcopail: an.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "___ leatsa an cóta seo?",
+  "a": "An",
+  "o": [
+   "An",
+   "An bhfuil",
+   "Is",
+   "Tá"
+  ],
+  "e": "Is this coat yours?",
+  "w": "A question with is and a noun: an, no bhfuil.",
+  "wg": "Ceist leis an gcopail: an.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "___ as Corcaigh thú?",
+  "a": "An",
+  "o": [
+   "An",
+   "An bhfuil",
+   "Is",
+   "Tá"
+  ],
+  "e": "Are you from Cork?",
+  "w": "A question with is and a noun: an, no bhfuil.",
+  "wg": "Ceist leis an gcopail: an.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "___ mac léinn é?",
+  "a": "An",
+  "o": [
+   "An",
+   "An bhfuil",
+   "Is",
+   "Tá"
+  ],
+  "e": "Is he a student?",
+  "w": "A question with is and a noun: an, no bhfuil.",
+  "wg": "Ceist leis an gcopail: an.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "___ breá leat an samhradh?",
+  "a": "An",
+  "o": [
+   "An",
+   "An bhfuil",
+   "Is",
+   "Tá"
+  ],
+  "e": "Do you love the summer?",
+  "w": "A question with is and a noun: an, no bhfuil.",
+  "wg": "Ceist leis an gcopail: an.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "___ é seo an bus go Sligeach?",
+  "a": "An",
+  "o": [
+   "An",
+   "An bhfuil",
+   "Is",
+   "Tá"
+  ],
+  "e": "Is this the bus to Sligo?",
+  "w": "A question with is and a noun: an, no bhfuil.",
+  "wg": "Ceist leis an gcopail: an.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "___ ceoltóir í?",
+  "a": "An",
+  "o": [
+   "An",
+   "An bhfuil",
+   "Is",
+   "Tá"
+  ],
+  "e": "Is she a musician?",
+  "w": "A question with is and a noun: an, no bhfuil.",
+  "wg": "Ceist leis an gcopail: an.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "___ é seo do theach?",
+  "a": "An",
+  "o": [
+   "An",
+   "An bhfuil",
+   "Is",
+   "Tá"
+  ],
+  "e": "Is this your house?",
+  "w": "A question with is and a noun: an, no bhfuil.",
+  "wg": "Ceist leis an gcopail: an.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "___ cuimhin leat é?",
+  "a": "An",
+  "o": [
+   "An",
+   "An bhfuil",
+   "Is",
+   "Tá"
+  ],
+  "e": "Do you remember him?",
+  "w": "A question with is and a noun: an, no bhfuil.",
+  "wg": "Ceist leis an gcopail: an.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "___ Albanach thú?",
+  "a": "An",
+  "o": [
+   "An",
+   "An bhfuil",
+   "Is",
+   "Tá"
+  ],
+  "e": "Are you Scottish?",
+  "w": "A question with is and a noun: an, no bhfuil.",
+  "wg": "Ceist leis an gcopail: an.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "An Éireannach thú? ___, is as Corcaigh mé.",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Ní hea",
+   "Tá",
+   "Níl"
+  ],
+  "e": "Are you Irish? Yes, I'm from Cork.",
+  "w": "Yes to an is question with a noun: is ea.",
+  "wg": "Freagra dearfach: is ea.",
+  "b": "A1",
+  "t": "ea"
+ },
+ {
+  "q": "An múinteoir thú? ___, is dochtúir mé.",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Is ea",
+   "Níl",
+   "Tá"
+  ],
+  "e": "Are you a teacher? No, I'm a doctor.",
+  "w": "No to an is question with a noun: ní hea.",
+  "wg": "Freagra diúltach: ní hea.",
+  "b": "A1",
+  "t": "ea"
+ },
+ {
+  "q": "An dochtúir í Áine? ___, is altra í.",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Is ea",
+   "Níl",
+   "Tá"
+  ],
+  "e": "Is Áine a doctor? No, she's a nurse.",
+  "w": "No to an is question with a noun: ní hea.",
+  "wg": "Freagra diúltach: ní hea.",
+  "b": "A1",
+  "t": "ea"
+ },
+ {
+  "q": "An dalta é? ___, tá sé sa chéad bhliain.",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Ní hea",
+   "Tá",
+   "Níl"
+  ],
+  "e": "Is he a pupil? Yes, he's in first year.",
+  "w": "Yes to an is question with a noun: is ea.",
+  "wg": "Freagra dearfach: is ea.",
+  "b": "A1",
+  "t": "ea"
+ },
+ {
+  "q": "An Sasanach é? ___, is Albanach é.",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Is ea",
+   "Níl",
+   "Tá"
+  ],
+  "e": "Is he English? No, he's Scottish.",
+  "w": "No to an is question with a noun: ní hea.",
+  "wg": "Freagra diúltach: ní hea.",
+  "b": "A1",
+  "t": "ea"
+ },
+ {
+  "q": "An feirmeoir é d'athair? ___, tá feirm mhór aige.",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Ní hea",
+   "Tá",
+   "Níl"
+  ],
+  "e": "Is your father a farmer? Yes, he has a big farm.",
+  "w": "Yes to an is question with a noun: is ea.",
+  "wg": "Freagra dearfach: is ea.",
+  "b": "A1",
+  "t": "ea"
+ },
+ {
+  "q": "An garda í? ___, is múinteoir í.",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Is ea",
+   "Níl",
+   "Tá"
+  ],
+  "e": "Is she a guard? No, she's a teacher.",
+  "w": "No to an is question with a noun: ní hea.",
+  "wg": "Freagra diúltach: ní hea.",
+  "b": "A1",
+  "t": "ea"
+ },
+ {
+  "q": "An Francach thú? ___, is as Páras mé.",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Ní hea",
+   "Tá",
+   "Níl"
+  ],
+  "e": "Are you French? Yes, I'm from Paris.",
+  "w": "Yes to an is question with a noun: is ea.",
+  "wg": "Freagra dearfach: is ea.",
+  "b": "A1",
+  "t": "ea"
+ },
+ {
+  "q": "An cócaire é? ___, oibríonn sé i mbialann.",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Ní hea",
+   "Tá",
+   "Níl"
+  ],
+  "e": "Is he a cook? Yes, he works in a restaurant.",
+  "w": "Yes to an is question with a noun: is ea.",
+  "wg": "Freagra dearfach: is ea.",
+  "b": "A1",
+  "t": "ea"
+ },
+ {
+  "q": "An mac léinn í? ___, tá sí ag obair anois.",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Is ea",
+   "Níl",
+   "Tá"
+  ],
+  "e": "Is she a student? No, she's working now.",
+  "w": "No to an is question with a noun: ní hea.",
+  "wg": "Freagra diúltach: ní hea.",
+  "b": "A1",
+  "t": "ea"
+ },
+ {
+  "q": "An ceoltóir thú? ___, seinnim an giotár.",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Ní hea",
+   "Tá",
+   "Níl"
+  ],
+  "e": "Are you a musician? Yes, I play the guitar.",
+  "w": "Yes to an is question with a noun: is ea.",
+  "wg": "Freagra dearfach: is ea.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "An Meiriceánach é? ___, is Ceanadach é.",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Is ea",
+   "Níl",
+   "Tá"
+  ],
+  "e": "Is he American? No, he's Canadian.",
+  "w": "No to an is question with a noun: ní hea.",
+  "wg": "Freagra diúltach: ní hea.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "An tiománaí bus é? ___, tiomáineann sé an bus scoile.",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Ní hea",
+   "Tá",
+   "Níl"
+  ],
+  "e": "Is he a bus driver? Yes, he drives the school bus.",
+  "w": "Yes to an is question with a noun: is ea.",
+  "wg": "Freagra dearfach: is ea.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "An innealtóir í? ___, is eolaí í.",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Is ea",
+   "Níl",
+   "Tá"
+  ],
+  "e": "Is she an engineer? No, she's a scientist.",
+  "w": "No to an is question with a noun: ní hea.",
+  "wg": "Freagra diúltach: ní hea.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "An Gearmánach thú? ___, is as Beirlín mé.",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Ní hea",
+   "Tá",
+   "Níl"
+  ],
+  "e": "Are you German? Yes, I'm from Berlin.",
+  "w": "Yes to an is question with a noun: is ea.",
+  "wg": "Freagra dearfach: is ea.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "An siopadóir é? ___, is feirmeoir é.",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Is ea",
+   "Níl",
+   "Tá"
+  ],
+  "e": "Is he a shopkeeper? No, he's a farmer.",
+  "w": "No to an is question with a noun: ní hea.",
+  "wg": "Freagra diúltach: ní hea.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "An Polannach í? ___, is as Vársá í.",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Ní hea",
+   "Tá",
+   "Níl"
+  ],
+  "e": "Is she Polish? Yes, she's from Warsaw.",
+  "w": "Yes to an is question with a noun: is ea.",
+  "wg": "Freagra dearfach: is ea.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "An múinteoir í do mháthair? ___, is altra í.",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Is ea",
+   "Níl",
+   "Tá"
+  ],
+  "e": "Is your mother a teacher? No, she's a nurse.",
+  "w": "No to an is question with a noun: ní hea.",
+  "wg": "Freagra diúltach: ní hea.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "An Spáinneach é? ___, is as Maidrid é.",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Ní hea",
+   "Tá",
+   "Níl"
+  ],
+  "e": "Is he Spanish? Yes, he's from Madrid.",
+  "w": "Yes to an is question with a noun: is ea.",
+  "wg": "Freagra dearfach: is ea.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "An dochtúir thú? ___, is fiaclóir mé.",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Is ea",
+   "Níl",
+   "Tá"
+  ],
+  "e": "Are you a doctor? No, I'm a dentist.",
+  "w": "No to an is question with a noun: ní hea.",
+  "wg": "Freagra diúltach: ní hea.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "An altra í? ___, oibríonn sí san ospidéal.",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Ní hea",
+   "Tá",
+   "Níl"
+  ],
+  "e": "Is she a nurse? Yes, she works in the hospital.",
+  "w": "Yes to an is question with a noun: is ea.",
+  "wg": "Freagra dearfach: is ea.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "An Éireannach é? ___, is Sasanach é.",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Is ea",
+   "Níl",
+   "Tá"
+  ],
+  "e": "Is he Irish? No, he's English.",
+  "w": "No to an is question with a noun: ní hea.",
+  "wg": "Freagra diúltach: ní hea.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "An dalta thú? ___, is múinteoir mé.",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Is ea",
+   "Níl",
+   "Tá"
+  ],
+  "e": "Are you a pupil? No, I'm a teacher.",
+  "w": "No to an is question with a noun: ní hea.",
+  "wg": "Freagra diúltach: ní hea.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "An garda é? ___, tá sé sa stáisiún anois.",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Ní hea",
+   "Tá",
+   "Níl"
+  ],
+  "e": "Is he a guard? Yes, he's in the station now.",
+  "w": "Yes to an is question with a noun: is ea.",
+  "wg": "Freagra dearfach: is ea.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "An Albanach í? ___, is as Glaschú í.",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Ní hea",
+   "Tá",
+   "Níl"
+  ],
+  "e": "Is she Scottish? Yes, she's from Glasgow.",
+  "w": "Yes to an is question with a noun: is ea.",
+  "wg": "Freagra dearfach: is ea.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "An scríbhneoir é? ___, scríobh sé trí leabhar.",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Ní hea",
+   "Tá",
+   "Níl"
+  ],
+  "e": "Is he a writer? Yes, he wrote three books.",
+  "w": "Yes to an is question with a noun: is ea.",
+  "wg": "Freagra dearfach: is ea.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "An feirmeoir thú? ___, is siopadóir mé.",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Is ea",
+   "Níl",
+   "Tá"
+  ],
+  "e": "Are you a farmer? No, I'm a shopkeeper.",
+  "w": "No to an is question with a noun: ní hea.",
+  "wg": "Freagra diúltach: ní hea.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "An múinteoir é Seán? ___, múineann sé Fraincis.",
+  "a": "Is ea",
+  "o": [
+   "Is ea",
+   "Ní hea",
+   "Tá",
+   "Níl"
+  ],
+  "e": "Is Seán a teacher? Yes, he teaches French.",
+  "w": "Yes to an is question with a noun: is ea.",
+  "wg": "Freagra dearfach: is ea.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "An píolóta í? ___, is altra í.",
+  "a": "Ní hea",
+  "o": [
+   "Ní hea",
+   "Is ea",
+   "Níl",
+   "Tá"
+  ],
+  "e": "Is she a pilot? No, she's a nurse.",
+  "w": "No to an is question with a noun: ní hea.",
+  "wg": "Freagra diúltach: ní hea.",
+  "b": "A2",
+  "t": "ea"
+ },
+ {
+  "q": "___ álainn an lá é!",
+  "a": "Nach",
+  "o": [
+   "Nach",
+   "Nach bhfuil",
+   "Níl",
+   "Tá"
+  ],
+  "e": "Isn't it a beautiful day!",
+  "w": "Isn't it, with is: nach, no bhfuil.",
+  "wg": "Nach: ceist dhiúltach leis an gcopail.",
+  "b": "B1",
+  "t": "ea"
+ },
+ {
+  "q": "___ deas an carr é!",
+  "a": "Nach",
+  "o": [
+   "Nach",
+   "Nach bhfuil",
+   "Níl",
+   "Tá"
+  ],
+  "e": "Isn't it a nice car!",
+  "w": "Isn't it, with is: nach, no bhfuil.",
+  "wg": "Nach: ceist dhiúltach leis an gcopail.",
+  "b": "B1",
+  "t": "ea"
+ },
+ {
+  "q": "___ fuar an oíche í!",
+  "a": "Nach",
+  "o": [
+   "Nach",
+   "Nach bhfuil",
+   "Níl",
+   "Tá"
+  ],
+  "e": "Isn't it a cold night!",
+  "w": "Isn't it, with is: nach, no bhfuil.",
+  "wg": "Nach: ceist dhiúltach leis an gcopail.",
+  "b": "B1",
+  "t": "ea"
+ },
+ {
+  "q": "___ breá an aimsir í!",
+  "a": "Nach",
+  "o": [
+   "Nach",
+   "Nach bhfuil",
+   "Níl",
+   "Tá"
+  ],
+  "e": "Isn't the weather fine!",
+  "w": "Isn't it, with is: nach, no bhfuil.",
+  "wg": "Nach: ceist dhiúltach leis an gcopail.",
+  "b": "B1",
+  "t": "ea"
+ },
+ {
+  "q": "___ cliste an cailín í!",
+  "a": "Nach",
+  "o": [
+   "Nach",
+   "Nach bhfuil",
+   "Níl",
+   "Tá"
+  ],
+  "e": "Isn't she a clever girl!",
+  "w": "Isn't it, with is: nach, no bhfuil.",
+  "wg": "Nach: ceist dhiúltach leis an gcopail.",
+  "b": "B1",
+  "t": "ea"
+ },
+ {
+  "q": "___ múinteoir é?",
+  "a": "Nach",
+  "o": [
+   "Nach",
+   "Nach bhfuil",
+   "Níl",
+   "Tá"
+  ],
+  "e": "Isn't he a teacher?",
+  "w": "Isn't it, with is: nach, no bhfuil.",
+  "wg": "Nach: ceist dhiúltach leis an gcopail.",
+  "b": "B1",
+  "t": "ea"
+ }
+]

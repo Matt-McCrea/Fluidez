@@ -1,0 +1,502 @@
+[
+ {
+  "q": "Chuaigh mé ar saoire i ___ (Corcaigh) anuraidh.",
+  "base": "Corcaigh",
+  "r": "ecl",
+  "e": "I went on holiday in Cork last year.",
+  "w": "I (in) takes urú: Corcaigh becomes gCorcaigh.",
+  "wg": "I + urú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Tá an cluiche ceannais i ___ (Baile) Átha Cliath.",
+  "base": "Baile",
+  "r": "ecl",
+  "e": "The final is in Dublin.",
+  "w": "I (in) takes urú: Baile becomes mBaile.",
+  "wg": "I + urú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Bhí mé ag foghlaim Gaeilge i ___ (Ciarraí).",
+  "base": "Ciarraí",
+  "r": "ecl",
+  "e": "I was learning Irish in Kerry.",
+  "w": "I (in) takes urú: Ciarraí becomes gCiarraí.",
+  "wg": "I + urú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Tá cónaí ar m'aintín i ___ (Port) Láirge.",
+  "base": "Port",
+  "r": "ecl",
+  "e": "My aunt lives in Waterford.",
+  "w": "I (in) takes urú: Port becomes bPort.",
+  "wg": "I + urú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Bhí an bháisteach trom i ___ (Gaillimh) inné.",
+  "base": "Gaillimh",
+  "r": "ecl",
+  "e": "The rain was heavy in Galway yesterday.",
+  "w": "I (in) takes urú: Gaillimh becomes nGaillimh.",
+  "wg": "I + urú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Tá mo chara ag obair i ___ (Béal) Feirste.",
+  "base": "Béal",
+  "r": "ecl",
+  "e": "My friend works in Belfast.",
+  "w": "I (in) takes urú: Béal becomes mBéal.",
+  "wg": "I + urú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Bhuail mé léi i ___ (Doire).",
+  "base": "Doire",
+  "r": "ecl",
+  "e": "I met her in Derry.",
+  "w": "I (in) takes urú: Doire becomes nDoire.",
+  "wg": "I + urú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Tá teach tábhairne deas i ___ (Trá) Lí.",
+  "base": "Trá",
+  "r": "ecl",
+  "e": "There is a nice pub in Tralee.",
+  "w": "I (in) takes urú: Trá becomes dTrá.",
+  "wg": "I + urú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Tá an fhéile i ___ (Cill) Airne i mbliana.",
+  "base": "Cill",
+  "r": "ecl",
+  "e": "The festival is in Killarney this year.",
+  "w": "I (in) takes urú: Cill becomes gCill.",
+  "wg": "I + urú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Tá mé ag fanacht i ___ (teach) ósta.",
+  "base": "teach",
+  "r": "ecl",
+  "e": "I am staying in a hotel.",
+  "w": "I (in) takes urú: teach becomes dteach.",
+  "wg": "I + urú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Chuir sé an t-airgead i ___ (bosca).",
+  "base": "bosca",
+  "r": "ecl",
+  "e": "He put the money in a box.",
+  "w": "I (in) takes urú: bosca becomes mbosca.",
+  "wg": "I + urú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Tá mo dheirfiúr ag obair i ___ (bialann) Iodálach.",
+  "base": "bialann",
+  "r": "ecl",
+  "e": "My sister works in an Italian restaurant.",
+  "w": "I (in) takes urú: bialann becomes mbialann.",
+  "wg": "I + urú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Tá na bláthanna i ___ (pota) sa chistin.",
+  "base": "pota",
+  "r": "ecl",
+  "e": "The flowers are in a pot in the kitchen.",
+  "w": "I (in) takes urú: pota becomes bpota.",
+  "wg": "I + urú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Tá sí ina cónaí i ___ (baile) beag.",
+  "base": "baile",
+  "r": "ecl",
+  "e": "She lives in a small town.",
+  "w": "I (in) takes urú: baile becomes mbaile.",
+  "wg": "I + urú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Tá siad i ___ (bád) ar an loch.",
+  "base": "bád",
+  "r": "ecl",
+  "e": "They are in a boat on the lake.",
+  "w": "I (in) takes urú: bád becomes mbád.",
+  "wg": "I + urú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Tá an t-ospidéal i ___ (cathair) eile.",
+  "base": "cathair",
+  "r": "ecl",
+  "e": "The hospital is in another city.",
+  "w": "I (in) takes urú: cathair becomes gcathair.",
+  "wg": "I + urú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Tá cónaí orm i ___ (tír) bheag.",
+  "base": "tír",
+  "r": "ecl",
+  "e": "I live in a small country.",
+  "w": "I (in) takes urú: tír becomes dtír.",
+  "wg": "I + urú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Bhí siad i ___ (contúirt).",
+  "base": "contúirt",
+  "r": "ecl",
+  "e": "They were in danger.",
+  "w": "I (in) takes urú: contúirt becomes gcontúirt.",
+  "wg": "I + urú.",
+  "b": "B1",
+  "t": "prep"
+ },
+ {
+  "q": "Fuair mé cárta ó ___ (Peadar).",
+  "base": "Peadar",
+  "r": "len",
+  "e": "I got a card from Peadar.",
+  "w": "Ó takes séimhiú: Peadar becomes Pheadar.",
+  "wg": "Ó + séimhiú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Tháinig sí ó ___ (Corcaigh) ar an traein.",
+  "base": "Corcaigh",
+  "r": "len",
+  "e": "She came from Cork on the train.",
+  "w": "Ó takes séimhiú: Corcaigh becomes Chorcaigh.",
+  "wg": "Ó + séimhiú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Tá an t-eitleán ag teacht ó ___ (Páras).",
+  "base": "Páras",
+  "r": "len",
+  "e": "The plane is coming from Paris.",
+  "w": "Ó takes séimhiú: Páras becomes Pháras.",
+  "wg": "Ó + séimhiú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Fuair sé glao ó ___ (dochtúir).",
+  "base": "dochtúir",
+  "r": "len",
+  "e": "He got a call from a doctor.",
+  "w": "Ó takes séimhiú: dochtúir becomes dhochtúir.",
+  "wg": "Ó + séimhiú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Ghlac mé an leabhar ó ___ (Tomás).",
+  "base": "Tomás",
+  "r": "len",
+  "e": "I took the book from Tomás.",
+  "w": "Ó takes séimhiú: Tomás becomes Thomás.",
+  "wg": "Ó + séimhiú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Fuair mé cuireadh ó ___ (Gearóid).",
+  "base": "Gearóid",
+  "r": "len",
+  "e": "I got an invitation from Gearóid.",
+  "w": "Ó takes séimhiú: Gearóid becomes Ghearóid.",
+  "wg": "Ó + séimhiú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Thug mé milseáin do ___ (páiste) beag.",
+  "base": "páiste",
+  "r": "len",
+  "e": "I gave sweets to a small child.",
+  "w": "Do takes séimhiú: páiste becomes pháiste.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Thug sí a lámh do ___ (Seán).",
+  "base": "Seán",
+  "r": "len",
+  "e": "She gave Seán her hand.",
+  "w": "Do takes séimhiú: Seán becomes Sheán.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Seol téacs do ___ (Peadar).",
+  "base": "Peadar",
+  "r": "len",
+  "e": "Send a text to Peadar.",
+  "w": "Do takes séimhiú: Peadar becomes Pheadar.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Ná habair é sin do ___ (Bríd).",
+  "base": "Bríd",
+  "r": "len",
+  "e": "Don't say that to Bríd.",
+  "w": "Do takes séimhiú: Bríd becomes Bhríd.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Thug an múinteoir duais do ___ (Ciarán).",
+  "base": "Ciarán",
+  "r": "len",
+  "e": "The teacher gave Ciarán a prize.",
+  "w": "Do takes séimhiú: Ciarán becomes Chiarán.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Labhair sé faoi ___ (Gaillimh) ar an raidió.",
+  "base": "Gaillimh",
+  "r": "len",
+  "e": "He talked about Galway on the radio.",
+  "w": "Faoi takes séimhiú: Gaillimh becomes Ghaillimh.",
+  "wg": "Faoi + séimhiú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Scríobh sí aiste faoi ___ (cathair) mhór.",
+  "base": "cathair",
+  "r": "len",
+  "e": "She wrote an essay about a big city.",
+  "w": "Faoi takes séimhiú: cathair becomes chathair.",
+  "wg": "Faoi + séimhiú.",
+  "b": "A2",
+  "t": "prep"
+ },
+ {
+  "q": "Bhí siad ag caint faoi ___ (Peadar).",
+  "base": "Peadar",
+  "r": "len",
+  "e": "They were talking about Peadar.",
+  "w": "Faoi takes séimhiú: Peadar becomes Pheadar.",
+  "wg": "Faoi + séimhiú.",
+  "b": "A1",
+  "t": "prep"
+ },
+ {
+  "q": "Tá scannán nua faoi ___ (cogadh).",
+  "base": "cogadh",
+  "r": "len",
+  "e": "There is a new film about a war.",
+  "w": "Faoi takes séimhiú: cogadh becomes chogadh.",
+  "wg": "Faoi + séimhiú.",
+  "b": "A2",
+  "t": "prep"
+ },
+ {
+  "q": "Bhí mé sa bhaile roimh ___ (Peadar).",
+  "base": "Peadar",
+  "r": "len",
+  "e": "I was home before Peadar.",
+  "w": "Roimh takes séimhiú: Peadar becomes Pheadar.",
+  "wg": "Roimh + séimhiú.",
+  "b": "A2",
+  "t": "prep"
+ },
+ {
+  "q": "Bíonn sé ar scoil de ___ (gnáth) ar a naoi.",
+  "base": "gnáth",
+  "r": "len",
+  "e": "He is usually in school at nine.",
+  "w": "De takes séimhiú: gnáth becomes ghnáth.",
+  "wg": "De + séimhiú.",
+  "b": "A2",
+  "t": "prep"
+ },
+ {
+  "q": "Bhí sé ag obair mar ___ (garda) i gCorcaigh.",
+  "base": "garda",
+  "r": "len",
+  "e": "He worked as a guard in Cork.",
+  "w": "Mar takes séimhiú: garda becomes gharda.",
+  "wg": "Mar + séimhiú.",
+  "b": "A2",
+  "t": "prep"
+ },
+ {
+  "q": "Bhí sí ann mar ___ (cuairteoir).",
+  "base": "cuairteoir",
+  "r": "len",
+  "e": "She was there as a visitor.",
+  "w": "Mar takes séimhiú: cuairteoir becomes chuairteoir.",
+  "wg": "Mar + séimhiú.",
+  "b": "A2",
+  "t": "prep"
+ },
+ {
+  "q": "Tá mé anseo mar ___ (dalta) nua.",
+  "base": "dalta",
+  "r": "len",
+  "e": "I am here as a new pupil.",
+  "w": "Mar takes séimhiú: dalta becomes dhalta.",
+  "wg": "Mar + séimhiú.",
+  "b": "A2",
+  "t": "prep"
+ },
+ {
+  "q": "Ná téigh amach gan ___ (cóta) báistí.",
+  "base": "cóta",
+  "r": "len",
+  "e": "Don't go out without a raincoat.",
+  "w": "Gan (without) takes séimhiú on a plain noun: cóta becomes chóta.",
+  "wg": "Gan + séimhiú.",
+  "b": "A2",
+  "t": "prep"
+ },
+ {
+  "q": "Bhí mé gan ___ (bricfeasta) ar maidin.",
+  "base": "bricfeasta",
+  "r": "len",
+  "e": "I was without breakfast this morning.",
+  "w": "Gan (without) takes séimhiú on a plain noun: bricfeasta becomes bhricfeasta.",
+  "wg": "Gan + séimhiú.",
+  "b": "A2",
+  "t": "prep"
+ },
+ {
+  "q": "Tá sé fuar gan ___ (geansaí).",
+  "base": "geansaí",
+  "r": "len",
+  "e": "It is cold without a jumper.",
+  "w": "Gan (without) takes séimhiú on a plain noun: geansaí becomes gheansaí.",
+  "wg": "Gan + séimhiú.",
+  "b": "A2",
+  "t": "prep"
+ },
+ {
+  "q": "D'fhág sí an teach gan ___ (fón).",
+  "base": "fón",
+  "r": "len",
+  "e": "She left the house without a phone.",
+  "w": "Gan (without) takes séimhiú on a plain noun: fón becomes fhón.",
+  "wg": "Gan + séimhiú.",
+  "b": "A2",
+  "t": "prep"
+ },
+ {
+  "q": "Ná himigh gan ___ (cead).",
+  "base": "cead",
+  "r": "len",
+  "e": "Don't leave without permission.",
+  "w": "Gan (without) takes séimhiú on a plain noun: cead becomes chead.",
+  "wg": "Gan + séimhiú.",
+  "b": "A2",
+  "t": "prep"
+ },
+ {
+  "q": "Ná labhair faoi ___ (obair) anocht.",
+  "base": "obair",
+  "r": "none",
+  "e": "Don't talk about work tonight.",
+  "w": "Faoi takes séimhiú, but a vowel never changes: obair stays obair.",
+  "wg": "Guta: gan séimhiú.",
+  "b": "A2",
+  "t": "prep"
+ },
+ {
+  "q": "Fuair sí cárta ó ___ (Úna).",
+  "base": "Úna",
+  "r": "none",
+  "e": "She got a card from Úna.",
+  "w": "Ó takes séimhiú, but a vowel never changes: Úna stays Úna.",
+  "wg": "Guta: gan séimhiú.",
+  "b": "A2",
+  "t": "prep"
+ },
+ {
+  "q": "Bhí scéal ar an nuacht faoi ___ (Albain).",
+  "base": "Albain",
+  "r": "none",
+  "e": "There was a story on the news about Scotland.",
+  "w": "Faoi takes séimhiú, but a vowel never changes: Albain stays Albain.",
+  "wg": "Guta: gan séimhiú.",
+  "b": "A2",
+  "t": "prep"
+ },
+ {
+  "q": "Tháinig mo chara ó ___ (Éirinn) inné.",
+  "base": "Éirinn",
+  "r": "none",
+  "e": "My friend came from Ireland yesterday.",
+  "w": "Ó takes séimhiú, but a vowel never changes: Éirinn stays Éirinn.",
+  "wg": "Guta: gan séimhiú.",
+  "b": "A2",
+  "t": "prep"
+ },
+ {
+  "q": "Tá sí ag ól tae gan ___ (siúcra).",
+  "base": "siúcra",
+  "r": "none",
+  "e": "She is drinking tea without sugar.",
+  "w": "Gan does not lenite d, t or s: siúcra stays siúcra.",
+  "wg": "Gan: ní shéimhítear d, t ná s.",
+  "b": "B1",
+  "t": "prep"
+ },
+ {
+  "q": "Tá an seomra gan ___ (teas).",
+  "base": "teas",
+  "r": "none",
+  "e": "The room is without heat.",
+  "w": "Gan does not lenite d, t or s: teas stays teas.",
+  "wg": "Gan: ní shéimhítear d, t ná s.",
+  "b": "B1",
+  "t": "prep"
+ },
+ {
+  "q": "Chuaigh sé abhaile gan ___ (deoch).",
+  "base": "deoch",
+  "r": "none",
+  "e": "He went home without a drink.",
+  "w": "Gan does not lenite d, t or s: deoch stays deoch.",
+  "wg": "Gan: ní shéimhítear d, t ná s.",
+  "b": "B1",
+  "t": "prep"
+ }
+]

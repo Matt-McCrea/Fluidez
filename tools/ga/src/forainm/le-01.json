@@ -1,0 +1,695 @@
+[
+ {
+  "q": "Is maith ___ (le + muid) tae.",
+  "prep": "le",
+  "p": "muid",
+  "e": "We like tea.",
+  "w": "Liking goes with le: le + muid = linn.",
+  "wg": "Is maith le: le + muid = linn.",
+  "b": "A1"
+ },
+ {
+  "q": "Is maith ___ (le + sibh) tae.",
+  "prep": "le",
+  "p": "sibh",
+  "e": "You all like tea.",
+  "w": "Liking goes with le: le + sibh = libh.",
+  "wg": "Is maith le: le + sibh = libh.",
+  "b": "A1"
+ },
+ {
+  "q": "Is maith ___ (le + iad) tae.",
+  "prep": "le",
+  "p": "siad",
+  "e": "They like tea.",
+  "w": "Liking goes with le: le + iad = leo.",
+  "wg": "Is maith le: le + iad = leo.",
+  "b": "A1"
+ },
+ {
+  "q": "Is maith ___ (le + mé) tae.",
+  "prep": "le",
+  "p": "me",
+  "e": "I like tea.",
+  "w": "Liking goes with le: le + mé = liom.",
+  "wg": "Is maith le: le + mé = liom.",
+  "b": "A1"
+ },
+ {
+  "q": "Is maith ___ (le + tú) tae.",
+  "prep": "le",
+  "p": "tu",
+  "e": "You like tea.",
+  "w": "Liking goes with le: le + tú = leat.",
+  "wg": "Is maith le: le + tú = leat.",
+  "b": "A1"
+ },
+ {
+  "q": "Ní maith ___ (le + mé) bainne.",
+  "prep": "le",
+  "p": "me",
+  "e": "I don't like milk.",
+  "w": "Liking goes with le: le + mé = liom.",
+  "wg": "Is maith le: le + mé = liom.",
+  "b": "A1"
+ },
+ {
+  "q": "Ní maith ___ (le + tú) bainne.",
+  "prep": "le",
+  "p": "tu",
+  "e": "You don't like milk.",
+  "w": "Liking goes with le: le + tú = leat.",
+  "wg": "Is maith le: le + tú = leat.",
+  "b": "A1"
+ },
+ {
+  "q": "Ní maith ___ (le + é) bainne.",
+  "prep": "le",
+  "p": "se",
+  "e": "He doesn't like milk.",
+  "w": "Liking goes with le: le + é = leis.",
+  "wg": "Is maith le: le + é = leis.",
+  "b": "A1"
+ },
+ {
+  "q": "Ní maith ___ (le + í) bainne.",
+  "prep": "le",
+  "p": "si",
+  "e": "She doesn't like milk.",
+  "w": "Liking goes with le: le + í = léi.",
+  "wg": "Is maith le: le + í = léi.",
+  "b": "A1"
+ },
+ {
+  "q": "Is breá ___ (le + í) an samhradh.",
+  "prep": "le",
+  "p": "si",
+  "e": "She loves the summer.",
+  "w": "Liking goes with le: le + í = léi.",
+  "wg": "Is maith le: le + í = léi.",
+  "b": "A1"
+ },
+ {
+  "q": "Is breá ___ (le + muid) an samhradh.",
+  "prep": "le",
+  "p": "muid",
+  "e": "We love the summer.",
+  "w": "Liking goes with le: le + muid = linn.",
+  "wg": "Is maith le: le + muid = linn.",
+  "b": "A1"
+ },
+ {
+  "q": "Is breá ___ (le + sibh) an samhradh.",
+  "prep": "le",
+  "p": "sibh",
+  "e": "You all love the summer.",
+  "w": "Liking goes with le: le + sibh = libh.",
+  "wg": "Is maith le: le + sibh = libh.",
+  "b": "A1"
+ },
+ {
+  "q": "Is breá ___ (le + iad) an samhradh.",
+  "prep": "le",
+  "p": "siad",
+  "e": "They love the summer.",
+  "w": "Liking goes with le: le + iad = leo.",
+  "wg": "Is maith le: le + iad = leo.",
+  "b": "A1"
+ },
+ {
+  "q": "Is fearr ___ (le + iad) caife ná tae.",
+  "prep": "le",
+  "p": "siad",
+  "e": "They prefer coffee to tea.",
+  "w": "Liking goes with le: le + iad = leo.",
+  "wg": "Is maith le: le + iad = leo.",
+  "b": "A1"
+ },
+ {
+  "q": "Is fearr ___ (le + mé) caife ná tae.",
+  "prep": "le",
+  "p": "me",
+  "e": "I prefer coffee to tea.",
+  "w": "Liking goes with le: le + mé = liom.",
+  "wg": "Is maith le: le + mé = liom.",
+  "b": "A1"
+ },
+ {
+  "q": "Is fearr ___ (le + tú) caife ná tae.",
+  "prep": "le",
+  "p": "tu",
+  "e": "You prefer coffee to tea.",
+  "w": "Liking goes with le: le + tú = leat.",
+  "wg": "Is maith le: le + tú = leat.",
+  "b": "A1"
+ },
+ {
+  "q": "Is fearr ___ (le + é) caife ná tae.",
+  "prep": "le",
+  "p": "se",
+  "e": "He prefers coffee to tea.",
+  "w": "Liking goes with le: le + é = leis.",
+  "wg": "Is maith le: le + é = leis.",
+  "b": "A1"
+ },
+ {
+  "q": "An maith ___ (le + tú) ceol?",
+  "prep": "le",
+  "p": "tu",
+  "e": "Do you like music?",
+  "w": "Liking goes with le: le + tú = leat.",
+  "wg": "Is maith le: le + tú = leat.",
+  "b": "A1"
+ },
+ {
+  "q": "An maith ___ (le + é) ceol?",
+  "prep": "le",
+  "p": "se",
+  "e": "Does he like music?",
+  "w": "Liking goes with le: le + é = leis.",
+  "wg": "Is maith le: le + é = leis.",
+  "b": "A1"
+ },
+ {
+  "q": "An maith ___ (le + í) ceol?",
+  "prep": "le",
+  "p": "si",
+  "e": "Does she like music?",
+  "w": "Liking goes with le: le + í = léi.",
+  "wg": "Is maith le: le + í = léi.",
+  "b": "A1"
+ },
+ {
+  "q": "An maith ___ (le + muid) ceol?",
+  "prep": "le",
+  "p": "muid",
+  "e": "Do we like music?",
+  "w": "Liking goes with le: le + muid = linn.",
+  "wg": "Is maith le: le + muid = linn.",
+  "b": "A1"
+ },
+ {
+  "q": "Ar mhaith ___ (le + muid) cupán tae?",
+  "prep": "le",
+  "p": "muid",
+  "e": "Would we like a cup of tea?",
+  "w": "Liking goes with le: le + muid = linn.",
+  "wg": "Is maith le: le + muid = linn.",
+  "b": "A1"
+ },
+ {
+  "q": "Ar mhaith ___ (le + sibh) cupán tae?",
+  "prep": "le",
+  "p": "sibh",
+  "e": "Would you all like a cup of tea?",
+  "w": "Liking goes with le: le + sibh = libh.",
+  "wg": "Is maith le: le + sibh = libh.",
+  "b": "A1"
+ },
+ {
+  "q": "Ar mhaith ___ (le + iad) cupán tae?",
+  "prep": "le",
+  "p": "siad",
+  "e": "Would they like a cup of tea?",
+  "w": "Liking goes with le: le + iad = leo.",
+  "wg": "Is maith le: le + iad = leo.",
+  "b": "A1"
+ },
+ {
+  "q": "Ar mhaith ___ (le + tú) cupán tae?",
+  "prep": "le",
+  "p": "tu",
+  "e": "Would you like a cup of tea?",
+  "w": "Liking goes with le: le + tú = leat.",
+  "wg": "Is maith le: le + tú = leat.",
+  "b": "A1"
+ },
+ {
+  "q": "Ba mhaith ___ (le + tú) dul abhaile.",
+  "prep": "le",
+  "p": "tu",
+  "e": "You would like to go home.",
+  "w": "Liking goes with le: le + tú = leat.",
+  "wg": "Is maith le: le + tú = leat.",
+  "b": "A1"
+ },
+ {
+  "q": "Ba mhaith ___ (le + é) dul abhaile.",
+  "prep": "le",
+  "p": "se",
+  "e": "He would like to go home.",
+  "w": "Liking goes with le: le + é = leis.",
+  "wg": "Is maith le: le + é = leis.",
+  "b": "A1"
+ },
+ {
+  "q": "Ba mhaith ___ (le + í) dul abhaile.",
+  "prep": "le",
+  "p": "si",
+  "e": "She would like to go home.",
+  "w": "Liking goes with le: le + í = léi.",
+  "wg": "Is maith le: le + í = léi.",
+  "b": "A1"
+ },
+ {
+  "q": "Ba mhaith ___ (le + muid) dul abhaile.",
+  "prep": "le",
+  "p": "muid",
+  "e": "We would like to go home.",
+  "w": "Liking goes with le: le + muid = linn.",
+  "wg": "Is maith le: le + muid = linn.",
+  "b": "A1"
+ },
+ {
+  "q": "Is féidir ___ (le + muid) snámh.",
+  "prep": "le",
+  "p": "muid",
+  "e": "We can swim.",
+  "w": "Is féidir le: le + muid = linn.",
+  "wg": "Is féidir le: le + muid = linn.",
+  "b": "A1"
+ },
+ {
+  "q": "Is féidir ___ (le + sibh) snámh.",
+  "prep": "le",
+  "p": "sibh",
+  "e": "You all can swim.",
+  "w": "Is féidir le: le + sibh = libh.",
+  "wg": "Is féidir le: le + sibh = libh.",
+  "b": "A1"
+ },
+ {
+  "q": "Is féidir ___ (le + iad) snámh.",
+  "prep": "le",
+  "p": "siad",
+  "e": "They can swim.",
+  "w": "Is féidir le: le + iad = leo.",
+  "wg": "Is féidir le: le + iad = leo.",
+  "b": "A1"
+ },
+ {
+  "q": "Is féidir ___ (le + mé) snámh.",
+  "prep": "le",
+  "p": "me",
+  "e": "I can swim.",
+  "w": "Is féidir le: le + mé = liom.",
+  "wg": "Is féidir le: le + mé = liom.",
+  "b": "A1"
+ },
+ {
+  "q": "Tháinig sí abhaile ___ (le + mé).",
+  "prep": "le",
+  "p": "me",
+  "e": "She came home with me.",
+  "w": "With someone: le + mé = liom.",
+  "wg": "In éineacht le: le + mé = liom.",
+  "b": "A1"
+ },
+ {
+  "q": "Tháinig sí abhaile ___ (le + tú).",
+  "prep": "le",
+  "p": "tu",
+  "e": "She came home with you.",
+  "w": "With someone: le + tú = leat.",
+  "wg": "In éineacht le: le + tú = leat.",
+  "b": "A1"
+ },
+ {
+  "q": "Tháinig sí abhaile ___ (le + é).",
+  "prep": "le",
+  "p": "se",
+  "e": "She came home with him.",
+  "w": "With someone: le + é = leis.",
+  "wg": "In éineacht le: le + é = leis.",
+  "b": "A1"
+ },
+ {
+  "q": "Tháinig sí abhaile ___ (le + muid).",
+  "prep": "le",
+  "p": "muid",
+  "e": "She came home with us.",
+  "w": "With someone: le + muid = linn.",
+  "wg": "In éineacht le: le + muid = linn.",
+  "b": "A1"
+ },
+ {
+  "q": "Labhair mé ___ (le + muid) inné.",
+  "prep": "le",
+  "p": "muid",
+  "e": "I spoke to us yesterday.",
+  "w": "Talking or waiting goes with le: le + muid = linn.",
+  "wg": "Labhair le, fan le: le + muid = linn.",
+  "b": "A1"
+ },
+ {
+  "q": "Labhair mé ___ (le + sibh) inné.",
+  "prep": "le",
+  "p": "sibh",
+  "e": "I spoke to you all yesterday.",
+  "w": "Talking or waiting goes with le: le + sibh = libh.",
+  "wg": "Labhair le, fan le: le + sibh = libh.",
+  "b": "A1"
+ },
+ {
+  "q": "Labhair mé ___ (le + iad) inné.",
+  "prep": "le",
+  "p": "siad",
+  "e": "I spoke to them yesterday.",
+  "w": "Talking or waiting goes with le: le + iad = leo.",
+  "wg": "Labhair le, fan le: le + iad = leo.",
+  "b": "A1"
+ },
+ {
+  "q": "Labhair mé ___ (le + tú) inné.",
+  "prep": "le",
+  "p": "tu",
+  "e": "I spoke to you yesterday.",
+  "w": "Talking or waiting goes with le: le + tú = leat.",
+  "wg": "Labhair le, fan le: le + tú = leat.",
+  "b": "A1"
+ },
+ {
+  "q": "Is cuma ___ (le + iad).",
+  "prep": "le",
+  "p": "siad",
+  "e": "They don't care.",
+  "w": "Liking goes with le: le + iad = leo.",
+  "wg": "Is maith le: le + iad = leo.",
+  "b": "A2"
+ },
+ {
+  "q": "Is cuma ___ (le + mé).",
+  "prep": "le",
+  "p": "me",
+  "e": "I don't care.",
+  "w": "Liking goes with le: le + mé = liom.",
+  "wg": "Is maith le: le + mé = liom.",
+  "b": "A2"
+ },
+ {
+  "q": "Is cuma ___ (le + tú).",
+  "prep": "le",
+  "p": "tu",
+  "e": "You don't care.",
+  "w": "Liking goes with le: le + tú = leat.",
+  "wg": "Is maith le: le + tú = leat.",
+  "b": "A2"
+ },
+ {
+  "q": "Is cuma ___ (le + é).",
+  "prep": "le",
+  "p": "se",
+  "e": "He doesn't care.",
+  "w": "Liking goes with le: le + é = leis.",
+  "wg": "Is maith le: le + é = leis.",
+  "b": "A2"
+ },
+ {
+  "q": "Is cuimhin ___ (le + é) an lá sin.",
+  "prep": "le",
+  "p": "se",
+  "e": "He remembers that day.",
+  "w": "Liking goes with le: le + é = leis.",
+  "wg": "Is maith le: le + é = leis.",
+  "b": "A2"
+ },
+ {
+  "q": "Is cuimhin ___ (le + í) an lá sin.",
+  "prep": "le",
+  "p": "si",
+  "e": "She remembers that day.",
+  "w": "Liking goes with le: le + í = léi.",
+  "wg": "Is maith le: le + í = léi.",
+  "b": "A2"
+ },
+ {
+  "q": "Is cuimhin ___ (le + muid) an lá sin.",
+  "prep": "le",
+  "p": "muid",
+  "e": "We remember that day.",
+  "w": "Liking goes with le: le + muid = linn.",
+  "wg": "Is maith le: le + muid = linn.",
+  "b": "A2"
+ },
+ {
+  "q": "Is cuimhin ___ (le + sibh) an lá sin.",
+  "prep": "le",
+  "p": "sibh",
+  "e": "You all remember that day.",
+  "w": "Liking goes with le: le + sibh = libh.",
+  "wg": "Is maith le: le + sibh = libh.",
+  "b": "A2"
+ },
+ {
+  "q": "Ní féidir ___ (le + sibh) teacht anocht.",
+  "prep": "le",
+  "p": "sibh",
+  "e": "You all can't come tonight.",
+  "w": "Is féidir le: le + sibh = libh.",
+  "wg": "Is féidir le: le + sibh = libh.",
+  "b": "A1"
+ },
+ {
+  "q": "Ní féidir ___ (le + iad) teacht anocht.",
+  "prep": "le",
+  "p": "siad",
+  "e": "They can't come tonight.",
+  "w": "Is féidir le: le + iad = leo.",
+  "wg": "Is féidir le: le + iad = leo.",
+  "b": "A1"
+ },
+ {
+  "q": "Ní féidir ___ (le + mé) teacht anocht.",
+  "prep": "le",
+  "p": "me",
+  "e": "I can't come tonight.",
+  "w": "Is féidir le: le + mé = liom.",
+  "wg": "Is féidir le: le + mé = liom.",
+  "b": "A1"
+ },
+ {
+  "q": "Ní féidir ___ (le + tú) teacht anocht.",
+  "prep": "le",
+  "p": "tu",
+  "e": "You can't come tonight.",
+  "w": "Is féidir le: le + tú = leat.",
+  "wg": "Is féidir le: le + tú = leat.",
+  "b": "A1"
+ },
+ {
+  "q": "Thaitin an scannán ___ (le + tú).",
+  "prep": "le",
+  "p": "tu",
+  "e": "You liked the film.",
+  "w": "Liking goes with le: le + tú = leat.",
+  "wg": "Is maith le: le + tú = leat.",
+  "b": "A2"
+ },
+ {
+  "q": "Thaitin an scannán ___ (le + é).",
+  "prep": "le",
+  "p": "se",
+  "e": "He liked the film.",
+  "w": "Liking goes with le: le + é = leis.",
+  "wg": "Is maith le: le + é = leis.",
+  "b": "A2"
+ },
+ {
+  "q": "Thaitin an scannán ___ (le + í).",
+  "prep": "le",
+  "p": "si",
+  "e": "She liked the film.",
+  "w": "Liking goes with le: le + í = léi.",
+  "wg": "Is maith le: le + í = léi.",
+  "b": "A2"
+ },
+ {
+  "q": "Thaitin an scannán ___ (le + muid).",
+  "prep": "le",
+  "p": "muid",
+  "e": "We liked the film.",
+  "w": "Liking goes with le: le + muid = linn.",
+  "wg": "Is maith le: le + muid = linn.",
+  "b": "A2"
+ },
+ {
+  "q": "Tá mé ag fanacht ___ (le + tú).",
+  "prep": "le",
+  "p": "tu",
+  "e": "I'm waiting for you.",
+  "w": "Talking or waiting goes with le: le + tú = leat.",
+  "wg": "Labhair le, fan le: le + tú = leat.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá mé ag fanacht ___ (le + é).",
+  "prep": "le",
+  "p": "se",
+  "e": "I'm waiting for him.",
+  "w": "Talking or waiting goes with le: le + é = leis.",
+  "wg": "Labhair le, fan le: le + é = leis.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá mé ag fanacht ___ (le + í).",
+  "prep": "le",
+  "p": "si",
+  "e": "I'm waiting for her.",
+  "w": "Talking or waiting goes with le: le + í = léi.",
+  "wg": "Labhair le, fan le: le + í = léi.",
+  "b": "A1"
+ },
+ {
+  "q": "Tá mé ag fanacht ___ (le + muid).",
+  "prep": "le",
+  "p": "muid",
+  "e": "I'm waiting for us.",
+  "w": "Talking or waiting goes with le: le + muid = linn.",
+  "wg": "Labhair le, fan le: le + muid = linn.",
+  "b": "A1"
+ },
+ {
+  "q": "Is fuath ___ (le + mé) an bháisteach.",
+  "prep": "le",
+  "p": "me",
+  "e": "I hate the rain.",
+  "w": "Liking goes with le: le + mé = liom.",
+  "wg": "Is maith le: le + mé = liom.",
+  "b": "A2"
+ },
+ {
+  "q": "Is fuath ___ (le + tú) an bháisteach.",
+  "prep": "le",
+  "p": "tu",
+  "e": "You hate the rain.",
+  "w": "Liking goes with le: le + tú = leat.",
+  "wg": "Is maith le: le + tú = leat.",
+  "b": "A2"
+ },
+ {
+  "q": "Is fuath ___ (le + é) an bháisteach.",
+  "prep": "le",
+  "p": "se",
+  "e": "He hates the rain.",
+  "w": "Liking goes with le: le + é = leis.",
+  "wg": "Is maith le: le + é = leis.",
+  "b": "A2"
+ },
+ {
+  "q": "Is fuath ___ (le + í) an bháisteach.",
+  "prep": "le",
+  "p": "si",
+  "e": "She hates the rain.",
+  "w": "Liking goes with le: le + í = léi.",
+  "wg": "Is maith le: le + í = léi.",
+  "b": "A2"
+ },
+ {
+  "q": "Ar mhaith ___ (le + í) teacht linn?",
+  "prep": "le",
+  "p": "si",
+  "e": "Would she like to come with us?",
+  "w": "Liking goes with le: le + í = léi.",
+  "wg": "Is maith le: le + í = léi.",
+  "b": "A1"
+ },
+ {
+  "q": "Ar mhaith ___ (le + sibh) teacht linn?",
+  "prep": "le",
+  "p": "sibh",
+  "e": "Would you all like to come with us?",
+  "w": "Liking goes with le: le + sibh = libh.",
+  "wg": "Is maith le: le + sibh = libh.",
+  "b": "A1"
+ },
+ {
+  "q": "Ar mhaith ___ (le + iad) teacht linn?",
+  "prep": "le",
+  "p": "siad",
+  "e": "Would they like to come with us?",
+  "w": "Liking goes with le: le + iad = leo.",
+  "wg": "Is maith le: le + iad = leo.",
+  "b": "A1"
+ },
+ {
+  "q": "Ar mhaith ___ (le + tú) teacht linn?",
+  "prep": "le",
+  "p": "tu",
+  "e": "Would you like to come with us?",
+  "w": "Liking goes with le: le + tú = leat.",
+  "wg": "Is maith le: le + tú = leat.",
+  "b": "A1"
+ },
+ {
+  "q": "Go n-éirí ___ (le + muid)!",
+  "prep": "le",
+  "p": "muid",
+  "e": "Good luck to us!",
+  "w": "With someone: le + muid = linn.",
+  "wg": "In éineacht le: le + muid = linn.",
+  "b": "A2"
+ },
+ {
+  "q": "Go n-éirí ___ (le + sibh)!",
+  "prep": "le",
+  "p": "sibh",
+  "e": "Good luck to you all!",
+  "w": "With someone: le + sibh = libh.",
+  "wg": "In éineacht le: le + sibh = libh.",
+  "b": "A2"
+ },
+ {
+  "q": "Go n-éirí ___ (le + iad)!",
+  "prep": "le",
+  "p": "siad",
+  "e": "Good luck to them!",
+  "w": "With someone: le + iad = leo.",
+  "wg": "In éineacht le: le + iad = leo.",
+  "b": "A2"
+ },
+ {
+  "q": "Go n-éirí ___ (le + tú)!",
+  "prep": "le",
+  "p": "tu",
+  "e": "Good luck to you!",
+  "w": "With someone: le + tú = leat.",
+  "wg": "In éineacht le: le + tú = leat.",
+  "b": "A2"
+ },
+ {
+  "q": "Bhí sé ag caint ___ (le + mé).",
+  "prep": "le",
+  "p": "me",
+  "e": "He was talking to me.",
+  "w": "Talking or waiting goes with le: le + mé = liom.",
+  "wg": "Labhair le, fan le: le + mé = liom.",
+  "b": "A1"
+ },
+ {
+  "q": "Bhí sé ag caint ___ (le + tú).",
+  "prep": "le",
+  "p": "tu",
+  "e": "He was talking to you.",
+  "w": "Talking or waiting goes with le: le + tú = leat.",
+  "wg": "Labhair le, fan le: le + tú = leat.",
+  "b": "A1"
+ },
+ {
+  "q": "Bhí sé ag caint ___ (le + í).",
+  "prep": "le",
+  "p": "si",
+  "e": "He was talking to her.",
+  "w": "Talking or waiting goes with le: le + í = léi.",
+  "wg": "Labhair le, fan le: le + í = léi.",
+  "b": "A1"
+ },
+ {
+  "q": "Bhí sé ag caint ___ (le + muid).",
+  "prep": "le",
+  "p": "muid",
+  "e": "He was talking to us.",
+  "w": "Talking or waiting goes with le: le + muid = linn.",
+  "wg": "Labhair le, fan le: le + muid = linn.",
+  "b": "A1"
+ }
+]

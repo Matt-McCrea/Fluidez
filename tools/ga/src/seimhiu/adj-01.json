@@ -1,0 +1,1322 @@
+[
+ {
+  "q": "Is bean ___ (cairdiúil) í.",
+  "base": "cairdiúil",
+  "r": "len",
+  "e": "She is a friendly woman.",
+  "w": "Bean is feminine, so the adjective after it takes séimhiú: chairdiúil.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is bean ___ (cliste) í Áine.",
+  "base": "cliste",
+  "r": "len",
+  "e": "Áine is a clever woman.",
+  "w": "Bean is feminine, so the adjective after it takes séimhiú: chliste.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Chonaic mé bean ___ (bocht) ar an tsráid.",
+  "base": "bocht",
+  "r": "len",
+  "e": "I saw a poor woman on the street.",
+  "w": "Bean is feminine, so the adjective after it takes séimhiú: bhocht.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is bean ___ (gnóthach) í mo mháthair.",
+  "base": "gnóthach",
+  "r": "len",
+  "e": "My mother is a busy woman.",
+  "w": "Bean is feminine, so the adjective after it takes séimhiú: ghnóthach.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Bhí bean ___ (tuirseach) ar an mbus.",
+  "base": "tuirseach",
+  "r": "len",
+  "e": "There was a tired woman on the bus.",
+  "w": "Bean is feminine, so the adjective after it takes séimhiú: thuirseach.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá an bhean ___ (beag) ag an doras.",
+  "base": "beag",
+  "r": "len",
+  "e": "The small woman is at the door.",
+  "w": "Bean is feminine, so the adjective after it takes séimhiú: bheag.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Ba oíche ___ (fada) í.",
+  "base": "fada",
+  "r": "len",
+  "e": "It was a long night.",
+  "w": "Oíche is feminine, so the adjective after it takes séimhiú: fhada.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Bhí oíche ___ (fuar) ann.",
+  "base": "fuar",
+  "r": "len",
+  "e": "It was a cold night.",
+  "w": "Oíche is feminine, so the adjective after it takes séimhiú: fhuar.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Oíche ___ (dorcha) a bhí ann.",
+  "base": "dorcha",
+  "r": "len",
+  "e": "It was a dark night.",
+  "w": "Oíche is feminine, so the adjective after it takes séimhiú: dhorcha.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Bhí oíche ___ (breá) againn.",
+  "base": "breá",
+  "r": "len",
+  "e": "We had a fine night.",
+  "w": "Oíche is feminine, so the adjective after it takes séimhiú: bhreá.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Oíche ___ (ciúin) a bhí ann.",
+  "base": "ciúin",
+  "r": "len",
+  "e": "It was a quiet night.",
+  "w": "Oíche is feminine, so the adjective after it takes séimhiú: chiúin.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Oíche ___ (sona) duit!",
+  "base": "sona",
+  "r": "len",
+  "e": "A happy night to you!",
+  "w": "Oíche is feminine, so the adjective after it takes séimhiú: shona.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Bhí an oíche ___ (fada) sin crua.",
+  "base": "fada",
+  "r": "len",
+  "e": "That long night was hard.",
+  "w": "Oíche is feminine, so the adjective after it takes séimhiú: fhada.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Tá fuinneog ___ (briste) sa chistin.",
+  "base": "briste",
+  "r": "len",
+  "e": "There is a broken window in the kitchen.",
+  "w": "Fuinneog is feminine, so the adjective after it takes séimhiú: bhriste.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Dún an fhuinneog ___ (beag).",
+  "base": "beag",
+  "r": "len",
+  "e": "Close the small window.",
+  "w": "Fuinneog is feminine, so the adjective after it takes séimhiú: bheag.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Cheannaigh mé bróg ___ (dubh).",
+  "base": "dubh",
+  "r": "len",
+  "e": "I bought a black shoe.",
+  "w": "Bróg is feminine, so the adjective after it takes séimhiú: dhubh.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá cathaoir ___ (compordach) sa seomra.",
+  "base": "compordach",
+  "r": "len",
+  "e": "There is a comfortable chair in the room.",
+  "w": "Cathaoir is feminine, so the adjective after it takes séimhiú: chompordach.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Suigh ar an gcathaoir ___ (beag).",
+  "base": "beag",
+  "r": "len",
+  "e": "Sit on the small chair.",
+  "w": "Cathaoir is feminine, so the adjective after it takes séimhiú: bheag.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá cathaoir ___ (briste) sa ghairdín.",
+  "base": "briste",
+  "r": "len",
+  "e": "There is a broken chair in the garden.",
+  "w": "Cathaoir is feminine, so the adjective after it takes séimhiú: bhriste.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "D'ith muid i mbialann ___ (ciúin).",
+  "base": "ciúin",
+  "r": "len",
+  "e": "We ate in a quiet restaurant.",
+  "w": "Bialann is feminine, so the adjective after it takes séimhiú: chiúin.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is bialann ___ (galánta) í.",
+  "base": "galánta",
+  "r": "len",
+  "e": "It is a fancy restaurant.",
+  "w": "Bialann is feminine, so the adjective after it takes séimhiú: ghalánta.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá páirc ___ (glas) taobh thiar den teach.",
+  "base": "glas",
+  "r": "len",
+  "e": "There is a green field behind the house.",
+  "w": "Páirc is feminine, so the adjective after it takes séimhiú: ghlas.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Bhí farraige ___ (garbh) ann inné.",
+  "base": "garbh",
+  "r": "len",
+  "e": "There was a rough sea yesterday.",
+  "w": "Farraige is feminine, so the adjective after it takes séimhiú: gharbh.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is breá liom an fharraige ___ (gorm).",
+  "base": "gorm",
+  "r": "len",
+  "e": "I love the blue sea.",
+  "w": "Farraige is feminine, so the adjective after it takes séimhiú: ghorm.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Bhí aimsir ___ (breá) againn.",
+  "base": "breá",
+  "r": "len",
+  "e": "We had fine weather.",
+  "w": "Aimsir is feminine, so the adjective after it takes séimhiú: bhreá.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Bhí aimsir ___ (fliuch) ann inné.",
+  "base": "fliuch",
+  "r": "len",
+  "e": "There was wet weather yesterday.",
+  "w": "Aimsir is feminine, so the adjective after it takes séimhiú: fhliuch.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá aimsir ___ (fuar) ag teacht.",
+  "base": "fuar",
+  "r": "len",
+  "e": "Cold weather is coming.",
+  "w": "Aimsir is feminine, so the adjective after it takes séimhiú: fhuar.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Ba mhaith liom deoch ___ (te).",
+  "base": "te",
+  "r": "len",
+  "e": "I would like a hot drink.",
+  "w": "Deoch is feminine, so the adjective after it takes séimhiú: the.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Ól deoch ___ (fuar).",
+  "base": "fuar",
+  "r": "len",
+  "e": "Drink a cold drink.",
+  "w": "Deoch is feminine, so the adjective after it takes séimhiú: fhuar.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is cáis ___ (blasta) í seo.",
+  "base": "blasta",
+  "r": "len",
+  "e": "This is a tasty cheese.",
+  "w": "Cáis is feminine, so the adjective after it takes séimhiú: bhlasta.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá gaoth ___ (fuar) ag séideadh.",
+  "base": "fuar",
+  "r": "len",
+  "e": "A cold wind is blowing.",
+  "w": "Gaoth is feminine, so the adjective after it takes séimhiú: fhuar.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá bó ___ (dubh) sa pháirc.",
+  "base": "dubh",
+  "r": "len",
+  "e": "There is a black cow in the field.",
+  "w": "Bó is feminine, so the adjective after it takes séimhiú: dhubh.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá bó ___ (bán) ag an ngeata.",
+  "base": "bán",
+  "r": "len",
+  "e": "There is a white cow at the gate.",
+  "w": "Bó is feminine, so the adjective after it takes séimhiú: bhán.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá cearc ___ (donn) sa ghairdín.",
+  "base": "donn",
+  "r": "len",
+  "e": "There is a brown hen in the garden.",
+  "w": "Cearc is feminine, so the adjective after it takes séimhiú: dhonn.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Chonaic mé caora ___ (dubh).",
+  "base": "dubh",
+  "r": "len",
+  "e": "I saw a black sheep.",
+  "w": "Caora is feminine, so the adjective after it takes séimhiú: dhubh.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá gloine ___ (folamh) ar an mbord.",
+  "base": "folamh",
+  "r": "len",
+  "e": "There is an empty glass on the table.",
+  "w": "Gloine is feminine, so the adjective after it takes séimhiú: fholamh.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Chaith sé léine ___ (gorm).",
+  "base": "gorm",
+  "r": "len",
+  "e": "He wore a blue shirt.",
+  "w": "Léine is feminine, so the adjective after it takes séimhiú: ghorm.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá léine ___ (bán) uaim.",
+  "base": "bán",
+  "r": "len",
+  "e": "I want a white shirt.",
+  "w": "Léine is feminine, so the adjective after it takes séimhiú: bhán.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Cuir ort léine ___ (glan).",
+  "base": "glan",
+  "r": "len",
+  "e": "Put on a clean shirt.",
+  "w": "Léine is feminine, so the adjective after it takes séimhiú: ghlan.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá léine ___ (salach) ar an urlár.",
+  "base": "salach",
+  "r": "len",
+  "e": "There is a dirty shirt on the floor.",
+  "w": "Léine is feminine, so the adjective after it takes séimhiú: shalach.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Cheannaigh sí léine ___ (dearg).",
+  "base": "dearg",
+  "r": "len",
+  "e": "She bought a red shirt.",
+  "w": "Léine is feminine, so the adjective after it takes séimhiú: dhearg.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is teanga ___ (breá) í an Ghaeilge.",
+  "base": "breá",
+  "r": "len",
+  "e": "Irish is a fine language.",
+  "w": "Teanga is feminine, so the adjective after it takes séimhiú: bhreá.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is teanga ___ (deacair) í.",
+  "base": "deacair",
+  "r": "len",
+  "e": "It is a hard language.",
+  "w": "Teanga is feminine, so the adjective after it takes séimhiú: dheacair.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is áit ___ (breá) í Gaillimh.",
+  "base": "breá",
+  "r": "len",
+  "e": "Galway is a fine place.",
+  "w": "Áit is feminine, so the adjective after it takes séimhiú: bhreá.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is áit ___ (ciúin) í seo.",
+  "base": "ciúin",
+  "r": "len",
+  "e": "This is a quiet place.",
+  "w": "Áit is feminine, so the adjective after it takes séimhiú: chiúin.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is áit ___ (gnóthach) í an chathair.",
+  "base": "gnóthach",
+  "r": "len",
+  "e": "The city is a busy place.",
+  "w": "Áit is feminine, so the adjective after it takes séimhiú: ghnóthach.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is obair ___ (crua) í.",
+  "base": "crua",
+  "r": "len",
+  "e": "It is hard work.",
+  "w": "Obair is feminine, so the adjective after it takes séimhiú: chrua.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is obair ___ (tábhachtach) í.",
+  "base": "tábhachtach",
+  "r": "len",
+  "e": "It is important work.",
+  "w": "Obair is feminine, so the adjective after it takes séimhiú: thábhachtach.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá leaba ___ (compordach) agam.",
+  "base": "compordach",
+  "r": "len",
+  "e": "I have a comfortable bed.",
+  "w": "Leaba is feminine, so the adjective after it takes séimhiú: chompordach.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is leaba ___ (bog) í.",
+  "base": "bog",
+  "r": "len",
+  "e": "It is a soft bed.",
+  "w": "Leaba is feminine, so the adjective after it takes séimhiú: bhog.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá deirfiúr ___ (beag) agam.",
+  "base": "beag",
+  "r": "len",
+  "e": "I have a little sister.",
+  "w": "Deirfiúr is feminine, so the adjective after it takes séimhiú: bheag.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá iníon ___ (beag) acu.",
+  "base": "beag",
+  "r": "len",
+  "e": "They have a little daughter.",
+  "w": "Iníon is feminine, so the adjective after it takes séimhiú: bheag.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is comharsa ___ (cairdiúil) í.",
+  "base": "cairdiúil",
+  "r": "len",
+  "e": "She is a friendly neighbour.",
+  "w": "Comharsa is feminine, so the adjective after it takes séimhiú: chairdiúil.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is comharsa ___ (deas) í Bríd.",
+  "base": "deas",
+  "r": "len",
+  "e": "Bríd is a nice neighbour.",
+  "w": "Comharsa is feminine, so the adjective after it takes séimhiú: dheas.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Bhí cóisir ___ (breá) againn.",
+  "base": "breá",
+  "r": "len",
+  "e": "We had a fine party.",
+  "w": "Cóisir is feminine, so the adjective after it takes séimhiú: bhreá.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Bhí seachtain ___ (fada) agam.",
+  "base": "fada",
+  "r": "len",
+  "e": "I had a long week.",
+  "w": "Seachtain is feminine, so the adjective after it takes séimhiú: fhada.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Bhí seachtain ___ (gnóthach) agam.",
+  "base": "gnóthach",
+  "r": "len",
+  "e": "I had a busy week.",
+  "w": "Seachtain is feminine, so the adjective after it takes séimhiú: ghnóthach.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is ceist ___ (crua) í sin.",
+  "base": "crua",
+  "r": "len",
+  "e": "That is a hard question.",
+  "w": "Ceist is feminine, so the adjective after it takes séimhiú: chrua.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is ceist ___ (furasta) í.",
+  "base": "furasta",
+  "r": "len",
+  "e": "It is an easy question.",
+  "w": "Ceist is feminine, so the adjective after it takes séimhiú: fhurasta.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Scríobh sí litir ___ (fada).",
+  "base": "fada",
+  "r": "len",
+  "e": "She wrote a long letter.",
+  "w": "Litir is feminine, so the adjective after it takes séimhiú: fhada.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is cathair ___ (beag) í Cill Chainnigh.",
+  "base": "beag",
+  "r": "len",
+  "e": "Kilkenny is a small city.",
+  "w": "Cathair is feminine, so the adjective after it takes séimhiú: bheag.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is cathair ___ (gnóthach) í.",
+  "base": "gnóthach",
+  "r": "len",
+  "e": "It is a busy city.",
+  "w": "Cathair is feminine, so the adjective after it takes séimhiú: ghnóthach.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá cistin ___ (beag) againn.",
+  "base": "beag",
+  "r": "len",
+  "e": "We have a small kitchen.",
+  "w": "Cistin is feminine, so the adjective after it takes séimhiú: bheag.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is tír ___ (beag) í Éire.",
+  "base": "beag",
+  "r": "len",
+  "e": "Ireland is a small country.",
+  "w": "Tír is feminine, so the adjective after it takes séimhiú: bheag.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is tír ___ (fuar) í an Íoslainn.",
+  "base": "fuar",
+  "r": "len",
+  "e": "Iceland is a cold country.",
+  "w": "Tír is feminine, so the adjective after it takes séimhiú: fhuar.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is tír ___ (te) í an Spáinn.",
+  "base": "te",
+  "r": "len",
+  "e": "Spain is a hot country.",
+  "w": "Tír is feminine, so the adjective after it takes séimhiú: the.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is abhainn ___ (fada) í an tSionainn.",
+  "base": "fada",
+  "r": "len",
+  "e": "The Shannon is a long river.",
+  "w": "Abhainn is feminine, so the adjective after it takes séimhiú: fhada.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Tá feirm ___ (beag) acu.",
+  "base": "beag",
+  "r": "len",
+  "e": "They have a small farm.",
+  "w": "Feirm is feminine, so the adjective after it takes séimhiú: bheag.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is cloch ___ (trom) í.",
+  "base": "trom",
+  "r": "len",
+  "e": "It is a heavy stone.",
+  "w": "Cloch is feminine, so the adjective after it takes séimhiú: throm.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Bhí lámh ___ (fuar) aici.",
+  "base": "fuar",
+  "r": "len",
+  "e": "She had a cold hand.",
+  "w": "Lámh is feminine, so the adjective after it takes séimhiú: fhuar.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá cos ___ (briste) aige.",
+  "base": "briste",
+  "r": "len",
+  "e": "He has a broken leg.",
+  "w": "Cos is feminine, so the adjective after it takes séimhiú: bhriste.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is sráid ___ (gnóthach) í.",
+  "base": "gnóthach",
+  "r": "len",
+  "e": "It is a busy street.",
+  "w": "Sráid is feminine, so the adjective after it takes séimhiú: ghnóthach.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is sráid ___ (fada) í.",
+  "base": "fada",
+  "r": "len",
+  "e": "It is a long street.",
+  "w": "Sráid is feminine, so the adjective after it takes séimhiú: fhada.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá an tsráid ___ (ciúin) seo go deas.",
+  "base": "ciúin",
+  "r": "len",
+  "e": "This quiet street is nice.",
+  "w": "Sráid is feminine, so the adjective after it takes séimhiú: chiúin.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Is scoil ___ (beag) í.",
+  "base": "beag",
+  "r": "len",
+  "e": "It is a small school.",
+  "w": "Scoil is feminine, so the adjective after it takes séimhiú: bheag.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá an chathair ___ (beag) seo go hálainn.",
+  "base": "beag",
+  "r": "len",
+  "e": "This small city is lovely.",
+  "w": "Cathair is feminine, so the adjective after it takes séimhiú: bheag.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Is bean ___ (ard) í.",
+  "base": "ard",
+  "r": "none",
+  "e": "She is a tall woman.",
+  "w": "Bean is feminine, but ard starts with a vowel, so séimhiú cannot touch it.",
+  "wg": "Guta: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Oíche ___ (álainn) a bhí ann.",
+  "base": "álainn",
+  "r": "none",
+  "e": "It was a lovely night.",
+  "w": "Oíche is feminine, but álainn starts with a vowel, so séimhiú cannot touch it.",
+  "wg": "Guta: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Is áit ___ (álainn) í Ciarraí.",
+  "base": "álainn",
+  "r": "none",
+  "e": "Kerry is a beautiful place.",
+  "w": "Áit is feminine, but álainn starts with a vowel, so séimhiú cannot touch it.",
+  "wg": "Guta: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Bhí aimsir ___ (uafásach) ann.",
+  "base": "uafásach",
+  "r": "none",
+  "e": "There was terrible weather.",
+  "w": "Aimsir is feminine, but uafásach starts with a vowel, so séimhiú cannot touch it.",
+  "wg": "Guta: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Is bean ___ (óg) í.",
+  "base": "óg",
+  "r": "none",
+  "e": "She is a young woman.",
+  "w": "Bean is feminine, but óg starts with a vowel, so séimhiú cannot touch it.",
+  "wg": "Guta: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Is cathair ___ (iontach) í Páras.",
+  "base": "iontach",
+  "r": "none",
+  "e": "Paris is a wonderful city.",
+  "w": "Cathair is feminine, but iontach starts with a vowel, so séimhiú cannot touch it.",
+  "wg": "Guta: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Is obair ___ (éasca) í.",
+  "base": "éasca",
+  "r": "none",
+  "e": "It is easy work.",
+  "w": "Obair is feminine, but éasca starts with a vowel, so séimhiú cannot touch it.",
+  "wg": "Guta: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Tá an oíche ___ (fuar).",
+  "base": "fuar",
+  "r": "none",
+  "e": "The night is cold.",
+  "w": "After tá the adjective stands apart from the noun, so it never takes séimhiú.",
+  "wg": "Aidiacht i ndiaidh tá: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Tá an bhean ___ (tuirseach).",
+  "base": "tuirseach",
+  "r": "none",
+  "e": "The woman is tired.",
+  "w": "After tá the adjective stands apart from the noun, so it never takes séimhiú.",
+  "wg": "Aidiacht i ndiaidh tá: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Tá an fhuinneog ___ (briste).",
+  "base": "briste",
+  "r": "none",
+  "e": "The window is broken.",
+  "w": "After tá the adjective stands apart from the noun, so it never takes séimhiú.",
+  "wg": "Aidiacht i ndiaidh tá: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Tá an chathaoir ___ (compordach).",
+  "base": "compordach",
+  "r": "none",
+  "e": "The chair is comfortable.",
+  "w": "After tá the adjective stands apart from the noun, so it never takes séimhiú.",
+  "wg": "Aidiacht i ndiaidh tá: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Bhí an aimsir ___ (breá) inné.",
+  "base": "breá",
+  "r": "none",
+  "e": "The weather was fine yesterday.",
+  "w": "After tá the adjective stands apart from the noun, so it never takes séimhiú.",
+  "wg": "Aidiacht i ndiaidh tá: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Tá an fharraige ___ (garbh) inniu.",
+  "base": "garbh",
+  "r": "none",
+  "e": "The sea is rough today.",
+  "w": "After tá the adjective stands apart from the noun, so it never takes séimhiú.",
+  "wg": "Aidiacht i ndiaidh tá: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Tá an bhialann seo ___ (daor).",
+  "base": "daor",
+  "r": "none",
+  "e": "This restaurant is expensive.",
+  "w": "After tá the adjective stands apart from the noun, so it never takes séimhiú.",
+  "wg": "Aidiacht i ndiaidh tá: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Tá an cheist ___ (deacair).",
+  "base": "deacair",
+  "r": "none",
+  "e": "The question is hard.",
+  "w": "After tá the adjective stands apart from the noun, so it never takes séimhiú.",
+  "wg": "Aidiacht i ndiaidh tá: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Tá an chistin ___ (glan) anois.",
+  "base": "glan",
+  "r": "none",
+  "e": "The kitchen is clean now.",
+  "w": "After tá the adjective stands apart from the noun, so it never takes séimhiú.",
+  "wg": "Aidiacht i ndiaidh tá: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Tá an pháirc ___ (fliuch).",
+  "base": "fliuch",
+  "r": "none",
+  "e": "The field is wet.",
+  "w": "After tá the adjective stands apart from the noun, so it never takes séimhiú.",
+  "wg": "Aidiacht i ndiaidh tá: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Bhí an tseachtain ___ (fada).",
+  "base": "fada",
+  "r": "none",
+  "e": "The week was long.",
+  "w": "After tá the adjective stands apart from the noun, so it never takes séimhiú.",
+  "wg": "Aidiacht i ndiaidh tá: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Tá an léine ___ (salach).",
+  "base": "salach",
+  "r": "none",
+  "e": "The shirt is dirty.",
+  "w": "After tá the adjective stands apart from the noun, so it never takes séimhiú.",
+  "wg": "Aidiacht i ndiaidh tá: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Tá an deoch ___ (te).",
+  "base": "te",
+  "r": "none",
+  "e": "The drink is hot.",
+  "w": "After tá the adjective stands apart from the noun, so it never takes séimhiú.",
+  "wg": "Aidiacht i ndiaidh tá: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Is fear ___ (beag) é.",
+  "base": "beag",
+  "r": "none",
+  "e": "He is a small man.",
+  "w": "Fear is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Chonaic mé fear ___ (bocht) ar an tsráid.",
+  "base": "bocht",
+  "r": "none",
+  "e": "I saw a poor man on the street.",
+  "w": "Fear is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Lá ___ (fuar) a bhí ann.",
+  "base": "fuar",
+  "r": "none",
+  "e": "It was a cold day.",
+  "w": "Lá is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is lá ___ (breá) é.",
+  "base": "breá",
+  "r": "none",
+  "e": "It is a fine day.",
+  "w": "Lá is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Bhí lá ___ (fada) agam.",
+  "base": "fada",
+  "r": "none",
+  "e": "I had a long day.",
+  "w": "Lá is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá teach ___ (beag) acu.",
+  "base": "beag",
+  "r": "none",
+  "e": "They have a small house.",
+  "w": "Teach is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is teach ___ (deas) é.",
+  "base": "deas",
+  "r": "none",
+  "e": "It is a nice house.",
+  "w": "Teach is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Ba mhaith liom cupán ___ (te).",
+  "base": "te",
+  "r": "none",
+  "e": "I would like a hot cup.",
+  "w": "Cupán is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Cheannaigh sé carr ___ (dearg).",
+  "base": "dearg",
+  "r": "none",
+  "e": "He bought a red car.",
+  "w": "Carr is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá gadhar ___ (dubh) acu.",
+  "base": "dubh",
+  "r": "none",
+  "e": "They have a black dog.",
+  "w": "Gadhar is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá cat ___ (bán) aici.",
+  "base": "bán",
+  "r": "none",
+  "e": "She has a white cat.",
+  "w": "Cat is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá capall ___ (donn) sa pháirc.",
+  "base": "donn",
+  "r": "none",
+  "e": "There is a brown horse in the field.",
+  "w": "Capall is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá bord ___ (briste) sa ghairdín.",
+  "base": "briste",
+  "r": "none",
+  "e": "There is a broken table in the garden.",
+  "w": "Bord is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Chaith sé geansaí ___ (glas).",
+  "base": "glas",
+  "r": "none",
+  "e": "He wore a green jumper.",
+  "w": "Geansaí is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Cheannaigh sí cóta ___ (fada).",
+  "base": "fada",
+  "r": "none",
+  "e": "She bought a long coat.",
+  "w": "Cóta is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is buachaill ___ (cliste) é.",
+  "base": "cliste",
+  "r": "none",
+  "e": "He is a clever boy.",
+  "w": "Buachaill is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is cailín ___ (beag) í.",
+  "base": "beag",
+  "r": "none",
+  "e": "She is a little girl.",
+  "w": "Cailín is masculine, though it means girl, so the adjective does not change: cailín beag.",
+  "wg": "Firinscneach é cailín: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Is cailín ___ (cairdiúil) í Niamh.",
+  "base": "cairdiúil",
+  "r": "none",
+  "e": "Niamh is a friendly girl.",
+  "w": "Cailín is masculine, though it means girl, so the adjective does not change.",
+  "wg": "Firinscneach é cailín: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Is cailín ___ (ciúin) í.",
+  "base": "ciúin",
+  "r": "none",
+  "e": "She is a quiet girl.",
+  "w": "Cailín is masculine, though it means girl, so the adjective does not change.",
+  "wg": "Firinscneach é cailín: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Tá páiste ___ (tuirseach) anseo.",
+  "base": "tuirseach",
+  "r": "none",
+  "e": "There is a tired child here.",
+  "w": "Páiste is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is dochtúir ___ (cáiliúil) é.",
+  "base": "cáiliúil",
+  "r": "none",
+  "e": "He is a famous doctor.",
+  "w": "Dochtúir is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá seomra ___ (compordach) agam.",
+  "base": "compordach",
+  "r": "none",
+  "e": "I have a comfortable room.",
+  "w": "Seomra is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá gairdín ___ (beag) againn.",
+  "base": "beag",
+  "r": "none",
+  "e": "We have a small garden.",
+  "w": "Gairdín is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is siopa ___ (daor) é.",
+  "base": "daor",
+  "r": "none",
+  "e": "It is an expensive shop.",
+  "w": "Siopa is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is arán ___ (blasta) é seo.",
+  "base": "blasta",
+  "r": "none",
+  "e": "This is tasty bread.",
+  "w": "Arán is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Ól caife ___ (te).",
+  "base": "te",
+  "r": "none",
+  "e": "Drink a hot coffee.",
+  "w": "Caife is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Ba scrúdú ___ (deacair) é.",
+  "base": "deacair",
+  "r": "none",
+  "e": "It was a hard exam.",
+  "w": "Scrúdú is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is ceacht ___ (furasta) é.",
+  "base": "furasta",
+  "r": "none",
+  "e": "It is an easy lesson.",
+  "w": "Ceacht is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Ba chluiche ___ (fada) é.",
+  "base": "fada",
+  "r": "none",
+  "e": "It was a long game.",
+  "w": "Cluiche is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is baile ___ (beag) é.",
+  "base": "beag",
+  "r": "none",
+  "e": "It is a small town.",
+  "w": "Baile is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá rothar ___ (gorm) agam.",
+  "base": "gorm",
+  "r": "none",
+  "e": "I have a blue bike.",
+  "w": "Rothar is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Chaith sí gúna ___ (glas).",
+  "base": "glas",
+  "r": "none",
+  "e": "She wore a green dress.",
+  "w": "Gúna is masculine, so the adjective after it does not change: gúna glas.",
+  "wg": "Firinscneach é gúna: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Is éan ___ (beag) é.",
+  "base": "beag",
+  "r": "none",
+  "e": "It is a small bird.",
+  "w": "Éan is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is oileán ___ (beag) é.",
+  "base": "beag",
+  "r": "none",
+  "e": "It is a small island.",
+  "w": "Oileán is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is fear ___ (ciúin) é m'athair.",
+  "base": "ciúin",
+  "r": "none",
+  "e": "My father is a quiet man.",
+  "w": "Fear is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá an fear ___ (beag) ag an doras.",
+  "base": "beag",
+  "r": "none",
+  "e": "The small man is at the door.",
+  "w": "Fear is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ }
+]

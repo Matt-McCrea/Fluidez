@@ -1,0 +1,1292 @@
+[
+ {
+  "q": "Tá mo ___ (deartháir) ina chónaí i gCorcaigh.",
+  "base": "deartháir",
+  "r": "len",
+  "e": "My brother lives in Cork.",
+  "w": "Mo (my) takes séimhiú: deartháir becomes dheartháir.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Seo é mo ___ (cara) Seán.",
+  "base": "cara",
+  "r": "len",
+  "e": "This is my friend Seán.",
+  "w": "Mo (my) takes séimhiú: cara becomes chara.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (teach) beag ach compordach.",
+  "base": "teach",
+  "r": "len",
+  "e": "My house is small but comfortable.",
+  "w": "Mo (my) takes séimhiú: teach becomes theach.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chaill mé mo ___ (peann) inné.",
+  "base": "peann",
+  "r": "len",
+  "e": "I lost my pen yesterday.",
+  "w": "Mo (my) takes séimhiú: peann becomes pheann.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Cá bhfuil mo ___ (cóta)?",
+  "base": "cóta",
+  "r": "len",
+  "e": "Where is my coat?",
+  "w": "Mo (my) takes séimhiú: cóta becomes chóta.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (deirfiúr) ag obair i nGaillimh.",
+  "base": "deirfiúr",
+  "r": "len",
+  "e": "My sister works in Galway.",
+  "w": "Mo (my) takes séimhiú: deirfiúr becomes dheirfiúr.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "D'ith mé mo ___ (bricfeasta) go tapa.",
+  "base": "bricfeasta",
+  "r": "len",
+  "e": "I ate my breakfast quickly.",
+  "w": "Mo (my) takes séimhiú: bricfeasta becomes bhricfeasta.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (gúna) nua dearg.",
+  "base": "gúna",
+  "r": "len",
+  "e": "My new dress is red.",
+  "w": "Mo (my) takes séimhiú: gúna becomes ghúna.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is breá liom mo ___ (seanmháthair).",
+  "base": "seanmháthair",
+  "r": "len",
+  "e": "I love my grandmother.",
+  "w": "Mo (my) takes séimhiú: seanmháthair becomes sheanmháthair.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (seanathair) ochtó bliain d'aois.",
+  "base": "seanathair",
+  "r": "len",
+  "e": "My grandfather is eighty years old.",
+  "w": "Mo (my) takes séimhiú: seanathair becomes sheanathair.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (pláta) folamh anois.",
+  "base": "pláta",
+  "r": "len",
+  "e": "My plate is empty now.",
+  "w": "Mo (my) takes séimhiú: pláta becomes phláta.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (geansaí) fliuch.",
+  "base": "geansaí",
+  "r": "len",
+  "e": "My jumper is wet.",
+  "w": "Mo (my) takes séimhiú: geansaí becomes gheansaí.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá pian i mo ___ (cos).",
+  "base": "cos",
+  "r": "len",
+  "e": "I have a pain in my leg.",
+  "w": "Mo (my) takes séimhiú: cos becomes chos.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (páiste) tinn inniu.",
+  "base": "páiste",
+  "r": "len",
+  "e": "My child is sick today.",
+  "w": "Mo (my) takes séimhiú: páiste becomes pháiste.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (bróga) salach.",
+  "base": "bróga",
+  "r": "len",
+  "e": "My shoes are dirty.",
+  "w": "Mo (my) takes séimhiú: bróga becomes bhróga.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is maith liom mo ___ (post) nua.",
+  "base": "post",
+  "r": "len",
+  "e": "I like my new job.",
+  "w": "Mo (my) takes séimhiú: post becomes phost.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (carr) sa gharáiste.",
+  "base": "carr",
+  "r": "len",
+  "e": "My car is in the garage.",
+  "w": "Mo (my) takes séimhiú: carr becomes charr.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (cupán) ar an mbord.",
+  "base": "cupán",
+  "r": "len",
+  "e": "My cup is on the table.",
+  "w": "Mo (my) takes séimhiú: cupán becomes chupán.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Seo é mo ___ (seomra).",
+  "base": "seomra",
+  "r": "len",
+  "e": "This is my room.",
+  "w": "Mo (my) takes séimhiú: seomra becomes sheomra.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (gairdín) lán de bhláthanna.",
+  "base": "gairdín",
+  "r": "len",
+  "e": "My garden is full of flowers.",
+  "w": "Mo (my) takes séimhiú: gairdín becomes ghairdín.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Thug mo ___ (tuismitheoirí) airgead dom.",
+  "base": "tuismitheoirí",
+  "r": "len",
+  "e": "My parents gave me money.",
+  "w": "Mo (my) takes séimhiú: tuismitheoirí becomes thuismitheoirí.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (ceann) tinn.",
+  "base": "ceann",
+  "r": "len",
+  "e": "My head is sore.",
+  "w": "Mo (my) takes séimhiú: ceann becomes cheann.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (dinnéar) fuar.",
+  "base": "dinnéar",
+  "r": "len",
+  "e": "My dinner is cold.",
+  "w": "Mo (my) takes séimhiú: dinnéar becomes dhinnéar.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (bosca) trom.",
+  "base": "bosca",
+  "r": "len",
+  "e": "My box is heavy.",
+  "w": "Mo (my) takes séimhiú: bosca becomes bhosca.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chonaic mé mo ___ (comharsa) ar maidin.",
+  "base": "comharsa",
+  "r": "len",
+  "e": "I saw my neighbour this morning.",
+  "w": "Mo (my) takes séimhiú: comharsa becomes chomharsa.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (cat) faoin mbord.",
+  "base": "cat",
+  "r": "len",
+  "e": "My cat is under the table.",
+  "w": "Mo (my) takes séimhiú: cat becomes chat.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (gruaig) fada.",
+  "base": "gruaig",
+  "r": "len",
+  "e": "My hair is long.",
+  "w": "Mo (my) takes séimhiú: gruaig becomes ghruaig.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (súile) gorma.",
+  "base": "súile",
+  "r": "len",
+  "e": "My eyes are blue.",
+  "w": "Mo (my) takes séimhiú: súile becomes shúile.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Scuab mé mo ___ (gruaig) ar maidin.",
+  "base": "gruaig",
+  "r": "len",
+  "e": "I brushed my hair this morning.",
+  "w": "Mo (my) takes séimhiú: gruaig becomes ghruaig.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (deartháir) níos sine ná mé.",
+  "base": "deartháir",
+  "r": "len",
+  "e": "My brother is older than me.",
+  "w": "Mo (my) takes séimhiú: deartháir becomes dheartháir.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (cóipleabhar) ar an urlár.",
+  "base": "cóipleabhar",
+  "r": "len",
+  "e": "My copybook is on the floor.",
+  "w": "Mo (my) takes séimhiú: cóipleabhar becomes chóipleabhar.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is í Siobhán mo ___ (cara) is fearr.",
+  "base": "cara",
+  "r": "len",
+  "e": "Siobhán is my best friend.",
+  "w": "Mo (my) takes séimhiú: cara becomes chara.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (teaghlach) mór.",
+  "base": "teaghlach",
+  "r": "len",
+  "e": "My family is big.",
+  "w": "Mo (my) takes séimhiú: teaghlach becomes theaghlach.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (clann) sa bhaile.",
+  "base": "clann",
+  "r": "len",
+  "e": "My family is at home.",
+  "w": "Mo (my) takes séimhiú: clann becomes chlann.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (tae) fuar anois.",
+  "base": "tae",
+  "r": "len",
+  "e": "My tea is cold now.",
+  "w": "Mo (my) takes séimhiú: tae becomes thae.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Thit mo ___ (cupán) ar an urlár.",
+  "base": "cupán",
+  "r": "len",
+  "e": "My cup fell on the floor.",
+  "w": "Mo (my) takes séimhiú: cupán becomes chupán.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (bean) chéile ag obair inniu.",
+  "base": "bean",
+  "r": "len",
+  "e": "My wife is working today.",
+  "w": "Mo (my) takes séimhiú: bean becomes bhean.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (deoch) ar an mbord.",
+  "base": "deoch",
+  "r": "len",
+  "e": "My drink is on the table.",
+  "w": "Mo (my) takes séimhiú: deoch becomes dheoch.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (bus) déanach arís.",
+  "base": "bus",
+  "r": "len",
+  "e": "My bus is late again.",
+  "w": "Mo (my) takes séimhiú: bus becomes bhus.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Bhris mé mo ___ (cos) anuraidh.",
+  "base": "cos",
+  "r": "len",
+  "e": "I broke my leg last year.",
+  "w": "Mo (my) takes séimhiú: cos becomes chos.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is é Dónall mo ___ (col) ceathrar.",
+  "base": "col",
+  "r": "len",
+  "e": "Dónall is my cousin.",
+  "w": "Mo (my) takes séimhiú: col becomes chol.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (peata) ina chodladh.",
+  "base": "peata",
+  "r": "len",
+  "e": "My pet is asleep.",
+  "w": "Mo (my) takes séimhiú: peata becomes pheata.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (ticéad) agam.",
+  "base": "ticéad",
+  "r": "len",
+  "e": "I have my ticket.",
+  "w": "Mo (my) takes séimhiú: ticéad becomes thicéad.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (pas) caillte.",
+  "base": "pas",
+  "r": "len",
+  "e": "My passport is lost.",
+  "w": "Mo (my) takes séimhiú: pas becomes phas.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (bolg) lán.",
+  "base": "bolg",
+  "r": "len",
+  "e": "My stomach is full.",
+  "w": "Mo (my) takes séimhiú: bolg becomes bholg.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (seanchara) ag teacht inniu.",
+  "base": "seanchara",
+  "r": "len",
+  "e": "My old friend is coming today.",
+  "w": "Mo (my) takes séimhiú: seanchara becomes sheanchara.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Bhí mo ___ (deartháir) ag caint liom.",
+  "base": "deartháir",
+  "r": "len",
+  "e": "My brother was talking to me.",
+  "w": "Mo (my) takes séimhiú: deartháir becomes dheartháir.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Rinne mé dearmad ar mo ___ (peann).",
+  "base": "peann",
+  "r": "len",
+  "e": "I forgot my pen.",
+  "w": "Mo (my) takes séimhiú: peann becomes pheann.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (dochtúir) an-mhaith.",
+  "base": "dochtúir",
+  "r": "len",
+  "e": "My doctor is very good.",
+  "w": "Mo (my) takes séimhiú: dochtúir becomes dhochtúir.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is é Liam mo ___ (deartháir) beag.",
+  "base": "deartháir",
+  "r": "len",
+  "e": "Liam is my little brother.",
+  "w": "Mo (my) takes séimhiú: deartháir becomes dheartháir.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (bronntanas) faoin gcrann.",
+  "base": "bronntanas",
+  "r": "len",
+  "e": "My present is under the tree.",
+  "w": "Mo (my) takes séimhiú: bronntanas becomes bhronntanas.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (freagra) ceart.",
+  "base": "freagra",
+  "r": "len",
+  "e": "My answer is right.",
+  "w": "Mo lenites freagra to fhreagra; before fh and a consonant mo keeps its o.",
+  "wg": "Mo fhreagra: séimhiú, agus fanann mo.",
+  "b": "A2",
+  "t": "poss"
+ },
+ {
+  "q": "An é seo do ___ (deartháir)?",
+  "base": "deartháir",
+  "r": "len",
+  "e": "Is this your brother?",
+  "w": "Do (your) takes séimhiú: deartháir becomes dheartháir.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Cá bhfuil do ___ (teach)?",
+  "base": "teach",
+  "r": "len",
+  "e": "Where is your house?",
+  "w": "Do (your) takes séimhiú: teach becomes theach.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá do ___ (dinnéar) réidh.",
+  "base": "dinnéar",
+  "r": "len",
+  "e": "Your dinner is ready.",
+  "w": "Do (your) takes séimhiú: dinnéar becomes dhinnéar.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "An bhfuil do ___ (peann) agat?",
+  "base": "peann",
+  "r": "len",
+  "e": "Do you have your pen?",
+  "w": "Do (your) takes séimhiú: peann becomes pheann.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá do ___ (cóta) ar an gcathaoir.",
+  "base": "cóta",
+  "r": "len",
+  "e": "Your coat is on the chair.",
+  "w": "Do (your) takes séimhiú: cóta becomes chóta.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Cad is ainm do do ___ (deirfiúr)?",
+  "base": "deirfiúr",
+  "r": "len",
+  "e": "What is your sister's name?",
+  "w": "Do (your) takes séimhiú: deirfiúr becomes dheirfiúr.",
+  "wg": "Do + séimhiú.",
+  "b": "A2",
+  "t": "poss"
+ },
+ {
+  "q": "Cén aois é do ___ (seanathair)?",
+  "base": "seanathair",
+  "r": "len",
+  "e": "How old is your grandfather?",
+  "w": "Do (your) takes séimhiú: seanathair becomes sheanathair.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "An bhfuil do ___ (carr) sa charrchlós?",
+  "base": "carr",
+  "r": "len",
+  "e": "Is your car in the car park?",
+  "w": "Do (your) takes séimhiú: carr becomes charr.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá do ___ (gruaig) go deas.",
+  "base": "gruaig",
+  "r": "len",
+  "e": "Your hair is nice.",
+  "w": "Do (your) takes séimhiú: gruaig becomes ghruaig.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Cuir do ___ (cóta) ort.",
+  "base": "cóta",
+  "r": "len",
+  "e": "Put on your coat.",
+  "w": "Do (your) takes séimhiú: cóta becomes chóta.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Nigh do ___ (gruaig) anocht.",
+  "base": "gruaig",
+  "r": "len",
+  "e": "Wash your hair tonight.",
+  "w": "Do (your) takes séimhiú: gruaig becomes ghruaig.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Ith do ___ (dinnéar) anois.",
+  "base": "dinnéar",
+  "r": "len",
+  "e": "Eat your dinner now.",
+  "w": "Do (your) takes séimhiú: dinnéar becomes dhinnéar.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Glan do ___ (seomra) anois.",
+  "base": "seomra",
+  "r": "len",
+  "e": "Clean your room now.",
+  "w": "Do (your) takes séimhiú: seomra becomes sheomra.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá do ___ (tae) ar an mbord.",
+  "base": "tae",
+  "r": "len",
+  "e": "Your tea is on the table.",
+  "w": "Do (your) takes séimhiú: tae becomes thae.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "An é sin do ___ (cupán)?",
+  "base": "cupán",
+  "r": "len",
+  "e": "Is that your cup?",
+  "w": "Do (your) takes séimhiú: cupán becomes chupán.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá do ___ (bus) ag teacht.",
+  "base": "bus",
+  "r": "len",
+  "e": "Your bus is coming.",
+  "w": "Do (your) takes séimhiú: bus becomes bhus.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá do ___ (páiste) go hálainn.",
+  "base": "páiste",
+  "r": "len",
+  "e": "Your child is lovely.",
+  "w": "Do (your) takes séimhiú: páiste becomes pháiste.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Cá bhfuil do ___ (ticéad)?",
+  "base": "ticéad",
+  "r": "len",
+  "e": "Where is your ticket?",
+  "w": "Do (your) takes séimhiú: ticéad becomes thicéad.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá do ___ (geansaí) ar an urlár.",
+  "base": "geansaí",
+  "r": "len",
+  "e": "Your jumper is on the floor.",
+  "w": "Do (your) takes séimhiú: geansaí becomes gheansaí.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is maith liom do ___ (gúna).",
+  "base": "gúna",
+  "r": "len",
+  "e": "I like your dress.",
+  "w": "Do (your) takes séimhiú: gúna becomes ghúna.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "An bhfuil do ___ (deartháir) sa bhaile?",
+  "base": "deartháir",
+  "r": "len",
+  "e": "Is your brother at home?",
+  "w": "Do (your) takes séimhiú: deartháir becomes dheartháir.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá do ___ (bróga) faoin leaba.",
+  "base": "bróga",
+  "r": "len",
+  "e": "Your shoes are under the bed.",
+  "w": "Do (your) takes séimhiú: bróga becomes bhróga.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Conas atá do ___ (clann)?",
+  "base": "clann",
+  "r": "len",
+  "e": "How is your family?",
+  "w": "Do (your) takes séimhiú: clann becomes chlann.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Conas atá do ___ (seanmháthair)?",
+  "base": "seanmháthair",
+  "r": "len",
+  "e": "How is your grandmother?",
+  "w": "Do (your) takes séimhiú: seanmháthair becomes sheanmháthair.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "An bhfuil do ___ (pas) agat?",
+  "base": "pas",
+  "r": "len",
+  "e": "Do you have your passport?",
+  "w": "Do (your) takes séimhiú: pas becomes phas.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tóg do ___ (bosca) leat.",
+  "base": "bosca",
+  "r": "len",
+  "e": "Take your box with you.",
+  "w": "Do (your) takes séimhiú: bosca becomes bhosca.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Cá bhfuil do ___ (cat)?",
+  "base": "cat",
+  "r": "len",
+  "e": "Where is your cat?",
+  "w": "Do (your) takes séimhiú: cat becomes chat.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá do ___ (cupán) folamh.",
+  "base": "cupán",
+  "r": "len",
+  "e": "Your cup is empty.",
+  "w": "Do (your) takes séimhiú: cupán becomes chupán.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá do ___ (comharsa) ag an doras.",
+  "base": "comharsa",
+  "r": "len",
+  "e": "Your neighbour is at the door.",
+  "w": "Do (your) takes séimhiú: comharsa becomes chomharsa.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Taispeáin dom do ___ (cóipleabhar).",
+  "base": "cóipleabhar",
+  "r": "len",
+  "e": "Show me your copybook.",
+  "w": "Do (your) takes séimhiú: cóipleabhar becomes chóipleabhar.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Cén dath atá ar do ___ (carr)?",
+  "base": "carr",
+  "r": "len",
+  "e": "What colour is your car?",
+  "w": "Do (your) takes séimhiú: carr becomes charr.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá do ___ (ceann) fliuch.",
+  "base": "ceann",
+  "r": "len",
+  "e": "Your head is wet.",
+  "w": "Do (your) takes séimhiú: ceann becomes cheann.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "An bhfuil do ___ (gairdín) mór?",
+  "base": "gairdín",
+  "r": "len",
+  "e": "Is your garden big?",
+  "w": "Do (your) takes séimhiú: gairdín becomes ghairdín.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá do ___ (tuismitheoirí) anseo.",
+  "base": "tuismitheoirí",
+  "r": "len",
+  "e": "Your parents are here.",
+  "w": "Do (your) takes séimhiú: tuismitheoirí becomes thuismitheoirí.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Conas atá do ___ (post) nua?",
+  "base": "post",
+  "r": "len",
+  "e": "How is your new job?",
+  "w": "Do (your) takes séimhiú: post becomes phost.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Dún do ___ (súile).",
+  "base": "súile",
+  "r": "len",
+  "e": "Close your eyes.",
+  "w": "Do (your) takes séimhiú: súile becomes shúile.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Oscail do ___ (béal).",
+  "base": "béal",
+  "r": "len",
+  "e": "Open your mouth.",
+  "w": "Do (your) takes séimhiú: béal becomes bhéal.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá do ___ (deoch) anseo.",
+  "base": "deoch",
+  "r": "len",
+  "e": "Your drink is here.",
+  "w": "Do (your) takes séimhiú: deoch becomes dheoch.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Cuir do ___ (bróga) ort.",
+  "base": "bróga",
+  "r": "len",
+  "e": "Put your shoes on.",
+  "w": "Do (your) takes séimhiú: bróga becomes bhróga.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "An é seo do ___ (geansaí) nua?",
+  "base": "geansaí",
+  "r": "len",
+  "e": "Is this your new jumper?",
+  "w": "Do (your) takes séimhiú: geansaí becomes gheansaí.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá do ___ (dochtúir) ar saoire.",
+  "base": "dochtúir",
+  "r": "len",
+  "e": "Your doctor is on holiday.",
+  "w": "Do (your) takes séimhiú: dochtúir becomes dhochtúir.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (deartháir, his) i nGaillimh.",
+  "base": "deartháir",
+  "r": "len",
+  "e": "His brother is in Galway.",
+  "w": "Here a means his, so séimhiú: deartháir becomes dheartháir.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chaill sé a ___ (peann, his).",
+  "base": "peann",
+  "r": "len",
+  "e": "He lost his pen.",
+  "w": "Here a means his, so séimhiú: peann becomes pheann.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (teach, his) mór.",
+  "base": "teach",
+  "r": "len",
+  "e": "His house is big.",
+  "w": "Here a means his, so séimhiú: teach becomes theach.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "D'ith sé a ___ (dinnéar, his).",
+  "base": "dinnéar",
+  "r": "len",
+  "e": "He ate his dinner.",
+  "w": "Here a means his, so séimhiú: dinnéar becomes dhinnéar.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chuir sé a ___ (cóta, his) air.",
+  "base": "cóta",
+  "r": "len",
+  "e": "He put on his coat.",
+  "w": "Here a means his, so séimhiú: cóta becomes chóta.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (carr, his) nua.",
+  "base": "carr",
+  "r": "len",
+  "e": "His car is new.",
+  "w": "Here a means his, so séimhiú: carr becomes charr.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is í Áine a ___ (deirfiúr, his).",
+  "base": "deirfiúr",
+  "r": "len",
+  "e": "Áine is his sister.",
+  "w": "Here a means his, so séimhiú: deirfiúr becomes dheirfiúr.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (gruaig, his) gearr.",
+  "base": "gruaig",
+  "r": "len",
+  "e": "His hair is short.",
+  "w": "Here a means his, so séimhiú: gruaig becomes ghruaig.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Bhris sé a ___ (cos, his).",
+  "base": "cos",
+  "r": "len",
+  "e": "He broke his leg.",
+  "w": "Here a means his, so séimhiú: cos becomes chos.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (seomra, his) salach.",
+  "base": "seomra",
+  "r": "len",
+  "e": "His room is dirty.",
+  "w": "Here a means his, so séimhiú: seomra becomes sheomra.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chonaic Seán a ___ (cara, his) ar an tsráid.",
+  "base": "cara",
+  "r": "len",
+  "e": "Seán saw his friend on the street.",
+  "w": "Here a means his, so séimhiú: cara becomes chara.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (seanmháthair, his) tinn.",
+  "base": "seanmháthair",
+  "r": "len",
+  "e": "His grandmother is sick.",
+  "w": "Here a means his, so séimhiú: seanmháthair becomes sheanmháthair.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (bean, his) chéile ina múinteoir.",
+  "base": "bean",
+  "r": "len",
+  "e": "His wife is a teacher.",
+  "w": "Here a means his, so séimhiú: bean becomes bhean.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (páiste, his) ar scoil.",
+  "base": "páiste",
+  "r": "len",
+  "e": "His child is at school.",
+  "w": "Here a means his, so séimhiú: páiste becomes pháiste.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Nigh sé a ___ (carr, his) inné.",
+  "base": "carr",
+  "r": "len",
+  "e": "He washed his car yesterday.",
+  "w": "Here a means his, so séimhiú: carr becomes charr.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (geansaí, his) dearg.",
+  "base": "geansaí",
+  "r": "len",
+  "e": "His jumper is red.",
+  "w": "Here a means his, so séimhiú: geansaí becomes gheansaí.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (bróga, his) nua.",
+  "base": "bróga",
+  "r": "len",
+  "e": "His shoes are new.",
+  "w": "Here a means his, so séimhiú: bróga becomes bhróga.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (tuismitheoirí, his) i gCiarraí.",
+  "base": "tuismitheoirí",
+  "r": "len",
+  "e": "His parents are in Kerry.",
+  "w": "Here a means his, so séimhiú: tuismitheoirí becomes thuismitheoirí.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (cat, his) dubh.",
+  "base": "cat",
+  "r": "len",
+  "e": "His cat is black.",
+  "w": "Here a means his, so séimhiú: cat becomes chat.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (post, his) deacair.",
+  "base": "post",
+  "r": "len",
+  "e": "His job is hard.",
+  "w": "Here a means his, so séimhiú: post becomes phost.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (gairdín, his) go hálainn.",
+  "base": "gairdín",
+  "r": "len",
+  "e": "His garden is lovely.",
+  "w": "Here a means his, so séimhiú: gairdín becomes ghairdín.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "D'ól sé a ___ (tae, his).",
+  "base": "tae",
+  "r": "len",
+  "e": "He drank his tea.",
+  "w": "Here a means his, so séimhiú: tae becomes thae.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (clann, his) i bPort Láirge.",
+  "base": "clann",
+  "r": "len",
+  "e": "His family is in Waterford.",
+  "w": "Here a means his, so séimhiú: clann becomes chlann.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (comharsa, his) cairdiúil.",
+  "base": "comharsa",
+  "r": "len",
+  "e": "His neighbour is friendly.",
+  "w": "Here a means his, so séimhiú: comharsa becomes chomharsa.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Thóg sé a ___ (ticéad, his).",
+  "base": "ticéad",
+  "r": "len",
+  "e": "He took his ticket.",
+  "w": "Here a means his, so séimhiú: ticéad becomes thicéad.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (súile, his) gorma.",
+  "base": "súile",
+  "r": "len",
+  "e": "His eyes are blue.",
+  "w": "Here a means his, so séimhiú: súile becomes shúile.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Cá bhfuil a ___ (deartháir, his)?",
+  "base": "deartháir",
+  "r": "len",
+  "e": "Where is his brother?",
+  "w": "Here a means his, so séimhiú: deartháir becomes dheartháir.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Sin é a ___ (bosca, his).",
+  "base": "bosca",
+  "r": "len",
+  "e": "That is his box.",
+  "w": "Here a means his, so séimhiú: bosca becomes bhosca.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (ceann, his) tinn.",
+  "base": "ceann",
+  "r": "len",
+  "e": "His head is sore.",
+  "w": "Here a means his, so séimhiú: ceann becomes cheann.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (dochtúir, his) sásta leis.",
+  "base": "dochtúir",
+  "r": "len",
+  "e": "His doctor is pleased with him.",
+  "w": "Here a means his, so séimhiú: dochtúir becomes dhochtúir.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Bhí a ___ (seanathair, his) ina fheirmeoir.",
+  "base": "seanathair",
+  "r": "len",
+  "e": "His grandfather was a farmer.",
+  "w": "Here a means his, so séimhiú: seanathair becomes sheanathair.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (deoch, his) fuar.",
+  "base": "deoch",
+  "r": "len",
+  "e": "His drink is cold.",
+  "w": "Here a means his, so séimhiú: deoch becomes dheoch.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (bolg, his) lán.",
+  "base": "bolg",
+  "r": "len",
+  "e": "His stomach is full.",
+  "w": "Here a means his, so séimhiú: bolg becomes bholg.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Rinne sé dearmad ar a ___ (pas, his).",
+  "base": "pas",
+  "r": "len",
+  "e": "He forgot his passport.",
+  "w": "Here a means his, so séimhiú: pas becomes phas.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chaill sé a ___ (fón, his).",
+  "base": "fón",
+  "r": "len",
+  "e": "He lost his phone.",
+  "w": "Here a means his, so séimhiú: fón becomes fhón.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Scuab sé a ___ (fiacla, his).",
+  "base": "fiacla",
+  "r": "len",
+  "e": "He brushed his teeth.",
+  "w": "Here a means his, so séimhiú: fiacla becomes fhiacla.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ }
+]

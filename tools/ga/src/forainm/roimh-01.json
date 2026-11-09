@@ -1,0 +1,137 @@
+[
+ {
+  "q": "Tá eagla orm ___ (roimh + tú).",
+  "prep": "roimh",
+  "p": "tu",
+  "e": "I'm afraid of you.",
+  "w": "Fear and welcome take roimh: roimh + tú = romhat.",
+  "wg": "Eagla roimh, fáilte roimh: roimh + tú = romhat.",
+  "b": "B1"
+ },
+ {
+  "q": "Tá eagla orm ___ (roimh + é).",
+  "prep": "roimh",
+  "p": "se",
+  "e": "I'm afraid of him.",
+  "w": "Fear and welcome take roimh: roimh + é = roimhe.",
+  "wg": "Eagla roimh, fáilte roimh: roimh + é = roimhe.",
+  "b": "B1"
+ },
+ {
+  "q": "Tá eagla orm ___ (roimh + í).",
+  "prep": "roimh",
+  "p": "si",
+  "e": "I'm afraid of her.",
+  "w": "Fear and welcome take roimh: roimh + í = roimpi.",
+  "wg": "Eagla roimh, fáilte roimh: roimh + í = roimpi.",
+  "b": "B1"
+ },
+ {
+  "q": "Tá eagla orm ___ (roimh + muid).",
+  "prep": "roimh",
+  "p": "muid",
+  "e": "I'm afraid of us.",
+  "w": "Fear and welcome take roimh: roimh + muid = romhainn.",
+  "wg": "Eagla roimh, fáilte roimh: roimh + muid = romhainn.",
+  "b": "B1"
+ },
+ {
+  "q": "Tá fáilte ___ (roimh + í).",
+  "prep": "roimh",
+  "p": "si",
+  "e": "She's welcome.",
+  "w": "Fear and welcome take roimh: roimh + í = roimpi.",
+  "wg": "Eagla roimh, fáilte roimh: roimh + í = roimpi.",
+  "b": "B1"
+ },
+ {
+  "q": "Tá fáilte ___ (roimh + muid).",
+  "prep": "roimh",
+  "p": "muid",
+  "e": "We're welcome.",
+  "w": "Fear and welcome take roimh: roimh + muid = romhainn.",
+  "wg": "Eagla roimh, fáilte roimh: roimh + muid = romhainn.",
+  "b": "B1"
+ },
+ {
+  "q": "Tá fáilte ___ (roimh + sibh).",
+  "prep": "roimh",
+  "p": "sibh",
+  "e": "You're all welcome.",
+  "w": "Fear and welcome take roimh: roimh + sibh = romhaibh.",
+  "wg": "Eagla roimh, fáilte roimh: roimh + sibh = romhaibh.",
+  "b": "B1"
+ },
+ {
+  "q": "Tá fáilte ___ (roimh + iad).",
+  "prep": "roimh",
+  "p": "siad",
+  "e": "They're welcome.",
+  "w": "Fear and welcome take roimh: roimh + iad = rompu.",
+  "wg": "Eagla roimh, fáilte roimh: roimh + iad = rompu.",
+  "b": "B1"
+ },
+ {
+  "q": "Chuaigh sí isteach ___ (roimh + mé).",
+  "prep": "roimh",
+  "p": "me",
+  "e": "She went in ahead of me.",
+  "w": "Ahead of someone: roimh + mé = romham.",
+  "wg": "Roimh dhuine: roimh + mé = romham.",
+  "b": "B1"
+ },
+ {
+  "q": "Chuaigh sí isteach ___ (roimh + tú).",
+  "prep": "roimh",
+  "p": "tu",
+  "e": "She went in ahead of you.",
+  "w": "Ahead of someone: roimh + tú = romhat.",
+  "wg": "Roimh dhuine: roimh + tú = romhat.",
+  "b": "B1"
+ },
+ {
+  "q": "Chuaigh sí isteach ___ (roimh + é).",
+  "prep": "roimh",
+  "p": "se",
+  "e": "She went in ahead of him.",
+  "w": "Ahead of someone: roimh + é = roimhe.",
+  "wg": "Roimh dhuine: roimh + é = roimhe.",
+  "b": "B1"
+ },
+ {
+  "q": "Tá scrúdú mór ___ (roimh + é) amárach.",
+  "prep": "roimh",
+  "p": "se",
+  "e": "He has a big exam tomorrow.",
+  "w": "Ahead of someone: roimh + é = roimhe.",
+  "wg": "Roimh dhuine: roimh + é = roimhe.",
+  "b": "B2"
+ },
+ {
+  "q": "Tá scrúdú mór ___ (roimh + í) amárach.",
+  "prep": "roimh",
+  "p": "si",
+  "e": "She has a big exam tomorrow.",
+  "w": "Ahead of someone: roimh + í = roimpi.",
+  "wg": "Roimh dhuine: roimh + í = roimpi.",
+  "b": "B2"
+ },
+ {
+  "q": "Tá scrúdú mór ___ (roimh + muid) amárach.",
+  "prep": "roimh",
+  "p": "muid",
+  "e": "We have a big exam tomorrow.",
+  "w": "Ahead of someone: roimh + muid = romhainn.",
+  "wg": "Roimh dhuine: roimh + muid = romhainn.",
+  "b": "B2"
+ },
+ {
+  "q": "Tá scrúdú mór ___ (roimh + sibh) amárach.",
+  "prep": "roimh",
+  "p": "sibh",
+  "e": "You all have a big exam tomorrow.",
+  "w": "Ahead of someone: roimh + sibh = romhaibh.",
+  "wg": "Roimh dhuine: roimh + sibh = romhaibh.",
+  "b": "B2"
+ }
+]
