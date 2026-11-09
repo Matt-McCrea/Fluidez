@@ -88,13 +88,19 @@ window.ARItems = (function () {
     if (g.k === 'jidhr' || g.k === 'jumu') return GC.wordLevel(id);
     return GC.sentenceLevel(g.b || 'A1');
   }
+  /* What plays after the answer: the whole sentence with the answer in it where
+   * there is a clip for that, else the answer word. */
+  function sayText(g) {
+    var full = g.q.replace(/___+/, g.a);
+    return (window.AR && AR.has && AR.has(full, 'msa')) ? full : g.a;
+  }
   function gapItem(g, forceChoose) {
     var id = gapId(g);
     return { kind: g.k, play: (!forceChoose && answeredRight(id)) ? 'type' : 'choose', cefr: g.b || 'A1',
       topic: g.k + ':' + (g.t || ''), id: id, prompt: g.q.replace(/___+/g, '＿＿＿'), pAr: true,
       level: gapLevel(g, id), answer: g.a, accept: [g.a].concat(g.x || []),
       options: shuffle(g.o.slice()), optAr: true, cue: g.c || null,
-      sub: null, peek: g.e || null, note: g.w || null, say: { t: g.a, v: 'msa' }, bonus: 20 };
+      sub: null, peek: g.e || null, note: g.w || null, say: { t: sayText(g), v: 'msa' }, bonus: 20 };
   }
   // opts.topics: t values to keep
   function gapPool(kind, opts) {

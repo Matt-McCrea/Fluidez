@@ -98,9 +98,13 @@ const allText = () => STAGE.textContent;
 const store = {}, written = [], DOCL = {}, WINL = {}, HIST = [];
 const played = [];
 class AudioStub { constructor() { this.src = ''; } pause() {} play() { played.push(this.src); return Promise.resolve(); } }
+/* clips are fetched from bundles and played through Web Audio: the fetch records the bundle */
+const fetchStub = url => { played.push(url); return Promise.resolve({ ok: true, arrayBuffer: () => Promise.resolve(new ArrayBuffer(8)) }); };
+class AudioCtxStub { constructor() { this.state = 'running'; this.destination = {}; } resume() {} createBuffer() { return {}; }
+  createBufferSource() { return { connect() {}, start() {}, stop() {} }; } decodeAudioData(b, ok) { ok({ duration: 1 }); } }
 const ctx = {
   console, setTimeout, clearTimeout, Date, Math, JSON, Object, Array, String, Number, Promise, Error, RegExp, parseInt, parseFloat,
-  Audio: AudioStub,
+  Audio: AudioStub, fetch: fetchStub, AudioContext: AudioCtxStub,
   localStorage: {
     getItem: k => (k in store ? store[k] : null),
     setItem: (k, v) => { written.push(k); store[k] = String(v); },
@@ -389,10 +393,10 @@ W.Profile.set('B2');                                   // widest pool
 {
   played.length = 0;
   ok(AR.play('لا يوجد', 'msa') === false && played.length === 0 && !AR.has('x', 'msa'), 'no clip: AR.play does nothing');
-  W.AR_AUDIO = { 'بَيْت|msa': 'audio/l-1.mp3', 'بَيْت|lev': 'audio/l-2.mp3' };
-  ok(AR.has('بَيْت') && AR.play('بَيْت') && played.pop() === 'audio/l-1.mp3', 'a clip plays (msa by default)');
-  ok(AR.play('بَيْت', 'lev') && played.pop() === 'audio/l-2.mp3' && AR.play('بَيْت', 'egy') === false, 'varieties have their own clips');
-  W.ARCore.setPref('autoplay', false); ok(AR.autoplay('بَيْت', 'msa') === false && played.length === 0, 'autoplay off: nothing plays');
+  W.AR_AUDIO = { 'بَيْت|msa': 'audio/l-1.bin#0,4', 'بَيْت|lev': 'audio/l-2.bin#4,4' };
+  ok(AR.has('بَيْت') && AR.play('بَيْت') && played.pop() === 'audio/l-1.bin', 'a clip plays (msa by default)');
+  ok(AR.play('بَيْت', 'lev') && played.pop() === 'audio/l-2.bin' && AR.play('بَيْت', 'egy') === false, 'varieties have their own clips');
+  W.ARCore.setPref('autoplay', false); played.length = 0; ok(AR.autoplay('بَيْت', 'msa') === false && played.length === 0, 'autoplay off: nothing plays');
   W.ARCore.setPref('autoplay', true); ok(AR.autoplay('بَيْت', 'msa') === true, 'autoplay on (the default)');
   played.length = 0; W.AR_AUDIO = {};
 }
@@ -525,7 +529,7 @@ const resetStage0 = () => { Object.keys(store).forEach(k => { if (/^talaqa\.(hur
   store['talaqa.kbd'] = JSON.stringify('done');
 
   // ---- a gap round renders Arabic, a speaker, the cue ------------------------------------------------------------------------------------------------------
-  W.Profile.set('A1'); wipeSrs(); W.AR_AUDIO = { 'كَتَبَ|msa': 'audio/l-k.mp3' };
+  W.Profile.set('A1'); wipeSrs(); W.AR_AUDIO = { 'كَتَبَ|msa': 'audio/l-k.bin#0,4' };
   W.GameRound.run(STAGE, { key: 'afal:t', title: 'Afʿāl', kind: 'afal', count: 2, duration: null, topics: ['madi'], onExit() {} });
   await sleep(30);
   const pr = byCls('g-prompt')[0];
@@ -534,7 +538,7 @@ const resetStage0 = () => { Object.keys(store).forEach(k => { if (/^talaqa\.(hur
   const opts = byCls('g-opt'); ok(opts.length === 4 && opts.every(o => o.all(n => n.cls().includes('ar')).length === 1), 'four Arabic options');
   played.length = 0;
   opts.filter(o => o._val === 'كَتَبَ')[0].click();
-  ok(played.length === 1 && played[0] === 'audio/l-k.mp3', 'the answer\'s clip plays after the answer');
+  ok(played.length === 1 && played[0] === 'audio/l-k.bin', 'the answer\'s clip plays after the answer');
   fire('keydown', { key: 'Enter' });
 
   // ---- the faded text can be held for its vowels --------------------------------------------------------------------------------------------------------------

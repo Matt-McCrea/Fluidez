@@ -26,4 +26,12 @@ const W = load('words.js'); if (W && !/PLACEHOLDER/.test(fs.readFileSync(path.jo
 const P = load('phrases.js'); if (P && !/PLACEHOLDER/.test(fs.readFileSync(path.join(D, 'phrases.js'), 'utf8').slice(0, 40))) P.forEach(p => {
   add(p.msa, 'msa', 'phrase'); add(p.lev, 'lev', 'phrase'); add(p.egy, 'egy', 'phrase');
 });
+// the verb sentences and pronoun sentences, read whole with the answer in place
+global.window = global.window || {};
+['afal', 'damair'].forEach(k => {
+  const f = path.join(D, `gaps-${k}.js`);
+  if (!fs.existsSync(f) || /PLACEHOLDER/.test(fs.readFileSync(f, 'utf8').slice(0, 60))) return;
+  window.AR_BANK = []; delete require.cache[f]; require(f);
+  window.AR_BANK.forEach(g => { if (/\S\s+\S/.test(g.q)) add(g.q.replace(/___+/, g.a), 'msa', 'sentence'); });
+});
 for (const x of out.values()) process.stdout.write(JSON.stringify(x) + '\n');

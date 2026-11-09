@@ -10,12 +10,14 @@
  *
  * ASSETS must mirror every <script>/<link> in index.html plus the data files.
  * ========================================================================== */
-var CACHE_VERSION = 't55073bac';
+var CACHE_VERSION = 't5b82ed3e';
 var CACHE_NAME = 'talaqa-' + CACHE_VERSION;
+/* Audio bundles are named by their content hash, so they never go stale: they live
+ * in their own cache that a new version keeps, and nothing is downloaded twice. */
+var AUDIO_CACHE = 'talaqa-audio';
 
-/* The letter clips (audio/l-*.mp3) are read from data/audio.js at install and
- * precached with the shell; every other clip is cached the first time it plays
- * (the fetch handler below puts any good same-origin GET in the cache). */
+/* The letter bundles (audio/l-*.bin) are read from data/audio.js at install and
+ * precached; every other bundle is cached the first time one of its clips plays. */
 var ASSETS = [
   './',
   './index.html',
@@ -55,15 +57,20 @@ var ASSETS = [
   './js/ar-arcade.js'
 ];
 
-/* The clips named l-*.mp3 in data/audio.js: fetched past the HTTP cache like the shell.
- * A clip that fails to load never blocks the install. */
-function letterClips(cache) {
-  return fetch(new Request('./data/audio.js', { cache: 'reload' })).then(function (r) { return r.text(); }).then(function (t) {
-    var files = {}, m, re = /"(audio\/l-[^"]+\.mp3)"/g;
-    while ((m = re.exec(t))) files['./' + m[1]] = 1;
-    return Promise.all(Object.keys(files).map(function (u) {
-      return fetch(new Request(u, { cache: 'reload' })).then(function (res) { if (res && res.ok) return cache.put(u, res); }).catch(function () {});
-    }));
+/* The bundles named l-*.bin in data/audio.js, into the audio cache. A bundle that
+ * fails to load never blocks the install. */
+function letterClips() {
+  return caches.open(AUDIO_CACHE).then(function (cache) {
+    return fetch(new Request('./data/audio.js', { cache: 'reload' })).then(function (r) { return r.text(); }).then(function (t) {
+      var files = {}, m, re = /"(audio\/l-[0-9a-f]+\.bin)#/g;
+      while ((m = re.exec(t))) files['./' + m[1]] = 1;
+      return Promise.all(Object.keys(files).map(function (u) {
+        return cache.match(u).then(function (hit) {
+          if (hit) return;
+          return fetch(u).then(function (res) { if (res && res.ok) return cache.put(u, res); });
+        }).catch(function () {});
+      }));
+    });
   }).catch(function () {});
 }
 
@@ -73,7 +80,7 @@ self.addEventListener('install', function (event) {
      * so a plain addAll could fill the NEW version's cache with the OLD files. */
     caches.open(CACHE_NAME).then(function (cache) {
       return cache.addAll(ASSETS.map(function (u) { return new Request(u, { cache: 'reload' }); }))
-        .then(function () { return letterClips(cache); });
+        .then(function () { return letterClips(); });
     })
       .then(function () { return self.skipWaiting(); })
   );
@@ -83,7 +90,7 @@ self.addEventListener('activate', function (event) {
   event.waitUntil(
     caches.keys().then(function (names) {
       return Promise.all(
-        names.filter(function (n) { return n.indexOf('talaqa-') === 0 && n !== CACHE_NAME; })
+        names.filter(function (n) { return n.indexOf('talaqa-') === 0 && n !== CACHE_NAME && n !== AUDIO_CACHE; })
              .map(function (n) { return caches.delete(n); })
       );
     }).then(function () { return self.clients.claim(); })
@@ -91,12 +98,23 @@ self.addEventListener('activate', function (event) {
 });
 
 // Cache-first: every question comes from a file that is either cached or not there at all.
-// Other audio/ clips are cached by the same rule the first time they play.
 // The page (js/ga-arcade.js) asks the browser for a new worker whenever the app comes
 // back to the front, and reloads on the board once one has taken over.
 self.addEventListener('fetch', function (event) {
   if (event.request.method !== 'GET') return;
-  if (new URL(event.request.url).origin !== self.location.origin) return;
+  var url = new URL(event.request.url);
+  if (url.origin !== self.location.origin) return;
+  if (url.pathname.indexOf('/audio/') !== -1) {
+    event.respondWith(caches.open(AUDIO_CACHE).then(function (cache) {
+      return cache.match(event.request).then(function (hit) {
+        return hit || fetch(event.request).then(function (res) {
+          if (res && res.ok) cache.put(event.request, res.clone());
+          return res;
+        });
+      });
+    }));
+    return;
+  }
   event.respondWith(
     caches.match(event.request).then(function (cached) {
       if (cached) return cached;
