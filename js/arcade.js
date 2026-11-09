@@ -329,6 +329,7 @@
    * presses the round's own ✕ instead — the one path that stops the clock and
    * files nothing. */
   var VIEW = 'board';
+  var UPDATE_READY = false;                 // a new version has taken over; reload at the next board
   function pushView(v) {
     VIEW = v;
     try { history.pushState({ arc: v }, ''); } catch (e) {}
@@ -348,6 +349,7 @@
   }
 
   function board() {
+    if (UPDATE_READY) { location.reload(); return; }
     VIEW = 'board';
     var h = host();
     if (!h) return;                                  // nothing to draw into
@@ -1303,9 +1305,26 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
   else boot();
 
+  /* UPDATES. The worker installs a new version in the background and takes
+   * over (skipWaiting, clients.claim), but the page on screen kept running the
+   * old code until it was reloaded, and a home-screen app on a phone resumes
+   * from memory rather than reloading, so it could stay old for days. Now: look
+   * for a new version every time the app comes back to the front, and when one
+   * has taken over, reload: at once on the board, or the next time the board is
+   * drawn if a round or a test is on screen (never in the middle of one). */
   if ('serviceWorker' in navigator) {
+    var hadController = !!navigator.serviceWorker.controller;
     window.addEventListener('load', function () {
-      navigator.serviceWorker.register('./sw.js').catch(function () {});
+      navigator.serviceWorker.register('./sw.js').then(function (reg) {
+        document.addEventListener('visibilitychange', function () {
+          if (document.visibilityState === 'visible') { try { reg.update(); } catch (e) {} }
+        });
+      }).catch(function () {});
+    });
+    navigator.serviceWorker.addEventListener('controllerchange', function () {
+      if (!hadController) { hadController = true; return; }   // the first install: already current
+      UPDATE_READY = true;
+      if (VIEW === 'board') location.reload();
     });
   }
 })();

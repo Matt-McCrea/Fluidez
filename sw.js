@@ -119,7 +119,9 @@ var ASSETS = [
 self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then(function (cache) { return cache.addAll(ASSETS); })
+      /* {cache: 'reload'}: past the browser's HTTP cache. GitHub Pages serves max-age=600,
+       * so a plain addAll could fill the NEW version's cache with the OLD files (9 Nov 2026). */
+      .then(function (cache) { return cache.addAll(ASSETS.map(function (u) { return new Request(u, { cache: 'reload' }); })); })
   );
 });
 

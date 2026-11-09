@@ -15,7 +15,7 @@
  * ASSETS must mirror every <script>/<link> in juegos/index.html. It is
  * deliberately short — that shortness is the entire feature.
  * ========================================================================== */
-var CACHE_VERSION = 'j998dd003';
+var CACHE_VERSION = 'j5bfd5b82';
 var CACHE_NAME = 'fluidez-juegos-' + CACHE_VERSION;
 
 var ASSETS = [
@@ -60,7 +60,11 @@ var ASSETS = [
 
 self.addEventListener('install', function (event) {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(function (cache) { return cache.addAll(ASSETS); })
+    /* {cache: 'reload'}: past the browser's HTTP cache. GitHub Pages serves max-age=600,
+     * so a plain addAll could fill the NEW version's cache with the OLD files (9 Nov 2026). */
+    caches.open(CACHE_NAME).then(function (cache) {
+      return cache.addAll(ASSETS.map(function (u) { return new Request(u, { cache: 'reload' }); }));
+    })
       .then(function () { return self.skipWaiting(); })
   );
 });
