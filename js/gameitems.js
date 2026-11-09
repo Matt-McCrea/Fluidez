@@ -1328,8 +1328,14 @@ window.GameItems = (function () {
    * ========================================================================= */
   function answeredRight(id) {
     if (!id) return false;
-    var c = srsStore()[id];
-    return !!(c && typeof c === 'object' && c.reps > 0);
+    return knownCard(srsStore()[id]);
+  }
+  /* KNOWN: learnt for good, or answered right and not missed since. NOT
+   * `reps > 0`: the SRS counts every review in reps, wrong ones too, so a word
+   * missed in a review used to count as known, inflate the progress bar and be
+   * skipped by Prueba de palabras as already known (found 9 Nov 2026). */
+  function knownCard(c) {
+    return !!(c && typeof c === 'object' && (c.learnt || (c.passed && !(c.consecMiss > 0))));
   }
 
   /* Which tenses are "yours", cumulative by band. Not Profile.tenses(), which
@@ -1490,8 +1496,8 @@ window.GameItems = (function () {
    * due yet, the next NEW word in rank order (capped per round), a recently
    * learned word to fill, and only then new words beyond the cap.
    *
-   * KNOWN. A card counts as known once it has a right answer (reps > 0), the same
-   * test that makes it come back typed. A word answered right on its first sight,
+   * KNOWN. A card counts as known when knownCard() says so (learnt, or right and
+   * not missed since), the same test that makes it come back typed. A word answered right on its first sight,
    * tapped, is graded good by the round (gameround writeBack) exactly like any
    * other right answer, so it is known at once and is typed next time. At B1 and
    * above that is also how a strong player moves through the easy words: a right
@@ -1586,7 +1592,7 @@ window.GameItems = (function () {
      * may be a guess, and it counts. */
     if (st.lastNew) {
       var ln = store[st.lastNew];
-      if (ln && ln.reps > 0 && /^(B1|B2|C1)$/.test(playerBand())) st.newN = Math.max(0, st.newN - 1);
+      if (knownCard(ln) && /^(B1|B2|C1)$/.test(playerBand())) st.newN = Math.max(0, st.newN - 1);
       st.lastNew = null;
     }
     for (var pass = 0; pass < 2; pass++) {
@@ -1732,7 +1738,7 @@ window.GameItems = (function () {
   }
   function phraseCoverage() {
     var G = phraseList(), store = srsStore(), of = Math.floor(G.list.length / 100) * 100 || G.list.length, n = 0;
-    G.list.forEach(function (e) { var c = store[e.id]; if (c && typeof c === 'object' && c.reps > 0) n++; });
+    G.list.forEach(function (e) { if (knownCard(store[e.id])) n++; });
     n = Math.min(n, of);
     return { n: n, of: of, text: 'Conoces ' + thousands(n) + ' de las ' + thousands(of) + ' frases más comunes' };
   }
@@ -1748,7 +1754,7 @@ window.GameItems = (function () {
   }
   function coverage(theme) {
     var G = grindList(), store = srsStore(), L = G.list;
-    function known(e) { var c = store[e.id]; return !!(c && typeof c === 'object' && c.reps > 0); }
+    function known(e) { return knownCard(store[e.id]); }
     var total = 0;
     L.forEach(function (e) { if (known(e)) total++; });
     var M = L.length;
@@ -1778,7 +1784,7 @@ window.GameItems = (function () {
     var G = grindList(), store = srsStore();
     for (var i = Math.max(0, pos || 0); i < G.list.length; i++) {
       var e = G.list[i], c = store[e.id];
-      if (c && typeof c === 'object' && (c.learnt || c.reps > 0)) continue;
+      if (knownCard(c)) continue;                       // a word missed before is asked again
       return { e: e, pos: i, rank: i + 1, total: G.list.length };
     }
     return null;
@@ -2069,7 +2075,7 @@ window.GameItems = (function () {
   return {
     draw: draw, next: next, grade: grade, reset: reset, index: index, words: words,
     setFocus: setFocus, weakItem: weakItem, deckItem: deckItem, missDeck: missDeck,
-    conjPrompt: conjPrompt,
+    conjPrompt: conjPrompt, knownCard: knownCard,
     answeredRight: answeredRight, tensesForBand: tensesForBand,
     listenRate: listenRate, bandForLevel: bandForLevel,
     enKey: enKey, altsFor: altsFor,

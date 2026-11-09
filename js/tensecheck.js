@@ -44,16 +44,21 @@ window.TenseCheck = (function () {
   function save(o) { try { localStorage.setItem(KEY, JSON.stringify(o)); } catch (e) {} }
   function srsStore() { try { return JSON.parse(localStorage.getItem('fluidez.srs')) || {}; } catch (e) { return {}; } }
   function GI() { return window.GameItems; }
+  function knownCard(c) {
+    return GI() && GI().knownCard ? GI().knownCard(c)
+      : !!(c && typeof c === 'object' && (c.learnt || (c.passed && !(c.consecMiss > 0))));
+  }
 
   /* ---- progress ---------------------------------------------------------- */
   function thousands(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.'); }
 
   /* Words: known count inside each milestone, plus every theme. A card is
-   * known once it has a right answer, the same test the games use. */
+   * known when GameItems.knownCard says so (learnt, or right and not missed
+   * since), the same test the games use. */
   function wordProgress() {
     var G = GI() && GI().grindList ? GI().grindList() : { list: [], byTheme: {} };
     var store = srsStore(), L = G.list;
-    function known(e) { var c = store[e.id]; return !!(c && typeof c === 'object' && c.reps > 0); }
+    function known(e) { return knownCard(store[e.id]); }
     var total = 0;
     L.forEach(function (e) { if (known(e)) total++; });
     var marks = [1000, 2000, 5000].map(function (m) {
@@ -76,7 +81,7 @@ window.TenseCheck = (function () {
     Object.keys(store).forEach(function (id) {
       if (id.indexOf('vt:') !== 0) return;
       var c = store[id];
-      if (!(c && typeof c === 'object' && c.reps > 0)) return;
+      if (!knownCard(c)) return;
       var inf = id.split(':')[1];
       if (inf && !seen[inf]) { seen[inf] = 1; n++; }
     });

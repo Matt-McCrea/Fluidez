@@ -1178,7 +1178,7 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     // known -> typed
     const idxT = GI.index().byTense;
     const srsAll = {};
-    Object.keys(idxT).forEach(t => idxT[t].forEach(r => { srsAll['vt:' + r.inf + ':' + r.tense] = { reps: 2 }; }));
+    Object.keys(idxT).forEach(t => idxT[t].forEach(r => { srsAll['vt:' + r.inf + ':' + r.tense] = { reps: 2, passed: true }; }));
     localStorage.setItem('fluidez.srs', JSON.stringify(srsAll));
     vs = draws('sverb', 80, {});
     ok(vs.length > 60 && vs.every(i => i.play === 'type' && i.accept[0] === i.answer), 'verbs answered right are not asked typed');
@@ -1230,7 +1230,7 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
       const pc = draws('sverb', 20, { tenses: ['pluscsubj'] });
       ok(pc.length === 20 && pc.every(i => i.topic === 'tense:pluscsubj'), 'the pluscsubj chip tense was not honoured');
       // typed accepts the -se twin
-      localStorage.setItem('fluidez.srs', JSON.stringify({ 'vt:saber:pluscsubj': { reps: 2 }, 'vt:tener:impsubj': { reps: 2 } }));
+      localStorage.setItem('fluidez.srs', JSON.stringify({ 'vt:saber:pluscsubj': { reps: 2, passed: true }, 'vt:tener:impsubj': { reps: 2, passed: true } }));
       const ty = draws('sverb', 10, { tenses: ['pluscsubj'] })[0];
       ok(ty.play === 'type' && ty.accept.indexOf('hubiera sabido') !== -1 && ty.accept.indexOf('hubiese sabido') !== -1, 'typed does not accept the -se twin');
       const ty2 = draws('sverb', 10, { tenses: ['impsubj'] })[0];
@@ -1338,7 +1338,7 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
 
       // the cap: with something to fill, at most four of ten are new
       const store0 = {};
-      G.slice(0, 40).forEach((e, i) => { store0[e.id] = { reps: 2, due: W.SRS.today() + 3 + i, last: W.SRS.today() - 1, box: 2 }; });
+      G.slice(0, 40).forEach((e, i) => { store0[e.id] = { reps: 2, passed: true, due: W.SRS.today() + 3 + i, last: W.SRS.today() - 1, box: 2 }; });
       localStorage.setItem('fluidez.srs', JSON.stringify(store0));
       for (let t = 0; t < 5; t++) {
         st = { asked: 0, newN: 0, used: {} };
@@ -1359,7 +1359,7 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
       // due before new; the most overdue first; a missed word (enrolled, never graded) is due
       const td = W.SRS.today();
       const s2 = Object.assign({}, store0);
-      s2[G[200].id] = { reps: 3, due: td - 5, last: td - 20, box: 2 };
+      s2[G[200].id] = { reps: 3, passed: true, due: td - 5, last: td - 20, box: 2 };
       s2[G[300].id] = { reps: 0, due: td, box: 0 };
       localStorage.setItem('fluidez.srs', JSON.stringify(s2));
       st = { asked: 0, newN: 0, used: {} };
@@ -1378,7 +1378,7 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
 
       // typed: article optional, and another entry with the same gloss is accepted
       const withArt = G.find(e => /^(el|la) /.test(e.es));
-      const s3 = {}; s3[withArt.id] = { reps: 2, due: td - 1, last: td - 9, box: 2 };
+      const s3 = {}; s3[withArt.id] = { reps: 2, passed: true, due: td - 1, last: td - 9, box: 2 };
       localStorage.setItem('fluidez.srs', JSON.stringify(s3));
       const ti = play(1, {}, { asked: 0, newN: 0, used: {} })[0];
       ok(ti.answer === withArt.es && ti.play === 'type', 'the due typed word was not dealt');
@@ -1386,7 +1386,7 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
       const twin = G.find(e => G.some(o => o !== e && o.en.toLowerCase() === e.en.toLowerCase() && o.es.indexOf(' ') === -1 && e.es.indexOf(' ') === -1));
       if (twin) {
         const other = G.find(o => o !== twin && o.en.toLowerCase() === twin.en.toLowerCase());
-        const s4 = {}; s4[twin.id] = { reps: 2, due: td - 1, last: td - 9, box: 2 };
+        const s4 = {}; s4[twin.id] = { reps: 2, passed: true, due: td - 1, last: td - 9, box: 2 };
         localStorage.setItem('fluidez.srs', JSON.stringify(s4));
         const ti2 = play(1, {}, { asked: 0, newN: 0, used: {} })[0];
         ok(ti2.play === 'type' && GI.grade(ti2, other.es) === 'good', 'a word with the same English gloss is not accepted when typed');
@@ -1426,13 +1426,25 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
       let cv = GI.coverage(null);
       ok(cv.n === 0 && cv.of === 1000 && cv.text === 'Conoces 0 de las 1.000 palabras más comunes', `coverage reads "${cv.text}"`);
       const s5 = {};
-      G.slice(0, 700).forEach(e => { s5[e.id] = { reps: 1, due: td + 5 }; });
+      G.slice(0, 700).forEach(e => { s5[e.id] = { reps: 1, passed: true, due: td + 5 }; });
       s5[G[800].id] = { reps: 0, due: td };                 // a miss is not known
+      // Missed in a review: the SRS counts wrong answers in reps too, so reps
+      // alone said "known" (9 Nov 2026: the bar read 471 where the word test had
+      // marked 390). Missed since its right answer, or never right: not known.
+      s5[G[801].id] = { reps: 2, passed: true, consecMiss: 1, due: td };
+      s5[G[802].id] = { reps: 1, passed: false, consecMiss: 1, due: td };
+      s5[G[803].id] = { reps: 1, learnt: true, passed: true, due: td + 36500 };
       localStorage.setItem('fluidez.srs', JSON.stringify(s5));
       cv = GI.coverage(null);
-      ok(cv.n === 700 && cv.of === 1000 && /Conoces 700 de las 1\.000/.test(cv.text), `coverage reads "${cv.text}"`);
+      ok(cv.n === 701 && cv.of === 1000 && /Conoces 701 de las 1\.000/.test(cv.text), `coverage reads "${cv.text}" (missed words counted as known?)`);
+      ok(!GI.knownCard(s5[G[801].id]) && !GI.knownCard(s5[G[802].id]) && GI.knownCard(s5[G[803].id]),
+         'knownCard: a word missed since its right answer must not be known; a learnt one must');
+      if (GI.wordTestNext) {
+        const nx = GI.wordTestNext(801);
+        ok(nx && nx.e.es === G[801].es, 'Prueba de palabras skips a word missed in a review as if it were known');
+      }
       const s6 = {};
-      G.slice(0, 1200).forEach(e => { s6[e.id] = { reps: 1, due: td + 5 }; });
+      G.slice(0, 1200).forEach(e => { s6[e.id] = { reps: 1, passed: true, due: td + 5 }; });
       localStorage.setItem('fluidez.srs', JSON.stringify(s6));
       cv = GI.coverage(null);
       ok(cv.of === 2000 && cv.n === 1200 && /de las 2\.000/.test(cv.text), `past a thousand the line reads "${cv.text}"`);
@@ -1530,7 +1542,7 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
       const withAlt = PL.find(e => e.alt.length && e.n <= 6), withQ = PL.find(e => /^¿/.test(e.es) && e.n <= 6);
       const longer = PL.find(e => e.n >= 7 && e.n <= 8 && e.c === 'A1') || PL.find(e => e.n >= 7 && e.n <= 8 && ['A1', 'A2'].indexOf(e.c) !== -1);
       const sKnown = {};
-      [withAlt, withQ, longer].filter(Boolean).forEach((e, k) => { sKnown[e.id] = { reps: 2, due: td - 1 - k, last: td - 9, box: 2 }; });
+      [withAlt, withQ, longer].filter(Boolean).forEach((e, k) => { sKnown[e.id] = { reps: 2, passed: true, due: td - 1 - k, last: td - 9, box: 2 }; });
       localStorage.setItem('fluidez.srs', JSON.stringify(sKnown));
       const dealt = playP(3, {}, fresh());
       const byEs = es => dealt.find(i => i.answer === es || i.reveal === es);
@@ -1549,7 +1561,7 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
 
       // the cap in a Tranquilo round with fillers, and a note in the feedback item
       const fill = {};
-      PL.slice(0, 30).forEach((e, i) => { fill[e.id] = { reps: 2, due: td + 3 + i, last: td - 1, box: 2 }; });
+      PL.slice(0, 30).forEach((e, i) => { fill[e.id] = { reps: 2, passed: true, due: td + 3 + i, last: td - 1, box: 2 }; });
       localStorage.setItem('fluidez.srs', JSON.stringify(fill));
       for (let t = 0; t < 5; t++) {
         const rr = playP(10, { count: 10, gkind: 'sphrase' }, fresh());
@@ -1598,7 +1610,7 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
       localStorage.removeItem('fluidez.srs');
       let pc = GI.phraseCoverage();
       ok(pc.n === 0 && pc.of === 700 && pc.text === 'Conoces 0 de las 700 frases más comunes', `phrase coverage reads "${pc.text}"`);
-      const sc = {}; PL.slice(0, 120).forEach(e => { sc[e.id] = { reps: 1, due: td + 5 }; }); sc[PL[300].id] = { reps: 0, due: td };
+      const sc = {}; PL.slice(0, 120).forEach(e => { sc[e.id] = { reps: 1, passed: true, due: td + 5 }; }); sc[PL[300].id] = { reps: 0, due: td };
       localStorage.setItem('fluidez.srs', JSON.stringify(sc));
       pc = GI.phraseCoverage();
       ok(pc.n === 120 && pc.text === 'Conoces 120 de las 700 frases más comunes', `phrase coverage reads "${pc.text}"`);
@@ -1693,12 +1705,12 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
   /* the panel numbers, from a seeded SRS */
   {
     const L = GI.grindList().list, srs = {};
-    L.slice(0, 820).forEach(e => { srs[e.id] = { reps: 1 }; });
-    L.slice(1000, 1100).forEach(e => { srs[e.id] = { reps: 1 }; });
-    srs['vt:llegar:presente'] = { reps: 1 }; srs['vt:llegar:preterito'] = { reps: 3 };
-    srs['vt:comer:presente'] = { reps: 2 }; srs['vt:hablar:presente'] = { reps: 0 };
+    L.slice(0, 820).forEach(e => { srs[e.id] = { reps: 1, passed: true }; });
+    L.slice(1000, 1100).forEach(e => { srs[e.id] = { reps: 1, passed: true }; });
+    srs['vt:llegar:presente'] = { reps: 1, passed: true }; srs['vt:llegar:preterito'] = { reps: 3, passed: true };
+    srs['vt:comer:presente'] = { reps: 2, passed: true }; srs['vt:hablar:presente'] = { reps: 0 };
     const PL = GI.phraseList().list;
-    PL.slice(0, 12).forEach(e => { srs[e.id] = { reps: 1 }; });
+    PL.slice(0, 12).forEach(e => { srs[e.id] = { reps: 1, passed: true }; });
     localStorage.setItem('fluidez.srs', JSON.stringify(srs));
     const wp = TCk.wordProgress();
     ok(wp.total === 920, `known words: ${wp.total}, wanted 920`);
