@@ -1,0 +1,1012 @@
+[
+ {
+  "q": "Tá a ___ (athair, her) tinn.",
+  "base": "athair",
+  "r": "h",
+  "e": "Her father is sick.",
+  "w": "Here a means her, so h goes before the vowel: athair becomes hathair.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Tá a ___ (iníon, her) ar scoil.",
+  "base": "iníon",
+  "r": "h",
+  "e": "Her daughter is at school.",
+  "w": "Here a means her, so h goes before the vowel: iníon becomes hiníon.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Chaill sí a ___ (airgead, her).",
+  "base": "airgead",
+  "r": "h",
+  "e": "She lost her money.",
+  "w": "Here a means her, so h goes before the vowel: airgead becomes hairgead.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Tá a ___ (árasán, her) i gCorcaigh.",
+  "base": "árasán",
+  "r": "h",
+  "e": "Her flat is in Cork.",
+  "w": "Here a means her, so h goes before the vowel: árasán becomes hárasán.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Is í Nóra a ___ (aintín, her).",
+  "base": "aintín",
+  "r": "h",
+  "e": "Nóra is her aunt.",
+  "w": "Here a means her, so h goes before the vowel: aintín becomes haintín.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Tá a ___ (oifig, her) ar an tríú hurlár.",
+  "base": "oifig",
+  "r": "h",
+  "e": "Her office is on the third floor.",
+  "w": "Here a means her, so h goes before the vowel: oifig becomes hoifig.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "D'ith sí a ___ (úll, her).",
+  "base": "úll",
+  "r": "h",
+  "e": "She ate her apple.",
+  "w": "Here a means her, so h goes before the vowel: úll becomes húll.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Tá a ___ (uncail, her) ina fheirmeoir.",
+  "base": "uncail",
+  "r": "h",
+  "e": "Her uncle is a farmer.",
+  "w": "Here a means her, so h goes before the vowel: uncail becomes huncail.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Is é Liam a ___ (athair, her).",
+  "base": "athair",
+  "r": "h",
+  "e": "Liam is her father.",
+  "w": "Here a means her, so h goes before the vowel: athair becomes hathair.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Tá a ___ (ainm, her) ar an liosta.",
+  "base": "ainm",
+  "r": "h",
+  "e": "Her name is on the list.",
+  "w": "Here a means her, so h goes before the vowel: ainm becomes hainm.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Tá a ___ (éadaí, her) fliuch.",
+  "base": "éadaí",
+  "r": "h",
+  "e": "Her clothes are wet.",
+  "w": "Here a means her, so h goes before the vowel: éadaí becomes héadaí.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Scríobh sí a ___ (ainm, her) ar an bhfoirm.",
+  "base": "ainm",
+  "r": "h",
+  "e": "She wrote her name on the form.",
+  "w": "Here a means her, so h goes before the vowel: ainm becomes hainm.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Tá a ___ (obair, her) déanta.",
+  "base": "obair",
+  "r": "h",
+  "e": "Her work is done.",
+  "w": "Here a means her, so h goes before the vowel: obair becomes hobair.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Tá a ___ (aghaidh, her) dearg.",
+  "base": "aghaidh",
+  "r": "h",
+  "e": "Her face is red.",
+  "w": "Here a means her, so h goes before the vowel: aghaidh becomes haghaidh.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Nigh sí a ___ (aghaidh, her).",
+  "base": "aghaidh",
+  "r": "h",
+  "e": "She washed her face.",
+  "w": "Here a means her, so h goes before the vowel: aghaidh becomes haghaidh.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Is breá léi a ___ (athair, her).",
+  "base": "athair",
+  "r": "h",
+  "e": "She loves her father.",
+  "w": "Here a means her, so h goes before the vowel: athair becomes hathair.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Chaill sí a ___ (eochair, her) arís.",
+  "base": "eochair",
+  "r": "h",
+  "e": "She lost her key again.",
+  "w": "Here a means her, so h goes before the vowel: eochair becomes heochair.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Tá a ___ (ordóg, her) tinn.",
+  "base": "ordóg",
+  "r": "h",
+  "e": "Her thumb is sore.",
+  "w": "Here a means her, so h goes before the vowel: ordóg becomes hordóg.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Tá a ___ (iníon, her) ag foghlaim Gaeilge.",
+  "base": "iníon",
+  "r": "h",
+  "e": "Her daughter is learning Irish.",
+  "w": "Here a means her, so h goes before the vowel: iníon becomes hiníon.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Tá a ___ (athair, her) ag obair i nGaillimh.",
+  "base": "athair",
+  "r": "h",
+  "e": "Her father works in Galway.",
+  "w": "Here a means her, so h goes before the vowel: athair becomes hathair.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Tá a ___ (uncail, her) ag teacht anocht.",
+  "base": "uncail",
+  "r": "h",
+  "e": "Her uncle is coming tonight.",
+  "w": "Here a means her, so h goes before the vowel: uncail becomes huncail.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Bhí a ___ (aintín, her) anseo inné.",
+  "base": "aintín",
+  "r": "h",
+  "e": "Her aunt was here yesterday.",
+  "w": "Here a means her, so h goes before the vowel: aintín becomes haintín.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Rinne sí a ___ (obair, her) bhaile.",
+  "base": "obair",
+  "r": "h",
+  "e": "She did her homework.",
+  "w": "Here a means her, so h goes before the vowel: obair becomes hobair.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Tá a ___ (árasán, her) beag ach deas.",
+  "base": "árasán",
+  "r": "h",
+  "e": "Her flat is small but nice.",
+  "w": "Here a means her, so h goes before the vowel: árasán becomes hárasán.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Thit a ___ (úll, her) ar an urlár.",
+  "base": "úll",
+  "r": "h",
+  "e": "Her apple fell on the floor.",
+  "w": "Here a means her, so h goes before the vowel: úll becomes húll.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Tá a ___ (ainm, her) scríofa ar an doras.",
+  "base": "ainm",
+  "r": "h",
+  "e": "Her name is written on the door.",
+  "w": "Here a means her, so h goes before the vowel: ainm becomes hainm.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Cén aois í a ___ (iníon, her)?",
+  "base": "iníon",
+  "r": "h",
+  "e": "How old is her daughter?",
+  "w": "Here a means her, so h goes before the vowel: iníon becomes hiníon.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Tá a ___ (oifig, her) i mBaile Átha Cliath.",
+  "base": "oifig",
+  "r": "h",
+  "e": "Her office is in Dublin.",
+  "w": "Here a means her, so h goes before the vowel: oifig becomes hoifig.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Tá a ___ (airgead, her) sa bhanc.",
+  "base": "airgead",
+  "r": "h",
+  "e": "Her money is in the bank.",
+  "w": "Here a means her, so h goes before the vowel: airgead becomes hairgead.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Tá a ___ (iníon, her) ina dochtúir.",
+  "base": "iníon",
+  "r": "h",
+  "e": "Her daughter is a doctor.",
+  "w": "Here a means her, so h goes before the vowel: iníon becomes hiníon.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Chuir sí a ___ (éadaí, her) sa mhála.",
+  "base": "éadaí",
+  "r": "h",
+  "e": "She put her clothes in the bag.",
+  "w": "Here a means her, so h goes before the vowel: éadaí becomes héadaí.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Is é seo a ___ (árasán, her) nua.",
+  "base": "árasán",
+  "r": "h",
+  "e": "This is her new flat.",
+  "w": "Here a means her, so h goes before the vowel: árasán becomes hárasán.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "D'ól sí a ___ (uisce, her).",
+  "base": "uisce",
+  "r": "h",
+  "e": "She drank her water.",
+  "w": "Here a means her, so h goes before the vowel: uisce becomes huisce.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Tá a ___ (anraith, her) fuar.",
+  "base": "anraith",
+  "r": "h",
+  "e": "Her soup is cold.",
+  "w": "Here a means her, so h goes before the vowel: anraith becomes hanraith.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "h"
+ },
+ {
+  "q": "Bhí a ___ (athair, her) agus a máthair ann.",
+  "base": "athair",
+  "r": "h",
+  "e": "Her father and mother were there.",
+  "w": "Here a means her, so h goes before the vowel: athair becomes hathair.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Bhí an lá go ___ (álainn).",
+  "base": "álainn",
+  "r": "h",
+  "e": "The day was lovely.",
+  "w": "Go before an adjective starting with a vowel takes h: hálainn.",
+  "wg": "Go + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Bhí an cheolchoirm go ___ (iontach).",
+  "base": "iontach",
+  "r": "h",
+  "e": "The concert was great.",
+  "w": "Go before an adjective starting with a vowel takes h: hiontach.",
+  "wg": "Go + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tá an aimsir go ___ (uafásach) inniu.",
+  "base": "uafásach",
+  "r": "h",
+  "e": "The weather is awful today.",
+  "w": "Go before an adjective starting with a vowel takes h: huafásach.",
+  "wg": "Go + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Is maith liom ceol, go ___ (áirithe) ceol Gaelach.",
+  "base": "áirithe",
+  "r": "h",
+  "e": "I like music, especially Irish music.",
+  "w": "Go before an adjective starting with a vowel takes h: háirithe.",
+  "wg": "Go + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tá an obair déanta go ___ (iomlán).",
+  "base": "iomlán",
+  "r": "h",
+  "e": "The work is completely done.",
+  "w": "Go before an adjective starting with a vowel takes h: hiomlán.",
+  "wg": "Go + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Rinne sé an obair go ___ (éasca).",
+  "base": "éasca",
+  "r": "h",
+  "e": "He did the work easily.",
+  "w": "Go before an adjective starting with a vowel takes h: héasca.",
+  "wg": "Go + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Labhair sé go ___ (ard).",
+  "base": "ard",
+  "r": "h",
+  "e": "He spoke loudly.",
+  "w": "Go before an adjective starting with a vowel takes h: hard.",
+  "wg": "Go + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tá do ghúna go ___ (álainn).",
+  "base": "álainn",
+  "r": "h",
+  "e": "Your dress is lovely.",
+  "w": "Go before an adjective starting with a vowel takes h: hálainn.",
+  "wg": "Go + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Bhí an bia go ___ (iontach).",
+  "base": "iontach",
+  "r": "h",
+  "e": "The food was great.",
+  "w": "Go before an adjective starting with a vowel takes h: hiontach.",
+  "wg": "Go + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Bhí an cluiche go ___ (uafásach).",
+  "base": "uafásach",
+  "r": "h",
+  "e": "The match was awful.",
+  "w": "Go before an adjective starting with a vowel takes h: huafásach.",
+  "wg": "Go + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tá an gairdín go ___ (álainn) sa samhradh.",
+  "base": "álainn",
+  "r": "h",
+  "e": "The garden is lovely in summer.",
+  "w": "Go before an adjective starting with a vowel takes h: hálainn.",
+  "wg": "Go + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Chuaigh mé go ___ (Albain) anuraidh.",
+  "base": "Albain",
+  "r": "h",
+  "e": "I went to Scotland last year.",
+  "w": "Go (to) before a place starting with a vowel takes h: go hAlbain.",
+  "wg": "Go + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tháinig siad go ___ (Éirinn) inné.",
+  "base": "Éirinn",
+  "r": "h",
+  "e": "They came to Ireland yesterday.",
+  "w": "Go (to) before a place starting with a vowel takes h: go hÉirinn.",
+  "wg": "Go + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Chuaigh muid go ___ (Árainn) ar an mbád.",
+  "base": "Árainn",
+  "r": "h",
+  "e": "We went to Aran on the boat.",
+  "w": "Go (to) before a place starting with a vowel takes h: go hÁrainn.",
+  "wg": "Go + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tá an traein ag dul go ___ (Inis).",
+  "base": "Inis",
+  "r": "h",
+  "e": "The train is going to Ennis.",
+  "w": "Go (to) before a place starting with a vowel takes h: go hInis.",
+  "wg": "Go + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Bhí an scannán go ___ (iontach) ar fad.",
+  "base": "iontach",
+  "r": "h",
+  "e": "The film was absolutely great.",
+  "w": "Go before an adjective starting with a vowel takes h: hiontach.",
+  "wg": "Go + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Bhí sé go ___ (olc) inné.",
+  "base": "olc",
+  "r": "h",
+  "e": "He was in a bad way yesterday.",
+  "w": "Go before an adjective starting with a vowel takes h: holc.",
+  "wg": "Go + h roimh ghuta.",
+  "b": "B1",
+  "t": "h"
+ },
+ {
+  "q": "Bhí an oíche go ___ (álainn).",
+  "base": "álainn",
+  "r": "h",
+  "e": "The night was lovely.",
+  "w": "Go before an adjective starting with a vowel takes h: hálainn.",
+  "wg": "Go + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Rachaidh mé go ___ (Albain) an bhliain seo chugainn.",
+  "base": "Albain",
+  "r": "h",
+  "e": "I will go to Scotland next year.",
+  "w": "Go (to) before a place starting with a vowel takes h: go hAlbain.",
+  "wg": "Go + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tá an teach go ___ (álainn) anois.",
+  "base": "álainn",
+  "r": "h",
+  "e": "The house is lovely now.",
+  "w": "Go before an adjective starting with a vowel takes h: hálainn.",
+  "wg": "Go + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Bhí mé ag caint le ___ (Aoife).",
+  "base": "Aoife",
+  "r": "h",
+  "e": "I was talking to Aoife.",
+  "w": "Le (with) puts h before a vowel: Aoife becomes hAoife.",
+  "wg": "Le + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Imríonn sé peil le ___ (Éirinn).",
+  "base": "Éirinn",
+  "r": "h",
+  "e": "He plays football for Ireland.",
+  "w": "Le (with) puts h before a vowel: Éirinn becomes hÉirinn.",
+  "wg": "Le + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Chuaigh sí ann le ___ (Úna).",
+  "base": "Úna",
+  "r": "h",
+  "e": "She went there with Úna.",
+  "w": "Le (with) puts h before a vowel: Úna becomes hÚna.",
+  "wg": "Le + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tá mé ag dul amach le ___ (Eoin) anocht.",
+  "base": "Eoin",
+  "r": "h",
+  "e": "I am going out with Eoin tonight.",
+  "w": "Le (with) puts h before a vowel: Eoin becomes hEoin.",
+  "wg": "Le + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Bhuail mé le ___ (Aodh) sa bhaile mór.",
+  "base": "Aodh",
+  "r": "h",
+  "e": "I met Aodh in town.",
+  "w": "Le (with) puts h before a vowel: Aodh becomes hAodh.",
+  "wg": "Le + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Líon an buidéal le ___ (uisce).",
+  "base": "uisce",
+  "r": "h",
+  "e": "Fill the bottle with water.",
+  "w": "Le (with) puts h before a vowel: uisce becomes huisce.",
+  "wg": "Le + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Ná labhair le ___ (aon) duine faoi.",
+  "base": "aon",
+  "r": "h",
+  "e": "Don't talk to anyone about it.",
+  "w": "Le (with) puts h before a vowel: aon becomes haon.",
+  "wg": "Le + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Is maith liom arán le ___ (im).",
+  "base": "im",
+  "r": "h",
+  "e": "I like bread with butter.",
+  "w": "Le (with) puts h before a vowel: im becomes him.",
+  "wg": "Le + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "D'ith mé sú talún le ___ (uachtar).",
+  "base": "uachtar",
+  "r": "h",
+  "e": "I ate strawberries with cream.",
+  "w": "Le (with) puts h before a vowel: uachtar becomes huachtar.",
+  "wg": "Le + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Bhí sí ag damhsa le ___ (Oisín).",
+  "base": "Oisín",
+  "r": "h",
+  "e": "She was dancing with Oisín.",
+  "w": "Le (with) puts h before a vowel: Oisín becomes hOisín.",
+  "wg": "Le + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tá mé ag obair le ___ (Áine).",
+  "base": "Áine",
+  "r": "h",
+  "e": "I work with Áine.",
+  "w": "Le (with) puts h before a vowel: Áine becomes hÁine.",
+  "wg": "Le + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Chuaigh mé ar scoil le ___ (Eibhlín).",
+  "base": "Eibhlín",
+  "r": "h",
+  "e": "I went to school with Eibhlín.",
+  "w": "Le (with) puts h before a vowel: Eibhlín becomes hEibhlín.",
+  "wg": "Le + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Labhair mé le ___ (Éamonn) ar an bhfón.",
+  "base": "Éamonn",
+  "r": "h",
+  "e": "I spoke to Éamonn on the phone.",
+  "w": "Le (with) puts h before a vowel: Éamonn becomes hÉamonn.",
+  "wg": "Le + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Ghlan sé an t-urlár le ___ (uisce) te.",
+  "base": "uisce",
+  "r": "h",
+  "e": "He cleaned the floor with hot water.",
+  "w": "Le (with) puts h before a vowel: uisce becomes huisce.",
+  "wg": "Le + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tá na ___ (úlla) ar an mbord.",
+  "base": "úlla",
+  "r": "h",
+  "e": "The apples are on the table.",
+  "w": "Na with a plural noun puts h before a vowel: húlla.",
+  "wg": "Na + iolra + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Bhí na ___ (oícheanta) fuar.",
+  "base": "oícheanta",
+  "r": "h",
+  "e": "The nights were cold.",
+  "w": "Na with a plural noun puts h before a vowel: hoícheanta.",
+  "wg": "Na + iolra + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Cá bhfuil na ___ (uibheacha)?",
+  "base": "uibheacha",
+  "r": "h",
+  "e": "Where are the eggs?",
+  "w": "Na with a plural noun puts h before a vowel: huibheacha.",
+  "wg": "Na + iolra + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Is breá liom na ___ (amhráin) seo.",
+  "base": "amhráin",
+  "r": "h",
+  "e": "I love these songs.",
+  "w": "Na with a plural noun puts h before a vowel: hamhráin.",
+  "wg": "Na + iolra + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tá na ___ (éin) ag canadh.",
+  "base": "éin",
+  "r": "h",
+  "e": "The birds are singing.",
+  "w": "Na with a plural noun puts h before a vowel: héin.",
+  "wg": "Na + iolra + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Bhí na ___ (áiteanna) go léir lán.",
+  "base": "áiteanna",
+  "r": "h",
+  "e": "All the places were full.",
+  "w": "Na with a plural noun puts h before a vowel: háiteanna.",
+  "wg": "Na + iolra + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tá na ___ (oifigí) dúnta.",
+  "base": "oifigí",
+  "r": "h",
+  "e": "The offices are closed.",
+  "w": "Na with a plural noun puts h before a vowel: hoifigí.",
+  "wg": "Na + iolra + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tá na ___ (iníonacha) sa ghairdín.",
+  "base": "iníonacha",
+  "r": "h",
+  "e": "The daughters are in the garden.",
+  "w": "Na with a plural noun puts h before a vowel: hiníonacha.",
+  "wg": "Na + iolra + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Bhí na ___ (Éireannaigh) ag canadh.",
+  "base": "Éireannaigh",
+  "r": "h",
+  "e": "The Irish people were singing.",
+  "w": "Na with a plural noun puts h before a vowel, with no hyphen before a capital: hÉireannaigh.",
+  "wg": "Na + iolra + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tá na ___ (árasáin) nua daor.",
+  "base": "árasáin",
+  "r": "h",
+  "e": "The new flats are expensive.",
+  "w": "Na with a plural noun puts h before a vowel: hárasáin.",
+  "wg": "Na + iolra + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tháinig na ___ (aintíní) ar cuairt.",
+  "base": "aintíní",
+  "r": "h",
+  "e": "The aunts came to visit.",
+  "w": "Na with a plural noun puts h before a vowel: haintíní.",
+  "wg": "Na + iolra + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tá na ___ (oileáin) go hálainn.",
+  "base": "oileáin",
+  "r": "h",
+  "e": "The islands are beautiful.",
+  "w": "Na with a plural noun puts h before a vowel: hoileáin.",
+  "wg": "Na + iolra + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tá na ___ (oráistí) milis.",
+  "base": "oráistí",
+  "r": "h",
+  "e": "The oranges are sweet.",
+  "w": "Na with a plural noun puts h before a vowel: horáistí.",
+  "wg": "Na + iolra + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Bhí na ___ (iascairí) amuigh ar an bhfarraige.",
+  "base": "iascairí",
+  "r": "h",
+  "e": "The fishermen were out on the sea.",
+  "w": "Na with a plural noun puts h before a vowel: hiascairí.",
+  "wg": "Na + iolra + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tá na ___ (asail) sa pháirc.",
+  "base": "asail",
+  "r": "h",
+  "e": "The donkeys are in the field.",
+  "w": "Na with a plural noun puts h before a vowel: hasail.",
+  "wg": "Na + iolra + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Bhí na ___ (amhránaithe) go maith.",
+  "base": "amhránaithe",
+  "r": "h",
+  "e": "The singers were good.",
+  "w": "Na with a plural noun puts h before a vowel: hamhránaithe.",
+  "wg": "Na + iolra + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tá na ___ (éadaí) tirim anois.",
+  "base": "éadaí",
+  "r": "h",
+  "e": "The clothes are dry now.",
+  "w": "Na with a plural noun puts h before a vowel: héadaí.",
+  "wg": "Na + iolra + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Cá bhfuil na ___ (eochracha)?",
+  "base": "eochracha",
+  "r": "h",
+  "e": "Where are the keys?",
+  "w": "Na with a plural noun puts h before a vowel: heochracha.",
+  "wg": "Na + iolra + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Ná ___ (ól) an t-uisce sin.",
+  "base": "ól",
+  "r": "h",
+  "e": "Don't drink that water.",
+  "w": "Ná (do not) puts h before a vowel: hól.",
+  "wg": "Ná + h roimh ghuta.",
+  "b": "B1",
+  "t": "h"
+ },
+ {
+  "q": "Ná ___ (ith) an cáca go léir.",
+  "base": "ith",
+  "r": "h",
+  "e": "Don't eat all the cake.",
+  "w": "Ná (do not) puts h before a vowel: hith.",
+  "wg": "Ná + h roimh ghuta.",
+  "b": "B1",
+  "t": "h"
+ },
+ {
+  "q": "Ná ___ (imigh) fós.",
+  "base": "imigh",
+  "r": "h",
+  "e": "Don't go yet.",
+  "w": "Ná (do not) puts h before a vowel: himigh.",
+  "wg": "Ná + h roimh ghuta.",
+  "b": "B1",
+  "t": "h"
+ },
+ {
+  "q": "Ná ___ (oscail) an fhuinneog.",
+  "base": "oscail",
+  "r": "h",
+  "e": "Don't open the window.",
+  "w": "Ná (do not) puts h before a vowel: hoscail.",
+  "wg": "Ná + h roimh ghuta.",
+  "b": "B1",
+  "t": "h"
+ },
+ {
+  "q": "Ná ___ (inis) do Sheán é.",
+  "base": "inis",
+  "r": "h",
+  "e": "Don't tell Seán.",
+  "w": "Ná (do not) puts h before a vowel: hinis.",
+  "wg": "Ná + h roimh ghuta.",
+  "b": "B1",
+  "t": "h"
+ },
+ {
+  "q": "Ná ___ (éist) leis.",
+  "base": "éist",
+  "r": "h",
+  "e": "Don't listen to him.",
+  "w": "Ná (do not) puts h before a vowel: héist.",
+  "wg": "Ná + h roimh ghuta.",
+  "b": "B1",
+  "t": "h"
+ },
+ {
+  "q": "Beidh mé ann Dé ___ (Aoine).",
+  "base": "Aoine",
+  "r": "h",
+  "e": "I will be there on Friday.",
+  "w": "Dé before a day starting with a vowel takes h: Dé hAoine.",
+  "wg": "Dé + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Bhí cóisir againn Dé ___ (Aoine).",
+  "base": "Aoine",
+  "r": "h",
+  "e": "We had a party on Friday.",
+  "w": "Dé before a day starting with a vowel takes h: Dé hAoine.",
+  "wg": "Dé + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tosóidh an scoil Dé ___ (Aoine) seo chugainn.",
+  "base": "Aoine",
+  "r": "h",
+  "e": "School starts next Friday.",
+  "w": "Dé before a day starting with a vowel takes h: Dé hAoine.",
+  "wg": "Dé + h roimh ghuta.",
+  "b": "A2",
+  "t": "h"
+ },
+ {
+  "q": "Tá sé chomh ___ (ard) le crann.",
+  "base": "ard",
+  "r": "h",
+  "e": "He is as tall as a tree.",
+  "w": "Chomh (as) puts h before a vowel: hard.",
+  "wg": "Chomh + h roimh ghuta.",
+  "b": "B1",
+  "t": "h"
+ },
+ {
+  "q": "Tá sí chomh ___ (álainn) lena máthair.",
+  "base": "álainn",
+  "r": "h",
+  "e": "She is as beautiful as her mother.",
+  "w": "Chomh (as) puts h before a vowel: hálainn.",
+  "wg": "Chomh + h roimh ghuta.",
+  "b": "B1",
+  "t": "h"
+ },
+ {
+  "q": "Níl mé chomh ___ (óg) sin.",
+  "base": "óg",
+  "r": "h",
+  "e": "I am not that young.",
+  "w": "Chomh (as) puts h before a vowel: hóg.",
+  "wg": "Chomh + h roimh ghuta.",
+  "b": "B1",
+  "t": "h"
+ },
+ {
+  "q": "Ní raibh sé chomh ___ (éasca) sin.",
+  "base": "éasca",
+  "r": "h",
+  "e": "It was not that easy.",
+  "w": "Chomh (as) puts h before a vowel: héasca.",
+  "wg": "Chomh + h roimh ghuta.",
+  "b": "B1",
+  "t": "h"
+ },
+ {
+  "q": "Bhí an bia chomh ___ (iontach) sin!",
+  "base": "iontach",
+  "r": "h",
+  "e": "The food was so great!",
+  "w": "Chomh (as) puts h before a vowel: hiontach.",
+  "wg": "Chomh + h roimh ghuta.",
+  "b": "B1",
+  "t": "h"
+ }
+]

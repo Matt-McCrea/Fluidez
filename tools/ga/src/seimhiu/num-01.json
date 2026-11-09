@@ -670,16 +670,6 @@
   "t": "num"
  },
  {
-  "q": "Tá ceithre ___ (pláta) salach sa doirteal.",
-  "base": "pláta",
-  "r": "len",
-  "e": "There are four dirty plates in the sink.",
-  "w": "Ceithre (four) takes séimhiú: pláta becomes phláta. The noun stays singular.",
-  "wg": "Ceithre + séimhiú.",
-  "b": "A1",
-  "t": "num"
- },
- {
   "q": "Tá ceithre ___ (céad) dalta sa scoil.",
   "base": "céad",
   "r": "len",

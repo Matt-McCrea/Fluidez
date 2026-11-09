@@ -59,7 +59,7 @@
 { "ga": "Rugadh i gCiarraí mé.", "en": "I was born in Kerry.", "th": "mise", "b": "A2", "t": 3 },
 { "ga": "Cathain a rugadh thú?", "en": "When were you born?", "alt": ["Cén uair a rugadh thú?"], "th": "mise", "b": "A2", "t": 3 },
 { "ga": "Cá bhfuil do mhuintir ina gcónaí?", "en": "Where does your family live?", "th": "mise", "b": "B1", "t": 3, "n": "Muintir: your people, your family." },
-{ "ga": "Tá mé i mo chónaí anseo le cúig bliana.", "en": "I've lived here for five years.", "th": "mise", "b": "B1", "t": 3, "n": "Irish uses the present with le for something still going on." },
+{ "ga": "Tá mé anseo le cúig bliana.", "en": "I've been here for five years.", "alt": ["Táim anseo le cúig bliana."], "th": "mise", "b": "B1", "t": 3, "n": "Irish uses the present with le for something still going on." },
 { "ga": "Is mise an duine is sine.", "en": "I'm the eldest.", "th": "mise", "b": "B1", "t": 3 },
 { "ga": "Tá súile gorma agam.", "en": "I have blue eyes.", "th": "mise", "b": "A2", "t": 3 },
 { "ga": "Tá gruaig dhonn orm.", "en": "I have brown hair.", "th": "mise", "b": "A2", "t": 3, "n": "Hair is on you (orm), eyes are at you (agam)." }

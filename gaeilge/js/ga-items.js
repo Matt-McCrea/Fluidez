@@ -302,6 +302,8 @@ window.GAItems = (function () {
     var chosen = [];
     function ok(o) {
       if (o.ga === e.ga || o.en.toLowerCase() === e.en.toLowerCase() || e.alt.indexOf(o.ga) !== -1) return false;
+      // another entry that is this one's alternative (or shares one) would be a second right answer
+      if ((o.alt || []).indexOf(e.ga) !== -1 || (o.alt || []).some(function (a) { return e.alt.indexOf(a) !== -1; })) return false;
       for (var i = 0; i < chosen.length; i++) if (chosen[i].ga === o.ga || chosen[i].en.toLowerCase() === o.en.toLowerCase()) return false;
       return true;
     }

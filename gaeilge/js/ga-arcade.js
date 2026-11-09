@@ -464,8 +464,8 @@
     panel.appendChild(rw);
 
     var rv = el('div', 'arc-prow');
-    rv.appendChild(el('span', 'arc-prow-k', 'Briathra'));
-    rv.appendChild(el('span', 'arc-prow-v', pr.verbs + (pr.verbs === 1 ? ' verb known' : ' verbs known')));
+    rv.appendChild(el('span', 'arc-prow-k', 'Gramadach'));
+    rv.appendChild(el('span', 'arc-prow-v', pr.verbs + (pr.verbs === 1 ? ' verb known' : ' verbs known') + ' · tenses and grammar'));
     var chips = el('div', 'arc-tchips');
     C.UNITS.forEach(function (u) {
       if (!GI.bank(u.k).some(function (r) { return u.t == null || r.t === u.t; })) return;

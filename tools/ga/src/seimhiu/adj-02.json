@@ -1,0 +1,312 @@
+[
+ {
+  "q": "Is bean ___ (mór) í.",
+  "base": "mór",
+  "r": "len",
+  "e": "She is a big woman.",
+  "w": "Bean is feminine, so the adjective after it takes séimhiú: mhór.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Oíche ___ (maith) agat!",
+  "base": "maith",
+  "r": "len",
+  "e": "Good night!",
+  "w": "Oíche is feminine, so the adjective after it takes séimhiú: mhaith.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A1",
+  "t": "adj"
+ },
+ {
+  "q": "Bhí aimsir ___ (maith) againn.",
+  "base": "maith",
+  "r": "len",
+  "e": "We had good weather.",
+  "w": "Aimsir is feminine, so the adjective after it takes séimhiú: mhaith.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is bialann ___ (maith) í.",
+  "base": "maith",
+  "r": "len",
+  "e": "It is a good restaurant.",
+  "w": "Bialann is feminine, so the adjective after it takes séimhiú: mhaith.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is cathair ___ (mór) í Corcaigh.",
+  "base": "mór",
+  "r": "len",
+  "e": "Cork is a big city.",
+  "w": "Cathair is feminine, so the adjective after it takes séimhiú: mhór.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Ba mhaith liom deoch ___ (milis).",
+  "base": "milis",
+  "r": "len",
+  "e": "I would like a sweet drink.",
+  "w": "Deoch is feminine, so the adjective after it takes séimhiú: mhilis.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is áit ___ (maith) í seo.",
+  "base": "maith",
+  "r": "len",
+  "e": "This is a good place.",
+  "w": "Áit is feminine, so the adjective after it takes séimhiú: mhaith.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is scoil ___ (mór) í.",
+  "base": "mór",
+  "r": "len",
+  "e": "It is a big school.",
+  "w": "Scoil is feminine, so the adjective after it takes séimhiú: mhór.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá Gaeilge ___ (maith) aici.",
+  "base": "maith",
+  "r": "len",
+  "e": "She has good Irish.",
+  "w": "Gaeilge is feminine, so the adjective after it takes séimhiú: mhaith.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Bhí traein ___ (mall) ann.",
+  "base": "mall",
+  "r": "len",
+  "e": "There was a slow train.",
+  "w": "Traein is feminine, so the adjective after it takes séimhiú: mhall.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Tá bó ___ (mór) sa pháirc.",
+  "base": "mór",
+  "r": "len",
+  "e": "There is a big cow in the field.",
+  "w": "Bó is feminine, so the adjective after it takes séimhiú: mhór.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is cara ___ (maith) é.",
+  "base": "maith",
+  "r": "none",
+  "e": "He is a good friend.",
+  "w": "Cara is masculine, so the adjective after it does not change: cara maith.",
+  "wg": "Firinscneach é cara: gan athrú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Is fear ___ (mór) é.",
+  "base": "mór",
+  "r": "none",
+  "e": "He is a big man.",
+  "w": "Fear is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Lá ___ (maith) duit!",
+  "base": "maith",
+  "r": "none",
+  "e": "Good day to you!",
+  "w": "Lá is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is teach ___ (mór) é.",
+  "base": "mór",
+  "r": "none",
+  "e": "It is a big house.",
+  "w": "Teach is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is múinteoir ___ (maith) é.",
+  "base": "maith",
+  "r": "none",
+  "e": "He is a good teacher.",
+  "w": "Múinteoir is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is oíche ___ (mór) í do Sheán.",
+  "base": "mór",
+  "r": "len",
+  "e": "It is a big night for Seán.",
+  "w": "Oíche is feminine, so the adjective after it takes séimhiú: mhór.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is feirm ___ (mór) í.",
+  "base": "mór",
+  "r": "len",
+  "e": "It is a big farm.",
+  "w": "Feirm is feminine, so the adjective after it takes séimhiú: mhór.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is cóisir ___ (mór) í.",
+  "base": "mór",
+  "r": "len",
+  "e": "It is a big party.",
+  "w": "Cóisir is feminine, so the adjective after it takes séimhiú: mhór.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is ceist ___ (maith) í sin.",
+  "base": "maith",
+  "r": "len",
+  "e": "That is a good question.",
+  "w": "Ceist is feminine, so the adjective after it takes séimhiú: mhaith.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is comharsa ___ (maith) í.",
+  "base": "maith",
+  "r": "len",
+  "e": "She is a good neighbour.",
+  "w": "Comharsa is feminine, so the adjective after it takes séimhiú: mhaith.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is páirc ___ (mór) í.",
+  "base": "mór",
+  "r": "len",
+  "e": "It is a big field.",
+  "w": "Páirc is feminine, so the adjective after it takes séimhiú: mhór.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is sráid ___ (mór) í.",
+  "base": "mór",
+  "r": "len",
+  "e": "It is a big street.",
+  "w": "Sráid is feminine, so the adjective after it takes séimhiú: mhór.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is foireann ___ (maith) í.",
+  "base": "maith",
+  "r": "len",
+  "e": "It is a good team.",
+  "w": "Foireann is feminine, so the adjective after it takes séimhiú: mhaith.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is iníon ___ (maith) í.",
+  "base": "maith",
+  "r": "len",
+  "e": "She is a good daughter.",
+  "w": "Iníon is feminine, so the adjective after it takes séimhiú: mhaith.",
+  "wg": "Aidiacht i ndiaidh ainmfhocail bhaininscnigh: séimhiú.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is buachaill ___ (maith) é.",
+  "base": "maith",
+  "r": "none",
+  "e": "He is a good boy.",
+  "w": "Buachaill is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is cailín ___ (maith) í.",
+  "base": "maith",
+  "r": "none",
+  "e": "She is a good girl.",
+  "w": "Cailín is masculine, though it means girl, so the adjective does not change: cailín maith.",
+  "wg": "Firinscneach é cailín: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Is gairdín ___ (mór) é.",
+  "base": "mór",
+  "r": "none",
+  "e": "It is a big garden.",
+  "w": "Gairdín is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Is siopa ___ (maith) é.",
+  "base": "maith",
+  "r": "none",
+  "e": "It is a good shop.",
+  "w": "Siopa is masculine, so the adjective after it does not change.",
+  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
+  "b": "A2",
+  "t": "adj"
+ },
+ {
+  "q": "Tá an aimsir ___ (maith) inniu.",
+  "base": "maith",
+  "r": "none",
+  "e": "The weather is good today.",
+  "w": "After tá the adjective stands apart from the noun, so it never takes séimhiú.",
+  "wg": "Aidiacht i ndiaidh tá: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ },
+ {
+  "q": "Tá an chathair ___ (mór).",
+  "base": "mór",
+  "r": "none",
+  "e": "The city is big.",
+  "w": "After tá the adjective stands apart from the noun, so it never takes séimhiú.",
+  "wg": "Aidiacht i ndiaidh tá: gan séimhiú.",
+  "b": "B1",
+  "t": "adj"
+ }
+]

@@ -40,7 +40,7 @@
   "b": "A1"
  },
  {
-  "q": "___ (bí) na páistí ar scoil ó a naoi go dtí a trí.",
+  "q": "___ (bí) na páistí ar scoil ó naoi go trí.",
   "v": "bí",
   "t": "gnathlait",
   "p": "siad",
@@ -152,7 +152,7 @@
   "e": "We are at the swimming pool every Wednesday.",
   "w": "Gach Céadaoin means every Wednesday: bíonn, the habitual present. Bímid carries muid in its ending.",
   "wg": "Gach Céadaoin: an aimsir ghnáthláithreach.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "An ___ (bí) sibh ag foghlaim Gaeilge gach lá?",
@@ -163,7 +163,7 @@
   "e": "Do you all learn Irish every day?",
   "w": "Gach lá means every day: bíonn, the habitual present. An adds urú: bíonn becomes mbíonn.",
   "wg": "Gach lá: an aimsir ghnáthláithreach. An mbíonn (urú).",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Nuair a ___ (bí) sé te, téimid go dtí an trá.",
@@ -185,7 +185,7 @@
   "e": "She says that she is tired every morning.",
   "w": "Gach maidin means every morning: bíonn, the habitual present. Go adds urú: bíonn becomes mbíonn.",
   "wg": "Gach maidin: an aimsir ghnáthláithreach. Go mbíonn (urú).",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "Má ___ (bí) sé fliuch, fanaimid sa bhaile.",
@@ -196,7 +196,7 @@
   "e": "If it's wet, we stay at home.",
   "w": "Fanaimid is a regular present, so bíonn here. Má adds séimhiú: bíonn becomes bhíonn.",
   "wg": "Fanaimid: an aimsir ghnáthláithreach. Má bhíonn (séimhiú).",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "An ___ (bí) na siopaí ar oscailt go déanach ar an Déardaoin?",
@@ -218,7 +218,7 @@
   "e": "I'm never late.",
   "w": "Riamh means never: bíonn, the habitual present. Ní adds séimhiú: bím becomes bhím. The ending carries mé.",
   "wg": "Riamh: an aimsir ghnáthláithreach. Ní bhím (séimhiú).",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "___ (bí) tú i gcónaí ag caint ar d'fhón!",
@@ -228,7 +228,7 @@
   "e": "You're always talking on your phone!",
   "w": "I gcónaí means always: bíonn, the habitual present.",
   "wg": "I gcónaí: an aimsir ghnáthláithreach.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "___ (bí) an trácht go dona gach maidin.",
@@ -249,7 +249,7 @@
   "e": "We aren't at school during the summer.",
   "w": "I rith an tsamhraidh: bíonn, the habitual present. Ní adds séimhiú: bímid becomes bhímid.",
   "wg": "I rith an tsamhraidh: an aimsir ghnáthláithreach. Ní bhímid (séimhiú).",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Nach ___ (bí) sé dorcha go luath sa gheimhreadh?",
@@ -260,7 +260,7 @@
   "e": "Isn't it dark early in winter?",
   "w": "Sa gheimhreadh means in winter: bíonn, the habitual present. Nach adds urú: bíonn becomes mbíonn.",
   "wg": "Sa gheimhreadh: an aimsir ghnáthláithreach. Nach mbíonn (urú).",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (bí) an fharraige fuar fiú sa samhradh anseo.",
@@ -270,7 +270,7 @@
   "e": "The sea is cold even in summer here.",
   "w": "Sa samhradh means in summer: bíonn, the habitual present.",
   "wg": "Sa samhradh: an aimsir ghnáthláithreach.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "___ (bí) mo chairde ag imirt peile sa pháirc gach Satharn.",
@@ -290,7 +290,7 @@
   "e": "I'm usually in bed by ten.",
   "w": "De ghnáth means usually: bíonn, the habitual present. Bím carries mé in its ending.",
   "wg": "De ghnáth: an aimsir ghnáthláithreach.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "An ___ (bí) an bia go maith sa cheaintín de ghnáth?",
@@ -332,7 +332,7 @@
   "e": "We speak Irish at home now.",
   "w": "Anois means now: bíonn, the habitual present. Bímid carries muid in its ending.",
   "wg": "Anois: an aimsir ghnáthláithreach.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "Má ___ (bí) tú tinn, fan sa leaba.",
@@ -343,7 +343,7 @@
   "e": "If you are sick, stay in bed.",
   "w": "Advice for any time you are sick: bíonn. Má adds séimhiú: bíonn becomes bhíonn.",
   "wg": "Comhairle do gach uair: an aimsir ghnáthláithreach. Má bhíonn (séimhiú).",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "Cén fáth nach ___ (bí) siad riamh in am?",
@@ -354,7 +354,7 @@
   "e": "Why are they never on time?",
   "w": "Riamh means never: bíonn, the habitual present. Nach adds urú: bíonn becomes mbíonn.",
   "wg": "Riamh: an aimsir ghnáthláithreach. Nach mbíonn (urú).",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (bí) scuaine fhada ag an oifig phoist gach Aoine.",
@@ -386,7 +386,7 @@
   "e": "Do I snore at night?",
   "w": "San oíche means at night: bíonn, the habitual present. An adds urú: bím becomes mbím. The ending carries mé.",
   "wg": "San oíche: an aimsir ghnáthláithreach. An mbím (urú).",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "An rud a ___ (bí) ag cur isteach orm ná an torann.",
@@ -400,11 +400,11 @@
   "b": "B2"
  },
  {
-  "q": "___ (bí) na traenacha ag rith go mall nuair a bhíonn sneachta ann.",
+  "q": "___ (bí) na traenacha mall nuair a bhíonn sneachta ann.",
   "v": "bí",
   "t": "gnathlait",
   "p": "siad",
-  "e": "The trains run slowly when there is snow.",
+  "e": "The trains are slow when there is snow.",
   "w": "Nuair a bhíonn shows something that happens again and again: bíonn, the habitual present.",
   "wg": "Nuair a bhíonn: an aimsir ghnáthláithreach.",
   "b": "B2"
@@ -418,7 +418,7 @@
   "e": "Do we work from home on Fridays?",
   "w": "Ar an Aoine means on Fridays: bíonn, the habitual present. An adds urú: bímid becomes mbímid.",
   "wg": "Ar an Aoine: an aimsir ghnáthláithreach. An mbímid (urú).",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "Ní ___ (bí) sibh riamh ciúin!",
@@ -429,7 +429,7 @@
   "e": "You are all never quiet!",
   "w": "Riamh means never: bíonn, the habitual present. Ní adds séimhiú: bíonn becomes bhíonn.",
   "wg": "Riamh: an aimsir ghnáthláithreach. Ní bhíonn (séimhiú).",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "___ (bí) bricfeasta againn ar a seacht gach maidin.",
@@ -471,7 +471,7 @@
   "e": "You're never happy!",
   "w": "Riamh means never: bíonn, the habitual present. Ní adds séimhiú: bíonn becomes bhíonn.",
   "wg": "Riamh: an aimsir ghnáthláithreach. Ní bhíonn (séimhiú).",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Má ___ (bí) an ghrian ag taitneamh, siúlaim ar scoil.",
@@ -482,7 +482,7 @@
   "e": "If the sun is shining, I walk to school.",
   "w": "Siúlaim is a regular present, so bíonn here. Má adds séimhiú: bíonn becomes bhíonn.",
   "wg": "Siúlaim: an aimsir ghnáthláithreach. Má bhíonn (séimhiú).",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (bí, muid) sa bhaile gach oíche anois.",
@@ -566,7 +566,7 @@
   "e": "You are all always complaining about the weather.",
   "w": "I gcónaí means always: bíonn, the habitual present.",
   "wg": "I gcónaí: an aimsir ghnáthláithreach.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Cloisim go ___ (bí) siad ag troid gach oíche.",
@@ -597,7 +597,7 @@
   "e": "It's dark at five in winter.",
   "w": "Sa gheimhreadh means in winter: bíonn, the habitual present.",
   "wg": "Sa gheimhreadh: an aimsir ghnáthláithreach.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Ní ___ (bí, muid) ag féachaint ar an teilifís i rith na seachtaine.",
@@ -630,6 +630,6 @@
   "e": "What time are you home every evening?",
   "w": "Gach tráthnóna means every evening: bíonn, the habitual present. A adds séimhiú: bíonn becomes bhíonn.",
   "wg": "Gach tráthnóna: an aimsir ghnáthláithreach. A bhíonn (séimhiú).",
-  "b": "B1"
+  "b": "A2"
  }
 ]

@@ -90,7 +90,7 @@
   "e": "Do you enjoy the work now?",
   "w": "Anois means now: present. An adds urú: baineann becomes mbaineann.",
   "wg": "Anois: an aimsir láithreach. An mbaineann (urú).",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Ní ___ (bain) siad a gcótaí díobh sa rang riamh.",
@@ -247,7 +247,7 @@
   "e": "We leave the car at home on Sundays.",
   "w": "Ar an Domhnach means on Sundays: present. Fágaimid carries muid in its ending.",
   "wg": "Ar an Domhnach: an aimsir láithreach.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "___ (glac, mé) sos ag a haon gach lá.",
@@ -279,7 +279,7 @@
   "e": "They don't accept cash any more.",
   "w": "Níos mó means any more: present. Ní adds séimhiú: glacann becomes ghlacann.",
   "wg": "Níos mó: an aimsir láithreach. Ní ghlacann (séimhiú).",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "___ (glac) sí cith gach maidin.",
@@ -403,7 +403,7 @@
   "e": "We understand the problem now.",
   "w": "Anois means now: present. Tuigimid carries muid in its ending.",
   "wg": "Anois: an aimsir láithreach.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Is léir go ___ (tuig) siad an Ghaeilge go maith anois.",
@@ -518,7 +518,7 @@
   "e": "They don't write Christmas cards any more.",
   "w": "Níos mó means any more: present. Ní: sc takes no séimhiú.",
   "wg": "Níos mó: an aimsir láithreach. Ní scríobhann.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "___ (ceap, mé) go bhfuil sé fuar inniu.",
@@ -616,14 +616,14 @@
   "b": "A1"
  },
  {
-  "q": "Ní ___ (féach) sí ar a fón nuair a bhíonn sí ag tiomáint.",
+  "q": "Ní ___ (féach) sí ar a fón riamh nuair a thiomáineann sí.",
   "v": "féach",
   "t": "lait",
   "p": "si",
   "pt": "ní",
-  "e": "She doesn't look at her phone when she's driving.",
-  "w": "Nuair a bhíonn shows a regular present. Ní adds séimhiú: féachann becomes fhéachann.",
-  "wg": "Nuair a bhíonn: an aimsir láithreach. Ní fhéachann (séimhiú).",
+  "e": "She never looks at her phone when she drives.",
+  "w": "Riamh means never: present. Ní adds séimhiú: féachann becomes fhéachann.",
+  "wg": "Riamh: an aimsir láithreach. Ní fhéachann (séimhiú).",
   "b": "A2"
  },
  {
@@ -717,7 +717,7 @@
   "e": "I drink two cups of coffee every morning.",
   "w": "Gach maidin means every morning: present. Ólaim carries mé in its ending.",
   "wg": "Gach maidin: an aimsir láithreach.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Ní ___ (ól) sé alcól ar bith anois.",
@@ -728,7 +728,7 @@
   "e": "He doesn't drink any alcohol now.",
   "w": "Anois means now: present. Ní changes nothing before a vowel.",
   "wg": "Anois: an aimsir láithreach. Ní ólann.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "An ___ (ól) tú tae nó caife de ghnáth?",
@@ -739,7 +739,7 @@
   "e": "Do you usually drink tea or coffee?",
   "w": "De ghnáth means usually: present. An adds nothing before a vowel.",
   "wg": "De ghnáth: an aimsir láithreach. An ólann.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "___ (ól) siad uisce le gach béile.",
@@ -749,7 +749,7 @@
   "e": "They drink water with every meal.",
   "w": "Le gach béile means with every meal: present. The last vowel of ól is broad (a, o, u), so -ann.",
   "wg": "Le gach béile: an aimsir láithreach.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "___ (ól, muid) seacláid te nuair a bhíonn sé fuar.",
@@ -759,7 +759,7 @@
   "e": "We drink hot chocolate when it's cold.",
   "w": "Nuair a bhíonn shows a regular present. Ólaimid carries muid in its ending.",
   "wg": "Nuair a bhíonn: an aimsir láithreach.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "___ (ceannaigh, mé) nuachtán gach Domhnach.",
@@ -801,7 +801,7 @@
   "e": "We don't buy bottled water any more.",
   "w": "Níos mó means any more: present. Ní adds séimhiú: ceannaímid becomes cheannaímid. The ending carries muid.",
   "wg": "Níos mó: an aimsir láithreach. Ní cheannaímid (séimhiú).",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (imir) mo dheartháir peil gach Satharn.",
@@ -843,7 +843,7 @@
   "e": "They don't play computer games during the week.",
   "w": "I rith na seachtaine means during the week: present. Ní changes nothing before a vowel.",
   "wg": "I rith na seachtaine: an aimsir láithreach. Ní imríonn.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (fan, mé) sa bhaile ar an Domhnach.",
@@ -885,7 +885,7 @@
   "e": "They don't stay long when they come.",
   "w": "Thagann is present, so this is too. Ní adds séimhiú: fanann becomes fhanann.",
   "wg": "Thagann: an aimsir láithreach. Ní fhanann (séimhiú).",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (cónaigh, mé) i mBaile Átha Cliath anois.",
@@ -1031,7 +1031,7 @@
   "e": "What time does school start every morning?",
   "w": "Gach maidin means every morning: present. A adds séimhiú: tosaíonn becomes thosaíonn.",
   "wg": "Gach maidin: an aimsir láithreach. A thosaíonn (séimhiú).",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (críochnaigh) an obair ar a cúig gach lá.",
@@ -1083,7 +1083,7 @@
   "e": "Do you read books in Irish now?",
   "w": "Anois means now: present. An: l takes no urú.",
   "wg": "Anois: an aimsir láithreach. An léann.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (éist, mé) le podchraoltaí ar an mbus gach lá.",
@@ -1156,7 +1156,7 @@
   "e": "They learn Irish and French at school now.",
   "w": "Anois means now: present. Foghlaim is a longer verb, so it takes -íonn.",
   "wg": "Anois: an aimsir láithreach.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (cuidigh) sé lena mháthair sa ghairdín gach Satharn.",
@@ -1228,7 +1228,7 @@
   "e": "Aoife runs in the park three times a week.",
   "w": "Trí huaire sa tseachtain means three times a week: present. The last vowel of rith is i, so -eann: ritheann.",
   "wg": "Trí huaire sa tseachtain: an aimsir láithreach.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (snámh, muid) san fharraige gach samhradh.",
@@ -1342,7 +1342,7 @@
   "e": "I always lose my keys.",
   "w": "I gcónaí means always: present. Caillim carries mé in its ending.",
   "wg": "I gcónaí: an aimsir láithreach.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (seol) sí téacs chugam gach oíche.",
@@ -1352,7 +1352,7 @@
   "e": "She sends me a text every night.",
   "w": "Gach oíche means every night: present. The last vowel of seol is broad (a, o, u), so -ann.",
   "wg": "Gach oíche: an aimsir láithreach.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (nigh, mé) mo lámha roimh gach béile.",
@@ -1547,6 +1547,6 @@
   "e": "The grass grows quickly in spring.",
   "w": "San earrach means in spring: present. The last vowel of fás is broad (a, o, u), so -ann.",
   "wg": "San earrach: an aimsir láithreach.",
-  "b": "B1"
+  "b": "A2"
  }
 ]

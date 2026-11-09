@@ -826,7 +826,7 @@
   "e": "I was walking on the street.",
   "w": "Preposition + an + a feminine noun in s: t in front. sráid becomes tsráid.",
   "wg": "Réamhfhocal + an + s baininscneach: ts.",
-  "b": "B1",
+  "b": "B2",
   "t": "art"
  },
  {
@@ -836,7 +836,7 @@
   "e": "I saw her on the street yesterday.",
   "w": "Preposition + an + a feminine noun in s: t in front. sráid becomes tsráid.",
   "wg": "Réamhfhocal + an + s baininscneach: ts.",
-  "b": "B1",
+  "b": "B2",
   "t": "art"
  },
  {
@@ -846,7 +846,7 @@
   "e": "I was talking to the grandmother.",
   "w": "Preposition + an + a feminine noun in s: t in front. seanmháthair becomes tseanmháthair.",
   "wg": "Réamhfhocal + an + s baininscneach: ts.",
-  "b": "B1",
+  "b": "B2",
   "t": "art"
  },
  {
@@ -856,7 +856,7 @@
   "e": "There is a new shop on this street.",
   "w": "Preposition + an + a feminine noun in s: t in front. sráid becomes tsráid.",
   "wg": "Réamhfhocal + an + s baininscneach: ts.",
-  "b": "B1",
+  "b": "B2",
   "t": "art"
  },
  {
@@ -866,7 +866,7 @@
   "e": "They were at the funeral yesterday.",
   "w": "Preposition + an + a feminine noun in s: t in front. sochraid becomes tsochraid.",
   "wg": "Réamhfhocal + an + s baininscneach: ts.",
-  "b": "B1",
+  "b": "B2",
   "t": "art"
  },
  {
@@ -876,7 +876,7 @@
   "e": "She walked down the main street.",
   "w": "Preposition + an + a feminine noun in s: t in front. sráid becomes tsráid.",
   "wg": "Réamhfhocal + an + s baininscneach: ts.",
-  "b": "B1",
+  "b": "B2",
   "t": "art"
  },
  {
@@ -1040,7 +1040,7 @@
   "t": "art"
  },
  {
-  "q": "Bhí sí ag obair sa ___ (feirm).",
+  "q": "Bhí sí ag obair san ___ (feirm).",
   "base": "feirm",
   "r": "len",
   "e": "She was working on the farm.",
@@ -1050,7 +1050,7 @@
   "t": "art"
  },
  {
-  "q": "Bhí mé ag snámh sa ___ (farraige).",
+  "q": "Bhí mé ag snámh san ___ (farraige).",
   "base": "farraige",
   "r": "len",
   "e": "I was swimming in the sea.",

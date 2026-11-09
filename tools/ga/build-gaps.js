@@ -79,7 +79,7 @@ function common(it, why) {
  * tenses a learner confuses, plus the no-particle form when there is a
  * particle (chonaic for fhaca), all real Irish. */
 const CONFUSE = {
-  lait: ['caite', 'fhaist', 'gnath'], gnathlait: ['lait', 'caite', 'gnath'], caite: ['lait', 'fhaist', 'gnath', 'coinn'],
+  lait: ['caite', 'fhaist', 'coinn'], gnathlait: ['lait', 'caite', 'fhaist'], caite: ['lait', 'fhaist', 'gnath', 'coinn'],
   fhaist: ['lait', 'caite', 'coinn'], coinn: ['fhaist', 'gnath', 'caite'], gnath: ['caite', 'coinn', 'lait'], ord: ['lait', 'fhaist']
 };
 function briathra(it, why) {
@@ -189,14 +189,14 @@ function freagair(it, why) {
   if (qlow.indexOf((qw + ' ' + qv).toLowerCase()) === -1) return why(`question should contain "${qw} ${qv}"`);
   const yes = cap(GA.formAfter('', verb, t, ap));
   const noW = GA.formAfter('ní', verb, t, ap);
-  const no = noW === 'níl' ? 'Níl' : cap(GA.particleWord('ní', verb, t)) + ' ' + noW;
+  const no = /^níl/.test(noW) ? cap(noW) : cap(GA.particleWord('ní', verb, t)) + ' ' + noW;
   const a = it.pol === 'yes' ? yes : no;
   const syn = !!verb.f[t][ap][2];
   const x = syn || ap === 'saor' ? [] : [a + ' ' + PRON[ap]];
   // the analytic "muid" form the Caighdeán also allows: Tá muid, Rinne muid, Ní raibh muid
   if (syn && ap === 'muid' && verb.f[t].se) {
     const base = it.pol === 'yes' ? cap(GA.formAfter('', verb, t, 'se')) :
-      (GA.formAfter('ní', verb, t, 'se') === 'níl' ? 'Níl' : cap(GA.particleWord('ní', verb, t)) + ' ' + GA.formAfter('ní', verb, t, 'se'));
+      (/^níl/.test(GA.formAfter('ní', verb, t, 'se')) ? 'Níl' : cap(GA.particleWord('ní', verb, t)) + ' ' + GA.formAfter('ní', verb, t, 'se'));
     x.push(base + ' muid');
   }
   // distractors: the other polarity is NOT one (the cue decides); wrong tense, wrong person
@@ -204,7 +204,7 @@ function freagair(it, why) {
   (CONFUSE[t] || []).forEach(t2 => {
     if (!verb.f[t2] || !verb.f[t2][ap]) return;
     if (it.pol === 'yes') pool.push(cap(GA.formAfter('', verb, t2, ap)));
-    else { const w2 = GA.formAfter('ní', verb, t2, ap); if (w2) pool.push(w2 === 'níl' ? 'Níl' : cap(GA.particleWord('ní', verb, t2)) + ' ' + w2); }
+    else { const w2 = GA.formAfter('ní', verb, t2, ap); if (w2) pool.push(/^níl/.test(w2) ? cap(w2) : cap(GA.particleWord('ní', verb, t2)) + ' ' + w2); }
   });
   const op = it.p === ap ? null : it.p;
   if (op && verb.f[t][op]) pool.push(it.pol === 'yes' ? cap(GA.formAfter('', verb, t, op)) : null);
@@ -227,7 +227,9 @@ function authored(kind) {
  * with r one of len, ecl, t, ts, h, none. The answer is the rule applied to
  * the base; the options are the word's other shapes. Where the word before the
  * gap is a trigger this file knows, the rule is worked out independently
- * (using the noun's gender from BuNaMo) and must agree. */
+ * (using the noun's gender from BuNaMo) and must agree. idiom: true skips that
+ * check for set phrases (ar siúl, thar lear). Words with two shapes (mo mháthair,
+ * an scoil) get two options. */
 const RULES = {
   len: w => GA.lenite(w), ecl: w => GA.eclipse(w), t: w => GA.tPrefix(w), ts: w => GA.tsPrefix(w),
   h: w => GA.hPrefix(w), none: w => w
@@ -250,12 +252,12 @@ function expected(prev2, prev, base, cue) {
   if (prev === 'ár' || prev === 'bhur') return 'ecl';
   if (prev === 'i') return v ? null : 'ecl';
   if (prev === 'a') {
-    if (/\bhis\b/.test(cue)) return 'len';
+    if (/\bhis\b/.test(cue)) return v ? 'none' : 'len';
     if (/\bher\b/.test(cue)) return v ? 'h' : 'none';
     if (/\btheir\b/.test(cue)) return 'ecl';
     return null;
   }
-  if (LEN_NUM.indexOf(prev) !== -1) return (prev === 'aon' && DENTAL.test(base)) ? 'none' : 'len';
+  if (LEN_NUM.indexOf(prev) !== -1) return v || (prev === 'aon' && DENTAL.test(base)) ? 'none' : 'len';
   if (ECL_NUM.indexOf(prev) !== -1) return 'ecl';
   if (prev === 'sa' || prev === 'den' || prev === 'don') {
     if (/^[dt]/i.test(base)) return 'none';
@@ -289,10 +291,11 @@ function seimhiu(it, why) {
   if (it.a && it.a !== a) return why(`authored a "${it.a}", rule gives "${a}"`);
   const toks = words(it.q.replace(/\([^)]*\)/g, '')).map(x => x.toLowerCase());
   const gi = toks.indexOf('___');
-  const exp = expected(toks[gi - 2], toks[gi - 1], it.base, m[1]);
+  let exp = it.idiom ? null : expected(toks[gi - 2], toks[gi - 1], it.base, m[1]);
+  if (exp && exp !== 'none' && RULES[exp](it.base) === it.base) exp = 'none';   // urú cannot touch m, l: i Maigh Eo
   if (exp && exp !== it.r) return why(`after "${toks[gi - 1]}" the rule is ${exp}, not ${it.r}`);
   const o = uniq([a].concat(shuffleSeed(GA.shapes(it.base).filter(x => x !== a), it.q))).slice(0, 4);
-  if (o.length < 3) return why('fewer than 3 shapes (choose a word that mutates)');
+  if (o.length < 2) return why('the word has only one shape');
   return { k: 'seimhiu', q: it.q, a, o, e: it.e, w: it.w, wg: it.wg, b: it.b, t: it.t, base: it.base, r: it.r };
 }
 const MAKERS = { briathra, forainm, freagair, tais: authored('tais'), seimhiu };
@@ -312,6 +315,10 @@ function buildKind(kind) {
       if (!r) { rejected.push(`${f}#${i} ${it.q}: ${msg}`); return; }
       if (seen.has(r.q)) { rejected.push(`${f}#${i} duplicate: ${r.q}`); return; }
       seen.add(r.q);
+      if (/^___/.test(r.q)) {            // the gap opens the sentence: capitalise the answer and every option
+        const C = w => w ? w.replace(/^(d')?(.)/, (m0, d, c) => (d ? "D'" : '') + (d ? c : c.toUpperCase())) : w;
+        r.a = C(r.a); r.o = r.o.map(C); if (r.x) r.x = r.x.map(C);
+      }
       Object.keys(r).forEach(k => r[k] === undefined && delete r[k]);
       out.push(r);
     });

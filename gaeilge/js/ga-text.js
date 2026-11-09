@@ -184,8 +184,8 @@
     var vowelN = part === 'go' || part === 'nach';   // go n-ólann, but an ólann
 
     if (v === 'bí' && t === 'lait') {
-      if (neg) return 'níl';                        // ní + fuil
-      return 'bhfuil';
+      if (neg) return p === 'muid' ? 'nílimid' : 'níl';   // ní + fuil
+      return eclipse(dep);                          // bhfuil, bhfuilimid
     }
 
     if (t === 'caite' && !NI_PAST[v]) {

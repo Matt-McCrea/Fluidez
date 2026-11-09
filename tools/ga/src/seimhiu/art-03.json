@@ -1,0 +1,312 @@
+[
+ {
+  "q": "Tá an ___ (muc) sa pháirc.",
+  "base": "muc",
+  "r": "len",
+  "e": "The pig is in the field.",
+  "w": "Muc is feminine, so an gives it séimhiú: muc becomes mhuc.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Bhí an ___ (maidin) fuar.",
+  "base": "maidin",
+  "r": "len",
+  "e": "The morning was cold.",
+  "w": "Maidin is feminine, so an gives it séimhiú: maidin becomes mhaidin.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Is í an ___ (milseog) an chuid is fearr.",
+  "base": "milseog",
+  "r": "len",
+  "e": "The dessert is the best part.",
+  "w": "Milseog is feminine, so an gives it séimhiú: milseog becomes mhilseog.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (mí) seo gnóthach.",
+  "base": "mí",
+  "r": "len",
+  "e": "This month is busy.",
+  "w": "Mí is feminine, so an gives it séimhiú: mí becomes mhí.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (muintir) go léir anseo.",
+  "base": "muintir",
+  "r": "len",
+  "e": "All the family is here.",
+  "w": "Muintir is feminine, so an gives it séimhiú: muintir becomes mhuintir.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí an ___ (maidin) go hálainn.",
+  "base": "maidin",
+  "r": "len",
+  "e": "The morning was lovely.",
+  "w": "Maidin is feminine, so an gives it séimhiú: maidin becomes mhaidin.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (múinteoir) ag caint.",
+  "base": "múinteoir",
+  "r": "none",
+  "e": "The teacher is talking.",
+  "w": "Múinteoir is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (madra) ag tafann.",
+  "base": "madra",
+  "r": "none",
+  "e": "The dog is barking.",
+  "w": "Madra is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (mála) trom.",
+  "base": "mála",
+  "r": "none",
+  "e": "The bag is heavy.",
+  "w": "Mála is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (margadh) ar siúl inniu.",
+  "base": "margadh",
+  "r": "none",
+  "e": "The market is on today.",
+  "w": "Margadh is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (mac) is sine pósta.",
+  "base": "mac",
+  "r": "none",
+  "e": "The eldest son is married.",
+  "w": "Mac is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá na leabhair sa ___ (mála).",
+  "base": "mála",
+  "r": "len",
+  "e": "The books are in the bag.",
+  "w": "Sa (in the) takes séimhiú: mála becomes mhála.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Cheannaigh mé iasc sa ___ (margadh).",
+  "base": "margadh",
+  "r": "len",
+  "e": "I bought fish in the market.",
+  "w": "Sa (in the) takes séimhiú: margadh becomes mhargadh.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí mé sa ___ (Mumhain) anuraidh.",
+  "base": "Mumhain",
+  "r": "len",
+  "e": "I was in Munster last year.",
+  "w": "Sa (in the) takes séimhiú: Mumhain becomes Mhumhain.",
+  "wg": "Sa + séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Thug mé cnámh don ___ (madra).",
+  "base": "madra",
+  "r": "len",
+  "e": "I gave a bone to the dog.",
+  "w": "Don (to the, for the) takes séimhiú: madra becomes mhadra.",
+  "wg": "Don + séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Thug sí an leabhar don ___ (múinteoir).",
+  "base": "múinteoir",
+  "r": "len",
+  "e": "She gave the book to the teacher.",
+  "w": "Don (to the, for the) takes séimhiú: múinteoir becomes mhúinteoir.",
+  "wg": "Don + séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an t-arán sa ___ (siopa).",
+  "base": "siopa",
+  "r": "none",
+  "e": "The bread is in the shop.",
+  "w": "Siopa is masculine, so sa puts no t before its s: sa siopa.",
+  "wg": "Firinscneach: gan t roimh s.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá sé sa ___ (seomra) eile.",
+  "base": "seomra",
+  "r": "none",
+  "e": "He is in the other room.",
+  "w": "Seomra is masculine, so sa puts no t before its s: sa seomra.",
+  "wg": "Firinscneach: gan t roimh s.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Bhí mé ag an ___ (siopa) ar maidin.",
+  "base": "siopa",
+  "r": "none",
+  "e": "I was at the shop this morning.",
+  "w": "Siopa is masculine, so an puts no t before its s: ag an siopa.",
+  "wg": "Firinscneach: gan t roimh s.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an páiste ag an ___ (siopa) le Daid.",
+  "base": "siopa",
+  "r": "none",
+  "e": "The child is at the shop with Dad.",
+  "w": "Siopa is masculine, so an puts no t before its s: ag an siopa.",
+  "wg": "Firinscneach: gan t roimh s.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Bhí an ___ (mí) seo caite fliuch.",
+  "base": "mí",
+  "r": "len",
+  "e": "Last month was wet.",
+  "w": "Mí is feminine, so an gives it séimhiú: mí becomes mhí.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (muc) salach.",
+  "base": "muc",
+  "r": "len",
+  "e": "The pig is dirty.",
+  "w": "Muc is feminine, so an gives it séimhiú: muc becomes mhuc.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Is í an ___ (Mumhain) an cúige is mó.",
+  "base": "Mumhain",
+  "r": "len",
+  "e": "Munster is the biggest province.",
+  "w": "Mumhain is feminine, so an gives it séimhiú: Mumhain becomes Mhumhain.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "B1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (maidin) ciúin.",
+  "base": "maidin",
+  "r": "len",
+  "e": "The morning is quiet.",
+  "w": "Maidin is feminine, so an gives it séimhiú: maidin becomes mhaidin.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Bhí an ___ (milseog) blasta.",
+  "base": "milseog",
+  "r": "len",
+  "e": "The dessert was tasty.",
+  "w": "Milseog is feminine, so an gives it séimhiú: milseog becomes mhilseog.",
+  "wg": "An + ainmfhocal baininscneach: séimhiú.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (madra) ina chodladh.",
+  "base": "madra",
+  "r": "none",
+  "e": "The dog is asleep.",
+  "w": "Madra is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (mála) ar an urlár.",
+  "base": "mála",
+  "r": "none",
+  "e": "The bag is on the floor.",
+  "w": "Mála is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (múinteoir) tinn inniu.",
+  "base": "múinteoir",
+  "r": "none",
+  "e": "The teacher is sick today.",
+  "w": "Múinteoir is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an ___ (milseán) seo milis.",
+  "base": "milseán",
+  "r": "none",
+  "e": "This sweet is sweet.",
+  "w": "Milseán is masculine, so an changes nothing before a consonant.",
+  "wg": "Firinscneach: gan athrú roimh chonsan.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Tá an t-airgead sa ___ (mála) dubh.",
+  "base": "mála",
+  "r": "len",
+  "e": "The money is in the black bag.",
+  "w": "Sa (in the) takes séimhiú: mála becomes mhála.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ },
+ {
+  "q": "Bhí mé ag siúl sa ___ (margadh).",
+  "base": "margadh",
+  "r": "len",
+  "e": "I was walking in the market.",
+  "w": "Sa (in the) takes séimhiú: margadh becomes mhargadh.",
+  "wg": "Sa + séimhiú.",
+  "b": "A2",
+  "t": "art"
+ }
+]

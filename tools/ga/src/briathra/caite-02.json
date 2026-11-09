@@ -70,7 +70,7 @@
   "e": "It rained all day yesterday.",
   "w": "Inné means yesterday: past. Past: séimhiú on the first letter: chuir.",
   "wg": "Inné: an aimsir chaite.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "___ (cuir) tú an iomarca salainn sa dinnéar aréir.",
@@ -122,7 +122,7 @@
   "e": "He didn't win the prize in the competition yesterday.",
   "w": "Inné means yesterday: past. Níor (not) in the past, then séimhiú and no d': níor bhain.",
   "wg": "Inné: an aimsir chaite. Níor bhain.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "___ (bain) Eithne úll den chrann ar maidin.",
@@ -132,7 +132,7 @@
   "e": "Eithne picked an apple from the tree this morning.",
   "w": "Ar maidin means this morning: past. Past: séimhiú on the first letter: bhain.",
   "wg": "Ar maidin: an aimsir chaite.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "___ (bain, muid) an-taitneamh as an gceolchoirm aréir.",
@@ -174,7 +174,7 @@
   "e": "He didn't spend much money on holiday last year.",
   "w": "Anuraidh means last year: past. Níor (not) in the past, then séimhiú and no d': níor chaith.",
   "wg": "Anuraidh: an aimsir chaite. Níor chaith.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "___ (caith) siad seachtain i bPáras an samhradh seo caite.",
@@ -256,7 +256,7 @@
   "e": "We got up very early to catch the train yesterday.",
   "w": "Inné means yesterday: past. Past: d' before a vowel: d'éiríomar. The ending -íomar carries muid.",
   "wg": "Inné: an aimsir chaite.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "___ (éirigh) Mamaí ar a cúig ar maidin.",
@@ -411,7 +411,7 @@
   "e": "Did you ask your mother for permission yesterday?",
   "w": "Inné means yesterday: past. Ar (question) in the past; no d' before the vowel.",
   "wg": "Inné: an aimsir chaite. Ar iarr.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Níor ___ (iarr) siad cabhair orainn nuair a bhí siad i dtrioblóid.",
@@ -485,7 +485,7 @@
   "e": "We took a taxi home from the station last night.",
   "w": "Aréir means last night: past. Past: séimhiú on the first letter: thógamar. The ending -amar carries muid.",
   "wg": "Aréir: an aimsir chaite.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "___ (tóg) siad a gcuid málaí agus d'imigh siad aréir.",
@@ -540,7 +540,7 @@
   "b": "A2"
  },
  {
-  "q": "Níor ___ (tuig, muid) an treoir ar chor ar bith inné.",
+  "q": "Níor ___ (tuig, muid) na treoracha ar chor ar bith inné.",
   "v": "tuig",
   "t": "caite",
   "p": "muid",
@@ -579,7 +579,7 @@
   "e": "Did you leave without saying goodbye yesterday?",
   "w": "Inné means yesterday: past. Ar (question) in the past; no d' before the vowel.",
   "wg": "Inné: an aimsir chaite. Ar imigh.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Níor ___ (imigh) siad go dtí a haon déag aréir.",
@@ -684,7 +684,7 @@
   "e": "Did you write your essay for class yesterday?",
   "w": "Inné means yesterday: past. Ar (question) in the past; sc takes no séimhiú.",
   "wg": "Inné: an aimsir chaite. Ar scríobh.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Níor ___ (scríobh) siad ar ais chugam an mhí seo caite.",
@@ -894,7 +894,7 @@
   "e": "We walked ten kilometres last Sunday.",
   "w": "Dé Domhnaigh seo caite: past. Past: séimhiú on the first letter: shiúlamar. The ending -amar carries muid.",
   "wg": "Dé Domhnaigh seo caite: an aimsir chaite.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Níor ___ (siúil) sí ar scoil inné mar bhí sé fliuch.",
@@ -947,7 +947,7 @@
   "e": "They didn't meet until last year.",
   "w": "Anuraidh means last year: past. Níor (not) in the past, then séimhiú and no d': níor bhuail.",
   "wg": "Anuraidh: an aimsir chaite. Níor bhuail.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "___ (buail) sí cnag ar an doras ar a naoi aréir.",
@@ -977,7 +977,7 @@
   "e": "I drank too much coffee last night.",
   "w": "Aréir means last night: past. Past: d' before a vowel: d'ól.",
   "wg": "Aréir: an aimsir chaite.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Ar ___ (ól) tú do bhainne ar maidin?",
@@ -988,7 +988,7 @@
   "e": "Did you drink your milk this morning?",
   "w": "Ar maidin means this morning: past. Ar (question) in the past; no d' before the vowel.",
   "wg": "Ar maidin: an aimsir chaite. Ar ól.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Níor ___ (ól) sé deoir ag an gcóisir aréir.",
@@ -999,7 +999,7 @@
   "e": "He didn't drink a drop at the party last night.",
   "w": "Aréir means last night: past. Níor (not) in the past; no d' before the vowel.",
   "wg": "Aréir: an aimsir chaite. Níor ól.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "___ (ól, muid) cupán tae le chéile tar éis an aifrinn inné.",
@@ -1051,7 +1051,7 @@
   "e": "We didn't buy any presents last Christmas.",
   "w": "An Nollaig seo caite: past. Níor (not) in the past, then séimhiú and no d': níor cheannaíomar.",
   "wg": "An Nollaig seo caite: an aimsir chaite. Níor cheannaíomar.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (imir) m'fhoireann go hiontach sa chluiche inné.",
@@ -1093,7 +1093,7 @@
   "e": "They didn't play well in the second half last night.",
   "w": "Aréir means last night: past. Níor (not) in the past; no d' before the vowel.",
   "wg": "Aréir: an aimsir chaite. Níor imir.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (fan) mé leathuair an chloig leis an mbus ar maidin.",
@@ -1135,7 +1135,7 @@
   "e": "We didn't stay long at the party last night.",
   "w": "Aréir means last night: past. Níor (not) in the past, then séimhiú and no d': níor fhanamar.",
   "wg": "Aréir: an aimsir chaite. Níor fhanamar (séimhiú).",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (cónaigh) mé faoin tuath nuair a bhí mé óg.",
@@ -1156,7 +1156,7 @@
   "e": "Did they live in England before?",
   "w": "Roimhe seo means before now: past. Ar (question) in the past, then séimhiú and no d': ar chónaigh.",
   "wg": "Roimhe seo: an aimsir chaite. Ar chónaigh.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (labhair) mé leis an bpríomhoide ar maidin.",
@@ -1364,7 +1364,7 @@
   "e": "We listened to the match on the radio last night.",
   "w": "Aréir means last night: past. Past: d' before a vowel: d'éisteamar. The ending -eamar carries muid.",
   "wg": "Aréir: an aimsir chaite.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (glan) mé an chistin ar fad aréir.",
@@ -1415,7 +1415,7 @@
   "e": "She learned the guitar when she was young.",
   "w": "Nuair a bhí sí óg shows the past. Past: f takes séimhiú and d': d'fhoghlaim.",
   "wg": "Nuair a bhí sí óg: an aimsir chaite.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (cuidigh) mo chomharsa liom leis an ngairdín inné.",
@@ -1497,7 +1497,7 @@
   "e": "He ran the Dublin marathon last year.",
   "w": "Anuraidh means last year: past. Past: r takes no séimhiú, so it stays rith.",
   "wg": "Anuraidh: an aimsir chaite.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (snámh) siad trasna an locha inné.",
@@ -1561,12 +1561,12 @@
   "b": "A2"
  },
  {
-  "q": "Níor ___ (taitin) na glasraí leis na páistí ar chor ar bith inné.",
+  "q": "Níor ___ (taitin) na glasraí leis na páistí inné.",
   "v": "taitin",
   "t": "caite",
   "p": "siad",
   "pt": "ní",
-  "e": "The children didn't like the vegetables at all yesterday.",
+  "e": "The children didn't like the vegetables yesterday.",
   "w": "Inné means yesterday: past. Níor (not) in the past, then séimhiú and no d': níor thaitin.",
   "wg": "Inné: an aimsir chaite. Níor thaitin.",
   "b": "B1"
@@ -1611,7 +1611,7 @@
   "e": "Did you miss the bus again this morning?",
   "w": "Ar maidin means this morning: past. Ar (question) in the past, then séimhiú and no d': ar chaill.",
   "wg": "Ar maidin: an aimsir chaite. Ar chaill.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (seol) mé téacs chuig mo dheirfiúr cúpla nóiméad ó shin.",
@@ -1632,7 +1632,7 @@
   "e": "Did you send the email to the manager yesterday?",
   "w": "Inné means yesterday: past. Ar (question) in the past, then séimhiú and no d': ar sheol.",
   "wg": "Inné: an aimsir chaite. Ar sheol.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (nigh) mé na gréithe tar éis an dinnéir aréir.",
@@ -1794,7 +1794,7 @@
   "e": "I paid the electricity bill online yesterday.",
   "w": "Inné means yesterday: past. Past: d' before a vowel: d'íoc.",
   "wg": "Inné: an aimsir chaite.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (díol) siad a seancharr an tseachtain seo caite.",
@@ -1814,7 +1814,7 @@
   "e": "The baby grew a lot last year.",
   "w": "An bhliain seo caite means last year: past. Past: f takes séimhiú and d': d'fhás.",
   "wg": "An bhliain seo caite: an aimsir chaite.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (bris) mé mo chos ag imirt peile anuraidh.",
@@ -1896,7 +1896,7 @@
   "e": "The weather changed suddenly yesterday evening.",
   "w": "Inné means yesterday: past. Past: d' before a vowel: d'athraigh.",
   "wg": "Inné: an aimsir chaite.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (tit) mé den rothar ar an mbealach ar scoil inné.",
@@ -1946,7 +1946,7 @@
   "e": "He kept a seat for me on the train this morning.",
   "w": "Ar maidin means this morning: past. Past: séimhiú on the first letter: choinnigh.",
   "wg": "Ar maidin: an aimsir chaite.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (gearr) sí a cuid gruaige an tseachtain seo caite.",
@@ -2007,7 +2007,7 @@
   "e": "Did you tell your mother the news yesterday?",
   "w": "Inné means yesterday: past. Ar (question) in the past; no d' before the vowel.",
   "wg": "Inné: an aimsir chaite. Ar inis.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (líon) mé an fhoirm ar líne ar maidin.",
@@ -2017,7 +2017,7 @@
   "e": "I filled in the form online this morning.",
   "w": "Ar maidin means this morning: past. Past: l takes no séimhiú, so it stays líon.",
   "wg": "Ar maidin: an aimsir chaite.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "Níor ___ (lig) siad isteach sa chlub mé aréir.",
@@ -2028,7 +2028,7 @@
   "e": "They didn't let me into the club last night.",
   "w": "Aréir means last night: past. Níor (not) in the past; l takes no séimhiú.",
   "wg": "Aréir: an aimsir chaite. Níor lig.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "___ (sciorr) mé ar an leac oighir ar maidin.",

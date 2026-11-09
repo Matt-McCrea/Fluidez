@@ -980,16 +980,6 @@
   "t": "adj"
  },
  {
-  "q": "Lá ___ (fuar) a bhí ann.",
-  "base": "fuar",
-  "r": "none",
-  "e": "It was a cold day.",
-  "w": "Lá is masculine, so the adjective after it does not change.",
-  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
-  "b": "A2",
-  "t": "adj"
- },
- {
   "q": "Is lá ___ (breá) é.",
   "base": "breá",
   "r": "none",
@@ -1005,16 +995,6 @@
   "r": "none",
   "e": "I had a long day.",
   "w": "Lá is masculine, so the adjective after it does not change.",
-  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
-  "b": "A2",
-  "t": "adj"
- },
- {
-  "q": "Tá teach ___ (beag) acu.",
-  "base": "beag",
-  "r": "none",
-  "e": "They have a small house.",
-  "w": "Teach is masculine, so the adjective after it does not change.",
   "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
   "b": "A2",
   "t": "adj"
@@ -1040,16 +1020,6 @@
   "t": "adj"
  },
  {
-  "q": "Cheannaigh sé carr ___ (dearg).",
-  "base": "dearg",
-  "r": "none",
-  "e": "He bought a red car.",
-  "w": "Carr is masculine, so the adjective after it does not change.",
-  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
-  "b": "A2",
-  "t": "adj"
- },
- {
   "q": "Tá gadhar ___ (dubh) acu.",
   "base": "dubh",
   "r": "none",
@@ -1070,16 +1040,6 @@
   "t": "adj"
  },
  {
-  "q": "Tá capall ___ (donn) sa pháirc.",
-  "base": "donn",
-  "r": "none",
-  "e": "There is a brown horse in the field.",
-  "w": "Capall is masculine, so the adjective after it does not change.",
-  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
-  "b": "A2",
-  "t": "adj"
- },
- {
   "q": "Tá bord ___ (briste) sa ghairdín.",
   "base": "briste",
   "r": "none",
@@ -1095,16 +1055,6 @@
   "r": "none",
   "e": "He wore a green jumper.",
   "w": "Geansaí is masculine, so the adjective after it does not change.",
-  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
-  "b": "A2",
-  "t": "adj"
- },
- {
-  "q": "Cheannaigh sí cóta ___ (fada).",
-  "base": "fada",
-  "r": "none",
-  "e": "She bought a long coat.",
-  "w": "Cóta is masculine, so the adjective after it does not change.",
   "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
   "b": "A2",
   "t": "adj"
@@ -1160,16 +1110,6 @@
   "t": "adj"
  },
  {
-  "q": "Is dochtúir ___ (cáiliúil) é.",
-  "base": "cáiliúil",
-  "r": "none",
-  "e": "He is a famous doctor.",
-  "w": "Dochtúir is masculine, so the adjective after it does not change.",
-  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
-  "b": "A2",
-  "t": "adj"
- },
- {
   "q": "Tá seomra ___ (compordach) agam.",
   "base": "compordach",
   "r": "none",
@@ -1185,16 +1125,6 @@
   "r": "none",
   "e": "We have a small garden.",
   "w": "Gairdín is masculine, so the adjective after it does not change.",
-  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
-  "b": "A2",
-  "t": "adj"
- },
- {
-  "q": "Is siopa ___ (daor) é.",
-  "base": "daor",
-  "r": "none",
-  "e": "It is an expensive shop.",
-  "w": "Siopa is masculine, so the adjective after it does not change.",
   "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
   "b": "A2",
   "t": "adj"
@@ -1220,16 +1150,6 @@
   "t": "adj"
  },
  {
-  "q": "Ba scrúdú ___ (deacair) é.",
-  "base": "deacair",
-  "r": "none",
-  "e": "It was a hard exam.",
-  "w": "Scrúdú is masculine, so the adjective after it does not change.",
-  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
-  "b": "A2",
-  "t": "adj"
- },
- {
   "q": "Is ceacht ___ (furasta) é.",
   "base": "furasta",
   "r": "none",
@@ -1245,16 +1165,6 @@
   "r": "none",
   "e": "It was a long game.",
   "w": "Cluiche is masculine, so the adjective after it does not change.",
-  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
-  "b": "A2",
-  "t": "adj"
- },
- {
-  "q": "Is baile ___ (beag) é.",
-  "base": "beag",
-  "r": "none",
-  "e": "It is a small town.",
-  "w": "Baile is masculine, so the adjective after it does not change.",
   "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
   "b": "A2",
   "t": "adj"
@@ -1285,16 +1195,6 @@
   "r": "none",
   "e": "It is a small bird.",
   "w": "Éan is masculine, so the adjective after it does not change.",
-  "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
-  "b": "A2",
-  "t": "adj"
- },
- {
-  "q": "Is oileán ___ (beag) é.",
-  "base": "beag",
-  "r": "none",
-  "e": "It is a small island.",
-  "w": "Oileán is masculine, so the adjective after it does not change.",
   "wg": "Ainmfhocal firinscneach: gan athrú ar an aidiacht.",
   "b": "A2",
   "t": "adj"

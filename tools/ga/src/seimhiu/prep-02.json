@@ -380,16 +380,6 @@
   "t": "prep"
  },
  {
-  "q": "Ná téigh amach gan ___ (cóta) báistí.",
-  "base": "cóta",
-  "r": "len",
-  "e": "Don't go out without a raincoat.",
-  "w": "Gan (without) takes séimhiú on a plain noun: cóta becomes chóta.",
-  "wg": "Gan + séimhiú.",
-  "b": "A2",
-  "t": "prep"
- },
- {
   "q": "Bhí mé gan ___ (bricfeasta) ar maidin.",
   "base": "bricfeasta",
   "r": "len",

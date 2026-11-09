@@ -1,0 +1,842 @@
+[
+ {
+  "q": "Tá a ___ (athair, his) tinn.",
+  "base": "athair",
+  "r": "none",
+  "e": "His father is sick.",
+  "w": "Here a means his: a vowel stays as it is, athair. With her it would be hathair.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (iníon, his) ar scoil.",
+  "base": "iníon",
+  "r": "none",
+  "e": "His daughter is at school.",
+  "w": "Here a means his: a vowel stays as it is, iníon. With her it would be hiníon.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chaill sé a ___ (airgead, his).",
+  "base": "airgead",
+  "r": "none",
+  "e": "He lost his money.",
+  "w": "Here a means his: a vowel stays as it is, airgead. With her it would be hairgead.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (árasán, his) i gCorcaigh.",
+  "base": "árasán",
+  "r": "none",
+  "e": "His flat is in Cork.",
+  "w": "Here a means his: a vowel stays as it is, árasán. With her it would be hárasán.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is í Nóra a ___ (aintín, his).",
+  "base": "aintín",
+  "r": "none",
+  "e": "Nóra is his aunt.",
+  "w": "Here a means his: a vowel stays as it is, aintín. With her it would be haintín.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (oifig, his) ar an gcéad urlár.",
+  "base": "oifig",
+  "r": "none",
+  "e": "His office is on the first floor.",
+  "w": "Here a means his: a vowel stays as it is, oifig. With her it would be hoifig.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "D'ith sé a ___ (úll, his).",
+  "base": "úll",
+  "r": "none",
+  "e": "He ate his apple.",
+  "w": "Here a means his: a vowel stays as it is, úll. With her it would be húll.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (uncail, his) ina fheirmeoir.",
+  "base": "uncail",
+  "r": "none",
+  "e": "His uncle is a farmer.",
+  "w": "Here a means his: a vowel stays as it is, uncail. With her it would be huncail.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is é Liam a ___ (athair, his).",
+  "base": "athair",
+  "r": "none",
+  "e": "Liam is his father.",
+  "w": "Here a means his: a vowel stays as it is, athair. With her it would be hathair.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (ainm, his) ar an liosta.",
+  "base": "ainm",
+  "r": "none",
+  "e": "His name is on the list.",
+  "w": "Here a means his: a vowel stays as it is, ainm. With her it would be hainm.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (éadaí, his) fliuch.",
+  "base": "éadaí",
+  "r": "none",
+  "e": "His clothes are wet.",
+  "w": "Here a means his: a vowel stays as it is, éadaí. With her it would be héadaí.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Scríobh sé a ___ (ainm, his) ar an bhfoirm.",
+  "base": "ainm",
+  "r": "none",
+  "e": "He wrote his name on the form.",
+  "w": "Here a means his: a vowel stays as it is, ainm. With her it would be hainm.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (obair, his) déanta.",
+  "base": "obair",
+  "r": "none",
+  "e": "His work is done.",
+  "w": "Here a means his: a vowel stays as it is, obair. With her it would be hobair.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Nigh sé a ___ (aghaidh, his).",
+  "base": "aghaidh",
+  "r": "none",
+  "e": "He washed his face.",
+  "w": "Here a means his: a vowel stays as it is, aghaidh. With her it would be haghaidh.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chaill sé a ___ (eochair, his) arís.",
+  "base": "eochair",
+  "r": "none",
+  "e": "He lost his key again.",
+  "w": "Here a means his: a vowel stays as it is, eochair. With her it would be heochair.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Rinne sé a ___ (obair, his) bhaile.",
+  "base": "obair",
+  "r": "none",
+  "e": "He did his homework.",
+  "w": "Here a means his: a vowel stays as it is, obair. With her it would be hobair.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Cén aois í a ___ (iníon, his)?",
+  "base": "iníon",
+  "r": "none",
+  "e": "How old is his daughter?",
+  "w": "Here a means his: a vowel stays as it is, iníon. With her it would be hiníon.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "D'ól sé a ___ (uisce, his).",
+  "base": "uisce",
+  "r": "none",
+  "e": "He drank his water.",
+  "w": "Here a means his: a vowel stays as it is, uisce. With her it would be huisce.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (anraith, his) fuar.",
+  "base": "anraith",
+  "r": "none",
+  "e": "His soup is cold.",
+  "w": "Here a means his: a vowel stays as it is, anraith. With her it would be hanraith.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (ordóg, his) tinn.",
+  "base": "ordóg",
+  "r": "none",
+  "e": "His thumb is sore.",
+  "w": "Here a means his: a vowel stays as it is, ordóg. With her it would be hordóg.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Bhí a ___ (athair, his) agus a mháthair ann.",
+  "base": "athair",
+  "r": "none",
+  "e": "His father and mother were there.",
+  "w": "Here a means his: a vowel stays as it is, athair. With her it would be hathair.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A2",
+  "t": "poss"
+ },
+ {
+  "q": "Is é seo a ___ (árasán, his) nua.",
+  "base": "árasán",
+  "r": "none",
+  "e": "This is his new flat.",
+  "w": "Here a means his: a vowel stays as it is, árasán. With her it would be hárasán.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (uncail, their) ag teacht.",
+  "base": "uncail",
+  "r": "ecl",
+  "e": "Their uncle is coming.",
+  "w": "Here a means their, so urú: uncail becomes n-uncail.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chaill siad a ___ (airgead, their).",
+  "base": "airgead",
+  "r": "ecl",
+  "e": "They lost their money.",
+  "w": "Here a means their, so urú: airgead becomes n-airgead.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (oifig, their) dúnta.",
+  "base": "oifig",
+  "r": "ecl",
+  "e": "Their office is closed.",
+  "w": "Here a means their, so urú: oifig becomes n-oifig.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Scríobh siad a ___ (ainmneacha, their) ar an liosta.",
+  "base": "ainmneacha",
+  "r": "ecl",
+  "e": "They wrote their names on the list.",
+  "w": "Here a means their, so urú: ainmneacha becomes n-ainmneacha.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (éadaí, their) salach.",
+  "base": "éadaí",
+  "r": "ecl",
+  "e": "Their clothes are dirty.",
+  "w": "Here a means their, so urú: éadaí becomes n-éadaí.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "D'ith siad a ___ (úlla, their).",
+  "base": "úlla",
+  "r": "ecl",
+  "e": "They ate their apples.",
+  "w": "Here a means their, so urú: úlla becomes n-úlla.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Rinne siad a ___ (obair, their) bhaile.",
+  "base": "obair",
+  "r": "ecl",
+  "e": "They did their homework.",
+  "w": "Here a means their, so urú: obair becomes n-obair.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is é Liam a ___ (athair, their).",
+  "base": "athair",
+  "r": "ecl",
+  "e": "Liam is their father.",
+  "w": "Here a means their, so urú: athair becomes n-athair.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (iníon, their) pósta.",
+  "base": "iníon",
+  "r": "ecl",
+  "e": "Their daughter is married.",
+  "w": "Here a means their, so urú: iníon becomes n-iníon.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chaill siad a ___ (eochracha, their).",
+  "base": "eochracha",
+  "r": "ecl",
+  "e": "They lost their keys.",
+  "w": "Here a means their, so urú: eochracha becomes n-eochracha.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (athair, her) ar saoire.",
+  "base": "athair",
+  "r": "h",
+  "e": "Her father is on holiday.",
+  "w": "Here a means her, so h goes before the vowel: athair becomes hathair.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Rinne sí a ___ (obair, her) go maith.",
+  "base": "obair",
+  "r": "h",
+  "e": "She did her work well.",
+  "w": "Here a means her, so h goes before the vowel: obair becomes hobair.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (eochair, her) sa doras.",
+  "base": "eochair",
+  "r": "h",
+  "e": "Her key is in the door.",
+  "w": "Here a means her, so h goes before the vowel: eochair becomes heochair.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (uncail, her) sa bhaile.",
+  "base": "uncail",
+  "r": "h",
+  "e": "Her uncle is at home.",
+  "w": "Here a means her, so h goes before the vowel: uncail becomes huncail.",
+  "wg": "A (baininscneach) + h roimh ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (máthair) sa chistin.",
+  "base": "máthair",
+  "r": "len",
+  "e": "My mother is in the kitchen.",
+  "w": "Mo (my) takes séimhiú: máthair becomes mháthair.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is é seo mo ___ (mac) Seán.",
+  "base": "mac",
+  "r": "len",
+  "e": "This is my son Seán.",
+  "w": "Mo (my) takes séimhiú: mac becomes mhac.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Cá bhfuil mo ___ (mála)?",
+  "base": "mála",
+  "r": "len",
+  "e": "Where is my bag?",
+  "w": "Mo (my) takes séimhiú: mála becomes mhála.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (madra) sa ghairdín.",
+  "base": "madra",
+  "r": "len",
+  "e": "My dog is in the garden.",
+  "w": "Mo (my) takes séimhiú: madra becomes mhadra.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is maith liom mo ___ (múinteoir) nua.",
+  "base": "múinteoir",
+  "r": "len",
+  "e": "I like my new teacher.",
+  "w": "Mo (my) takes séimhiú: múinteoir becomes mhúinteoir.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (muintir) ina gcónaí i gCiarraí.",
+  "base": "muintir",
+  "r": "len",
+  "e": "My people live in Kerry.",
+  "w": "Mo (my) takes séimhiú: muintir becomes mhuintir.",
+  "wg": "Mo + séimhiú.",
+  "b": "A2",
+  "t": "poss"
+ },
+ {
+  "q": "Is í mo ___ (máthair) mo chara is fearr.",
+  "base": "máthair",
+  "r": "len",
+  "e": "My mother is my best friend.",
+  "w": "Mo (my) takes séimhiú: máthair becomes mháthair.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chaill mé mo ___ (mála) ar an mbus.",
+  "base": "mála",
+  "r": "len",
+  "e": "I lost my bag on the bus.",
+  "w": "Mo (my) takes séimhiú: mála becomes mhála.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (mac) ag staidéar i nGaillimh.",
+  "base": "mac",
+  "r": "len",
+  "e": "My son is studying in Galway.",
+  "w": "Mo (my) takes séimhiú: mac becomes mhac.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Conas atá do ___ (máthair)?",
+  "base": "máthair",
+  "r": "len",
+  "e": "How is your mother?",
+  "w": "Do (your) takes séimhiú: máthair becomes mháthair.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "An é seo do ___ (mac)?",
+  "base": "mac",
+  "r": "len",
+  "e": "Is this your son?",
+  "w": "Do (your) takes séimhiú: mac becomes mhac.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Cá bhfuil do ___ (mála) scoile?",
+  "base": "mála",
+  "r": "len",
+  "e": "Where is your schoolbag?",
+  "w": "Do (your) takes séimhiú: mála becomes mhála.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "An bhfuil do ___ (madra) tinn?",
+  "base": "madra",
+  "r": "len",
+  "e": "Is your dog sick?",
+  "w": "Do (your) takes séimhiú: madra becomes mhadra.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Cad is ainm do do ___ (múinteoir)?",
+  "base": "múinteoir",
+  "r": "len",
+  "e": "What is your teacher's name?",
+  "w": "Do (your) takes séimhiú: múinteoir becomes mhúinteoir.",
+  "wg": "Do + séimhiú.",
+  "b": "A2",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (mac, his) sa choláiste.",
+  "base": "mac",
+  "r": "len",
+  "e": "His son is in college.",
+  "w": "Here a means his, so séimhiú: mac becomes mhac.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chaill sé a ___ (mála, his).",
+  "base": "mála",
+  "r": "len",
+  "e": "He lost his bag.",
+  "w": "Here a means his, so séimhiú: mála becomes mhála.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (máthair, his) ina dochtúir.",
+  "base": "máthair",
+  "r": "len",
+  "e": "His mother is a doctor.",
+  "w": "Here a means his, so séimhiú: máthair becomes mháthair.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (madra, his) ag tafann.",
+  "base": "madra",
+  "r": "len",
+  "e": "His dog is barking.",
+  "w": "Here a means his, so séimhiú: madra becomes mhadra.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (máthair, her) ina múinteoir.",
+  "base": "máthair",
+  "r": "none",
+  "e": "Her mother is a teacher.",
+  "w": "Here a means her: no change before a consonant, máthair stays máthair.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (mac, her) sé bliana d'aois.",
+  "base": "mac",
+  "r": "none",
+  "e": "Her son is six years old.",
+  "w": "Here a means her: no change before a consonant, mac stays mac.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chaill sí a ___ (mála, her).",
+  "base": "mála",
+  "r": "none",
+  "e": "She lost her bag.",
+  "w": "Here a means her: no change before a consonant, mála stays mála.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (madra, her) dubh.",
+  "base": "madra",
+  "r": "none",
+  "e": "Her dog is black.",
+  "w": "Here a means her: no change before a consonant, madra stays madra.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (muintir, her) i nDoire.",
+  "base": "muintir",
+  "r": "none",
+  "e": "Her people are in Derry.",
+  "w": "Here a means her: no change before a consonant, muintir stays muintir.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A2",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (aintín, his) ina cónaí i nGaillimh.",
+  "base": "aintín",
+  "r": "none",
+  "e": "His aunt lives in Galway.",
+  "w": "Here a means his: a vowel stays as it is, aintín. With her it would be haintín.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (oifig, his) i mBaile Átha Cliath.",
+  "base": "oifig",
+  "r": "none",
+  "e": "His office is in Dublin.",
+  "w": "Here a means his: a vowel stays as it is, oifig. With her it would be hoifig.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (árasán, his) beag ach deas.",
+  "base": "árasán",
+  "r": "none",
+  "e": "His flat is small but nice.",
+  "w": "Here a means his: a vowel stays as it is, árasán. With her it would be hárasán.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (ainm, his) scríofa ar an doras.",
+  "base": "ainm",
+  "r": "none",
+  "e": "His name is written on the door.",
+  "w": "Here a means his: a vowel stays as it is, ainm. With her it would be hainm.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Chuir sé a ___ (éadaí, his) sa mhála.",
+  "base": "éadaí",
+  "r": "none",
+  "e": "He put his clothes in the bag.",
+  "w": "Here a means his: a vowel stays as it is, éadaí. With her it would be héadaí.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (airgead, his) sa bhanc.",
+  "base": "airgead",
+  "r": "none",
+  "e": "His money is in the bank.",
+  "w": "Here a means his: a vowel stays as it is, airgead. With her it would be hairgead.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (iníon, his) ina dochtúir.",
+  "base": "iníon",
+  "r": "none",
+  "e": "His daughter is a doctor.",
+  "w": "Here a means his: a vowel stays as it is, iníon. With her it would be hiníon.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Thit a ___ (úll, his) ar an urlár.",
+  "base": "úll",
+  "r": "none",
+  "e": "His apple fell on the floor.",
+  "w": "Here a means his: a vowel stays as it is, úll. With her it would be húll.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (aghaidh, his) dearg.",
+  "base": "aghaidh",
+  "r": "none",
+  "e": "His face is red.",
+  "w": "Here a means his: a vowel stays as it is, aghaidh. With her it would be haghaidh.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is breá leis a ___ (athair, his).",
+  "base": "athair",
+  "r": "none",
+  "e": "He loves his father.",
+  "w": "Here a means his: a vowel stays as it is, athair. With her it would be hathair.",
+  "wg": "A (firinscneach): gan athrú ar ghuta.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (árasán, their) daor.",
+  "base": "árasán",
+  "r": "ecl",
+  "e": "Their flat is expensive.",
+  "w": "Here a means their, so urú: árasán becomes n-árasán.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (aintín, their) ina múinteoir.",
+  "base": "aintín",
+  "r": "ecl",
+  "e": "Their aunt is a teacher.",
+  "w": "Here a means their, so urú: aintín becomes n-aintín.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (éan, their) ag canadh.",
+  "base": "éan",
+  "r": "ecl",
+  "e": "Their bird is singing.",
+  "w": "Here a means their, so urú: éan becomes n-éan.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (ollscoil, their) i gCorcaigh.",
+  "base": "ollscoil",
+  "r": "ecl",
+  "e": "Their university is in Cork.",
+  "w": "Here a means their, so urú: ollscoil becomes n-ollscoil.",
+  "wg": "A (iolra) + urú.",
+  "b": "A2",
+  "t": "poss"
+ },
+ {
+  "q": "D'ól siad a ___ (uisce, their).",
+  "base": "uisce",
+  "r": "ecl",
+  "e": "They drank their water.",
+  "w": "Here a means their, so urú: uisce becomes n-uisce.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is í Bríd a ___ (iníon, their).",
+  "base": "iníon",
+  "r": "ecl",
+  "e": "Bríd is their daughter.",
+  "w": "Here a means their, so urú: iníon becomes n-iníon.",
+  "wg": "A (iolra) + urú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (mac) is óige sé bliana d'aois.",
+  "base": "mac",
+  "r": "len",
+  "e": "My youngest son is six.",
+  "w": "Mo (my) takes séimhiú: mac becomes mhac.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá mo ___ (máthair) ina múinteoir.",
+  "base": "máthair",
+  "r": "len",
+  "e": "My mother is a teacher.",
+  "w": "Mo (my) takes séimhiú: máthair becomes mháthair.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Rinne mé dearmad ar mo ___ (mála).",
+  "base": "mála",
+  "r": "len",
+  "e": "I forgot my bag.",
+  "w": "Mo (my) takes séimhiú: mála becomes mhála.",
+  "wg": "Mo + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is é seo do ___ (mála) nua?",
+  "base": "mála",
+  "r": "len",
+  "e": "Is this your new bag?",
+  "w": "Do (your) takes séimhiú: mála becomes mhála.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá do ___ (máthair) ag glaoch ort.",
+  "base": "máthair",
+  "r": "len",
+  "e": "Your mother is calling you.",
+  "w": "Do (your) takes séimhiú: máthair becomes mháthair.",
+  "wg": "Do + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Thug a ___ (máthair, his) airgead dó.",
+  "base": "máthair",
+  "r": "len",
+  "e": "His mother gave him money.",
+  "w": "Here a means his, so séimhiú: máthair becomes mháthair.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is é Pól a ___ (mac, his) is sine.",
+  "base": "mac",
+  "r": "len",
+  "e": "Pól is his eldest son.",
+  "w": "Here a means his, so séimhiú: mac becomes mhac.",
+  "wg": "A (firinscneach) + séimhiú.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Tá a ___ (máthair, her) ag teacht anocht.",
+  "base": "máthair",
+  "r": "none",
+  "e": "Her mother is coming tonight.",
+  "w": "Here a means her: no change before a consonant, máthair stays máthair.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ },
+ {
+  "q": "Is é Pól a ___ (mac, her).",
+  "base": "mac",
+  "r": "none",
+  "e": "Pól is her son.",
+  "w": "Here a means her: no change before a consonant, mac stays mac.",
+  "wg": "A (baininscneach): gan athrú roimh chonsan.",
+  "b": "A1",
+  "t": "poss"
+ }
+]

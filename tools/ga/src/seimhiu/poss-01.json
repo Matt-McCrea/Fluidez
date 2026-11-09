@@ -270,7 +270,7 @@
   "t": "poss"
  },
  {
-  "q": "Tá mo ___ (súile) gorma.",
+  "q": "Tá mo ___ (súile) gorm.",
   "base": "súile",
   "r": "len",
   "e": "My eyes are blue.",
@@ -1180,7 +1180,7 @@
   "t": "poss"
  },
  {
-  "q": "Tá a ___ (súile, his) gorma.",
+  "q": "Tá a ___ (súile, his) gorm.",
   "base": "súile",
   "r": "len",
   "e": "His eyes are blue.",

@@ -1,0 +1,448 @@
+[
+ {
+  "ga": "Tar isteach.",
+  "en": "Come in.",
+  "th": "baile",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Suigh síos.",
+  "en": "Sit down.",
+  "th": "baile",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Ar mhaith leat cupán tae?",
+  "en": "Would you like a cup of tea?",
+  "th": "baile",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "An bhfuil ocras ort?",
+  "en": "Are you hungry?",
+  "th": "baile",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá an dinnéar réidh.",
+  "en": "Dinner is ready.",
+  "th": "baile",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Cá bhfuil tú?",
+  "en": "Where are you?",
+  "th": "baile",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá mé sa bhaile.",
+  "en": "I'm at home.",
+  "alt": [
+   "Táim sa bhaile."
+  ],
+  "th": "baile",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá mé ag dul abhaile.",
+  "en": "I'm going home.",
+  "alt": [
+   "Táim ag dul abhaile."
+  ],
+  "th": "baile",
+  "b": "A1",
+  "t": 1,
+  "n": "Sa bhaile: at home; abhaile: homewards."
+ },
+ {
+  "ga": "Tá mé ag dul a chodladh.",
+  "en": "I'm going to bed.",
+  "alt": [
+   "Táim ag dul a chodladh."
+  ],
+  "th": "baile",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: I am going to sleep."
+ },
+ {
+  "ga": "Dún an doras.",
+  "en": "Close the door.",
+  "th": "baile",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá mé lán.",
+  "en": "I'm full.",
+  "alt": [
+   "Táim lán."
+  ],
+  "th": "baile",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Bhí sé an-bhlasta.",
+  "en": "It was delicious.",
+  "th": "baile",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tagaigí isteach.",
+  "en": "Come in (to a group).",
+  "th": "baile",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Suígí síos.",
+  "en": "Sit down (to a group).",
+  "th": "baile",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Bí ar do shuaimhneas.",
+  "en": "Make yourself comfortable.",
+  "th": "baile",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "An bhfuil tart ort?",
+  "en": "Are you thirsty?",
+  "th": "baile",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Bain sult as do bhéile.",
+  "en": "Enjoy your meal.",
+  "alt": [
+   "Bain taitneamh as do bhéile."
+  ],
+  "th": "baile",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "An féidir leat an salann a shíneadh chugam?",
+  "en": "Can you pass the salt?",
+  "th": "baile",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tabhair dom an bainne, le do thoil.",
+  "en": "Give me the milk, please.",
+  "th": "baile",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá mo dhóthain agam.",
+  "en": "I've had enough.",
+  "th": "baile",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: I have my sufficiency."
+ },
+ {
+  "ga": "Bhí sé sin go hálainn.",
+  "en": "That was lovely.",
+  "th": "baile",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Go raibh maith agat as an mbéile.",
+  "en": "Thanks for the meal.",
+  "th": "baile",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Cad atá le hithe?",
+  "en": "What's there to eat?",
+  "alt": [
+   "Céard atá le hithe?"
+  ],
+  "th": "baile",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Cad atá againn don dinnéar?",
+  "en": "What are we having for dinner?",
+  "alt": [
+   "Céard atá againn don dinnéar?"
+  ],
+  "th": "baile",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé in am bricfeasta.",
+  "en": "It's breakfast time.",
+  "th": "baile",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Ith do dhinnéar.",
+  "en": "Eat your dinner.",
+  "th": "baile",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Cuir an citeal síos.",
+  "en": "Put the kettle on.",
+  "th": "baile",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: put the kettle down."
+ },
+ {
+  "ga": "Tá mé ar ais!",
+  "en": "I'm back!",
+  "alt": [
+   "Táim ar ais!"
+  ],
+  "th": "baile",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Cá bhfuil mo chuid eochracha?",
+  "en": "Where are my keys?",
+  "alt": [
+   "Cá bhfuil m'eochracha?"
+  ],
+  "th": "baile",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Múch an solas.",
+  "en": "Turn off the light.",
+  "th": "baile",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Las an solas.",
+  "en": "Turn on the light.",
+  "alt": [
+   "Cuir an solas ar siúl."
+  ],
+  "th": "baile",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Oscail an fhuinneog.",
+  "en": "Open the window.",
+  "th": "baile",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Nigh do lámha.",
+  "en": "Wash your hands.",
+  "th": "baile",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Glan do sheomra.",
+  "en": "Clean your room.",
+  "th": "baile",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Ar chodail tú go maith?",
+  "en": "Did you sleep well?",
+  "th": "baile",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Chodail mé go maith.",
+  "en": "I slept well.",
+  "th": "baile",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Cuir ort do chóta.",
+  "en": "Put on your coat.",
+  "th": "baile",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Seo é mo theach.",
+  "en": "This is my house.",
+  "th": "baile",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá teach deas agat.",
+  "en": "You have a nice house.",
+  "th": "baile",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Cá bhfuil Mamaí?",
+  "en": "Where's Mum?",
+  "th": "baile",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá an leanbh ina chodladh.",
+  "en": "The baby is asleep.",
+  "th": "baile",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Bí go maith!",
+  "en": "Be good!",
+  "th": "baile",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Ná déan é sin!",
+  "en": "Don't do that!",
+  "th": "baile",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Cuidigh liom leis seo.",
+  "en": "Help me with this.",
+  "alt": [
+   "Cabhraigh liom leis seo."
+  ],
+  "th": "baile",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Cé atá ag an doras?",
+  "en": "Who's at the door?",
+  "th": "baile",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá Daidí sa chistin.",
+  "en": "Dad is in the kitchen.",
+  "th": "baile",
+  "b": "A1",
+  "t": 3
+ },
+ {
+  "ga": "Bain díot do bhróga.",
+  "en": "Take off your shoes.",
+  "th": "baile",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Éirigh as an leaba.",
+  "en": "Get out of bed.",
+  "th": "baile",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Déanfaidh mé na soithí.",
+  "en": "I'll do the dishes.",
+  "th": "baile",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tá an teach trína chéile.",
+  "en": "The house is a mess.",
+  "th": "baile",
+  "b": "B1",
+  "t": 3,
+  "n": "Trína chéile: through each other, in a mess."
+ },
+ {
+  "ga": "Oíche mhaith, a stór.",
+  "en": "Good night, love.",
+  "th": "baile",
+  "b": "A2",
+  "t": 3,
+  "n": "A stór: my treasure, said to a child or loved one."
+ },
+ {
+  "ga": "An dtabharfaidh tú lámh chúnta dom?",
+  "en": "Will you give me a hand?",
+  "th": "baile",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Tá sé fuar sa teach.",
+  "en": "It's cold in the house.",
+  "th": "baile",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Cuir an teas ar siúl.",
+  "en": "Turn on the heating.",
+  "th": "baile",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tá an bia ag éirí fuar.",
+  "en": "The food is getting cold.",
+  "th": "baile",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Ól do bhainne.",
+  "en": "Drink your milk.",
+  "th": "baile",
+  "b": "A1",
+  "t": 3
+ },
+ {
+  "ga": "Bíodh deoch agat.",
+  "en": "Have a drink.",
+  "th": "baile",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Níl aon tinteán mar do thinteán féin.",
+  "en": "There's no place like home.",
+  "th": "baile",
+  "b": "B2",
+  "t": 3,
+  "n": "Proverb. Literally: there is no hearth like your own hearth."
+ }
+]

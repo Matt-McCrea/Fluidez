@@ -51,7 +51,7 @@
   "e": "We will be making sandwiches for the trip.",
   "w": "After ag comes the verbal noun: déan gives ag déanamh.",
   "wg": "Ag + ainm briathartha: ag déanamh.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "An bhfuil tú ag ___ (déan) aon spóirt na laethanta seo?",
@@ -117,13 +117,13 @@
   "b": "A1"
  },
  {
-  "q": "Ní raibh mé ag ___ (déan) faic ach ag féachaint ar an teilifís.",
+  "q": "Ní raibh mé ag ___ (déan) faic ach ag léamh.",
   "v": "déan",
   "t": "ag",
-  "e": "I wasn't doing anything but watching TV.",
+  "e": "I wasn't doing anything but reading.",
   "w": "After ag comes the verbal noun: déan gives ag déanamh.",
   "wg": "Ag + ainm briathartha: ag déanamh.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "Tá mé ag ___ (téigh) abhaile anois.",
@@ -195,7 +195,7 @@
   "e": "We will be going on holiday in July.",
   "w": "After ag comes the verbal noun: téigh gives ag dul.",
   "wg": "Ag + ainm briathartha: ag dul.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Tá praghsanna ag ___ (téigh) suas arís.",
@@ -204,7 +204,7 @@
   "e": "Prices are going up again.",
   "w": "After ag comes the verbal noun: téigh gives ag dul.",
   "wg": "Ag + ainm briathartha: ag dul.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Cá bhfuil tú ag ___ (téigh)?",
@@ -231,7 +231,7 @@
   "e": "Time is going by quickly.",
   "w": "After ag comes the verbal noun: téigh gives ag dul.",
   "wg": "Ag + ainm briathartha: ag dul.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Bím ag ___ (téigh) chuig an ionad aclaíochta ar an Luan.",
@@ -285,7 +285,7 @@
   "e": "Seán is going out with Máire now.",
   "w": "After ag comes the verbal noun: téigh gives ag dul.",
   "wg": "Ag + ainm briathartha: ag dul.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Tá an bus ag ___ (tar) anois.",
@@ -315,10 +315,10 @@
   "b": "A1"
  },
  {
-  "q": "Bhí sí ag ___ (tar) abhaile ón obair nuair a chonaic mé í.",
+  "q": "Bhí sí ag ___ (tar) abhaile nuair a chonaic mé í.",
   "v": "tar",
   "t": "ag",
-  "e": "She was coming home from work when I saw her.",
+  "e": "She was coming home when I saw her.",
   "w": "After ag comes the verbal noun: tar gives ag teacht.",
   "wg": "Ag + ainm briathartha: ag teacht.",
   "b": "A2"
@@ -339,7 +339,7 @@
   "e": "Summer is coming soon.",
   "w": "After ag comes the verbal noun: tar gives ag teacht.",
   "wg": "Ag + ainm briathartha: ag teacht.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Tá an bháisteach ag ___ (tar) isteach tríd an díon.",
@@ -348,7 +348,7 @@
   "e": "The rain is coming in through the roof.",
   "w": "After ag comes the verbal noun: tar gives ag teacht.",
   "wg": "Ag + ainm briathartha: ag teacht.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "Beidh Mamó ag ___ (tar) chugainn don Nollaig.",
@@ -357,7 +357,7 @@
   "e": "Granny will be coming to us for Christmas.",
   "w": "After ag comes the verbal noun: tar gives ag teacht.",
   "wg": "Ag + ainm briathartha: ag teacht.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Tá mo chuid Gaeilge ag ___ (tar) ar aghaidh go maith.",
@@ -384,7 +384,7 @@
   "e": "Water is coming into the boat!",
   "w": "After ag comes the verbal noun: tar gives ag teacht.",
   "wg": "Ag + ainm briathartha: ag teacht.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "Níl mé ag ___ (tar) leat ar chor ar bith.",
@@ -438,7 +438,7 @@
   "e": "We'll be getting pizza tonight.",
   "w": "After ag comes the verbal noun: faigh gives ag fáil.",
   "wg": "Ag + ainm briathartha: ag fáil.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Tá daoine óga ag ___ (faigh) poist sna cathracha móra.",
@@ -456,7 +456,7 @@
   "e": "I'm not getting enough sleep.",
   "w": "After ag comes the verbal noun: faigh gives ag fáil.",
   "wg": "Ag + ainm briathartha: ag fáil.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Cad atá tú ag ___ (abair)?",
@@ -717,7 +717,7 @@
   "e": "The guard is catching the thief.",
   "w": "After ag comes the verbal noun: beir gives ag breith.",
   "wg": "Ag + ainm briathartha: ag breith.",
-  "b": "B1"
+  "b": "A2"
  },
  {
   "q": "Bhí mé ag ___ (beir) ar an traein nuair a thit mé.",
@@ -960,7 +960,7 @@
   "e": "They were walking by the sea last night.",
   "w": "After ag comes the verbal noun: siúil gives ag siúl.",
   "wg": "Ag + ainm briathartha: ag siúl.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Tá an madra ag ___ (rith) sa ghairdín.",
@@ -1086,7 +1086,7 @@
   "e": "It is getting dark earlier now.",
   "w": "After ag comes the verbal noun: éirigh gives ag éirí.",
   "wg": "Ag + ainm briathartha: ag éirí.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Tá mé ag ___ (éirigh) tuirseach den obair seo.",
@@ -1113,7 +1113,7 @@
   "e": "He is smoking again.",
   "w": "After ag comes the verbal noun: caith gives ag caitheamh.",
   "wg": "Ag + ainm briathartha: ag caitheamh.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Bhí sí ag ___ (caith) a cuid ama ar an idirlíon.",
@@ -1392,7 +1392,7 @@
   "e": "He was asking me for money again.",
   "w": "After ag comes the verbal noun: iarr gives ag iarraidh.",
   "wg": "Ag + ainm briathartha: ag iarraidh.",
-  "b": "A2"
+  "b": "A1"
  },
  {
   "q": "Táimid ag ___ (bain) taitnimh as an tsaoire.",
@@ -1413,7 +1413,7 @@
   "b": "A2"
  },
  {
-  "q": "Bhí duine éigin ag ___ (buail) an dorais.",
+  "q": "Bhí duine éigin ag ___ (buail) ar an doras.",
   "v": "buail",
   "t": "ag",
   "e": "Somebody was knocking at the door.",

@@ -1,64 +1,476 @@
 [
-{ "ga": "Cé mhéad atá air seo?", "en": "How much is this?", "alt": ["Cé mhéad é seo?", "Cá mhéad atá air seo?"], "th": "siopa", "b": "A1", "t": 1, "n": "Literally: how much is on this?" },
-{ "ga": "Ba mhaith liom cupán tae, le do thoil.", "en": "I'd like a cup of tea, please.", "th": "siopa", "b": "A1", "t": 1 },
-{ "ga": "Ba mhaith liom caife, le do thoil.", "en": "I'd like a coffee, please.", "th": "siopa", "b": "A1", "t": 1 },
-{ "ga": "Cad ba mhaith leat?", "en": "What would you like?", "alt": ["Céard ba mhaith leat?"], "th": "siopa", "b": "A1", "t": 1 },
-{ "ga": "Cad a bheidh agat?", "en": "What will you have?", "alt": ["Céard a bheidh agat?"], "th": "siopa", "b": "A1", "t": 1 },
-{ "ga": "Ar mhaith leat deoch?", "en": "Would you like a drink?", "th": "siopa", "b": "A1", "t": 1 },
-{ "ga": "Ba mhaith, le do thoil.", "en": "Yes, please.", "th": "siopa", "b": "A1", "t": 1, "n": "The answer to Ar mhaith leat...? Irish echoes the verb." },
-{ "ga": "Níor mhaith, go raibh maith agat.", "en": "No, thank you.", "th": "siopa", "b": "A1", "t": 1, "n": "The no answer to Ar mhaith leat...?" },
-{ "ga": "Cad ba mhaith leat a ól?", "en": "What would you like to drink?", "alt": ["Céard ba mhaith leat a ól?"], "th": "siopa", "b": "A1", "t": 1 },
-{ "ga": "Pionta, le do thoil.", "en": "A pint, please.", "th": "siopa", "b": "A1", "t": 1 },
-{ "ga": "Gloine uisce, le do thoil.", "en": "A glass of water, please.", "th": "siopa", "b": "A1", "t": 1 },
-{ "ga": "Ceann eile, le do thoil.", "en": "Another one, please.", "th": "siopa", "b": "A1", "t": 1 },
-{ "ga": "Ba mhaith liom an ceann seo.", "en": "I'd like this one.", "th": "siopa", "b": "A1", "t": 1 },
-{ "ga": "An féidir liom íoc le cárta?", "en": "Can I pay by card?", "th": "siopa", "b": "A1", "t": 1 },
-{ "ga": "An bille, le do thoil.", "en": "The bill, please.", "th": "siopa", "b": "A1", "t": 1 },
-{ "ga": "Seo duit.", "en": "Here you are.", "th": "siopa", "b": "A1", "t": 1, "n": "Said as you hand something over." },
-{ "ga": "Tá sé sin ródhaor.", "en": "That's too expensive.", "th": "siopa", "b": "A1", "t": 1 },
-{ "ga": "An ceann sin, le do thoil.", "en": "That one, please.", "th": "siopa", "b": "A1", "t": 2 },
-{ "ga": "Cé mhéad atá air sin?", "en": "How much is that?", "alt": ["Cé mhéad é sin?"], "th": "siopa", "b": "A1", "t": 2 },
-{ "ga": "Dhá phionta, le do thoil.", "en": "Two pints, please.", "th": "siopa", "b": "A1", "t": 2, "n": "Dhá lenites and takes the singular: pionta, dhá phionta." },
-{ "ga": "Gloine fíona dheirg, le do thoil.", "en": "A glass of red wine, please.", "alt": ["Gloine fíon dearg, le do thoil."], "th": "siopa", "b": "A2", "t": 2 },
-{ "ga": "Caife dubh, le do thoil.", "en": "A black coffee, please.", "th": "siopa", "b": "A1", "t": 2 },
-{ "ga": "Le bainne, le do thoil.", "en": "With milk, please.", "th": "siopa", "b": "A1", "t": 2 },
-{ "ga": "Gan siúcra, le do thoil.", "en": "Without sugar, please.", "th": "siopa", "b": "A1", "t": 2 },
-{ "ga": "Tae le bainne agus siúcra.", "en": "Tea with milk and sugar.", "th": "siopa", "b": "A1", "t": 2 },
-{ "ga": "Ceapaire cáise, le do thoil.", "en": "A cheese sandwich, please.", "th": "siopa", "b": "A2", "t": 2 },
-{ "ga": "An biachlár, le do thoil.", "en": "The menu, please.", "th": "siopa", "b": "A1", "t": 2 },
-{ "ga": "Bord do bheirt, le do thoil.", "en": "A table for two, please.", "th": "siopa", "b": "A2", "t": 2 },
-{ "ga": "Ba bhreá liom ceann.", "en": "I'd love one.", "th": "siopa", "b": "A2", "t": 2 },
-{ "ga": "Tá sé seo an-bhlasta.", "en": "This is delicious.", "th": "siopa", "b": "A1", "t": 2 },
-{ "ga": "Is feoilséantóir mé.", "en": "I'm a vegetarian.", "th": "siopa", "b": "A2", "t": 2 },
-{ "ga": "Ní ólaim alcól.", "en": "I don't drink alcohol.", "th": "siopa", "b": "A2", "t": 2 },
-{ "ga": "An bhfuil bainne agat?", "en": "Do you have milk?", "th": "siopa", "b": "A1", "t": 2 },
-{ "ga": "An bhfuil airgead tirim agat?", "en": "Do you have cash?", "th": "siopa", "b": "A2", "t": 2, "n": "Literally: dry money." },
-{ "ga": "Níl airgead tirim agam.", "en": "I don't have cash.", "th": "siopa", "b": "A2", "t": 2 },
-{ "ga": "Coinnigh an tsóinseáil.", "en": "Keep the change.", "th": "siopa", "b": "A2", "t": 2 },
-{ "ga": "Íocfaidh mé.", "en": "I'll pay.", "th": "siopa", "b": "A1", "t": 2 },
-{ "ga": "Íocfaidh mise as seo.", "en": "I'll pay for this (it's on me).", "th": "siopa", "b": "A2", "t": 2, "n": "Mise stresses the I: I will pay." },
-{ "ga": "Tógfaidh mé é.", "en": "I'll take it.", "th": "siopa", "b": "A1", "t": 2 },
-{ "ga": "Tá mé ag féachaint thart.", "en": "I'm just looking.", "alt": ["Tá mé ag breathnú thart.", "Táim ag féachaint thart."], "th": "siopa", "b": "A2", "t": 2 },
-{ "ga": "An bhfuil mála uait?", "en": "Do you want a bag?", "th": "siopa", "b": "A2", "t": 2 },
-{ "ga": "Ní theastaíonn mála uaim.", "en": "I don't need a bag.", "alt": ["Níl mála uaim."], "th": "siopa", "b": "A2", "t": 2 },
-{ "ga": "Tá sé saor.", "en": "It's cheap.", "th": "siopa", "b": "A1", "t": 2 },
-{ "ga": "Cúig euro.", "en": "Five euro.", "th": "siopa", "b": "A1", "t": 2 },
-{ "ga": "Deich euro, le do thoil.", "en": "Ten euro, please.", "th": "siopa", "b": "A1", "t": 2 },
-{ "ga": "An bhfuil sibh ar oscailt?", "en": "Are you open?", "th": "siopa", "b": "A2", "t": 2 },
-{ "ga": "Cén t-am a osclaíonn sibh?", "en": "What time do you open?", "th": "siopa", "b": "A2", "t": 2 },
-{ "ga": "Cén t-am a dhúnann sibh?", "en": "What time do you close?", "th": "siopa", "b": "A2", "t": 2 },
-{ "ga": "Tá sé dúnta inniu.", "en": "It's closed today.", "th": "siopa", "b": "A1", "t": 2 },
-{ "ga": "Cá bhfuil an t-ollmhargadh?", "en": "Where is the supermarket?", "th": "siopa", "b": "A1", "t": 2 },
-{ "ga": "Ba mhaith liom ticéad go Gaillimh.", "en": "I'd like a ticket to Galway.", "th": "siopa", "b": "A2", "t": 2 },
-{ "ga": "Ticéad fillte, le do thoil.", "en": "A return ticket, please.", "th": "siopa", "b": "A2", "t": 2 },
-{ "ga": "Cé mhéad atá ar thicéad?", "en": "How much is a ticket?", "th": "siopa", "b": "A2", "t": 2 },
-{ "ga": "Tá muid dúnta.", "en": "We're closed.", "alt": ["Táimid dúnta."], "th": "siopa", "b": "A2", "t": 3 },
-{ "ga": "Cén praghas atá air?", "en": "What's the price of it?", "th": "siopa", "b": "A2", "t": 3 },
-{ "ga": "An féidir liom admháil a fháil?", "en": "Can I get a receipt?", "th": "siopa", "b": "A2", "t": 3 },
-{ "ga": "An féidir liom é seo a thriail?", "en": "Can I try this on?", "th": "siopa", "b": "A2", "t": 3 },
-{ "ga": "An bhfuil sé seo agat i méid níos mó?", "en": "Do you have this in a bigger size?", "th": "siopa", "b": "B1", "t": 3 },
-{ "ga": "An bhfuil rud ar bith gan feoil agaibh?", "en": "Do you have anything without meat?", "th": "siopa", "b": "B1", "t": 3 },
-{ "ga": "Ceannóidh mé an chéad deoch eile.", "en": "I'll buy the next drink.", "th": "siopa", "b": "A2", "t": 3 },
-{ "ga": "Is é mo sheal é.", "en": "It's my turn.", "th": "siopa", "b": "A2", "t": 3, "n": "Seal: a turn; in the pub, your round." },
-{ "ga": "An bhfuil tuilleadh uait?", "en": "Do you want more?", "alt": ["Ar mhaith leat tuilleadh?"], "th": "siopa", "b": "A2", "t": 3 }
+ {
+  "ga": "Cé mhéad atá air seo?",
+  "en": "How much is this?",
+  "alt": [
+   "Cé mhéad é seo?",
+   "Cá mhéad atá air seo?"
+  ],
+  "th": "siopa",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: how much is on this?"
+ },
+ {
+  "ga": "Ba mhaith liom cupán tae, le do thoil.",
+  "en": "I'd like a cup of tea, please.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Ba mhaith liom caife, le do thoil.",
+  "en": "I'd like a coffee, please.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Cad ba mhaith leat?",
+  "en": "What would you like?",
+  "alt": [
+   "Céard ba mhaith leat?"
+  ],
+  "th": "siopa",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Cad a bheidh agat?",
+  "en": "What will you have?",
+  "alt": [
+   "Céard a bheidh agat?"
+  ],
+  "th": "siopa",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Ar mhaith leat deoch?",
+  "en": "Would you like a drink?",
+  "th": "siopa",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Ba mhaith, le do thoil.",
+  "en": "Yes, please.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 1,
+  "n": "The answer to Ar mhaith leat...? Irish echoes the verb."
+ },
+ {
+  "ga": "Níor mhaith, go raibh maith agat.",
+  "en": "No, thank you.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 1,
+  "n": "The no answer to Ar mhaith leat...?"
+ },
+ {
+  "ga": "Cad ba mhaith leat a ól?",
+  "en": "What would you like to drink?",
+  "alt": [
+   "Céard ba mhaith leat a ól?"
+  ],
+  "th": "siopa",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Pionta, le do thoil.",
+  "en": "A pint, please.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Gloine uisce, le do thoil.",
+  "en": "A glass of water, please.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Ceann eile, le do thoil.",
+  "en": "Another one, please.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Ba mhaith liom an ceann seo.",
+  "en": "I'd like this one.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "An féidir liom íoc le cárta?",
+  "en": "Can I pay by card?",
+  "th": "siopa",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "An bille, le do thoil.",
+  "en": "The bill, please.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Seo duit.",
+  "en": "Here you are.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 1,
+  "n": "Said as you hand something over."
+ },
+ {
+  "ga": "Tá sé sin ródhaor.",
+  "en": "That's too expensive.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "An ceann sin, le do thoil.",
+  "en": "That one, please.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Cé mhéad atá air sin?",
+  "en": "How much is that?",
+  "alt": [
+   "Cé mhéad é sin?"
+  ],
+  "th": "siopa",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Dhá phionta, le do thoil.",
+  "en": "Two pints, please.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 2,
+  "n": "Dhá lenites and takes the singular: pionta, dhá phionta."
+ },
+ {
+  "ga": "Gloine fíona dheirg, le do thoil.",
+  "en": "A glass of red wine, please.",
+  "alt": [
+   "Gloine fíon dearg, le do thoil."
+  ],
+  "th": "siopa",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Caife dubh, le do thoil.",
+  "en": "A black coffee, please.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Le bainne, le do thoil.",
+  "en": "With milk, please.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Gan siúcra, le do thoil.",
+  "en": "Without sugar, please.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tae le bainne agus siúcra.",
+  "en": "Tea with milk and sugar.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Ceapaire cáise, le do thoil.",
+  "en": "A cheese sandwich, please.",
+  "th": "siopa",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "An biachlár, le do thoil.",
+  "en": "The menu, please.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Bord do bheirt, le do thoil.",
+  "en": "A table for two, please.",
+  "th": "siopa",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Ba bhreá liom ceann.",
+  "en": "I'd love one.",
+  "th": "siopa",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé seo an-bhlasta.",
+  "en": "This is delicious.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Is feoilséantóir mé.",
+  "en": "I'm a vegetarian.",
+  "th": "siopa",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Ní ólaim alcól.",
+  "en": "I don't drink alcohol.",
+  "th": "siopa",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "An bhfuil bainne agat?",
+  "en": "Do you have milk?",
+  "th": "siopa",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "An bhfuil airgead tirim agat?",
+  "en": "Do you have cash?",
+  "th": "siopa",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: dry money."
+ },
+ {
+  "ga": "Níl airgead tirim agam.",
+  "en": "I don't have cash.",
+  "th": "siopa",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Coinnigh an tsóinseáil.",
+  "en": "Keep the change.",
+  "th": "siopa",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Íocfaidh mé.",
+  "en": "I'll pay.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Íocfaidh mise as seo.",
+  "en": "I'll pay for this (it's on me).",
+  "th": "siopa",
+  "b": "A2",
+  "t": 2,
+  "n": "Mise stresses the I: I will pay."
+ },
+ {
+  "ga": "Tógfaidh mé é.",
+  "en": "I'll take it.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá mé ag féachaint thart.",
+  "en": "I'm just looking.",
+  "alt": [
+   "Tá mé ag breathnú thart.",
+   "Táim ag féachaint thart."
+  ],
+  "th": "siopa",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "An bhfuil mála uait?",
+  "en": "Do you want a bag?",
+  "th": "siopa",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Ní theastaíonn mála uaim.",
+  "en": "I don't need a bag.",
+  "alt": [
+   "Níl mála uaim."
+  ],
+  "th": "siopa",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé saor.",
+  "en": "It's cheap.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Cúig euro.",
+  "en": "Five euro.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Deich euro, le do thoil.",
+  "en": "Ten euro, please.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "An bhfuil sibh ar oscailt?",
+  "en": "Are you open?",
+  "th": "siopa",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Cén t-am a osclaíonn sibh?",
+  "en": "What time do you open?",
+  "th": "siopa",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Cén t-am a dhúnann sibh?",
+  "en": "What time do you close?",
+  "th": "siopa",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé dúnta inniu.",
+  "en": "It's closed today.",
+  "th": "siopa",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Cá bhfuil an t-ollmhargadh?",
+  "en": "Where is the supermarket?",
+  "th": "siopa",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Ba mhaith liom ticéad go Gaillimh.",
+  "en": "I'd like a ticket to Galway.",
+  "th": "siopa",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Ticéad fillte, le do thoil.",
+  "en": "A return ticket, please.",
+  "th": "siopa",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Cé mhéad atá ar thicéad?",
+  "en": "How much is a ticket?",
+  "th": "siopa",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá muid dúnta.",
+  "en": "We're closed.",
+  "alt": [
+   "Táimid dúnta."
+  ],
+  "th": "siopa",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Cén praghas atá air?",
+  "en": "What's the price of it?",
+  "th": "siopa",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "An féidir liom admháil a fháil?",
+  "en": "Can I get a receipt?",
+  "th": "siopa",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "An féidir liom é seo a thriail?",
+  "en": "Can I try this on?",
+  "th": "siopa",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "An bhfuil méid níos mó agat?",
+  "en": "Do you have a bigger size?",
+  "th": "siopa",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "An bhfuil rud ar bith gan feoil agaibh?",
+  "en": "Do you have anything without meat?",
+  "th": "siopa",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Ceannóidh mé an chéad deoch eile.",
+  "en": "I'll buy the next drink.",
+  "th": "siopa",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Is é mo bhabhta é.",
+  "en": "It's my turn.",
+  "th": "siopa",
+  "b": "A2",
+  "t": 3,
+  "n": "Seal: a turn; in the pub, your round."
+ },
+ {
+  "ga": "An bhfuil tuilleadh uait?",
+  "en": "Do you want more?",
+  "alt": [
+   "Ar mhaith leat tuilleadh?"
+  ],
+  "th": "siopa",
+  "b": "A2",
+  "t": 3
+ }
 ]

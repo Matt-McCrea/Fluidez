@@ -67,7 +67,7 @@
 { "ga": "Tá mé i ngrá leat.", "en": "I'm in love with you.", "th": "mothu", "b": "A2", "t": 3 },
 { "ga": "Mo ghrá thú.", "en": "You're my love.", "th": "mothu", "b": "A2", "t": 3, "n": "Literally: my love you." },
 { "ga": "Is mór an náire é.", "en": "It's a disgrace.", "th": "mothu", "b": "B1", "t": 3 },
-{ "ga": "Ní maith liom é sin ar chor ar bith.", "en": "I don't like that at all.", "th": "mothu", "b": "A2", "t": 3 },
+{ "ga": "Ní maith liom é ar chor ar bith.", "en": "I don't like it at all.", "th": "mothu", "b": "A2", "t": 3 },
 { "ga": "Ní féidir liom é a sheasamh.", "en": "I can't stand it.", "th": "mothu", "b": "B1", "t": 3 },
 { "ga": "Tá sé ag cur isteach orm.", "en": "It's bothering me.", "th": "mothu", "b": "B1", "t": 3 },
 { "ga": "Tá an-spéis agam ann.", "en": "I'm very interested in it.", "th": "mothu", "b": "B1", "t": 3 },

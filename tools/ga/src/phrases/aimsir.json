@@ -1,50 +1,352 @@
 [
-{ "ga": "Conas atá an aimsir?", "en": "What's the weather like?", "alt": ["Cén chaoi a bhfuil an aimsir?", "Cad é mar atá an aimsir?"], "th": "aimsir", "b": "A1", "t": 1 },
-{ "ga": "Tá sé fuar.", "en": "It's cold.", "th": "aimsir", "b": "A1", "t": 1 },
-{ "ga": "Tá sé te.", "en": "It's hot.", "th": "aimsir", "b": "A1", "t": 1 },
-{ "ga": "Tá sé ag cur báistí.", "en": "It's raining.", "th": "aimsir", "b": "A1", "t": 1, "n": "Literally: it is putting rain." },
-{ "ga": "Lá breá atá ann.", "en": "It's a fine day.", "alt": ["Is breá an lá é."], "th": "aimsir", "b": "A1", "t": 1 },
-{ "ga": "Tá sé gaofar.", "en": "It's windy.", "th": "aimsir", "b": "A1", "t": 1 },
-{ "ga": "Tá sé grianmhar.", "en": "It's sunny.", "th": "aimsir", "b": "A1", "t": 1 },
-{ "ga": "Tá sé go hálainn inniu.", "en": "It's lovely today.", "th": "aimsir", "b": "A1", "t": 1 },
-{ "ga": "Nach breá an lá é!", "en": "Isn't it a fine day!", "th": "aimsir", "b": "A1", "t": 1 },
-{ "ga": "Nach fuar atá sé!", "en": "Isn't it cold!", "th": "aimsir", "b": "A1", "t": 1 },
-{ "ga": "Tá sé fliuch.", "en": "It's wet.", "th": "aimsir", "b": "A1", "t": 1 },
-{ "ga": "Tá sé scamallach.", "en": "It's cloudy.", "th": "aimsir", "b": "A1", "t": 1 },
-{ "ga": "Tá sé ag cur sneachta.", "en": "It's snowing.", "th": "aimsir", "b": "A1", "t": 2 },
-{ "ga": "Lá fliuch atá ann.", "en": "It's a wet day.", "th": "aimsir", "b": "A1", "t": 2 },
-{ "ga": "Tá sé ceomhar.", "en": "It's foggy.", "th": "aimsir", "b": "A1", "t": 2 },
-{ "ga": "Tá sé tirim.", "en": "It's dry.", "th": "aimsir", "b": "A1", "t": 2 },
-{ "ga": "Tá sé an-fhuar inniu.", "en": "It's very cold today.", "th": "aimsir", "b": "A1", "t": 2 },
-{ "ga": "Tá an aimsir go dona.", "en": "The weather is bad.", "th": "aimsir", "b": "A1", "t": 2 },
-{ "ga": "Tá an aimsir go maith.", "en": "The weather is good.", "th": "aimsir", "b": "A1", "t": 2 },
-{ "ga": "Tá an ghrian ag taitneamh.", "en": "The sun is shining.", "th": "aimsir", "b": "A2", "t": 2 },
-{ "ga": "Tá sé ag stealladh báistí.", "en": "It's pouring rain.", "th": "aimsir", "b": "A2", "t": 2 },
-{ "ga": "Tá sé ag cur báistí arís.", "en": "It's raining again.", "th": "aimsir", "b": "A1", "t": 2 },
-{ "ga": "Beidh sé ag cur báistí amárach.", "en": "It'll rain tomorrow.", "th": "aimsir", "b": "A2", "t": 2 },
-{ "ga": "Tá báisteach air.", "en": "Rain is on the way.", "th": "aimsir", "b": "A2", "t": 2, "n": "Literally: there is rain on it." },
-{ "ga": "Tá sé ag éirí fuar.", "en": "It's getting cold.", "th": "aimsir", "b": "A2", "t": 2 },
-{ "ga": "Tá sé ag éirí dorcha.", "en": "It's getting dark.", "th": "aimsir", "b": "A2", "t": 2 },
-{ "ga": "Tá sé reoite.", "en": "It's freezing.", "th": "aimsir", "b": "A2", "t": 2 },
-{ "ga": "Tá mé préachta leis an bhfuacht.", "en": "I'm frozen with the cold.", "th": "aimsir", "b": "A2", "t": 2 },
-{ "ga": "Tóg scáth fearthainne leat.", "en": "Take an umbrella with you.", "th": "aimsir", "b": "A2", "t": 2 },
-{ "ga": "Ná déan dearmad ar do chóta.", "en": "Don't forget your coat.", "th": "aimsir", "b": "A2", "t": 2 },
-{ "ga": "Is maith liom an samhradh.", "en": "I like summer.", "th": "aimsir", "b": "A1", "t": 2 },
-{ "ga": "Is fuath liom an geimhreadh.", "en": "I hate winter.", "th": "aimsir", "b": "A2", "t": 3 },
-{ "ga": "Tá sé bog.", "en": "It's mild.", "th": "aimsir", "b": "A2", "t": 3, "n": "Bog: soft, of mild damp weather." },
-{ "ga": "Tá sé meirbh.", "en": "It's close (muggy).", "th": "aimsir", "b": "B1", "t": 3 },
-{ "ga": "Tá sé brothallach.", "en": "It's sweltering.", "th": "aimsir", "b": "B1", "t": 3 },
-{ "ga": "Tá sioc ann.", "en": "There's frost.", "th": "aimsir", "b": "A2", "t": 3 },
-{ "ga": "Tá sé ag cur clocha sneachta.", "en": "It's hailing.", "th": "aimsir", "b": "B1", "t": 3, "n": "Literally: it is putting stones of snow." },
-{ "ga": "Tá sé ag glanadh.", "en": "It's clearing up.", "th": "aimsir", "b": "A2", "t": 3 },
-{ "ga": "Tá stoirm ag teacht.", "en": "A storm is coming.", "th": "aimsir", "b": "A2", "t": 3 },
-{ "ga": "Tá toirneach agus tintreach ann.", "en": "There's thunder and lightning.", "th": "aimsir", "b": "B1", "t": 3 },
-{ "ga": "Tá mé fliuch go craiceann.", "en": "I'm soaked to the skin.", "th": "aimsir", "b": "B1", "t": 3 },
-{ "ga": "Tá sé níos teo inniu.", "en": "It's warmer today.", "th": "aimsir", "b": "A2", "t": 3 },
-{ "ga": "Tá sé níos fuaire ná inné.", "en": "It's colder than yesterday.", "th": "aimsir", "b": "A2", "t": 3 },
-{ "ga": "Tá súil agam go mbeidh sé tirim.", "en": "I hope it'll be dry.", "th": "aimsir", "b": "B1", "t": 3 },
-{ "ga": "Cad a deir réamhaisnéis na haimsire?", "en": "What does the weather forecast say?", "alt": ["Céard a deir réamhaisnéis na haimsire?"], "th": "aimsir", "b": "B1", "t": 3 },
-{ "ga": "Tá an lá ag dul i bhfeabhas.", "en": "The day is getting better.", "th": "aimsir", "b": "B1", "t": 3 },
-{ "ga": "Tá tuar ceatha ann.", "en": "There's a rainbow.", "th": "aimsir", "b": "A2", "t": 3 },
-{ "ga": "Samhradh breá a bhí ann.", "en": "It was a fine summer.", "th": "aimsir", "b": "B1", "t": 3 }
+ {
+  "ga": "Conas atá an aimsir?",
+  "en": "What's the weather like?",
+  "alt": [
+   "Cén chaoi a bhfuil an aimsir?",
+   "Cad é mar atá an aimsir?"
+  ],
+  "th": "aimsir",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá sé fuar.",
+  "en": "It's cold.",
+  "th": "aimsir",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá sé te.",
+  "en": "It's hot.",
+  "th": "aimsir",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá sé ag cur báistí.",
+  "en": "It's raining.",
+  "th": "aimsir",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: it is putting rain."
+ },
+ {
+  "ga": "Lá breá atá ann.",
+  "en": "It's a fine day.",
+  "alt": [
+   "Is breá an lá é."
+  ],
+  "th": "aimsir",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá sé gaofar.",
+  "en": "It's windy.",
+  "th": "aimsir",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá sé grianmhar.",
+  "en": "It's sunny.",
+  "th": "aimsir",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá sé go hálainn inniu.",
+  "en": "It's lovely today.",
+  "th": "aimsir",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Nach breá an lá é!",
+  "en": "Isn't it a fine day!",
+  "th": "aimsir",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Nach fuar atá sé!",
+  "en": "Isn't it cold!",
+  "th": "aimsir",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá sé fliuch.",
+  "en": "It's wet.",
+  "th": "aimsir",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá sé scamallach.",
+  "en": "It's cloudy.",
+  "th": "aimsir",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá sé ag cur sneachta.",
+  "en": "It's snowing.",
+  "th": "aimsir",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Lá fliuch atá ann.",
+  "en": "It's a wet day.",
+  "th": "aimsir",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé ceomhar.",
+  "en": "It's foggy.",
+  "th": "aimsir",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé tirim.",
+  "en": "It's dry.",
+  "th": "aimsir",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé an-fhuar inniu.",
+  "en": "It's very cold today.",
+  "th": "aimsir",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá an aimsir go dona.",
+  "en": "The weather is bad.",
+  "th": "aimsir",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá an aimsir go maith.",
+  "en": "The weather is good.",
+  "th": "aimsir",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá an ghrian ag taitneamh.",
+  "en": "The sun is shining.",
+  "th": "aimsir",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé ag stealladh báistí.",
+  "en": "It's pouring rain.",
+  "th": "aimsir",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé ag cur báistí arís.",
+  "en": "It's raining again.",
+  "th": "aimsir",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Beidh sé ag cur báistí amárach.",
+  "en": "It'll rain tomorrow.",
+  "th": "aimsir",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá cuma na báistí air.",
+  "en": "Rain is on the way.",
+  "th": "aimsir",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: there is rain on it."
+ },
+ {
+  "ga": "Tá sé ag éirí fuar.",
+  "en": "It's getting cold.",
+  "th": "aimsir",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé ag éirí dorcha.",
+  "en": "It's getting dark.",
+  "th": "aimsir",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé reoite.",
+  "en": "It's freezing.",
+  "th": "aimsir",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá mé préachta leis an bhfuacht.",
+  "en": "I'm frozen with the cold.",
+  "th": "aimsir",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tóg scáth fearthainne leat.",
+  "en": "Take an umbrella with you.",
+  "th": "aimsir",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Ná déan dearmad ar do chóta.",
+  "en": "Don't forget your coat.",
+  "th": "aimsir",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Is maith liom an samhradh.",
+  "en": "I like summer.",
+  "th": "aimsir",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Is fuath liom an geimhreadh.",
+  "en": "I hate winter.",
+  "th": "aimsir",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tá sé bog.",
+  "en": "It's mild.",
+  "th": "aimsir",
+  "b": "A2",
+  "t": 3,
+  "n": "Bog: soft, of mild damp weather."
+ },
+ {
+  "ga": "Tá sé meirbh.",
+  "en": "It's close (muggy).",
+  "th": "aimsir",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Tá sé brothallach.",
+  "en": "It's sweltering.",
+  "th": "aimsir",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Tá sioc ann.",
+  "en": "There's frost.",
+  "th": "aimsir",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tá sé ag cur clocha sneachta.",
+  "en": "It's hailing.",
+  "th": "aimsir",
+  "b": "B1",
+  "t": 3,
+  "n": "Literally: it is putting stones of snow."
+ },
+ {
+  "ga": "Tá sé ag glanadh.",
+  "en": "It's clearing up.",
+  "th": "aimsir",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tá stoirm ag teacht.",
+  "en": "A storm is coming.",
+  "th": "aimsir",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tá toirneach agus tintreach ann.",
+  "en": "There's thunder and lightning.",
+  "th": "aimsir",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Tá mé fliuch go craiceann.",
+  "en": "I'm soaked to the skin.",
+  "th": "aimsir",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Tá sé níos teo inniu.",
+  "en": "It's warmer today.",
+  "th": "aimsir",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tá sé níos fuaire ná inné.",
+  "en": "It's colder than yesterday.",
+  "th": "aimsir",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tá súil agam go mbeidh sé tirim.",
+  "en": "I hope it'll be dry.",
+  "th": "aimsir",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Cad a deir réamhaisnéis na haimsire?",
+  "en": "What does the weather forecast say?",
+  "alt": [
+   "Céard a deir réamhaisnéis na haimsire?"
+  ],
+  "th": "aimsir",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Tá an lá ag dul i bhfeabhas.",
+  "en": "The day is getting better.",
+  "th": "aimsir",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Tá tuar ceatha ann.",
+  "en": "There's a rainbow.",
+  "th": "aimsir",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Samhradh breá a bhí ann.",
+  "en": "It was a fine summer.",
+  "th": "aimsir",
+  "b": "B1",
+  "t": 3
+ }
 ]
