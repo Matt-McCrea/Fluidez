@@ -26,6 +26,9 @@ OVERRIDES = {
     # the short imperatives everyone uses
     ('أَخَذَ', 'amr'): {'anta': 'خُذْ', 'anti': 'خُذِي', 'antum': 'خُذُوا', 'antunna': 'خُذْنَ', 'antuma': 'خُذَا'},
     ('أَكَلَ', 'amr'): {'anta': 'كُلْ', 'anti': 'كُلِي', 'antum': 'كُلُوا', 'antunna': 'كُلْنَ', 'antuma': 'كُلَا'},
+    # Qutrub takes the past stem's vowel for these hollow imperatives (نِمْ, خِفْ)
+    ('نَامَ', 'amr'): {'anta': 'نَمْ', 'antunna': 'نَمْنَ'},
+    ('خَافَ', 'amr'): {'anta': 'خَفْ', 'antunna': 'خَفْنَ'},
     ('سَأَلَ', 'amr'): {'anta': 'اِسْأَلْ', 'anti': 'اِسْأَلِي', 'antum': 'اِسْأَلُوا', 'antunna': 'اِسْأَلْنَ', 'antuma': 'اِسْأَلَا'},
 }
 NO_AMR = {'كَانَ', 'رَأَى', 'اِسْتَطَاعَ', 'مَاتَ', 'حَدَثَ', 'أَصْبَحَ', 'صَارَ', 'ظَهَرَ', 'سَقَطَ', 'اِحْتَاجَ', 'بَقِيَ', 'وَجَدَ', 'أَدْرَكَ'}

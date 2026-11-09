@@ -1,295 +1,2346 @@
 [
-{"q":"أَنْتِ ___ إِلَى النَّادِي الرِّيَاضِيِّ كُلَّ صَبَاحٍ.","v":"ذَهَبَ","p":"anti","t":"mudari","e":"You go to the gym every morning.","b":"A1"},
-{"q":"أَنْتِ ___ الْفَوَاكِهَ بَعْدَ الْغَدَاءِ دَائِمًا.","v":"أَكَلَ","p":"anti","t":"mudari","e":"You always eat fruit after lunch.","b":"A1"},
-{"q":"أَنْتِ ___ الْقَهْوَةَ بِدُونِ سُكَّرٍ عَادَةً.","v":"شَرِبَ","p":"anti","t":"mudari","e":"You usually drink coffee without sugar.","b":"A1"},
-{"q":"أَنْتِ ___ فِي دَفْتَرِكِ كُلَّ لَيْلَةٍ.","v":"كَتَبَ","p":"anti","t":"mudari","e":"You write in your notebook every night.","b":"A1"},
-{"q":"أَنْتِ ___ صَبَاحَ الْخَيْرِ لِلْجِيرَانِ كُلَّ يَوْمٍ.","v":"قَالَ","p":"anti","t":"mudari","e":"You say good morning to the neighbours every day.","b":"A1"},
-{"q":"أَنْتِ ___ إِلَى الصَّفِّ قَبْلَ الْمُعَلِّمَةِ دَائِمًا.","v":"جَاءَ","p":"anti","t":"mudari","e":"You always come to class before the teacher.","b":"A1"},
-{"q":"أَنْتِ ___ كُلَّ النَّاسِ فِي هٰذَا الشَّارِعِ الْآنَ.","v":"عَرَفَ","p":"anti","t":"mudari","e":"You know everyone in this street now.","b":"A1"},
-{"q":"أَنْتِ ___ أَنْ تَأْكُلِي شَيْئًا الْآنَ.","v":"أَرَادَ","p":"anti","t":"mudari","e":"You want to eat something now.","b":"A1"},
-{"q":"أَنْتِ ___ السِّبَاحَةَ فِي الصَّيْفِ دَائِمًا.","v":"أَحَبَّ","p":"anti","t":"mudari","e":"You always love swimming in summer.","b":"A1"},
-{"q":"أَنْتِ ___ الْبَحْرَ مِنْ نَافِذَتِكِ كُلَّ يَوْمٍ.","v":"رَأَى","p":"anti","t":"mudari","e":"You see the sea from your window every day.","b":"A1"},
-{"q":"أَنْتِ ___ قُرْبَ الْجَامِعَةِ الْآنَ.","v":"سَكَنَ","p":"anti","t":"mudari","e":"You live near the university now.","b":"A1"},
-{"q":"أَنْتِ ___ مُمَرِّضَةً فِي مُسْتَشْفًى كَبِيرٍ الْآنَ.","v":"عَمِلَ","p":"anti","t":"mudari","e":"You work as a nurse in a big hospital now.","b":"A1"},
-{"q":"أَنْتِ ___ الْهَنْدَسَةَ فِي الْجَامِعَةِ هٰذِهِ السَّنَةَ.","v":"دَرَسَ","p":"anti","t":"mudari","e":"You are studying engineering at university this year.","b":"A1"},
-{"q":"أَنْتِ ___ مَعَ أُخْتِكِ بِالْفِيدْيُو كُلَّ أُسْبُوعٍ.","v":"تَكَلَّمَ","p":"anti","t":"mudari","e":"You talk to your sister by video every week.","b":"A1"},
-{"q":"أَنْتِ ___ أَصْوَاتَ الْأَطْفَالِ مِنَ الْمَدْرَسَةِ كُلَّ صَبَاحٍ.","v":"سَمِعَ","p":"anti","t":"mudari","e":"You hear the children's voices from the school every morning.","b":"A1"},
-{"q":"أَنْتِ ___ ثَمَانِيَ سَاعَاتٍ كُلَّ لَيْلَةٍ.","v":"نَامَ","p":"anti","t":"mudari","e":"You sleep eight hours every night.","b":"A1"},
-{"q":"أَنْتِ ___ الدَّوَاءَ بَعْدَ الْأَكْلِ دَائِمًا.","v":"أَخَذَ","p":"anti","t":"mudari","e":"You always take the medicine after eating.","b":"A1"},
-{"q":"أَنْتِ ___ النَّوَافِذَ كُلَّ صَبَاحٍ.","v":"فَتَحَ","p":"anti","t":"mudari","e":"You open the windows every morning.","b":"A1"},
-{"q":"أَنْتِ ___ الْبَيْتَ مِنَ الْبَابِ الْخَلْفِيِّ دَائِمًا.","v":"دَخَلَ","p":"anti","t":"mudari","e":"You always come into the house through the back door.","b":"A1"},
-{"q":"أَنْتِ ___ بِجَانِبِ النَّافِذَةِ فِي الْحَافِلَةِ عَادَةً.","v":"جَلَسَ","p":"anti","t":"mudari","e":"You usually sit by the window on the bus.","b":"A1"},
-{"q":"أَنْتِ ___ التِّنِسَ مَعَ صَدِيقَتِكِ كُلَّ يَوْمِ سَبْتٍ.","v":"لَعِبَ","p":"anti","t":"mudari","e":"You play tennis with your friend every Saturday.","b":"A1"},
-{"q":"أَنْتِ ___ مِنَ الْجَامِعَةِ فِي السَّاعَةِ الثَّالِثَةِ عَادَةً.","v":"رَجَعَ","p":"anti","t":"mudari","e":"You usually come back from university at three.","b":"A1"},
-{"q":"أَنْتِ ___ إِلَى بَيْتِ أَهْلِكِ فِي كُلِّ عُطْلَةٍ دَائِمًا.","v":"سَافَرَ","p":"anti","t":"mudari","e":"You travel to your parents' house every holiday.","b":"A1"},
-{"q":"أَنْتِ ___ الْخُبْزَ مِنَ الْمَخْبَزِ كُلَّ صَبَاحٍ.","v":"اِشْتَرَى","p":"anti","t":"mudari","e":"You buy bread from the bakery every morning.","b":"A1"},
-{"q":"أَنْتِ ___ طَعَامًا لَذِيذًا دَائِمًا.","v":"طَبَخَ","p":"anti","t":"mudari","e":"You always cook delicious food.","b":"A1"},
-{"q":"أَنْتِ ___ شَعْرَكِ كُلَّ يَوْمَيْنِ.","v":"غَسَلَ","p":"anti","t":"mudari","e":"You wash your hair every two days.","b":"A1"},
-{"q":"أَنْتِ ___ إِلَى الْمَكْتَبِ قَبْلَ الْجَمِيعِ كُلَّ يَوْمٍ.","v":"وَصَلَ","p":"anti","t":"mudari","e":"You get to the office before everyone every day.","b":"A1"},
-{"q":"أَنْتِ ___ أَسْئِلَةً كَثِيرَةً فِي الصَّفِّ دَائِمًا.","v":"سَأَلَ","p":"anti","t":"mudari","e":"You always ask a lot of questions in class.","b":"A1"},
-{"q":"أَنْتِ ___ أَطْفَالَكِ مَصْرُوفًا كُلَّ أُسْبُوعٍ.","v":"أَعْطَى","p":"anti","t":"mudari","e":"You give your children pocket money every week.","b":"A1"},
-{"q":"أَنْتِ ___ مَعَ كَلْبِكِ كُلَّ مَسَاءٍ.","v":"مَشَى","p":"anti","t":"mudari","e":"You walk with your dog every evening.","b":"A1"},
-{"q":"أَنْتِ ___ مِعْطَفًا ثَقِيلًا فِي الشِّتَاءِ دَائِمًا.","v":"لَبِسَ","p":"anti","t":"mudari","e":"You always wear a heavy coat in winter.","b":"A1"},
-{"q":"أَنْتِ ___ عَمَلَكِ فِي السَّاعَةِ التَّاسِعَةِ كُلَّ يَوْمٍ.","v":"بَدَأَ","p":"anti","t":"mudari","e":"You start work at nine every day.","b":"A1"},
-{"q":"أَنْتِ ___ أَنْ تَقْرَئِي الْعَرَبِيَّةَ بِسُرْعَةٍ الْآنَ.","v":"اِسْتَطَاعَ","p":"anti","t":"mudari","e":"You can read Arabic quickly now.","b":"A1"},
-{"q":"أَنْتِ ___ مَوْقِفًا لِلسَّيَّارَةِ بِسُهُولَةٍ دَائِمًا.","v":"وَجَدَ","p":"anti","t":"mudari","e":"You always find a parking space easily.","b":"A1"},
-{"q":"أَنْتِ ___ الْمِتْرُو إِلَى الْعَمَلِ كُلَّ يَوْمٍ.","v":"رَكِبَ","p":"anti","t":"mudari","e":"You take the metro to work every day.","b":"A1"},
-{"q":"أَنْتِ ___ مِنَ النَّوْمِ مُبَكِّرَةً كُلَّ يَوْمٍ.","v":"قَامَ","p":"anti","t":"mudari","e":"You get up early every day.","b":"A1"},
-{"q":"أَنْتِ ___ النُّكَتَ الْمِصْرِيَّةَ الْآنَ.","v":"فَهِمَ","p":"anti","t":"mudari","e":"You understand Egyptian jokes now.","b":"A1"},
-{"q":"أَنْتِ ___ أُمَّكِ فِي التَّنْظِيفِ كُلَّ يَوْمِ جُمُعَةٍ.","v":"سَاعَدَ","p":"anti","t":"mudari","e":"You help your mother with the cleaning every Friday.","b":"A2"},
-{"q":"أَنْتِ ___ أَخَاكِ أَمَامَ الْمَدْرَسَةِ كُلَّ يَوْمٍ.","v":"اِنْتَظَرَ","p":"anti","t":"mudari","e":"You wait for your brother outside the school every day.","b":"A2"},
-{"q":"أَنْتِ ___ الْفَرَنْسِيَّةَ فِي مَعْهَدٍ هٰذِهِ الْأَيَّامَ.","v":"تَعَلَّمَ","p":"anti","t":"mudari","e":"You are learning French at an institute these days.","b":"A2"},
-{"q":"أَنْتِ ___ الرِّيَاضِيَّاتِ فِي مَدْرَسَةٍ لِلْبَنَاتِ الْآنَ.","v":"عَلَّمَ","p":"anti","t":"mudari","e":"You teach maths at a girls' school now.","b":"A2"},
-{"q":"أَنْتِ ___ أَسْمَاءَ النَّاسِ دَائِمًا.","v":"نَسِيَ","p":"anti","t":"mudari","e":"You always forget people's names.","b":"A2"},
-{"q":"أَنْتِ ___ فِي عَمَلِكِ حَتَّى فِي الْعُطْلَةِ دَائِمًا.","v":"فَكَّرَ","p":"anti","t":"mudari","e":"You always think about your work, even on holiday.","b":"A2"},
-{"q":"أَنْتِ ___ حَقِيبَةً كَبِيرَةً إِلَى الْعَمَلِ كُلَّ يَوْمٍ.","v":"حَمَلَ","p":"anti","t":"mudari","e":"You carry a big bag to work every day.","b":"A2"},
-{"q":"أَنْتِ ___ بِأُمِّكِ كُلَّ مَسَاءٍ.","v":"اِتَّصَلَ","p":"anti","t":"mudari","e":"You call your mother every evening.","b":"A2"},
-{"q":"أَنْتِ ___ لِي رَسَائِلَ صَوْتِيَّةً طَوِيلَةً دَائِمًا.","v":"أَرْسَلَ","p":"anti","t":"mudari","e":"You always send me long voice messages.","b":"A2"},
-{"q":"أَنْتِ ___ الْقَامُوسَ فِي كُلِّ دَرْسٍ دَائِمًا.","v":"اِسْتَعْمَلَ","p":"anti","t":"mudari","e":"You always use the dictionary in every lesson.","b":"A2"},
-{"q":"أَنْتِ ___ جَدَّكِ فِي الْمُسْتَشْفَى كُلَّ يَوْمٍ.","v":"زَارَ","p":"anti","t":"mudari","e":"You visit your grandfather in hospital every day.","b":"A2"},
-{"q":"أَنْتِ ___ قَبْلَ الْمُنَبِّهِ دَائِمًا.","v":"اِسْتَيْقَظَ","p":"anti","t":"mudari","e":"You always wake up before the alarm.","b":"A2"},
-{"q":"أَنْتِ ___ بِصَوْتٍ عَالٍ دَائِمًا.","v":"ضَحِكَ","p":"anti","t":"mudari","e":"You always laugh loudly.","b":"A2"},
-{"q":"أَنْتِ ___ فِي الْحَمَّامِ كُلَّ صَبَاحٍ.","v":"غَنَّى","p":"anti","t":"mudari","e":"You sing in the shower every morning.","b":"A2"},
-{"q":"أَنْتِ ___ إِلَى رَاحَةٍ الْآنَ.","v":"اِحْتَاجَ","p":"anti","t":"mudari","e":"You need a rest now.","b":"A2"},
-{"q":"أَنْتِ ___ الْقِطَارَ عَلَى الْحَافِلَةِ دَائِمًا.","v":"فَضَّلَ","p":"anti","t":"mudari","e":"You always prefer the train to the bus.","b":"A2"},
-{"q":"أَنْتِ ___ الْأَخْبَارَ كُلَّ لَيْلَةٍ.","v":"شَاهَدَ","p":"anti","t":"mudari","e":"You watch the news every night.","b":"A2"},
-{"q":"أَنْتِ ___ إِلَى الرَّادِيُو فِي الْمَطْبَخِ عَادَةً.","v":"اِسْتَمَعَ","p":"anti","t":"mudari","e":"You usually listen to the radio in the kitchen.","b":"A2"},
-{"q":"أَنْتِ ___ صَدِيقَاتِكِ فِي الْمَقْهَى كُلَّ يَوْمِ خَمِيسٍ.","v":"قَابَلَ","p":"anti","t":"mudari","e":"You meet your friends at the café every Thursday.","b":"A2"},
-{"q":"أَنْتِ ___ بِالنَّبَاتَاتِ كَثِيرًا هٰذِهِ الْأَيَّامَ.","v":"اِهْتَمَّ","p":"anti","t":"mudari","e":"You care a lot about plants these days.","b":"B1"},
-{"q":"أَنْتِ ___ مِنَ الطَّائِرَاتِ دَائِمًا.","v":"خَافَ","p":"anti","t":"mudari","e":"You are always afraid of planes.","b":"B1"},
-{"q":"أَنْتِ ___ عَشْرَ كَلِمَاتٍ جَدِيدَةٍ كُلَّ يَوْمٍ.","v":"حَفِظَ","p":"anti","t":"mudari","e":"You memorise ten new words every day.","b":"B1"},
-{"q":"أَنْتِ ___ عَلَى الرَّسَائِلِ بِسُرْعَةٍ دَائِمًا.","v":"رَدَّ","p":"anti","t":"mudari","e":"You always reply to messages quickly.","b":"B1"},
-{"q":"أَنْتِ ___ أَجْمَلَ الْهَدَايَا دَائِمًا.","v":"اِخْتَارَ","p":"anti","t":"mudari","e":"You always choose the nicest presents.","b":"B1"},
-{"q":"أَنْتِ ___ الْقَوَاعِدَ بِوُضُوحٍ دَائِمًا.","v":"شَرَحَ","p":"anti","t":"mudari","e":"You always explain the grammar clearly.","b":"B1"},
-{"q":"أَنْتُمْ ___ إِلَى الْمَسْجِدِ يَوْمَ الْجُمُعَةِ عَادَةً.","v":"ذَهَبَ","p":"antum","t":"mudari","e":"You usually go to the mosque on Friday.","b":"A1"},
-{"q":"أَنْتُمْ ___ الْعَشَاءَ مُتَأَخِّرِينَ دَائِمًا.","v":"أَكَلَ","p":"antum","t":"mudari","e":"You always eat dinner late.","b":"A1"},
-{"q":"أَنْتُمْ ___ الْمَاءَ كَثِيرًا فِي الصَّيْفِ عَادَةً.","v":"شَرِبَ","p":"antum","t":"mudari","e":"You usually drink a lot of water in summer.","b":"A1"},
-{"q":"أَنْتُمْ ___ التَّقَارِيرَ بِالْإِنْجِلِيزِيَّةِ فِي الْعَمَلِ دَائِمًا.","v":"كَتَبَ","p":"antum","t":"mudari","e":"You always write the reports in English at work.","b":"A1"},
-{"q":"أَنْتُمْ ___ قِصَصًا لِأَطْفَالِكُمْ كُلَّ لَيْلَةٍ.","v":"قَرَأَ","p":"antum","t":"mudari","e":"You read stories to your children every night.","b":"A1"},
-{"q":"أَنْتُمْ ___ شُكْرًا لِلسَّائِقِ كُلَّ يَوْمٍ.","v":"قَالَ","p":"antum","t":"mudari","e":"You say thank you to the driver every day.","b":"A1"},
-{"q":"أَنْتُمْ ___ إِلَى هٰذَا الْمَطْعَمِ كُلَّ أُسْبُوعٍ.","v":"جَاءَ","p":"antum","t":"mudari","e":"You come to this restaurant every week.","b":"A1"},
-{"q":"أَنْتُمْ ___ الْمَدِينَةَ جَيِّدًا الْآنَ.","v":"عَرَفَ","p":"antum","t":"mudari","e":"You know the city well now.","b":"A1"},
-{"q":"أَنْتُمْ ___ أَنْ تَرْتَاحُوا الْآنَ.","v":"أَرَادَ","p":"antum","t":"mudari","e":"You want to rest now.","b":"A1"},
-{"q":"أَنْتُمْ ___ الطَّعَامَ الْحَارَّ دَائِمًا.","v":"أَحَبَّ","p":"antum","t":"mudari","e":"You always love spicy food.","b":"A1"},
-{"q":"أَنْتُمْ ___ فِي الطَّابِقِ الثَّالِثِ الْآنَ.","v":"سَكَنَ","p":"antum","t":"mudari","e":"You live on the third floor now.","b":"A1"},
-{"q":"أَنْتُمْ ___ فِي الْمَكْتَبَةِ بَعْدَ الظُّهْرِ عَادَةً.","v":"دَرَسَ","p":"antum","t":"mudari","e":"You usually study in the library in the afternoon.","b":"A1"},
-{"q":"أَنْتُمْ ___ بِسُرْعَةٍ كَبِيرَةٍ دَائِمًا.","v":"تَكَلَّمَ","p":"antum","t":"mudari","e":"You always speak very fast.","b":"A1"},
-{"q":"أَنْتُمْ ___ بَعْدَ الْغَدَاءِ يَوْمَ الْجُمُعَةِ عَادَةً.","v":"نَامَ","p":"antum","t":"mudari","e":"You usually sleep after lunch on Friday.","b":"A1"},
-{"q":"أَنْتُمْ ___ الْحَافِلَةَ إِلَى الْجَامِعَةِ كُلَّ صَبَاحٍ.","v":"أَخَذَ","p":"antum","t":"mudari","e":"You take the bus to university every morning.","b":"A1"},
-{"q":"أَنْتُمْ ___ الْمَحَلَّ فِي السَّاعَةِ الثَّامِنَةِ كُلَّ يَوْمٍ.","v":"فَتَحَ","p":"antum","t":"mudari","e":"You open the shop at eight every day.","b":"A1"},
-{"q":"أَنْتُمْ ___ مِنَ الْعَمَلِ مُتَأَخِّرِينَ دَائِمًا.","v":"خَرَجَ","p":"antum","t":"mudari","e":"You always leave work late.","b":"A1"},
-{"q":"أَنْتُمْ ___ أَمَامَ التِّلْفَازِ كُلَّ مَسَاءٍ.","v":"جَلَسَ","p":"antum","t":"mudari","e":"You sit in front of the television every evening.","b":"A1"},
-{"q":"أَنْتُمْ ___ أَلْعَابَ الْفِيدْيُو كَثِيرًا هٰذِهِ الْأَيَّامَ.","v":"لَعِبَ","p":"antum","t":"mudari","e":"You play a lot of video games these days.","b":"A1"},
-{"q":"أَنْتُمْ ___ لِلْعَمَلِ كُلَّ شَهْرٍ.","v":"سَافَرَ","p":"antum","t":"mudari","e":"You travel for work every month.","b":"A1"},
-{"q":"أَنْتُمْ ___ الْمَلَابِسَ عَلَى الْإِنْتَرْنِتْ عَادَةً.","v":"اِشْتَرَى","p":"antum","t":"mudari","e":"You usually buy clothes online.","b":"A1"},
-{"q":"أَنْتُمْ ___ الْكَبْسَةَ يَوْمَ الْجُمُعَةِ عَادَةً.","v":"طَبَخَ","p":"antum","t":"mudari","e":"You usually cook kabsa on Friday.","b":"A1"},
-{"q":"أَنْتُمْ ___ عَنْ جَدَّتِكُمْ كُلَّ يَوْمٍ.","v":"سَأَلَ","p":"antum","t":"mudari","e":"You ask after your grandmother every day.","b":"A1"},
-{"q":"أَنْتُمْ ___ النَّادِلَ بَقْشِيشًا دَائِمًا.","v":"أَعْطَى","p":"antum","t":"mudari","e":"You always give the waiter a tip.","b":"A1"},
-{"q":"أَنْتُمْ ___ الشَّيْءَ نَفْسَهُ كُلَّ يَوْمٍ.","v":"فَعَلَ","p":"antum","t":"mudari","e":"You do the same thing every day.","b":"A1"},
-{"q":"أَنْتُمْ ___ إِلَى هَوَاتِفِكُمْ عَلَى الطَّاوِلَةِ دَائِمًا.","v":"نَظَرَ","p":"antum","t":"mudari","e":"You always look at your phones at the table.","b":"A1"},
-{"q":"أَنْتُمْ ___ عَلَى الْكُورْنِيشِ كُلَّ مَسَاءٍ.","v":"مَشَى","p":"antum","t":"mudari","e":"You walk along the corniche every evening.","b":"A1"},
-{"q":"أَنْتُمْ ___ الزِّيَّ الْمَدْرَسِيَّ كُلَّ يَوْمٍ.","v":"لَبِسَ","p":"antum","t":"mudari","e":"You wear school uniform every day.","b":"A1"},
-{"q":"أَنْتُمْ ___ الدَّرْسَ بِالْقِرَاءَةِ دَائِمًا.","v":"بَدَأَ","p":"antum","t":"mudari","e":"You always start the lesson with reading.","b":"A1"},
-{"q":"أَنْتُمْ ___ إِلَى بَلَدِكُمْ كُلَّ صَيْفٍ.","v":"عَادَ","p":"antum","t":"mudari","e":"You go back to your country every summer.","b":"A1"},
-{"q":"أَنْتُمْ ___ الدَّرَّاجَاتِ فِي الْحَدِيقَةِ كُلَّ يَوْمِ سَبْتٍ.","v":"رَكِبَ","p":"antum","t":"mudari","e":"You ride bikes in the park every Saturday.","b":"A1"},
-{"q":"أَنْتُمْ ___ أَبَاكُمْ فِي الْمَحَلِّ بَعْدَ الْمَدْرَسَةِ كُلَّ يَوْمٍ.","v":"سَاعَدَ","p":"antum","t":"mudari","e":"You help your father in the shop after school every day.","b":"A2"},
-{"q":"أَنْتُمْ ___ بِالْبِطَاقَةِ دَائِمًا.","v":"دَفَعَ","p":"antum","t":"mudari","e":"You always pay by card.","b":"A2"},
-{"q":"أَنْتُمْ ___ الْقِطَارَ عَلَى الرَّصِيفِ الْآنَ.","v":"اِنْتَظَرَ","p":"antum","t":"mudari","e":"You are waiting for the train on the platform now.","b":"A2"},
-{"q":"أَنْتُمْ ___ الْعَزْفَ عَلَى الْعُودِ هٰذِهِ الْأَيَّامَ.","v":"تَعَلَّمَ","p":"antum","t":"mudari","e":"You are learning to play the oud these days.","b":"A2"},
-{"q":"أَنْتُمْ ___ أَعْيَادَ مِيلَادِ الْجَمِيعِ دَائِمًا.","v":"تَذَكَّرَ","p":"antum","t":"mudari","e":"You always remember everyone's birthday.","b":"A2"},
-{"q":"أَنْتُمْ ___ الْأَضْوَاءَ مُضَاءَةً دَائِمًا.","v":"تَرَكَ","p":"antum","t":"mudari","e":"You always leave the lights on.","b":"A2"},
-{"q":"أَنْتُمْ ___ الْبَيْتَ فِي السَّاعَةِ السَّابِعَةِ كُلَّ صَبَاحٍ.","v":"غَادَرَ","p":"antum","t":"mudari","e":"You leave the house at seven every morning.","b":"A2"},
-{"q":"أَنْتُمْ ___ الْمَحَلَّ فِي السَّاعَةِ الْعَاشِرَةِ لَيْلًا عَادَةً.","v":"أَغْلَقَ","p":"antum","t":"mudari","e":"You usually close the shop at ten at night.","b":"A2"},
-{"q":"أَنْتُمْ ___ عَنْ عَمَلٍ جَدِيدٍ الْآنَ.","v":"بَحَثَ","p":"antum","t":"mudari","e":"You are looking for a new job now.","b":"A2"},
-{"q":"أَنْتُمْ ___ أَقَارِبَكُمْ فِي الْعِيدِ دَائِمًا.","v":"زَارَ","p":"antum","t":"mudari","e":"You always visit your relatives at Eid.","b":"A2"},
-{"q":"أَنْتُمْ ___ أَنْ تَتَكَلَّمُوا الْعَرَبِيَّةَ فِي الْبَيْتِ الْآنَ.","v":"حَاوَلَ","p":"antum","t":"mudari","e":"You try to speak Arabic at home now.","b":"A2"},
-{"q":"أَنْتُمْ ___ فِي الْمَسْبَحِ مَرَّتَيْنِ فِي الْأُسْبُوعِ عَادَةً.","v":"سَبَحَ","p":"antum","t":"mudari","e":"You usually swim in the pool twice a week.","b":"A2"},
-{"q":"أَنْتُمْ ___ خَمْسَةَ كِيلُومِتْرَاتٍ كُلَّ صَبَاحٍ.","v":"رَكَضَ","p":"antum","t":"mudari","e":"You run five kilometres every morning.","b":"A2"},
-{"q":"أَنْتُمْ ___ الْمُعَلِّمَ بَعْدَ كُلِّ دَرْسٍ دَائِمًا.","v":"شَكَرَ","p":"antum","t":"mudari","e":"You always thank the teacher after every lesson.","b":"A2"},
-{"q":"أَنْتُمْ ___ عَنْ أَسْئِلَةِ الزَّبَائِنِ كُلَّ يَوْمٍ.","v":"أَجَابَ","p":"antum","t":"mudari","e":"You answer customers' questions every day.","b":"A2"},
-{"q":"أَنْتُمْ ___ بِالرِّيَاضَةِ كَثِيرًا هٰذِهِ الْأَيَّامَ.","v":"اِهْتَمَّ","p":"antum","t":"mudari","e":"You are very into sport these days.","b":"B1"},
-{"q":"أَنْتُمْ ___ الْقُمَامَةَ مِنَ الشَّاطِئِ كُلَّ يَوْمِ سَبْتٍ.","v":"جَمَعَ","p":"antum","t":"mudari","e":"You collect the rubbish from the beach every Saturday.","b":"B1"},
-{"q":"أَنْتُمْ ___ فِي مُبَارَاةِ الْمَدْرَسَةِ كُلَّ سَنَةٍ.","v":"شَارَكَ","p":"antum","t":"mudari","e":"You take part in the school match every year.","b":"B1"},
-{"q":"أَنْتُمْ ___ رَاتِبًا جَيِّدًا الْآنَ.","v":"كَسَبَ","p":"antum","t":"mudari","e":"You earn a good salary now.","b":"B1"},
-{"q":"أَنْتُمْ ___ فِي الطَّابُورِ نِصْفَ سَاعَةٍ كُلَّ صَبَاحٍ.","v":"وَقَفَ","p":"antum","t":"mudari","e":"You stand in the queue for half an hour every morning.","b":"B1"},
-{"q":"الْبَنَاتُ ___ إِلَى الْمَدْرَسَةِ مَشْيًا كُلَّ يَوْمٍ.","v":"ذَهَبَ","p":"hunna","t":"mudari","e":"The girls go to school on foot every day.","b":"A1"},
-{"q":"هُنَّ ___ السَّلَطَةَ عَلَى الْغَدَاءِ عَادَةً.","v":"أَكَلَ","p":"hunna","t":"mudari","e":"They (f) usually eat salad for lunch.","b":"A1"},
-{"q":"النِّسَاءُ ___ الشَّايَ مَعًا كُلَّ مَسَاءٍ.","v":"شَرِبَ","p":"hunna","t":"mudari","e":"The women drink tea together every evening.","b":"A1"},
-{"q":"الطَّالِبَاتُ ___ الْوَاجِبَ فِي الْمَكْتَبَةِ عَادَةً.","v":"كَتَبَ","p":"hunna","t":"mudari","e":"The students (f) usually write their homework in the library.","b":"A1"},
-{"q":"هُنَّ ___ الْمَجَلَّاتِ فِي صَالُونِ التَّجْمِيلِ دَائِمًا.","v":"قَرَأَ","p":"hunna","t":"mudari","e":"They (f) always read magazines at the beauty salon.","b":"A1"},
-{"q":"الْبَنَاتُ ___ دَائِمًا إِنَّ الرِّيَاضِيَّاتِ صَعْبَةٌ.","v":"قَالَ","p":"hunna","t":"mudari","e":"The girls always say that maths is hard.","b":"A1"},
-{"q":"أَخَوَاتِي ___ إِلَى بَيْتِنَا كُلَّ يَوْمِ جُمُعَةٍ.","v":"جَاءَ","p":"hunna","t":"mudari","e":"My sisters come to our house every Friday.","b":"A1"},
-{"q":"هُنَّ ___ كُلَّ الْأُغْنِيَاتِ الْقَدِيمَةِ الْآنَ.","v":"عَرَفَ","p":"hunna","t":"mudari","e":"They (f) know all the old songs now.","b":"A1"},
-{"q":"الْبَنَاتُ ___ أَنْ يَلْعَبْنَ فِي الْحَدِيقَةِ الْآنَ.","v":"أَرَادَ","p":"hunna","t":"mudari","e":"The girls want to play in the garden now.","b":"A1"},
-{"q":"هُنَّ ___ الْأَفْلَامَ الْكُومِيدِيَّةَ دَائِمًا.","v":"أَحَبَّ","p":"hunna","t":"mudari","e":"They (f) always love comedy films.","b":"A1"},
-{"q":"هُنَّ ___ جَارَاتِهِنَّ فِي السُّوقِ كُلَّ يَوْمٍ.","v":"رَأَى","p":"hunna","t":"mudari","e":"They (f) see their neighbours at the market every day.","b":"A1"},
-{"q":"الطَّالِبَاتُ ___ فِي شَقَّةٍ قُرْبَ الْجَامِعَةِ الْآنَ.","v":"سَكَنَ","p":"hunna","t":"mudari","e":"The students (f) live in a flat near the university now.","b":"A1"},
-{"q":"الْمُمَرِّضَاتُ ___ فِي اللَّيْلِ هٰذَا الشَّهْرَ.","v":"عَمِلَ","p":"hunna","t":"mudari","e":"The nurses are working nights this month.","b":"A1"},
-{"q":"هُنَّ ___ الْكِيمْيَاءَ فِي الْجَامِعَةِ الْآنَ.","v":"دَرَسَ","p":"hunna","t":"mudari","e":"They (f) are studying chemistry at university now.","b":"A1"},
-{"q":"النِّسَاءُ ___ عَنْ أَطْفَالِهِنَّ دَائِمًا.","v":"تَكَلَّمَ","p":"hunna","t":"mudari","e":"The women always talk about their children.","b":"A1"},
-{"q":"هُنَّ ___ صَوْتَ الْقِطَارِ كُلَّ لَيْلَةٍ.","v":"سَمِعَ","p":"hunna","t":"mudari","e":"They (f) hear the train every night.","b":"A1"},
-{"q":"الْبَنَاتُ ___ فِي السَّاعَةِ التَّاسِعَةِ كُلَّ لَيْلَةٍ.","v":"نَامَ","p":"hunna","t":"mudari","e":"The girls go to sleep at nine every night.","b":"A1"},
-{"q":"هُنَّ ___ دُرُوسًا فِي الْبِيَانُو كُلَّ أُسْبُوعٍ.","v":"أَخَذَ","p":"hunna","t":"mudari","e":"They (f) take piano lessons every week.","b":"A1"},
-{"q":"الْمُوَظَّفَاتُ ___ الْبَنْكَ فِي السَّاعَةِ الثَّامِنَةِ كُلَّ يَوْمٍ.","v":"فَتَحَ","p":"hunna","t":"mudari","e":"The employees (f) open the bank at eight every day.","b":"A1"},
-{"q":"هُنَّ ___ مَعَ صَدِيقَاتِهِنَّ كُلَّ يَوْمِ خَمِيسٍ.","v":"خَرَجَ","p":"hunna","t":"mudari","e":"They (f) go out with their friends every Thursday.","b":"A1"},
-{"q":"الْجَدَّاتُ ___ أَمَامَ الْبُيُوتِ كُلَّ مَسَاءٍ.","v":"جَلَسَ","p":"hunna","t":"mudari","e":"The grandmothers sit in front of the houses every evening.","b":"A1"},
-{"q":"الْبَنَاتُ ___ كُرَةَ الطَّائِرَةِ بَعْدَ الْمَدْرَسَةِ عَادَةً.","v":"لَعِبَ","p":"hunna","t":"mudari","e":"The girls usually play volleyball after school.","b":"A1"},
-{"q":"الْمُعَلِّمَاتُ ___ إِلَى بُيُوتِهِنَّ فِي السَّاعَةِ الثَّانِيَةِ عَادَةً.","v":"رَجَعَ","p":"hunna","t":"mudari","e":"The teachers (f) usually go back home at two.","b":"A1"},
-{"q":"هُنَّ ___ إِلَى الْبَحْرِ فِي كُلِّ عُطْلَةٍ دَائِمًا.","v":"سَافَرَ","p":"hunna","t":"mudari","e":"They (f) always travel to the seaside every holiday.","b":"A1"},
-{"q":"النِّسَاءُ ___ الْخُضَارَ مِنْ هٰذَا السُّوقِ دَائِمًا.","v":"اِشْتَرَى","p":"hunna","t":"mudari","e":"The women always buy vegetables from this market.","b":"A1"},
-{"q":"هُنَّ ___ لِلْعَائِلَةِ كُلِّهَا كُلَّ يَوْمِ جُمُعَةٍ.","v":"طَبَخَ","p":"hunna","t":"mudari","e":"They (f) cook for the whole family every Friday.","b":"A1"},
-{"q":"الْبَنَاتُ ___ الصُّحُونَ بَعْدَ الْعَشَاءِ عَادَةً.","v":"غَسَلَ","p":"hunna","t":"mudari","e":"The girls usually wash the dishes after dinner.","b":"A1"},
-{"q":"الطَّالِبَاتُ ___ إِلَى الْجَامِعَةِ بِالْحَافِلَةِ كُلَّ صَبَاحٍ.","v":"وَصَلَ","p":"hunna","t":"mudari","e":"The students (f) get to university by bus every morning.","b":"A1"},
-{"q":"هُنَّ ___ عَنْكَ دَائِمًا.","v":"سَأَلَ","p":"hunna","t":"mudari","e":"They (f) always ask after you.","b":"A1"},
-{"q":"الْجَدَّاتُ ___ الْأَطْفَالَ حَلْوَى دَائِمًا.","v":"أَعْطَى","p":"hunna","t":"mudari","e":"Grandmothers always give the children sweets.","b":"A1"},
-{"q":"هُنَّ ___ فِي الْحَدِيقَةِ كُلَّ صَبَاحٍ.","v":"مَشَى","p":"hunna","t":"mudari","e":"They (f) walk in the park every morning.","b":"A1"},
-{"q":"الْمُمَرِّضَاتُ ___ مَلَابِسَ بَيْضَاءَ فِي الْعَمَلِ دَائِمًا.","v":"لَبِسَ","p":"hunna","t":"mudari","e":"The nurses always wear white at work.","b":"A1"},
-{"q":"هُنَّ ___ يَوْمَهُنَّ بِالرِّيَاضَةِ عَادَةً.","v":"بَدَأَ","p":"hunna","t":"mudari","e":"They (f) usually start their day with exercise.","b":"A1"},
-{"q":"الْبَنَاتُ ___ أَنْ يَسْبَحْنَ جَيِّدًا الْآنَ.","v":"اِسْتَطَاعَ","p":"hunna","t":"mudari","e":"The girls can swim well now.","b":"A1"},
-{"q":"هُنَّ ___ مِنَ النَّوْمِ مُبَكِّرَاتٍ كُلَّ يَوْمٍ.","v":"قَامَ","p":"hunna","t":"mudari","e":"They (f) get up early every day.","b":"A1"},
-{"q":"عَمَّاتِي ___ فِي الْقَرْيَةِ الْآنَ.","v":"عَاشَ","p":"hunna","t":"mudari","e":"My aunts live in the village now.","b":"A1"},
-{"q":"الْبَنَاتُ ___ أُمَّهُنَّ فِي الْبَيْتِ دَائِمًا.","v":"سَاعَدَ","p":"hunna","t":"mudari","e":"The girls always help their mother at home.","b":"A2"},
-{"q":"الْأُمَّهَاتُ ___ أَطْفَالَهُنَّ أَمَامَ الْمَدْرَسَةِ كُلَّ يَوْمٍ.","v":"اِنْتَظَرَ","p":"hunna","t":"mudari","e":"The mothers wait for their children outside school every day.","b":"A2"},
-{"q":"هُنَّ ___ الْعَرَبِيَّةَ فِي الْمَسْجِدِ هٰذِهِ السَّنَةَ.","v":"تَعَلَّمَ","p":"hunna","t":"mudari","e":"They (f) are learning Arabic at the mosque this year.","b":"A2"},
-{"q":"الْمُعَلِّمَاتُ ___ الْأَطْفَالَ الْحُرُوفَ كُلَّ صَبَاحٍ.","v":"عَلَّمَ","p":"hunna","t":"mudari","e":"The teachers (f) teach the children the letters every morning.","b":"A2"},
-{"q":"هُنَّ ___ فِي الْمُسْتَقْبَلِ كَثِيرًا الْآنَ.","v":"فَكَّرَ","p":"hunna","t":"mudari","e":"They (f) think about the future a lot now.","b":"A2"},
-{"q":"الْبَنَاتُ ___ بِالْمَلَلِ فِي الدَّرْسِ أَحْيَانًا.","v":"شَعَرَ","p":"hunna","t":"mudari","e":"The girls sometimes feel bored in class.","b":"A2"},
-{"q":"الْبَنَاتُ الصَّغِيرَاتُ ___ عِنْدَ الطَّبِيبِ دَائِمًا.","v":"بَكَى","p":"hunna","t":"mudari","e":"The little girls always cry at the doctor's.","b":"A2"},
-{"q":"هُنَّ ___ بِأُمِّهِنَّ كُلَّ يَوْمٍ.","v":"اِتَّصَلَ","p":"hunna","t":"mudari","e":"They (f) call their mother every day.","b":"A2"},
-{"q":"صَدِيقَاتِي ___ لِي صُوَرًا مِنْ رِحْلَاتِهِنَّ دَائِمًا.","v":"أَرْسَلَ","p":"hunna","t":"mudari","e":"My friends (f) always send me photos from their trips.","b":"A2"},
-{"q":"هُنَّ ___ الْمَتَاحِفَ فِي كُلِّ مَدِينَةٍ دَائِمًا.","v":"زَارَ","p":"hunna","t":"mudari","e":"They (f) always visit the museums in every city.","b":"A2"},
-{"q":"الطَّالِبَاتُ ___ الْمُشْرِفَةَ كُلَّ أُسْبُوعٍ.","v":"قَابَلَ","p":"hunna","t":"mudari","e":"The students (f) meet their supervisor every week.","b":"A2"},
-{"q":"الْبَنَاتُ ___ فِي جَوْقَةِ الْمَدْرَسَةِ الْآنَ.","v":"غَنَّى","p":"hunna","t":"mudari","e":"The girls sing in the school choir now.","b":"A2"},
-{"q":"هُنَّ ___ فِي الْأَعْرَاسِ دَائِمًا.","v":"رَقَصَ","p":"hunna","t":"mudari","e":"They (f) always dance at weddings.","b":"A2"},
-{"q":"الْبَنَاتُ ___ عَلَى الْجُدْرَانِ أَحْيَانًا.","v":"رَسَمَ","p":"hunna","t":"mudari","e":"The girls sometimes draw on the walls.","b":"A2"},
-{"q":"النِّسَاءُ ___ الْخُبْزَ فِي الْبَيْتِ كُلَّ صَبَاحٍ.","v":"صَنَعَ","p":"hunna","t":"mudari","e":"The women make bread at home every morning.","b":"A2"},
-{"q":"هُنَّ ___ الْجُبْنَ وَالزَّيْتُونَ فِي السُّوقِ كُلَّ يَوْمٍ.","v":"بَاعَ","p":"hunna","t":"mudari","e":"They (f) sell cheese and olives at the market every day.","b":"A2"},
-{"q":"الطَّالِبَاتُ ___ إِلَى الْمُعَلِّمَةِ جَيِّدًا دَائِمًا.","v":"اِسْتَمَعَ","p":"hunna","t":"mudari","e":"The students (f) always listen carefully to the teacher.","b":"A2"},
-{"q":"هُنَّ ___ إِلَى سَيَّارَةٍ أَكْبَرَ الْآنَ.","v":"اِحْتَاجَ","p":"hunna","t":"mudari","e":"They (f) need a bigger car now.","b":"A2"},
-{"q":"الْبَنَاتُ ___ بِالسَّفَرِ إِلَى بَارِيسَ دَائِمًا.","v":"حَلَمَ","p":"hunna","t":"mudari","e":"The girls always dream of travelling to Paris.","b":"B1"},
-{"q":"النِّسَاءُ ___ بِحَدِيقَةِ الْحَيِّ كُلَّ يَوْمٍ.","v":"اِهْتَمَّ","p":"hunna","t":"mudari","e":"The women look after the neighbourhood garden every day.","b":"B1"},
-{"q":"هُنَّ ___ فِي نَادِي الْقِرَاءَةِ كُلَّ شَهْرٍ.","v":"شَارَكَ","p":"hunna","t":"mudari","e":"They (f) take part in the book club every month.","b":"B1"},
-{"q":"الْبَنَاتُ ___ فِي الْبَيْتِ يَوْمَ الْأَحَدِ عَادَةً.","v":"بَقِيَ","p":"hunna","t":"mudari","e":"The girls usually stay at home on Sunday.","b":"B1"},
-{"q":"هُنَّ ___ مِنَ الْكِلَابِ الْكَبِيرَةِ دَائِمًا.","v":"خَافَ","p":"hunna","t":"mudari","e":"They (f) are always afraid of big dogs.","b":"B1"},
-{"q":"الْمُضِيفَاتُ ___ الْمُسَافِرِينَ بِابْتِسَامَةٍ دَائِمًا.","v":"اِسْتَقْبَلَ","p":"hunna","t":"mudari","e":"The flight attendants always welcome passengers with a smile.","b":"B1"},
-{"q":"أَنْتُنَّ ___ إِلَى السُّوقِ مَعًا كُلَّ يَوْمِ سَبْتٍ.","v":"ذَهَبَ","p":"antunna","t":"mudari","e":"You go to the market together every Saturday.","b":"A1"},
-{"q":"أَنْتُنَّ ___ قَلِيلًا فِي الْعَشَاءِ دَائِمًا.","v":"أَكَلَ","p":"antunna","t":"mudari","e":"You always eat little at dinner.","b":"A1"},
-{"q":"أَنْتُنَّ ___ الْعَصِيرَ بَعْدَ الرِّيَاضَةِ عَادَةً.","v":"شَرِبَ","p":"antunna","t":"mudari","e":"You usually drink juice after exercise.","b":"A1"},
-{"q":"أَنْتُنَّ ___ رَسَائِلَ لِجَدَّتِكُنَّ كُلَّ شَهْرٍ.","v":"كَتَبَ","p":"antunna","t":"mudari","e":"You write letters to your grandmother every month.","b":"A1"},
-{"q":"أَنْتُنَّ ___ رِوَايَةً جَدِيدَةً كُلَّ شَهْرٍ.","v":"قَرَأَ","p":"antunna","t":"mudari","e":"You read a new novel every month.","b":"A1"},
-{"q":"أَنْتُنَّ ___ الْكَلَامَ نَفْسَهُ دَائِمًا.","v":"قَالَ","p":"antunna","t":"mudari","e":"You always say the same thing.","b":"A1"},
-{"q":"أَنْتُنَّ ___ إِلَى الدَّرْسِ فِي الْوَقْتِ الْمُحَدَّدِ دَائِمًا.","v":"جَاءَ","p":"antunna","t":"mudari","e":"You always come to the lesson on time.","b":"A1"},
-{"q":"أَنْتُنَّ ___ أَسْمَاءَ كُلِّ الطَّالِبَاتِ الْآنَ.","v":"عَرَفَ","p":"antunna","t":"mudari","e":"You know the names of all the students now.","b":"A1"},
-{"q":"أَنْتُنَّ ___ أَنْ تَشْرَبْنَ شَيْئًا بَارِدًا الْآنَ.","v":"أَرَادَ","p":"antunna","t":"mudari","e":"You want to drink something cold now.","b":"A1"},
-{"q":"أَنْتُنَّ ___ الْمَشْيَ فِي الْمَسَاءِ دَائِمًا.","v":"أَحَبَّ","p":"antunna","t":"mudari","e":"You always love walking in the evening.","b":"A1"},
-{"q":"أَنْتُنَّ ___ الْجَبَلَ مِنْ هُنَا الْآنَ.","v":"رَأَى","p":"antunna","t":"mudari","e":"You can see the mountain from here now.","b":"A1"},
-{"q":"أَنْتُنَّ ___ مَعَ عَائِلَاتِكُنَّ الْآنَ.","v":"سَكَنَ","p":"antunna","t":"mudari","e":"You live with your families now.","b":"A1"},
-{"q":"أَنْتُنَّ ___ فِي الْمَدْرَسَةِ نَفْسِهَا الْآنَ.","v":"عَمِلَ","p":"antunna","t":"mudari","e":"You work at the same school now.","b":"A1"},
-{"q":"أَنْتُنَّ ___ الْقَانُونَ فِي الْجَامِعَةِ الْآنَ.","v":"دَرَسَ","p":"antunna","t":"mudari","e":"You study law at university now.","b":"A1"},
-{"q":"أَنْتُنَّ ___ الْفَرَنْسِيَّةَ جَيِّدًا الْآنَ.","v":"تَكَلَّمَ","p":"antunna","t":"mudari","e":"You speak French well now.","b":"A1"},
-{"q":"أَنْتُنَّ ___ الْأَخْبَارَ قَبْلَنَا دَائِمًا.","v":"سَمِعَ","p":"antunna","t":"mudari","e":"You always hear the news before us.","b":"A1"},
-{"q":"أَنْتُنَّ ___ مُتَأَخِّرَاتٍ كُلَّ لَيْلَةٍ.","v":"نَامَ","p":"antunna","t":"mudari","e":"You go to bed late every night.","b":"A1"},
-{"q":"أَنْتُنَّ ___ الْأَطْفَالَ إِلَى الْحَدِيقَةِ كُلَّ مَسَاءٍ.","v":"أَخَذَ","p":"antunna","t":"mudari","e":"You take the children to the park every evening.","b":"A1"},
-{"q":"أَنْتُنَّ ___ الْبَابَ لِلضُّيُوفِ دَائِمًا.","v":"فَتَحَ","p":"antunna","t":"mudari","e":"You always open the door for the guests.","b":"A1"},
-{"q":"أَنْتُنَّ ___ الصَّفَّ بِهُدُوءٍ دَائِمًا.","v":"دَخَلَ","p":"antunna","t":"mudari","e":"You always come into the classroom quietly.","b":"A1"},
-{"q":"أَنْتُنَّ ___ لِلتَّسَوُّقِ كُلَّ يَوْمِ خَمِيسٍ.","v":"خَرَجَ","p":"antunna","t":"mudari","e":"You go out shopping every Thursday.","b":"A1"},
-{"q":"أَنْتُنَّ ___ فِي الْحَدِيقَةِ بَعْدَ الْعَمَلِ عَادَةً.","v":"جَلَسَ","p":"antunna","t":"mudari","e":"You usually sit in the park after work.","b":"A1"},
-{"q":"أَنْتُنَّ ___ كُرَةَ السَّلَّةِ فِي فَرِيقِ الْجَامِعَةِ الْآنَ.","v":"لَعِبَ","p":"antunna","t":"mudari","e":"You play basketball for the university team now.","b":"A1"},
-{"q":"أَنْتُنَّ ___ إِلَى الْبَيْتِ قَبْلَ الْمَغْرِبِ دَائِمًا.","v":"رَجَعَ","p":"antunna","t":"mudari","e":"You always come back home before sunset.","b":"A1"},
-{"q":"أَنْتُنَّ ___ مَعًا كُلَّ سَنَةٍ.","v":"سَافَرَ","p":"antunna","t":"mudari","e":"You travel together every year.","b":"A1"},
-{"q":"أَنْتُنَّ ___ الْكُتُبَ مِنْ هٰذِهِ الْمَكْتَبَةِ دَائِمًا.","v":"اِشْتَرَى","p":"antunna","t":"mudari","e":"You always buy books from this bookshop.","b":"A1"},
-{"q":"أَنْتُنَّ ___ الْعَدَسَ فِي الشِّتَاءِ عَادَةً.","v":"طَبَخَ","p":"antunna","t":"mudari","e":"You usually cook lentils in winter.","b":"A1"},
-{"q":"أَنْتُنَّ ___ الْخُضَارَ جَيِّدًا قَبْلَ الطَّبْخِ دَائِمًا.","v":"غَسَلَ","p":"antunna","t":"mudari","e":"You always wash the vegetables well before cooking.","b":"A1"},
-{"q":"أَنْتُنَّ ___ إِلَى الْعَمَلِ قَبْلَ الْمُدِيرَةِ كُلَّ يَوْمٍ.","v":"وَصَلَ","p":"antunna","t":"mudari","e":"You get to work before the manager every day.","b":"A1"},
-{"q":"أَنْتُنَّ ___ الطَّبِيبَةَ أَسْئِلَةً كَثِيرَةً دَائِمًا.","v":"سَأَلَ","p":"antunna","t":"mudari","e":"You always ask the doctor a lot of questions.","b":"A1"},
-{"q":"أَنْتُنَّ ___ الْقِطَطَ طَعَامًا كُلَّ صَبَاحٍ.","v":"أَعْطَى","p":"antunna","t":"mudari","e":"You give the cats food every morning.","b":"A1"},
-{"q":"أَنْتُنَّ ___ كُلَّ شَيْءٍ بِسُرْعَةٍ دَائِمًا.","v":"فَعَلَ","p":"antunna","t":"mudari","e":"You always do everything quickly.","b":"A1"},
-{"q":"أَنْتُنَّ ___ إِلَى الْأَسْعَارِ قَبْلَ الشِّرَاءِ دَائِمًا.","v":"نَظَرَ","p":"antunna","t":"mudari","e":"You always look at the prices before buying.","b":"A1"},
-{"q":"أَنْتُنَّ ___ إِلَى الْجَامِعَةِ كُلَّ يَوْمٍ.","v":"مَشَى","p":"antunna","t":"mudari","e":"You walk to university every day.","b":"A1"},
-{"q":"أَنْتُنَّ ___ الْأَلْوَانَ الْفَاتِحَةَ فِي الصَّيْفِ عَادَةً.","v":"لَبِسَ","p":"antunna","t":"mudari","e":"You usually wear light colours in summer.","b":"A1"},
-{"q":"أَنْتُنَّ ___ الْعَمَلَ فِي السَّاعَةِ الثَّامِنَةِ كُلَّ يَوْمٍ.","v":"بَدَأَ","p":"antunna","t":"mudari","e":"You start work at eight every day.","b":"A1"},
-{"q":"أَنْتُنَّ ___ أَنْ تَطْبُخْنَ لِخَمْسِينَ شَخْصًا الْآنَ.","v":"اِسْتَطَاعَ","p":"antunna","t":"mudari","e":"You can cook for fifty people now.","b":"A1"},
-{"q":"أَنْتُنَّ ___ أَرْخَصَ الْأَسْعَارِ دَائِمًا.","v":"وَجَدَ","p":"antunna","t":"mudari","e":"You always find the cheapest prices.","b":"A1"},
-{"q":"أَنْتُنَّ ___ الْخَيْلَ كُلَّ يَوْمِ جُمُعَةٍ.","v":"رَكِبَ","p":"antunna","t":"mudari","e":"You ride horses every Friday.","b":"A1"},
-{"q":"أَنْتُنَّ ___ مِنَ الْمَدْرَسَةِ مُتْعَبَاتٍ كُلَّ يَوْمٍ.","v":"عَادَ","p":"antunna","t":"mudari","e":"You come back from school tired every day.","b":"A1"},
-{"q":"أَنْتُنَّ ___ اللَّهْجَةَ الشَّامِيَّةَ جَيِّدًا الْآنَ.","v":"فَهِمَ","p":"antunna","t":"mudari","e":"You understand the Levantine dialect well now.","b":"A1"},
-{"q":"أَنْتُنَّ ___ الطَّالِبَاتِ الْجَدِيدَاتِ دَائِمًا.","v":"سَاعَدَ","p":"antunna","t":"mudari","e":"You always help the new students.","b":"A2"},
-{"q":"أَنْتُنَّ ___ الْإِيجَارَ فِي أَوَّلِ كُلِّ شَهْرٍ.","v":"دَفَعَ","p":"antunna","t":"mudari","e":"You pay the rent at the start of every month.","b":"A2"},
-{"q":"أَنْتُنَّ ___ الْمِصْعَدَ طَوِيلًا كُلَّ صَبَاحٍ.","v":"اِنْتَظَرَ","p":"antunna","t":"mudari","e":"You wait a long time for the lift every morning.","b":"A2"},
-{"q":"أَنْتُنَّ ___ الْقِيَادَةَ هٰذِهِ الْأَيَّامَ.","v":"تَعَلَّمَ","p":"antunna","t":"mudari","e":"You are learning to drive these days.","b":"A2"},
-{"q":"أَنْتُنَّ ___ الْمَوَاعِيدَ دَائِمًا.","v":"نَسِيَ","p":"antunna","t":"mudari","e":"You always forget appointments.","b":"A2"},
-{"q":"أَنْتُنَّ ___ كُلَّ التَّفَاصِيلِ دَائِمًا.","v":"تَذَكَّرَ","p":"antunna","t":"mudari","e":"You always remember every detail.","b":"A2"},
-{"q":"أَنْتُنَّ ___ الْمَفَاتِيحَ عَلَى الطَّاوِلَةِ دَائِمًا.","v":"وَضَعَ","p":"antunna","t":"mudari","e":"You always put the keys on the table.","b":"A2"},
-{"q":"أَنْتُنَّ ___ بِي فِي وَقْتٍ مُتَأَخِّرٍ دَائِمًا.","v":"اِتَّصَلَ","p":"antunna","t":"mudari","e":"You always call me late.","b":"A2"},
-{"q":"أَنْتُنَّ ___ الْوَاجِبَ بِالْبَرِيدِ الْإِلِكْتُرُونِيِّ كُلَّ أُسْبُوعٍ.","v":"أَرْسَلَ","p":"antunna","t":"mudari","e":"You send the homework by email every week.","b":"A2"},
-{"q":"أَنْتُنَّ ___ الْحَاسُوبَ فِي كُلِّ الدُّرُوسِ الْآنَ.","v":"اِسْتَعْمَلَ","p":"antunna","t":"mudari","e":"You use the computer in every lesson now.","b":"A2"},
-{"q":"أَنْتُنَّ ___ عَنْ بَيْتٍ أَكْبَرَ الْآنَ.","v":"بَحَثَ","p":"antunna","t":"mudari","e":"You are looking for a bigger house now.","b":"A2"},
-{"q":"أَنْتُنَّ ___ مُبَكِّرَاتٍ فِي رَمَضَانَ دَائِمًا.","v":"اِسْتَيْقَظَ","p":"antunna","t":"mudari","e":"You always wake up early in Ramadan.","b":"A2"},
-{"q":"أَنْتُنَّ ___ أَنْ تَأْكُلْنَ طَعَامًا صِحِّيًّا الْآنَ.","v":"حَاوَلَ","p":"antunna","t":"mudari","e":"You try to eat healthy food now.","b":"A2"},
-{"q":"أَنْتُنَّ ___ عَلَى كُلِّ شَيْءٍ دَائِمًا.","v":"ضَحِكَ","p":"antunna","t":"mudari","e":"You always laugh at everything.","b":"A2"},
-{"q":"أَنْتُنَّ ___ الْأَفْلَامَ الْقَدِيمَةَ يَوْمَ الْجُمُعَةِ عَادَةً.","v":"شَاهَدَ","p":"antunna","t":"mudari","e":"You usually watch old films on Friday.","b":"A2"},
-{"q":"أَنْتُنَّ ___ صَدِيقَاتِكُنَّ إِلَى الْبَيْتِ كُلَّ أُسْبُوعٍ.","v":"دَعَا","p":"antunna","t":"mudari","e":"You invite your friends home every week.","b":"A2"},
-{"q":"أَنْتُنَّ ___ الْجُلُوسَ فِي الْحَدِيقَةِ دَائِمًا.","v":"فَضَّلَ","p":"antunna","t":"mudari","e":"You always prefer to sit in the garden.","b":"A2"},
-{"q":"أَنْتُنَّ ___ الْمَدْرَسَةَ فِي السَّاعَةِ الثَّالِثَةِ عَادَةً.","v":"غَادَرَ","p":"antunna","t":"mudari","e":"You usually leave the school at three.","b":"A2"},
-{"q":"أَنْتُنَّ ___ الْمَطْعَمَ دَائِمًا.","v":"اِخْتَارَ","p":"antunna","t":"mudari","e":"You always choose the restaurant.","b":"B1"},
-{"q":"أَنْتُنَّ ___ بِيَوْمِ الْمَرْأَةِ كُلَّ سَنَةٍ.","v":"اِحْتَفَلَ","p":"antunna","t":"mudari","e":"You celebrate Women's Day every year.","b":"B1"},
-{"q":"أَنْتُنَّ ___ بِأَشْيَاءَ كَثِيرَةٍ دَائِمًا.","v":"وَعَدَ","p":"antunna","t":"mudari","e":"You always promise lots of things.","b":"B1"},
-{"q":"أَنْتُنَّ ___ عَلَى الْهَاتِفِ بِسُرْعَةٍ دَائِمًا.","v":"رَدَّ","p":"antunna","t":"mudari","e":"You always answer the phone quickly.","b":"B1"},
-{"q":"أَنْتُنَّ ___ عَنِ الْعَمَلِ فِي السَّاعَةِ الْوَاحِدَةِ لِلْغَدَاءِ كُلَّ يَوْمٍ.","v":"تَوَقَّفَ","p":"antunna","t":"mudari","e":"You stop work at one for lunch every day.","b":"B1"},
-{"q":"أَنْتُنَّ ___ الدَّرَّاجَاتِ فِي هٰذَا الْمَحَلِّ الْآنَ.","v":"أَصْلَحَ","p":"antunna","t":"mudari","e":"You repair bikes in this shop now.","b":"B1"},
-{"q":"نَحْنُ ___ إِلَى السِّينَمَا مَرَّةً فِي الشَّهْرِ عَادَةً.","v":"ذَهَبَ","p":"nahnu","t":"mudari","e":"We usually go to the cinema once a month.","b":"A1"},
-{"q":"نَحْنُ ___ الْفُولَ عَلَى الْفَطُورِ كُلَّ يَوْمٍ.","v":"أَكَلَ","p":"nahnu","t":"mudari","e":"We eat fava beans for breakfast every day.","b":"A1"},
-{"q":"نَحْنُ ___ الْقَهْوَةَ الْعَرَبِيَّةَ مَعَ الضُّيُوفِ دَائِمًا.","v":"شَرِبَ","p":"nahnu","t":"mudari","e":"We always drink Arabic coffee with guests.","b":"A1"},
-{"q":"نَحْنُ ___ بِالْقَلَمِ الْأَزْرَقِ فِي الِامْتِحَانِ دَائِمًا.","v":"كَتَبَ","p":"nahnu","t":"mudari","e":"We always write in blue pen in the exam.","b":"A1"},
-{"q":"نَحْنُ ___ الْأَخْبَارَ عَلَى الْهَاتِفِ كُلَّ صَبَاحٍ.","v":"قَرَأَ","p":"nahnu","t":"mudari","e":"We read the news on our phones every morning.","b":"A1"},
-{"q":"نَحْنُ ___ لِلْأَطْفَالِ تُصْبِحُونَ عَلَى خَيْرٍ كُلَّ لَيْلَةٍ.","v":"قَالَ","p":"nahnu","t":"mudari","e":"We say good night to the children every night.","b":"A1"},
-{"q":"نَحْنُ ___ إِلَى هٰذَا الشَّاطِئِ كُلَّ صَيْفٍ.","v":"جَاءَ","p":"nahnu","t":"mudari","e":"We come to this beach every summer.","b":"A1"},
-{"q":"نَحْنُ ___ صَاحِبَ الْمَطْعَمِ جَيِّدًا الْآنَ.","v":"عَرَفَ","p":"nahnu","t":"mudari","e":"We know the restaurant owner well now.","b":"A1"},
-{"q":"نَحْنُ ___ طَاوِلَةً لِأَرْبَعَةِ أَشْخَاصٍ الْآنَ.","v":"أَرَادَ","p":"nahnu","t":"mudari","e":"We want a table for four now.","b":"A1"},
-{"q":"نَحْنُ ___ السَّفَرَ بِالْقِطَارِ دَائِمًا.","v":"أَحَبَّ","p":"nahnu","t":"mudari","e":"We always love travelling by train.","b":"A1"},
-{"q":"نَحْنُ ___ جَدَّتَنَا كُلَّ يَوْمِ جُمُعَةٍ.","v":"رَأَى","p":"nahnu","t":"mudari","e":"We see our grandmother every Friday.","b":"A1"},
-{"q":"نَحْنُ ___ فِي شَقَّةٍ صَغِيرَةٍ وَسَطَ الْمَدِينَةِ الْآنَ.","v":"سَكَنَ","p":"nahnu","t":"mudari","e":"We live in a small flat in the city centre now.","b":"A1"},
-{"q":"نَحْنُ ___ مِنَ الْبَيْتِ يَوْمَيْنِ فِي الْأُسْبُوعِ الْآنَ.","v":"عَمِلَ","p":"nahnu","t":"mudari","e":"We work from home two days a week now.","b":"A1"},
-{"q":"نَحْنُ ___ الْعَرَبِيَّةَ مَعَ مُعَلِّمَةٍ خَاصَّةٍ الْآنَ.","v":"دَرَسَ","p":"nahnu","t":"mudari","e":"We study Arabic with a private teacher now.","b":"A1"},
-{"q":"نَحْنُ ___ بِالْعَرَبِيَّةِ مَعَ أَوْلَادِنَا فِي الْبَيْتِ دَائِمًا.","v":"تَكَلَّمَ","p":"nahnu","t":"mudari","e":"We always speak Arabic with our children at home.","b":"A1"},
-{"q":"نَحْنُ ___ كُلَّ كَلِمَةٍ فِي الدَّرْسِ الْآنَ.","v":"فَهِمَ","p":"nahnu","t":"mudari","e":"We understand every word in the lesson now.","b":"A1"},
-{"q":"نَحْنُ ___ مُبَكِّرِينَ فِي الشِّتَاءِ عَادَةً.","v":"نَامَ","p":"nahnu","t":"mudari","e":"We usually go to bed early in winter.","b":"A1"},
-{"q":"نَحْنُ ___ هَدَايَا الْعِيدِ فِي الصَّبَاحِ دَائِمًا.","v":"فَتَحَ","p":"nahnu","t":"mudari","e":"We always open the Eid presents in the morning.","b":"A1"},
-{"q":"نَحْنُ ___ الْمَسْجِدَ بِدُونِ أَحْذِيَةٍ دَائِمًا.","v":"دَخَلَ","p":"nahnu","t":"mudari","e":"We always go into the mosque without shoes.","b":"A1"},
-{"q":"نَحْنُ ___ مِنَ الْبَيْتِ مَعًا كُلَّ صَبَاحٍ.","v":"خَرَجَ","p":"nahnu","t":"mudari","e":"We leave the house together every morning.","b":"A1"},
-{"q":"نَحْنُ ___ مِنَ الْعَمَلِ مُتْعَبِينَ كُلَّ يَوْمٍ.","v":"رَجَعَ","p":"nahnu","t":"mudari","e":"We come back from work tired every day.","b":"A1"},
-{"q":"نَحْنُ ___ إِلَى الْقَرْيَةِ فِي كُلِّ عِيدٍ دَائِمًا.","v":"سَافَرَ","p":"nahnu","t":"mudari","e":"We always travel to the village every Eid.","b":"A1"},
-{"q":"نَحْنُ ___ اللَّحْمَ مِنْ هٰذَا الْجَزَّارِ دَائِمًا.","v":"اِشْتَرَى","p":"nahnu","t":"mudari","e":"We always buy meat from this butcher.","b":"A1"},
-{"q":"نَحْنُ ___ الْمَلَابِسَ يَوْمَ السَّبْتِ عَادَةً.","v":"غَسَلَ","p":"nahnu","t":"mudari","e":"We usually wash the clothes on Saturday.","b":"A1"},
-{"q":"نَحْنُ ___ إِلَى الْمَدْرَسَةِ فِي السَّاعَةِ السَّابِعَةِ وَالنِّصْفِ كُلَّ يَوْمٍ.","v":"وَصَلَ","p":"nahnu","t":"mudari","e":"We get to school at half past seven every day.","b":"A1"},
-{"q":"نَحْنُ ___ الْمُعَلِّمَةَ دَائِمًا عِنْدَمَا لَا نَفْهَمُ.","v":"سَأَلَ","p":"nahnu","t":"mudari","e":"We always ask the teacher when we don't understand.","b":"A1"},
-{"q":"نَحْنُ ___ جَارَنَا الْعَجُوزَ طَعَامًا كُلَّ يَوْمٍ.","v":"أَعْطَى","p":"nahnu","t":"mudari","e":"We give our elderly neighbour food every day.","b":"A1"},
-{"q":"نَحْنُ ___ إِلَى النُّجُومِ مِنَ السَّطْحِ فِي الصَّيْفِ عَادَةً.","v":"نَظَرَ","p":"nahnu","t":"mudari","e":"We usually look at the stars from the roof in summer.","b":"A1"},
-{"q":"نَحْنُ ___ سَاعَةً كُلَّ يَوْمٍ.","v":"مَشَى","p":"nahnu","t":"mudari","e":"We walk for an hour every day.","b":"A1"},
-{"q":"نَحْنُ ___ الْقُبَّعَاتِ فِي الشَّمْسِ دَائِمًا.","v":"لَبِسَ","p":"nahnu","t":"mudari","e":"We always wear hats in the sun.","b":"A1"},
-{"q":"نَحْنُ ___ الِاجْتِمَاعَ فِي السَّاعَةِ التَّاسِعَةِ كُلَّ يَوْمِ اثْنَيْنِ.","v":"بَدَأَ","p":"nahnu","t":"mudari","e":"We start the meeting at nine every Monday.","b":"A1"},
-{"q":"نَحْنُ ___ أَنْ نَرَى الْبَحْرَ مِنْ شُرْفَتِنَا الْآنَ.","v":"اِسْتَطَاعَ","p":"nahnu","t":"mudari","e":"We can see the sea from our balcony now.","b":"A1"},
-{"q":"نَحْنُ ___ الْقِطَارَ إِلَى الْمَدِينَةِ كُلَّ يَوْمٍ.","v":"رَكِبَ","p":"nahnu","t":"mudari","e":"We take the train to the city every day.","b":"A1"},
-{"q":"نَحْنُ ___ الْخُضَارَ الطَّازَجَةَ فِي مَحَلِّنَا الْآنَ.","v":"بَاعَ","p":"nahnu","t":"mudari","e":"We sell fresh vegetables in our shop now.","b":"A2"},
-{"q":"نَحْنُ ___ جِيرَانَنَا دَائِمًا.","v":"سَاعَدَ","p":"nahnu","t":"mudari","e":"We always help our neighbours.","b":"A2"},
-{"q":"نَحْنُ ___ الْحَافِلَةَ هُنَا كُلَّ صَبَاحٍ.","v":"اِنْتَظَرَ","p":"nahnu","t":"mudari","e":"We wait for the bus here every morning.","b":"A2"},
-{"q":"نَحْنُ ___ الطَّبْخَ الْمَغْرِبِيَّ هٰذِهِ الْأَيَّامَ.","v":"تَعَلَّمَ","p":"nahnu","t":"mudari","e":"We are learning Moroccan cooking these days.","b":"A2"},
-{"q":"نَحْنُ ___ الْمَاءَ مَعَنَا فِي الرِّحْلَاتِ دَائِمًا.","v":"حَمَلَ","p":"nahnu","t":"mudari","e":"We always carry water with us on trips.","b":"A2"},
-{"q":"نَحْنُ ___ الْكَلْبَ عِنْدَ جَدَّتِي فِي الْعُطَلِ دَائِمًا.","v":"تَرَكَ","p":"nahnu","t":"mudari","e":"We always leave the dog at my grandmother's in the holidays.","b":"A2"},
-{"q":"نَحْنُ ___ بِأَهْلِنَا كُلَّ يَوْمِ أَحَدٍ.","v":"اِتَّصَلَ","p":"nahnu","t":"mudari","e":"We call our family every Sunday.","b":"A2"},
-{"q":"نَحْنُ ___ بِطَاقَاتٍ لِأَصْدِقَائِنَا فِي كُلِّ عِيدٍ دَائِمًا.","v":"أَرْسَلَ","p":"nahnu","t":"mudari","e":"We always send cards to our friends every Eid.","b":"A2"},
-{"q":"نَحْنُ ___ الْبَابَ بِالْمِفْتَاحِ كُلَّ لَيْلَةٍ.","v":"أَغْلَقَ","p":"nahnu","t":"mudari","e":"We lock the door every night.","b":"A2"},
-{"q":"نَحْنُ ___ أَهْلَ زَوْجِي كُلَّ أُسْبُوعٍ.","v":"زَارَ","p":"nahnu","t":"mudari","e":"We visit my husband's family every week.","b":"A2"},
-{"q":"نَحْنُ ___ فِي شِرَاءِ سَيَّارَةٍ جَدِيدَةٍ الْآنَ.","v":"فَكَّرَ","p":"nahnu","t":"mudari","e":"We are thinking about buying a new car now.","b":"A2"},
-{"q":"نَحْنُ ___ إِلَى خُبْزٍ وَحَلِيبٍ الْآنَ.","v":"اِحْتَاجَ","p":"nahnu","t":"mudari","e":"We need bread and milk now.","b":"A2"},
-{"q":"نَحْنُ ___ الْبِطِّيخَ بَعْدَ الْغَدَاءِ فِي الصَّيْفِ عَادَةً.","v":"قَطَعَ","p":"nahnu","t":"mudari","e":"We usually cut a watermelon after lunch in summer.","b":"A2"},
-{"q":"نَحْنُ ___ السَّائِقَ عِنْدَ النُّزُولِ دَائِمًا.","v":"شَكَرَ","p":"nahnu","t":"mudari","e":"We always thank the driver when we get off.","b":"A2"},
-{"q":"نَحْنُ ___ فِي كُلِّ الِامْتِحَانَاتِ دَائِمًا.","v":"نَجَحَ","p":"nahnu","t":"mudari","e":"We always pass all the exams.","b":"A2"},
-{"q":"نَحْنُ ___ الدَّرَجَ كُلَّ يَوْمٍ لِأَنَّ الْمِصْعَدَ مُعَطَّلٌ.","v":"صَعِدَ","p":"nahnu","t":"mudari","e":"We climb the stairs every day because the lift is broken.","b":"A2"},
-{"q":"نَحْنُ ___ مَعًا مَاذَا نَطْبُخُ كُلَّ يَوْمٍ.","v":"قَرَّرَ","p":"nahnu","t":"mudari","e":"We decide together what to cook every day.","b":"B1"},
-{"q":"نَحْنُ ___ بِرَأْسِ السَّنَةِ فِي بَيْتِ جَدِّي كُلَّ سَنَةٍ.","v":"اِحْتَفَلَ","p":"nahnu","t":"mudari","e":"We celebrate New Year at my grandfather's house every year.","b":"B1"},
-{"q":"نَحْنُ ___ الضُّيُوفَ فِي الصَّالُونِ دَائِمًا.","v":"اِسْتَقْبَلَ","p":"nahnu","t":"mudari","e":"We always receive guests in the living room.","b":"B1"},
-{"q":"نَحْنُ ___ الزَّيْتُونَ مِنْ أَشْجَارِنَا كُلَّ خَرِيفٍ.","v":"جَمَعَ","p":"nahnu","t":"mudari","e":"We pick the olives from our trees every autumn.","b":"B1"},
-{"q":"نَحْنُ ___ دَائِمًا أَمَامَ فَرِيقِهِمْ.","v":"خَسِرَ","p":"nahnu","t":"mudari","e":"We always lose against their team.","b":"B1"},
-{"q":"نَحْنُ ___ لِلْأَطْفَالِ بِسَاعَةٍ مِنَ التِّلْفَازِ كُلَّ يَوْمٍ.","v":"سَمَحَ","p":"nahnu","t":"mudari","e":"We allow the children an hour of television every day.","b":"B1"}
+ {
+  "q": "أَنْتِ ___ إِلَى النَّادِي الرِّيَاضِيِّ كُلَّ صَبَاحٍ.",
+  "v": "ذَهَبَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You go to the gym every morning.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ الْفَوَاكِهَ بَعْدَ الْغَدَاءِ دَائِمًا.",
+  "v": "أَكَلَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You always eat fruit after lunch.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ الْقَهْوَةَ بِدُونِ سُكَّرٍ عَادَةً.",
+  "v": "شَرِبَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You usually drink coffee without sugar.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ فِي دَفْتَرِكِ كُلَّ لَيْلَةٍ.",
+  "v": "كَتَبَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You write in your notebook every night.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ صَبَاحَ الْخَيْرِ لِلْجِيرَانِ كُلَّ يَوْمٍ.",
+  "v": "قَالَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You say good morning to the neighbours every day.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ إِلَى الصَّفِّ قَبْلَ الْمُعَلِّمَةِ دَائِمًا.",
+  "v": "جَاءَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You always come to class before the teacher.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ كُلَّ النَّاسِ فِي هٰذَا الشَّارِعِ الْآنَ.",
+  "v": "عَرَفَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You know everyone in this street now.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ أَنْ تَأْكُلِي شَيْئًا الْآنَ.",
+  "v": "أَرَادَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You want to eat something now.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ السِّبَاحَةَ فِي الصَّيْفِ دَائِمًا.",
+  "v": "أَحَبَّ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You always love swimming in summer.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ الْبَحْرَ مِنْ نَافِذَتِكِ كُلَّ يَوْمٍ.",
+  "v": "رَأَى",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You see the sea from your window every day.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ قُرْبَ الْجَامِعَةِ الْآنَ.",
+  "v": "سَكَنَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You live near the university now.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ مُمَرِّضَةً فِي مُسْتَشْفًى كَبِيرٍ الْآنَ.",
+  "v": "عَمِلَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You work as a nurse in a big hospital now.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ الْهَنْدَسَةَ فِي الْجَامِعَةِ هٰذِهِ السَّنَةَ.",
+  "v": "دَرَسَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You are studying engineering at university this year.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ مَعَ أُخْتِكِ بِالْفِيدْيُو كُلَّ أُسْبُوعٍ.",
+  "v": "تَكَلَّمَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You talk to your sister by video every week.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ أَصْوَاتَ الْأَطْفَالِ مِنَ الْمَدْرَسَةِ كُلَّ صَبَاحٍ.",
+  "v": "سَمِعَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You hear the children's voices from the school every morning.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ ثَمَانِيَ سَاعَاتٍ كُلَّ لَيْلَةٍ.",
+  "v": "نَامَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You sleep eight hours every night.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ الدَّوَاءَ بَعْدَ الْأَكْلِ دَائِمًا.",
+  "v": "أَخَذَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You always take the medicine after eating.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ النَّوَافِذَ كُلَّ صَبَاحٍ.",
+  "v": "فَتَحَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You open the windows every morning.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ الْبَيْتَ مِنَ الْبَابِ الْخَلْفِيِّ دَائِمًا.",
+  "v": "دَخَلَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You always come into the house through the back door.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ بِجَانِبِ النَّافِذَةِ فِي الْحَافِلَةِ عَادَةً.",
+  "v": "جَلَسَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You usually sit by the window on the bus.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ التِّنِسَ مَعَ صَدِيقَتِكِ كُلَّ يَوْمِ سَبْتٍ.",
+  "v": "لَعِبَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You play tennis with your friend every Saturday.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ مِنَ الْجَامِعَةِ فِي السَّاعَةِ الثَّالِثَةِ عَادَةً.",
+  "v": "رَجَعَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You usually come back from university at three.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ إِلَى بَيْتِ أَهْلِكِ فِي كُلِّ عُطْلَةٍ.",
+  "v": "سَافَرَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You travel to your parents' house every holiday.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ الْخُبْزَ مِنَ الْمَخْبَزِ كُلَّ صَبَاحٍ.",
+  "v": "اِشْتَرَى",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You buy bread from the bakery every morning.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ طَعَامًا لَذِيذًا دَائِمًا.",
+  "v": "طَبَخَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You always cook delicious food.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ شَعْرَكِ كُلَّ يَوْمَيْنِ.",
+  "v": "غَسَلَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You wash your hair every two days.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ إِلَى الْمَكْتَبِ قَبْلَ الْجَمِيعِ كُلَّ يَوْمٍ.",
+  "v": "وَصَلَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You get to the office before everyone every day.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ أَسْئِلَةً كَثِيرَةً فِي الصَّفِّ دَائِمًا.",
+  "v": "سَأَلَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You always ask a lot of questions in class.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ أَطْفَالَكِ مَصْرُوفًا كُلَّ أُسْبُوعٍ.",
+  "v": "أَعْطَى",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You give your children pocket money every week.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ مَعَ كَلْبِكِ كُلَّ مَسَاءٍ.",
+  "v": "مَشَى",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You walk with your dog every evening.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ مِعْطَفًا ثَقِيلًا فِي الشِّتَاءِ دَائِمًا.",
+  "v": "لَبِسَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You always wear a heavy coat in winter.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ عَمَلَكِ فِي السَّاعَةِ التَّاسِعَةِ كُلَّ يَوْمٍ.",
+  "v": "بَدَأَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You start work at nine every day.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ أَنْ تَقْرَئِي الْعَرَبِيَّةَ بِسُرْعَةٍ الْآنَ.",
+  "v": "اِسْتَطَاعَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You can read Arabic quickly now.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ مَوْقِفًا لِلسَّيَّارَةِ بِسُهُولَةٍ دَائِمًا.",
+  "v": "وَجَدَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You always find a parking space easily.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ الْمِتْرُو إِلَى الْعَمَلِ كُلَّ يَوْمٍ.",
+  "v": "رَكِبَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You take the metro to work every day.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ مِنَ النَّوْمِ مُبَكِّرَةً كُلَّ يَوْمٍ.",
+  "v": "قَامَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You get up early every day.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ النُّكَتَ الْمِصْرِيَّةَ الْآنَ.",
+  "v": "فَهِمَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You understand Egyptian jokes now.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتِ ___ أُمَّكِ فِي التَّنْظِيفِ كُلَّ يَوْمِ جُمُعَةٍ.",
+  "v": "سَاعَدَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You help your mother with the cleaning every Friday.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتِ ___ أَخَاكِ أَمَامَ الْمَدْرَسَةِ كُلَّ يَوْمٍ.",
+  "v": "اِنْتَظَرَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You wait for your brother outside the school every day.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتِ ___ الْفَرَنْسِيَّةَ فِي مَعْهَدٍ هٰذِهِ الْأَيَّامَ.",
+  "v": "تَعَلَّمَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You are learning French at an institute these days.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتِ ___ الرِّيَاضِيَّاتِ فِي مَدْرَسَةٍ لِلْبَنَاتِ الْآنَ.",
+  "v": "عَلَّمَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You teach maths at a girls' school now.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتِ ___ أَسْمَاءَ النَّاسِ دَائِمًا.",
+  "v": "نَسِيَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You always forget people's names.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتِ ___ فِي عَمَلِكِ حَتَّى فِي الْعُطْلَةِ دَائِمًا.",
+  "v": "فَكَّرَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You always think about your work, even on holiday.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتِ ___ حَقِيبَةً كَبِيرَةً إِلَى الْعَمَلِ كُلَّ يَوْمٍ.",
+  "v": "حَمَلَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You carry a big bag to work every day.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتِ ___ بِأُمِّكِ كُلَّ مَسَاءٍ.",
+  "v": "اِتَّصَلَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You call your mother every evening.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتِ ___ لِي رَسَائِلَ صَوْتِيَّةً طَوِيلَةً دَائِمًا.",
+  "v": "أَرْسَلَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You always send me long voice messages.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتِ ___ الْقَامُوسَ فِي كُلِّ دَرْسٍ.",
+  "v": "اِسْتَعْمَلَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You use the dictionary in every lesson.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتِ ___ جَدَّكِ فِي الْمُسْتَشْفَى كُلَّ يَوْمٍ.",
+  "v": "زَارَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You visit your grandfather in hospital every day.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتِ ___ قَبْلَ الْمُنَبِّهِ دَائِمًا.",
+  "v": "اِسْتَيْقَظَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You always wake up before the alarm.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتِ ___ بِصَوْتٍ عَالٍ دَائِمًا.",
+  "v": "ضَحِكَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You always laugh loudly.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتِ ___ فِي الْحَمَّامِ كُلَّ صَبَاحٍ.",
+  "v": "غَنَّى",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You sing in the shower every morning.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتِ ___ إِلَى رَاحَةٍ الْآنَ.",
+  "v": "اِحْتَاجَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You need a rest now.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتِ ___ الْقِطَارَ عَلَى الْحَافِلَةِ دَائِمًا.",
+  "v": "فَضَّلَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You always prefer the train to the bus.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتِ ___ الْأَخْبَارَ كُلَّ لَيْلَةٍ.",
+  "v": "شَاهَدَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You watch the news every night.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتِ ___ إِلَى الرَّادِيُو فِي الْمَطْبَخِ عَادَةً.",
+  "v": "اِسْتَمَعَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You usually listen to the radio in the kitchen.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتِ ___ صَدِيقَاتِكِ فِي الْمَقْهَى كُلَّ يَوْمِ خَمِيسٍ.",
+  "v": "قَابَلَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You meet your friends at the café every Thursday.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتِ ___ بِالنَّبَاتَاتِ كَثِيرًا هٰذِهِ الْأَيَّامَ.",
+  "v": "اِهْتَمَّ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You care a lot about plants these days.",
+  "b": "B1"
+ },
+ {
+  "q": "أَنْتِ ___ مِنَ الطَّائِرَاتِ دَائِمًا.",
+  "v": "خَافَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You are always afraid of planes.",
+  "b": "B1"
+ },
+ {
+  "q": "أَنْتِ ___ عَشْرَ كَلِمَاتٍ جَدِيدَةٍ كُلَّ يَوْمٍ.",
+  "v": "حَفِظَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You memorise ten new words every day.",
+  "b": "B1"
+ },
+ {
+  "q": "أَنْتِ ___ عَلَى الرَّسَائِلِ بِسُرْعَةٍ دَائِمًا.",
+  "v": "رَدَّ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You always reply to messages quickly.",
+  "b": "B1"
+ },
+ {
+  "q": "أَنْتِ ___ أَجْمَلَ الْهَدَايَا دَائِمًا.",
+  "v": "اِخْتَارَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You always choose the nicest presents.",
+  "b": "B1"
+ },
+ {
+  "q": "أَنْتِ ___ الْقَوَاعِدَ بِوُضُوحٍ دَائِمًا.",
+  "v": "شَرَحَ",
+  "p": "anti",
+  "t": "mudari",
+  "e": "You always explain the grammar clearly.",
+  "b": "B1"
+ },
+ {
+  "q": "أَنْتُمْ ___ إِلَى الْمَسْجِدِ يَوْمَ الْجُمُعَةِ عَادَةً.",
+  "v": "ذَهَبَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You usually go to the mosque on Friday.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ الْعَشَاءَ مُتَأَخِّرِينَ دَائِمًا.",
+  "v": "أَكَلَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You always eat dinner late.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ الْمَاءَ كَثِيرًا فِي الصَّيْفِ عَادَةً.",
+  "v": "شَرِبَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You usually drink a lot of water in summer.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ التَّقَارِيرَ بِالْإِنْجِلِيزِيَّةِ فِي الْعَمَلِ دَائِمًا.",
+  "v": "كَتَبَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You always write the reports in English at work.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ قِصَصًا لِأَطْفَالِكُمْ كُلَّ لَيْلَةٍ.",
+  "v": "قَرَأَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You read stories to your children every night.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ شُكْرًا لِلسَّائِقِ كُلَّ يَوْمٍ.",
+  "v": "قَالَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You say thank you to the driver every day.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ إِلَى هٰذَا الْمَطْعَمِ كُلَّ أُسْبُوعٍ.",
+  "v": "جَاءَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You come to this restaurant every week.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ الْمَدِينَةَ جَيِّدًا الْآنَ.",
+  "v": "عَرَفَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You know the city well now.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ أَنْ تَرْتَاحُوا الْآنَ.",
+  "v": "أَرَادَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You want to rest now.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ الطَّعَامَ الْحَارَّ دَائِمًا.",
+  "v": "أَحَبَّ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You always love spicy food.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ فِي الطَّابِقِ الثَّالِثِ الْآنَ.",
+  "v": "سَكَنَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You live on the third floor now.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ فِي الْمَكْتَبَةِ بَعْدَ الظُّهْرِ عَادَةً.",
+  "v": "دَرَسَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You usually study in the library in the afternoon.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ بِسُرْعَةٍ كَبِيرَةٍ دَائِمًا.",
+  "v": "تَكَلَّمَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You always speak very fast.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ بَعْدَ الْغَدَاءِ يَوْمَ الْجُمُعَةِ عَادَةً.",
+  "v": "نَامَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You usually sleep after lunch on Friday.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ الْحَافِلَةَ إِلَى الْجَامِعَةِ كُلَّ صَبَاحٍ.",
+  "v": "أَخَذَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You take the bus to university every morning.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ الْمَحَلَّ فِي السَّاعَةِ الثَّامِنَةِ كُلَّ يَوْمٍ.",
+  "v": "فَتَحَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You open the shop at eight every day.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ مِنَ الْعَمَلِ مُتَأَخِّرِينَ دَائِمًا.",
+  "v": "خَرَجَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You always leave work late.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ أَمَامَ التِّلْفَازِ كُلَّ مَسَاءٍ.",
+  "v": "جَلَسَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You sit in front of the television every evening.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ أَلْعَابَ الْفِيدْيُو كَثِيرًا هٰذِهِ الْأَيَّامَ.",
+  "v": "لَعِبَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You play a lot of video games these days.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ لِلْعَمَلِ كُلَّ شَهْرٍ.",
+  "v": "سَافَرَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You travel for work every month.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ الْمَلَابِسَ عَلَى الْإِنْتَرْنِتْ عَادَةً.",
+  "v": "اِشْتَرَى",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You usually buy clothes online.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ الْكَبْسَةَ يَوْمَ الْجُمُعَةِ عَادَةً.",
+  "v": "طَبَخَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You usually cook kabsa on Friday.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ عَنْ جَدَّتِكُمْ كُلَّ يَوْمٍ.",
+  "v": "سَأَلَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You ask after your grandmother every day.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ النَّادِلَ بَقْشِيشًا دَائِمًا.",
+  "v": "أَعْطَى",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You always give the waiter a tip.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ الشَّيْءَ نَفْسَهُ كُلَّ يَوْمٍ.",
+  "v": "فَعَلَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You do the same thing every day.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ إِلَى هَوَاتِفِكُمْ عَلَى الطَّاوِلَةِ دَائِمًا.",
+  "v": "نَظَرَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You always look at your phones at the table.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ عَلَى الْكُورْنِيشِ كُلَّ مَسَاءٍ.",
+  "v": "مَشَى",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You walk along the corniche every evening.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ الزِّيَّ الْمَدْرَسِيَّ كُلَّ يَوْمٍ.",
+  "v": "لَبِسَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You wear school uniform every day.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ الدَّرْسَ بِالْقِرَاءَةِ دَائِمًا.",
+  "v": "بَدَأَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You always start the lesson with reading.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ إِلَى بَلَدِكُمْ كُلَّ صَيْفٍ.",
+  "v": "عَادَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You go back to your country every summer.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ الدَّرَّاجَاتِ فِي الْحَدِيقَةِ كُلَّ يَوْمِ سَبْتٍ.",
+  "v": "رَكِبَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You ride bikes in the park every Saturday.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُمْ ___ أَبَاكُمْ فِي الْمَحَلِّ بَعْدَ الْمَدْرَسَةِ كُلَّ يَوْمٍ.",
+  "v": "سَاعَدَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You help your father in the shop after school every day.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُمْ ___ بِالْبِطَاقَةِ دَائِمًا.",
+  "v": "دَفَعَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You always pay by card.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُمْ ___ الْقِطَارَ عَلَى الرَّصِيفِ الْآنَ.",
+  "v": "اِنْتَظَرَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You are waiting for the train on the platform now.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُمْ ___ الْعَزْفَ عَلَى الْعُودِ هٰذِهِ الْأَيَّامَ.",
+  "v": "تَعَلَّمَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You are learning to play the oud these days.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُمْ ___ أَعْيَادَ مِيلَادِ الْجَمِيعِ دَائِمًا.",
+  "v": "تَذَكَّرَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You always remember everyone's birthday.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُمْ ___ الْأَضْوَاءَ مُضَاءَةً دَائِمًا.",
+  "v": "تَرَكَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You always leave the lights on.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُمْ ___ الْبَيْتَ فِي السَّاعَةِ السَّابِعَةِ كُلَّ صَبَاحٍ.",
+  "v": "غَادَرَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You leave the house at seven every morning.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُمْ ___ الْمَحَلَّ فِي السَّاعَةِ الْعَاشِرَةِ لَيْلًا عَادَةً.",
+  "v": "أَغْلَقَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You usually close the shop at ten at night.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُمْ ___ عَنْ عَمَلٍ جَدِيدٍ الْآنَ.",
+  "v": "بَحَثَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You are looking for a new job now.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُمْ ___ أَقَارِبَكُمْ فِي الْعِيدِ دَائِمًا.",
+  "v": "زَارَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You always visit your relatives at Eid.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُمْ ___ أَنْ تَتَكَلَّمُوا الْعَرَبِيَّةَ فِي الْبَيْتِ الْآنَ.",
+  "v": "حَاوَلَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You try to speak Arabic at home now.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُمْ ___ فِي الْمَسْبَحِ مَرَّتَيْنِ فِي الْأُسْبُوعِ عَادَةً.",
+  "v": "سَبَحَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You usually swim in the pool twice a week.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُمْ ___ خَمْسَةَ كِيلُومِتْرَاتٍ كُلَّ صَبَاحٍ.",
+  "v": "رَكَضَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You run five kilometres every morning.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُمْ ___ الْمُعَلِّمَ بَعْدَ كُلِّ دَرْسٍ.",
+  "v": "شَكَرَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You thank the teacher after every lesson.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُمْ ___ عَنْ أَسْئِلَةِ الزَّبَائِنِ كُلَّ يَوْمٍ.",
+  "v": "أَجَابَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You answer customers' questions every day.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُمْ ___ بِالرِّيَاضَةِ كَثِيرًا هٰذِهِ الْأَيَّامَ.",
+  "v": "اِهْتَمَّ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You are very into sport these days.",
+  "b": "B1"
+ },
+ {
+  "q": "أَنْتُمْ ___ الْقُمَامَةَ مِنَ الشَّاطِئِ كُلَّ يَوْمِ سَبْتٍ.",
+  "v": "جَمَعَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You collect the rubbish from the beach every Saturday.",
+  "b": "B1"
+ },
+ {
+  "q": "أَنْتُمْ ___ فِي مُبَارَاةِ الْمَدْرَسَةِ كُلَّ سَنَةٍ.",
+  "v": "شَارَكَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You take part in the school match every year.",
+  "b": "B1"
+ },
+ {
+  "q": "أَنْتُمْ ___ رَاتِبًا جَيِّدًا الْآنَ.",
+  "v": "كَسَبَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You earn a good salary now.",
+  "b": "B1"
+ },
+ {
+  "q": "أَنْتُمْ ___ فِي الطَّابُورِ نِصْفَ سَاعَةٍ كُلَّ صَبَاحٍ.",
+  "v": "وَقَفَ",
+  "p": "antum",
+  "t": "mudari",
+  "e": "You stand in the queue for half an hour every morning.",
+  "b": "B1"
+ },
+ {
+  "q": "الْبَنَاتُ ___ إِلَى الْمَدْرَسَةِ مَشْيًا كُلَّ يَوْمٍ.",
+  "v": "ذَهَبَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The girls go to school on foot every day.",
+  "b": "A1"
+ },
+ {
+  "q": "هُنَّ ___ السَّلَطَةَ عَلَى الْغَدَاءِ عَادَةً.",
+  "v": "أَكَلَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) usually eat salad for lunch.",
+  "b": "A1"
+ },
+ {
+  "q": "النِّسَاءُ ___ الشَّايَ مَعًا كُلَّ مَسَاءٍ.",
+  "v": "شَرِبَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The women drink tea together every evening.",
+  "b": "A1"
+ },
+ {
+  "q": "الطَّالِبَاتُ ___ الْوَاجِبَ فِي الْمَكْتَبَةِ عَادَةً.",
+  "v": "كَتَبَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The students (f) usually write their homework in the library.",
+  "b": "A1"
+ },
+ {
+  "q": "هُنَّ ___ الْمَجَلَّاتِ فِي صَالُونِ التَّجْمِيلِ دَائِمًا.",
+  "v": "قَرَأَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) always read magazines at the beauty salon.",
+  "b": "A1"
+ },
+ {
+  "q": "الْبَنَاتُ ___ دَائِمًا إِنَّ الرِّيَاضِيَّاتِ صَعْبَةٌ.",
+  "v": "قَالَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The girls always say that maths is hard.",
+  "b": "A1"
+ },
+ {
+  "q": "أَخَوَاتِي ___ إِلَى بَيْتِنَا كُلَّ يَوْمِ جُمُعَةٍ.",
+  "v": "جَاءَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "My sisters come to our house every Friday.",
+  "b": "A1"
+ },
+ {
+  "q": "هُنَّ ___ كُلَّ الْأُغْنِيَاتِ الْقَدِيمَةِ الْآنَ.",
+  "v": "عَرَفَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) know all the old songs now.",
+  "b": "A1"
+ },
+ {
+  "q": "الْبَنَاتُ ___ أَنْ يَلْعَبْنَ فِي الْحَدِيقَةِ الْآنَ.",
+  "v": "أَرَادَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The girls want to play in the garden now.",
+  "b": "A1"
+ },
+ {
+  "q": "هُنَّ ___ الْأَفْلَامَ الْكُومِيدِيَّةَ دَائِمًا.",
+  "v": "أَحَبَّ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) always love comedy films.",
+  "b": "A1"
+ },
+ {
+  "q": "هُنَّ ___ جَارَاتِهِنَّ فِي السُّوقِ كُلَّ يَوْمٍ.",
+  "v": "رَأَى",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) see their neighbours at the market every day.",
+  "b": "A1"
+ },
+ {
+  "q": "الطَّالِبَاتُ ___ فِي شَقَّةٍ قُرْبَ الْجَامِعَةِ الْآنَ.",
+  "v": "سَكَنَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The students (f) live in a flat near the university now.",
+  "b": "A1"
+ },
+ {
+  "q": "الْمُمَرِّضَاتُ ___ فِي اللَّيْلِ هٰذَا الشَّهْرَ.",
+  "v": "عَمِلَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The nurses are working nights this month.",
+  "b": "A1"
+ },
+ {
+  "q": "هُنَّ ___ الْكِيمْيَاءَ فِي الْجَامِعَةِ الْآنَ.",
+  "v": "دَرَسَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) are studying chemistry at university now.",
+  "b": "A1"
+ },
+ {
+  "q": "النِّسَاءُ ___ عَنْ أَطْفَالِهِنَّ دَائِمًا.",
+  "v": "تَكَلَّمَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The women always talk about their children.",
+  "b": "A1"
+ },
+ {
+  "q": "هُنَّ ___ صَوْتَ الْقِطَارِ كُلَّ لَيْلَةٍ.",
+  "v": "سَمِعَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) hear the train every night.",
+  "b": "A1"
+ },
+ {
+  "q": "الْبَنَاتُ ___ فِي السَّاعَةِ التَّاسِعَةِ كُلَّ لَيْلَةٍ.",
+  "v": "نَامَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The girls go to sleep at nine every night.",
+  "b": "A1"
+ },
+ {
+  "q": "هُنَّ ___ دُرُوسًا فِي الْبِيَانُو كُلَّ أُسْبُوعٍ.",
+  "v": "أَخَذَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) take piano lessons every week.",
+  "b": "A1"
+ },
+ {
+  "q": "الْمُوَظَّفَاتُ ___ الْبَنْكَ فِي السَّاعَةِ الثَّامِنَةِ كُلَّ يَوْمٍ.",
+  "v": "فَتَحَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The employees (f) open the bank at eight every day.",
+  "b": "A1"
+ },
+ {
+  "q": "هُنَّ ___ مَعَ صَدِيقَاتِهِنَّ كُلَّ يَوْمِ خَمِيسٍ.",
+  "v": "خَرَجَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) go out with their friends every Thursday.",
+  "b": "A1"
+ },
+ {
+  "q": "الْجَدَّاتُ ___ أَمَامَ الْبُيُوتِ كُلَّ مَسَاءٍ.",
+  "v": "جَلَسَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The grandmothers sit in front of the houses every evening.",
+  "b": "A1"
+ },
+ {
+  "q": "الْبَنَاتُ ___ كُرَةَ الطَّائِرَةِ بَعْدَ الْمَدْرَسَةِ عَادَةً.",
+  "v": "لَعِبَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The girls usually play volleyball after school.",
+  "b": "A1"
+ },
+ {
+  "q": "الْمُعَلِّمَاتُ ___ إِلَى بُيُوتِهِنَّ فِي السَّاعَةِ الثَّانِيَةِ عَادَةً.",
+  "v": "رَجَعَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The teachers (f) usually go back home at two.",
+  "b": "A1"
+ },
+ {
+  "q": "هُنَّ ___ إِلَى الْبَحْرِ فِي كُلِّ عُطْلَةٍ.",
+  "v": "سَافَرَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) travel to the seaside every holiday.",
+  "b": "A1"
+ },
+ {
+  "q": "النِّسَاءُ ___ الْخُضَارَ مِنْ هٰذَا السُّوقِ دَائِمًا.",
+  "v": "اِشْتَرَى",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The women always buy vegetables from this market.",
+  "b": "A1"
+ },
+ {
+  "q": "هُنَّ ___ لِلْعَائِلَةِ كُلِّهَا كُلَّ يَوْمِ جُمُعَةٍ.",
+  "v": "طَبَخَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) cook for the whole family every Friday.",
+  "b": "A1"
+ },
+ {
+  "q": "الْبَنَاتُ ___ الصُّحُونَ بَعْدَ الْعَشَاءِ عَادَةً.",
+  "v": "غَسَلَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The girls usually wash the dishes after dinner.",
+  "b": "A1"
+ },
+ {
+  "q": "الطَّالِبَاتُ ___ إِلَى الْجَامِعَةِ بِالْحَافِلَةِ كُلَّ صَبَاحٍ.",
+  "v": "وَصَلَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The students (f) get to university by bus every morning.",
+  "b": "A1"
+ },
+ {
+  "q": "هُنَّ ___ عَنْكَ دَائِمًا.",
+  "v": "سَأَلَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) always ask after you.",
+  "b": "A1"
+ },
+ {
+  "q": "الْجَدَّاتُ ___ الْأَطْفَالَ حَلْوَى دَائِمًا.",
+  "v": "أَعْطَى",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "Grandmothers always give the children sweets.",
+  "b": "A1"
+ },
+ {
+  "q": "هُنَّ ___ فِي الْحَدِيقَةِ كُلَّ صَبَاحٍ.",
+  "v": "مَشَى",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) walk in the park every morning.",
+  "b": "A1"
+ },
+ {
+  "q": "الْمُمَرِّضَاتُ ___ مَلَابِسَ بَيْضَاءَ فِي الْعَمَلِ دَائِمًا.",
+  "v": "لَبِسَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The nurses always wear white at work.",
+  "b": "A1"
+ },
+ {
+  "q": "هُنَّ ___ يَوْمَهُنَّ بِالرِّيَاضَةِ عَادَةً.",
+  "v": "بَدَأَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) usually start their day with exercise.",
+  "b": "A1"
+ },
+ {
+  "q": "الْبَنَاتُ ___ أَنْ يَسْبَحْنَ جَيِّدًا الْآنَ.",
+  "v": "اِسْتَطَاعَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The girls can swim well now.",
+  "b": "A1"
+ },
+ {
+  "q": "هُنَّ ___ مِنَ النَّوْمِ مُبَكِّرَاتٍ كُلَّ يَوْمٍ.",
+  "v": "قَامَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) get up early every day.",
+  "b": "A1"
+ },
+ {
+  "q": "عَمَّاتِي ___ فِي الْقَرْيَةِ الْآنَ.",
+  "v": "عَاشَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "My aunts live in the village now.",
+  "b": "A1"
+ },
+ {
+  "q": "الْبَنَاتُ ___ أُمَّهُنَّ فِي الْبَيْتِ دَائِمًا.",
+  "v": "سَاعَدَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The girls always help their mother at home.",
+  "b": "A2"
+ },
+ {
+  "q": "الْأُمَّهَاتُ ___ أَطْفَالَهُنَّ أَمَامَ الْمَدْرَسَةِ كُلَّ يَوْمٍ.",
+  "v": "اِنْتَظَرَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The mothers wait for their children outside school every day.",
+  "b": "A2"
+ },
+ {
+  "q": "هُنَّ ___ الْعَرَبِيَّةَ فِي الْمَسْجِدِ هٰذِهِ السَّنَةَ.",
+  "v": "تَعَلَّمَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) are learning Arabic at the mosque this year.",
+  "b": "A2"
+ },
+ {
+  "q": "الْمُعَلِّمَاتُ ___ الْأَطْفَالَ الْحُرُوفَ كُلَّ صَبَاحٍ.",
+  "v": "عَلَّمَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The teachers (f) teach the children the letters every morning.",
+  "b": "A2"
+ },
+ {
+  "q": "هُنَّ ___ فِي الْمُسْتَقْبَلِ كَثِيرًا الْآنَ.",
+  "v": "فَكَّرَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) think about the future a lot now.",
+  "b": "A2"
+ },
+ {
+  "q": "الْبَنَاتُ ___ بِالْمَلَلِ فِي الدَّرْسِ أَحْيَانًا.",
+  "v": "شَعَرَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The girls sometimes feel bored in class.",
+  "b": "A2"
+ },
+ {
+  "q": "الْبَنَاتُ الصَّغِيرَاتُ ___ عِنْدَ الطَّبِيبِ دَائِمًا.",
+  "v": "بَكَى",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The little girls always cry at the doctor's.",
+  "b": "A2"
+ },
+ {
+  "q": "هُنَّ ___ بِأُمِّهِنَّ كُلَّ يَوْمٍ.",
+  "v": "اِتَّصَلَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) call their mother every day.",
+  "b": "A2"
+ },
+ {
+  "q": "صَدِيقَاتِي ___ لِي صُوَرًا مِنْ رِحْلَاتِهِنَّ دَائِمًا.",
+  "v": "أَرْسَلَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "My friends (f) always send me photos from their trips.",
+  "b": "A2"
+ },
+ {
+  "q": "هُنَّ ___ الْمَتَاحِفَ فِي كُلِّ مَدِينَةٍ.",
+  "v": "زَارَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) visit the museums in every city.",
+  "b": "A2"
+ },
+ {
+  "q": "الطَّالِبَاتُ ___ الْمُشْرِفَةَ كُلَّ أُسْبُوعٍ.",
+  "v": "قَابَلَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The students (f) meet their supervisor every week.",
+  "b": "A2"
+ },
+ {
+  "q": "الْبَنَاتُ ___ فِي جَوْقَةِ الْمَدْرَسَةِ الْآنَ.",
+  "v": "غَنَّى",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The girls sing in the school choir now.",
+  "b": "A2"
+ },
+ {
+  "q": "هُنَّ ___ فِي الْأَعْرَاسِ دَائِمًا.",
+  "v": "رَقَصَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) always dance at weddings.",
+  "b": "A2"
+ },
+ {
+  "q": "الْبَنَاتُ ___ عَلَى الْجُدْرَانِ أَحْيَانًا.",
+  "v": "رَسَمَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The girls sometimes draw on the walls.",
+  "b": "A2"
+ },
+ {
+  "q": "النِّسَاءُ ___ الْخُبْزَ فِي الْبَيْتِ كُلَّ صَبَاحٍ.",
+  "v": "صَنَعَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The women make bread at home every morning.",
+  "b": "A2"
+ },
+ {
+  "q": "هُنَّ ___ الْجُبْنَ وَالزَّيْتُونَ فِي السُّوقِ كُلَّ يَوْمٍ.",
+  "v": "بَاعَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) sell cheese and olives at the market every day.",
+  "b": "A2"
+ },
+ {
+  "q": "الطَّالِبَاتُ ___ إِلَى الْمُعَلِّمَةِ جَيِّدًا دَائِمًا.",
+  "v": "اِسْتَمَعَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The students (f) always listen carefully to the teacher.",
+  "b": "A2"
+ },
+ {
+  "q": "هُنَّ ___ إِلَى سَيَّارَةٍ أَكْبَرَ الْآنَ.",
+  "v": "اِحْتَاجَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) need a bigger car now.",
+  "b": "A2"
+ },
+ {
+  "q": "الْبَنَاتُ ___ بِالسَّفَرِ إِلَى بَارِيسَ دَائِمًا.",
+  "v": "حَلَمَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The girls always dream of travelling to Paris.",
+  "b": "B1"
+ },
+ {
+  "q": "النِّسَاءُ ___ بِحَدِيقَةِ الْحَيِّ كُلَّ يَوْمٍ.",
+  "v": "اِهْتَمَّ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The women look after the neighbourhood garden every day.",
+  "b": "B1"
+ },
+ {
+  "q": "هُنَّ ___ فِي نَادِي الْقِرَاءَةِ كُلَّ شَهْرٍ.",
+  "v": "شَارَكَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) take part in the book club every month.",
+  "b": "B1"
+ },
+ {
+  "q": "الْبَنَاتُ ___ فِي الْبَيْتِ يَوْمَ الْأَحَدِ عَادَةً.",
+  "v": "بَقِيَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The girls usually stay at home on Sunday.",
+  "b": "B1"
+ },
+ {
+  "q": "هُنَّ ___ مِنَ الْكِلَابِ الْكَبِيرَةِ دَائِمًا.",
+  "v": "خَافَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "They (f) are always afraid of big dogs.",
+  "b": "B1"
+ },
+ {
+  "q": "الْمُضِيفَاتُ ___ الْمُسَافِرِينَ بِابْتِسَامَةٍ دَائِمًا.",
+  "v": "اِسْتَقْبَلَ",
+  "p": "hunna",
+  "t": "mudari",
+  "e": "The flight attendants always welcome passengers with a smile.",
+  "b": "B1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ إِلَى السُّوقِ مَعًا كُلَّ يَوْمِ سَبْتٍ.",
+  "v": "ذَهَبَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You go to the market together every Saturday.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ قَلِيلًا فِي الْعَشَاءِ دَائِمًا.",
+  "v": "أَكَلَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always eat little at dinner.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْعَصِيرَ بَعْدَ الرِّيَاضَةِ عَادَةً.",
+  "v": "شَرِبَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You usually drink juice after exercise.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ رَسَائِلَ لِجَدَّتِكُنَّ كُلَّ شَهْرٍ.",
+  "v": "كَتَبَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You write letters to your grandmother every month.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ رِوَايَةً جَدِيدَةً كُلَّ شَهْرٍ.",
+  "v": "قَرَأَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You read a new novel every month.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْكَلَامَ نَفْسَهُ دَائِمًا.",
+  "v": "قَالَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always say the same thing.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ إِلَى الدَّرْسِ فِي الْوَقْتِ الْمُحَدَّدِ دَائِمًا.",
+  "v": "جَاءَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always come to the lesson on time.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ أَسْمَاءَ كُلِّ الطَّالِبَاتِ الْآنَ.",
+  "v": "عَرَفَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You know the names of all the students now.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ أَنْ تَشْرَبْنَ شَيْئًا بَارِدًا الْآنَ.",
+  "v": "أَرَادَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You want to drink something cold now.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْمَشْيَ فِي الْمَسَاءِ دَائِمًا.",
+  "v": "أَحَبَّ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always love walking in the evening.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْجَبَلَ مِنْ هُنَا الْآنَ.",
+  "v": "رَأَى",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You can see the mountain from here now.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ مَعَ عَائِلَاتِكُنَّ الْآنَ.",
+  "v": "سَكَنَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You live with your families now.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ فِي الْمَدْرَسَةِ نَفْسِهَا الْآنَ.",
+  "v": "عَمِلَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You work at the same school now.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْقَانُونَ فِي الْجَامِعَةِ الْآنَ.",
+  "v": "دَرَسَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You study law at university now.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْفَرَنْسِيَّةَ جَيِّدًا الْآنَ.",
+  "v": "تَكَلَّمَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You speak French well now.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْأَخْبَارَ قَبْلَنَا دَائِمًا.",
+  "v": "سَمِعَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always hear the news before us.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ مُتَأَخِّرَاتٍ كُلَّ لَيْلَةٍ.",
+  "v": "نَامَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You go to bed late every night.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْأَطْفَالَ إِلَى الْحَدِيقَةِ كُلَّ مَسَاءٍ.",
+  "v": "أَخَذَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You take the children to the park every evening.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْبَابَ لِلضُّيُوفِ دَائِمًا.",
+  "v": "فَتَحَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always open the door for the guests.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الصَّفَّ بِهُدُوءٍ دَائِمًا.",
+  "v": "دَخَلَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always come into the classroom quietly.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ لِلتَّسَوُّقِ كُلَّ يَوْمِ خَمِيسٍ.",
+  "v": "خَرَجَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You go out shopping every Thursday.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ فِي الْحَدِيقَةِ بَعْدَ الْعَمَلِ عَادَةً.",
+  "v": "جَلَسَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You usually sit in the park after work.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ كُرَةَ السَّلَّةِ فِي فَرِيقِ الْجَامِعَةِ الْآنَ.",
+  "v": "لَعِبَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You play basketball for the university team now.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ إِلَى الْبَيْتِ قَبْلَ الْمَغْرِبِ دَائِمًا.",
+  "v": "رَجَعَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always come back home before sunset.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ مَعًا كُلَّ سَنَةٍ.",
+  "v": "سَافَرَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You travel together every year.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْكُتُبَ مِنْ هٰذِهِ الْمَكْتَبَةِ دَائِمًا.",
+  "v": "اِشْتَرَى",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always buy books from this bookshop.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْعَدَسَ فِي الشِّتَاءِ عَادَةً.",
+  "v": "طَبَخَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You usually cook lentils in winter.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْخُضَارَ جَيِّدًا قَبْلَ الطَّبْخِ دَائِمًا.",
+  "v": "غَسَلَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always wash the vegetables well before cooking.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ إِلَى الْعَمَلِ قَبْلَ الْمُدِيرَةِ كُلَّ يَوْمٍ.",
+  "v": "وَصَلَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You get to work before the manager every day.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الطَّبِيبَةَ أَسْئِلَةً كَثِيرَةً دَائِمًا.",
+  "v": "سَأَلَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always ask the doctor a lot of questions.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْقِطَطَ طَعَامًا كُلَّ صَبَاحٍ.",
+  "v": "أَعْطَى",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You give the cats food every morning.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ كُلَّ شَيْءٍ بِسُرْعَةٍ دَائِمًا.",
+  "v": "فَعَلَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always do everything quickly.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ إِلَى الْأَسْعَارِ قَبْلَ الشِّرَاءِ دَائِمًا.",
+  "v": "نَظَرَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always look at the prices before buying.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ إِلَى الْجَامِعَةِ كُلَّ يَوْمٍ.",
+  "v": "مَشَى",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You walk to university every day.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْأَلْوَانَ الْفَاتِحَةَ فِي الصَّيْفِ عَادَةً.",
+  "v": "لَبِسَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You usually wear light colours in summer.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْعَمَلَ فِي السَّاعَةِ الثَّامِنَةِ كُلَّ يَوْمٍ.",
+  "v": "بَدَأَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You start work at eight every day.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ أَنْ تَطْبُخْنَ لِخَمْسِينَ شَخْصًا الْآنَ.",
+  "v": "اِسْتَطَاعَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You can cook for fifty people now.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ أَرْخَصَ الْأَسْعَارِ دَائِمًا.",
+  "v": "وَجَدَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always find the cheapest prices.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْخَيْلَ كُلَّ يَوْمِ جُمُعَةٍ.",
+  "v": "رَكِبَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You ride horses every Friday.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ مِنَ الْمَدْرَسَةِ مُتْعَبَاتٍ كُلَّ يَوْمٍ.",
+  "v": "عَادَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You come back from school tired every day.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ اللَّهْجَةَ الشَّامِيَّةَ جَيِّدًا الْآنَ.",
+  "v": "فَهِمَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You understand the Levantine dialect well now.",
+  "b": "A1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الطَّالِبَاتِ الْجَدِيدَاتِ دَائِمًا.",
+  "v": "سَاعَدَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always help the new students.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْإِيجَارَ فِي أَوَّلِ كُلِّ شَهْرٍ.",
+  "v": "دَفَعَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You pay the rent at the start of every month.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْمِصْعَدَ طَوِيلًا كُلَّ صَبَاحٍ.",
+  "v": "اِنْتَظَرَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You wait a long time for the lift every morning.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْقِيَادَةَ هٰذِهِ الْأَيَّامَ.",
+  "v": "تَعَلَّمَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You are learning to drive these days.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْمَوَاعِيدَ دَائِمًا.",
+  "v": "نَسِيَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always forget appointments.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُنَّ ___ كُلَّ التَّفَاصِيلِ دَائِمًا.",
+  "v": "تَذَكَّرَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always remember every detail.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْمَفَاتِيحَ عَلَى الطَّاوِلَةِ دَائِمًا.",
+  "v": "وَضَعَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always put the keys on the table.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُنَّ ___ بِي فِي وَقْتٍ مُتَأَخِّرٍ دَائِمًا.",
+  "v": "اِتَّصَلَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always call me late.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْوَاجِبَ بِالْبَرِيدِ الْإِلِكْتُرُونِيِّ كُلَّ أُسْبُوعٍ.",
+  "v": "أَرْسَلَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You send the homework by email every week.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْحَاسُوبَ فِي كُلِّ الدُّرُوسِ الْآنَ.",
+  "v": "اِسْتَعْمَلَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You use the computer in every lesson now.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُنَّ ___ عَنْ بَيْتٍ أَكْبَرَ الْآنَ.",
+  "v": "بَحَثَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You are looking for a bigger house now.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُنَّ ___ مُبَكِّرَاتٍ فِي رَمَضَانَ دَائِمًا.",
+  "v": "اِسْتَيْقَظَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always wake up early in Ramadan.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُنَّ ___ أَنْ تَأْكُلْنَ طَعَامًا صِحِّيًّا الْآنَ.",
+  "v": "حَاوَلَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You try to eat healthy food now.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُنَّ ___ عَلَى كُلِّ شَيْءٍ دَائِمًا.",
+  "v": "ضَحِكَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always laugh at everything.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْأَفْلَامَ الْقَدِيمَةَ يَوْمَ الْجُمُعَةِ عَادَةً.",
+  "v": "شَاهَدَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You usually watch old films on Friday.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُنَّ ___ صَدِيقَاتِكُنَّ إِلَى الْبَيْتِ كُلَّ أُسْبُوعٍ.",
+  "v": "دَعَا",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You invite your friends home every week.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْجُلُوسَ فِي الْحَدِيقَةِ دَائِمًا.",
+  "v": "فَضَّلَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always prefer to sit in the garden.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْمَدْرَسَةَ فِي السَّاعَةِ الثَّالِثَةِ عَادَةً.",
+  "v": "غَادَرَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You usually leave the school at three.",
+  "b": "A2"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الْمَطْعَمَ دَائِمًا.",
+  "v": "اِخْتَارَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always choose the restaurant.",
+  "b": "B1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ بِيَوْمِ الْمَرْأَةِ كُلَّ سَنَةٍ.",
+  "v": "اِحْتَفَلَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You celebrate Women's Day every year.",
+  "b": "B1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ بِأَشْيَاءَ كَثِيرَةٍ دَائِمًا.",
+  "v": "وَعَدَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always promise lots of things.",
+  "b": "B1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ عَلَى الْهَاتِفِ بِسُرْعَةٍ دَائِمًا.",
+  "v": "رَدَّ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You always answer the phone quickly.",
+  "b": "B1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ عَنِ الْعَمَلِ فِي السَّاعَةِ الْوَاحِدَةِ لِلْغَدَاءِ كُلَّ يَوْمٍ.",
+  "v": "تَوَقَّفَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You stop work at one for lunch every day.",
+  "b": "B1"
+ },
+ {
+  "q": "أَنْتُنَّ ___ الدَّرَّاجَاتِ فِي هٰذَا الْمَحَلِّ الْآنَ.",
+  "v": "أَصْلَحَ",
+  "p": "antunna",
+  "t": "mudari",
+  "e": "You repair bikes in this shop now.",
+  "b": "B1"
+ },
+ {
+  "q": "نَحْنُ ___ إِلَى السِّينَمَا مَرَّةً فِي الشَّهْرِ عَادَةً.",
+  "v": "ذَهَبَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We usually go to the cinema once a month.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ الْفُولَ عَلَى الْفَطُورِ كُلَّ يَوْمٍ.",
+  "v": "أَكَلَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We eat fava beans for breakfast every day.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ الْقَهْوَةَ الْعَرَبِيَّةَ مَعَ الضُّيُوفِ دَائِمًا.",
+  "v": "شَرِبَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We always drink Arabic coffee with guests.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ بِالْقَلَمِ الْأَزْرَقِ فِي الِامْتِحَانِ دَائِمًا.",
+  "v": "كَتَبَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We always write in blue pen in the exam.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ الْأَخْبَارَ عَلَى الْهَاتِفِ كُلَّ صَبَاحٍ.",
+  "v": "قَرَأَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We read the news on our phones every morning.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ لِلْأَطْفَالِ تُصْبِحُونَ عَلَى خَيْرٍ كُلَّ لَيْلَةٍ.",
+  "v": "قَالَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We say good night to the children every night.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ إِلَى هٰذَا الشَّاطِئِ كُلَّ صَيْفٍ.",
+  "v": "جَاءَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We come to this beach every summer.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ صَاحِبَ الْمَطْعَمِ جَيِّدًا الْآنَ.",
+  "v": "عَرَفَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We know the restaurant owner well now.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ طَاوِلَةً لِأَرْبَعَةِ أَشْخَاصٍ الْآنَ.",
+  "v": "أَرَادَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We want a table for four now.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ السَّفَرَ بِالْقِطَارِ دَائِمًا.",
+  "v": "أَحَبَّ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We always love travelling by train.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ جَدَّتَنَا كُلَّ يَوْمِ جُمُعَةٍ.",
+  "v": "رَأَى",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We see our grandmother every Friday.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ فِي شَقَّةٍ صَغِيرَةٍ وَسَطَ الْمَدِينَةِ الْآنَ.",
+  "v": "سَكَنَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We live in a small flat in the city centre now.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ مِنَ الْبَيْتِ يَوْمَيْنِ فِي الْأُسْبُوعِ الْآنَ.",
+  "v": "عَمِلَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We work from home two days a week now.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ الْعَرَبِيَّةَ مَعَ مُعَلِّمَةٍ خَاصَّةٍ الْآنَ.",
+  "v": "دَرَسَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We study Arabic with a private teacher now.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ بِالْعَرَبِيَّةِ مَعَ أَوْلَادِنَا فِي الْبَيْتِ دَائِمًا.",
+  "v": "تَكَلَّمَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We always speak Arabic with our children at home.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ كُلَّ كَلِمَةٍ فِي الدَّرْسِ الْآنَ.",
+  "v": "فَهِمَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We understand every word in the lesson now.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ مُبَكِّرِينَ فِي الشِّتَاءِ عَادَةً.",
+  "v": "نَامَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We usually go to bed early in winter.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ هَدَايَا الْعِيدِ فِي الصَّبَاحِ دَائِمًا.",
+  "v": "فَتَحَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We always open the Eid presents in the morning.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ الْمَسْجِدَ بِدُونِ أَحْذِيَةٍ دَائِمًا.",
+  "v": "دَخَلَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We always go into the mosque without shoes.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ مِنَ الْبَيْتِ مَعًا كُلَّ صَبَاحٍ.",
+  "v": "خَرَجَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We leave the house together every morning.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ مِنَ الْعَمَلِ مُتْعَبِينَ كُلَّ يَوْمٍ.",
+  "v": "رَجَعَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We come back from work tired every day.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ إِلَى الْقَرْيَةِ فِي كُلِّ عِيدٍ.",
+  "v": "سَافَرَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We travel to the village every Eid.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ اللَّحْمَ مِنْ هٰذَا الْجَزَّارِ دَائِمًا.",
+  "v": "اِشْتَرَى",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We always buy meat from this butcher.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ الْمَلَابِسَ يَوْمَ السَّبْتِ عَادَةً.",
+  "v": "غَسَلَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We usually wash the clothes on Saturday.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ إِلَى الْمَدْرَسَةِ فِي السَّاعَةِ السَّابِعَةِ وَالنِّصْفِ كُلَّ يَوْمٍ.",
+  "v": "وَصَلَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We get to school at half past seven every day.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ الْمُعَلِّمَةَ دَائِمًا عِنْدَمَا لَا نَفْهَمُ.",
+  "v": "سَأَلَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We always ask the teacher when we don't understand.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ جَارَنَا الْعَجُوزَ طَعَامًا كُلَّ يَوْمٍ.",
+  "v": "أَعْطَى",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We give our elderly neighbour food every day.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ إِلَى النُّجُومِ مِنَ السَّطْحِ فِي الصَّيْفِ عَادَةً.",
+  "v": "نَظَرَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We usually look at the stars from the roof in summer.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ سَاعَةً كُلَّ يَوْمٍ.",
+  "v": "مَشَى",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We walk for an hour every day.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ الْقُبَّعَاتِ فِي الشَّمْسِ دَائِمًا.",
+  "v": "لَبِسَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We always wear hats in the sun.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ الِاجْتِمَاعَ فِي السَّاعَةِ التَّاسِعَةِ كُلَّ يَوْمِ اثْنَيْنِ.",
+  "v": "بَدَأَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We start the meeting at nine every Monday.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ أَنْ نَرَى الْبَحْرَ مِنْ شُرْفَتِنَا الْآنَ.",
+  "v": "اِسْتَطَاعَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We can see the sea from our balcony now.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ الْقِطَارَ إِلَى الْمَدِينَةِ كُلَّ يَوْمٍ.",
+  "v": "رَكِبَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We take the train to the city every day.",
+  "b": "A1"
+ },
+ {
+  "q": "نَحْنُ ___ الْخُضَارَ الطَّازَجَةَ فِي مَحَلِّنَا الْآنَ.",
+  "v": "بَاعَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We sell fresh vegetables in our shop now.",
+  "b": "A2"
+ },
+ {
+  "q": "نَحْنُ ___ جِيرَانَنَا دَائِمًا.",
+  "v": "سَاعَدَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We always help our neighbours.",
+  "b": "A2"
+ },
+ {
+  "q": "نَحْنُ ___ الْحَافِلَةَ هُنَا كُلَّ صَبَاحٍ.",
+  "v": "اِنْتَظَرَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We wait for the bus here every morning.",
+  "b": "A2"
+ },
+ {
+  "q": "نَحْنُ ___ الطَّبْخَ الْمَغْرِبِيَّ هٰذِهِ الْأَيَّامَ.",
+  "v": "تَعَلَّمَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We are learning Moroccan cooking these days.",
+  "b": "A2"
+ },
+ {
+  "q": "نَحْنُ ___ الْمَاءَ مَعَنَا فِي الرِّحْلَاتِ دَائِمًا.",
+  "v": "حَمَلَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We always carry water with us on trips.",
+  "b": "A2"
+ },
+ {
+  "q": "نَحْنُ ___ الْكَلْبَ عِنْدَ جَدَّتِي فِي الْعُطَلِ دَائِمًا.",
+  "v": "تَرَكَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We always leave the dog at my grandmother's in the holidays.",
+  "b": "A2"
+ },
+ {
+  "q": "نَحْنُ ___ بِأَهْلِنَا كُلَّ يَوْمِ أَحَدٍ.",
+  "v": "اِتَّصَلَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We call our family every Sunday.",
+  "b": "A2"
+ },
+ {
+  "q": "نَحْنُ ___ بِطَاقَاتٍ لِأَصْدِقَائِنَا فِي كُلِّ عِيدٍ.",
+  "v": "أَرْسَلَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We send cards to our friends every Eid.",
+  "b": "A2"
+ },
+ {
+  "q": "نَحْنُ ___ الْبَابَ بِالْمِفْتَاحِ كُلَّ لَيْلَةٍ.",
+  "v": "أَغْلَقَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We lock the door every night.",
+  "b": "A2"
+ },
+ {
+  "q": "نَحْنُ ___ أَهْلَ زَوْجِي كُلَّ أُسْبُوعٍ.",
+  "v": "زَارَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We visit my husband's family every week.",
+  "b": "A2"
+ },
+ {
+  "q": "نَحْنُ ___ فِي شِرَاءِ سَيَّارَةٍ جَدِيدَةٍ الْآنَ.",
+  "v": "فَكَّرَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We are thinking about buying a new car now.",
+  "b": "A2"
+ },
+ {
+  "q": "نَحْنُ ___ إِلَى خُبْزٍ وَحَلِيبٍ الْآنَ.",
+  "v": "اِحْتَاجَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We need bread and milk now.",
+  "b": "A2"
+ },
+ {
+  "q": "نَحْنُ ___ الْبِطِّيخَ بَعْدَ الْغَدَاءِ فِي الصَّيْفِ عَادَةً.",
+  "v": "قَطَعَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We usually cut a watermelon after lunch in summer.",
+  "b": "A2"
+ },
+ {
+  "q": "نَحْنُ ___ السَّائِقَ عِنْدَ النُّزُولِ دَائِمًا.",
+  "v": "شَكَرَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We always thank the driver when we get off.",
+  "b": "A2"
+ },
+ {
+  "q": "نَحْنُ ___ فِي كُلِّ الِامْتِحَانَاتِ دَائِمًا.",
+  "v": "نَجَحَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We always pass all the exams.",
+  "b": "A2"
+ },
+ {
+  "q": "نَحْنُ ___ الدَّرَجَ كُلَّ يَوْمٍ لِأَنَّ الْمِصْعَدَ مُعَطَّلٌ.",
+  "v": "صَعِدَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We climb the stairs every day because the lift is broken.",
+  "b": "A2"
+ },
+ {
+  "q": "نَحْنُ ___ مَعًا مَاذَا نَطْبُخُ كُلَّ يَوْمٍ.",
+  "v": "قَرَّرَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We decide together what to cook every day.",
+  "b": "B1"
+ },
+ {
+  "q": "نَحْنُ ___ بِرَأْسِ السَّنَةِ فِي بَيْتِ جَدِّي كُلَّ سَنَةٍ.",
+  "v": "اِحْتَفَلَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We celebrate New Year at my grandfather's house every year.",
+  "b": "B1"
+ },
+ {
+  "q": "نَحْنُ ___ الضُّيُوفَ فِي الصَّالُونِ دَائِمًا.",
+  "v": "اِسْتَقْبَلَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We always receive guests in the living room.",
+  "b": "B1"
+ },
+ {
+  "q": "نَحْنُ ___ الزَّيْتُونَ مِنْ أَشْجَارِنَا كُلَّ خَرِيفٍ.",
+  "v": "جَمَعَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We pick the olives from our trees every autumn.",
+  "b": "B1"
+ },
+ {
+  "q": "نَحْنُ ___ دَائِمًا أَمَامَ فَرِيقِهِمْ.",
+  "v": "خَسِرَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We always lose against their team.",
+  "b": "B1"
+ },
+ {
+  "q": "نَحْنُ ___ لِلْأَطْفَالِ بِسَاعَةٍ مِنَ التِّلْفَازِ كُلَّ يَوْمٍ.",
+  "v": "سَمَحَ",
+  "p": "nahnu",
+  "t": "mudari",
+  "e": "We allow the children an hour of television every day.",
+  "b": "B1"
+ }
 ]
