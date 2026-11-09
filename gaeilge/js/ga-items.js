@@ -150,7 +150,7 @@ window.GAItems = (function () {
       if (!ga || seen[ga]) return;
       seen[ga] = 1;
       list.push({ ga: ga, en: String(w.en), g: w.g || null, pl: w.pl || null, th: w.th || null,
-        b: w.b || 'A1', r: w.r || 1e9, pos: w.pos || 'x', id: 'w:' + ga, gl: glossSet(w.en) });
+        b: w.b || 'A1', r: w.r || 1e9, pos: w.pos || 'x', id: 'w:' + ga, gl: glossSet(w.en), alt: w.alt || [] });
     });
     list.sort(function (a, b) { return a.r - b.r; });
     var byTheme = {}, byEn = {};
@@ -166,7 +166,7 @@ window.GAItems = (function () {
   function wordDistractors(e, G, rng) {
     var chosen = [];
     function ok(o) {
-      if (o.ga === e.ga || glossClash(e, o)) return false;
+      if (o.ga === e.ga || glossClash(e, o) || e.alt.indexOf(o.ga) !== -1 || (o.alt || []).indexOf(e.ga) !== -1) return false;
       for (var i = 0; i < chosen.length; i++) if (chosen[i].ga === o.ga || glossClash(chosen[i], o)) return false;
       return true;
     }
@@ -269,7 +269,7 @@ window.GAItems = (function () {
     if (wrong) item.options = shuffle([e.ga].concat(wrong.map(function (o) { return o.ga; })), rng);
     if (short && answeredRight(e.id)) {
       item.play = 'type';
-      var acc = [e.ga];
+      var acc = [e.ga].concat(e.alt);
       (G.byEn[e.en.toLowerCase()] || []).forEach(function (o) { if (o.ga !== e.ga) acc.push(o.ga); });
       item.accept = acc;
       return item;
@@ -480,7 +480,7 @@ window.GAItems = (function () {
     return null;
   }
   function wordTestAccept(e) {
-    var G = wordList(), acc = [e.ga];
+    var G = wordList(), acc = [e.ga].concat(e.alt || []);
     (G.byEn[e.en.toLowerCase()] || []).forEach(function (o) { if (o.ga !== e.ga) acc.push(o.ga); });
     return acc;
   }

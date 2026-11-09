@@ -87,6 +87,21 @@ function build() {
         else if (!/\s/.test(w.ga)) problems.push(where + ': noun with no gender (not in BuNaMo; add g)');
       }
       e.fr = rankOf(R, w.ga);
+      if (w.alt) e.alt = w.alt;
+      // Counting numbers (a haon, a dó, a sé): the bare word is the commonest
+      // pronoun or preposition in Irish (sé, trí, dó), so corpus rank says nothing.
+      // They sit together, in counting order, after the first 300 tier-1 words;
+      // the gloss says "counting", and the bare form (sé chat) is accepted typed.
+      const COUNT = ['a haon', 'a dó', 'a trí', 'a ceathair', 'a cúig', 'a sé', 'a seacht', 'a hocht', 'a naoi', 'a deich'];
+      const ci = COUNT.indexOf(w.ga);
+      const teen = COUNT.indexOf(w.ga.replace(/ d?h?éag$/, ''));
+      if (ci === -1 && teen !== -1 && / d?h?éag$/.test(w.ga)) e.fr = 1200 + teen;
+      if (ci !== -1) {
+        e.fr = 300 + ci;
+        if (!/counting/.test(e.en)) e.en = e.en + ' (counting)';
+        const bareN = w.ga.replace(/^a h?/, '');
+        e.alt = (e.alt || []).concat(bareN === 'haon' ? 'aon' : bareN, ci === 1 ? 'dhá' : []).filter((x, i, a) => x && a.indexOf(x) === i);
+      }
       out.push(e);
     });
   });

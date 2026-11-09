@@ -75,6 +75,13 @@ V.forEach(x => ['lait', 'caite', 'fhaist', 'coinn', 'gnath', 'ord'].forEach(t =>
   });
 })(path.join(ROOT, 'gaeilge'));
 
+// ---- counting numbers: labelled, bare form accepted, not ranked by the pronoun --
+const W = require(path.join(ROOT, 'gaeilge/data/words.js'));
+const six = W.find(w => w.ga === 'a sé'), he = W.find(w => w.ga === 'sé');
+eq(/counting/.test(six.en), true, 'a sé is glossed as counting');
+eq((six.alt || []).indexOf('sé'), 0, 'typed sé is accepted for six');
+eq(six.r > he.r, true, 'a sé no longer outranks sé (he)');
+
 // ---- the service worker version follows the content -------------------------
 const BC = require(path.join(__dirname, 'ga', 'bump-cache.js'));
 eq(BC.current(), BC.version(), 'gaeilge/sw.js CACHE_VERSION is stale: run node tools/ga/bump-cache.js');
