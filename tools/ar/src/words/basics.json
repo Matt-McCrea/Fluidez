@@ -1,0 +1,1744 @@
+[
+ {
+  "ar": "أَنَا",
+  "en": "I",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "أَنْتَ",
+  "en": "you (masculine singular)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "أَنْتِ",
+  "en": "you (feminine singular)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "هُوَ",
+  "en": "he",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "هِيَ",
+  "en": "she",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "نَحْنُ",
+  "en": "we",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "أَنْتُمْ",
+  "en": "you (masculine plural)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "أَنْتُنَّ",
+  "en": "you (feminine plural)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "هُمْ",
+  "en": "they (masculine)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "هُنَّ",
+  "en": "they (feminine)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "أَنْتُمَا",
+  "en": "you two",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "هُمَا",
+  "en": "they two",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "عِنْدِي",
+  "en": "I have",
+  "th": "basics",
+  "pos": "x",
+  "root": "عند",
+  "t": 1
+ },
+ {
+  "ar": "لِي",
+  "en": "for me, mine",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "مَعِي",
+  "en": "with me",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "نَفْس",
+  "en": "self, same",
+  "th": "basics",
+  "pos": "n",
+  "g": "f",
+  "pl": "أَنْفُس",
+  "root": "نفس",
+  "t": 2
+ },
+ {
+  "ar": "ذَات",
+  "en": "self, essence",
+  "th": "basics",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "هٰذَا",
+  "en": "this (masculine)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "هٰذِهِ",
+  "en": "this (feminine)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "ذٰلِكَ",
+  "en": "that (masculine)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "تِلْكَ",
+  "en": "that (feminine)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "هٰؤُلَاءِ",
+  "en": "these",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "أُولٰئِكَ",
+  "en": "those",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "هٰذَانِ",
+  "en": "these two (masculine)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "هَاتَانِ",
+  "en": "these two (feminine)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "الَّذِي",
+  "en": "who, which (masculine)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "الَّتِي",
+  "en": "who, which (feminine)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "الَّذِينَ",
+  "en": "who (masculine plural)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "اللَّوَاتِي",
+  "en": "who (feminine plural)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "مَا",
+  "en": "what (before a noun)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "مَاذَا",
+  "en": "what (before a verb)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "مَنْ",
+  "en": "who",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "أَيْنَ",
+  "en": "where",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "مَتَى",
+  "en": "when (question)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "كَيْفَ",
+  "en": "how",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "لِمَاذَا",
+  "en": "why",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "كَمْ",
+  "en": "how many, how much",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "بِكَمْ",
+  "en": "how much (price)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "أَيّ",
+  "en": "which, any",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "هَلْ",
+  "en": "question word for yes or no",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "مِنْ أَيْنَ",
+  "en": "where from",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "إِلَى أَيْنَ",
+  "en": "where to",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "أَيْنَمَا",
+  "en": "wherever",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "فِي",
+  "en": "in",
+  "th": "basics",
+  "pos": "prep",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "عَلَى",
+  "en": "on",
+  "th": "basics",
+  "pos": "prep",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "إِلَى",
+  "en": "to",
+  "th": "basics",
+  "pos": "prep",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "مِنْ",
+  "en": "from",
+  "th": "basics",
+  "pos": "prep",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "عَنْ",
+  "en": "about (a topic)",
+  "th": "basics",
+  "pos": "prep",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "مَعَ",
+  "en": "with",
+  "th": "basics",
+  "pos": "prep",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "عِنْدَ",
+  "en": "at, at the home of",
+  "th": "basics",
+  "pos": "prep",
+  "root": "عند",
+  "t": 1
+ },
+ {
+  "ar": "لَدَى",
+  "en": "with, in the hands of (formal)",
+  "th": "basics",
+  "pos": "prep",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "بَيْنَ",
+  "en": "between",
+  "th": "basics",
+  "pos": "prep",
+  "root": "بين",
+  "t": 1
+ },
+ {
+  "ar": "تَحْتَ",
+  "en": "under",
+  "th": "basics",
+  "pos": "prep",
+  "root": "تحت",
+  "t": 1
+ },
+ {
+  "ar": "فَوْقَ",
+  "en": "above, on top of",
+  "th": "basics",
+  "pos": "prep",
+  "root": "فوق",
+  "t": 1
+ },
+ {
+  "ar": "أَمَامَ",
+  "en": "in front of",
+  "th": "basics",
+  "pos": "prep",
+  "root": "أمم",
+  "t": 1
+ },
+ {
+  "ar": "خَلْفَ",
+  "en": "behind",
+  "th": "basics",
+  "pos": "prep",
+  "root": "خلف",
+  "t": 1
+ },
+ {
+  "ar": "وَرَاءَ",
+  "en": "behind, beyond",
+  "th": "basics",
+  "pos": "prep",
+  "root": "وري",
+  "t": 3
+ },
+ {
+  "ar": "بِجَانِبِ",
+  "en": "next to, beside",
+  "th": "basics",
+  "pos": "prep",
+  "root": "جنب",
+  "t": 2
+ },
+ {
+  "ar": "قُرْبَ",
+  "en": "near (preposition)",
+  "th": "basics",
+  "pos": "prep",
+  "root": "قرب",
+  "t": 2
+ },
+ {
+  "ar": "حَوْلَ",
+  "en": "around",
+  "th": "basics",
+  "pos": "prep",
+  "root": "حول",
+  "t": 2
+ },
+ {
+  "ar": "دَاخِلَ",
+  "en": "inside",
+  "th": "basics",
+  "pos": "prep",
+  "root": "دخل",
+  "t": 2
+ },
+ {
+  "ar": "خَارِجَ",
+  "en": "outside",
+  "th": "basics",
+  "pos": "prep",
+  "root": "خرج",
+  "t": 2
+ },
+ {
+  "ar": "حَتَّى",
+  "en": "until, even",
+  "th": "basics",
+  "pos": "prep",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "ضِدَّ",
+  "en": "against",
+  "th": "basics",
+  "pos": "prep",
+  "root": "ضدد",
+  "t": 2
+ },
+ {
+  "ar": "نَحْوَ",
+  "en": "towards, about",
+  "th": "basics",
+  "pos": "prep",
+  "root": "نحو",
+  "t": 3
+ },
+ {
+  "ar": "عَبْرَ",
+  "en": "across, via",
+  "th": "basics",
+  "pos": "prep",
+  "root": "عبر",
+  "t": 3
+ },
+ {
+  "ar": "بِدُونِ",
+  "en": "without",
+  "th": "basics",
+  "pos": "prep",
+  "root": "دون",
+  "t": 1
+ },
+ {
+  "ar": "دُونَ",
+  "en": "below, without (formal)",
+  "th": "basics",
+  "pos": "prep",
+  "root": "دون",
+  "t": 3
+ },
+ {
+  "ar": "مِثْلَ",
+  "en": "like (similar to)",
+  "th": "basics",
+  "pos": "prep",
+  "root": "مثل",
+  "t": 1
+ },
+ {
+  "ar": "بِسَبَبِ",
+  "en": "because of",
+  "th": "basics",
+  "pos": "prep",
+  "root": "سبب",
+  "t": 2
+ },
+ {
+  "ar": "حَسَبَ",
+  "en": "according to",
+  "th": "basics",
+  "pos": "prep",
+  "root": "حسب",
+  "t": 3
+ },
+ {
+  "ar": "رَغْمَ",
+  "en": "despite",
+  "th": "basics",
+  "pos": "prep",
+  "root": "رغم",
+  "t": 3
+ },
+ {
+  "ar": "ضِمْنَ",
+  "en": "within, among",
+  "th": "basics",
+  "pos": "prep",
+  "root": "ضمن",
+  "t": 3
+ },
+ {
+  "ar": "وَسَطَ",
+  "en": "in the middle of",
+  "th": "basics",
+  "pos": "prep",
+  "root": "وسط",
+  "t": 3
+ },
+ {
+  "ar": "تُجَاهَ",
+  "en": "towards, facing",
+  "th": "basics",
+  "pos": "prep",
+  "root": "وجه",
+  "t": 3
+ },
+ {
+  "ar": "بَدَلَ",
+  "en": "instead of",
+  "th": "basics",
+  "pos": "prep",
+  "root": "بدل",
+  "t": 3
+ },
+ {
+  "ar": "مُقَابِلَ",
+  "en": "opposite, in return for",
+  "th": "basics",
+  "pos": "prep",
+  "root": "قبل",
+  "t": 3
+ },
+ {
+  "ar": "مِنْ أَجْل",
+  "en": "for, for the sake of",
+  "th": "basics",
+  "pos": "prep",
+  "root": "أجل",
+  "t": 2
+ },
+ {
+  "ar": "بِ",
+  "en": "with, by, in (joined to the next word)",
+  "th": "basics",
+  "pos": "prep",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "لِ",
+  "en": "for, to (joined to the next word)",
+  "th": "basics",
+  "pos": "prep",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "كَ",
+  "en": "like, as (joined to the next word)",
+  "th": "basics",
+  "pos": "prep",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "إِلَّا",
+  "en": "except",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "سِوَى",
+  "en": "except, other than",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "وَ",
+  "en": "and",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "فَ",
+  "en": "so, and then (joined to the next word)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "أَوْ",
+  "en": "or",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "أَمْ",
+  "en": "or (in questions)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "ثُمَّ",
+  "en": "then, after that",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "لٰكِنَّ",
+  "en": "but",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "بَلْ",
+  "en": "rather, but rather",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "لِأَنَّ",
+  "en": "because",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "إِذَا",
+  "en": "if",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "إِنْ",
+  "en": "if (formal)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "لَوْ",
+  "en": "if (unreal)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "أَنَّ",
+  "en": "that (before a noun or pronoun)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "أَنْ",
+  "en": "to, that (before a verb)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "إِنَّ",
+  "en": "indeed (opens a sentence)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "كَيْ",
+  "en": "so that",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "لِكَيْ",
+  "en": "in order to",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "لِئَلَّا",
+  "en": "so as not to",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "عِنْدَمَا",
+  "en": "when (not a question)",
+  "th": "basics",
+  "pos": "x",
+  "root": "عند",
+  "t": 1
+ },
+ {
+  "ar": "بَيْنَمَا",
+  "en": "while, whereas",
+  "th": "basics",
+  "pos": "x",
+  "root": "بين",
+  "t": 2
+ },
+ {
+  "ar": "لَمَّا",
+  "en": "when (in the past)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "كَمَا",
+  "en": "as, just as",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "لِذٰلِكَ",
+  "en": "so, therefore",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "إِذَنْ",
+  "en": "so, in that case",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "إِمَّا",
+  "en": "either",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "حَيْثُ",
+  "en": "where (not a question)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "كَأَنَّ",
+  "en": "as if",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "لَعَلَّ",
+  "en": "perhaps (hoping)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "لَيْتَ",
+  "en": "if only",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "أَمَّا",
+  "en": "as for",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "مَعَ أَنَّ",
+  "en": "although",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "رَغْمَ أَنَّ",
+  "en": "even though",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "بِمَا أَنَّ",
+  "en": "since, given that",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "حَتَّى لَوْ",
+  "en": "even if",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "كُلَّمَا",
+  "en": "whenever",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "مَهْمَا",
+  "en": "whatever, no matter what",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "طَالَمَا",
+  "en": "as long as",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "إِذْ",
+  "en": "since, as",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "أَيْ",
+  "en": "that is, in other words",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "يَعْنِي",
+  "en": "I mean, that is",
+  "th": "basics",
+  "pos": "x",
+  "root": "عني",
+  "t": 2
+ },
+ {
+  "ar": "لَا",
+  "en": "no, not",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "لَمْ",
+  "en": "did not",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "لَنْ",
+  "en": "will not",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "لَيْسَ",
+  "en": "is not",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "مَا",
+  "en": "not (with a past verb)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "نَعَمْ",
+  "en": "yes",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "بَلَى",
+  "en": "yes (to a negative question)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "أَجَلْ",
+  "en": "yes, indeed",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "كَلَّا",
+  "en": "no, not at all",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "غَيْر",
+  "en": "other than, non",
+  "th": "basics",
+  "pos": "x",
+  "root": "غير",
+  "t": 2
+ },
+ {
+  "ar": "قَدْ",
+  "en": "already (with a past verb), may (with a present verb)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "لَقَدْ",
+  "en": "indeed, already (with a past verb)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "سَوْفَ",
+  "en": "will (future)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "سَ",
+  "en": "will (joined to a verb)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "يَا",
+  "en": "O (calling someone)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "هَيَّا",
+  "en": "come on, let us",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "لَا بُدَّ",
+  "en": "must, it is necessary",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "يُوجَد",
+  "en": "there is",
+  "th": "basics",
+  "pos": "x",
+  "root": "وجد",
+  "t": 1
+ },
+ {
+  "ar": "ثَمَّةَ",
+  "en": "there is (formal)",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "رُبَّمَا",
+  "en": "maybe, perhaps",
+  "th": "basics",
+  "pos": "adv",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "هُنَا",
+  "en": "here",
+  "th": "basics",
+  "pos": "adv",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "هُنَاكَ",
+  "en": "there",
+  "th": "basics",
+  "pos": "adv",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "أَيْضًا",
+  "en": "also, too",
+  "th": "basics",
+  "pos": "adv",
+  "root": "أيض",
+  "t": 1
+ },
+ {
+  "ar": "فَقَطْ",
+  "en": "only, just",
+  "th": "basics",
+  "pos": "adv",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "جِدًّا",
+  "en": "very",
+  "th": "basics",
+  "pos": "adv",
+  "root": "جدد",
+  "t": 1
+ },
+ {
+  "ar": "كَثِيرًا",
+  "en": "a lot, much",
+  "th": "basics",
+  "pos": "adv",
+  "root": "كثر",
+  "t": 1
+ },
+ {
+  "ar": "قَلِيلًا",
+  "en": "a little",
+  "th": "basics",
+  "pos": "adv",
+  "root": "قلل",
+  "t": 1
+ },
+ {
+  "ar": "تَقْرِيبًا",
+  "en": "almost, approximately",
+  "th": "basics",
+  "pos": "adv",
+  "root": "قرب",
+  "t": 2
+ },
+ {
+  "ar": "حَقًّا",
+  "en": "really, truly",
+  "th": "basics",
+  "pos": "adv",
+  "root": "حقق",
+  "t": 2
+ },
+ {
+  "ar": "طَبْعًا",
+  "en": "of course",
+  "th": "basics",
+  "pos": "adv",
+  "root": "طبع",
+  "t": 1
+ },
+ {
+  "ar": "مَثَلًا",
+  "en": "for example",
+  "th": "basics",
+  "pos": "adv",
+  "root": "مثل",
+  "t": 2
+ },
+ {
+  "ar": "مَعًا",
+  "en": "together",
+  "th": "basics",
+  "pos": "adv",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "جَيِّدًا",
+  "en": "well",
+  "th": "basics",
+  "pos": "adv",
+  "root": "جود",
+  "t": 1
+ },
+ {
+  "ar": "تَمَامًا",
+  "en": "completely, exactly",
+  "th": "basics",
+  "pos": "adv",
+  "root": "تمم",
+  "t": 2
+ },
+ {
+  "ar": "فِعْلًا",
+  "en": "actually, indeed",
+  "th": "basics",
+  "pos": "adv",
+  "root": "فعل",
+  "t": 2
+ },
+ {
+  "ar": "خُصُوصًا",
+  "en": "especially",
+  "th": "basics",
+  "pos": "adv",
+  "root": "خصص",
+  "t": 2
+ },
+ {
+  "ar": "كَذٰلِكَ",
+  "en": "likewise, as well",
+  "th": "basics",
+  "pos": "adv",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "هٰكَذَا",
+  "en": "like this, thus",
+  "th": "basics",
+  "pos": "adv",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "بِالضَّبْط",
+  "en": "exactly",
+  "th": "basics",
+  "pos": "adv",
+  "root": "ضبط",
+  "t": 2
+ },
+ {
+  "ar": "حَوَالَيْ",
+  "en": "about, around (a number)",
+  "th": "basics",
+  "pos": "adv",
+  "root": "حول",
+  "t": 3
+ },
+ {
+  "ar": "بِالتَّأْكِيد",
+  "en": "certainly",
+  "th": "basics",
+  "pos": "adv",
+  "root": "أكد",
+  "t": 2
+ },
+ {
+  "ar": "بِسُرْعَة",
+  "en": "quickly",
+  "th": "basics",
+  "pos": "adv",
+  "root": "سرع",
+  "t": 2
+ },
+ {
+  "ar": "بِبُطْء",
+  "en": "slowly",
+  "th": "basics",
+  "pos": "adv",
+  "root": "بطأ",
+  "t": 2
+ },
+ {
+  "ar": "حَسَنًا",
+  "en": "OK, all right",
+  "th": "basics",
+  "pos": "adv",
+  "root": "حسن",
+  "t": 1
+ },
+ {
+  "ar": "بِخَيْر",
+  "en": "well, fine",
+  "th": "basics",
+  "pos": "adv",
+  "root": "خير",
+  "t": 1
+ },
+ {
+  "ar": "مُبَاشَرَةً",
+  "en": "directly, straight away",
+  "th": "basics",
+  "pos": "adv",
+  "root": "بشر",
+  "t": 2
+ },
+ {
+  "ar": "مَعَ ذٰلِكَ",
+  "en": "nevertheless",
+  "th": "basics",
+  "pos": "adv",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "عَلَى الْأَقَلّ",
+  "en": "at least",
+  "th": "basics",
+  "pos": "adv",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "بِالْإِضَافَة",
+  "en": "in addition",
+  "th": "basics",
+  "pos": "adv",
+  "root": "ضيف",
+  "t": 3
+ },
+ {
+  "ar": "بِصَرَاحَة",
+  "en": "frankly",
+  "th": "basics",
+  "pos": "adv",
+  "root": "صرح",
+  "t": 3
+ },
+ {
+  "ar": "جِدِّيًّا",
+  "en": "seriously",
+  "th": "basics",
+  "pos": "adv",
+  "root": "جدد",
+  "t": 3
+ },
+ {
+  "ar": "وَحْدَهُ",
+  "en": "alone, by himself",
+  "th": "basics",
+  "pos": "adv",
+  "root": "وحد",
+  "t": 2
+ },
+ {
+  "ar": "يَمِين",
+  "en": "right (side)",
+  "th": "basics",
+  "pos": "n",
+  "g": "m",
+  "root": "يمن",
+  "t": 1
+ },
+ {
+  "ar": "يَسَار",
+  "en": "left (side)",
+  "th": "basics",
+  "pos": "n",
+  "g": "m",
+  "root": "يسر",
+  "t": 1
+ },
+ {
+  "ar": "قَرِيب",
+  "en": "near, close",
+  "th": "basics",
+  "pos": "adj",
+  "root": "قرب",
+  "t": 1
+ },
+ {
+  "ar": "بَعِيد",
+  "en": "far",
+  "th": "basics",
+  "pos": "adj",
+  "root": "بعد",
+  "t": 1
+ },
+ {
+  "ar": "شَيْء",
+  "en": "thing, something",
+  "th": "basics",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَشْيَاء",
+  "root": "شيء",
+  "t": 1
+ },
+ {
+  "ar": "كُلّ شَيْء",
+  "en": "everything",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "لَا شَيْء",
+  "en": "nothing",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "أَحَد",
+  "en": "someone, anyone",
+  "th": "basics",
+  "pos": "n",
+  "g": "m",
+  "root": "أحد",
+  "t": 1
+ },
+ {
+  "ar": "لَا أَحَد",
+  "en": "nobody",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "كُلّ",
+  "en": "every, all",
+  "th": "basics",
+  "pos": "n",
+  "g": "m",
+  "root": "كلل",
+  "t": 1
+ },
+ {
+  "ar": "بَعْض",
+  "en": "some",
+  "th": "basics",
+  "pos": "n",
+  "g": "m",
+  "root": "بعض",
+  "t": 1
+ },
+ {
+  "ar": "جَمِيع",
+  "en": "all (of)",
+  "th": "basics",
+  "pos": "n",
+  "g": "m",
+  "root": "جمع",
+  "t": 2
+ },
+ {
+  "ar": "الْجَمِيع",
+  "en": "everybody",
+  "th": "basics",
+  "pos": "n",
+  "g": "m",
+  "root": "جمع",
+  "t": 2
+ },
+ {
+  "ar": "مُعْظَم",
+  "en": "most (of)",
+  "th": "basics",
+  "pos": "n",
+  "g": "m",
+  "root": "عظم",
+  "t": 2
+ },
+ {
+  "ar": "عِدَّة",
+  "en": "several",
+  "th": "basics",
+  "pos": "n",
+  "g": "f",
+  "root": "عدد",
+  "t": 2
+ },
+ {
+  "ar": "كِلَا",
+  "en": "both",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "آخَر",
+  "en": "other, another",
+  "th": "basics",
+  "pos": "adj",
+  "pl": "آخَرُون",
+  "root": "أخر",
+  "t": 1
+ },
+ {
+  "ar": "أُخْرَى",
+  "en": "other, another (feminine)",
+  "th": "basics",
+  "pos": "adj",
+  "root": "أخر",
+  "t": 1
+ },
+ {
+  "ar": "نَوْع",
+  "en": "kind, type",
+  "th": "basics",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَنْوَاع",
+  "root": "نوع",
+  "t": 2
+ },
+ {
+  "ar": "طَرِيقَة",
+  "en": "way, method",
+  "th": "basics",
+  "pos": "n",
+  "g": "f",
+  "pl": "طُرُق",
+  "root": "طرق",
+  "t": 2
+ },
+ {
+  "ar": "سَبَب",
+  "en": "reason",
+  "th": "basics",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَسْبَاب",
+  "root": "سبب",
+  "t": 2
+ },
+ {
+  "ar": "مِثَال",
+  "en": "example",
+  "th": "basics",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَمْثِلَة",
+  "root": "مثل",
+  "t": 2
+ },
+ {
+  "ar": "سُؤَال",
+  "en": "question",
+  "th": "basics",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَسْئِلَة",
+  "root": "سأل",
+  "t": 1
+ },
+ {
+  "ar": "جَوَاب",
+  "en": "answer",
+  "th": "basics",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَجْوِبَة",
+  "root": "جوب",
+  "t": 1
+ },
+ {
+  "ar": "شِبْه",
+  "en": "semi, almost",
+  "th": "basics",
+  "pos": "n",
+  "g": "m",
+  "root": "شبه",
+  "t": 3
+ },
+ {
+  "ar": "صَحِيح",
+  "en": "correct, true",
+  "th": "basics",
+  "pos": "adj",
+  "root": "صحح",
+  "t": 1
+ },
+ {
+  "ar": "خَطَأ",
+  "en": "mistake, wrong",
+  "th": "basics",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَخْطَاء",
+  "root": "خطأ",
+  "t": 1
+ },
+ {
+  "ar": "مُمْكِن",
+  "en": "possible",
+  "th": "basics",
+  "pos": "adj",
+  "root": "مكن",
+  "t": 1
+ },
+ {
+  "ar": "مُسْتَحِيل",
+  "en": "impossible",
+  "th": "basics",
+  "pos": "adj",
+  "root": "حول",
+  "t": 2
+ },
+ {
+  "ar": "ضَرُورِيّ",
+  "en": "necessary",
+  "th": "basics",
+  "pos": "adj",
+  "root": "ضرر",
+  "t": 2
+ },
+ {
+  "ar": "مُهِمّ",
+  "en": "important",
+  "th": "basics",
+  "pos": "adj",
+  "root": "همم",
+  "t": 1
+ },
+ {
+  "ar": "أَكِيد",
+  "en": "sure, certain",
+  "th": "basics",
+  "pos": "adj",
+  "root": "أكد",
+  "t": 2
+ },
+ {
+  "ar": "طَيِّب",
+  "en": "fine, good, OK",
+  "th": "basics",
+  "pos": "adj",
+  "root": "طيب",
+  "t": 1
+ },
+ {
+  "ar": "مُخْتَلِف",
+  "en": "different",
+  "th": "basics",
+  "pos": "adj",
+  "root": "خلف",
+  "t": 2
+ },
+ {
+  "ar": "مُشَابِه",
+  "en": "similar",
+  "th": "basics",
+  "pos": "adj",
+  "root": "شبه",
+  "t": 3
+ },
+ {
+  "ar": "خَاصّ",
+  "en": "special, private",
+  "th": "basics",
+  "pos": "adj",
+  "root": "خصص",
+  "t": 2
+ },
+ {
+  "ar": "عَامّ",
+  "en": "general, public",
+  "th": "basics",
+  "pos": "adj",
+  "root": "عمم",
+  "t": 3
+ },
+ {
+  "ar": "حَقِيقِيّ",
+  "en": "real",
+  "th": "basics",
+  "pos": "adj",
+  "root": "حقق",
+  "t": 2
+ },
+ {
+  "ar": "وَاضِح",
+  "en": "clear",
+  "th": "basics",
+  "pos": "adj",
+  "root": "وضح",
+  "t": 2
+ },
+ {
+  "ar": "شَيْء مَا",
+  "en": "something",
+  "th": "basics",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ }
+]

@@ -1,0 +1,1601 @@
+[
+ {
+  "ar": "طَعَام",
+  "en": "food",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَطْعِمَة",
+  "root": "طعم",
+  "t": 1
+ },
+ {
+  "ar": "أَكْل",
+  "en": "eating, food",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "أكل",
+  "t": 1
+ },
+ {
+  "ar": "شُرْب",
+  "en": "drinking",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "شرب",
+  "t": 2
+ },
+ {
+  "ar": "مَشْرُوب",
+  "en": "a drink",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَشْرُوبَات",
+  "root": "شرب",
+  "t": 2
+ },
+ {
+  "ar": "مَاء",
+  "en": "water",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "مِيَاه",
+  "root": "موه",
+  "t": 1
+ },
+ {
+  "ar": "خُبْز",
+  "en": "bread",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "خبز",
+  "t": 1
+ },
+ {
+  "ar": "رَغِيف",
+  "en": "loaf",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَرْغِفَة",
+  "root": "رغف",
+  "t": 3
+ },
+ {
+  "ar": "أَرُزّ",
+  "en": "rice",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "أرز",
+  "t": 1
+ },
+ {
+  "ar": "لَحْم",
+  "en": "meat",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "لُحُوم",
+  "root": "لحم",
+  "t": 1
+ },
+ {
+  "ar": "لَحْم بَقَر",
+  "en": "beef",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "لحم",
+  "t": 2
+ },
+ {
+  "ar": "دَجَاج",
+  "en": "chicken (meat)",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "دجج",
+  "t": 1
+ },
+ {
+  "ar": "دَجَاجَة",
+  "en": "a chicken, a hen",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "دَجَاجَات",
+  "root": "دجج",
+  "t": 2
+ },
+ {
+  "ar": "سَمَك",
+  "en": "fish (as food)",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَسْمَاك",
+  "root": "سمك",
+  "t": 1
+ },
+ {
+  "ar": "سَمَكَة",
+  "en": "a fish",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "سمك",
+  "t": 2
+ },
+ {
+  "ar": "تُونَة",
+  "en": "tuna",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "بَيْض",
+  "en": "eggs",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "بيض",
+  "t": 1
+ },
+ {
+  "ar": "بَيْضَة",
+  "en": "an egg",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "بَيْضَات",
+  "root": "بيض",
+  "t": 1
+ },
+ {
+  "ar": "جُبْن",
+  "en": "cheese",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَجْبَان",
+  "root": "جبن",
+  "t": 1
+ },
+ {
+  "ar": "حَلِيب",
+  "en": "milk",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "حلب",
+  "t": 1
+ },
+ {
+  "ar": "لَبَن",
+  "en": "laban, soured milk",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "لبن",
+  "t": 3
+ },
+ {
+  "ar": "زَبَادِي",
+  "en": "yoghurt",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "زُبْدَة",
+  "en": "butter",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "زبد",
+  "t": 2
+ },
+ {
+  "ar": "زَيْت",
+  "en": "oil",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "زُيُوت",
+  "root": "زيت",
+  "t": 2
+ },
+ {
+  "ar": "زَيْتُون",
+  "en": "olives",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "زيت",
+  "t": 2
+ },
+ {
+  "ar": "مِلْح",
+  "en": "salt",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "ملح",
+  "t": 1
+ },
+ {
+  "ar": "سُكَّر",
+  "en": "sugar",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "سكر",
+  "t": 1
+ },
+ {
+  "ar": "فُلْفُل",
+  "en": "pepper",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "فلفل",
+  "t": 2
+ },
+ {
+  "ar": "بَهَارَات",
+  "en": "spices",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "بهر",
+  "t": 3
+ },
+ {
+  "ar": "كَمُّون",
+  "en": "cumin",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "كمن",
+  "t": 3
+ },
+ {
+  "ar": "قِرْفَة",
+  "en": "cinnamon",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "قرف",
+  "t": 3
+ },
+ {
+  "ar": "نَعْنَاع",
+  "en": "mint",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "نعنع",
+  "t": 3
+ },
+ {
+  "ar": "بَقْدُونِس",
+  "en": "parsley",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "زَعْتَر",
+  "en": "thyme, za'atar",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "خَلّ",
+  "en": "vinegar",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "خلل",
+  "t": 3
+ },
+ {
+  "ar": "صَلْصَة",
+  "en": "sauce",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "صَلَصَات",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "عَسَل",
+  "en": "honey",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "عسل",
+  "t": 2
+ },
+ {
+  "ar": "مُرَبَّى",
+  "en": "jam",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "ربب",
+  "t": 3
+ },
+ {
+  "ar": "مُخَلَّل",
+  "en": "pickles",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "مُخَلَّلَات",
+  "root": "خلل",
+  "t": 3
+ },
+ {
+  "ar": "دَقِيق",
+  "en": "flour",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "دقق",
+  "t": 3
+ },
+ {
+  "ar": "شَاي",
+  "en": "tea",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "قَهْوَة",
+  "en": "coffee",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "قهو",
+  "t": 1
+ },
+ {
+  "ar": "عَصِير",
+  "en": "juice",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "عَصَائِر",
+  "root": "عصر",
+  "t": 1
+ },
+ {
+  "ar": "ثَلْج",
+  "en": "ice",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "ثلج",
+  "t": 2
+ },
+ {
+  "ar": "حَسَاء",
+  "en": "soup",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "حسو",
+  "t": 2
+ },
+ {
+  "ar": "سَلَطَة",
+  "en": "salad",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "سَلَطَات",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "شَطِيرَة",
+  "en": "sandwich",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "شَطَائِر",
+  "root": "شطر",
+  "t": 2
+ },
+ {
+  "ar": "فَطِيرَة",
+  "en": "pie, pastry",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "فَطَائِر",
+  "root": "فطر",
+  "t": 3
+ },
+ {
+  "ar": "كَعْكَة",
+  "en": "cake",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "كَعَكَات",
+  "root": "كعك",
+  "t": 2
+ },
+ {
+  "ar": "بَسْكَوِيت",
+  "en": "biscuits",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "حَلْوَى",
+  "en": "sweets, dessert",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "حلو",
+  "t": 2
+ },
+ {
+  "ar": "مُثَلَّجَات",
+  "en": "ice cream",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "ثلج",
+  "t": 3
+ },
+ {
+  "ar": "شُوكُولَاتَة",
+  "en": "chocolate",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "مَعْكَرُونَة",
+  "en": "pasta",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "بِيتْزَا",
+  "en": "pizza",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "فَلَافِل",
+  "en": "falafel",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "كَبَاب",
+  "en": "kebab",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "شَاوِرْمَا",
+  "en": "shawarma",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "فَاكِهَة",
+  "en": "fruit",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "فَوَاكِه",
+  "root": "فكه",
+  "t": 1
+ },
+ {
+  "ar": "خُضَار",
+  "en": "vegetables",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "خضر",
+  "t": 1
+ },
+ {
+  "ar": "تُفَّاح",
+  "en": "apples",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "تفح",
+  "t": 1
+ },
+ {
+  "ar": "تُفَّاحَة",
+  "en": "an apple",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "تُفَّاحَات",
+  "root": "تفح",
+  "t": 1
+ },
+ {
+  "ar": "مَوْز",
+  "en": "bananas",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "موز",
+  "t": 1
+ },
+ {
+  "ar": "مَوْزَة",
+  "en": "a banana",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "موز",
+  "t": 2
+ },
+ {
+  "ar": "بُرْتُقَال",
+  "en": "oranges",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "بُرْتُقَالَة",
+  "en": "an orange",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "عِنَب",
+  "en": "grapes",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَعْنَاب",
+  "root": "عنب",
+  "t": 2
+ },
+ {
+  "ar": "بِطِّيخ",
+  "en": "watermelon",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "بطخ",
+  "t": 2
+ },
+ {
+  "ar": "فَرَاوِلَة",
+  "en": "strawberries",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "لَيْمُون",
+  "en": "lemons",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "تَمْر",
+  "en": "dates (fruit)",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "تُمُور",
+  "root": "تمر",
+  "t": 1
+ },
+ {
+  "ar": "مِشْمِش",
+  "en": "apricots",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "مشمش",
+  "t": 3
+ },
+ {
+  "ar": "خَوْخ",
+  "en": "peaches",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "خوخ",
+  "t": 3
+ },
+ {
+  "ar": "كُمَّثْرَى",
+  "en": "pears",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "رُمَّان",
+  "en": "pomegranates",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "رمن",
+  "t": 3
+ },
+ {
+  "ar": "تِين",
+  "en": "figs",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "تين",
+  "t": 3
+ },
+ {
+  "ar": "كَرَز",
+  "en": "cherries",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "مَانْجُو",
+  "en": "mango",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "جَوْز",
+  "en": "walnuts",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "جوز",
+  "t": 3
+ },
+ {
+  "ar": "لَوْز",
+  "en": "almonds",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "لوز",
+  "t": 3
+ },
+ {
+  "ar": "طَمَاطِم",
+  "en": "tomatoes",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "بَطَاطِس",
+  "en": "potatoes",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "بَصَل",
+  "en": "onions",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "بصل",
+  "t": 1
+ },
+ {
+  "ar": "بَصَلَة",
+  "en": "an onion",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "بصل",
+  "t": 3
+ },
+ {
+  "ar": "ثُوم",
+  "en": "garlic",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "ثوم",
+  "t": 2
+ },
+ {
+  "ar": "جَزَر",
+  "en": "carrots",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "جزر",
+  "t": 2
+ },
+ {
+  "ar": "خِيَار",
+  "en": "cucumbers",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "خير",
+  "t": 2
+ },
+ {
+  "ar": "خَسّ",
+  "en": "lettuce",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "خسس",
+  "t": 2
+ },
+ {
+  "ar": "سَبَانِخ",
+  "en": "spinach",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "بَاذِنْجَان",
+  "en": "aubergine",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "فِطْر",
+  "en": "mushrooms",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "فطر",
+  "t": 3
+ },
+ {
+  "ar": "ذُرَة",
+  "en": "maize, sweetcorn",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "ذرو",
+  "t": 3
+ },
+ {
+  "ar": "فَاصُولْيَاء",
+  "en": "beans",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "فُول",
+  "en": "fava beans",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "فول",
+  "t": 2
+ },
+ {
+  "ar": "عَدَس",
+  "en": "lentils",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "عدس",
+  "t": 2
+ },
+ {
+  "ar": "حُمُّص",
+  "en": "chickpeas, hummus",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "حمص",
+  "t": 2
+ },
+ {
+  "ar": "وَجْبَة",
+  "en": "meal",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "وَجَبَات",
+  "root": "وجب",
+  "t": 1
+ },
+ {
+  "ar": "وَجْبَة خَفِيفَة",
+  "en": "snack",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "وَجَبَات خَفِيفَة",
+  "root": "وجب",
+  "t": 3
+ },
+ {
+  "ar": "فُطُور",
+  "en": "breakfast",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "فطر",
+  "t": 1
+ },
+ {
+  "ar": "إِفْطَار",
+  "en": "iftar, breakfast",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "فطر",
+  "t": 2
+ },
+ {
+  "ar": "سُحُور",
+  "en": "suhoor, meal before dawn",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "سحر",
+  "t": 3
+ },
+ {
+  "ar": "غَدَاء",
+  "en": "lunch",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "غدو",
+  "t": 1
+ },
+ {
+  "ar": "عَشَاء",
+  "en": "dinner",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "عشو",
+  "t": 1
+ },
+ {
+  "ar": "مُقَبِّلَات",
+  "en": "starters",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "قبل",
+  "t": 3
+ },
+ {
+  "ar": "طَبَق رَئِيسِيّ",
+  "en": "main course",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَطْبَاق رَئِيسِيَّة",
+  "root": "طبق",
+  "t": 3
+ },
+ {
+  "ar": "طَبْخ",
+  "en": "cooking",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "طبخ",
+  "t": 2
+ },
+ {
+  "ar": "طَبَّاخ",
+  "en": "cook, chef",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "طَبَّاخُون",
+  "root": "طبخ",
+  "t": 2
+ },
+ {
+  "ar": "وَصْفَة",
+  "en": "recipe",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "وَصَفَات",
+  "root": "وصف",
+  "t": 2
+ },
+ {
+  "ar": "مُكَوِّنَات",
+  "en": "ingredients",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "كون",
+  "t": 3
+ },
+ {
+  "ar": "طَعْم",
+  "en": "taste, flavour",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "طعم",
+  "t": 2
+ },
+ {
+  "ar": "طَبَق",
+  "en": "dish (of food)",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَطْبَاق",
+  "root": "طبق",
+  "t": 1
+ },
+ {
+  "ar": "صَحْن",
+  "en": "plate",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "صُحُون",
+  "root": "صحن",
+  "t": 2
+ },
+ {
+  "ar": "كُوب",
+  "en": "cup, glass",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَكْوَاب",
+  "root": "كوب",
+  "t": 1
+ },
+ {
+  "ar": "كَأْس",
+  "en": "glass, wine glass",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "كُؤُوس",
+  "root": "كأس",
+  "t": 2
+ },
+ {
+  "ar": "فِنْجَان",
+  "en": "coffee cup",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "فَنَاجِين",
+  "root": "فنجن",
+  "t": 2
+ },
+ {
+  "ar": "مِلْعَقَة",
+  "en": "spoon",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "مَلَاعِق",
+  "root": "لعق",
+  "t": 1
+ },
+ {
+  "ar": "شَوْكَة",
+  "en": "fork",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "شَوْكَات",
+  "root": "شوك",
+  "t": 1
+ },
+ {
+  "ar": "سِكِّين",
+  "en": "knife",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "سَكَاكِين",
+  "root": "سكن",
+  "t": 1
+ },
+ {
+  "ar": "إِبْرِيق",
+  "en": "jug, teapot",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَبَارِيق",
+  "root": "برق",
+  "t": 3
+ },
+ {
+  "ar": "زُجَاجَة",
+  "en": "bottle",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "زُجَاجَات",
+  "root": "زجج",
+  "t": 2
+ },
+ {
+  "ar": "عُلْبَة",
+  "en": "tin, box",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "عُلَب",
+  "root": "علب",
+  "t": 2
+ },
+ {
+  "ar": "قِدْر",
+  "en": "cooking pot",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "قُدُور",
+  "root": "قدر",
+  "t": 3
+ },
+ {
+  "ar": "مِقْلَاة",
+  "en": "frying pan",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "قلي",
+  "t": 3
+ },
+ {
+  "ar": "مَائِدَة",
+  "en": "dining table, spread",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "مَوَائِد",
+  "root": "ميد",
+  "t": 2
+ },
+ {
+  "ar": "مِنْدِيل",
+  "en": "napkin, tissue",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَنَادِيل",
+  "root": "ندل",
+  "t": 3
+ },
+ {
+  "ar": "مَطْعَم",
+  "en": "restaurant",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَطَاعِم",
+  "root": "طعم",
+  "t": 1
+ },
+ {
+  "ar": "مَقْهَى",
+  "en": "café",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "قهو",
+  "t": 1,
+  "pl": "مَقَاهِي"
+ },
+ {
+  "ar": "قَائِمَة الطَّعَام",
+  "en": "menu",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "قَوَائِم الطَّعَام",
+  "root": "قوم",
+  "t": 2
+ },
+ {
+  "ar": "نَادِل",
+  "en": "waiter",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "نُدُل",
+  "root": "ندل",
+  "t": 2
+ },
+ {
+  "ar": "نَادِلَة",
+  "en": "waitress",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "نَادِلَات",
+  "root": "ندل",
+  "t": 3
+ },
+ {
+  "ar": "طَلَب",
+  "en": "order",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "طَلَبَات",
+  "root": "طلب",
+  "t": 2
+ },
+ {
+  "ar": "حِسَاب",
+  "en": "bill (in a restaurant), account",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "حِسَابَات",
+  "root": "حسب",
+  "t": 2
+ },
+ {
+  "ar": "فَاتُورَة",
+  "en": "invoice, bill",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "فَوَاتِير",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "بَقْشِيش",
+  "en": "tip (for service)",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "شَهِيَّة",
+  "en": "appetite",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "root": "شهو",
+  "t": 3
+ },
+ {
+  "ar": "جُوع",
+  "en": "hunger",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "جوع",
+  "t": 2
+ },
+ {
+  "ar": "عَطَش",
+  "en": "thirst",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "عطش",
+  "t": 2
+ },
+ {
+  "ar": "تَسَوُّق",
+  "en": "shopping",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "سوق",
+  "t": 2
+ },
+ {
+  "ar": "سِعْر",
+  "en": "price",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَسْعَار",
+  "root": "سعر",
+  "t": 1
+ },
+ {
+  "ar": "كِيلُو",
+  "en": "kilo",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "لِتْر",
+  "en": "litre",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "لِتْرَات",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "كِيس",
+  "en": "bag (plastic or paper)",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَكْيَاس",
+  "root": "كيس",
+  "t": 2
+ },
+ {
+  "ar": "قِطْعَة",
+  "en": "piece",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "قِطَع",
+  "root": "قطع",
+  "t": 2
+ },
+ {
+  "ar": "شَرِيحَة",
+  "en": "slice",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "شَرَائِح",
+  "root": "شرح",
+  "t": 3
+ },
+ {
+  "ar": "مَخْبَز",
+  "en": "bakery",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَخَابِز",
+  "root": "خبز",
+  "t": 2
+ },
+ {
+  "ar": "خَبَّاز",
+  "en": "baker",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "خَبَّازُون",
+  "root": "خبز",
+  "t": 3
+ },
+ {
+  "ar": "جَزَّار",
+  "en": "butcher",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "جَزَّارُون",
+  "root": "جزر",
+  "t": 3
+ },
+ {
+  "ar": "بَقَّال",
+  "en": "grocer",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "pl": "بَقَّالُون",
+  "root": "بقل",
+  "t": 3
+ },
+ {
+  "ar": "بَقَّالَة",
+  "en": "grocery shop",
+  "th": "food",
+  "pos": "n",
+  "g": "f",
+  "pl": "بَقَّالَات",
+  "root": "بقل",
+  "t": 2
+ },
+ {
+  "ar": "سُوبَرْمَارْكِت",
+  "en": "supermarket",
+  "th": "food",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "جَائِع",
+  "en": "hungry",
+  "th": "food",
+  "pos": "adj",
+  "root": "جوع",
+  "t": 1
+ },
+ {
+  "ar": "عَطْشَان",
+  "en": "thirsty",
+  "th": "food",
+  "pos": "adj",
+  "root": "عطش",
+  "t": 1
+ },
+ {
+  "ar": "شَبْعَان",
+  "en": "full (after eating)",
+  "th": "food",
+  "pos": "adj",
+  "root": "شبع",
+  "t": 2
+ },
+ {
+  "ar": "لَذِيذ",
+  "en": "delicious",
+  "th": "food",
+  "pos": "adj",
+  "root": "لذذ",
+  "t": 1
+ },
+ {
+  "ar": "شَهِيّ",
+  "en": "tasty, appetising",
+  "th": "food",
+  "pos": "adj",
+  "root": "شهو",
+  "t": 3
+ },
+ {
+  "ar": "حُلْو",
+  "en": "sweet",
+  "th": "food",
+  "pos": "adj",
+  "root": "حلو",
+  "t": 1
+ },
+ {
+  "ar": "مَالِح",
+  "en": "salty",
+  "th": "food",
+  "pos": "adj",
+  "root": "ملح",
+  "t": 2
+ },
+ {
+  "ar": "مُرّ",
+  "en": "bitter",
+  "th": "food",
+  "pos": "adj",
+  "root": "مرر",
+  "t": 2
+ },
+ {
+  "ar": "حَامِض",
+  "en": "sour",
+  "th": "food",
+  "pos": "adj",
+  "root": "حمض",
+  "t": 2
+ },
+ {
+  "ar": "حَارّ",
+  "en": "hot, spicy",
+  "th": "food",
+  "pos": "adj",
+  "root": "حرر",
+  "t": 1
+ },
+ {
+  "ar": "سَاخِن",
+  "en": "hot (to the touch)",
+  "th": "food",
+  "pos": "adj",
+  "root": "سخن",
+  "t": 1
+ },
+ {
+  "ar": "بَارِد",
+  "en": "cold",
+  "th": "food",
+  "pos": "adj",
+  "root": "برد",
+  "t": 1
+ },
+ {
+  "ar": "طَازَج",
+  "en": "fresh",
+  "th": "food",
+  "pos": "adj",
+  "root": "طزج",
+  "t": 2
+ },
+ {
+  "ar": "نَاضِج",
+  "en": "ripe",
+  "th": "food",
+  "pos": "adj",
+  "root": "نضج",
+  "t": 3
+ },
+ {
+  "ar": "نِيء",
+  "en": "raw",
+  "th": "food",
+  "pos": "adj",
+  "root": "نيأ",
+  "t": 3
+ },
+ {
+  "ar": "مَطْبُوخ",
+  "en": "cooked",
+  "th": "food",
+  "pos": "adj",
+  "root": "طبخ",
+  "t": 3
+ },
+ {
+  "ar": "مَشْوِيّ",
+  "en": "grilled",
+  "th": "food",
+  "pos": "adj",
+  "root": "شوي",
+  "t": 2
+ },
+ {
+  "ar": "مَقْلِيّ",
+  "en": "fried",
+  "th": "food",
+  "pos": "adj",
+  "root": "قلي",
+  "t": 2
+ },
+ {
+  "ar": "مَسْلُوق",
+  "en": "boiled",
+  "th": "food",
+  "pos": "adj",
+  "root": "سلق",
+  "t": 3
+ },
+ {
+  "ar": "نَبَاتِيّ",
+  "en": "vegetarian",
+  "th": "food",
+  "pos": "adj",
+  "root": "نبت",
+  "t": 2
+ },
+ {
+  "ar": "صِحِّيّ",
+  "en": "healthy",
+  "th": "food",
+  "pos": "adj",
+  "root": "صحح",
+  "t": 2
+ },
+ {
+  "ar": "جَاهِز",
+  "en": "ready",
+  "th": "food",
+  "pos": "adj",
+  "root": "جهز",
+  "t": 2
+ },
+ {
+  "ar": "صَائِم",
+  "en": "fasting",
+  "th": "food",
+  "pos": "adj",
+  "root": "صوم",
+  "t": 3
+ },
+ {
+  "ar": "رَخِيص",
+  "en": "cheap",
+  "th": "food",
+  "pos": "adj",
+  "root": "رخص",
+  "t": 1
+ },
+ {
+  "ar": "غَالٍ",
+  "en": "expensive",
+  "th": "food",
+  "pos": "adj",
+  "root": "غلو",
+  "t": 1
+ }
+]

@@ -1,0 +1,1172 @@
+[
+ {
+  "ar": "الْأَحَد",
+  "en": "Sunday",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "أحد",
+  "t": 1
+ },
+ {
+  "ar": "الِاثْنَيْن",
+  "en": "Monday",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "ثني",
+  "t": 1
+ },
+ {
+  "ar": "الثُّلَاثَاء",
+  "en": "Tuesday",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "ثلث",
+  "t": 1
+ },
+ {
+  "ar": "الْأَرْبِعَاء",
+  "en": "Wednesday",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "ربع",
+  "t": 1
+ },
+ {
+  "ar": "الْخَمِيس",
+  "en": "Thursday",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "خمس",
+  "t": 1
+ },
+ {
+  "ar": "الْجُمُعَة",
+  "en": "Friday",
+  "th": "time",
+  "pos": "n",
+  "g": "f",
+  "root": "جمع",
+  "t": 1
+ },
+ {
+  "ar": "السَّبْت",
+  "en": "Saturday",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "سبت",
+  "t": 1
+ },
+ {
+  "ar": "كَانُون الثَّانِي",
+  "en": "January (Levant)",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "شُبَاط",
+  "en": "February (Levant)",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "آذَار",
+  "en": "March (Levant)",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "نَيْسَان",
+  "en": "April (Levant)",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "أَيَّار",
+  "en": "May (Levant)",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "حَزِيرَان",
+  "en": "June (Levant)",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "تَمُّوز",
+  "en": "July (Levant)",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "آب",
+  "en": "August (Levant)",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "أَيْلُول",
+  "en": "September (Levant)",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "تِشْرِين الْأَوَّل",
+  "en": "October (Levant)",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "تِشْرِين الثَّانِي",
+  "en": "November (Levant)",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "كَانُون الْأَوَّل",
+  "en": "December (Levant)",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "يَنَايِر",
+  "en": "January",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "فِبْرَايِر",
+  "en": "February",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "مَارِس",
+  "en": "March",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "أَبْرِيل",
+  "en": "April",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "مَايُو",
+  "en": "May",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "يُونْيُو",
+  "en": "June",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "يُولْيُو",
+  "en": "July",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "أَغُسْطُس",
+  "en": "August",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "سِبْتَمْبِر",
+  "en": "September",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "أُكْتُوبَر",
+  "en": "October",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "نُوفَمْبِر",
+  "en": "November",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "دِيسَمْبِر",
+  "en": "December",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "رَمَضَان",
+  "en": "Ramadan",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "رمض",
+  "t": 2
+ },
+ {
+  "ar": "يَوْم",
+  "en": "day",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَيَّام",
+  "root": "يوم",
+  "t": 1
+ },
+ {
+  "ar": "أُسْبُوع",
+  "en": "week",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَسَابِيع",
+  "root": "سبع",
+  "t": 1
+ },
+ {
+  "ar": "شَهْر",
+  "en": "month",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "pl": "شُهُور",
+  "root": "شهر",
+  "t": 1
+ },
+ {
+  "ar": "سَنَة",
+  "en": "year",
+  "th": "time",
+  "pos": "n",
+  "g": "f",
+  "pl": "سَنَوَات",
+  "root": "سنو",
+  "t": 1
+ },
+ {
+  "ar": "عَام",
+  "en": "year (formal)",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَعْوَام",
+  "root": "عوم",
+  "t": 2
+ },
+ {
+  "ar": "قَرْن",
+  "en": "century",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "pl": "قُرُون",
+  "root": "قرن",
+  "t": 3
+ },
+ {
+  "ar": "عَقْد",
+  "en": "decade",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "pl": "عُقُود",
+  "root": "عقد",
+  "t": 3
+ },
+ {
+  "ar": "سَاعَة",
+  "en": "hour, clock, watch",
+  "th": "time",
+  "pos": "n",
+  "g": "f",
+  "pl": "سَاعَات",
+  "root": "سوع",
+  "t": 1
+ },
+ {
+  "ar": "دَقِيقَة",
+  "en": "minute",
+  "th": "time",
+  "pos": "n",
+  "g": "f",
+  "pl": "دَقَائِق",
+  "root": "دقق",
+  "t": 1
+ },
+ {
+  "ar": "ثَانِيَة",
+  "en": "second (of time)",
+  "th": "time",
+  "pos": "n",
+  "g": "f",
+  "pl": "ثَوَانِي",
+  "root": "ثني",
+  "t": 2
+ },
+ {
+  "ar": "لَحْظَة",
+  "en": "moment",
+  "th": "time",
+  "pos": "n",
+  "g": "f",
+  "pl": "لَحَظَات",
+  "root": "لحظ",
+  "t": 2
+ },
+ {
+  "ar": "وَقْت",
+  "en": "time",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَوْقَات",
+  "root": "وقت",
+  "t": 1
+ },
+ {
+  "ar": "مَرَّة",
+  "en": "time, occasion (once, twice)",
+  "th": "time",
+  "pos": "n",
+  "g": "f",
+  "pl": "مَرَّات",
+  "root": "مرر",
+  "t": 1
+ },
+ {
+  "ar": "تَارِيخ",
+  "en": "date, history",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "pl": "تَوَارِيخ",
+  "root": "أرخ",
+  "t": 2
+ },
+ {
+  "ar": "مَوْعِد",
+  "en": "appointment",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَوَاعِيد",
+  "root": "وعد",
+  "t": 2
+ },
+ {
+  "ar": "جَدْوَل",
+  "en": "timetable, schedule",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "pl": "جَدَاوِل",
+  "root": "جدل",
+  "t": 2
+ },
+ {
+  "ar": "عُطْلَة",
+  "en": "holiday, day off",
+  "th": "time",
+  "pos": "n",
+  "g": "f",
+  "pl": "عُطَل",
+  "root": "عطل",
+  "t": 1
+ },
+ {
+  "ar": "إِجَازَة",
+  "en": "leave, vacation",
+  "th": "time",
+  "pos": "n",
+  "g": "f",
+  "pl": "إِجَازَات",
+  "root": "جوز",
+  "t": 2
+ },
+ {
+  "ar": "عِيد",
+  "en": "festival, feast",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَعْيَاد",
+  "root": "عود",
+  "t": 2
+ },
+ {
+  "ar": "عِيد مِيلَاد",
+  "en": "birthday",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "رَأْس السَّنَة",
+  "en": "New Year",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "مُنَاسَبَة",
+  "en": "occasion",
+  "th": "time",
+  "pos": "n",
+  "g": "f",
+  "pl": "مُنَاسَبَات",
+  "root": "نسب",
+  "t": 3
+ },
+ {
+  "ar": "عُمْر",
+  "en": "age",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَعْمَار",
+  "root": "عمر",
+  "t": 1
+ },
+ {
+  "ar": "تَقْوِيم",
+  "en": "calendar",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "pl": "تَقَاوِيم",
+  "root": "قوم",
+  "t": 3
+ },
+ {
+  "ar": "مُنَبِّه",
+  "en": "alarm clock",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "pl": "مُنَبِّهَات",
+  "root": "نبه",
+  "t": 3
+ },
+ {
+  "ar": "فَصْل",
+  "en": "season",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "pl": "فُصُول",
+  "root": "فصل",
+  "t": 1
+ },
+ {
+  "ar": "مَوْسِم",
+  "en": "season (for something), period",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَوَاسِم",
+  "root": "وسم",
+  "t": 3
+ },
+ {
+  "ar": "رَبِيع",
+  "en": "spring",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "ربع",
+  "t": 1
+ },
+ {
+  "ar": "صَيْف",
+  "en": "summer",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "صيف",
+  "t": 1
+ },
+ {
+  "ar": "خَرِيف",
+  "en": "autumn",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "خرف",
+  "t": 1
+ },
+ {
+  "ar": "شِتَاء",
+  "en": "winter",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "شتو",
+  "t": 1
+ },
+ {
+  "ar": "صَبَاح",
+  "en": "morning",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "صبح",
+  "t": 1
+ },
+ {
+  "ar": "ظُهْر",
+  "en": "noon",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "ظهر",
+  "t": 1
+ },
+ {
+  "ar": "عَصْر",
+  "en": "afternoon (late)",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "عصر",
+  "t": 2
+ },
+ {
+  "ar": "مَسَاء",
+  "en": "evening",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "مسو",
+  "t": 1
+ },
+ {
+  "ar": "لَيْل",
+  "en": "night, nighttime",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "ليل",
+  "t": 1
+ },
+ {
+  "ar": "لَيْلَة",
+  "en": "night (one night)",
+  "th": "time",
+  "pos": "n",
+  "g": "f",
+  "pl": "لَيَالِي",
+  "root": "ليل",
+  "t": 1
+ },
+ {
+  "ar": "فَجْر",
+  "en": "dawn",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "فجر",
+  "t": 2
+ },
+ {
+  "ar": "شُرُوق",
+  "en": "sunrise",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "شرق",
+  "t": 3
+ },
+ {
+  "ar": "غُرُوب",
+  "en": "sunset",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "غرب",
+  "t": 2
+ },
+ {
+  "ar": "مُنْتَصَف اللَّيْل",
+  "en": "midnight",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "نَهَار",
+  "en": "daytime",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "نهر",
+  "t": 2
+ },
+ {
+  "ar": "نِهَايَة الْأُسْبُوع",
+  "en": "weekend",
+  "th": "time",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "مُدَّة",
+  "en": "period, length of time",
+  "th": "time",
+  "pos": "n",
+  "g": "f",
+  "pl": "مُدَد",
+  "root": "مدد",
+  "t": 2
+ },
+ {
+  "ar": "فَتْرَة",
+  "en": "period, spell",
+  "th": "time",
+  "pos": "n",
+  "g": "f",
+  "pl": "فَتَرَات",
+  "root": "فتر",
+  "t": 2
+ },
+ {
+  "ar": "زَمَن",
+  "en": "time, era",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَزْمَان",
+  "root": "زمن",
+  "t": 3
+ },
+ {
+  "ar": "بِدَايَة",
+  "en": "beginning",
+  "th": "time",
+  "pos": "n",
+  "g": "f",
+  "pl": "بِدَايَات",
+  "root": "بدأ",
+  "t": 2
+ },
+ {
+  "ar": "نِهَايَة",
+  "en": "end",
+  "th": "time",
+  "pos": "n",
+  "g": "f",
+  "pl": "نِهَايَات",
+  "root": "نهي",
+  "t": 2
+ },
+ {
+  "ar": "الْمَاضِي",
+  "en": "the past",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "مضي",
+  "t": 2
+ },
+ {
+  "ar": "الْحَاضِر",
+  "en": "the present",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "حضر",
+  "t": 3
+ },
+ {
+  "ar": "الْمُسْتَقْبَل",
+  "en": "the future",
+  "th": "time",
+  "pos": "n",
+  "g": "m",
+  "root": "قبل",
+  "t": 2
+ },
+ {
+  "ar": "قَادِم",
+  "en": "next, coming",
+  "th": "time",
+  "pos": "adj",
+  "root": "قدم",
+  "t": 2
+ },
+ {
+  "ar": "الْأُسْبُوع الْمَاضِي",
+  "en": "last week",
+  "th": "time",
+  "pos": "adv",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "الْآن",
+  "en": "now",
+  "th": "time",
+  "pos": "adv",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "الْيَوْم",
+  "en": "today",
+  "th": "time",
+  "pos": "adv",
+  "root": "يوم",
+  "t": 1
+ },
+ {
+  "ar": "أَمْسِ",
+  "en": "yesterday",
+  "th": "time",
+  "pos": "adv",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "غَدًا",
+  "en": "tomorrow",
+  "th": "time",
+  "pos": "adv",
+  "root": "غدو",
+  "t": 1
+ },
+ {
+  "ar": "بَعْدَ غَدٍ",
+  "en": "the day after tomorrow",
+  "th": "time",
+  "pos": "adv",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "أَوَّلَ أَمْسِ",
+  "en": "the day before yesterday",
+  "th": "time",
+  "pos": "adv",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "اللَّيْلَة",
+  "en": "tonight",
+  "th": "time",
+  "pos": "adv",
+  "root": "ليل",
+  "t": 1
+ },
+ {
+  "ar": "كُلّ يَوْم",
+  "en": "every day",
+  "th": "time",
+  "pos": "adv",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "حَتَّى الْآن",
+  "en": "so far, until now",
+  "th": "time",
+  "pos": "adv",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "بَعْدَ",
+  "en": "after",
+  "th": "time",
+  "pos": "prep",
+  "root": "بعد",
+  "t": 1
+ },
+ {
+  "ar": "قَبْلَ",
+  "en": "before",
+  "th": "time",
+  "pos": "prep",
+  "root": "قبل",
+  "t": 1
+ },
+ {
+  "ar": "مُنْذُ",
+  "en": "since, ago",
+  "th": "time",
+  "pos": "prep",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "أَثْنَاءَ",
+  "en": "during",
+  "th": "time",
+  "pos": "prep",
+  "root": "ثني",
+  "t": 2
+ },
+ {
+  "ar": "خِلَالَ",
+  "en": "during, through",
+  "th": "time",
+  "pos": "prep",
+  "root": "خلل",
+  "t": 2
+ },
+ {
+  "ar": "طَوَالَ",
+  "en": "throughout, all through",
+  "th": "time",
+  "pos": "prep",
+  "root": "طول",
+  "t": 3
+ },
+ {
+  "ar": "حِينَ",
+  "en": "when, at the time when",
+  "th": "time",
+  "pos": "x",
+  "root": "حين",
+  "t": 3
+ },
+ {
+  "ar": "بَعْدَمَا",
+  "en": "after (before a verb)",
+  "th": "time",
+  "pos": "x",
+  "root": "بعد",
+  "t": 2
+ },
+ {
+  "ar": "قَبْلَ أَنْ",
+  "en": "before (before a verb)",
+  "th": "time",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "عِنْدَئِذٍ",
+  "en": "at that time, then",
+  "th": "time",
+  "pos": "adv",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "مُبَكِّرًا",
+  "en": "early",
+  "th": "time",
+  "pos": "adv",
+  "root": "بكر",
+  "t": 1
+ },
+ {
+  "ar": "مُتَأَخِّرًا",
+  "en": "late",
+  "th": "time",
+  "pos": "adv",
+  "root": "أخر",
+  "t": 1
+ },
+ {
+  "ar": "قَرِيبًا",
+  "en": "soon",
+  "th": "time",
+  "pos": "adv",
+  "root": "قرب",
+  "t": 1
+ },
+ {
+  "ar": "فَوْرًا",
+  "en": "immediately",
+  "th": "time",
+  "pos": "adv",
+  "root": "فور",
+  "t": 2
+ },
+ {
+  "ar": "لَاحِقًا",
+  "en": "later",
+  "th": "time",
+  "pos": "adv",
+  "root": "لحق",
+  "t": 2
+ },
+ {
+  "ar": "سَابِقًا",
+  "en": "previously, formerly",
+  "th": "time",
+  "pos": "adv",
+  "root": "سبق",
+  "t": 2
+ },
+ {
+  "ar": "مُسْبَقًا",
+  "en": "in advance",
+  "th": "time",
+  "pos": "adv",
+  "root": "سبق",
+  "t": 3
+ },
+ {
+  "ar": "دَائِمًا",
+  "en": "always",
+  "th": "time",
+  "pos": "adv",
+  "root": "دوم",
+  "t": 1
+ },
+ {
+  "ar": "أَبَدًا",
+  "en": "never, not at all",
+  "th": "time",
+  "pos": "adv",
+  "root": "أبد",
+  "t": 1
+ },
+ {
+  "ar": "أَحْيَانًا",
+  "en": "sometimes",
+  "th": "time",
+  "pos": "adv",
+  "root": "حين",
+  "t": 1
+ },
+ {
+  "ar": "غَالِبًا",
+  "en": "often, mostly",
+  "th": "time",
+  "pos": "adv",
+  "root": "غلب",
+  "t": 2
+ },
+ {
+  "ar": "عَادَةً",
+  "en": "usually",
+  "th": "time",
+  "pos": "adv",
+  "root": "عود",
+  "t": 1
+ },
+ {
+  "ar": "نَادِرًا",
+  "en": "rarely",
+  "th": "time",
+  "pos": "adv",
+  "root": "ندر",
+  "t": 2
+ },
+ {
+  "ar": "بَعْدُ",
+  "en": "yet (after a negative)",
+  "th": "time",
+  "pos": "adv",
+  "root": "بعد",
+  "t": 2
+ },
+ {
+  "ar": "أَخِيرًا",
+  "en": "finally, at last",
+  "th": "time",
+  "pos": "adv",
+  "root": "أخر",
+  "t": 2
+ },
+ {
+  "ar": "مُجَدَّدًا",
+  "en": "again",
+  "th": "time",
+  "pos": "adv",
+  "root": "جدد",
+  "t": 2
+ },
+ {
+  "ar": "حَالِيًّا",
+  "en": "currently",
+  "th": "time",
+  "pos": "adv",
+  "root": "حول",
+  "t": 2
+ },
+ {
+  "ar": "مُؤَخَّرًا",
+  "en": "recently",
+  "th": "time",
+  "pos": "adv",
+  "root": "أخر",
+  "t": 2
+ },
+ {
+  "ar": "قَدِيمًا",
+  "en": "in the old days",
+  "th": "time",
+  "pos": "adv",
+  "root": "قدم",
+  "t": 3
+ },
+ {
+  "ar": "صَبَاحًا",
+  "en": "in the morning, a.m.",
+  "th": "time",
+  "pos": "adv",
+  "root": "صبح",
+  "t": 1
+ },
+ {
+  "ar": "ظُهْرًا",
+  "en": "at noon",
+  "th": "time",
+  "pos": "adv",
+  "root": "ظهر",
+  "t": 2
+ },
+ {
+  "ar": "مَسَاءً",
+  "en": "in the evening, p.m.",
+  "th": "time",
+  "pos": "adv",
+  "root": "مسو",
+  "t": 1
+ },
+ {
+  "ar": "لَيْلًا",
+  "en": "at night",
+  "th": "time",
+  "pos": "adv",
+  "root": "ليل",
+  "t": 2
+ },
+ {
+  "ar": "نَهَارًا",
+  "en": "by day",
+  "th": "time",
+  "pos": "adv",
+  "root": "نهر",
+  "t": 3
+ },
+ {
+  "ar": "يَوْمِيًّا",
+  "en": "daily",
+  "th": "time",
+  "pos": "adv",
+  "root": "يوم",
+  "t": 2
+ },
+ {
+  "ar": "أُسْبُوعِيًّا",
+  "en": "weekly",
+  "th": "time",
+  "pos": "adv",
+  "root": "سبع",
+  "t": 3
+ },
+ {
+  "ar": "شَهْرِيًّا",
+  "en": "monthly",
+  "th": "time",
+  "pos": "adv",
+  "root": "شهر",
+  "t": 3
+ },
+ {
+  "ar": "سَنَوِيًّا",
+  "en": "yearly",
+  "th": "time",
+  "pos": "adv",
+  "root": "سنو",
+  "t": 3
+ }
+]

@@ -1,0 +1,3 @@
+Noto Naskh Arabic, Copyright 2022 The Noto Project Authors (github.com/notofonts/arabic).
+Licensed under the SIL Open Font License, Version 1.1: https://openfontlicense.org
+The Arabic-script subset served by Google Fonts (unicode-range U+0600-06FF and related).

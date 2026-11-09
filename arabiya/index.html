@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ṭalāqa</title>
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0b0f1c">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Ṭalāqa">
+
+  <link rel="stylesheet" href="css/talaqa.css">
+</head>
+<body>
+  <!-- No header and no tab bar: the board IS the app, and a round takes the
+       whole screen. See js/ar-arcade.js. Everything here is local to arabiya/. -->
+  <main class="app-main">
+    <div id="stage-host"></div>
+  </main>
+
+  <script defer src="js/perf.js"></script>
+
+  <!-- Arabic rules, then the shared helpers and stores -->
+  <script defer src="js/ar-text.js"></script>
+  <script defer src="js/ar-core.js"></script>
+  <script defer src="js/ui.js"></script>
+  <script defer src="js/srs.js"></script>
+  <script defer src="js/errorlog.js"></script>
+  <script defer src="js/gamescore.js"></script>
+  <script defer src="js/ar-audio.js"></script>
+
+  <!-- content: the script course by hand, the rest generated; each file may be empty and the app copes -->
+  <script defer src="data/letters.js"></script>
+  <script defer src="data/audio.js"></script>
+  <script defer src="data/verbs.js"></script>
+  <script defer src="data/words.js"></script>
+  <script defer src="data/phrases.js"></script>
+  <script defer src="data/cards.js"></script>
+  <script defer src="data/gaps-afal.js"></script>
+  <script defer src="data/gaps-harakat.js"></script>
+  <script defer src="data/gaps-jidhr.js"></script>
+  <script defer src="data/gaps-jumu.js"></script>
+  <script defer src="data/gaps-damair.js"></script>
+
+  <!-- items, then the round engine, stage 0, the weekly check, the board -->
+  <script defer src="js/ar-items.js"></script>
+  <script defer src="js/gameround.js"></script>
+  <script defer src="js/ar-huruf.js"></script>
+  <script defer src="js/ar-check.js"></script>
+  <script defer src="js/ar-arcade.js"></script>
+</body>
+</html>

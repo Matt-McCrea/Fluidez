@@ -1,0 +1,1041 @@
+[
+ {
+  "ar": "صِفْر",
+  "en": "zero",
+  "th": "numbers",
+  "pos": "num",
+  "root": "صفر",
+  "t": 1
+ },
+ {
+  "ar": "وَاحِد",
+  "en": "one",
+  "th": "numbers",
+  "pos": "num",
+  "root": "وحد",
+  "t": 1
+ },
+ {
+  "ar": "وَاحِدَة",
+  "en": "one (feminine)",
+  "th": "numbers",
+  "pos": "num",
+  "root": "وحد",
+  "t": 2
+ },
+ {
+  "ar": "اِثْنَان",
+  "en": "two",
+  "th": "numbers",
+  "pos": "num",
+  "root": "ثني",
+  "t": 1
+ },
+ {
+  "ar": "اِثْنَتَان",
+  "en": "two (feminine)",
+  "th": "numbers",
+  "pos": "num",
+  "root": "ثني",
+  "t": 2
+ },
+ {
+  "ar": "ثَلَاثَة",
+  "en": "three",
+  "th": "numbers",
+  "pos": "num",
+  "root": "ثلث",
+  "t": 1
+ },
+ {
+  "ar": "أَرْبَعَة",
+  "en": "four",
+  "th": "numbers",
+  "pos": "num",
+  "root": "ربع",
+  "t": 1
+ },
+ {
+  "ar": "خَمْسَة",
+  "en": "five",
+  "th": "numbers",
+  "pos": "num",
+  "root": "خمس",
+  "t": 1
+ },
+ {
+  "ar": "سِتَّة",
+  "en": "six",
+  "th": "numbers",
+  "pos": "num",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "سَبْعَة",
+  "en": "seven",
+  "th": "numbers",
+  "pos": "num",
+  "root": "سبع",
+  "t": 1
+ },
+ {
+  "ar": "ثَمَانِيَة",
+  "en": "eight",
+  "th": "numbers",
+  "pos": "num",
+  "root": "ثمن",
+  "t": 1
+ },
+ {
+  "ar": "تِسْعَة",
+  "en": "nine",
+  "th": "numbers",
+  "pos": "num",
+  "root": "تسع",
+  "t": 1
+ },
+ {
+  "ar": "عَشَرَة",
+  "en": "ten",
+  "th": "numbers",
+  "pos": "num",
+  "root": "عشر",
+  "t": 1
+ },
+ {
+  "ar": "أَحَدَ عَشَرَ",
+  "en": "eleven",
+  "th": "numbers",
+  "pos": "num",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "اِثْنَا عَشَرَ",
+  "en": "twelve",
+  "th": "numbers",
+  "pos": "num",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "ثَلَاثَةَ عَشَرَ",
+  "en": "thirteen",
+  "th": "numbers",
+  "pos": "num",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "أَرْبَعَةَ عَشَرَ",
+  "en": "fourteen",
+  "th": "numbers",
+  "pos": "num",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "خَمْسَةَ عَشَرَ",
+  "en": "fifteen",
+  "th": "numbers",
+  "pos": "num",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "سِتَّةَ عَشَرَ",
+  "en": "sixteen",
+  "th": "numbers",
+  "pos": "num",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "سَبْعَةَ عَشَرَ",
+  "en": "seventeen",
+  "th": "numbers",
+  "pos": "num",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "ثَمَانِيَةَ عَشَرَ",
+  "en": "eighteen",
+  "th": "numbers",
+  "pos": "num",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "تِسْعَةَ عَشَرَ",
+  "en": "nineteen",
+  "th": "numbers",
+  "pos": "num",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "عِشْرُون",
+  "en": "twenty",
+  "th": "numbers",
+  "pos": "num",
+  "root": "عشر",
+  "t": 1
+ },
+ {
+  "ar": "ثَلَاثُون",
+  "en": "thirty",
+  "th": "numbers",
+  "pos": "num",
+  "root": "ثلث",
+  "t": 1
+ },
+ {
+  "ar": "أَرْبَعُون",
+  "en": "forty",
+  "th": "numbers",
+  "pos": "num",
+  "root": "ربع",
+  "t": 1
+ },
+ {
+  "ar": "خَمْسُون",
+  "en": "fifty",
+  "th": "numbers",
+  "pos": "num",
+  "root": "خمس",
+  "t": 1
+ },
+ {
+  "ar": "سِتُّون",
+  "en": "sixty",
+  "th": "numbers",
+  "pos": "num",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "سَبْعُون",
+  "en": "seventy",
+  "th": "numbers",
+  "pos": "num",
+  "root": "سبع",
+  "t": 1
+ },
+ {
+  "ar": "ثَمَانُون",
+  "en": "eighty",
+  "th": "numbers",
+  "pos": "num",
+  "root": "ثمن",
+  "t": 1
+ },
+ {
+  "ar": "تِسْعُون",
+  "en": "ninety",
+  "th": "numbers",
+  "pos": "num",
+  "root": "تسع",
+  "t": 1
+ },
+ {
+  "ar": "مِئَة",
+  "en": "hundred",
+  "th": "numbers",
+  "pos": "num",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "مِئَتَان",
+  "en": "two hundred",
+  "th": "numbers",
+  "pos": "num",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "أَلْف",
+  "en": "thousand",
+  "th": "numbers",
+  "pos": "num",
+  "pl": "آلَاف",
+  "root": "ألف",
+  "t": 1
+ },
+ {
+  "ar": "مِلْيُون",
+  "en": "million",
+  "th": "numbers",
+  "pos": "num",
+  "pl": "مَلَايِين",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "مِلْيَار",
+  "en": "billion",
+  "th": "numbers",
+  "pos": "num",
+  "pl": "مِلْيَارَات",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "أَوَّل",
+  "en": "first",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "أول",
+  "t": 1
+ },
+ {
+  "ar": "أُولَى",
+  "en": "first (feminine)",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "أول",
+  "t": 1
+ },
+ {
+  "ar": "ثَانِي",
+  "en": "second",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "ثني",
+  "t": 1
+ },
+ {
+  "ar": "ثَالِث",
+  "en": "third",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "ثلث",
+  "t": 1
+ },
+ {
+  "ar": "رَابِع",
+  "en": "fourth",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "ربع",
+  "t": 1
+ },
+ {
+  "ar": "خَامِس",
+  "en": "fifth",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "خمس",
+  "t": 2
+ },
+ {
+  "ar": "سَادِس",
+  "en": "sixth",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "سدس",
+  "t": 2
+ },
+ {
+  "ar": "سَابِع",
+  "en": "seventh",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "سبع",
+  "t": 2
+ },
+ {
+  "ar": "ثَامِن",
+  "en": "eighth",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "ثمن",
+  "t": 2
+ },
+ {
+  "ar": "تَاسِع",
+  "en": "ninth",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "تسع",
+  "t": 2
+ },
+ {
+  "ar": "عَاشِر",
+  "en": "tenth",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "عشر",
+  "t": 2
+ },
+ {
+  "ar": "آخِر",
+  "en": "last",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "أخر",
+  "t": 1
+ },
+ {
+  "ar": "أَوَّلًا",
+  "en": "firstly",
+  "th": "numbers",
+  "pos": "adv",
+  "root": "أول",
+  "t": 2
+ },
+ {
+  "ar": "ثَانِيًا",
+  "en": "secondly",
+  "th": "numbers",
+  "pos": "adv",
+  "root": "ثني",
+  "t": 2
+ },
+ {
+  "ar": "نِصْف",
+  "en": "half",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَنْصَاف",
+  "root": "نصف",
+  "t": 1
+ },
+ {
+  "ar": "ثُلُث",
+  "en": "third (fraction)",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَثْلَاث",
+  "root": "ثلث",
+  "t": 2
+ },
+ {
+  "ar": "رُبْع",
+  "en": "quarter",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَرْبَاع",
+  "root": "ربع",
+  "t": 1
+ },
+ {
+  "ar": "لَوْن",
+  "en": "colour",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَلْوَان",
+  "root": "لون",
+  "t": 1
+ },
+ {
+  "ar": "أَحْمَر",
+  "en": "red",
+  "th": "numbers",
+  "pos": "adj",
+  "pl": "حُمْر",
+  "root": "حمر",
+  "t": 1
+ },
+ {
+  "ar": "حَمْرَاء",
+  "en": "red (feminine)",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "حمر",
+  "t": 1
+ },
+ {
+  "ar": "أَزْرَق",
+  "en": "blue",
+  "th": "numbers",
+  "pos": "adj",
+  "pl": "زُرْق",
+  "root": "زرق",
+  "t": 1
+ },
+ {
+  "ar": "زَرْقَاء",
+  "en": "blue (feminine)",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "زرق",
+  "t": 1
+ },
+ {
+  "ar": "أَخْضَر",
+  "en": "green",
+  "th": "numbers",
+  "pos": "adj",
+  "pl": "خُضْر",
+  "root": "خضر",
+  "t": 1
+ },
+ {
+  "ar": "خَضْرَاء",
+  "en": "green (feminine)",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "خضر",
+  "t": 1
+ },
+ {
+  "ar": "أَصْفَر",
+  "en": "yellow",
+  "th": "numbers",
+  "pos": "adj",
+  "pl": "صُفْر",
+  "root": "صفر",
+  "t": 1
+ },
+ {
+  "ar": "صَفْرَاء",
+  "en": "yellow (feminine)",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "صفر",
+  "t": 1
+ },
+ {
+  "ar": "أَسْوَد",
+  "en": "black",
+  "th": "numbers",
+  "pos": "adj",
+  "pl": "سُود",
+  "root": "سود",
+  "t": 1
+ },
+ {
+  "ar": "سَوْدَاء",
+  "en": "black (feminine)",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "سود",
+  "t": 1
+ },
+ {
+  "ar": "أَبْيَض",
+  "en": "white",
+  "th": "numbers",
+  "pos": "adj",
+  "pl": "بِيض",
+  "root": "بيض",
+  "t": 1
+ },
+ {
+  "ar": "بَيْضَاء",
+  "en": "white (feminine)",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "بيض",
+  "t": 1
+ },
+ {
+  "ar": "بُنِّيّ",
+  "en": "brown",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "بنن",
+  "t": 2
+ },
+ {
+  "ar": "بُرْتُقَالِيّ",
+  "en": "orange (colour)",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "وَرْدِيّ",
+  "en": "pink",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "ورد",
+  "t": 2
+ },
+ {
+  "ar": "رَمَادِيّ",
+  "en": "grey",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "رمد",
+  "t": 2
+ },
+ {
+  "ar": "بَنَفْسَجِيّ",
+  "en": "purple",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "ذَهَبِيّ",
+  "en": "golden, gold (colour)",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "ذهب",
+  "t": 3
+ },
+ {
+  "ar": "فِضِّيّ",
+  "en": "silver (colour)",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "فضض",
+  "t": 3
+ },
+ {
+  "ar": "كُحْلِيّ",
+  "en": "navy blue",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "كحل",
+  "t": 3
+ },
+ {
+  "ar": "فَاتِح",
+  "en": "light (of a colour)",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "فتح",
+  "t": 2
+ },
+ {
+  "ar": "غَامِق",
+  "en": "dark (of a colour)",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "غمق",
+  "t": 2
+ },
+ {
+  "ar": "شَكْل",
+  "en": "shape",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَشْكَال",
+  "root": "شكل",
+  "t": 2
+ },
+ {
+  "ar": "دَائِرَة",
+  "en": "circle",
+  "th": "numbers",
+  "pos": "n",
+  "g": "f",
+  "pl": "دَوَائِر",
+  "root": "دور",
+  "t": 2
+ },
+ {
+  "ar": "مُرَبَّع",
+  "en": "square",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "مُرَبَّعَات",
+  "root": "ربع",
+  "t": 2
+ },
+ {
+  "ar": "مُثَلَّث",
+  "en": "triangle",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "مُثَلَّثَات",
+  "root": "ثلث",
+  "t": 2
+ },
+ {
+  "ar": "مُسْتَطِيل",
+  "en": "rectangle",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "مُسْتَطِيلَات",
+  "root": "طول",
+  "t": 3
+ },
+ {
+  "ar": "خَطّ",
+  "en": "line",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "خُطُوط",
+  "root": "خطط",
+  "t": 2
+ },
+ {
+  "ar": "نُقْطَة",
+  "en": "dot, point",
+  "th": "numbers",
+  "pos": "n",
+  "g": "f",
+  "pl": "نِقَاط",
+  "root": "نقط",
+  "t": 2
+ },
+ {
+  "ar": "كُرَة",
+  "en": "ball, sphere",
+  "th": "numbers",
+  "pos": "n",
+  "g": "f",
+  "pl": "كُرَات",
+  "root": "كرو",
+  "t": 2
+ },
+ {
+  "ar": "مُكَعَّب",
+  "en": "cube",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "مُكَعَّبَات",
+  "root": "كعب",
+  "t": 3
+ },
+ {
+  "ar": "زَاوِيَة",
+  "en": "corner, angle",
+  "th": "numbers",
+  "pos": "n",
+  "g": "f",
+  "pl": "زَوَايَا",
+  "root": "زوي",
+  "t": 3
+ },
+ {
+  "ar": "مُسْتَدِير",
+  "en": "round",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "دور",
+  "t": 3
+ },
+ {
+  "ar": "كَثِير",
+  "en": "many, much",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "كثر",
+  "t": 1
+ },
+ {
+  "ar": "قَلِيل",
+  "en": "few, little",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "قلل",
+  "t": 1
+ },
+ {
+  "ar": "أَكْثَر",
+  "en": "more",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "كثر",
+  "t": 1
+ },
+ {
+  "ar": "أَقَلّ",
+  "en": "less, fewer",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "قلل",
+  "t": 1
+ },
+ {
+  "ar": "بِضْعَة",
+  "en": "a few, some",
+  "th": "numbers",
+  "pos": "x",
+  "root": "بضع",
+  "t": 2
+ },
+ {
+  "ar": "عَدَد",
+  "en": "number, amount",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَعْدَاد",
+  "root": "عدد",
+  "t": 1
+ },
+ {
+  "ar": "رَقْم",
+  "en": "digit, number (written)",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَرْقَام",
+  "root": "رقم",
+  "t": 1
+ },
+ {
+  "ar": "كَمِّيَّة",
+  "en": "quantity",
+  "th": "numbers",
+  "pos": "n",
+  "g": "f",
+  "pl": "كَمِّيَّات",
+  "root": "كمم",
+  "t": 2
+ },
+ {
+  "ar": "مَجْمُوع",
+  "en": "total",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "root": "جمع",
+  "t": 2
+ },
+ {
+  "ar": "زَوْج",
+  "en": "pair",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَزْوَاج",
+  "root": "زوج",
+  "t": 1
+ },
+ {
+  "ar": "ضِعْف",
+  "en": "double, twice as much",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَضْعَاف",
+  "root": "ضعف",
+  "t": 3
+ },
+ {
+  "ar": "جُزْء",
+  "en": "part",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَجْزَاء",
+  "root": "جزء",
+  "t": 2
+ },
+ {
+  "ar": "قِطْعَة",
+  "en": "piece",
+  "th": "numbers",
+  "pos": "n",
+  "g": "f",
+  "pl": "قِطَع",
+  "root": "قطع",
+  "t": 1
+ },
+ {
+  "ar": "دَزِينَة",
+  "en": "dozen",
+  "th": "numbers",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "مِتْر",
+  "en": "metre",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَمْتَار",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "كِيلُومِتْر",
+  "en": "kilometre",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "كِيلُومِتْرَات",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "سَنْتِيمِتْر",
+  "en": "centimetre",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "سَنْتِيمِتْرَات",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "كِيلُوغْرَام",
+  "en": "kilogram",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "كِيلُوغْرَامَات",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "غِرَام",
+  "en": "gram",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "غِرَامَات",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "لِتْر",
+  "en": "litre",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "لِتْرَات",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "بِالْمِئَة",
+  "en": "percent",
+  "th": "numbers",
+  "pos": "x",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "نِسْبَة",
+  "en": "ratio, percentage",
+  "th": "numbers",
+  "pos": "n",
+  "g": "f",
+  "pl": "نِسَب",
+  "root": "نسب",
+  "t": 3
+ },
+ {
+  "ar": "حَجْم",
+  "en": "size",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَحْجَام",
+  "root": "حجم",
+  "t": 2
+ },
+ {
+  "ar": "طُول",
+  "en": "length, height (of a person)",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَطْوَال",
+  "root": "طول",
+  "t": 2
+ },
+ {
+  "ar": "عَرْض",
+  "en": "width",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "root": "عرض",
+  "t": 2
+ },
+ {
+  "ar": "وَزْن",
+  "en": "weight",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَوْزَان",
+  "root": "وزن",
+  "t": 2
+ },
+ {
+  "ar": "اِرْتِفَاع",
+  "en": "height (of a thing)",
+  "th": "numbers",
+  "pos": "n",
+  "g": "m",
+  "root": "رفع",
+  "t": 3
+ },
+ {
+  "ar": "مِسَاحَة",
+  "en": "area",
+  "th": "numbers",
+  "pos": "n",
+  "g": "f",
+  "pl": "مِسَاحَات",
+  "root": "مسح",
+  "t": 3
+ },
+ {
+  "ar": "دَرَجَة",
+  "en": "degree",
+  "th": "numbers",
+  "pos": "n",
+  "g": "f",
+  "pl": "دَرَجَات",
+  "root": "درج",
+  "t": 2
+ },
+ {
+  "ar": "زَائِد",
+  "en": "plus",
+  "th": "numbers",
+  "pos": "x",
+  "root": "زيد",
+  "t": 2
+ },
+ {
+  "ar": "نَاقِص",
+  "en": "minus",
+  "th": "numbers",
+  "pos": "x",
+  "root": "نقص",
+  "t": 2
+ },
+ {
+  "ar": "مُتَوَسِّط",
+  "en": "average",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "وسط",
+  "t": 3
+ },
+ {
+  "ar": "فَرْدِيّ",
+  "en": "odd (number)",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "فرد",
+  "t": 3
+ },
+ {
+  "ar": "زَوْجِيّ",
+  "en": "even (number)",
+  "th": "numbers",
+  "pos": "adj",
+  "root": "زوج",
+  "t": 3
+ }
+]

@@ -1,0 +1,724 @@
+[
+ {
+  "ar": "مَلَابِس",
+  "en": "clothes",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "root": "لبس",
+  "t": 1
+ },
+ {
+  "ar": "ثَوْب",
+  "en": "garment, robe",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "ثِيَاب",
+  "root": "ثوب",
+  "t": 2
+ },
+ {
+  "ar": "قَمِيص",
+  "en": "shirt",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "قُمْصَان",
+  "root": "قمص",
+  "t": 1
+ },
+ {
+  "ar": "تِيشِيرْت",
+  "en": "T shirt",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "بِلُوزَة",
+  "en": "blouse",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "pl": "بِلُوزَات",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "بَنْطَلُون",
+  "en": "trousers",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "بَنْطَلُونَات",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "سِرْوَال",
+  "en": "trousers (traditional)",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "سَرَاوِيل",
+  "root": "سرول",
+  "t": 3
+ },
+ {
+  "ar": "جِينْز",
+  "en": "jeans, denim",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "شُورْت",
+  "en": "shorts",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "تَنُّورَة",
+  "en": "skirt",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "pl": "تَنَانِير",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "فُسْتَان",
+  "en": "dress",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "فَسَاتِين",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "بَدْلَة",
+  "en": "suit",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "pl": "بَدَلَات",
+  "root": "بدل",
+  "t": 2
+ },
+ {
+  "ar": "سُتْرَة",
+  "en": "jacket",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "pl": "سُتَر",
+  "root": "ستر",
+  "t": 2
+ },
+ {
+  "ar": "مِعْطَف",
+  "en": "coat",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَعَاطِف",
+  "root": "عطف",
+  "t": 1
+ },
+ {
+  "ar": "كَنْزَة",
+  "en": "jumper, sweater",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "pl": "كَنَزَات",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "بِيجَامَة",
+  "en": "pyjamas",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "مَلَابِس دَاخِلِيَّة",
+  "en": "underwear",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "root": "لبس",
+  "t": 3
+ },
+ {
+  "ar": "مَايُوه",
+  "en": "swimsuit",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "رَبْطَة عُنُق",
+  "en": "tie",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "pl": "رَبَطَات عُنُق",
+  "root": "ربط",
+  "t": 2
+ },
+ {
+  "ar": "حِزَام",
+  "en": "belt",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَحْزِمَة",
+  "root": "حزم",
+  "t": 2
+ },
+ {
+  "ar": "قُبَّعَة",
+  "en": "hat",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "pl": "قُبَّعَات",
+  "root": "قبع",
+  "t": 1
+ },
+ {
+  "ar": "طَاقِيَّة",
+  "en": "cap",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "حِجَاب",
+  "en": "headscarf (hijab)",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "root": "حجب",
+  "t": 2
+ },
+ {
+  "ar": "وِشَاح",
+  "en": "scarf",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَوْشِحَة",
+  "root": "وشح",
+  "t": 2
+ },
+ {
+  "ar": "شَال",
+  "en": "shawl",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "كُوفِيَّة",
+  "en": "keffiyeh (men's headscarf)",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "عَبَاءَة",
+  "en": "abaya, cloak",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "pl": "عَبَاءَات",
+  "root": "عبأ",
+  "t": 3
+ },
+ {
+  "ar": "جَلَّابِيَّة",
+  "en": "jellabiya, long robe",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "قُفَّاز",
+  "en": "glove",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "قُفَّازَات",
+  "root": "قفز",
+  "t": 2
+ },
+ {
+  "ar": "جَوْرَب",
+  "en": "sock",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "جَوَارِب",
+  "root": "جرب",
+  "t": 1
+ },
+ {
+  "ar": "حِذَاء",
+  "en": "shoe",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَحْذِيَة",
+  "root": "حذو",
+  "t": 1
+ },
+ {
+  "ar": "حِذَاء رِيَاضِيّ",
+  "en": "trainers, sneakers",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَحْذِيَة رِيَاضِيَّة",
+  "root": "حذو",
+  "t": 2
+ },
+ {
+  "ar": "صَنْدَل",
+  "en": "sandal",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "صَنَادِل",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "كَعْب عَالِي",
+  "en": "high heels",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "root": "كعب",
+  "t": 3
+ },
+ {
+  "ar": "نَظَّارَة",
+  "en": "glasses",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "pl": "نَظَّارَات",
+  "root": "نظر",
+  "t": 1
+ },
+ {
+  "ar": "نَظَّارَة شَمْسِيَّة",
+  "en": "sunglasses",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "root": "نظر",
+  "t": 3
+ },
+ {
+  "ar": "سَاعَة",
+  "en": "watch",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "pl": "سَاعَات",
+  "root": "سوع",
+  "t": 1
+ },
+ {
+  "ar": "خَاتَم",
+  "en": "ring",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "خَوَاتِم",
+  "root": "ختم",
+  "t": 2
+ },
+ {
+  "ar": "عِقْد",
+  "en": "necklace",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "عُقُود",
+  "root": "عقد",
+  "t": 2
+ },
+ {
+  "ar": "سِوَار",
+  "en": "bracelet",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَسَاوِر",
+  "root": "سور",
+  "t": 3
+ },
+ {
+  "ar": "قُرْط",
+  "en": "earring",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَقْرَاط",
+  "root": "قرط",
+  "t": 3
+ },
+ {
+  "ar": "حَقِيبَة",
+  "en": "bag",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "pl": "حَقَائِب",
+  "root": "حقب",
+  "t": 1
+ },
+ {
+  "ar": "حَقِيبَة يَد",
+  "en": "handbag",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "pl": "حَقَائِب يَد",
+  "root": "حقب",
+  "t": 3
+ },
+ {
+  "ar": "مِحْفَظَة",
+  "en": "wallet",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "pl": "مَحَافِظ",
+  "root": "حفظ",
+  "t": 2
+ },
+ {
+  "ar": "مِظَلَّة",
+  "en": "umbrella",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "pl": "مِظَلَّات",
+  "root": "ظلل",
+  "t": 2
+ },
+ {
+  "ar": "مِنْدِيل",
+  "en": "handkerchief, tissue",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَنَادِيل",
+  "root": "ندل",
+  "t": 3
+ },
+ {
+  "ar": "عِطْر",
+  "en": "perfume",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "عُطُور",
+  "root": "عطر",
+  "t": 2
+ },
+ {
+  "ar": "مِكْيَاج",
+  "en": "makeup",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "مُشْط",
+  "en": "comb",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَمْشَاط",
+  "root": "مشط",
+  "t": 3
+ },
+ {
+  "ar": "جَيْب",
+  "en": "pocket",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "جُيُوب",
+  "root": "جيب",
+  "t": 2
+ },
+ {
+  "ar": "كُمّ",
+  "en": "sleeve",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَكْمَام",
+  "root": "كمم",
+  "t": 3
+ },
+ {
+  "ar": "يَاقَة",
+  "en": "collar",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "pl": "يَاقَات",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "زِرّ",
+  "en": "button",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَزْرَار",
+  "root": "زرر",
+  "t": 3
+ },
+ {
+  "ar": "سَحَّاب",
+  "en": "zip",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "مَقَاس",
+  "en": "size",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَقَاسَات",
+  "root": "قيس",
+  "t": 2
+ },
+ {
+  "ar": "قُمَاش",
+  "en": "fabric, cloth",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَقْمِشَة",
+  "root": "قمش",
+  "t": 2
+ },
+ {
+  "ar": "قُطْن",
+  "en": "cotton",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "root": "قطن",
+  "t": 2
+ },
+ {
+  "ar": "صُوف",
+  "en": "wool",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "root": "صوف",
+  "t": 2
+ },
+ {
+  "ar": "حَرِير",
+  "en": "silk",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "root": "حرر",
+  "t": 2
+ },
+ {
+  "ar": "جِلْد",
+  "en": "leather",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "root": "جلد",
+  "t": 2
+ },
+ {
+  "ar": "كَتَّان",
+  "en": "linen",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "root": "كتن",
+  "t": 3
+ },
+ {
+  "ar": "مُوضَة",
+  "en": "fashion",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "زِيّ",
+  "en": "outfit, uniform",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَزْيَاء",
+  "root": "زيي",
+  "t": 3
+ },
+ {
+  "ar": "غَسِيل",
+  "en": "laundry",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "root": "غسل",
+  "t": 2
+ },
+ {
+  "ar": "مِكْوَاة",
+  "en": "iron (for clothes)",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "root": "كوي",
+  "t": 3
+ },
+ {
+  "ar": "خَيَّاط",
+  "en": "tailor",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "خَيَّاطُون",
+  "root": "خيط",
+  "t": 3
+ },
+ {
+  "ar": "خَيْط",
+  "en": "thread",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "خُيُوط",
+  "root": "خيط",
+  "t": 3
+ },
+ {
+  "ar": "اِرْتِدَاء",
+  "en": "wearing, putting on (clothes)",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "root": "ردي",
+  "t": 3
+ },
+ {
+  "ar": "غُرْفَة الْقِيَاس",
+  "en": "fitting room",
+  "th": "clothes",
+  "pos": "n",
+  "g": "f",
+  "root": "غرف",
+  "t": 3
+ },
+ {
+  "ar": "مَحَلّ مَلَابِس",
+  "en": "clothes shop",
+  "th": "clothes",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَحَلَّات مَلَابِس",
+  "root": "حلل",
+  "t": 2
+ },
+ {
+  "ar": "لَابِس",
+  "en": "wearing, dressed in",
+  "th": "clothes",
+  "pos": "adj",
+  "root": "لبس",
+  "t": 3
+ },
+ {
+  "ar": "حَافِي",
+  "en": "barefoot",
+  "th": "clothes",
+  "pos": "adj",
+  "root": "حفو",
+  "t": 3
+ },
+ {
+  "ar": "أَنِيق",
+  "en": "elegant, smart",
+  "th": "clothes",
+  "pos": "adj",
+  "root": "أنق",
+  "t": 2
+ },
+ {
+  "ar": "مُرَتَّب",
+  "en": "tidy, neat",
+  "th": "clothes",
+  "pos": "adj",
+  "root": "رتب",
+  "t": 2
+ },
+ {
+  "ar": "فَضْفَاض",
+  "en": "loose (clothing)",
+  "th": "clothes",
+  "pos": "adj",
+  "root": "فضفض",
+  "t": 3
+ },
+ {
+  "ar": "مُمَزَّق",
+  "en": "torn",
+  "th": "clothes",
+  "pos": "adj",
+  "root": "مزق",
+  "t": 3
+ }
+]

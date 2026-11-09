@@ -1,0 +1,1898 @@
+[
+ {
+  "ar": "مَدِينَة",
+  "en": "city, town",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "مُدُن",
+  "root": "مدن",
+  "t": 1
+ },
+ {
+  "ar": "قَرْيَة",
+  "en": "village",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "قُرَى",
+  "root": "قري",
+  "t": 1
+ },
+ {
+  "ar": "عَاصِمَة",
+  "en": "capital city",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "عَوَاصِم",
+  "root": "عصم",
+  "t": 1
+ },
+ {
+  "ar": "بَلَد",
+  "en": "country",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "بِلَاد",
+  "root": "بلد",
+  "t": 1
+ },
+ {
+  "ar": "دَوْلَة",
+  "en": "state, country",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "دُوَل",
+  "root": "دول",
+  "t": 2
+ },
+ {
+  "ar": "جِنْسِيَّة",
+  "en": "nationality",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "جِنْسِيَّات",
+  "root": "جنس",
+  "t": 2
+ },
+ {
+  "ar": "رِيف",
+  "en": "countryside",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَرْيَاف",
+  "root": "ريف",
+  "t": 2
+ },
+ {
+  "ar": "حَيّ",
+  "en": "neighbourhood",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَحْيَاء",
+  "root": "حيي",
+  "t": 2
+ },
+ {
+  "ar": "مَكَان",
+  "en": "place",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَمَاكِن",
+  "root": "كون",
+  "t": 1
+ },
+ {
+  "ar": "مَوْقِع",
+  "en": "location, site",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَوَاقِع",
+  "root": "وقع",
+  "t": 2
+ },
+ {
+  "ar": "مَرْكَز",
+  "en": "centre",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَرَاكِز",
+  "root": "ركز",
+  "t": 2
+ },
+ {
+  "ar": "مَرْكَز المَدِينَة",
+  "en": "town centre",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "ركز",
+  "t": 2
+ },
+ {
+  "ar": "شَارِع",
+  "en": "street",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "شَوَارِع",
+  "root": "شرع",
+  "t": 1
+ },
+ {
+  "ar": "طَرِيق",
+  "en": "road, way",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "طُرُق",
+  "root": "طرق",
+  "t": 1
+ },
+ {
+  "ar": "طَرِيق سَرِيع",
+  "en": "motorway",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "طُرُق سَرِيعَة",
+  "root": "طرق",
+  "t": 3
+ },
+ {
+  "ar": "مَيْدَان",
+  "en": "square (in a town)",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَيَادِين",
+  "root": "ميد",
+  "t": 2
+ },
+ {
+  "ar": "سَاحَة",
+  "en": "square, open space",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "سَاحَات",
+  "root": "سوح",
+  "t": 2
+ },
+ {
+  "ar": "جِسْر",
+  "en": "bridge",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "جُسُور",
+  "root": "جسر",
+  "t": 2
+ },
+ {
+  "ar": "رَصِيف",
+  "en": "pavement, platform",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَرْصِفَة",
+  "root": "رصف",
+  "t": 3
+ },
+ {
+  "ar": "تَقَاطُع",
+  "en": "crossroads",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "تَقَاطُعَات",
+  "root": "قطع",
+  "t": 3
+ },
+ {
+  "ar": "دَوَّار",
+  "en": "roundabout",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "دَوَّارَات",
+  "root": "دور",
+  "t": 3
+ },
+ {
+  "ar": "إِشَارَة مُرُور",
+  "en": "traffic light",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "إِشَارَات مُرُور",
+  "root": "شور",
+  "t": 2
+ },
+ {
+  "ar": "مُرُور",
+  "en": "traffic",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "مرر",
+  "t": 2
+ },
+ {
+  "ar": "زَحْمَة",
+  "en": "traffic jam, crowd",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "زحم",
+  "t": 2
+ },
+ {
+  "ar": "مَخْرَج",
+  "en": "exit",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَخَارِج",
+  "root": "خرج",
+  "t": 2
+ },
+ {
+  "ar": "مَسْجِد",
+  "en": "mosque",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَسَاجِد",
+  "root": "سجد",
+  "t": 1
+ },
+ {
+  "ar": "جَامِع",
+  "en": "main mosque",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "جَوَامِع",
+  "root": "جمع",
+  "t": 2
+ },
+ {
+  "ar": "كَنِيسَة",
+  "en": "church",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "كَنَائِس",
+  "root": "كنس",
+  "t": 2
+ },
+ {
+  "ar": "مُسْتَشْفَى",
+  "en": "hospital",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "مُسْتَشْفَيَات",
+  "root": "شفي",
+  "t": 1
+ },
+ {
+  "ar": "صَيْدَلِيَّة",
+  "en": "chemist's, pharmacy",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "صَيْدَلِيَّات",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "بَنْك",
+  "en": "bank",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "بُنُوك",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "بَرِيد",
+  "en": "post, mail",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "برد",
+  "t": 2
+ },
+ {
+  "ar": "مَكْتَب البَرِيد",
+  "en": "post office",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "كتب",
+  "t": 2
+ },
+ {
+  "ar": "مَكْتَبَة",
+  "en": "library, bookshop",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "مَكْتَبَات",
+  "root": "كتب",
+  "t": 1
+ },
+ {
+  "ar": "مَتْحَف",
+  "en": "museum",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَتَاحِف",
+  "root": "تحف",
+  "t": 2
+ },
+ {
+  "ar": "سِينِمَا",
+  "en": "cinema",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "مَسْرَح",
+  "en": "theatre",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَسَارِح",
+  "root": "سرح",
+  "t": 2
+ },
+ {
+  "ar": "مَلْعَب",
+  "en": "stadium, pitch",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَلَاعِب",
+  "root": "لعب",
+  "t": 2
+ },
+ {
+  "ar": "حَدِيقَة عَامَّة",
+  "en": "park",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "حَدَائِق عَامَّة",
+  "root": "حدق",
+  "t": 2
+ },
+ {
+  "ar": "سُوق",
+  "en": "market",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "أَسْوَاق",
+  "root": "سوق",
+  "t": 1
+ },
+ {
+  "ar": "مَحَلّ",
+  "en": "shop",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَحَلَّات",
+  "root": "حلل",
+  "t": 1
+ },
+ {
+  "ar": "دُكَّان",
+  "en": "small shop",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "دَكَاكِين",
+  "root": "دكن",
+  "t": 2
+ },
+ {
+  "ar": "مَتْجَر",
+  "en": "store",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَتَاجِر",
+  "root": "تجر",
+  "t": 2
+ },
+ {
+  "ar": "مَرْكَز تِجَارِيّ",
+  "en": "shopping centre",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَرَاكِز تِجَارِيَّة",
+  "root": "ركز",
+  "t": 2
+ },
+ {
+  "ar": "شُرْطَة",
+  "en": "police",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "شرط",
+  "t": 2
+ },
+ {
+  "ar": "مَرْكَز الشُّرْطَة",
+  "en": "police station",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "ركز",
+  "t": 2
+ },
+ {
+  "ar": "سِفَارَة",
+  "en": "embassy",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "سِفَارَات",
+  "root": "سفر",
+  "t": 3
+ },
+ {
+  "ar": "قَلْعَة",
+  "en": "castle, citadel",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "قِلَاع",
+  "root": "قلع",
+  "t": 3
+ },
+ {
+  "ar": "آثَار",
+  "en": "ruins, antiquities",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "أثر",
+  "t": 3
+ },
+ {
+  "ar": "شَاطِئ",
+  "en": "beach",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "شَوَاطِئ",
+  "root": "شطأ",
+  "t": 2
+ },
+ {
+  "ar": "زَبُون",
+  "en": "customer",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "زَبَائِن",
+  "root": "زبن",
+  "t": 2
+ },
+ {
+  "ar": "بَائِع",
+  "en": "seller, shop assistant",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "بَاعَة",
+  "root": "بيع",
+  "t": 2
+ },
+ {
+  "ar": "شِرَاء",
+  "en": "buying",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "شري",
+  "t": 2
+ },
+ {
+  "ar": "بَيْع",
+  "en": "selling",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "بيع",
+  "t": 2
+ },
+ {
+  "ar": "مَال",
+  "en": "money",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَمْوَال",
+  "root": "مول",
+  "t": 1
+ },
+ {
+  "ar": "نُقُود",
+  "en": "cash",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "نقد",
+  "t": 2
+ },
+ {
+  "ar": "خِدْمَة",
+  "en": "service",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "خِدْمَات",
+  "root": "خدم",
+  "t": 2
+ },
+ {
+  "ar": "يَمِين",
+  "en": "right (side)",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "يمن",
+  "t": 1
+ },
+ {
+  "ar": "يَسَار",
+  "en": "left (side)",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "يسر",
+  "t": 1
+ },
+ {
+  "ar": "شَمَال",
+  "en": "north",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "شمل",
+  "t": 2
+ },
+ {
+  "ar": "جَنُوب",
+  "en": "south",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "جنب",
+  "t": 2
+ },
+ {
+  "ar": "شَرْق",
+  "en": "east",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "شرق",
+  "t": 2
+ },
+ {
+  "ar": "غَرْب",
+  "en": "west",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "غرب",
+  "t": 2
+ },
+ {
+  "ar": "اِتِّجَاه",
+  "en": "direction",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "اِتِّجَاهَات",
+  "root": "وجه",
+  "t": 2
+ },
+ {
+  "ar": "خَرِيطَة",
+  "en": "map",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "خَرَائِط",
+  "root": "خرط",
+  "t": 1
+ },
+ {
+  "ar": "مَسَافَة",
+  "en": "distance",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "مَسَافَات",
+  "root": "سوف",
+  "t": 2
+ },
+ {
+  "ar": "كِيلُومِتْر",
+  "en": "kilometre",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "كِيلُومِتْرَات",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "مِتْر",
+  "en": "metre",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَمْتَار",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "أَمَامَ",
+  "en": "in front of",
+  "th": "town",
+  "pos": "prep",
+  "root": "أمم",
+  "t": 1
+ },
+ {
+  "ar": "خَلْفَ",
+  "en": "behind",
+  "th": "town",
+  "pos": "prep",
+  "root": "خلف",
+  "t": 1
+ },
+ {
+  "ar": "بَيْنَ",
+  "en": "between",
+  "th": "town",
+  "pos": "prep",
+  "root": "بين",
+  "t": 1
+ },
+ {
+  "ar": "بِجَانِبِ",
+  "en": "next to",
+  "th": "town",
+  "pos": "prep",
+  "root": "جنب",
+  "t": 1
+ },
+ {
+  "ar": "قُرْبَ",
+  "en": "near",
+  "th": "town",
+  "pos": "prep",
+  "root": "قرب",
+  "t": 1
+ },
+ {
+  "ar": "فَوْقَ",
+  "en": "above, on top of",
+  "th": "town",
+  "pos": "prep",
+  "root": "فوق",
+  "t": 1
+ },
+ {
+  "ar": "تَحْتَ",
+  "en": "under",
+  "th": "town",
+  "pos": "prep",
+  "root": "تحت",
+  "t": 1
+ },
+ {
+  "ar": "دَاخِلَ",
+  "en": "inside",
+  "th": "town",
+  "pos": "prep",
+  "root": "دخل",
+  "t": 2
+ },
+ {
+  "ar": "خَارِجَ",
+  "en": "outside",
+  "th": "town",
+  "pos": "prep",
+  "root": "خرج",
+  "t": 2
+ },
+ {
+  "ar": "حَوْلَ",
+  "en": "around",
+  "th": "town",
+  "pos": "prep",
+  "root": "حول",
+  "t": 2
+ },
+ {
+  "ar": "مُقَابِلَ",
+  "en": "opposite",
+  "th": "town",
+  "pos": "prep",
+  "root": "قبل",
+  "t": 2
+ },
+ {
+  "ar": "حَتَّى",
+  "en": "as far as, until",
+  "th": "town",
+  "pos": "prep",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "هُنَا",
+  "en": "here",
+  "th": "town",
+  "pos": "adv",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "هُنَاكَ",
+  "en": "there",
+  "th": "town",
+  "pos": "adv",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "مُبَاشَرَةً",
+  "en": "straight on, directly",
+  "th": "town",
+  "pos": "adv",
+  "root": "بشر",
+  "t": 2
+ },
+ {
+  "ar": "سَيْرًا عَلَى الأَقْدَام",
+  "en": "on foot",
+  "th": "town",
+  "pos": "adv",
+  "root": "سير",
+  "t": 2
+ },
+ {
+  "ar": "بَعِيد",
+  "en": "far",
+  "th": "town",
+  "pos": "adj",
+  "root": "بعد",
+  "t": 1
+ },
+ {
+  "ar": "قَرِيب",
+  "en": "near, close",
+  "th": "town",
+  "pos": "adj",
+  "root": "قرب",
+  "t": 1
+ },
+ {
+  "ar": "مَشْي",
+  "en": "walking",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "مشي",
+  "t": 2
+ },
+ {
+  "ar": "سَيَّارَة",
+  "en": "car",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "سَيَّارَات",
+  "root": "سير",
+  "t": 1
+ },
+ {
+  "ar": "حَافِلَة",
+  "en": "bus",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "حَافِلَات",
+  "root": "حفل",
+  "t": 1
+ },
+ {
+  "ar": "بَاص",
+  "en": "bus (everyday word)",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "بَاصَات",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "قِطَار",
+  "en": "train",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "قِطَارَات",
+  "root": "قطر",
+  "t": 1
+ },
+ {
+  "ar": "مِتْرُو",
+  "en": "underground, metro",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "طَائِرَة",
+  "en": "plane",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "طَائِرَات",
+  "root": "طير",
+  "t": 1
+ },
+ {
+  "ar": "سَفِينَة",
+  "en": "ship",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "سُفُن",
+  "root": "سفن",
+  "t": 2
+ },
+ {
+  "ar": "قَارِب",
+  "en": "boat",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "قَوَارِب",
+  "root": "قرب",
+  "t": 2
+ },
+ {
+  "ar": "دَرَّاجَة",
+  "en": "bicycle",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "دَرَّاجَات",
+  "root": "درج",
+  "t": 2
+ },
+ {
+  "ar": "دَرَّاجَة نَارِيَّة",
+  "en": "motorbike",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "دَرَّاجَات نَارِيَّة",
+  "root": "درج",
+  "t": 3
+ },
+ {
+  "ar": "سَيَّارَة أُجْرَة",
+  "en": "taxi",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "سَيَّارَات أُجْرَة",
+  "root": "سير",
+  "t": 1
+ },
+ {
+  "ar": "تَاكْسِي",
+  "en": "taxi (everyday word)",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "شَاحِنَة",
+  "en": "lorry, truck",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "شَاحِنَات",
+  "root": "شحن",
+  "t": 2
+ },
+ {
+  "ar": "مُوَاصَلَات",
+  "en": "transport",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "وصل",
+  "t": 2
+ },
+ {
+  "ar": "خَطّ",
+  "en": "line, route",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "خُطُوط",
+  "root": "خطط",
+  "t": 2
+ },
+ {
+  "ar": "مَحَطَّة",
+  "en": "station",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "مَحَطَّات",
+  "root": "حطط",
+  "t": 1
+ },
+ {
+  "ar": "مَحَطَّة القِطَار",
+  "en": "railway station",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "حطط",
+  "t": 2
+ },
+ {
+  "ar": "مَحَطَّة وَقُود",
+  "en": "petrol station",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "مَحَطَّات وَقُود",
+  "root": "حطط",
+  "t": 3
+ },
+ {
+  "ar": "مَوْقِف",
+  "en": "stop (bus)",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَوَاقِف",
+  "root": "وقف",
+  "t": 2
+ },
+ {
+  "ar": "مَوْقِف سَيَّارَات",
+  "en": "car park",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَوَاقِف سَيَّارَات",
+  "root": "وقف",
+  "t": 3
+ },
+ {
+  "ar": "سَائِق",
+  "en": "driver",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "سَائِقُون",
+  "root": "سوق",
+  "t": 1
+ },
+ {
+  "ar": "رَاكِب",
+  "en": "passenger",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "رُكَّاب",
+  "root": "ركب",
+  "t": 2
+ },
+ {
+  "ar": "قِيَادَة",
+  "en": "driving",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "قود",
+  "t": 2
+ },
+ {
+  "ar": "رُخْصَة قِيَادَة",
+  "en": "driving licence",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "رُخَص قِيَادَة",
+  "root": "رخص",
+  "t": 2
+ },
+ {
+  "ar": "عَجَلَة",
+  "en": "wheel",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "عَجَلَات",
+  "root": "عجل",
+  "t": 2
+ },
+ {
+  "ar": "إِطَار",
+  "en": "tyre",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "إِطَارَات",
+  "root": "أطر",
+  "t": 3
+ },
+ {
+  "ar": "فَرَامِل",
+  "en": "brakes",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "حِزَام الأَمَان",
+  "en": "seat belt",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "حزم",
+  "t": 3
+ },
+ {
+  "ar": "بَنْزِين",
+  "en": "petrol",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "وَقُود",
+  "en": "fuel",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "وقد",
+  "t": 3
+ },
+ {
+  "ar": "سُرْعَة",
+  "en": "speed",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "سرع",
+  "t": 2
+ },
+ {
+  "ar": "حَادِث",
+  "en": "accident",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "حَوَادِث",
+  "root": "حدث",
+  "t": 2
+ },
+ {
+  "ar": "سَفَر",
+  "en": "travel",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "أَسْفَار",
+  "root": "سفر",
+  "t": 1
+ },
+ {
+  "ar": "رِحْلَة",
+  "en": "trip, journey, flight",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "رِحَلَات",
+  "root": "رحل",
+  "t": 1
+ },
+ {
+  "ar": "مُسَافِر",
+  "en": "traveller",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "مُسَافِرُون",
+  "root": "سفر",
+  "t": 2
+ },
+ {
+  "ar": "سِيَاحَة",
+  "en": "tourism",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "سيح",
+  "t": 2
+ },
+ {
+  "ar": "سَائِح",
+  "en": "tourist",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "سُيَّاح",
+  "root": "سيح",
+  "t": 2
+ },
+ {
+  "ar": "مُرْشِد سِيَاحِيّ",
+  "en": "tour guide",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "رشد",
+  "t": 3
+ },
+ {
+  "ar": "إِجَازَة",
+  "en": "holiday, leave",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "إِجَازَات",
+  "root": "جوز",
+  "t": 1
+ },
+ {
+  "ar": "عُطْلَة",
+  "en": "holiday, day off",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "عُطَل",
+  "root": "عطل",
+  "t": 1
+ },
+ {
+  "ar": "تَذْكِرَة",
+  "en": "ticket",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "تَذَاكِر",
+  "root": "ذكر",
+  "t": 1
+ },
+ {
+  "ar": "مَوْعِد",
+  "en": "appointment, set time",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَوَاعِيد",
+  "root": "وعد",
+  "t": 2
+ },
+ {
+  "ar": "تَأْخِير",
+  "en": "delay",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "أخر",
+  "t": 3
+ },
+ {
+  "ar": "وُصُول",
+  "en": "arrival",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "وصل",
+  "t": 2
+ },
+ {
+  "ar": "مُغَادَرَة",
+  "en": "departure",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "غدر",
+  "t": 2
+ },
+ {
+  "ar": "عَوْدَة",
+  "en": "return",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "عود",
+  "t": 2
+ },
+ {
+  "ar": "مَطَار",
+  "en": "airport",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَطَارَات",
+  "root": "طير",
+  "t": 1
+ },
+ {
+  "ar": "مِينَاء",
+  "en": "port, harbour",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "مَوَانِئ",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "طَيَّار",
+  "en": "pilot",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "طَيَّارُون",
+  "root": "طير",
+  "t": 3
+ },
+ {
+  "ar": "مُضِيف",
+  "en": "flight attendant, host",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "مُضِيفُون",
+  "root": "ضيف",
+  "t": 3
+ },
+ {
+  "ar": "إِقْلَاع",
+  "en": "take off",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "قلع",
+  "t": 3
+ },
+ {
+  "ar": "هُبُوط",
+  "en": "landing",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "هبط",
+  "t": 3
+ },
+ {
+  "ar": "جَوَاز سَفَر",
+  "en": "passport",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "جَوَازَات سَفَر",
+  "root": "جوز",
+  "t": 1
+ },
+ {
+  "ar": "تَأْشِيرَة",
+  "en": "visa",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "تَأْشِيرَات",
+  "root": "أشر",
+  "t": 2
+ },
+ {
+  "ar": "جُمْرُك",
+  "en": "customs",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "جَمَارِك",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "حَقِيبَة",
+  "en": "bag, suitcase",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "pl": "حَقَائِب",
+  "root": "حقب",
+  "t": 1
+ },
+ {
+  "ar": "أَمْتِعَة",
+  "en": "luggage",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "متع",
+  "t": 2
+ },
+ {
+  "ar": "فُنْدُق",
+  "en": "hotel",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "فَنَادِق",
+  "root": "فندق",
+  "t": 1
+ },
+ {
+  "ar": "اِسْتِقْبَال",
+  "en": "reception",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "قبل",
+  "t": 2
+ },
+ {
+  "ar": "حَجْز",
+  "en": "booking, reservation",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "pl": "حُجُوزَات",
+  "root": "حجز",
+  "t": 2
+ },
+ {
+  "ar": "إِقَامَة",
+  "en": "stay, residence",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "قوم",
+  "t": 2
+ },
+ {
+  "ar": "مُزْدَحِم",
+  "en": "crowded",
+  "th": "town",
+  "pos": "adj",
+  "root": "زحم",
+  "t": 2
+ },
+ {
+  "ar": "سَرِيع",
+  "en": "fast",
+  "th": "town",
+  "pos": "adj",
+  "root": "سرع",
+  "t": 1
+ },
+ {
+  "ar": "بَطِيء",
+  "en": "slow",
+  "th": "town",
+  "pos": "adj",
+  "root": "بطأ",
+  "t": 1
+ },
+ {
+  "ar": "مُتَأَخِّر",
+  "en": "late",
+  "th": "town",
+  "pos": "adj",
+  "root": "أخر",
+  "t": 2
+ },
+ {
+  "ar": "أَجْنَبِيّ",
+  "en": "foreign, foreigner",
+  "th": "town",
+  "pos": "adj",
+  "root": "جنب",
+  "t": 2
+ },
+ {
+  "ar": "دَوْلِيّ",
+  "en": "international",
+  "th": "town",
+  "pos": "adj",
+  "root": "دول",
+  "t": 3
+ },
+ {
+  "ar": "مِصْر",
+  "en": "Egypt",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "السُّعُودِيَّة",
+  "en": "Saudi Arabia",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "الأُرْدُنّ",
+  "en": "Jordan",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "لُبْنَان",
+  "en": "Lebanon",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "سُورِيَّة",
+  "en": "Syria",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2,
+  "alt": [
+   "سوريا"
+  ]
+ },
+ {
+  "ar": "العِرَاق",
+  "en": "Iraq",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "فِلَسْطِين",
+  "en": "Palestine",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "اليَمَن",
+  "en": "Yemen",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "عُمَان",
+  "en": "Oman",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "الكُوَيْت",
+  "en": "Kuwait",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "قَطَر",
+  "en": "Qatar",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "البَحْرَيْن",
+  "en": "Bahrain",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "الإِمَارَات",
+  "en": "the Emirates",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "المَغْرِب",
+  "en": "Morocco",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "الجَزَائِر",
+  "en": "Algeria",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "تُونِس",
+  "en": "Tunisia",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "لِيبِيَا",
+  "en": "Libya",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "السُّودَان",
+  "en": "Sudan",
+  "th": "town",
+  "pos": "n",
+  "g": "m",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "فَرَنْسَا",
+  "en": "France",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "إِسْبَانِيَا",
+  "en": "Spain",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "أَلْمَانِيَا",
+  "en": "Germany",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "إِيطَالِيَا",
+  "en": "Italy",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "بِرِيطَانِيَا",
+  "en": "Britain",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "إِنْجِلْتِرَا",
+  "en": "England",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "أَيْرْلَنْدَا",
+  "en": "Ireland",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "أَمْرِيكَا",
+  "en": "America",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "كَنَدَا",
+  "en": "Canada",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "الصِّين",
+  "en": "China",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "اليَابَان",
+  "en": "Japan",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "الهِنْد",
+  "en": "India",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "تُرْكِيَا",
+  "en": "Turkey (country)",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "رُوسِيَا",
+  "en": "Russia",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "أُسْتُرَالْيَا",
+  "en": "Australia",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "القَاهِرَة",
+  "en": "Cairo",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 1
+ },
+ {
+  "ar": "الرِّيَاض",
+  "en": "Riyadh",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "عَمَّان",
+  "en": "Amman",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "بَيْرُوت",
+  "en": "Beirut",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "دِمَشْق",
+  "en": "Damascus",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "بَغْدَاد",
+  "en": "Baghdad",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "القُدْس",
+  "en": "Jerusalem",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "الجَزَائِر",
+  "en": "Algiers",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "تُونِس",
+  "en": "Tunis",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "الدَّوْحَة",
+  "en": "Doha",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "أَبُو ظَبْي",
+  "en": "Abu Dhabi",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 3
+ },
+ {
+  "ar": "دُبَيّ",
+  "en": "Dubai",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "مَكَّة",
+  "en": "Mecca",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "لَنْدَن",
+  "en": "London",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "بَارِيس",
+  "en": "Paris",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 2
+ },
+ {
+  "ar": "دُبْلِن",
+  "en": "Dublin",
+  "th": "town",
+  "pos": "n",
+  "g": "f",
+  "root": "",
+  "t": 3
+ }
+]
