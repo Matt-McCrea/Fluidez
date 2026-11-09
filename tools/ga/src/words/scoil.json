@@ -1,102 +1,610 @@
 [
-  {"ga":"scoil","en":"school","th":"scoil","t":1},
-  {"ga":"bunscoil","en":"primary school","th":"scoil","t":2},
-  {"ga":"meánscoil","en":"secondary school","th":"scoil","t":2},
-  {"ga":"ollscoil","en":"university","th":"scoil","t":2},
-  {"ga":"coláiste","en":"college","th":"scoil","t":2},
-  {"ga":"naíonra","en":"Irish preschool","th":"scoil","t":3},
-  {"ga":"rang","en":"class","th":"scoil","t":1},
-  {"ga":"seomra ranga","en":"classroom","th":"scoil","t":2},
-  {"ga":"príomhoide","en":"principal","th":"scoil","t":2},
-  {"ga":"dalta","en":"pupil","th":"scoil","t":1},
-  {"ga":"mac léinn","en":"student","th":"scoil","t":1},
-  {"ga":"scoláire","en":"scholar","th":"scoil","t":3},
-  {"ga":"ollamh","en":"professor","th":"scoil","t":2},
-  {"ga":"léachtóir","en":"lecturer","th":"scoil","t":2},
-  {"ga":"léacht","en":"lecture","th":"scoil","t":2},
-  {"ga":"ceacht","en":"lesson","th":"scoil","t":1},
-  {"ga":"obair bhaile","en":"homework","th":"scoil","t":1},
-  {"ga":"scrúdú","en":"exam","th":"scoil","t":1},
-  {"ga":"tástáil","en":"test","th":"scoil","t":2},
-  {"ga":"marc","en":"mark","th":"scoil","t":2},
-  {"ga":"grád","en":"grade","th":"scoil","t":2},
-  {"ga":"ceist","en":"question","th":"scoil","t":1},
-  {"ga":"freagra","en":"answer","th":"scoil","t":1},
-  {"ga":"leabhar","en":"book","th":"scoil","t":1},
-  {"ga":"cóipleabhar","en":"copybook, exercise book","th":"scoil","t":2},
-  {"ga":"leathanach","en":"page","th":"scoil","t":1},
-  {"ga":"peann","en":"pen","th":"scoil","t":1},
-  {"ga":"peann luaidhe","en":"pencil","th":"scoil","t":1},
-  {"ga":"scriosán","en":"rubber, eraser","th":"scoil","t":2},
-  {"ga":"rialóir","en":"ruler","th":"scoil","t":2},
-  {"ga":"mála scoile","en":"schoolbag","th":"scoil","t":1},
-  {"ga":"páipéar","en":"paper","th":"scoil","t":1},
-  {"ga":"clár bán","en":"whiteboard","th":"scoil","t":2},
-  {"ga":"clár dubh","en":"blackboard","th":"scoil","t":3},
-  {"ga":"foclóir","en":"dictionary","th":"scoil","t":1},
-  {"ga":"staidéar","en":"studying","th":"scoil","t":2},
-  {"ga":"oideachas","en":"education","th":"scoil","t":2},
-  {"ga":"eolas","en":"knowledge, information","th":"scoil","t":2},
-  {"ga":"matamaitic","en":"maths","th":"scoil","t":1},
-  {"ga":"eolaíocht","en":"science","th":"scoil","t":1},
-  {"ga":"stair","en":"history","th":"scoil","t":1},
-  {"ga":"tíreolaíocht","en":"geography","th":"scoil","t":2},
-  {"ga":"ealaín","en":"art","th":"scoil","t":1},
-  {"ga":"corpoideachas","en":"PE (physical education)","th":"scoil","t":2},
-  {"ga":"bitheolaíocht","en":"biology","th":"scoil","t":2},
-  {"ga":"ceimic","en":"chemistry","th":"scoil","t":2},
-  {"ga":"fisic","en":"physics","th":"scoil","t":2},
-  {"ga":"teicneolaíocht","en":"technology","th":"scoil","t":2},
-  {"ga":"creideamh","en":"faith, belief","th":"scoil","t":2},
-  {"ga":"Ardteistiméireacht","en":"Leaving Cert","th":"scoil","t":2,"g":"f"},
-  {"ga":"Teastas Sóisearach","en":"Junior Cert","th":"scoil","t":3},
-  {"ga":"teastas","en":"certificate","th":"scoil","t":2},
-  {"ga":"céim","en":"step, degree","th":"scoil","t":2},
-  {"ga":"céimí","en":"graduate","th":"scoil","t":3},
-  {"ga":"dioplóma","en":"diploma","th":"scoil","t":3},
-  {"ga":"siollabas","en":"syllabus","th":"scoil","t":3},
-  {"ga":"curaclam","en":"curriculum","th":"scoil","t":3},
-  {"ga":"taighde","en":"research","th":"scoil","t":2},
-  {"ga":"tionscadal","en":"project","th":"scoil","t":2},
-  {"ga":"aiste","en":"essay","th":"scoil","t":2},
-  {"ga":"sampla","en":"example","th":"scoil","t":2},
-  {"ga":"míniú","en":"explanation","th":"scoil","t":2},
-  {"ga":"ciall","en":"sense","th":"scoil","t":2},
-  {"ga":"tuiscint","en":"understanding","th":"scoil","t":2},
-  {"ga":"botún","en":"mistake","th":"scoil","t":1},
-  {"ga":"ceart","en":"right, correct","th":"scoil","t":1,"pos":"adj"},
-  {"ga":"mícheart","en":"wrong","th":"scoil","t":1,"pos":"adj"},
-  {"ga":"cuimhne","en":"memory","th":"scoil","t":2},
-  {"ga":"intinn","en":"mind","th":"scoil","t":2},
-  {"ga":"smaoineamh","en":"thought","th":"scoil","t":2},
-  {"ga":"idé","en":"idea","th":"scoil","t":2},
-  {"ga":"saotharlann","en":"laboratory","th":"scoil","t":2},
-  {"ga":"sos","en":"a break, pause","th":"scoil","t":1},
-  {"ga":"léamh","en":"reading","th":"scoil","t":2},
-  {"ga":"scríbhneoireacht","en":"writing","th":"scoil","t":2},
-  {"ga":"foghlaimeoir","en":"learner","th":"scoil","t":2},
-  {"ga":"múinteoireacht","en":"teaching","th":"scoil","t":3},
-  {"ga":"téarma","en":"term","th":"scoil","t":2},
-  {"ga":"éide scoile","en":"school uniform","th":"scoil","t":2},
-  {"ga":"ríomheolaíocht","en":"computer science","th":"scoil","t":3},
-  {"ga":"eacnamaíocht bhaile","en":"home economics","th":"scoil","t":3},
-  {"ga":"ceol","en":"music","th":"scoil","t":1},
-  {"ga":"ceardlann","en":"workshop","th":"scoil","t":3},
-  {"ga":"cáilíocht","en":"qualification","th":"scoil","t":3},
-  {"ga":"scoláireacht","en":"scholarship","th":"scoil","t":3},
-  {"ga":"eolach","en":"knowledgeable","th":"scoil","t":3,"pos":"adj"},
-  {"ga":"cliste","en":"clever, smart","th":"scoil","t":1,"pos":"adj"},
-  {"ga":"dícheallach","en":"hardworking","th":"scoil","t":2,"pos":"adj"},
-  {"ga":"ríomhchlár","en":"computer program","th":"scoil","t":3},
-  {"ga":"leabharlannaí","en":"librarian","th":"scoil","t":3},
-  {"ga":"dán","en":"poem","th":"scoil","t":2},
-  {"ga":"filíocht","en":"poetry","th":"scoil","t":2},
-  {"ga":"fealsúnacht","en":"philosophy","th":"scoil","t":3},
-  {"ga":"síceolaíocht","en":"psychology","th":"scoil","t":3},
-  {"ga":"staraí","en":"historian","th":"scoil","t":3},
-  {"ga":"eolaíoch","en":"scientific","th":"scoil","t":3,"pos":"adj"},
-  {"ga":"acadúil","en":"academic","th":"scoil","t":3,"pos":"adj"},
-  {"ga":"uimhríocht","en":"arithmetic","th":"scoil","t":3},
-  {"ga":"ailgéabar","en":"algebra","th":"scoil","t":3},
-  {"ga":"geoiméadracht","en":"geometry","th":"scoil","t":3}
+ {
+  "ga": "scoil",
+  "en": "school",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "bunscoil",
+  "en": "primary school",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "meánscoil",
+  "en": "secondary school",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "ollscoil",
+  "en": "university",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "coláiste",
+  "en": "college",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "naíonra",
+  "en": "Irish preschool",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "rang",
+  "en": "class",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "seomra ranga",
+  "en": "classroom",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "príomhoide",
+  "en": "principal",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "dalta",
+  "en": "pupil",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "mac léinn",
+  "en": "student",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "scoláire",
+  "en": "scholar",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "ollamh",
+  "en": "professor",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "léachtóir",
+  "en": "lecturer",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "léacht",
+  "en": "lecture",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "ceacht",
+  "en": "lesson",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "obair bhaile",
+  "en": "homework",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "scrúdú",
+  "en": "exam",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "tástáil",
+  "en": "test",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "marc",
+  "en": "mark",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "grád",
+  "en": "grade",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "ceist",
+  "en": "question",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "freagra",
+  "en": "answer",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "leabhar",
+  "en": "book",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "cóipleabhar",
+  "en": "copybook, exercise book",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "leathanach",
+  "en": "page",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "peann",
+  "en": "pen",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "peann luaidhe",
+  "en": "pencil",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "scriosán",
+  "en": "rubber, eraser",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "rialóir",
+  "en": "ruler",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "mála scoile",
+  "en": "schoolbag",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "páipéar",
+  "en": "paper",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "clár bán",
+  "en": "whiteboard",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "clár dubh",
+  "en": "blackboard",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "foclóir",
+  "en": "dictionary",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "staidéar",
+  "en": "studying",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "oideachas",
+  "en": "education",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "eolas",
+  "en": "knowledge, information",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "matamaitic",
+  "en": "maths",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "eolaíocht",
+  "en": "science",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "stair",
+  "en": "history",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "tíreolaíocht",
+  "en": "geography",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "ealaín",
+  "en": "art",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "corpoideachas",
+  "en": "PE (physical education)",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "bitheolaíocht",
+  "en": "biology",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "ceimic",
+  "en": "chemistry",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "fisic",
+  "en": "physics",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "teicneolaíocht",
+  "en": "technology",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "creideamh",
+  "en": "faith, belief",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "Ardteistiméireacht",
+  "en": "Leaving Cert",
+  "th": "scoil",
+  "t": 2,
+  "g": "f"
+ },
+ {
+  "ga": "Teastas Sóisearach",
+  "en": "Junior Cert",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "teastas",
+  "en": "certificate",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "céim",
+  "en": "step, degree",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "céimí",
+  "en": "graduate",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "dioplóma",
+  "en": "diploma",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "siollabas",
+  "en": "syllabus",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "curaclam",
+  "en": "curriculum",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "taighde",
+  "en": "research",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "tionscadal",
+  "en": "project",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "aiste",
+  "en": "essay",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "sampla",
+  "en": "example",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "míniú",
+  "en": "explanation",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "ciall",
+  "en": "sense",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "tuiscint",
+  "en": "understanding",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "botún",
+  "en": "mistake",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "ceart",
+  "en": "right, correct",
+  "th": "scoil",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "mícheart",
+  "en": "wrong",
+  "th": "scoil",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "cuimhne",
+  "en": "memory",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "intinn",
+  "en": "mind",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "smaoineamh",
+  "en": "thought",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "idé",
+  "en": "idea",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "saotharlann",
+  "en": "laboratory",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "sos",
+  "en": "a break, pause",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "léamh",
+  "en": "reading",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "scríbhneoireacht",
+  "en": "writing",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "foghlaimeoir",
+  "en": "learner",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "múinteoireacht",
+  "en": "teaching",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "téarma",
+  "en": "term",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "éide scoile",
+  "en": "school uniform",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "ríomheolaíocht",
+  "en": "computer science",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "eacnamaíocht bhaile",
+  "en": "home economics",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "ceol",
+  "en": "music",
+  "th": "scoil",
+  "t": 1
+ },
+ {
+  "ga": "ceardlann",
+  "en": "workshop",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "cáilíocht",
+  "en": "qualification",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "scoláireacht",
+  "en": "scholarship",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "eolach",
+  "en": "knowledgeable",
+  "th": "scoil",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "cliste",
+  "en": "clever, smart",
+  "th": "scoil",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "dícheallach",
+  "en": "hardworking",
+  "th": "scoil",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "ríomhchlár",
+  "en": "computer program",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "leabharlannaí",
+  "en": "librarian",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "dán",
+  "en": "poem",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "filíocht",
+  "en": "poetry",
+  "th": "scoil",
+  "t": 2
+ },
+ {
+  "ga": "fealsúnacht",
+  "en": "philosophy",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "síceolaíocht",
+  "en": "psychology",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "staraí",
+  "en": "historian",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "eolaíoch",
+  "en": "scientific",
+  "th": "scoil",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "acadúil",
+  "en": "academic",
+  "th": "scoil",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "uimhríocht",
+  "en": "arithmetic",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "ailgéabar",
+  "en": "algebra",
+  "th": "scoil",
+  "t": 3
+ },
+ {
+  "ga": "geoiméadracht",
+  "en": "geometry",
+  "th": "scoil",
+  "t": 3
+ }
 ]

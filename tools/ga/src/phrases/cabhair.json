@@ -1,69 +1,535 @@
 [
-{ "ga": "Cabhair!", "en": "Help!", "alt": ["Cuidiú!", "Fóir orm!"], "th": "cabhair", "b": "A1", "t": 1 },
-{ "ga": "An féidir leat cabhrú liom?", "en": "Can you help me?", "alt": ["An féidir leat cuidiú liom?"], "th": "cabhair", "b": "A1", "t": 1 },
-{ "ga": "Tá cabhair uaim.", "en": "I need help.", "alt": ["Teastaíonn cabhair uaim."], "th": "cabhair", "b": "A1", "t": 1, "n": "Literally: help is wanted from me." },
-{ "ga": "Cá bhfuil an leithreas?", "en": "Where's the toilet?", "alt": ["Cá bhfuil na leithris?"], "th": "cabhair", "b": "A1", "t": 1 },
-{ "ga": "Tá mé caillte.", "en": "I'm lost.", "alt": ["Táim caillte."], "th": "cabhair", "b": "A1", "t": 1 },
-{ "ga": "Cas ar chlé.", "en": "Turn left.", "th": "cabhair", "b": "A1", "t": 1 },
-{ "ga": "Cas ar dheis.", "en": "Turn right.", "th": "cabhair", "b": "A1", "t": 1 },
-{ "ga": "Téigh díreach ar aghaidh.", "en": "Go straight on.", "alt": ["Lean ort díreach ar aghaidh."], "th": "cabhair", "b": "A1", "t": 1 },
-{ "ga": "Tá sé thall ansin.", "en": "It's over there.", "th": "cabhair", "b": "A1", "t": 1 },
-{ "ga": "Tá mé tinn.", "en": "I'm sick.", "alt": ["Táim tinn."], "th": "cabhair", "b": "A1", "t": 1 },
-{ "ga": "Tá tinneas cinn orm.", "en": "I have a headache.", "th": "cabhair", "b": "A1", "t": 1, "n": "Literally: there is a sickness of head on me." },
-{ "ga": "Tá dochtúir uaim.", "en": "I need a doctor.", "alt": ["Teastaíonn dochtúir uaim."], "th": "cabhair", "b": "A1", "t": 1 },
-{ "ga": "An bhfuil tú ceart go leor?", "en": "Are you OK?", "th": "cabhair", "b": "A1", "t": 1 },
-{ "ga": "Cad a tharla?", "en": "What happened?", "alt": ["Céard a tharla?"], "th": "cabhair", "b": "A1", "t": 1 },
-{ "ga": "Bí cúramach!", "en": "Be careful!", "th": "cabhair", "b": "A1", "t": 1 },
-{ "ga": "Stad!", "en": "Stop!", "alt": ["Stop!"], "th": "cabhair", "b": "A1", "t": 1 },
-{ "ga": "Tá sé ar chlé.", "en": "It's on the left.", "th": "cabhair", "b": "A1", "t": 2 },
-{ "ga": "Tá sé ar dheis.", "en": "It's on the right.", "th": "cabhair", "b": "A1", "t": 2 },
-{ "ga": "An bhfuil sé i bhfad as seo?", "en": "Is it far from here?", "alt": ["An bhfuil sé i bhfad ó seo?"], "th": "cabhair", "b": "A1", "t": 2 },
-{ "ga": "Níl sé i bhfad.", "en": "It's not far.", "th": "cabhair", "b": "A1", "t": 2 },
-{ "ga": "Tá sé cóngarach.", "en": "It's near.", "th": "cabhair", "b": "A2", "t": 2 },
-{ "ga": "Tá sé in aice leis an mbanc.", "en": "It's beside the bank.", "th": "cabhair", "b": "A2", "t": 2 },
-{ "ga": "Tá sé timpeall an chúinne.", "en": "It's around the corner.", "th": "cabhair", "b": "A2", "t": 2 },
-{ "ga": "Lean an bóthar seo.", "en": "Follow this road.", "th": "cabhair", "b": "A2", "t": 2 },
-{ "ga": "Cá bhfuil an stáisiún traenach?", "en": "Where's the train station?", "alt": ["Cá bhfuil stáisiún na traenach?"], "th": "cabhair", "b": "A1", "t": 2 },
-{ "ga": "Cá bhfuil an stad bus?", "en": "Where's the bus stop?", "alt": ["Cá bhfuil stad an bhus?"], "th": "cabhair", "b": "A1", "t": 2 },
-{ "ga": "Cá bhfuil an t-óstán?", "en": "Where's the hotel?", "th": "cabhair", "b": "A1", "t": 2 },
-{ "ga": "Cá bhfuil an banc?", "en": "Where's the bank?", "th": "cabhair", "b": "A1", "t": 2 },
-{ "ga": "Cén bealach go lár na cathrach?", "en": "Which way to the city centre?", "th": "cabhair", "b": "A2", "t": 2 },
-{ "ga": "Tá mé ag lorg an stáisiúin.", "en": "I'm looking for the station.", "alt": ["Táim ag lorg an stáisiúin."], "th": "cabhair", "b": "A2", "t": 2, "n": "Ag lorg takes the genitive: an stáisiún, ag lorg an stáisiúin." },
-{ "ga": "An bhfuil a fhios agat cá bhfuil sé?", "en": "Do you know where it is?", "th": "cabhair", "b": "A2", "t": 2 },
-{ "ga": "Cá bhfuil tú ag dul?", "en": "Where are you going?", "th": "cabhair", "b": "A1", "t": 2 },
-{ "ga": "An bhfuil leithreas anseo?", "en": "Is there a toilet here?", "th": "cabhair", "b": "A1", "t": 2 },
-{ "ga": "Fan anseo.", "en": "Wait here.", "th": "cabhair", "b": "A1", "t": 2 },
-{ "ga": "Tar liom.", "en": "Come with me.", "th": "cabhair", "b": "A1", "t": 2 },
-{ "ga": "Glaoigh ar otharcharr!", "en": "Call an ambulance!", "th": "cabhair", "b": "A2", "t": 2 },
-{ "ga": "Glaoigh ar na Gardaí!", "en": "Call the guards!", "th": "cabhair", "b": "A2", "t": 2, "n": "The Gardaí: the police in Ireland." },
-{ "ga": "Glaoigh ar dhochtúir!", "en": "Call a doctor!", "th": "cabhair", "b": "A2", "t": 2 },
-{ "ga": "Fainic!", "en": "Watch out!", "alt": ["Seachain!"], "th": "cabhair", "b": "A2", "t": 2 },
-{ "ga": "Tine!", "en": "Fire!", "th": "cabhair", "b": "A1", "t": 2 },
-{ "ga": "Ní mhothaím go maith.", "en": "I don't feel well.", "th": "cabhair", "b": "A2", "t": 2 },
-{ "ga": "Tá slaghdán orm.", "en": "I have a cold.", "th": "cabhair", "b": "A1", "t": 2 },
-{ "ga": "Tá pian i mo bholg.", "en": "I have a pain in my stomach.", "th": "cabhair", "b": "A2", "t": 2 },
-{ "ga": "Tá pian anseo.", "en": "It hurts here.", "th": "cabhair", "b": "A1", "t": 2, "n": "Literally: there is pain here." },
-{ "ga": "Tá mé gortaithe.", "en": "I'm hurt.", "alt": ["Táim gortaithe."], "th": "cabhair", "b": "A2", "t": 2 },
-{ "ga": "An bhfuil tú gortaithe?", "en": "Are you hurt?", "th": "cabhair", "b": "A2", "t": 2 },
-{ "ga": "Cad atá ort?", "en": "What's wrong with you?", "alt": ["Céard atá ort?"], "th": "cabhair", "b": "A2", "t": 2, "n": "Literally: what is on you?" },
-{ "ga": "Cá bhfuil an t-ospidéal?", "en": "Where is the hospital?", "th": "cabhair", "b": "A1", "t": 2 },
-{ "ga": "Cá bhfuil an chógaslann?", "en": "Where is the pharmacy?", "th": "cabhair", "b": "A2", "t": 2 },
-{ "ga": "Chaill mé mo ghuthán.", "en": "I lost my phone.", "alt": ["Chaill mé m'fhón."], "th": "cabhair", "b": "A2", "t": 2 },
-{ "ga": "Chaill mé mo phas.", "en": "I lost my passport.", "th": "cabhair", "b": "A2", "t": 3 },
-{ "ga": "Goideadh mo mhála.", "en": "My bag was stolen.", "th": "cabhair", "b": "B1", "t": 3 },
-{ "ga": "An féidir liom do ghuthán a úsáid?", "en": "Can I use your phone?", "th": "cabhair", "b": "A2", "t": 3 },
-{ "ga": "Tá fiabhras orm.", "en": "I have a fever.", "th": "cabhair", "b": "A2", "t": 3 },
-{ "ga": "Tá ailléirge orm le cnónna.", "en": "I'm allergic to nuts.", "th": "cabhair", "b": "B1", "t": 3 },
-{ "ga": "Tá diaibéiteas orm.", "en": "I have diabetes.", "th": "cabhair", "b": "B1", "t": 3 },
-{ "ga": "Tá mo chos gortaithe.", "en": "My leg is hurt.", "th": "cabhair", "b": "A2", "t": 3 },
-{ "ga": "Tá sé ag cur fola.", "en": "He's bleeding.", "th": "cabhair", "b": "B1", "t": 3 },
-{ "ga": "Níl mé ar fónamh.", "en": "I'm unwell.", "alt": ["Nílim ar fónamh."], "th": "cabhair", "b": "B1", "t": 3 },
-{ "ga": "Níl aon rud orm.", "en": "There's nothing wrong with me.", "th": "cabhair", "b": "A2", "t": 3 },
-{ "ga": "Ba chóir duit suí síos.", "en": "You should sit down.", "th": "cabhair", "b": "A2", "t": 3 },
-{ "ga": "Taispeáin dom ar an léarscáil é.", "en": "Show me on the map.", "th": "cabhair", "b": "A2", "t": 3 },
-{ "ga": "Tá sé ar an dara sráid ar chlé.", "en": "It's the second street on the left.", "th": "cabhair", "b": "B1", "t": 3 },
-{ "ga": "Trasna an bhóthair.", "en": "Across the road.", "th": "cabhair", "b": "A2", "t": 3 },
-{ "ga": "Fág mé i m'aonar!", "en": "Leave me alone!", "th": "cabhair", "b": "A2", "t": 3 },
-{ "ga": "Tá mo pháiste ar iarraidh.", "en": "My child is missing.", "th": "cabhair", "b": "B1", "t": 3 },
-{ "ga": "Glaoigh orm má tá aon rud uait.", "en": "Call me if you need anything.", "th": "cabhair", "b": "B1", "t": 3 }
+ {
+  "ga": "Cabhair!",
+  "en": "Help!",
+  "alt": [
+   "Cuidiú!",
+   "Fóir orm!"
+  ],
+  "th": "cabhair",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "An féidir leat cabhrú liom?",
+  "en": "Can you help me?",
+  "alt": [
+   "An féidir leat cuidiú liom?"
+  ],
+  "th": "cabhair",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá cabhair uaim.",
+  "en": "I need help.",
+  "alt": [
+   "Teastaíonn cabhair uaim."
+  ],
+  "th": "cabhair",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: help is wanted from me."
+ },
+ {
+  "ga": "Cá bhfuil an leithreas?",
+  "en": "Where's the toilet?",
+  "alt": [
+   "Cá bhfuil na leithris?"
+  ],
+  "th": "cabhair",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá mé caillte.",
+  "en": "I'm lost.",
+  "alt": [
+   "Táim caillte."
+  ],
+  "th": "cabhair",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Cas ar chlé.",
+  "en": "Turn left.",
+  "th": "cabhair",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Cas ar dheis.",
+  "en": "Turn right.",
+  "th": "cabhair",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Téigh díreach ar aghaidh.",
+  "en": "Go straight on.",
+  "alt": [
+   "Lean ort díreach ar aghaidh."
+  ],
+  "th": "cabhair",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá sé thall ansin.",
+  "en": "It's over there.",
+  "th": "cabhair",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá mé tinn.",
+  "en": "I'm sick.",
+  "alt": [
+   "Táim tinn."
+  ],
+  "th": "cabhair",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá tinneas cinn orm.",
+  "en": "I have a headache.",
+  "th": "cabhair",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: there is a sickness of head on me."
+ },
+ {
+  "ga": "Tá dochtúir uaim.",
+  "en": "I need a doctor.",
+  "alt": [
+   "Teastaíonn dochtúir uaim."
+  ],
+  "th": "cabhair",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "An bhfuil tú ceart go leor?",
+  "en": "Are you OK?",
+  "th": "cabhair",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Cad a tharla?",
+  "en": "What happened?",
+  "alt": [
+   "Céard a tharla?"
+  ],
+  "th": "cabhair",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Bí cúramach!",
+  "en": "Be careful!",
+  "th": "cabhair",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Stad!",
+  "en": "Stop!",
+  "alt": [
+   "Stop!"
+  ],
+  "th": "cabhair",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá sé ar chlé.",
+  "en": "It's on the left.",
+  "th": "cabhair",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé ar dheis.",
+  "en": "It's on the right.",
+  "th": "cabhair",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "An bhfuil sé i bhfad as seo?",
+  "en": "Is it far from here?",
+  "alt": [
+   "An bhfuil sé i bhfad ó seo?"
+  ],
+  "th": "cabhair",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Níl sé i bhfad.",
+  "en": "It's not far.",
+  "th": "cabhair",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé cóngarach.",
+  "en": "It's near.",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé in aice leis an mbanc.",
+  "en": "It's beside the bank.",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé timpeall an chúinne.",
+  "en": "It's around the corner.",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Lean an bóthar seo.",
+  "en": "Follow this road.",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Cá bhfuil an stáisiún traenach?",
+  "en": "Where's the train station?",
+  "alt": [
+   "Cá bhfuil stáisiún na traenach?"
+  ],
+  "th": "cabhair",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Cá bhfuil an stad bus?",
+  "en": "Where's the bus stop?",
+  "alt": [
+   "Cá bhfuil stad an bhus?"
+  ],
+  "th": "cabhair",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Cá bhfuil an t-óstán?",
+  "en": "Where's the hotel?",
+  "th": "cabhair",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Cá bhfuil an banc?",
+  "en": "Where's the bank?",
+  "th": "cabhair",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Cén bealach go lár na cathrach?",
+  "en": "Which way to the city centre?",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá mé ag lorg an stáisiúin.",
+  "en": "I'm looking for the station.",
+  "alt": [
+   "Táim ag lorg an stáisiúin."
+  ],
+  "th": "cabhair",
+  "b": "A2",
+  "t": 2,
+  "n": "Ag lorg takes the genitive: an stáisiún, ag lorg an stáisiúin."
+ },
+ {
+  "ga": "An bhfuil a fhios agat cá bhfuil sé?",
+  "en": "Do you know where it is?",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Cá bhfuil tú ag dul?",
+  "en": "Where are you going?",
+  "th": "cabhair",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "An bhfuil leithreas anseo?",
+  "en": "Is there a toilet here?",
+  "th": "cabhair",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Fan anseo.",
+  "en": "Wait here.",
+  "th": "cabhair",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tar liom.",
+  "en": "Come with me.",
+  "th": "cabhair",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Glaoigh ar otharcharr!",
+  "en": "Call an ambulance!",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Glaoigh ar na Gardaí!",
+  "en": "Call the guards!",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 2,
+  "n": "The Gardaí: the police in Ireland."
+ },
+ {
+  "ga": "Glaoigh ar dhochtúir!",
+  "en": "Call a doctor!",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Fainic!",
+  "en": "Watch out!",
+  "alt": [
+   "Seachain!"
+  ],
+  "th": "cabhair",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tine!",
+  "en": "Fire!",
+  "th": "cabhair",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Ní mhothaím go maith.",
+  "en": "I don't feel well.",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá slaghdán orm.",
+  "en": "I have a cold.",
+  "th": "cabhair",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá pian i mo bholg.",
+  "en": "I have a pain in my stomach.",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá pian anseo.",
+  "en": "It hurts here.",
+  "th": "cabhair",
+  "b": "A1",
+  "t": 2,
+  "n": "Literally: there is pain here."
+ },
+ {
+  "ga": "Tá mé gortaithe.",
+  "en": "I'm hurt.",
+  "alt": [
+   "Táim gortaithe."
+  ],
+  "th": "cabhair",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "An bhfuil tú gortaithe?",
+  "en": "Are you hurt?",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Cad atá ort?",
+  "en": "What's wrong with you?",
+  "alt": [
+   "Céard atá ort?"
+  ],
+  "th": "cabhair",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: what is on you?"
+ },
+ {
+  "ga": "Cá bhfuil an t-ospidéal?",
+  "en": "Where is the hospital?",
+  "th": "cabhair",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Cá bhfuil an chógaslann?",
+  "en": "Where is the pharmacy?",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Chaill mé mo ghuthán.",
+  "en": "I lost my phone.",
+  "alt": [
+   "Chaill mé m'fhón."
+  ],
+  "th": "cabhair",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Chaill mé mo phas.",
+  "en": "I lost my passport.",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Goideadh mo mhála.",
+  "en": "My bag was stolen.",
+  "th": "cabhair",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "An féidir liom do ghuthán a úsáid?",
+  "en": "Can I use your phone?",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tá fiabhras orm.",
+  "en": "I have a fever.",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tá ailléirge orm le cnónna.",
+  "en": "I'm allergic to nuts.",
+  "th": "cabhair",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Tá diaibéiteas orm.",
+  "en": "I have diabetes.",
+  "th": "cabhair",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Tá mo chos gortaithe.",
+  "en": "My leg is hurt.",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tá sé ag cur fola.",
+  "en": "He's bleeding.",
+  "th": "cabhair",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Níl mé ar fónamh.",
+  "en": "I'm unwell.",
+  "alt": [
+   "Nílim ar fónamh."
+  ],
+  "th": "cabhair",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Níl aon rud orm.",
+  "en": "There's nothing wrong with me.",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Ba chóir duit suí síos.",
+  "en": "You should sit down.",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Taispeáin dom ar an léarscáil é.",
+  "en": "Show me on the map.",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tá sé ar an dara sráid ar chlé.",
+  "en": "It's the second street on the left.",
+  "th": "cabhair",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Trasna an bhóthair.",
+  "en": "Across the road.",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Fág mé i m'aonar!",
+  "en": "Leave me alone!",
+  "th": "cabhair",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tá mo pháiste ar iarraidh.",
+  "en": "My child is missing.",
+  "th": "cabhair",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Glaoigh orm má tá aon rud uait.",
+  "en": "Call me if you need anything.",
+  "th": "cabhair",
+  "b": "B1",
+  "t": 3
+ }
 ]

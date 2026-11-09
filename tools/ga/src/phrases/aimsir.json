@@ -170,11 +170,11 @@
  },
  {
   "ga": "Tá cuma na báistí air.",
-  "en": "Rain is on the way.",
+  "en": "It looks like rain.",
   "th": "aimsir",
   "b": "A2",
   "t": 2,
-  "n": "Literally: there is rain on it."
+  "n": "Literally: the look of the rain is on it."
  },
  {
   "ga": "Tá sé ag éirí fuar.",
@@ -195,7 +195,11 @@
   "en": "It's freezing.",
   "th": "aimsir",
   "b": "A2",
-  "t": 2
+  "t": 2,
+  "alt": [
+   "Tá sé ag reo.",
+   "Tá sé ag cur seaca."
+  ]
  },
  {
   "ga": "Tá mé préachta leis an bhfuacht.",
@@ -209,7 +213,10 @@
   "en": "Take an umbrella with you.",
   "th": "aimsir",
   "b": "A2",
-  "t": 2
+  "t": 2,
+  "alt": [
+   "Tóg scáth báistí leat."
+  ]
  },
  {
   "ga": "Ná déan dearmad ar do chóta.",

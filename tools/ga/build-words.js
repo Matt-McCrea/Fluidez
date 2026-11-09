@@ -90,7 +90,10 @@ function build() {
       out.push(e);
     });
   });
-  out.sort((a, b) => a.t - b.t || a.fr - b.fr);
+  // function words (bunus) top any corpus list but make a dull first hundred:
+  // within a tier they rank as if five times rarer, so content words lead
+  const key = e => e.th === 'bunus' ? e.fr * 5 : e.fr;
+  out.sort((a, b) => a.t - b.t || key(a) - key(b));
   out.forEach((e, i) => { e.r = i + 1; e.b = i < 400 ? 'A1' : i < 1000 ? 'A2' : i < 1800 ? 'B1' : 'B2'; delete e.fr; delete e.t; });
   return { out, problems };
 }

@@ -1,185 +1,1116 @@
 [
-  {"ga":"aimsir","en":"weather","th":"aimsir","t":1},
-  {"ga":"báisteach","en":"rain","th":"aimsir","t":1},
-  {"ga":"sneachta","en":"snow","th":"aimsir","t":1},
-  {"ga":"gaoth","en":"wind","th":"aimsir","t":1},
-  {"ga":"grian","en":"sun","th":"aimsir","t":1},
-  {"ga":"scamall","en":"cloud","th":"aimsir","t":1},
-  {"ga":"néal","en":"nap, swoon","th":"aimsir","t":3},
-  {"ga":"ceo","en":"fog, mist","th":"aimsir","t":1},
-  {"ga":"sioc","en":"frost","th":"aimsir","t":2},
-  {"ga":"oighear","en":"ice","th":"aimsir","t":2},
-  {"ga":"toirneach","en":"thunder","th":"aimsir","t":2},
-  {"ga":"tintreach","en":"lightning","th":"aimsir","t":2},
-  {"ga":"stoirm","en":"storm","th":"aimsir","t":1},
-  {"ga":"tuile","en":"flood","th":"aimsir","t":2},
-  {"ga":"triomach","en":"drought","th":"aimsir","t":3},
-  {"ga":"teas","en":"heat","th":"aimsir","t":1},
-  {"ga":"fuacht","en":"the cold","th":"aimsir","t":1},
-  {"ga":"fuar","en":"cold","th":"aimsir","t":1,"pos":"adj"},
-  {"ga":"te","en":"hot","th":"aimsir","t":1,"pos":"adj"},
-  {"ga":"tirim","en":"dry","th":"aimsir","t":1,"pos":"adj"},
-  {"ga":"fliuch","en":"wet","th":"aimsir","t":1,"pos":"adj"},
-  {"ga":"grianmhar","en":"sunny","th":"aimsir","t":1,"pos":"adj"},
-  {"ga":"scamallach","en":"cloudy","th":"aimsir","t":1,"pos":"adj"},
-  {"ga":"gaofar","en":"windy","th":"aimsir","t":1,"pos":"adj"},
-  {"ga":"ceomhar","en":"foggy","th":"aimsir","t":2,"pos":"adj"},
-  {"ga":"stoirmiúil","en":"stormy","th":"aimsir","t":2,"pos":"adj"},
-  {"ga":"brothallach","en":"sultry","th":"aimsir","t":3,"pos":"adj"},
-  {"ga":"fionnuar","en":"cool","th":"aimsir","t":2,"pos":"adj"},
-  {"ga":"séimh","en":"mild","th":"aimsir","t":2,"pos":"adj"},
-  {"ga":"cith","en":"rain shower","th":"aimsir","t":2},
-  {"ga":"ceathanna","en":"rain showers","th":"aimsir","t":2,"g":"m"},
-  {"ga":"brádán","en":"drizzle","th":"aimsir","t":3},
-  {"ga":"tuar ceatha","en":"rainbow","th":"aimsir","t":2},
-  {"ga":"spéir","en":"sky","th":"aimsir","t":1},
-  {"ga":"réalta","en":"star","th":"aimsir","t":2},
-  {"ga":"gealach","en":"moon","th":"aimsir","t":1},
-  {"ga":"pláinéad","en":"planet","th":"aimsir","t":2},
-  {"ga":"aer","en":"air","th":"aimsir","t":2},
-  {"ga":"teocht","en":"temperature","th":"aimsir","t":2},
-  {"ga":"réamhaisnéis","en":"forecast","th":"aimsir","t":2},
-  {"ga":"nádúr","en":"nature","th":"aimsir","t":2},
-  {"ga":"fiadhúlra","en":"wildlife","th":"aimsir","t":3},
-  {"ga":"talamh","en":"land, ground","th":"aimsir","t":1},
-  {"ga":"cré","en":"clay","th":"aimsir","t":2},
-  {"ga":"ithir","en":"soil","th":"aimsir","t":3},
-  {"ga":"cloch","en":"stone","th":"aimsir","t":1},
-  {"ga":"carraig","en":"rock","th":"aimsir","t":2},
-  {"ga":"gaineamh","en":"sand","th":"aimsir","t":2},
-  {"ga":"trá","en":"beach","th":"aimsir","t":1},
-  {"ga":"farraige","en":"sea","th":"aimsir","t":1},
-  {"ga":"aigéan","en":"ocean","th":"aimsir","t":2},
-  {"ga":"tonn","en":"wave","th":"aimsir","t":2},
-  {"ga":"taoide","en":"tide","th":"aimsir","t":2},
-  {"ga":"cladach","en":"shore","th":"aimsir","t":2},
-  {"ga":"oileán","en":"island","th":"aimsir","t":1},
-  {"ga":"leithinis","en":"peninsula","th":"aimsir","t":3},
-  {"ga":"sliabh","en":"mountain","th":"aimsir","t":1},
-  {"ga":"cnoc","en":"hill","th":"aimsir","t":1},
-  {"ga":"gleann","en":"valley","th":"aimsir","t":2},
-  {"ga":"abhainn","en":"river","th":"aimsir","t":1},
-  {"ga":"sruthán","en":"stream","th":"aimsir","t":2},
-  {"ga":"loch","en":"lake","th":"aimsir","t":1},
-  {"ga":"lochán","en":"pond","th":"aimsir","t":3},
-  {"ga":"portach","en":"bog","th":"aimsir","t":2},
-  {"ga":"móinéar","en":"meadow","th":"aimsir","t":3},
-  {"ga":"coill","en":"woods, woodland","th":"aimsir","t":2},
-  {"ga":"foraois","en":"forest","th":"aimsir","t":2},
-  {"ga":"crann","en":"tree","th":"aimsir","t":1},
-  {"ga":"duilleog","en":"leaf","th":"aimsir","t":2},
-  {"ga":"craobh","en":"branch, championship","th":"aimsir","t":2},
-  {"ga":"fréamh","en":"root","th":"aimsir","t":2},
-  {"ga":"bláth","en":"flower","th":"aimsir","t":1},
-  {"ga":"féar","en":"grass","th":"aimsir","t":1},
-  {"ga":"luibh","en":"herb","th":"aimsir","t":2},
-  {"ga":"planda","en":"plant","th":"aimsir","t":2},
-  {"ga":"síol","en":"seed","th":"aimsir","t":2},
-  {"ga":"fiaile","en":"weed","th":"aimsir","t":3},
-  {"ga":"rós","en":"rose","th":"aimsir","t":2},
-  {"ga":"nóinín","en":"daisy","th":"aimsir","t":2},
-  {"ga":"seamróg","en":"shamrock","th":"aimsir","t":2},
-  {"ga":"fraoch","en":"heather","th":"aimsir","t":3},
-  {"ga":"aiteann","en":"gorse","th":"aimsir","t":3},
-  {"ga":"dair","en":"oak","th":"aimsir","t":3},
-  {"ga":"giúis","en":"pine, fir","th":"aimsir","t":3},
-  {"ga":"uaimh","en":"cave","th":"aimsir","t":2},
-  {"ga":"eas","en":"waterfall","th":"aimsir","t":2,"g":"m"},
-  {"ga":"aill","en":"cliff","th":"aimsir","t":2},
-  {"ga":"tírdhreach","en":"landscape","th":"aimsir","t":3},
-  {"ga":"timpeallacht","en":"environment","th":"aimsir","t":2},
-  {"ga":"truailliú","en":"pollution","th":"aimsir","t":3},
-  {"ga":"ainmhí","en":"animal","th":"aimsir","t":1},
-  {"ga":"madra","en":"dog","th":"aimsir","t":1},
-  {"ga":"cat","en":"cat","th":"aimsir","t":1},
-  {"ga":"capall","en":"horse","th":"aimsir","t":1},
-  {"ga":"bó","en":"cow","th":"aimsir","t":1},
-  {"ga":"muc","en":"pig","th":"aimsir","t":1},
-  {"ga":"caora","en":"sheep","th":"aimsir","t":1},
-  {"ga":"uan","en":"a lamb","th":"aimsir","t":2},
-  {"ga":"gabhar","en":"goat","th":"aimsir","t":2},
-  {"ga":"asal","en":"donkey","th":"aimsir","t":2},
-  {"ga":"cearc","en":"hen","th":"aimsir","t":1},
-  {"ga":"coileach","en":"rooster","th":"aimsir","t":2},
-  {"ga":"lacha","en":"duck","th":"aimsir","t":2},
-  {"ga":"gé","en":"goose","th":"aimsir","t":2},
-  {"ga":"éan","en":"bird","th":"aimsir","t":1},
-  {"ga":"luch","en":"mouse","th":"aimsir","t":2},
-  {"ga":"francach","en":"rat","th":"aimsir","t":2},
-  {"ga":"coinín","en":"rabbit","th":"aimsir","t":2},
-  {"ga":"giorria","en":"hare","th":"aimsir","t":2},
-  {"ga":"sionnach","en":"fox","th":"aimsir","t":2},
-  {"ga":"broc","en":"badger","th":"aimsir","t":2},
-  {"ga":"gráinneog","en":"hedgehog","th":"aimsir","t":2},
-  {"ga":"fia","en":"deer","th":"aimsir","t":2},
-  {"ga":"iora rua","en":"red squirrel","th":"aimsir","t":3},
-  {"ga":"ialtóg","en":"bat (animal)","th":"aimsir","t":3},
-  {"ga":"préachán","en":"crow","th":"aimsir","t":2},
-  {"ga":"faoileán","en":"seagull","th":"aimsir","t":2},
-  {"ga":"spideog","en":"robin","th":"aimsir","t":2},
-  {"ga":"lon dubh","en":"blackbird","th":"aimsir","t":3},
-  {"ga":"fuiseog","en":"lark","th":"aimsir","t":3},
-  {"ga":"seabhac","en":"hawk","th":"aimsir","t":3},
-  {"ga":"iolar","en":"eagle","th":"aimsir","t":3},
-  {"ga":"ulchabhán","en":"owl","th":"aimsir","t":2},
-  {"ga":"eala","en":"swan","th":"aimsir","t":2},
-  {"ga":"colúr","en":"pigeon","th":"aimsir","t":2},
-  {"ga":"féileacán","en":"butterfly","th":"aimsir","t":2},
-  {"ga":"beach","en":"bee","th":"aimsir","t":2},
-  {"ga":"cuileog","en":"a fly","th":"aimsir","t":2},
-  {"ga":"feithid","en":"insect","th":"aimsir","t":2},
-  {"ga":"damhán alla","en":"spider","th":"aimsir","t":2},
-  {"ga":"seangán","en":"ant","th":"aimsir","t":3},
-  {"ga":"péist","en":"worm","th":"aimsir","t":2},
-  {"ga":"seilide","en":"snail","th":"aimsir","t":3},
-  {"ga":"nathair","en":"snake","th":"aimsir","t":2},
-  {"ga":"frog","en":"frog","th":"aimsir","t":2},
-  {"ga":"leon","en":"lion","th":"aimsir","t":2},
-  {"ga":"tíogar","en":"tiger","th":"aimsir","t":2},
-  {"ga":"eilifint","en":"elephant","th":"aimsir","t":2},
-  {"ga":"moncaí","en":"monkey","th":"aimsir","t":2},
-  {"ga":"béar","en":"bear","th":"aimsir","t":2},
-  {"ga":"mac tíre","en":"wolf","th":"aimsir","t":2},
-  {"ga":"míol mór","en":"whale","th":"aimsir","t":3},
-  {"ga":"deilf","en":"dolphin","th":"aimsir","t":2},
-  {"ga":"rón","en":"seal","th":"aimsir","t":2},
-  {"ga":"siorc","en":"shark","th":"aimsir","t":2},
-  {"ga":"tarbh","en":"bull","th":"aimsir","t":2},
-  {"ga":"banbh","en":"piglet","th":"aimsir","t":3},
-  {"ga":"lao","en":"calf","th":"aimsir","t":2},
-  {"ga":"searrach","en":"foal","th":"aimsir","t":3},
-  {"ga":"coileán","en":"puppy","th":"aimsir","t":2},
-  {"ga":"piscín","en":"kitten","th":"aimsir","t":2},
-  {"ga":"peata","en":"pet","th":"aimsir","t":1},
-  {"ga":"eallach","en":"cattle","th":"aimsir","t":3},
-  {"ga":"tréad","en":"flock, herd","th":"aimsir","t":3},
-  {"ga":"nead","en":"nest","th":"aimsir","t":2},
-  {"ga":"sciathán","en":"wing","th":"aimsir","t":2},
-  {"ga":"cleite","en":"feather","th":"aimsir","t":2},
-  {"ga":"eite","en":"fin","th":"aimsir","t":3},
-  {"ga":"eireaball","en":"tail","th":"aimsir","t":2},
-  {"ga":"adharc","en":"horn","th":"aimsir","t":3},
-  {"ga":"crúb","en":"hoof","th":"aimsir","t":3},
-  {"ga":"fionnadh","en":"fur","th":"aimsir","t":3},
-  {"ga":"domhan","en":"world, earth","th":"aimsir","t":2},
-  {"ga":"dúlra","en":"the natural world","th":"aimsir","t":3},
-  {"ga":"solas na gréine","en":"sunshine, sunlight","th":"aimsir","t":2},
-  {"ga":"lá breá","en":"fine day","th":"aimsir","t":2},
-  {"ga":"grianghrafadóireacht","en":"photography","th":"aimsir","t":3},
-  {"ga":"éiclips","en":"eclipse","th":"aimsir","t":3},
-  {"ga":"tuar","en":"omen","th":"aimsir","t":3},
-  {"ga":"léas","en":"ray (of light)","th":"aimsir","t":3},
-  {"ga":"log","en":"hollow","th":"aimsir","t":3},
-  {"ga":"gort","en":"tilled field","th":"aimsir","t":2},
-  {"ga":"garraí","en":"vegetable garden","th":"aimsir","t":2},
-  {"ga":"gairbhéal","en":"gravel","th":"aimsir","t":3},
-  {"ga":"cúr","en":"foam","th":"aimsir","t":3},
-  {"ga":"bolcán","en":"volcano","th":"aimsir","t":2},
-  {"ga":"crith talún","en":"earthquake","th":"aimsir","t":2},
-  {"ga":"oighearshruth","en":"glacier","th":"aimsir","t":3},
-  {"ga":"fásach","en":"desert, wilderness","th":"aimsir","t":2},
-  {"ga":"dufair","en":"jungle","th":"aimsir","t":2},
-  {"ga":"oileánach","en":"islander","th":"aimsir","t":3},
-  {"ga":"fiáin","en":"wild","th":"aimsir","t":2,"pos":"adj"},
-  {"ga":"ceansa","en":"tame","th":"aimsir","t":3,"pos":"adj"}
+ {
+  "ga": "aimsir",
+  "en": "weather",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "báisteach",
+  "en": "rain",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "sneachta",
+  "en": "snow",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "gaoth",
+  "en": "wind",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "grian",
+  "en": "sun",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "scamall",
+  "en": "cloud",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "néal",
+  "en": "nap, swoon",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "ceo",
+  "en": "fog, mist",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "sioc",
+  "en": "frost",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "oighear",
+  "en": "ice",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "toirneach",
+  "en": "thunder",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "tintreach",
+  "en": "lightning",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "stoirm",
+  "en": "storm",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "tuile",
+  "en": "flood",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "triomach",
+  "en": "drought",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "teas",
+  "en": "heat",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "fuacht",
+  "en": "the cold",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "fuar",
+  "en": "cold",
+  "th": "aimsir",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "te",
+  "en": "hot",
+  "th": "aimsir",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "tirim",
+  "en": "dry",
+  "th": "aimsir",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "fliuch",
+  "en": "wet",
+  "th": "aimsir",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "grianmhar",
+  "en": "sunny",
+  "th": "aimsir",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "scamallach",
+  "en": "cloudy",
+  "th": "aimsir",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "gaofar",
+  "en": "windy",
+  "th": "aimsir",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "ceomhar",
+  "en": "foggy",
+  "th": "aimsir",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "stoirmiúil",
+  "en": "stormy",
+  "th": "aimsir",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "brothallach",
+  "en": "sultry",
+  "th": "aimsir",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "fionnuar",
+  "en": "cool",
+  "th": "aimsir",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "séimh",
+  "en": "mild",
+  "th": "aimsir",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "cith",
+  "en": "rain shower",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "ceathanna",
+  "en": "rain showers",
+  "th": "aimsir",
+  "t": 2,
+  "g": "m"
+ },
+ {
+  "ga": "brádán",
+  "en": "drizzle",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "tuar ceatha",
+  "en": "rainbow",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "spéir",
+  "en": "sky",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "réalta",
+  "en": "star",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "gealach",
+  "en": "moon",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "pláinéad",
+  "en": "planet",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "aer",
+  "en": "air",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "teocht",
+  "en": "temperature",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "réamhaisnéis",
+  "en": "forecast",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "nádúr",
+  "en": "nature",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "fiadhúlra",
+  "en": "wildlife",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "talamh",
+  "en": "land, ground",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "cré",
+  "en": "clay",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "ithir",
+  "en": "soil",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "cloch",
+  "en": "stone",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "carraig",
+  "en": "rock",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "gaineamh",
+  "en": "sand",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "trá",
+  "en": "beach",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "farraige",
+  "en": "sea",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "aigéan",
+  "en": "ocean",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "tonn",
+  "en": "wave",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "taoide",
+  "en": "tide",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "cladach",
+  "en": "shore",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "oileán",
+  "en": "island",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "leithinis",
+  "en": "peninsula",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "sliabh",
+  "en": "mountain",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "cnoc",
+  "en": "hill",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "gleann",
+  "en": "valley",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "abhainn",
+  "en": "river",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "sruthán",
+  "en": "stream",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "loch",
+  "en": "lake",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "lochán",
+  "en": "pond",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "portach",
+  "en": "bog",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "móinéar",
+  "en": "meadow",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "coill",
+  "en": "woods, woodland",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "foraois",
+  "en": "forest",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "crann",
+  "en": "tree",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "duilleog",
+  "en": "leaf",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "craobh",
+  "en": "branch, championship",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "fréamh",
+  "en": "root",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "bláth",
+  "en": "flower",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "féar",
+  "en": "grass",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "luibh",
+  "en": "herb",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "planda",
+  "en": "plant",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "síol",
+  "en": "seed",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "fiaile",
+  "en": "weed",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "rós",
+  "en": "rose",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "nóinín",
+  "en": "daisy",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "seamróg",
+  "en": "shamrock",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "fraoch",
+  "en": "heather",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "aiteann",
+  "en": "gorse",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "dair",
+  "en": "oak",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "giúis",
+  "en": "pine, fir",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "uaimh",
+  "en": "cave",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "eas",
+  "en": "waterfall",
+  "th": "aimsir",
+  "t": 2,
+  "g": "m"
+ },
+ {
+  "ga": "aill",
+  "en": "cliff",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "tírdhreach",
+  "en": "landscape",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "timpeallacht",
+  "en": "environment",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "truailliú",
+  "en": "pollution",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "ainmhí",
+  "en": "animal",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "madra",
+  "en": "dog",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "cat",
+  "en": "cat",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "capall",
+  "en": "horse",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "bó",
+  "en": "cow",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "muc",
+  "en": "pig",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "caora",
+  "en": "sheep",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "uan",
+  "en": "a lamb",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "gabhar",
+  "en": "goat",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "asal",
+  "en": "donkey",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "cearc",
+  "en": "hen",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "coileach",
+  "en": "rooster",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "lacha",
+  "en": "duck",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "gé",
+  "en": "goose",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "éan",
+  "en": "bird",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "luch",
+  "en": "mouse",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "francach",
+  "en": "rat",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "coinín",
+  "en": "rabbit",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "giorria",
+  "en": "hare",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "sionnach",
+  "en": "fox",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "broc",
+  "en": "badger",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "gráinneog",
+  "en": "hedgehog",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "fia",
+  "en": "deer",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "iora rua",
+  "en": "red squirrel",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "ialtóg",
+  "en": "bat (animal)",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "préachán",
+  "en": "crow",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "faoileán",
+  "en": "seagull",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "spideog",
+  "en": "robin",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "lon dubh",
+  "en": "blackbird",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "fuiseog",
+  "en": "lark",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "seabhac",
+  "en": "hawk",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "iolar",
+  "en": "eagle",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "ulchabhán",
+  "en": "owl",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "eala",
+  "en": "swan",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "colúr",
+  "en": "pigeon",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "féileacán",
+  "en": "butterfly",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "beach",
+  "en": "bee",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "cuileog",
+  "en": "a fly",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "feithid",
+  "en": "insect",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "damhán alla",
+  "en": "spider",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "seangán",
+  "en": "ant",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "péist",
+  "en": "worm",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "seilide",
+  "en": "snail",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "nathair",
+  "en": "snake",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "frog",
+  "en": "frog",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "leon",
+  "en": "lion",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "tíogar",
+  "en": "tiger",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "eilifint",
+  "en": "elephant",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "moncaí",
+  "en": "monkey",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "béar",
+  "en": "bear",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "mac tíre",
+  "en": "wolf",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "míol mór",
+  "en": "whale",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "deilf",
+  "en": "dolphin",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "rón",
+  "en": "seal",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "siorc",
+  "en": "shark",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "tarbh",
+  "en": "bull",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "banbh",
+  "en": "piglet",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "lao",
+  "en": "calf",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "searrach",
+  "en": "foal",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "coileán",
+  "en": "puppy",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "piscín",
+  "en": "kitten",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "peata",
+  "en": "pet",
+  "th": "aimsir",
+  "t": 1
+ },
+ {
+  "ga": "eallach",
+  "en": "cattle",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "tréad",
+  "en": "flock, herd",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "nead",
+  "en": "nest",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "sciathán",
+  "en": "wing",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "cleite",
+  "en": "feather",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "eite",
+  "en": "fin",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "eireaball",
+  "en": "tail",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "adharc",
+  "en": "horn",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "crúb",
+  "en": "hoof",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "fionnadh",
+  "en": "fur",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "domhan",
+  "en": "world, earth",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "dúlra",
+  "en": "the natural world",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "solas na gréine",
+  "en": "sunshine, sunlight",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "lá breá",
+  "en": "fine day",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "grianghrafadóireacht",
+  "en": "photography",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "éiclips",
+  "en": "eclipse",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "tuar",
+  "en": "omen",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "léas",
+  "en": "ray (of light)",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "log",
+  "en": "hollow",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "gort",
+  "en": "tilled field",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "garraí",
+  "en": "vegetable garden",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "gairbhéal",
+  "en": "gravel",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "cúr",
+  "en": "foam",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "bolcán",
+  "en": "volcano",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "crith talún",
+  "en": "earthquake",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "oighearshruth",
+  "en": "glacier",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "fásach",
+  "en": "desert, wilderness",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "dufair",
+  "en": "jungle",
+  "th": "aimsir",
+  "t": 2
+ },
+ {
+  "ga": "oileánach",
+  "en": "islander",
+  "th": "aimsir",
+  "t": 3
+ },
+ {
+  "ga": "fiáin",
+  "en": "wild",
+  "th": "aimsir",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "ceansa",
+  "en": "tame",
+  "th": "aimsir",
+  "t": 3,
+  "pos": "adj"
+ }
 ]

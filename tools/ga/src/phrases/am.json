@@ -1,75 +1,577 @@
 [
-{ "ga": "Cén t-am é?", "en": "What time is it?", "alt": ["Cén t-am atá sé?", "Cén t-am atá ann?"], "th": "am", "b": "A1", "t": 1 },
-{ "ga": "Tá sé a trí a chlog.", "en": "It's three o'clock.", "th": "am", "b": "A1", "t": 1 },
-{ "ga": "Tá sé leathuair tar éis a dó.", "en": "It's half past two.", "th": "am", "b": "A1", "t": 1 },
-{ "ga": "Cén lá atá ann inniu?", "en": "What day is it today?", "alt": ["Cén lá é inniu?"], "th": "am", "b": "A1", "t": 1 },
-{ "ga": "Inniu an Luan.", "en": "Today is Monday.", "alt": ["Is é an Luan atá ann inniu."], "th": "am", "b": "A1", "t": 1 },
-{ "ga": "Cén t-am?", "en": "What time?", "th": "am", "b": "A1", "t": 1 },
-{ "ga": "Cathain?", "en": "When?", "alt": ["Cén uair?", "Cá huair?"], "th": "am", "b": "A1", "t": 1 },
-{ "ga": "Cén áit?", "en": "Where?", "alt": ["Cá háit?"], "th": "am", "b": "A1", "t": 1 },
-{ "ga": "Cad atá ar siúl agat anocht?", "en": "What are you doing tonight?", "alt": ["Céard atá ar siúl agat anocht?"], "th": "am", "b": "A1", "t": 1 },
-{ "ga": "An bhfuil tú saor amárach?", "en": "Are you free tomorrow?", "th": "am", "b": "A1", "t": 1 },
-{ "ga": "Tá mé gnóthach inniu.", "en": "I'm busy today.", "alt": ["Táim gnóthach inniu."], "th": "am", "b": "A1", "t": 1 },
-{ "ga": "Tá mé déanach.", "en": "I'm late.", "alt": ["Táim déanach."], "th": "am", "b": "A1", "t": 1 },
-{ "ga": "Tá deifir orm.", "en": "I'm in a hurry.", "th": "am", "b": "A1", "t": 1, "n": "Literally: there is hurry on me." },
-{ "ga": "Fan nóiméad.", "en": "Wait a minute.", "alt": ["Fan nóiméad, le do thoil."], "th": "am", "b": "A1", "t": 1 },
-{ "ga": "An tseachtain seo chugainn.", "en": "Next week.", "th": "am", "b": "A1", "t": 1, "n": "Literally: this week coming to us." },
-{ "ga": "Beidh mé ann ag a seacht.", "en": "I'll be there at seven.", "th": "am", "b": "A1", "t": 1 },
-{ "ga": "Feicfidh mé Dé hAoine thú.", "en": "See you on Friday.", "alt": ["Feicfidh mé thú Dé hAoine."], "th": "am", "b": "A1", "t": 1 },
-{ "ga": "Beidh mé ar ais go luath.", "en": "I'll be back soon.", "th": "am", "b": "A1", "t": 1 },
-{ "ga": "Tá sé ceathrú chun a cúig.", "en": "It's a quarter to five.", "th": "am", "b": "A1", "t": 2 },
-{ "ga": "Tá sé ceathrú tar éis a deich.", "en": "It's a quarter past ten.", "th": "am", "b": "A1", "t": 2 },
-{ "ga": "Amárach an Satharn.", "en": "Tomorrow is Saturday.", "th": "am", "b": "A1", "t": 2 },
-{ "ga": "Cén dáta atá ann inniu?", "en": "What's the date today?", "alt": ["Cén dáta é inniu?"], "th": "am", "b": "A1", "t": 2 },
-{ "ga": "Níl mé saor inniu.", "en": "I'm not free today.", "alt": ["Nílim saor inniu."], "th": "am", "b": "A1", "t": 2 },
-{ "ga": "Tá mé saor ag an deireadh seachtaine.", "en": "I'm free at the weekend.", "th": "am", "b": "A2", "t": 2 },
-{ "ga": "Ar mhaith leat dul amach anocht?", "en": "Would you like to go out tonight?", "th": "am", "b": "A2", "t": 2 },
-{ "ga": "An mbuailfimid le chéile amárach?", "en": "Shall we meet tomorrow?", "alt": ["An mbuailfidh muid le chéile amárach?"], "th": "am", "b": "A2", "t": 2 },
-{ "ga": "Buailfimid le chéile ag a hocht.", "en": "We'll meet at eight.", "alt": ["Buailfidh muid le chéile ag a hocht."], "th": "am", "b": "A2", "t": 2, "n": "A puts h before a vowel: a hocht, a haon." },
-{ "ga": "Ceart go leor, feicfidh mé ansin thú.", "en": "OK, see you there.", "alt": ["Ceart go leor, feicfidh mé thú ansin."], "th": "am", "b": "A2", "t": 2 },
-{ "ga": "An oireann Dé Máirt duit?", "en": "Does Tuesday suit you?", "th": "am", "b": "A2", "t": 2 },
-{ "ga": "Oireann sé sin go breá.", "en": "That suits fine.", "th": "am", "b": "A2", "t": 2 },
-{ "ga": "Tá brón orm, tá mé déanach.", "en": "Sorry I'm late.", "th": "am", "b": "A1", "t": 2 },
-{ "ga": "Beidh mé ann i gceann deich nóiméad.", "en": "I'll be there in ten minutes.", "th": "am", "b": "A2", "t": 2 },
-{ "ga": "Anois díreach.", "en": "Right now.", "alt": ["Díreach anois."], "th": "am", "b": "A1", "t": 2 },
-{ "ga": "Ar ball.", "en": "Later on.", "th": "am", "b": "A1", "t": 2 },
-{ "ga": "Go luath.", "en": "Soon.", "th": "am", "b": "A1", "t": 2 },
-{ "ga": "Amárach, b'fhéidir.", "en": "Tomorrow, maybe.", "th": "am", "b": "A1", "t": 2 },
-{ "ga": "B'fhéidir an tseachtain seo chugainn.", "en": "Maybe next week.", "th": "am", "b": "A2", "t": 2 },
-{ "ga": "An tseachtain seo caite.", "en": "Last week.", "th": "am", "b": "A1", "t": 2 },
-{ "ga": "An mhí seo chugainn.", "en": "Next month.", "th": "am", "b": "A1", "t": 2 },
-{ "ga": "An bhliain seo chugainn.", "en": "Next year.", "th": "am", "b": "A1", "t": 2 },
-{ "ga": "Anuraidh.", "en": "Last year.", "th": "am", "b": "A1", "t": 2 },
-{ "ga": "Gach lá.", "en": "Every day.", "th": "am", "b": "A1", "t": 2 },
-{ "ga": "Ar maidin.", "en": "In the morning.", "th": "am", "b": "A1", "t": 2 },
-{ "ga": "Tráthnóna inniu.", "en": "This evening.", "th": "am", "b": "A1", "t": 2 },
-{ "ga": "Anocht.", "en": "Tonight.", "th": "am", "b": "A1", "t": 2 },
-{ "ga": "Aréir.", "en": "Last night.", "th": "am", "b": "A1", "t": 2 },
-{ "ga": "Cathain a thosaíonn sé?", "en": "When does it start?", "alt": ["Cén uair a thosaíonn sé?"], "th": "am", "b": "A2", "t": 2 },
-{ "ga": "Cén t-am a chríochnaíonn sé?", "en": "What time does it finish?", "th": "am", "b": "A2", "t": 2 },
-{ "ga": "Cá fhad a thógfaidh sé?", "en": "How long will it take?", "alt": ["Cé chomh fada a thógfaidh sé?"], "th": "am", "b": "A2", "t": 2 },
-{ "ga": "Níl mórán ama agam.", "en": "I don't have much time.", "th": "am", "b": "A2", "t": 2 },
-{ "ga": "Tá neart ama againn.", "en": "We have plenty of time.", "th": "am", "b": "A2", "t": 2 },
-{ "ga": "Níl aon deifir.", "en": "There's no hurry.", "th": "am", "b": "A1", "t": 2 },
-{ "ga": "Déan deifir!", "en": "Hurry up!", "th": "am", "b": "A1", "t": 2 },
-{ "ga": "An mbeidh tú ann?", "en": "Will you be there?", "th": "am", "b": "A1", "t": 2 },
-{ "ga": "Tá coinne agam ag a deich.", "en": "I have an appointment at ten.", "th": "am", "b": "A2", "t": 2 },
-{ "ga": "Cén t-am a bheidh tú ar ais?", "en": "What time will you be back?", "th": "am", "b": "A2", "t": 2 },
-{ "ga": "Ní fhaca mé le fada thú.", "en": "Long time no see.", "alt": ["Ní fhaca mé thú le fada."], "th": "am", "b": "A2", "t": 2, "n": "Literally: I haven't seen you for long." },
-{ "ga": "Tá sé in am dul abhaile.", "en": "It's time to go home.", "th": "am", "b": "A2", "t": 2 },
-{ "ga": "Tá mé an-ghnóthach an tseachtain seo.", "en": "I'm very busy this week.", "th": "am", "b": "A2", "t": 2 },
-{ "ga": "Éirím ag a seacht gach maidin.", "en": "I get up at seven every morning.", "th": "am", "b": "A2", "t": 2 },
-{ "ga": "Téim a chodladh ag a haon déag.", "en": "I go to bed at eleven.", "th": "am", "b": "A2", "t": 3 },
-{ "ga": "Ní oireann sé sin dom.", "en": "That doesn't suit me.", "th": "am", "b": "A2", "t": 3 },
-{ "ga": "Cén lá a mbeidh tú saor?", "en": "What day will you be free?", "th": "am", "b": "A2", "t": 3 },
-{ "ga": "Is féidir linn é a dhéanamh amárach.", "en": "We can do it tomorrow.", "th": "am", "b": "A2", "t": 3 },
-{ "ga": "Tógfaidh sé uair an chloig.", "en": "It'll take an hour.", "th": "am", "b": "A2", "t": 3 },
-{ "ga": "Arú inné.", "en": "The day before yesterday.", "th": "am", "b": "A2", "t": 3 },
-{ "ga": "Arú amárach.", "en": "The day after tomorrow.", "th": "am", "b": "A2", "t": 3 },
-{ "ga": "An chéad lá de Mhárta.", "en": "The first of March.", "th": "am", "b": "A2", "t": 3 },
-{ "ga": "Uair sa tseachtain.", "en": "Once a week.", "th": "am", "b": "A2", "t": 3 },
-{ "ga": "Ag meán oíche.", "en": "At midnight.", "th": "am", "b": "A2", "t": 3 },
-{ "ga": "Le fada.", "en": "For a long time.", "th": "am", "b": "A2", "t": 3 },
-{ "ga": "Tá an t-am istigh.", "en": "Time's up.", "th": "am", "b": "A2", "t": 3 },
-{ "ga": "Fadó, fadó.", "en": "Once upon a time.", "th": "am", "b": "A2", "t": 3, "n": "Literally: long ago, long ago." }
+ {
+  "ga": "Cén t-am é?",
+  "en": "What time is it?",
+  "alt": [
+   "Cén t-am atá sé?",
+   "Cén t-am atá ann?"
+  ],
+  "th": "am",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá sé a trí a chlog.",
+  "en": "It's three o'clock.",
+  "th": "am",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá sé leathuair tar éis a dó.",
+  "en": "It's half past two.",
+  "th": "am",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Cén lá atá ann inniu?",
+  "en": "What day is it today?",
+  "alt": [
+   "Cén lá é inniu?"
+  ],
+  "th": "am",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Inniu an Luan.",
+  "en": "Today is Monday.",
+  "alt": [
+   "Is é an Luan atá ann inniu."
+  ],
+  "th": "am",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Cén t-am?",
+  "en": "What time?",
+  "th": "am",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Cathain?",
+  "en": "When?",
+  "alt": [
+   "Cén uair?",
+   "Cá huair?"
+  ],
+  "th": "am",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Cén áit?",
+  "en": "Where?",
+  "alt": [
+   "Cá háit?"
+  ],
+  "th": "am",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Cad atá ar siúl agat anocht?",
+  "en": "What are you doing tonight?",
+  "alt": [
+   "Céard atá ar siúl agat anocht?"
+  ],
+  "th": "am",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "An bhfuil tú saor amárach?",
+  "en": "Are you free tomorrow?",
+  "th": "am",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá mé gnóthach inniu.",
+  "en": "I'm busy today.",
+  "alt": [
+   "Táim gnóthach inniu."
+  ],
+  "th": "am",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá mé déanach.",
+  "en": "I'm late.",
+  "alt": [
+   "Táim déanach."
+  ],
+  "th": "am",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá deifir orm.",
+  "en": "I'm in a hurry.",
+  "th": "am",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: there is hurry on me."
+ },
+ {
+  "ga": "Fan nóiméad.",
+  "en": "Wait a minute.",
+  "alt": [
+   "Fan nóiméad, le do thoil."
+  ],
+  "th": "am",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "An tseachtain seo chugainn.",
+  "en": "Next week.",
+  "th": "am",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: this week coming to us."
+ },
+ {
+  "ga": "Beidh mé ann ag a seacht.",
+  "en": "I'll be there at seven.",
+  "th": "am",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Feicfidh mé Dé hAoine thú.",
+  "en": "See you on Friday.",
+  "alt": [
+   "Feicfidh mé thú Dé hAoine."
+  ],
+  "th": "am",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Beidh mé ar ais go luath.",
+  "en": "I'll be back soon.",
+  "th": "am",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá sé ceathrú chun a cúig.",
+  "en": "It's a quarter to five.",
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé ceathrú tar éis a deich.",
+  "en": "It's a quarter past ten.",
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Amárach an Satharn.",
+  "en": "Tomorrow is Saturday.",
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Cén dáta atá ann inniu?",
+  "en": "What's the date today?",
+  "alt": [
+   "Cén dáta é inniu?"
+  ],
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Níl mé saor inniu.",
+  "en": "I'm not free today.",
+  "alt": [
+   "Nílim saor inniu."
+  ],
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá mé saor ag an deireadh seachtaine.",
+  "en": "I'm free at the weekend.",
+  "th": "am",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Ar mhaith leat dul amach anocht?",
+  "en": "Would you like to go out tonight?",
+  "th": "am",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "An mbuailfimid le chéile amárach?",
+  "en": "Shall we meet tomorrow?",
+  "alt": [
+   "An mbuailfidh muid le chéile amárach?"
+  ],
+  "th": "am",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Buailfimid le chéile ag a hocht.",
+  "en": "We'll meet at eight.",
+  "alt": [
+   "Buailfidh muid le chéile ag a hocht."
+  ],
+  "th": "am",
+  "b": "A2",
+  "t": 2,
+  "n": "A puts h before a vowel: a hocht, a haon."
+ },
+ {
+  "ga": "Ceart go leor, feicfidh mé ansin thú.",
+  "en": "OK, see you there.",
+  "alt": [
+   "Ceart go leor, feicfidh mé thú ansin."
+  ],
+  "th": "am",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "An oireann Dé Máirt duit?",
+  "en": "Does Tuesday suit you?",
+  "th": "am",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Oireann sé sin go breá.",
+  "en": "That suits fine.",
+  "th": "am",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá brón orm, tá mé déanach.",
+  "en": "Sorry I'm late.",
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Beidh mé ann i gceann deich nóiméad.",
+  "en": "I'll be there in ten minutes.",
+  "th": "am",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Anois díreach.",
+  "en": "Right now.",
+  "alt": [
+   "Díreach anois."
+  ],
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Ar ball.",
+  "en": "Later on.",
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Go luath.",
+  "en": "Soon.",
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Amárach, b'fhéidir.",
+  "en": "Tomorrow, maybe.",
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "B'fhéidir an tseachtain seo chugainn.",
+  "en": "Maybe next week.",
+  "th": "am",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "An tseachtain seo caite.",
+  "en": "Last week.",
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "An mhí seo chugainn.",
+  "en": "Next month.",
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "An bhliain seo chugainn.",
+  "en": "Next year.",
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Anuraidh.",
+  "en": "Last year.",
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Gach lá.",
+  "en": "Every day.",
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Ar maidin.",
+  "en": "In the morning.",
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tráthnóna inniu.",
+  "en": "This evening.",
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Anocht.",
+  "en": "Tonight.",
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Aréir.",
+  "en": "Last night.",
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Cathain a thosaíonn sé?",
+  "en": "When does it start?",
+  "alt": [
+   "Cén uair a thosaíonn sé?"
+  ],
+  "th": "am",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Cén t-am a chríochnaíonn sé?",
+  "en": "What time does it finish?",
+  "th": "am",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Cá fhad a thógfaidh sé?",
+  "en": "How long will it take?",
+  "alt": [
+   "Cé chomh fada a thógfaidh sé?"
+  ],
+  "th": "am",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Níl mórán ama agam.",
+  "en": "I don't have much time.",
+  "th": "am",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá neart ama againn.",
+  "en": "We have plenty of time.",
+  "th": "am",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Níl aon deifir.",
+  "en": "There's no hurry.",
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Déan deifir!",
+  "en": "Hurry up!",
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "An mbeidh tú ann?",
+  "en": "Will you be there?",
+  "th": "am",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá coinne agam ag a deich.",
+  "en": "I have an appointment at ten.",
+  "th": "am",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Cén t-am a bheidh tú ar ais?",
+  "en": "What time will you be back?",
+  "th": "am",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Ní fhaca mé le fada thú.",
+  "en": "Long time no see.",
+  "alt": [
+   "Ní fhaca mé thú le fada."
+  ],
+  "th": "am",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: I haven't seen you for long."
+ },
+ {
+  "ga": "Tá sé in am dul abhaile.",
+  "en": "It's time to go home.",
+  "th": "am",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá mé an-ghnóthach an tseachtain seo.",
+  "en": "I'm very busy this week.",
+  "th": "am",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Éirím ag a seacht gach maidin.",
+  "en": "I get up at seven every morning.",
+  "th": "am",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Téim a chodladh ag a haon déag.",
+  "en": "I go to bed at eleven.",
+  "th": "am",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Ní oireann sé sin dom.",
+  "en": "That doesn't suit me.",
+  "th": "am",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Cén lá a mbeidh tú saor?",
+  "en": "What day will you be free?",
+  "th": "am",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Is féidir linn é a dhéanamh amárach.",
+  "en": "We can do it tomorrow.",
+  "th": "am",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tógfaidh sé uair an chloig.",
+  "en": "It'll take an hour.",
+  "th": "am",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Arú inné.",
+  "en": "The day before yesterday.",
+  "th": "am",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Arú amárach.",
+  "en": "The day after tomorrow.",
+  "th": "am",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "An chéad lá de Mhárta.",
+  "en": "The first of March.",
+  "th": "am",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Uair sa tseachtain.",
+  "en": "Once a week.",
+  "th": "am",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Ag meán oíche.",
+  "en": "At midnight.",
+  "th": "am",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Le fada.",
+  "en": "For a long time.",
+  "th": "am",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tá an t-am istigh.",
+  "en": "Time's up.",
+  "th": "am",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Fadó, fadó.",
+  "en": "Once upon a time.",
+  "th": "am",
+  "b": "A2",
+  "t": 3,
+  "n": "Literally: long ago, long ago."
+ }
 ]

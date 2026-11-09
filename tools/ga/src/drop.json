@@ -1,0 +1,90 @@
+[
+ {
+  "q": "Tá siad ag ___ (faigh) réidh don chóisir.",
+  "why": "'ag fáil réidh' means getting rid of; for getting ready use 'ag ullmhú don chóisir' or 'ag réiteach' (make it a different verb item)."
+ },
+ {
+  "q": "Tá sé ag ___ (faigh) níos fearr.",
+  "why": "'ag fáil níos fearr' is an anglicism; natural Irish is 'Tá sé ag dul i bhfeabhas' (already item 20), drop or reword."
+ },
+ {
+  "q": "Tá daoine óga ag ___ (faigh) poist sna cathracha móra.",
+  "why": "Indefinite plural object after the verbal noun takes the genitive plural 'post'; 'poist' reads as gen. sg. 'a job'. Use 'ag fáil post' or change English to 'a job'."
+ },
+ {
+  "q": "___ (bí) mé i mo chónaí i Londain fadó.",
+  "why": "'Bhíodh mé i mo chónaí i Londain fadó' (I used to live) is equally acceptable for 'I lived ... long ago'. Remove Bhíodh from the options or make the English clearly one-off."
+ },
+ {
+  "q": "___ (cónaigh) mé faoin tuath nuair a bhí mé óg.",
+  "why": "'Chónaíodh mé faoin tuath nuair a bhí mé óg' (I used to live) is equally acceptable with 'nuair a bhí mé óg'. Drop Chónaíodh from the options or reword."
+ },
+ {
+  "q": "___ (múin) Iníon Ní Bhriain Fraincis dúinn an bhliain seo chugainn.",
+  "why": "Title: \"Iníon Ní Bhriain\" doubles the marker; the Caighdeán title for Ms/Miss is \"Iníon Uí Bhriain\"."
+ },
+ {
+  "q": "An ___ (ith, tú) bricfeasta gach maidin nuair a bhí tú ar scoil?",
+  "why": "None correct: 2nd sg habitual past of ith is \"itheá\" (an itheá tú); options \"d'iteá\"/\"iteá\" drop the h. Fix option to \"itheá\"."
+ },
+ {
+  "q": "___ (múin) Iníon Uí Néill matamaitic dúinn fadó.",
+  "why": "English mismatch: \"Iníon Uí Néill\" is Miss O'Neill; Mrs O'Neill is \"Bean Uí Néill\". Fix the Irish or the English."
+ },
+ {
+  "q": "___ (bí) Gráinne i gcónaí ag gáire.",
+  "why": "Two acceptable: \"Tá Gráinne i gcónaí ag gáire\" is just as natural as Bíonn. Add a habitual cue (gach lá) or accept both."
+ },
+ {
+  "q": "___ (bí) tú i gcónaí ag caint ar d'fhón!",
+  "why": "Two acceptable: \"Tá tú i gcónaí ag caint ar d'fhón!\" is natural Irish for a current complaint. Add a habitual cue or accept both."
+ },
+ {
+  "q": "Má ___ (bí) tú tinn, fan sa leaba.",
+  "why": "Two acceptable: \"Má tá tú tinn, fan sa leaba\" is the more natural reading of \"If you are sick\"; bhíonn needs a habitual frame."
+ },
+ {
+  "q": "___ (bí) sibh i gcónaí ag gearán faoin aimsir.",
+  "why": "Two acceptable: \"Tá sibh i gcónaí ag gearán faoin aimsir\" is as natural as Bíonn. Add a habitual cue or accept both."
+ },
+ {
+  "q": "___ (ceannaigh, muid) pizza don dinnéar.",
+  "why": "Spelling: the Caighdeán word is \"píotsa\", not \"pizza\" (row elsewhere already uses píotsa). Fix: \"Ceannaímis píotsa don dinnéar.\""
+ },
+ {
+  "q": "Cá háit a ___ (díol, saor) ticéid?",
+  "why": "None correct: \"Cá háit a\" takes the indirect relative, so eclipsis: \"Cá háit a ndíoltar ticéid?\". Replace \"dhíoltar\" with \"ndíoltar\"."
+ },
+ {
+  "q": "An ___ (íoc, saor) muid roimh an Nollaig?",
+  "why": "Pronoun: the object of an autonomous verb is \"sinn\" in the Caighdeán, not \"muid\" (subject only). Fix: \"An íocfar sinn roimh an Nollaig?\""
+ },
+ {
+  "q": "___ é Seán an captaen anuraidh.",
+  "why": "Before é the past copula is elided: B'é Seán an captaen anuraidh. 'Ba é' is not standard; make the option B'é (or drop this item)."
+ },
+ {
+  "q": "Is é seo do ___ (mála) nua?",
+  "why": "judge"
+ },
+ {
+  "q": "Léim an madra thar ___ (claí).",
+  "why": "judge"
+ },
+ {
+  "q": "Tá an ___ (milseán) seo milis.",
+  "why": "judge"
+ },
+ {
+  "q": "Beidh an cluiche ar ___ (siúl) Dé Sathairn.",
+  "why": "judge"
+ },
+ {
+  "q": "Ba mhaith liom cupán ___ (te).",
+  "why": "judge"
+ },
+ {
+  "q": "Tá sé ag obair ar ___ (pá) maith.",
+  "why": "ar + pá: séimhiú unsettled"
+ }
+]

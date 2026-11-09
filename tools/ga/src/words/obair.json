@@ -1,138 +1,827 @@
 [
-  {"ga":"obair","en":"work","th":"obair","t":1},
-  {"ga":"post","en":"job, post","th":"obair","t":1},
-  {"ga":"gairm","en":"profession, career","th":"obair","t":2},
-  {"ga":"slí bheatha","en":"occupation, livelihood","th":"obair","t":3},
-  {"ga":"fostaíocht","en":"employment","th":"obair","t":3},
-  {"ga":"dífhostaíocht","en":"unemployment","th":"obair","t":3},
-  {"ga":"fostóir","en":"employer","th":"obair","t":2},
-  {"ga":"fostaí","en":"employee","th":"obair","t":2},
-  {"ga":"oibrí","en":"worker","th":"obair","t":2},
-  {"ga":"comhghleacaí","en":"colleague","th":"obair","t":3},
-  {"ga":"bainisteoir","en":"manager","th":"obair","t":2},
-  {"ga":"bainistíocht","en":"management","th":"obair","t":3},
-  {"ga":"feirmeoir","en":"farmer","th":"obair","t":1},
-  {"ga":"iascaire","en":"fisherman","th":"obair","t":2},
-  {"ga":"dochtúir","en":"doctor","th":"obair","t":1},
-  {"ga":"banaltra","en":"nurse","th":"obair","t":1},
-  {"ga":"fiaclóir","en":"dentist","th":"obair","t":2},
-  {"ga":"dlíodóir","en":"lawyer","th":"obair","t":2},
-  {"ga":"aturnae","en":"solicitor","th":"obair","t":3},
-  {"ga":"innealtóir","en":"engineer","th":"obair","t":2},
-  {"ga":"ailtire","en":"architect","th":"obair","t":3},
-  {"ga":"siúinéir","en":"carpenter","th":"obair","t":2},
-  {"ga":"leictreoir","en":"electrician","th":"obair","t":2},
-  {"ga":"pluiméir","en":"plumber","th":"obair","t":2},
-  {"ga":"tógálaí","en":"builder","th":"obair","t":2},
-  {"ga":"meicneoir","en":"mechanic","th":"obair","t":2},
-  {"ga":"cócaire","en":"chef","th":"obair","t":2},
-  {"ga":"freastalaí","en":"waiter","th":"obair","t":2},
-  {"ga":"báicéir","en":"baker","th":"obair","t":2},
-  {"ga":"píolóta","en":"pilot","th":"obair","t":2},
-  {"ga":"sagart","en":"priest","th":"obair","t":2},
-  {"ga":"rúnaí","en":"secretary","th":"obair","t":2},
-  {"ga":"cuntasóir","en":"accountant","th":"obair","t":3},
-  {"ga":"iriseoir","en":"journalist","th":"obair","t":2},
-  {"ga":"eolaí","en":"scientist","th":"obair","t":2},
-  {"ga":"fear poist","en":"postman","th":"obair","t":2},
-  {"ga":"airgead","en":"money, silver","th":"obair","t":1},
-  {"ga":"euro","en":"euro","th":"obair","t":2,"g":"m"},
-  {"ga":"cent","en":"cent","th":"obair","t":2,"g":"m"},
-  {"ga":"punt","en":"pound","th":"obair","t":2},
-  {"ga":"pingin","en":"penny","th":"obair","t":2},
-  {"ga":"praghas","en":"price","th":"obair","t":1},
-  {"ga":"costas","en":"cost, expense","th":"obair","t":2},
-  {"ga":"daor","en":"expensive","th":"obair","t":1,"pos":"adj"},
-  {"ga":"saor","en":"cheap, free","th":"obair","t":1,"pos":"adj"},
-  {"ga":"tuarastal","en":"salary","th":"obair","t":2},
-  {"ga":"pá","en":"wages","th":"obair","t":2},
-  {"ga":"cáin","en":"tax","th":"obair","t":2},
-  {"ga":"fiach","en":"debt","th":"obair","t":2},
-  {"ga":"iasacht","en":"loan","th":"obair","t":2},
-  {"ga":"cuntas","en":"account","th":"obair","t":2},
-  {"ga":"sparán","en":"purse, wallet","th":"obair","t":2},
-  {"ga":"cárta","en":"card","th":"obair","t":2},
-  {"ga":"cárta creidmheasa","en":"credit card","th":"obair","t":2},
-  {"ga":"seic","en":"cheque","th":"obair","t":2},
-  {"ga":"bille","en":"bill","th":"obair","t":2},
-  {"ga":"admháil","en":"receipt","th":"obair","t":2},
-  {"ga":"sladmhargadh","en":"bargain","th":"obair","t":2},
-  {"ga":"trádáil","en":"trade","th":"obair","t":3},
-  {"ga":"gnó","en":"business","th":"obair","t":2},
-  {"ga":"comhlacht","en":"company","th":"obair","t":2},
-  {"ga":"gnólacht","en":"firm","th":"obair","t":3},
-  {"ga":"brabús","en":"profit","th":"obair","t":3},
-  {"ga":"caillteanas","en":"loss","th":"obair","t":3},
-  {"ga":"infheistíocht","en":"investment","th":"obair","t":3},
-  {"ga":"eacnamaíocht","en":"economics","th":"obair","t":3},
-  {"ga":"ioncam","en":"income","th":"obair","t":3},
-  {"ga":"caiteachas","en":"spending, expenditure","th":"obair","t":3},
-  {"ga":"buiséad","en":"budget","th":"obair","t":3},
-  {"ga":"árachas","en":"insurance","th":"obair","t":3},
-  {"ga":"pinsean","en":"pension","th":"obair","t":3},
-  {"ga":"scair","en":"share (in a company)","th":"obair","t":3},
-  {"ga":"stailc","en":"strike (work)","th":"obair","t":3},
-  {"ga":"ceardchumann","en":"trade union","th":"obair","t":3},
-  {"ga":"cruinniú","en":"meeting","th":"obair","t":2},
-  {"ga":"agallamh","en":"interview","th":"obair","t":2},
-  {"ga":"conradh","en":"contract, treaty","th":"obair","t":2},
-  {"ga":"taithí","en":"experience","th":"obair","t":2},
-  {"ga":"scil","en":"skill","th":"obair","t":2},
-  {"ga":"tasc","en":"task","th":"obair","t":2},
-  {"ga":"dualgas","en":"duty","th":"obair","t":2},
-  {"ga":"freagracht","en":"responsibility","th":"obair","t":2},
-  {"ga":"ríomhaire","en":"computer","th":"obair","t":1},
-  {"ga":"ríomhaire glúine","en":"laptop","th":"obair","t":2},
-  {"ga":"clóire","en":"printer","th":"obair","t":2},
-  {"ga":"cathaoirleach","en":"chairperson","th":"obair","t":3},
-  {"ga":"stiúrthóir","en":"director","th":"obair","t":2},
-  {"ga":"tionscal","en":"industry","th":"obair","t":3},
-  {"ga":"táirge","en":"product","th":"obair","t":2},
-  {"ga":"seirbhís","en":"service","th":"obair","t":2},
-  {"ga":"cliant","en":"client","th":"obair","t":3},
-  {"ga":"díolachán","en":"sale, sales","th":"obair","t":3},
-  {"ga":"lá oibre","en":"working day","th":"obair","t":2},
-  {"ga":"scor","en":"retirement","th":"obair","t":2},
-  {"ga":"earnáil","en":"sector","th":"obair","t":3},
-  {"ga":"tógáil","en":"construction","th":"obair","t":2},
-  {"ga":"talmhaíocht","en":"agriculture","th":"obair","t":2},
-  {"ga":"iascaireacht","en":"fishing","th":"obair","t":2},
-  {"ga":"trealamh","en":"equipment","th":"obair","t":2},
-  {"ga":"meaisín","en":"machine","th":"obair","t":2},
-  {"ga":"oiliúint","en":"training (for a job)","th":"obair","t":3},
-  {"ga":"foireann","en":"team, staff","th":"obair","t":2},
-  {"ga":"saothar","en":"labour, opus","th":"obair","t":3},
-  {"ga":"fiontar","en":"enterprise, venture","th":"obair","t":3},
-  {"ga":"fiontraí","en":"entrepreneur","th":"obair","t":3},
-  {"ga":"margaíocht","en":"marketing","th":"obair","t":3},
-  {"ga":"fógraíocht","en":"advertising","th":"obair","t":2},
-  {"ga":"cuntasaíocht","en":"accountancy","th":"obair","t":3},
-  {"ga":"airgeadas","en":"finance","th":"obair","t":3},
-  {"ga":"creidmheas","en":"credit","th":"obair","t":3},
-  {"ga":"ús","en":"interest (money)","th":"obair","t":3},
-  {"ga":"coigilteas","en":"savings","th":"obair","t":3},
-  {"ga":"saibhreas","en":"wealth","th":"obair","t":2},
-  {"ga":"bochtaineacht","en":"poverty","th":"obair","t":3},
-  {"ga":"cúntóir","en":"assistant","th":"obair","t":2},
-  {"ga":"oifigeach","en":"officer","th":"obair","t":3},
-  {"ga":"feighlí","en":"minder, caretaker","th":"obair","t":3},
-  {"ga":"feighlí leanaí","en":"childminder","th":"obair","t":2},
-  {"ga":"garda slándála","en":"security guard","th":"obair","t":3},
-  {"ga":"múinteoir","en":"teacher","th":"obair","t":1},
-  {"ga":"ceannaí","en":"merchant","th":"obair","t":3},
-  {"ga":"díoltóir","en":"seller, salesperson","th":"obair","t":3},
-  {"ga":"ceannaitheoir","en":"buyer","th":"obair","t":3},
-  {"ga":"deontas","en":"grant","th":"obair","t":3},
-  {"ga":"táille","en":"fee","th":"obair","t":2},
-  {"ga":"lucht oibre","en":"workforce","th":"obair","t":3},
-  {"ga":"lucht gnó","en":"business people","th":"obair","t":3},
-  {"ga":"tairiscint","en":"bid","th":"obair","t":3},
-  {"ga":"stoc","en":"stock","th":"obair","t":3},
-  {"ga":"ceannaire","en":"leader","th":"obair","t":2},
-  {"ga":"saineolaí","en":"expert","th":"obair","t":2},
-  {"ga":"gairmiúil","en":"professional","th":"obair","t":3,"pos":"adj"},
-  {"ga":"páirtaimseartha","en":"part time","th":"obair","t":2,"pos":"adj"},
-  {"ga":"lánaimseartha","en":"full time","th":"obair","t":2,"pos":"adj"},
-  {"ga":"gnóthach","en":"busy","th":"obair","t":2,"pos":"adj"},
-  {"ga":"díomhaoin","en":"idle, unemployed","th":"obair","t":3,"pos":"adj"}
+ {
+  "ga": "obair",
+  "en": "work",
+  "th": "obair",
+  "t": 1
+ },
+ {
+  "ga": "post",
+  "en": "job, post",
+  "th": "obair",
+  "t": 1
+ },
+ {
+  "ga": "gairm",
+  "en": "profession, career",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "slí bheatha",
+  "en": "occupation, livelihood",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "fostaíocht",
+  "en": "employment",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "dífhostaíocht",
+  "en": "unemployment",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "fostóir",
+  "en": "employer",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "fostaí",
+  "en": "employee",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "oibrí",
+  "en": "worker",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "comhghleacaí",
+  "en": "colleague",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "bainisteoir",
+  "en": "manager",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "bainistíocht",
+  "en": "management",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "feirmeoir",
+  "en": "farmer",
+  "th": "obair",
+  "t": 1
+ },
+ {
+  "ga": "iascaire",
+  "en": "fisherman",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "dochtúir",
+  "en": "doctor",
+  "th": "obair",
+  "t": 1
+ },
+ {
+  "ga": "banaltra",
+  "en": "nurse",
+  "th": "obair",
+  "t": 1
+ },
+ {
+  "ga": "fiaclóir",
+  "en": "dentist",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "dlíodóir",
+  "en": "lawyer",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "aturnae",
+  "en": "solicitor",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "innealtóir",
+  "en": "engineer",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "ailtire",
+  "en": "architect",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "siúinéir",
+  "en": "carpenter",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "leictreoir",
+  "en": "electrician",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "pluiméir",
+  "en": "plumber",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "tógálaí",
+  "en": "builder",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "meicneoir",
+  "en": "mechanic",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "cócaire",
+  "en": "chef",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "freastalaí",
+  "en": "waiter",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "báicéir",
+  "en": "baker",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "píolóta",
+  "en": "pilot",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "sagart",
+  "en": "priest",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "rúnaí",
+  "en": "secretary",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "cuntasóir",
+  "en": "accountant",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "iriseoir",
+  "en": "journalist",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "eolaí",
+  "en": "scientist",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "fear poist",
+  "en": "postman",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "airgead",
+  "en": "money, silver",
+  "th": "obair",
+  "t": 1
+ },
+ {
+  "ga": "euro",
+  "en": "euro",
+  "th": "obair",
+  "t": 2,
+  "g": "m"
+ },
+ {
+  "ga": "cent",
+  "en": "cent",
+  "th": "obair",
+  "t": 2,
+  "g": "m"
+ },
+ {
+  "ga": "punt",
+  "en": "pound",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "pingin",
+  "en": "penny",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "praghas",
+  "en": "price",
+  "th": "obair",
+  "t": 1
+ },
+ {
+  "ga": "costas",
+  "en": "cost, expense",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "daor",
+  "en": "expensive",
+  "th": "obair",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "saor",
+  "en": "cheap, free",
+  "th": "obair",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "tuarastal",
+  "en": "salary",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "pá",
+  "en": "wages",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "cáin",
+  "en": "tax",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "fiach",
+  "en": "debt",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "iasacht",
+  "en": "loan",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "cuntas",
+  "en": "account",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "sparán",
+  "en": "purse, wallet",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "cárta",
+  "en": "card",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "cárta creidmheasa",
+  "en": "credit card",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "seic",
+  "en": "cheque",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "bille",
+  "en": "bill",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "admháil",
+  "en": "receipt",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "sladmhargadh",
+  "en": "bargain",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "trádáil",
+  "en": "trade",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "gnó",
+  "en": "business",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "comhlacht",
+  "en": "company",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "gnólacht",
+  "en": "firm",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "brabús",
+  "en": "profit",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "caillteanas",
+  "en": "loss",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "infheistíocht",
+  "en": "investment",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "eacnamaíocht",
+  "en": "economics",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "ioncam",
+  "en": "income",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "caiteachas",
+  "en": "spending, expenditure",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "buiséad",
+  "en": "budget",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "árachas",
+  "en": "insurance",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "pinsean",
+  "en": "pension",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "scair",
+  "en": "share (in a company)",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "stailc",
+  "en": "strike (work)",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "ceardchumann",
+  "en": "trade union",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "cruinniú",
+  "en": "meeting",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "agallamh",
+  "en": "interview",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "conradh",
+  "en": "contract, treaty",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "taithí",
+  "en": "experience",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "scil",
+  "en": "skill",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "tasc",
+  "en": "task",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "dualgas",
+  "en": "duty",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "freagracht",
+  "en": "responsibility",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "ríomhaire",
+  "en": "computer",
+  "th": "obair",
+  "t": 1
+ },
+ {
+  "ga": "ríomhaire glúine",
+  "en": "laptop",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "clóire",
+  "en": "printer",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "cathaoirleach",
+  "en": "chairperson",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "stiúrthóir",
+  "en": "director",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "tionscal",
+  "en": "industry",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "táirge",
+  "en": "product",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "seirbhís",
+  "en": "service",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "cliant",
+  "en": "client",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "díolachán",
+  "en": "sale, sales",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "lá oibre",
+  "en": "working day",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "scor",
+  "en": "retirement",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "earnáil",
+  "en": "sector",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "tógáil",
+  "en": "construction",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "talmhaíocht",
+  "en": "agriculture",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "iascaireacht",
+  "en": "fishing",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "trealamh",
+  "en": "equipment",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "meaisín",
+  "en": "machine",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "oiliúint",
+  "en": "training (for a job)",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "foireann",
+  "en": "team, staff",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "saothar",
+  "en": "labour, opus",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "fiontar",
+  "en": "enterprise, venture",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "fiontraí",
+  "en": "entrepreneur",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "margaíocht",
+  "en": "marketing",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "fógraíocht",
+  "en": "advertising",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "cuntasaíocht",
+  "en": "accountancy",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "airgeadas",
+  "en": "finance",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "creidmheas",
+  "en": "credit",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "ús",
+  "en": "interest (money)",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "coigilteas",
+  "en": "savings",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "saibhreas",
+  "en": "wealth",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "bochtaineacht",
+  "en": "poverty",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "cúntóir",
+  "en": "assistant",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "oifigeach",
+  "en": "officer",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "feighlí",
+  "en": "minder, caretaker",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "feighlí leanaí",
+  "en": "childminder",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "garda slándála",
+  "en": "security guard",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "múinteoir",
+  "en": "teacher",
+  "th": "obair",
+  "t": 1
+ },
+ {
+  "ga": "ceannaí",
+  "en": "merchant",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "díoltóir",
+  "en": "seller, salesperson",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "ceannaitheoir",
+  "en": "buyer",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "deontas",
+  "en": "grant",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "táille",
+  "en": "fee",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "lucht oibre",
+  "en": "workforce",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "lucht gnó",
+  "en": "business people",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "tairiscint",
+  "en": "bid",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "stoc",
+  "en": "stock",
+  "th": "obair",
+  "t": 3
+ },
+ {
+  "ga": "ceannaire",
+  "en": "leader",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "saineolaí",
+  "en": "expert",
+  "th": "obair",
+  "t": 2
+ },
+ {
+  "ga": "gairmiúil",
+  "en": "professional",
+  "th": "obair",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "páirtaimseartha",
+  "en": "part time",
+  "th": "obair",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "lánaimseartha",
+  "en": "full time",
+  "th": "obair",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "gnóthach",
+  "en": "busy",
+  "th": "obair",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "díomhaoin",
+  "en": "idle, unemployed",
+  "th": "obair",
+  "t": 3,
+  "pos": "adj"
+ }
 ]

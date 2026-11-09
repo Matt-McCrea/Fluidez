@@ -1,107 +1,639 @@
 [
-  {"ga":"duine","en":"person","th":"daoine","t":1},
-  {"ga":"fear","en":"man","th":"daoine","t":1},
-  {"ga":"bean","en":"woman","th":"daoine","t":1},
-  {"ga":"páiste","en":"child","th":"daoine","t":1},
-  {"ga":"leanbh","en":"baby","th":"daoine","t":1},
-  {"ga":"naíonán","en":"newborn, infant","th":"daoine","t":3},
-  {"ga":"cailín","en":"girl","th":"daoine","t":1},
-  {"ga":"buachaill","en":"boy","th":"daoine","t":1},
-  {"ga":"athair","en":"father","th":"daoine","t":1,"g":"m"},
-  {"ga":"máthair","en":"mother","th":"daoine","t":1},
-  {"ga":"deartháir","en":"brother","th":"daoine","t":1},
-  {"ga":"deirfiúr","en":"sister","th":"daoine","t":1},
-  {"ga":"mac","en":"son","th":"daoine","t":1},
-  {"ga":"iníon","en":"daughter","th":"daoine","t":1},
-  {"ga":"seanathair","en":"grandfather","th":"daoine","t":1},
-  {"ga":"seanmháthair","en":"grandmother","th":"daoine","t":1},
-  {"ga":"daideo","en":"grandad","th":"daoine","t":2},
-  {"ga":"mamó","en":"granny","th":"daoine","t":2},
-  {"ga":"mamaí","en":"mammy, mum","th":"daoine","t":1},
-  {"ga":"daidí","en":"daddy, dad","th":"daoine","t":1},
-  {"ga":"uncail","en":"uncle","th":"daoine","t":1},
-  {"ga":"aintín","en":"aunt","th":"daoine","t":1},
-  {"ga":"col ceathrar","en":"cousin","th":"daoine","t":1},
-  {"ga":"teaghlach","en":"family, household","th":"daoine","t":1},
-  {"ga":"clann","en":"offspring, clan","th":"daoine","t":2},
-  {"ga":"muintir","en":"folks, kin","th":"daoine","t":2},
-  {"ga":"cara","en":"friend","th":"daoine","t":1},
-  {"ga":"cairdeas","en":"friendship","th":"daoine","t":2},
-  {"ga":"comharsa","en":"neighbour","th":"daoine","t":2},
-  {"ga":"fear céile","en":"husband","th":"daoine","t":1},
-  {"ga":"bean chéile","en":"wife","th":"daoine","t":1},
-  {"ga":"tuismitheoir","en":"parent","th":"daoine","t":2},
-  {"ga":"gasúr","en":"kid, young boy","th":"daoine","t":2},
-  {"ga":"garsún","en":"young lad","th":"daoine","t":2},
-  {"ga":"girseach","en":"lass, young girl","th":"daoine","t":3},
-  {"ga":"déagóir","en":"teenager","th":"daoine","t":2},
-  {"ga":"strainséir","en":"stranger","th":"daoine","t":2},
-  {"ga":"aoi","en":"guest","th":"daoine","t":2},
-  {"ga":"cuairteoir","en":"visitor","th":"daoine","t":2},
-  {"ga":"lánúin","en":"couple (two people)","th":"daoine","t":2},
-  {"ga":"nia","en":"nephew","th":"daoine","t":2},
-  {"ga":"neacht","en":"niece","th":"daoine","t":2},
-  {"ga":"garmhac","en":"grandson","th":"daoine","t":2},
-  {"ga":"gariníon","en":"granddaughter","th":"daoine","t":2},
-  {"ga":"garpháiste","en":"grandchild","th":"daoine","t":2,"g":"m"},
-  {"ga":"leannán","en":"sweetheart, lover","th":"daoine","t":3},
-  {"ga":"compánach","en":"companion","th":"daoine","t":3},
-  {"ga":"comrádaí","en":"comrade","th":"daoine","t":3},
-  {"ga":"duine fásta","en":"adult","th":"daoine","t":2},
-  {"ga":"seanduine","en":"old person","th":"daoine","t":2},
-  {"ga":"seanóir","en":"elder, senior","th":"daoine","t":3},
-  {"ga":"baintreach","en":"widow","th":"daoine","t":2},
-  {"ga":"dílleachta","en":"orphan","th":"daoine","t":3},
-  {"ga":"cliamhain","en":"son-in-law","th":"daoine","t":3},
-  {"ga":"sinsear","en":"ancestor","th":"daoine","t":3},
-  {"ga":"sliocht","en":"descendants, extract","th":"daoine","t":3},
-  {"ga":"cine","en":"ethnic group","th":"daoine","t":3},
-  {"ga":"lucht","en":"set (of people)","th":"daoine","t":3},
-  {"ga":"slua","en":"crowd","th":"daoine","t":2},
-  {"ga":"dream","en":"bunch, faction","th":"daoine","t":3},
-  {"ga":"grúpa","en":"group","th":"daoine","t":2},
-  {"ga":"comhluadar","en":"companionship","th":"daoine","t":3},
-  {"ga":"ainm","en":"name","th":"daoine","t":1},
-  {"ga":"sloinne","en":"surname","th":"daoine","t":2},
-  {"ga":"leasainm","en":"nickname","th":"daoine","t":2},
-  {"ga":"aois","en":"age, century","th":"daoine","t":1},
-  {"ga":"breithlá","en":"birthday","th":"daoine","t":1},
-  {"ga":"pósadh","en":"marriage","th":"daoine","t":2},
-  {"ga":"bainis","en":"wedding","th":"daoine","t":2},
-  {"ga":"colscaradh","en":"divorce","th":"daoine","t":3},
-  {"ga":"sochraid","en":"funeral","th":"daoine","t":2},
-  {"ga":"tórramh","en":"wake (for the dead)","th":"daoine","t":3},
-  {"ga":"óige","en":"youth, childhood","th":"daoine","t":2},
-  {"ga":"seanaois","en":"old age","th":"daoine","t":3},
-  {"ga":"saol","en":"life","th":"daoine","t":2},
-  {"ga":"bás","en":"death","th":"daoine","t":2},
-  {"ga":"breith","en":"birth","th":"daoine","t":2},
-  {"ga":"duine uasal","en":"gentleman","th":"daoine","t":3},
-  {"ga":"laoch","en":"hero","th":"daoine","t":2},
-  {"ga":"fathach","en":"giant","th":"daoine","t":2},
-  {"ga":"amadán","en":"fool","th":"daoine","t":2},
-  {"ga":"créatúr","en":"poor creature","th":"daoine","t":3},
-  {"ga":"gaol","en":"relation, relationship","th":"daoine","t":2},
-  {"ga":"deartháir céile","en":"brother-in-law","th":"daoine","t":2},
-  {"ga":"deirfiúr chéile","en":"sister-in-law","th":"daoine","t":2},
-  {"ga":"fear óg","en":"young man","th":"daoine","t":2},
-  {"ga":"bean óg","en":"young woman","th":"daoine","t":2},
-  {"ga":"duine óg","en":"young person","th":"daoine","t":2},
-  {"ga":"tionónta","en":"tenant","th":"daoine","t":3},
-  {"ga":"úinéir","en":"owner","th":"daoine","t":2},
-  {"ga":"comharsanacht","en":"neighbourhood","th":"daoine","t":2},
-  {"ga":"éinne","en":"anyone, anybody","th":"daoine","t":2,"pos":"x"},
-  {"ga":"gach duine","en":"everyone","th":"daoine","t":1,"pos":"x"},
-  {"ga":"duine éigin","en":"someone","th":"daoine","t":2,"pos":"x"},
-  {"ga":"fear an tí","en":"man of the house, host","th":"daoine","t":3},
-  {"ga":"bean an tí","en":"woman of the house, landlady","th":"daoine","t":2},
-  {"ga":"cailín aimsire","en":"maid","th":"daoine","t":3},
-  {"ga":"sagart paróiste","en":"parish priest","th":"daoine","t":3},
-  {"ga":"máistir","en":"master","th":"daoine","t":2},
-  {"ga":"máistreás","en":"mistress, schoolmistress","th":"daoine","t":3},
-  {"ga":"bean rialta","en":"nun","th":"daoine","t":3},
-  {"ga":"manach","en":"monk","th":"daoine","t":3},
-  {"ga":"cara pinn","en":"pen pal","th":"daoine","t":2},
-  {"ga":"páistí","en":"children","th":"daoine","t":1,"g":"m"},
-  {"ga":"daoine","en":"people","th":"daoine","t":1,"g":"m"}
+ {
+  "ga": "duine",
+  "en": "person",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "fear",
+  "en": "man",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "bean",
+  "en": "woman",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "páiste",
+  "en": "child",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "leanbh",
+  "en": "baby",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "naíonán",
+  "en": "newborn, infant",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "cailín",
+  "en": "girl",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "buachaill",
+  "en": "boy",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "athair",
+  "en": "father",
+  "th": "daoine",
+  "t": 1,
+  "g": "m"
+ },
+ {
+  "ga": "máthair",
+  "en": "mother",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "deartháir",
+  "en": "brother",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "deirfiúr",
+  "en": "sister",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "mac",
+  "en": "son",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "iníon",
+  "en": "daughter",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "seanathair",
+  "en": "grandfather",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "seanmháthair",
+  "en": "grandmother",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "daideo",
+  "en": "grandad",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "mamó",
+  "en": "granny",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "mamaí",
+  "en": "mammy, mum",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "daidí",
+  "en": "daddy, dad",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "uncail",
+  "en": "uncle",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "aintín",
+  "en": "aunt",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "col ceathrar",
+  "en": "cousin",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "teaghlach",
+  "en": "family, household",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "clann",
+  "en": "offspring, clan",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "muintir",
+  "en": "folks, kin",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "cara",
+  "en": "friend",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "cairdeas",
+  "en": "friendship",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "comharsa",
+  "en": "neighbour",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "fear céile",
+  "en": "husband",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "bean chéile",
+  "en": "wife",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "tuismitheoir",
+  "en": "parent",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "gasúr",
+  "en": "kid, young boy",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "garsún",
+  "en": "young lad",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "girseach",
+  "en": "lass, young girl",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "déagóir",
+  "en": "teenager",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "strainséir",
+  "en": "stranger",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "aoi",
+  "en": "guest",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "cuairteoir",
+  "en": "visitor",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "lánúin",
+  "en": "couple (two people)",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "nia",
+  "en": "nephew",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "neacht",
+  "en": "niece",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "garmhac",
+  "en": "grandson",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "gariníon",
+  "en": "granddaughter",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "garpháiste",
+  "en": "grandchild",
+  "th": "daoine",
+  "t": 2,
+  "g": "m"
+ },
+ {
+  "ga": "leannán",
+  "en": "sweetheart, lover",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "compánach",
+  "en": "companion",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "comrádaí",
+  "en": "comrade",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "duine fásta",
+  "en": "adult",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "seanduine",
+  "en": "old person",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "seanóir",
+  "en": "elder, senior",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "baintreach",
+  "en": "widow",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "dílleachta",
+  "en": "orphan",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "cliamhain",
+  "en": "son-in-law",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "sinsear",
+  "en": "ancestor",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "sliocht",
+  "en": "descendants, extract",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "cine",
+  "en": "ethnic group",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "lucht",
+  "en": "set (of people)",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "slua",
+  "en": "crowd",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "dream",
+  "en": "bunch, faction",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "grúpa",
+  "en": "group",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "comhluadar",
+  "en": "companionship",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "ainm",
+  "en": "name",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "sloinne",
+  "en": "surname",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "leasainm",
+  "en": "nickname",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "aois",
+  "en": "age, century",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "breithlá",
+  "en": "birthday",
+  "th": "daoine",
+  "t": 1
+ },
+ {
+  "ga": "pósadh",
+  "en": "marriage",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "bainis",
+  "en": "wedding",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "colscaradh",
+  "en": "divorce",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "sochraid",
+  "en": "funeral",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "tórramh",
+  "en": "wake (for the dead)",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "óige",
+  "en": "youth, childhood",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "seanaois",
+  "en": "old age",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "saol",
+  "en": "life",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "bás",
+  "en": "death",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "breith",
+  "en": "birth",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "duine uasal",
+  "en": "gentleman",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "laoch",
+  "en": "hero",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "fathach",
+  "en": "giant",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "amadán",
+  "en": "fool",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "créatúr",
+  "en": "poor creature",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "gaol",
+  "en": "relation, relationship",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "deartháir céile",
+  "en": "brother-in-law",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "deirfiúr chéile",
+  "en": "sister-in-law",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "fear óg",
+  "en": "young man",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "bean óg",
+  "en": "young woman",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "duine óg",
+  "en": "young person",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "tionónta",
+  "en": "tenant",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "úinéir",
+  "en": "owner",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "comharsanacht",
+  "en": "neighbourhood",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "éinne",
+  "en": "anyone, anybody",
+  "th": "daoine",
+  "t": 2,
+  "pos": "x"
+ },
+ {
+  "ga": "gach duine",
+  "en": "everyone",
+  "th": "daoine",
+  "t": 1,
+  "pos": "x"
+ },
+ {
+  "ga": "duine éigin",
+  "en": "someone",
+  "th": "daoine",
+  "t": 2,
+  "pos": "x"
+ },
+ {
+  "ga": "fear an tí",
+  "en": "man of the house, host",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "bean an tí",
+  "en": "woman of the house, landlady",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "cailín aimsire",
+  "en": "maid",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "sagart paróiste",
+  "en": "parish priest",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "máistir",
+  "en": "master",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "máistreás",
+  "en": "mistress, schoolmistress",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "bean rialta",
+  "en": "nun",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "manach",
+  "en": "monk",
+  "th": "daoine",
+  "t": 3
+ },
+ {
+  "ga": "cara pinn",
+  "en": "pen pal",
+  "th": "daoine",
+  "t": 2
+ },
+ {
+  "ga": "páistí",
+  "en": "children",
+  "th": "daoine",
+  "t": 1,
+  "g": "m"
+ },
+ {
+  "ga": "daoine",
+  "en": "people",
+  "th": "daoine",
+  "t": 1,
+  "g": "m"
+ }
 ]

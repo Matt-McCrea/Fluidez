@@ -1,101 +1,606 @@
 [
-  {"ga":"corp","en":"body","th":"corp","t":1},
-  {"ga":"colainn","en":"the flesh, physical body","th":"corp","t":3},
-  {"ga":"ceann","en":"head","th":"corp","t":1},
-  {"ga":"aghaidh","en":"face","th":"corp","t":1},
-  {"ga":"gruaig","en":"hair","th":"corp","t":1},
-  {"ga":"folt","en":"head of hair, tresses","th":"corp","t":3},
-  {"ga":"ribe","en":"a single hair","th":"corp","t":3},
-  {"ga":"súil","en":"eye","th":"corp","t":1},
-  {"ga":"cluas","en":"ear","th":"corp","t":1},
-  {"ga":"srón","en":"nose","th":"corp","t":1},
-  {"ga":"béal","en":"mouth","th":"corp","t":1},
-  {"ga":"liopa","en":"lip","th":"corp","t":2},
-  {"ga":"fiacail","en":"tooth","th":"corp","t":1},
-  {"ga":"leiceann","en":"cheek","th":"corp","t":2},
-  {"ga":"smig","en":"chin","th":"corp","t":2},
-  {"ga":"mala","en":"eyebrow","th":"corp","t":2},
-  {"ga":"fabhra","en":"eyelash","th":"corp","t":3},
-  {"ga":"éadan","en":"forehead","th":"corp","t":2},
-  {"ga":"cloigeann","en":"skull","th":"corp","t":2},
-  {"ga":"muineál","en":"neck","th":"corp","t":2},
-  {"ga":"scornach","en":"throat","th":"corp","t":2},
-  {"ga":"gualainn","en":"shoulder","th":"corp","t":2},
-  {"ga":"droim","en":"back","th":"corp","t":1},
-  {"ga":"lámh","en":"hand, arm","th":"corp","t":1},
-  {"ga":"géag","en":"limb","th":"corp","t":2},
-  {"ga":"uillinn","en":"elbow","th":"corp","t":2},
-  {"ga":"caol na láimhe","en":"wrist","th":"corp","t":2},
-  {"ga":"méar","en":"finger","th":"corp","t":1},
-  {"ga":"ordóg","en":"thumb","th":"corp","t":2},
-  {"ga":"ionga","en":"fingernail","th":"corp","t":2},
-  {"ga":"bos","en":"palm","th":"corp","t":3},
-  {"ga":"dorn","en":"fist","th":"corp","t":2},
-  {"ga":"ucht","en":"chest","th":"corp","t":2},
-  {"ga":"brollach","en":"bosom","th":"corp","t":3},
-  {"ga":"bolg","en":"belly, stomach","th":"corp","t":1},
-  {"ga":"com","en":"waist","th":"corp","t":3},
-  {"ga":"tóin","en":"bottom, backside","th":"corp","t":2},
-  {"ga":"cos","en":"leg","th":"corp","t":1},
-  {"ga":"troigh","en":"foot","th":"corp","t":2},
-  {"ga":"glúin","en":"knee","th":"corp","t":1,"g":"f"},
-  {"ga":"rúitín","en":"ankle","th":"corp","t":2},
-  {"ga":"sáil","en":"heel","th":"corp","t":2},
-  {"ga":"ladhar","en":"toe","th":"corp","t":2},
-  {"ga":"croí","en":"heart","th":"corp","t":1},
-  {"ga":"inchinn","en":"brain","th":"corp","t":2},
-  {"ga":"scamhóg","en":"lung","th":"corp","t":2},
-  {"ga":"ae","en":"liver","th":"corp","t":3},
-  {"ga":"duán","en":"kidney","th":"corp","t":3},
-  {"ga":"goile","en":"appetite","th":"corp","t":2},
-  {"ga":"cnámh","en":"bone","th":"corp","t":2},
-  {"ga":"fuil","en":"blood","th":"corp","t":1},
-  {"ga":"craiceann","en":"skin","th":"corp","t":2},
-  {"ga":"matán","en":"muscle","th":"corp","t":2},
-  {"ga":"féith","en":"vein","th":"corp","t":3},
-  {"ga":"cuisle","en":"pulse","th":"corp","t":3},
-  {"ga":"anáil","en":"breath","th":"corp","t":2},
-  {"ga":"allas","en":"sweat","th":"corp","t":2},
-  {"ga":"deoir","en":"teardrop","th":"corp","t":2},
-  {"ga":"sláinte","en":"health","th":"corp","t":1},
-  {"ga":"tinneas","en":"illness","th":"corp","t":1},
-  {"ga":"galar","en":"disease","th":"corp","t":2},
-  {"ga":"pian","en":"pain","th":"corp","t":1},
-  {"ga":"slaghdán","en":"a cold","th":"corp","t":1},
-  {"ga":"fiabhras","en":"fever","th":"corp","t":2},
-  {"ga":"casacht","en":"cough","th":"corp","t":2},
-  {"ga":"tinneas cinn","en":"headache","th":"corp","t":2},
-  {"ga":"tinneas fiacaile","en":"toothache","th":"corp","t":2},
-  {"ga":"leigheas","en":"cure, remedy","th":"corp","t":2},
-  {"ga":"cógas","en":"medicine","th":"corp","t":2},
-  {"ga":"piollaire","en":"pill, tablet","th":"corp","t":2},
-  {"ga":"othar","en":"hospital patient","th":"corp","t":2},
-  {"ga":"gortú","en":"injury","th":"corp","t":2},
-  {"ga":"créacht","en":"wound","th":"corp","t":3},
-  {"ga":"ailse","en":"cancer","th":"corp","t":3},
-  {"ga":"ailléirge","en":"allergy","th":"corp","t":2},
-  {"ga":"víreas","en":"virus","th":"corp","t":2},
-  {"ga":"ionfhabhtú","en":"infection","th":"corp","t":3},
-  {"ga":"obráid","en":"operation (surgery)","th":"corp","t":2},
-  {"ga":"vitimín","en":"vitamin","th":"corp","t":2},
-  {"ga":"tuirse","en":"tiredness","th":"corp","t":1},
-  {"ga":"codladh","en":"sleeping","th":"corp","t":1},
-  {"ga":"scíth","en":"rest","th":"corp","t":2},
-  {"ga":"aclaíocht","en":"exercise, fitness","th":"corp","t":2},
-  {"ga":"míchumas","en":"disability","th":"corp","t":3},
-  {"ga":"dall","en":"blind","th":"corp","t":2,"pos":"adj"},
-  {"ga":"bodhar","en":"deaf","th":"corp","t":2,"pos":"adj"},
-  {"ga":"balbh","en":"mute","th":"corp","t":3,"pos":"adj"},
-  {"ga":"bacach","en":"lame","th":"corp","t":3,"pos":"adj"},
-  {"ga":"tinn","en":"sick, ill","th":"corp","t":1,"pos":"adj"},
-  {"ga":"folláin","en":"fit, wholesome","th":"corp","t":2,"pos":"adj"},
-  {"ga":"sláintiúil","en":"healthy","th":"corp","t":2,"pos":"adj"},
-  {"ga":"gortaithe","en":"injured","th":"corp","t":2,"pos":"adj"},
-  {"ga":"torrach","en":"pregnant","th":"corp","t":2,"pos":"adj"},
-  {"ga":"otharcharr","en":"ambulance","th":"corp","t":2},
-  {"ga":"cógaslann","en":"pharmacy","th":"corp","t":2},
-  {"ga":"brú fola","en":"blood pressure","th":"corp","t":2},
-  {"ga":"taobh","en":"side","th":"corp","t":2},
-  {"ga":"ocras","en":"hunger","th":"corp","t":1},
-  {"ga":"tart","en":"thirst","th":"corp","t":1}
+ {
+  "ga": "corp",
+  "en": "body",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "colainn",
+  "en": "the flesh, physical body",
+  "th": "corp",
+  "t": 3
+ },
+ {
+  "ga": "ceann",
+  "en": "head",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "aghaidh",
+  "en": "face",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "gruaig",
+  "en": "hair",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "folt",
+  "en": "head of hair, tresses",
+  "th": "corp",
+  "t": 3
+ },
+ {
+  "ga": "ribe",
+  "en": "a single hair",
+  "th": "corp",
+  "t": 3
+ },
+ {
+  "ga": "súil",
+  "en": "eye",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "cluas",
+  "en": "ear",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "srón",
+  "en": "nose",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "béal",
+  "en": "mouth",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "liopa",
+  "en": "lip",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "fiacail",
+  "en": "tooth",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "leiceann",
+  "en": "cheek",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "smig",
+  "en": "chin",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "mala",
+  "en": "eyebrow",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "fabhra",
+  "en": "eyelash",
+  "th": "corp",
+  "t": 3
+ },
+ {
+  "ga": "éadan",
+  "en": "forehead",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "cloigeann",
+  "en": "skull",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "muineál",
+  "en": "neck",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "scornach",
+  "en": "throat",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "gualainn",
+  "en": "shoulder",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "droim",
+  "en": "back",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "lámh",
+  "en": "hand, arm",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "géag",
+  "en": "limb",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "uillinn",
+  "en": "elbow",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "caol na láimhe",
+  "en": "wrist",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "méar",
+  "en": "finger",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "ordóg",
+  "en": "thumb",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "ionga",
+  "en": "fingernail",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "bos",
+  "en": "palm",
+  "th": "corp",
+  "t": 3
+ },
+ {
+  "ga": "dorn",
+  "en": "fist",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "ucht",
+  "en": "chest",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "brollach",
+  "en": "bosom",
+  "th": "corp",
+  "t": 3
+ },
+ {
+  "ga": "bolg",
+  "en": "belly, stomach",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "com",
+  "en": "waist",
+  "th": "corp",
+  "t": 3
+ },
+ {
+  "ga": "tóin",
+  "en": "bottom, backside",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "cos",
+  "en": "leg",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "troigh",
+  "en": "foot",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "glúin",
+  "en": "knee",
+  "th": "corp",
+  "t": 1,
+  "g": "f"
+ },
+ {
+  "ga": "rúitín",
+  "en": "ankle",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "sáil",
+  "en": "heel",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "ladhar",
+  "en": "toe",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "croí",
+  "en": "heart",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "inchinn",
+  "en": "brain",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "scamhóg",
+  "en": "lung",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "ae",
+  "en": "liver",
+  "th": "corp",
+  "t": 3
+ },
+ {
+  "ga": "duán",
+  "en": "kidney",
+  "th": "corp",
+  "t": 3
+ },
+ {
+  "ga": "goile",
+  "en": "appetite",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "cnámh",
+  "en": "bone",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "fuil",
+  "en": "blood",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "craiceann",
+  "en": "skin",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "matán",
+  "en": "muscle",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "féith",
+  "en": "vein",
+  "th": "corp",
+  "t": 3
+ },
+ {
+  "ga": "cuisle",
+  "en": "pulse",
+  "th": "corp",
+  "t": 3
+ },
+ {
+  "ga": "anáil",
+  "en": "breath",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "allas",
+  "en": "sweat",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "deoir",
+  "en": "teardrop",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "sláinte",
+  "en": "health",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "tinneas",
+  "en": "illness",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "galar",
+  "en": "disease",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "pian",
+  "en": "pain",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "slaghdán",
+  "en": "a cold",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "fiabhras",
+  "en": "fever",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "casacht",
+  "en": "cough",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "tinneas cinn",
+  "en": "headache",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "tinneas fiacaile",
+  "en": "toothache",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "leigheas",
+  "en": "cure, remedy",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "cógas",
+  "en": "medicine",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "piollaire",
+  "en": "pill, tablet",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "othar",
+  "en": "hospital patient",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "gortú",
+  "en": "injury",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "créacht",
+  "en": "wound",
+  "th": "corp",
+  "t": 3
+ },
+ {
+  "ga": "ailse",
+  "en": "cancer",
+  "th": "corp",
+  "t": 3
+ },
+ {
+  "ga": "ailléirge",
+  "en": "allergy",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "víreas",
+  "en": "virus",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "ionfhabhtú",
+  "en": "infection",
+  "th": "corp",
+  "t": 3
+ },
+ {
+  "ga": "obráid",
+  "en": "operation (surgery)",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "vitimín",
+  "en": "vitamin",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "tuirse",
+  "en": "tiredness",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "codladh",
+  "en": "sleeping",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "scíth",
+  "en": "rest",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "aclaíocht",
+  "en": "exercise, fitness",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "míchumas",
+  "en": "disability",
+  "th": "corp",
+  "t": 3
+ },
+ {
+  "ga": "dall",
+  "en": "blind",
+  "th": "corp",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "bodhar",
+  "en": "deaf",
+  "th": "corp",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "balbh",
+  "en": "mute",
+  "th": "corp",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "bacach",
+  "en": "lame",
+  "th": "corp",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "tinn",
+  "en": "sick, ill",
+  "th": "corp",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "folláin",
+  "en": "fit, wholesome",
+  "th": "corp",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "sláintiúil",
+  "en": "healthy",
+  "th": "corp",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "gortaithe",
+  "en": "injured",
+  "th": "corp",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "torrach",
+  "en": "pregnant",
+  "th": "corp",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "otharcharr",
+  "en": "ambulance",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "cógaslann",
+  "en": "pharmacy",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "brú fola",
+  "en": "blood pressure",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "taobh",
+  "en": "side",
+  "th": "corp",
+  "t": 2
+ },
+ {
+  "ga": "ocras",
+  "en": "hunger",
+  "th": "corp",
+  "t": 1
+ },
+ {
+  "ga": "tart",
+  "en": "thirst",
+  "th": "corp",
+  "t": 1
+ }
 ]

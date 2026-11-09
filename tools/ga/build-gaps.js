@@ -197,7 +197,7 @@ function freagair(it, why) {
   if (syn && ap === 'muid' && verb.f[t].se) {
     const base = it.pol === 'yes' ? cap(GA.formAfter('', verb, t, 'se')) :
       (/^níl/.test(GA.formAfter('ní', verb, t, 'se')) ? 'Níl' : cap(GA.particleWord('ní', verb, t)) + ' ' + GA.formAfter('ní', verb, t, 'se'));
-    x.push(base + ' muid');
+    x.push(base + ' muid', base);   // a bare echo (Tá.) answers a sibh question too
   }
   // distractors: the other polarity is NOT one (the cue decides); wrong tense, wrong person
   const pool = [];
@@ -206,9 +206,9 @@ function freagair(it, why) {
     if (it.pol === 'yes') pool.push(cap(GA.formAfter('', verb, t2, ap)));
     else { const w2 = GA.formAfter('ní', verb, t2, ap); if (w2) pool.push(/^níl/.test(w2) ? cap(w2) : cap(GA.particleWord('ní', verb, t2)) + ' ' + w2); }
   });
-  const op = it.p === ap ? null : it.p;
-  if (op && verb.f[t][op]) pool.push(it.pol === 'yes' ? cap(GA.formAfter('', verb, t, op)) : null);
-  const opts = uniq([a].concat(shuffleSeed(uniq(pool).filter(z => z && z !== a), it.q))).slice(0, 4);
+  // never the bare analytic form of the same tense: "Tá." answers "An bhfuil sibh...?" as well as "Táimid."
+  const bare = cap(GA.formAfter('', verb, t, 'se') || '');
+  const opts = uniq([a].concat(shuffleSeed(uniq(pool).filter(z => z && z !== a && z !== bare), it.q))).slice(0, 4);
   if (opts.length < 4) return why('freagair options');
   return { k: 'freagair', q: it.q, a, x: x.length ? x : undefined, o: opts, e: it.e, w: it.w, wg: it.wg, b: it.b, t: it.v === 'bí' ? 'bi' : 'verb', v: it.v };
 }
@@ -294,12 +294,19 @@ function seimhiu(it, why) {
   let exp = it.idiom ? null : expected(toks[gi - 2], toks[gi - 1], it.base, m[1]);
   if (exp && exp !== 'none' && RULES[exp](it.base) === it.base) exp = 'none';   // urú cannot touch m, l: i Maigh Eo
   if (exp && exp !== it.r) return why(`after "${toks[gi - 1]}" the rule is ${exp}, not ${it.r}`);
-  const o = uniq([a].concat(shuffleSeed(GA.shapes(it.base).filter(x => x !== a), it.q))).slice(0, 4);
+  // preposition + an: the Caighdeán (2012, 2017) allows séimhiú beside urú (ar an bhord),
+  // so the lenited form is accepted when typed and never offered as a wrong option
+  const alt = (it.r === 'ecl' && toks[gi - 1] === 'an' && ART_PREP.indexOf(toks[gi - 2]) !== -1) ? GA.lenite(it.base) : null;
+  const o = uniq([a].concat(shuffleSeed(GA.shapes(it.base).filter(x => x !== a && x !== alt), it.q))).slice(0, 4);
   if (o.length < 2) return why('the word has only one shape');
-  return { k: 'seimhiu', q: it.q, a, o, e: it.e, w: it.w, wg: it.wg, b: it.b, t: it.t, base: it.base, r: it.r };
+  return { k: 'seimhiu', q: it.q, a, x: alt && alt !== it.base ? [alt] : undefined, o, e: it.e, w: it.w, wg: it.wg, b: it.b, t: it.t, base: it.base, r: it.r };
 }
 const MAKERS = { briathra, forainm, freagair, tais: authored('tais'), seimhiu };
 
+const DROP = (function () {
+  const f = path.join(__dirname, 'src', 'drop.json');
+  return fs.existsSync(f) ? new Set(JSON.parse(fs.readFileSync(f, 'utf8')).map(d => d.q)) : new Set();
+})();
 function buildKind(kind) {
   const dir = path.join(__dirname, 'src', kind);
   const out = [], rejected = [], seen = new Set();
@@ -308,6 +315,7 @@ function buildKind(kind) {
     let arr;
     try { arr = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')); } catch (e) { rejected.push(`${f}: bad JSON ${e.message}`); return; }
     arr.forEach((it, i) => {
+      if (DROP.has(it.q)) return;
       let msg = null;
       const why = m => { msg = m; return null; };
       const okc = common(it, why);

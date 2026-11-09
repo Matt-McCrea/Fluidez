@@ -1,268 +1,1643 @@
 [
-  {"ga":"Éire","en":"Ireland","th":"sochai","t":1},
-  {"ga":"Éireannach","en":"Irish person","th":"sochai","t":1},
-  {"ga":"Sasana","en":"England","th":"sochai","t":1},
-  {"ga":"Sasanach","en":"English person","th":"sochai","t":2},
-  {"ga":"Albain","en":"Scotland","th":"sochai","t":2},
-  {"ga":"Albanach","en":"Scot, Scottish person","th":"sochai","t":2},
-  {"ga":"an Bhreatain Bheag","en":"Wales","th":"sochai","t":2},
-  {"ga":"an Bhreatain","en":"Britain","th":"sochai","t":2},
-  {"ga":"Meiriceá","en":"America","th":"sochai","t":1},
-  {"ga":"Meiriceánach","en":"American","th":"sochai","t":2},
-  {"ga":"an Fhrainc","en":"France","th":"sochai","t":2},
-  {"ga":"Francach","en":"French person","th":"sochai","t":2,"g":"m"},
-  {"ga":"an Spáinn","en":"Spain","th":"sochai","t":2},
-  {"ga":"Spáinneach","en":"Spaniard","th":"sochai","t":2},
-  {"ga":"an Ghearmáin","en":"Germany","th":"sochai","t":2},
-  {"ga":"Gearmánach","en":"German person","th":"sochai","t":2},
-  {"ga":"an Iodáil","en":"Italy","th":"sochai","t":2},
-  {"ga":"an Eoraip","en":"Europe","th":"sochai","t":2},
-  {"ga":"Eorpach","en":"European","th":"sochai","t":2,"pos":"adj"},
-  {"ga":"an tAontas Eorpach","en":"the European Union","th":"sochai","t":2},
-  {"ga":"Baile Átha Cliath","en":"Dublin","th":"sochai","t":1},
-  {"ga":"Corcaigh","en":"Cork","th":"sochai","t":2},
-  {"ga":"Gaillimh","en":"Galway","th":"sochai","t":2},
-  {"ga":"Luimneach","en":"Limerick","th":"sochai","t":2,"g":"m"},
-  {"ga":"Port Láirge","en":"Waterford","th":"sochai","t":2},
-  {"ga":"Doire","en":"Derry","th":"sochai","t":2,"g":"m"},
-  {"ga":"Béal Feirste","en":"Belfast","th":"sochai","t":2},
-  {"ga":"Ciarraí","en":"Kerry","th":"sochai","t":2,"g":"m"},
-  {"ga":"Dún na nGall","en":"Donegal","th":"sochai","t":2},
-  {"ga":"Maigh Eo","en":"Mayo","th":"sochai","t":2},
-  {"ga":"Cill Chainnigh","en":"Kilkenny","th":"sochai","t":3},
-  {"ga":"Sligeach","en":"Sligo","th":"sochai","t":3},
-  {"ga":"Tiobraid Árann","en":"Tipperary","th":"sochai","t":3},
-  {"ga":"an Clár","en":"Clare","th":"sochai","t":3},
-  {"ga":"Cúige Mumhan","en":"Munster","th":"sochai","t":3},
-  {"ga":"Cúige Laighean","en":"Leinster","th":"sochai","t":3},
-  {"ga":"Cúige Chonnacht","en":"Connacht","th":"sochai","t":3},
-  {"ga":"Cúige Uladh","en":"Ulster","th":"sochai","t":3},
-  {"ga":"cúige","en":"province","th":"sochai","t":3},
-  {"ga":"Tuaisceart Éireann","en":"Northern Ireland","th":"sochai","t":2},
-  {"ga":"Londain","en":"London","th":"sochai","t":2,"g":"f"},
-  {"ga":"rialtas","en":"government","th":"sochai","t":2},
-  {"ga":"Dáil","en":"Dáil (parliament)","th":"sochai","t":2,"g":"f"},
-  {"ga":"Seanad","en":"Senate","th":"sochai","t":2,"g":"m"},
-  {"ga":"Taoiseach","en":"Taoiseach (prime minister)","th":"sochai","t":2,"g":"m"},
-  {"ga":"Tánaiste","en":"Tánaiste (deputy prime minister)","th":"sochai","t":3,"g":"m"},
-  {"ga":"uachtarán","en":"president","th":"sochai","t":2},
-  {"ga":"aire","en":"minister","th":"sochai","t":2,"g":"m"},
-  {"ga":"teachta dála","en":"TD (member of the Dáil)","th":"sochai","t":3},
-  {"ga":"polaiteoir","en":"politician","th":"sochai","t":2},
-  {"ga":"polaitíocht","en":"politics","th":"sochai","t":2},
-  {"ga":"páirtí","en":"political party","th":"sochai","t":2},
-  {"ga":"toghchán","en":"election","th":"sochai","t":2},
-  {"ga":"olltoghchán","en":"general election","th":"sochai","t":3},
-  {"ga":"vóta","en":"vote","th":"sochai","t":2},
-  {"ga":"vótáil","en":"voting","th":"sochai","t":2},
-  {"ga":"reifreann","en":"referendum","th":"sochai","t":2},
-  {"ga":"bunreacht","en":"constitution","th":"sochai","t":3},
-  {"ga":"dlí","en":"law","th":"sochai","t":2},
-  {"ga":"acht","en":"act (law)","th":"sochai","t":3},
-  {"ga":"reachtaíocht","en":"legislation","th":"sochai","t":3},
-  {"ga":"reacht","en":"statute","th":"sochai","t":3},
-  {"ga":"rialachán","en":"regulation","th":"sochai","t":3},
-  {"ga":"riail","en":"rule","th":"sochai","t":2},
-  {"ga":"coiste","en":"committee","th":"sochai","t":3},
-  {"ga":"comhairle","en":"council, advice","th":"sochai","t":2},
-  {"ga":"comhairleoir","en":"councillor, adviser","th":"sochai","t":3},
-  {"ga":"údarás","en":"authority","th":"sochai","t":3},
-  {"ga":"stát","en":"state","th":"sochai","t":2},
-  {"ga":"poblacht","en":"republic","th":"sochai","t":3},
-  {"ga":"tír","en":"country","th":"sochai","t":1},
-  {"ga":"náisiún","en":"nation","th":"sochai","t":2},
-  {"ga":"náisiúnta","en":"national","th":"sochai","t":2,"pos":"adj"},
-  {"ga":"idirnáisiúnta","en":"international","th":"sochai","t":2,"pos":"adj"},
-  {"ga":"aontas","en":"union","th":"sochai","t":3},
-  {"ga":"cúirt","en":"court","th":"sochai","t":2},
-  {"ga":"breitheamh","en":"judge","th":"sochai","t":2},
-  {"ga":"giúiré","en":"jury","th":"sochai","t":3},
-  {"ga":"príosún","en":"prison","th":"sochai","t":2},
-  {"ga":"coir","en":"crime","th":"sochai","t":2},
-  {"ga":"coirpeach","en":"criminal","th":"sochai","t":3},
-  {"ga":"gadaí","en":"thief","th":"sochai","t":2},
-  {"ga":"dúnmharú","en":"murder","th":"sochai","t":2},
-  {"ga":"garda","en":"guard (police officer)","th":"sochai","t":2},
-  {"ga":"na Gardaí","en":"the Gardaí (police)","th":"sochai","t":2},
-  {"ga":"cogadh","en":"war","th":"sochai","t":2},
-  {"ga":"síocháin","en":"peace","th":"sochai","t":2},
-  {"ga":"arm","en":"army","th":"sochai","t":2},
-  {"ga":"saighdiúir","en":"soldier","th":"sochai","t":2},
-  {"ga":"foréigean","en":"violence","th":"sochai","t":2},
-  {"ga":"agóid","en":"protest","th":"sochai","t":2},
-  {"ga":"cearta daonna","en":"human rights","th":"sochai","t":3},
-  {"ga":"saoirse","en":"freedom","th":"sochai","t":2},
-  {"ga":"daonlathas","en":"democracy","th":"sochai","t":3},
-  {"ga":"geilleagar","en":"economy","th":"sochai","t":3},
-  {"ga":"sochaí","en":"society","th":"sochai","t":3},
-  {"ga":"pobal","en":"community","th":"sochai","t":2},
-  {"ga":"cultúr","en":"culture","th":"sochai","t":2},
-  {"ga":"oidhreacht","en":"heritage","th":"sochai","t":3},
-  {"ga":"traidisiún","en":"tradition","th":"sochai","t":2},
-  {"ga":"Aifreann","en":"Mass","th":"sochai","t":2},
-  {"ga":"Dia","en":"God","th":"sochai","t":1,"g":"m"},
-  {"ga":"paidir","en":"prayer","th":"sochai","t":2},
-  {"ga":"easpag","en":"bishop","th":"sochai","t":3},
-  {"ga":"Caitliceach","en":"Catholic","th":"sochai","t":3},
-  {"ga":"Protastúnach","en":"Protestant","th":"sochai","t":3},
-  {"ga":"Críostaí","en":"Christian","th":"sochai","t":3},
-  {"ga":"Moslamach","en":"Muslim","th":"sochai","t":3},
-  {"ga":"Giúdach","en":"Jew","th":"sochai","t":3},
-  {"ga":"nuacht","en":"news","th":"sochai","t":2},
-  {"ga":"iriseoireacht","en":"journalism","th":"sochai","t":3},
-  {"ga":"tuairisc","en":"report","th":"sochai","t":2},
-  {"ga":"tuarascáil","en":"official report","th":"sochai","t":3},
-  {"ga":"fadhb","en":"problem","th":"sochai","t":2},
-  {"ga":"dúshlán","en":"challenge","th":"sochai","t":2},
-  {"ga":"aeráid","en":"climate","th":"sochai","t":2},
-  {"ga":"athrú aeráide","en":"climate change","th":"sochai","t":2},
-  {"ga":"fuinneamh","en":"energy","th":"sochai","t":2},
-  {"ga":"imirce","en":"emigration, migration","th":"sochai","t":3},
-  {"ga":"inimirceach","en":"immigrant","th":"sochai","t":3},
-  {"ga":"teifeach","en":"refugee","th":"sochai","t":2},
-  {"ga":"airteagal","en":"article (of law)","th":"sochai","t":3},
-  {"ga":"alt","en":"article (newspaper)","th":"sochai","t":2},
-  {"ga":"ceannas","en":"leadership, command","th":"sochai","t":3},
-  {"ga":"rí","en":"king","th":"sochai","t":2,"g":"m","pl":"ríthe"},
-  {"ga":"banríon","en":"queen","th":"sochai","t":2},
-  {"ga":"prionsa","en":"prince","th":"sochai","t":2},
-  {"ga":"banphrionsa","en":"princess","th":"sochai","t":2},
-  {"ga":"impireacht","en":"empire","th":"sochai","t":3},
-  {"ga":"tiarna","en":"lord","th":"sochai","t":3},
-  {"ga":"comhaontú","en":"agreement","th":"sochai","t":3},
-  {"ga":"polasaí","en":"policy","th":"sochai","t":3},
-  {"ga":"scéim","en":"scheme","th":"sochai","t":3},
-  {"ga":"plean","en":"plan","th":"sochai","t":2},
-  {"ga":"cinneadh","en":"decision","th":"sochai","t":2},
-  {"ga":"ball","en":"member","th":"sochai","t":2},
-  {"ga":"feachtas","en":"campaign","th":"sochai","t":3},
-  {"ga":"tionchar","en":"influence","th":"sochai","t":3},
-  {"ga":"cumhacht","en":"power","th":"sochai","t":2},
-  {"ga":"smacht","en":"control, discipline","th":"sochai","t":2},
-  {"ga":"slándáil","en":"security","th":"sochai","t":3},
-  {"ga":"cosaint","en":"defence, protection","th":"sochai","t":3},
-  {"ga":"sibhialta","en":"civil","th":"sochai","t":3,"pos":"adj"},
-  {"ga":"poiblí","en":"public","th":"sochai","t":2,"pos":"adj"},
-  {"ga":"príobháideach","en":"private","th":"sochai","t":2,"pos":"adj"},
-  {"ga":"oifigiúil","en":"official","th":"sochai","t":2,"pos":"adj"},
-  {"ga":"áitiúil","en":"local","th":"sochai","t":2,"pos":"adj"},
-  {"ga":"sóisialta","en":"social","th":"sochai","t":2,"pos":"adj"},
-  {"ga":"polaitiúil","en":"political","th":"sochai","t":3,"pos":"adj"},
-  {"ga":"eacnamaíoch","en":"economic","th":"sochai","t":3,"pos":"adj"},
-  {"ga":"cultúrtha","en":"cultural","th":"sochai","t":3,"pos":"adj"},
-  {"ga":"stairiúil","en":"historic","th":"sochai","t":3,"pos":"adj"},
-  {"ga":"réigiúnach","en":"regional","th":"sochai","t":3,"pos":"adj"},
-  {"ga":"neamhspleách","en":"independent","th":"sochai","t":3,"pos":"adj"},
-  {"ga":"míleata","en":"military","th":"sochai","t":3,"pos":"adj"},
-  {"ga":"teorainn","en":"border, limit","th":"sochai","t":2},
-  {"ga":"imeacht","en":"event, departure","th":"sochai","t":2},
-  {"ga":"ócáid","en":"occasion","th":"sochai","t":2},
-  {"ga":"tubaiste","en":"disaster","th":"sochai","t":3},
-  {"ga":"éigeandáil","en":"emergency","th":"sochai","t":3},
-  {"ga":"saoránach","en":"citizen","th":"sochai","t":3},
-  {"ga":"saoránacht","en":"citizenship","th":"sochai","t":3},
-  {"ga":"eagraíocht","en":"organisation","th":"sochai","t":3},
-  {"ga":"institiúid","en":"institution","th":"sochai","t":3},
-  {"ga":"foras","en":"institute, foundation","th":"sochai","t":3},
-  {"ga":"roinn","en":"department","th":"sochai","t":3},
-  {"ga":"aireacht","en":"ministry","th":"sochai","t":3},
-  {"ga":"státseirbhís","en":"civil service","th":"sochai","t":3},
-  {"ga":"coimisinéir","en":"commissioner","th":"sochai","t":3},
-  {"ga":"comhalta","en":"fellow (of a body)","th":"sochai","t":3},
-  {"ga":"ionadaí","en":"representative","th":"sochai","t":3},
-  {"ga":"comhdháil","en":"conference","th":"sochai","t":3},
-  {"ga":"tionól","en":"assembly","th":"sochai","t":3},
-  {"ga":"parlaimint","en":"parliament","th":"sochai","t":3},
-  {"ga":"comhar","en":"cooperation","th":"sochai","t":3},
-  {"ga":"comharchumann","en":"cooperative","th":"sochai","t":3},
-  {"ga":"réimse","en":"range, sphere","th":"sochai","t":3},
-  {"ga":"struchtúr","en":"structure","th":"sochai","t":3},
-  {"ga":"córas","en":"system","th":"sochai","t":2},
-  {"ga":"próiseas","en":"process","th":"sochai","t":3},
-  {"ga":"modh","en":"method","th":"sochai","t":2},
-  {"ga":"prionsabal","en":"principle","th":"sochai","t":3},
-  {"ga":"cuspóir","en":"objective, purpose","th":"sochai","t":3},
-  {"ga":"aidhm","en":"aim","th":"sochai","t":2},
-  {"ga":"sprioc","en":"target","th":"sochai","t":3},
-  {"ga":"straitéis","en":"strategy","th":"sochai","t":3},
-  {"ga":"riachtanas","en":"requirement, need","th":"sochai","t":3},
-  {"ga":"coinníoll","en":"condition (terms)","th":"sochai","t":3},
-  {"ga":"caighdeán","en":"standard","th":"sochai","t":3},
-  {"ga":"ceadúnas","en":"licence","th":"sochai","t":3},
-  {"ga":"iarratas","en":"application","th":"sochai","t":2},
-  {"ga":"iarratasóir","en":"applicant","th":"sochai","t":3},
-  {"ga":"iarrthóir","en":"candidate","th":"sochai","t":3},
-  {"ga":"ceapachán","en":"appointment","th":"sochai","t":3},
-  {"ga":"folúntas","en":"vacancy","th":"sochai","t":3},
-  {"ga":"dlíthiúil","en":"legal","th":"sochai","t":3,"pos":"adj"},
-  {"ga":"achomharc","en":"appeal","th":"sochai","t":3},
-  {"ga":"breithiúnas","en":"judgment","th":"sochai","t":3},
-  {"ga":"fianaise","en":"evidence","th":"sochai","t":3},
-  {"ga":"finné","en":"witness","th":"sochai","t":3},
-  {"ga":"cosantóir","en":"defendant","th":"sochai","t":3},
-  {"ga":"ionchúiseamh","en":"prosecution","th":"sochai","t":3},
-  {"ga":"ciontach","en":"guilty","th":"sochai","t":3,"pos":"adj"},
-  {"ga":"neamhchiontach","en":"not guilty","th":"sochai","t":3,"pos":"adj"},
-  {"ga":"cúiteamh","en":"compensation","th":"sochai","t":3},
-  {"ga":"fíneáil","en":"fine (penalty)","th":"sochai","t":3},
-  {"ga":"pionós","en":"punishment","th":"sochai","t":3},
-  {"ga":"maoin","en":"property","th":"sochai","t":3},
-  {"ga":"bonneagar","en":"infrastructure","th":"sochai","t":3},
-  {"ga":"iompar","en":"transport, behaviour","th":"sochai","t":3},
-  {"ga":"anailís","en":"analysis","th":"sochai","t":3},
-  {"ga":"staitistic","en":"statistic","th":"sochai","t":3},
-  {"ga":"suirbhé","en":"survey","th":"sochai","t":3},
-  {"ga":"daonáireamh","en":"census","th":"sochai","t":3},
-  {"ga":"pobalbhreith","en":"opinion poll","th":"sochai","t":3},
-  {"ga":"toghlach","en":"constituency","th":"sochai","t":3},
-  {"ga":"comhrialtas","en":"coalition","th":"sochai","t":3},
-  {"ga":"freasúra","en":"opposition","th":"sochai","t":3},
-  {"ga":"urlabhraí","en":"spokesperson","th":"sochai","t":3},
-  {"ga":"craoltóir","en":"broadcaster","th":"sochai","t":3},
-  {"ga":"craoladh","en":"a broadcast, broadcasting","th":"sochai","t":3},
-  {"ga":"foilseachán","en":"publication","th":"sochai","t":3},
-  {"ga":"eagrán","en":"edition","th":"sochai","t":3},
-  {"ga":"eagarthóir","en":"editor","th":"sochai","t":3},
-  {"ga":"doiciméad","en":"document","th":"sochai","t":3},
-  {"ga":"ábhartha","en":"relevant","th":"sochai","t":3,"pos":"adj"},
-  {"ga":"iomchuí","en":"appropriate","th":"sochai","t":3,"pos":"adj"},
-  {"ga":"oiriúnach","en":"suitable","th":"sochai","t":2,"pos":"adj"},
-  {"ga":"éifeachtach","en":"effective","th":"sochai","t":3,"pos":"adj"},
-  {"ga":"sonrach","en":"specific","th":"sochai","t":3,"pos":"adj"},
-  {"ga":"ginearálta","en":"general","th":"sochai","t":3,"pos":"adj"},
-  {"ga":"coinbhinsiún","en":"convention","th":"sochai","t":3},
-  {"ga":"dílseoir","en":"loyalist","th":"sochai","t":3},
-  {"ga":"náisiúnaí","en":"nationalist","th":"sochai","t":3},
-  {"ga":"poblachtach","en":"republican","th":"sochai","t":3},
-  {"ga":"aontachtaí","en":"unionist","th":"sochai","t":3,"g":"m"},
-  {"ga":"Ard-Fheis","en":"party conference","th":"sochai","t":3},
-  {"ga":"cumann","en":"association","th":"sochai","t":2},
-  {"ga":"comhionannas","en":"equality","th":"sochai","t":3},
-  {"ga":"éagothroime","en":"inequality","th":"sochai","t":3},
-  {"ga":"ciníochas","en":"racism","th":"sochai","t":3},
-  {"ga":"leatrom","en":"discrimination, oppression","th":"sochai","t":3},
-  {"ga":"leas","en":"welfare, benefit","th":"sochai","t":3},
-  {"ga":"cúram","en":"care, charge","th":"sochai","t":2},
-  {"ga":"seanchas","en":"lore","th":"sochai","t":3},
-  {"ga":"béaloideas","en":"folklore","th":"sochai","t":3},
-  {"ga":"miotaseolaíocht","en":"mythology","th":"sochai","t":3},
-  {"ga":"naomh","en":"saint","th":"sochai","t":2},
-  {"ga":"aingeal","en":"angel","th":"sochai","t":3},
-  {"ga":"diabhal","en":"devil","th":"sochai","t":2},
-  {"ga":"neamh","en":"heaven","th":"sochai","t":3},
-  {"ga":"ifreann","en":"hell","th":"sochai","t":3},
-  {"ga":"reiligiún","en":"religion","th":"sochai","t":3},
-  {"ga":"réabhlóid","en":"revolution","th":"sochai","t":3},
-  {"ga":"Éirí Amach","en":"Rising (1916)","th":"sochai","t":3},
-  {"ga":"an Gorta Mór","en":"the Great Famine","th":"sochai","t":3},
-  {"ga":"gorta","en":"famine","th":"sochai","t":3},
-  {"ga":"plandáil","en":"plantation","th":"sochai","t":3},
-  {"ga":"ceannairc","en":"rebellion","th":"sochai","t":3},
-  {"ga":"cuimhneachán","en":"memorial, souvenir","th":"sochai","t":3},
-  {"ga":"séadchomhartha","en":"monument","th":"sochai","t":3},
-  {"ga":"uachtaránacht","en":"presidency","th":"sochai","t":3},
-  {"ga":"ambasáid","en":"embassy","th":"sochai","t":3},
-  {"ga":"ambasadóir","en":"ambassador","th":"sochai","t":3},
-  {"ga":"taidhleoireacht","en":"diplomacy","th":"sochai","t":3},
-  {"ga":"Na Náisiúin Aontaithe","en":"the United Nations","th":"sochai","t":3}
+ {
+  "ga": "Éire",
+  "en": "Ireland",
+  "th": "sochai",
+  "t": 1
+ },
+ {
+  "ga": "Éireannach",
+  "en": "Irish person",
+  "th": "sochai",
+  "t": 1
+ },
+ {
+  "ga": "Sasana",
+  "en": "England",
+  "th": "sochai",
+  "t": 1
+ },
+ {
+  "ga": "Sasanach",
+  "en": "English person",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "Albain",
+  "en": "Scotland",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "Albanach",
+  "en": "Scot, Scottish person",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "an Bhreatain Bheag",
+  "en": "Wales",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "an Bhreatain",
+  "en": "Britain",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "Meiriceá",
+  "en": "America",
+  "th": "sochai",
+  "t": 1
+ },
+ {
+  "ga": "Meiriceánach",
+  "en": "American",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "an Fhrainc",
+  "en": "France",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "Francach",
+  "en": "French person",
+  "th": "sochai",
+  "t": 2,
+  "g": "m",
+  "pl": "Francaigh"
+ },
+ {
+  "ga": "an Spáinn",
+  "en": "Spain",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "Spáinneach",
+  "en": "Spaniard",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "an Ghearmáin",
+  "en": "Germany",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "Gearmánach",
+  "en": "German person",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "an Iodáil",
+  "en": "Italy",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "an Eoraip",
+  "en": "Europe",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "Eorpach",
+  "en": "European",
+  "th": "sochai",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "an tAontas Eorpach",
+  "en": "the European Union",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "Baile Átha Cliath",
+  "en": "Dublin",
+  "th": "sochai",
+  "t": 1
+ },
+ {
+  "ga": "Corcaigh",
+  "en": "Cork",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "Gaillimh",
+  "en": "Galway",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "Luimneach",
+  "en": "Limerick",
+  "th": "sochai",
+  "t": 2,
+  "g": "m",
+  "nopl": true
+ },
+ {
+  "ga": "Port Láirge",
+  "en": "Waterford",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "Doire",
+  "en": "Derry",
+  "th": "sochai",
+  "t": 2,
+  "g": "m",
+  "nopl": true
+ },
+ {
+  "ga": "Béal Feirste",
+  "en": "Belfast",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "Ciarraí",
+  "en": "Kerry",
+  "th": "sochai",
+  "t": 2,
+  "g": "m"
+ },
+ {
+  "ga": "Dún na nGall",
+  "en": "Donegal",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "Maigh Eo",
+  "en": "Mayo",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "Cill Chainnigh",
+  "en": "Kilkenny",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "Sligeach",
+  "en": "Sligo",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "Tiobraid Árann",
+  "en": "Tipperary",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "an Clár",
+  "en": "Clare",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "Cúige Mumhan",
+  "en": "Munster",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "Cúige Laighean",
+  "en": "Leinster",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "Cúige Chonnacht",
+  "en": "Connacht",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "Cúige Uladh",
+  "en": "Ulster",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "cúige",
+  "en": "province",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "Tuaisceart Éireann",
+  "en": "Northern Ireland",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "Londain",
+  "en": "London",
+  "th": "sochai",
+  "t": 2,
+  "g": "f"
+ },
+ {
+  "ga": "rialtas",
+  "en": "government",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "Dáil",
+  "en": "Dáil (parliament)",
+  "th": "sochai",
+  "t": 2,
+  "g": "f"
+ },
+ {
+  "ga": "Seanad",
+  "en": "Senate",
+  "th": "sochai",
+  "t": 2,
+  "g": "m"
+ },
+ {
+  "ga": "Taoiseach",
+  "en": "Taoiseach (prime minister)",
+  "th": "sochai",
+  "t": 2,
+  "g": "m"
+ },
+ {
+  "ga": "Tánaiste",
+  "en": "Tánaiste (deputy prime minister)",
+  "th": "sochai",
+  "t": 3,
+  "g": "m"
+ },
+ {
+  "ga": "uachtarán",
+  "en": "president",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "aire",
+  "en": "minister",
+  "th": "sochai",
+  "t": 2,
+  "g": "m"
+ },
+ {
+  "ga": "teachta dála",
+  "en": "TD (member of the Dáil)",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "polaiteoir",
+  "en": "politician",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "polaitíocht",
+  "en": "politics",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "páirtí",
+  "en": "political party",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "toghchán",
+  "en": "election",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "olltoghchán",
+  "en": "general election",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "vóta",
+  "en": "vote",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "vótáil",
+  "en": "voting",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "reifreann",
+  "en": "referendum",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "bunreacht",
+  "en": "constitution",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "dlí",
+  "en": "law",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "acht",
+  "en": "act (law)",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "reachtaíocht",
+  "en": "legislation",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "reacht",
+  "en": "statute",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "rialachán",
+  "en": "regulation",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "riail",
+  "en": "rule",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "coiste",
+  "en": "committee",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "comhairle",
+  "en": "council, advice",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "comhairleoir",
+  "en": "councillor, adviser",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "údarás",
+  "en": "authority",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "stát",
+  "en": "state",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "poblacht",
+  "en": "republic",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "tír",
+  "en": "country",
+  "th": "sochai",
+  "t": 1
+ },
+ {
+  "ga": "náisiún",
+  "en": "nation",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "náisiúnta",
+  "en": "national",
+  "th": "sochai",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "idirnáisiúnta",
+  "en": "international",
+  "th": "sochai",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "aontas",
+  "en": "union",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "cúirt",
+  "en": "court",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "breitheamh",
+  "en": "judge",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "giúiré",
+  "en": "jury",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "príosún",
+  "en": "prison",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "coir",
+  "en": "crime",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "coirpeach",
+  "en": "criminal",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "gadaí",
+  "en": "thief",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "dúnmharú",
+  "en": "murder",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "garda",
+  "en": "guard (police officer)",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "na Gardaí",
+  "en": "the Gardaí (police)",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "cogadh",
+  "en": "war",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "síocháin",
+  "en": "peace",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "arm",
+  "en": "army",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "saighdiúir",
+  "en": "soldier",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "foréigean",
+  "en": "violence",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "agóid",
+  "en": "protest",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "cearta daonna",
+  "en": "human rights",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "saoirse",
+  "en": "freedom",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "daonlathas",
+  "en": "democracy",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "geilleagar",
+  "en": "economy",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "sochaí",
+  "en": "society",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "pobal",
+  "en": "community",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "cultúr",
+  "en": "culture",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "oidhreacht",
+  "en": "heritage",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "traidisiún",
+  "en": "tradition",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "Aifreann",
+  "en": "Mass",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "Dia",
+  "en": "God",
+  "th": "sochai",
+  "t": 1,
+  "g": "m"
+ },
+ {
+  "ga": "paidir",
+  "en": "prayer",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "easpag",
+  "en": "bishop",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "Caitliceach",
+  "en": "Catholic",
+  "th": "sochai",
+  "t": 3,
+  "pl": "Caitlicigh",
+  "gs": "Caitlicigh"
+ },
+ {
+  "ga": "Protastúnach",
+  "en": "Protestant",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "Críostaí",
+  "en": "Christian",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "Moslamach",
+  "en": "Muslim",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "Giúdach",
+  "en": "Jew",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "nuacht",
+  "en": "news",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "iriseoireacht",
+  "en": "journalism",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "tuairisc",
+  "en": "report",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "tuarascáil",
+  "en": "official report",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "fadhb",
+  "en": "problem",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "dúshlán",
+  "en": "challenge",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "aeráid",
+  "en": "climate",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "athrú aeráide",
+  "en": "climate change",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "fuinneamh",
+  "en": "energy",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "imirce",
+  "en": "emigration, migration",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "inimirceach",
+  "en": "immigrant",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "teifeach",
+  "en": "refugee",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "airteagal",
+  "en": "article (of law)",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "alt",
+  "en": "article (newspaper)",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "ceannas",
+  "en": "leadership, command",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "rí",
+  "en": "king",
+  "th": "sochai",
+  "t": 2,
+  "g": "m",
+  "pl": "ríthe"
+ },
+ {
+  "ga": "banríon",
+  "en": "queen",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "prionsa",
+  "en": "prince",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "banphrionsa",
+  "en": "princess",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "impireacht",
+  "en": "empire",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "tiarna",
+  "en": "lord",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "comhaontú",
+  "en": "agreement",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "polasaí",
+  "en": "policy",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "scéim",
+  "en": "scheme",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "plean",
+  "en": "plan",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "cinneadh",
+  "en": "decision",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "ball",
+  "en": "member",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "feachtas",
+  "en": "campaign",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "tionchar",
+  "en": "influence",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "cumhacht",
+  "en": "power",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "smacht",
+  "en": "control, discipline",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "slándáil",
+  "en": "security",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "cosaint",
+  "en": "defence, protection",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "sibhialta",
+  "en": "civil",
+  "th": "sochai",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "poiblí",
+  "en": "public",
+  "th": "sochai",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "príobháideach",
+  "en": "private",
+  "th": "sochai",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "oifigiúil",
+  "en": "official",
+  "th": "sochai",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "áitiúil",
+  "en": "local",
+  "th": "sochai",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "sóisialta",
+  "en": "social",
+  "th": "sochai",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "polaitiúil",
+  "en": "political",
+  "th": "sochai",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "eacnamaíoch",
+  "en": "economic",
+  "th": "sochai",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "cultúrtha",
+  "en": "cultural",
+  "th": "sochai",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "stairiúil",
+  "en": "historic",
+  "th": "sochai",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "réigiúnach",
+  "en": "regional",
+  "th": "sochai",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "neamhspleách",
+  "en": "independent",
+  "th": "sochai",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "míleata",
+  "en": "military",
+  "th": "sochai",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "teorainn",
+  "en": "border, limit",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "imeacht",
+  "en": "event, departure",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "ócáid",
+  "en": "occasion",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "tubaiste",
+  "en": "disaster",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "éigeandáil",
+  "en": "emergency",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "saoránach",
+  "en": "citizen",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "saoránacht",
+  "en": "citizenship",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "eagraíocht",
+  "en": "organisation",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "institiúid",
+  "en": "institution",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "foras",
+  "en": "institute, foundation",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "roinn",
+  "en": "department",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "aireacht",
+  "en": "ministry",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "státseirbhís",
+  "en": "civil service",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "coimisinéir",
+  "en": "commissioner",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "comhalta",
+  "en": "fellow (of a body)",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "ionadaí",
+  "en": "representative",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "comhdháil",
+  "en": "conference",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "tionól",
+  "en": "assembly",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "parlaimint",
+  "en": "parliament",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "comhar",
+  "en": "cooperation",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "comharchumann",
+  "en": "cooperative",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "réimse",
+  "en": "range, sphere",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "struchtúr",
+  "en": "structure",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "córas",
+  "en": "system",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "próiseas",
+  "en": "process",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "modh",
+  "en": "method",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "prionsabal",
+  "en": "principle",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "cuspóir",
+  "en": "objective, purpose",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "aidhm",
+  "en": "aim",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "sprioc",
+  "en": "target",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "straitéis",
+  "en": "strategy",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "riachtanas",
+  "en": "requirement, need",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "coinníoll",
+  "en": "condition (terms)",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "caighdeán",
+  "en": "standard",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "ceadúnas",
+  "en": "licence",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "iarratas",
+  "en": "application",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "iarratasóir",
+  "en": "applicant",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "iarrthóir",
+  "en": "candidate",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "ceapachán",
+  "en": "appointment",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "folúntas",
+  "en": "vacancy",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "dlíthiúil",
+  "en": "legal",
+  "th": "sochai",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "achomharc",
+  "en": "appeal",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "breithiúnas",
+  "en": "judgment",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "fianaise",
+  "en": "evidence",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "finné",
+  "en": "witness",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "cosantóir",
+  "en": "defendant",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "ionchúiseamh",
+  "en": "prosecution",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "ciontach",
+  "en": "guilty",
+  "th": "sochai",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "neamhchiontach",
+  "en": "not guilty",
+  "th": "sochai",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "cúiteamh",
+  "en": "compensation",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "fíneáil",
+  "en": "fine (penalty)",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "pionós",
+  "en": "punishment",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "maoin",
+  "en": "property",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "bonneagar",
+  "en": "infrastructure",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "iompar",
+  "en": "transport, behaviour",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "anailís",
+  "en": "analysis",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "staitistic",
+  "en": "statistic",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "suirbhé",
+  "en": "survey",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "daonáireamh",
+  "en": "census",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "pobalbhreith",
+  "en": "opinion poll",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "toghlach",
+  "en": "constituency",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "comhrialtas",
+  "en": "coalition",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "freasúra",
+  "en": "opposition",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "urlabhraí",
+  "en": "spokesperson",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "craoltóir",
+  "en": "broadcaster",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "craoladh",
+  "en": "a broadcast, broadcasting",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "foilseachán",
+  "en": "publication",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "eagrán",
+  "en": "edition",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "eagarthóir",
+  "en": "editor",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "doiciméad",
+  "en": "document",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "ábhartha",
+  "en": "relevant",
+  "th": "sochai",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "iomchuí",
+  "en": "appropriate",
+  "th": "sochai",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "oiriúnach",
+  "en": "suitable",
+  "th": "sochai",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "éifeachtach",
+  "en": "effective",
+  "th": "sochai",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "sonrach",
+  "en": "specific",
+  "th": "sochai",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "ginearálta",
+  "en": "general",
+  "th": "sochai",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "coinbhinsiún",
+  "en": "convention",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "dílseoir",
+  "en": "loyalist",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "náisiúnaí",
+  "en": "nationalist",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "poblachtach",
+  "en": "republican",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "aontachtaí",
+  "en": "unionist",
+  "th": "sochai",
+  "t": 3,
+  "g": "m",
+  "pl": "aontachtaithe"
+ },
+ {
+  "ga": "Ard-Fheis",
+  "en": "party conference",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "cumann",
+  "en": "association",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "comhionannas",
+  "en": "equality",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "éagothroime",
+  "en": "inequality",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "ciníochas",
+  "en": "racism",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "leatrom",
+  "en": "discrimination, oppression",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "leas",
+  "en": "welfare, benefit",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "cúram",
+  "en": "care, charge",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "seanchas",
+  "en": "lore",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "béaloideas",
+  "en": "folklore",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "miotaseolaíocht",
+  "en": "mythology",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "naomh",
+  "en": "saint",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "aingeal",
+  "en": "angel",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "diabhal",
+  "en": "devil",
+  "th": "sochai",
+  "t": 2
+ },
+ {
+  "ga": "neamh",
+  "en": "heaven",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "ifreann",
+  "en": "hell",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "reiligiún",
+  "en": "religion",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "réabhlóid",
+  "en": "revolution",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "Éirí Amach",
+  "en": "Rising (1916)",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "an Gorta Mór",
+  "en": "the Great Famine",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "gorta",
+  "en": "famine",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "plandáil",
+  "en": "plantation",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "ceannairc",
+  "en": "rebellion",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "cuimhneachán",
+  "en": "memorial, souvenir",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "séadchomhartha",
+  "en": "monument",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "uachtaránacht",
+  "en": "presidency",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "ambasáid",
+  "en": "embassy",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "ambasadóir",
+  "en": "ambassador",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "taidhleoireacht",
+  "en": "diplomacy",
+  "th": "sochai",
+  "t": 3
+ },
+ {
+  "ga": "Na Náisiúin Aontaithe",
+  "en": "the United Nations",
+  "th": "sochai",
+  "t": 3
+ }
 ]

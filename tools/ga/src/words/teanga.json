@@ -1,103 +1,611 @@
 [
-  {"ga":"teanga","en":"language, tongue","th":"teanga","t":1},
-  {"ga":"Gaeilge","en":"Irish (language)","th":"teanga","t":1},
-  {"ga":"Béarla","en":"English (language)","th":"teanga","t":1},
-  {"ga":"Fraincis","en":"French (language)","th":"teanga","t":2},
-  {"ga":"Spáinnis","en":"Spanish (language)","th":"teanga","t":2},
-  {"ga":"Gearmáinis","en":"German (language)","th":"teanga","t":2},
-  {"ga":"Iodáilis","en":"Italian (language)","th":"teanga","t":3},
-  {"ga":"Laidin","en":"Latin","th":"teanga","t":3},
-  {"ga":"focal","en":"word","th":"teanga","t":1},
-  {"ga":"abairt","en":"sentence","th":"teanga","t":1},
-  {"ga":"frása","en":"phrase","th":"teanga","t":2},
-  {"ga":"ainmfhocal","en":"noun","th":"teanga","t":2},
-  {"ga":"briathar","en":"verb","th":"teanga","t":2},
-  {"ga":"aidiacht","en":"adjective","th":"teanga","t":2},
-  {"ga":"dobhriathar","en":"adverb","th":"teanga","t":3},
-  {"ga":"réamhfhocal","en":"preposition","th":"teanga","t":3},
-  {"ga":"forainm","en":"pronoun","th":"teanga","t":3},
-  {"ga":"litir","en":"letter","th":"teanga","t":1},
-  {"ga":"aibítir","en":"alphabet","th":"teanga","t":2},
-  {"ga":"fuaim","en":"sound","th":"teanga","t":1},
-  {"ga":"guth","en":"voice","th":"teanga","t":2},
-  {"ga":"glór","en":"sound of a voice","th":"teanga","t":3},
-  {"ga":"caint","en":"talk","th":"teanga","t":1},
-  {"ga":"comhrá","en":"conversation","th":"teanga","t":1},
-  {"ga":"teachtaireacht","en":"message","th":"teanga","t":2},
-  {"ga":"téacs","en":"text","th":"teanga","t":1},
-  {"ga":"ríomhphost","en":"email","th":"teanga","t":1},
-  {"ga":"cárta poist","en":"postcard","th":"teanga","t":2},
-  {"ga":"stampa","en":"stamp","th":"teanga","t":2},
-  {"ga":"clúdach litreach","en":"envelope","th":"teanga","t":2},
-  {"ga":"fón","en":"phone","th":"teanga","t":1},
-  {"ga":"fón póca","en":"mobile phone","th":"teanga","t":1},
-  {"ga":"glao","en":"a call","th":"teanga","t":2},
-  {"ga":"idirlíon","en":"internet","th":"teanga","t":2},
-  {"ga":"suíomh gréasáin","en":"website","th":"teanga","t":2},
-  {"ga":"aip","en":"app","th":"teanga","t":2},
-  {"ga":"canúint","en":"dialect","th":"teanga","t":2},
-  {"ga":"Gaeltacht","en":"Gaeltacht (Irish speaking area)","th":"teanga","t":2},
-  {"ga":"Gaeilgeoir","en":"Irish speaker","th":"teanga","t":2},
-  {"ga":"cainteoir dúchais","en":"native speaker","th":"teanga","t":2},
-  {"ga":"cainteoir","en":"speaker","th":"teanga","t":2},
-  {"ga":"líofa","en":"fluent","th":"teanga","t":2,"pos":"adj"},
-  {"ga":"líofacht","en":"fluency","th":"teanga","t":3},
-  {"ga":"aistriúchán","en":"translation","th":"teanga","t":2},
-  {"ga":"aistritheoir","en":"translator","th":"teanga","t":3},
-  {"ga":"brí","en":"meaning","th":"teanga","t":2},
-  {"ga":"gramadach","en":"grammar","th":"teanga","t":2},
-  {"ga":"tuiseal","en":"grammatical case","th":"teanga","t":3},
-  {"ga":"inscne","en":"gender (grammar)","th":"teanga","t":3},
-  {"ga":"séimhiú","en":"lenition","th":"teanga","t":3},
-  {"ga":"urú","en":"eclipsis","th":"teanga","t":3},
-  {"ga":"síneadh fada","en":"fada (accent mark)","th":"teanga","t":2},
-  {"ga":"seanfhocal","en":"proverb","th":"teanga","t":2},
-  {"ga":"nath","en":"saying, idiom","th":"teanga","t":3},
-  {"ga":"leagan","en":"version","th":"teanga","t":2},
-  {"ga":"litriú","en":"spelling","th":"teanga","t":2},
-  {"ga":"fógra","en":"announcement","th":"teanga","t":2},
-  {"ga":"nóta","en":"note","th":"teanga","t":2},
-  {"ga":"cumarsáid","en":"communication","th":"teanga","t":2},
-  {"ga":"argóint","en":"argument","th":"teanga","t":2},
-  {"ga":"díospóireacht","en":"debate","th":"teanga","t":2},
-  {"ga":"plé","en":"discussion","th":"teanga","t":2},
-  {"ga":"óráid","en":"speech (formal)","th":"teanga","t":3},
-  {"ga":"cogar","en":"whisper","th":"teanga","t":2},
-  {"ga":"ráiteas","en":"statement","th":"teanga","t":3},
-  {"ga":"tuairim","en":"opinion","th":"teanga","t":2},
-  {"ga":"barúil","en":"notion, view","th":"teanga","t":2},
-  {"ga":"teideal","en":"title","th":"teanga","t":2},
-  {"ga":"scéala","en":"tidings","th":"teanga","t":3},
-  {"ga":"ráfla","en":"rumour","th":"teanga","t":2},
-  {"ga":"bréag","en":"a lie, falsehood","th":"teanga","t":2},
-  {"ga":"fírinne","en":"truth","th":"teanga","t":1},
-  {"ga":"míthuiscint","en":"misunderstanding","th":"teanga","t":3},
-  {"ga":"cead","en":"permission","th":"teanga","t":1},
-  {"ga":"achainí","en":"petition, plea","th":"teanga","t":3},
-  {"ga":"rabhadh","en":"warning","th":"teanga","t":2},
-  {"ga":"moladh","en":"suggestion","th":"teanga","t":2},
-  {"ga":"gearán","en":"complaint","th":"teanga","t":2},
-  {"ga":"leithscéal","en":"excuse, apology","th":"teanga","t":2},
-  {"ga":"buíochas","en":"thanks","th":"teanga","t":1},
-  {"ga":"fáilte","en":"a welcome","th":"teanga","t":1},
-  {"ga":"beannacht","en":"blessing","th":"teanga","t":2},
-  {"ga":"uatha","en":"singular","th":"teanga","t":3,"pos":"adj"},
-  {"ga":"iolra","en":"plural","th":"teanga","t":2},
-  {"ga":"béim","en":"stress, emphasis","th":"teanga","t":2},
-  {"ga":"siolla","en":"syllable","th":"teanga","t":3},
-  {"ga":"guta","en":"vowel","th":"teanga","t":3},
-  {"ga":"consan","en":"consonant","th":"teanga","t":3},
-  {"ga":"téarmaíocht","en":"terminology","th":"teanga","t":3},
-  {"ga":"pasfhocal","en":"password","th":"teanga","t":2},
-  {"ga":"nasc","en":"link","th":"teanga","t":2},
-  {"ga":"scáileán","en":"screen","th":"teanga","t":2},
-  {"ga":"méarchlár","en":"keyboard","th":"teanga","t":2},
-  {"ga":"meáin","en":"media","th":"teanga","t":3,"g":"m"},
-  {"ga":"podchraoladh","en":"podcast","th":"teanga","t":2},
-  {"ga":"cluasán","en":"earphone","th":"teanga","t":3},
-  {"ga":"uimhir fóin","en":"phone number","th":"teanga","t":2},
-  {"ga":"leabhrán","en":"booklet","th":"teanga","t":3},
-  {"ga":"tráchtaireacht","en":"commentary","th":"teanga","t":3},
-  {"ga":"liosta","en":"list","th":"teanga","t":2},
-  {"ga":"cód","en":"code","th":"teanga","t":2}
+ {
+  "ga": "teanga",
+  "en": "language, tongue",
+  "th": "teanga",
+  "t": 1
+ },
+ {
+  "ga": "Gaeilge",
+  "en": "Irish (language)",
+  "th": "teanga",
+  "t": 1
+ },
+ {
+  "ga": "Béarla",
+  "en": "English (language)",
+  "th": "teanga",
+  "t": 1
+ },
+ {
+  "ga": "Fraincis",
+  "en": "French (language)",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "Spáinnis",
+  "en": "Spanish (language)",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "Gearmáinis",
+  "en": "German (language)",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "Iodáilis",
+  "en": "Italian (language)",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "Laidin",
+  "en": "Latin",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "focal",
+  "en": "word",
+  "th": "teanga",
+  "t": 1
+ },
+ {
+  "ga": "abairt",
+  "en": "sentence",
+  "th": "teanga",
+  "t": 1
+ },
+ {
+  "ga": "frása",
+  "en": "phrase",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "ainmfhocal",
+  "en": "noun",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "briathar",
+  "en": "verb",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "aidiacht",
+  "en": "adjective",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "dobhriathar",
+  "en": "adverb",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "réamhfhocal",
+  "en": "preposition",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "forainm",
+  "en": "pronoun",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "litir",
+  "en": "letter",
+  "th": "teanga",
+  "t": 1
+ },
+ {
+  "ga": "aibítir",
+  "en": "alphabet",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "fuaim",
+  "en": "sound",
+  "th": "teanga",
+  "t": 1
+ },
+ {
+  "ga": "guth",
+  "en": "voice",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "glór",
+  "en": "sound of a voice",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "caint",
+  "en": "talk",
+  "th": "teanga",
+  "t": 1
+ },
+ {
+  "ga": "comhrá",
+  "en": "conversation",
+  "th": "teanga",
+  "t": 1
+ },
+ {
+  "ga": "teachtaireacht",
+  "en": "message",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "téacs",
+  "en": "text",
+  "th": "teanga",
+  "t": 1
+ },
+ {
+  "ga": "ríomhphost",
+  "en": "email",
+  "th": "teanga",
+  "t": 1
+ },
+ {
+  "ga": "cárta poist",
+  "en": "postcard",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "stampa",
+  "en": "stamp",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "clúdach litreach",
+  "en": "envelope",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "fón",
+  "en": "phone",
+  "th": "teanga",
+  "t": 1
+ },
+ {
+  "ga": "fón póca",
+  "en": "mobile phone",
+  "th": "teanga",
+  "t": 1
+ },
+ {
+  "ga": "glao",
+  "en": "a call",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "idirlíon",
+  "en": "internet",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "suíomh gréasáin",
+  "en": "website",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "aip",
+  "en": "app",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "canúint",
+  "en": "dialect",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "Gaeltacht",
+  "en": "Gaeltacht (Irish speaking area)",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "Gaeilgeoir",
+  "en": "Irish speaker",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "cainteoir dúchais",
+  "en": "native speaker",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "cainteoir",
+  "en": "speaker",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "líofa",
+  "en": "fluent",
+  "th": "teanga",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "líofacht",
+  "en": "fluency",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "aistriúchán",
+  "en": "translation",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "aistritheoir",
+  "en": "translator",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "brí",
+  "en": "meaning",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "gramadach",
+  "en": "grammar",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "tuiseal",
+  "en": "grammatical case",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "inscne",
+  "en": "gender (grammar)",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "séimhiú",
+  "en": "lenition",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "urú",
+  "en": "eclipsis",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "síneadh fada",
+  "en": "fada (accent mark)",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "seanfhocal",
+  "en": "proverb",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "nath",
+  "en": "saying, idiom",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "leagan",
+  "en": "version",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "litriú",
+  "en": "spelling",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "fógra",
+  "en": "announcement",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "nóta",
+  "en": "note",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "cumarsáid",
+  "en": "communication",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "argóint",
+  "en": "argument",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "díospóireacht",
+  "en": "debate",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "plé",
+  "en": "discussion",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "óráid",
+  "en": "speech (formal)",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "cogar",
+  "en": "whisper",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "ráiteas",
+  "en": "statement",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "tuairim",
+  "en": "opinion",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "barúil",
+  "en": "notion, view",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "teideal",
+  "en": "title",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "scéala",
+  "en": "tidings",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "ráfla",
+  "en": "rumour",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "bréag",
+  "en": "a lie, falsehood",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "fírinne",
+  "en": "truth",
+  "th": "teanga",
+  "t": 1
+ },
+ {
+  "ga": "míthuiscint",
+  "en": "misunderstanding",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "cead",
+  "en": "permission",
+  "th": "teanga",
+  "t": 1
+ },
+ {
+  "ga": "achainí",
+  "en": "petition, plea",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "rabhadh",
+  "en": "warning",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "moladh",
+  "en": "suggestion",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "gearán",
+  "en": "complaint",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "leithscéal",
+  "en": "excuse, apology",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "buíochas",
+  "en": "thanks",
+  "th": "teanga",
+  "t": 1
+ },
+ {
+  "ga": "fáilte",
+  "en": "a welcome",
+  "th": "teanga",
+  "t": 1
+ },
+ {
+  "ga": "beannacht",
+  "en": "blessing",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "uatha",
+  "en": "singular",
+  "th": "teanga",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "iolra",
+  "en": "plural",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "béim",
+  "en": "stress, emphasis",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "siolla",
+  "en": "syllable",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "guta",
+  "en": "vowel",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "consan",
+  "en": "consonant",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "téarmaíocht",
+  "en": "terminology",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "pasfhocal",
+  "en": "password",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "nasc",
+  "en": "link",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "scáileán",
+  "en": "screen",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "méarchlár",
+  "en": "keyboard",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "meáin",
+  "en": "media",
+  "th": "teanga",
+  "t": 3,
+  "g": "m"
+ },
+ {
+  "ga": "podchraoladh",
+  "en": "podcast",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "cluasán",
+  "en": "earphone",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "uimhir fóin",
+  "en": "phone number",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "leabhrán",
+  "en": "booklet",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "tráchtaireacht",
+  "en": "commentary",
+  "th": "teanga",
+  "t": 3
+ },
+ {
+  "ga": "liosta",
+  "en": "list",
+  "th": "teanga",
+  "t": 2
+ },
+ {
+  "ga": "cód",
+  "en": "code",
+  "th": "teanga",
+  "t": 2
+ }
 ]

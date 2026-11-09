@@ -1,66 +1,547 @@
 [
-{ "ga": "Cad is ainm duit?", "en": "What's your name?", "alt": ["Cén t-ainm atá ort?", "Cad é an t-ainm atá ort?", "Cad é d'ainm?"], "th": "mise", "b": "A1", "t": 1, "n": "Literally: what is name to you?" },
-{ "ga": "Liam is ainm dom.", "en": "My name is Liam.", "alt": ["Is é Liam m'ainm.", "Liam an t-ainm atá orm."], "th": "mise", "b": "A1", "t": 1, "n": "Literally: Liam is name to me." },
-{ "ga": "Is mise Máire.", "en": "I'm Máire.", "th": "mise", "b": "A1", "t": 1 },
-{ "ga": "Cárb as duit?", "en": "Where are you from?", "alt": ["Cad as duit?", "Cá as duit?", "Cé as thú?", "Cárb as thú?"], "th": "mise", "b": "A1", "t": 1 },
-{ "ga": "Is as Éirinn mé.", "en": "I'm from Ireland.", "th": "mise", "b": "A1", "t": 1 },
-{ "ga": "Is as Baile Átha Cliath mé.", "en": "I'm from Dublin.", "th": "mise", "b": "A1", "t": 1 },
-{ "ga": "Is Éireannach mé.", "en": "I'm Irish.", "th": "mise", "b": "A1", "t": 1 },
-{ "ga": "Cá bhfuil tú i do chónaí?", "en": "Where do you live?", "alt": ["Cá bhfuil cónaí ort?"], "th": "mise", "b": "A1", "t": 1, "n": "Literally: where are you in your dwelling?" },
-{ "ga": "Tá mé i mo chónaí i gCorcaigh.", "en": "I live in Cork.", "alt": ["Táim i mo chónaí i gCorcaigh."], "th": "mise", "b": "A1", "t": 1, "n": "I eclipses the place name: Corcaigh, i gCorcaigh." },
-{ "ga": "Cén aois thú?", "en": "How old are you?", "alt": ["Cén aois tú?", "Cén aois atá tú?"], "th": "mise", "b": "A1", "t": 1 },
-{ "ga": "Tá mé tríocha bliain d'aois.", "en": "I'm thirty years old.", "alt": ["Táim tríocha bliain d'aois."], "th": "mise", "b": "A1", "t": 1 },
-{ "ga": "Cén obair a dhéanann tú?", "en": "What do you do for work?", "alt": ["Cén post atá agat?", "Cad é an post atá agat?"], "th": "mise", "b": "A1", "t": 1 },
-{ "ga": "Is múinteoir mé.", "en": "I'm a teacher.", "th": "mise", "b": "A1", "t": 1, "n": "Is plus the job plus mé: the copula says what you are." },
-{ "ga": "Is mac léinn mé.", "en": "I'm a student.", "alt": ["Tá mé i mo mhac léinn."], "th": "mise", "b": "A1", "t": 1 },
-{ "ga": "Oibrím in oifig.", "en": "I work in an office.", "alt": ["Tá mé ag obair in oifig."], "th": "mise", "b": "A1", "t": 1 },
-{ "ga": "Tá beirt pháistí agam.", "en": "I have two children.", "th": "mise", "b": "A1", "t": 1, "n": "Beirt counts people and lenites: páistí, beirt pháistí." },
-{ "ga": "An bhfuil clann agat?", "en": "Do you have children?", "th": "mise", "b": "A1", "t": 1, "n": "Clann: your children, your family." },
-{ "ga": "Tá mé pósta.", "en": "I'm married.", "alt": ["Táim pósta."], "th": "mise", "b": "A1", "t": 1 },
-{ "ga": "Seo é mo chara, Liam.", "en": "This is my friend Liam.", "th": "mise", "b": "A1", "t": 1 },
-{ "ga": "Seo í mo bhean chéile.", "en": "This is my wife.", "th": "mise", "b": "A1", "t": 1 },
-{ "ga": "Seo é m'fhear céile.", "en": "This is my husband.", "th": "mise", "b": "A1", "t": 1 },
-{ "ga": "Tá deartháir amháin agam.", "en": "I have one brother.", "th": "mise", "b": "A1", "t": 1 },
-{ "ga": "Seo é mo dheartháir.", "en": "This is my brother.", "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Seo í mo dheirfiúr.", "en": "This is my sister.", "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Is as Gaillimh mé.", "en": "I'm from Galway.", "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Is as Sasana mé.", "en": "I'm from England.", "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Is as Meiriceá mé.", "en": "I'm from America.", "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Is Meiriceánach mé.", "en": "I'm American.", "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Is Sasanach mé.", "en": "I'm English.", "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Ní as seo mé.", "en": "I'm not from here.", "th": "mise", "b": "A2", "t": 2 },
-{ "ga": "Tá mé i mo chónaí i nGaillimh.", "en": "I live in Galway.", "alt": ["Táim i mo chónaí i nGaillimh."], "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Tá mé i mo chónaí sa chathair.", "en": "I live in the city.", "alt": ["Táim i mo chónaí sa chathair."], "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Tá mé i mo chónaí faoin tuath.", "en": "I live in the countryside.", "alt": ["Táim i mo chónaí faoin tuath."], "th": "mise", "b": "A2", "t": 2 },
-{ "ga": "Tá mé daichead bliain d'aois.", "en": "I'm forty years old.", "alt": ["Táim daichead bliain d'aois."], "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "An bhfuil tú pósta?", "en": "Are you married?", "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Níl mé pósta.", "en": "I'm not married.", "alt": ["Nílim pósta."], "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Tá mac agus iníon agam.", "en": "I have a son and a daughter.", "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Níl aon pháistí agam.", "en": "I don't have any children.", "th": "mise", "b": "A2", "t": 2 },
-{ "ga": "Tá beirt deirfiúracha agam.", "en": "I have two sisters.", "th": "mise", "b": "A2", "t": 2, "n": "Beirt does not lenite d, t or s." },
-{ "ga": "An bhfuil deartháireacha nó deirfiúracha agat?", "en": "Do you have brothers or sisters?", "th": "mise", "b": "A2", "t": 2 },
-{ "ga": "Cá bhfuil tú ag obair?", "en": "Where do you work?", "alt": ["Cén áit a bhfuil tú ag obair?"], "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Is dochtúir mé.", "en": "I'm a doctor.", "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Is altra mé.", "en": "I'm a nurse.", "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Is innealtóir mé.", "en": "I'm an engineer.", "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Tá mé ag obair i siopa.", "en": "I work in a shop.", "alt": ["Oibrím i siopa."], "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Oibrím sa bhaile.", "en": "I work at home.", "alt": ["Tá mé ag obair sa bhaile."], "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Tá mé ar scor.", "en": "I'm retired.", "alt": ["Táim ar scor."], "th": "mise", "b": "A2", "t": 2 },
-{ "ga": "Tá mé ag staidéar san ollscoil.", "en": "I study at the university.", "th": "mise", "b": "A2", "t": 2 },
-{ "ga": "Is breá liom mo phost.", "en": "I love my job.", "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Tá madra agam.", "en": "I have a dog.", "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Tá cat agam.", "en": "I have a cat.", "th": "mise", "b": "A1", "t": 2 },
-{ "ga": "Cé mhéad deartháir atá agat?", "en": "How many brothers do you have?", "th": "mise", "b": "A2", "t": 3, "n": "After cé mhéad the noun stays singular." },
-{ "ga": "Tá mé dífhostaithe.", "en": "I'm unemployed.", "th": "mise", "b": "A2", "t": 3 },
-{ "ga": "Tá mé ag obair mar chócaire.", "en": "I work as a cook.", "th": "mise", "b": "A2", "t": 3, "n": "Mar lenites: cócaire, mar chócaire." },
-{ "ga": "Is Albanach mé.", "en": "I'm Scottish.", "th": "mise", "b": "A1", "t": 3 },
-{ "ga": "Tá cónaí orm i Luimneach.", "en": "I live in Limerick.", "th": "mise", "b": "A2", "t": 3, "n": "Another way to say where you live. Literally: there is dwelling on me." },
-{ "ga": "Cár rugadh thú?", "en": "Where were you born?", "alt": ["Cá háit ar rugadh thú?"], "th": "mise", "b": "A2", "t": 3 },
-{ "ga": "Rugadh i gCiarraí mé.", "en": "I was born in Kerry.", "th": "mise", "b": "A2", "t": 3 },
-{ "ga": "Cathain a rugadh thú?", "en": "When were you born?", "alt": ["Cén uair a rugadh thú?"], "th": "mise", "b": "A2", "t": 3 },
-{ "ga": "Cá bhfuil do mhuintir ina gcónaí?", "en": "Where does your family live?", "th": "mise", "b": "B1", "t": 3, "n": "Muintir: your people, your family." },
-{ "ga": "Tá mé anseo le cúig bliana.", "en": "I've been here for five years.", "alt": ["Táim anseo le cúig bliana."], "th": "mise", "b": "B1", "t": 3, "n": "Irish uses the present with le for something still going on." },
-{ "ga": "Is mise an duine is sine.", "en": "I'm the eldest.", "th": "mise", "b": "B1", "t": 3 },
-{ "ga": "Tá súile gorma agam.", "en": "I have blue eyes.", "th": "mise", "b": "A2", "t": 3 },
-{ "ga": "Tá gruaig dhonn orm.", "en": "I have brown hair.", "th": "mise", "b": "A2", "t": 3, "n": "Hair is on you (orm), eyes are at you (agam)." }
+ {
+  "ga": "Cad is ainm duit?",
+  "en": "What's your name?",
+  "alt": [
+   "Cén t-ainm atá ort?",
+   "Cad é an t-ainm atá ort?",
+   "Cad é d'ainm?"
+  ],
+  "th": "mise",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: what is name to you?"
+ },
+ {
+  "ga": "Liam is ainm dom.",
+  "en": "My name is Liam.",
+  "alt": [
+   "Is é Liam m'ainm.",
+   "Liam an t-ainm atá orm."
+  ],
+  "th": "mise",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: Liam is name to me."
+ },
+ {
+  "ga": "Is mise Máire.",
+  "en": "I'm Máire.",
+  "th": "mise",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Cárb as duit?",
+  "en": "Where are you from?",
+  "alt": [
+   "Cad as duit?",
+   "Cá as duit?",
+   "Cé as thú?",
+   "Cárb as thú?"
+  ],
+  "th": "mise",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Is as Éirinn mé.",
+  "en": "I'm from Ireland.",
+  "th": "mise",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Is as Baile Átha Cliath mé.",
+  "en": "I'm from Dublin.",
+  "th": "mise",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Is Éireannach mé.",
+  "en": "I'm Irish.",
+  "th": "mise",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Cá bhfuil tú i do chónaí?",
+  "en": "Where do you live?",
+  "alt": [
+   "Cá bhfuil cónaí ort?"
+  ],
+  "th": "mise",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: where are you in your dwelling?"
+ },
+ {
+  "ga": "Tá mé i mo chónaí i gCorcaigh.",
+  "en": "I live in Cork.",
+  "alt": [
+   "Táim i mo chónaí i gCorcaigh."
+  ],
+  "th": "mise",
+  "b": "A1",
+  "t": 1,
+  "n": "I eclipses the place name: Corcaigh, i gCorcaigh."
+ },
+ {
+  "ga": "Cén aois thú?",
+  "en": "How old are you?",
+  "alt": [
+   "Cén aois tú?",
+   "Cén aois atá tú?"
+  ],
+  "th": "mise",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá mé tríocha bliain d'aois.",
+  "en": "I'm thirty years old.",
+  "alt": [
+   "Táim tríocha bliain d'aois."
+  ],
+  "th": "mise",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Cén obair a dhéanann tú?",
+  "en": "What do you do for work?",
+  "alt": [
+   "Cén post atá agat?",
+   "Cad é an post atá agat?"
+  ],
+  "th": "mise",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Is múinteoir mé.",
+  "en": "I'm a teacher.",
+  "th": "mise",
+  "b": "A1",
+  "t": 1,
+  "n": "Is plus the job plus mé: the copula says what you are."
+ },
+ {
+  "ga": "Is mac léinn mé.",
+  "en": "I'm a student.",
+  "alt": [
+   "Tá mé i mo mhac léinn."
+  ],
+  "th": "mise",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Oibrím in oifig.",
+  "en": "I work in an office.",
+  "alt": [
+   "Tá mé ag obair in oifig."
+  ],
+  "th": "mise",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá beirt pháistí agam.",
+  "en": "I have two children.",
+  "th": "mise",
+  "b": "A1",
+  "t": 1,
+  "n": "Beirt counts people and lenites: páistí, beirt pháistí."
+ },
+ {
+  "ga": "An bhfuil clann agat?",
+  "en": "Do you have children?",
+  "th": "mise",
+  "b": "A1",
+  "t": 1,
+  "n": "Clann: your children, your family."
+ },
+ {
+  "ga": "Tá mé pósta.",
+  "en": "I'm married.",
+  "alt": [
+   "Táim pósta."
+  ],
+  "th": "mise",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Seo é mo chara, Liam.",
+  "en": "This is my friend Liam.",
+  "th": "mise",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Seo í mo bhean chéile.",
+  "en": "This is my wife.",
+  "th": "mise",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Seo é m'fhear céile.",
+  "en": "This is my husband.",
+  "th": "mise",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá deartháir amháin agam.",
+  "en": "I have one brother.",
+  "th": "mise",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Seo é mo dheartháir.",
+  "en": "This is my brother.",
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Seo í mo dheirfiúr.",
+  "en": "This is my sister.",
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Is as Gaillimh mé.",
+  "en": "I'm from Galway.",
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Is as Sasana mé.",
+  "en": "I'm from England.",
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Is as Meiriceá mé.",
+  "en": "I'm from America.",
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Is Meiriceánach mé.",
+  "en": "I'm American.",
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Is Sasanach mé.",
+  "en": "I'm English.",
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Ní as seo mé.",
+  "en": "I'm not from here.",
+  "th": "mise",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá mé i mo chónaí i nGaillimh.",
+  "en": "I live in Galway.",
+  "alt": [
+   "Táim i mo chónaí i nGaillimh."
+  ],
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá mé i mo chónaí sa chathair.",
+  "en": "I live in the city.",
+  "alt": [
+   "Táim i mo chónaí sa chathair."
+  ],
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá mé i mo chónaí faoin tuath.",
+  "en": "I live in the countryside.",
+  "alt": [
+   "Táim i mo chónaí faoin tuath."
+  ],
+  "th": "mise",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá mé daichead bliain d'aois.",
+  "en": "I'm forty years old.",
+  "alt": [
+   "Táim daichead bliain d'aois."
+  ],
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "An bhfuil tú pósta?",
+  "en": "Are you married?",
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Níl mé pósta.",
+  "en": "I'm not married.",
+  "alt": [
+   "Nílim pósta."
+  ],
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá mac agus iníon agam.",
+  "en": "I have a son and a daughter.",
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Níl aon pháistí agam.",
+  "en": "I don't have any children.",
+  "th": "mise",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá beirt deirfiúracha agam.",
+  "en": "I have two sisters.",
+  "th": "mise",
+  "b": "A2",
+  "t": 2,
+  "n": "Beirt does not lenite d, t or s.",
+  "alt": [
+   "Tá dhá dheirfiúr agam."
+  ]
+ },
+ {
+  "ga": "An bhfuil deartháireacha nó deirfiúracha agat?",
+  "en": "Do you have brothers or sisters?",
+  "th": "mise",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Cá bhfuil tú ag obair?",
+  "en": "Where do you work?",
+  "alt": [
+   "Cén áit a bhfuil tú ag obair?"
+  ],
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Is dochtúir mé.",
+  "en": "I'm a doctor.",
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Is altra mé.",
+  "en": "I'm a nurse.",
+  "th": "mise",
+  "b": "A1",
+  "t": 2,
+  "alt": [
+   "Is banaltra mé."
+  ]
+ },
+ {
+  "ga": "Is innealtóir mé.",
+  "en": "I'm an engineer.",
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá mé ag obair i siopa.",
+  "en": "I work in a shop.",
+  "alt": [
+   "Oibrím i siopa."
+  ],
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Oibrím sa bhaile.",
+  "en": "I work at home.",
+  "alt": [
+   "Tá mé ag obair sa bhaile."
+  ],
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá mé ar scor.",
+  "en": "I'm retired.",
+  "alt": [
+   "Táim ar scor."
+  ],
+  "th": "mise",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá mé ag staidéar san ollscoil.",
+  "en": "I study at the university.",
+  "th": "mise",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Is breá liom mo phost.",
+  "en": "I love my job.",
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá madra agam.",
+  "en": "I have a dog.",
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá cat agam.",
+  "en": "I have a cat.",
+  "th": "mise",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Cé mhéad deartháir atá agat?",
+  "en": "How many brothers do you have?",
+  "th": "mise",
+  "b": "A2",
+  "t": 3,
+  "n": "After cé mhéad the noun stays singular."
+ },
+ {
+  "ga": "Tá mé dífhostaithe.",
+  "en": "I'm unemployed.",
+  "th": "mise",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tá mé ag obair mar chócaire.",
+  "en": "I work as a cook.",
+  "th": "mise",
+  "b": "A2",
+  "t": 3,
+  "n": "Mar lenites: cócaire, mar chócaire."
+ },
+ {
+  "ga": "Is Albanach mé.",
+  "en": "I'm Scottish.",
+  "th": "mise",
+  "b": "A1",
+  "t": 3
+ },
+ {
+  "ga": "Tá cónaí orm i Luimneach.",
+  "en": "I live in Limerick.",
+  "th": "mise",
+  "b": "A2",
+  "t": 3,
+  "n": "Another way to say where you live. Literally: there is dwelling on me."
+ },
+ {
+  "ga": "Cár rugadh thú?",
+  "en": "Where were you born?",
+  "alt": [
+   "Cá háit ar rugadh thú?"
+  ],
+  "th": "mise",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Rugadh i gCiarraí mé.",
+  "en": "I was born in Kerry.",
+  "th": "mise",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Cathain a rugadh thú?",
+  "en": "When were you born?",
+  "alt": [
+   "Cén uair a rugadh thú?"
+  ],
+  "th": "mise",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Cá bhfuil do mhuintir ina gcónaí?",
+  "en": "Where does your family live?",
+  "th": "mise",
+  "b": "B1",
+  "t": 3,
+  "n": "Muintir: your people, your family."
+ },
+ {
+  "ga": "Tá mé anseo le cúig bliana.",
+  "en": "I've been here for five years.",
+  "alt": [
+   "Táim anseo le cúig bliana."
+  ],
+  "th": "mise",
+  "b": "B1",
+  "t": 3,
+  "n": "Irish uses the present with le for something still going on."
+ },
+ {
+  "ga": "Is mise an duine is sine.",
+  "en": "I'm the eldest.",
+  "th": "mise",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Tá súile gorma agam.",
+  "en": "I have blue eyes.",
+  "th": "mise",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tá gruaig dhonn orm.",
+  "en": "I have brown hair.",
+  "th": "mise",
+  "b": "A2",
+  "t": 3,
+  "n": "Hair is on you (orm), eyes are at you (agam)."
+ }
 ]

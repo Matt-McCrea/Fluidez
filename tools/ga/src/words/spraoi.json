@@ -1,142 +1,846 @@
 [
-  {"ga":"spraoi","en":"fun","th":"spraoi","t":1},
-  {"ga":"caitheamh aimsire","en":"hobby, pastime","th":"spraoi","t":1},
-  {"ga":"cluiche","en":"game, match","th":"spraoi","t":1},
-  {"ga":"spórt","en":"sport","th":"spraoi","t":1},
-  {"ga":"peil","en":"football (Gaelic)","th":"spraoi","t":1},
-  {"ga":"sacar","en":"soccer","th":"spraoi","t":1},
-  {"ga":"iománaíocht","en":"hurling","th":"spraoi","t":2},
-  {"ga":"camógaíocht","en":"camogie","th":"spraoi","t":2},
-  {"ga":"rugbaí","en":"rugby","th":"spraoi","t":2},
-  {"ga":"leadóg","en":"tennis","th":"spraoi","t":2},
-  {"ga":"galf","en":"golf","th":"spraoi","t":2},
-  {"ga":"cispheil","en":"basketball","th":"spraoi","t":2},
-  {"ga":"snámh","en":"swimming","th":"spraoi","t":1},
-  {"ga":"rothaíocht","en":"cycling","th":"spraoi","t":2},
-  {"ga":"siúlóid","en":"a walk, stroll","th":"spraoi","t":2},
-  {"ga":"dreapadóireacht","en":"climbing","th":"spraoi","t":3},
-  {"ga":"lúthchleasaíocht","en":"athletics","th":"spraoi","t":3},
-  {"ga":"imreoir","en":"player","th":"spraoi","t":1},
-  {"ga":"cúl","en":"goal (sport)","th":"spraoi","t":2},
-  {"ga":"cúilín","en":"point (in Gaelic games)","th":"spraoi","t":2},
-  {"ga":"scór","en":"score","th":"spraoi","t":2},
-  {"ga":"liathróid","en":"ball","th":"spraoi","t":1},
-  {"ga":"camán","en":"hurley","th":"spraoi","t":2},
-  {"ga":"bua","en":"victory","th":"spraoi","t":2},
-  {"ga":"comórtas","en":"competition","th":"spraoi","t":1},
-  {"ga":"duais","en":"prize","th":"spraoi","t":1},
-  {"ga":"buaiteoir","en":"winner","th":"spraoi","t":2},
-  {"ga":"traenálaí","en":"coach, trainer","th":"spraoi","t":2},
-  {"ga":"réiteoir","en":"referee","th":"spraoi","t":2},
-  {"ga":"lucht leanúna","en":"fans, supporters","th":"spraoi","t":2},
-  {"ga":"amhrán","en":"song","th":"spraoi","t":1},
-  {"ga":"amhránaí","en":"singer","th":"spraoi","t":1},
-  {"ga":"ceoltóir","en":"musician","th":"spraoi","t":2},
-  {"ga":"banna","en":"band","th":"spraoi","t":1},
-  {"ga":"ceolchoirm","en":"concert","th":"spraoi","t":1},
-  {"ga":"seisiún","en":"session","th":"spraoi","t":2},
-  {"ga":"port","en":"tune, jig","th":"spraoi","t":2},
-  {"ga":"giotár","en":"guitar","th":"spraoi","t":1},
-  {"ga":"pianó","en":"piano","th":"spraoi","t":1},
-  {"ga":"fidil","en":"fiddle","th":"spraoi","t":2},
-  {"ga":"veidhlín","en":"violin","th":"spraoi","t":2},
-  {"ga":"feadóg","en":"whistle","th":"spraoi","t":2},
-  {"ga":"feadóg mhór","en":"flute","th":"spraoi","t":3},
-  {"ga":"bodhrán","en":"bodhrán, frame drum","th":"spraoi","t":2},
-  {"ga":"cláirseach","en":"harp","th":"spraoi","t":2},
-  {"ga":"druma","en":"drum","th":"spraoi","t":2},
-  {"ga":"píb uilleann","en":"uilleann pipes","th":"spraoi","t":3},
-  {"ga":"sean-nós","en":"old style singing","th":"spraoi","t":3},
-  {"ga":"rince","en":"Irish dancing, dance","th":"spraoi","t":2},
-  {"ga":"damhsa","en":"dancing","th":"spraoi","t":2},
-  {"ga":"céilí","en":"céilí, dance night","th":"spraoi","t":2},
-  {"ga":"fleá","en":"music festival","th":"spraoi","t":2},
-  {"ga":"féile","en":"festival","th":"spraoi","t":2},
-  {"ga":"seó","en":"a show","th":"spraoi","t":2},
-  {"ga":"dráma","en":"drama","th":"spraoi","t":2},
-  {"ga":"aisteoir","en":"actor","th":"spraoi","t":2},
-  {"ga":"scannán","en":"film","th":"spraoi","t":1},
-  {"ga":"teilifís","en":"television","th":"spraoi","t":1},
-  {"ga":"clár","en":"programme, board","th":"spraoi","t":2},
-  {"ga":"raidió","en":"radio","th":"spraoi","t":1},
-  {"ga":"nuachtán","en":"newspaper","th":"spraoi","t":1},
-  {"ga":"iris","en":"magazine","th":"spraoi","t":2},
-  {"ga":"úrscéal","en":"novel","th":"spraoi","t":2},
-  {"ga":"scéal","en":"story","th":"spraoi","t":1},
-  {"ga":"file","en":"poet","th":"spraoi","t":2},
-  {"ga":"ealaíontóir","en":"artist","th":"spraoi","t":2},
-  {"ga":"péintéireacht","en":"painting","th":"spraoi","t":2},
-  {"ga":"ceamara","en":"camera","th":"spraoi","t":2},
-  {"ga":"cluiche ríomhaire","en":"video game","th":"spraoi","t":1},
-  {"ga":"físeán","en":"video","th":"spraoi","t":2},
-  {"ga":"ceirnín","en":"record (vinyl)","th":"spraoi","t":3},
-  {"ga":"albam","en":"album","th":"spraoi","t":2},
-  {"ga":"cóisir","en":"party","th":"spraoi","t":1},
-  {"ga":"ceiliúradh","en":"celebration","th":"spraoi","t":2},
-  {"ga":"picnic","en":"picnic","th":"spraoi","t":2},
-  {"ga":"bréagán","en":"toy","th":"spraoi","t":1},
-  {"ga":"bábóg","en":"doll","th":"spraoi","t":2},
-  {"ga":"ficheall","en":"chess","th":"spraoi","t":2},
-  {"ga":"club","en":"club","th":"spraoi","t":1},
-  {"ga":"ballraíocht","en":"membership","th":"spraoi","t":3},
-  {"ga":"craic","en":"the craic, good fun","th":"spraoi","t":2},
-  {"ga":"greann","en":"humour","th":"spraoi","t":2},
-  {"ga":"scéalaíocht","en":"storytelling","th":"spraoi","t":2},
-  {"ga":"stáitse","en":"stage","th":"spraoi","t":2},
-  {"ga":"lucht féachana","en":"audience","th":"spraoi","t":2},
-  {"ga":"gléas ceoil","en":"musical instrument","th":"spraoi","t":2},
-  {"ga":"rás","en":"race","th":"spraoi","t":2},
-  {"ga":"lúthchleasaí","en":"athlete","th":"spraoi","t":3},
-  {"ga":"peileadóir","en":"footballer","th":"spraoi","t":2},
-  {"ga":"iománaí","en":"hurler","th":"spraoi","t":2},
-  {"ga":"cluiche ceannais","en":"final (match)","th":"spraoi","t":2},
-  {"ga":"cic","en":"kick","th":"spraoi","t":2},
-  {"ga":"babhta","en":"round, bout","th":"spraoi","t":2},
-  {"ga":"curadh","en":"champion","th":"spraoi","t":3},
-  {"ga":"Cluichí Oilimpeacha","en":"Olympic Games","th":"spraoi","t":2},
-  {"ga":"páirc imeartha","en":"pitch, playing field","th":"spraoi","t":2},
-  {"ga":"cúrsa gailf","en":"golf course","th":"spraoi","t":3},
-  {"ga":"dornálaíocht","en":"boxing","th":"spraoi","t":2},
-  {"ga":"marcaíocht","en":"horse riding","th":"spraoi","t":2},
-  {"ga":"seoltóireacht","en":"sailing","th":"spraoi","t":3},
-  {"ga":"surfáil","en":"surfing","th":"spraoi","t":2,"g":"f"},
-  {"ga":"sciáil","en":"skiing","th":"spraoi","t":2},
-  {"ga":"ióga","en":"yoga","th":"spraoi","t":2},
-  {"ga":"giomnáisiam","en":"gym","th":"spraoi","t":2},
-  {"ga":"cluiche cártaí","en":"card game","th":"spraoi","t":2},
-  {"ga":"puzal","en":"puzzle","th":"spraoi","t":2},
-  {"ga":"crosfhocal","en":"crossword","th":"spraoi","t":2},
-  {"ga":"garraíodóireacht","en":"gardening","th":"spraoi","t":3},
-  {"ga":"cniotáil","en":"knitting","th":"spraoi","t":3},
-  {"ga":"bácáil","en":"baking","th":"spraoi","t":3},
-  {"ga":"siamsaíocht","en":"entertainment","th":"spraoi","t":3},
-  {"ga":"taitneamh","en":"enjoyment","th":"spraoi","t":2},
-  {"ga":"pléisiúr","en":"pleasure","th":"spraoi","t":3},
-  {"ga":"zú","en":"zoo","th":"spraoi","t":2,"g":"m"},
-  {"ga":"sorcas","en":"circus","th":"spraoi","t":3},
-  {"ga":"popcheol","en":"pop music","th":"spraoi","t":2},
-  {"ga":"ceol traidisiúnta","en":"traditional music","th":"spraoi","t":2},
-  {"ga":"ceol tíre","en":"folk music, country music","th":"spraoi","t":3},
-  {"ga":"ceol clasaiceach","en":"classical music","th":"spraoi","t":2},
-  {"ga":"cór","en":"choir","th":"spraoi","t":2},
-  {"ga":"ceoldráma","en":"opera","th":"spraoi","t":3},
-  {"ga":"stiúideo","en":"studio","th":"spraoi","t":3},
-  {"ga":"léiritheoir","en":"producer","th":"spraoi","t":3},
-  {"ga":"réalta scannán","en":"film star","th":"spraoi","t":2},
-  {"ga":"cartún","en":"cartoon","th":"spraoi","t":2},
-  {"ga":"sraith","en":"series","th":"spraoi","t":2},
-  {"ga":"eipeasóid","en":"episode","th":"spraoi","t":2},
-  {"ga":"fógrán","en":"advertisement","th":"spraoi","t":3},
-  {"ga":"clár faisnéise","en":"documentary","th":"spraoi","t":2},
-  {"ga":"dlúthdhiosca","en":"CD","th":"spraoi","t":3},
-  {"ga":"cluasáin","en":"headphones","th":"spraoi","t":2,"g":"m"},
-  {"ga":"seinnteoir","en":"music player","th":"spraoi","t":3},
-  {"ga":"ríomhleabhar","en":"ebook","th":"spraoi","t":2},
-  {"ga":"blag","en":"blog","th":"spraoi","t":2},
-  {"ga":"meáin shóisialta","en":"social media","th":"spraoi","t":2},
-  {"ga":"ceiliúir","en":"celebrate","th":"spraoi","t":2,"pos":"v"},
-  {"ga":"iomaitheoir","en":"competitor","th":"spraoi","t":3},
-  {"ga":"iomaíocht","en":"rivalry","th":"spraoi","t":3},
-  {"ga":"corn","en":"trophy","th":"spraoi","t":2},
-  {"ga":"bonn","en":"medal, base","th":"spraoi","t":2}
+ {
+  "ga": "spraoi",
+  "en": "fun",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "caitheamh aimsire",
+  "en": "hobby, pastime",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "cluiche",
+  "en": "game, match",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "spórt",
+  "en": "sport",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "peil",
+  "en": "football (Gaelic)",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "sacar",
+  "en": "soccer",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "iománaíocht",
+  "en": "hurling",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "camógaíocht",
+  "en": "camogie",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "rugbaí",
+  "en": "rugby",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "leadóg",
+  "en": "tennis",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "galf",
+  "en": "golf",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "cispheil",
+  "en": "basketball",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "snámh",
+  "en": "swimming",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "rothaíocht",
+  "en": "cycling",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "siúlóid",
+  "en": "a walk, stroll",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "dreapadóireacht",
+  "en": "climbing",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "lúthchleasaíocht",
+  "en": "athletics",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "imreoir",
+  "en": "player",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "cúl",
+  "en": "goal (sport)",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "cúilín",
+  "en": "point (in Gaelic games)",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "scór",
+  "en": "score",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "liathróid",
+  "en": "ball",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "camán",
+  "en": "hurley",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "bua",
+  "en": "victory",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "comórtas",
+  "en": "competition",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "duais",
+  "en": "prize",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "buaiteoir",
+  "en": "winner",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "traenálaí",
+  "en": "coach, trainer",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "réiteoir",
+  "en": "referee",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "lucht leanúna",
+  "en": "fans, supporters",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "amhrán",
+  "en": "song",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "amhránaí",
+  "en": "singer",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "ceoltóir",
+  "en": "musician",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "banna",
+  "en": "band",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "ceolchoirm",
+  "en": "concert",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "seisiún",
+  "en": "session",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "port",
+  "en": "tune, jig",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "giotár",
+  "en": "guitar",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "pianó",
+  "en": "piano",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "fidil",
+  "en": "fiddle",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "veidhlín",
+  "en": "violin",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "feadóg",
+  "en": "whistle",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "feadóg mhór",
+  "en": "flute",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "bodhrán",
+  "en": "bodhrán, frame drum",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "cláirseach",
+  "en": "harp",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "druma",
+  "en": "drum",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "píb uilleann",
+  "en": "uilleann pipes",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "sean-nós",
+  "en": "old style singing",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "rince",
+  "en": "Irish dancing, dance",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "damhsa",
+  "en": "dancing",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "céilí",
+  "en": "céilí, dance night",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "fleá",
+  "en": "music festival",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "féile",
+  "en": "festival",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "seó",
+  "en": "a show",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "dráma",
+  "en": "drama",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "aisteoir",
+  "en": "actor",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "scannán",
+  "en": "film",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "teilifís",
+  "en": "television",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "clár",
+  "en": "programme, board",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "raidió",
+  "en": "radio",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "nuachtán",
+  "en": "newspaper",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "iris",
+  "en": "magazine",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "úrscéal",
+  "en": "novel",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "scéal",
+  "en": "story",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "file",
+  "en": "poet",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "ealaíontóir",
+  "en": "artist",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "péintéireacht",
+  "en": "painting",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "ceamara",
+  "en": "camera",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "cluiche ríomhaire",
+  "en": "video game",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "físeán",
+  "en": "video",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "ceirnín",
+  "en": "record (vinyl)",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "albam",
+  "en": "album",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "cóisir",
+  "en": "party",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "ceiliúradh",
+  "en": "celebration",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "picnic",
+  "en": "picnic",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "bréagán",
+  "en": "toy",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "bábóg",
+  "en": "doll",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "ficheall",
+  "en": "chess",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "club",
+  "en": "club",
+  "th": "spraoi",
+  "t": 1
+ },
+ {
+  "ga": "ballraíocht",
+  "en": "membership",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "craic",
+  "en": "the craic, good fun",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "greann",
+  "en": "humour",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "scéalaíocht",
+  "en": "storytelling",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "stáitse",
+  "en": "stage",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "lucht féachana",
+  "en": "audience",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "gléas ceoil",
+  "en": "musical instrument",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "rás",
+  "en": "race",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "lúthchleasaí",
+  "en": "athlete",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "peileadóir",
+  "en": "footballer",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "iománaí",
+  "en": "hurler",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "cluiche ceannais",
+  "en": "final (match)",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "cic",
+  "en": "kick",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "babhta",
+  "en": "round, bout",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "curadh",
+  "en": "champion",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "Cluichí Oilimpeacha",
+  "en": "Olympic Games",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "páirc imeartha",
+  "en": "pitch, playing field",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "cúrsa gailf",
+  "en": "golf course",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "dornálaíocht",
+  "en": "boxing",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "marcaíocht",
+  "en": "horse riding",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "seoltóireacht",
+  "en": "sailing",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "surfáil",
+  "en": "surfing",
+  "th": "spraoi",
+  "t": 2,
+  "g": "f"
+ },
+ {
+  "ga": "sciáil",
+  "en": "skiing",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "ióga",
+  "en": "yoga",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "giomnáisiam",
+  "en": "gym",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "cluiche cártaí",
+  "en": "card game",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "puzal",
+  "en": "puzzle",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "crosfhocal",
+  "en": "crossword",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "garraíodóireacht",
+  "en": "gardening",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "cniotáil",
+  "en": "knitting",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "bácáil",
+  "en": "baking",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "siamsaíocht",
+  "en": "entertainment",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "taitneamh",
+  "en": "enjoyment",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "pléisiúr",
+  "en": "pleasure",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "zú",
+  "en": "zoo",
+  "th": "spraoi",
+  "t": 2,
+  "g": "m"
+ },
+ {
+  "ga": "sorcas",
+  "en": "circus",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "popcheol",
+  "en": "pop music",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "ceol traidisiúnta",
+  "en": "traditional music",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "ceol tíre",
+  "en": "folk music, country music",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "ceol clasaiceach",
+  "en": "classical music",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "cór",
+  "en": "choir",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "ceoldráma",
+  "en": "opera",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "stiúideo",
+  "en": "studio",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "léiritheoir",
+  "en": "producer",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "réalta scannán",
+  "en": "film star",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "cartún",
+  "en": "cartoon",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "sraith",
+  "en": "series",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "eipeasóid",
+  "en": "episode",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "fógrán",
+  "en": "advertisement",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "clár faisnéise",
+  "en": "documentary",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "dlúthdhiosca",
+  "en": "CD",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "cluasáin",
+  "en": "headphones",
+  "th": "spraoi",
+  "t": 2,
+  "g": "m"
+ },
+ {
+  "ga": "seinnteoir",
+  "en": "music player",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "ríomhleabhar",
+  "en": "ebook",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "blag",
+  "en": "blog",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "meáin shóisialta",
+  "en": "social media",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "ceiliúir",
+  "en": "celebrate",
+  "th": "spraoi",
+  "t": 2,
+  "pos": "v"
+ },
+ {
+  "ga": "iomaitheoir",
+  "en": "competitor",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "iomaíocht",
+  "en": "rivalry",
+  "th": "spraoi",
+  "t": 3
+ },
+ {
+  "ga": "corn",
+  "en": "trophy",
+  "th": "spraoi",
+  "t": 2
+ },
+ {
+  "ga": "bonn",
+  "en": "medal, base",
+  "th": "spraoi",
+  "t": 2
+ }
 ]

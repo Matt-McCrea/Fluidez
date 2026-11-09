@@ -1,101 +1,643 @@
 [
-  {"ga":"cúpla","en":"a few, twins","th":"uimhreacha","t":2,"pos":"x"},
-  {"ga":"náid","en":"zero","th":"uimhreacha","t":1},
-  {"ga":"a haon","en":"one","th":"uimhreacha","t":1,"pos":"x"},
-  {"ga":"a dó","en":"two","th":"uimhreacha","t":1,"pos":"x"},
-  {"ga":"a trí","en":"three","th":"uimhreacha","t":1,"pos":"x"},
-  {"ga":"a ceathair","en":"four","th":"uimhreacha","t":1,"pos":"x"},
-  {"ga":"a cúig","en":"five","th":"uimhreacha","t":1,"pos":"x"},
-  {"ga":"a sé","en":"six","th":"uimhreacha","t":1,"pos":"x"},
-  {"ga":"a seacht","en":"seven","th":"uimhreacha","t":1,"pos":"x"},
-  {"ga":"a hocht","en":"eight","th":"uimhreacha","t":1,"pos":"x"},
-  {"ga":"a naoi","en":"nine","th":"uimhreacha","t":1,"pos":"x"},
-  {"ga":"a deich","en":"ten","th":"uimhreacha","t":1,"pos":"x"},
-  {"ga":"a haon déag","en":"eleven","th":"uimhreacha","t":2,"pos":"x"},
-  {"ga":"a dó dhéag","en":"twelve","th":"uimhreacha","t":2,"pos":"x"},
-  {"ga":"a trí déag","en":"thirteen","th":"uimhreacha","t":2,"pos":"x"},
-  {"ga":"a ceathair déag","en":"fourteen","th":"uimhreacha","t":2,"pos":"x"},
-  {"ga":"a cúig déag","en":"fifteen","th":"uimhreacha","t":2,"pos":"x"},
-  {"ga":"a sé déag","en":"sixteen","th":"uimhreacha","t":2,"pos":"x"},
-  {"ga":"a seacht déag","en":"seventeen","th":"uimhreacha","t":2,"pos":"x"},
-  {"ga":"a hocht déag","en":"eighteen","th":"uimhreacha","t":2,"pos":"x"},
-  {"ga":"a naoi déag","en":"nineteen","th":"uimhreacha","t":2,"pos":"x"},
-  {"ga":"fiche","en":"twenty","th":"uimhreacha","t":1},
-  {"ga":"tríocha","en":"thirty","th":"uimhreacha","t":1,"g":"m"},
-  {"ga":"daichead","en":"forty","th":"uimhreacha","t":1},
-  {"ga":"caoga","en":"fifty","th":"uimhreacha","t":1},
-  {"ga":"seasca","en":"sixty","th":"uimhreacha","t":2},
-  {"ga":"seachtó","en":"seventy","th":"uimhreacha","t":2,"g":"m"},
-  {"ga":"ochtó","en":"eighty","th":"uimhreacha","t":2,"g":"m"},
-  {"ga":"nócha","en":"ninety","th":"uimhreacha","t":2,"g":"m"},
-  {"ga":"céad","en":"hundred","th":"uimhreacha","t":1},
-  {"ga":"míle","en":"thousand, mile","th":"uimhreacha","t":1},
-  {"ga":"milliún","en":"million","th":"uimhreacha","t":2},
-  {"ga":"billiún","en":"billion","th":"uimhreacha","t":3},
-  {"ga":"beirt","en":"two people","th":"uimhreacha","t":1},
-  {"ga":"triúr","en":"three people","th":"uimhreacha","t":1},
-  {"ga":"ceathrar","en":"four people","th":"uimhreacha","t":2},
-  {"ga":"cúigear","en":"five people","th":"uimhreacha","t":2},
-  {"ga":"seisear","en":"six people","th":"uimhreacha","t":2},
-  {"ga":"seachtar","en":"seven people","th":"uimhreacha","t":3},
-  {"ga":"ochtar","en":"eight people","th":"uimhreacha","t":3},
-  {"ga":"naonúr","en":"nine people","th":"uimhreacha","t":3},
-  {"ga":"deichniúr","en":"ten people","th":"uimhreacha","t":3},
-  {"ga":"chéad","en":"first","th":"uimhreacha","t":1,"pos":"adj"},
-  {"ga":"dara","en":"second","th":"uimhreacha","t":1,"pos":"adj"},
-  {"ga":"tríú","en":"third","th":"uimhreacha","t":2,"pos":"adj"},
-  {"ga":"ceathrú","en":"fourth","th":"uimhreacha","t":2,"pos":"adj"},
-  {"ga":"cúigiú","en":"fifth","th":"uimhreacha","t":2,"pos":"adj"},
-  {"ga":"séú","en":"sixth","th":"uimhreacha","t":2,"pos":"adj"},
-  {"ga":"seachtú","en":"seventh","th":"uimhreacha","t":2,"pos":"adj"},
-  {"ga":"ochtú","en":"eighth","th":"uimhreacha","t":3,"pos":"adj"},
-  {"ga":"naoú","en":"ninth","th":"uimhreacha","t":3,"pos":"adj"},
-  {"ga":"deichiú","en":"tenth","th":"uimhreacha","t":3,"pos":"adj"},
-  {"ga":"fichiú","en":"twentieth","th":"uimhreacha","t":3,"pos":"adj"},
-  {"ga":"leath","en":"half","th":"uimhreacha","t":1},
-  {"ga":"ceathrú","en":"quarter","th":"uimhreacha","t":1},
-  {"ga":"trian","en":"a third (fraction)","th":"uimhreacha","t":2},
-  {"ga":"dosaen","en":"dozen","th":"uimhreacha","t":2},
-  {"ga":"roinnt","en":"some, a number of","th":"uimhreacha","t":1},
-  {"ga":"mórán","en":"many, much","th":"uimhreacha","t":1},
-  {"ga":"a lán","en":"a lot","th":"uimhreacha","t":1,"pos":"x"},
-  {"ga":"neart","en":"plenty, strength","th":"uimhreacha","t":2},
-  {"ga":"go leor","en":"enough","th":"uimhreacha","t":1,"pos":"x"},
-  {"ga":"beagán","en":"a little","th":"uimhreacha","t":1},
-  {"ga":"níos mó","en":"more","th":"uimhreacha","t":1,"pos":"x"},
-  {"ga":"níos lú","en":"less","th":"uimhreacha","t":2,"pos":"x"},
-  {"ga":"an iomarca","en":"too much","th":"uimhreacha","t":2,"pos":"x"},
-  {"ga":"líon","en":"net","th":"uimhreacha","t":2},
-  {"ga":"uimhir","en":"number","th":"uimhreacha","t":1},
-  {"ga":"suim","en":"sum","th":"uimhreacha","t":2},
-  {"ga":"céatadán","en":"percentage","th":"uimhreacha","t":2},
-  {"ga":"iomlán","en":"total","th":"uimhreacha","t":2},
-  {"ga":"ar fad","en":"altogether","th":"uimhreacha","t":2,"pos":"adv"},
-  {"ga":"dada","en":"nothing","th":"uimhreacha","t":2,"pos":"x"},
-  {"ga":"pointe","en":"point","th":"uimhreacha","t":2},
-  {"ga":"ciliméadar","en":"kilometre","th":"uimhreacha","t":2},
-  {"ga":"méadar","en":"metre","th":"uimhreacha","t":2},
-  {"ga":"ceintiméadar","en":"centimetre","th":"uimhreacha","t":2},
-  {"ga":"cileagram","en":"kilogram","th":"uimhreacha","t":2},
-  {"ga":"gram","en":"gram","th":"uimhreacha","t":2},
-  {"ga":"lítear","en":"litre","th":"uimhreacha","t":2},
-  {"ga":"orlach","en":"inch","th":"uimhreacha","t":3},
-  {"ga":"unsa","en":"ounce","th":"uimhreacha","t":3},
-  {"ga":"tonna","en":"ton","th":"uimhreacha","t":3},
-  {"ga":"acra","en":"acre","th":"uimhreacha","t":3},
-  {"ga":"cuid","en":"part, portion","th":"uimhreacha","t":2},
-  {"ga":"giota","en":"bit","th":"uimhreacha","t":2},
-  {"ga":"slis","en":"slice","th":"uimhreacha","t":2},
-  {"ga":"pionta","en":"pint","th":"uimhreacha","t":2},
-  {"ga":"formhór","en":"majority","th":"uimhreacha","t":3},
-  {"ga":"an chuid is mó","en":"most, the majority","th":"uimhreacha","t":2,"pos":"x"},
-  {"ga":"gach","en":"every, each","th":"uimhreacha","t":1,"pos":"x"},
-  {"ga":"tomhas","en":"measurement","th":"uimhreacha","t":3},
-  {"ga":"iomarca","en":"excess","th":"uimhreacha","t":3},
-  {"ga":"ganntanas","en":"shortage","th":"uimhreacha","t":3},
-  {"ga":"easpa","en":"lack","th":"uimhreacha","t":2},
-  {"ga":"breis","en":"extra","th":"uimhreacha","t":2},
-  {"ga":"dúbailte","en":"double","th":"uimhreacha","t":3,"pos":"adj"},
-  {"ga":"singil","en":"single","th":"uimhreacha","t":3,"pos":"adj"},
-  {"ga":"corr","en":"odd (number), occasional","th":"uimhreacha","t":3,"pos":"adj"}
+ {
+  "ga": "cúpla",
+  "en": "a few, twins",
+  "th": "uimhreacha",
+  "t": 2,
+  "pos": "x"
+ },
+ {
+  "ga": "náid",
+  "en": "zero",
+  "th": "uimhreacha",
+  "t": 1
+ },
+ {
+  "ga": "a haon",
+  "en": "one",
+  "th": "uimhreacha",
+  "t": 1,
+  "pos": "x"
+ },
+ {
+  "ga": "a dó",
+  "en": "two",
+  "th": "uimhreacha",
+  "t": 1,
+  "pos": "x"
+ },
+ {
+  "ga": "a trí",
+  "en": "three",
+  "th": "uimhreacha",
+  "t": 1,
+  "pos": "x"
+ },
+ {
+  "ga": "a ceathair",
+  "en": "four",
+  "th": "uimhreacha",
+  "t": 1,
+  "pos": "x"
+ },
+ {
+  "ga": "a cúig",
+  "en": "five",
+  "th": "uimhreacha",
+  "t": 1,
+  "pos": "x"
+ },
+ {
+  "ga": "a sé",
+  "en": "six",
+  "th": "uimhreacha",
+  "t": 1,
+  "pos": "x"
+ },
+ {
+  "ga": "a seacht",
+  "en": "seven",
+  "th": "uimhreacha",
+  "t": 1,
+  "pos": "x"
+ },
+ {
+  "ga": "a hocht",
+  "en": "eight",
+  "th": "uimhreacha",
+  "t": 1,
+  "pos": "x"
+ },
+ {
+  "ga": "a naoi",
+  "en": "nine",
+  "th": "uimhreacha",
+  "t": 1,
+  "pos": "x"
+ },
+ {
+  "ga": "a deich",
+  "en": "ten",
+  "th": "uimhreacha",
+  "t": 1,
+  "pos": "x"
+ },
+ {
+  "ga": "a haon déag",
+  "en": "eleven",
+  "th": "uimhreacha",
+  "t": 2,
+  "pos": "x"
+ },
+ {
+  "ga": "a dó dhéag",
+  "en": "twelve",
+  "th": "uimhreacha",
+  "t": 2,
+  "pos": "x"
+ },
+ {
+  "ga": "a trí déag",
+  "en": "thirteen",
+  "th": "uimhreacha",
+  "t": 2,
+  "pos": "x"
+ },
+ {
+  "ga": "a ceathair déag",
+  "en": "fourteen",
+  "th": "uimhreacha",
+  "t": 2,
+  "pos": "x"
+ },
+ {
+  "ga": "a cúig déag",
+  "en": "fifteen",
+  "th": "uimhreacha",
+  "t": 2,
+  "pos": "x"
+ },
+ {
+  "ga": "a sé déag",
+  "en": "sixteen",
+  "th": "uimhreacha",
+  "t": 2,
+  "pos": "x"
+ },
+ {
+  "ga": "a seacht déag",
+  "en": "seventeen",
+  "th": "uimhreacha",
+  "t": 2,
+  "pos": "x"
+ },
+ {
+  "ga": "a hocht déag",
+  "en": "eighteen",
+  "th": "uimhreacha",
+  "t": 2,
+  "pos": "x"
+ },
+ {
+  "ga": "a naoi déag",
+  "en": "nineteen",
+  "th": "uimhreacha",
+  "t": 2,
+  "pos": "x"
+ },
+ {
+  "ga": "fiche",
+  "en": "twenty",
+  "th": "uimhreacha",
+  "t": 1
+ },
+ {
+  "ga": "tríocha",
+  "en": "thirty",
+  "th": "uimhreacha",
+  "t": 1,
+  "g": "m"
+ },
+ {
+  "ga": "daichead",
+  "en": "forty",
+  "th": "uimhreacha",
+  "t": 1
+ },
+ {
+  "ga": "caoga",
+  "en": "fifty",
+  "th": "uimhreacha",
+  "t": 1
+ },
+ {
+  "ga": "seasca",
+  "en": "sixty",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "seachtó",
+  "en": "seventy",
+  "th": "uimhreacha",
+  "t": 2,
+  "g": "m"
+ },
+ {
+  "ga": "ochtó",
+  "en": "eighty",
+  "th": "uimhreacha",
+  "t": 2,
+  "g": "m"
+ },
+ {
+  "ga": "nócha",
+  "en": "ninety",
+  "th": "uimhreacha",
+  "t": 2,
+  "g": "m"
+ },
+ {
+  "ga": "céad",
+  "en": "hundred",
+  "th": "uimhreacha",
+  "t": 1
+ },
+ {
+  "ga": "míle",
+  "en": "thousand, mile",
+  "th": "uimhreacha",
+  "t": 1
+ },
+ {
+  "ga": "milliún",
+  "en": "million",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "billiún",
+  "en": "billion",
+  "th": "uimhreacha",
+  "t": 3
+ },
+ {
+  "ga": "beirt",
+  "en": "two people",
+  "th": "uimhreacha",
+  "t": 1
+ },
+ {
+  "ga": "triúr",
+  "en": "three people",
+  "th": "uimhreacha",
+  "t": 1
+ },
+ {
+  "ga": "ceathrar",
+  "en": "four people",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "cúigear",
+  "en": "five people",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "seisear",
+  "en": "six people",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "seachtar",
+  "en": "seven people",
+  "th": "uimhreacha",
+  "t": 3
+ },
+ {
+  "ga": "ochtar",
+  "en": "eight people",
+  "th": "uimhreacha",
+  "t": 3
+ },
+ {
+  "ga": "naonúr",
+  "en": "nine people",
+  "th": "uimhreacha",
+  "t": 3
+ },
+ {
+  "ga": "deichniúr",
+  "en": "ten people",
+  "th": "uimhreacha",
+  "t": 3
+ },
+ {
+  "ga": "chéad",
+  "en": "first",
+  "th": "uimhreacha",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "dara",
+  "en": "second",
+  "th": "uimhreacha",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "tríú",
+  "en": "third",
+  "th": "uimhreacha",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "ceathrú",
+  "en": "fourth",
+  "th": "uimhreacha",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "cúigiú",
+  "en": "fifth",
+  "th": "uimhreacha",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "séú",
+  "en": "sixth",
+  "th": "uimhreacha",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "seachtú",
+  "en": "seventh",
+  "th": "uimhreacha",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "ochtú",
+  "en": "eighth",
+  "th": "uimhreacha",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "naoú",
+  "en": "ninth",
+  "th": "uimhreacha",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "deichiú",
+  "en": "tenth",
+  "th": "uimhreacha",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "fichiú",
+  "en": "twentieth",
+  "th": "uimhreacha",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "leath",
+  "en": "half",
+  "th": "uimhreacha",
+  "t": 1
+ },
+ {
+  "ga": "ceathrú",
+  "en": "quarter",
+  "th": "uimhreacha",
+  "t": 1
+ },
+ {
+  "ga": "trian",
+  "en": "a third (fraction)",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "dosaen",
+  "en": "dozen",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "roinnt",
+  "en": "some, a number of",
+  "th": "uimhreacha",
+  "t": 1
+ },
+ {
+  "ga": "mórán",
+  "en": "many, much",
+  "th": "uimhreacha",
+  "t": 1
+ },
+ {
+  "ga": "a lán",
+  "en": "a lot",
+  "th": "uimhreacha",
+  "t": 1,
+  "pos": "x"
+ },
+ {
+  "ga": "neart",
+  "en": "plenty, strength",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "go leor",
+  "en": "enough",
+  "th": "uimhreacha",
+  "t": 1,
+  "pos": "x"
+ },
+ {
+  "ga": "beagán",
+  "en": "a little",
+  "th": "uimhreacha",
+  "t": 1
+ },
+ {
+  "ga": "níos mó",
+  "en": "more",
+  "th": "uimhreacha",
+  "t": 1,
+  "pos": "x"
+ },
+ {
+  "ga": "níos lú",
+  "en": "less",
+  "th": "uimhreacha",
+  "t": 2,
+  "pos": "x"
+ },
+ {
+  "ga": "an iomarca",
+  "en": "too much",
+  "th": "uimhreacha",
+  "t": 2,
+  "pos": "x"
+ },
+ {
+  "ga": "líon",
+  "en": "net",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "uimhir",
+  "en": "number",
+  "th": "uimhreacha",
+  "t": 1
+ },
+ {
+  "ga": "suim",
+  "en": "sum",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "céatadán",
+  "en": "percentage",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "iomlán",
+  "en": "total",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "ar fad",
+  "en": "altogether",
+  "th": "uimhreacha",
+  "t": 2,
+  "pos": "adv"
+ },
+ {
+  "ga": "dada",
+  "en": "nothing",
+  "th": "uimhreacha",
+  "t": 2,
+  "pos": "x"
+ },
+ {
+  "ga": "pointe",
+  "en": "point",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "ciliméadar",
+  "en": "kilometre",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "méadar",
+  "en": "metre",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "ceintiméadar",
+  "en": "centimetre",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "cileagram",
+  "en": "kilogram",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "gram",
+  "en": "gram",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "lítear",
+  "en": "litre",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "orlach",
+  "en": "inch",
+  "th": "uimhreacha",
+  "t": 3
+ },
+ {
+  "ga": "unsa",
+  "en": "ounce",
+  "th": "uimhreacha",
+  "t": 3
+ },
+ {
+  "ga": "tonna",
+  "en": "ton",
+  "th": "uimhreacha",
+  "t": 3
+ },
+ {
+  "ga": "acra",
+  "en": "acre",
+  "th": "uimhreacha",
+  "t": 3
+ },
+ {
+  "ga": "cuid",
+  "en": "part, portion",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "giota",
+  "en": "bit",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "slis",
+  "en": "slice",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "pionta",
+  "en": "pint",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "formhór",
+  "en": "majority",
+  "th": "uimhreacha",
+  "t": 3
+ },
+ {
+  "ga": "an chuid is mó",
+  "en": "most, the majority",
+  "th": "uimhreacha",
+  "t": 2,
+  "pos": "x"
+ },
+ {
+  "ga": "gach",
+  "en": "every, each",
+  "th": "uimhreacha",
+  "t": 1,
+  "pos": "x"
+ },
+ {
+  "ga": "tomhas",
+  "en": "measurement",
+  "th": "uimhreacha",
+  "t": 3
+ },
+ {
+  "ga": "iomarca",
+  "en": "excess",
+  "th": "uimhreacha",
+  "t": 3
+ },
+ {
+  "ga": "ganntanas",
+  "en": "shortage",
+  "th": "uimhreacha",
+  "t": 3
+ },
+ {
+  "ga": "easpa",
+  "en": "lack",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "breis",
+  "en": "extra",
+  "th": "uimhreacha",
+  "t": 2
+ },
+ {
+  "ga": "dúbailte",
+  "en": "double",
+  "th": "uimhreacha",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "singil",
+  "en": "single",
+  "th": "uimhreacha",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "corr",
+  "en": "odd (number), occasional",
+  "th": "uimhreacha",
+  "t": 3,
+  "pos": "adj"
+ }
 ]

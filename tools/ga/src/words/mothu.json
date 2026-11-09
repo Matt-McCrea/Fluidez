@@ -1,132 +1,862 @@
 [
-  {"ga":"mothú","en":"feeling","th":"mothu","t":2},
-  {"ga":"mothúchán","en":"emotion","th":"mothu","t":2},
-  {"ga":"áthas","en":"joy, gladness","th":"mothu","t":1},
-  {"ga":"sonas","en":"happiness","th":"mothu","t":2},
-  {"ga":"brón","en":"sadness, sorrow","th":"mothu","t":1},
-  {"ga":"fearg","en":"anger","th":"mothu","t":1},
-  {"ga":"eagla","en":"fear","th":"mothu","t":1},
-  {"ga":"imní","en":"worry","th":"mothu","t":1},
-  {"ga":"náire","en":"shame, embarrassment","th":"mothu","t":2},
-  {"ga":"bród","en":"pride","th":"mothu","t":2},
-  {"ga":"éad","en":"jealousy","th":"mothu","t":2},
-  {"ga":"grá","en":"love","th":"mothu","t":1},
-  {"ga":"fuath","en":"hate","th":"mothu","t":2},
-  {"ga":"trua","en":"pity","th":"mothu","t":2},
-  {"ga":"uaigneas","en":"loneliness","th":"mothu","t":2},
-  {"ga":"díomá","en":"disappointment","th":"mothu","t":2},
-  {"ga":"iontas","en":"surprise, wonder","th":"mothu","t":2},
-  {"ga":"sceitimíní","en":"excitement","th":"mothu","t":2,"g":"m"},
-  {"ga":"spéis","en":"interest","th":"mothu","t":2},
-  {"ga":"dóchas","en":"hope","th":"mothu","t":2},
-  {"ga":"éadóchas","en":"despair","th":"mothu","t":3},
-  {"ga":"misneach","en":"courage","th":"mothu","t":2},
-  {"ga":"muinín","en":"confidence, trust","th":"mothu","t":2},
-  {"ga":"foighne","en":"patience","th":"mothu","t":2},
-  {"ga":"mífhoighne","en":"impatience","th":"mothu","t":3},
-  {"ga":"leisce","en":"laziness, reluctance","th":"mothu","t":2},
-  {"ga":"fonn","en":"urge, desire","th":"mothu","t":2},
-  {"ga":"mian","en":"wish","th":"mothu","t":2},
-  {"ga":"dúil","en":"liking, craving","th":"mothu","t":3},
-  {"ga":"aiféala","en":"regret","th":"mothu","t":2},
-  {"ga":"sásamh","en":"satisfaction","th":"mothu","t":3},
-  {"ga":"scanradh","en":"fright, terror","th":"mothu","t":2},
-  {"ga":"uafás","en":"horror","th":"mothu","t":3},
-  {"ga":"gliondar","en":"delight","th":"mothu","t":3},
-  {"ga":"cion","en":"affection","th":"mothu","t":3},
-  {"ga":"meas","en":"respect","th":"mothu","t":2},
-  {"ga":"pearsantacht","en":"personality","th":"mothu","t":2},
-  {"ga":"carachtar","en":"character","th":"mothu","t":2},
-  {"ga":"meon","en":"attitude, mentality","th":"mothu","t":3},
-  {"ga":"dearcadh","en":"outlook, point of view","th":"mothu","t":3},
-  {"ga":"giúmar","en":"mood","th":"mothu","t":2},
-  {"ga":"gáire","en":"laugh","th":"mothu","t":1},
-  {"ga":"miongháire","en":"smile","th":"mothu","t":1},
-  {"ga":"osna","en":"sigh","th":"mothu","t":2},
-  {"ga":"barróg","en":"hug","th":"mothu","t":2},
-  {"ga":"sona","en":"happy","th":"mothu","t":1,"pos":"adj"},
-  {"ga":"sásta","en":"content, satisfied","th":"mothu","t":1,"pos":"adj"},
-  {"ga":"áthasach","en":"joyful","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"brónach","en":"sad","th":"mothu","t":1,"pos":"adj"},
-  {"ga":"feargach","en":"angry","th":"mothu","t":1,"pos":"adj"},
-  {"ga":"crosta","en":"cross, irritable","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"tuirseach","en":"tired","th":"mothu","t":1,"pos":"adj"},
-  {"ga":"neirbhíseach","en":"nervous","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"imníoch","en":"anxious, worried","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"buartha","en":"sorry, upset","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"uaigneach","en":"lonely","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"bródúil","en":"proud","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"náireach","en":"shameful","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"fiosrach","en":"curious","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"cairdiúil","en":"friendly","th":"mothu","t":1,"pos":"adj"},
-  {"ga":"cineálta","en":"kind","th":"mothu","t":1,"pos":"adj"},
-  {"ga":"lách","en":"pleasant, affable","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"dána","en":"bold, naughty","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"glic","en":"cunning, sly","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"éirimiúil","en":"intelligent","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"amaideach","en":"silly, foolish","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"leisciúil","en":"lazy","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"díograiseach","en":"diligent, keen","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"cúthail","en":"shy","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"macánta","en":"honest","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"fial","en":"generous","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"santach","en":"greedy","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"ceanndána","en":"stubborn","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"foighneach","en":"patient","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"mífhoighneach","en":"impatient","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"greannmhar","en":"funny","th":"mothu","t":1,"pos":"adj"},
-  {"ga":"dáiríre","en":"serious, in earnest","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"ciúin","en":"quiet","th":"mothu","t":1,"pos":"adj"},
-  {"ga":"cainteach","en":"talkative","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"béasach","en":"polite","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"drochbhéasach","en":"rude","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"cróga","en":"brave","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"soineanta","en":"naive, innocent","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"sotalach","en":"arrogant, cheeky","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"umhal","en":"humble","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"ciallmhar","en":"sensible","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"stuama","en":"level headed","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"craiceáilte","en":"crazy","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"aerach","en":"lighthearted, gay","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"gealgháireach","en":"cheerful","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"gruama","en":"gloomy","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"dílis","en":"loyal, faithful","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"fírinneach","en":"truthful","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"cúramach","en":"careful","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"míchúramach","en":"careless","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"scanraithe","en":"scared","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"neamhbhuartha","en":"carefree","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"corraithe","en":"moved, excited","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"spreagtha","en":"motivated","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"bréan","en":"fed up, foul","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"leamh","en":"dull, insipid","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"cancrach","en":"grumpy","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"mórálach","en":"boastful","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"cneasta","en":"decent","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"deas","en":"nice","th":"mothu","t":1,"pos":"adj"},
-  {"ga":"olc","en":"bad, evil","th":"mothu","t":1,"pos":"adj"},
-  {"ga":"grámhar","en":"loving","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"cuidiúil","en":"helpful","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"réchúiseach","en":"easy going","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"fuinniúil","en":"energetic","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"spleodrach","en":"exuberant","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"saonta","en":"gullible","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"fíochmhar","en":"fierce","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"tuisceanach","en":"considerate","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"uasal","en":"noble","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"ainnis","en":"miserable","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"éadóchasach","en":"despairing","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"dóchasach","en":"hopeful","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"ríméad","en":"elation","th":"mothu","t":3},
-  {"ga":"alltacht","en":"astonishment","th":"mothu","t":3},
-  {"ga":"gean","en":"fondness","th":"mothu","t":3},
-  {"ga":"déistin","en":"disgust","th":"mothu","t":3},
-  {"ga":"cantal","en":"irritability","th":"mothu","t":3},
-  {"ga":"crá","en":"torment","th":"mothu","t":3},
-  {"ga":"taitneamhach","en":"enjoyable","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"suaimhneach","en":"peaceful","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"suaimhneas","en":"peace of mind","th":"mothu","t":3},
-  {"ga":"socair","en":"calm, settled","th":"mothu","t":2,"pos":"adj"},
-  {"ga":"corrach","en":"unsettled","th":"mothu","t":3,"pos":"adj"},
-  {"ga":"bréagach","en":"false, lying","th":"mothu","t":2,"pos":"adj"}
+ {
+  "ga": "mothú",
+  "en": "feeling",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "mothúchán",
+  "en": "emotion",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "áthas",
+  "en": "joy, gladness",
+  "th": "mothu",
+  "t": 1
+ },
+ {
+  "ga": "sonas",
+  "en": "happiness",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "brón",
+  "en": "sadness, sorrow",
+  "th": "mothu",
+  "t": 1
+ },
+ {
+  "ga": "fearg",
+  "en": "anger",
+  "th": "mothu",
+  "t": 1
+ },
+ {
+  "ga": "eagla",
+  "en": "fear",
+  "th": "mothu",
+  "t": 1
+ },
+ {
+  "ga": "imní",
+  "en": "worry",
+  "th": "mothu",
+  "t": 1
+ },
+ {
+  "ga": "náire",
+  "en": "shame, embarrassment",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "bród",
+  "en": "pride",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "éad",
+  "en": "jealousy",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "grá",
+  "en": "love",
+  "th": "mothu",
+  "t": 1
+ },
+ {
+  "ga": "fuath",
+  "en": "hate",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "trua",
+  "en": "pity",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "uaigneas",
+  "en": "loneliness",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "díomá",
+  "en": "disappointment",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "iontas",
+  "en": "surprise, wonder",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "sceitimíní",
+  "en": "excitement",
+  "th": "mothu",
+  "t": 2,
+  "g": "m"
+ },
+ {
+  "ga": "spéis",
+  "en": "interest",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "dóchas",
+  "en": "hope",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "éadóchas",
+  "en": "despair",
+  "th": "mothu",
+  "t": 3
+ },
+ {
+  "ga": "misneach",
+  "en": "courage",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "muinín",
+  "en": "confidence, trust",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "foighne",
+  "en": "patience",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "mífhoighne",
+  "en": "impatience",
+  "th": "mothu",
+  "t": 3
+ },
+ {
+  "ga": "leisce",
+  "en": "laziness, reluctance",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "fonn",
+  "en": "urge, desire",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "mian",
+  "en": "wish",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "dúil",
+  "en": "liking, craving",
+  "th": "mothu",
+  "t": 3
+ },
+ {
+  "ga": "aiféala",
+  "en": "regret",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "sásamh",
+  "en": "satisfaction",
+  "th": "mothu",
+  "t": 3
+ },
+ {
+  "ga": "scanradh",
+  "en": "fright, terror",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "uafás",
+  "en": "horror",
+  "th": "mothu",
+  "t": 3
+ },
+ {
+  "ga": "gliondar",
+  "en": "delight",
+  "th": "mothu",
+  "t": 3
+ },
+ {
+  "ga": "cion",
+  "en": "affection",
+  "th": "mothu",
+  "t": 3,
+  "nopl": true
+ },
+ {
+  "ga": "meas",
+  "en": "respect",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "pearsantacht",
+  "en": "personality",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "carachtar",
+  "en": "character",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "meon",
+  "en": "attitude, mentality",
+  "th": "mothu",
+  "t": 3
+ },
+ {
+  "ga": "dearcadh",
+  "en": "outlook, point of view",
+  "th": "mothu",
+  "t": 3
+ },
+ {
+  "ga": "giúmar",
+  "en": "mood",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "gáire",
+  "en": "laugh",
+  "th": "mothu",
+  "t": 1
+ },
+ {
+  "ga": "miongháire",
+  "en": "smile",
+  "th": "mothu",
+  "t": 1
+ },
+ {
+  "ga": "osna",
+  "en": "sigh",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "barróg",
+  "en": "hug",
+  "th": "mothu",
+  "t": 2
+ },
+ {
+  "ga": "sona",
+  "en": "happy",
+  "th": "mothu",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "sásta",
+  "en": "content, satisfied",
+  "th": "mothu",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "áthasach",
+  "en": "joyful",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "brónach",
+  "en": "sad",
+  "th": "mothu",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "feargach",
+  "en": "angry",
+  "th": "mothu",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "crosta",
+  "en": "cross, irritable",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "tuirseach",
+  "en": "tired",
+  "th": "mothu",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "neirbhíseach",
+  "en": "nervous",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "imníoch",
+  "en": "anxious, worried",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "buartha",
+  "en": "sorry, upset",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "uaigneach",
+  "en": "lonely",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "bródúil",
+  "en": "proud",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "náireach",
+  "en": "shameful",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "fiosrach",
+  "en": "curious",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "cairdiúil",
+  "en": "friendly",
+  "th": "mothu",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "cineálta",
+  "en": "kind",
+  "th": "mothu",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "lách",
+  "en": "pleasant, affable",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "dána",
+  "en": "bold, naughty",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "glic",
+  "en": "cunning, sly",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "éirimiúil",
+  "en": "intelligent",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "amaideach",
+  "en": "silly, foolish",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "leisciúil",
+  "en": "lazy",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "díograiseach",
+  "en": "diligent, keen",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "cúthail",
+  "en": "shy",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "macánta",
+  "en": "honest",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "fial",
+  "en": "generous",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "santach",
+  "en": "greedy",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "ceanndána",
+  "en": "stubborn",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "foighneach",
+  "en": "patient",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "mífhoighneach",
+  "en": "impatient",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "greannmhar",
+  "en": "funny",
+  "th": "mothu",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "dáiríre",
+  "en": "serious, in earnest",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "ciúin",
+  "en": "quiet",
+  "th": "mothu",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "cainteach",
+  "en": "talkative",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "béasach",
+  "en": "polite",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "drochbhéasach",
+  "en": "rude",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "cróga",
+  "en": "brave",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "soineanta",
+  "en": "naive, innocent",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "sotalach",
+  "en": "arrogant, cheeky",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "umhal",
+  "en": "humble",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "ciallmhar",
+  "en": "sensible",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "stuama",
+  "en": "level headed",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "craiceáilte",
+  "en": "crazy",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "aerach",
+  "en": "lighthearted, gay",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "gealgháireach",
+  "en": "cheerful",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "gruama",
+  "en": "gloomy",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "dílis",
+  "en": "loyal, faithful",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "fírinneach",
+  "en": "truthful",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "cúramach",
+  "en": "careful",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "míchúramach",
+  "en": "careless",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "scanraithe",
+  "en": "scared",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "neamhbhuartha",
+  "en": "carefree",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "corraithe",
+  "en": "moved, excited",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "spreagtha",
+  "en": "motivated",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "bréan",
+  "en": "fed up, foul",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "leamh",
+  "en": "dull, insipid",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "cancrach",
+  "en": "grumpy",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "mórálach",
+  "en": "boastful",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "cneasta",
+  "en": "decent",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "deas",
+  "en": "nice",
+  "th": "mothu",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "olc",
+  "en": "bad, evil",
+  "th": "mothu",
+  "t": 1,
+  "pos": "adj"
+ },
+ {
+  "ga": "grámhar",
+  "en": "loving",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "cuidiúil",
+  "en": "helpful",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "réchúiseach",
+  "en": "easy going",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "fuinniúil",
+  "en": "energetic",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "spleodrach",
+  "en": "exuberant",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "saonta",
+  "en": "gullible",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "fíochmhar",
+  "en": "fierce",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "tuisceanach",
+  "en": "considerate",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "uasal",
+  "en": "noble",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "ainnis",
+  "en": "miserable",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "éadóchasach",
+  "en": "despairing",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "dóchasach",
+  "en": "hopeful",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "ríméad",
+  "en": "elation",
+  "th": "mothu",
+  "t": 3
+ },
+ {
+  "ga": "alltacht",
+  "en": "astonishment",
+  "th": "mothu",
+  "t": 3
+ },
+ {
+  "ga": "gean",
+  "en": "fondness",
+  "th": "mothu",
+  "t": 3
+ },
+ {
+  "ga": "déistin",
+  "en": "disgust",
+  "th": "mothu",
+  "t": 3
+ },
+ {
+  "ga": "cantal",
+  "en": "irritability",
+  "th": "mothu",
+  "t": 3
+ },
+ {
+  "ga": "crá",
+  "en": "torment",
+  "th": "mothu",
+  "t": 3
+ },
+ {
+  "ga": "taitneamhach",
+  "en": "enjoyable",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "suaimhneach",
+  "en": "peaceful",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "suaimhneas",
+  "en": "peace of mind",
+  "th": "mothu",
+  "t": 3
+ },
+ {
+  "ga": "socair",
+  "en": "calm, settled",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ },
+ {
+  "ga": "corrach",
+  "en": "unsettled",
+  "th": "mothu",
+  "t": 3,
+  "pos": "adj"
+ },
+ {
+  "ga": "bréagach",
+  "en": "false, lying",
+  "th": "mothu",
+  "t": 2,
+  "pos": "adj"
+ }
 ]

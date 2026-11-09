@@ -992,8 +992,8 @@ w.GA_CARDS = {
     "ga": "I ndiaidh *i*: *i mBaile Átha Cliath*, *i nGaillimh*."
    },
    {
-    "en": "After a preposition + *an*: *ar an mbord*, *ag an doras*, *leis an bhfear*.",
-    "ga": "Réamhfhocal + *an*: *ar an mbord*, *leis an bhfear*."
+    "en": "After a preposition + *an*: *ar an mbord*, *leis an bhfear*. Séimhiú is also standard here (*ar an bhord*), as in Ulster.",
+    "ga": "Réamhfhocal + *an*: *ar an mbord* (nó *ar an bhord*)."
    },
    {
     "en": "After *seacht* to *deich* (7 to 10): *seacht mbó*; after *an*, *go*, *nach*, *dá* with verbs: *an dtuigeann tú?*",

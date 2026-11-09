@@ -1,77 +1,609 @@
 [
-{ "ga": "Is maith liom é.", "en": "I like it.", "th": "mothu", "b": "A1", "t": 1, "n": "Literally: it is good with me." },
-{ "ga": "Ní maith liom é.", "en": "I don't like it.", "th": "mothu", "b": "A1", "t": 1 },
-{ "ga": "Is breá liom é.", "en": "I love it.", "th": "mothu", "b": "A1", "t": 1 },
-{ "ga": "An maith leat é?", "en": "Do you like it?", "th": "mothu", "b": "A1", "t": 1 },
-{ "ga": "An maith leat caife?", "en": "Do you like coffee?", "th": "mothu", "b": "A1", "t": 1 },
-{ "ga": "Is maith liom tae.", "en": "I like tea.", "th": "mothu", "b": "A1", "t": 1 },
-{ "ga": "Tá áthas orm.", "en": "I'm happy.", "th": "mothu", "b": "A1", "t": 1, "n": "Literally: there is joy on me. Feelings sit on you." },
-{ "ga": "Tá mé brónach.", "en": "I'm sad.", "alt": ["Táim brónach."], "th": "mothu", "b": "A1", "t": 1 },
-{ "ga": "Tá tuirse orm.", "en": "I'm tired.", "alt": ["Tá mé tuirseach.", "Táim tuirseach."], "th": "mothu", "b": "A1", "t": 1 },
-{ "ga": "Tá ocras orm.", "en": "I'm hungry.", "th": "mothu", "b": "A1", "t": 1, "n": "Literally: there is hunger on me." },
-{ "ga": "Tá tart orm.", "en": "I'm thirsty.", "th": "mothu", "b": "A1", "t": 1 },
-{ "ga": "Tá mé fuar.", "en": "I'm cold.", "alt": ["Táim fuar.", "Tá fuacht orm."], "th": "mothu", "b": "A1", "t": 1 },
-{ "ga": "Tá mé ceart go leor.", "en": "I'm OK.", "alt": ["Táim ceart go leor."], "th": "mothu", "b": "A1", "t": 1 },
-{ "ga": "Tá mé go hiontach.", "en": "I'm great.", "alt": ["Táim go hiontach."], "th": "mothu", "b": "A1", "t": 1 },
-{ "ga": "Níl mé go maith.", "en": "I'm not well.", "alt": ["Nílim go maith."], "th": "mothu", "b": "A1", "t": 1 },
-{ "ga": "Níl mé ró-olc.", "en": "I'm not too bad.", "alt": ["Nílim ró-olc."], "th": "mothu", "b": "A1", "t": 1 },
-{ "ga": "Cad a cheapann tú?", "en": "What do you think?", "alt": ["Céard a cheapann tú?", "Cad a shíleann tú?"], "th": "mothu", "b": "A1", "t": 1 },
-{ "ga": "Aontaím leat.", "en": "I agree with you.", "th": "mothu", "b": "A1", "t": 1 },
-{ "ga": "Is cuma liom.", "en": "I don't mind.", "th": "mothu", "b": "A1", "t": 1, "n": "Literally: it is all the same to me." },
-{ "ga": "Tá sé go deas.", "en": "It's nice.", "th": "mothu", "b": "A1", "t": 1 },
-{ "ga": "Is fearr liom tae.", "en": "I prefer tea.", "th": "mothu", "b": "A1", "t": 1 },
-{ "ga": "Is aoibhinn liom é.", "en": "I really love it.", "th": "mothu", "b": "A2", "t": 2 },
-{ "ga": "Is fuath liom é.", "en": "I hate it.", "th": "mothu", "b": "A1", "t": 2 },
-{ "ga": "Is breá liom ceol.", "en": "I love music.", "th": "mothu", "b": "A1", "t": 2 },
-{ "ga": "Is maith liom spórt.", "en": "I like sport.", "th": "mothu", "b": "A1", "t": 2 },
-{ "ga": "Is maith liom a bheith ag léamh.", "en": "I like reading.", "th": "mothu", "b": "A2", "t": 2 },
-{ "ga": "Ní maith liom an bháisteach.", "en": "I don't like the rain.", "th": "mothu", "b": "A1", "t": 2 },
-{ "ga": "Cad is maith leat a dhéanamh?", "en": "What do you like to do?", "alt": ["Céard is maith leat a dhéanamh?"], "th": "mothu", "b": "A2", "t": 2 },
-{ "ga": "Tá fearg orm.", "en": "I'm angry.", "th": "mothu", "b": "A1", "t": 2 },
-{ "ga": "Tá eagla orm.", "en": "I'm afraid.", "th": "mothu", "b": "A1", "t": 2 },
-{ "ga": "Tá imní orm.", "en": "I'm worried.", "th": "mothu", "b": "A1", "t": 2 },
-{ "ga": "Tá mé neirbhíseach.", "en": "I'm nervous.", "alt": ["Táim neirbhíseach."], "th": "mothu", "b": "A2", "t": 2 },
-{ "ga": "Tá mé sásta.", "en": "I'm satisfied.", "alt": ["Táim sásta."], "th": "mothu", "b": "A1", "t": 2 },
-{ "ga": "Tá mé ar bís.", "en": "I'm excited.", "alt": ["Táim ar bís."], "th": "mothu", "b": "A2", "t": 2 },
-{ "ga": "Tá mé te.", "en": "I'm hot.", "alt": ["Táim te."], "th": "mothu", "b": "A1", "t": 2 },
-{ "ga": "Níl caill orm.", "en": "I can't complain.", "th": "mothu", "b": "A2", "t": 2, "n": "Literally: there is no loss on me." },
-{ "ga": "Measartha.", "en": "So so.", "th": "mothu", "b": "A1", "t": 2 },
-{ "ga": "Sílim go bhfuil sé go maith.", "en": "I think it's good.", "alt": ["Ceapaim go bhfuil sé go maith."], "th": "mothu", "b": "A2", "t": 2 },
-{ "ga": "Sílim gur smaoineamh maith é.", "en": "I think it's a good idea.", "alt": ["Ceapaim gur smaoineamh maith é."], "th": "mothu", "b": "A2", "t": 2 },
-{ "ga": "Cad é do thuairim?", "en": "What's your opinion?", "alt": ["Céard é do thuairim?"], "th": "mothu", "b": "A2", "t": 2 },
-{ "ga": "I mo thuairim, tá sé go maith.", "en": "In my opinion, it's good.", "th": "mothu", "b": "A2", "t": 2 },
-{ "ga": "Ní aontaím leat.", "en": "I disagree with you.", "th": "mothu", "b": "A1", "t": 2 },
-{ "ga": "Cé acu is fearr leat?", "en": "Which do you prefer?", "th": "mothu", "b": "A2", "t": 2 },
-{ "ga": "Is fearr liom an ceann seo.", "en": "I prefer this one.", "th": "mothu", "b": "A1", "t": 2 },
-{ "ga": "Tá sé go hálainn.", "en": "It's beautiful.", "th": "mothu", "b": "A1", "t": 2 },
-{ "ga": "Tá sé uafásach.", "en": "It's awful.", "th": "mothu", "b": "A1", "t": 2 },
-{ "ga": "Tá sé leadránach.", "en": "It's boring.", "th": "mothu", "b": "A2", "t": 2 },
-{ "ga": "Tá sé suimiúil.", "en": "It's interesting.", "th": "mothu", "b": "A2", "t": 2 },
-{ "ga": "Tá sé greannmhar.", "en": "It's funny.", "th": "mothu", "b": "A2", "t": 2 },
-{ "ga": "Tá sé sin aisteach.", "en": "That's strange.", "th": "mothu", "b": "A2", "t": 2 },
-{ "ga": "Is maith liom thú.", "en": "I like you.", "th": "mothu", "b": "A1", "t": 2 },
-{ "ga": "Is breá liom thú.", "en": "I love you (warmly).", "th": "mothu", "b": "A1", "t": 2 },
-{ "ga": "Tá grá agam duit.", "en": "I love you (romantically).", "th": "mothu", "b": "A1", "t": 2, "n": "Literally: there is love at me for you." },
-{ "ga": "Tá mé ag tnúth leis.", "en": "I'm looking forward to it.", "alt": ["Táim ag tnúth leis."], "th": "mothu", "b": "A2", "t": 2 },
-{ "ga": "Bhain mé taitneamh as.", "en": "I enjoyed it.", "th": "mothu", "b": "A2", "t": 2 },
-{ "ga": "Ar bhain tú taitneamh as?", "en": "Did you enjoy it?", "th": "mothu", "b": "A2", "t": 2 },
-{ "ga": "Is trua sin.", "en": "That's a pity.", "alt": ["Is mór an trua sin.", "Is mór an trua é."], "th": "mothu", "b": "A2", "t": 2 },
-{ "ga": "Tá súil agam.", "en": "I hope so.", "th": "mothu", "b": "A1", "t": 2, "n": "Literally: I have an eye." },
-{ "ga": "Tá súil agam go bhfuil tú go maith.", "en": "I hope you're well.", "th": "mothu", "b": "A2", "t": 2 },
-{ "ga": "Tá díomá orm.", "en": "I'm disappointed.", "th": "mothu", "b": "A2", "t": 3 },
-{ "ga": "Tá uaigneas orm.", "en": "I'm lonely.", "th": "mothu", "b": "A2", "t": 3 },
-{ "ga": "Tá náire orm.", "en": "I'm embarrassed.", "th": "mothu", "b": "A2", "t": 3 },
-{ "ga": "Tá ionadh orm.", "en": "I'm surprised.", "th": "mothu", "b": "A2", "t": 3 },
-{ "ga": "Tá mé bréan de.", "en": "I'm fed up with it.", "alt": ["Táim bréan de."], "th": "mothu", "b": "B1", "t": 3 },
-{ "ga": "Aontaím go hiomlán.", "en": "I completely agree.", "th": "mothu", "b": "A2", "t": 3 },
-{ "ga": "Tá mé i ngrá leat.", "en": "I'm in love with you.", "th": "mothu", "b": "A2", "t": 3 },
-{ "ga": "Mo ghrá thú.", "en": "You're my love.", "th": "mothu", "b": "A2", "t": 3, "n": "Literally: my love you." },
-{ "ga": "Is mór an náire é.", "en": "It's a disgrace.", "th": "mothu", "b": "B1", "t": 3 },
-{ "ga": "Ní maith liom é ar chor ar bith.", "en": "I don't like it at all.", "th": "mothu", "b": "A2", "t": 3 },
-{ "ga": "Ní féidir liom é a sheasamh.", "en": "I can't stand it.", "th": "mothu", "b": "B1", "t": 3 },
-{ "ga": "Tá sé ag cur isteach orm.", "en": "It's bothering me.", "th": "mothu", "b": "B1", "t": 3 },
-{ "ga": "Tá an-spéis agam ann.", "en": "I'm very interested in it.", "th": "mothu", "b": "B1", "t": 3 },
-{ "ga": "Cén sórt ceoil is maith leat?", "en": "What kind of music do you like?", "th": "mothu", "b": "A2", "t": 3 },
-{ "ga": "Tá mé ag tnúth go mór leis.", "en": "I'm really looking forward to it.", "alt": ["Táim ag tnúth go mór leis."], "th": "mothu", "b": "A2", "t": 3 },
-{ "ga": "Is cuma sa diabhal liom.", "en": "I couldn't care less.", "th": "mothu", "b": "B1", "t": 3, "n": "Strong. Literally: it is the same to me in the devil." }
+ {
+  "ga": "Is maith liom é.",
+  "en": "I like it.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: it is good with me."
+ },
+ {
+  "ga": "Ní maith liom é.",
+  "en": "I don't like it.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Is breá liom é.",
+  "en": "I love it.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "An maith leat é?",
+  "en": "Do you like it?",
+  "th": "mothu",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "An maith leat caife?",
+  "en": "Do you like coffee?",
+  "th": "mothu",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Is maith liom tae.",
+  "en": "I like tea.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá áthas orm.",
+  "en": "I'm happy.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: there is joy on me. Feelings sit on you."
+ },
+ {
+  "ga": "Tá mé brónach.",
+  "en": "I'm sad.",
+  "alt": [
+   "Táim brónach."
+  ],
+  "th": "mothu",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá tuirse orm.",
+  "en": "I'm tired.",
+  "alt": [
+   "Tá mé tuirseach.",
+   "Táim tuirseach."
+  ],
+  "th": "mothu",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá ocras orm.",
+  "en": "I'm hungry.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: there is hunger on me."
+ },
+ {
+  "ga": "Tá tart orm.",
+  "en": "I'm thirsty.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá mé fuar.",
+  "en": "I'm cold.",
+  "alt": [
+   "Táim fuar.",
+   "Tá fuacht orm."
+  ],
+  "th": "mothu",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá mé ceart go leor.",
+  "en": "I'm OK.",
+  "alt": [
+   "Táim ceart go leor."
+  ],
+  "th": "mothu",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Tá mé go hiontach.",
+  "en": "I'm great.",
+  "alt": [
+   "Táim go hiontach."
+  ],
+  "th": "mothu",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Níl mé go maith.",
+  "en": "I'm not well.",
+  "alt": [
+   "Nílim go maith."
+  ],
+  "th": "mothu",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Níl mé ró-olc.",
+  "en": "I'm not too bad.",
+  "alt": [
+   "Nílim ró-olc.",
+   "Níl mé ródhona.",
+   "Nílim ródhona."
+  ],
+  "th": "mothu",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Cad a cheapann tú?",
+  "en": "What do you think?",
+  "alt": [
+   "Céard a cheapann tú?",
+   "Cad a shíleann tú?"
+  ],
+  "th": "mothu",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Aontaím leat.",
+  "en": "I agree with you.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Is cuma liom.",
+  "en": "I don't mind.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: it is all the same to me."
+ },
+ {
+  "ga": "Tá sé go deas.",
+  "en": "It's nice.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Is fearr liom tae.",
+  "en": "I prefer tea.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "ga": "Is aoibhinn liom é.",
+  "en": "I really love it.",
+  "th": "mothu",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Is fuath liom é.",
+  "en": "I hate it.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Is breá liom ceol.",
+  "en": "I love music.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Is maith liom spórt.",
+  "en": "I like sport.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Is maith liom a bheith ag léamh.",
+  "en": "I like reading.",
+  "th": "mothu",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Ní maith liom an bháisteach.",
+  "en": "I don't like the rain.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Cad is maith leat a dhéanamh?",
+  "en": "What do you like to do?",
+  "alt": [
+   "Céard is maith leat a dhéanamh?"
+  ],
+  "th": "mothu",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá fearg orm.",
+  "en": "I'm angry.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá eagla orm.",
+  "en": "I'm afraid.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá imní orm.",
+  "en": "I'm worried.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá mé neirbhíseach.",
+  "en": "I'm nervous.",
+  "alt": [
+   "Táim neirbhíseach."
+  ],
+  "th": "mothu",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá mé sásta.",
+  "en": "I'm satisfied.",
+  "alt": [
+   "Táim sásta."
+  ],
+  "th": "mothu",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá mé ar bís.",
+  "en": "I'm excited.",
+  "alt": [
+   "Táim ar bís."
+  ],
+  "th": "mothu",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá mé te.",
+  "en": "I'm hot.",
+  "alt": [
+   "Táim te."
+  ],
+  "th": "mothu",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Níl caill orm.",
+  "en": "I can't complain.",
+  "th": "mothu",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: there is no loss on me."
+ },
+ {
+  "ga": "Measartha.",
+  "en": "So so.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Sílim go bhfuil sé go maith.",
+  "en": "I think it's good.",
+  "alt": [
+   "Ceapaim go bhfuil sé go maith."
+  ],
+  "th": "mothu",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Sílim gur smaoineamh maith é.",
+  "en": "I think it's a good idea.",
+  "alt": [
+   "Ceapaim gur smaoineamh maith é."
+  ],
+  "th": "mothu",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Cad é do thuairim?",
+  "en": "What's your opinion?",
+  "alt": [
+   "Céard é do thuairim?"
+  ],
+  "th": "mothu",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "I mo thuairim, tá sé go maith.",
+  "en": "In my opinion, it's good.",
+  "th": "mothu",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Ní aontaím leat.",
+  "en": "I disagree with you.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Cé acu is fearr leat?",
+  "en": "Which do you prefer?",
+  "th": "mothu",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Is fearr liom an ceann seo.",
+  "en": "I prefer this one.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé go hálainn.",
+  "en": "It's beautiful.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé uafásach.",
+  "en": "It's awful.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé leadránach.",
+  "en": "It's boring.",
+  "th": "mothu",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé suimiúil.",
+  "en": "It's interesting.",
+  "th": "mothu",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé greannmhar.",
+  "en": "It's funny.",
+  "th": "mothu",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá sé sin aisteach.",
+  "en": "That's strange.",
+  "th": "mothu",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Is maith liom thú.",
+  "en": "I like you.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Is breá liom thú.",
+  "en": "I love you (warmly).",
+  "th": "mothu",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "ga": "Tá grá agam duit.",
+  "en": "I love you (romantically).",
+  "th": "mothu",
+  "b": "A1",
+  "t": 2,
+  "n": "Literally: there is love at me for you."
+ },
+ {
+  "ga": "Tá mé ag tnúth leis.",
+  "en": "I'm looking forward to it.",
+  "alt": [
+   "Táim ag tnúth leis."
+  ],
+  "th": "mothu",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Bhain mé taitneamh as.",
+  "en": "I enjoyed it.",
+  "th": "mothu",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Ar bhain tú taitneamh as?",
+  "en": "Did you enjoy it?",
+  "th": "mothu",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Is trua sin.",
+  "en": "That's a pity.",
+  "alt": [
+   "Is mór an trua sin.",
+   "Is mór an trua é."
+  ],
+  "th": "mothu",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá súil agam.",
+  "en": "I hope so.",
+  "th": "mothu",
+  "b": "A1",
+  "t": 2,
+  "n": "Literally: I have an eye."
+ },
+ {
+  "ga": "Tá súil agam go bhfuil tú go maith.",
+  "en": "I hope you're well.",
+  "th": "mothu",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "ga": "Tá díomá orm.",
+  "en": "I'm disappointed.",
+  "th": "mothu",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tá uaigneas orm.",
+  "en": "I'm lonely.",
+  "th": "mothu",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tá náire orm.",
+  "en": "I'm embarrassed.",
+  "th": "mothu",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tá ionadh orm.",
+  "en": "I'm surprised.",
+  "th": "mothu",
+  "b": "A2",
+  "t": 3,
+  "alt": [
+   "Tá iontas orm."
+  ]
+ },
+ {
+  "ga": "Tá mé bréan de.",
+  "en": "I'm fed up with it.",
+  "alt": [
+   "Táim bréan de."
+  ],
+  "th": "mothu",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Aontaím go hiomlán.",
+  "en": "I completely agree.",
+  "th": "mothu",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Tá mé i ngrá leat.",
+  "en": "I'm in love with you.",
+  "th": "mothu",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Mo ghrá thú.",
+  "en": "You're my love.",
+  "th": "mothu",
+  "b": "A2",
+  "t": 3,
+  "n": "Literally: my love you."
+ },
+ {
+  "ga": "Is mór an náire é.",
+  "en": "It's a disgrace.",
+  "th": "mothu",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Ní maith liom é ar chor ar bith.",
+  "en": "I don't like it at all.",
+  "th": "mothu",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Ní féidir liom é a sheasamh.",
+  "en": "I can't stand it.",
+  "th": "mothu",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Tá sé ag cur isteach orm.",
+  "en": "It's bothering me.",
+  "th": "mothu",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Tá an-spéis agam ann.",
+  "en": "I'm very interested in it.",
+  "th": "mothu",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "ga": "Cén sórt ceoil is maith leat?",
+  "en": "What kind of music do you like?",
+  "th": "mothu",
+  "b": "A2",
+  "t": 3,
+  "alt": [
+   "Cén saghas ceoil is maith leat?",
+   "Cén cineál ceoil is maith leat?"
+  ]
+ },
+ {
+  "ga": "Tá mé ag tnúth go mór leis.",
+  "en": "I'm really looking forward to it.",
+  "alt": [
+   "Táim ag tnúth go mór leis."
+  ],
+  "th": "mothu",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "ga": "Is cuma sa diabhal liom.",
+  "en": "I couldn't care less.",
+  "th": "mothu",
+  "b": "B1",
+  "t": 3,
+  "n": "Strong. Literally: it is the same to me in the devil."
+ }
 ]

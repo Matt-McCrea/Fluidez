@@ -75,6 +75,10 @@ V.forEach(x => ['lait', 'caite', 'fhaist', 'coinn', 'gnath', 'ord'].forEach(t =>
   });
 })(path.join(ROOT, 'gaeilge'));
 
+// ---- the service worker version follows the content -------------------------
+const BC = require(path.join(__dirname, 'ga', 'bump-cache.js'));
+eq(BC.current(), BC.version(), 'gaeilge/sw.js CACHE_VERSION is stale: run node tools/ga/bump-cache.js');
+
 // ---- banks: every answer recomputed (added as the banks land) ---------------
 const banks = path.join(__dirname, 'ga', 'checks');
 if (fs.existsSync(banks)) fs.readdirSync(banks).filter(f => f.endsWith('.js')).sort().forEach(f => {
