@@ -294,10 +294,75 @@ window.ARSpeak = (function () {
     w.appendChild(top(NAME.en, function () { nav.board(); }));
     w.appendChild(el('p', 'arc-sub', 'Short packs of everyday phrases. Pass a pack to open the next.'));
     section(w, false);
+    if (window.ARConvo) window.ARConvo.section(w, null, home);
     show(w);
   }
 
   function leave() { if (nav.leave) nav.leave(); else home(); }
+
+  // ---- Talk and Script: the two sides of the app, switchable at any time (talaqa.mode) ------------------------
+  var MODE_KEY = 'talaqa.mode';
+  /* 'talk' (the default) or 'script'. */
+  function mode() {
+    var m;
+    try { m = localStorage.getItem(MODE_KEY); } catch (e) { m = null; }
+    return m === 'script' ? 'script' : 'talk';
+  }
+  function setMode(m) { try { localStorage.setItem(MODE_KEY, m === 'script' ? 'script' : 'talk'); } catch (e) {} }
+  /* The two-part control at the top of every home. */
+  function modeToggle() {
+    var seg = el('div', 'arc-seg');
+    seg.setAttribute('role', 'group');
+    seg.setAttribute('aria-label', 'Talk or Script');
+    var cur = mode();
+    [['talk', 'Talk', 'تَكَلَّم'], ['script', 'Script', 'حُرُوف']].forEach(function (x) {
+      var b = el('button', 'arc-seg-b' + (x[0] === cur ? ' on' : ''));
+      b.type = 'button';
+      b.setAttribute('data-mode', x[0]);
+      b.appendChild(el('b', null, x[1]));
+      b.appendChild(UI.ar(x[2]));
+      b.addEventListener('click', function () {
+        if (x[0] !== mode()) { setMode(x[0]); nav.board(); }
+      });
+      seg.appendChild(b);
+    });
+    return seg;
+  }
+  /* The topic focus the phrase sheet keeps (talaqa.arcade .focus): theme ids, or none for all. */
+  function focus() {
+    var f;
+    try { f = (JSON.parse(localStorage.getItem(VARIETY_KEY)) || {}).focus; } catch (e) { f = null; }
+    return Array.isArray(f) ? f : [];
+  }
+  /* The Talk home: the speaking side, before and after the letters test. */
+  function talkHome() {
+    var H = window.ARHuruf;
+    var w = el('div', 'arc arc-first arc-talk');
+    w.appendChild(modeToggle());
+    var brand = el('div', 'arc-first-brand');
+    brand.appendChild(UI.ar('طَلَاقَة', 'big'));
+    brand.appendChild(el('div', 'arc-brand', 'Ṭalāqa'));
+    w.appendChild(brand);
+    w.appendChild(el('p', 'arc-sub', H && H.unlocked()
+      ? 'Talk: packs, conversations and phrases, led by the sound. Switch to Script for the games and the letters.'
+      : 'You can start speaking Arabic now, and learn the letters alongside. Switch to Script for the letters. The games open when you pass the letters test.'));
+    section(w, false);
+    if (window.ARConvo) window.ARConvo.section(w, focus(), function () { nav.board(); });
+    var books = window.AR_PHRASES || [];
+    if (books.length && window.ARArcade && window.ARArcade.practisePhrases) {
+      w.appendChild(strandHead('Phrases', 'عِبَارَات', 'ʿIbārāt'));
+      var f = focus(), labels = window.ARArcade.themeLabels ? f.map(window.ARArcade.themeLabels) : f;
+      var b = el('button', 'arc-mode on');
+      b.type = 'button';
+      b.appendChild(el('b', null, 'Practise phrases'));
+      b.appendChild(el('span', null, f.length ? 'Topics: ' + labels.join(', ') : 'All topics'));
+      b.addEventListener('click', function () { window.ARArcade.practisePhrases(); });
+      var row = el('div', 'arc-modes sp-modes');
+      row.appendChild(b);
+      w.appendChild(row);
+    }
+    show(w);
+  }
 
   function packCard(n) {
     var pack = packN(n);
@@ -385,7 +450,7 @@ window.ARSpeak = (function () {
   function init(o) { for (var k in o) nav[k] = o[k]; }
 
   return {
-    init: init, packs: packs, packOpen: packOpen, packDone: packDone, section: section, home: home, packCard: packCard,
+    init: init, nav: function () { return nav; }, mode: mode, setMode: setMode, modeToggle: modeToggle, talkHome: talkHome, focus: focus, packs: packs, packOpen: packOpen, packDone: packDone, section: section, home: home, packCard: packCard,
     startRound: startRound, packItems: packItems, variety: variety, setVariety: setVariety, trOf: trOf, textOf: textOf,
     clip: clip, state: load, last: function () { return lastItem; }, ROUND: ROUND, PASS_FRAC: PASS_FRAC, NAME: NAME, HUE: HUE, _reset: _reset
   };

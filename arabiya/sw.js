@@ -10,7 +10,7 @@
  *
  * ASSETS must mirror every <script>/<link> in index.html plus the data files.
  * ========================================================================== */
-var CACHE_VERSION = 'tbdf0d648';
+var CACHE_VERSION = 't3a68d8a7';
 var CACHE_NAME = 'talaqa-' + CACHE_VERSION;
 /* Audio bundles are named by their content hash, so they never go stale: they live
  * in their own cache that a new version keeps, and nothing is downloaded twice. */
@@ -43,6 +43,7 @@ var ASSETS = [
   './data/verbs.js',
   './data/words.js',
   './data/phrases.js',
+  './data/conversations.js',
   './data/speak.js',
   './data/cards.js',
   './data/gaps-afal.js',
@@ -54,6 +55,7 @@ var ASSETS = [
   './js/ar-items.js',
   './js/gameround.js',
   './js/ar-huruf.js',
+  './js/ar-convo.js',
   './js/ar-speak.js',
   './js/ar-check.js',
   './js/ar-arcade.js'

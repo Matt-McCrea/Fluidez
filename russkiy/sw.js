@@ -10,7 +10,7 @@
  *
  * ASSETS must mirror every <script>/<link> in index.html plus the data files.
  * ========================================================================== */
-var CACHE_VERSION = 'tb169202a';
+var CACHE_VERSION = 'tdc82f670';
 var CACHE_NAME = 'svobodno-' + CACHE_VERSION;
 /* Audio bundles are named by their content hash, so they never go stale: they live
  * in their own cache that a new version keeps, and nothing is downloaded twice. */
@@ -42,6 +42,7 @@ var ASSETS = [
   './data/verbs.js',
   './data/words.js',
   './data/phrases.js',
+  './data/conversations.js',
   './data/speak.js',
   './data/cards.js',
   './data/gaps-glagoly.js',
@@ -53,6 +54,7 @@ var ASSETS = [
   './js/ru-items.js',
   './js/gameround.js',
   './js/ru-bukvy.js',
+  './js/ru-convo.js',
   './js/ru-speak.js',
   './js/ru-check.js',
   './js/ru-arcade.js'

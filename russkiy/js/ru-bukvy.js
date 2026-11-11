@@ -327,10 +327,7 @@ window.RUBukvy = (function () {
     var open = unlocked();
     var w = wrapEl();
     w.appendChild(top(open ? 'Letters' : 'Svobodno', open ? nav.board : null));
-    if (!open && window.RUSpeak) {
-      window.RUSpeak.section(w, false);
-      w.appendChild(strandHead(NAME.en, NAME.ru, NAME.tr));
-    }
+    if (!open && window.RUSpeak) w.appendChild(window.RUSpeak.modeToggle());
     w.appendChild(el('p', 'arc-sub', open
       ? 'The Cyrillic course. Lessons stay open for review.'
       : 'Seven lessons. Pass each round with 8 of 10 to open the next. Pass the exit test to open the games.'));
@@ -515,7 +512,7 @@ window.RUBukvy = (function () {
 
   function init(o) {
     for (var k in o) nav[k] = o[k];
-    if (window.RUSpeak) window.RUSpeak.init({ board: o.board, push: o.push, back: o.back, round: o.round, leave: function () { if (unlocked()) window.RUSpeak.home(); else path(); } });
+    if (window.RUSpeak) window.RUSpeak.init({ board: o.board, push: o.push, back: o.back, round: o.round, leave: function () { o.board(); } });
   }
 
   return {

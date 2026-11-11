@@ -872,3 +872,23 @@ b.arc-ct-c { color:var(--muted); font-weight:600; }
 .arc-small { flex-direction:column; gap:0; padding:8px 6px; min-height:64px; overflow:hidden; text-align:center; }
 .arc-small .arc-name.ru { font-size:1.1rem; }
 .arc-small .arc-tr, .arc-small .arc-en { font-size:.7rem; }
+
+/* ---- Talk / Script toggle, conversations (js/ar-speak.js, js/ar-convo.js) ----------------- */
+.arc-seg { display:flex; gap:4px; padding:4px; margin:0 0 14px; background:var(--panel); border:1px solid var(--border); border-radius:999px; }
+.arc-seg-b { flex:1; display:flex; align-items:baseline; justify-content:center; gap:8px; min-height:44px; padding:8px 12px; border:0; border-radius:999px; background:transparent; color:var(--muted); font:inherit; cursor:pointer; }
+.arc-seg-b b { font-size:.95rem; font-weight:800; }
+.arc-seg-b .ru { font-size:1em; }
+.arc-seg-b.on { background:var(--accent); color:var(--bg); }
+.arc-talk .sp-card .spk, .cv-bubble .cv-spk { font-size:1.25rem; min-width:44px; min-height:44px; }
+.cv-list { margin-bottom:6px; }
+.cv-chat { display:flex; flex-direction:column; gap:10px; margin:12px 0; }
+.cv-bubble { position:relative; max-width:88%; padding:10px 48px 10px 14px; border-radius:16px; border:1px solid var(--border); background:var(--panel); text-align:left; }
+.cv-them { align-self:flex-start; border-bottom-left-radius:4px; }
+.cv-me { align-self:flex-end; border-bottom-right-radius:4px; background:var(--panel-2); }
+.cv-who { font-size:.68rem; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; margin-bottom:2px; }
+.cv-bubble .cv-spk { position:absolute; top:6px; right:2px; }
+.cv-ru.ru { display:block; font-size:1.25em; line-height:1.7; text-align:left; }
+.cv-tr { font-size:.84rem; color:var(--muted); margin:2px 0; }
+.cv-playall { margin-top:4px; }
+.cv-practise { text-align:left; }
+@media (min-width:560px) { .cv-bubble { max-width:70%; } }

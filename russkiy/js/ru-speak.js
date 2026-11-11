@@ -20,6 +20,7 @@
 window.RUSpeak = (function () {
   var UI = window.UI, RU = window.RU, GC = window.RUCore;
   var KEY = 'svobodno.speak';
+  var ARC_KEY = 'svobodno.arcade';
   var ROUND = 10, PASS_FRAC = 0.8;
   var HUE = '#2fb3a5';
   var KINDS = ['pick', 'say', 'pick', 'build', 'reply', 'say', 'build', 'pick', 'reply', 'pick'];
@@ -272,10 +273,75 @@ window.RUSpeak = (function () {
     w.appendChild(top(NAME.en, function () { nav.board(); }));
     w.appendChild(el('p', 'arc-sub', 'Short packs of everyday phrases. Pass a pack to open the next.'));
     section(w, false);
+    if (window.RUConvo) window.RUConvo.section(w, null, home);
     show(w);
   }
 
   function leave() { if (nav.leave) nav.leave(); else home(); }
+
+  // ---- Talk and Script: the two sides of the app, switchable at any time (svobodno.mode) ------------------------
+  var MODE_KEY = 'svobodno.mode';
+  /* 'talk' (the default) or 'script'. */
+  function mode() {
+    var m;
+    try { m = localStorage.getItem(MODE_KEY); } catch (e) { m = null; }
+    return m === 'script' ? 'script' : 'talk';
+  }
+  function setMode(m) { try { localStorage.setItem(MODE_KEY, m === 'script' ? 'script' : 'talk'); } catch (e) {} }
+  /* The two-part control at the top of every home. */
+  function modeToggle() {
+    var seg = el('div', 'arc-seg');
+    seg.setAttribute('role', 'group');
+    seg.setAttribute('aria-label', 'Talk or Script');
+    var cur = mode();
+    [['talk', 'Talk', 'Говори́ть'], ['script', 'Script', 'Бу́квы']].forEach(function (x) {
+      var b = el('button', 'arc-seg-b' + (x[0] === cur ? ' on' : ''));
+      b.type = 'button';
+      b.setAttribute('data-mode', x[0]);
+      b.appendChild(el('b', null, x[1]));
+      b.appendChild(UI.ru(x[2]));
+      b.addEventListener('click', function () {
+        if (x[0] !== mode()) { setMode(x[0]); nav.board(); }
+      });
+      seg.appendChild(b);
+    });
+    return seg;
+  }
+  /* The topic focus the phrase sheet keeps (svobodno.arcade .focus): theme ids, or none for all. */
+  function focus() {
+    var f;
+    try { f = (JSON.parse(localStorage.getItem(ARC_KEY)) || {}).focus; } catch (e) { f = null; }
+    return Array.isArray(f) ? f : [];
+  }
+  /* The Talk home: the speaking side, before and after the letters test. */
+  function talkHome() {
+    var H = window.RUBukvy;
+    var w = el('div', 'arc arc-first arc-talk');
+    w.appendChild(modeToggle());
+    var brand = el('div', 'arc-first-brand');
+    brand.appendChild(UI.ru('Свобо́дно', 'big'));
+    brand.appendChild(el('div', 'arc-brand', 'Svobodno'));
+    w.appendChild(brand);
+    w.appendChild(el('p', 'arc-sub', H && H.unlocked()
+      ? 'Talk: packs, conversations and phrases, led by the sound. Switch to Script for the games and the letters.'
+      : 'You can start speaking Russian now, and learn the letters alongside. Switch to Script for the letters. The games open when you pass the letters test.'));
+    section(w, false);
+    if (window.RUConvo) window.RUConvo.section(w, focus(), function () { nav.board(); });
+    var books = window.RU_PHRASES || [];
+    if (books.length && window.RUArcade && window.RUArcade.practisePhrases) {
+      w.appendChild(strandHead('Phrases', 'Фра́зы', 'Frázy'));
+      var f = focus(), labels = window.RUArcade.themeLabels ? f.map(window.RUArcade.themeLabels) : f;
+      var b = el('button', 'arc-mode on');
+      b.type = 'button';
+      b.appendChild(el('b', null, 'Practise phrases'));
+      b.appendChild(el('span', null, f.length ? 'Topics: ' + labels.join(', ') : 'All topics'));
+      b.addEventListener('click', function () { window.RUArcade.practisePhrases(); });
+      var row = el('div', 'arc-modes sp-modes');
+      row.appendChild(b);
+      w.appendChild(row);
+    }
+    show(w);
+  }
 
   function packCard(n) {
     var pack = packN(n);
@@ -348,7 +414,7 @@ window.RUSpeak = (function () {
   function init(o) { for (var k in o) nav[k] = o[k]; }
 
   return {
-    init: init, packs: packs, packOpen: packOpen, packDone: packDone, section: section, home: home, packCard: packCard,
+    init: init, nav: function () { return nav; }, mode: mode, setMode: setMode, modeToggle: modeToggle, talkHome: talkHome, focus: focus, packs: packs, packOpen: packOpen, packDone: packDone, section: section, home: home, packCard: packCard,
     startRound: startRound, packItems: packItems, trOf: trOf, textOf: textOf,
     clip: clip, state: load, last: function () { return lastItem; }, ROUND: ROUND, PASS_FRAC: PASS_FRAC, NAME: NAME, HUE: HUE, _reset: _reset
   };

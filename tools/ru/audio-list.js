@@ -16,6 +16,7 @@ if (L) {
 }
 const W = load('words.js'); if (W) W.forEach(w => add(w.ru, 'word'));
 const P = load('phrases.js'); if (P) P.forEach(p => add(p.ru, 'phrase'));
+const CV = load('conversations.js'); if (CV) CV.forEach(c => c.lines.forEach(l => add(l.ru, 'phrase')));
 // gap sentences, read whole with the answer in place
 global.window = global.window || {};
 ['glagoly', 'vid', 'dvizhenie', 'padezhi'].forEach(k => {

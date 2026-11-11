@@ -1,0 +1,190 @@
+[
+  {
+    "id": "meet", "en": "Meeting someone new", "th": "intro", "b": "A1", "you": "a",
+    "roles": { "a": "You", "b": "Olga" },
+    "n": "New people, so вы.",
+    "lines": [
+      { "who": "a", "ru": "Здра'вствуйте! Меня' зову'т Марк.", "en": "Hello! My name is Mark." },
+      { "who": "b", "ru": "О'чень прия'тно, Марк. Я О'льга.", "en": "Nice to meet you, Mark. I'm Olga." },
+      { "who": "a", "ru": "Прия'тно познако'миться. Вы из Москвы'?", "en": "Nice to meet you. Are you from Moscow?" },
+      { "who": "b", "ru": "Нет, я из Каза'ни. А вы отку'да?", "en": "No, I'm from Kazan. And where are you from?" },
+      { "who": "a", "ru": "Я из А'нглии.", "en": "I'm from England." },
+      { "who": "b", "ru": "Вы хорошо' говори'те по-ру'сски!", "en": "You speak Russian well!" },
+      { "who": "a", "ru": "Спаси'бо, я то'лько учу'сь.", "en": "Thanks, I'm only just learning." },
+      { "who": "b", "ru": "Молоде'ц! Добро' пожа'ловать!", "en": "Well done! Welcome!" }
+    ]
+  },
+  {
+    "id": "cafe", "en": "Ordering in a café", "th": "food", "b": "A1", "you": "a",
+    "roles": { "a": "You", "b": "Waiter" },
+    "lines": [
+      { "who": "b", "ru": "Здра'вствуйте! Что бу'дете зака'зывать?", "en": "Hello! What would you like to order?" },
+      { "who": "a", "ru": "Ча'шку ко'фе, пожа'луйста.", "en": "A cup of coffee, please." },
+      { "who": "b", "ru": "С молоко'м?", "en": "With milk?" },
+      { "who": "a", "ru": "Да, с молоко'м. И кусо'к то'рта.", "en": "Yes, with milk. And a piece of cake." },
+      { "who": "b", "ru": "Есть медо'вый и шокола'дный.", "en": "There's honey cake and chocolate cake." },
+      { "who": "a", "ru": "Шокола'дный, пожа'луйста.", "en": "The chocolate one, please." },
+      { "who": "b", "ru": "Хорошо'. Что-то ещё?", "en": "All right. Anything else?" },
+      { "who": "a", "ru": "Нет, спаси'бо. Э'то всё.", "en": "No, thanks. That's all." },
+      { "who": "b", "ru": "Сейча'с принесу'.", "en": "I'll bring it right away." }
+    ]
+  },
+  {
+    "id": "shop", "en": "Buying food at a shop", "th": "shop", "b": "A1", "you": "a",
+    "roles": { "a": "You", "b": "Shop assistant" },
+    "lines": [
+      { "who": "a", "ru": "Здра'вствуйте! У вас есть хлеб?", "en": "Hello! Do you have bread?" },
+      { "who": "b", "ru": "Да, вот бе'лый, а вот чёрный.", "en": "Yes, here's white, and here's rye." },
+      { "who": "a", "ru": "Чёрный, пожа'луйста. И литр молока'.", "en": "Rye, please. And a litre of milk." },
+      { "who": "b", "ru": "Что ещё?", "en": "What else?" },
+      { "who": "a", "ru": "Две'сти гра'ммов сы'ра, пожа'луйста.", "en": "Two hundred grams of cheese, please." },
+      { "who": "b", "ru": "Пожа'луйста. Э'то всё?", "en": "Here you are. Is that all?" },
+      { "who": "a", "ru": "Да. Ско'лько с меня'?", "en": "Yes. How much do I owe you?" },
+      { "who": "b", "ru": "Три'ста пятьдеся'т рубле'й.", "en": "Three hundred and fifty roubles." },
+      { "who": "a", "ru": "Мо'жно ка'ртой?", "en": "Can I pay by card?" },
+      { "who": "b", "ru": "Коне'чно.", "en": "Of course." }
+    ]
+  },
+  {
+    "id": "metro", "en": "Asking the way to the metro", "th": "travel", "b": "A1", "you": "a",
+    "roles": { "a": "You", "b": "Passerby" },
+    "lines": [
+      { "who": "a", "ru": "Извини'те, где здесь метро'?", "en": "Excuse me, where's the metro around here?" },
+      { "who": "b", "ru": "Иди'те пря'мо, пото'м напра'во.", "en": "Go straight on, then right." },
+      { "who": "a", "ru": "Э'то далеко'?", "en": "Is it far?" },
+      { "who": "b", "ru": "Нет, мину'т пять пешко'м.", "en": "No, about five minutes on foot." },
+      { "who": "a", "ru": "А как называ'ется ста'нция?", "en": "And what's the station called?" },
+      { "who": "b", "ru": "«Пу'шкинская».", "en": "Pushkinskaya." },
+      { "who": "a", "ru": "Большо'е спаси'бо!", "en": "Thank you very much!" },
+      { "who": "b", "ru": "Не' за что.", "en": "Not at all." }
+    ]
+  },
+  {
+    "id": "taxi", "en": "Taking a taxi", "th": "travel", "b": "A2", "you": "a",
+    "roles": { "a": "You", "b": "Driver" },
+    "lines": [
+      { "who": "b", "ru": "До'брый ве'чер! Куда' е'дем?", "en": "Good evening! Where are we going?" },
+      { "who": "a", "ru": "В гости'ницу «Росси'я», пожа'луйста.", "en": "To the Rossiya hotel, please." },
+      { "who": "b", "ru": "Хорошо'. Вы торо'питесь?", "en": "All right. Are you in a hurry?" },
+      { "who": "a", "ru": "Да, немно'го. Ско'лько е'хать?", "en": "Yes, a little. How long is the drive?" },
+      { "who": "b", "ru": "Мину'т два'дцать, е'сли не бу'дет про'бок.", "en": "About twenty minutes, if there's no traffic." },
+      { "who": "a", "ru": "Мо'жно откры'ть окно'?", "en": "May I open the window?" },
+      { "who": "b", "ru": "Коне'чно, открыва'йте.", "en": "Of course, go ahead." },
+      { "who": "b", "ru": "Вот мы и прие'хали. С вас пятьсо'т рубле'й.", "en": "Here we are. That's five hundred roubles." },
+      { "who": "a", "ru": "Вот, пожа'луйста. Сда'чи не на'до.", "en": "Here you are. Keep the change." },
+      { "who": "b", "ru": "Спаси'бо! Всего' до'брого!", "en": "Thank you! All the best!" }
+    ]
+  },
+  {
+    "id": "hotel", "en": "Checking into a hotel", "th": "travel", "b": "A2", "you": "a",
+    "roles": { "a": "You", "b": "Receptionist" },
+    "lines": [
+      { "who": "a", "ru": "Здра'вствуйте! Я заброни'ровал но'мер.", "en": "Hello! I booked a room. (a man speaking)" },
+      { "who": "b", "ru": "До'брый день. Ва'ша фами'лия?", "en": "Good afternoon. Your surname?" },
+      { "who": "a", "ru": "Смит. Джон Смит.", "en": "Smith. John Smith." },
+      { "who": "b", "ru": "Да, вот. Одноме'стный но'мер на три но'чи.", "en": "Yes, here it is. A single room for three nights." },
+      { "who": "a", "ru": "Всё пра'вильно.", "en": "That's right." },
+      { "who": "b", "ru": "Ваш па'спорт, пожа'луйста.", "en": "Your passport, please." },
+      { "who": "a", "ru": "Вот. Во ско'лько за'втрак?", "en": "Here it is. What time is breakfast?" },
+      { "who": "b", "ru": "С семи' до десяти'.", "en": "From seven to ten." },
+      { "who": "a", "ru": "А где лифт?", "en": "And where's the lift?" },
+      { "who": "b", "ru": "Сле'ва. Вот ваш ключ, но'мер три'ста пять.", "en": "On the left. Here's your key, room three hundred and five." }
+    ]
+  },
+  {
+    "id": "pharmacy", "en": "At the pharmacy", "th": "feel", "b": "A2", "you": "a",
+    "roles": { "a": "You", "b": "Pharmacist" },
+    "lines": [
+      { "who": "b", "ru": "Здра'вствуйте. Чем могу' помо'чь?", "en": "Hello. How can I help?" },
+      { "who": "a", "ru": "У меня' боли'т голова'.", "en": "I have a headache." },
+      { "who": "b", "ru": "Давно'?", "en": "For long?" },
+      { "who": "a", "ru": "Со вчера'шнего дня.", "en": "Since yesterday." },
+      { "who": "b", "ru": "Температу'ра есть?", "en": "Do you have a temperature?" },
+      { "who": "a", "ru": "Нет, но я пло'хо сплю.", "en": "No, but I'm sleeping badly." },
+      { "who": "b", "ru": "Вот, возьми'те ибупрофе'н.", "en": "Here, take some ibuprofen." },
+      { "who": "a", "ru": "Как его' принима'ть?", "en": "How should I take it?" },
+      { "who": "b", "ru": "Одну' табле'тку три ра'за в день.", "en": "One tablet three times a day." },
+      { "who": "a", "ru": "Поня'тно. Спаси'бо!", "en": "I see. Thank you!" }
+    ]
+  },
+  {
+    "id": "train", "en": "Buying a train ticket", "th": "travel", "b": "A2", "you": "a",
+    "roles": { "a": "You", "b": "Ticket clerk" },
+    "lines": [
+      { "who": "a", "ru": "Здра'вствуйте. Оди'н биле'т до Петербу'рга, пожа'луйста.", "en": "Hello. One ticket to St Petersburg, please." },
+      { "who": "b", "ru": "На како'е число'?", "en": "For what date?" },
+      { "who": "a", "ru": "На за'втра, у'тром.", "en": "For tomorrow morning." },
+      { "who": "b", "ru": "Есть по'езд в во'семь со'рок.", "en": "There's a train at eight forty." },
+      { "who": "a", "ru": "Отли'чно. Ско'лько сто'ит?", "en": "Great. How much is it?" },
+      { "who": "b", "ru": "Четы'ре ты'сячи рубле'й.", "en": "Four thousand roubles." },
+      { "who": "a", "ru": "Хорошо'. Мо'жно ме'сто у окна'?", "en": "Fine. Can I have a window seat?" },
+      { "who": "b", "ru": "Да. Ваш па'спорт, пожа'луйста.", "en": "Yes. Your passport, please." },
+      { "who": "a", "ru": "Вот, пожа'луйста.", "en": "Here you are." }
+    ]
+  },
+  {
+    "id": "phone", "en": "Making plans by phone", "th": "social", "b": "A2", "you": "a",
+    "roles": { "a": "You", "b": "Masha" },
+    "n": "Friends, so ты.",
+    "lines": [
+      { "who": "b", "ru": "Алло'! Приве'т!", "en": "Hello? Hi!" },
+      { "who": "a", "ru": "Приве'т, Ма'ша! Что де'лаешь в суббо'ту?", "en": "Hi, Masha! What are you doing on Saturday?" },
+      { "who": "b", "ru": "Пока' ничего'. А что?", "en": "Nothing yet. Why?" },
+      { "who": "a", "ru": "Пойдём в кино'?", "en": "Shall we go to the cinema?" },
+      { "who": "b", "ru": "Дава'й! Во ско'лько?", "en": "Let's! What time?" },
+      { "who": "a", "ru": "Фильм начина'ется в семь.", "en": "The film starts at seven." },
+      { "who": "b", "ru": "Хорошо'. Где встре'тимся?", "en": "Okay. Where shall we meet?" },
+      { "who": "a", "ru": "Дава'й у метро' «Арба'тская».", "en": "Let's meet at Arbatskaya metro." },
+      { "who": "b", "ru": "Отли'чно. До суббо'ты!", "en": "Great. See you on Saturday!" },
+      { "who": "a", "ru": "Пока'!", "en": "Bye!" }
+    ]
+  },
+  {
+    "id": "family", "en": "Talking about family", "th": "social", "b": "A2", "you": "a",
+    "roles": { "a": "You", "b": "Dima" },
+    "n": "Friends, so ты.",
+    "lines": [
+      { "who": "b", "ru": "У тебя' больша'я семья'?", "en": "Do you have a big family?" },
+      { "who": "a", "ru": "Не о'чень. У меня' брат и сестра'.", "en": "Not very. I have a brother and a sister." },
+      { "who": "b", "ru": "Они' ста'рше и'ли мла'дше?", "en": "Are they older or younger?" },
+      { "who": "a", "ru": "Брат ста'рше, а сестра' мла'дше.", "en": "My brother is older, and my sister is younger." },
+      { "who": "b", "ru": "А чем они' занима'ются?", "en": "And what do they do?" },
+      { "who": "a", "ru": "Брат врач, а сестра' ещё у'чится.", "en": "My brother is a doctor, and my sister is still studying." },
+      { "who": "b", "ru": "А роди'тели?", "en": "And your parents?" },
+      { "who": "a", "ru": "Они' живу'т в Ло'ндоне. Па'па уже' на пе'нсии.", "en": "They live in London. Dad has already retired." },
+      { "who": "b", "ru": "А у меня' то'лько мла'дший брат.", "en": "And I only have a younger brother." }
+    ]
+  },
+  {
+    "id": "home", "en": "Visiting a Russian home", "th": "food", "b": "B1", "you": "a",
+    "roles": { "a": "You", "b": "Host" },
+    "lines": [
+      { "who": "b", "ru": "Проходи'те, пожа'луйста! Раздева'йтесь.", "en": "Come in, please! Take your coat off." },
+      { "who": "a", "ru": "Спаси'бо. Э'то вам, к ча'ю.", "en": "Thank you. This is for you, to have with tea." },
+      { "who": "b", "ru": "Ну заче'м же! Сади'тесь за стол.", "en": "Oh, you shouldn't have! Sit down at the table." },
+      { "who": "a", "ru": "Как вку'сно па'хнет!", "en": "It smells so good!" },
+      { "who": "b", "ru": "Угоща'йтесь. Вот борщ, вот пирожки' с капу'стой.", "en": "Help yourself. Here's borscht, and here are cabbage pies." },
+      { "who": "a", "ru": "О'чень вку'сно! Вы са'ми пекли'?", "en": "Delicious! Did you bake them yourself?" },
+      { "who": "b", "ru": "Коне'чно. Возьми'те ещё!", "en": "Of course. Have some more!" },
+      { "who": "a", "ru": "Спаси'бо, я уже' нае'лся.", "en": "Thank you, I'm already full. (a man speaking)" },
+      { "who": "b", "ru": "Тогда' дава'йте пить чай. Вам с са'харом?", "en": "Then let's have tea. Would you like sugar?" },
+      { "who": "a", "ru": "Нет, без са'хара, но с варе'ньем.", "en": "No sugar, thanks, but some jam." }
+    ]
+  },
+  {
+    "id": "work", "en": "Small talk about work and hobbies", "th": "social", "b": "B1", "you": "a",
+    "roles": { "a": "You", "b": "Sergei" },
+    "lines": [
+      { "who": "b", "ru": "А чем вы занима'етесь?", "en": "And what do you do?" },
+      { "who": "a", "ru": "Я программи'ст, рабо'таю в небольшо'й компа'нии.", "en": "I'm a programmer, I work at a small company." },
+      { "who": "b", "ru": "Нра'вится?", "en": "Do you like it?" },
+      { "who": "a", "ru": "В це'лом да, но иногда' быва'ет ску'чно.", "en": "On the whole, yes, but sometimes it gets boring." },
+      { "who": "b", "ru": "А что вы де'лаете в свобо'дное вре'мя?", "en": "And what do you do in your free time?" },
+      { "who": "a", "ru": "Игра'ю на гита'ре и мно'го чита'ю.", "en": "I play the guitar and read a lot." },
+      { "who": "b", "ru": "Здо'рово! А я давно' хочу' научи'ться игра'ть.", "en": "Great! I've wanted to learn to play for ages." },
+      { "who": "a", "ru": "Е'сли хоти'те, могу' показа'ть па'ру акко'рдов.", "en": "If you like, I can show you a few chords." },
+      { "who": "b", "ru": "С удово'льствием!", "en": "I'd love that!" },
+      { "who": "a", "ru": "Тогда' дава'йте обменя'емся номера'ми.", "en": "Then let's swap numbers." }
+    ]
+  }
+]

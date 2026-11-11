@@ -26,6 +26,11 @@ const W = load('words.js'); if (W && !/PLACEHOLDER/.test(fs.readFileSync(path.jo
 const P = load('phrases.js'); if (P && !/PLACEHOLDER/.test(fs.readFileSync(path.join(D, 'phrases.js'), 'utf8').slice(0, 40))) P.forEach(p => {
   add(p.msa, 'msa', 'phrase'); add(p.lev, 'lev', 'phrase'); add(p.egy, 'egy', 'phrase');
 });
+// every conversation line, in each variety
+const CV = load('conversations.js');
+if (CV) CV.forEach(c => c.lines.forEach(l => {
+  add(l.msa, 'msa', 'phrase'); add(l.lev, 'lev', 'phrase'); add(l.egy, 'egy', 'phrase');
+}));
 // the verb sentences and pronoun sentences, read whole with the answer in place
 global.window = global.window || {};
 ['afal', 'damair'].forEach(k => {

@@ -59,17 +59,18 @@
     return bundles[url];
   }
 
-  function play(text, variety) {
+  function play(text, variety, done) {
     var r = ref(text, variety), a = media();
     if (!r || !a) return false;
     var mine = ++token;
-    try { a.pause(); } catch (e) {}
+    try { a.pause(); a.onended = null; } catch (e) {}
     bundle(r.url).then(function (buf) {
       if (mine !== token) return;                       // a newer clip was asked for
       var url = URL.createObjectURL(new Blob([buf.slice(r.off, r.off + r.len)], { type: 'audio/mpeg' }));
       if (lastUrl) { try { URL.revokeObjectURL(lastUrl); } catch (e) {} }
       lastUrl = url;
       a.src = url;
+      a.onended = done || null;
       var p = a.play();
       if (p && p.catch) p.catch(function () {});
     }).catch(function () {});

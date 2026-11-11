@@ -118,11 +118,9 @@
     VIEW = 'board';
     var h = host();
     if (!h) return;
-    var H = window.ARHuruf;
-    if (H && !H.unlocked()) {
-      if (H.started()) H.path(); else H.firstOpen();
-      return;
-    }
+    var H = window.ARHuruf, SK = window.ARSpeak;
+    if (SK && SK.mode() === 'talk') { SK.talkHome(); return; }       // Talk (the default): the speaking side, any time
+    if (H && !H.unlocked()) { H.path(); return; }                     // Script before the test: the letters course
     clear(h);
     var wrap = el('div', 'arc');
 
@@ -134,6 +132,7 @@
     top.appendChild(button('arc-level', band() + ' ▾', levelPicker, 'Your level'));
     top.appendChild(button('arc-gear', '⚙', settings, 'Settings'));
     wrap.appendChild(top);
+    if (SK) wrap.appendChild(SK.modeToggle());
 
     wrap.appendChild(ilabCard(GAMES[0]));
     if (window.ARCheck && window.ARCheck.due()) wrap.appendChild(checkCard());
@@ -142,7 +141,6 @@
     wrap.appendChild(tileRow('arc-grid arc-row4', GAMES.slice(4, 8)));
     var pair = el('div', 'arc-grid arc-row2');
     pair.appendChild(hurufTile(GAMES[8]));
-    if (window.ARSpeak) pair.appendChild(speakTile());
     wrap.appendChild(pair);
     wrap.appendChild(progressPanel());
 
@@ -185,16 +183,6 @@
     return tile;
   }
 
-  function speakTile() {
-    var N = window.ARSpeak.NAME;
-    var tile = el('button', 'arc-tile arc-small');
-    tile.type = 'button';
-    tile.style.setProperty('--g', window.ARSpeak.HUE);
-    tileLabel({ ar: N.ar, tr: N.tr, en: N.en }, tile);
-    tile.addEventListener('click', function () { pushView('speak'); window.ARSpeak.home(); });
-    return tile;
-  }
-
   /* ---- records per shape (one for each clock mode) ---------------------------------- */
   function modeKey(g, m) { return g.key + ':' + m; }
   function shelfStats(g) {
@@ -233,6 +221,8 @@
     return GI.grindThemes().some(function (t) { return t.id === id; }) ? id : '';
   }
   function saveWordTheme(id) { var a = loadArc(); a.wtheme = id || ''; saveArc(a); }
+  function chosenFocus() { var f = loadArc().focus; return Array.isArray(f) ? f.slice() : []; }
+  function saveFocus(f) { var a = loadArc(); a.focus = f; saveArc(a); }
   var VARIETY_CHOICES = [['msa', 'Fuṣḥā', 'فُصْحَى'], ['lev', 'Shāmī', 'شَامِي'], ['egy', 'Maṣrī', 'مَصْرِي'], ['all', 'All three', null]];
   function chosenVariety() { var v = loadArc().pv; return ['msa', 'lev', 'egy', 'all'].indexOf(v) !== -1 ? v : 'msa'; }
 
@@ -297,7 +287,33 @@
     }
 
     if (g.key === 'ibarat') {
-      wrap.appendChild(el('div', 'arc-progress')).appendChild(el('div', 'arc-progress-all', GI.phraseCoverage().text));
+      var pfocus = chosenFocus(), pcov = el('div', 'arc-progress'), pcovLine = el('div', 'arc-progress-all');
+      pcov.appendChild(pcovLine);
+      wrap.appendChild(pcov);
+      var paintCov = function () { pcovLine.textContent = GI.phraseCoverage(pfocus).text; };
+      paintCov();
+      var fthemes = Object.keys(GI.phraseList().byTheme);
+      if (fthemes.length > 1) {
+        wrap.appendChild(el('div', 'arc-group', 'Topics to focus on'));
+        var fchips = el('div', 'arc-chips arc-focus'), fby = {};
+        var fall = button('arc-chip', 'All topics');
+        var paintF = function () {
+          fall.classList.toggle('on', !pfocus.length);
+          Object.keys(fby).forEach(function (k) { fby[k].classList.toggle('on', pfocus.indexOf(k) !== -1); });
+        };
+        fall.addEventListener('click', function () { pfocus = []; saveFocus(pfocus); paintF(); paintCov(); paintConvos(); });
+        fchips.appendChild(fall);
+        fthemes.forEach(function (t) {
+          fby[t] = button('arc-chip', knownThemeLabel(t), function () {
+            var i = pfocus.indexOf(t);
+            if (i === -1) pfocus.push(t); else pfocus.splice(i, 1);
+            saveFocus(pfocus); paintF(); paintCov(); paintConvos();
+          });
+          fchips.appendChild(fby[t]);
+        });
+        paintF();
+        wrap.appendChild(fchips);
+      }
       wrap.appendChild(button('arc-wtbtn', 'Tick the phrases you know', function () { knownScreen(g); }));
       wrap.appendChild(el('div', 'arc-group', 'Variety'));
       var vc = el('div', 'arc-chips'), vby = {}, cur = chosenVariety();
@@ -311,6 +327,13 @@
       });
       paintV();
       wrap.appendChild(vc);
+      var convoBox = el('div', 'cv-sheet');
+      var paintConvos = function () {
+        clear(convoBox);
+        if (window.ARConvo) window.ARConvo.section(convoBox, pfocus, function () { sheet(g, true); });
+      };
+      paintConvos();
+      wrap.appendChild(convoBox);
     }
 
     if (g.key === 'kalimat') {
@@ -368,8 +391,16 @@
     if (sel.length) cfg.topics = sel;
     if (g.key === 'kalimat') { var wth = chosenWordTheme(); if (wth) cfg.theme = wth; }
     if (g.key === 'ibarat' || g.key === 'imir') cfg.pv = chosenVariety();
+    if (g.key === 'ibarat' && chosenFocus().length) cfg.themes = chosenFocus();     // the Play mix ignores the focus
     if (extra) Object.keys(extra).forEach(function (k) { cfg[k] = extra[k]; });
     window.GameRound.run(host(), cfg);
+  }
+  /* Talk mode's phrase practice: ten phrases led by the sound, from the topics in focus, in the Speak variety. */
+  function practisePhrases() {
+    var g = GAMES.filter(function (x) { return x.key === 'ibarat'; })[0];
+    if (!g) return;
+    var v = window.ARSpeak ? window.ARSpeak.variety() : 'lev';
+    startShelf(g, 't', { talk: true, pv: v });
   }
   // ten untimed questions on one unit (from a card or a check result)
   function practiceUnit(u) {
@@ -907,7 +938,7 @@
   }
 
   window.ARArcade = { board: board, knownScreen: knownScreen, cardScreen: cardScreen, checkRun: checkRun, sheet: sheet,
-    GAMES: GAMES, levelPicker: levelPicker, settings: settings, startShelf: startShelf };
+    GAMES: GAMES, practisePhrases: practisePhrases, themeLabels: knownThemeLabel, levelPicker: levelPicker, settings: settings, startShelf: startShelf };
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
   else boot();

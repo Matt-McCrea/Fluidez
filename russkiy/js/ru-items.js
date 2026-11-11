@@ -207,6 +207,12 @@ window.RUItems = (function () {
     if (sub && opts && opts.grind) st = st[sub] = st[sub] || { asked: 0, newN: 0, used: {} };
     st.used = st.used || {}; st.asked = st.asked || 0; st.newN = st.newN || 0;
     var L = !sub && opts && opts.theme && G.byTheme[opts.theme] ? G.byTheme[opts.theme] : G.list;
+    /* opts.themes (an array) is the phrase sheet's topic focus: the union of those themes, in rank order. */
+    if (sub === 'ph' && opts && opts.gkind === 'frazy' && opts.themes && opts.themes.length) {
+      var tset = {};
+      opts.themes.forEach(function (t) { tset[t] = 1; });
+      L = G.list.filter(function (e) { return tset[e.th]; });
+    }
     var capIx = G.bandCap ? bandIx(playerBand()) + 1 : 9;
     var td = today();
     /* A new item a B1+ player gets right at first sight was already theirs: it
@@ -366,13 +372,15 @@ window.RUItems = (function () {
     if (!p) return null;
     var e = p.e, known = answeredRight(e.id), raw = e.raw;
     var text = textOf(raw), n = phraseWords(text).length;
+    var talk = !!(opts && opts.talk);
     var item = { kind: 'frazy', cefr: e.b, bonus: 0, id: e.id, topic: null, note: e.note, ru: text, en: e.en,
       prompt: e.en, answer: text, accept: [text].concat(e.alt), level: GC.sentenceLevel(e.b), optRu: true,
       grind: p.mode, firstSight: p.mode === 'new', rank: e.rank + 1, noteOnRight: !!e.note,
       say: { t: text, v: 'ru' } };
     /* Script fade: the sound sits under the Cyrillic until the phrase is known, then the Cyrillic stands alone. */
-    var showTr = !known;
+    var showTr = !known || talk;
     if (showTr) item.trAnswer = trOf(raw);
+    if (talk) return talkPhrase(item, e, G, rng, known);
     if (known && n <= 5) { item.play = 'type'; return item; }
     if (known && n <= 8) {
       item.play = 'build'; item.words = phraseWords(text); item.answer = item.words.join(' '); item.reveal = text;
@@ -387,6 +395,29 @@ window.RUItems = (function () {
       item.optTr[text] = trOf(raw);
       wrong.forEach(function (w) { item.optTr[w.t] = w.tr; });
     }
+    return item;
+  }
+
+  /* Talk mode: the sound leads and the Cyrillic sits smaller above it, whether or not the phrase is known.
+   * Tapped only (a pick, or the sound's words once known), never typed. */
+  function talkPhrase(item, e, G, rng, known) {
+    var raw = e.raw, tr = trOf(raw), words = tr.replace(/\s+/g, ' ').trim().split(' ');
+    delete item.trAnswer; delete item.optRu;
+    item.accept = [tr]; item.level = 'full'; item.ansLatin = true;
+    if (known && words.length >= 2 && words.length <= 7) {
+      item.play = 'build'; item.latin = true; item.words = words; item.answer = words.join(' '); item.reveal = tr;
+      return item;
+    }
+    var wrong = phraseDistractors(e, G, rng);
+    if (!wrong) return null;
+    var seen = {}, opts = [{ t: item.ru, tr: tr }];
+    seen[tr] = 1;
+    wrong.forEach(function (w) { if (!seen[w.tr]) { seen[w.tr] = 1; opts.push(w); } });
+    if (opts.length < 4) return null;
+    item.play = 'choose'; item.answer = tr;
+    item.options = shuffle(opts.map(function (o) { return o.tr; }), rng);
+    item.optScript = {};
+    opts.forEach(function (o) { item.optScript[o.tr] = o.t; });
     return item;
   }
 
@@ -478,10 +509,12 @@ window.RUItems = (function () {
     }
     return out;
   }
-  function phraseCoverage() {
-    var G = phraseList(), of = G.list.length, n = 0;
-    G.list.forEach(function (e) { if (knownCard(stateOf(e.id))) n++; });
-    return { n: n, of: of, text: of ? 'You know ' + thousands(n) + ' of ' + thousands(of) + ' phrases' : 'No phrases yet' };
+  function phraseCoverage(themes) {
+    var G = phraseList(), L = G.list, n = 0, focus = !!(themes && themes.length);
+    if (focus) L = L.filter(function (e) { return themes.indexOf(e.th) !== -1; });
+    var of = L.length;
+    L.forEach(function (e) { if (knownCard(stateOf(e.id))) n++; });
+    return { n: n, of: of, text: of ? 'You know ' + thousands(n) + ' of ' + thousands(of) + (focus ? ' phrases in these topics' : ' phrases') : 'No phrases yet' };
   }
   /* Distinct verbs with a glagoly sentence known. */
   function verbsKnown() {

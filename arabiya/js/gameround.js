@@ -405,7 +405,7 @@ window.GameRound = (function () {
         var got = cfg.draw ? cfg.draw(rng)
                 : cfg.deck ? GI.deckItem(cfg.deck, rng)
                             : GI.next(cfg.kind, rung, rng,
-                                { topics: cfg.topics, theme: cfg.theme, pv: cfg.pv,
+                                { topics: cfg.topics, theme: cfg.theme, themes: cfg.themes, talk: cfg.talk, pv: cfg.pv,
                                   grind: grindState, count: cfg.count || 0, gkind: cfg.kind });
         if (!got) continue;
         fallback = got;
@@ -1044,7 +1044,7 @@ window.GameRound = (function () {
 
       if (cfg.kind === 'ibarat' && GI.phraseCoverage) {
         var pcov = el('div', 'g-over-cover');
-        pcov.appendChild(el('div', 'g-over-cover-all', GI.phraseCoverage().text));
+        pcov.appendChild(el('div', 'g-over-cover-all', GI.phraseCoverage(cfg.themes).text));
         over.appendChild(pcov);
       }
 

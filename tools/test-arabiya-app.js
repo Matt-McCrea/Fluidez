@@ -51,7 +51,7 @@ const css = fs.readFileSync(path.join(AD, 'css/talaqa.css'), 'utf8').toLowerCase
 ['#0b0f1c', '#141a2e', '#1c2440', '#28324f', '#eef1f8', '#95a0bd', '#2ec4b6', '#e9b44c', '#46d98a', '#ff6b5e'].forEach(c => ok(css.indexOf(c) !== -1, 'talaqa.css lacks the palette colour ' + c));
 ok(/font-family:'naskh'/.test(css) && /line-height:1\.9/.test(css) && /1\.35em/.test(css), '.ar rules: Naskh, line-height 1.9, 1.35em');
 ok(!/@import|https?:|fonts\.g/.test(css), 'talaqa.css must be self-contained');
-['ar-arcade.js', 'gameround.js', 'ar-items.js', 'ar-check.js', 'ar-huruf.js', 'ar-speak.js', 'ui.js'].forEach(f => {
+['ar-arcade.js', 'gameround.js', 'ar-items.js', 'ar-check.js', 'ar-huruf.js', 'ar-speak.js', 'ar-convo.js', 'ui.js'].forEach(f => {
   const src = fs.readFileSync(path.join(AD, 'js', f), 'utf8');
   ok(!/[–—]/.test(src.replace(/\/\*[\s\S]*?\*\/|\/\/.*$/gm, '')), f + ' shows an en or em dash outside comments');
 });
@@ -139,25 +139,30 @@ const arcadeAt = scripts.findIndex(s => s.endsWith('ar-arcade.js'));
 scripts.slice(0, arcadeAt).forEach(rel => vm.runInContext(fs.readFileSync(path.join(AD, rel), 'utf8'), ctx, { filename: rel }));
 const REAL = { b: W.AR_BANK, w: W.AR_WORDS, p: W.AR_PHRASES, a: W.AR_AUDIO };
 console.log(`  repository banks: ${(REAL.b || []).length} gap rows, ${(REAL.w || []).length} words, ${(REAL.p || []).length} phrases, ${Object.keys(REAL.a || {}).length} clips`);
+REAL.cv = W.AR_CONVOS; W.AR_CONVOS = [];
 W.AR_BANK = []; W.AR_WORDS = []; W.AR_PHRASES = []; W.AR_AUDIO = {}; W.ARItems.reset();
 vm.runInContext(fs.readFileSync(path.join(AD, scripts[arcadeAt]), 'utf8'), ctx, { filename: scripts[arcadeAt] });
 ok(!!W.ARItems && !!W.GameScore && !!W.GameRound && !!W.ARCheck && !!W.ARArcade && !!W.AR && !!W.ARHuruf, 'the modules did not load');
 ok(!W.ENGINE && !W.Checker && !W.Speak && !W.GA, 'another app leaked into Talaqa');
 ok(typeof W.AR.play === 'function' && typeof W.AR.has === 'function', 'ar-audio did not add AR.play');
 
-// ---- first open: the two doors --------------------------------------------------------------------
+// ---- first open: Talk is the default home, with the toggle; Script is the letters course -------------------------------
 {
   const H = W.ARHuruf;
   ok(!H.started() && !H.unlocked(), 'a new learner has not started and the board is locked');
   W.ARArcade.board();
-  ok(byCls('arc-first').length === 1 && allText().indexOf('I\'m new to the script') !== -1 && allText().indexOf('I can read Arabic') !== -1, 'first open offers both doors');
+  ok(byCls('arc-first').length === 1 && byCls('arc-seg').length === 1 && allText().indexOf('start speaking') !== -1, 'first open is the Talk home with the toggle and the intro line');
+  ok(byCls('arc-seg-b').map(b => b.textContent).join('|').indexOf('Talk') !== -1 && byCls('arc-seg-b').map(b => b.textContent).join('|').indexOf('Script') !== -1 && byCls('arc-seg-b')[0].cls().includes('on'), 'the toggle says Talk and Script, Talk is on');
   ok(byCls('arc-tile').length === 0, 'the board stays closed before the exit test');
-  const door = byCls('arc-mode').filter(b => b.textContent.indexOf('new to the script') !== -1)[0]; door.click();
-  ok(allText().indexOf('Lesson 1') !== -1 && byCls('hr-letter').length === 4, 'the first door opens lesson 1 with its four letters');
+  byCls('arc-seg-b')[1].click();
+  ok(store['talaqa.mode'] === 'script' && byCls('arc-seg').length === 1 && byCls('arc-pick').length === 12, 'Script before the test is the letters course, the toggle still there, the choice kept in talaqa.mode');
+  ok(allText().indexOf('Skip to the exit test') !== -1, 'the exit test is offered');
+  byCls('arc-pick')[0].click();
+  ok(allText().indexOf('Lesson 1') !== -1 && byCls('hr-letter').length === 4, 'lesson 1 opens with its four letters');
   ok(byCls('hr-form').length === 16 && byCls('hr-start').length === 1, 'each letter shows four shapes; the round button is there');
   ok(byCls('ar').every(n => n.attrs.dir === 'rtl' && n.attrs.lang === 'ar'), 'every .ar node is dir rtl, lang ar');
-  W.ARArcade.board(); ok(byCls('hr-letter').length === 0 && byCls('arc-pick').length === 12 + W.AR_SPEAK.length, 'started: the path lists the 12 lessons and the speak packs');
-  ok(byCls('arc-pick').filter(b => !b.disabled).length === 2, 'only lesson 1 and pack 1 are open');
+  W.ARArcade.board(); ok(byCls('hr-letter').length === 0 && byCls('arc-pick').length === 12, 'Script: the path lists the 12 lessons');
+  ok(byCls('arc-pick').filter(b => !b.disabled).length === 1, 'only lesson 1 is open');
 }
 
 // ---- the board with empty banks, once the script test is passed ----------------------------------------------
@@ -166,12 +171,12 @@ W.ARHuruf._reset();
 {
   W.ARArcade.board();
   const tiles = byCls('arc-tile'), soon = byCls('arc-soon');
-  ok(tiles.length === 9, `empty banks: expected 9 tiles, got ${tiles.length}`);
+  ok(tiles.length === 8 && byCls('arc-seg').length === 1, `empty banks: expected 8 tiles and the toggle, got ${tiles.length}`);
   ok(soon.length === 7 && soon.every(s => s.textContent === 'coming soon'), 'empty banks: seven tiles say coming soon');
-  ok(tiles.filter(t => t.disabled).length === 7, 'empty banks: only Huruf and Speak are tappable');
+  ok(tiles.filter(t => t.disabled).length === 7, 'empty banks: only Huruf is tappable');
   ok(byCls('arc-jugar').length === 1 && byCls('arc-jugar')[0].disabled, 'empty banks: Ilab must be disabled');
-  ['Afʿāl', 'Kalimāt', 'ʿIbārāt', 'Ḥarakāt', 'Jidhr', 'Jumūʿ', 'Ḍamāʾir', 'Ḥurūf', 'Takallam'].forEach(l => ok(tiles.some(t => t.textContent.indexOf(l) !== -1), 'no tile for ' + l));
-  ['Verbs', 'Words', 'Phrases', 'Vowels', 'Root and pattern', 'Plurals', 'Pronouns', 'The script', 'Speak'].forEach(e => ok(tiles.some(t => t.textContent.indexOf(e) !== -1), 'tile lacks English ' + e));
+  ['Afʿāl', 'Kalimāt', 'ʿIbārāt', 'Ḥarakāt', 'Jidhr', 'Jumūʿ', 'Ḍamāʾir', 'Ḥurūf'].forEach(l => ok(tiles.some(t => t.textContent.indexOf(l) !== -1), 'no tile for ' + l));
+  ['Verbs', 'Words', 'Phrases', 'Vowels', 'Root and pattern', 'Plurals', 'Pronouns', 'The script'].forEach(e => ok(tiles.some(t => t.textContent.indexOf(e) !== -1), 'tile lacks English ' + e));
   ok(tiles.every(t => t.all(n => n.cls().includes('ar') && n.attrs.dir === 'rtl').length === 1), 'every tile label is an .ar node');
   ok(byCls('arc-fail').length === 0 && allText().indexOf('Your progress') !== -1, 'the board fell into the failure screen or lacks progress');
   ok(W.ARItems.next('imir', 1, Math.random, {}) === null, 'an empty mix must deal null, not throw');
@@ -586,19 +591,20 @@ const resetStage0 = () => { Object.keys(store).forEach(k => { if (/^talaqa\.(hur
     const S = W.ARSpeak, keepPh = W.AR_PHRASES, keepAu = W.AR_AUDIO;
     ok(!!S && S.packs().length === 10, 'ARSpeak holds the ten packs');
     W.AR_PHRASES = REAL.p; W.AR_AUDIO = {}; GI.reset();
-    const resetSpeak = (huruf) => { resetStage0(); delete store['talaqa.speak']; delete store['talaqa.arcade']; S._reset();
+    const resetSpeak = (huruf) => { resetStage0(); delete store['talaqa.speak']; delete store['talaqa.arcade']; delete store['talaqa.mode']; S._reset();
       store['talaqa.huruf'] = JSON.stringify(huruf || { started: false, passed: {}, exam: {} }); H._reset(); };
     const noDash = t => !/[–—]/.test(t) && !/ [-‐] /.test(t);
 
-    // first open: both strands, pack 1 open and pack 2 locked, the board still shut
+    // first open: the Talk home, pack 1 open and pack 2 locked, the board still shut
     resetSpeak();
     W.ARArcade.board();
-    ok(byCls('arc-first').length === 1 && byCls('sp-strand').length === 2, 'first open shows two strands, Speak and Letters');
-    ok(/Speak/.test(allText()) && /Takallam/.test(allText()) && /Letters/.test(allText()) && /start speaking/i.test(allText()), 'first open names Speak (Takallam) and Letters and says you can start speaking');
-    ok(noDash(allText()), 'no dashes on the first open');
+    ok(byCls('arc-first').length === 1 && byCls('sp-strand').length === 2 && byCls('arc-seg').length === 1, 'the Talk home shows Speak and Phrases and the toggle');
+    ok(/Speak/.test(allText()) && /Takallam/.test(allText()) && /start speaking/i.test(allText()), 'the Talk home names Speak (Takallam) and says you can start speaking');
+    ok(noDash(allText()), 'no dashes on the Talk home');
     ok(S.packOpen(1) && !S.packOpen(2) && !S.packOpen(10), 'pack 1 is open, pack 2 is locked');
     ok(byCls('arc-tile').length === 0 && !H.unlocked(), 'the board is locked on first open');
-    byCls('arc-mode').filter(b => b.textContent.indexOf('Start speaking') !== -1)[0].click();
+        ok(byCls('arc-pick').length === 10 && byCls('arc-pick').slice(1).every(b => b.disabled), 'the Talk home lists the ten packs, only pack 1 open');
+    byCls('arc-pick')[0].click();
     ok(byCls('sp-card').length === packN(1).ids.length && byCls('hr-start').length === 1, 'pack 1 opens on its card with every phrase');
     function packN(n) { return W.AR_SPEAK.filter(k => k.n === n)[0]; }
     { // the card: translit is the main line, the script small above it, English, a note
@@ -612,9 +618,9 @@ const resetStage0 = () => { Object.keys(store).forEach(k => { if (/^talaqa\.(hur
       delete store['talaqa.arcade']; ok(S.variety() === 'lev', 'unset means shāmī');
       ok(noDash(allText()), 'no dashes on the pack card');
     }
-    H.markStarted(); W.ARArcade.board();                  // started now: the path with both strands
+    H.markStarted(); W.ARArcade.board();
     { const packs = byCls('arc-pick').slice(0, 10);
-      ok(byCls('arc-pick').length === 22 && !packs[0].disabled && packs.slice(1).every(b => b.disabled), 'the path lists ten packs and twelve lessons; only pack 1 is open'); }
+      ok(byCls('arc-pick').length === 10 && !packs[0].disabled && packs.slice(1).every(b => b.disabled), 'the Talk home lists ten packs; only pack 1 is open'); }
 
     // every pack builds ten valid items in each variety
     let kindsSeen = {}, clipsMissing = 0;
@@ -708,13 +714,15 @@ const resetStage0 = () => { Object.keys(store).forEach(k => { if (/^talaqa\.(hur
     for (let i = 0; i < 10; i++) { const self = S.last().self; await sAnswer(self || gi++ !== 0, true); }
     ok(!!overEl() && S.packDone(2), 'one miss in eight graded items still passes');
 
-    // after the exam the board is open and the Speak tile sits beside the Ḥurūf tile
+    // after the exam: Talk still shows the packs, Script shows the board without a Speak tile
     resetSpeak({ started: true, passed: {}, exam: { passed: true } });
     W.ARArcade.board();
-    { const pair = byCls('arc-row2')[0];
-      ok(pair && pair.all(n => n.cls().includes('arc-tile')).length === 2 && /Takallam/.test(pair.textContent) && /Ḥurūf/.test(pair.textContent), 'the Speak tile sits beside the Ḥurūf tile');
-      pair.all(n => n.cls().includes('arc-tile')).filter(t => /Takallam/.test(t.textContent))[0].click();
-      ok(byCls('arc-pick').length === 10 && !byCls('arc-pick')[0].disabled && byCls('arc-pick')[1].disabled, 'the Speak tile opens the packs, pack 1 open'); }
+    ok(byCls('arc-pick').length === 10 && byCls('arc-tile').length === 0 && byCls('arc-seg').length === 1, 'after the exam, Talk shows the packs and no board');
+    byCls('arc-seg-b')[1].click();
+    ok(byCls('arc-tile').length === 8 && !byCls('arc-tile').some(t => /Takallam/.test(t.textContent)) && byCls('arc-seg').length === 1, 'after the exam, Script shows the board, with no Speak tile');
+    byCls('arc-seg-b')[0].click();
+    ok(S.mode() === 'talk' && byCls('arc-pick').length === 10 && JSON.parse(JSON.stringify(store['talaqa.mode'])) === 'talk', 'switching back to Talk works any time');
+    store['talaqa.mode'] = 'script';
 
     // Ibarat script fade
     W.AR_PHRASES = keepPh; GI.reset(); W.Profile.set('B2'); wipeSrs();
@@ -741,6 +749,220 @@ const resetStage0 = () => { Object.keys(store).forEach(k => { if (/^talaqa\.(hur
     delete store['talaqa.arcade'];
     W.AR_PHRASES = keepPh; W.AR_AUDIO = keepAu;
     resetStage0(); delete store['talaqa.speak']; S._reset();
+  }
+
+  // ---- the phrase topic focus and the conversations ------------------------------------------------------------------------------------------------------
+  {
+    const S = W.ARSpeak, CV = W.ARConvo, keepPh = W.AR_PHRASES, keepAu = W.AR_AUDIO, keepCv = W.AR_CONVOS;
+    const noDash = t => !/[–—]/.test(t) && !/ [-‐] /.test(t);
+    ok(!!CV, 'ARConvo is loaded');
+    const NUM = ['وَاحِد', 'اِثْنَان', 'ثَلَاثَة', 'أَرْبَعَة', 'خَمْسَة', 'سِتَّة'];
+    const mkConvo = (id, th, b, word) => ({ id, en: 'Talk ' + id, th, b, you: 'a', roles: { a: id === 'fx3' ? 'Customer' : 'You', b: 'Waiter' }, n: 'A short note.',
+      lines: NUM.map((nw, i) => ({ who: i % 2 === 0 ? 'a' : 'b', en: `Line ${id} number ${i + 1}`,
+        msa: `${word} ${nw} هُنَا`, lev: `${word} ${nw} هَوْن`, egy: `${word} ${nw} هِنَا`,
+        tr: { msa: `${id} ${i} huna`, lev: `${id} ${i} hawn`, egy: `${id} ${i} hina` } })) });
+    const FX = [mkConvo('fx1', 'g', 'A1', 'بَيْتٌ'), mkConvo('fx2', 'm', 'A2', 'كِتَابٌ'), mkConvo('fx3', 't', 'A1', 'قَلَمٌ')];
+    const setStage = (mode, exam) => { store['talaqa.huruf'] = JSON.stringify({ started: true, passed: {}, exam: exam ? { passed: true } : {} }); W.ARHuruf._reset();
+      if (mode) store['talaqa.mode'] = mode; else delete store['talaqa.mode']; };
+    W.AR_PHRASES = keepPh; GI.reset(); wipeSrs();
+    W.AR_CONVOS = FX; W.AR_AUDIO = {}; CV._reset();
+    const ibarat = W.ARArcade.GAMES.filter(g => g.key === 'ibarat')[0];
+
+    // ---- the topic focus ----
+    delete store['talaqa.arcade'];
+    setStage('script', true);
+    W.ARArcade.sheet(ibarat);
+    const fchips = () => byCls('arc-focus')[0].all(n => n.tagName === 'BUTTON');
+    ok(byCls('arc-focus').length === 1 && fchips()[0].textContent === 'All topics' && fchips().length === 1 + Object.keys(GI.phraseList().byTheme).length, 'the phrase sheet has All topics and one chip per theme');
+    ok(/You know \d+ of \d+ phrases$/.test(byCls('arc-progress-all')[0].textContent), 'no focus: the plain coverage line');
+    fchips().filter(c => c.textContent === 'G')[0].click();
+    ok(JSON.stringify(JSON.parse(store['talaqa.arcade']).focus) === '["g"]', 'the focus is saved in talaqa.arcade');
+    fchips().filter(c => c.textContent === 'M')[0].click();
+    ok(JSON.stringify(JSON.parse(store['talaqa.arcade']).focus) === '["g","m"]', 'chips multi-select');
+    { const own = GI.phraseList().list.filter(e => e.th === 'g' || e.th === 'm').length;
+      ok(new RegExp('^You know 0 of ' + own + ' phrases in these topics$').test(byCls('arc-progress-all')[0].textContent), 'the coverage line counts only the chosen topics'); }
+    ok(fchips().filter(c => c.cls().includes('on')).map(c => c.textContent).join() === 'G,M', 'the chosen chips are on');
+    // a new sheet remembers it
+    W.ARArcade.sheet(ibarat);
+    ok(fchips().filter(c => c.cls().includes('on')).map(c => c.textContent).join() === 'G,M', 'the focus persists across screens');
+    { // the grind deals only the chosen themes
+      const G = GI.phraseList(), thOf = id => G.list.filter(e => e.id === id)[0].th;
+      const st = { asked: 0, newN: 0, used: {} }, seen = new Set();
+      for (let i = 0; i < 40; i++) { const it = GI.next('ibarat', 2, rng, { grind: st, count: 40, gkind: 'ibarat', pv: 'lev', themes: ['g', 'm'] }); if (it) seen.add(thOf(it.id)); }
+      ok(seen.size > 0 && [...seen].every(t => t === 'g' || t === 'm') && seen.has('g') && seen.has('m'), 'the phrase grind deals only the focused themes: ' + [...seen]);
+      const only = new Set(), st2 = { asked: 0, newN: 0, used: {} };
+      for (let i = 0; i < 20; i++) { const it = GI.next('ibarat', 2, rng, { grind: st2, count: 40, gkind: 'ibarat', pv: 'lev', themes: ['t'] }); if (it) only.add(thOf(it.id)); }
+      ok(only.size === 1 && only.has('t'), 'a single focused theme deals only that one');
+      const mix = new Set(); const st3 = { asked: 0, newN: 0, used: {} };
+      for (let i = 0; i < 60; i++) { const it = GI.next('ibarat', 2, rng, { grind: st3, count: 60, gkind: 'imir', pv: 'lev', themes: ['t'] }); if (it) mix.add(thOf(it.id)); }
+      ok(mix.size > 1, 'the Play mix ignores the focus');
+    }
+    { // the round config carries it, the mix tile does not
+      let got = null; const run = W.GameRound.run;
+      W.GameRound.run = (h, cfg) => { got = cfg; };
+      W.ARArcade.startShelf(ibarat, 't');
+      ok(JSON.stringify(got.themes) === '["g","m"]' && got.pv, 'the phrase round config carries the themes');
+      W.ARArcade.startShelf(W.ARArcade.GAMES.filter(g => g.key === 'imir')[0], 't');
+      ok(got.themes === undefined, 'the Play mix tile gets no focus');
+      W.ARArcade.practisePhrases();
+      ok(got.talk === true && JSON.stringify(got.themes) === '["g","m"]', 'Talk phrase practice carries the focus and the talk flag');
+      W.GameRound.run = run;
+    }
+    // Talk phrase practice leads with the sound
+    { const st = { asked: 0, newN: 0, used: {} }, its = [];
+      for (let i = 0; i < 12; i++) { const it = GI.next('ibarat', 2, rng, { grind: st, count: 40, gkind: 'ibarat', pv: 'lev', themes: ['g'], talk: true }); if (it) its.push(it); }
+      ok(its.length > 0 && its.every(i => (i.play === 'choose' && i.ansLatin && i.options.indexOf(i.answer) !== -1 && i.options.every(o => i.optScript[o])) || (i.play === 'build' && i.latin)), 'Talk phrases are picks and builds led by the sound, the script smaller above');
+    }
+    // ---- the conversation list on the sheet, filtered by the focus ----
+    W.ARArcade.sheet(ibarat);
+    ok(byCls('cv-row').length === 2 && /Conversations/.test(allText()), 'the sheet lists the conversations in the focused topics');
+    ok(byCls('cv-row').every(r => /A1|A2/.test(r.textContent) && r.textContent.indexOf('done') === -1), 'each row shows its title and band, no tick yet');
+    fchips()[0].click();
+    ok(byCls('cv-row').length === 3 && byCls('arc-progress-all')[0].textContent.indexOf('in these topics') === -1, 'All topics lists all three conversations');
+    ok(noDash(allText()), 'no dashes on the phrase sheet');
+    // the Talk home lists them too
+    setStage('talk', false); W.ARArcade.board();
+    ok(byCls('cv-row').length === 3 && byCls('arc-pick').length === 13 && byCls('sp-strand').length === 2, 'the Talk home lists the conversations after the packs');
+
+    // ---- the screen ----
+    W.AR_AUDIO[FX[0].lines[0].lev + '|lev'] = 'audio/x.bin#0,4';
+    byCls('cv-row')[0].click();
+    ok(byCls('cv-bubble').length === 6 && byCls('cv-me').length === 3 && byCls('cv-them').length === 3, 'every line is a bubble, the learner on one side');
+    ok(allText().indexOf('A short note.') !== -1 && /Practise your part/.test(allText()) && /you, talking to Waiter/.test(allText()) && byCls('cv-playall').length === 1, 'title, roles, note, Play it all and the practise button');
+    ok(byCls('cv-bubble').filter(b => b.cls().includes('cv-me')).every(b => b.all(n => n.cls().includes('sp-en')).length === 1) && byCls('spk').length === 1, 'a speaker only where there is a clip');
+    ok(byCls('cv-ar').length === 0 && byCls('sp-ar').length >= 6 && byCls('sp-tr').length >= 6, 'Talk: the sound leads, the script is smaller above it');
+    ok(byCls('arc-chip').map(b => b.textContent).join() === 'Fuṣḥā,Shāmī,Maṣrī', 'the variety chooser is on the conversation');
+    byCls('arc-chip')[2].click();
+    ok(S.variety() === 'egy' && byCls('sp-tr')[0].textContent === 'fx1 0 hina', 'a variety shows its own text and sound');
+    byCls('arc-chip')[1].click();
+    ok(noDash(allText()), 'no dashes on the conversation screen');
+    byCls('cv-playall')[0].click();
+    setStage('script', true); CV.open('fx1');
+    ok(byCls('cv-ar').length === 6 && byCls('cv-tr').length === 6, 'Script with the board open: the script leads, the sound is under it');
+
+    // ---- items: pick, then build, then type; the answer is among the options ----
+    const lv = 'lev', sample = CV.items('fx1', lv, 'pick', false, rng);
+    ok(sample.length === 3 && sample.every((it, k) => it.convoLine === [0, 2, 4][k]), 'only the learner lines are asked, in line order');
+    ok(sample.every(it => it.play === 'choose' && it.options.length === 4 && new Set(it.options).size === 4 && it.options.indexOf(it.answer) !== -1 && it.ansLatin && it.options.every(o => it.optScript[o])), 'Talk pick: four distinct options led by the sound, the answer among them');
+    ok(sample.every(it => it.id === 'cv:fx1:' + it.convoLine + ':lev') && new Set(sample.map(i => i.key)).size === 3, 'SRS ids are cv:<id>:<line>:<variety>, the keys are distinct');
+    ok(sample.some(it => it.options.some(o => !FX[0].lines.some(l => l.tr.lev === o))), 'wrong lines come from other conversations too');
+    ok(CV.items('fx1', lv, 'pick', true, rng).every(it => it.optAr && it.options.indexOf(it.answer) !== -1 && it.options.every(o => it.optTr[o])), 'Script pick: the script leads, the sound under it');
+    ok(CV.items('fx1', lv, 'build', false, rng).every(it => it.play === 'build' && it.latin && it.words.join(' ') === it.answer), 'build items tap the words');
+    { const ty = CV.items('fx1', 'egy', 'type', true, rng)[0], ln = FX[0].lines[ty.convoLine];
+      ok(ty.play === 'type' && GI.grade(ty, ln.egy) === 'good' && GI.grade(ty, ln.msa) === 'good' && GI.grade(ty, ln.lev) === 'wrong', 'typed: the chosen variety and the fuṣḥā text are accepted'); }
+    ok(sample[0].sub.indexOf('Waiter') === -1 && sample[1].sub === 'Waiter: fx1 1 hawn (Line fx1 number 2)', 'the other side is shown as context, the plain prompt when nothing came before');
+
+    // ---- driving a practise round through the real engine ----
+    setStage('talk', false);
+    const cvAnswer = async (right) => {
+      const it = CV.last(), before = it;
+      if (it.play === 'choose') {
+        const opts = byCls('g-opt');
+        (right ? opts.filter(o => o._val === it.answer) : opts.filter(o => o._val !== it.answer))[0].click();
+      } else if (it.play === 'build') {
+        const chips = byCls('g-chip').filter(c => c._word !== undefined);
+        const order = right ? it.words.slice() : it.words.slice().reverse();
+        if (!right && order.join(' ') === it.answer) order.push(order.shift());
+        const used = new Set();
+        order.forEach(w => { const c = chips.filter(x => !used.has(x) && x._word === w)[0]; used.add(c); c.click(); });
+      } else if (it.play === 'say') {
+        byCls('g-say-listen')[0].click();
+        byCls('g-say-marks')[0].all(n => n.tagName === 'BUTTON').filter(b => b.textContent === (right ? 'Got it' : 'Not yet'))[0].click();
+      } else {
+        const inp = byCls('g-input')[0];
+        inp.value = right ? AR.strip(it.answer) : 'ب'; inp.dispatchEvent({ type: 'input' });
+        if (!right) fire('keydown', { type: 'keydown', key: 'Enter', target: inp });
+      }
+      await waitFor(() => overEl() || byCls('g-continue').length || CV.last() !== before, 3000, 'the conversation item to resolve');
+      if (byCls('g-continue').length && !overEl()) byCls('g-continue')[0].click();
+      await waitFor(() => overEl() || CV.last() !== before, 3000, 'the next conversation item');
+    };
+    wipeSrs();
+    store['talaqa.srs'] && delete store['talaqa.srs'];
+    const learntCv = () => Object.keys(JSON.parse(store['talaqa.srs'] || '{}')).filter(k => k.indexOf('cv:') === 0 && SRS.isLearnt(k));
+    ok(CV.kindFor('fx1') === 'pick' && CV.passes('fx1') === 0, 'a new conversation starts with picks');
+    // a failed round records no pass
+    CV.practise('fx1');
+    await waitFor(() => CV.last(), 1000, 'the practise round to start');
+    ok(byCls('g-name')[0].textContent === 'Talk fx1', 'the round is titled with the conversation');
+    { const dealt = [];
+      for (let i = 0; i < 3; i++) { dealt.push(CV.last()); ok(CV.last().play === 'choose' && CV.last().options.indexOf(CV.last().answer) !== -1, 'the answer is among the options'); await cvAnswer(false); }
+      ok(dealt.map(d => d.convoLine).join() === '0,2,4', 'the round follows the line order and asks only the learner lines'); }
+    ok(!!overEl() && /are needed to pass/.test(overEl().textContent) && CV.passes('fx1') === 0 && !store['talaqa.convos'], 'under 80% is not a pass');
+    // pass 1: picks
+    CV.practise('fx1');
+    await waitFor(() => CV.last(), 1000, 'the round to start again');
+    const kinds1 = [];
+    for (let i = 0; i < 3; i++) { kinds1.push(CV.last().play); await cvAnswer(true); }
+    ok(kinds1.join() === 'choose,choose,choose' && !!overEl() && /Passed: 3 of 3/.test(overEl().textContent), 'pass one is a pick round');
+    ok(JSON.parse(store['talaqa.convos']).passed.fx1 === 1 && CV.kindFor('fx1') === 'build', 'the pass is kept in talaqa.convos and the next is build');
+    ok(learntCv().length === 0, 'a pick never makes anything learnt');
+    ok(Object.keys(JSON.parse(store['talaqa.srs'] || '{}')).filter(k => k.indexOf('cv:') === 0).every(k => /^cv:fx1:[024]:lev$/.test(k)), 'SRS ids look like cv:fx1:<line>:lev');
+    // pass 2: builds
+    CV.practise('fx1');
+    await waitFor(() => CV.last(), 1000, 'the build round to start');
+    const kinds2 = [];
+    for (let i = 0; i < 3; i++) { kinds2.push(CV.last().play); await cvAnswer(true); }
+    ok(kinds2.join() === 'build,build,build' && CV.passes('fx1') === 2 && CV.kindFor('fx1') === 'say', 'pass two is a build round and in Talk the next is say it');
+    ok(learntCv().length === 0, 'a build never makes anything learnt');
+    // pass 3: typed
+    CV.practise('fx1');
+    await waitFor(() => CV.last(), 1000, 'the say round to start');
+    const kinds3 = [];
+    for (let i = 0; i < 3; i++) { ok(CV.last().self === true && !CV.last().id, 'a say item is self-marked and has no SRS id'); kinds3.push(CV.last().play); await cvAnswer(true); }
+    ok(kinds3.join() === 'say,say,say' && CV.passes('fx1') === 3, 'pass three in Talk is say it, and its self-marks count');
+    ok(learntCv().length === 0 && !/Type|type/.test('') , 'saying a line makes nothing learnt');
+    setStage('script', true);
+    ok(CV.kindFor('fx1') === 'type', 'in Script mode the next pass is typed');
+    CV.practise('fx1');
+    await waitFor(() => CV.last(), 1000, 'the typed round to start');
+    const kinds4 = [];
+    for (let i = 0; i < 3; i++) { kinds4.push(CV.last().play); await cvAnswer(true); }
+    ok(kinds4.join() === 'type,type,type' && CV.passes('fx1') === 4, 'in Script mode the pass is typed');
+    setStage('talk', false);
+    W.ARArcade.board();
+    ok(byCls('cv-row').filter(r => /done/.test(r.textContent)).length === 1, 'a passed conversation is ticked in the list');
+    ok(noDash(allText()), 'no dashes on the Talk home');
+
+    // ---- the list on the Speak screen, a conversation with the other side first ----
+    S.home();
+    ok(byCls('cv-row').length === 3, 'the Speak screen offers the conversations');
+    const flip = Object.assign({}, FX[1], { id: 'fx4', you: 'b', th: 'g' });
+    W.AR_CONVOS = FX.concat([flip]);
+    { const it = CV.items('fx4', lv, 'pick', false, rng);
+      ok(it.length === 3 && it[0].convoLine === 1 && it[0].sub.indexOf('You: ') === 0 && it[0].promptSay === undefined, 'the other side speaks first: the learner is b, context is the line before'); }
+
+    { // back returns to where the conversation was opened from; role wording
+      const fx5 = Object.assign({}, FX[0], { id: 'fx5', roles: { a: 'You (a man)', b: 'Layla' } });
+      W.AR_CONVOS = FX.concat([fx5]);
+      ok(CV.items('fx5', 'lev', 'pick', false, rng)[0].sub === 'Your line (a man)', 'the practise sub says Your line, with the bracket');
+      setStage('script', true);
+      CV.open('fx5');
+      ok(/you \(a man\), talking to Layla/.test(allText()) && /Practise your part/.test(allText()) && !/you are You/.test(allText()), 'a You role is worded as you, bracket kept');
+      CV.open('fx3');
+      ok(/you are the Customer, talking to Waiter/.test(allText()) && /Practise: you are the Customer/.test(allText()), 'another role is worded you are the Customer');
+      const backBtn = () => byCls('arc-back')[0];
+      W.ARArcade.sheet(ibarat);
+      byCls('cv-row')[0].click(); backBtn().click();
+      ok(byCls('arc-focus').length === 1, 'back from the sheet returns to the sheet');
+      setStage('talk', false); W.ARArcade.board();
+      byCls('cv-row')[0].click(); backBtn().click();
+      ok(byCls('arc-seg').length === 1 && byCls('arc-talk').length === 1, 'back from the Talk home returns to the Talk home');
+      S.home();
+      byCls('cv-row')[0].click(); backBtn().click();
+      ok(byCls('arc-seg').length === 0 && byCls('arc-pick').length === 10 + byCls('cv-row').length, 'back from the Speak screen returns to the Speak screen');
+    }
+
+    // the real conversations, whatever has been written so far, deal a round in every kind and variety
+    W.AR_CONVOS = REAL.cv || []; W.AR_PHRASES = REAL.p; CV._reset(); GI.reset();
+    (REAL.cv || []).forEach(c => ['msa', 'lev', 'egy'].forEach(v => ['pick', 'build', 'type'].forEach(k => [false, true].forEach(led => {
+      const its = CV.items(c.id, v, k, led, rng), n = c.lines.filter(l => l.who === c.you).length;
+      ok(its.length === n && its.every(it => it.answer && (it.play !== 'choose' || (it.options.length === 4 && it.options.indexOf(it.answer) !== -1))), `real conversation ${c.id} ${v} ${k}: one item per learner line`);
+    }))));
+    console.log(`  real conversations: ${(REAL.cv || []).length}`);
+    W.AR_CONVOS = keepCv; W.AR_PHRASES = keepPh; W.AR_AUDIO = keepAu; CV._reset();
+    delete store['talaqa.convos'];
+    setStage('script', true);
   }
 
   // ---- storage: nothing foreign -------------------------------------------------------------------------------------------------------------------------------------

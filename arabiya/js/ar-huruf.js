@@ -297,10 +297,7 @@ window.ARHuruf = (function () {
     var open = unlocked();
     var w = wrapEl();
     w.appendChild(top(open ? 'Ḥurūf' : 'Ṭalāqa', open ? nav.board : null));
-    if (!open && window.ARSpeak) {
-      window.ARSpeak.section(w, false);
-      w.appendChild(strandHead('Letters', 'حُرُوف', 'Ḥurūf'));
-    }
+    if (!open && window.ARSpeak) w.appendChild(window.ARSpeak.modeToggle());
     w.appendChild(el('p', 'arc-sub', open
       ? 'The script course. Lessons stay open for review.'
       : 'Twelve lessons. Pass each round with 8 of 10 to open the next. Pass the exit test to open the games.'));
@@ -492,7 +489,7 @@ window.ARHuruf = (function () {
 
   function init(o) {
     for (var k in o) nav[k] = o[k];
-    if (window.ARSpeak) window.ARSpeak.init({ board: o.board, push: o.push, back: o.back, round: o.round, leave: function () { if (unlocked()) window.ARSpeak.home(); else path(); } });
+    if (window.ARSpeak) window.ARSpeak.init({ board: o.board, push: o.push, back: o.back, round: o.round, leave: function () { o.board(); } });
   }
 
   return {
