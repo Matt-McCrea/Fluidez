@@ -1583,6 +1583,12 @@ window.GameItems = (function () {
     st.used = st.used || {}; st.asked = st.asked || 0; st.newN = st.newN || 0;
     st.small = st.small || 0; st.content = st.content || 0; st.verbs = st.verbs || 0;
     var L = !sub && opts && opts.theme && G.byTheme[opts.theme] ? G.byTheme[opts.theme] : G.list;
+    /* opts.themes (an array) is the Frases sheet's topic focus: the union of those themes, in rank order. */
+    if (sub === 'ph' && opts && opts.gkind === 'sphrase' && opts.themes && opts.themes.length) {
+      var tset = {};
+      opts.themes.forEach(function (t) { tset[t] = 1; });
+      L = G.list.filter(function (e) { return tset[e.th]; });
+    }
     var capIx = G.bandCap ? bandIx(playerBand()) + 1 : 9;
     var store = srsStore(), td = window.SRS && window.SRS.today ? window.SRS.today() : Math.floor(Date.now() / 864e5);
     /* A new word a B1+ player gets right at first sight was already theirs:
@@ -1736,8 +1742,13 @@ window.GameItems = (function () {
     item.options = E.shuffle([e.es].concat(wrong.map(function (o) { return o.es; })), rng);
     return item;
   }
-  function phraseCoverage() {
+  function phraseCoverage(themes) {
     var G = phraseList(), store = srsStore(), of = Math.floor(G.list.length / 100) * 100 || G.list.length, n = 0;
+    if (themes && themes.length) {
+      var L = G.list.filter(function (e) { return themes.indexOf(e.th) !== -1; });
+      L.forEach(function (e) { if (knownCard(store[e.id])) n++; });
+      return { n: n, of: L.length, text: L.length ? 'Conoces ' + thousands(n) + ' de ' + thousands(L.length) + ' frases en estos temas' : 'Aún no hay frases en estos temas' };
+    }
     G.list.forEach(function (e) { if (knownCard(store[e.id])) n++; });
     n = Math.min(n, of);
     return { n: n, of: of, text: 'Conoces ' + thousands(n) + ' de las ' + thousands(of) + ' frases más comunes' };

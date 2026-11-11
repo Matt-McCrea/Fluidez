@@ -10,7 +10,7 @@
  *
  * ASSETS must mirror every <script>/<link> in index.html plus the data files.
  * ========================================================================== */
-var CACHE_VERSION = 'lfedcf48b';
+var CACHE_VERSION = 'lbd321f9c';
 var CACHE_NAME = 'liofa-' + CACHE_VERSION;
 
 var ASSETS = [
@@ -34,6 +34,7 @@ var ASSETS = [
   './data/verbs.js',
   './data/words.js',
   './data/phrases.js',
+  './data/conversations.js',
   './data/cards.js',
   './data/gaps-briathra.js',
   './data/gaps-seimhiu.js',
@@ -44,6 +45,7 @@ var ASSETS = [
   './js/ga-items.js',
   './js/gameround.js',
   './js/ga-check.js',
+  './js/ga-convo.js',
   './js/ga-arcade.js'
 ];
 

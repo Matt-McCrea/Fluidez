@@ -205,6 +205,9 @@
     return GI.grindThemes().some(function (t) { return t.id === id; }) ? id : '';
   }
   function saveWordTheme(id) { var a = loadArc(); a.wtheme = id || ''; saveArc(a); }
+  /* The Frásaí sheet's topic focus (multi-select; empty means all topics). */
+  function chosenFocus() { var f = loadArc().pfocus; return Array.isArray(f) ? f.slice() : []; }
+  function saveFocus(f) { var a = loadArc(); a.pfocus = f; saveArc(a); }
 
   // units of this tile that have sentences: the picker offers these
   function unitsFor(g) {
@@ -258,8 +261,41 @@
     }
 
     if (g.key === 'frasai') {
-      wrap.appendChild(el('div', 'arc-progress')).appendChild(el('div', 'arc-progress-all', GI.phraseCoverage().text));
+      var pfocus = chosenFocus(), pcovLine = el('div', 'arc-progress-all');
+      wrap.appendChild(el('div', 'arc-progress')).appendChild(pcovLine);
+      var paintCov = function () { pcovLine.textContent = GI.phraseCoverage(pfocus).text; };
+      paintCov();
+      var fbox = el('div', 'cv-sheet');
+      var paintConvos = function () {
+        clear(fbox);
+        if (window.GAConvo) window.GAConvo.section(fbox, pfocus, function () { sheet(g, true); }, function (v) { VIEW = v; });
+      };
+      var fthemes = Object.keys(GI.phraseList().byTheme)
+        .sort(function (a, b) { return knownThemeLabel(a) < knownThemeLabel(b) ? -1 : knownThemeLabel(a) > knownThemeLabel(b) ? 1 : 0; });
+      if (fthemes.length > 1) {
+        wrap.appendChild(el('div', 'arc-group', T('Ábhair le díriú orthu', 'Topics to focus on')));
+        var fchips = el('div', 'arc-chips arc-focus-chips'), fby = {};
+        var fall = button('arc-chip', T('Gach ábhar', 'All topics'));
+        var paintF = function () {
+          fall.classList.toggle('on', !pfocus.length);
+          Object.keys(fby).forEach(function (k) { fby[k].classList.toggle('on', pfocus.indexOf(k) !== -1); });
+        };
+        fall.addEventListener('click', function () { pfocus = []; saveFocus(pfocus); paintF(); paintCov(); paintConvos(); });
+        fchips.appendChild(fall);
+        fthemes.forEach(function (t) {
+          fby[t] = button('arc-chip', knownThemeLabel(t), function () {
+            var i = pfocus.indexOf(t);
+            if (i === -1) pfocus.push(t); else pfocus.splice(i, 1);
+            saveFocus(pfocus); paintF(); paintCov(); paintConvos();
+          });
+          fchips.appendChild(fby[t]);
+        });
+        paintF();
+        wrap.appendChild(fchips);
+      }
       wrap.appendChild(button('arc-wtbtn', 'Tick the phrases you know', function () { knownScreen(g); }));
+      paintConvos();
+      wrap.appendChild(fbox);
     }
 
     if (g.key === 'focail') {
@@ -316,6 +352,7 @@
     var sel = chosen(g.key);
     if (sel.length) { if (g.kind === 'briathra') cfg.tenses = sel; else cfg.topics = sel; }
     if (g.key === 'focail') { var wth = chosenWordTheme(); if (wth) cfg.theme = wth; }
+    if (g.key === 'frasai' && chosenFocus().length) cfg.themes = chosenFocus();     // the Imir mix ignores the focus
     if (extra) Object.keys(extra).forEach(function (k) { cfg[k] = extra[k]; });
     window.GameRound.run(host(), cfg);
   }

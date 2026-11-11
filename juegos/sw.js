@@ -15,7 +15,7 @@
  * ASSETS must mirror every <script>/<link> in juegos/index.html. It is
  * deliberately short — that shortness is the entire feature.
  * ========================================================================== */
-var CACHE_VERSION = 'j3171c9d9';
+var CACHE_VERSION = 'j7f646ab3';
 var CACHE_NAME = 'fluidez-juegos-' + CACHE_VERSION;
 
 var ASSETS = [
@@ -48,6 +48,7 @@ var ASSETS = [
   '../data/word-rank.js',
   '../data/verb-gaps.js',
   '../data/phrases.js',
+  '../data/conversations.js',
   '../data/tense-cards.js',
   '../js/gameitems.js',
   '../js/gameround.js',
@@ -55,6 +56,7 @@ var ASSETS = [
   '../js/liga.js',
   '../js/study.js',
   '../js/tensecheck.js',
+  '../js/convo.js',
   '../js/arcade.js'
 ];
 

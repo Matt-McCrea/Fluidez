@@ -755,3 +755,17 @@ b.arc-ct-c { color:var(--muted); font-weight:600; }
 .arc-known-en { font-weight:600; }
 .arc-known-tx { color:var(--muted); }
 .arc-known-row[hidden], .arc-known-group[hidden] { display:none; }
+
+/* ---- conversations on the Frásaí sheet (js/ga-convo.js) ---- */
+.cv-list { margin-bottom:6px; }
+.cv-chat { display:flex; flex-direction:column; gap:10px; margin:12px 0; }
+.cv-bubble { max-width:88%; padding:10px 14px; border-radius:16px; border:1px solid var(--border); background:var(--panel); text-align:left; }
+.cv-them { align-self:flex-start; border-bottom-left-radius:4px; }
+.cv-me { align-self:flex-end; border-bottom-right-radius:4px; background:var(--panel-2); }
+.cv-who { font-size:.68rem; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; margin-bottom:2px; }
+.cv-ga { font-size:1.02rem; line-height:1.4; }
+.cv-en { font-size:.84rem; color:var(--muted); margin-top:2px; }
+.cv-note { font-size:.78rem; color:var(--muted); line-height:1.5; margin:8px 0 0; }
+.cv-practise { text-align:left; }
+.cv-result { display:flex; flex-direction:column; gap:10px; align-items:center; margin:8px 0; }
+@media (min-width:560px) { .cv-bubble { max-width:70%; } }

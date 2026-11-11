@@ -452,7 +452,7 @@ window.GameRound = (function () {
                             : GI.next(cfg.kind, rung, rng,
                                 { silent: cfg.silent, tense: cfg.lockTense, tenses: cfg.tenses,
                                   anyBand: cfg.anyBand, theme: cfg.theme, only: cfg.only,
-                                  tapFirst: cfg.tapFirst, grind: grindState,
+                                  tapFirst: cfg.tapFirst, grind: grindState, themes: cfg.themes,
                                   count: cfg.count || 0, gkind: cfg.kind });
         if (!got) continue;
         fallback = got;
@@ -1003,7 +1003,7 @@ window.GameRound = (function () {
 
       if (cfg.kind === 'sphrase' && GI.phraseCoverage) {
         var pcov = el('div', 'g-over-cover');
-        pcov.appendChild(el('div', 'g-over-cover-all', GI.phraseCoverage().text));
+        pcov.appendChild(el('div', 'g-over-cover-all', GI.phraseCoverage(cfg.themes).text));
         over.appendChild(pcov);
       }
 

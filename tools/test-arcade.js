@@ -130,6 +130,8 @@ scripts.filter(f => f.indexOf('arcade.js') === -1).forEach(rel => {
 });
 
 const W = global.window;
+// data/conversations.js assigns to `this` (the page's window); in this shim that is the global object
+if (!W.ES_CONVOS && global.ES_CONVOS) W.ES_CONVOS = global.ES_CONVOS;
 ok(!!W.GAME_INDEX, 'data/game-index.js did not define window.GAME_INDEX — run tools/build-game-index.js');
 ok(!W.STRAND_LESSONS, 'the corpus leaked into the arcade build');
 ok(!W.VOCAB, 'data/vocab.js leaked into the arcade build');
@@ -1944,6 +1946,199 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
   W.TENSE_CARDS = realCards;
   reset(); W.Profile.set('B1'); GI.reset();
   console.log('  stage 4: panel numbers, check trigger and flow, cards, practice round, ' + TCk.LADDER.length + ' lesson links');
+}
+
+/* ---- Frases: the topic focus and the conversations (js/convo.js) --------------
+ * The real phrases and the real data/conversations.js; the rounds run through the real engine on
+ * controlled timers. */
+{
+  const CV = W.ESConvo, GI = W.GameItems;
+  const has = cls => STAGE.all(n => n.cls().includes(cls));
+  const noDash = s => !/[–—]/.test(s) && !/ [-‐] /.test(s);
+  ok(!!CV && Array.isArray(W.ES_CONVOS) && W.ES_CONVOS.length >= 10, 'ESConvo and data/conversations.js are loaded');
+  ['fluidez.arcade', 'fluidez.srs', 'fluidez.convos', 'fluidez.games', 'fluidez.errors'].forEach(k => localStorage.removeItem(k));
+  CV._reset(); W.SRS._reset(); W.arcadeFull = false; W.Profile.set('C1'); GI.reset();
+  W.Games.setListRenderer(function () { W.Shell.go(); });
+  const frasesTile = () => { W.Shell.go(); has('arc-tile')[2].click(); };
+  const fchips = () => has('arc-focus-chips')[0].all(n => n.tagName === 'BUTTON');
+  const chip = t => fchips().filter(c => c.textContent === t)[0];
+  const themes = Object.keys(GI.phraseList().byTheme);
+  const th = id => GI.phraseList().list.filter(e => e.id === id)[0].th;
+  const FA = ['alimentacion', 'viajes'];
+
+  // ---- the topic focus ----
+  frasesTile();
+  ok(fchips()[0].textContent === 'Todos los temas' && fchips().length === 1 + themes.length, 'the Frases sheet has Todos los temas and one chip per theme');
+  ok(fchips()[0].cls().includes('on') && /^Conoces 0 de las \d[\d.]* frases más comunes$/.test(has('arc-progress-all')[0].textContent), 'no focus: the plain coverage line');
+  ok(fchips().some(c => c.textContent === 'Comida') && fchips().some(c => c.textContent === 'Viajes') && fchips().some(c => c.textContent === 'Básicas'), 'chips use the theme labels');
+  chip('Comida').click(); chip('Viajes').click();
+  ok(JSON.stringify(JSON.parse(localStorage.getItem('fluidez.arcade')).pfocus) === JSON.stringify(FA), 'the focus is kept in fluidez.arcade, and the chips multi-select');
+  { const own = GI.phraseList().list.filter(e => FA.indexOf(e.th) !== -1).length;
+    ok(has('arc-progress-all')[0].textContent === 'Conoces 0 de ' + own + ' frases en estos temas', 'the coverage line counts only the chosen topics and says so: ' + has('arc-progress-all')[0].textContent); }
+  ok(fchips().filter(c => c.cls().includes('on')).map(c => c.textContent).sort().join() === 'Comida,Viajes', 'the chosen chips are on');
+  has('arc-back')[0].click(); frasesTile();
+  ok(fchips().filter(c => c.cls().includes('on')).map(c => c.textContent).sort().join() === 'Comida,Viajes', 'the focus persists across screens');
+  { // the grind deals only the chosen themes
+    localStorage.removeItem('fluidez.srs'); W.SRS._reset(); GI.reset();
+    const seen = new Set(), st = { asked: 0, newN: 0, used: {} };
+    for (let i = 0; i < 60; i++) { const it = GI.next('sphrase', 2, rng, { grind: st, count: 60, gkind: 'sphrase', themes: FA }); if (it) seen.add(th(it.id)); }
+    ok(seen.size === 2 && [...seen].every(t => FA.indexOf(t) !== -1), 'the phrase grind deals only the focused themes: ' + [...seen]);
+    const one = new Set(), st2 = { asked: 0, newN: 0, used: {} };
+    for (let i = 0; i < 30; i++) { const it = GI.next('sphrase', 2, rng, { grind: st2, count: 60, gkind: 'sphrase', themes: ['salud'] }); if (it) one.add(th(it.id)); }
+    ok(one.size === 1 && one.has('salud'), 'a single focused theme deals only that one');
+    const all = new Set(), st3 = { asked: 0, newN: 0, used: {} };
+    for (let i = 0; i < 80; i++) { const it = GI.next('sphrase', 2, rng, { grind: st3, count: 80, gkind: 'sphrase' }); if (it) all.add(th(it.id)); }
+    ok(all.size > 2, 'no focus deals from every theme');
+  }
+  { // the round config carries it; the Jugar mix does not
+    let got = null; const run = W.GameRound.run;
+    W.GameRound.run = (h, cfg) => { got = cfg; };
+    try {
+      frasesTile(); has('arc-mode')[0].click();
+      ok(got && got.kind === 'sphrase' && JSON.stringify(got.themes) === JSON.stringify(FA), 'the Frases round config carries the themes');
+      got = null; W.Shell.go(); has('arc-jugar')[0].click(); has('arc-mode')[0].click();
+      ok(got && got.themes === undefined, 'the Jugar mix ignores the focus');
+    } finally { W.GameRound.run = run; }
+  }
+
+  // ---- the conversation list on the sheet, filtered by the focus ----
+  frasesTile();
+  const nIn = ths => W.ES_CONVOS.filter(c => !ths.length || ths.indexOf(c.th) !== -1).length;
+  ok(has('cv-row').length === nIn(FA) && nIn(FA) > 0 && /Conversaciones/.test(STAGE.textContent), 'the sheet lists the conversations in the focused topics');
+  ok(has('cv-row').every(r => /A1|A2|B1/.test(r.textContent) && r.textContent.indexOf('hecha') === -1 && /tú/.test(r.textContent)), 'each row shows its title, band and role, no tick yet');
+  chip('Todos los temas').click();
+  ok(has('cv-row').length === W.ES_CONVOS.length && !/en estos temas/.test(has('arc-progress-all')[0].textContent), 'Todos los temas lists every conversation and the plain coverage');
+  chip('Salud').click(); chip('Comida').click(); chip('Viajes').click();
+  ok(has('cv-row').length === nIn(['salud', 'alimentacion', 'viajes']), 'the list follows the chips');
+  chip('Todos los temas').click();
+  ok(noDash(STAGE.textContent), 'no dashes on the Frases sheet');
+  chip('Comida').click(); chip('Viajes').click();
+
+  // ---- the screen ----
+  const first = W.ES_CONVOS.filter(c => FA.indexOf(c.th) !== -1)[0];
+  has('cv-row')[0].click();
+  const mine = first.lines.filter(l => l.who === first.you).length;
+  ok(has('cv-bubble').length === first.lines.length && has('cv-me').length === mine && has('cv-them').length === first.lines.length - mine, 'every line is a bubble, the learner on one side');
+  ok(has('cv-en').length === first.lines.length && has('cv-bubble').every(b => b.all(n => n.cls().includes('cv-en')).length === 1), 'the English is under each line');
+  ok(has('cv-me').every(b => b.all(n => n.cls().includes('cv-es')).length === 1) && STAGE.textContent.indexOf(first.lines[0].es) !== -1, 'the Spanish is in the bubble');
+  ok(/Practica tu parte/.test(STAGE.textContent) && /tú, hablando con /.test(STAGE.textContent) && /Elige la frase correcta/.test(STAGE.textContent), 'title, roles and the practise button');
+  ok(noDash(STAGE.textContent), 'no dashes on the conversation screen');
+  has('arc-back')[0].click();
+  ok(has('arc-focus-chips').length === 1 && has('cv-row').length === nIn(FA), 'back returns to the sheet, focus kept');
+  { // role wording
+    const keep = W.ES_CONVOS;
+    W.ES_CONVOS = keep.concat([Object.assign({}, first, { id: 'fx-man', roles: { a: 'You (a man)', b: 'Laura' } }), Object.assign({}, first, { id: 'fx-cust', roles: { a: 'Customer', b: 'Waiter' } })]);
+    CV.open('fx-man');
+    ok(/tú \(a man\), hablando con Laura/.test(STAGE.textContent) && /Practica tu parte/.test(STAGE.textContent), 'a You role reads tú, the bracket kept');
+    CV.open('fx-cust');
+    ok(/tu papel: Cliente, hablando con Mesero/.test(STAGE.textContent) && /Practica tu papel: Cliente/.test(STAGE.textContent), 'another role is named');
+    const flip = Object.assign({}, first, { id: 'fx-flip', you: 'b', roles: { a: 'Waiter', b: 'You' } });
+    W.ES_CONVOS = keep.concat([flip]);
+    const fi = CV.items('fx-flip', 'pick', rng);
+    ok(fi.length === first.lines.filter(l => l.who === 'b').length && fi.every(it => flip.lines[it.convoLine].who === 'b') && /^Mesero: /.test(fi.find(it => it.convoLine > 0).sub), 'the learner can be b: the line before is the context');
+    W.ES_CONVOS = keep;
+  }
+
+  // ---- items: pick, then build, then type; the answer is among the options; line order ----
+  const lines = c => c.lines.filter(l => l.who === c.you);
+  W.ES_CONVOS.forEach(c => {
+    const order = c.lines.map((l, i) => (l.who === c.you ? i : -1)).filter(i => i >= 0);
+    ['pick', 'build', 'type'].forEach(k => {
+      const its = CV.items(c.id, k, rng);
+      ok(its.length === order.length && its.map(i => i.convoLine).join() === order.join(), `${c.id} ${k}: only the learner lines, in line order`);
+      ok(its.every(it => it.id === 'cv:' + c.id + ':' + it.convoLine && it.answer && (it.play !== 'choose' || (it.options.length === 4 && new Set(it.options).size === 4 && it.options.indexOf(it.answer) !== -1))), `${c.id} ${k}: ids and answers`);
+    });
+    ok(CV.items(c.id, 'pick', rng).every(it => it.play === 'choose' && it.options.some(o => o !== it.answer)), `${c.id}: a pick offers other lines`);
+    ok(CV.items(c.id, 'type', rng).every(it => it.play === 'type' && it.accept[0] === it.answer && GI.grade(it, it.answer) === 'good' && GI.grade(it, 'zzz qqq') === 'wrong'), `${c.id}: typed items are checked by the usual checker`);
+    ok(CV.items(c.id, 'build', rng).every(it => it.play === 'type' ? false : (it.play === 'choose' || (it.words.join(' ') === it.answer && it.words.length >= 2 && it.words.length <= 8))), `${c.id}: build items tap the words`);
+  });
+  { // the accent rule is the app's own: a missing accent is a near miss, not an error
+    const c = W.ES_CONVOS.find(c => lines(c).some(l => /[áéíóúñ]/.test(l.es)));
+    const it = CV.items(c.id, 'type', rng).find(i => /[áéíóúñ]/.test(i.answer));
+    const bare = it.answer.normalize('NFD').replace(/[̀-ͯ]/g, '');
+    ok(GI.grade(it, bare) !== 'wrong' && GI.grade(it, it.answer.toUpperCase()) !== 'wrong', 'accents follow the usual near-miss rule: ' + GI.grade(it, bare));
+  }
+  { const c = W.ES_CONVOS.find(c => c.lines[0].who !== c.you), it = CV.items(c.id, 'pick', rng)[0];
+    ok(it.convoLine > 0 && it.sub.indexOf(': ') > 0 && it.sub.indexOf(c.lines[it.convoLine - 1].es) !== -1, 'the other side is shown as context'); }
+  { const c = W.ES_CONVOS.find(c => c.lines[0].who === c.you), it = CV.items(c.id, 'pick', rng)[0];
+    ok(it.convoLine === 0 && /^Tu frase/.test(it.sub), 'with nothing before it the sub says Tu frase'); }
+
+  // ---- driving practise rounds through the real engine ----
+  const TQ = [], RAFQ = [], sST = global.setTimeout, sRAF = global.requestAnimationFrame, sNow = Date.now;
+  let TT = 1.9e12;
+  global.setTimeout = fn => { TQ.push(fn); return TQ.length; };
+  global.clearTimeout = () => {};
+  global.requestAnimationFrame = fn => { RAFQ.push(fn); return RAFQ.length; };
+  Date.now = () => TT;
+  const flush2 = () => { let g = 0; while (TQ.length && g++ < 200) TQ.shift()(); };
+  const frame2 = () => { RAFQ.splice(0).forEach(f => f()); };
+  try {
+    const over = () => has('g-over')[0];
+    const answer = right => {
+      const it = CV.last(), before = it;
+      if (it.play === 'choose') {
+        const opts = has('g-opt');
+        (right ? opts.filter(o => o.textContent === it.answer) : opts.filter(o => o.textContent !== it.answer))[0].click();
+      } else if (it.play === 'build') {
+        const order = right ? it.words.slice() : it.words.slice().reverse();
+        if (!right && order.join(' ') === it.answer) order.push(order.shift());
+        order.forEach(w => has('g-chip').filter(c => !c.cls().includes('chosen') && !c.disabled && c.textContent === w)[0].click());
+      } else {
+        const inp = has('g-input')[0];
+        inp.value = right ? it.answer : 'zzz qqq'; inp.dispatchEvent({ type: 'input' });
+        if (!right) inp.dispatchEvent({ type: 'keydown', key: 'Enter', preventDefault() {} });
+      }
+      for (let g = 0; g < 30 && !over() && CV.last() === before; g++) { flush2(); frame2(); const c = has('g-continue')[0]; if (c) c.click(); }
+    };
+    const learntCv = () => Object.keys(JSON.parse(localStorage.getItem('fluidez.srs') || '{}')).filter(k => k.indexOf('cv:') === 0 && W.SRS.isLearnt(k));
+    const cvKeys = () => Object.keys(JSON.parse(localStorage.getItem('fluidez.srs') || '{}')).filter(k => k.indexOf('cv:') === 0);
+    const C = W.ES_CONVOS.find(c => c.lines[0].who !== c.you && lines(c).length === 4) || W.ES_CONVOS[0], N = lines(C).length;
+    const order = C.lines.map((l, i) => (l.who === C.you ? i : -1)).filter(i => i >= 0);
+    localStorage.removeItem('fluidez.srs'); W.SRS._reset(); CV._reset();
+    ok(CV.kindFor(C.id) === 'pick' && CV.passes(C.id) === 0, 'a new conversation starts with picks');
+    // under 80% is not a pass
+    CV.practise(C.id);
+    ok(has('g-name')[0].textContent === C.en, 'the round is titled with the conversation');
+    const dealt = [];
+    for (let i = 0; i < N; i++) { const it = CV.last(); dealt.push(it); ok(it.play === 'choose' && it.options.indexOf(it.answer) !== -1, 'the answer is among the options'); answer(false); }
+    ok(dealt.map(d => d.convoLine).join() === order.join(), 'the round follows the line order and asks only the learner lines');
+    ok(!!over() && /Hacen falta \d+ para aprobar/.test(over().textContent) && CV.passes(C.id) === 0 && !localStorage.getItem('fluidez.convos'), 'under 80% is not a pass');
+    // pass one: picks
+    CV.practise(C.id);
+    const k1 = []; for (let i = 0; i < N; i++) { k1.push(CV.last().play); answer(true); }
+    ok(k1.join() === Array(N).fill('choose').join() && !!over() && new RegExp('Aprobada: ' + N + ' de ' + N).test(over().textContent), 'pass one is a pick round');
+    ok(JSON.parse(localStorage.getItem('fluidez.convos')).passed[C.id] === 1 && CV.kindFor(C.id) === 'build', 'the pass is kept in fluidez.convos and the next is build');
+    ok(learntCv().length === 0, 'a pick never makes anything learnt');
+    ok(cvKeys().length === N && cvKeys().every(k => new RegExp('^cv:' + C.id + ':\\d+$').test(k)), 'the SRS ids look like cv:<id>:<line>');
+    // pass two: builds
+    CV.practise(C.id);
+    const k2 = []; for (let i = 0; i < N; i++) { k2.push(CV.last().play); answer(true); }
+    ok(k2.every(p => p === 'build' || p === 'choose') && k2.indexOf('build') !== -1 && CV.passes(C.id) === 2 && CV.kindFor(C.id) === 'type', 'pass two is a build round and the next is typed');
+    ok(learntCv().length === 0, 'a build never makes anything learnt');
+    // pass three: typed
+    CV.practise(C.id);
+    const k3 = []; for (let i = 0; i < N; i++) { k3.push(CV.last().play); answer(true); }
+    ok(k3.join() === Array(N).fill('type').join() && CV.passes(C.id) === 3, 'pass three is typed');
+    // 80% is enough, four of five
+    { const C5 = W.ES_CONVOS.find(c => lines(c).length === 5); localStorage.removeItem('fluidez.convos'); CV._reset();
+      CV.practise(C5.id); for (let i = 0; i < 5; i++) answer(i !== 2);
+      ok(CV.passes(C5.id) === 1 && /Aprobada: 4 de 5/.test(over().textContent), 'four of five (80%) passes'); }
+    // leaving a round and the ticks
+    CV.practise(C.id); has('g-exit')[0].click();
+    ok(has('cv-bubble').length === C.lines.length, 'leaving a round returns to the conversation');
+    W.Shell.go();
+  } finally {
+    global.setTimeout = sST; global.requestAnimationFrame = sRAF; Date.now = sNow;
+  }
+  frasesTile();
+  chip('Todos los temas').click();
+  ok(has('cv-row').filter(r => /hecha ✓/.test(r.textContent)).length === Object.keys(JSON.parse(localStorage.getItem('fluidez.convos')).passed).length, 'passed conversations are ticked in the list');
+  ok(noDash(STAGE.textContent), 'no dashes after a pass');
+  const keys = [...new Set(Object.keys(localStorage.getItem ? store : {}))];
+  ok(keys.indexOf('fluidez.convos') !== -1 && keys.indexOf('fluidez.arcade') !== -1, 'convo progress and the focus are in the arcade\'s own keys');
+  ['fluidez.arcade', 'fluidez.srs', 'fluidez.convos'].forEach(k => localStorage.removeItem(k));
+  CV._reset(); W.SRS._reset(); GI.reset();
+  console.log(`  frases focus and conversations: ${W.ES_CONVOS.length} real conversations, items checked in every kind`);
 }
 
 /* ---- the league (js/liga.js) ---------------------------------------------

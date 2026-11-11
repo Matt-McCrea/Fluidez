@@ -197,6 +197,12 @@ window.GAItems = (function () {
     if (sub && opts && opts.grind) st = st[sub] = st[sub] || { asked: 0, newN: 0, used: {} };
     st.used = st.used || {}; st.asked = st.asked || 0; st.newN = st.newN || 0;
     var L = !sub && opts && opts.theme && G.byTheme[opts.theme] ? G.byTheme[opts.theme] : G.list;
+    /* opts.themes (an array) is the Frásaí sheet's topic focus: the union of those themes, in rank order. */
+    if (sub === 'ph' && opts && opts.gkind === 'frasai' && opts.themes && opts.themes.length) {
+      var tset = {};
+      opts.themes.forEach(function (t) { tset[t] = 1; });
+      L = G.list.filter(function (e) { return tset[e.th]; });
+    }
     var capIx = G.bandCap ? bandIx(playerBand()) + 1 : 9;
     var td = today();
     /* A new item a B1+ player gets right at first sight was already theirs: it
@@ -433,8 +439,13 @@ window.GAItems = (function () {
     }
     return out;
   }
-  function phraseCoverage() {
-    var G = phraseList(), of = G.list.length, n = 0;
+  function phraseCoverage(themes) {
+    var G = phraseList(), of = G.list.length, n = 0, focus = !!(themes && themes.length);
+    var L = focus ? G.list.filter(function (e) { return themes.indexOf(e.th) !== -1; }) : G.list;
+    if (focus) {
+      L.forEach(function (e) { if (knownCard(stateOf(e.id))) n++; });
+      return { n: n, of: L.length, text: L.length ? 'You know ' + thousands(n) + ' of ' + thousands(L.length) + ' phrases in these topics' : 'No phrases in these topics yet' };
+    }
     G.list.forEach(function (e) { if (knownCard(stateOf(e.id))) n++; });
     return { n: n, of: of, text: of ? 'You know ' + thousands(n) + ' of ' + thousands(of) + ' phrases' : 'No phrases yet' };
   }

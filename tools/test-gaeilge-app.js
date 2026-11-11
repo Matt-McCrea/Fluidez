@@ -58,7 +58,7 @@ const css = fs.readFileSync(path.join(GE, 'css/liofa.css'), 'utf8');
   ok(css.toLowerCase().indexOf(c) !== -1, 'liofa.css lacks the spec colour ' + c));
 ok(!/@import|url\(|fonts\.g/.test(css), 'liofa.css must be self-contained, no web fonts');
 // no dashes in what the app shows: UI strings in the app scripts (spelling hyphens in n-/t- are fine)
-['ga-arcade.js', 'gameround.js', 'ga-items.js', 'ga-check.js'].forEach(f => {
+['ga-arcade.js', 'gameround.js', 'ga-items.js', 'ga-check.js', 'ga-convo.js'].forEach(f => {
   const src = fs.readFileSync(path.join(GE, 'js', f), 'utf8');
   ok(!/[–—]/.test(src.replace(/\/\*[\s\S]*?\*\/|\/\/.*$/gm, '')), f + ' shows an en or em dash outside comments');
 });
@@ -139,6 +139,8 @@ window.navigator = { language: 'ga' };
 scripts.forEach(rel => (0, eval)(fs.readFileSync(path.join(GE, rel), 'utf8')));
 
 const W = global.window;
+// data/conversations.js assigns to `this` (the page's window); in this shim that is the global object
+if (!W.GA_CONVOS && global.GA_CONVOS) W.GA_CONVOS = global.GA_CONVOS;
 ok(!!W.GAItems && !!W.GameScore && !!W.GameRound && !!W.GACheck && !!W.GAArcade && !!W.GA, 'the modules did not load');
 ok(!W.ENGINE && !W.Checker && !W.Speak, 'the Spanish engine leaked into Líofa');
 
@@ -716,6 +718,180 @@ async function playRound(cfg, plan) {
     ok(W.Profile.current() === 'A1' && byCls('arc-tile').length === 7, 'picking a level sets it and goes home');
   }
 
+  // ---- Frásaí: the topic focus and the conversations (js/ga-convo.js). The real phrases and conversations. ----------------------------------------
+  {
+    const CV = W.GAConvo, noDash = s => !/[–—]/.test(s) && !/ [-‐] /.test(s);
+    ok(!!CV && Array.isArray(W.GA_CONVOS) && W.GA_CONVOS.length >= 10, 'GAConvo and data/conversations.js are loaded');
+    ['liofa.arcade', 'liofa.srs', 'liofa.convos', 'liofa.games', 'liofa.errors'].forEach(k => delete store[k]);
+    SRS._reset(); CV._reset();
+    W.GA_PHRASES = REAL.p; GI.reset(); W.Profile.set('A2');
+    const phraseTile = () => { W.GAArcade.board(); byCls('arc-tile').filter(t => text(t).indexOf('Frásaí') !== -1)[0].click(); };
+    const fchips = () => byCls('arc-focus-chips')[0].all(n => n.tagName === 'BUTTON');
+    const chip = t => fchips().filter(c => text(c) === t)[0];
+    const themes = Object.keys(GI.phraseList().byTheme);
+    const th = id => GI.phraseList().list.filter(e => e.id === id)[0].th;
+    const FA = ['aimsir', 'am'];
+
+    // ---- the topic focus ----
+    phraseTile();
+    ok(text(fchips()[0]) === 'All topics' && fchips().length === 1 + themes.length && fchips()[0].cls().includes('on'), 'the Frásaí sheet has All topics and one chip per theme');
+    ok(/^You know 0 of \d+ phrases$/.test(text(byCls('arc-progress-all')[0])), 'no focus: the plain coverage line');
+    ok(['Weather', 'Time', 'Greetings'].every(l => !!chip(l)), 'chips use the theme labels');
+    chip('Weather').click(); chip('Time').click();
+    ok(JSON.stringify(JSON.parse(store['liofa.arcade']).pfocus) === JSON.stringify(FA), 'the focus is kept in liofa.arcade, and the chips multi-select');
+    { const own = GI.phraseList().list.filter(e => FA.indexOf(e.th) !== -1).length;
+      ok(text(byCls('arc-progress-all')[0]) === 'You know 0 of ' + own + ' phrases in these topics', 'the coverage line counts only the chosen topics and says so: ' + text(byCls('arc-progress-all')[0])); }
+    ok(fchips().filter(c => c.cls().includes('on')).map(text).sort().join() === 'Time,Weather', 'the chosen chips are on');
+    byCls('arc-back')[0].click(); phraseTile();
+    ok(fchips().filter(c => c.cls().includes('on')).map(text).sort().join() === 'Time,Weather', 'the focus persists across screens');
+    { // the grind deals only the chosen themes
+      W.Profile.set('B2'); SRS._reset(); delete store['liofa.srs']; GI.reset();
+      const seen = new Set(), st = { asked: 0, newN: 0, used: {} };
+      for (let i = 0; i < 60; i++) { const it = GI.next('frasai', 2, rng, { grind: st, count: 60, gkind: 'frasai', themes: FA }); if (it) seen.add(th(it.id)); }
+      ok(seen.size === 2 && [...seen].every(t => FA.indexOf(t) !== -1), 'the phrase grind deals only the focused themes: ' + [...seen]);
+      const one = new Set(), st2 = { asked: 0, newN: 0, used: {} };
+      for (let i = 0; i < 30; i++) { const it = GI.next('frasai', 2, rng, { grind: st2, count: 60, gkind: 'frasai', themes: ['siopa'] }); if (it) one.add(th(it.id)); }
+      ok(one.size === 1 && one.has('siopa'), 'a single focused theme deals only that one');
+      const all = new Set(), st3 = { asked: 0, newN: 0, used: {} };
+      for (let i = 0; i < 80; i++) { const it = GI.next('frasai', 2, rng, { grind: st3, count: 80, gkind: 'frasai' }); if (it) all.add(th(it.id)); }
+      ok(all.size > 2, 'no focus deals from every theme');
+      W.Profile.set('A2');
+    }
+    { // the round config carries it; the Imir mix does not
+      let got = null; const run = W.GameRound.run;
+      W.GameRound.run = (h, cfg) => { got = cfg; };
+      try {
+        phraseTile(); byCls('arc-mode')[0].click();
+        ok(got && got.kind === 'frasai' && JSON.stringify(got.themes) === JSON.stringify(FA), 'the Frásaí round config carries the themes');
+        got = null; W.GAArcade.board(); byCls('arc-jugar')[0].click(); byCls('arc-mode')[0].click();
+        ok(got && got.themes === undefined, 'the Imir mix ignores the focus');
+      } finally { W.GameRound.run = run; }
+    }
+
+    // ---- the conversation list on the sheet, filtered by the focus ----
+    phraseTile();
+    const nIn = ths => W.GA_CONVOS.filter(c => !ths.length || ths.indexOf(c.th) !== -1).length;
+    ok(byCls('cv-row').length === nIn(FA) && nIn(FA) > 0 && /Conversations/.test(allText()), 'the sheet lists the conversations in the focused topics');
+    ok(byCls('cv-row').every(r => /A1|A2|B1/.test(text(r)) && text(r).indexOf('done') === -1 && /you/.test(text(r))), 'each row shows its title, band and role, no tick yet');
+    chip('All topics').click();
+    ok(byCls('cv-row').length === W.GA_CONVOS.length && !/in these topics/.test(text(byCls('arc-progress-all')[0])), 'All topics lists every conversation and the plain coverage');
+    chip('Shopping').click(); chip('Weather').click();
+    ok(byCls('cv-row').length === nIn(['siopa', 'aimsir']), 'the list follows the chips');
+    chip('All topics').click();
+    ok(noDash(allText()), 'no dashes on the Frásaí sheet');
+    chip('Weather').click(); chip('Time').click();
+
+    // ---- the screen ----
+    const first = W.GA_CONVOS.filter(c => FA.indexOf(c.th) !== -1)[0];
+    byCls('cv-row')[0].click();
+    const mine = first.lines.filter(l => l.who === first.you).length;
+    ok(byCls('cv-bubble').length === first.lines.length && byCls('cv-me').length === mine && byCls('cv-them').length === first.lines.length - mine, 'every line is a bubble, the learner on one side');
+    ok(byCls('cv-en').length === first.lines.length && byCls('cv-bubble').every(b => b.all(n => n.cls().includes('cv-en')).length === 1), 'the English is under each line');
+    ok(byCls('cv-me').every(b => b.all(n => n.cls().includes('cv-ga')).length === 1) && allText().indexOf(first.lines[0].ga) !== -1, 'the Irish is in the bubble');
+    ok(/Practise your part/.test(allText()) && /you, talking to /.test(allText()) && /Pick the right line/.test(allText()), 'title, roles and the practise button');
+    ok(noDash(allText()), 'no dashes on the conversation screen');
+    W.Profile.set('B2');
+    CV.open(first.id);
+    ok(/Cleachtaigh do pháirt/.test(allText()) && /tú, ag caint le /.test(allText()) && /Roghnaigh an líne cheart/.test(allText()), 'from B1 the labels are in Irish');
+    ok(noDash(allText()), 'no dashes in the Irish labels');
+    W.Profile.set('A2');
+    byCls('arc-back')[0].click();
+    ok(byCls('arc-focus-chips').length === 1 && byCls('cv-row').length === nIn(FA), 'back returns to the sheet, focus kept');
+    { // role wording
+      const keep = W.GA_CONVOS;
+      W.GA_CONVOS = keep.concat([Object.assign({}, first, { id: 'fx-man', roles: { a: 'You (a man)', b: 'Máire' } }), Object.assign({}, first, { id: 'fx-cust', roles: { a: 'Customer', b: 'Waiter' } })]);
+      CV.open('fx-man');
+      ok(/you \(a man\), talking to Máire/.test(allText()) && /Practise your part/.test(allText()), 'a You role reads you, the bracket kept');
+      CV.open('fx-cust');
+      ok(/your role: Customer, talking to Waiter/.test(allText()) && /Practise: your role: Customer/.test(allText()), 'another role is named');
+      const flip = Object.assign({}, first, { id: 'fx-flip', you: 'b', roles: { a: 'Waiter', b: 'You' } });
+      W.GA_CONVOS = keep.concat([flip]);
+      const fi = CV.items('fx-flip', 'pick', rng);
+      ok(fi.length === first.lines.filter(l => l.who === 'b').length && fi.every(it => flip.lines[it.convoLine].who === 'b') && /^Waiter: /.test(fi.find(it => it.convoLine > 0).sub), 'the learner can be b: the line before is the context');
+      W.GA_CONVOS = keep;
+    }
+
+    // ---- items: pick, then build, then type; the answer is among the options; line order ----
+    const lines = c => c.lines.filter(l => l.who === c.you);
+    W.GA_CONVOS.forEach(c => {
+      const order = c.lines.map((l, i) => (l.who === c.you ? i : -1)).filter(i => i >= 0);
+      ['pick', 'build', 'type'].forEach(k => {
+        const its = CV.items(c.id, k, rng);
+        ok(its.length === order.length && its.map(i => i.convoLine).join() === order.join(), `${c.id} ${k}: only the learner lines, in line order`);
+        ok(its.every(it => it.id === 'cv:' + c.id + ':' + it.convoLine && it.answer && (it.play !== 'choose' || (it.options.length === 4 && new Set(it.options).size === 4 && it.options.indexOf(it.answer) !== -1))), `${c.id} ${k}: ids and answers`);
+      });
+      ok(CV.items(c.id, 'pick', rng).every(it => it.play === 'choose' && it.options.some(o => o !== it.answer)), `${c.id}: a pick offers other lines`);
+      ok(CV.items(c.id, 'type', rng).every(it => it.play === 'type' && it.accept[0] === it.answer && GI.grade(it, it.answer) === 'good' && GI.grade(it, 'zzz qqq') === 'wrong'), `${c.id}: typed items are checked by the usual checker`);
+      ok(CV.items(c.id, 'build', rng).every(it => it.play === 'choose' || (it.play === 'build' && it.words.join(' ') === it.answer && it.words.length >= 2 && it.words.length <= 8)), `${c.id}: build items tap the words`);
+    });
+    { // the fada rule is the app's own: a missing fada is a near miss, not an error
+      const c = W.GA_CONVOS.find(c => lines(c).some(l => /[áéíóú]/.test(l.ga)));
+      const it = CV.items(c.id, 'type', rng).find(i => /[áéíóú]/.test(i.answer));
+      const bare = it.answer.normalize('NFD').replace(/[̀-ͯ]/g, '');
+      ok(GI.grade(it, bare) !== 'wrong' && GI.grade(it, it.answer.toUpperCase()) !== 'wrong', 'fadas follow the usual near-miss rule: ' + GI.grade(it, bare));
+    }
+    { const c = W.GA_CONVOS.find(c => c.lines[0].who !== c.you), it = CV.items(c.id, 'pick', rng)[0];
+      ok(it.convoLine > 0 && it.sub.indexOf(': ') > 0 && it.sub.indexOf(c.lines[it.convoLine - 1].ga) !== -1, 'the other side is shown as context'); }
+    { const c = W.GA_CONVOS.find(c => c.lines[0].who === c.you), it = CV.items(c.id, 'pick', rng)[0];
+      ok(it.convoLine === 0 && /^Your line/.test(it.sub), 'with nothing before it the sub says Your line'); }
+
+    // ---- driving practise rounds through the real engine ----
+    const over = () => byCls('g-over')[0];
+    const step = async right => {
+      LAST = CV.last();
+      await answerOne(right);
+      await sleep(right ? 230 : 20);
+      await cont();
+      await sleep(60);
+    };
+    const run = async (id, plan) => {
+      CV.practise(id); await sleep(60);
+      const dealt = [], kinds = [], title = byCls('g-name')[0] ? text(byCls('g-name')[0]) : null;
+      for (let i = 0; i < plan.length && !over(); i++) { dealt.push(CV.last()); kinds.push(CV.last().play); await step(plan[i]); }
+      await waitFor(() => !!over(), 1500, 'the end of the conversation round');
+      return { dealt, kinds, title };
+    };
+    const learntCv = () => Object.keys(JSON.parse(store['liofa.srs'] || '{}')).filter(k => k.indexOf('cv:') === 0 && SRS.isLearnt(k));
+    const cvKeys = () => Object.keys(JSON.parse(store['liofa.srs'] || '{}')).filter(k => k.indexOf('cv:') === 0);
+    const C = W.GA_CONVOS.find(c => c.lines[0].who !== c.you && lines(c).length === 4), N = lines(C).length;
+    const order = C.lines.map((l, i) => (l.who === C.you ? i : -1)).filter(i => i >= 0);
+    delete store['liofa.srs']; SRS._reset(); CV._reset();
+    ok(CV.kindFor(C.id) === 'pick' && CV.passes(C.id) === 0, 'a new conversation starts with picks');
+    // under 80% is not a pass
+    { const r = await run(C.id, Array(N).fill(false));
+      ok(r.title === C.en, 'the round is titled with the conversation');
+      ok(r.dealt.map(d => d.convoLine).join() === order.join(), 'the round follows the line order and asks only the learner lines');
+      ok(r.dealt.every(it => it.play === 'choose' && it.options.indexOf(it.answer) !== -1), 'the answer is among the options');
+      ok(/are needed to pass/.test(text(over())) && CV.passes(C.id) === 0 && !store['liofa.convos'], 'under 80% is not a pass'); }
+    // pass one: picks
+    { const r = await run(C.id, Array(N).fill(true));
+      ok(r.kinds.join() === Array(N).fill('choose').join() && new RegExp('Passed: ' + N + ' of ' + N).test(text(over())), 'pass one is a pick round');
+      ok(JSON.parse(store['liofa.convos']).passed[C.id] === 1 && CV.kindFor(C.id) === 'build', 'the pass is kept in liofa.convos and the next is build');
+      ok(learntCv().length === 0, 'a pick never makes anything learnt');
+      ok(cvKeys().length === N && cvKeys().every(k => new RegExp('^cv:' + C.id + ':\\d+$').test(k)), 'the SRS ids look like cv:<id>:<line>'); }
+    // pass two: builds
+    { const r = await run(C.id, Array(N).fill(true));
+      ok(r.kinds.every(p => p === 'build' || p === 'choose') && r.kinds.indexOf('build') !== -1 && CV.passes(C.id) === 2 && CV.kindFor(C.id) === 'type', 'pass two is a build round and the next is typed');
+      ok(learntCv().length === 0, 'a build never makes anything learnt'); }
+    // pass three: typed
+    { const r = await run(C.id, Array(N).fill(true));
+      ok(r.kinds.join() === Array(N).fill('type').join() && CV.passes(C.id) === 3, 'pass three is typed'); }
+    // 80% is enough: four of five
+    { const C5 = W.GA_CONVOS.find(c => lines(c).length === 5); delete store['liofa.convos']; CV._reset();
+      await run(C5.id, [true, true, false, true, true]);
+      ok(CV.passes(C5.id) === 1 && /Passed: 4 of 5/.test(text(over())), 'four of five (80%) passes'); }
+    // leaving a round returns to the conversation
+    CV.practise(C.id); await sleep(60); byCls('g-exit')[0].click();
+    ok(byCls('cv-bubble').length === C.lines.length, 'leaving a round returns to the conversation');
+    phraseTile(); chip('All topics').click();
+    ok(byCls('cv-row').filter(r => /done ✓/.test(text(r))).length === Object.keys(JSON.parse(store['liofa.convos']).passed).length, 'passed conversations are ticked in the list');
+    ok(noDash(allText()), 'no dashes after a pass');
+    ok('liofa.convos' in store && JSON.parse(store['liofa.arcade']).pfocus !== undefined, 'convo progress and the focus are in Líofa\'s own keys');
+    ['liofa.convos'].forEach(k => delete store[k]);
+    CV._reset(); W.GA_PHRASES = PHRASES.slice(); GI.reset(); W.Profile.set('A2'); W.GAArcade.board();
+    console.log(`  frásaí focus and conversations: ${W.GA_CONVOS.length} real conversations, items checked in every kind`);
+  }
+
   // ---- nothing under fluidez. -----------------------------------------------------------------------------------------------------------------------------------
   {
     const keys = Object.keys(store);
@@ -723,7 +899,7 @@ async function playRound(cfg, plan) {
     ok(written.every(k => k.indexOf('liofa.') === 0), 'keys not under liofa.: ' + written.filter(k => k.indexOf('liofa.') !== 0).filter((k, i, a) => a.indexOf(k) === i));
     ok(!keys.some(k => /fluidez/i.test(k)), 'a fluidez. key was written');
     ['liofa.srs', 'liofa.games', 'liofa.errors', 'liofa.profile', 'liofa.recent', 'liofa.arcade', 'liofa.check'].forEach(k => ok(k in store, 'expected key ' + k));
-    const srcs = ['ga-arcade', 'ga-items', 'ga-check', 'ga-core', 'gameround', 'gamescore', 'srs', 'errorlog', 'ui', 'perf'].map(f => fs.readFileSync(path.join(GE, 'js', f + '.js'), 'utf8')).join('\n');
+    const srcs = ['ga-arcade', 'ga-convo', 'ga-items', 'ga-check', 'ga-core', 'gameround', 'gamescore', 'srs', 'errorlog', 'ui', 'perf'].map(f => fs.readFileSync(path.join(GE, 'js', f + '.js'), 'utf8')).join('\n');
     ok(!/fluidez\./.test(srcs.replace(/\/\*[\s\S]*?\*\//g, '').replace(/\/\/.*$/gm, '')), 'a fluidez. key survives in the code');
     ok(!/Speak|speechSynthesis|SpeechSynthesis/.test(srcs.replace(/\/\*[\s\S]*?\*\//g, '').replace(/\/\/.*$/gm, '')), 'speech code survives');
   }

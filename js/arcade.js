@@ -125,6 +125,7 @@
     return (window.ENGINE && window.ENGINE.TENSE_LABEL && window.ENGINE.TENSE_LABEL[k]) || k;
   }
   function themeLabel(id) {
+    if (id === 'basicas') return 'Básicas';
     var t = (window.THEMES || []).filter(function (x) { return x.id === id; })[0];
     return t ? (t.short || t.es || id) : id;
   }
@@ -533,6 +534,9 @@
     return window.GameItems.grindThemes().some(function (t) { return t.id === id; }) ? id : '';
   }
   function saveWordTheme(id) { var a = loadArc(); a.wtheme = id || ''; saveArc(a); }
+  /* The Frases sheet's topic focus (multi-select; empty means all topics). Its own key: `focus` is the full board's. */
+  function chosenFocus() { var f = loadArc().pfocus; return Array.isArray(f) ? f.slice() : []; }
+  function saveFocus(f) { var a = loadArc(); a.pfocus = f; saveArc(a); }
 
   /* THE SHEET. Tapping a tile does not start a round, it asks which kind: ten
    * questions with no clock for a few stops on a bus, or sixty seconds against
@@ -591,11 +595,48 @@
     }
 
     if (g.key === 'frases' && window.GameItems && window.GameItems.phraseCoverage) {
-      wrap.appendChild(el('div', 'arc-progress', null)).appendChild(el('div', 'arc-progress-all', window.GameItems.phraseCoverage().text));
+      var pfocus = chosenFocus(), pcovLine = el('div', 'arc-progress-all');
+      wrap.appendChild(el('div', 'arc-progress', null)).appendChild(pcovLine);
+      function paintCov() { pcovLine.textContent = window.GameItems.phraseCoverage(pfocus).text; }
+      paintCov();
+      var fbox = el('div', 'cv-sheet');
+      function paintConvos() {
+        clear(fbox);
+        if (window.ESConvo) window.ESConvo.section(fbox, pfocus, function () { sheet(g, true); }, function (v) { VIEW = v; });
+      }
+      var fthemes = Object.keys(window.GameItems.phraseList().byTheme)
+        .sort(function (a, b) { return themeLabel(a) < themeLabel(b) ? -1 : themeLabel(a) > themeLabel(b) ? 1 : 0; });
+      if (fthemes.length > 1) {
+        wrap.appendChild(el('div', 'arc-group', 'Temas'));
+        var fchips = el('div', 'arc-chips arc-focus-chips'), fby = {};
+        var fall = el('button', 'arc-chip', 'Todos los temas');
+        fall.type = 'button';
+        function paintF() {
+          fall.classList.toggle('on', !pfocus.length);
+          Object.keys(fby).forEach(function (k) { fby[k].classList.toggle('on', pfocus.indexOf(k) !== -1); });
+        }
+        fall.addEventListener('click', function () { pfocus = []; saveFocus(pfocus); paintF(); paintCov(); paintConvos(); });
+        fchips.appendChild(fall);
+        fthemes.forEach(function (t) {
+          var fb = el('button', 'arc-chip', themeLabel(t));
+          fb.type = 'button';
+          fb.addEventListener('click', function () {
+            var i = pfocus.indexOf(t);
+            if (i === -1) pfocus.push(t); else pfocus.splice(i, 1);
+            saveFocus(pfocus); paintF(); paintCov(); paintConvos();
+          });
+          fby[t] = fb;
+          fchips.appendChild(fb);
+        });
+        paintF();
+        wrap.appendChild(fchips);
+      }
       var kb = el('button', 'arc-wtbtn', 'Marca las frases que ya conoces');
       kb.type = 'button';
       kb.addEventListener('click', function () { knownScreen(g); });
       wrap.appendChild(kb);
+      paintConvos();
+      wrap.appendChild(fbox);
     }
 
     if (g.key === 'palabras' && window.GameItems && window.GameItems.coverage) {
@@ -757,6 +798,7 @@
                           : { key: modeKey(g, 'c'), duration: 60000 };
     if (g.key === 'verbos2') { var ts = chosenTenses(); if (ts.length) extra.tenses = ts; }
     if (g.key === 'palabras') { var wth = chosenWordTheme(); if (wth) extra.theme = wth; }
+    if (g.key === 'frases' && chosenFocus().length) extra.themes = chosenFocus();     // the Jugar mix ignores the focus
     G.open(g.key, board, extra);
   }
 
