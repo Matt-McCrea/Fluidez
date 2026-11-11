@@ -1,0 +1,874 @@
+/* ============================================================================
+ * SVOBODNO: one self-contained sheet (merged from Fluidez css/styles.css, games.css
+ * and arcade.css, repainted). Dark only: a board you open with one hand, not a
+ * document. NO WEB FONTS: it has to work offline, so the personality comes from
+ * heavy weights, tight tracking and tabular figures. Phone first, with
+ * safe-area insets; text on every hue is AA (dark ink on the bright tiles).
+ *
+ * Hues: Играть #e3a83a, Глаголы #d2402f, Слова #c77d2e, Фразы #b8577a, Падежи #3f8f8a,
+ * Вид #7a6fd0, Движение #3d86c6, Числа #9aa83a, Буквы #e3a83a, Говорить #2fb3a5 (set in js/ru-arcade.js).
+ * Palette: Khokhloma, black lacquer with red and gold.
+ * ========================================================================== */
+:root {
+  --bg:#110c0b; --panel:#1c1513; --panel-2:#261c19; --border:#3a2a25;
+  --text:#f5ece4; --muted:#b49d8f;
+  --accent:#d2402f; --accent-2:#ff8a78; --gold:#e3a83a;
+  --good:#57c47a; --good-bg:#14301c; --bad:#ff6b5e; --bad-bg:#3a1a16;
+  --warn:#e3a83a; --ink:#120c0b;        /* dark ink for text on a bright fill */
+  --shadow:0 6px 28px rgba(0,0,0,.5); --radius:16px;
+  color-scheme: dark;
+}
+
+/* ---- base ---- */
+* { box-sizing:border-box; }
+html, body { margin:0; height:100%; }
+html { -webkit-text-size-adjust:100%; }
+body {
+  background:var(--bg); color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","PT Sans",Arial,"Noto Sans",sans-serif;
+  font-size:17px; line-height:1.5;
+  overscroll-behavior:none;
+}
+button, a, input, textarea { touch-action:manipulation; }
+button { -webkit-user-select:none; user-select:none; }
+input, textarea { -webkit-user-select:text; user-select:text; }
+button:not(.accent-btn) { min-height:44px; }
+b { font-weight:650; }
+h2 { margin:0 0 10px; font-size:1.25rem; }
+h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
+.app-main { padding:0; max-width:none; }
+:focus-visible { outline:2px solid var(--accent-2); outline-offset:2px; }
+
+.accent-bar { display:flex; flex-wrap:wrap; justify-content:center; gap:6px; margin:12px 0 4px; }
+.accent-btn-unused {
+  border:1px solid var(--border); background:var(--panel); color:var(--text);
+  width:40px; height:40px; border-radius:8px; cursor:pointer; font-size:1rem; padding:0;
+}
+.accent-btn:hover { border-color:var(--accent); background:var(--panel-2); }
+
+/* the CEFR band a question came from */
+[data-band="A1"] { --band: #57c47a; }
+[data-band="A2"] { --band: #4aa3e0; }
+[data-band="B1"] { --band: #3fbfb0; }
+[data-band="B2"] { --band: #a98af0; }
+
+/* =========================================================== a round in play */
+/* --game is set on the element by the app, so it must NOT be declared
+   here: a rule on .g-shell would win over the inline value and every game
+   would come out the same colour. */
+.g-shell { max-width: 620px; margin: 0 auto; padding: max(14px, calc(env(safe-area-inset-top) + 8px)) 16px calc(40px + env(safe-area-inset-bottom)); }
+.g-shell, .g-over { --game: var(--gold); }
+.g-top { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.g-spacer { flex: 1; }
+.g-name {
+  font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 750;
+  color: var(--ink); background: var(--game); padding: 5px 13px; border-radius: 999px;
+}
+.g-band {
+  font-size: .68rem; font-weight: 750; letter-spacing: .06em; color: var(--ink);
+  background: var(--band, var(--muted)); padding: 4px 9px; border-radius: 5px;
+  transition: background-color .35s ease;
+}
+.g-combo {
+  font-size: .82rem; font-weight: 750; font-variant-numeric: tabular-nums;
+  color: var(--good); background: var(--good-bg); padding: 4px 11px; border-radius: 999px;
+  border: 1px solid transparent;
+}
+.g-combo[data-hot="1"] { color: var(--ink); background: var(--warn); border-color: var(--warn); }
+.g-combo.beat { animation: g-beat .3s ease; }
+@keyframes g-beat { 0% { transform: scale(1); } 40% { transform: scale(1.22); } 100% { transform: scale(1); } }
+
+/* lives: three dots that go hollow. The count has to be readable at a glance
+   mid-round, so it is a shape rather than a number. */
+.g-lives {
+  font-size: .85rem; letter-spacing: .12em; font-weight: 700; color: var(--good);
+  background: var(--good-bg); padding: 4px 10px; border-radius: 999px; line-height: 1.2;
+}
+.g-lives[data-low="1"] { color: var(--bad); background: var(--bad-bg); }
+
+/* the clock: a bar, because "how much is left" is a shape, not a number */
+.g-clock {
+  height: 7px; background: var(--panel-2); border-radius: 999px; overflow: hidden;
+  border: 1px solid var(--border);
+}
+.g-clock-fill {
+  height: 100%; width: 100%; background: var(--game); border-radius: 999px;
+  transform-origin: left center; transform: scaleX(1);
+}
+.g-clock[data-urgent="1"] .g-clock-fill { background: var(--bad); animation: g-tock 1s steps(1) infinite; }
+@keyframes g-tock { 0%, 60% { opacity: 1; } 61%, 100% { opacity: .45; } }
+
+.g-scoreline {
+  position: relative; display: flex; align-items: baseline; gap: 12px; margin: 12px 0 22px;
+}
+.g-score {
+  font-size: 2rem; font-weight: 750; line-height: 1; font-variant-numeric: tabular-nums;
+  letter-spacing: -.02em;
+}
+.g-pb { font-size: .82rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.g-secs {
+  font-size: 1.25rem; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--muted);
+}
+.g-secs.g-run { font-size: 1rem; font-weight: 650; }
+.g-shell[data-urgent="1"] .g-secs { color: var(--bad); }
+.g-shell[data-record="1"] .g-score { color: var(--good); }
+.g-shell[data-record="1"] .g-pb { color: var(--good); font-weight: 700; }
+
+/* The points rise out of the gap BELOW the score, not up through the clock
+   bar above it — which is where they used to land, on top of the one element
+   whose whole job is being readable at a glance. */
+.g-pop {
+  position: absolute; left: 0; top: 100%; pointer-events: none; white-space: nowrap;
+  font-size: .92rem; font-weight: 750; font-variant-numeric: tabular-nums;
+  animation: g-rise .9s ease-out forwards;
+}
+.g-pop.good { color: var(--good); }
+.g-pop.near { color: var(--warn); }
+.g-pop.record { color: var(--good); font-size: 1.05rem; letter-spacing: .06em; }
+@keyframes g-rise {
+  0% { opacity: 0; transform: translateY(4px); }
+  18% { opacity: 1; transform: translateY(-1px); }
+  100% { opacity: 0; transform: translateY(-15px); }
+}
+
+/* ---------------------------------------------------------------- the item */
+/* The typing box now sits outside this container (see typeHost in
+ * js/gameround.js) so that clearing the question never destroys the input.
+ * The min-height stays, and still earns it: prompts vary from two words to
+ * two lines, and without a floor the box would walk up and down the screen
+ * between questions while you are typing into it. Sized to the old prompt
+ * area — the previous 210px included the input and the accent bar. */
+.g-item { min-height: 108px; }
+.g-type[hidden] { display: none; }
+.g-prompt {
+  font-size: 1.55rem; font-weight: 650; line-height: 1.32; margin: 0 0 20px;
+  text-wrap: balance;
+}
+.g-prompt.long { font-size: 1.2rem; }
+.g-prompt.build { font-size: 1.15rem; color: var(--muted); font-weight: 550; margin-bottom: 14px; }
+.g-prompt-note {
+  display: block; margin-top: 5px; font-size: .86rem; font-weight: 450; color: var(--muted);
+}
+.g-prompt-note::before { content: '('; }
+.g-prompt-note::after { content: ')'; }
+/* the English translation under a Irish sentence (Verbos): there to help, so small */
+.g-gap { white-space: nowrap; }
+.g-sub { margin: -10px 0 18px; font-size: .86rem; line-height: 1.4; color: var(--muted); font-weight: 450; }
+.g-peek { background: none; border: 0; padding: 4px 0; font: inherit; font-size: .82rem; color: var(--muted); text-decoration: underline; cursor: pointer; }
+.g-fb-en { font-style: italic; }
+
+/* the 3-2-1 over a Contrarreloj round that was hidden (locked phone, another
+   app in front): the clock is stopped until it reaches nothing */
+.g-resume {
+  position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center;
+  background: rgba(17, 12, 11, .86); color: #fff; font-size: 6.5rem; font-weight: 800;
+  font-variant-numeric: tabular-nums; animation: g-beat .5s ease;
+}
+
+.g-options { display: flex; flex-direction: column; gap: 9px; }
+.g-opt {
+  text-align: left; font-size: 1.02rem; font-weight: 550; padding: 13px 17px; cursor: pointer;
+  border: 2px solid var(--border); border-radius: 11px; background: var(--panel); color: var(--text);
+  transition: border-color .12s ease, background-color .12s ease;
+}
+@media (hover: hover) { .g-opt:hover { border-color: var(--game); } }  /* a tap on a phone leaves :hover stuck: it must not look like a hint */
+.g-opt.right { border-color: var(--good); background: var(--good-bg); color: var(--good); font-weight: 700; }
+.g-opt.wrong { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); animation: g-shake .3s ease; }
+@keyframes g-shake {
+  0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); } 75% { transform: translateX(-2px); }
+}
+
+.g-input {
+  width: 100%; font-size: 1.3rem; padding: 13px 16px; font-family: inherit;
+  border: 2px solid var(--border); border-radius: 11px; background: var(--panel); color: var(--text);
+}
+.g-input:focus { outline: none; border-color: var(--game); }
+.g-input.right { border-color: var(--good); background: var(--good-bg); }
+.g-input.wrong { border-color: var(--bad); background: var(--bad-bg); animation: g-shake .3s ease; }
+
+/* feedback actions: "that counts too" beside Seguir, not above it — it is an
+ * alternative to accepting the verdict, not a step before it */
+.g-fb-actions { display: flex; align-items: center; gap: 10px; margin-top: 14px; }
+.g-fb-actions .g-continue { margin-top: 0; }
+.g-mine {
+  flex: 0 0 auto; font-size: .82rem; padding: 9px 13px; cursor: pointer;
+  background: transparent; color: var(--muted);
+  border: 1px solid var(--border); border-radius: 9px;
+}
+.g-mine:hover:not([disabled]) { border-color: var(--game); color: var(--text); }
+.g-mine[disabled] { opacity: .75; cursor: default; border-style: dashed; }
+
+.g-build {
+  min-height: 66px; display: flex; flex-wrap: wrap; gap: 7px; align-items: center; align-content: flex-start;
+  padding: 11px 13px; margin-bottom: 14px;
+  border: 2px dashed var(--border); border-radius: 12px;
+}
+.g-build.right { border-color: var(--good); border-style: solid; background: var(--good-bg); }
+.g-build.wrong { border-color: var(--bad); border-style: solid; background: var(--bad-bg); }
+.g-build-hint { color: var(--muted); font-size: .88rem; font-style: italic; }
+.g-bank { display: flex; flex-wrap: wrap; gap: 7px; }
+.g-chip {
+  border: 1px solid var(--border); background: var(--panel-2); color: var(--text);
+  padding: 8px 14px; border-radius: 9px; cursor: pointer; font-size: 1.02rem; font-weight: 600;
+  min-height: 40px;
+}
+@media (hover: hover) { .g-chip:hover { border-color: var(--game); } }  /* a tap on a phone leaves :hover stuck: it must not look like a hint */
+.g-chip.chosen { background: var(--game); color: var(--ink); border-color: var(--game); }
+/* a used word stays in its slot, greyed, so nothing in the bank moves */
+.g-chip.used, .g-chip.used:hover {
+  color: var(--muted); background: var(--border); border-color: var(--border); opacity: .45;
+  cursor: default; box-shadow: none;
+}
+
+/* ------------------------------------------------------------------ listening */
+.g-listen { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; }
+.g-speaker {
+  position: relative; width: 76px; height: 76px; min-height: 76px; flex: none;
+  border-radius: 50%; border: 2px solid var(--game); background: var(--panel);
+  color: var(--game); font-size: 1.7rem; cursor: pointer; line-height: 1;
+}
+.g-speaker:hover { background: var(--panel-2); }
+.g-pulse {
+  position: absolute; inset: -2px; border-radius: 50%; border: 2px solid var(--game);
+  opacity: 0; pointer-events: none;
+}
+.g-speaker.playing .g-pulse { animation: g-ring 1.1s ease-out 2; }
+@keyframes g-ring {
+  0% { opacity: .7; transform: scale(1); } 100% { opacity: 0; transform: scale(1.5); }
+}
+.g-listen-hint { color: var(--muted); font-size: .88rem; }
+
+/* ---------------------------------------------------------------- correction
+   Shown with the clock STOPPED. Being told the answer is information, not a
+   second penalty on top of losing the points and the combo. */
+.g-feedback { min-height: 20px; }
+.g-correct {
+  display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+  padding: 14px 18px; border-radius: 11px;
+  background: var(--bad-bg); border-left: 3px solid var(--bad);
+}
+.g-shell[data-state="near"] .g-correct { background: var(--panel-2); border-left-color: var(--warn); }
+.g-shell[data-state="good"] .g-correct.is-right { background: var(--panel-2); border-left-color: var(--good, #1f9d78); }
+.g-fb-label {
+  font-size: .68rem; text-transform: uppercase; letter-spacing: .09em; font-weight: 750;
+  color: var(--bad); flex: none;
+}
+.g-shell[data-state="near"] .g-fb-label { color: var(--warn); }
+.g-fb-answer { font-size: 1.2rem; font-weight: 700; }
+
+/* The two-line correction: what it was, and what you wrote, each with the
+   words that differ picked out — so the mistake is visible rather than
+   something to find by eye at second 50 of a sprint. */
+.g-fb-line { display: flex; align-items: baseline; gap: 10px; flex-basis: 100%; flex-wrap: wrap; }
+.g-fb-words { font-size: 1.12rem; font-weight: 650; line-height: 1.4; }
+.g-fb-line.is-typed { margin-top: 5px; }
+.g-fb-line.is-typed .g-fb-label { color: var(--muted); }
+.g-fb-line.is-typed .g-fb-words { font-weight: 500; color: var(--muted); }
+.g-diff {
+  border-radius: 4px; padding: 0 3px; margin: 0 -1px;
+  background: var(--good-bg); color: var(--good); font-weight: 750;
+}
+.g-fb-line.is-typed .g-diff {
+  background: var(--bad-bg); color: var(--bad); font-weight: 650;
+  text-decoration: line-through; text-decoration-thickness: 1px;
+}
+.g-shell[data-state="near"] .g-fb-line.is-answer .g-diff { background: var(--warn-soft, var(--panel-2)); color: var(--warn); }
+.g-fb-note { flex-basis: 100%; color: var(--muted); font-size: .88rem; }
+.g-continue {
+  margin-top: 12px; border: 1px solid var(--border); background: var(--panel-2); color: var(--text);
+  font-weight: 650; font-size: .9rem; padding: 9px 18px; border-radius: 9px; cursor: pointer;
+}
+.g-continue:hover { border-color: var(--game); }
+
+/* ================================================================ the result */
+.g-over { max-width: 560px; margin: 0 auto; padding: 30px 0 50px; text-align: center; }
+.g-over-eyebrow {
+  font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 750; color: var(--muted);
+}
+.g-over-score {
+  font-size: 4.2rem; font-weight: 800; line-height: 1; letter-spacing: -.03em;
+  margin: 8px 0 6px; font-variant-numeric: tabular-nums;
+}
+.g-over[data-pb="1"] .g-over-score { color: var(--good); }
+.g-over-verdict { font-size: 1.05rem; color: var(--muted); margin-bottom: 4px; }
+.g-over-verdict.pb { color: var(--good); font-weight: 700; }
+.g-again {
+  display: block; margin: 24px auto 0; border: none; background: var(--gold); color: var(--ink);
+  font-weight: 700; font-size: 1.05rem; padding: 14px 46px; border-radius: 11px; cursor: pointer;
+}
+.g-again:hover { background: #f2c460; }
+.g-over-stats {
+  display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin: 26px 0 4px;
+}
+.g-stat { display: flex; flex-direction: column; gap: 1px; }
+.g-stat b { font-size: 1.1rem; font-weight: 750; font-variant-numeric: tabular-nums; }
+.g-stat span { font-size: .7rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.g-over-h {
+  margin: 28px 0 10px; font-size: .72rem; text-transform: uppercase; letter-spacing: .1em;
+  font-weight: 750; color: var(--muted);
+}
+.g-misses { display: flex; flex-direction: column; gap: 1px; text-align: left; }
+.g-miss {
+  display: flex; gap: 14px; align-items: baseline; padding: 9px 12px;
+  border-bottom: 1px solid var(--border);
+}
+.g-miss:last-child { border-bottom: none; }
+.g-miss-q { flex: 1; color: var(--muted); font-size: .92rem; min-width: 0; }
+.g-miss-a { font-weight: 700; }
+.g-over-note { color: var(--muted); font-size: .82rem; margin: 10px 0 0; }
+.g-back {
+  display: block; margin: 26px auto 0; border: none; background: none; color: var(--muted);
+  font-size: .9rem; text-decoration: underline; text-underline-offset: 3px; cursor: pointer;
+}
+.g-back:hover { color: var(--accent); }
+
+/* ---- the rating -------------------------------------------------------------
+   Above everything on the games page, because it is the only number here that
+   every single round moves — a personal best is silent unless you beat it. */
+.g-rating-bar {
+  display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  margin: 0 0 22px; padding: 12px 16px;
+  background: var(--panel-2); border: 1px solid var(--border); border-radius: 10px;
+}
+.g-rating-bar b { font-size: 1.6rem; font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.g-rating-bar span { color: var(--muted); font-size: .85rem; }
+
+/* and on the result, where the round that just moved it is still on screen */
+.g-rating {
+  display: flex; align-items: baseline; justify-content: center; gap: 10px;
+  margin: 14px 0 2px;
+}
+.g-rating b { font-size: 1.5rem; font-weight: 750; font-variant-numeric: tabular-nums; }
+.g-rating-d { font-size: .95rem; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
+.g-rating.up .g-rating-d { color: var(--good); }
+.g-rating.down .g-rating-d { color: var(--bad); }
+
+/* ---- reduced motion ------------------------------------------------------
+ * Every transition and keyframe in here is feedback, not decoration: the
+ * score ticking up, a combo landing, the record banner. Somebody who has
+ * asked the OS for less movement still needs the feedback, so these are
+ * shortened to near-instant rather than removed. */
+@media (prefers-reduced-motion: reduce) {
+  .g-page *, .g-round *, .g-over * {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---- the ghost -----------------------------------------------------------
+   The PB slot becomes a live gap once there is a record round to race: how
+   far ahead or behind you are RIGHT NOW. Green and red are already "right"
+   and "wrong" everywhere in a round, so the ghost borrows the good colour
+   only for ahead and stays deliberately quiet when behind — being behind is
+   the normal state for most of a round and should not read as a mistake. */
+.g-pb[data-race] { font-variant-numeric:tabular-nums; font-weight:700; }
+.g-pb[data-race="ahead"]  { color:var(--good); }
+.g-pb[data-race="behind"] { color:var(--muted); }
+
+/* ---- clearing the notch --------------------------------------------------
+   The app has an .app-header and css/styles.css already pads it by
+   env(safe-area-inset-top). This build deleted that header — the board IS the
+   screen — so nothing was applying the inset, and installed to a home screen
+   with `apple-mobile-web-app-status-bar-style: black-translucent` the page
+   draws UNDER the status bar. The level chip and the round's ✕ sat beneath the
+   clock and the battery.
+
+   max() rather than a fixed offset: a flat "few millimetres" would clear the
+   notch on the phones that have one and leave a dead band on every device
+   that does not, including the desktop this is also opened on. The inset
+   reports 0 where there is nothing to clear, and the floor keeps the ordinary
+   case unchanged. */
+/* ---- the board ---------------------------------------------------------- */
+.arc {
+  max-width:560px; margin:0 auto; padding:18px 16px 40px;
+  padding-top: max(28px, calc(env(safe-area-inset-top) + 18px));
+}
+
+.arc-top {
+  display:flex; align-items:baseline; justify-content:space-between;
+  margin-bottom:18px;
+}
+.arc-brand {
+  font-size:1.05rem; font-weight:800; letter-spacing:.24em;
+  text-transform:uppercase; color:var(--text);
+}
+.arc-streak {
+  font-size:.82rem; font-weight:700; color:var(--gold);
+  font-variant-numeric:tabular-nums; letter-spacing:.02em;
+}
+
+/* ---- the shelf ----------------------------------------------------------
+   Two columns, because six tiles in one column is a list and a list is
+   something you read rather than something you pick from. */
+.arc-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+
+.arc-tile {
+  position:relative; display:flex; flex-direction:column; gap:2px;
+  text-align:left; cursor:pointer; font:inherit; color:inherit;
+  background:var(--panel); border:1px solid var(--border);
+  border-radius:var(--radius); padding:15px 14px 13px; overflow:hidden;
+  transition:transform .08s ease, border-color .12s ease;
+}
+/* The game's hue, as a bar down its left edge — enough to make the shelf read
+   as six different things without turning each tile into a coloured slab. */
+.arc-tile::before { content:''; position:absolute; inset:0 auto 0 0; width:4px; background:var(--g); }
+.arc-tile:hover { border-color:var(--g); }
+.arc-tile:active { transform:translateY(1px); }
+.arc-tile:focus-visible { outline:2px solid var(--g); outline-offset:2px; }
+.arc-tile[disabled] { opacity:.42; cursor:default; }
+.arc-tile[disabled]:hover { border-color:var(--border); }
+
+.arc-ico { font-size:1.4rem; line-height:1; margin-bottom:6px; }
+.arc-name { font-size:1.02rem; font-weight:700; letter-spacing:-.01em; }
+.arc-rule { font-size:.74rem; color:var(--muted); line-height:1.35; min-height:2.1em; }
+
+/* The personal best is the loudest thing on the tile, because it is the whole
+   reason anybody taps it. */
+.arc-pb {
+  margin-top:9px; font-size:1.5rem; font-weight:800; line-height:1;
+  font-variant-numeric:tabular-nums; letter-spacing:-.02em; color:var(--g);
+}
+.arc-pb.none { font-size:.82rem; font-weight:600; color:var(--muted); letter-spacing:0; }
+.arc-pb-k {
+  display:block; font-size:.62rem; font-weight:700; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--muted); margin-top:4px;
+}
+.arc-spark { display:block; margin-top:9px; width:100%; height:20px; }
+
+.arc-data {
+  position:absolute; top:10px; right:10px; width:26px; height:26px;
+  border-radius:8px; border:1px solid var(--border); background:transparent;
+  color:var(--muted); font-size:.8rem; line-height:1; cursor:pointer; padding:0;
+}
+.arc-data:hover { color:var(--text); border-color:var(--g); }
+
+.arc-foot { margin-top:26px; font-size:.75rem; color:var(--muted); line-height:1.5; }
+.arc-foot a { color:var(--accent); }
+
+/* ---- the numbers panel --------------------------------------------------- */
+.arc-stats {
+  max-width:560px; margin:0 auto; padding:18px 16px 40px;
+  padding-top: max(28px, calc(env(safe-area-inset-top) + 18px));
+}
+.arc-stats-top { display:flex; align-items:center; gap:12px; margin-bottom:4px; }
+.arc-stats-top h2 { margin:0; font-size:1.3rem; font-weight:800; letter-spacing:-.01em; }
+.arc-back {
+  background:transparent; border:1px solid var(--border); color:var(--muted);
+  border-radius:9px; padding:5px 11px; cursor:pointer; font:inherit; font-size:.82rem;
+}
+.arc-back:hover { color:var(--text); }
+.arc-sub { color:var(--muted); font-size:.84rem; margin:0 0 18px; }
+
+.arc-figs { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--border);
+  border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; }
+.arc-fig { background:var(--panel); padding:14px 16px; }
+.arc-fig-k {
+  font-size:.64rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--muted); margin-bottom:6px;
+}
+.arc-fig-v { font-size:1.45rem; font-weight:800; font-variant-numeric:tabular-nums; line-height:1.05; }
+.arc-fig-v.dim { font-size:.9rem; font-weight:600; color:var(--muted); }
+.arc-fig-n { font-size:.72rem; color:var(--muted); margin-top:5px; line-height:1.4; }
+.arc-fig.gold .arc-fig-v { color:var(--gold); }
+
+.arc-chart { margin-top:20px; background:var(--panel); border:1px solid var(--border);
+  border-radius:var(--radius); padding:16px; }
+.arc-chart h3 {
+  margin:0 0 12px; font-size:.64rem; font-weight:700; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--muted);
+}
+.arc-chart svg { display:block; width:100%; height:110px; overflow:visible; }
+
+.arc-empty { color:var(--muted); font-size:.88rem; line-height:1.55; }
+
+@media (max-width:380px) { .arc-grid { grid-template-columns:1fr; } }
+@media (prefers-reduced-motion:reduce) { .arc-tile, .arc-daily { transition:none; } }
+
+
+.arc-picks { display:flex; flex-direction:column; gap:1px;
+  background:var(--border); border:1px solid var(--border);
+  border-radius:var(--radius); overflow:hidden; }
+.arc-pick {
+  background:var(--panel); border:0; text-align:left; cursor:pointer;
+  font:inherit; color:inherit; padding:13px 16px;
+  display:flex; flex-direction:column; gap:3px;
+}
+.arc-pick b { font-weight:600; }
+.arc-pick span { font-size:.76rem; color:var(--muted); }
+.arc-pick:hover { background:var(--panel-2); }
+.arc-pick.on { background:var(--panel-2); box-shadow:inset 3px 0 0 var(--accent); }
+.arc-pick.on b { color:var(--accent-2); }
+
+/* The failure surface. A round of this is ninety seconds on a phone with no
+   devtools; whatever went wrong has to be legible on the page itself. */
+.arc-fail {
+  border:1px solid var(--bad); border-left-width:3px; border-radius:var(--radius);
+  background:var(--bad-bg); padding:18px 20px; margin-top:16px;
+}
+.arc-fail b { display:block; font-size:1.05rem; margin-bottom:8px; }
+.arc-fail p { margin:0 0 14px; font-size:.88rem; line-height:1.55; color:var(--text); }
+.arc-fail-build {
+  display:block; margin:-4px 0 14px; font-size:.72rem; color:var(--muted);
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+
+/* The level, in the header: small, but the only way out of A1 in a browser
+   that has never opened the full app. */
+.arc-level {
+  margin-left:12px; background:transparent; border:1px solid var(--border);
+  color:var(--muted); border-radius:8px; padding:3px 9px; cursor:pointer;
+  font:inherit; font-size:.74rem; font-weight:700; letter-spacing:.06em;
+}
+.arc-level:hover { color:var(--text); border-color:var(--accent); }
+
+.arc-group {
+  margin:18px 0 8px; font-size:.62rem; font-weight:700; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--muted);
+}
+
+/* The round takes the whole screen, so its own chrome needs the same
+   clearance — the ✕ is top-right, exactly where the status bar sits. Scoped
+   here rather than in css/games.css because that file is shared with the app,
+   where .app-header has already paid this cost and paying it twice would push
+   every round down by the height of a notch for nothing. */
+.g-shell { padding-top: max(18px, calc(env(safe-area-inset-top) + 16px)); }
+
+/* ---- the 6 Nov shelf: Jugar, the sheet, the tense chips ------------------
+   Jugar is the one big button; it is taller and louder than a tile because it
+   is what most people open the app to do. */
+.arc-jugar {
+  display:block; width:100%; text-align:left; cursor:pointer; position:relative;
+  border:1px solid var(--g); border-radius:var(--radius); background:var(--panel);
+  background:linear-gradient(135deg, color-mix(in srgb, var(--g) 30%, var(--panel)) 0%, var(--panel) 70%);
+  padding:22px 20px 20px; margin-bottom:18px; color:inherit; font:inherit; overflow:hidden;
+}
+.arc-jugar:active { transform:translateY(1px); }
+.arc-jugar-k {
+  display:block; font-size:1.7rem; font-weight:800; letter-spacing:-.01em; color:var(--text);
+}
+.arc-jugar-t { display:block; margin-top:3px; font-size:.95rem; font-weight:600; }
+.arc-jugar-s {
+  display:block; margin-top:8px; font-size:.8rem; color:var(--muted);
+  font-variant-numeric:tabular-nums;
+}
+
+/* the sheet: two big buttons, and under Verbos a wrap of tense chips */
+.arc-modes { display:flex; flex-direction:column; gap:12px; margin-top:22px; }
+.arc-mode {
+  display:flex; flex-direction:column; gap:4px; text-align:left; cursor:pointer;
+  font:inherit; color:inherit; background:var(--panel); border:1px solid var(--border);
+  border-radius:var(--radius); padding:18px 18px; position:relative;
+}
+.arc-mode b { font-size:1.12rem; font-weight:750; }
+.arc-mode span { font-size:.8rem; color:var(--muted); }
+.arc-mode::before { content:''; position:absolute; inset:0 auto 0 0; width:4px; background:var(--g, var(--accent)); border-radius:var(--radius) 0 0 var(--radius); }
+.arc-mode.on { border-color:var(--g, var(--accent)); background:var(--panel-2); }
+.arc-mode:active { transform:translateY(1px); }
+
+.arc-chips { display:flex; flex-wrap:wrap; gap:8px; }
+.arc-chip {
+  border:1px solid var(--border); background:transparent; color:var(--muted);
+  border-radius:999px; padding:8px 13px; font:inherit; font-size:.84rem; cursor:pointer;
+}
+.arc-chip.on { background:var(--gold); border-color:var(--gold); color:var(--ink); font-weight:700; }
+
+/* Palabras: how much of the common Irish is known */
+.arc-progress { margin: 0 0 14px; }
+.arc-progress-all { font-weight: 700; font-size: .95rem; }
+.arc-progress-theme { color: var(--muted); font-size: .84rem; margin-top: 2px; }
+
+/* ---- stage 4: Tu progreso, the weekly check, tense cards ------------------
+   Everything here reads the tokens at the top of the file, so a light theme
+   would reskin it with the rest. Status colours: green dominado, gold casi,
+   red por aprender, muted sin probar. */
+.arc-bar { height:5px; border-radius:99px; background:var(--panel-2); overflow:hidden; margin-top:6px; }
+.arc-bar i { display:block; height:100%; background:var(--gold); border-radius:99px; min-width:0; }
+
+.arc-prog { margin-top:22px; }
+.arc-prog .arc-group { margin-top:0; }
+.arc-prow {
+  display:block; width:100%; text-align:left; font:inherit; color:inherit;
+  background:var(--panel); border:1px solid var(--border); border-radius:12px;
+  padding:11px 14px 12px; margin-bottom:8px;
+}
+button.arc-prow { cursor:pointer; }
+button.arc-prow:active { transform:translateY(1px); }
+.arc-prow-k { font-size:.62rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-right:8px; }
+.arc-prow-v { font-size:.98rem; font-weight:750; font-variant-numeric:tabular-nums; }
+.arc-prow-s { display:block; margin-top:7px; font-size:.74rem; color:var(--muted); }
+.arc-link {
+  background:none; border:0; padding:0; font:inherit; color:var(--accent-2);
+  text-decoration:underline; cursor:pointer;
+}
+
+.arc-tchips { display:flex; flex-wrap:wrap; gap:5px; margin-top:9px; }
+.arc-tchip {
+  display:inline-flex; align-items:center; gap:5px; font:inherit; font-size:.68rem;
+  color:var(--text); background:transparent; border:1px solid var(--border);
+  border-radius:999px; padding:3px 8px 3px 6px; cursor:default;
+}
+button.arc-tchip { cursor:pointer; }
+.arc-tchip em { font-style:normal; color:var(--muted); font-variant-numeric:tabular-nums; }
+.arc-tdot { width:8px; height:8px; border-radius:50%; background:var(--muted); display:inline-block; }
+.arc-tchip[data-s="dominado"] { border-color:var(--good); }
+.arc-tchip[data-s="dominado"] .arc-tdot { background:var(--good); }
+.arc-tchip[data-s="casi"] { border-color:var(--warn); }
+.arc-tchip[data-s="casi"] .arc-tdot { background:var(--warn); }
+.arc-tchip[data-s="aprender"] { border-color:var(--bad); }
+.arc-tchip[data-s="aprender"] .arc-tdot { background:var(--bad); }
+.arc-tchip[data-s="sin"] { color:var(--muted); }
+
+.arc-drow { margin-bottom:10px; }
+.arc-drow-k { font-size:.88rem; font-weight:650; }
+.arc-drow-v { float:right; font-size:.82rem; color:var(--muted); font-variant-numeric:tabular-nums; }
+
+.arc-check {
+  position:relative; border:1px solid var(--border); border-radius:var(--radius);
+  background:linear-gradient(135deg, color-mix(in srgb, var(--warn) 16%, var(--panel)) 0%, var(--panel) 65%);
+  padding:15px 18px 16px; margin-bottom:18px; overflow:hidden;
+}
+.arc-check::after { content:''; position:absolute; inset:0 auto 0 0; width:3px; background:var(--warn); }
+.arc-check-k { display:block; font-size:.62rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--warn); margin-bottom:5px; }
+.arc-check b { display:block; font-size:1.1rem; font-weight:700; line-height:1.25; }
+.arc-check-s { display:block; margin-top:5px; font-size:.8rem; color:var(--muted); }
+.arc-check-row { display:flex; gap:10px; margin-top:13px; flex-wrap:wrap; }
+.arc-btn {
+  font:inherit; font-size:.88rem; font-weight:650; cursor:pointer; color:var(--text);
+  background:transparent; border:1px solid var(--border); border-radius:12px; padding:10px 15px;
+}
+.arc-btn.on { background:var(--gold); border-color:var(--gold); color:var(--ink); }
+.arc-btn:active { transform:translateY(1px); }
+
+.arc-checkrun { --game:var(--gold); }
+.arc-check-pos { font-size:.88rem; color:var(--muted); margin:6px 0 2px; }
+.arc-check-pos b { color:var(--text); }
+.arc-check-q { margin-top:22px; }
+.arc-check-note { min-height:2.6em; margin:14px 0 6px; font-size:.86rem; line-height:1.45; color:var(--muted); }
+.arc-check-next { width:100%; }
+.arc-check-next[hidden] { display:none; }
+.arc-check-lvl { margin-top:18px; }
+.arc-next { width:100%; margin-bottom:12px; }
+
+.arc-lang {
+  margin-left:auto; font:inherit; font-size:.72rem; font-weight:700; letter-spacing:.08em;
+  background:transparent; color:var(--muted); border:1px solid var(--border);
+  border-radius:8px; padding:4px 9px; cursor:pointer;
+}
+.arc-when { margin:0; padding-left:18px; font-size:.92rem; line-height:1.55; }
+.arc-when li { margin-bottom:3px; }
+.arc-how { margin:0; font-size:.92rem; line-height:1.55; }
+.arc-when b, .arc-how b, .arc-ex-es b { font-weight:750; color:var(--accent-2); }
+.arc-ctable { margin:12px 0 0; border:1px solid var(--border); border-radius:12px; background:var(--panel); padding:8px 14px; }
+.arc-ctable-v { font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); padding:3px 0 5px; }
+.arc-ctable-r { display:flex; justify-content:space-between; padding:3px 0; font-size:.95rem; }
+.arc-ctable-r span { color:var(--muted); }
+.arc-ex { margin-bottom:10px; }
+.arc-ex-es { font-size:.98rem; line-height:1.4; }
+.arc-ex-en { font-size:.76rem; color:var(--muted); margin-top:2px; }
+a.arc-mode { text-decoration:none; }
+
+.arc-chipwrap { display:inline-flex; align-items:center; gap:3px; }
+.arc-chipq {
+  width:22px; height:22px; border-radius:50%; font:inherit; font-size:.72rem; font-weight:700;
+  border:1px solid var(--border); background:transparent; color:var(--muted); cursor:pointer; padding:0;
+}
+.arc-chipq:hover { color:var(--text); border-color:var(--accent); }
+
+/* ---- Prueba de palabras ------------------------------------------------- */
+.arc-wtbtn { display:block; width:100%; margin:0 0 8px; padding:12px 14px; border-radius:12px; cursor:pointer;
+  border:1px solid var(--g, var(--border)); background:transparent; color:var(--text); font:inherit; font-weight:700; }
+.arc-wtsub { margin-top:0; }
+.arc-wt-rank { color:var(--muted); font-size:.82rem; margin:6px 0 4px; }
+.arc-wt-prompt { font-size:1.6rem; font-weight:800; margin:6px 0 16px; line-height:1.2; }
+.arc-wt-input { width:100%; box-sizing:border-box; }
+.arc-wt-fb { min-height:2.2em; margin:10px 0; font-size:1.2rem; font-weight:700; }
+.arc-wt-fb.good { color:var(--good, #2a8a3a); }
+.arc-wt-fb.bad { color:var(--bad, #b3382c); }
+.arc-wt-idk { margin-top:6px; }
+.arc-wt-sum { font-size:1.1rem; font-weight:700; }
+
+
+/* ============================================================================
+   Svobodno board: Играть, a row of three, a row of four
+   ========================================================================== */
+.arc-brand { font-size:1.35rem; letter-spacing:.06em; text-transform:none; font-weight:800; }
+.arc-jugar { padding:24px 20px 22px; margin-bottom:16px; }
+.arc-jugar[disabled] { opacity:.5; }
+.arc-jugar-k { font-size:2.1rem; }
+.arc-grid + .arc-grid { margin-top:12px; }
+.arc-grid.arc-row3 { grid-template-columns:repeat(3,1fr); gap:10px; }
+.arc-grid.arc-row4 { grid-template-columns:repeat(4,1fr); gap:8px; }
+.arc-row3 .arc-tile, .arc-row4 .arc-tile { padding:13px 10px 11px 14px; min-height:112px; }
+.arc-row4 .arc-tile { padding:12px 6px 10px 12px; }
+.arc-row3 .arc-name { font-size:1.02rem; }
+.arc-row4 .arc-name { font-size:.84rem; line-height:1.15; }
+.arc-en { font-size:.72rem; color:var(--muted); line-height:1.25; min-height:1.8em; }
+.arc-row4 .arc-en { font-size:.64rem; }
+.arc-row3 .arc-pb { font-size:1.3rem; }
+.arc-row4 .arc-pb { font-size:1.05rem; margin-top:6px; }
+.arc-soon { margin-top:8px; font-size:.9rem; font-weight:700; color:var(--muted); }
+.arc-row4 .arc-pb-k { font-size:.54rem; letter-spacing:.06em; }
+.arc-row4 .arc-data { top:6px; right:5px; width:22px; height:22px; min-height:22px; }
+.arc-data { min-height:26px; }
+@media (max-width:440px) {
+  .arc-grid.arc-row4 { grid-template-columns:1fr 1fr; gap:10px; }
+  .arc-row4 .arc-name { font-size:.95rem; }
+  .arc-row4 .arc-en { font-size:.7rem; }
+}
+.arc-level { min-height:32px; }
+.arc-prog-en { margin:-6px 0 10px; font-size:.78rem; color:var(--muted); }
+.arc-foot { margin-top:22px; }
+
+/* sheet and level pickers keep the 44px tap rule */
+.arc-chip { min-height:40px; }
+.arc-chipq { min-height:30px; width:30px; height:30px; }
+.arc-skip { display:block; margin:18px auto 0; min-height:40px; }
+.arc-place-band { font-size:4rem; font-weight:800; color:var(--gold); line-height:1.1; margin:6px 0 8px; }
+
+/* the cards */
+.arc-irish { font-style:italic; font-weight:650; color:var(--accent-2); }
+.arc-ctable {
+  display:grid; grid-template-columns:repeat(var(--cols, 2), minmax(0, auto)); gap:1px 14px;
+  margin:12px 0 0; padding:10px 14px; overflow-x:auto;
+  border:1px solid var(--border); border-radius:12px; background:var(--panel);
+}
+.arc-ct-h { font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); padding:3px 0 5px; }
+.arc-ct-c { padding:3px 0; font-size:.95rem; }
+b.arc-ct-c { color:var(--muted); font-weight:600; }
+.arc-ex-ga { font-size:1rem; line-height:1.4; font-weight:600; }
+.arc-tip { padding:10px 14px; border-left:3px solid var(--gold); background:var(--panel); border-radius:0 12px 12px 0; }
+.arc-how .arc-irish, .arc-when .arc-irish { color:var(--accent-2); }
+
+@media (prefers-reduced-motion:reduce) { .arc-tile, .arc-jugar, .arc-mode { transition:none; } }
+.arc-pb { color:color-mix(in srgb, var(--g) 72%, #fff); }
+
+
+/* ============================================================================
+ * SVOBODNO: Russian. .ru nodes, stress marks, the tiles, stage 0, the speaker.
+ * ========================================================================== */
+.ru { line-height:1.45; font-size:1.18em; letter-spacing:.005em; }
+.ru.big { font-size:1.7em; }
+.ru.faded { -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; cursor:default; }
+.ru.held { color:var(--gold); }
+.tr { font-size:.78rem; color:var(--muted); letter-spacing:.01em; line-height:1.3; direction:ltr; }
+.tr.block { display:block; text-align:center; }
+.g-opt .tr { margin-top:-4px; }
+.g-input { text-align:center; font-size:1.5rem; }
+
+/* prompts */
+.g-prompt.is-ru { text-align:center; line-height:1.6; }
+.g-prompt.is-ru .ru { font-size:1.35em; }
+.g-prompt.ru-big .ru { font-size:3.4rem; line-height:1.2; color:var(--gold); font-weight:600; }
+.g-prompt.ru-italic .ru { font-style:italic; font-size:2.6rem; color:var(--gold); }
+.g-prompt.big-prompt { text-align:center; }
+.g-bigtext { display:block; font-size:2.6rem; font-weight:700; color:var(--gold); line-height:1.2; }
+.g-prompt.hear { display:flex; flex-direction:column; align-items:center; gap:8px; }
+.g-cue { color:var(--muted); font-size:.9rem; margin-bottom:6px; direction:ltr; }
+.g-opt.has-ru { display:flex; flex-direction:column; align-items:center; justify-content:center; }
+.g-opt.has-ru .ru { font-size:1.3em; }
+.g-opt.big .ru, .g-options.big .g-opt .ru { font-size:2.2em; line-height:1.4; }
+.g-options.big { display:grid; grid-template-columns:1fr 1fr; }
+.g-fb-answer .ru { font-size:1.5em; }
+.g-fb-words { display:inline; }
+.g-fb-note .ru, .arc-how .ru, .arc-when .ru, .arc-ex-en .ru, .arc-check-note .ru, .arc-ct-c .ru, .arc-ct-h .ru { font-size:1.05em; line-height:1.5; }
+
+/* the speaker */
+.spk { background:var(--panel-2); border:1px solid var(--border); border-radius:999px; min-height:36px; min-width:36px; padding:0 8px; margin:0 6px; color:var(--text); font-size:1rem; vertical-align:middle; }
+.spk.big { min-height:72px; min-width:72px; font-size:2rem; border-color:var(--accent); }
+
+/* keyboard guide */
+.g-kbd { position:absolute; inset:auto 12px 12px 12px; z-index:30; background:var(--panel); border:1px solid var(--accent); border-radius:var(--radius); padding:14px; box-shadow:var(--shadow); }
+.g-kbd p { margin:6px 0 10px; color:var(--muted); font-size:.92rem; }
+.g-shell { position:relative; }
+
+/* letter tiles (stage 0 build) */
+.g-tilerow { display:flex; flex-wrap:wrap; gap:6px; justify-content:flex-start; min-height:76px; padding:10px; margin:10px 0; background:var(--panel); border:2px dashed var(--border); border-radius:var(--radius); align-items:center; }
+.g-tilerow.right { border-color:var(--good); }
+.g-tilerow.wrong { border-color:var(--bad); }
+.g-slot { min-width:44px; text-align:center; background:var(--panel-2); border-radius:10px; padding:0 8px; }
+.g-tilebank { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
+.g-tile { min-width:56px; min-height:60px; background:var(--panel-2); color:var(--text); border:1px solid var(--border); border-radius:12px; padding:0 8px; }
+.g-tile .ru { font-size:1.8em; line-height:1.4; }
+.g-tile.used { opacity:.25; }
+.g-tile.back { color:var(--bad); font-size:1.3rem; }
+
+/* the board */
+.arc-name.ru { font-size:1.3rem; line-height:1.4; display:block; font-weight:650; }
+.arc-tr { display:block; font-size:.8rem; color:var(--text); font-weight:650; }
+.arc-row4 .arc-name.ru { font-size:1.02rem; }
+.arc-row4 .arc-tr { font-size:.7rem; }
+.arc-small { width:100%; display:flex; flex-direction:row; align-items:center; justify-content:center; gap:10px; min-height:52px; margin-top:10px; }
+.arc-small .arc-en { min-height:0; }
+.arc-jugar-k .ru { font-size:1.9rem; vertical-align:middle; }
+.arc-brand-ru { font-size:1.4rem; color:var(--gold); }
+.arc-gear { background:var(--panel-2); color:var(--text); border:1px solid var(--border); border-radius:999px; min-width:44px; margin-inline-start:8px; }
+.arc-title-ru { margin-inline-start:auto; color:var(--gold); }
+.arc-ex-ru { text-align:left; }
+.arc-ex-en { color:var(--muted); }
+
+/* stage 0 */
+.arc-first { text-align:center; padding-top:40px; }
+.arc-first-brand .ru { font-size:3rem; color:var(--gold); display:block; font-weight:600; }
+.hr-title { text-align:center; margin-bottom:6px; }
+.hr-letter { background:var(--panel); border:1px solid var(--border); border-radius:var(--radius); padding:12px; margin:10px 0; }
+.hr-letter-head { display:flex; align-items:center; gap:14px; }
+.hr-big { font-size:3.2rem !important; color:var(--gold); line-height:1.2; }
+.hr-meta { flex:1; }
+.hr-say { color:var(--muted); font-size:.92rem; margin:8px 0; }
+.hr-word { display:flex; align-items:center; gap:12px; padding:6px 10px; background:var(--panel); border:1px solid var(--border); border-radius:12px; margin:6px 0; }
+.hr-wmeta { display:flex; flex-direction:column; flex:1; }
+.hr-wen { font-size:.9rem; }
+.hr-start { margin-top:14px; }
+.hr-result { display:flex; flex-direction:column; gap:10px; align-items:center; margin:8px 0; }
+.arc-pick:disabled { opacity:.45; }
+
+/* tick the phrases you know */
+.arc-known-search { margin:0 0 12px; }
+.arc-known-head { display:flex; align-items:center; justify-content:space-between; gap:10px; margin:18px 0 4px; }
+.arc-known-head h3 { margin:0; font-size:1rem; }
+.arc-known-all { display:flex; align-items:center; gap:6px; font-size:.85rem; color:var(--muted); cursor:pointer; }
+.arc-known-row { display:flex; align-items:flex-start; gap:10px; padding:9px 2px; border-bottom:1px solid var(--border); cursor:pointer; }
+.arc-known-row input, .arc-known-all input { width:20px; height:20px; flex:none; margin:2px 0 0; }
+.arc-known-txt { display:flex; flex-direction:column; gap:2px; min-width:0; }
+.arc-known-en { font-weight:600; }
+.arc-known-tx { color:var(--muted); }
+.arc-known-row[hidden], .arc-known-group[hidden] { display:none; }
+
+/* ---- Speak: the second strand of stage 0 (js/ar-speak.js) -------------------- */
+.sp-strand { display:flex; align-items:baseline; gap:10px; margin:22px 0 10px; padding-bottom:6px; border-bottom:1px solid var(--border); }
+.sp-strand b { font-size:1.05rem; font-weight:800; }
+.sp-strand .ru { font-size:1.1em; color:var(--gold); }
+.sp-strand .tr { margin-left:auto; }
+.arc-first .sp-strand { text-align:left; }
+.sp-modes { margin-top:8px; text-align:left; }
+.arc-speak .arc-picks { margin-bottom:10px; }
+.sp-cards { display:flex; flex-direction:column; gap:10px; }
+.sp-card { position:relative; background:var(--panel); border:1px solid var(--border); border-radius:var(--radius); padding:14px 56px 14px 16px; text-align:left; }
+.sp-card .spk { position:absolute; top:10px; right:6px; }
+.sp-ru.ru { display:block; font-size:.98em; line-height:1.4; color:var(--muted); text-align:left; }
+.sp-tr { font-size:1.3rem; font-weight:750; line-height:1.3; margin:2px 0; }
+.sp-en { font-size:.86rem; color:var(--muted); }
+.sp-note { font-size:.78rem; color:var(--muted); line-height:1.5; margin:8px 0 0; }
+.g-opt.has-sp { display:flex; flex-direction:column; align-items:flex-start; gap:1px; }
+.g-opt.has-sp .sp-ru.ru { font-size:.92em; line-height:1.4; }
+.g-opt.has-sp .sp-tr { font-size:1.12rem; margin:0; }
+.g-say { display:flex; flex-direction:column; align-items:stretch; gap:14px; margin-top:16px; }
+.g-say-card { background:var(--panel); border:1px solid var(--border); border-radius:var(--radius); padding:14px 16px; text-align:center; }
+.g-say-card .sp-ru.ru { text-align:center; }
+.g-say-tr { font-size:1.35rem; font-weight:750; }
+.g-say-en { font-size:.86rem; color:var(--muted); margin-top:4px; }
+.g-say-marks { display:flex; gap:10px; justify-content:center; }
+.arc-grid.arc-row2 { margin-top:10px; gap:10px; }
+.arc-row2 .arc-small { margin-top:0; }
+
+/* stress marks: the combining acute sits on the vowel in the page's own sans font; keep it from clipping */
+.ru, .sp-ru, .g-bigtext { font-variant-ligatures:none; }
+.ru.faded { text-decoration:none; }
+.arc-known-tx .ru { font-size:1.05em; color:var(--text); }
+.arc-row3 .arc-pb.none, .arc-row4 .arc-pb.none { font-size:.78rem; }
+.arc-small { flex-direction:column; gap:0; padding:8px 6px; min-height:64px; overflow:hidden; text-align:center; }
+.arc-small .arc-name.ru { font-size:1.1rem; }
+.arc-small .arc-tr, .arc-small .arc-en { font-size:.7rem; }

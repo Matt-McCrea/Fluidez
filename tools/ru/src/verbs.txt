@@ -1,0 +1,120 @@
+# Svobodno verbs: one line per verb or aspect pair (imperfective first), "|" then the English.
+# Pairs are taught together; a lone verb has no common partner. Forms come from OpenRussian.
+быть | be
+делать сделать | do, make
+говорить сказать | say, speak
+писать написать | write
+читать прочитать | read
+смотреть посмотреть | watch, look
+видеть увидеть | see
+слышать услышать | hear
+слушать послушать | listen
+думать подумать | think
+знать | know
+понимать понять | understand
+давать дать | give
+брать взять | take
+покупать купить | buy
+продавать продать | sell
+платить заплатить | pay
+начинать начать | begin
+заканчивать закончить | finish
+отвечать ответить | answer
+спрашивать спросить | ask
+решать решить | decide
+получать получить | get, receive
+помогать помочь | help
+звонить позвонить | call, phone
+есть съесть | eat
+пить выпить | drink
+готовить приготовить | cook
+учить выучить | learn (by heart)
+учиться научиться | study, learn to
+открывать открыть | open
+закрывать закрыть | close
+вставать встать | get up
+ложиться лечь | lie down
+садиться сесть | sit down
+просыпаться проснуться | wake up
+возвращаться вернуться | come back
+забывать забыть | forget
+вспоминать вспомнить | remember
+показывать показать | show
+рассказывать рассказать | tell
+объяснять объяснить | explain
+ждать подождать | wait
+искать | look for
+находить найти | find
+терять потерять | lose
+встречать встретить | meet
+приглашать пригласить | invite
+мыть помыть | wash
+одеваться одеться | get dressed
+ставить поставить | put (standing)
+класть положить | put (lying)
+переводить перевести | translate
+завтракать позавтракать | have breakfast
+обедать пообедать | have lunch
+ужинать поужинать | have dinner
+работать | work
+жить | live
+любить | love
+хотеть захотеть | want
+мочь смочь | can, be able
+уметь | know how to
+играть сыграть | play
+гулять погулять | go for a walk
+отдыхать отдохнуть | rest
+становиться стать | become
+болеть заболеть | be ill, fall ill
+бояться | be afraid
+нравиться понравиться | please (be liked)
+улыбаться улыбнуться | smile
+петь спеть | sing
+рисовать нарисовать | draw
+строить построить | build
+верить поверить | believe
+советовать посоветовать | advise
+спать | sleep
+стоить | cost
+плакать заплакать | cry, burst into tears
+смеяться засмеяться | laugh, burst out laughing
+танцевать | dance
+курить | smoke
+мечтать | dream
+сидеть | sit
+стоять | stand
+лежать | lie
+жениться | marry (of a man)
+пробовать попробовать | try
+кричать крикнуть | shout
+бросать бросить | throw, quit
+надеяться | hope
+опаздывать опоздать | be late
+бегать | run (around)
+бежать | run (one way)
+ходить | go on foot (around)
+идти | go on foot (one way)
+ездить | go by transport (around)
+ехать | go by transport (one way)
+летать | fly (around)
+лететь | fly (one way)
+плавать | swim (around)
+плыть | swim (one way)
+носить | carry (around)
+нести | carry (one way)
+водить | lead, drive (around)
+вести | lead (one way)
+возить | take by transport (around)
+везти | take by transport (one way)
+приходить прийти | come, arrive (on foot)
+уходить уйти | leave (on foot)
+входить войти | go in
+выходить выйти | go out
+пойти | set off (on foot)
+приезжать приехать | come, arrive (by transport)
+уезжать уехать | leave (by transport)
+поехать | set off (by transport)
+переходить перейти | cross
+заходить зайти | drop in
+приносить принести | bring

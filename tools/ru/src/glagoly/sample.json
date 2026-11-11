@@ -1,0 +1,34 @@
+[
+ {
+  "q": "Не меша'й, я ___ кни'гу.",
+  "v": "читать",
+  "t": "pres",
+  "p": "ya",
+  "e": "Don't disturb me, I'm reading a book.",
+  "b": "A1"
+ },
+ {
+  "q": "Вчера' она' ___ письмо'.",
+  "v": "написать",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday she wrote a letter.",
+  "b": "A1"
+ },
+ {
+  "q": "За'втра мы ___ в кино'.",
+  "v": "пойти",
+  "t": "fut",
+  "p": "my",
+  "e": "Tomorrow we'll go to the cinema.",
+  "b": "A1"
+ },
+ {
+  "q": "Ребя'та, ___ ме'дленнее, я не понима'ю.",
+  "v": "говорить",
+  "t": "imp",
+  "p": "vy",
+  "e": "Guys, speak more slowly, I don't understand.",
+  "b": "A1"
+ }
+]

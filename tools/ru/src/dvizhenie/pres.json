@@ -1,0 +1,857 @@
+[
+ {
+  "q": "Смотри', Ива'н ___ по у'лице пешко'м.",
+  "v": "идти",
+  "t": "pres",
+  "p": "on",
+  "e": "Look, Ivan is walking along the street.",
+  "b": "A1",
+  "w": "One direction, on foot, now: идти."
+ },
+ {
+  "q": "Ка'ждый день Ива'н ___ на рабо'ту пешко'м.",
+  "v": "ходить",
+  "t": "pres",
+  "p": "on",
+  "e": "Every day Ivan walks to work.",
+  "b": "A1",
+  "w": "A regular trip there and back: ходить."
+ },
+ {
+  "q": "Сейча'с мы ___ в по'езде в Петербу'рг.",
+  "v": "ехать",
+  "t": "pres",
+  "p": "my",
+  "e": "We're on the train to Petersburg now.",
+  "b": "A1",
+  "w": "One direction, by transport, now: ехать."
+ },
+ {
+  "q": "Ка'ждое ле'то мы ___ на мо'ре на маши'не.",
+  "v": "ездить",
+  "t": "pres",
+  "p": "my",
+  "e": "Every summer we drive to the seaside.",
+  "b": "A1",
+  "w": "Regular trips by transport: ездить."
+ },
+ {
+  "q": "Куда' ты ___ пешко'м так по'здно?",
+  "v": "идти",
+  "t": "pres",
+  "p": "ty",
+  "e": "Where are you walking to so late?",
+  "b": "A1",
+  "w": "One trip, now, on foot: идти."
+ },
+ {
+  "q": "Куда' вы ___ на э'том авто'бусе?",
+  "v": "ехать",
+  "t": "pres",
+  "p": "vy",
+  "e": "Where are you going on this bus?",
+  "b": "A1",
+  "w": "One trip, now, by bus: ехать."
+ },
+ {
+  "q": "Я ___ в магази'н за угло'м, что-нибу'дь купи'ть?",
+  "v": "идти",
+  "t": "pres",
+  "p": "ya",
+  "e": "I'm going to the corner shop, shall I buy anything?",
+  "b": "A1",
+  "w": "On my way now, on foot (the shop is round the corner): идти."
+ },
+ {
+  "q": "Ты ча'сто ___ в бассе'йн ря'дом с до'мом?",
+  "v": "ходить",
+  "t": "pres",
+  "p": "ty",
+  "e": "Do you often go to the pool near your house?",
+  "b": "A1",
+  "w": "ча'сто: round trips, ходить."
+ },
+ {
+  "q": "Мы ча'сто ___ в го'сти к ба'бушке пешко'м.",
+  "v": "ходить",
+  "t": "pres",
+  "p": "my",
+  "e": "We often walk over to Grandma's.",
+  "b": "A2",
+  "w": "Repeated round trips on foot: ходить."
+ },
+ {
+  "q": "Мой сын уже' ___, ему' год.",
+  "v": "ходить",
+  "t": "pres",
+  "p": "on",
+  "e": "My son already walks, he's one.",
+  "b": "A2",
+  "w": "The ability to walk: ходить."
+ },
+ {
+  "q": "Ба'бушка пло'хо ___, у неё боли'т нога'.",
+  "v": "ходить",
+  "t": "pres",
+  "p": "ona",
+  "e": "Grandma walks badly, her leg hurts.",
+  "b": "A2",
+  "w": "Walking in general: ходить."
+ },
+ {
+  "q": "Па'па ___ на рабо'ту на метро' ка'ждый день.",
+  "v": "ездить",
+  "t": "pres",
+  "p": "on",
+  "e": "Dad goes to work by metro every day.",
+  "b": "A1",
+  "w": "Every day, by transport: ездить."
+ },
+ {
+  "q": "Мы сейча'с ___ в такси' на вокза'л.",
+  "v": "ехать",
+  "t": "pres",
+  "p": "my",
+  "e": "We're in a taxi on our way to the station.",
+  "b": "A1",
+  "w": "One trip, now, by car: ехать."
+ },
+ {
+  "q": "Я ча'сто ___ в Москву' по рабо'те.",
+  "v": "ездить",
+  "t": "pres",
+  "p": "ya",
+  "e": "I often go to Moscow for work.",
+  "b": "A2",
+  "w": "Repeated trips to another city: ездить."
+ },
+ {
+  "q": "О'льга ___ на рабо'ту на велосипе'де ка'ждый день.",
+  "v": "ездить",
+  "t": "pres",
+  "p": "ona",
+  "e": "Olga cycles to work every day.",
+  "b": "A2",
+  "w": "A habit, on a bike: ездить."
+ },
+ {
+  "q": "Тепе'рь мы ___ на да'чу ка'ждые выходны'е.",
+  "v": "ездить",
+  "t": "pres",
+  "p": "my",
+  "e": "Now we go to the dacha every weekend.",
+  "b": "A2",
+  "w": "Regular trips out of town: ездить."
+ },
+ {
+  "q": "Смотри', де'ти ___ в шко'лу пешко'м.",
+  "v": "идти",
+  "t": "pres",
+  "p": "oni",
+  "e": "Look, the children are walking to school.",
+  "b": "A1",
+  "w": "Now, on foot, one direction: идти."
+ },
+ {
+  "q": "Де'ти ка'ждый день ___ в шко'лу пешко'м.",
+  "v": "ходить",
+  "t": "pres",
+  "p": "oni",
+  "e": "The children walk to school every day.",
+  "b": "A1",
+  "w": "Every day: ходить."
+ },
+ {
+  "q": "Смотри', самолёт ___ в Москву'.",
+  "v": "лететь",
+  "t": "pres",
+  "p": "on",
+  "e": "Look, the plane is flying to Moscow.",
+  "b": "A2",
+  "w": "One direction, now: лететь."
+ },
+ {
+  "q": "Сейча'с мы ___ над мо'рем.",
+  "v": "лететь",
+  "t": "pres",
+  "p": "my",
+  "e": "We're flying over the sea now.",
+  "b": "A2",
+  "w": "One flight, now: лететь."
+ },
+ {
+  "q": "Мой брат пило'т, он ча'сто ___ в Аме'рику.",
+  "v": "летать",
+  "t": "pres",
+  "p": "on",
+  "e": "My brother is a pilot, he often flies to America.",
+  "b": "A2",
+  "w": "ча'сто: летать."
+ },
+ {
+  "q": "Вы ча'сто ___ в Ло'ндон?",
+  "v": "летать",
+  "t": "pres",
+  "p": "vy",
+  "e": "Do you often fly to London?",
+  "b": "A2",
+  "w": "ча'сто: летать."
+ },
+ {
+  "q": "Смотри', соба'ка ___ к нам!",
+  "v": "бежать",
+  "t": "pres",
+  "p": "ona",
+  "e": "Look, the dog is running towards us!",
+  "b": "A1",
+  "w": "One direction, now: бежать."
+ },
+ {
+  "q": "Ка'ждое у'тро я ___ в па'рке.",
+  "v": "бегать",
+  "t": "pres",
+  "p": "ya",
+  "e": "Every morning I go running in the park.",
+  "b": "A1",
+  "w": "A habit, running about: бегать."
+ },
+ {
+  "q": "Куда' ты ___? Мы опа'здываем?",
+  "v": "бежать",
+  "t": "pres",
+  "p": "ty",
+  "e": "Where are you running to? Are we late?",
+  "b": "A2",
+  "w": "One direction, now: бежать."
+ },
+ {
+  "q": "Де'ти ___ во дворе' весь день.",
+  "v": "бегать",
+  "t": "pres",
+  "p": "oni",
+  "e": "The children run around in the yard all day.",
+  "b": "A2",
+  "w": "Running around, no direction: бегать."
+ },
+ {
+  "q": "Смотри', ма'льчик ___ за авто'бусом.",
+  "v": "бежать",
+  "t": "pres",
+  "p": "on",
+  "e": "Look, the boy is running after the bus.",
+  "b": "A2",
+  "w": "One direction, now: бежать."
+ },
+ {
+  "q": "Ты ___ бы'стро, как спортсме'н.",
+  "v": "бегать",
+  "t": "pres",
+  "p": "ty",
+  "e": "You run fast, like an athlete.",
+  "b": "B1",
+  "w": "Running as an ability: бегать."
+ },
+ {
+  "q": "Смотри', ло'дка ___ к бе'регу.",
+  "v": "плыть",
+  "t": "pres",
+  "p": "ona",
+  "e": "Look, the boat is sailing towards the shore.",
+  "b": "A2",
+  "w": "One direction, now: плыть."
+ },
+ {
+  "q": "Я хорошо' ___, я ча'сто в бассе'йне.",
+  "v": "плавать",
+  "t": "pres",
+  "p": "ya",
+  "e": "I swim well, I'm often at the pool.",
+  "b": "A2",
+  "w": "Swimming as an ability: плавать."
+ },
+ {
+  "q": "Смотри', Ива'н ___ к нам по реке'.",
+  "v": "плыть",
+  "t": "pres",
+  "p": "on",
+  "e": "Look, Ivan is swimming towards us down the river.",
+  "b": "A2",
+  "w": "One direction, now: плыть."
+ },
+ {
+  "q": "Ры'бы ___ в аква'риуме.",
+  "v": "плавать",
+  "t": "pres",
+  "p": "oni",
+  "e": "The fish are swimming around in the aquarium.",
+  "b": "A2",
+  "w": "Moving about, no direction: плавать."
+ },
+ {
+  "q": "Ле'том мы ка'ждый день ___ в мо'ре.",
+  "v": "плавать",
+  "t": "pres",
+  "p": "my",
+  "e": "In the summer we swim in the sea every day.",
+  "b": "A2",
+  "w": "A habit: плавать."
+ },
+ {
+  "q": "Смотри', па'па ___ большу'ю су'мку.",
+  "v": "нести",
+  "t": "pres",
+  "p": "on",
+  "e": "Look, Dad is carrying a big bag.",
+  "b": "A2",
+  "w": "Carrying in one direction, now: нести."
+ },
+ {
+  "q": "О'льга всегда' ___ очки'.",
+  "v": "носить",
+  "t": "pres",
+  "p": "ona",
+  "e": "Olga always wears glasses.",
+  "b": "A2",
+  "w": "Wearing is носить."
+ },
+ {
+  "q": "Я ___ ма'ме цветы', у неё день рожде'ния.",
+  "v": "нести",
+  "t": "pres",
+  "p": "ya",
+  "e": "I'm taking flowers to Mum, it's her birthday.",
+  "b": "A2",
+  "w": "On my way now, on foot: нести."
+ },
+ {
+  "q": "Он ка'ждый день ___ на рабо'ту обе'д.",
+  "v": "носить",
+  "t": "pres",
+  "p": "on",
+  "e": "He takes his lunch to work every day.",
+  "b": "B1",
+  "w": "Every day: носить."
+ },
+ {
+  "q": "Ты ___ костю'м на рабо'ту?",
+  "v": "носить",
+  "t": "pres",
+  "p": "ty",
+  "e": "Do you wear a suit to work?",
+  "b": "A2",
+  "w": "Wearing: носить."
+ },
+ {
+  "q": "Почта'льон ___ нам пи'сьма ка'ждое у'тро.",
+  "v": "носить",
+  "t": "pres",
+  "p": "on",
+  "e": "The postman brings us letters every morning.",
+  "b": "B1",
+  "w": "Every morning: носить."
+ },
+ {
+  "q": "Смотри', ма'ма ___ сы'на в шко'лу.",
+  "v": "вести",
+  "t": "pres",
+  "p": "ona",
+  "e": "Look, Mum is taking her son to school.",
+  "b": "A2",
+  "w": "Leading on foot, one direction, now: вести."
+ },
+ {
+  "q": "Ка'ждый день па'па ___ дочь в де'тский сад.",
+  "v": "водить",
+  "t": "pres",
+  "p": "on",
+  "e": "Every day Dad takes his daughter to kindergarten.",
+  "b": "A2",
+  "w": "Every day: водить."
+ },
+ {
+  "q": "Мой брат хорошо' ___ маши'ну.",
+  "v": "водить",
+  "t": "pres",
+  "p": "on",
+  "e": "My brother drives a car well.",
+  "b": "A2",
+  "w": "Driving as a skill: водить."
+ },
+ {
+  "q": "Ты ___ маши'ну? У тебя' есть права'?",
+  "v": "водить",
+  "t": "pres",
+  "p": "ty",
+  "e": "Do you drive? Do you have a licence?",
+  "b": "A2",
+  "w": "Driving in general: водить."
+ },
+ {
+  "q": "Гид ___ тури'стов в музе'й.",
+  "v": "вести",
+  "t": "pres",
+  "p": "on",
+  "e": "The guide is leading the tourists to the museum.",
+  "b": "B1",
+  "w": "One direction, now: вести."
+ },
+ {
+  "q": "Смотри', такси' ___ нас пря'мо к до'му.",
+  "v": "везти",
+  "t": "pres",
+  "p": "ono",
+  "e": "Look, the taxi is taking us right to the house.",
+  "b": "B1",
+  "w": "By transport, one direction, now: везти."
+ },
+ {
+  "q": "Он ка'ждый день ___ дете'й в шко'лу на маши'не.",
+  "v": "возить",
+  "t": "pres",
+  "p": "on",
+  "e": "He drives the children to school every day.",
+  "b": "B1",
+  "w": "Every day: возить."
+ },
+ {
+  "q": "Сейча'с я ___ ба'бушку к врачу' на маши'не.",
+  "v": "везти",
+  "t": "pres",
+  "p": "ya",
+  "e": "I'm driving Grandma to the doctor now.",
+  "b": "B1",
+  "w": "Now, one direction, by car: везти."
+ },
+ {
+  "q": "Э'тот грузови'к ___ хлеб в магази'ны.",
+  "v": "возить",
+  "t": "pres",
+  "p": "on",
+  "e": "This lorry takes bread to the shops.",
+  "b": "B1",
+  "w": "Regular deliveries: возить."
+ },
+ {
+  "q": "Ма'ша обы'чно ___ домо'й пешко'м в шесть.",
+  "v": "приходить",
+  "t": "pres",
+  "p": "ona",
+  "e": "Masha usually walks home at six.",
+  "b": "A2",
+  "w": "обы'чно, on foot: приходить."
+ },
+ {
+  "q": "Обы'чно па'па ___ с рабо'ты пешко'м в семь.",
+  "v": "приходить",
+  "t": "pres",
+  "p": "on",
+  "e": "Dad usually walks home from work at seven.",
+  "b": "A2",
+  "w": "обы'чно, on foot: приходить."
+ },
+ {
+  "q": "Обы'чно мы ___ на рабо'ту пешко'м.",
+  "v": "приходить",
+  "t": "pres",
+  "p": "my",
+  "e": "We usually come to work on foot.",
+  "b": "B1",
+  "w": "A habit: imperfective приходить."
+ },
+ {
+  "q": "Ка'ждое ле'то к нам ___ ба'бушка из Ки'ева.",
+  "v": "приезжать",
+  "t": "pres",
+  "p": "ona",
+  "e": "Every summer Grandma comes to us from Kyiv.",
+  "b": "B1",
+  "w": "Every summer, by transport: приезжать."
+ },
+ {
+  "q": "Обы'чно Ива'н ___ на рабо'ту пешко'м в во'семь.",
+  "v": "уходить",
+  "t": "pres",
+  "p": "on",
+  "e": "Ivan usually walks off to work at eight.",
+  "b": "A2",
+  "w": "обы'чно, on foot: уходить."
+ },
+ {
+  "q": "Ка'ждый ию'ль мы ___ на мо'ре на маши'не.",
+  "v": "уезжать",
+  "t": "pres",
+  "p": "my",
+  "e": "Every July we drive off to the seaside.",
+  "b": "B1",
+  "w": "A yearly departure by car: уезжать."
+ },
+ {
+  "q": "Обы'чно я ___ из до'ма в семь.",
+  "v": "выходить",
+  "t": "pres",
+  "p": "ya",
+  "e": "I usually leave the house at seven.",
+  "b": "A2",
+  "w": "обы'чно: выходить."
+ },
+ {
+  "q": "Смотри', учи'тель ___ в класс.",
+  "v": "входить",
+  "t": "pres",
+  "p": "on",
+  "e": "Look, the teacher is coming into the classroom.",
+  "b": "A2",
+  "w": "Entering, now: входить."
+ },
+ {
+  "q": "Я всегда' ___ у'лицу на зелёный свет.",
+  "v": "переходить",
+  "t": "pres",
+  "p": "ya",
+  "e": "I always cross the street on green.",
+  "b": "A2",
+  "w": "всегда': imperfective."
+ },
+ {
+  "q": "Смотри', ба'бушка ___ у'лицу.",
+  "v": "переходить",
+  "t": "pres",
+  "p": "ona",
+  "e": "Look, Grandma is crossing the street.",
+  "b": "A2",
+  "w": "Crossing now: переходить."
+ },
+ {
+  "q": "По'сле рабо'ты я ча'сто ___ в кафе'.",
+  "v": "заходить",
+  "t": "pres",
+  "p": "ya",
+  "e": "After work I often drop in at a café.",
+  "b": "B1",
+  "w": "ча'сто: заходить."
+ },
+ {
+  "q": "Сосе'дка ча'сто ___ к нам на ча'й.",
+  "v": "заходить",
+  "t": "pres",
+  "p": "ona",
+  "e": "The neighbour often drops in on us for tea.",
+  "b": "B1",
+  "w": "ча'сто: заходить."
+ },
+ {
+  "q": "Он всегда' ___ мне цветы'.",
+  "v": "приносить",
+  "t": "pres",
+  "p": "on",
+  "e": "He always brings me flowers.",
+  "b": "A2",
+  "w": "всегда': приносить."
+ },
+ {
+  "q": "Ты всегда' ___ на рабо'ту торт?",
+  "v": "приносить",
+  "t": "pres",
+  "p": "ty",
+  "e": "Do you always bring cake to work?",
+  "b": "B1",
+  "w": "всегда': приносить."
+ },
+ {
+  "q": "Обы'чно мы ___ на рабо'ту на авто'бусе.",
+  "v": "ездить",
+  "t": "pres",
+  "p": "my",
+  "e": "We usually go to work by bus.",
+  "b": "A1",
+  "w": "A habit by transport: ездить."
+ },
+ {
+  "q": "Ты ___ на рабо'ту на метро' и'ли пешко'м хо'дишь?",
+  "v": "ездить",
+  "t": "pres",
+  "p": "ty",
+  "e": "Do you go to work by metro, or do you walk?",
+  "b": "A2",
+  "w": "A habit by transport: ездить."
+ },
+ {
+  "q": "Вы сейча'с ___ домо'й пешко'м? Э'то далеко'.",
+  "v": "идти",
+  "t": "pres",
+  "p": "vy",
+  "e": "Are you walking home now? It's far.",
+  "b": "A2",
+  "w": "Now, one direction, on foot: идти."
+ },
+ {
+  "q": "Мы ___ домо'й пешко'м, пого'да хоро'шая.",
+  "v": "идти",
+  "t": "pres",
+  "p": "my",
+  "e": "We're walking home, the weather is nice.",
+  "b": "A1",
+  "w": "Now, one direction, on foot: идти."
+ },
+ {
+  "q": "Смотри', снег ___!",
+  "v": "идти",
+  "t": "pres",
+  "p": "on",
+  "e": "Look, it's snowing!",
+  "b": "A1",
+  "w": "Snow and rain \"go\": идёт."
+ },
+ {
+  "q": "Ты зна'ешь, како'й фильм ___ в кино'?",
+  "v": "идти",
+  "t": "pres",
+  "p": "on",
+  "e": "Do you know which film is on at the cinema?",
+  "b": "A2",
+  "w": "A film that is showing \"goes\": идёт."
+ },
+ {
+  "q": "Вре'мя ___ бы'стро.",
+  "v": "идти",
+  "t": "pres",
+  "p": "ono",
+  "e": "Time goes by fast.",
+  "b": "A2",
+  "w": "Time \"goes\": идёт."
+ },
+ {
+  "q": "Сейча'с я ___ в метро' и не могу' говори'ть.",
+  "v": "ехать",
+  "t": "pres",
+  "p": "ya",
+  "e": "I'm on the metro now and can't talk.",
+  "b": "A2",
+  "w": "One trip, now, by transport: ехать."
+ },
+ {
+  "q": "Смотри', О'льга ___ на велосипе'де.",
+  "v": "ехать",
+  "t": "pres",
+  "p": "ona",
+  "e": "Look, Olga is riding a bike.",
+  "b": "A1",
+  "w": "One direction, now: ехать."
+ },
+ {
+  "q": "Куда' они' ___ на маши'не?",
+  "v": "ехать",
+  "t": "pres",
+  "p": "oni",
+  "e": "Where are they driving to?",
+  "b": "A1",
+  "w": "One trip, now, by car: ехать."
+ },
+ {
+  "q": "Мы ___ ми'мо Кремля', смотри' в окно'.",
+  "v": "ехать",
+  "t": "pres",
+  "p": "my",
+  "e": "We're driving past the Kremlin, look out of the window.",
+  "b": "A2",
+  "w": "One direction, now: ехать."
+ },
+ {
+  "q": "Мы ___ по го'роду пешко'м весь день.",
+  "v": "ходить",
+  "t": "pres",
+  "p": "my",
+  "e": "We walk around town all day.",
+  "b": "A2",
+  "w": "Walking around: ходить."
+ },
+ {
+  "q": "Я ___ по ко'мнате и ду'маю.",
+  "v": "ходить",
+  "t": "pres",
+  "p": "ya",
+  "e": "I'm pacing around the room, thinking.",
+  "b": "B1",
+  "w": "Walking about, no direction: ходить."
+ },
+ {
+  "q": "Па'па ___ по ко'мнате и говори'т по телефо'ну.",
+  "v": "ходить",
+  "t": "pres",
+  "p": "on",
+  "e": "Dad is pacing around the room, talking on the phone.",
+  "b": "B1",
+  "w": "Walking about: ходить."
+ },
+ {
+  "q": "Я ___ к врачу' пешко'м, э'то бли'зко.",
+  "v": "идти",
+  "t": "pres",
+  "p": "ya",
+  "e": "I'm walking to the doctor's, it's close.",
+  "b": "A1",
+  "w": "Now, on foot: идти."
+ },
+ {
+  "q": "Де'вочка ___ соба'ку в парк.",
+  "v": "вести",
+  "t": "pres",
+  "p": "ona",
+  "e": "The girl is taking the dog to the park.",
+  "b": "B1",
+  "w": "Now, one direction: вести."
+ },
+ {
+  "q": "Э'та же'нщина ___ свою' соба'ку гуля'ть ка'ждый день.",
+  "v": "водить",
+  "t": "pres",
+  "p": "ona",
+  "e": "This woman walks her dog every day.",
+  "b": "B1",
+  "w": "Every day: водить."
+ },
+ {
+  "q": "Мы сейча'с ___ проду'кты на да'чу.",
+  "v": "везти",
+  "t": "pres",
+  "p": "my",
+  "e": "We're taking food to the dacha now.",
+  "b": "B1",
+  "w": "Now, one direction, by car: везти."
+ },
+ {
+  "q": "Па'па ча'сто ___ нас на мо'ре.",
+  "v": "возить",
+  "t": "pres",
+  "p": "on",
+  "e": "Dad often takes us to the seaside.",
+  "b": "B1",
+  "w": "ча'сто, by car: возить."
+ },
+ {
+  "q": "Пти'цы всё вре'мя ___ над на'шим до'мом.",
+  "v": "летать",
+  "t": "pres",
+  "p": "oni",
+  "e": "Birds are always flying around over our house.",
+  "b": "A2",
+  "w": "Flying about: летать."
+ },
+ {
+  "q": "Смотри', ба'бушка ___ из магази'на с су'мками.",
+  "v": "идти",
+  "t": "pres",
+  "p": "ona",
+  "e": "Look, Grandma is walking back from the shop with bags.",
+  "b": "A2",
+  "w": "One direction, now, on foot: идёт."
+ },
+ {
+  "q": "Сейча'с мы ___ на да'чу на электри'чке.",
+  "v": "ехать",
+  "t": "pres",
+  "p": "my",
+  "e": "We're on the local train to the dacha now.",
+  "b": "A2",
+  "w": "One trip, now, by train: е'дем."
+ },
+ {
+  "q": "Ка'ждый ве'чер мы ___ в парк с соба'кой.",
+  "v": "ходить",
+  "t": "pres",
+  "p": "my",
+  "e": "Every evening we walk to the park with the dog.",
+  "b": "A1",
+  "w": "A regular round trip: хо'дим."
+ },
+ {
+  "q": "Ма'ма обы'чно ___ на ры'нок по суббо'там.",
+  "v": "ходить",
+  "t": "pres",
+  "p": "ona",
+  "e": "Mum usually goes to the market on Saturdays.",
+  "b": "A2",
+  "w": "A habit: хо'дит."
+ },
+ {
+  "q": "Ско'лько раз в неде'лю ты ___ пешко'м в спортза'л?",
+  "v": "ходить",
+  "t": "pres",
+  "p": "ty",
+  "e": "How many times a week do you go to the gym on foot?",
+  "b": "A2",
+  "w": "Repeated trips: хо'дишь."
+ },
+ {
+  "q": "Мой дя'дя ча'сто ___ в командиро'вки.",
+  "v": "ездить",
+  "t": "pres",
+  "p": "on",
+  "e": "My uncle often goes on business trips.",
+  "b": "B1",
+  "w": "ча'сто, by transport: е'здит."
+ },
+ {
+  "q": "Мы ___ в Москву' на по'езде, ско'ро бу'дем.",
+  "v": "ехать",
+  "t": "pres",
+  "p": "my",
+  "e": "We're on the train to Moscow, we'll be there soon.",
+  "b": "A2",
+  "w": "One trip, now: е'дем."
+ },
+ {
+  "q": "Смотри', де'ти ___ к мо'рю!",
+  "v": "бежать",
+  "t": "pres",
+  "p": "oni",
+  "e": "Look, the children are running to the sea!",
+  "b": "A1",
+  "w": "One direction, now: бегу'т."
+ },
+ {
+  "q": "Мы ка'ждое у'тро ___ в па'рке.",
+  "v": "бегать",
+  "t": "pres",
+  "p": "my",
+  "e": "We go running in the park every morning.",
+  "b": "A2",
+  "w": "A habit: бе'гаем."
+ },
+ {
+  "q": "Смотри', ма'ма ___ ребёнка на рука'х.",
+  "v": "нести",
+  "t": "pres",
+  "p": "ona",
+  "e": "Look, the mother is carrying the baby in her arms.",
+  "b": "B1",
+  "w": "Carrying now, one way: несёт."
+ },
+ {
+  "q": "Ле'том О'льга всегда' ___ шля'пу.",
+  "v": "носить",
+  "t": "pres",
+  "p": "ona",
+  "e": "In the summer Olga always wears a hat.",
+  "b": "A2",
+  "w": "Wearing: но'сит."
+ },
+ {
+  "q": "Мы ___ на мо'ре ка'ждое ле'то на по'езде.",
+  "v": "ездить",
+  "t": "pres",
+  "p": "my",
+  "e": "We go to the seaside by train every summer.",
+  "b": "A2",
+  "w": "Regular trips: е'здим."
+ },
+ {
+  "q": "Смотри', учи'тель ___ дете'й в музе'й.",
+  "v": "вести",
+  "t": "pres",
+  "p": "on",
+  "e": "Look, the teacher is taking the children to the museum.",
+  "b": "B1",
+  "w": "Leading now, one way: ведёт."
+ }
+]

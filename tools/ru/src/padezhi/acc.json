@@ -1,0 +1,662 @@
+[
+ {
+  "q": "Я ви'жу ___ в окне'.",
+  "n": "мама",
+  "c": "acc",
+  "e": "I can see Mum in the window.",
+  "b": "A1",
+  "w": "ви'деть + accusative: ма'му."
+ },
+ {
+  "q": "Ты зна'ешь э'ту ___?",
+  "n": "девушка",
+  "c": "acc",
+  "e": "Do you know this girl?",
+  "b": "A1",
+  "w": "знать + accusative: де'вушку."
+ },
+ {
+  "q": "Я жду ___ у метро'.",
+  "n": "брат",
+  "c": "acc",
+  "e": "I'm waiting for my brother by the metro.",
+  "b": "A1",
+  "w": "ждать + accusative; animate masculine looks like the genitive: бра'та."
+ },
+ {
+  "q": "Мы ждём ___ уже' час.",
+  "n": "врач",
+  "c": "acc",
+  "e": "We've been waiting for the doctor for an hour.",
+  "b": "A2",
+  "w": "Animate masculine: the accusative looks like the genitive, врача'."
+ },
+ {
+  "q": "Я о'чень люблю' ___.",
+  "n": "бабушка",
+  "c": "acc",
+  "e": "I love my grandma very much.",
+  "b": "A1",
+  "w": "люби'ть + accusative: ба'бушку."
+ },
+ {
+  "q": "Ты ви'дел ___? Он был здесь.",
+  "n": "папа",
+  "c": "acc",
+  "e": "Have you seen Dad? He was here.",
+  "b": "A2",
+  "w": "ви'деть + accusative: па'пу."
+ },
+ {
+  "q": "Я встре'тил ___ на у'лице.",
+  "n": "друг",
+  "c": "acc",
+  "e": "I met a friend in the street.",
+  "b": "A2",
+  "w": "Animate masculine: друга, like the genitive."
+ },
+ {
+  "q": "Мы пригласи'ли ___ на у'жин.",
+  "n": "сосед",
+  "c": "acc",
+  "e": "We invited the neighbour to dinner.",
+  "b": "A2",
+  "w": "Animate masculine: сосе'да, like the genitive."
+ },
+ {
+  "q": "Я ви'жу ___ во дворе'.",
+  "n": "кошка",
+  "c": "acc",
+  "e": "I see a cat in the yard.",
+  "b": "A1",
+  "w": "ви'деть + accusative: ко'шку."
+ },
+ {
+  "q": "Мы ку'пим ___ для дете'й.",
+  "n": "собака",
+  "c": "acc",
+  "e": "We'll get a dog for the children.",
+  "b": "A2",
+  "w": "Accusative: соба'ку."
+ },
+ {
+  "q": "Я люблю' ___, а ты?",
+  "n": "кот",
+  "c": "acc",
+  "num": "pl",
+  "e": "I love cats, and you?",
+  "b": "A2",
+  "w": "Animate plural: the accusative looks like the genitive, кото'в."
+ },
+ {
+  "q": "Он лю'бит свою' ___.",
+  "n": "жена",
+  "c": "acc",
+  "e": "He loves his wife.",
+  "b": "A1",
+  "w": "Accusative: жену'."
+ },
+ {
+  "q": "Она' лю'бит своего' ___.",
+  "n": "муж",
+  "c": "acc",
+  "e": "She loves her husband.",
+  "b": "A1",
+  "w": "Animate masculine: му'жа, like the genitive."
+ },
+ {
+  "q": "Я зна'ю ___ давно'.",
+  "n": "учитель",
+  "c": "acc",
+  "e": "I've known the teacher for a long time.",
+  "b": "A2",
+  "w": "Animate masculine: учи'теля."
+ },
+ {
+  "q": "Я жду ___, они' опа'здывают.",
+  "n": "гость",
+  "c": "acc",
+  "num": "pl",
+  "e": "I'm waiting for the guests, they're late.",
+  "b": "B1",
+  "w": "Animate plural: госте'й, like the genitive."
+ },
+ {
+  "q": "Мы встреча'ем ___ на вокза'ле.",
+  "n": "сестра",
+  "c": "acc",
+  "e": "We're meeting my sister at the station.",
+  "b": "A2",
+  "w": "Accusative: сестру'."
+ },
+ {
+  "q": "Я ви'жу ___ на берегу'.",
+  "n": "ребёнок",
+  "c": "acc",
+  "num": "pl",
+  "e": "I see children on the shore.",
+  "b": "A2",
+  "w": "Animate plural: дете'й, like the genitive."
+ },
+ {
+  "q": "Мы слу'шаем ___.",
+  "n": "музыка",
+  "c": "acc",
+  "e": "We're listening to music.",
+  "b": "A1",
+  "w": "слу'шать + accusative: му'зыку."
+ },
+ {
+  "q": "Я чита'ю ___.",
+  "n": "газета",
+  "c": "acc",
+  "e": "I'm reading the newspaper.",
+  "b": "A1",
+  "w": "Accusative: газе'ту."
+ },
+ {
+  "q": "Он пи'шет ___ ма'ме.",
+  "n": "письмо",
+  "c": "acc",
+  "e": "He's writing a letter to Mum.",
+  "b": "A1",
+  "w": "Neuter: the accusative equals the nominative, письмо'."
+ },
+ {
+  "q": "Ты ви'дел мою' ___?",
+  "n": "сумка",
+  "c": "acc",
+  "e": "Have you seen my bag?",
+  "b": "A1",
+  "w": "Accusative: су'мку."
+ },
+ {
+  "q": "Я потеря'ла ___.",
+  "n": "ключ",
+  "c": "acc",
+  "num": "pl",
+  "e": "I've lost my keys.",
+  "b": "A2",
+  "w": "Inanimate plural: the accusative equals the nominative, ключи'."
+ },
+ {
+  "q": "Я ем ___ ка'ждое у'тро.",
+  "n": "каша",
+  "c": "acc",
+  "e": "I eat porridge every morning.",
+  "b": "A2",
+  "w": "Accusative: ка'шу."
+ },
+ {
+  "q": "Ма'ма купи'ла ___.",
+  "n": "рыба",
+  "c": "acc",
+  "e": "Mum bought fish.",
+  "b": "A2",
+  "w": "Accusative: ры'бу."
+ },
+ {
+  "q": "Дай мне ___, пожа'луйста.",
+  "n": "ложка",
+  "c": "acc",
+  "e": "Give me a spoon, please.",
+  "b": "A2",
+  "w": "Accusative: ло'жку."
+ },
+ {
+  "q": "Мы смо'трим ___.",
+  "n": "фильм",
+  "c": "acc",
+  "e": "We're watching a film.",
+  "b": "A1",
+  "w": "Inanimate masculine: the accusative equals the nominative, фильм."
+ },
+ {
+  "q": "Я пью ___.",
+  "n": "вода",
+  "c": "acc",
+  "e": "I'm drinking water.",
+  "b": "A1",
+  "w": "Accusative: во'ду."
+ },
+ {
+  "q": "Мы купи'ли ___ на да'чу.",
+  "n": "машина",
+  "c": "acc",
+  "e": "We bought a car for the dacha.",
+  "b": "A2",
+  "w": "Accusative: маши'ну."
+ },
+ {
+  "q": "Закро'й ___, пожа'луйста.",
+  "n": "дверь",
+  "c": "acc",
+  "e": "Close the door, please.",
+  "b": "A1",
+  "w": "Feminine in ь: the accusative equals the nominative, дверь."
+ },
+ {
+  "q": "Откро'й ___, здесь жа'рко.",
+  "n": "окно",
+  "c": "acc",
+  "e": "Open the window, it's hot here.",
+  "b": "A1",
+  "w": "Neuter: окно'."
+ },
+ {
+  "q": "Я ви'жу ___.",
+  "n": "гора",
+  "c": "acc",
+  "num": "pl",
+  "e": "I can see the mountains.",
+  "b": "A2",
+  "w": "Inanimate plural: го'ры."
+ },
+ {
+  "q": "Мы снима'ем ___ в це'нтре.",
+  "n": "квартира",
+  "c": "acc",
+  "e": "We're renting a flat in the centre.",
+  "b": "B1",
+  "w": "Accusative: кварти'ру."
+ },
+ {
+  "q": "Я зна'ю э'ту ___.",
+  "n": "песня",
+  "c": "acc",
+  "e": "I know this song.",
+  "b": "A2",
+  "w": "Accusative: пе'сню."
+ },
+ {
+  "q": "Я люблю' ___.",
+  "n": "зима",
+  "c": "acc",
+  "e": "I love winter.",
+  "b": "A2",
+  "w": "Accusative: зи'му."
+ },
+ {
+  "q": "Я люблю' ру'сские ___.",
+  "n": "книга",
+  "c": "acc",
+  "num": "pl",
+  "e": "I love Russian books.",
+  "b": "A2",
+  "w": "Inanimate plural: кни'ги."
+ },
+ {
+  "q": "Учи'тель спроси'л ___.",
+  "n": "ученик",
+  "c": "acc",
+  "e": "The teacher asked the pupil.",
+  "b": "A2",
+  "w": "Animate masculine: ученика'."
+ },
+ {
+  "q": "Я по'мню ___ ма'ленькой.",
+  "n": "дочь",
+  "c": "acc",
+  "e": "I remember my daughter as a little girl.",
+  "b": "B1",
+  "w": "Feminine in ь: the accusative equals the nominative, дочь."
+ },
+ {
+  "q": "Я люблю' свою' ___.",
+  "n": "мать",
+  "c": "acc",
+  "e": "I love my mother.",
+  "b": "A2",
+  "w": "Feminine in ь: мать."
+ },
+ {
+  "q": "Она' ждёт ___ из а'рмии.",
+  "n": "сын",
+  "c": "acc",
+  "e": "She is waiting for her son to come back from the army.",
+  "b": "B1",
+  "w": "Animate masculine: сы'на."
+ },
+ {
+  "q": "Я позва'л ___ на по'мощь.",
+  "n": "отец",
+  "c": "acc",
+  "e": "I called Father for help.",
+  "b": "B1",
+  "w": "Animate masculine; the е drops out: отца'."
+ },
+ {
+  "q": "Он лю'бит ___ и ко'шек.",
+  "n": "собака",
+  "c": "acc",
+  "num": "pl",
+  "e": "He loves dogs and cats.",
+  "b": "B1",
+  "w": "Animate plural: соба'к, like the genitive."
+ },
+ {
+  "q": "Мы пригласи'ли ___ на сва'дьбу.",
+  "n": "друг",
+  "c": "acc",
+  "num": "pl",
+  "e": "We invited friends to the wedding.",
+  "b": "B1",
+  "w": "Animate plural: друзе'й."
+ },
+ {
+  "q": "Ты зна'ешь э'тих ___?",
+  "n": "человек",
+  "c": "acc",
+  "num": "pl",
+  "e": "Do you know these people?",
+  "b": "B1",
+  "w": "Animate plural: люде'й."
+ },
+ {
+  "q": "Мы говори'ли о ___.",
+  "n": "работа",
+  "c": "prep",
+  "e": "We talked about work.",
+  "b": "A2",
+  "w": "о + prepositional: о рабо'те."
+ },
+ {
+  "q": "Расскажи' мне о ___.",
+  "n": "семья",
+  "c": "prep",
+  "e": "Tell me about your family.",
+  "b": "A2",
+  "w": "о + prepositional: о семье'."
+ },
+ {
+  "q": "Я ду'маю о ___.",
+  "n": "мама",
+  "c": "prep",
+  "e": "I'm thinking about Mum.",
+  "b": "A2",
+  "w": "о + prepositional: о ма'ме."
+ },
+ {
+  "q": "Я ча'сто вспомина'ю о ___.",
+  "n": "брат",
+  "c": "prep",
+  "e": "I often think about my brother.",
+  "b": "B1",
+  "w": "о + prepositional: о бра'те."
+ },
+ {
+  "q": "Он мечта'ет о ___.",
+  "n": "море",
+  "c": "prep",
+  "e": "He dreams of the sea.",
+  "b": "B1",
+  "w": "о + prepositional: о мо'ре."
+ },
+ {
+  "q": "Мы чита'ли о ___.",
+  "n": "город",
+  "c": "prep",
+  "e": "We read about the town.",
+  "b": "A2",
+  "w": "о + prepositional: о го'роде."
+ },
+ {
+  "q": "Э'та кни'га о ___.",
+  "n": "война",
+  "c": "prep",
+  "e": "This book is about the war.",
+  "b": "A2",
+  "w": "о + prepositional: о войне'."
+ },
+ {
+  "q": "Фильм расска'зывает о ___.",
+  "n": "девушка",
+  "c": "prep",
+  "e": "The film is about a girl.",
+  "b": "B1",
+  "w": "о + prepositional: о де'вушке."
+ },
+ {
+  "q": "Расскажи' о ___.",
+  "n": "путешествие",
+  "c": "prep",
+  "e": "Tell me about the trip.",
+  "b": "B1",
+  "w": "Nouns in -ие: о путеше'ствии."
+ },
+ {
+  "q": "Мы говори'ли об ___.",
+  "n": "экзамен",
+  "c": "prep",
+  "e": "We talked about the exam.",
+  "b": "B1",
+  "w": "об before a vowel; prepositional: об экза'мене."
+ },
+ {
+  "q": "Ба'бушка всегда' ду'мает о ___.",
+  "n": "внук",
+  "c": "prep",
+  "num": "pl",
+  "e": "Grandma always thinks about her grandchildren.",
+  "b": "B1",
+  "w": "о + prepositional plural: о вну'ках."
+ },
+ {
+  "q": "Ты зна'ешь что-нибу'дь об ___?",
+  "n": "история",
+  "c": "prep",
+  "e": "Do you know anything about history?",
+  "b": "B1",
+  "w": "об before a vowel; nouns in -ия: об исто'рии."
+ },
+ {
+  "q": "Я пишу' письмо' о ___.",
+  "n": "жизнь",
+  "c": "prep",
+  "e": "I'm writing a letter about life.",
+  "b": "B1",
+  "w": "о + prepositional: о жи'зни."
+ },
+ {
+  "q": "Мы весь ве'чер говори'ли о ___.",
+  "n": "погода",
+  "c": "prep",
+  "e": "We talked about the weather.",
+  "b": "A2",
+  "w": "о + prepositional: о пого'де."
+ },
+ {
+  "q": "Я забы'л об ___.",
+  "n": "урок",
+  "c": "prep",
+  "e": "I forgot about the lesson.",
+  "b": "A2",
+  "w": "об before a vowel; prepositional: об уро'ке."
+ },
+ {
+  "q": "Он ча'сто говори'т о ___.",
+  "n": "дочь",
+  "c": "prep",
+  "e": "He often talks about his daughter.",
+  "b": "B1",
+  "w": "о + prepositional: о до'чери."
+ },
+ {
+  "q": "Мы спо'рили о ___.",
+  "n": "фильм",
+  "c": "prep",
+  "e": "We argued about the film.",
+  "b": "B1",
+  "w": "о + prepositional: о фи'льме."
+ },
+ {
+  "q": "Расскажи' о свои'х ___.",
+  "n": "друг",
+  "c": "prep",
+  "num": "pl",
+  "e": "Tell me about your friends.",
+  "b": "B1",
+  "w": "о + prepositional plural: о друзья'х."
+ },
+ {
+  "q": "Роди'тели говори'ли о ___.",
+  "n": "ребёнок",
+  "c": "prep",
+  "num": "pl",
+  "e": "The parents talked about the children.",
+  "b": "A2",
+  "w": "о + prepositional plural: о де'тях."
+ },
+ {
+  "q": "В ___ мно'го книг.",
+  "n": "библиотека",
+  "c": "prep",
+  "num": "pl",
+  "e": "There are a lot of books in libraries.",
+  "b": "B1",
+  "w": "Plural prepositional: в библиоте'ках."
+ },
+ {
+  "q": "Мы живём в ра'зных ___.",
+  "n": "город",
+  "c": "prep",
+  "num": "pl",
+  "e": "We live in different cities.",
+  "b": "B1",
+  "w": "Plural prepositional: в города'х."
+ },
+ {
+  "q": "Мы ходи'ли по ___.",
+  "n": "музей",
+  "c": "dat",
+  "num": "pl",
+  "e": "We walked around the museums.",
+  "b": "B1",
+  "w": "по + dative plural: по музе'ям."
+ },
+ {
+  "q": "Мы ходи'ли по ___ весь день.",
+  "n": "магазин",
+  "c": "dat",
+  "num": "pl",
+  "e": "We went round the shops all day.",
+  "b": "A2",
+  "w": "по + dative plural: по магази'нам."
+ },
+ {
+  "q": "Учи'тель говори'т со ___.",
+  "n": "студент",
+  "c": "inst",
+  "num": "pl",
+  "e": "The teacher is talking to the students.",
+  "b": "B1",
+  "w": "с + instrumental plural: со студе'нтами."
+ },
+ {
+  "q": "Я познако'мился с ___ О'льги.",
+  "n": "сестра",
+  "c": "inst",
+  "num": "pl",
+  "e": "I met Olga's sisters.",
+  "b": "B1",
+  "w": "с + instrumental plural: с сёстрами."
+ },
+ {
+  "q": "Ле'том я рабо'таю с ___.",
+  "n": "ребёнок",
+  "c": "inst",
+  "num": "pl",
+  "e": "In the summer I work with children.",
+  "b": "A2",
+  "w": "с + instrumental plural: с детьми'."
+ },
+ {
+  "q": "Я пишу' ___ ка'ждую неде'лю.",
+  "n": "друг",
+  "c": "dat",
+  "num": "pl",
+  "e": "I write to friends every week.",
+  "b": "B1",
+  "w": "To whom? The dative plural: друзья'м."
+ },
+ {
+  "q": "Мы помога'ем ___.",
+  "n": "сосед",
+  "c": "dat",
+  "num": "pl",
+  "e": "We help the neighbours.",
+  "b": "B1",
+  "w": "помога'ть + dative plural: сосе'дям."
+ },
+ {
+  "q": "Позвони' ___, они' ждут.",
+  "n": "родственник",
+  "c": "dat",
+  "num": "pl",
+  "e": "Call your relatives, they're waiting.",
+  "b": "B1",
+  "w": "звони'ть + dative plural."
+ },
+ {
+  "q": "Я купи'л пода'рки ___.",
+  "n": "ребёнок",
+  "c": "dat",
+  "num": "pl",
+  "e": "I bought presents for the children.",
+  "b": "A2",
+  "w": "For whom? The dative plural: де'тям."
+ },
+ {
+  "q": "На ___ лежа'т кни'ги.",
+  "n": "стол",
+  "c": "prep",
+  "num": "pl",
+  "e": "There are books lying on the tables.",
+  "b": "B1",
+  "w": "Plural prepositional: на стола'х."
+ },
+ {
+  "q": "Мы гуля'ли с ___ в па'рке.",
+  "n": "собака",
+  "c": "inst",
+  "num": "pl",
+  "e": "We walked with the dogs in the park.",
+  "b": "B1",
+  "w": "с + instrumental plural: с соба'ками."
+ },
+ {
+  "q": "Я пишу' ___, а не ру'чкой.",
+  "n": "карандаш",
+  "c": "inst",
+  "e": "I'm writing with a pencil, not a pen.",
+  "b": "A2",
+  "w": "The tool: instrumental, карандашо'м."
+ },
+ {
+  "q": "У ___ хоро'шие зарпла'ты.",
+  "n": "врач",
+  "c": "gen",
+  "num": "pl",
+  "e": "Doctors have good salaries.",
+  "b": "B1",
+  "w": "у + genitive plural: у враче'й."
+ },
+ {
+  "q": "Ма'ма говори'т с ___ по-англи'йски.",
+  "n": "гость",
+  "c": "inst",
+  "num": "pl",
+  "e": "Mum talks to the guests in English.",
+  "b": "B1",
+  "w": "с + instrumental plural: с гостя'ми."
+ },
+ {
+  "q": "В на'ших ___ хо'лодно.",
+  "n": "дом",
+  "c": "prep",
+  "num": "pl",
+  "e": "It's cold in our houses.",
+  "b": "B1",
+  "w": "Plural prepositional: в дома'х."
+ }
+]

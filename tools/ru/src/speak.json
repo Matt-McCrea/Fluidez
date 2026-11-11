@@ -1,0 +1,25 @@
+{
+ "_about": "Speak first: ten packs of everyday phrases, playable from the first open, before the letters. Each id points into phrases.txt. Dialogue lines are spoken by a and b. The transliteration is RU.translit unless phrases.txt gives one.",
+ "packs": [
+  { "n": 1, "en": "Hello and how are you", "ru": "Приве'т!", "ids": ["privet", "zdravstvuyte", "dobry_den", "kak_dela", "horosho", "normalno", "a_u_tebya", "tozhe"],
+    "dialogue": [["a", "privet"], ["b", "privet"], ["a", "kak_dela"], ["b", "horosho"], ["b", "a_u_tebya"], ["a", "normalno"]] },
+  { "n": 2, "en": "Please, thank you, sorry", "ru": "Спаси'бо!", "ids": ["spasibo", "bolshoe_spasibo", "pozhaluysta", "izvinite", "prostite", "nichego", "da", "net"],
+    "dialogue": [["a", "izvinite"], ["b", "da"], ["a", "bolshoe_spasibo"], ["b", "pozhaluysta"], ["a", "prostite"], ["b", "nichego"]] },
+  { "n": 3, "en": "Who you are", "ru": "Меня' зову'т", "ids": ["kak_vas_zovut", "menya_zovut", "ochen_priyatno", "otkuda_vy", "ya_iz_anglii", "ya_zhivu_v_londone", "eto_moy_drug"],
+    "dialogue": [["a", "kak_vas_zovut"], ["b", "menya_zovut"], ["a", "ochen_priyatno"], ["a", "otkuda_vy"], ["b", "ya_iz_anglii"], ["b", "ya_zhivu_v_londone"]] },
+  { "n": 4, "en": "Yes, no and okay", "ru": "Коне'чно!", "ids": ["konechno", "khorosho_ok", "ladno", "mozhet_byt", "pravda", "davay", "poshli", "khoroshaya_ideya"],
+    "dialogue": [["a", "poshli"], ["b", "pravda"], ["a", "konechno"], ["b", "khoroshaya_ideya"], ["a", "davay"]] },
+  { "n": 5, "en": "When you don't understand", "ru": "Я не понима'ю", "ids": ["ya_ne_ponimayu", "medlennee", "povtorite", "chto_znachit", "govoryu_nemnogo", "uchu_russkiy", "govorite_po_angliyski", "ya_ne_znayu"],
+    "dialogue": [["a", "govorite_po_angliyski"], ["b", "govoryu_nemnogo"], ["b", "uchu_russkiy"], ["a", "chto_znachit"], ["b", "ya_ne_ponimayu"], ["b", "medlennee"]] },
+  { "n": 6, "en": "In the café", "ru": "Ко'фе", "ids": ["stolik_na_dvoikh", "menyu", "kofe", "chay_s_limonom", "vodu", "ochen_vkusno", "schyot", "priyatnogo"],
+    "dialogue": [["a", "stolik_na_dvoikh"], ["b", "sadites"], ["a", "menyu"], ["a", "kofe"], ["b", "priyatnogo"], ["a", "schyot"]] },
+  { "n": 7, "en": "Shopping", "ru": "Ско'лько сто'ит?", "ids": ["skolko_stoit", "dorogo", "ya_prosto_smotryu", "dayte_eto", "ya_vozmu", "mozhno_kartoy", "eto_vsyo"],
+    "dialogue": [["b", "u_vas_est"], ["a", "ya_prosto_smotryu"], ["a", "skolko_stoit"], ["a", "dorogo"], ["a", "dayte_eto"], ["a", "mozhno_kartoy"]] },
+  { "n": 8, "en": "Finding your way", "ru": "Где?", "ids": ["gde_tualet", "gde_metro", "gde_gostinitsa", "eto_daleko", "eto_ryadom", "pryamo", "napravo", "nalevo"],
+    "dialogue": [["a", "izvinite"], ["a", "gde_metro"], ["b", "pryamo"], ["b", "napravo"], ["a", "eto_daleko"], ["b", "eto_ryadom"]] },
+  { "n": 9, "en": "Time", "ru": "Кото'рый час?", "ids": ["kotory_chas", "seychas_tri", "seychas", "potom", "segodnya", "zavtra", "vchera", "minutochku"],
+    "dialogue": [["a", "izvinite_opozdal"], ["b", "nichego"], ["b", "kotory_chas"], ["a", "seychas_tri"], ["b", "minutochku"]] },
+  { "n": 10, "en": "How you feel, and goodbye", "ru": "До свида'ния!", "ids": ["ya_ustal", "mne_kholodno", "mne_nravitsya", "otlichno", "neplokho", "do_svidaniya", "poka", "do_zavtra"],
+    "dialogue": [["a", "kak_dela"], ["b", "ya_ustal"], ["a", "mne_kholodno"], ["b", "poshli"], ["a", "do_zavtra"], ["b", "poka"]] }
+ ]
+}

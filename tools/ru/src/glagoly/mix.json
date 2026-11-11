@@ -1,0 +1,1286 @@
+[
+ {
+  "q": "Вчера' студе'нты мно'го ___ о Росси'и.",
+  "v": "спрашивать",
+  "t": "past",
+  "p": "oni",
+  "e": "Yesterday the students asked a lot about Russia.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' сосе'ди ___ до ча'су но'чи.",
+  "v": "кричать",
+  "t": "past",
+  "p": "oni",
+  "e": "Yesterday the neighbours were shouting until one in the morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' го'сти ___ в де'вять и се'ли за стол.",
+  "v": "прийти",
+  "t": "past",
+  "p": "oni",
+  "e": "Yesterday the guests came at nine and sat down at the table at once.",
+  "b": "A2"
+ },
+ {
+  "q": "На про'шлой неде'ле мои' роди'тели ___ на да'чу.",
+  "v": "уехать",
+  "t": "past",
+  "p": "oni",
+  "e": "Last week my parents left for the dacha.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' де'ти ___ ра'но и легли' спать.",
+  "v": "поужинать",
+  "t": "past",
+  "p": "oni",
+  "e": "Yesterday the children had dinner early and went to bed.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' они' ___ нам все свои' фо'то.",
+  "v": "показать",
+  "t": "past",
+  "p": "oni",
+  "e": "Yesterday they showed us all their photos.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' на'ши друзья' ___ из о'тпуска.",
+  "v": "вернуться",
+  "t": "past",
+  "p": "oni",
+  "e": "Yesterday our friends came back from holiday.",
+  "b": "A2"
+ },
+ {
+  "q": "В про'шлом году' они' ___ в Петербу'рге.",
+  "v": "жить",
+  "t": "past",
+  "p": "oni",
+  "e": "Last year they lived in Petersburg.",
+  "b": "A1"
+ },
+ {
+  "q": "Вчера' мои' роди'тели ___ в теа'тре.",
+  "v": "быть",
+  "t": "past",
+  "p": "oni",
+  "e": "Yesterday my parents were at the theatre.",
+  "b": "A1"
+ },
+ {
+  "q": "Вчера' де'ти ___ ска'зку и засну'ли.",
+  "v": "послушать",
+  "t": "past",
+  "p": "oni",
+  "e": "Yesterday the children listened to a fairy tale and fell asleep.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' студе'нты ___ экза'мен и пошли' в кафе'.",
+  "v": "написать",
+  "t": "past",
+  "p": "oni",
+  "e": "Yesterday the students wrote the exam and went to a café.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' они' ___ нам о'чень по'здно.",
+  "v": "позвонить",
+  "t": "past",
+  "p": "oni",
+  "e": "Yesterday they called us very late.",
+  "b": "A1"
+ },
+ {
+  "q": "Ра'ньше они' ___ ка'ждое ле'то на мо'ре.",
+  "v": "отдыхать",
+  "t": "past",
+  "p": "oni",
+  "e": "They used to holiday by the sea every summer.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' ко'шки ___ всё молоко'.",
+  "v": "выпить",
+  "t": "past",
+  "p": "oni",
+  "e": "Yesterday the cats drank all the milk.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' лю'ди до'лго ___ авто'бус.",
+  "v": "ждать",
+  "t": "past",
+  "p": "oni",
+  "e": "Yesterday people waited a long time for the bus.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' все ___, что он сказа'л.",
+  "v": "понять",
+  "t": "past",
+  "p": "oni",
+  "e": "Yesterday everyone understood what he said.",
+  "b": "B1"
+ },
+ {
+  "q": "Вчера' они' ___ пожени'ться.",
+  "v": "решить",
+  "t": "past",
+  "p": "oni",
+  "e": "Yesterday they decided to get married.",
+  "b": "B1"
+ },
+ {
+  "q": "Вчера' ма'льчики ___ во дворе' до ве'чера.",
+  "v": "играть",
+  "t": "past",
+  "p": "oni",
+  "e": "Yesterday the boys played in the yard until evening.",
+  "b": "A1"
+ },
+ {
+  "q": "Вчера' на'ши ___ в фина'ле.",
+  "v": "сыграть",
+  "t": "past",
+  "p": "oni",
+  "e": "Yesterday our team played in the final.",
+  "b": "B1"
+ },
+ {
+  "q": "Вчера' мы ___ о'чень ра'но, в пять.",
+  "v": "проснуться",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday we woke up very early, at five.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' мы ___ на вокза'ле два часа'.",
+  "v": "сидеть",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday we sat at the station for two hours.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' мы ___ на по'езд.",
+  "v": "опоздать",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday we missed the train.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' мы ___ пе'сни у костра'.",
+  "v": "петь",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday we sang songs around the campfire.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' мы ___ и не могли' останови'ться.",
+  "v": "смеяться",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday we laughed and couldn't stop.",
+  "b": "B1"
+ },
+ {
+  "q": "Вчера' мы ___ на ле'кцию в во'семь.",
+  "v": "прийти",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday we came to the lecture at eight.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' мы ___ из до'ма в семь.",
+  "v": "выйти",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday we left the house at seven.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' мы ___ к ба'бушке на обе'д.",
+  "v": "зайти",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday we dropped in on Grandma for lunch.",
+  "b": "B1"
+ },
+ {
+  "q": "Вчера' мы ___ у'лицу на кра'сный свет.",
+  "v": "перейти",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday we crossed the street on a red light.",
+  "b": "B1"
+ },
+ {
+  "q": "Вчера' мы ___ в ко'мнату и уви'дели пода'рки.",
+  "v": "войти",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday we went into the room and saw the presents.",
+  "b": "B1"
+ },
+ {
+  "q": "Вчера' он ___ мне цветы'.",
+  "v": "принести",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday he brought me flowers.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' Ива'н ___ домо'й в семь.",
+  "v": "прийти",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Ivan came home at seven.",
+  "b": "A1"
+ },
+ {
+  "q": "Вчера' Дми'трий ___ с рабо'ты ра'но.",
+  "v": "уйти",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Dmitry left work early.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' Серге'й ___ к нам на ча'шку ча'я.",
+  "v": "зайти",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Sergei dropped in on us for a cup of tea.",
+  "b": "B1"
+ },
+ {
+  "q": "Вчера' мой брат ___ из Москвы'.",
+  "v": "приехать",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday my brother came back from Moscow.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' па'па ___ на рабо'ту в во'семь.",
+  "v": "уехать",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Dad left for work at eight.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' Ива'н ___ из до'ма без зонта'.",
+  "v": "выйти",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Ivan left the house without an umbrella.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' нача'льник ___ в кабине'т и сел.",
+  "v": "войти",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday the boss came into the office and sat down.",
+  "b": "B1"
+ },
+ {
+  "q": "Вчера' ребёнок ___ ру'сскую ска'зку.",
+  "v": "слушать",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday the child listened to a Russian fairy tale.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' Серге'й ___ мне свою' кни'гу.",
+  "v": "дать",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Sergei gave me his book.",
+  "b": "A2"
+ },
+ {
+  "q": "В про'шлом году' Дми'трий ___ англи'йский.",
+  "v": "учить",
+  "t": "past",
+  "p": "on",
+  "e": "Last year Dmitry studied English.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' Ива'н ___ ей письмо' и ждал отве'т.",
+  "v": "написать",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Ivan wrote her a letter and waited for an answer.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' Серге'й ___ кури'ть.",
+  "v": "бросить",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Sergei quit smoking.",
+  "b": "B1"
+ },
+ {
+  "q": "Вчера' Ива'н ___ на мою' шу'тку.",
+  "v": "улыбнуться",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Ivan smiled at my joke.",
+  "b": "B1"
+ },
+ {
+  "q": "Вчера' Серге'й ___ мне, где банк.",
+  "v": "показать",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Sergei showed me where the bank is.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' па'па ___ по телефо'ну два часа'.",
+  "v": "говорить",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Dad was on the phone for two hours.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' Ива'н ___ тебя' в метро'.",
+  "v": "видеть",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Ivan saw you in the metro.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' А'нна ___ к нам в го'сти.",
+  "v": "прийти",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday Anna came to visit us.",
+  "b": "A1"
+ },
+ {
+  "q": "Вчера' О'льга ___ из о'фиса в шесть.",
+  "v": "уйти",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday Olga left the office at six.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' Ма'ша ___ из Ки'ева.",
+  "v": "приехать",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday Masha arrived from Kyiv.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' ба'бушка ___ нам пирожки'.",
+  "v": "принести",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday Grandma brought us pies.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' А'нна ___ к нам по'сле рабо'ты.",
+  "v": "зайти",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday Anna dropped in on us after work.",
+  "b": "B1"
+ },
+ {
+  "q": "Вчера' О'льга ___ и пошла' в магази'н.",
+  "v": "одеться",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday Olga got dressed and went to the shop.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' Ма'ша ___ и не пошла' в шко'лу.",
+  "v": "заболеть",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday Masha fell ill and didn't go to school.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' А'нна ___ мне, что ты прие'дешь.",
+  "v": "сказать",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday Anna told me that you'd come.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' сестра' ___ ко'шку на у'лице.",
+  "v": "найти",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday my sister found a cat in the street.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' О'льга ___ меня' к себе'.",
+  "v": "пригласить",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday Olga invited me to her place.",
+  "b": "B1"
+ },
+ {
+  "q": "Вчера' ма'ма ___ до'лго, она' уста'ла.",
+  "v": "спать",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday Mum slept for a long time, she was tired.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' Ма'ша ___ но'вую пе'сню.",
+  "v": "выучить",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday Masha learnt a new song.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' А'нна ___ в кино' одна'.",
+  "v": "ходить",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday Anna went to the cinema alone.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' О'льга ___ в Москву' на день.",
+  "v": "ездить",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday Olga went to Moscow for the day.",
+  "b": "B1"
+ },
+ {
+  "q": "Вчера' моё окно' ___ откры'то всю ночь.",
+  "v": "быть",
+  "t": "past",
+  "p": "ono",
+  "e": "Yesterday my window was open all night.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' письмо' ___ на столе'.",
+  "v": "лежать",
+  "t": "past",
+  "p": "ono",
+  "e": "Yesterday the letter was lying on the table.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' э'то пла'тье ___ ты'сячу рубле'й.",
+  "v": "стоить",
+  "t": "past",
+  "p": "ono",
+  "e": "Yesterday this dress cost a thousand roubles.",
+  "b": "A2"
+ },
+ {
+  "q": "Мне о'чень ___ твоё письмо'.",
+  "v": "понравиться",
+  "t": "past",
+  "p": "ono",
+  "e": "I really liked your letter.",
+  "b": "A2"
+ },
+ {
+  "q": "Ти'ше, ко'шки ___ на дива'не.",
+  "v": "спать",
+  "t": "pres",
+  "p": "oni",
+  "e": "Quiet, the cats are asleep on the sofa.",
+  "b": "A1"
+ },
+ {
+  "q": "Смотри', пти'цы ___ на юг.",
+  "v": "лететь",
+  "t": "pres",
+  "p": "oni",
+  "e": "Look, the birds are flying south.",
+  "b": "A2"
+ },
+ {
+  "q": "Где де'ти? Они' ___ во дворе'.",
+  "v": "гулять",
+  "t": "pres",
+  "p": "oni",
+  "e": "Where are the children? They're playing outside in the yard.",
+  "b": "A1"
+ },
+ {
+  "q": "Что де'лают студе'нты? Они' ___ текст.",
+  "v": "переводить",
+  "t": "pres",
+  "p": "oni",
+  "e": "What are the students doing? They're translating a text.",
+  "b": "A2"
+ },
+ {
+  "q": "Слы'шишь? Де'ти ___.",
+  "v": "смеяться",
+  "t": "pres",
+  "p": "oni",
+  "e": "Can you hear? The children are laughing.",
+  "b": "A1"
+ },
+ {
+  "q": "Тепе'рь мои' роди'тели ___ за го'родом.",
+  "v": "жить",
+  "t": "pres",
+  "p": "oni",
+  "e": "My parents live out of town now.",
+  "b": "A1"
+ },
+ {
+  "q": "Тепе'рь мои' друзья' ча'сто ___ ко мне.",
+  "v": "приходить",
+  "t": "pres",
+  "p": "oni",
+  "e": "Now my friends often come to see me.",
+  "b": "A2"
+ },
+ {
+  "q": "Смотри', они' ___ из магази'на.",
+  "v": "выходить",
+  "t": "pres",
+  "p": "oni",
+  "e": "Look, they're coming out of the shop.",
+  "b": "A2"
+ },
+ {
+  "q": "Смотри', де'ти ___ в шко'лу.",
+  "v": "входить",
+  "t": "pres",
+  "p": "oni",
+  "e": "Look, the children are going into the school.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь они' ___ на рабо'ту в семь.",
+  "v": "уходить",
+  "t": "pres",
+  "p": "oni",
+  "e": "Now they leave for work at seven.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь тури'сты ча'сто ___ в наш го'род.",
+  "v": "приезжать",
+  "t": "pres",
+  "p": "oni",
+  "e": "Now tourists often come to our town.",
+  "b": "B1"
+ },
+ {
+  "q": "Тепе'рь ма'ма ча'сто ___ нам торт.",
+  "v": "приносить",
+  "t": "pres",
+  "p": "ona",
+  "e": "Now Mum often brings us cake.",
+  "b": "A2"
+ },
+ {
+  "q": "Смотри', де'вочка ___ доро'гу.",
+  "v": "переходить",
+  "t": "pres",
+  "p": "ona",
+  "e": "Look, the girl is crossing the road.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь О'льга ча'сто ___ к нам.",
+  "v": "заходить",
+  "t": "pres",
+  "p": "ona",
+  "e": "Now Olga often drops in on us.",
+  "b": "B1"
+ },
+ {
+  "q": "Тепе'рь ба'бушка ___ ра'но, в шесть.",
+  "v": "вставать",
+  "t": "pres",
+  "p": "ona",
+  "e": "Now Grandma gets up early, at six.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, иди' сюда'! Нас ___ учи'тель.",
+  "v": "ждать",
+  "t": "pres",
+  "p": "on",
+  "e": "Masha, come here! The teacher is waiting for us.",
+  "b": "A1"
+ },
+ {
+  "q": "Смотри', сосе'д ___ но'вую маши'ну.",
+  "v": "мыть",
+  "t": "pres",
+  "p": "on",
+  "e": "Look, the neighbour is washing his new car.",
+  "b": "A2"
+ },
+ {
+  "q": "Где Ива'н? Он ___ в свое'й ко'мнате.",
+  "v": "спать",
+  "t": "pres",
+  "p": "on",
+  "e": "Where's Ivan? He's asleep in his room.",
+  "b": "A1"
+ },
+ {
+  "q": "Тепе'рь Серге'й ___ стро'ить дома'.",
+  "v": "уметь",
+  "t": "pres",
+  "p": "on",
+  "e": "Now Sergei knows how to build houses.",
+  "b": "B1"
+ },
+ {
+  "q": "Тепе'рь Дми'трий ___ врачо'м.",
+  "v": "работать",
+  "t": "pres",
+  "p": "on",
+  "e": "Now Dmitry works as a doctor.",
+  "b": "A1"
+ },
+ {
+  "q": "Смотри', твой сын ___ на дива'не и чита'ет.",
+  "v": "лежать",
+  "t": "pres",
+  "p": "on",
+  "e": "Look, your son is lying on the sofa reading.",
+  "b": "A2"
+ },
+ {
+  "q": "Смотри', ма'льчик ___ к нам.",
+  "v": "бежать",
+  "t": "pres",
+  "p": "on",
+  "e": "Look, a boy is running towards us.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь Ива'н ча'сто ___ в Москву'.",
+  "v": "ездить",
+  "t": "pres",
+  "p": "on",
+  "e": "Now Ivan often goes to Moscow.",
+  "b": "A2"
+ },
+ {
+  "q": "Смотри', самолёт ___ над до'мом.",
+  "v": "лететь",
+  "t": "pres",
+  "p": "on",
+  "e": "Look, a plane is flying over the house.",
+  "b": "A2"
+ },
+ {
+  "q": "Мой друг пило'т, он ___ ка'ждый день.",
+  "v": "летать",
+  "t": "pres",
+  "p": "on",
+  "e": "My friend is a pilot, he flies every day.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра они' ___ в Москву' на неде'лю.",
+  "v": "поехать",
+  "t": "fut",
+  "p": "oni",
+  "e": "Tomorrow they'll go to Moscow for a week.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра го'сти ___ в семь часо'в.",
+  "v": "прийти",
+  "t": "fut",
+  "p": "oni",
+  "e": "Tomorrow the guests will come at seven.",
+  "b": "A1"
+ },
+ {
+  "q": "Ле'том мои' роди'тели ___ к нам.",
+  "v": "приехать",
+  "t": "fut",
+  "p": "oni",
+  "e": "In the summer my parents will come to us.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра студе'нты ___ но'вую те'му.",
+  "v": "начать",
+  "t": "fut",
+  "p": "oni",
+  "e": "Tomorrow the students will start a new topic.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра они' ___ нам свой но'вый дом.",
+  "v": "показать",
+  "t": "fut",
+  "p": "oni",
+  "e": "Tomorrow they'll show us their new house.",
+  "b": "A2"
+ },
+ {
+  "q": "Ско'ро они' ___ всё и ста'нут друзья'ми.",
+  "v": "понять",
+  "t": "fut",
+  "p": "oni",
+  "e": "Soon they'll understand everything and become friends.",
+  "b": "B1"
+ },
+ {
+  "q": "Е'сли де'ти уста'нут, они' ___ спать.",
+  "v": "лечь",
+  "t": "fut",
+  "p": "oni",
+  "e": "If the children get tired, they'll go to bed.",
+  "b": "B1"
+ },
+ {
+  "q": "Не волну'йся, они' ___ дом са'ми.",
+  "v": "найти",
+  "t": "fut",
+  "p": "oni",
+  "e": "Don't worry, they'll find the house themselves.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра они' ___ тебе' о пое'здке.",
+  "v": "рассказать",
+  "t": "fut",
+  "p": "oni",
+  "e": "Tomorrow they'll tell you about their trip.",
+  "b": "A2"
+ },
+ {
+  "q": "Ско'ро де'ти ___ домо'й из ла'геря.",
+  "v": "вернуться",
+  "t": "fut",
+  "p": "oni",
+  "e": "Soon the children will come home from camp.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра О'льга ___ к нам на обе'д.",
+  "v": "прийти",
+  "t": "fut",
+  "p": "ona",
+  "e": "Tomorrow Olga will come to us for lunch.",
+  "b": "A1"
+ },
+ {
+  "q": "За'втра ма'ма ___ тебе' пирожки'.",
+  "v": "принести",
+  "t": "fut",
+  "p": "ona",
+  "e": "Tomorrow Mum will bring you some pies.",
+  "b": "A2"
+ },
+ {
+  "q": "Ве'чером А'нна ___ к нам на ча'й.",
+  "v": "зайти",
+  "t": "fut",
+  "p": "ona",
+  "e": "In the evening Anna will drop in on us for tea.",
+  "b": "B1"
+ },
+ {
+  "q": "За'втра Ма'ша ___ в Петербу'рг.",
+  "v": "уехать",
+  "t": "fut",
+  "p": "ona",
+  "e": "Tomorrow Masha will leave for Petersburg.",
+  "b": "A2"
+ },
+ {
+  "q": "Ско'ро ба'бушка ___ к нам из дере'вни.",
+  "v": "приехать",
+  "t": "fut",
+  "p": "ona",
+  "e": "Soon Grandma will come to us from the village.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра О'льга ___ из до'ма в во'семь.",
+  "v": "выйти",
+  "t": "fut",
+  "p": "ona",
+  "e": "Tomorrow Olga will leave the house at eight.",
+  "b": "A2"
+ },
+ {
+  "q": "Ско'ро сестра' ___ на рабо'ту.",
+  "v": "вернуться",
+  "t": "fut",
+  "p": "ona",
+  "e": "Soon my sister will go back to work.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра О'льга ___ тебе' кни'гу.",
+  "v": "дать",
+  "t": "fut",
+  "p": "ona",
+  "e": "Tomorrow Olga will give you a book.",
+  "b": "A2"
+ },
+ {
+  "q": "Е'сли ты не позвони'шь, ма'ма ___.",
+  "v": "заплакать",
+  "t": "fut",
+  "p": "ona",
+  "e": "If you don't call, Mum will start crying.",
+  "b": "B1"
+ },
+ {
+  "q": "За'втра Ма'ша ___ но'вое пла'тье.",
+  "v": "купить",
+  "t": "fut",
+  "p": "ona",
+  "e": "Tomorrow Masha will buy a new dress.",
+  "b": "A1"
+ },
+ {
+  "q": "За'втра Ива'н ___ к нам по'сле рабо'ты.",
+  "v": "зайти",
+  "t": "fut",
+  "p": "on",
+  "e": "Tomorrow Ivan will drop in on us after work.",
+  "b": "B1"
+ },
+ {
+  "q": "За'втра Серге'й ___ нам вино'.",
+  "v": "принести",
+  "t": "fut",
+  "p": "on",
+  "e": "Tomorrow Sergei will bring us wine.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра па'па ___ на рабо'ту ра'но.",
+  "v": "уйти",
+  "t": "fut",
+  "p": "on",
+  "e": "Tomorrow Dad will leave for work early.",
+  "b": "A2"
+ },
+ {
+  "q": "Ско'ро Дми'трий ___ из Москвы'.",
+  "v": "приехать",
+  "t": "fut",
+  "p": "on",
+  "e": "Soon Dmitry will come from Moscow.",
+  "b": "A2"
+ },
+ {
+  "q": "Че'рез мину'ту врач ___ в пала'ту.",
+  "v": "войти",
+  "t": "fut",
+  "p": "on",
+  "e": "In a minute the doctor will come into the ward.",
+  "b": "B1"
+ },
+ {
+  "q": "Ско'ро Ива'н ___ врачо'м.",
+  "v": "стать",
+  "t": "fut",
+  "p": "on",
+  "e": "Soon Ivan will become a doctor.",
+  "b": "B1"
+ },
+ {
+  "q": "За'втра Серге'й ___ все пробле'мы.",
+  "v": "решить",
+  "t": "fut",
+  "p": "on",
+  "e": "Tomorrow Sergei will solve all the problems.",
+  "b": "B1"
+ },
+ {
+  "q": "Ма'ленький Ива'н ско'ро ___ чита'ть.",
+  "v": "научиться",
+  "t": "fut",
+  "p": "on",
+  "e": "Little Ivan will soon learn to read.",
+  "b": "B1"
+ },
+ {
+  "q": "Он ___ тебе' за'втра у'тром.",
+  "v": "позвонить",
+  "t": "fut",
+  "p": "on",
+  "e": "He'll call you tomorrow morning.",
+  "b": "A1"
+ },
+ {
+  "q": "Не бо'йся, он тебя' ___.",
+  "v": "понять",
+  "t": "fut",
+  "p": "on",
+  "e": "Don't be afraid, he'll understand you.",
+  "b": "B1"
+ },
+ {
+  "q": "За'втра мы ___ к вам в го'сти.",
+  "v": "прийти",
+  "t": "fut",
+  "p": "my",
+  "e": "Tomorrow we'll come to visit you.",
+  "b": "A1"
+ },
+ {
+  "q": "Мы ___ к тебе' по'сле обе'да.",
+  "v": "зайти",
+  "t": "fut",
+  "p": "my",
+  "e": "We'll drop in on you after lunch.",
+  "b": "B1"
+ },
+ {
+  "q": "За'втра мы ___ ра'но, в пять.",
+  "v": "уехать",
+  "t": "fut",
+  "p": "my",
+  "e": "Tomorrow we'll leave early, at five.",
+  "b": "A2"
+ },
+ {
+  "q": "Мы ___ у'лицу здесь, тут светофо'р.",
+  "v": "перейти",
+  "t": "fut",
+  "p": "my",
+  "e": "We'll cross the street here, there's a traffic light.",
+  "b": "B1"
+ },
+ {
+  "q": "Мы ___ вам ва'ши кни'ги за'втра.",
+  "v": "принести",
+  "t": "fut",
+  "p": "my",
+  "e": "We'll bring you your books tomorrow.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра мы ___ из до'ма в семь.",
+  "v": "выйти",
+  "t": "fut",
+  "p": "my",
+  "e": "Tomorrow we'll leave the house at seven.",
+  "b": "A2"
+ },
+ {
+  "q": "Обеща'ю, мы ___ тебе' пи'сьма.",
+  "v": "писать",
+  "t": "fut",
+  "p": "my",
+  "e": "I promise, we'll write you letters.",
+  "b": "A2"
+ },
+ {
+  "q": "Ско'ро ты ___ ру'сский как ру'сский.",
+  "v": "знать",
+  "t": "fut",
+  "p": "ty",
+  "e": "Soon you'll know Russian like a Russian.",
+  "b": "B1"
+ },
+ {
+  "q": "Не волну'йся, ты ___ рабо'ту.",
+  "v": "найти",
+  "t": "fut",
+  "p": "ty",
+  "e": "Don't worry, you'll find a job.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра ты ___ к нам в го'сти?",
+  "v": "прийти",
+  "t": "fut",
+  "p": "ty",
+  "e": "Will you come and visit us tomorrow?",
+  "b": "A1"
+ },
+ {
+  "q": "Ты ___ к нам за'втра ве'чером?",
+  "v": "зайти",
+  "t": "fut",
+  "p": "ty",
+  "e": "Will you drop in on us tomorrow evening?",
+  "b": "B1"
+ },
+ {
+  "q": "Ты ___ мне кни'гу за'втра?",
+  "v": "принести",
+  "t": "fut",
+  "p": "ty",
+  "e": "Will you bring me the book tomorrow?",
+  "b": "A2"
+ },
+ {
+  "q": "Вы ___ к нам на сва'дьбу?",
+  "v": "приехать",
+  "t": "fut",
+  "p": "vy",
+  "e": "Will you come to our wedding?",
+  "b": "A2"
+ },
+ {
+  "q": "Вы ___ за'втра в о'фис?",
+  "v": "прийти",
+  "t": "fut",
+  "p": "vy",
+  "e": "Will you come to the office tomorrow?",
+  "b": "A2"
+ },
+ {
+  "q": "Вы ___, когда' прочита'ете письмо'.",
+  "v": "понять",
+  "t": "fut",
+  "p": "vy",
+  "e": "You'll understand when you read the letter.",
+  "b": "B1"
+ },
+ {
+  "q": "Вы ___ э'тот день всю жизнь.",
+  "v": "вспоминать",
+  "t": "fut",
+  "p": "vy",
+  "e": "You'll be remembering this day all your life.",
+  "b": "B1"
+ },
+ {
+  "q": "Вчера' вы ___ в Москву' на по'езде?",
+  "v": "ездить",
+  "t": "past",
+  "p": "vy",
+  "e": "Did you go to Moscow by train yesterday?",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' вы ___ мне, что прие'дете в пять.",
+  "v": "сказать",
+  "t": "past",
+  "p": "vy",
+  "e": "Yesterday you told me you'd come at five.",
+  "b": "B1"
+ },
+ {
+  "q": "Где вы ___ вчера'? В рестора'не?",
+  "v": "ужинать",
+  "t": "past",
+  "p": "vy",
+  "e": "Where did you have dinner yesterday? In a restaurant?",
+  "b": "A2"
+ },
+ {
+  "q": "Вы ___ здесь в про'шлом году'?",
+  "v": "жить",
+  "t": "past",
+  "p": "vy",
+  "e": "Did you live here last year?",
+  "b": "A2"
+ },
+ {
+  "q": "Вы уже' ___ мой пода'рок?",
+  "v": "получить",
+  "t": "past",
+  "p": "vy",
+  "e": "Have you already got my present?",
+  "b": "A2"
+ },
+ {
+  "q": "Вы уже' ___ э'ту кни'гу?",
+  "v": "прочитать",
+  "t": "past",
+  "p": "vy",
+  "e": "Have you already read this book?",
+  "b": "A2"
+ },
+ {
+  "q": "Вы уже' ___ на мой вопро'с?",
+  "v": "ответить",
+  "t": "past",
+  "p": "vy",
+  "e": "Have you already answered my question?",
+  "b": "A2"
+ },
+ {
+  "q": "Где вы ___ ру'сский? У вас хоро'ший акце'нт.",
+  "v": "учить",
+  "t": "past",
+  "p": "vy",
+  "e": "Where did you learn Russian? You have a good accent.",
+  "b": "B1"
+ },
+ {
+  "q": "Тепе'рь вы ___ мне ка'ждый день.",
+  "v": "звонить",
+  "t": "pres",
+  "p": "vy",
+  "e": "Now you call me every day.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь вы ___ на рабо'ту на метро'?",
+  "v": "ездить",
+  "t": "pres",
+  "p": "vy",
+  "e": "Do you go to work by metro now?",
+  "b": "A2"
+ },
+ {
+  "q": "Вы ___ по-англи'йски? Я не понима'ю по-ру'сски.",
+  "v": "понимать",
+  "t": "pres",
+  "p": "vy",
+  "e": "Do you understand English? I don't understand Russian.",
+  "b": "A1"
+ },
+ {
+  "q": "Ско'лько вы ___ за кварти'ру?",
+  "v": "платить",
+  "t": "pres",
+  "p": "vy",
+  "e": "How much do you pay for the flat?",
+  "b": "B1"
+ },
+ {
+  "q": "Где вы ___? В ба'нке?",
+  "v": "работать",
+  "t": "pres",
+  "p": "vy",
+  "e": "Where do you work? In a bank?",
+  "b": "A1"
+ },
+ {
+  "q": "Тепе'рь вы ___ ра'ньше?",
+  "v": "возвращаться",
+  "t": "pres",
+  "p": "vy",
+  "e": "Do you come back earlier now?",
+  "b": "B1"
+ },
+ {
+  "q": "Вы ___ ко'фе и'ли чай?",
+  "v": "хотеть",
+  "t": "pres",
+  "p": "vy",
+  "e": "Would you like coffee or tea?",
+  "b": "A1"
+ },
+ {
+  "q": "Тепе'рь я ___ на рабо'ту на авто'бусе.",
+  "v": "ездить",
+  "t": "pres",
+  "p": "ya",
+  "e": "Now I go to work by bus.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь мы ___ в го'сти к ба'бушке ка'ждую суббо'ту.",
+  "v": "ходить",
+  "t": "pres",
+  "p": "my",
+  "e": "Now we visit Grandma every Saturday.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь я ча'сто ___ к ма'ме по'сле рабо'ты.",
+  "v": "заходить",
+  "t": "pres",
+  "p": "ya",
+  "e": "Now I often drop in on Mum after work.",
+  "b": "B1"
+ },
+ {
+  "q": "Тепе'рь ты ___ домо'й так по'здно?",
+  "v": "приходить",
+  "t": "pres",
+  "p": "ty",
+  "e": "Do you come home so late now?",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь мы ___ на рабо'ту в во'семь.",
+  "v": "выходить",
+  "t": "pres",
+  "p": "my",
+  "e": "Now we leave for work at eight.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' я ___ домо'й по'здно и сра'зу легла'.",
+  "v": "прийти",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "Yesterday I came home late and went straight to bed.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' я ___ из о'фиса и пошёл в кафе'.",
+  "v": "уйти",
+  "t": "past",
+  "p": "ya",
+  "g": "m",
+  "e": "Yesterday I left the office and went to a café.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, ты вчера' ___ в библиоте'ку?",
+  "v": "заходить",
+  "t": "past",
+  "p": "ty",
+  "g": "f",
+  "e": "Masha, did you drop in at the library yesterday?",
+  "b": "B1"
+ },
+ {
+  "q": "Серге'й, ты ___ мне вчера' кни'гу?",
+  "v": "принести",
+  "t": "past",
+  "p": "ty",
+  "g": "m",
+  "e": "Sergei, did you bring me the book yesterday?",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' мы с А'нной ___ к О'льге.",
+  "v": "заходить",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday Anna and I dropped in on Olga.",
+  "b": "B1"
+ }
+]

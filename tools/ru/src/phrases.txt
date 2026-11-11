@@ -1,0 +1,175 @@
+# Svobodno phrases, written by hand. One per line:
+#   id | band | theme | English | Russian | note (optional) | also accepted (optional, ; separated)
+# Stress: an apostrophe after the stressed vowel of every word with two vowels or more (ё needs none).
+# ты is informal (a friend, a child), вы is polite or more than one person.
+# greet
+privet | A1 | greet | Hi | Приве'т! | To friends and family. To others say Здра'вствуйте.
+zdravstvuyte | A1 | greet | Hello (polite) | Здра'вствуйте! | The first в is silent: zdrástvuytye. To a friend, Здра'вствуй or just Приве'т.
+dobroe_utro | A1 | greet | Good morning | До'брое у'тро!
+dobry_den | A1 | greet | Good afternoon | До'брый день! | The everyday polite hello in the daytime.
+dobry_vecher | A1 | greet | Good evening | До'брый ве'чер!
+kak_dela | A1 | greet | How are you? (informal) | Как дела'? | Literally how are things.
+kak_u_vas | A1 | greet | How are you? (polite) | Как у вас дела'?
+horosho | A1 | greet | Good, thanks | Хорошо', спаси'бо.
+normalno | A1 | greet | Okay, not bad | Норма'льно. | The most common honest answer.
+a_u_tebya | A1 | greet | And you? (informal) | А у тебя'?
+a_u_vas | A1 | greet | And you? (polite) | А у вас?
+tozhe | A1 | greet | Me too | Я то'же.
+spasibo | A1 | greet | Thank you | Спаси'бо!
+bolshoe_spasibo | A1 | greet | Thank you very much | Большо'е спаси'бо!
+pozhaluysta | A1 | greet | You're welcome | Пожа'луйста. | The same word means please. Said pazhálsta.
+pozhaluysta_please | A1 | greet | Please (asking) | Пожа'луйста. | At the end of a request: Ко'фе, пожа'луйста.
+izvinite | A1 | greet | Excuse me (polite) | Извини'те! | To get attention, or to say sorry.
+izvini | A1 | greet | Sorry (informal) | Извини'!
+prostite | A1 | greet | I'm sorry (polite) | Прости'те. | A real apology.
+nichego | A1 | greet | It's nothing, no problem | Ничего'. | Said nichivó.
+do_svidaniya | A1 | greet | Goodbye | До свида'ния! | Said as one word: dasvidániya.
+poka | A1 | greet | Bye (informal) | Пока'!
+do_zavtra | A1 | greet | See you tomorrow | До за'втра!
+uvidimsya | A1 | greet | See you | Уви'димся!
+spokoynoy_nochi | A1 | greet | Good night | Споко'йной но'чи!
+da | A1 | greet | Yes | Да.
+net | A1 | greet | No | Нет.
+khorosho_ok | A1 | greet | Okay, all right | Хорошо'. | Also ла'дно, more casual.
+ladno | A1 | greet | Fine, okay (casual) | Ла'дно.
+konechno | A1 | greet | Of course | Коне'чно! | Said kanyéshna.
+# intro
+menya_zovut | A1 | intro | My name is Anna | Меня' зову'т А'нна. | Literally they call me Anna.
+kak_tebya_zovut | A1 | intro | What's your name? (informal) | Как тебя' зову'т?
+kak_vas_zovut | A1 | intro | What's your name? (polite) | Как вас зову'т?
+ochen_priyatno | A1 | intro | Nice to meet you | О'чень прия'тно!
+otkuda_ty | A1 | intro | Where are you from? (informal) | Отку'да ты?
+otkuda_vy | A1 | intro | Where are you from? (polite) | Отку'да вы?
+ya_iz_anglii | A1 | intro | I'm from England | Я из А'нглии.
+ya_iz_ameriki | A1 | intro | I'm from America | Я из Аме'рики.
+ya_zhivu_v_londone | A1 | intro | I live in London | Я живу' в Ло'ндоне.
+gde_ty_zhivyosh | A1 | intro | Where do you live? (informal) | Где ты живёшь?
+ya_student | A1 | intro | I'm a student (a man speaking) | Я студе'нт. | A woman says Я студе'нтка.
+ya_studentka | A1 | intro | I'm a student (a woman speaking) | Я студе'нтка.
+ya_rabotayu | A1 | intro | I work as a teacher | Я рабо'таю учи'телем. | After рабо'тать the job takes the instrumental: учи'телем.
+skolko_tebe_let | A1 | intro | How old are you? (informal) | Ско'лько тебе' лет?
+mne_tridtsat | A1 | intro | I'm thirty | Мне три'дцать лет. | Literally to me thirty years.
+govoryu_nemnogo | A1 | intro | I speak a little Russian | Я немно'го говорю' по-ру'сски.
+uchu_russkiy | A1 | intro | I'm learning Russian | Я учу' ру'сский язы'к.
+govorite_po_angliyski | A1 | intro | Do you speak English? | Вы говори'те по-англи'йски?
+eto_moy_drug | A1 | intro | This is my friend | Э'то мой друг. | A female friend: Э'то моя' подру'га.
+eto_moya_podruga | A1 | intro | This is my friend (a woman) | Э'то моя' подру'га.
+u_menya_est_brat | A1 | intro | I have a brother | У меня' есть брат. | Russian says by me there is a brother.
+ya_zhenat | A2 | intro | I'm married (a man speaking) | Я жена'т. | A woman says Я за'мужем.
+ya_zamuzhem | A2 | intro | I'm married (a woman speaking) | Я за'мужем.
+# ask
+ya_ne_ponimayu | A1 | ask | I don't understand | Я не понима'ю.
+ya_ponimayu | A1 | ask | I understand | Я понима'ю.
+medlennee | A1 | ask | More slowly, please | Ме'дленнее, пожа'луйста.
+povtorite | A1 | ask | Could you repeat that? | Повтори'те, пожа'луйста.
+chto_eto | A1 | ask | What is this? | Что э'то?
+kto_eto | A1 | ask | Who is that? | Кто э'то?
+chto_znachit | A1 | ask | What does this mean? | Что э'то зна'чит?
+kak_skazat | A1 | ask | How do you say this in Russian? | Как э'то по-ру'сски?
+ya_ne_znayu | A1 | ask | I don't know | Я не зна'ю.
+gde | A1 | ask | Where? | Где?
+kogda | A1 | ask | When? | Когда'?
+pochemu | A1 | ask | Why? | Почему'?
+skolko | A1 | ask | How much? How many? | Ско'лько?
+gde_tualet | A1 | ask | Where is the toilet? | Где туале'т?
+gde_metro | A1 | ask | Where is the metro? | Где метро'?
+gde_gostinitsa | A1 | ask | Where is the hotel? | Где гости'ница?
+eto_daleko | A1 | ask | Is it far? | Э'то далеко'?
+eto_ryadom | A1 | ask | It's close by | Э'то ря'дом.
+pryamo | A1 | ask | Straight on | Пря'мо.
+napravo | A1 | ask | To the right | Напра'во.
+nalevo | A1 | ask | To the left | Нале'во.
+mozhno_vopros | A1 | ask | Can I ask a question? | Мо'жно вопро'с?
+mozhno | A1 | ask | May I? | Мо'жно? | Asks permission for almost anything.
+vy_ne_mogli_by | A2 | ask | Could you help me? | Вы не могли' бы мне помо'чь?
+# shop
+skolko_stoit | A1 | shop | How much is it? | Ско'лько сто'ит?
+skolko_eto_stoit | A1 | shop | How much does this cost? | Ско'лько э'то сто'ит?
+dorogo | A1 | shop | That's expensive | Э'то до'рого.
+deshevo | A1 | shop | That's cheap | Э'то дёшево.
+ya_prosto_smotryu | A1 | shop | I'm just looking | Я про'сто смотрю'.
+dayte_eto | A1 | shop | I'll have this one, please | Да'йте э'то, пожа'луйста.
+ya_vozmu | A1 | shop | I'll take it | Я возьму'.
+mozhno_kartoy | A1 | shop | Can I pay by card? | Мо'жно ка'ртой?
+nalichnymi | A1 | shop | In cash | Нали'чными.
+paket_nuzhen | A2 | shop | Do you need a bag? | Паке'т ну'жен?
+eto_vsyo | A1 | shop | That's all | Э'то всё.
+u_vas_est | A1 | shop | Do you have bread? | У вас есть хлеб?
+# food
+menyu | A1 | food | The menu, please | Меню', пожа'луйста.
+kofe | A1 | food | A coffee, please | Ко'фе, пожа'луйста.
+chay_s_limonom | A1 | food | Tea with lemon | Чай с лимо'ном.
+vodu | A1 | food | Water, please | Во'ду, пожа'луйста. | Во'ду, not вода': what you ask for takes the accusative.
+stolik_na_dvoikh | A1 | food | A table for two, please | Сто'лик на двои'х, пожа'луйста.
+schyot | A1 | food | The bill, please | Счёт, пожа'луйста.
+ochen_vkusno | A1 | food | It's very tasty! | О'чень вку'сно!
+priyatnogo | A1 | food | Enjoy your meal | Прия'тного аппети'та!
+ya_ne_em_myaso | A2 | food | I don't eat meat | Я не ем мя'со.
+ya_goloden | A1 | food | I'm hungry (a man speaking) | Я го'лоден. | A woman says Я голодна'.
+ya_golodna | A1 | food | I'm hungry (a woman speaking) | Я голодна'.
+khochu_pit | A1 | food | I'm thirsty | Я хочу' пить. | Literally I want to drink.
+na_zdorovie | A1 | food | Cheers! | За ва'ше здоро'вье! | Russians toast to something: за дру'жбу, to friendship.
+# time
+kotory_chas | A1 | time | What time is it? | Кото'рый час?
+skolko_vremeni | A1 | time | What time is it? (casual) | Ско'лько вре'мени?
+seychas_tri | A1 | time | It's three o'clock | Сейча'с три часа'.
+seychas | A1 | time | Now | Сейча'с.
+potom | A1 | time | Later | Пото'м.
+segodnya | A1 | time | Today | Сего'дня. | Said sivódnya.
+zavtra | A1 | time | Tomorrow | За'втра.
+vchera | A1 | time | Yesterday | Вчера'.
+minutochku | A1 | time | Just a minute | Мину'точку.
+podozhdite | A1 | time | Wait, please (polite) | Подожди'те, пожа'луйста.
+izvinite_opozdal | A1 | time | Sorry I'm late (a man speaking) | Извини'те, я опозда'л. | A woman says я опозда'ла.
+izvinite_opozdala | A1 | time | Sorry I'm late (a woman speaking) | Извини'те, я опозда'ла.
+kakoy_segodnya_den | A1 | time | What day is it today? | Како'й сего'дня день?
+v_sem | A1 | time | At seven o'clock | В семь часо'в.
+# feel
+ya_ustal | A1 | feel | I'm tired (a man speaking) | Я уста'л. | A woman says Я уста'ла.
+ya_ustala | A1 | feel | I'm tired (a woman speaking) | Я уста'ла.
+ya_rad | A1 | feel | I'm glad (a man speaking) | Я рад. | A woman says Я ра'да.
+ya_rada | A1 | feel | I'm glad (a woman speaking) | Я ра'да.
+mne_kholodno | A1 | feel | I'm cold | Мне хо'лодно. | Literally to me it is cold.
+mne_zharko | A1 | feel | I'm hot | Мне жа'рко.
+mne_nravitsya | A1 | feel | I like it | Мне нра'вится. | Literally it pleases me.
+mne_ne_nravitsya | A1 | feel | I don't like it | Мне не нра'вится.
+otlichno | A1 | feel | Excellent! | Отли'чно!
+super | A1 | feel | Great! | Здо'рово! | Said zdórava.
+neplokho | A1 | feel | Not bad | Непло'хо.
+ne_volnuysya | A1 | feel | Don't worry (informal) | Не волну'йся.
+ne_volnuytes | A1 | feel | Don't worry (polite) | Не волну'йтесь.
+mne_skuchno | A2 | feel | I'm bored | Мне ску'чно. | Said skúshna.
+# help
+pomogite | A1 | help | Help! | Помоги'те!
+mozhete_pomoch | A1 | help | Can you help me? | Вы мо'жете мне помо'чь?
+ya_poteryalsya | A1 | help | I'm lost (a man speaking) | Я потеря'лся. | A woman says Я потеря'лась.
+ya_poteryalas | A1 | help | I'm lost (a woman speaking) | Я потеря'лась.
+nuzhen_vrach | A1 | help | I need a doctor | Мне ну'жен врач.
+gde_bolnitsa | A1 | help | Where is the hospital? | Где больни'ца?
+gde_apteka | A1 | help | Where is the pharmacy? | Где апте'ка?
+ostorozhno | A1 | help | Careful! | Осторо'жно!
+vsyo_v_poryadke | A1 | help | Is everything okay? | Всё в поря'дке?
+u_menya_bolit | A2 | help | My head hurts | У меня' боли'т голова'.
+# social
+davay | A1 | social | Let's! Come on! | Дава'й!
+poshli | A1 | social | Let's go! | Пошли'!
+mozhet_byt | A1 | social | Maybe | Мо'жет быть.
+pravda | A1 | social | Really? | Пра'вда?
+khoroshaya_ideya | A1 | social | Good idea! | Хоро'шая иде'я!
+s_udovolstviem | A1 | social | With pleasure | С удово'льствием.
+prokhodite | A1 | social | Come in (polite) | Проходи'те.
+sadites | A1 | social | Please sit down (polite) | Сади'тесь, пожа'луйста.
+s_dnyom_rozhdeniya | A1 | social | Happy birthday! | С днём рожде'ния!
+s_novym_godom | A1 | social | Happy New Year! | С Но'вым го'дом!
+udachi | A1 | social | Good luck! | Уда'чи!
+ya_soglasen | A2 | social | I agree (a man speaking) | Я согла'сен. | A woman says Я согла'сна.
+ya_soglasna | A2 | social | I agree (a woman speaking) | Я согла'сна.
+ne_znayu_mozhet | A2 | social | I'm not sure (a man speaking) | Я не уве'рен. | A woman says Я не уве'рена.
+# travel
+odin_bilet | A1 | travel | One ticket to Moscow, please | Оди'н биле'т до Москвы', пожа'луйста.
+gde_ostanovka | A1 | travel | Where is the bus stop? | Где остано'вка авто'буса?
+v_aeroport | A1 | travel | To the airport, please | В аэропо'рт, пожа'луйста.
+ostanovite_zdes | A1 | travel | Stop here, please | Останови'те здесь, пожа'луйста.
+kogda_poezd | A2 | travel | When does the train leave? | Когда' отправля'ется по'езд?
+eto_moyo_mesto | A2 | travel | This is my seat | Э'то моё ме'сто.
+u_menya_bron | A2 | travel | I have a booking | У меня' бронь.

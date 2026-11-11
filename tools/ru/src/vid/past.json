@@ -1,0 +1,1458 @@
+[
+ {
+  "q": "Вчера' О'льга весь ве'чер ___ письмо'.",
+  "v": "писать",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday Olga spent the whole evening writing a letter.",
+  "b": "A2",
+  "w": "Весь вечер is a stretch of time: imperfective."
+ },
+ {
+  "q": "Вчера' О'льга ___ письмо' и пошла' на по'чту.",
+  "v": "написать",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday Olga wrote a letter and went to the post office.",
+  "b": "A2",
+  "w": "One finished action, then the next one: perfective."
+ },
+ {
+  "q": "Мы до'лго ___ авто'бус, пото'м пошли' пешко'м.",
+  "v": "ждать",
+  "t": "past",
+  "p": "my",
+  "e": "We waited a long time for the bus, then went on foot.",
+  "b": "A2",
+  "w": "До'лго is duration: imperfective."
+ },
+ {
+  "q": "Ива'н ___ кни'гу за два дня.",
+  "v": "прочитать",
+  "t": "past",
+  "p": "on",
+  "e": "Ivan read the book in two days.",
+  "b": "A2",
+  "w": "за + time: how long it took to finish, so perfective."
+ },
+ {
+  "q": "Ива'н ___ кни'гу два часа' и усну'л.",
+  "v": "читать",
+  "t": "past",
+  "p": "on",
+  "e": "Ivan read the book for two hours and fell asleep.",
+  "b": "A2",
+  "w": "Duration without a result: imperfective."
+ },
+ {
+  "q": "Ра'ньше мы ча'сто ___ друг дру'гу.",
+  "v": "звонить",
+  "t": "past",
+  "p": "my",
+  "e": "We used to call each other often.",
+  "b": "A2",
+  "w": "ча'сто: a repeated action, imperfective."
+ },
+ {
+  "q": "Вчера' Ма'ша ___ мне и всё рассказа'ла.",
+  "v": "позвонить",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday Masha called me and told me everything.",
+  "b": "A2",
+  "w": "One call followed by the next action: perfective."
+ },
+ {
+  "q": "Ка'ждое у'тро де'душка ___ газе'ту.",
+  "v": "читать",
+  "t": "past",
+  "p": "on",
+  "e": "Every morning Grandpa read the newspaper.",
+  "b": "A2",
+  "w": "Every morning: a habit, imperfective."
+ },
+ {
+  "q": "Ба'бушка ___ обе'д за час.",
+  "v": "приготовить",
+  "t": "past",
+  "p": "ona",
+  "e": "Grandma cooked lunch in an hour.",
+  "b": "A2",
+  "w": "за час: finished within a time, perfective."
+ },
+ {
+  "q": "Ба'бушка весь день ___ на ку'хне.",
+  "v": "готовить",
+  "t": "past",
+  "p": "ona",
+  "e": "Grandma cooked in the kitchen all day.",
+  "b": "A2",
+  "w": "Весь день: duration, imperfective."
+ },
+ {
+  "q": "Я ___ у'жин и позвала' всех к столу'.",
+  "v": "приготовить",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "I cooked dinner and called everyone to the table.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Серге'й наконе'ц ___ свои' ключи'.",
+  "v": "найти",
+  "t": "past",
+  "p": "on",
+  "e": "Sergei finally found his keys.",
+  "b": "A2",
+  "w": "наконе'ц marks the result: perfective."
+ },
+ {
+  "q": "Ра'ньше Ива'н всегда' ___ ключи'.",
+  "v": "терять",
+  "t": "past",
+  "p": "on",
+  "e": "Ivan always used to lose his keys.",
+  "b": "B1",
+  "w": "всегда': a repeated action, imperfective."
+ },
+ {
+  "q": "Вчера' я ___ ключи' и не могла' войти'.",
+  "v": "потерять",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "Yesterday I lost my keys and couldn't get in.",
+  "b": "A2",
+  "w": "One event with a result: perfective."
+ },
+ {
+  "q": "Вчера' студе'нты до'лго ___ зада'чу.",
+  "v": "решать",
+  "t": "past",
+  "p": "oni",
+  "e": "Yesterday the students spent a long time solving the problem.",
+  "b": "A2",
+  "w": "До'лго: the process, imperfective."
+ },
+ {
+  "q": "Студе'нты ___ зада'чу за пять мину'т.",
+  "v": "решить",
+  "t": "past",
+  "p": "oni",
+  "e": "The students solved the problem in five minutes.",
+  "b": "A2",
+  "w": "за пять мину'т: completed, perfective."
+ },
+ {
+  "q": "Ра'ньше учи'тель ка'ждый день ___ нам пра'вила.",
+  "v": "объяснять",
+  "t": "past",
+  "p": "on",
+  "e": "The teacher used to explain the rules to us every day.",
+  "b": "B1",
+  "w": "Every day: repeated, imperfective."
+ },
+ {
+  "q": "Учи'тель ___ пра'вило, и мы всё по'няли.",
+  "v": "объяснить",
+  "t": "past",
+  "p": "on",
+  "e": "The teacher explained the rule, and we understood everything.",
+  "b": "A2",
+  "w": "A result follows: perfective."
+ },
+ {
+  "q": "Мы ___ фильм и пошли' спать.",
+  "v": "посмотреть",
+  "t": "past",
+  "p": "my",
+  "e": "We watched the film and went to bed.",
+  "b": "A1",
+  "w": "One finished action, then the next: perfective."
+ },
+ {
+  "q": "Вчера' мы весь ве'чер ___ телеви'зор.",
+  "v": "смотреть",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday we watched TV all evening.",
+  "b": "A1",
+  "w": "Весь вечер: duration, imperfective."
+ },
+ {
+  "q": "Ива'н ___ дверь и вошёл.",
+  "v": "открыть",
+  "t": "past",
+  "p": "on",
+  "e": "Ivan opened the door and went in.",
+  "b": "A1",
+  "w": "Then the next action: perfective."
+ },
+ {
+  "q": "Ра'ньше Ива'н ка'ждое у'тро ___ окно'.",
+  "v": "открывать",
+  "t": "past",
+  "p": "on",
+  "e": "Ivan used to open the window every morning.",
+  "b": "A2",
+  "w": "Every morning: a habit, imperfective."
+ },
+ {
+  "q": "Ма'ма ___ посу'ду и се'ла отдыха'ть.",
+  "v": "помыть",
+  "t": "past",
+  "p": "ona",
+  "e": "Mum washed the dishes and sat down to rest.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Ма'ма два часа' ___ посу'ду по'сле пра'здника.",
+  "v": "мыть",
+  "t": "past",
+  "p": "ona",
+  "e": "Mum spent two hours washing the dishes after the party.",
+  "b": "A2",
+  "w": "Two hours of the process: imperfective."
+ },
+ {
+  "q": "В де'тстве Ива'н ча'сто ___ на у'лице.",
+  "v": "играть",
+  "t": "past",
+  "p": "on",
+  "e": "As a child Ivan often played outside.",
+  "b": "A2",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Вчера' мы ___ одну' па'ртию и пошли' домо'й.",
+  "v": "сыграть",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday we played one game and went home.",
+  "b": "B1",
+  "w": "One bounded game: perfective."
+ },
+ {
+  "q": "Вчера' А'нна ___ мне пода'рок.",
+  "v": "купить",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday Anna bought me a present.",
+  "b": "A1",
+  "w": "One purchase, done: perfective."
+ },
+ {
+  "q": "Ра'ньше А'нна всегда' ___ хлеб в э'том магази'не.",
+  "v": "покупать",
+  "t": "past",
+  "p": "ona",
+  "e": "Anna always used to buy bread in this shop.",
+  "b": "A2",
+  "w": "всегда': a habit, imperfective."
+ },
+ {
+  "q": "Вчера' Ива'н ___ мне свою' кни'гу, вот она'.",
+  "v": "дать",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Ivan gave me his book, here it is.",
+  "b": "A2",
+  "w": "The result is here now: perfective."
+ },
+ {
+  "q": "Ра'ньше Ива'н ча'сто ___ мне свои' кни'ги.",
+  "v": "давать",
+  "t": "past",
+  "p": "on",
+  "e": "Ivan used to lend me his books often.",
+  "b": "A2",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Я ___ все слова' за ве'чер и пошла' спать.",
+  "v": "выучить",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "I learnt all the words in one evening and went to bed.",
+  "b": "A2",
+  "w": "за ве'чер and a next action: perfective."
+ },
+ {
+  "q": "Я весь ве'чер ___ слова', но не вы'учила.",
+  "v": "учить",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "I spent all evening learning words, but didn't learn them.",
+  "b": "B1",
+  "w": "The process, without the result: imperfective."
+ },
+ {
+  "q": "Серге'й ___ на все вопро'сы и вы'шел.",
+  "v": "ответить",
+  "t": "past",
+  "p": "on",
+  "e": "Sergei answered all the questions and went out.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Серге'й до'лго ___ на вопро'сы журнали'стов.",
+  "v": "отвечать",
+  "t": "past",
+  "p": "on",
+  "e": "Sergei spent a long time answering the journalists' questions.",
+  "b": "B1",
+  "w": "До'лго: imperfective."
+ },
+ {
+  "q": "Мы ___ дом за год.",
+  "v": "построить",
+  "t": "past",
+  "p": "my",
+  "e": "We built the house in a year.",
+  "b": "B1",
+  "w": "за год: finished, perfective."
+ },
+ {
+  "q": "Мы три го'да ___ дом.",
+  "v": "строить",
+  "t": "past",
+  "p": "my",
+  "e": "We spent three years building the house.",
+  "b": "B1",
+  "w": "Three years of the process: imperfective."
+ },
+ {
+  "q": "Де'ти ___ всё моро'женое за мину'ту.",
+  "v": "съесть",
+  "t": "past",
+  "p": "oni",
+  "e": "The children ate all the ice cream in a minute.",
+  "b": "A2",
+  "w": "за мину'ту and всё: perfective."
+ },
+ {
+  "q": "Де'ти до'лго ___ суп и смотре'ли в окно'.",
+  "v": "есть",
+  "t": "past",
+  "p": "oni",
+  "e": "The children ate their soup slowly and looked out of the window.",
+  "b": "B1",
+  "w": "Two actions in progress at once: imperfective."
+ },
+ {
+  "q": "Па'па ___ ко'фе и уе'хал на рабо'ту.",
+  "v": "выпить",
+  "t": "past",
+  "p": "on",
+  "e": "Dad drank his coffee and left for work.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Па'па ___ ко'фе и одновре'менно чита'л газе'ту.",
+  "v": "пить",
+  "t": "past",
+  "p": "on",
+  "e": "Dad was drinking coffee and reading the paper at the same time.",
+  "b": "B1",
+  "w": "Two actions at the same time: imperfective."
+ },
+ {
+  "q": "Ра'ньше мы ка'ждое ле'то ___ на мо'ре.",
+  "v": "отдыхать",
+  "t": "past",
+  "p": "my",
+  "e": "We used to holiday by the sea every summer.",
+  "b": "A2",
+  "w": "Every summer: a habit, imperfective."
+ },
+ {
+  "q": "Мы хорошо' ___ и верну'лись домо'й.",
+  "v": "отдохнуть",
+  "t": "past",
+  "p": "my",
+  "e": "We had a good rest and came back home.",
+  "b": "A2",
+  "w": "A result, then the next action: perfective."
+ },
+ {
+  "q": "В про'шлом году' Ма'ша ча'сто ___.",
+  "v": "болеть",
+  "t": "past",
+  "p": "ona",
+  "e": "Last year Masha was often ill.",
+  "b": "A2",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Ма'ша ___ и не пошла' в шко'лу.",
+  "v": "заболеть",
+  "t": "past",
+  "p": "ona",
+  "e": "Masha fell ill and didn't go to school.",
+  "b": "A2",
+  "w": "The start of a state, one event: perfective."
+ },
+ {
+  "q": "Обы'чно я ___ в семь, но вчера' про'спал.",
+  "v": "вставать",
+  "t": "past",
+  "p": "ya",
+  "g": "m",
+  "e": "I usually got up at seven, but yesterday I overslept.",
+  "b": "B1",
+  "w": "обы'чно: a habit, imperfective."
+ },
+ {
+  "q": "Вчера' я ___ в шесть и пошёл бе'гать.",
+  "v": "встать",
+  "t": "past",
+  "p": "ya",
+  "g": "m",
+  "e": "Yesterday I got up at six and went running.",
+  "b": "A2",
+  "w": "One morning, then the next action: perfective."
+ },
+ {
+  "q": "Обы'чно мы ___ спать в де'сять.",
+  "v": "ложиться",
+  "t": "past",
+  "p": "my",
+  "e": "We usually went to bed at ten.",
+  "b": "A2",
+  "w": "обы'чно: imperfective."
+ },
+ {
+  "q": "Вчера' мы ___ спать в по'лночь.",
+  "v": "лечь",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday we went to bed at midnight.",
+  "b": "A2",
+  "w": "One night, one event: perfective."
+ },
+ {
+  "q": "Ба'бушка ___ на дива'н и усну'ла.",
+  "v": "сесть",
+  "t": "past",
+  "p": "ona",
+  "e": "Grandma sat down on the sofa and fell asleep.",
+  "b": "A2",
+  "w": "One movement, then the next action: perfective."
+ },
+ {
+  "q": "Ка'ждый ве'чер ба'бушка ___ у окна'.",
+  "v": "садиться",
+  "t": "past",
+  "p": "ona",
+  "e": "Every evening Grandma would sit down by the window.",
+  "b": "B1",
+  "w": "Every evening: imperfective."
+ },
+ {
+  "q": "Ра'ньше па'па ___ без буди'льника.",
+  "v": "просыпаться",
+  "t": "past",
+  "p": "on",
+  "e": "Dad used to wake up without an alarm clock.",
+  "b": "B1",
+  "w": "A past habit: imperfective."
+ },
+ {
+  "q": "Я ___ в пять и бо'льше не спал.",
+  "v": "проснуться",
+  "t": "past",
+  "p": "ya",
+  "g": "m",
+  "e": "I woke up at five and didn't sleep any more.",
+  "b": "A2",
+  "w": "One event: perfective."
+ },
+ {
+  "q": "Ра'ньше па'па всегда' ___ по'здно.",
+  "v": "возвращаться",
+  "t": "past",
+  "p": "on",
+  "e": "Dad always used to come home late.",
+  "b": "A2",
+  "w": "всегда': imperfective."
+ },
+ {
+  "q": "Вчера' па'па ___ в де'вять и сра'зу лёг.",
+  "v": "вернуться",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Dad came back at nine and went straight to bed.",
+  "b": "A2",
+  "w": "One return, then the next action: perfective."
+ },
+ {
+  "q": "Серге'й ча'сто ___ мой день рожде'ния.",
+  "v": "забывать",
+  "t": "past",
+  "p": "on",
+  "e": "Sergei often forgot my birthday.",
+  "b": "A2",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Серге'й ___ зо'нтик и промо'к.",
+  "v": "забыть",
+  "t": "past",
+  "p": "on",
+  "e": "Sergei forgot his umbrella and got soaked.",
+  "b": "A2",
+  "w": "One event with a result: perfective."
+ },
+ {
+  "q": "Ба'бушка ча'сто ___ свою' мо'лодость.",
+  "v": "вспоминать",
+  "t": "past",
+  "p": "ona",
+  "e": "Grandma often recalled her youth.",
+  "b": "B1",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "О'льга наконе'ц ___, где оста'вила су'мку.",
+  "v": "вспомнить",
+  "t": "past",
+  "p": "ona",
+  "e": "Olga finally remembered where she'd left her bag.",
+  "b": "B1",
+  "w": "наконе'ц: the result, perfective."
+ },
+ {
+  "q": "Гид весь день ___ нам го'род.",
+  "v": "показывать",
+  "t": "past",
+  "p": "on",
+  "e": "The guide showed us around the town all day.",
+  "b": "A2",
+  "w": "Весь день: imperfective."
+ },
+ {
+  "q": "Гид ___ нам Кремль, и мы пошли' обе'дать.",
+  "v": "показать",
+  "t": "past",
+  "p": "on",
+  "e": "The guide showed us the Kremlin, and we went to have lunch.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Ба'бушка ка'ждый ве'чер ___ нам ска'зки.",
+  "v": "рассказывать",
+  "t": "past",
+  "p": "ona",
+  "e": "Grandma told us fairy tales every evening.",
+  "b": "A2",
+  "w": "Every evening: imperfective."
+ },
+ {
+  "q": "А'нна ___ всё, и мы засмея'лись.",
+  "v": "рассказать",
+  "t": "past",
+  "p": "ona",
+  "e": "Anna told us everything, and we burst out laughing.",
+  "b": "A2",
+  "w": "A result follows: perfective."
+ },
+ {
+  "q": "Мы ча'сто ___ друзе'й на да'чу.",
+  "v": "приглашать",
+  "t": "past",
+  "p": "my",
+  "e": "We often invited friends to the dacha.",
+  "b": "B1",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Мы ___ друзе'й, и они' пришли'.",
+  "v": "пригласить",
+  "t": "past",
+  "p": "my",
+  "e": "We invited our friends, and they came.",
+  "b": "A2",
+  "w": "One invitation with a result: perfective."
+ },
+ {
+  "q": "Ра'ньше О'льга ка'ждый день ___ его' в метро'.",
+  "v": "встречать",
+  "t": "past",
+  "p": "ona",
+  "e": "Olga used to meet him in the metro every day.",
+  "b": "B1",
+  "w": "Every day: imperfective."
+ },
+ {
+  "q": "Вчера' я ___ его' в метро' и узна'ла но'вость.",
+  "v": "встретить",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "Yesterday I met him in the metro and heard the news.",
+  "b": "A2",
+  "w": "One meeting: perfective."
+ },
+ {
+  "q": "О'льга ___ рабо'ту за неде'лю.",
+  "v": "найти",
+  "t": "past",
+  "p": "ona",
+  "e": "Olga found a job in a week.",
+  "b": "B1",
+  "w": "за неде'лю: perfective."
+ },
+ {
+  "q": "Мы до'лго ___, куда' пое'хать.",
+  "v": "думать",
+  "t": "past",
+  "p": "my",
+  "e": "We thought for a long time about where to go.",
+  "b": "A2",
+  "w": "До'лго: imperfective."
+ },
+ {
+  "q": "Мы ___ и реши'ли пое'хать в Со'чи.",
+  "v": "подумать",
+  "t": "past",
+  "p": "my",
+  "e": "We thought it over and decided to go to Sochi.",
+  "b": "B1",
+  "w": "A short think with a result: perfective."
+ },
+ {
+  "q": "Мы до'лго ___, куда' пое'хать, и наконе'ц реши'ли.",
+  "v": "решать",
+  "t": "past",
+  "p": "my",
+  "e": "We spent a long time deciding where to go, and finally decided.",
+  "b": "B1",
+  "w": "До'лго: the process, imperfective."
+ },
+ {
+  "q": "Он ___ уе'хать, и уе'хал.",
+  "v": "решить",
+  "t": "past",
+  "p": "on",
+  "e": "He decided to leave, and left.",
+  "b": "A2",
+  "w": "One decision with a result: perfective."
+ },
+ {
+  "q": "Ра'ньше мы ча'сто ___ пи'сьма от де'душки.",
+  "v": "получать",
+  "t": "past",
+  "p": "my",
+  "e": "We used to often get letters from Grandpa.",
+  "b": "A2",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Вчера' мы ___ письмо' от де'душки, вот оно'.",
+  "v": "получить",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday we got a letter from Grandpa, here it is.",
+  "b": "A2",
+  "w": "One event, the result is here: perfective."
+ },
+ {
+  "q": "Ка'ждое воскресе'нье де'ти ___ ба'бушке в саду'.",
+  "v": "помогать",
+  "t": "past",
+  "p": "oni",
+  "e": "Every Sunday the children helped Grandma in the garden.",
+  "b": "A2",
+  "w": "Every Sunday: imperfective."
+ },
+ {
+  "q": "Сосе'д ___ мне, и маши'на пое'хала.",
+  "v": "помочь",
+  "t": "past",
+  "p": "on",
+  "e": "The neighbour helped me, and the car started.",
+  "b": "B1",
+  "w": "One act of help with a result: perfective."
+ },
+ {
+  "q": "Учи'тель ча'сто ___ меня' на уро'ке.",
+  "v": "спрашивать",
+  "t": "past",
+  "p": "on",
+  "e": "The teacher often asked me questions in class.",
+  "b": "A2",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Я ___ доро'гу у полице'йского и пошёл да'льше.",
+  "v": "спросить",
+  "t": "past",
+  "p": "ya",
+  "g": "m",
+  "e": "I asked a policeman the way and went on.",
+  "b": "B1",
+  "w": "One question, then the next action: perfective."
+ },
+ {
+  "q": "Я весь ве'чер ___ статью' и уста'ла.",
+  "v": "переводить",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "I spent the whole evening translating an article and got tired.",
+  "b": "B1",
+  "w": "Весь вечер: imperfective."
+ },
+ {
+  "q": "Я ___ статью' за час и пошла' гуля'ть.",
+  "v": "перевести",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "I translated the article in an hour and went for a walk.",
+  "b": "B1",
+  "w": "за час: perfective."
+ },
+ {
+  "q": "Ма'ша до'лго ___, она' не зна'ла, что наде'ть.",
+  "v": "одеваться",
+  "t": "past",
+  "p": "ona",
+  "e": "Masha took a long time getting dressed, she didn't know what to wear.",
+  "b": "B1",
+  "w": "До'лго: imperfective."
+ },
+ {
+  "q": "Ма'ша бы'стро ___ и вы'шла.",
+  "v": "одеться",
+  "t": "past",
+  "p": "ona",
+  "e": "Masha got dressed quickly and went out.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Ра'ньше мы всегда' ___ в шко'ле.",
+  "v": "завтракать",
+  "t": "past",
+  "p": "my",
+  "e": "We always used to have breakfast at school.",
+  "b": "B1",
+  "w": "всегда': imperfective."
+ },
+ {
+  "q": "Мы ___ и пошли' в музе'й.",
+  "v": "позавтракать",
+  "t": "past",
+  "p": "my",
+  "e": "We had breakfast and went to the museum.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Ра'ньше Ива'н ка'ждый день ___ в столо'вой.",
+  "v": "обедать",
+  "t": "past",
+  "p": "on",
+  "e": "Ivan used to have lunch in the canteen every day.",
+  "b": "A2",
+  "w": "Every day: imperfective."
+ },
+ {
+  "q": "Ива'н ___ и верну'лся на рабо'ту.",
+  "v": "пообедать",
+  "t": "past",
+  "p": "on",
+  "e": "Ivan had lunch and went back to work.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Мы ___ и пошли' гуля'ть по на'бережной.",
+  "v": "поужинать",
+  "t": "past",
+  "p": "my",
+  "e": "We had dinner and went for a walk along the embankment.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Мы ка'ждый ве'чер ___ в э'том кафе'.",
+  "v": "ужинать",
+  "t": "past",
+  "p": "my",
+  "e": "We had dinner in this café every evening.",
+  "b": "B1",
+  "w": "Every evening: imperfective."
+ },
+ {
+  "q": "Мы це'лый час ___ в па'рке.",
+  "v": "гулять",
+  "t": "past",
+  "p": "my",
+  "e": "We walked in the park for a whole hour.",
+  "b": "A2",
+  "w": "A whole hour: imperfective."
+ },
+ {
+  "q": "Мы немно'го ___ и пошли' домо'й.",
+  "v": "погулять",
+  "t": "past",
+  "p": "my",
+  "e": "We walked a little and went home.",
+  "b": "B1",
+  "w": "A short bounded walk, then the next action: perfective."
+ },
+ {
+  "q": "Ребёнок весь ве'чер ___.",
+  "v": "плакать",
+  "t": "past",
+  "p": "on",
+  "e": "The child cried all evening.",
+  "b": "A2",
+  "w": "Весь вечер: imperfective."
+ },
+ {
+  "q": "Ребёнок уви'дел врача' и ___.",
+  "v": "заплакать",
+  "t": "past",
+  "p": "on",
+  "e": "The child saw the doctor and burst into tears.",
+  "b": "B1",
+  "w": "The start of crying, one moment: perfective."
+ },
+ {
+  "q": "Мы весь фильм ___.",
+  "v": "смеяться",
+  "t": "past",
+  "p": "my",
+  "e": "We laughed through the whole film.",
+  "b": "A2",
+  "w": "The whole film: imperfective."
+ },
+ {
+  "q": "Все посмотре'ли на него' и ___.",
+  "v": "засмеяться",
+  "t": "past",
+  "p": "oni",
+  "e": "Everyone looked at him and burst out laughing.",
+  "b": "B1",
+  "w": "The start of laughing: perfective."
+ },
+ {
+  "q": "А'нна ___ нам одну' пе'сню и се'ла.",
+  "v": "спеть",
+  "t": "past",
+  "p": "ona",
+  "e": "Anna sang us one song and sat down.",
+  "b": "A2",
+  "w": "One song, then the next action: perfective."
+ },
+ {
+  "q": "А'нна весь ве'чер ___ пе'сни.",
+  "v": "петь",
+  "t": "past",
+  "p": "ona",
+  "e": "Anna sang songs all evening.",
+  "b": "A2",
+  "w": "Весь вечер: imperfective."
+ },
+ {
+  "q": "Сын ___ ко'шку и показа'л мне.",
+  "v": "нарисовать",
+  "t": "past",
+  "p": "on",
+  "e": "My son drew a cat and showed it to me.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Сын це'лый час ___ ко'шку.",
+  "v": "рисовать",
+  "t": "past",
+  "p": "on",
+  "e": "My son spent a whole hour drawing a cat.",
+  "b": "A2",
+  "w": "A whole hour: imperfective."
+ },
+ {
+  "q": "Он до'лго не ___ мне, но пото'м пове'рил.",
+  "v": "верить",
+  "t": "past",
+  "p": "on",
+  "e": "For a long time he didn't believe me, but then he did.",
+  "b": "B1",
+  "w": "До'лго: imperfective."
+ },
+ {
+  "q": "Он ___ мне и дал де'ньги.",
+  "v": "поверить",
+  "t": "past",
+  "p": "on",
+  "e": "He believed me and gave me the money.",
+  "b": "B1",
+  "w": "One decision with a result: perfective."
+ },
+ {
+  "q": "Ра'ньше врачи' ча'сто ___ мне отдыха'ть.",
+  "v": "советовать",
+  "t": "past",
+  "p": "oni",
+  "e": "Doctors often used to advise me to rest.",
+  "b": "B1",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Врач ___ мне э'ту мазь, и она' помогла'.",
+  "v": "посоветовать",
+  "t": "past",
+  "p": "on",
+  "e": "The doctor recommended this cream to me, and it helped.",
+  "b": "B1",
+  "w": "One piece of advice with a result: perfective."
+ },
+ {
+  "q": "О'льга ___ торт и сказа'ла: «Вку'сно!»",
+  "v": "попробовать",
+  "t": "past",
+  "p": "ona",
+  "e": "Olga tried the cake and said: \"Tasty!\"",
+  "b": "A2",
+  "w": "One try, then the next action: perfective."
+ },
+ {
+  "q": "В про'шлом году' он мно'го раз ___ бро'сить кури'ть.",
+  "v": "пробовать",
+  "t": "past",
+  "p": "on",
+  "e": "Last year he tried to quit smoking many times.",
+  "b": "B1",
+  "w": "Many times: imperfective."
+ },
+ {
+  "q": "Ра'ньше он ча'сто ___ рабо'ту.",
+  "v": "бросать",
+  "t": "past",
+  "p": "on",
+  "e": "He used to quit jobs often.",
+  "b": "B1",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Он ___ кури'ть и стал бе'гать.",
+  "v": "бросить",
+  "t": "past",
+  "p": "on",
+  "e": "He quit smoking and took up running.",
+  "b": "B1",
+  "w": "One decision, then the next action: perfective."
+ },
+ {
+  "q": "Ра'ньше Серге'й ча'сто ___ на рабо'ту.",
+  "v": "опаздывать",
+  "t": "past",
+  "p": "on",
+  "e": "Sergei used to be late for work often.",
+  "b": "A2",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Вчера' Серге'й ___ на рабо'ту на час.",
+  "v": "опоздать",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Sergei was an hour late for work.",
+  "b": "A2",
+  "w": "One event: perfective."
+ },
+ {
+  "q": "Ра'ньше Ма'ша всегда' ___, а тепе'рь гру'стная.",
+  "v": "улыбаться",
+  "t": "past",
+  "p": "ona",
+  "e": "Masha always used to smile, but now she's sad.",
+  "b": "B1",
+  "w": "всегда': imperfective."
+ },
+ {
+  "q": "Ма'ша уви'дела меня' и ___.",
+  "v": "улыбнуться",
+  "t": "past",
+  "p": "ona",
+  "e": "Masha saw me and smiled.",
+  "b": "A2",
+  "w": "One smile, a reaction: perfective."
+ },
+ {
+  "q": "В про'шлом году' э'тот ма'льчик ___ чемпио'ном.",
+  "v": "стать",
+  "t": "past",
+  "p": "on",
+  "e": "Last year this boy became champion.",
+  "b": "B1",
+  "w": "One change with a result: perfective."
+ },
+ {
+  "q": "Ра'ньше мне ___ его' пе'сни, тепе'рь нет.",
+  "v": "нравиться",
+  "t": "past",
+  "p": "oni",
+  "e": "I used to like his songs, but not any more.",
+  "b": "B1",
+  "w": "A long state in the past: imperfective."
+ },
+ {
+  "q": "Мне сра'зу ___ э'тот го'род.",
+  "v": "понравиться",
+  "t": "past",
+  "p": "on",
+  "e": "I liked this town straight away.",
+  "b": "A2",
+  "w": "сра'зу: one moment, perfective."
+ },
+ {
+  "q": "Ра'ньше Ива'н ка'ждое у'тро ___ дверь на ключ.",
+  "v": "закрывать",
+  "t": "past",
+  "p": "on",
+  "e": "Ivan used to lock the door every morning.",
+  "b": "B1",
+  "w": "Every morning: imperfective."
+ },
+ {
+  "q": "Ива'н ___ дверь и ушёл.",
+  "v": "закрыть",
+  "t": "past",
+  "p": "on",
+  "e": "Ivan closed the door and left.",
+  "b": "A1",
+  "w": "Then the next action: perfective."
+ },
+ {
+  "q": "Мы це'лый день ___ кварти'ру.",
+  "v": "продавать",
+  "t": "past",
+  "p": "my",
+  "e": "We spent the whole day trying to sell the flat.",
+  "b": "B1",
+  "w": "The process: imperfective."
+ },
+ {
+  "q": "Мы ___ кварти'ру и купи'ли дом.",
+  "v": "продать",
+  "t": "past",
+  "p": "my",
+  "e": "We sold the flat and bought a house.",
+  "b": "B1",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Ра'ньше мы ка'ждый ме'сяц ___ за кварти'ру.",
+  "v": "платить",
+  "t": "past",
+  "p": "my",
+  "e": "We used to pay for the flat every month.",
+  "b": "B1",
+  "w": "Every month: imperfective."
+ },
+ {
+  "q": "Мы ___ за у'жин и ушли'.",
+  "v": "заплатить",
+  "t": "past",
+  "p": "my",
+  "e": "We paid for dinner and left.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Фильм шёл, а мы ___ попко'рн.",
+  "v": "есть",
+  "t": "past",
+  "p": "my",
+  "e": "The film was on, and we were eating popcorn.",
+  "b": "B1",
+  "w": "Background action: imperfective."
+ },
+ {
+  "q": "Учи'тель ___ уро'к, и все замолча'ли.",
+  "v": "начать",
+  "t": "past",
+  "p": "on",
+  "e": "The teacher started the lesson, and everyone fell silent.",
+  "b": "B1",
+  "w": "One start with a result: perfective."
+ },
+ {
+  "q": "Обы'чно мы ___ рабо'ту в шесть.",
+  "v": "заканчивать",
+  "t": "past",
+  "p": "my",
+  "e": "We usually finished work at six.",
+  "b": "B1",
+  "w": "обы'чно: imperfective."
+ },
+ {
+  "q": "Мы ___ рабо'ту и пошли' в бар.",
+  "v": "закончить",
+  "t": "past",
+  "p": "my",
+  "e": "We finished work and went to a bar.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Учи'тель весь уро'к ___ на нас.",
+  "v": "кричать",
+  "t": "past",
+  "p": "on",
+  "e": "The teacher shouted at us the whole lesson.",
+  "b": "B1",
+  "w": "The whole lesson: imperfective."
+ },
+ {
+  "q": "Кто-то ___ «Пожа'р!», и все побежа'ли.",
+  "v": "крикнуть",
+  "t": "past",
+  "p": "on",
+  "e": "Someone shouted \"Fire!\", and everyone ran.",
+  "b": "B1",
+  "w": "One shout: perfective."
+ },
+ {
+  "q": "Ра'ньше мы ча'сто ___ э'ту му'зыку.",
+  "v": "слушать",
+  "t": "past",
+  "p": "my",
+  "e": "We used to listen to this music often.",
+  "b": "A2",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Мы ___ ле'кцию и пошли' обе'дать.",
+  "v": "послушать",
+  "t": "past",
+  "p": "my",
+  "e": "We listened to the lecture and went to lunch.",
+  "b": "B1",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Вдруг я ___ крик и вы'бежал на у'лицу.",
+  "v": "услышать",
+  "t": "past",
+  "p": "ya",
+  "g": "m",
+  "e": "Suddenly I heard a shout and ran out into the street.",
+  "b": "B1",
+  "w": "вдруг: a sudden moment, perfective."
+ },
+ {
+  "q": "Вдруг я ___ А'нну и помаха'л ей.",
+  "v": "увидеть",
+  "t": "past",
+  "p": "ya",
+  "g": "m",
+  "e": "Suddenly I saw Anna and waved to her.",
+  "b": "B1",
+  "w": "вдруг: perfective."
+ },
+ {
+  "q": "Учи'тель объясни'л, и О'льга наконе'ц ___.",
+  "v": "понять",
+  "t": "past",
+  "p": "ona",
+  "e": "The teacher explained, and Olga finally understood.",
+  "b": "A2",
+  "w": "наконе'ц: perfective."
+ },
+ {
+  "q": "Ма'ма ___ ва'зу на стол и ушла'.",
+  "v": "поставить",
+  "t": "past",
+  "p": "ona",
+  "e": "Mum put the vase on the table and left.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Ра'ньше ма'ма всегда' ___ цветы' на окно'.",
+  "v": "ставить",
+  "t": "past",
+  "p": "ona",
+  "e": "Mum always used to put flowers on the windowsill.",
+  "b": "B1",
+  "w": "всегда': imperfective."
+ },
+ {
+  "q": "Я ___ ключи' в су'мку и вы'шла.",
+  "v": "положить",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "I put the keys in my bag and went out.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Ра'ньше муж всегда' ___ ключи' в карма'н.",
+  "v": "класть",
+  "t": "past",
+  "p": "on",
+  "e": "My husband always used to put his keys in his pocket.",
+  "b": "B1",
+  "w": "всегда': imperfective."
+ },
+ {
+  "q": "Вчера' Серге'й ___ мне и пригласи'л в кино'.",
+  "v": "позвонить",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Sergei called me and invited me to the cinema.",
+  "b": "A2",
+  "w": "One call, then the next action: perfective."
+ },
+ {
+  "q": "Ра'ньше Ива'н всегда' ___ пра'вду.",
+  "v": "говорить",
+  "t": "past",
+  "p": "on",
+  "e": "Ivan always used to tell the truth.",
+  "b": "A2",
+  "w": "всегда': imperfective."
+ },
+ {
+  "q": "Ива'н ___ «Пока'!» и ушёл.",
+  "v": "сказать",
+  "t": "past",
+  "p": "on",
+  "e": "Ivan said \"Bye!\" and left.",
+  "b": "A1",
+  "w": "One utterance, then the next action: perfective."
+ },
+ {
+  "q": "Он ча'сто ___ ей пи'сьма, но она' не отвеча'ла.",
+  "v": "писать",
+  "t": "past",
+  "p": "on",
+  "e": "He often wrote her letters, but she didn't answer.",
+  "b": "B1",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Ра'ньше Ма'ша ка'ждый ве'чер ___ уро'ки.",
+  "v": "делать",
+  "t": "past",
+  "p": "ona",
+  "e": "Masha used to do her homework every evening.",
+  "b": "B1",
+  "w": "Every evening: imperfective."
+ },
+ {
+  "q": "Я ___ уро'ки и пошла' гуля'ть.",
+  "v": "сделать",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "I did my homework and went for a walk.",
+  "b": "A1",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Серге'й за год ___ говори'ть по-ру'сски.",
+  "v": "научиться",
+  "t": "past",
+  "p": "on",
+  "e": "Sergei learnt to speak Russian in a year.",
+  "b": "B1",
+  "w": "за год: perfective."
+ },
+ {
+  "q": "Серге'й три го'да ___ в Москве'.",
+  "v": "учиться",
+  "t": "past",
+  "p": "on",
+  "e": "Sergei studied in Moscow for three years.",
+  "b": "B1",
+  "w": "Three years: imperfective."
+ },
+ {
+  "q": "Кто-то ___ мою' ру'чку, её нет.",
+  "v": "взять",
+  "t": "past",
+  "p": "on",
+  "e": "Someone took my pen, it's not here.",
+  "b": "A2",
+  "w": "The result is here now: perfective."
+ },
+ {
+  "q": "Ра'ньше Ма'ша всегда' ___ мои' ве'щи.",
+  "v": "брать",
+  "t": "past",
+  "p": "ona",
+  "e": "Masha always used to take my things.",
+  "b": "A2",
+  "w": "всегда': imperfective."
+ },
+ {
+  "q": "Мы до'лго ___ госте'й у вхо'да.",
+  "v": "встречать",
+  "t": "past",
+  "p": "my",
+  "e": "We spent a long time greeting the guests at the entrance.",
+  "b": "B1",
+  "w": "До'лго: imperfective."
+ },
+ {
+  "q": "Мы два часа' ___ на вопро'сы экза'мена.",
+  "v": "отвечать",
+  "t": "past",
+  "p": "my",
+  "e": "We spent two hours answering the exam questions.",
+  "b": "B1",
+  "w": "Two hours: imperfective."
+ },
+ {
+  "q": "Вчера' О'льга ___ все пи'сьма и ушла'.",
+  "v": "прочитать",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday Olga read all the letters and left.",
+  "b": "A2",
+  "w": "всё and then the next action: perfective."
+ },
+ {
+  "q": "Ра'ньше О'льга ча'сто ___ мне пи'сьма.",
+  "v": "писать",
+  "t": "past",
+  "p": "ona",
+  "e": "Olga used to write me letters often.",
+  "b": "A2",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Вчера' па'па ___ маши'ну и поста'вил её в гара'ж.",
+  "v": "помыть",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Dad washed the car and put it in the garage.",
+  "b": "B1",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Ра'ньше па'па ка'ждую суббо'ту ___ маши'ну.",
+  "v": "мыть",
+  "t": "past",
+  "p": "on",
+  "e": "Dad used to wash the car every Saturday.",
+  "b": "B1",
+  "w": "Every Saturday: imperfective."
+ },
+ {
+  "q": "Серге'й ___ меня' на вокза'ле и повёз домо'й.",
+  "v": "встретить",
+  "t": "past",
+  "p": "on",
+  "e": "Sergei met me at the station and drove me home.",
+  "b": "B1",
+  "w": "One meeting, then the next action: perfective."
+ },
+ {
+  "q": "Ра'ньше ма'ма ча'сто ___ пиро'г по воскресе'ньям.",
+  "v": "готовить",
+  "t": "past",
+  "p": "ona",
+  "e": "Mum used to bake a pie on Sundays.",
+  "b": "A2",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Вчера' я ___ пять страни'ц и пошла' гуля'ть.",
+  "v": "перевести",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "Yesterday I translated five pages and went for a walk.",
+  "b": "B1",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Мы ___ все ва'ши сове'ты, спаси'бо.",
+  "v": "получить",
+  "t": "past",
+  "p": "my",
+  "e": "We got all your advice, thank you.",
+  "b": "B1",
+  "w": "The result is here: perfective."
+ },
+ {
+  "q": "Он де'сять лет ___ э'тот дом.",
+  "v": "строить",
+  "t": "past",
+  "p": "on",
+  "e": "He spent ten years building this house.",
+  "b": "B1",
+  "w": "Ten years: imperfective."
+ },
+ {
+  "q": "Дми'трий ___ и вы'шел из до'ма.",
+  "v": "позавтракать",
+  "t": "past",
+  "p": "on",
+  "e": "Dmitry had breakfast and left the house.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Обы'чно Дми'трий ___ в кафе' у рабо'ты.",
+  "v": "завтракать",
+  "t": "past",
+  "p": "on",
+  "e": "Dmitry usually had breakfast in a café near work.",
+  "b": "B1",
+  "w": "обы'чно: imperfective."
+ },
+ {
+  "q": "Мы ___ все пи'сьма и пошли' на по'чту.",
+  "v": "написать",
+  "t": "past",
+  "p": "my",
+  "e": "We wrote all the letters and went to the post office.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Она' до'лго ___ меня' о жи'зни в Москве'.",
+  "v": "спрашивать",
+  "t": "past",
+  "p": "ona",
+  "e": "She asked me about life in Moscow for a long time.",
+  "b": "B1",
+  "w": "До'лго: imperfective."
+ },
+ {
+  "q": "Она' ___ меня', где по'чта, и пошла' туда'.",
+  "v": "спросить",
+  "t": "past",
+  "p": "ona",
+  "e": "She asked me where the post office was and went there.",
+  "b": "A2",
+  "w": "One question, then the next action: perfective."
+ },
+ {
+  "q": "Мы ча'сто ___ О'льгу на у'лице.",
+  "v": "видеть",
+  "t": "past",
+  "p": "my",
+  "e": "We often saw Olga in the street.",
+  "b": "B1",
+  "w": "ча'сто: imperfective."
+ }
+]

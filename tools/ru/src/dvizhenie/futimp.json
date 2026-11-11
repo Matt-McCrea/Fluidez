@@ -1,0 +1,353 @@
+[
+ {
+  "q": "За'втра мы ___ в теа'тр пешко'м.",
+  "v": "пойти",
+  "t": "fut",
+  "p": "my",
+  "e": "Tomorrow we'll walk to the theatre.",
+  "b": "A1",
+  "w": "Setting off on foot: пойдём."
+ },
+ {
+  "q": "За'втра мы ___ в Петербу'рг на по'езде.",
+  "v": "поехать",
+  "t": "fut",
+  "p": "my",
+  "e": "Tomorrow we'll go to Petersburg by train.",
+  "b": "A1",
+  "w": "Setting off by transport: пое'дем."
+ },
+ {
+  "q": "Ле'том я ___ к ба'бушке в дере'вню на авто'бусе.",
+  "v": "поехать",
+  "t": "fut",
+  "p": "ya",
+  "e": "In the summer I'll go to my grandmother's in the village by bus.",
+  "b": "A2",
+  "w": "By transport: пое'ду."
+ },
+ {
+  "q": "Ве'чером я ___ в магази'н за угло'м.",
+  "v": "пойти",
+  "t": "fut",
+  "p": "ya",
+  "e": "In the evening I'll go to the corner shop.",
+  "b": "A1",
+  "w": "On foot, nearby: пойду'."
+ },
+ {
+  "q": "Ты ___ с на'ми в кино' пешко'м?",
+  "v": "пойти",
+  "t": "fut",
+  "p": "ty",
+  "e": "Will you walk to the cinema with us?",
+  "b": "A1",
+  "w": "On foot: пойдёшь."
+ },
+ {
+  "q": "Вы ___ в Москву' на маши'не?",
+  "v": "поехать",
+  "t": "fut",
+  "p": "vy",
+  "e": "Will you drive to Moscow?",
+  "b": "A2",
+  "w": "By car: пое'дете."
+ },
+ {
+  "q": "Ско'ро Ма'ша ___ к нам из Ки'ева.",
+  "v": "приехать",
+  "t": "fut",
+  "p": "ona",
+  "e": "Soon Masha will come to us from Kyiv.",
+  "b": "A2",
+  "w": "Arriving from another city, by transport: прие'дет."
+ },
+ {
+  "q": "Ива'н ___ домо'й пешко'м че'рез час.",
+  "v": "прийти",
+  "t": "fut",
+  "p": "on",
+  "e": "Ivan will walk home in an hour.",
+  "b": "A2",
+  "w": "Arriving on foot: придёт."
+ },
+ {
+  "q": "Я ___ к тебе' пешко'м, э'то бли'зко.",
+  "v": "прийти",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll walk over to you, it's close.",
+  "b": "A2",
+  "w": "On foot: приду'."
+ },
+ {
+  "q": "Мы ___ в аэропо'рт на такси'.",
+  "v": "приехать",
+  "t": "fut",
+  "p": "my",
+  "e": "We'll get to the airport by taxi.",
+  "b": "A2",
+  "w": "Arriving by taxi: прие'дем."
+ },
+ {
+  "q": "За'втра па'па ___ на рабо'ту пешко'м ра'но.",
+  "v": "уйти",
+  "t": "fut",
+  "p": "on",
+  "e": "Tomorrow Dad will walk off to work early.",
+  "b": "A2",
+  "w": "Leaving on foot: уйдёт."
+ },
+ {
+  "q": "Ско'ро мы ___ из Москвы' на по'езде.",
+  "v": "уехать",
+  "t": "fut",
+  "p": "my",
+  "e": "Soon we'll leave Moscow by train.",
+  "b": "B1",
+  "w": "Leaving by train: уе'дем."
+ },
+ {
+  "q": "Я ___ из до'ма в семь и пойду' пешко'м.",
+  "v": "выйти",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll leave the house at seven and walk.",
+  "b": "A2",
+  "w": "Out of: вы'йду."
+ },
+ {
+  "q": "Мы ___ у'лицу на зелёный свет.",
+  "v": "перейти",
+  "t": "fut",
+  "p": "my",
+  "e": "We'll cross the street on green.",
+  "b": "A2",
+  "w": "Across: перейдём."
+ },
+ {
+  "q": "По доро'ге я ___ в апте'ку на мину'ту.",
+  "v": "зайти",
+  "t": "fut",
+  "p": "ya",
+  "e": "On the way I'll drop in at the chemist's for a minute.",
+  "b": "B1",
+  "w": "A short stop: зайду'."
+ },
+ {
+  "q": "Ты ___ к нам ве'чером на ча'й?",
+  "v": "зайти",
+  "t": "fut",
+  "p": "ty",
+  "e": "Will you drop in on us for tea this evening?",
+  "b": "B1",
+  "w": "A short visit: зайдёшь."
+ },
+ {
+  "q": "За'втра я ___ тебе' твою' кни'гу.",
+  "v": "принести",
+  "t": "fut",
+  "p": "ya",
+  "e": "Tomorrow I'll bring you your book.",
+  "b": "A2",
+  "w": "Bringing: принесу'."
+ },
+ {
+  "q": "Ты ___ вино' на пра'здник?",
+  "v": "принести",
+  "t": "fut",
+  "p": "ty",
+  "e": "Will you bring wine to the party?",
+  "b": "A2",
+  "w": "Bringing: принесёшь."
+ },
+ {
+  "q": "Учи'тель ___ в класс, и все вста'нут.",
+  "v": "войти",
+  "t": "fut",
+  "p": "on",
+  "e": "The teacher will come into the classroom, and everyone will stand up.",
+  "b": "B1",
+  "w": "Into: войдёт."
+ },
+ {
+  "q": "Ле'том мы ___ на мо'ре на маши'не.",
+  "v": "поехать",
+  "t": "fut",
+  "p": "my",
+  "e": "In the summer we'll drive to the seaside.",
+  "b": "A1",
+  "w": "Setting off by car: пое'дем."
+ },
+ {
+  "q": "За'втра А'нна ___ к нам в го'сти пешко'м.",
+  "v": "прийти",
+  "t": "fut",
+  "p": "ona",
+  "e": "Tomorrow Anna will walk over to visit us.",
+  "b": "A2",
+  "w": "On foot: придёт."
+ },
+ {
+  "q": "Го'сти ___ на маши'не в семь.",
+  "v": "приехать",
+  "t": "fut",
+  "p": "oni",
+  "e": "The guests will come by car at seven.",
+  "b": "A2",
+  "w": "By car: прие'дут."
+ },
+ {
+  "q": "Де'ти ___ из шко'лы пешко'м в два.",
+  "v": "прийти",
+  "t": "fut",
+  "p": "oni",
+  "e": "The children will walk home from school at two.",
+  "b": "A2",
+  "w": "On foot: приду'т."
+ },
+ {
+  "q": "Когда' я бу'ду жить в Москве', я ___ на рабо'ту на метро'.",
+  "v": "ездить",
+  "t": "fut",
+  "p": "ya",
+  "e": "When I live in Moscow, I'll go to work by metro.",
+  "b": "B1",
+  "w": "A future habit, by transport: бу'ду е'здить."
+ },
+ {
+  "q": "Когда' мы бу'дем жить на да'че, мы ___ в лес ка'ждый день.",
+  "v": "ходить",
+  "t": "fut",
+  "p": "my",
+  "e": "When we live at the dacha, we'll go to the woods every day.",
+  "b": "B1",
+  "w": "A future habit, on foot: бу'дем ходи'ть."
+ },
+ {
+  "q": "Обеща'ю, я ___ в бассе'йн ка'ждую неде'лю.",
+  "v": "ходить",
+  "t": "fut",
+  "p": "ya",
+  "e": "I promise, I'll go to the pool every week.",
+  "b": "B1",
+  "w": "A future habit: бу'ду ходи'ть."
+ },
+ {
+  "q": "Ма'ша, ___ сюда', посмотри'!",
+  "v": "идти",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, come here, look!",
+  "b": "A1",
+  "w": "Come (on foot), now: иди'."
+ },
+ {
+  "q": "Ива'н, ___ домо'й, уже' по'здно.",
+  "v": "идти",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, go home, it's already late.",
+  "b": "A1",
+  "w": "Go (on foot), one direction: иди'."
+ },
+ {
+  "q": "Ребя'та, ___ сюда', я вам что-то покажу'.",
+  "v": "идти",
+  "t": "imp",
+  "p": "vy",
+  "e": "Guys, come here, I'll show you something.",
+  "b": "A1",
+  "w": "Come (on foot): иди'те."
+ },
+ {
+  "q": "Серге'й, ___ осторо'жно, доро'га ско'льзкая.",
+  "v": "ехать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Sergei, drive carefully, the road is slippery.",
+  "b": "A2",
+  "w": "Drive, on a trip: езжа'й."
+ },
+ {
+  "q": "Ива'н Петро'вич, ___ на такси', уже' по'здно.",
+  "v": "ехать",
+  "t": "imp",
+  "p": "vy",
+  "e": "Ivan Petrovich, go by taxi, it's already late.",
+  "b": "B1",
+  "w": "Go by transport: езжа'йте."
+ },
+ {
+  "q": "Ма'ша, ___ в шко'лу пешко'м, э'то поле'зно.",
+  "v": "ходить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, walk to school, it's good for you.",
+  "b": "A2",
+  "w": "A habit: ходи'."
+ },
+ {
+  "q": "Ива'н, не ___ туда' оди'н, там опа'сно.",
+  "v": "ходить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, don't go there alone, it's dangerous.",
+  "b": "B1",
+  "w": "A warning about going there at all: не ходи'."
+ },
+ {
+  "q": "Ребя'та, ___ скоре'е, авто'бус ухо'дит!",
+  "v": "бежать",
+  "t": "imp",
+  "p": "vy",
+  "e": "Guys, run quickly, the bus is leaving!",
+  "b": "A2",
+  "w": "Run, now, one way: беги'те."
+ },
+ {
+  "q": "О'льга Петро'вна, ___ хлеб, пожа'луйста.",
+  "v": "принести",
+  "t": "imp",
+  "p": "vy",
+  "e": "Olga Petrovna, please bring the bread.",
+  "b": "A2",
+  "w": "Bring: принеси'те."
+ },
+ {
+  "q": "Ма'ма, па'па, ___ скоре'е домо'й на такси'.",
+  "v": "приехать",
+  "t": "imp",
+  "p": "vy",
+  "e": "Mum, Dad, come home quickly by taxi.",
+  "b": "B1",
+  "w": "Arrive by transport: приезжа'йте."
+ },
+ {
+  "q": "Де'ти, ___ у'лицу то'лько на зелёный свет.",
+  "v": "переходить",
+  "t": "imp",
+  "p": "vy",
+  "e": "Children, cross the street only on green.",
+  "b": "A2",
+  "w": "A rule, every time: переходи'те."
+ },
+ {
+  "q": "Ва'ня и Ма'ша, ___ бра'та в шко'лу.",
+  "v": "вести",
+  "t": "imp",
+  "p": "vy",
+  "e": "Vanya and Masha, take your brother to school.",
+  "b": "B1",
+  "w": "Lead on foot, this trip: веди'те."
+ },
+ {
+  "q": "Серге'й Петро'вич, ___ нас на вокза'л, пожа'луйста.",
+  "v": "везти",
+  "t": "imp",
+  "p": "vy",
+  "e": "Sergei Petrovich, please drive us to the station.",
+  "b": "B1",
+  "w": "Take by car, one trip: вези'те."
+ }
+]

@@ -1,0 +1,1138 @@
+[
+ {
+  "q": "Ива'н Петро'вич, ___, пожа'луйста, ме'дленнее.",
+  "v": "говорить",
+  "t": "imp",
+  "p": "vy",
+  "e": "Ivan Petrovich, please speak more slowly.",
+  "b": "A1"
+ },
+ {
+  "q": "Ма'ша, ___ мне, пожа'луйста, ве'чером.",
+  "v": "позвонить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, please call me in the evening.",
+  "b": "A1"
+ },
+ {
+  "q": "А'нна Серге'евна, ___ нам, пожа'луйста, ва'шу кни'гу.",
+  "v": "показать",
+  "t": "imp",
+  "p": "vy",
+  "e": "Anna Sergeevna, please show us your book.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ма, ___ мне, пожа'луйста, ска'зку.",
+  "v": "рассказать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Mum, please tell me a fairy tale.",
+  "b": "A1"
+ },
+ {
+  "q": "Па'па, ___ мне, пожа'луйста, э'ту зада'чу.",
+  "v": "объяснить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Dad, please explain this problem to me.",
+  "b": "A2"
+ },
+ {
+  "q": "Серге'й, ___ окно', пожа'луйста, здесь жа'рко.",
+  "v": "открыть",
+  "t": "imp",
+  "p": "ty",
+  "e": "Sergei, please open the window, it's hot in here.",
+  "b": "A1"
+ },
+ {
+  "q": "Де'ти, ___ дверь, пожа'луйста.",
+  "v": "закрыть",
+  "t": "imp",
+  "p": "vy",
+  "e": "Children, please close the door.",
+  "b": "A1"
+ },
+ {
+  "q": "Ма'ша, ___ меня', пожа'луйста, пять мину'т.",
+  "v": "подождать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, please wait five minutes for me.",
+  "b": "A1"
+ },
+ {
+  "q": "О'льга Ива'новна, ___ здесь, пожа'луйста.",
+  "v": "подождать",
+  "t": "imp",
+  "p": "vy",
+  "e": "Olga Ivanovna, please wait here.",
+  "b": "A2"
+ },
+ {
+  "q": "Ива'н, ___ хлеб, пожа'луйста.",
+  "v": "купить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, please buy some bread.",
+  "b": "A1"
+ },
+ {
+  "q": "Ребя'та, ___ э'то упражне'ние.",
+  "v": "сделать",
+  "t": "imp",
+  "p": "vy",
+  "e": "Guys, do this exercise.",
+  "b": "A1"
+ },
+ {
+  "q": "Дми'трий, ___ мне, пожа'луйста, ру'чку.",
+  "v": "дать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Dmitry, please give me a pen.",
+  "b": "A1"
+ },
+ {
+  "q": "Дми'трий Ива'нович, ___ мне, пожа'луйста, ва'шу ру'чку.",
+  "v": "дать",
+  "t": "imp",
+  "p": "vy",
+  "e": "Dmitry Ivanovich, please give me your pen.",
+  "b": "A2"
+ },
+ {
+  "q": "А'нна, ___ зо'нтик, там дождь.",
+  "v": "взять",
+  "t": "imp",
+  "p": "ty",
+  "e": "Anna, take an umbrella, it's raining out there.",
+  "b": "A1"
+ },
+ {
+  "q": "Де'ти, ___ ва'ши ве'щи и иди'те домо'й.",
+  "v": "взять",
+  "t": "imp",
+  "p": "vy",
+  "e": "Children, take your things and go home.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, ___ на мой вопро'с, пожа'луйста.",
+  "v": "ответить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, please answer my question.",
+  "b": "A2"
+ },
+ {
+  "q": "Ива'н Петро'вич, ___ на вопро'с, пожа'луйста.",
+  "v": "ответить",
+  "t": "imp",
+  "p": "vy",
+  "e": "Ivan Petrovich, please answer the question.",
+  "b": "A2"
+ },
+ {
+  "q": "Серге'й, ___ учи'теля, он зна'ет.",
+  "v": "спросить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Sergei, ask the teacher, he knows.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ма, ___ мне, пожа'луйста, с уро'ками.",
+  "v": "помочь",
+  "t": "imp",
+  "p": "ty",
+  "e": "Mum, please help me with my homework.",
+  "b": "A1"
+ },
+ {
+  "q": "Извини'те, ___ мне, пожа'луйста, я заблуди'лся.",
+  "v": "помочь",
+  "t": "imp",
+  "p": "vy",
+  "e": "Excuse me, please help me, I'm lost.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, ___ суп, он вку'сный.",
+  "v": "попробовать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, try the soup, it's tasty.",
+  "b": "A2"
+ },
+ {
+  "q": "Серге'й, ___ ча'ю, ты замёрз.",
+  "v": "выпить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Sergei, have some tea, you're frozen.",
+  "b": "A2"
+ },
+ {
+  "q": "Де'ти, ___ молоко' и иди'те спать.",
+  "v": "выпить",
+  "t": "imp",
+  "p": "vy",
+  "e": "Children, drink your milk and go to bed.",
+  "b": "A2"
+ },
+ {
+  "q": "Па'па, ___ нам, пожа'луйста, блины'.",
+  "v": "приготовить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Dad, please make us pancakes.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, ___ э'ти слова' к за'втра.",
+  "v": "выучить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, learn these words by tomorrow.",
+  "b": "A2"
+ },
+ {
+  "q": "Ива'н, ___, уже' семь часо'в!",
+  "v": "встать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, get up, it's already seven o'clock!",
+  "b": "A1"
+ },
+ {
+  "q": "Ма'ша, ___, уже' по'здно!",
+  "v": "проснуться",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, wake up, it's already late!",
+  "b": "A2"
+ },
+ {
+  "q": "Ребя'та, ___, уро'к начина'ется.",
+  "v": "сесть",
+  "t": "imp",
+  "p": "vy",
+  "e": "Guys, sit down, the lesson is starting.",
+  "b": "A2"
+ },
+ {
+  "q": "Ива'н, ___ сюда', тут ме'сто.",
+  "v": "сесть",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, sit here, there's a seat here.",
+  "b": "A2"
+ },
+ {
+  "q": "Серге'й, ___ скоре'е, мы ждём!",
+  "v": "вернуться",
+  "t": "imp",
+  "p": "ty",
+  "e": "Sergei, come back soon, we're waiting!",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, не ___ ключи', пожа'луйста.",
+  "v": "забывать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, please don't forget your keys.",
+  "b": "A2"
+ },
+ {
+  "q": "Ива'н, не ___ мне, я за'нят.",
+  "v": "звонить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, don't call me, I'm busy.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, не ___, всё бу'дет хорошо'.",
+  "v": "плакать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, don't cry, everything will be fine.",
+  "b": "A2"
+ },
+ {
+  "q": "Де'ти, не ___, па'па спит.",
+  "v": "кричать",
+  "t": "imp",
+  "p": "vy",
+  "e": "Children, don't shout, Dad is asleep.",
+  "b": "A2"
+ },
+ {
+  "q": "Не ___, Серге'й, соба'ка до'брая.",
+  "v": "бояться",
+  "t": "imp",
+  "p": "ty",
+  "e": "Don't be afraid, Sergei, the dog is friendly.",
+  "b": "A2"
+ },
+ {
+  "q": "Не ___, О'льга Ива'новна, мы помо'жем.",
+  "v": "бояться",
+  "t": "imp",
+  "p": "vy",
+  "e": "Don't be afraid, Olga Ivanovna, we'll help.",
+  "b": "B1"
+ },
+ {
+  "q": "Ива'н, не ___ здесь, пожа'луйста.",
+  "v": "курить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, please don't smoke here.",
+  "b": "A2"
+ },
+ {
+  "q": "Пожа'луйста, не ___ здесь, Серге'й Ива'нович.",
+  "v": "курить",
+  "t": "imp",
+  "p": "vy",
+  "e": "Please don't smoke here, Sergei Ivanovich.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, ___ ру'ки пе'ред едо'й.",
+  "v": "мыть",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, wash your hands before eating.",
+  "b": "A2"
+ },
+ {
+  "q": "Де'ти, ___ ру'ки и сади'тесь за стол.",
+  "v": "помыть",
+  "t": "imp",
+  "p": "vy",
+  "e": "Children, wash your hands and sit down at the table.",
+  "b": "A2"
+ },
+ {
+  "q": "Серге'й, ___ скоре'е, мы опа'здываем!",
+  "v": "одеться",
+  "t": "imp",
+  "p": "ty",
+  "e": "Sergei, get dressed quickly, we're late!",
+  "b": "A2"
+ },
+ {
+  "q": "Де'ти, ___ тепле'е, на у'лице хо'лодно.",
+  "v": "одеться",
+  "t": "imp",
+  "p": "vy",
+  "e": "Children, dress more warmly, it's cold outside.",
+  "b": "A2"
+ },
+ {
+  "q": "Ива'н, ___ ва'зу на стол.",
+  "v": "поставить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, put the vase on the table.",
+  "b": "A2"
+ },
+ {
+  "q": "А'нна, ___ кни'гу на по'лку.",
+  "v": "положить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Anna, put the book on the shelf.",
+  "b": "A2"
+ },
+ {
+  "q": "Серге'й Петро'вич, ___ ва'зу сюда', пожа'луйста.",
+  "v": "поставить",
+  "t": "imp",
+  "p": "vy",
+  "e": "Sergei Petrovich, please put the vase here.",
+  "b": "B1"
+ },
+ {
+  "q": "Ма'ша, ___ мне э'то письмо', пожа'луйста.",
+  "v": "перевести",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, please translate this letter for me.",
+  "b": "B1"
+ },
+ {
+  "q": "Ива'н Ива'нович, ___ э'тот текст, пожа'луйста.",
+  "v": "перевести",
+  "t": "imp",
+  "p": "vy",
+  "e": "Ivan Ivanovich, please translate this text.",
+  "b": "B1"
+ },
+ {
+  "q": "Ма'ша, ___ скоре'е, ты опозда'ешь.",
+  "v": "позавтракать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, have breakfast quickly, you'll be late.",
+  "b": "A2"
+ },
+ {
+  "q": "Дми'трий, ___ с на'ми, у нас суп.",
+  "v": "пообедать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Dmitry, have lunch with us, we have soup.",
+  "b": "A2"
+ },
+ {
+  "q": "Серге'й, ___ хорошо' на мо'ре!",
+  "v": "отдохнуть",
+  "t": "imp",
+  "p": "ty",
+  "e": "Sergei, have a good rest at the sea!",
+  "b": "A2"
+ },
+ {
+  "q": "Ребя'та, ___ немно'го, пото'м рабо'таем.",
+  "v": "отдохнуть",
+  "t": "imp",
+  "p": "vy",
+  "e": "Guys, have a little rest, then we'll work.",
+  "b": "A2"
+ },
+ {
+  "q": "Ива'н, ___ меня' у метро' в шесть.",
+  "v": "встретить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, meet me by the metro at six.",
+  "b": "A2"
+ },
+ {
+  "q": "А'нна, ___ О'льгу на сва'дьбу.",
+  "v": "пригласить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Anna, invite Olga to the wedding.",
+  "b": "B1"
+ },
+ {
+  "q": "Ма'ша, ___ мой телефо'н, пожа'луйста, я его' потеря'л.",
+  "v": "найти",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, please find my phone, I've lost it.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ма, не ___ так мно'го, отдохни'.",
+  "v": "работать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Mum, don't work so much, have a rest.",
+  "b": "A2"
+ },
+ {
+  "q": "Ива'н, ___ ти'ше, ребёнок спит.",
+  "v": "говорить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, speak more quietly, the baby is asleep.",
+  "b": "A1"
+ },
+ {
+  "q": "Ма'ша, ___ пра'вду, пожа'луйста.",
+  "v": "сказать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, tell the truth, please.",
+  "b": "A1"
+ },
+ {
+  "q": "Ива'н Петро'вич, ___, пожа'луйста, где по'чта?",
+  "v": "сказать",
+  "t": "imp",
+  "p": "vy",
+  "e": "Ivan Petrovich, please tell me, where is the post office?",
+  "b": "A1"
+ },
+ {
+  "q": "Ма'ша, ___ мне письмо'.",
+  "v": "написать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, write me a letter.",
+  "b": "A1"
+ },
+ {
+  "q": "Ребя'та, ___ ва'ши имена' здесь.",
+  "v": "написать",
+  "t": "imp",
+  "p": "vy",
+  "e": "Guys, write your names here.",
+  "b": "A2"
+ },
+ {
+  "q": "Серге'й, ___ э'ту кни'гу, она' интере'сная.",
+  "v": "прочитать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Sergei, read this book, it's interesting.",
+  "b": "A1"
+ },
+ {
+  "q": "Ребя'та, ___ текст и отве'тьте на вопро'сы.",
+  "v": "прочитать",
+  "t": "imp",
+  "p": "vy",
+  "e": "Guys, read the text and answer the questions.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, ___ на э'то фо'то!",
+  "v": "посмотреть",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, look at this photo!",
+  "b": "A1"
+ },
+ {
+  "q": "Ребя'та, ___ на до'ску, пожа'луйста.",
+  "v": "смотреть",
+  "t": "imp",
+  "p": "vy",
+  "e": "Guys, please look at the board.",
+  "b": "A1"
+ },
+ {
+  "q": "Ива'н, ___ меня', пожа'луйста, внима'тельно.",
+  "v": "слушать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, please listen to me carefully.",
+  "b": "A1"
+ },
+ {
+  "q": "Де'ти, ___ внима'тельно, я объясня'ю.",
+  "v": "слушать",
+  "t": "imp",
+  "p": "vy",
+  "e": "Children, listen carefully, I'm explaining.",
+  "b": "A1"
+ },
+ {
+  "q": "Серге'й, ___ э'ту пе'сню!",
+  "v": "послушать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Sergei, listen to this song!",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, ___ хорошо', пре'жде чем отве'тить.",
+  "v": "подумать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, think carefully before answering.",
+  "b": "B1"
+ },
+ {
+  "q": "Ива'н, ___, пожа'луйста, како'й сего'дня день?",
+  "v": "вспомнить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, please try to remember, what day is it today?",
+  "b": "B1"
+ },
+ {
+  "q": "Ма'ша, ___ меня', пожа'луйста.",
+  "v": "понять",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, please understand me.",
+  "b": "B1"
+ },
+ {
+  "q": "Ма'ма, ___ мне, я говорю' пра'вду.",
+  "v": "поверить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Mum, believe me, I'm telling the truth.",
+  "b": "B1"
+ },
+ {
+  "q": "Ива'н Петро'вич, ___ мне, пожа'луйста, хоро'шую кни'гу.",
+  "v": "посоветовать",
+  "t": "imp",
+  "p": "vy",
+  "e": "Ivan Petrovich, please recommend a good book to me.",
+  "b": "B1"
+ },
+ {
+  "q": "А'нна, ___ мой пиро'г!",
+  "v": "попробовать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Anna, try my pie!",
+  "b": "A2"
+ },
+ {
+  "q": "Дороги'е го'сти, ___ наш торт.",
+  "v": "попробовать",
+  "t": "imp",
+  "p": "vy",
+  "e": "Dear guests, try our cake.",
+  "b": "B1"
+ },
+ {
+  "q": "Серге'й, ___ кури'ть, э'то вре'дно.",
+  "v": "бросить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Sergei, quit smoking, it's harmful.",
+  "b": "B1"
+ },
+ {
+  "q": "Ива'н, не ___, пожа'луйста, в шко'лу.",
+  "v": "опаздывать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, please don't be late for school.",
+  "b": "A2"
+ },
+ {
+  "q": "Ребя'та, не ___ за'втра на экза'мен!",
+  "v": "опаздывать",
+  "t": "imp",
+  "p": "vy",
+  "e": "Guys, don't be late for the exam tomorrow!",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, ___ нам пе'сню, пожа'луйста.",
+  "v": "спеть",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, please sing us a song.",
+  "b": "A2"
+ },
+ {
+  "q": "Ива'н, ___ мне соба'ку, пожа'луйста.",
+  "v": "нарисовать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, please draw me a dog.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, ___, ты така'я краси'вая!",
+  "v": "улыбнуться",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, smile, you're so pretty!",
+  "b": "A2"
+ },
+ {
+  "q": "Дороги'е го'сти, ___, пожа'луйста.",
+  "v": "улыбнуться",
+  "t": "imp",
+  "p": "vy",
+  "e": "Dear guests, smile, please.",
+  "b": "B1"
+ },
+ {
+  "q": "Ма'ша, ___ осторо'жна на доро'ге.",
+  "v": "быть",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, be careful on the road.",
+  "b": "A2"
+ },
+ {
+  "q": "Ива'н, ___ здоро'в!",
+  "v": "быть",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, bless you!",
+  "b": "A2"
+ },
+ {
+  "q": "Дороги'е го'сти, ___ как до'ма.",
+  "v": "быть",
+  "t": "imp",
+  "p": "vy",
+  "e": "Dear guests, make yourselves at home.",
+  "b": "B1"
+ },
+ {
+  "q": "Де'ти, ___ во дворе', не до'ма.",
+  "v": "играть",
+  "t": "imp",
+  "p": "vy",
+  "e": "Children, play in the yard, not at home.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, ___ в па'рке, пого'да хоро'шая.",
+  "v": "погулять",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, go for a walk in the park, the weather is good.",
+  "b": "A2"
+ },
+ {
+  "q": "Ребя'та, ___ в саду', там хорошо'.",
+  "v": "погулять",
+  "t": "imp",
+  "p": "vy",
+  "e": "Guys, take a walk in the garden, it's nice there.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, ___ спать, уже' по'здно.",
+  "v": "лечь",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, go to bed, it's already late.",
+  "b": "A2"
+ },
+ {
+  "q": "Де'ти, ___ спать, уже' де'вять.",
+  "v": "ложиться",
+  "t": "imp",
+  "p": "vy",
+  "e": "Children, go to bed, it's already nine.",
+  "b": "A2"
+ },
+ {
+  "q": "Ива'н, ___ ру'сский, э'то поле'зно.",
+  "v": "учить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, study Russian, it's useful.",
+  "b": "A2"
+ },
+ {
+  "q": "Де'ти, ___ хорошо' и слу'шайте учи'теля.",
+  "v": "учиться",
+  "t": "imp",
+  "p": "vy",
+  "e": "Children, study well and listen to the teacher.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, ___ свой но'мер телефо'на.",
+  "v": "написать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, write down your phone number.",
+  "b": "A2"
+ },
+ {
+  "q": "Серге'й, ___ ва'зу на окно', пожа'луйста.",
+  "v": "поставить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Sergei, please put the vase on the windowsill.",
+  "b": "A2"
+ },
+ {
+  "q": "Ива'н, ___ за'втра в шесть.",
+  "v": "позвонить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, call tomorrow at six.",
+  "b": "A1"
+ },
+ {
+  "q": "О'льга Петро'вна, ___ мне за'втра, пожа'луйста.",
+  "v": "звонить",
+  "t": "imp",
+  "p": "vy",
+  "e": "Olga Petrovna, please call me tomorrow.",
+  "b": "A2"
+ },
+ {
+  "q": "Ива'н, ___ нас, мы ско'ро бу'дем.",
+  "v": "ждать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, wait for us, we'll be there soon.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ма, не ___ меня', я приду' по'здно.",
+  "v": "ждать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Mum, don't wait for me, I'll be home late.",
+  "b": "A2"
+ },
+ {
+  "q": "Ребя'та, ___ ва'ши тетра'ди.",
+  "v": "открыть",
+  "t": "imp",
+  "p": "vy",
+  "e": "Guys, open your exercise books.",
+  "b": "A1"
+ },
+ {
+  "q": "Де'ти, ___ кни'ги, уро'к зако'нчен.",
+  "v": "закрыть",
+  "t": "imp",
+  "p": "vy",
+  "e": "Children, close your books, the lesson is over.",
+  "b": "A1"
+ },
+ {
+  "q": "Ива'н, ___ рабо'ту к пя'тнице.",
+  "v": "закончить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, finish the work by Friday.",
+  "b": "B1"
+ },
+ {
+  "q": "Ребя'та, ___ чита'ть с пе'рвой страни'цы.",
+  "v": "начать",
+  "t": "imp",
+  "p": "vy",
+  "e": "Guys, start reading from the first page.",
+  "b": "B1"
+ },
+ {
+  "q": "Ма'ша, ___ пла'тье, тебе' идёт.",
+  "v": "купить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, buy the dress, it suits you.",
+  "b": "A2"
+ },
+ {
+  "q": "Серге'й, ___ ста'рую маши'ну и купи' но'вую.",
+  "v": "продать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Sergei, sell the old car and buy a new one.",
+  "b": "B1"
+ },
+ {
+  "q": "Ива'н, ___ за ко'фе, у меня' нет де'нег.",
+  "v": "заплатить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, pay for the coffee, I have no money.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, не ___ так мно'го сла'дкого.",
+  "v": "есть",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, don't eat so many sweets.",
+  "b": "A2"
+ },
+ {
+  "q": "Серге'й, не ___ холо'дную во'ду.",
+  "v": "пить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Sergei, don't drink cold water.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, ___ мне, кака'я пе'сня лу'чше.",
+  "v": "сказать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, tell me which song is better.",
+  "b": "A2"
+ },
+ {
+  "q": "Ива'н, не ___ мне, я всё зна'ю.",
+  "v": "говорить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, don't tell me, I know everything.",
+  "b": "B1"
+ },
+ {
+  "q": "Ма'ша, ___ свой но'вый дом!",
+  "v": "показать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, show us your new house!",
+  "b": "A2"
+ },
+ {
+  "q": "Серге'й, не ___ меня' об э'том.",
+  "v": "спрашивать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Sergei, don't ask me about that.",
+  "b": "B1"
+ },
+ {
+  "q": "Ребя'та, не ___ ва'ши ве'щи в авто'бусе.",
+  "v": "забывать",
+  "t": "imp",
+  "p": "vy",
+  "e": "Guys, don't forget your things on the bus.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, ___, что я тебе' говорю'!",
+  "v": "слушать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, listen to what I'm telling you!",
+  "b": "A2"
+ },
+ {
+  "q": "Ива'н, ___ на меня', когда' я говорю'.",
+  "v": "смотреть",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, look at me when I'm speaking.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, не ___ телеви'зор так до'лго.",
+  "v": "смотреть",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, don't watch TV for so long.",
+  "b": "A2"
+ },
+ {
+  "q": "Ива'н, ___ себя' хорошо'!",
+  "v": "вести",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, behave yourself!",
+  "b": "B1"
+ },
+ {
+  "q": "Ребя'та, ___ на свои' места'.",
+  "v": "садиться",
+  "t": "imp",
+  "p": "vy",
+  "e": "Guys, sit down in your seats.",
+  "b": "B1"
+ },
+ {
+  "q": "Ма'ша, ___ мне свой но'мер, пожа'луйста.",
+  "v": "дать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, please give me your number.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ма, ___ мне, пожа'луйста, ча'шку ча'я.",
+  "v": "дать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Mum, please give me a cup of tea.",
+  "b": "A2"
+ },
+ {
+  "q": "Ива'н, ___ ра'ньше, не сиди' до но'чи.",
+  "v": "ложиться",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, go to bed earlier, don't stay up till night.",
+  "b": "B1"
+ },
+ {
+  "q": "Ма'ша, ___ по-ру'сски, не по-англи'йски.",
+  "v": "говорить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, speak Russian, not English.",
+  "b": "A1"
+ },
+ {
+  "q": "Ребя'та, ___ по-ру'сски на уро'ке.",
+  "v": "говорить",
+  "t": "imp",
+  "p": "vy",
+  "e": "Guys, speak Russian in class.",
+  "b": "A1"
+ },
+ {
+  "q": "Де'ти, ___ гро'мче, я вас не слы'шу.",
+  "v": "петь",
+  "t": "imp",
+  "p": "vy",
+  "e": "Children, sing louder, I can't hear you.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, ___ ти'ше, сосе'ди спят.",
+  "v": "петь",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, sing more quietly, the neighbours are asleep.",
+  "b": "A2"
+ },
+ {
+  "q": "Серге'й, ___ со мной, пожа'луйста.",
+  "v": "танцевать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Sergei, dance with me, please.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, ___ здесь, я сейча'с приду'.",
+  "v": "сидеть",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, sit here, I'll be right back.",
+  "b": "A2"
+ },
+ {
+  "q": "Ива'н, ___ тут и никуда' не уходи'.",
+  "v": "стоять",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, stand here and don't go anywhere.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, ___ в крова'ти, ты больна'.",
+  "v": "лежать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, stay in bed, you're ill.",
+  "b": "B1"
+ },
+ {
+  "q": "Ребя'та, ___ ти'хо, ма'ма спит.",
+  "v": "сидеть",
+  "t": "imp",
+  "p": "vy",
+  "e": "Guys, sit quietly, Mum is asleep.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ма, ___ за'втра в шесть, пожа'луйста.",
+  "v": "прийти",
+  "t": "imp",
+  "p": "ty",
+  "e": "Mum, please come tomorrow at six.",
+  "b": "A2"
+ },
+ {
+  "q": "Ребя'та, ___ за'втра в де'вять.",
+  "v": "прийти",
+  "t": "imp",
+  "p": "vy",
+  "e": "Guys, come tomorrow at nine.",
+  "b": "A2"
+ },
+ {
+  "q": "Ива'н, ___ домо'й, уже' по'здно.",
+  "v": "идти",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, go home, it's already late.",
+  "b": "A1"
+ },
+ {
+  "q": "Ма'ша, ___ ко мне сюда'!",
+  "v": "идти",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, come here to me!",
+  "b": "A1"
+ },
+ {
+  "q": "Серге'й, ___ мне свою' фотогра'фию.",
+  "v": "показать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Sergei, show me your photo.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, ___ посу'ду, пожа'луйста.",
+  "v": "помыть",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, please wash the dishes.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, ___ дру'гу, он тебя' ждёт.",
+  "v": "позвонить",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, call your friend, he's waiting for you.",
+  "b": "A1"
+ },
+ {
+  "q": "Ива'н, ___ тепле'е, на у'лице хо'лодно.",
+  "v": "одеться",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, dress more warmly, it's cold outside.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, ___ дверь, когда' ухо'дишь.",
+  "v": "закрыть",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, close the door when you leave.",
+  "b": "A2"
+ },
+ {
+  "q": "Серге'й, ___ мне, кака'я у тебя' но'вость.",
+  "v": "рассказать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Sergei, tell me what news you have.",
+  "b": "A2"
+ },
+ {
+  "q": "О'льга Ива'новна, не ___, всё бу'дет хорошо'.",
+  "v": "плакать",
+  "t": "imp",
+  "p": "vy",
+  "e": "Olga Ivanovna, don't cry, everything will be fine.",
+  "b": "B1"
+ },
+ {
+  "q": "Ма'ша, не ___ на меня', я не винова'т.",
+  "v": "кричать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Masha, don't shout at me, it's not my fault.",
+  "b": "A2"
+ },
+ {
+  "q": "Ива'н, ___ мне, пожа'луйста, по до'му.",
+  "v": "помогать",
+  "t": "imp",
+  "p": "ty",
+  "e": "Ivan, please help me around the house.",
+  "b": "A2"
+ },
+ {
+  "q": "Ребя'та, не ___ мне, я сам.",
+  "v": "помогать",
+  "t": "imp",
+  "p": "vy",
+  "e": "Guys, don't help me, I'll do it myself.",
+  "b": "B1"
+ }
+]

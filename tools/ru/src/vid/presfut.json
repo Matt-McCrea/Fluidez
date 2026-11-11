@@ -1,0 +1,812 @@
+[
+ {
+  "q": "Ка'ждый день я ___ газе'ту в метро'.",
+  "v": "читать",
+  "t": "pres",
+  "p": "ya",
+  "e": "Every day I read the newspaper on the metro.",
+  "b": "A1",
+  "w": "A habit: imperfective present. A perfective has no present."
+ },
+ {
+  "q": "Обы'чно ма'ма ___ у'жин в семь.",
+  "v": "готовить",
+  "t": "pres",
+  "p": "ona",
+  "e": "Mum usually cooks dinner at seven.",
+  "b": "A2",
+  "w": "обы'чно: a habit, imperfective."
+ },
+ {
+  "q": "Ка'ждое у'тро Серге'й ___ ча'шку ко'фе.",
+  "v": "пить",
+  "t": "pres",
+  "p": "on",
+  "e": "Every morning Sergei drinks a cup of coffee.",
+  "b": "A1",
+  "w": "Every morning: imperfective."
+ },
+ {
+  "q": "Ба'бушка ча'сто ___ мне по вечера'м.",
+  "v": "звонить",
+  "t": "pres",
+  "p": "ona",
+  "e": "Grandma often calls me in the evenings.",
+  "b": "A2",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Мы обы'чно ___ рабо'ту в пять.",
+  "v": "заканчивать",
+  "t": "pres",
+  "p": "my",
+  "e": "We usually finish work at five.",
+  "b": "A2",
+  "w": "обы'чно: imperfective."
+ },
+ {
+  "q": "Учи'тель всегда' ___ уро'к в де'вять.",
+  "v": "начинать",
+  "t": "pres",
+  "p": "on",
+  "e": "The teacher always starts the lesson at nine.",
+  "b": "B1",
+  "w": "всегда': imperfective."
+ },
+ {
+  "q": "Ка'ждый ве'чер де'ти ___ посу'ду.",
+  "v": "мыть",
+  "t": "pres",
+  "p": "oni",
+  "e": "Every evening the children wash the dishes.",
+  "b": "A2",
+  "w": "Every evening: imperfective."
+ },
+ {
+  "q": "Он всегда' ___ на мои' пи'сьма.",
+  "v": "отвечать",
+  "t": "pres",
+  "p": "on",
+  "e": "He always answers my letters.",
+  "b": "A2",
+  "w": "всегда': imperfective."
+ },
+ {
+  "q": "Я ча'сто ___ ключи', э'то ужа'сно.",
+  "v": "терять",
+  "t": "pres",
+  "p": "ya",
+  "e": "I often lose my keys, it's awful.",
+  "b": "A2",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Ты всегда' ___ мой день рожде'ния!",
+  "v": "забывать",
+  "t": "pres",
+  "p": "ty",
+  "e": "You always forget my birthday!",
+  "b": "A2",
+  "w": "всегда': imperfective."
+ },
+ {
+  "q": "Ка'ждый день я ___ де'сять но'вых слов.",
+  "v": "учить",
+  "t": "pres",
+  "p": "ya",
+  "e": "Every day I learn ten new words.",
+  "b": "A2",
+  "w": "Every day: imperfective."
+ },
+ {
+  "q": "Обы'чно мы ___ в семь утра'.",
+  "v": "вставать",
+  "t": "pres",
+  "p": "my",
+  "e": "We usually get up at seven in the morning.",
+  "b": "A2",
+  "w": "обы'чно: imperfective."
+ },
+ {
+  "q": "Обы'чно де'ти ___ спать в де'вять.",
+  "v": "ложиться",
+  "t": "pres",
+  "p": "oni",
+  "e": "The children usually go to bed at nine.",
+  "b": "A2",
+  "w": "обы'чно: imperfective."
+ },
+ {
+  "q": "Па'па обы'чно ___ домо'й в шесть.",
+  "v": "возвращаться",
+  "t": "pres",
+  "p": "on",
+  "e": "Dad usually comes home at six.",
+  "b": "A2",
+  "w": "обы'чно: imperfective."
+ },
+ {
+  "q": "Ка'ждую суббо'ту мы ___ друзе'й на у'жин.",
+  "v": "приглашать",
+  "t": "pres",
+  "p": "my",
+  "e": "Every Saturday we invite friends to dinner.",
+  "b": "B1",
+  "w": "Every Saturday: imperfective."
+ },
+ {
+  "q": "Учи'тель всегда' хорошо' ___ грамма'тику.",
+  "v": "объяснять",
+  "t": "pres",
+  "p": "on",
+  "e": "The teacher always explains grammar well.",
+  "b": "A2",
+  "w": "всегда': imperfective."
+ },
+ {
+  "q": "Я ча'сто ___ хлеб в э'том магази'не.",
+  "v": "покупать",
+  "t": "pres",
+  "p": "ya",
+  "e": "I often buy bread in this shop.",
+  "b": "A1",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Он ка'ждый день ___ мне цветы'.",
+  "v": "приносить",
+  "t": "pres",
+  "p": "on",
+  "e": "He brings me flowers every day.",
+  "b": "B1",
+  "w": "Every day: imperfective."
+ },
+ {
+  "q": "Ма'ша ча'сто ___ нам по'сле рабо'ты.",
+  "v": "помогать",
+  "t": "pres",
+  "p": "ona",
+  "e": "Masha often helps us after work.",
+  "b": "A2",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Мы обы'чно ___ на мо'ре в ию'ле.",
+  "v": "отдыхать",
+  "t": "pres",
+  "p": "my",
+  "e": "We usually holiday by the sea in July.",
+  "b": "A2",
+  "w": "обы'чно: imperfective."
+ },
+ {
+  "q": "Он всегда' ___ на рабо'ту на пять мину'т.",
+  "v": "опаздывать",
+  "t": "pres",
+  "p": "on",
+  "e": "He's always five minutes late for work.",
+  "b": "A2",
+  "w": "всегда': imperfective."
+ },
+ {
+  "q": "Ка'ждое у'тро О'льга ___ окно'.",
+  "v": "открывать",
+  "t": "pres",
+  "p": "ona",
+  "e": "Every morning Olga opens the window.",
+  "b": "A2",
+  "w": "Every morning: imperfective."
+ },
+ {
+  "q": "Обы'чно я ___ дверь на ключ.",
+  "v": "закрывать",
+  "t": "pres",
+  "p": "ya",
+  "e": "I usually lock the door.",
+  "b": "B1",
+  "w": "обы'чно: imperfective."
+ },
+ {
+  "q": "Ма'ша всегда' ___ меня' на вокза'ле.",
+  "v": "встречать",
+  "t": "pres",
+  "p": "ona",
+  "e": "Masha always meets me at the station.",
+  "b": "A2",
+  "w": "всегда': imperfective."
+ },
+ {
+  "q": "Ка'ждый день я ___ пи'сьма от бра'та.",
+  "v": "получать",
+  "t": "pres",
+  "p": "ya",
+  "e": "Every day I get letters from my brother.",
+  "b": "A2",
+  "w": "Every day: imperfective."
+ },
+ {
+  "q": "Он ча'сто ___ меня' о рабо'те.",
+  "v": "спрашивать",
+  "t": "pres",
+  "p": "on",
+  "e": "He often asks me about work.",
+  "b": "A2",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Мы обы'чно ___ в шко'ле в по'лдень.",
+  "v": "обедать",
+  "t": "pres",
+  "p": "my",
+  "e": "We usually have lunch at school at noon.",
+  "b": "A2",
+  "w": "обы'чно: imperfective."
+ },
+ {
+  "q": "Обы'чно я ___ до'ма, а пото'м иду' на рабо'ту.",
+  "v": "завтракать",
+  "t": "pres",
+  "p": "ya",
+  "e": "I usually have breakfast at home, and then go to work.",
+  "b": "A2",
+  "w": "обы'чно: imperfective."
+ },
+ {
+  "q": "Ка'ждый ве'чер мы ___ но'вости.",
+  "v": "смотреть",
+  "t": "pres",
+  "p": "my",
+  "e": "Every evening we watch the news.",
+  "b": "A1",
+  "w": "Every evening: imperfective."
+ },
+ {
+  "q": "Ка'ждый ве'чер ба'бушка ___ де'тям ска'зку.",
+  "v": "рассказывать",
+  "t": "pres",
+  "p": "ona",
+  "e": "Every evening Grandma tells the children a fairy tale.",
+  "b": "A2",
+  "w": "Every evening: imperfective."
+ },
+ {
+  "q": "Обы'чно я ___ ключи' на по'лку.",
+  "v": "класть",
+  "t": "pres",
+  "p": "ya",
+  "e": "I usually put my keys on the shelf.",
+  "b": "B1",
+  "w": "обы'чно: imperfective."
+ },
+ {
+  "q": "Ка'ждый день О'льга ___ статьи' на англи'йский.",
+  "v": "переводить",
+  "t": "pres",
+  "p": "ona",
+  "e": "Every day Olga translates articles into English.",
+  "b": "B1",
+  "w": "Every day: imperfective."
+ },
+ {
+  "q": "Он всегда' ___ мне де'ньги в долг.",
+  "v": "давать",
+  "t": "pres",
+  "p": "on",
+  "e": "He always lends me money.",
+  "b": "B1",
+  "w": "всегда': imperfective."
+ },
+ {
+  "q": "Обы'чно мы ___ за кварти'ру в нача'ле ме'сяца.",
+  "v": "платить",
+  "t": "pres",
+  "p": "my",
+  "e": "We usually pay for the flat at the start of the month.",
+  "b": "B1",
+  "w": "обы'чно: imperfective."
+ },
+ {
+  "q": "Мы ча'сто ___ в ша'хматы ве'чером.",
+  "v": "играть",
+  "t": "pres",
+  "p": "my",
+  "e": "We often play chess in the evening.",
+  "b": "A1",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Я обы'чно ___ ру'чку у колле'ги.",
+  "v": "брать",
+  "t": "pres",
+  "p": "ya",
+  "e": "I usually borrow a pen from a colleague.",
+  "b": "B1",
+  "w": "обы'чно: imperfective."
+ },
+ {
+  "q": "Ма'ша ча'сто ___ на уро'ках.",
+  "v": "улыбаться",
+  "t": "pres",
+  "p": "ona",
+  "e": "Masha often smiles in class.",
+  "b": "A2",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "Он ча'сто ___ кури'ть, но пото'м опя'ть ку'рит.",
+  "v": "бросать",
+  "t": "pres",
+  "p": "on",
+  "e": "He often quits smoking, but then smokes again.",
+  "b": "B1",
+  "w": "ча'сто: imperfective."
+ },
+ {
+  "q": "За'втра я весь ве'чер ___ кни'гу.",
+  "v": "читать",
+  "t": "fut",
+  "p": "ya",
+  "e": "Tomorrow I'll spend the whole evening reading a book.",
+  "b": "A2",
+  "w": "Весь вечер: imperfective future."
+ },
+ {
+  "q": "За'втра я ___ кни'гу и отда'м её тебе'.",
+  "v": "прочитать",
+  "t": "fut",
+  "p": "ya",
+  "e": "Tomorrow I'll finish the book and give it back to you.",
+  "b": "A2",
+  "w": "One finished action, then the next: perfective."
+ },
+ {
+  "q": "Я ___ письмо' и сра'зу его' отпра'влю.",
+  "v": "написать",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll write the letter and send it straight away.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Ле'том я ___ тебе' ка'ждую неде'лю.",
+  "v": "писать",
+  "t": "fut",
+  "p": "ya",
+  "e": "In the summer I'll write to you every week.",
+  "b": "A2",
+  "w": "Every week: imperfective future."
+ },
+ {
+  "q": "Когда' ты уе'дешь, я ___ тебе' ка'ждый день.",
+  "v": "звонить",
+  "t": "fut",
+  "p": "ya",
+  "e": "When you leave, I'll call you every day.",
+  "b": "A2",
+  "w": "Every day: imperfective future."
+ },
+ {
+  "q": "Мы ___ отве'та до'лго, мы зна'ем.",
+  "v": "ждать",
+  "t": "fut",
+  "p": "my",
+  "e": "We'll wait a long time for an answer, we know.",
+  "b": "B1",
+  "w": "До'лго: imperfective future."
+ },
+ {
+  "q": "За'втра ма'ма ___ обе'д це'лое у'тро.",
+  "v": "готовить",
+  "t": "fut",
+  "p": "ona",
+  "e": "Tomorrow Mum will spend the whole morning cooking lunch.",
+  "b": "A2",
+  "w": "The whole morning: imperfective future."
+ },
+ {
+  "q": "Ма'ма ___ обе'д за час, не волну'йся.",
+  "v": "приготовить",
+  "t": "fut",
+  "p": "ona",
+  "e": "Mum will cook lunch in an hour, don't worry.",
+  "b": "A2",
+  "w": "за час: perfective."
+ },
+ {
+  "q": "Мы ___ дом за год.",
+  "v": "построить",
+  "t": "fut",
+  "p": "my",
+  "e": "We'll build the house in a year.",
+  "b": "B1",
+  "w": "за год: perfective."
+ },
+ {
+  "q": "Мы ___ дом три го'да, э'то до'лго.",
+  "v": "строить",
+  "t": "fut",
+  "p": "my",
+  "e": "We'll be building the house for three years, that's long.",
+  "b": "B1",
+  "w": "Three years: imperfective future."
+ },
+ {
+  "q": "Я ___ все слова' к за'втра.",
+  "v": "выучить",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll learn all the words by tomorrow.",
+  "b": "A2",
+  "w": "к за'втра: a deadline for a result, perfective."
+ },
+ {
+  "q": "За'втра я ___ слова' весь ве'чер.",
+  "v": "учить",
+  "t": "fut",
+  "p": "ya",
+  "e": "Tomorrow I'll study words all evening.",
+  "b": "A2",
+  "w": "Весь вечер: imperfective future."
+ },
+ {
+  "q": "Когда' ты придёшь, мы ___.",
+  "v": "ужинать",
+  "t": "fut",
+  "p": "my",
+  "e": "When you come, we'll be having dinner.",
+  "b": "B1",
+  "w": "In progress at that moment: imperfective future."
+ },
+ {
+  "q": "Мы ___ и пойдём в кино'.",
+  "v": "поужинать",
+  "t": "fut",
+  "p": "my",
+  "e": "We'll have dinner and go to the cinema.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "За'втра мы ___ на мо'ре весь день.",
+  "v": "отдыхать",
+  "t": "fut",
+  "p": "my",
+  "e": "Tomorrow we'll be relaxing by the sea all day.",
+  "b": "A2",
+  "w": "Весь день: imperfective future."
+ },
+ {
+  "q": "Ты ___ и почу'вствуешь себя' лу'чше.",
+  "v": "отдохнуть",
+  "t": "fut",
+  "p": "ty",
+  "e": "You'll have a rest and feel better.",
+  "b": "B1",
+  "w": "A result follows: perfective."
+ },
+ {
+  "q": "Серге'й обяза'тельно ___ рабо'ту.",
+  "v": "найти",
+  "t": "fut",
+  "p": "on",
+  "e": "Sergei will definitely find a job.",
+  "b": "B1",
+  "w": "A result: perfective."
+ },
+ {
+  "q": "Я ___ тебе' пото'м, когда' бу'дет вре'мя.",
+  "v": "объяснить",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll explain it to you later, when I have time.",
+  "b": "A2",
+  "w": "One explanation: perfective."
+ },
+ {
+  "q": "Ка'ждый уро'к учи'тель ___ нам но'вое пра'вило.",
+  "v": "объяснять",
+  "t": "fut",
+  "p": "on",
+  "e": "Every lesson the teacher will explain a new rule to us.",
+  "b": "B1",
+  "w": "Every lesson: imperfective future."
+ },
+ {
+  "q": "Ты ___ ему' ка'ждый день?",
+  "v": "помогать",
+  "t": "fut",
+  "p": "ty",
+  "e": "Will you help him every day?",
+  "b": "B1",
+  "w": "Every day: imperfective future."
+ },
+ {
+  "q": "Ве'чером мы ___ э'тот фильм и пойдём спать.",
+  "v": "посмотреть",
+  "t": "fut",
+  "p": "my",
+  "e": "In the evening we'll watch this film and go to bed.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "За'втра я ___ ра'но, в пять.",
+  "v": "встать",
+  "t": "fut",
+  "p": "ya",
+  "e": "Tomorrow I'll get up early, at five.",
+  "b": "A2",
+  "w": "One morning: perfective."
+ },
+ {
+  "q": "Тепе'рь я ___ ра'но ка'ждый день.",
+  "v": "вставать",
+  "t": "fut",
+  "p": "ya",
+  "e": "From now on I'll get up early every day.",
+  "b": "B1",
+  "w": "Every day: imperfective future."
+ },
+ {
+  "q": "Он ___ все зада'чи за час.",
+  "v": "решить",
+  "t": "fut",
+  "p": "on",
+  "e": "He'll solve all the problems in an hour.",
+  "b": "B1",
+  "w": "за час: perfective."
+ },
+ {
+  "q": "Он весь ве'чер ___ зада'чи.",
+  "v": "решать",
+  "t": "fut",
+  "p": "on",
+  "e": "He'll spend the whole evening solving problems.",
+  "b": "B1",
+  "w": "Весь вечер: imperfective future."
+ },
+ {
+  "q": "Когда' ты придёшь, я ___ посу'ду.",
+  "v": "мыть",
+  "t": "fut",
+  "p": "ya",
+  "e": "When you come, I'll be washing the dishes.",
+  "b": "B1",
+  "w": "In progress at that moment: imperfective future."
+ },
+ {
+  "q": "Я ___ посу'ду и приду'.",
+  "v": "помыть",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll wash the dishes and come.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Мы ___ кварти'ру и ку'пим дом.",
+  "v": "продать",
+  "t": "fut",
+  "p": "my",
+  "e": "We'll sell the flat and buy a house.",
+  "b": "B1",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Ты ___ меня' ка'ждый день?",
+  "v": "вспоминать",
+  "t": "fut",
+  "p": "ty",
+  "e": "Will you think of me every day?",
+  "b": "B1",
+  "w": "Every day: imperfective future."
+ },
+ {
+  "q": "Он ___ кури'ть, вот уви'дишь.",
+  "v": "бросить",
+  "t": "fut",
+  "p": "on",
+  "e": "He'll quit smoking, you'll see.",
+  "b": "B1",
+  "w": "One decision with a result: perfective."
+ },
+ {
+  "q": "Я ___ э'тот торт и скажу', вку'сно ли.",
+  "v": "попробовать",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll try this cake and tell you if it's tasty.",
+  "b": "B1",
+  "w": "One try: perfective."
+ },
+ {
+  "q": "Когда' прие'дешь, ты ___ мо'ре.",
+  "v": "увидеть",
+  "t": "fut",
+  "p": "ty",
+  "e": "When you arrive, you'll see the sea.",
+  "b": "A2",
+  "w": "One moment of seeing: perfective."
+ },
+ {
+  "q": "Учи'тель ___ уро'к, и все замолча'т.",
+  "v": "начать",
+  "t": "fut",
+  "p": "on",
+  "e": "The teacher will start the lesson, and everyone will fall silent.",
+  "b": "B1",
+  "w": "One start with a result: perfective."
+ },
+ {
+  "q": "Я ___ рабо'ту к пя'тнице.",
+  "v": "закончить",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll finish the work by Friday.",
+  "b": "B1",
+  "w": "к пя'тнице: a deadline for a result, perfective."
+ },
+ {
+  "q": "Я ___ и отве'чу тебе' за'втра.",
+  "v": "подумать",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll think it over and answer you tomorrow.",
+  "b": "A2",
+  "w": "A short think, then the next action: perfective."
+ },
+ {
+  "q": "Я ___ об э'том всю ночь, я зна'ю.",
+  "v": "думать",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll be thinking about it all night, I know.",
+  "b": "B1",
+  "w": "All night: imperfective future."
+ },
+ {
+  "q": "Я ___ ему', что ты звони'л.",
+  "v": "сказать",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll tell him that you called.",
+  "b": "A2",
+  "w": "One message: perfective."
+ },
+ {
+  "q": "Ты ___ мне свои' фо'то?",
+  "v": "показать",
+  "t": "fut",
+  "p": "ty",
+  "e": "Will you show me your photos?",
+  "b": "A2",
+  "w": "One showing: perfective."
+ },
+ {
+  "q": "Она' ___ тебе' всё за'втра.",
+  "v": "рассказать",
+  "t": "fut",
+  "p": "ona",
+  "e": "She'll tell you everything tomorrow.",
+  "b": "A2",
+  "w": "всё: the whole story, perfective."
+ },
+ {
+  "q": "Ты ___ на все вопро'сы и полу'чишь пять.",
+  "v": "ответить",
+  "t": "fut",
+  "p": "ty",
+  "e": "You'll answer all the questions and get top marks.",
+  "b": "B1",
+  "w": "A result follows: perfective."
+ },
+ {
+  "q": "Мы ___ вас на сва'дьбу, обяза'тельно.",
+  "v": "пригласить",
+  "t": "fut",
+  "p": "my",
+  "e": "We'll invite you to the wedding, definitely.",
+  "b": "B1",
+  "w": "One invitation: perfective."
+ },
+ {
+  "q": "Ты ___ ключи', е'сли не бу'дешь внима'тельным.",
+  "v": "потерять",
+  "t": "fut",
+  "p": "ty",
+  "e": "You'll lose the keys if you're not careful.",
+  "b": "B1",
+  "w": "One event: perfective."
+ },
+ {
+  "q": "Не волну'йся, я не ___ твой день рожде'ния.",
+  "v": "забыть",
+  "t": "fut",
+  "p": "ya",
+  "e": "Don't worry, I won't forget your birthday.",
+  "b": "A2",
+  "w": "One occasion: perfective."
+ },
+ {
+  "q": "Я ___ ва'зу сюда', здесь светле'е.",
+  "v": "поставить",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll put the vase here, it's lighter here.",
+  "b": "A2",
+  "w": "One action: perfective."
+ },
+ {
+  "q": "Ле'том мы ка'ждый день ___ в па'рке.",
+  "v": "гулять",
+  "t": "fut",
+  "p": "my",
+  "e": "In the summer we'll walk in the park every day.",
+  "b": "A2",
+  "w": "Every day: imperfective future."
+ },
+ {
+  "q": "Мы немно'го ___ и пойдём домо'й.",
+  "v": "погулять",
+  "t": "fut",
+  "p": "my",
+  "e": "We'll walk a little and go home.",
+  "b": "B1",
+  "w": "A short bounded walk, then the next action: perfective."
+ },
+ {
+  "q": "Я ___ обе'д и позвоню' тебе'.",
+  "v": "приготовить",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll cook lunch and call you.",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ },
+ {
+  "q": "Когда' ты придёшь, я ___ обе'д.",
+  "v": "готовить",
+  "t": "fut",
+  "p": "ya",
+  "e": "When you come, I'll be cooking lunch.",
+  "b": "B1",
+  "w": "In progress at that moment: imperfective future."
+ },
+ {
+  "q": "Он ___ кни'гу за два дня.",
+  "v": "прочитать",
+  "t": "fut",
+  "p": "on",
+  "e": "He'll read the book in two days.",
+  "b": "A2",
+  "w": "за два дня: perfective."
+ },
+ {
+  "q": "Когда' ты позвони'шь, я ___ газе'ту.",
+  "v": "читать",
+  "t": "fut",
+  "p": "ya",
+  "e": "When you call, I'll be reading the newspaper.",
+  "b": "B1",
+  "w": "In progress at that moment: imperfective future."
+ },
+ {
+  "q": "Я обяза'тельно ___ э'ту пе'сню на ко'нкурсе.",
+  "v": "спеть",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll definitely sing this song at the contest.",
+  "b": "B1",
+  "w": "One song: perfective."
+ },
+ {
+  "q": "Ты ___ ко'шку и пока'жешь мне?",
+  "v": "нарисовать",
+  "t": "fut",
+  "p": "ty",
+  "e": "Will you draw a cat and show me?",
+  "b": "A2",
+  "w": "Done, then the next action: perfective."
+ }
+]

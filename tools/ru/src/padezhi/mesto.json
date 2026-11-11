@@ -1,0 +1,821 @@
+[
+ {
+  "q": "Ма'ма сейча'с на ___.",
+  "n": "кухня",
+  "c": "prep",
+  "e": "Mum is in the kitchen now.",
+  "b": "A1",
+  "w": "Where? на + prepositional: на ку'хне (Russians say на for the kitchen)."
+ },
+ {
+  "q": "Мой брат рабо'тает в ___.",
+  "n": "банк",
+  "c": "prep",
+  "e": "My brother works in a bank.",
+  "b": "A1",
+  "w": "Where? в + prepositional: в ба'нке."
+ },
+ {
+  "q": "Де'ти игра'ют в ___.",
+  "n": "парк",
+  "c": "prep",
+  "e": "The children are playing in the park.",
+  "b": "A1",
+  "w": "Where? в + prepositional: в па'рке."
+ },
+ {
+  "q": "Мы живём в большо'м ___.",
+  "n": "город",
+  "c": "prep",
+  "e": "We live in a big city.",
+  "b": "A1",
+  "w": "Where? в + prepositional: в го'роде."
+ },
+ {
+  "q": "О'льга сейча'с на ___.",
+  "n": "работа",
+  "c": "prep",
+  "e": "Olga is at work now.",
+  "b": "A1",
+  "w": "Работа takes на: на рабо'те."
+ },
+ {
+  "q": "Ива'н ждёт нас на ___.",
+  "n": "вокзал",
+  "c": "prep",
+  "e": "Ivan is waiting for us at the station.",
+  "b": "A1",
+  "w": "Вокзал takes на: на вокза'ле."
+ },
+ {
+  "q": "Я купи'л ма'рки на ___.",
+  "n": "почта",
+  "c": "prep",
+  "e": "I bought stamps at the post office.",
+  "b": "A2",
+  "w": "По'чта takes на: на по'чте."
+ },
+ {
+  "q": "Де'ти сейча'с на ___, там хо'лодно.",
+  "n": "улица",
+  "c": "prep",
+  "e": "The children are outside now, it's cold there.",
+  "b": "A1",
+  "w": "На у'лице means outside."
+ },
+ {
+  "q": "Мы гуля'ли в ___ и собира'ли грибы'.",
+  "n": "лес",
+  "c": "prep",
+  "e": "We walked in the forest and picked mushrooms.",
+  "b": "A2",
+  "w": "Лес has a special locative: в лесу', stressed on the ending."
+ },
+ {
+  "q": "Ба'бушка сиди'т в ___ под де'ревом.",
+  "n": "сад",
+  "c": "prep",
+  "e": "Grandma is sitting in the garden under a tree.",
+  "b": "A2",
+  "w": "Сад has a special locative: в саду'."
+ },
+ {
+  "q": "Ко'шка спит на ___.",
+  "n": "пол",
+  "c": "prep",
+  "e": "The cat is sleeping on the floor.",
+  "b": "A2",
+  "w": "Пол has a special locative: на полу'."
+ },
+ {
+  "q": "Твоя' ку'ртка в ___.",
+  "n": "шкаф",
+  "c": "prep",
+  "e": "Your jacket is in the wardrobe.",
+  "b": "A2",
+  "w": "Шкаф has a special locative: в шкафу'."
+ },
+ {
+  "q": "Мы встре'тились в ___.",
+  "n": "аэропорт",
+  "c": "prep",
+  "e": "We met at the airport.",
+  "b": "A2",
+  "w": "Аэропорт has a special locative: в аэропорту'."
+ },
+ {
+  "q": "Мы отдыха'ли на ___ в ию'ле.",
+  "n": "море",
+  "c": "prep",
+  "e": "We had a holiday by the sea in July.",
+  "b": "A1",
+  "w": "На мо'ре: at the seaside."
+ },
+ {
+  "q": "Кни'га лежи'т на ___.",
+  "n": "стол",
+  "c": "prep",
+  "e": "The book is lying on the table.",
+  "b": "A1",
+  "w": "Where? на + prepositional: на столе'."
+ },
+ {
+  "q": "Ва'за стои'т на ___.",
+  "n": "окно",
+  "c": "prep",
+  "e": "The vase is on the windowsill.",
+  "b": "A2",
+  "w": "на окне' means on the windowsill."
+ },
+ {
+  "q": "Ле'том мы живём на ___.",
+  "n": "дача",
+  "c": "prep",
+  "e": "In summer we live at the dacha.",
+  "b": "A1",
+  "w": "Да'ча takes на: на да'че."
+ },
+ {
+  "q": "Мой де'душка живёт в ___.",
+  "n": "деревня",
+  "c": "prep",
+  "e": "My grandfather lives in a village.",
+  "b": "A1",
+  "w": "Where? в + prepositional: в дере'вне."
+ },
+ {
+  "q": "Мы бы'ли в ___ вчера' ве'чером.",
+  "n": "театр",
+  "c": "prep",
+  "e": "We were at the theatre yesterday evening.",
+  "b": "A1",
+  "w": "Where? в + prepositional: в теа'тре."
+ },
+ {
+  "q": "А'нна у'чится в ___.",
+  "n": "университет",
+  "c": "prep",
+  "e": "Anna studies at university.",
+  "b": "A1",
+  "w": "Where? в + prepositional: в университе'те."
+ },
+ {
+  "q": "Де'ти сейча'с в ___.",
+  "n": "школа",
+  "c": "prep",
+  "e": "The children are at school now.",
+  "b": "A1",
+  "w": "Where? в + prepositional: в шко'ле."
+ },
+ {
+  "q": "Па'па лежи'т в ___ уже' неде'лю.",
+  "n": "больница",
+  "c": "prep",
+  "e": "Dad has been in hospital for a week.",
+  "b": "A2",
+  "w": "Where? в + prepositional: в больни'це."
+ },
+ {
+  "q": "Я чита'ю в ___, там ти'хо.",
+  "n": "библиотека",
+  "c": "prep",
+  "e": "I read in the library, it's quiet there.",
+  "b": "A1",
+  "w": "Where? в + prepositional: в библиоте'ке."
+ },
+ {
+  "q": "Мы у'жинали в хоро'шем ___.",
+  "n": "ресторан",
+  "c": "prep",
+  "e": "We had dinner in a good restaurant.",
+  "b": "A1",
+  "w": "Where? в + prepositional: в рестора'не."
+ },
+ {
+  "q": "Э'ти карти'ны в ___.",
+  "n": "музей",
+  "c": "prep",
+  "e": "These paintings are in the museum.",
+  "b": "A2",
+  "w": "Where? в + prepositional: в музе'е."
+ },
+ {
+  "q": "Мы ку'пим хлеб в ___.",
+  "n": "магазин",
+  "c": "prep",
+  "e": "We'll buy bread in the shop.",
+  "b": "A1",
+  "w": "Where? в + prepositional: в магази'не."
+ },
+ {
+  "q": "Я живу' в ма'ленькой ___.",
+  "n": "квартира",
+  "c": "prep",
+  "e": "I live in a small flat.",
+  "b": "A1",
+  "w": "Where? в + prepositional: в кварти'ре."
+ },
+ {
+  "q": "Ма'ша сиди'т в свое'й ___.",
+  "n": "комната",
+  "c": "prep",
+  "e": "Masha is sitting in her room.",
+  "b": "A1",
+  "w": "Where? в + prepositional: в ко'мнате."
+ },
+ {
+  "q": "Мы сиде'ли на ___ и смотре'ли на ре'ку.",
+  "n": "берег",
+  "c": "prep",
+  "e": "We sat on the bank and looked at the river.",
+  "b": "B1",
+  "w": "Бе'рег has a special locative: на берегу'."
+ },
+ {
+  "q": "Он ждёт тебя' на ___ у'лицы.",
+  "n": "угол",
+  "c": "prep",
+  "e": "He's waiting for you on the street corner.",
+  "b": "B1",
+  "w": "У'гол has a special locative: на углу'."
+ },
+ {
+  "q": "Де'ти игра'ли в ___ весь день.",
+  "n": "снег",
+  "c": "prep",
+  "e": "The children played in the snow all day.",
+  "b": "B1",
+  "w": "Снег has a special locative: в снегу'."
+ },
+ {
+  "q": "Мы живём на тре'тьем ___.",
+  "n": "этаж",
+  "c": "prep",
+  "e": "We live on the third floor.",
+  "b": "A2",
+  "w": "Эта'ж takes на: на этаже'."
+ },
+ {
+  "q": "Я жду тебя' на ___.",
+  "n": "остановка",
+  "c": "prep",
+  "e": "I'm waiting for you at the stop.",
+  "b": "A1",
+  "w": "Остано'вка takes на: на остано'вке."
+ },
+ {
+  "q": "Мы встре'тились на ___.",
+  "n": "концерт",
+  "c": "prep",
+  "e": "We met at a concert.",
+  "b": "A2",
+  "w": "An event takes на: на конце'рте."
+ },
+ {
+  "q": "Я был на ___ в суббо'ту.",
+  "n": "рынок",
+  "c": "prep",
+  "e": "I was at the market on Saturday.",
+  "b": "A2",
+  "w": "Ры'нок takes на: на ры'нке."
+ },
+ {
+  "q": "Студе'нты сейча'с на ___.",
+  "n": "лекция",
+  "c": "prep",
+  "e": "The students are at a lecture now.",
+  "b": "A2",
+  "w": "An event takes на: на ле'кции."
+ },
+ {
+  "q": "Мы встре'тились на ___ у Кремля'.",
+  "n": "площадь",
+  "c": "prep",
+  "e": "We met on the square by the Kremlin.",
+  "b": "B1",
+  "w": "Пло'щадь takes на: на пло'щади."
+ },
+ {
+  "q": "Па'па рабо'тает на ___.",
+  "n": "завод",
+  "c": "prep",
+  "e": "Dad works at a factory.",
+  "b": "A2",
+  "w": "Заво'д takes на: на заво'де."
+ },
+ {
+  "q": "Ма'ма рабо'тает на ___.",
+  "n": "фабрика",
+  "c": "prep",
+  "e": "Mum works at a factory.",
+  "b": "A2",
+  "w": "Фа'брика takes на: на фа'брике."
+ },
+ {
+  "q": "Мы стоя'ли на ___ и смотре'ли на ре'ку.",
+  "n": "мост",
+  "c": "prep",
+  "e": "We stood on the bridge and looked at the river.",
+  "b": "B1",
+  "w": "Мост has a special locative: на мосту'."
+ },
+ {
+  "q": "Ле'том мы бы'ли в ___.",
+  "n": "гора",
+  "c": "prep",
+  "num": "pl",
+  "e": "In the summer we were in the mountains.",
+  "b": "A2",
+  "w": "в гора'х: in the mountains, plural."
+ },
+ {
+  "q": "Мы купа'лись в ___.",
+  "n": "река",
+  "c": "prep",
+  "e": "We swam in the river.",
+  "b": "A2",
+  "w": "Where? в + prepositional: в реке'."
+ },
+ {
+  "q": "Ры'ба живёт в ___.",
+  "n": "озеро",
+  "c": "prep",
+  "e": "Fish live in the lake.",
+  "b": "A2",
+  "w": "Where? в + prepositional: в о'зере."
+ },
+ {
+  "q": "Я сижу' на ___ и чита'ю.",
+  "n": "диван",
+  "c": "prep",
+  "e": "I'm sitting on the sofa reading.",
+  "b": "A1",
+  "w": "Where? на + prepositional: на дива'не."
+ },
+ {
+  "q": "Ребёнок спит в ___.",
+  "n": "кровать",
+  "c": "prep",
+  "e": "The baby is sleeping in the bed.",
+  "b": "A1",
+  "w": "Where? в + prepositional: в крова'ти."
+ },
+ {
+  "q": "Карти'на виси'т на ___.",
+  "n": "стена",
+  "c": "prep",
+  "e": "The picture is hanging on the wall.",
+  "b": "A2",
+  "w": "Where? на + prepositional: на стене'."
+ },
+ {
+  "q": "Мы е'хали в ___ три часа'.",
+  "n": "автобус",
+  "c": "prep",
+  "e": "We rode on the bus for three hours.",
+  "b": "A2",
+  "w": "Where? в + prepositional: в авто'бусе."
+ },
+ {
+  "q": "Я сплю в ___, когда' е'ду домо'й.",
+  "n": "поезд",
+  "c": "prep",
+  "e": "I sleep on the train when I go home.",
+  "b": "A2",
+  "w": "Where? в + prepositional: в по'езде."
+ },
+ {
+  "q": "Мы бы'ли в э'том ___ на экску'рсии.",
+  "n": "город",
+  "c": "prep",
+  "e": "We were in this town on an excursion.",
+  "b": "A2",
+  "w": "Where? в + prepositional: в го'роде."
+ },
+ {
+  "q": "Ключи' в ___, посмотри'.",
+  "n": "сумка",
+  "c": "prep",
+  "e": "The keys are in the bag, have a look.",
+  "b": "A1",
+  "w": "Where? в + prepositional: в су'мке."
+ },
+ {
+  "q": "Суп в ___, ешь.",
+  "n": "тарелка",
+  "c": "prep",
+  "e": "The soup is in the bowl, eat.",
+  "b": "A2",
+  "w": "Where? в + prepositional: в таре'лке."
+ },
+ {
+  "q": "Мы жи'ли в ___ на мо'ре.",
+  "n": "палатка",
+  "c": "prep",
+  "e": "We lived in a tent by the sea.",
+  "b": "B1",
+  "w": "Where? в + prepositional: в пала'тке."
+ },
+ {
+  "q": "Мы жи'ли в ___ де'сять лет.",
+  "n": "дом",
+  "c": "prep",
+  "e": "We lived in the house for ten years.",
+  "b": "A1",
+  "w": "Where? в + prepositional: в до'ме."
+ },
+ {
+  "q": "Где ты был? На ___?",
+  "n": "урок",
+  "c": "prep",
+  "e": "Where were you? At a lesson?",
+  "b": "A1",
+  "w": "An event takes на: на уро'ке."
+ },
+ {
+  "q": "На ___ я получи'л пять.",
+  "n": "экзамен",
+  "c": "prep",
+  "e": "I got top marks in the exam.",
+  "b": "A2",
+  "w": "An event takes на: на экза'мене."
+ },
+ {
+  "q": "Мы бы'ли на ___ у бра'та.",
+  "n": "праздник",
+  "c": "prep",
+  "e": "We were at my brother's party.",
+  "b": "A2",
+  "w": "An event takes на: на пра'зднике."
+ },
+ {
+  "q": "Ва'ши де'ти в ___.",
+  "n": "класс",
+  "c": "prep",
+  "e": "Your children are in the classroom.",
+  "b": "A2",
+  "w": "Where? в + prepositional: в кла'ссе."
+ },
+ {
+  "q": "Я живу' в ___ го'рода.",
+  "n": "центр",
+  "c": "prep",
+  "e": "I live in the centre of town.",
+  "b": "A2",
+  "w": "Where? в + prepositional: в це'нтре."
+ },
+ {
+  "q": "Я чита'л об э'том в ___.",
+  "n": "газета",
+  "c": "prep",
+  "e": "I read about it in the newspaper.",
+  "b": "A2",
+  "w": "Where? в + prepositional: в газе'те."
+ },
+ {
+  "q": "В како'й ___ ты живёшь?",
+  "n": "страна",
+  "c": "prep",
+  "e": "Which country do you live in?",
+  "b": "A2",
+  "w": "Where? в + prepositional: в стране'."
+ },
+ {
+  "q": "Мы рабо'таем в одно'м ___.",
+  "n": "университет",
+  "c": "prep",
+  "e": "We work at the same university.",
+  "b": "A2",
+  "w": "Where? в + prepositional: в университе'те."
+ },
+ {
+  "q": "Ле'том мы отдыха'ем в ___.",
+  "n": "деревня",
+  "c": "prep",
+  "e": "In summer we holiday in the countryside.",
+  "b": "A2",
+  "w": "Where? в + prepositional: в дере'вне."
+ },
+ {
+  "q": "В на'шем ___ мно'го па'рков.",
+  "n": "город",
+  "c": "prep",
+  "e": "There are a lot of parks in our town.",
+  "b": "A2",
+  "w": "Where? в + prepositional: в го'роде."
+ },
+ {
+  "q": "Мы бы'ли во мно'гих ___.",
+  "n": "страна",
+  "c": "prep",
+  "num": "pl",
+  "e": "We've been to many countries.",
+  "b": "B1",
+  "w": "Plural prepositional: в стра'нах."
+ },
+ {
+  "q": "Я иду' в ___.",
+  "n": "магазин",
+  "c": "acc",
+  "e": "I'm going to the shop.",
+  "b": "A1",
+  "w": "Where to? в + accusative: в магази'н."
+ },
+ {
+  "q": "Мы е'дем на ___.",
+  "n": "море",
+  "c": "acc",
+  "e": "We're going to the seaside.",
+  "b": "A1",
+  "w": "Where to? на + accusative: на мо'ре."
+ },
+ {
+  "q": "За'втра я пойду' в ___.",
+  "n": "библиотека",
+  "c": "acc",
+  "e": "Tomorrow I'll go to the library.",
+  "b": "A1",
+  "w": "Where to? в + accusative: в библиоте'ку."
+ },
+ {
+  "q": "Де'ти иду'т в ___.",
+  "n": "школа",
+  "c": "acc",
+  "e": "The children are going to school.",
+  "b": "A1",
+  "w": "Where to? в + accusative: в шко'лу."
+ },
+ {
+  "q": "Па'па е'дет на ___.",
+  "n": "работа",
+  "c": "acc",
+  "e": "Dad is going to work.",
+  "b": "A1",
+  "w": "Where to? на + accusative: на рабо'ту."
+ },
+ {
+  "q": "Мы е'дем на ___ на такси'.",
+  "n": "вокзал",
+  "c": "acc",
+  "e": "We're going to the station by taxi.",
+  "b": "A1",
+  "w": "Where to? на + accusative: на вокза'л."
+ },
+ {
+  "q": "Ма'ша пошла' на ___ за ма'рками.",
+  "n": "почта",
+  "c": "acc",
+  "e": "Masha went to the post office for stamps.",
+  "b": "A2",
+  "w": "Where to? на + accusative: на по'чту."
+ },
+ {
+  "q": "Вы'йди на ___, там со'лнце.",
+  "n": "улица",
+  "c": "acc",
+  "e": "Go outside, it's sunny.",
+  "b": "A1",
+  "w": "Where to? на + accusative: на у'лицу."
+ },
+ {
+  "q": "В суббо'ту мы пое'дем на ___.",
+  "n": "дача",
+  "c": "acc",
+  "e": "On Saturday we'll go to the dacha.",
+  "b": "A1",
+  "w": "Where to? на + accusative: на да'чу."
+ },
+ {
+  "q": "Мы пошли' в ___ за гриба'ми.",
+  "n": "лес",
+  "c": "acc",
+  "e": "We went to the forest for mushrooms.",
+  "b": "A2",
+  "w": "Where to? в + accusative: в лес."
+ },
+ {
+  "q": "Положи' ку'ртку в ___.",
+  "n": "шкаф",
+  "c": "acc",
+  "e": "Put the jacket in the wardrobe.",
+  "b": "A2",
+  "w": "Where to? в + accusative: в шкаф."
+ },
+ {
+  "q": "Положи' кни'гу на ___.",
+  "n": "стол",
+  "c": "acc",
+  "e": "Put the book on the table.",
+  "b": "A1",
+  "w": "Where to? на + accusative: на стол."
+ },
+ {
+  "q": "Мы е'дем в ___ на по'езде.",
+  "n": "деревня",
+  "c": "acc",
+  "e": "We're going to the village by train.",
+  "b": "A2",
+  "w": "Where to? в + accusative: в дере'вню."
+ },
+ {
+  "q": "Ива'н пое'хал в ___.",
+  "n": "аэропорт",
+  "c": "acc",
+  "e": "Ivan went to the airport.",
+  "b": "A2",
+  "w": "Where to? в + accusative: в аэропо'рт."
+ },
+ {
+  "q": "Пойдём в ___ ве'чером?",
+  "n": "театр",
+  "c": "acc",
+  "e": "Shall we go to the theatre in the evening?",
+  "b": "A1",
+  "w": "Where to? в + accusative: в теа'тр."
+ },
+ {
+  "q": "Вчера' я ходи'л в ___.",
+  "n": "музей",
+  "c": "acc",
+  "e": "Yesterday I went to the museum.",
+  "b": "A1",
+  "w": "Where to? в + accusative: в музе'й."
+ },
+ {
+  "q": "Ба'бушку положи'ли в ___.",
+  "n": "больница",
+  "c": "acc",
+  "e": "Grandma was taken into hospital.",
+  "b": "B1",
+  "w": "Where to? в + accusative: в больни'цу."
+ },
+ {
+  "q": "Иди' в свою' ___!",
+  "n": "комната",
+  "c": "acc",
+  "e": "Go to your room!",
+  "b": "A1",
+  "w": "Where to? в + accusative: в ко'мнату."
+ },
+ {
+  "q": "Ма'ма пошла' на ___ за ры'бой.",
+  "n": "рынок",
+  "c": "acc",
+  "e": "Mum went to the market for fish.",
+  "b": "A2",
+  "w": "Where to? на + accusative: на ры'нок."
+ },
+ {
+  "q": "Мы идём на ___ в семь.",
+  "n": "концерт",
+  "c": "acc",
+  "e": "We're going to a concert at seven.",
+  "b": "A2",
+  "w": "Where to? на + accusative: на конце'рт."
+ },
+ {
+  "q": "Сего'дня мы идём на ___.",
+  "n": "лекция",
+  "c": "acc",
+  "e": "Today we're going to a lecture.",
+  "b": "A2",
+  "w": "Where to? на + accusative: на ле'кцию."
+ },
+ {
+  "q": "Студе'нты иду'т на ___.",
+  "n": "экзамен",
+  "c": "acc",
+  "e": "The students are going to an exam.",
+  "b": "A2",
+  "w": "Where to? на + accusative: на экза'мен."
+ },
+ {
+  "q": "Ле'том мы пое'дем в ___.",
+  "n": "гора",
+  "c": "acc",
+  "num": "pl",
+  "e": "In the summer we'll go to the mountains.",
+  "b": "A2",
+  "w": "Where to? в + accusative plural: в го'ры."
+ },
+ {
+  "q": "Ко'шка пры'гнула на ___.",
+  "n": "диван",
+  "c": "acc",
+  "e": "The cat jumped onto the sofa.",
+  "b": "A2",
+  "w": "Where to? на + accusative: на дива'н."
+ },
+ {
+  "q": "Пове'сь карти'ну на ___.",
+  "n": "стена",
+  "c": "acc",
+  "e": "Hang the picture on the wall.",
+  "b": "B1",
+  "w": "Where to? на + accusative: на сте'ну."
+ },
+ {
+  "q": "Мы се'ли в ___ и пое'хали.",
+  "n": "автобус",
+  "c": "acc",
+  "e": "We got on the bus and set off.",
+  "b": "A2",
+  "w": "Where to? в + accusative: в авто'бус."
+ },
+ {
+  "q": "Он положи'л ключи' в ___.",
+  "n": "сумка",
+  "c": "acc",
+  "e": "He put the keys in the bag.",
+  "b": "A2",
+  "w": "Where to? в + accusative: в су'мку."
+ },
+ {
+  "q": "Я иду' в ___, хо'чешь со мной?",
+  "n": "парк",
+  "c": "acc",
+  "e": "I'm going to the park, do you want to come?",
+  "b": "A1",
+  "w": "Where to? в + accusative: в парк."
+ },
+ {
+  "q": "За'втра мы идём в ___.",
+  "n": "ресторан",
+  "c": "acc",
+  "e": "Tomorrow we're going to a restaurant.",
+  "b": "A1",
+  "w": "Where to? в + accusative: в рестора'н."
+ },
+ {
+  "q": "Де'ти пошли' во ___.",
+  "n": "двор",
+  "c": "acc",
+  "e": "The children went out into the yard.",
+  "b": "A2",
+  "w": "Where to? во + accusative: во двор."
+ },
+ {
+  "q": "Мы пое'дем в ___ на экску'рсию.",
+  "n": "город",
+  "c": "acc",
+  "e": "We'll go into town on an excursion.",
+  "b": "A2",
+  "w": "Where to? в + accusative: в го'род."
+ },
+ {
+  "q": "Мы ходи'ли на ___ к бра'ту.",
+  "n": "праздник",
+  "c": "acc",
+  "e": "We went to my brother's party.",
+  "b": "B1",
+  "w": "Where to? на + accusative: на пра'здник."
+ },
+ {
+  "q": "Он поступи'л в ___ в Москве'.",
+  "n": "университет",
+  "c": "acc",
+  "e": "He got into a university in Moscow.",
+  "b": "B1",
+  "w": "Where to? в + accusative: в университе'т."
+ },
+ {
+  "q": "Ко'шка зале'зла под ___.",
+  "n": "кровать",
+  "c": "acc",
+  "e": "The cat crawled under the bed.",
+  "b": "B1",
+  "w": "Where to? под + accusative: под крова'ть."
+ },
+ {
+  "q": "Ко'шка спит под ___.",
+  "n": "кровать",
+  "c": "inst",
+  "e": "The cat is sleeping under the bed.",
+  "b": "B1",
+  "w": "Where? под + instrumental: под крова'тью."
+ },
+ {
+  "q": "Пое'дем в ___ ле'том?",
+  "n": "отпуск",
+  "c": "acc",
+  "e": "Shall we go on holiday in the summer?",
+  "b": "A2",
+  "w": "Where to? в + accusative: в о'тпуск."
+ },
+ {
+  "q": "Он упа'л в ___.",
+  "n": "река",
+  "c": "acc",
+  "e": "He fell into the river.",
+  "b": "A2",
+  "w": "Where to? в + accusative: в ре'ку."
+ },
+ {
+  "q": "Мы ходи'ли в ___ вчера'.",
+  "n": "банк",
+  "c": "acc",
+  "e": "We went to the bank yesterday.",
+  "b": "A1",
+  "w": "Where to? в + accusative: в банк."
+ }
+]

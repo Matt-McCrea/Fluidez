@@ -1,0 +1,805 @@
+[
+ {
+  "q": "За'втра я пойду' к ___.",
+  "n": "врач",
+  "c": "dat",
+  "e": "Tomorrow I'll go to the doctor.",
+  "b": "A1",
+  "w": "Going to a person: к + dative, к врачу'."
+ },
+ {
+  "q": "Мы е'дем к ___ в дере'вню.",
+  "n": "бабушка",
+  "c": "dat",
+  "e": "We're going to Grandma's in the village.",
+  "b": "A1",
+  "w": "Going to a person: к + dative, к ба'бушке."
+ },
+ {
+  "q": "Вчера' я ходи'л к ___.",
+  "n": "друг",
+  "c": "dat",
+  "e": "Yesterday I went to see a friend.",
+  "b": "A2",
+  "w": "Going to a person: к + dative, к дру'гу."
+ },
+ {
+  "q": "Приходи' к ___ в суббо'ту.",
+  "n": "мама",
+  "c": "dat",
+  "e": "Come to Mum's on Saturday.",
+  "b": "A2",
+  "w": "к + dative: к ма'ме."
+ },
+ {
+  "q": "Иди' к ___, он тебя' ждёт.",
+  "n": "папа",
+  "c": "dat",
+  "e": "Go to Dad, he's waiting for you.",
+  "b": "A2",
+  "w": "к + dative: к па'пе."
+ },
+ {
+  "q": "Я зашла' к ___ на ча'й.",
+  "n": "соседка",
+  "c": "dat",
+  "e": "I dropped in on my neighbour for tea.",
+  "b": "B1",
+  "w": "к + dative: к сосе'дке."
+ },
+ {
+  "q": "Ле'том мы пое'дем к ___.",
+  "n": "сестра",
+  "c": "dat",
+  "e": "In the summer we'll go to my sister's.",
+  "b": "A2",
+  "w": "к + dative: к сестре'."
+ },
+ {
+  "q": "Он подошёл к ___ и посмотре'л на у'лицу.",
+  "n": "окно",
+  "c": "dat",
+  "e": "He went up to the window and looked at the street.",
+  "b": "B1",
+  "w": "к + dative: к окну'."
+ },
+ {
+  "q": "Мы подошли' к ___ и се'ли.",
+  "n": "стол",
+  "c": "dat",
+  "e": "We went up to the table and sat down.",
+  "b": "B1",
+  "w": "к + dative: к столу'."
+ },
+ {
+  "q": "Студе'нты гото'вятся к ___.",
+  "n": "экзамен",
+  "c": "dat",
+  "e": "The students are getting ready for the exam.",
+  "b": "B1",
+  "w": "гото'виться к + dative: к экза'мену."
+ },
+ {
+  "q": "Мы гуля'ли по ___ весь день.",
+  "n": "город",
+  "c": "dat",
+  "e": "We walked around the town all day.",
+  "b": "A2",
+  "w": "по + dative: по го'роду."
+ },
+ {
+  "q": "Иди' по ___ пря'мо до па'рка.",
+  "n": "улица",
+  "c": "dat",
+  "e": "Go straight along the street to the park.",
+  "b": "A2",
+  "w": "по + dative: по у'лице."
+ },
+ {
+  "q": "Мы до'лго гуля'ли по ___.",
+  "n": "парк",
+  "c": "dat",
+  "e": "We walked around the park for a long time.",
+  "b": "A2",
+  "w": "по + dative: по па'рку."
+ },
+ {
+  "q": "Мы шли по ___ и пе'ли.",
+  "n": "лес",
+  "c": "dat",
+  "e": "We walked through the forest singing.",
+  "b": "B1",
+  "w": "по + dative: по ле'су."
+ },
+ {
+  "q": "Я говори'л с ним по ___.",
+  "n": "телефон",
+  "c": "dat",
+  "e": "I spoke to him on the phone.",
+  "b": "A2",
+  "w": "по телефо'ну: on the phone."
+ },
+ {
+  "q": "Я ви'дел э'то по ___.",
+  "n": "телевизор",
+  "c": "dat",
+  "e": "I saw it on TV.",
+  "b": "A2",
+  "w": "по телеви'зору: on TV."
+ },
+ {
+  "q": "Мы е'здили по ___.",
+  "n": "страна",
+  "c": "dat",
+  "e": "We travelled around the country.",
+  "b": "B1",
+  "w": "по + dative: по стране'."
+ },
+ {
+  "q": "Мне о'чень нра'вится э'та ___.",
+  "n": "книга",
+  "c": "nom",
+  "e": "I really like this book.",
+  "b": "A2",
+  "w": "With нра'виться, the thing liked is the subject: nominative."
+ },
+ {
+  "q": "___ нра'вится э'тот фильм.",
+  "n": "мама",
+  "c": "dat",
+  "e": "Mum likes this film.",
+  "b": "A2",
+  "w": "With нра'виться, the person who likes is in the dative: ма'ме."
+ },
+ {
+  "q": "___ не нра'вится суп.",
+  "n": "папа",
+  "c": "dat",
+  "e": "Dad doesn't like the soup.",
+  "b": "A2",
+  "w": "The person who likes is in the dative: па'пе."
+ },
+ {
+  "q": "___ понра'вился пода'рок.",
+  "n": "бабушка",
+  "c": "dat",
+  "e": "Grandma liked the present.",
+  "b": "A2",
+  "w": "The person who likes is in the dative: ба'бушке."
+ },
+ {
+  "q": "Как ___ нра'вится ваш го'род?",
+  "n": "гость",
+  "c": "dat",
+  "num": "pl",
+  "e": "How do the guests like your town?",
+  "b": "B1",
+  "w": "The people who like are in the dative: гостя'м."
+ },
+ {
+  "q": "___ нра'вится игра'ть во дворе'.",
+  "n": "ребёнок",
+  "c": "dat",
+  "num": "pl",
+  "e": "The children like playing in the yard.",
+  "b": "A2",
+  "w": "The people who like are in the dative plural: де'тям."
+ },
+ {
+  "q": "___ нра'вится но'вая кварти'ра.",
+  "n": "сестра",
+  "c": "dat",
+  "e": "My sister likes the new flat.",
+  "b": "A2",
+  "w": "The person who likes is in the dative: сестре'."
+ },
+ {
+  "q": "___ нра'вится рабо'тать в саду'.",
+  "n": "дедушка",
+  "c": "dat",
+  "e": "Grandpa likes working in the garden.",
+  "b": "A2",
+  "w": "The person who likes is in the dative: де'душке."
+ },
+ {
+  "q": "___ нра'вятся ру'сские пе'сни.",
+  "n": "студент",
+  "c": "dat",
+  "num": "pl",
+  "e": "The students like Russian songs.",
+  "b": "B1",
+  "w": "The people who like are in the dative plural: студе'нтам."
+ },
+ {
+  "q": "Позвони' ___, она' волну'ется.",
+  "n": "мама",
+  "c": "dat",
+  "e": "Call Mum, she's worried.",
+  "b": "A1",
+  "w": "звони'ть + dative: ма'ме."
+ },
+ {
+  "q": "Я ча'сто звоню' ___.",
+  "n": "бабушка",
+  "c": "dat",
+  "e": "I often call Grandma.",
+  "b": "A1",
+  "w": "звони'ть + dative: ба'бушке."
+ },
+ {
+  "q": "Вчера' я звони'л ___, но он не отве'тил.",
+  "n": "друг",
+  "c": "dat",
+  "e": "I called my friend yesterday, but he didn't answer.",
+  "b": "A2",
+  "w": "звони'ть + dative: дру'гу."
+ },
+ {
+  "q": "Ты позвони'л ___?",
+  "n": "врач",
+  "c": "dat",
+  "e": "Did you call the doctor?",
+  "b": "A2",
+  "w": "звони'ть + dative: врачу'."
+ },
+ {
+  "q": "Позвони' ___ и скажи', что ты опа'здываешь.",
+  "n": "начальник",
+  "c": "dat",
+  "e": "Call your boss and say you're late.",
+  "b": "B1",
+  "w": "звони'ть + dative: нача'льнику."
+ },
+ {
+  "q": "Мы помога'ем ___ по до'му.",
+  "n": "мама",
+  "c": "dat",
+  "e": "We help Mum around the house.",
+  "b": "A1",
+  "w": "помога'ть + dative: ма'ме."
+ },
+ {
+  "q": "Помоги' ___, ему' тяжело'.",
+  "n": "дедушка",
+  "c": "dat",
+  "e": "Help Grandpa, it's hard for him.",
+  "b": "A2",
+  "w": "помога'ть + dative: де'душке."
+ },
+ {
+  "q": "Врачи' помога'ют ___.",
+  "n": "человек",
+  "c": "dat",
+  "num": "pl",
+  "e": "Doctors help people.",
+  "b": "A2",
+  "w": "помога'ть + dative plural: лю'дям."
+ },
+ {
+  "q": "Я дал ___ свою' кни'гу.",
+  "n": "брат",
+  "c": "dat",
+  "e": "I gave my brother my book.",
+  "b": "A2",
+  "w": "To whom? The dative: бра'ту."
+ },
+ {
+  "q": "Мы купи'ли ___ но'вый велосипе'д.",
+  "n": "сын",
+  "c": "dat",
+  "e": "We bought our son a new bike.",
+  "b": "A2",
+  "w": "For whom? The dative: сы'ну."
+ },
+ {
+  "q": "Ма'ма чита'ет ___ ска'зку.",
+  "n": "дочь",
+  "c": "dat",
+  "e": "Mum is reading a fairy tale to her daughter.",
+  "b": "A2",
+  "w": "To whom? The dative: до'чери."
+ },
+ {
+  "q": "Скажи' ___, что я приду'.",
+  "n": "учитель",
+  "c": "dat",
+  "e": "Tell the teacher that I'll come.",
+  "b": "A2",
+  "w": "To whom? The dative: учи'телю."
+ },
+ {
+  "q": "Я написа'л ___ письмо'.",
+  "n": "подруга",
+  "c": "dat",
+  "e": "I wrote a letter to my friend.",
+  "b": "A2",
+  "w": "To whom? The dative: подру'ге."
+ },
+ {
+  "q": "Покажи' ___ свою' кварти'ру.",
+  "n": "гость",
+  "c": "dat",
+  "num": "pl",
+  "e": "Show the guests your flat.",
+  "b": "B1",
+  "w": "To whom? The dative plural: гостя'м."
+ },
+ {
+  "q": "Учи'тель объясня'ет ___ пра'вило.",
+  "n": "ученик",
+  "c": "dat",
+  "num": "pl",
+  "e": "The teacher is explaining the rule to the pupils.",
+  "b": "B1",
+  "w": "To whom? The dative plural: ученика'м."
+ },
+ {
+  "q": "Я подари'л ___ цветы'.",
+  "n": "жена",
+  "c": "dat",
+  "e": "I gave my wife flowers.",
+  "b": "A2",
+  "w": "To whom? The dative: жене'."
+ },
+ {
+  "q": "Ба'бушка дала' ___ конфе'ты.",
+  "n": "ребёнок",
+  "c": "dat",
+  "num": "pl",
+  "e": "Grandma gave the children sweets.",
+  "b": "A2",
+  "w": "To whom? The dative plural: де'тям."
+ },
+ {
+  "q": "___ два'дцать лет.",
+  "n": "сестра",
+  "c": "dat",
+  "e": "My sister is twenty.",
+  "b": "A2",
+  "w": "Age uses the dative: сестре' два'дцать лет."
+ },
+ {
+  "q": "___ пять лет.",
+  "n": "сын",
+  "c": "dat",
+  "e": "My son is five.",
+  "b": "A2",
+  "w": "Age uses the dative: сы'ну пять лет."
+ },
+ {
+  "q": "___ хо'лодно, закро'й окно'.",
+  "n": "ребёнок",
+  "c": "dat",
+  "e": "The child is cold, close the window.",
+  "b": "B1",
+  "w": "Feeling cold uses the dative: ребёнку хо'лодно."
+ },
+ {
+  "q": "___ на'до рабо'тать.",
+  "n": "отец",
+  "c": "dat",
+  "e": "Father has to work.",
+  "b": "B1",
+  "w": "на'до takes the dative: отцу'."
+ },
+ {
+  "q": "___ ну'жно к врачу'.",
+  "n": "бабушка",
+  "c": "dat",
+  "e": "Grandma needs to see the doctor.",
+  "b": "B1",
+  "w": "ну'жно takes the dative: ба'бушке."
+ },
+ {
+  "q": "Я отве'тил ___ на письмо'.",
+  "n": "друг",
+  "c": "dat",
+  "e": "I answered my friend's letter.",
+  "b": "B1",
+  "w": "отве'тить + dative: дру'гу."
+ },
+ {
+  "q": "Мы ве'рим ___.",
+  "n": "врач",
+  "c": "dat",
+  "e": "We trust the doctor.",
+  "b": "B1",
+  "w": "ве'рить + dative: врачу'."
+ },
+ {
+  "q": "Он посове'товал ___ отдохну'ть.",
+  "n": "брат",
+  "c": "dat",
+  "e": "He advised his brother to rest.",
+  "b": "B1",
+  "w": "сове'товать + dative: бра'ту."
+ },
+ {
+  "q": "Я ра'да ___.",
+  "n": "гость",
+  "c": "dat",
+  "num": "pl",
+  "e": "I'm glad to see the guests.",
+  "b": "B1",
+  "w": "рад + dative: гостя'м."
+ },
+ {
+  "q": "Я пью чай с ___.",
+  "n": "молоко",
+  "c": "inst",
+  "e": "I drink tea with milk.",
+  "b": "A1",
+  "w": "с + instrumental: с молоко'м."
+ },
+ {
+  "q": "Я люблю' хлеб с ___.",
+  "n": "масло",
+  "c": "inst",
+  "e": "I love bread with butter.",
+  "b": "A2",
+  "w": "с + instrumental: с ма'слом."
+ },
+ {
+  "q": "Я гуля'ю с ___ ка'ждый ве'чер.",
+  "n": "собака",
+  "c": "inst",
+  "e": "I walk with the dog every evening.",
+  "b": "A1",
+  "w": "с + instrumental: с соба'кой."
+ },
+ {
+  "q": "Мы ходи'ли в кино' с ___.",
+  "n": "друг",
+  "c": "inst",
+  "num": "pl",
+  "e": "We went to the cinema with friends.",
+  "b": "A2",
+  "w": "с + instrumental plural: с друзья'ми."
+ },
+ {
+  "q": "Я живу' с ___.",
+  "n": "мама",
+  "c": "inst",
+  "e": "I live with my mum.",
+  "b": "A1",
+  "w": "с + instrumental: с ма'мой."
+ },
+ {
+  "q": "Ты говори'л с ___?",
+  "n": "папа",
+  "c": "inst",
+  "e": "Did you talk to Dad?",
+  "b": "A2",
+  "w": "с + instrumental: с па'пой."
+ },
+ {
+  "q": "Он танцева'л с ___ весь ве'чер.",
+  "n": "девушка",
+  "c": "inst",
+  "e": "He danced with a girl all evening.",
+  "b": "A2",
+  "w": "с + instrumental: с де'вушкой."
+ },
+ {
+  "q": "Мы отдыха'ли с ___.",
+  "n": "ребёнок",
+  "c": "inst",
+  "num": "pl",
+  "e": "We were on holiday with the children.",
+  "b": "A2",
+  "w": "с + instrumental plural: с детьми'."
+ },
+ {
+  "q": "О'льга живёт с ___ в Москве'.",
+  "n": "муж",
+  "c": "inst",
+  "e": "Olga lives with her husband in Moscow.",
+  "b": "A2",
+  "w": "с + instrumental: с му'жем."
+ },
+ {
+  "q": "Ива'н пришёл с ___.",
+  "n": "жена",
+  "c": "inst",
+  "e": "Ivan came with his wife.",
+  "b": "A2",
+  "w": "с + instrumental: с жено'й."
+ },
+ {
+  "q": "Я говорю' с ___ по телефо'ну.",
+  "n": "сестра",
+  "c": "inst",
+  "e": "I'm talking to my sister on the phone.",
+  "b": "A2",
+  "w": "с + instrumental: с сестро'й."
+ },
+ {
+  "q": "Мы игра'ли в ша'хматы с ___.",
+  "n": "дедушка",
+  "c": "inst",
+  "e": "We played chess with Grandpa.",
+  "b": "A2",
+  "w": "с + instrumental: с де'душкой."
+ },
+ {
+  "q": "Я хочу' поговори'ть с ___.",
+  "n": "директор",
+  "c": "inst",
+  "e": "I want to talk to the director.",
+  "b": "B1",
+  "w": "с + instrumental: с дире'ктором."
+ },
+ {
+  "q": "Мы познако'мились с ___ в метро'.",
+  "n": "сосед",
+  "c": "inst",
+  "e": "We met the neighbour in the metro.",
+  "b": "B1",
+  "w": "познако'миться с + instrumental: с сосе'дом."
+ },
+ {
+  "q": "Я встре'тилась с ___ в кафе'.",
+  "n": "подруга",
+  "c": "inst",
+  "e": "I met up with a friend in a café.",
+  "b": "B1",
+  "w": "встре'титься с + instrumental: с подру'гой."
+ },
+ {
+  "q": "Он пришёл домо'й с ___.",
+  "n": "цветок",
+  "c": "inst",
+  "num": "pl",
+  "e": "He came home with flowers.",
+  "b": "B1",
+  "w": "с + instrumental plural: с цвета'ми."
+ },
+ {
+  "q": "Я пью ко'фе с ___.",
+  "n": "сахар",
+  "c": "inst",
+  "e": "I take my coffee with sugar.",
+  "b": "A2",
+  "w": "с + instrumental: с са'харом."
+ },
+ {
+  "q": "Ма'ма гото'вит суп с ___.",
+  "n": "мясо",
+  "c": "inst",
+  "e": "Mum makes soup with meat.",
+  "b": "A2",
+  "w": "с + instrumental: с мя'сом."
+ },
+ {
+  "q": "Я ем ка'шу с ___.",
+  "n": "молоко",
+  "c": "inst",
+  "e": "I eat porridge with milk.",
+  "b": "A2",
+  "w": "с + instrumental: с молоко'м."
+ },
+ {
+  "q": "Ты пьёшь во'дку с ___?",
+  "n": "сок",
+  "c": "inst",
+  "e": "Do you drink vodka with juice?",
+  "b": "B1",
+  "w": "с + instrumental: с со'ком."
+ },
+ {
+  "q": "Я была' в теа'тре с ___.",
+  "n": "муж",
+  "c": "inst",
+  "e": "I was at the theatre with my husband.",
+  "b": "A2",
+  "w": "с + instrumental: с му'жем."
+ },
+ {
+  "q": "Дом с ___ стои'т у реки'.",
+  "n": "сад",
+  "c": "inst",
+  "e": "The house with a garden stands by the river.",
+  "b": "B1",
+  "w": "с + instrumental: с са'дом."
+ },
+ {
+  "q": "Мой брат рабо'тает ___.",
+  "n": "врач",
+  "c": "inst",
+  "e": "My brother works as a doctor.",
+  "b": "A1",
+  "w": "рабо'тать + instrumental: врачо'м."
+ },
+ {
+  "q": "Моя' сестра' рабо'тает ___ в шко'ле.",
+  "n": "учитель",
+  "c": "inst",
+  "e": "My sister works as a teacher at a school.",
+  "b": "A2",
+  "w": "рабо'тать + instrumental: учи'телем."
+ },
+ {
+  "q": "Ра'ньше он был ___.",
+  "n": "студент",
+  "c": "inst",
+  "e": "He used to be a student.",
+  "b": "A2",
+  "w": "был + instrumental: студе'нтом."
+ },
+ {
+  "q": "Когда' я вы'расту, я бу'ду ___.",
+  "n": "врач",
+  "c": "inst",
+  "e": "When I grow up, I'll be a doctor.",
+  "b": "A2",
+  "w": "бу'ду + instrumental: врачо'м."
+ },
+ {
+  "q": "Он стал ___ в два'дцать лет.",
+  "n": "отец",
+  "c": "inst",
+  "e": "He became a father at twenty.",
+  "b": "B1",
+  "w": "стать + instrumental: отцо'м."
+ },
+ {
+  "q": "Он рабо'тает ___ на заво'де.",
+  "n": "директор",
+  "c": "inst",
+  "e": "He works as a director at the factory.",
+  "b": "B1",
+  "w": "рабо'тать + instrumental: дире'ктором."
+ },
+ {
+  "q": "Я пишу' ___, у меня' нет ру'чки.",
+  "n": "карандаш",
+  "c": "inst",
+  "e": "I'm writing with a pencil, I have no pen.",
+  "b": "A2",
+  "w": "The tool: instrumental, карандашо'м."
+ },
+ {
+  "q": "Пиши' ___, не карандашо'м.",
+  "n": "ручка",
+  "c": "inst",
+  "e": "Write in pen, not pencil.",
+  "b": "A2",
+  "w": "The tool: instrumental, ру'чкой."
+ },
+ {
+  "q": "Я ем суп ___.",
+  "n": "ложка",
+  "c": "inst",
+  "e": "I eat soup with a spoon.",
+  "b": "A2",
+  "w": "The tool: instrumental, ло'жкой."
+ },
+ {
+  "q": "Мы е'дем на мо'ре ___.",
+  "n": "поезд",
+  "c": "inst",
+  "e": "We're going to the sea by train.",
+  "b": "B1",
+  "w": "Means of travel: instrumental, по'ездом."
+ },
+ {
+  "q": "Ле'том мы гуля'ли ___.",
+  "n": "вечер",
+  "c": "inst",
+  "e": "In the summer we went for walks in the evening.",
+  "b": "A2",
+  "w": "When? ве'чером: in the evening."
+ },
+ {
+  "q": "Мы е'здили на мо'ре ___.",
+  "n": "лето",
+  "c": "inst",
+  "e": "We went to the seaside in the summer.",
+  "b": "A2",
+  "w": "When? ле'том: in the summer."
+ },
+ {
+  "q": "___ здесь о'чень хо'лодно.",
+  "n": "зима",
+  "c": "inst",
+  "e": "It's very cold here in winter.",
+  "b": "A2",
+  "w": "When? зимо'й: in winter."
+ },
+ {
+  "q": "Я встаю' ра'но ___.",
+  "n": "утро",
+  "c": "inst",
+  "e": "I get up early in the morning.",
+  "b": "A2",
+  "w": "When? у'тром: in the morning."
+ },
+ {
+  "q": "Ко'шка сиди'т под ___.",
+  "n": "стол",
+  "c": "inst",
+  "e": "The cat is sitting under the table.",
+  "b": "A2",
+  "w": "под + instrumental: под столо'м."
+ },
+ {
+  "q": "Ла'мпа виси'т над ___.",
+  "n": "стол",
+  "c": "inst",
+  "e": "The lamp is hanging over the table.",
+  "b": "B1",
+  "w": "над + instrumental: над столо'м."
+ },
+ {
+  "q": "Самолёт лети'т над ___.",
+  "n": "море",
+  "c": "inst",
+  "e": "The plane is flying over the sea.",
+  "b": "B1",
+  "w": "над + instrumental: над мо'рем."
+ },
+ {
+  "q": "Мы живём ря'дом с ___.",
+  "n": "парк",
+  "c": "inst",
+  "e": "We live next to the park.",
+  "b": "A2",
+  "w": "ря'дом с + instrumental: с па'рком."
+ },
+ {
+  "q": "Маши'на стои'т пе'ред ___.",
+  "n": "дом",
+  "c": "inst",
+  "e": "The car is standing in front of the house.",
+  "b": "B1",
+  "w": "пе'ред + instrumental: пе'ред до'мом."
+ },
+ {
+  "q": "Мой ру'ки пе'ред ___.",
+  "n": "обед",
+  "c": "inst",
+  "e": "Wash your hands before lunch.",
+  "b": "B1",
+  "w": "пе'ред + instrumental: пе'ред обе'дом."
+ },
+ {
+  "q": "Мы говори'ли об э'том за ___.",
+  "n": "ужин",
+  "c": "inst",
+  "e": "We talked about it over dinner.",
+  "b": "B1",
+  "w": "за + instrumental: за у'жином, over a meal."
+ },
+ {
+  "q": "Сад нахо'дится за ___.",
+  "n": "дом",
+  "c": "inst",
+  "e": "The garden is behind the house.",
+  "b": "B1",
+  "w": "за + instrumental: за до'мом."
+ },
+ {
+  "q": "Он интересу'ется ___.",
+  "n": "музыка",
+  "c": "inst",
+  "e": "He's interested in music.",
+  "b": "B1",
+  "w": "интересова'ться + instrumental: му'зыкой."
+ },
+ {
+  "q": "Я занима'юсь ___ ка'ждый день.",
+  "n": "спорт",
+  "c": "inst",
+  "e": "I do sport every day.",
+  "b": "B1",
+  "w": "занима'ться + instrumental: спо'ртом."
+ },
+ {
+  "q": "Мы горди'мся на'шим ___.",
+  "n": "сын",
+  "c": "inst",
+  "e": "We're proud of our son.",
+  "b": "B1",
+  "w": "горди'ться + instrumental: сы'ном."
+ }
+]

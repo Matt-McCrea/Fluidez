@@ -1,0 +1,972 @@
+[
+ {
+  "q": "Вчера' мы ___ в кино' ря'дом с до'мом.",
+  "v": "ходить",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday we went to the cinema near our house.",
+  "b": "A1",
+  "w": "A trip there and back, now over: ходили."
+ },
+ {
+  "q": "Вчера' Ива'н ___ пешко'м в магази'н за хле'бом.",
+  "v": "ходить",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Ivan went to the shop for bread on foot.",
+  "b": "A1",
+  "w": "There and back, on foot: ходил."
+ },
+ {
+  "q": "Вчера' я ___ пешко'м в музе'й и о'чень уста'ла.",
+  "v": "ходить",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "Yesterday I went to the museum and got very tired on foot.",
+  "b": "A2",
+  "w": "A finished round trip: ходи'ла."
+ },
+ {
+  "q": "Ма'ша, ты вчера' ___ к врачу'?",
+  "v": "ходить",
+  "t": "past",
+  "p": "ty",
+  "g": "f",
+  "e": "Masha, did you go to the doctor yesterday?",
+  "b": "A2",
+  "w": "Did you go (and come back)?: ходила."
+ },
+ {
+  "q": "Где ты был, Серге'й? Я ___ в апте'ку.",
+  "v": "ходить",
+  "t": "past",
+  "p": "ya",
+  "g": "m",
+  "e": "Where were you, Sergei? I went to the chemist's.",
+  "b": "A2",
+  "w": "I went and I'm back: ходил."
+ },
+ {
+  "q": "В суббо'ту мы ___ в теа'тр пешко'м.",
+  "v": "ходить",
+  "t": "past",
+  "p": "my",
+  "e": "On Saturday we walked to the theatre.",
+  "b": "A2",
+  "w": "A round trip on foot, over: ходили."
+ },
+ {
+  "q": "Вчера' А'нна ___ в го'сти к сосе'дке.",
+  "v": "ходить",
+  "t": "past",
+  "p": "ona",
+  "e": "Yesterday Anna went to visit her neighbour.",
+  "b": "A2",
+  "w": "There and back: ходила."
+ },
+ {
+  "q": "В про'шлом году' мы ___ в Ита'лию на маши'не.",
+  "v": "ездить",
+  "t": "past",
+  "p": "my",
+  "e": "Last year we drove to Italy.",
+  "b": "A2",
+  "w": "A round trip by car: ездили."
+ },
+ {
+  "q": "Ле'том О'льга ___ к ба'бушке в дере'вню.",
+  "v": "ездить",
+  "t": "past",
+  "p": "ona",
+  "e": "In the summer Olga went to her grandmother's in the village.",
+  "b": "A2",
+  "w": "A trip there and back: ездила."
+ },
+ {
+  "q": "Ты ___ в Москву' на про'шлой неде'ле, Ива'н?",
+  "v": "ездить",
+  "t": "past",
+  "p": "ty",
+  "g": "m",
+  "e": "Did you go to Moscow last week, Ivan?",
+  "b": "A2",
+  "w": "A trip there and back: ездил."
+ },
+ {
+  "q": "Вчера' па'па ___ на да'чу и привёз я'блоки.",
+  "v": "ездить",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Dad went to the dacha and brought back apples.",
+  "b": "A2",
+  "w": "A round trip by car: ездил."
+ },
+ {
+  "q": "Ребёнком я ___ на мо'ре и была' сча'стлива.",
+  "v": "ездить",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "As a child I used to go to the sea and was happy.",
+  "b": "B1",
+  "w": "Repeated trips: е'здила."
+ },
+ {
+  "q": "Мы ___ в по'езде всю ночь и не спа'ли.",
+  "v": "ехать",
+  "t": "past",
+  "p": "my",
+  "e": "We were on the train all night and didn't sleep.",
+  "b": "A2",
+  "w": "One journey in progress: ехали."
+ },
+ {
+  "q": "Когда' мы ___ в такси', пошёл дождь.",
+  "v": "ехать",
+  "t": "past",
+  "p": "my",
+  "e": "When we were in the taxi, it started raining.",
+  "b": "B1",
+  "w": "One journey, as background: ехали."
+ },
+ {
+  "q": "Я ___ на рабо'ту на авто'бусе и всё вре'мя спала'.",
+  "v": "ехать",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "I was on the bus to work and slept the whole time.",
+  "b": "B1",
+  "w": "One trip in progress: е'хала."
+ },
+ {
+  "q": "Я ___ домо'й пешко'м и встре'тила Ма'шу.",
+  "v": "идти",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "I was walking home and met Masha.",
+  "b": "A2",
+  "w": "One direction, on foot, as background: шла."
+ },
+ {
+  "q": "Когда' Ива'н ___ домо'й пешко'м, пошёл снег.",
+  "v": "идти",
+  "t": "past",
+  "p": "on",
+  "e": "When Ivan was walking home, it started snowing.",
+  "b": "B1",
+  "w": "One direction, on foot, as background: шёл."
+ },
+ {
+  "q": "Вчера' весь день ___ дождь.",
+  "v": "идти",
+  "t": "past",
+  "p": "on",
+  "e": "It rained all day yesterday.",
+  "b": "A1",
+  "w": "Rain \"goes\": шёл дождь."
+ },
+ {
+  "q": "Мы ___ домо'й по у'лице и разгова'ривали.",
+  "v": "идти",
+  "t": "past",
+  "p": "my",
+  "e": "We were walking home along the street, talking.",
+  "b": "A2",
+  "w": "One direction, on foot, in progress: шли."
+ },
+ {
+  "q": "В про'шлом году' мы ___ в Пари'ж.",
+  "v": "летать",
+  "t": "past",
+  "p": "my",
+  "e": "Last year we flew to Paris.",
+  "b": "A2",
+  "w": "A round trip by plane: летали."
+ },
+ {
+  "q": "Ты когда'-нибу'дь ___ на самолёте, Ма'ша?",
+  "v": "летать",
+  "t": "past",
+  "p": "ty",
+  "g": "f",
+  "e": "Have you ever flown on a plane, Masha?",
+  "b": "A2",
+  "w": "Flying in general: летала."
+ },
+ {
+  "q": "Когда' мы ___ в Москву', я спал.",
+  "v": "лететь",
+  "t": "past",
+  "p": "my",
+  "e": "When we were flying to Moscow, I was asleep.",
+  "b": "B1",
+  "w": "One flight, as background: летели."
+ },
+ {
+  "q": "Самолёт ___ в Москву' три часа'.",
+  "v": "лететь",
+  "t": "past",
+  "p": "on",
+  "e": "The plane took three hours to fly to Moscow.",
+  "b": "B1",
+  "w": "One flight: лете'л."
+ },
+ {
+  "q": "Вчера' мы ___ в мо'ре два часа'.",
+  "v": "плавать",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday we swam in the sea for two hours.",
+  "b": "A2",
+  "w": "Swimming about: плавали."
+ },
+ {
+  "q": "Ле'том я ка'ждый день ___ в о'зере и загоре'ла.",
+  "v": "плавать",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "In the summer I swam in the lake every day and got a tan.",
+  "b": "A2",
+  "w": "A habit: плавала."
+ },
+ {
+  "q": "Ло'дка ме'дленно ___ к бе'регу.",
+  "v": "плыть",
+  "t": "past",
+  "p": "ona",
+  "e": "The boat was slowly sailing towards the shore.",
+  "b": "B1",
+  "w": "One direction, in progress: плыла."
+ },
+ {
+  "q": "Вчера' я ___ в па'рке це'лый час и уста'л.",
+  "v": "бегать",
+  "t": "past",
+  "p": "ya",
+  "g": "m",
+  "e": "Yesterday I ran in the park for a whole hour and got tired.",
+  "b": "A2",
+  "w": "Running as an activity: бегал."
+ },
+ {
+  "q": "Он ___ за авто'бусом и упа'л.",
+  "v": "бежать",
+  "t": "past",
+  "p": "on",
+  "e": "He was running after the bus and fell.",
+  "b": "B1",
+  "w": "One direction, in progress: бежал."
+ },
+ {
+  "q": "Де'ти весь день ___ во дворе'.",
+  "v": "бегать",
+  "t": "past",
+  "p": "oni",
+  "e": "The children ran around in the yard all day.",
+  "b": "A2",
+  "w": "Running around: бегали."
+ },
+ {
+  "q": "Когда' я ___ домо'й, я уро'нила ключи'.",
+  "v": "бежать",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "When I was running home, I dropped my keys.",
+  "b": "B1",
+  "w": "One direction, in progress: бежала."
+ },
+ {
+  "q": "Он ___ тяжёлую су'мку домо'й и уста'л.",
+  "v": "нести",
+  "t": "past",
+  "p": "on",
+  "e": "He was carrying a heavy bag home and got tired.",
+  "b": "B1",
+  "w": "Carrying in one direction: нёс."
+ },
+ {
+  "q": "Когда' я была' ма'ленькой, я ___ очки'.",
+  "v": "носить",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "When I was little, I wore glasses.",
+  "b": "A2",
+  "w": "Wearing: носи'ла."
+ },
+ {
+  "q": "В де'тстве Серге'й ___ очки'.",
+  "v": "носить",
+  "t": "past",
+  "p": "on",
+  "e": "As a child Sergei wore glasses.",
+  "b": "A2",
+  "w": "Wearing: носил."
+ },
+ {
+  "q": "Ма'ма ___ пиро'г к сосе'дям, но уро'нила его'.",
+  "v": "нести",
+  "t": "past",
+  "p": "ona",
+  "e": "Mum was carrying a pie to the neighbours, but dropped it.",
+  "b": "B1",
+  "w": "One direction, in progress: несла."
+ },
+ {
+  "q": "Вчера' я ___ сы'на к врачу' и о'чень уста'ла.",
+  "v": "водить",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "Yesterday I took my son to the doctor and got very tired.",
+  "b": "B1",
+  "w": "There and back, leading on foot: водила."
+ },
+ {
+  "q": "Вчера' па'па ___ нас в зоопа'рк.",
+  "v": "водить",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Dad took us to the zoo.",
+  "b": "A2",
+  "w": "A round trip: водил."
+ },
+ {
+  "q": "Ма'ма ___ сы'на в шко'лу, когда' пошёл дождь.",
+  "v": "вести",
+  "t": "past",
+  "p": "ona",
+  "e": "Mum was taking her son to school when it started raining.",
+  "b": "B1",
+  "w": "One direction, in progress: вела'."
+ },
+ {
+  "q": "Ле'том па'па ___ нас на мо'ре на маши'не.",
+  "v": "возить",
+  "t": "past",
+  "p": "on",
+  "e": "In the summer Dad drove us to the seaside.",
+  "b": "B1",
+  "w": "A round trip by car: возил."
+ },
+ {
+  "q": "Такси' ___ нас в аэропо'рт два часа'.",
+  "v": "везти",
+  "t": "past",
+  "p": "ono",
+  "e": "The taxi took two hours to get us to the airport.",
+  "b": "B1",
+  "w": "One direction, by transport: везло'."
+ },
+ {
+  "q": "Вчера' Ива'н ___ домо'й в семь, пешко'м.",
+  "v": "прийти",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Ivan came home at seven, on foot.",
+  "b": "A1",
+  "w": "Arrived on foot, and is there: пришёл."
+ },
+ {
+  "q": "Сестра' ___ из Москвы' и сейча'с у нас.",
+  "v": "приехать",
+  "t": "past",
+  "p": "ona",
+  "e": "My sister has arrived from Moscow and is staying with us now.",
+  "b": "A2",
+  "w": "Arrived by transport and still here: прие'хала."
+ },
+ {
+  "q": "Ма'ша ___ из шко'лы пешко'м и се'ла обе'дать.",
+  "v": "прийти",
+  "t": "past",
+  "p": "ona",
+  "e": "Masha walked home from school and sat down to lunch.",
+  "b": "A2",
+  "w": "Arrived on foot, then the next action: пришла'."
+ },
+ {
+  "q": "Го'сти ___ на маши'не и привезли' вино'.",
+  "v": "приехать",
+  "t": "past",
+  "p": "oni",
+  "e": "The guests came by car and brought wine.",
+  "b": "A2",
+  "w": "Arrived by car: прие'хали."
+ },
+ {
+  "q": "Вчера' я ___ с рабо'ты и пошла' в парк.",
+  "v": "уйти",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "Yesterday I left work and went to the park.",
+  "b": "A2",
+  "w": "Left on foot: ушла'."
+ },
+ {
+  "q": "Ива'н ___ в Москву' на по'езде и не верну'лся.",
+  "v": "уехать",
+  "t": "past",
+  "p": "on",
+  "e": "Ivan left for Moscow by train and didn't come back.",
+  "b": "A2",
+  "w": "Left by transport: уе'хал."
+ },
+ {
+  "q": "Друзья' ___ в о'тпуск и ещё не верну'лись.",
+  "v": "уехать",
+  "t": "past",
+  "p": "oni",
+  "e": "Our friends have gone away on holiday and aren't back yet.",
+  "b": "A2",
+  "w": "Left by transport and still away: уе'хали."
+ },
+ {
+  "q": "Вчера' па'па ___ на рабо'ту пешко'м в семь.",
+  "v": "уйти",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Dad walked off to work at seven.",
+  "b": "A2",
+  "w": "Left on foot: ушёл."
+ },
+ {
+  "q": "Он ___ в ко'мнату и сел на дива'н.",
+  "v": "войти",
+  "t": "past",
+  "p": "on",
+  "e": "He came into the room and sat down on the sofa.",
+  "b": "A2",
+  "w": "Into: войти, one entry with a result."
+ },
+ {
+  "q": "Я ___ из до'ма и уви'дела снег.",
+  "v": "выйти",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "I went out of the house and saw snow.",
+  "b": "A2",
+  "w": "Out of: вы'йти."
+ },
+ {
+  "q": "Учи'тель ___ из кла'сса, и все ста'ли говори'ть.",
+  "v": "выйти",
+  "t": "past",
+  "p": "on",
+  "e": "The teacher went out of the classroom, and everyone started talking.",
+  "b": "A2",
+  "w": "Out of: вы'шел, and he's still out."
+ },
+ {
+  "q": "Мы ___ у'лицу и пошли' в парк.",
+  "v": "перейти",
+  "t": "past",
+  "p": "my",
+  "e": "We crossed the street and went to the park.",
+  "b": "A2",
+  "w": "Across: перейти'."
+ },
+ {
+  "q": "По доро'ге я ___ в апте'ку и купи'л лека'рство.",
+  "v": "зайти",
+  "t": "past",
+  "p": "ya",
+  "g": "m",
+  "e": "On the way I dropped in at the chemist's and bought medicine.",
+  "b": "B1",
+  "w": "A short stop on the way: зашёл."
+ },
+ {
+  "q": "О'льга ___ к нам и сейча'с пьёт чай.",
+  "v": "зайти",
+  "t": "past",
+  "p": "ona",
+  "e": "Olga has dropped in on us and is having tea now.",
+  "b": "B1",
+  "w": "A short visit, still going on: зашла'."
+ },
+ {
+  "q": "Серге'й ___ торт, и мы пи'ли чай.",
+  "v": "принести",
+  "t": "past",
+  "p": "on",
+  "e": "Sergei brought a cake, and we drank tea.",
+  "b": "A2",
+  "w": "Brought, and it's here: принёс."
+ },
+ {
+  "q": "Он встал и ___ на рабо'ту пешко'м.",
+  "v": "пойти",
+  "t": "past",
+  "p": "on",
+  "e": "He got up and set off for work on foot.",
+  "b": "A2",
+  "w": "Set off on foot: пошёл."
+ },
+ {
+  "q": "Мы поза'втракали и ___ на мо'ре на маши'не.",
+  "v": "поехать",
+  "t": "past",
+  "p": "my",
+  "e": "We had breakfast and drove off to the sea.",
+  "b": "A2",
+  "w": "Set off by car: пое'хали."
+ },
+ {
+  "q": "Ма'ша оде'лась и ___ гуля'ть.",
+  "v": "пойти",
+  "t": "past",
+  "p": "ona",
+  "e": "Masha got dressed and went for a walk.",
+  "b": "A2",
+  "w": "Set off on foot: пошла'."
+ },
+ {
+  "q": "Мы се'ли в такси' и ___ на вокза'л.",
+  "v": "поехать",
+  "t": "past",
+  "p": "my",
+  "e": "We got into a taxi and set off for the station.",
+  "b": "A2",
+  "w": "Set off by transport: пое'хали."
+ },
+ {
+  "q": "Вчера' я ___ пешко'м в магази'н, но верну'лся без хле'ба.",
+  "v": "ходить",
+  "t": "past",
+  "p": "ya",
+  "g": "m",
+  "e": "Yesterday I went to the shop, but came back without bread on foot.",
+  "b": "A2",
+  "w": "There and back: ходи'л."
+ },
+ {
+  "q": "Вчера' мы ___ пешко'м на экску'рсию по Кремлю'.",
+  "v": "ходить",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday we went on a tour of the Kremlin on foot.",
+  "b": "A2",
+  "w": "A round trip, over: ходили."
+ },
+ {
+  "q": "Ра'ньше мы ча'сто ___ пешко'м в э'тот рестора'н.",
+  "v": "ходить",
+  "t": "past",
+  "p": "my",
+  "e": "We used to go to this restaurant often on foot.",
+  "b": "A2",
+  "w": "Repeated trips: ходили."
+ },
+ {
+  "q": "В де'тстве Ива'н ___ в шко'лу пешко'м.",
+  "v": "ходить",
+  "t": "past",
+  "p": "on",
+  "e": "As a child Ivan walked to school.",
+  "b": "A2",
+  "w": "A habit: ходил."
+ },
+ {
+  "q": "Я ___ в шко'лу на авто'бусе и ненави'дела э'то.",
+  "v": "ездить",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "I went to school by bus and hated it.",
+  "b": "B1",
+  "w": "A habit by transport: е'здила."
+ },
+ {
+  "q": "В про'шлом году' они' ___ в Кита'й.",
+  "v": "ездить",
+  "t": "past",
+  "p": "oni",
+  "e": "Last year they went to China.",
+  "b": "A2",
+  "w": "A trip there and back: ездили."
+ },
+ {
+  "q": "Вчера' вы ___ на да'чу? Как там?",
+  "v": "ездить",
+  "t": "past",
+  "p": "vy",
+  "e": "Did you go to the dacha yesterday? How was it?",
+  "b": "A2",
+  "w": "A trip there and back: ездили."
+ },
+ {
+  "q": "Вчера' вы ___ в кино' без меня'?",
+  "v": "ходить",
+  "t": "past",
+  "p": "vy",
+  "e": "Did you go to the cinema without me yesterday?",
+  "b": "A2",
+  "w": "A round trip: ходили."
+ },
+ {
+  "q": "Куда' вы ___ вчера' ве'чером? В теа'тр?",
+  "v": "ходить",
+  "t": "past",
+  "p": "vy",
+  "e": "Where did you go yesterday evening? To the theatre?",
+  "b": "A2",
+  "w": "A round trip: ходили."
+ },
+ {
+  "q": "Мы ___ до мо'ря на по'езде два дня.",
+  "v": "ехать",
+  "t": "past",
+  "p": "my",
+  "e": "It took us two days to get to the sea by train.",
+  "b": "B1",
+  "w": "One journey in progress: е'хали."
+ },
+ {
+  "q": "Па'па ___ домо'й на маши'не и слу'шал ра'дио.",
+  "v": "ехать",
+  "t": "past",
+  "p": "on",
+  "e": "Dad was driving home, listening to the radio.",
+  "b": "B1",
+  "w": "One trip in progress: е'хал."
+ },
+ {
+  "q": "Когда' я ___ на рабо'ту пешко'м, я уви'дел Ива'на.",
+  "v": "идти",
+  "t": "past",
+  "p": "ya",
+  "g": "m",
+  "e": "When I was walking to work, I saw Ivan.",
+  "b": "B1",
+  "w": "One direction, as background: шёл."
+ },
+ {
+  "q": "Они' ___ из кино' пешко'м и пе'ли.",
+  "v": "идти",
+  "t": "past",
+  "p": "oni",
+  "e": "They were walking home from the cinema, singing.",
+  "b": "B1",
+  "w": "One direction, in progress: шли."
+ },
+ {
+  "q": "Пти'цы ___ на юг большо'й ста'ей.",
+  "v": "лететь",
+  "t": "past",
+  "p": "oni",
+  "e": "The birds were flying south in a big flock.",
+  "b": "B1",
+  "w": "One direction, in progress: лете'ли."
+ },
+ {
+  "q": "Ле'том мы ___ на самолёте в Со'чи.",
+  "v": "летать",
+  "t": "past",
+  "p": "my",
+  "e": "In the summer we flew to Sochi.",
+  "b": "A2",
+  "w": "A round trip: лета'ли."
+ },
+ {
+  "q": "Ты ___ в Ло'ндон в про'шлом ме'сяце, Серге'й?",
+  "v": "летать",
+  "t": "past",
+  "p": "ty",
+  "g": "m",
+  "e": "Did you fly to London last month, Sergei?",
+  "b": "A2",
+  "w": "A round trip: лета'л."
+ },
+ {
+  "q": "Вчера' сосе'д ___ дете'й в цирк.",
+  "v": "водить",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday the neighbour took the children to the circus.",
+  "b": "B1",
+  "w": "A round trip, on foot: води'л."
+ },
+ {
+  "q": "Па'па ___ нас в шко'лу на маши'не ка'ждый день.",
+  "v": "возить",
+  "t": "past",
+  "p": "on",
+  "e": "Dad drove us to school every day.",
+  "b": "B1",
+  "w": "A habit by car: вози'л."
+ },
+ {
+  "q": "Ба'бушка ___ сы'на к врачу' в го'род.",
+  "v": "возить",
+  "t": "past",
+  "p": "ona",
+  "e": "Grandma took her son to the doctor in town.",
+  "b": "B1",
+  "w": "There and back by transport: вози'ла."
+ },
+ {
+  "q": "Ле'том мы ___ на ло'дке по о'зеру.",
+  "v": "плавать",
+  "t": "past",
+  "p": "my",
+  "e": "In the summer we went boating on the lake.",
+  "b": "B1",
+  "w": "Moving about: пла'вали."
+ },
+ {
+  "q": "Ты вчера' ___ в бассе'йне, Ма'ша?",
+  "v": "плавать",
+  "t": "past",
+  "p": "ty",
+  "g": "f",
+  "e": "Did you swim in the pool yesterday, Masha?",
+  "b": "A2",
+  "w": "Swimming about: пла'вала."
+ },
+ {
+  "q": "Вчера' мы ___ к ба'бушке на по'езде.",
+  "v": "ездить",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday we went to Grandma's by train.",
+  "b": "A2",
+  "w": "There and back: е'здили."
+ },
+ {
+  "q": "Дми'трий ___ на маши'не и сейча'с ждёт нас.",
+  "v": "приехать",
+  "t": "past",
+  "p": "on",
+  "e": "Dmitry has come by car and is waiting for us now.",
+  "b": "A2",
+  "w": "Arrived by car and still here: прие'хал."
+ },
+ {
+  "q": "Вчера' мы ___ на ле'кцию пешко'м и опозда'ли.",
+  "v": "прийти",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday we walked to the lecture and were late.",
+  "b": "B1",
+  "w": "Arrived on foot: пришли'."
+ },
+ {
+  "q": "Студе'нты ___ из аудито'рии, и я вошла'.",
+  "v": "выйти",
+  "t": "past",
+  "p": "oni",
+  "e": "The students came out of the lecture hall, and I went in.",
+  "b": "B1",
+  "w": "Out of: вы'шли."
+ },
+ {
+  "q": "Ма'ма ___ в ко'мнату и включи'ла свет.",
+  "v": "войти",
+  "t": "past",
+  "p": "ona",
+  "e": "Mum came into the room and switched on the light.",
+  "b": "A2",
+  "w": "Into: вошла'."
+ },
+ {
+  "q": "Я ___ у'лицу и уви'дела Ива'на.",
+  "v": "перейти",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "I crossed the street and saw Ivan.",
+  "b": "B1",
+  "w": "Across: перешла'."
+ },
+ {
+  "q": "Ба'бушка ___ нам пирожки' и ушла'.",
+  "v": "принести",
+  "t": "past",
+  "p": "ona",
+  "e": "Grandma brought us some pies and left.",
+  "b": "A2",
+  "w": "Brought: принесла'."
+ },
+ {
+  "q": "Мы ___ проду'кты на да'чу, и вдруг слома'лась маши'на.",
+  "v": "везти",
+  "t": "past",
+  "p": "my",
+  "e": "We were taking food to the dacha, and suddenly the car broke down.",
+  "b": "B1",
+  "w": "One direction, in progress: везли'."
+ },
+ {
+  "q": "Вчера' я ___ в библиоте'ку пешко'м и взяла' кни'ги.",
+  "v": "ходить",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "Yesterday I walked to the library and borrowed books.",
+  "b": "A2",
+  "w": "A round trip: ходи'ла."
+ },
+ {
+  "q": "Ра'ньше мы ча'сто ___ к дру'гу на метро'.",
+  "v": "ездить",
+  "t": "past",
+  "p": "my",
+  "e": "We used to often go to a friend's by metro.",
+  "b": "B1",
+  "w": "Repeated trips by transport: е'здили."
+ },
+ {
+  "q": "В воскресе'нье мы ___ пешко'м в лес за гриба'ми.",
+  "v": "ходить",
+  "t": "past",
+  "p": "my",
+  "e": "On Sunday we went to the woods to pick mushrooms on foot.",
+  "b": "A2",
+  "w": "There and back, on foot: ходи'ли."
+ },
+ {
+  "q": "Вчера' де'ти ___ пешко'м в зоопа'рк с учи'телем.",
+  "v": "ходить",
+  "t": "past",
+  "p": "oni",
+  "e": "Yesterday the children went to the zoo with their teacher on foot.",
+  "b": "A2",
+  "w": "A round trip, over: ходи'ли."
+ },
+ {
+  "q": "Зимо'й Серге'й ___ в Сиби'рь по рабо'те.",
+  "v": "ездить",
+  "t": "past",
+  "p": "on",
+  "e": "In the winter Sergei went to Siberia for work.",
+  "b": "B1",
+  "w": "A trip there and back: е'здил."
+ },
+ {
+  "q": "На про'шлой неде'ле ба'бушка ___ в больни'цу на авто'бусе.",
+  "v": "ездить",
+  "t": "past",
+  "p": "ona",
+  "e": "Last week Grandma went to the hospital by bus.",
+  "b": "B1",
+  "w": "There and back, by bus: е'здила."
+ },
+ {
+  "q": "Вчера' мы ___ на ры'нок за овоща'ми.",
+  "v": "ходить",
+  "t": "past",
+  "p": "my",
+  "e": "Yesterday we went to the market for vegetables.",
+  "b": "A2",
+  "w": "There and back: ходи'ли."
+ },
+ {
+  "q": "Когда' Ма'ша ___ на рабо'ту, она' уви'дела ава'рию.",
+  "v": "ехать",
+  "t": "past",
+  "p": "ona",
+  "e": "When Masha was driving to work, she saw an accident.",
+  "b": "B1",
+  "w": "One trip, as background: е'хала."
+ },
+ {
+  "q": "Когда' О'льга ___ в магази'н пешко'м, она' встре'тила дру'га.",
+  "v": "идти",
+  "t": "past",
+  "p": "ona",
+  "e": "When Olga was walking to the shop, she met a friend.",
+  "b": "B1",
+  "w": "One direction, as background: шла."
+ },
+ {
+  "q": "Ма'льчик ___ к ма'ме и пла'кал.",
+  "v": "бежать",
+  "t": "past",
+  "p": "on",
+  "e": "The boy was running to his mum, crying.",
+  "b": "B1",
+  "w": "One direction, in progress: бежа'л."
+ },
+ {
+  "q": "Вчера' Серге'й ___ в бассе'йне час.",
+  "v": "плавать",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Sergei swam in the pool for an hour.",
+  "b": "A2",
+  "w": "Swimming about: пла'вал."
+ },
+ {
+  "q": "Вчера' па'па ___ нас на маши'не в лес.",
+  "v": "возить",
+  "t": "past",
+  "p": "on",
+  "e": "Yesterday Dad drove us to the woods.",
+  "b": "B1",
+  "w": "There and back by car: вози'л."
+ },
+ {
+  "q": "Он ___ ей цветы', но не дал.",
+  "v": "нести",
+  "t": "past",
+  "p": "on",
+  "e": "He was carrying flowers for her, but didn't give them.",
+  "b": "B1",
+  "w": "Carrying in one direction: нёс."
+ },
+ {
+  "q": "Вчера' я ___ из до'ма и забы'ла ключи'.",
+  "v": "выйти",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "Yesterday I left the house and forgot my keys.",
+  "b": "A2",
+  "w": "Out of: вы'шла."
+ },
+ {
+  "q": "Мы ___ в кафе' и заказа'ли ко'фе.",
+  "v": "зайти",
+  "t": "past",
+  "p": "my",
+  "e": "We dropped into a café and ordered coffee.",
+  "b": "B1",
+  "w": "A short stop: зашли'."
+ },
+ {
+  "q": "Ива'н ___ в ко'мнату, но никого' не уви'дел.",
+  "v": "войти",
+  "t": "past",
+  "p": "on",
+  "e": "Ivan came into the room, but didn't see anyone.",
+  "b": "A2",
+  "w": "Into: вошёл."
+ },
+ {
+  "q": "Тури'сты се'ли в авто'бус и ___ в музе'й.",
+  "v": "поехать",
+  "t": "past",
+  "p": "oni",
+  "e": "The tourists got on the bus and went to the museum.",
+  "b": "A2",
+  "w": "Set off by bus: пое'хали."
+ },
+ {
+  "q": "Я закры'ла дверь и ___ на рабо'ту пешко'м.",
+  "v": "пойти",
+  "t": "past",
+  "p": "ya",
+  "g": "f",
+  "e": "I closed the door and set off to work on foot.",
+  "b": "A2",
+  "w": "Set off on foot: пошла'."
+ }
+]

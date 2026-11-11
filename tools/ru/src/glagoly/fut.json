@@ -1,0 +1,1090 @@
+[
+ {
+  "q": "За'втра я ___ тебе' письмо'.",
+  "v": "написать",
+  "t": "fut",
+  "p": "ya",
+  "e": "Tomorrow I'll write you a letter.",
+  "b": "A1"
+ },
+ {
+  "q": "За'втра мы ___ но'вую маши'ну.",
+  "v": "купить",
+  "t": "fut",
+  "p": "my",
+  "e": "Tomorrow we'll buy a new car.",
+  "b": "A1"
+ },
+ {
+  "q": "Не волну'йся, я ___ тебе' ве'чером.",
+  "v": "позвонить",
+  "t": "fut",
+  "p": "ya",
+  "e": "Don't worry, I'll call you in the evening.",
+  "b": "A1"
+ },
+ {
+  "q": "За'втра Ива'н ___ нам свои' фо'то.",
+  "v": "показать",
+  "t": "fut",
+  "p": "on",
+  "e": "Tomorrow Ivan will show us his photos.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра О'льга ___ нам о пое'здке.",
+  "v": "рассказать",
+  "t": "fut",
+  "p": "ona",
+  "e": "Tomorrow Olga will tell us about her trip.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра учи'тель ___ но'вую те'му.",
+  "v": "объяснить",
+  "t": "fut",
+  "p": "on",
+  "e": "Tomorrow the teacher will explain a new topic.",
+  "b": "A2"
+ },
+ {
+  "q": "Е'сли ты не зна'ешь, я тебе' ___.",
+  "v": "помочь",
+  "t": "fut",
+  "p": "ya",
+  "e": "If you don't know, I'll help you.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра мы ___ вас на у'жин.",
+  "v": "пригласить",
+  "t": "fut",
+  "p": "my",
+  "e": "Tomorrow we'll invite you to dinner.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра я ___ ра'но, в шесть.",
+  "v": "встать",
+  "t": "fut",
+  "p": "ya",
+  "e": "Tomorrow I'll get up early, at six.",
+  "b": "A2"
+ },
+ {
+  "q": "Сего'дня я ___ спать ра'но, я уста'л.",
+  "v": "лечь",
+  "t": "fut",
+  "p": "ya",
+  "e": "Today I'll go to bed early, I'm tired.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра ба'бушка ___ нам борщ.",
+  "v": "приготовить",
+  "t": "fut",
+  "p": "ona",
+  "e": "Tomorrow Grandma will cook us borscht.",
+  "b": "A1"
+ },
+ {
+  "q": "Я ___ э'ту кни'гу за'втра и тебе' отда'м.",
+  "v": "прочитать",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll finish this book tomorrow and give it to you.",
+  "b": "A2"
+ },
+ {
+  "q": "Ве'чером мы ___ но'вый фильм.",
+  "v": "посмотреть",
+  "t": "fut",
+  "p": "my",
+  "e": "In the evening we'll watch a new film.",
+  "b": "A1"
+ },
+ {
+  "q": "За'втра я ___ но'вые слова'.",
+  "v": "выучить",
+  "t": "fut",
+  "p": "ya",
+  "e": "Tomorrow I'll learn the new words.",
+  "b": "A2"
+ },
+ {
+  "q": "Подожди', я ___ окно'.",
+  "v": "открыть",
+  "t": "fut",
+  "p": "ya",
+  "e": "Wait, I'll open the window.",
+  "b": "A1"
+ },
+ {
+  "q": "Не волну'йся, я ___ дверь.",
+  "v": "закрыть",
+  "t": "fut",
+  "p": "ya",
+  "e": "Don't worry, I'll close the door.",
+  "b": "A1"
+ },
+ {
+  "q": "Я пото'м ___ и тебе' отве'чу.",
+  "v": "подумать",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll think about it later and answer you.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра я ___ тебе' отве'т.",
+  "v": "дать",
+  "t": "fut",
+  "p": "ya",
+  "e": "Tomorrow I'll give you an answer.",
+  "b": "A2"
+ },
+ {
+  "q": "Ты ___ э'ту ку'ртку? Она' тебе' идёт.",
+  "v": "взять",
+  "t": "fut",
+  "p": "ty",
+  "e": "Will you take this jacket? It suits you.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра мы ___ за кварти'ру.",
+  "v": "заплатить",
+  "t": "fut",
+  "p": "my",
+  "e": "Tomorrow we'll pay for the flat.",
+  "b": "A2"
+ },
+ {
+  "q": "В ма'е они' ___ свой дом.",
+  "v": "продать",
+  "t": "fut",
+  "p": "oni",
+  "e": "In May they'll sell their house.",
+  "b": "B1"
+ },
+ {
+  "q": "За'втра я ___ рабо'ту в пять.",
+  "v": "закончить",
+  "t": "fut",
+  "p": "ya",
+  "e": "Tomorrow I'll finish work at five.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра мы ___ но'вый уро'к.",
+  "v": "начать",
+  "t": "fut",
+  "p": "my",
+  "e": "Tomorrow we'll start a new lesson.",
+  "b": "A2"
+ },
+ {
+  "q": "Я ___ на твоё письмо' за'втра.",
+  "v": "ответить",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll answer your letter tomorrow.",
+  "b": "A2"
+ },
+ {
+  "q": "Я ___ учи'теля, что зна'чит э'то сло'во.",
+  "v": "спросить",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll ask the teacher what this word means.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра мы ___, что де'лать.",
+  "v": "решить",
+  "t": "fut",
+  "p": "my",
+  "e": "Tomorrow we'll decide what to do.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра ты ___ письмо' от меня'.",
+  "v": "получить",
+  "t": "fut",
+  "p": "ty",
+  "e": "Tomorrow you'll get a letter from me.",
+  "b": "A2"
+ },
+ {
+  "q": "Ве'чером мы ___ ча'шку ча'я.",
+  "v": "выпить",
+  "t": "fut",
+  "p": "my",
+  "e": "In the evening we'll have a cup of tea.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра я ___ свою' маши'ну.",
+  "v": "помыть",
+  "t": "fut",
+  "p": "ya",
+  "e": "Tomorrow I'll wash my car.",
+  "b": "A2"
+ },
+ {
+  "q": "Я ___ за пять мину'т, подожди'.",
+  "v": "одеться",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll get dressed in five minutes, wait.",
+  "b": "A2"
+ },
+ {
+  "q": "Я ___ цветы' в во'ду.",
+  "v": "поставить",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll put the flowers in water.",
+  "b": "A2"
+ },
+ {
+  "q": "Я ___ ключи' на стол.",
+  "v": "положить",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll put the keys on the table.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра О'льга ___ э'тот текст.",
+  "v": "перевести",
+  "t": "fut",
+  "p": "ona",
+  "e": "Tomorrow Olga will translate this text.",
+  "b": "B1"
+ },
+ {
+  "q": "За'втра мы ___ в кафе'.",
+  "v": "позавтракать",
+  "t": "fut",
+  "p": "my",
+  "e": "Tomorrow we'll have breakfast in a café.",
+  "b": "A2"
+ },
+ {
+  "q": "Сейча'с мы ___ и пойдём гуля'ть.",
+  "v": "пообедать",
+  "t": "fut",
+  "p": "my",
+  "e": "We'll have lunch now and go for a walk.",
+  "b": "A2"
+ },
+ {
+  "q": "Мы ___ в во'семь, приходи'.",
+  "v": "поужинать",
+  "t": "fut",
+  "p": "my",
+  "e": "We'll have dinner at eight, come over.",
+  "b": "A2"
+ },
+ {
+  "q": "В суббо'ту мы ___ на да'че.",
+  "v": "отдохнуть",
+  "t": "fut",
+  "p": "my",
+  "e": "On Saturday we'll get some rest at the dacha.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра я ___ тебя' у метро'.",
+  "v": "встретить",
+  "t": "fut",
+  "p": "ya",
+  "e": "Tomorrow I'll meet you by the metro.",
+  "b": "A2"
+ },
+ {
+  "q": "Ты меня' ___ пять мину'т?",
+  "v": "подождать",
+  "t": "fut",
+  "p": "ty",
+  "e": "Will you wait five minutes for me?",
+  "b": "A2"
+ },
+ {
+  "q": "Не волну'йся, мы ___ твои' ключи'.",
+  "v": "найти",
+  "t": "fut",
+  "p": "my",
+  "e": "Don't worry, we'll find your keys.",
+  "b": "A2"
+ },
+ {
+  "q": "Ты ___ ключи', е'сли поло'жишь их туда'.",
+  "v": "потерять",
+  "t": "fut",
+  "p": "ty",
+  "e": "You'll lose the keys if you put them there.",
+  "b": "B1"
+ },
+ {
+  "q": "Я никогда' не ___ э'тот день.",
+  "v": "забыть",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll never forget this day.",
+  "b": "A2"
+ },
+ {
+  "q": "Я ___ его' и'мя и скажу' тебе'.",
+  "v": "вспомнить",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll remember his name and tell you.",
+  "b": "B1"
+ },
+ {
+  "q": "Ско'ро ты ___ врачо'м, как па'па.",
+  "v": "стать",
+  "t": "fut",
+  "p": "ty",
+  "e": "Soon you'll become a doctor, like Dad.",
+  "b": "B1"
+ },
+ {
+  "q": "Е'сли ты не оде'нешься, ты ___.",
+  "v": "заболеть",
+  "t": "fut",
+  "p": "ty",
+  "e": "If you don't get dressed, you'll get ill.",
+  "b": "B1"
+ },
+ {
+  "q": "Тебе' ___ э'тот фильм, он смешно'й.",
+  "v": "понравиться",
+  "t": "fut",
+  "p": "on",
+  "e": "You'll like this film, it's funny.",
+  "b": "A2"
+ },
+ {
+  "q": "Вам ___ на'ша кварти'ра, она' све'тлая.",
+  "v": "понравиться",
+  "t": "fut",
+  "p": "ona",
+  "e": "You'll like our flat, it's bright.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра А'нна ___ нам но'вую пе'сню.",
+  "v": "спеть",
+  "t": "fut",
+  "p": "ona",
+  "e": "Tomorrow Anna will sing us a new song.",
+  "b": "A2"
+ },
+ {
+  "q": "Я ___ тебе' ко'шку, хо'чешь?",
+  "v": "нарисовать",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll draw you a cat, do you want me to?",
+  "b": "A2"
+ },
+ {
+  "q": "Они' ___ но'вый дом за год.",
+  "v": "построить",
+  "t": "fut",
+  "p": "oni",
+  "e": "They'll build a new house in a year.",
+  "b": "B1"
+ },
+ {
+  "q": "Он тебе' не ___, не говори' ему'.",
+  "v": "поверить",
+  "t": "fut",
+  "p": "on",
+  "e": "He won't believe you, don't tell him.",
+  "b": "B1"
+ },
+ {
+  "q": "Я ___ тебе' хоро'шего врача'.",
+  "v": "посоветовать",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll recommend you a good doctor.",
+  "b": "B1"
+ },
+ {
+  "q": "Я ___ твой торт, мо'жно?",
+  "v": "попробовать",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll try your cake, may I?",
+  "b": "A2"
+ },
+ {
+  "q": "Он ___ кури'ть, он обеща'л.",
+  "v": "бросить",
+  "t": "fut",
+  "p": "on",
+  "e": "He'll quit smoking, he promised.",
+  "b": "B1"
+ },
+ {
+  "q": "Е'сли мы не пойдём сейча'с, мы ___.",
+  "v": "опоздать",
+  "t": "fut",
+  "p": "my",
+  "e": "If we don't go now, we'll be late.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра я ___ к ба'бушке.",
+  "v": "поехать",
+  "t": "fut",
+  "p": "ya",
+  "e": "Tomorrow I'll go to my grandmother's.",
+  "b": "A1"
+ },
+ {
+  "q": "За'втра мы ___ в музе'й.",
+  "v": "пойти",
+  "t": "fut",
+  "p": "my",
+  "e": "Tomorrow we'll go to the museum.",
+  "b": "A1"
+ },
+ {
+  "q": "За'втра Ива'н ___ в Москву'.",
+  "v": "уехать",
+  "t": "fut",
+  "p": "on",
+  "e": "Tomorrow Ivan will leave for Moscow.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ма ___ в шесть часо'в.",
+  "v": "прийти",
+  "t": "fut",
+  "p": "ona",
+  "e": "Mum will come at six o'clock.",
+  "b": "A1"
+ },
+ {
+  "q": "Я ___ домо'й по'здно, не жди.",
+  "v": "вернуться",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll be home late, don't wait.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра ты ___ ра'но?",
+  "v": "проснуться",
+  "t": "fut",
+  "p": "ty",
+  "e": "Will you wake up early tomorrow?",
+  "b": "A2"
+ },
+ {
+  "q": "Я ___ сюда', здесь светле'е.",
+  "v": "сесть",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll sit here, it's lighter here.",
+  "b": "A2"
+ },
+ {
+  "q": "Я ___ ему', что ты пришла'.",
+  "v": "сказать",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll tell him that you've come.",
+  "b": "A1"
+ },
+ {
+  "q": "Он ___ тебе' пра'вду, не бо'йся.",
+  "v": "сказать",
+  "t": "fut",
+  "p": "on",
+  "e": "He'll tell you the truth, don't be afraid.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра вы ___ результа'т по по'чте.",
+  "v": "получить",
+  "t": "fut",
+  "p": "vy",
+  "e": "Tomorrow you'll get the result by post.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра вы ___ нам?",
+  "v": "позвонить",
+  "t": "fut",
+  "p": "vy",
+  "e": "Will you call us tomorrow?",
+  "b": "A2"
+ },
+ {
+  "q": "Вы ___ мне, пожа'луйста? Я не понима'ю.",
+  "v": "помочь",
+  "t": "fut",
+  "p": "vy",
+  "e": "Will you help me, please? I don't understand.",
+  "b": "A2"
+ },
+ {
+  "q": "Вы ___ де'ньги за'втра у'тром.",
+  "v": "получить",
+  "t": "fut",
+  "p": "vy",
+  "e": "You'll get the money tomorrow morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Вы ___ э'тот уро'к за неде'лю.",
+  "v": "выучить",
+  "t": "fut",
+  "p": "vy",
+  "e": "You'll learn this lesson in a week.",
+  "b": "B1"
+ },
+ {
+  "q": "За'втра они' ___ на все вопро'сы.",
+  "v": "ответить",
+  "t": "fut",
+  "p": "oni",
+  "e": "Tomorrow they'll answer all the questions.",
+  "b": "A2"
+ },
+ {
+  "q": "Ско'ро де'ти ___ из шко'лы.",
+  "v": "прийти",
+  "t": "fut",
+  "p": "oni",
+  "e": "Soon the children will come home from school.",
+  "b": "A2"
+ },
+ {
+  "q": "Они' ___ нам, когда' прие'дут.",
+  "v": "позвонить",
+  "t": "fut",
+  "p": "oni",
+  "e": "They'll call us when they arrive.",
+  "b": "A2"
+ },
+ {
+  "q": "Пря'мо сейча'с я ___ тебе' секре'т.",
+  "v": "рассказать",
+  "t": "fut",
+  "p": "ya",
+  "e": "Right now I'll tell you a secret.",
+  "b": "A2"
+ },
+ {
+  "q": "Ве'чером Серге'й ___ нам на гита'ре.",
+  "v": "сыграть",
+  "t": "fut",
+  "p": "on",
+  "e": "In the evening Sergei will play the guitar for us.",
+  "b": "B1"
+ },
+ {
+  "q": "За'втра мы ___ в те'ннис.",
+  "v": "сыграть",
+  "t": "fut",
+  "p": "my",
+  "e": "Tomorrow we'll play a game of tennis.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра мы ___ в па'рке.",
+  "v": "погулять",
+  "t": "fut",
+  "p": "my",
+  "e": "Tomorrow we'll go for a walk in the park.",
+  "b": "A1"
+ },
+ {
+  "q": "Я ___ де'ньги и куплю' маши'ну.",
+  "v": "получить",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll get the money and buy a car.",
+  "b": "B1"
+ },
+ {
+  "q": "Ты ___ меня', е'сли я уйду'?",
+  "v": "забыть",
+  "t": "fut",
+  "p": "ty",
+  "e": "Will you forget me if I leave?",
+  "b": "B1"
+ },
+ {
+  "q": "Когда' ты ___, я тебе' позвоню'.",
+  "v": "проснуться",
+  "t": "fut",
+  "p": "ty",
+  "e": "When you wake up, I'll call you.",
+  "b": "B1"
+ },
+ {
+  "q": "Когда' ты ___ рабо'ту, приходи' к нам.",
+  "v": "закончить",
+  "t": "fut",
+  "p": "ty",
+  "e": "When you finish work, come over to us.",
+  "b": "B1"
+ },
+ {
+  "q": "Мы ___ ему' по'сле обе'да.",
+  "v": "позвонить",
+  "t": "fut",
+  "p": "my",
+  "e": "We'll call him after lunch.",
+  "b": "A1"
+ },
+ {
+  "q": "По'сле у'жина де'ти ___ посу'ду.",
+  "v": "помыть",
+  "t": "fut",
+  "p": "oni",
+  "e": "After dinner the children will wash the dishes.",
+  "b": "A2"
+ },
+ {
+  "q": "Ско'ро А'нна ___ рабо'ту.",
+  "v": "найти",
+  "t": "fut",
+  "p": "ona",
+  "e": "Soon Anna will find a job.",
+  "b": "B1"
+ },
+ {
+  "q": "Че'рез час мы ___ в Москву'.",
+  "v": "приехать",
+  "t": "fut",
+  "p": "my",
+  "e": "In an hour we'll arrive in Moscow.",
+  "b": "A2"
+ },
+ {
+  "q": "Че'рез год я ___ хорошо' говори'ть по-ру'сски.",
+  "v": "научиться",
+  "t": "fut",
+  "p": "ya",
+  "e": "In a year I'll learn to speak Russian well.",
+  "b": "B1"
+ },
+ {
+  "q": "Я ___ всё, что ты хо'чешь.",
+  "v": "сделать",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll do everything you want.",
+  "b": "A1"
+ },
+ {
+  "q": "Ты ___ дома'шнее зада'ние сего'дня?",
+  "v": "сделать",
+  "t": "fut",
+  "p": "ty",
+  "e": "Will you do your homework today?",
+  "b": "A1"
+ },
+ {
+  "q": "Я ___ рабо'ту, а пото'м пойду' гуля'ть.",
+  "v": "сделать",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll do my work, and then go for a walk.",
+  "b": "A1"
+ },
+ {
+  "q": "Ты ___, когда' уви'дишь его'.",
+  "v": "понять",
+  "t": "fut",
+  "p": "ty",
+  "e": "You'll understand when you see him.",
+  "b": "B1"
+ },
+ {
+  "q": "Ско'ро ты ___ мо'ре, оно' краси'вое.",
+  "v": "увидеть",
+  "t": "fut",
+  "p": "ty",
+  "e": "Soon you'll see the sea, it's beautiful.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра мы ___ на'ших друзе'й.",
+  "v": "увидеть",
+  "t": "fut",
+  "p": "my",
+  "e": "Tomorrow we'll see our friends.",
+  "b": "A2"
+ },
+ {
+  "q": "Ты ___ э'ту пе'сню и полю'бишь её.",
+  "v": "услышать",
+  "t": "fut",
+  "p": "ty",
+  "e": "You'll hear this song and come to love it.",
+  "b": "B1"
+ },
+ {
+  "q": "Мы ___ его' но'вую пе'сню ве'чером.",
+  "v": "послушать",
+  "t": "fut",
+  "p": "my",
+  "e": "We'll listen to his new song in the evening.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра О'льга ___ отве'т и позвони'т.",
+  "v": "получить",
+  "t": "fut",
+  "p": "ona",
+  "e": "Tomorrow Olga will get the answer and call.",
+  "b": "B1"
+ },
+ {
+  "q": "Не говори' ей, она' ___.",
+  "v": "заплакать",
+  "t": "fut",
+  "p": "ona",
+  "e": "Don't tell her, she'll start crying.",
+  "b": "B1"
+ },
+ {
+  "q": "Скажи' ему', он ___.",
+  "v": "засмеяться",
+  "t": "fut",
+  "p": "on",
+  "e": "Tell him, he'll laugh.",
+  "b": "B1"
+ },
+ {
+  "q": "Ты ___, когда' уви'дишь пода'рок.",
+  "v": "улыбнуться",
+  "t": "fut",
+  "p": "ty",
+  "e": "You'll smile when you see the present.",
+  "b": "B1"
+ },
+ {
+  "q": "Я ___ тебе' пото'м, сейча'с не могу'.",
+  "v": "объяснить",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll explain it to you later, I can't now.",
+  "b": "A2"
+ },
+ {
+  "q": "Мы ___ сего'дня в пять.",
+  "v": "закончить",
+  "t": "fut",
+  "p": "my",
+  "e": "We'll finish today at five.",
+  "b": "A2"
+ },
+ {
+  "q": "Он ___ тебе' кни'гу, е'сли попро'сишь.",
+  "v": "дать",
+  "t": "fut",
+  "p": "on",
+  "e": "He'll give you the book if you ask.",
+  "b": "A2"
+ },
+ {
+  "q": "Мы ___ тебе' ме'сто у окна'.",
+  "v": "дать",
+  "t": "fut",
+  "p": "my",
+  "e": "We'll give you a seat by the window.",
+  "b": "A2"
+ },
+ {
+  "q": "Я ___ ста'рую маши'ну и куплю' но'вую.",
+  "v": "продать",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll sell the old car and buy a new one.",
+  "b": "B1"
+ },
+ {
+  "q": "Ско'лько ты ___ за биле'т?",
+  "v": "заплатить",
+  "t": "fut",
+  "p": "ty",
+  "e": "How much will you pay for the ticket?",
+  "b": "A2"
+ },
+ {
+  "q": "Они' ___ ва'зу на стол.",
+  "v": "поставить",
+  "t": "fut",
+  "p": "oni",
+  "e": "They'll put the vase on the table.",
+  "b": "A2"
+ },
+ {
+  "q": "Когда' я бу'ду на пе'нсии, я ___ в саду'.",
+  "v": "работать",
+  "t": "fut",
+  "p": "ya",
+  "e": "When I'm retired, I'll work in the garden.",
+  "b": "B1"
+ },
+ {
+  "q": "Когда' ты придёшь, я ___ у'жин.",
+  "v": "готовить",
+  "t": "fut",
+  "p": "ya",
+  "e": "When you come, I'll be cooking dinner.",
+  "b": "B1"
+ },
+ {
+  "q": "Обеща'ю, я ___ ру'сский ка'ждый день.",
+  "v": "учить",
+  "t": "fut",
+  "p": "ya",
+  "e": "I promise, I'll study Russian every day.",
+  "b": "A2"
+ },
+ {
+  "q": "Когда' ты позвони'шь, мы ___ телеви'зор.",
+  "v": "смотреть",
+  "t": "fut",
+  "p": "my",
+  "e": "When you call, we'll be watching TV.",
+  "b": "B1"
+ },
+ {
+  "q": "Мы ___ тебе' ка'ждую неде'лю, обеща'ем.",
+  "v": "писать",
+  "t": "fut",
+  "p": "my",
+  "e": "We'll write to you every week, we promise.",
+  "b": "A2"
+ },
+ {
+  "q": "Когда' ты прие'дешь, мы ___ тебя' на вокза'ле.",
+  "v": "ждать",
+  "t": "fut",
+  "p": "my",
+  "e": "When you arrive, we'll be waiting for you at the station.",
+  "b": "B1"
+ },
+ {
+  "q": "Когда' я ста'ну старико'м, я ___ весь день.",
+  "v": "спать",
+  "t": "fut",
+  "p": "ya",
+  "e": "When I'm an old man, I'll sleep all day.",
+  "b": "B1"
+ },
+ {
+  "q": "Обеща'ю, я ___ тебе' ка'ждый ве'чер.",
+  "v": "звонить",
+  "t": "fut",
+  "p": "ya",
+  "e": "I promise, I'll call you every evening.",
+  "b": "A2"
+ },
+ {
+  "q": "Когда' он вы'растет, он ___ в Москве'.",
+  "v": "жить",
+  "t": "fut",
+  "p": "on",
+  "e": "When he grows up, he'll live in Moscow.",
+  "b": "B1"
+ },
+ {
+  "q": "Я ___ тебя' люби'ть всегда'.",
+  "v": "быть",
+  "t": "fut",
+  "p": "ya",
+  "e": "I'll always love you.",
+  "b": "B1"
+ },
+ {
+  "q": "Когда' ты прие'дешь, я ___ до'ма.",
+  "v": "быть",
+  "t": "fut",
+  "p": "ya",
+  "e": "When you arrive, I'll be at home.",
+  "b": "A1"
+ },
+ {
+  "q": "За'втра ве'чером мы ___ в теа'тре.",
+  "v": "быть",
+  "t": "fut",
+  "p": "my",
+  "e": "Tomorrow evening we'll be at the theatre.",
+  "b": "A1"
+ },
+ {
+  "q": "За'втра ___ хоро'шая пого'да.",
+  "v": "быть",
+  "t": "fut",
+  "p": "ona",
+  "e": "Tomorrow the weather will be good.",
+  "b": "A1"
+ },
+ {
+  "q": "Ско'ро здесь ___ но'вая шко'ла.",
+  "v": "быть",
+  "t": "fut",
+  "p": "ona",
+  "e": "Soon there'll be a new school here.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра у нас ___ го'сти.",
+  "v": "быть",
+  "t": "fut",
+  "p": "oni",
+  "e": "Tomorrow we'll have guests.",
+  "b": "A2"
+ },
+ {
+  "q": "Когда' я ста'ну врачо'м, я ___ лю'дям.",
+  "v": "помогать",
+  "t": "fut",
+  "p": "ya",
+  "e": "When I become a doctor, I'll help people.",
+  "b": "B1"
+ },
+ {
+  "q": "Обеща'ю, мы ___ тебе' по до'му.",
+  "v": "помогать",
+  "t": "fut",
+  "p": "my",
+  "e": "I promise, we'll help you around the house.",
+  "b": "A2"
+ },
+ {
+  "q": "Когда' ты уе'дешь, я ___ о тебе' ка'ждый день.",
+  "v": "думать",
+  "t": "fut",
+  "p": "ya",
+  "e": "When you leave, I'll think about you every day.",
+  "b": "B1"
+ },
+ {
+  "q": "Когда' мы бу'дем на мо'ре, мы ___ ка'ждый день.",
+  "v": "плавать",
+  "t": "fut",
+  "p": "my",
+  "e": "When we're at the sea, we'll swim every day.",
+  "b": "B1"
+ },
+ {
+  "q": "Обеща'ю, я ___ ра'ньше.",
+  "v": "вставать",
+  "t": "fut",
+  "p": "ya",
+  "e": "I promise, I'll get up earlier.",
+  "b": "A2"
+ },
+ {
+  "q": "Когда' я бу'ду в Росси'и, я ___ то'лько по-ру'сски.",
+  "v": "говорить",
+  "t": "fut",
+  "p": "ya",
+  "e": "When I'm in Russia, I'll only speak Russian.",
+  "b": "B1"
+ },
+ {
+  "q": "Обеща'ю, я ___ тебе' ка'ждый день.",
+  "v": "писать",
+  "t": "fut",
+  "p": "ya",
+  "e": "I promise, I'll write to you every day.",
+  "b": "A2"
+ },
+ {
+  "q": "Когда' ты вы'растешь, ты ___ в университе'те.",
+  "v": "учиться",
+  "t": "fut",
+  "p": "ty",
+  "e": "When you grow up, you'll study at university.",
+  "b": "B1"
+ },
+ {
+  "q": "Когда' Ма'ша вы'растет, она' ___ в шко'ле.",
+  "v": "работать",
+  "t": "fut",
+  "p": "ona",
+  "e": "When Masha grows up, she'll work at a school.",
+  "b": "B1"
+ },
+ {
+  "q": "Когда' вы бу'дете в Москве', где вы ___?",
+  "v": "жить",
+  "t": "fut",
+  "p": "vy",
+  "e": "When you're in Moscow, where will you live?",
+  "b": "B1"
+ },
+ {
+  "q": "Когда' ты придёшь, де'ти ___.",
+  "v": "спать",
+  "t": "fut",
+  "p": "oni",
+  "e": "When you come, the children will be asleep.",
+  "b": "B1"
+ },
+ {
+  "q": "Когда' ты позвони'шь, я ___ на рабо'те.",
+  "v": "быть",
+  "t": "fut",
+  "p": "ya",
+  "e": "When you call, I'll be at work.",
+  "b": "A2"
+ },
+ {
+  "q": "Когда' мы бу'дем на да'че, мы ___ весь день.",
+  "v": "отдыхать",
+  "t": "fut",
+  "p": "my",
+  "e": "When we're at the dacha, we'll relax all day.",
+  "b": "B1"
+ },
+ {
+  "q": "Когда' па'па придёт, ты ___ уро'ки.",
+  "v": "делать",
+  "t": "fut",
+  "p": "ty",
+  "e": "When Dad comes, you'll be doing your homework.",
+  "b": "B1"
+ },
+ {
+  "q": "Ско'ро у нас ___ ребёнок.",
+  "v": "быть",
+  "t": "fut",
+  "p": "on",
+  "e": "Soon we'll have a baby.",
+  "b": "A2"
+ },
+ {
+  "q": "За'втра в шко'ле ___ экза'мен.",
+  "v": "быть",
+  "t": "fut",
+  "p": "on",
+  "e": "Tomorrow there'll be an exam at school.",
+  "b": "A2"
+ },
+ {
+  "q": "Когда' ты придёшь, Ива'н ___ в саду'.",
+  "v": "работать",
+  "t": "fut",
+  "p": "on",
+  "e": "When you come, Ivan will be working in the garden.",
+  "b": "B1"
+ }
+]

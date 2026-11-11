@@ -1,0 +1,756 @@
+[
+ {
+  "q": "У ___ есть маши'на.",
+  "n": "брат",
+  "c": "gen",
+  "e": "My brother has a car.",
+  "b": "A1",
+  "w": "After у, the genitive: у бра'та."
+ },
+ {
+  "q": "У ___ два сы'на.",
+  "n": "сестра",
+  "c": "gen",
+  "e": "My sister has two sons.",
+  "b": "A1",
+  "w": "After у, the genitive: у сестры'."
+ },
+ {
+  "q": "У ___ сего'дня день рожде'ния.",
+  "n": "мама",
+  "c": "gen",
+  "e": "It's Mum's birthday today.",
+  "b": "A1",
+  "w": "After у, the genitive: у ма'мы."
+ },
+ {
+  "q": "У ___ боли'т голова'.",
+  "n": "папа",
+  "c": "gen",
+  "e": "Dad has a headache.",
+  "b": "A1",
+  "w": "After у, the genitive: у па'пы. A masculine noun in -а declines like a feminine."
+ },
+ {
+  "q": "У ___ нет вре'мени.",
+  "n": "отец",
+  "c": "gen",
+  "e": "Father has no time.",
+  "b": "A2",
+  "w": "After у, the genitive; the е drops out: у отца'."
+ },
+ {
+  "q": "У ___ краси'вый сад.",
+  "n": "бабушка",
+  "c": "gen",
+  "e": "Grandma has a beautiful garden.",
+  "b": "A1",
+  "w": "After у, the genitive: у ба'бушки."
+ },
+ {
+  "q": "У ___ ста'рая маши'на.",
+  "n": "дедушка",
+  "c": "gen",
+  "e": "Grandpa has an old car.",
+  "b": "A1",
+  "w": "After у, the genitive: у де'душки."
+ },
+ {
+  "q": "У ___ мно'го рабо'ты.",
+  "n": "врач",
+  "c": "gen",
+  "e": "The doctor has a lot of work.",
+  "b": "A2",
+  "w": "After у, the genitive: у врача'."
+ },
+ {
+  "q": "Мы бы'ли в гостя'х у ___.",
+  "n": "друг",
+  "c": "gen",
+  "e": "We were visiting a friend.",
+  "b": "A2",
+  "w": "After у, the genitive: у дру'га."
+ },
+ {
+  "q": "Я жила' у ___ неде'лю.",
+  "n": "подруга",
+  "c": "gen",
+  "e": "I stayed at my friend's for a week.",
+  "b": "A2",
+  "w": "After у, the genitive: у подру'ги."
+ },
+ {
+  "q": "У ___ но'вая соба'ка.",
+  "n": "сосед",
+  "c": "gen",
+  "e": "The neighbour has a new dog.",
+  "b": "A1",
+  "w": "After у, the genitive: у сосе'да."
+ },
+ {
+  "q": "У ___ ско'ро сва'дьба.",
+  "n": "дочь",
+  "c": "gen",
+  "e": "My daughter is getting married soon.",
+  "b": "B1",
+  "w": "After у, the genitive: у до'чери."
+ },
+ {
+  "q": "У ___ хоро'шая зарпла'та.",
+  "n": "муж",
+  "c": "gen",
+  "e": "My husband has a good salary.",
+  "b": "A2",
+  "w": "After у, the genitive: у му'жа."
+ },
+ {
+  "q": "У ___ сего'дня выходно'й.",
+  "n": "жена",
+  "c": "gen",
+  "e": "My wife has a day off today.",
+  "b": "A2",
+  "w": "After у, the genitive: у жены'."
+ },
+ {
+  "q": "У ___ высо'кая температу'ра.",
+  "n": "ребёнок",
+  "c": "gen",
+  "e": "The child has a high temperature.",
+  "b": "A2",
+  "w": "After у, the genitive: у ребёнка."
+ },
+ {
+  "q": "У ___ кани'кулы.",
+  "n": "ребёнок",
+  "c": "gen",
+  "num": "pl",
+  "e": "The children are on holiday.",
+  "b": "A2",
+  "w": "After у, the genitive plural: у дете'й."
+ },
+ {
+  "q": "У на'ших ___ большо'й дом.",
+  "n": "сосед",
+  "c": "gen",
+  "num": "pl",
+  "e": "Our neighbours have a big house.",
+  "b": "A2",
+  "w": "After у, the genitive plural: у сосе'дей."
+ },
+ {
+  "q": "Я встре'тил её у ___.",
+  "n": "магазин",
+  "c": "gen",
+  "e": "I met her by the shop.",
+  "b": "A2",
+  "w": "у also means by, next to: у магази'на."
+ },
+ {
+  "q": "Ждём тебя' у ___ в шесть.",
+  "n": "театр",
+  "c": "gen",
+  "e": "We'll wait for you by the theatre at six.",
+  "b": "A2",
+  "w": "у means by: у теа'тра."
+ },
+ {
+  "q": "Мы сиде'ли у ___ и пи'ли чай.",
+  "n": "окно",
+  "c": "gen",
+  "e": "We sat by the window and drank tea.",
+  "b": "A2",
+  "w": "у means by: у окна'."
+ },
+ {
+  "q": "Я не могу' жить без ___.",
+  "n": "музыка",
+  "c": "gen",
+  "e": "I can't live without music.",
+  "b": "A2",
+  "w": "After без, the genitive: без му'зыки."
+ },
+ {
+  "q": "Я пью ко'фе без ___.",
+  "n": "сахар",
+  "c": "gen",
+  "e": "I drink coffee without sugar.",
+  "b": "A1",
+  "w": "After без, the genitive: без са'хара."
+ },
+ {
+  "q": "Он ушёл без ___.",
+  "n": "куртка",
+  "c": "gen",
+  "e": "He left without a jacket.",
+  "b": "A2",
+  "w": "After без, the genitive: без ку'ртки."
+ },
+ {
+  "q": "Не выходи' на у'лицу без ___.",
+  "n": "шапка",
+  "c": "gen",
+  "e": "Don't go outside without a hat.",
+  "b": "A2",
+  "w": "After без, the genitive: без ша'пки."
+ },
+ {
+  "q": "Мы не мо'жем нача'ть без ___.",
+  "n": "директор",
+  "c": "gen",
+  "e": "We can't start without the director.",
+  "b": "B1",
+  "w": "After без, the genitive: без дире'ктора."
+ },
+ {
+  "q": "Я не пое'ду без ___.",
+  "n": "жена",
+  "c": "gen",
+  "e": "I won't go without my wife.",
+  "b": "A2",
+  "w": "After без, the genitive: без жены'."
+ },
+ {
+  "q": "Ма'ма никуда' не хо'дит без ___.",
+  "n": "телефон",
+  "c": "gen",
+  "e": "Mum doesn't go anywhere without her phone.",
+  "b": "A2",
+  "w": "After без, the genitive: без телефо'на."
+ },
+ {
+  "q": "Он пришёл на экза'мен без ___.",
+  "n": "ручка",
+  "c": "gen",
+  "e": "He came to the exam without a pen.",
+  "b": "A2",
+  "w": "After без, the genitive: без ру'чки."
+ },
+ {
+  "q": "Чай без ___, пожа'луйста.",
+  "n": "молоко",
+  "c": "gen",
+  "e": "Tea without milk, please.",
+  "b": "A1",
+  "w": "After без, the genitive: без молока'."
+ },
+ {
+  "q": "Как жить без ___?",
+  "n": "друг",
+  "c": "gen",
+  "num": "pl",
+  "e": "How can you live without friends?",
+  "b": "B1",
+  "w": "After без, the genitive plural: без друзе'й."
+ },
+ {
+  "q": "Мы пое'хали на мо'ре без ___.",
+  "n": "ребёнок",
+  "c": "gen",
+  "num": "pl",
+  "e": "We went to the seaside without the children.",
+  "b": "B1",
+  "w": "After без, the genitive plural: без дете'й."
+ },
+ {
+  "q": "Он сде'лал э'то без ___.",
+  "n": "проблема",
+  "c": "gen",
+  "num": "pl",
+  "e": "He did it without any problems.",
+  "b": "B1",
+  "w": "After без, the genitive plural: без пробле'м."
+ },
+ {
+  "q": "Сего'дня нет ___, пого'да хоро'шая.",
+  "n": "дождь",
+  "c": "gen",
+  "e": "There's no rain today, the weather is good.",
+  "b": "A1",
+  "w": "After нет, the genitive: нет дождя'."
+ },
+ {
+  "q": "До'ма нет ___, ку'пишь?",
+  "n": "хлеб",
+  "c": "gen",
+  "e": "There's no bread at home, will you buy some?",
+  "b": "A1",
+  "w": "After нет, the genitive: нет хле'ба."
+ },
+ {
+  "q": "В холоди'льнике нет ___.",
+  "n": "молоко",
+  "c": "gen",
+  "e": "There's no milk in the fridge.",
+  "b": "A1",
+  "w": "After нет, the genitive: нет молока'."
+ },
+ {
+  "q": "У меня' нет ___.",
+  "n": "машина",
+  "c": "gen",
+  "e": "I don't have a car.",
+  "b": "A1",
+  "w": "After нет, the genitive: нет маши'ны."
+ },
+ {
+  "q": "У нас нет ___.",
+  "n": "собака",
+  "c": "gen",
+  "e": "We don't have a dog.",
+  "b": "A1",
+  "w": "After нет, the genitive: нет соба'ки."
+ },
+ {
+  "q": "У него' нет ___, он оди'н.",
+  "n": "брат",
+  "c": "gen",
+  "e": "He has no brother, he's an only child.",
+  "b": "A1",
+  "w": "After нет, the genitive: нет бра'та."
+ },
+ {
+  "q": "У неё нет ___.",
+  "n": "сестра",
+  "c": "gen",
+  "e": "She doesn't have a sister.",
+  "b": "A1",
+  "w": "After нет, the genitive: нет сестры'."
+ },
+ {
+  "q": "Сего'дня нет ___, в шко'ле пра'здник.",
+  "n": "урок",
+  "c": "gen",
+  "num": "pl",
+  "e": "There are no lessons today, there's a holiday at school.",
+  "b": "A2",
+  "w": "After нет, the genitive plural: нет уро'ков."
+ },
+ {
+  "q": "В э'том го'роде нет ___.",
+  "n": "театр",
+  "c": "gen",
+  "e": "There is no theatre in this town.",
+  "b": "A2",
+  "w": "After нет, the genitive: нет теа'тра."
+ },
+ {
+  "q": "На у'лице нет ___.",
+  "n": "человек",
+  "c": "gen",
+  "num": "pl",
+  "e": "There are no people in the street.",
+  "b": "B1",
+  "w": "After нет, the genitive plural: нет люде'й."
+ },
+ {
+  "q": "У меня' нет ___.",
+  "n": "вопрос",
+  "c": "gen",
+  "num": "pl",
+  "e": "I have no questions.",
+  "b": "A2",
+  "w": "After нет, the genitive plural: нет вопро'сов."
+ },
+ {
+  "q": "Ива'на нет до'ма, он на ___.",
+  "n": "работа",
+  "c": "prep",
+  "e": "Ivan isn't at home, he's at work.",
+  "b": "A2",
+  "w": "Where? на + prepositional: на рабо'те."
+ },
+ {
+  "q": "В на'шем до'ме нет ___.",
+  "n": "лифт",
+  "c": "gen",
+  "e": "There is no lift in our building.",
+  "b": "A2",
+  "w": "After нет, the genitive: нет ли'фта."
+ },
+ {
+  "q": "В ко'мнате нет ___.",
+  "n": "окно",
+  "c": "gen",
+  "e": "There is no window in the room.",
+  "b": "A2",
+  "w": "After нет, the genitive: нет окна'."
+ },
+ {
+  "q": "У нас нет ___ на э'то.",
+  "n": "время",
+  "c": "gen",
+  "e": "We don't have time for this.",
+  "b": "B1",
+  "w": "After нет, the genitive: нет вре'мени."
+ },
+ {
+  "q": "В па'рке нет ___, все в шко'ле.",
+  "n": "ребёнок",
+  "c": "gen",
+  "num": "pl",
+  "e": "There are no children in the park, everyone is at school.",
+  "b": "B1",
+  "w": "After нет, the genitive plural: нет дете'й."
+ },
+ {
+  "q": "Он верну'лся из ___ в шесть.",
+  "n": "школа",
+  "c": "gen",
+  "e": "He came back from school at six.",
+  "b": "A2",
+  "w": "After из, the genitive: из шко'лы."
+ },
+ {
+  "q": "Я иду' из ___ домо'й.",
+  "n": "магазин",
+  "c": "gen",
+  "e": "I'm walking home from the shop.",
+  "b": "A2",
+  "w": "After из, the genitive: из магази'на."
+ },
+ {
+  "q": "Мы прие'хали из ___ на по'езде.",
+  "n": "деревня",
+  "c": "gen",
+  "e": "We came from the village by train.",
+  "b": "A2",
+  "w": "After из, the genitive: из дере'вни."
+ },
+ {
+  "q": "Возьми' ключи' из ___.",
+  "n": "сумка",
+  "c": "gen",
+  "e": "Take the keys out of the bag.",
+  "b": "A2",
+  "w": "After из, the genitive: из су'мки."
+ },
+ {
+  "q": "Он вы'шел из ___ и закры'л дверь.",
+  "n": "комната",
+  "c": "gen",
+  "e": "He went out of the room and closed the door.",
+  "b": "A2",
+  "w": "After из, the genitive: из ко'мнаты."
+ },
+ {
+  "q": "Я пришла' с ___ в семь.",
+  "n": "работа",
+  "c": "gen",
+  "e": "I came home from work at seven.",
+  "b": "A2",
+  "w": "Работа takes на, so from is с + genitive: с рабо'ты."
+ },
+ {
+  "q": "Мы верну'лись с ___ загоре'лые.",
+  "n": "море",
+  "c": "gen",
+  "e": "We came back from the sea tanned.",
+  "b": "A2",
+  "w": "Мо'ре takes на, so from is с + genitive: с мо'ря."
+ },
+ {
+  "q": "Я получи'л письмо' от ___.",
+  "n": "друг",
+  "c": "gen",
+  "e": "I got a letter from a friend.",
+  "b": "A2",
+  "w": "From a person: от + genitive, от дру'га."
+ },
+ {
+  "q": "Э'то пода'рок от ___.",
+  "n": "бабушка",
+  "c": "gen",
+  "e": "This is a present from Grandma.",
+  "b": "A2",
+  "w": "From a person: от + genitive, от ба'бушки."
+ },
+ {
+  "q": "Я иду' от ___.",
+  "n": "врач",
+  "c": "gen",
+  "e": "I'm coming from the doctor's.",
+  "b": "B1",
+  "w": "From a person: от + genitive, от врача'."
+ },
+ {
+  "q": "Мы живём недалеко' от ___.",
+  "n": "парк",
+  "c": "gen",
+  "e": "We live not far from the park.",
+  "b": "A2",
+  "w": "недалеко' от + genitive: от па'рка."
+ },
+ {
+  "q": "Дом стои'т далеко' от ___.",
+  "n": "река",
+  "c": "gen",
+  "e": "The house is far from the river.",
+  "b": "B1",
+  "w": "далеко' от + genitive: от реки'."
+ },
+ {
+  "q": "Как дое'хать до ___?",
+  "n": "вокзал",
+  "c": "gen",
+  "e": "How do I get to the station?",
+  "b": "A2",
+  "w": "до + genitive: до вокза'ла."
+ },
+ {
+  "q": "Мы дошли' до ___ пешко'м.",
+  "n": "площадь",
+  "c": "gen",
+  "e": "We walked as far as the square.",
+  "b": "B1",
+  "w": "до + genitive: до пло'щади."
+ },
+ {
+  "q": "По'сле ___ мы пошли' гуля'ть.",
+  "n": "урок",
+  "c": "gen",
+  "num": "pl",
+  "e": "After lessons we went for a walk.",
+  "b": "A2",
+  "w": "после + genitive: по'сле уро'ков."
+ },
+ {
+  "q": "По'сле ___ я сплю час.",
+  "n": "работа",
+  "c": "gen",
+  "e": "After work I sleep for an hour.",
+  "b": "A2",
+  "w": "после + genitive: по'сле рабо'ты."
+ },
+ {
+  "q": "Э'то пода'рок для ___.",
+  "n": "мама",
+  "c": "gen",
+  "e": "This is a present for Mum.",
+  "b": "A1",
+  "w": "для + genitive: для ма'мы."
+ },
+ {
+  "q": "Я купи'л цветы' для ___.",
+  "n": "жена",
+  "c": "gen",
+  "e": "I bought flowers for my wife.",
+  "b": "A2",
+  "w": "для + genitive: для жены'."
+ },
+ {
+  "q": "Э'та кни'га для ___.",
+  "n": "ребёнок",
+  "c": "gen",
+  "num": "pl",
+  "e": "This book is for children.",
+  "b": "A2",
+  "w": "для + genitive plural: для дете'й."
+ },
+ {
+  "q": "В Москве' мно'го ___.",
+  "n": "музей",
+  "c": "gen",
+  "num": "pl",
+  "e": "There are a lot of museums in Moscow.",
+  "b": "A2",
+  "w": "мно'го + genitive plural: музе'ев."
+ },
+ {
+  "q": "У него' мно'го ___.",
+  "n": "друг",
+  "c": "gen",
+  "num": "pl",
+  "e": "He has a lot of friends.",
+  "b": "A2",
+  "w": "мно'го + genitive plural: друзе'й."
+ },
+ {
+  "q": "В на'шем го'роде мно'го ___.",
+  "n": "парк",
+  "c": "gen",
+  "num": "pl",
+  "e": "There are a lot of parks in our town.",
+  "b": "A2",
+  "w": "мно'го + genitive plural: па'рков."
+ },
+ {
+  "q": "Я прочита'л мно'го ___.",
+  "n": "книга",
+  "c": "gen",
+  "num": "pl",
+  "e": "I've read a lot of books.",
+  "b": "A2",
+  "w": "мно'го + genitive plural: книг."
+ },
+ {
+  "q": "У нас ма'ло ___.",
+  "n": "время",
+  "c": "gen",
+  "e": "We have little time.",
+  "b": "B1",
+  "w": "ма'ло + genitive: вре'мени."
+ },
+ {
+  "q": "На столе' ма'ло ___.",
+  "n": "место",
+  "c": "gen",
+  "e": "There's little room on the table.",
+  "b": "B1",
+  "w": "ма'ло + genitive: ме'ста."
+ },
+ {
+  "q": "Ско'лько у тебя' ___?",
+  "n": "брат",
+  "c": "gen",
+  "num": "pl",
+  "e": "How many brothers do you have?",
+  "b": "A2",
+  "w": "ско'лько + genitive plural: бра'тьев."
+ },
+ {
+  "q": "Ско'лько ___ в ва'шей шко'ле?",
+  "n": "ученик",
+  "c": "gen",
+  "num": "pl",
+  "e": "How many pupils are there in your school?",
+  "b": "B1",
+  "w": "ско'лько + genitive plural: ученико'в."
+ },
+ {
+  "q": "Я ви'жу маши'ну ___.",
+  "n": "сосед",
+  "c": "gen",
+  "e": "I see the neighbour's car.",
+  "b": "B1",
+  "w": "Of whom? The genitive: маши'на сосе'да."
+ },
+ {
+  "q": "Э'то дом ___.",
+  "n": "бабушка",
+  "c": "gen",
+  "e": "This is Grandma's house.",
+  "b": "A2",
+  "w": "Of whom? The genitive: дом ба'бушки."
+ },
+ {
+  "q": "Как зову'т ___?",
+  "n": "брат",
+  "c": "acc",
+  "e": "What's your brother's name?",
+  "b": "A2",
+  "w": "Зову'т takes the accusative of the person: бра'та."
+ },
+ {
+  "q": "Дай мне стака'н ___.",
+  "n": "вода",
+  "c": "gen",
+  "e": "Give me a glass of water.",
+  "b": "A2",
+  "w": "A glass of: стака'н + genitive, воды'."
+ },
+ {
+  "q": "Я вы'пил ча'шку ___.",
+  "n": "чай",
+  "c": "gen",
+  "e": "I drank a cup of tea.",
+  "b": "A2",
+  "w": "A cup of: ча'шка + genitive, ча'я."
+ },
+ {
+  "q": "Купи' буты'лку ___.",
+  "n": "вино",
+  "c": "gen",
+  "e": "Buy a bottle of wine.",
+  "b": "B1",
+  "w": "A bottle of: буты'лка + genitive, вина'."
+ },
+ {
+  "q": "Мы купи'ли килогра'мм ___.",
+  "n": "мясо",
+  "c": "gen",
+  "e": "We bought a kilogram of meat.",
+  "b": "B1",
+  "w": "A kilo of: килогра'мм + genitive, мя'са."
+ },
+ {
+  "q": "Сего'дня у меня' нет ___.",
+  "n": "урок",
+  "c": "gen",
+  "num": "pl",
+  "e": "I have no lessons today.",
+  "b": "A2",
+  "w": "After нет, the genitive plural: нет уро'ков."
+ },
+ {
+  "q": "У ___ сего'дня экза'мен.",
+  "n": "студент",
+  "c": "gen",
+  "num": "pl",
+  "e": "The students have an exam today.",
+  "b": "A2",
+  "w": "After у, the genitive plural: у студе'нтов."
+ },
+ {
+  "q": "Мы купи'ли буке'т ___.",
+  "n": "цветок",
+  "c": "gen",
+  "num": "pl",
+  "e": "We bought a bouquet of flowers.",
+  "b": "B1",
+  "w": "A bouquet of: буке'т + genitive plural, цвето'в."
+ },
+ {
+  "q": "В ко'мнате мно'го ___.",
+  "n": "стул",
+  "c": "gen",
+  "num": "pl",
+  "e": "There are a lot of chairs in the room.",
+  "b": "B1",
+  "w": "мно'го + genitive plural: сту'льев."
+ },
+ {
+  "q": "В на'шей стране' мно'го ___.",
+  "n": "город",
+  "c": "gen",
+  "num": "pl",
+  "e": "There are a lot of cities in our country.",
+  "b": "A2",
+  "w": "мно'го + genitive plural: городо'в."
+ },
+ {
+  "q": "В саду' мно'го ___.",
+  "n": "дерево",
+  "c": "gen",
+  "num": "pl",
+  "e": "There are a lot of trees in the garden.",
+  "b": "B1",
+  "w": "мно'го + genitive plural: дере'вьев."
+ },
+ {
+  "q": "Я зна'ю мно'го ру'сских ___.",
+  "n": "слово",
+  "c": "gen",
+  "num": "pl",
+  "e": "I know a lot of Russian words.",
+  "b": "A2",
+  "w": "мно'го + genitive plural: слов."
+ },
+ {
+  "q": "В кла'ссе два'дцать ___.",
+  "n": "ученик",
+  "c": "gen",
+  "num": "pl",
+  "e": "There are twenty pupils in the class.",
+  "b": "B1",
+  "w": "After 5 to 20, the genitive plural: ученико'в."
+ },
+ {
+  "q": "У меня' нет ___ в Москве'.",
+  "n": "друг",
+  "c": "gen",
+  "num": "pl",
+  "e": "I have no friends in Moscow.",
+  "b": "B1",
+  "w": "After нет, the genitive plural: нет друзе'й."
+ }
+]

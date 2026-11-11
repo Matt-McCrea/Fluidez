@@ -1,0 +1,20 @@
+[
+ {
+  "q": "Вчера' я весь ве'чер ___ кни'гу и уста'л.",
+  "v": "читать",
+  "t": "past",
+  "p": "ya",
+  "g": "m",
+  "e": "Yesterday I spent the whole evening reading a book and got tired.",
+  "b": "A2"
+ },
+ {
+  "q": "Вчера' я ___ кни'гу и лёг спать.",
+  "v": "прочитать",
+  "t": "past",
+  "p": "ya",
+  "g": "m",
+  "e": "Yesterday I finished the book and went to bed.",
+  "b": "A2"
+ }
+]

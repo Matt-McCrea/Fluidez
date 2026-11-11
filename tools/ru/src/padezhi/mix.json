@@ -1,0 +1,264 @@
+[
+ {
+  "q": "Мы сиде'ли у ___ и пе'ли.",
+  "n": "огонь",
+  "c": "gen",
+  "e": "We sat by the fire and sang.",
+  "b": "B1",
+  "w": "у + genitive; the о drops out: у огня'."
+ },
+ {
+  "q": "Он рабо'тает в ___ на по'чте.",
+  "n": "деревня",
+  "c": "prep",
+  "e": "He works at the post office in the village.",
+  "b": "A2",
+  "w": "Where? в + prepositional: в дере'вне."
+ },
+ {
+  "q": "Мы пое'хали к ___ на да'чу.",
+  "n": "друг",
+  "c": "dat",
+  "num": "pl",
+  "e": "We went to our friends' dacha.",
+  "b": "A2",
+  "w": "к + dative plural: к друзья'м."
+ },
+ {
+  "q": "Я давно' не ви'дел ___.",
+  "n": "отец",
+  "c": "acc",
+  "e": "I haven't seen my father for a long time.",
+  "b": "B1",
+  "w": "Animate masculine; the е drops out: отца'."
+ },
+ {
+  "q": "Я ча'сто ду'маю о ___.",
+  "n": "дом",
+  "c": "prep",
+  "e": "I often think about home.",
+  "b": "A2",
+  "w": "о + prepositional: о до'ме."
+ },
+ {
+  "q": "Он вы'шел из ___ без зонта'.",
+  "n": "дом",
+  "c": "gen",
+  "e": "He left the house without an umbrella.",
+  "b": "A2",
+  "w": "из + genitive: из до'ма."
+ },
+ {
+  "q": "По'сле ___ мы пойдём в кино'.",
+  "n": "обед",
+  "c": "gen",
+  "e": "After lunch we'll go to the cinema.",
+  "b": "A2",
+  "w": "после + genitive: по'сле обе'да."
+ },
+ {
+  "q": "До ___ оста'лось пять мину'т.",
+  "n": "урок",
+  "c": "gen",
+  "e": "There are five minutes left until the lesson.",
+  "b": "B1",
+  "w": "до + genitive: до уро'ка."
+ },
+ {
+  "q": "Я ви'жу ___ в не'бе.",
+  "n": "птица",
+  "c": "acc",
+  "num": "pl",
+  "e": "I see birds in the sky.",
+  "b": "A2",
+  "w": "Animate plural: птиц, like the genitive."
+ },
+ {
+  "q": "Пти'цы летя'т над ___.",
+  "n": "лес",
+  "c": "inst",
+  "e": "The birds are flying over the forest.",
+  "b": "B1",
+  "w": "над + instrumental: над ле'сом."
+ },
+ {
+  "q": "Ло'дка плывёт по ___.",
+  "n": "река",
+  "c": "dat",
+  "e": "The boat is sailing along the river.",
+  "b": "B1",
+  "w": "по + dative: по реке'."
+ },
+ {
+  "q": "Мы сиде'ли на ___ под де'ревом.",
+  "n": "трава",
+  "c": "prep",
+  "e": "We sat on the grass under a tree.",
+  "b": "B1",
+  "w": "Where? на + prepositional: на траве'."
+ },
+ {
+  "q": "Он говори'т на трёх ___.",
+  "n": "язык",
+  "c": "prep",
+  "num": "pl",
+  "e": "He speaks three languages.",
+  "b": "B1",
+  "w": "на + prepositional plural: на языка'х."
+ },
+ {
+  "q": "Как э'то сказа'ть на ру'сском ___?",
+  "n": "язык",
+  "c": "prep",
+  "e": "How do you say that in Russian?",
+  "b": "A2",
+  "w": "на + prepositional: на языке'."
+ },
+ {
+  "q": "Ты пи'шешь ___ и'ли карандашо'м?",
+  "n": "ручка",
+  "c": "inst",
+  "e": "Are you writing in pen or pencil?",
+  "b": "A2",
+  "w": "The tool: instrumental, ру'чкой."
+ },
+ {
+  "q": "Я купи'л ___ на конце'рт.",
+  "n": "билет",
+  "c": "acc",
+  "num": "pl",
+  "e": "I bought tickets for the concert.",
+  "b": "A2",
+  "w": "Inanimate plural: биле'ты."
+ },
+ {
+  "q": "У меня' нет ___ на конце'рт.",
+  "n": "билет",
+  "c": "gen",
+  "e": "I don't have a ticket for the concert.",
+  "b": "A2",
+  "w": "After нет, the genitive: биле'та."
+ },
+ {
+  "q": "Учи'тель дал ___ но'вый текст.",
+  "n": "студент",
+  "c": "dat",
+  "num": "pl",
+  "e": "The teacher gave the students a new text.",
+  "b": "B1",
+  "w": "To whom? The dative plural: студе'нтам."
+ },
+ {
+  "q": "Я перевела' э'тот ___ за час.",
+  "n": "текст",
+  "c": "acc",
+  "e": "I translated this text in an hour.",
+  "b": "A2",
+  "w": "Inanimate masculine: текст."
+ },
+ {
+  "q": "Мы гуля'ли под ___.",
+  "n": "дождь",
+  "c": "inst",
+  "e": "We walked in the rain.",
+  "b": "B1",
+  "w": "под + instrumental: под дождём."
+ },
+ {
+  "q": "Без ___ мы не мо'жем рабо'тать.",
+  "n": "компьютер",
+  "c": "gen",
+  "e": "We can't work without a computer.",
+  "b": "B1",
+  "w": "без + genitive: без компью'тера."
+ },
+ {
+  "q": "Вчера' я сиде'л за ___ весь день.",
+  "n": "компьютер",
+  "c": "inst",
+  "e": "Yesterday I sat at the computer all day.",
+  "b": "B1",
+  "w": "за + instrumental: за компью'тером."
+ },
+ {
+  "q": "Па'па сиди'т в ___ и чита'ет.",
+  "n": "сад",
+  "c": "prep",
+  "e": "Dad is sitting in the garden reading.",
+  "b": "A2",
+  "w": "Сад has a special locative: в саду'."
+ },
+ {
+  "q": "Мы пое'хали в ___ на маши'не.",
+  "n": "лес",
+  "c": "acc",
+  "e": "We drove to the forest.",
+  "b": "A2",
+  "w": "Where to? в + accusative: в лес."
+ },
+ {
+  "q": "Ле'том мы жи'ли на ___ у мо'ря.",
+  "n": "дача",
+  "c": "prep",
+  "e": "In the summer we lived at a dacha by the sea.",
+  "b": "A2",
+  "w": "Да'ча takes на: на да'че."
+ },
+ {
+  "q": "У ___ сего'дня пра'здник.",
+  "n": "семья",
+  "c": "gen",
+  "e": "It's a holiday for the family today.",
+  "b": "B1",
+  "w": "у + genitive: у семьи'."
+ },
+ {
+  "q": "Я рабо'таю в ___ на ры'нке.",
+  "n": "магазин",
+  "c": "prep",
+  "e": "I work in a shop at the market.",
+  "b": "B1",
+  "w": "Where? в + prepositional: в магази'не."
+ },
+ {
+  "q": "Мы ви'дели ___ в зоопа'рке.",
+  "n": "лошадь",
+  "c": "acc",
+  "num": "pl",
+  "e": "We saw horses at the zoo.",
+  "b": "B1",
+  "w": "Animate plural: лошаде'й, like the genitive."
+ },
+ {
+  "q": "Он е'дет на рабо'ту на ___.",
+  "n": "трамвай",
+  "c": "prep",
+  "e": "He goes to work by tram.",
+  "b": "A2",
+  "w": "на + prepositional for transport: на трамва'е."
+ },
+ {
+  "q": "Мы плы'ли на ___ три дня.",
+  "n": "корабль",
+  "c": "prep",
+  "e": "We sailed on a ship for three days.",
+  "b": "B1",
+  "w": "на + prepositional: на корабле'."
+ },
+ {
+  "q": "Я е'зжу на рабо'ту на ___.",
+  "n": "машина",
+  "c": "prep",
+  "e": "I drive to work.",
+  "b": "A1",
+  "w": "на + prepositional for transport: на маши'не."
+ },
+ {
+  "q": "Мы е'хали в ___ всю ночь.",
+  "n": "поезд",
+  "c": "prep",
+  "e": "We rode on the train all night.",
+  "b": "A2",
+  "w": "Where? в + prepositional: в по'езде."
+ }
+]

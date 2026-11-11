@@ -1,0 +1,1418 @@
+[
+ {
+  "q": "Что де'лает Ива'н? Он ___ газе'ту.",
+  "v": "читать",
+  "t": "pres",
+  "p": "on",
+  "e": "What is Ivan doing? He's reading the newspaper.",
+  "b": "A1"
+ },
+ {
+  "q": "Что де'лает А'нна? Она' ___ письмо' ба'бушке.",
+  "v": "писать",
+  "t": "pres",
+  "p": "ona",
+  "e": "What is Anna doing? She's writing a letter to her grandmother.",
+  "b": "A1"
+ },
+ {
+  "q": "Ти'ше, пожа'луйста, де'ти ___.",
+  "v": "спать",
+  "t": "pres",
+  "p": "oni",
+  "e": "Quiet, please, the children are asleep.",
+  "b": "A1"
+ },
+ {
+  "q": "Тепе'рь я ___ по-ру'сски, но ме'дленно.",
+  "v": "говорить",
+  "t": "pres",
+  "p": "ya",
+  "e": "Now I speak Russian, but slowly.",
+  "b": "A1"
+ },
+ {
+  "q": "Мой брат врач, он ___ в больни'це.",
+  "v": "работать",
+  "t": "pres",
+  "p": "on",
+  "e": "My brother is a doctor, he works in a hospital.",
+  "b": "A1"
+ },
+ {
+  "q": "Мы ___ в Москве', а роди'тели живу'т в Ки'еве.",
+  "v": "жить",
+  "t": "pres",
+  "p": "my",
+  "e": "We live in Moscow, and our parents live in Kyiv.",
+  "b": "A1"
+ },
+ {
+  "q": "Что ты сейча'с ___?",
+  "v": "делать",
+  "t": "pres",
+  "p": "ty",
+  "e": "What are you doing now?",
+  "b": "A1"
+ },
+ {
+  "q": "Ти'ше, мы ___ телеви'зор.",
+  "v": "смотреть",
+  "t": "pres",
+  "p": "my",
+  "e": "Quiet, we're watching TV.",
+  "b": "A1"
+ },
+ {
+  "q": "Ма'ша сейча'с на ку'хне, она' ___ у'жин.",
+  "v": "готовить",
+  "t": "pres",
+  "p": "ona",
+  "e": "Masha is in the kitchen now, she's cooking dinner.",
+  "b": "A1"
+ },
+ {
+  "q": "Я не ___, где он живёт.",
+  "v": "знать",
+  "t": "pres",
+  "p": "ya",
+  "e": "I don't know where he lives.",
+  "b": "A1"
+ },
+ {
+  "q": "Вы сейча'с ___ меня'?",
+  "v": "слышать",
+  "t": "pres",
+  "p": "vy",
+  "e": "Can you hear me now?",
+  "b": "A1"
+ },
+ {
+  "q": "Я тебя' хорошо' ___, говори'.",
+  "v": "слышать",
+  "t": "pres",
+  "p": "ya",
+  "e": "I can hear you well, go ahead.",
+  "b": "A1"
+ },
+ {
+  "q": "Сейча'с па'па ___ на дива'не.",
+  "v": "лежать",
+  "t": "pres",
+  "p": "on",
+  "e": "Dad is lying on the sofa now.",
+  "b": "A1"
+ },
+ {
+  "q": "Где Серге'й? Он ___ в саду'.",
+  "v": "сидеть",
+  "t": "pres",
+  "p": "on",
+  "e": "Where's Sergei? He's sitting in the garden.",
+  "b": "A1"
+ },
+ {
+  "q": "Сейча'с я ___ на остано'вке и жду авто'бус.",
+  "v": "стоять",
+  "t": "pres",
+  "p": "ya",
+  "e": "I'm standing at the stop now, waiting for the bus.",
+  "b": "A1"
+ },
+ {
+  "q": "Я уже' час ___ тебя' здесь, где ты?",
+  "v": "ждать",
+  "t": "pres",
+  "p": "ya",
+  "e": "I've been waiting for you here for an hour, where are you?",
+  "b": "A2"
+ },
+ {
+  "q": "Что вы ___? Ключи'?",
+  "v": "искать",
+  "t": "pres",
+  "p": "vy",
+  "e": "What are you looking for? Your keys?",
+  "b": "A2"
+ },
+ {
+  "q": "Смотри', О'льга ___ на сце'не!",
+  "v": "танцевать",
+  "t": "pres",
+  "p": "ona",
+  "e": "Look, Olga is dancing on stage!",
+  "b": "A1"
+ },
+ {
+  "q": "Слы'шишь? Ма'ма ___ на ку'хне.",
+  "v": "петь",
+  "t": "pres",
+  "p": "ona",
+  "e": "Can you hear? Mum is singing in the kitchen.",
+  "b": "A1"
+ },
+ {
+  "q": "Ти'ше, ребёнок ___.",
+  "v": "спать",
+  "t": "pres",
+  "p": "on",
+  "e": "Quiet, the baby is asleep.",
+  "b": "A1"
+ },
+ {
+  "q": "Почему' ты ___? Что случи'лось?",
+  "v": "плакать",
+  "t": "pres",
+  "p": "ty",
+  "e": "Why are you crying? What happened?",
+  "b": "A1"
+ },
+ {
+  "q": "Почему' вы ___? Э'то не смешно'.",
+  "v": "смеяться",
+  "t": "pres",
+  "p": "vy",
+  "e": "Why are you laughing? It's not funny.",
+  "b": "A2"
+ },
+ {
+  "q": "Я не ___, что ты говори'шь.",
+  "v": "понимать",
+  "t": "pres",
+  "p": "ya",
+  "e": "I don't understand what you're saying.",
+  "b": "A1"
+ },
+ {
+  "q": "Ты ___ меня'? Я говорю' гро'мко?",
+  "v": "понимать",
+  "t": "pres",
+  "p": "ty",
+  "e": "Do you understand me? Am I speaking loudly?",
+  "b": "A1"
+ },
+ {
+  "q": "Ско'лько ___ э'тот хлеб?",
+  "v": "стоить",
+  "t": "pres",
+  "p": "on",
+  "e": "How much does this bread cost?",
+  "b": "A1"
+ },
+ {
+  "q": "Э'ти я'блоки ___ сто рубле'й.",
+  "v": "стоить",
+  "t": "pres",
+  "p": "oni",
+  "e": "These apples cost a hundred roubles.",
+  "b": "A1"
+ },
+ {
+  "q": "Мой оте'ц бро'сил и тепе'рь не ___.",
+  "v": "курить",
+  "t": "pres",
+  "p": "on",
+  "e": "My father quit and doesn't smoke now.",
+  "b": "A2"
+ },
+ {
+  "q": "Ты ___ соба'к? Э'та соба'ка до'брая.",
+  "v": "бояться",
+  "t": "pres",
+  "p": "ty",
+  "e": "Are you afraid of dogs? This dog is friendly.",
+  "b": "A2"
+ },
+ {
+  "q": "Мне ___ э'та кварти'ра, она' све'тлая.",
+  "v": "нравиться",
+  "t": "pres",
+  "p": "ona",
+  "e": "I like this flat, it's bright.",
+  "b": "A2"
+ },
+ {
+  "q": "Тебе' ___ фи'льмы у'жасов?",
+  "v": "нравиться",
+  "t": "pres",
+  "p": "oni",
+  "e": "Do you like horror films?",
+  "b": "A2"
+ },
+ {
+  "q": "Я ___ чай, а ты лю'бишь ко'фе?",
+  "v": "любить",
+  "t": "pres",
+  "p": "ya",
+  "e": "I love tea, and do you love coffee?",
+  "b": "A1"
+ },
+ {
+  "q": "Ба'бушка о'чень ___ вну'ков и ча'сто им звони'т.",
+  "v": "любить",
+  "t": "pres",
+  "p": "ona",
+  "e": "Grandma loves her grandchildren very much and often calls them.",
+  "b": "A1"
+ },
+ {
+  "q": "Сейча'с я не ___ говори'ть, я на рабо'те.",
+  "v": "мочь",
+  "t": "pres",
+  "p": "ya",
+  "e": "I can't talk now, I'm at work.",
+  "b": "A1"
+ },
+ {
+  "q": "Мы ___ пить, есть вода'?",
+  "v": "хотеть",
+  "t": "pres",
+  "p": "my",
+  "e": "We're thirsty, is there any water?",
+  "b": "A1"
+ },
+ {
+  "q": "Что вы ___ на у'жин сего'дня?",
+  "v": "хотеть",
+  "t": "pres",
+  "p": "vy",
+  "e": "What would you like for dinner today?",
+  "b": "A1"
+ },
+ {
+  "q": "Де'ти ___ моро'женое, ку'пим?",
+  "v": "хотеть",
+  "t": "pres",
+  "p": "oni",
+  "e": "The children want ice cream, shall we buy some?",
+  "b": "A1"
+ },
+ {
+  "q": "Ты ___ пла'вать? Тут глубоко'.",
+  "v": "уметь",
+  "t": "pres",
+  "p": "ty",
+  "e": "Can you swim? It's deep here.",
+  "b": "A1"
+ },
+ {
+  "q": "Ма'ша, ты ___ игра'ть на гита'ре? Сыгра'й!",
+  "v": "уметь",
+  "t": "pres",
+  "p": "ty",
+  "e": "Masha, can you play the guitar? Play something!",
+  "b": "A2"
+ },
+ {
+  "q": "Я ___, что всё бу'дет хорошо'.",
+  "v": "надеяться",
+  "t": "pres",
+  "p": "ya",
+  "e": "I hope everything will be fine.",
+  "b": "A2"
+ },
+ {
+  "q": "Мы ___, что вы придёте.",
+  "v": "надеяться",
+  "t": "pres",
+  "p": "my",
+  "e": "We hope that you'll come.",
+  "b": "A2"
+ },
+ {
+  "q": "Мой сын ещё ма'ленький и ___ стать космона'втом.",
+  "v": "мечтать",
+  "t": "pres",
+  "p": "on",
+  "e": "My son is still little and dreams of becoming a cosmonaut.",
+  "b": "A2"
+ },
+ {
+  "q": "Сейча'с я ___ в Петербу'рге, мне здесь нра'вится.",
+  "v": "жить",
+  "t": "pres",
+  "p": "ya",
+  "e": "I live in Petersburg now, I like it here.",
+  "b": "A1"
+ },
+ {
+  "q": "Где вы ___? В це'нтре?",
+  "v": "жить",
+  "t": "pres",
+  "p": "vy",
+  "e": "Where do you live? In the centre?",
+  "b": "A1"
+ },
+ {
+  "q": "Они' и сейча'с ___ в ма'ленькой дере'вне.",
+  "v": "жить",
+  "t": "pres",
+  "p": "oni",
+  "e": "They still live in a small village.",
+  "b": "A1"
+ },
+ {
+  "q": "Тепе'рь О'льга ___ в ба'нке.",
+  "v": "работать",
+  "t": "pres",
+  "p": "ona",
+  "e": "Olga works in a bank now.",
+  "b": "A1"
+ },
+ {
+  "q": "Ты ещё ___ в шко'ле?",
+  "v": "работать",
+  "t": "pres",
+  "p": "ty",
+  "e": "Do you still work at the school?",
+  "b": "A1"
+ },
+ {
+  "q": "Что вы де'лаете? Мы ___ уро'ки.",
+  "v": "делать",
+  "t": "pres",
+  "p": "my",
+  "e": "What are you doing? We're doing homework.",
+  "b": "A1"
+ },
+ {
+  "q": "Что де'лают де'ти? Они' ___ в футбо'л.",
+  "v": "играть",
+  "t": "pres",
+  "p": "oni",
+  "e": "What are the children doing? They're playing football.",
+  "b": "A1"
+ },
+ {
+  "q": "Смотри', А'нна и Ива'н ___ в па'рке.",
+  "v": "гулять",
+  "t": "pres",
+  "p": "oni",
+  "e": "Look, Anna and Ivan are walking in the park.",
+  "b": "A1"
+ },
+ {
+  "q": "Тепе'рь я ___ в университе'те.",
+  "v": "учиться",
+  "t": "pres",
+  "p": "ya",
+  "e": "Now I study at university.",
+  "b": "A1"
+ },
+ {
+  "q": "Где ты ___? В Москве'?",
+  "v": "учиться",
+  "t": "pres",
+  "p": "ty",
+  "e": "Where do you study? In Moscow?",
+  "b": "A1"
+ },
+ {
+  "q": "Мой брат ___ в шко'ле, а я уже' рабо'таю.",
+  "v": "учиться",
+  "t": "pres",
+  "p": "on",
+  "e": "My brother is at school, and I already work.",
+  "b": "A1"
+ },
+ {
+  "q": "Тепе'рь мы ___ ру'сский язы'к ка'ждый день.",
+  "v": "учить",
+  "t": "pres",
+  "p": "my",
+  "e": "Now we study Russian every day.",
+  "b": "A1"
+ },
+ {
+  "q": "Не меша'й Серге'ю, он ___ но'вые слова'.",
+  "v": "учить",
+  "t": "pres",
+  "p": "on",
+  "e": "Don't disturb Sergei, he's learning new words.",
+  "b": "A2"
+ },
+ {
+  "q": "Что ты ___? Э'то рома'н?",
+  "v": "читать",
+  "t": "pres",
+  "p": "ty",
+  "e": "What are you reading? Is it a novel?",
+  "b": "A1"
+ },
+ {
+  "q": "Тепе'рь я ка'ждое у'тро ___ но'вости.",
+  "v": "читать",
+  "t": "pres",
+  "p": "ya",
+  "e": "Now I read the news every morning.",
+  "b": "A1"
+ },
+ {
+  "q": "Ти'ше, па'па ___ фильм.",
+  "v": "смотреть",
+  "t": "pres",
+  "p": "on",
+  "e": "Quiet, Dad is watching a film.",
+  "b": "A1"
+ },
+ {
+  "q": "Что вы сейча'с ___? Сериа'л?",
+  "v": "смотреть",
+  "t": "pres",
+  "p": "vy",
+  "e": "What are you watching now? A series?",
+  "b": "A1"
+ },
+ {
+  "q": "Я ничего' не ___, тут темно'.",
+  "v": "видеть",
+  "t": "pres",
+  "p": "ya",
+  "e": "I can't see anything, it's dark here.",
+  "b": "A1"
+ },
+ {
+  "q": "Ты ___ тот дом? Там живёт Ма'ша.",
+  "v": "видеть",
+  "t": "pres",
+  "p": "ty",
+  "e": "Do you see that house? Masha lives there.",
+  "b": "A1"
+ },
+ {
+  "q": "Я е'ду в маши'не и ___ ра'дио.",
+  "v": "слушать",
+  "t": "pres",
+  "p": "ya",
+  "e": "I'm driving and listening to the radio.",
+  "b": "A1"
+ },
+ {
+  "q": "Что вы ___? Э'то джаз?",
+  "v": "слушать",
+  "t": "pres",
+  "p": "vy",
+  "e": "What are you listening to? Is it jazz?",
+  "b": "A1"
+ },
+ {
+  "q": "Ты ___ меня'? Посмотри' на меня'!",
+  "v": "слушать",
+  "t": "pres",
+  "p": "ty",
+  "e": "Are you listening to me? Look at me!",
+  "b": "A1"
+ },
+ {
+  "q": "О чём ты сейча'с ___?",
+  "v": "думать",
+  "t": "pres",
+  "p": "ty",
+  "e": "What are you thinking about now?",
+  "b": "A1"
+ },
+ {
+  "q": "Я ___, что он прав.",
+  "v": "думать",
+  "t": "pres",
+  "p": "ya",
+  "e": "I think that he's right.",
+  "b": "A1"
+ },
+ {
+  "q": "Что вы ___ об э'том?",
+  "v": "думать",
+  "t": "pres",
+  "p": "vy",
+  "e": "What do you think about this?",
+  "b": "A2"
+ },
+ {
+  "q": "Не меша'й, я ___ по телефо'ну.",
+  "v": "говорить",
+  "t": "pres",
+  "p": "ya",
+  "e": "Don't disturb me, I'm on the phone.",
+  "b": "A1"
+ },
+ {
+  "q": "Вы ___ по-англи'йски? Мне нужна' по'мощь.",
+  "v": "говорить",
+  "t": "pres",
+  "p": "vy",
+  "e": "Do you speak English? I need help.",
+  "b": "A1"
+ },
+ {
+  "q": "Его' сестра' перево'дчик и ___ на трёх языка'х.",
+  "v": "говорить",
+  "t": "pres",
+  "p": "ona",
+  "e": "His sister is a translator and speaks three languages.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ма сейча'с ___ посу'ду.",
+  "v": "мыть",
+  "t": "pres",
+  "p": "ona",
+  "e": "Mum is washing the dishes now.",
+  "b": "A1"
+ },
+ {
+  "q": "Где Ива'н? Он ___ маши'ну во дворе'.",
+  "v": "мыть",
+  "t": "pres",
+  "p": "on",
+  "e": "Where's Ivan? He's washing the car in the yard.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь Ива'н ка'ждый день ___ мне.",
+  "v": "звонить",
+  "t": "pres",
+  "p": "on",
+  "e": "Now Ivan calls me every day.",
+  "b": "A1"
+ },
+ {
+  "q": "Кто ___? Возьми' тру'бку.",
+  "v": "звонить",
+  "t": "pres",
+  "p": "on",
+  "e": "Who's calling? Pick up the phone.",
+  "b": "A1"
+ },
+ {
+  "q": "Тепе'рь я ча'сто ___ ма'ме по до'му.",
+  "v": "помогать",
+  "t": "pres",
+  "p": "ya",
+  "e": "Now I often help Mum around the house.",
+  "b": "A1"
+ },
+ {
+  "q": "Мой друг врач, он ___ лю'дям.",
+  "v": "помогать",
+  "t": "pres",
+  "p": "on",
+  "e": "My friend is a doctor, he helps people.",
+  "b": "A1"
+ },
+ {
+  "q": "Мы сейча'с на ку'хне, ___ обе'д.",
+  "v": "готовить",
+  "t": "pres",
+  "p": "my",
+  "e": "We're in the kitchen now, cooking lunch.",
+  "b": "A1"
+ },
+ {
+  "q": "Тепе'рь он ___ сам, без ма'мы.",
+  "v": "готовить",
+  "t": "pres",
+  "p": "on",
+  "e": "Now he cooks on his own, without Mum.",
+  "b": "A2"
+ },
+ {
+  "q": "Что ты ___? Э'то суп?",
+  "v": "есть",
+  "t": "pres",
+  "p": "ty",
+  "e": "What are you eating? Is it soup?",
+  "b": "A1"
+ },
+ {
+  "q": "Смотри', ко'шка ___ ры'бу!",
+  "v": "есть",
+  "t": "pres",
+  "p": "ona",
+  "e": "Look, the cat is eating the fish!",
+  "b": "A1"
+ },
+ {
+  "q": "Тепе'рь я не ___ мя'со.",
+  "v": "есть",
+  "t": "pres",
+  "p": "ya",
+  "e": "I don't eat meat now.",
+  "b": "A1"
+ },
+ {
+  "q": "Что вы де'лаете? Мы ___ чай.",
+  "v": "пить",
+  "t": "pres",
+  "p": "my",
+  "e": "What are you doing? We're having tea.",
+  "b": "A1"
+ },
+ {
+  "q": "Тепе'рь О'льга не ___ ко'фе.",
+  "v": "пить",
+  "t": "pres",
+  "p": "ona",
+  "e": "Olga doesn't drink coffee now.",
+  "b": "A1"
+ },
+ {
+  "q": "Тепе'рь мы ___ в семь часо'в.",
+  "v": "вставать",
+  "t": "pres",
+  "p": "my",
+  "e": "Now we get up at seven.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь ты ___ так ра'но?",
+  "v": "вставать",
+  "t": "pres",
+  "p": "ty",
+  "e": "Do you get up so early now?",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь я ___ спать в оди'ннадцать.",
+  "v": "ложиться",
+  "t": "pres",
+  "p": "ya",
+  "e": "Now I go to bed at eleven.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь де'ти ___ спать в де'вять.",
+  "v": "ложиться",
+  "t": "pres",
+  "p": "oni",
+  "e": "Now the children go to bed at nine.",
+  "b": "A2"
+ },
+ {
+  "q": "Я всегда' ___ у окна', я так люблю'.",
+  "v": "садиться",
+  "t": "pres",
+  "p": "ya",
+  "e": "I always sit by the window, I like it that way.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь О'льга ___ без буди'льника.",
+  "v": "просыпаться",
+  "t": "pres",
+  "p": "ona",
+  "e": "Now Olga wakes up without an alarm clock.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь он ___ домо'й о'чень по'здно.",
+  "v": "возвращаться",
+  "t": "pres",
+  "p": "on",
+  "e": "He comes home very late now.",
+  "b": "A2"
+ },
+ {
+  "q": "Охра'нник ___ магази'н в во'семь, сейча'с ещё ра'но.",
+  "v": "открывать",
+  "t": "pres",
+  "p": "on",
+  "e": "The guard opens the shop at eight, it's still early now.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь О'льга ___ по'чту в шесть.",
+  "v": "закрывать",
+  "t": "pres",
+  "p": "ona",
+  "e": "Now Olga closes the post office at six.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь учи'тель ___ уро'к в де'вять.",
+  "v": "начинать",
+  "t": "pres",
+  "p": "on",
+  "e": "Now the teacher starts the lesson at nine.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь я ___ рабо'ту в пять.",
+  "v": "заканчивать",
+  "t": "pres",
+  "p": "ya",
+  "e": "Now I finish work at five.",
+  "b": "A2"
+ },
+ {
+  "q": "Ма'ша, почему' ты не ___ на мой вопро'с?",
+  "v": "отвечать",
+  "t": "pres",
+  "p": "ty",
+  "e": "Masha, why aren't you answering my question?",
+  "b": "A2"
+ },
+ {
+  "q": "Ти'ше, студе'нты ___ на вопро'сы.",
+  "v": "отвечать",
+  "t": "pres",
+  "p": "oni",
+  "e": "Quiet, the students are answering questions.",
+  "b": "A2"
+ },
+ {
+  "q": "Почему' ты всё вре'мя ___ одно' и то же?",
+  "v": "спрашивать",
+  "t": "pres",
+  "p": "ty",
+  "e": "Why do you keep asking the same thing?",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь он ча'сто ___ меня' о рабо'те.",
+  "v": "спрашивать",
+  "t": "pres",
+  "p": "on",
+  "e": "Now he often asks me about work.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь я ___ все пробле'мы сам.",
+  "v": "решать",
+  "t": "pres",
+  "p": "ya",
+  "e": "Now I solve all my problems myself.",
+  "b": "B1"
+ },
+ {
+  "q": "Не меша'й, мы ___ зада'чу.",
+  "v": "решать",
+  "t": "pres",
+  "p": "my",
+  "e": "Don't disturb us, we're solving a problem.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь О'льга ___ хоро'шую зарпла'ту.",
+  "v": "получать",
+  "t": "pres",
+  "p": "ona",
+  "e": "Olga gets a good salary now.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь я ___ мно'го пи'сем.",
+  "v": "получать",
+  "t": "pres",
+  "p": "ya",
+  "e": "I get a lot of letters now.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь Ива'н ча'сто ___ мне кни'ги.",
+  "v": "давать",
+  "t": "pres",
+  "p": "on",
+  "e": "Now Ivan often lends me books.",
+  "b": "A2"
+ },
+ {
+  "q": "Почему' ты всегда' ___ мои' ве'щи?",
+  "v": "брать",
+  "t": "pres",
+  "p": "ty",
+  "e": "Why do you always take my things?",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь мы ___ хлеб в э'том магази'не.",
+  "v": "покупать",
+  "t": "pres",
+  "p": "my",
+  "e": "Now we buy bread in this shop.",
+  "b": "A1"
+ },
+ {
+  "q": "Что ты там ___? Пода'рок?",
+  "v": "покупать",
+  "t": "pres",
+  "p": "ty",
+  "e": "What are you buying there? A present?",
+  "b": "A1"
+ },
+ {
+  "q": "Смотри', же'нщина у метро' ___ цветы'.",
+  "v": "продавать",
+  "t": "pres",
+  "p": "ona",
+  "e": "Look, a woman by the metro is selling flowers.",
+  "b": "A2"
+ },
+ {
+  "q": "Они' сейча'с ___ свою' кварти'ру.",
+  "v": "продавать",
+  "t": "pres",
+  "p": "oni",
+  "e": "They're selling their flat now.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь я ___ за кварти'ру ме'ньше.",
+  "v": "платить",
+  "t": "pres",
+  "p": "ya",
+  "e": "I pay less for the flat now.",
+  "b": "B1"
+ },
+ {
+  "q": "Тепе'рь он ___ все слова'.",
+  "v": "забывать",
+  "t": "pres",
+  "p": "on",
+  "e": "He forgets all the words now.",
+  "b": "A2"
+ },
+ {
+  "q": "Я и сейча'с ча'сто ___ на'шу пое'здку.",
+  "v": "вспоминать",
+  "t": "pres",
+  "p": "ya",
+  "e": "I still often think back to our trip.",
+  "b": "B1"
+ },
+ {
+  "q": "Смотри', гид ___ тури'стам це'рковь.",
+  "v": "показывать",
+  "t": "pres",
+  "p": "on",
+  "e": "Look, the guide is showing the tourists a church.",
+  "b": "A2"
+ },
+ {
+  "q": "Ти'ше, ба'бушка ___ де'тям ска'зку.",
+  "v": "рассказывать",
+  "t": "pres",
+  "p": "ona",
+  "e": "Quiet, Grandma is telling the children a fairy tale.",
+  "b": "A2"
+ },
+ {
+  "q": "Ти'ше, учи'тель ___ но'вую те'му.",
+  "v": "объяснять",
+  "t": "pres",
+  "p": "on",
+  "e": "Quiet, the teacher is explaining a new topic.",
+  "b": "A2"
+ },
+ {
+  "q": "Ты непло'хо ___, но ме'дленно.",
+  "v": "объяснять",
+  "t": "pres",
+  "p": "ty",
+  "e": "You explain quite well, but slowly.",
+  "b": "B1"
+ },
+ {
+  "q": "Я уже' неде'лю ___ рабо'ту.",
+  "v": "искать",
+  "t": "pres",
+  "p": "ya",
+  "e": "I've been looking for a job for a week now.",
+  "b": "A2"
+ },
+ {
+  "q": "Мы ___ но'вую кварти'ру, э'та ма'ленькая.",
+  "v": "искать",
+  "t": "pres",
+  "p": "my",
+  "e": "We're looking for a new flat, this one is small.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь я всегда' ___ ключи' в су'мке.",
+  "v": "находить",
+  "t": "pres",
+  "p": "ya",
+  "e": "Now I always find my keys in my bag.",
+  "b": "B1"
+ },
+ {
+  "q": "Ты всё вре'мя ___ перча'тки!",
+  "v": "терять",
+  "t": "pres",
+  "p": "ty",
+  "e": "You keep losing your gloves!",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь я ка'ждый день ___ его' в метро'.",
+  "v": "встречать",
+  "t": "pres",
+  "p": "ya",
+  "e": "Now I meet him in the metro every day.",
+  "b": "A2"
+ },
+ {
+  "q": "Мы ___ вас на на'шу сва'дьбу, вы придёте?",
+  "v": "приглашать",
+  "t": "pres",
+  "p": "my",
+  "e": "We're inviting you to our wedding, will you come?",
+  "b": "B1"
+ },
+ {
+  "q": "Ма'ша в свое'й ко'мнате, она' ___.",
+  "v": "одеваться",
+  "t": "pres",
+  "p": "ona",
+  "e": "Masha is in her room, she's getting dressed.",
+  "b": "A2"
+ },
+ {
+  "q": "Подожди', я ещё ___.",
+  "v": "одеваться",
+  "t": "pres",
+  "p": "ya",
+  "e": "Wait, I'm still getting dressed.",
+  "b": "A2"
+ },
+ {
+  "q": "Смотри', он ___ ва'зу на стол.",
+  "v": "ставить",
+  "t": "pres",
+  "p": "on",
+  "e": "Look, he's putting the vase on the table.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь я ___ ключи' в карма'н.",
+  "v": "класть",
+  "t": "pres",
+  "p": "ya",
+  "e": "Now I put my keys in my pocket.",
+  "b": "B1"
+ },
+ {
+  "q": "Не меша'й, я ___ статью'.",
+  "v": "переводить",
+  "t": "pres",
+  "p": "ya",
+  "e": "Don't disturb me, I'm translating an article.",
+  "b": "B1"
+ },
+ {
+  "q": "Что вы ___? Э'то рома'н?",
+  "v": "переводить",
+  "t": "pres",
+  "p": "vy",
+  "e": "What are you translating? Is it a novel?",
+  "b": "B1"
+ },
+ {
+  "q": "Тепе'рь мы ___ в семь утра'.",
+  "v": "завтракать",
+  "t": "pres",
+  "p": "my",
+  "e": "Now we have breakfast at seven in the morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Где все? Они' ___ в столо'вой.",
+  "v": "обедать",
+  "t": "pres",
+  "p": "oni",
+  "e": "Where is everyone? They're having lunch in the canteen.",
+  "b": "A2"
+ },
+ {
+  "q": "Мы ___, приходи' к нам.",
+  "v": "ужинать",
+  "t": "pres",
+  "p": "my",
+  "e": "We're having dinner, come and join us.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь я ___ на мо'ре ка'ждое ле'то.",
+  "v": "отдыхать",
+  "t": "pres",
+  "p": "ya",
+  "e": "Now I holiday by the sea every summer.",
+  "b": "A2"
+ },
+ {
+  "q": "Приезжа'й, мы ___ на да'че.",
+  "v": "отдыхать",
+  "t": "pres",
+  "p": "my",
+  "e": "Come over, we're relaxing at the dacha.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь О'льга ча'сто ___, ей на'до к врачу'.",
+  "v": "болеть",
+  "t": "pres",
+  "p": "ona",
+  "e": "Olga is often ill now, she needs to see a doctor.",
+  "b": "B1"
+ },
+ {
+  "q": "Смотри', де'вочка ___ тебе'.",
+  "v": "улыбаться",
+  "t": "pres",
+  "p": "ona",
+  "e": "Look, the girl is smiling at you.",
+  "b": "A2"
+ },
+ {
+  "q": "Почему' ты ___? Тебе' смешно'?",
+  "v": "улыбаться",
+  "t": "pres",
+  "p": "ty",
+  "e": "Why are you smiling? Do you find it funny?",
+  "b": "A2"
+ },
+ {
+  "q": "Смотри', мой сын ___ ко'шку.",
+  "v": "рисовать",
+  "t": "pres",
+  "p": "on",
+  "e": "Look, my son is drawing a cat.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь они' ___ дом за го'родом.",
+  "v": "строить",
+  "t": "pres",
+  "p": "oni",
+  "e": "Now they're building a house out of town.",
+  "b": "B1"
+ },
+ {
+  "q": "Я тебе' ___, ты не врёшь.",
+  "v": "верить",
+  "t": "pres",
+  "p": "ya",
+  "e": "I believe you, you're not lying.",
+  "b": "A2"
+ },
+ {
+  "q": "Почему' вы мне не ___?",
+  "v": "верить",
+  "t": "pres",
+  "p": "vy",
+  "e": "Why don't you believe me?",
+  "b": "A2"
+ },
+ {
+  "q": "Что ты мне ___? Кака'я кни'га лу'чше?",
+  "v": "советовать",
+  "t": "pres",
+  "p": "ty",
+  "e": "What do you advise me? Which book is better?",
+  "b": "B1"
+ },
+ {
+  "q": "Врач ___ мне бо'льше гуля'ть, и он прав.",
+  "v": "советовать",
+  "t": "pres",
+  "p": "on",
+  "e": "The doctor advises me to walk more, and he's right.",
+  "b": "B1"
+ },
+ {
+  "q": "Смотри', Ма'ша ___ но'вый торт.",
+  "v": "пробовать",
+  "t": "pres",
+  "p": "ona",
+  "e": "Look, Masha is trying the new cake.",
+  "b": "A2"
+ },
+ {
+  "q": "Почему' ты ___? Я не глухо'й!",
+  "v": "кричать",
+  "t": "pres",
+  "p": "ty",
+  "e": "Why are you shouting? I'm not deaf!",
+  "b": "A2"
+ },
+ {
+  "q": "Слы'шишь? Сосе'ди ___.",
+  "v": "кричать",
+  "t": "pres",
+  "p": "oni",
+  "e": "Can you hear? The neighbours are shouting.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь мой муж никогда' не ___.",
+  "v": "опаздывать",
+  "t": "pres",
+  "p": "on",
+  "e": "My husband is never late now.",
+  "b": "A2"
+ },
+ {
+  "q": "Мы ___, такси' уже' ждёт!",
+  "v": "опаздывать",
+  "t": "pres",
+  "p": "my",
+  "e": "We're late, the taxi is already waiting!",
+  "b": "A2"
+ },
+ {
+  "q": "Почему' ты ___ рабо'ту? Тебе' там пло'хо?",
+  "v": "бросать",
+  "t": "pres",
+  "p": "ty",
+  "e": "Why are you quitting your job? Are you unhappy there?",
+  "b": "B1"
+ },
+ {
+  "q": "Тепе'рь он ___ мне ка'ждый ве'чер.",
+  "v": "писать",
+  "t": "pres",
+  "p": "on",
+  "e": "Now he writes to me every evening.",
+  "b": "A1"
+ },
+ {
+  "q": "Тепе'рь вы ___ в но'вом до'ме?",
+  "v": "жить",
+  "t": "pres",
+  "p": "vy",
+  "e": "Do you live in the new house now?",
+  "b": "A1"
+ },
+ {
+  "q": "Кем ты ___? Врачо'м?",
+  "v": "работать",
+  "t": "pres",
+  "p": "ty",
+  "e": "What do you work as? A doctor?",
+  "b": "A1"
+ },
+ {
+  "q": "Ты ___ э'того челове'ка? Кто э'то?",
+  "v": "знать",
+  "t": "pres",
+  "p": "ty",
+  "e": "Do you know this man? Who is it?",
+  "b": "A1"
+ },
+ {
+  "q": "Мы не ___ его' а'дрес, ты зна'ешь?",
+  "v": "знать",
+  "t": "pres",
+  "p": "my",
+  "e": "We don't know his address, do you?",
+  "b": "A1"
+ },
+ {
+  "q": "Мои' роди'тели живу'т в Мадри'де и ___ по-испа'нски.",
+  "v": "говорить",
+  "t": "pres",
+  "p": "oni",
+  "e": "My parents live in Madrid and speak Spanish.",
+  "b": "A1"
+ },
+ {
+  "q": "Где го'сти? Они' ___ ко'фе на балко'не.",
+  "v": "пить",
+  "t": "pres",
+  "p": "oni",
+  "e": "Where are the guests? They're drinking coffee on the balcony.",
+  "b": "A1"
+ },
+ {
+  "q": "Смотри', что де'ти ___ из бума'ги!",
+  "v": "делать",
+  "t": "pres",
+  "p": "oni",
+  "e": "Look what the children are making out of paper!",
+  "b": "A1"
+ },
+ {
+  "q": "Что ты ___ сего'дня ве'чером?",
+  "v": "делать",
+  "t": "pres",
+  "p": "ty",
+  "e": "What are you doing this evening?",
+  "b": "A1"
+ },
+ {
+  "q": "Тепе'рь Дми'трий ___ кни'гу о войне'.",
+  "v": "писать",
+  "t": "pres",
+  "p": "on",
+  "e": "Now Dmitry is writing a book about the war.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь мы ___ друг дру'гу пи'сьма.",
+  "v": "писать",
+  "t": "pres",
+  "p": "my",
+  "e": "Now we write letters to each other.",
+  "b": "A2"
+ },
+ {
+  "q": "Сейча'с Ива'н ___ в кафе' с О'льгой.",
+  "v": "сидеть",
+  "t": "pres",
+  "p": "on",
+  "e": "Ivan is sitting in a café with Olga now.",
+  "b": "A1"
+ },
+ {
+  "q": "Где мы ___? Здесь хорошо'?",
+  "v": "сидеть",
+  "t": "pres",
+  "p": "my",
+  "e": "Where are we sitting? Is it good here?",
+  "b": "A1"
+ },
+ {
+  "q": "Твои' кни'ги ___ на столе', возьми'.",
+  "v": "лежать",
+  "t": "pres",
+  "p": "oni",
+  "e": "Your books are on the table, take them.",
+  "b": "A1"
+ },
+ {
+  "q": "Ма'ша, где ты? Я ___ у вхо'да.",
+  "v": "стоять",
+  "t": "pres",
+  "p": "ya",
+  "e": "Masha, where are you? I'm standing by the entrance.",
+  "b": "A1"
+ },
+ {
+  "q": "Смотри', ва'за ___ на окне'.",
+  "v": "стоять",
+  "t": "pres",
+  "p": "ona",
+  "e": "Look, the vase is on the windowsill.",
+  "b": "A1"
+ },
+ {
+  "q": "Ти'ше, О'льга ___ по-англи'йски на телефо'не.",
+  "v": "говорить",
+  "t": "pres",
+  "p": "ona",
+  "e": "Quiet, Olga is speaking English on the phone.",
+  "b": "A2"
+ },
+ {
+  "q": "Ти'ше, студе'нты ___ экза'мен.",
+  "v": "писать",
+  "t": "pres",
+  "p": "oni",
+  "e": "Quiet, the students are writing an exam.",
+  "b": "A2"
+ },
+ {
+  "q": "Тепе'рь мы ча'сто ___ друзе'й в го'сти.",
+  "v": "приглашать",
+  "t": "pres",
+  "p": "my",
+  "e": "Now we often invite friends over.",
+  "b": "B1"
+ },
+ {
+  "q": "Тепе'рь вы ___ ра'но?",
+  "v": "вставать",
+  "t": "pres",
+  "p": "vy",
+  "e": "Do you get up early now?",
+  "b": "A2"
+ },
+ {
+  "q": "Мы с А'нной актёры, мы ___ в теа'тре.",
+  "v": "работать",
+  "t": "pres",
+  "p": "my",
+  "e": "Anna and I are actors, we work at the theatre.",
+  "b": "A1"
+ },
+ {
+  "q": "Тепе'рь я ___ гуля'ть с соба'кой у'тром.",
+  "v": "любить",
+  "t": "pres",
+  "p": "ya",
+  "e": "Now I love walking the dog in the morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Смотри', Ива'н и Серге'й ___ в ша'хматы.",
+  "v": "играть",
+  "t": "pres",
+  "p": "oni",
+  "e": "Look, Ivan and Sergei are playing chess.",
+  "b": "A1"
+ },
+ {
+  "q": "Что вы ___? Мо'жно мне посмотре'ть?",
+  "v": "рисовать",
+  "t": "pres",
+  "p": "vy",
+  "e": "What are you drawing? May I look?",
+  "b": "A2"
+ },
+ {
+  "q": "Я ___ пи'ццу, хо'чешь кусо'к?",
+  "v": "есть",
+  "t": "pres",
+  "p": "ya",
+  "e": "I'm eating pizza, do you want a slice?",
+  "b": "A1"
+ },
+ {
+  "q": "Почему' вы ___ здесь? Сади'тесь.",
+  "v": "стоять",
+  "t": "pres",
+  "p": "vy",
+  "e": "Why are you standing here? Sit down.",
+  "b": "A2"
+ },
+ {
+  "q": "Мы ___ тебя' у вхо'да, где ты?",
+  "v": "ждать",
+  "t": "pres",
+  "p": "my",
+  "e": "We're waiting for you by the entrance, where are you?",
+  "b": "A1"
+ },
+ {
+  "q": "Тепе'рь Ма'ша ___ ру'сский с учи'телем.",
+  "v": "учить",
+  "t": "pres",
+  "p": "ona",
+  "e": "Now Masha studies Russian with a teacher.",
+  "b": "A1"
+ },
+ {
+  "q": "Слы'шишь? Они' ___ на'шу пе'сню!",
+  "v": "петь",
+  "t": "pres",
+  "p": "oni",
+  "e": "Can you hear? They're singing our song!",
+  "b": "A1"
+ },
+ {
+  "q": "Тепе'рь я ___ ча'ще, мне ве'село.",
+  "v": "смеяться",
+  "t": "pres",
+  "p": "ya",
+  "e": "I laugh more often now, I feel cheerful.",
+  "b": "B1"
+ },
+ {
+  "q": "Тепе'рь он ___ по утра'м в па'рке.",
+  "v": "гулять",
+  "t": "pres",
+  "p": "on",
+  "e": "Now he goes for walks in the park in the mornings.",
+  "b": "A2"
+ }
+]
