@@ -59,6 +59,7 @@ window.ARHuruf = (function () {
   function lessonDone(n) { return !!load().passed[n]; }
   function started() { var s = load(); return !!(s.started || s.exam.passed || (window.Profile && window.Profile.placed())); }
   function _reset() { mem = null; }
+  function markStarted() { load().started = true; save(); }
 
   // ---- item building ----------------------------------------------------------------
   /* Letters that look alike, so the wrong options are the ones worth thinking about. */
@@ -263,13 +264,23 @@ window.ARHuruf = (function () {
   }
   function show(w) { var h = host(); clear(h); h.appendChild(w); }
 
+  function strandHead(en, ar, tr) {
+    var h = el('div', 'sp-strand');
+    h.appendChild(el('b', null, en));
+    h.appendChild(UI.ar(ar));
+    h.appendChild(el('span', 'tr', tr));
+    return h;
+  }
+
   function firstOpen() {
     var w = el('div', 'arc arc-first');
     var brand = el('div', 'arc-first-brand');
     brand.appendChild(UI.ar('طَلَاقَة', 'big'));
     brand.appendChild(el('div', 'arc-brand', 'Ṭalāqa'));
     w.appendChild(brand);
-    w.appendChild(el('p', 'arc-sub', 'Arabic, one game at a time. First comes the script: twelve short lessons, then the games open.'));
+    w.appendChild(el('p', 'arc-sub', 'You can start speaking Arabic now, and learn the letters alongside. The games open when you pass the letters test.'));
+    if (window.ARSpeak) window.ARSpeak.section(w, true);
+    w.appendChild(strandHead('Letters', 'حُرُوف', 'Ḥurūf'));
     var b1 = button('arc-mode on', null, function () { load().started = true; save(); nav.push('card'); lessonCard(1); });
     b1.appendChild(el('b', null, 'I\'m new to the script'));
     b1.appendChild(el('span', null, 'Start with lesson 1: the first letters'));
@@ -285,8 +296,11 @@ window.ARHuruf = (function () {
   function path() {
     var open = unlocked();
     var w = wrapEl();
-    w.appendChild(top(open ? 'Ḥurūf' : 'Ḥurūf: the script', open ? nav.board : null));
-    var h2 = w.firstChild.firstChild.tagName === 'H2' ? w.firstChild.firstChild : null;
+    w.appendChild(top(open ? 'Ḥurūf' : 'Ṭalāqa', open ? nav.board : null));
+    if (!open && window.ARSpeak) {
+      window.ARSpeak.section(w, false);
+      w.appendChild(strandHead('Letters', 'حُرُوف', 'Ḥurūf'));
+    }
     w.appendChild(el('p', 'arc-sub', open
       ? 'The script course. Lessons stay open for review.'
       : 'Twelve lessons. Pass each round with 8 of 10 to open the next. Pass the exit test to open the games.'));
@@ -476,11 +490,14 @@ window.ARHuruf = (function () {
     });
   }
 
-  function init(o) { for (var k in o) nav[k] = o[k]; }
+  function init(o) {
+    for (var k in o) nav[k] = o[k];
+    if (window.ARSpeak) window.ARSpeak.init({ board: o.board, push: o.push, back: o.back, round: o.round, leave: function () { if (unlocked()) window.ARSpeak.home(); else path(); } });
+  }
 
   return {
     init: init, state: state, unlocked: unlocked, started: started, lessonOpen: lessonOpen, lessonDone: lessonDone,
-    firstOpen: firstOpen, path: path, lessonCard: lessonCard, startLessonRound: startLessonRound,
+    firstOpen: firstOpen, path: path, markStarted: markStarted, lessonCard: lessonCard, startLessonRound: startLessonRound,
     reviewRound: reviewRound, examIntro: examIntro, startExam: startExam,
     lessonDealer: lessonDealer, examItems: examItems, make: make, PASS: PASS, EXAM: EXAM, EXAM_PASS: EXAM_PASS,
     last: function () { return lastItem; }, _reset: _reset, HUE: HUE

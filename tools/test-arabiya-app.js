@@ -51,7 +51,7 @@ const css = fs.readFileSync(path.join(AD, 'css/talaqa.css'), 'utf8').toLowerCase
 ['#0b0f1c', '#141a2e', '#1c2440', '#28324f', '#eef1f8', '#95a0bd', '#2ec4b6', '#e9b44c', '#46d98a', '#ff6b5e'].forEach(c => ok(css.indexOf(c) !== -1, 'talaqa.css lacks the palette colour ' + c));
 ok(/font-family:'naskh'/.test(css) && /line-height:1\.9/.test(css) && /1\.35em/.test(css), '.ar rules: Naskh, line-height 1.9, 1.35em');
 ok(!/@import|https?:|fonts\.g/.test(css), 'talaqa.css must be self-contained');
-['ar-arcade.js', 'gameround.js', 'ar-items.js', 'ar-check.js', 'ar-huruf.js', 'ui.js'].forEach(f => {
+['ar-arcade.js', 'gameround.js', 'ar-items.js', 'ar-check.js', 'ar-huruf.js', 'ar-speak.js', 'ui.js'].forEach(f => {
   const src = fs.readFileSync(path.join(AD, 'js', f), 'utf8');
   ok(!/[–—]/.test(src.replace(/\/\*[\s\S]*?\*\/|\/\/.*$/gm, '')), f + ' shows an en or em dash outside comments');
 });
@@ -152,12 +152,12 @@ ok(typeof W.AR.play === 'function' && typeof W.AR.has === 'function', 'ar-audio 
   W.ARArcade.board();
   ok(byCls('arc-first').length === 1 && allText().indexOf('I\'m new to the script') !== -1 && allText().indexOf('I can read Arabic') !== -1, 'first open offers both doors');
   ok(byCls('arc-tile').length === 0, 'the board stays closed before the exit test');
-  const door = byCls('arc-mode')[0]; door.click();
+  const door = byCls('arc-mode').filter(b => b.textContent.indexOf('new to the script') !== -1)[0]; door.click();
   ok(allText().indexOf('Lesson 1') !== -1 && byCls('hr-letter').length === 4, 'the first door opens lesson 1 with its four letters');
   ok(byCls('hr-form').length === 16 && byCls('hr-start').length === 1, 'each letter shows four shapes; the round button is there');
   ok(byCls('ar').every(n => n.attrs.dir === 'rtl' && n.attrs.lang === 'ar'), 'every .ar node is dir rtl, lang ar');
-  W.ARArcade.board(); ok(byCls('hr-letter').length === 0 && byCls('arc-pick').length === 12, 'started: the path lists the 12 lessons');
-  ok(byCls('arc-pick').filter(b => !b.disabled).length === 1, 'only lesson 1 is open');
+  W.ARArcade.board(); ok(byCls('hr-letter').length === 0 && byCls('arc-pick').length === 12 + W.AR_SPEAK.length, 'started: the path lists the 12 lessons and the speak packs');
+  ok(byCls('arc-pick').filter(b => !b.disabled).length === 2, 'only lesson 1 and pack 1 are open');
 }
 
 // ---- the board with empty banks, once the script test is passed ----------------------------------------------
@@ -166,12 +166,12 @@ W.ARHuruf._reset();
 {
   W.ARArcade.board();
   const tiles = byCls('arc-tile'), soon = byCls('arc-soon');
-  ok(tiles.length === 8, `empty banks: expected 8 tiles, got ${tiles.length}`);
+  ok(tiles.length === 9, `empty banks: expected 9 tiles, got ${tiles.length}`);
   ok(soon.length === 7 && soon.every(s => s.textContent === 'coming soon'), 'empty banks: seven tiles say coming soon');
-  ok(tiles.filter(t => t.disabled).length === 7 && !tiles.filter(t => !t.disabled)[0].cls().includes('arc-grid') , 'empty banks: only Huruf is tappable');
+  ok(tiles.filter(t => t.disabled).length === 7, 'empty banks: only Huruf and Speak are tappable');
   ok(byCls('arc-jugar').length === 1 && byCls('arc-jugar')[0].disabled, 'empty banks: Ilab must be disabled');
-  ['Afʿāl', 'Kalimāt', 'ʿIbārāt', 'Ḥarakāt', 'Jidhr', 'Jumūʿ', 'Ḍamāʾir', 'Ḥurūf'].forEach(l => ok(tiles.some(t => t.textContent.indexOf(l) !== -1), 'no tile for ' + l));
-  ['Verbs', 'Words', 'Phrases', 'Vowels', 'Root and pattern', 'Plurals', 'Pronouns', 'The script'].forEach(e => ok(tiles.some(t => t.textContent.indexOf(e) !== -1), 'tile lacks English ' + e));
+  ['Afʿāl', 'Kalimāt', 'ʿIbārāt', 'Ḥarakāt', 'Jidhr', 'Jumūʿ', 'Ḍamāʾir', 'Ḥurūf', 'Takallam'].forEach(l => ok(tiles.some(t => t.textContent.indexOf(l) !== -1), 'no tile for ' + l));
+  ['Verbs', 'Words', 'Phrases', 'Vowels', 'Root and pattern', 'Plurals', 'Pronouns', 'The script', 'Speak'].forEach(e => ok(tiles.some(t => t.textContent.indexOf(e) !== -1), 'tile lacks English ' + e));
   ok(tiles.every(t => t.all(n => n.cls().includes('ar') && n.attrs.dir === 'rtl').length === 1), 'every tile label is an .ar node');
   ok(byCls('arc-fail').length === 0 && allText().indexOf('Your progress') !== -1, 'the board fell into the failure screen or lacks progress');
   ok(W.ARItems.next('imir', 1, Math.random, {}) === null, 'an empty mix must deal null, not throw');
@@ -580,6 +580,168 @@ const resetStage0 = () => { Object.keys(store).forEach(k => { if (/^talaqa\.(hur
     ok(p.all(n => n.cls().includes('ar')).length === 2 && p.textContent === 'Use لَنْ with a verb, not لَا.', 'card text: *x* becomes an .ar span');
     const q = W.UI.mixed(new El('p'), 'أَمْسِ, yesterday: the past.');
     ok(q.all(n => n.cls().includes('ar')).length === 1 && q.children[0].textContent === 'أَمْسِ', 'Arabic inside English gets its own span'); }
+
+  // ---- Speak: the second strand of stage 0 ------------------------------------------------------------------------------------------------------------------------
+  {
+    const S = W.ARSpeak, keepPh = W.AR_PHRASES, keepAu = W.AR_AUDIO;
+    ok(!!S && S.packs().length === 10, 'ARSpeak holds the ten packs');
+    W.AR_PHRASES = REAL.p; W.AR_AUDIO = {}; GI.reset();
+    const resetSpeak = (huruf) => { resetStage0(); delete store['talaqa.speak']; delete store['talaqa.arcade']; S._reset();
+      store['talaqa.huruf'] = JSON.stringify(huruf || { started: false, passed: {}, exam: {} }); H._reset(); };
+    const noDash = t => !/[–—]/.test(t) && !/ [-‐] /.test(t);
+
+    // first open: both strands, pack 1 open and pack 2 locked, the board still shut
+    resetSpeak();
+    W.ARArcade.board();
+    ok(byCls('arc-first').length === 1 && byCls('sp-strand').length === 2, 'first open shows two strands, Speak and Letters');
+    ok(/Speak/.test(allText()) && /Takallam/.test(allText()) && /Letters/.test(allText()) && /start speaking/i.test(allText()), 'first open names Speak (Takallam) and Letters and says you can start speaking');
+    ok(noDash(allText()), 'no dashes on the first open');
+    ok(S.packOpen(1) && !S.packOpen(2) && !S.packOpen(10), 'pack 1 is open, pack 2 is locked');
+    ok(byCls('arc-tile').length === 0 && !H.unlocked(), 'the board is locked on first open');
+    byCls('arc-mode').filter(b => b.textContent.indexOf('Start speaking') !== -1)[0].click();
+    ok(byCls('sp-card').length === packN(1).ids.length && byCls('hr-start').length === 1, 'pack 1 opens on its card with every phrase');
+    function packN(n) { return W.AR_SPEAK.filter(k => k.n === n)[0]; }
+    { // the card: translit is the main line, the script small above it, English, a note
+      const c = byCls('sp-card')[0];
+      ok(c.all(n => n.cls().includes('sp-ar') && n.attrs.dir === 'rtl').length === 1 && c.all(n => n.cls().includes('sp-tr')).length === 1 && c.all(n => n.cls().includes('sp-en')).length === 1, 'a phrase card has script, sound and English');
+      ok(byCls('arc-chip').map(b => b.textContent).join() === 'Fuṣḥā,Shāmī,Maṣrī' && byCls('arc-chip').filter(b => b.cls().includes('on'))[0].textContent === 'Shāmī', 'the chooser defaults to shāmī');
+      byCls('arc-chip')[2].click();
+      ok(JSON.parse(store['talaqa.arcade']).pv === 'egy' && S.variety() === 'egy', 'the chooser writes the Ibarat variety');
+      byCls('arc-chip')[2].click();
+      store['talaqa.arcade'] = JSON.stringify({ pv: 'all' }); ok(S.variety() === 'lev', "'all' means shāmī for speaking");
+      delete store['talaqa.arcade']; ok(S.variety() === 'lev', 'unset means shāmī');
+      ok(noDash(allText()), 'no dashes on the pack card');
+    }
+    H.markStarted(); W.ARArcade.board();                  // started now: the path with both strands
+    { const packs = byCls('arc-pick').slice(0, 10);
+      ok(byCls('arc-pick').length === 22 && !packs[0].disabled && packs.slice(1).every(b => b.disabled), 'the path lists ten packs and twelve lessons; only pack 1 is open'); }
+
+    // every pack builds ten valid items in each variety
+    let kindsSeen = {}, clipsMissing = 0;
+    for (const pk of S.packs()) for (const v of ['msa', 'lev', 'egy']) {
+      const items = S.packItems(pk.n, v, rng);
+      ok(items.length === 10, `pack ${pk.n} ${v}: ten items, got ${items.length}`);
+      items.forEach(it => {
+        kindsSeen[it.speakKind] = (kindsSeen[it.speakKind] || 0) + 1;
+        if (it.play === 'choose') {
+          ok(it.options.length === 4 && new Set(it.options).size === 4 && it.options.indexOf(it.answer) !== -1, `pack ${pk.n} ${v} ${it.speakKind}: four distinct options with the answer`);
+          ok(it.options.every(o => it.optScript[o]), `pack ${pk.n} ${v} ${it.speakKind}: every option carries its script`);
+          ok(new Set(it.options.map(o => AR.strip(it.optScript[o]))).size === 4, `pack ${pk.n} ${v}: no two options with the same script`);
+        } else if (it.play === 'build') {
+          ok(it.latin && it.words.length >= 2 && it.words.join(' ') === it.answer, `pack ${pk.n} ${v}: build tiles make the answer`);
+        } else ok(it.play === 'say' && it.self && !it.id, `pack ${pk.n} ${v}: a say item is self-marked and has no SRS id`);
+        ok(it.id == null || it.id.indexOf('sp:') === 0 && it.id.split(':')[2] === v, 'SRS ids are sp:<phrase>:<variety>');
+      });
+      ok(items.filter(i => i.self).length >= 1 && items.filter(i => !i.self).length >= 7, `pack ${pk.n} ${v}: some say, mostly graded`);
+    }
+    ok(['pick', 'build', 'say', 'reply'].every(k => kindsSeen[k] > 0), 'all four kinds are dealt: ' + JSON.stringify(kindsSeen));
+    ok(kindsSeen.pick + kindsSeen.build + kindsSeen.reply + kindsSeen.say === 300, 'ten items for every pack and variety');
+    { // a reply: the next line of the dialogue is the answer
+      const it = S.packItems(1, 'lev', rng).filter(i => i.speakKind === 'reply')[0];
+      const d = packN(1).dialogue, ids = d.map(x => x.id);
+      const ph = id => W.AR_PHRASES.filter(p => p.id === id)[0];
+      const ix = d.findIndex((x, i) => ph(x.id).en === it.prompt && ph(ids[i + 1]) && S.trOf(ph(ids[i + 1]), 'lev') === it.answer);
+      ok(ix !== -1 && /^They said: /.test(it.note), 'a reply item answers with the next dialogue line');
+      ok(S.packItems(1, 'lev', rng).every(i => i.speakKind !== 'reply' || i.options.indexOf(i.answer) !== -1), 'replies carry the answer');
+    }
+    // the clip falls back to the fuṣḥā one
+    { const p = W.AR_PHRASES.filter(x => x.id === 'marhaba')[0] || W.AR_PHRASES[0];
+      W.AR_AUDIO = {}; ok(S.clip(p, 'lev') === null, 'no clip, no speaker');
+      W.AR_AUDIO[p.msa + '|msa'] = 'audio/x.bin#0,4';
+      const c = S.clip(p, 'egy'); ok(c && c.t === p.msa && c.v === 'msa', 'a missing dialect clip falls back to the fuṣḥā one');
+      W.AR_AUDIO = {}; }
+
+    // driving a pack round through the real engine
+    const sAnswer = async (right, sayGot) => {
+      const it = S.last(), before = it;
+      if (it.play === 'say') {
+        byCls('g-say-listen')[0].click();
+        ok(byCls('g-say-card').length === 1 && byCls('g-say-tr')[0].textContent === it.trAnswer, 'Listen reveals the sound, the script and the English');
+        const marks = byCls('g-say-marks')[0].all(n => n.tagName === 'BUTTON');
+        marks.filter(b => b.textContent === (sayGot ? 'Got it' : 'Not yet'))[0].click();
+      } else if (it.play === 'choose') {
+        const opts = byCls('g-opt');
+        (right ? opts.filter(o => o._val === it.answer) : opts.filter(o => o._val !== it.answer))[0].click();
+      } else {
+        const chips = byCls('g-chip').filter(c => c._word !== undefined);
+        const order = right ? it.words.slice() : it.words.slice().reverse();
+        if (!right && order.join(' ') === it.answer) order.push(order.shift());
+        const used = new Set();
+        order.forEach(w => { const c = chips.filter(x => !used.has(x) && x._word === w)[0]; used.add(c); c.click(); });
+      }
+      await waitFor(() => overEl() || byCls('g-continue').length || S.last() !== before, 3000, 'the speak item to resolve');
+      if (byCls('g-continue').length && !overEl()) byCls('g-continue')[0].click();
+      await waitFor(() => overEl() || S.last() !== before, 3000, 'the next speak item');
+    };
+    // all right, and every say item marked "Not yet": still passes, and nothing is learnt
+    resetSpeak({ started: true, passed: {}, exam: {} });
+    wipeSrs();
+    S.startRound(1);
+    await waitFor(() => S.last(), 1000, 'the speak round to start');
+    ok(byCls('g-name')[0].textContent === 'Speak 1', 'the round is titled with its pack');
+    const dealtIds = [];
+    for (let i = 0; i < 10; i++) { dealtIds.push(S.last()); await sAnswer(true, false); }
+    ok(!!overEl() && /Pack 1 passed: \d+ of \d+/.test(overEl().textContent) && S.packDone(1) && S.packOpen(2) && !S.packOpen(3), 'all graded items right passes pack 1 and opens pack 2');
+    ok(JSON.parse(store['talaqa.speak']).passed[1] === true, 'progress is kept in talaqa.speak');
+    ok(byCls('arc-btn').some(b => b.textContent === 'Next pack →'), 'the end screen offers the next pack');
+    const says = dealtIds.filter(i => i.play === 'say');
+    ok(says.length >= 1 && says.every(i => !i.id), 'say items carry no SRS id');
+    const sp = Object.keys(JSON.parse(store['talaqa.srs'] || '{}')).filter(k => k.indexOf('sp:') === 0);
+    ok(sp.length > 0 && sp.every(k => !SRS.isLearnt(k)), 'graded speak items are in the SRS, none of them learnt');
+    ok(sp.every(k => /^sp:[^:]+:lev$/.test(k)), 'SRS ids look like sp:<phrase>:lev');
+    ok(!H.unlocked(), 'the board stays locked while a pack is passed');
+    W.ARArcade.board(); ok(byCls('arc-tile').length === 0, 'and no board tiles are shown');
+
+    // say items alone do not pass a pack: all marked "Got it", graded ones wrong
+    wipeSrs();
+    S.startRound(2);
+    await waitFor(() => S.last(), 1000, 'the second speak round');
+    for (let i = 0; i < 10; i++) await sAnswer(false, true);
+    ok(!!overEl() && /are needed to pass/.test(overEl().textContent) && !S.packDone(2) && !S.packOpen(3), 'self-marked "Got it" never helps a pack pass');
+    ok(Object.keys(JSON.parse(store['talaqa.srs'] || '{}')).every(k => !SRS.isLearnt(k)), 'say items make nothing learnt');
+    ok(noDash(allText()), 'no dashes on the end screen');
+    // seven of eight graded passes (87%), six does not
+    wipeSrs();
+    S.startRound(2);
+    await waitFor(() => S.last(), 1000, 'the third speak round');
+    let gi = 0;
+    for (let i = 0; i < 10; i++) { const self = S.last().self; await sAnswer(self || gi++ !== 0, true); }
+    ok(!!overEl() && S.packDone(2), 'one miss in eight graded items still passes');
+
+    // after the exam the board is open and the Speak tile sits beside the Ḥurūf tile
+    resetSpeak({ started: true, passed: {}, exam: { passed: true } });
+    W.ARArcade.board();
+    { const pair = byCls('arc-row2')[0];
+      ok(pair && pair.all(n => n.cls().includes('arc-tile')).length === 2 && /Takallam/.test(pair.textContent) && /Ḥurūf/.test(pair.textContent), 'the Speak tile sits beside the Ḥurūf tile');
+      pair.all(n => n.cls().includes('arc-tile')).filter(t => /Takallam/.test(t.textContent))[0].click();
+      ok(byCls('arc-pick').length === 10 && !byCls('arc-pick')[0].disabled && byCls('arc-pick')[1].disabled, 'the Speak tile opens the packs, pack 1 open'); }
+
+    // Ibarat script fade
+    W.AR_PHRASES = keepPh; GI.reset(); W.Profile.set('B2'); wipeSrs();
+    W.AR_PHRASES[0].tr = { msa: 'as-salāmu ʿalaykum', lev: 'marḥaba', egy: 'ahlan' };
+    const draw1 = () => GI.next('ibarat', 1, rng, { pv: 'lev', grind: { asked: 0, newN: 0, used: {} }, count: 10, gkind: 'ibarat' });
+    let before = [], tries = 0;
+    while (tries++ < 60 && before.length < 12) before.push(draw1());
+    ok(before.length > 5 && before.every(i => i.trAnswer), 'before a phrase is known, its transliteration comes with it');
+    { const ch = before.filter(i => i.play === 'choose');
+      ok(ch.length > 0 && ch.every(i => i.options.every(o => i.optTr && i.optTr[o])), 'tapped options show a transliteration under the Arabic');
+      const h = before.filter(i => i.id === 'p:hello')[0];
+      if (h && h.play === 'choose') ok(h.optTr[h.answer] === 'marḥaba', 'the hand-written transliteration is used');
+      ok(AR.translit('مَرْحَبًا') !== 'zzz', 'machine translit exists as the fallback'); }
+    W.AR_PHRASES.forEach(p => { SRS.enrol('p:' + p.id); SRS.grade('p:' + p.id, true); });
+    W.AR_PHRASES.forEach(p => ok(GI.answeredRight('p:' + p.id), 'phrase ' + p.id + ' is known'));
+    const after = []; for (let i = 0; i < 30; i++) { const it = draw1(); if (it) after.push(it); }
+    ok(after.length > 10 && after.every(i => !i.trAnswer && !i.optTr), 'once the phrase is known the Arabic stands alone');
+    { const hello = [].concat(before, after).filter(i => i.id === 'p:hello'); ok(hello.length > 0, 'the hello phrase was dealt'); }
+
+    // the knowns screen uses the hand-written transliteration
+    store['talaqa.arcade'] = JSON.stringify({ pv: 'lev' });
+    W.ARArcade.knownScreen({ hue: '#b06ad6' });
+    ok(allText().indexOf('marḥaba') !== -1, 'the phrases you know screen shows p.tr when there is one');
+    delete store['talaqa.arcade'];
+    W.AR_PHRASES = keepPh; W.AR_AUDIO = keepAu;
+    resetStage0(); delete store['talaqa.speak']; S._reset();
+  }
 
   // ---- storage: nothing foreign -------------------------------------------------------------------------------------------------------------------------------------
   const keys = [...new Set(written)];

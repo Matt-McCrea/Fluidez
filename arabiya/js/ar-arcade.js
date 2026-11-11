@@ -140,7 +140,10 @@
 
     wrap.appendChild(tileRow('arc-grid arc-row3', GAMES.slice(1, 4)));
     wrap.appendChild(tileRow('arc-grid arc-row4', GAMES.slice(4, 8)));
-    wrap.appendChild(hurufTile(GAMES[8]));
+    var pair = el('div', 'arc-grid arc-row2');
+    pair.appendChild(hurufTile(GAMES[8]));
+    if (window.ARSpeak) pair.appendChild(speakTile());
+    wrap.appendChild(pair);
     wrap.appendChild(progressPanel());
 
     wrap.appendChild(el('div', 'arc-foot',
@@ -179,6 +182,16 @@
     tile.style.setProperty('--g', g.hue);
     tileLabel(g, tile);
     tile.addEventListener('click', function () { pushView('huruf'); window.ARHuruf.path(); });
+    return tile;
+  }
+
+  function speakTile() {
+    var N = window.ARSpeak.NAME;
+    var tile = el('button', 'arc-tile arc-small');
+    tile.type = 'button';
+    tile.style.setProperty('--g', window.ARSpeak.HUE);
+    tileLabel({ ar: N.ar, tr: N.tr, en: N.en }, tile);
+    tile.addEventListener('click', function () { pushView('speak'); window.ARSpeak.home(); });
     return tile;
   }
 
@@ -628,14 +641,14 @@
         txt.appendChild(el('span', 'arc-known-en', e.en));
         var tx = textOf(e), tw = el('span', 'arc-known-tx');
         tw.appendChild(UI.ar(tx));
-        tw.appendChild(UI.tr(window.AR.translit(tx), 'block'));
+        tw.appendChild(UI.tr(GI.trOf(e.raw, v), 'block'));
         txt.appendChild(tw);
         row.appendChild(cb); row.appendChild(txt);
         cb.addEventListener('change', function () {
           if (cb.checked) S.learn(e.id); else S.unlearn(e.id);
           paint();
         });
-        var it = { e: e, cb: cb, row: row, hay: (e.en + ' ' + textOf(e) + ' ' + window.AR.translit(textOf(e))).toLowerCase() };
+        var it = { e: e, cb: cb, row: row, hay: (e.en + ' ' + textOf(e) + ' ' + GI.trOf(e.raw, v)).toLowerCase() };
         gr.items.push(it); all.push(it);
         gr.box.appendChild(row);
       });

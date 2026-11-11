@@ -421,7 +421,7 @@ window.GameRound = (function () {
       itemWindow = perItemClock ? suddenWindow(runLen) : GS.limitFor(item) * 3;
       renderItem(item);
     }
-    function keyOf(it) { return (it.prompt || '') + '|' + (it.ar || it.answer || '') + '|' + (it.variety || '') + (it.hear ? 'h' : ''); }
+    function keyOf(it) { if (it.key) return it.key; return (it.prompt || '') + '|' + (it.ar || it.answer || '') + '|' + (it.variety || '') + (it.hear ? 'h' : ''); }
 
     function timeOut() { if (!resolved) resolve('wrong', true); }
 
@@ -435,6 +435,13 @@ window.GameRound = (function () {
       comboBefore = combo;
       rungBefore = rung;
       seen++;
+      /* A self-marked item (Speak, "say it"): the learner's own verdict. It scores nothing, never
+       * touches the SRS or the error log, and goes straight on; cfg.onResolve still hears of it. */
+      if (item.self) {
+        if (cfg.onResolve) cfg.onResolve(item, result);
+        setTimeout(function () { if (!ended) nextItem(); }, 0);
+        return;
+      }
       var a = cfg.award ? cfg.award(item, result, ms, combo) : GS.award(item, result, ms, combo);
 
       if (result === 'wrong') {
@@ -646,6 +653,7 @@ window.GameRound = (function () {
       hideTypeBox();
       if (item.play === 'choose') return renderChoose(item);
       if (item.play === 'build') return item.tiles ? renderTiles(item) : renderBuild(item);
+      if (item.play === 'say') return renderSay(item);
       showTypeBox();
       kbdGuide();
       return renderType(item);
@@ -750,7 +758,12 @@ window.GameRound = (function () {
       var b = el('button', 'g-opt');
       b.type = 'button';
       b._val = o;
-      if (item.optAr) {
+      if (item.optScript && item.optScript[o]) {
+        // Speak: the sound (transliteration) is the main line, the script small above it
+        b.classList.add('has-sp');
+        b.appendChild(UI.ar(item.optScript[o], 'sp-ar'));
+        b.appendChild(el('span', 'sp-tr', o));
+      } else if (item.optAr) {
         b.classList.add('has-ar');
         if (item.optBig) b.classList.add('big');
         b.appendChild(UI.arText(o, item.level, item.helps && item.helps[o], item.optBig ? 'big' : null));
@@ -781,7 +794,41 @@ window.GameRound = (function () {
         opts.appendChild(b);
       });
       itemHost.appendChild(opts);
-      if (item.hear && window.AR && AR.play) AR.play(item.promptSay.t, item.promptSay.v);
+      if ((item.hear || item.playPrompt) && item.promptSay && window.AR && AR.play) AR.play(item.promptSay.t, item.promptSay.v);
+    }
+
+    /* Speak, "say it": the English, then Listen reveals the sound, the script and the English,
+     * and the learner marks themselves. Self-marked: see resolve(). */
+    function renderSay(item) {
+      itemHost.appendChild(promptEl(item));
+      var sub = el('div', 'g-sub', 'Say it out loud, then listen');
+      itemHost.appendChild(sub);
+      var box = el('div', 'g-say');
+      var cardHost = el('div', 'g-say-slot');
+      var listen = el('button', 'arc-btn on g-say-listen', 'Listen');
+      listen.type = 'button';
+      var marks = el('div', 'g-fb-actions g-say-marks');
+      marks.hidden = true;
+      var got = el('button', 'g-continue', 'Got it'), not = el('button', 'g-peek', 'Not yet');
+      got.type = 'button'; not.type = 'button';
+      function mark(ok) { if (!resolved) resolve(ok ? 'good' : 'wrong'); }
+      got.addEventListener('click', function () { mark(true); });
+      not.addEventListener('click', function () { mark(false); });
+      marks.appendChild(got); marks.appendChild(not);
+      listen.addEventListener('click', function () {
+        if (item.say && window.AR && AR.play) AR.play(item.say.t, item.say.v);
+        if (cardHost.firstChild) return;
+        var card = el('div', 'g-say-card');
+        card.appendChild(el('div', 'g-say-tr', item.trAnswer || ''));
+        if (item.ar) card.appendChild(UI.ar(item.sayAr || item.ar, 'sp-ar'));
+        card.appendChild(el('div', 'g-say-en', item.en || item.prompt));
+        cardHost.appendChild(card);
+        marks.hidden = false;
+      });
+      box.appendChild(listen);
+      box.appendChild(cardHost);
+      box.appendChild(marks);
+      itemHost.appendChild(box);
     }
 
     /* Resolves the instant it is right, no Enter and no submit button. The
@@ -815,14 +862,17 @@ window.GameRound = (function () {
     function renderBuild(item) {
       itemHost.appendChild(promptEl(item, 'build'));
       var lineEl = el('div', 'g-build');
-      lineEl.setAttribute('dir', 'rtl');
       var bank = el('div', 'g-bank');
-      bank.setAttribute('dir', 'rtl');
+      // Speak builds in transliteration: Latin tiles, left to right
+      var dir = item.latin ? 'ltr' : 'rtl';
+      lineEl.setAttribute('dir', dir);
+      bank.setAttribute('dir', dir);
       var built = [];
       function chipNode(w, cls) {
         var c = el('button', cls);
         c.type = 'button';
-        c.appendChild(UI.arText(w, item.level, null));
+        if (item.latin) c.textContent = w;
+        else c.appendChild(UI.arText(w, item.level, null));
         return c;
       }
       var chips = GC.shuffle(item.words.slice()).map(function (w, idx) {
@@ -834,7 +884,7 @@ window.GameRound = (function () {
           built.push(idx); draw();
           if (built.length === item.words.length) {
             var said = built.map(function (i) { return chips[i]._word; }).join(' ');
-            var r = GI.grade(item, said);
+            var r = item.latin ? (said === item.answer ? 'good' : 'wrong') : GI.grade(item, said);
             var ok = r !== 'wrong';
             lastTyped = said;                 // so the correction can show it
             lineEl.classList.add(ok ? 'right' : 'wrong');
@@ -851,7 +901,7 @@ window.GameRound = (function () {
           c.addEventListener('click', function () { if (resolved) return; built.splice(pos, 1); draw(); });
           lineEl.appendChild(c);
         });
-        if (!built.length) lineEl.appendChild(el('span', 'g-build-hint', 'tap the words in order, from the right'));
+        if (!built.length) lineEl.appendChild(el('span', 'g-build-hint', (item.latin ? 'tap the words in order' : 'tap the words in order, from the right')));
         chips.forEach(function (c, idx) {
           var used = built.indexOf(idx) !== -1;
           c.classList.toggle('used', used);

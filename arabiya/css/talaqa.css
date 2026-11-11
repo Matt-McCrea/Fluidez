@@ -849,3 +849,31 @@ b.arc-ct-c { color:var(--muted); font-weight:600; }
 .arc-known-en { font-weight:600; }
 .arc-known-tx { color:var(--muted); }
 .arc-known-row[hidden], .arc-known-group[hidden] { display:none; }
+
+/* ---- Speak: the second strand of stage 0 (js/ar-speak.js) -------------------- */
+.sp-strand { display:flex; align-items:baseline; gap:10px; margin:22px 0 10px; padding-bottom:6px; border-bottom:1px solid var(--border); }
+.sp-strand b { font-size:1.05rem; font-weight:800; }
+.sp-strand .ar { font-size:1.1em; color:var(--accent); }
+.sp-strand .tr { margin-left:auto; }
+.arc-first .sp-strand { text-align:left; }
+.sp-modes { margin-top:8px; text-align:left; }
+.arc-speak .arc-picks { margin-bottom:10px; }
+.sp-help { color:var(--muted); font-size:.76rem; line-height:1.5; margin:8px 0 0; }
+.sp-cards { display:flex; flex-direction:column; gap:10px; }
+.sp-card { position:relative; background:var(--panel); border:1px solid var(--border); border-radius:var(--radius); padding:14px 56px 14px 16px; text-align:left; }
+.sp-card .spk { position:absolute; top:10px; right:6px; }
+.sp-ar.ar { display:block; font-size:1.05em; line-height:1.6; color:var(--muted); text-align:left; }
+.sp-tr { font-size:1.3rem; font-weight:750; line-height:1.3; margin:2px 0; }
+.sp-en { font-size:.86rem; color:var(--muted); }
+.sp-note { font-size:.78rem; color:var(--muted); line-height:1.5; margin:8px 0 0; }
+.g-opt.has-sp { display:flex; flex-direction:column; align-items:flex-start; gap:1px; }
+.g-opt.has-sp .sp-ar.ar { font-size:.95em; line-height:1.5; }
+.g-opt.has-sp .sp-tr { font-size:1.12rem; margin:0; }
+.g-say { display:flex; flex-direction:column; align-items:stretch; gap:14px; margin-top:16px; }
+.g-say-card { background:var(--panel); border:1px solid var(--border); border-radius:var(--radius); padding:14px 16px; text-align:center; }
+.g-say-card .sp-ar.ar { text-align:center; }
+.g-say-tr { font-size:1.35rem; font-weight:750; }
+.g-say-en { font-size:.86rem; color:var(--muted); margin-top:4px; }
+.g-say-marks { display:flex; gap:10px; justify-content:center; }
+.arc-grid.arc-row2 { margin-top:10px; gap:10px; }
+.arc-row2 .arc-small { margin-top:0; }

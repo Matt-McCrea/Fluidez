@@ -322,6 +322,11 @@ window.ARItems = (function () {
     return String(t).replace(/[.,;:!?؟،؛"“”«»]/g, '').replace(/\s+/g, ' ').trim().split(' ');
   }
   function textOf(p, v) { return (p[v] && String(p[v]).trim()) || p.msa; }
+  /* The hand-written transliteration of a phrase in a variety, else the machine one. */
+  function trOf(p, v) {
+    var t = p.tr && (p.tr[v] || (!(p[v] && String(p[v]).trim()) ? p.tr.msa : ''));
+    return t || AR.translit(textOf(p, v));
+  }
   function phraseList() {
     var src = window.AR_PHRASES || [];
     if (PL && PL_KEY === src && PL.n === src.length) return PL;
@@ -363,7 +368,7 @@ window.ARItems = (function () {
       var pool = shuffle(stages[s]().slice(), rng);
       for (var i = 0; i < pool.length && chosen.length < 3; i++) if (ok(pool[i])) chosen.push({ o: pool[i], t: textOf(pool[i].raw, v) });
     }
-    return chosen.length === 3 ? chosen.map(function (c) { return c.t; }) : null;
+    return chosen.length === 3 ? chosen.map(function (c) { return { t: c.t, tr: trOf(c.o.raw, v) }; }) : null;
   }
   /* The variety to ask: the chooser's pick, or all three in turn. */
   function varietyFor(opts, st, rng) {
@@ -396,6 +401,9 @@ window.ARItems = (function () {
       prompt: e.en, answer: text, accept: [text].concat(e.alt[v] || []), level: GC.sentenceLevel(e.b), optAr: true,
       grind: p.mode, firstSight: p.mode === 'new', rank: e.rank + 1, noteOnRight: !!e.note,
       variety: v, others: others, say: { t: text, v: v } };
+    /* Script fade: the sound sits under the Arabic until the phrase is known, then the Arabic stands alone. */
+    var showTr = !known;
+    if (showTr) item.trAnswer = trOf(raw, v);
     if (known && n <= 5) { item.play = 'type'; return item; }
     if (known && n <= 8) {
       item.play = 'build'; item.words = phraseWords(text); item.answer = item.words.join(' '); item.reveal = text;
@@ -404,7 +412,12 @@ window.ARItems = (function () {
     var wrong = phraseDistractors(e, v, G, rng);
     if (!wrong) return null;
     item.play = 'choose';
-    item.options = shuffle([text].concat(wrong), rng);
+    item.options = shuffle([text].concat(wrong.map(function (w) { return w.t; })), rng);
+    if (showTr) {
+      item.optTr = {};
+      item.optTr[text] = trOf(raw, v);
+      wrong.forEach(function (w) { item.optTr[w.t] = w.tr; });
+    }
     return item;
   }
 
@@ -531,6 +544,6 @@ window.ARItems = (function () {
     bankCount: bankCount, bank: bank, topicsOf: topicsOf, gapId: gapId,
     coverage: coverage, phraseCoverage: phraseCoverage, verbsKnown: verbsKnown, gapCoverage: gapCoverage,
     grindThemes: grindThemes, grindList: wordList, phraseList: phraseList, prettyTheme: prettyTheme, thousands: thousands,
-    textOf: textOf
+    textOf: textOf, trOf: trOf
   };
 })();
