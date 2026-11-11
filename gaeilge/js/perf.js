@@ -3,7 +3,7 @@
  * sw.js (tools/test-gaeilge-app.js checks), so the screen says which code runs.
  * ========================================================================== */
 window.Perf = (function () {
-  var BUILD = 'l2e9e232b';
+  var BUILD = 'lfedcf48b';
   var LIMIT = 40;
   var log = [];
   var now = (typeof performance !== 'undefined' && performance.now)

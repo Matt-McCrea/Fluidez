@@ -10,7 +10,7 @@
  *
  * ASSETS must mirror every <script>/<link> in index.html plus the data files.
  * ========================================================================== */
-var CACHE_VERSION = 'l2e9e232b';
+var CACHE_VERSION = 'lfedcf48b';
 var CACHE_NAME = 'liofa-' + CACHE_VERSION;
 
 var ASSETS = [
