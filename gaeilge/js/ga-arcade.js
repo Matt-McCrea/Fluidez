@@ -259,6 +259,7 @@
 
     if (g.key === 'frasai') {
       wrap.appendChild(el('div', 'arc-progress')).appendChild(el('div', 'arc-progress-all', GI.phraseCoverage().text));
+      wrap.appendChild(button('arc-wtbtn', 'Tick the phrases you know', function () { knownScreen(g); }));
     }
 
     if (g.key === 'focail') {
@@ -627,6 +628,91 @@
   function cardLang() { var a = loadArc(); return a.cl === 'ga' || a.cl === 'en' ? a.cl : (bandIx() >= 2 ? 'ga' : 'en'); }
   function pickL(o, lang) { return o ? (o[lang] || o.en || o.ga || '') : ''; }
 
+  /* ---- tick the phrases you know ---------------------------------------------------
+   * One list of every phrase, grouped by theme in band order. Ticking calls SRS.learn (the
+   * phrase is never dealt again); unticking calls SRS.unlearn (the record goes, so it is new). */
+  var KNOWN_THEMES = { aimsir: 'Weather', am: 'Time', baile: 'At home', beannachtai: 'Greetings', cabhair: 'Asking for help', ceiliuradh: 'Celebrations', comhra: 'Conversation', mise: 'About me', mothu: 'Feelings', rang: 'In class', siopa: 'Shopping' };
+  function knownThemeLabel(id) { return KNOWN_THEMES[id] || GI.prettyTheme(id); }
+  function knownScreen(g) {
+    VIEW = 'known';            // keeps the sheet's history entry: back returns to the sheet
+    var h = host(); clear(h);
+    var BANDS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+    var G = GI.phraseList(), S = window.SRS;
+
+    var wrap = el('div', 'arc-stats arc-known');
+    wrap.style.setProperty('--g', g.hue);
+    wrap.appendChild(topBar('Phrases you know', null, function () { sheet(g, true); }));
+    wrap.appendChild(el('p', 'arc-sub', 'Tick any phrase you already know. Ticked phrases are never asked again. Untick one to bring it back as new.'));
+    var box = el('input', 'arc-wt-input arc-known-search');
+    box.type = 'search'; box.placeholder = 'Search the phrases'; box.setAttribute('aria-label', 'Search the phrases');
+    wrap.appendChild(box);
+    var groups = {}, order = [];
+    G.list.forEach(function (e) {
+      var gr = groups[e.th];
+      if (!gr) { gr = groups[e.th] = { th: e.th, rows: [], ix: 9 }; order.push(gr); }
+      gr.rows.push(e);
+      gr.ix = Math.min(gr.ix, Math.max(0, BANDS.indexOf(e.b)));
+    });
+    order.forEach(function (gr, i) { gr.first = i; });
+    order.sort(function (a, b) { return a.ix - b.ix || a.first - b.first; });
+    var all = [];
+    var list = el('div', 'arc-known-list');
+    order.forEach(function (gr) {
+      gr.rows.sort(function (a, b) { return BANDS.indexOf(a.b) - BANDS.indexOf(b.b); });
+      gr.box = el('section', 'arc-known-group');
+      var head = el('div', 'arc-known-head');
+      head.appendChild(el('h3', null, knownThemeLabel(gr.th)));
+      var tl = el('label', 'arc-known-all');
+      gr.tog = el('input'); gr.tog.type = 'checkbox';
+      tl.appendChild(gr.tog); tl.appendChild(el('span', null, 'I know all of these'));
+      head.appendChild(tl);
+      gr.box.appendChild(head);
+      gr.items = [];
+      gr.rows.forEach(function (e) {
+        var row = el('label', 'arc-known-row');
+        var cb = el('input'); cb.type = 'checkbox';
+        var txt = el('span', 'arc-known-txt');
+        txt.appendChild(el('span', 'arc-known-en', e.en));
+        txt.appendChild(el('span', 'arc-known-tx', e.ga));
+        row.appendChild(cb); row.appendChild(txt);
+        cb.addEventListener('change', function () {
+          if (cb.checked) S.learn(e.id); else S.unlearn(e.id);
+          paint();
+        });
+        var it = { e: e, cb: cb, row: row, hay: (e.en + ' ' + e.ga).toLowerCase() };
+        gr.items.push(it); all.push(it);
+        gr.box.appendChild(row);
+      });
+      gr.tog.addEventListener('change', function () {
+        gr.items.forEach(function (it) {
+          if (it.row.hidden) return;
+          var on = S.isLearnt(it.e.id);
+          if (gr.tog.checked && !on) S.learn(it.e.id);
+          else if (!gr.tog.checked && on) S.unlearn(it.e.id);
+        });
+        paint();
+      });
+      list.appendChild(gr.box);
+    });
+    wrap.appendChild(list);
+    function paint() {
+      var q = box.value.trim().toLowerCase();
+      order.forEach(function (gr) {
+        var shown = 0, ticked = 0;
+        gr.items.forEach(function (it) {
+          it.cb.checked = S.isLearnt(it.e.id);
+          it.row.hidden = !!q && it.hay.indexOf(q) === -1;
+          if (!it.row.hidden) { shown++; if (it.cb.checked) ticked++; }
+        });
+        gr.box.hidden = shown === 0;
+        gr.tog.checked = shown > 0 && ticked === shown;
+      });
+    }
+    box.addEventListener('input', paint);
+    paint();
+    h.appendChild(wrap);
+  }
+
   function cardScreen(key, unit) {
     var c = window.GA_CARDS && window.GA_CARDS[key];
     pushView('card');
@@ -902,7 +988,7 @@
     }
   }
 
-  window.GAArcade = { board: board, placement: placement, cardScreen: cardScreen, checkRun: checkRun,
+  window.GAArcade = { board: board, placement: placement, knownScreen: knownScreen, cardScreen: cardScreen, checkRun: checkRun,
     wordTest: wordTest, sheet: sheet, GAMES: GAMES, levelPicker: levelPicker };
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);

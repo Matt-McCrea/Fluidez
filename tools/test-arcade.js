@@ -1500,6 +1500,22 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
       W.Profile.set('B1'); GI.reset();
     }
 
+    // Frases: ticking a phrase as known (SRS.learn) skips it; unticking (SRS.unlearn) brings it back as new
+    {
+      localStorage.removeItem('fluidez.srs'); W.SRS._reset();
+      W.Profile.set('A1'); GI.reset();
+      const PL0 = GI.phraseList().list, a = PL0[0], b = PL0[1];
+      PL0.slice(2).forEach(e => W.SRS.learn(e.id));
+      const deal = () => { const seen = {}; for (let i = 0; i < 80; i++) { const it = GI.next('sphrase', 1, rng, { grind: { asked: 0, newN: 0, used: {} }, count: 10, gkind: 'sphrase' }); if (it) seen[it.id] = 1; } return seen; };
+      ok(deal()[a.id], 'before ticking, the phrase can be dealt');
+      W.SRS.learn(a.id);
+      ok(W.SRS.isLearnt(a.id) && !deal()[a.id], 'a ticked phrase was dealt again');
+      W.SRS.unlearn(a.id);
+      ok(!W.SRS.isLearnt(a.id) && !W.SRS.isEnrolled(a.id) && deal()[a.id], 'an unticked phrase did not come back');
+      ok(W.SRS.isLearnt(PL0[2].id), 'unlearn touched another phrase');
+      localStorage.removeItem('fluidez.srs'); W.SRS._reset(); GI.reset();
+    }
+
     // Frases: the grind over data/phrases.js. Tapped first, then typed (6 words or fewer) or built (7 to 8)
     {
       const P = W.PHRASES, PL = GI.phraseList().list;

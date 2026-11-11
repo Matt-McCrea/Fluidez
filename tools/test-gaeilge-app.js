@@ -328,6 +328,30 @@ W.Profile.set('B2');                                  // widest pool
   ok(!GI.knownCard({ reps: 3, passed: false, consecMiss: 2 }), 'reps > 0 is not "known"');
 }
 
+// ---- ticking a phrase as known skips it; unticking brings it back ------------------------------------------------------------
+{
+  store['liofa.srs'] = '{}'; SRS._reset();
+  W.Profile.set('A1');
+  const PL0 = GI.phraseList().list, a = PL0[0];
+  PL0.slice(1).forEach(e => SRS.learn(e.id));
+  const deal = () => { let hit = false; for (let i = 0; i < 80; i++) { const it = GI.next('frasai', 1, rng, { grind: { asked: 0, newN: 0, used: {} } }); if (it && it.id === a.id) hit = true; } return hit; };
+  ok(deal(), 'before ticking, the phrase can be dealt');
+  SRS.learn(a.id);
+  ok(SRS.isLearnt(a.id) && !deal(), 'a ticked phrase was dealt again');
+  SRS.unlearn(a.id);
+  ok(!SRS.isLearnt(a.id) && !SRS.isEnrolled(a.id) && deal(), 'an unticked phrase did not come back');
+  ok(SRS.isLearnt(PL0[1].id), 'unlearn touched another phrase');
+  // the tick screen: a row per phrase, ticked when learnt; ticking and unticking go through the SRS
+  W.GAArcade.knownScreen({ key: 'x', hue: '#fff' });
+  const boxes = STAGE.all(n => n.cls().includes('arc-known-row')).map(r => r.all(c => c.tagName === 'INPUT')[0]);
+  ok(boxes.length === PL0.length && boxes.slice(1).every(b => b.checked) && !boxes[0].checked, 'the tick screen lists every phrase, ticked when learnt');
+  boxes[0].checked = true; boxes[0]._on.change.forEach(fn => fn());
+  ok(SRS.isLearnt(a.id), 'ticking a row learns the phrase');
+  boxes[0].checked = false; boxes[0]._on.change.forEach(fn => fn());
+  ok(!SRS.isLearnt(a.id) && !SRS.isEnrolled(a.id), 'unticking a row clears it');
+  store['liofa.srs'] = '{}'; SRS._reset();
+}
+
 // ---- the word grind and phrases -------------------------------------------------------------------------------------------
 {
   const st = { asked: 0, newN: 0, used: {} }, firsts = [];

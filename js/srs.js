@@ -324,6 +324,12 @@ window.SRS = (function () {
     if (it.fs) it.fs.due = midnightMs(it.due);
     s[id] = it; save(s);
   }
+  /* unlearn(id): drop the record entirely, so the item comes back as new (ticking a phrase by mistake). */
+  function unlearn(id) {
+    if (id === META) return;
+    var s = load();
+    if (s[id]) { delete s[id]; save(s); }
+  }
   function boxOf(id) { var it = state(id); return it ? it.box : 0; }   // 0 = new / fragile; derived from stability
   function isDominado() { return false; }                              // retired for good; see learnt
   function isLeech(id) { var it = state(id); return !!it && it.leech; }
@@ -497,7 +503,7 @@ window.SRS = (function () {
 
   return {
     enrol: enrol, grade: grade, reviewLogKey: LOG_KEY, isDue: isDue, isEnrolled: isEnrolled, boxOf: boxOf,
-    isDominado: isDominado, isLearnt: isLearnt, learn: learn, isLeech: isLeech, lapsesOf: lapsesOf, passed: passed, stabilityOf: stabilityOf,
+    isDominado: isDominado, isLearnt: isLearnt, learn: learn, unlearn: unlearn, isLeech: isLeech, lapsesOf: lapsesOf, passed: passed, stabilityOf: stabilityOf,
     batch: batch, duePriority: duePriority, freshItems: freshItems,
     dueCount: dueCount, enrolledCount: enrolledCount, today: today,
     plan: plan, computePlan: computePlan, noteNew: noteNew, zeroStreak: zeroStreak, secondsPerCard: secondsPerCard,

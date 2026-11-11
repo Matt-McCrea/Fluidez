@@ -138,6 +138,12 @@ window.SRS = (function () {
     it.last = td; it.learnt = true; it.learntAt = td; it.due = td + LEARNT_DUE; it.box = Math.max(it.box || 0, 9);
     s[id] = it; save(s);
   }
+  /* unlearn(id): drop the record entirely, so the item comes back as new (ticking a phrase by mistake). */
+  function unlearn(id) {
+    if (id === META) return;
+    var s = load();
+    if (s[id]) { delete s[id]; save(s); }
+  }
   function boxOf(id) { var it = state(id); return it ? it.box : 0; }
   function isLeech(id) { var it = state(id); return !!it && it.leech; }
   function lapsesOf(id) { var it = state(id); return it ? it.lapses : 0; }
@@ -145,7 +151,7 @@ window.SRS = (function () {
   function enrolledCount() { return Object.keys(load()).filter(function (k) { return k !== META; }).length; }
 
   return {
-    enrol: enrol, grade: grade, isDue: isDue, isEnrolled: isEnrolled, isLearnt: isLearnt, learn: learn,
+    enrol: enrol, grade: grade, isDue: isDue, isEnrolled: isEnrolled, isLearnt: isLearnt, learn: learn, unlearn: unlearn,
     state: state, boxOf: boxOf, isLeech: isLeech, lapsesOf: lapsesOf, passed: passed,
     enrolledCount: enrolledCount, today: today, reviewLogKey: LOG_KEY, KEY: KEY,
     _reset: function () { _cache = null; }

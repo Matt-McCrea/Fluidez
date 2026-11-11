@@ -743,3 +743,15 @@ b.arc-ct-c { color:var(--muted); font-weight:600; }
 
 @media (prefers-reduced-motion:reduce) { .arc-tile, .arc-jugar, .arc-mode { transition:none; } }
 .arc-pb { color:color-mix(in srgb, var(--g) 72%, #fff); }
+
+/* tick the phrases you know */
+.arc-known-search { margin:0 0 12px; }
+.arc-known-head { display:flex; align-items:center; justify-content:space-between; gap:10px; margin:18px 0 4px; }
+.arc-known-head h3 { margin:0; font-size:1rem; }
+.arc-known-all { display:flex; align-items:center; gap:6px; font-size:.85rem; color:var(--muted); cursor:pointer; }
+.arc-known-row { display:flex; align-items:flex-start; gap:10px; padding:9px 2px; border-bottom:1px solid var(--border); cursor:pointer; }
+.arc-known-row input, .arc-known-all input { width:20px; height:20px; flex:none; margin:2px 0 0; }
+.arc-known-txt { display:flex; flex-direction:column; gap:2px; min-width:0; }
+.arc-known-en { font-weight:600; }
+.arc-known-tx { color:var(--muted); }
+.arc-known-row[hidden], .arc-known-group[hidden] { display:none; }
