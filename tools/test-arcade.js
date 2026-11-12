@@ -2011,6 +2011,17 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     for (let i = 0; i < 30; i++) { const it = GI.next('sphrase', 2, rng, { grind: st, count: 30, gkind: 'sphrase', themes: got.themes }); if (it) seen.add(it.id); }
     ok(seen.size > 0 && [...seen].every(id => picks.indexOf(id) !== -1), 'the grind deals only your phrases: ' + [...seen]);
     ok(/ de 3 frases en estos temas$/.test(GI.phraseCoverage(got.themes).text), 'the coverage line counts your phrases');
+    { // your own phrases keep to the schedule: each new one once, then the round stops, nothing not yet due
+      const stS = { asked: 0, newN: 0, used: {} }, dealt = [];
+      for (let i = 0; i < 20; i++) { const it = GI.next('sphrase', 2, rng, { grind: stS, count: 10, gkind: 'sphrase', themes: got.themes }); if (it) dealt.push(it.id); }
+      ok(dealt.length === 3 && new Set(dealt).size === 3, 'a round on your own phrases asks each once and then ends: ' + dealt.length);
+      const r = GI.mineReady(got.themes);
+      ok(r.total === 3 && r.ready === 3 && r.low, 'mineReady counts your phrases ready today and says the list is low');
+      ok(!GI.mineReady(['x']).low, 'no own phrases, no low note');
+      const hi = GI.phraseList().list.filter(e => e.c && !/^A1/.test(e.c))[0];
+      if (hi) { const stH = { asked: 0, newN: 0, used: {} }; const it = GI.next('sphrase', 1, rng, { grind: stH, count: 10, gkind: 'sphrase', themes: ['id:' + hi.id] });
+        ok(it && it.id === hi.id, 'a phrase you picked is dealt even above your level'); }
+    }
     frasesTile(); chip('Mis frases (3)').click(); chip('Comida').click(); chip('Viajes').click();
     ok(JSON.stringify(JSON.parse(localStorage.getItem('fluidez.arcade')).pfocus) === JSON.stringify(FA), 'Mis frases toggles off like any topic, and the list stays');
   }

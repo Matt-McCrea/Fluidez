@@ -275,7 +275,16 @@
     if (g.key === 'frasai') {
       var pfocus = chosenFocus(), pcovLine = el('div', 'arc-progress-all');
       wrap.appendChild(el('div', 'arc-progress')).appendChild(pcovLine);
-      var paintCov = function () { pcovLine.textContent = GI.phraseCoverage(focusThemes(pfocus)).text; };
+      /* Under a round's worth of your own phrases ready today, the sheet says so and offers more. */
+      var lowBox = el('div', 'arc-mine-low'), lowTxt = el('p', 'arc-sub');
+      var lb = button('arc-wtbtn', 'Add phrases', function () { knownScreen(g, true); });
+      lowBox.appendChild(lowTxt); lowBox.appendChild(lb); wrap.appendChild(lowBox);
+      var paintLow = function () {
+        var r = pfocus.indexOf('mine') !== -1 && GI.mineReady ? GI.mineReady(focusThemes(pfocus)) : null;
+        lowBox.hidden = !(r && r.low);
+        if (r && r.low) lowTxt.textContent = 'Only ' + r.ready + ' of your phrases ' + (r.ready === 1 ? 'is' : 'are') + ' ready to practise today. Add more to keep your rounds full.';
+      };
+      var paintCov = function () { paintLow(); pcovLine.textContent = GI.phraseCoverage(focusThemes(pfocus)).text; };
       paintCov();
       var fbox = el('div', 'cv-sheet');
       var paintConvos = function () {

@@ -203,6 +203,10 @@ window.GAItems = (function () {
       opts.themes.forEach(function (t) { tset[t] = 1; });
       L = G.list.filter(function (e) { return tset[e.th] || tset['id:' + e.id]; });
     }
+    /* With the learner's own phrases in the focus the round keeps strictly to the schedule:
+     * due, then missed, then up to four new, each once, and the round ends when those run out.
+     * Never a phrase that is not due yet, and their own picks are dealt whatever their band. */
+    var strict = !!(tset && opts.themes.some(function (t) { return String(t).indexOf('id:') === 0; }));
     var capIx = G.bandCap ? bandIx(playerBand()) + 1 : 9;
     var td = today();
     /* A new item a B1+ player gets right at first sight was already theirs: it
@@ -219,7 +223,7 @@ window.GAItems = (function () {
         var c = stateOf(e.id);
         if (c && c.learnt) continue;                   // permanently learnt: never dealt
         if (!c || (!(c.reps > 0) && (c.due == null ? 0 : c.due) > td)) {
-          if (bandIx(e.b) > capIx) continue;
+          if (bandIx(e.b) > capIx && !(strict && tset['id:' + e.id])) continue;
           if (!fresh) fresh = e;
           continue;
         }
@@ -238,8 +242,10 @@ window.GAItems = (function () {
       } else if (missed.length) {
         missed.sort(function (a, b) { return b.l - a.l; });
         got = missed[0].e; mode = 'missed';
-      } else if (fresh && allowNew) {
+      } else if (fresh && (strict ? st.newN < 4 : allowNew)) {
         got = fresh; mode = 'new';
+      } else if (strict) {
+        got = null;
       } else if (recentL.length) {
         recentL.sort(function (a, b) { return b.l - a.l; });
         got = pick(recentL.slice(0, 12), rng).e; mode = 'recent';
@@ -253,6 +259,7 @@ window.GAItems = (function () {
         if (mode === 'new') { st.newN++; st.lastNew = got.id; }
         return { e: got, mode: mode, G: G };
       }
+      if (strict) return null;
       st.used = {};                                   // the whole list has been dealt this round: start over
     }
     return null;
@@ -439,6 +446,20 @@ window.GAItems = (function () {
     }
     return out;
   }
+  /* Of the learner's own phrases ('id:' entries in themes): how many a round could ask today
+   * (due, missed or new, none learnt). Under ROUND_LOW the sheet and the end screen say so. */
+  function mineReady(themes) {
+    var ids = {}, n = 0, total = 0, td = today();
+    (themes || []).forEach(function (t) { if (String(t).indexOf('id:') === 0) ids[String(t).slice(3)] = 1; });
+    phraseList().list.forEach(function (e) {
+      if (!ids[e.id]) return;
+      total++;
+      var c = stateOf(e.id);
+      if (c && c.learnt) return;
+      if (!c || !(c.reps > 0) || (c.due == null ? 0 : c.due) <= td || c.consecMiss > 0) n++;
+    });
+    return { ready: n, total: total, low: total > 0 && n < 10 };
+  }
   function phraseCoverage(themes) {
     var G = phraseList(), of = G.list.length, n = 0, focus = !!(themes && themes.length);
     var L = focus ? G.list.filter(function (e) { return themes.indexOf(e.th) !== -1 || themes.indexOf('id:' + e.id) !== -1; }) : G.list;
@@ -550,7 +571,7 @@ window.GAItems = (function () {
     draw: draw, next: next, grade: grade, reset: reset, words: words,
     deckItem: deckItem, missDeck: missDeck, knownCard: knownCard, answeredRight: answeredRight,
     bankCount: bankCount, bank: bank, topicsOf: topicsOf, lowestBand: lowestBand, gapId: gapId,
-    coverage: coverage, phraseCoverage: phraseCoverage, verbsKnown: verbsKnown, gapCoverage: gapCoverage,
+    coverage: coverage, phraseCoverage: phraseCoverage, mineReady: mineReady, verbsKnown: verbsKnown, gapCoverage: gapCoverage,
     grindThemes: grindThemes, grindList: wordList, phraseList: phraseList, prettyTheme: prettyTheme, thousands: thousands,
     wordTestNext: wordTestNext, wordTestGrade: wordTestGrade, wordTestRight: wordTestRight, wordTestMiss: wordTestMiss,
     placementItems: placementItems

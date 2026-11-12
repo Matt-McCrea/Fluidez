@@ -609,7 +609,16 @@
     if (g.key === 'frases' && window.GameItems && window.GameItems.phraseCoverage) {
       var pfocus = chosenFocus(), pcovLine = el('div', 'arc-progress-all');
       wrap.appendChild(el('div', 'arc-progress', null)).appendChild(pcovLine);
-      function paintCov() { pcovLine.textContent = window.GameItems.phraseCoverage(focusThemes(pfocus)).text; }
+      /* Under a round's worth of your own phrases ready today, the sheet says so and offers more. */
+      var lowBox = el('div', 'arc-mine-low'), lowTxt = el('p', 'arc-sub');
+      var lb = el('button', 'arc-wtbtn', 'Añadir frases'); lb.type = 'button'; lb.addEventListener('click', function () { knownScreen(g, true); });
+      lowBox.appendChild(lowTxt); lowBox.appendChild(lb); wrap.appendChild(lowBox);
+      var paintLow = function () {
+        var r = pfocus.indexOf('mine') !== -1 && window.GameItems.mineReady ? window.GameItems.mineReady(focusThemes(pfocus)) : null;
+        lowBox.hidden = !(r && r.low);
+        if (r && r.low) lowTxt.textContent = 'Solo ' + r.ready + (r.ready === 1 ? ' de tus frases está lista' : ' de tus frases están listas') + ' para hoy. Añade más para llenar las rondas.';
+      };
+      function paintCov() { paintLow(); pcovLine.textContent = window.GameItems.phraseCoverage(focusThemes(pfocus)).text; }
       paintCov();
       var fbox = el('div', 'cv-sheet');
       function paintConvos() {

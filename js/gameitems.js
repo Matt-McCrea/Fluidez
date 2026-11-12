@@ -1589,6 +1589,10 @@ window.GameItems = (function () {
       opts.themes.forEach(function (t) { tset[t] = 1; });
       L = G.list.filter(function (e) { return tset[e.th] || tset['id:' + e.id]; });
     }
+    /* With the learner's own phrases in the focus the round keeps strictly to the schedule:
+     * due, then missed, then up to four new, each once, and the round ends when those run out.
+     * Never a phrase that is not due yet, and their own picks are dealt whatever their band. */
+    var strict = !!(tset && opts.themes.some(function (t) { return String(t).indexOf('id:') === 0; }));
     var capIx = G.bandCap ? bandIx(playerBand()) + 1 : 9;
     var store = srsStore(), td = window.SRS && window.SRS.today ? window.SRS.today() : Math.floor(Date.now() / 864e5);
     /* A new word a B1+ player gets right at first sight was already theirs:
@@ -1613,7 +1617,7 @@ window.GameItems = (function () {
            * así) are the top of any frequency list, and ten of them in a row
            * is a grammar lesson, not a vocabulary payoff. New words come three
            * content words to one small word, each list in rank order. */
-          if (bandIx(e.c) > capIx) continue;
+          if (bandIx(e.c) > capIx && !(strict && tset['id:' + e.id])) continue;
           if (isSmall(e)) { if (!freshSmall) freshSmall = e; }
           else if (e.verb) { if (!freshVerb) freshVerb = e; }
           else if (!freshWord) freshWord = e;
@@ -1638,8 +1642,10 @@ window.GameItems = (function () {
       } else if (missed.length) {
         missed.sort(function (a, b) { return b.l - a.l; });
         got = missed[0].e; mode = 'missed';
-      } else if (fresh && allowNew) {
+      } else if (fresh && (strict ? st.newN < 4 : allowNew)) {
         got = fresh; mode = 'new';
+      } else if (strict) {
+        got = null;
       } else if (recent.length) {
         recent.sort(function (a, b) { return b.l - a.l; });
         got = pick(recent.slice(0, 12), rng).e; mode = 'recent';
@@ -1656,6 +1662,7 @@ window.GameItems = (function () {
         }
         return { e: got, mode: mode, G: G };
       }
+      if (strict) return null;
       st.used = {};                                   // the whole list has been dealt this round: start over
     }
     return null;
@@ -1741,6 +1748,20 @@ window.GameItems = (function () {
     item.play = 'choose'; delete item.words; delete item.reveal; item.answer = e.es;
     item.options = E.shuffle([e.es].concat(wrong.map(function (o) { return o.es; })), rng);
     return item;
+  }
+  /* Of the learner's own phrases ('id:' entries in themes): how many a round could ask today
+   * (due, missed or new, none learnt). Under ROUND_LOW the sheet and the end screen say so. */
+  function mineReady(themes) {
+    var ids = {}, n = 0, total = 0, td = window.SRS && window.SRS.today ? window.SRS.today() : Math.floor(Date.now() / 864e5);
+    (themes || []).forEach(function (t) { if (String(t).indexOf('id:') === 0) ids[String(t).slice(3)] = 1; });
+    phraseList().list.forEach(function (e) {
+      if (!ids[e.id]) return;
+      total++;
+      var c = srsStore()[e.id];
+      if (c && c.learnt) return;
+      if (!c || !(c.reps > 0) || (c.due == null ? 0 : c.due) <= td || c.consecMiss > 0) n++;
+    });
+    return { ready: n, total: total, low: total > 0 && n < 10 };
   }
   function phraseCoverage(themes) {
     var G = phraseList(), store = srsStore(), of = Math.floor(G.list.length / 100) * 100 || G.list.length, n = 0;
@@ -2090,7 +2111,7 @@ window.GameItems = (function () {
     answeredRight: answeredRight, tensesForBand: tensesForBand,
     listenRate: listenRate, bandForLevel: bandForLevel,
     enKey: enKey, altsFor: altsFor,
-    coverage: coverage, phraseCoverage: phraseCoverage, phraseList: phraseList, grindThemes: grindThemes, grindList: grindList, wordTestNext: wordTestNext, wordTestGrade: wordTestGrade, wordTestRight: wordTestRight, wordTestMiss: wordTestMiss, owned: owned, relampagoItem: relampagoItem, OWN_MIN: OWN_MIN,
+    coverage: coverage, phraseCoverage: phraseCoverage, mineReady: mineReady, phraseList: phraseList, grindThemes: grindThemes, grindList: grindList, wordTestNext: wordTestNext, wordTestGrade: wordTestGrade, wordTestRight: wordTestRight, wordTestMiss: wordTestMiss, owned: owned, relampagoItem: relampagoItem, OWN_MIN: OWN_MIN,
     contrastDecks: contrastDecks, contrastRound: contrastRound, bothRight: bothRight, bothRightCount: bothRightCount
   };
 })();

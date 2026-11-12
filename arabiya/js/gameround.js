@@ -1045,6 +1045,8 @@ window.GameRound = (function () {
       if (cfg.kind === 'ibarat' && GI.phraseCoverage) {
         var pcov = el('div', 'g-over-cover');
         pcov.appendChild(el('div', 'g-over-cover-all', GI.phraseCoverage(cfg.themes).text));
+        var r = GI.mineReady ? GI.mineReady(cfg.themes) : null;   // your own phrases are running low
+        if (r && r.low) pcov.appendChild(el('div', 'g-over-cover-all g-over-low', 'Only ' + r.ready + ' of your phrases ' + (r.ready === 1 ? 'is' : 'are') + ' ready to practise today. Add more to keep your rounds full.'));
         over.appendChild(pcov);
       }
 
