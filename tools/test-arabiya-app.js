@@ -640,16 +640,8 @@ const resetStage0 = () => { Object.keys(store).forEach(k => { if (/^talaqa\.(hur
       });
       ok(items.filter(i => i.self).length >= 1 && items.filter(i => !i.self).length >= 7, `pack ${pk.n} ${v}: some say, mostly graded`);
     }
-    ok(['pick', 'build', 'say', 'reply'].every(k => kindsSeen[k] > 0), 'all four kinds are dealt: ' + JSON.stringify(kindsSeen));
-    ok(kindsSeen.pick + kindsSeen.build + kindsSeen.reply + kindsSeen.say === 300, 'ten items for every pack and variety');
-    { // a reply: the next line of the dialogue is the answer
-      const it = S.packItems(1, 'lev', rng).filter(i => i.speakKind === 'reply')[0];
-      const d = packN(1).dialogue, ids = d.map(x => x.id);
-      const ph = id => W.AR_PHRASES.filter(p => p.id === id)[0];
-      const ix = d.findIndex((x, i) => ph(x.id).en === it.prompt && ph(ids[i + 1]) && S.trOf(ph(ids[i + 1]), 'lev') === it.answer);
-      ok(ix !== -1 && /^They said: /.test(it.note), 'a reply item answers with the next dialogue line');
-      ok(S.packItems(1, 'lev', rng).every(i => i.speakKind !== 'reply' || i.options.indexOf(i.answer) !== -1), 'replies carry the answer');
-    }
+    ok(['pick', 'build', 'say'].every(k => kindsSeen[k] > 0) && !kindsSeen.reply, 'pick, build and say are dealt, and no what do you say back question: ' + JSON.stringify(kindsSeen));
+    ok(kindsSeen.pick + kindsSeen.build + kindsSeen.say === 300, 'ten items for every pack and variety');
     // the clip falls back to the fuṣḥā one
     { const p = W.AR_PHRASES.filter(x => x.id === 'marhaba')[0] || W.AR_PHRASES[0];
       W.AR_AUDIO = {}; ok(S.clip(p, 'lev') === null, 'no clip, no speaker');

@@ -3,7 +3,7 @@
  * sw.js (tools/test-russkiy-app.js checks), so the screen says which code runs.
  * ========================================================================== */
 window.Perf = (function () {
-  var BUILD = 't1c0be73e';
+  var BUILD = 't082c93ea';
   var LIMIT = 40;
   var log = [];
   var now = (typeof performance !== 'undefined' && performance.now)

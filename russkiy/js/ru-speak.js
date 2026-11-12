@@ -10,7 +10,6 @@
  *   build  English shown, tap the transliteration words in order
  *   say    English shown; say it aloud, listen, mark yourself. SELF-MARKED: it never
  *          counts toward passing and never touches the SRS (gameround.js item.self)
- *   reply  hear a dialogue line, pick the next line
  * Eight in ten of the auto-graded items passes the pack, which opens the next.
  * SRS ids are 'sp:<phrase id>'. Progress is kept in svobodno.speak.
  *
@@ -23,7 +22,7 @@ window.RUSpeak = (function () {
   var ARC_KEY = 'svobodno.arcade';
   var ROUND = 10, PASS_FRAC = 0.8;
   var HUE = '#2fb3a5';
-  var KINDS = ['pick', 'say', 'pick', 'build', 'reply', 'say', 'build', 'pick', 'reply', 'pick'];
+  var KINDS = ['pick', 'say', 'pick', 'build', 'pick', 'say', 'build', 'pick', 'build', 'pick'];
 
   // ---- the language bits (Russian) ---------------------------------------------------------
   var NAME = { en: 'Speak', ru: 'Говори́ть', tr: 'Govorít' };
@@ -171,20 +170,6 @@ window.RUSpeak = (function () {
     return base(pack, p, { id: null, speakKind: 'say', play: 'say', self: true, prompt: p.en, answer: trOf(p),
       trAnswer: trOf(p), sayRu: textOf(p), say: clip(p), ru: textOf(p), key: keyed('say', textOf(p)) });
   }
-  /* A dialogue line i is heard; the answer is line i+1. Null when it has no next line. */
-  function replyItem(pack, i, rng) {
-    var d = pack.dialogue || [];
-    if (i < 0 || i + 1 >= d.length) return null;
-    var heard = phraseOf(d[i].id), a = phraseOf(d[i + 1].id);
-    if (!heard || !a) return null;
-    var wrong = wrongOnes(pack, [a.id, heard.id], rng, [heard.id]);
-    if (!wrong) return null;
-    var all = [a].concat(wrong), hc = clip(heard);
-    return base(pack, a, { id: 'sp:' + a.id, speakKind: 'reply', prompt: heard.en, en: a.en, sub: 'What do you say back?',
-      answer: trOf(a), ansLatin: true, options: shuffle(all.map(function (q) { return trOf(q); }), rng),
-      optScript: scriptMap(all), promptSay: hc, playPrompt: !!hc, say: clip(a),
-      note: 'They said: ' + trOf(heard), noteOnRight: true, ru: textOf(a), key: keyed('reply' + i, textOf(a)) });
-  }
 
   /* The ten items of one pack round, in the mix of KINDS. A kind that cannot be made falls back to a pick. */
   function packItems(n, rng) {
@@ -192,9 +177,7 @@ window.RUSpeak = (function () {
     if (!pack) return [];
     var list = packPhrases(pack);
     if (!list.length) return [];
-    var d = pack.dialogue || [], lines = [];
-    for (var i = 0; i + 1 < d.length; i++) lines.push(i);
-    var order = [], li = 0, lo = shuffle(lines, rng), out = [], last = null;
+    var order = [], out = [], last = null;
     function nextPhrase() {
       if (!order.length) order = shuffle(list.slice(), rng);
       var p = order.shift();
@@ -206,12 +189,7 @@ window.RUSpeak = (function () {
     function keyOf(it) { if (it.key) return it.key; return (it.prompt || '') + '|' + (it.ru || it.answer || ''); }
     function make(kind, p) {
       var it = null;
-      if (kind === 'reply') {
-        for (var t = 0; t < lo.length && !it; t++) {
-          var c = replyItem(pack, lo[li++ % lo.length], rng);
-          if (c && !used[keyOf(c)]) it = c;
-        }
-      } else if (kind === 'build') it = buildItem(pack, p, rng);
+      if (kind === 'build') it = buildItem(pack, p, rng);
       else if (kind === 'say') it = sayItem(pack, p);
       else it = pickItem(pack, p, rng);
       return it && !used[keyOf(it)] ? it : null;

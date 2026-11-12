@@ -683,14 +683,7 @@ const resetStage0 = () => { Object.keys(store).forEach(k => { if (/^svobodno\.(b
       ok(items.filter(i => i.self).length >= 1 && items.filter(i => !i.self).length >= 7, `pack ${pk.n}: some say, mostly graded`);
       ok(new Set(items.map(i => i.key)).size === items.length, `pack ${pk.n}: keys are all different`);
     }
-    ok(['pick', 'build', 'say', 'reply'].every(k => kindsSeen[k] > 0), 'all four kinds are dealt: ' + JSON.stringify(kindsSeen));
-    { // a reply: the next line of the dialogue is the answer
-      const it = S.packItems(1, rng).filter(i => i.speakKind === 'reply')[0];
-      const d = packN(1).dialogue, ids = d.map(x => x.id);
-      const ph = id => W.RU_PHRASES.filter(p => p.id === id)[0];
-      const ix = d.findIndex((x, i) => ph(x.id).en === it.prompt && ph(ids[i + 1]) && S.trOf(ph(ids[i + 1])) === it.answer);
-      ok(ix !== -1 && /^They said: /.test(it.note), 'a reply item answers with the next dialogue line');
-    }
+    ok(['pick', 'build', 'say'].every(k => kindsSeen[k] > 0) && !kindsSeen.reply, 'pick, build and say are dealt, and no what do you say back question: ' + JSON.stringify(kindsSeen));
     { const p = W.RU_PHRASES[0];
       ok(S.clip(p) === null, 'no clip, no speaker');
       W.RU_AUDIO[p.ru + '|ru'] = 'audio/x.bin#0,4';
