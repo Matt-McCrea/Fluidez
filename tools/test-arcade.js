@@ -2036,21 +2036,31 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     } finally { W.GameRound.run = run; }
   }
 
-  // ---- the conversation list on the sheet, filtered by the focus ----
+  // ---- the conversations: a button under the two modes, opening their own screen, filtered by the focus ----
   frasesTile();
   const nIn = ths => W.ES_CONVOS.filter(c => !ths.length || ths.indexOf(c.th) !== -1).length;
-  ok(has('cv-row').length === nIn(FA) && nIn(FA) > 0 && /Conversaciones/.test(STAGE.textContent), 'the sheet lists the conversations in the focused topics');
+  const cvBtn = () => has('arc-convos')[0];
+  const modeBtns = () => has('arc-modes')[0].all(n => n.tagName === 'BUTTON');
+  ok(has('cv-row').length === 0 && !!cvBtn() && modeBtns().length === 3 && modeBtns()[2] === cvBtn(), 'the sheet lists no conversations; Conversaciones is the third button, under Tranquilo and Contrarreloj');
+  ok(cvBtn().textContent.indexOf('Conversaciones · ' + nIn(FA)) === 0 && nIn(FA) > 0, 'the button counts the conversations in the focused topics: ' + cvBtn().textContent);
+  cvBtn().click();
+  ok(has('cv-row').length === nIn(FA) && /Conversaciones/.test(STAGE.textContent) && !has('arc-focus-chips').length, 'its own screen lists the conversations in the focused topics');
   ok(has('cv-row').every(r => /A1|A2|B1/.test(r.textContent) && r.textContent.indexOf('hecha') === -1 && /tú/.test(r.textContent)), 'each row shows its title, band and role, no tick yet');
+  ok(noDash(STAGE.textContent), 'no dashes on the conversations screen');
+  has('arc-back')[0].click();
+  ok(has('arc-focus-chips').length === 1, 'back from the list returns to the sheet');
   chip('Todos los temas').click();
-  ok(has('cv-row').length === W.ES_CONVOS.length && !/en estos temas/.test(has('arc-progress-all')[0].textContent), 'Todos los temas lists every conversation and the plain coverage');
+  ok(cvBtn().textContent.indexOf('Conversaciones · ' + W.ES_CONVOS.length) === 0 && !/en estos temas/.test(has('arc-progress-all')[0].textContent), 'Todos los temas counts every conversation, and the plain coverage');
+  cvBtn().click(); ok(has('cv-row').length === W.ES_CONVOS.length, 'and lists every one'); has('arc-back')[0].click();
   chip('Salud').click(); chip('Comida').click(); chip('Viajes').click();
-  ok(has('cv-row').length === nIn(['salud', 'alimentacion', 'viajes']), 'the list follows the chips');
+  ok(cvBtn().textContent.indexOf('Conversaciones · ' + nIn(['salud', 'alimentacion', 'viajes'])) === 0, 'the count follows the chips');
   chip('Todos los temas').click();
   ok(noDash(STAGE.textContent), 'no dashes on the Frases sheet');
   chip('Comida').click(); chip('Viajes').click();
 
   // ---- the screen ----
   const first = W.ES_CONVOS.filter(c => FA.indexOf(c.th) !== -1)[0];
+  cvBtn().click();
   has('cv-row')[0].click();
   const mine = first.lines.filter(l => l.who === first.you).length;
   ok(has('cv-bubble').length === first.lines.length && has('cv-me').length === mine && has('cv-them').length === first.lines.length - mine, 'every line is a bubble, the learner on one side');
@@ -2059,7 +2069,9 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
   ok(/Practica tu parte/.test(STAGE.textContent) && /tú, hablando con /.test(STAGE.textContent) && /Elige la frase correcta/.test(STAGE.textContent), 'title, roles and the practise button');
   ok(noDash(STAGE.textContent), 'no dashes on the conversation screen');
   has('arc-back')[0].click();
-  ok(has('arc-focus-chips').length === 1 && has('cv-row').length === nIn(FA), 'back returns to the sheet, focus kept');
+  ok(has('cv-row').length === nIn(FA), 'back returns to the conversations list');
+  has('arc-back')[0].click();
+  ok(has('arc-focus-chips').length === 1 && chip('Comida').cls().includes('on'), 'and back again to the sheet, focus kept');
   { // role wording
     const keep = W.ES_CONVOS;
     W.ES_CONVOS = keep.concat([Object.assign({}, first, { id: 'fx-man', roles: { a: 'You (a man)', b: 'Laura' } }), Object.assign({}, first, { id: 'fx-cust', roles: { a: 'Customer', b: 'Waiter' } })]);
@@ -2167,6 +2179,7 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
   }
   frasesTile();
   chip('Todos los temas').click();
+  cvBtn().click();
   ok(has('cv-row').filter(r => /hecha ✓/.test(r.textContent)).length === Object.keys(JSON.parse(localStorage.getItem('fluidez.convos')).passed).length, 'passed conversations are ticked in the list');
   ok(noDash(STAGE.textContent), 'no dashes after a pass');
   const keys = [...new Set(Object.keys(localStorage.getItem ? store : {}))];

@@ -231,6 +231,7 @@
   function hasCard(k) { var c = window.GA_CARDS; return !!(c && k && c[k]); }
 
   function sheet(g, noPush) {
+    cvb = null;
     if (noPush) VIEW = 'sheet'; else pushView('sheet');
     var h = host();
     clear(h);
@@ -286,11 +287,7 @@
       };
       var paintCov = function () { paintLow(); pcovLine.textContent = GI.phraseCoverage(focusThemes(pfocus)).text; };
       paintCov();
-      var fbox = el('div', 'cv-sheet');
-      var paintConvos = function () {
-        clear(fbox);
-        if (window.GAConvo) window.GAConvo.section(fbox, pfocus.filter(function (t) { return t !== 'mine'; }), function () { sheet(g, true); }, function (v) { VIEW = v; });
-      };
+      var paintConvos = function () { paintConvoBtn(); };
       var fthemes = Object.keys(GI.phraseList().byTheme)
         .sort(function (a, b) { return knownThemeLabel(a) < knownThemeLabel(b) ? -1 : knownThemeLabel(a) > knownThemeLabel(b) ? 1 : 0; });
       if (fthemes.length > 1) {
@@ -318,8 +315,6 @@
       }
       wrap.appendChild(button('arc-wtbtn', 'Choose your own phrases', function () { knownScreen(g, true); }));
       wrap.appendChild(button('arc-wtbtn', 'Tick the phrases you know', function () { knownScreen(g); }));
-      paintConvos();
-      wrap.appendChild(fbox);
     }
 
     if (g.key === 'focail') {
@@ -364,7 +359,37 @@
     };
     mode('t', 'Go réidh', '10 questions', 'no clock; speed only adds points');
     mode('c', 'In aghaidh an chloig', '60 s', 'the clock stops when you lock the phone');
+    /* Phrases: the example conversations are their own screen, a third button under the two modes. */
+    if (g.key === 'frasai' && window.GAConvo && window.GAConvo.all().length) {
+      cvb = el('button', 'arc-mode arc-convos');
+      cvb.type = 'button';
+      cvb.addEventListener('click', function () { convoScreen(g); });
+      modes.appendChild(cvb);
+      paintConvoBtn();
+    }
     wrap.appendChild(modes);
+    h.appendChild(wrap);
+  }
+  /* The topics chosen on the phrase sheet, as conversations see them (My phrases is not a topic of theirs). */
+  function convoThemes() { return chosenFocus().filter(function (t) { return t !== 'mine'; }); }
+  var cvb = null;
+  function paintConvoBtn() {
+    if (!cvb) return;
+    clear(cvb);
+    var n = window.GAConvo.forThemes(convoThemes()).length, total = window.GAConvo.all().length;
+    var note = n === total ? 'example dialogues to practise your part' : 'in the topics you chose';
+    cvb.appendChild(el('b', null, 'Comhráite · ' + n)); cvb.appendChild(el('span', null, 'Conversations · ' + note));
+  }
+  function convoScreen(g) {
+    VIEW = 'convos';           // keeps the sheet's history entry: back returns to the sheet
+    var h = host(); clear(h);
+    var wrap = el('div', 'arc-stats');
+    wrap.style.setProperty('--g', g.hue);
+    wrap.appendChild(topBar('Conversations', null, function () { sheet(g, true); }));
+    wrap.appendChild(el('p', 'arc-sub', 'Example dialogues. Read the conversation, then practise your part.'));
+    var box = el('div', 'cv-sheet');
+    window.GAConvo.section(box, convoThemes(), function () { convoScreen(g); }, function (v) { VIEW = v; });
+    wrap.appendChild(box);
     h.appendChild(wrap);
   }
 

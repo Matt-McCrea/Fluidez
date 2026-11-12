@@ -806,18 +806,25 @@ async function playRound(cfg, plan) {
     // ---- the conversation list on the sheet, filtered by the focus ----
     phraseTile();
     const nIn = ths => W.GA_CONVOS.filter(c => !ths.length || ths.indexOf(c.th) !== -1).length;
-    ok(byCls('cv-row').length === nIn(FA) && nIn(FA) > 0 && /Conversations/.test(allText()), 'the sheet lists the conversations in the focused topics');
+    const cvBtn = () => byCls('arc-convos')[0], modeBtns = () => byCls('arc-modes')[0].all(n => n.tagName === 'BUTTON');
+    ok(byCls('cv-row').length === 0 && !!cvBtn() && modeBtns().length === 3 && modeBtns()[2] === cvBtn(), 'the sheet lists no conversations; Comhráite is the third button, under the two modes');
+    ok(text(cvBtn()).indexOf('Comhráite · ' + nIn(FA)) === 0 && nIn(FA) > 0, 'the button counts the conversations in the focused topics: ' + text(cvBtn()));
+    cvBtn().click();
+    ok(byCls('cv-row').length === nIn(FA) && /Conversations/.test(allText()) && !byCls('arc-focus-chips').length, 'its own screen lists the conversations in the focused topics');
     ok(byCls('cv-row').every(r => /A1|A2|B1/.test(text(r)) && text(r).indexOf('done') === -1 && /you/.test(text(r))), 'each row shows its title, band and role, no tick yet');
+    ok(noDash(allText()), 'no dashes on the conversations screen');
+    byCls('arc-back')[0].click();
     chip('All topics').click();
-    ok(byCls('cv-row').length === W.GA_CONVOS.length && !/in these topics/.test(text(byCls('arc-progress-all')[0])), 'All topics lists every conversation and the plain coverage');
+    ok(text(cvBtn()).indexOf('Comhráite · ' + W.GA_CONVOS.length) === 0 && !/in these topics/.test(text(byCls('arc-progress-all')[0])), 'All topics counts every conversation, and the plain coverage');
     chip('Shopping').click(); chip('Weather').click();
-    ok(byCls('cv-row').length === nIn(['siopa', 'aimsir']), 'the list follows the chips');
+    ok(text(cvBtn()).indexOf('Comhráite · ' + nIn(['siopa', 'aimsir'])) === 0, 'the count follows the chips');
     chip('All topics').click();
     ok(noDash(allText()), 'no dashes on the Frásaí sheet');
     chip('Weather').click(); chip('Time').click();
 
     // ---- the screen ----
     const first = W.GA_CONVOS.filter(c => FA.indexOf(c.th) !== -1)[0];
+    cvBtn().click();
     byCls('cv-row')[0].click();
     const mine = first.lines.filter(l => l.who === first.you).length;
     ok(byCls('cv-bubble').length === first.lines.length && byCls('cv-me').length === mine && byCls('cv-them').length === first.lines.length - mine, 'every line is a bubble, the learner on one side');
@@ -831,7 +838,9 @@ async function playRound(cfg, plan) {
     ok(noDash(allText()), 'no dashes in the Irish labels');
     W.Profile.set('A2');
     byCls('arc-back')[0].click();
-    ok(byCls('arc-focus-chips').length === 1 && byCls('cv-row').length === nIn(FA), 'back returns to the sheet, focus kept');
+    ok(byCls('cv-row').length === nIn(FA), 'back returns to the conversations list');
+    byCls('arc-back')[0].click();
+    ok(byCls('arc-focus-chips').length === 1 && byCls('cv-row').length === 0, 'and back again to the sheet, focus kept');
     { // role wording
       const keep = W.GA_CONVOS;
       W.GA_CONVOS = keep.concat([Object.assign({}, first, { id: 'fx-man', roles: { a: 'You (a man)', b: 'Máire' } }), Object.assign({}, first, { id: 'fx-cust', roles: { a: 'Customer', b: 'Waiter' } })]);
@@ -918,7 +927,7 @@ async function playRound(cfg, plan) {
     // leaving a round returns to the conversation
     CV.practise(C.id); await sleep(60); byCls('g-exit')[0].click();
     ok(byCls('cv-bubble').length === C.lines.length, 'leaving a round returns to the conversation');
-    phraseTile(); chip('All topics').click();
+    phraseTile(); chip('All topics').click(); cvBtn().click();
     ok(byCls('cv-row').filter(r => /done ✓/.test(text(r))).length === Object.keys(JSON.parse(store['liofa.convos']).passed).length, 'passed conversations are ticked in the list');
     ok(noDash(allText()), 'no dashes after a pass');
     ok('liofa.convos' in store && JSON.parse(store['liofa.arcade']).pfocus !== undefined, 'convo progress and the focus are in Líofa\'s own keys');

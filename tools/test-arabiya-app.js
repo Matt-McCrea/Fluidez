@@ -842,10 +842,17 @@ const resetStage0 = () => { Object.keys(store).forEach(k => { if (/^talaqa\.(hur
     }
     // ---- the conversation list on the sheet, filtered by the focus ----
     W.ARArcade.sheet(ibarat);
-    ok(byCls('cv-row').length === 2 && /Conversations/.test(allText()), 'the sheet lists the conversations in the focused topics');
+    const cvBtn = () => byCls('arc-convos')[0], modeBtns = () => byCls('arc-modes')[0].all(n => n.tagName === 'BUTTON');
+    ok(byCls('cv-row').length === 0 && !!cvBtn() && modeBtns().length === 3 && modeBtns()[2] === cvBtn(), 'the sheet lists no conversations; Conversations is the third button, under the two modes');
+    ok(/Conversations · 2/.test(cvBtn().textContent), 'the button counts the conversations in the focused topics: ' + cvBtn().textContent);
+    cvBtn().click();
+    ok(byCls('cv-row').length === 2 && /Conversations/.test(allText()) && !byCls('arc-focus').length, 'its own screen lists the conversations in the focused topics');
     ok(byCls('cv-row').every(r => /A1|A2/.test(r.textContent) && r.textContent.indexOf('done') === -1), 'each row shows its title and band, no tick yet');
+    ok(noDash(allText()), 'no dashes on the conversations screen');
+    byCls('arc-back')[0].click();
+    ok(!!cvBtn() && byCls('cv-row').length === 0, 'back returns to the phrase sheet');
     fchips()[0].click();
-    ok(byCls('cv-row').length === 3 && byCls('arc-progress-all')[0].textContent.indexOf('in these topics') === -1, 'All topics lists all three conversations');
+    ok(/Conversations · 3/.test(cvBtn().textContent) && byCls('arc-progress-all')[0].textContent.indexOf('in these topics') === -1, 'All topics counts all three conversations');
     ok(noDash(allText()), 'no dashes on the phrase sheet');
     // the Talk home lists them too
     setStage('talk', false); W.ARArcade.board();
@@ -970,8 +977,10 @@ const resetStage0 = () => { Object.keys(store).forEach(k => { if (/^talaqa\.(hur
       ok(/you are the Customer, talking to Waiter/.test(allText()) && /Practise: you are the Customer/.test(allText()), 'another role is worded you are the Customer');
       const backBtn = () => byCls('arc-back')[0];
       W.ARArcade.sheet(ibarat);
-      byCls('cv-row')[0].click(); backBtn().click();
-      ok(byCls('arc-focus').length === 1, 'back from the sheet returns to the sheet');
+      byCls('arc-convos')[0].click(); byCls('cv-row')[0].click(); backBtn().click();
+      ok(byCls('cv-row').length > 0 && byCls('arc-focus').length === 0, 'back from a conversation returns to the conversations list');
+      backBtn().click();
+      ok(byCls('arc-focus').length === 1, 'and back again to the phrase sheet');
       setStage('talk', false); W.ARArcade.board();
       byCls('cv-row')[0].click(); backBtn().click();
       ok(byCls('arc-seg').length === 1 && byCls('arc-talk').length === 1, 'back from the Talk home returns to the Talk home');

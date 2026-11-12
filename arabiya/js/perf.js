@@ -3,7 +3,7 @@
  * sw.js (tools/test-arabiya-app.js checks), so the screen says which code runs.
  * ========================================================================== */
 window.Perf = (function () {
-  var BUILD = 'ta66888e9';
+  var BUILD = 't1d967a2c';
   var LIMIT = 40;
   var log = [];
   var now = (typeof performance !== 'undefined' && performance.now)
