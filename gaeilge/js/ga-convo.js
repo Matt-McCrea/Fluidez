@@ -199,14 +199,46 @@ window.GAConvo = (function () {
     parent.appendChild(box);
   }
 
-  function lineNode(c, l) {
+  /* The recorded line: data/convo-audio.js, keyed "<id>#<line>". */
+  function clipKey(c, i) { return c.id + '#' + i; }
+  function hasClip(c, i) { return !!(window.ConvoAudio && window.ConvoAudio.has(clipKey(c, i))); }
+  function lineNode(c, l, i) {
     var mine = l.who === c.you;
     var b = el('div', 'cv-bubble ' + (mine ? 'cv-me' : 'cv-them'));
     b.appendChild(el('div', 'cv-who', role(c, l.who)));
     b.appendChild(el('div', 'cv-ga', textOf(l)));
     b.appendChild(el('div', 'cv-en', l.en));
+    if (i != null && hasClip(c, i)) {
+      var sp = el('button', 'spk cv-spk', '🔊');
+      sp.type = 'button';
+      sp.setAttribute('aria-label', 'Hear it');
+      sp.addEventListener('click', function (e) {
+        if (e && e.stopPropagation) e.stopPropagation();
+        playToken++; lit(null);
+        window.ConvoAudio.play(clipKey(c, i));
+      });
+      b.appendChild(sp);
+    }
     return b;
   }
+
+  /* Play the lines in order, each after the last, the speaking bubble lit. */
+  var playToken = 0, bubbles = [];
+  function lit(n) { bubbles.forEach(function (b, k) { if (b.classList) b.classList.toggle('cv-playing', k === n); }); }
+  function playAll(c) {
+    var mine = ++playToken, i = 0;
+    function next() {
+      if (mine !== playToken) return;
+      while (i < c.lines.length) {
+        var k = i++;
+        lit(k);
+        if (window.ConvoAudio.play(clipKey(c, k), function () { if (mine === playToken) { lit(null); setTimeout(next, 300); } })) return;
+      }
+      lit(null);
+    }
+    next();
+  }
+  function stopPlay() { playToken++; bubbles = []; if (window.ConvoAudio) window.ConvoAudio.stop(); }
 
   function open(id, from) {
     if (from !== undefined) origin = from;
@@ -214,13 +246,20 @@ window.GAConvo = (function () {
     if (!c) { if (origin) origin(); return; }
     setView('sheet');
     var w = wrapEl();
-    w.appendChild(top(c.en, function () { if (origin) origin(); }));
+    stopPlay();
+    w.appendChild(top(c.en, function () { stopPlay(); if (origin) origin(); }));
     w.appendChild(el('p', 'arc-sub', (c.b || 'A1') + ' · ' + youPhrase(c) + TXT.talkingTo + role(c, other(c.you)) +
       (passes(c.id) ? ' · ' + TXT.done : '')));
     if (c.n) w.appendChild(el('p', 'cv-note', c.n));
     var chat = el('div', 'cv-chat');
-    c.lines.forEach(function (l) { chat.appendChild(lineNode(c, l)); });
+    c.lines.forEach(function (l, i) { var b = lineNode(c, l, i); bubbles.push(b); chat.appendChild(b); });
     w.appendChild(chat);
+    if (c.lines.some(function (l, i) { return hasClip(c, i); })) {
+      var pa = el('button', 'arc-wtbtn cv-playall', '▶ ' + T('Seinn ar fad', 'Play it all'));
+      pa.type = 'button';
+      pa.addEventListener('click', function () { playAll(c); });
+      w.appendChild(pa);
+    }
     var go = el('button', 'arc-mode on cv-practise');
     go.type = 'button';
     go.appendChild(el('b', null, isYou(c) ? TXT.practise : TXT.practiseAs + youPhrase(c)));
@@ -236,6 +275,7 @@ window.GAConvo = (function () {
   function practise(id) {
     var c = byId(id);
     if (!c) return;
+    stopPlay();
     var kind = kindFor(id);
     var list = items(id, kind);
     if (!list.length) { open(id); return; }

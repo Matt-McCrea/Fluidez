@@ -865,22 +865,21 @@ const resetStage0 = () => { Object.keys(store).forEach(k => { if (/^svobodno\.(b
       for (let i = 0; i < 12; i++) { const it = GI.next('frazy', 2, rng, { grind: st, count: 40, gkind: 'frazy', themes: ['greet'], talk: true }); if (it) its.push(it); }
       ok(its.length > 0 && its.every(i => (i.play === 'choose' && i.ansLatin && i.options.indexOf(i.answer) !== -1 && i.options.every(o => i.optScript[o])) || (i.play === 'build' && i.latin)), 'Talk phrases are picks and builds led by the sound, the Cyrillic smaller above');
     }
-    // ---- the conversation list on the sheet, filtered by the focus ----
-    W.RUArcade.sheet(frazy);
-    const cvBtn = () => byCls('arc-convos')[0], modeBtns = () => byCls('arc-modes')[0].all(n => n.tagName === 'BUTTON');
-    ok(byCls('cv-row').length === 0 && !!cvBtn() && modeBtns().length === 3 && modeBtns()[2] === cvBtn(), 'the sheet lists no conversations; Conversations is the third button, under the two modes');
-    ok(/Conversations · 2/.test(cvBtn().textContent), 'the button counts the conversations in the focused topics: ' + cvBtn().textContent);
-    cvBtn().click();
-    ok(byCls('cv-row').length === 2 && /Conversations/.test(allText()) && !byCls('arc-focus').length, 'its own screen lists the conversations in the focused topics');
+    // ---- the conversations: the fourth tile on the top row, every conversation ----
+    setStage('script', true); W.RUArcade.board();
+    { const row = byCls('arc-main4')[0], t = row && row.all(n => n.cls().includes('arc-tile'));
+      ok(t && t.length === 4 && t[3].cls().includes('arc-convo-tile') && /Conversations/.test(t[3].textContent), 'Conversations is the fourth tile on the top row, after Verbs, Words and Phrases'); }
+    ok(/0 of 3/.test(byCls('arc-convo-tile')[0].textContent), 'the tile counts the passed ones: ' + byCls('arc-convo-tile')[0].textContent);
+    byCls('arc-convo-tile')[0].click();
+    ok(byCls('cv-row').length === 3 && /Conversations/.test(allText()), 'the tile lists every conversation');
     ok(byCls('cv-row').every(r => /A1|A2/.test(r.textContent) && r.textContent.indexOf('done') === -1), 'each row shows its title and band, no tick yet');
     ok(noDash(allText()), 'no dashes on the conversations screen');
-    byCls('arc-back')[0].click();
-    ok(!!cvBtn() && byCls('cv-row').length === 0, 'back returns to the phrase sheet');
-    fchips()[0].click();
-    ok(/Conversations · 3/.test(cvBtn().textContent) && byCls('arc-progress-all')[0].textContent.indexOf('in these topics') === -1, 'All topics counts all three conversations');
+    W.RUArcade.sheet(frazy);
+    ok(byCls('cv-row').length === 0 && !byCls('arc-convos').length && byCls('arc-modes')[0].all(n => n.tagName === 'BUTTON').length === 2, 'the phrase sheet keeps just its two modes');
+    fchips()[0].click();                                  // All topics, for the Talk home below
     ok(noDash(allText()), 'no dashes on the phrase sheet');
     setStage('talk', false); W.RUArcade.board();
-    ok(byCls('cv-row').length === 3 && byCls('arc-pick').length === 13 && byCls('sp-strand').length === 2, 'the Talk home lists the conversations after the packs');
+    ok(byCls('cv-row').length === 3 && byCls('arc-pick').length === 13 && byCls('sp-strand').length === 2, 'the Talk home lists the conversations after the packs: ' + [byCls('cv-row').length, byCls('arc-pick').length, byCls('sp-strand').length]);
 
     // ---- the screen ----
     W.RU_AUDIO[FX[0].lines[0].ru + '|ru'] = 'audio/x.bin#0,4';
@@ -990,11 +989,11 @@ const resetStage0 = () => { Object.keys(store).forEach(k => { if (/^svobodno\.(b
       CV.open('fx3');
       ok(/you are the Customer, talking to Waiter/.test(allText()) && /Practise: you are the Customer/.test(allText()), 'another role is worded you are the Customer');
       const backBtn = () => byCls('arc-back')[0];
-      W.RUArcade.sheet(frazy);
-      byCls('arc-convos')[0].click(); byCls('cv-row')[0].click(); backBtn().click();
-      ok(byCls('cv-row').length > 0 && byCls('arc-focus').length === 0, 'back from a conversation returns to the conversations list');
+      W.RUArcade.board();
+      byCls('arc-convo-tile')[0].click(); byCls('cv-row')[0].click(); backBtn().click();
+      ok(byCls('cv-row').length > 0 && byCls('arc-convo-tile').length === 0, 'back from a conversation returns to the conversations list');
       backBtn().click();
-      ok(byCls('arc-focus').length === 1, 'and back again to the phrase sheet');
+      ok(byCls('arc-convo-tile').length === 1, 'and back again to the board');
       setStage('talk', false); W.RUArcade.board();
       byCls('cv-row')[0].click(); backBtn().click();
       ok(byCls('arc-seg').length === 1 && byCls('arc-talk').length === 1, 'back from the Talk home returns to the Talk home');

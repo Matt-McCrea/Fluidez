@@ -141,6 +141,7 @@ scripts.forEach(rel => (0, eval)(fs.readFileSync(path.join(GE, rel), 'utf8')));
 const W = global.window;
 // data/conversations.js assigns to `this` (the page's window); in this shim that is the global object
 if (!W.GA_CONVOS && global.GA_CONVOS) W.GA_CONVOS = global.GA_CONVOS;
+if (!W.GA_CONVO_AUDIO && global.GA_CONVO_AUDIO) W.GA_CONVO_AUDIO = global.GA_CONVO_AUDIO;
 ok(!!W.GAItems && !!W.GameScore && !!W.GameRound && !!W.GACheck && !!W.GAArcade && !!W.GA, 'the modules did not load');
 ok(!W.ENGINE && !W.Checker && !W.Speak, 'the Spanish engine leaked into Líofa');
 
@@ -151,8 +152,8 @@ W.GA_BANK = []; W.GA_WORDS = []; W.GA_PHRASES = []; W.GAItems.reset();
 W.GAArcade.board();
 {
   const tiles = byCls('arc-tile'), soon = byCls('arc-soon');
-  ok(tiles.length === 7, `empty banks: expected 7 tiles, got ${tiles.length}`);
-  ok(tiles.every(t => t.disabled), 'empty banks: every tile must be disabled');
+  ok(tiles.length === 8 && tiles.filter(t => t.cls().includes('arc-convo-tile')).length === 1, `empty banks: expected 7 game tiles and Conversations, got ${tiles.length}`);
+  ok(tiles.filter(t => !t.cls().includes('arc-convo-tile')).every(t => t.disabled), 'empty banks: every game tile must be disabled');
   ok(soon.length === 7 && soon.every(s => text(s) === 'ag teacht'), 'empty banks: tiles must say "ag teacht"');
   ok(allText().indexOf('Líofa') !== -1 && allText().indexOf('Imir') !== -1, 'empty banks: brand and Imir are missing');
   ok(byCls('arc-jugar').length === 1 && byCls('arc-jugar')[0].disabled, 'empty banks: Imir must be disabled');
@@ -631,7 +632,7 @@ async function playRound(cfg, plan) {
     ok(text(byCls('arc-place-band')[0]) === 'B2' && W.Profile.current() === 'B2' && W.Profile.placed(), 'all right must place at B2, got ' + W.Profile.current());
     ok(JSON.parse(store['liofa.profile']).band === 'B2', 'the band is kept in liofa.profile');
     W.GAArcade.board();
-    ok(byCls('arc-tile').length === 7 && byCls('arc-tile').every(t => !t.disabled), 'with banks, all seven tiles play');
+    ok(byCls('arc-tile').length === 8 && byCls('arc-tile').every(t => !t.disabled), 'with banks, all seven tiles and Conversations play');
     ok(allText().indexOf('ag teacht') === -1, 'no tile should say "ag teacht" once the banks are there');
   }
 
@@ -652,7 +653,7 @@ async function playRound(cfg, plan) {
     await sleep(40);
     ok(!!byCls('g-shell')[0] && LAST.topic === 'briathra:caite', 'the round honours the chosen tense');
     byCls('g-exit')[0].click();
-    ok(byCls('arc-tile').length === 7, 'leaving a round returns to the board');
+    ok(byCls('arc-tile').length === 8, 'leaving a round returns to the board');
     // focail sheet: word test button and coverage
     byCls('arc-tile').filter(t => text(t).indexOf('Focail') !== -1)[0].click();
     ok(allText().indexOf('commonest words') !== -1 && allText().indexOf('Triail focal') !== -1, 'Focail sheet: coverage and the word test');
@@ -750,7 +751,7 @@ async function playRound(cfg, plan) {
     byCls('arc-level')[0].click();
     ok(byCls('arc-pick').length === 4, 'the level picker lists A1 to B2');
     byCls('arc-pick')[0].click();                          // goBack -> history.back -> popstate -> board
-    ok(W.Profile.current() === 'A1' && byCls('arc-tile').length === 7, 'picking a level sets it and goes home');
+    ok(W.Profile.current() === 'A1' && byCls('arc-tile').length === 8, 'picking a level sets it and goes home');
   }
 
   // ---- Frásaí: the topic focus and the conversations (js/ga-convo.js). The real phrases and conversations. ----------------------------------------
@@ -803,28 +804,24 @@ async function playRound(cfg, plan) {
       } finally { W.GameRound.run = run; }
     }
 
-    // ---- the conversation list on the sheet, filtered by the focus ----
-    phraseTile();
+    // ---- the conversations: the fourth tile on the top row, every conversation, with voices ----
     const nIn = ths => W.GA_CONVOS.filter(c => !ths.length || ths.indexOf(c.th) !== -1).length;
-    const cvBtn = () => byCls('arc-convos')[0], modeBtns = () => byCls('arc-modes')[0].all(n => n.tagName === 'BUTTON');
-    ok(byCls('cv-row').length === 0 && !!cvBtn() && modeBtns().length === 3 && modeBtns()[2] === cvBtn(), 'the sheet lists no conversations; Comhráite is the third button, under the two modes');
-    ok(text(cvBtn()).indexOf('Comhráite · ' + nIn(FA)) === 0 && nIn(FA) > 0, 'the button counts the conversations in the focused topics: ' + text(cvBtn()));
-    cvBtn().click();
-    ok(byCls('cv-row').length === nIn(FA) && /Conversations/.test(allText()) && !byCls('arc-focus-chips').length, 'its own screen lists the conversations in the focused topics');
+    const cvTile = () => { W.GAArcade.board(); byCls('arc-convo-tile')[0].click(); };
+    W.GAArcade.board();
+    { const row = byCls('arc-main4')[0], t = row && row.all(n => n.cls().includes('arc-tile'));
+      ok(t && t.length === 4 && t[3].cls().includes('arc-convo-tile') && /Comhráite/.test(text(t[3])) && /Conversations/.test(text(t[3])), 'Comhráite is the fourth tile on the top row, after Briathra, Focail and Frásaí'); }
+    ok(/0 of \d+/.test(text(byCls('arc-convo-tile')[0])), 'the tile counts the passed ones');
+    phraseTile();
+    ok(byCls('cv-row').length === 0 && !byCls('arc-convos').length && byCls('arc-modes')[0].all(n => n.tagName === 'BUTTON').length === 2, 'the Frásaí sheet keeps just its two modes');
+    cvTile();
+    ok(byCls('cv-row').length === W.GA_CONVOS.length && /Conversations/.test(allText()), 'the tile lists every conversation');
     ok(byCls('cv-row').every(r => /A1|A2|B1/.test(text(r)) && text(r).indexOf('done') === -1 && /you/.test(text(r))), 'each row shows its title, band and role, no tick yet');
     ok(noDash(allText()), 'no dashes on the conversations screen');
-    byCls('arc-back')[0].click();
-    chip('All topics').click();
-    ok(text(cvBtn()).indexOf('Comhráite · ' + W.GA_CONVOS.length) === 0 && !/in these topics/.test(text(byCls('arc-progress-all')[0])), 'All topics counts every conversation, and the plain coverage');
-    chip('Shopping').click(); chip('Weather').click();
-    ok(text(cvBtn()).indexOf('Comhráite · ' + nIn(['siopa', 'aimsir'])) === 0, 'the count follows the chips');
-    chip('All topics').click();
-    ok(noDash(allText()), 'no dashes on the Frásaí sheet');
-    chip('Weather').click(); chip('Time').click();
+    phraseTile(); chip('All topics').click(); chip('Weather').click(); chip('Time').click();
 
     // ---- the screen ----
-    const first = W.GA_CONVOS.filter(c => FA.indexOf(c.th) !== -1)[0];
-    cvBtn().click();
+    const first = W.GA_CONVOS[0];
+    cvTile();
     byCls('cv-row')[0].click();
     const mine = first.lines.filter(l => l.who === first.you).length;
     ok(byCls('cv-bubble').length === first.lines.length && byCls('cv-me').length === mine && byCls('cv-them').length === first.lines.length - mine, 'every line is a bubble, the learner on one side');
@@ -832,15 +829,19 @@ async function playRound(cfg, plan) {
     ok(byCls('cv-me').every(b => b.all(n => n.cls().includes('cv-ga')).length === 1) && allText().indexOf(first.lines[0].ga) !== -1, 'the Irish is in the bubble');
     ok(/Practise your part/.test(allText()) && /you, talking to /.test(allText()) && /Pick the right line/.test(allText()), 'title, roles and the practise button');
     ok(noDash(allText()), 'no dashes on the conversation screen');
+    ok(byCls('cv-spk').length === first.lines.length && byCls('cv-playall').length === 1, 'a speaker on every line and one Play it all');
+    ok(W.GA_CONVOS.every(c => c.lines.every((l, i) => /^audio\/c-[0-9a-f]+\.bin#\d+,\d+$/.test(W.GA_CONVO_AUDIO[c.id + '#' + i] || ''))), 'every conversation line in Líofa has a voice');
+    { const played = [], keep = W.ConvoAudio.play;
+      W.ConvoAudio.play = (k, done) => { played.push(k); return true; };
+      try { byCls('cv-spk')[2].click(); ok(played[0] === first.id + '#2', 'a speaker plays its own line'); }
+      finally { W.ConvoAudio.play = keep; } }
     W.Profile.set('B2');
     CV.open(first.id);
     ok(/Cleachtaigh do pháirt/.test(allText()) && /tú, ag caint le /.test(allText()) && /Roghnaigh an líne cheart/.test(allText()), 'from B1 the labels are in Irish');
     ok(noDash(allText()), 'no dashes in the Irish labels');
     W.Profile.set('A2');
     byCls('arc-back')[0].click();
-    ok(byCls('cv-row').length === nIn(FA), 'back returns to the conversations list');
-    byCls('arc-back')[0].click();
-    ok(byCls('arc-focus-chips').length === 1 && byCls('cv-row').length === 0, 'and back again to the sheet, focus kept');
+    ok(byCls('cv-row').length === W.GA_CONVOS.length, 'back returns to the conversations list');
     { // role wording
       const keep = W.GA_CONVOS;
       W.GA_CONVOS = keep.concat([Object.assign({}, first, { id: 'fx-man', roles: { a: 'You (a man)', b: 'Máire' } }), Object.assign({}, first, { id: 'fx-cust', roles: { a: 'Customer', b: 'Waiter' } })]);
@@ -927,7 +928,7 @@ async function playRound(cfg, plan) {
     // leaving a round returns to the conversation
     CV.practise(C.id); await sleep(60); byCls('g-exit')[0].click();
     ok(byCls('cv-bubble').length === C.lines.length, 'leaving a round returns to the conversation');
-    phraseTile(); chip('All topics').click(); cvBtn().click();
+    cvTile();
     ok(byCls('cv-row').filter(r => /done ✓/.test(text(r))).length === Object.keys(JSON.parse(store['liofa.convos']).passed).length, 'passed conversations are ticked in the list');
     ok(noDash(allText()), 'no dashes after a pass');
     ok('liofa.convos' in store && JSON.parse(store['liofa.arcade']).pfocus !== undefined, 'convo progress and the focus are in Líofa\'s own keys');

@@ -132,6 +132,7 @@ scripts.filter(f => f.indexOf('arcade.js') === -1).forEach(rel => {
 const W = global.window;
 // data/conversations.js assigns to `this` (the page's window); in this shim that is the global object
 if (!W.ES_CONVOS && global.ES_CONVOS) W.ES_CONVOS = global.ES_CONVOS;
+if (!W.ES_CONVO_AUDIO && global.ES_CONVO_AUDIO) W.ES_CONVO_AUDIO = global.ES_CONVO_AUDIO;
 ok(!!W.GAME_INDEX, 'data/game-index.js did not define window.GAME_INDEX — run tools/build-game-index.js');
 ok(!W.STRAND_LESSONS, 'the corpus leaked into the arcade build');
 ok(!W.VOCAB, 'data/vocab.js leaked into the arcade build');
@@ -1012,7 +1013,7 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     const textOf = n => n.textContent;
     W.Shell.go();
     const shelfTiles = has('arc-tile');
-    ok(shelfTiles.length === 3, `the shelf has ${shelfTiles.length} tiles, wanted Verbos, Palabras, Frases`);
+    ok(shelfTiles.length === 4 && shelfTiles[3].cls().includes('arc-convo-tile'), `the shelf has ${shelfTiles.length} tiles, wanted Verbos, Palabras, Frases, Conversaciones`);
     ok(['Verbos', 'Palabras', 'Frases'].every((nm, i) => shelfTiles[i] && textOf(shelfTiles[i]).indexOf(nm) !== -1),
        'the tiles are not Verbos, Palabras, Frases in that order');
     ok(has('arc-jugar').length === 1, 'the board has no big Jugar card');
@@ -2036,31 +2037,23 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     } finally { W.GameRound.run = run; }
   }
 
-  // ---- the conversations: a button under the two modes, opening their own screen, filtered by the focus ----
+  // ---- the conversations: the fourth tile, opening every conversation, with voices ----
+  const cvTile = () => { W.Shell.go(); has('arc-convo-tile')[0].click(); };
+  W.Shell.go();
+  ok(has('arc-convo-tile').length === 1 && has('arc-grid')[0].all(n => n.cls().includes('arc-tile')).length === 4 && has('arc-grid')[0].all(n => n.cls().includes('arc-tile'))[3] === has('arc-convo-tile')[0], 'Conversaciones is the fourth tile, after Verbos, Palabras and Frases');
+  ok(/Conversaciones/.test(has('arc-convo-tile')[0].textContent) && /0 de \d+/.test(has('arc-convo-tile')[0].textContent), 'the tile names itself and counts the passed ones: ' + has('arc-convo-tile')[0].textContent);
   frasesTile();
-  const nIn = ths => W.ES_CONVOS.filter(c => !ths.length || ths.indexOf(c.th) !== -1).length;
-  const cvBtn = () => has('arc-convos')[0];
-  const modeBtns = () => has('arc-modes')[0].all(n => n.tagName === 'BUTTON');
-  ok(has('cv-row').length === 0 && !!cvBtn() && modeBtns().length === 3 && modeBtns()[2] === cvBtn(), 'the sheet lists no conversations; Conversaciones is the third button, under Tranquilo and Contrarreloj');
-  ok(cvBtn().textContent.indexOf('Conversaciones · ' + nIn(FA)) === 0 && nIn(FA) > 0, 'the button counts the conversations in the focused topics: ' + cvBtn().textContent);
-  cvBtn().click();
-  ok(has('cv-row').length === nIn(FA) && /Conversaciones/.test(STAGE.textContent) && !has('arc-focus-chips').length, 'its own screen lists the conversations in the focused topics');
+  ok(has('cv-row').length === 0 && !has('arc-convos').length && has('arc-modes')[0].all(n => n.tagName === 'BUTTON').length === 2, 'the Frases sheet keeps just its two modes');
+  cvTile();
+  ok(has('cv-row').length === W.ES_CONVOS.length && /Conversaciones/.test(STAGE.textContent), 'the tile lists every conversation');
   ok(has('cv-row').every(r => /A1|A2|B1/.test(r.textContent) && r.textContent.indexOf('hecha') === -1 && /tú/.test(r.textContent)), 'each row shows its title, band and role, no tick yet');
   ok(noDash(STAGE.textContent), 'no dashes on the conversations screen');
-  has('arc-back')[0].click();
-  ok(has('arc-focus-chips').length === 1, 'back from the list returns to the sheet');
-  chip('Todos los temas').click();
-  ok(cvBtn().textContent.indexOf('Conversaciones · ' + W.ES_CONVOS.length) === 0 && !/en estos temas/.test(has('arc-progress-all')[0].textContent), 'Todos los temas counts every conversation, and the plain coverage');
-  cvBtn().click(); ok(has('cv-row').length === W.ES_CONVOS.length, 'and lists every one'); has('arc-back')[0].click();
-  chip('Salud').click(); chip('Comida').click(); chip('Viajes').click();
-  ok(cvBtn().textContent.indexOf('Conversaciones · ' + nIn(['salud', 'alimentacion', 'viajes'])) === 0, 'the count follows the chips');
-  chip('Todos los temas').click();
-  ok(noDash(STAGE.textContent), 'no dashes on the Frases sheet');
+  W.Shell.go(); frasesTile();
   chip('Comida').click(); chip('Viajes').click();
 
   // ---- the screen ----
-  const first = W.ES_CONVOS.filter(c => FA.indexOf(c.th) !== -1)[0];
-  cvBtn().click();
+  const first = W.ES_CONVOS[0];
+  cvTile();
   has('cv-row')[0].click();
   const mine = first.lines.filter(l => l.who === first.you).length;
   ok(has('cv-bubble').length === first.lines.length && has('cv-me').length === mine && has('cv-them').length === first.lines.length - mine, 'every line is a bubble, the learner on one side');
@@ -2068,10 +2061,24 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
   ok(has('cv-me').every(b => b.all(n => n.cls().includes('cv-es')).length === 1) && STAGE.textContent.indexOf(first.lines[0].es) !== -1, 'the Spanish is in the bubble');
   ok(/Practica tu parte/.test(STAGE.textContent) && /tú, hablando con /.test(STAGE.textContent) && /Elige la frase correcta/.test(STAGE.textContent), 'title, roles and the practise button');
   ok(noDash(STAGE.textContent), 'no dashes on the conversation screen');
+  { // the voices: a speaker on every recorded line, and Escuchar todo
+    ok(has('cv-spk').length === first.lines.length && has('cv-playall').length === 1, 'a speaker on every line and one Escuchar todo: ' + has('cv-spk').length);
+    ok(first.lines.every((l, i) => /^audio\/c-[0-9a-f]+\.bin#\d+,\d+$/.test(W.ES_CONVO_AUDIO[first.id + '#' + i] || '')), 'every line of the conversation has its clip');
+    ok(W.ES_CONVOS.every(c => c.lines.every((l, i) => W.ES_CONVO_AUDIO[c.id + '#' + i])), 'every conversation line in Juegos has a voice');
+    const played = [], keep = W.ConvoAudio.play;
+    W.ConvoAudio.play = (k, done) => { played.push(k); if (done && played.length < 3) done(); return true; };
+    try {
+      has('cv-spk')[1].click();
+      ok(played[0] === first.id + '#1', 'a speaker plays its own line');
+      played.length = 0;
+      const sST2 = global.setTimeout; global.setTimeout = fn => fn();
+      try { has('cv-playall')[0].click(); } finally { global.setTimeout = sST2; }
+      ok(played.join() === [0, 1, 2].map(i => first.id + '#' + i).join(), 'Escuchar todo plays the lines in order: ' + played.join());
+      ok(has('cv-bubble')[2].cls().includes('cv-playing'), 'the line being played is lit');
+    } finally { W.ConvoAudio.play = keep; }
+  }
   has('arc-back')[0].click();
-  ok(has('cv-row').length === nIn(FA), 'back returns to the conversations list');
-  has('arc-back')[0].click();
-  ok(has('arc-focus-chips').length === 1 && chip('Comida').cls().includes('on'), 'and back again to the sheet, focus kept');
+  ok(has('cv-row').length === W.ES_CONVOS.length, 'back returns to the conversations list');
   { // role wording
     const keep = W.ES_CONVOS;
     W.ES_CONVOS = keep.concat([Object.assign({}, first, { id: 'fx-man', roles: { a: 'You (a man)', b: 'Laura' } }), Object.assign({}, first, { id: 'fx-cust', roles: { a: 'Customer', b: 'Waiter' } })]);
@@ -2177,9 +2184,7 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
   } finally {
     global.setTimeout = sST; global.requestAnimationFrame = sRAF; Date.now = sNow;
   }
-  frasesTile();
-  chip('Todos los temas').click();
-  cvBtn().click();
+  cvTile();
   ok(has('cv-row').filter(r => /hecha ✓/.test(r.textContent)).length === Object.keys(JSON.parse(localStorage.getItem('fluidez.convos')).passed).length, 'passed conversations are ticked in the list');
   ok(noDash(STAGE.textContent), 'no dashes after a pass');
   const keys = [...new Set(Object.keys(localStorage.getItem ? store : {}))];

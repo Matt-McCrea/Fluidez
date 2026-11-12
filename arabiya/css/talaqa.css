@@ -699,6 +699,7 @@ a.arc-mode { text-decoration:none; }
 .arc-jugar-k { font-size:2.1rem; }
 .arc-grid + .arc-grid { margin-top:12px; }
 .arc-grid.arc-row3 { grid-template-columns:repeat(3,1fr); gap:10px; }
+.arc-grid.arc-row3.arc-main4 { grid-template-columns:1fr 1fr; }   /* with Conversations: two by two */
 .arc-grid.arc-row4 { grid-template-columns:repeat(4,1fr); gap:8px; }
 .arc-row3 .arc-tile, .arc-row4 .arc-tile { padding:13px 10px 11px 14px; min-height:112px; }
 .arc-row4 .arc-tile { padding:12px 6px 10px 12px; }

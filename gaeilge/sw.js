@@ -10,7 +10,7 @@
  *
  * ASSETS must mirror every <script>/<link> in index.html plus the data files.
  * ========================================================================== */
-var CACHE_VERSION = 'l0ec6cb56';
+var CACHE_VERSION = 'l3c21c270';
 var CACHE_NAME = 'liofa-' + CACHE_VERSION;
 
 var ASSETS = [
@@ -35,6 +35,7 @@ var ASSETS = [
   './data/words.js',
   './data/phrases.js',
   './data/conversations.js',
+  './data/convo-audio.js',
   './data/cards.js',
   './data/gaps-briathra.js',
   './data/gaps-seimhiu.js',
@@ -45,6 +46,7 @@ var ASSETS = [
   './js/ga-items.js',
   './js/gameround.js',
   './js/ga-check.js',
+  './js/convo-audio.js',
   './js/ga-convo.js',
   './js/ga-arcade.js'
 ];
@@ -76,6 +78,20 @@ self.addEventListener('activate', function (event) {
 // back to the front, and reloads on the board once one has taken over.
 self.addEventListener('fetch', function (event) {
   if (event.request.method !== 'GET') return;
+  // The conversation voices (audio/c-*.bin) are named by their content: kept in their own
+  // cache, which a new version does not clear, so they are fetched once.
+  var u = new URL(event.request.url);
+  if (u.origin === self.location.origin && u.pathname.indexOf('/audio/') !== -1) {
+    event.respondWith(caches.open('gaeilge-audio').then(function (cache) {
+      return cache.match(event.request).then(function (hit) {
+        return hit || fetch(event.request).then(function (res) {
+          if (res && res.ok) cache.put(event.request, res.clone());
+          return res;
+        });
+      });
+    }));
+    return;
+  }
   if (new URL(event.request.url).origin !== self.location.origin) return;
   event.respondWith(
     caches.match(event.request).then(function (cached) {

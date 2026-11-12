@@ -475,6 +475,7 @@
       }
       grid.appendChild(tile);
     });
+    if (!FULL() && window.ESConvo && window.ESConvo.all().length) grid.appendChild(convoTile());
     wrap.appendChild(grid);
     if (!FULL() && window.TenseCheck) wrap.appendChild(progressPanel());
 
@@ -620,7 +621,6 @@
       };
       function paintCov() { paintLow(); pcovLine.textContent = window.GameItems.phraseCoverage(focusThemes(pfocus)).text; }
       paintCov();
-      function paintConvos() { paintConvoBtn(); }
       var fthemes = Object.keys(window.GameItems.phraseList().byTheme)
         .sort(function (a, b) { return themeLabel(a) < themeLabel(b) ? -1 : themeLabel(a) > themeLabel(b) ? 1 : 0; });
       if (fthemes.length > 1) {
@@ -632,7 +632,7 @@
           fall.classList.toggle('on', !pfocus.length);
           Object.keys(fby).forEach(function (k) { fby[k].classList.toggle('on', pfocus.indexOf(k) !== -1); });
         }
-        fall.addEventListener('click', function () { pfocus = []; saveFocus(pfocus); paintF(); paintCov(); paintConvos(); });
+        fall.addEventListener('click', function () { pfocus = []; saveFocus(pfocus); paintF(); paintCov(); });
         fchips.appendChild(fall);
         var mine = myPhrases();
         if (mine.length) fthemes.unshift('mine');
@@ -642,7 +642,7 @@
           fb.addEventListener('click', function () {
             var i = pfocus.indexOf(t);
             if (i === -1) pfocus.push(t); else pfocus.splice(i, 1);
-            saveFocus(pfocus); paintF(); paintCov(); paintConvos();
+            saveFocus(pfocus); paintF(); paintCov();
           });
           fby[t] = fb;
           fchips.appendChild(fb);
@@ -707,36 +707,33 @@
     }
     mode('t', 'Tranquilo · 10 preguntas', 'sin reloj; la rapidez solo suma puntos');
     mode('c', 'Contrarreloj · 60 s', 'el reloj se para si bloqueas el celular');
-    /* Frases: the example conversations are their own screen, a third button under the two modes. */
-    var cvb = null;
-    function paintConvoBtn() {
-      if (!cvb) return;
-      clear(cvb);
-      var n = window.ESConvo.forThemes(convoThemes()).length, total = window.ESConvo.all().length;
-      cvb.appendChild(el('b', null, 'Conversaciones · ' + n));
-      cvb.appendChild(el('span', null, n === total ? 'diálogos de ejemplo para practicar tu parte' : 'en los temas que elegiste'));
-    }
-    if (g.key === 'frases' && window.ESConvo && window.ESConvo.all().length) {
-      cvb = el('button', 'arc-mode arc-convos');
-      cvb.type = 'button';
-      cvb.addEventListener('click', function () { convoScreen(g); });
-      modes.appendChild(cvb);
-      paintConvoBtn();
-    }
     wrap.appendChild(modes);
     h.appendChild(wrap);
   }
-  /* The topics chosen on the Frases sheet, as conversations see them (Mis frases is not a topic of theirs). */
-  function convoThemes() { return chosenFocus().filter(function (t) { return t !== 'mine'; }); }
-  function convoScreen(g) {
-    VIEW = 'convos';           // keeps the sheet's history entry: back returns to the sheet
+  /* CONVERSACIONES: the fourth tile. Every example conversation, with its voices. */
+  var CONVO_TILE = { key: 'convos', name: 'Conversaciones', icon: '🗣️', hue: '#e07a3f' };
+  function convoTile() {
+    var CV = window.ESConvo, all = CV.all(), done = all.filter(function (c) { return CV.passes(c.id) > 0; }).length;
+    var tile = el('button', 'arc-tile arc-convo-tile');
+    tile.type = 'button';
+    tile.style.setProperty('--g', CONVO_TILE.hue);
+    tile.appendChild(el('span', 'arc-ico', CONVO_TILE.icon));
+    tile.appendChild(el('span', 'arc-name', CONVO_TILE.name));
+    tile.appendChild(el('span', 'arc-rule', 'diálogos con voz'));
+    tile.appendChild(el('span', 'arc-pb' + (done ? '' : ' none'), done + ' de ' + all.length));
+    tile.appendChild(el('span', 'arc-pb-k', 'aprobadas'));
+    tile.addEventListener('click', function () { convoScreen(); });
+    return tile;
+  }
+  function convoScreen(noPush) {
+    if (noPush) VIEW = 'convos'; else pushView('convos');
     var h = host(); clear(h);
     var wrap = el('div', 'arc-stats');
-    wrap.style.setProperty('--g', g.hue);
-    wrap.appendChild(topBar('Conversaciones', function () { sheet(g, true); }));
-    wrap.appendChild(el('p', 'arc-sub', 'Diálogos de ejemplo. Lee la conversación y luego practica tu parte.'));
+    wrap.style.setProperty('--g', CONVO_TILE.hue);
+    wrap.appendChild(topBar('Conversaciones', goBack));
+    wrap.appendChild(el('p', 'arc-sub', 'Diálogos de ejemplo con voz. Escucha la conversación y luego practica tu parte.'));
     var box = el('div', 'cv-sheet');
-    window.ESConvo.section(box, convoThemes(), function () { convoScreen(g); }, function (v) { VIEW = v; });
+    window.ESConvo.section(box, [], function () { convoScreen(true); }, function (v) { VIEW = v; });
     wrap.appendChild(box);
     h.appendChild(wrap);
   }

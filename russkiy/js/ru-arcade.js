@@ -137,7 +137,10 @@
     wrap.appendChild(ilabCard(GAMES[0]));
     if (window.RUCheck && window.RUCheck.due()) wrap.appendChild(checkCard());
 
-    wrap.appendChild(tileRow('arc-grid arc-row3', GAMES.slice(1, 4)));
+    var withConvos = !!(window.RUConvo && window.RUConvo.all().length);
+    var main = tileRow('arc-grid arc-row3' + (withConvos ? ' arc-main4' : ''), GAMES.slice(1, 4));
+    if (withConvos) main.appendChild(convoTile());
+    wrap.appendChild(main);
     wrap.appendChild(tileRow('arc-grid arc-row4', GAMES.slice(4, 8)));
     var pair = el('div', 'arc-grid arc-row2');
     pair.appendChild(bukvyTile(GAMES[8]));
@@ -237,7 +240,6 @@
   }
 
   function sheet(g, noPush) {
-    cvb = null;
     if (g.key === 'bukvy') { pushView('bukvy'); window.RUBukvy.path(); return; }
     if (noPush) VIEW = 'sheet'; else pushView('sheet');
     var h = host();
@@ -307,7 +309,7 @@
           fall.classList.toggle('on', !pfocus.length);
           Object.keys(fby).forEach(function (k) { fby[k].classList.toggle('on', pfocus.indexOf(k) !== -1); });
         };
-        fall.addEventListener('click', function () { pfocus = []; saveFocus(pfocus); paintF(); paintCov(); paintConvos(); });
+        fall.addEventListener('click', function () { pfocus = []; saveFocus(pfocus); paintF(); paintCov(); });
         fchips.appendChild(fall);
         var mine = myPhrases();
         if (mine.length) fthemes.unshift('mine');
@@ -315,7 +317,7 @@
           fby[t] = button('arc-chip', t === 'mine' ? 'My phrases (' + mine.length + ')' : knownThemeLabel(t), function () {
             var i = pfocus.indexOf(t);
             if (i === -1) pfocus.push(t); else pfocus.splice(i, 1);
-            saveFocus(pfocus); paintF(); paintCov(); paintConvos();
+            saveFocus(pfocus); paintF(); paintCov();
           });
           fchips.appendChild(fby[t]);
         });
@@ -324,7 +326,6 @@
       }
       wrap.appendChild(button('arc-wtbtn', 'Choose your own phrases', function () { knownScreen(g, true); }));
       wrap.appendChild(button('arc-wtbtn', 'Tick the phrases you know', function () { knownScreen(g); }));
-      var paintConvos = function () { paintConvoBtn(); };
     }
 
     if (g.key === 'slova') {
@@ -369,36 +370,31 @@
     };
     mode('t', 'Споко́йно', 'Calm', '10 questions, no clock; speed only adds points');
     mode('c', 'На вре́мя', 'Against the clock', '60 s, the clock stops when you lock the phone');
-    /* Phrases: the example conversations are their own screen, a third button under the two modes. */
-    if (g.key === 'frazy' && window.RUConvo && window.RUConvo.all().length) {
-      cvb = el('button', 'arc-mode arc-convos');
-      cvb.type = 'button';
-      cvb.addEventListener('click', function () { convoScreen(g); });
-      modes.appendChild(cvb);
-      paintConvoBtn();
-    }
     wrap.appendChild(modes);
     h.appendChild(wrap);
   }
-  /* The topics chosen on the phrase sheet, as conversations see them (My phrases is not a topic of theirs). */
-  function convoThemes() { return chosenFocus().filter(function (t) { return t !== 'mine'; }); }
-  var cvb = null;
-  function paintConvoBtn() {
-    if (!cvb) return;
-    clear(cvb);
-    var n = window.RUConvo.forThemes(convoThemes()).length, total = window.RUConvo.all().length;
-    var note = n === total ? 'example dialogues to practise your part' : 'in the topics you chose';
-    var t = el('b'); t.appendChild(UI.ru('Разгово́ры')); t.appendChild(document.createTextNode(' Conversations · ' + n)); cvb.appendChild(t); cvb.appendChild(el('span', null, note));
+  /* Conversations: the fourth tile on the top row. Every example conversation, with its voices. */
+  var CONVO_HUE = '#e07a3f';
+  function convoTile() {
+    var C = window.RUConvo, all = C.all(), done = all.filter(function (c) { return C.passes(c.id) > 0; }).length;
+    var tile = el('button', 'arc-tile arc-convo-tile');
+    tile.type = 'button';
+    tile.style.setProperty('--g', CONVO_HUE);
+    tileLabel({ ru: 'Разгово́ры', tr: 'Razgovóry', en: 'Conversations' }, tile);
+    tile.appendChild(el('span', 'arc-pb' + (done ? '' : ' none'), done + ' of ' + all.length));
+    tile.appendChild(el('span', 'arc-pb-k', 'passed'));
+    tile.addEventListener('click', function () { convoScreen(); });
+    return tile;
   }
-  function convoScreen(g) {
-    VIEW = 'convos';           // keeps the sheet's history entry: back returns to the sheet
+  function convoScreen(noPush) {
+    if (noPush) VIEW = 'convos'; else pushView('convos');
     var h = host(); clear(h);
     var wrap = el('div', 'arc-stats');
-    wrap.style.setProperty('--g', g.hue);
-    wrap.appendChild(topBar('Conversations', null, function () { sheet(g, true); }));
-    wrap.appendChild(el('p', 'arc-sub', 'Example dialogues. Read the conversation, then practise your part.'));
+    wrap.style.setProperty('--g', CONVO_HUE);
+    wrap.appendChild(topBar('Conversations', null, goBack));
+    wrap.appendChild(el('p', 'arc-sub', 'Example dialogues with voices. Listen to the conversation, then practise your part.'));
     var box = el('div', 'cv-sheet');
-    window.RUConvo.section(box, convoThemes(), function () { convoScreen(g); }, function (v) { VIEW = v; });
+    window.RUConvo.section(box, [], function () { convoScreen(true); }, function (v) { VIEW = v; });
     wrap.appendChild(box);
     h.appendChild(wrap);
   }

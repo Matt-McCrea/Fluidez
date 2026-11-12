@@ -454,3 +454,24 @@ a.arc-mode { text-decoration:none; }
 .arc-known-en { font-weight:600; }
 .arc-known-tx { color:var(--muted); }
 .arc-known-row[hidden], .arc-known-group[hidden] { display:none; }
+
+/* ---- example conversations (js/convo.js) ---------------------------------
+   A chat: the other side on the left, you on the right, a speaker on every
+   recorded line, and the line being played lit while Escuchar todo runs. */
+.cv-list { margin-bottom:6px; }
+.cv-chat { display:flex; flex-direction:column; gap:10px; margin:14px 0; }
+.cv-bubble { position:relative; max-width:88%; padding:10px 52px 10px 14px; border-radius:16px; border:1px solid var(--border); background:var(--panel); text-align:left; transition:border-color .2s, box-shadow .2s; }
+.cv-them { align-self:flex-start; border-bottom-left-radius:4px; }
+.cv-me { align-self:flex-end; border-bottom-right-radius:4px; background:var(--panel-2); }
+.cv-who { font-size:.68rem; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; margin-bottom:2px; }
+.cv-es { font-size:1.08rem; line-height:1.4; font-weight:600; }
+.cv-en { font-size:.84rem; color:var(--muted); margin-top:3px; }
+.cv-note { font-size:.8rem; color:var(--muted); line-height:1.5; margin:8px 0 0; }
+.cv-playing { border-color:var(--accent); box-shadow:0 0 0 2px var(--accent); }
+.spk { background:var(--panel-2); border:1px solid var(--border); border-radius:999px; min-height:36px; min-width:36px; padding:0 8px; color:var(--text); font-size:1rem; cursor:pointer; }
+.cv-bubble .cv-spk { position:absolute; top:6px; right:4px; font-size:1.2rem; min-width:44px; min-height:44px; }
+.cv-playall { margin-top:4px; }
+.cv-practise { text-align:left; }
+.cv-result { display:flex; flex-direction:column; gap:10px; align-items:center; margin:8px 0; }
+@media (min-width:560px) { .cv-bubble { max-width:70%; } }
+@media (prefers-reduced-motion:reduce) { .cv-bubble { transition:none; } }

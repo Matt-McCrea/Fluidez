@@ -15,7 +15,7 @@
  * ASSETS must mirror every <script>/<link> in juegos/index.html. It is
  * deliberately short — that shortness is the entire feature.
  * ========================================================================== */
-var CACHE_VERSION = 'j099c5ab0';
+var CACHE_VERSION = 'j76561916';
 var CACHE_NAME = 'fluidez-juegos-' + CACHE_VERSION;
 
 var ASSETS = [
@@ -49,6 +49,7 @@ var ASSETS = [
   '../data/verb-gaps.js',
   '../data/phrases.js',
   '../data/conversations.js',
+  '../data/convo-audio.js',
   '../data/tense-cards.js',
   '../js/gameitems.js',
   '../js/gameround.js',
@@ -56,6 +57,7 @@ var ASSETS = [
   '../js/liga.js',
   '../js/study.js',
   '../js/tensecheck.js',
+  '../js/convo-audio.js',
   '../js/convo.js',
   '../js/arcade.js'
 ];
@@ -86,6 +88,20 @@ self.addEventListener('activate', function (event) {
 // every question comes from a file that is either cached or not there at all.
 self.addEventListener('fetch', function (event) {
   if (event.request.method !== 'GET') return;
+  // The conversation voices (audio/c-*.bin) are named by their content: kept in their own
+  // cache, which a new version does not clear, so they are fetched once.
+  var u = new URL(event.request.url);
+  if (u.origin === self.location.origin && u.pathname.indexOf('/audio/') !== -1) {
+    event.respondWith(caches.open('juegos-audio').then(function (cache) {
+      return cache.match(event.request).then(function (hit) {
+        return hit || fetch(event.request).then(function (res) {
+          if (res && res.ok) cache.put(event.request, res.clone());
+          return res;
+        });
+      });
+    }));
+    return;
+  }
   // The league's board comes from Supabase and must never be served from here.
   if (new URL(event.request.url).origin !== self.location.origin) return;
   event.respondWith(
