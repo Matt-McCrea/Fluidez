@@ -215,7 +215,7 @@ window.ARItems = (function () {
     if (sub === 'ph' && opts && opts.gkind === 'ibarat' && opts.themes && opts.themes.length) {
       var tset = {};
       opts.themes.forEach(function (t) { tset[t] = 1; });
-      L = G.list.filter(function (e) { return tset[e.th]; });
+      L = G.list.filter(function (e) { return tset[e.th] || tset['id:' + e.id]; });
     }
     var capIx = G.bandCap ? bandIx(playerBand()) + 1 : 9;
     var td = today();
@@ -542,7 +542,7 @@ window.ARItems = (function () {
   }
   function phraseCoverage(themes) {
     var G = phraseList(), L = G.list, n = 0, focus = !!(themes && themes.length);
-    if (focus) L = L.filter(function (e) { return themes.indexOf(e.th) !== -1; });
+    if (focus) L = L.filter(function (e) { return themes.indexOf(e.th) !== -1 || themes.indexOf('id:' + e.id) !== -1; });
     var of = L.length;
     L.forEach(function (e) { if (knownCard(stateOf(e.id))) n++; });
     return { n: n, of: of, text: of ? 'You know ' + thousands(n) + ' of ' + thousands(of) + (focus ? ' phrases in these topics' : ' phrases') : 'No phrases yet' };

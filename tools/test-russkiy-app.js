@@ -380,6 +380,30 @@ W.Profile.set('B2');                                   // widest pool
   wipeSrs();
 }
 
+// ---- My phrases: choose your own, and the round asks only those ---------------------------------------------------------------
+{
+  wipeSrs(); delete store['svobodno.arcade'];
+  W.Profile.set('A1');
+  W.RUArcade.knownScreen({ key: 'x', hue: '#fff' }, true);
+  const boxes = STAGE.all(n => n.cls().includes('arc-known-row')).map(r => r.all(c => c.tagName === 'INPUT')[0]);
+  ok(boxes.length === GI.phraseList().list.length && boxes.every(b => !b.checked), 'the choose screen lists every phrase, none ticked');
+  [0, 3].forEach(i => { boxes[i].checked = true; boxes[i]._on.change.forEach(fn => fn()); });
+  const arc = JSON.parse(store['svobodno.arcade']), mine = arc.pmine;
+  ok(mine.length === 2 && mine.every(id => !SRS.isLearnt(id)), 'two ticks put two phrases on your own list, and nothing is marked known');
+  ok((arc.focus || arc.pfocus).indexOf('mine') !== -1, 'the My phrases topic turns on by itself');
+  const themes = mine.map(id => 'id:' + id), seen = new Set(), st = { asked: 0, newN: 0, used: {} };
+  for (let i = 0; i < 30; i++) { const it = GI.next('frazy', 2, rng, { grind: st, count: 30, gkind: 'frazy', themes }); if (it) seen.add(it.id); }
+  ok(seen.size > 0 && [...seen].every(id => mine.indexOf(id) !== -1), 'the grind deals only your phrases: ' + [...seen]);
+  ok(/ of 2 phrases/.test(GI.phraseCoverage(themes).text), 'the coverage line counts your phrases: ' + GI.phraseCoverage(themes).text);
+  W.RUArcade.knownScreen({ key: 'x', hue: '#fff' }, true);
+  const b2 = STAGE.all(n => n.cls().includes('arc-known-row')).map(r => r.all(c => c.tagName === 'INPUT')[0]);
+  ok(b2.filter(b => b.checked).length === 2, 'the choose screen shows your ticks again');
+  [0, 3].forEach(i => { b2[i].checked = false; b2[i]._on.change.forEach(fn => fn()); });
+  const arc2 = JSON.parse(store['svobodno.arcade']);
+  ok(arc2.pmine.length === 0 && (arc2.focus || arc2.pfocus).indexOf('mine') === -1, 'an empty list turns the topic off');
+  wipeSrs(); delete store['svobodno.arcade'];
+}
+
 // ---- ticking a phrase as known skips it; unticking brings it back ------------------------------------------------------------
 {
   wipeSrs();

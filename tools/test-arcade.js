@@ -1990,6 +1990,30 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     for (let i = 0; i < 80; i++) { const it = GI.next('sphrase', 2, rng, { grind: st3, count: 80, gkind: 'sphrase' }); if (it) all.add(th(it.id)); }
     ok(all.size > 2, 'no focus deals from every theme');
   }
+  { // Mis frases: pick your own phrases, and the round asks only those
+    has('arc-wtbtn').filter(b => b.textContent === 'Elige tus frases')[0].click();
+    const rows = has('arc-known-row'), box = r => r.all(c => c.tagName === 'INPUT')[0];
+    ok(rows.length === GI.phraseList().list.length && rows.every(r => !box(r).checked), 'the pick screen lists every phrase, none ticked');
+    const L = GI.phraseList().list, picks = [L[5].id, L[40].id, L[90].id];
+    rows.forEach(r => { const b = box(r), id = L.filter(e => r.textContent.indexOf(e.en) === 0 && r.textContent === e.en + e.es)[0];
+      if (id && picks.indexOf(id.id) !== -1) { b.checked = true; b.dispatchEvent({ type: 'change' }); } });
+    const arc = JSON.parse(localStorage.getItem('fluidez.arcade'));
+    ok(JSON.stringify(arc.pmine.slice().sort()) === JSON.stringify(picks.slice().sort()), 'ticks go on your own list: ' + JSON.stringify(arc.pmine));
+    ok(arc.pfocus.indexOf('mine') !== -1 && picks.every(id => !W.SRS.isLearnt(id)), 'the Mis frases topic turns on, and nothing is marked known');
+    frasesTile();
+    ok(!!chip('Mis frases (3)') && chip('Mis frases (3)').cls().includes('on'), 'the sheet shows Mis frases (3), on');
+    chip('Comida').click(); chip('Viajes').click();
+    let got = null; const run = W.GameRound.run; W.GameRound.run = (h, cfg) => { got = cfg; };
+    try { has('arc-mode')[0].click(); } finally { W.GameRound.run = run; }
+    ok(got && JSON.stringify(got.themes.slice().sort()) === JSON.stringify(picks.map(id => 'id:' + id).sort()), 'the round gets only your phrases: ' + JSON.stringify(got && got.themes));
+    localStorage.removeItem('fluidez.srs'); W.SRS._reset(); GI.reset();
+    const seen = new Set(), st = { asked: 0, newN: 0, used: {} };
+    for (let i = 0; i < 30; i++) { const it = GI.next('sphrase', 2, rng, { grind: st, count: 30, gkind: 'sphrase', themes: got.themes }); if (it) seen.add(it.id); }
+    ok(seen.size > 0 && [...seen].every(id => picks.indexOf(id) !== -1), 'the grind deals only your phrases: ' + [...seen]);
+    ok(/ de 3 frases en estos temas$/.test(GI.phraseCoverage(got.themes).text), 'the coverage line counts your phrases');
+    frasesTile(); chip('Mis frases (3)').click(); chip('Comida').click(); chip('Viajes').click();
+    ok(JSON.stringify(JSON.parse(localStorage.getItem('fluidez.arcade')).pfocus) === JSON.stringify(FA), 'Mis frases toggles off like any topic, and the list stays');
+  }
   { // the round config carries it; the Jugar mix does not
     let got = null; const run = W.GameRound.run;
     W.GameRound.run = (h, cfg) => { got = cfg; };

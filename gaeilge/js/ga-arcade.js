@@ -208,6 +208,18 @@
   /* The Frásaí sheet's topic focus (multi-select; empty means all topics). */
   function chosenFocus() { var f = loadArc().pfocus; return Array.isArray(f) ? f.slice() : []; }
   function saveFocus(f) { var a = loadArc(); a.pfocus = f; saveArc(a); }
+  /* My phrases: the learner's own list of phrase ids. As a topic it is 'mine' in the focus,
+   * and it reaches the round as 'id:<phrase id>' entries in the themes array. */
+  function myPhrases() { var m = loadArc().pmine; return Array.isArray(m) ? m.slice() : []; }
+  function saveMine(m) { var a = loadArc(); a.pmine = m; saveArc(a); }
+  function focusThemes(f) {
+    var out = [];
+    (f || []).forEach(function (t) {
+      if (t === 'mine') myPhrases().forEach(function (id) { out.push('id:' + id); });
+      else out.push(t);
+    });
+    return out;
+  }
 
   // units of this tile that have sentences: the picker offers these
   function unitsFor(g) {
@@ -263,12 +275,12 @@
     if (g.key === 'frasai') {
       var pfocus = chosenFocus(), pcovLine = el('div', 'arc-progress-all');
       wrap.appendChild(el('div', 'arc-progress')).appendChild(pcovLine);
-      var paintCov = function () { pcovLine.textContent = GI.phraseCoverage(pfocus).text; };
+      var paintCov = function () { pcovLine.textContent = GI.phraseCoverage(focusThemes(pfocus)).text; };
       paintCov();
       var fbox = el('div', 'cv-sheet');
       var paintConvos = function () {
         clear(fbox);
-        if (window.GAConvo) window.GAConvo.section(fbox, pfocus, function () { sheet(g, true); }, function (v) { VIEW = v; });
+        if (window.GAConvo) window.GAConvo.section(fbox, pfocus.filter(function (t) { return t !== 'mine'; }), function () { sheet(g, true); }, function (v) { VIEW = v; });
       };
       var fthemes = Object.keys(GI.phraseList().byTheme)
         .sort(function (a, b) { return knownThemeLabel(a) < knownThemeLabel(b) ? -1 : knownThemeLabel(a) > knownThemeLabel(b) ? 1 : 0; });
@@ -282,8 +294,10 @@
         };
         fall.addEventListener('click', function () { pfocus = []; saveFocus(pfocus); paintF(); paintCov(); paintConvos(); });
         fchips.appendChild(fall);
+        var mine = myPhrases();
+        if (mine.length) fthemes.unshift('mine');
         fthemes.forEach(function (t) {
-          fby[t] = button('arc-chip', knownThemeLabel(t), function () {
+          fby[t] = button('arc-chip', t === 'mine' ? 'My phrases (' + mine.length + ')' : knownThemeLabel(t), function () {
             var i = pfocus.indexOf(t);
             if (i === -1) pfocus.push(t); else pfocus.splice(i, 1);
             saveFocus(pfocus); paintF(); paintCov(); paintConvos();
@@ -293,6 +307,7 @@
         paintF();
         wrap.appendChild(fchips);
       }
+      wrap.appendChild(button('arc-wtbtn', 'Choose your own phrases', function () { knownScreen(g, true); }));
       wrap.appendChild(button('arc-wtbtn', 'Tick the phrases you know', function () { knownScreen(g); }));
       paintConvos();
       wrap.appendChild(fbox);
@@ -352,7 +367,7 @@
     var sel = chosen(g.key);
     if (sel.length) { if (g.kind === 'briathra') cfg.tenses = sel; else cfg.topics = sel; }
     if (g.key === 'focail') { var wth = chosenWordTheme(); if (wth) cfg.theme = wth; }
-    if (g.key === 'frasai' && chosenFocus().length) cfg.themes = chosenFocus();     // the Imir mix ignores the focus
+    if (g.key === 'frasai' && focusThemes(chosenFocus()).length) cfg.themes = focusThemes(chosenFocus());     // the Imir mix ignores the focus
     if (extra) Object.keys(extra).forEach(function (k) { cfg[k] = extra[k]; });
     window.GameRound.run(host(), cfg);
   }
@@ -670,7 +685,7 @@
    * phrase is never dealt again); unticking calls SRS.unlearn (the record goes, so it is new). */
   var KNOWN_THEMES = { aimsir: 'Weather', am: 'Time', baile: 'At home', beannachtai: 'Greetings', cabhair: 'Asking for help', ceiliuradh: 'Celebrations', comhra: 'Conversation', mise: 'About me', mothu: 'Feelings', rang: 'In class', siopa: 'Shopping' };
   function knownThemeLabel(id) { return KNOWN_THEMES[id] || GI.prettyTheme(id); }
-  function knownScreen(g) {
+  function knownScreen(g, pick) {
     VIEW = 'known';            // keeps the sheet's history entry: back returns to the sheet
     var h = host(); clear(h);
     var BANDS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
@@ -678,8 +693,23 @@
 
     var wrap = el('div', 'arc-stats arc-known');
     wrap.style.setProperty('--g', g.hue);
-    wrap.appendChild(topBar('Phrases you know', null, function () { sheet(g, true); }));
-    wrap.appendChild(el('p', 'arc-sub', 'Tick any phrase you already know. Ticked phrases are never asked again. Untick one to bring it back as new.'));
+    wrap.appendChild(topBar(pick ? 'Choose your own phrases' : 'Phrases you know', null, function () { sheet(g, true); }));
+    wrap.appendChild(el('p', 'arc-sub', pick ? 'Tick the phrases you want to learn. With the My phrases topic on, rounds ask only these.'
+      : 'Tick any phrase you already know. Ticked phrases are never asked again. Untick one to bring it back as new.'));
+    /* In pick mode a tick puts the phrase on the learner's own list instead of marking it known. */
+    var mineSet = {};
+    myPhrases().forEach(function (id) { mineSet[id] = 1; });
+    function isOn(id) { return pick ? !!mineSet[id] : S.isLearnt(id); }
+    function setOn(id, on) {
+      if (!pick) { if (on) S.learn(id); else S.unlearn(id); return; }
+      if (on) mineSet[id] = 1; else delete mineSet[id];
+      var ids = G.list.filter(function (e) { return mineSet[e.id]; }).map(function (e) { return e.id; });
+      saveMine(ids);
+      var f = chosenFocus(), i = f.indexOf('mine');
+      if (ids.length && i === -1) f.push('mine');
+      if (!ids.length && i !== -1) f.splice(i, 1);
+      saveFocus(f);
+    }
     var box = el('input', 'arc-wt-input arc-known-search');
     box.type = 'search'; box.placeholder = 'Search the phrases'; box.setAttribute('aria-label', 'Search the phrases');
     wrap.appendChild(box);
@@ -701,7 +731,7 @@
       head.appendChild(el('h3', null, knownThemeLabel(gr.th)));
       var tl = el('label', 'arc-known-all');
       gr.tog = el('input'); gr.tog.type = 'checkbox';
-      tl.appendChild(gr.tog); tl.appendChild(el('span', null, 'I know all of these'));
+      tl.appendChild(gr.tog); tl.appendChild(el('span', null, pick ? 'All of these' : 'I know all of these'));
       head.appendChild(tl);
       gr.box.appendChild(head);
       gr.items = [];
@@ -713,7 +743,7 @@
         txt.appendChild(el('span', 'arc-known-tx', e.ga));
         row.appendChild(cb); row.appendChild(txt);
         cb.addEventListener('change', function () {
-          if (cb.checked) S.learn(e.id); else S.unlearn(e.id);
+          setOn(e.id, cb.checked);
           paint();
         });
         var it = { e: e, cb: cb, row: row, hay: (e.en + ' ' + e.ga).toLowerCase() };
@@ -723,9 +753,8 @@
       gr.tog.addEventListener('change', function () {
         gr.items.forEach(function (it) {
           if (it.row.hidden) return;
-          var on = S.isLearnt(it.e.id);
-          if (gr.tog.checked && !on) S.learn(it.e.id);
-          else if (!gr.tog.checked && on) S.unlearn(it.e.id);
+          var on = isOn(it.e.id);
+          if (gr.tog.checked !== on) setOn(it.e.id, gr.tog.checked);
         });
         paint();
       });
@@ -733,11 +762,11 @@
     });
     wrap.appendChild(list);
     function paint() {
-      var q = box.value.trim().toLowerCase();
+      var q = (box.value || '').trim().toLowerCase();
       order.forEach(function (gr) {
         var shown = 0, ticked = 0;
         gr.items.forEach(function (it) {
-          it.cb.checked = S.isLearnt(it.e.id);
+          it.cb.checked = isOn(it.e.id);
           it.row.hidden = !!q && it.hay.indexOf(q) === -1;
           if (!it.row.hidden) { shown++; if (it.cb.checked) ticked++; }
         });

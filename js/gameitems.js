@@ -1587,7 +1587,7 @@ window.GameItems = (function () {
     if (sub === 'ph' && opts && opts.gkind === 'sphrase' && opts.themes && opts.themes.length) {
       var tset = {};
       opts.themes.forEach(function (t) { tset[t] = 1; });
-      L = G.list.filter(function (e) { return tset[e.th]; });
+      L = G.list.filter(function (e) { return tset[e.th] || tset['id:' + e.id]; });
     }
     var capIx = G.bandCap ? bandIx(playerBand()) + 1 : 9;
     var store = srsStore(), td = window.SRS && window.SRS.today ? window.SRS.today() : Math.floor(Date.now() / 864e5);
@@ -1745,7 +1745,7 @@ window.GameItems = (function () {
   function phraseCoverage(themes) {
     var G = phraseList(), store = srsStore(), of = Math.floor(G.list.length / 100) * 100 || G.list.length, n = 0;
     if (themes && themes.length) {
-      var L = G.list.filter(function (e) { return themes.indexOf(e.th) !== -1; });
+      var L = G.list.filter(function (e) { return themes.indexOf(e.th) !== -1 || themes.indexOf('id:' + e.id) !== -1; });
       L.forEach(function (e) { if (knownCard(store[e.id])) n++; });
       return { n: n, of: L.length, text: L.length ? 'Conoces ' + thousands(n) + ' de ' + thousands(L.length) + ' frases en estos temas' : 'Aún no hay frases en estos temas' };
     }

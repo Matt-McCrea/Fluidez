@@ -201,7 +201,7 @@ window.GAItems = (function () {
     if (sub === 'ph' && opts && opts.gkind === 'frasai' && opts.themes && opts.themes.length) {
       var tset = {};
       opts.themes.forEach(function (t) { tset[t] = 1; });
-      L = G.list.filter(function (e) { return tset[e.th]; });
+      L = G.list.filter(function (e) { return tset[e.th] || tset['id:' + e.id]; });
     }
     var capIx = G.bandCap ? bandIx(playerBand()) + 1 : 9;
     var td = today();
@@ -441,7 +441,7 @@ window.GAItems = (function () {
   }
   function phraseCoverage(themes) {
     var G = phraseList(), of = G.list.length, n = 0, focus = !!(themes && themes.length);
-    var L = focus ? G.list.filter(function (e) { return themes.indexOf(e.th) !== -1; }) : G.list;
+    var L = focus ? G.list.filter(function (e) { return themes.indexOf(e.th) !== -1 || themes.indexOf('id:' + e.id) !== -1; }) : G.list;
     if (focus) {
       L.forEach(function (e) { if (knownCard(stateOf(e.id))) n++; });
       return { n: n, of: L.length, text: L.length ? 'You know ' + thousands(n) + ' of ' + thousands(L.length) + ' phrases in these topics' : 'No phrases in these topics yet' };
