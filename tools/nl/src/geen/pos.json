@@ -1,0 +1,694 @@
+[
+ {
+  "q": "Ik zie ___.",
+  "a": "hem niet",
+  "o": [
+   "hem niet",
+   "niet hem"
+  ],
+  "e": "I don't see him.",
+  "w": "niet comes after a pronoun object.",
+  "wn": "niet na het voornaamwoord.",
+  "t": "pos",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn buurman komt ___.",
+  "a": "vandaag niet",
+  "o": [
+   "vandaag niet",
+   "niet vandaag"
+  ],
+  "e": "My neighbour isn't coming today.",
+  "w": "A time word like vandaag or morgen comes before niet.",
+  "wn": "Tijd voor niet.",
+  "t": "pos",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ken ___.",
+  "a": "haar niet",
+  "o": [
+   "haar niet",
+   "niet haar"
+  ],
+  "e": "I don't know her.",
+  "w": "niet comes after a pronoun object.",
+  "wn": "niet na het voornaamwoord.",
+  "t": "pos",
+  "b": "A1"
+ },
+ {
+  "q": "Wij kopen ___.",
+  "a": "het huis niet",
+  "o": [
+   "het huis niet",
+   "niet het huis"
+  ],
+  "e": "We aren't buying the house.",
+  "w": "niet comes after a definite object.",
+  "wn": "niet na het bepaalde lijdend voorwerp.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Zij is ___.",
+  "a": "niet ziek",
+  "o": [
+   "niet ziek",
+   "ziek niet"
+  ],
+  "e": "She isn't ill.",
+  "w": "niet comes before an adjective.",
+  "wn": "niet voor het bijvoeglijk naamwoord.",
+  "t": "pos",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb het ___.",
+  "a": "niet gedaan",
+  "o": [
+   "niet gedaan",
+   "gedaan niet"
+  ],
+  "e": "I didn't do it.",
+  "w": "niet comes before the participle or infinitive at the end.",
+  "wn": "niet voor het werkwoord aan het eind.",
+  "t": "pos",
+  "b": "A1"
+ },
+ {
+  "q": "Hij kan ___.",
+  "a": "niet komen",
+  "o": [
+   "niet komen",
+   "komen niet"
+  ],
+  "e": "He can't come.",
+  "w": "niet comes before the participle or infinitive at the end.",
+  "wn": "niet voor het werkwoord aan het eind.",
+  "t": "pos",
+  "b": "A1"
+ },
+ {
+  "q": "Ik woon ___.",
+  "a": "niet in Rotterdam",
+  "o": [
+   "niet in Rotterdam",
+   "in Rotterdam niet",
+   "in niet Rotterdam"
+  ],
+  "e": "I don't live in Rotterdam.",
+  "w": "niet comes before a phrase with a preposition.",
+  "wn": "niet voor het voorzetsel.",
+  "t": "pos",
+  "b": "A1"
+ },
+ {
+  "q": "Ik weet dat hij ___.",
+  "a": "niet komt",
+  "o": [
+   "niet komt",
+   "komt niet"
+  ],
+  "e": "I know he isn't coming.",
+  "w": "In a sub clause niet comes just before the verb at the end.",
+  "wn": "In de bijzin: niet voor het werkwoord.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Zij belt me ___.",
+  "a": "niet op",
+  "o": [
+   "niet op",
+   "op niet"
+  ],
+  "e": "She doesn't call me.",
+  "w": "Separable verb: niet comes before the particle at the end.",
+  "wn": "niet voor het scheidbare deel.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Ik werk ___, want ik ben vrij.",
+  "a": "morgen niet",
+  "o": [
+   "morgen niet",
+   "niet morgen"
+  ],
+  "e": "I'm not working tomorrow, because I'm off.",
+  "w": "A time word like vandaag or morgen comes before niet.",
+  "wn": "Tijd voor niet.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "We hebben ___.",
+  "a": "de film niet gezien",
+  "o": [
+   "de film niet gezien",
+   "de film gezien niet",
+   "niet gezien de film"
+  ],
+  "e": "We haven't seen the film.",
+  "w": "niet comes before the participle or infinitive at the end.",
+  "wn": "niet voor het werkwoord aan het eind.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Hij leest ___.",
+  "a": "de krant niet",
+  "o": [
+   "de krant niet",
+   "niet de krant"
+  ],
+  "e": "He doesn't read the paper.",
+  "w": "niet comes after a definite object.",
+  "wn": "niet na het bepaalde lijdend voorwerp.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Het eten is ___.",
+  "a": "niet lekker",
+  "o": [
+   "niet lekker",
+   "lekker niet"
+  ],
+  "e": "The food isn't tasty.",
+  "w": "niet comes before an adjective.",
+  "wn": "niet voor het bijvoeglijk naamwoord.",
+  "t": "pos",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ga ___.",
+  "a": "niet naar het feest",
+  "o": [
+   "niet naar het feest",
+   "naar het feest niet",
+   "naar niet het feest"
+  ],
+  "e": "I'm not going to the party.",
+  "w": "niet comes before a phrase with a preposition.",
+  "wn": "niet voor het voorzetsel.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Ik denk dat ze ___.",
+  "a": "het niet weet",
+  "o": [
+   "het niet weet",
+   "het weet niet",
+   "niet het weet"
+  ],
+  "e": "I think she doesn't know.",
+  "w": "niet after the pronoun, before the verb at the end.",
+  "wn": "niet na het voornaamwoord, voor het werkwoord.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Ze spreekt ___.",
+  "a": "niet snel",
+  "o": [
+   "niet snel",
+   "snel niet"
+  ],
+  "e": "She doesn't speak fast.",
+  "w": "niet comes before an adverb like goed, snel or hard.",
+  "wn": "niet voor het bijwoord.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Hij heeft ___.",
+  "a": "me niet geholpen",
+  "o": [
+   "me niet geholpen",
+   "niet me geholpen",
+   "me geholpen niet"
+  ],
+  "e": "He didn't help me.",
+  "w": "niet after the pronoun, before the verb at the end.",
+  "wn": "niet na het voornaamwoord, voor het werkwoord.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Ik wil ___.",
+  "a": "niet slapen",
+  "o": [
+   "niet slapen",
+   "slapen niet"
+  ],
+  "e": "I don't want to sleep.",
+  "w": "niet comes before the participle or infinitive at the end.",
+  "wn": "niet voor het werkwoord aan het eind.",
+  "t": "pos",
+  "b": "A1"
+ },
+ {
+  "q": "De winkel gaat vandaag ___.",
+  "a": "niet open",
+  "o": [
+   "niet open",
+   "open niet"
+  ],
+  "e": "The shop isn't opening today.",
+  "w": "Separable verb: niet comes before the particle at the end.",
+  "wn": "niet voor het scheidbare deel.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Ik vind ___.",
+  "a": "het niet leuk",
+  "o": [
+   "het niet leuk",
+   "het leuk niet",
+   "niet het leuk"
+  ],
+  "e": "I don't like it.",
+  "w": "niet comes before an adjective.",
+  "wn": "niet voor het bijvoeglijk naamwoord.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Omdat de bus ___, lopen we.",
+  "a": "niet rijdt",
+  "o": [
+   "niet rijdt",
+   "rijdt niet"
+  ],
+  "e": "Because the bus isn't running, we walk.",
+  "w": "In a sub clause niet comes just before the verb at the end.",
+  "wn": "In de bijzin: niet voor het werkwoord.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Zij heeft ___.",
+  "a": "de deur niet dichtgedaan",
+  "o": [
+   "de deur niet dichtgedaan",
+   "de deur dichtgedaan niet"
+  ],
+  "e": "She didn't close the door.",
+  "w": "niet comes before the participle or infinitive at the end.",
+  "wn": "niet voor het werkwoord aan het eind.",
+  "t": "pos",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb ___.",
+  "a": "hem gisteren niet gezien",
+  "o": [
+   "hem gisteren niet gezien",
+   "hem gisteren gezien niet",
+   "niet hem gisteren gezien"
+  ],
+  "e": "I didn't see him yesterday.",
+  "w": "A time word like vandaag or morgen comes before niet.",
+  "wn": "Tijd voor niet.",
+  "t": "pos",
+  "b": "B1"
+ },
+ {
+  "q": "Hij rijdt ___.",
+  "a": "niet hard",
+  "o": [
+   "niet hard",
+   "hard niet"
+  ],
+  "e": "He doesn't drive fast.",
+  "w": "niet comes before an adverb like goed, snel or hard.",
+  "wn": "niet voor het bijwoord.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Ze houdt ___.",
+  "a": "niet van vis",
+  "o": [
+   "niet van vis",
+   "van vis niet",
+   "van niet vis"
+  ],
+  "e": "She doesn't like fish.",
+  "w": "niet comes before a phrase with a preposition.",
+  "wn": "niet voor het voorzetsel.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Ik geloof ___.",
+  "a": "het verhaal niet",
+  "o": [
+   "het verhaal niet",
+   "niet het verhaal"
+  ],
+  "e": "I don't believe the story.",
+  "w": "niet comes after a definite object.",
+  "wn": "niet na het bepaalde lijdend voorwerp.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Wij komen ___.",
+  "a": "niet mee",
+  "o": [
+   "niet mee",
+   "mee niet"
+  ],
+  "e": "We aren't coming along.",
+  "w": "Separable verb: niet comes before the particle at the end.",
+  "wn": "niet voor het scheidbare deel.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Ik vraag me af of ze ___.",
+  "a": "niet thuis is",
+  "o": [
+   "niet thuis is",
+   "is niet thuis",
+   "thuis niet is"
+  ],
+  "e": "I wonder if she isn't at home.",
+  "w": "In a sub clause niet comes just before the verb at the end.",
+  "wn": "In de bijzin: niet voor het werkwoord.",
+  "t": "pos",
+  "b": "B1"
+ },
+ {
+  "q": "Hij mag ___.",
+  "a": "niet werken",
+  "o": [
+   "niet werken",
+   "werken niet"
+  ],
+  "e": "He isn't allowed to work.",
+  "w": "niet comes before the participle or infinitive at the end.",
+  "wn": "niet voor het werkwoord aan het eind.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb ___ betaald.",
+  "a": "de rekening niet",
+  "o": [
+   "de rekening niet",
+   "niet de rekening"
+  ],
+  "e": "I didn't pay the bill.",
+  "w": "niet comes after a definite object.",
+  "wn": "niet na het bepaalde lijdend voorwerp.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Ze is ___.",
+  "a": "niet erg blij",
+  "o": [
+   "niet erg blij",
+   "erg niet blij",
+   "erg blij niet"
+  ],
+  "e": "She isn't very happy.",
+  "w": "niet comes before an adjective.",
+  "wn": "niet voor het bijvoeglijk naamwoord.",
+  "t": "pos",
+  "b": "B1"
+ },
+ {
+  "q": "Het boek ligt ___.",
+  "a": "niet op tafel",
+  "o": [
+   "niet op tafel",
+   "op tafel niet"
+  ],
+  "e": "The book isn't on the table.",
+  "w": "niet comes before a phrase with a preposition.",
+  "wn": "niet voor het voorzetsel.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Ik kan ___.",
+  "a": "je niet horen",
+  "o": [
+   "je niet horen",
+   "niet je horen",
+   "je horen niet"
+  ],
+  "e": "I can't hear you.",
+  "w": "niet after the pronoun, before the verb at the end.",
+  "wn": "niet na het voornaamwoord, voor het werkwoord.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Hij is ___ gekomen.",
+  "a": "gisteren niet",
+  "o": [
+   "gisteren niet",
+   "niet gisteren"
+  ],
+  "e": "He didn't come yesterday.",
+  "w": "A time word like vandaag or morgen comes before niet.",
+  "wn": "Tijd voor niet.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Ik zei dat ik ___.",
+  "a": "het niet wist",
+  "o": [
+   "het niet wist",
+   "het wist niet",
+   "niet het wist"
+  ],
+  "e": "I said I didn't know.",
+  "w": "niet after the pronoun, before the verb at the end.",
+  "wn": "niet na het voornaamwoord, voor het werkwoord.",
+  "t": "pos",
+  "b": "B1"
+ },
+ {
+  "q": "Wij gaan ___.",
+  "a": "niet uit",
+  "o": [
+   "niet uit",
+   "uit niet"
+  ],
+  "e": "We aren't going out.",
+  "w": "Separable verb: niet comes before the particle at the end.",
+  "wn": "niet voor het scheidbare deel.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Ze heeft ___.",
+  "a": "het niet begrepen",
+  "o": [
+   "het niet begrepen",
+   "het begrepen niet",
+   "niet het begrepen"
+  ],
+  "e": "She didn't understand it.",
+  "w": "niet after the pronoun, before the verb at the end.",
+  "wn": "niet na het voornaamwoord, voor het werkwoord.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Ik drink ___.",
+  "a": "de wijn niet",
+  "o": [
+   "de wijn niet",
+   "niet de wijn"
+  ],
+  "e": "I'm not drinking the wine.",
+  "w": "niet comes after a definite object.",
+  "wn": "niet na het bepaalde lijdend voorwerp.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "De kinderen slapen ___.",
+  "a": "niet goed",
+  "o": [
+   "niet goed",
+   "goed niet"
+  ],
+  "e": "The children don't sleep well.",
+  "w": "niet comes before an adverb like goed, snel or hard.",
+  "wn": "niet voor het bijwoord.",
+  "t": "pos",
+  "b": "A1"
+ },
+ {
+  "q": "Hij wil ___.",
+  "a": "niet met ons praten",
+  "o": [
+   "niet met ons praten",
+   "met ons praten niet"
+  ],
+  "e": "He doesn't want to talk to us.",
+  "w": "niet comes before the participle or infinitive at the end.",
+  "wn": "niet voor het werkwoord aan het eind.",
+  "t": "pos",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb vanochtend ___.",
+  "a": "mijn tas niet meegenomen",
+  "o": [
+   "mijn tas niet meegenomen",
+   "mijn tas meegenomen niet"
+  ],
+  "e": "I didn't bring my bag this morning.",
+  "w": "niet comes before the participle or infinitive at the end.",
+  "wn": "niet voor het werkwoord aan het eind.",
+  "t": "pos",
+  "b": "B1"
+ },
+ {
+  "q": "Als je ___, mis je de trein.",
+  "a": "niet opschiet",
+  "o": [
+   "niet opschiet",
+   "opschiet niet",
+   "schiet niet op"
+  ],
+  "e": "If you don't hurry, you'll miss the train.",
+  "w": "In a sub clause a separable verb stays whole, with niet before it.",
+  "wn": "In de bijzin: niet opschiet.",
+  "t": "pos",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ben ___.",
+  "a": "niet op tijd",
+  "o": [
+   "niet op tijd",
+   "op tijd niet"
+  ],
+  "e": "I'm not on time.",
+  "w": "niet comes before a phrase with a preposition.",
+  "wn": "niet voor het voorzetsel.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Ze ziet ___.",
+  "a": "ons niet",
+  "o": [
+   "ons niet",
+   "niet ons"
+  ],
+  "e": "She doesn't see us.",
+  "w": "niet comes after a pronoun object.",
+  "wn": "niet na het voornaamwoord.",
+  "t": "pos",
+  "b": "A1"
+ },
+ {
+  "q": "Hij kent ___.",
+  "a": "de weg niet",
+  "o": [
+   "de weg niet",
+   "niet de weg"
+  ],
+  "e": "He doesn't know the way.",
+  "w": "niet comes after a definite object.",
+  "wn": "niet na het bepaalde lijdend voorwerp.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb ___ gegeten.",
+  "a": "vandaag niet",
+  "o": [
+   "vandaag niet",
+   "niet vandaag"
+  ],
+  "e": "I haven't eaten today.",
+  "w": "A time word like vandaag or morgen comes before niet.",
+  "wn": "Tijd voor niet.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Het is ___.",
+  "a": "niet zo moeilijk",
+  "o": [
+   "niet zo moeilijk",
+   "zo niet moeilijk"
+  ],
+  "e": "It isn't that difficult.",
+  "w": "niet comes before an adverb like goed, snel or hard.",
+  "wn": "niet voor het bijwoord.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Ik hoop dat het morgen ___.",
+  "a": "niet regent",
+  "o": [
+   "niet regent",
+   "regent niet"
+  ],
+  "e": "I hope it doesn't rain tomorrow.",
+  "w": "In a sub clause niet comes just before the verb at the end.",
+  "wn": "In de bijzin: niet voor het werkwoord.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Hij staat ___.",
+  "a": "niet op",
+  "o": [
+   "niet op",
+   "op niet"
+  ],
+  "e": "He isn't getting up.",
+  "w": "Separable verb: niet comes before the particle at the end.",
+  "wn": "niet voor het scheidbare deel.",
+  "t": "pos",
+  "b": "A1"
+ },
+ {
+  "q": "Je moet ___.",
+  "a": "het niet vergeten",
+  "o": [
+   "het niet vergeten",
+   "het vergeten niet",
+   "niet het vergeten"
+  ],
+  "e": "You mustn't forget it.",
+  "w": "niet after the pronoun, before the verb at the end.",
+  "wn": "niet na het voornaamwoord, voor het werkwoord.",
+  "t": "pos",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ken ___, want ik woon er pas kort.",
+  "a": "Amsterdam niet goed",
+  "o": [
+   "Amsterdam niet goed",
+   "Amsterdam goed niet",
+   "niet Amsterdam goed"
+  ],
+  "e": "I don't know Amsterdam well, because I've only lived there a short time.",
+  "w": "niet comes before an adverb like goed, snel or hard.",
+  "wn": "niet voor het bijwoord.",
+  "t": "pos",
+  "b": "B1"
+ }
+]

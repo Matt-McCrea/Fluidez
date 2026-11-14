@@ -1,0 +1,842 @@
+[
+ {
+  "q": "Wat een lief ___ (hond)!",
+  "n": "hond",
+  "t": "dim",
+  "e": "What a sweet little dog!",
+  "b": "A1"
+ },
+ {
+  "q": "We wonen in een klein ___ (huis).",
+  "n": "huis",
+  "t": "dim",
+  "e": "We live in a little house.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn dochter leest een ___ (boek).",
+  "n": "boek",
+  "t": "dim",
+  "e": "My daughter is reading a little book.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik koop een ___ (kaart) voor de bus.",
+  "n": "kaart",
+  "t": "dim",
+  "e": "I'm buying a ticket for the bus.",
+  "b": "A2"
+ },
+ {
+  "q": "Zij draagt een grappig ___ (hoed).",
+  "n": "hoed",
+  "t": "dim",
+  "e": "She's wearing a funny little hat.",
+  "b": "A2"
+ },
+ {
+  "q": "Het kind heeft een rood ___ (jas).",
+  "n": "jas",
+  "t": "dim",
+  "e": "The child has a little red jacket.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik neem een ___ (tas) mee.",
+  "n": "tas",
+  "t": "dim",
+  "e": "I'm taking a little bag with me.",
+  "b": "A2"
+ },
+ {
+  "q": "Wil je een ___ (fles) water?",
+  "n": "fles",
+  "t": "dim",
+  "e": "Would you like a small bottle of water?",
+  "b": "A2"
+ },
+ {
+  "q": "De baby slaapt in een ___ (bed).",
+  "n": "bed",
+  "t": "dim",
+  "e": "The baby sleeps in a little bed.",
+  "b": "A1"
+ },
+ {
+  "q": "Op het meer vaart een ___ (boot).",
+  "n": "boot",
+  "t": "dim",
+  "e": "A little boat is sailing on the lake.",
+  "b": "A2"
+ },
+ {
+  "q": "Ze wonen in een ___ (dorp) aan zee.",
+  "n": "dorp",
+  "t": "dim",
+  "e": "They live in a small village by the sea.",
+  "b": "A2"
+ },
+ {
+  "q": "Achter de school ligt een ___ (park).",
+  "n": "park",
+  "t": "dim",
+  "e": "Behind the school there's a small park.",
+  "b": "A2"
+ },
+ {
+  "q": "In het dorp staat een oud ___ (kerk).",
+  "n": "kerk",
+  "t": "dim",
+  "e": "In the village there's an old little church.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij schrijft een ___ (brief) aan zijn moeder.",
+  "n": "brief",
+  "t": "dim",
+  "e": "He writes a note to his mother.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik eet een ___ (stuk) chocola.",
+  "n": "stuk",
+  "t": "dim",
+  "e": "I'm eating a piece of chocolate.",
+  "b": "A2"
+ },
+ {
+  "q": "Mag ik een ___ (glas) wijn?",
+  "n": "glas",
+  "t": "dim",
+  "e": "May I have a glass of wine?",
+  "b": "A2"
+ },
+ {
+  "q": "Op de foto zie je een klein ___ (kind).",
+  "n": "kind",
+  "t": "dim",
+  "e": "In the photo you see a small child.",
+  "b": "A1"
+ },
+ {
+  "q": "De baby pakt mijn vinger met zijn ___ (hand).",
+  "n": "hand",
+  "t": "dim",
+  "e": "The baby grabs my finger with its little hand.",
+  "b": "A1"
+ },
+ {
+  "q": "We maken een ___ (reis) naar Gent.",
+  "n": "reis",
+  "t": "dim",
+  "e": "We're taking a little trip to Ghent.",
+  "b": "A2"
+ },
+ {
+  "q": "De baby heeft een ___ (voet) in zijn mond.",
+  "n": "voet",
+  "t": "dim",
+  "e": "The baby has its little foot in its mouth.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij heeft een ___ (baan) in een winkel.",
+  "n": "baan",
+  "t": "dim",
+  "e": "He has a little job in a shop.",
+  "b": "A2"
+ },
+ {
+  "q": "Wat een mooi ___ (jurk)!",
+  "n": "jurk",
+  "t": "dim",
+  "e": "What a pretty little dress!",
+  "b": "A2"
+ },
+ {
+  "q": "Dag ___ (schat), slaap lekker!",
+  "n": "schat",
+  "t": "dim",
+  "e": "Bye sweetie, sleep tight!",
+  "b": "A2"
+ },
+ {
+  "q": "Achter het huis is een ___ (tuin).",
+  "n": "tuin",
+  "t": "dim",
+  "e": "Behind the house there's a little garden.",
+  "b": "A2"
+ },
+ {
+  "q": "In de tuin zit een ___ (vogel).",
+  "n": "vogel",
+  "t": "dim",
+  "e": "There's a little bird in the garden.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik zit op een ___ (stoel) in de hoek.",
+  "n": "stoel",
+  "t": "dim",
+  "e": "I'm sitting on a little chair in the corner.",
+  "b": "A2"
+ },
+ {
+  "q": "We eten aan een ___ (tafel) bij het raam.",
+  "n": "tafel",
+  "t": "dim",
+  "e": "We eat at a little table by the window.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij heeft een nieuw ___ (auto) voor de stad.",
+  "n": "auto",
+  "t": "dim",
+  "e": "He has a new little car for town.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn ___ (oma) is negentig jaar.",
+  "n": "oma",
+  "t": "dim",
+  "e": "My dear grandma is ninety.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn ___ (opa) vertelt graag verhalen.",
+  "n": "opa",
+  "t": "dim",
+  "e": "My grandpa likes telling stories.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb een leuk ___ (foto) van jou.",
+  "n": "foto",
+  "t": "dim",
+  "e": "I have a nice little photo of you.",
+  "b": "A1"
+ },
+ {
+  "q": "Hun ___ (zoon) is net geboren.",
+  "n": "zoon",
+  "t": "dim",
+  "e": "Their little son has just been born.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb een ___ (cadeau) voor je.",
+  "n": "cadeau",
+  "t": "dim",
+  "e": "I've got a little present for you.",
+  "b": "A2"
+ },
+ {
+  "q": "We hebben een ___ (keuken) en een badkamer.",
+  "n": "keuken",
+  "t": "dim",
+  "e": "We have a small kitchen and a bathroom.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij woont in een ___ (kamer) in Utrecht.",
+  "n": "kamer",
+  "t": "dim",
+  "e": "He lives in a little room in Utrecht.",
+  "b": "A2"
+ },
+ {
+  "q": "Er zit een ___ (sleutel) aan de doos.",
+  "n": "sleutel",
+  "t": "dim",
+  "e": "There's a small key on the box.",
+  "b": "A1"
+ },
+ {
+  "q": "Wil je een ___ (uur) met me wandelen?",
+  "n": "uur",
+  "t": "dim",
+  "e": "Do you want to walk with me for an hour or so?",
+  "b": "A1"
+ },
+ {
+  "q": "We gaan een ___ (dag) naar zee.",
+  "n": "dag",
+  "t": "dim",
+  "e": "We're going to the seaside for a day.",
+  "b": "A1"
+ },
+ {
+  "q": "Ze heeft een ___ (trein) van hout.",
+  "n": "trein",
+  "t": "dim",
+  "e": "She has a little wooden train.",
+  "b": "A2"
+ },
+ {
+  "q": "In de kelder staat een ___ (kast).",
+  "n": "kast",
+  "t": "dim",
+  "e": "In the cellar there's a little cupboard.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn zus heeft een ___ (vriend).",
+  "n": "vriend",
+  "t": "dim",
+  "e": "My sister has a boyfriend.",
+  "b": "A1"
+ },
+ {
+  "q": "Wat een schattig ___ (vrouw)!",
+  "n": "vrouw",
+  "t": "dim",
+  "e": "What a sweet little woman!",
+  "b": "A1"
+ },
+ {
+  "q": "We drinken een ___ (koffie) op het terras.",
+  "n": "koffie",
+  "t": "dim",
+  "e": "We're having a coffee on the terrace.",
+  "b": "A1"
+ },
+ {
+  "q": "Wil je nog een ___ (thee)?",
+  "n": "thee",
+  "t": "dim",
+  "e": "Would you like another cup of tea?",
+  "b": "A2"
+ },
+ {
+  "q": "We nemen een ___ (taxi) naar huis.",
+  "n": "taxi",
+  "t": "dim",
+  "e": "We're taking a taxi home.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij draagt een wit ___ (shirt).",
+  "n": "shirt",
+  "t": "dim",
+  "e": "He's wearing a little white shirt.",
+  "b": "B1"
+ },
+ {
+  "q": "De kat speelt met een ___ (muis).",
+  "n": "muis",
+  "t": "dim",
+  "e": "The cat is playing with a little mouse.",
+  "b": "B1"
+ },
+ {
+  "q": "Het kind krijgt een ___ (konijn).",
+  "n": "konijn",
+  "t": "dim",
+  "e": "The child is getting a little rabbit.",
+  "b": "B1"
+ },
+ {
+  "q": "De baby draagt een blauw ___ (broek).",
+  "n": "broek",
+  "t": "dim",
+  "e": "The baby is wearing little blue trousers.",
+  "b": "B1"
+ },
+ {
+  "q": "Ze eet een ___ (appel) bij de lunch.",
+  "n": "appel",
+  "t": "dim",
+  "e": "She eats a little apple with lunch.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ga een ___ (winkel) openen.",
+  "n": "winkel",
+  "t": "dim",
+  "e": "I'm going to open a little shop.",
+  "b": "A2"
+ },
+ {
+  "q": "Er staat een ___ (boom) in de pot.",
+  "n": "boom",
+  "t": "dim",
+  "e": "There's a little tree in the pot.",
+  "b": "A2"
+ },
+ {
+  "q": "We kijken een ___ (film) op mijn telefoon.",
+  "n": "film",
+  "t": "dim",
+  "e": "We're watching a short video on my phone.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb een klein ___ (probleem).",
+  "n": "probleem",
+  "t": "dim",
+  "e": "I have a little problem.",
+  "b": "A1"
+ },
+ {
+  "q": "De kat ligt voor het ___ (raam).",
+  "n": "raam",
+  "t": "dim",
+  "e": "The cat is lying in front of the little window.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik had vannacht een raar ___ (droom).",
+  "n": "droom",
+  "t": "dim",
+  "e": "Last night I had a strange little dream.",
+  "b": "A2"
+ },
+ {
+  "q": "Wil je een ___ (film) van de kinderen zien?",
+  "n": "film",
+  "t": "dim",
+  "e": "Do you want to see a little video of the children?",
+  "b": "A1"
+ },
+ {
+  "q": "In het bos stroomt een ___ (stroom).",
+  "n": "stroom",
+  "t": "dim",
+  "e": "A little stream flows through the woods.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb een rond ___ (spiegel) in mijn tas.",
+  "n": "spiegel",
+  "t": "dim",
+  "e": "I have a little round mirror in my bag.",
+  "b": "A2"
+ },
+ {
+  "q": "We doen een ___ (stap) naar voren.",
+  "n": "stap",
+  "t": "dim",
+  "e": "We take a little step forward.",
+  "b": "A2"
+ },
+ {
+  "q": "Naast de kerk staat een ___ (museum).",
+  "n": "museum",
+  "t": "dim",
+  "e": "Next to the church there's a little museum.",
+  "b": "B1"
+ },
+ {
+  "q": "In de tuin staat een ___ (zwembad) voor de kinderen.",
+  "n": "zwembad",
+  "t": "dim",
+  "e": "In the garden there's a paddling pool for the children.",
+  "b": "B1"
+ },
+ {
+  "q": "Kijk naar dat kleine ___ (man)!",
+  "n": "man",
+  "t": "dim",
+  "e": "Look at that little man!",
+  "b": "A1"
+ },
+ {
+  "q": "Ik koop een ___ (lamp) voor naast mijn bed.",
+  "n": "lamp",
+  "t": "dim",
+  "e": "I'm buying a little lamp for next to my bed.",
+  "b": "A2"
+ },
+ {
+  "q": "Wat een mooi ___ (zon) vandaag!",
+  "n": "zon",
+  "t": "dim",
+  "e": "What lovely sunshine today!",
+  "b": "A2"
+ },
+ {
+  "q": "Aan de hemel staat een ___ (ster).",
+  "n": "ster",
+  "t": "dim",
+  "e": "There's a little star in the sky.",
+  "b": "A2"
+ },
+ {
+  "q": "De kinderen doen een ___ (spel).",
+  "n": "spel",
+  "t": "dim",
+  "e": "The children are playing a little game.",
+  "b": "A2"
+ },
+ {
+  "q": "Wat een raar ___ (ding)!",
+  "n": "ding",
+  "t": "dim",
+  "e": "What a weird little thing!",
+  "b": "A1"
+ },
+ {
+  "q": "Zij draagt een gouden ___ (ring).",
+  "n": "ring",
+  "t": "dim",
+  "e": "She's wearing a little gold ring.",
+  "b": "A2"
+ },
+ {
+  "q": "Neem een ___ (pil) tegen de pijn.",
+  "n": "pil",
+  "t": "dim",
+  "e": "Take a pill for the pain.",
+  "b": "A2"
+ },
+ {
+  "q": "Ze praat met een zacht ___ (stem).",
+  "n": "stem",
+  "t": "dim",
+  "e": "She talks in a soft little voice.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij schrijft een ___ (zin) in het Nederlands.",
+  "n": "zin",
+  "t": "dim",
+  "e": "He writes a short sentence in Dutch.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik slaap in een klein ___ (hotel).",
+  "n": "hotel",
+  "t": "dim",
+  "e": "I'm staying in a little hotel.",
+  "b": "A2"
+ },
+ {
+  "q": "Ze speelt met een ___ (bal).",
+  "n": "bal",
+  "t": "dim",
+  "e": "She's playing with a little ball.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn ___ (vriendin) komt logeren.",
+  "n": "vriendin",
+  "t": "dim",
+  "e": "My little friend is coming to stay.",
+  "b": "A1"
+ },
+ {
+  "q": "Wat een lekker ___ (soep)!",
+  "n": "soep",
+  "t": "dim",
+  "e": "What a tasty little soup!",
+  "b": "A2"
+ },
+ {
+  "q": "Druk op het groene ___ (knop).",
+  "n": "knop",
+  "t": "dim",
+  "e": "Press the little green button.",
+  "b": "B1"
+ },
+ {
+  "q": "Het kind heeft een klein ___ (bril).",
+  "n": "bril",
+  "t": "dim",
+  "e": "The child has little glasses.",
+  "b": "B1"
+ },
+ {
+  "q": "Op het huis hangt een ___ (vlag).",
+  "n": "vlag",
+  "t": "dim",
+  "e": "A little flag hangs on the house.",
+  "b": "B1"
+ },
+ {
+  "q": "Hij heeft een ___ (plan) bedacht.",
+  "n": "plan",
+  "t": "dim",
+  "e": "He's come up with a little plan.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik maak een ___ (groep) met drie kinderen.",
+  "n": "groep",
+  "t": "dim",
+  "e": "I'm making a little group with three children.",
+  "b": "A2"
+ },
+ {
+  "q": "Op de boerderij woont een ___ (kip).",
+  "n": "kip",
+  "t": "dim",
+  "e": "A little chicken lives on the farm.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn dochter slaapt met haar ___ (pop).",
+  "n": "pop",
+  "t": "dim",
+  "e": "My daughter sleeps with her little doll.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij schrijft met een ___ (pen) van zijn opa.",
+  "n": "pen",
+  "t": "dim",
+  "e": "He writes with his grandpa's little pen.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb een ___ (kus) van mijn zoon gekregen.",
+  "n": "kus",
+  "t": "dim",
+  "e": "I got a little kiss from my son.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn ___ (zus) is vier jaar.",
+  "n": "zus",
+  "t": "dim",
+  "e": "My little sister is four.",
+  "b": "A1"
+ },
+ {
+  "q": "Ze maakt een ___ (les) voor de kinderen.",
+  "n": "les",
+  "t": "dim",
+  "e": "She's making a little lesson for the children.",
+  "b": "A2"
+ },
+ {
+  "q": "Het kind krijgt een ___ (vis) in een kom.",
+  "n": "vis",
+  "t": "dim",
+  "e": "The child is getting a little fish in a bowl.",
+  "b": "A2"
+ },
+ {
+  "q": "Ze hebben een ___ (woning) aan de gracht.",
+  "n": "woning",
+  "t": "dim",
+  "e": "They have a little home on the canal.",
+  "b": "B1"
+ },
+ {
+  "q": "Ze krijgt een gouden ___ (ketting).",
+  "n": "ketting",
+  "t": "dim",
+  "e": "She's getting a little gold necklace.",
+  "b": "B1"
+ },
+ {
+  "q": "Hij woont in een ___ (woning) bij het park.",
+  "n": "woning",
+  "t": "dim",
+  "e": "He lives in a small home by the park.",
+  "b": "B1"
+ },
+ {
+  "q": "De bus heeft een ___ (deur) aan de voorkant.",
+  "n": "deur",
+  "t": "dim",
+  "e": "The bus has a little door at the front.",
+  "b": "A1"
+ },
+ {
+  "q": "Zij woont in een ___ (straat) achter de markt.",
+  "n": "straat",
+  "t": "dim",
+  "e": "She lives in a little street behind the market.",
+  "b": "A1"
+ },
+ {
+  "q": "We hebben een ___ (week) vakantie.",
+  "n": "week",
+  "t": "dim",
+  "e": "We've got a short week of holiday.",
+  "b": "A1"
+ },
+ {
+  "q": "Zaterdag heb ik een ___ (avond) uit.",
+  "n": "avond",
+  "t": "dim",
+  "e": "On Saturday I'm having a night out.",
+  "b": "A1"
+ },
+ {
+  "q": "Wat een gezellig ___ (feest)!",
+  "n": "feest",
+  "t": "dim",
+  "e": "What a fun little party!",
+  "b": "A2"
+ },
+ {
+  "q": "Ze stuurt me een ___ (bericht).",
+  "n": "bericht",
+  "t": "dim",
+  "e": "She sends me a little message.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij vertelt een ___ (verhaal) voor het slapen.",
+  "n": "verhaal",
+  "t": "dim",
+  "e": "He tells a little story before bed.",
+  "b": "A2"
+ },
+ {
+  "q": "De baby heeft een klein ___ (gezicht).",
+  "n": "gezicht",
+  "t": "dim",
+  "e": "The baby has a little face.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn ___ (broer) is drie jaar.",
+  "n": "broer",
+  "t": "dim",
+  "e": "My little brother is three.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb een ___ (woord) voor je.",
+  "n": "woord",
+  "t": "dim",
+  "e": "I have a little word for you.",
+  "b": "A1"
+ },
+ {
+  "q": "Mag ik een ___ (ei) bij het ontbijt?",
+  "n": "ei",
+  "t": "dim",
+  "e": "May I have an egg with breakfast?",
+  "b": "A2"
+ },
+ {
+  "q": "Ik zing een ___ (lied) voor de baby.",
+  "n": "lied",
+  "t": "dim",
+  "e": "I'm singing a little song for the baby.",
+  "b": "A2"
+ },
+ {
+  "q": "Er ligt een ___ (blad) op het water.",
+  "n": "blad",
+  "t": "dim",
+  "e": "A little leaf is floating on the water.",
+  "b": "B1"
+ },
+ {
+  "q": "We lopen over een smal ___ (pad).",
+  "n": "pad",
+  "t": "dim",
+  "e": "We walk along a narrow little path.",
+  "b": "B1"
+ },
+ {
+  "q": "In mijn sok zit een ___ (gat).",
+  "n": "gat",
+  "t": "dim",
+  "e": "There's a little hole in my sock.",
+  "b": "A2"
+ },
+ {
+  "q": "De kinderen varen in een ___ (schip) van papier.",
+  "n": "schip",
+  "t": "dim",
+  "e": "The children sail in a little paper ship.",
+  "b": "A2"
+ },
+ {
+  "q": "Het huis heeft een rood ___ (dak).",
+  "n": "dak",
+  "t": "dim",
+  "e": "The house has a little red roof.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn neef heeft een ___ (hond) gekregen.",
+  "n": "hond",
+  "t": "dim",
+  "e": "My cousin got a puppy.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb een ___ (tijd) gewacht.",
+  "n": "tijd",
+  "t": "dim",
+  "e": "I waited for a while.",
+  "b": "A1"
+ },
+ {
+  "q": "Hij drinkt een ___ (wijn) bij het eten.",
+  "n": "wijn",
+  "t": "dim",
+  "e": "He has a glass of wine with dinner.",
+  "b": "A2"
+ },
+ {
+  "q": "Na het werk drinken we een ___ (drank).",
+  "n": "drank",
+  "t": "dim",
+  "e": "After work we have a drink.",
+  "b": "A2"
+ },
+ {
+  "q": "Ze zitten op een ___ (bank) in het park.",
+  "n": "bank",
+  "t": "dim",
+  "e": "They're sitting on a little bench in the park.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn opa woont in een ___ (woning) naast ons.",
+  "n": "woning",
+  "t": "dim",
+  "e": "My grandpa lives in a little home next to us.",
+  "b": "B1"
+ },
+ {
+  "q": "Op de deur hangt een ___ (bord) met onze naam.",
+  "n": "bord",
+  "t": "dim",
+  "e": "On the door there's a little sign with our name.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb een ___ (idee) voor zaterdag.",
+  "n": "idee",
+  "t": "dim",
+  "e": "I've got a little idea for Saturday.",
+  "b": "A1"
+ },
+ {
+  "q": "De kinderen bouwen een ___ (toren) van blokken.",
+  "n": "toren",
+  "t": "dim",
+  "e": "The children are building a little tower out of blocks.",
+  "b": "B1"
+ },
+ {
+  "q": "Op de heuvel staat een ___ (kasteel).",
+  "n": "kasteel",
+  "t": "dim",
+  "e": "On the hill there's a little castle.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn zoon heeft een ___ (spin) gevonden.",
+  "n": "spin",
+  "t": "dim",
+  "e": "My son has found a little spider.",
+  "b": "B2"
+ },
+ {
+  "q": "Er huilt een klein ___ (jongen).",
+  "n": "jongen",
+  "t": "dim",
+  "e": "A little boy is crying.",
+  "b": "A1"
+ }
+]

@@ -1,0 +1,386 @@
+[
+ {
+  "nl": "Wat voor werk doe je?",
+  "en": "What do you do for a living?",
+  "alt": [
+   "Wat doe je voor werk?"
+  ],
+  "th": "werk",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben docent.",
+  "en": "I'm a teacher.",
+  "alt": [
+   "Ik ben leraar."
+  ],
+  "th": "werk",
+  "b": "A1",
+  "t": 2,
+  "n": "No word for a before jobs in Dutch."
+ },
+ {
+  "nl": "Wat studeer je?",
+  "en": "What are you studying?",
+  "th": "werk",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik werk parttime.",
+  "en": "I work part time.",
+  "th": "werk",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Goedemorgen allemaal!",
+  "en": "Morning, everyone!",
+  "th": "werk",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Druk vandaag?",
+  "en": "Busy today?",
+  "th": "werk",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik heb het heel druk.",
+  "en": "I'm really busy.",
+  "th": "werk",
+  "b": "A2",
+  "t": 1,
+  "n": "Literally: I have it very busy."
+ },
+ {
+  "nl": "Zullen we koffie halen?",
+  "en": "Shall we get a coffee?",
+  "th": "werk",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik ga lunchen.",
+  "en": "I'm going for lunch.",
+  "th": "werk",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Lunch je mee?",
+  "en": "Are you joining us for lunch?",
+  "th": "werk",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Hoe laat begint de vergadering?",
+  "en": "What time does the meeting start?",
+  "th": "werk",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "De vergadering is verplaatst.",
+  "en": "The meeting has been moved.",
+  "th": "werk",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik sta in de file.",
+  "en": "I'm stuck in traffic.",
+  "th": "werk",
+  "b": "A2",
+  "t": 2,
+  "n": "De file: a traffic jam."
+ },
+ {
+  "nl": "Zullen we beginnen?",
+  "en": "Shall we start?",
+  "th": "werk",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Wie neemt de notulen?",
+  "en": "Who's taking the minutes?",
+  "th": "werk",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "nl": "Wat is de planning?",
+  "en": "What's the plan?",
+  "alt": [
+   "Wat is het plan?"
+  ],
+  "th": "werk",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Wanneer is de deadline?",
+  "en": "When's the deadline?",
+  "th": "werk",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Dat lukt niet voor vrijdag.",
+  "en": "I can't manage that by Friday.",
+  "th": "werk",
+  "b": "B1",
+  "t": 2,
+  "n": "Lukken: to work out, to manage."
+ },
+ {
+  "nl": "Dat is gelukt!",
+  "en": "That worked!",
+  "alt": [
+   "Het is gelukt!"
+  ],
+  "th": "werk",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Ik stuur je een mailtje.",
+  "en": "I'll send you an email.",
+  "th": "werk",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Heb je mijn mail gezien?",
+  "en": "Did you see my email?",
+  "th": "werk",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Kun je dit even nakijken?",
+  "en": "Can you check this for me?",
+  "th": "werk",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik kom erop terug.",
+  "en": "I'll get back to you on that.",
+  "th": "werk",
+  "b": "B1",
+  "t": 2
+ },
+ {
+  "nl": "Daar ben ik het mee eens.",
+  "en": "I agree with that.",
+  "alt": [
+   "Mee eens."
+  ],
+  "th": "werk",
+  "b": "B1",
+  "t": 1
+ },
+ {
+  "nl": "Daar ben ik het niet mee eens.",
+  "en": "I don't agree with that.",
+  "th": "werk",
+  "b": "B1",
+  "t": 2
+ },
+ {
+  "nl": "Ik heb een vraag.",
+  "en": "I have a question.",
+  "th": "werk",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Mag ik iets zeggen?",
+  "en": "Can I say something?",
+  "th": "werk",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Kun je dat uitleggen?",
+  "en": "Can you explain that?",
+  "th": "werk",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Hoor je me?",
+  "en": "Can you hear me?",
+  "th": "werk",
+  "b": "A1",
+  "t": 2,
+  "n": "For video calls."
+ },
+ {
+  "nl": "Je staat op mute.",
+  "en": "You're on mute.",
+  "th": "werk",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik deel mijn scherm.",
+  "en": "I'll share my screen.",
+  "th": "werk",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Ik ben morgen vrij.",
+  "en": "I'm off tomorrow.",
+  "th": "werk",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik meld me ziek.",
+  "en": "I'm calling in sick.",
+  "th": "werk",
+  "b": "B1",
+  "t": 2
+ },
+ {
+  "nl": "Ik ga op vakantie.",
+  "en": "I'm going on holiday.",
+  "th": "werk",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik ga naar huis.",
+  "en": "I'm heading home.",
+  "th": "werk",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Goed gedaan!",
+  "en": "Well done!",
+  "alt": [
+   "Lekker bezig!"
+  ],
+  "th": "werk",
+  "b": "A1",
+  "t": 1,
+  "n": "Lekker bezig is casual praise: nice going."
+ },
+ {
+  "nl": "Ik heb morgen een sollicitatiegesprek.",
+  "en": "I have a job interview tomorrow.",
+  "th": "werk",
+  "b": "B1",
+  "t": 2
+ },
+ {
+  "nl": "Waar is het lokaal?",
+  "en": "Where's the classroom?",
+  "th": "werk",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Hoe laat begint de les?",
+  "en": "What time does the class start?",
+  "th": "werk",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Wat is het huiswerk?",
+  "en": "What's the homework?",
+  "th": "werk",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik heb mijn huiswerk vergeten.",
+  "en": "I forgot my homework.",
+  "th": "werk",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Hoe zeg je dat in het Nederlands?",
+  "en": "How do you say that in Dutch?",
+  "th": "werk",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Wat betekent dit woord?",
+  "en": "What does this word mean?",
+  "th": "werk",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Hoe spel je dat?",
+  "en": "How do you spell that?",
+  "th": "werk",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Mag ik je pen lenen?",
+  "en": "Can I borrow your pen?",
+  "th": "werk",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik heb een tentamen volgende week.",
+  "en": "I have an exam next week.",
+  "th": "werk",
+  "b": "A2",
+  "t": 2,
+  "n": "At university it's a tentamen; at school it's a toets."
+ },
+ {
+  "nl": "Ik ben geslaagd!",
+  "en": "I passed!",
+  "th": "werk",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben gezakt.",
+  "en": "I failed.",
+  "th": "werk",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Zullen we samen leren?",
+  "en": "Shall we study together?",
+  "th": "werk",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Ik snap het niet helemaal.",
+  "en": "I don't quite get it.",
+  "th": "werk",
+  "b": "A2",
+  "t": 2,
+  "n": "Snappen is the casual word for understand."
+ },
+ {
+  "nl": "Ik werk hier sinds maart.",
+  "en": "I've worked here since March.",
+  "th": "werk",
+  "b": "A2",
+  "t": 2,
+  "n": "Dutch uses the present tense with sinds."
+ }
+]

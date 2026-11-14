@@ -1,0 +1,916 @@
+[
+ {
+  "q": "Ik wil ___ (slapen).",
+  "a": "slapen",
+  "o": [
+   "slapen",
+   "te slapen"
+  ],
+  "e": "I want to sleep.",
+  "w": "Modals like willen, kunnen, moeten and mogen take a bare infinitive, no te.",
+  "wn": "Na een modaal werkwoord: geen te.",
+  "t": "te",
+  "b": "A1"
+ },
+ {
+  "q": "Ik probeer ___ (slapen).",
+  "a": "te slapen",
+  "o": [
+   "te slapen",
+   "slapen"
+  ],
+  "e": "I'm trying to sleep.",
+  "w": "Proberen needs te before the infinitive.",
+  "wn": "Na proberen: te.",
+  "t": "te",
+  "b": "A1"
+ },
+ {
+  "q": "Ik kan goed ___ (zwemmen).",
+  "a": "zwemmen",
+  "o": [
+   "zwemmen",
+   "te zwemmen"
+  ],
+  "e": "I can swim well.",
+  "w": "Modals like willen, kunnen, moeten and mogen take a bare infinitive, no te.",
+  "wn": "Na een modaal werkwoord: geen te.",
+  "t": "te",
+  "b": "A1"
+ },
+ {
+  "q": "Je moet nu ___ (gaan).",
+  "a": "gaan",
+  "o": [
+   "gaan",
+   "te gaan"
+  ],
+  "e": "You have to go now.",
+  "w": "Modals like willen, kunnen, moeten and mogen take a bare infinitive, no te.",
+  "wn": "Na een modaal werkwoord: geen te.",
+  "t": "te",
+  "b": "A1"
+ },
+ {
+  "q": "We gaan vanavond ___ (koken).",
+  "a": "koken",
+  "o": [
+   "koken",
+   "te koken"
+  ],
+  "e": "We're going to cook tonight.",
+  "w": "Gaan, komen and blijven take a bare infinitive, no te.",
+  "wn": "Na gaan, komen, blijven: geen te.",
+  "t": "te",
+  "b": "A1"
+ },
+ {
+  "q": "Mag ik hier ___ (zitten)?",
+  "a": "zitten",
+  "o": [
+   "zitten",
+   "te zitten"
+  ],
+  "e": "May I sit here?",
+  "w": "Modals like willen, kunnen, moeten and mogen take a bare infinitive, no te.",
+  "wn": "Na een modaal werkwoord: geen te.",
+  "t": "te",
+  "b": "A1"
+ },
+ {
+  "q": "Ik hoef niet ___ (werken).",
+  "a": "te werken",
+  "o": [
+   "te werken",
+   "werken"
+  ],
+  "e": "I don't have to work.",
+  "w": "Hoeven always takes te: niet hoeven te.",
+  "wn": "Hoeven: altijd met te.",
+  "t": "te",
+  "b": "A1"
+ },
+ {
+  "q": "Het begint ___ (regenen).",
+  "a": "te regenen",
+  "o": [
+   "te regenen",
+   "regenen"
+  ],
+  "e": "It's starting to rain.",
+  "w": "Beginnen with an infinitive needs te: het begint te regenen.",
+  "wn": "Beginnen: te.",
+  "t": "te",
+  "b": "A1"
+ },
+ {
+  "q": "Zij wil een ijsje ___ (kopen).",
+  "a": "kopen",
+  "o": [
+   "kopen",
+   "te kopen"
+  ],
+  "e": "She wants to buy an ice cream.",
+  "w": "Modals like willen, kunnen, moeten and mogen take a bare infinitive, no te.",
+  "wn": "Na een modaal werkwoord: geen te.",
+  "t": "te",
+  "b": "A1"
+ },
+ {
+  "q": "Hij zit de hele dag ___ (lezen).",
+  "a": "te lezen",
+  "o": [
+   "te lezen",
+   "lezen"
+  ],
+  "e": "He sits reading all day.",
+  "w": "Zitten, liggen and staan with te say what someone is busy doing.",
+  "wn": "Zitten, liggen, staan + te.",
+  "t": "te",
+  "b": "A1"
+ },
+ {
+  "q": "Kun jij morgen ___ (komen)?",
+  "a": "komen",
+  "o": [
+   "komen",
+   "te komen"
+  ],
+  "e": "Can you come tomorrow?",
+  "w": "Modals like willen, kunnen, moeten and mogen take a bare infinitive, no te.",
+  "wn": "Na een modaal werkwoord: geen te.",
+  "t": "te",
+  "b": "A1"
+ },
+ {
+  "q": "Ik vergeet altijd water ___ (drinken).",
+  "a": "te drinken",
+  "o": [
+   "te drinken",
+   "drinken"
+  ],
+  "e": "I always forget to drink water.",
+  "w": "Vergeten with an infinitive needs te.",
+  "wn": "Vergeten: te.",
+  "t": "te",
+  "b": "A1"
+ },
+ {
+  "q": "We moeten de boodschappen nog ___ (doen).",
+  "a": "doen",
+  "o": [
+   "doen",
+   "te doen"
+  ],
+  "e": "We still have to do the shopping.",
+  "w": "Modals like willen, kunnen, moeten and mogen take a bare infinitive, no te.",
+  "wn": "Na een modaal werkwoord: geen te.",
+  "t": "te",
+  "b": "A1"
+ },
+ {
+  "q": "Ze ligt op de bank ___ (slapen).",
+  "a": "te slapen",
+  "o": [
+   "te slapen",
+   "slapen"
+  ],
+  "e": "She's lying asleep on the sofa.",
+  "w": "Zitten, liggen and staan with te say what someone is busy doing.",
+  "wn": "Zitten, liggen, staan + te.",
+  "t": "te",
+  "b": "A1"
+ },
+ {
+  "q": "Het is leuk om ___ (dansen).",
+  "a": "te dansen",
+  "o": [
+   "te dansen",
+   "dansen"
+  ],
+  "e": "It's fun to dance.",
+  "w": "After om, zonder and in plaats van, the infinitive takes te.",
+  "wn": "Na om, zonder: te + infinitief.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ga naar de stad om ___ (winkelen).",
+  "a": "te winkelen",
+  "o": [
+   "te winkelen",
+   "winkelen"
+  ],
+  "e": "I'm going into town to shop.",
+  "w": "After om, zonder and in plaats van, the infinitive takes te.",
+  "wn": "Na om, zonder: te + infinitief.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb geen zin om ___ (koken).",
+  "a": "te koken",
+  "o": [
+   "te koken",
+   "koken"
+  ],
+  "e": "I don't feel like cooking.",
+  "w": "After om, zonder and in plaats van, the infinitive takes te.",
+  "wn": "Na om, zonder: te + infinitief.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ga naar de bakker ___.",
+  "a": "om brood te kopen",
+  "o": [
+   "om brood te kopen",
+   "om te kopen brood",
+   "brood om te kopen"
+  ],
+  "e": "I'm going to the baker's to buy bread.",
+  "w": "Om comes first, the object next, then te and the verb.",
+  "wn": "Om + brood + te kopen.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Hij hoopt je snel ___ (zien).",
+  "a": "te zien",
+  "o": [
+   "te zien",
+   "zien"
+  ],
+  "e": "He hopes to see you soon.",
+  "w": "Hopen with an infinitive needs te.",
+  "wn": "Hopen: te.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Ik zie de bus ___ (komen).",
+  "a": "komen",
+  "o": [
+   "komen",
+   "te komen"
+  ],
+  "e": "I can see the bus coming.",
+  "w": "Zien, horen and laten take a bare infinitive, no te.",
+  "wn": "Na zien, horen, laten: geen te.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Wij laten de auto ___ (wassen).",
+  "a": "wassen",
+  "o": [
+   "wassen",
+   "te wassen"
+  ],
+  "e": "We're having the car washed.",
+  "w": "Zien, horen and laten take a bare infinitive, no te.",
+  "wn": "Na zien, horen, laten: geen te.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Het is moeilijk om Nederlands ___ (leren).",
+  "a": "te leren",
+  "o": [
+   "te leren",
+   "leren"
+  ],
+  "e": "It's hard to learn Dutch.",
+  "w": "After om, zonder and in plaats van, the infinitive takes te.",
+  "wn": "Na om, zonder: te + infinitief.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Probeer rustig ___ (blijven).",
+  "a": "te blijven",
+  "o": [
+   "te blijven",
+   "blijven"
+  ],
+  "e": "Try to stay calm.",
+  "w": "Proberen needs te, so: probeer rustig te blijven.",
+  "wn": "Proberen: te.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Ze staat op de bus ___ (wachten).",
+  "a": "te wachten",
+  "o": [
+   "te wachten",
+   "wachten"
+  ],
+  "e": "She's standing waiting for the bus.",
+  "w": "Zitten, liggen and staan with te say what someone is busy doing.",
+  "wn": "Zitten, liggen, staan + te.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Je hoeft niet ___ (bellen).",
+  "a": "te bellen",
+  "o": [
+   "te bellen",
+   "bellen"
+  ],
+  "e": "You don't need to call.",
+  "w": "Hoeven always takes te: niet hoeven te.",
+  "wn": "Hoeven: altijd met te.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Ik blijf nog even ___ (zitten).",
+  "a": "zitten",
+  "o": [
+   "zitten",
+   "te zitten"
+  ],
+  "e": "I'll stay sitting a bit longer.",
+  "w": "Gaan, komen and blijven take a bare infinitive, no te.",
+  "wn": "Na gaan, komen, blijven: geen te.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Ik hoor de buren ___ (praten).",
+  "a": "praten",
+  "o": [
+   "praten",
+   "te praten"
+  ],
+  "e": "I can hear the neighbours talking.",
+  "w": "Zien, horen and laten take a bare infinitive, no te.",
+  "wn": "Na zien, horen, laten: geen te.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Vergeet niet de deur op slot ___ (doen).",
+  "a": "te doen",
+  "o": [
+   "te doen",
+   "doen"
+  ],
+  "e": "Don't forget to lock the door.",
+  "w": "Vergeten with an infinitive needs te.",
+  "wn": "Vergeten: te.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Het is tijd om ___ (eten).",
+  "a": "te eten",
+  "o": [
+   "te eten",
+   "eten"
+  ],
+  "e": "It's time to eat.",
+  "w": "An infinitive after an adjective or noun like leuk, tijd or zin takes te.",
+  "wn": "Na leuk, tijd, zin: om te.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ga even ___ (douchen).",
+  "a": "douchen",
+  "o": [
+   "douchen",
+   "te douchen"
+  ],
+  "e": "I'm just going to have a shower.",
+  "w": "Gaan, komen and blijven take a bare infinitive, no te.",
+  "wn": "Na gaan, komen, blijven: geen te.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Hij belooft op tijd ___ (komen).",
+  "a": "te komen",
+  "o": [
+   "te komen",
+   "komen"
+  ],
+  "e": "He promises to be on time.",
+  "w": "Beloven with an infinitive needs te.",
+  "wn": "Beloven: te.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Willen jullie vanavond ___ (uitgaan)?",
+  "a": "uitgaan",
+  "o": [
+   "uitgaan",
+   "uit te gaan"
+  ],
+  "e": "Do you want to go out tonight?",
+  "w": "Modals like willen, kunnen, moeten and mogen take a bare infinitive, no te.",
+  "wn": "Na een modaal werkwoord: geen te.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn broer stopt met ___ (roken).",
+  "a": "roken",
+  "o": [
+   "roken",
+   "te roken"
+  ],
+  "e": "My brother is giving up smoking.",
+  "w": "After met the infinitive works like a noun and takes no te.",
+  "wn": "Na met: geen te.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb vandaag niets ___ (doen).",
+  "a": "te doen",
+  "o": [
+   "te doen",
+   "doen"
+  ],
+  "e": "I have nothing to do today.",
+  "w": "Niets te doen: nothing to do. After niets or veel, use te.",
+  "wn": "Niets te doen.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Er is veel ___ (zien) in Amsterdam.",
+  "a": "te zien",
+  "o": [
+   "te zien",
+   "zien"
+  ],
+  "e": "There's a lot to see in Amsterdam.",
+  "w": "Veel te zien: a lot to see. After veel or niets, use te.",
+  "wn": "Veel te zien.",
+  "t": "te",
+  "b": "A2"
+ },
+ {
+  "q": "Hij lijkt moe ___ (zijn).",
+  "a": "te zijn",
+  "o": [
+   "te zijn",
+   "zijn"
+  ],
+  "e": "He seems to be tired.",
+  "w": "Lijken with an infinitive needs te: hij lijkt moe te zijn.",
+  "wn": "Lijken: te.",
+  "t": "te",
+  "b": "B1"
+ },
+ {
+  "q": "Ze schijnt een nieuwe baan ___ (hebben).",
+  "a": "te hebben",
+  "o": [
+   "te hebben",
+   "hebben"
+  ],
+  "e": "She's supposed to have a new job.",
+  "w": "Schijnen with an infinitive needs te.",
+  "wn": "Schijnen: te.",
+  "t": "te",
+  "b": "B1"
+ },
+ {
+  "q": "Hij vertrok zonder iets ___ (zeggen).",
+  "a": "te zeggen",
+  "o": [
+   "te zeggen",
+   "zeggen"
+  ],
+  "e": "He left without saying anything.",
+  "w": "After om, zonder and in plaats van, the infinitive takes te.",
+  "wn": "Na om, zonder: te + infinitief.",
+  "t": "te",
+  "b": "B1"
+ },
+ {
+  "q": "In plaats van ___ (werken), keek hij tv.",
+  "a": "te werken",
+  "o": [
+   "te werken",
+   "werken"
+  ],
+  "e": "Instead of working, he watched TV.",
+  "w": "After om, zonder and in plaats van, the infinitive takes te.",
+  "wn": "Na om, zonder: te + infinitief.",
+  "t": "te",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ben van plan om volgend jaar ___ (verhuizen).",
+  "a": "te verhuizen",
+  "o": [
+   "te verhuizen",
+   "verhuizen"
+  ],
+  "e": "I'm planning to move next year.",
+  "w": "After om, zonder and in plaats van, the infinitive takes te.",
+  "wn": "Na om, zonder: te + infinitief.",
+  "t": "te",
+  "b": "B1"
+ },
+ {
+  "q": "Het is niet nodig om ___ (reserveren).",
+  "a": "te reserveren",
+  "o": [
+   "te reserveren",
+   "reserveren"
+  ],
+  "e": "There's no need to book.",
+  "w": "After om, zonder and in plaats van, the infinitive takes te.",
+  "wn": "Na om, zonder: te + infinitief.",
+  "t": "te",
+  "b": "B1"
+ },
+ {
+  "q": "We besloten thuis ___ (blijven).",
+  "a": "te blijven",
+  "o": [
+   "te blijven",
+   "blijven"
+  ],
+  "e": "We decided to stay home.",
+  "w": "Besluiten with an infinitive needs te.",
+  "wn": "Besluiten: te.",
+  "t": "te",
+  "b": "B1"
+ },
+ {
+  "q": "Vergeet niet je jas ___ (meenemen).",
+  "a": "mee te nemen",
+  "o": [
+   "mee te nemen",
+   "te meenemen",
+   "meenemen"
+  ],
+  "e": "Don't forget to take your coat.",
+  "w": "With a separable verb, te goes between the prefix and the verb.",
+  "wn": "Te tussen voorvoegsel en werkwoord.",
+  "t": "te",
+  "b": "B1"
+ },
+ {
+  "q": "Het is verboden hier ___ (parkeren).",
+  "a": "te parkeren",
+  "o": [
+   "te parkeren",
+   "parkeren"
+  ],
+  "e": "Parking here is not allowed.",
+  "w": "An infinitive after an adjective or noun like leuk, tijd or zin takes te.",
+  "wn": "Na leuk, tijd, zin: om te.",
+  "t": "te",
+  "b": "B1"
+ },
+ {
+  "q": "Ik zag haar ___ (vallen).",
+  "a": "vallen",
+  "o": [
+   "vallen",
+   "te vallen"
+  ],
+  "e": "I saw her fall.",
+  "w": "Zien, horen and laten take a bare infinitive, no te.",
+  "wn": "Na zien, horen, laten: geen te.",
+  "t": "te",
+  "b": "B1"
+ },
+ {
+  "q": "Hij laat zijn haar ___ (knippen).",
+  "a": "knippen",
+  "o": [
+   "knippen",
+   "te knippen"
+  ],
+  "e": "He's having his hair cut.",
+  "w": "Zien, horen and laten take a bare infinitive, no te.",
+  "wn": "Na zien, horen, laten: geen te.",
+  "t": "te",
+  "b": "B1"
+ },
+ {
+  "q": "Ik hoef morgen niet vroeg ___ (opstaan).",
+  "a": "op te staan",
+  "o": [
+   "op te staan",
+   "opstaan",
+   "te opstaan"
+  ],
+  "e": "I don't have to get up early tomorrow.",
+  "w": "Hoeven needs te, and te goes between op and staan.",
+  "wn": "Hoeven: op te staan.",
+  "t": "te",
+  "b": "B1"
+ },
+ {
+  "q": "Ze zat ___ (huilen) toen ik binnenkwam.",
+  "a": "te huilen",
+  "o": [
+   "te huilen",
+   "huilen"
+  ],
+  "e": "She was sitting crying when I came in.",
+  "w": "Zitten, liggen and staan with te say what someone is busy doing.",
+  "wn": "Zitten, liggen, staan + te.",
+  "t": "te",
+  "b": "B1"
+ },
+ {
+  "q": "We hebben besloten ___ (trouwen).",
+  "a": "te trouwen",
+  "o": [
+   "te trouwen",
+   "trouwen"
+  ],
+  "e": "We've decided to get married.",
+  "w": "Besluiten with an infinitive needs te.",
+  "wn": "Besluiten: te.",
+  "t": "te",
+  "b": "B1"
+ },
+ {
+  "q": "Zonder ___ (betalen) liep hij weg.",
+  "a": "te betalen",
+  "o": [
+   "te betalen",
+   "betalen"
+  ],
+  "e": "He walked off without paying.",
+  "w": "After om, zonder and in plaats van, the infinitive takes te.",
+  "wn": "Na om, zonder: te + infinitief.",
+  "t": "te",
+  "b": "B1"
+ },
+ {
+  "q": "Het lukt me niet om de deur ___ (openen).",
+  "a": "te openen",
+  "o": [
+   "te openen",
+   "openen"
+  ],
+  "e": "I can't manage to open the door.",
+  "w": "After om, zonder and in plaats van, the infinitive takes te.",
+  "wn": "Na om, zonder: te + infinitief.",
+  "t": "te",
+  "b": "B1"
+ },
+ {
+  "q": "Je hoeft je geen zorgen ___ (maken).",
+  "a": "te maken",
+  "o": [
+   "te maken",
+   "maken"
+  ],
+  "e": "You don't need to worry.",
+  "w": "Hoeven always takes te: niet hoeven te.",
+  "wn": "Hoeven: altijd met te.",
+  "t": "te",
+  "b": "B1"
+ },
+ {
+  "q": "Hij weigert zijn kamer ___ (opruimen).",
+  "a": "op te ruimen",
+  "o": [
+   "op te ruimen",
+   "te opruimen"
+  ],
+  "e": "He refuses to tidy his room.",
+  "w": "With a separable verb, te goes between the prefix and the verb.",
+  "wn": "Te tussen voorvoegsel en werkwoord.",
+  "t": "te",
+  "b": "B1"
+ },
+ {
+  "q": "Ik kom je morgen ___ (helpen).",
+  "a": "helpen",
+  "o": [
+   "helpen",
+   "te helpen"
+  ],
+  "e": "I'll come and help you tomorrow.",
+  "w": "Gaan, komen and blijven take a bare infinitive, no te.",
+  "wn": "Na gaan, komen, blijven: geen te.",
+  "t": "te",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb geen tijd om de krant ___ (lezen).",
+  "a": "te lezen",
+  "o": [
+   "te lezen",
+   "lezen"
+  ],
+  "e": "I have no time to read the paper.",
+  "w": "An infinitive after an adjective or noun like leuk, tijd or zin takes te.",
+  "wn": "Na leuk, tijd, zin: om te.",
+  "t": "te",
+  "b": "B1"
+ },
+ {
+  "q": "Het valt niet mee om een huis ___ (vinden).",
+  "a": "te vinden",
+  "o": [
+   "te vinden",
+   "vinden"
+  ],
+  "e": "It's not easy to find a house.",
+  "w": "After om, zonder and in plaats van, the infinitive takes te.",
+  "wn": "Na om, zonder: te + infinitief.",
+  "t": "te",
+  "b": "B2"
+ },
+ {
+  "q": "Hij beweert de minister ___ (kennen).",
+  "a": "te kennen",
+  "o": [
+   "te kennen",
+   "kennen"
+  ],
+  "e": "He claims to know the minister.",
+  "w": "Beweren with an infinitive needs te.",
+  "wn": "Beweren: te.",
+  "t": "te",
+  "b": "B2"
+ },
+ {
+  "q": "Ze heeft de hele middag ___ (zitten) lezen.",
+  "a": "zitten",
+  "o": [
+   "zitten",
+   "gezeten",
+   "te zitten"
+  ],
+  "e": "She spent the whole afternoon reading.",
+  "w": "In the perfect zitten stays an infinitive and te drops: heeft zitten lezen.",
+  "wn": "Heeft zitten lezen.",
+  "t": "te",
+  "b": "B2"
+ },
+ {
+  "q": "Hij heeft geprobeerd het ___ (uitleggen).",
+  "a": "uit te leggen",
+  "o": [
+   "uit te leggen",
+   "te uitleggen"
+  ],
+  "e": "He tried to explain it.",
+  "w": "With a separable verb, te goes between the prefix and the verb.",
+  "wn": "Te tussen voorvoegsel en werkwoord.",
+  "t": "te",
+  "b": "B2"
+ },
+ {
+  "q": "Ik denk erover na om ___ (stoppen).",
+  "a": "te stoppen",
+  "o": [
+   "te stoppen",
+   "stoppen"
+  ],
+  "e": "I'm thinking about stopping.",
+  "w": "After om, zonder and in plaats van, the infinitive takes te.",
+  "wn": "Na om, zonder: te + infinitief.",
+  "t": "te",
+  "b": "B2"
+ },
+ {
+  "q": "Het is de moeite waard om ___ (proberen).",
+  "a": "te proberen",
+  "o": [
+   "te proberen",
+   "proberen"
+  ],
+  "e": "It's worth a try.",
+  "w": "After om, zonder and in plaats van, the infinitive takes te.",
+  "wn": "Na om, zonder: te + infinitief.",
+  "t": "te",
+  "b": "B2"
+ },
+ {
+  "q": "Hij hoeft niet ___ (weten) dat ik het was.",
+  "a": "te weten",
+  "o": [
+   "te weten",
+   "weten"
+  ],
+  "e": "He doesn't need to know it was me.",
+  "w": "Hoeven always takes te: niet hoeven te.",
+  "wn": "Hoeven: altijd met te.",
+  "t": "te",
+  "b": "B2"
+ },
+ {
+  "q": "Ze heeft haar man de afwas laten ___ (doen).",
+  "a": "doen",
+  "o": [
+   "doen",
+   "te doen"
+  ],
+  "e": "She got her husband to do the dishes.",
+  "w": "Zien, horen and laten take a bare infinitive, no te.",
+  "wn": "Na zien, horen, laten: geen te.",
+  "t": "te",
+  "b": "B2"
+ },
+ {
+  "q": "Er valt niets meer ___ (zeggen).",
+  "a": "te zeggen",
+  "o": [
+   "te zeggen",
+   "zeggen"
+  ],
+  "e": "There's nothing more to be said.",
+  "w": "Er valt ... te: there is ... to be done. Vallen here needs te.",
+  "wn": "Er valt niets te zeggen.",
+  "t": "te",
+  "b": "B2"
+ },
+ {
+  "q": "Die kans is te mooi om ___ (missen).",
+  "a": "te missen",
+  "o": [
+   "te missen",
+   "missen"
+  ],
+  "e": "That chance is too good to miss.",
+  "w": "After om, zonder and in plaats van, the infinitive takes te.",
+  "wn": "Na om, zonder: te + infinitief.",
+  "t": "te",
+  "b": "B2"
+ },
+ {
+  "q": "Ik ben vergeten ___ (antwoorden).",
+  "a": "te antwoorden",
+  "o": [
+   "te antwoorden",
+   "antwoorden"
+  ],
+  "e": "I forgot to answer.",
+  "w": "Vergeten with an infinitive needs te.",
+  "wn": "Vergeten: te.",
+  "t": "te",
+  "b": "B2"
+ },
+ {
+  "q": "Ze heeft de kinderen horen ___ (lachen).",
+  "a": "lachen",
+  "o": [
+   "lachen",
+   "te lachen"
+  ],
+  "e": "She heard the children laughing.",
+  "w": "Zien, horen and laten take a bare infinitive, no te.",
+  "wn": "Na zien, horen, laten: geen te.",
+  "t": "te",
+  "b": "B2"
+ },
+ {
+  "q": "Hij wordt geacht om negen uur aanwezig ___ (zijn).",
+  "a": "te zijn",
+  "o": [
+   "te zijn",
+   "zijn"
+  ],
+  "e": "He's expected to be there at nine.",
+  "w": "Geacht worden needs te: hij wordt geacht te komen.",
+  "wn": "Geacht worden: te.",
+  "t": "te",
+  "b": "B2"
+ },
+ {
+  "q": "De bus staat op het punt ___ (vertrekken).",
+  "a": "te vertrekken",
+  "o": [
+   "te vertrekken",
+   "vertrekken"
+  ],
+  "e": "The bus is about to leave.",
+  "w": "Op het punt staan needs te: on the point of doing it.",
+  "wn": "Op het punt staan te.",
+  "t": "te",
+  "b": "B2"
+ },
+ {
+  "q": "Om eerlijk ___ (zijn), vind ik het niet leuk.",
+  "a": "te zijn",
+  "o": [
+   "te zijn",
+   "zijn"
+  ],
+  "e": "To be honest, I don't like it.",
+  "w": "After om, zonder and in plaats van, the infinitive takes te.",
+  "wn": "Na om, zonder: te + infinitief.",
+  "t": "te",
+  "b": "B2"
+ }
+]

@@ -1,0 +1,531 @@
+[
+ {
+  "nl": "Wat zeg je?",
+  "en": "What did you say?",
+  "alt": [
+   "Wat zei je?"
+  ],
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Hè?",
+  "en": "What?",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 2,
+  "n": "Casual, only with friends."
+ },
+ {
+  "nl": "Kun je dat herhalen?",
+  "en": "Can you repeat that?",
+  "alt": [
+   "Kun je dat nog een keer zeggen?"
+  ],
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Kunt u dat herhalen?",
+  "en": "Could you repeat that?",
+  "alt": [
+   "Kunt u dat nog een keer zeggen?"
+  ],
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1,
+  "n": "Polite form with u."
+ },
+ {
+  "nl": "Kun je wat langzamer praten?",
+  "en": "Can you speak a bit slower?",
+  "alt": [
+   "Kun je iets langzamer praten?"
+  ],
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Kunt u wat langzamer praten?",
+  "en": "Could you speak a bit slower?",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 2,
+  "n": "Polite form with u."
+ },
+ {
+  "nl": "Ik snap het niet.",
+  "en": "I don't get it.",
+  "alt": [
+   "Ik begrijp het niet."
+  ],
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik begrijp het.",
+  "en": "I understand.",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "O, nu snap ik het.",
+  "en": "Oh, now I get it.",
+  "alt": [
+   "Ah, ik snap het."
+  ],
+  "th": "gesprek",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Wat betekent dat?",
+  "en": "What does that mean?",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Wat betekent \"gezellig\"?",
+  "en": "What does \"gezellig\" mean?",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Hoe zeg je \"spoon\" in het Nederlands?",
+  "en": "How do you say \"spoon\" in Dutch?",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Hoe spreek je dat uit?",
+  "en": "How do you pronounce that?",
+  "th": "gesprek",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Hoe schrijf je dat?",
+  "en": "How do you spell that?",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Kun je dat opschrijven?",
+  "en": "Can you write that down?",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Kunnen we Nederlands praten?",
+  "en": "Can we speak Dutch?",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Zeg ik het goed?",
+  "en": "Am I saying it right?",
+  "th": "gesprek",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Verbeter me maar.",
+  "en": "Feel free to correct me.",
+  "th": "gesprek",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik weet het niet.",
+  "en": "I don't know.",
+  "alt": [
+   "Geen idee."
+  ],
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik weet het niet zeker.",
+  "en": "I'm not sure.",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Even denken.",
+  "en": "Let me think.",
+  "alt": [
+   "Eens even kijken."
+  ],
+  "th": "gesprek",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Hoe heet dat ook alweer?",
+  "en": "What's it called again?",
+  "th": "gesprek",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben het woord kwijt.",
+  "en": "The word escapes me.",
+  "th": "gesprek",
+  "b": "A2",
+  "t": 3,
+  "n": "Literally: I've lost the word."
+ },
+ {
+  "nl": "Wat bedoel je?",
+  "en": "What do you mean?",
+  "alt": [
+   "Hoe bedoel je?"
+  ],
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Dat bedoel ik niet.",
+  "en": "That's not what I mean.",
+  "th": "gesprek",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik snap wat je bedoelt.",
+  "en": "I see what you mean.",
+  "th": "gesprek",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Mag ik iets vragen?",
+  "en": "Can I ask something?",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Kun je een voorbeeld geven?",
+  "en": "Can you give an example?",
+  "th": "gesprek",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Waar gaat het over?",
+  "en": "What's it about?",
+  "th": "gesprek",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Trouwens, hoe was je dag?",
+  "en": "By the way, how was your day?",
+  "th": "gesprek",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Weet je wat?",
+  "en": "You know what?",
+  "th": "gesprek",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Nou, ik weet het niet.",
+  "en": "Well, I don't know.",
+  "th": "gesprek",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Precies!",
+  "en": "Exactly!",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Dat klopt.",
+  "en": "That's right.",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Dat klopt niet.",
+  "en": "That's not right.",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ja, inderdaad.",
+  "en": "Yes, indeed.",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Dat is waar.",
+  "en": "That's true.",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Je hebt gelijk.",
+  "en": "You're right.",
+  "alt": [
+   "Daar heb je gelijk in."
+  ],
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben het met je eens.",
+  "en": "I agree with you.",
+  "th": "gesprek",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben het niet met je eens.",
+  "en": "I don't agree with you.",
+  "th": "gesprek",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Daar ben ik het helemaal mee eens.",
+  "en": "I completely agree.",
+  "th": "gesprek",
+  "b": "B1",
+  "t": 2
+ },
+ {
+  "nl": "Dat denk ik ook.",
+  "en": "I think so too.",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik denk het wel.",
+  "en": "I think so.",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik denk het niet.",
+  "en": "I don't think so.",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Wat vind jij?",
+  "en": "What do you think?",
+  "alt": [
+   "Wat vind je ervan?"
+  ],
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1,
+  "n": "Vinden is the verb for opinions."
+ },
+ {
+  "nl": "Wat vindt u ervan?",
+  "en": "What do you think of it?",
+  "th": "gesprek",
+  "b": "A2",
+  "t": 2,
+  "n": "Polite form with u."
+ },
+ {
+  "nl": "Ik vind het leuk.",
+  "en": "I like it.",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik vind het niet leuk.",
+  "en": "I don't like it.",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik vind het mooi.",
+  "en": "I think it's beautiful.",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Eerlijk gezegd vind ik het saai.",
+  "en": "Honestly, I find it boring.",
+  "th": "gesprek",
+  "b": "B1",
+  "t": 2
+ },
+ {
+  "nl": "Volgens mij is het dicht.",
+  "en": "I think it's closed.",
+  "th": "gesprek",
+  "b": "A2",
+  "t": 2,
+  "n": "Volgens mij: in my view."
+ },
+ {
+  "nl": "Het hangt ervan af.",
+  "en": "It depends.",
+  "alt": [
+   "Dat hangt ervan af.",
+   "Dat ligt eraan."
+  ],
+  "th": "gesprek",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Misschien.",
+  "en": "Maybe.",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Natuurlijk!",
+  "en": "Of course!",
+  "alt": [
+   "Tuurlijk!"
+  ],
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ja hoor.",
+  "en": "Sure.",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 2,
+  "n": "Hoor makes it sound friendly."
+ },
+ {
+  "nl": "Nee hoor.",
+  "en": "No, not at all.",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 3
+ },
+ {
+  "nl": "Echt?",
+  "en": "Really?",
+  "alt": [
+   "Echt waar?",
+   "Serieus?"
+  ],
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Wat leuk!",
+  "en": "How nice!",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Wat jammer.",
+  "en": "What a shame.",
+  "alt": [
+   "Jammer."
+  ],
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Goed idee!",
+  "en": "Good idea!",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Dat lijkt me leuk.",
+  "en": "That sounds fun.",
+  "th": "gesprek",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Dat lijkt me geen goed idee.",
+  "en": "I don't think that's a good idea.",
+  "th": "gesprek",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Dat valt wel mee.",
+  "en": "It's not that bad.",
+  "th": "gesprek",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Wat gezellig!",
+  "en": "This is lovely!",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 2,
+  "n": "Gezellig: cosy, sociable, nice to be together."
+ },
+ {
+  "nl": "Zeg het maar.",
+  "en": "Go ahead.",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 2,
+  "n": "Often what staff say when it's your turn."
+ },
+ {
+  "nl": "Het maakt mij niet uit.",
+  "en": "I don't mind.",
+  "th": "gesprek",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Laat maar.",
+  "en": "Never mind.",
+  "alt": [
+   "Ach, laat maar."
+  ],
+  "th": "gesprek",
+  "b": "A1",
+  "t": 2
+ }
+]

@@ -1,0 +1,929 @@
+[
+ {
+  "q": "Ik heb ___ auto.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet",
+   "nee"
+  ],
+  "e": "I don't have a car.",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Wij hebben ___ kinderen.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "We don't have children.",
+  "w": "A plural noun with no article takes geen, not niet.",
+  "wn": "Meervoud zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Zij drinkt ___ koffie.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "She doesn't drink coffee.",
+  "w": "A noun with no article takes geen, not niet.",
+  "wn": "Zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb ___ tijd.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet",
+   "nee"
+  ],
+  "e": "I have no time.",
+  "w": "Fixed phrases like tijd hebben or honger hebben take geen.",
+  "wn": "Vaste combinatie met geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Hij heeft ___ broer.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "He doesn't have a brother.",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Er is ___ melk in de koelkast.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "There is no milk in the fridge.",
+  "w": "A noun with no article takes geen, not niet.",
+  "wn": "Zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Dat is ___ probleem.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "That's no problem.",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb ___ honger.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet",
+   "nee"
+  ],
+  "e": "I'm not hungry.",
+  "w": "Fixed phrases like tijd hebben or honger hebben take geen.",
+  "wn": "Vaste combinatie met geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Zij heeft ___ zin in pizza.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "She doesn't feel like pizza.",
+  "w": "Fixed phrases like tijd hebben or honger hebben take geen.",
+  "wn": "Vaste combinatie met geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben ___ huisdieren.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "We have no pets.",
+  "w": "A plural noun with no article takes geen, not niet.",
+  "wn": "Meervoud zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Hij is ___ dokter.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "He isn't a doctor.",
+  "w": "A job or nationality after zijn takes geen.",
+  "wn": "Beroep of nationaliteit: geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Ik eet ___ vlees.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "I don't eat meat.",
+  "w": "A noun with no article takes geen, not niet.",
+  "wn": "Zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Er staan ___ stoelen in de kamer.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "There are no chairs in the room.",
+  "w": "A plural noun with no article takes geen, not niet.",
+  "wn": "Meervoud zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb ___ fiets.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "I don't have a bike.",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn vader leest ___ kranten.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "My father doesn't read newspapers.",
+  "w": "A plural noun with no article takes geen, not niet.",
+  "wn": "Meervoud zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben vandaag ___ les.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "We have no lesson today.",
+  "w": "A noun with no article takes geen, not niet.",
+  "wn": "Zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Is er ___ bus naar het centrum?",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "Isn't there a bus to the centre?",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Zij heeft ___ geld bij zich.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "She has no money on her.",
+  "w": "A noun with no article takes geen, not niet.",
+  "wn": "Zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Dit is ___ goed idee.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "This isn't a good idea.",
+  "w": "een + adjective + noun still becomes geen: geen goed idee.",
+  "wn": "geen + bijvoeglijk naamwoord + zelfstandig naamwoord.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Hij draagt ___ bril.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "He doesn't wear glasses.",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Er staat ___ water op tafel.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "There's no water on the table.",
+  "w": "A noun with no article takes geen, not niet.",
+  "wn": "Zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb ___ vragen.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet",
+   "nee"
+  ],
+  "e": "I have no questions.",
+  "w": "A plural noun with no article takes geen, not niet.",
+  "wn": "Meervoud zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Zij wil ___ suiker in haar thee.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "She doesn't want sugar in her tea.",
+  "w": "A noun with no article takes geen, not niet.",
+  "wn": "Zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "We hebben ___ tuin.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "We don't have a garden.",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Hij heeft ___ werk.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "He has no work.",
+  "w": "A noun with no article takes geen, not niet.",
+  "wn": "Zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Er is hier ___ wifi.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "There's no wifi here.",
+  "w": "A noun with no article takes geen, not niet.",
+  "wn": "Zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ben ___ Nederlander.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "I'm not Dutch.",
+  "w": "A job or nationality after zijn takes geen.",
+  "wn": "Beroep of nationaliteit: geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Dat is ___ slecht plan.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "That's not a bad plan.",
+  "w": "een + adjective + noun still becomes geen: geen goed idee.",
+  "wn": "geen + bijvoeglijk naamwoord + zelfstandig naamwoord.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn zus heeft ___ rijbewijs.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "My sister doesn't have a driving licence.",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb ___ idee.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "I have no idea.",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Vandaag kopen wij ___ brood.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "Today we aren't buying bread.",
+  "w": "A noun with no article takes geen, not niet.",
+  "wn": "Zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Zij heeft ___ vriend.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "She doesn't have a boyfriend.",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Er rijden vandaag ___ treinen.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "No trains are running today.",
+  "w": "A plural noun with no article takes geen, not niet.",
+  "wn": "Meervoud zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Hij rookt ___ sigaretten.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "He doesn't smoke cigarettes.",
+  "w": "A plural noun with no article takes geen, not niet.",
+  "wn": "Meervoud zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb ___ paraplu bij me.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "I don't have an umbrella with me.",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Er ligt ___ sneeuw.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "There's no snow.",
+  "w": "A noun with no article takes geen, not niet.",
+  "wn": "Zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben ___ haast.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "We're in no hurry.",
+  "w": "Fixed phrases like tijd hebben or honger hebben take geen.",
+  "wn": "Vaste combinatie met geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Het is ___ grap.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "It's not a joke.",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Zij krijgt ___ antwoord.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "She gets no answer.",
+  "w": "A noun with no article takes geen, not niet.",
+  "wn": "Zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Hij heeft ___ verstand van auto's.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "He knows nothing about cars.",
+  "w": "Fixed phrases like tijd hebben or honger hebben take geen.",
+  "wn": "Vaste combinatie met geen.",
+  "t": "geen",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb ___ last van de kou.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "The cold doesn't bother me.",
+  "w": "Fixed phrases like tijd hebben or honger hebben take geen.",
+  "wn": "Vaste combinatie met geen.",
+  "t": "geen",
+  "b": "B1"
+ },
+ {
+  "q": "Wij hebben ___ keus.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "We have no choice.",
+  "w": "Fixed phrases like tijd hebben or honger hebben take geen.",
+  "wn": "Vaste combinatie met geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Dat is ___ verrassing.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "That's no surprise.",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "In dit dorp is ___ supermarkt.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "There's no supermarket in this village.",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Ik wil ___ ruzie.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "I don't want a fight.",
+  "w": "A noun with no article takes geen, not niet.",
+  "wn": "Zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Zij hebben ___ kaartjes gekocht.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "They didn't buy tickets.",
+  "w": "A plural noun with no article takes geen, not niet.",
+  "wn": "Meervoud zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Hij heeft ___ jas aan.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "He isn't wearing a coat.",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Ik hoor ___ geluid.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "I hear no sound.",
+  "w": "A noun with no article takes geen, not niet.",
+  "wn": "Zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Er zit ___ zout in de soep.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "There's no salt in the soup.",
+  "w": "A noun with no article takes geen, not niet.",
+  "wn": "Zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Dit hotel heeft ___ zwembad.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "This hotel has no pool.",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "We hebben ___ boodschappen gedaan.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "We didn't do any shopping.",
+  "w": "A plural noun with no article takes geen, not niet.",
+  "wn": "Meervoud zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn opa heeft ___ telefoon.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "My grandad doesn't have a phone.",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Zij maakt ___ fouten.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "She makes no mistakes.",
+  "w": "A plural noun with no article takes geen, not niet.",
+  "wn": "Meervoud zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb ___ goed gevoel over dit plan.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "I don't have a good feeling about this plan.",
+  "w": "een + adjective + noun still becomes geen: geen goed idee.",
+  "wn": "geen + bijvoeglijk naamwoord + zelfstandig naamwoord.",
+  "t": "geen",
+  "b": "B1"
+ },
+ {
+  "q": "Hij is ___ echte vriend.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "He isn't a real friend.",
+  "w": "een + adjective + noun still becomes geen: geen goed idee.",
+  "wn": "geen + bijvoeglijk naamwoord + zelfstandig naamwoord.",
+  "t": "geen",
+  "b": "B1"
+ },
+ {
+  "q": "Er is ___ sprake van.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "It's out of the question.",
+  "w": "Fixed phrases like tijd hebben or honger hebben take geen.",
+  "wn": "Vaste combinatie met geen.",
+  "t": "geen",
+  "b": "B1"
+ },
+ {
+  "q": "Het maakt ___ verschil.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "It makes no difference.",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben ___ moeite met de taal.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "We have no trouble with the language.",
+  "w": "Fixed phrases like tijd hebben or honger hebben take geen.",
+  "wn": "Vaste combinatie met geen.",
+  "t": "geen",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb ___ dorst.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "I'm not thirsty.",
+  "w": "Fixed phrases like tijd hebben or honger hebben take geen.",
+  "wn": "Vaste combinatie met geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Zij heeft ___ schuld.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "It's not her fault.",
+  "w": "Fixed phrases like tijd hebben or honger hebben take geen.",
+  "wn": "Vaste combinatie met geen.",
+  "t": "geen",
+  "b": "B1"
+ },
+ {
+  "q": "Dat kost ___ moeite.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "That takes no effort.",
+  "w": "A noun with no article takes geen, not niet.",
+  "wn": "Zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "B1"
+ },
+ {
+  "q": "Er kwam ___ reactie.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "No reaction came.",
+  "w": "A noun with no article takes geen, not niet.",
+  "wn": "Zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "B1"
+ },
+ {
+  "q": "Hij heeft ___ geduld.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "He has no patience.",
+  "w": "Fixed phrases like tijd hebben or honger hebben take geen.",
+  "wn": "Vaste combinatie met geen.",
+  "t": "geen",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb ___ hekel aan regen.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "I don't hate rain.",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "B1"
+ },
+ {
+  "q": "Zij eten ___ groente.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "They don't eat vegetables.",
+  "w": "A noun with no article takes geen, not niet.",
+  "wn": "Zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A1"
+ },
+ {
+  "q": "Wij hebben ___ hulp nodig.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "We don't need help.",
+  "w": "A noun with no article takes geen, not niet.",
+  "wn": "Zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ken hier ___ mensen.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "I don't know any people here.",
+  "w": "A plural noun with no article takes geen, not niet.",
+  "wn": "Meervoud zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Er is ___ plaats in de auto.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "There's no room in the car.",
+  "w": "A noun with no article takes geen, not niet.",
+  "wn": "Zonder lidwoord: geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Hij heeft ___ kans gehad.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "He hasn't had a chance.",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb ___ bezwaar.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "I have no objection.",
+  "w": "Fixed phrases like tijd hebben or honger hebben take geen.",
+  "wn": "Vaste combinatie met geen.",
+  "t": "geen",
+  "b": "B1"
+ },
+ {
+  "q": "Ze hebben ___ televisie in huis.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "They don't have a TV in the house.",
+  "w": "A noun with een becomes geen: not a, no.",
+  "wn": "een wordt geen.",
+  "t": "geen",
+  "b": "A2"
+ }
+]

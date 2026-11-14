@@ -1,0 +1,824 @@
+[
+ {
+  "q": "Als ik rijk was, ___ (zullen) ik een huis kopen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "ik",
+  "e": "If I were rich, I would buy a house.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (zullen) graag een kopje thee willen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "ik",
+  "e": "I would like a cup of tea.",
+  "b": "A2"
+ },
+ {
+  "q": "Als ik jou was, ___ (zullen) ik meteen de dokter bellen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "ik",
+  "e": "If I were you, I'd call the doctor straight away.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (zullen) dat nooit doen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "ik",
+  "e": "I would never do that.",
+  "b": "A2"
+ },
+ {
+  "q": "Als ik tijd had, ___ (zullen) ik vaker sporten.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "ik",
+  "e": "If I had time, I'd do sport more often.",
+  "b": "A2"
+ },
+ {
+  "q": "Met meer geld ___ (zullen) ik de wereld rondreizen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "ik",
+  "e": "With more money I'd travel round the world.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ___ (zullen) het fijn vinden als je komt.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "ik",
+  "e": "I'd be glad if you came.",
+  "b": "A2"
+ },
+ {
+  "q": "Als ik kon zingen, ___ (zullen) ik in een band spelen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "ik",
+  "e": "If I could sing, I'd play in a band.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (zullen) graag in Italië wonen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "ik",
+  "e": "I'd love to live in Italy.",
+  "b": "A2"
+ },
+ {
+  "q": "Als het niet regende, ___ (zullen) ik op de fiets gaan.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "ik",
+  "e": "If it weren't raining, I'd go by bike.",
+  "b": "A2"
+ },
+ {
+  "q": "In jouw plaats ___ (zullen) ik niets zeggen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "ik",
+  "e": "In your place I wouldn't say anything.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ___ (zullen) je graag helpen, maar ik heb geen tijd.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "ik",
+  "e": "I'd love to help you, but I have no time.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik zei dat ik om acht uur ___ (zullen) komen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "ik",
+  "sub": 1,
+  "e": "I said I would come at eight.",
+  "b": "B1"
+ },
+ {
+  "q": "Als ik minder werkte, ___ (zullen) ik meer lezen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "ik",
+  "e": "If I worked less, I'd read more.",
+  "b": "A2"
+ },
+ {
+  "q": "Dat ___ (zullen) ik niet weten.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "ik",
+  "e": "I wouldn't know.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (zullen) vanavond liever thuisblijven.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "ik",
+  "e": "I'd rather stay home tonight.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (zullen) die baan meteen aannemen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "ik",
+  "e": "I'd take that job straight away.",
+  "b": "B1"
+ },
+ {
+  "q": "Als ik meer durfde, ___ (zullen) ik op het podium zingen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "ik",
+  "e": "If I dared more, I'd sing on stage.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (zullen) jij me even kunnen helpen?",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jij",
+  "inv": 1,
+  "e": "Could you help me for a moment?",
+  "b": "A2"
+ },
+ {
+  "q": "Jij ___ (zullen) ook moe zijn na zo'n dag.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jij",
+  "e": "You'd be tired too after a day like that.",
+  "b": "A2"
+ },
+ {
+  "q": "Als je meer sliep, ___ (zullen) je je beter voelen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jij",
+  "inv": 1,
+  "e": "If you slept more, you'd feel better.",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (zullen) eens met je baas moeten praten.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jij",
+  "e": "You should have a word with your boss.",
+  "b": "B1"
+ },
+ {
+  "q": "Wat ___ (zullen) jij doen met een miljoen euro?",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jij",
+  "inv": 1,
+  "e": "What would you do with a million euros?",
+  "b": "A2"
+ },
+ {
+  "q": "Ik dacht dat jij de taart ___ (zullen) meebrengen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jij",
+  "sub": 1,
+  "e": "I thought you would bring the cake.",
+  "b": "B1"
+ },
+ {
+  "q": "Als jij de baas was, ___ (zullen) je alles anders doen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jij",
+  "inv": 1,
+  "e": "If you were the boss, you'd do everything differently.",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (zullen) die jurk eens moeten passen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jij",
+  "e": "You should try that dress on.",
+  "b": "B1"
+ },
+ {
+  "q": "Waar ___ (zullen) je het liefst wonen?",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jij",
+  "inv": 1,
+  "e": "Where would you most like to live?",
+  "b": "A2"
+ },
+ {
+  "q": "Jij ___ (zullen) een goede leraar zijn.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jij",
+  "e": "You would be a good teacher.",
+  "b": "A2"
+ },
+ {
+  "q": "Met een fiets ___ (zullen) je veel sneller op school zijn.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jij",
+  "inv": 1,
+  "e": "With a bike you'd get to school much faster.",
+  "b": "A2"
+ },
+ {
+  "q": "Je zei dat je me ___ (zullen) bellen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jij",
+  "sub": 1,
+  "e": "You said you would call me.",
+  "b": "B1"
+ },
+ {
+  "q": "Als je meer oefende, ___ (zullen) je beter Nederlands spreken.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jij",
+  "inv": 1,
+  "e": "If you practised more, you'd speak better Dutch.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik wist dat jij het ___ (zullen) begrijpen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jij",
+  "sub": 1,
+  "e": "I knew you would understand.",
+  "b": "B1"
+ },
+ {
+  "q": "Zonder bril ___ (zullen) jij niets zien.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jij",
+  "inv": 1,
+  "e": "Without glasses you wouldn't see a thing.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (zullen) u het raam even dicht willen doen?",
+  "v": "zullen",
+  "t": "cond",
+  "p": "u",
+  "e": "Would you mind closing the window?",
+  "b": "B1"
+ },
+ {
+  "q": "U ___ (zullen) er goed aan doen om te reserveren.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "u",
+  "e": "You would do well to book.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (zullen) u dat nog een keer kunnen herhalen?",
+  "v": "zullen",
+  "t": "cond",
+  "p": "u",
+  "e": "Could you repeat that once more?",
+  "b": "A2"
+ },
+ {
+  "q": "Als u eerder kwam, ___ (zullen) u niet hoeven te wachten.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "u",
+  "e": "If you came earlier, you wouldn't have to wait.",
+  "b": "B1"
+ },
+ {
+  "q": "Wat ___ (zullen) u doen als u de loterij won?",
+  "v": "zullen",
+  "t": "cond",
+  "p": "u",
+  "e": "What would you do if you won the lottery?",
+  "b": "A2"
+ },
+ {
+  "q": "U ___ (zullen) ons enorm helpen met een snel antwoord.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "u",
+  "e": "A quick reply would help us enormously.",
+  "b": "B1"
+ },
+ {
+  "q": "Hoeveel ___ (zullen) u voor dit huis willen betalen?",
+  "v": "zullen",
+  "t": "cond",
+  "p": "u",
+  "e": "How much would you be willing to pay for this house?",
+  "b": "B1"
+ },
+ {
+  "q": "Als het mooi weer was, ___ (zullen) Jan naar het strand gaan.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "e": "If the weather were nice, Jan would go to the beach.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn moeder ___ (zullen) dit prachtig vinden.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "e": "My mother would love this.",
+  "b": "A2"
+ },
+ {
+  "q": "Het ___ (zullen) leuk zijn als je mee kon.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "e": "It would be nice if you could come along.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij zei dat hij morgen ___ (zullen) komen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "sub": 1,
+  "e": "He said he would come tomorrow.",
+  "b": "B1"
+ },
+ {
+  "q": "Zonder jou ___ (zullen) het feest saai zijn.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "e": "Without you the party would be boring.",
+  "b": "A2"
+ },
+ {
+  "q": "Een vakantie ___ (zullen) je goed doen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "e": "A holiday would do you good.",
+  "b": "A2"
+ },
+ {
+  "q": "Als Mila meer tijd had, ___ (zullen) ze een hond nemen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "e": "If Mila had more time, she'd get a dog.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn vader ___ (zullen) nooit een elektrische auto kopen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "e": "My father would never buy an electric car.",
+  "b": "A2"
+ },
+ {
+  "q": "Het ___ (zullen) beter zijn om de trein te nemen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "e": "It would be better to take the train.",
+  "b": "A2"
+ },
+ {
+  "q": "De bus ___ (zullen) om tien uur vertrekken, maar hij is te laat.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "e": "The bus was supposed to leave at ten, but it's late.",
+  "b": "B1"
+ },
+ {
+  "q": "Wie ___ (zullen) dat nou willen?",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "e": "Who would want that?",
+  "b": "A2"
+ },
+ {
+  "q": "Een kopje koffie ___ (zullen) nu heerlijk zijn.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "e": "A cup of coffee would be lovely now.",
+  "b": "A2"
+ },
+ {
+  "q": "Als Thijs harder werkte, ___ (zullen) hij voor het examen slagen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "e": "If Thijs worked harder, he'd pass the exam.",
+  "b": "B1"
+ },
+ {
+  "q": "Sara beloofde dat ze me ___ (zullen) helpen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "sub": 1,
+  "e": "Sara promised she would help me.",
+  "b": "B1"
+ },
+ {
+  "q": "Het weerbericht zei dat het vandaag ___ (zullen) regenen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "sub": 1,
+  "e": "The forecast said it would rain today.",
+  "b": "B1"
+ },
+ {
+  "q": "Zo'n huis ___ (zullen) veel te duur zijn voor ons.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "e": "A house like that would be far too expensive for us.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn oma ___ (zullen) haar kleinkinderen graag vaker zien.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "e": "My grandmother would like to see her grandchildren more often.",
+  "b": "A2"
+ },
+ {
+  "q": "In een grotere stad ___ (zullen) mijn zoon meer vrienden hebben.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "e": "In a bigger city my son would have more friends.",
+  "b": "A2"
+ },
+ {
+  "q": "Het ___ (zullen) fijn zijn als het eens ophield met regenen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "e": "It would be nice if it stopped raining for once.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn baas ___ (zullen) liever hebben dat ik op kantoor werk.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "e": "My boss would rather I worked in the office.",
+  "b": "B1"
+ },
+ {
+  "q": "Als we een auto hadden, ___ (zullen) we vaker naar zee gaan.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "wij",
+  "e": "If we had a car, we'd go to the seaside more often.",
+  "b": "A2"
+ },
+ {
+  "q": "We ___ (zullen) graag een tafel voor vier reserveren.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "wij",
+  "e": "We'd like to book a table for four.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij ___ (zullen) dat nooit zo doen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "wij",
+  "e": "We would never do it like that.",
+  "b": "A2"
+ },
+ {
+  "q": "We ___ (zullen) eigenlijk eerder moeten vertrekken.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "wij",
+  "e": "We should really leave earlier.",
+  "b": "B1"
+ },
+ {
+  "q": "Met een grotere tuin ___ (zullen) we kippen nemen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "wij",
+  "e": "With a bigger garden we'd get chickens.",
+  "b": "A2"
+ },
+ {
+  "q": "We spraken af dat we om acht uur ___ (zullen) eten.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "wij",
+  "sub": 1,
+  "e": "We agreed that we would eat at eight.",
+  "b": "B1"
+ },
+ {
+  "q": "Wat ___ (zullen) we zonder jou moeten doen?",
+  "v": "zullen",
+  "t": "cond",
+  "p": "wij",
+  "e": "What would we do without you?",
+  "b": "B1"
+ },
+ {
+  "q": "In een groter huis ___ (zullen) we meer ruimte hebben.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "wij",
+  "e": "In a bigger house we'd have more space.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij ___ (zullen) het leuk vinden als jullie komen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "wij",
+  "e": "We'd love it if you came.",
+  "b": "A2"
+ },
+ {
+  "q": "Als het niet zo koud was, ___ (zullen) we buiten eten.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "wij",
+  "e": "If it weren't so cold, we'd eat outside.",
+  "b": "A2"
+ },
+ {
+  "q": "We ___ (zullen) graag in de zomer trouwen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "wij",
+  "e": "We'd like to get married in the summer.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij ___ (zullen) liever met de trein gaan.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "wij",
+  "e": "We'd rather go by train.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik dacht dat we samen ___ (zullen) gaan.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "wij",
+  "sub": 1,
+  "e": "I thought we would go together.",
+  "b": "B1"
+ },
+ {
+  "q": "Jullie ___ (zullen) het daar prachtig vinden.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jullie",
+  "e": "You'd love it there.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (zullen) jullie ons kunnen helpen met verhuizen?",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jullie",
+  "e": "Could you help us move?",
+  "b": "A2"
+ },
+ {
+  "q": "Als jullie meer oefenden, ___ (zullen) jullie beter spelen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jullie",
+  "e": "If you practised more, you'd play better.",
+  "b": "A2"
+ },
+ {
+  "q": "Wat ___ (zullen) jullie doen als het ging sneeuwen?",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jullie",
+  "e": "What would you do if it started snowing?",
+  "b": "B1"
+ },
+ {
+  "q": "We dachten dat jullie eerder ___ (zullen) komen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jullie",
+  "sub": 1,
+  "e": "We thought you would come earlier.",
+  "b": "B1"
+ },
+ {
+  "q": "Jullie ___ (zullen) eens naar dat nieuwe museum moeten gaan.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jullie",
+  "e": "You should go to that new museum some time.",
+  "b": "B1"
+ },
+ {
+  "q": "Zonder hulp ___ (zullen) jullie het nooit op tijd afmaken.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jullie",
+  "e": "Without help you'd never finish it on time.",
+  "b": "B1"
+ },
+ {
+  "q": "Jullie ___ (zullen) samen een goede band zijn.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jullie",
+  "e": "Together you'd make a good band.",
+  "b": "A2"
+ },
+ {
+  "q": "Jullie beloofden dat jullie vandaag ___ (zullen) opruimen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jullie",
+  "sub": 1,
+  "e": "You promised you would tidy up today.",
+  "b": "B1"
+ },
+ {
+  "q": "Als jullie in Amsterdam woonden, ___ (zullen) jullie alles met de fiets doen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jullie",
+  "e": "If you lived in Amsterdam, you'd do everything by bike.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik dacht dat jullie al ___ (zullen) slapen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jullie",
+  "sub": 1,
+  "e": "I thought you would be asleep already.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn ouders ___ (zullen) dat nooit goed vinden.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "zij",
+  "e": "My parents would never allow that.",
+  "b": "A2"
+ },
+ {
+  "q": "De kinderen ___ (zullen) graag een hond willen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "zij",
+  "e": "The children would love a dog.",
+  "b": "A2"
+ },
+ {
+  "q": "Als de treinen beter reden, ___ (zullen) meer mensen de trein nemen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "zij",
+  "e": "If the trains ran better, more people would take the train.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn vrienden ___ (zullen) je zeker helpen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "zij",
+  "e": "My friends would certainly help you.",
+  "b": "A2"
+ },
+ {
+  "q": "Veel mensen ___ (zullen) graag minder werken.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "zij",
+  "e": "Many people would like to work less.",
+  "b": "A2"
+ },
+ {
+  "q": "De buren zeiden dat ze vanavond ___ (zullen) komen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "zij",
+  "sub": 1,
+  "e": "The neighbours said they would come tonight.",
+  "b": "B1"
+ },
+ {
+  "q": "Zonder regen ___ (zullen) de bloemen snel doodgaan.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "zij",
+  "e": "Without rain the flowers would soon die.",
+  "b": "A2"
+ },
+ {
+  "q": "De studenten ___ (zullen) meer leren in kleinere klassen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "zij",
+  "e": "The students would learn more in smaller classes.",
+  "b": "A2"
+ },
+ {
+  "q": "In jouw plaats ___ (zullen) de meeste mensen boos zijn.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "zij",
+  "e": "In your place most people would be angry.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn grootouders ___ (zullen) trots op je zijn.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "zij",
+  "e": "My grandparents would be proud of you.",
+  "b": "A2"
+ },
+ {
+  "q": "Als de winkels langer open waren, ___ (zullen) ze meer verkopen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "zij",
+  "e": "If the shops stayed open longer, they'd sell more.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn collega's ___ (zullen) dit nooit geloven.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "zij",
+  "e": "My colleagues would never believe this.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn zussen ___ (zullen) dit feest nooit willen missen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "zij",
+  "e": "My sisters would never want to miss this party.",
+  "b": "A2"
+ },
+ {
+  "q": "Zonder jou ___ (zullen) ik me heel alleen voelen.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "ik",
+  "e": "Without you I would feel very lonely.",
+  "b": "A2"
+ },
+ {
+  "q": "Hoe ___ (zullen) jij dit probleem oplossen?",
+  "v": "zullen",
+  "t": "cond",
+  "p": "jij",
+  "inv": 1,
+  "e": "How would you solve this problem?",
+  "b": "A2"
+ },
+ {
+  "q": "Volgens mij ___ (zullen) dat een goed plan zijn.",
+  "v": "zullen",
+  "t": "cond",
+  "p": "hij",
+  "e": "I think that would be a good plan.",
+  "b": "A2"
+ }
+]

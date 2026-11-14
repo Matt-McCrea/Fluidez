@@ -1,0 +1,513 @@
+[
+ {
+  "nl": "Hoe heet je?",
+  "en": "What's your name?",
+  "alt": [
+   "Wat is je naam?"
+  ],
+  "th": "ik",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: how are you called?"
+ },
+ {
+  "nl": "Hoe heet u?",
+  "en": "What's your name?",
+  "alt": [
+   "Wat is uw naam?"
+  ],
+  "th": "ik",
+  "b": "A1",
+  "t": 2,
+  "n": "Polite form with u."
+ },
+ {
+  "nl": "Ik heet Sam.",
+  "en": "My name is Sam.",
+  "alt": [
+   "Mijn naam is Sam."
+  ],
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben Sam.",
+  "en": "I'm Sam.",
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Waar kom je vandaan?",
+  "en": "Where are you from?",
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Waar komt u vandaan?",
+  "en": "Where are you from?",
+  "th": "ik",
+  "b": "A1",
+  "t": 2,
+  "n": "Polite form with u."
+ },
+ {
+  "nl": "Ik kom uit Engeland.",
+  "en": "I'm from England.",
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik kom uit Ierland.",
+  "en": "I'm from Ireland.",
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik kom uit Amerika.",
+  "en": "I'm from the US.",
+  "alt": [
+   "Ik kom uit de Verenigde Staten."
+  ],
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben Engels.",
+  "en": "I'm English.",
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben Brits.",
+  "en": "I'm British.",
+  "th": "ik",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Waar woon je?",
+  "en": "Where do you live?",
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik woon in Amsterdam.",
+  "en": "I live in Amsterdam.",
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik woon hier sinds een jaar.",
+  "en": "I've lived here for a year.",
+  "alt": [
+   "Ik woon hier al een jaar."
+  ],
+  "th": "ik",
+  "b": "A2",
+  "t": 2,
+  "n": "Dutch uses the present tense here."
+ },
+ {
+  "nl": "Ik woon hier nog niet zo lang.",
+  "en": "I haven't lived here long.",
+  "th": "ik",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben hier net komen wonen.",
+  "en": "I've just moved here.",
+  "th": "ik",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Hoe oud ben je?",
+  "en": "How old are you?",
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben dertig jaar.",
+  "en": "I'm thirty.",
+  "alt": [
+   "Ik ben dertig."
+  ],
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben in mei jarig.",
+  "en": "My birthday is in May.",
+  "th": "ik",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben geboren in 1990.",
+  "en": "I was born in 1990.",
+  "alt": [
+   "Ik ben in 1990 geboren."
+  ],
+  "th": "ik",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Wat doe je voor werk?",
+  "en": "What do you do for a living?",
+  "alt": [
+   "Wat voor werk doe je?",
+   "Wat doe je?"
+  ],
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben leraar.",
+  "en": "I'm a teacher.",
+  "th": "ik",
+  "b": "A1",
+  "t": 1,
+  "n": "No article before a job."
+ },
+ {
+  "nl": "Ik werk als verpleegkundige.",
+  "en": "I work as a nurse.",
+  "th": "ik",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik werk in een ziekenhuis.",
+  "en": "I work in a hospital.",
+  "th": "ik",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik werk bij een bank.",
+  "en": "I work at a bank.",
+  "th": "ik",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik werk thuis.",
+  "en": "I work from home.",
+  "alt": [
+   "Ik werk vanuit huis."
+  ],
+  "th": "ik",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben student.",
+  "en": "I'm a student.",
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik studeer rechten.",
+  "en": "I'm studying law.",
+  "th": "ik",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben met pensioen.",
+  "en": "I'm retired.",
+  "th": "ik",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik zoek werk.",
+  "en": "I'm looking for work.",
+  "th": "ik",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ben je getrouwd?",
+  "en": "Are you married?",
+  "th": "ik",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben getrouwd.",
+  "en": "I'm married.",
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben single.",
+  "en": "I'm single.",
+  "alt": [
+   "Ik ben vrijgezel."
+  ],
+  "th": "ik",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik heb een vriendin.",
+  "en": "I have a girlfriend.",
+  "th": "ik",
+  "b": "A1",
+  "t": 2,
+  "n": "Vriendin is also just a female friend."
+ },
+ {
+  "nl": "Ik heb een vriend.",
+  "en": "I have a boyfriend.",
+  "th": "ik",
+  "b": "A1",
+  "t": 2,
+  "n": "Vriend is also just a male friend."
+ },
+ {
+  "nl": "Heb je kinderen?",
+  "en": "Do you have children?",
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik heb twee kinderen.",
+  "en": "I have two children.",
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik heb geen kinderen.",
+  "en": "I don't have children.",
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik heb een zoon en een dochter.",
+  "en": "I have a son and a daughter.",
+  "th": "ik",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Heb je broers of zussen?",
+  "en": "Do you have brothers or sisters?",
+  "th": "ik",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik heb een broer.",
+  "en": "I have a brother.",
+  "th": "ik",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik heb twee zussen.",
+  "en": "I have two sisters.",
+  "th": "ik",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben enig kind.",
+  "en": "I'm an only child.",
+  "th": "ik",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Mijn ouders wonen in Londen.",
+  "en": "My parents live in London.",
+  "th": "ik",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Dit is mijn man.",
+  "en": "This is my husband.",
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Dit is mijn vrouw.",
+  "en": "This is my wife.",
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Dit is mijn vriend Tom.",
+  "en": "This is my friend Tom.",
+  "th": "ik",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Spreek je Engels?",
+  "en": "Do you speak English?",
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik spreek geen Nederlands.",
+  "en": "I don't speak Dutch.",
+  "th": "ik",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik leer Nederlands.",
+  "en": "I'm learning Dutch.",
+  "alt": [
+   "Ik ben Nederlands aan het leren."
+  ],
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Mijn Nederlands is niet zo goed.",
+  "en": "My Dutch isn't very good.",
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben nog aan het leren.",
+  "en": "I'm still learning.",
+  "th": "ik",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik volg een cursus Nederlands.",
+  "en": "I'm taking a Dutch course.",
+  "th": "ik",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik spreek Engels en Frans.",
+  "en": "I speak English and French.",
+  "th": "ik",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Wat zijn je hobby's?",
+  "en": "What are your hobbies?",
+  "th": "ik",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik lees graag.",
+  "en": "I like reading.",
+  "th": "ik",
+  "b": "A1",
+  "t": 2,
+  "n": "Verb plus graag means you like doing it."
+ },
+ {
+  "nl": "Ik sport graag.",
+  "en": "I like doing sport.",
+  "th": "ik",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik speel gitaar.",
+  "en": "I play the guitar.",
+  "th": "ik",
+  "b": "A1",
+  "t": 3
+ },
+ {
+  "nl": "Ik heb een hond.",
+  "en": "I have a dog.",
+  "th": "ik",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben hier op vakantie.",
+  "en": "I'm here on holiday.",
+  "th": "ik",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben hier voor mijn werk.",
+  "en": "I'm here for work.",
+  "th": "ik",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben opgegroeid in Manchester.",
+  "en": "I grew up in Manchester.",
+  "th": "ik",
+  "b": "B1",
+  "t": 2
+ },
+ {
+  "nl": "Ik kom oorspronkelijk uit Schotland.",
+  "en": "I'm originally from Scotland.",
+  "th": "ik",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "nl": "Wat is je telefoonnummer?",
+  "en": "What's your phone number?",
+  "th": "ik",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Wat is je adres?",
+  "en": "What's your address?",
+  "th": "ik",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben vegetariër.",
+  "en": "I'm vegetarian.",
+  "th": "ik",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Eerlijk gezegd ben ik nogal verlegen.",
+  "en": "To be honest, I'm quite shy.",
+  "th": "ik",
+  "b": "B1",
+  "t": 3
+ }
+]

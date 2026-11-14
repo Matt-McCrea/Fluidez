@@ -1,0 +1,347 @@
+[
+ {
+  "nl": "Wat voor weer is het?",
+  "en": "What's the weather like?",
+  "alt": [
+   "Hoe is het weer?"
+  ],
+  "th": "weer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Het regent.",
+  "en": "It's raining.",
+  "th": "weer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Het miezert.",
+  "en": "It's drizzling.",
+  "th": "weer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Het regent pijpenstelen.",
+  "en": "It's raining cats and dogs.",
+  "th": "weer",
+  "b": "B1",
+  "t": 3,
+  "n": "Literally: it's raining pipe stems."
+ },
+ {
+  "nl": "Het sneeuwt.",
+  "en": "It's snowing.",
+  "th": "weer",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Het waait.",
+  "en": "It's windy.",
+  "alt": [
+   "Het waait hard."
+  ],
+  "th": "weer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Wat een wind!",
+  "en": "What a wind!",
+  "th": "weer",
+  "b": "A1",
+  "t": 3
+ },
+ {
+  "nl": "Het onweert.",
+  "en": "There's a thunderstorm.",
+  "th": "weer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Het hagelt.",
+  "en": "It's hailing.",
+  "th": "weer",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Het vriest.",
+  "en": "It's freezing.",
+  "th": "weer",
+  "b": "A2",
+  "t": 2,
+  "n": "Below zero."
+ },
+ {
+  "nl": "Het is koud.",
+  "en": "It's cold.",
+  "th": "weer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Het is fris vandaag.",
+  "en": "It's chilly today.",
+  "th": "weer",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Het is warm.",
+  "en": "It's warm.",
+  "th": "weer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Het is heet.",
+  "en": "It's hot.",
+  "th": "weer",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Het is vandaag bloedheet.",
+  "en": "It's boiling hot today.",
+  "th": "weer",
+  "b": "B1",
+  "t": 2
+ },
+ {
+  "nl": "Het is benauwd.",
+  "en": "It's muggy.",
+  "th": "weer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Het is lekker weer.",
+  "en": "The weather's lovely.",
+  "th": "weer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Wat een mooi weer!",
+  "en": "What beautiful weather!",
+  "th": "weer",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Wat een rotweer.",
+  "en": "What awful weather.",
+  "alt": [
+   "Het is hondenweer."
+  ],
+  "th": "weer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "De zon schijnt.",
+  "en": "The sun is shining.",
+  "th": "weer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Lekker zonnetje, hè?",
+  "en": "Lovely sunshine, isn't it?",
+  "th": "weer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Het is bewolkt.",
+  "en": "It's cloudy.",
+  "th": "weer",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Het is mistig.",
+  "en": "It's foggy.",
+  "th": "weer",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Het is droog.",
+  "en": "It's dry.",
+  "th": "weer",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Het klaart op.",
+  "en": "It's clearing up.",
+  "th": "weer",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "De bui is bijna over.",
+  "en": "The shower is almost over.",
+  "th": "weer",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Het is glad buiten.",
+  "en": "It's icy outside.",
+  "th": "weer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Het is wisselvallig.",
+  "en": "The weather is changeable.",
+  "th": "weer",
+  "b": "B1",
+  "t": 2
+ },
+ {
+  "nl": "Het is hier altijd zo nat.",
+  "en": "It's always so wet here.",
+  "th": "weer",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Het wordt warm vandaag.",
+  "en": "It's going to be warm today.",
+  "th": "weer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Morgen gaat het regenen.",
+  "en": "It's going to rain tomorrow.",
+  "th": "weer",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Er komt storm.",
+  "en": "There's a storm coming.",
+  "th": "weer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Er is code oranje.",
+  "en": "There's an amber weather warning.",
+  "th": "weer",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "nl": "Wat zegt het weerbericht?",
+  "en": "What does the forecast say?",
+  "th": "weer",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Volgens het weerbericht wordt het zonnig.",
+  "en": "The forecast says it'll be sunny.",
+  "th": "weer",
+  "b": "B1",
+  "t": 2
+ },
+ {
+  "nl": "Het zal wel droog blijven.",
+  "en": "It'll probably stay dry.",
+  "th": "weer",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "nl": "Hoeveel graden is het?",
+  "en": "What's the temperature?",
+  "th": "weer",
+  "b": "A1",
+  "t": 2,
+  "n": "Literally: how many degrees is it?"
+ },
+ {
+  "nl": "Het is twintig graden.",
+  "en": "It's twenty degrees.",
+  "th": "weer",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Het is onder nul.",
+  "en": "It's below zero.",
+  "th": "weer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Neem een paraplu mee.",
+  "en": "Take an umbrella.",
+  "th": "weer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Trek een jas aan.",
+  "en": "Put a coat on.",
+  "th": "weer",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben drijfnat.",
+  "en": "I'm soaking wet.",
+  "alt": [
+   "Ik ben doorweekt."
+  ],
+  "th": "weer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik heb het steenkoud.",
+  "en": "I'm freezing.",
+  "th": "weer",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Zullen we binnen blijven?",
+  "en": "Shall we stay inside?",
+  "th": "weer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "De wind staat tegen.",
+  "en": "There's a headwind.",
+  "th": "weer",
+  "b": "B1",
+  "t": 3,
+  "n": "A classic cycling complaint."
+ },
+ {
+  "nl": "Het is echt zomerweer.",
+  "en": "It's real summer weather.",
+  "th": "weer",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Het wordt eindelijk lente.",
+  "en": "Spring is finally coming.",
+  "th": "weer",
+  "b": "B1",
+  "t": 3
+ }
+]

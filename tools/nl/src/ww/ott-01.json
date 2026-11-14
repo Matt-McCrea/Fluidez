@@ -1,0 +1,1444 @@
+[
+ {
+  "q": "Ik ___ (werken) elke dag in een winkel.",
+  "v": "werken",
+  "t": "ott",
+  "p": "ik",
+  "e": "I work in a shop every day.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (wonen) nu in Utrecht.",
+  "v": "wonen",
+  "t": "ott",
+  "p": "ik",
+  "e": "I live in Utrecht now.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (drinken) elke ochtend koffie.",
+  "v": "drinken",
+  "t": "ott",
+  "p": "ik",
+  "e": "I drink coffee every morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (hebben) twee broers en een zus.",
+  "v": "hebben",
+  "t": "ott",
+  "p": "ik",
+  "e": "I have two brothers and a sister.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (zijn) vandaag erg moe.",
+  "v": "zijn",
+  "t": "ott",
+  "p": "ik",
+  "e": "I am very tired today.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (gaan) elke zaterdag naar de markt.",
+  "v": "gaan",
+  "t": "ott",
+  "p": "ik",
+  "e": "I go to the market every Saturday.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (lezen) voor het slapen altijd een boek.",
+  "v": "lezen",
+  "t": "ott",
+  "p": "ik",
+  "e": "I always read a book before bed.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (vinden) dit een mooi liedje.",
+  "v": "vinden",
+  "t": "ott",
+  "p": "ik",
+  "e": "I think this is a lovely song.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (fietsen) elke dag naar mijn werk.",
+  "v": "fietsen",
+  "t": "ott",
+  "p": "ik",
+  "e": "I cycle to work every day.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ___ (koken) vanavond voor mijn vrienden.",
+  "v": "koken",
+  "t": "ott",
+  "p": "ik",
+  "e": "I'm cooking for my friends tonight.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ___ (slapen) meestal acht uur per nacht.",
+  "v": "slapen",
+  "t": "ott",
+  "p": "ik",
+  "e": "I usually sleep eight hours a night.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (spreken) een beetje Nederlands.",
+  "v": "spreken",
+  "t": "ott",
+  "p": "ik",
+  "e": "I speak a little Dutch.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (kopen) elke week verse groente.",
+  "v": "kopen",
+  "t": "ott",
+  "p": "ik",
+  "e": "I buy fresh vegetables every week.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (kennen) die man niet.",
+  "v": "kennen",
+  "t": "ott",
+  "p": "ik",
+  "e": "I don't know that man.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (weten) het antwoord niet.",
+  "v": "weten",
+  "t": "ott",
+  "p": "ik",
+  "e": "I don't know the answer.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (begrijpen) de vraag niet goed.",
+  "v": "begrijpen",
+  "t": "ott",
+  "p": "ik",
+  "e": "I don't really understand the question.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (zoeken) mijn sleutels al een uur.",
+  "v": "zoeken",
+  "t": "ott",
+  "p": "ik",
+  "e": "I've been looking for my keys for an hour.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (wachten) bij de bushalte op Sanne.",
+  "v": "wachten",
+  "t": "ott",
+  "p": "ik",
+  "e": "I'm waiting for Sanne at the bus stop.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (betalen) vandaag de koffie.",
+  "v": "betalen",
+  "t": "ott",
+  "p": "ik",
+  "e": "I'm paying for the coffee today.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (studeren) rechten in Leiden.",
+  "v": "studeren",
+  "t": "ott",
+  "p": "ik",
+  "e": "I study law in Leiden.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ___ (zwemmen) elke dinsdag in het zwembad.",
+  "v": "zwemmen",
+  "t": "ott",
+  "p": "ik",
+  "e": "I swim in the pool every Tuesday.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ___ (luisteren) graag naar de radio.",
+  "v": "luisteren",
+  "t": "ott",
+  "p": "ik",
+  "e": "I like listening to the radio.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (schrijven) mijn oma elke maand een kaart.",
+  "v": "schrijven",
+  "t": "ott",
+  "p": "ik",
+  "e": "I write my grandmother a card every month.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (reizen) elk jaar met de trein naar Parijs.",
+  "v": "reizen",
+  "t": "ott",
+  "p": "ik",
+  "e": "Every year I travel to Paris by train.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ___ (geloven) je niet.",
+  "v": "geloven",
+  "t": "ott",
+  "p": "ik",
+  "e": "I don't believe you.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (voelen) me vandaag niet zo goed.",
+  "v": "voelen",
+  "t": "ott",
+  "p": "ik",
+  "e": "I don't feel very well today.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (kijken) na het eten graag naar het nieuws.",
+  "v": "kijken",
+  "t": "ott",
+  "p": "ik",
+  "e": "I like watching the news after dinner.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (blijven) vandaag thuis, want ik ben ziek.",
+  "v": "blijven",
+  "t": "ott",
+  "p": "ik",
+  "e": "I'm staying home today because I'm ill.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (leren) nu Nederlands met een app.",
+  "v": "leren",
+  "t": "ott",
+  "p": "ik",
+  "e": "I'm learning Dutch with an app now.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (opstaan) elke dag om zeven uur op.",
+  "v": "opstaan",
+  "t": "ott",
+  "p": "ik",
+  "e": "I get up at seven every day.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ___ (opbellen) mijn moeder elke zondag op.",
+  "v": "opbellen",
+  "t": "ott",
+  "p": "ik",
+  "e": "I call my mother every Sunday.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ___ (opruimen) mijn kamer elke zaterdag op.",
+  "v": "opruimen",
+  "t": "ott",
+  "p": "ik",
+  "e": "I tidy my room every Saturday.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ___ (meenemen) altijd een paraplu mee.",
+  "v": "meenemen",
+  "t": "ott",
+  "p": "ik",
+  "e": "I always take an umbrella with me.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (afspreken) vaak met vrienden in de stad af.",
+  "v": "afspreken",
+  "t": "ott",
+  "p": "ik",
+  "e": "I often meet up with friends in town.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ben moe, omdat ik elke dag om vijf uur ___ (opstaan).",
+  "v": "opstaan",
+  "t": "ott",
+  "p": "ik",
+  "sub": 1,
+  "e": "I'm tired because I get up at five every day.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn moeder is blij als ik haar ___ (opbellen).",
+  "v": "opbellen",
+  "t": "ott",
+  "p": "ik",
+  "sub": 1,
+  "e": "My mother is happy when I call her.",
+  "b": "B1"
+ },
+ {
+  "q": "Jij ___ (werken) te veel, Lisa.",
+  "v": "werken",
+  "t": "ott",
+  "p": "jij",
+  "e": "You work too much, Lisa.",
+  "b": "A1"
+ },
+ {
+  "q": "Jij ___ (wonen) toch ook in Amsterdam?",
+  "v": "wonen",
+  "t": "ott",
+  "p": "jij",
+  "e": "You live in Amsterdam too, don't you?",
+  "b": "A2"
+ },
+ {
+  "q": "Jij ___ (worden) volgende week dertig.",
+  "v": "worden",
+  "t": "ott",
+  "p": "jij",
+  "e": "You turn thirty next week.",
+  "b": "A1"
+ },
+ {
+  "q": "Jij ___ (vinden) dat boek dus saai.",
+  "v": "vinden",
+  "t": "ott",
+  "p": "jij",
+  "e": "So you find that book boring.",
+  "b": "A1"
+ },
+ {
+  "q": "Jij ___ (houden) echt van chocola, hè?",
+  "v": "houden",
+  "t": "ott",
+  "p": "jij",
+  "e": "You really love chocolate, don't you?",
+  "b": "A1"
+ },
+ {
+  "q": "Jij ___ (rijden) veel te hard.",
+  "v": "rijden",
+  "t": "ott",
+  "p": "jij",
+  "e": "You drive far too fast.",
+  "b": "A1"
+ },
+ {
+  "q": "Jij ___ (antwoorden) nooit op mijn berichten.",
+  "v": "antwoorden",
+  "t": "ott",
+  "p": "jij",
+  "e": "You never answer my messages.",
+  "b": "B1"
+ },
+ {
+  "q": "Je ___ (hebben) een mooie fiets.",
+  "v": "hebben",
+  "t": "ott",
+  "p": "jij",
+  "e": "You have a nice bike.",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (zijn) altijd zo vrolijk.",
+  "v": "zijn",
+  "t": "ott",
+  "p": "jij",
+  "e": "You're always so cheerful.",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (spreken) heel goed Engels.",
+  "v": "spreken",
+  "t": "ott",
+  "p": "jij",
+  "e": "You speak very good English.",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (lopen) elke ochtend door het park.",
+  "v": "lopen",
+  "t": "ott",
+  "p": "jij",
+  "e": "You walk through the park every morning.",
+  "b": "A1"
+ },
+ {
+  "q": "Jij ___ (zitten) op mijn plek.",
+  "v": "zitten",
+  "t": "ott",
+  "p": "jij",
+  "e": "You're sitting in my seat.",
+  "b": "A1"
+ },
+ {
+  "q": "Jij ___ (eten) nooit vlees, toch?",
+  "v": "eten",
+  "t": "ott",
+  "p": "jij",
+  "e": "You never eat meat, right?",
+  "b": "A1"
+ },
+ {
+  "q": "Jij ___ (weten) altijd alles.",
+  "v": "weten",
+  "t": "ott",
+  "p": "jij",
+  "e": "You always know everything.",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (slapen) te weinig.",
+  "v": "slapen",
+  "t": "ott",
+  "p": "jij",
+  "e": "You don't sleep enough.",
+  "b": "A1"
+ },
+ {
+  "q": "Jij ___ (doen) dat heel goed.",
+  "v": "doen",
+  "t": "ott",
+  "p": "jij",
+  "e": "You do that very well.",
+  "b": "A1"
+ },
+ {
+  "q": "Jij ___ (gaan) elke dag met de bus.",
+  "v": "gaan",
+  "t": "ott",
+  "p": "jij",
+  "e": "You go by bus every day.",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (lachen) altijd om zijn grappen.",
+  "v": "lachen",
+  "t": "ott",
+  "p": "jij",
+  "e": "You always laugh at his jokes.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (werken) jij morgen ook?",
+  "v": "werken",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Are you working tomorrow too?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (wonen) je nog bij je ouders?",
+  "v": "wonen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Do you still live with your parents?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (worden) jij ook zo moe van dit weer?",
+  "v": "worden",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Does this weather make you tired too?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (vinden) jij dit ook lekker?",
+  "v": "vinden",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Do you like this too?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (rijden) jij vanavond naar huis?",
+  "v": "rijden",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Are you driving home tonight?",
+  "b": "A1"
+ },
+ {
+  "q": "Waarom ___ (antwoorden) je niet op mijn vraag?",
+  "v": "antwoorden",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Why don't you answer my question?",
+  "b": "B1"
+ },
+ {
+  "q": "___ (hebben) je even tijd?",
+  "v": "hebben",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Do you have a moment?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (zijn) jij de nieuwe buurman?",
+  "v": "zijn",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Are you the new neighbour?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (willen) je een kopje thee?",
+  "v": "willen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Would you like a cup of tea?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (spreken) jij Duits?",
+  "v": "spreken",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Do you speak German?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (komen) je vanavond ook naar het feest?",
+  "v": "komen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Are you coming to the party tonight too?",
+  "b": "A1"
+ },
+ {
+  "q": "Waar ___ (gaan) je in de zomer naartoe?",
+  "v": "gaan",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Where are you going in the summer?",
+  "b": "A1"
+ },
+ {
+  "q": "Wat ___ (doen) jij in het weekend?",
+  "v": "doen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "What do you do at the weekend?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (weten) jij waar het station is?",
+  "v": "weten",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Do you know where the station is?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (zien) je dat mooie huis daar?",
+  "v": "zien",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Do you see that lovely house over there?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (eten) jij vanavond bij ons?",
+  "v": "eten",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Are you eating with us tonight?",
+  "b": "A1"
+ },
+ {
+  "q": "Wat ___ (drinken) je, koffie of thee?",
+  "v": "drinken",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "What are you drinking, coffee or tea?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (lezen) je graag boeken?",
+  "v": "lezen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Do you like reading books?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (kennen) jij mijn zus al?",
+  "v": "kennen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Do you know my sister yet?",
+  "b": "A1"
+ },
+ {
+  "q": "Morgen ___ (spelen) jij in het eerste team.",
+  "v": "spelen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Tomorrow you play in the first team.",
+  "b": "A1"
+ },
+ {
+  "q": "Vandaag ___ (helpen) jij mij met de afwas.",
+  "v": "helpen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Today you help me with the washing up.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (fietsen) je elke dag naar school?",
+  "v": "fietsen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Do you cycle to school every day?",
+  "b": "B1"
+ },
+ {
+  "q": "Vanavond ___ (koken) jij, want ik ben moe.",
+  "v": "koken",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Tonight you cook, because I'm tired.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (betalen) jij vandaag de rekening?",
+  "v": "betalen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Are you paying the bill today?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (slapen) je goed in dat nieuwe bed?",
+  "v": "slapen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Do you sleep well in that new bed?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (voelen) je je al wat beter?",
+  "v": "voelen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Are you feeling a bit better yet?",
+  "b": "A1"
+ },
+ {
+  "q": "Wat ___ (zoeken) je in die kast?",
+  "v": "zoeken",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "What are you looking for in that cupboard?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (kopen) jij het brood vandaag?",
+  "v": "kopen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Are you buying the bread today?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (begrijpen) je wat ik bedoel?",
+  "v": "begrijpen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Do you understand what I mean?",
+  "b": "A1"
+ },
+ {
+  "q": "Hoe lang ___ (blijven) je in Nederland?",
+  "v": "blijven",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "How long are you staying in the Netherlands?",
+  "b": "A1"
+ },
+ {
+  "q": "Wat ___ (studeren) jij in Groningen?",
+  "v": "studeren",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "What are you studying in Groningen?",
+  "b": "B1"
+ },
+ {
+  "q": "___ (reizen) je vaak voor je werk?",
+  "v": "reizen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Do you often travel for work?",
+  "b": "B1"
+ },
+ {
+  "q": "Morgen ___ (worden) jij eindelijk achttien!",
+  "v": "worden",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Tomorrow you finally turn eighteen!",
+  "b": "A1"
+ },
+ {
+  "q": "Hoe ___ (vinden) je mijn nieuwe jas?",
+  "v": "vinden",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "What do you think of my new coat?",
+  "b": "A1"
+ },
+ {
+  "q": "Morgen ___ (rijden) jij, want mijn auto is kapot.",
+  "v": "rijden",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Tomorrow you drive, because my car is broken.",
+  "b": "A1"
+ },
+ {
+  "q": "Als ik je iets vraag, ___ (antwoorden) je nooit.",
+  "v": "antwoorden",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "When I ask you something, you never answer.",
+  "b": "B1"
+ },
+ {
+  "q": "Morgen ___ (hebben) je vrij, toch?",
+  "v": "hebben",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "You're off tomorrow, right?",
+  "b": "A1"
+ },
+ {
+  "q": "Waarom ___ (zijn) je zo laat?",
+  "v": "zijn",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Why are you so late?",
+  "b": "A1"
+ },
+ {
+  "q": "Waarom ___ (staan) je daar in de regen?",
+  "v": "staan",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Why are you standing there in the rain?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (zitten) je lekker op die stoel?",
+  "v": "zitten",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Are you comfortable on that chair?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (geloven) jij dat verhaal echt?",
+  "v": "geloven",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Do you really believe that story?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (luisteren) je wel naar mij?",
+  "v": "luisteren",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Are you actually listening to me?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (schrijven) jij die brief vandaag nog?",
+  "v": "schrijven",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Are you writing that letter today?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (zwemmen) jij ook in de zee?",
+  "v": "zwemmen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Do you swim in the sea too?",
+  "b": "B1"
+ },
+ {
+  "q": "___ (dansen) je met mij?",
+  "v": "dansen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Will you dance with me?",
+  "b": "A2"
+ },
+ {
+  "q": "Wanneer ___ (trouwen) jij met Daan?",
+  "v": "trouwen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "When are you marrying Daan?",
+  "b": "A2"
+ },
+ {
+  "q": "Wat ___ (nemen) jij, de vis of de kip?",
+  "v": "nemen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "What are you having, the fish or the chicken?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (krijgen) jij elke week zakgeld?",
+  "v": "krijgen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Do you get pocket money every week?",
+  "b": "A1"
+ },
+ {
+  "q": "Wat ___ (geven) je je moeder voor haar verjaardag?",
+  "v": "geven",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "What are you giving your mother for her birthday?",
+  "b": "A1"
+ },
+ {
+  "q": "Met wie ___ (praten) je daar aan de telefoon?",
+  "v": "praten",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Who are you talking to on the phone?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (bellen) je de dokter vandaag nog?",
+  "v": "bellen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Are you calling the doctor today?",
+  "b": "A1"
+ },
+ {
+  "q": "Wat ___ (leren) je vandaag op school?",
+  "v": "leren",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "What are you learning at school today?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (lopen) jij morgen ook de marathon?",
+  "v": "lopen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Are you running the marathon tomorrow too?",
+  "b": "A1"
+ },
+ {
+  "q": "Morgen ___ (proberen) je het gewoon nog een keer.",
+  "v": "proberen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Tomorrow you just try again.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (mogen) jij al alleen naar school?",
+  "v": "mogen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Are you allowed to go to school on your own yet?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (moeten) je morgen vroeg op?",
+  "v": "moeten",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Do you have to get up early tomorrow?",
+  "b": "A1"
+ },
+ {
+  "q": "Wat ___ (zeggen) je? Ik hoor je niet.",
+  "v": "zeggen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "What are you saying? I can't hear you.",
+  "b": "A1"
+ },
+ {
+  "q": "Wat ___ (denken) jij van dit plan?",
+  "v": "denken",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "What do you think of this plan?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (snappen) je het nu?",
+  "v": "snappen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Do you get it now?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (horen) je die vogels?",
+  "v": "horen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Can you hear those birds?",
+  "b": "A1"
+ },
+ {
+  "q": "Hoe laat ___ (opstaan) jij morgen op?",
+  "v": "opstaan",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "What time are you getting up tomorrow?",
+  "b": "B1"
+ },
+ {
+  "q": "___ (opbellen) je me vanavond op?",
+  "v": "opbellen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Will you call me tonight?",
+  "b": "B1"
+ },
+ {
+  "q": "___ (meenemen) jij de drankjes mee?",
+  "v": "meenemen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Are you bringing the drinks?",
+  "b": "A2"
+ },
+ {
+  "q": "Morgen ___ (ophalen) jij de kinderen van school op.",
+  "v": "ophalen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Tomorrow you pick the children up from school.",
+  "b": "B1"
+ },
+ {
+  "q": "Wanneer ___ (opruimen) je eindelijk je kamer op?",
+  "v": "opruimen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "When are you finally going to tidy your room?",
+  "b": "B1"
+ },
+ {
+  "q": "___ (uitgaan) je vanavond met ons uit?",
+  "v": "uitgaan",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Are you going out with us tonight?",
+  "b": "B1"
+ },
+ {
+  "q": "Vandaag ___ (schoonmaken) jij de badkamer schoon.",
+  "v": "schoonmaken",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Today you clean the bathroom.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (uitleggen) jij het nog een keer uit?",
+  "v": "uitleggen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Will you explain it once more?",
+  "b": "A2"
+ },
+ {
+  "q": "Wanneer ___ (terugkomen) je terug uit Spanje?",
+  "v": "terugkomen",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "When are you coming back from Spain?",
+  "b": "B1"
+ },
+ {
+  "q": "___ (aanzetten) jij even het licht aan?",
+  "v": "aanzetten",
+  "t": "ott",
+  "p": "jij",
+  "inv": 1,
+  "e": "Will you turn the light on?",
+  "b": "B1"
+ },
+ {
+  "q": "Jij ___ (opstaan) altijd heel vroeg op.",
+  "v": "opstaan",
+  "t": "ott",
+  "p": "jij",
+  "e": "You always get up very early.",
+  "b": "B1"
+ },
+ {
+  "q": "Jij ___ (meebrengen) altijd bloemen mee.",
+  "v": "meebrengen",
+  "t": "ott",
+  "p": "jij",
+  "e": "You always bring flowers.",
+  "b": "B1"
+ },
+ {
+  "q": "Je ___ (opgeven) nooit op, en dat is mooi.",
+  "v": "opgeven",
+  "t": "ott",
+  "p": "jij",
+  "e": "You never give up, and that's great.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ben blij dat je me vandaag ___ (opbellen).",
+  "v": "opbellen",
+  "t": "ott",
+  "p": "jij",
+  "sub": 1,
+  "e": "I'm glad you're calling me today.",
+  "b": "B1"
+ },
+ {
+  "q": "Mama is boos omdat jij je kamer nooit ___ (opruimen).",
+  "v": "opruimen",
+  "t": "ott",
+  "p": "jij",
+  "sub": 1,
+  "e": "Mum is cross because you never tidy your room.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ben bang als jij zo hard ___ (rijden).",
+  "v": "rijden",
+  "t": "ott",
+  "p": "jij",
+  "sub": 1,
+  "e": "I'm scared when you drive so fast.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik weet dat jij snel boos ___ (worden).",
+  "v": "worden",
+  "t": "ott",
+  "p": "jij",
+  "sub": 1,
+  "e": "I know that you get angry quickly.",
+  "b": "A2"
+ },
+ {
+  "q": "U ___ (zijn) vandaag de eerste klant.",
+  "v": "zijn",
+  "t": "ott",
+  "p": "u",
+  "e": "You are the first customer today.",
+  "b": "A1"
+ },
+ {
+  "q": "U ___ (wonen) hier al lang, toch?",
+  "v": "wonen",
+  "t": "ott",
+  "p": "u",
+  "e": "You've lived here a long time, haven't you?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (spreken) u Engels?",
+  "v": "spreken",
+  "t": "ott",
+  "p": "u",
+  "inv": 1,
+  "e": "Do you speak English?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (willen) u iets drinken?",
+  "v": "willen",
+  "t": "ott",
+  "p": "u",
+  "inv": 1,
+  "e": "Would you like something to drink?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (komen) u uit België?",
+  "v": "komen",
+  "t": "ott",
+  "p": "u",
+  "inv": 1,
+  "e": "Are you from Belgium?",
+  "b": "A1"
+ },
+ {
+  "q": "U ___ (vinden) de ingang aan de linkerkant.",
+  "v": "vinden",
+  "t": "ott",
+  "p": "u",
+  "e": "You'll find the entrance on the left.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (betalen) u contant of met de pin?",
+  "v": "betalen",
+  "t": "ott",
+  "p": "u",
+  "inv": 1,
+  "e": "Are you paying cash or by card?",
+  "b": "A1"
+ },
+ {
+  "q": "U ___ (krijgen) de sleutel bij de receptie.",
+  "v": "krijgen",
+  "t": "ott",
+  "p": "u",
+  "e": "You get the key at reception.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (werken) u hier al lang?",
+  "v": "werken",
+  "t": "ott",
+  "p": "u",
+  "inv": 1,
+  "e": "Have you worked here long?",
+  "b": "A1"
+ },
+ {
+  "q": "U ___ (moeten) hier links afslaan.",
+  "v": "moeten",
+  "t": "ott",
+  "p": "u",
+  "e": "You have to turn left here.",
+  "b": "A1"
+ },
+ {
+  "q": "Wat ___ (zoeken) u, meneer?",
+  "v": "zoeken",
+  "t": "ott",
+  "p": "u",
+  "inv": 1,
+  "e": "What are you looking for, sir?",
+  "b": "A1"
+ },
+ {
+  "q": "U ___ (rijden) hier te hard, mevrouw.",
+  "v": "rijden",
+  "t": "ott",
+  "p": "u",
+  "e": "You're driving too fast here, madam.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (weten) u hoe laat de trein vertrekt?",
+  "v": "weten",
+  "t": "ott",
+  "p": "u",
+  "inv": 1,
+  "e": "Do you know what time the train leaves?",
+  "b": "A1"
+ },
+ {
+  "q": "U ___ (zitten) op stoel twaalf.",
+  "v": "zitten",
+  "t": "ott",
+  "p": "u",
+  "e": "You're in seat twelve.",
+  "b": "A1"
+ },
+ {
+  "q": "Wat ___ (nemen) u als voorgerecht?",
+  "v": "nemen",
+  "t": "ott",
+  "p": "u",
+  "inv": 1,
+  "e": "What will you have as a starter?",
+  "b": "A1"
+ },
+ {
+  "q": "U ___ (aankomen) om drie uur in Rotterdam aan.",
+  "v": "aankomen",
+  "t": "ott",
+  "p": "u",
+  "e": "You arrive in Rotterdam at three.",
+  "b": "B1"
+ },
+ {
+  "q": "U ___ (invullen) eerst dit formulier in.",
+  "v": "invullen",
+  "t": "ott",
+  "p": "u",
+  "e": "First you fill in this form.",
+  "b": "B1"
+ },
+ {
+  "q": "Waarom ___ (opnemen) u de telefoon niet op?",
+  "v": "opnemen",
+  "t": "ott",
+  "p": "u",
+  "inv": 1,
+  "e": "Why don't you answer the phone?",
+  "b": "A2"
+ },
+ {
+  "q": "Bel ons even als u op het station ___ (aankomen).",
+  "v": "aankomen",
+  "t": "ott",
+  "p": "u",
+  "sub": 1,
+  "e": "Give us a call when you arrive at the station.",
+  "b": "B1"
+ },
+ {
+  "q": "U krijgt de pas zodra u het formulier ___ (invullen).",
+  "v": "invullen",
+  "t": "ott",
+  "p": "u",
+  "sub": 1,
+  "e": "You get the card as soon as you fill in the form.",
+  "b": "B1"
+ },
+ {
+  "q": "U ___ (worden) zo geholpen.",
+  "v": "worden",
+  "t": "ott",
+  "p": "u",
+  "e": "You'll be helped in a moment.",
+  "b": "A2"
+ },
+ {
+  "q": "U ___ (horen) morgen van ons.",
+  "v": "horen",
+  "t": "ott",
+  "p": "u",
+  "e": "You'll hear from us tomorrow.",
+  "b": "A1"
+ },
+ {
+  "q": "Hoe lang ___ (blijven) u in het hotel?",
+  "v": "blijven",
+  "t": "ott",
+  "p": "u",
+  "inv": 1,
+  "e": "How long are you staying at the hotel?",
+  "b": "A1"
+ },
+ {
+  "q": "U ___ (kennen) de weg hier goed.",
+  "v": "kennen",
+  "t": "ott",
+  "p": "u",
+  "e": "You know the way here well.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (voelen) u zich al beter, mevrouw De Vries?",
+  "v": "voelen",
+  "t": "ott",
+  "p": "u",
+  "inv": 1,
+  "e": "Are you feeling better yet, Mrs De Vries?",
+  "b": "A1"
+ },
+ {
+  "q": "U ___ (houden) van klassieke muziek, hoor ik.",
+  "v": "houden",
+  "t": "ott",
+  "p": "u",
+  "e": "I hear you love classical music.",
+  "b": "A1"
+ },
+ {
+  "q": "U ___ (antwoorden) niet op mijn vraag.",
+  "v": "antwoorden",
+  "t": "ott",
+  "p": "u",
+  "e": "You're not answering my question.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (gaan) u met de trein of met de auto?",
+  "v": "gaan",
+  "t": "ott",
+  "p": "u",
+  "inv": 1,
+  "e": "Are you going by train or by car?",
+  "b": "A1"
+ },
+ {
+  "q": "U ___ (staan) in de verkeerde rij.",
+  "v": "staan",
+  "t": "ott",
+  "p": "u",
+  "e": "You're standing in the wrong queue.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn vader ___ (werken) elke dag in de haven.",
+  "v": "werken",
+  "t": "ott",
+  "p": "hij",
+  "e": "My father works in the harbour every day.",
+  "b": "A1"
+ },
+ {
+  "q": "Het ___ (worden) in de winter vroeg donker.",
+  "v": "worden",
+  "t": "ott",
+  "p": "hij",
+  "e": "It gets dark early in winter.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn broer ___ (worden) in mei vijftig.",
+  "v": "worden",
+  "t": "ott",
+  "p": "hij",
+  "e": "My brother turns fifty in May.",
+  "b": "A1"
+ },
+ {
+  "q": "Anna ___ (vinden) haar werk erg leuk.",
+  "v": "vinden",
+  "t": "ott",
+  "p": "hij",
+  "e": "Anna really enjoys her work.",
+  "b": "A1"
+ },
+ {
+  "q": "Hij ___ (vinden) zijn sleutels nooit.",
+  "v": "vinden",
+  "t": "ott",
+  "p": "hij",
+  "e": "He can never find his keys.",
+  "b": "A1"
+ },
+ {
+  "q": "Pieter ___ (houden) niet van koud weer.",
+  "v": "houden",
+  "t": "ott",
+  "p": "hij",
+  "e": "Pieter doesn't like cold weather.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn oma ___ (houden) haar tuin altijd netjes.",
+  "v": "houden",
+  "t": "ott",
+  "p": "hij",
+  "e": "My grandmother always keeps her garden tidy.",
+  "b": "A1"
+ },
+ {
+  "q": "De bus ___ (rijden) elk kwartier naar het centrum.",
+  "v": "rijden",
+  "t": "ott",
+  "p": "hij",
+  "e": "The bus goes to the centre every quarter of an hour.",
+  "b": "A1"
+ },
+ {
+  "q": "Sem ___ (rijden) elke dag in een oude auto.",
+  "v": "rijden",
+  "t": "ott",
+  "p": "hij",
+  "e": "Sem drives an old car every day.",
+  "b": "A1"
+ }
+]

@@ -1,0 +1,562 @@
+[
+ {
+  "q": "Hij zegt dat ___.",
+  "a": "hij niet heeft kunnen slapen",
+  "o": [
+   "hij niet heeft kunnen slapen",
+   "hij niet kunnen slapen heeft",
+   "hij heeft niet kunnen slapen"
+  ],
+  "e": "He says he couldn't sleep.",
+  "w": "Perfect with a modal: the finite verb first, then the two infinitives, all at the end.",
+  "wn": "Heb + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ben blij dat ___.",
+  "a": "ik je heb mogen ontmoeten",
+  "o": [
+   "ik je heb mogen ontmoeten",
+   "ik je mogen ontmoeten heb",
+   "ik heb je mogen ontmoeten"
+  ],
+  "e": "I'm glad I got to meet you.",
+  "w": "Perfect with a modal: the finite verb first, then the two infinitives, all at the end.",
+  "wn": "Heb + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B1"
+ },
+ {
+  "q": "Het spijt me dat ___.",
+  "a": "ik niet heb kunnen komen",
+  "o": [
+   "ik niet heb kunnen komen",
+   "ik niet kunnen komen heb",
+   "ik niet komen kunnen heb"
+  ],
+  "e": "I'm sorry I couldn't come.",
+  "w": "Perfect with a modal: the finite verb first, then the two infinitives, all at the end.",
+  "wn": "Heb + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B1"
+ },
+ {
+  "q": "Ze vertelt dat ___.",
+  "a": "ze gisteren is gaan zwemmen",
+  "o": [
+   "ze gisteren is gaan zwemmen",
+   "ze gisteren gaan zwemmen is",
+   "ze is gisteren gaan zwemmen"
+  ],
+  "e": "She says she went swimming yesterday.",
+  "w": "Laten, zien, horen, gaan and zitten work like modals: finite verb first, then the infinitives.",
+  "wn": "Vervoegd werkwoord eerst, dan de infinitieven.",
+  "t": "cluster",
+  "b": "B1"
+ },
+ {
+  "q": "Ik denk dat ___.",
+  "a": "hij de hele dag heeft zitten werken",
+  "o": [
+   "hij de hele dag heeft zitten werken",
+   "hij de hele dag zitten werken heeft",
+   "hij heeft de hele dag zitten werken"
+  ],
+  "e": "I think he sat working all day.",
+  "w": "Laten, zien, horen, gaan and zitten work like modals: finite verb first, then the infinitives.",
+  "wn": "Vervoegd werkwoord eerst, dan de infinitieven.",
+  "t": "cluster",
+  "b": "B1"
+ },
+ {
+  "q": "Weet je of ___?",
+  "a": "ze haar fiets heeft laten repareren",
+  "o": [
+   "ze haar fiets heeft laten repareren",
+   "ze haar fiets laten repareren heeft",
+   "ze heeft haar fiets laten repareren"
+  ],
+  "e": "Do you know if she had her bike repaired?",
+  "w": "Laten, zien, horen, gaan and zitten work like modals: finite verb first, then the infinitives.",
+  "wn": "Vervoegd werkwoord eerst, dan de infinitieven.",
+  "t": "cluster",
+  "b": "B1"
+ },
+ {
+  "q": "Ik hoop dat ___.",
+  "a": "ik volgend jaar zal kunnen studeren",
+  "o": [
+   "ik volgend jaar zal kunnen studeren",
+   "ik volgend jaar kunnen studeren zal",
+   "ik volgend jaar studeren kunnen zal"
+  ],
+  "e": "I hope I'll be able to study next year.",
+  "w": "Zullen with a modal: zal first, then the modal, then the main verb, all at the end.",
+  "wn": "Zal + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B1"
+ },
+ {
+  "q": "Hij vindt het jammer dat ___.",
+  "a": "hij niet heeft mogen meedoen",
+  "o": [
+   "hij niet heeft mogen meedoen",
+   "hij niet mogen meedoen heeft",
+   "hij heeft niet mogen meedoen"
+  ],
+  "e": "He's sorry he wasn't allowed to take part.",
+  "w": "Perfect with a modal: the finite verb first, then the two infinitives, all at the end.",
+  "wn": "Heb + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B1"
+ },
+ {
+  "q": "Omdat ___, kwam ik te laat.",
+  "a": "ik lang heb moeten wachten",
+  "o": [
+   "ik lang heb moeten wachten",
+   "ik lang moeten wachten heb",
+   "ik heb lang moeten wachten"
+  ],
+  "e": "Because I had to wait a long time, I was late.",
+  "w": "Perfect with a modal: the finite verb first, then the two infinitives, all at the end.",
+  "wn": "Heb + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B1"
+ },
+ {
+  "q": "Ik wist niet dat ___.",
+  "a": "jullie waren gaan wandelen",
+  "o": [
+   "jullie waren gaan wandelen",
+   "jullie gaan wandelen waren",
+   "jullie wandelen gaan waren"
+  ],
+  "e": "I didn't know you had gone for a walk.",
+  "w": "Laten, zien, horen, gaan and zitten work like modals: finite verb first, then the infinitives.",
+  "wn": "Vervoegd werkwoord eerst, dan de infinitieven.",
+  "t": "cluster",
+  "b": "B1"
+ },
+ {
+  "q": "Ze zegt dat ___.",
+  "a": "ze de film nog wil gaan zien",
+  "o": [
+   "ze de film nog wil gaan zien",
+   "ze de film nog gaan zien wil",
+   "ze wil de film nog gaan zien"
+  ],
+  "e": "She says she still wants to go and see the film.",
+  "w": "A verb cluster stays together at the end: finite verb first, then the infinitives in order.",
+  "wn": "Werkwoorden samen achteraan.",
+  "t": "cluster",
+  "b": "B1"
+ },
+ {
+  "q": "Het is fijn dat ___.",
+  "a": "we samen hebben kunnen eten",
+  "o": [
+   "we samen hebben kunnen eten",
+   "we samen kunnen eten hebben",
+   "we hebben samen kunnen eten"
+  ],
+  "e": "It's nice that we were able to eat together.",
+  "w": "Perfect with a modal: the finite verb first, then the two infinitives, all at the end.",
+  "wn": "Heb + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B1"
+ },
+ {
+  "q": "Ik geloof dat ___.",
+  "a": "ze hem heeft horen zingen",
+  "o": [
+   "ze hem heeft horen zingen",
+   "ze hem horen zingen heeft",
+   "ze heeft hem horen zingen"
+  ],
+  "e": "I believe she heard him sing.",
+  "w": "Laten, zien, horen, gaan and zitten work like modals: finite verb first, then the infinitives.",
+  "wn": "Vervoegd werkwoord eerst, dan de infinitieven.",
+  "t": "cluster",
+  "b": "B1"
+ },
+ {
+  "q": "Hij legt uit dat ___.",
+  "a": "hij vroeg heeft moeten vertrekken",
+  "o": [
+   "hij vroeg heeft moeten vertrekken",
+   "hij vroeg moeten vertrekken heeft",
+   "hij heeft vroeg moeten vertrekken"
+  ],
+  "e": "He explains that he had to leave early.",
+  "w": "Perfect with a modal: the finite verb first, then the two infinitives, all at the end.",
+  "wn": "Heb + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B1"
+ },
+ {
+  "q": "Ik weet zeker dat ___.",
+  "a": "jij het examen zult kunnen halen",
+  "o": [
+   "jij het examen zult kunnen halen",
+   "jij het examen kunnen halen zult",
+   "jij zult het examen kunnen halen"
+  ],
+  "e": "I'm sure you'll be able to pass the exam.",
+  "w": "Zullen with a modal: zal first, then the modal, then the main verb, all at the end.",
+  "wn": "Zal + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B1"
+ },
+ {
+  "q": "We zijn blij dat ___.",
+  "a": "oma is komen logeren",
+  "o": [
+   "oma is komen logeren",
+   "oma komen logeren is",
+   "is oma komen logeren"
+  ],
+  "e": "We're glad Grandma has come to stay.",
+  "w": "Laten, zien, horen, gaan and zitten work like modals: finite verb first, then the infinitives.",
+  "wn": "Vervoegd werkwoord eerst, dan de infinitieven.",
+  "t": "cluster",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn moeder zegt dat ___.",
+  "a": "ik mijn kamer moet gaan opruimen",
+  "o": [
+   "ik mijn kamer moet gaan opruimen",
+   "ik mijn kamer gaan opruimen moet",
+   "ik moet mijn kamer gaan opruimen"
+  ],
+  "e": "My mother says I have to go and tidy my room.",
+  "w": "A verb cluster stays together at the end: finite verb first, then the infinitives in order.",
+  "wn": "Werkwoorden samen achteraan.",
+  "t": "cluster",
+  "b": "B1"
+ },
+ {
+  "q": "Ik vroeg of ___.",
+  "a": "hij de brief had kunnen lezen",
+  "o": [
+   "hij de brief had kunnen lezen",
+   "hij de brief kunnen lezen had",
+   "hij had de brief kunnen lezen"
+  ],
+  "e": "I asked whether he had been able to read the letter.",
+  "w": "Perfect with a modal: the finite verb first, then the two infinitives, all at the end.",
+  "wn": "Heb + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B1"
+ },
+ {
+  "q": "Ze is boos omdat ___.",
+  "a": "ze niet heeft mogen kiezen",
+  "o": [
+   "ze niet heeft mogen kiezen",
+   "ze niet mogen kiezen heeft",
+   "ze heeft niet mogen kiezen"
+  ],
+  "e": "She's angry because she wasn't allowed to choose.",
+  "w": "Perfect with a modal: the finite verb first, then the two infinitives, all at the end.",
+  "wn": "Heb + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B1"
+ },
+ {
+  "q": "Ze is trots dat ___.",
+  "a": "ze de hele marathon heeft kunnen lopen",
+  "o": [
+   "ze de hele marathon heeft kunnen lopen",
+   "ze de hele marathon kunnen lopen heeft",
+   "ze heeft de hele marathon kunnen lopen"
+  ],
+  "e": "She's proud she managed to run the whole marathon.",
+  "w": "Perfect with a modal: the finite verb first, then the two infinitives, all at the end.",
+  "wn": "Heb + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B1"
+ },
+ {
+  "q": "Ik neem aan dat ___.",
+  "a": "ze het had moeten weten",
+  "o": [
+   "ze het had moeten weten",
+   "ze het moeten weten had",
+   "ze had het moeten weten"
+  ],
+  "e": "I assume she should have known.",
+  "w": "Perfect with a modal: the finite verb first, then the two infinitives, all at the end.",
+  "wn": "Heb + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B2"
+ },
+ {
+  "q": "Het is jammer dat ___.",
+  "a": "we de trein niet hebben kunnen halen",
+  "o": [
+   "we de trein niet hebben kunnen halen",
+   "we de trein niet kunnen halen hebben",
+   "we hebben de trein niet kunnen halen"
+  ],
+  "e": "It's a pity we couldn't catch the train.",
+  "w": "Perfect with a modal: the finite verb first, then the two infinitives, all at the end.",
+  "wn": "Heb + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B2"
+ },
+ {
+  "q": "Hij beweert dat ___.",
+  "a": "hij de brief nooit heeft zien liggen",
+  "o": [
+   "hij de brief nooit heeft zien liggen",
+   "hij de brief nooit zien liggen heeft",
+   "hij heeft de brief nooit zien liggen"
+  ],
+  "e": "He claims he never saw the letter lying there.",
+  "w": "Laten, zien, horen, gaan and zitten work like modals: finite verb first, then the infinitives.",
+  "wn": "Vervoegd werkwoord eerst, dan de infinitieven.",
+  "t": "cluster",
+  "b": "B2"
+ },
+ {
+  "q": "Ik vind dat ___.",
+  "a": "je hem had moeten bellen",
+  "o": [
+   "je hem had moeten bellen",
+   "je hem moeten bellen had",
+   "je had hem moeten bellen"
+  ],
+  "e": "I think you should have called him.",
+  "w": "Perfect with a modal: the finite verb first, then the two infinitives, all at the end.",
+  "wn": "Heb + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B2"
+ },
+ {
+  "q": "Ze vertelde dat ___.",
+  "a": "ze haar huis had laten verbouwen",
+  "o": [
+   "ze haar huis had laten verbouwen",
+   "ze haar huis laten verbouwen had",
+   "ze had haar huis laten verbouwen"
+  ],
+  "e": "She said she'd had her house renovated.",
+  "w": "Laten, zien, horen, gaan and zitten work like modals: finite verb first, then the infinitives.",
+  "wn": "Vervoegd werkwoord eerst, dan de infinitieven.",
+  "t": "cluster",
+  "b": "B2"
+ },
+ {
+  "q": "Ik verwacht dat ___.",
+  "a": "je het boek zult willen lezen",
+  "o": [
+   "je het boek zult willen lezen",
+   "je het boek willen lezen zult",
+   "je zult het boek willen lezen"
+  ],
+  "e": "I expect you'll want to read the book.",
+  "w": "Zullen with a modal: zal first, then the modal, then the main verb, all at the end.",
+  "wn": "Zal + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B2"
+ },
+ {
+  "q": "Hij zei dat ___.",
+  "a": "hij het niet had durven vragen",
+  "o": [
+   "hij het niet had durven vragen",
+   "hij het niet durven vragen had",
+   "hij had het niet durven vragen"
+  ],
+  "e": "He said he hadn't dared to ask.",
+  "w": "Perfect with a modal: the finite verb first, then the two infinitives, all at the end.",
+  "wn": "Heb + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B2"
+ },
+ {
+  "q": "Ik ben bang dat ___.",
+  "a": "ik morgen zal moeten werken",
+  "o": [
+   "ik morgen zal moeten werken",
+   "ik morgen moeten werken zal",
+   "ik morgen werken moeten zal"
+  ],
+  "e": "I'm afraid I'll have to work tomorrow.",
+  "w": "Zullen with a modal: zal first, then the modal, then the main verb, all at the end.",
+  "wn": "Zal + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B2"
+ },
+ {
+  "q": "Weet jij waarom ___?",
+  "a": "hij is blijven zitten",
+  "o": [
+   "hij is blijven zitten",
+   "hij blijven zitten is",
+   "is hij blijven zitten"
+  ],
+  "e": "Do you know why he had to repeat a year?",
+  "w": "Laten, zien, horen, gaan and zitten work like modals: finite verb first, then the infinitives.",
+  "wn": "Vervoegd werkwoord eerst, dan de infinitieven.",
+  "t": "cluster",
+  "b": "B2"
+ },
+ {
+  "q": "Het was duidelijk dat ___.",
+  "a": "ze hem niet had willen kwetsen",
+  "o": [
+   "ze hem niet had willen kwetsen",
+   "ze hem niet willen kwetsen had",
+   "ze had hem niet willen kwetsen"
+  ],
+  "e": "It was clear she hadn't wanted to hurt him.",
+  "w": "Perfect with a modal: the finite verb first, then the two infinitives, all at the end.",
+  "wn": "Heb + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B2"
+ },
+ {
+  "q": "Ik betreur het dat ___.",
+  "a": "ik je niet eerder heb kunnen helpen",
+  "o": [
+   "ik je niet eerder heb kunnen helpen",
+   "ik je niet eerder kunnen helpen heb",
+   "ik heb je niet eerder kunnen helpen"
+  ],
+  "e": "I regret that I couldn't help you sooner.",
+  "w": "Perfect with a modal: the finite verb first, then the two infinitives, all at the end.",
+  "wn": "Heb + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B2"
+ },
+ {
+  "q": "Iedereen wist dat ___.",
+  "a": "hij het examen zou moeten overdoen",
+  "o": [
+   "hij het examen zou moeten overdoen",
+   "hij het examen moeten overdoen zou",
+   "hij zou het examen moeten overdoen"
+  ],
+  "e": "Everyone knew he would have to retake the exam.",
+  "w": "Zullen with a modal: zal first, then the modal, then the main verb, all at the end.",
+  "wn": "Zal + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B2"
+ },
+ {
+  "q": "Ik had niet gedacht dat ___.",
+  "a": "we zo lang zouden moeten wachten",
+  "o": [
+   "we zo lang zouden moeten wachten",
+   "we zo lang moeten wachten zouden",
+   "we zo lang wachten moeten zouden"
+  ],
+  "e": "I hadn't thought we'd have to wait so long.",
+  "w": "Zullen with a modal: zal first, then the modal, then the main verb, all at the end.",
+  "wn": "Zal + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B2"
+ },
+ {
+  "q": "Ze klaagt dat ___.",
+  "a": "ze nooit heeft leren zwemmen",
+  "o": [
+   "ze nooit heeft leren zwemmen",
+   "ze nooit leren zwemmen heeft",
+   "ze heeft nooit leren zwemmen"
+  ],
+  "e": "She complains that she never learnt to swim.",
+  "w": "Laten, zien, horen, gaan and zitten work like modals: finite verb first, then the infinitives.",
+  "wn": "Vervoegd werkwoord eerst, dan de infinitieven.",
+  "t": "cluster",
+  "b": "B2"
+ },
+ {
+  "q": "Ik weet niet of ___.",
+  "a": "ik het had kunnen voorkomen",
+  "o": [
+   "ik het had kunnen voorkomen",
+   "ik het kunnen voorkomen had",
+   "ik had het kunnen voorkomen"
+  ],
+  "e": "I don't know if I could have prevented it.",
+  "w": "Perfect with a modal: the finite verb first, then the two infinitives, all at the end.",
+  "wn": "Heb + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B2"
+ },
+ {
+  "q": "Hij vertelde dat ___.",
+  "a": "hij zijn auto had moeten laten staan",
+  "o": [
+   "hij zijn auto had moeten laten staan",
+   "hij zijn auto moeten laten staan had",
+   "hij had zijn auto moeten laten staan"
+  ],
+  "e": "He said he'd had to leave his car behind.",
+  "w": "A verb cluster stays together at the end: finite verb first, then the infinitives in order.",
+  "wn": "Werkwoorden samen achteraan.",
+  "t": "cluster",
+  "b": "B2"
+ },
+ {
+  "q": "Het is goed dat ___.",
+  "a": "je de dokter hebt laten komen",
+  "o": [
+   "je de dokter hebt laten komen",
+   "je de dokter laten komen hebt",
+   "je hebt de dokter laten komen"
+  ],
+  "e": "It's good that you called the doctor out.",
+  "w": "Laten, zien, horen, gaan and zitten work like modals: finite verb first, then the infinitives.",
+  "wn": "Vervoegd werkwoord eerst, dan de infinitieven.",
+  "t": "cluster",
+  "b": "B2"
+ },
+ {
+  "q": "Zij denkt dat ___.",
+  "a": "ze morgen zal kunnen beginnen",
+  "o": [
+   "ze morgen zal kunnen beginnen",
+   "ze morgen kunnen beginnen zal",
+   "ze zal morgen kunnen beginnen"
+  ],
+  "e": "She thinks she'll be able to start tomorrow.",
+  "w": "Zullen with a modal: zal first, then the modal, then the main verb, all at the end.",
+  "wn": "Zal + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B2"
+ },
+ {
+  "q": "Ik begrijp niet hoe ___.",
+  "a": "hij dat heeft kunnen vergeten",
+  "o": [
+   "hij dat heeft kunnen vergeten",
+   "hij dat kunnen vergeten heeft",
+   "heeft hij dat kunnen vergeten"
+  ],
+  "e": "I don't understand how he could have forgotten that.",
+  "w": "Perfect with a modal: the finite verb first, then the two infinitives, all at the end.",
+  "wn": "Heb + modaal + infinitief, achteraan.",
+  "t": "cluster",
+  "b": "B2"
+ },
+ {
+  "q": "Ze merkte dat ___.",
+  "a": "ze haar sleutels had laten liggen",
+  "o": [
+   "ze haar sleutels had laten liggen",
+   "ze haar sleutels laten liggen had",
+   "ze had haar sleutels laten liggen"
+  ],
+  "e": "She noticed she had left her keys behind.",
+  "w": "Laten, zien, horen, gaan and zitten work like modals: finite verb first, then the infinitives.",
+  "wn": "Vervoegd werkwoord eerst, dan de infinitieven.",
+  "t": "cluster",
+  "b": "B2"
+ }
+]

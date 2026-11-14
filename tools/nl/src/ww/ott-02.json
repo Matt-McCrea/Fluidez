@@ -1,0 +1,1372 @@
+[
+ {
+  "q": "De leraar ___ (antwoorden) altijd heel geduldig.",
+  "v": "antwoorden",
+  "t": "ott",
+  "p": "hij",
+  "e": "The teacher always answers very patiently.",
+  "b": "B1"
+ },
+ {
+  "q": "Fatima ___ (antwoorden) meteen op elke mail.",
+  "v": "antwoorden",
+  "t": "ott",
+  "p": "hij",
+  "e": "Fatima answers every email straight away.",
+  "b": "B1"
+ },
+ {
+  "q": "De winkel ___ (zijn) op zondag dicht.",
+  "v": "zijn",
+  "t": "ott",
+  "p": "hij",
+  "e": "The shop is closed on Sundays.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn zus ___ (hebben) een kat en twee honden.",
+  "v": "hebben",
+  "t": "ott",
+  "p": "hij",
+  "e": "My sister has a cat and two dogs.",
+  "b": "A1"
+ },
+ {
+  "q": "Tom ___ (gaan) elke vrijdag naar de sportschool.",
+  "v": "gaan",
+  "t": "ott",
+  "p": "hij",
+  "e": "Tom goes to the gym every Friday.",
+  "b": "A1"
+ },
+ {
+  "q": "De trein ___ (komen) om kwart over acht.",
+  "v": "komen",
+  "t": "ott",
+  "p": "hij",
+  "e": "The train comes at a quarter past eight.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn dochter ___ (kunnen) al goed zwemmen.",
+  "v": "kunnen",
+  "t": "ott",
+  "p": "hij",
+  "e": "My daughter can already swim well.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn zoon ___ (willen) later piloot worden.",
+  "v": "willen",
+  "t": "ott",
+  "p": "hij",
+  "e": "My son wants to be a pilot when he grows up.",
+  "b": "A1"
+ },
+ {
+  "q": "Ruben ___ (moeten) vandaag tot laat werken.",
+  "v": "moeten",
+  "t": "ott",
+  "p": "hij",
+  "e": "Ruben has to work late today.",
+  "b": "A1"
+ },
+ {
+  "q": "Het kind ___ (mogen) vanavond lang opblijven.",
+  "v": "mogen",
+  "t": "ott",
+  "p": "hij",
+  "e": "The child may stay up late tonight.",
+  "b": "A1"
+ },
+ {
+  "q": "Een kaartje ___ (kosten) drie euro.",
+  "v": "kosten",
+  "t": "ott",
+  "p": "hij",
+  "e": "A ticket costs three euros.",
+  "b": "A2"
+ },
+ {
+  "q": "De film ___ (duren) twee uur.",
+  "v": "duren",
+  "t": "ott",
+  "p": "hij",
+  "e": "The film lasts two hours.",
+  "b": "A2"
+ },
+ {
+  "q": "De les ___ (beginnen) om negen uur.",
+  "v": "beginnen",
+  "t": "ott",
+  "p": "hij",
+  "e": "The lesson starts at nine.",
+  "b": "A1"
+ },
+ {
+  "q": "Emma ___ (lezen) elke avond de krant.",
+  "v": "lezen",
+  "t": "ott",
+  "p": "hij",
+  "e": "Emma reads the paper every evening.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn opa ___ (eten) elke dag een appel.",
+  "v": "eten",
+  "t": "ott",
+  "p": "hij",
+  "e": "My grandfather eats an apple every day.",
+  "b": "A1"
+ },
+ {
+  "q": "De baby ___ (slapen) nu eindelijk.",
+  "v": "slapen",
+  "t": "ott",
+  "p": "hij",
+  "e": "The baby is finally asleep now.",
+  "b": "A1"
+ },
+ {
+  "q": "Lucas ___ (spelen) op zaterdag voetbal.",
+  "v": "spelen",
+  "t": "ott",
+  "p": "hij",
+  "e": "Lucas plays football on Saturdays.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn moeder ___ (zingen) altijd onder de douche.",
+  "v": "zingen",
+  "t": "ott",
+  "p": "hij",
+  "e": "My mother always sings in the shower.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn beste vriend ___ (wonen) in Den Haag.",
+  "v": "wonen",
+  "t": "ott",
+  "p": "hij",
+  "e": "My best friend lives in The Hague.",
+  "b": "A2"
+ },
+ {
+  "q": "Juf Ellen ___ (geven) les aan groep drie.",
+  "v": "geven",
+  "t": "ott",
+  "p": "hij",
+  "e": "Miss Ellen teaches year three.",
+  "b": "A1"
+ },
+ {
+  "q": "Er ___ (staan) een fiets voor de deur.",
+  "v": "staan",
+  "t": "ott",
+  "p": "hij",
+  "e": "There's a bike in front of the door.",
+  "b": "A1"
+ },
+ {
+  "q": "De krant ___ (liggen) op tafel.",
+  "v": "liggen",
+  "t": "ott",
+  "p": "hij",
+  "e": "The newspaper is on the table.",
+  "b": "A1"
+ },
+ {
+  "q": "De kat ___ (zitten) op de vensterbank.",
+  "v": "zitten",
+  "t": "ott",
+  "p": "hij",
+  "e": "The cat is sitting on the windowsill.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn horloge ___ (lopen) vijf minuten voor.",
+  "v": "lopen",
+  "t": "ott",
+  "p": "hij",
+  "e": "My watch is five minutes fast.",
+  "b": "A2"
+ },
+ {
+  "q": "Dat ___ (kloppen) niet, volgens mij.",
+  "v": "kloppen",
+  "t": "ott",
+  "p": "hij",
+  "e": "That's not right, I think.",
+  "b": "A1"
+ },
+ {
+  "q": "Wat ___ (betekenen) dit woord?",
+  "v": "betekenen",
+  "t": "ott",
+  "p": "hij",
+  "e": "What does this word mean?",
+  "b": "A1"
+ },
+ {
+  "q": "Dat ___ (gebeuren) elke keer weer.",
+  "v": "gebeuren",
+  "t": "ott",
+  "p": "hij",
+  "e": "That happens every single time.",
+  "b": "A1"
+ },
+ {
+  "q": "De soep ___ (ruiken) heerlijk.",
+  "v": "ruiken",
+  "t": "ott",
+  "p": "hij",
+  "e": "The soup smells delicious.",
+  "b": "A2"
+ },
+ {
+  "q": "Dat ___ (klinken) goed!",
+  "v": "klinken",
+  "t": "ott",
+  "p": "hij",
+  "e": "That sounds good!",
+  "b": "A1"
+ },
+ {
+  "q": "Je broer ___ (lijken) veel op jou.",
+  "v": "lijken",
+  "t": "ott",
+  "p": "hij",
+  "e": "Your brother looks a lot like you.",
+  "b": "A1"
+ },
+ {
+  "q": "Kees ___ (helpen) zijn buurvrouw met de boodschappen.",
+  "v": "helpen",
+  "t": "ott",
+  "p": "hij",
+  "e": "Kees helps his neighbour with the shopping.",
+  "b": "A1"
+ },
+ {
+  "q": "De bakker ___ (verkopen) ook taart.",
+  "v": "verkopen",
+  "t": "ott",
+  "p": "hij",
+  "e": "The baker sells cake too.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn nicht ___ (studeren) geneeskunde in Utrecht.",
+  "v": "studeren",
+  "t": "ott",
+  "p": "hij",
+  "e": "My cousin studies medicine in Utrecht.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn opa ___ (fietsen) nog elke dag.",
+  "v": "fietsen",
+  "t": "ott",
+  "p": "hij",
+  "e": "My grandfather still cycles every day.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn vader ___ (kijken) graag naar voetbal.",
+  "v": "kijken",
+  "t": "ott",
+  "p": "hij",
+  "e": "My father likes watching football.",
+  "b": "A1"
+ },
+ {
+  "q": "De bus ___ (vertrekken) over tien minuten.",
+  "v": "vertrekken",
+  "t": "ott",
+  "p": "hij",
+  "e": "The bus leaves in ten minutes.",
+  "b": "A2"
+ },
+ {
+  "q": "De bibliotheek ___ (sluiten) om zes uur.",
+  "v": "sluiten",
+  "t": "ott",
+  "p": "hij",
+  "e": "The library closes at six.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn tante ___ (schrijven) kinderboeken.",
+  "v": "schrijven",
+  "t": "ott",
+  "p": "hij",
+  "e": "My aunt writes children's books.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn baas ___ (bellen) me elke ochtend.",
+  "v": "bellen",
+  "t": "ott",
+  "p": "hij",
+  "e": "My boss calls me every morning.",
+  "b": "A1"
+ },
+ {
+  "q": "Niemand ___ (weten) waar hij is.",
+  "v": "weten",
+  "t": "ott",
+  "p": "hij",
+  "e": "Nobody knows where he is.",
+  "b": "A1"
+ },
+ {
+  "q": "Deze broek ___ (passen) me niet meer.",
+  "v": "passen",
+  "t": "ott",
+  "p": "hij",
+  "e": "These trousers don't fit me any more.",
+  "b": "A2"
+ },
+ {
+  "q": "Het internet ___ (werken) vandaag niet.",
+  "v": "werken",
+  "t": "ott",
+  "p": "hij",
+  "e": "The internet isn't working today.",
+  "b": "A1"
+ },
+ {
+  "q": "Morgen ___ (gaan) Thomas naar de tandarts.",
+  "v": "gaan",
+  "t": "ott",
+  "p": "hij",
+  "e": "Tomorrow Thomas is going to the dentist.",
+  "b": "A1"
+ },
+ {
+  "q": "Waar ___ (zijn) het toilet?",
+  "v": "zijn",
+  "t": "ott",
+  "p": "hij",
+  "e": "Where is the toilet?",
+  "b": "A1"
+ },
+ {
+  "q": "Hoe laat ___ (komen) je zus thuis?",
+  "v": "komen",
+  "t": "ott",
+  "p": "hij",
+  "e": "What time does your sister get home?",
+  "b": "A1"
+ },
+ {
+  "q": "Hij ___ (opbellen) me morgen op.",
+  "v": "opbellen",
+  "t": "ott",
+  "p": "hij",
+  "e": "He'll call me tomorrow.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn vader ___ (opstaan) elke dag om zes uur op.",
+  "v": "opstaan",
+  "t": "ott",
+  "p": "hij",
+  "e": "My father gets up at six every day.",
+  "b": "B1"
+ },
+ {
+  "q": "De trein ___ (aankomen) om twaalf uur aan.",
+  "v": "aankomen",
+  "t": "ott",
+  "p": "hij",
+  "e": "The train arrives at twelve.",
+  "b": "B1"
+ },
+ {
+  "q": "Lotte ___ (meenemen) altijd haar hond mee.",
+  "v": "meenemen",
+  "t": "ott",
+  "p": "hij",
+  "e": "Lotte always takes her dog with her.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn broer ___ (opruimen) nooit zijn spullen op.",
+  "v": "opruimen",
+  "t": "ott",
+  "p": "hij",
+  "e": "My brother never tidies away his things.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn moeder ___ (schoonmaken) elke vrijdag het huis schoon.",
+  "v": "schoonmaken",
+  "t": "ott",
+  "p": "hij",
+  "e": "My mother cleans the house every Friday.",
+  "b": "B1"
+ },
+ {
+  "q": "De docent ___ (uitleggen) de grammatica heel goed uit.",
+  "v": "uitleggen",
+  "t": "ott",
+  "p": "hij",
+  "e": "The teacher explains the grammar very well.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn zus ___ (terugkomen) volgende week uit Canada terug.",
+  "v": "terugkomen",
+  "t": "ott",
+  "p": "hij",
+  "e": "My sister comes back from Canada next week.",
+  "b": "B1"
+ },
+ {
+  "q": "Hij ___ (oplossen) elk probleem zelf op.",
+  "v": "oplossen",
+  "t": "ott",
+  "p": "hij",
+  "e": "He solves every problem himself.",
+  "b": "A2"
+ },
+ {
+  "q": "Daan ___ (afmaken) zijn huiswerk altijd af.",
+  "v": "afmaken",
+  "t": "ott",
+  "p": "hij",
+  "e": "Daan always finishes his homework.",
+  "b": "B1"
+ },
+ {
+  "q": "Hij ___ (voorstellen) zijn vriendin vandaag aan zijn ouders voor.",
+  "v": "voorstellen",
+  "t": "ott",
+  "p": "hij",
+  "e": "Today he introduces his girlfriend to his parents.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn vader ___ (nadenken) lang over elke beslissing na.",
+  "v": "nadenken",
+  "t": "ott",
+  "p": "hij",
+  "e": "My father thinks long about every decision.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij ___ (weggaan) altijd vroeg weg van feestjes.",
+  "v": "weggaan",
+  "t": "ott",
+  "p": "hij",
+  "e": "He always leaves parties early.",
+  "b": "A2"
+ },
+ {
+  "q": "Opa ___ (uitzetten) om tien uur de televisie uit.",
+  "v": "uitzetten",
+  "t": "ott",
+  "p": "hij",
+  "e": "Grandad turns the television off at ten.",
+  "b": "B1"
+ },
+ {
+  "q": "De hond ___ (opeten) al het eten op.",
+  "v": "opeten",
+  "t": "ott",
+  "p": "hij",
+  "e": "The dog eats up all the food.",
+  "b": "B1"
+ },
+ {
+  "q": "De ober ___ (opschrijven) onze bestelling op.",
+  "v": "opschrijven",
+  "t": "ott",
+  "p": "hij",
+  "e": "The waiter writes down our order.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn man ___ (ophalen) de kinderen om drie uur op.",
+  "v": "ophalen",
+  "t": "ott",
+  "p": "hij",
+  "e": "My husband picks the children up at three.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik wacht thuis, omdat hij me morgen ___ (opbellen).",
+  "v": "opbellen",
+  "t": "ott",
+  "p": "hij",
+  "sub": 1,
+  "e": "I'm waiting at home because he's calling me tomorrow.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn broer is moe omdat hij elke dag om vijf uur ___ (opstaan).",
+  "v": "opstaan",
+  "t": "ott",
+  "p": "hij",
+  "sub": 1,
+  "e": "My brother is tired because he gets up at five every day.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik weet niet hoe laat de trein ___ (aankomen).",
+  "v": "aankomen",
+  "t": "ott",
+  "p": "hij",
+  "sub": 1,
+  "e": "I don't know what time the train arrives.",
+  "b": "B1"
+ },
+ {
+  "q": "We gaan eten zodra papa ___ (terugkomen).",
+  "v": "terugkomen",
+  "t": "ott",
+  "p": "hij",
+  "sub": 1,
+  "e": "We'll eat as soon as Dad comes back.",
+  "b": "B1"
+ },
+ {
+  "q": "Hij mag pas spelen als hij zijn huiswerk ___ (afmaken).",
+  "v": "afmaken",
+  "t": "ott",
+  "p": "hij",
+  "sub": 1,
+  "e": "He can only play once he finishes his homework.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ben blij dat mijn zoon zijn kamer ___ (opruimen).",
+  "v": "opruimen",
+  "t": "ott",
+  "p": "hij",
+  "sub": 1,
+  "e": "I'm glad my son is tidying his room.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik hoop dat het morgen mooi weer ___ (worden).",
+  "v": "worden",
+  "t": "ott",
+  "p": "hij",
+  "sub": 1,
+  "e": "I hope the weather will be nice tomorrow.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik denk dat Anna dit een goed idee ___ (vinden).",
+  "v": "vinden",
+  "t": "ott",
+  "p": "hij",
+  "sub": 1,
+  "e": "I think Anna will find this a good idea.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik weet dat Mark niet van katten ___ (houden).",
+  "v": "houden",
+  "t": "ott",
+  "p": "hij",
+  "sub": 1,
+  "e": "I know that Mark doesn't like cats.",
+  "b": "A2"
+ },
+ {
+  "q": "Weet jij of deze bus naar het station ___ (rijden)?",
+  "v": "rijden",
+  "t": "ott",
+  "p": "hij",
+  "sub": 1,
+  "e": "Do you know if this bus goes to the station?",
+  "b": "A2"
+ },
+ {
+  "q": "Wij ___ (wonen) al tien jaar in dit huis.",
+  "v": "wonen",
+  "t": "ott",
+  "p": "wij",
+  "e": "We have lived in this house for ten years.",
+  "b": "A2"
+ },
+ {
+  "q": "We ___ (eten) meestal om zes uur.",
+  "v": "eten",
+  "t": "ott",
+  "p": "wij",
+  "e": "We usually eat at six.",
+  "b": "A1"
+ },
+ {
+  "q": "We ___ (gaan) elk jaar naar Frankrijk.",
+  "v": "gaan",
+  "t": "ott",
+  "p": "wij",
+  "e": "We go to France every year.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij ___ (hebben) een grote tuin.",
+  "v": "hebben",
+  "t": "ott",
+  "p": "wij",
+  "e": "We have a big garden.",
+  "b": "A1"
+ },
+ {
+  "q": "We ___ (zijn) nu bijna thuis.",
+  "v": "zijn",
+  "t": "ott",
+  "p": "wij",
+  "e": "We're almost home now.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij ___ (werken) samen aan een project.",
+  "v": "werken",
+  "t": "ott",
+  "p": "wij",
+  "e": "We're working on a project together.",
+  "b": "A1"
+ },
+ {
+  "q": "We ___ (spelen) elke woensdag tennis.",
+  "v": "spelen",
+  "t": "ott",
+  "p": "wij",
+  "e": "We play tennis every Wednesday.",
+  "b": "A1"
+ },
+ {
+  "q": "We ___ (kijken) vanavond een film.",
+  "v": "kijken",
+  "t": "ott",
+  "p": "wij",
+  "e": "We're watching a film tonight.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij ___ (kopen) ons brood altijd bij de bakker.",
+  "v": "kopen",
+  "t": "ott",
+  "p": "wij",
+  "e": "We always buy our bread at the baker's.",
+  "b": "A1"
+ },
+ {
+  "q": "We ___ (drinken) koffie op het terras.",
+  "v": "drinken",
+  "t": "ott",
+  "p": "wij",
+  "e": "We're having coffee on the terrace.",
+  "b": "A2"
+ },
+ {
+  "q": "We ___ (lopen) elke zondag langs het strand.",
+  "v": "lopen",
+  "t": "ott",
+  "p": "wij",
+  "e": "We walk along the beach every Sunday.",
+  "b": "A1"
+ },
+ {
+  "q": "We ___ (spreken) thuis Nederlands.",
+  "v": "spreken",
+  "t": "ott",
+  "p": "wij",
+  "e": "We speak Dutch at home.",
+  "b": "A1"
+ },
+ {
+  "q": "We ___ (praten) vaak over vroeger.",
+  "v": "praten",
+  "t": "ott",
+  "p": "wij",
+  "e": "We often talk about the old days.",
+  "b": "A1"
+ },
+ {
+  "q": "We ___ (wachten) al twintig minuten op de bus.",
+  "v": "wachten",
+  "t": "ott",
+  "p": "wij",
+  "e": "We've been waiting twenty minutes for the bus.",
+  "b": "A1"
+ },
+ {
+  "q": "We ___ (zoeken) een groter huis.",
+  "v": "zoeken",
+  "t": "ott",
+  "p": "wij",
+  "e": "We're looking for a bigger house.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij ___ (kennen) elkaar al van school.",
+  "v": "kennen",
+  "t": "ott",
+  "p": "wij",
+  "e": "We know each other from school.",
+  "b": "A1"
+ },
+ {
+  "q": "We ___ (vinden) het hier heel gezellig.",
+  "v": "vinden",
+  "t": "ott",
+  "p": "wij",
+  "e": "We find it really cosy here.",
+  "b": "A1"
+ },
+ {
+  "q": "We ___ (reizen) graag met de trein.",
+  "v": "reizen",
+  "t": "ott",
+  "p": "wij",
+  "e": "We like travelling by train.",
+  "b": "B1"
+ },
+ {
+  "q": "We ___ (dansen) elke vrijdag salsa.",
+  "v": "dansen",
+  "t": "ott",
+  "p": "wij",
+  "e": "We dance salsa every Friday.",
+  "b": "A2"
+ },
+ {
+  "q": "We ___ (blijven) vanavond gezellig thuis.",
+  "v": "blijven",
+  "t": "ott",
+  "p": "wij",
+  "e": "We're staying in tonight.",
+  "b": "A1"
+ },
+ {
+  "q": "We ___ (verhuizen) volgende maand naar Gent.",
+  "v": "verhuizen",
+  "t": "ott",
+  "p": "wij",
+  "e": "We're moving to Ghent next month.",
+  "b": "B1"
+ },
+ {
+  "q": "Wij ___ (zitten) in dezelfde klas.",
+  "v": "zitten",
+  "t": "ott",
+  "p": "wij",
+  "e": "We're in the same class.",
+  "b": "A1"
+ },
+ {
+  "q": "We ___ (leren) op school ook Frans.",
+  "v": "leren",
+  "t": "ott",
+  "p": "wij",
+  "e": "We also learn French at school.",
+  "b": "A1"
+ },
+ {
+  "q": "Morgen ___ (gaan) we naar het museum.",
+  "v": "gaan",
+  "t": "ott",
+  "p": "wij",
+  "e": "Tomorrow we're going to the museum.",
+  "b": "A1"
+ },
+ {
+  "q": "Wat ___ (doen) we vanavond?",
+  "v": "doen",
+  "t": "ott",
+  "p": "wij",
+  "e": "What are we doing tonight?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (nemen) we de trein of de bus?",
+  "v": "nemen",
+  "t": "ott",
+  "p": "wij",
+  "e": "Are we taking the train or the bus?",
+  "b": "A1"
+ },
+ {
+  "q": "We ___ (afspreken) elke maand met de hele familie af.",
+  "v": "afspreken",
+  "t": "ott",
+  "p": "wij",
+  "e": "We meet up with the whole family every month.",
+  "b": "B1"
+ },
+ {
+  "q": "We ___ (opstaan) op zondag pas om tien uur op.",
+  "v": "opstaan",
+  "t": "ott",
+  "p": "wij",
+  "e": "On Sundays we don't get up until ten.",
+  "b": "B1"
+ },
+ {
+  "q": "Wij ___ (uitgaan) op zaterdag vaak uit.",
+  "v": "uitgaan",
+  "t": "ott",
+  "p": "wij",
+  "e": "We often go out on Saturdays.",
+  "b": "B1"
+ },
+ {
+  "q": "We ___ (inpakken) vanavond onze koffers in.",
+  "v": "inpakken",
+  "t": "ott",
+  "p": "wij",
+  "e": "We're packing our suitcases tonight.",
+  "b": "B1"
+ },
+ {
+  "q": "We ___ (meebrengen) een taart mee voor het feest.",
+  "v": "meebrengen",
+  "t": "ott",
+  "p": "wij",
+  "e": "We're bringing a cake for the party.",
+  "b": "B1"
+ },
+ {
+  "q": "Na het eten ___ (opruimen) we samen de keuken op.",
+  "v": "opruimen",
+  "t": "ott",
+  "p": "wij",
+  "e": "After dinner we tidy the kitchen together.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn moeder past op de kinderen als wij ___ (uitgaan).",
+  "v": "uitgaan",
+  "t": "ott",
+  "p": "wij",
+  "sub": 1,
+  "e": "My mother looks after the children when we go out.",
+  "b": "B1"
+ },
+ {
+  "q": "Het is leuk dat we morgen ___ (afspreken).",
+  "v": "afspreken",
+  "t": "ott",
+  "p": "wij",
+  "sub": 1,
+  "e": "It's nice that we're meeting up tomorrow.",
+  "b": "B1"
+ },
+ {
+  "q": "Bel me even voordat we ___ (vertrekken).",
+  "v": "vertrekken",
+  "t": "ott",
+  "p": "wij",
+  "sub": 1,
+  "e": "Give me a call before we leave.",
+  "b": "A2"
+ },
+ {
+  "q": "Jullie ___ (wonen) heel dicht bij het strand.",
+  "v": "wonen",
+  "t": "ott",
+  "p": "jullie",
+  "e": "You live very close to the beach.",
+  "b": "A2"
+ },
+ {
+  "q": "Jullie ___ (hebben) een leuke hond.",
+  "v": "hebben",
+  "t": "ott",
+  "p": "jullie",
+  "e": "You have a lovely dog.",
+  "b": "A1"
+ },
+ {
+  "q": "Jullie ___ (zijn) altijd welkom bij ons.",
+  "v": "zijn",
+  "t": "ott",
+  "p": "jullie",
+  "e": "You're always welcome at our place.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (komen) jullie morgen ook eten?",
+  "v": "komen",
+  "t": "ott",
+  "p": "jullie",
+  "e": "Are you coming to dinner tomorrow too?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (willen) jullie iets drinken?",
+  "v": "willen",
+  "t": "ott",
+  "p": "jullie",
+  "e": "Would you like something to drink?",
+  "b": "A1"
+ },
+ {
+  "q": "Jullie ___ (spreken) allebei goed Nederlands.",
+  "v": "spreken",
+  "t": "ott",
+  "p": "jullie",
+  "e": "You both speak good Dutch.",
+  "b": "A1"
+ },
+ {
+  "q": "Waar ___ (gaan) jullie op vakantie?",
+  "v": "gaan",
+  "t": "ott",
+  "p": "jullie",
+  "e": "Where are you going on holiday?",
+  "b": "A1"
+ },
+ {
+  "q": "Jullie ___ (maken) veel te veel lawaai.",
+  "v": "maken",
+  "t": "ott",
+  "p": "jullie",
+  "e": "You're making far too much noise.",
+  "b": "A1"
+ },
+ {
+  "q": "Wat ___ (doen) jullie in de vakantie?",
+  "v": "doen",
+  "t": "ott",
+  "p": "jullie",
+  "e": "What are you doing in the holidays?",
+  "b": "A1"
+ },
+ {
+  "q": "Jullie ___ (moeten) nu echt naar bed.",
+  "v": "moeten",
+  "t": "ott",
+  "p": "jullie",
+  "e": "You really have to go to bed now.",
+  "b": "A1"
+ },
+ {
+  "q": "Jullie ___ (kunnen) hier gratis parkeren.",
+  "v": "kunnen",
+  "t": "ott",
+  "p": "jullie",
+  "e": "You can park here for free.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (spelen) jullie vanmiddag in de tuin?",
+  "v": "spelen",
+  "t": "ott",
+  "p": "jullie",
+  "e": "Are you playing in the garden this afternoon?",
+  "b": "A1"
+ },
+ {
+  "q": "Jullie ___ (werken) allebei in het ziekenhuis, toch?",
+  "v": "werken",
+  "t": "ott",
+  "p": "jullie",
+  "e": "You both work in the hospital, right?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (kennen) jullie elkaar al lang?",
+  "v": "kennen",
+  "t": "ott",
+  "p": "jullie",
+  "e": "Have you known each other long?",
+  "b": "A1"
+ },
+ {
+  "q": "Jullie ___ (eten) vanavond bij oma.",
+  "v": "eten",
+  "t": "ott",
+  "p": "jullie",
+  "e": "You're eating at Grandma's tonight.",
+  "b": "A1"
+ },
+ {
+  "q": "Jullie ___ (lopen) te snel voor mij.",
+  "v": "lopen",
+  "t": "ott",
+  "p": "jullie",
+  "e": "You walk too fast for me.",
+  "b": "A1"
+ },
+ {
+  "q": "Hoe ___ (vinden) jullie het nieuwe huis?",
+  "v": "vinden",
+  "t": "ott",
+  "p": "jullie",
+  "e": "What do you think of the new house?",
+  "b": "A1"
+ },
+ {
+  "q": "Jullie ___ (rijden) morgen met ons mee.",
+  "v": "rijden",
+  "t": "ott",
+  "p": "jullie",
+  "e": "You're riding with us tomorrow.",
+  "b": "A1"
+ },
+ {
+  "q": "Jullie ___ (zitten) nu al drie uur achter de computer.",
+  "v": "zitten",
+  "t": "ott",
+  "p": "jullie",
+  "e": "You've been sitting at the computer for three hours now.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (wachten) jullie even op mij?",
+  "v": "wachten",
+  "t": "ott",
+  "p": "jullie",
+  "e": "Will you wait for me a moment?",
+  "b": "A1"
+ },
+ {
+  "q": "Jullie ___ (krijgen) morgen je rapport.",
+  "v": "krijgen",
+  "t": "ott",
+  "p": "jullie",
+  "e": "You get your report tomorrow.",
+  "b": "A1"
+ },
+ {
+  "q": "Jullie ___ (leren) heel snel.",
+  "v": "leren",
+  "t": "ott",
+  "p": "jullie",
+  "e": "You learn very fast.",
+  "b": "A1"
+ },
+ {
+  "q": "Jullie ___ (opruimen) nu meteen je speelgoed op!",
+  "v": "opruimen",
+  "t": "ott",
+  "p": "jullie",
+  "e": "You tidy away your toys right now!",
+  "b": "B1"
+ },
+ {
+  "q": "Hoe laat ___ (ophalen) jullie oma van het station op?",
+  "v": "ophalen",
+  "t": "ott",
+  "p": "jullie",
+  "e": "What time are you picking Grandma up from the station?",
+  "b": "B1"
+ },
+ {
+  "q": "Jullie ___ (meenemen) morgen allemaal een lunchpakket mee.",
+  "v": "meenemen",
+  "t": "ott",
+  "p": "jullie",
+  "e": "Tomorrow you all bring a packed lunch.",
+  "b": "A2"
+ },
+ {
+  "q": "Wanneer ___ (terugkomen) jullie terug van vakantie?",
+  "v": "terugkomen",
+  "t": "ott",
+  "p": "jullie",
+  "e": "When are you coming back from holiday?",
+  "b": "B1"
+ },
+ {
+  "q": "Jullie ___ (schoonmaken) vandaag samen de klas schoon.",
+  "v": "schoonmaken",
+  "t": "ott",
+  "p": "jullie",
+  "e": "Today you clean the classroom together.",
+  "b": "B1"
+ },
+ {
+  "q": "Jullie mogen buiten spelen als jullie eerst je kamer ___ (opruimen).",
+  "v": "opruimen",
+  "t": "ott",
+  "p": "jullie",
+  "sub": 1,
+  "e": "You can play outside if you tidy your room first.",
+  "b": "B1"
+ },
+ {
+  "q": "Stuur me een bericht zodra jullie ___ (aankomen).",
+  "v": "aankomen",
+  "t": "ott",
+  "p": "jullie",
+  "sub": 1,
+  "e": "Send me a message as soon as you arrive.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn ouders ___ (wonen) in een klein dorp.",
+  "v": "wonen",
+  "t": "ott",
+  "p": "zij",
+  "e": "My parents live in a small village.",
+  "b": "A2"
+ },
+ {
+  "q": "De meeste mensen hier ___ (werken) in de stad.",
+  "v": "werken",
+  "t": "ott",
+  "p": "zij",
+  "e": "Most people here work in the city.",
+  "b": "A1"
+ },
+ {
+  "q": "De kinderen ___ (spelen) buiten in de sneeuw.",
+  "v": "spelen",
+  "t": "ott",
+  "p": "zij",
+  "e": "The children are playing outside in the snow.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn buren ___ (hebben) drie kinderen.",
+  "v": "hebben",
+  "t": "ott",
+  "p": "zij",
+  "e": "My neighbours have three children.",
+  "b": "A1"
+ },
+ {
+  "q": "De winkels ___ (zijn) op maandag dicht.",
+  "v": "zijn",
+  "t": "ott",
+  "p": "zij",
+  "e": "The shops are closed on Mondays.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn grootouders ___ (gaan) elke winter naar Spanje.",
+  "v": "gaan",
+  "t": "ott",
+  "p": "zij",
+  "e": "My grandparents go to Spain every winter.",
+  "b": "A1"
+ },
+ {
+  "q": "Nederlanders ___ (eten) vaak brood als lunch.",
+  "v": "eten",
+  "t": "ott",
+  "p": "zij",
+  "e": "Dutch people often eat bread for lunch.",
+  "b": "A1"
+ },
+ {
+  "q": "Veel studenten ___ (drinken) te veel koffie.",
+  "v": "drinken",
+  "t": "ott",
+  "p": "zij",
+  "e": "Many students drink too much coffee.",
+  "b": "A2"
+ },
+ {
+  "q": "De dagen ___ (worden) korter in de herfst.",
+  "v": "worden",
+  "t": "ott",
+  "p": "zij",
+  "e": "The days get shorter in autumn.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn vrienden ___ (vinden) Amsterdam te druk.",
+  "v": "vinden",
+  "t": "ott",
+  "p": "zij",
+  "e": "My friends find Amsterdam too busy.",
+  "b": "A1"
+ },
+ {
+  "q": "Die schoenen ___ (kosten) honderd euro.",
+  "v": "kosten",
+  "t": "ott",
+  "p": "zij",
+  "e": "Those shoes cost a hundred euros.",
+  "b": "A2"
+ },
+ {
+  "q": "De treinen ___ (rijden) vandaag niet.",
+  "v": "rijden",
+  "t": "ott",
+  "p": "zij",
+  "e": "The trains aren't running today.",
+  "b": "A1"
+ },
+ {
+  "q": "Onze gasten ___ (komen) om zeven uur.",
+  "v": "komen",
+  "t": "ott",
+  "p": "zij",
+  "e": "Our guests are coming at seven.",
+  "b": "A1"
+ },
+ {
+  "q": "De sleutels ___ (zitten) in mijn tas.",
+  "v": "zitten",
+  "t": "ott",
+  "p": "zij",
+  "e": "The keys are in my bag.",
+  "b": "A1"
+ },
+ {
+  "q": "Je boeken ___ (liggen) op de grond.",
+  "v": "liggen",
+  "t": "ott",
+  "p": "zij",
+  "e": "Your books are on the floor.",
+  "b": "A1"
+ },
+ {
+  "q": "De leerlingen ___ (lachen) om de grap van de juf.",
+  "v": "lachen",
+  "t": "ott",
+  "p": "zij",
+  "e": "The pupils laugh at the teacher's joke.",
+  "b": "A2"
+ },
+ {
+  "q": "De kinderen ___ (slapen) al.",
+  "v": "slapen",
+  "t": "ott",
+  "p": "zij",
+  "e": "The children are already asleep.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn ouders ___ (kennen) jouw ouders goed.",
+  "v": "kennen",
+  "t": "ott",
+  "p": "zij",
+  "e": "My parents know your parents well.",
+  "b": "A1"
+ },
+ {
+  "q": "Ze ___ (praten) allebei veel te hard.",
+  "v": "praten",
+  "t": "ott",
+  "p": "zij",
+  "e": "They both talk far too loudly.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn zussen ___ (houden) allebei van paarden.",
+  "v": "houden",
+  "t": "ott",
+  "p": "zij",
+  "e": "My sisters both love horses.",
+  "b": "A1"
+ },
+ {
+  "q": "Onze buren ___ (helpen) ons altijd.",
+  "v": "helpen",
+  "t": "ott",
+  "p": "zij",
+  "e": "Our neighbours always help us.",
+  "b": "A1"
+ },
+ {
+  "q": "Op de markt ___ (verkopen) ze verse vis.",
+  "v": "verkopen",
+  "t": "ott",
+  "p": "zij",
+  "e": "At the market they sell fresh fish.",
+  "b": "A2"
+ },
+ {
+  "q": "In België ___ (spreken) ze Nederlands en Frans.",
+  "v": "spreken",
+  "t": "ott",
+  "p": "zij",
+  "e": "In Belgium they speak Dutch and French.",
+  "b": "A1"
+ },
+ {
+  "q": "Waar ___ (wonen) je ouders?",
+  "v": "wonen",
+  "t": "ott",
+  "p": "zij",
+  "e": "Where do your parents live?",
+  "b": "A2"
+ },
+ {
+  "q": "Morgen ___ (komen) mijn neven logeren.",
+  "v": "komen",
+  "t": "ott",
+  "p": "zij",
+  "e": "Tomorrow my cousins are coming to stay.",
+  "b": "A1"
+ },
+ {
+  "q": "Onze vrienden ___ (aankomen) vanavond om acht uur aan.",
+  "v": "aankomen",
+  "t": "ott",
+  "p": "zij",
+  "e": "Our friends arrive tonight at eight.",
+  "b": "B1"
+ },
+ {
+  "q": "Boeren ___ (opstaan) heel vroeg op.",
+  "v": "opstaan",
+  "t": "ott",
+  "p": "zij",
+  "e": "Farmers get up very early.",
+  "b": "B1"
+ },
+ {
+  "q": "De kinderen ___ (opeten) alle koekjes op.",
+  "v": "opeten",
+  "t": "ott",
+  "p": "zij",
+  "e": "The children eat up all the biscuits.",
+  "b": "B1"
+ },
+ {
+  "q": "De studenten ___ (schoonmaken) nooit hun keuken schoon.",
+  "v": "schoonmaken",
+  "t": "ott",
+  "p": "zij",
+  "e": "The students never clean their kitchen.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn ouders ___ (uitgaan) elke vrijdag uit.",
+  "v": "uitgaan",
+  "t": "ott",
+  "p": "zij",
+  "e": "My parents go out every Friday.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik weet niet wanneer mijn ouders ___ (terugkomen).",
+  "v": "terugkomen",
+  "t": "ott",
+  "p": "zij",
+  "sub": 1,
+  "e": "I don't know when my parents are coming back.",
+  "b": "B1"
+ },
+ {
+  "q": "Oma is blij als de kleinkinderen haar ___ (opbellen).",
+  "v": "opbellen",
+  "t": "ott",
+  "p": "zij",
+  "sub": 1,
+  "e": "Grandma is happy when her grandchildren call her.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik betaal de kinderen als ze de auto ___ (schoonmaken).",
+  "v": "schoonmaken",
+  "t": "ott",
+  "p": "zij",
+  "sub": 1,
+  "e": "I pay the children when they clean the car.",
+  "b": "B1"
+ }
+]

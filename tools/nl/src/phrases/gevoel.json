@@ -1,0 +1,488 @@
+[
+ {
+  "nl": "Ik ben moe.",
+  "en": "I'm tired.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben doodmoe.",
+  "en": "I'm exhausted.",
+  "alt": [
+   "Ik ben kapot.",
+   "Ik ben bekaf.",
+   "Ik ben op."
+  ],
+  "th": "gevoel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik heb slaap.",
+  "en": "I'm sleepy.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik kan niet slapen.",
+  "en": "I can't sleep.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik heb slecht geslapen.",
+  "en": "I slept badly.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik heb goed geslapen.",
+  "en": "I slept well.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Ik heb honger.",
+  "en": "I'm hungry.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: I have hunger."
+ },
+ {
+  "nl": "Ik heb dorst.",
+  "en": "I'm thirsty.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik zit vol.",
+  "en": "I'm full.",
+  "alt": [
+   "Ik ben vol."
+  ],
+  "th": "gevoel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik heb het koud.",
+  "en": "I'm cold.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: I have it cold."
+ },
+ {
+  "nl": "Ik heb het warm.",
+  "en": "I'm hot.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben ziek.",
+  "en": "I'm ill.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik voel me niet lekker.",
+  "en": "I don't feel well.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik voel me goed.",
+  "en": "I feel good.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik voel me al beter.",
+  "en": "I already feel better.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Voel je je beter?",
+  "en": "Are you feeling better?",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik heb hoofdpijn.",
+  "en": "I have a headache.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik heb buikpijn.",
+  "en": "I have a stomach ache.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik heb keelpijn.",
+  "en": "I have a sore throat.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Mijn rug doet pijn.",
+  "en": "My back hurts.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben verkouden.",
+  "en": "I have a cold.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik heb griep.",
+  "en": "I have the flu.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik heb koorts.",
+  "en": "I have a temperature.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben misselijk.",
+  "en": "I feel sick.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 2,
+  "n": "Means nauseous, not ill in general."
+ },
+ {
+  "nl": "Ik ben duizelig.",
+  "en": "I feel dizzy.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben allergisch voor noten.",
+  "en": "I'm allergic to nuts.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben zwanger.",
+  "en": "I'm pregnant.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Ik ben blij.",
+  "en": "I'm happy.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben heel blij voor je.",
+  "en": "I'm really happy for you.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben gelukkig.",
+  "en": "I'm happy in life.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 3,
+  "n": "Deeper than blij, about your life."
+ },
+ {
+  "nl": "Ik ben verdrietig.",
+  "en": "I'm sad.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben boos.",
+  "en": "I'm angry.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben een beetje zenuwachtig.",
+  "en": "I'm a bit nervous.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben bang.",
+  "en": "I'm scared.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben bang voor honden.",
+  "en": "I'm scared of dogs.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Ik verveel me.",
+  "en": "I'm bored.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: I bore myself."
+ },
+ {
+  "nl": "Ik ben gestrest.",
+  "en": "I'm stressed.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik heb het druk.",
+  "en": "I'm busy.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik schaam me.",
+  "en": "I'm embarrassed.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Ik ben verrast.",
+  "en": "I'm surprised.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Ik ben teleurgesteld.",
+  "en": "I'm disappointed.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Ik ben trots op je.",
+  "en": "I'm proud of you.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben jaloers.",
+  "en": "I'm jealous.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Ik ben in de war.",
+  "en": "I'm confused.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik mis je.",
+  "en": "I miss you.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik mis mijn familie.",
+  "en": "I miss my family.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik heb heimwee.",
+  "en": "I'm homesick.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben verliefd.",
+  "en": "I'm in love.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Ik hou van je.",
+  "en": "I love you.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik heb zin in koffie.",
+  "en": "I fancy a coffee.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 1,
+  "n": "Zin hebben in: to feel like something."
+ },
+ {
+  "nl": "Ik heb er geen zin in.",
+  "en": "I don't feel like it.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Ik heb er zin in!",
+  "en": "I'm up for it!",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik kijk ernaar uit.",
+  "en": "I'm looking forward to it.",
+  "th": "gevoel",
+  "b": "B1",
+  "t": 2
+ },
+ {
+  "nl": "Het gaat goed met me.",
+  "en": "I'm doing well.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Het gaat niet goed met me.",
+  "en": "I'm not doing well.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Wat is er?",
+  "en": "What's wrong?",
+  "alt": [
+   "Wat is er aan de hand?"
+  ],
+  "th": "gevoel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Gaat het?",
+  "en": "Are you okay?",
+  "alt": [
+   "Gaat het met je?"
+  ],
+  "th": "gevoel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ja, het gaat.",
+  "en": "Yes, I'm okay.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Maak je geen zorgen.",
+  "en": "Don't worry.",
+  "th": "gevoel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Rustig maar.",
+  "en": "Calm down.",
+  "alt": [
+   "Doe rustig."
+  ],
+  "th": "gevoel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik baal ervan.",
+  "en": "I'm gutted.",
+  "alt": [
+   "Balen!"
+  ],
+  "th": "gevoel",
+  "b": "A2",
+  "t": 2,
+  "n": "Informal."
+ },
+ {
+  "nl": "Ik heb geluk gehad.",
+  "en": "I was lucky.",
+  "th": "gevoel",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Ik ben het zat.",
+  "en": "I'm fed up with it.",
+  "alt": [
+   "Ik ben het beu."
+  ],
+  "th": "gevoel",
+  "b": "B1",
+  "t": 2
+ },
+ {
+  "nl": "Het valt me zwaar.",
+  "en": "I'm finding it hard.",
+  "th": "gevoel",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "nl": "Ik zit er een beetje doorheen.",
+  "en": "I'm a bit worn out.",
+  "th": "gevoel",
+  "b": "B1",
+  "t": 3,
+  "n": "Worn out by stress or a long stretch."
+ }
+]

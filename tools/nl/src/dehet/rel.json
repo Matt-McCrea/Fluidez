@@ -1,0 +1,582 @@
+[
+ {
+  "q": "Het boek ___ ik lees, is mooi.",
+  "n": "boek",
+  "t": "rel",
+  "e": "The book I'm reading is beautiful.",
+  "b": "A2"
+ },
+ {
+  "q": "Het huis ___ we kopen, is oud.",
+  "n": "huis",
+  "t": "rel",
+  "e": "The house we're buying is old.",
+  "b": "A2"
+ },
+ {
+  "q": "Het meisje ___ naast mij woont, heet Eva.",
+  "n": "meisje",
+  "t": "rel",
+  "e": "The girl who lives next to me is called Eva.",
+  "b": "A2"
+ },
+ {
+  "q": "Het kind ___ daar speelt, is mijn neef.",
+  "n": "kind",
+  "t": "rel",
+  "e": "The child playing there is my nephew.",
+  "b": "A2"
+ },
+ {
+  "q": "Het restaurant ___ jij kent, is dicht.",
+  "n": "restaurant",
+  "t": "rel",
+  "e": "The restaurant you know is closed.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik vind het cadeau ___ je kocht, heel leuk.",
+  "n": "cadeau",
+  "t": "rel",
+  "e": "I really like the present you bought.",
+  "b": "A2"
+ },
+ {
+  "q": "Het hotel ___ we geboekt hebben, ligt aan zee.",
+  "n": "hotel",
+  "t": "rel",
+  "e": "The hotel we've booked is by the sea.",
+  "b": "A2"
+ },
+ {
+  "q": "Wat is het woord ___ je zoekt?",
+  "n": "woord",
+  "t": "rel",
+  "e": "What's the word you're looking for?",
+  "b": "A2"
+ },
+ {
+  "q": "Het lied ___ ze zingt, ken ik niet.",
+  "n": "lied",
+  "t": "rel",
+  "e": "I don't know the song she's singing.",
+  "b": "A2"
+ },
+ {
+  "q": "Het dorp ___ we bezochten, was klein.",
+  "n": "dorp",
+  "t": "rel",
+  "e": "The village we visited was small.",
+  "b": "A2"
+ },
+ {
+  "q": "Het verhaal ___ hij vertelt, is niet waar.",
+  "n": "verhaal",
+  "t": "rel",
+  "e": "The story he's telling isn't true.",
+  "b": "A2"
+ },
+ {
+  "q": "Het bericht ___ ik kreeg, was van Sanne.",
+  "n": "bericht",
+  "t": "rel",
+  "e": "The message I got was from Sanne.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik eet het brood ___ op tafel ligt.",
+  "n": "brood",
+  "t": "rel",
+  "e": "I'm eating the bread that's on the table.",
+  "b": "A2"
+ },
+ {
+  "q": "Het bed ___ we gekocht hebben, is te groot.",
+  "n": "bed",
+  "t": "rel",
+  "e": "The bed we bought is too big.",
+  "b": "A2"
+ },
+ {
+  "q": "Het probleem ___ je noemt, is opgelost.",
+  "n": "probleem",
+  "t": "rel",
+  "e": "The problem you mention has been solved.",
+  "b": "A2"
+ },
+ {
+  "q": "Waar is het glas ___ hier stond?",
+  "n": "glas",
+  "t": "rel",
+  "e": "Where's the glass that was here?",
+  "b": "A2"
+ },
+ {
+  "q": "Het feest ___ we geven, begint om acht uur.",
+  "n": "feest",
+  "t": "rel",
+  "e": "The party we're giving starts at eight.",
+  "b": "A2"
+ },
+ {
+  "q": "Het programma ___ ik leuk vind, is gestopt.",
+  "n": "programma",
+  "t": "rel",
+  "e": "The programme I like has stopped.",
+  "b": "A2"
+ },
+ {
+  "q": "Het geld ___ je mij gaf, is op.",
+  "n": "geld",
+  "t": "rel",
+  "e": "The money you gave me is gone.",
+  "b": "A2"
+ },
+ {
+  "q": "Het nummer ___ ik bel, is bezet.",
+  "n": "nummer",
+  "t": "rel",
+  "e": "The number I'm calling is engaged.",
+  "b": "A2"
+ },
+ {
+  "q": "Het appartement ___ zij huurt, heeft een balkon.",
+  "n": "appartement",
+  "t": "rel",
+  "e": "The flat she rents has a balcony.",
+  "b": "A2"
+ },
+ {
+  "q": "Het idee ___ jij had, is goed.",
+  "n": "idee",
+  "t": "rel",
+  "e": "The idea you had is good.",
+  "b": "A2"
+ },
+ {
+  "q": "Het station ___ het dichtst bij is, heet Centraal.",
+  "n": "station",
+  "t": "rel",
+  "e": "The station that's nearest is called Centraal.",
+  "b": "B1"
+ },
+ {
+  "q": "Het gesprek ___ we hadden, was belangrijk.",
+  "n": "gesprek",
+  "t": "rel",
+  "e": "The conversation we had was important.",
+  "b": "A2"
+ },
+ {
+  "q": "Het werk ___ ik doe, is leuk.",
+  "n": "werk",
+  "t": "rel",
+  "e": "The work I do is fun.",
+  "b": "A2"
+ },
+ {
+  "q": "Het schilderij ___ in de gang hangt, is van mijn opa.",
+  "n": "schilderij",
+  "t": "rel",
+  "e": "The painting in the hall belongs to my grandpa.",
+  "b": "B1"
+ },
+ {
+  "q": "Het shirt ___ je draagt, staat je goed.",
+  "n": "shirt",
+  "t": "rel",
+  "e": "The shirt you're wearing suits you.",
+  "b": "B1"
+ },
+ {
+  "q": "Het koekje ___ ik at, was lekker.",
+  "n": "koekje",
+  "t": "rel",
+  "e": "The biscuit I ate was tasty.",
+  "b": "B1"
+ },
+ {
+  "q": "Het kaartje ___ je kocht, is niet geldig.",
+  "n": "kaartje",
+  "t": "rel",
+  "e": "The ticket you bought isn't valid.",
+  "b": "B1"
+ },
+ {
+  "q": "Het museum ___ we bezoeken, is gratis.",
+  "n": "museum",
+  "t": "rel",
+  "e": "The museum we're visiting is free.",
+  "b": "B1"
+ },
+ {
+  "q": "De man ___ daar staat, is mijn vader.",
+  "n": "man",
+  "t": "rel",
+  "e": "The man standing there is my father.",
+  "b": "A2"
+ },
+ {
+  "q": "De vrouw ___ ik zag, was mijn lerares.",
+  "n": "vrouw",
+  "t": "rel",
+  "e": "The woman I saw was my teacher.",
+  "b": "A2"
+ },
+ {
+  "q": "De trein ___ om acht uur vertrekt, is vol.",
+  "n": "trein",
+  "t": "rel",
+  "e": "The train that leaves at eight is full.",
+  "b": "A2"
+ },
+ {
+  "q": "De film ___ we gisteren zagen, was saai.",
+  "n": "film",
+  "t": "rel",
+  "e": "The film we saw yesterday was boring.",
+  "b": "A2"
+ },
+ {
+  "q": "De auto ___ voor de deur staat, is nieuw.",
+  "n": "auto",
+  "t": "rel",
+  "e": "The car in front of the door is new.",
+  "b": "A2"
+ },
+ {
+  "q": "De vriend ___ ik bel, woont in Gent.",
+  "n": "vriend",
+  "t": "rel",
+  "e": "The friend I'm calling lives in Ghent.",
+  "b": "A2"
+ },
+ {
+  "q": "De stoel ___ je zoekt, staat in de keuken.",
+  "n": "stoel",
+  "t": "rel",
+  "e": "The chair you're looking for is in the kitchen.",
+  "b": "A2"
+ },
+ {
+  "q": "De jas ___ ze draagt, is van haar zus.",
+  "n": "jas",
+  "t": "rel",
+  "e": "The coat she's wearing is her sister's.",
+  "b": "A2"
+ },
+ {
+  "q": "De kat ___ op de bank slaapt, heet Poes.",
+  "n": "kat",
+  "t": "rel",
+  "e": "The cat sleeping on the sofa is called Poes.",
+  "b": "A2"
+ },
+ {
+  "q": "De winkel ___ op de hoek zit, is dicht.",
+  "n": "winkel",
+  "t": "rel",
+  "e": "The shop on the corner is closed.",
+  "b": "A2"
+ },
+ {
+  "q": "De vraag ___ hij stelde, was moeilijk.",
+  "n": "vraag",
+  "t": "rel",
+  "e": "The question he asked was difficult.",
+  "b": "A2"
+ },
+ {
+  "q": "De leraar ___ Nederlands geeft, is aardig.",
+  "n": "leraar",
+  "t": "rel",
+  "e": "The teacher who teaches Dutch is nice.",
+  "b": "A2"
+ },
+ {
+  "q": "De bus ___ ik neem, is vaak te laat.",
+  "n": "bus",
+  "t": "rel",
+  "e": "The bus I take is often late.",
+  "b": "A2"
+ },
+ {
+  "q": "De brief ___ je schreef, is aangekomen.",
+  "n": "brief",
+  "t": "rel",
+  "e": "The letter you wrote has arrived.",
+  "b": "A2"
+ },
+ {
+  "q": "De sleutel ___ ik kwijt was, ligt hier.",
+  "n": "sleutel",
+  "t": "rel",
+  "e": "The key I'd lost is here.",
+  "b": "A2"
+ },
+ {
+  "q": "De koffie ___ je maakt, is lekker.",
+  "n": "koffie",
+  "t": "rel",
+  "e": "The coffee you make is nice.",
+  "b": "A2"
+ },
+ {
+  "q": "De stad ___ ik het mooist vind, is Utrecht.",
+  "n": "stad",
+  "t": "rel",
+  "e": "The city I like best is Utrecht.",
+  "b": "A2"
+ },
+ {
+  "q": "De dokter ___ mij hielp, was heel vriendelijk.",
+  "n": "dokter",
+  "t": "rel",
+  "e": "The doctor who helped me was very kind.",
+  "b": "A2"
+ },
+ {
+  "q": "De tas ___ je gekocht hebt, is mooi.",
+  "n": "tas",
+  "t": "rel",
+  "e": "The bag you bought is pretty.",
+  "b": "A2"
+ },
+ {
+  "q": "De taal ___ ik leer, is Nederlands.",
+  "n": "taal",
+  "t": "rel",
+  "e": "The language I'm learning is Dutch.",
+  "b": "A2"
+ },
+ {
+  "q": "De straat ___ naar het station loopt, is lang.",
+  "n": "straat",
+  "t": "rel",
+  "e": "The street that goes to the station is long.",
+  "b": "A2"
+ },
+ {
+  "q": "De krant ___ op tafel ligt, is van gisteren.",
+  "n": "krant",
+  "t": "rel",
+  "e": "The paper on the table is from yesterday.",
+  "b": "A2"
+ },
+ {
+  "q": "De foto ___ je stuurde, is grappig.",
+  "n": "foto",
+  "t": "rel",
+  "e": "The photo you sent is funny.",
+  "b": "A2"
+ },
+ {
+  "q": "De kamer ___ we huren, is klein.",
+  "n": "kamer",
+  "t": "rel",
+  "e": "The room we're renting is small.",
+  "b": "A2"
+ },
+ {
+  "q": "De vakantie ___ we plannen, is in juli.",
+  "n": "vakantie",
+  "t": "rel",
+  "e": "The holiday we're planning is in July.",
+  "b": "A2"
+ },
+ {
+  "q": "De oplossing ___ zij vond, werkt goed.",
+  "n": "oplossing",
+  "t": "rel",
+  "e": "The solution she found works well.",
+  "b": "B1"
+ },
+ {
+  "q": "De baby ___ huilt, heeft honger.",
+  "n": "baby",
+  "t": "rel",
+  "e": "The baby who is crying is hungry.",
+  "b": "A2"
+ },
+ {
+  "q": "De boom ___ in onze tuin staat, is oud.",
+  "n": "boom",
+  "t": "rel",
+  "e": "The tree in our garden is old.",
+  "b": "A2"
+ },
+ {
+  "q": "De afspraak ___ ik heb, is om drie uur.",
+  "n": "afspraak",
+  "t": "rel",
+  "e": "The appointment I have is at three.",
+  "b": "A2"
+ },
+ {
+  "q": "De collega ___ naast mij zit, is ziek.",
+  "n": "collega",
+  "t": "rel",
+  "e": "The colleague who sits next to me is ill.",
+  "b": "A2"
+ },
+ {
+  "q": "De boeken ___ ik lees, zijn spannend.",
+  "n": "boek",
+  "pl": true,
+  "t": "rel",
+  "e": "The books I read are exciting.",
+  "b": "A2"
+ },
+ {
+  "q": "De kinderen ___ buiten spelen, zijn blij.",
+  "n": "kind",
+  "pl": true,
+  "t": "rel",
+  "e": "The children playing outside are happy.",
+  "b": "A2"
+ },
+ {
+  "q": "De huizen ___ aan de gracht staan, zijn duur.",
+  "n": "huis",
+  "pl": true,
+  "t": "rel",
+  "e": "The houses on the canal are expensive.",
+  "b": "A2"
+ },
+ {
+  "q": "De mensen ___ hier wonen, zijn aardig.",
+  "n": "mens",
+  "pl": true,
+  "t": "rel",
+  "e": "The people who live here are nice.",
+  "b": "A2"
+ },
+ {
+  "q": "De meisjes ___ ik ken, gaan naar Spanje.",
+  "n": "meisje",
+  "pl": true,
+  "t": "rel",
+  "e": "The girls I know are going to Spain.",
+  "b": "A2"
+ },
+ {
+  "q": "De schoenen ___ je kocht, zijn te klein.",
+  "n": "schoen",
+  "pl": true,
+  "t": "rel",
+  "e": "The shoes you bought are too small.",
+  "b": "A2"
+ },
+ {
+  "q": "De woorden ___ ik niet ken, schrijf ik op.",
+  "n": "woord",
+  "pl": true,
+  "t": "rel",
+  "e": "I write down the words I don't know.",
+  "b": "A2"
+ },
+ {
+  "q": "De vrienden ___ ik uitnodig, komen om zeven uur.",
+  "n": "vriend",
+  "pl": true,
+  "t": "rel",
+  "e": "The friends I'm inviting come at seven.",
+  "b": "A2"
+ },
+ {
+  "q": "De foto's ___ je maakte, zijn prachtig.",
+  "n": "foto",
+  "pl": true,
+  "t": "rel",
+  "e": "The photos you took are gorgeous.",
+  "b": "A2"
+ },
+ {
+  "q": "De bloemen ___ op tafel staan, zijn voor jou.",
+  "n": "bloem",
+  "pl": true,
+  "t": "rel",
+  "e": "The flowers on the table are for you.",
+  "b": "A2"
+ },
+ {
+  "q": "De kaartjes ___ we hebben, zijn voor zaterdag.",
+  "n": "kaartje",
+  "pl": true,
+  "t": "rel",
+  "e": "The tickets we have are for Saturday.",
+  "b": "B1"
+ },
+ {
+  "q": "De vragen ___ je stelde, waren goed.",
+  "n": "vraag",
+  "pl": true,
+  "t": "rel",
+  "e": "The questions you asked were good.",
+  "b": "A2"
+ },
+ {
+  "q": "De dorpen ___ we zagen, waren mooi.",
+  "n": "dorp",
+  "pl": true,
+  "t": "rel",
+  "e": "The villages we saw were beautiful.",
+  "b": "A2"
+ },
+ {
+  "q": "De verhalen ___ opa vertelt, zijn grappig.",
+  "n": "verhaal",
+  "pl": true,
+  "t": "rel",
+  "e": "The stories grandpa tells are funny.",
+  "b": "A2"
+ },
+ {
+  "q": "De koekjes ___ oma bakt, zijn heerlijk.",
+  "n": "koekje",
+  "pl": true,
+  "t": "rel",
+  "e": "The biscuits grandma bakes are delicious.",
+  "b": "B1"
+ },
+ {
+  "q": "De brieven ___ hij schreef, liggen in een doos.",
+  "n": "brief",
+  "pl": true,
+  "t": "rel",
+  "e": "The letters he wrote are in a box.",
+  "b": "A2"
+ },
+ {
+  "q": "De boten ___ in de haven liggen, zijn klein.",
+  "n": "boot",
+  "pl": true,
+  "t": "rel",
+  "e": "The boats in the harbour are small.",
+  "b": "B1"
+ },
+ {
+  "q": "De studenten ___ hier wonen, maken veel lawaai.",
+  "n": "student",
+  "pl": true,
+  "t": "rel",
+  "e": "The students who live here make a lot of noise.",
+  "b": "A2"
+ },
+ {
+  "q": "De glazen ___ in de kast staan, zijn schoon.",
+  "n": "glas",
+  "pl": true,
+  "t": "rel",
+  "e": "The glasses in the cupboard are clean.",
+  "b": "A2"
+ },
+ {
+  "q": "De lessen ___ ik volg, zijn op maandag.",
+  "n": "les",
+  "pl": true,
+  "t": "rel",
+  "e": "The lessons I take are on Monday.",
+  "b": "A2"
+ }
+]

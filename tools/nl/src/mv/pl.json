@@ -1,0 +1,1545 @@
+[
+ {
+  "q": "Ik heb twee ___ (kat).",
+  "n": "kat",
+  "t": "pl",
+  "e": "I have two cats.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij hebben drie ___ (kind).",
+  "n": "kind",
+  "t": "pl",
+  "e": "We have three children.",
+  "b": "A1"
+ },
+ {
+  "q": "In de kast staan veel ___ (boek).",
+  "n": "boek",
+  "t": "pl",
+  "e": "There are lots of books in the bookcase.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik koop twee ___ (brood).",
+  "n": "brood",
+  "t": "pl",
+  "e": "I'm buying two loaves.",
+  "b": "A2"
+ },
+ {
+  "q": "Er zijn vier ___ (stoel) in de keuken.",
+  "n": "stoel",
+  "t": "pl",
+  "e": "There are four chairs in the kitchen.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn ___ (hand) zijn koud.",
+  "n": "hand",
+  "t": "pl",
+  "e": "My hands are cold.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb nieuwe ___ (schoen) nodig.",
+  "n": "schoen",
+  "t": "pl",
+  "e": "I need new shoes.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij heeft veel ___ (vriend).",
+  "n": "vriend",
+  "t": "pl",
+  "e": "He has a lot of friends.",
+  "b": "A1"
+ },
+ {
+  "q": "Zij leest twee ___ (krant) per dag.",
+  "n": "krant",
+  "t": "pl",
+  "e": "She reads two papers a day.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik stuur jullie ___ (kaart) uit Spanje.",
+  "n": "kaart",
+  "t": "pl",
+  "e": "I'll send you cards from Spain.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn oma heeft veel ___ (plant).",
+  "n": "plant",
+  "t": "pl",
+  "e": "My grandma has lots of plants.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik poets mijn ___ (tand) twee keer per dag.",
+  "n": "tand",
+  "t": "pl",
+  "e": "I brush my teeth twice a day.",
+  "b": "A2"
+ },
+ {
+  "q": "In de zomer zijn de ___ (tuin) groen.",
+  "n": "tuin",
+  "t": "pl",
+  "e": "In summer the gardens are green.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (trein) rijden vandaag niet.",
+  "n": "trein",
+  "t": "pl",
+  "e": "The trains aren't running today.",
+  "b": "A2"
+ },
+ {
+  "q": "Er zijn drie ___ (kerk) in ons dorp.",
+  "n": "kerk",
+  "t": "pl",
+  "e": "There are three churches in our village.",
+  "b": "A2"
+ },
+ {
+  "q": "In Zwitserland zijn hoge ___ (berg).",
+  "n": "berg",
+  "t": "pl",
+  "e": "In Switzerland there are high mountains.",
+  "b": "A2"
+ },
+ {
+  "q": "Ze draagt twee ___ (ring).",
+  "n": "ring",
+  "t": "pl",
+  "e": "She wears two rings.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik koop ___ (bloem) voor mijn moeder.",
+  "n": "bloem",
+  "t": "pl",
+  "e": "I'm buying flowers for my mother.",
+  "b": "A2"
+ },
+ {
+  "q": "We kijken vanavond twee ___ (film).",
+  "n": "film",
+  "t": "pl",
+  "e": "We're watching two films tonight.",
+  "b": "A2"
+ },
+ {
+  "q": "Hoeveel ___ (deur) heeft de auto?",
+  "n": "deur",
+  "t": "pl",
+  "e": "How many doors does the car have?",
+  "b": "A1"
+ },
+ {
+  "q": "De ___ (maand) gaan snel voorbij.",
+  "n": "maand",
+  "t": "pl",
+  "e": "The months go by fast.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb drie ___ (vraag) voor u.",
+  "n": "vraag",
+  "t": "pl",
+  "e": "I have three questions for you.",
+  "b": "A1"
+ },
+ {
+  "q": "Hoeveel ___ (woord) ken je al?",
+  "n": "woord",
+  "t": "pl",
+  "e": "How many words do you know already?",
+  "b": "A1"
+ },
+ {
+  "q": "Er staan veel ___ (huis) aan de gracht.",
+  "n": "huis",
+  "t": "pl",
+  "e": "There are many houses on the canal.",
+  "b": "A1"
+ },
+ {
+  "q": "In het park zijn veel ___ (boom).",
+  "n": "boom",
+  "t": "pl",
+  "e": "There are lots of trees in the park.",
+  "b": "A2"
+ },
+ {
+  "q": "We hebben twee ___ (bed) in de logeerkamer.",
+  "n": "bed",
+  "t": "pl",
+  "e": "We have two beds in the guest room.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb twee ___ (broer).",
+  "n": "broer",
+  "t": "pl",
+  "e": "I have two brothers.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn ___ (ouder) wonen in Zwolle.",
+  "n": "ouder",
+  "t": "pl",
+  "e": "My parents live in Zwolle.",
+  "b": "A2"
+ },
+ {
+  "q": "Zij heeft drie ___ (dochter).",
+  "n": "dochter",
+  "t": "pl",
+  "e": "She has three daughters.",
+  "b": "A2"
+ },
+ {
+  "q": "Hoeveel ___ (kamer) heeft het huis?",
+  "n": "kamer",
+  "t": "pl",
+  "e": "How many rooms does the house have?",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ben mijn ___ (sleutel) kwijt.",
+  "n": "sleutel",
+  "t": "pl",
+  "e": "I've lost my keys.",
+  "b": "A1"
+ },
+ {
+  "q": "Er zijn twee ___ (winkel) in de straat.",
+  "n": "winkel",
+  "t": "pl",
+  "e": "There are two shops in the street.",
+  "b": "A2"
+ },
+ {
+  "q": "Op tafel staan vier ___ (bord).",
+  "n": "bord",
+  "t": "pl",
+  "e": "There are four plates on the table.",
+  "b": "A2"
+ },
+ {
+  "q": "Er zitten ___ (vogel) in de boom.",
+  "n": "vogel",
+  "t": "pl",
+  "e": "There are birds in the tree.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb tien ___ (vinger).",
+  "n": "vinger",
+  "t": "pl",
+  "e": "I have ten fingers.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (tafel) zijn al gedekt.",
+  "n": "tafel",
+  "t": "pl",
+  "e": "The tables are already laid.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb twee ___ (computer) thuis.",
+  "n": "computer",
+  "t": "pl",
+  "e": "I have two computers at home.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (zomer) zijn hier warm.",
+  "n": "zomer",
+  "t": "pl",
+  "e": "The summers are warm here.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (winter) in Nederland zijn nat.",
+  "n": "winter",
+  "t": "pl",
+  "e": "Winters in the Netherlands are wet.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb drie ___ (tante) en twee ooms.",
+  "n": "tante",
+  "t": "pl",
+  "e": "I have three aunts and two uncles.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn ___ (oom) wonen in Canada.",
+  "n": "oom",
+  "t": "pl",
+  "e": "My uncles live in Canada.",
+  "b": "A2"
+ },
+ {
+  "q": "Er zijn veel ___ (restaurant) in de stad.",
+  "n": "restaurant",
+  "t": "pl",
+  "e": "There are lots of restaurants in town.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (hotel) zijn vol in augustus.",
+  "n": "hotel",
+  "t": "pl",
+  "e": "The hotels are full in August.",
+  "b": "A2"
+ },
+ {
+  "q": "We bezoeken drie ___ (kasteel).",
+  "n": "kasteel",
+  "t": "pl",
+  "e": "We're visiting three castles.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb twee ___ (telefoon).",
+  "n": "telefoon",
+  "t": "pl",
+  "e": "I have two phones.",
+  "b": "A1"
+ },
+ {
+  "q": "De ___ (planeet) draaien om de zon.",
+  "n": "planeet",
+  "t": "pl",
+  "e": "The planets go round the sun.",
+  "b": "A1"
+ },
+ {
+  "q": "De ___ (keuken) in die huizen zijn klein.",
+  "n": "keuken",
+  "t": "pl",
+  "e": "The kitchens in those houses are small.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (dokter) werken hard.",
+  "n": "dokter",
+  "t": "pl",
+  "e": "The doctors work hard.",
+  "b": "A1"
+ },
+ {
+  "q": "Hoeveel ___ (meisje) zitten er in je klas?",
+  "n": "meisje",
+  "t": "pl",
+  "e": "How many girls are there in your class?",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb twee ___ (kaartje) voor het concert.",
+  "n": "kaartje",
+  "t": "pl",
+  "e": "I have two tickets for the concert.",
+  "b": "A2"
+ },
+ {
+  "q": "Wil je een paar ___ (koekje)?",
+  "n": "koekje",
+  "t": "pl",
+  "e": "Would you like a few biscuits?",
+  "b": "B1"
+ },
+ {
+  "q": "De ___ (jongen) spelen voetbal.",
+  "n": "jongen",
+  "t": "pl",
+  "e": "The boys are playing football.",
+  "b": "A1"
+ },
+ {
+  "q": "Er zijn nog drie ___ (broodje) over.",
+  "n": "broodje",
+  "t": "pl",
+  "e": "There are three rolls left.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik maak veel ___ (foto) op vakantie.",
+  "n": "foto",
+  "t": "pl",
+  "e": "I take lots of photos on holiday.",
+  "b": "A1"
+ },
+ {
+  "q": "Er staan twee ___ (auto) voor de deur.",
+  "n": "auto",
+  "t": "pl",
+  "e": "There are two cars in front of the door.",
+  "b": "A1"
+ },
+ {
+  "q": "In de straat rijden veel ___ (taxi).",
+  "n": "taxi",
+  "t": "pl",
+  "e": "Lots of taxis drive along the street.",
+  "b": "A2"
+ },
+ {
+  "q": "In de crèche slapen drie ___ (baby).",
+  "n": "baby",
+  "t": "pl",
+  "e": "Three babies are sleeping at the nursery.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn ___ (oma) wonen allebei in Groningen.",
+  "n": "oma",
+  "t": "pl",
+  "e": "My grandmas both live in Groningen.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb nog twee ___ (opa).",
+  "n": "opa",
+  "t": "pl",
+  "e": "I still have two grandpas.",
+  "b": "A2"
+ },
+ {
+  "q": "We bestellen vier ___ (pizza).",
+  "n": "pizza",
+  "t": "pl",
+  "e": "We're ordering four pizzas.",
+  "b": "A2"
+ },
+ {
+  "q": "In de keuken staan twee ___ (radio).",
+  "n": "radio",
+  "t": "pl",
+  "e": "There are two radios in the kitchen.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn ___ (collega) zijn heel aardig.",
+  "n": "collega",
+  "t": "pl",
+  "e": "My colleagues are very nice.",
+  "b": "A2"
+ },
+ {
+  "q": "Op zijn telefoon staan veel ___ (video).",
+  "n": "video",
+  "t": "pl",
+  "e": "There are lots of videos on his phone.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb alleen ___ (euro) in mijn portemonnee.",
+  "n": "euro",
+  "t": "pl",
+  "e": "I only have euros in my purse.",
+  "b": "B1"
+ },
+ {
+  "q": "Ze heeft drie ___ (camera).",
+  "n": "camera",
+  "t": "pl",
+  "e": "She has three cameras.",
+  "b": "A2"
+ },
+ {
+  "q": "Ze heeft twee ___ (agenda), voor werk en thuis.",
+  "n": "agenda",
+  "t": "pl",
+  "e": "She has two diaries, for work and home.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik lees twee ___ (pagina) per avond.",
+  "n": "pagina",
+  "t": "pl",
+  "e": "I read two pages a night.",
+  "b": "B1"
+ },
+ {
+  "q": "Er zijn veel ___ (straat) in Amsterdam.",
+  "n": "straat",
+  "t": "pl",
+  "e": "There are many streets in Amsterdam.",
+  "b": "A1"
+ },
+ {
+  "q": "De ___ (jaar) gaan snel.",
+  "n": "jaar",
+  "t": "pl",
+  "e": "The years go quickly.",
+  "b": "A1"
+ },
+ {
+  "q": "Bij de dokter gaan de ___ (uur) langzaam voorbij.",
+  "n": "uur",
+  "t": "pl",
+  "e": "At the doctor's the hours pass slowly.",
+  "b": "A1"
+ },
+ {
+  "q": "Over twee ___ (week) is het kerst.",
+  "n": "week",
+  "t": "pl",
+  "e": "In two weeks it's Christmas.",
+  "b": "A1"
+ },
+ {
+  "q": "In de haven liggen veel ___ (boot).",
+  "n": "boot",
+  "t": "pl",
+  "e": "There are lots of boats in the harbour.",
+  "b": "A2"
+ },
+ {
+  "q": "Er zijn hier veel goede ___ (school).",
+  "n": "school",
+  "t": "pl",
+  "e": "There are many good schools here.",
+  "b": "A1"
+ },
+ {
+  "q": "De ___ (muur) zijn wit.",
+  "n": "muur",
+  "t": "pl",
+  "e": "The walls are white.",
+  "b": "A2"
+ },
+ {
+  "q": "Het huis heeft grote ___ (raam).",
+  "n": "raam",
+  "t": "pl",
+  "e": "The house has big windows.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik vergeet altijd ___ (naam).",
+  "n": "naam",
+  "t": "pl",
+  "e": "I always forget names.",
+  "b": "A1"
+ },
+ {
+  "q": "Hij heeft grote ___ (probleem).",
+  "n": "probleem",
+  "t": "pl",
+  "e": "He has big problems.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb twee ___ (idee).",
+  "n": "idee",
+  "t": "pl",
+  "e": "I have two ideas.",
+  "b": "A1"
+ },
+ {
+  "q": "Deze winkel verkoopt veel ___ (kaas).",
+  "n": "kaas",
+  "t": "pl",
+  "e": "This shop sells lots of cheeses.",
+  "b": "B1"
+ },
+ {
+  "q": "Wij hebben twee ___ (bank) in de kamer.",
+  "n": "bank",
+  "t": "pl",
+  "e": "We have two sofas in the room.",
+  "b": "A2"
+ },
+ {
+  "q": "Hoeveel ___ (minuut) duurt het?",
+  "n": "minuut",
+  "t": "pl",
+  "e": "How many minutes does it take?",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb lange ___ (been).",
+  "n": "been",
+  "t": "pl",
+  "e": "I have long legs.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb alle ___ (zee) van Europa gezien.",
+  "n": "zee",
+  "t": "pl",
+  "e": "I've seen all the seas of Europe.",
+  "b": "A2"
+ },
+ {
+  "q": "In het bos leven veel ___ (dier).",
+  "n": "dier",
+  "t": "pl",
+  "e": "Lots of animals live in the woods.",
+  "b": "A2"
+ },
+ {
+  "q": "Er staan veel ___ (gebouw) in het centrum.",
+  "n": "gebouw",
+  "t": "pl",
+  "e": "There are many buildings in the centre.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik neem twee ___ (les) per week.",
+  "n": "les",
+  "t": "pl",
+  "e": "I take two lessons a week.",
+  "b": "A2"
+ },
+ {
+  "q": "Er rijden hier veel ___ (bus).",
+  "n": "bus",
+  "t": "pl",
+  "e": "Lots of buses run here.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb twee ___ (tas) bij me.",
+  "n": "tas",
+  "t": "pl",
+  "e": "I've got two bags with me.",
+  "b": "A2"
+ },
+ {
+  "q": "Waar zijn de ___ (jas) van de kinderen?",
+  "n": "jas",
+  "t": "pl",
+  "e": "Where are the children's coats?",
+  "b": "A2"
+ },
+ {
+  "q": "Ik koop vier ___ (fles) water.",
+  "n": "fles",
+  "t": "pl",
+  "e": "I'm buying four bottles of water.",
+  "b": "A2"
+ },
+ {
+  "q": "In de la liggen de ___ (mes).",
+  "n": "mes",
+  "t": "pl",
+  "e": "The knives are in the drawer.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb nieuwe ___ (sok) nodig.",
+  "n": "sok",
+  "t": "pl",
+  "e": "I need new socks.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn ___ (bril) liggen overal.",
+  "n": "bril",
+  "t": "pl",
+  "e": "My pairs of glasses are everywhere.",
+  "b": "B1"
+ },
+ {
+  "q": "Heb je ___ (pen) voor de les?",
+  "n": "pen",
+  "t": "pl",
+  "e": "Do you have pens for the lesson?",
+  "b": "B1"
+ },
+ {
+  "q": "Wij hebben twee ___ (kat) en een hond.",
+  "n": "kat",
+  "t": "pl",
+  "e": "We have two cats and a dog.",
+  "b": "A1"
+ },
+ {
+  "q": "Er zijn veel ___ (vis) in de rivier.",
+  "n": "vis",
+  "t": "pl",
+  "e": "There are lots of fish in the river.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (ster) zijn mooi vannacht.",
+  "n": "ster",
+  "t": "pl",
+  "e": "The stars are beautiful tonight.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (trap) in dit huis zijn steil.",
+  "n": "trap",
+  "t": "pl",
+  "e": "The stairs in this house are steep.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (lift) zijn kapot.",
+  "n": "lift",
+  "t": "pl",
+  "e": "The lifts are broken.",
+  "b": "A2"
+ },
+ {
+  "q": "Het hotel heeft drie ___ (zwembad).",
+  "n": "zwembad",
+  "t": "pl",
+  "e": "The hotel has three pools.",
+  "b": "B1"
+ },
+ {
+  "q": "Hij geeft me drie ___ (kus).",
+  "n": "kus",
+  "t": "pl",
+  "e": "He gives me three kisses.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn dochter speelt met haar ___ (pop).",
+  "n": "pop",
+  "t": "pl",
+  "e": "My daughter is playing with her dolls.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb twee ___ (vriendin) uit Peru.",
+  "n": "vriendin",
+  "t": "pl",
+  "e": "I have two friends from Peru.",
+  "b": "A1"
+ },
+ {
+  "q": "De ___ (koningin) van vroeger waren streng.",
+  "n": "koningin",
+  "t": "pl",
+  "e": "The queens of the past were strict.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb twee ___ (zin) geschreven.",
+  "n": "zin",
+  "t": "pl",
+  "e": "I've written two sentences.",
+  "b": "A2"
+ },
+ {
+  "q": "Er staan twee ___ (pan) op het vuur.",
+  "n": "pan",
+  "t": "pl",
+  "e": "There are two pans on the stove.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (rug) van de spelers doen pijn.",
+  "n": "rug",
+  "t": "pl",
+  "e": "The players' backs hurt.",
+  "b": "A2"
+ },
+ {
+  "q": "Hoeveel ___ (pil) moet je nemen?",
+  "n": "pil",
+  "t": "pl",
+  "e": "How many pills do you have to take?",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb twee ___ (zus).",
+  "n": "zus",
+  "t": "pl",
+  "e": "I have two sisters.",
+  "b": "A2"
+ },
+ {
+  "q": "We hebben vier ___ (plan).",
+  "n": "plan",
+  "t": "pl",
+  "e": "We have four plans.",
+  "b": "A2"
+ },
+ {
+  "q": "Er zijn veel ___ (spel) voor kinderen.",
+  "n": "spel",
+  "t": "pl",
+  "e": "There are lots of games for children.",
+  "b": "A2"
+ },
+ {
+  "q": "Hoeveel ___ (cel) heeft de gevangenis?",
+  "n": "cel",
+  "t": "pl",
+  "e": "How many cells does the prison have?",
+  "b": "A2"
+ },
+ {
+  "q": "In de tuin lopen twee ___ (kip).",
+  "n": "kip",
+  "t": "pl",
+  "e": "Two chickens are walking around the garden.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb twee ___ (brief) van hem.",
+  "n": "brief",
+  "t": "pl",
+  "e": "I have two letters from him.",
+  "b": "A2"
+ },
+ {
+  "q": "Hoeveel ___ (huis) staan er te koop?",
+  "n": "huis",
+  "t": "pl",
+  "e": "How many houses are for sale?",
+  "b": "A1"
+ },
+ {
+  "q": "We maken twee ___ (reis) per jaar.",
+  "n": "reis",
+  "t": "pl",
+  "e": "We take two trips a year.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (prijs) gaan omhoog.",
+  "n": "prijs",
+  "t": "pl",
+  "e": "Prices are going up.",
+  "b": "A2"
+ },
+ {
+  "q": "In de kelder zitten ___ (muis).",
+  "n": "muis",
+  "t": "pl",
+  "e": "There are mice in the cellar.",
+  "b": "B1"
+ },
+ {
+  "q": "Ze heeft drie paar ___ (laars).",
+  "n": "laars",
+  "t": "pl",
+  "e": "She has three pairs of boots.",
+  "b": "B1"
+ },
+ {
+  "q": "In het bos wonen ___ (wolf).",
+  "n": "wolf",
+  "t": "pl",
+  "e": "Wolves live in the forest.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (dief) zijn gepakt.",
+  "n": "dief",
+  "t": "pl",
+  "e": "The thieves have been caught.",
+  "b": "A2"
+ },
+ {
+  "q": "Op zee zijn hoge ___ (golf).",
+  "n": "golf",
+  "t": "pl",
+  "e": "There are high waves at sea.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb drie ___ (neef).",
+  "n": "neef",
+  "t": "pl",
+  "e": "I have three cousins.",
+  "b": "A2"
+ },
+ {
+  "q": "We hebben twee ___ (bal) voor de kinderen.",
+  "n": "bal",
+  "t": "pl",
+  "e": "We have two balls for the children.",
+  "b": "B1"
+ },
+ {
+  "q": "In Den Haag staan twee ___ (paleis).",
+  "n": "paleis",
+  "t": "pl",
+  "e": "There are two palaces in The Hague.",
+  "b": "B1"
+ },
+ {
+  "q": "Zij heeft drie ___ (kind).",
+  "n": "kind",
+  "t": "pl",
+  "e": "She has three children.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik koop een doos ___ (ei).",
+  "n": "ei",
+  "t": "pl",
+  "e": "I'm buying a box of eggs.",
+  "b": "A2"
+ },
+ {
+  "q": "We zingen samen ___ (lied).",
+  "n": "lied",
+  "t": "pl",
+  "e": "We sing songs together.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (blad) vallen van de bomen.",
+  "n": "blad",
+  "t": "pl",
+  "e": "The leaves are falling from the trees.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb veel ___ (stad) gezien.",
+  "n": "stad",
+  "t": "pl",
+  "e": "I've seen many cities.",
+  "b": "A1"
+ },
+ {
+  "q": "Er liggen grote ___ (schip) in de haven.",
+  "n": "schip",
+  "t": "pl",
+  "e": "There are big ships in the harbour.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik werk drie ___ (dag) per week.",
+  "n": "dag",
+  "t": "pl",
+  "e": "I work three days a week.",
+  "b": "A1"
+ },
+ {
+  "q": "De ___ (weg) zijn glad door het ijs.",
+  "n": "weg",
+  "t": "pl",
+  "e": "The roads are slippery from the ice.",
+  "b": "A1"
+ },
+ {
+  "q": "In het bos zijn veel ___ (pad).",
+  "n": "pad",
+  "t": "pl",
+  "e": "There are many paths in the woods.",
+  "b": "B1"
+ },
+ {
+  "q": "De ___ (dak) zijn wit van de sneeuw.",
+  "n": "dak",
+  "t": "pl",
+  "e": "The roofs are white with snow.",
+  "b": "A2"
+ },
+ {
+  "q": "Er zitten ___ (gat) in mijn sok.",
+  "n": "gat",
+  "t": "pl",
+  "e": "There are holes in my sock.",
+  "b": "A2"
+ },
+ {
+  "q": "Pak twee ___ (glas) uit de kast.",
+  "n": "glas",
+  "t": "pl",
+  "e": "Take two glasses out of the cupboard.",
+  "b": "A2"
+ },
+ {
+  "q": "De club heeft honderd ___ (lid).",
+  "n": "lid",
+  "t": "pl",
+  "e": "The club has a hundred members.",
+  "b": "A2"
+ },
+ {
+  "q": "Er zitten twee ___ (slot) op de deur.",
+  "n": "slot",
+  "t": "pl",
+  "e": "There are two locks on the door.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn ___ (oog) zijn moe.",
+  "n": "oog",
+  "t": "pl",
+  "e": "My eyes are tired.",
+  "b": "A2"
+ },
+ {
+  "q": "Je hebt twee ___ (oor).",
+  "n": "oor",
+  "t": "pl",
+  "e": "You have two ears.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (vrouw) praten in de keuken.",
+  "n": "vrouw",
+  "t": "pl",
+  "e": "The women are talking in the kitchen.",
+  "b": "A1"
+ },
+ {
+  "q": "Hoeveel ___ (man) werken hier?",
+  "n": "man",
+  "t": "pl",
+  "e": "How many men work here?",
+  "b": "A1"
+ },
+ {
+  "q": "Er wonen veel ___ (mens) in de stad.",
+  "n": "mens",
+  "t": "pl",
+  "e": "Lots of people live in the city.",
+  "b": "A1"
+ },
+ {
+  "q": "De ___ (student) zitten in de bibliotheek.",
+  "n": "student",
+  "t": "pl",
+  "e": "The students are in the library.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (leraar) hebben vakantie.",
+  "n": "leraar",
+  "t": "pl",
+  "e": "The teachers are on holiday.",
+  "b": "A2",
+  "x": [
+   "leraars"
+  ]
+ },
+ {
+  "q": "Ik heb twee ___ (vakantie) per jaar.",
+  "n": "vakantie",
+  "t": "pl",
+  "e": "I have two holidays a year.",
+  "b": "A2"
+ },
+ {
+  "q": "Op straat lopen veel ___ (toerist).",
+  "n": "toerist",
+  "t": "pl",
+  "e": "Lots of tourists are walking in the street.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb twee ___ (afspraak) vandaag.",
+  "n": "afspraak",
+  "t": "pl",
+  "e": "I have two appointments today.",
+  "b": "A2"
+ },
+ {
+  "q": "Op maandag heb ik drie ___ (vergadering).",
+  "n": "vergadering",
+  "t": "pl",
+  "e": "On Monday I have three meetings.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij maakt mooie ___ (tekening).",
+  "n": "tekening",
+  "t": "pl",
+  "e": "He makes beautiful drawings.",
+  "b": "B1"
+ },
+ {
+  "q": "Doe deze ___ (oefening) voor morgen.",
+  "n": "oefening",
+  "t": "pl",
+  "e": "Do these exercises for tomorrow.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb twee ___ (rekening) betaald.",
+  "n": "rekening",
+  "t": "pl",
+  "e": "I've paid two bills.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben drie ___ (uitnodiging) gekregen.",
+  "n": "uitnodiging",
+  "t": "pl",
+  "e": "We've received three invitations.",
+  "b": "B1"
+ },
+ {
+  "q": "De ___ (leerling) zijn in de gymzaal.",
+  "n": "leerling",
+  "t": "pl",
+  "e": "The pupils are in the gym.",
+  "b": "B1"
+ },
+ {
+  "q": "Hoeveel ___ (verdieping) heeft het gebouw?",
+  "n": "verdieping",
+  "t": "pl",
+  "e": "How many floors does the building have?",
+  "b": "B1"
+ },
+ {
+  "q": "We hebben goede ___ (ervaring) met dit hotel.",
+  "n": "ervaring",
+  "t": "pl",
+  "e": "We've had good experiences with this hotel.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (koning) wonen in paleizen.",
+  "n": "koning",
+  "t": "pl",
+  "e": "Kings live in palaces.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb drie ___ (geschenk) gekregen.",
+  "n": "geschenk",
+  "t": "pl",
+  "e": "I got three gifts.",
+  "b": "A2"
+ },
+ {
+  "q": "Hoeveel ___ (bureau) staan er op kantoor?",
+  "n": "bureau",
+  "t": "pl",
+  "e": "How many desks are there in the office?",
+  "b": "A2"
+ },
+ {
+  "q": "Er zijn hier veel ___ (café).",
+  "n": "café",
+  "t": "pl",
+  "e": "There are lots of cafés here.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn twee ___ (horloge) zijn stuk.",
+  "n": "horloge",
+  "t": "pl",
+  "e": "My two watches are broken.",
+  "b": "A2"
+ },
+ {
+  "q": "Er zitten ___ (konijn) onder de struiken.",
+  "n": "konijn",
+  "t": "pl",
+  "e": "There are rabbits under the bushes.",
+  "b": "B1"
+ },
+ {
+  "q": "Hij koopt twee ___ (shirt).",
+  "n": "shirt",
+  "t": "pl",
+  "e": "He's buying two shirts.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik draag geen ___ (jurk).",
+  "n": "jurk",
+  "t": "pl",
+  "e": "I don't wear dresses.",
+  "b": "A2"
+ },
+ {
+  "q": "We kopen twee ___ (appel).",
+  "n": "appel",
+  "t": "pl",
+  "e": "We're buying two apples.",
+  "b": "B1"
+ },
+ {
+  "q": "In de wei staan veel ___ (koe).",
+  "n": "koe",
+  "t": "pl",
+  "e": "There are lots of cows in the meadow.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn kinderen hebben drie ___ (konijn).",
+  "n": "konijn",
+  "t": "pl",
+  "e": "My children have three rabbits.",
+  "b": "B1"
+ },
+ {
+  "q": "In de kamer staan twee ___ (lamp).",
+  "n": "lamp",
+  "t": "pl",
+  "e": "There are two lamps in the room.",
+  "b": "B1"
+ },
+ {
+  "q": "Op het bed liggen twee ___ (deken).",
+  "n": "deken",
+  "t": "pl",
+  "e": "There are two blankets on the bed.",
+  "b": "B1"
+ },
+ {
+  "q": "Neem twee ___ (handdoek) mee naar het strand.",
+  "n": "handdoek",
+  "t": "pl",
+  "e": "Take two towels to the beach.",
+  "b": "B1"
+ },
+ {
+  "q": "In de gang hangen twee ___ (spiegel).",
+  "n": "spiegel",
+  "t": "pl",
+  "e": "There are two mirrors in the hall.",
+  "b": "B1"
+ },
+ {
+  "q": "Er staan veel ___ (kast) in de kelder.",
+  "n": "kast",
+  "t": "pl",
+  "e": "There are lots of cupboards in the cellar.",
+  "b": "A2"
+ },
+ {
+  "q": "We hebben twee ___ (koelkast).",
+  "n": "koelkast",
+  "t": "pl",
+  "e": "We have two fridges.",
+  "b": "B1"
+ },
+ {
+  "q": "De ___ (dorp) liggen ver uit elkaar.",
+  "n": "dorp",
+  "t": "pl",
+  "e": "The villages are far apart.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (land) van Europa zijn klein.",
+  "n": "land",
+  "t": "pl",
+  "e": "The countries of Europe are small.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (park) in Utrecht zijn mooi.",
+  "n": "park",
+  "t": "pl",
+  "e": "The parks in Utrecht are lovely.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb drie ___ (bericht) van je.",
+  "n": "bericht",
+  "t": "pl",
+  "e": "I have three messages from you.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (verhaal) van mijn opa zijn spannend.",
+  "n": "verhaal",
+  "t": "pl",
+  "e": "My grandpa's stories are exciting.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb twee ___ (examen) deze week.",
+  "n": "examen",
+  "t": "pl",
+  "e": "I have two exams this week.",
+  "b": "B1"
+ },
+ {
+  "q": "We hebben vier ___ (feest) in juni.",
+  "n": "feest",
+  "t": "pl",
+  "e": "We have four parties in June.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (nacht) zijn kort in de zomer.",
+  "n": "nacht",
+  "t": "pl",
+  "e": "The nights are short in summer.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (avond) zijn lang in de winter.",
+  "n": "avond",
+  "t": "pl",
+  "e": "The evenings are long in winter.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn ___ (vriend) komen zaterdag.",
+  "n": "vriend",
+  "t": "pl",
+  "e": "My friends are coming on Saturday.",
+  "b": "A1"
+ },
+ {
+  "q": "Er staan twee ___ (boom) voor het huis.",
+  "n": "boom",
+  "t": "pl",
+  "e": "There are two trees in front of the house.",
+  "b": "A2"
+ },
+ {
+  "q": "Vandaag hebben we twee ___ (soep) op het menu.",
+  "n": "soep",
+  "t": "pl",
+  "e": "Today we have two soups on the menu.",
+  "b": "B1"
+ },
+ {
+  "q": "De ___ (wedstrijd) zijn op zaterdag.",
+  "n": "wedstrijd",
+  "t": "pl",
+  "e": "The matches are on Saturday.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik spreek drie ___ (taal).",
+  "n": "taal",
+  "t": "pl",
+  "e": "I speak three languages.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (kleur) van de herfst zijn mooi.",
+  "n": "kleur",
+  "t": "pl",
+  "e": "The colours of autumn are beautiful.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (rivier) in Nederland zijn breed.",
+  "n": "rivier",
+  "t": "pl",
+  "e": "The rivers in the Netherlands are wide.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (eiland) in het noorden zijn mooi.",
+  "n": "eiland",
+  "t": "pl",
+  "e": "The islands in the north are beautiful.",
+  "b": "A2"
+ },
+ {
+  "q": "Er vliegen twee ___ (vliegtuig) over.",
+  "n": "vliegtuig",
+  "t": "pl",
+  "e": "Two planes are flying over.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb twee ___ (kopje) koffie gehad.",
+  "n": "kopje",
+  "t": "pl",
+  "e": "I've had two cups of coffee.",
+  "b": "B1"
+ },
+ {
+  "q": "De ___ (week) voor de vakantie zijn druk.",
+  "n": "week",
+  "t": "pl",
+  "e": "The weeks before the holiday are busy.",
+  "b": "A1"
+ },
+ {
+  "q": "In mijn klas zitten twintig ___ (kind).",
+  "n": "kind",
+  "t": "pl",
+  "e": "There are twenty children in my class.",
+  "b": "A1"
+ },
+ {
+  "q": "De ___ (hond) blaffen de hele nacht.",
+  "n": "hond",
+  "t": "pl",
+  "e": "The dogs bark all night.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb drie ___ (broek) gekocht.",
+  "n": "broek",
+  "t": "pl",
+  "e": "I bought three pairs of trousers.",
+  "b": "A2"
+ },
+ {
+  "q": "Hoeveel ___ (eend) zwemmen er in de vijver?",
+  "n": "eend",
+  "t": "pl",
+  "e": "How many ducks are swimming in the pond?",
+  "b": "B2"
+ },
+ {
+  "q": "Ik koop twee ___ (kip) voor het eten.",
+  "n": "kip",
+  "t": "pl",
+  "e": "I'm buying two chickens for dinner.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (wolk) zijn heel donker.",
+  "n": "wolk",
+  "t": "pl",
+  "e": "The clouds are very dark.",
+  "b": "B1"
+ },
+ {
+  "q": "Op Koningsdag hangen overal ___ (vlag).",
+  "n": "vlag",
+  "t": "pl",
+  "e": "On King's Day there are flags everywhere.",
+  "b": "B1"
+ },
+ {
+  "q": "Waar zijn mijn ___ (handschoen)?",
+  "n": "handschoen",
+  "t": "pl",
+  "e": "Where are my gloves?",
+  "b": "B1"
+ },
+ {
+  "q": "In de stad zijn twee ___ (markt).",
+  "n": "markt",
+  "t": "pl",
+  "e": "There are two markets in town.",
+  "b": "B1"
+ },
+ {
+  "q": "Op zondag zijn de ___ (bibliotheek) dicht.",
+  "n": "bibliotheek",
+  "t": "pl",
+  "e": "On Sundays the libraries are closed.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb twee ___ (trui) in mijn tas.",
+  "n": "trui",
+  "t": "pl",
+  "e": "I have two jumpers in my bag.",
+  "b": "B2"
+ },
+ {
+  "q": "De ___ (haven) van Rotterdam zijn groot.",
+  "n": "haven",
+  "t": "pl",
+  "e": "The ports of Rotterdam are big.",
+  "b": "B1"
+ },
+ {
+  "q": "De ___ (moeder) wachten bij school.",
+  "n": "moeder",
+  "t": "pl",
+  "e": "The mothers are waiting at school.",
+  "b": "A1"
+ },
+ {
+  "q": "De ___ (vader) staan langs het veld.",
+  "n": "vader",
+  "t": "pl",
+  "e": "The fathers are standing along the pitch.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn broer heeft twee ___ (baan).",
+  "n": "baan",
+  "t": "pl",
+  "e": "My brother has two jobs.",
+  "b": "A2"
+ },
+ {
+  "q": "Er zijn veel ___ (fabriek) in deze stad.",
+  "n": "fabriek",
+  "t": "pl",
+  "e": "There are lots of factories in this town.",
+  "b": "B1"
+ },
+ {
+  "q": "De ___ (tunnel) onder de rivier zijn lang.",
+  "n": "tunnel",
+  "t": "pl",
+  "e": "The tunnels under the river are long.",
+  "b": "B1"
+ },
+ {
+  "q": "Hoeveel ___ (seizoen) heeft de serie?",
+  "n": "seizoen",
+  "t": "pl",
+  "e": "How many seasons does the series have?",
+  "b": "B1"
+ },
+ {
+  "q": "Het station heeft twee ___ (ingang).",
+  "n": "ingang",
+  "t": "pl",
+  "e": "The station has two entrances.",
+  "b": "B1"
+ },
+ {
+  "q": "De ___ (heuvel) in Limburg zijn mooi.",
+  "n": "heuvel",
+  "t": "pl",
+  "e": "The hills in Limburg are beautiful.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik schrijf twee ___ (tekst) per week.",
+  "n": "tekst",
+  "t": "pl",
+  "e": "I write two texts a week.",
+  "b": "B1"
+ },
+ {
+  "q": "Hij heeft drie ___ (dier) thuis.",
+  "n": "dier",
+  "t": "pl",
+  "e": "He has three animals at home.",
+  "b": "A1"
+ },
+ {
+  "q": "Hoeveel ___ (gast) komen er vanavond?",
+  "n": "gast",
+  "t": "pl",
+  "e": "How many guests are coming tonight?",
+  "b": "A2"
+ },
+ {
+  "q": "Er zijn twee ___ (station) in onze stad.",
+  "n": "station",
+  "t": "pl",
+  "e": "There are two stations in our town.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn ___ (buur) zijn op vakantie.",
+  "n": "buur",
+  "t": "pl",
+  "e": "My neighbours are on holiday.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (dame) gaan eerst.",
+  "n": "dame",
+  "t": "pl",
+  "e": "Ladies first.",
+  "b": "A2"
+ }
+]

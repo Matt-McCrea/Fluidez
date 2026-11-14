@@ -1,0 +1,955 @@
+[
+ {
+  "q": "Er is ___ melk meer.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "There's no more milk.",
+  "w": "geen ... meer: no more, with a noun.",
+  "wn": "geen ... meer bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A1"
+ },
+ {
+  "q": "Ik rook ___ meer.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I don't smoke any more.",
+  "w": "niet meer: not any more, with a verb, adjective or adverb.",
+  "wn": "niet meer: vroeger wel, nu niet.",
+  "t": "meer",
+  "b": "A1"
+ },
+ {
+  "q": "Hij is ___ (not yet) thuis.",
+  "a": "nog niet",
+  "o": [
+   "nog niet",
+   "nog geen",
+   "niet meer"
+  ],
+  "e": "He isn't home yet.",
+  "w": "nog niet: not yet, with a verb, adjective or adverb.",
+  "wn": "nog niet: het komt nog.",
+  "t": "meer",
+  "b": "A1"
+ },
+ {
+  "q": "Wij hebben ___ (not yet) huis.",
+  "a": "nog geen",
+  "o": [
+   "nog geen",
+   "nog niet",
+   "geen meer"
+  ],
+  "e": "We don't have a house yet.",
+  "w": "nog geen: not yet, with a noun that has no article.",
+  "wn": "nog geen bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "De bus is ___ (still not) gekomen.",
+  "a": "nog steeds niet",
+  "o": [
+   "nog steeds niet",
+   "nog steeds geen",
+   "niet meer"
+  ],
+  "e": "The bus still hasn't come.",
+  "w": "nog steeds niet: still not, with a verb or adjective.",
+  "wn": "nog steeds niet: het duurt lang.",
+  "t": "meer",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb ___ geld meer.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "I have no money left.",
+  "w": "geen ... meer: no more, with a noun.",
+  "wn": "geen ... meer bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A1"
+ },
+ {
+  "q": "Zij woont hier ___ meer.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "She doesn't live here any more.",
+  "w": "niet meer: not any more, with a verb, adjective or adverb.",
+  "wn": "niet meer: vroeger wel, nu niet.",
+  "t": "meer",
+  "b": "A1"
+ },
+ {
+  "q": "Het regent ___ (any more).",
+  "a": "niet meer",
+  "o": [
+   "niet meer",
+   "geen meer",
+   "nog niet"
+  ],
+  "e": "It isn't raining any more.",
+  "w": "niet meer: not any more, with a verb, adjective or adverb.",
+  "wn": "niet meer: vroeger wel, nu niet.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb ___ (not yet) gegeten.",
+  "a": "nog niet",
+  "o": [
+   "nog niet",
+   "nog geen",
+   "niet meer"
+  ],
+  "e": "I haven't eaten yet.",
+  "w": "nog niet: not yet, with a verb, adjective or adverb.",
+  "wn": "nog niet: het komt nog.",
+  "t": "meer",
+  "b": "A1"
+ },
+ {
+  "q": "Er zijn ___ (not yet) kaartjes.",
+  "a": "nog geen",
+  "o": [
+   "nog geen",
+   "nog niet",
+   "geen meer"
+  ],
+  "e": "There are no tickets yet.",
+  "w": "nog geen: not yet, with a noun that has no article.",
+  "wn": "nog geen bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Hij werkt daar ___ meer.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "He doesn't work there any more.",
+  "w": "niet meer: not any more, with a verb, adjective or adverb.",
+  "wn": "niet meer: vroeger wel, nu niet.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "We hebben ___ brood meer.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "We have no bread left.",
+  "w": "geen ... meer: no more, with a noun.",
+  "wn": "geen ... meer bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ben ___ (not yet) klaar.",
+  "a": "nog niet",
+  "o": [
+   "nog niet",
+   "nog geen",
+   "niet meer"
+  ],
+  "e": "I'm not ready yet.",
+  "w": "nog niet: not yet, with a verb, adjective or adverb.",
+  "wn": "nog niet: het komt nog.",
+  "t": "meer",
+  "b": "A1"
+ },
+ {
+  "q": "Ze heeft ___ (still not) baan.",
+  "a": "nog steeds geen",
+  "o": [
+   "nog steeds geen",
+   "nog steeds niet",
+   "geen meer"
+  ],
+  "e": "She still has no job.",
+  "w": "nog steeds geen: still no, with a noun.",
+  "wn": "nog steeds geen bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "B1"
+ },
+ {
+  "q": "Er rijden ___ treinen meer.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "There are no more trains running.",
+  "w": "geen ... meer: no more, with a noun.",
+  "wn": "geen ... meer bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn opa kan ___ meer lopen.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "My grandad can't walk any more.",
+  "w": "niet meer: not any more, with a verb, adjective or adverb.",
+  "wn": "niet meer: vroeger wel, nu niet.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ken hem ___ (not yet).",
+  "a": "nog niet",
+  "o": [
+   "nog niet",
+   "nog geen",
+   "niet meer"
+  ],
+  "e": "I don't know him yet.",
+  "w": "nog niet: not yet, with a verb, adjective or adverb.",
+  "wn": "nog niet: het komt nog.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Zij heeft ___ (not yet) rijbewijs.",
+  "a": "nog geen",
+  "o": [
+   "nog geen",
+   "nog niet",
+   "geen meer"
+  ],
+  "e": "She doesn't have a driving licence yet.",
+  "w": "nog geen: not yet, with a noun that has no article.",
+  "wn": "nog geen bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Hij begrijpt het ___ (still not).",
+  "a": "nog steeds niet",
+  "o": [
+   "nog steeds niet",
+   "nog steeds geen",
+   "niet meer"
+  ],
+  "e": "He still doesn't understand it.",
+  "w": "nog steeds niet: still not, with a verb or adjective.",
+  "wn": "nog steeds niet: het duurt lang.",
+  "t": "meer",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb ___ zin meer.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "I don't feel like it any more.",
+  "w": "geen ... meer: no more, with a noun.",
+  "wn": "geen ... meer bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Dit is ___ meer nodig.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "This isn't needed any more.",
+  "w": "niet meer: not any more, with a verb, adjective or adverb.",
+  "wn": "niet meer: vroeger wel, nu niet.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "We zijn ___ (not yet) in Parijs geweest.",
+  "a": "nog niet",
+  "o": [
+   "nog niet",
+   "nog geen",
+   "niet meer"
+  ],
+  "e": "We haven't been to Paris yet.",
+  "w": "nog niet: not yet, with a verb, adjective or adverb.",
+  "wn": "nog niet: het komt nog.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Er is ___ (not yet) nieuws.",
+  "a": "nog geen",
+  "o": [
+   "nog geen",
+   "nog niet",
+   "geen meer"
+  ],
+  "e": "There's no news yet.",
+  "w": "nog geen: not yet, with a noun that has no article.",
+  "wn": "nog geen bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "De winkel is ___ (any more) open.",
+  "a": "niet meer",
+  "o": [
+   "niet meer",
+   "geen meer",
+   "nog niet"
+  ],
+  "e": "The shop isn't open any more.",
+  "w": "niet meer: not any more, with a verb, adjective or adverb.",
+  "wn": "niet meer: vroeger wel, nu niet.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb ___ (still not) antwoord gekregen.",
+  "a": "nog steeds geen",
+  "o": [
+   "nog steeds geen",
+   "nog steeds niet",
+   "geen meer"
+  ],
+  "e": "I still haven't had an answer.",
+  "w": "nog steeds geen: still no, with a noun.",
+  "wn": "nog steeds geen bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "B1"
+ },
+ {
+  "q": "Hij heeft ___ werk meer.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "He has no work any more.",
+  "w": "geen ... meer: no more, with a noun.",
+  "wn": "geen ... meer bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Ik voel me ___ (any more) ziek.",
+  "a": "niet meer",
+  "o": [
+   "niet meer",
+   "geen meer",
+   "nog niet"
+  ],
+  "e": "I don't feel ill any more.",
+  "w": "niet meer: not any more, with a verb, adjective or adverb.",
+  "wn": "niet meer: vroeger wel, nu niet.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Het water is ___ (not yet) warm.",
+  "a": "nog niet",
+  "o": [
+   "nog niet",
+   "nog geen",
+   "niet meer"
+  ],
+  "e": "The water isn't warm yet.",
+  "w": "nog niet: not yet, with a verb, adjective or adverb.",
+  "wn": "nog niet: het komt nog.",
+  "t": "meer",
+  "b": "A1"
+ },
+ {
+  "q": "We hebben ___ (not yet) kinderen.",
+  "a": "nog geen",
+  "o": [
+   "nog geen",
+   "nog niet",
+   "geen meer"
+  ],
+  "e": "We don't have children yet.",
+  "w": "nog geen: not yet, with a noun that has no article.",
+  "wn": "nog geen bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Ze heeft de brief ___ (still not) gelezen.",
+  "a": "nog steeds niet",
+  "o": [
+   "nog steeds niet",
+   "nog steeds geen",
+   "niet meer"
+  ],
+  "e": "She still hasn't read the letter.",
+  "w": "nog steeds niet: still not, with a verb or adjective.",
+  "wn": "nog steeds niet: het duurt lang.",
+  "t": "meer",
+  "b": "B1"
+ },
+ {
+  "q": "Na acht uur drink ik ___ koffie meer.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "After eight I don't drink coffee any more.",
+  "w": "geen ... meer: no more, with a noun.",
+  "wn": "geen ... meer bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Ik weet het ___ meer.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I don't remember any more.",
+  "w": "niet meer: not any more, with a verb, adjective or adverb.",
+  "wn": "niet meer: vroeger wel, nu niet.",
+  "t": "meer",
+  "b": "A1"
+ },
+ {
+  "q": "De film is ___ (not yet) begonnen.",
+  "a": "nog niet",
+  "o": [
+   "nog niet",
+   "nog geen",
+   "niet meer"
+  ],
+  "e": "The film hasn't started yet.",
+  "w": "nog niet: not yet, with a verb, adjective or adverb.",
+  "wn": "nog niet: het komt nog.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb ___ (not yet) plan.",
+  "a": "nog geen",
+  "o": [
+   "nog geen",
+   "nog niet",
+   "geen meer"
+  ],
+  "e": "I don't have a plan yet.",
+  "w": "nog geen: not yet, with a noun that has no article.",
+  "wn": "nog geen bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Hij is ___ (still not) beter.",
+  "a": "nog steeds niet",
+  "o": [
+   "nog steeds niet",
+   "nog steeds geen",
+   "niet meer"
+  ],
+  "e": "He still isn't better.",
+  "w": "nog steeds niet: still not, with a verb or adjective.",
+  "wn": "nog steeds niet: het duurt lang.",
+  "t": "meer",
+  "b": "B1"
+ },
+ {
+  "q": "Er zijn ___ stoelen meer vrij.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "There are no more free chairs.",
+  "w": "geen ... meer: no more, with a noun.",
+  "wn": "geen ... meer bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Zij zingt ___ meer.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "She doesn't sing any more.",
+  "w": "niet meer: not any more, with a verb, adjective or adverb.",
+  "wn": "niet meer: vroeger wel, nu niet.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb het boek ___ (not yet) uit.",
+  "a": "nog niet",
+  "o": [
+   "nog niet",
+   "nog geen",
+   "niet meer"
+  ],
+  "e": "I haven't finished the book yet.",
+  "w": "nog niet: not yet, with a verb, adjective or adverb.",
+  "wn": "nog niet: het komt nog.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Er is ___ (not yet) dokter.",
+  "a": "nog geen",
+  "o": [
+   "nog geen",
+   "nog niet",
+   "geen meer"
+  ],
+  "e": "There's no doctor yet.",
+  "w": "nog geen: not yet, with a noun that has no article.",
+  "wn": "nog geen bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "We wonen ___ (any more) in de stad.",
+  "a": "niet meer",
+  "o": [
+   "niet meer",
+   "geen meer",
+   "nog niet"
+  ],
+  "e": "We don't live in the city any more.",
+  "w": "niet meer: not any more, with a verb, adjective or adverb.",
+  "wn": "niet meer: vroeger wel, nu niet.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb ___ pijn meer.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "I'm not in pain any more.",
+  "w": "geen ... meer: no more, with a noun.",
+  "wn": "geen ... meer bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ga ___ meer naar die kapper.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I'm not going to that hairdresser any more.",
+  "w": "niet meer: not any more, with a verb, adjective or adverb.",
+  "wn": "niet meer: vroeger wel, nu niet.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn zoon kan ___ (not yet) lezen.",
+  "a": "nog niet",
+  "o": [
+   "nog niet",
+   "nog geen",
+   "niet meer"
+  ],
+  "e": "My son can't read yet.",
+  "w": "nog niet: not yet, with a verb, adjective or adverb.",
+  "wn": "nog niet: het komt nog.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben ___ (not yet) foto's gezien.",
+  "a": "nog geen",
+  "o": [
+   "nog geen",
+   "nog niet",
+   "geen meer"
+  ],
+  "e": "We haven't seen any photos yet.",
+  "w": "nog geen: not yet, with a noun that has no article.",
+  "wn": "nog geen bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "B1"
+ },
+ {
+  "q": "Het pakje is ___ (still not) aangekomen.",
+  "a": "nog steeds niet",
+  "o": [
+   "nog steeds niet",
+   "nog steeds geen",
+   "niet meer"
+  ],
+  "e": "The parcel still hasn't arrived.",
+  "w": "nog steeds niet: still not, with a verb or adjective.",
+  "wn": "nog steeds niet: het duurt lang.",
+  "t": "meer",
+  "b": "B1"
+ },
+ {
+  "q": "Dat is ___ probleem meer.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "That's no longer a problem.",
+  "w": "geen ... meer: no more, with a noun.",
+  "wn": "geen ... meer bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Zij is ___ meer boos.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "She isn't angry any more.",
+  "w": "niet meer: not any more, with a verb, adjective or adverb.",
+  "wn": "niet meer: vroeger wel, nu niet.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb hem ___ (not yet) gebeld.",
+  "a": "nog niet",
+  "o": [
+   "nog niet",
+   "nog geen",
+   "niet meer"
+  ],
+  "e": "I haven't called him yet.",
+  "w": "nog niet: not yet, with a verb, adjective or adverb.",
+  "wn": "nog niet: het komt nog.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Hij spreekt ___ (not yet) woord Nederlands.",
+  "a": "nog geen",
+  "o": [
+   "nog geen",
+   "nog niet",
+   "geen meer"
+  ],
+  "e": "He doesn't speak a word of Dutch yet.",
+  "w": "nog geen: not yet, with a noun that has no article.",
+  "wn": "nog geen bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "B1"
+ },
+ {
+  "q": "De kinderen slapen ___ (any more).",
+  "a": "niet meer",
+  "o": [
+   "niet meer",
+   "geen meer",
+   "nog niet"
+  ],
+  "e": "The children aren't asleep any more.",
+  "w": "niet meer: not any more, with a verb, adjective or adverb.",
+  "wn": "niet meer: vroeger wel, nu niet.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb ___ tijd meer.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "I have no time left.",
+  "w": "geen ... meer: no more, with a noun.",
+  "wn": "geen ... meer bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A1"
+ },
+ {
+  "q": "Het is ___ ver meer.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "It isn't far any more.",
+  "w": "niet meer: not any more, with a verb, adjective or adverb.",
+  "wn": "niet meer: vroeger wel, nu niet.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Ze heeft ___ (still not) betaald.",
+  "a": "nog steeds niet",
+  "o": [
+   "nog steeds niet",
+   "nog steeds geen",
+   "niet meer"
+  ],
+  "e": "She still hasn't paid.",
+  "w": "nog steeds niet: still not, with a verb or adjective.",
+  "wn": "nog steeds niet: het duurt lang.",
+  "t": "meer",
+  "b": "B1"
+ },
+ {
+  "q": "We hebben ___ (not yet) naam voor de baby.",
+  "a": "nog geen",
+  "o": [
+   "nog geen",
+   "nog niet",
+   "geen meer"
+  ],
+  "e": "We don't have a name for the baby yet.",
+  "w": "nog geen: not yet, with a noun that has no article.",
+  "wn": "nog geen bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "B1"
+ },
+ {
+  "q": "De winkels zijn ___ (not yet) open.",
+  "a": "nog niet",
+  "o": [
+   "nog niet",
+   "nog geen",
+   "niet meer"
+  ],
+  "e": "The shops aren't open yet.",
+  "w": "nog niet: not yet, with a verb, adjective or adverb.",
+  "wn": "nog niet: het komt nog.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Ik hoef ___ meer te werken.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I don't have to work any more.",
+  "w": "niet meer: not any more, with a verb, adjective or adverb.",
+  "wn": "niet meer: vroeger wel, nu niet.",
+  "t": "meer",
+  "b": "B1"
+ },
+ {
+  "q": "Er zit ___ benzine meer in de tank.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "There's no petrol left in the tank.",
+  "w": "geen ... meer: no more, with a noun.",
+  "wn": "geen ... meer bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ben ___ (still not) gewend aan het weer.",
+  "a": "nog steeds niet",
+  "o": [
+   "nog steeds niet",
+   "nog steeds geen",
+   "niet meer"
+  ],
+  "e": "I'm still not used to the weather.",
+  "w": "nog steeds niet: still not, with a verb or adjective.",
+  "wn": "nog steeds niet: het duurt lang.",
+  "t": "meer",
+  "b": "B1"
+ },
+ {
+  "q": "Hij heeft ___ (not yet) vrienden hier.",
+  "a": "nog geen",
+  "o": [
+   "nog geen",
+   "nog niet",
+   "geen meer"
+  ],
+  "e": "He doesn't have any friends here yet.",
+  "w": "nog geen: not yet, with a noun that has no article.",
+  "wn": "nog geen bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb het mijn moeder ___ (not yet) verteld.",
+  "a": "nog niet",
+  "o": [
+   "nog niet",
+   "nog geen",
+   "niet meer"
+  ],
+  "e": "I haven't told my mother yet.",
+  "w": "nog niet: not yet, with a verb, adjective or adverb.",
+  "wn": "nog niet: het komt nog.",
+  "t": "meer",
+  "b": "B1"
+ },
+ {
+  "q": "Wij gaan ___ meer naar Spanje op vakantie.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "We don't go to Spain on holiday any more.",
+  "w": "niet meer: not any more, with a verb, adjective or adverb.",
+  "wn": "niet meer: vroeger wel, nu niet.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Er is ___ hoop meer.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "There's no hope left.",
+  "w": "geen ... meer: no more, with a noun.",
+  "wn": "geen ... meer bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn telefoon doet het ___ (any more).",
+  "a": "niet meer",
+  "o": [
+   "niet meer",
+   "geen meer",
+   "nog niet"
+  ],
+  "e": "My phone doesn't work any more.",
+  "w": "niet meer: not any more, with a verb, adjective or adverb.",
+  "wn": "niet meer: vroeger wel, nu niet.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "De sneeuw is ___ (still not) gesmolten.",
+  "a": "nog steeds niet",
+  "o": [
+   "nog steeds niet",
+   "nog steeds geen",
+   "niet meer"
+  ],
+  "e": "The snow still hasn't melted.",
+  "w": "nog steeds niet: still not, with a verb or adjective.",
+  "wn": "nog steeds niet: het duurt lang.",
+  "t": "meer",
+  "b": "B1"
+ },
+ {
+  "q": "Zij is ___ (not yet) achttien.",
+  "a": "nog niet",
+  "o": [
+   "nog niet",
+   "nog geen",
+   "niet meer"
+  ],
+  "e": "She isn't eighteen yet.",
+  "w": "nog niet: not yet, with a verb, adjective or adverb.",
+  "wn": "nog niet: het komt nog.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Hij is ___ kind meer.",
+  "a": "geen",
+  "o": [
+   "geen",
+   "niet"
+  ],
+  "e": "He isn't a child any more.",
+  "w": "geen ... meer: no more, with a noun.",
+  "wn": "geen ... meer bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Ik herken haar ___ meer.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I don't recognise her any more.",
+  "w": "niet meer: not any more, with a verb, adjective or adverb.",
+  "wn": "niet meer: vroeger wel, nu niet.",
+  "t": "meer",
+  "b": "B1"
+ },
+ {
+  "q": "Er zijn ___ (not yet) gasten.",
+  "a": "nog geen",
+  "o": [
+   "nog geen",
+   "nog niet",
+   "geen meer"
+  ],
+  "e": "There are no guests yet.",
+  "w": "nog geen: not yet, with a noun that has no article.",
+  "wn": "nog geen bij een zelfstandig naamwoord.",
+  "t": "meer",
+  "b": "A2"
+ },
+ {
+  "q": "Ik snap het ___ (still not).",
+  "a": "nog steeds niet",
+  "o": [
+   "nog steeds niet",
+   "nog steeds geen",
+   "niet meer"
+  ],
+  "e": "I still don't get it.",
+  "w": "nog steeds niet: still not, with a verb or adjective.",
+  "wn": "nog steeds niet: het duurt lang.",
+  "t": "meer",
+  "b": "B1"
+ },
+ {
+  "q": "Het museum is ___ (any more) gratis.",
+  "a": "niet meer",
+  "o": [
+   "niet meer",
+   "geen meer",
+   "nog niet"
+  ],
+  "e": "The museum isn't free any more.",
+  "w": "niet meer: not any more, with a verb, adjective or adverb.",
+  "wn": "niet meer: vroeger wel, nu niet.",
+  "t": "meer",
+  "b": "A2"
+ }
+]

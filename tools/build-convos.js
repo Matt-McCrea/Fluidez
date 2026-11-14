@@ -1,27 +1,27 @@
 #!/usr/bin/env node
 /* Example conversations, for every app: tools/convos/<lang>.json into the app's
  * data/conversations.js, gated.
- *   node tools/build-convos.js es|ga|ar|ru [--check]
+ *   node tools/build-convos.js es|ga|ar|ru|nl [--check]
  *
  * A conversation: { id, en (title), th (a phrase theme id), b (band), you: 'a'|'b',
  *   roles: { a: 'You', b: 'Waiter' } (English), n?: note,
  *   lines: [ { who: 'a'|'b', en, <text> } ] }
  * The text field per language:
- *   es: es            ga: ga            ru: ru (stress as an apostrophe after the vowel)
+ *   es: es            ga: ga            nl: nl            ru: ru (stress as an apostrophe after the vowel)
  *   ar: msa, lev, egy (msa fully vowelled; lev and egy as written in phrases.json)
  *       and tr: { msa, lev, egy } (the hand-written learner transliteration)
  * Gate: 5 to 12 lines, both roles speak, the learner's role has at least 3 lines,
  * ids unique, no dashes in English, Russian stressed, Arabic fuṣḥā vowelled.
  * Output global: ES_CONVOS (data/conversations.js at the root, for Juegos),
- * GA_CONVOS (gaeilge/data), AR_CONVOS (arabiya/data), RU_CONVOS (russkiy/data). */
+ * GA_CONVOS (gaeilge/data), NL_CONVOS (nederlands/data), AR_CONVOS (arabiya/data), RU_CONVOS (russkiy/data). */
 'use strict';
 const fs = require('fs');
 const path = require('path');
 const ROOT = path.join(__dirname, '..');
 const lang = process.argv[2];
 const CHECK = process.argv.includes('--check');
-const OUT = { es: ['data', 'ES_CONVOS'], ga: ['gaeilge/data', 'GA_CONVOS'], ar: ['arabiya/data', 'AR_CONVOS'], ru: ['russkiy/data', 'RU_CONVOS'] }[lang];
-if (!OUT) { console.log('usage: node tools/build-convos.js es|ga|ar|ru [--check]'); process.exit(2); }
+const OUT = { es: ['data', 'ES_CONVOS'], ga: ['gaeilge/data', 'GA_CONVOS'], ar: ['arabiya/data', 'AR_CONVOS'], ru: ['russkiy/data', 'RU_CONVOS'], nl: ['nederlands/data', 'NL_CONVOS'] }[lang];
+if (!OUT) { console.log('usage: node tools/build-convos.js es|ga|ar|ru|nl [--check]'); process.exit(2); }
 const src = path.join(__dirname, 'convos', lang + '.json');
 const C = JSON.parse(fs.readFileSync(src, 'utf8'));
 const RU = lang === 'ru' ? require(path.join(ROOT, 'russkiy/js/ru-text.js')) : null;
@@ -48,6 +48,7 @@ C.forEach(c => {
     if (DASH.test(l.en || '')) bad(at, 'dash in English');
     if (lang === 'es' && !l.es) bad(at, 'no es');
     if (lang === 'ga' && !l.ga) bad(at, 'no ga');
+    if (lang === 'nl' && !l.nl) bad(at, 'no nl');
     if (lang === 'ru') {
       if (!l.ru) return bad(at, 'no ru');
       l.ru = RU.fromApostrophe(l.ru);

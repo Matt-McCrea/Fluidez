@@ -1,0 +1,487 @@
+[
+ {
+  "nl": "Hoe laat is het?",
+  "en": "What time is it?",
+  "th": "tijd",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Het is drie uur.",
+  "en": "It's three o'clock.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Het is half vier.",
+  "en": "It's half past three.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 1,
+  "n": "Half counts toward the next hour: half four is 3:30."
+ },
+ {
+  "nl": "Het is kwart over twee.",
+  "en": "It's quarter past two.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Het is kwart voor zes.",
+  "en": "It's quarter to six.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Het is tien over vijf.",
+  "en": "It's ten past five.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Het is vijf voor half acht.",
+  "en": "It's 7:25.",
+  "th": "tijd",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: five to half eight."
+ },
+ {
+  "nl": "Om hoe laat?",
+  "en": "At what time?",
+  "th": "tijd",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Om acht uur.",
+  "en": "At eight o'clock.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Om half negen.",
+  "en": "At half past eight.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Rond een uur of zeven.",
+  "en": "Around seven or so.",
+  "th": "tijd",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Welke dag is het vandaag?",
+  "en": "What day is it today?",
+  "th": "tijd",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Het is maandag.",
+  "en": "It's Monday.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Welke datum is het vandaag?",
+  "en": "What's the date today?",
+  "alt": [
+   "De hoeveelste is het vandaag?"
+  ],
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Het is vijf maart.",
+  "en": "It's the fifth of March.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben vandaag vrij.",
+  "en": "I'm off today.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Morgen werk ik.",
+  "en": "I'm working tomorrow.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Gisteren was ik thuis.",
+  "en": "I was at home yesterday.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Overmorgen.",
+  "en": "The day after tomorrow.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Eergisteren.",
+  "en": "The day before yesterday.",
+  "th": "tijd",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Volgende week ga ik op vakantie.",
+  "en": "I'm going on holiday next week.",
+  "th": "tijd",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Vorige week was ik in Parijs.",
+  "en": "Last week I was in Paris.",
+  "th": "tijd",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Over twee weken.",
+  "en": "In two weeks.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Twee dagen geleden.",
+  "en": "Two days ago.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Het is lang geleden.",
+  "en": "It's been a long time.",
+  "th": "tijd",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik wil graag een afspraak maken.",
+  "en": "I'd like to make an appointment.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik heb dinsdag een afspraak.",
+  "en": "I have an appointment on Tuesday.",
+  "th": "tijd",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Kan ik de afspraak verzetten?",
+  "en": "Can I move the appointment?",
+  "alt": [
+   "Kan ik de afspraak verplaatsen?"
+  ],
+  "th": "tijd",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik moet de afspraak afzeggen.",
+  "en": "I have to cancel the appointment.",
+  "th": "tijd",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Wanneer heb je tijd?",
+  "en": "When are you free?",
+  "th": "tijd",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Heb je morgen tijd?",
+  "en": "Are you free tomorrow?",
+  "th": "tijd",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik heb geen tijd.",
+  "en": "I don't have time.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Kun je dinsdag?",
+  "en": "Can you do Tuesday?",
+  "alt": [
+   "Komt dinsdag je goed uit?"
+  ],
+  "th": "tijd",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Dat komt goed uit.",
+  "en": "That suits me.",
+  "alt": [
+   "Dat past prima."
+  ],
+  "th": "tijd",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Dat komt slecht uit.",
+  "en": "That's not a good time.",
+  "th": "tijd",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Zullen we om zeven uur afspreken?",
+  "en": "Shall we meet at seven?",
+  "th": "tijd",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Waar spreken we af?",
+  "en": "Where shall we meet?",
+  "th": "tijd",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Afgesproken!",
+  "en": "It's a deal!",
+  "th": "tijd",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Zullen we het een andere keer doen?",
+  "en": "Shall we do it another time?",
+  "th": "tijd",
+  "b": "B1",
+  "t": 2
+ },
+ {
+  "nl": "Wat zijn je plannen?",
+  "en": "What are your plans?",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik heb nog geen plannen.",
+  "en": "I don't have any plans yet.",
+  "th": "tijd",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Zaterdag ga ik naar mijn ouders.",
+  "en": "On Saturday I'm going to my parents'.",
+  "th": "tijd",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben te laat.",
+  "en": "I'm late.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben op tijd.",
+  "en": "I'm on time.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Je bent vroeg!",
+  "en": "You're early!",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben er over tien minuten.",
+  "en": "I'll be there in ten minutes.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Hoe lang duurt het?",
+  "en": "How long does it take?",
+  "th": "tijd",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Het duurt een uur.",
+  "en": "It takes an hour.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik heb haast.",
+  "en": "I'm in a hurry.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Neem de tijd.",
+  "en": "Take your time.",
+  "alt": [
+   "Rustig aan."
+  ],
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Wacht even.",
+  "en": "Wait a moment.",
+  "alt": [
+   "Momentje."
+  ],
+  "th": "tijd",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Een ogenblik, alstublieft.",
+  "en": "One moment, please.",
+  "th": "tijd",
+  "b": "A2",
+  "t": 2,
+  "n": "Polite form with u."
+ },
+ {
+  "nl": "Ik kom zo terug.",
+  "en": "I'll be right back.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Nu meteen.",
+  "en": "Right now.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Zo snel mogelijk.",
+  "en": "As soon as possible.",
+  "th": "tijd",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Hoe laat gaan jullie open?",
+  "en": "What time do you open?",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Hoe laat gaat u dicht?",
+  "en": "What time do you close?",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2,
+  "n": "Polite form with u."
+ },
+ {
+  "nl": "De winkel is op zondag dicht.",
+  "en": "The shop is closed on Sundays.",
+  "th": "tijd",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Hoe laat vertrekt de trein?",
+  "en": "What time does the train leave?",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik sta om zeven uur op.",
+  "en": "I get up at seven.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "'s Ochtends drink ik koffie.",
+  "en": "In the morning I drink coffee.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2,
+  "n": "'s ochtends: in the morning."
+ },
+ {
+  "nl": "'s Avonds ben ik thuis.",
+  "en": "I'm home in the evenings.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik ga meestal om elf uur slapen.",
+  "en": "I usually go to bed at eleven.",
+  "th": "tijd",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik werk elke dag.",
+  "en": "I work every day.",
+  "th": "tijd",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Al een tijdje.",
+  "en": "For a while now.",
+  "th": "tijd",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Ik heb het in mijn agenda gezet.",
+  "en": "I've put it in my diary.",
+  "th": "tijd",
+  "b": "B1",
+  "t": 3
+ }
+]

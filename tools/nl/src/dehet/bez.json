@@ -1,0 +1,1092 @@
+[
+ {
+  "q": "Dit is ___ (our) huis.",
+  "a": "ons",
+  "o": [
+   "ons",
+   "onze"
+  ],
+  "e": "This is our house.",
+  "w": "huis is a het word, so ons. De words and plurals take onze.",
+  "wn": "Het huis, dus ons huis.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "___ (our) kind is drie jaar.",
+  "a": "Ons",
+  "o": [
+   "Ons",
+   "Onze"
+  ],
+  "e": "Our child is three.",
+  "w": "kind is a het word, so ons kind.",
+  "wn": "Het kind, dus ons kind.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "We houden van ___ (our) dorp.",
+  "a": "ons",
+  "o": [
+   "ons",
+   "onze"
+  ],
+  "e": "We love our village.",
+  "w": "dorp is a het word, so ons dorp.",
+  "wn": "Het dorp, dus ons dorp.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "___ (our) team heeft gewonnen!",
+  "a": "Ons",
+  "o": [
+   "Ons",
+   "Onze"
+  ],
+  "e": "Our team has won!",
+  "w": "team is a het word, so ons team.",
+  "wn": "Het team, dus ons team.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "Is ___ (our) appartement niet te klein?",
+  "a": "ons",
+  "o": [
+   "ons",
+   "onze"
+  ],
+  "e": "Isn't our flat too small?",
+  "w": "appartement is a het word, so ons appartement.",
+  "wn": "Het appartement, dus ons appartement.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "Wat is ___ (our) nieuwe adres?",
+  "a": "ons",
+  "o": [
+   "ons",
+   "onze"
+  ],
+  "e": "What is our new address?",
+  "w": "adres is a het word, so ons adres, even with an adjective in between.",
+  "wn": "Het adres, dus ons adres.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "___ (our) bedrijf heeft twintig mensen.",
+  "a": "Ons",
+  "o": [
+   "Ons",
+   "Onze"
+  ],
+  "e": "Our company has twenty people.",
+  "w": "bedrijf is a het word, so ons bedrijf.",
+  "wn": "Het bedrijf, dus ons bedrijf.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "Dit is ___ (our) plan voor morgen.",
+  "a": "ons",
+  "o": [
+   "ons",
+   "onze"
+  ],
+  "e": "This is our plan for tomorrow.",
+  "w": "plan is a het word, so ons plan.",
+  "wn": "Het plan, dus ons plan.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "___ (our) hotel ligt aan het strand.",
+  "a": "Ons",
+  "o": [
+   "Ons",
+   "Onze"
+  ],
+  "e": "Our hotel is on the beach.",
+  "w": "hotel is a het word, so ons hotel.",
+  "wn": "Het hotel, dus ons hotel.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "___ (our) gezin is groot.",
+  "a": "Ons",
+  "o": [
+   "Ons",
+   "Onze"
+  ],
+  "e": "Our family is big.",
+  "w": "gezin is a het word, so ons gezin.",
+  "wn": "Het gezin, dus ons gezin.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "Kom je naar ___ (our) feest?",
+  "a": "ons",
+  "o": [
+   "ons",
+   "onze"
+  ],
+  "e": "Are you coming to our party?",
+  "w": "feest is a het word, so ons feest.",
+  "wn": "Het feest, dus ons feest.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "___ (our) land is klein en vlak.",
+  "a": "Ons",
+  "o": [
+   "Ons",
+   "Onze"
+  ],
+  "e": "Our country is small and flat.",
+  "w": "land is a het word, so ons land.",
+  "wn": "Het land, dus ons land.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "___ (our) auto staat in de garage.",
+  "a": "Onze",
+  "o": [
+   "Onze",
+   "Ons"
+  ],
+  "e": "Our car is in the garage.",
+  "w": "auto is a de word, so onze auto.",
+  "wn": "De auto, dus onze auto.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Wij eten aan ___ (our) tafel in de keuken.",
+  "a": "onze",
+  "o": [
+   "onze",
+   "ons"
+  ],
+  "e": "We eat at our table in the kitchen.",
+  "w": "tafel is a de word, so onze tafel.",
+  "wn": "De tafel, dus onze tafel.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "___ (our) kat heet Mimi.",
+  "a": "Onze",
+  "o": [
+   "Onze",
+   "Ons"
+  ],
+  "e": "Our cat is called Mimi.",
+  "w": "kat is a de word, so onze kat.",
+  "wn": "De kat, dus onze kat.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "___ (our) school begint om half negen.",
+  "a": "Onze",
+  "o": [
+   "Onze",
+   "Ons"
+  ],
+  "e": "Our school starts at half past eight.",
+  "w": "school is a de word, so onze school.",
+  "wn": "De school, dus onze school.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "In ___ (our) tuin staat een boom.",
+  "a": "onze",
+  "o": [
+   "onze",
+   "ons"
+  ],
+  "e": "There's a tree in our garden.",
+  "w": "tuin is a de word, so onze tuin.",
+  "wn": "De tuin, dus onze tuin.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "___ (our) keuken is nieuw.",
+  "a": "Onze",
+  "o": [
+   "Onze",
+   "Ons"
+  ],
+  "e": "Our kitchen is new.",
+  "w": "keuken is a de word, so onze keuken.",
+  "wn": "De keuken, dus onze keuken.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "___ (our) familie woont in Friesland.",
+  "a": "Onze",
+  "o": [
+   "Onze",
+   "Ons"
+  ],
+  "e": "Our family lives in Friesland.",
+  "w": "familie is a de word, so onze familie.",
+  "wn": "De familie, dus onze familie.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "___ (our) straat is heel rustig.",
+  "a": "Onze",
+  "o": [
+   "Onze",
+   "Ons"
+  ],
+  "e": "Our street is very quiet.",
+  "w": "straat is a de word, so onze straat.",
+  "wn": "De straat, dus onze straat.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "___ (our) vakantie begint morgen.",
+  "a": "Onze",
+  "o": [
+   "Onze",
+   "Ons"
+  ],
+  "e": "Our holiday starts tomorrow.",
+  "w": "vakantie is a de word, so onze vakantie.",
+  "wn": "De vakantie, dus onze vakantie.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "___ (our) leraar komt uit België.",
+  "a": "Onze",
+  "o": [
+   "Onze",
+   "Ons"
+  ],
+  "e": "Our teacher is from Belgium.",
+  "w": "leraar is a de word, so onze leraar.",
+  "wn": "De leraar, dus onze leraar.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "___ (our) buren zijn heel aardig.",
+  "a": "Onze",
+  "o": [
+   "Onze",
+   "Ons"
+  ],
+  "e": "Our neighbours are very nice.",
+  "w": "Plurals always take onze: onze buren.",
+  "wn": "Meervoud: altijd onze.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "___ (our) kinderen spelen buiten.",
+  "a": "Onze",
+  "o": [
+   "Onze",
+   "Ons"
+  ],
+  "e": "Our children are playing outside.",
+  "w": "kind is a het word, but plurals always take onze: onze kinderen.",
+  "wn": "Meervoud: altijd onze.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "We zoeken ___ (our) sleutels.",
+  "a": "onze",
+  "o": [
+   "onze",
+   "ons"
+  ],
+  "e": "We're looking for our keys.",
+  "w": "Plurals always take onze: onze sleutels.",
+  "wn": "Meervoud: altijd onze.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "___ (our) vrienden komen vanavond eten.",
+  "a": "Onze",
+  "o": [
+   "Onze",
+   "Ons"
+  ],
+  "e": "Our friends are coming to dinner tonight.",
+  "w": "Plurals always take onze: onze vrienden.",
+  "wn": "Meervoud: altijd onze.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Waar zijn ___ (our) boeken?",
+  "a": "onze",
+  "o": [
+   "onze",
+   "ons"
+  ],
+  "e": "Where are our books?",
+  "w": "boek is a het word, but plurals always take onze: onze boeken.",
+  "wn": "Meervoud: altijd onze.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "___ (our) huizen staan naast elkaar.",
+  "a": "Onze",
+  "o": [
+   "Onze",
+   "Ons"
+  ],
+  "e": "Our houses stand next to each other.",
+  "w": "huis is a het word, but plurals always take onze: onze huizen.",
+  "wn": "Meervoud: altijd onze.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "Peter zoekt ___ (his) sleutels.",
+  "a": "zijn",
+  "o": [
+   "zijn",
+   "haar",
+   "hun"
+  ],
+  "e": "Peter is looking for his keys.",
+  "w": "Peter is a man: his is zijn.",
+  "wn": "Van Peter: zijn.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Anna belt ___ (her) moeder.",
+  "a": "haar",
+  "o": [
+   "haar",
+   "zijn",
+   "hun"
+  ],
+  "e": "Anna calls her mother.",
+  "w": "Anna is a woman: her is haar.",
+  "wn": "Van Anna: haar.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn broer verkoopt ___ (his) auto.",
+  "a": "zijn",
+  "o": [
+   "zijn",
+   "haar",
+   "hun"
+  ],
+  "e": "My brother is selling his car.",
+  "w": "his is zijn.",
+  "wn": "Van mijn broer: zijn.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Lisa woont bij ___ (her) vader.",
+  "a": "haar",
+  "o": [
+   "haar",
+   "zijn",
+   "hun"
+  ],
+  "e": "Lisa lives with her father.",
+  "w": "her is haar.",
+  "wn": "Van Lisa: haar.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "___ (his) zus woont in Gent.",
+  "a": "Zijn",
+  "o": [
+   "Zijn",
+   "Zij",
+   "Haar"
+  ],
+  "e": "His sister lives in Ghent.",
+  "w": "his is zijn. zij means she or they.",
+  "wn": "Van hem: zijn.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "___ (her) broer is dokter.",
+  "a": "Haar",
+  "o": [
+   "Haar",
+   "Zij",
+   "Zijn"
+  ],
+  "e": "Her brother is a doctor.",
+  "w": "her is haar. zij means she, the subject.",
+  "wn": "Van haar: haar.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Tom en ___ (his) vrouw komen ook.",
+  "a": "zijn",
+  "o": [
+   "zijn",
+   "haar",
+   "hij"
+  ],
+  "e": "Tom and his wife are coming too.",
+  "w": "his is zijn. hij means he, the subject.",
+  "wn": "Van Tom: zijn.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn moeder leest ___ (her) krant.",
+  "a": "haar",
+  "o": [
+   "haar",
+   "zijn",
+   "zij"
+  ],
+  "e": "My mother is reading her paper.",
+  "w": "her is haar.",
+  "wn": "Van mijn moeder: haar.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "De jongen pakt ___ (his) tas.",
+  "a": "zijn",
+  "o": [
+   "zijn",
+   "haar",
+   "hun"
+  ],
+  "e": "The boy picks up his bag.",
+  "w": "his is zijn.",
+  "wn": "Van de jongen: zijn.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Het meisje zoekt ___ (her) schoenen.",
+  "a": "haar",
+  "o": [
+   "haar",
+   "zijn",
+   "hun"
+  ],
+  "e": "The girl is looking for her shoes.",
+  "w": "A girl is she, even though it's het meisje: her is haar.",
+  "wn": "Het meisje is een zij: haar.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "Waar is ___ (his) jas?",
+  "a": "zijn",
+  "o": [
+   "zijn",
+   "haar",
+   "hij"
+  ],
+  "e": "Where is his coat?",
+  "w": "his is zijn.",
+  "wn": "Van hem: zijn.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn oma geeft ___ (her) kat eten.",
+  "a": "haar",
+  "o": [
+   "haar",
+   "zijn",
+   "hun"
+  ],
+  "e": "My grandma feeds her cat.",
+  "w": "her is haar.",
+  "wn": "Van oma: haar.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "Opa vertelt over ___ (his) werk.",
+  "a": "zijn",
+  "o": [
+   "zijn",
+   "haar",
+   "hun"
+  ],
+  "e": "Grandpa talks about his work.",
+  "w": "his is zijn.",
+  "wn": "Van opa: zijn.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "Sara is ___ (her) telefoon kwijt.",
+  "a": "haar",
+  "o": [
+   "haar",
+   "zijn",
+   "zij"
+  ],
+  "e": "Sara has lost her phone.",
+  "w": "her is haar.",
+  "wn": "Van Sara: haar.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "De buren verkopen ___ (their) huis.",
+  "a": "hun",
+  "o": [
+   "hun",
+   "zij",
+   "hen"
+  ],
+  "e": "The neighbours are selling their house.",
+  "w": "their is hun. zij is they, the subject.",
+  "wn": "Van de buren: hun.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "___ (their) kinderen gaan naar onze school.",
+  "a": "Hun",
+  "o": [
+   "Hun",
+   "Zij",
+   "Hen"
+  ],
+  "e": "Their children go to our school.",
+  "w": "their is hun, for de and het words and plurals.",
+  "wn": "Van hen: hun.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn ouders zijn ___ (their) sleutels kwijt.",
+  "a": "hun",
+  "o": [
+   "hun",
+   "zij",
+   "hen"
+  ],
+  "e": "My parents have lost their keys.",
+  "w": "their is hun.",
+  "wn": "Van mijn ouders: hun.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "___ (they) wonen al jaren in Delft.",
+  "a": "Zij",
+  "o": [
+   "Zij",
+   "Hun",
+   "Hen"
+  ],
+  "e": "They've lived in Delft for years.",
+  "w": "They as the subject is zij or ze, never hun.",
+  "wn": "Onderwerp: zij.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Waar werken ___ (they) nu?",
+  "a": "zij",
+  "o": [
+   "zij",
+   "hun",
+   "hen"
+  ],
+  "e": "Where do they work now?",
+  "w": "They as the subject is zij, never hun.",
+  "wn": "Onderwerp: zij.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ga morgen met ___ (them) naar de stad.",
+  "a": "hen",
+  "o": [
+   "hen",
+   "hun",
+   "zij"
+  ],
+  "e": "Tomorrow I'm going into town with them.",
+  "w": "After met, voor or bij, them is hen.",
+  "wn": "Na een voorzetsel: hen.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "Dit cadeau is voor ___ (them).",
+  "a": "hen",
+  "o": [
+   "hen",
+   "hun",
+   "zij"
+  ],
+  "e": "This present is for them.",
+  "w": "After voor, them is hen.",
+  "wn": "Na een voorzetsel: hen.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "Ik vind ___ (their) tuin mooi.",
+  "a": "hun",
+  "o": [
+   "hun",
+   "zij",
+   "hen"
+  ],
+  "e": "I like their garden.",
+  "w": "their is hun.",
+  "wn": "Van hen: hun.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Is dat ___ (their) auto?",
+  "a": "hun",
+  "o": [
+   "hun",
+   "zij",
+   "hen"
+  ],
+  "e": "Is that their car?",
+  "w": "their is hun.",
+  "wn": "Van hen: hun.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Vanavond eten ___ (they) bij ons.",
+  "a": "zij",
+  "o": [
+   "zij",
+   "hun",
+   "hen"
+  ],
+  "e": "Tonight they're eating at our place.",
+  "w": "They as the subject is zij.",
+  "wn": "Onderwerp: zij.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Ik woon naast ___ (them).",
+  "a": "hen",
+  "o": [
+   "hen",
+   "hun",
+   "zij"
+  ],
+  "e": "I live next to them.",
+  "w": "After naast, them is hen.",
+  "wn": "Na een voorzetsel: hen.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "De kinderen en ___ (their) hond zijn buiten.",
+  "a": "hun",
+  "o": [
+   "hun",
+   "zij",
+   "hen"
+  ],
+  "e": "The children and their dog are outside.",
+  "w": "their is hun.",
+  "wn": "Van de kinderen: hun.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Meneer, is dit ___ (your, polite) jas?",
+  "a": "uw",
+  "o": [
+   "uw",
+   "jouw",
+   "jullie"
+  ],
+  "e": "Sir, is this your coat?",
+  "w": "Polite your is uw.",
+  "wn": "Beleefd: uw.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Mevrouw, mag ik ___ (your, polite) paspoort zien?",
+  "a": "uw",
+  "o": [
+   "uw",
+   "jouw",
+   "jullie"
+  ],
+  "e": "Madam, may I see your passport?",
+  "w": "Polite your is uw.",
+  "wn": "Beleefd: uw.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "Wat is ___ (your, polite) naam?",
+  "a": "uw",
+  "o": [
+   "uw",
+   "jouw",
+   "jullie"
+  ],
+  "e": "What is your name?",
+  "w": "Polite your is uw.",
+  "wn": "Beleefd: uw.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Is dit ___ (your, informal) tas, Daan?",
+  "a": "jouw",
+  "o": [
+   "jouw",
+   "jij",
+   "uw"
+  ],
+  "e": "Is this your bag, Daan?",
+  "w": "Informal your is jouw or je. jij means you, the subject.",
+  "wn": "Informeel: jouw.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Ik vind ___ (your, informal) jurk mooi.",
+  "a": "jouw",
+  "o": [
+   "jouw",
+   "jij",
+   "uw"
+  ],
+  "e": "I like your dress.",
+  "w": "Informal your is jouw. jij is you, the subject.",
+  "wn": "Informeel: jouw.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Kinderen, waar zijn ___ (your, plural) jassen?",
+  "a": "jullie",
+  "o": [
+   "jullie",
+   "jouw",
+   "hun"
+  ],
+  "e": "Children, where are your coats?",
+  "w": "Your for more than one person is jullie.",
+  "wn": "Meer personen: jullie.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Is dat ___ (your, plural) huis?",
+  "a": "jullie",
+  "o": [
+   "jullie",
+   "jouw",
+   "hun"
+  ],
+  "e": "Is that your house?",
+  "w": "Your for more than one person is jullie.",
+  "wn": "Meer personen: jullie.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Wanneer is ___ (your, informal) verjaardag?",
+  "a": "jouw",
+  "o": [
+   "jouw",
+   "jij",
+   "jullie"
+  ],
+  "e": "When is your birthday?",
+  "w": "Informal your for one person is jouw.",
+  "wn": "Informeel: jouw.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Dat is ___ (my) fiets.",
+  "a": "mijn",
+  "o": [
+   "mijn",
+   "mij",
+   "ik"
+  ],
+  "e": "That's my bike.",
+  "w": "my is mijn. mij is me, ik is I.",
+  "wn": "Van mij: mijn.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "___ (my) moeder werkt in een ziekenhuis.",
+  "a": "Mijn",
+  "o": [
+   "Mijn",
+   "Mij",
+   "Ik"
+  ],
+  "e": "My mother works in a hospital.",
+  "w": "my is mijn.",
+  "wn": "Van mij: mijn.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Kom je naar ___ (my) huis?",
+  "a": "mijn",
+  "o": [
+   "mijn",
+   "mij",
+   "ik"
+  ],
+  "e": "Are you coming to my house?",
+  "w": "my is mijn. mijn never changes: mijn huis, mijn tafel.",
+  "wn": "Mijn verandert nooit.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Hij geeft het boek aan ___ (me).",
+  "a": "mij",
+  "o": [
+   "mij",
+   "mijn",
+   "ik"
+  ],
+  "e": "He gives the book to me.",
+  "w": "After a preposition, me is mij.",
+  "wn": "Na een voorzetsel: mij.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "___ (I) woon in Amsterdam.",
+  "a": "Ik",
+  "o": [
+   "Ik",
+   "Mij",
+   "Mijn"
+  ],
+  "e": "I live in Amsterdam.",
+  "w": "I as the subject is ik.",
+  "wn": "Onderwerp: ik.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Dit is voor ___ (me).",
+  "a": "mij",
+  "o": [
+   "mij",
+   "mijn",
+   "ik"
+  ],
+  "e": "This is for me.",
+  "w": "After voor, me is mij.",
+  "wn": "Na een voorzetsel: mij.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Ik bel ___ (him) morgen.",
+  "a": "hem",
+  "o": [
+   "hem",
+   "hij",
+   "zijn"
+  ],
+  "e": "I'll call him tomorrow.",
+  "w": "Him as the object is hem. hij is he, the subject.",
+  "wn": "Lijdend voorwerp: hem.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Ken jij ___ (him)?",
+  "a": "hem",
+  "o": [
+   "hem",
+   "hij",
+   "zijn"
+  ],
+  "e": "Do you know him?",
+  "w": "Him as the object is hem.",
+  "wn": "Lijdend voorwerp: hem.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Ik zie ___ (her) elke dag.",
+  "a": "haar",
+  "o": [
+   "haar",
+   "zij",
+   "hem"
+  ],
+  "e": "I see her every day.",
+  "w": "Her as the object is haar. zij is she, the subject.",
+  "wn": "Lijdend voorwerp: haar.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Wij helpen ___ (her) met verhuizen.",
+  "a": "haar",
+  "o": [
+   "haar",
+   "zij",
+   "hem"
+  ],
+  "e": "We're helping her move.",
+  "w": "Her as the object is haar.",
+  "wn": "Lijdend voorwerp: haar.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "Kom je bij ___ (us) eten?",
+  "a": "ons",
+  "o": [
+   "ons",
+   "onze",
+   "wij"
+  ],
+  "e": "Are you coming to eat at ours?",
+  "w": "After bij, us is ons. onze only goes before a noun.",
+  "wn": "Na een voorzetsel: ons.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Zij belt ___ (us) vanavond.",
+  "a": "ons",
+  "o": [
+   "ons",
+   "onze",
+   "wij"
+  ],
+  "e": "She's calling us tonight.",
+  "w": "Us as the object is ons. wij is we, the subject.",
+  "wn": "Lijdend voorwerp: ons.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "___ (we) gaan morgen naar zee.",
+  "a": "Wij",
+  "o": [
+   "Wij",
+   "Ons",
+   "Onze"
+  ],
+  "e": "We're going to the seaside tomorrow.",
+  "w": "We as the subject is wij or we.",
+  "wn": "Onderwerp: wij.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Hij woont bij ___ (her) in Leiden.",
+  "a": "haar",
+  "o": [
+   "haar",
+   "zij",
+   "hem"
+  ],
+  "e": "He lives with her in Leiden.",
+  "w": "After bij, her is haar.",
+  "wn": "Na een voorzetsel: haar.",
+  "t": "bez",
+  "b": "A2"
+ },
+ {
+  "q": "Kun jij ___ (him) helpen?",
+  "a": "hem",
+  "o": [
+   "hem",
+   "hij",
+   "zijn"
+  ],
+  "e": "Can you help him?",
+  "w": "Him as the object is hem.",
+  "wn": "Lijdend voorwerp: hem.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Wil je met ___ (us) mee?",
+  "a": "ons",
+  "o": [
+   "ons",
+   "onze",
+   "wij"
+  ],
+  "e": "Do you want to come with us?",
+  "w": "After met, us is ons.",
+  "wn": "Na een voorzetsel: ons.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "___ (our) dochter studeert in Groningen.",
+  "a": "Onze",
+  "o": [
+   "Onze",
+   "Ons"
+  ],
+  "e": "Our daughter studies in Groningen.",
+  "w": "dochter is a de word, so onze dochter.",
+  "wn": "De dochter, dus onze dochter.",
+  "t": "bez",
+  "b": "A1"
+ },
+ {
+  "q": "Wat vind je van ___ (our) nieuwe bed?",
+  "a": "ons",
+  "o": [
+   "ons",
+   "onze"
+  ],
+  "e": "What do you think of our new bed?",
+  "w": "bed is a het word, so ons bed, even with an adjective in between.",
+  "wn": "Het bed, dus ons bed.",
+  "t": "bez",
+  "b": "A2"
+ }
+]

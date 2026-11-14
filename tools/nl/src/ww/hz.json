@@ -1,0 +1,1635 @@
+[
+ {
+  "q": "Wij ___ (hebben/zijn) gisteren naar Amsterdam gegaan.",
+  "v": "gaan",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ott",
+  "e": "We went to Amsterdam yesterday.",
+  "b": "A1"
+ },
+ {
+  "q": "Hij ___ (hebben/zijn) al vertrokken toen ik kwam.",
+  "v": "vertrekken",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "He had already left when I arrived.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) vanochtend naar mijn werk gefietst.",
+  "v": "fietsen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I cycled to work this morning.",
+  "b": "B1",
+  "aux": "z"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) vandaag de hele dag gefietst.",
+  "v": "fietsen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I cycled all day today.",
+  "b": "B1",
+  "aux": "h"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) gisteren een nieuwe jas gekocht.",
+  "v": "kopen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I bought a new coat yesterday.",
+  "b": "A1"
+ },
+ {
+  "q": "Jij ___ (hebben/zijn) vannacht heel onrustig geslapen.",
+  "v": "slapen",
+  "t": "hz",
+  "p": "jij",
+  "tt": "ott",
+  "e": "You slept very restlessly last night.",
+  "b": "A1"
+ },
+ {
+  "q": "Lotte ___ (hebben/zijn) vorige week jarig geweest.",
+  "v": "zijn",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "It was Lotte's birthday last week.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) vandaag de hele dag thuis gebleven.",
+  "v": "blijven",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ott",
+  "e": "We stayed at home all day today.",
+  "b": "A1"
+ },
+ {
+  "q": "Wat ___ (hebben/zijn) jullie vanavond gegeten?",
+  "v": "eten",
+  "t": "hz",
+  "p": "jullie",
+  "tt": "ott",
+  "e": "What did you have for dinner tonight?",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) nog nooit in Japan geweest, jij wel?",
+  "v": "zijn",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I've never been to Japan, have you?",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn oma ___ (hebben/zijn) vorig jaar gestorven.",
+  "v": "sterven",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "My grandma died last year.",
+  "b": "A1"
+ },
+ {
+  "q": "De film ___ (hebben/zijn) al begonnen toen wij binnenkwamen.",
+  "v": "beginnen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "The film had already started when we came in.",
+  "b": "A1"
+ },
+ {
+  "q": "Wat ___ (hebben/zijn) er met je gebeurd? Je bent helemaal nat.",
+  "v": "gebeuren",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "What happened to you? You're soaking wet.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) net een huis gekocht.",
+  "v": "kopen",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ott",
+  "e": "We've just bought a house.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) al gegeten voordat jij thuiskwam.",
+  "v": "eten",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ovt",
+  "e": "I had already eaten before you came home.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn broer ___ (hebben/zijn) gisteren uit Australië teruggekomen.",
+  "v": "terugkomen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "My brother came back from Australia yesterday.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) vanochtend om zes uur opgestaan.",
+  "v": "opstaan",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I got up at six this morning.",
+  "b": "B1"
+ },
+ {
+  "q": "Hij ___ (hebben/zijn) me vandaag al twee keer opgebeld.",
+  "v": "opbellen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "He has already called me twice today.",
+  "b": "B1"
+ },
+ {
+  "q": "Jullie ___ (hebben/zijn) vandaag veel te laat gekomen.",
+  "v": "komen",
+  "t": "hz",
+  "p": "jullie",
+  "tt": "ott",
+  "e": "You came far too late today.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) deze week heel hard gewerkt.",
+  "v": "werken",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I've worked very hard this week.",
+  "b": "A1"
+ },
+ {
+  "q": "Hij ___ (hebben/zijn) dokter geworden, net als zijn vader.",
+  "v": "worden",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "He has become a doctor, just like his father.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) vanmiddag naar het strand gelopen.",
+  "v": "lopen",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ott",
+  "e": "We walked to the beach this afternoon.",
+  "b": "A2",
+  "aux": "z"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) vandaag tien kilometer gelopen.",
+  "v": "lopen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I walked ten kilometres today.",
+  "b": "A2",
+  "aux": "h"
+ },
+ {
+  "q": "Mijn ouders ___ (hebben/zijn) vorig jaar naar Canada verhuisd.",
+  "v": "verhuizen",
+  "t": "hz",
+  "p": "zij",
+  "tt": "ott",
+  "e": "My parents moved to Canada last year.",
+  "b": "B1"
+ },
+ {
+  "q": "De kinderen ___ (hebben/zijn) vanmiddag uren in het zwembad gezwommen.",
+  "v": "zwemmen",
+  "t": "hz",
+  "p": "zij",
+  "tt": "ott",
+  "e": "The children swam in the pool for hours this afternoon.",
+  "b": "B1",
+  "aux": "h"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) vandaag naar de overkant van de rivier gezwommen.",
+  "v": "zwemmen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "Today I swam to the other side of the river.",
+  "b": "B1",
+  "aux": "z"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) vorige zomer naar Spanje gevlogen.",
+  "v": "vliegen",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ott",
+  "e": "We flew to Spain last summer.",
+  "b": "A2",
+  "aux": "z"
+ },
+ {
+  "q": "De piloot ___ (hebben/zijn) al dertig jaar gevlogen voordat hij stopte.",
+  "v": "vliegen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "The pilot had flown for thirty years before he stopped.",
+  "b": "A2",
+  "aux": "h"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) gisteren met de auto naar Gent gereden.",
+  "v": "rijden",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I drove to Ghent yesterday.",
+  "b": "A1",
+  "aux": "z"
+ },
+ {
+  "q": "Hij ___ (hebben/zijn) nog nooit in een elektrische auto gereden.",
+  "v": "rijden",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "He has never driven an electric car.",
+  "b": "A1",
+  "aux": "h"
+ },
+ {
+  "q": "De hond ___ (hebben/zijn) vanochtend naar buiten gerend.",
+  "v": "rennen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "The dog ran outside this morning.",
+  "b": "A2",
+  "aux": "z"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) vandaag een uur op de loopband gerend.",
+  "v": "rennen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I ran on the treadmill for an hour today.",
+  "b": "A2",
+  "aux": "h"
+ },
+ {
+  "q": "De kat ___ (hebben/zijn) net op de tafel gesprongen.",
+  "v": "springen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "The cat has just jumped onto the table.",
+  "b": "A2",
+  "aux": "z"
+ },
+ {
+  "q": "De kinderen ___ (hebben/zijn) vandaag de hele middag op de trampoline gesprongen.",
+  "v": "springen",
+  "t": "hz",
+  "p": "zij",
+  "tt": "ott",
+  "e": "The children jumped on the trampoline all afternoon today.",
+  "b": "A2",
+  "aux": "h"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) vandaag in een uur naar Texel gevaren.",
+  "v": "varen",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ott",
+  "e": "Today we sailed to Texel in an hour.",
+  "b": "B1",
+  "aux": "z"
+ },
+ {
+  "q": "Mijn opa ___ (hebben/zijn) veertig jaar op zee gevaren en woont nu in Den Helder.",
+  "v": "varen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "My grandpa sailed at sea for forty years and now lives in Den Helder.",
+  "b": "B1",
+  "aux": "h"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) vorig jaar drie maanden door Azië gereisd.",
+  "v": "reizen",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ott",
+  "e": "Last year we travelled round Asia for three months.",
+  "b": "B1",
+  "aux": "h"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) gisteren met de nachttrein naar Wenen gereisd.",
+  "v": "reizen",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ott",
+  "e": "Yesterday we travelled to Vienna on the night train.",
+  "b": "B1",
+  "aux": "z"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) vanmiddag een uur in het park gewandeld.",
+  "v": "wandelen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I went for an hour's walk in the park this afternoon.",
+  "b": "B1",
+  "aux": "h"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) vandaag over de dijk naar het dorp gewandeld.",
+  "v": "wandelen",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ott",
+  "e": "Today we walked over the dyke to the village.",
+  "b": "B1",
+  "aux": "z"
+ },
+ {
+  "q": "Hij ___ (hebben/zijn) net uit de bus gestapt.",
+  "v": "stappen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "He has just got off the bus.",
+  "b": "B1",
+  "aux": "z"
+ },
+ {
+  "q": "Veel jonge mensen ___ (hebben/zijn) de laatste jaren naar de stad getrokken.",
+  "v": "trekken",
+  "t": "hz",
+  "p": "zij",
+  "tt": "ott",
+  "e": "Many young people have moved to the city in recent years.",
+  "b": "A2",
+  "aux": "z"
+ },
+ {
+  "q": "Hij ___ (hebben/zijn) vandaag de hele dag aan dat touw getrokken.",
+  "v": "trekken",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "He has been pulling on that rope all day today.",
+  "b": "A2",
+  "aux": "h"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) op de bruiloft tot drie uur gedanst.",
+  "v": "dansen",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ott",
+  "e": "We danced until three at the wedding.",
+  "b": "A2",
+  "aux": "h"
+ },
+ {
+  "q": "Toen ik aankwam, ___ (hebben/zijn) iedereen al naar huis gegaan.",
+  "v": "gaan",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "When I arrived, everyone had already gone home.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) hem vandaag voor het eerst gezien.",
+  "v": "zien",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I saw him for the first time today.",
+  "b": "A1"
+ },
+ {
+  "q": "Toen we op het station kwamen, ___ (hebben/zijn) de trein al vertrokken.",
+  "v": "vertrekken",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "When we got to the station, the train had already left.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) al twee uur gewacht toen hij eindelijk kwam.",
+  "v": "wachten",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ovt",
+  "e": "I had been waiting for two hours when he finally came.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) het nieuws al gehoord voordat jij belde.",
+  "v": "horen",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ovt",
+  "e": "We had already heard the news before you called.",
+  "b": "A1"
+ },
+ {
+  "q": "Hij ___ (hebben/zijn) nog nooit sushi gegeten voordat hij naar Japan ging.",
+  "v": "eten",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "He had never eaten sushi before he went to Japan.",
+  "b": "A2"
+ },
+ {
+  "q": "Toen ik thuiskwam, ___ (hebben/zijn) mijn vrouw al gekookt.",
+  "v": "koken",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "When I got home, my wife had already cooked.",
+  "b": "B1"
+ },
+ {
+  "q": "Toen de politie kwam, ___ (hebben/zijn) de inbreker al ontsnapt.",
+  "v": "ontsnappen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "When the police came, the burglar had already escaped.",
+  "b": "A2"
+ },
+ {
+  "q": "De gasten ___ (hebben/zijn) al vertrokken toen het eten klaar was.",
+  "v": "vertrekken",
+  "t": "hz",
+  "p": "zij",
+  "tt": "ovt",
+  "e": "The guests had already left when the food was ready.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) mijn huiswerk al afgemaakt voordat het donker werd.",
+  "v": "afmaken",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ovt",
+  "e": "I had already finished my homework before it got dark.",
+  "b": "B1"
+ },
+ {
+  "q": "Toen we in Parijs aankwamen, ___ (hebben/zijn) jullie al weggegaan.",
+  "v": "weggaan",
+  "t": "hz",
+  "p": "jullie",
+  "tt": "ovt",
+  "e": "When we arrived in Paris, you had already left.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij ___ (hebben/zijn) zijn baan al opgegeven voordat de crisis begon.",
+  "v": "opgeven",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "He had already given up his job before the crisis began.",
+  "b": "B1"
+ },
+ {
+  "q": "Voordat ik naar Nederland kwam, ___ (hebben/zijn) ik nooit gefietst.",
+  "v": "fietsen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ovt",
+  "e": "Before I came to the Netherlands, I had never cycled.",
+  "b": "B1",
+  "aux": "h"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) de hele dag niets gegeten, dus ik had honger.",
+  "v": "eten",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ovt",
+  "e": "I hadn't eaten anything all day, so I was hungry.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn zus ___ (hebben/zijn) al drie keer gezakt voordat ze eindelijk slaagde.",
+  "v": "zakken",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "My sister had failed three times before she finally passed.",
+  "b": "B1"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) elkaar al jaren niet gezien toen we elkaar weer ontmoetten.",
+  "v": "zien",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ovt",
+  "e": "We hadn't seen each other for years when we met again.",
+  "b": "A2"
+ },
+ {
+  "q": "Toen de dokter kwam, ___ (hebben/zijn) de pijn al verdwenen.",
+  "v": "verdwijnen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "When the doctor came, the pain had already gone.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) al een kaartje gekocht, maar de trein reed niet.",
+  "v": "kopen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ovt",
+  "e": "I had already bought a ticket, but the train wasn't running.",
+  "b": "A1"
+ },
+ {
+  "q": "Toen ik de brief las, ___ (hebben/zijn) hij al gestorven.",
+  "v": "sterven",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "When I read the letter, he had already died.",
+  "b": "A2"
+ },
+ {
+  "q": "Voordat hij acteur werd, ___ (hebben/zijn) hij als ober gewerkt.",
+  "v": "werken",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "Before he became an actor, he had worked as a waiter.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) het hele huis opgeruimd voordat de gasten kwamen.",
+  "v": "opruimen",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ovt",
+  "e": "We had tidied the whole house before the guests came.",
+  "b": "B1"
+ },
+ {
+  "q": "Toen jij belde, ___ (hebben/zijn) ik net in slaap gevallen.",
+  "v": "vallen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ovt",
+  "e": "When you called, I had just fallen asleep.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij ___ (hebben/zijn) nooit in een vliegtuig gezeten tot hij dertig was.",
+  "v": "zitten",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "He had never been on a plane until he was thirty.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) het al gezegd, maar niemand luisterde.",
+  "v": "zeggen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ovt",
+  "e": "I had already said it, but nobody listened.",
+  "b": "A1"
+ },
+ {
+  "q": "Toen hij thuiskwam, ___ (hebben/zijn) de kinderen al naar bed gegaan.",
+  "v": "gaan",
+  "t": "hz",
+  "p": "zij",
+  "tt": "ovt",
+  "e": "When he came home, the children had already gone to bed.",
+  "b": "A1"
+ },
+ {
+  "q": "Toen ik in Utrecht kwam wonen, ___ (hebben/zijn) ik nog nooit een gracht gezien.",
+  "v": "zien",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ovt",
+  "e": "When I came to live in Utrecht, I had never seen a canal.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn moeder ___ (hebben/zijn) al koffie gezet toen ik beneden kwam.",
+  "v": "zetten",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "My mother had already made coffee when I came downstairs.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) hem al drie keer gebeld voordat hij opnam.",
+  "v": "bellen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ovt",
+  "e": "I had called him three times before he answered.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) de hele dag gelopen en waren doodmoe.",
+  "v": "lopen",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ovt",
+  "e": "We had walked all day and were dead tired.",
+  "b": "A2",
+  "aux": "h"
+ },
+ {
+  "q": "Toen ik bij het huis kwam, ___ (hebben/zijn) mijn vrienden al naar binnen gegaan.",
+  "v": "gaan",
+  "t": "hz",
+  "p": "zij",
+  "tt": "ovt",
+  "e": "When I got to the house, my friends had already gone inside.",
+  "b": "A1"
+ },
+ {
+  "q": "Voordat we gingen eten, ___ (hebben/zijn) we eerst een uur gezwommen.",
+  "v": "zwemmen",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ovt",
+  "e": "Before we went to eat, we had first swum for an hour.",
+  "b": "B1",
+  "aux": "h"
+ },
+ {
+  "q": "Toen ik hem sprak, ___ (hebben/zijn) hij net uit Amerika teruggekomen.",
+  "v": "terugkomen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "When I spoke to him, he had just come back from America.",
+  "b": "B1"
+ },
+ {
+  "q": "Toen het feest begon, ___ (hebben/zijn) jij al naar huis gegaan.",
+  "v": "gaan",
+  "t": "hz",
+  "p": "jij",
+  "tt": "ovt",
+  "e": "When the party started, you had already gone home.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) al uren gezocht toen ik mijn sleutels eindelijk vond.",
+  "v": "zoeken",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ovt",
+  "e": "I had been searching for hours when I finally found my keys.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) vandaag nog niets gegeten.",
+  "v": "eten",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I haven't eaten anything yet today.",
+  "b": "A1"
+ },
+ {
+  "q": "Hoe lang ___ (hebben/zijn) u vannacht geslapen?",
+  "v": "slapen",
+  "t": "hz",
+  "p": "u",
+  "tt": "ott",
+  "e": "How long did you sleep last night?",
+  "b": "A1"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) vandaag heel veel gelachen.",
+  "v": "lachen",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ott",
+  "e": "We've laughed a lot today.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn zus ___ (hebben/zijn) vorige week een baby gekregen.",
+  "v": "krijgen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "My sister had a baby last week.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) net met mijn moeder gebeld.",
+  "v": "bellen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I've just been on the phone with my mother.",
+  "b": "A1"
+ },
+ {
+  "q": "Hij ___ (hebben/zijn) deze week drie boeken gelezen.",
+  "v": "lezen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "He has read three books this week.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) mijn moeder vandaag een bos bloemen gegeven.",
+  "v": "geven",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I gave my mother a bunch of flowers today.",
+  "b": "A1"
+ },
+ {
+  "q": "De bus ___ (hebben/zijn) net vertrokken, we moeten op de volgende wachten.",
+  "v": "vertrekken",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "The bus has just left, we have to wait for the next one.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) nog nooit in Groningen geweest, jij wel?",
+  "v": "zijn",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ott",
+  "e": "We've never been to Groningen, have you?",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn vader ___ (hebben/zijn) vanochtend vroeg naar zijn werk gegaan.",
+  "v": "gaan",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "My father went to work early this morning.",
+  "b": "A1"
+ },
+ {
+  "q": "Jij ___ (hebben/zijn) vandaag echt heel goed gespeeld.",
+  "v": "spelen",
+  "t": "hz",
+  "p": "jij",
+  "tt": "ott",
+  "e": "You played really well today.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) net een mail van de school ontvangen.",
+  "v": "ontvangen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I've just received an email from the school.",
+  "b": "B1"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) vanavond heel lang gepraat.",
+  "v": "praten",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ott",
+  "e": "We talked for a really long time tonight.",
+  "b": "A1"
+ },
+ {
+  "q": "De buren ___ (hebben/zijn) vandaag hun huis verkocht.",
+  "v": "verkopen",
+  "t": "hz",
+  "p": "zij",
+  "tt": "ott",
+  "e": "The neighbours sold their house today.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) vandaag mijn rijbewijs gehaald!",
+  "v": "halen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I passed my driving test today!",
+  "b": "A1"
+ },
+ {
+  "q": "Hij ___ (hebben/zijn) net in slaap gevallen.",
+  "v": "vallen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "He has just fallen asleep.",
+  "b": "A1"
+ },
+ {
+  "q": "Jullie ___ (hebben/zijn) me vandaag heel goed geholpen.",
+  "v": "helpen",
+  "t": "hz",
+  "p": "jullie",
+  "tt": "ott",
+  "e": "You've helped me really well today.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) vanochtend te laat aangekomen.",
+  "v": "aankomen",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ott",
+  "e": "We arrived too late this morning.",
+  "b": "B1"
+ },
+ {
+  "q": "De kinderen ___ (hebben/zijn) vandaag heel lief geweest.",
+  "v": "zijn",
+  "t": "hz",
+  "p": "zij",
+  "tt": "ott",
+  "e": "The children have been very good today.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) dit jaar veel Nederlands geleerd.",
+  "v": "leren",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I've learned a lot of Dutch this year.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn tante ___ (hebben/zijn) vanmiddag zonder kloppen binnengekomen.",
+  "v": "binnenkomen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "My aunt came in this afternoon without knocking.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) net mijn koffer ingepakt.",
+  "v": "inpakken",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I've just packed my suitcase.",
+  "b": "B1"
+ },
+ {
+  "q": "U ___ (hebben/zijn) vandaag al drie keer gebeld.",
+  "v": "bellen",
+  "t": "hz",
+  "p": "u",
+  "tt": "ott",
+  "e": "You've already called three times today.",
+  "b": "A1"
+ },
+ {
+  "q": "U ___ (hebben/zijn) gisteren ook al bij ons in de winkel geweest.",
+  "v": "zijn",
+  "t": "hz",
+  "p": "u",
+  "tt": "ott",
+  "e": "You were in our shop yesterday too.",
+  "b": "A1"
+ },
+ {
+  "q": "U ___ (hebben/zijn) de verkeerde trein genomen, meneer.",
+  "v": "nemen",
+  "t": "hz",
+  "p": "u",
+  "tt": "ott",
+  "e": "You've taken the wrong train, sir.",
+  "b": "A1"
+ },
+ {
+  "q": "U ___ (hebben/zijn) vorige week een pakketje bij ons besteld.",
+  "v": "bestellen",
+  "t": "hz",
+  "p": "u",
+  "tt": "ott",
+  "e": "You ordered a parcel from us last week.",
+  "b": "B1"
+ },
+ {
+  "q": "Toen u kwam, ___ (hebben/zijn) ik al weggegaan.",
+  "v": "weggaan",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ovt",
+  "e": "When you came, I had already left.",
+  "b": "A2"
+ },
+ {
+  "q": "Jij ___ (hebben/zijn) gisteren pas om twee uur teruggekomen.",
+  "v": "terugkomen",
+  "t": "hz",
+  "p": "jij",
+  "tt": "ott",
+  "e": "You only came back at two yesterday.",
+  "b": "B1"
+ },
+ {
+  "q": "Jij ___ (hebben/zijn) vandaag nog niet buiten geweest.",
+  "v": "zijn",
+  "t": "hz",
+  "p": "jij",
+  "tt": "ott",
+  "e": "You haven't been outside yet today.",
+  "b": "A1"
+ },
+ {
+  "q": "Jij ___ (hebben/zijn) vanavond echt heel lekker gekookt.",
+  "v": "koken",
+  "t": "hz",
+  "p": "jij",
+  "tt": "ott",
+  "e": "You've cooked really well tonight.",
+  "b": "B1"
+ },
+ {
+  "q": "Jij ___ (hebben/zijn) vandaag veel te veel snoep gegeten.",
+  "v": "eten",
+  "t": "hz",
+  "p": "jij",
+  "tt": "ott",
+  "e": "You've eaten far too many sweets today.",
+  "b": "A1"
+ },
+ {
+  "q": "Jij ___ (hebben/zijn) net een prijs gewonnen!",
+  "v": "winnen",
+  "t": "hz",
+  "p": "jij",
+  "tt": "ott",
+  "e": "You've just won a prize!",
+  "b": "A1"
+ },
+ {
+  "q": "Jullie ___ (hebben/zijn) vandaag prachtig gezongen.",
+  "v": "zingen",
+  "t": "hz",
+  "p": "jullie",
+  "tt": "ott",
+  "e": "You sang beautifully today.",
+  "b": "A2"
+ },
+ {
+  "q": "Jullie ___ (hebben/zijn) nu lang genoeg gewacht.",
+  "v": "wachten",
+  "t": "hz",
+  "p": "jullie",
+  "tt": "ott",
+  "e": "You've waited long enough now.",
+  "b": "A1"
+ },
+ {
+  "q": "Jullie ___ (hebben/zijn) vanmiddag naar het centrum gelopen.",
+  "v": "lopen",
+  "t": "hz",
+  "p": "jullie",
+  "tt": "ott",
+  "e": "You walked to the centre this afternoon.",
+  "b": "A2",
+  "aux": "z"
+ },
+ {
+  "q": "Hij ___ (hebben/zijn) deze week elke dag gezwommen.",
+  "v": "zwemmen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "He has swum every day this week.",
+  "b": "B1",
+  "aux": "h"
+ },
+ {
+  "q": "Mijn dochter ___ (hebben/zijn) vandaag voor het eerst alleen naar school gefietst.",
+  "v": "fietsen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "My daughter cycled to school alone for the first time today.",
+  "b": "B1",
+  "aux": "z"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) deze zomer heel veel gefietst.",
+  "v": "fietsen",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ott",
+  "e": "We've cycled a lot this summer.",
+  "b": "B1",
+  "aux": "h"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) vandaag drie uur achter elkaar gereden.",
+  "v": "rijden",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ott",
+  "e": "We drove for three hours straight today.",
+  "b": "A1",
+  "aux": "h"
+ },
+ {
+  "q": "De vogel ___ (hebben/zijn) net door het open raam naar binnen gevlogen.",
+  "v": "vliegen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "The bird has just flown in through the open window.",
+  "b": "A2",
+  "aux": "z"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) vanochtend al een uur in de zee gezwommen.",
+  "v": "zwemmen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I've already swum in the sea for an hour this morning.",
+  "b": "B1",
+  "aux": "h"
+ },
+ {
+  "q": "Hij ___ (hebben/zijn) vanochtend zonder kaartje in de trein gestapt.",
+  "v": "stappen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "He got on the train without a ticket this morning.",
+  "b": "B1",
+  "aux": "z"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) vandaag de hele dag van winkel naar winkel gerend.",
+  "v": "rennen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I've been running from shop to shop all day today.",
+  "b": "A2",
+  "aux": "h"
+ },
+ {
+  "q": "Hij ___ (hebben/zijn) vorige week zijn arm gebroken.",
+  "v": "breken",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "He broke his arm last week.",
+  "b": "A2"
+ },
+ {
+  "q": "Onze zoon ___ (hebben/zijn) dit jaar tien centimeter gegroeid.",
+  "v": "groeien",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "Our son has grown ten centimetres this year.",
+  "b": "B1"
+ },
+ {
+  "q": "Het ___ (hebben/zijn) vandaag eindelijk gelukt!",
+  "v": "lukken",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "It finally worked today!",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) vandaag een oude vriendin ontmoet.",
+  "v": "ontmoeten",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I met an old friend today.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) net uit de bioscoop gekomen.",
+  "v": "komen",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ott",
+  "e": "We've just come out of the cinema.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn telefoon ___ (hebben/zijn) vanochtend in het water gevallen.",
+  "v": "vallen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "My phone fell in the water this morning.",
+  "b": "A1"
+ },
+ {
+  "q": "De sneeuw ___ (hebben/zijn) vandaag helemaal verdwenen.",
+  "v": "verdwijnen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "The snow has completely disappeared today.",
+  "b": "A2"
+ },
+ {
+  "q": "Het meisje ___ (hebben/zijn) vandaag de hele dag in haar kamer gebleven.",
+  "v": "blijven",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "The girl stayed in her room all day today.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) deze week twee keer naar de sportschool gegaan.",
+  "v": "gaan",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I've been to the gym twice this week.",
+  "b": "A1"
+ },
+ {
+  "q": "Wat ___ (hebben/zijn) jij vandaag gedaan?",
+  "v": "doen",
+  "t": "hz",
+  "p": "jij",
+  "tt": "ott",
+  "e": "What did you do today?",
+  "b": "A1",
+  "inv": true
+ },
+ {
+  "q": "Waar ___ (hebben/zijn) jij gisteren geweest?",
+  "v": "zijn",
+  "t": "hz",
+  "p": "jij",
+  "tt": "ott",
+  "e": "Where were you yesterday?",
+  "b": "A1",
+  "inv": true
+ },
+ {
+  "q": "Wanneer ___ (hebben/zijn) je in Nederland aangekomen?",
+  "v": "aankomen",
+  "t": "hz",
+  "p": "jij",
+  "tt": "ott",
+  "e": "When did you arrive in the Netherlands?",
+  "b": "B1",
+  "inv": true
+ },
+ {
+  "q": "Waarom ___ (hebben/zijn) je vandaag zo laat opgestaan?",
+  "v": "opstaan",
+  "t": "hz",
+  "p": "jij",
+  "tt": "ott",
+  "e": "Why did you get up so late today?",
+  "b": "B1",
+  "inv": true
+ },
+ {
+  "q": "Met wie ___ (hebben/zijn) je gisteren op het feest gedanst?",
+  "v": "dansen",
+  "t": "hz",
+  "p": "jij",
+  "tt": "ott",
+  "e": "Who did you dance with at the party yesterday?",
+  "b": "A2",
+  "aux": "h",
+  "inv": true
+ },
+ {
+  "q": "Hoe ___ (hebben/zijn) je vannacht geslapen?",
+  "v": "slapen",
+  "t": "hz",
+  "p": "jij",
+  "tt": "ott",
+  "e": "How did you sleep last night?",
+  "b": "A1",
+  "inv": true
+ },
+ {
+  "q": "___ (hebben/zijn) je ooit in Suriname geweest?",
+  "v": "zijn",
+  "t": "hz",
+  "p": "jij",
+  "tt": "ott",
+  "e": "Have you ever been to Suriname?",
+  "b": "A1",
+  "inv": true
+ },
+ {
+  "q": "Het kind ___ (hebben/zijn) vannacht drie keer wakker geworden.",
+  "v": "worden",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "The child woke up three times last night.",
+  "b": "A1"
+ },
+ {
+  "q": "Hij ___ (hebben/zijn) het hele weekend in bed gelegen.",
+  "v": "liggen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "He has been lying in bed all weekend.",
+  "b": "A1"
+ },
+ {
+  "q": "De auto ___ (hebben/zijn) de hele nacht voor de deur gestaan.",
+  "v": "staan",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "The car stood outside the door all night.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) vandaag twee uur bij de tandarts gezeten.",
+  "v": "zitten",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I spent two hours at the dentist's today.",
+  "b": "A1"
+ },
+ {
+  "q": "Hij ___ (hebben/zijn) zijn hele leven in dit dorp gewoond.",
+  "v": "wonen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "He has lived in this village all his life.",
+  "b": "A2"
+ },
+ {
+  "q": "De vergadering ___ (hebben/zijn) vandaag drie uur geduurd.",
+  "v": "duren",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "The meeting lasted three hours today.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) vanavond een mooie film gekeken.",
+  "v": "kijken",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ott",
+  "e": "We watched a lovely film tonight.",
+  "b": "A1"
+ },
+ {
+  "q": "Onze baby ___ (hebben/zijn) vandaag zijn eerste stapjes gezet!",
+  "v": "zetten",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "Our baby took his first steps today!",
+  "b": "A2"
+ },
+ {
+  "q": "De kinderen ___ (hebben/zijn) vandaag in de tuin een hut gebouwd.",
+  "v": "bouwen",
+  "t": "hz",
+  "p": "zij",
+  "tt": "ott",
+  "e": "The children built a den in the garden today.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij ___ (hebben/zijn) vanochtend zijn excuses aangeboden.",
+  "v": "aanbieden",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "He apologised this morning.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) vanmiddag de hele garage opgeruimd.",
+  "v": "opruimen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I tidied the whole garage this afternoon.",
+  "b": "B1"
+ },
+ {
+  "q": "Het pakketje ___ (hebben/zijn) vanochtend gewoon aangekomen.",
+  "v": "aankomen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "The parcel arrived just fine this morning.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn opa ___ (hebben/zijn) in de oorlog uit een kamp ontsnapt.",
+  "v": "ontsnappen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "My grandpa escaped from a camp during the war.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij ___ (hebben/zijn) gisteren weggegaan zonder gedag te zeggen.",
+  "v": "weggaan",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "He left yesterday without saying goodbye.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) net een goed plan bedacht.",
+  "v": "bedenken",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I've just come up with a good plan.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) dit jaar ons tienjarig huwelijk gevierd.",
+  "v": "vieren",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ott",
+  "e": "We celebrated our tenth wedding anniversary this year.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) net mijn moeder van het station opgehaald.",
+  "v": "ophalen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I've just picked my mother up from the station.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn zus ___ (hebben/zijn) vorige week voor haar rijexamen gezakt.",
+  "v": "zakken",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "My sister failed her driving test last week.",
+  "b": "B1"
+ },
+ {
+  "q": "Het ___ (hebben/zijn) vandaag gebleken dat het plan niet werkt.",
+  "v": "blijken",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "It became clear today that the plan doesn't work.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn moeder ___ (hebben/zijn) vandaag haar portemonnee verloren.",
+  "v": "verliezen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "My mother lost her purse today.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) vanochtend al drie koppen koffie gedronken.",
+  "v": "drinken",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I've already had three cups of coffee this morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij ___ (hebben/zijn) deze maand al heel veel verdiend.",
+  "v": "verdienen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "He has already earned a lot this month.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) mijn huiswerk vandaag niet gemaakt.",
+  "v": "maken",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I didn't do my homework today.",
+  "b": "A1"
+ },
+ {
+  "q": "Jullie ___ (hebben/zijn) deze week hard gestudeerd.",
+  "v": "studeren",
+  "t": "hz",
+  "p": "jullie",
+  "tt": "ott",
+  "e": "You've studied hard this week.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn buurvrouw ___ (hebben/zijn) dit jaar haar eerste boek geschreven.",
+  "v": "schrijven",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "My neighbour wrote her first book this year.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) net een taxi besteld, hij is er over vijf minuten.",
+  "v": "bestellen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I've just ordered a taxi, it'll be here in five minutes.",
+  "b": "B1"
+ },
+ {
+  "q": "Hij ___ (hebben/zijn) deze week al drie keer te laat gekomen.",
+  "v": "komen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "He has been late three times already this week.",
+  "b": "A1"
+ },
+ {
+  "q": "Je koffie ___ (hebben/zijn) helemaal koud geworden.",
+  "v": "worden",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "Your coffee has gone completely cold.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij ___ (hebben/zijn) net over de grens gereden.",
+  "v": "rijden",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ott",
+  "e": "We've just driven across the border.",
+  "b": "A1",
+  "aux": "z"
+ },
+ {
+  "q": "Ik ___ (hebben/zijn) me vandaag heel goed gevoeld.",
+  "v": "voelen",
+  "t": "hz",
+  "p": "ik",
+  "tt": "ott",
+  "e": "I've felt very well today.",
+  "b": "A1"
+ },
+ {
+  "q": "Onze kat ___ (hebben/zijn) vandaag na drie dagen eindelijk teruggekomen.",
+  "v": "terugkomen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ott",
+  "e": "After three days our cat finally came back today.",
+  "b": "B1"
+ },
+ {
+  "q": "Toen ik de deur opendeed, ___ (hebben/zijn) de kat al naar buiten gerend.",
+  "v": "rennen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "When I opened the door, the cat had already run outside.",
+  "b": "A2",
+  "aux": "z"
+ },
+ {
+  "q": "Toen de bel ging, ___ (hebben/zijn) wij al een uur gedanst.",
+  "v": "dansen",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ovt",
+  "e": "When the bell rang, we had already been dancing for an hour.",
+  "b": "A2",
+  "aux": "h"
+ },
+ {
+  "q": "Toen we eindelijk aankwamen, ___ (hebben/zijn) we al tien uur gereden.",
+  "v": "rijden",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ovt",
+  "e": "When we finally arrived, we had been driving for ten hours.",
+  "b": "A1",
+  "aux": "h"
+ },
+ {
+  "q": "Voordat het ging regenen, ___ (hebben/zijn) wij al naar huis gefietst.",
+  "v": "fietsen",
+  "t": "hz",
+  "p": "wij",
+  "tt": "ovt",
+  "e": "Before it started raining, we had already cycled home.",
+  "b": "B1",
+  "aux": "z"
+ },
+ {
+  "q": "Toen de film begon, ___ (hebben/zijn) hij al in slaap gevallen.",
+  "v": "vallen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "When the film started, he had already fallen asleep.",
+  "b": "A2"
+ },
+ {
+  "q": "Voordat ze naar Leiden verhuisde, ___ (hebben/zijn) ze nooit alleen gewoond.",
+  "v": "wonen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "Before she moved to Leiden, she had never lived alone.",
+  "b": "A2"
+ },
+ {
+  "q": "Toen ik in Rome aankwam, ___ (hebben/zijn) mijn koffer nog niet aangekomen.",
+  "v": "aankomen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "When I arrived in Rome, my suitcase hadn't arrived yet.",
+  "b": "B1"
+ },
+ {
+  "q": "Toen ik opstond, ___ (hebben/zijn) mijn man de kinderen al naar school gebracht.",
+  "v": "brengen",
+  "t": "hz",
+  "p": "hij",
+  "tt": "ovt",
+  "e": "When I got up, my husband had already taken the children to school.",
+  "b": "A1"
+ }
+]

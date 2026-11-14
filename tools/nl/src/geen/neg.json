@@ -1,0 +1,857 @@
+[
+ {
+  "q": "Ik heb ___ (nobody) gezien.",
+  "a": "niemand",
+  "o": [
+   "niemand",
+   "nooit",
+   "nergens"
+  ],
+  "e": "I didn't see anybody.",
+  "w": [
+   "niemand means nobody; no niet with it.",
+   "niemand = nobody."
+  ],
+  "t": "neg",
+  "b": "A1"
+ },
+ {
+  "q": "Hij eet ___ (never) vis.",
+  "a": "nooit",
+  "o": [
+   "nooit",
+   "nergens",
+   "niemand"
+  ],
+  "e": "He never eats fish.",
+  "w": [
+   "nooit means never; no niet with it.",
+   "nooit = never."
+  ],
+  "t": "neg",
+  "b": "A1"
+ },
+ {
+  "q": "Ik weet ___ (nothing).",
+  "a": "niets",
+  "o": [
+   "niets",
+   "niemand",
+   "nooit"
+  ],
+  "e": "I know nothing.",
+  "w": [
+   "niets (or niks) means nothing; no niet with it.",
+   "niets = nothing."
+  ],
+  "x": [
+   "niks"
+  ],
+  "t": "neg",
+  "b": "A1"
+ },
+ {
+  "q": "Ik kan mijn sleutels ___ (nowhere) vinden.",
+  "a": "nergens",
+  "o": [
+   "nergens",
+   "niets",
+   "nooit"
+  ],
+  "e": "I can't find my keys anywhere.",
+  "w": [
+   "nergens means nowhere or not anywhere.",
+   "nergens = nowhere."
+  ],
+  "t": "neg",
+  "b": "A2"
+ },
+ {
+  "q": "___ (nobody) weet het antwoord.",
+  "a": "Niemand",
+  "o": [
+   "Niemand",
+   "Nergens",
+   "Niets"
+  ],
+  "e": "Nobody knows the answer.",
+  "w": [
+   "niemand means nobody; no niet with it.",
+   "niemand = nobody."
+  ],
+  "t": "neg",
+  "b": "A1"
+ },
+ {
+  "q": "Zij heeft ___ (not a single) fout gemaakt.",
+  "a": "geen enkele",
+  "o": [
+   "geen enkele",
+   "niet enkele",
+   "nooit"
+  ],
+  "e": "She didn't make a single mistake.",
+  "w": [
+   "geen enkele means not a single, before a de word or plural.",
+   "geen enkele = not a single."
+  ],
+  "t": "neg",
+  "b": "B1"
+ },
+ {
+  "q": "We gaan ___ (never) op vakantie.",
+  "a": "nooit",
+  "o": [
+   "nooit",
+   "niemand",
+   "niets"
+  ],
+  "e": "We never go on holiday.",
+  "w": [
+   "nooit means never; no niet with it.",
+   "nooit = never."
+  ],
+  "t": "neg",
+  "b": "A1"
+ },
+ {
+  "q": "Er is ___ (nothing) in de doos.",
+  "a": "niets",
+  "o": [
+   "niets",
+   "nooit",
+   "nergens"
+  ],
+  "e": "There's nothing in the box.",
+  "w": [
+   "niets (or niks) means nothing; no niet with it.",
+   "niets = nothing."
+  ],
+  "x": [
+   "niks"
+  ],
+  "t": "neg",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ken hier ___ (nobody).",
+  "a": "niemand",
+  "o": [
+   "niemand",
+   "nergens",
+   "niets"
+  ],
+  "e": "I don't know anybody here.",
+  "w": [
+   "niemand means nobody; no niet with it.",
+   "niemand = nobody."
+  ],
+  "t": "neg",
+  "b": "A1"
+ },
+ {
+  "q": "Hij gaat ___ (nowhere) heen.",
+  "a": "nergens",
+  "o": [
+   "nergens",
+   "niemand",
+   "niets"
+  ],
+  "e": "He isn't going anywhere.",
+  "w": [
+   "nergens means nowhere or not anywhere.",
+   "nergens = nowhere."
+  ],
+  "t": "neg",
+  "b": "A2"
+ },
+ {
+  "q": "Zij zegt ___ (nothing).",
+  "a": "niets",
+  "o": [
+   "niets",
+   "nooit",
+   "nergens"
+  ],
+  "e": "She says nothing.",
+  "w": [
+   "niets (or niks) means nothing; no niet with it.",
+   "niets = nothing."
+  ],
+  "x": [
+   "niks"
+  ],
+  "t": "neg",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb ___ (never) in Japan gewoond.",
+  "a": "nooit",
+  "o": [
+   "nooit",
+   "nergens",
+   "niemand"
+  ],
+  "e": "I've never lived in Japan.",
+  "w": [
+   "nooit means never; no niet with it.",
+   "nooit = never."
+  ],
+  "t": "neg",
+  "b": "A2"
+ },
+ {
+  "q": "Er is ___ (nobody) thuis.",
+  "a": "niemand",
+  "o": [
+   "niemand",
+   "niets",
+   "nooit"
+  ],
+  "e": "Nobody is home.",
+  "w": [
+   "niemand means nobody; no niet with it.",
+   "niemand = nobody."
+  ],
+  "t": "neg",
+  "b": "A1"
+ },
+ {
+  "q": "Dat heeft ___ (not a single) zin.",
+  "a": "geen enkele",
+  "o": [
+   "geen enkele",
+   "geen enkel",
+   "niet enkele"
+  ],
+  "e": "That makes no sense at all.",
+  "w": [
+   "geen enkele means not a single, before a de word or plural.",
+   "geen enkele = not a single."
+  ],
+  "t": "neg",
+  "b": "B1"
+ },
+ {
+  "q": "Hier kun je ___ (nowhere) parkeren.",
+  "a": "nergens",
+  "o": [
+   "nergens",
+   "niets",
+   "nooit"
+  ],
+  "e": "You can't park anywhere here.",
+  "w": [
+   "nergens means nowhere or not anywhere.",
+   "nergens = nowhere."
+  ],
+  "t": "neg",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb ___ (nothing) gekocht.",
+  "a": "niets",
+  "o": [
+   "niets",
+   "nergens",
+   "niemand"
+  ],
+  "e": "I didn't buy anything.",
+  "w": [
+   "niets (or niks) means nothing; no niet with it.",
+   "niets = nothing."
+  ],
+  "x": [
+   "niks"
+  ],
+  "t": "neg",
+  "b": "A1"
+ },
+ {
+  "q": "Ze belt ___ (never) terug.",
+  "a": "nooit",
+  "o": [
+   "nooit",
+   "niemand",
+   "niets"
+  ],
+  "e": "She never calls back.",
+  "w": [
+   "nooit means never; no niet with it.",
+   "nooit = never."
+  ],
+  "t": "neg",
+  "b": "A2"
+ },
+ {
+  "q": "___ (nothing) is onmogelijk.",
+  "a": "Niets",
+  "o": [
+   "Niets",
+   "Nooit",
+   "Nergens"
+  ],
+  "e": "Nothing is impossible.",
+  "w": [
+   "niets (or niks) means nothing; no niet with it.",
+   "niets = nothing."
+  ],
+  "x": [
+   "Niks"
+  ],
+  "t": "neg",
+  "b": "A2"
+ },
+ {
+  "q": "We hebben ___ (nobody) gevraagd.",
+  "a": "niemand",
+  "o": [
+   "niemand",
+   "nergens",
+   "niets"
+  ],
+  "e": "We didn't ask anybody.",
+  "w": [
+   "niemand means nobody; no niet with it.",
+   "niemand = nobody."
+  ],
+  "t": "neg",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ben ___ (never) te laat.",
+  "a": "nooit",
+  "o": [
+   "nooit",
+   "niemand",
+   "niets"
+  ],
+  "e": "I'm never late.",
+  "w": [
+   "nooit means never; no niet with it.",
+   "nooit = never."
+  ],
+  "t": "neg",
+  "b": "A1"
+ },
+ {
+  "q": "Ik hoor ___ (nothing).",
+  "a": "niets",
+  "o": [
+   "niets",
+   "nooit",
+   "nergens"
+  ],
+  "e": "I can't hear anything.",
+  "w": [
+   "niets (or niks) means nothing; no niet with it.",
+   "niets = nothing."
+  ],
+  "x": [
+   "niks"
+  ],
+  "t": "neg",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb het ___ (nowhere) gelezen.",
+  "a": "nergens",
+  "o": [
+   "nergens",
+   "nooit",
+   "niemand"
+  ],
+  "e": "I haven't read it anywhere.",
+  "w": [
+   "nergens means nowhere or not anywhere.",
+   "nergens = nowhere."
+  ],
+  "t": "neg",
+  "b": "B1"
+ },
+ {
+  "q": "Er was ___ (not a single) wolk aan de lucht.",
+  "a": "geen enkele",
+  "o": [
+   "geen enkele",
+   "niet enkele",
+   "niemand"
+  ],
+  "e": "There was not a single cloud in the sky.",
+  "w": [
+   "geen enkele means not a single, before a de word or plural.",
+   "geen enkele = not a single."
+  ],
+  "t": "neg",
+  "b": "B1"
+ },
+ {
+  "q": "___ (nobody) heeft mij geholpen.",
+  "a": "Niemand",
+  "o": [
+   "Niemand",
+   "Niets",
+   "Nooit"
+  ],
+  "e": "Nobody helped me.",
+  "w": [
+   "niemand means nobody; no niet with it.",
+   "niemand = nobody."
+  ],
+  "t": "neg",
+  "b": "A2"
+ },
+ {
+  "q": "Hij drinkt ___ (never) alcohol.",
+  "a": "nooit",
+  "o": [
+   "nooit",
+   "niets",
+   "nergens"
+  ],
+  "e": "He never drinks alcohol.",
+  "w": [
+   "nooit means never; no niet with it.",
+   "nooit = never."
+  ],
+  "t": "neg",
+  "b": "A2"
+ },
+ {
+  "q": "Daar weet ik ___ (nothing) van.",
+  "a": "niets",
+  "o": [
+   "niets",
+   "nergens",
+   "niemand"
+  ],
+  "e": "I know nothing about that.",
+  "w": [
+   "niets (or niks) means nothing; no niet with it.",
+   "niets = nothing."
+  ],
+  "x": [
+   "niks"
+  ],
+  "t": "neg",
+  "b": "B1"
+ },
+ {
+  "q": "Ik voel me ___ (nowhere) zo thuis als hier.",
+  "a": "nergens",
+  "o": [
+   "nergens",
+   "niemand",
+   "niets"
+  ],
+  "e": "I feel at home nowhere as much as here.",
+  "w": [
+   "nergens means nowhere or not anywhere.",
+   "nergens = nowhere."
+  ],
+  "t": "neg",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb met ___ (nobody) gepraat.",
+  "a": "niemand",
+  "o": [
+   "niemand",
+   "nooit",
+   "nergens"
+  ],
+  "e": "I didn't talk to anybody.",
+  "w": [
+   "niemand means nobody; no niet with it.",
+   "niemand = nobody."
+  ],
+  "t": "neg",
+  "b": "A2"
+ },
+ {
+  "q": "Zij is ___ (never) ziek.",
+  "a": "nooit",
+  "o": [
+   "nooit",
+   "nergens",
+   "niemand"
+  ],
+  "e": "She is never ill.",
+  "w": [
+   "nooit means never; no niet with it.",
+   "nooit = never."
+  ],
+  "t": "neg",
+  "b": "A1"
+ },
+ {
+  "q": "Er gebeurt hier ___ (nothing).",
+  "a": "niets",
+  "o": [
+   "niets",
+   "niemand",
+   "nooit"
+  ],
+  "e": "Nothing happens here.",
+  "w": [
+   "niets (or niks) means nothing; no niet with it.",
+   "niets = nothing."
+  ],
+  "x": [
+   "niks"
+  ],
+  "t": "neg",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb ___ (not a single) idee.",
+  "a": "geen enkel",
+  "o": [
+   "geen enkel",
+   "geen enkele",
+   "niet enkel"
+  ],
+  "e": "I have no idea at all.",
+  "w": [
+   "A het word takes geen enkel, without the e.",
+   "het woord: geen enkel."
+  ],
+  "t": "neg",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb ___ (nowhere) pijn.",
+  "a": "nergens",
+  "o": [
+   "nergens",
+   "niets",
+   "nooit"
+  ],
+  "e": "I don't hurt anywhere.",
+  "w": [
+   "nergens means nowhere or not anywhere.",
+   "nergens = nowhere."
+  ],
+  "t": "neg",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb hem ___ (never) ontmoet.",
+  "a": "nooit",
+  "o": [
+   "nooit",
+   "nergens",
+   "niemand"
+  ],
+  "e": "I've never met him.",
+  "w": [
+   "nooit means never; no niet with it.",
+   "nooit = never."
+  ],
+  "t": "neg",
+  "b": "A2"
+ },
+ {
+  "q": "Ik zie ___ (nobody) op straat.",
+  "a": "niemand",
+  "o": [
+   "niemand",
+   "niets",
+   "nooit"
+  ],
+  "e": "I don't see anybody in the street.",
+  "w": [
+   "niemand means nobody; no niet with it.",
+   "niemand = nobody."
+  ],
+  "t": "neg",
+  "b": "A1"
+ },
+ {
+  "q": "Ik wil ___ (nothing) drinken.",
+  "a": "niets",
+  "o": [
+   "niets",
+   "nooit",
+   "nergens"
+  ],
+  "e": "I don't want anything to drink.",
+  "w": [
+   "niets (or niks) means nothing; no niet with it.",
+   "niets = nothing."
+  ],
+  "x": [
+   "niks"
+  ],
+  "t": "neg",
+  "b": "A1"
+ },
+ {
+  "q": "Wij hebben ___ (not a single) probleem gehad.",
+  "a": "geen enkel",
+  "o": [
+   "geen enkel",
+   "geen enkele",
+   "nooit"
+  ],
+  "e": "We didn't have a single problem.",
+  "w": [
+   "A het word takes geen enkel, without the e.",
+   "het woord: geen enkel."
+  ],
+  "t": "neg",
+  "b": "B1"
+ },
+ {
+  "q": "Hij komt ___ (never) op tijd.",
+  "a": "nooit",
+  "o": [
+   "nooit",
+   "nergens",
+   "niemand"
+  ],
+  "e": "He never arrives on time.",
+  "w": [
+   "nooit means never; no niet with it.",
+   "nooit = never."
+  ],
+  "t": "neg",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb ___ (nothing) gezegd.",
+  "a": "niets",
+  "o": [
+   "niets",
+   "niemand",
+   "nooit"
+  ],
+  "e": "I didn't say anything.",
+  "w": [
+   "niets (or niks) means nothing; no niet with it.",
+   "niets = nothing."
+  ],
+  "x": [
+   "niks"
+  ],
+  "t": "neg",
+  "b": "A1"
+ },
+ {
+  "q": "Er woont ___ (nobody) in dat huis.",
+  "a": "niemand",
+  "o": [
+   "niemand",
+   "nooit",
+   "nergens"
+  ],
+  "e": "Nobody lives in that house.",
+  "w": [
+   "niemand means nobody; no niet with it.",
+   "niemand = nobody."
+  ],
+  "t": "neg",
+  "b": "A2"
+ },
+ {
+  "q": "Ze gaat ___ (nowhere) zonder haar hond.",
+  "a": "nergens",
+  "o": [
+   "nergens",
+   "nooit",
+   "niemand"
+  ],
+  "e": "She goes nowhere without her dog.",
+  "w": [
+   "nergens means nowhere or not anywhere.",
+   "nergens = nowhere."
+  ],
+  "t": "neg",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb ___ (not a single) vraag.",
+  "a": "geen enkele",
+  "o": [
+   "geen enkele",
+   "geen enkel",
+   "niet enkele"
+  ],
+  "e": "I don't have a single question.",
+  "w": [
+   "geen enkele means not a single, before a de word or plural.",
+   "geen enkele = not a single."
+  ],
+  "t": "neg",
+  "b": "B1"
+ },
+ {
+  "q": "We eten ___ (never) samen.",
+  "a": "nooit",
+  "o": [
+   "nooit",
+   "niemand",
+   "niets"
+  ],
+  "e": "We never eat together.",
+  "w": [
+   "nooit means never; no niet with it.",
+   "nooit = never."
+  ],
+  "t": "neg",
+  "b": "A2"
+ },
+ {
+  "q": "Er is ___ (nothing) aan de hand.",
+  "a": "niets",
+  "o": [
+   "niets",
+   "nooit",
+   "nergens"
+  ],
+  "e": "Nothing is wrong.",
+  "w": [
+   "niets (or niks) means nothing; no niet with it.",
+   "niets = nothing."
+  ],
+  "x": [
+   "niks"
+  ],
+  "t": "neg",
+  "b": "A2"
+ },
+ {
+  "q": "___ (nobody) is perfect.",
+  "a": "Niemand",
+  "o": [
+   "Niemand",
+   "Nergens",
+   "Niets"
+  ],
+  "e": "Nobody is perfect.",
+  "w": [
+   "niemand means nobody; no niet with it.",
+   "niemand = nobody."
+  ],
+  "t": "neg",
+  "b": "A1"
+ },
+ {
+  "q": "Hij heeft ___ (nowhere) zin in.",
+  "a": "nergens",
+  "o": [
+   "nergens",
+   "niemand",
+   "niets"
+  ],
+  "e": "He doesn't feel like anything.",
+  "w": [
+   "nergens means nowhere or not anywhere.",
+   "nergens = nowhere."
+  ],
+  "t": "neg",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb ___ (never) een hond gehad.",
+  "a": "nooit",
+  "o": [
+   "nooit",
+   "niets",
+   "nergens"
+  ],
+  "e": "I've never had a dog.",
+  "w": [
+   "nooit means never; no niet with it.",
+   "nooit = never."
+  ],
+  "t": "neg",
+  "b": "A2"
+ },
+ {
+  "q": "Dat kost ___ (nothing).",
+  "a": "niets",
+  "o": [
+   "niets",
+   "nergens",
+   "niemand"
+  ],
+  "e": "That costs nothing.",
+  "w": [
+   "niets (or niks) means nothing; no niet with it.",
+   "niets = nothing."
+  ],
+  "x": [
+   "niks"
+  ],
+  "t": "neg",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb het aan ___ (nobody) verteld.",
+  "a": "niemand",
+  "o": [
+   "niemand",
+   "niets",
+   "nooit"
+  ],
+  "e": "I didn't tell anybody.",
+  "w": [
+   "niemand means nobody; no niet with it.",
+   "niemand = nobody."
+  ],
+  "t": "neg",
+  "b": "A2"
+ },
+ {
+  "q": "Er staat ___ (not a single) auto op straat.",
+  "a": "geen enkele",
+  "o": [
+   "geen enkele",
+   "geen enkel",
+   "niet enkele"
+  ],
+  "e": "There isn't a single car in the street.",
+  "w": [
+   "geen enkele means not a single, before a de word or plural.",
+   "geen enkele = not a single."
+  ],
+  "t": "neg",
+  "b": "B1"
+ },
+ {
+  "q": "Zij vergeet ___ (never) een verjaardag.",
+  "a": "nooit",
+  "o": [
+   "nooit",
+   "niets",
+   "nergens"
+  ],
+  "e": "She never forgets a birthday.",
+  "w": [
+   "nooit means never; no niet with it.",
+   "nooit = never."
+  ],
+  "t": "neg",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb ___ (nothing) te doen.",
+  "a": "niets",
+  "o": [
+   "niets",
+   "nergens",
+   "niemand"
+  ],
+  "e": "I have nothing to do.",
+  "w": [
+   "niets (or niks) means nothing; no niet with it.",
+   "niets = nothing."
+  ],
+  "x": [
+   "niks"
+  ],
+  "t": "neg",
+  "b": "A2"
+ }
+]

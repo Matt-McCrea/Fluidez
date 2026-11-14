@@ -1,0 +1,435 @@
+[
+ {
+  "nl": "Help!",
+  "en": "Help!",
+  "alt": [
+   "Help me!"
+  ],
+  "th": "hulp",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Kunt u mij helpen?",
+  "en": "Can you help me?",
+  "alt": [
+   "Kun je me helpen?"
+  ],
+  "th": "hulp",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Sorry, mag ik u iets vragen?",
+  "en": "Excuse me, can I ask you something?",
+  "alt": [
+   "Sorry, mag ik je iets vragen?"
+  ],
+  "th": "hulp",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben verdwaald.",
+  "en": "I'm lost.",
+  "th": "hulp",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Waar is het station?",
+  "en": "Where's the station?",
+  "th": "hulp",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Hoe kom ik bij het centrum?",
+  "en": "How do I get to the centre?",
+  "th": "hulp",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Is het ver?",
+  "en": "Is it far?",
+  "th": "hulp",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Het is vlakbij.",
+  "en": "It's close by.",
+  "alt": [
+   "Het is hier vlakbij."
+  ],
+  "th": "hulp",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Rechtdoor.",
+  "en": "Straight on.",
+  "th": "hulp",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ga hier linksaf.",
+  "en": "Turn left here.",
+  "th": "hulp",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "De tweede straat rechts.",
+  "en": "The second street on the right.",
+  "th": "hulp",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Op de hoek.",
+  "en": "On the corner.",
+  "th": "hulp",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik spreek een beetje Nederlands.",
+  "en": "I speak a little Dutch.",
+  "th": "hulp",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Spreekt u Engels?",
+  "en": "Do you speak English?",
+  "th": "hulp",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik begrijp het niet.",
+  "en": "I don't understand.",
+  "th": "hulp",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Een kaartje naar Utrecht, alstublieft.",
+  "en": "A ticket to Utrecht, please.",
+  "th": "hulp",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Enkele reis of retour?",
+  "en": "Single or return?",
+  "th": "hulp",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Van welk spoor vertrekt de trein?",
+  "en": "Which platform does the train leave from?",
+  "th": "hulp",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Is dit de trein naar Amsterdam?",
+  "en": "Is this the train to Amsterdam?",
+  "th": "hulp",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Moet ik overstappen?",
+  "en": "Do I have to change trains?",
+  "th": "hulp",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "De trein heeft vertraging.",
+  "en": "The train is delayed.",
+  "th": "hulp",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "De trein rijdt niet.",
+  "en": "The train isn't running.",
+  "th": "hulp",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Hoe laat vertrekt de bus?",
+  "en": "What time does the bus leave?",
+  "th": "hulp",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Welke bus moet ik nemen?",
+  "en": "Which bus should I take?",
+  "th": "hulp",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Waar moet ik uitstappen?",
+  "en": "Where do I get off?",
+  "th": "hulp",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik moet hier eruit.",
+  "en": "This is my stop.",
+  "th": "hulp",
+  "b": "A2",
+  "t": 3,
+  "n": "Literally: I have to get out here."
+ },
+ {
+  "nl": "Waar kan ik inchecken?",
+  "en": "Where do I tap in?",
+  "th": "hulp",
+  "b": "A2",
+  "t": 2,
+  "n": "You check in and out with your card on trains, trams and buses."
+ },
+ {
+  "nl": "Vergeet niet uit te checken.",
+  "en": "Don't forget to tap out.",
+  "th": "hulp",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Waar kan ik een fiets huren?",
+  "en": "Where can I rent a bike?",
+  "th": "hulp",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Pas op voor de fietsers!",
+  "en": "Watch out for the cyclists!",
+  "th": "hulp",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Mijn fiets is gestolen.",
+  "en": "My bike has been stolen.",
+  "th": "hulp",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Kunt u een taxi bellen?",
+  "en": "Can you call a taxi?",
+  "th": "hulp",
+  "b": "A1",
+  "t": 3
+ },
+ {
+  "nl": "Mijn keel doet pijn.",
+  "en": "My throat hurts.",
+  "alt": [
+   "Ik heb keelpijn."
+  ],
+  "th": "hulp",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Het doet hier pijn.",
+  "en": "It hurts here.",
+  "th": "hulp",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik wil een afspraak maken.",
+  "en": "I'd like to make an appointment.",
+  "th": "hulp",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Ik moet naar de huisarts.",
+  "en": "I need to see the doctor.",
+  "alt": [
+   "Ik moet naar de dokter."
+  ],
+  "th": "hulp",
+  "b": "A2",
+  "t": 1,
+  "n": "De huisarts is your GP, the first stop for almost everything."
+ },
+ {
+  "nl": "Hoe lang heeft u hier al last van?",
+  "en": "How long have you had this?",
+  "th": "hulp",
+  "b": "B1",
+  "t": 2,
+  "n": "What the doctor asks. Last hebben van: to be bothered by."
+ },
+ {
+  "nl": "Sinds gisteren.",
+  "en": "Since yesterday.",
+  "th": "hulp",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Waar is de apotheek?",
+  "en": "Where's the pharmacy?",
+  "th": "hulp",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Heeft u iets tegen hoofdpijn?",
+  "en": "Do you have something for a headache?",
+  "th": "hulp",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Hoe vaak moet ik dit innemen?",
+  "en": "How often should I take this?",
+  "th": "hulp",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Drie keer per dag.",
+  "en": "Three times a day.",
+  "th": "hulp",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik ben allergisch voor penicilline.",
+  "en": "I'm allergic to penicillin.",
+  "th": "hulp",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Bel 112!",
+  "en": "Call 112!",
+  "alt": [
+   "Bel een ambulance!"
+  ],
+  "th": "hulp",
+  "b": "A1",
+  "t": 1,
+  "n": "112 is the emergency number for police, fire and ambulance."
+ },
+ {
+  "nl": "Bel de politie!",
+  "en": "Call the police!",
+  "th": "hulp",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Het is een noodgeval.",
+  "en": "It's an emergency.",
+  "th": "hulp",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Er is een ongeluk gebeurd.",
+  "en": "There's been an accident.",
+  "th": "hulp",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Brand!",
+  "en": "Fire!",
+  "th": "hulp",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Is alles goed?",
+  "en": "Are you all right?",
+  "alt": [
+   "Gaat het?"
+  ],
+  "th": "hulp",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben mijn tas kwijt.",
+  "en": "I've lost my bag.",
+  "th": "hulp",
+  "b": "A2",
+  "t": 1,
+  "n": "Kwijt zijn: to have lost something."
+ },
+ {
+  "nl": "Mijn portemonnee is gestolen.",
+  "en": "My wallet has been stolen.",
+  "th": "hulp",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Waar is het politiebureau?",
+  "en": "Where's the police station?",
+  "th": "hulp",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Mag ik even uw telefoon gebruiken?",
+  "en": "Could I use your phone?",
+  "th": "hulp",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Mijn telefoon is leeg.",
+  "en": "My phone's dead.",
+  "th": "hulp",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: my phone is empty."
+ },
+ {
+  "nl": "Waar kan ik mijn telefoon opladen?",
+  "en": "Where can I charge my phone?",
+  "th": "hulp",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Is er hier een toilet?",
+  "en": "Is there a toilet around here?",
+  "th": "hulp",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Dank u wel voor uw hulp.",
+  "en": "Thank you for your help.",
+  "alt": [
+   "Bedankt voor je hulp."
+  ],
+  "th": "hulp",
+  "b": "A1",
+  "t": 1
+ }
+]

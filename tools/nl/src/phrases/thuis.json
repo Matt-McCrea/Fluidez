@@ -1,0 +1,432 @@
+[
+ {
+  "nl": "Kom binnen!",
+  "en": "Come in!",
+  "alt": [
+   "Kom erin!"
+  ],
+  "th": "thuis",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Doe alsof je thuis bent.",
+  "en": "Make yourself at home.",
+  "th": "thuis",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: act as if you are at home."
+ },
+ {
+  "nl": "Ga lekker zitten.",
+  "en": "Have a seat.",
+  "alt": [
+   "Ga zitten."
+  ],
+  "th": "thuis",
+  "b": "A1",
+  "t": 1,
+  "n": "Lekker here just makes it warm and relaxed."
+ },
+ {
+  "nl": "Wil je iets drinken?",
+  "en": "Would you like something to drink?",
+  "th": "thuis",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Wil je koffie of thee?",
+  "en": "Would you like coffee or tea?",
+  "th": "thuis",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ja, graag.",
+  "en": "Yes, please.",
+  "th": "thuis",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Nee, dank je.",
+  "en": "No, thank you.",
+  "alt": [
+   "Nee, dankjewel."
+  ],
+  "th": "thuis",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Doe maar een glaasje water.",
+  "en": "Just a glass of water, please.",
+  "th": "thuis",
+  "b": "A2",
+  "t": 2,
+  "n": "Doe maar is a very common way to say I'll have."
+ },
+ {
+  "nl": "Wil je melk en suiker?",
+  "en": "Do you take milk and sugar?",
+  "th": "thuis",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Mag ik je jas aannemen?",
+  "en": "Can I take your coat?",
+  "th": "thuis",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Je mag je schoenen aanhouden.",
+  "en": "You can keep your shoes on.",
+  "th": "thuis",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Waar is de wc?",
+  "en": "Where's the toilet?",
+  "alt": [
+   "Waar is het toilet?"
+  ],
+  "th": "thuis",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Wat een mooi huis!",
+  "en": "What a lovely house!",
+  "th": "thuis",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Gezellig hier!",
+  "en": "It's really nice and cosy here!",
+  "th": "thuis",
+  "b": "A2",
+  "t": 1,
+  "n": "Gezellig means cosy, friendly and fun all at once. You will hear it constantly."
+ },
+ {
+  "nl": "Het eten is klaar!",
+  "en": "Dinner's ready!",
+  "th": "thuis",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Aan tafel!",
+  "en": "Come to the table!",
+  "th": "thuis",
+  "b": "A1",
+  "t": 1,
+  "n": "Called out when the food is served."
+ },
+ {
+  "nl": "Lekker!",
+  "en": "Delicious!",
+  "th": "thuis",
+  "b": "A1",
+  "t": 1,
+  "n": "Also means nice or pleasant, not only for food."
+ },
+ {
+  "nl": "Dit is echt heel lekker.",
+  "en": "This is really delicious.",
+  "th": "thuis",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Wat eten we vanavond?",
+  "en": "What are we having tonight?",
+  "th": "thuis",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Wil je nog wat?",
+  "en": "Would you like some more?",
+  "alt": [
+   "Wil je nog een beetje?"
+  ],
+  "th": "thuis",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Mag ik het zout?",
+  "en": "Can I have the salt?",
+  "alt": [
+   "Kun je het zout even aangeven?"
+  ],
+  "th": "thuis",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik kook vanavond.",
+  "en": "I'm cooking tonight.",
+  "th": "thuis",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Zullen we pizza bestellen?",
+  "en": "Shall we order pizza?",
+  "th": "thuis",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Wie doet de afwas?",
+  "en": "Who's doing the dishes?",
+  "th": "thuis",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik doe de afwas wel.",
+  "en": "I'll do the dishes.",
+  "th": "thuis",
+  "b": "A2",
+  "t": 2,
+  "n": "Wel here makes it a friendly offer."
+ },
+ {
+  "nl": "Kun je de tafel dekken?",
+  "en": "Can you set the table?",
+  "th": "thuis",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Kun je even helpen?",
+  "en": "Can you give me a hand?",
+  "th": "thuis",
+  "b": "A1",
+  "t": 1,
+  "n": "Even softens a request: just for a moment."
+ },
+ {
+  "nl": "Wil je de vuilnis buiten zetten?",
+  "en": "Will you put the rubbish out?",
+  "alt": [
+   "Wil je de vuilniszak buiten zetten?"
+  ],
+  "th": "thuis",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "De vaatwasser is klaar.",
+  "en": "The dishwasher's done.",
+  "th": "thuis",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Ik ga de was doen.",
+  "en": "I'm going to do the washing.",
+  "th": "thuis",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Kun je het licht uitdoen?",
+  "en": "Can you turn the light off?",
+  "th": "thuis",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Doe de deur even dicht.",
+  "en": "Close the door, would you.",
+  "th": "thuis",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Het is koud hier.",
+  "en": "It's cold in here.",
+  "th": "thuis",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Zet de verwarming maar hoger.",
+  "en": "Turn the heating up.",
+  "th": "thuis",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Waar zijn mijn sleutels?",
+  "en": "Where are my keys?",
+  "th": "thuis",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ben thuis!",
+  "en": "I'm home!",
+  "th": "thuis",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Hoe was je dag?",
+  "en": "How was your day?",
+  "th": "thuis",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ga naar bed.",
+  "en": "I'm going to bed.",
+  "th": "thuis",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Goedemorgen! Goed geslapen?",
+  "en": "Morning! Did you sleep well?",
+  "th": "thuis",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ga even douchen.",
+  "en": "I'm going to have a shower.",
+  "th": "thuis",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Wie heeft de afstandsbediening?",
+  "en": "Who's got the remote?",
+  "th": "thuis",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Wat is het wifi wachtwoord?",
+  "en": "What's the wifi password?",
+  "alt": [
+   "Wat is het wachtwoord van de wifi?"
+  ],
+  "th": "thuis",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Er is geen melk meer.",
+  "en": "We're out of milk.",
+  "th": "thuis",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik ga even boodschappen doen.",
+  "en": "I'm just popping out for groceries.",
+  "th": "thuis",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Moet ik iets meenemen?",
+  "en": "Do you need me to bring anything?",
+  "th": "thuis",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Wanneer ben je thuis?",
+  "en": "When will you be home?",
+  "th": "thuis",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Bedankt voor de gastvrijheid.",
+  "en": "Thanks for having me.",
+  "alt": [
+   "Bedankt voor de uitnodiging."
+  ],
+  "th": "thuis",
+  "b": "B1",
+  "t": 2,
+  "n": "Literally: thanks for the hospitality."
+ },
+ {
+  "nl": "Het was heel gezellig.",
+  "en": "It was a really lovely time.",
+  "th": "thuis",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Kom gauw weer langs!",
+  "en": "Come again soon!",
+  "th": "thuis",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Kom je even langs?",
+  "en": "Will you drop by?",
+  "th": "thuis",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik woon hier al drie jaar.",
+  "en": "I've lived here for three years.",
+  "th": "thuis",
+  "b": "A2",
+  "t": 2,
+  "n": "Dutch uses the present tense with al for ongoing time."
+ },
+ {
+  "nl": "Mijn buren zijn heel aardig.",
+  "en": "My neighbours are really nice.",
+  "th": "thuis",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Pas op, het is heet!",
+  "en": "Careful, it's hot!",
+  "th": "thuis",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ruim je kamer op!",
+  "en": "Tidy your room!",
+  "th": "thuis",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Het is hier een beetje een rommel.",
+  "en": "It's a bit of a mess in here.",
+  "th": "thuis",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "nl": "Zal ik een kopje thee zetten?",
+  "en": "Shall I make a cup of tea?",
+  "th": "thuis",
+  "b": "A2",
+  "t": 2,
+  "n": "You zet tea or coffee: literally put it."
+ }
+]

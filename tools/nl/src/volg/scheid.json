@@ -1,0 +1,969 @@
+[
+ {
+  "q": "Hij ___ om zeven uur op.",
+  "a": "staat",
+  "o": [
+   "staat",
+   "opstaat"
+  ],
+  "e": "He gets up at seven.",
+  "w": "Opstaan splits in a main clause: staat comes second, op is already at the end.",
+  "wn": "Hoofdzin: staat ... op.",
+  "t": "scheid",
+  "b": "A1"
+ },
+ {
+  "q": "Ik sta elke dag om zes uur ___ (opstaan).",
+  "a": "op",
+  "o": [
+   "op",
+   "opstaan"
+  ],
+  "e": "I get up at six every day.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ mijn moeder elke zondag op.",
+  "a": "bel",
+  "o": [
+   "bel",
+   "opbel"
+  ],
+  "e": "I call my mother every Sunday.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "A1"
+ },
+ {
+  "q": "Wij ___ altijd een boek mee.",
+  "a": "nemen",
+  "o": [
+   "nemen",
+   "meenemen"
+  ],
+  "e": "We always bring a book.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "A1"
+ },
+ {
+  "q": "Na het eten wast papa ___ (afwassen).",
+  "a": "af",
+  "o": [
+   "af",
+   "afwassen"
+  ],
+  "e": "After dinner Dad does the dishes.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "A1"
+ },
+ {
+  "q": "De trein ___ om tien uur aan.",
+  "a": "komt",
+  "o": [
+   "komt",
+   "aankomt"
+  ],
+  "e": "The train arrives at ten.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "A1"
+ },
+ {
+  "q": "Zij ___ op zaterdag uit.",
+  "a": "gaat",
+  "o": [
+   "gaat",
+   "uitgaat"
+  ],
+  "e": "She goes out on Saturday.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "A1"
+ },
+ {
+  "q": "Ruim je kamer ___ (opruimen)!",
+  "a": "op",
+  "o": [
+   "op",
+   "opruimen"
+  ],
+  "e": "Tidy your room!",
+  "w": "In a command the prefix also goes to the end: ruim je kamer op.",
+  "wn": "Gebiedende wijs: op achteraan.",
+  "t": "scheid",
+  "b": "A1"
+ },
+ {
+  "q": "Ik haal de kinderen om drie uur ___ (ophalen).",
+  "a": "op",
+  "o": [
+   "op",
+   "ophalen"
+  ],
+  "e": "I pick up the children at three.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "A1"
+ },
+ {
+  "q": "Hij ___ morgen terug.",
+  "a": "komt",
+  "o": [
+   "komt",
+   "terugkomt"
+  ],
+  "e": "He's coming back tomorrow.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "A1"
+ },
+ {
+  "q": "Kom ___ (binnenkomen), het is koud buiten.",
+  "a": "binnen",
+  "o": [
+   "binnen",
+   "binnenkomen"
+  ],
+  "e": "Come in, it's cold outside.",
+  "w": "In a command the prefix splits off too: kom binnen.",
+  "wn": "Gebiedende wijs: kom binnen.",
+  "t": "scheid",
+  "b": "A1"
+ },
+ {
+  "q": "___ (aantrekken) je jas maar aan.",
+  "a": "Trek",
+  "o": [
+   "Trek",
+   "Aantrek"
+  ],
+  "e": "Go on, put your coat on.",
+  "w": "In a command the verb comes first and aan goes to the end.",
+  "wn": "Trek ... aan.",
+  "t": "scheid",
+  "b": "A1"
+ },
+ {
+  "q": "De passagiers ___ hier in.",
+  "a": "stappen",
+  "o": [
+   "stappen",
+   "instappen"
+  ],
+  "e": "The passengers get on here.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "A1"
+ },
+ {
+  "q": "Doe jij ook ___ (meedoen)?",
+  "a": "mee",
+  "o": [
+   "mee",
+   "meedoen"
+  ],
+  "e": "Are you joining in too?",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb hem gisteren ___ (opbellen).",
+  "a": "opgebeld",
+  "o": [
+   "opgebeld",
+   "geopbeld",
+   "gebeld op"
+  ],
+  "e": "I called him yesterday.",
+  "w": "In the participle ge goes after the prefix: op + ge + beld.",
+  "wn": "Op + ge + beld.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "We zijn om vijf uur ___ (aankomen).",
+  "a": "aangekomen",
+  "o": [
+   "aangekomen",
+   "geaankomen",
+   "gekomen aan"
+  ],
+  "e": "We arrived at five.",
+  "w": "Separable verb: ge goes between the prefix and the verb in the participle.",
+  "wn": "Ge tussen voorvoegsel en werkwoord.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Heb jij je kamer al ___ (opruimen)?",
+  "a": "opgeruimd",
+  "o": [
+   "opgeruimd",
+   "geopruimd"
+  ],
+  "e": "Have you tidied your room yet?",
+  "w": "Separable verb: ge goes between the prefix and the verb in the participle.",
+  "wn": "Ge tussen voorvoegsel en werkwoord.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Ze heeft haar paraplu ___ (meenemen).",
+  "a": "meegenomen",
+  "o": [
+   "meegenomen",
+   "gemeenomen"
+  ],
+  "e": "She took her umbrella with her.",
+  "w": "Separable verb: ge goes between the prefix and the verb in the participle.",
+  "wn": "Ge tussen voorvoegsel en werkwoord.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Ik moet morgen vroeg ___ (opstaan).",
+  "a": "opstaan",
+  "o": [
+   "opstaan",
+   "staan op"
+  ],
+  "e": "I have to get up early tomorrow.",
+  "w": "After a modal the infinitive goes last and stays in one piece.",
+  "wn": "Na een modaal werkwoord: heel, achteraan.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Kun je me straks ___ (ophalen)?",
+  "a": "ophalen",
+  "o": [
+   "ophalen",
+   "halen op"
+  ],
+  "e": "Can you pick me up later?",
+  "w": "After a modal the infinitive goes last and stays in one piece.",
+  "wn": "Na een modaal werkwoord: heel, achteraan.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Wil jij vanavond ___ (afwassen)?",
+  "a": "afwassen",
+  "o": [
+   "afwassen",
+   "wassen af"
+  ],
+  "e": "Will you do the dishes tonight?",
+  "w": "After a modal the infinitive goes last and stays in one piece.",
+  "wn": "Na een modaal werkwoord: heel, achteraan.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Ik weet dat hij om zeven uur ___ (opstaan).",
+  "a": "opstaat",
+  "o": [
+   "opstaat",
+   "staat op"
+  ],
+  "e": "I know he gets up at seven.",
+  "w": "After dat the verb goes last and stays in one piece: opstaat.",
+  "wn": "Bijzin: opstaat, aan elkaar.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Ze is moe omdat ze elke avond ___ (uitgaan).",
+  "a": "uitgaat",
+  "o": [
+   "uitgaat",
+   "gaat uit"
+  ],
+  "e": "She's tired because she goes out every night.",
+  "w": "In a subordinate clause the separable verb goes last and stays in one piece.",
+  "wn": "Bijzin: het werkwoord blijft heel.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Bel me als de trein ___ (aankomen).",
+  "a": "aankomt",
+  "o": [
+   "aankomt",
+   "komt aan"
+  ],
+  "e": "Call me when the train arrives.",
+  "w": "In a subordinate clause the separable verb goes last and stays in one piece.",
+  "wn": "Bijzin: het werkwoord blijft heel.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Hij ___ zijn vrienden voor zijn verjaardag uit.",
+  "a": "nodigt",
+  "o": [
+   "nodigt",
+   "uitnodigt"
+  ],
+  "e": "He invites his friends for his birthday.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Ik schrijf je nummer even ___ (opschrijven).",
+  "a": "op",
+  "o": [
+   "op",
+   "opschrijven"
+  ],
+  "e": "I'll just write down your number.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Wij ___ morgen om drie uur af.",
+  "a": "spreken",
+  "o": [
+   "spreken",
+   "afspreken"
+  ],
+  "e": "We're meeting at three tomorrow.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Zet de televisie even ___ (uitzetten).",
+  "a": "uit",
+  "o": [
+   "uit",
+   "uitzetten"
+  ],
+  "e": "Turn the television off for a moment.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ dit formulier hier in.",
+  "a": "vult",
+  "o": [
+   "vult",
+   "invult"
+  ],
+  "e": "You fill in this form here.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Gisteren ___ ik om elf uur thuis.",
+  "a": "kwam",
+  "o": [
+   "kwam",
+   "thuiskwam"
+  ],
+  "e": "Yesterday I got home at eleven.",
+  "w": "In the past tense too the verb comes second and thuis goes to the end.",
+  "wn": "Ook in de verleden tijd: kwam ... thuis.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Hij belde me gisteren ___ (terugbellen).",
+  "a": "terug",
+  "o": [
+   "terug",
+   "terugbellen"
+  ],
+  "e": "He called me back yesterday.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ mijn koffer vanavond in.",
+  "a": "pak",
+  "o": [
+   "pak",
+   "inpak"
+  ],
+  "e": "I'm packing my suitcase tonight.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "In Utrecht moet je ___ (overstappen).",
+  "a": "overstappen",
+  "o": [
+   "overstappen",
+   "stappen over"
+  ],
+  "e": "In Utrecht you have to change trains.",
+  "w": "After a modal the infinitive goes last and stays in one piece.",
+  "wn": "Na een modaal werkwoord: heel, achteraan.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Let in de les goed ___ (opletten).",
+  "a": "op",
+  "o": [
+   "op",
+   "opletten"
+  ],
+  "e": "Pay attention in class.",
+  "w": "In a command the prefix goes to the end: let goed op.",
+  "wn": "Gebiedende wijs: let ... op.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn zus ___ altijd taart mee.",
+  "a": "brengt",
+  "o": [
+   "brengt",
+   "meebrengt"
+  ],
+  "e": "My sister always brings cake.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Morgen ___ (opbellen).",
+  "a": "bel ik je op",
+  "o": [
+   "bel ik je op",
+   "bel ik op je",
+   "ik bel je op"
+  ],
+  "e": "I'll call you tomorrow.",
+  "w": "Morgen first, so bel comes second, then ik, then je, and op goes last.",
+  "wn": "Morgen bel ik je op.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Ik neem morgen ___ (meenemen).",
+  "a": "mijn laptop mee",
+  "o": [
+   "mijn laptop mee",
+   "mee mijn laptop"
+  ],
+  "e": "I'm bringing my laptop tomorrow.",
+  "w": "The object comes before the prefix: mee goes right at the end.",
+  "wn": "Mee staat achteraan.",
+  "t": "scheid",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ben vergeten mijn moeder ___ (opbellen).",
+  "a": "op te bellen",
+  "o": [
+   "op te bellen",
+   "te opbellen"
+  ],
+  "e": "I forgot to call my mother.",
+  "w": "With te, it goes between the prefix and the verb: op te bellen.",
+  "wn": "Op te bellen.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "Het is tijd om de keuken ___ (schoonmaken).",
+  "a": "schoon te maken",
+  "o": [
+   "schoon te maken",
+   "te schoonmaken"
+  ],
+  "e": "It's time to clean the kitchen.",
+  "w": "Separable verb: te goes between the prefix and the verb.",
+  "wn": "Te tussen voorvoegsel en werkwoord.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "Hij probeert vroeg ___ (opstaan).",
+  "a": "op te staan",
+  "o": [
+   "op te staan",
+   "te opstaan"
+  ],
+  "e": "He tries to get up early.",
+  "w": "Separable verb: te goes between the prefix and the verb.",
+  "wn": "Te tussen voorvoegsel en werkwoord.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "Vergeet niet het licht ___ (uitdoen).",
+  "a": "uit te doen",
+  "o": [
+   "uit te doen",
+   "te uitdoen"
+  ],
+  "e": "Don't forget to switch off the light.",
+  "w": "Separable verb: te goes between the prefix and the verb.",
+  "wn": "Te tussen voorvoegsel en werkwoord.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb er lang over ___ (nadenken).",
+  "a": "nagedacht",
+  "o": [
+   "nagedacht",
+   "genadacht",
+   "gedacht na"
+  ],
+  "e": "I thought about it for a long time.",
+  "w": "Separable verb: ge goes between the prefix and the verb in the participle.",
+  "wn": "Ge tussen voorvoegsel en werkwoord.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "Weet je wanneer de film ___ (aflopen)?",
+  "a": "afloopt",
+  "o": [
+   "afloopt",
+   "loopt af"
+  ],
+  "e": "Do you know when the film ends?",
+  "w": "In a subordinate clause the separable verb goes last and stays in one piece.",
+  "wn": "Bijzin: het werkwoord blijft heel.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "Ze vroeg of ik ook ___ (meedoen).",
+  "a": "meedeed",
+  "o": [
+   "meedeed",
+   "deed mee"
+  ],
+  "e": "She asked if I was joining in too.",
+  "w": "In a subordinate clause the separable verb goes last and stays in one piece.",
+  "wn": "Bijzin: het werkwoord blijft heel.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "Toen we ___ (aankomen), was het donker.",
+  "a": "aankwamen",
+  "o": [
+   "aankwamen",
+   "kwamen aan"
+  ],
+  "e": "When we arrived, it was dark.",
+  "w": "In a subordinate clause the separable verb goes last and stays in one piece.",
+  "wn": "Bijzin: het werkwoord blijft heel.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "De nieuwe collega ___ zich vandaag voor.",
+  "a": "stelt",
+  "o": [
+   "stelt",
+   "voorstelt"
+  ],
+  "e": "The new colleague introduces herself today.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "Ik denk dat het aantal fietsers ___ (toenemen).",
+  "a": "toeneemt",
+  "o": [
+   "toeneemt",
+   "neemt toe"
+  ],
+  "e": "I think the number of cyclists is growing.",
+  "w": "In a subordinate clause the separable verb goes last and stays in one piece.",
+  "wn": "Bijzin: het werkwoord blijft heel.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "We ___ de straat altijd bij het zebrapad over.",
+  "a": "steken",
+  "o": [
+   "steken",
+   "oversteken"
+  ],
+  "e": "We always cross the street at the zebra crossing.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "Zij heeft de straat ___ (oversteken).",
+  "a": "overgestoken",
+  "o": [
+   "overgestoken",
+   "geoverstoken"
+  ],
+  "e": "She crossed the street.",
+  "w": "Separable verb: ge goes between the prefix and the verb in the participle.",
+  "wn": "Ge tussen voorvoegsel en werkwoord.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb het formulier al ___ (invullen).",
+  "a": "ingevuld",
+  "o": [
+   "ingevuld",
+   "geinvuld"
+  ],
+  "e": "I've already filled in the form.",
+  "w": "Separable verb: ge goes between the prefix and the verb in the participle.",
+  "wn": "Ge tussen voorvoegsel en werkwoord.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "Hij is in Amersfoort ___ (uitstappen).",
+  "a": "uitgestapt",
+  "o": [
+   "uitgestapt",
+   "geuitstapt"
+  ],
+  "e": "He got off in Amersfoort.",
+  "w": "Separable verb: ge goes between the prefix and the verb in the participle.",
+  "wn": "Ge tussen voorvoegsel en werkwoord.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "Heb je je nieuwe jas al ___ (aantrekken)?",
+  "a": "aangetrokken",
+  "o": [
+   "aangetrokken",
+   "geaantrokken"
+  ],
+  "e": "Have you put on your new coat yet?",
+  "w": "Separable verb: ge goes between the prefix and the verb in the participle.",
+  "wn": "Ge tussen voorvoegsel en werkwoord.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "Ik wil dat je je kamer ___ (opruimen).",
+  "a": "opruimt",
+  "o": [
+   "opruimt",
+   "ruimt op"
+  ],
+  "e": "I want you to tidy your room.",
+  "w": "In a subordinate clause the separable verb goes last and stays in one piece.",
+  "wn": "Bijzin: het werkwoord blijft heel.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "Hij ___ zijn huiswerk gisteren af.",
+  "a": "maakte",
+  "o": [
+   "maakte",
+   "afmaakte"
+  ],
+  "e": "He finished his homework yesterday.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "We hebben om acht uur ___ (afspreken).",
+  "a": "afgesproken",
+  "o": [
+   "afgesproken",
+   "geafsproken"
+  ],
+  "e": "We arranged to meet at eight.",
+  "w": "Separable verb: ge goes between the prefix and the verb in the participle.",
+  "wn": "Ge tussen voorvoegsel en werkwoord.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "Kun je de verwarming ___ (aanzetten)?",
+  "a": "aanzetten",
+  "o": [
+   "aanzetten",
+   "zetten aan"
+  ],
+  "e": "Can you switch on the heating?",
+  "w": "After a modal the infinitive goes last and stays in one piece.",
+  "wn": "Na een modaal werkwoord: heel, achteraan.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "Zodra hij ___ (thuiskomen), gaan we eten.",
+  "a": "thuiskomt",
+  "o": [
+   "thuiskomt",
+   "komt thuis"
+  ],
+  "e": "As soon as he gets home, we'll eat.",
+  "w": "In a subordinate clause the separable verb goes last and stays in one piece.",
+  "wn": "Bijzin: het werkwoord blijft heel.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb de vraag niet ___ (begrijpen).",
+  "a": "begrepen",
+  "o": [
+   "begrepen",
+   "gebegrepen"
+  ],
+  "e": "I didn't understand the question.",
+  "w": "Begrijpen is not separable: be stays on and the participle takes no ge.",
+  "wn": "Be blijft vast: begrepen.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "Ze heeft een mooi verhaal ___ (vertellen).",
+  "a": "verteld",
+  "o": [
+   "verteld",
+   "geverteld"
+  ],
+  "e": "She told a lovely story.",
+  "w": "Vertellen is not separable: ver stays on and the participle takes no ge.",
+  "wn": "Ver blijft vast: verteld.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "We hebben elkaar in Delft ___ (ontmoeten).",
+  "a": "ontmoet",
+  "o": [
+   "ontmoet",
+   "geontmoet"
+  ],
+  "e": "We met each other in Delft.",
+  "w": "Ontmoeten is not separable: ont stays on and the participle takes no ge.",
+  "wn": "Ont blijft vast: ontmoet.",
+  "t": "scheid",
+  "b": "B1"
+ },
+ {
+  "q": "Hij heeft de rekening al ___ (betalen).",
+  "a": "betaald",
+  "o": [
+   "betaald",
+   "gebetaald"
+  ],
+  "e": "He's already paid the bill.",
+  "w": "This prefix never splits off, so the participle takes no ge.",
+  "wn": "Onscheidbaar: geen ge.",
+  "t": "scheid",
+  "b": "B2"
+ },
+ {
+  "q": "Ik heb mijn plan aan de groep ___ (voorstellen).",
+  "a": "voorgesteld",
+  "o": [
+   "voorgesteld",
+   "gevoorsteld"
+  ],
+  "e": "I presented my plan to the group.",
+  "w": "Separable verb: ge goes between the prefix and the verb in the participle.",
+  "wn": "Ge tussen voorvoegsel en werkwoord.",
+  "t": "scheid",
+  "b": "B2"
+ },
+ {
+  "q": "De directeur ___ morgen zijn plannen aan.",
+  "a": "kondigt",
+  "o": [
+   "kondigt",
+   "aankondigt"
+  ],
+  "e": "The director announces his plans tomorrow.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "B2"
+ },
+ {
+  "q": "Het is moeilijk om met roken ___ (ophouden).",
+  "a": "op te houden",
+  "o": [
+   "op te houden",
+   "te ophouden"
+  ],
+  "e": "It's hard to stop smoking.",
+  "w": "Separable verb: te goes between the prefix and the verb.",
+  "wn": "Te tussen voorvoegsel en werkwoord.",
+  "t": "scheid",
+  "b": "B2"
+ },
+ {
+  "q": "Ik hoop dat de regering het voorstel niet ___ (afwijzen).",
+  "a": "afwijst",
+  "o": [
+   "afwijst",
+   "wijst af"
+  ],
+  "e": "I hope the government doesn't reject the proposal.",
+  "w": "In a subordinate clause the separable verb goes last and stays in one piece.",
+  "wn": "Bijzin: het werkwoord blijft heel.",
+  "t": "scheid",
+  "b": "B2"
+ },
+ {
+  "q": "Hij ___ zich goed voor op het examen.",
+  "a": "bereidt",
+  "o": [
+   "bereidt",
+   "voorbereidt"
+  ],
+  "e": "He prepares well for the exam.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "B2"
+ },
+ {
+  "q": "Heb je je goed ___ (voorbereiden)?",
+  "a": "voorbereid",
+  "o": [
+   "voorbereid",
+   "gevoorbereid",
+   "voorgebereid"
+  ],
+  "e": "Did you prepare well?",
+  "w": "Voor splits off, but be never does, and be blocks ge: voorbereid.",
+  "wn": "Voor + be: geen ge.",
+  "t": "scheid",
+  "b": "B2"
+ },
+ {
+  "q": "Ze heeft haar baan ___ (opzeggen).",
+  "a": "opgezegd",
+  "o": [
+   "opgezegd",
+   "geopzegd"
+  ],
+  "e": "She quit her job.",
+  "w": "Separable verb: ge goes between the prefix and the verb in the participle.",
+  "wn": "Ge tussen voorvoegsel en werkwoord.",
+  "t": "scheid",
+  "b": "B2"
+ },
+ {
+  "q": "De school ___ de excursie vanwege de storm af.",
+  "a": "zegt",
+  "o": [
+   "zegt",
+   "afzegt"
+  ],
+  "e": "The school is cancelling the trip because of the storm.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "B2"
+ },
+ {
+  "q": "Ik vind het lastig om ___ (uitleggen) wat ik bedoel.",
+  "a": "uit te leggen",
+  "o": [
+   "uit te leggen",
+   "te uitleggen"
+  ],
+  "e": "I find it hard to explain what I mean.",
+  "w": "Separable verb: te goes between the prefix and the verb.",
+  "wn": "Te tussen voorvoegsel en werkwoord.",
+  "t": "scheid",
+  "b": "B2"
+ },
+ {
+  "q": "Hij wist niet dat de vergadering ___ (uitvallen).",
+  "a": "uitviel",
+  "o": [
+   "uitviel",
+   "viel uit"
+  ],
+  "e": "He didn't know the meeting had been called off.",
+  "w": "In a subordinate clause the separable verb goes last and stays in one piece.",
+  "wn": "Bijzin: het werkwoord blijft heel.",
+  "t": "scheid",
+  "b": "B2"
+ },
+ {
+  "q": "Ze hebben de bruiloft ___ (uitstellen).",
+  "a": "uitgesteld",
+  "o": [
+   "uitgesteld",
+   "geuitsteld"
+  ],
+  "e": "They postponed the wedding.",
+  "w": "Separable verb: ge goes between the prefix and the verb in the participle.",
+  "wn": "Ge tussen voorvoegsel en werkwoord.",
+  "t": "scheid",
+  "b": "B2"
+ },
+ {
+  "q": "Heb je de prijzen ___ (vergelijken)?",
+  "a": "vergeleken",
+  "o": [
+   "vergeleken",
+   "gevergeleken"
+  ],
+  "e": "Did you compare the prices?",
+  "w": "Vergelijken is not separable: ver stays on and the participle takes no ge.",
+  "wn": "Ver blijft vast: vergeleken.",
+  "t": "scheid",
+  "b": "B2"
+ },
+ {
+  "q": "Na lang zoeken ___ hij de oplossing uit.",
+  "a": "vond",
+  "o": [
+   "vond",
+   "uitvond"
+  ],
+  "e": "After a long search he found out the answer.",
+  "w": "In a main clause the prefix splits off: the verb comes second, the prefix goes last.",
+  "wn": "Hoofdzin: het voorvoegsel gaat naar het eind.",
+  "t": "scheid",
+  "b": "B2"
+ }
+]

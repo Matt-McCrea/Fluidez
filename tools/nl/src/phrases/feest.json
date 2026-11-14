@@ -1,0 +1,319 @@
+[
+ {
+  "nl": "Gefeliciteerd met je moeder!",
+  "en": "Congratulations on your mum's birthday!",
+  "th": "feest",
+  "b": "A2",
+  "t": 2,
+  "n": "At a Dutch birthday you congratulate the whole family, not only the birthday person."
+ },
+ {
+  "nl": "Hoe oud word je?",
+  "en": "How old are you turning?",
+  "th": "feest",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik word dertig.",
+  "en": "I'm turning thirty.",
+  "th": "feest",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Wanneer ben je jarig?",
+  "en": "When's your birthday?",
+  "th": "feest",
+  "b": "A1",
+  "t": 1,
+  "n": "Jarig zijn: to be having your birthday."
+ },
+ {
+  "nl": "Ik ben morgen jarig.",
+  "en": "It's my birthday tomorrow.",
+  "th": "feest",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Op je gezondheid!",
+  "en": "To your health!",
+  "alt": [
+   "Gezondheid!"
+  ],
+  "th": "feest",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Op de jarige!",
+  "en": "To the birthday girl!",
+  "th": "feest",
+  "b": "A2",
+  "t": 2,
+  "n": "Jarige works for anyone celebrating a birthday, male or female."
+ },
+ {
+  "nl": "Lang zal ze leven!",
+  "en": "For she's a jolly good fellow!",
+  "alt": [
+   "Lang zal hij leven!"
+  ],
+  "th": "feest",
+  "b": "A2",
+  "t": 2,
+  "n": "The Dutch birthday song. Literally: long shall she live."
+ },
+ {
+  "nl": "Ik heb een cadeautje voor je.",
+  "en": "I've got a little present for you.",
+  "th": "feest",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Wat lief van je!",
+  "en": "That's so sweet of you!",
+  "th": "feest",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Dat had je niet hoeven doen.",
+  "en": "You shouldn't have.",
+  "th": "feest",
+  "b": "B1",
+  "t": 2
+ },
+ {
+  "nl": "Kom je zaterdag ook?",
+  "en": "Are you coming on Saturday too?",
+  "th": "feest",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik geef een feestje.",
+  "en": "I'm having a party.",
+  "th": "feest",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Je bent van harte welkom.",
+  "en": "You're very welcome to come.",
+  "th": "feest",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Heb je zin om mee te gaan?",
+  "en": "Do you fancy coming along?",
+  "alt": [
+   "Ga je mee?"
+  ],
+  "th": "feest",
+  "b": "A2",
+  "t": 1,
+  "n": "Zin hebben: to feel like doing something."
+ },
+ {
+  "nl": "Ja, leuk!",
+  "en": "Yes, I'd love to!",
+  "th": "feest",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik kan helaas niet.",
+  "en": "Unfortunately I can't make it.",
+  "th": "feest",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Misschien een andere keer.",
+  "en": "Maybe another time.",
+  "th": "feest",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Hoe laat begint het?",
+  "en": "What time does it start?",
+  "th": "feest",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Zal ik iets lekkers meenemen?",
+  "en": "Shall I bring something nice?",
+  "th": "feest",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Wat ga je dit weekend doen?",
+  "en": "What are you doing this weekend?",
+  "th": "feest",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Zullen we iets gaan drinken?",
+  "en": "Shall we go for a drink?",
+  "th": "feest",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Zullen we vanavond uitgaan?",
+  "en": "Shall we go out tonight?",
+  "th": "feest",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik haal een rondje.",
+  "en": "I'll get a round in.",
+  "alt": [
+   "Ik geef een rondje."
+  ],
+  "th": "feest",
+  "b": "B1",
+  "t": 2
+ },
+ {
+  "nl": "Wat wil jij drinken?",
+  "en": "What do you want to drink?",
+  "th": "feest",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Nog eentje?",
+  "en": "One more?",
+  "th": "feest",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik moet morgen vroeg op.",
+  "en": "I have to get up early tomorrow.",
+  "th": "feest",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Wat een leuk feest!",
+  "en": "What a great party!",
+  "th": "feest",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Zullen we dansen?",
+  "en": "Shall we dance?",
+  "th": "feest",
+  "b": "A1",
+  "t": 3
+ },
+ {
+  "nl": "Ik heb het heel leuk gehad.",
+  "en": "I had a really good time.",
+  "th": "feest",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Fijne feestdagen!",
+  "en": "Happy holidays!",
+  "th": "feest",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Vrolijk kerstfeest!",
+  "en": "Merry Christmas!",
+  "alt": [
+   "Fijne kerst!"
+  ],
+  "th": "feest",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "De beste wensen!",
+  "en": "Best wishes for the new year!",
+  "th": "feest",
+  "b": "A2",
+  "t": 2,
+  "n": "Said in the first weeks of January."
+ },
+ {
+  "nl": "Fijne Koningsdag!",
+  "en": "Happy King's Day!",
+  "th": "feest",
+  "b": "A2",
+  "t": 3,
+  "n": "King's Day is 27 April; everyone wears orange."
+ },
+ {
+  "nl": "Gefeliciteerd met jullie huwelijk!",
+  "en": "Congratulations on your wedding!",
+  "th": "feest",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Gefeliciteerd met je diploma!",
+  "en": "Congratulations on your degree!",
+  "th": "feest",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Gefeliciteerd met de baby!",
+  "en": "Congratulations on the baby!",
+  "th": "feest",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Hiep hiep hoera!",
+  "en": "Hip hip hooray!",
+  "th": "feest",
+  "b": "A1",
+  "t": 3
+ },
+ {
+  "nl": "Wil je een stukje taart?",
+  "en": "Would you like a piece of cake?",
+  "th": "feest",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Wat een verrassing!",
+  "en": "What a surprise!",
+  "th": "feest",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Wat ga je doen met Oud en Nieuw?",
+  "en": "What are you doing for New Year's Eve?",
+  "th": "feest",
+  "b": "B1",
+  "t": 3,
+  "n": "Oud en Nieuw: old and new, the New Year's Eve celebration."
+ },
+ {
+  "nl": "Bedankt voor het leuke feest!",
+  "en": "Thanks for the great party!",
+  "th": "feest",
+  "b": "A2",
+  "t": 2
+ }
+]

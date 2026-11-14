@@ -14,3 +14,7 @@ tools/ar/judge/
 tools/ru/vendor/
 tools/ru/judge/
 tools/es/vendor/
+
+# Vlot: kaikki Dutch extract and FrequencyWords (see docs/vlot-spec.md)
+tools/nl/vendor/
+tools/nl/judge/

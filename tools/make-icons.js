@@ -55,9 +55,14 @@ const ICONS = {
     emoji: '☘️',
     bg: [15, 61, 46],           // flat dark green
     inset: 0.66
+  },
+  nederlands: {
+    emoji: '🌷',
+    bg: [11, 15, 28],           // #0b0f1c, Vlot's night blue
+    inset: 0.66
   }
 };
-if (!ICONS[TARGET]) { console.error('make-icons: unknown --target ' + TARGET + ' (juegos or gaeilge)'); process.exit(1); }
+if (!ICONS[TARGET]) { console.error('make-icons: unknown --target ' + TARGET + ' (juegos, gaeilge or nederlands)'); process.exit(1); }
 const ICON = ICONS[TARGET];
 const SIZES = [
   { file: 'icon-192.png', size: 192 },

@@ -1,0 +1,282 @@
+[
+ {
+  "q": "In de straat staan kleine ___ (huis).",
+  "n": "huis",
+  "t": "dimpl",
+  "e": "There are little houses in the street.",
+  "b": "A2"
+ },
+ {
+  "q": "De kat heeft drie ___ (kat) gekregen.",
+  "n": "kat",
+  "t": "dimpl",
+  "e": "The cat has had three kittens.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik koop twee ___ (kaart) voor de tram.",
+  "n": "kaart",
+  "t": "dimpl",
+  "e": "I'm buying two tickets for the tram.",
+  "b": "A2"
+ },
+ {
+  "q": "De baby draagt witte ___ (sok).",
+  "n": "sok",
+  "t": "dimpl",
+  "e": "The baby is wearing little white socks.",
+  "b": "B1"
+ },
+ {
+  "q": "In de tuin zingen ___ (vogel).",
+  "n": "vogel",
+  "t": "dimpl",
+  "e": "Little birds are singing in the garden.",
+  "b": "A2"
+ },
+ {
+  "q": "Wil je een paar ___ (stuk) kaas?",
+  "n": "stuk",
+  "t": "dimpl",
+  "e": "Would you like a few pieces of cheese?",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn dochter leest graag ___ (boek).",
+  "n": "boek",
+  "t": "dimpl",
+  "e": "My daughter likes reading little books.",
+  "b": "A2"
+ },
+ {
+  "q": "We drinken twee ___ (glas) wijn.",
+  "n": "glas",
+  "t": "dimpl",
+  "e": "We're having two glasses of wine.",
+  "b": "A2"
+ },
+ {
+  "q": "De kinderen doen ___ (spel) op het feest.",
+  "n": "spel",
+  "t": "dimpl",
+  "e": "The children play little games at the party.",
+  "b": "A2"
+ },
+ {
+  "q": "Aan de hemel staan veel ___ (ster).",
+  "n": "ster",
+  "t": "dimpl",
+  "e": "There are lots of little stars in the sky.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb twee ___ (broer) en een zus.",
+  "n": "broer",
+  "t": "dimpl",
+  "e": "I have two little brothers and a sister.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn zus heeft twee ___ (zus).",
+  "n": "zus",
+  "t": "dimpl",
+  "e": "My sister has two little sisters.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (jongen) spelen op het plein.",
+  "n": "jongen",
+  "t": "dimpl",
+  "e": "The little boys are playing on the square.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik eet graag ___ (ei) met zout.",
+  "n": "ei",
+  "t": "dimpl",
+  "e": "I like eating eggs with salt.",
+  "b": "A2"
+ },
+ {
+  "q": "De kinderen hebben ___ (hond) gekregen.",
+  "n": "hond",
+  "t": "dimpl",
+  "e": "The children have been given puppies.",
+  "b": "A2"
+ },
+ {
+  "q": "Op tafel liggen twee ___ (brief).",
+  "n": "brief",
+  "t": "dimpl",
+  "e": "There are two notes on the table.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik stuur je een paar ___ (foto).",
+  "n": "foto",
+  "t": "dimpl",
+  "e": "I'll send you a few little photos.",
+  "b": "A2"
+ },
+ {
+  "q": "In de zomer gaan we vaak ___ (dag) uit.",
+  "n": "dag",
+  "t": "dimpl",
+  "e": "In summer we often go on day trips.",
+  "b": "A2"
+ },
+ {
+  "q": "Ze draagt twee gouden ___ (ring).",
+  "n": "ring",
+  "t": "dimpl",
+  "e": "She wears two little gold rings.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij vertelt grappige ___ (verhaal).",
+  "n": "verhaal",
+  "t": "dimpl",
+  "e": "He tells funny little stories.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb ___ (bericht) van hem gekregen.",
+  "n": "bericht",
+  "t": "dimpl",
+  "e": "I've had some little messages from him.",
+  "b": "A2"
+ },
+ {
+  "q": "In het dorp staan oude ___ (kerk).",
+  "n": "kerk",
+  "t": "dimpl",
+  "e": "In the village there are old little churches.",
+  "b": "A2"
+ },
+ {
+  "q": "In de vijver zwemmen ___ (vis).",
+  "n": "vis",
+  "t": "dimpl",
+  "e": "Little fish are swimming in the pond.",
+  "b": "A2"
+ },
+ {
+  "q": "Ze zingen ___ (lied) voor de baby.",
+  "n": "lied",
+  "t": "dimpl",
+  "e": "They sing little songs for the baby.",
+  "b": "A2"
+ },
+ {
+  "q": "We wonen in een straat met ___ (boom).",
+  "n": "boom",
+  "t": "dimpl",
+  "e": "We live on a street with little trees.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik zie twee ___ (boot) op het water.",
+  "n": "boot",
+  "t": "dimpl",
+  "e": "I see two little boats on the water.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn oma heeft drie ___ (hond).",
+  "n": "hond",
+  "t": "dimpl",
+  "e": "My grandma has three little dogs.",
+  "b": "A2"
+ },
+ {
+  "q": "Kijk, die ___ (man) op de foto!",
+  "n": "man",
+  "t": "dimpl",
+  "e": "Look, those little men in the photo!",
+  "b": "A2"
+ },
+ {
+  "q": "De meisjes dragen mooie ___ (jurk).",
+  "n": "jurk",
+  "t": "dimpl",
+  "e": "The girls are wearing pretty little dresses.",
+  "b": "A2"
+ },
+ {
+  "q": "Wil je een paar ___ (koffie) halen?",
+  "n": "koffie",
+  "t": "dimpl",
+  "e": "Will you get a few coffees?",
+  "b": "A2"
+ },
+ {
+  "q": "We drinken een paar ___ (drank) op het terras.",
+  "n": "drank",
+  "t": "dimpl",
+  "e": "We have a few drinks on the terrace.",
+  "b": "A2"
+ },
+ {
+  "q": "In mijn sok zitten ___ (gat).",
+  "n": "gat",
+  "t": "dimpl",
+  "e": "There are little holes in my sock.",
+  "b": "A2"
+ },
+ {
+  "q": "Het kind heeft roze ___ (hand).",
+  "n": "hand",
+  "t": "dimpl",
+  "e": "The child has little pink hands.",
+  "b": "A2"
+ },
+ {
+  "q": "De baby zet zijn eerste ___ (stap).",
+  "n": "stap",
+  "t": "dimpl",
+  "e": "The baby is taking his first little steps.",
+  "b": "A2"
+ },
+ {
+  "q": "De baby heeft kleine ___ (voet).",
+  "n": "voet",
+  "t": "dimpl",
+  "e": "The baby has tiny feet.",
+  "b": "A2"
+ },
+ {
+  "q": "Wil je een van die ___ (fles) water?",
+  "n": "fles",
+  "t": "dimpl",
+  "e": "Would you like one of those little bottles of water?",
+  "b": "A2"
+ },
+ {
+  "q": "De kinderen spelen met ___ (bal).",
+  "n": "bal",
+  "t": "dimpl",
+  "e": "The children are playing with little balls.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb twee ___ (tas) voor de kinderen.",
+  "n": "tas",
+  "t": "dimpl",
+  "e": "I have two little bags for the children.",
+  "b": "A2"
+ },
+ {
+  "q": "De kinderen maken ___ (film) op hun telefoon.",
+  "n": "film",
+  "t": "dimpl",
+  "e": "The children make little videos on their phones.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb ___ (cadeau) voor iedereen.",
+  "n": "cadeau",
+  "t": "dimpl",
+  "e": "I've got little presents for everyone.",
+  "b": "A2"
+ }
+]

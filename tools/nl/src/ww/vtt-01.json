@@ -1,0 +1,1346 @@
+[
+ {
+  "q": "Ik heb gisteren een boek ___ (kopen).",
+  "v": "kopen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I bought a book yesterday.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij hebben vorige week heel veel ___ (werken).",
+  "v": "werken",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We worked a lot last week.",
+  "b": "A1"
+ },
+ {
+  "q": "Heb jij al ___ (eten)?",
+  "v": "eten",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Have you eaten yet?",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn ouders zijn gisteren naar Parijs ___ (gaan).",
+  "v": "gaan",
+  "t": "vtt",
+  "p": "zij",
+  "e": "My parents went to Paris yesterday.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ben vanochtend om zes uur ___ (opstaan).",
+  "v": "opstaan",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I got up at six this morning.",
+  "b": "B1"
+ },
+ {
+  "q": "Hij heeft me gisteren drie keer ___ (opbellen).",
+  "v": "opbellen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "He called me three times yesterday.",
+  "b": "B1"
+ },
+ {
+  "q": "Heb je je laptop ___ (meenemen)?",
+  "v": "meenemen",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Have you brought your laptop?",
+  "b": "A2"
+ },
+ {
+  "q": "Wij zijn vorig jaar naar Zwolle ___ (verhuizen).",
+  "v": "verhuizen",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We moved to Zwolle last year.",
+  "b": "B1"
+ },
+ {
+  "q": "Wat is er met je fiets ___ (gebeuren)?",
+  "v": "gebeuren",
+  "t": "vtt",
+  "p": "hij",
+  "e": "What happened to your bike?",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb vandaag veertig kilometer ___ (fietsen).",
+  "v": "fietsen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I cycled forty kilometres today.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb je vraag niet goed ___ (begrijpen).",
+  "v": "begrijpen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I didn't quite understand your question.",
+  "b": "A1"
+ },
+ {
+  "q": "Heeft u de rekening al ___ (betalen)?",
+  "v": "betalen",
+  "t": "vtt",
+  "p": "u",
+  "e": "Have you paid the bill yet?",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn moeder heeft ons het hele verhaal ___ (vertellen).",
+  "v": "vertellen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "My mother told us the whole story.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij hebben gisteren de nieuwe buren ___ (ontmoeten).",
+  "v": "ontmoeten",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We met the new neighbours yesterday.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb mijn sleutels weer ___ (verliezen).",
+  "v": "verliezen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I've lost my keys again.",
+  "b": "A1"
+ },
+ {
+  "q": "Ze hebben hun huis voor een goede prijs ___ (verkopen).",
+  "v": "verkopen",
+  "t": "vtt",
+  "p": "zij",
+  "e": "They sold their house for a good price.",
+  "b": "A2"
+ },
+ {
+  "q": "Hebben jullie het Anne Frank Huis al ___ (bezoeken)?",
+  "v": "bezoeken",
+  "t": "vtt",
+  "p": "jullie",
+  "e": "Have you visited the Anne Frank House yet?",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb het formulier al ___ (invullen).",
+  "v": "invullen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I've already filled in the form.",
+  "b": "B1"
+ },
+ {
+  "q": "De trein is om acht uur precies ___ (vertrekken).",
+  "v": "vertrekken",
+  "t": "vtt",
+  "p": "hij",
+  "e": "The train left at exactly eight.",
+  "b": "A2"
+ },
+ {
+  "q": "Daan is gisteren uit Spanje ___ (terugkomen).",
+  "v": "terugkomen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "Daan came back from Spain yesterday.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb mijn huiswerk nog niet ___ (afmaken).",
+  "v": "afmaken",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I haven't finished my homework yet.",
+  "b": "B1"
+ },
+ {
+  "q": "Ben je gisteren nog ___ (uitgaan)?",
+  "v": "uitgaan",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Did you go out last night?",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb de hele keuken ___ (schoonmaken).",
+  "v": "schoonmaken",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I've cleaned the whole kitchen.",
+  "b": "B1"
+ },
+ {
+  "q": "Wij hebben het probleem samen ___ (oplossen).",
+  "v": "oplossen",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We solved the problem together.",
+  "b": "A2"
+ },
+ {
+  "q": "Heeft de juf het goed ___ (uitleggen)?",
+  "v": "uitleggen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "Did the teacher explain it well?",
+  "b": "A2"
+ },
+ {
+  "q": "Onze kat is sinds zondag ___ (verdwijnen).",
+  "v": "verdwijnen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "Our cat has been missing since Sunday.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb het nieuws pas vanochtend ___ (horen).",
+  "v": "horen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I only heard the news this morning.",
+  "b": "A1"
+ },
+ {
+  "q": "Hebben jullie de nieuwe film van Pixar al ___ (zien)?",
+  "v": "zien",
+  "t": "vtt",
+  "p": "jullie",
+  "e": "Have you seen the new Pixar film yet?",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb een kaartje aan mijn oma ___ (schrijven).",
+  "v": "schrijven",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I've written a card to my grandma.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij heeft dat boek al drie keer ___ (lezen).",
+  "v": "lezen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "He has read that book three times already.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben gisteravond te veel wijn ___ (drinken).",
+  "v": "drinken",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We drank too much wine last night.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb nooit in een grote stad ___ (wonen).",
+  "v": "wonen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I have never lived in a big city.",
+  "b": "A2"
+ },
+ {
+  "q": "Bram en Fleur zijn in 2015 ___ (trouwen).",
+  "v": "trouwen",
+  "t": "vtt",
+  "p": "zij",
+  "e": "Bram and Fleur got married in 2015.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ben mijn paraplu weer ___ (vergeten).",
+  "v": "vergeten",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I've forgotten my umbrella again.",
+  "b": "A1"
+ },
+ {
+  "q": "Het is me eindelijk ___ (lukken).",
+  "v": "lukken",
+  "t": "vtt",
+  "p": "hij",
+  "e": "I finally managed it.",
+  "b": "A2"
+ },
+ {
+  "q": "Wat heeft de dokter ___ (zeggen)?",
+  "v": "zeggen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "What did the doctor say?",
+  "b": "A1"
+ },
+ {
+  "q": "Wat heb je vandaag allemaal ___ (doen)?",
+  "v": "doen",
+  "t": "vtt",
+  "p": "jij",
+  "e": "What have you been doing today?",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb er lang over ___ (nadenken).",
+  "v": "nadenken",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I've thought about it for a long time.",
+  "b": "A2"
+ },
+ {
+  "q": "Zijn opa is vorige week ___ (sterven).",
+  "v": "sterven",
+  "t": "vtt",
+  "p": "hij",
+  "e": "His grandpa died last week.",
+  "b": "A1"
+ },
+ {
+  "q": "Lieke is van haar fiets ___ (vallen).",
+  "v": "vallen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "Lieke fell off her bike.",
+  "b": "A1"
+ },
+ {
+  "q": "De film is al ___ (beginnen).",
+  "v": "beginnen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "The film has already started.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ben de hele dag thuis ___ (blijven).",
+  "v": "blijven",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I stayed at home all day.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn broer is vorig jaar huisarts ___ (worden).",
+  "v": "worden",
+  "t": "vtt",
+  "p": "hij",
+  "e": "My brother became a GP last year.",
+  "b": "A1"
+ },
+ {
+  "q": "Zijn jullie met de trein ___ (komen)?",
+  "v": "komen",
+  "t": "vtt",
+  "p": "jullie",
+  "e": "Did you come by train?",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb voor mijn verjaardag een horloge ___ (krijgen).",
+  "v": "krijgen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I got a watch for my birthday.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij hebben haar een bos tulpen ___ (geven).",
+  "v": "geven",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We gave her a bunch of tulips.",
+  "b": "A1"
+ },
+ {
+  "q": "Heb je die soep zelf ___ (maken)?",
+  "v": "maken",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Did you make that soup yourself?",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb mijn telefoon nog steeds niet ___ (vinden).",
+  "v": "vinden",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I still haven't found my phone.",
+  "b": "A1"
+ },
+ {
+  "q": "Hij heeft nooit naar zijn vader ___ (luisteren).",
+  "v": "luisteren",
+  "t": "vtt",
+  "p": "hij",
+  "e": "He never listened to his father.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben de kinderen vanochtend naar school ___ (brengen).",
+  "v": "brengen",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We took the children to school this morning.",
+  "b": "A1"
+ },
+ {
+  "q": "Heb je brood bij de bakker ___ (halen)?",
+  "v": "halen",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Did you get bread at the baker's?",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb het echt niet zo ___ (bedoelen).",
+  "v": "bedoelen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I really didn't mean it like that.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb me nog nooit zo goed ___ (voelen).",
+  "v": "voelen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I've never felt so good.",
+  "b": "A1"
+ },
+ {
+  "q": "Hij heeft me om hulp ___ (vragen).",
+  "v": "vragen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "He asked me for help.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij hebben de hele avond op het terras ___ (zitten).",
+  "v": "zitten",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We sat on the terrace all evening.",
+  "b": "A1"
+ },
+ {
+  "q": "Heb jij die nieuwe serie al ___ (kijken)?",
+  "v": "kijken",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Have you watched that new series yet?",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb een uur in de regen ___ (staan).",
+  "v": "staan",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I stood in the rain for an hour.",
+  "b": "A1"
+ },
+ {
+  "q": "Heb je al met je baas ___ (spreken)?",
+  "v": "spreken",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Have you spoken to your boss yet?",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb het nooit ___ (weten).",
+  "v": "weten",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I never knew.",
+  "b": "A1"
+ },
+ {
+  "q": "Het boek heeft de hele week op tafel ___ (liggen).",
+  "v": "liggen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "The book lay on the table all week.",
+  "b": "A1"
+ },
+ {
+  "q": "Wie heeft er voor de kat ___ (zorgen)?",
+  "v": "zorgen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "Who looked after the cat?",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb je gisteren nog ___ (bellen).",
+  "v": "bellen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I called you only yesterday.",
+  "b": "A1"
+ },
+ {
+  "q": "De kinderen hebben de hele dag in de tuin ___ (spelen).",
+  "v": "spelen",
+  "t": "vtt",
+  "p": "zij",
+  "e": "The children played in the garden all day.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij hebben overal naar je ___ (zoeken).",
+  "v": "zoeken",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We looked for you everywhere.",
+  "b": "A1"
+ },
+ {
+  "q": "Heb je de nieuwe app al ___ (gebruiken)?",
+  "v": "gebruiken",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Have you used the new app yet?",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb hem nooit ___ (geloven).",
+  "v": "geloven",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I never believed him.",
+  "b": "A1"
+ },
+ {
+  "q": "De stad is de laatste jaren erg ___ (veranderen).",
+  "v": "veranderen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "The city has changed a lot in recent years.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ben vorige maand met roken ___ (stoppen).",
+  "v": "stoppen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I stopped smoking last month.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb twintig minuten op je ___ (wachten).",
+  "v": "wachten",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I waited twenty minutes for you.",
+  "b": "A1"
+ },
+ {
+  "q": "Hoe hebben jullie de baby ___ (noemen)?",
+  "v": "noemen",
+  "t": "vtt",
+  "p": "jullie",
+  "e": "What did you call the baby?",
+  "b": "A1"
+ },
+ {
+  "q": "Hij heeft zijn jas ___ (pakken) en is weggegaan.",
+  "v": "pakken",
+  "t": "vtt",
+  "p": "hij",
+  "e": "He grabbed his coat and left.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb in de bus heerlijk ___ (slapen).",
+  "v": "slapen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I had a lovely sleep on the bus.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij hebben deze zomer door heel Europa ___ (rijden).",
+  "v": "rijden",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We drove all over Europe this summer.",
+  "b": "A1"
+ },
+ {
+  "q": "Heeft de politie die auto ___ (volgen)?",
+  "v": "volgen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "Did the police follow that car?",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb hem altijd ___ (vertrouwen).",
+  "v": "vertrouwen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I've always trusted him.",
+  "b": "A1"
+ },
+ {
+  "q": "Er heeft net iemand op de deur ___ (kloppen).",
+  "v": "kloppen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "Someone just knocked on the door.",
+  "b": "A1"
+ },
+ {
+  "q": "Heb je het eindelijk ___ (snappen)?",
+  "v": "snappen",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Have you finally got it?",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb je net een berichtje ___ (sturen).",
+  "v": "sturen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I've just sent you a message.",
+  "b": "A1"
+ },
+ {
+  "q": "Wie heeft de wedstrijd ___ (winnen)?",
+  "v": "winnen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "Who won the match?",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb veel van je ___ (leren).",
+  "v": "leren",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I've learned a lot from you.",
+  "b": "A1"
+ },
+ {
+  "q": "Wat heb je op het feest ___ (dragen)?",
+  "v": "dragen",
+  "t": "vtt",
+  "p": "jij",
+  "e": "What did you wear to the party?",
+  "b": "A1"
+ },
+ {
+  "q": "Hij heeft me nooit iets ___ (beloven).",
+  "v": "beloven",
+  "t": "vtt",
+  "p": "hij",
+  "e": "He never promised me anything.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij heeft tegen mij ___ (liegen).",
+  "v": "liegen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "He lied to me.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben de vaas op de kast ___ (zetten).",
+  "v": "zetten",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We put the vase on the cupboard.",
+  "b": "A2"
+ },
+ {
+  "q": "Zij hebben jarenlang voor hun rechten ___ (vechten).",
+  "v": "vechten",
+  "t": "vtt",
+  "p": "zij",
+  "e": "They fought for their rights for years.",
+  "b": "A2"
+ },
+ {
+  "q": "Dat heb ik echt niet ___ (verwachten).",
+  "v": "verwachten",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I really didn't expect that.",
+  "b": "A2"
+ },
+ {
+  "q": "Iemand heeft mijn portemonnee ___ (stelen).",
+  "v": "stelen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "Someone has stolen my wallet.",
+  "b": "A2"
+ },
+ {
+  "q": "De les heeft twee uur ___ (duren).",
+  "v": "duren",
+  "t": "vtt",
+  "p": "hij",
+  "e": "The lesson lasted two hours.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij heeft zijn vrouw en kinderen ___ (verlaten).",
+  "v": "verlaten",
+  "t": "vtt",
+  "p": "hij",
+  "e": "He has left his wife and children.",
+  "b": "A2"
+ },
+ {
+  "q": "Wie heeft dit papier op de grond ___ (gooien)?",
+  "v": "gooien",
+  "t": "vtt",
+  "p": "hij",
+  "e": "Who threw this paper on the floor?",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn zus heeft veel geld met haar winkel ___ (verdienen).",
+  "v": "verdienen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "My sister has made a lot of money with her shop.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb mijn been ___ (breken).",
+  "v": "breken",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I've broken my leg.",
+  "b": "A2"
+ },
+ {
+  "q": "Hebben jullie al een naam ___ (kiezen)?",
+  "v": "kiezen",
+  "t": "vtt",
+  "p": "jullie",
+  "e": "Have you chosen a name yet?",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben vandaag drie huizen ___ (bekijken).",
+  "v": "bekijken",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We've looked at three houses today.",
+  "b": "A2"
+ },
+ {
+  "q": "Heb je het raam ___ (sluiten)?",
+  "v": "sluiten",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Have you closed the window?",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb je heel erg ___ (missen).",
+  "v": "missen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I've missed you so much.",
+  "b": "A2"
+ },
+ {
+  "q": "Wie heeft die foto aan de muur ___ (hangen)?",
+  "v": "hangen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "Who hung that photo on the wall?",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb de sleutel onder de mat ___ (leggen).",
+  "v": "leggen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I've put the key under the mat.",
+  "b": "A2"
+ },
+ {
+  "q": "Columbus heeft in 1492 Amerika ___ (ontdekken).",
+  "v": "ontdekken",
+  "t": "vtt",
+  "p": "hij",
+  "e": "Columbus discovered America in 1492.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik had zo ___ (hopen) dat je zou komen.",
+  "v": "hopen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I had so hoped you would come.",
+  "b": "A2"
+ },
+ {
+  "q": "Heb je goed op de kinderen ___ (letten)?",
+  "v": "letten",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Did you keep a good eye on the children?",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben ontzettend ___ (lachen) om die film.",
+  "v": "lachen",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We laughed so much at that film.",
+  "b": "A2"
+ },
+ {
+  "q": "Wie heeft dit slimme plan ___ (bedenken)?",
+  "v": "bedenken",
+  "t": "vtt",
+  "p": "hij",
+  "e": "Who came up with this clever plan?",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb net gas ___ (ruiken).",
+  "v": "ruiken",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I've just smelled gas.",
+  "b": "A2"
+ },
+ {
+  "q": "De patiënt heeft zich de hele nacht niet ___ (bewegen).",
+  "v": "bewegen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "The patient hasn't moved all night.",
+  "b": "A2"
+ },
+ {
+  "q": "Twee gevangenen zijn vannacht ___ (ontsnappen).",
+  "v": "ontsnappen",
+  "t": "vtt",
+  "p": "zij",
+  "e": "Two prisoners escaped last night.",
+  "b": "A2"
+ },
+ {
+  "q": "Heb je je vriend al aan je ouders ___ (voorstellen)?",
+  "v": "voorstellen",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Have you introduced your boyfriend to your parents yet?",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben onze vakantie heel goed ___ (plannen).",
+  "v": "plannen",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We planned our holiday very well.",
+  "b": "A2"
+ },
+ {
+  "q": "Hebben jullie het geld eerlijk ___ (delen)?",
+  "v": "delen",
+  "t": "vtt",
+  "p": "jullie",
+  "e": "Did you share the money fairly?",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben ons doel ___ (bereiken).",
+  "v": "bereiken",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We have reached our goal.",
+  "b": "A2"
+ },
+ {
+  "q": "De politie heeft de zaak grondig ___ (onderzoeken).",
+  "v": "onderzoeken",
+  "t": "vtt",
+  "p": "hij",
+  "e": "The police have investigated the case thoroughly.",
+  "b": "A2"
+ },
+ {
+  "q": "Noor heeft op de bruiloft een mooi lied ___ (zingen).",
+  "v": "zingen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "Noor sang a beautiful song at the wedding.",
+  "b": "A2"
+ },
+ {
+  "q": "Ze hebben me een goede prijs ___ (bieden).",
+  "v": "bieden",
+  "t": "vtt",
+  "p": "zij",
+  "e": "They offered me a good price.",
+  "b": "A2"
+ },
+ {
+  "q": "Heb je de broek al ___ (passen)?",
+  "v": "passen",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Have you tried the trousers on yet?",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb hem nooit ___ (vergeven).",
+  "v": "vergeven",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I have never forgiven him.",
+  "b": "A2"
+ },
+ {
+  "q": "Een wesp heeft me in mijn hand ___ (steken).",
+  "v": "steken",
+  "t": "vtt",
+  "p": "hij",
+  "e": "A wasp stung me on the hand.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ben naar de bushalte ___ (rennen).",
+  "v": "rennen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I ran to the bus stop.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb vannacht heel raar ___ (dromen).",
+  "v": "dromen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I had a very strange dream last night.",
+  "b": "A2"
+ },
+ {
+  "q": "De baby heeft de hele nacht ___ (huilen).",
+  "v": "huilen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "The baby cried all night.",
+  "b": "A2"
+ },
+ {
+  "q": "Ze hebben hier een nieuwe school ___ (bouwen).",
+  "v": "bouwen",
+  "t": "vtt",
+  "p": "zij",
+  "e": "They have built a new school here.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb alles voor de reis ___ (regelen).",
+  "v": "regelen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I've arranged everything for the trip.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben op de bruiloft tot drie uur ___ (dansen).",
+  "v": "dansen",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We danced until three at the wedding.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij heeft me niet eens ___ (herkennen).",
+  "v": "herkennen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "He didn't even recognise me.",
+  "b": "A2"
+ },
+ {
+  "q": "Heeft de dokter je bloed ___ (controleren)?",
+  "v": "controleren",
+  "t": "vtt",
+  "p": "hij",
+  "e": "Did the doctor check your blood?",
+  "b": "A2"
+ },
+ {
+  "q": "Wij zijn om tien uur ___ (weggaan).",
+  "v": "weggaan",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We left at ten.",
+  "b": "A2"
+ },
+ {
+  "q": "Die verbouwing heeft veel geld ___ (kosten).",
+  "v": "kosten",
+  "t": "vtt",
+  "p": "hij",
+  "e": "That renovation cost a lot of money.",
+  "b": "A2"
+ },
+ {
+  "q": "Heb je de brief van de bank al ___ (openen)?",
+  "v": "openen",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Have you opened the letter from the bank yet?",
+  "b": "A2"
+ },
+ {
+  "q": "Wie heeft dat eigenlijk ___ (bepalen)?",
+  "v": "bepalen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "Who actually decided that?",
+  "b": "A2"
+ },
+ {
+  "q": "Heb je me ___ (roepen)?",
+  "v": "roepen",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Did you call me?",
+  "b": "A2"
+ },
+ {
+  "q": "De hond van de buren heeft de postbode ___ (aanvallen).",
+  "v": "aanvallen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "The neighbours' dog attacked the postman.",
+  "b": "A2"
+ },
+ {
+  "q": "Ze hebben me eindelijk ___ (overtuigen).",
+  "v": "overtuigen",
+  "t": "vtt",
+  "p": "zij",
+  "e": "They finally convinced me.",
+  "b": "A2"
+ },
+ {
+  "q": "Waar heb je de cadeaus ___ (verbergen)?",
+  "v": "verbergen",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Where did you hide the presents?",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ben van de muur ___ (springen).",
+  "v": "springen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I jumped off the wall.",
+  "b": "A2"
+ },
+ {
+  "q": "Het Nederlands elftal heeft Duitsland ___ (verslaan).",
+  "v": "verslaan",
+  "t": "vtt",
+  "p": "hij",
+  "e": "The Dutch team beat Germany.",
+  "b": "A2"
+ },
+ {
+  "q": "Waar heb je de reservesleutel ___ (verstoppen)?",
+  "v": "verstoppen",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Where have you hidden the spare key?",
+  "b": "A2"
+ },
+ {
+  "q": "Hoe heeft hij dat ___ (verklaren)?",
+  "v": "verklaren",
+  "t": "vtt",
+  "p": "hij",
+  "e": "How did he explain that?",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb je toch ___ (waarschuwen)!",
+  "v": "waarschuwen",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I did warn you!",
+  "b": "A2"
+ },
+ {
+  "q": "Waarom heb je de telefoon niet ___ (opnemen)?",
+  "v": "opnemen",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Why didn't you answer the phone?",
+  "b": "A2"
+ },
+ {
+  "q": "Het vuur heeft bijna alles ___ (vernietigen).",
+  "v": "vernietigen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "The fire destroyed almost everything.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij heeft ons trots zijn nieuwe auto ___ (tonen).",
+  "v": "tonen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "He proudly showed us his new car.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben het probleem al met de baas ___ (bespreken).",
+  "v": "bespreken",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We've already discussed the problem with the boss.",
+  "b": "A2"
+ },
+ {
+  "q": "Hebben jullie het hotel al ___ (boeken)?",
+  "v": "boeken",
+  "t": "vtt",
+  "p": "jullie",
+  "e": "Have you booked the hotel yet?",
+  "b": "B1"
+ },
+ {
+  "q": "Wij hebben enorm van de vakantie ___ (genieten).",
+  "v": "genieten",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We really enjoyed the holiday.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb al je oude brieven ___ (bewaren).",
+  "v": "bewaren",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I've kept all your old letters.",
+  "b": "B1"
+ },
+ {
+  "q": "Heeft u mijn mail ___ (ontvangen)?",
+  "v": "ontvangen",
+  "t": "vtt",
+  "p": "u",
+  "e": "Did you receive my email?",
+  "b": "B1"
+ },
+ {
+  "q": "De storm heeft veel schade ___ (veroorzaken).",
+  "v": "veroorzaken",
+  "t": "vtt",
+  "p": "hij",
+  "e": "The storm has caused a lot of damage.",
+  "b": "B1"
+ },
+ {
+  "q": "De serie is heel vreemd ___ (eindigen).",
+  "v": "eindigen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "The series ended very strangely.",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn zus is in de verkeerde bus ___ (stappen).",
+  "v": "stappen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "My sister got on the wrong bus.",
+  "b": "B1"
+ },
+ {
+  "q": "Heb je het contract al ___ (tekenen)?",
+  "v": "tekenen",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Have you signed the contract yet?",
+  "b": "B1"
+ },
+ {
+  "q": "Hij heeft zijn tas in de trein ___ (achterlaten).",
+  "v": "achterlaten",
+  "t": "vtt",
+  "p": "hij",
+  "e": "He left his bag on the train.",
+  "b": "B1"
+ },
+ {
+  "q": "Waarom heb je niet op mijn bericht ___ (reageren)?",
+  "v": "reageren",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Why didn't you reply to my message?",
+  "b": "B1"
+ },
+ {
+  "q": "Ilse heeft de baan in Londen ___ (weigeren).",
+  "v": "weigeren",
+  "t": "vtt",
+  "p": "hij",
+  "e": "Ilse turned down the job in London.",
+  "b": "B1"
+ },
+ {
+  "q": "Wat ben je ___ (groeien)!",
+  "v": "groeien",
+  "t": "vtt",
+  "p": "jij",
+  "e": "How you've grown!",
+  "b": "B1"
+ },
+ {
+  "q": "De buurman heeft de hele avond tegen zijn kinderen ___ (schreeuwen).",
+  "v": "schreeuwen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "The neighbour shouted at his children all evening.",
+  "b": "B1"
+ },
+ {
+  "q": "Het is eindelijk ___ (ophouden) met regenen.",
+  "v": "ophouden",
+  "t": "vtt",
+  "p": "hij",
+  "e": "It has finally stopped raining.",
+  "b": "B1"
+ },
+ {
+  "q": "Heb je het geld al ___ (tellen)?",
+  "v": "tellen",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Have you counted the money yet?",
+  "b": "B1"
+ },
+ {
+  "q": "Hij heeft nog steeds niet ___ (antwoorden).",
+  "v": "antwoorden",
+  "t": "vtt",
+  "p": "hij",
+  "e": "He still hasn't answered.",
+  "b": "B1"
+ },
+ {
+  "q": "Wij hebben een week over de Middellandse Zee ___ (varen).",
+  "v": "varen",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We sailed the Mediterranean for a week.",
+  "b": "B1"
+ },
+ {
+  "q": "Heb je je al ziek ___ (melden)?",
+  "v": "melden",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Have you called in sick yet?",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb me in mijn vinger ___ (snijden).",
+  "v": "snijden",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I've cut my finger.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb er niets van ___ (merken).",
+  "v": "merken",
+  "t": "vtt",
+  "p": "ik",
+  "e": "I didn't notice a thing.",
+  "b": "B1"
+ },
+ {
+  "q": "Tim is voor zijn examen ___ (zakken).",
+  "v": "zakken",
+  "t": "vtt",
+  "p": "hij",
+  "e": "Tim failed his exam.",
+  "b": "B1"
+ },
+ {
+  "q": "Wij hebben alles voor je ___ (uitzoeken).",
+  "v": "uitzoeken",
+  "t": "vtt",
+  "p": "wij",
+  "e": "We've sorted everything out for you.",
+  "b": "B1"
+ },
+ {
+  "q": "Hoe laat is het vliegtuig ___ (landen)?",
+  "v": "landen",
+  "t": "vtt",
+  "p": "hij",
+  "e": "What time did the plane land?",
+  "b": "B1"
+ },
+ {
+  "q": "Waar heb je ___ (studeren)?",
+  "v": "studeren",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Where did you study?",
+  "b": "B1"
+ },
+ {
+  "q": "Hoe hebben jullie je verjaardag ___ (vieren)?",
+  "v": "vieren",
+  "t": "vtt",
+  "p": "jullie",
+  "e": "How did you celebrate your birthday?",
+  "b": "B1"
+ },
+ {
+  "q": "Heb je zijn naam ___ (onthouden)?",
+  "v": "onthouden",
+  "t": "vtt",
+  "p": "jij",
+  "e": "Did you remember his name?",
+  "b": "B1"
+ },
+ {
+  "q": "Wie heeft er vanavond ___ (koken)?",
+  "v": "koken",
+  "t": "vtt",
+  "p": "hij",
+  "e": "Who cooked tonight?",
+  "b": "B1"
+ }
+]

@@ -1,0 +1,650 @@
+[
+ {
+  "q": "___ (binnenkomen) binnen, de deur is open!",
+  "v": "binnenkomen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Come in, the door is open!",
+  "b": "B1"
+ },
+ {
+  "q": "___ (zijn) stil, de baby slaapt.",
+  "v": "zijn",
+  "t": "imp",
+  "p": "jij",
+  "e": "Be quiet, the baby is asleep.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (zijn) voorzichtig op de fiets!",
+  "v": "zijn",
+  "t": "imp",
+  "p": "jij",
+  "e": "Be careful on your bike!",
+  "b": "A1"
+ },
+ {
+  "q": "___ (zijn) maar niet bang.",
+  "v": "zijn",
+  "t": "imp",
+  "p": "jij",
+  "e": "Don't be afraid.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (komen) even hier, Sanne.",
+  "v": "komen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Come here a moment, Sanne.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (gaan) zitten, alsjeblieft.",
+  "v": "gaan",
+  "t": "imp",
+  "p": "jij",
+  "e": "Sit down, please.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (kijken) eens naar die vogel!",
+  "v": "kijken",
+  "t": "imp",
+  "p": "jij",
+  "e": "Look at that bird!",
+  "b": "A1"
+ },
+ {
+  "q": "___ (luisteren) goed naar de juf.",
+  "v": "luisteren",
+  "t": "imp",
+  "p": "jij",
+  "e": "Listen carefully to the teacher.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (wachten) hier op mij.",
+  "v": "wachten",
+  "t": "imp",
+  "p": "jij",
+  "e": "Wait here for me.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (doen) de deur dicht, het is koud.",
+  "v": "doen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Shut the door, it's cold.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (helpen) me even met deze tas.",
+  "v": "helpen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Help me with this bag a moment.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (geven) mij het zout eens.",
+  "v": "geven",
+  "t": "imp",
+  "p": "jij",
+  "e": "Pass me the salt.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (nemen) nog een stuk taart!",
+  "v": "nemen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Have another piece of cake!",
+  "b": "A1"
+ },
+ {
+  "q": "___ (pakken) je jas, we gaan.",
+  "v": "pakken",
+  "t": "imp",
+  "p": "jij",
+  "e": "Get your coat, we're going.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (bellen) me als je thuis bent.",
+  "v": "bellen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Call me when you're home.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (eten) je bord leeg.",
+  "v": "eten",
+  "t": "imp",
+  "p": "jij",
+  "e": "Finish your plate.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (drinken) genoeg water als het warm is.",
+  "v": "drinken",
+  "t": "imp",
+  "p": "jij",
+  "e": "Drink enough water when it's hot.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (slapen) lekker, tot morgen!",
+  "v": "slapen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Sleep well, see you tomorrow!",
+  "b": "A1"
+ },
+ {
+  "q": "___ (lezen) de tekst en beantwoord de vragen.",
+  "v": "lezen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Read the text and answer the questions.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (schrijven) je naam bovenaan het papier.",
+  "v": "schrijven",
+  "t": "imp",
+  "p": "jij",
+  "e": "Write your name at the top of the paper.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (zeggen) het maar eerlijk.",
+  "v": "zeggen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Just say it honestly.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (vergeten) je sleutels niet!",
+  "v": "vergeten",
+  "t": "imp",
+  "p": "jij",
+  "e": "Don't forget your keys!",
+  "b": "A1"
+ },
+ {
+  "q": "___ (lopen) niet zo snel!",
+  "v": "lopen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Don't walk so fast!",
+  "b": "A1"
+ },
+ {
+  "q": "___ (rijden) voorzichtig, het is glad.",
+  "v": "rijden",
+  "t": "imp",
+  "p": "jij",
+  "e": "Drive carefully, it's slippery.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (blijven) nog even, het is gezellig.",
+  "v": "blijven",
+  "t": "imp",
+  "p": "jij",
+  "e": "Stay a bit longer, it's nice.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (proberen) het nog een keer.",
+  "v": "proberen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Try it one more time.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (maken) je geen zorgen.",
+  "v": "maken",
+  "t": "imp",
+  "p": "jij",
+  "e": "Don't worry.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (stoppen) met roken!",
+  "v": "stoppen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Stop smoking!",
+  "b": "A1"
+ },
+ {
+  "q": "___ (zoeken) een plekje in de schaduw.",
+  "v": "zoeken",
+  "t": "imp",
+  "p": "jij",
+  "e": "Find a spot in the shade.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (kopen) ook even melk, wil je?",
+  "v": "kopen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Buy some milk too, will you?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (betalen) bij de kassa, alstublieft.",
+  "v": "betalen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Pay at the till, please.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (spelen) lekker buiten, jongens.",
+  "v": "spelen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Go and play outside, boys.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (sturen) me een berichtje als je er bent.",
+  "v": "sturen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Send me a message when you get there.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (vertellen) eens, hoe was je vakantie?",
+  "v": "vertellen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Tell me, how was your holiday?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (laten) me even nadenken.",
+  "v": "laten",
+  "t": "imp",
+  "p": "jij",
+  "e": "Let me think for a moment.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (laten) het licht maar aan.",
+  "v": "laten",
+  "t": "imp",
+  "p": "jij",
+  "e": "Leave the light on.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (opstaan) op, het is al acht uur!",
+  "v": "opstaan",
+  "t": "imp",
+  "p": "jij",
+  "e": "Get up, it's already eight o'clock!",
+  "b": "B1"
+ },
+ {
+  "q": "___ (opschieten) op, de trein vertrekt zo!",
+  "v": "opschieten",
+  "t": "imp",
+  "p": "jij",
+  "e": "Hurry up, the train is leaving soon!",
+  "b": "B1"
+ },
+ {
+  "q": "___ (meenemen) een paraplu mee, het gaat regenen.",
+  "v": "meenemen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Take an umbrella, it's going to rain.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (opruimen) je kamer op voor het eten.",
+  "v": "opruimen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Tidy your room before dinner.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (uitzetten) de televisie uit, het is bedtijd.",
+  "v": "uitzetten",
+  "t": "imp",
+  "p": "jij",
+  "e": "Turn off the television, it's bedtime.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (aanzetten) het licht even aan.",
+  "v": "aanzetten",
+  "t": "imp",
+  "p": "jij",
+  "e": "Turn the light on for a moment.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (invullen) eerst dit formulier in.",
+  "v": "invullen",
+  "t": "imp",
+  "p": "jij",
+  "e": "First fill in this form.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (opbellen) je oma eens op.",
+  "v": "opbellen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Give your grandmother a call.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (opschrijven) het adres even op.",
+  "v": "opschrijven",
+  "t": "imp",
+  "p": "jij",
+  "e": "Write down the address.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (inpakken) je tas vanavond al in.",
+  "v": "inpakken",
+  "t": "imp",
+  "p": "jij",
+  "e": "Pack your bag tonight.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (schoonmaken) je schoenen schoon voordat je binnenkomt.",
+  "v": "schoonmaken",
+  "t": "imp",
+  "p": "jij",
+  "e": "Clean your shoes before you come in.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (afmaken) eerst je huiswerk af.",
+  "v": "afmaken",
+  "t": "imp",
+  "p": "jij",
+  "e": "Finish your homework first.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (opeten) je groente op.",
+  "v": "opeten",
+  "t": "imp",
+  "p": "jij",
+  "e": "Eat up your vegetables.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (uitleggen) het nog eens rustig uit.",
+  "v": "uitleggen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Explain it again calmly.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (meebrengen) je zwemspullen mee.",
+  "v": "meebrengen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Bring your swimming things.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (nadenken) er goed over na.",
+  "v": "nadenken",
+  "t": "imp",
+  "p": "jij",
+  "e": "Think it over carefully.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (weggaan) weg, ik wil alleen zijn.",
+  "v": "weggaan",
+  "t": "imp",
+  "p": "jij",
+  "e": "Go away, I want to be alone.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (ophalen) de kinderen om drie uur op.",
+  "v": "ophalen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Pick the children up at three.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (toevoegen) een beetje zout toe.",
+  "v": "toevoegen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Add a little salt.",
+  "b": "B1"
+ },
+ {
+  "q": "Tim, ___ (komen) eens kijken!",
+  "v": "komen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Tim, come and have a look!",
+  "b": "A1"
+ },
+ {
+  "q": "Alsjeblieft, ___ (praten) wat zachter.",
+  "v": "praten",
+  "t": "imp",
+  "p": "jij",
+  "e": "Please talk a bit more quietly.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (zwemmen) niet te ver de zee in.",
+  "v": "zwemmen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Don't swim too far out to sea.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (fietsen) in het donker altijd met licht.",
+  "v": "fietsen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Always cycle with lights in the dark.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (wassen) je handen voor het eten.",
+  "v": "wassen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Wash your hands before dinner.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (koken) de aardappels twintig minuten.",
+  "v": "koken",
+  "t": "imp",
+  "p": "jij",
+  "e": "Boil the potatoes for twenty minutes.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (lachen) eens naar de camera!",
+  "v": "lachen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Smile for the camera!",
+  "b": "A2"
+ },
+ {
+  "q": "___ (vragen) het maar aan de buurman.",
+  "v": "vragen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Just ask the neighbour.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (brengen) dit pakje naar het postkantoor.",
+  "v": "brengen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Take this parcel to the post office.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (halen) even een stoel uit de keuken.",
+  "v": "halen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Fetch a chair from the kitchen.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (geloven) hem maar niet.",
+  "v": "geloven",
+  "t": "imp",
+  "p": "jij",
+  "e": "Don't believe him.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (vertrouwen) me maar.",
+  "v": "vertrouwen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Just trust me.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (volgen) de borden naar het centrum.",
+  "v": "volgen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Follow the signs to the centre.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (zetten) de tas maar op de grond.",
+  "v": "zetten",
+  "t": "imp",
+  "p": "jij",
+  "e": "Put the bag on the floor.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (leggen) de boeken op de tafel.",
+  "v": "leggen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Put the books on the table.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (openen) het raam even, het is warm.",
+  "v": "openen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Open the window, it's warm.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (sluiten) je ogen en tel tot tien.",
+  "v": "sluiten",
+  "t": "imp",
+  "p": "jij",
+  "e": "Close your eyes and count to ten.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (dansen) met mij!",
+  "v": "dansen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Dance with me!",
+  "b": "A2"
+ },
+ {
+  "q": "___ (genieten) van je vakantie!",
+  "v": "genieten",
+  "t": "imp",
+  "p": "jij",
+  "e": "Enjoy your holiday!",
+  "b": "B1"
+ },
+ {
+  "q": "Wat wil je? ___ (bestellen) maar iets lekkers.",
+  "v": "bestellen",
+  "t": "imp",
+  "p": "jij",
+  "e": "What do you want? Order something nice.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (wandelen) rustig verder, we zijn er bijna.",
+  "v": "wandelen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Keep walking calmly, we're nearly there.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (bewaren) het bonnetje goed.",
+  "v": "bewaren",
+  "t": "imp",
+  "p": "jij",
+  "e": "Keep the receipt safe.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (gooien) je afval in de prullenbak.",
+  "v": "gooien",
+  "t": "imp",
+  "p": "jij",
+  "e": "Put your rubbish in the bin.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (kiezen) maar een kaart.",
+  "v": "kiezen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Pick a card.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (rennen) niet in de gang!",
+  "v": "rennen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Don't run in the corridor!",
+  "b": "A2"
+ },
+ {
+  "q": "___ (zingen) nog een liedje voor ons!",
+  "v": "zingen",
+  "t": "imp",
+  "p": "jij",
+  "e": "Sing us another song!",
+  "b": "A2"
+ }
+]

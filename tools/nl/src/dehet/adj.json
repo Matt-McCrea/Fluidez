@@ -1,0 +1,1632 @@
+[
+ {
+  "q": "Wij hebben een ___ (groot) huis.",
+  "n": "huis",
+  "adj": "groot",
+  "t": "adj",
+  "e": "We have a big house.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn zus heeft een ___ (klein) kind.",
+  "n": "kind",
+  "adj": "klein",
+  "t": "adj",
+  "e": "My sister has a small child.",
+  "b": "A1"
+ },
+ {
+  "q": "Dat is een ___ (mooi) boek.",
+  "n": "boek",
+  "adj": "mooi",
+  "t": "adj",
+  "e": "That's a beautiful book.",
+  "b": "A1"
+ },
+ {
+  "q": "Ze wonen in een ___ (oud) dorp.",
+  "n": "dorp",
+  "adj": "oud",
+  "t": "adj",
+  "e": "They live in an old village.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij koopt een ___ (nieuw) bed.",
+  "n": "bed",
+  "adj": "nieuw",
+  "t": "adj",
+  "e": "He's buying a new bed.",
+  "b": "A1"
+ },
+ {
+  "q": "We eten in een ___ (duur) restaurant.",
+  "n": "restaurant",
+  "adj": "duur",
+  "t": "adj",
+  "e": "We're eating in an expensive restaurant.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik drink een ___ (koud) glas water.",
+  "n": "glas",
+  "adj": "koud",
+  "t": "adj",
+  "e": "I'm drinking a cold glass of water.",
+  "b": "A2"
+ },
+ {
+  "q": "Dat was een ___ (leuk) feest!",
+  "n": "feest",
+  "adj": "leuk",
+  "t": "adj",
+  "e": "That was a fun party!",
+  "b": "A2"
+ },
+ {
+  "q": "Ze vertelt een ___ (spannend) verhaal.",
+  "n": "verhaal",
+  "adj": "spannend",
+  "t": "adj",
+  "e": "She's telling an exciting story.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij heeft een ___ (goed) idee.",
+  "n": "idee",
+  "adj": "goed",
+  "t": "adj",
+  "e": "He has a good idea.",
+  "b": "A1"
+ },
+ {
+  "q": "Dit is een ___ (moeilijk) woord.",
+  "n": "woord",
+  "adj": "moeilijk",
+  "t": "adj",
+  "e": "This is a difficult word.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij slapen in een ___ (klein) hotel.",
+  "n": "hotel",
+  "adj": "klein",
+  "t": "adj",
+  "e": "We're sleeping in a small hotel.",
+  "b": "A2"
+ },
+ {
+  "q": "Er staat een ___ (hoog) gebouw naast het station.",
+  "n": "gebouw",
+  "adj": "hoog",
+  "t": "adj",
+  "e": "There's a tall building next to the station.",
+  "b": "A2"
+ },
+ {
+  "q": "Ze huren een ___ (ruim) appartement.",
+  "n": "appartement",
+  "adj": "ruim",
+  "t": "adj",
+  "e": "They're renting a spacious flat.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn opa heeft een ___ (oud) horloge.",
+  "n": "horloge",
+  "adj": "oud",
+  "t": "adj",
+  "e": "My grandpa has an old watch.",
+  "b": "A2"
+ },
+ {
+  "q": "Wat een ___ (lief) meisje!",
+  "n": "meisje",
+  "adj": "lief",
+  "t": "adj",
+  "e": "What a sweet girl!",
+  "b": "A1"
+ },
+ {
+  "q": "Dat is een ___ (groot) probleem.",
+  "n": "probleem",
+  "adj": "groot",
+  "t": "adj",
+  "e": "That's a big problem.",
+  "b": "A1"
+ },
+ {
+  "q": "We hebben een ___ (lang) gesprek gehad.",
+  "n": "gesprek",
+  "adj": "lang",
+  "t": "adj",
+  "e": "We had a long conversation.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik krijg een ___ (vreemd) bericht.",
+  "n": "bericht",
+  "adj": "vreemd",
+  "t": "adj",
+  "e": "I'm getting a strange message.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij zingt een ___ (mooi) lied.",
+  "n": "lied",
+  "adj": "mooi",
+  "t": "adj",
+  "e": "He sings a beautiful song.",
+  "b": "A2"
+ },
+ {
+  "q": "Zij heeft een ___ (vriendelijk) gezicht.",
+  "n": "gezicht",
+  "adj": "vriendelijk",
+  "t": "adj",
+  "e": "She has a friendly face.",
+  "b": "A2"
+ },
+ {
+  "q": "We gaan naar een ___ (rustig) strand.",
+  "n": "strand",
+  "adj": "rustig",
+  "t": "adj",
+  "e": "We're going to a quiet beach.",
+  "b": "A2"
+ },
+ {
+  "q": "Het is een ___ (gezellig) café.",
+  "n": "café",
+  "adj": "gezellig",
+  "t": "adj",
+  "e": "It's a cosy café.",
+  "b": "B1"
+ },
+ {
+  "q": "Wat een ___ (lekker) ontbijt!",
+  "n": "ontbijt",
+  "adj": "lekker",
+  "t": "adj",
+  "e": "What a delicious breakfast!",
+  "b": "A2"
+ },
+ {
+  "q": "Hij werkt voor een ___ (klein) bedrijf.",
+  "n": "bedrijf",
+  "adj": "klein",
+  "t": "adj",
+  "e": "He works for a small company.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik eet een ___ (vers) broodje.",
+  "n": "broodje",
+  "adj": "vers",
+  "t": "adj",
+  "e": "I'm eating a fresh roll.",
+  "b": "B1"
+ },
+ {
+  "q": "Hij geeft me een ___ (duur) cadeau.",
+  "n": "cadeau",
+  "adj": "duur",
+  "t": "adj",
+  "e": "He gives me an expensive present.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb een ___ (wit) shirt nodig.",
+  "n": "shirt",
+  "adj": "wit",
+  "t": "adj",
+  "e": "I need a white shirt.",
+  "b": "B1"
+ },
+ {
+  "q": "Het was een ___ (zwaar) jaar.",
+  "n": "jaar",
+  "adj": "zwaar",
+  "t": "adj",
+  "e": "It was a hard year.",
+  "b": "A2"
+ },
+ {
+  "q": "Dat is een ___ (slim) plan.",
+  "n": "plan",
+  "adj": "slim",
+  "t": "adj",
+  "e": "That's a clever plan.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben een ___ (zwart) konijn.",
+  "n": "konijn",
+  "adj": "zwart",
+  "t": "adj",
+  "e": "We have a black rabbit.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik lees een ___ (dik) boek.",
+  "n": "boek",
+  "adj": "dik",
+  "t": "adj",
+  "e": "I'm reading a thick book.",
+  "b": "A2"
+ },
+ {
+  "q": "Ze speelt een ___ (grappig) spel met de kinderen.",
+  "n": "spel",
+  "adj": "grappig",
+  "t": "adj",
+  "e": "She plays a funny game with the children.",
+  "b": "A2"
+ },
+ {
+  "q": "Het is een ___ (klein) land.",
+  "n": "land",
+  "adj": "klein",
+  "t": "adj",
+  "e": "It's a small country.",
+  "b": "A2"
+ },
+ {
+  "q": "Ze heeft een ___ (zacht) hart.",
+  "n": "hart",
+  "adj": "zacht",
+  "t": "adj",
+  "e": "She has a soft heart.",
+  "b": "A2"
+ },
+ {
+  "q": "Dat is een ___ (goed) antwoord.",
+  "n": "antwoord",
+  "adj": "goed",
+  "t": "adj",
+  "e": "That's a good answer.",
+  "b": "A1"
+ },
+ {
+  "q": "Ze hebben een ___ (groot) gezin.",
+  "n": "gezin",
+  "adj": "groot",
+  "t": "adj",
+  "e": "They have a big family.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik zie een ___ (klein) verschil.",
+  "n": "verschil",
+  "adj": "klein",
+  "t": "adj",
+  "e": "I see a small difference.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb een ___ (nieuw) nummer.",
+  "n": "nummer",
+  "adj": "nieuw",
+  "t": "adj",
+  "e": "I have a new number.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik wil een ___ (warm) kopje thee.",
+  "n": "kopje",
+  "adj": "warm",
+  "t": "adj",
+  "e": "I'd like a warm cup of tea.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb een ___ (groot) tafel gekocht.",
+  "n": "tafel",
+  "adj": "groot",
+  "t": "adj",
+  "e": "I bought a big table.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij rijdt in een ___ (oud) auto.",
+  "n": "auto",
+  "adj": "oud",
+  "t": "adj",
+  "e": "He drives an old car.",
+  "b": "A1"
+ },
+ {
+  "q": "Ze draagt een ___ (rood) jas.",
+  "n": "jas",
+  "adj": "rood",
+  "t": "adj",
+  "e": "She's wearing a red coat.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij wonen in een ___ (druk) straat.",
+  "n": "straat",
+  "adj": "druk",
+  "t": "adj",
+  "e": "We live on a busy street.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb een ___ (lang) dag gehad.",
+  "n": "dag",
+  "adj": "lang",
+  "t": "adj",
+  "e": "I've had a long day.",
+  "b": "A1"
+ },
+ {
+  "q": "Dat is een ___ (goed) vraag.",
+  "n": "vraag",
+  "adj": "goed",
+  "t": "adj",
+  "e": "That's a good question.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn broer heeft een ___ (leuk) vriendin.",
+  "n": "vriendin",
+  "adj": "leuk",
+  "t": "adj",
+  "e": "My brother has a nice girlfriend.",
+  "b": "A1"
+ },
+ {
+  "q": "Zij koopt een ___ (blauw) jurk.",
+  "n": "jurk",
+  "adj": "blauw",
+  "t": "adj",
+  "e": "She's buying a blue dress.",
+  "b": "A2"
+ },
+ {
+  "q": "Er staat een ___ (oud) boom in de tuin.",
+  "n": "boom",
+  "adj": "oud",
+  "t": "adj",
+  "e": "There's an old tree in the garden.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben een ___ (zwart) kat.",
+  "n": "kat",
+  "adj": "zwart",
+  "t": "adj",
+  "e": "We have a black cat.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik zoek een ___ (goedkoop) laptop.",
+  "n": "laptop",
+  "adj": "goedkoop",
+  "t": "adj",
+  "e": "I'm looking for a cheap laptop.",
+  "b": "B1"
+ },
+ {
+  "q": "Het was een ___ (mooi) avond.",
+  "n": "avond",
+  "adj": "mooi",
+  "t": "adj",
+  "e": "It was a lovely evening.",
+  "b": "A1"
+ },
+ {
+  "q": "Hij is een ___ (aardig) man.",
+  "n": "man",
+  "adj": "aardig",
+  "t": "adj",
+  "e": "He's a nice man.",
+  "b": "A1"
+ },
+ {
+  "q": "Ze is een ___ (sterk) vrouw.",
+  "n": "vrouw",
+  "adj": "sterk",
+  "t": "adj",
+  "e": "She's a strong woman.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb een ___ (zwaar) tas bij me.",
+  "n": "tas",
+  "adj": "zwaar",
+  "t": "adj",
+  "e": "I've got a heavy bag with me.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij heeft een ___ (nieuw) baan.",
+  "n": "baan",
+  "adj": "nieuw",
+  "t": "adj",
+  "e": "He has a new job.",
+  "b": "A2"
+ },
+ {
+  "q": "Het is een ___ (grappig) film.",
+  "n": "film",
+  "adj": "grappig",
+  "t": "adj",
+  "e": "It's a funny film.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik schrijf een ___ (kort) brief.",
+  "n": "brief",
+  "adj": "kort",
+  "t": "adj",
+  "e": "I'm writing a short letter.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben een ___ (klein) keuken.",
+  "n": "keuken",
+  "adj": "klein",
+  "t": "adj",
+  "e": "We have a small kitchen.",
+  "b": "A2"
+ },
+ {
+  "q": "Wat een ___ (lekker) koffie!",
+  "n": "koffie",
+  "adj": "lekker",
+  "t": "adj",
+  "e": "What lovely coffee!",
+  "b": "A1"
+ },
+ {
+  "q": "Ze heeft een ___ (lief) moeder.",
+  "n": "moeder",
+  "adj": "lief",
+  "t": "adj",
+  "e": "She has a kind mother.",
+  "b": "A1"
+ },
+ {
+  "q": "Hij woont in een ___ (groot) stad.",
+  "n": "stad",
+  "adj": "groot",
+  "t": "adj",
+  "e": "He lives in a big city.",
+  "b": "A1"
+ },
+ {
+  "q": "Dat was een ___ (moeilijk) les.",
+  "n": "les",
+  "adj": "moeilijk",
+  "t": "adj",
+  "e": "That was a difficult lesson.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik wil een ___ (rustig) kamer.",
+  "n": "kamer",
+  "adj": "rustig",
+  "t": "adj",
+  "e": "I'd like a quiet room.",
+  "b": "A2"
+ },
+ {
+  "q": "Het is een ___ (kort) reis.",
+  "n": "reis",
+  "adj": "kort",
+  "t": "adj",
+  "e": "It's a short trip.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij heeft een ___ (slecht) week gehad.",
+  "n": "week",
+  "adj": "slecht",
+  "t": "adj",
+  "e": "He's had a bad week.",
+  "b": "A1"
+ },
+ {
+  "q": "Dit is een ___ (prachtig) foto.",
+  "n": "foto",
+  "adj": "prachtig",
+  "t": "adj",
+  "e": "This is a gorgeous photo.",
+  "b": "A1"
+ },
+ {
+  "q": "Ze heeft een ___ (belangrijk) vergadering.",
+  "n": "vergadering",
+  "adj": "belangrijk",
+  "t": "adj",
+  "e": "She has an important meeting.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb een ___ (goed) oplossing.",
+  "n": "oplossing",
+  "adj": "goed",
+  "t": "adj",
+  "e": "I have a good solution.",
+  "b": "A2"
+ },
+ {
+  "q": "Het wordt een ___ (warm) zomer.",
+  "n": "zomer",
+  "adj": "warm",
+  "t": "adj",
+  "e": "It's going to be a hot summer.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik zie een ___ (klein) vogel.",
+  "n": "vogel",
+  "adj": "klein",
+  "t": "adj",
+  "e": "I see a small bird.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij is een ___ (streng) leraar.",
+  "n": "leraar",
+  "adj": "streng",
+  "t": "adj",
+  "e": "He's a strict teacher.",
+  "b": "A2"
+ },
+ {
+  "q": "Ze is een ___ (goed) dokter.",
+  "n": "dokter",
+  "adj": "goed",
+  "t": "adj",
+  "e": "She's a good doctor.",
+  "b": "A1"
+ },
+ {
+  "q": "Wat een ___ (mooi) bloem!",
+  "n": "bloem",
+  "adj": "mooi",
+  "t": "adj",
+  "e": "What a pretty flower!",
+  "b": "A2"
+ },
+ {
+  "q": "Hij heeft een ___ (dik) trui aan.",
+  "n": "trui",
+  "adj": "dik",
+  "t": "adj",
+  "e": "He's wearing a thick jumper.",
+  "b": "B2"
+ },
+ {
+  "q": "Het huis heeft een ___ (groot) tuin.",
+  "n": "tuin",
+  "adj": "groot",
+  "t": "adj",
+  "e": "The house has a big garden.",
+  "b": "A2"
+ },
+ {
+  "q": "Het ___ (groot) huis staat te koop.",
+  "n": "huis",
+  "adj": "groot",
+  "t": "adj",
+  "e": "The big house is for sale.",
+  "b": "A1"
+ },
+ {
+  "q": "Het ___ (klein) kind slaapt al.",
+  "n": "kind",
+  "adj": "klein",
+  "t": "adj",
+  "e": "The little child is already asleep.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik vind het ___ (nieuw) boek van Grunberg goed.",
+  "n": "boek",
+  "adj": "nieuw",
+  "t": "adj",
+  "e": "I think Grunberg's new book is good.",
+  "b": "A2"
+ },
+ {
+  "q": "Het ___ (oud) dorp ligt aan een rivier.",
+  "n": "dorp",
+  "adj": "oud",
+  "t": "adj",
+  "e": "The old village is on a river.",
+  "b": "A2"
+ },
+ {
+  "q": "Het ___ (koud) water is lekker na het sporten.",
+  "n": "water",
+  "adj": "koud",
+  "t": "adj",
+  "e": "The cold water is nice after sport.",
+  "b": "A2"
+ },
+ {
+  "q": "Waar is het ___ (wit) shirt van papa?",
+  "n": "shirt",
+  "adj": "wit",
+  "t": "adj",
+  "e": "Where's dad's white shirt?",
+  "b": "B1"
+ },
+ {
+  "q": "Het ___ (warm) ontbijt staat klaar.",
+  "n": "ontbijt",
+  "adj": "warm",
+  "t": "adj",
+  "e": "The hot breakfast is ready.",
+  "b": "A2"
+ },
+ {
+  "q": "Dit ___ (klein) restaurant is erg goed.",
+  "n": "restaurant",
+  "adj": "klein",
+  "t": "adj",
+  "e": "This little restaurant is very good.",
+  "b": "A2"
+ },
+ {
+  "q": "Dit ___ (oud) gebouw is een museum.",
+  "n": "gebouw",
+  "adj": "oud",
+  "t": "adj",
+  "e": "This old building is a museum.",
+  "b": "A2"
+ },
+ {
+  "q": "Dit ___ (lekker) brood komt van de markt.",
+  "n": "brood",
+  "adj": "lekker",
+  "t": "adj",
+  "e": "This tasty bread comes from the market.",
+  "b": "A2"
+ },
+ {
+  "q": "Dat ___ (lang) verhaal ken ik al.",
+  "n": "verhaal",
+  "adj": "lang",
+  "t": "adj",
+  "e": "I already know that long story.",
+  "b": "A2"
+ },
+ {
+  "q": "Dat ___ (duur) hotel is vol.",
+  "n": "hotel",
+  "adj": "duur",
+  "t": "adj",
+  "e": "That expensive hotel is full.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn ___ (nieuw) appartement heeft een balkon.",
+  "n": "appartement",
+  "adj": "nieuw",
+  "t": "adj",
+  "e": "My new flat has a balcony.",
+  "b": "A2"
+ },
+ {
+  "q": "Ons ___ (oud) huis was kleiner.",
+  "n": "huis",
+  "adj": "oud",
+  "t": "adj",
+  "e": "Our old house was smaller.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn ___ (klein) broer is ziek.",
+  "n": "broer",
+  "adj": "klein",
+  "t": "adj",
+  "e": "My little brother is ill.",
+  "b": "A1"
+ },
+ {
+  "q": "Jouw ___ (rood) shirt ligt in de kast.",
+  "n": "shirt",
+  "adj": "rood",
+  "t": "adj",
+  "e": "Your red shirt is in the wardrobe.",
+  "b": "B1"
+ },
+ {
+  "q": "Zijn ___ (nieuw) werk is leuk.",
+  "n": "werk",
+  "adj": "nieuw",
+  "t": "adj",
+  "e": "His new work is nice.",
+  "b": "A1"
+ },
+ {
+  "q": "Haar ___ (lief) gezicht vergeet ik niet.",
+  "n": "gezicht",
+  "adj": "lief",
+  "t": "adj",
+  "e": "I won't forget her sweet face.",
+  "b": "A2"
+ },
+ {
+  "q": "Hun ___ (groot) bedrijf zit in Amsterdam.",
+  "n": "bedrijf",
+  "adj": "groot",
+  "t": "adj",
+  "e": "Their big company is based in Amsterdam.",
+  "b": "A2"
+ },
+ {
+  "q": "Het ___ (nieuw) programma begint om negen uur.",
+  "n": "programma",
+  "adj": "nieuw",
+  "t": "adj",
+  "e": "The new programme starts at nine.",
+  "b": "A2"
+ },
+ {
+  "q": "Het ___ (vorig) weekend was druk.",
+  "n": "weekend",
+  "adj": "vorig",
+  "t": "adj",
+  "e": "Last weekend was busy.",
+  "b": "A2"
+ },
+ {
+  "q": "Het ___ (volgend) jaar zijn we verhuisd.",
+  "n": "jaar",
+  "adj": "volgend",
+  "t": "adj",
+  "e": "The following year we moved.",
+  "b": "A2"
+ },
+ {
+  "q": "Het ___ (leeg) glas staat in de keuken.",
+  "n": "glas",
+  "adj": "leeg",
+  "t": "adj",
+  "e": "The empty glass is in the kitchen.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (groot) tafel past niet in de kamer.",
+  "n": "tafel",
+  "adj": "groot",
+  "t": "adj",
+  "e": "The big table doesn't fit in the room.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (oud) man woont alleen.",
+  "n": "man",
+  "adj": "oud",
+  "t": "adj",
+  "e": "The old man lives alone.",
+  "b": "A1"
+ },
+ {
+  "q": "De ___ (rood) auto is van mijn buurman.",
+  "n": "auto",
+  "adj": "rood",
+  "t": "adj",
+  "e": "The red car belongs to my neighbour.",
+  "b": "A1"
+ },
+ {
+  "q": "De ___ (nieuw) leraar heet Daan.",
+  "n": "leraar",
+  "adj": "nieuw",
+  "t": "adj",
+  "e": "The new teacher is called Daan.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (warm) soep is klaar.",
+  "n": "soep",
+  "adj": "warm",
+  "t": "adj",
+  "e": "The hot soup is ready.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik vind de ___ (blauw) jurk mooier.",
+  "n": "jurk",
+  "adj": "blauw",
+  "t": "adj",
+  "e": "I like the blue dress better.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (laat) trein is altijd vol.",
+  "n": "trein",
+  "adj": "laat",
+  "t": "adj",
+  "e": "The late train is always full.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (klein) winkel op de hoek is dicht.",
+  "n": "winkel",
+  "adj": "klein",
+  "t": "adj",
+  "e": "The little shop on the corner is closed.",
+  "b": "A2"
+ },
+ {
+  "q": "Deze ___ (zwart) jas is te duur.",
+  "n": "jas",
+  "adj": "zwart",
+  "t": "adj",
+  "e": "This black coat is too expensive.",
+  "b": "A2"
+ },
+ {
+  "q": "Deze ___ (lekker) kaas komt uit Gouda.",
+  "n": "kaas",
+  "adj": "lekker",
+  "t": "adj",
+  "e": "This tasty cheese comes from Gouda.",
+  "b": "B1"
+ },
+ {
+  "q": "Die ___ (aardig) vrouw is mijn tante.",
+  "n": "vrouw",
+  "adj": "aardig",
+  "t": "adj",
+  "e": "That kind woman is my aunt.",
+  "b": "A1"
+ },
+ {
+  "q": "Die ___ (lang) film duurt drie uur.",
+  "n": "film",
+  "adj": "lang",
+  "t": "adj",
+  "e": "That long film lasts three hours.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn ___ (oud) auto doet het niet meer.",
+  "n": "auto",
+  "adj": "oud",
+  "t": "adj",
+  "e": "My old car doesn't work any more.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn ___ (goed) vriendin woont in Utrecht.",
+  "n": "vriendin",
+  "adj": "goed",
+  "t": "adj",
+  "e": "My good friend lives in Utrecht.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn ___ (lief) oma is jarig.",
+  "n": "oma",
+  "adj": "lief",
+  "t": "adj",
+  "e": "My lovely grandma has her birthday.",
+  "b": "A2"
+ },
+ {
+  "q": "Zijn ___ (nieuw) baan begint in mei.",
+  "n": "baan",
+  "adj": "nieuw",
+  "t": "adj",
+  "e": "His new job starts in May.",
+  "b": "A2"
+ },
+ {
+  "q": "Haar ___ (oud) computer is erg traag.",
+  "n": "computer",
+  "adj": "oud",
+  "t": "adj",
+  "e": "Her old computer is very slow.",
+  "b": "A2"
+ },
+ {
+  "q": "Onze ___ (groot) keuken is mooi.",
+  "n": "keuken",
+  "adj": "groot",
+  "t": "adj",
+  "e": "Our big kitchen is lovely.",
+  "b": "A2"
+ },
+ {
+  "q": "Hun ___ (lief) kat is weg.",
+  "n": "kat",
+  "adj": "lief",
+  "t": "adj",
+  "e": "Their sweet cat is gone.",
+  "b": "A2"
+ },
+ {
+  "q": "Jouw ___ (nieuw) tas is mooi.",
+  "n": "tas",
+  "adj": "nieuw",
+  "t": "adj",
+  "e": "Your new bag is pretty.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (volgend) bus komt over tien minuten.",
+  "n": "bus",
+  "adj": "volgend",
+  "t": "adj",
+  "e": "The next bus comes in ten minutes.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (vorig) week was zwaar.",
+  "n": "week",
+  "adj": "vorig",
+  "t": "adj",
+  "e": "Last week was hard.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (koud) melk staat in de koelkast.",
+  "n": "melk",
+  "adj": "koud",
+  "t": "adj",
+  "e": "The cold milk is in the fridge.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (lang) straat loopt naar het centrum.",
+  "n": "straat",
+  "adj": "lang",
+  "t": "adj",
+  "e": "The long street runs to the centre.",
+  "b": "A1"
+ },
+ {
+  "q": "We wachten op de ___ (volgend) trein.",
+  "n": "trein",
+  "adj": "volgend",
+  "t": "adj",
+  "e": "We're waiting for the next train.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik draag graag ___ (zwart) schoenen.",
+  "n": "schoen",
+  "adj": "zwart",
+  "pl": true,
+  "t": "adj",
+  "e": "I like wearing black shoes.",
+  "b": "A2"
+ },
+ {
+  "q": "Er staan ___ (hoog) bomen in het park.",
+  "n": "boom",
+  "adj": "hoog",
+  "pl": true,
+  "t": "adj",
+  "e": "There are tall trees in the park.",
+  "b": "A2"
+ },
+ {
+  "q": "Ze heeft ___ (blauw) ogen.",
+  "n": "oog",
+  "adj": "blauw",
+  "pl": true,
+  "t": "adj",
+  "e": "She has blue eyes.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij hebben ___ (lief) buren.",
+  "n": "buur",
+  "adj": "lief",
+  "pl": true,
+  "t": "adj",
+  "e": "We have nice neighbours.",
+  "b": "A2"
+ },
+ {
+  "q": "Hier zijn ___ (oud) huizen.",
+  "n": "huis",
+  "adj": "oud",
+  "pl": true,
+  "t": "adj",
+  "e": "There are old houses here.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik koop ___ (vers) bloemen voor mama.",
+  "n": "bloem",
+  "adj": "vers",
+  "pl": true,
+  "t": "adj",
+  "e": "I'm buying fresh flowers for mum.",
+  "b": "A2"
+ },
+ {
+  "q": "Er spelen ___ (klein) kinderen in de tuin.",
+  "n": "kind",
+  "adj": "klein",
+  "pl": true,
+  "t": "adj",
+  "e": "Small children are playing in the garden.",
+  "b": "A1"
+ },
+ {
+  "q": "De ___ (nieuw) boeken liggen op tafel.",
+  "n": "boek",
+  "adj": "nieuw",
+  "pl": true,
+  "t": "adj",
+  "e": "The new books are on the table.",
+  "b": "A1"
+ },
+ {
+  "q": "De ___ (rood) appels zijn zoet.",
+  "n": "appel",
+  "adj": "rood",
+  "pl": true,
+  "t": "adj",
+  "e": "The red apples are sweet.",
+  "b": "B1"
+ },
+ {
+  "q": "Deze ___ (wit) stoelen zijn nieuw.",
+  "n": "stoel",
+  "adj": "wit",
+  "pl": true,
+  "t": "adj",
+  "e": "These white chairs are new.",
+  "b": "A2"
+ },
+ {
+  "q": "Die ___ (oud) foto's zijn van opa.",
+  "n": "foto",
+  "adj": "oud",
+  "pl": true,
+  "t": "adj",
+  "e": "Those old photos are grandpa's.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn ___ (nieuw) schoenen doen pijn.",
+  "n": "schoen",
+  "adj": "nieuw",
+  "pl": true,
+  "t": "adj",
+  "e": "My new shoes hurt.",
+  "b": "A2"
+ },
+ {
+  "q": "Onze ___ (lief) kinderen slapen.",
+  "n": "kind",
+  "adj": "lief",
+  "pl": true,
+  "t": "adj",
+  "e": "Our sweet children are asleep.",
+  "b": "A1"
+ },
+ {
+  "q": "Hun ___ (groot) katten slapen veel.",
+  "n": "kat",
+  "adj": "groot",
+  "pl": true,
+  "t": "adj",
+  "e": "Their big cats sleep a lot.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben ___ (moeilijk) vragen gehad.",
+  "n": "vraag",
+  "adj": "moeilijk",
+  "pl": true,
+  "t": "adj",
+  "e": "We had difficult questions.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik lees graag ___ (dik) boeken.",
+  "n": "boek",
+  "adj": "dik",
+  "pl": true,
+  "t": "adj",
+  "e": "I like reading thick books.",
+  "b": "A2"
+ },
+ {
+  "q": "Het zijn ___ (aardig) mensen.",
+  "n": "mens",
+  "adj": "aardig",
+  "pl": true,
+  "t": "adj",
+  "e": "They're nice people.",
+  "b": "A1"
+ },
+ {
+  "q": "Ze verkopen ___ (goedkoop) tassen.",
+  "n": "tas",
+  "adj": "goedkoop",
+  "pl": true,
+  "t": "adj",
+  "e": "They sell cheap bags.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hadden ___ (zwaar) dagen.",
+  "n": "dag",
+  "adj": "zwaar",
+  "pl": true,
+  "t": "adj",
+  "e": "We had hard days.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (klein) dorpen zijn rustig.",
+  "n": "dorp",
+  "adj": "klein",
+  "pl": true,
+  "t": "adj",
+  "e": "The small villages are quiet.",
+  "b": "A2"
+ },
+ {
+  "q": "Er zijn ___ (gezellig) cafés in de stad.",
+  "n": "café",
+  "adj": "gezellig",
+  "pl": true,
+  "t": "adj",
+  "e": "There are cosy cafés in town.",
+  "b": "B1"
+ },
+ {
+  "q": "De ___ (leeg) flessen gaan terug naar de winkel.",
+  "n": "fles",
+  "adj": "leeg",
+  "pl": true,
+  "t": "adj",
+  "e": "The empty bottles go back to the shop.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik hoor ___ (vreemd) geluiden.",
+  "n": "geluid",
+  "adj": "vreemd",
+  "pl": true,
+  "t": "adj",
+  "e": "I hear strange noises.",
+  "b": "A2"
+ },
+ {
+  "q": "Haar ___ (lang) brieven lees ik graag.",
+  "n": "brief",
+  "adj": "lang",
+  "pl": true,
+  "t": "adj",
+  "e": "I like reading her long letters.",
+  "b": "A2"
+ },
+ {
+  "q": "Er zijn ___ (mooi) stranden in Zeeland.",
+  "n": "strand",
+  "adj": "mooi",
+  "pl": true,
+  "t": "adj",
+  "e": "There are beautiful beaches in Zeeland.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben ___ (groot) ramen.",
+  "n": "raam",
+  "adj": "groot",
+  "pl": true,
+  "t": "adj",
+  "e": "We have big windows.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij heeft geen ___ (groot) huis.",
+  "n": "huis",
+  "adj": "groot",
+  "t": "adj",
+  "e": "He doesn't have a big house.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij hebben geen ___ (nieuw) bed nodig.",
+  "n": "bed",
+  "adj": "nieuw",
+  "t": "adj",
+  "e": "We don't need a new bed.",
+  "b": "A1"
+ },
+ {
+  "q": "Dit is geen ___ (goed) idee.",
+  "n": "idee",
+  "adj": "goed",
+  "t": "adj",
+  "e": "This isn't a good idea.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb geen ___ (wit) shirt meer.",
+  "n": "shirt",
+  "adj": "wit",
+  "t": "adj",
+  "e": "I don't have a white shirt any more.",
+  "b": "B1"
+ },
+ {
+  "q": "Dat is geen ___ (makkelijk) woord.",
+  "n": "woord",
+  "adj": "makkelijk",
+  "t": "adj",
+  "e": "That's not an easy word.",
+  "b": "A1"
+ },
+ {
+  "q": "Het is geen ___ (duur) hotel.",
+  "n": "hotel",
+  "adj": "duur",
+  "t": "adj",
+  "e": "It's not an expensive hotel.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb geen ___ (schoon) glas.",
+  "n": "glas",
+  "adj": "schoon",
+  "t": "adj",
+  "e": "I don't have a clean glass.",
+  "b": "A2"
+ },
+ {
+  "q": "Dat is geen ___ (slecht) plan.",
+  "n": "plan",
+  "adj": "slecht",
+  "t": "adj",
+  "e": "That's not a bad plan.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij heeft geen ___ (groot) auto.",
+  "n": "auto",
+  "adj": "groot",
+  "t": "adj",
+  "e": "He doesn't have a big car.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb geen ___ (schoon) jas.",
+  "n": "jas",
+  "adj": "schoon",
+  "t": "adj",
+  "e": "I don't have a clean coat.",
+  "b": "A2"
+ },
+ {
+  "q": "Dat is geen ___ (goed) vraag.",
+  "n": "vraag",
+  "adj": "goed",
+  "t": "adj",
+  "e": "That's not a good question.",
+  "b": "A1"
+ },
+ {
+  "q": "Het is geen ___ (makkelijk) taal.",
+  "n": "taal",
+  "adj": "makkelijk",
+  "t": "adj",
+  "e": "It's not an easy language.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben geen ___ (groot) tuin.",
+  "n": "tuin",
+  "adj": "groot",
+  "t": "adj",
+  "e": "We don't have a big garden.",
+  "b": "A2"
+ },
+ {
+  "q": "Het was geen ___ (leuk) dag.",
+  "n": "dag",
+  "adj": "leuk",
+  "t": "adj",
+  "e": "It wasn't a nice day.",
+  "b": "A1"
+ },
+ {
+  "q": "Ze hebben geen ___ (klein) kinderen meer.",
+  "n": "kind",
+  "adj": "klein",
+  "pl": true,
+  "t": "adj",
+  "e": "They don't have small children any more.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik draag geen ___ (hoog) hakken.",
+  "n": "hak",
+  "adj": "hoog",
+  "pl": true,
+  "t": "adj",
+  "e": "I don't wear high heels.",
+  "b": "B1"
+ },
+ {
+  "q": "Wij verkopen geen ___ (oud) boeken.",
+  "n": "boek",
+  "adj": "oud",
+  "pl": true,
+  "t": "adj",
+  "e": "We don't sell old books.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik drink graag ___ (koud) water.",
+  "n": "water",
+  "adj": "koud",
+  "t": "adj",
+  "e": "I like drinking cold water.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik eet graag ___ (vers) brood.",
+  "n": "brood",
+  "adj": "vers",
+  "t": "adj",
+  "e": "I like eating fresh bread.",
+  "b": "A2"
+ },
+ {
+  "q": "Wil jij ___ (warm) melk?",
+  "n": "melk",
+  "adj": "warm",
+  "t": "adj",
+  "e": "Would you like warm milk?",
+  "b": "A2"
+ },
+ {
+  "q": "Hij drinkt alleen ___ (zwart) koffie.",
+  "n": "koffie",
+  "adj": "zwart",
+  "t": "adj",
+  "e": "He only drinks black coffee.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik hou van ___ (rood) wijn.",
+  "n": "wijn",
+  "adj": "rood",
+  "t": "adj",
+  "e": "I love red wine.",
+  "b": "A2"
+ },
+ {
+  "q": "Dit is ___ (lekker) vlees.",
+  "n": "vlees",
+  "adj": "lekker",
+  "t": "adj",
+  "e": "This is tasty meat.",
+  "b": "A2"
+ },
+ {
+  "q": "Ze kookt met ___ (vers) kaas.",
+  "n": "kaas",
+  "adj": "vers",
+  "t": "adj",
+  "e": "She cooks with fresh cheese.",
+  "b": "B1"
+ },
+ {
+  "q": "Dat is ___ (goed) nieuws!",
+  "n": "nieuws",
+  "adj": "goed",
+  "t": "adj",
+  "e": "That's good news!",
+  "b": "B1"
+ },
+ {
+  "q": "Er is ___ (heet) thee in de pot.",
+  "n": "thee",
+  "adj": "heet",
+  "t": "adj",
+  "e": "There's hot tea in the pot.",
+  "b": "A2"
+ },
+ {
+  "q": "In de zomer eet ik graag ___ (koud) soep.",
+  "n": "soep",
+  "adj": "koud",
+  "t": "adj",
+  "e": "In summer I like eating cold soup.",
+  "b": "B1"
+ },
+ {
+  "q": "Wij hebben ___ (nieuw) speelgoed gekocht.",
+  "n": "speelgoed",
+  "adj": "nieuw",
+  "t": "adj",
+  "e": "We bought new toys.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb ___ (lekker) ijs voor je.",
+  "n": "ijs",
+  "adj": "lekker",
+  "t": "adj",
+  "e": "I have tasty ice cream for you.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij verdient ___ (goed) geld.",
+  "n": "geld",
+  "adj": "goed",
+  "t": "adj",
+  "e": "He earns good money.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik hou van ___ (zoet) thee.",
+  "n": "thee",
+  "adj": "zoet",
+  "t": "adj",
+  "e": "I love sweet tea.",
+  "b": "A2"
+ },
+ {
+  "q": "Na de regen ruikt het naar ___ (nat) gras.",
+  "n": "gras",
+  "adj": "nat",
+  "t": "adj",
+  "e": "After the rain it smells of wet grass.",
+  "b": "B1"
+ },
+ {
+  "q": "Zij speelt ___ (mooi) muziek.",
+  "n": "muziek",
+  "adj": "mooi",
+  "t": "adj",
+  "e": "She plays beautiful music.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb ___ (vrij) tijd nodig.",
+  "n": "tijd",
+  "adj": "vrij",
+  "t": "adj",
+  "e": "I need free time.",
+  "b": "A2"
+ },
+ {
+  "q": "Er ligt ___ (wit) zand op het strand.",
+  "n": "zand",
+  "adj": "wit",
+  "t": "adj",
+  "e": "There's white sand on the beach.",
+  "b": "B1"
+ },
+ {
+  "q": "Het ___ (klein) meisje heet Fleur.",
+  "n": "meisje",
+  "adj": "klein",
+  "t": "adj",
+  "e": "The little girl is called Fleur.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb een ___ (nieuw) telefoon.",
+  "n": "telefoon",
+  "adj": "nieuw",
+  "t": "adj",
+  "e": "I have a new phone.",
+  "b": "A1"
+ },
+ {
+  "q": "Een ___ (klein) kopje koffie, graag.",
+  "n": "kopje",
+  "adj": "klein",
+  "t": "adj",
+  "e": "A small cup of coffee, please.",
+  "b": "B1"
+ },
+ {
+  "q": "Een ___ (groot) stuk taart, graag!",
+  "n": "stuk",
+  "adj": "groot",
+  "t": "adj",
+  "e": "A big piece of cake, please!",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn ___ (oud) kantoor was in Utrecht.",
+  "n": "kantoor",
+  "adj": "oud",
+  "t": "adj",
+  "e": "My old office was in Utrecht.",
+  "b": "A2"
+ },
+ {
+  "q": "Het ___ (rustig) park ligt achter de school.",
+  "n": "park",
+  "adj": "rustig",
+  "t": "adj",
+  "e": "The quiet park is behind the school.",
+  "b": "A2"
+ },
+ {
+  "q": "De ___ (leeg) koelkast moet weer vol.",
+  "n": "koelkast",
+  "adj": "leeg",
+  "t": "adj",
+  "e": "The empty fridge needs filling again.",
+  "b": "B1"
+ },
+ {
+  "q": "We hebben een ___ (fijn) weekend gehad.",
+  "n": "weekend",
+  "adj": "fijn",
+  "t": "adj",
+  "e": "We had a lovely weekend.",
+  "b": "A2"
+ },
+ {
+  "q": "Een ___ (koud) drankje? Graag.",
+  "n": "drankje",
+  "adj": "koud",
+  "t": "adj",
+  "e": "A cold drink? Yes please.",
+  "b": "A2"
+ },
+ {
+  "q": "Dat is een ___ (handig) apparaat.",
+  "n": "apparaat",
+  "adj": "handig",
+  "t": "adj",
+  "e": "That's a handy device.",
+  "b": "B1"
+ },
+ {
+  "q": "De ___ (oud) kerk staat op het plein.",
+  "n": "kerk",
+  "adj": "oud",
+  "t": "adj",
+  "e": "The old church stands on the square.",
+  "b": "A2"
+ },
+ {
+  "q": "Het ___ (stil) huis voelt vreemd.",
+  "n": "huis",
+  "adj": "stil",
+  "t": "adj",
+  "e": "The quiet house feels strange.",
+  "b": "A2"
+ },
+ {
+  "q": "Wat een ___ (vies) toilet!",
+  "n": "toilet",
+  "adj": "vies",
+  "t": "adj",
+  "e": "What a dirty toilet!",
+  "b": "A2"
+ },
+ {
+  "q": "Ze draagt ___ (rood) sokken.",
+  "n": "sok",
+  "adj": "rood",
+  "pl": true,
+  "t": "adj",
+  "e": "She's wearing red socks.",
+  "b": "B1"
+ },
+ {
+  "q": "We hadden een ___ (gezellig) avond.",
+  "n": "avond",
+  "adj": "gezellig",
+  "t": "adj",
+  "e": "We had a fun evening.",
+  "b": "A1"
+ }
+]

@@ -1,0 +1,581 @@
+[
+ {
+  "nl": "Hallo!",
+  "en": "Hello!",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Hoi!",
+  "en": "Hi!",
+  "alt": [
+   "Hai!",
+   "Hé!"
+  ],
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1,
+  "n": "Informal."
+ },
+ {
+  "nl": "Goedemorgen.",
+  "en": "Good morning.",
+  "alt": [
+   "Morgen!"
+  ],
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Goedemiddag.",
+  "en": "Good afternoon.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Goedenavond.",
+  "en": "Good evening.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Goedenacht.",
+  "en": "Good night.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Welterusten.",
+  "en": "Sleep well.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 2,
+  "n": "Said when someone goes to bed."
+ },
+ {
+  "nl": "Hoe gaat het?",
+  "en": "How are you?",
+  "alt": [
+   "Hoe gaat het met je?",
+   "Hoe is het?"
+  ],
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: how does it go?"
+ },
+ {
+  "nl": "Hoe gaat het met u?",
+  "en": "How are you?",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1,
+  "n": "Polite form with u."
+ },
+ {
+  "nl": "Goed, dank je.",
+  "en": "Fine, thanks.",
+  "alt": [
+   "Goed, dank je wel.",
+   "Prima, dank je."
+  ],
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Goed, dank u.",
+  "en": "Fine, thank you.",
+  "alt": [
+   "Prima, dank u."
+  ],
+  "th": "begroeten",
+  "b": "A1",
+  "t": 2,
+  "n": "Polite form with u."
+ },
+ {
+  "nl": "En met jou?",
+  "en": "And you?",
+  "alt": [
+   "En jij?"
+  ],
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "En met u?",
+  "en": "And you?",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 2,
+  "n": "Polite form with u."
+ },
+ {
+  "nl": "Het gaat wel.",
+  "en": "I'm okay.",
+  "alt": [
+   "Gaat wel."
+  ],
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1,
+  "n": "Means so so, not great."
+ },
+ {
+  "nl": "Niet zo goed.",
+  "en": "Not so good.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Alles goed?",
+  "en": "All good?",
+  "alt": [
+   "Alles goed met je?",
+   "Alles oké?"
+  ],
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ja hoor, alles goed.",
+  "en": "Yes, all good.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Lang niet gezien!",
+  "en": "Long time no see!",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Leuk je te zien.",
+  "en": "Nice to see you.",
+  "alt": [
+   "Leuk om je te zien."
+  ],
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Aangenaam.",
+  "en": "Pleased to meet you.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1,
+  "n": "Said while shaking hands, a little formal."
+ },
+ {
+  "nl": "Leuk kennis te maken.",
+  "en": "Nice to meet you.",
+  "alt": [
+   "Leuk je te leren kennen."
+  ],
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Welkom!",
+  "en": "Welcome!",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Doei!",
+  "en": "Bye!",
+  "alt": [
+   "Doeg!",
+   "Daag!"
+  ],
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1,
+  "n": "Informal."
+ },
+ {
+  "nl": "Dag!",
+  "en": "Hello! or Bye!",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1,
+  "n": "Works for both hello and goodbye."
+ },
+ {
+  "nl": "Tot ziens.",
+  "en": "Goodbye.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Tot straks.",
+  "en": "See you later.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1,
+  "n": "Later today."
+ },
+ {
+  "nl": "Tot zo.",
+  "en": "See you in a bit.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Tot morgen.",
+  "en": "See you tomorrow.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Tot volgende week.",
+  "en": "See you next week.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Tot later.",
+  "en": "See you later.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Fijne dag!",
+  "en": "Have a nice day!",
+  "alt": [
+   "Fijne dag nog!",
+   "Prettige dag!"
+  ],
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Fijn weekend!",
+  "en": "Have a nice weekend!",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Fijne avond!",
+  "en": "Have a nice evening!",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Jij ook!",
+  "en": "You too!",
+  "alt": [
+   "Jij ook, hè!"
+  ],
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "U ook.",
+  "en": "You too.",
+  "alt": [
+   "Insgelijks."
+  ],
+  "th": "begroeten",
+  "b": "A1",
+  "t": 2,
+  "n": "Polite form with u."
+ },
+ {
+  "nl": "Doe de groeten aan je moeder.",
+  "en": "Say hi to your mum for me.",
+  "alt": [
+   "Groetjes aan je moeder."
+  ],
+  "th": "begroeten",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Ik moet gaan.",
+  "en": "I have to go.",
+  "alt": [
+   "Ik moet weg."
+  ],
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik ga ervandoor.",
+  "en": "I'm off.",
+  "th": "begroeten",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Dank je.",
+  "en": "Thanks.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Dank je wel.",
+  "en": "Thank you very much.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Dank u wel.",
+  "en": "Thank you.",
+  "alt": [
+   "Dank u."
+  ],
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1,
+  "n": "Polite form with u."
+ },
+ {
+  "nl": "Bedankt!",
+  "en": "Thanks!",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Heel erg bedankt.",
+  "en": "Thanks so much.",
+  "alt": [
+   "Hartstikke bedankt."
+  ],
+  "th": "begroeten",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Bedankt voor je hulp.",
+  "en": "Thanks for your help.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Bedankt voor alles.",
+  "en": "Thanks for everything.",
+  "th": "begroeten",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Graag gedaan.",
+  "en": "You're welcome.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: gladly done."
+ },
+ {
+  "nl": "Geen dank.",
+  "en": "Don't mention it.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Geen probleem.",
+  "en": "No problem.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Sorry!",
+  "en": "Sorry!",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Het spijt me.",
+  "en": "I'm sorry.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Het spijt me heel erg.",
+  "en": "I'm really sorry.",
+  "th": "begroeten",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Pardon.",
+  "en": "Excuse me.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1,
+  "n": "To get past someone or get attention."
+ },
+ {
+  "nl": "Sorry, mag ik even langs?",
+  "en": "Sorry, can I get past?",
+  "th": "begroeten",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Neem me niet kwalijk.",
+  "en": "I beg your pardon.",
+  "th": "begroeten",
+  "b": "A2",
+  "t": 3,
+  "n": "Formal apology."
+ },
+ {
+  "nl": "Sorry dat ik te laat ben.",
+  "en": "Sorry I'm late.",
+  "th": "begroeten",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Het geeft niet.",
+  "en": "That's okay.",
+  "alt": [
+   "Geeft niet."
+  ],
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Maakt niet uit.",
+  "en": "It doesn't matter.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Geen zorgen.",
+  "en": "No worries.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Welkom thuis!",
+  "en": "Welcome home!",
+  "th": "begroeten",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Gefeliciteerd!",
+  "en": "Congratulations!",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1,
+  "n": "Also the usual way to say happy birthday."
+ },
+ {
+  "nl": "Gefeliciteerd met je verjaardag!",
+  "en": "Happy birthday!",
+  "th": "begroeten",
+  "b": "A2",
+  "t": 2,
+  "n": "The Dutch also congratulate the birthday person's family."
+ },
+ {
+  "nl": "Prettige feestdagen!",
+  "en": "Happy holidays!",
+  "alt": [
+   "Fijne feestdagen!"
+  ],
+  "th": "begroeten",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Gelukkig nieuwjaar!",
+  "en": "Happy New Year!",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Succes!",
+  "en": "Good luck!",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Beterschap!",
+  "en": "Get well soon!",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Eet smakelijk!",
+  "en": "Enjoy your meal!",
+  "alt": [
+   "Smakelijk!"
+  ],
+  "th": "begroeten",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Proost!",
+  "en": "Cheers!",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Groetjes!",
+  "en": "Love, or best wishes.",
+  "th": "begroeten",
+  "b": "A1",
+  "t": 2,
+  "n": "Sign off for friendly messages."
+ },
+ {
+  "nl": "Met vriendelijke groet",
+  "en": "Kind regards",
+  "th": "begroeten",
+  "b": "A2",
+  "t": 3,
+  "n": "Sign off for formal emails."
+ },
+ {
+  "nl": "Hoe was je weekend?",
+  "en": "How was your weekend?",
+  "th": "begroeten",
+  "b": "A2",
+  "t": 2
+ }
+]

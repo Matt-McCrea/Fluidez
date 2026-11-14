@@ -1,0 +1,1367 @@
+[
+ {
+  "q": "Vorige zomer ___ (varen) wij met een bootje over het IJsselmeer.",
+  "v": "varen",
+  "t": "ovt",
+  "p": "wij",
+  "e": "Last summer we sailed across the IJsselmeer in a little boat.",
+  "b": "B1"
+ },
+ {
+  "q": "Gisteren ___ (melden) ik me ziek bij mijn baas.",
+  "v": "melden",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I called in sick to my boss.",
+  "b": "B1"
+ },
+ {
+  "q": "Gisteren ___ (snijden) mijn vader het brood in dunne plakken.",
+  "v": "snijden",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Yesterday my father cut the bread into thin slices.",
+  "b": "B1"
+ },
+ {
+  "q": "Toen pas ___ (merken) ik dat mijn tas weg was.",
+  "v": "merken",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Only then did I notice my bag was gone.",
+  "b": "B1"
+ },
+ {
+  "q": "Vorig jaar ___ (zakken) Tim voor zijn rijexamen.",
+  "v": "zakken",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Last year Tim failed his driving test.",
+  "b": "B1"
+ },
+ {
+  "q": "Vorige week ___ (uitzoeken) ik uit hoe de nieuwe telefoon werkt.",
+  "v": "uitzoeken",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Last week I worked out how the new phone works.",
+  "b": "B1"
+ },
+ {
+  "q": "Gisteren ___ (zwijgen) Esther de hele avond.",
+  "v": "zwijgen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Esther said nothing all evening yesterday.",
+  "b": "B1"
+ },
+ {
+  "q": "Vorige week ___ (lenen) ik twintig euro van mijn broer.",
+  "v": "lenen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Last week I borrowed twenty euros from my brother.",
+  "b": "B1"
+ },
+ {
+  "q": "Gisteren ___ (opgeven) hij het na tien minuten al op.",
+  "v": "opgeven",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Yesterday he gave up after just ten minutes.",
+  "b": "B1"
+ },
+ {
+  "q": "Vorige zomer ___ (wandelen) wij elke avond langs het strand.",
+  "v": "wandelen",
+  "t": "ovt",
+  "p": "wij",
+  "e": "Last summer we walked along the beach every evening.",
+  "b": "B1"
+ },
+ {
+  "q": "Vorige week ___ (sturen) u ons een mail over de rekening.",
+  "v": "sturen",
+  "t": "ovt",
+  "p": "u",
+  "e": "Last week you sent us an email about the bill.",
+  "b": "A2"
+ },
+ {
+  "q": "Gisteren ___ (liggen) u nog in het ziekenhuis.",
+  "v": "liggen",
+  "t": "ovt",
+  "p": "u",
+  "e": "Yesterday you were still in hospital.",
+  "b": "A1"
+ },
+ {
+  "q": "Toen u belde, ___ (staan) ik net onder de douche.",
+  "v": "staan",
+  "t": "ovt",
+  "p": "ik",
+  "e": "When you called, I was just in the shower.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorig jaar ___ (werken) u nog in Den Haag.",
+  "v": "werken",
+  "t": "ovt",
+  "p": "u",
+  "e": "Last year you still worked in The Hague.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (hebben) u gelijk, het spijt me.",
+  "v": "hebben",
+  "t": "ovt",
+  "p": "u",
+  "e": "You were right yesterday, I'm sorry.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (kopen) jullie een huis aan de gracht.",
+  "v": "kopen",
+  "t": "ovt",
+  "p": "jullie",
+  "e": "Last week you bought a house on the canal.",
+  "b": "A1"
+ },
+ {
+  "q": "Vroeger ___ (opstaan) jij altijd zo vroeg op.",
+  "v": "opstaan",
+  "t": "ovt",
+  "p": "jij",
+  "e": "You always used to get up so early.",
+  "b": "B1"
+ },
+ {
+  "q": "Gisteren ___ (geloven) jij me nog niet.",
+  "v": "geloven",
+  "t": "ovt",
+  "p": "jij",
+  "e": "Yesterday you still didn't believe me.",
+  "b": "A1"
+ },
+ {
+  "q": "Toen ___ (studeren) jij nog in Maastricht.",
+  "v": "studeren",
+  "t": "ovt",
+  "p": "jij",
+  "e": "Back then you were still studying in Maastricht.",
+  "b": "B1"
+ },
+ {
+  "q": "Vorige week ___ (winnen) jij een prijs met je tekening.",
+  "v": "winnen",
+  "t": "ovt",
+  "p": "jij",
+  "e": "Last week you won a prize with your drawing.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (spreken) je heel goed Engels.",
+  "v": "spreken",
+  "t": "ovt",
+  "p": "jij",
+  "e": "Yesterday you spoke very good English.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige maand ___ (zien) je je oude vrienden uit Leiden.",
+  "v": "zien",
+  "t": "ovt",
+  "p": "jij",
+  "e": "Last month you saw your old friends from Leiden.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (opeten) je het hele pak koekjes op.",
+  "v": "opeten",
+  "t": "ovt",
+  "p": "jij",
+  "e": "Yesterday you ate the whole packet of biscuits.",
+  "b": "B1"
+ },
+ {
+  "q": "Toen je klein was, ___ (zijn) je bang voor honden.",
+  "v": "zijn",
+  "t": "ovt",
+  "p": "jij",
+  "e": "When you were little, you were afraid of dogs.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (begrijpen) je niets van de les.",
+  "v": "begrijpen",
+  "t": "ovt",
+  "p": "jij",
+  "e": "Last week you didn't understand anything in the lesson.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (maken) jij een lange wandeling met de hond.",
+  "v": "maken",
+  "t": "ovt",
+  "p": "jij",
+  "e": "Yesterday you went for a long walk with the dog.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorig jaar ___ (leren) ik eindelijk autorijden.",
+  "v": "leren",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Last year I finally learned to drive.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (vragen) ik een agent de weg.",
+  "v": "vragen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I asked a police officer the way.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (voelen) ik me niet zo lekker.",
+  "v": "voelen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I didn't feel very well.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (waarderen) ik je hulp heel erg.",
+  "v": "waarderen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Last week I really appreciated your help.",
+  "b": "B1"
+ },
+ {
+  "q": "Gisteren ___ (bellen) ik je drie keer, maar je nam niet op.",
+  "v": "bellen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I called you three times, but you didn't answer.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (halen) ik mijn tante uit Canada op Schiphol.",
+  "v": "halen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Last week I collected my aunt from Canada at Schiphol.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (brengen) ik de baby om zeven uur naar bed.",
+  "v": "brengen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I put the baby to bed at seven.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (bedoelen) ik het echt niet zo.",
+  "v": "bedoelen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I really didn't mean it like that.",
+  "b": "A1"
+ },
+ {
+  "q": "Vroeger ___ (weten) ik niet hoe je dat moest doen.",
+  "v": "weten",
+  "t": "ovt",
+  "p": "ik",
+  "e": "I used not to know how to do that.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (zoeken) ik de hele dag naar mijn sleutels.",
+  "v": "zoeken",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I looked for my keys all day.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorig jaar ___ (gebruiken) ik voor het eerst een laptop met Linux.",
+  "v": "gebruiken",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Last year I used a laptop with Linux for the first time.",
+  "b": "A1"
+ },
+ {
+  "q": "In 2010 ___ (veranderen) ik mijn hele leven.",
+  "v": "veranderen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "In 2010 I changed my whole life.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige maand ___ (stoppen) ik eindelijk met roken.",
+  "v": "stoppen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Last month I finally stopped smoking.",
+  "b": "A1"
+ },
+ {
+  "q": "Vroeger ___ (noemen) we onze kat gewoon Poes.",
+  "v": "noemen",
+  "t": "ovt",
+  "p": "wij",
+  "e": "We used to just call our cat Poes.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (pakken) ik mijn jas en ging naar buiten.",
+  "v": "pakken",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I grabbed my coat and went outside.",
+  "b": "A1"
+ },
+ {
+  "q": "Vroeger ___ (vertrouwen) ik iedereen meteen.",
+  "v": "vertrouwen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "I used to trust everyone straight away.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (kloppen) iemand om middernacht op de deur.",
+  "v": "kloppen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Yesterday someone knocked on the door at midnight.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (snappen) ik het niet, maar nu wel.",
+  "v": "snappen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Last week I didn't get it, but now I do.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (slaan) de kerkklok twaalf keer.",
+  "v": "slaan",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Yesterday the church bell struck twelve.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (klinken) zijn verhaal heel vreemd.",
+  "v": "klinken",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Yesterday his story sounded very strange.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (beloven) ik je dat ik zou komen.",
+  "v": "beloven",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Last week I promised you I would come.",
+  "b": "A2"
+ },
+ {
+  "q": "Gisteren ___ (vertrekken) ik om negen uur van huis.",
+  "v": "vertrekken",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I left home at nine.",
+  "b": "A2"
+ },
+ {
+  "q": "Vroeger ___ (beschermen) hij altijd zijn kleine zusje.",
+  "v": "beschermen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "He always used to protect his little sister.",
+  "b": "A2"
+ },
+ {
+  "q": "Vorige week ___ (letten) ik niet op de tijd.",
+  "v": "letten",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Last week I didn't keep an eye on the time.",
+  "b": "A2"
+ },
+ {
+  "q": "Vroeger ___ (schelen) het me niets wat anderen dachten.",
+  "v": "schelen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "I used not to care what others thought.",
+  "b": "A2"
+ },
+ {
+  "q": "In 2010 ___ (rijden) ik op de fiets naar Parijs.",
+  "v": "rijden",
+  "t": "ovt",
+  "p": "ik",
+  "e": "In 2010 I rode my bike to Paris.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorig jaar ___ (onderzoeken) de politie de zaak maandenlang.",
+  "v": "onderzoeken",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Last year the police investigated the case for months.",
+  "b": "A2"
+ },
+ {
+  "q": "Vorige week ___ (vergeven) mijn zus me eindelijk.",
+  "v": "vergeven",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Last week my sister finally forgave me.",
+  "b": "A2"
+ },
+ {
+  "q": "Gisteren ___ (steken) een bij me in mijn arm.",
+  "v": "steken",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Yesterday a bee stung me on the arm.",
+  "b": "A2"
+ },
+ {
+  "q": "Gisteren ___ (plaatsen) ik een foto van de zee op Instagram.",
+  "v": "plaatsen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I posted a photo of the sea on Instagram.",
+  "b": "A2"
+ },
+ {
+  "q": "Vorige week ___ (behandelen) de dokter mijn knie.",
+  "v": "behandelen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Last week the doctor treated my knee.",
+  "b": "A2"
+ },
+ {
+  "q": "Vorige maand ___ (ontslaan) het bedrijf twintig mensen.",
+  "v": "ontslaan",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Last month the company sacked twenty people.",
+  "b": "A2"
+ },
+ {
+  "q": "Vroeger ___ (rekenen) ik alles uit mijn hoofd.",
+  "v": "rekenen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "I used to do all my sums in my head.",
+  "b": "A2"
+ },
+ {
+  "q": "Vroeger ___ (bewaren) ik al mijn oude kaarten.",
+  "v": "bewaren",
+  "t": "ovt",
+  "p": "ik",
+  "e": "I used to keep all my old cards.",
+  "b": "B1"
+ },
+ {
+  "q": "Gisteren ___ (veroorzaken) de storm veel schade.",
+  "v": "veroorzaken",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Yesterday the storm caused a lot of damage.",
+  "b": "B1"
+ },
+ {
+  "q": "In 2010 ___ (dienen) mijn broer in het leger.",
+  "v": "dienen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "In 2010 my brother served in the army.",
+  "b": "B1"
+ },
+ {
+  "q": "Gisteren ___ (tekenen) ik eindelijk het huurcontract.",
+  "v": "tekenen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I finally signed the rental contract.",
+  "b": "B1"
+ },
+ {
+  "q": "Gisteren ___ (bevestigen) de school de nieuwe datum.",
+  "v": "bevestigen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Yesterday the school confirmed the new date.",
+  "b": "B1"
+ },
+ {
+  "q": "Vorige week ___ (accepteren) ik eindelijk zijn excuses.",
+  "v": "accepteren",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Last week I finally accepted his apology.",
+  "b": "B1"
+ },
+ {
+  "q": "Gisteren ___ (begraven) de kinderen hun dode vogel in de tuin.",
+  "v": "begraven",
+  "t": "ovt",
+  "p": "zij",
+  "e": "Yesterday the children buried their dead bird in the garden.",
+  "b": "B1"
+ },
+ {
+  "q": "Gisteren ___ (gedragen) de kinderen zich heel netjes.",
+  "v": "gedragen",
+  "t": "ovt",
+  "p": "zij",
+  "e": "Yesterday the children behaved very nicely.",
+  "b": "B1"
+ },
+ {
+  "q": "Vorige week ___ (stemmen) wij voor de nieuwe gemeenteraad.",
+  "v": "stemmen",
+  "t": "ovt",
+  "p": "wij",
+  "e": "Last week we voted for the new council.",
+  "b": "B1"
+ },
+ {
+  "q": "Gisteren ___ (verwijderen) ik alle oude foto's van mijn telefoon.",
+  "v": "verwijderen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I deleted all the old photos from my phone.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ___ (storen) je gisteren toch niet?",
+  "v": "storen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "I didn't disturb you yesterday, did I?",
+  "b": "B1"
+ },
+ {
+  "q": "Vorige week ___ (leveren) de winkel onze nieuwe bank.",
+  "v": "leveren",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Last week the shop delivered our new sofa.",
+  "b": "B1"
+ },
+ {
+  "q": "Gisteren ___ (verzinnen) hij een heel slim verhaal.",
+  "v": "verzinnen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Yesterday he made up a really clever story.",
+  "b": "B1"
+ },
+ {
+  "q": "Vorig jaar ___ (reizen) we drie keer naar Italië.",
+  "v": "reizen",
+  "t": "ovt",
+  "p": "wij",
+  "e": "Last year we travelled to Italy three times.",
+  "b": "B1"
+ },
+ {
+  "q": "Toen ___ (richten) hij zijn camera op de vogels.",
+  "v": "richten",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Then he pointed his camera at the birds.",
+  "b": "B1"
+ },
+ {
+  "q": "In 1985 ___ (verraden) de spion zijn eigen land.",
+  "v": "verraden",
+  "t": "ovt",
+  "p": "hij",
+  "e": "In 1985 the spy betrayed his own country.",
+  "b": "B1"
+ },
+ {
+  "q": "Vorige week ___ (kopen) mijn broer en ik een nieuwe tent.",
+  "v": "kopen",
+  "t": "ovt",
+  "p": "wij",
+  "e": "Last week my brother and I bought a new tent.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (eten) ik alleen een broodje kaas.",
+  "v": "eten",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I only ate a cheese sandwich.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (doen) ik niets bijzonders.",
+  "v": "doen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Last week I didn't do anything special.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (doen) jullie wat jullie konden.",
+  "v": "doen",
+  "t": "ovt",
+  "p": "jullie",
+  "e": "Yesterday you did what you could.",
+  "b": "A1"
+ },
+ {
+  "q": "In 2010 ___ (worden) mijn zus voor het eerst moeder.",
+  "v": "worden",
+  "t": "ovt",
+  "p": "hij",
+  "e": "In 2010 my sister became a mother for the first time.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (worden) het heel laat.",
+  "v": "worden",
+  "t": "ovt",
+  "p": "hij",
+  "e": "It got very late yesterday.",
+  "b": "A1"
+ },
+ {
+  "q": "Vroeger ___ (willen) ik piloot worden.",
+  "v": "willen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "I used to want to be a pilot.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (willen) de kinderen niet naar bed.",
+  "v": "willen",
+  "t": "ovt",
+  "p": "zij",
+  "e": "Yesterday the children didn't want to go to bed.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (laten) ik mijn haar knippen.",
+  "v": "laten",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Last week I had my hair cut.",
+  "b": "A1"
+ },
+ {
+  "q": "Vroeger ___ (mogen) we na het eten niet meer buiten spelen.",
+  "v": "mogen",
+  "t": "ovt",
+  "p": "wij",
+  "e": "We weren't allowed to play outside after dinner.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (kunnen) ik niet slapen door de buren.",
+  "v": "kunnen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I couldn't sleep because of the neighbours.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (moeten) ik elke dag overwerken.",
+  "v": "moeten",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Last week I had to work overtime every day.",
+  "b": "A1"
+ },
+ {
+  "q": "Vroeger ___ (houden) ik niet van spruitjes.",
+  "v": "houden",
+  "t": "ovt",
+  "p": "ik",
+  "e": "I didn't use to like sprouts.",
+  "b": "A1"
+ },
+ {
+  "q": "Vroeger ___ (leven) de mensen hier van de visserij.",
+  "v": "leven",
+  "t": "ovt",
+  "p": "zij",
+  "e": "People here used to live off fishing.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (gebeuren) er iets vreemds op mijn werk.",
+  "v": "gebeuren",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Something strange happened at work yesterday.",
+  "b": "A1"
+ },
+ {
+  "q": "Toen ___ (kennen) ik nog niemand in deze stad.",
+  "v": "kennen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Back then I didn't know anybody in this city yet.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (proberen) ik een nieuw recept met linzen.",
+  "v": "proberen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Last week I tried a new recipe with lentils.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (lijken) je heel moe.",
+  "v": "lijken",
+  "t": "ovt",
+  "p": "jij",
+  "e": "You seemed very tired yesterday.",
+  "b": "A1"
+ },
+ {
+  "q": "In 2010 ___ (beginnen) mijn zoon met pianoles.",
+  "v": "beginnen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "In 2010 my son started piano lessons.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (vallen) ik van de trap.",
+  "v": "vallen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I fell down the stairs.",
+  "b": "A1"
+ },
+ {
+  "q": "Vroeger ___ (betekenen) dat woord iets heel anders.",
+  "v": "betekenen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "That word used to mean something quite different.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorig jaar ___ (volgen) ik een cursus Nederlands.",
+  "v": "volgen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Last year I took a Dutch course.",
+  "b": "A1"
+ },
+ {
+  "q": "Vroeger ___ (hoeven) je op zondag niet te werken.",
+  "v": "hoeven",
+  "t": "ovt",
+  "p": "jij",
+  "e": "You didn't use to have to work on Sundays.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (verklaren) de man dat hij onschuldig was.",
+  "v": "verklaren",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Yesterday the man declared that he was innocent.",
+  "b": "A2"
+ },
+ {
+  "q": "Vorige week ___ (vernietigen) het vuur een hele boerderij.",
+  "v": "vernietigen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Last week the fire destroyed a whole farm.",
+  "b": "A2"
+ },
+ {
+  "q": "Gisteren ___ (overtuigen) jij me eindelijk.",
+  "v": "overtuigen",
+  "t": "ovt",
+  "p": "jij",
+  "e": "Yesterday you finally convinced me.",
+  "b": "A2"
+ },
+ {
+  "q": "Vorige week ___ (verslaan) Feyenoord Ajax met twee een.",
+  "v": "verslaan",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Last week Feyenoord beat Ajax two one.",
+  "b": "A2"
+ },
+ {
+  "q": "Gisteren ___ (aanvallen) een grote hond mijn kat aan.",
+  "v": "aanvallen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Yesterday a big dog attacked my cat.",
+  "b": "A2"
+ },
+ {
+  "q": "Vorige week ___ (bewijzen) de advocaat dat zijn klant onschuldig was.",
+  "v": "bewijzen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Last week the lawyer proved his client was innocent.",
+  "b": "A2"
+ },
+ {
+  "q": "Vroeger ___ (lijden) veel mensen hier honger.",
+  "v": "lijden",
+  "t": "ovt",
+  "p": "zij",
+  "e": "Many people here used to go hungry.",
+  "b": "A2"
+ },
+ {
+  "q": "In 1944 ___ (overleven) mijn opa de hongerwinter.",
+  "v": "overleven",
+  "t": "ovt",
+  "p": "hij",
+  "e": "In 1944 my grandpa survived the Hunger Winter.",
+  "b": "A2"
+ },
+ {
+  "q": "Vroeger ___ (onthouden) ik alle verjaardagen.",
+  "v": "onthouden",
+  "t": "ovt",
+  "p": "ik",
+  "e": "I used to remember everyone's birthday.",
+  "b": "B1"
+ },
+ {
+  "q": "In 1932 ___ (verbinden) de nieuwe dijk twee provincies.",
+  "v": "verbinden",
+  "t": "ovt",
+  "p": "hij",
+  "e": "In 1932 the new dyke connected two provinces.",
+  "b": "B1"
+ },
+ {
+  "q": "Later ___ (blijken) dat hij gelijk had.",
+  "v": "blijken",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Later it turned out that he was right.",
+  "b": "B1"
+ },
+ {
+  "q": "Gisteren ___ (raken) ik met mijn auto een paaltje.",
+  "v": "raken",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I hit a post with my car.",
+  "b": "A2"
+ },
+ {
+  "q": "Gisteren ___ (vormen) de kinderen een grote kring.",
+  "v": "vormen",
+  "t": "ovt",
+  "p": "zij",
+  "e": "Yesterday the children formed a big circle.",
+  "b": "B1"
+ },
+ {
+  "q": "Toen ik om zes uur ___ (opstaan), was het nog donker.",
+  "v": "opstaan",
+  "t": "ovt",
+  "p": "ik",
+  "e": "When I got up at six, it was still dark.",
+  "b": "B1",
+  "sub": true
+ },
+ {
+  "q": "Toen de trein eindelijk ___ (aankomen), was het al laat.",
+  "v": "aankomen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "When the train finally arrived, it was already late.",
+  "b": "B1",
+  "sub": true
+ },
+ {
+  "q": "Toen mijn zus ___ (terugkomen), sliep ik al.",
+  "v": "terugkomen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "When my sister came back, I was already asleep.",
+  "b": "B1",
+  "sub": true
+ },
+ {
+  "q": "Toen de gasten ___ (binnenkomen), speelde de band al.",
+  "v": "binnenkomen",
+  "t": "ovt",
+  "p": "zij",
+  "e": "When the guests came in, the band was already playing.",
+  "b": "B1",
+  "sub": true
+ },
+ {
+  "q": "Toen hij me ___ (opbellen), zat ik in de trein.",
+  "v": "opbellen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "When he called me, I was on the train.",
+  "b": "B1",
+  "sub": true
+ },
+ {
+  "q": "Gisteren ___ (maken) mijn moeder ons al om zes uur wakker.",
+  "v": "maken",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Yesterday my mother woke us at six.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (zijn) wij een middag in het Rijksmuseum.",
+  "v": "zijn",
+  "t": "ovt",
+  "p": "wij",
+  "e": "Last week we spent an afternoon in the Rijksmuseum.",
+  "b": "A1"
+ },
+ {
+  "q": "Vroeger ___ (hebben) jullie een hond, toch?",
+  "v": "hebben",
+  "t": "ovt",
+  "p": "jullie",
+  "e": "You used to have a dog, didn't you?",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige maand ___ (gaan) de prijs van brood opnieuw omhoog.",
+  "v": "gaan",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Last month the price of bread went up again.",
+  "b": "A1"
+ },
+ {
+  "q": "Toen ik studeerde, ___ (wonen) ik in een studentenhuis.",
+  "v": "wonen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "When I was a student, I lived in a student house.",
+  "b": "A2"
+ },
+ {
+  "q": "Gisteren ___ (bellen) mijn baas me om acht uur 's avonds.",
+  "v": "bellen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Yesterday my boss called me at eight in the evening.",
+  "b": "A1"
+ },
+ {
+  "q": "Vroeger ___ (spelen) ik elke dag drie uur piano.",
+  "v": "spelen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "I used to play the piano for three hours every day.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (maken) jullie een mooie wandeling door het bos.",
+  "v": "maken",
+  "t": "ovt",
+  "p": "jullie",
+  "e": "Last week you went for a lovely walk in the woods.",
+  "b": "A1"
+ },
+ {
+  "q": "Vroeger ___ (dragen) mijn opa altijd een hoed.",
+  "v": "dragen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "My grandpa always used to wear a hat.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (staan) wij een uur in de file.",
+  "v": "staan",
+  "t": "ovt",
+  "p": "wij",
+  "e": "Yesterday we were stuck in a traffic jam for an hour.",
+  "b": "A1"
+ },
+ {
+  "q": "Toen ik binnenkwam, ___ (zitten) de kinderen al aan tafel.",
+  "v": "zitten",
+  "t": "ovt",
+  "p": "zij",
+  "e": "When I came in, the children were already sitting at the table.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (lezen) ik een spannend boek over de oorlog.",
+  "v": "lezen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Last week I read an exciting book about the war.",
+  "b": "A2"
+ },
+ {
+  "q": "Gisteren ___ (draaien) de buren tot drie uur 's nachts muziek.",
+  "v": "draaien",
+  "t": "ovt",
+  "p": "zij",
+  "e": "Yesterday the neighbours played music until three in the morning.",
+  "b": "A2"
+ },
+ {
+  "q": "In 2010 ___ (schrijven) Femke haar eerste roman.",
+  "v": "schrijven",
+  "t": "ovt",
+  "p": "hij",
+  "e": "In 2010 Femke wrote her first novel.",
+  "b": "A2"
+ },
+ {
+  "q": "Gisteren ___ (drinken) jij te veel bier.",
+  "v": "drinken",
+  "t": "ovt",
+  "p": "jij",
+  "e": "Yesterday you drank too much beer.",
+  "b": "A2"
+ },
+ {
+  "q": "Vorige week ___ (bouwen) de kinderen een hut in het bos.",
+  "v": "bouwen",
+  "t": "ovt",
+  "p": "zij",
+  "e": "Last week the children built a den in the woods.",
+  "b": "A2"
+ },
+ {
+  "q": "Vroeger ___ (rijden) wij altijd met de auto naar Italië.",
+  "v": "rijden",
+  "t": "ovt",
+  "p": "wij",
+  "e": "We always used to drive to Italy.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (kijken) mijn broer de hele dag op zijn telefoon.",
+  "v": "kijken",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Yesterday my brother looked at his phone all day.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (zien) ik in de stad een vriend van vroeger.",
+  "v": "zien",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I saw an old friend in town.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (sturen) wij een kaartje aan oma.",
+  "v": "sturen",
+  "t": "ovt",
+  "p": "wij",
+  "e": "Last week we sent grandma a card.",
+  "b": "A1"
+ },
+ {
+  "q": "Toen ik jong was, ___ (vertellen) mijn moeder me elke avond een verhaal.",
+  "v": "vertellen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "When I was young, my mother told me a story every evening.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (zijn) ik bij een kleine kapper in de buurt.",
+  "v": "zijn",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Last week I was at a small hairdresser's nearby.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (krijgen) de kinderen een week vrij van school.",
+  "v": "krijgen",
+  "t": "ovt",
+  "p": "zij",
+  "e": "Yesterday the children got a week off school.",
+  "b": "A1"
+ },
+ {
+  "q": "Vroeger ___ (maken) wij altijd samen huiswerk.",
+  "v": "maken",
+  "t": "ovt",
+  "p": "wij",
+  "e": "We always used to do homework together.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (wachten) ik tien minuten op de tram.",
+  "v": "wachten",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I waited ten minutes for the tram.",
+  "b": "A1"
+ },
+ {
+  "q": "Vroeger ___ (hebben) mijn ouders geen tijd voor vakanties.",
+  "v": "hebben",
+  "t": "ovt",
+  "p": "zij",
+  "e": "My parents never used to have time for holidays.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (maken) Mehmet een prachtige foto van de zonsondergang.",
+  "v": "maken",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Last week Mehmet took a beautiful photo of the sunset.",
+  "b": "A1"
+ },
+ {
+  "q": "Vroeger ___ (willen) jij nooit groenten eten.",
+  "v": "willen",
+  "t": "ovt",
+  "p": "jij",
+  "e": "You never used to want any vegetables.",
+  "b": "A1"
+ },
+ {
+  "q": "Toen wij in Spanje woonden, ___ (liggen) we elke dag op het strand.",
+  "v": "liggen",
+  "t": "ovt",
+  "p": "wij",
+  "e": "When we lived in Spain, we lay on the beach every day.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (gaan) jullie om half acht de deur uit.",
+  "v": "gaan",
+  "t": "ovt",
+  "p": "jullie",
+  "e": "Yesterday you left the house at half past seven.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (nemen) ik een groot stuk van de taart.",
+  "v": "nemen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I took a big piece of the cake.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (helpen) mijn collega's me met de presentatie.",
+  "v": "helpen",
+  "t": "ovt",
+  "p": "zij",
+  "e": "Last week my colleagues helped me with the presentation.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (zijn) mijn moeder heel blij met de bloemen.",
+  "v": "zijn",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Yesterday my mother was very happy with the flowers.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (maken) de leerlingen een toets over de Gouden Eeuw.",
+  "v": "maken",
+  "t": "ovt",
+  "p": "zij",
+  "e": "Last week the pupils did a test on the Golden Age.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (praten) ik heel lang met mijn oma.",
+  "v": "praten",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I talked with my grandma for a long time.",
+  "b": "A1"
+ },
+ {
+  "q": "Toen we in Amsterdam aankwamen, ___ (zijn) het al donker.",
+  "v": "zijn",
+  "t": "ovt",
+  "p": "hij",
+  "e": "When we arrived in Amsterdam, it was already dark.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (beginnen) de les om negen uur.",
+  "v": "beginnen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Yesterday the lesson started at nine.",
+  "b": "A1"
+ },
+ {
+  "q": "Vroeger ___ (kunnen) je hier nog vrij parkeren.",
+  "v": "kunnen",
+  "t": "ovt",
+  "p": "jij",
+  "e": "You used to be able to park here for free.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (mogen) wij eerder naar huis.",
+  "v": "mogen",
+  "t": "ovt",
+  "p": "wij",
+  "e": "Yesterday we were allowed to go home earlier.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (moeten) jullie langer op school blijven.",
+  "v": "moeten",
+  "t": "ovt",
+  "p": "jullie",
+  "e": "Last week you had to stay longer at school.",
+  "b": "A1"
+ },
+ {
+  "q": "Toen ik je zag, ___ (weten) ik meteen dat er iets mis was.",
+  "v": "weten",
+  "t": "ovt",
+  "p": "ik",
+  "e": "When I saw you, I knew straight away that something was wrong.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (liggen) de hond de hele dag aan de deur.",
+  "v": "liggen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Yesterday the dog lay by the door all day.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (vinden) ik een fout op de rekening.",
+  "v": "vinden",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Last week I found a mistake on the bill.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (kijken) jij de hele avond naar het voetbal.",
+  "v": "kijken",
+  "t": "ovt",
+  "p": "jij",
+  "e": "Yesterday you watched football all evening.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorig jaar ___ (gaan) we elke week naar de sportschool.",
+  "v": "gaan",
+  "t": "ovt",
+  "p": "wij",
+  "e": "Last year we went to the gym every week.",
+  "b": "A1"
+ },
+ {
+  "q": "Vroeger ___ (zeggen) hij nooit hoe hij zich voelde.",
+  "v": "zeggen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "He never used to say how he felt.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (vallen) ik pas om twee uur in slaap.",
+  "v": "vallen",
+  "t": "ovt",
+  "p": "ik",
+  "e": "Yesterday I only fell asleep at two.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (slapen) de kinderen bij hun opa en oma.",
+  "v": "slapen",
+  "t": "ovt",
+  "p": "zij",
+  "e": "Last week the children slept at their grandparents'.",
+  "b": "A1"
+ },
+ {
+  "q": "Vroeger ___ (beginnen) mijn vader elke ochtend om zes uur.",
+  "v": "beginnen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "My father used to start at six every morning.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (bellen) Sanne de hele middag met haar vriendinnen.",
+  "v": "bellen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Yesterday Sanne was on the phone with her friends all afternoon.",
+  "b": "A1"
+ },
+ {
+  "q": "In 2010 ___ (rijden) wij nog een kleine Fiat.",
+  "v": "rijden",
+  "t": "ovt",
+  "p": "wij",
+  "e": "In 2010 we still drove a little Fiat.",
+  "b": "A1"
+ },
+ {
+  "q": "Toen ik in Leiden woonde, ___ (gaan) ik vaak met Joost naar de film.",
+  "v": "gaan",
+  "t": "ovt",
+  "p": "ik",
+  "e": "When I lived in Leiden, I often went to the cinema with Joost.",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ (verliezen) mijn dochter haar eerste tand.",
+  "v": "verliezen",
+  "t": "ovt",
+  "p": "hij",
+  "e": "Yesterday my daughter lost her first tooth.",
+  "b": "A1"
+ },
+ {
+  "q": "Vorige week ___ (hebben) jullie heel veel geluk met het weer.",
+  "v": "hebben",
+  "t": "ovt",
+  "p": "jullie",
+  "e": "Last week you were very lucky with the weather.",
+  "b": "A1"
+ }
+]

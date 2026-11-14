@@ -1,0 +1,938 @@
+[
+ {
+  "q": "Ik ken de man ___.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I don't know the man.",
+  "w": "de or het makes the noun definite: niet, never geen.",
+  "wn": "Bepaald zelfstandig naamwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ben ___ moe.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I'm not tired.",
+  "w": "Before an adjective: niet.",
+  "wn": "Voor een bijvoeglijk naamwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Hij komt ___.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "He isn't coming.",
+  "w": "No noun to negate: niet goes with the verb.",
+  "wn": "Geen zelfstandig naamwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Zij woont ___ in Amsterdam.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "She doesn't live in Amsterdam.",
+  "w": "Before a phrase with a preposition: niet.",
+  "wn": "Voor een voorzetsel: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Het weer is ___ mooi.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "The weather isn't nice.",
+  "w": "Before an adjective: niet.",
+  "wn": "Voor een bijvoeglijk naamwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Ik begrijp het ___.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I don't understand it.",
+  "w": "With a pronoun such as het, hem or je: niet.",
+  "wn": "Bij een voornaamwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Dat is ___ mijn tas.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "That isn't my bag.",
+  "w": "mijn, jouw, zijn, die and dit make the noun definite: niet.",
+  "wn": "Na mijn, die of dit: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Wij werken ___ op zondag.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "We don't work on Sundays.",
+  "w": "Before a phrase with a preposition: niet.",
+  "wn": "Voor een voorzetsel: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Ik kan ___ zwemmen.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I can't swim.",
+  "w": "Before the infinitive or participle at the end: niet.",
+  "wn": "Voor het werkwoord aan het eind: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Hij zingt ___ goed.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "He doesn't sing well.",
+  "w": "Before an adverb such as goed, vaak or thuis: niet.",
+  "wn": "Voor een bijwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Ik zie de bus ___.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I don't see the bus.",
+  "w": "de or het makes the noun definite: niet, never geen.",
+  "wn": "Bepaald zelfstandig naamwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Zij heet ___ Anna.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "Her name isn't Anna.",
+  "w": "Names are definite: niet.",
+  "wn": "Bij een naam: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "De soep is ___ warm.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "The soup isn't hot.",
+  "w": "Before an adjective: niet.",
+  "wn": "Voor een bijvoeglijk naamwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb het boek ___ gelezen.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I haven't read the book.",
+  "w": "de or het makes the noun definite: niet, never geen.",
+  "wn": "Bepaald zelfstandig naamwoord: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Wij gaan ___ naar huis.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "We aren't going home.",
+  "w": "Before a phrase with a preposition: niet.",
+  "wn": "Voor een voorzetsel: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Hij rookt ___.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "He doesn't smoke.",
+  "w": "No noun to negate: niet goes with the verb.",
+  "wn": "Geen zelfstandig naamwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Dit is ___ de goede weg.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "This isn't the right way.",
+  "w": "de or het makes the noun definite: niet, never geen.",
+  "wn": "Bepaald zelfstandig naamwoord: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Ik vind die film ___ leuk.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I don't like that film.",
+  "w": "Before an adjective: niet.",
+  "wn": "Voor een bijvoeglijk naamwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Ze heeft me ___ gebeld.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "She didn't call me.",
+  "w": "Before the infinitive or participle at the end: niet.",
+  "wn": "Voor het werkwoord aan het eind: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Peter is ___ thuis.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "Peter isn't home.",
+  "w": "Before an adverb such as goed, vaak or thuis: niet.",
+  "wn": "Voor een bijwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Ik drink de koffie ___.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I'm not drinking the coffee.",
+  "w": "de or het makes the noun definite: niet, never geen.",
+  "wn": "Bepaald zelfstandig naamwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Het is ___ ver.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "It isn't far.",
+  "w": "Before an adjective: niet.",
+  "wn": "Voor een bijvoeglijk naamwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn broer houdt ___ van kaas.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "My brother doesn't like cheese.",
+  "w": "Before a phrase with a preposition: niet.",
+  "wn": "Voor een voorzetsel: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Ik weet het ___.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I don't know.",
+  "w": "With a pronoun such as het, hem or je: niet.",
+  "wn": "Bij een voornaamwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Dat is ___ waar.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "That isn't true.",
+  "w": "Before an adjective: niet.",
+  "wn": "Voor een bijvoeglijk naamwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Zij is ___ ziek.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "She isn't ill.",
+  "w": "Before an adjective: niet.",
+  "wn": "Voor een bijvoeglijk naamwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb hem ___ gezien.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I haven't seen him.",
+  "w": "With a pronoun such as het, hem or je: niet.",
+  "wn": "Bij een voornaamwoord: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Dit huis is ___ te koop.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "This house isn't for sale.",
+  "w": "Before a phrase with a preposition: niet.",
+  "wn": "Voor een voorzetsel: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Hij wil ___ dansen.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "He doesn't want to dance.",
+  "w": "Before the infinitive or participle at the end: niet.",
+  "wn": "Voor het werkwoord aan het eind: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Wij vinden het ___ erg.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "We don't mind.",
+  "w": "Before an adjective: niet.",
+  "wn": "Voor een bijvoeglijk naamwoord: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "De bakker is ___ open.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "The baker's isn't open.",
+  "w": "Before an adjective: niet.",
+  "wn": "Voor een bijvoeglijk naamwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ken Utrecht ___.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I don't know Utrecht.",
+  "w": "Names are definite: niet.",
+  "wn": "Bij een naam: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "De trein vertrekt ___ om acht uur.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "The train doesn't leave at eight.",
+  "w": "Before a phrase with a preposition: niet.",
+  "wn": "Voor een voorzetsel: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Zij fietst ___ vaak.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "She doesn't cycle often.",
+  "w": "Before an adverb such as goed, vaak or thuis: niet.",
+  "wn": "Voor een bijwoord: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb de sleutels ___.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I don't have the keys.",
+  "w": "de or het makes the noun definite: niet, never geen.",
+  "wn": "Bepaald zelfstandig naamwoord: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "De winkel is vandaag ___ druk.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "The shop isn't busy today.",
+  "w": "Before an adjective: niet.",
+  "wn": "Voor een bijvoeglijk naamwoord: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Ik geloof je ___.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I don't believe you.",
+  "w": "With a pronoun such as het, hem or je: niet.",
+  "wn": "Bij een voornaamwoord: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Hij is ___ de baas.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "He isn't the boss.",
+  "w": "de or het makes the noun definite: niet, never geen.",
+  "wn": "Bepaald zelfstandig naamwoord: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Wij hebben het ___ gehoord.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "We didn't hear it.",
+  "w": "With a pronoun such as het, hem or je: niet.",
+  "wn": "Bij een voornaamwoord: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Ze wonen ___ bij hun ouders.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "They don't live with their parents.",
+  "w": "Before a phrase with a preposition: niet.",
+  "wn": "Voor een voorzetsel: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn telefoon werkt ___.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "My phone doesn't work.",
+  "w": "No noun to negate: niet goes with the verb.",
+  "wn": "Geen zelfstandig naamwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Ik doe ___ mee.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I'm not taking part.",
+  "w": "Separable verb: niet goes before the particle.",
+  "wn": "Scheidbaar werkwoord: niet voor het deeltje.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Dit is ___ jouw schuld.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "This isn't your fault.",
+  "w": "mijn, jouw, zijn, die and dit make the noun definite: niet.",
+  "wn": "Na mijn, die of dit: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Het concert was ___ zo goed.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "The concert wasn't that good.",
+  "w": "Before an adverb such as goed, vaak or thuis: niet.",
+  "wn": "Voor een bijwoord: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Ik slaap ___ goed.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I don't sleep well.",
+  "w": "Before an adverb such as goed, vaak or thuis: niet.",
+  "wn": "Voor een bijwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Wij kennen die mensen ___.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "We don't know those people.",
+  "w": "mijn, jouw, zijn, die and dit make the noun definite: niet.",
+  "wn": "Na mijn, die of dit: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "De kinderen zijn ___ op school.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "The children aren't at school.",
+  "w": "Before a phrase with a preposition: niet.",
+  "wn": "Voor een voorzetsel: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Zij heeft de brief ___ gestuurd.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "She didn't send the letter.",
+  "w": "de or het makes the noun definite: niet, never geen.",
+  "wn": "Bepaald zelfstandig naamwoord: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Ik hoef ___ te werken.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I don't have to work.",
+  "w": "Before the infinitive or participle at the end: niet.",
+  "wn": "Voor het werkwoord aan het eind: niet.",
+  "t": "niet",
+  "b": "B1"
+ },
+ {
+  "q": "Dat mag ___.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "That isn't allowed.",
+  "w": "No noun to negate: niet goes with the verb.",
+  "wn": "Geen zelfstandig naamwoord: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Hij belt ___ op.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "He doesn't call.",
+  "w": "Separable verb: niet goes before the particle.",
+  "wn": "Scheidbaar werkwoord: niet voor het deeltje.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Ik voel me ___ lekker.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I don't feel well.",
+  "w": "Before an adverb such as goed, vaak or thuis: niet.",
+  "wn": "Voor een bijwoord: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "De film begint ___ op tijd.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "The film doesn't start on time.",
+  "w": "Before a phrase with a preposition: niet.",
+  "wn": "Voor een voorzetsel: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Zij lijkt ___ op haar moeder.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "She doesn't look like her mother.",
+  "w": "Before a phrase with a preposition: niet.",
+  "wn": "Voor een voorzetsel: niet.",
+  "t": "niet",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ben het ___ met je eens.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I don't agree with you.",
+  "w": "Before a phrase with a preposition: niet.",
+  "wn": "Voor een voorzetsel: niet.",
+  "t": "niet",
+  "b": "B1"
+ },
+ {
+  "q": "Hij heeft zijn huiswerk ___ gemaakt.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "He didn't do his homework.",
+  "w": "mijn, jouw, zijn, die and dit make the noun definite: niet.",
+  "wn": "Na mijn, die of dit: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Je moet ___ zo hard praten.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "You shouldn't talk so loudly.",
+  "w": "Before an adverb such as goed, vaak or thuis: niet.",
+  "wn": "Voor een bijwoord: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Het gaat ___ goed met haar.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "She isn't doing well.",
+  "w": "Before an adverb such as goed, vaak or thuis: niet.",
+  "wn": "Voor een bijwoord: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb ___ geslapen.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I didn't sleep.",
+  "w": "Before the infinitive or participle at the end: niet.",
+  "wn": "Voor het werkwoord aan het eind: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Dat restaurant is ___ duur.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "That restaurant isn't expensive.",
+  "w": "Before an adjective: niet.",
+  "wn": "Voor een bijvoeglijk naamwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Wij wachten ___ op de bus.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "We aren't waiting for the bus.",
+  "w": "Before a phrase with a preposition: niet.",
+  "wn": "Voor een voorzetsel: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ga ___ met de auto.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I'm not going by car.",
+  "w": "Before a phrase with a preposition: niet.",
+  "wn": "Voor een voorzetsel: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Zij praat ___ over haar werk.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "She doesn't talk about her work.",
+  "w": "Before a phrase with a preposition: niet.",
+  "wn": "Voor een voorzetsel: niet.",
+  "t": "niet",
+  "b": "B1"
+ },
+ {
+  "q": "Deze schoenen passen ___.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "These shoes don't fit.",
+  "w": "No noun to negate: niet goes with the verb.",
+  "wn": "Geen zelfstandig naamwoord: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Hij heeft het raam ___ dichtgedaan.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "He didn't close the window.",
+  "w": "Before the infinitive or participle at the end: niet.",
+  "wn": "Voor het werkwoord aan het eind: niet.",
+  "t": "niet",
+  "b": "B1"
+ },
+ {
+  "q": "Ik snap de vraag ___.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I don't get the question.",
+  "w": "de or het makes the noun definite: niet, never geen.",
+  "wn": "Bepaald zelfstandig naamwoord: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn moeder is ___ blij.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "My mother isn't happy.",
+  "w": "Before an adjective: niet.",
+  "wn": "Voor een bijvoeglijk naamwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Ze durft ___ te springen.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "She doesn't dare to jump.",
+  "w": "Before the infinitive or participle at the end: niet.",
+  "wn": "Voor het werkwoord aan het eind: niet.",
+  "t": "niet",
+  "b": "B1"
+ },
+ {
+  "q": "Het regent ___.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "It isn't raining.",
+  "w": "No noun to negate: niet goes with the verb.",
+  "wn": "Geen zelfstandig naamwoord: niet.",
+  "t": "niet",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb Sanne ___ uitgenodigd.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "I didn't invite Sanne.",
+  "w": "Names are definite: niet.",
+  "wn": "Bij een naam: niet.",
+  "t": "niet",
+  "b": "B1"
+ },
+ {
+  "q": "Hij is ___ getrouwd.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "He isn't married.",
+  "w": "Before an adjective: niet.",
+  "wn": "Voor een bijvoeglijk naamwoord: niet.",
+  "t": "niet",
+  "b": "A2"
+ },
+ {
+  "q": "Wij zijn ___ verbaasd.",
+  "a": "niet",
+  "o": [
+   "niet",
+   "geen"
+  ],
+  "e": "We aren't surprised.",
+  "w": "Before an adjective: niet.",
+  "wn": "Voor een bijvoeglijk naamwoord: niet.",
+  "t": "niet",
+  "b": "B1"
+ }
+]

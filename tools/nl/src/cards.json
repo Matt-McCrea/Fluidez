@@ -1,0 +1,738 @@
+{
+ "ott": {
+  "kind": "tense", "topic": "ott",
+  "name": { "nl": "De tegenwoordige tijd", "en": "The present" },
+  "when": [
+   { "en": "What happens now: *Ik werk.* can mean I work or I am working.", "nl": "Wat nu gebeurt: *Ik werk.*" },
+   { "en": "Habits and things that are always true: *elke dag*, *altijd*, *meestal*.", "nl": "Gewoontes en wat altijd zo is: *elke dag*, *altijd*, *meestal*." },
+   { "en": "Plans for later, with a time word: *Morgen ga ik naar Utrecht.*", "nl": "Plannen, met een tijdwoord: *Morgen ga ik naar Utrecht.*" }
+  ],
+  "how": {
+   "en": "Take the stem: *werken* minus *-en* is *werk*. *Ik* takes the stem, *jij*, *u* and *hij* add *-t*, and every plural is the infinitive. When *jij* comes after the verb, the *-t* goes: *werk jij?*",
+   "nl": "Stam: *werken* min *-en* is *werk*. *Ik werk*, *jij werkt*, *hij werkt*, *wij werken*. Na het werkwoord geen *-t*: *werk jij?*"
+  },
+  "table": {
+   "head": ["", "werken (work)", "wonen (live)", "gaan (go)"],
+   "rows": [
+    ["ik", "werk", "woon", "ga"],
+    ["jij", "werkt", "woont", "gaat"],
+    ["hij / zij", "werkt", "woont", "gaat"],
+    ["wij", "werken", "wonen", "gaan"],
+    ["jullie", "werken", "wonen", "gaan"],
+    ["zij", "werken", "wonen", "gaan"],
+    ["question", "werk jij?", "woon jij?", "ga jij?"]
+   ]
+  },
+  "ex": [
+   { "nl": "Ik woon in Amsterdam.", "en": "I live in Amsterdam." },
+   { "nl": "Hij werkt elke dag tot vijf uur.", "en": "He works until five every day." },
+   { "nl": "Ga jij vanavond mee?", "en": "Are you coming along tonight?" }
+  ],
+  "tip": {
+   "en": "Spelling follows the sound: *wonen* has a long *o*, so the stem keeps two: *woon*. *Zitten* has a short *i*, so one *t* goes: *zit*.",
+   "nl": "Lange klank, twee letters: *wonen*, *ik woon*. Korte klank: *zitten*, *ik zit*."
+  }
+ },
+ "ovt": {
+  "kind": "tense", "topic": "ovt",
+  "irr": {"tense":"ovt","verbs":["zijn","hebben","gaan","komen","doen","zien","weten","krijgen","geven","staan","zitten","liggen","lopen","nemen","kopen","denken","brengen","zoeken","eten","drinken","schrijven","lezen","spreken","rijden","vinden","beginnen","blijven","worden"]},
+  "name": { "nl": "De onvoltooid verleden tijd", "en": "The simple past" },
+  "when": [
+   { "en": "Telling a story about the past, one thing after another.", "nl": "Een verhaal over vroeger vertellen." },
+   { "en": "How things were, or what you used to do: *Vroeger woonde ik in Gent.*", "nl": "Hoe het vroeger was: *Vroeger woonde ik in Gent.*" },
+   { "en": "With *was* and *had* it is everyday speech: *Het was koud.*", "nl": "Heel vaak met *was* en *had*: *Het was koud.*" }
+  ],
+  "how": {
+   "en": "Regular verbs add *-te* or *-de* to the stem (see *'t kofschip*), and *-ten* or *-den* for the plural: *werkte*, *woonde*. Strong verbs change their vowel: *gaan* becomes *ging*, *ging* takes *-en* in the plural.",
+   "nl": "Stam + *-te* of *-de*, meervoud *-ten* of *-den*: *werkte*, *woonde*. Sterke werkwoorden: *gaan*, *ging*, *gingen*."
+  },
+  "table": {
+   "head": ["", "werken (work)", "wonen (live)", "gaan (go)"],
+   "rows": [
+    ["ik", "werkte", "woonde", "ging"],
+    ["jij", "werkte", "woonde", "ging"],
+    ["hij / zij", "werkte", "woonde", "ging"],
+    ["wij", "werkten", "woonden", "gingen"],
+    ["jullie", "werkten", "woonden", "gingen"],
+    ["zij", "werkten", "woonden", "gingen"]
+   ]
+  },
+  "ex": [
+   { "nl": "Gisteren werkte ik tot zes uur.", "en": "Yesterday I worked until six." },
+   { "nl": "Wij woonden tien jaar in Leiden.", "en": "We lived in Leiden for ten years." },
+   { "nl": "Toen ging hij naar huis.", "en": "Then he went home." }
+  ],
+  "tip": {
+   "en": "Only two forms: one for *ik*, *jij* and *hij*, and one for every plural. No *-t* for *jij* here.",
+   "nl": "Maar twee vormen: enkelvoud en meervoud. Geen *-t* bij *jij*."
+  }
+ },
+ "vtt": {
+  "kind": "tense", "topic": "vtt",
+  "irr": {"tense":"vtt","verbs":["zijn","hebben","gaan","komen","doen","zien","weten","krijgen","geven","staan","zitten","liggen","lopen","nemen","kopen","denken","brengen","zoeken","eten","drinken","schrijven","lezen","spreken","rijden","vinden","beginnen","blijven","worden"]},
+  "name": { "nl": "De voltooid tegenwoordige tijd", "en": "The perfect" },
+  "when": [
+   { "en": "The everyday past in speech: *Ik heb gewerkt.* is I worked or I have worked.", "nl": "Het gewone verleden als je praat: *Ik heb gewerkt.*" },
+   { "en": "Something finished, one time: *Ik heb het boek gelezen.*", "nl": "Iets wat klaar is: *Ik heb het boek gelezen.*" },
+   { "en": "Asking what someone did: *Wat heb je gisteren gedaan?*", "nl": "Vragen wat iemand deed: *Wat heb je gisteren gedaan?*" }
+  ],
+  "how": {
+   "en": "A form of *hebben* or *zijn* in second place, and the past participle at the very end. Regular verbs: *ge* + stem + *-t* or *-d* (*gewerkt*, *gewoond*). Strong verbs often end in *-en*: *gegaan*, *gelezen*.",
+   "nl": "*Hebben* of *zijn* + voltooid deelwoord achteraan: *ge* + stam + *-t* of *-d*: *gewerkt*, *gewoond*. Sterk: *gegaan*."
+  },
+  "table": {
+   "head": ["", "werken (work)", "wonen (live)", "gaan (go)"],
+   "rows": [
+    ["ik", "heb gewerkt", "heb gewoond", "ben gegaan"],
+    ["jij", "hebt gewerkt", "hebt gewoond", "bent gegaan"],
+    ["hij / zij", "heeft gewerkt", "heeft gewoond", "is gegaan"],
+    ["wij", "hebben gewerkt", "hebben gewoond", "zijn gegaan"],
+    ["jullie", "hebben gewerkt", "hebben gewoond", "zijn gegaan"],
+    ["zij", "hebben gewerkt", "hebben gewoond", "zijn gegaan"]
+   ]
+  },
+  "ex": [
+   { "nl": "Ik heb de hele dag gewerkt.", "en": "I worked all day." },
+   { "nl": "Zij heeft drie jaar in Utrecht gewoond.", "en": "She lived in Utrecht for three years." },
+   { "nl": "Wij zijn gisteren naar het strand gegaan.", "en": "We went to the beach yesterday." }
+  ],
+  "tip": {
+   "en": "No extra *ge* when the verb already starts with *be*, *ge*, *her*, *ont*, *ver* or *er*: *betalen*, *betaald*; *vertellen*, *verteld*.",
+   "nl": "Geen *ge* bij *be*, *ge*, *her*, *ont*, *ver*, *er*: *betaald*, *verteld*."
+  }
+ },
+ "hz": {
+  "kind": "tense", "topic": "hz",
+  "name": { "nl": "Hebben of zijn", "en": "Have or be: hebben or zijn" },
+  "when": [
+   { "en": "Most verbs take *hebben* in the perfect: *Ik heb gegeten.*", "nl": "De meeste werkwoorden: *hebben*. *Ik heb gegeten.*" },
+   { "en": "Going from one place to another takes *zijn*: *Ik ben naar huis gegaan.*", "nl": "Van de ene plek naar de andere: *zijn*. *Ik ben naar huis gegaan.*" },
+   { "en": "A change of state takes *zijn*: *worden*, *beginnen*, *sterven*, *vergeten*. Also *zijn* and *blijven* themselves.", "nl": "Een verandering: *zijn*. *Ik ben ziek geworden.* Ook *ik ben gebleven*." },
+   { "en": "Movement with no goal takes *hebben*: *Ik heb gefietst.* With a goal, *zijn*: *Ik ben naar Delft gefietst.*", "nl": "Zonder doel *hebben*, met doel *zijn*: *Ik heb gefietst*, *ik ben naar Delft gefietst*." }
+  ],
+  "how": {
+   "en": "Choose the helper by meaning, put its form in second place and the participle at the end. The helper changes for the person; the participle never does.",
+   "nl": "Kies het hulpwerkwoord, zet het op plaats twee, het deelwoord achteraan."
+  },
+  "table": {
+   "head": ["", "hebben (have)", "zijn (be)"],
+   "rows": [
+    ["ik", "heb", "ben"],
+    ["jij", "hebt", "bent"],
+    ["u", "hebt / heeft", "bent"],
+    ["hij / zij", "heeft", "is"],
+    ["wij / jullie / zij", "hebben", "zijn"],
+    ["past (ik, jij, hij)", "had", "was"],
+    ["past (plural)", "hadden", "waren"]
+   ]
+  },
+  "ex": [
+   { "nl": "Wij hebben pizza gegeten.", "en": "We ate pizza." },
+   { "nl": "Hij is om acht uur vertrokken.", "en": "He left at eight." },
+   { "nl": "Ik ben mijn sleutels vergeten.", "en": "I forgot my keys." }
+  ],
+  "tip": {
+   "en": "*Zijn* with *zijn*: *Ik ben ziek geweest.* (I have been ill). *Hebben* with *hebben*: *Ik heb geluk gehad.*",
+   "nl": "*Ik ben ziek geweest.* *Ik heb geluk gehad.*"
+  }
+ },
+ "toek": {
+  "kind": "tense", "topic": "toek",
+  "name": { "nl": "De toekomende tijd", "en": "The future" },
+  "when": [
+   { "en": "Promises and firm plans: *Ik zal je morgen bellen.*", "nl": "Beloftes: *Ik zal je morgen bellen.*" },
+   { "en": "Guessing: *Dat zal wel goed zijn.* That will be fine.", "nl": "Een vermoeden: *Dat zal wel goed zijn.*" },
+   { "en": "In everyday talk Dutch often uses *gaan* or just the present: *Ik ga morgen werken.* *Morgen werk ik.*", "nl": "Vaak met *gaan* of de tegenwoordige tijd: *Ik ga morgen werken.*" }
+  ],
+  "how": {
+   "en": "A form of *zullen* in second place, the infinitive at the end. *Gaan* works the same way: *Ik ga koken.*",
+   "nl": "*Zullen* op plaats twee, het hele werkwoord achteraan: *Ik zal werken.*"
+  },
+  "table": {
+   "head": ["", "werken (work)", "wonen (live)", "gaan (go)"],
+   "rows": [
+    ["ik", "zal werken", "zal wonen", "zal gaan"],
+    ["jij", "zult werken", "zult wonen", "zult gaan"],
+    ["hij / zij", "zal werken", "zal wonen", "zal gaan"],
+    ["wij", "zullen werken", "zullen wonen", "zullen gaan"],
+    ["jullie", "zullen werken", "zullen wonen", "zullen gaan"],
+    ["zij", "zullen werken", "zullen wonen", "zullen gaan"]
+   ]
+  },
+  "ex": [
+   { "nl": "Ik zal je helpen.", "en": "I will help you." },
+   { "nl": "Volgend jaar zullen wij in Rotterdam wonen.", "en": "Next year we will live in Rotterdam." },
+   { "nl": "Zullen we samen gaan?", "en": "Shall we go together?" }
+  ],
+  "tip": {
+   "en": "*Jij zal* is heard a lot, but *jij zult* is the standard form. *Zullen we...?* is the way to say shall we.",
+   "nl": "Standaard is *jij zult*. *Zullen we...?* is een voorstel."
+  }
+ },
+ "cond": {
+  "kind": "tense", "topic": "cond",
+  "name": { "nl": "De voorwaardelijke wijs", "en": "Would: the conditional" },
+  "when": [
+   { "en": "What would happen: *Ik zou graag in Utrecht wonen.*", "nl": "Wat zou kunnen: *Ik zou graag in Utrecht wonen.*" },
+   { "en": "With *als* (if): *Als ik tijd had, zou ik gaan.*", "nl": "Met *als*: *Als ik tijd had, zou ik gaan.*" },
+   { "en": "Polite requests: *Zou je het raam open willen doen?*", "nl": "Beleefd vragen: *Zou je het raam open willen doen?*" }
+  ],
+  "how": {
+   "en": "*Zou* (or *zouden* for every plural) in second place, the infinitive at the end. It is the past of *zullen*.",
+   "nl": "*Zou* of *zouden* op plaats twee, het hele werkwoord achteraan."
+  },
+  "table": {
+   "head": ["", "werken (work)", "wonen (live)", "gaan (go)"],
+   "rows": [
+    ["ik", "zou werken", "zou wonen", "zou gaan"],
+    ["jij", "zou werken", "zou wonen", "zou gaan"],
+    ["hij / zij", "zou werken", "zou wonen", "zou gaan"],
+    ["wij", "zouden werken", "zouden wonen", "zouden gaan"],
+    ["jullie", "zouden werken", "zouden wonen", "zouden gaan"],
+    ["zij", "zouden werken", "zouden wonen", "zouden gaan"]
+   ]
+  },
+  "ex": [
+   { "nl": "Ik zou graag aan zee wonen.", "en": "I would love to live by the sea." },
+   { "nl": "Wij zouden morgen gaan, maar het regent.", "en": "We were going to go tomorrow, but it is raining." },
+   { "nl": "Zou jij hier willen werken?", "en": "Would you like to work here?" }
+  ],
+  "tip": {
+   "en": "*Zou* never takes a *-t*: *jij zou*, *hij zou*. Only the plural changes: *zouden*.",
+   "nl": "Nooit *-t*: *jij zou*. Meervoud: *zouden*."
+  }
+ },
+ "imp": {
+  "kind": "tense", "topic": "imp",
+  "name": { "nl": "De gebiedende wijs", "en": "Commands: the imperative" },
+  "when": [
+   { "en": "Telling someone what to do: *Kom binnen!* Come in!", "nl": "Zeggen wat iemand moet doen: *Kom binnen!*" },
+   { "en": "Instructions and recipes: *Neem de tweede straat links.*", "nl": "Uitleg en recepten: *Neem de tweede straat links.*" },
+   { "en": "Friendly with *maar* or *even*: *Ga maar zitten.* *Wacht even.*", "nl": "Vriendelijk met *maar* of *even*: *Ga maar zitten.*" }
+  ],
+  "how": {
+   "en": "Just the stem, first in the sentence, for one person or many: *werk*, *woon*, *ga*. To be polite, add *-t* and *u*: *Gaat u zitten.* Not: put *niet* after it.",
+   "nl": "Alleen de stam, vooraan: *Werk!*, *Ga!* Beleefd: *Gaat u zitten.* Ontkenning: *Ga niet weg.*"
+  },
+  "table": {
+   "head": ["", "werken (work)", "wonen (live)", "gaan (go)"],
+   "rows": [
+    ["one or more people", "werk!", "woon!", "ga!"],
+    ["polite (u)", "werkt u", "woont u", "gaat u"],
+    ["not", "werk niet", "woon niet", "ga niet"],
+    ["let's", "laten we werken", "laten we wonen", "laten we gaan"]
+   ]
+  },
+  "ex": [
+   { "nl": "Ga maar zitten.", "en": "Go ahead and sit down." },
+   { "nl": "Werk niet zo hard!", "en": "Don't work so hard!" },
+   { "nl": "Laten we naar huis gaan.", "en": "Let's go home." }
+  ],
+  "tip": {
+   "en": "A separable verb splits here too: *opstaan* gives *Sta op!* and *meekomen* gives *Kom mee!*",
+   "nl": "Scheidbaar: *Sta op!*, *Kom mee!*"
+  }
+ },
+ "kofschip": {
+  "kind": "grammar", "topic": "kofschip",
+  "name": { "nl": "'t Kofschip", "en": "'t kofschip: -te or -de" },
+  "when": [
+   { "en": "Every regular verb in the simple past: *werkte* or *woonde*?", "nl": "Elk zwak werkwoord in de verleden tijd: *werkte* of *woonde*?" },
+   { "en": "Every regular past participle: *gewerkt* or *gewoond*?", "nl": "Elk zwak voltooid deelwoord: *gewerkt* of *gewoond*?" }
+  ],
+  "how": {
+   "en": "Look at the last letter of the stem. If it is in *'t kofschip* (t, k, f, s, ch, p), add *-te* and the participle ends in *-t*. Any other letter: add *-de* and the participle ends in *-d*.",
+   "nl": "Laatste letter van de stam in *'t kofschip* (t, k, f, s, ch, p)? Dan *-te* en *-t*. Anders *-de* en *-d*."
+  },
+  "table": {
+   "head": ["verb", "stem", "last letter", "past", "participle"],
+   "rows": [
+    ["werken", "werk", "k", "werkte", "gewerkt"],
+    ["maken", "maak", "k", "maakte", "gemaakt"],
+    ["koken", "kook", "k", "kookte", "gekookt"],
+    ["wonen", "woon", "n", "woonde", "gewoond"],
+    ["leren", "leer", "r", "leerde", "geleerd"],
+    ["reizen", "reis", "z", "reisde", "gereisd"],
+    ["leven", "leef", "v", "leefde", "geleefd"]
+   ]
+  },
+  "ex": [
+   { "nl": "Ik maakte een fout.", "en": "I made a mistake." },
+   { "nl": "Zij leerde snel Nederlands.", "en": "She learned Dutch fast." },
+   { "nl": "Wij hebben door Europa gereisd.", "en": "We travelled through Europe." }
+  ],
+  "tip": {
+   "en": "Check the infinitive, not the stem you write: *reizen* has a *z* and *leven* a *v*, so they take *-de*, even though the stems end in *s* and *f*.",
+   "nl": "Kijk naar het hele werkwoord: *reizen*, *reisde*; *leven*, *leefde*."
+  }
+ },
+ "scheid": {
+  "kind": "grammar", "topic": "scheid",
+  "name": { "nl": "Scheidbare werkwoorden", "en": "Separable verbs" },
+  "when": [
+   { "en": "Verbs with a small word in front, stressed in speech: *opstaan* (get up), *opbellen* (call), *meenemen* (take along).", "nl": "Werkwoorden met een klein woord ervoor: *opstaan*, *opbellen*, *meenemen*." },
+   { "en": "In a main clause the front part goes to the end: *Ik sta om zeven uur op.*", "nl": "In een hoofdzin gaat het deel naar achteren: *Ik sta om zeven uur op.*" },
+   { "en": "After *dat*, *omdat* or *als*, and as an infinitive, the verb stays joined: *omdat ik vroeg opsta*.", "nl": "In een bijzin blijft het aan elkaar: *omdat ik vroeg opsta*." }
+  ],
+  "how": {
+   "en": "Main clause: the verb part in second place, the front part last. Subclause or infinitive: one word at the end. Participle: *ge* goes in the middle, *opgestaan*. With *te*: *op te staan*.",
+   "nl": "Hoofdzin: *Ik sta op.* Bijzin: *dat ik opsta*. Deelwoord: *opgestaan*. Met *te*: *op te staan*."
+  },
+  "table": {
+   "head": ["verb", "main clause", "after dat", "perfect"],
+   "rows": [
+    ["opstaan (get up)", "ik sta op", "dat ik opsta", "ik ben opgestaan"],
+    ["opbellen (call)", "ik bel je op", "dat ik je opbel", "ik heb je opgebeld"],
+    ["meenemen (take along)", "ik neem het mee", "dat ik het meeneem", "ik heb het meegenomen"],
+    ["aankomen (arrive)", "de trein komt aan", "dat de trein aankomt", "de trein is aangekomen"]
+   ]
+  },
+  "ex": [
+   { "nl": "Hij belt me morgen op.", "en": "He will call me tomorrow." },
+   { "nl": "Ik weet niet hoe laat de trein aankomt.", "en": "I don't know what time the train arrives." },
+   { "nl": "Heb jij een paraplu meegenomen?", "en": "Did you bring an umbrella?" }
+  ],
+  "tip": {
+   "en": "Not every prefix splits. *be*, *ver*, *ont*, *her* and *ge* stay put: *Ik betaal.* *Ik vertel het.*",
+   "nl": "*be*, *ver*, *ont*, *her* en *ge* gaan nooit los: *Ik betaal.*"
+  }
+ },
+ "modaal": {
+  "kind": "grammar", "topic": "modaal",
+  "name": { "nl": "Modale werkwoorden", "en": "Can, must, want, may" },
+  "when": [
+   { "en": "*kunnen* (can), *moeten* (must, have to), *willen* (want), *mogen* (may, be allowed).", "nl": "*kunnen*, *moeten*, *willen*, *mogen*." },
+   { "en": "With a second verb at the end of the sentence, with no *te*: *Ik wil koffie drinken.*", "nl": "Met een tweede werkwoord achteraan, zonder *te*: *Ik wil koffie drinken.*" },
+   { "en": "Polite asking: *Mag ik een biertje?* *Kunt u me helpen?*", "nl": "Beleefd vragen: *Mag ik een biertje?* *Kunt u me helpen?*" }
+  ],
+  "how": {
+   "en": "The modal goes in second place and changes for the person; the other verb stays whole and goes to the end. For *hij* there is no extra *-t*: *hij kan*, *hij wil*, *hij mag*. *Moet* already ends in *t*.",
+   "nl": "Modaal werkwoord op plaats twee, het hele werkwoord achteraan: *Ik kan zwemmen.*"
+  },
+  "table": {
+   "head": ["", "kunnen", "moeten", "willen", "mogen"],
+   "rows": [
+    ["ik", "kan", "moet", "wil", "mag"],
+    ["jij", "kunt / kan", "moet", "wilt / wil", "mag"],
+    ["hij / zij", "kan", "moet", "wil", "mag"],
+    ["wij / jullie / zij", "kunnen", "moeten", "willen", "mogen"],
+    ["past (ik, jij, hij)", "kon", "moest", "wilde", "mocht"],
+    ["past (plural)", "konden", "moesten", "wilden", "mochten"]
+   ]
+  },
+  "ex": [
+   { "nl": "Ik kan niet zwemmen.", "en": "I can't swim." },
+   { "nl": "Wij moeten om negen uur beginnen.", "en": "We have to start at nine." },
+   { "nl": "Mag ik hier parkeren?", "en": "May I park here?" }
+  ],
+  "tip": {
+   "en": "*Niet moeten* means you don't have to. For you must not, say *niet mogen*: *Je mag hier niet roken.*",
+   "nl": "Verbod: *Je mag hier niet roken.* Niet nodig: *Je hoeft niet te komen.*"
+  }
+ },
+ "wederkerend": {
+  "kind": "grammar", "topic": "wederkerend",
+  "name": { "nl": "Wederkerende werkwoorden", "en": "Verbs with zich (myself, yourself)" },
+  "when": [
+   { "en": "Some verbs always come with *zich* (oneself): *zich voelen* (feel), *zich vergissen* (be mistaken), *zich haasten* (hurry).", "nl": "Sommige werkwoorden hebben altijd *zich*: *zich voelen*, *zich vergissen*." },
+   { "en": "Doing something to yourself: *zich wassen* (wash), *zich aankleden* (get dressed).", "nl": "Iets met jezelf doen: *zich wassen*, *zich aankleden*." },
+   { "en": "English often leaves it out: *Ik voel me goed.* I feel good.", "nl": "In het Engels vaak niet: *Ik voel me goed.*" }
+  ],
+  "how": {
+   "en": "*Zich* changes with the person: *me*, *je*, *zich*, *ons*, *je*, *zich*. It comes right after the verb, or after the subject when the subject follows the verb.",
+   "nl": "*me*, *je*, *zich*, *ons*, *je*, *zich*, direct na het werkwoord: *Ik was me.*"
+  },
+  "table": {
+   "head": ["", "pronoun", "zich wassen (wash)", "zich voelen (feel)"],
+   "rows": [
+    ["ik", "me", "ik was me", "ik voel me"],
+    ["jij", "je", "jij wast je", "jij voelt je"],
+    ["u", "zich / u", "u wast zich", "u voelt zich"],
+    ["hij / zij", "zich", "hij wast zich", "zij voelt zich"],
+    ["wij", "ons", "wij wassen ons", "wij voelen ons"],
+    ["jullie", "je", "jullie wassen je", "jullie voelen je"],
+    ["zij", "zich", "zij wassen zich", "zij voelen zich"]
+   ]
+  },
+  "ex": [
+   { "nl": "Ik voel me niet zo lekker.", "en": "I don't feel very well." },
+   { "nl": "Je vergist je.", "en": "You're mistaken." },
+   { "nl": "Wij moeten ons haasten.", "en": "We have to hurry." }
+  ],
+  "tip": {
+   "en": "For a stronger myself, add *zelf*: *Ik heb mezelf gesneden.* I cut myself.",
+   "nl": "Met nadruk: *mezelf*, *jezelf*, *zichzelf*."
+  }
+ },
+ "dehet": {
+  "kind": "grammar", "topic": "dehet",
+  "name": { "nl": "De of het", "en": "The two words for the: de or het" },
+  "when": [
+   { "en": "Every noun is a *de* word or a *het* word. About two in three are *de* words, so learn each noun with its article: *de tafel*, *het huis*.", "nl": "Elk zelfstandig naamwoord is een *de*woord of een *het*woord: *de tafel*, *het huis*." },
+   { "en": "Always *de*: every plural, most people (*de man*, *de vrouw*), and words ending in *-ing*, *-heid*, *-tie*.", "nl": "Altijd *de*: meervoud, de meeste personen, woorden op *-ing*, *-heid*, *-tie*." },
+   { "en": "Always *het*: every word with *-je* (*het meisje*), languages (*het Nederlands*), and verbs used as nouns (*het eten*).", "nl": "Altijd *het*: verkleinwoorden, talen, werkwoorden als naamwoord: *het meisje*, *het eten*." },
+   { "en": "The article decides this, that and which: *deze*, *die* for *de* words, *dit*, *dat* for *het* words.", "nl": "Het lidwoord bepaalt *deze*/*dit*, *die*/*dat*." }
+  ],
+  "how": {
+   "en": "Use the same pattern in every row: *de* goes with *deze* and *die*, *het* goes with *dit* and *dat*. In the plural everything takes the *de* side. *Een* (a) is the same for both.",
+   "nl": "*De*: *deze*, *die*. *Het*: *dit*, *dat*. Meervoud: altijd *de*, *deze*, *die*."
+  },
+  "table": {
+   "head": ["", "de word", "het word", "plural"],
+   "rows": [
+    ["the", "de tafel", "het huis", "de huizen"],
+    ["a", "een tafel", "een huis", "huizen"],
+    ["this / these", "deze tafel", "dit huis", "deze huizen"],
+    ["that / those", "die tafel", "dat huis", "die huizen"],
+    ["which (who, that)", "de tafel die", "het huis dat", "de huizen die"]
+   ]
+  },
+  "ex": [
+   { "nl": "Het huis staat aan de gracht.", "en": "The house is on the canal." },
+   { "nl": "Dit boek is van mij, die tas niet.", "en": "This book is mine, that bag isn't." },
+   { "nl": "Het meisje dat daar zit, is mijn zus.", "en": "The girl who is sitting there is my sister." }
+  ],
+  "tip": {
+   "en": "*Dat* and *die* also mean that as a pointer: *Dat klopt.* That's right. When you don't know, *de* is the better guess.",
+   "nl": "Twijfel je? Kies *de*: dat is vaker goed."
+  }
+ },
+ "adj": {
+  "kind": "grammar", "topic": "adj",
+  "name": { "nl": "Het bijvoeglijk naamwoord", "en": "Adjective endings: groot or grote" },
+  "when": [
+   { "en": "An adjective before a noun usually takes *-e*: *de grote tafel*, *het grote huis*.", "nl": "Voor een naamwoord meestal *-e*: *de grote tafel*." },
+   { "en": "No *-e* with a single *het* word after *een*, *geen* or nothing: *een groot huis*, *geen groot huis*.", "nl": "Geen *-e*: *het*woord met *een*, *geen* of niets ervoor: *een groot huis*." },
+   { "en": "No *-e* after the verb: *Het huis is groot.*", "nl": "Geen *-e* na het werkwoord: *Het huis is groot.*" }
+  ],
+  "how": {
+   "en": "Default to *-e*. Drop it in one case only: *een* + adjective + *het* word. Mind the spelling: *groot* becomes *grote* (one *o*), *dik* becomes *dikke* (double *k*), *lief* becomes *lieve*, *grijs* becomes *grijze*.",
+   "nl": "Altijd *-e*, behalve *een groot huis*. Spelling: *groot*, *grote*; *dik*, *dikke*; *lief*, *lieve*."
+  },
+  "table": {
+   "head": ["", "de word: tafel", "het word: huis"],
+   "rows": [
+    ["een", "een grote tafel", "een groot huis"],
+    ["de / het", "de grote tafel", "het grote huis"],
+    ["mijn, deze, dit", "mijn grote tafel", "mijn grote huis"],
+    ["plural", "grote tafels", "grote huizen"],
+    ["after the verb", "de tafel is groot", "het huis is groot"]
+   ]
+  },
+  "ex": [
+   { "nl": "Wij hebben een groot huis.", "en": "We have a big house." },
+   { "nl": "Het rode boek ligt op de tafel.", "en": "The red book is on the table." },
+   { "nl": "Zij heeft een nieuwe fiets.", "en": "She has a new bike." }
+  ],
+  "tip": {
+   "en": "Words for materials end in *-en* and never change: *een houten tafel*, *het gouden horloge*.",
+   "nl": "Stofnamen op *-en* veranderen niet: *een houten tafel*."
+  }
+ },
+ "volgorde": {
+  "kind": "grammar", "topic": "volgorde",
+  "name": { "nl": "Woordvolgorde", "en": "Word order: the verb comes second" },
+  "when": [
+   { "en": "In every main clause the verb is the second thing: *Ik werk vandaag.*", "nl": "In een hoofdzin staat het werkwoord op plaats twee: *Ik werk vandaag.*" },
+   { "en": "Start with another word and the subject moves behind the verb: *Vandaag werk ik.*", "nl": "Begin je met iets anders, dan komt het onderwerp na het werkwoord: *Vandaag werk ik.*" },
+   { "en": "Questions: the verb first (*Werk jij vandaag?*) or after a question word (*Waar werk jij?*).", "nl": "Vragen: werkwoord vooraan of na een vraagwoord: *Werk jij vandaag?* *Waar werk jij?*" }
+  ],
+  "how": {
+   "en": "Count places, not words: *Morgen om negen uur* is one place. The changing verb takes place two; a second verb (an infinitive or participle) goes to the very end. A usual order for the rest: time, then manner, then place.",
+   "nl": "Het vervoegde werkwoord op plaats twee, andere werkwoorden achteraan. Daarna: tijd, manier, plaats."
+  },
+  "table": {
+   "head": ["place 1", "verb", "subject", "rest", "end"],
+   "rows": [
+    ["Ik", "werk", "", "vandaag thuis.", ""],
+    ["Vandaag", "werk", "ik", "thuis.", ""],
+    ["Morgen", "ga", "ik", "met de trein", "naar Utrecht."],
+    ["Gisteren", "heb", "ik", "de hele dag", "gewerkt."],
+    ["", "Werk", "jij", "vandaag?", ""],
+    ["Waar", "werk", "jij?", "", ""]
+   ]
+  },
+  "ex": [
+   { "nl": "Morgen ga ik naar de markt.", "en": "Tomorrow I'm going to the market." },
+   { "nl": "In de zomer fietsen wij elke dag.", "en": "In summer we cycle every day." },
+   { "nl": "Wanneer kom je terug?", "en": "When are you coming back?" }
+  ],
+  "tip": {
+   "en": "English says Tomorrow I go; Dutch never does. If the first place is taken by anything but the subject, swap: *Morgen ga ik.*",
+   "nl": "Nooit *Morgen ik ga*. Altijd *Morgen ga ik*."
+  }
+ },
+ "bijzin": {
+  "kind": "grammar", "topic": "bijzin",
+  "name": { "nl": "De bijzin", "en": "Verb last: after dat, omdat, als" },
+  "when": [
+   { "en": "After linking words like *dat* (that), *omdat* (because), *als* (if, when), *wanneer* (when), *of* (whether), *terwijl* (while).", "nl": "Na *dat*, *omdat*, *als*, *wanneer*, *of*, *terwijl*." },
+   { "en": "After *die* and *dat* meaning who or which: *de man die daar woont*.", "nl": "Na *die* en *dat* als betrekkelijk voornaamwoord: *de man die daar woont*." },
+   { "en": "Not after *en*, *maar*, *of* (or), *want*: they keep normal order. *Ik blijf thuis, want ik ben ziek.*", "nl": "Niet na *en*, *maar*, *want*: *Ik blijf thuis, want ik ben ziek.*" }
+  ],
+  "how": {
+   "en": "In the linked clause all verbs go to the end. With two or more verbs they gather there together: *dat ik het heb gedaan* (or *gedaan heb*), *dat ik het heb kunnen doen*.",
+   "nl": "Alle werkwoorden achteraan: *omdat ik ziek ben*, *dat ik het heb gedaan*."
+  },
+  "table": {
+   "head": ["main clause", "linked clause"],
+   "rows": [
+    ["Ik weet", "dat hij morgen komt."],
+    ["Ik blijf thuis", "omdat ik ziek ben."],
+    ["Ik bel je", "als ik klaar ben."],
+    ["Weet jij", "of de winkel open is?"],
+    ["Hij zegt", "dat hij al heeft gegeten."],
+    ["Dat is de man", "die naast ons woont."]
+   ]
+  },
+  "ex": [
+   { "nl": "Ik denk dat het morgen gaat regenen.", "en": "I think it's going to rain tomorrow." },
+   { "nl": "Hij komt niet, omdat hij moet werken.", "en": "He isn't coming because he has to work." },
+   { "nl": "Als ik tijd heb, kom ik langs.", "en": "If I have time, I'll drop by." }
+  ],
+  "tip": {
+   "en": "When the linked clause comes first, it fills place one, so the main verb follows at once: *Als ik tijd heb, kom ik.*",
+   "nl": "Bijzin vooraan? Dan direct het werkwoord: *Als ik tijd heb, kom ik.*"
+  }
+ },
+ "te": {
+  "kind": "grammar", "topic": "te",
+  "name": { "nl": "Te en om te", "en": "to: te and om te" },
+  "when": [
+   { "en": "In order to: *om* ... *te* + infinitive. *Ik leer Nederlands om in Utrecht te werken.*", "nl": "Doel: *om* ... *te*: *Ik leer Nederlands om in Utrecht te werken.*" },
+   { "en": "After verbs like *proberen* (try), *beginnen* (begin), *vergeten* (forget), *hoeven* (need): *Ik probeer te slapen.*", "nl": "Na *proberen*, *beginnen*, *vergeten*, *hoeven*: *Ik probeer te slapen.*" },
+   { "en": "No *te* after *kunnen*, *moeten*, *willen*, *mogen*, *zullen* or *gaan*: *Ik wil slapen.*", "nl": "Geen *te* na *kunnen*, *moeten*, *willen*, *mogen*, *zullen*, *gaan*." }
+  ],
+  "how": {
+   "en": "*Te* comes right before the infinitive at the end of the sentence. *Om* opens the phrase, and the rest goes in between. With a separable verb, *te* goes in the middle: *op te staan*.",
+   "nl": "*te* direct voor het hele werkwoord achteraan. Scheidbaar: *op te staan*."
+  },
+  "table": {
+   "head": ["", "example", "English"],
+   "rows": [
+    ["om ... te", "Ik ga naar de winkel om brood te kopen.", "I'm going to the shop to buy bread."],
+    ["proberen te", "Ik probeer Nederlands te leren.", "I'm trying to learn Dutch."],
+    ["vergeten te", "Ik ben vergeten je te bellen.", "I forgot to call you."],
+    ["separable", "Het is moeilijk om vroeg op te staan.", "It's hard to get up early."],
+    ["modal: no te", "Ik wil Nederlands leren.", "I want to learn Dutch."]
+   ]
+  },
+  "ex": [
+   { "nl": "Wij gaan naar Amsterdam om een museum te bezoeken.", "en": "We're going to Amsterdam to visit a museum." },
+   { "nl": "Het begint te regenen.", "en": "It's starting to rain." },
+   { "nl": "Je hoeft niet te komen.", "en": "You don't need to come." }
+  ],
+  "tip": {
+   "en": "*Hoeven* is the no of *moeten*, and it does take *te*: *Je moet komen.* *Je hoeft niet te komen.*",
+   "nl": "*Je moet komen.* Ontkenning: *Je hoeft niet te komen.*"
+  }
+ },
+ "geen": {
+  "kind": "grammar", "topic": "geen",
+  "name": { "nl": "Niet of geen", "en": "Not: niet or geen" },
+  "when": [
+   { "en": "*Geen* replaces *een* or no article at all: *Ik heb een fiets.* *Ik heb geen fiets.*", "nl": "*Geen* in plaats van *een* of geen lidwoord: *Ik heb geen fiets.*" },
+   { "en": "*Niet* for everything else: verbs, adjectives, names, and nouns with *de*, *het*, *mijn* or *deze*.", "nl": "*Niet* voor werkwoorden, bijvoeglijke naamwoorden, namen, en *de*, *het*, *mijn*." },
+   { "en": "Other no words: *nooit* (never), *niemand* (nobody), *niets* (nothing), *nergens* (nowhere).", "nl": "*nooit*, *niemand*, *niets*, *nergens*." },
+   { "en": "No more and not yet: *niet meer*, *geen ... meer*, *nog niet*, *nog geen*.", "nl": "*niet meer*, *geen ... meer*, *nog niet*, *nog geen*." }
+  ],
+  "how": {
+   "en": "*Niet* usually goes at the end of the clause, but before a second verb at the end, an adjective, or a place with a preposition: *Ik ga niet naar huis.* *Het is niet koud.*",
+   "nl": "*Niet* meestal achteraan, maar voor een tweede werkwoord, een bijvoeglijk naamwoord of een plaats: *Ik ga niet naar huis.*"
+  },
+  "table": {
+   "head": ["", "yes", "no"],
+   "rows": [
+    ["een + noun", "Ik heb een fiets.", "Ik heb geen fiets."],
+    ["noun, no article", "Ik drink koffie.", "Ik drink geen koffie."],
+    ["plural", "Ik heb kinderen.", "Ik heb geen kinderen."],
+    ["de / het + noun", "Ik zie de bus.", "Ik zie de bus niet."],
+    ["verb", "Ik werk.", "Ik werk niet."],
+    ["adjective", "Het is koud.", "Het is niet koud."],
+    ["place", "Ik ga naar huis.", "Ik ga niet naar huis."],
+    ["no more", "Ik heb nog geld.", "Ik heb geen geld meer."]
+   ]
+  },
+  "ex": [
+   { "nl": "Ik heb vandaag geen tijd.", "en": "I don't have time today." },
+   { "nl": "Wij kennen hem niet.", "en": "We don't know him." },
+   { "nl": "Er is niemand thuis.", "en": "There's nobody home." }
+  ],
+  "tip": {
+   "en": "Never *niet een* for not a: say *geen*. *Ik ben geen dokter.* I'm not a doctor.",
+   "nl": "Niet *niet een*, maar *geen*: *Ik ben geen dokter.*"
+  }
+ },
+ "mv": {
+  "kind": "grammar", "topic": "mv",
+  "name": { "nl": "Het meervoud", "en": "Plurals: -en or -s" },
+  "when": [
+   { "en": "More than one thing: *een boek*, *twee boeken*.", "nl": "Meer dan één: *een boek*, *twee boeken*." },
+   { "en": "Every plural takes *de*: *het huis*, *de huizen*.", "nl": "Meervoud heeft altijd *de*: *de huizen*." }
+  ],
+  "how": {
+   "en": "Most words add *-en*. Words ending in *-el*, *-er*, *-em*, *-en* and *-je* add *-s*. Words ending in *a*, *i*, *o*, *u* or *y* add *'s*. Keep the sound of the vowel: a long vowel loses a letter (*boom*, *bomen*), a short one doubles the consonant (*bus*, *bussen*).",
+   "nl": "Meestal *-en*. Op *-el*, *-er*, *-em*, *-en*, *-je*: *-s*. Op een klinker: *'s*. Lang: *boom*, *bomen*. Kort: *bus*, *bussen*."
+  },
+  "table": {
+   "head": ["rule", "one", "more"],
+   "rows": [
+    ["most words: -en", "boek, fiets", "boeken, fietsen"],
+    ["long vowel: one letter less", "boom, straat", "bomen, straten"],
+    ["short vowel: double consonant", "bus, kat", "bussen, katten"],
+    ["f to v, s to z", "brief, huis", "brieven, huizen"],
+    ["-el, -er, -en, -je: -s", "tafel, kamer, meisje", "tafels, kamers, meisjes"],
+    ["vowel at the end: 's", "auto, foto", "auto's, foto's"],
+    ["odd ones", "kind, stad, ei", "kinderen, steden, eieren"]
+   ]
+  },
+  "ex": [
+   { "nl": "Ik heb twee katten.", "en": "I have two cats." },
+   { "nl": "De straten zijn hier smal.", "en": "The streets are narrow here." },
+   { "nl": "Zij maakt veel foto's.", "en": "She takes a lot of photos." }
+  ],
+  "tip": {
+   "en": "Say it before you write it: *bomen* sounds long, so one *o*; *katten* sounds short, so two *t*s.",
+   "nl": "Luister naar de klank: *bomen* (lang), *katten* (kort)."
+  }
+ },
+ "dim": {
+  "kind": "grammar", "topic": "dim",
+  "name": { "nl": "Het verkleinwoord", "en": "Little words: -je" },
+  "when": [
+   { "en": "Something small: *het huisje* (the little house).", "nl": "Iets kleins: *het huisje*." },
+   { "en": "Something cute, friendly or casual: *een biertje*, *een momentje*, *even een rondje*.", "nl": "Iets leuks of gezelligs: *een biertje*, *een momentje*." },
+   { "en": "Every word with *-je* is a *het* word, whatever it was before: *de stoel*, *het stoeltje*.", "nl": "Altijd *het*: *de stoel*, *het stoeltje*." }
+  ],
+  "how": {
+   "en": "Most words add *-je*. After a long vowel, or after *l*, *n*, *r*, *w* following a long vowel: *-tje*. After a long vowel + *m*, or *lm* and *rm*: *-pje*. After a short vowel + *l*, *m*, *n*, *r* or *ng*: *-etje*. The plural adds *-s*: *huisjes*.",
+   "nl": "Meestal *-je*. Na lange klank of *l*, *n*, *r*, *w*: *-tje*. Na lange klank + *m*: *-pje*. Na korte klank + *l*, *m*, *n*, *r*, *ng*: *-etje*. Meervoud: *-s*."
+  },
+  "table": {
+   "head": ["ending", "word", "little"],
+   "rows": [
+    ["most words: -je", "het huis, het boek", "het huisje, het boekje"],
+    ["long vowel or l, n, r, w: -tje", "de stoel, de auto", "het stoeltje, het autootje"],
+    ["long vowel + m, or lm: -pje", "de boom, de film", "het boompje, het filmpje"],
+    ["short vowel + l, n, r, ng: -etje", "de bal, de ring", "het balletje, het ringetje"],
+    ["-ing (unstressed): -kje", "de koning", "het koninkje"],
+    ["plural: -s", "het huisje", "de huisjes"]
+   ]
+  },
+  "ex": [
+   { "nl": "Zullen we een biertje drinken?", "en": "Shall we have a beer?" },
+   { "nl": "Het meisje heeft een klein katje.", "en": "The girl has a little kitten." },
+   { "nl": "Wacht even, een momentje.", "en": "Wait a moment, just a sec." }
+  ],
+  "tip": {
+   "en": "Some words only exist with *-je*: *het meisje* (girl), *het koekje* (biscuit), *het sprookje* (fairy tale).",
+   "nl": "Sommige woorden hebben altijd *-je*: *het meisje*, *het koekje*."
+  }
+ },
+ "pron": {
+  "kind": "grammar", "topic": "pron",
+  "name": { "nl": "Voornaamwoorden", "en": "I, me, my: pronouns" },
+  "when": [
+   { "en": "The doer, before or right after the verb: *ik*, *jij*, *hij*.", "nl": "Onderwerp: *ik*, *jij*, *hij*." },
+   { "en": "The object, after the verb or a preposition: *Hij ziet mij.* *Met hem.*", "nl": "Voorwerp: *Hij ziet mij.* *met hem*." },
+   { "en": "Whose it is: *mijn fiets*, *haar huis*, *onze kinderen*.", "nl": "Van wie: *mijn fiets*, *haar huis*, *onze kinderen*." }
+  ],
+  "how": {
+   "en": "Many have a short, unstressed form used most in speech: *je* for *jij* and *jouw*, *ze* for *zij*, *we* for *wij*, *me* for *mij*. Use the long form for stress. *Ons* goes with *het* words, *onze* with *de* words and plurals.",
+   "nl": "Kort zonder nadruk: *je*, *ze*, *we*, *me*. *Ons huis*, *onze auto*."
+  },
+  "table": {
+   "head": ["doer", "object", "owner"],
+   "rows": [
+    ["ik", "mij / me", "mijn"],
+    ["jij / je", "jou / je", "jouw / je"],
+    ["u", "u", "uw"],
+    ["hij", "hem", "zijn"],
+    ["zij / ze (she)", "haar", "haar"],
+    ["het", "het", "zijn"],
+    ["wij / we", "ons", "ons / onze"],
+    ["jullie", "jullie", "jullie"],
+    ["zij / ze (they)", "hen / hun / ze", "hun"]
+   ]
+  },
+  "ex": [
+   { "nl": "Dit is mijn broer.", "en": "This is my brother." },
+   { "nl": "Kun je me helpen?", "en": "Can you help me?" },
+   { "nl": "Onze buren hebben een hond.", "en": "Our neighbours have a dog." }
+  ],
+  "tip": {
+   "en": "For they as an object, *ze* is always safe: *Ik zie ze.* *Hun* is the owner word: *hun huis*.",
+   "nl": "Veilig: *Ik zie ze.* Van wie: *hun huis*."
+  }
+ },
+ "er": {
+  "kind": "grammar", "topic": "er",
+  "name": { "nl": "Het woordje er", "en": "The little word er" },
+  "when": [
+   { "en": "There is, there are: *Er is een probleem.* *Er zijn veel fietsen.*", "nl": "Bestaan: *Er is een probleem.* *Er zijn veel fietsen.*" },
+   { "en": "With a number, for of them: *Ik heb er twee.* I have two (of them).", "nl": "Met een getal: *Ik heb er twee.*" },
+   { "en": "For a place already named: *Ken je Gouda? Ik woon er al jaren.*", "nl": "Een plaats: *Ik woon er al jaren.*" },
+   { "en": "With a preposition, for it: *erop* (on it), *ermee* (with it), *erover* (about it).", "nl": "Met een voorzetsel: *erop*, *ermee*, *erover*." }
+  ],
+  "how": {
+   "en": "*Er* never starts a sentence for a place (use *daar*), but it does start *er is* sentences. With a preposition and a thing, Dutch says *ermee*, never *met het*: *Ik schrijf ermee.* The two parts can split: *Ik denk er vaak over.*",
+   "nl": "Niet *met het*, maar *ermee*. Kan gesplitst worden: *Ik denk er vaak over.*"
+  },
+  "table": {
+   "head": ["use", "example", "English"],
+   "rows": [
+    ["there is / are", "Er staat een man voor de deur.", "There's a man at the door."],
+    ["number", "Hoeveel broers heb je? Ik heb er drie.", "How many brothers do you have? I have three."],
+    ["place", "Ben je in Gent geweest? Ja, ik was er vorig jaar.", "Have you been to Gent? Yes, I was there last year."],
+    ["preposition + it", "Ik heb een pen. Ik schrijf ermee.", "I have a pen. I write with it."],
+    ["split", "Ik denk er niet aan.", "I don't think about it."]
+   ]
+  },
+  "ex": [
+   { "nl": "Er zijn hier veel fietsen.", "en": "There are lots of bikes here." },
+   { "nl": "Wil je appels? Ik heb er nog vier.", "en": "Do you want apples? I still have four." },
+   { "nl": "Wat vind je ervan?", "en": "What do you think of it?" }
+  ],
+  "tip": {
+   "en": "For people, keep the pronoun: *met hem*, *met haar*. *Ermee* is only for things.",
+   "nl": "Personen: *met hem*. Dingen: *ermee*."
+  }
+ },
+ "getallen": {
+  "kind": "grammar", "topic": "getallen",
+  "name": { "nl": "Getallen", "en": "Numbers" },
+  "when": [
+   { "en": "Counting, prices, times and ages: *Ik ben dertig.*", "nl": "Tellen, prijzen, tijden, leeftijd: *Ik ben dertig.*" },
+   { "en": "From 21 to 99 the units come first: *eenentwintig* is one and twenty.", "nl": "Van 21 tot 99 eerst de eenheid: *eenentwintig*." },
+   { "en": "Order words add *-de* or *-ste*: *tweede* (second), *twintigste* (twentieth). Irregular: *eerste*, *derde*.", "nl": "Rangtelwoorden: *eerste*, *tweede*, *derde*, *twintigste*." }
+  ],
+  "how": {
+   "en": "Numbers are written as one word up to a thousand: *vierentachtig* (84), *honderdtwintig* (120). After an *e*, *en* takes a trema: *tweeëntwintig*. Write *één* with accents when it means the number one, not a.",
+   "nl": "Eén woord: *vierentachtig*, *honderdtwintig*. Trema: *tweeëntwintig*. *één* is het getal."
+  },
+  "table": {
+   "head": ["", "", "", ""],
+   "rows": [
+    ["1", "één", "11", "elf"],
+    ["2", "twee", "12", "twaalf"],
+    ["3", "drie", "13", "dertien"],
+    ["4", "vier", "14", "veertien"],
+    ["5", "vijf", "20", "twintig"],
+    ["6", "zes", "21", "eenentwintig"],
+    ["7", "zeven", "30", "dertig"],
+    ["8", "acht", "40", "veertig"],
+    ["9", "negen", "50", "vijftig"],
+    ["10", "tien", "100", "honderd"]
+   ]
+  },
+  "ex": [
+   { "nl": "Het kost vierentwintig euro.", "en": "It costs twenty four euros." },
+   { "nl": "Mijn moeder is zesenvijftig.", "en": "My mother is fifty six." },
+   { "nl": "Wij wonen op de derde verdieping.", "en": "We live on the third floor." }
+  ],
+  "tip": {
+   "en": "Telling the time looks half ahead: *half drie* is half past two (half to three).",
+   "nl": "*Half drie* is 2.30."
+  }
+ }
+}

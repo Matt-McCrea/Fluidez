@@ -1,0 +1,1426 @@
+[
+ {
+  "q": "___ huis staat aan de gracht.",
+  "n": "huis",
+  "t": "art",
+  "e": "The house is on the canal.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik zoek ___ boek van mijn broer.",
+  "n": "boek",
+  "t": "art",
+  "e": "I'm looking for my brother's book.",
+  "b": "A1"
+ },
+ {
+  "q": "___ kind speelt in de tuin.",
+  "n": "kind",
+  "t": "art",
+  "e": "The child is playing in the garden.",
+  "b": "A1"
+ },
+ {
+  "q": "Weet jij waar ___ station is?",
+  "n": "station",
+  "t": "art",
+  "e": "Do you know where the station is?",
+  "b": "A2"
+ },
+ {
+  "q": "___ water is koud vandaag.",
+  "n": "water",
+  "t": "art",
+  "e": "The water is cold today.",
+  "b": "A1"
+ },
+ {
+  "q": "___ ontbijt staat om acht uur klaar.",
+  "n": "ontbijt",
+  "t": "art",
+  "e": "Breakfast is ready at eight.",
+  "b": "A2"
+ },
+ {
+  "q": "Op maandag is ___ restaurant dicht.",
+  "n": "restaurant",
+  "t": "art",
+  "e": "On Monday the restaurant is closed.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb ___ raam opengezet.",
+  "n": "raam",
+  "t": "art",
+  "e": "I opened the window.",
+  "b": "A2"
+ },
+ {
+  "q": "___ bed is te klein voor mij.",
+  "n": "bed",
+  "t": "art",
+  "e": "The bed is too small for me.",
+  "b": "A1"
+ },
+ {
+  "q": "___ brood is nog warm.",
+  "n": "brood",
+  "t": "art",
+  "e": "The bread is still warm.",
+  "b": "A2"
+ },
+ {
+  "q": "Zet ___ bord maar op tafel.",
+  "n": "bord",
+  "t": "art",
+  "e": "Just put the plate on the table.",
+  "b": "A2"
+ },
+ {
+  "q": "___ mes ligt in de la.",
+  "n": "mes",
+  "t": "art",
+  "e": "The knife is in the drawer.",
+  "b": "A2"
+ },
+ {
+  "q": "___ hotel ligt vlak bij zee.",
+  "n": "hotel",
+  "t": "art",
+  "e": "The hotel is right by the sea.",
+  "b": "A2"
+ },
+ {
+  "q": "We lopen samen naar ___ strand.",
+  "n": "strand",
+  "t": "art",
+  "e": "We walk to the beach together.",
+  "b": "A2"
+ },
+ {
+  "q": "___ dorp heeft maar één winkel.",
+  "n": "dorp",
+  "t": "art",
+  "e": "The village has only one shop.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn oma kent ___ land heel goed.",
+  "n": "land",
+  "t": "art",
+  "e": "My grandma knows the country very well.",
+  "b": "A2"
+ },
+ {
+  "q": "In de lente is ___ park prachtig.",
+  "n": "park",
+  "t": "art",
+  "e": "In spring the park is beautiful.",
+  "b": "A2"
+ },
+ {
+  "q": "___ weekend was veel te kort.",
+  "n": "weekend",
+  "t": "art",
+  "e": "The weekend was far too short.",
+  "b": "A2"
+ },
+ {
+  "q": "Om zeven uur begint ___ diner.",
+  "n": "diner",
+  "t": "art",
+  "e": "Dinner starts at seven.",
+  "b": "A2"
+ },
+ {
+  "q": "Dank je wel voor ___ cadeau!",
+  "n": "cadeau",
+  "t": "art",
+  "e": "Thank you for the present!",
+  "b": "A2"
+ },
+ {
+  "q": "___ feest is bij Sanne thuis.",
+  "n": "feest",
+  "t": "art",
+  "e": "The party is at Sanne's house.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik vind ___ verhaal heel spannend.",
+  "n": "verhaal",
+  "t": "art",
+  "e": "I find the story very exciting.",
+  "b": "A2"
+ },
+ {
+  "q": "Wat betekent ___ woord?",
+  "n": "woord",
+  "t": "art",
+  "e": "What does the word mean?",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ben ___ nummer van de dokter vergeten.",
+  "n": "nummer",
+  "t": "art",
+  "e": "I forgot the doctor's number.",
+  "b": "A1"
+ },
+ {
+  "q": "___ gesprek duurde een uur.",
+  "n": "gesprek",
+  "t": "art",
+  "e": "The conversation lasted an hour.",
+  "b": "A2"
+ },
+ {
+  "q": "Heb je ___ bericht van papa gelezen?",
+  "n": "bericht",
+  "t": "art",
+  "e": "Have you read dad's message?",
+  "b": "A2"
+ },
+ {
+  "q": "Wat is ___ adres van de school?",
+  "n": "adres",
+  "t": "art",
+  "e": "What is the address of the school?",
+  "b": "A2"
+ },
+ {
+  "q": "___ probleem is opgelost.",
+  "n": "probleem",
+  "t": "art",
+  "e": "The problem has been solved.",
+  "b": "A1"
+ },
+ {
+  "q": "Dat was ___ idee van mijn moeder.",
+  "n": "idee",
+  "t": "art",
+  "e": "That was my mother's idea.",
+  "b": "A1"
+ },
+ {
+  "q": "Is ___ plan voor zaterdag al klaar?",
+  "n": "plan",
+  "t": "art",
+  "e": "Is the plan for Saturday ready yet?",
+  "b": "A2"
+ },
+ {
+  "q": "Wie wint ___ spel deze keer?",
+  "n": "spel",
+  "t": "art",
+  "e": "Who wins the game this time?",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn dochter zingt ___ lied heel mooi.",
+  "n": "lied",
+  "t": "art",
+  "e": "My daughter sings the song very nicely.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik herken ___ gezicht van die man.",
+  "n": "gezicht",
+  "t": "art",
+  "e": "I recognise that man's face.",
+  "b": "A2"
+ },
+ {
+  "q": "___ vliegtuig landt om drie uur.",
+  "n": "vliegtuig",
+  "t": "art",
+  "e": "The plane lands at three.",
+  "b": "A2"
+ },
+ {
+  "q": "In ___ gebouw werken vijfhonderd mensen.",
+  "n": "gebouw",
+  "t": "art",
+  "e": "Five hundred people work in the building.",
+  "b": "A2"
+ },
+ {
+  "q": "___ appartement heeft twee slaapkamers.",
+  "n": "appartement",
+  "t": "art",
+  "e": "The flat has two bedrooms.",
+  "b": "A2"
+ },
+ {
+  "q": "We nemen de boot naar ___ eiland.",
+  "n": "eiland",
+  "t": "art",
+  "e": "We take the boat to the island.",
+  "b": "A2"
+ },
+ {
+  "q": "___ schip vaart vanavond naar Engeland.",
+  "n": "schip",
+  "t": "art",
+  "e": "The ship sails to England tonight.",
+  "b": "A2"
+ },
+ {
+  "q": "Elke zondag wandelen we door ___ bos.",
+  "n": "bos",
+  "t": "art",
+  "e": "Every Sunday we walk through the woods.",
+  "b": "A2"
+ },
+ {
+  "q": "___ examen is volgende week.",
+  "n": "examen",
+  "t": "art",
+  "e": "The exam is next week.",
+  "b": "B1"
+ },
+ {
+  "q": "Is ___ huiswerk al af?",
+  "n": "huiswerk",
+  "t": "art",
+  "e": "Is the homework done yet?",
+  "b": "B1"
+ },
+ {
+  "q": "___ café op de hoek is gezellig.",
+  "n": "café",
+  "t": "art",
+  "e": "The café on the corner is cosy.",
+  "b": "B1"
+ },
+ {
+  "q": "Vandaag is ___ zwembad gesloten.",
+  "n": "zwembad",
+  "t": "art",
+  "e": "Today the swimming pool is closed.",
+  "b": "B1"
+ },
+ {
+  "q": "Zondag gaan we naar ___ museum.",
+  "n": "museum",
+  "t": "art",
+  "e": "On Sunday we're going to the museum.",
+  "b": "B1"
+ },
+ {
+  "q": "___ meisje heet Lotte.",
+  "n": "meisje",
+  "t": "art",
+  "e": "The girl is called Lotte.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik geef ___ meisje een appel.",
+  "n": "meisje",
+  "t": "art",
+  "e": "I give the girl an apple.",
+  "b": "A1"
+ },
+ {
+  "q": "___ broodje kaas is voor jou.",
+  "n": "broodje",
+  "t": "art",
+  "e": "The cheese roll is for you.",
+  "b": "B1"
+ },
+ {
+  "q": "Pas op, ___ kopje is heel heet.",
+  "n": "kopje",
+  "t": "art",
+  "e": "Careful, the cup is very hot.",
+  "b": "B1"
+ },
+ {
+  "q": "___ koekje is voor de baby.",
+  "n": "koekje",
+  "t": "art",
+  "e": "The biscuit is for the baby.",
+  "b": "B1"
+ },
+ {
+  "q": "Waar is ___ kaartje voor de trein?",
+  "n": "kaartje",
+  "t": "art",
+  "e": "Where is the train ticket?",
+  "b": "A2"
+ },
+ {
+  "q": "___ drankje is gratis.",
+  "n": "drankje",
+  "t": "art",
+  "e": "The drink is free.",
+  "b": "A2"
+ },
+ {
+  "q": "___ telefoontje was van mijn moeder.",
+  "n": "telefoontje",
+  "t": "art",
+  "e": "The phone call was from my mother.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik lees ___ briefje van mijn zoon.",
+  "n": "briefje",
+  "t": "art",
+  "e": "I read my son's note.",
+  "b": "B1"
+ },
+ {
+  "q": "Morgen komt ___ pakje met de post.",
+  "n": "pakje",
+  "t": "art",
+  "e": "Tomorrow the parcel comes in the post.",
+  "b": "B1"
+ },
+ {
+  "q": "___ gezin van mijn zus woont in Gouda.",
+  "n": "gezin",
+  "t": "art",
+  "e": "My sister's family lives in Gouda.",
+  "b": "A2"
+ },
+ {
+  "q": "___ dak lekt weer.",
+  "n": "dak",
+  "t": "art",
+  "e": "The roof is leaking again.",
+  "b": "A2"
+ },
+ {
+  "q": "Pardon, waar is ___ toilet?",
+  "n": "toilet",
+  "t": "art",
+  "e": "Excuse me, where is the toilet?",
+  "b": "A2"
+ },
+ {
+  "q": "___ vlees is te zout.",
+  "n": "vlees",
+  "t": "art",
+  "e": "The meat is too salty.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik vind ___ shirt te groot.",
+  "n": "shirt",
+  "t": "art",
+  "e": "I find the shirt too big.",
+  "b": "B1"
+ },
+ {
+  "q": "___ konijn eet een wortel.",
+  "n": "konijn",
+  "t": "art",
+  "e": "The rabbit is eating a carrot.",
+  "b": "B1"
+ },
+ {
+  "q": "___ concert begint om acht uur.",
+  "n": "concert",
+  "t": "art",
+  "e": "The concert starts at eight.",
+  "b": "B1"
+ },
+ {
+  "q": "Op de heuvel staat ___ kasteel.",
+  "n": "kasteel",
+  "t": "art",
+  "e": "The castle stands on the hill.",
+  "b": "B1"
+ },
+ {
+  "q": "We fietsen naar ___ centrum.",
+  "n": "centrum",
+  "t": "art",
+  "e": "We cycle to the town centre.",
+  "b": "B1"
+ },
+ {
+  "q": "Zie jij ___ verschil?",
+  "n": "verschil",
+  "t": "art",
+  "e": "Do you see the difference?",
+  "b": "A2"
+ },
+ {
+  "q": "___ bedrijf van mijn vader is klein.",
+  "n": "bedrijf",
+  "t": "art",
+  "e": "My father's company is small.",
+  "b": "A2"
+ },
+ {
+  "q": "Hoe laat begint ___ programma?",
+  "n": "programma",
+  "t": "art",
+  "e": "What time does the programme start?",
+  "b": "A2"
+ },
+ {
+  "q": "___ team van onze stad wint vaak.",
+  "n": "team",
+  "t": "art",
+  "e": "Our town's team often wins.",
+  "b": "A2"
+ },
+ {
+  "q": "Lees ___ recept nog een keer.",
+  "n": "recept",
+  "t": "art",
+  "e": "Read the recipe once more.",
+  "b": "B1"
+ },
+ {
+  "q": "___ schilderij hangt in de gang.",
+  "n": "schilderij",
+  "t": "art",
+  "e": "The painting hangs in the hall.",
+  "b": "A2"
+ },
+ {
+  "q": "___ horloge van opa is stuk.",
+  "n": "horloge",
+  "t": "art",
+  "e": "Grandpa's watch is broken.",
+  "b": "A2"
+ },
+ {
+  "q": "Heb je ___ nieuws al gehoord?",
+  "n": "nieuws",
+  "t": "art",
+  "e": "Have you heard the news yet?",
+  "b": "B1"
+ },
+ {
+  "q": "___ verkeer is druk vandaag.",
+  "n": "verkeer",
+  "t": "art",
+  "e": "The traffic is heavy today.",
+  "b": "B1"
+ },
+ {
+  "q": "___ speelgoed ligt overal op de vloer.",
+  "n": "speelgoed",
+  "t": "art",
+  "e": "The toys are all over the floor.",
+  "b": "B1"
+ },
+ {
+  "q": "___ bezoek van oma was leuk.",
+  "n": "bezoek",
+  "t": "art",
+  "e": "Grandma's visit was nice.",
+  "b": "A2"
+ },
+ {
+  "q": "Ken jij ___ gedicht uit je hoofd?",
+  "n": "gedicht",
+  "t": "art",
+  "e": "Do you know the poem by heart?",
+  "b": "B1"
+ },
+ {
+  "q": "Lees ___ hoofdstuk voor morgen.",
+  "n": "hoofdstuk",
+  "t": "art",
+  "e": "Read the chapter for tomorrow.",
+  "b": "B1"
+ },
+ {
+  "q": "___ scherm van mijn laptop is kapot.",
+  "n": "scherm",
+  "t": "art",
+  "e": "My laptop's screen is broken.",
+  "b": "B1"
+ },
+ {
+  "q": "Na de regen is ___ gras nat.",
+  "n": "gras",
+  "t": "art",
+  "e": "After the rain the grass is wet.",
+  "b": "B1"
+ },
+ {
+  "q": "In de zomer is ___ zand heel warm.",
+  "n": "zand",
+  "t": "art",
+  "e": "In summer the sand is very warm.",
+  "b": "B1"
+ },
+ {
+  "q": "___ jaar is bijna voorbij.",
+  "n": "jaar",
+  "t": "art",
+  "e": "The year is almost over.",
+  "b": "A1"
+ },
+ {
+  "q": "___ geld ligt op tafel.",
+  "n": "geld",
+  "t": "art",
+  "e": "The money is on the table.",
+  "b": "A1"
+ },
+ {
+  "q": "Is ___ werk voor vandaag klaar?",
+  "n": "werk",
+  "t": "art",
+  "e": "Is the work done for today?",
+  "b": "A1"
+ },
+ {
+  "q": "___ ziekenhuis ligt aan de rand van de stad.",
+  "n": "ziekenhuis",
+  "t": "art",
+  "e": "The hospital is on the edge of town.",
+  "b": "A2"
+ },
+ {
+  "q": "___ kind van de buren huilt veel.",
+  "n": "kind",
+  "t": "art",
+  "e": "The neighbours' child cries a lot.",
+  "b": "A1"
+ },
+ {
+  "q": "___ ticket staat op mijn telefoon.",
+  "n": "ticket",
+  "t": "art",
+  "e": "The ticket is on my phone.",
+  "b": "B1"
+ },
+ {
+  "q": "___ rijbewijs ligt in de auto.",
+  "n": "rijbewijs",
+  "t": "art",
+  "e": "The driving licence is in the car.",
+  "b": "B1"
+ },
+ {
+  "q": "___ dagboek van mijn zus is geheim.",
+  "n": "dagboek",
+  "t": "art",
+  "e": "My sister's diary is secret.",
+  "b": "B1"
+ },
+ {
+  "q": "___ theater zit vanavond vol.",
+  "n": "theater",
+  "t": "art",
+  "e": "The theatre is full tonight.",
+  "b": "B1"
+ },
+ {
+  "q": "___ Nederlands is niet zo moeilijk.",
+  "n": "Nederlands",
+  "t": "art",
+  "e": "Dutch isn't that hard.",
+  "b": "A1",
+  "w": "Languages are het words: het Nederlands.",
+  "wn": "Talen zijn het-woorden."
+ },
+ {
+  "q": "___ Engels van mijn vader is goed.",
+  "n": "Engels",
+  "t": "art",
+  "e": "My father's English is good.",
+  "b": "A1",
+  "w": "Languages are het words: het Engels.",
+  "wn": "Talen zijn het-woorden."
+ },
+ {
+  "q": "___ Spaans klinkt heel mooi.",
+  "n": "Spaans",
+  "t": "art",
+  "e": "Spanish sounds very nice.",
+  "b": "A2",
+  "w": "Languages are het words: het Spaans.",
+  "wn": "Talen zijn het-woorden."
+ },
+ {
+  "q": "___ Frans van de lerares is perfect.",
+  "n": "Frans",
+  "t": "art",
+  "e": "The teacher's French is perfect.",
+  "b": "A2",
+  "w": "Languages are het words: het Frans.",
+  "wn": "Talen zijn het-woorden."
+ },
+ {
+  "q": "___ Duits heeft veel lange woorden.",
+  "n": "Duits",
+  "t": "art",
+  "e": "German has a lot of long words.",
+  "b": "A2",
+  "w": "Languages are het words: het Duits.",
+  "wn": "Talen zijn het-woorden."
+ },
+ {
+  "q": "___ zwemmen gaat steeds beter.",
+  "n": "zwemmen",
+  "t": "art",
+  "e": "The swimming is going better and better.",
+  "b": "A2",
+  "w": "An infinitive used as a noun is always het: het zwemmen.",
+  "wn": "Een infinitief als zelfstandig naamwoord: het."
+ },
+ {
+  "q": "Bij ons doet mijn vader ___ koken.",
+  "n": "koken",
+  "t": "art",
+  "e": "At our house my father does the cooking.",
+  "b": "A2",
+  "w": "An infinitive used as a noun is always het: het koken.",
+  "wn": "Een infinitief als zelfstandig naamwoord: het."
+ },
+ {
+  "q": "___ eten is klaar!",
+  "n": "eten",
+  "t": "art",
+  "e": "Dinner is ready!",
+  "b": "A1",
+  "w": "An infinitive used as a noun is always het: het eten.",
+  "wn": "Een infinitief als zelfstandig naamwoord: het."
+ },
+ {
+  "q": "___ werken in de tuin is fijn.",
+  "n": "werken",
+  "t": "art",
+  "e": "Working in the garden is nice.",
+  "b": "A1",
+  "w": "An infinitive used as a noun is always het: het werken.",
+  "wn": "Een infinitief als zelfstandig naamwoord: het."
+ },
+ {
+  "q": "Met die herrie lukt ___ slapen niet.",
+  "n": "slapen",
+  "t": "art",
+  "e": "With that racket, sleeping isn't working.",
+  "b": "A1",
+  "w": "An infinitive used as a noun is always het: het slapen.",
+  "wn": "Een infinitief als zelfstandig naamwoord: het."
+ },
+ {
+  "q": "___ fietsen naar school duurt tien minuten.",
+  "n": "fietsen",
+  "t": "art",
+  "e": "Cycling to school takes ten minutes.",
+  "b": "B1",
+  "w": "An infinitive used as a noun is always het: het fietsen.",
+  "wn": "Een infinitief als zelfstandig naamwoord: het."
+ },
+ {
+  "q": "___ leren van nieuwe woorden kost tijd.",
+  "n": "leren",
+  "t": "art",
+  "e": "Learning new words takes time.",
+  "b": "A1",
+  "w": "An infinitive used as a noun is always het: het leren.",
+  "wn": "Een infinitief als zelfstandig naamwoord: het."
+ },
+ {
+  "q": "___ man van de bakker is aardig.",
+  "n": "man",
+  "t": "art",
+  "e": "The baker's husband is nice.",
+  "b": "A1"
+ },
+ {
+  "q": "___ vrouw met de rode jas is mijn tante.",
+  "n": "vrouw",
+  "t": "art",
+  "e": "The woman in the red coat is my aunt.",
+  "b": "A1"
+ },
+ {
+  "q": "Komt ___ vriend van Tom ook?",
+  "n": "vriend",
+  "t": "art",
+  "e": "Is Tom's friend coming too?",
+  "b": "A1"
+ },
+ {
+  "q": "___ vriendin van mijn broer is lerares.",
+  "n": "vriendin",
+  "t": "art",
+  "e": "My brother's girlfriend is a teacher.",
+  "b": "A1"
+ },
+ {
+  "q": "___ vader van Emma is dokter.",
+  "n": "vader",
+  "t": "art",
+  "e": "Emma's father is a doctor.",
+  "b": "A1"
+ },
+ {
+  "q": "___ broer van Lisa woont in Utrecht.",
+  "n": "broer",
+  "t": "art",
+  "e": "Lisa's brother lives in Utrecht.",
+  "b": "A2"
+ },
+ {
+  "q": "Morgen is ___ dochter van de buren jarig.",
+  "n": "dochter",
+  "t": "art",
+  "e": "Tomorrow the neighbours' daughter has her birthday.",
+  "b": "A2"
+ },
+ {
+  "q": "___ zoon van mijn collega studeert in Leiden.",
+  "n": "zoon",
+  "t": "art",
+  "e": "My colleague's son studies in Leiden.",
+  "b": "A1"
+ },
+ {
+  "q": "Doe ___ deur dicht, alsjeblieft.",
+  "n": "deur",
+  "t": "art",
+  "e": "Close the door, please.",
+  "b": "A1"
+ },
+ {
+  "q": "___ tafel staat in de keuken.",
+  "n": "tafel",
+  "t": "art",
+  "e": "The table is in the kitchen.",
+  "b": "A2"
+ },
+ {
+  "q": "Zit jij graag op ___ stoel bij het raam?",
+  "n": "stoel",
+  "t": "art",
+  "e": "Do you like sitting on the chair by the window?",
+  "b": "A2"
+ },
+ {
+  "q": "___ kamer van mijn zoon is een rommel.",
+  "n": "kamer",
+  "t": "art",
+  "e": "My son's room is a mess.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik vind ___ keuken te klein.",
+  "n": "keuken",
+  "t": "art",
+  "e": "I find the kitchen too small.",
+  "b": "A2"
+ },
+ {
+  "q": "___ badkamer is boven.",
+  "n": "badkamer",
+  "t": "art",
+  "e": "The bathroom is upstairs.",
+  "b": "A2"
+ },
+ {
+  "q": "___ slaapkamer heeft een groot raam.",
+  "n": "slaapkamer",
+  "t": "art",
+  "e": "The bedroom has a big window.",
+  "b": "A2"
+ },
+ {
+  "q": "___ auto staat voor het huis.",
+  "n": "auto",
+  "t": "art",
+  "e": "The car is in front of the house.",
+  "b": "A1"
+ },
+ {
+  "q": "Is ___ trein naar Amsterdam weer te laat?",
+  "n": "trein",
+  "t": "art",
+  "e": "Is the train to Amsterdam late again?",
+  "b": "A2"
+ },
+ {
+  "q": "___ bus komt om tien over acht.",
+  "n": "bus",
+  "t": "art",
+  "e": "The bus comes at ten past eight.",
+  "b": "A2"
+ },
+ {
+  "q": "Om twaalf uur vertrekt ___ boot.",
+  "n": "boot",
+  "t": "art",
+  "e": "The boat leaves at twelve.",
+  "b": "A2"
+ },
+ {
+  "q": "In de winter is ___ stad rustig.",
+  "n": "stad",
+  "t": "art",
+  "e": "In winter the city is quiet.",
+  "b": "A1"
+ },
+ {
+  "q": "___ school begint om half negen.",
+  "n": "school",
+  "t": "art",
+  "e": "School starts at half past eight.",
+  "b": "A1"
+ },
+ {
+  "q": "Om zes uur gaat ___ winkel dicht.",
+  "n": "winkel",
+  "t": "art",
+  "e": "The shop closes at six.",
+  "b": "A2"
+ },
+ {
+  "q": "___ kerk in ons dorp is heel oud.",
+  "n": "kerk",
+  "t": "art",
+  "e": "The church in our village is very old.",
+  "b": "A2"
+ },
+ {
+  "q": "Op zaterdag is ___ markt op het plein.",
+  "n": "markt",
+  "t": "art",
+  "e": "On Saturday the market is on the square.",
+  "b": "B1"
+ },
+ {
+  "q": "___ bibliotheek is naast het station.",
+  "n": "bibliotheek",
+  "t": "art",
+  "e": "The library is next to the station.",
+  "b": "B1"
+ },
+ {
+  "q": "Hoor je ___ telefoon niet?",
+  "n": "telefoon",
+  "t": "art",
+  "e": "Don't you hear the phone?",
+  "b": "A1"
+ },
+ {
+  "q": "___ computer is weer zo traag.",
+  "n": "computer",
+  "t": "art",
+  "e": "The computer is so slow again.",
+  "b": "A2"
+ },
+ {
+  "q": "Hoe vond je ___ film?",
+  "n": "film",
+  "t": "art",
+  "e": "How did you like the film?",
+  "b": "A2"
+ },
+ {
+  "q": "Ik vind ___ foto van jou heel mooi.",
+  "n": "foto",
+  "t": "art",
+  "e": "I think the photo of you is really nice.",
+  "b": "A1"
+ },
+ {
+  "q": "Waar is ___ sleutel van de auto?",
+  "n": "sleutel",
+  "t": "art",
+  "e": "Where is the car key?",
+  "b": "A1"
+ },
+ {
+  "q": "___ tas van mijn moeder is zwaar.",
+  "n": "tas",
+  "t": "art",
+  "e": "My mother's bag is heavy.",
+  "b": "A2"
+ },
+ {
+  "q": "Hang ___ jas maar aan de deur.",
+  "n": "jas",
+  "t": "art",
+  "e": "Just hang the coat on the door.",
+  "b": "A2"
+ },
+ {
+  "q": "___ jurk is te lang voor mij.",
+  "n": "jurk",
+  "t": "art",
+  "e": "The dress is too long for me.",
+  "b": "A2"
+ },
+ {
+  "q": "Is ___ bril van opa weer weg?",
+  "n": "bril",
+  "t": "art",
+  "e": "Are grandpa's glasses gone again?",
+  "b": "B1"
+ },
+ {
+  "q": "___ fles is leeg.",
+  "n": "fles",
+  "t": "art",
+  "e": "The bottle is empty.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik vind ___ koffie hier te sterk.",
+  "n": "koffie",
+  "t": "art",
+  "e": "I find the coffee here too strong.",
+  "b": "A1"
+ },
+ {
+  "q": "Pas op, ___ thee is nog heet.",
+  "n": "thee",
+  "t": "art",
+  "e": "Careful, the tea is still hot.",
+  "b": "A2"
+ },
+ {
+  "q": "___ melk staat in de koelkast.",
+  "n": "melk",
+  "t": "art",
+  "e": "The milk is in the fridge.",
+  "b": "A2"
+ },
+ {
+  "q": "___ wijn uit Frankrijk is lekker.",
+  "n": "wijn",
+  "t": "art",
+  "e": "The wine from France is nice.",
+  "b": "A2"
+ },
+ {
+  "q": "Is ___ soep al warm?",
+  "n": "soep",
+  "t": "art",
+  "e": "Is the soup warm yet?",
+  "b": "B1"
+ },
+ {
+  "q": "___ kaas komt uit Gouda.",
+  "n": "kaas",
+  "t": "art",
+  "e": "The cheese comes from Gouda.",
+  "b": "B1"
+ },
+ {
+  "q": "___ appel is een beetje zuur.",
+  "n": "appel",
+  "t": "art",
+  "e": "The apple is a bit sour.",
+  "b": "B1"
+ },
+ {
+  "q": "Over vijf minuten is ___ pizza klaar.",
+  "n": "pizza",
+  "t": "art",
+  "e": "The pizza will be ready in five minutes.",
+  "b": "A2"
+ },
+ {
+  "q": "___ taxi wacht buiten.",
+  "n": "taxi",
+  "t": "art",
+  "e": "The taxi is waiting outside.",
+  "b": "A2"
+ },
+ {
+  "q": "Zet de melk terug in ___ koelkast.",
+  "n": "koelkast",
+  "t": "art",
+  "e": "Put the milk back in the fridge.",
+  "b": "B1"
+ },
+ {
+  "q": "Doe ___ televisie even zachter.",
+  "n": "televisie",
+  "t": "art",
+  "e": "Turn the television down a bit.",
+  "b": "B1"
+ },
+ {
+  "q": "In de keuken staat ___ radio altijd aan.",
+  "n": "radio",
+  "t": "art",
+  "e": "In the kitchen the radio is always on.",
+  "b": "A2"
+ },
+ {
+  "q": "___ bloem in de vaas is rood.",
+  "n": "bloem",
+  "t": "art",
+  "e": "The flower in the vase is red.",
+  "b": "A2"
+ },
+ {
+  "q": "___ boom in onze tuin is hoog.",
+  "n": "boom",
+  "t": "art",
+  "e": "The tree in our garden is tall.",
+  "b": "A2"
+ },
+ {
+  "q": "___ tuin achter het huis is groot.",
+  "n": "tuin",
+  "t": "art",
+  "e": "The garden behind the house is big.",
+  "b": "A2"
+ },
+ {
+  "q": "Eindelijk schijnt ___ zon weer.",
+  "n": "zon",
+  "t": "art",
+  "e": "At last the sun is shining again.",
+  "b": "A2"
+ },
+ {
+  "q": "Vannacht is ___ maan vol.",
+  "n": "maan",
+  "t": "art",
+  "e": "Tonight the moon is full.",
+  "b": "A2"
+ },
+ {
+  "q": "In mei is ___ zee nog koud.",
+  "n": "zee",
+  "t": "art",
+  "e": "In May the sea is still cold.",
+  "b": "A2"
+ },
+ {
+  "q": "___ rivier stroomt door de stad.",
+  "n": "rivier",
+  "t": "art",
+  "e": "The river flows through the city.",
+  "b": "A2"
+ },
+ {
+  "q": "Hoe was ___ dag op school?",
+  "n": "dag",
+  "t": "art",
+  "e": "How was the day at school?",
+  "b": "A1"
+ },
+ {
+  "q": "___ avond bij Kees was gezellig.",
+  "n": "avond",
+  "t": "art",
+  "e": "The evening at Kees's was fun.",
+  "b": "A1"
+ },
+ {
+  "q": "Hoe was ___ zomer in Spanje?",
+  "n": "zomer",
+  "t": "art",
+  "e": "How was the summer in Spain?",
+  "b": "A2"
+ },
+ {
+  "q": "___ winter duurt hier lang.",
+  "n": "winter",
+  "t": "art",
+  "e": "The winter lasts a long time here.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik vind ___ vraag moeilijk.",
+  "n": "vraag",
+  "t": "art",
+  "e": "I find the question difficult.",
+  "b": "A1"
+ },
+ {
+  "q": "Hoe laat begint ___ les?",
+  "n": "les",
+  "t": "art",
+  "e": "What time does the lesson start?",
+  "b": "A2"
+ },
+ {
+  "q": "___ klas van mijn dochter gaat naar Parijs.",
+  "n": "klas",
+  "t": "art",
+  "e": "My daughter's class is going to Paris.",
+  "b": "A2"
+ },
+ {
+  "q": "___ leraar legt het heel goed uit.",
+  "n": "leraar",
+  "t": "art",
+  "e": "The teacher explains it very well.",
+  "b": "A2"
+ },
+ {
+  "q": "Morgen komt ___ dokter langs.",
+  "n": "dokter",
+  "t": "art",
+  "e": "Tomorrow the doctor will drop by.",
+  "b": "A1"
+ },
+ {
+  "q": "___ kat slaapt op de bank.",
+  "n": "kat",
+  "t": "art",
+  "e": "The cat is sleeping on the sofa.",
+  "b": "A2"
+ },
+ {
+  "q": "Hoor je ___ vogel in de boom?",
+  "n": "vogel",
+  "t": "art",
+  "e": "Do you hear the bird in the tree?",
+  "b": "A2"
+ },
+ {
+  "q": "___ koe staat in de wei.",
+  "n": "koe",
+  "t": "art",
+  "e": "The cow is standing in the meadow.",
+  "b": "B1"
+ },
+ {
+  "q": "Doe ___ lamp even aan.",
+  "n": "lamp",
+  "t": "art",
+  "e": "Switch the lamp on for a moment.",
+  "b": "B1"
+ },
+ {
+  "q": "___ kast in de hoek is vol.",
+  "n": "kast",
+  "t": "art",
+  "e": "The cupboard in the corner is full.",
+  "b": "A2"
+ },
+ {
+  "q": "Pas op, ___ vloer is nat.",
+  "n": "vloer",
+  "t": "art",
+  "e": "Careful, the floor is wet.",
+  "b": "A2"
+ },
+ {
+  "q": "We verven ___ muur wit.",
+  "n": "muur",
+  "t": "art",
+  "e": "We are painting the wall white.",
+  "b": "A2"
+ },
+ {
+  "q": "___ trap naar boven is steil.",
+  "n": "trap",
+  "t": "art",
+  "e": "The stairs up are steep.",
+  "b": "A2"
+ },
+ {
+  "q": "Neem jij ___ lift of de trap?",
+  "n": "lift",
+  "t": "art",
+  "e": "Are you taking the lift or the stairs?",
+  "b": "A2"
+ },
+ {
+  "q": "___ vakantie was veel te kort.",
+  "n": "vakantie",
+  "t": "art",
+  "e": "The holiday was much too short.",
+  "b": "A2"
+ },
+ {
+  "q": "Hoe lang duurt ___ reis naar Spanje?",
+  "n": "reis",
+  "t": "art",
+  "e": "How long does the trip to Spain take?",
+  "b": "A2"
+ },
+ {
+  "q": "___ kaart van de stad ligt in de auto.",
+  "n": "kaart",
+  "t": "art",
+  "e": "The map of the city is in the car.",
+  "b": "A2"
+ },
+ {
+  "q": "Mag ik ___ rekening, alstublieft?",
+  "n": "rekening",
+  "t": "art",
+  "e": "May I have the bill, please?",
+  "b": "A2"
+ },
+ {
+  "q": "Om drie uur is ___ afspraak bij de tandarts.",
+  "n": "afspraak",
+  "t": "art",
+  "e": "At three is the dentist appointment.",
+  "b": "A2"
+ },
+ {
+  "q": "___ vergadering duurt twee uur.",
+  "n": "vergadering",
+  "t": "art",
+  "e": "The meeting lasts two hours.",
+  "b": "A2"
+ },
+ {
+  "q": "___ verjaardag van oma is in juni.",
+  "n": "verjaardag",
+  "t": "art",
+  "e": "Grandma's birthday is in June.",
+  "b": "A2"
+ },
+ {
+  "q": "___ tekening van mijn zoon hangt op de koelkast.",
+  "n": "tekening",
+  "t": "art",
+  "e": "My son's drawing is on the fridge.",
+  "b": "B1"
+ },
+ {
+  "q": "Heb je ___ uitnodiging voor het feest gekregen?",
+  "n": "uitnodiging",
+  "t": "art",
+  "e": "Did you get the invitation for the party?",
+  "b": "B1"
+ },
+ {
+  "q": "___ woning heeft een kleine tuin.",
+  "n": "woning",
+  "t": "art",
+  "e": "The home has a small garden.",
+  "b": "B1"
+ },
+ {
+  "q": "Soms is ___ oplossing heel simpel.",
+  "n": "oplossing",
+  "t": "art",
+  "e": "Sometimes the solution is very simple.",
+  "b": "A2"
+ },
+ {
+  "q": "Wat is ___ mening van je vader?",
+  "n": "mening",
+  "t": "art",
+  "e": "What is your father's opinion?",
+  "b": "A2"
+ },
+ {
+  "q": "___ training is op dinsdag.",
+  "n": "training",
+  "t": "art",
+  "e": "The training is on Tuesday.",
+  "b": "B1"
+ },
+ {
+  "q": "___ ketting van mijn oma is van goud.",
+  "n": "ketting",
+  "t": "art",
+  "e": "My grandma's necklace is gold.",
+  "b": "B1"
+ },
+ {
+  "q": "Na de les stelt ___ leerling een vraag.",
+  "n": "leerling",
+  "t": "art",
+  "e": "After the lesson the pupil asks a question.",
+  "b": "B1"
+ },
+ {
+  "q": "Wanneer neem je ___ beslissing?",
+  "n": "beslissing",
+  "t": "art",
+  "e": "When will you make the decision?",
+  "b": "A2"
+ },
+ {
+  "q": "___ wedstrijd begint om twee uur.",
+  "n": "wedstrijd",
+  "t": "art",
+  "e": "The match starts at two.",
+  "b": "A2"
+ },
+ {
+  "q": "___ naam van de straat ben ik vergeten.",
+  "n": "naam",
+  "t": "art",
+  "e": "I've forgotten the name of the street.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik vind ___ kleur van je auto mooi.",
+  "n": "kleur",
+  "t": "art",
+  "e": "I like the colour of your car.",
+  "b": "A2"
+ },
+ {
+  "q": "Vanavond komt ___ collega van mijn vrouw eten.",
+  "n": "collega",
+  "t": "art",
+  "e": "Tonight my wife's colleague is coming for dinner.",
+  "b": "A2"
+ },
+ {
+  "q": "Stil, ___ baby slaapt.",
+  "n": "baby",
+  "t": "art",
+  "e": "Quiet, the baby is sleeping.",
+  "b": "A1"
+ },
+ {
+  "q": "___ oma van Tim wordt negentig.",
+  "n": "oma",
+  "t": "art",
+  "e": "Tim's grandma is turning ninety.",
+  "b": "A2"
+ },
+ {
+  "q": "___ opa van Sem fietst nog elke dag.",
+  "n": "opa",
+  "t": "art",
+  "e": "Sem's grandpa still cycles every day.",
+  "b": "A2"
+ },
+ {
+  "q": "Met kerst komt ___ familie bij ons.",
+  "n": "familie",
+  "t": "art",
+  "e": "At Christmas the family comes to us.",
+  "b": "A1"
+ },
+ {
+  "q": "___ verdieping boven ons is leeg.",
+  "n": "verdieping",
+  "t": "art",
+  "e": "The floor above us is empty.",
+  "b": "B1"
+ },
+ {
+  "q": "Gelukkig was ___ verrassing een succes.",
+  "n": "verrassing",
+  "t": "art",
+  "e": "Luckily the surprise was a success.",
+  "b": "A2"
+ },
+ {
+  "q": "___ koning woont in Den Haag.",
+  "n": "koning",
+  "t": "art",
+  "e": "The king lives in The Hague.",
+  "b": "A1"
+ },
+ {
+  "q": "Iedereen zwaait naar ___ koningin.",
+  "n": "koningin",
+  "t": "art",
+  "e": "Everyone waves at the queen.",
+  "b": "A2"
+ }
+]

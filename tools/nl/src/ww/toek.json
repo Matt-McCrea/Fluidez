@@ -1,0 +1,898 @@
+[
+ {
+  "q": "Morgen ___ (zullen) ik je helpen met verhuizen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "ik",
+  "e": "Tomorrow I'll help you move.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (zullen) je straks even bellen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "ik",
+  "e": "I'll give you a call later.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (zullen) het nooit meer doen, echt niet.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "ik",
+  "e": "I'll never do it again, really.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (zullen) morgen de boodschappen doen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "ik",
+  "e": "I'll do the shopping tomorrow.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (zullen) volgende week mijn oma bezoeken.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "ik",
+  "e": "I'll visit my grandmother next week.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (zullen) je nooit vergeten.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "ik",
+  "e": "I'll never forget you.",
+  "b": "A1"
+ },
+ {
+  "q": "Na de vakantie ___ (zullen) ik harder werken.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "ik",
+  "e": "After the holiday I'll work harder.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (zullen) er morgen om acht uur zijn.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "ik",
+  "e": "I'll be there tomorrow at eight.",
+  "b": "A1"
+ },
+ {
+  "q": "Dat ___ (zullen) ik niet aan je moeder vertellen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "ik",
+  "e": "I won't tell your mother that.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (zullen) straks de afwas doen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "ik",
+  "e": "I'll do the dishes in a bit.",
+  "b": "A1"
+ },
+ {
+  "q": "Volgend jaar ___ (zullen) ik in Amsterdam studeren.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "ik",
+  "e": "Next year I'll study in Amsterdam.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (zullen) het boek morgen terugbrengen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "ik",
+  "e": "I'll bring the book back tomorrow.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik beloof dat ik op tijd ___ (zullen) komen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "ik",
+  "sub": 1,
+  "e": "I promise I'll come on time.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ___ (zullen) je laten weten wat de dokter zegt.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "ik",
+  "e": "I'll let you know what the doctor says.",
+  "b": "A2"
+ },
+ {
+  "q": "Wees maar niet bang, ik ___ (zullen) bij je blijven.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "ik",
+  "e": "Don't be afraid, I'll stay with you.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ___ (zullen) je morgen het geld teruggeven.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "ik",
+  "e": "I'll give you the money back tomorrow.",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (zullen) het morgen wel zien.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jij",
+  "e": "You'll see tomorrow.",
+  "b": "A2"
+ },
+ {
+  "q": "Jij ___ (zullen) dit examen zeker halen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jij",
+  "e": "You'll definitely pass this exam.",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (zullen) die film prachtig vinden.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jij",
+  "e": "You'll love that film.",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (zullen) je nooit vervelen in deze stad.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jij",
+  "e": "You'll never be bored in this city.",
+  "b": "B1"
+ },
+ {
+  "q": "Jij ___ (zullen) later een goede dokter worden.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jij",
+  "e": "You'll make a good doctor one day.",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (zullen) morgen wel moe zijn.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jij",
+  "e": "You'll be tired tomorrow.",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (zullen) wel honger hebben na die lange wandeling.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jij",
+  "e": "You'll be hungry after that long walk.",
+  "b": "A2"
+ },
+ {
+  "q": "Morgen ___ (zullen) je je nieuwe collega's ontmoeten.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jij",
+  "inv": 1,
+  "e": "Tomorrow you'll meet your new colleagues.",
+  "b": "A2"
+ },
+ {
+  "q": "Straks ___ (zullen) je zien dat het meevalt.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jij",
+  "inv": 1,
+  "e": "Soon you'll see it's not so bad.",
+  "b": "B1"
+ },
+ {
+  "q": "Over een jaar ___ (zullen) je vloeiend Nederlands spreken.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jij",
+  "inv": 1,
+  "e": "In a year you'll speak fluent Dutch.",
+  "b": "A2"
+ },
+ {
+  "q": "Daar ___ (zullen) je spijt van krijgen!",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jij",
+  "inv": 1,
+  "e": "You'll regret that!",
+  "b": "B1"
+ },
+ {
+  "q": "Als je hard werkt, ___ (zullen) je slagen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jij",
+  "inv": 1,
+  "e": "If you work hard, you'll succeed.",
+  "b": "B1"
+ },
+ {
+  "q": "In Utrecht ___ (zullen) je overal fietsen zien.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jij",
+  "inv": 1,
+  "e": "In Utrecht you'll see bikes everywhere.",
+  "b": "A2"
+ },
+ {
+  "q": "Na deze cursus ___ (zullen) je alles weten over koken.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jij",
+  "inv": 1,
+  "e": "After this course you'll know everything about cooking.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik weet zeker dat je het ___ (zullen) redden.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jij",
+  "sub": 1,
+  "e": "I'm sure you'll make it.",
+  "b": "B1"
+ },
+ {
+  "q": "U ___ (zullen) de brief morgen ontvangen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "u",
+  "e": "You will receive the letter tomorrow.",
+  "b": "A2"
+ },
+ {
+  "q": "U ___ (zullen) binnen een week van ons horen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "u",
+  "e": "You will hear from us within a week.",
+  "b": "A2"
+ },
+ {
+  "q": "U ___ (zullen) zien dat het nieuwe systeem goed werkt.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "u",
+  "e": "You'll see that the new system works well.",
+  "b": "A2"
+ },
+ {
+  "q": "Morgen ___ (zullen) u een mail met alle details krijgen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "u",
+  "e": "Tomorrow you'll get an email with all the details.",
+  "b": "A2"
+ },
+ {
+  "q": "De dokter zegt dat u snel beter ___ (zullen) worden.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "u",
+  "sub": 1,
+  "e": "The doctor says you'll get better soon.",
+  "b": "B1"
+ },
+ {
+  "q": "U ___ (zullen) er geen spijt van hebben, mevrouw.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "u",
+  "e": "You won't regret it, madam.",
+  "b": "B1"
+ },
+ {
+  "q": "Het ___ (zullen) morgen regenen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "e": "It will rain tomorrow.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn broer ___ (zullen) je morgen helpen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "e": "My brother will help you tomorrow.",
+  "b": "A1"
+ },
+ {
+  "q": "De trein ___ (zullen) een kwartier later vertrekken.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "e": "The train will leave a quarter of an hour late.",
+  "b": "A2"
+ },
+ {
+  "q": "Dat ___ (zullen) niet makkelijk zijn.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "e": "That won't be easy.",
+  "b": "A2"
+ },
+ {
+  "q": "Anna ___ (zullen) volgend jaar dertig worden.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "e": "Anna will turn thirty next year.",
+  "b": "A2"
+ },
+ {
+  "q": "Hij ___ (zullen) het je straks zelf vertellen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "e": "He'll tell you himself later.",
+  "b": "A2"
+ },
+ {
+  "q": "De winkel ___ (zullen) morgen om negen uur opengaan.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "e": "The shop will open at nine tomorrow.",
+  "b": "A2"
+ },
+ {
+  "q": "Het ___ (zullen) wel goed komen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "e": "It'll be fine.",
+  "b": "A2"
+ },
+ {
+  "q": "Het weer ___ (zullen) morgen beter worden.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "e": "The weather will improve tomorrow.",
+  "b": "A2"
+ },
+ {
+  "q": "De dokter ___ (zullen) u zo roepen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "e": "The doctor will call you in a moment.",
+  "b": "A2"
+ },
+ {
+  "q": "Volgend jaar ___ (zullen) mijn dochter naar de middelbare school gaan.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "e": "Next year my daughter will go to secondary school.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn opa ___ (zullen) dat nooit begrijpen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "e": "My grandfather will never understand that.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik denk dat Lars morgen niet ___ (zullen) komen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "sub": 1,
+  "e": "I don't think Lars will come tomorrow.",
+  "b": "B1"
+ },
+ {
+  "q": "Het concert ___ (zullen) om acht uur beginnen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "e": "The concert will start at eight.",
+  "b": "A2"
+ },
+ {
+  "q": "Dat ___ (zullen) je moeder niet leuk vinden.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "e": "Your mother won't like that.",
+  "b": "A2"
+ },
+ {
+  "q": "De baas ___ (zullen) morgen een beslissing nemen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "e": "The boss will make a decision tomorrow.",
+  "b": "A2"
+ },
+ {
+  "q": "Over vijf jaar ___ (zullen) deze stad heel anders zijn.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "e": "In five years this city will be very different.",
+  "b": "A2"
+ },
+ {
+  "q": "Het pakje ___ (zullen) morgen aankomen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "e": "The parcel will arrive tomorrow.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn zus ___ (zullen) ons straks van het vliegveld ophalen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "e": "My sister will pick us up from the airport later.",
+  "b": "A2"
+ },
+ {
+  "q": "Wie ___ (zullen) de wedstrijd morgen winnen?",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "e": "Who will win the match tomorrow?",
+  "b": "A2"
+ },
+ {
+  "q": "Uw tafel ___ (zullen) over vijf minuten klaar zijn.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "hij",
+  "e": "Your table will be ready in five minutes.",
+  "b": "A2"
+ },
+ {
+  "q": "We ___ (zullen) je erg missen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "wij",
+  "e": "We'll miss you a lot.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij ___ (zullen) morgen vroeg vertrekken.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "wij",
+  "e": "We'll leave early tomorrow.",
+  "b": "A2"
+ },
+ {
+  "q": "We ___ (zullen) het straks wel zien.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "wij",
+  "e": "We'll see later.",
+  "b": "A2"
+ },
+ {
+  "q": "Volgend jaar ___ (zullen) we een nieuwe auto kopen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "wij",
+  "e": "Next year we'll buy a new car.",
+  "b": "A2"
+ },
+ {
+  "q": "We ___ (zullen) ons best doen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "wij",
+  "e": "We'll do our best.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij ___ (zullen) om zes uur bij jullie zijn.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "wij",
+  "e": "We'll be at your place at six.",
+  "b": "A2"
+ },
+ {
+  "q": "Na het eten ___ (zullen) we een wandeling maken.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "wij",
+  "e": "After dinner we'll go for a walk.",
+  "b": "A2"
+ },
+ {
+  "q": "We ___ (zullen) je bellen zodra we er zijn.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "wij",
+  "e": "We'll call you as soon as we get there.",
+  "b": "A2"
+ },
+ {
+  "q": "Ooit ___ (zullen) we samen naar Japan reizen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "wij",
+  "e": "One day we'll travel to Japan together.",
+  "b": "A2"
+ },
+ {
+  "q": "Wij ___ (zullen) de kosten eerlijk delen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "wij",
+  "e": "We'll share the costs fairly.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik hoop dat we elkaar snel weer ___ (zullen) zien.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "wij",
+  "sub": 1,
+  "e": "I hope we'll see each other again soon.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (zullen) we morgen samen lunchen?",
+  "v": "zullen",
+  "t": "toek",
+  "p": "wij",
+  "e": "Shall we have lunch together tomorrow?",
+  "b": "A1"
+ },
+ {
+  "q": "Jullie ___ (zullen) het hier vast heel gezellig vinden.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jullie",
+  "e": "You'll surely like it here.",
+  "b": "A2"
+ },
+ {
+  "q": "Jullie ___ (zullen) morgen een toets krijgen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jullie",
+  "e": "You'll get a test tomorrow.",
+  "b": "A2"
+ },
+ {
+  "q": "Morgen ___ (zullen) jullie de nieuwe juf leren kennen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jullie",
+  "e": "Tomorrow you'll get to know the new teacher.",
+  "b": "A2"
+ },
+ {
+  "q": "Jullie ___ (zullen) dit nooit geloven!",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jullie",
+  "e": "You'll never believe this!",
+  "b": "A2"
+ },
+ {
+  "q": "Straks ___ (zullen) jullie begrijpen waarom.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jullie",
+  "e": "Soon you'll understand why.",
+  "b": "A2"
+ },
+ {
+  "q": "Jullie ___ (zullen) wel moe zijn na die lange reis.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jullie",
+  "e": "You'll be tired after that long journey.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik weet zeker dat jullie de wedstrijd ___ (zullen) winnen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jullie",
+  "sub": 1,
+  "e": "I'm sure you'll win the match.",
+  "b": "B1"
+ },
+ {
+  "q": "Jullie ___ (zullen) om negen uur met de bus vertrekken.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "jullie",
+  "e": "You'll leave by bus at nine.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn ouders ___ (zullen) volgende week op bezoek komen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "zij",
+  "e": "My parents will come to visit next week.",
+  "b": "A2"
+ },
+ {
+  "q": "De kinderen ___ (zullen) het cadeau prachtig vinden.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "zij",
+  "e": "The children will love the present.",
+  "b": "A2"
+ },
+ {
+  "q": "De prijzen ___ (zullen) volgend jaar weer stijgen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "zij",
+  "e": "Prices will rise again next year.",
+  "b": "B1"
+ },
+ {
+  "q": "Onze buren ___ (zullen) in de zomer verhuizen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "zij",
+  "e": "Our neighbours will move in the summer.",
+  "b": "A2"
+ },
+ {
+  "q": "De gasten ___ (zullen) om acht uur aankomen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "zij",
+  "e": "The guests will arrive at eight.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn vrienden ___ (zullen) me nooit in de steek laten.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "zij",
+  "e": "My friends will never let me down.",
+  "b": "B1"
+ },
+ {
+  "q": "De winkels ___ (zullen) met Kerst dicht zijn.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "zij",
+  "e": "The shops will be closed at Christmas.",
+  "b": "A2"
+ },
+ {
+  "q": "Ze ___ (zullen) het allebei wel snappen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "zij",
+  "e": "They'll both get it.",
+  "b": "A2"
+ },
+ {
+  "q": "De studenten ___ (zullen) morgen hun resultaten krijgen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "zij",
+  "e": "The students will get their results tomorrow.",
+  "b": "A2"
+ },
+ {
+  "q": "De bomen ___ (zullen) over een maand weer groen zijn.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "zij",
+  "e": "The trees will be green again in a month.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn kinderen ___ (zullen) later vast ook in Rotterdam wonen.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "zij",
+  "e": "My children will probably live in Rotterdam too one day.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik denk dat de treinen morgen niet ___ (zullen) rijden.",
+  "v": "zullen",
+  "t": "toek",
+  "p": "zij",
+  "sub": 1,
+  "e": "I don't think the trains will run tomorrow.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ___ (gaan) vanavond pizza bakken.",
+  "v": "gaan",
+  "t": "toek",
+  "p": "ik",
+  "e": "I'm going to bake pizza tonight.",
+  "b": "A1"
+ },
+ {
+  "q": "Morgen ___ (gaan) ik eindelijk mijn kamer opruimen.",
+  "v": "gaan",
+  "t": "toek",
+  "p": "ik",
+  "e": "Tomorrow I'm finally going to tidy my room.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ___ (gaan) je straks iets heel leuks vertellen.",
+  "v": "gaan",
+  "t": "toek",
+  "p": "ik",
+  "e": "In a bit I'm going to tell you something really nice.",
+  "b": "A1"
+ },
+ {
+  "q": "Jij ___ (gaan) het vast heel goed doen.",
+  "v": "gaan",
+  "t": "toek",
+  "p": "jij",
+  "e": "You're going to do really well.",
+  "b": "A1"
+ },
+ {
+  "q": "Wat ___ (gaan) je dit weekend doen?",
+  "v": "gaan",
+  "t": "toek",
+  "p": "jij",
+  "inv": 1,
+  "e": "What are you going to do this weekend?",
+  "b": "A1"
+ },
+ {
+  "q": "Morgen ___ (gaan) jij lekker uitslapen.",
+  "v": "gaan",
+  "t": "toek",
+  "p": "jij",
+  "inv": 1,
+  "e": "Tomorrow you're going to have a nice lie in.",
+  "b": "A1"
+ },
+ {
+  "q": "Wat ___ (gaan) u met het geld doen?",
+  "v": "gaan",
+  "t": "toek",
+  "p": "u",
+  "e": "What are you going to do with the money?",
+  "b": "A1"
+ },
+ {
+  "q": "Het ___ (gaan) vanmiddag regenen.",
+  "v": "gaan",
+  "t": "toek",
+  "p": "hij",
+  "e": "It's going to rain this afternoon.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn zus ___ (gaan) volgend jaar in Berlijn studeren.",
+  "v": "gaan",
+  "t": "toek",
+  "p": "hij",
+  "e": "My sister is going to study in Berlin next year.",
+  "b": "A1"
+ },
+ {
+  "q": "Pas op, dat glas ___ (gaan) vallen!",
+  "v": "gaan",
+  "t": "toek",
+  "p": "hij",
+  "e": "Watch out, that glass is going to fall!",
+  "b": "A1"
+ },
+ {
+  "q": "Daan ___ (gaan) morgen zijn rijexamen doen.",
+  "v": "gaan",
+  "t": "toek",
+  "p": "hij",
+  "e": "Daan is going to take his driving test tomorrow.",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn broer ___ (gaan) volgende maand verhuizen.",
+  "v": "gaan",
+  "t": "toek",
+  "p": "hij",
+  "e": "My brother is going to move next month.",
+  "b": "A1"
+ },
+ {
+  "q": "We ___ (gaan) in de zomer een huis huren.",
+  "v": "gaan",
+  "t": "toek",
+  "p": "wij",
+  "e": "We're going to rent a house in the summer.",
+  "b": "A1"
+ },
+ {
+  "q": "Vanavond ___ (gaan) we samen koken.",
+  "v": "gaan",
+  "t": "toek",
+  "p": "wij",
+  "e": "Tonight we're going to cook together.",
+  "b": "A1"
+ },
+ {
+  "q": "Wij ___ (gaan) zaterdag de keuken schilderen.",
+  "v": "gaan",
+  "t": "toek",
+  "p": "wij",
+  "e": "On Saturday we're going to paint the kitchen.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (gaan) jullie dit jaar weer kamperen?",
+  "v": "gaan",
+  "t": "toek",
+  "p": "jullie",
+  "e": "Are you going camping again this year?",
+  "b": "A1"
+ },
+ {
+  "q": "Jullie ___ (gaan) dat echt leuk vinden.",
+  "v": "gaan",
+  "t": "toek",
+  "p": "jullie",
+  "e": "You're really going to enjoy that.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn ouders ___ (gaan) volgend jaar een boot kopen.",
+  "v": "gaan",
+  "t": "toek",
+  "p": "zij",
+  "e": "My parents are going to buy a boat next year.",
+  "b": "A1"
+ },
+ {
+  "q": "De kinderen ___ (gaan) straks in de tuin spelen.",
+  "v": "gaan",
+  "t": "toek",
+  "p": "zij",
+  "e": "The children are going to play in the garden later.",
+  "b": "A1"
+ },
+ {
+  "q": "Mijn buren ___ (gaan) hun huis verkopen.",
+  "v": "gaan",
+  "t": "toek",
+  "p": "zij",
+  "e": "My neighbours are going to sell their house.",
+  "b": "A1"
+ }
+]

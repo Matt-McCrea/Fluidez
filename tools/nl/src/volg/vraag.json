@@ -1,0 +1,953 @@
+[
+ {
+  "q": "___ graag koffie?",
+  "a": "Drink jij",
+  "o": [
+   "Drink jij",
+   "Jij drink"
+  ],
+  "e": "Do you like coffee?",
+  "w": "A yes or no question starts with the verb. With jij or je after it, the verb drops its t.",
+  "wn": "Vraag: eerst het werkwoord.",
+  "t": "vraag",
+  "b": "A1"
+ },
+ {
+  "q": "___ in Amsterdam?",
+  "a": "Woon jij",
+  "o": [
+   "Woon jij",
+   "Jij woon"
+  ],
+  "e": "Do you live in Amsterdam?",
+  "w": "A yes or no question starts with the verb. With jij or je after it, the verb drops its t.",
+  "wn": "Vraag: eerst het werkwoord.",
+  "t": "vraag",
+  "b": "A1"
+ },
+ {
+  "q": "Waar ___ precies?",
+  "a": "woon je",
+  "o": [
+   "woon je",
+   "je woon"
+  ],
+  "e": "Where exactly do you live?",
+  "w": "After a question word the verb comes next, then je. With je after it, no t.",
+  "wn": "Waar, werkwoord, je.",
+  "t": "vraag",
+  "b": "A1"
+ },
+ {
+  "q": "Hoe ___ eigenlijk?",
+  "a": "heet jij",
+  "o": [
+   "heet jij",
+   "jij heet"
+  ],
+  "e": "What's your name, actually?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A1"
+ },
+ {
+  "q": "Wat ___ vanavond?",
+  "a": "doe jij",
+  "o": [
+   "doe jij",
+   "jij doe"
+  ],
+  "e": "What are you doing tonight?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A1"
+ },
+ {
+  "q": "Waar ___ nu?",
+  "a": "woont je broer",
+  "o": [
+   "woont je broer",
+   "je broer woont"
+  ],
+  "e": "Where does your brother live now?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A1"
+ },
+ {
+  "q": "Hoe laat ___ open?",
+  "a": "gaat de winkel",
+  "o": [
+   "gaat de winkel",
+   "de winkel gaat"
+  ],
+  "e": "What time does the shop open?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A1"
+ },
+ {
+  "q": "___ morgen ook?",
+  "a": "Werk je",
+  "o": [
+   "Werk je",
+   "Je werk"
+  ],
+  "e": "Are you working tomorrow too?",
+  "w": "A yes or no question starts with the verb. With jij or je after it, the verb drops its t.",
+  "wn": "Vraag: eerst het werkwoord.",
+  "t": "vraag",
+  "b": "A1"
+ },
+ {
+  "q": "___ een broer?",
+  "a": "Heb jij",
+  "o": [
+   "Heb jij",
+   "Jij heb"
+  ],
+  "e": "Do you have a brother?",
+  "w": "A yes or no question starts with the verb. With jij or je after it, the verb drops its t.",
+  "wn": "Vraag: eerst het werkwoord.",
+  "t": "vraag",
+  "b": "A1"
+ },
+ {
+  "q": "___ erg moe?",
+  "a": "Ben je",
+  "o": [
+   "Ben je",
+   "Je ben"
+  ],
+  "e": "Are you very tired?",
+  "w": "A yes or no question starts with the verb. With jij or je after it, the verb drops its t.",
+  "wn": "Vraag: eerst het werkwoord.",
+  "t": "vraag",
+  "b": "A1"
+ },
+ {
+  "q": "Wanneer ___ jarig?",
+  "a": "ben jij",
+  "o": [
+   "ben jij",
+   "jij ben"
+  ],
+  "e": "When is your birthday?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A1"
+ },
+ {
+  "q": "Waarom ___ zo?",
+  "a": "lach je",
+  "o": [
+   "lach je",
+   "je lach"
+  ],
+  "e": "Why are you laughing like that?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A1"
+ },
+ {
+  "q": "___ al Nederlands?",
+  "a": "Spreek jij",
+  "o": [
+   "Spreek jij",
+   "Jij spreek"
+  ],
+  "e": "Do you already speak Dutch?",
+  "w": "A yes or no question starts with the verb. With jij or je after it, the verb drops its t.",
+  "wn": "Vraag: eerst het werkwoord.",
+  "t": "vraag",
+  "b": "A1"
+ },
+ {
+  "q": "Hoeveel kinderen ___?",
+  "a": "heeft u",
+  "o": [
+   "heeft u",
+   "u heeft"
+  ],
+  "e": "How many children do you have?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A1"
+ },
+ {
+  "q": "Waar ___, alstublieft?",
+  "a": "is de wc",
+  "o": [
+   "is de wc",
+   "de wc is"
+  ],
+  "e": "Where is the toilet, please?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A1"
+ },
+ {
+  "q": "Wat ___ daar?",
+  "a": "eet hij",
+  "o": [
+   "eet hij",
+   "hij eet"
+  ],
+  "e": "What is he eating there?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A1"
+ },
+ {
+  "q": "___ goed geslapen?",
+  "a": "Heb je",
+  "o": [
+   "Heb je",
+   "Je heb"
+  ],
+  "e": "Did you sleep well?",
+  "w": "A yes or no question starts with the verb. With jij or je after it, the verb drops its t.",
+  "wn": "Vraag: eerst het werkwoord.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "Wat ___ gisteren gedaan?",
+  "a": "heb jij",
+  "o": [
+   "heb jij",
+   "jij heb"
+  ],
+  "e": "What did you do yesterday?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "Waar ___ op vakantie?",
+  "a": "ga jij",
+  "o": [
+   "ga jij",
+   "jij ga"
+  ],
+  "e": "Where are you going on holiday?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "Hoe lang ___ al hier?",
+  "a": "woon jij",
+  "o": [
+   "woon jij",
+   "jij woon"
+  ],
+  "e": "How long have you lived here?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "___ al gegeten?",
+  "a": "Hebben jullie",
+  "o": [
+   "Hebben jullie",
+   "Jullie hebben"
+  ],
+  "e": "Have you already eaten?",
+  "w": "A yes or no question starts with the verb, then the subject.",
+  "wn": "Vraag: eerst het werkwoord.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "___ mee naar de markt?",
+  "a": "Kom jij",
+  "o": [
+   "Kom jij",
+   "Jij kom"
+  ],
+  "e": "Are you coming to the market?",
+  "w": "A yes or no question starts with the verb. With jij or je after it, the verb drops its t.",
+  "wn": "Vraag: eerst het werkwoord.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "Wanneer ___ naar Den Haag?",
+  "a": "vertrekt de trein",
+  "o": [
+   "vertrekt de trein",
+   "de trein vertrekt"
+  ],
+  "e": "When does the train leave for The Hague?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "Waarom ___ niet mee?",
+  "a": "ga je",
+  "o": [
+   "ga je",
+   "je ga"
+  ],
+  "e": "Why aren't you coming along?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "Met wie ___ samen?",
+  "a": "woon je",
+  "o": [
+   "woon je",
+   "je woon"
+  ],
+  "e": "Who do you live with?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "Welke trein ___ naar Zwolle?",
+  "a": "neem jij",
+  "o": [
+   "neem jij",
+   "jij neem"
+  ],
+  "e": "Which train are you taking to Zwolle?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "Hoe vaak ___ per week?",
+  "a": "sport jij",
+  "o": [
+   "sport jij",
+   "jij sport"
+  ],
+  "e": "How often do you exercise a week?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "Weet jij waar ___?",
+  "a": "het station is",
+  "o": [
+   "het station is",
+   "is het station"
+  ],
+  "e": "Do you know where the station is?",
+  "w": "A question inside a sentence uses clause order: the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "Weet u hoe laat ___?",
+  "a": "het is",
+  "o": [
+   "het is",
+   "is het"
+  ],
+  "e": "Do you know what time it is?",
+  "w": "A question inside a sentence uses clause order: the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "Mag ik vragen hoe ___?",
+  "a": "u heet",
+  "o": [
+   "u heet",
+   "heet u"
+  ],
+  "e": "May I ask what your name is?",
+  "w": "A question inside a sentence uses clause order: the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "Weet je of ___?",
+  "a": "de bus al weg is",
+  "o": [
+   "de bus al weg is",
+   "is de bus al weg"
+  ],
+  "e": "Do you know if the bus has already gone?",
+  "w": "A question inside a sentence uses clause order: the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "Wat ___ morgen doen?",
+  "a": "gaan we",
+  "o": [
+   "gaan we",
+   "we gaan"
+  ],
+  "e": "What are we going to do tomorrow?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "Hoeveel talen ___?",
+  "a": "spreek jij",
+  "o": [
+   "spreek jij",
+   "jij spreek"
+  ],
+  "e": "How many languages do you speak?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "Wie ___ daar gezien?",
+  "a": "heb je",
+  "o": [
+   "heb je",
+   "je heb"
+  ],
+  "e": "Who did you see there?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "Waarom ___ zo laat?",
+  "a": "ben je",
+  "o": [
+   "ben je",
+   "je ben"
+  ],
+  "e": "Why are you so late?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "Hoe ___ naar je werk?",
+  "a": "ga jij",
+  "o": [
+   "ga jij",
+   "jij ga"
+  ],
+  "e": "How do you get to work?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "___ me even helpen?",
+  "a": "Kun je",
+  "o": [
+   "Kun je",
+   "Je kun"
+  ],
+  "e": "Can you help me for a moment?",
+  "w": "A yes or no question starts with the verb. With jij or je after it, the verb drops its t.",
+  "wn": "Vraag: eerst het werkwoord.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "___ dit weekend vrij?",
+  "a": "Ben jij",
+  "o": [
+   "Ben jij",
+   "Jij ben"
+  ],
+  "e": "Are you free this weekend?",
+  "w": "A yes or no question starts with the verb. With jij or je after it, the verb drops its t.",
+  "wn": "Vraag: eerst het werkwoord.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "Wat ___ voor werk?",
+  "a": "doet je vader",
+  "o": [
+   "doet je vader",
+   "je vader doet"
+  ],
+  "e": "What does your father do for work?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "A2"
+ },
+ {
+  "q": "Ik vraag me af of ___.",
+  "a": "hij de waarheid vertelt",
+  "o": [
+   "hij de waarheid vertelt",
+   "vertelt hij de waarheid"
+  ],
+  "e": "I wonder whether he's telling the truth.",
+  "w": "A question inside a sentence uses clause order: the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "vraag",
+  "b": "B1"
+ },
+ {
+  "q": "Kun je me vertellen waar ___?",
+  "a": "de dichtstbijzijnde apotheek is",
+  "o": [
+   "de dichtstbijzijnde apotheek is",
+   "is de dichtstbijzijnde apotheek"
+  ],
+  "e": "Can you tell me where the nearest pharmacy is?",
+  "w": "A question inside a sentence uses clause order: the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "vraag",
+  "b": "B1"
+ },
+ {
+  "q": "Weet jij waarom ___?",
+  "a": "Lisa zo stil is",
+  "o": [
+   "Lisa zo stil is",
+   "is Lisa zo stil"
+  ],
+  "e": "Do you know why Lisa is so quiet?",
+  "w": "A question inside a sentence uses clause order: the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "vraag",
+  "b": "B1"
+ },
+ {
+  "q": "Waarom ___ niet gebeld?",
+  "a": "heb je me",
+  "o": [
+   "heb je me",
+   "je heb me",
+   "heb me je"
+  ],
+  "e": "Why didn't you call me?",
+  "w": "After waarom comes the verb, then je, then the object me.",
+  "wn": "Waarom, werkwoord, je, me.",
+  "t": "vraag",
+  "b": "B1"
+ },
+ {
+  "q": "Hoe lang ___ al Nederlands?",
+  "a": "leer jij",
+  "o": [
+   "leer jij",
+   "jij leer"
+  ],
+  "e": "How long have you been learning Dutch?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "B1"
+ },
+ {
+  "q": "Sinds wanneer ___ hier?",
+  "a": "werk jij",
+  "o": [
+   "werk jij",
+   "jij werk"
+  ],
+  "e": "Since when have you worked here?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "B1"
+ },
+ {
+  "q": "Wat ___ van het plan?",
+  "a": "vind jij",
+  "o": [
+   "vind jij",
+   "jij vind"
+  ],
+  "e": "What do you think of the plan?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "B1"
+ },
+ {
+  "q": "Waar ___ over?",
+  "a": "gaat het boek",
+  "o": [
+   "gaat het boek",
+   "het boek gaat"
+  ],
+  "e": "What is the book about?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "B1"
+ },
+ {
+  "q": "Waar ___ op?",
+  "a": "wacht jij",
+  "o": [
+   "wacht jij",
+   "jij wacht"
+  ],
+  "e": "What are you waiting for?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "B1"
+ },
+ {
+  "q": "Hoe ___ gegaan?",
+  "a": "is het examen",
+  "o": [
+   "is het examen",
+   "het examen is"
+  ],
+  "e": "How did the exam go?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "B1"
+ },
+ {
+  "q": "Ik wil graag weten wat ___.",
+  "a": "dit woord betekent",
+  "o": [
+   "dit woord betekent",
+   "betekent dit woord"
+  ],
+  "e": "I'd like to know what this word means.",
+  "w": "A question inside a sentence uses clause order: the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "vraag",
+  "b": "B1"
+ },
+ {
+  "q": "Heb je enig idee hoeveel ___?",
+  "a": "een huis hier kost",
+  "o": [
+   "een huis hier kost",
+   "kost een huis hier"
+  ],
+  "e": "Do you have any idea how much a house costs here?",
+  "w": "A question inside a sentence uses clause order: the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "vraag",
+  "b": "B1"
+ },
+ {
+  "q": "Weet u toevallig wanneer ___?",
+  "a": "de volgende trein vertrekt",
+  "o": [
+   "de volgende trein vertrekt",
+   "vertrekt de volgende trein"
+  ],
+  "e": "Do you happen to know when the next train leaves?",
+  "w": "A question inside a sentence uses clause order: the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "vraag",
+  "b": "B1"
+ },
+ {
+  "q": "Vertel eens hoe ___.",
+  "a": "je vakantie was",
+  "o": [
+   "je vakantie was",
+   "was je vakantie"
+  ],
+  "e": "Tell me how your holiday was.",
+  "w": "A question inside a sentence uses clause order: the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "vraag",
+  "b": "B1"
+ },
+ {
+  "q": "Welke film ___ het leukst?",
+  "a": "vond jij",
+  "o": [
+   "vond jij",
+   "jij vond"
+  ],
+  "e": "Which film did you like best?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "B1"
+ },
+ {
+  "q": "Hoeveel ___ al betaald?",
+  "a": "heb je",
+  "o": [
+   "heb je",
+   "je heb"
+  ],
+  "e": "How much have you paid so far?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "B1"
+ },
+ {
+  "q": "Van wie ___?",
+  "a": "is deze fiets",
+  "o": [
+   "is deze fiets",
+   "deze fiets is"
+  ],
+  "e": "Whose bike is this?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "B1"
+ },
+ {
+  "q": "Hoe ___ elkaar?",
+  "a": "kennen jullie",
+  "o": [
+   "kennen jullie",
+   "jullie kennen"
+  ],
+  "e": "How do you two know each other?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "B1"
+ },
+ {
+  "q": "Ik vroeg haar of ___.",
+  "a": "ze mee wilde",
+  "o": [
+   "ze mee wilde",
+   "ze wilde mee",
+   "wilde ze mee"
+  ],
+  "e": "I asked her if she wanted to come along.",
+  "w": "A question inside a sentence uses clause order: the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "vraag",
+  "b": "B2"
+ },
+ {
+  "q": "Het is de vraag of ___.",
+  "a": "het plan slaagt",
+  "o": [
+   "het plan slaagt",
+   "slaagt het plan"
+  ],
+  "e": "It remains to be seen whether the plan will work.",
+  "w": "A question inside a sentence uses clause order: the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "vraag",
+  "b": "B2"
+ },
+ {
+  "q": "Niemand weet hoe ___.",
+  "a": "het verhaal eindigt",
+  "o": [
+   "het verhaal eindigt",
+   "eindigt het verhaal"
+  ],
+  "e": "Nobody knows how the story ends.",
+  "w": "A question inside a sentence uses clause order: the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "vraag",
+  "b": "B2"
+ },
+ {
+  "q": "Waar ___ zo lang over gedaan?",
+  "a": "heb je",
+  "o": [
+   "heb je",
+   "je heb"
+  ],
+  "e": "What took you so long?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "B2"
+ },
+ {
+  "q": "Hoe kom je erbij dat ___?",
+  "a": "ik boos ben",
+  "o": [
+   "ik boos ben",
+   "ik ben boos"
+  ],
+  "e": "What makes you think I'm angry?",
+  "w": "After dat inside the question, the verb goes to the end.",
+  "wn": "Na dat: werkwoord achteraan.",
+  "t": "vraag",
+  "b": "B2"
+ },
+ {
+  "q": "Waarom ___ nooit iets?",
+  "a": "zeg jij",
+  "o": [
+   "zeg jij",
+   "jij zeg"
+  ],
+  "e": "Why do you never say anything?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "B2"
+ },
+ {
+  "q": "Wat ___ doen als je de loterij won?",
+  "a": "zou jij",
+  "o": [
+   "zou jij",
+   "jij zou"
+  ],
+  "e": "What would you do if you won the lottery?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "B2"
+ },
+ {
+  "q": "Hoe ___ dat zij gelijk had?",
+  "a": "wist jij",
+  "o": [
+   "wist jij",
+   "jij wist"
+  ],
+  "e": "How did you know she was right?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "B2"
+ },
+ {
+  "q": "Met welk doel ___ hierheen gekomen?",
+  "a": "bent u",
+  "o": [
+   "bent u",
+   "u bent"
+  ],
+  "e": "For what purpose have you come here?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "B2"
+ },
+ {
+  "q": "Weet jij nog hoe ___?",
+  "a": "onze oude buurman heette",
+  "o": [
+   "onze oude buurman heette",
+   "heette onze oude buurman"
+  ],
+  "e": "Do you still remember what our old neighbour was called?",
+  "w": "A question inside a sentence uses clause order: the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "vraag",
+  "b": "B2"
+ },
+ {
+  "q": "Ik ben benieuwd wat ___.",
+  "a": "jullie ervan vinden",
+  "o": [
+   "jullie ervan vinden",
+   "vinden jullie ervan"
+  ],
+  "e": "I'm curious what you think of it.",
+  "w": "A question inside a sentence uses clause order: the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "vraag",
+  "b": "B2"
+ },
+ {
+  "q": "Hoeveel jaar ___ al getrouwd?",
+  "a": "zijn jullie",
+  "o": [
+   "zijn jullie",
+   "jullie zijn"
+  ],
+  "e": "How many years have you been married?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "B2"
+ },
+ {
+  "q": "Waarover ___ gisteren?",
+  "a": "spraken jullie",
+  "o": [
+   "spraken jullie",
+   "jullie spraken"
+  ],
+  "e": "What were you talking about yesterday?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "B2"
+ },
+ {
+  "q": "Kunt u uitleggen waarom ___?",
+  "a": "de prijs zo hoog is",
+  "o": [
+   "de prijs zo hoog is",
+   "is de prijs zo hoog"
+  ],
+  "e": "Can you explain why the price is so high?",
+  "w": "A question inside a sentence uses clause order: the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "vraag",
+  "b": "B2"
+ },
+ {
+  "q": "Wie ___ uitgenodigd?",
+  "a": "hebben jullie",
+  "o": [
+   "hebben jullie",
+   "jullie hebben"
+  ],
+  "e": "Who did you invite?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "B2"
+ },
+ {
+  "q": "Tot hoe laat ___ open?",
+  "a": "is de bibliotheek",
+  "o": [
+   "is de bibliotheek",
+   "de bibliotheek is"
+  ],
+  "e": "Until what time is the library open?",
+  "w": "After a question word the verb comes next, then the subject.",
+  "wn": "Vraagwoord, werkwoord, onderwerp.",
+  "t": "vraag",
+  "b": "B2"
+ }
+]

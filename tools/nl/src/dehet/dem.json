@@ -1,0 +1,742 @@
+[
+ {
+  "q": "___ (this) boek is van mij.",
+  "n": "boek",
+  "t": "dem",
+  "e": "This book is mine.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (this) huis is te duur.",
+  "n": "huis",
+  "t": "dem",
+  "e": "This house is too expensive.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik woon al tien jaar in ___ (this) dorp.",
+  "n": "dorp",
+  "t": "dem",
+  "e": "I've lived in this village for ten years.",
+  "b": "A2"
+ },
+ {
+  "q": "Is ___ (this) glas schoon?",
+  "n": "glas",
+  "t": "dem",
+  "e": "Is this glass clean?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (this) restaurant heeft goede pizza.",
+  "n": "restaurant",
+  "t": "dem",
+  "e": "This restaurant has good pizza.",
+  "b": "A2"
+ },
+ {
+  "q": "Wat kost ___ (this) shirt?",
+  "n": "shirt",
+  "t": "dem",
+  "e": "How much is this shirt?",
+  "b": "B1"
+ },
+ {
+  "q": "___ (this) meisje zit bij mij in de klas.",
+  "n": "meisje",
+  "t": "dem",
+  "e": "This girl is in my class.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik vind ___ (this) lied prachtig.",
+  "n": "lied",
+  "t": "dem",
+  "e": "I think this song is beautiful.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (this) bed slaapt heerlijk.",
+  "n": "bed",
+  "t": "dem",
+  "e": "This bed is lovely to sleep in.",
+  "b": "A1"
+ },
+ {
+  "q": "Wat betekent ___ (this) woord?",
+  "n": "woord",
+  "t": "dem",
+  "e": "What does this word mean?",
+  "b": "A1"
+ },
+ {
+  "q": "We blijven twee nachten in ___ (this) hotel.",
+  "n": "hotel",
+  "t": "dem",
+  "e": "We're staying two nights in this hotel.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (this) jaar gaan we naar Italië.",
+  "n": "jaar",
+  "t": "dem",
+  "e": "This year we're going to Italy.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (this) weekend werk ik niet.",
+  "n": "weekend",
+  "t": "dem",
+  "e": "This weekend I'm not working.",
+  "b": "A2"
+ },
+ {
+  "q": "Is ___ (this) brood van vandaag?",
+  "n": "brood",
+  "t": "dem",
+  "e": "Is this bread from today?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (this) stoel is nog vrij.",
+  "n": "stoel",
+  "t": "dem",
+  "e": "This chair is still free.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik neem ___ (this) tafel bij het raam.",
+  "n": "tafel",
+  "t": "dem",
+  "e": "I'll take this table by the window.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (this) week ben ik erg druk.",
+  "n": "week",
+  "t": "dem",
+  "e": "This week I'm very busy.",
+  "b": "A1"
+ },
+ {
+  "q": "Is ___ (this) trein naar Rotterdam?",
+  "n": "trein",
+  "t": "dem",
+  "e": "Is this train going to Rotterdam?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (this) jas is te warm voor de zomer.",
+  "n": "jas",
+  "t": "dem",
+  "e": "This coat is too warm for summer.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik vind ___ (this) film saai.",
+  "n": "film",
+  "t": "dem",
+  "e": "I find this film boring.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (this) straat is altijd druk.",
+  "n": "straat",
+  "t": "dem",
+  "e": "This street is always busy.",
+  "b": "A1"
+ },
+ {
+  "q": "Mag ik ___ (this) foto houden?",
+  "n": "foto",
+  "t": "dem",
+  "e": "May I keep this photo?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (this) koffie is echt lekker.",
+  "n": "koffie",
+  "t": "dem",
+  "e": "This coffee is really nice.",
+  "b": "A1"
+ },
+ {
+  "q": "Waar gaat ___ (this) bus naartoe?",
+  "n": "bus",
+  "t": "dem",
+  "e": "Where does this bus go?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (this) vraag snap ik niet.",
+  "n": "vraag",
+  "t": "dem",
+  "e": "I don't understand this question.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ken ___ (this) stad heel goed.",
+  "n": "stad",
+  "t": "dem",
+  "e": "I know this city very well.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (this) les is makkelijk.",
+  "n": "les",
+  "t": "dem",
+  "e": "This lesson is easy.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (this) maand heb ik vakantie.",
+  "n": "maand",
+  "t": "dem",
+  "e": "This month I'm on holiday.",
+  "b": "A2"
+ },
+ {
+  "q": "Van wie is ___ (this) tas?",
+  "n": "tas",
+  "t": "dem",
+  "e": "Whose bag is this?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (this) kamer is voor jou.",
+  "n": "kamer",
+  "t": "dem",
+  "e": "This room is for you.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (that) huis aan de overkant is leeg.",
+  "n": "huis",
+  "t": "dem",
+  "e": "That house across the road is empty.",
+  "b": "A1"
+ },
+ {
+  "q": "Ken je ___ (that) meisje met de rode jas?",
+  "n": "meisje",
+  "t": "dem",
+  "e": "Do you know that girl in the red coat?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (that) boek heb ik al gelezen.",
+  "n": "boek",
+  "t": "dem",
+  "e": "I've already read that book.",
+  "b": "A1"
+ },
+ {
+  "q": "Wat is ___ (that) gebouw daar?",
+  "n": "gebouw",
+  "t": "dem",
+  "e": "What is that building over there?",
+  "b": "A2"
+ },
+ {
+  "q": "Ik weet ___ (that) adres niet meer.",
+  "n": "adres",
+  "t": "dem",
+  "e": "I don't remember that address any more.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (that) kind is mijn neefje.",
+  "n": "kind",
+  "t": "dem",
+  "e": "That child is my little nephew.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (that) schilderij hangt hier al jaren.",
+  "n": "schilderij",
+  "t": "dem",
+  "e": "That painting has hung here for years.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik vond ___ (that) feest erg leuk.",
+  "n": "feest",
+  "t": "dem",
+  "e": "I really enjoyed that party.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (that) restaurant is te duur voor ons.",
+  "n": "restaurant",
+  "t": "dem",
+  "e": "That restaurant is too expensive for us.",
+  "b": "A2"
+ },
+ {
+  "q": "Heb je ___ (that) bericht van Anna gezien?",
+  "n": "bericht",
+  "t": "dem",
+  "e": "Have you seen that message from Anna?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (that) jaar woonden we nog in Delft.",
+  "n": "jaar",
+  "t": "dem",
+  "e": "That year we still lived in Delft.",
+  "b": "A2"
+ },
+ {
+  "q": "Waar ligt ___ (that) eiland precies?",
+  "n": "eiland",
+  "t": "dem",
+  "e": "Where exactly is that island?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (that) verhaal geloof ik niet.",
+  "n": "verhaal",
+  "t": "dem",
+  "e": "I don't believe that story.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (that) water is niet schoon.",
+  "n": "water",
+  "t": "dem",
+  "e": "That water isn't clean.",
+  "b": "A1"
+ },
+ {
+  "q": "Hoe heet ___ (that) dorp ook alweer?",
+  "n": "dorp",
+  "t": "dem",
+  "e": "What's that village called again?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (that) man daar is mijn buurman.",
+  "n": "man",
+  "t": "dem",
+  "e": "That man there is my neighbour.",
+  "b": "A1"
+ },
+ {
+  "q": "Wie is ___ (that) vrouw naast Peter?",
+  "n": "vrouw",
+  "t": "dem",
+  "e": "Who is that woman next to Peter?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (that) winkel is op zondag open.",
+  "n": "winkel",
+  "t": "dem",
+  "e": "That shop is open on Sunday.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik wil ___ (that) auto niet kopen.",
+  "n": "auto",
+  "t": "dem",
+  "e": "I don't want to buy that car.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (that) dag vergeet ik nooit.",
+  "n": "dag",
+  "t": "dem",
+  "e": "I'll never forget that day.",
+  "b": "A1"
+ },
+ {
+  "q": "Hoe heet ___ (that) straat?",
+  "n": "straat",
+  "t": "dem",
+  "e": "What's that street called?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (that) jurk staat je goed.",
+  "n": "jurk",
+  "t": "dem",
+  "e": "That dress suits you.",
+  "b": "A2"
+ },
+ {
+  "q": "Is ___ (that) kat van jullie?",
+  "n": "kat",
+  "t": "dem",
+  "e": "Is that cat yours?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (that) leraar is heel streng.",
+  "n": "leraar",
+  "t": "dem",
+  "e": "That teacher is very strict.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik vind ___ (that) kleur te fel.",
+  "n": "kleur",
+  "t": "dem",
+  "e": "I find that colour too bright.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (that) zomer was heel warm.",
+  "n": "zomer",
+  "t": "dem",
+  "e": "That summer was very hot.",
+  "b": "A2"
+ },
+ {
+  "q": "Wat zit er in ___ (that) fles?",
+  "n": "fles",
+  "t": "dem",
+  "e": "What's in that bottle?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (that) brief is voor je moeder.",
+  "n": "brief",
+  "t": "dem",
+  "e": "That letter is for your mother.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (these) boeken zijn voor school.",
+  "n": "boek",
+  "pl": true,
+  "t": "dem",
+  "e": "These books are for school.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (these) schoenen zijn te klein.",
+  "n": "schoen",
+  "pl": true,
+  "t": "dem",
+  "e": "These shoes are too small.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik vind ___ (these) bloemen mooi.",
+  "n": "bloem",
+  "pl": true,
+  "t": "dem",
+  "e": "I think these flowers are pretty.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (these) huizen zijn heel oud.",
+  "n": "huis",
+  "pl": true,
+  "t": "dem",
+  "e": "These houses are very old.",
+  "b": "A1"
+ },
+ {
+  "q": "Zijn ___ (these) kinderen van jou?",
+  "n": "kind",
+  "pl": true,
+  "t": "dem",
+  "e": "Are these children yours?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (these) foto's zijn van onze vakantie.",
+  "n": "foto",
+  "pl": true,
+  "t": "dem",
+  "e": "These photos are from our holiday.",
+  "b": "A1"
+ },
+ {
+  "q": "Wat kosten ___ (these) appels?",
+  "n": "appel",
+  "pl": true,
+  "t": "dem",
+  "e": "How much are these apples?",
+  "b": "B1"
+ },
+ {
+  "q": "___ (these) vragen zijn moeilijk.",
+  "n": "vraag",
+  "pl": true,
+  "t": "dem",
+  "e": "These questions are difficult.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik heb ___ (these) sleutels gevonden.",
+  "n": "sleutel",
+  "pl": true,
+  "t": "dem",
+  "e": "I found these keys.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (these) stoelen zijn nieuw.",
+  "n": "stoel",
+  "pl": true,
+  "t": "dem",
+  "e": "These chairs are new.",
+  "b": "A2"
+ },
+ {
+  "q": "Wie heeft ___ (these) koekjes gebakken?",
+  "n": "koekje",
+  "pl": true,
+  "t": "dem",
+  "e": "Who baked these biscuits?",
+  "b": "B1"
+ },
+ {
+  "q": "___ (these) woorden ken ik al.",
+  "n": "woord",
+  "pl": true,
+  "t": "dem",
+  "e": "I already know these words.",
+  "b": "A1"
+ },
+ {
+  "q": "Mogen ___ (these) glazen in de vaatwasser?",
+  "n": "glas",
+  "pl": true,
+  "t": "dem",
+  "e": "Can these glasses go in the dishwasher?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (these) dagen ben ik vaak moe.",
+  "n": "dag",
+  "pl": true,
+  "t": "dem",
+  "e": "These days I'm often tired.",
+  "b": "A1"
+ },
+ {
+  "q": "In ___ (these) straten wonen veel studenten.",
+  "n": "straat",
+  "pl": true,
+  "t": "dem",
+  "e": "Lots of students live in these streets.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (these) broodjes zijn nog warm.",
+  "n": "broodje",
+  "pl": true,
+  "t": "dem",
+  "e": "These rolls are still warm.",
+  "b": "B1"
+ },
+ {
+  "q": "Ik draag ___ (these) sokken nooit.",
+  "n": "sok",
+  "pl": true,
+  "t": "dem",
+  "e": "I never wear these socks.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (these) kaartjes zijn voor vanavond.",
+  "n": "kaartje",
+  "pl": true,
+  "t": "dem",
+  "e": "These tickets are for tonight.",
+  "b": "A2"
+ },
+ {
+  "q": "Zijn ___ (these) jassen in de uitverkoop?",
+  "n": "jas",
+  "pl": true,
+  "t": "dem",
+  "e": "Are these coats in the sale?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (these) kopjes zijn van mijn oma.",
+  "n": "kopje",
+  "pl": true,
+  "t": "dem",
+  "e": "These cups are my grandma's.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (those) mensen wachten op de bus.",
+  "n": "mens",
+  "pl": true,
+  "t": "dem",
+  "e": "Those people are waiting for the bus.",
+  "b": "A1"
+ },
+ {
+  "q": "Wie zijn ___ (those) jongens?",
+  "n": "jongen",
+  "pl": true,
+  "t": "dem",
+  "e": "Who are those boys?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (those) huizen aan het water zijn duur.",
+  "n": "huis",
+  "pl": true,
+  "t": "dem",
+  "e": "Those houses by the water are expensive.",
+  "b": "A1"
+ },
+ {
+  "q": "Ik ken ___ (those) meisjes van school.",
+  "n": "meisje",
+  "pl": true,
+  "t": "dem",
+  "e": "I know those girls from school.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (those) bomen zijn heel hoog.",
+  "n": "boom",
+  "pl": true,
+  "t": "dem",
+  "e": "Those trees are very tall.",
+  "b": "A2"
+ },
+ {
+  "q": "Waren ___ (those) films goed?",
+  "n": "film",
+  "pl": true,
+  "t": "dem",
+  "e": "Were those films good?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (those) tijden zijn voorbij.",
+  "n": "tijd",
+  "pl": true,
+  "t": "dem",
+  "e": "Those times are over.",
+  "b": "A2"
+ },
+ {
+  "q": "Van wie zijn ___ (those) tassen?",
+  "n": "tas",
+  "pl": true,
+  "t": "dem",
+  "e": "Whose bags are those?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (those) schoenen staan je goed.",
+  "n": "schoen",
+  "pl": true,
+  "t": "dem",
+  "e": "Those shoes look good on you.",
+  "b": "A2"
+ },
+ {
+  "q": "Wat doen ___ (those) kinderen daar?",
+  "n": "kind",
+  "pl": true,
+  "t": "dem",
+  "e": "What are those children doing there?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (those) auto's staan verkeerd geparkeerd.",
+  "n": "auto",
+  "pl": true,
+  "t": "dem",
+  "e": "Those cars are parked in the wrong place.",
+  "b": "A2"
+ },
+ {
+  "q": "Ik heb ___ (those) brieven nooit gelezen.",
+  "n": "brief",
+  "pl": true,
+  "t": "dem",
+  "e": "I never read those letters.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (those) vogels vliegen naar het zuiden.",
+  "n": "vogel",
+  "pl": true,
+  "t": "dem",
+  "e": "Those birds are flying south.",
+  "b": "A2"
+ },
+ {
+  "q": "Hoe oud zijn ___ (those) gebouwen?",
+  "n": "gebouw",
+  "pl": true,
+  "t": "dem",
+  "e": "How old are those buildings?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (those) eieren zijn niet meer goed.",
+  "n": "ei",
+  "pl": true,
+  "t": "dem",
+  "e": "Those eggs aren't good any more.",
+  "b": "A2"
+ },
+ {
+  "q": "Wie heeft ___ (those) bloemen gestuurd?",
+  "n": "bloem",
+  "pl": true,
+  "t": "dem",
+  "e": "Who sent those flowers?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (those) dorpen liggen ver van de stad.",
+  "n": "dorp",
+  "pl": true,
+  "t": "dem",
+  "e": "Those villages are far from the city.",
+  "b": "A2"
+ },
+ {
+  "q": "Mag ik ___ (those) jurken even passen?",
+  "n": "jurk",
+  "pl": true,
+  "t": "dem",
+  "e": "May I try on those dresses?",
+  "b": "A2"
+ },
+ {
+  "q": "___ (those) lessen waren heel nuttig.",
+  "n": "les",
+  "pl": true,
+  "t": "dem",
+  "e": "Those lessons were very useful.",
+  "b": "A2"
+ },
+ {
+  "q": "Zijn ___ (those) steden mooi?",
+  "n": "stad",
+  "pl": true,
+  "t": "dem",
+  "e": "Are those cities beautiful?",
+  "b": "A1"
+ },
+ {
+  "q": "___ (that) kasteel is heel oud.",
+  "n": "kasteel",
+  "t": "dem",
+  "e": "That castle is very old.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (this) museum is gratis op zondag.",
+  "n": "museum",
+  "t": "dem",
+  "e": "This museum is free on Sundays.",
+  "b": "B1"
+ }
+]

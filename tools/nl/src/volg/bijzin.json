@@ -1,0 +1,960 @@
+[
+ {
+  "q": "Ik weet dat ___.",
+  "a": "hij morgen komt",
+  "o": [
+   "hij morgen komt",
+   "hij komt morgen",
+   "komt hij morgen"
+  ],
+  "e": "I know he's coming tomorrow.",
+  "w": "After dat the verb goes to the end of the clause.",
+  "wn": "Na dat: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A1"
+ },
+ {
+  "q": "Ik denk dat ___.",
+  "a": "ze ziek is",
+  "o": [
+   "ze ziek is",
+   "ze is ziek"
+  ],
+  "e": "I think she's ill.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A1"
+ },
+ {
+  "q": "Hij zegt dat ___.",
+  "a": "het eten lekker is",
+  "o": [
+   "het eten lekker is",
+   "het eten is lekker"
+  ],
+  "e": "He says the food is tasty.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A1"
+ },
+ {
+  "q": "Ik hoop dat ___.",
+  "a": "je snel beter wordt",
+  "o": [
+   "je snel beter wordt",
+   "je wordt snel beter"
+  ],
+  "e": "I hope you get better soon.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A1"
+ },
+ {
+  "q": "Ze zegt dat ___.",
+  "a": "ze honger heeft",
+  "o": [
+   "ze honger heeft",
+   "ze heeft honger"
+  ],
+  "e": "She says she's hungry.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A1"
+ },
+ {
+  "q": "Ik blijf thuis omdat ___.",
+  "a": "ik moe ben",
+  "o": [
+   "ik moe ben",
+   "ik ben moe"
+  ],
+  "e": "I'm staying home because I'm tired.",
+  "w": "After omdat the verb goes last: omdat ik moe ben.",
+  "wn": "Na omdat: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "We gaan naar het strand als ___.",
+  "a": "het mooi weer is",
+  "o": [
+   "het mooi weer is",
+   "het is mooi weer"
+  ],
+  "e": "We'll go to the beach if the weather's nice.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Weet je of ___?",
+  "a": "de winkel open is",
+  "o": [
+   "de winkel open is",
+   "de winkel is open",
+   "is de winkel open"
+  ],
+  "e": "Do you know if the shop is open?",
+  "w": "After of or a question word inside a sentence, the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Ik bel je als ___.",
+  "a": "ik thuis ben",
+  "o": [
+   "ik thuis ben",
+   "ik ben thuis"
+  ],
+  "e": "I'll call you when I'm home.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Ze is blij omdat ___.",
+  "a": "ze een nieuwe baan heeft",
+  "o": [
+   "ze een nieuwe baan heeft",
+   "ze heeft een nieuwe baan"
+  ],
+  "e": "She's happy because she has a new job.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn moeder zegt dat ___.",
+  "a": "het morgen regent",
+  "o": [
+   "het morgen regent",
+   "het regent morgen"
+  ],
+  "e": "My mother says it'll rain tomorrow.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Ik weet niet of ___.",
+  "a": "hij thuis is",
+  "o": [
+   "hij thuis is",
+   "hij is thuis",
+   "is hij thuis"
+  ],
+  "e": "I don't know if he's at home.",
+  "w": "After of or a question word inside a sentence, the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "De man die ___, is mijn buurman.",
+  "a": "daar staat",
+  "o": [
+   "daar staat",
+   "staat daar"
+  ],
+  "e": "The man standing there is my neighbour.",
+  "w": "In a relative clause with die, dat or waar, the verb goes to the end.",
+  "wn": "Betrekkelijke bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Het boek dat ___, is spannend.",
+  "a": "ik nu lees",
+  "o": [
+   "ik nu lees",
+   "ik lees nu"
+  ],
+  "e": "The book I'm reading now is exciting.",
+  "w": "In a relative clause with die, dat or waar, the verb goes to the end.",
+  "wn": "Betrekkelijke bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Ik neem een jas mee omdat ___.",
+  "a": "het koud is",
+  "o": [
+   "het koud is",
+   "het is koud"
+  ],
+  "e": "I'm taking a coat because it's cold.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Ik vind het leuk dat ___.",
+  "a": "jullie er zijn",
+  "o": [
+   "jullie er zijn",
+   "jullie zijn er"
+  ],
+  "e": "It's nice that you're here.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Wij denken dat ___.",
+  "a": "de trein vertraging heeft",
+  "o": [
+   "de trein vertraging heeft",
+   "de trein heeft vertraging"
+  ],
+  "e": "We think the train is delayed.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Zij vraagt of ___.",
+  "a": "ik koffie wil",
+  "o": [
+   "ik koffie wil",
+   "ik wil koffie",
+   "wil ik koffie"
+  ],
+  "e": "She asks if I want coffee.",
+  "w": "After of or a question word inside a sentence, the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Hij werkt thuis wanneer ___.",
+  "a": "zijn dochter ziek is",
+  "o": [
+   "zijn dochter ziek is",
+   "zijn dochter is ziek"
+  ],
+  "e": "He works from home when his daughter is ill.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Ik weet zeker dat ___.",
+  "a": "ik de sleutel heb",
+  "o": [
+   "ik de sleutel heb",
+   "ik heb de sleutel"
+  ],
+  "e": "I'm sure I have the key.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Het is jammer dat ___.",
+  "a": "het feest al voorbij is",
+  "o": [
+   "het feest al voorbij is",
+   "het feest is al voorbij"
+  ],
+  "e": "It's a pity the party is already over.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ben blij dat ___.",
+  "a": "het weekend is",
+  "o": [
+   "het weekend is",
+   "het is weekend"
+  ],
+  "e": "I'm glad it's the weekend.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Ze lacht omdat ___.",
+  "a": "de hond gek doet",
+  "o": [
+   "de hond gek doet",
+   "de hond doet gek"
+  ],
+  "e": "She's laughing because the dog is acting silly.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Mijn vriend zegt dat ___.",
+  "a": "hij geen tijd heeft",
+  "o": [
+   "hij geen tijd heeft",
+   "hij heeft geen tijd"
+  ],
+  "e": "My friend says he has no time.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Ik eet niet omdat ___.",
+  "a": "ik geen honger heb",
+  "o": [
+   "ik geen honger heb",
+   "ik heb geen honger"
+  ],
+  "e": "I'm not eating because I'm not hungry.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Weet jij of ___?",
+  "a": "Anna vandaag werkt",
+  "o": [
+   "Anna vandaag werkt",
+   "Anna werkt vandaag",
+   "werkt Anna vandaag"
+  ],
+  "e": "Do you know if Anna is working today?",
+  "w": "After of or a question word inside a sentence, the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Ik blijf binnen als ___.",
+  "a": "het hard regent",
+  "o": [
+   "het hard regent",
+   "het regent hard"
+  ],
+  "e": "I stay indoors when it's raining hard.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "De jas die ___, is mooi.",
+  "a": "jij nu draagt",
+  "o": [
+   "jij nu draagt",
+   "jij draagt nu"
+  ],
+  "e": "The coat you're wearing now is nice.",
+  "w": "In a relative clause with die, dat or waar, the verb goes to the end.",
+  "wn": "Betrekkelijke bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Ik weet niet waar ___.",
+  "a": "mijn telefoon is",
+  "o": [
+   "mijn telefoon is",
+   "is mijn telefoon"
+  ],
+  "e": "I don't know where my phone is.",
+  "w": "After of or a question word inside a sentence, the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Ik vraag me af hoe laat ___.",
+  "a": "de film begint",
+  "o": [
+   "de film begint",
+   "begint de film"
+  ],
+  "e": "I wonder what time the film starts.",
+  "w": "After of or a question word inside a sentence, the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Hij is moe omdat ___.",
+  "a": "hij slecht slaapt",
+  "o": [
+   "hij slecht slaapt",
+   "hij slaapt slecht"
+  ],
+  "e": "He's tired because he sleeps badly.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "We hopen dat ___.",
+  "a": "het morgen droog blijft",
+  "o": [
+   "het morgen droog blijft",
+   "het blijft morgen droog"
+  ],
+  "e": "We hope it stays dry tomorrow.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Denk je dat ___?",
+  "a": "ze ons huis mooi vindt",
+  "o": [
+   "ze ons huis mooi vindt",
+   "ze vindt ons huis mooi"
+  ],
+  "e": "Do you think she likes our house?",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Ik wacht tot ___.",
+  "a": "jij klaar bent",
+  "o": [
+   "jij klaar bent",
+   "jij bent klaar"
+  ],
+  "e": "I'll wait until you're ready.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ga niet mee, hoewel ___.",
+  "a": "ik wel tijd heb",
+  "o": [
+   "ik wel tijd heb",
+   "ik heb wel tijd"
+  ],
+  "e": "I'm not coming along, although I do have time.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Hij las de krant terwijl ___.",
+  "a": "zijn vrouw de afwas deed",
+  "o": [
+   "zijn vrouw de afwas deed",
+   "zijn vrouw deed de afwas"
+  ],
+  "e": "He read the paper while his wife did the dishes.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Ik was nog klein toen ___.",
+  "a": "mijn opa ons een hond gaf",
+  "o": [
+   "mijn opa ons een hond gaf",
+   "mijn opa gaf ons een hond"
+  ],
+  "e": "I was still small when my grandpa gave us a dog.",
+  "w": "After toen meaning when, the verb goes to the end of the clause.",
+  "wn": "Na toen (bijzin): werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Ze leert Nederlands zodat ___.",
+  "a": "ze haar buren beter begrijpt",
+  "o": [
+   "ze haar buren beter begrijpt",
+   "ze begrijpt haar buren beter"
+  ],
+  "e": "She's learning Dutch so she understands her neighbours better.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Bel me voordat ___.",
+  "a": "je de trein neemt",
+  "o": [
+   "je de trein neemt",
+   "je neemt de trein"
+  ],
+  "e": "Call me before you take the train.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Nadat ___, gingen we slapen.",
+  "a": "de gasten weg waren",
+  "o": [
+   "de gasten weg waren",
+   "de gasten waren weg"
+  ],
+  "e": "After the guests had gone, we went to bed.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Het huis waar ___, is oud.",
+  "a": "mijn ouders wonen",
+  "o": [
+   "mijn ouders wonen",
+   "wonen mijn ouders"
+  ],
+  "e": "The house where my parents live is old.",
+  "w": "In a relative clause with die, dat or waar, the verb goes to the end.",
+  "wn": "Betrekkelijke bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Ik snap niet waarom ___.",
+  "a": "hij zo boos is",
+  "o": [
+   "hij zo boos is",
+   "hij is zo boos",
+   "is hij zo boos"
+  ],
+  "e": "I don't get why he's so angry.",
+  "w": "After of or a question word inside a sentence, the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Weet jij hoeveel ___?",
+  "a": "dit kaartje kost",
+  "o": [
+   "dit kaartje kost",
+   "kost dit kaartje"
+  ],
+  "e": "Do you know how much this ticket costs?",
+  "w": "After of or a question word inside a sentence, the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Ze beweert dat ___.",
+  "a": "ze de brief nooit kreeg",
+  "o": [
+   "ze de brief nooit kreeg",
+   "ze kreeg de brief nooit"
+  ],
+  "e": "She claims she never got the letter.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "De vrouw met wie ___, is arts.",
+  "a": "ik net sprak",
+  "o": [
+   "ik net sprak",
+   "ik sprak net"
+  ],
+  "e": "The woman I just spoke to is a doctor.",
+  "w": "In a relative clause with die, dat or waar, the verb goes to the end.",
+  "wn": "Betrekkelijke bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Hij doet alsof ___.",
+  "a": "hij niets weet",
+  "o": [
+   "hij niets weet",
+   "hij weet niets"
+  ],
+  "e": "He acts as if he knows nothing.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Ik ben benieuwd of ___.",
+  "a": "ze de baan krijgt",
+  "o": [
+   "ze de baan krijgt",
+   "ze krijgt de baan",
+   "krijgt ze de baan"
+  ],
+  "e": "I wonder whether she'll get the job.",
+  "w": "After of or a question word inside a sentence, the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Ik heb geen idee wie ___.",
+  "a": "die man is",
+  "o": [
+   "die man is",
+   "is die man"
+  ],
+  "e": "I have no idea who that man is.",
+  "w": "After of or a question word inside a sentence, the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Sinds ___, slaap ik beter.",
+  "a": "ik minder koffie drink",
+  "o": [
+   "ik minder koffie drink",
+   "ik drink minder koffie"
+  ],
+  "e": "Since I started drinking less coffee, I sleep better.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Hoewel ___, ging hij toch werken.",
+  "a": "hij koorts had",
+  "o": [
+   "hij koorts had",
+   "hij had koorts"
+  ],
+  "e": "Although he had a fever, he still went to work.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "De kaas die ___, komt uit Gouda.",
+  "a": "je hier koopt",
+  "o": [
+   "je hier koopt",
+   "je koopt hier"
+  ],
+  "e": "The cheese you buy here comes from Gouda.",
+  "w": "In a relative clause with die, dat or waar, the verb goes to the end.",
+  "wn": "Betrekkelijke bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Ik merk dat ___.",
+  "a": "mijn Nederlands steeds beter wordt",
+  "o": [
+   "mijn Nederlands steeds beter wordt",
+   "mijn Nederlands wordt steeds beter"
+  ],
+  "e": "I notice my Dutch is getting better and better.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Ze vertelde dat ___.",
+  "a": "haar zoon een eigen bedrijf heeft",
+  "o": [
+   "haar zoon een eigen bedrijf heeft",
+   "haar zoon heeft een eigen bedrijf"
+  ],
+  "e": "She said her son has his own business.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Doe het licht uit als ___.",
+  "a": "je de kamer verlaat",
+  "o": [
+   "je de kamer verlaat",
+   "je verlaat de kamer"
+  ],
+  "e": "Turn the light off when you leave the room.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Het is belangrijk dat ___.",
+  "a": "iedereen op tijd is",
+  "o": [
+   "iedereen op tijd is",
+   "iedereen is op tijd"
+  ],
+  "e": "It's important that everyone is on time.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Ik vroeg hem waar ___.",
+  "a": "het station was",
+  "o": [
+   "het station was",
+   "was het station"
+  ],
+  "e": "I asked him where the station was.",
+  "w": "After of or a question word inside a sentence, the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Mijn baas wil weten wanneer ___.",
+  "a": "het project klaar is",
+  "o": [
+   "het project klaar is",
+   "is het project klaar"
+  ],
+  "e": "My boss wants to know when the project will be finished.",
+  "w": "After of or a question word inside a sentence, the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B1"
+ },
+ {
+  "q": "Het feit dat ___, verbaast me.",
+  "a": "hij nooit belt",
+  "o": [
+   "hij nooit belt",
+   "hij belt nooit"
+  ],
+  "e": "The fact that he never calls surprises me.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B2"
+ },
+ {
+  "q": "Tenzij ___, gaan we morgen fietsen.",
+  "a": "het heel hard waait",
+  "o": [
+   "het heel hard waait",
+   "het waait heel hard"
+  ],
+  "e": "Unless it's very windy, we'll go cycling tomorrow.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B2"
+ },
+ {
+  "q": "Ik zie haar zelden, aangezien ___.",
+  "a": "ze ver weg woont",
+  "o": [
+   "ze ver weg woont",
+   "ze woont ver weg"
+  ],
+  "e": "I rarely see her, since she lives far away.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B2"
+ },
+ {
+  "q": "Naarmate ___, wordt het drukker.",
+  "a": "de dag vordert",
+  "o": [
+   "de dag vordert",
+   "vordert de dag"
+  ],
+  "e": "As the day goes on, it gets busier.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B2"
+ },
+ {
+  "q": "Ze deed alsof ___.",
+  "a": "ze me niet zag",
+  "o": [
+   "ze me niet zag",
+   "ze zag me niet"
+  ],
+  "e": "She pretended not to see me.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B2"
+ },
+ {
+  "q": "Ik betwijfel of ___.",
+  "a": "die oplossing werkt",
+  "o": [
+   "die oplossing werkt",
+   "werkt die oplossing"
+  ],
+  "e": "I doubt whether that solution works.",
+  "w": "After of or a question word inside a sentence, the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B2"
+ },
+ {
+  "q": "Mits ___, mag je mee.",
+  "a": "je je goed gedraagt",
+  "o": [
+   "je je goed gedraagt",
+   "je gedraagt je goed"
+  ],
+  "e": "You can come, provided you behave.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B2"
+ },
+ {
+  "q": "Het risico bestaat dat ___.",
+  "a": "de prijzen verder stijgen",
+  "o": [
+   "de prijzen verder stijgen",
+   "de prijzen stijgen verder"
+  ],
+  "e": "There's a risk that prices will rise further.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B2"
+ },
+ {
+  "q": "Hij vertrok zonder dat ___.",
+  "a": "iemand het merkte",
+  "o": [
+   "iemand het merkte",
+   "iemand merkte het"
+  ],
+  "e": "He left without anyone noticing.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B2"
+ },
+ {
+  "q": "Of ___, weet ik niet.",
+  "a": "hij gelijk heeft",
+  "o": [
+   "hij gelijk heeft",
+   "hij heeft gelijk",
+   "heeft hij gelijk"
+  ],
+  "e": "Whether he's right, I don't know.",
+  "w": "After of or a question word inside a sentence, the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B2"
+ },
+ {
+  "q": "Wat ___, is nog onduidelijk.",
+  "a": "er precies gebeurde",
+  "o": [
+   "er precies gebeurde",
+   "er gebeurde precies",
+   "gebeurde er precies"
+  ],
+  "e": "What exactly happened is still unclear.",
+  "w": "After of or a question word inside a sentence, the verb goes to the end.",
+  "wn": "Indirecte vraag: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B2"
+ },
+ {
+  "q": "De reden waarom ___, is simpel.",
+  "a": "ik hier stop",
+  "o": [
+   "ik hier stop",
+   "ik stop hier"
+  ],
+  "e": "The reason I'm stopping here is simple.",
+  "w": "In a relative clause with die, dat or waar, the verb goes to the end.",
+  "wn": "Betrekkelijke bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B2"
+ },
+ {
+  "q": "Ik ken niemand die ___.",
+  "a": "zo goed kookt",
+  "o": [
+   "zo goed kookt",
+   "kookt zo goed"
+  ],
+  "e": "I don't know anyone who cooks so well.",
+  "w": "In a relative clause with die, dat or waar, the verb goes to the end.",
+  "wn": "Betrekkelijke bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B2"
+ },
+ {
+  "q": "Doordat ___, misten we de trein.",
+  "a": "de bus te laat was",
+  "o": [
+   "de bus te laat was",
+   "de bus was te laat"
+  ],
+  "e": "Because the bus was late, we missed the train.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B2"
+ },
+ {
+  "q": "Zolang ___, maak ik me geen zorgen.",
+  "a": "jij gezond bent",
+  "o": [
+   "jij gezond bent",
+   "jij bent gezond"
+  ],
+  "e": "As long as you're healthy, I don't worry.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B2"
+ },
+ {
+  "q": "Ik ben het ermee eens, behalve dat ___.",
+  "a": "het te duur is",
+  "o": [
+   "het te duur is",
+   "het is te duur"
+  ],
+  "e": "I agree, except that it's too expensive.",
+  "w": "After a word like dat, omdat or als, the verb goes to the end of the clause.",
+  "wn": "Bijzin: werkwoord achteraan.",
+  "t": "bijzin",
+  "b": "B2"
+ }
+]

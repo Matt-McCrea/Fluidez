@@ -1,0 +1,992 @@
+[
+ {
+  "q": "Morgen ___ naar Utrecht.",
+  "a": "ga ik",
+  "o": [
+   "ga ik",
+   "ik ga"
+  ],
+  "e": "Tomorrow I'm going to Utrecht.",
+  "w": "Morgen comes first, so the verb comes second, before ik.",
+  "wn": "Morgen vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A1"
+ },
+ {
+  "q": "Vandaag ___ thuis.",
+  "a": "werk ik",
+  "o": [
+   "werk ik",
+   "ik werk"
+  ],
+  "e": "Today I'm working at home.",
+  "w": "Vandaag takes first place, so werk comes second, then ik.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A1"
+ },
+ {
+  "q": "Nu ___ koffie.",
+  "a": "drinken we",
+  "o": [
+   "drinken we",
+   "we drinken"
+  ],
+  "e": "Now we're drinking coffee.",
+  "w": "Nu starts the sentence, so the verb jumps before we.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A1"
+ },
+ {
+  "q": "'s Avonds ___ televisie.",
+  "a": "kijkt mijn vader",
+  "o": [
+   "kijkt mijn vader",
+   "mijn vader kijkt"
+  ],
+  "e": "In the evening my father watches television.",
+  "w": "'s Avonds is first, so kijkt comes before mijn vader.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A1"
+ },
+ {
+  "q": "Hier ___ al tien jaar.",
+  "a": "woont mijn zus",
+  "o": [
+   "woont mijn zus",
+   "mijn zus woont"
+  ],
+  "e": "My sister has lived here for ten years.",
+  "w": "Hier is first, so the verb comes second, before mijn zus.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A1"
+ },
+ {
+  "q": "Op zaterdag ___ voetbal.",
+  "a": "speelt Tom",
+  "o": [
+   "speelt Tom",
+   "Tom speelt"
+  ],
+  "e": "On Saturday Tom plays football.",
+  "w": "Op zaterdag fills first place, so speelt comes second, then Tom.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A1"
+ },
+ {
+  "q": "In de zomer ___ naar Spanje.",
+  "a": "gaan wij",
+  "o": [
+   "gaan wij",
+   "wij gaan"
+  ],
+  "e": "In summer we go to Spain.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A1"
+ },
+ {
+  "q": "Soms ___ te laat.",
+  "a": "ben ik",
+  "o": [
+   "ben ik",
+   "ik ben"
+  ],
+  "e": "Sometimes I'm late.",
+  "w": "Soms is first, so ben comes second, before ik.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A1"
+ },
+ {
+  "q": "Daarna ___ een broodje.",
+  "a": "eet ze",
+  "o": [
+   "eet ze",
+   "ze eet"
+  ],
+  "e": "After that she eats a sandwich.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A1"
+ },
+ {
+  "q": "Om acht uur ___ naar school.",
+  "a": "fietst Lisa",
+  "o": [
+   "fietst Lisa",
+   "Lisa fietst"
+  ],
+  "e": "At eight Lisa cycles to school.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A1"
+ },
+ {
+  "q": "Vanavond ___ pasta.",
+  "a": "koken jullie",
+  "o": [
+   "koken jullie",
+   "jullie koken"
+  ],
+  "e": "Tonight you're cooking pasta.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A1"
+ },
+ {
+  "q": "Morgen ___ jarig.",
+  "a": "is mijn moeder",
+  "o": [
+   "is mijn moeder",
+   "mijn moeder is"
+  ],
+  "e": "Tomorrow is my mother's birthday.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A1"
+ },
+ {
+  "q": "In Amsterdam ___ veel fietsen.",
+  "a": "zie je",
+  "o": [
+   "zie je",
+   "je zie"
+  ],
+  "e": "In Amsterdam you see lots of bikes.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ ziek.",
+  "a": "was ik",
+  "o": [
+   "was ik",
+   "ik was"
+  ],
+  "e": "Yesterday I was ill.",
+  "w": "Gisteren is first, so was comes second, before ik.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A1"
+ },
+ {
+  "q": "Na school ___ hun huiswerk.",
+  "a": "maken de kinderen",
+  "o": [
+   "maken de kinderen",
+   "de kinderen maken"
+  ],
+  "e": "After school the children do their homework.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A1"
+ },
+ {
+  "q": "Op maandag ___ vroeg.",
+  "a": "begint de les",
+  "o": [
+   "begint de les",
+   "de les begint"
+  ],
+  "e": "On Monday the lesson starts early.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A1"
+ },
+ {
+  "q": "Thuis ___ Nederlands.",
+  "a": "spreken we",
+  "o": [
+   "spreken we",
+   "we spreken"
+  ],
+  "e": "At home we speak Dutch.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A1"
+ },
+ {
+  "q": "Elke ochtend ___ de krant.",
+  "a": "leest opa",
+  "o": [
+   "leest opa",
+   "opa leest"
+  ],
+  "e": "Every morning Grandpa reads the paper.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A1"
+ },
+ {
+  "q": "Gisteren ___ een film gezien.",
+  "a": "heb ik",
+  "o": [
+   "heb ik",
+   "ik heb"
+  ],
+  "e": "Yesterday I saw a film.",
+  "w": "In the perfect too, the finite verb heb comes second, right after Gisteren.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "Vorige week ___ naar Gent.",
+  "a": "gingen we",
+  "o": [
+   "gingen we",
+   "we gingen"
+  ],
+  "e": "Last week we went to Ghent.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "Dit boek ___ heel mooi.",
+  "a": "vind ik",
+  "o": [
+   "vind ik",
+   "ik vind"
+  ],
+  "e": "I think this book is really beautiful.",
+  "w": "The object comes first, so the verb takes second place, then the subject.",
+  "wn": "Lijdend voorwerp vooraan: inversie.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "Volgend jaar ___ naar Canada.",
+  "a": "verhuist mijn broer",
+  "o": [
+   "verhuist mijn broer",
+   "mijn broer verhuist"
+  ],
+  "e": "Next year my brother is moving to Canada.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "Misschien ___ morgen.",
+  "a": "komt hij",
+  "o": [
+   "komt hij",
+   "hij komt"
+  ],
+  "e": "Maybe he'll come tomorrow.",
+  "w": "Misschien is an adverb in first place, so the verb comes next.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "Natuurlijk ___ je.",
+  "a": "help ik",
+  "o": [
+   "help ik",
+   "ik help"
+  ],
+  "e": "Of course I'll help you.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "Helaas ___ geen tijd.",
+  "a": "heb ik",
+  "o": [
+   "heb ik",
+   "ik heb"
+  ],
+  "e": "Unfortunately I have no time.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "Toen ___ heel klein.",
+  "a": "was ze",
+  "o": [
+   "was ze",
+   "ze was"
+  ],
+  "e": "Back then she was very small.",
+  "w": "Toen meaning back then is an adverb in first place, so the verb follows.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "In het weekend ___ vaak uit.",
+  "a": "gaan mijn vrienden",
+  "o": [
+   "gaan mijn vrienden",
+   "mijn vrienden gaan"
+  ],
+  "e": "At the weekend my friends often go out.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "Om zes uur ___ klaar.",
+  "a": "is het eten",
+  "o": [
+   "is het eten",
+   "het eten is"
+  ],
+  "e": "At six o'clock dinner is ready.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "Daar ___ eindelijk.",
+  "a": "komt de bus",
+  "o": [
+   "komt de bus",
+   "de bus komt"
+  ],
+  "e": "There's the bus at last.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "Met de trein ___ sneller.",
+  "a": "ben je",
+  "o": [
+   "ben je",
+   "je ben"
+  ],
+  "e": "You're quicker by train.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "Ik ben moe, want ___ slecht geslapen.",
+  "a": "ik heb",
+  "o": [
+   "ik heb",
+   "heb ik"
+  ],
+  "e": "I'm tired because I slept badly.",
+  "w": "After want, maar, en and of the order stays normal: subject, then verb.",
+  "wn": "Na want, maar, en, of: geen inversie.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "Ik wil mee, maar ___ geen geld.",
+  "a": "ik heb",
+  "o": [
+   "ik heb",
+   "heb ik"
+  ],
+  "e": "I want to come, but I have no money.",
+  "w": "After want, maar, en and of the order stays normal: subject, then verb.",
+  "wn": "Na want, maar, en, of: geen inversie.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "We blijven thuis, want ___ hard.",
+  "a": "het regent",
+  "o": [
+   "het regent",
+   "regent het"
+  ],
+  "e": "We're staying home because it's raining hard.",
+  "w": "After want, maar, en and of the order stays normal: subject, then verb.",
+  "wn": "Na want, maar, en, of: geen inversie.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "Hij is aardig en ___ goed.",
+  "a": "hij kookt",
+  "o": [
+   "hij kookt",
+   "kookt hij"
+  ],
+  "e": "He's kind and he cooks well.",
+  "w": "After want, maar, en and of the order stays normal: subject, then verb.",
+  "wn": "Na want, maar, en, of: geen inversie.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "Zij werkt hard, maar ___ weinig.",
+  "a": "ze verdient",
+  "o": [
+   "ze verdient",
+   "verdient ze"
+  ],
+  "e": "She works hard but earns little.",
+  "w": "After want, maar, en and of the order stays normal: subject, then verb.",
+  "wn": "Na want, maar, en, of: geen inversie.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "Eerst ___ de afwas.",
+  "a": "doen we",
+  "o": [
+   "doen we",
+   "we doen"
+  ],
+  "e": "First we do the dishes.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "Daarom ___ niet mee.",
+  "a": "ga ik",
+  "o": [
+   "ga ik",
+   "ik ga"
+  ],
+  "e": "That's why I'm not coming along.",
+  "w": "Daarom is an adverb in first place, so ga comes second, before ik.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "Zondag ___ bij oma.",
+  "a": "eten we",
+  "o": [
+   "eten we",
+   "we eten"
+  ],
+  "e": "On Sunday we eat at Grandma's.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "Bij ons ___ altijd koud.",
+  "a": "is het",
+  "o": [
+   "is het",
+   "het is"
+  ],
+  "e": "It's always cold at our place.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "A2"
+ },
+ {
+  "q": "Als het regent, ___ thuis.",
+  "a": "blijf ik",
+  "o": [
+   "blijf ik",
+   "ik blijf"
+  ],
+  "e": "If it rains, I stay home.",
+  "w": "A whole clause comes first, so the main verb follows straight after the comma.",
+  "wn": "Bijzin vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "Toen ik jong was, ___ in Leiden.",
+  "a": "woonden we",
+  "o": [
+   "woonden we",
+   "we woonden"
+  ],
+  "e": "When I was young, we lived in Leiden.",
+  "w": "A whole clause comes first, so the main verb follows straight after the comma.",
+  "wn": "Bijzin vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "Omdat ze ziek is, ___ niet.",
+  "a": "komt ze",
+  "o": [
+   "komt ze",
+   "ze komt"
+  ],
+  "e": "Because she's ill, she isn't coming.",
+  "w": "A whole clause comes first, so the main verb follows straight after the comma.",
+  "wn": "Bijzin vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "Wanneer je klaar bent, ___ je even.",
+  "a": "bel ik",
+  "o": [
+   "bel ik",
+   "ik bel"
+  ],
+  "e": "When you're ready, I'll give you a call.",
+  "w": "A whole clause comes first, so the main verb follows straight after the comma.",
+  "wn": "Bijzin vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "Nadat we gegeten hadden, ___ een wandeling.",
+  "a": "maakten we",
+  "o": [
+   "maakten we",
+   "we maakten"
+  ],
+  "e": "After we had eaten, we went for a walk.",
+  "w": "A whole clause comes first, so the main verb follows straight after the comma.",
+  "wn": "Bijzin vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "Hoewel het koud was, ___ buiten.",
+  "a": "speelden de kinderen",
+  "o": [
+   "speelden de kinderen",
+   "de kinderen speelden"
+  ],
+  "e": "Although it was cold, the children played outside.",
+  "w": "A whole clause comes first, so the main verb follows straight after the comma.",
+  "wn": "Bijzin vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "Zodra hij thuis is, ___.",
+  "a": "eten we",
+  "o": [
+   "eten we",
+   "we eten"
+  ],
+  "e": "As soon as he's home, we'll eat.",
+  "w": "A whole clause comes first, so the main verb follows straight after the comma.",
+  "wn": "Bijzin vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "Volgens mij ___ gelijk.",
+  "a": "heb je",
+  "o": [
+   "heb je",
+   "je heb"
+  ],
+  "e": "I think you're right.",
+  "w": "Volgens mij takes first place, so the verb comes next. With je after it, no t.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "Zonder bril ___ niets.",
+  "a": "zie ik",
+  "o": [
+   "zie ik",
+   "ik zie"
+  ],
+  "e": "Without glasses I can't see a thing.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "Dat ___ niet.",
+  "a": "geloof ik",
+  "o": [
+   "geloof ik",
+   "ik geloof"
+  ],
+  "e": "I don't believe that.",
+  "w": "The object comes first, so the verb takes second place, then the subject.",
+  "wn": "Lijdend voorwerp vooraan: inversie.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "Die man ___ nooit eerder gezien.",
+  "a": "heb ik",
+  "o": [
+   "heb ik",
+   "ik heb"
+  ],
+  "e": "I've never seen that man before.",
+  "w": "The object comes first, so the verb takes second place, then the subject.",
+  "wn": "Lijdend voorwerp vooraan: inversie.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "Waarschijnlijk ___ later.",
+  "a": "komen ze",
+  "o": [
+   "komen ze",
+   "ze komen"
+  ],
+  "e": "They'll probably come later.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "Na het werk ___ meestal naar de sportschool.",
+  "a": "gaat Sanne",
+  "o": [
+   "gaat Sanne",
+   "Sanne gaat"
+  ],
+  "e": "After work Sanne usually goes to the gym.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "Tijdens de vakantie ___ veel gelezen.",
+  "a": "hebben we",
+  "o": [
+   "hebben we",
+   "we hebben"
+  ],
+  "e": "During the holiday we read a lot.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "Met mijn collega's ___ goed vinden.",
+  "a": "kan ik het",
+  "o": [
+   "kan ik het",
+   "ik kan het",
+   "kan het ik"
+  ],
+  "e": "I get on well with my colleagues.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "Ondanks de regen ___ door.",
+  "a": "ging de wedstrijd",
+  "o": [
+   "ging de wedstrijd",
+   "de wedstrijd ging"
+  ],
+  "e": "Despite the rain the match went ahead.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "Pas om middernacht ___ thuis.",
+  "a": "kwamen ze",
+  "o": [
+   "kwamen ze",
+   "ze kwamen"
+  ],
+  "e": "They didn't get home until midnight.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "Elk jaar ___.",
+  "a": "stijgen de prijzen",
+  "o": [
+   "stijgen de prijzen",
+   "de prijzen stijgen"
+  ],
+  "e": "Every year prices go up.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "Gelukkig ___ op tijd.",
+  "a": "was de trein",
+  "o": [
+   "was de trein",
+   "de trein was"
+  ],
+  "e": "Luckily the train was on time.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "In Nederland ___ veel kaas.",
+  "a": "eten mensen",
+  "o": [
+   "eten mensen",
+   "mensen eten"
+  ],
+  "e": "In the Netherlands people eat a lot of cheese.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "Als je wilt, ___ je naar het station.",
+  "a": "breng ik",
+  "o": [
+   "breng ik",
+   "ik breng"
+  ],
+  "e": "If you like, I'll take you to the station.",
+  "w": "A whole clause comes first, so the main verb follows straight after the comma.",
+  "wn": "Bijzin vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B1"
+ },
+ {
+  "q": "Wat hij zegt, ___.",
+  "a": "begrijp ik niet",
+  "o": [
+   "begrijp ik niet",
+   "ik begrijp niet",
+   "begrijp niet ik"
+  ],
+  "e": "I don't understand what he's saying.",
+  "w": "The clause wat hij zegt is the object in first place, so the verb follows it.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B2"
+ },
+ {
+  "q": "Nooit eerder ___ zo gelachen.",
+  "a": "had ik",
+  "o": [
+   "had ik",
+   "ik had"
+  ],
+  "e": "I had never laughed so much before.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B2"
+ },
+ {
+  "q": "Pas later ___ wat er gebeurd was.",
+  "a": "begreep ik",
+  "o": [
+   "begreep ik",
+   "ik begreep"
+  ],
+  "e": "Only later did I understand what had happened.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B2"
+ },
+ {
+  "q": "Ook in de winter ___ elke dag.",
+  "a": "zwemt mijn opa",
+  "o": [
+   "zwemt mijn opa",
+   "mijn opa zwemt"
+  ],
+  "e": "My grandpa swims every day, even in winter.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B2"
+ },
+ {
+  "q": "Niet alleen ___ duur, het is ook lelijk.",
+  "a": "is het",
+  "o": [
+   "is het",
+   "het is"
+  ],
+  "e": "Not only is it expensive, it's ugly too.",
+  "w": "Niet alleen in first place pulls the verb before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B2"
+ },
+ {
+  "q": "Of het nu regent of niet, ___.",
+  "a": "we gaan",
+  "o": [
+   "we gaan",
+   "gaan we"
+  ],
+  "e": "Whether it rains or not, we're going.",
+  "w": "A clause with of ... of niet stands outside the sentence, so no inversion follows.",
+  "wn": "Of ... of niet: geen inversie.",
+  "t": "inv",
+  "b": "B2"
+ },
+ {
+  "q": "Zelden ___ zo'n mooie zonsondergang gezien.",
+  "a": "heb ik",
+  "o": [
+   "heb ik",
+   "ik heb"
+  ],
+  "e": "Rarely have I seen such a beautiful sunset.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B2"
+ },
+ {
+  "q": "Daar ___ geen rekening mee gehouden.",
+  "a": "had niemand",
+  "o": [
+   "had niemand",
+   "niemand had"
+  ],
+  "e": "Nobody had taken that into account.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B2"
+ },
+ {
+  "q": "Bovendien ___ te weinig personeel.",
+  "a": "is er",
+  "o": [
+   "is er",
+   "er is"
+  ],
+  "e": "Moreover, there are too few staff.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B2"
+ },
+ {
+  "q": "Achteraf gezien ___ beter thuis kunnen blijven.",
+  "a": "hadden we",
+  "o": [
+   "hadden we",
+   "we hadden"
+  ],
+  "e": "Looking back, we'd have done better to stay home.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B2"
+ },
+ {
+  "q": "Desondanks ___ door met haar studie.",
+  "a": "ging zij",
+  "o": [
+   "ging zij",
+   "zij ging"
+  ],
+  "e": "Even so, she carried on with her studies.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B2"
+ },
+ {
+  "q": "Van die beslissing ___ nu spijt.",
+  "a": "heeft hij",
+  "o": [
+   "heeft hij",
+   "hij heeft"
+  ],
+  "e": "He now regrets that decision.",
+  "w": "The first place is taken, so the verb comes second, before the subject.",
+  "wn": "Iets vooraan, dan het werkwoord.",
+  "t": "inv",
+  "b": "B2"
+ },
+ {
+  "q": "Ik zou graag komen, maar ___ morgen werken.",
+  "a": "ik moet",
+  "o": [
+   "ik moet",
+   "moet ik"
+  ],
+  "e": "I'd love to come, but I have to work tomorrow.",
+  "w": "After want, maar, en and of the order stays normal: subject, then verb.",
+  "wn": "Na want, maar, en, of: geen inversie.",
+  "t": "inv",
+  "b": "B2"
+ },
+ {
+  "q": "Je kunt bellen of ___ een mail.",
+  "a": "je stuurt",
+  "o": [
+   "je stuurt",
+   "stuurt je"
+  ],
+  "e": "You can call or you can send an email.",
+  "w": "After want, maar, en and of the order stays normal: subject, then verb.",
+  "wn": "Na want, maar, en, of: geen inversie.",
+  "t": "inv",
+  "b": "B2"
+ },
+ {
+  "q": "Het was laat, en toch ___ nog.",
+  "a": "werkte ze",
+  "o": [
+   "werkte ze",
+   "ze werkte"
+  ],
+  "e": "It was late, and yet she was still working.",
+  "w": "After en the clause starts again, and toch in first place pulls the verb forward.",
+  "wn": "En toch: inversie door toch.",
+  "t": "inv",
+  "b": "B2"
+ },
+ {
+  "q": "Hij is rijk, maar gelukkig ___ niet.",
+  "a": "is hij",
+  "o": [
+   "is hij",
+   "hij is"
+  ],
+  "e": "He's rich, but happy he isn't.",
+  "w": "Maar does not count, but gelukkig fills first place, so the verb comes next.",
+  "wn": "Gelukkig vooraan: inversie.",
+  "t": "inv",
+  "b": "B2"
+ }
+]

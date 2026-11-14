@@ -1,0 +1,531 @@
+[
+ {
+  "nl": "Hoeveel kost dit?",
+  "en": "How much is this?",
+  "alt": [
+   "Wat kost dit?"
+  ],
+  "th": "winkel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Mag ik een koffie?",
+  "en": "Can I have a coffee?",
+  "alt": [
+   "Een koffie, alstublieft."
+  ],
+  "th": "winkel",
+  "b": "A1",
+  "t": 1,
+  "n": "Mag ik is the everyday polite way to ask for something."
+ },
+ {
+  "nl": "Mag ik een broodje kaas?",
+  "en": "Can I have a cheese roll?",
+  "th": "winkel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Een broodje kaas, alstublieft.",
+  "en": "A cheese roll, please.",
+  "alt": [
+   "Een broodje kaas, alsjeblieft."
+  ],
+  "th": "winkel",
+  "b": "A1",
+  "t": 1,
+  "n": "Alstublieft is the u form; alsjeblieft is the je form."
+ },
+ {
+  "nl": "Wat mag het zijn?",
+  "en": "What can I get you?",
+  "th": "winkel",
+  "b": "A1",
+  "t": 1,
+  "n": "What staff say to you. Literally: what may it be?"
+ },
+ {
+  "nl": "Zegt u het maar.",
+  "en": "Go ahead, what would you like?",
+  "alt": [
+   "Zeg het maar."
+  ],
+  "th": "winkel",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: just say it. Staff use this all the time."
+ },
+ {
+  "nl": "Anders nog iets?",
+  "en": "Anything else?",
+  "alt": [
+   "Verder nog iets?"
+  ],
+  "th": "winkel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Nee, dat was het.",
+  "en": "No, that's all.",
+  "alt": [
+   "Nee, dat is alles."
+  ],
+  "th": "winkel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Kan ik pinnen?",
+  "en": "Can I pay by card?",
+  "alt": [
+   "Kan ik met de kaart betalen?"
+  ],
+  "th": "winkel",
+  "b": "A1",
+  "t": 1,
+  "n": "Pinnen means paying by debit card. Many places only take cards."
+ },
+ {
+  "nl": "Wilt u pinnen of contant?",
+  "en": "Card or cash?",
+  "th": "winkel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Contant, graag.",
+  "en": "Cash, please.",
+  "th": "winkel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Wilt u een bonnetje?",
+  "en": "Would you like a receipt?",
+  "alt": [
+   "Wil je de bon?"
+  ],
+  "th": "winkel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Hoeveel is het?",
+  "en": "How much is that?",
+  "alt": [
+   "Wat krijgt u van me?"
+  ],
+  "th": "winkel",
+  "b": "A1",
+  "t": 1,
+  "n": "Wat krijgt u van me is a very natural way to ask what you owe."
+ },
+ {
+  "nl": "Dat is dan vijf euro.",
+  "en": "That's five euros, then.",
+  "th": "winkel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Wilt u een tasje?",
+  "en": "Do you want a bag?",
+  "th": "winkel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Nee hoor, dat hoeft niet.",
+  "en": "No thanks, there's no need.",
+  "th": "winkel",
+  "b": "A2",
+  "t": 2,
+  "n": "Hoor softens it and keeps it friendly."
+ },
+ {
+  "nl": "Ik kijk alleen even rond.",
+  "en": "I'm just looking.",
+  "alt": [
+   "Ik kijk alleen even."
+  ],
+  "th": "winkel",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "nl": "Kan ik u helpen?",
+  "en": "Can I help you?",
+  "th": "winkel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Heeft u dit in een andere maat?",
+  "en": "Do you have this in another size?",
+  "th": "winkel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Mag ik dit even passen?",
+  "en": "Can I try this on?",
+  "th": "winkel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Waar zijn de paskamers?",
+  "en": "Where are the changing rooms?",
+  "th": "winkel",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Het is te groot.",
+  "en": "It's too big.",
+  "th": "winkel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Het is te klein.",
+  "en": "It's too small.",
+  "th": "winkel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Ik neem deze.",
+  "en": "I'll take this one.",
+  "alt": [
+   "Doe maar deze."
+  ],
+  "th": "winkel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Is dit in de aanbieding?",
+  "en": "Is this on offer?",
+  "th": "winkel",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Kan ik dit ruilen?",
+  "en": "Can I exchange this?",
+  "th": "winkel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Waar kan ik brood vinden?",
+  "en": "Where can I find bread?",
+  "th": "winkel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Een half brood, alstublieft.",
+  "en": "Half a loaf, please.",
+  "th": "winkel",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Gesneden, graag.",
+  "en": "Sliced, please.",
+  "th": "winkel",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Een tafel voor twee, alstublieft.",
+  "en": "A table for two, please.",
+  "th": "winkel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Ik heb gereserveerd.",
+  "en": "I have a reservation.",
+  "th": "winkel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Mag ik de kaart?",
+  "en": "Can I see the menu?",
+  "alt": [
+   "Mag ik de menukaart?"
+  ],
+  "th": "winkel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Wat raadt u aan?",
+  "en": "What do you recommend?",
+  "alt": [
+   "Wat kun je aanraden?"
+  ],
+  "th": "winkel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Wat wilt u drinken?",
+  "en": "What would you like to drink?",
+  "th": "winkel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Een biertje, graag.",
+  "en": "A beer, please.",
+  "th": "winkel",
+  "b": "A1",
+  "t": 1,
+  "n": "Biertje is the usual way to order a beer."
+ },
+ {
+  "nl": "Doe mij maar een cappuccino.",
+  "en": "I'll have a cappuccino.",
+  "th": "winkel",
+  "b": "A2",
+  "t": 1,
+  "n": "Doe mij maar is a very common, relaxed way to order."
+ },
+ {
+  "nl": "Een kraanwater, alstublieft.",
+  "en": "Tap water, please.",
+  "alt": [
+   "Een glas water, graag."
+  ],
+  "th": "winkel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Zit hier vlees in?",
+  "en": "Does this have meat in it?",
+  "th": "winkel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Hetzelfde voor mij.",
+  "en": "The same for me.",
+  "alt": [
+   "Voor mij hetzelfde."
+  ],
+  "th": "winkel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Smaakt het?",
+  "en": "Is everything all right?",
+  "alt": [
+   "Is alles naar wens?"
+  ],
+  "th": "winkel",
+  "b": "A2",
+  "t": 2,
+  "n": "What a waiter asks. Literally: does it taste good?"
+ },
+ {
+  "nl": "Ja, heerlijk!",
+  "en": "Yes, delicious!",
+  "th": "winkel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Mag ik afrekenen?",
+  "en": "Can I pay, please?",
+  "alt": [
+   "Mag ik de rekening?"
+  ],
+  "th": "winkel",
+  "b": "A1",
+  "t": 1,
+  "n": "Afrekenen means to settle up."
+ },
+ {
+  "nl": "Mag ik de rekening, alstublieft?",
+  "en": "Could I have the bill, please?",
+  "th": "winkel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Apart of samen?",
+  "en": "Separately or together?",
+  "th": "winkel",
+  "b": "A1",
+  "t": 2,
+  "n": "Asked when a group pays."
+ },
+ {
+  "nl": "Samen, graag.",
+  "en": "Together, please.",
+  "th": "winkel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Laat maar zitten.",
+  "en": "Keep the change.",
+  "alt": [
+   "Het is goed zo."
+  ],
+  "th": "winkel",
+  "b": "B1",
+  "t": 2,
+  "n": "Tipping is modest; rounding up is normal."
+ },
+ {
+  "nl": "Ik trakteer.",
+  "en": "It's my treat.",
+  "th": "winkel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Zullen we het delen?",
+  "en": "Shall we split it?",
+  "th": "winkel",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "nl": "Om mee te nemen.",
+  "en": "To take away.",
+  "alt": [
+   "Om mee te nemen, graag."
+  ],
+  "th": "winkel",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "nl": "Voor hier.",
+  "en": "To eat in.",
+  "alt": [
+   "Voor hier, graag."
+  ],
+  "th": "winkel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Is deze plek vrij?",
+  "en": "Is this seat free?",
+  "alt": [
+   "Is deze stoel vrij?"
+  ],
+  "th": "winkel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Een patatje met mayo, graag.",
+  "en": "Chips with mayo, please.",
+  "alt": [
+   "Een friet met, graag."
+  ],
+  "th": "winkel",
+  "b": "A2",
+  "t": 2,
+  "n": "In Flanders and the south people say friet; met on its own means with mayo."
+ },
+ {
+  "nl": "Twee bolletjes, graag.",
+  "en": "Two scoops, please.",
+  "th": "winkel",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "In een bakje of hoorntje?",
+  "en": "In a tub or a cone?",
+  "th": "winkel",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Heeft u ook havermelk?",
+  "en": "Do you have oat milk?",
+  "th": "winkel",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Klein, middel of groot?",
+  "en": "Small, medium or large?",
+  "th": "winkel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Dat is te duur.",
+  "en": "That's too expensive.",
+  "th": "winkel",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "nl": "Dat is goedkoop!",
+  "en": "That's cheap!",
+  "th": "winkel",
+  "b": "A1",
+  "t": 3
+ },
+ {
+  "nl": "Bent u aan de beurt?",
+  "en": "Are you next?",
+  "alt": [
+   "Wie is er aan de beurt?"
+  ],
+  "th": "winkel",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: is it your turn?"
+ },
+ {
+  "nl": "Ik was eerst.",
+  "en": "I was first.",
+  "th": "winkel",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Heeft u een klantenkaart?",
+  "en": "Do you have a loyalty card?",
+  "th": "winkel",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "nl": "Het pinapparaat doet het niet.",
+  "en": "The card machine isn't working.",
+  "th": "winkel",
+  "b": "B1",
+  "t": 3,
+  "n": "Het doet het niet: it doesn't work."
+ },
+ {
+  "nl": "Fijne dag nog!",
+  "en": "Have a nice day!",
+  "alt": [
+   "Nog een fijne dag!"
+  ],
+  "th": "winkel",
+  "b": "A1",
+  "t": 1
+ }
+]

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Voices for the example conversations in Juegos (es) and Líofa (ga), from
+"""Voices for the example conversations in Juegos (es), Líofa (ga) and Vlot (nl), from
 Microsoft's neural voices (edge-tts), made at build time and shipped as mp3.
 One voice per role, so the two speakers always sound different: a woman and a
 man, the role's own hint ("You (a man)") deciding when it gives one.
 Clips are made once into tools/<lang>/vendor/convo-clips/ (a rerun only makes
 new lines), then packed into a few bundles, <app>/audio/c-<hash>.bin.
-  tools/ar/vendor/venv/bin/python tools/build-convo-audio.py es|ga
+  tools/ar/vendor/venv/bin/python tools/build-convo-audio.py es|ga|nl
 Writes the bundles and <data>/convo-audio.js ("<convo id>#<line>": "audio/x.bin#off,len")."""
 import asyncio, hashlib, json, os, sys
 import edge_tts
@@ -18,9 +18,11 @@ CFG = {
                f='es-CO-SalomeNeural', m='es-CO-GonzaloNeural', voices='es-CO (Colombia)'),
     'ga': dict(field='ga', app='gaeilge', data='gaeilge/data', glob='GA_CONVO_AUDIO', name='Líofa',
                f='ga-IE-OrlaNeural', m='ga-IE-ColmNeural', voices='ga-IE'),
+    'nl': dict(field='nl', app='nederlands', data='nederlands/data', glob='NL_CONVO_AUDIO', name='Vlot',
+               f='nl-NL-FennaNeural', m='nl-NL-MaartenNeural', voices='nl-NL'),
 }.get(LANG)
 if not CFG:
-    print('usage: build-convo-audio.py es|ga'); sys.exit(2)
+    print('usage: build-convo-audio.py es|ga|nl'); sys.exit(2)
 AUD = os.path.join(HERE, LANG, 'vendor', 'convo-clips')
 PACK = os.path.join(ROOT, CFG['app'], 'audio')
 OUT = os.path.join(ROOT, CFG['data'], 'convo-audio.js')
