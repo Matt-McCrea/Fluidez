@@ -43,7 +43,7 @@ ok(JSON.stringify(scriptsInHtml) === JSON.stringify(scripts), 'ASSETS in sw.js: 
 ['./data/audio.js', './js/ru-text.js', './js/ru-audio.js', './manifest.json', './css/svobodno.css'].forEach(a => ok(assets.indexOf(a) !== -1, 'sw.js ASSETS lacks ' + a));
 ok(/<html lang="en"/.test(html) && /<title>Svobodno<\/title>/.test(html), 'index.html must be lang en, titled Svobodno');
 const manifest = JSON.parse(fs.readFileSync(path.join(AD, 'manifest.json'), 'utf8'));
-ok(manifest.name === 'Svobodno' && manifest.short_name === 'Svobodno' && manifest.lang === 'ru' && manifest.theme_color === '#110c0b' && manifest.background_color === '#110c0b', 'manifest fields');
+ok(manifest.name === 'Svobodno' && manifest.short_name === 'Svobodno' && manifest.lang === 'ru' && manifest.theme_color === '#f4f6fb' && manifest.background_color === '#f4f6fb', 'manifest fields');
 ok(/CACHE_NAME = 'svobodno-'/.test(swSrc) && /AUDIO_CACHE = 'svobodno-audio'/.test(swSrc) && !/\.\.\//.test(swSrc), 'sw.js: caches svobodno-<ver> and svobodno-audio, no ../');
 ok(/cache: 'reload'/.test(swSrc), 'sw.js must fetch past the HTTP cache');
 const cacheVer = /CACHE_VERSION = '([^']+)'/.exec(swSrc)[1];
@@ -55,7 +55,7 @@ ok(new RegExp("BUILD = '" + cacheVer + "'").test(fs.readFileSync(path.join(AD, '
 }
 ['icon-192.png', 'icon-512.png', 'icon-512-maskable.png', 'apple-touch-icon.png'].forEach(f => ok(fs.existsSync(path.join(AD, 'icons', f)), 'missing icon ' + f));
 const css = fs.readFileSync(path.join(AD, 'css/svobodno.css'), 'utf8').toLowerCase();
-['#110c0b', '#1d1311', '#2a1b17', '#5a3a1c', '#f7ede2', '#c2a691', '#d2402f', '#e3a83a', '#57c47a', '#ff6b5e'].forEach(c => ok(css.indexOf(c) !== -1, 'svobodno.css lacks the palette colour ' + c));
+['#f4f6fb', '#ffffff', '#e8edf8', '#b9c6e6', '#14245a', '#4a5884', '#1f45b5', '#c8202f', '#8a5f00', '#157a3f'].forEach(c => ok(css.indexOf(c) !== -1, 'svobodno.css lacks the palette colour ' + c));
 ok(!/naskh|direction:\s*rtl/.test(css), 'svobodno.css still carries Arabic rules');
 ok(!/@import|https?:|fonts\.g/.test(css), 'svobodno.css must be self-contained');
 
@@ -254,7 +254,7 @@ W.Profile.set('B2');                                   // widest pool
   W.RUArcade.board();
   ok(byCls('arc-soon').length === 0 && byCls('arc-tile').filter(t => t.disabled).length === 0 && !byCls('arc-jugar')[0].disabled, 'with data every tile is live');
   const G = W.RUArcade.GAMES;
-  ok(G.map(g => g.hue).join() === '#e3a83a,#d2402f,#c77d2e,#b8577a,#3f8f8a,#7a6fd0,#3d86c6,#9aa83a,#e3a83a', 'tile hues follow the palette');
+  ok(G.map(g => g.hue).join() === '#1f45b5,#c8202f,#a05800,#a8326a,#0f7a74,#5b4fc0,#1b62a8,#66740f,#1f45b5', 'tile hues follow the palette');
   W.RUArcade.sheet(G[1]);                              // Глаголы: a card per tense
   ok(byCls('arc-chip').length >= 4 && byCls('arc-chipq').length === 3, 'Verbs: topic chips for pres, past, fut, each with a ? card link');
   byCls('arc-chipq')[0].click();

@@ -102,15 +102,15 @@
 
   /* ---- the games --------------------------------------------------------------- */
   var GAMES = [
-    { key: 'igrat', kind: 'igrat', hue: '#e3a83a', ru: 'Игра́ть', tr: 'Igrát', en: 'Play', rule: 'A bit of everything: verbs, words, phrases and grammar' },
-    { key: 'glagoly', kind: 'glagoly', hue: '#d2402f', ru: 'Глаго́лы', tr: 'Glagóly', en: 'Verbs', rule: 'The right form of the verb, in a sentence' },
-    { key: 'slova', kind: 'slova', hue: '#c77d2e', ru: 'Слова́', tr: 'Slová', en: 'Words', rule: 'The commonest words first' },
-    { key: 'frazy', kind: 'frazy', hue: '#b8577a', ru: 'Фра́зы', tr: 'Frázy', en: 'Phrases', rule: 'Everyday phrases, whole' },
-    { key: 'padezhi', kind: 'padezhi', hue: '#3f8f8a', ru: 'Падежи́', tr: 'Padezhí', en: 'Cases', rule: 'The ending a word takes after a preposition or verb' },
-    { key: 'vid', kind: 'vid', hue: '#7a6fd0', ru: 'Вид', tr: 'Vid', en: 'Aspect', rule: 'Which of the two verbs fits: going on, or done' },
-    { key: 'dvizhenie', kind: 'dvizhenie', hue: '#3d86c6', ru: 'Движе́ние', tr: 'Dvizhéniye', en: 'Going', rule: 'Verbs of going: on foot, by transport, one way or back and forth' },
-    { key: 'chisla', kind: 'chisla', hue: '#9aa83a', ru: 'Числа́', tr: 'Chislá', en: 'Numbers', rule: 'A number and the form of the word after it' },
-    { key: 'bukvy', kind: 'bukvy', hue: '#e3a83a', ru: 'Бу́квы', tr: 'Búkvy', en: 'Letters', rule: 'The Cyrillic letters, and stress' }
+    { key: 'igrat', kind: 'igrat', hue: '#1f45b5', ru: 'Игра́ть', tr: 'Igrát', en: 'Play', rule: 'A bit of everything: verbs, words, phrases and grammar' },
+    { key: 'glagoly', kind: 'glagoly', hue: '#c8202f', ru: 'Глаго́лы', tr: 'Glagóly', en: 'Verbs', rule: 'The right form of the verb, in a sentence' },
+    { key: 'slova', kind: 'slova', hue: '#a05800', ru: 'Слова́', tr: 'Slová', en: 'Words', rule: 'The commonest words first' },
+    { key: 'frazy', kind: 'frazy', hue: '#a8326a', ru: 'Фра́зы', tr: 'Frázy', en: 'Phrases', rule: 'Everyday phrases, whole' },
+    { key: 'padezhi', kind: 'padezhi', hue: '#0f7a74', ru: 'Падежи́', tr: 'Padezhí', en: 'Cases', rule: 'The ending a word takes after a preposition or verb' },
+    { key: 'vid', kind: 'vid', hue: '#5b4fc0', ru: 'Вид', tr: 'Vid', en: 'Aspect', rule: 'Which of the two verbs fits: going on, or done' },
+    { key: 'dvizhenie', kind: 'dvizhenie', hue: '#1b62a8', ru: 'Движе́ние', tr: 'Dvizhéniye', en: 'Going', rule: 'Verbs of going: on foot, by transport, one way or back and forth' },
+    { key: 'chisla', kind: 'chisla', hue: '#66740f', ru: 'Числа́', tr: 'Chislá', en: 'Numbers', rule: 'A number and the form of the word after it' },
+    { key: 'bukvy', kind: 'bukvy', hue: '#1f45b5', ru: 'Бу́квы', tr: 'Búkvy', en: 'Letters', rule: 'The Cyrillic letters, and stress' }
   ];
   function playable(g) { return GI.bankCount(g.kind) > 0; }
 
@@ -411,7 +411,7 @@
     h.appendChild(wrap);
   }
   /* Conversations: the fourth tile on the top row. Every example conversation, with its voices. */
-  var CONVO_HUE = '#e07a3f';
+  var CONVO_HUE = '#b3541a';
   function convoTile() {
     var C = window.RUConvo, all = C.all(), done = all.filter(function (c) { return C.passes(c.id) > 0; }).length;
     var tile = el('button', 'arc-tile arc-convo-tile');
@@ -514,7 +514,7 @@
     rw.type = 'button';
     rw.appendChild(el('span', 'arc-prow-k', 'Words'));
     rw.appendChild(el('span', 'arc-prow-v', w.of ? GI.thousands(w.n) + ' of ' + GI.thousands(w.of) : 'coming soon'));
-    rw.appendChild(bar(w.n, w.of, '#c77d2e'));
+    rw.appendChild(bar(w.n, w.of, '#a05800'));
     rw.appendChild(el('span', 'arc-prow-s', w.of ? 'the ' + GI.thousands(w.of) + ' commonest words · by theme ›' : 'words are on the way'));
     rw.addEventListener('click', wordsDetail);
     panel.appendChild(rw);
@@ -542,7 +542,7 @@
     var rf = el('div', 'arc-prow');
     rf.appendChild(el('span', 'arc-prow-k', 'Phrases'));
     rf.appendChild(el('span', 'arc-prow-v', ph.of ? GI.thousands(ph.n) + ' of ' + GI.thousands(ph.of) : 'coming soon'));
-    rf.appendChild(bar(ph.n, ph.of, '#b8577a'));
+    rf.appendChild(bar(ph.n, ph.of, '#a8326a'));
     panel.appendChild(rf);
     return panel;
   }
@@ -559,7 +559,7 @@
       var r = el('div', 'arc-drow');
       r.appendChild(el('span', 'arc-drow-k', t.label));
       r.appendChild(el('span', 'arc-drow-v', c.n + ' of ' + c.of));
-      r.appendChild(bar(c.n, c.of, '#c77d2e'));
+      r.appendChild(bar(c.n, c.of, '#a05800'));
       wrap.appendChild(r);
     });
     h.appendChild(wrap);
@@ -903,7 +903,7 @@
     pushView('card');
     var h = host(); clear(h);
     var wrap = el('div', 'arc-stats arc-tcard');
-    wrap.style.setProperty('--g', '#e3a83a');
+    wrap.style.setProperty('--g', '#1f45b5');
     var top = topBar(c ? en(c.name) : key);
     if (c && c.name && c.name.ru) top.appendChild(UI.ru(c.name.ru, 'arc-title-ru'));
     wrap.appendChild(top);

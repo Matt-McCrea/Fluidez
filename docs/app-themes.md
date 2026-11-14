@@ -10,34 +10,33 @@ Rules for every app:
 - Respect `prefers-reduced-motion`. The notch rule on `#stage-host` stays as it is.
 - The full screen countdown, the round, the sheets, cards, conversations, placement and the spotlight ("Do this now") all take the new look; grep for hard-coded colours (`#fff`, `rgba(255,255,255`, `rgba(0,0,0`, `#0`) that assume a dark background and fix them.
 
-## Juegos (Spanish, Colombia): carnaval
-Barranquilla carnival at night. Dark, saturated, loud and playful.
-- `--bg #170a1f` (deep plum), `--panel #241133`, `--panel-2 #321a45`, `--border #4a2a63`, `--text #fbf3ff`, `--muted #c3a8d6`.
-- `--accent #ff3d8b` (hot pink), `--accent-2 #ff79ad`, `--gold #ffd23f` (records), good `#3ee08f`, bad `#ff5a4f`.
-- Rounded type: `ui-rounded, "SF Pro Rounded", -apple-system, system-ui, sans-serif`, headings heavy (800). Radius 22px; tiles slightly chunky with a soft coloured glow in their hue.
-- Background: a faint confetti or radial glow of pink and yellow in the top corner.
-- Only juegos/ may change: put overrides in css/arcade.css (loaded only by juegos/index.html). css/styles.css and css/games.css are shared with the old root app and must not change.
+## Round two (14 Nov 2026, Matthew)
+"Juegos a bit dark still, should be more fun and bold. Juegos and Russian a bit too dark, Líofa not dark enough and should be more Irish. Make them all more representative of their traditional cultures." Vlot stays (De Stijl is Dutch heritage, and Delft blue would clash with Gzhel); Ṭalāqa keeps zellige with stronger motifs.
 
-## Líofa (Irish): lámhscríbhinn, the manuscript
-Calm, light, bookish: vellum, ink and moss, like the Book of Kells page margins.
-- Light theme. `--bg #f3eee2` (vellum), `--panel #fbf8f0`, `--panel-2 #ece5d4`, `--border #d5c9ae`, `--text #1f2a22` (ink), `--muted #5d6a5f`.
-- `--accent #2e7a52` (moss), `--accent-2 #3f9466`, `--gold #a8741a` (dark gold, records), good `#23824f`, bad `#b3362b`.
-- Serif headings: `"Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif`; body stays the system sans. Radius 10px; thin borders, almost no shadow.
-- Background: a very subtle paper grain (layered radial gradients), a thin double rule under headings.
+## Juegos (Spanish, Colombia): la chiva
+The painted chiva bus and the Wayuu mochila: bright, sunny, loud folk colour. A LIGHT theme, nothing dark.
+- `--bg #fff3d1` (sunny cream), `--panel #ffffff`, `--panel-2 #ffe9b0`, `--border #1d1d1b`, `--text #1d1d1b`, `--muted #5a4a2e`.
+- Chiva colours: red `#e4252b`, yellow `#ffc20e`, blue `#0f4fbf`, green `#0c9a52`, orange `#ff7a00`, magenta `#d6247a`. `--accent #d6247a`, `--gold #a35f00` (records on light), good `#0c8a49`, bad `#c81e24`.
+- Tiles are solid chiva colours with white text (black text on yellow), rounded 18px, a 2px dark outline and a chunky offset shadow (`4px 4px 0 #1d1d1b`), slightly playful. Jugar gets a band of Wayuu zigzag stripes (repeating linear gradients in red, yellow, blue, green, orange) across its top.
+- Type: `ui-rounded, "SF Pro Rounded", system-ui, sans-serif`, headings 900. A thin Wayuu zigzag stripe runs along the top of the board under the notch area.
+- Only css/arcade.css (loaded only by juegos/) may change; css/styles.css and css/games.css are shared with the old app.
 
-## Ṭalāqa (Arabic): zellige
-Lapis and gold, crisp geometry, like a tiled courtyard at dusk.
-- Dark. `--bg #0a1433` (lapis night), `--panel #12204a`, `--panel-2 #1a2b5c`, `--border #2c3f78`, `--text #f4efe2`, `--muted #b2b7cf`.
-- `--accent #e2b04a` (gold), `--accent-2 #f1cd7d`, `--gold #f1cd7d`, a second accent turquoise `#35c2b4` for links and selected chips, good `#46d98a`, bad `#ff6b5e`.
-- Radius 6px; crisp 1px gold-tinted borders. Arabic text keeps its current font stack and size.
-- Background: a faint eight-point star lattice in CSS (repeating conic or linear gradients) at about 4% opacity.
+## Líofa (Irish): the Book of Kells
+An illuminated page on Connemara marble: deep green, gold and red lead, Celtic knotwork. Mid dark, rich, unmistakably Irish.
+- `--bg #0f3a2a` (Connemara green), `--panel #164a36`, `--panel-2 #1d5a42`, `--border #c9a54a` at reduced alpha for panel edges, `--text #f6efdc` (vellum), `--muted #c7d3c4`.
+- `--accent #e0b44a` (illumination gold), `--accent-2 #f0cf7a`, `--gold #f0cf7a`, red lead `#d4553a` for one tile and highlights, lapis `#3f6fc1` and verdigris `#3fae8a` among the tile hues; good `#6be3a0`, bad `#ff8a76`.
+- Headings: `"Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif`, the app title in small caps with letter spacing; a drop-cap feel on Imir (large first letter in gold).
+- Texture: subtle marble veining (layered radial and linear gradients), and a Celtic knotwork band (CSS repeating pattern of interlaced diagonals) as a thin border on Imir and under headings. Panels get a fine gold edge.
 
-## Svobodno (Russian): khokhloma
-Black lacquer, cinnabar red and gold leaf, folk-ornament bold.
-- Dark. Keep `--bg #110c0b` family, `--panel #1d1311`, `--panel-2 #2a1b17`, `--border #5a3a1c` (gold-brown), `--text #f7ede2`, `--muted #c2a691`.
-- `--accent #d8352a` (cinnabar), `--accent-2 #ff7a66`, `--gold #e8b34a`, good `#5fd38d`, bad `#ff6b5e`.
-- Headings uppercase, condensed and tracked: `"Avenir Next Condensed", "Arial Narrow", "PT Sans Narrow", sans-serif`, weight 700. Radius 4px; panels get a 1px gold inner border (inset box-shadow).
-- Background: a dark red to black vertical gradient and a faint gold berry-and-leaf hint in a corner (radial gradients only).
+## Ṭalāqa (Arabic): zellige, stronger
+Keep the lapis, gold and turquoise. Make it more of the courtyard: the Ilʿab tile topped by a pointed arch (shaped border radius or a clip path), the star lattice a little more visible (about 7%), and a thin geometric border band (zellige zigzag in gold and turquoise) under the header. Change nothing else.
+
+## Svobodno (Russian): Gzhel
+Gzhel porcelain: white glaze painted in cobalt, with a touch of matryoshka red. Light, clean, ornamental.
+- Light theme. `--bg #f4f6fb` (porcelain), `--panel #ffffff`, `--panel-2 #e8edf8`, `--border #b9c6e6`, `--text #14245a` (deep cobalt ink), `--muted #4a5884`.
+- `--accent #1f45b5` (cobalt), `--accent-2 #3a63d6`, matryoshka red `#c8202f` for the Script/Talk active state and one tile, `--gold #9a6a00`, good `#1d8a4b`, bad `#c8202f`.
+- Tiles white with a cobalt brush edge and a soft cobalt wash in one corner (radial gradient), radius 14px; Играть in solid cobalt with white text and a scalloped Gzhel border (radial gradient scallops along the bottom).
+- Headings: `"Avenir Next", "PT Sans", system-ui, sans-serif` 700, not uppercase. Background: faint cobalt floral flourishes in two corners (radial gradients), never behind text at more than 5%.
 
 ## Vlot (Dutch): De Stijl
 Mondrian and Rietveld: white, black lines, primary colour blocks. Bright, flat, graphic.
@@ -45,3 +44,6 @@ Mondrian and Rietveld: white, black lines, primary colour blocks. Bright, flat, 
 - `--accent #1d4fa8` (De Stijl blue), `--accent-2 #2f66c7`, `--gold #b8860b` for records on white, red `#d1291f`, yellow `#f2c318`; good `#1f8a4c`, bad `#c8241b`.
 - Type: `"Helvetica Neue", Helvetica, Arial, sans-serif`, headings 800, tight. Radius 0; 3px black borders on tiles and buttons, no shadows, no gradients.
 - Tiles: a solid colour block in the tile's hue (red, blue, yellow, black, white) instead of a thin edge, with black text where the block is yellow or white and white text where it is red, blue or black. Speel gets the Mondrian grid treatment: a white panel split by thick black lines with a red, a blue and a yellow block.
+
+## Round three for Líofa (14 Nov 2026, Matthew)
+"Colours good, more ornamentation in the background, more knotty, but the script is too much and the gold a little too bright. Better script, more chill." So: gold softened to `#c9a24e` / `#d6bc80`, the serif headings, small caps and drop cap removed (plain sans, only the Líofa wordmark keeps a quiet serif), card emphasis upright, a chain-knot lattice of interlaced rings over the whole background, and a ring-chain knot band under headings and across Imir.

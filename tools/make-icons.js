@@ -48,12 +48,12 @@ const FONT = '/System/Library/Fonts/Apple Color Emoji.ttc';
 const ICONS = {
   juegos: {
     emoji: '🔥',
-    bg: [255, 61, 139],         // #ff3d8b, carnaval hot pink
+    bg: [228, 37, 43],          // #e4252b, chiva red
     inset: 0.66                 // share of the tile the emoji fills
   },
   gaeilge: {
     emoji: '☘️',
-    bg: [46, 122, 82],          // moss green, Líofa's accent
+    bg: [15, 58, 42],           // #0f3a2a Connemara green
     inset: 0.66
   },
   nederlands: {

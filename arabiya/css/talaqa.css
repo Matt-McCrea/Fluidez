@@ -978,3 +978,41 @@ h2, .arc-brand, .g-over-eyebrow { letter-spacing:.01em; }
 .arc-btn.on { background:var(--accent); border-color:var(--accent); }
 .g-over-eyebrow, .g-fb-label { letter-spacing:.08em; }
 @media (prefers-reduced-motion:reduce) { * { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; } }
+
+/* ============================================================================
+ * ZELLIGE, ROUND TWO (14 Nov 2026): the courtyard. Lattice at 7%, a zellige
+ * zigzag band in gold and turquoise under the header, the Ilʿab tile topped by
+ * a pointed (ogee-ish) arch. Colours are unchanged.
+ * ========================================================================== */
+body {
+  background-image:
+    linear-gradient(45deg, transparent 47%, rgba(226,176,74,.07) 48% 52%, transparent 53%),
+    linear-gradient(-45deg, transparent 47%, rgba(226,176,74,.07) 48% 52%, transparent 53%),
+    linear-gradient(0deg, transparent 47%, rgba(53,194,180,.06) 48% 52%, transparent 53%),
+    linear-gradient(90deg, transparent 47%, rgba(53,194,180,.06) 48% 52%, transparent 53%);
+}
+.arc-top { flex-wrap:wrap; align-items:baseline; }
+.arc-top::after {
+  content:''; flex:0 0 100%; height:12px; margin-top:12px;
+  background:
+    linear-gradient(135deg, #e2b04a 25%, transparent 25%) -6px 0 / 12px 12px,
+    linear-gradient(225deg, #e2b04a 25%, transparent 25%) -6px 0 / 12px 12px,
+    linear-gradient(315deg, #35c2b4 25%, transparent 25%) 0 0 / 12px 12px,
+    linear-gradient(45deg, #35c2b4 25%, transparent 25%) 0 0 / 12px 12px;
+  opacity:.9;
+}
+.arc-jugar {
+  border:0; border-radius:0; padding:62px 22px 20px; isolation:isolate;
+  background:linear-gradient(180deg, #e2b04a 0%, #35c2b4 100%);       /* the arch's gold-to-turquoise edge */
+  clip-path:polygon(0 70px, 3% 52px, 11% 32px, 27% 13px, 50% 0, 73% 13px, 89% 32px, 97% 52px, 100% 70px, 100% 100%, 0 100%);
+}
+.arc-jugar::after {
+  content:''; position:absolute; inset:3px; z-index:0;
+  background:linear-gradient(160deg, color-mix(in srgb, var(--g) 34%, var(--panel)) 0%, var(--panel) 80%);
+  clip-path:polygon(0 68px, 3% 50px, 11% 31px, 27% 13px, 50% 2px, 73% 13px, 89% 31px, 97% 50px, 100% 68px, 100% 100%, 0 100%);
+}
+.arc-jugar::before {
+  content:''; position:absolute; left:50%; top:24px; width:13px; height:13px; margin-left:-6.5px; z-index:2;
+  background:var(--teal); transform:rotate(45deg); box-shadow:0 0 0 3px var(--panel), 0 0 0 5px var(--gold);
+}
+.arc-jugar > * { position:relative; z-index:1; }

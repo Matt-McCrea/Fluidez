@@ -21,31 +21,32 @@
  * ========================================================================== */
 
 :root {
-  /* Carnaval: Barranquilla at night. Deep plum, hot pink, carnival yellow. */
-  --bg:#170a1f; --panel:#241133; --panel-2:#321a45;
-  --text:#fbf3ff; --muted:#c3a8d6; --border:#4a2a63;
-  --accent:#ff3d8b; --accent-2:#ff79ad;
-  --good:#3ee08f; --good-bg:#12351f; --bad:#ff5a4f; --bad-bg:#3d1620;
-  --warn:#ffd23f;
-  --gold:#ffd23f;                      /* records, and only records */
-  --on-accent:#170a1f;
-  --shadow:0 6px 28px rgba(0,0,0,.5); --radius:22px;
+  /* La chiva: the painted bus and the Wayuu mochila. Sunny cream, loud folk colour. */
+  --bg:#fff3d1; --panel:#ffffff; --panel-2:#ffe9b0;
+  --text:#1d1d1b; --muted:#5a4a2e; --border:#1d1d1b;
+  --accent:#d6247a; --accent-2:#b01862;
+  --good:#0a8545; --good-bg:#d9f5e4; --bad:#c81e24; --bad-bg:#ffdcdc;
+  --warn:#a35f00;
+  --gold:#a35f00;                      /* records, and only records */
+  --on-accent:#ffffff;
+  --shadow:4px 4px 0 #1d1d1b; --radius:18px;
+  --chiva-red:#e4252b; --chiva-yellow:#ffc20e; --chiva-blue:#0f4fbf; --chiva-green:#098544; --chiva-orange:#ff7a00; --chiva-magenta:#d6247a;
+  --zig:repeating-linear-gradient(135deg,#e4252b 0 8px,#ffc20e 8px 16px,#0f4fbf 16px 24px,#0c9a52 24px 32px,#ff7a00 32px 40px);
+  --pop:4px 4px 0 #1d1d1b;
   --font:ui-rounded, "SF Pro Rounded", -apple-system, system-ui, sans-serif;
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
   color:var(--text); font-family:var(--font);
   background:
-    radial-gradient(circle at 100% 0%, rgba(255,61,139,.30) 0, transparent 46%),
-    radial-gradient(circle at 0% 0%, rgba(255,210,63,.16) 0, transparent 34%),
-    radial-gradient(circle at 12% 7%, rgba(255,210,63,.35) 0 2px, transparent 3px),
-    radial-gradient(circle at 78% 4%, rgba(62,224,143,.35) 0 2px, transparent 3px),
-    radial-gradient(circle at 90% 11%, rgba(255,210,63,.35) 0 2px, transparent 3px),
-    radial-gradient(circle at 40% 3%, rgba(255,121,173,.45) 0 2px, transparent 3px),
+    radial-gradient(circle at 100% 100%, rgba(228,37,43,.10) 0, transparent 40%),
+    radial-gradient(circle at 0% 60%, rgba(15,79,191,.07) 0, transparent 38%),
     var(--bg);
   background-repeat:no-repeat; background-attachment:fixed;
 }
+/* the Wayuu zigzag along the very top of the screen, under the notch */
+body::before { content:''; position:fixed; z-index:50; left:0; right:0; top:0; height:calc(7px + env(safe-area-inset-top, 0px)); background:var(--zig); border-bottom:2px solid #1d1d1b; pointer-events:none; }
 button, input { font-family:var(--font); }
 .app-main { padding:0; max-width:none; }
 /* The notch, once for every screen: the host every screen is drawn into
@@ -89,7 +90,7 @@ button, input { font-family:var(--font); }
 .arc-daily {
   display:block; width:100%; text-align:left; cursor:pointer;
   border:1px solid var(--border); border-radius:var(--radius);
-  background:linear-gradient(135deg, #4a1a52 0%, var(--panel) 62%);
+  background:linear-gradient(135deg, #ffd9ec 0%, var(--panel) 62%);
   padding:16px 18px; margin-bottom:22px; color:inherit;
   font:inherit; position:relative; overflow:hidden;
 }
@@ -264,15 +265,15 @@ button, input { font-family:var(--font); }
 .arc-study {
   display:block; width:100%; text-align:left; cursor:pointer; font:inherit; color:inherit;
   border:1px solid var(--border); border-radius:var(--radius);
-  background:linear-gradient(135deg,#3d2a2c 0%,var(--panel) 60%);
+  background:linear-gradient(135deg,#ffe3a3 0%,var(--panel) 60%);
   padding:15px 18px; margin-bottom:14px; position:relative; overflow:hidden;
 }
-.arc-study::after { content:''; position:absolute; inset:0 auto 0 0; width:3px; background:#ffb02e; }
+.arc-study::after { content:''; position:absolute; inset:0 auto 0 0; width:3px; background:#ff7a00; }
 .arc-study:active { transform:translateY(1px); }
 .arc-study.done { opacity:.62; }
 .arc-study-k {
   display:block; font-size:.62rem; font-weight:700; letter-spacing:.14em;
-  text-transform:uppercase; color:#ffb02e; margin-bottom:5px;
+  text-transform:uppercase; color:#a35000; margin-bottom:5px;
 }
 .arc-study b { display:block; font-size:1.16rem; font-weight:700; line-height:1.2; }
 .arc-study-s { display:block; margin-top:6px; font-size:.8rem; color:var(--muted); }
@@ -288,8 +289,8 @@ button, input { font-family:var(--font); }
   font-size:.62rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
   padding:.2em .6em; border-radius:999px; background:var(--panel-2); color:var(--muted);
 }
-.study-tag[data-source="fallo"] { background:#4a1a22; color:#ff8b7e; }
-.study-tag[data-source="nuevo"] { background:#12351f; color:var(--good); }
+.study-tag[data-source="fallo"] { background:#ffdcdc; color:#a3141a; }
+.study-tag[data-source="nuevo"] { background:#d9f5e4; color:#0a6a39; }
 .study-quit {
   margin-left:auto; background:transparent; border:0; color:var(--muted);
   font-size:1.05rem; cursor:pointer; padding:2px 6px;
@@ -531,27 +532,116 @@ a.arc-mode { text-decoration:none; }
 .arc-irr-en { margin:10px 0 0; font-size:.85rem; color:var(--muted); }
 .arc-irr-body .arc-ctable, .arc-irr-body .arc-conj-wrap { margin-top:6px; }
 
-/* ==== Carnaval theme (14 Nov 2026), see docs/app-themes.md ================
-   Overrides on top of the shared sheets: heavy rounded headings, chunky tiles
-   with a glow in their own hue, dark text where the pink accent is a fill. */
-.arc-brand, .arc-stats-top h2, .arc-jugar-k, .arc-name, .arc-daily-t, .arc-study b, .arc-check b, .arc-mode b { font-weight:800; }
+/* ==== La chiva theme (14 Nov 2026, round two), see docs/app-themes.md ======
+   Solid chiva-colour tiles, 2px ink outline, chunky offset shadow, a Wayuu
+   zigzag band on Jugar. The game hues are set inline by js (--g); the
+   !important rules below swap them for the chiva palette. */
+.arc-brand, .arc-stats-top h2, .arc-jugar-k, .arc-name, .arc-daily-t, .arc-study b, .arc-check b, .arc-mode b { font-weight:900; }
+.arc-brand { font-weight:900; letter-spacing:.2em; }
+.arc-top { margin-top:6px; }
+
+.arc-grid > .arc-tile:nth-child(6n+1) { --g:#e4252b !important; --tx:#fff; --tm:#fff; }
+.arc-grid > .arc-tile:nth-child(6n+2) { --g:#0f4fbf !important; --tx:#fff; --tm:#fff; }
+.arc-grid > .arc-tile:nth-child(6n+3) { --g:#ffc20e !important; --tx:#1d1d1b; --tm:#3a2f00; }
+.arc-grid > .arc-tile:nth-child(6n+4) { --g:#098544 !important; --tx:#fff; --tm:#fff; }
+.arc-grid > .arc-tile:nth-child(6n+5) { --g:#ff7a00 !important; --tx:#1d1d1b; --tm:#2f1800; }
+.arc-grid > .arc-tile:nth-child(6n) { --g:#d6247a !important; --tx:#fff; --tm:#fff; }
 .arc-tile {
-  border-width:2px; padding:16px 14px 14px;
-  box-shadow:0 0 0 0 transparent, 0 6px 18px color-mix(in srgb, var(--g) 22%, transparent);
+  background:var(--g); color:var(--tx, #fff); border:2px solid #1d1d1b; border-radius:18px;
+  padding:16px 14px 14px; box-shadow:var(--pop);
+  transition:transform .08s ease, box-shadow .08s ease;
 }
-.arc-tile::before { width:6px; }
-.arc-tile:hover { box-shadow:0 8px 24px color-mix(in srgb, var(--g) 40%, transparent); }
-.arc-jugar { border-width:2px; box-shadow:0 8px 28px color-mix(in srgb, var(--g) 35%, transparent); }
-.arc-mode { border-width:2px; }
-.arc-daily, .arc-study, .arc-check { border-width:2px; }
+.arc-tile:nth-child(odd) { transform:rotate(-.6deg); }
+.arc-tile:nth-child(even) { transform:rotate(.6deg); }
+.arc-tile::before { display:none; }
+.arc-tile:hover { border-color:#1d1d1b; transform:translate(-1px,-1px); box-shadow:6px 6px 0 #1d1d1b; }
+.arc-tile:active { transform:translate(3px,3px); box-shadow:1px 1px 0 #1d1d1b; }
+.arc-tile[disabled] { opacity:.55; }
+.arc-tile[disabled]:hover { border-color:#1d1d1b; }
+.arc-tile:focus-visible { outline:3px solid #1d1d1b; outline-offset:3px; }
+.arc-name { color:var(--tx, #fff); font-size:1.08rem; }
+.arc-rule { color:var(--tm, #fff); }
+.arc-pb { color:var(--tx, #fff); }
+.arc-pb.none, .arc-pb-k { color:var(--tm, #fff); }
+.arc-spark path { stroke:var(--tx, #fff); } .arc-spark circle { fill:var(--tx, #fff); }
+.arc-data { background:#fff; color:#1d1d1b; border:2px solid #1d1d1b; border-radius:9px; }
+.arc-data:hover { color:#1d1d1b; border-color:#1d1d1b; background:var(--chiva-yellow); }
+
+.arc-jugar {
+  --g:#e4252b !important; background:#fff; color:var(--text); border:2px solid #1d1d1b; border-radius:20px;
+  padding:34px 20px 20px; box-shadow:var(--pop);
+}
+.arc-jugar::before { content:''; position:absolute; left:0; right:0; top:0; height:16px; background:var(--zig); border-bottom:2px solid #1d1d1b; }
+.arc-jugar-k { color:var(--chiva-red); font-size:2rem; }
+.arc-jugar-t { color:var(--text); }
+.arc-jugar:active, .arc-mode:active, .arc-daily:active, .arc-study:active { transform:translate(3px,3px); box-shadow:1px 1px 0 #1d1d1b; }
+.arc-mode, .arc-daily, .arc-study, .arc-check, .arc-prow, .arc-chart { border-width:2px; border-color:#1d1d1b; box-shadow:var(--pop); }
+.arc-mode { --g:var(--chiva-blue); }
+.arc-mode::before { width:10px; background:var(--g); }
+.arc-mode.on { background:#ffe9b0; border-color:#1d1d1b; }
+.arc-daily::after, .arc-study::after, .arc-check::after { width:8px; }
+.arc-daily::after { background:var(--chiva-magenta); }
+.arc-daily-k { color:#a3105c; }
+.arc-check { background:linear-gradient(135deg,#d9ecff 0%,#fff 65%); }
+.arc-check::after { background:var(--chiva-blue); }
+.arc-check-k { color:var(--chiva-blue); }
+.arc-figs, .arc-picks { border-width:2px; border-color:#1d1d1b; box-shadow:var(--pop); }
+.arc-figs { background:#1d1d1b; }
+.arc-fig-k { color:var(--muted); }
+.arc-btn, .arc-focus, .arc-level, .arc-back, .arc-lang { border:2px solid #1d1d1b; color:var(--text); background:#fff; }
+.arc-btn { box-shadow:3px 3px 0 #1d1d1b; border-radius:14px; }
+.arc-btn.on, .arc-chip.on { background:var(--chiva-magenta); color:#fff; border-color:#1d1d1b; }
+.arc-level, .arc-lang { background:var(--chiva-yellow); font-weight:900; color:#1d1d1b; }
+.arc-level:hover { color:#1d1d1b; border-color:#1d1d1b; }
+.arc-focus.on b { color:#a3105c; }
+.arc-chip, .arc-irr-tab, .arc-tchip { border:2px solid #1d1d1b; background:#fff; color:var(--text); }
+.arc-chip { font-weight:700; }
+.arc-tchip { border-width:1.5px; }
+.arc-tchip[data-s="dominado"] { background:#d9f5e4; }
+.arc-tchip[data-s="casi"] { background:#fff0c2; }
+.arc-tchip[data-s="aprender"] { background:#ffdcdc; }
+.arc-tchip[data-s="sin"] { color:var(--muted); }
+.arc-irr-tab.on { background:var(--chiva-yellow); box-shadow:none; border-color:#1d1d1b; }
+.arc-bar { background:#ffe9b0; border:1.5px solid #1d1d1b; height:9px; }
+.arc-bar i { background:var(--chiva-green); }
+.arc-pick.on { box-shadow:inset 8px 0 0 var(--chiva-magenta); }
+.arc-pick.on b, .arc-link { color:#a3105c; }
+.arc-foot a { color:#a3105c; }
+.arc-when b, .arc-how b, .arc-ex-es b { color:#a3105c; }
+.arc-conj td b { color:var(--g, #a3105c); }
+.arc-conj-wrap, .arc-ctable { border:2px solid #1d1d1b; }
+.arc-conj th { color:var(--text); background:var(--chiva-yellow); }
+.arc-conj td { border-top-color:#1d1d1b; }
+.cv-bubble { border:2px solid #1d1d1b; box-shadow:3px 3px 0 #1d1d1b; }
+.cv-me { background:#ffe9b0; }
+.cv-playing { border-color:#1d1d1b; box-shadow:0 0 0 3px var(--chiva-magenta), 3px 3px 0 #1d1d1b; }
+.spk { background:var(--chiva-yellow); border:2px solid #1d1d1b; }
+.arc-chipq { border:2px solid #1d1d1b; color:var(--text); background:#fff; }
+.arc-fail { border:2px solid #1d1d1b; border-left-width:8px; border-left-color:var(--bad); }
+.arc-wtbtn { border:2px solid #1d1d1b; background:#fff; box-shadow:3px 3px 0 #1d1d1b; }
 .g-daily-go, .hg-go, .liga-go, .g-again { color:var(--on-accent); }
 .g-daily-go:hover { background:var(--accent-2); }
 .g-combo[data-hot="1"] { color:var(--on-accent); }
-.g-resume { background:rgba(23,10,31,.9); }
+.g-resume { background:rgba(255,243,209,.95); }
 .arc-guided > :not(.arc-top):not(.arc-spot) { filter:saturate(.4); }
-.arc-spot-k { color:var(--on-accent); }
+.arc-spot-k { background:var(--chiva-magenta); color:#fff; }
 .g-chip.chosen { color:var(--on-accent); }
+.study-q { color:var(--text); }
 
-/* styles.css recolours --accent per level (:root[data-level]); Carnaval keeps
-   one pink for every level. Same specificity, later in the cascade. */
-:root[data-level], :root[data-theme] { --accent:#ff3d8b; --accent-2:#ff79ad; }
+/* styles.css recolours --accent per level (:root[data-level]); La chiva keeps
+   one magenta for every level. Same specificity, later in the cascade. */
+:root[data-level], :root[data-theme] { --accent:#d6247a; --accent-2:#b01862; --on-accent:#fff; }
+@media (prefers-reduced-motion:reduce) { .arc-tile { transform:none !important; } }
+
+/* ---- the round, in chiva colours ----------------------------------------- */
+.g-opt { border:2px solid #1d1d1b; border-radius:14px; background:#fff; box-shadow:3px 3px 0 #1d1d1b; font-weight:650; }
+.g-opt:hover { border-color:#1d1d1b; background:#fff4cc; }
+.g-opt:active { transform:translate(2px,2px); box-shadow:1px 1px 0 #1d1d1b; }
+.g-opt.right { border-color:#1d1d1b; background:#bff0d3; color:#0a5a30; }
+.g-opt.wrong { border-color:#1d1d1b; background:#ffc9c9; color:#a3141a; }
+.g-clock { border:2px solid #1d1d1b; background:#fff; height:12px; border-radius:99px; overflow:hidden; }
+.g-clock-fill { background:var(--zig); }
+.g-exit { border:2px solid #1d1d1b; background:var(--chiva-yellow); color:#1d1d1b; border-radius:12px; box-shadow:2px 2px 0 #1d1d1b; }
+.g-name { background:var(--chiva-green) !important; color:#fff !important; }
+.g-band { background:var(--chiva-blue) !important; color:#fff !important; }
+.g-score { color:var(--chiva-red); font-weight:900; }

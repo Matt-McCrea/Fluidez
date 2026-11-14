@@ -1,23 +1,22 @@
 /* ============================================================================
  * SVOBODNO: one self-contained sheet (merged from Fluidez css/styles.css, games.css
- * and arcade.css, repainted). Dark only: a board you open with one hand, not a
- * document. NO WEB FONTS: it has to work offline, so the personality comes from
+ * and arcade.css, repainted). Light only (Gzhel): a board you open with one hand. NO WEB FONTS: it has to work offline, so the personality comes from
  * heavy weights, tight tracking and tabular figures. Phone first, with
  * safe-area insets; text on every hue is AA (dark ink on the bright tiles).
  *
  * Hues: Играть #e3a83a, Глаголы #d2402f, Слова #c77d2e, Фразы #b8577a, Падежи #3f8f8a,
  * Вид #7a6fd0, Движение #3d86c6, Числа #9aa83a, Буквы #e3a83a, Говорить #2fb3a5 (set in js/ru-arcade.js).
- * Palette: Khokhloma, black lacquer with red and gold.
+ * Palette: Gzhel, white porcelain painted in cobalt with a touch of matryoshka red.
  * ========================================================================== */
 :root {
-  --bg:#110c0b; --panel:#1d1311; --panel-2:#2a1b17; --border:#5a3a1c;
-  --text:#f7ede2; --muted:#c2a691;
-  --accent:#d8352a; --accent-2:#ff7a66; --gold:#e8b34a;
-  --good:#5fd38d; --good-bg:#14301c; --bad:#ff6b5e; --bad-bg:#3a1a16;
-  --warn:#e8b34a; --ink:#120c0b;        /* dark ink for text on a bright fill */
-  --shadow:0 6px 28px rgba(0,0,0,.5); --radius:4px;
-  --head:"Avenir Next Condensed","Arial Narrow","PT Sans Narrow",sans-serif;
-  color-scheme: dark;
+  --bg:#f4f6fb; --panel:#ffffff; --panel-2:#e8edf8; --border:#b9c6e6;
+  --text:#14245a; --muted:#4a5884;
+  --accent:#1f45b5; --accent-2:#3a63d6; --gold:#8a5f00; --red:#c8202f;
+  --good:#157a3f; --good-bg:#dcf3e5; --bad:#c8202f; --bad-bg:#fbe3e5;
+  --warn:#8a5f00; --ink:#ffffff;        /* ink for text on a dark fill */
+  --shadow:0 6px 22px rgba(31,69,181,.14); --radius:14px;
+  --head:"Avenir Next","PT Sans",system-ui,sans-serif;
+  color-scheme: light;
 }
 
 /* ---- base ---- */
@@ -25,12 +24,17 @@
 html, body { margin:0; height:100%; }
 html { -webkit-text-size-adjust:100%; }
 body {
+  /* Gzhel flourishes in two corners: a cobalt bloom with petals and a leaf, under 5% */
   background:
-    radial-gradient(circle at 100% 0, rgba(232,179,74,.16) 0 2px, transparent 3px) 0 0/22px 22px,
-    radial-gradient(ellipse 180px 120px at 100% 0, rgba(232,179,74,.13), transparent 70%),
-    linear-gradient(180deg,#2a0c0a 0%,#150a09 45%,#0c0807 100%) fixed;
+    radial-gradient(circle at 0 100%, rgba(31,69,181,.05) 0 38px, transparent 39px),
+    radial-gradient(ellipse 70px 26px at 62px 100%, rgba(31,69,181,.045), transparent 70%),
+    radial-gradient(ellipse 26px 70px at 0 calc(100% - 62px), rgba(31,69,181,.045), transparent 70%),
+    radial-gradient(circle at 100% 0, rgba(31,69,181,.05) 0 38px, transparent 39px),
+    radial-gradient(ellipse 70px 26px at calc(100% - 62px) 0, rgba(31,69,181,.045), transparent 70%),
+    radial-gradient(ellipse 26px 70px at 100% 62px, rgba(31,69,181,.045), transparent 70%),
+    linear-gradient(180deg,#f9fafe 0%,#f4f6fb 100%) fixed;
   background-color:var(--bg); color:var(--text);
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","PT Sans",Arial,"Noto Sans",sans-serif;
+  font-family:"PT Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
   font-size:17px; line-height:1.5;
   overscroll-behavior:none;
 }
@@ -56,10 +60,10 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 .accent-btn:hover { border-color:var(--accent); background:var(--panel-2); }
 
 /* the CEFR band a question came from */
-[data-band="A1"] { --band: #57c47a; }
-[data-band="A2"] { --band: #4aa3e0; }
-[data-band="B1"] { --band: #3fbfb0; }
-[data-band="B2"] { --band: #a98af0; }
+[data-band="A1"] { --band: #1d7a44; }
+[data-band="A2"] { --band: #1b62a8; }
+[data-band="B1"] { --band: #0f7a74; }
+[data-band="B2"] { --band: #5b4fc0; }
 
 /* =========================================================== a round in play */
 /* --game is set on the element by the app, so it must NOT be declared
@@ -170,7 +174,7 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
    app in front): the clock is stopped until it reaches nothing */
 .g-resume {
   position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center;
-  background: rgba(17, 12, 11, .86); color: #fff; font-size: 6.5rem; font-weight: 800;
+  background: rgba(244, 246, 251, .92); color: var(--accent); font-size: 6.5rem; font-weight: 800;
   font-variant-numeric: tabular-nums; animation: g-beat .5s ease;
 }
 
@@ -306,7 +310,7 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
   display: block; margin: 24px auto 0; border: none; background: var(--gold); color: var(--ink);
   font-weight: 700; font-size: 1.05rem; padding: 14px 46px; border-radius: 11px; cursor: pointer;
 }
-.g-again:hover { background: #f2c460; }
+.g-again:hover { background: #b57a00; }
 .g-over-stats {
   display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin: 26px 0 4px;
 }
@@ -556,7 +560,7 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 }
 .arc-jugar:active { transform:translateY(1px); }
 .arc-jugar-k {
-  display:block; font-size:1.7rem; font-weight:800; letter-spacing:-.01em; color:var(--text);
+  display:block; font-size:1.7rem; font-weight:800; letter-spacing:-.01em; color:#fff;
 }
 .arc-jugar-t { display:block; margin-top:3px; font-size:.95rem; font-weight:600; }
 .arc-jugar-s {
@@ -753,14 +757,14 @@ b.arc-ct-c { color:var(--muted); font-weight:600; }
 .arc-how .arc-irish, .arc-when .arc-irish { color:var(--accent-2); }
 
 @media (prefers-reduced-motion:reduce) { .arc-tile, .arc-jugar, .arc-mode { transition:none; } }
-.arc-pb { color:color-mix(in srgb, var(--g) 72%, #fff); }
+.arc-pb { color:color-mix(in srgb, var(--g) 85%, #000); }
 
 
 /* ============================================================================
  * SVOBODNO: Russian. .ru nodes, stress marks, the tiles, stage 0, the speaker.
  * ========================================================================== */
 .ru { line-height:1.45; font-size:1.18em; letter-spacing:.005em; }
-.ru.big { font-size:1.7em; }
+.ru.big { font-size:1.7em; color:var(--accent); }
 .ru.faded { -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; cursor:default; }
 .ru.held { color:var(--gold); }
 .tr { font-size:.78rem; color:var(--muted); letter-spacing:.01em; line-height:1.3; direction:ltr; }
@@ -813,7 +817,7 @@ b.arc-ct-c { color:var(--muted); font-weight:600; }
 .arc-small { width:100%; display:flex; flex-direction:row; align-items:center; justify-content:center; gap:10px; min-height:52px; margin-top:10px; }
 .arc-small .arc-en { min-height:0; }
 .arc-jugar-k .ru { font-size:1.9rem; vertical-align:middle; }
-.arc-brand-ru { font-size:1.4rem; color:var(--gold); }
+.arc-brand-ru { font-size:1.4rem; color:var(--accent); }
 .arc-gear { background:var(--panel-2); color:var(--text); border:1px solid var(--border); border-radius:999px; min-width:44px; margin-inline-start:8px; }
 .arc-title-ru { margin-inline-start:auto; color:var(--gold); }
 .arc-ex-ru { text-align:left; }
@@ -888,7 +892,7 @@ b.arc-ct-c { color:var(--muted); font-weight:600; }
 .arc-seg-b { flex:1; display:flex; align-items:baseline; justify-content:center; gap:8px; min-height:44px; padding:8px 12px; border:0; border-radius:999px; background:transparent; color:var(--muted); font:inherit; cursor:pointer; }
 .arc-seg-b b { font-size:.95rem; font-weight:800; }
 .arc-seg-b .ru { font-size:1em; }
-.arc-seg-b.on { background:var(--accent); color:#fff; }
+.arc-seg-b.on { background:var(--red); border-color:var(--red); color:#fff; }
 .arc-talk .sp-card .spk, .cv-bubble .cv-spk { font-size:1.25rem; min-width:44px; min-height:44px; }
 .cv-list { margin-bottom:6px; }
 .cv-chat { display:flex; flex-direction:column; gap:10px; margin:12px 0; }
@@ -944,10 +948,29 @@ b.arc-ct-c { color:var(--muted); font-weight:600; }
 @media (hover: hover) { .g-exit:hover { border-color: var(--bad); color: var(--bad); } }
 
 
-/* ---- khokhloma: condensed headings, gold inner border on panels ---- */
+/* ---- gzhel: cobalt-ink headings, porcelain panels with a cobalt brush edge ---- */
 h1, h2, h3, .g-name, .arc-h, [class*="title"] { font-family:var(--head); }
-h1, h2 { text-transform:uppercase; letter-spacing:.08em; font-weight:700; }
+h1, h2 { text-transform:none; letter-spacing:0; font-weight:700; }
+.arc-brand { text-transform:none; letter-spacing:.04em; font-weight:700; font-size:1.35rem; color:var(--accent); }
 .arc-mode, .arc-ctable, .sp-card, .g-say-card, .hr-letter, .hr-word, .cv-bubble, .g-kbd {
-  box-shadow: inset 0 0 0 1px rgba(232,179,74,.45);
+  box-shadow: inset 0 0 0 1px rgba(31,69,181,.18);
 }
+/* Tiles: white glaze, a cobalt brush edge down the left and a soft wash in one corner */
+.arc-tile {
+  background:
+    radial-gradient(circle at 100% 0, color-mix(in srgb, var(--g) 16%, transparent) 0, transparent 62%),
+    var(--panel);
+  border:1.5px solid color-mix(in srgb, var(--g) 35%, var(--border));
+}
+.arc-tile::before { width:6px; border-radius:0 3px 3px 0; }
+/* Играть: solid cobalt, white text, scalloped Gzhel edge along the bottom */
+.arc-jugar {
+  border:0; background:var(--g); color:#fff; padding-bottom:30px;
+  background-image:radial-gradient(circle at 10px 100%, var(--panel) 0 8px, transparent 8.5px);
+  background-size:20px 14px; background-repeat:repeat-x; background-position:0 100%;
+  background-color:var(--g);
+  box-shadow:var(--shadow);
+}
+.arc-jugar .arc-jugar-k { color:#fff; }
+.arc-jugar * { color:inherit; }
 @media (prefers-reduced-motion: reduce) { * { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; } }

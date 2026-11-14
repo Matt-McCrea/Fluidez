@@ -18,7 +18,7 @@ window.RUBukvy = (function () {
   var UI = window.UI, RU = window.RU, GC = window.RUCore;
   var KEY = 'svobodno.bukvy';
   var PASS = 8, ROUND = 10, EXAM = 30, EXAM_PASS = 24, EXAM_A2 = 28;
-  var HUE = '#e3a83a';
+  var HUE = '#1f45b5';
   var ACUTE = '́';
   var host = function () { return document.getElementById('stage-host'); };
   var nav = { board: function () {}, push: function () {}, back: function () {}, round: function () {} };

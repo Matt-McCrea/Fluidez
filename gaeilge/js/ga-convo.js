@@ -16,7 +16,7 @@
 window.GAConvo = (function () {
   var KEY = 'liofa.convos';
   var PASS_FRAC = 0.8;
-  var HUE = '#b24a22';
+  var HUE = '#ea7a60';
 
   // ---- the language bits (Irish) ------------------------------------------------------------
   function textOf(l) { return l.ga; }

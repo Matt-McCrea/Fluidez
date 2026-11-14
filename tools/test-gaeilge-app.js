@@ -45,7 +45,7 @@ ok(JSON.stringify(scriptsInHtml.filter(s => scripts.indexOf(s) !== -1)) === JSON
 ok(/<html lang="ga"/.test(html) && /<title>Líofa<\/title>/.test(html), 'index.html must be lang ga, titled Líofa');
 const manifest = JSON.parse(fs.readFileSync(path.join(GE, 'manifest.json'), 'utf8'));
 ok(manifest.name === 'Líofa' && manifest.short_name === 'Líofa' && manifest.lang === 'ga' &&
-   manifest.theme_color === '#f3eee2' && manifest.background_color === '#f3eee2', 'manifest fields');
+   manifest.theme_color === '#0f3a2a' && manifest.background_color === '#0f3a2a', 'manifest fields');
 ok(/CACHE_NAME = 'liofa-'/.test(swSrc) && !/\.\.\//.test(swSrc), 'sw.js: cache name liofa-, no ../');
 ok(/cache: 'reload'/.test(swSrc), 'sw.js must fetch past the HTTP cache');
 const cacheVer = /CACHE_VERSION = '([^']+)'/.exec(swSrc)[1];
@@ -54,7 +54,7 @@ ok(new RegExp("BUILD = '" + cacheVer + "'").test(perfSrc), 'Perf.BUILD must equa
 ['icon-192.png', 'icon-512.png', 'icon-512-maskable.png', 'apple-touch-icon.png'].forEach(f =>
   ok(fs.existsSync(path.join(GE, 'icons', f)), 'missing icon ' + f));
 const css = fs.readFileSync(path.join(GE, 'css/liofa.css'), 'utf8');
-['#e8b64a', '#2fae6e', '#a26bd1', '#3a8fd6', '#e0a526', '#d9653b', '#2fb3a5', '#e05a7a', '#f3eee2', '#fbf8f0'].forEach(c =>
+['#c9a24e', '#0f3a2a', '#164a36', '#f6efdc', '#d6bc80', '#c8573e'].forEach(c =>
   ok(css.toLowerCase().indexOf(c) !== -1, 'liofa.css lacks the spec colour ' + c));
 ok(!/@import|url\(|fonts\.g/.test(css), 'liofa.css must be self-contained, no web fonts');
 // no dashes in what the app shows: UI strings in the app scripts (spelling hyphens in n-/t- are fine)

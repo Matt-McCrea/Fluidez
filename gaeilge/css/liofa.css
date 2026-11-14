@@ -1,21 +1,24 @@
 /* ============================================================================
  * LÍOFA: one self-contained sheet (merged from Fluidez css/styles.css, games.css
- * and arcade.css, repainted). Light (vellum and ink): a board you open with one hand. NO WEB FONTS: it has to work offline, so the personality comes from
+ * and arcade.css, repainted). Dark Connemara green, vellum text, illumination gold and red lead (the Book of Kells): a board you open with one hand. NO WEB FONTS: it has to work offline, so the personality comes from
  * heavy weights, tight tracking and tabular figures. Phone first, with
  * safe-area insets; text on every hue is AA (dark ink on the bright tiles).
  *
- * Hues: Imir #e8b64a, Briathra #2fae6e, Focail #a26bd1, Frásaí #3a8fd6,
- * Séimhiú/urú #e0a526, Forainmneacha #d9653b, Tá nó Is #2fb3a5, Freagair #e05a7a.
+ * Hues: Imir #c9a24e, Briathra #3fbf94, Focail #6f9bea, Frásaí #b394e0,
+ * Séimhiú/urú #e89a3c, Forainmneacha #ea7a60, Tá nó Is #4cc2d0, Freagair #e08fb0.
  * ========================================================================== */
 :root {
-  --bg:#f3eee2; --panel:#fbf8f0; --panel-2:#ece5d4; --border:#d5c9ae; --ctl:#8a7f62;
-  --text:#1f2a22; --muted:#5d6a5f;
-  --accent:#2e7a52; --accent-2:#3f9466; --gold:#96660f;
-  --good:#23824f; --good-bg:#dcefe2; --bad:#b3362b; --bad-bg:#f6dcd7;
-  --warn:#96660f; --ink:#fbf8f0;        /* light ink for text on a deep fill */
-  --shadow:0 1px 2px rgba(60,48,20,.12); --radius:10px;
+  --bg:#0f3a2a; --panel:#164a36; --panel-2:#1d5a42; --border:rgba(201,162,78,.36); --ctl:#b8964f;
+  --text:#f6efdc; --muted:#c7d3c4;
+  --accent:#c9a24e; --accent-2:#d6bc80; --gold:#d6bc80; --lead:#c8573e;
+  --good:#6be3a0; --good-bg:#15553a; --bad:#ff8a76; --bad-bg:#5a2a26;
+  --warn:#d6bc80; --ink:#0b2a1e;        /* dark ink for text on a bright fill */
+  --shadow:0 1px 2px rgba(0,0,0,.3); --radius:10px;
   --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
-  color-scheme: light;
+  /* knotwork band: two rows of interlaced rings, gold over a red-lead row */
+  --knot:radial-gradient(circle at 6px 4px, transparent 0 2.6px, rgba(214,188,128,.75) 3px 4.2px, transparent 4.6px),
+         radial-gradient(circle at 0 4px, transparent 0 2.6px, rgba(200,87,62,.55) 3px 4.2px, transparent 4.6px);
+  color-scheme: dark;
 }
 
 /* ---- base ---- */
@@ -50,10 +53,10 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 .accent-btn:hover { border-color:var(--accent); background:var(--panel-2); }
 
 /* the CEFR band a question came from */
-[data-band="A1"] { --band: #2e7a52; }
-[data-band="A2"] { --band: #2a6fae; }
-[data-band="B1"] { --band: #1f7a72; }
-[data-band="B2"] { --band: #7a4aa8; }
+[data-band="A1"] { --band: #6fd39e; }
+[data-band="A2"] { --band: #8db3ee; }
+[data-band="B1"] { --band: #52c9b8; }
+[data-band="B2"] { --band: #c9a6e8; }
 
 /* =========================================================== a round in play */
 /* --game is set on the element by the app, so it must NOT be declared
@@ -164,7 +167,7 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
    app in front): the clock is stopped until it reaches nothing */
 .g-resume {
   position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center;
-  background: rgba(243, 238, 226, .93); color: var(--text); font-size: 6.5rem; font-weight: 800;
+  background: rgba(15, 58, 42, .94); color: var(--text); font-size: 6.5rem; font-weight: 800;
   font-variant-numeric: tabular-nums; animation: g-beat .5s ease;
 }
 
@@ -747,7 +750,7 @@ b.arc-ct-c { color:var(--muted); font-weight:600; }
 .arc-how .arc-irish, .arc-when .arc-irish { color:var(--accent-2); }
 
 @media (prefers-reduced-motion:reduce) { .arc-tile, .arc-jugar, .arc-mode { transition:none; } }
-.arc-pb { color:color-mix(in srgb, var(--g) 80%, #000); }
+.arc-pb { color:color-mix(in srgb, var(--g) 85%, #fff); }
 
 /* tick the phrases you know */
 .arc-known-search { margin:0 0 12px; }
@@ -817,33 +820,49 @@ b.arc-ct-c { color:var(--muted); font-weight:600; }
 @media (hover: hover) { .g-exit:hover { border-color: var(--bad); color: var(--bad); } }
 
 
-/* ===================== lámhscríbhinn: the manuscript look (14 Nov 2026) ===== */
+/* ===================== the Book of Kells (round three, 14 Nov 2026: calmer type, softer gold, more knotwork) ===== */
 body {
   background-color:var(--bg);
   background-image:
-    radial-gradient(circle at 12% 18%, rgba(120,95,40,.05) 0 1px, transparent 2px),
-    radial-gradient(circle at 63% 71%, rgba(120,95,40,.045) 0 1px, transparent 2px),
-    radial-gradient(circle at 87% 33%, rgba(46,122,82,.04) 0 1px, transparent 2px),
-    radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.55), transparent 60%);
-  background-size:7px 7px, 11px 11px, 5px 5px, 100% 100%;
+    /* interlace: two offset lattices of rings read as a Celtic chain knot */
+    radial-gradient(circle, transparent 0 13px, rgba(214,188,128,.075) 13.5px 15.5px, transparent 16px),
+    radial-gradient(circle, transparent 0 13px, rgba(214,188,128,.06) 13.5px 15.5px, transparent 16px),
+    /* marble */
+    radial-gradient(ellipse 70% 40% at 15% 12%, rgba(255,255,255,.05), transparent 70%),
+    radial-gradient(ellipse 60% 35% at 90% 55%, rgba(63,174,138,.10), transparent 70%),
+    linear-gradient(112deg, transparent 0 38%, rgba(246,239,220,.04) 38.4%, transparent 39%),
+    linear-gradient(68deg, transparent 0 61%, rgba(246,239,220,.035) 61.3%, transparent 62%);
+  background-size:44px 44px, 44px 44px, auto, auto, auto, auto;
+  background-position:0 0, 22px 22px, 0 0, 0 0, 0 0, 0 0;
   background-attachment:fixed;
 }
-h2, .arc-brand, .arc-stats-top h2, .arc-jugar-t, .arc-name, .arc-fig-v, .g-over h2 {
-  font-family:var(--serif);
+/* calm type: the plain sans everywhere; only the brand keeps a quiet serif */
+.arc-brand { font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; font-weight:600; letter-spacing:.06em; font-size:1.25rem; color:var(--text); }
+h2, .arc-stats-top h2 { font-weight:650; letter-spacing:0; color:var(--text); margin-bottom:14px; }
+/* the knotwork band under headings and the top bar */
+h2, .arc-stats-top h2, .arc-top {
+  border-bottom:0; padding-bottom:16px;
+  background-image:var(--knot); background-size:12px 8px, 12px 8px; background-position:left bottom, left bottom; background-repeat:repeat-x;
 }
-h2, .arc-stats-top h2 {
-  font-weight:700; letter-spacing:0; padding-bottom:6px;
-  border-bottom:3px double var(--border);
-}
-.arc-brand { font-weight:700; letter-spacing:.18em; }
-.arc-name { font-weight:700; letter-spacing:0; }
-.arc-top { border-bottom:3px double var(--border); padding-bottom:8px; }
+.arc-name { font-weight:650; letter-spacing:0; }
 .arc-tile, .arc-fig, .arc-chart, .arc-jugar, .arc-mode { box-shadow:none; }
 .arc-tile { background:var(--panel); border-color:var(--border); }
 .arc-tile::before { width:5px; }
-.g-opt, .g-input, .g-mine, .g-chip, .g-build, .accent-btn { border-color:var(--ctl); }
+.arc-tile:hover { border-color:var(--g); }
+.g-opt, .g-input, .g-mine, .g-chip, .g-build, .accent-btn { border-color:rgba(201,162,78,.55); }
 .g-opt, .g-input { border-width:1.5px; }
-.g-build { border-color:var(--ctl); }
 .g-opt.right, .g-input.right, .g-build.right { border-color:var(--good); }
 .g-opt.wrong, .g-input.wrong, .g-build.wrong { border-color:var(--bad); }
 .g-chip.used, .g-chip.used:hover { background:var(--panel-2); border-color:var(--border); opacity:.6; }
+/* card emphasis: soft gold, no heavy italics */
+.arc-when b, .arc-how b, .arc-ex-es b { font-weight:600; color:var(--accent-2); font-style:normal; }
+.arc-when em, .arc-how em, .arc-tip em { font-style:normal; color:var(--accent-2); }
+
+/* Imir: knotwork across the top, no drop cap */
+.arc-jugar { padding-top:30px; border-color:var(--ctl); }
+.arc-jugar::after { content:''; position:absolute; left:0; right:0; top:6px; height:8px; background:var(--knot); background-size:12px 8px; background-repeat:repeat-x; opacity:.9; }
+.arc-jugar-k { color:var(--text); }
+.arc-fig, .arc-prow, .arc-mode, .arc-ctable, .arc-check { border-color:var(--border); }
+.arc-guided > :not(.arc-top):not(.arc-spot):not(.arc-seg) { opacity:.5; }
+.arc-spot-k { color:var(--ink); }
+.arc-irish { font-style:normal; font-weight:600; color:var(--accent-2); }

@@ -20,7 +20,7 @@ window.RUConvo = (function () {
   var UI = window.UI, RU = window.RU, GC = window.RUCore;
   var KEY = 'svobodno.convos';
   var PASS_FRAC = 0.8;
-  var HUE = '#e07a3f';
+  var HUE = '#b3541a';
 
   // ---- the language bits (Russian) ---------------------------------------------------------
   function SP() { return window.RUSpeak; }

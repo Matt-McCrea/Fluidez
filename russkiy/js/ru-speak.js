@@ -21,7 +21,7 @@ window.RUSpeak = (function () {
   var KEY = 'svobodno.speak';
   var ARC_KEY = 'svobodno.arcade';
   var ROUND = 10, PASS_FRAC = 0.8;
-  var HUE = '#2fb3a5';
+  var HUE = '#0a7d5a';
   var KINDS = ['pick', 'say', 'pick', 'build', 'pick', 'say', 'build', 'pick', 'build', 'pick'];
 
   // ---- the language bits (Russian) ---------------------------------------------------------

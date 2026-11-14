@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* Svobodno icons: a gold С on a red-to-black lacquer ground (#d2402f to #110c0b).
+/* Svobodno icons: a white С on a cobalt Gzhel ground (#3a63d6 to #1f45b5).
  * Rendered in headless Chromium (Playwright) so the letter is a real glyph.
  *   node tools/ru/make-icon.js [path-to-playwright] */
 'use strict';
@@ -13,8 +13,8 @@ const SIZES = [['icon-512.png', 512, 0.62], ['icon-192.png', 192, 0.62], ['apple
   for (const [name, size, scale] of SIZES) {
     const p = await b.newPage({ viewport: { width: size, height: size } });
     await p.setContent(`<style>
-      html,body{margin:0;width:${size}px;height:${size}px;background:linear-gradient(180deg,#d8352a 0%,#2a0c0a 55%,#110c0b 100%);display:flex;align-items:center;justify-content:center}
-      span{font:700 ${Math.round(size * scale)}px -apple-system,"Helvetica Neue",Arial,sans-serif;color:#e8b34a;line-height:1;transform:translateY(-${Math.round(size * 0.02)}px)}</style><span>С</span>`);
+      html,body{margin:0;width:${size}px;height:${size}px;background:linear-gradient(180deg,#3a63d6 0%,#1f45b5 100%);display:flex;align-items:center;justify-content:center}
+      span{font:700 ${Math.round(size * scale)}px -apple-system,"Helvetica Neue",Arial,sans-serif;color:#ffffff;line-height:1;transform:translateY(-${Math.round(size * 0.02)}px)}</style><span>С</span>`);
     await p.screenshot({ path: path.join(ROOT, 'russkiy', 'icons', name) });
     await p.close();
   }
