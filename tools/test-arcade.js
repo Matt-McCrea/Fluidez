@@ -1760,6 +1760,7 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     ok(TCk.due(T0) === false, 'offered with no rounds played');
     for (let i = 0; i < 2; i++) GS.record('verbos2:t', { score: 100, combo: 1, band: 'B1', run: 1, seen: 10, right: 7, ms: 60000 });
     ok(TCk.due(T0) === false, 'offered after 2 rounds');
+    ok(TCk.due(T0 + 6 * DAY) === false && TCk.due(T0 + 7 * DAY) === true, 'not offered a week after first open with few rounds');
     GS.record('jugar:c', { score: 100, combo: 1, band: 'B1', run: 1, seen: 10, right: 7, ms: 60000 });
     ok(TCk.playedRounds() === 3 && TCk.due(T0) === true, 'not offered after never checking and 3 rounds');
     W.Shell.go();
@@ -1767,12 +1768,12 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     ok(!!btn(/^Empezar · 3 min$/) && !!btn(/^Más tarde$/), 'the check card lacks its two buttons');
     const jIx = STAGE.all(n => true).indexOf(has('arc-jugar')[0]), cIx = STAGE.all(n => true).indexOf(has('arc-check')[0]),
       gIx = STAGE.all(n => true).indexOf(has('arc-grid')[0]);
-    ok(jIx < cIx && cIx < gIx, 'the check card is not between Jugar and the tiles');
+    ok(cIx < jIx && jIx < gIx, 'the check card is not above Jugar');
     btn(/^Más tarde$/).click();
     ok(has('arc-check').length === 0, 'the card stayed after Más tarde');
     const sn = JSON.parse(localStorage.getItem('fluidez.tensecheck')).snooze;
-    ok(sn > Date.now() + 1.9 * DAY && sn < Date.now() + 2.1 * DAY, 'the snooze is not two days');
-    ok(TCk.due(Date.now() + DAY) === false && TCk.due(Date.now() + 2.1 * DAY) === true, 'the snooze does not end after two days');
+    ok(sn > Date.now() + 0.9 * DAY && sn < Date.now() + 1.1 * DAY, 'the snooze is not a day');
+    ok(TCk.due(Date.now() + 0.5 * DAY) === false && TCk.due(Date.now() + 1.1 * DAY) === true, 'the snooze does not end after a day');
     localStorage.setItem('fluidez.tensecheck', JSON.stringify({ at: T0 - 6 * DAY, res: {} }));
     ok(TCk.due(T0) === false, 'offered 6 days after a check');
     localStorage.setItem('fluidez.tensecheck', JSON.stringify({ at: T0 - 7 * DAY, res: {} }));

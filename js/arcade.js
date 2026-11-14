@@ -426,8 +426,9 @@
     // the same cards one kind at a time.
     if (!FULL()) {
       var jg = G.GAMES.filter(function (g) { return g.key === 'jugar'; })[0];
-      if (jg) wrap.appendChild(jugarCard(jg));
+      // the weekly check, when due, is the first thing on the board
       if (window.TenseCheck && window.TenseCheck.due()) wrap.appendChild(checkCard());
+      if (jg) wrap.appendChild(jugarCard(jg));
     }
 
     // the shelf

@@ -134,8 +134,8 @@
     wrap.appendChild(top);
     if (SK) wrap.appendChild(SK.modeToggle());
 
+    if (window.ARCheck && window.ARCheck.due()) wrap.appendChild(checkCard());   // first thing on the board when due
     wrap.appendChild(ilabCard(GAMES[0]));
-    if (window.ARCheck && window.ARCheck.due()) wrap.appendChild(checkCard());
 
     var withConvos = !!(window.ARConvo && window.ARConvo.all().length);
     var main = tileRow('arc-grid arc-row3' + (withConvos ? ' arc-main4' : ''), GAMES.slice(1, 4));
@@ -997,7 +997,7 @@
   }
 
   window.ARArcade = { board: board, knownScreen: knownScreen, cardScreen: cardScreen, checkRun: checkRun, sheet: sheet,
-    GAMES: GAMES, practisePhrases: practisePhrases, themeLabels: knownThemeLabel, levelPicker: levelPicker, settings: settings, startShelf: startShelf };
+    GAMES: GAMES, checkCard: checkCard, practisePhrases: practisePhrases, themeLabels: knownThemeLabel, levelPicker: levelPicker, settings: settings, startShelf: startShelf };
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
   else boot();

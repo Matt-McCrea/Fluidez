@@ -897,3 +897,6 @@ b.arc-ct-c { color:var(--muted); font-weight:600; }
 .cv-playall { margin-top:4px; }
 .cv-practise { text-align:left; }
 @media (min-width:560px) { .cv-bubble { max-width:70%; } }
+
+/* the weekly check on the Talk screen reads like it does on the board */
+.arc-first .arc-check { text-align:left; margin-bottom:16px; }

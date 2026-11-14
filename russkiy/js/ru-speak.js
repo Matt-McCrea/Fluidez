@@ -296,6 +296,8 @@ window.RUSpeak = (function () {
     var H = window.RUBukvy;
     var w = el('div', 'arc arc-first arc-talk');
     w.appendChild(modeToggle());
+    // the weekly check shows on Talk as well, since Talk is where the app opens
+    if (window.RUCheck && window.RUCheck.due() && window.RUArcade && window.RUArcade.checkCard) w.appendChild(window.RUArcade.checkCard());
     var brand = el('div', 'arc-first-brand');
     brand.appendChild(UI.ru('Свобо́дно', 'big'));
     brand.appendChild(el('div', 'arc-brand', 'Svobodno'));

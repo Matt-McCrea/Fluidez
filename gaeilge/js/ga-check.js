@@ -102,15 +102,18 @@ window.GACheck = (function () {
     return n;
   }
   /* 7+ days since the last check, or never checked and 3 rounds played; "Later"
-   * holds it back two days. `at` lets a test pass the clock. */
+   * holds it back a day. `at` lets a test pass the clock. */
   function due(at) {
     var t = at == null ? now() : at, s = load();
     if (!ladder().length) return false;
     if (s.snooze && t < s.snooze) return false;
     if (s.at) return t - s.at >= 7 * DAY;
-    return playedRounds() >= 3;
+    // never checked: after 3 rounds, or a week after the app was first opened,
+    // whichever comes first (someone who only does phrases still gets one)
+    if (!s.first) { s.first = t; save(s); }
+    return playedRounds() >= 3 || t - s.first >= 7 * DAY;
   }
-  function snooze(at) { var s = load(); s.snooze = (at == null ? now() : at) + 2 * DAY; save(s); }
+  function snooze(at) { var s = load(); s.snooze = (at == null ? now() : at) + DAY; save(s); }
 
   // ---- grading a unit ------------------------------------------------------------
   function statusOf(right, n) {

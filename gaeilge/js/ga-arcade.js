@@ -129,8 +129,8 @@
     top.appendChild(button('arc-level', band() + ' ▾', levelPicker, T('Do leibhéal', 'Change level')));
     wrap.appendChild(top);
 
+    if (window.GACheck && window.GACheck.due()) wrap.appendChild(checkCard());   // first thing on the board when due
     wrap.appendChild(imirCard(GAMES[0]));
-    if (window.GACheck && window.GACheck.due()) wrap.appendChild(checkCard());
 
     var withConvos = !!(window.GAConvo && window.GAConvo.all().length);
     var main = tileRow('arc-grid arc-row3' + (withConvos ? ' arc-main4' : ''), GAMES.slice(1, 4));

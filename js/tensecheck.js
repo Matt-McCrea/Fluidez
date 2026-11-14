@@ -118,9 +118,12 @@ window.TenseCheck = (function () {
     var t = at == null ? now() : at, s = load();
     if (s.snooze && t < s.snooze) return false;
     if (s.at) return t - s.at >= 7 * DAY;
-    return playedRounds() >= 3;
+    // never checked: after 3 rounds, or a week after the app was first opened,
+    // whichever comes first (someone who only does phrases still gets one)
+    if (!s.first) { s.first = t; save(s); }
+    return playedRounds() >= 3 || t - s.first >= 7 * DAY;
   }
-  function snooze(at) { var s = load(); s.snooze = (at == null ? now() : at) + 2 * DAY; save(s); }
+  function snooze(at) { var s = load(); s.snooze = (at == null ? now() : at) + DAY; save(s); }
 
   /* ---- grading a tense ------------------------------------------------------ */
   function statusOf(right, n) {

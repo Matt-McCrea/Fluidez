@@ -134,8 +134,8 @@
     wrap.appendChild(top);
     if (SK) wrap.appendChild(SK.modeToggle());
 
+    if (window.RUCheck && window.RUCheck.due()) wrap.appendChild(checkCard());   // first thing on the board when due
     wrap.appendChild(ilabCard(GAMES[0]));
-    if (window.RUCheck && window.RUCheck.due()) wrap.appendChild(checkCard());
 
     var withConvos = !!(window.RUConvo && window.RUConvo.all().length);
     var main = tileRow('arc-grid arc-row3' + (withConvos ? ' arc-main4' : ''), GAMES.slice(1, 4));
@@ -975,7 +975,7 @@
     }
   }
 
-  window.RUArcade = { practisePhrases: practisePhrases, themeLabels: knownThemeLabel, board: board, knownScreen: knownScreen, cardScreen: cardScreen, checkRun: checkRun, sheet: sheet,
+  window.RUArcade = { checkCard: checkCard, practisePhrases: practisePhrases, themeLabels: knownThemeLabel, board: board, knownScreen: knownScreen, cardScreen: cardScreen, checkRun: checkRun, sheet: sheet,
     GAMES: GAMES, levelPicker: levelPicker, settings: settings, startShelf: startShelf };
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
