@@ -48,17 +48,17 @@ const FONT = '/System/Library/Fonts/Apple Color Emoji.ttc';
 const ICONS = {
   juegos: {
     emoji: '🔥',
-    bg: [226, 106, 26],         // flat orange, the way Fluidez sits on flat teal
+    bg: [255, 61, 139],         // #ff3d8b, carnaval hot pink
     inset: 0.66                 // share of the tile the emoji fills
   },
   gaeilge: {
     emoji: '☘️',
-    bg: [15, 61, 46],           // flat dark green
+    bg: [46, 122, 82],          // moss green, Líofa's accent
     inset: 0.66
   },
   nederlands: {
     emoji: '🌷',
-    bg: [11, 15, 28],           // #0b0f1c, Vlot's night blue
+    bg: [29, 79, 168],           // #1d4fa8, De Stijl blue
     inset: 0.66
   }
 };

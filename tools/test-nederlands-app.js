@@ -45,7 +45,7 @@ ok(JSON.stringify(scriptsInHtml.filter(s => scripts.indexOf(s) !== -1)) === JSON
 ok(/<html lang="nl"/.test(html) && /<title>Vlot<\/title>/.test(html), 'index.html must be lang nl, titled Vlot');
 const manifest = JSON.parse(fs.readFileSync(path.join(NLD, 'manifest.json'), 'utf8'));
 ok(manifest.name === 'Vlot' && manifest.short_name === 'Vlot' && manifest.lang === 'nl' &&
-   manifest.theme_color === '#0b0f1c' && manifest.background_color === '#0b0f1c', 'manifest fields');
+   manifest.theme_color === '#f7f5ef' && manifest.background_color === '#f7f5ef', 'manifest fields');
 ok(/CACHE_NAME = 'vlot-'/.test(swSrc) && !/\.\.\//.test(swSrc), 'sw.js: cache name vlot-, no ../');
 ok(/cache: 'reload'/.test(swSrc), 'sw.js must fetch past the HTTP cache');
 const cacheVer = /CACHE_VERSION = '([^']+)'/.exec(swSrc)[1];
@@ -54,7 +54,7 @@ ok(new RegExp("BUILD = '" + cacheVer + "'").test(perfSrc), 'Perf.BUILD must equa
 ['icon-192.png', 'icon-512.png', 'icon-512-maskable.png', 'apple-touch-icon.png'].forEach(f =>
   ok(fs.existsSync(path.join(NLD, 'icons', f)), 'missing icon ' + f));
 const css = fs.readFileSync(path.join(NLD, 'css/vlot.css'), 'utf8');
-['#f0b840', '#e0473f', '#4a86e8', '#3fae6a', '#ff8a2a', '#2fb3b0', '#a26bd1', '#e05a9a', '#0b0f1c', '#131a2e', '#1b2440', '#26314f', '#eef1f8', '#94a0bf', '#ff7f2a', '#46d98a', '#ff6b5e'].forEach(c =>
+['#d1291f', '#1d4fa8', '#f2c318', '#111111', '#f7f5ef', '#efece3', '#4a4a4a', '#1a7a43', '#c8241b'].forEach(c =>
   ok(css.toLowerCase().indexOf(c) !== -1, 'vlot.css lacks the spec colour ' + c));
 ok(!/@import|url\(|fonts\.g/.test(css), 'vlot.css must be self-contained, no web fonts');
 ok(/#stage-host\s*\{[^}]*env\(safe-area-inset-top/.test(css), 'vlot.css lost the safe-area #stage-host rule');

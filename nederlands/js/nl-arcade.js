@@ -102,14 +102,14 @@
 
   /* ---- the games --------------------------------------------------------------- */
   var GAMES = [
-    { key: 'speel', kind: 'speel', hue: '#f0b840', nl: 'Speel', en: 'Play', rule: 'A bit of everything: verbs, words, phrases and grammar' },
-    { key: 'ww', kind: 'ww', hue: '#e0473f', nl: 'Werkwoorden', en: 'Verbs', rule: 'The right form of the verb, in a sentence' },
-    { key: 'woorden', kind: 'woorden', hue: '#4a86e8', nl: 'Woorden', en: 'Words', rule: 'The commonest words first, with de or het' },
-    { key: 'zinnen', kind: 'zinnen', hue: '#3fae6a', nl: 'Zinnen', en: 'Phrases', rule: 'Everyday phrases, whole' },
-    { key: 'dehet', kind: 'dehet', hue: '#ff8a2a', nl: 'De of het', en: 'De or het', rule: 'de or het, deze or dit, grote or groot: the small word changes' },
-    { key: 'volg', kind: 'volg', hue: '#2fb3b0', nl: 'Woordvolgorde', en: 'Word order', rule: 'The verb comes second, or last after dat and omdat' },
-    { key: 'geen', kind: 'geen', hue: '#a26bd1', nl: 'Niet of geen', en: 'Niet or geen', rule: 'geen goes before a noun with een or none, niet goes anywhere else' },
-    { key: 'mv', kind: 'mv', hue: '#e05a9a', nl: 'Meervoud en -je', en: 'Plurals and -je', rule: 'boek, boeken, boekje: the ending of more than one, and of small' }
+    { key: 'speel', kind: 'speel', hue: '#1d4fa8', nl: 'Speel', en: 'Play', rule: 'A bit of everything: verbs, words, phrases and grammar' },
+    { key: 'ww', kind: 'ww', hue: '#d1291f', nl: 'Werkwoorden', en: 'Verbs', rule: 'The right form of the verb, in a sentence' },
+    { key: 'woorden', kind: 'woorden', hue: '#1d4fa8', nl: 'Woorden', en: 'Words', rule: 'The commonest words first, with de or het' },
+    { key: 'zinnen', kind: 'zinnen', hue: '#f2c318', nl: 'Zinnen', en: 'Phrases', rule: 'Everyday phrases, whole' },
+    { key: 'dehet', kind: 'dehet', hue: '#111111', nl: 'De of het', en: 'De or het', rule: 'de or het, deze or dit, grote or groot: the small word changes' },
+    { key: 'volg', kind: 'volg', hue: '#0f0f0f', nl: 'Woordvolgorde', en: 'Word order', rule: 'The verb comes second, or last after dat and omdat' },
+    { key: 'geen', kind: 'geen', hue: '#1d4fa8', nl: 'Niet of geen', en: 'Niet or geen', rule: 'geen goes before a noun with een or none, niet goes anywhere else' },
+    { key: 'mv', kind: 'mv', hue: '#d1291f', nl: 'Meervoud en -je', en: 'Plurals and -je', rule: 'boek, boeken, boekje: the ending of more than one, and of small' }
   ];
   function gameByKey(k) { return GAMES.filter(function (g) { return g.key === k; })[0]; }
   function playable(g) { return GI.bankCount(g.kind) > 0; }
@@ -399,7 +399,7 @@
     h.appendChild(wrap);
   }
   /* Conversations: the fourth tile on the top row. Every example conversation, with its voices. */
-  var CONVO_HUE = '#e07a3f';
+  var CONVO_HUE = '#f2c318';
   function convoTile() {
     var C = window.NLConvo, all = C.all(), done = all.filter(function (c) { return C.passes(c.id) > 0; }).length;
     var tile = el('button', 'arc-tile arc-convo-tile');
@@ -958,7 +958,7 @@
     var h = host(); clear(h);
     var lang = cardLang();
     var wrap = el('div', 'arc-stats arc-tcard');
-    wrap.style.setProperty('--g', '#e8b64a');
+    wrap.style.setProperty('--g', '#f2c318');
     var top = topBar(c ? pickL(c.name, lang) : key);
     if (c) {
       top.appendChild(button('arc-lang', lang === 'nl' ? 'EN' : 'NL', function () {

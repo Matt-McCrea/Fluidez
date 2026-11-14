@@ -21,19 +21,32 @@
  * ========================================================================== */
 
 :root {
-  /* A near-black with a blue cast rather than pure grey: the game hues are
-     saturated, and they sit better on something that is not neutral. */
-  --bg:#0a0d13; --panel:#141a25; --panel-2:#1d2533;
-  --text:#eef3f9; --muted:#8c9bb0; --border:#27303f;
-  --accent:#2fb8c5; --accent-2:#54cdd8;
-  --good:#3ddc84; --good-bg:#10301f; --bad:#ff6b5e; --bad-bg:#331a18;
-  --warn:#f0b429;
-  --gold:#f0b429;                      /* records, and only records */
-  --shadow:0 6px 28px rgba(0,0,0,.5); --radius:16px;
+  /* Carnaval: Barranquilla at night. Deep plum, hot pink, carnival yellow. */
+  --bg:#170a1f; --panel:#241133; --panel-2:#321a45;
+  --text:#fbf3ff; --muted:#c3a8d6; --border:#4a2a63;
+  --accent:#ff3d8b; --accent-2:#ff79ad;
+  --good:#3ee08f; --good-bg:#12351f; --bad:#ff5a4f; --bad-bg:#3d1620;
+  --warn:#ffd23f;
+  --gold:#ffd23f;                      /* records, and only records */
+  --on-accent:#170a1f;
+  --shadow:0 6px 28px rgba(0,0,0,.5); --radius:22px;
+  --font:ui-rounded, "SF Pro Rounded", -apple-system, system-ui, sans-serif;
   color-scheme: dark;
 }
 
-body { background:var(--bg); color:var(--text); }
+body {
+  color:var(--text); font-family:var(--font);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(255,61,139,.30) 0, transparent 46%),
+    radial-gradient(circle at 0% 0%, rgba(255,210,63,.16) 0, transparent 34%),
+    radial-gradient(circle at 12% 7%, rgba(255,210,63,.35) 0 2px, transparent 3px),
+    radial-gradient(circle at 78% 4%, rgba(62,224,143,.35) 0 2px, transparent 3px),
+    radial-gradient(circle at 90% 11%, rgba(255,210,63,.35) 0 2px, transparent 3px),
+    radial-gradient(circle at 40% 3%, rgba(255,121,173,.45) 0 2px, transparent 3px),
+    var(--bg);
+  background-repeat:no-repeat; background-attachment:fixed;
+}
+button, input { font-family:var(--font); }
 .app-main { padding:0; max-width:none; }
 /* The notch, once for every screen: the host every screen is drawn into
    clears the status bar and the rounded corners, so no screen has to
@@ -76,7 +89,7 @@ body { background:var(--bg); color:var(--text); }
 .arc-daily {
   display:block; width:100%; text-align:left; cursor:pointer;
   border:1px solid var(--border); border-radius:var(--radius);
-  background:linear-gradient(135deg, #1b2740 0%, var(--panel) 62%);
+  background:linear-gradient(135deg, #4a1a52 0%, var(--panel) 62%);
   padding:16px 18px; margin-bottom:22px; color:inherit;
   font:inherit; position:relative; overflow:hidden;
 }
@@ -251,15 +264,15 @@ body { background:var(--bg); color:var(--text); }
 .arc-study {
   display:block; width:100%; text-align:left; cursor:pointer; font:inherit; color:inherit;
   border:1px solid var(--border); border-radius:var(--radius);
-  background:linear-gradient(135deg,#2a2418 0%,var(--panel) 60%);
+  background:linear-gradient(135deg,#3d2a2c 0%,var(--panel) 60%);
   padding:15px 18px; margin-bottom:14px; position:relative; overflow:hidden;
 }
-.arc-study::after { content:''; position:absolute; inset:0 auto 0 0; width:3px; background:#c98a1f; }
+.arc-study::after { content:''; position:absolute; inset:0 auto 0 0; width:3px; background:#ffb02e; }
 .arc-study:active { transform:translateY(1px); }
 .arc-study.done { opacity:.62; }
 .arc-study-k {
   display:block; font-size:.62rem; font-weight:700; letter-spacing:.14em;
-  text-transform:uppercase; color:#c98a1f; margin-bottom:5px;
+  text-transform:uppercase; color:#ffb02e; margin-bottom:5px;
 }
 .arc-study b { display:block; font-size:1.16rem; font-weight:700; line-height:1.2; }
 .arc-study-s { display:block; margin-top:6px; font-size:.8rem; color:var(--muted); }
@@ -275,8 +288,8 @@ body { background:var(--bg); color:var(--text); }
   font-size:.62rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
   padding:.2em .6em; border-radius:999px; background:var(--panel-2); color:var(--muted);
 }
-.study-tag[data-source="fallo"] { background:#3a1f1c; color:#ff8b7e; }
-.study-tag[data-source="nuevo"] { background:#16302a; color:var(--good); }
+.study-tag[data-source="fallo"] { background:#4a1a22; color:#ff8b7e; }
+.study-tag[data-source="nuevo"] { background:#12351f; color:var(--good); }
 .study-quit {
   margin-left:auto; background:transparent; border:0; color:var(--muted);
   font-size:1.05rem; cursor:pointer; padding:2px 6px;
@@ -284,7 +297,7 @@ body { background:var(--bg); color:var(--text); }
 .study-body { text-align:center; padding-top:8px; }
 .study-q { font-size:1.55rem; font-weight:600; line-height:1.3; margin:0 0 6px; }
 .study-a {
-  font-size:2.1rem; font-weight:800; line-height:1.25; color:#f0c674;
+  font-size:2.1rem; font-weight:800; line-height:1.25; color:var(--gold);
   margin:14px 0 4px; letter-spacing:-.01em;
 }
 .study-sub { color:var(--muted); font-size:.92rem; line-height:1.5; margin:10px 0 22px; }
@@ -330,7 +343,7 @@ body { background:var(--bg); color:var(--text); }
   border:1px solid var(--border); background:transparent; color:var(--muted);
   border-radius:999px; padding:8px 13px; font:inherit; font-size:.84rem; cursor:pointer;
 }
-.arc-chip.on { background:var(--accent); border-color:var(--accent); color:#06222a; font-weight:700; }
+.arc-chip.on { background:var(--accent); border-color:var(--accent); color:var(--on-accent); font-weight:700; }
 
 /* Palabras: how much of the common Spanish is known */
 .arc-progress { margin: 0 0 14px; }
@@ -396,7 +409,7 @@ button.arc-tchip { cursor:pointer; }
   font:inherit; font-size:.88rem; font-weight:650; cursor:pointer; color:var(--text);
   background:transparent; border:1px solid var(--border); border-radius:12px; padding:10px 15px;
 }
-.arc-btn.on { background:var(--accent); border-color:var(--accent); color:#06222a; }
+.arc-btn.on { background:var(--accent); border-color:var(--accent); color:var(--on-accent); }
 .arc-btn:active { transform:translateY(1px); }
 
 .arc-checkrun { --game:var(--accent); }
@@ -517,3 +530,28 @@ a.arc-mode { text-decoration:none; }
 .arc-irr-tab:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
 .arc-irr-en { margin:10px 0 0; font-size:.85rem; color:var(--muted); }
 .arc-irr-body .arc-ctable, .arc-irr-body .arc-conj-wrap { margin-top:6px; }
+
+/* ==== Carnaval theme (14 Nov 2026), see docs/app-themes.md ================
+   Overrides on top of the shared sheets: heavy rounded headings, chunky tiles
+   with a glow in their own hue, dark text where the pink accent is a fill. */
+.arc-brand, .arc-stats-top h2, .arc-jugar-k, .arc-name, .arc-daily-t, .arc-study b, .arc-check b, .arc-mode b { font-weight:800; }
+.arc-tile {
+  border-width:2px; padding:16px 14px 14px;
+  box-shadow:0 0 0 0 transparent, 0 6px 18px color-mix(in srgb, var(--g) 22%, transparent);
+}
+.arc-tile::before { width:6px; }
+.arc-tile:hover { box-shadow:0 8px 24px color-mix(in srgb, var(--g) 40%, transparent); }
+.arc-jugar { border-width:2px; box-shadow:0 8px 28px color-mix(in srgb, var(--g) 35%, transparent); }
+.arc-mode { border-width:2px; }
+.arc-daily, .arc-study, .arc-check { border-width:2px; }
+.g-daily-go, .hg-go, .liga-go, .g-again { color:var(--on-accent); }
+.g-daily-go:hover { background:var(--accent-2); }
+.g-combo[data-hot="1"] { color:var(--on-accent); }
+.g-resume { background:rgba(23,10,31,.9); }
+.arc-guided > :not(.arc-top):not(.arc-spot) { filter:saturate(.4); }
+.arc-spot-k { color:var(--on-accent); }
+.g-chip.chosen { color:var(--on-accent); }
+
+/* styles.css recolours --accent per level (:root[data-level]); Carnaval keeps
+   one pink for every level. Same specificity, later in the cascade. */
+:root[data-level], :root[data-theme] { --accent:#ff3d8b; --accent-2:#ff79ad; }

@@ -13,8 +13,8 @@ const SIZES = [['icon-512.png', 512, 0.62], ['icon-192.png', 192, 0.62], ['apple
   for (const [name, size, scale] of SIZES) {
     const p = await b.newPage({ viewport: { width: size, height: size } });
     await p.setContent(`<style>
-      html,body{margin:0;width:${size}px;height:${size}px;background:linear-gradient(160deg,#d2402f 0%,#110c0b 85%);display:flex;align-items:center;justify-content:center}
-      span{font:700 ${Math.round(size * scale)}px -apple-system,"Helvetica Neue",Arial,sans-serif;color:#e3a83a;line-height:1;transform:translateY(-${Math.round(size * 0.02)}px)}</style><span>С</span>`);
+      html,body{margin:0;width:${size}px;height:${size}px;background:linear-gradient(180deg,#d8352a 0%,#2a0c0a 55%,#110c0b 100%);display:flex;align-items:center;justify-content:center}
+      span{font:700 ${Math.round(size * scale)}px -apple-system,"Helvetica Neue",Arial,sans-serif;color:#e8b34a;line-height:1;transform:translateY(-${Math.round(size * 0.02)}px)}</style><span>С</span>`);
     await p.screenshot({ path: path.join(ROOT, 'russkiy', 'icons', name) });
     await p.close();
   }

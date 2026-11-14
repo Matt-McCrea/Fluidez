@@ -8,13 +8,13 @@ Vlot ("fluent", as in *vlot Nederlands spreken*) is Líofa (gaeilge/) rebuilt fo
 - **Every card asks for the Dutch** (English prompt, Dutch answer). Tap first (options), typed once answered right. Learnt is permanent (typed right on first sight, or recalled 180+ days later); a miss un-learns. No eternal reviews.
 - **No dashes in prose.** No AI in the app, no speech recognition. Conversations are voiced (nl-NL neural voices), as in Líofa.
 - **Storage keys start `vlot.`**, never `fluidez.` or `liofa.` (same origin). Cache `vlot-<ver>`.
-- **Palette, Delft and tulips:** `--bg #0b0f1c --panel #131a2e --panel-2 #1b2440 --border #26314f --text #eef1f8 --muted #94a0bf --accent #ff7f2a --gold #f0b840 --good #46d98a --bad #ff6b5e`. Icon 🌷. Contrast AA.
+- **Look:** De Stijl, light, black lines and primary blocks; see docs/app-themes.md (replaced the first Delft navy palette on 14 Nov).
 - Rounds: **Rustig** (10 questions, no clock) and **Tegen de klok** (60 s, pauses when hidden). Bands A1, A2, B1, B2; placement on first open.
 
 ## Board
 Big **Speel** (mix: 35% werkwoorden, 35% woorden, 10% zinnen, 20% grammar tiles; misses and due first). Row: **Werkwoorden**, **Woorden**, **Zinnen**, **Gesprekken** (conversations). Grammar row: **De of het**, **Woordvolgorde**, **Niet of geen**, **Meervoud en -je**. Dutch label, small English line under it.
 
-Hues: Speel `#f0b840`, Werkwoorden `#e0473f`, Woorden `#4a86e8`, Zinnen `#3fae6a`, De of het `#ff8a2a`, Woordvolgorde `#2fb3b0`, Niet of geen `#a26bd1`, Meervoud `#e05a9a`.
+Tile colours: solid De Stijl blocks, see docs/app-themes.md.
 
 Kind keys (map from Líofa): `briathra`→`ww`, `focail`→`woorden`, `frasai`→`zinnen`, `seimhiu`→`dehet`, `forainm`→`volg`, `tais`→`geen`, `freagair`→`mv`, `imir`→`speel`.
 

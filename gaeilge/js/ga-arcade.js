@@ -104,14 +104,14 @@
 
   /* ---- the games --------------------------------------------------------------- */
   var GAMES = [
-    { key: 'imir', kind: 'imir', hue: '#e8b64a', ga: 'Imir', en: 'Play', rule: 'A bit of everything: verbs, words, phrases and grammar' },
-    { key: 'briathra', kind: 'briathra', hue: '#2fae6e', ga: 'Briathra', en: 'Verbs', rule: 'The right form of the verb, in a sentence' },
-    { key: 'focail', kind: 'focail', hue: '#a26bd1', ga: 'Focail', en: 'Words', rule: 'The commonest words first' },
-    { key: 'frasai', kind: 'frasai', hue: '#3a8fd6', ga: 'Frásaí', en: 'Phrases', rule: 'Everyday phrases, whole' },
-    { key: 'seimhiu', kind: 'seimhiu', hue: '#e0a526', ga: 'Séimhiú agus urú', en: 'Lenition and eclipsis', rule: 'The first letter changes: bh, mb, t-, h' },
-    { key: 'forainm', kind: 'forainm', hue: '#d9653b', ga: 'Forainmneacha', en: 'Prepositional pronouns', rule: 'agam, leis, uaim: a preposition and a pronoun in one' },
-    { key: 'tais', kind: 'tais', hue: '#2fb3a5', ga: 'Tá nó Is', en: 'Tá or Is', rule: 'Which verb says "is": tá or is' },
-    { key: 'freagair', kind: 'freagair', hue: '#e05a7a', ga: 'Freagair', en: 'Answer', rule: 'Answer the question the way Irish does: no yes or no' }
+    { key: 'imir', kind: 'imir', hue: '#8a5d12', ga: 'Imir', en: 'Play', rule: 'A bit of everything: verbs, words, phrases and grammar' },
+    { key: 'briathra', kind: 'briathra', hue: '#2e7a52', ga: 'Briathra', en: 'Verbs', rule: 'The right form of the verb, in a sentence' },
+    { key: 'focail', kind: 'focail', hue: '#7a4aa8', ga: 'Focail', en: 'Words', rule: 'The commonest words first' },
+    { key: 'frasai', kind: 'frasai', hue: '#2a6fae', ga: 'Frásaí', en: 'Phrases', rule: 'Everyday phrases, whole' },
+    { key: 'seimhiu', kind: 'seimhiu', hue: '#8c6500', ga: 'Séimhiú agus urú', en: 'Lenition and eclipsis', rule: 'The first letter changes: bh, mb, t-, h' },
+    { key: 'forainm', kind: 'forainm', hue: '#b24a22', ga: 'Forainmneacha', en: 'Prepositional pronouns', rule: 'agam, leis, uaim: a preposition and a pronoun in one' },
+    { key: 'tais', kind: 'tais', hue: '#1f7a72', ga: 'Tá nó Is', en: 'Tá or Is', rule: 'Which verb says "is": tá or is' },
+    { key: 'freagair', kind: 'freagair', hue: '#b83a5c', ga: 'Freagair', en: 'Answer', rule: 'Answer the question the way Irish does: no yes or no' }
   ];
   function gameByKey(k) { return GAMES.filter(function (g) { return g.key === k; })[0]; }
   function playable(g) { return GI.bankCount(g.kind) > 0; }
@@ -401,7 +401,7 @@
     h.appendChild(wrap);
   }
   /* Conversations: the fourth tile on the top row. Every example conversation, with its voices. */
-  var CONVO_HUE = '#e07a3f';
+  var CONVO_HUE = '#b24a22';
   function convoTile() {
     var C = window.GAConvo, all = C.all(), done = all.filter(function (c) { return C.passes(c.id) > 0; }).length;
     var tile = el('button', 'arc-tile arc-convo-tile');
@@ -579,7 +579,7 @@
     rw.type = 'button';
     rw.appendChild(el('span', 'arc-prow-k', 'Focail'));
     rw.appendChild(el('span', 'arc-prow-v', w.of ? GI.thousands(w.n) + ' of ' + GI.thousands(w.of) : 'ag teacht'));
-    rw.appendChild(bar(w.n, w.of, '#a26bd1'));
+    rw.appendChild(bar(w.n, w.of, '#7a4aa8'));
     rw.appendChild(el('span', 'arc-prow-s', w.of ? 'the ' + GI.thousands(w.of) + ' commonest words · by theme ›' : 'words are on the way'));
     rw.addEventListener('click', wordsDetail);
     panel.appendChild(rw);
@@ -607,7 +607,7 @@
     var rf = el('div', 'arc-prow');
     rf.appendChild(el('span', 'arc-prow-k', 'Frásaí'));
     rf.appendChild(el('span', 'arc-prow-v', ph.of ? GI.thousands(ph.n) + ' of ' + GI.thousands(ph.of) : 'ag teacht'));
-    rf.appendChild(bar(ph.n, ph.of, '#3a8fd6'));
+    rf.appendChild(bar(ph.n, ph.of, '#2a6fae'));
     panel.appendChild(rf);
     return panel;
   }
@@ -624,7 +624,7 @@
       var r = el('div', 'arc-drow');
       r.appendChild(el('span', 'arc-drow-k', t.label));
       r.appendChild(el('span', 'arc-drow-v', c.n + ' of ' + c.of));
-      r.appendChild(bar(c.n, c.of, '#a26bd1'));
+      r.appendChild(bar(c.n, c.of, '#7a4aa8'));
       wrap.appendChild(r);
     });
     h.appendChild(wrap);
@@ -961,7 +961,7 @@
     var h = host(); clear(h);
     var lang = cardLang();
     var wrap = el('div', 'arc-stats arc-tcard');
-    wrap.style.setProperty('--g', '#e8b64a');
+    wrap.style.setProperty('--g', '#8a5d12');
     var top = topBar(c ? pickL(c.name, lang) : key);
     if (c) {
       top.appendChild(button('arc-lang', lang === 'ga' ? 'EN' : 'GA', function () {

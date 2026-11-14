@@ -41,14 +41,14 @@ const scriptsInHtml = [...html.matchAll(/<script[^>]*src="([^"]+)"/g)].map(m => 
 ok(JSON.stringify(scriptsInHtml) === JSON.stringify(scripts), 'script order in index.html differs from sw.js ASSETS');
 ok(/<html lang="en"/.test(html) && /<title>Ṭalāqa<\/title>/.test(html), 'index.html must be lang en, titled Ṭalāqa');
 const manifest = JSON.parse(fs.readFileSync(path.join(AD, 'manifest.json'), 'utf8'));
-ok(manifest.name === 'Ṭalāqa' && manifest.lang === 'ar' && manifest.theme_color === '#0b0f1c' && manifest.background_color === '#0b0f1c', 'manifest fields');
+ok(manifest.name === 'Ṭalāqa' && manifest.lang === 'ar' && manifest.theme_color === '#0a1433' && manifest.background_color === '#0a1433', 'manifest fields');
 ok(/CACHE_NAME = 'talaqa-'/.test(swSrc) && !/\.\.\//.test(swSrc), 'sw.js: cache name talaqa-, no ../');
 ok(/cache: 'reload'/.test(swSrc) && /audio\/l-/.test(swSrc), 'sw.js must fetch past the HTTP cache and precache the letter clips');
 const cacheVer = /CACHE_VERSION = '([^']+)'/.exec(swSrc)[1];
 ok(new RegExp("BUILD = '" + cacheVer + "'").test(fs.readFileSync(path.join(AD, 'js/perf.js'), 'utf8')), 'Perf.BUILD must equal CACHE_VERSION in sw.js');
 ['icon-192.png', 'icon-512.png', 'icon-512-maskable.png', 'apple-touch-icon.png'].forEach(f => ok(fs.existsSync(path.join(AD, 'icons', f)), 'missing icon ' + f));
 const css = fs.readFileSync(path.join(AD, 'css/talaqa.css'), 'utf8').toLowerCase();
-['#0b0f1c', '#141a2e', '#1c2440', '#28324f', '#eef1f8', '#95a0bd', '#2ec4b6', '#e9b44c', '#46d98a', '#ff6b5e'].forEach(c => ok(css.indexOf(c) !== -1, 'talaqa.css lacks the palette colour ' + c));
+['#0a1433', '#12204a', '#1a2b5c', '#2c3f78', '#f4efe2', '#b2b7cf', '#35c2b4', '#e2b04a', '#46d98a', '#ff6b5e'].forEach(c => ok(css.indexOf(c) !== -1, 'talaqa.css lacks the palette colour ' + c));
 ok(/font-family:'naskh'/.test(css) && /line-height:1\.9/.test(css) && /1\.35em/.test(css), '.ar rules: Naskh, line-height 1.9, 1.35em');
 ok(!/@import|https?:|fonts\.g/.test(css), 'talaqa.css must be self-contained');
 ['ar-arcade.js', 'gameround.js', 'ar-items.js', 'ar-check.js', 'ar-huruf.js', 'ar-speak.js', 'ar-convo.js', 'ui.js'].forEach(f => {

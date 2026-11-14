@@ -55,7 +55,7 @@ ok(new RegExp("BUILD = '" + cacheVer + "'").test(fs.readFileSync(path.join(AD, '
 }
 ['icon-192.png', 'icon-512.png', 'icon-512-maskable.png', 'apple-touch-icon.png'].forEach(f => ok(fs.existsSync(path.join(AD, 'icons', f)), 'missing icon ' + f));
 const css = fs.readFileSync(path.join(AD, 'css/svobodno.css'), 'utf8').toLowerCase();
-['#110c0b', '#1c1513', '#261c19', '#3a2a25', '#f5ece4', '#b49d8f', '#d2402f', '#e3a83a', '#57c47a', '#ff6b5e'].forEach(c => ok(css.indexOf(c) !== -1, 'svobodno.css lacks the palette colour ' + c));
+['#110c0b', '#1d1311', '#2a1b17', '#5a3a1c', '#f7ede2', '#c2a691', '#d2402f', '#e3a83a', '#57c47a', '#ff6b5e'].forEach(c => ok(css.indexOf(c) !== -1, 'svobodno.css lacks the palette colour ' + c));
 ok(!/naskh|direction:\s*rtl/.test(css), 'svobodno.css still carries Arabic rules');
 ok(!/@import|https?:|fonts\.g/.test(css), 'svobodno.css must be self-contained');
 

@@ -3,7 +3,7 @@
  * sw.js (tools/test-nederlands-app.js checks), so the screen says which code runs.
  * ========================================================================== */
 window.Perf = (function () {
-  var BUILD = 'v7643b640';
+  var BUILD = 'vc6bfc117';
   var LIMIT = 40;
   var log = [];
   var now = (typeof performance !== 'undefined' && performance.now)

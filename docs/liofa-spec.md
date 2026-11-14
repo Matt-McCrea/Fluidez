@@ -13,7 +13,7 @@ Líofa is Juegos (juegos/, js/arcade.js) rebuilt for Irish: a self-contained app
 ## Board
 Big **Imir** (mix: 35% briathra, 35% focail, 10% frásaí, 20% the four grammar tiles; misses and due first). Row: **Briathra** (verbs in sentences), **Focail** (words), **Frásaí** (phrases). Grammar row: **Séimhiú agus urú**, **Forainmneacha**, **Tá nó Is**, **Freagair**. Each label in Irish with a small English line under it.
 
-Hues: Imir `#e8b64a`, Briathra `#2fae6e`, Focail `#a26bd1`, Frásaí `#3a8fd6`, Séimhiú/urú `#e0a526`, Forainmneacha `#d9653b`, Tá nó Is `#2fb3a5`, Freagair `#e05a7a`. Palette: `--bg #0b1311 --panel #13201b --panel-2 #1b2c25 --border #24382f --text #eef4ee --muted #8fa69a --accent #3fbf7f --gold #e8b64a --good #46d98a --bad #ff6b5e`.
+Look since 14 Nov 2026: the light manuscript theme in docs/app-themes.md (the hues and palette first listed here are replaced).
 
 ## Bands
 A1, A2, B1, B2. Placement on first open sets the band (Profile equivalent in `liofa.profile`).

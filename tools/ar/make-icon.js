@@ -15,7 +15,7 @@ const SIZES = [['icon-512.png', 512, 0.62], ['icon-192.png', 192, 0.62], ['apple
   for (const [name, size, scale] of SIZES) {
     const p = await b.newPage({ viewport: { width: size, height: size } });
     await p.setContent(`<style>@font-face{font-family:N;src:url(data:font/woff2;base64,${font})}
-      html,body{margin:0;width:${size}px;height:${size}px;background:#12305a;display:flex;align-items:center;justify-content:center}
+      html,body{margin:0;width:${size}px;height:${size}px;background:#0a1433;display:flex;align-items:center;justify-content:center}
       span{font:700 ${Math.round(size * scale)}px N;color:#e9b44c;line-height:1;transform:translateY(-${Math.round(size * 0.06)}px)}</style><span>ع</span>`);
     await p.evaluate(() => document.fonts.ready);
     await p.screenshot({ path: path.join(ROOT, 'arabiya', 'icons', name) });

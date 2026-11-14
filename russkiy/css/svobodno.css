@@ -10,12 +10,13 @@
  * Palette: Khokhloma, black lacquer with red and gold.
  * ========================================================================== */
 :root {
-  --bg:#110c0b; --panel:#1c1513; --panel-2:#261c19; --border:#3a2a25;
-  --text:#f5ece4; --muted:#b49d8f;
-  --accent:#d2402f; --accent-2:#ff8a78; --gold:#e3a83a;
-  --good:#57c47a; --good-bg:#14301c; --bad:#ff6b5e; --bad-bg:#3a1a16;
-  --warn:#e3a83a; --ink:#120c0b;        /* dark ink for text on a bright fill */
-  --shadow:0 6px 28px rgba(0,0,0,.5); --radius:16px;
+  --bg:#110c0b; --panel:#1d1311; --panel-2:#2a1b17; --border:#5a3a1c;
+  --text:#f7ede2; --muted:#c2a691;
+  --accent:#d8352a; --accent-2:#ff7a66; --gold:#e8b34a;
+  --good:#5fd38d; --good-bg:#14301c; --bad:#ff6b5e; --bad-bg:#3a1a16;
+  --warn:#e8b34a; --ink:#120c0b;        /* dark ink for text on a bright fill */
+  --shadow:0 6px 28px rgba(0,0,0,.5); --radius:4px;
+  --head:"Avenir Next Condensed","Arial Narrow","PT Sans Narrow",sans-serif;
   color-scheme: dark;
 }
 
@@ -24,7 +25,11 @@
 html, body { margin:0; height:100%; }
 html { -webkit-text-size-adjust:100%; }
 body {
-  background:var(--bg); color:var(--text);
+  background:
+    radial-gradient(circle at 100% 0, rgba(232,179,74,.16) 0 2px, transparent 3px) 0 0/22px 22px,
+    radial-gradient(ellipse 180px 120px at 100% 0, rgba(232,179,74,.13), transparent 70%),
+    linear-gradient(180deg,#2a0c0a 0%,#150a09 45%,#0c0807 100%) fixed;
+  background-color:var(--bg); color:var(--text);
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","PT Sans",Arial,"Noto Sans",sans-serif;
   font-size:17px; line-height:1.5;
   overscroll-behavior:none;
@@ -744,7 +749,7 @@ a.arc-mode { text-decoration:none; }
 .arc-ct-c { padding:3px 0; font-size:.95rem; }
 b.arc-ct-c { color:var(--muted); font-weight:600; }
 .arc-ex-ga { font-size:1rem; line-height:1.4; font-weight:600; }
-.arc-tip { padding:10px 14px; border-left:3px solid var(--gold); background:var(--panel); border-radius:0 12px 12px 0; }
+.arc-tip { padding:10px 14px; border-left:3px solid var(--gold); background:var(--panel); border-radius:0 4px 4px 0; }
 .arc-how .arc-irish, .arc-when .arc-irish { color:var(--accent-2); }
 
 @media (prefers-reduced-motion:reduce) { .arc-tile, .arc-jugar, .arc-mode { transition:none; } }
@@ -883,7 +888,7 @@ b.arc-ct-c { color:var(--muted); font-weight:600; }
 .arc-seg-b { flex:1; display:flex; align-items:baseline; justify-content:center; gap:8px; min-height:44px; padding:8px 12px; border:0; border-radius:999px; background:transparent; color:var(--muted); font:inherit; cursor:pointer; }
 .arc-seg-b b { font-size:.95rem; font-weight:800; }
 .arc-seg-b .ru { font-size:1em; }
-.arc-seg-b.on { background:var(--accent); color:var(--bg); }
+.arc-seg-b.on { background:var(--accent); color:#fff; }
 .arc-talk .sp-card .spk, .cv-bubble .cv-spk { font-size:1.25rem; min-width:44px; min-height:44px; }
 .cv-list { margin-bottom:6px; }
 .cv-chat { display:flex; flex-direction:column; gap:10px; margin:12px 0; }
@@ -910,7 +915,7 @@ b.arc-ct-c { color:var(--muted); font-weight:600; }
 .arc-spot { margin:4px 0 20px; }
 .arc-spot-k {
   display:inline-block; margin:0 0 9px 4px; padding:6px 13px; border-radius:999px;
-  background:var(--accent); color:var(--bg); font-weight:800; font-size:.86rem; letter-spacing:.01em;
+  background:var(--accent); color:#fff; font-weight:800; font-size:.86rem; letter-spacing:.01em;
   animation:arc-bob 1.4s ease-in-out infinite;
 }
 .arc-spot > .arc-check, .arc-spot > .arc-mode, .arc-spot > button {
@@ -937,3 +942,12 @@ b.arc-ct-c { color:var(--muted); font-weight:600; }
   cursor: pointer; font-size: 1rem; line-height: 1;
 }
 @media (hover: hover) { .g-exit:hover { border-color: var(--bad); color: var(--bad); } }
+
+
+/* ---- khokhloma: condensed headings, gold inner border on panels ---- */
+h1, h2, h3, .g-name, .arc-h, [class*="title"] { font-family:var(--head); }
+h1, h2 { text-transform:uppercase; letter-spacing:.08em; font-weight:700; }
+.arc-mode, .arc-ctable, .sp-card, .g-say-card, .hr-letter, .hr-word, .cv-bubble, .g-kbd {
+  box-shadow: inset 0 0 0 1px rgba(232,179,74,.45);
+}
+@media (prefers-reduced-motion: reduce) { * { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; } }

@@ -9,12 +9,13 @@
  * Jidhr #6cbf4a, Jumūʿ #e05a7a, Ḍamāʾir #d9653b, Ḥurūf #c9a227 (set in js/ar-arcade.js).
  * ========================================================================== */
 :root {
-  --bg:#0b0f1c; --panel:#141a2e; --panel-2:#1c2440; --border:#28324f;
-  --text:#eef1f8; --muted:#95a0bd;
-  --accent:#2ec4b6; --accent-2:#7fe3d8; --gold:#e9b44c;
-  --good:#46d98a; --good-bg:#11301f; --bad:#ff6b5e; --bad-bg:#351b18;
-  --warn:#e9b44c; --ink:#070a14;        /* dark ink for text on a bright fill */
-  --shadow:0 6px 28px rgba(0,0,0,.5); --radius:16px;
+  --bg:#0a1433; --panel:#12204a; --panel-2:#1a2b5c; --border:#2c3f78;
+  --edge:#8f8663;                        /* gold-tinted control border, 3:1 on every panel */
+  --text:#f4efe2; --muted:#b2b7cf;
+  --accent:#e2b04a; --accent-2:#f1cd7d; --gold:#f1cd7d; --teal:#35c2b4;
+  --good:#46d98a; --good-bg:#0f3a35; --bad:#ff6b5e; --bad-bg:#3d1c2a;
+  --warn:#e2b04a; --ink:#070d22;        /* dark ink for text on a bright fill */
+  --shadow:0 6px 22px rgba(0,0,10,.5); --radius:6px;
   color-scheme: dark;
 }
 
@@ -23,7 +24,7 @@
 html, body { margin:0; height:100%; }
 html { -webkit-text-size-adjust:100%; }
 body {
-  background:var(--bg); color:var(--text);
+  background-color:var(--bg); color:var(--text);
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   font-size:17px; line-height:1.5;
   overscroll-behavior:none;
@@ -50,7 +51,7 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 .accent-btn:hover { border-color:var(--accent); background:var(--panel-2); }
 
 /* the CEFR band a question came from */
-[data-band="A1"] { --band: #2ec4b6; }
+[data-band="A1"] { --band: #35c2b4; }
 [data-band="A2"] { --band: #4aa3e0; }
 [data-band="B1"] { --band: #3fbfb0; }
 [data-band="B2"] { --band: #a98af0; }
@@ -164,7 +165,7 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
    app in front): the clock is stopped until it reaches nothing */
 .g-resume {
   position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center;
-  background: rgba(11, 15, 28, .86); color: #fff; font-size: 6.5rem; font-weight: 800;
+  background: rgba(10, 20, 51, .9); color: var(--text); font-size: 6.5rem; font-weight: 800;
   font-variant-numeric: tabular-nums; animation: g-beat .5s ease;
 }
 
@@ -942,3 +943,38 @@ b.arc-ct-c { color:var(--muted); font-weight:600; }
   cursor: pointer; font-size: 1rem; line-height: 1;
 }
 @media (hover: hover) { .g-exit:hover { border-color: var(--bad); color: var(--bad); } }
+
+
+/* ============================================================================
+ * ZELLIGE (14 Nov 2026): lapis night, gold, turquoise. Crisp 6px geometry, thin
+ * gold-tinted edges, an eight-point star lattice at about 4%. Tokens live in
+ * :root; this block squares the corners and swaps the selected-state hue.
+ * ========================================================================== */
+body {
+  background-image:
+    linear-gradient(45deg, transparent 47%, rgba(226,176,74,.04) 48% 52%, transparent 53%),
+    linear-gradient(-45deg, transparent 47%, rgba(226,176,74,.04) 48% 52%, transparent 53%),
+    linear-gradient(0deg, transparent 47%, rgba(226,176,74,.04) 48% 52%, transparent 53%),
+    linear-gradient(90deg, transparent 47%, rgba(226,176,74,.04) 48% 52%, transparent 53%);
+  background-size:56px 56px;
+  background-attachment:fixed;
+}
+h2, .arc-brand, .g-over-eyebrow { letter-spacing:.01em; }
+.g-opt, .g-input, .g-mine, .g-chip, .g-continue, .g-rating-bar, .g-tile, .g-slot,
+.arc-tile, .arc-data, .arc-back, .arc-level, .arc-btn, .arc-prow, .arc-ctable, .arc-fig, .arc-chart,
+.arc-fail, .arc-wtbtn, .arc-mode, .hr-letter, .hr-word, .hr-forms, .sp-card, .g-say-card,
+.g-build, .g-tilerow, .arc-lang, .g-kbd, .g-exit, .arc-gear { border-radius:6px; }
+.g-opt, .g-input { border-width:1px; }
+.g-opt, .g-input, .g-chip, .g-continue, .g-mine, .arc-btn, .arc-back, .arc-level, .arc-data,
+.arc-lang, .g-exit, .arc-gear, .arc-chip, .arc-chipq, .g-tile, .arc-irr-tab, .arc-wtbtn { border-color:var(--edge); }
+.arc-tile, .arc-mode, .arc-prow, .sp-card, .g-say-card, .hr-letter, .arc-check { border-color:color-mix(in srgb, var(--gold) 28%, var(--border)); }
+.arc-mode::before { border-radius:6px 0 0 6px; }
+.arc-tip { border-radius:0 6px 6px 0; }
+.arc-picks, .arc-figs { border-radius:6px; }
+.arc-chip, .arc-tchip, .arc-irr-tab, .arc-seg, .arc-seg-b { border-radius:6px; }
+.arc-chip.on { background:var(--teal); border-color:var(--teal); }
+.arc-seg-b.on { background:var(--teal); color:var(--ink); }
+.arc-link { color:var(--teal); }
+.arc-btn.on { background:var(--accent); border-color:var(--accent); }
+.g-over-eyebrow, .g-fb-label { letter-spacing:.08em; }
+@media (prefers-reduced-motion:reduce) { * { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; } }
