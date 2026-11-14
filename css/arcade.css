@@ -508,3 +508,12 @@ a.arc-mode { text-decoration:none; }
 @keyframes arc-bob { 50% { transform:translateY(3px); } }
 @keyframes arc-glow { 50% { outline-offset:6px; } }
 @media (prefers-reduced-motion: reduce) { .arc-spot-k, .arc-spot > * { animation:none !important; } }
+
+/* irregular verbs at the foot of a card: tap a verb, see its table */
+.arc-irr { margin:8px 0 4px; }
+.arc-irr-bar { display:flex; flex-wrap:wrap; gap:6px; }
+.arc-irr-tab { min-height:38px; padding:6px 13px; border-radius:999px; border:1px solid var(--border); background:var(--panel); color:var(--text); font:inherit; font-weight:650; cursor:pointer; }
+.arc-irr-tab.on { background:color-mix(in srgb, var(--g, var(--accent)) 24%, var(--panel)); border-color:var(--g, var(--accent)); box-shadow:inset 0 0 0 1px var(--g, var(--accent)); }
+.arc-irr-tab:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+.arc-irr-en { margin:10px 0 0; font-size:.85rem; color:var(--muted); }
+.arc-irr-body .arc-ctable, .arc-irr-body .arc-conj-wrap { margin-top:6px; }

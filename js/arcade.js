@@ -1341,6 +1341,70 @@
     box.appendChild(tb);
     return box;
   }
+  /* Irregular verbs at the card's foot, as in the main app's lessons
+   * (js/lessons.js irregularsFor): the common verbs the ENGINE says are really
+   * irregular in this tense, one tab each, the whole table under the tab. A
+   * compound tense the engine lacks keeps the card's haber and swaps in each
+   * irregular participle. vosotros is left out, as everywhere in Juegos. */
+  var IRR_CANDIDATES = ['ser', 'estar', 'ir', 'haber', 'tener', 'hacer', 'poder',
+    'querer', 'decir', 'venir', 'poner', 'saber', 'salir', 'dar', 'ver',
+    'conocer', 'pedir', 'dormir', 'volver', 'pensar', 'jugar'];
+  var NO_COMMAND = { haber: 1, poder: 1, querer: 1 };
+  function irregularsFor(k, t) {
+    var E = window.ENGINE, out = [];
+    if (!E || !t) return out;
+    var cmd = k === 'imperativo' || k === 'impneg';
+    IRR_CANDIDATES.forEach(function (inf) {
+      if (out.length >= 10 || (cmd && NO_COMMAND[inf])) return;
+      var v = E.verbByInf(inf); if (!v) return;
+      var twin = { inf: v.inf, en: v.en, type: v.type }, forms, plain;
+      try {
+        var ps = E.personsFor(k);
+        forms = E.conjugate(v, k); plain = E.conjugate(twin, k);
+        forms = forms.filter(function (f, i) { return ps[i] !== 'vosotros'; });
+        plain = plain.filter(function (f, i) { return ps[i] !== 'vosotros'; });
+      } catch (e) {
+        var two = (t.forms || []).every(function (x) { return /^\S+ \S+$/.test(x); });
+        if (!two || !E.participle) return;
+        var p = E.participle(v), q = E.participle(twin);
+        forms = t.forms.map(function (x) { return x.split(' ')[0] + ' ' + p; });
+        plain = t.forms.map(function (x) { return x.split(' ')[0] + ' ' + q; });
+      }
+      if (forms.join('|') === plain.join('|')) return;
+      var persons = forms.length === t.persons.length ? t.persons
+        : E.personsFor(k).filter(function (x) { return x !== 'vosotros'; });
+      if (persons.length !== forms.length) return;
+      out.push({ inf: inf, persons: persons, forms: forms });
+    });
+    return out;
+  }
+  function irrTabs(list) {
+    var box = el('div', 'arc-irr'), bar = el('div', 'arc-irr-bar'), body = el('div', 'arc-irr-body');
+    function show(i) {
+      Array.prototype.forEach.call(bar.children, function (b, j) {
+        b.classList.toggle('on', j === i); b.setAttribute('aria-pressed', j === i ? 'true' : 'false');
+      });
+      clear(body);
+      var it = list[i], w = el('div', 'arc-conj-wrap'), tb = el('table', 'arc-conj'), tbody = el('tbody');
+      var hd = el('tr'); hd.appendChild(el('th')); hd.appendChild(el('th', null, it.inf));
+      var th = el('thead'); th.appendChild(hd); tb.appendChild(th);
+      it.persons.forEach(function (p, j) {
+        var r = el('tr');
+        r.appendChild(el('td', 'arc-conj-p', String(p).replace(/\//g, '/\u200b')));
+        r.appendChild(el('td', null, it.forms[j]));
+        tbody.appendChild(r);
+      });
+      tb.appendChild(tbody); w.appendChild(tb); body.appendChild(w);
+    }
+    list.forEach(function (it, i) {
+      var b = el('button', 'arc-irr-tab', it.inf); b.type = 'button';
+      b.addEventListener('click', function () { show(i); });
+      bar.appendChild(b);
+    });
+    box.appendChild(bar); box.appendChild(body);
+    show(0);
+    return box;
+  }
   function tenseCard(k) {
     var C = cards(), c = C && C[k];
     pushView('card');
@@ -1383,6 +1447,11 @@
       if (c.contrast && c.contrast[lang]) {
         wrap.appendChild(el('div', 'arc-group', lang === 'es' ? 'No lo confundas' : 'Do not mix it up'));
         wrap.appendChild(rich(el('p', 'arc-how'), c.contrast[lang]));
+      }
+      var irr = irregularsFor(k, c.table);
+      if (irr.length) {
+        wrap.appendChild(el('div', 'arc-group', lang === 'es' ? 'Verbos irregulares en este tiempo (toca cada uno)' : 'Irregular verbs in this tense (tap each)'));
+        wrap.appendChild(irrTabs(irr));
       }
     } else {
       wrap.appendChild(el('p', 'arc-sub', 'Todavía no hay ficha de este tiempo. Practícalo igualmente.'));

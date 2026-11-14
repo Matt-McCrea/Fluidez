@@ -9,6 +9,218 @@ w.GA_CARDS = {
    "ga": "An Aimsir Láithreach",
    "en": "The present"
   },
+  "irr": [
+   {
+    "v": "bí",
+    "en": "be",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "tá mé"
+     ],
+     [
+      "tú",
+      "tá tú"
+     ],
+     [
+      "sé / sí",
+      "tá sé"
+     ],
+     [
+      "muid",
+      "táimid"
+     ],
+     [
+      "sibh",
+      "tá sibh"
+     ],
+     [
+      "siad",
+      "tá siad"
+     ],
+     [
+      "not",
+      "níl mé"
+     ],
+     [
+      "question",
+      "an bhfuil tú?"
+     ]
+    ]
+   },
+   {
+    "v": "abair",
+    "en": "say",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "deirim"
+     ],
+     [
+      "tú",
+      "deir tú"
+     ],
+     [
+      "sé / sí",
+      "deir sé"
+     ],
+     [
+      "muid",
+      "deirimid"
+     ],
+     [
+      "sibh",
+      "deir sibh"
+     ],
+     [
+      "siad",
+      "deir siad"
+     ],
+     [
+      "not",
+      "ní deirim"
+     ],
+     [
+      "question",
+      "an ndeir tú?"
+     ]
+    ]
+   },
+   {
+    "v": "tabhair",
+    "en": "give, bring",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "tugaim"
+     ],
+     [
+      "tú",
+      "tugann tú"
+     ],
+     [
+      "sé / sí",
+      "tugann sé"
+     ],
+     [
+      "muid",
+      "tugaimid"
+     ],
+     [
+      "sibh",
+      "tugann sibh"
+     ],
+     [
+      "siad",
+      "tugann siad"
+     ],
+     [
+      "not",
+      "ní thugaim"
+     ],
+     [
+      "question",
+      "an dtugann tú?"
+     ]
+    ]
+   },
+   {
+    "v": "tar",
+    "en": "come",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "tagaim"
+     ],
+     [
+      "tú",
+      "tagann tú"
+     ],
+     [
+      "sé / sí",
+      "tagann sé"
+     ],
+     [
+      "muid",
+      "tagaimid"
+     ],
+     [
+      "sibh",
+      "tagann sibh"
+     ],
+     [
+      "siad",
+      "tagann siad"
+     ],
+     [
+      "not",
+      "ní thagaim"
+     ],
+     [
+      "question",
+      "an dtagann tú?"
+     ]
+    ]
+   },
+   {
+    "v": "téigh",
+    "en": "go",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "téim"
+     ],
+     [
+      "tú",
+      "téann tú"
+     ],
+     [
+      "sé / sí",
+      "téann sé"
+     ],
+     [
+      "muid",
+      "téimid"
+     ],
+     [
+      "sibh",
+      "téann sibh"
+     ],
+     [
+      "siad",
+      "téann siad"
+     ],
+     [
+      "not",
+      "ní théim"
+     ],
+     [
+      "question",
+      "an dtéann tú?"
+     ]
+    ]
+   }
+  ],
   "when": [
    {
     "en": "Habits and things that are true: *gach lá*, *de ghnáth*, *i gcónaí*.",
@@ -195,6 +407,470 @@ w.GA_CARDS = {
    "ga": "An Aimsir Chaite",
    "en": "The past"
   },
+  "irr": [
+   {
+    "v": "bí",
+    "en": "be",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "bhí mé"
+     ],
+     [
+      "tú",
+      "bhí tú"
+     ],
+     [
+      "sé / sí",
+      "bhí sé"
+     ],
+     [
+      "muid",
+      "bhíomar"
+     ],
+     [
+      "sibh",
+      "bhí sibh"
+     ],
+     [
+      "siad",
+      "bhí siad"
+     ],
+     [
+      "not",
+      "ní raibh mé"
+     ],
+     [
+      "question",
+      "an raibh tú?"
+     ]
+    ]
+   },
+   {
+    "v": "déan",
+    "en": "do, make",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "rinne mé"
+     ],
+     [
+      "tú",
+      "rinne tú"
+     ],
+     [
+      "sé / sí",
+      "rinne sé"
+     ],
+     [
+      "muid",
+      "rinneamar"
+     ],
+     [
+      "sibh",
+      "rinne sibh"
+     ],
+     [
+      "siad",
+      "rinne siad"
+     ],
+     [
+      "not",
+      "ní dhearna mé"
+     ],
+     [
+      "question",
+      "an ndearna tú?"
+     ]
+    ]
+   },
+   {
+    "v": "téigh",
+    "en": "go",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "chuaigh mé"
+     ],
+     [
+      "tú",
+      "chuaigh tú"
+     ],
+     [
+      "sé / sí",
+      "chuaigh sé"
+     ],
+     [
+      "muid",
+      "chuamar"
+     ],
+     [
+      "sibh",
+      "chuaigh sibh"
+     ],
+     [
+      "siad",
+      "chuaigh siad"
+     ],
+     [
+      "not",
+      "ní dheachaigh mé"
+     ],
+     [
+      "question",
+      "an ndeachaigh tú?"
+     ]
+    ]
+   },
+   {
+    "v": "feic",
+    "en": "see",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "chonaic mé"
+     ],
+     [
+      "tú",
+      "chonaic tú"
+     ],
+     [
+      "sé / sí",
+      "chonaic sé"
+     ],
+     [
+      "muid",
+      "chonaiceamar"
+     ],
+     [
+      "sibh",
+      "chonaic sibh"
+     ],
+     [
+      "siad",
+      "chonaic siad"
+     ],
+     [
+      "not",
+      "ní fhaca mé"
+     ],
+     [
+      "question",
+      "an bhfaca tú?"
+     ]
+    ]
+   },
+   {
+    "v": "faigh",
+    "en": "get, find",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "fuair mé"
+     ],
+     [
+      "tú",
+      "fuair tú"
+     ],
+     [
+      "sé / sí",
+      "fuair sé"
+     ],
+     [
+      "muid",
+      "fuaireamar"
+     ],
+     [
+      "sibh",
+      "fuair sibh"
+     ],
+     [
+      "siad",
+      "fuair siad"
+     ],
+     [
+      "not",
+      "ní bhfuair mé"
+     ],
+     [
+      "question",
+      "an bhfuair tú?"
+     ]
+    ]
+   },
+   {
+    "v": "abair",
+    "en": "say",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "dúirt mé"
+     ],
+     [
+      "tú",
+      "dúirt tú"
+     ],
+     [
+      "sé / sí",
+      "dúirt sé"
+     ],
+     [
+      "muid",
+      "dúramar"
+     ],
+     [
+      "sibh",
+      "dúirt sibh"
+     ],
+     [
+      "siad",
+      "dúirt siad"
+     ],
+     [
+      "not",
+      "ní dúirt mé"
+     ],
+     [
+      "question",
+      "an ndúirt tú?"
+     ]
+    ]
+   },
+   {
+    "v": "tabhair",
+    "en": "give, bring",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "thug mé"
+     ],
+     [
+      "tú",
+      "thug tú"
+     ],
+     [
+      "sé / sí",
+      "thug sé"
+     ],
+     [
+      "muid",
+      "thugamar"
+     ],
+     [
+      "sibh",
+      "thug sibh"
+     ],
+     [
+      "siad",
+      "thug siad"
+     ],
+     [
+      "not",
+      "níor thug mé"
+     ],
+     [
+      "question",
+      "ar thug tú?"
+     ]
+    ]
+   },
+   {
+    "v": "tar",
+    "en": "come",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "tháinig mé"
+     ],
+     [
+      "tú",
+      "tháinig tú"
+     ],
+     [
+      "sé / sí",
+      "tháinig sé"
+     ],
+     [
+      "muid",
+      "thángamar"
+     ],
+     [
+      "sibh",
+      "tháinig sibh"
+     ],
+     [
+      "siad",
+      "tháinig siad"
+     ],
+     [
+      "not",
+      "níor tháinig mé"
+     ],
+     [
+      "question",
+      "ar tháinig tú?"
+     ]
+    ]
+   },
+   {
+    "v": "clois",
+    "en": "hear",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "chuala mé"
+     ],
+     [
+      "tú",
+      "chuala tú"
+     ],
+     [
+      "sé / sí",
+      "chuala sé"
+     ],
+     [
+      "muid",
+      "chualamar"
+     ],
+     [
+      "sibh",
+      "chuala sibh"
+     ],
+     [
+      "siad",
+      "chuala siad"
+     ],
+     [
+      "not",
+      "níor chuala mé"
+     ],
+     [
+      "question",
+      "ar chuala tú?"
+     ]
+    ]
+   },
+   {
+    "v": "ith",
+    "en": "eat",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "d'ith mé"
+     ],
+     [
+      "tú",
+      "d'ith tú"
+     ],
+     [
+      "sé / sí",
+      "d'ith sé"
+     ],
+     [
+      "muid",
+      "d'itheamar"
+     ],
+     [
+      "sibh",
+      "d'ith sibh"
+     ],
+     [
+      "siad",
+      "d'ith siad"
+     ],
+     [
+      "not",
+      "níor ith mé"
+     ],
+     [
+      "question",
+      "ar ith tú?"
+     ]
+    ]
+   },
+   {
+    "v": "beir",
+    "en": "catch, bear",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "rug mé"
+     ],
+     [
+      "tú",
+      "rug tú"
+     ],
+     [
+      "sé / sí",
+      "rug sé"
+     ],
+     [
+      "muid",
+      "rugamar"
+     ],
+     [
+      "sibh",
+      "rug sibh"
+     ],
+     [
+      "siad",
+      "rug siad"
+     ],
+     [
+      "not",
+      "níor rug mé"
+     ],
+     [
+      "question",
+      "ar rug tú?"
+     ]
+    ]
+   }
+  ],
   "when": [
    {
     "en": "Something that happened and finished: *inné*, *aréir*, *anuraidh*, *an tseachtain seo caite*.",
@@ -280,6 +956,344 @@ w.GA_CARDS = {
    "ga": "An Aimsir Fháistineach",
    "en": "The future"
   },
+  "irr": [
+   {
+    "v": "bí",
+    "en": "be",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "beidh mé"
+     ],
+     [
+      "tú",
+      "beidh tú"
+     ],
+     [
+      "sé / sí",
+      "beidh sé"
+     ],
+     [
+      "muid",
+      "beimid"
+     ],
+     [
+      "sibh",
+      "beidh sibh"
+     ],
+     [
+      "siad",
+      "beidh siad"
+     ],
+     [
+      "not",
+      "ní bheidh mé"
+     ],
+     [
+      "question",
+      "an mbeidh tú?"
+     ]
+    ]
+   },
+   {
+    "v": "faigh",
+    "en": "get, find",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "gheobhaidh mé"
+     ],
+     [
+      "tú",
+      "gheobhaidh tú"
+     ],
+     [
+      "sé / sí",
+      "gheobhaidh sé"
+     ],
+     [
+      "muid",
+      "gheobhaimid"
+     ],
+     [
+      "sibh",
+      "gheobhaidh sibh"
+     ],
+     [
+      "siad",
+      "gheobhaidh siad"
+     ],
+     [
+      "not",
+      "ní bhfaighidh mé"
+     ],
+     [
+      "question",
+      "an bhfaighidh tú?"
+     ]
+    ]
+   },
+   {
+    "v": "téigh",
+    "en": "go",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "rachaidh mé"
+     ],
+     [
+      "tú",
+      "rachaidh tú"
+     ],
+     [
+      "sé / sí",
+      "rachaidh sé"
+     ],
+     [
+      "muid",
+      "rachaimid"
+     ],
+     [
+      "sibh",
+      "rachaidh sibh"
+     ],
+     [
+      "siad",
+      "rachaidh siad"
+     ],
+     [
+      "not",
+      "ní rachaidh mé"
+     ],
+     [
+      "question",
+      "an rachaidh tú?"
+     ]
+    ]
+   },
+   {
+    "v": "abair",
+    "en": "say",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "déarfaidh mé"
+     ],
+     [
+      "tú",
+      "déarfaidh tú"
+     ],
+     [
+      "sé / sí",
+      "déarfaidh sé"
+     ],
+     [
+      "muid",
+      "déarfaimid"
+     ],
+     [
+      "sibh",
+      "déarfaidh sibh"
+     ],
+     [
+      "siad",
+      "déarfaidh siad"
+     ],
+     [
+      "not",
+      "ní déarfaidh mé"
+     ],
+     [
+      "question",
+      "an ndéarfaidh tú?"
+     ]
+    ]
+   },
+   {
+    "v": "tabhair",
+    "en": "give, bring",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "tabharfaidh mé"
+     ],
+     [
+      "tú",
+      "tabharfaidh tú"
+     ],
+     [
+      "sé / sí",
+      "tabharfaidh sé"
+     ],
+     [
+      "muid",
+      "tabharfaimid"
+     ],
+     [
+      "sibh",
+      "tabharfaidh sibh"
+     ],
+     [
+      "siad",
+      "tabharfaidh siad"
+     ],
+     [
+      "not",
+      "ní thabharfaidh mé"
+     ],
+     [
+      "question",
+      "an dtabharfaidh tú?"
+     ]
+    ]
+   },
+   {
+    "v": "tar",
+    "en": "come",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "tiocfaidh mé"
+     ],
+     [
+      "tú",
+      "tiocfaidh tú"
+     ],
+     [
+      "sé / sí",
+      "tiocfaidh sé"
+     ],
+     [
+      "muid",
+      "tiocfaimid"
+     ],
+     [
+      "sibh",
+      "tiocfaidh sibh"
+     ],
+     [
+      "siad",
+      "tiocfaidh siad"
+     ],
+     [
+      "not",
+      "ní thiocfaidh mé"
+     ],
+     [
+      "question",
+      "an dtiocfaidh tú?"
+     ]
+    ]
+   },
+   {
+    "v": "ith",
+    "en": "eat",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "íosfaidh mé"
+     ],
+     [
+      "tú",
+      "íosfaidh tú"
+     ],
+     [
+      "sé / sí",
+      "íosfaidh sé"
+     ],
+     [
+      "muid",
+      "íosfaimid"
+     ],
+     [
+      "sibh",
+      "íosfaidh sibh"
+     ],
+     [
+      "siad",
+      "íosfaidh siad"
+     ],
+     [
+      "not",
+      "ní íosfaidh mé"
+     ],
+     [
+      "question",
+      "an íosfaidh tú?"
+     ]
+    ]
+   },
+   {
+    "v": "beir",
+    "en": "catch, bear",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "béarfaidh mé"
+     ],
+     [
+      "tú",
+      "béarfaidh tú"
+     ],
+     [
+      "sé / sí",
+      "béarfaidh sé"
+     ],
+     [
+      "muid",
+      "béarfaimid"
+     ],
+     [
+      "sibh",
+      "béarfaidh sibh"
+     ],
+     [
+      "siad",
+      "béarfaidh siad"
+     ],
+     [
+      "not",
+      "ní bhéarfaidh mé"
+     ],
+     [
+      "question",
+      "an mbéarfaidh tú?"
+     ]
+    ]
+   }
+  ],
   "when": [
    {
     "en": "What will happen: *amárach*, *anocht*, *an tseachtain seo chugainn*, *ar ball*.",
@@ -365,6 +1379,344 @@ w.GA_CARDS = {
    "ga": "An Modh Coinníollach",
    "en": "The conditional"
   },
+  "irr": [
+   {
+    "v": "bí",
+    "en": "be",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "bheinn"
+     ],
+     [
+      "tú",
+      "bheifeá"
+     ],
+     [
+      "sé / sí",
+      "bheadh sé"
+     ],
+     [
+      "muid",
+      "bheimis"
+     ],
+     [
+      "sibh",
+      "bheadh sibh"
+     ],
+     [
+      "siad",
+      "bheidís"
+     ],
+     [
+      "not",
+      "ní bheinn"
+     ],
+     [
+      "if",
+      "dá mbeinn"
+     ]
+    ]
+   },
+   {
+    "v": "faigh",
+    "en": "get, find",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "gheobhainn"
+     ],
+     [
+      "tú",
+      "gheofá"
+     ],
+     [
+      "sé / sí",
+      "gheobhadh sé"
+     ],
+     [
+      "muid",
+      "gheobhaimis"
+     ],
+     [
+      "sibh",
+      "gheobhadh sibh"
+     ],
+     [
+      "siad",
+      "gheobhaidís"
+     ],
+     [
+      "not",
+      "ní bhfaighinn"
+     ],
+     [
+      "if",
+      "dá bhfaighinn"
+     ]
+    ]
+   },
+   {
+    "v": "téigh",
+    "en": "go",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "rachainn"
+     ],
+     [
+      "tú",
+      "rachfá"
+     ],
+     [
+      "sé / sí",
+      "rachadh sé"
+     ],
+     [
+      "muid",
+      "rachaimis"
+     ],
+     [
+      "sibh",
+      "rachadh sibh"
+     ],
+     [
+      "siad",
+      "rachaidís"
+     ],
+     [
+      "not",
+      "ní rachainn"
+     ],
+     [
+      "if",
+      "dá rachainn"
+     ]
+    ]
+   },
+   {
+    "v": "abair",
+    "en": "say",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "déarfainn"
+     ],
+     [
+      "tú",
+      "déarfá"
+     ],
+     [
+      "sé / sí",
+      "déarfadh sé"
+     ],
+     [
+      "muid",
+      "déarfaimis"
+     ],
+     [
+      "sibh",
+      "déarfadh sibh"
+     ],
+     [
+      "siad",
+      "déarfaidís"
+     ],
+     [
+      "not",
+      "ní déarfainn"
+     ],
+     [
+      "if",
+      "dá ndéarfainn"
+     ]
+    ]
+   },
+   {
+    "v": "tabhair",
+    "en": "give, bring",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "thabharfainn"
+     ],
+     [
+      "tú",
+      "thabharfá"
+     ],
+     [
+      "sé / sí",
+      "thabharfadh sé"
+     ],
+     [
+      "muid",
+      "thabharfaimis"
+     ],
+     [
+      "sibh",
+      "thabharfadh sibh"
+     ],
+     [
+      "siad",
+      "thabharfaidís"
+     ],
+     [
+      "not",
+      "ní thabharfainn"
+     ],
+     [
+      "if",
+      "dá dtabharfainn"
+     ]
+    ]
+   },
+   {
+    "v": "tar",
+    "en": "come",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "thiocfainn"
+     ],
+     [
+      "tú",
+      "thiocfá"
+     ],
+     [
+      "sé / sí",
+      "thiocfadh sé"
+     ],
+     [
+      "muid",
+      "thiocfaimis"
+     ],
+     [
+      "sibh",
+      "thiocfadh sibh"
+     ],
+     [
+      "siad",
+      "thiocfaidís"
+     ],
+     [
+      "not",
+      "ní thiocfainn"
+     ],
+     [
+      "if",
+      "dá dtiocfainn"
+     ]
+    ]
+   },
+   {
+    "v": "ith",
+    "en": "eat",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "d'íosfainn"
+     ],
+     [
+      "tú",
+      "d'íosfá"
+     ],
+     [
+      "sé / sí",
+      "d'íosfadh sé"
+     ],
+     [
+      "muid",
+      "d'íosfaimis"
+     ],
+     [
+      "sibh",
+      "d'íosfadh sibh"
+     ],
+     [
+      "siad",
+      "d'íosfaidís"
+     ],
+     [
+      "not",
+      "ní íosfainn"
+     ],
+     [
+      "if",
+      "dá n-íosfainn"
+     ]
+    ]
+   },
+   {
+    "v": "beir",
+    "en": "catch, bear",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "bhéarfainn"
+     ],
+     [
+      "tú",
+      "bhéarfá"
+     ],
+     [
+      "sé / sí",
+      "bhéarfadh sé"
+     ],
+     [
+      "muid",
+      "bhéarfaimis"
+     ],
+     [
+      "sibh",
+      "bhéarfadh sibh"
+     ],
+     [
+      "siad",
+      "bhéarfaidís"
+     ],
+     [
+      "not",
+      "ní bhéarfainn"
+     ],
+     [
+      "if",
+      "dá mbéarfainn"
+     ]
+    ]
+   }
+  ],
   "when": [
    {
     "en": "What would happen: *I would go*, *she would buy*.",
@@ -458,6 +1810,260 @@ w.GA_CARDS = {
    "ga": "An Aimsir Ghnáthchaite",
    "en": "The past habitual"
   },
+  "irr": [
+   {
+    "v": "bí",
+    "en": "be",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "bhínn"
+     ],
+     [
+      "tú",
+      "bhíteá"
+     ],
+     [
+      "sé / sí",
+      "bhíodh sé"
+     ],
+     [
+      "muid",
+      "bhímis"
+     ],
+     [
+      "sibh",
+      "bhíodh sibh"
+     ],
+     [
+      "siad",
+      "bhídís"
+     ],
+     [
+      "not",
+      "ní bhínn"
+     ],
+     [
+      "question",
+      "an mbíteá?"
+     ]
+    ]
+   },
+   {
+    "v": "téigh",
+    "en": "go",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "théinn"
+     ],
+     [
+      "tú",
+      "théiteá"
+     ],
+     [
+      "sé / sí",
+      "théadh sé"
+     ],
+     [
+      "muid",
+      "théimis"
+     ],
+     [
+      "sibh",
+      "théadh sibh"
+     ],
+     [
+      "siad",
+      "théidís"
+     ],
+     [
+      "not",
+      "ní théinn"
+     ],
+     [
+      "question",
+      "an dtéiteá?"
+     ]
+    ]
+   },
+   {
+    "v": "tar",
+    "en": "come",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "thagainn"
+     ],
+     [
+      "tú",
+      "thagtá"
+     ],
+     [
+      "sé / sí",
+      "thagadh sé"
+     ],
+     [
+      "muid",
+      "thagaimis"
+     ],
+     [
+      "sibh",
+      "thagadh sibh"
+     ],
+     [
+      "siad",
+      "thagaidís"
+     ],
+     [
+      "not",
+      "ní thagainn"
+     ],
+     [
+      "question",
+      "an dtagtá?"
+     ]
+    ]
+   },
+   {
+    "v": "tabhair",
+    "en": "give, bring",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "thugainn"
+     ],
+     [
+      "tú",
+      "thugtá"
+     ],
+     [
+      "sé / sí",
+      "thugadh sé"
+     ],
+     [
+      "muid",
+      "thugaimis"
+     ],
+     [
+      "sibh",
+      "thugadh sibh"
+     ],
+     [
+      "siad",
+      "thugaidís"
+     ],
+     [
+      "not",
+      "ní thugainn"
+     ],
+     [
+      "question",
+      "an dtugtá?"
+     ]
+    ]
+   },
+   {
+    "v": "abair",
+    "en": "say",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "deirinn"
+     ],
+     [
+      "tú",
+      "deirteá"
+     ],
+     [
+      "sé / sí",
+      "deireadh sé"
+     ],
+     [
+      "muid",
+      "deirimis"
+     ],
+     [
+      "sibh",
+      "deireadh sibh"
+     ],
+     [
+      "siad",
+      "deiridís"
+     ],
+     [
+      "not",
+      "ní deirinn"
+     ],
+     [
+      "question",
+      "an ndeirteá?"
+     ]
+    ]
+   },
+   {
+    "v": "faigh",
+    "en": "get, find",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "mé",
+      "d'fhaighinn"
+     ],
+     [
+      "tú",
+      "d'fhaighteá"
+     ],
+     [
+      "sé / sí",
+      "d'fhaigheadh sé"
+     ],
+     [
+      "muid",
+      "d'fhaighimis"
+     ],
+     [
+      "sibh",
+      "d'fhaigheadh sibh"
+     ],
+     [
+      "siad",
+      "d'fhaighidís"
+     ],
+     [
+      "not",
+      "ní fhaighinn"
+     ],
+     [
+      "question",
+      "an bhfaighteá?"
+     ]
+    ]
+   }
+  ],
   "when": [
    {
     "en": "What used to happen again and again: *I used to walk to school.*",
@@ -547,6 +2153,216 @@ w.GA_CARDS = {
    "ga": "An Modh Ordaitheach",
    "en": "Commands"
   },
+  "irr": [
+   {
+    "v": "tar",
+    "en": "come",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "one person",
+      "tar"
+     ],
+     [
+      "more than one",
+      "tagaigí"
+     ],
+     [
+      "let's",
+      "tagaimis"
+     ],
+     [
+      "don't",
+      "ná tar"
+     ]
+    ]
+   },
+   {
+    "v": "téigh",
+    "en": "go",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "one person",
+      "téigh"
+     ],
+     [
+      "more than one",
+      "téigí"
+     ],
+     [
+      "let's",
+      "téimis"
+     ],
+     [
+      "don't",
+      "ná téigh"
+     ]
+    ]
+   },
+   {
+    "v": "tabhair",
+    "en": "give, bring",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "one person",
+      "tabhair"
+     ],
+     [
+      "more than one",
+      "tugaigí"
+     ],
+     [
+      "let's",
+      "tugaimis"
+     ],
+     [
+      "don't",
+      "ná tabhair"
+     ]
+    ]
+   },
+   {
+    "v": "abair",
+    "en": "say",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "one person",
+      "abair"
+     ],
+     [
+      "more than one",
+      "abraigí"
+     ],
+     [
+      "let's",
+      "abraimis"
+     ],
+     [
+      "don't",
+      "ná habair"
+     ]
+    ]
+   },
+   {
+    "v": "faigh",
+    "en": "get, find",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "one person",
+      "faigh"
+     ],
+     [
+      "more than one",
+      "faighigí"
+     ],
+     [
+      "let's",
+      "faighimis"
+     ],
+     [
+      "don't",
+      "ná faigh"
+     ]
+    ]
+   },
+   {
+    "v": "ith",
+    "en": "eat",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "one person",
+      "ith"
+     ],
+     [
+      "more than one",
+      "ithigí"
+     ],
+     [
+      "let's",
+      "ithimis"
+     ],
+     [
+      "don't",
+      "ná hith"
+     ]
+    ]
+   },
+   {
+    "v": "beir",
+    "en": "catch, bear",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "one person",
+      "beir"
+     ],
+     [
+      "more than one",
+      "beirigí"
+     ],
+     [
+      "let's",
+      "beirimis"
+     ],
+     [
+      "don't",
+      "ná beir"
+     ]
+    ]
+   },
+   {
+    "v": "bí",
+    "en": "be",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "one person",
+      "bí"
+     ],
+     [
+      "more than one",
+      "bígí"
+     ],
+     [
+      "let's",
+      "bímis"
+     ],
+     [
+      "don't",
+      "ná bí"
+     ]
+    ]
+   }
+  ],
   "when": [
    {
     "en": "Telling someone to do something: *Suigh síos!* Sit down!",
@@ -633,6 +2449,338 @@ w.GA_CARDS = {
    "ga": "An Briathar Saor",
    "en": "The autonomous verb"
   },
+  "irr": [
+   {
+    "v": "déan",
+    "en": "do, make",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "present",
+      "déantar"
+     ],
+     [
+      "past",
+      "rinneadh"
+     ],
+     [
+      "future",
+      "déanfar"
+     ],
+     [
+      "conditional",
+      "dhéanfaí"
+     ],
+     [
+      "not (past)",
+      "ní dhearnadh"
+     ]
+    ]
+   },
+   {
+    "v": "feic",
+    "en": "see",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "present",
+      "feictear"
+     ],
+     [
+      "past",
+      "chonacthas"
+     ],
+     [
+      "future",
+      "feicfear"
+     ],
+     [
+      "conditional",
+      "d'fheicfí"
+     ],
+     [
+      "not (past)",
+      "ní fhacthas"
+     ]
+    ]
+   },
+   {
+    "v": "faigh",
+    "en": "get, find",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "present",
+      "faightear"
+     ],
+     [
+      "past",
+      "fuarthas"
+     ],
+     [
+      "future",
+      "gheofar"
+     ],
+     [
+      "conditional",
+      "gheofaí"
+     ],
+     [
+      "not (past)",
+      "ní bhfuarthas"
+     ]
+    ]
+   },
+   {
+    "v": "abair",
+    "en": "say",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "present",
+      "deirtear"
+     ],
+     [
+      "past",
+      "dúradh"
+     ],
+     [
+      "future",
+      "déarfar"
+     ],
+     [
+      "conditional",
+      "déarfaí"
+     ],
+     [
+      "not (past)",
+      "ní dúradh"
+     ]
+    ]
+   },
+   {
+    "v": "téigh",
+    "en": "go",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "present",
+      "téitear"
+     ],
+     [
+      "past",
+      "chuathas"
+     ],
+     [
+      "future",
+      "rachfar"
+     ],
+     [
+      "conditional",
+      "rachfaí"
+     ],
+     [
+      "not (past)",
+      "ní dheachthas"
+     ]
+    ]
+   },
+   {
+    "v": "tar",
+    "en": "come",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "present",
+      "tagtar"
+     ],
+     [
+      "past",
+      "thángthas"
+     ],
+     [
+      "future",
+      "tiocfar"
+     ],
+     [
+      "conditional",
+      "thiocfaí"
+     ],
+     [
+      "not (past)",
+      "níor thángthas"
+     ]
+    ]
+   },
+   {
+    "v": "tabhair",
+    "en": "give, bring",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "present",
+      "tugtar"
+     ],
+     [
+      "past",
+      "tugadh"
+     ],
+     [
+      "future",
+      "tabharfar"
+     ],
+     [
+      "conditional",
+      "thabharfaí"
+     ],
+     [
+      "not (past)",
+      "níor tugadh"
+     ]
+    ]
+   },
+   {
+    "v": "bí",
+    "en": "be",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "present",
+      "táthar"
+     ],
+     [
+      "past",
+      "bhíothas"
+     ],
+     [
+      "future",
+      "beifear"
+     ],
+     [
+      "conditional",
+      "bheifí"
+     ],
+     [
+      "not (past)",
+      "ní rabhthas"
+     ]
+    ]
+   },
+   {
+    "v": "beir",
+    "en": "catch, bear",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "present",
+      "beirtear"
+     ],
+     [
+      "past",
+      "rugadh"
+     ],
+     [
+      "future",
+      "béarfar"
+     ],
+     [
+      "conditional",
+      "bhéarfaí"
+     ],
+     [
+      "not (past)",
+      "níor rugadh"
+     ]
+    ]
+   },
+   {
+    "v": "ith",
+    "en": "eat",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "present",
+      "itear"
+     ],
+     [
+      "past",
+      "itheadh"
+     ],
+     [
+      "future",
+      "íosfar"
+     ],
+     [
+      "conditional",
+      "d'íosfaí"
+     ],
+     [
+      "not (past)",
+      "níor itheadh"
+     ]
+    ]
+   },
+   {
+    "v": "clois",
+    "en": "hear",
+    "head": [
+     "",
+     ""
+    ],
+    "rows": [
+     [
+      "present",
+      "cloistear"
+     ],
+     [
+      "past",
+      "chualathas"
+     ],
+     [
+      "future",
+      "cloisfear"
+     ],
+     [
+      "conditional",
+      "chloisfí"
+     ],
+     [
+      "not (past)",
+      "níor chualathas"
+     ]
+    ]
+   }
+  ],
   "when": [
    {
     "en": "An action with no named doer: *Tógadh an teach in 1990.* The house was built in 1990.",

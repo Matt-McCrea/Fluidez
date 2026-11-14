@@ -2,6 +2,7 @@
 "lait": {
   "kind": "tense", "topic": "lait",
   "name": { "ga": "An Aimsir Láithreach", "en": "The present" },
+  "irr": {"tense":"lait","verbs":["bí","abair","tabhair","tar","téigh"]},
   "when": [
     { "en": "Habits and things that are true: *gach lá*, *de ghnáth*, *i gcónaí*.", "ga": "Nósanna agus fírinní: *gach lá*, *de ghnáth*, *i gcónaí*." },
     { "en": "What you do in general: *Ólaim tae.* I drink tea.", "ga": "Rudaí a dhéanann tú go ginearálta: *Ólaim tae.*" },
@@ -42,6 +43,7 @@
 "caite": {
   "kind": "tense", "topic": "caite",
   "name": { "ga": "An Aimsir Chaite", "en": "The past" },
+  "irr": {"tense":"caite","verbs":["bí","déan","téigh","feic","faigh","abair","tabhair","tar","clois","ith","beir"]},
   "when": [
     { "en": "Something that happened and finished: *inné*, *aréir*, *anuraidh*, *an tseachtain seo caite*.", "ga": "Rud a tharla agus atá thart: *inné*, *aréir*, *anuraidh*." }
   ],
@@ -60,6 +62,7 @@
 "fhaist": {
   "kind": "tense", "topic": "fhaist",
   "name": { "ga": "An Aimsir Fháistineach", "en": "The future" },
+  "irr": {"tense":"fhaist","verbs":["bí","faigh","téigh","abair","tabhair","tar","ith","beir"]},
   "when": [
     { "en": "What will happen: *amárach*, *anocht*, *an tseachtain seo chugainn*, *ar ball*.", "ga": "Rud a tharlóidh: *amárach*, *anocht*, *an tseachtain seo chugainn*." }
   ],
@@ -78,6 +81,7 @@
 "coinn": {
   "kind": "tense", "topic": "coinn",
   "name": { "ga": "An Modh Coinníollach", "en": "The conditional" },
+  "irr": {"tense":"coinn","verbs":["bí","faigh","téigh","abair","tabhair","tar","ith","beir"]},
   "when": [
     { "en": "What would happen: *I would go*, *she would buy*.", "ga": "Rud a tharlódh: *rachainn*, *cheannódh sí*." },
     { "en": "After *dá* (if, unreal) both halves are conditional: *Dá mbeinn saibhir, cheannóinn teach.*", "ga": "I ndiaidh *dá*, an modh coinníollach sa dá chuid: *Dá mbeinn saibhir, cheannóinn teach.*" },
@@ -98,6 +102,7 @@
 "gnath": {
   "kind": "tense", "topic": "gnath",
   "name": { "ga": "An Aimsir Ghnáthchaite", "en": "The past habitual" },
+  "irr": {"tense":"gnath","verbs":["bí","téigh","tar","tabhair","abair","faigh"]},
   "when": [
     { "en": "What used to happen again and again: *I used to walk to school.*", "ga": "Rud a tharlaíodh arís is arís: *Shiúlainn ar scoil.*" },
     { "en": "Look for *nuair a bhí mé óg*, *fadó*, *gach samhradh*, *i gcónaí* with a past setting.", "ga": "Comharthaí: *nuair a bhí mé óg*, *fadó*, *gach samhradh*." }
@@ -117,6 +122,7 @@
 "ord": {
   "kind": "tense", "topic": "ord",
   "name": { "ga": "An Modh Ordaitheach", "en": "Commands" },
+  "irr": {"tense":"ord","verbs":["tar","téigh","tabhair","abair","faigh","ith","beir","bí"]},
   "when": [
     { "en": "Telling someone to do something: *Suigh síos!* Sit down!", "ga": "Ag rá le duine rud a dhéanamh: *Suigh síos!*" },
     { "en": "*Ná* for don't: *Ná bris é!* Don't break it!", "ga": "*Ná* le rud a chosc: *Ná bris é!*" }
@@ -135,6 +141,7 @@
 "saor": {
   "kind": "tense", "topic": "saor",
   "name": { "ga": "An Briathar Saor", "en": "The autonomous verb" },
+  "irr": {"tense":"saor","verbs":["déan","feic","faigh","abair","téigh","tar","tabhair","bí","beir","ith","clois"]},
   "when": [
     { "en": "An action with no named doer: *Tógadh an teach in 1990.* The house was built in 1990.", "ga": "Gníomh gan duine a ainmniú: *Tógadh an teach in 1990.*" },
     { "en": "English often says \"was done\" or \"people do\": *Labhraítear Gaeilge anseo.* Irish is spoken here.", "ga": "*Labhraítear Gaeilge anseo.*" }

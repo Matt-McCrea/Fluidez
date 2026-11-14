@@ -37,6 +37,19 @@ Object.keys(C).forEach(k => {
   } else if (t && t.rows) {
     t.rows = t.rows.map(r => r.map(x => /[а-яё]/i.test(x) ? ru(k, x) : x));
   }
+  if (c.irr) {   // tabs of full tables at the card's foot, one per irregular verb, from verbs.js
+    const spec = c.irr;
+    c.irr = spec.verbs.map(inf => {
+      const v = V.find(x => RU.strip(x.inf) === inf);
+      if (!v) { bad(k, 'no verb ' + inf); return null; }
+      let rows;
+      if (spec.tense === 'past') rows = [['a man', 'он', v.past.m], ['a woman', 'она', v.past.f], ['it', 'оно', v.past.n], ['more than one', 'они', v.past.pl]];
+      else if (spec.tense === 'imp') rows = v.imp && v.imp.sg ? [['to one person', 'ты', v.imp.sg], ['polite, plural', 'вы', v.imp.pl]] : null;
+      else { const f = v[spec.tense]; rows = f && f.every(Boolean) ? PRON.map((p, i) => [p[0], p[1], f[i]]) : null; }
+      if (!rows) { bad(k, 'no ' + spec.tense + ' for ' + inf); return null; }
+      return { v: v.inf, en: v.en, head: ['', '', ''], rows: rows };
+    }).filter(Boolean);
+  }
   if (/[–—]|\s-\s/.test(JSON.stringify(c))) bad(k, 'dash');
 });
 if (errs) { console.log(errs + ' errors, not written'); process.exit(1); }

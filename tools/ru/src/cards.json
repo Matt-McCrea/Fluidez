@@ -1,6 +1,7 @@
 {
  "pres": {
   "kind": "tense", "name": { "ru": "Настоя'щее вре'мя", "en": "The present" },
+  "irr": {"tense":"pres","verbs":["хотеть","мочь","есть","жить","идти","ехать","пить","писать","брать","давать"]},
   "when": [{ "en": "Now, or as a habit: *сейча'с* now, *ка'ждый день* every day." }, { "en": "Russian has one present. It covers I read, I am reading and I do read." }],
   "how": { "en": "Take off the *-ть* and add an ending for the person. Most verbs go like *чита'ть*: *-ю -ешь -ет -ем -ете -ют*. Verbs in *-ить* go like *говори'ть*: *-ю -ишь -ит -им -ите -ят*." },
   "table": { "verb": "читать", "tense": "pres" },
@@ -9,6 +10,7 @@
  },
  "past": {
   "kind": "tense", "name": { "ru": "Проше'дшее вре'мя", "en": "The past" },
+  "irr": {"tense":"past","verbs":["идти","пойти","мочь","помочь","есть","лечь","нести","вести"]},
   "when": [{ "en": "Anything finished or that was going on: *вчера'* yesterday, *в про'шлом году'* last year." }],
   "how": { "en": "Swap *-ть* for *-л*, which agrees with the gender and number of who did it, not with the person: *-л* for a man, *-ла* for a woman, *-ло* for it, *-ли* for more than one. So a woman says *я чита'ла*, a man *я чита'л*." },
   "table": { "verb": "читать", "tense": "past" },
@@ -17,6 +19,7 @@
  },
  "fut": {
   "kind": "tense", "name": { "ru": "Бу'дущее вре'мя", "en": "The future" },
+  "irr": {"tense":"fut","verbs":["быть","дать","съесть","взять","сказать","пойти","смочь","сесть","лечь","понять"]},
   "when": [{ "en": "Later: *за'втра* tomorrow, *ско'ро* soon, *в суббо'ту* on Saturday." }],
   "how": { "en": "Two ways, by aspect. A process or habit: *бу'ду* plus the imperfective infinitive, *я бу'ду чита'ть* I'll be reading. One finished action: the perfective with present endings, *я прочита'ю* I'll read it (through)." },
   "table": { "verb": "прочитать", "tense": "fut" },
@@ -25,6 +28,7 @@
  },
  "imp": {
   "kind": "tense", "name": { "ru": "Повели'тельное наклоне'ние", "en": "Orders and requests" },
+  "irr": {"tense":"imp","verbs":["быть","есть","пить","дать","взять","сесть","лечь","поехать","вставать"]},
   "when": [{ "en": "Asking or telling someone to do something. Add *пожа'луйста* to be polite." }],
   "how": { "en": "From the they form without its ending: *чита'ют* gives *чита'й*, *говоря'т* gives *говори'*. Add *-те* for *вы*: *чита'йте*, *говори'те*." },
   "table": { "rows": [["ты", "чита'й", "говори'", "иди'"], ["вы", "чита'йте", "говори'те", "иди'те"]], "head": ["", "read", "speak", "go"] },

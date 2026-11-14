@@ -23,6 +23,40 @@
     return n;
   }
   function clear(n) { while (n && n.firstChild) n.removeChild(n.firstChild); }
+
+  /* Irregular verbs at a card's foot, as in the main Fluidez lessons: one tab per
+   * verb, the tapped verb's whole table below. Built by the card builder from
+   * verbs.js, so it matches what the drills accept. */
+  function ctable(t, rich) {
+    var cols = Math.max((t.head || []).length, t.rows[0].length);
+    var tb = el('div', 'arc-ctable');
+    tb.style.setProperty('--cols', String(cols));
+    if ((t.head || []).some(Boolean)) t.head.forEach(function (hd) { tb.appendChild(rich(el('span', 'arc-ct-h'), hd)); });
+    t.rows.forEach(function (row) {
+      row.forEach(function (cell, i) { tb.appendChild(rich(el(i === 0 ? 'b' : 'span', 'arc-ct-c'), cell)); });
+    });
+    return tb;
+  }
+  function irrTabs(list, rich) {
+    var box = el('div', 'arc-irr'), bar = el('div', 'arc-irr-bar'), body = el('div', 'arc-irr-body');
+    function show(i) {
+      Array.prototype.forEach.call(bar.children, function (b, j) {
+        b.classList.toggle('on', j === i); b.setAttribute('aria-pressed', j === i ? 'true' : 'false');
+      });
+      clear(body);
+      if (list[i].en) body.appendChild(el('p', 'arc-irr-en', list[i].en));
+      body.appendChild(ctable(list[i], rich));
+    }
+    list.forEach(function (it, i) {
+      var b = el('button', 'arc-irr-tab'); b.type = 'button';
+      rich(b, it.v);
+      b.addEventListener('click', function () { show(i); });
+      bar.appendChild(b);
+    });
+    box.appendChild(bar); box.appendChild(body);
+    show(0);
+    return box;
+  }
   function host() { return document.getElementById('stage-host'); }
   function num(n) { return String(Math.round(n || 0)).replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
   function button(cls, text, fn, label) {
@@ -971,6 +1005,10 @@
       if (c.tip) {
         wrap.appendChild(el('div', 'arc-group', L('Leid', 'Tip')));
         wrap.appendChild(rich(el('p', 'arc-how arc-tip'), pickL(c.tip, lang)));
+      }
+      if (c.irr && c.irr.length) {
+        wrap.appendChild(el('div', 'arc-group', L('Briathra neamhrialta (tapáil ceann)', 'Irregular verbs (tap each)')));
+        wrap.appendChild(irrTabs(c.irr, rich));
       }
     } else {
       wrap.appendChild(el('p', 'arc-sub', 'No card for this yet. Practise it all the same.'));
