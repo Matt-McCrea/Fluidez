@@ -356,6 +356,7 @@
     if (!h) return;                                  // nothing to draw into
     if (!G) { fail('No se han cargado los juegos', 'js/games.js no está disponible.'); return; }
     clear(h);
+    if (!FULL()) autoMoveUp();
     var wrap = el('div', 'arc');
 
     var top = el('div', 'arc-top');
@@ -426,8 +427,9 @@
     // the same cards one kind at a time.
     if (!FULL()) {
       var jg = G.GAMES.filter(function (g) { return g.key === 'jugar'; })[0];
-      // the weekly check, when due, is the first thing on the board
-      if (window.TenseCheck && window.TenseCheck.due()) wrap.appendChild(checkCard());
+      // the one thing to do next, spotlit: a move up, else the weekly check
+      var g0 = guideNode();
+      if (g0) { wrap.appendChild(g0); wrap.classList.add('arc-guided'); }
       if (jg) wrap.appendChild(jugarCard(jg));
     }
 
@@ -1030,6 +1032,81 @@
   }
 
   /* ---- the card on the board -------------------------------------------------- */
+  /* ---- guiding the eye ----------------------------------------------------------
+   * When there is one thing the learner should do next, the board says so
+   * outright: that card on top with a "Haz esto ahora" badge and the reason
+   * under it, and everything else greyed (still tappable: nothing is blocked). */
+  function spot(node, label, why) {
+    var w = el('div', 'arc-spot');
+    w.appendChild(el('div', 'arc-spot-k', '👇 ' + label));
+    w.appendChild(node);
+    if (why) w.appendChild(el('p', 'arc-spot-why', why));
+    return w;
+  }
+  function tenseNames(ks) {
+    var n = ks.map(function (k) { return tenseLabel(k).toLowerCase(); });
+    return n.length < 2 ? n.join('') : n.slice(0, -1).join(', ') + ' y ' + n[n.length - 1];
+  }
+  /* The level moves up by itself (js/tensecheck.js moveUp); the board then
+   * shows what is new until the learner opens it. */
+  function autoMoveUp() {
+    var T = TC();
+    if (!T || !T.moveUp || !window.Profile) return;
+    var up = T.moveUp();
+    if (!up) return;
+    var from = window.Profile.current();
+    window.Profile.set(up);
+    document.documentElement.setAttribute('data-level', up);
+    var a = loadArc();
+    a.lvlUp = { from: from, to: up, why: T.newTensesOf(from), tense: T.newTensesOf(up)[0] || null };
+    saveArc(a);
+  }
+  function stayAt(band) {
+    if (window.Profile) window.Profile.set(band);
+    document.documentElement.setAttribute('data-level', band);
+    if (TC() && TC().hold) TC().hold(band);
+    var a = loadArc(); delete a.lvlUp; delete a.guideTense; saveArc(a);
+  }
+  function levelUpCard(u) {
+    var c = el('div', 'arc-check arc-up');
+    c.appendChild(el('span', 'arc-check-k', '🎉 Subes a ' + u.to));
+    c.appendChild(el('b', null, u.tense ? 'Lo nuevo: ' + tenseLabel(u.tense) : 'Nivel ' + u.to));
+    c.appendChild(el('span', 'arc-check-s', u.tense
+      ? 'Empieza por su ficha: cuándo se usa y cómo se forma. Luego diez preguntas.'
+      : 'Las rondas ya van a tu nuevo nivel.'));
+    var row = el('div', 'arc-check-row');
+    var go = el('button', 'arc-btn on', u.tense ? 'Ver ' + tenseLabel(u.tense) : 'Vale');
+    go.type = 'button';
+    go.addEventListener('click', function () {
+      var a = loadArc(); delete a.lvlUp; if (u.tense) a.guideTense = u.tense; saveArc(a);
+      if (u.tense && hasCard(u.tense)) tenseCard(u.tense);
+      else if (u.tense) practiceTense(u.tense);
+      else board();
+    });
+    var stay = el('button', 'arc-btn', 'Quedarme en ' + u.from);
+    stay.type = 'button';
+    stay.addEventListener('click', function () { stayAt(u.from); board(); });
+    row.appendChild(go); row.appendChild(stay);
+    c.appendChild(row);
+    return c;
+  }
+  function guideNode() {
+    var a = loadArc();
+    if (a.lvlUp) {
+      var u = a.lvlUp;
+      return spot(levelUpCard(u), 'Haz esto ahora',
+        'Por qué: ya llevas ' + TC().NEED + ' respuestas bien en ' + (u.why && u.why.length ? 'el ' + tenseNames(u.why) : 'tu nivel') +
+        ', así que pasas a ' + u.to + '. Puedes cambiar de nivel cuando quieras.');
+    }
+    if (window.TenseCheck && window.TenseCheck.due()) {
+      var at = TC().lastCheckAt();
+      return spot(checkCard(), 'Haz esto ahora',
+        'Por qué: ' + (at ? 'ha pasado una semana desde el último chequeo' : 'es tu primer chequeo') +
+        '. Te dice qué tiempo practicar ahora, y te sube de nivel si ya toca.');
+    }
+    return null;
+  }
+
   function checkCard() {
     var c = el('div', 'arc-check');
     c.appendChild(el('span', 'arc-check-k', 'Chequeo semanal'));
@@ -1127,7 +1204,25 @@
     var cur = window.Profile ? window.Profile.current() : 'A1';
     var sug = s.suggested;
     var box = el('div', 'arc-check arc-check-lvl');
-    if (sug !== cur) {
+    var BI = ['A1', 'A2', 'B1', 'B2', 'C1'];
+    if (BI.indexOf(sug) > BI.indexOf(cur)) {
+      // up: done for them, with the way back right there
+      if (window.Profile) window.Profile.set(sug);
+      document.documentElement.setAttribute('data-level', sug);
+      var la = loadArc(); delete la.lvlUp; saveArc(la);
+      box.appendChild(el('span', 'arc-check-k', '🎉 Tu nivel'));
+      box.appendChild(el('b', null, 'Subes a ' + sug));
+      box.appendChild(el('span', 'arc-check-s', 'Por lo que has contestado, ' + cur + ' se te queda corto. Las rondas ya van a ' + sug + '.'));
+      var srow = el('div', 'arc-check-row');
+      var back = el('button', 'arc-btn', 'Quedarme en ' + cur);
+      back.type = 'button';
+      back.addEventListener('click', function () {
+        stayAt(cur);
+        box.textContent = ''; box.appendChild(el('b', null, 'Te quedas en ' + cur));
+      });
+      srow.appendChild(back);
+      box.appendChild(srow);
+    } else if (sug !== cur) {
       box.appendChild(el('span', 'arc-check-k', 'Tu nivel'));
       box.appendChild(el('b', null, 'Por lo que has contestado, encajas en ' + sug));
       box.appendChild(el('span', 'arc-check-s', 'Ahora tienes ' + cur + '. Las rondas siguen tu nivel.'));
@@ -1158,8 +1253,13 @@
       nb.style.setProperty('--g', '#b5711a');
       nb.appendChild(el('b', null, 'Siguiente tiempo: ' + tenseLabel(nt)));
       nb.appendChild(el('span', null, hasCard(nt) ? 'una ficha corta y diez preguntas' : 'diez preguntas para practicarlo'));
-      nb.addEventListener('click', function () { if (hasCard(nt)) tenseCard(nt); else practiceTense(nt); });
-      wrap.appendChild(nb);
+      nb.addEventListener('click', function () {
+        var a = loadArc(); a.guideTense = nt; saveArc(a);      // the card then points at its practice button
+        if (hasCard(nt)) tenseCard(nt); else practiceTense(nt);
+      });
+      wrap.appendChild(spot(nb, 'Haz esto ahora', s.stopped
+        ? 'Por qué: es donde fallaste dos. Practicarlo es lo que más te hace avanzar ahora.'
+        : 'Por qué: es el siguiente tiempo que te falta.'));
     } else {
       wrap.appendChild(el('p', 'arc-sub', 'No te falta ningún tiempo de los que probamos.'));
     }
@@ -1172,6 +1272,7 @@
 
   /* ---- the tense card ----------------------------------------------------------- */
   function practiceTense(k) {
+    var a = loadArc(); if (a.guideTense === k) { delete a.guideTense; saveArc(a); }
     VIEW = 'round';
     G.open('verbos2', board, { key: 'verbos2:t', count: 10, duration: null, tenses: [k] });
   }
@@ -1293,7 +1394,8 @@
     pb.appendChild(el('b', null, 'Practicar ' + (c ? (c.name[lang] || tenseLabel(k)) : tenseLabel(k)) + ' · 10 preguntas'));
     pb.appendChild(el('span', null, 'Tranquilo, sin reloj, solo este tiempo'));
     pb.addEventListener('click', function () { practiceTense(k); });
-    btns.appendChild(pb);
+    var guided = loadArc().guideTense === k;
+    btns.appendChild(guided ? spot(pb, 'Ahora, practícalo', null) : pb);
     var url = TC().lessonUrl(k);
     if (url) {
       var a = el('a', 'arc-mode arc-lesson');

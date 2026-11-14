@@ -488,3 +488,23 @@ a.arc-mode { text-decoration:none; }
 .cv-result { display:flex; flex-direction:column; gap:10px; align-items:center; margin:8px 0; }
 @media (min-width:560px) { .cv-bubble { max-width:70%; } }
 @media (prefers-reduced-motion:reduce) { .cv-bubble { transition:none; } }
+
+/* ---- "haz esto ahora": the one thing to do next -------------------------------
+   The spotlit card keeps its colour with a ring and a bobbing badge; the rest
+   of the board greys back (still tappable: nothing is ever blocked). */
+.arc-guided > :not(.arc-top):not(.arc-spot) { opacity:.38; filter:saturate(.25); transition:opacity .3s, filter .3s; }
+.arc-guided > :not(.arc-top):not(.arc-spot):hover,
+.arc-guided > :not(.arc-top):not(.arc-spot):focus-within { opacity:.8; filter:none; }
+.arc-spot { margin:4px 0 20px; }
+.arc-spot-k {
+  display:inline-block; margin:0 0 9px 4px; padding:6px 13px; border-radius:999px;
+  background:var(--accent); color:var(--bg); font-weight:800; font-size:.86rem; letter-spacing:.01em;
+  animation:arc-bob 1.4s ease-in-out infinite;
+}
+.arc-spot > .arc-check, .arc-spot > .arc-mode, .arc-spot > button {
+  outline:2px solid var(--accent); outline-offset:3px; animation:arc-glow 2.2s ease-in-out infinite;
+}
+.arc-spot-why { margin:10px 4px 0; font-size:.86rem; line-height:1.45; color:var(--muted); }
+@keyframes arc-bob { 50% { transform:translateY(3px); } }
+@keyframes arc-glow { 50% { outline-offset:6px; } }
+@media (prefers-reduced-motion: reduce) { .arc-spot-k, .arc-spot > * { animation:none !important; } }

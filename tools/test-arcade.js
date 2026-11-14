@@ -1867,6 +1867,33 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     ok(TCk.suggestBand(mk()) === 'A1', 'nothing known must still read A1');
   }
 
+  /* moving up on its own, and the board pointing at it */
+  {
+    reset(); W.Profile.set('A1');
+    const srsPut = (n) => { const o = {}; for (let i = 0; i < 10; i++) o['vt:v' + i + ':presente'] = { reps: n / 10 + 2, lapses: 2 }; localStorage.setItem('fluidez.srs', JSON.stringify(o)); };
+    srsPut(90);
+    ok(TCk.correctIn('presente') === 90 && TCk.moveUp() === null, 'moved up before ' + TCk.NEED + ' right in the present');
+    srsPut(100);
+    ok(TCk.moveUp() === 'A2', 'did not offer A2 after 100 right in the present');
+    localStorage.setItem('fluidez.tensecheck', JSON.stringify({ res: { presente: 'aprender' } }));
+    ok(TCk.moveUp() === null, 'moved up while the last check found the present weak');
+    localStorage.setItem('fluidez.tensecheck', JSON.stringify({ first: Date.now() }));
+    W.Shell.go();
+    ok(W.Profile.current() === 'A2', 'the board did not move the level up on its own');
+    ok(has('arc-guided').length === 1 && has('arc-spot').length === 1 && /Subes a A2/.test(has('arc-spot')[0].textContent) && /Haz esto ahora/.test(has('arc-spot')[0].textContent),
+       'the move up is not spotlit');
+    ok(/100 respuestas bien en el presente/.test(has('arc-spot-why')[0].textContent), 'the spotlight does not say why');
+    btn(/^Quedarme en A1$/).click();
+    ok(W.Profile.current() === 'A1' && TCk.moveUp() === null && !has('arc-guided').length, 'Quedarme did not hold the level back');
+    ok(TCk.moveUp(Date.now() + 8 * 86400000) === 'A2', 'the hold did not end after a week');
+    // take it this time: the card for the new tense, with its practice button spotlit
+    localStorage.setItem('fluidez.tensecheck', JSON.stringify({ first: Date.now() }));
+    W.Shell.go();
+    btn(/^Ver Pretérito/).click();
+    ok(has('arc-tcard').length === 1 && has('arc-spot').length === 1 && /Ahora, practícalo/.test(has('arc-spot')[0].textContent), 'the new tense card does not point at its practice');
+    W.Profile.set('B1');
+  }
+
   /* the check through the screen */
   {
     reset(); W.Profile.set('B1');
@@ -1896,9 +1923,10 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     sweep(() => true);
     ok(/Tu chequeo/.test(STAGE.textContent) && has('arc-tchip').length === 15 && has('arc-tchip').every(c => c.getAttribute('data-s') === 'dominado'),
        'the results do not show fifteen dominado chips');
-    ok(/encajas en C1/.test(STAGE.textContent), 'the results do not suggest C1');
-    btn(/^Cambiar mi nivel a C1$/).click();
-    ok(W.Profile.current() === 'C1', 'Cambiar mi nivel did not write the profile');
+    ok(/Subes a C1/.test(STAGE.textContent) && W.Profile.current() === 'C1', 'a clean full check did not move the level up on its own');
+    btn(/^Quedarme en B1$/).click();
+    ok(W.Profile.current() === 'B1' && /Te quedas en B1/.test(STAGE.textContent), 'Quedarme did not put the level back');
+    W.Profile.set('C1');
     ok(has('arc-next').length === 0, 'a next tense is offered after a perfect check');
     W.Profile.set('B1');
 

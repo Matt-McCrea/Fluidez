@@ -251,6 +251,42 @@ window.TenseCheck = (function () {
     return s;
   }
 
+  /* ---- moving up on its own --------------------------------------------------
+   * Nobody should have to know that the level button exists to make progress.
+   * A learner moves up a band once every tense their band adds has NEED right
+   * answers in it (from rounds and checks alike: the SRS keeps reps and lapses
+   * per verb and tense), and the last check did not find one of them weak.
+   * "Quedarme" holds them where they are for a week. */
+  var NEED = 100;
+  function correctIn(tense) {
+    var s = srsStore(), n = 0, tail = ':' + tense;
+    Object.keys(s).forEach(function (id) {
+      if (id.indexOf('vt:') !== 0 || id.slice(-tail.length) !== tail) return;
+      var c = s[id] || {};
+      n += Math.max(0, (c.reps || 0) - (c.lapses || 0));
+    });
+    return n;
+  }
+  function newTensesOf(band) {
+    var i = bandIx(band), now = GI().tensesForBand(BANDS[i]);
+    var before = i > 0 ? GI().tensesForBand(BANDS[i - 1]) : [];
+    return now.filter(function (t) { return before.indexOf(t) === -1; });
+  }
+  /* The band to move up to now, or null. `at` lets a test pass the clock. */
+  function moveUp(at) {
+    var t = at == null ? now() : at;
+    var cur = window.Profile ? window.Profile.current() : 'A1', i = BANDS.indexOf(cur);
+    if (i < 0 || i >= BANDS.length - 1 || !GI() || !GI().tensesForBand) return null;
+    var st = load();
+    if (st.hold && st.hold.band === cur && t < st.hold.until) return null;
+    var res = st.res || {};
+    var ok = newTensesOf(cur).every(function (k) { return correctIn(k) >= NEED && res[k] !== 'aprender'; });
+    return ok ? BANDS[i + 1] : null;
+  }
+  function hold(band, at) {
+    var st = load(); st.hold = { band: band, until: (at == null ? now() : at) + 7 * DAY }; save(st);
+  }
+
   /* The highest band whose tenses (cumulative) are all dominado or casi. */
   function suggestBand(res) {
     var best = 'A1';
@@ -277,6 +313,6 @@ window.TenseCheck = (function () {
     thousands: thousands,
     statuses: statuses, lastCheckAt: lastCheckAt, playedRounds: playedRounds, due: due, snooze: snooze,
     statusOf: statusOf, pickItems: pickItems, session: session, suggestBand: suggestBand, nextTense: nextTense,
-    usualBand: usualBand
+    usualBand: usualBand, NEED: NEED, correctIn: correctIn, newTensesOf: newTensesOf, moveUp: moveUp, hold: hold
   };
 })();
