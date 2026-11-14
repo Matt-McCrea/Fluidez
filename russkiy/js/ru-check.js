@@ -199,6 +199,53 @@ window.RUCheck = (function () {
     return s;
   }
 
+  /* ---- moving up on its own ----------------------------------------------------
+   * A learner moves up a band once every unit with sentences at their band has
+   * NEED right answers on those sentences (rounds and checks alike: the SRS keeps reps and lapses per
+   * item, and a unit's items are graded under GAItems.gapId(row)) and the last
+   * check did not find one of them weak. "Stay" holds them for a week. */
+  var NEED = 100;
+  function srsStore() {
+    var k = window.SRS && window.SRS.KEY;
+    try { return (k && JSON.parse(localStorage.getItem(k))) || {}; } catch (e) { return {}; }
+  }
+  /* Right answers in a unit, counting only its rows at band index bi (all rows
+   * when bi is null). Units spread over every band, so a level is measured on
+   * its own sentences, not on a unit's easiest ones. */
+  function rowsAt(u, bi) {
+    return unitRows(u).filter(function (g) { return bi == null || bandIx(g.b) === bi; });
+  }
+  function correctIn(u, bi) {
+    var s = srsStore(), n = 0;
+    rowsAt(u, bi).forEach(function (g) {
+      var c = s[GI().gapId(g)];
+      if (c) n += Math.max(0, (c.reps || 0) - (c.lapses || 0));
+    });
+    return n;
+  }
+  /* The units a band is measured on: those with three or more rows at it. */
+  function newUnitsOf(band) {
+    var i = BANDS.indexOf(band);
+    return i < 0 ? [] : UNITS.filter(function (u) { return rowsAt(u, i).length >= 3; });
+  }
+  /* What a unit needs at a band: NEED, or three right per row when it has few. */
+  function needFor(u, bi) { return Math.min(NEED, 3 * rowsAt(u, bi).length); }
+  /* The band to move up to now, or null. `at` lets a test pass the clock. */
+  function moveUp(at) {
+    var t = at == null ? now() : at;
+    var cur = window.Profile ? window.Profile.current() : 'A1', i = BANDS.indexOf(cur);
+    if (i < 0 || i >= BANDS.length - 1 || !GI()) return null;
+    var st = load();
+    if (st.hold && st.hold.band === cur && t < st.hold.until) return null;
+    var res = st.res || {}, us = newUnitsOf(cur);
+    if (!us.length) return null;                       // nothing to measure: never move up on it
+    var ok = us.every(function (u) { return correctIn(u, i) >= needFor(u, i) && res[u.id] !== 'aprender'; });
+    return ok ? BANDS[i + 1] : null;
+  }
+  function hold(band, at) {
+    var st = load(); st.hold = { band: band, until: (at == null ? now() : at) + 7 * DAY }; save(st);
+  }
+
   /* The highest band whose units (cumulative, those on the ladder) are all dominado or casi. */
   function suggestBand(res, lad) {
     lad = lad || ladder({ all: true });
@@ -226,6 +273,7 @@ window.RUCheck = (function () {
     unitById: unitById, cardFor: cardFor, ladder: ladder, unitBand: unitBand,
     progress: progress, statuses: statuses, lastCheckAt: lastCheckAt, playedRounds: playedRounds,
     due: due, snooze: snooze, statusOf: statusOf, pickItems: pickItems, session: session,
-    suggestBand: suggestBand, nextUnit: nextUnit
+    suggestBand: suggestBand, nextUnit: nextUnit,
+    NEED: NEED, correctIn: correctIn, newUnitsOf: newUnitsOf, moveUp: moveUp, hold: hold, needFor: needFor
   };
 })();

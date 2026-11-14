@@ -717,6 +717,68 @@ async function playRound(cfg, plan) {
     ok(byCls('arc-check').length === 1 && allText().indexOf('Weekly check') !== -1 || allText().indexOf('Seiceáil seachtainiúil') !== -1, 'the weekly check card shows on the board');
   }
 
+
+  // ---- moving up on its own, and the board pointing at it -------------------------------------------------------------------------------------------
+  {
+    const keepB = W.GA_BANK; W.GA_CARDS = W.GA_CARDS || {};
+    const FX = [];
+    ['lait', 'caite'].forEach((t, ti) => { for (let n = 1; n <= 40; n++) FX.push(Object.assign({ k: 'briathra', t, b: ti ? 'A2' : 'A1', q: 'Up ' + t + ' ' + n + ' ___ end.', c: 'cue', a: 'ans' + t + n, x: [],
+      o: ['ans' + t + n, 'wrongone', 'wrongtwo', 'wrongthree'], e: 'Meaning ' + n, w: 'Note ' + n }, {})); });
+    W.GA_BANK = FX; W.GAItems.reset();
+    const text = n => n.textContent;
+    const C = W.GACheck, GIx = W.GAItems, DAYMS = 86400000;
+    W.Profile.set('A1');
+    const us = C.newUnitsOf('A1');
+    ok(us.length > 0 && C.NEED === 100, 'A1 has units to measure');
+    const rowOf = u => GIx.bank(u.k).filter(g => u.t == null || g.t === u.t)[0];
+    const srsPut = n => { const o = {}; us.forEach(u => { o[GIx.gapId(rowOf(u))] = { reps: n + 2, lapses: 2 }; }); store['liofa.srs'] = JSON.stringify(o); W.SRS._reset(); };
+    const btnT = re => STAGE.all(n => n.tagName === 'BUTTON' && re.test(text(n)))[0];
+    srsPut(90);
+    ok(us.every(u => C.correctIn(u) === 90) && C.moveUp() === null, 'moved up before ' + C.NEED + ' right in every unit of the band');
+    srsPut(100);
+    ok(C.moveUp() === 'A2', 'did not offer A2 after 100 right in every unit');
+    { const o = JSON.parse(store['liofa.srs']); delete o[GIx.gapId(rowOf(us[0]))]; store['liofa.srs'] = JSON.stringify(o); W.SRS._reset(); }
+    ok(C.moveUp() === null, 'moved up with a unit of the band short');
+    srsPut(100);
+    store['liofa.check'] = JSON.stringify({ at: Date.now(), res: { [us[0].id]: 'aprender' } });
+    ok(C.moveUp() === null, 'moved up while the last check found a unit weak');
+    store['liofa.check'] = JSON.stringify({ at: Date.now() });
+    delete store['liofa.arcade'];
+    W.GAArcade.board();
+    ok(W.Profile.current() === 'A2', 'the board did not move the level up on its own');
+    ok(byCls('arc-guided').length === 1 && byCls('arc-spot').length === 1 && /You move up to A2/.test(text(byCls('arc-spot')[0])) && /Do this now/.test(text(byCls('arc-spot')[0])),
+       'the move up is not spotlit');
+    ok(/100 right answers in/.test(text(byCls('arc-spot-why')[0])), 'the spotlight does not say why: ' + text(byCls('arc-spot-why')[0]));
+    btnT(/^Stay at A1$/).click();
+    ok(W.Profile.current() === 'A1' && C.moveUp() === null && !byCls('arc-guided').length, 'Stay did not hold the level back');
+    ok(C.moveUp(Date.now() + 8 * DAYMS) === 'A2', 'the hold did not end after a week');
+    // take it this time: the card for the new unit, with its practice button spotlit
+    store['liofa.check'] = JSON.stringify({ at: Date.now() });
+    const nu = C.newUnitsOf('A2')[0];
+    if (!W.GA_CARDS[nu.card]) W.GA_CARDS[nu.card] = { kind: 'grammar', topic: 'x', name: { ga: 'Cárta', en: 'A card' }, when: [{ ga: 'a', en: 'b' }], how: { ga: 'c', en: 'd' }, ex: [], tip: null };
+    W.GAArcade.board();
+    btnT(/^(See|Practise) /).click();
+    ok(byCls('arc-tcard').length === 1 && byCls('arc-spot').length === 1 && /Now, practise it/.test(text(byCls('arc-spot')[0])), 'the new unit card does not point at its practice');
+
+    // a clean full check that finds you above your level moves you up, with the way back
+    W.Profile.set('A1');
+    store['liofa.check'] = '{}'; delete store['liofa.srs']; W.SRS._reset();
+    W.GAArcade.checkRun(true);
+    let lp = 0;
+    while (!byCls('arc-check-lvl').length && lp++ < 120) {
+      const prompt = text(byCls('arc-check-q')[0]);
+      const row = FX.filter(r => r.q.replace(/___+/g, '＿＿＿') === prompt)[0];
+      byCls('g-opt').filter(o => text(o) === row.a)[0].click();
+      byCls('arc-check-next')[0].click();
+    }
+    ok(byCls('arc-check-lvl').length === 1 && /You move up to/.test(text(byCls('arc-check-lvl')[0])) && W.Profile.current() !== 'A1', 'a clean full check did not move the level up on its own');
+    btnT(/^Stay at A1$/).click();
+    ok(W.Profile.current() === 'A1' && /You stay at A1/.test(text(byCls('arc-check-lvl')[0])), 'Stay did not put the level back');
+    store['liofa.check'] = '{}';
+    W.GA_BANK = keepB; W.GAItems.reset(); delete store['liofa.srs']; W.SRS._reset();
+    W.Profile.set('B2');
+  }
+
   // ---- the cards -------------------------------------------------------------------------------------------------------------------------------------
   {
     ok(!!W.GA_CARDS.lait && Object.keys(W.GA_CARDS).length >= 10, 'cards.js did not load');

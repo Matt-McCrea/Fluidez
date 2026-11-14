@@ -122,6 +122,7 @@
     if (SK && SK.mode() === 'talk') { SK.talkHome(); return; }       // Talk (the default): the speaking side, any time
     if (H && !H.unlocked()) { H.path(); return; }                     // Script before the test: the letters course
     clear(h);
+    autoMoveUp();
     var wrap = el('div', 'arc');
 
     var top = el('div', 'arc-top');
@@ -134,7 +135,9 @@
     wrap.appendChild(top);
     if (SK) wrap.appendChild(SK.modeToggle());
 
-    if (window.ARCheck && window.ARCheck.due()) wrap.appendChild(checkCard());   // first thing on the board when due
+    // the one thing to do next, spotlit: a move up, else the weekly check
+    var g0 = guideNode();
+    if (g0) { wrap.appendChild(g0); wrap.classList.add('arc-guided'); }
     wrap.appendChild(ilabCard(GAMES[0]));
 
     var withConvos = !!(window.ARConvo && window.ARConvo.all().length);
@@ -449,6 +452,7 @@
   }
   // ten untimed questions on one unit (from a card or a check result)
   function practiceUnit(u) {
+    var ga = loadArc(); if (ga.guideUnit === u.id) { delete ga.guideUnit; saveArc(ga); }
     var g = GAMES.filter(function (x) { return x.kind === u.k; })[0];
     if (!g) return;
     VIEW = 'round';
@@ -545,6 +549,85 @@
   }
 
   /* ---- the weekly check ------------------------------------------------------------------- */
+  /* ---- guiding the eye ----------------------------------------------------------
+   * When there is one thing the learner should do next, the board says so
+   * outright: that card on top with a "Do this now" badge and the reason under
+   * it, and everything else greyed (still tappable: nothing is blocked). */
+  function spot(node, label, why) {
+    var w = el('div', 'arc-spot');
+    w.appendChild(el('div', 'arc-spot-k', '👇 ' + label));
+    w.appendChild(node);
+    if (why) w.appendChild(el('p', 'arc-spot-why', why));
+    return w;
+  }
+  function unitNames(us) {
+    var n = us.map(function (u) { return u.en; });
+    if (n.length > 3) return 'all ' + n.length + ' topics';
+    return n.length < 2 ? n.join('') : n.slice(0, -1).join(', ') + ' and ' + n[n.length - 1];
+  }
+  /* The level moves up by itself (ARCheck moveUp); the board then shows what is
+   * new until the learner opens it. */
+  function autoMoveUp() {
+    var K = window.ARCheck;
+    if (!K || !K.moveUp || !window.Profile) return;
+    var up = K.moveUp();
+    if (!up) return;
+    var from = window.Profile.current();
+    window.Profile.set(up);
+    var nu = K.newUnitsOf(up)[0] || null;
+    var a = loadArc();
+    a.lvlUp = { from: from, to: up, why: K.newUnitsOf(from).map(function (u) { return { en: u.label.en }; }),
+                unit: nu ? nu.id : null, unitEn: nu ? nu.label.en : null };
+    saveArc(a);
+  }
+  function stayAt(bd) {
+    if (window.Profile) window.Profile.set(bd);
+    if (window.ARCheck && window.ARCheck.hold) window.ARCheck.hold(bd);
+    var a = loadArc(); delete a.lvlUp; delete a.guideUnit; saveArc(a);
+  }
+  function levelUpCard(u) {
+    var nu = u.unit ? window.ARCheck.unitById(u.unit) : null;
+    var c = el('div', 'arc-check arc-up');
+    c.appendChild(el('span', 'arc-check-k', '🎉 You move up to ' + u.to));
+    c.appendChild(el('b', null, nu ? 'New: ' + nu.label.en : 'Level ' + u.to));
+    c.appendChild(el('span', 'arc-check-s', nu
+      ? (hasCard(nu.card) ? 'Start with its card: when it is used and how it is formed. Then ten questions.' : 'Ten questions to practise it.')
+      : 'Your rounds now follow the new level.'));
+    var row = el('div', 'arc-check-row');
+    var go = el('button', 'arc-btn on', nu ? (hasCard(nu.card) ? 'See ' + nu.label.en : 'Practise ' + nu.label.en) : 'Got it');
+    go.type = 'button';
+    go.addEventListener('click', function () {
+      var a = loadArc(); delete a.lvlUp; if (nu) a.guideUnit = nu.id; saveArc(a);
+      if (nu && hasCard(nu.card)) cardScreen(nu.card, nu);
+      else if (nu) practiceUnit(nu);
+      else board();
+    });
+    var stay = el('button', 'arc-btn', 'Stay at ' + u.from);
+    stay.type = 'button';
+    stay.addEventListener('click', function () { stayAt(u.from); board(); });
+    row.appendChild(go); row.appendChild(stay);
+    c.appendChild(row);
+    return c;
+  }
+  function guideNode() {
+    var a = loadArc();
+    if (a.lvlUp) {
+      var u = a.lvlUp;
+      return spot(levelUpCard(u), 'Do this now',
+        'Why: you have ' + window.ARCheck.NEED + ' right answers in ' + (u.why && u.why.length ? unitNames(u.why) : 'your level') +
+        ', so you move up to ' + u.to + '. You can change level whenever you like.');
+    }
+    if (window.ARCheck && window.ARCheck.due()) {
+      var at = window.ARCheck.lastCheckAt();
+      return spot(checkCard(), 'Do this now',
+        'Why: ' + (at ? 'it has been a week since your last check' : 'this is your first check') +
+        '. It shows what to practise now, and moves you up a level if it is time.');
+    }
+    return null;
+  }
+  // for the Talk screen: settle any move up first, then the guided node (or null)
+  function guideFor() { autoMoveUp(); return guideNode(); }
+
   function checkCard() {
     var c = el('div', 'arc-check');
     c.appendChild(el('span', 'arc-check-k', 'Weekly check'));
@@ -641,7 +724,24 @@
     var cur = band(), sug = s.suggested;
     var box = el('div', 'arc-check arc-check-lvl');
     box.appendChild(el('span', 'arc-check-k', 'Your level'));
-    if (sug !== cur) {
+    var BI = window.ARCheck.BANDS;
+    if (BI.indexOf(sug) > BI.indexOf(cur)) {
+      // up: done for them, with the way back right there
+      if (window.Profile) window.Profile.set(sug);
+      var la = loadArc(); delete la.lvlUp; saveArc(la);
+      box.appendChild(el('span', 'arc-check-k', '🎉 Your level'));
+      box.appendChild(el('b', null, 'You move up to ' + sug));
+      box.appendChild(el('span', 'arc-check-s', 'From your answers, ' + cur + ' is too easy for you. Your rounds now follow ' + sug + '.'));
+      var srow = el('div', 'arc-check-row');
+      var back = el('button', 'arc-btn', 'Stay at ' + cur);
+      back.type = 'button';
+      back.addEventListener('click', function () {
+        stayAt(cur);
+        clear(box); box.appendChild(el('b', null, 'You stay at ' + cur));
+      });
+      srow.appendChild(back);
+      box.appendChild(srow);
+    } else if (sug !== cur) {
       box.appendChild(el('b', null, 'From your answers you fit ' + sug));
       box.appendChild(el('span', 'arc-check-s', 'You are on ' + cur + ' now. Rounds follow your level.'));
       var row = el('div', 'arc-check-row');
@@ -663,8 +763,13 @@
       nb.type = 'button';
       nb.appendChild(el('b', null, 'Next to learn: ' + nu.label.en));
       nb.appendChild(el('span', null, hasCard(nu.card) ? 'a short card, then ten questions' : 'ten questions to practise it'));
-      nb.addEventListener('click', function () { if (hasCard(nu.card)) cardScreen(nu.card, nu); else practiceUnit(nu); });
-      wrap.appendChild(nb);
+      nb.addEventListener('click', function () {
+        var a = loadArc(); a.guideUnit = nu.id; saveArc(a);      // the card then points at its practice button
+        if (hasCard(nu.card)) cardScreen(nu.card, nu); else practiceUnit(nu);
+      });
+      wrap.appendChild(spot(nb, 'Do this now', s.stopped
+        ? 'Why: this is where you got two wrong. Practising it moves you forward most right now.'
+        : 'Why: it is the next one you have not got yet.'));
     } else {
       wrap.appendChild(el('p', 'arc-sub', 'Nothing left to learn from what we tested.'));
     }
@@ -841,7 +946,7 @@
       pb.appendChild(el('b', null, 'Practise: ' + u.label.en + ' · 10 questions'));
       pb.appendChild(el('span', null, 'Hādiʾ, no clock, just this'));
       pb.addEventListener('click', function () { practiceUnit(u); });
-      btns.appendChild(pb);
+      btns.appendChild(loadArc().guideUnit === u.id ? spot(pb, 'Now, practise it', null) : pb);
       wrap.appendChild(btns);
     }
     h.appendChild(wrap);
@@ -1004,7 +1109,7 @@
   }
 
   window.ARArcade = { board: board, knownScreen: knownScreen, cardScreen: cardScreen, checkRun: checkRun, sheet: sheet,
-    GAMES: GAMES, checkCard: checkCard, practisePhrases: practisePhrases, themeLabels: knownThemeLabel, levelPicker: levelPicker, settings: settings, startShelf: startShelf };
+    GAMES: GAMES, checkCard: checkCard, guideNode: guideFor, practisePhrases: practisePhrases, themeLabels: knownThemeLabel, levelPicker: levelPicker, settings: settings, startShelf: startShelf };
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
   else boot();

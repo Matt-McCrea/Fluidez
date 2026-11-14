@@ -318,7 +318,8 @@ window.ARSpeak = (function () {
     var w = el('div', 'arc arc-first arc-talk');
     w.appendChild(modeToggle());
     // the weekly check shows on Talk as well, since Talk is where the app opens
-    if (window.ARCheck && window.ARCheck.due() && window.ARArcade && window.ARArcade.checkCard) w.appendChild(window.ARArcade.checkCard());
+    var g0 = window.ARArcade && window.ARArcade.guideNode ? window.ARArcade.guideNode() : null;
+    if (g0) { w.appendChild(g0); w.classList.add('arc-guided'); }
     var brand = el('div', 'arc-first-brand');
     brand.appendChild(UI.ar('طَلَاقَة', 'big'));
     brand.appendChild(el('div', 'arc-brand', 'Ṭalāqa'));
