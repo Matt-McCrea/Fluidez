@@ -494,6 +494,8 @@
       var at = C.lastCheckAt();
       var sub = el('span', 'arc-prow-s', at ? 'last check ' + ago(at) + ' · ' : 'no check yet · ');
       sub.appendChild(button('arc-link', 'take the check', checkRun));
+      sub.appendChild(el('span', null, ' · '));
+      sub.appendChild(button('arc-link', 'what do I already know?', checkAll));   // optional: every band, stops at two wrong
       rv.appendChild(sub);
     }
     panel.appendChild(rv);
@@ -529,18 +531,22 @@
   function checkCard() {
     var c = el('div', 'arc-check');
     c.appendChild(el('span', 'arc-check-k', 'Weekly check'));
-    c.appendChild(el('b', null, 'See which tenses and topics you have got'));
-    c.appendChild(el('span', 'arc-check-s', 'Three sentences each, no clock. It tells you what to learn next.'));
+    c.appendChild(el('b', null, 'Go over what your level covers'));
+    c.appendChild(el('span', 'arc-check-s', 'Three sentences each, no clock. Two wrong and it stops there: that is the one to practise.'));
     var row = el('div', 'arc-check-row');
     row.appendChild(button('arc-btn on', 'Start · 3 min', checkRun));
     row.appendChild(button('arc-btn', 'Later', function () { window.RUCheck.snooze(); board(); }));
     c.appendChild(row);
     return c;
   }
-  function checkRun() {
+  /* all === true is the optional run through every band ("what do I already
+   * know?"); otherwise the weekly check, over your own level. A click handler
+   * passes an event, which is not true. */
+  function checkRun(all) {
     pushView('check');
-    drawCheck(window.RUCheck.session());
+    drawCheck(window.RUCheck.session(null, { all: all === true }));
   }
+  function checkAll() { checkRun(true); }
   function gapLevelFor(g) {
     return GC.sentenceLevel(g.b || 'A1');
   }
@@ -601,8 +607,9 @@
     var wrap = el('div', 'arc-stats');
     wrap.appendChild(topBar('Your check', null, board));
     wrap.appendChild(el('p', 'arc-sub', s.stopped
-      ? 'We stopped here: two in a row were hard, and there is no need to go on.'
-      : 'You have been through everything on your ladder.'));
+      ? 'We stopped there: two wrong, so that is the one to practise now.'
+      : s.allRun ? 'You have been through everything.' : 'Everything at your level, done well.'));
+    if (!s.stopped && !s.allRun) wrap.appendChild(button('arc-btn', 'Try the ones above your level too', checkAll));
     var chips = el('div', 'arc-tchips');
     C.ladder().forEach(function (u) {
       var st = s.res[u.id] || 'sin';

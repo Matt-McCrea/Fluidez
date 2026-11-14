@@ -687,9 +687,13 @@ async function playRound(cfg, plan) {
     s = C.session(rng, { at: 5000 });
     guard = 0;
     while (!s.done && guard++ < 200) { const it = s.item(); s.answer(it.o.filter(o => o !== it.a && (it.x || []).indexOf(o) === -1)[0]); s.next(); }
-    ok(s.done && s.stopped, 'two weak units in a row stop the check');
+    ok(s.done && s.stopped && Object.keys(s.res).length === 1 && s.score[lad[0].id] === '0/2', 'two misses do not stop the check at once: ' + JSON.stringify(s.score));
     ok(s.nextUnit && s.nextUnit.id === lad[0].id && s.res[lad[0].id] === 'aprender', 'the next unit to learn is the first weak one');
     ok(s.suggested === 'A1', 'all wrong suggests A1, got ' + s.suggested);
+    // the weekly check keeps to the learner's level; the optional run goes further
+    W.Profile.set('A1');
+    ok(C.ladder().length && C.ladder().every(u => C.unitBand(u) === 0), 'the A1 ladder has a unit above A1');
+    W.Profile.set('B2');
     // the screens
     C.snooze(0); store['liofa.check'] = '{}';
     W.GAArcade.checkRun();

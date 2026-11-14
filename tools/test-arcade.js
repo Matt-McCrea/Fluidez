@@ -1806,9 +1806,9 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
 
   /* the flow */
   {
-    const run = (right) => {
-      reset();
-      const s = TCk.session(rng4, { at: 1.8e12 });
+    const run = (right, opts, keep) => {
+      if (!keep) reset();
+      const s = TCk.session(rng4, Object.assign({ at: 1.8e12 }, opts || {}));
       let guard = 0;
       while (!s.done && guard++ < 100) {
         const g = s.item(), t = s.tense();
@@ -1818,36 +1818,42 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
       }
       return s;
     };
-    // everything right: all 15, dominado, C1, nothing left to learn
-    let s = run(() => true);
-    ok(s.done && !s.stopped && Object.keys(s.res).length === 15 && Object.keys(s.res).every(k => s.res[k] === 'dominado'),
-       'a perfect check did not end with fifteen dominado');
+    // the optional run through everything, all right: all 15, dominado, C1, nothing left to learn
+    let s = run(() => true, { all: true });
+    ok(s.done && !s.stopped && s.allRun && Object.keys(s.res).length === 15 && Object.keys(s.res).every(k => s.res[k] === 'dominado'),
+       'a perfect full check did not end with fifteen dominado');
     ok(s.suggested === 'C1' && s.nextTense === null, `perfect check: suggested ${s.suggested}, next ${s.nextTense}`);
     const saved = JSON.parse(localStorage.getItem('fluidez.tensecheck'));
     ok(saved.at === 1.8e12 && saved.res.presente === 'dominado' && saved.res.pluscsubj === 'dominado', 'the result was not saved');
     ok(!TCk.due(1.8e12 + 6 * 86400000) && TCk.due(1.8e12 + 7 * 86400000), 'the next check is not a week away');
-    // the SRS saw the answers
     const srs = JSON.parse(localStorage.getItem('fluidez.srs') || '{}');
     ok(Object.keys(srs).some(id => /^vt:/.test(id) && srs[id].reps > 0), 'the check wrote nothing to the SRS');
 
-    // two bad tenses in a row stop it: 0/3 and 1/3 both count
-    s = run((t, i) => t === 'presente' || (t === 'preterito' ? i === 0 : false));
-    ok(s.stopped && Object.keys(s.res).join() === 'presente,preterito,imperfecto', 'did not stop after two weak tenses: ' + Object.keys(s.res));
-    ok(s.res.presente === 'dominado' && s.res.preterito === 'aprender' && s.res.imperfecto === 'aprender', '1/3 must be por aprender');
+    // the weekly check at A1 covers only the A1 tenses
+    W.Profile.set('A1');
+    s = run(() => true);
+    ok(s.done && !s.allRun && Object.keys(s.res).join() === GI.tensesForBand('A1').join(), 'the A1 weekly check went past the A1 tenses: ' + Object.keys(s.res));
+    ok(s.nextTense === 'preterito', 'after the A1 tenses the next tense is not the preterite: ' + s.nextTense);
+
+    // two misses end it at once, with no third question; a beginner who knows nothing answers two
+    s = run(() => false);
+    ok(s.stopped && s.stopAt === 'presente' && s.score.presente === '0/2' && Object.keys(s.res).join() === 'presente', 'two misses did not stop the check at once');
+    s = run((t, i) => t === 'presente' || (t === 'preterito' ? i === 0 : false), { all: true });
+    ok(s.stopped && Object.keys(s.res).join() === 'presente,preterito' && s.score.preterito === '1/3', 'did not stop at the first tense with two misses: ' + Object.keys(s.res));
+    ok(s.res.presente === 'dominado' && s.res.preterito === 'aprender', '1/3 must be por aprender');
     ok(s.suggested === 'A1' && s.nextTense === 'preterito', `stopped check: suggested ${s.suggested}, next ${s.nextTense}`);
     ok(TCk.statuses().perfecto === 'sin' && TCk.statuses().preterito === 'aprender', 'tenses not reached are not sin probar');
 
-    // a good tense in between resets the count; 2/3 is casi
-    s = run((t, i) => {
-      if (t === 'presente') return i !== 1;                 // 2/3: casi
-      if (t === 'preterito') return false;                  // 0/3
-      if (t === 'imperfecto') return true;                  // resets
-      if (t === 'perfecto') return false;                   // 0/3, count is 1
-      return true;
-    });
-    ok(!s.stopped && Object.keys(s.res).length === 15, 'a good tense in between did not reset the stop count');
-    ok(s.res.presente === 'casi' && s.res.preterito === 'aprender' && s.res.imperfecto === 'dominado', 'statuses wrong after a mixed check');
-    ok(s.nextTense === 'preterito', 'the next tense is not the first por aprender');
+    // one miss is casi and goes on
+    s = run((t, i) => t === 'presente' ? i !== 1 : true, { all: true });
+    ok(!s.stopped && Object.keys(s.res).length === 15 && s.res.presente === 'casi', 'one miss stopped the check, or was not casi');
+
+    // a later weekly check keeps what an earlier one found, and rechecks it
+    W.Profile.set('A1');
+    run((t, i) => t !== 'imperfecto' || i === 0, { all: true });           // imperfecto 1/3 stops the full run
+    s = run(() => true, null, true);
+    ok(Object.keys(s.res).indexOf('preterito') !== -1 && s.res.imperfecto === 'dominado', 'the weekly check did not recheck tenses an earlier check rated');
+    W.Profile.set('B1');
 
     // the suggested band
     const mk = (n) => { const o = {}; TCk.LADDER.forEach((t, i) => { o[t] = 'sin'; }); GI.tensesForBand('C1').forEach(t => { o[t] = 'sin'; }); return o; };
@@ -1884,6 +1890,10 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     btn(/^Empezar · 3 min$/).click();
     ok(has('arc-check-q').length === 1 && !has('g-secs').length, 'the check shows no question, or shows a clock');
     sweep(() => true);
+    ok(/Tu chequeo/.test(STAGE.textContent) && has('arc-tchip').filter(c => c.getAttribute('data-s') === 'dominado').length === GI.tensesForBand('B1').length,
+       'the B1 weekly check did not cover exactly the B1 tenses');
+    btn(/^Probar también los tiempos de más arriba$/).click();
+    sweep(() => true);
     ok(/Tu chequeo/.test(STAGE.textContent) && has('arc-tchip').length === 15 && has('arc-tchip').every(c => c.getAttribute('data-s') === 'dominado'),
        'the results do not show fifteen dominado chips');
     ok(/encajas en C1/.test(STAGE.textContent), 'the results do not suggest C1');
@@ -1898,7 +1908,7 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     W.Shell.go();
     btn(/^Empezar · 3 min$/).click();
     sweep(t => t === 'presente');
-    ok(/Paramos aquí/.test(STAGE.textContent), 'the stop is not explained');
+    ok(/Paramos en Pretérito/.test(STAGE.textContent), 'the stop is not explained');
     ok(!!btn(/^Mantener$/) && /encajas en A1/.test(STAGE.textContent), 'no Mantener / A1 suggestion');
     btn(/^Mantener$/).click();
     ok(W.Profile.current() === 'B1', 'Mantener changed the level');

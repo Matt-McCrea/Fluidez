@@ -184,13 +184,22 @@ window.TenseCheck = (function () {
   /* ---- the session ------------------------------------------------------------
    * s.item() is the current question, s.answer(choice) grades it, s.next()
    * moves on; when a tense's items are done its status is recorded, and the run
-   * ends at the end of the ladder or after two weak tenses in a row. */
+   * ends at the end of the ladder or at the first tense with two misses. */
   function session(rng, opts) {
     opts = opts || {};
-    var ladder = (opts.ladder || LADDER).filter(function (t) {
+    /* The weekly check covers the tenses of the learner's level (and any tense
+     * an earlier check already rated); opts.all is the optional "which tenses do
+     * I already know" run up the whole ladder. Either way it ends at the first
+     * tense with two misses. */
+    var cur = window.Profile ? window.Profile.current() : 'A1', old = load().res || {};
+    var mine = GI() && GI().tensesForBand ? GI().tensesForBand(cur) : ['presente'];
+    var base = opts.ladder || (opts.all ? LADDER : LADDER.filter(function (t) {
+      return mine.indexOf(t) !== -1 || (old[t] && old[t] !== 'sin');
+    }));
+    var ladder = base.filter(function (t) {
       return (window.VERB_GAPS || []).some(function (x) { return x.t === t; });
     });
-    var s = { res: {}, score: {}, done: false, stopped: false }, ti = -1, items = [], ii = 0, right = 0, weak = 0, answered = null;
+    var s = { res: {}, score: {}, done: false, stopped: false, allRun: !!opts.all }, ti = -1, items = [], ii = 0, right = 0, weak = 0, answered = null;
 
     function startTense() {
       while (++ti < ladder.length) {
@@ -202,11 +211,14 @@ window.TenseCheck = (function () {
     function finish() {
       s.done = true; s.at = opts.at == null ? now() : opts.at;
       var st = load();
-      st.at = s.at; st.res = {}; LADDER.forEach(function (t) { if (s.res[t]) st.res[t] = s.res[t]; });
+      // tenses this run did not reach keep what an earlier check found
+      var all = {}; LADDER.forEach(function (t) { var v = s.res[t] || (st.res || {})[t]; if (v) all[t] = v; });
+      st.at = s.at; st.res = all;
       st.snooze = 0;
       save(st);
-      s.suggested = suggestBand(s.res);
-      s.nextTense = nextTense(s.res);
+      s.all = all;
+      s.suggested = suggestBand(all);
+      s.nextTense = nextTense(all);
     }
     s.tense = function () { return ladder[ti] || null; };
     s.index = function () { return ii; };
@@ -226,11 +238,12 @@ window.TenseCheck = (function () {
     s.next = function () {
       if (s.done || answered === null) return s.done;
       answered = null; ii++;
-      if (ii < items.length) return false;
-      var t = ladder[ti], n = items.length;
-      s.res[t] = statusOf(right, n); s.score[t] = right + '/' + n;
-      weak = (n - right) >= 2 ? weak + 1 : 0;
-      if (weak >= 2) { s.stopped = true; finish(); return true; }
+      // two misses in a tense end the check there: no third question, no more tenses
+      var miss = ii - right;
+      if (ii < items.length && miss < 2) return false;
+      var t = ladder[ti], n = ii;
+      s.res[t] = miss >= 2 ? 'aprender' : statusOf(right, n); s.score[t] = right + '/' + n;
+      if (miss >= 2) { s.stopped = true; s.stopAt = t; finish(); return true; }
       if (!startTense()) { finish(); return true; }
       return false;
     };

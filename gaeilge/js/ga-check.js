@@ -70,10 +70,10 @@ window.GACheck = (function () {
   }
 
   /* The ladder for this learner: units with at least three sentences, easiest band
-   * first (stable inside a band), and not more than a band above the learner's.
+   * first (stable inside a band), and none above the learner's band.
    * opts.all keeps every band. */
   function ladder(opts) {
-    var cap = playerIx() + 1;
+    var cap = playerIx();
     var out = UNITS.filter(function (u) { return unitRows(u).length >= 3; })
       .map(function (u, i) { return { u: u, b: unitBand(u), i: i }; })
       .filter(function (x) { return (opts && opts.all) || x.b <= cap; });
@@ -161,8 +161,9 @@ window.GACheck = (function () {
    * the end of the ladder or after two weak units in a row. */
   function session(rng, opts) {
     opts = opts || {};
-    var lad = opts.ladder || ladder();
-    var s = { res: {}, score: {}, done: false, stopped: false }, ti = -1, items = [], ii = 0, right = 0, weak = 0, answered = null;
+    // the learner's own level by default; opts.all is the optional run through everything
+    var lad = opts.ladder || ladder(opts.all ? { all: true } : null);
+    var s = { res: {}, score: {}, done: false, stopped: false, allRun: !!opts.all }, ti = -1, items = [], ii = 0, right = 0, weak = 0, answered = null;
 
     function startUnit() {
       while (++ti < lad.length) {
@@ -174,12 +175,15 @@ window.GACheck = (function () {
     function finish() {
       s.done = true; s.at = opts.at == null ? now() : opts.at;
       var st = load();
+      // units this run did not reach keep what an earlier check found
+      var old = st.res || {};
       st.at = s.at; st.res = {};
-      UNITS.forEach(function (u) { if (s.res[u.id]) st.res[u.id] = s.res[u.id]; });
+      UNITS.forEach(function (u) { var v = s.res[u.id] || old[u.id]; if (v) st.res[u.id] = v; });
+      s.all = st.res;
       st.snooze = 0;
       save(st);
-      s.suggested = suggestBand(s.res, lad);
-      s.nextUnit = nextUnit(s.res, lad);
+      s.suggested = suggestBand(st.res);          // over every band, so untried units above hold it back
+      s.nextUnit = nextUnit(st.res, ladder({ all: true }));   // may point past the learner's band
     }
     s.unit = function () { return lad[ti] || null; };
     s.index = function () { return ii; };
@@ -199,11 +203,12 @@ window.GACheck = (function () {
     s.next = function () {
       if (s.done || answered === null) return s.done;
       answered = null; ii++;
-      if (ii < items.length) return false;
-      var u = lad[ti], n = items.length;
-      s.res[u.id] = statusOf(right, n); s.score[u.id] = right + '/' + n;
-      weak = (n - right) >= 2 ? weak + 1 : 0;
-      if (weak >= 2) { s.stopped = true; finish(); return true; }
+      // two misses in a unit end the check there: no third question, no more units
+      var miss = ii - right;
+      if (ii < items.length && miss < 2) return false;
+      var u = lad[ti], n = ii;
+      s.res[u.id] = miss >= 2 ? 'aprender' : statusOf(right, n); s.score[u.id] = right + '/' + n;
+      if (miss >= 2) { s.stopped = true; s.stopAt = u.id; finish(); return true; }
       if (!startUnit()) { finish(); return true; }
       return false;
     };

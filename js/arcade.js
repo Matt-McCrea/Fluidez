@@ -985,6 +985,11 @@
     go.type = 'button';
     go.addEventListener('click', checkRun);
     sub.appendChild(go);
+    sub.appendChild(el('span', null, ' · '));
+    var all = el('button', 'arc-link', '¿qué tiempos ya sé?');
+    all.type = 'button';
+    all.addEventListener('click', checkAll);   // optional: up the whole ladder, stops at two misses
+    sub.appendChild(all);
     rv.appendChild(sub);
     panel.appendChild(rv);
 
@@ -1028,8 +1033,8 @@
   function checkCard() {
     var c = el('div', 'arc-check');
     c.appendChild(el('span', 'arc-check-k', 'Chequeo semanal'));
-    c.appendChild(el('b', null, 'Mira qué tiempos ya dominas'));
-    c.appendChild(el('span', 'arc-check-s', 'Tres frases por tiempo, sin reloj. Te dice cuál aprender después.'));
+    c.appendChild(el('b', null, 'Repasa los tiempos de tu nivel'));
+    c.appendChild(el('span', 'arc-check-s', 'Tres frases por tiempo, sin reloj. Si fallas dos, paramos ahí: ese es el que toca practicar.'));
     var row = el('div', 'arc-check-row');
     var go = el('button', 'arc-btn on', 'Empezar · 3 min');
     go.type = 'button';
@@ -1043,10 +1048,14 @@
   }
 
   /* ---- the check -------------------------------------------------------------- */
-  function checkRun() {
+  /* all === true is the optional run through every tense ("¿qué tiempos ya
+   * sé?"); otherwise the weekly check, over the tenses of your level. A click
+   * handler passes an event, which is not true. */
+  function checkRun(all) {
     pushView('check');
-    drawCheck(TC().session());
+    drawCheck(TC().session(null, { all: all === true }));
   }
+  function checkAll() { checkRun(true); }
   function drawCheck(s) {
     if (s.done) { checkResults(s); return; }
     var h = host(); clear(h);
@@ -1099,8 +1108,14 @@
     var res = {};
     T.LADDER.forEach(function (k) { res[k] = s.res[k] || 'sin'; });
     wrap.appendChild(el('p', 'arc-sub', s.stopped
-      ? 'Paramos aquí: dos tiempos seguidos salieron difíciles, y no hace falta seguir.'
-      : 'Has pasado por todos los tiempos.'));
+      ? 'Paramos en ' + tenseLabel(s.stopAt) + ': dos fallos, así que ese es el tiempo que toca practicar ahora.'
+      : s.allRun ? 'Has pasado por todos los tiempos.' : 'Todos los tiempos de tu nivel, bien.'));
+    if (!s.stopped && !s.allRun) {
+      var up = el('button', 'arc-btn', 'Probar también los tiempos de más arriba');
+      up.type = 'button';
+      up.addEventListener('click', checkAll);
+      wrap.appendChild(up);
+    }
     var chips = el('div', 'arc-tchips');
     T.LADDER.forEach(function (k) {
       var c = tenseChip(k, res[k], hasCard(k) ? function () { tenseCard(k); } : null);
