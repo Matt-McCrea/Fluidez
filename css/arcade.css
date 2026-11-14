@@ -243,7 +243,7 @@ body { background:var(--bg); color:var(--text); }
    here rather than in css/games.css because that file is shared with the app,
    where .app-header has already paid this cost and paying it twice would push
    every round down by the height of a notch for nothing. */
-.g-shell { padding-top: 18px; }
+.g-shell { padding: 18px 16px calc(40px + env(safe-area-inset-bottom, 0px)); }   /* own side margins: .app-main has none here */
 
 /* ---- the day's pack ------------------------------------------------------
    Above the tiles and visually unlike them: no hue bar, no record, a warmer
