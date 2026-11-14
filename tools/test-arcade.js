@@ -1908,7 +1908,7 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     ok(/Nombre preterito/.test(card), 'the card is not in Spanish at B1');
     ok(has('arc-when')[0].all(n => n.tagName === 'LI').length === 2, 'the card does not list the when lines');
     ok(has('arc-when')[0].all(n => n.tagName === 'B').map(n => n.textContent).join() === 'siempre,a veces', 'starred words are not bold');
-    ok(has('arc-ctable-r').length === 5 && /hablamos/.test(card), 'the conjugation table is not drawn');
+    ok(has('arc-conj-p').length === 5 && /hablamos/.test(card) && /comimos/.test(card) && /vivimos/.test(card), 'the conjugation table is not drawn');
     ok(has('arc-ex').length === 3 && has('arc-ex-es').every(e => e.all(n => n.tagName === 'B').length === 1), 'three examples with the form in bold expected');
     ok(has('arc-ex-en').length === 3 && /Ella habla bien|She talks well/.test(card), 'examples lack their English');
     ok(/Ojo: tengo/.test(card) && /No lo confundas con otro/.test(card), 'irregular or contrast missing');

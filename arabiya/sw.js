@@ -10,7 +10,7 @@
  *
  * ASSETS must mirror every <script>/<link> in index.html plus the data files.
  * ========================================================================== */
-var CACHE_VERSION = 'tc55e6510';
+var CACHE_VERSION = 't3bbb8241';
 var CACHE_NAME = 'talaqa-' + CACHE_VERSION;
 /* Audio bundles are named by their content hash, so they never go stale: they live
  * in their own cache that a new version keeps, and nothing is downloaded twice. */

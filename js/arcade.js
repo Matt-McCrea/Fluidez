@@ -1159,6 +1159,71 @@
     VIEW = 'round';
     G.open('verbos2', board, { key: 'verbos2:t', count: 10, duration: null, tenses: [k] });
   }
+  /* The endings, as a real table: hablar, comer and vivir side by side, the
+   * ending (or haber, in a compound tense) picked out, so the pattern is the
+   * first thing on the card and not a list in a sentence. The forms come from
+   * the engine; vosotros is left out (the app is Latin American). Falls back to
+   * the card's own one verb column when the engine cannot conjugate a tense. */
+  function conjCols(k, t) {
+    var E = window.ENGINE, out = [];
+    if (!E) return null;
+    try {
+      var ps = E.personsFor(k), keep = [];
+      ps.forEach(function (p, i) { if (p !== 'vosotros') keep.push(i); });
+      ['hablar', 'comer', 'vivir'].forEach(function (inf) {
+        var v = E.verbByInf(inf), f = E.conjugate(v, k);
+        out.push({ inf: inf, forms: keep.map(function (i) { return f[i]; }) });
+      });
+    } catch (e) {
+      // a compound tense the engine lacks: keep the card's haber, swap the participle
+      var two = t.forms.every(function (x) { return /^\S+ \S+$/.test(x); });
+      if (!two || !E.participle) return null;
+      out = ['hablar', 'comer', 'vivir'].map(function (inf) {
+        var p = E.participle(E.verbByInf(inf));
+        return { inf: inf, forms: t.forms.map(function (x) { return x.split(' ')[0] + ' ' + p; }) };
+      });
+    }
+    return out[0].forms.length === t.persons.length ? out : null;
+  }
+  function conjCell(k, inf, form, i) {
+    var td = el('td');
+    var E = window.ENGINE, words = String(form).split(' ');
+    if (words.length > 1 && words[0] !== 'no') {            // haber + participle: haber is the part to learn
+      td.className = 'arc-conj-c';                          // may wrap: haber above the participle
+      td.appendChild(el('b', null, words[0]));
+      td.appendChild(el('span', null, ' ' + words.slice(1).join(' ')));
+      return td;
+    }
+    var pre = words.length > 1 ? words.slice(0, -1).join(' ') + ' ' : '', w = words[words.length - 1];
+    var cut = -1, all = E && E.END && E.END[k] && E.END[k].all;
+    if (all) cut = w.length - (all[i < 4 ? i : i + 1] || '').length;   // futuro, condicional: the whole infinitive stays
+    else {
+      var stem = inf.slice(0, -2), plain = E && E.deaccent ? E.deaccent(w) : w;
+      if (plain.indexOf(stem) === 0) cut = stem.length;
+    }
+    if (cut <= 0 || cut >= w.length) { td.appendChild(el('span', null, form)); return td; }
+    td.appendChild(el('span', null, pre + w.slice(0, cut)));
+    td.appendChild(el('b', null, w.slice(cut)));
+    return td;
+  }
+  function conjTable(k, t) {
+    var cols = conjCols(k, t) || [{ inf: t.verb, forms: t.forms }];
+    var box = el('div', 'arc-conj-wrap');
+    var tb = el('table', 'arc-conj'), hd = el('tr');
+    hd.appendChild(el('th'));
+    cols.forEach(function (c) { hd.appendChild(el('th', null, c.inf)); });
+    var th = el('thead'); th.appendChild(hd); tb.appendChild(th);
+    var body = el('tbody');
+    t.persons.forEach(function (p, i) {
+      var r = el('tr');
+      r.appendChild(el('td', 'arc-conj-p', String(p).replace(/\//g, '/\u200b')));   // él/ella/usted may wrap
+      cols.forEach(function (c) { r.appendChild(conjCell(k, c.inf, c.forms[i], i)); });
+      body.appendChild(r);
+    });
+    tb.appendChild(body);
+    box.appendChild(tb);
+    return box;
+  }
   function tenseCard(k) {
     var C = cards(), c = C && C[k];
     pushView('card');
@@ -1186,15 +1251,7 @@
 
       wrap.appendChild(el('div', 'arc-group', lang === 'es' ? 'Cómo se forma' : 'How it is formed'));
       wrap.appendChild(rich(el('p', 'arc-how'), c.how[lang]));
-      var tb = el('div', 'arc-ctable');
-      tb.appendChild(el('div', 'arc-ctable-v', c.table.verb));
-      c.table.forms.forEach(function (f, i) {
-        var r = el('div', 'arc-ctable-r');
-        r.appendChild(el('span', null, c.table.persons[i]));
-        r.appendChild(el('b', null, f));
-        tb.appendChild(r);
-      });
-      wrap.appendChild(tb);
+      wrap.appendChild(conjTable(k, c.table));
       if (c.irregular && c.irregular[lang]) {
         wrap.appendChild(el('div', 'arc-group', lang === 'es' ? 'Ojo con' : 'Watch out'));
         wrap.appendChild(rich(el('p', 'arc-how'), c.irregular[lang]));
