@@ -846,9 +846,16 @@
    * { kind, topic, name:{ga,en}, when:[{ga,en}], how:{ga,en}, table:{head,rows},
    *   ex:[{ga,en}], tip:{ga,en} }. "*x*" inside English text marks Irish: italic. */
   function rich(parent, text) {
-    String(text || '').split(/(\*[^*]+\*)/).forEach(function (part) {
+    var nl = String(text || '').split('\n');          // a second line is small print
+    if (nl.length > 1) {
+      rich(parent, nl[0]);
+      parent.appendChild(el('small', 'arc-ct-sub', nl.slice(1).join(' ')));
+      return parent;
+    }
+    String(text || '').split(/(\*[^*]+\*|\[[^\]]+\])/).forEach(function (part) {   // *Irish*, [what changed]
       if (!part) return;
       if (/^\*[^*]+\*$/.test(part)) parent.appendChild(el('i', 'arc-irish', part.slice(1, -1)));
+      else if (/^\[[^\]]+\]$/.test(part)) parent.appendChild(el('b', 'arc-ct-m', part.slice(1, -1)));
       else parent.appendChild(document.createTextNode ? document.createTextNode(part) : el('span', null, part));
     });
     return parent;
@@ -983,16 +990,18 @@
         wrap.appendChild(el('div', 'arc-group', L('Conas a dhéantar é', 'How it is formed')));
         wrap.appendChild(rich(el('p', 'arc-how'), pickL(c.how, lang)));
       }
-      if (c.table && c.table.rows && c.table.rows.length) {
-        var cols = Math.max((c.table.head || []).length, c.table.rows[0].length);
+      (c.tables || (c.table ? [c.table] : [])).forEach(function (t) {
+        if (!t.rows || !t.rows.length) return;
+        if (t.title) wrap.appendChild(el('div', 'arc-ct-title', pickL(t.title, lang)));
+        var cols = Math.max((t.head || []).length, t.rows[0].length);
         var tb = el('div', 'arc-ctable');
         tb.style.setProperty('--cols', String(cols));
-        (c.table.head || []).forEach(function (hd) { tb.appendChild(el('span', 'arc-ct-h', hd)); });
-        c.table.rows.forEach(function (row) {
+        (t.head || []).forEach(function (hd) { tb.appendChild(rich(el('span', 'arc-ct-h'), hd)); });
+        t.rows.forEach(function (row) {
           row.forEach(function (cell, i) { tb.appendChild(rich(el(i === 0 ? 'b' : 'span', 'arc-ct-c'), cell)); });
         });
         wrap.appendChild(tb);
-      }
+      });
       if (c.ex && c.ex.length) {
         wrap.appendChild(el('div', 'arc-group', L('Samplaí', 'Examples')));
         c.ex.forEach(function (ex) {

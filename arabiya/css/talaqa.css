@@ -1019,3 +1019,6 @@ body {
 .arc-chip:not(.on), .arc-chipq, .arc-tchip, .arc-irr-tab:not(.on) { background:var(--panel); color:var(--text); }
 .arc-chipq:hover { background:var(--panel-2); }
 .arc-back, .arc-lang, .arc-level, .g-exit { background:var(--panel); }
+
+/* the little page sits on one solid panel, so no background pattern runs behind its text */
+.arc-tcard { background:var(--bg); border:1px solid var(--border); border-radius:var(--radius, 14px); padding:20px 12px 30px; margin:12px auto 24px; max-width:min(560px, calc(100% - 16px)); box-sizing:border-box; }

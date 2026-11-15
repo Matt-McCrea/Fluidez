@@ -236,55 +236,60 @@ w.GA_CARDS = {
    }
   ],
   "how": {
-   "en": "Add *-ann* (broad) or *-eann* (slender) to the root: *ólann*, *briseann*. Verbs ending in *-igh* take *-aíonn* or *-íonn*: *ceannaíonn*, *éiríonn*. *Mé* and *muid* join the verb: *ólaim*, *ólaimid*.",
-   "ga": "Cuir *-ann* nó *-eann* leis an bhfréamh: *ólann*, *briseann*. Briathra *-igh*: *ceannaíonn*, *éiríonn*. *Ólaim*, *ólaimid*."
+   "en": "Four verb types, one pattern each: *ól* (1st, broad) adds *-ann*, *bris* (1st, slender) adds *-eann*, *ceannaigh* (2nd, broad) becomes *-aíonn* and *imigh* (2nd, slender) becomes *-íonn*. *Mé* and *muid* join the verb: *ólaim*, *ólaimid*.",
+   "ga": "Ceithre chineál briathair: *ól* (-ann), *bris* (-eann), *ceannaigh* (-aíonn), *imigh* (-íonn). *Ólaim*, *ólaimid*."
   },
   "table": {
    "head": [
     "",
-    "ól (drink)",
-    "ceannaigh (buy)"
+    "ól (drink)\n1st, broad",
+    "bris (break)\n1st, slender"
    ],
    "rows": [
     [
      "mé",
-     "ólaim",
-     "ceannaím"
+     "ól[aim]",
+     "bris[im]"
     ],
     [
      "tú",
-     "ólann tú",
-     "ceannaíonn tú"
+     "ól[ann]",
+     "bris[eann]"
     ],
     [
      "sé / sí",
-     "ólann sé",
-     "ceannaíonn sí"
+     "ól[ann]",
+     "bris[eann]"
     ],
     [
      "muid",
-     "ólaimid",
-     "ceannaímid"
+     "ól[aimid]",
+     "bris[imid]"
     ],
     [
      "sibh",
-     "ólann sibh",
-     "ceannaíonn sibh"
+     "ól[ann]",
+     "bris[eann]"
     ],
     [
      "siad",
-     "ólann siad",
-     "ceannaíonn siad"
+     "ól[ann]",
+     "bris[eann]"
+    ],
+    [
+     "saor",
+     "ól[tar]",
+     "bris[tear]"
     ],
     [
      "not",
-     "ní ólaim",
-     "ní cheannaím"
+     "ní ól[ann]",
+     "ní b[h]ris[eann]"
     ],
     [
      "question",
-     "an ólann tú?",
-     "an gceannaíonn tú?"
+     "an ól[ann]?",
+     "an [m]bris[eann]?"
     ]
    ]
   },
@@ -305,7 +310,125 @@ w.GA_CARDS = {
   "tip": {
    "en": "*Ní* puts séimhiú on the verb (*ní cheannaím*); *an*, *go* and *nach* put urú on it (*an gceannaíonn*).",
    "ga": "Séimhiú i ndiaidh *ní*; urú i ndiaidh *an*, *go*, *nach*."
-  }
+  },
+  "tables": [
+   {
+    "title": {
+     "en": "1st conjugation: one syllable roots",
+     "ga": "An chéad réimniú"
+    },
+    "head": [
+     "",
+     "ól (drink)\n1st, broad",
+     "bris (break)\n1st, slender"
+    ],
+    "rows": [
+     [
+      "mé",
+      "ól[aim]",
+      "bris[im]"
+     ],
+     [
+      "tú",
+      "ól[ann]",
+      "bris[eann]"
+     ],
+     [
+      "sé / sí",
+      "ól[ann]",
+      "bris[eann]"
+     ],
+     [
+      "muid",
+      "ól[aimid]",
+      "bris[imid]"
+     ],
+     [
+      "sibh",
+      "ól[ann]",
+      "bris[eann]"
+     ],
+     [
+      "siad",
+      "ól[ann]",
+      "bris[eann]"
+     ],
+     [
+      "saor",
+      "ól[tar]",
+      "bris[tear]"
+     ],
+     [
+      "not",
+      "ní ól[ann]",
+      "ní b[h]ris[eann]"
+     ],
+     [
+      "question",
+      "an ól[ann]?",
+      "an [m]bris[eann]?"
+     ]
+    ]
+   },
+   {
+    "title": {
+     "en": "2nd conjugation: roots in -igh and longer",
+     "ga": "An dara réimniú"
+    },
+    "head": [
+     "",
+     "ceannaigh (buy)\n2nd, broad",
+     "imigh (go away)\n2nd, slender"
+    ],
+    "rows": [
+     [
+      "mé",
+      "ceanna[ím]",
+      "im[ím]"
+     ],
+     [
+      "tú",
+      "ceanna[íonn]",
+      "im[íonn]"
+     ],
+     [
+      "sé / sí",
+      "ceanna[íonn]",
+      "im[íonn]"
+     ],
+     [
+      "muid",
+      "ceanna[ímid]",
+      "im[ímid]"
+     ],
+     [
+      "sibh",
+      "ceanna[íonn]",
+      "im[íonn]"
+     ],
+     [
+      "siad",
+      "ceanna[íonn]",
+      "im[íonn]"
+     ],
+     [
+      "saor",
+      "ceanna[ítear]",
+      "im[ítear]"
+     ],
+     [
+      "not",
+      "ní c[h]eanna[íonn]",
+      "ní im[íonn]"
+     ],
+     [
+      "question",
+      "an [g]ceanna[íonn]?",
+      "an im[íonn]?"
+     ]
+    ]
+   }
+  ]
  },
  "gnathlait": {
   "kind": "tense",
@@ -878,55 +1001,60 @@ w.GA_CARDS = {
    }
   ],
   "how": {
-   "en": "Take the root (the command form) and put séimhiú on it: *cuir* becomes *chuir*. Before a vowel or *f*, add *d'*: *d'ól*, *d'fhan*. *Muid* joins the verb: *chuireamar*.",
-   "ga": "Séimhiú ar an bhfréamh: *chuir*. *D'* roimh ghuta nó *f*: *d'ól*, *d'fhan*. *Chuireamar*."
+   "en": "Take the root and put séimhiú on it (or *d'* before a vowel or *f*): *ól* becomes *d'ól*, *bris* becomes *bhris*. All four types do the same in the past; only *muid* shows the ending: *-amar* (*ól*), *-eamar* (*bris*), *-aíomar* (*ceannaigh*), *-íomar* (*imigh*).",
+   "ga": "Séimhiú ar an bhfréamh, nó *d'* roimh ghuta nó *f*: *d'ól*, *bhris*. *Muid*: *-amar*, *-eamar*, *-aíomar*, *-íomar*."
   },
   "table": {
    "head": [
     "",
-    "cuir (put)",
-    "ól (drink)"
+    "ól (drink)\n1st, broad",
+    "bris (break)\n1st, slender"
    ],
    "rows": [
     [
      "mé",
-     "chuir mé",
-     "d'ól mé"
+     "[d']ól",
+     "b[h]ris"
     ],
     [
      "tú",
-     "chuir tú",
-     "d'ól tú"
+     "[d']ól",
+     "b[h]ris"
     ],
     [
      "sé / sí",
-     "chuir sé",
-     "d'ól sí"
+     "[d']ól",
+     "b[h]ris"
     ],
     [
      "muid",
-     "chuireamar",
-     "d'ólamar"
+     "[d']ól[amar]",
+     "b[h]ris[eamar]"
     ],
     [
      "sibh",
-     "chuir sibh",
-     "d'ól sibh"
+     "[d']ól",
+     "b[h]ris"
     ],
     [
      "siad",
-     "chuir siad",
-     "d'ól siad"
+     "[d']ól",
+     "b[h]ris"
+    ],
+    [
+     "saor",
+     "ól[adh]",
+     "bris[eadh]"
     ],
     [
      "not",
-     "níor chuir mé",
-     "níor ól mé"
+     "níor ól",
+     "níor b[h]ris"
     ],
     [
      "question",
-     "ar chuir tú?",
-     "ar ól tú?"
+     "ar ól?",
+     "ar b[h]ris?"
     ]
    ]
   },
@@ -947,7 +1075,125 @@ w.GA_CARDS = {
   "tip": {
    "en": "Regular verbs use *níor*, *ar*, *gur*, *nár* in the past. Six irregulars keep *ní*, *an*, *go*, *nach*: see the card on dependent forms.",
    "ga": "*Níor*, *ar*, *gur*, *nár* san aimsir chaite, ach amháin sé bhriathar neamhrialta."
-  }
+  },
+  "tables": [
+   {
+    "title": {
+     "en": "1st conjugation: one syllable roots",
+     "ga": "An chéad réimniú"
+    },
+    "head": [
+     "",
+     "ól (drink)\n1st, broad",
+     "bris (break)\n1st, slender"
+    ],
+    "rows": [
+     [
+      "mé",
+      "[d']ól",
+      "b[h]ris"
+     ],
+     [
+      "tú",
+      "[d']ól",
+      "b[h]ris"
+     ],
+     [
+      "sé / sí",
+      "[d']ól",
+      "b[h]ris"
+     ],
+     [
+      "muid",
+      "[d']ól[amar]",
+      "b[h]ris[eamar]"
+     ],
+     [
+      "sibh",
+      "[d']ól",
+      "b[h]ris"
+     ],
+     [
+      "siad",
+      "[d']ól",
+      "b[h]ris"
+     ],
+     [
+      "saor",
+      "ól[adh]",
+      "bris[eadh]"
+     ],
+     [
+      "not",
+      "níor ól",
+      "níor b[h]ris"
+     ],
+     [
+      "question",
+      "ar ól?",
+      "ar b[h]ris?"
+     ]
+    ]
+   },
+   {
+    "title": {
+     "en": "2nd conjugation: roots in -igh and longer",
+     "ga": "An dara réimniú"
+    },
+    "head": [
+     "",
+     "ceannaigh (buy)\n2nd, broad",
+     "imigh (go away)\n2nd, slender"
+    ],
+    "rows": [
+     [
+      "mé",
+      "c[h]eannaigh",
+      "[d']imigh"
+     ],
+     [
+      "tú",
+      "c[h]eannaigh",
+      "[d']imigh"
+     ],
+     [
+      "sé / sí",
+      "c[h]eannaigh",
+      "[d']imigh"
+     ],
+     [
+      "muid",
+      "c[h]eanna[íomar]",
+      "[d']im[íomar]"
+     ],
+     [
+      "sibh",
+      "c[h]eannaigh",
+      "[d']imigh"
+     ],
+     [
+      "siad",
+      "c[h]eannaigh",
+      "[d']imigh"
+     ],
+     [
+      "saor",
+      "ceanna[íodh]",
+      "im[íodh]"
+     ],
+     [
+      "not",
+      "níor c[h]eannaigh",
+      "níor imigh"
+     ],
+     [
+      "question",
+      "ar c[h]eannaigh?",
+      "ar imigh?"
+     ]
+    ]
+   }
+  ]
  },
  "fhaist": {
   "kind": "tense",
@@ -1301,55 +1547,60 @@ w.GA_CARDS = {
    }
   ],
   "how": {
-   "en": "Add *-faidh* or *-fidh* to the root: *ólfaidh*, *rithfidh*. Verbs in *-igh* take *-óidh* or *-eoidh*: *ceannóidh*, *éireoidh*. *Muid* joins: *ólfaimid*. No séimhiú.",
-   "ga": "*-faidh* nó *-fidh*: *ólfaidh*, *rithfidh*. *-óidh* nó *-eoidh*: *ceannóidh*. *Ólfaimid*."
+   "en": "No séimhiú. *ól* (1st, broad) adds *-faidh*, *bris* (1st, slender) adds *-fidh*, *ceannaigh* (2nd, broad) becomes *-óidh* and *imigh* (2nd, slender) becomes *-eoidh*. *Muid* joins: *ólfaimid*.",
+   "ga": "*Ól*: *-faidh*, *bris*: *-fidh*, *ceannaigh*: *-óidh*, *imigh*: *-eoidh*. *Ólfaimid*."
   },
   "table": {
    "head": [
     "",
-    "ól (drink)",
-    "ceannaigh (buy)"
+    "ól (drink)\n1st, broad",
+    "bris (break)\n1st, slender"
    ],
    "rows": [
     [
      "mé",
-     "ólfaidh mé",
-     "ceannóidh mé"
+     "ól[faidh]",
+     "bris[fidh]"
     ],
     [
      "tú",
-     "ólfaidh tú",
-     "ceannóidh tú"
+     "ól[faidh]",
+     "bris[fidh]"
     ],
     [
      "sé / sí",
-     "ólfaidh sé",
-     "ceannóidh sí"
+     "ól[faidh]",
+     "bris[fidh]"
     ],
     [
      "muid",
-     "ólfaimid",
-     "ceannóimid"
+     "ól[faimid]",
+     "bris[fimid]"
     ],
     [
      "sibh",
-     "ólfaidh sibh",
-     "ceannóidh sibh"
+     "ól[faidh]",
+     "bris[fidh]"
     ],
     [
      "siad",
-     "ólfaidh siad",
-     "ceannóidh siad"
+     "ól[faidh]",
+     "bris[fidh]"
+    ],
+    [
+     "saor",
+     "ól[far]",
+     "bris[fear]"
     ],
     [
      "not",
-     "ní ólfaidh mé",
-     "ní cheannóidh mé"
+     "ní ól[faidh]",
+     "ní b[h]ris[fidh]"
     ],
     [
      "question",
-     "an ólfaidh tú?",
-     "an gceannóidh tú?"
+     "an ól[faidh]?",
+     "an [m]bris[fidh]?"
     ]
    ]
   },
@@ -1370,7 +1621,125 @@ w.GA_CARDS = {
   "tip": {
    "en": "Irregulars to know: *beidh*, *rachaidh*, *tiocfaidh*, *gheobhaidh*, *déarfaidh*, *íosfaidh*, *tabharfaidh*.",
    "ga": "*Beidh*, *rachaidh*, *tiocfaidh*, *gheobhaidh*, *déarfaidh*, *íosfaidh*."
-  }
+  },
+  "tables": [
+   {
+    "title": {
+     "en": "1st conjugation: one syllable roots",
+     "ga": "An chéad réimniú"
+    },
+    "head": [
+     "",
+     "ól (drink)\n1st, broad",
+     "bris (break)\n1st, slender"
+    ],
+    "rows": [
+     [
+      "mé",
+      "ól[faidh]",
+      "bris[fidh]"
+     ],
+     [
+      "tú",
+      "ól[faidh]",
+      "bris[fidh]"
+     ],
+     [
+      "sé / sí",
+      "ól[faidh]",
+      "bris[fidh]"
+     ],
+     [
+      "muid",
+      "ól[faimid]",
+      "bris[fimid]"
+     ],
+     [
+      "sibh",
+      "ól[faidh]",
+      "bris[fidh]"
+     ],
+     [
+      "siad",
+      "ól[faidh]",
+      "bris[fidh]"
+     ],
+     [
+      "saor",
+      "ól[far]",
+      "bris[fear]"
+     ],
+     [
+      "not",
+      "ní ól[faidh]",
+      "ní b[h]ris[fidh]"
+     ],
+     [
+      "question",
+      "an ól[faidh]?",
+      "an [m]bris[fidh]?"
+     ]
+    ]
+   },
+   {
+    "title": {
+     "en": "2nd conjugation: roots in -igh and longer",
+     "ga": "An dara réimniú"
+    },
+    "head": [
+     "",
+     "ceannaigh (buy)\n2nd, broad",
+     "imigh (go away)\n2nd, slender"
+    ],
+    "rows": [
+     [
+      "mé",
+      "ceann[óidh]",
+      "im[eoidh]"
+     ],
+     [
+      "tú",
+      "ceann[óidh]",
+      "im[eoidh]"
+     ],
+     [
+      "sé / sí",
+      "ceann[óidh]",
+      "im[eoidh]"
+     ],
+     [
+      "muid",
+      "ceann[óimid]",
+      "im[eoimid]"
+     ],
+     [
+      "sibh",
+      "ceann[óidh]",
+      "im[eoidh]"
+     ],
+     [
+      "siad",
+      "ceann[óidh]",
+      "im[eoidh]"
+     ],
+     [
+      "saor",
+      "ceann[ófar]",
+      "im[eofar]"
+     ],
+     [
+      "not",
+      "ní c[h]eann[óidh]",
+      "ní im[eoidh]"
+     ],
+     [
+      "question",
+      "an [g]ceann[óidh]?",
+      "an im[eoidh]?"
+     ]
+    ]
+   }
+  ]
  },
  "coinn": {
   "kind": "tense",
@@ -1732,55 +2101,60 @@ w.GA_CARDS = {
    }
   ],
   "how": {
-   "en": "Séimhiú (or *d'*) like the past, then *-fadh* / *-feadh* (or *-ódh* / *-eodh* for *-igh* verbs). Four persons join the verb: *-fainn* (I), *-fá* (you), *-faimis* (we), *-faidís* (they).",
-   "ga": "Séimhiú nó *d'*, ansin *-fadh* / *-feadh* (*-ódh* / *-eodh*). *-fainn*, *-fá*, *-faimis*, *-faidís*."
+   "en": "Séimhiú (or *d'*) like the past, then *ól* adds *-fadh*, *bris* adds *-feadh*, *ceannaigh* becomes *-ódh* and *imigh* becomes *-eodh*. Four persons join the verb: *-fainn* (I), *-fá* (you), *-faimis* (we), *-faidís* (they).",
+   "ga": "Séimhiú nó *d'*, ansin *-fadh*, *-feadh*, *-ódh*, *-eodh*. *-fainn*, *-fá*, *-faimis*, *-faidís*."
   },
   "table": {
    "head": [
     "",
-    "ól (drink)",
-    "ceannaigh (buy)"
+    "ól (drink)\n1st, broad",
+    "bris (break)\n1st, slender"
    ],
    "rows": [
     [
      "mé",
-     "d'ólfainn",
-     "cheannóinn"
+     "[d']ól[fainn]",
+     "b[h]ris[finn]"
     ],
     [
      "tú",
-     "d'ólfá",
-     "cheannófá"
+     "[d']ól[fá]",
+     "b[h]ris[feá]"
     ],
     [
      "sé / sí",
-     "d'ólfadh sé",
-     "cheannódh sí"
+     "[d']ól[fadh]",
+     "b[h]ris[feadh]"
     ],
     [
      "muid",
-     "d'ólfaimis",
-     "cheannóimis"
+     "[d']ól[faimis]",
+     "b[h]ris[fimis]"
     ],
     [
      "sibh",
-     "d'ólfadh sibh",
-     "cheannódh sibh"
+     "[d']ól[fadh]",
+     "b[h]ris[feadh]"
     ],
     [
      "siad",
-     "d'ólfaidís",
-     "cheannóidís"
+     "[d']ól[faidís]",
+     "b[h]ris[fidís]"
+    ],
+    [
+     "saor",
+     "[d']ól[faí]",
+     "b[h]ris[fí]"
     ],
     [
      "not",
-     "ní ólfainn",
-     "ní cheannóinn"
+     "ní ól[fá]",
+     "ní b[h]ris[feá]"
     ],
     [
-     "if",
-     "dá n-ólfainn",
-     "dá gceannóinn"
+     "question",
+     "an ól[fá]?",
+     "an [m]bris[feá]?"
     ]
    ]
   },
@@ -1801,7 +2175,125 @@ w.GA_CARDS = {
   "tip": {
    "en": "*Dá* puts urú on the verb: *dá mbeinn*, *dá rachfá*, *dá n-ólfadh sé*.",
    "ga": "Urú i ndiaidh *dá*: *dá mbeinn*, *dá n-ólfadh sé*."
-  }
+  },
+  "tables": [
+   {
+    "title": {
+     "en": "1st conjugation: one syllable roots",
+     "ga": "An chéad réimniú"
+    },
+    "head": [
+     "",
+     "ól (drink)\n1st, broad",
+     "bris (break)\n1st, slender"
+    ],
+    "rows": [
+     [
+      "mé",
+      "[d']ól[fainn]",
+      "b[h]ris[finn]"
+     ],
+     [
+      "tú",
+      "[d']ól[fá]",
+      "b[h]ris[feá]"
+     ],
+     [
+      "sé / sí",
+      "[d']ól[fadh]",
+      "b[h]ris[feadh]"
+     ],
+     [
+      "muid",
+      "[d']ól[faimis]",
+      "b[h]ris[fimis]"
+     ],
+     [
+      "sibh",
+      "[d']ól[fadh]",
+      "b[h]ris[feadh]"
+     ],
+     [
+      "siad",
+      "[d']ól[faidís]",
+      "b[h]ris[fidís]"
+     ],
+     [
+      "saor",
+      "[d']ól[faí]",
+      "b[h]ris[fí]"
+     ],
+     [
+      "not",
+      "ní ól[fá]",
+      "ní b[h]ris[feá]"
+     ],
+     [
+      "question",
+      "an ól[fá]?",
+      "an [m]bris[feá]?"
+     ]
+    ]
+   },
+   {
+    "title": {
+     "en": "2nd conjugation: roots in -igh and longer",
+     "ga": "An dara réimniú"
+    },
+    "head": [
+     "",
+     "ceannaigh (buy)\n2nd, broad",
+     "imigh (go away)\n2nd, slender"
+    ],
+    "rows": [
+     [
+      "mé",
+      "c[h]eann[óinn]",
+      "[d']im[eoinn]"
+     ],
+     [
+      "tú",
+      "c[h]eann[ófá]",
+      "[d']im[eofá]"
+     ],
+     [
+      "sé / sí",
+      "c[h]eann[ódh]",
+      "[d']im[eodh]"
+     ],
+     [
+      "muid",
+      "c[h]eann[óimis]",
+      "[d']im[eoimis]"
+     ],
+     [
+      "sibh",
+      "c[h]eann[ódh]",
+      "[d']im[eodh]"
+     ],
+     [
+      "siad",
+      "c[h]eann[óidís]",
+      "[d']im[eoidís]"
+     ],
+     [
+      "saor",
+      "c[h]eann[ófaí]",
+      "[d']im[eofaí]"
+     ],
+     [
+      "not",
+      "ní c[h]eann[ófá]",
+      "ní im[eofá]"
+     ],
+     [
+      "question",
+      "an [g]ceann[ófá]?",
+      "an im[eofá]?"
+     ]
+    ]
+   }
+  ]
  },
  "gnath": {
   "kind": "tense",
@@ -2075,55 +2567,60 @@ w.GA_CARDS = {
    }
   ],
   "how": {
-   "en": "Séimhiú (or *d'*) like the past, then *-adh* / *-eadh* (or *-aíodh* / *-íodh* for *-igh* verbs). Four persons join the verb: *-ainn* (I), *-tá* (you), *-aimis* (we), *-aidís* (they).",
-   "ga": "Séimhiú nó *d'*, ansin *-adh* / *-eadh*. *-ainn*, *-tá*, *-aimis*, *-aidís*."
+   "en": "Séimhiú (or *d'*) like the past, then *ól* adds *-adh*, *bris* adds *-eadh*, *ceannaigh* becomes *-aíodh* and *imigh* becomes *-íodh*. Four persons join the verb: *-ainn* (I), *-tá* (you), *-aimis* (we), *-aidís* (they).",
+   "ga": "Séimhiú nó *d'*, ansin *-adh*, *-eadh*, *-aíodh*, *-íodh*. *-ainn*, *-tá*, *-aimis*, *-aidís*."
   },
   "table": {
    "head": [
     "",
-    "siúil (walk)",
-    "ól (drink)"
+    "ól (drink)\n1st, broad",
+    "bris (break)\n1st, slender"
    ],
    "rows": [
     [
      "mé",
-     "shiúlainn",
-     "d'ólainn"
+     "[d']ól[ainn]",
+     "b[h]ris[inn]"
     ],
     [
      "tú",
-     "shiúltá",
-     "d'óltá"
+     "[d']ól[tá]",
+     "b[h]ris[teá]"
     ],
     [
      "sé / sí",
-     "shiúladh sé",
-     "d'óladh sí"
+     "[d']ól[adh]",
+     "b[h]ris[eadh]"
     ],
     [
      "muid",
-     "shiúlaimis",
-     "d'ólaimis"
+     "[d']ól[aimis]",
+     "b[h]ris[imis]"
     ],
     [
      "sibh",
-     "shiúladh sibh",
-     "d'óladh sibh"
+     "[d']ól[adh]",
+     "b[h]ris[eadh]"
     ],
     [
      "siad",
-     "shiúlaidís",
-     "d'ólaidís"
+     "[d']ól[aidís]",
+     "b[h]ris[idís]"
+    ],
+    [
+     "saor",
+     "[d']ól[taí]",
+     "b[h]ris[tí]"
     ],
     [
      "not",
-     "ní shiúlainn",
-     "ní ólainn"
+     "ní ól[tá]",
+     "ní b[h]ris[teá]"
     ],
     [
      "question",
-     "an siúltá?",
-     "an óltá?"
+     "an ól[tá]?",
+     "an [m]bris[teá]?"
     ]
    ]
   },
@@ -2144,7 +2641,125 @@ w.GA_CARDS = {
   "tip": {
    "en": "The past tells one event (*chuaigh mé*, I went). The habitual tells a pattern (*théinn*, I used to go).",
    "ga": "*Chuaigh mé*: uair amháin. *Théinn*: arís is arís."
-  }
+  },
+  "tables": [
+   {
+    "title": {
+     "en": "1st conjugation: one syllable roots",
+     "ga": "An chéad réimniú"
+    },
+    "head": [
+     "",
+     "ól (drink)\n1st, broad",
+     "bris (break)\n1st, slender"
+    ],
+    "rows": [
+     [
+      "mé",
+      "[d']ól[ainn]",
+      "b[h]ris[inn]"
+     ],
+     [
+      "tú",
+      "[d']ól[tá]",
+      "b[h]ris[teá]"
+     ],
+     [
+      "sé / sí",
+      "[d']ól[adh]",
+      "b[h]ris[eadh]"
+     ],
+     [
+      "muid",
+      "[d']ól[aimis]",
+      "b[h]ris[imis]"
+     ],
+     [
+      "sibh",
+      "[d']ól[adh]",
+      "b[h]ris[eadh]"
+     ],
+     [
+      "siad",
+      "[d']ól[aidís]",
+      "b[h]ris[idís]"
+     ],
+     [
+      "saor",
+      "[d']ól[taí]",
+      "b[h]ris[tí]"
+     ],
+     [
+      "not",
+      "ní ól[tá]",
+      "ní b[h]ris[teá]"
+     ],
+     [
+      "question",
+      "an ól[tá]?",
+      "an [m]bris[teá]?"
+     ]
+    ]
+   },
+   {
+    "title": {
+     "en": "2nd conjugation: roots in -igh and longer",
+     "ga": "An dara réimniú"
+    },
+    "head": [
+     "",
+     "ceannaigh (buy)\n2nd, broad",
+     "imigh (go away)\n2nd, slender"
+    ],
+    "rows": [
+     [
+      "mé",
+      "c[h]eanna[ínn]",
+      "[d']im[ínn]"
+     ],
+     [
+      "tú",
+      "c[h]eanna[íteá]",
+      "[d']im[íteá]"
+     ],
+     [
+      "sé / sí",
+      "c[h]eanna[íodh]",
+      "[d']im[íodh]"
+     ],
+     [
+      "muid",
+      "c[h]eanna[ímis]",
+      "[d']im[ímis]"
+     ],
+     [
+      "sibh",
+      "c[h]eanna[íodh]",
+      "[d']im[íodh]"
+     ],
+     [
+      "siad",
+      "c[h]eanna[ídís]",
+      "[d']im[ídís]"
+     ],
+     [
+      "saor",
+      "c[h]eanna[ítí]",
+      "[d']im[ítí]"
+     ],
+     [
+      "not",
+      "ní c[h]eanna[íteá]",
+      "ní im[íteá]"
+     ],
+     [
+      "question",
+      "an [g]ceanna[íteá]?",
+      "an im[íteá]?"
+     ]
+    ]
+   }
+  ]
  },
  "ord": {
   "kind": "tense",
@@ -2374,52 +2989,35 @@ w.GA_CARDS = {
    }
   ],
   "how": {
-   "en": "To one person, the bare root: *ól*, *suigh*, *ceannaigh*. To more than one, add *-aigí* or *-igí*: *ólaigí*, *suígí*. Let's: *-aimis*: *ólaimis*. *Ná* puts *h* before a vowel: *ná hól*.",
-   "ga": "Duine amháin: *ól*, *suigh*. Níos mó: *ólaigí*, *suígí*. *Ólaimis*. *Ná hól*."
+   "en": "To one person, the bare root: *ól*, *bris*, *ceannaigh*, *imigh*. To more than one, *ól* adds *-aigí*, *bris* adds *-igí*, *ceannaigh* becomes *-aígí* and *imigh* becomes *-ígí*. Let's: *-aimis*, *-imis*, *-aímis*, *-ímis*. *Ná* puts *h* before a vowel.",
+   "ga": "Duine amháin: an fhréamh. Níos mó: *-aigí*, *-igí*, *-aígí*, *-ígí*. *Ná hól*."
   },
   "table": {
    "head": [
     "",
-    "one person",
-    "more than one",
-    "let's"
+    "ól (drink)\n1st, broad",
+    "bris (break)\n1st, slender"
    ],
    "rows": [
     [
+     "tú",
      "ól",
-     "ól",
-     "ólaigí",
-     "ólaimis"
+     "bris"
     ],
     [
-     "suigh",
-     "suigh",
-     "suígí",
-     "suímis"
+     "sibh",
+     "ól[aigí]",
+     "bris[igí]"
     ],
     [
-     "ceannaigh",
-     "ceannaigh",
-     "ceannaígí",
-     "ceannaímis"
+     "muid",
+     "ól[aimis]",
+     "bris[imis]"
     ],
     [
-     "téigh",
-     "téigh",
-     "téigí",
-     "téimis"
-    ],
-    [
-     "tar",
-     "tar",
-     "tagaigí",
-     "tagaimis"
-    ],
-    [
-     "bí",
-     "bí",
-     "bígí",
-     "bímis"
+     "ná",
+     "ná [h]ól",
+     "ná bris"
     ]
    ]
   },
@@ -2440,7 +3038,75 @@ w.GA_CARDS = {
   "tip": {
    "en": "The command form is the verb's dictionary form, the root every other tense is built on.",
    "ga": "Is í an fhoirm ordaitheach fréamh an bhriathair."
-  }
+  },
+  "tables": [
+   {
+    "title": {
+     "en": "1st conjugation: one syllable roots",
+     "ga": "An chéad réimniú"
+    },
+    "head": [
+     "",
+     "ól (drink)\n1st, broad",
+     "bris (break)\n1st, slender"
+    ],
+    "rows": [
+     [
+      "tú",
+      "ól",
+      "bris"
+     ],
+     [
+      "sibh",
+      "ól[aigí]",
+      "bris[igí]"
+     ],
+     [
+      "muid",
+      "ól[aimis]",
+      "bris[imis]"
+     ],
+     [
+      "ná",
+      "ná [h]ól",
+      "ná bris"
+     ]
+    ]
+   },
+   {
+    "title": {
+     "en": "2nd conjugation: roots in -igh and longer",
+     "ga": "An dara réimniú"
+    },
+    "head": [
+     "",
+     "ceannaigh (buy)\n2nd, broad",
+     "imigh (go away)\n2nd, slender"
+    ],
+    "rows": [
+     [
+      "tú",
+      "ceannaigh",
+      "imigh"
+     ],
+     [
+      "sibh",
+      "ceanna[ígí]",
+      "im[ígí]"
+     ],
+     [
+      "muid",
+      "ceanna[ímis]",
+      "im[ímis]"
+     ],
+     [
+      "ná",
+      "ná ceannaigh",
+      "ná [h]imigh"
+     ]
+    ]
+   }
+  ]
  },
  "saor": {
   "kind": "tense",

@@ -648,3 +648,8 @@ a.arc-mode { text-decoration:none; }
 
 /* the ? next to each chip, solid like the chips */
 .arc-chipq { background:#fff; color:var(--text); border:2px solid #1d1d1b; }
+
+/* the little page sits on one solid panel, so no background pattern runs behind its text */
+.arc-tcard { background:var(--bg); border:1px solid var(--border); border-radius:var(--radius, 14px); padding:20px 12px 30px; margin:12px auto 24px; max-width:min(560px, calc(100% - 16px)); box-sizing:border-box; }
+.arc-tcard { border-width:2px; border-color:#1d1d1b; }
+.arc-tcard .arc-conj td b { color:#8a4b00; }

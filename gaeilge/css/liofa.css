@@ -868,3 +868,15 @@ h2, .arc-stats-top h2, .arc-top {
 .arc-chip:not(.on), .arc-chipq, .arc-tchip, .arc-irr-tab:not(.on) { background:var(--panel); color:var(--text); }
 .arc-chipq:hover { background:var(--panel-2); }
 .arc-back, .arc-lang, .arc-level, .g-exit { background:var(--panel); }
+
+/* four-type tense tables: what changed from the root is bold and coloured */
+.arc-ct-m { color:var(--accent-2); font-weight:800; font-style:normal; }
+.arc-ct-sub { display:block; margin-top:2px; font-size:.68rem; letter-spacing:0; text-transform:none; font-weight:500; color:var(--muted); }
+
+/* the little page sits on one solid panel, so no background pattern runs behind its text */
+.arc-tcard { background:var(--bg); border:1px solid var(--border); border-radius:var(--radius, 14px); padding:20px 10px 30px; margin:12px auto 24px; max-width:min(560px, calc(100% - 8px)); box-sizing:border-box; }
+
+/* the two conjugation tables on a tense card */
+.arc-ct-title { margin:16px 0 0; font-size:.78rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent-2); }
+.arc-ct-title + .arc-ctable { margin-top:6px; }
+.arc-ct-h { overflow-wrap:break-word; }
