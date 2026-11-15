@@ -1,0 +1,902 @@
+[
+ {
+  "q": "Tu vas à Paris ? Oui, nous ___ allons demain.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "lui"
+  ],
+  "e": "Are you going to Paris? Yes, we're going tomorrow.",
+  "w": "Y replaces a place already named (à, en, chez, dans + place) and goes before the verb.",
+  "wf": "y remplace un lieu.",
+  "t": "y",
+  "b": "A1"
+ },
+ {
+  "q": "Tu es à la maison ? Oui, je ___ suis.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "la",
+   "le"
+  ],
+  "e": "Are you at home? Yes, I am.",
+  "w": "Y replaces a place already named (à, en, chez, dans + place) and goes before the verb.",
+  "wf": "y remplace un lieu.",
+  "t": "y",
+  "b": "A1"
+ },
+ {
+  "q": "Vous allez au cinéma ce soir ? Oui, on ___ va.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "lui"
+  ],
+  "e": "Are you going to the cinema tonight? Yes, we are.",
+  "w": "Y replaces a place already named (à, en, chez, dans + place) and goes before the verb.",
+  "wf": "y remplace un lieu.",
+  "t": "y",
+  "b": "A1"
+ },
+ {
+  "q": "Ils habitent à Lyon ? Oui, ils ___ habitent depuis 2010.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "la",
+   "le"
+  ],
+  "e": "Do they live in Lyon? Yes, they've lived there since 2010.",
+  "w": "Y replaces a place already named (à, en, chez, dans + place) and goes before the verb.",
+  "wf": "y remplace un lieu.",
+  "t": "y",
+  "b": "A1"
+ },
+ {
+  "q": "Tu vas à la plage ? Non, je ___ vais pas aujourd'hui.",
+  "a": "n'y",
+  "o": [
+   "n'y",
+   "n'en",
+   "ne la",
+   "ne lui"
+  ],
+  "e": "Are you going to the beach? No, I'm not going today.",
+  "w": "In the negative, ne becomes n' before y: je n'y vais pas.",
+  "wf": "ne devient n' devant y.",
+  "t": "y",
+  "b": "A1"
+ },
+ {
+  "q": "Le musée ? On ___ va en bus.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "lui"
+  ],
+  "e": "The museum? We're going there by bus.",
+  "w": "Y replaces a place already named (à, en, chez, dans + place) and goes before the verb.",
+  "wf": "y remplace un lieu.",
+  "t": "y",
+  "b": "A1"
+ },
+ {
+  "q": "Tu restes au bureau ? Oui, je ___ reste jusqu'à six heures.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "lui"
+  ],
+  "e": "Are you staying at the office? Yes, until six.",
+  "w": "Y replaces a place already named (à, en, chez, dans + place) and goes before the verb.",
+  "wf": "y remplace un lieu.",
+  "t": "y",
+  "b": "A1"
+ },
+ {
+  "q": "Elle travaille à la banque ? Oui, elle ___ travaille.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "la",
+   "lui"
+  ],
+  "e": "Does she work at the bank? Yes, she works there.",
+  "w": "Y replaces a place already named (à, en, chez, dans + place) and goes before the verb.",
+  "wf": "y remplace un lieu.",
+  "t": "y",
+  "b": "A1"
+ },
+ {
+  "q": "Il ___ a un problème avec ma réservation.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "lui"
+  ],
+  "e": "There's a problem with my booking.",
+  "w": "Il y a means there is or there are; y is part of the phrase.",
+  "wf": "il y a : expression fixe.",
+  "t": "y",
+  "b": "A1"
+ },
+ {
+  "q": "Est-ce qu'il ___ a du pain ?",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "lui"
+  ],
+  "e": "Is there any bread?",
+  "w": "Il y a means there is; y never changes in it.",
+  "wf": "il y a : expression fixe.",
+  "t": "y",
+  "b": "A1"
+ },
+ {
+  "q": "On ___ va ! Le train part bientôt.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "la"
+  ],
+  "e": "Let's go! The train's leaving soon.",
+  "w": "On y va means let's go; y stands for where you're going.",
+  "wf": "on y va : allons-y.",
+  "t": "y",
+  "b": "A1"
+ },
+ {
+  "q": "L'Espagne ? Mes parents ___ vont chaque été.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "la",
+   "leur"
+  ],
+  "e": "Spain? My parents go there every summer.",
+  "w": "Y replaces a place already named (à, en, chez, dans + place) and goes before the verb.",
+  "wf": "y remplace un lieu.",
+  "t": "y",
+  "b": "A1"
+ },
+ {
+  "q": "Le marché ? Nous ___ allons tous les samedis.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "lui"
+  ],
+  "e": "The market? We go every Saturday.",
+  "w": "Y replaces a place already named (à, en, chez, dans + place) and goes before the verb.",
+  "wf": "y remplace un lieu.",
+  "t": "y",
+  "b": "A1"
+ },
+ {
+  "q": "Vous pensez à vos vacances ? Oui, nous ___ pensons déjà.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "les",
+   "leur"
+  ],
+  "e": "Are you thinking about your holidays? Yes, we already are.",
+  "w": "Penser à + a thing becomes y.",
+  "wf": "penser à quelque chose : y.",
+  "t": "y",
+  "b": "A2"
+ },
+ {
+  "q": "Allez-___, je vous attends.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "lui"
+  ],
+  "e": "Go ahead, I'm waiting for you.",
+  "w": "Allez-y means go ahead; in a positive command y follows the verb.",
+  "wf": "Impératif : allez-y.",
+  "t": "y",
+  "b": "A2"
+ },
+ {
+  "q": "Tu es déjà allé au Canada ? Oui, nous ___ sommes allés deux fois.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "lui"
+  ],
+  "e": "Have you been to Canada? Yes, we've been twice.",
+  "w": "Y goes before être in the passé composé: nous y sommes allés.",
+  "wf": "y avant l'auxiliaire.",
+  "t": "y",
+  "b": "A2"
+ },
+ {
+  "q": "Tu réponds à ce mail ? Oui, je ___ réponds ce soir.",
+  "a": "y",
+  "o": [
+   "y",
+   "lui",
+   "en",
+   "le"
+  ],
+  "e": "Are you replying to this email? Yes, this evening.",
+  "w": "Y replaces à + a thing or idea; lui is only for people.",
+  "wf": "répondre à quelque chose : y.",
+  "t": "y",
+  "b": "A2"
+ },
+ {
+  "q": "Tu as réfléchi à ma proposition ? Oui, ___ ai réfléchi.",
+  "a": "j'y",
+  "o": [
+   "j'y",
+   "j'en",
+   "je lui"
+  ],
+  "e": "Have you thought about my offer? Yes, I have.",
+  "w": "Réfléchir à + a thing becomes y, and je becomes j' before it.",
+  "wf": "réfléchir à : j'y ai réfléchi.",
+  "t": "y",
+  "b": "A2"
+ },
+ {
+  "q": "Ta valise ? ___ ai mis mes chaussures.",
+  "a": "J'y",
+  "o": [
+   "J'y",
+   "J'en",
+   "Je lui",
+   "Je l'"
+  ],
+  "e": "Your suitcase? I've put my shoes in it.",
+  "w": "Y replaces dans + a place: j'y ai mis, I put in it.",
+  "wf": "y remplace dans + lieu.",
+  "t": "y",
+  "b": "A2"
+ },
+ {
+  "q": "Tu crois au Père Noël ? Non, je ___ crois plus.",
+  "a": "n'y",
+  "o": [
+   "n'y",
+   "n'en",
+   "ne le",
+   "ne lui"
+  ],
+  "e": "Do you believe in Father Christmas? No, not any more.",
+  "w": "Croire à + a thing becomes y; ne becomes n' before it.",
+  "wf": "croire à : je n'y crois plus.",
+  "t": "y",
+  "b": "A2"
+ },
+ {
+  "q": "Tu joues au tennis ? Oui, ___ joue le mardi.",
+  "a": "j'y",
+  "o": [
+   "j'y",
+   "j'en",
+   "je le",
+   "je lui"
+  ],
+  "e": "Do you play tennis? Yes, on Tuesdays.",
+  "w": "Jouer à + a game becomes y: j'y joue.",
+  "wf": "jouer à un jeu : y.",
+  "t": "y",
+  "b": "A2"
+ },
+ {
+  "q": "Le restaurant ? Vous ___ êtes déjà allés ?",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "lui"
+  ],
+  "e": "The restaurant? Have you been there before?",
+  "w": "Y replaces a place already named (à, en, chez, dans + place) and goes before the verb.",
+  "wf": "y remplace un lieu.",
+  "t": "y",
+  "b": "A2"
+ },
+ {
+  "q": "Le rendez-vous ? Je ___ serai à l'heure.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "lui"
+  ],
+  "e": "The appointment? I'll be there on time.",
+  "w": "Y stands for the place or event you'll be at.",
+  "wf": "y remplace le lieu.",
+  "t": "y",
+  "b": "A2"
+ },
+ {
+  "q": "La boulangerie ? ___ avant midi, elle ferme tôt.",
+  "a": "Vas-y",
+  "o": [
+   "Vas-y",
+   "Va-y",
+   "Y va"
+  ],
+  "x": [
+   "vas-y"
+  ],
+  "e": "The bakery? Go before noon, it closes early.",
+  "w": "Before y, the tu command of aller takes an s: vas-y.",
+  "wf": "Impératif : vas-y, avec un s.",
+  "t": "y",
+  "b": "A2"
+ },
+ {
+  "q": "Tu montes à la tour Eiffel ? Oui, on ___ monte à pied.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "la",
+   "lui"
+  ],
+  "e": "Are you going up the Eiffel Tower? Yes, on foot.",
+  "w": "Y replaces a place already named (à, en, chez, dans + place) and goes before the verb.",
+  "wf": "y remplace un lieu.",
+  "t": "y",
+  "b": "A2"
+ },
+ {
+  "q": "Tu passes à la poste ? Oui, ___ passe ce matin.",
+  "a": "j'y",
+  "o": [
+   "j'y",
+   "j'en",
+   "je la",
+   "je lui"
+  ],
+  "e": "Are you stopping at the post office? Yes, this morning.",
+  "w": "Je becomes j' before y: j'y vais.",
+  "wf": "je devient j' devant y.",
+  "t": "y",
+  "b": "A2"
+ },
+ {
+  "q": "La réunion ? Nous ___ participons tous.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "la",
+   "lui"
+  ],
+  "e": "The meeting? We're all taking part.",
+  "w": "Participer à + a thing becomes y.",
+  "wf": "participer à : y.",
+  "t": "y",
+  "b": "A2"
+ },
+ {
+  "q": "Ce problème ? Je vais ___ penser.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "lui"
+  ],
+  "e": "This problem? I'll think about it.",
+  "w": "Penser à + a thing becomes y, placed before the infinitive.",
+  "wf": "Devant l'infinitif : y penser.",
+  "t": "y",
+  "b": "A2"
+ },
+ {
+  "q": "Le jardin ? Les enfants ___ jouent tout l'après-midi.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "leur"
+  ],
+  "e": "The garden? The children play there all afternoon.",
+  "w": "Y replaces a place already named (à, en, chez, dans + place) and goes before the verb.",
+  "wf": "y remplace un lieu.",
+  "t": "y",
+  "b": "A2"
+ },
+ {
+  "q": "Paris ? Il fait bon ___ vivre.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "lui"
+  ],
+  "e": "Paris? It's a nice place to live.",
+  "w": "Y stands for the place, before the infinitive: il fait bon y vivre.",
+  "wf": "y remplace un lieu.",
+  "t": "y",
+  "b": "B1"
+ },
+ {
+  "q": "Ce projet ? Je ___ tiens beaucoup.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "lui"
+  ],
+  "e": "This project? It means a lot to me.",
+  "w": "Tenir à + a thing becomes y.",
+  "wf": "tenir à quelque chose : y.",
+  "t": "y",
+  "b": "B1"
+ },
+ {
+  "q": "Sa remarque ? Je ___ ai pas fait attention.",
+  "a": "n'y",
+  "o": [
+   "n'y",
+   "n'en",
+   "ne lui",
+   "ne l'"
+  ],
+  "e": "His remark? I didn't pay attention to it.",
+  "w": "Faire attention à + a thing becomes y; ne becomes n'.",
+  "wf": "faire attention à : n'y.",
+  "t": "y",
+  "b": "B1"
+ },
+ {
+  "q": "Ce changement ? Il faut ___ habituer.",
+  "a": "s'y",
+  "o": [
+   "s'y",
+   "s'en",
+   "se le",
+   "se lui"
+  ],
+  "e": "This change? You have to get used to it.",
+  "w": "S'habituer à + a thing becomes y: s'y habituer.",
+  "wf": "s'habituer à : s'y.",
+  "t": "y",
+  "b": "B1"
+ },
+ {
+  "q": "Ton travail ? Tu ___ penses même le week-end ?",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "lui"
+  ],
+  "e": "Your work? Do you think about it even at weekends?",
+  "w": "Penser à + a thing becomes y.",
+  "wf": "penser à quelque chose : y.",
+  "t": "y",
+  "b": "B1"
+ },
+ {
+  "q": "Ma grand-mère ? Je pense souvent ___.",
+  "a": "à elle",
+  "o": [
+   "à elle",
+   "y",
+   "lui"
+  ],
+  "e": "My grandmother? I often think about her.",
+  "w": "Penser à + a person keeps à + stressed pronoun: à elle, not y or lui.",
+  "wf": "penser à une personne : à elle.",
+  "t": "y",
+  "b": "B1"
+ },
+ {
+  "q": "Cette question ? Je vais ___ répondre par écrit.",
+  "a": "y",
+  "o": [
+   "y",
+   "lui",
+   "en",
+   "la"
+  ],
+  "e": "This question? I'll answer it in writing.",
+  "w": "Y replaces à + a thing or idea; lui is only for people.",
+  "wf": "répondre à une question : y.",
+  "t": "y",
+  "b": "B1"
+ },
+ {
+  "q": "Cette idée ? Il ___ a renoncé trop vite.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "lui",
+   "l'"
+  ],
+  "e": "This idea? He gave it up too quickly.",
+  "w": "Renoncer à + a thing becomes y.",
+  "wf": "renoncer à : y.",
+  "t": "y",
+  "b": "B1"
+ },
+ {
+  "q": "Les échecs ? Il ___ joue depuis l'enfance.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "les",
+   "leur"
+  ],
+  "e": "Chess? He's played it since he was a child.",
+  "w": "Jouer à + a game becomes y.",
+  "wf": "jouer à un jeu : y.",
+  "t": "y",
+  "b": "B1"
+ },
+ {
+  "q": "Ça ___ est, j'ai fini !",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "l'"
+  ],
+  "e": "That's it, I'm done!",
+  "w": "Ça y est is a fixed phrase meaning that's it, done.",
+  "wf": "ça y est : expression fixe.",
+  "t": "y",
+  "b": "B1"
+ },
+ {
+  "q": "On ___ est presque, encore un kilomètre.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "là"
+  ],
+  "e": "We're nearly there, one more kilometre.",
+  "w": "Y stands for the place: on y est, we're there. Là never goes before the verb.",
+  "wf": "y remplace le lieu.",
+  "t": "y",
+  "b": "B1"
+ },
+ {
+  "q": "Cette offre ? Je vais ___ réfléchir avant de signer.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "la",
+   "lui"
+  ],
+  "e": "This offer? I'll think it over before signing.",
+  "w": "Réfléchir à + a thing becomes y.",
+  "wf": "réfléchir à : y.",
+  "t": "y",
+  "b": "B1"
+ },
+ {
+  "q": "La fête ? Tu comptes ___ aller ?",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "la",
+   "lui"
+  ],
+  "e": "The party? Are you planning to go?",
+  "w": "Y stands for the place, before the infinitive: y aller.",
+  "wf": "Devant l'infinitif : y aller.",
+  "t": "y",
+  "b": "B1"
+ },
+ {
+  "q": "Ton dossier ? ___ travaille encore ce soir.",
+  "a": "J'y",
+  "o": [
+   "J'y",
+   "J'en",
+   "Je le",
+   "Je lui"
+  ],
+  "e": "Your file? I'm still working on it tonight.",
+  "w": "Travailler à + a task becomes y; je becomes j'.",
+  "wf": "y travailler : j'y travaille.",
+  "t": "y",
+  "b": "B1"
+ },
+ {
+  "q": "La campagne ? Ils ___ ont passé tout l'été.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "la",
+   "lui"
+  ],
+  "e": "The countryside? They spent the whole summer there.",
+  "w": "Y replaces a place already named (à, en, chez, dans + place) and goes before the verb.",
+  "wf": "y remplace un lieu.",
+  "t": "y",
+  "b": "B1"
+ },
+ {
+  "q": "Leur histoire ? Il ___ croit vraiment.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "la",
+   "lui"
+  ],
+  "e": "Their story? He really believes it.",
+  "w": "Croire à + a thing becomes y.",
+  "wf": "croire à : y.",
+  "t": "y",
+  "b": "B1"
+ },
+ {
+  "q": "Ma question ? Tu ___ as pas répondu.",
+  "a": "n'y",
+  "o": [
+   "n'y",
+   "n'en",
+   "ne lui",
+   "ne l'"
+  ],
+  "e": "My question? You didn't answer it.",
+  "w": "Répondre à + a thing becomes y; ne becomes n'.",
+  "wf": "répondre à : n'y.",
+  "t": "y",
+  "b": "B1"
+ },
+ {
+  "q": "Bruxelles ? Nous ___ resterons trois jours.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "la",
+   "lui"
+  ],
+  "e": "Brussels? We'll stay there three days.",
+  "w": "Y replaces a place already named (à, en, chez, dans + place) and goes before the verb.",
+  "wf": "y remplace un lieu.",
+  "t": "y",
+  "b": "B1"
+ },
+ {
+  "q": "Ce sujet ? ___ reviendrai demain en détail.",
+  "a": "J'y",
+  "o": [
+   "J'y",
+   "J'en",
+   "Je le",
+   "Je lui"
+  ],
+  "e": "That topic? I'll come back to it in detail tomorrow.",
+  "w": "Revenir à + a subject becomes y; je becomes j'.",
+  "wf": "revenir à un sujet : j'y.",
+  "t": "y",
+  "b": "B1"
+ },
+ {
+  "q": "Ces difficultés ? Nous ___ ferons face ensemble.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "leur",
+   "les"
+  ],
+  "e": "These difficulties? We'll face them together.",
+  "w": "Faire face à + a thing becomes y.",
+  "wf": "faire face à : y.",
+  "t": "y",
+  "b": "B2"
+ },
+ {
+  "q": "Les règles ? Tout le monde doit ___ soumettre.",
+  "a": "s'y",
+  "o": [
+   "s'y",
+   "s'en",
+   "se les",
+   "se leur"
+  ],
+  "e": "The rules? Everyone has to abide by them.",
+  "w": "Se soumettre à + a thing becomes y: s'y soumettre.",
+  "wf": "se soumettre à : s'y.",
+  "t": "y",
+  "b": "B2"
+ },
+ {
+  "q": "Le contrat ? ___ avez-vous ajouté la clause ?",
+  "a": "Y",
+  "o": [
+   "Y",
+   "En",
+   "Le",
+   "Lui"
+  ],
+  "e": "The contract? Did you add the clause to it?",
+  "w": "With inversion, y still comes first: y avez-vous ajouté.",
+  "wf": "y avant le verbe inversé.",
+  "t": "y",
+  "b": "B2"
+ },
+ {
+  "q": "Ce site ? Ne ___ fie pas.",
+  "a": "t'y",
+  "o": [
+   "t'y",
+   "t'en",
+   "te le",
+   "te lui"
+  ],
+  "e": "That website? Don't trust it.",
+  "w": "Se fier à + a thing becomes y: ne t'y fie pas.",
+  "wf": "se fier à : t'y.",
+  "t": "y",
+  "b": "B2"
+ },
+ {
+  "q": "Ces chiffres ? Je ___ comprends rien.",
+  "a": "n'y",
+  "o": [
+   "n'y",
+   "n'en",
+   "ne les",
+   "ne leur"
+  ],
+  "e": "These figures? I can't make head or tail of them.",
+  "w": "Ne rien y comprendre: y stands for the matter in hand.",
+  "wf": "je n'y comprends rien : expression.",
+  "t": "y",
+  "b": "B2"
+ },
+ {
+  "q": "Je ___ suis pour rien, je te le jure.",
+  "a": "n'y",
+  "o": [
+   "n'y",
+   "n'en",
+   "ne le",
+   "ne lui"
+  ],
+  "e": "I had nothing to do with it, I swear.",
+  "w": "N'y être pour rien means to have nothing to do with it.",
+  "wf": "n'y être pour rien : expression.",
+  "t": "y",
+  "b": "B2"
+ },
+ {
+  "q": "Son discours ? Personne ne ___ attendait.",
+  "a": "s'y",
+  "o": [
+   "s'y",
+   "s'en",
+   "se le",
+   "se lui"
+  ],
+  "e": "His speech? Nobody expected it.",
+  "w": "S'attendre à + a thing becomes y: personne ne s'y attendait.",
+  "wf": "s'attendre à : s'y.",
+  "t": "y",
+  "b": "B2"
+ },
+ {
+  "q": "Ce poste ? Elle ___ a postulé hier.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "lui",
+   "l'"
+  ],
+  "e": "This job? She applied for it yesterday.",
+  "w": "Postuler à + a thing becomes y.",
+  "wf": "postuler à : y.",
+  "t": "y",
+  "b": "B2"
+ },
+ {
+  "q": "Les syndicats ___ opposent fermement. (to this law)",
+  "a": "s'y",
+  "o": [
+   "s'y",
+   "s'en",
+   "se la",
+   "se lui"
+  ],
+  "e": "The unions firmly oppose it.",
+  "w": "S'opposer à + a thing becomes y: ils s'y opposent.",
+  "wf": "s'opposer à : s'y.",
+  "t": "y",
+  "b": "B2"
+ },
+ {
+  "q": "Le détail ? Il faut ___ veiller.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "lui"
+  ],
+  "e": "The detail? You have to keep an eye on it.",
+  "w": "Veiller à + a thing becomes y.",
+  "wf": "veiller à : y.",
+  "t": "y",
+  "b": "B2"
+ },
+ {
+  "q": "Il ___ va de ta santé !",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "lui"
+  ],
+  "e": "Your health is at stake!",
+  "w": "Il y va de means something is at stake; y is part of the phrase.",
+  "wf": "il y va de : expression fixe.",
+  "t": "y",
+  "b": "B2"
+ },
+ {
+  "q": "Le concert ? Elle ___ est allée sans moi.",
+  "a": "y",
+  "o": [
+   "y",
+   "en",
+   "le",
+   "lui"
+  ],
+  "e": "The concert? She went without me.",
+  "w": "Y goes before être in the passé composé: elle y est allée.",
+  "wf": "y avant l'auxiliaire.",
+  "t": "y",
+  "b": "B1"
+ }
+]

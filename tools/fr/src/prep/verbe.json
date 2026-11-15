@@ -1,0 +1,1013 @@
+[
+ {
+  "q": "Je commence ___ comprendre.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "I'm starting to understand.",
+  "w": "Commencer takes à before an infinitive.",
+  "wf": "Commencer à + infinitif.",
+  "t": "verbe",
+  "b": "A1"
+ },
+ {
+  "q": "Il a fini ___ manger.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "He has finished eating.",
+  "w": "Finir takes de before an infinitive.",
+  "wf": "Finir de + infinitif.",
+  "t": "verbe",
+  "b": "A1"
+ },
+ {
+  "q": "J'essaie ___ dormir.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "I'm trying to sleep.",
+  "w": "Essayer takes de before an infinitive.",
+  "wf": "Essayer de + infinitif.",
+  "t": "verbe",
+  "b": "A1"
+ },
+ {
+  "q": "Tu penses ___ moi ?",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "Are you thinking of me?",
+  "w": "Thinking about someone is penser à.",
+  "wf": "penser à quelqu'un.",
+  "t": "verbe",
+  "b": "A1"
+ },
+ {
+  "q": "Elle apprend ___ nager.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "She's learning to swim.",
+  "w": "Apprendre takes à before an infinitive.",
+  "wf": "Apprendre à + infinitif.",
+  "t": "verbe",
+  "b": "A1"
+ },
+ {
+  "q": "On a décidé ___ partir.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "We decided to leave.",
+  "w": "Décider takes de before an infinitive.",
+  "wf": "Décider de + infinitif.",
+  "t": "verbe",
+  "b": "A1"
+ },
+ {
+  "q": "J'ai oublié ___ fermer la porte.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "I forgot to close the door.",
+  "w": "Oublier takes de before an infinitive.",
+  "wf": "Oublier de + infinitif.",
+  "t": "verbe",
+  "b": "A1"
+ },
+ {
+  "q": "Je t'aide ___ porter ça.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "I'll help you carry that.",
+  "w": "Aider quelqu'un takes à before an infinitive.",
+  "wf": "aider à + infinitif.",
+  "t": "verbe",
+  "b": "A1"
+ },
+ {
+  "q": "J'ai envie ___ dormir.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "I feel like sleeping.",
+  "w": "Avoir envie takes de: j'ai envie de...",
+  "wf": "avoir envie de.",
+  "t": "verbe",
+  "b": "A1"
+ },
+ {
+  "q": "Je joue ___ foot le samedi.",
+  "a": "au",
+  "o": [
+   "au",
+   "du",
+   "de"
+  ],
+  "e": "I play football on Saturdays.",
+  "w": "Sports and games take jouer à: au foot.",
+  "wf": "jouer à un sport.",
+  "t": "verbe",
+  "b": "A1"
+ },
+ {
+  "q": "Elle joue ___ piano.",
+  "a": "du",
+  "o": [
+   "du",
+   "au",
+   "de"
+  ],
+  "e": "She plays the piano.",
+  "w": "Instruments take jouer de: du piano.",
+  "wf": "jouer d'un instrument.",
+  "t": "verbe",
+  "b": "A1"
+ },
+ {
+  "q": "Tu peux téléphoner ___ ta mère ?",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "Can you phone your mother?",
+  "w": "Téléphoner takes à before a person or thing.",
+  "wf": "Téléphoner à quelqu'un.",
+  "t": "verbe",
+  "b": "A1"
+ },
+ {
+  "q": "Je viens ___ manger, merci.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "I've just eaten, thanks.",
+  "w": "Venir de + infinitive means to have just done.",
+  "wf": "venir de = passé récent.",
+  "t": "verbe",
+  "b": "A1"
+ },
+ {
+  "q": "Il est en train ___ travailler.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "He's busy working.",
+  "w": "En train de + infinitive means in the middle of doing.",
+  "wf": "être en train de.",
+  "t": "verbe",
+  "b": "A1"
+ },
+ {
+  "q": "Il me parle ___ son voyage.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "He's telling me about his trip.",
+  "w": "Talking about something is parler de.",
+  "wf": "parler de quelque chose.",
+  "t": "verbe",
+  "b": "A1"
+ },
+ {
+  "q": "J'ai arrêté ___ fumer.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "I've stopped smoking.",
+  "w": "Arrêter takes de before an infinitive.",
+  "wf": "Arrêter de + infinitif.",
+  "t": "verbe",
+  "b": "A1"
+ },
+ {
+  "q": "Je suis prêt ___ partir.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "I'm ready to leave.",
+  "w": "Prêt takes à before an infinitive.",
+  "wf": "prêt à + infinitif.",
+  "t": "verbe",
+  "b": "A1"
+ },
+ {
+  "q": "Nous avons besoin ___ temps.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "We need time.",
+  "w": "Avoir besoin takes de.",
+  "wf": "avoir besoin de.",
+  "t": "verbe",
+  "b": "A1"
+ },
+ {
+  "q": "Elle a peur ___ chiens.",
+  "a": "des",
+  "o": [
+   "des",
+   "aux",
+   "de"
+  ],
+  "e": "She's afraid of dogs.",
+  "w": "Avoir peur de; de + les becomes des.",
+  "wf": "avoir peur de ; de + les = des.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "Je demande ___ prof.",
+  "a": "au",
+  "o": [
+   "au",
+   "du"
+  ],
+  "e": "I'll ask the teacher.",
+  "w": "You ask someone: demander à; à + le becomes au.",
+  "wf": "demander à quelqu'un.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "Il s'intéresse ___ l'histoire.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "He's interested in history.",
+  "w": "S'intéresser takes à.",
+  "wf": "s'intéresser à.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "Nous rêvons ___ partir au Japon.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "We dream of going to Japan.",
+  "w": "Rêver takes de before an infinitive.",
+  "wf": "Rêver de + infinitif.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "Elle s'occupe ___ enfants.",
+  "a": "des",
+  "o": [
+   "des",
+   "aux"
+  ],
+  "e": "She looks after the children.",
+  "w": "S'occuper takes de; de + les becomes des.",
+  "wf": "s'occuper de.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "Il a refusé ___ venir.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "He refused to come.",
+  "w": "Refuser takes de before an infinitive.",
+  "wf": "Refuser de + infinitif.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "Je réfléchis ___ ta question.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "I'm thinking about your question.",
+  "w": "Réfléchir takes à: to think something over.",
+  "wf": "réfléchir à.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "Elle a réussi ___ trouver un travail.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "She managed to find a job.",
+  "w": "Réussir takes à before an infinitive.",
+  "wf": "Réussir à + infinitif.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "Il a accepté ___ venir.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "He agreed to come.",
+  "w": "Accepter takes de before an infinitive.",
+  "wf": "Accepter de + infinitif.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "Je n'arrive pas ___ dormir.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "I can't manage to sleep.",
+  "w": "Arriver à + infinitive means to manage to.",
+  "wf": "arriver à = réussir à.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "Elle m'a demandé ___ venir.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "She asked me to come.",
+  "w": "Asking someone to do something: demander de.",
+  "wf": "demander à quelqu'un de faire.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "Je t'invite ___ dîner samedi.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "I'm inviting you to dinner on Saturday.",
+  "w": "Inviter takes à before an infinitive.",
+  "wf": "Inviter à + infinitif.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "J'ai le temps ___ manger.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "I have time to eat.",
+  "w": "Avoir le temps takes de.",
+  "wf": "avoir le temps de.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "Il a promis ___ rentrer tôt.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "He promised to come home early.",
+  "w": "Promettre takes de before an infinitive.",
+  "wf": "Promettre de + infinitif.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ressembles ___ ton père.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "You look like your father.",
+  "w": "Ressembler takes à.",
+  "wf": "ressembler à.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "Ça dépend ___ temps.",
+  "a": "du",
+  "o": [
+   "du",
+   "de",
+   "au"
+  ],
+  "e": "It depends on the weather.",
+  "w": "Dépendre takes de; de + le becomes du.",
+  "wf": "dépendre de.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "Il joue ___ cartes avec ses amis.",
+  "a": "aux",
+  "o": [
+   "aux",
+   "des",
+   "à"
+  ],
+  "e": "He plays cards with his friends.",
+  "w": "Games take jouer à; à + les becomes aux.",
+  "wf": "jouer aux cartes.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "Elle joue ___ guitare.",
+  "a": "de la",
+  "o": [
+   "de la",
+   "à la"
+  ],
+  "e": "She plays the guitar.",
+  "w": "Instruments take jouer de: de la guitare.",
+  "wf": "jouer de la guitare.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "Je me prépare ___ partir.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "I'm getting ready to leave.",
+  "w": "Se préparer takes à before an infinitive.",
+  "wf": "Se préparer à + infinitif.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "Elle a appris ___ conduire l'année dernière.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "She learned to drive last year.",
+  "w": "Apprendre takes à before an infinitive.",
+  "wf": "Apprendre à + infinitif.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "Je te remercie ___ ton aide.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "x": [
+   "pour"
+  ],
+  "e": "Thank you for your help.",
+  "w": "Remercier takes de or pour, never à.",
+  "wf": "remercier de.",
+  "t": "verbe",
+  "b": "A2"
+ },
+ {
+  "q": "Ce livre est facile ___ lire.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "This book is easy to read.",
+  "w": "When the subject is the thing: facile à lire.",
+  "wf": "facile à + infinitif.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Il est difficile ___ trouver un appartement.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "It's hard to find a flat.",
+  "w": "Impersonal il est + adjective takes de.",
+  "wf": "il est difficile de.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Il m'a conseillé ___ partir tôt.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "He advised me to leave early.",
+  "w": "Conseiller takes de before an infinitive.",
+  "wf": "Conseiller de + infinitif.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Nous avons choisi ___ rester.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "We chose to stay.",
+  "w": "Choisir takes de before an infinitive.",
+  "wf": "Choisir de + infinitif.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Qu'est-ce que tu penses ___ ce film ?",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "What do you think of this film?",
+  "w": "Giving an opinion is penser de.",
+  "wf": "penser de = opinion.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut obéir ___ règles.",
+  "a": "aux",
+  "o": [
+   "aux",
+   "des"
+  ],
+  "e": "You have to obey the rules.",
+  "w": "Obéir takes à; à + les becomes aux.",
+  "wf": "obéir à.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Je m'habitue ___ ma nouvelle vie.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "I'm getting used to my new life.",
+  "w": "S'habituer takes à.",
+  "wf": "s'habituer à.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Il a cessé ___ pleuvoir.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "It has stopped raining.",
+  "w": "Cesser takes de before an infinitive.",
+  "wf": "Cesser de + infinitif.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Ils ont tendance ___ exagérer.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "They tend to exaggerate.",
+  "w": "Avoir tendance takes à.",
+  "wf": "avoir tendance à.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Je compte ___ toi.",
+  "a": "sur",
+  "o": [
+   "sur",
+   "à",
+   "de"
+  ],
+  "e": "I'm counting on you.",
+  "w": "Relying on someone is compter sur.",
+  "wf": "compter sur.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Elle se moque ___ moi.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "She's making fun of me.",
+  "w": "Se moquer takes de.",
+  "wf": "se moquer de.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Il m'a empêché ___ partir.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "He stopped me from leaving.",
+  "w": "Empêcher takes de before an infinitive.",
+  "wf": "Empêcher de + infinitif.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Je l'ai encouragé ___ continuer.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "I encouraged him to carry on.",
+  "w": "Encourager takes à before an infinitive.",
+  "wf": "Encourager à + infinitif.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Tu as raison ___ dire ça.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "You're right to say that.",
+  "w": "Avoir raison takes de.",
+  "wf": "avoir raison de.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Il se plaint ___ bruit.",
+  "a": "du",
+  "o": [
+   "du",
+   "de",
+   "au"
+  ],
+  "e": "He's complaining about the noise.",
+  "w": "Se plaindre takes de; de + le becomes du.",
+  "wf": "se plaindre de.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Je me suis mis ___ courir.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "I started running.",
+  "w": "Se mettre à means to start doing.",
+  "wf": "se mettre à = commencer à.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Nous avons hâte ___ te voir.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "We can't wait to see you.",
+  "w": "Avoir hâte takes de.",
+  "wf": "avoir hâte de.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Il a l'habitude ___ se lever tôt.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "He's used to getting up early.",
+  "w": "Avoir l'habitude takes de.",
+  "wf": "avoir l'habitude de.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Elle est sûre ___ gagner.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "She's sure she'll win.",
+  "w": "Sûr takes de before an infinitive.",
+  "wf": "sûr de + infinitif.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Je suis fatigué ___ travailler la nuit.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "I'm tired of working nights.",
+  "w": "Fatigué takes de: tired of.",
+  "wf": "fatigué de.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "C'est à toi ___ jouer.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "It's your turn to play.",
+  "w": "C'est à toi de: it's your turn, it's up to you.",
+  "wf": "c'est à moi de.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Je me souviens ___ ce jour.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "I remember that day.",
+  "w": "Se souvenir takes de.",
+  "wf": "se souvenir de.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Elle a menacé ___ partir.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "She threatened to leave.",
+  "w": "Menacer takes de before an infinitive.",
+  "wf": "Menacer de + infinitif.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "J'hésite ___ lui en parler.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "I'm hesitating to talk to him about it.",
+  "w": "Hésiter takes à before an infinitive.",
+  "wf": "Hésiter à + infinitif.",
+  "t": "verbe",
+  "b": "B1"
+ },
+ {
+  "q": "Elle tient ___ venir.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "She's keen to come.",
+  "w": "Tenir à means to be keen on, to insist on.",
+  "wf": "tenir à = vouloir vraiment.",
+  "t": "verbe",
+  "b": "B2"
+ },
+ {
+  "q": "Il a obligé ses enfants ___ ranger.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "He made his children tidy up.",
+  "w": "Obliger quelqu'un takes à.",
+  "wf": "obliger à.",
+  "t": "verbe",
+  "b": "B2"
+ },
+ {
+  "q": "Je me méfie ___ lui.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "I don't trust him.",
+  "w": "Se méfier takes de.",
+  "wf": "se méfier de.",
+  "t": "verbe",
+  "b": "B2"
+ },
+ {
+  "q": "Elle s'est rendu compte ___ son erreur.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "She realised her mistake.",
+  "w": "Se rendre compte takes de.",
+  "wf": "se rendre compte de.",
+  "t": "verbe",
+  "b": "B2"
+ },
+ {
+  "q": "Je renonce ___ ce projet.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "I'm giving up on this project.",
+  "w": "Renoncer takes à.",
+  "wf": "renoncer à.",
+  "t": "verbe",
+  "b": "B2"
+ },
+ {
+  "q": "Il manque ___ courage.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "He lacks courage.",
+  "w": "Lacking something is manquer de.",
+  "wf": "manquer de = ne pas avoir assez.",
+  "t": "verbe",
+  "b": "B2"
+ },
+ {
+  "q": "Il s'agit ___ ton avenir.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "It's about your future.",
+  "w": "Il s'agit takes de: it's about.",
+  "wf": "il s'agit de.",
+  "t": "verbe",
+  "b": "B2"
+ },
+ {
+  "q": "On s'attend ___ une réponse demain.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "We're expecting an answer tomorrow.",
+  "w": "S'attendre takes à.",
+  "wf": "s'attendre à.",
+  "t": "verbe",
+  "b": "B2"
+ },
+ {
+  "q": "J'ai fait semblant ___ dormir.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "I pretended to be asleep.",
+  "w": "Faire semblant takes de.",
+  "wf": "faire semblant de.",
+  "t": "verbe",
+  "b": "B2"
+ },
+ {
+  "q": "Il est le premier ___ arriver.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "He's the first to arrive.",
+  "w": "Le premier, le dernier, le seul take à.",
+  "wf": "le premier à.",
+  "t": "verbe",
+  "b": "B2"
+ },
+ {
+  "q": "Elle a fini ___ accepter notre offre.",
+  "a": "par",
+  "o": [
+   "par",
+   "à"
+  ],
+  "e": "In the end she accepted our offer.",
+  "w": "Finir par + infinitive means to end up doing.",
+  "wf": "finir par = à la fin.",
+  "t": "verbe",
+  "b": "B2"
+ },
+ {
+  "q": "Ça ne sert à rien ___ crier.",
+  "a": "de",
+  "o": [
+   "de",
+   "à"
+  ],
+  "e": "There's no point shouting.",
+  "w": "Ça ne sert à rien takes de.",
+  "wf": "ça ne sert à rien de.",
+  "t": "verbe",
+  "b": "B2"
+ },
+ {
+  "q": "Tu as intérêt ___ te dépêcher.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "You'd better hurry.",
+  "w": "Avoir intérêt takes à: you'd better.",
+  "wf": "avoir intérêt à.",
+  "t": "verbe",
+  "b": "B2"
+ },
+ {
+  "q": "Il s'est engagé ___ payer la somme.",
+  "a": "à",
+  "o": [
+   "à",
+   "de"
+  ],
+  "e": "He committed to paying the sum.",
+  "w": "S'engager takes à.",
+  "wf": "s'engager à.",
+  "t": "verbe",
+  "b": "B2"
+ }
+]

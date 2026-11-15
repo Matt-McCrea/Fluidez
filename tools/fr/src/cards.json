@@ -1,0 +1,625 @@
+{
+ "pres": {
+  "name": { "fr": "Le présent", "en": "The present" },
+  "when": [
+   { "en": "What happens now: *Je parle.* means I speak or I am speaking. French has one present for both.", "fr": "Ce qui se passe maintenant : *Je parle.*" },
+   { "en": "Habits and things that are always true: *chaque jour*, *toujours*, *le lundi*.", "fr": "Les habitudes et les vérités : *chaque jour*, *toujours*, *le lundi*." },
+   { "en": "Plans for soon, with a time word: *Demain, je travaille.*", "fr": "Un projet proche, avec un mot de temps : *Demain, je travaille.*" }
+  ],
+  "how": {
+   "en": "Drop *-er*, *-ir* or *-re* and add the ending for the person. *-er* verbs: *-e, -es, -e, -ons, -ez, -ent*. *Finir* verbs add *-iss-* in the plural. Many *-re* verbs end *-s, -s, -t* or nothing. The *-ent* of *ils parlent* is silent.",
+   "fr": "On enlève *-er*, *-ir* ou *-re* et on ajoute la terminaison : *-e, -es, -e, -ons, -ez, -ent* pour les verbes en *-er*."
+  },
+  "irr": { "tense": "pres", "verbs": ["être", "avoir", "aller", "faire", "dire", "pouvoir", "vouloir", "venir", "prendre", "savoir", "voir", "devoir"] },
+  "ex": [
+   { "fr": "J'habite à Lyon.", "en": "I live in Lyon." },
+   { "fr": "Nous finissons à six heures.", "en": "We finish at six." },
+   { "fr": "Est-ce que tu prends le bus ?", "en": "Do you take the bus?" }
+  ],
+  "tip": {
+   "en": "*Je parle*, *tu parles*, *il parle* and *ils parlent* all sound the same. Only *nous* and *vous* sound different, so listen for the pronoun.",
+   "fr": "*Parle*, *parles* et *parlent* se prononcent pareil. Écoute le pronom."
+  }
+ },
+ "imp": {
+  "name": { "fr": "L'imparfait", "en": "The imperfect: was doing, used to do" },
+  "when": [
+   { "en": "The background in the past, what was going on: *Il pleuvait.* It was raining.", "fr": "Le décor du passé : *Il pleuvait.*" },
+   { "en": "Habits in the past: *Quand j'étais petit, je jouais au foot.* I used to play football.", "fr": "Les habitudes passées : *Je jouais au foot.*" },
+   { "en": "Descriptions, feelings and age in the past: *J'avais dix ans.* *C'était super.*", "fr": "Les descriptions et l'âge : *J'avais dix ans.*" }
+  ],
+  "how": {
+   "en": "Take the *nous* form of the present, drop *-ons*, and add *-ais, -ais, -ait, -ions, -iez, -aient*. *Nous finissons* gives *je finissais*. The one exception is *être*: *j'étais*.",
+   "fr": "On prend *nous* au présent, on enlève *-ons* et on ajoute *-ais, -ais, -ait, -ions, -iez, -aient*."
+  },
+  "irr": { "tense": "imp", "verbs": ["être", "avoir", "faire", "aller"] },
+  "ex": [
+   { "fr": "Il faisait beau ce matin.", "en": "The weather was nice this morning." },
+   { "fr": "Avant, nous prenions le train.", "en": "We used to take the train." },
+   { "fr": "Je lisais quand tu as appelé.", "en": "I was reading when you called." }
+  ],
+  "tip": {
+   "en": "Imperfect sets the scene, passé composé says what happened: *Je dormais* (scene) *quand le téléphone a sonné* (event).",
+   "fr": "L'imparfait pour le décor, le passé composé pour l'action : *Je dormais quand le téléphone a sonné.*"
+  }
+ },
+ "fut": {
+  "name": { "fr": "Le futur simple", "en": "The future: will" },
+  "when": [
+   { "en": "What will happen: *Demain, il fera beau.* Tomorrow it will be nice.", "fr": "Ce qui arrivera : *Demain, il fera beau.*" },
+   { "en": "Promises and predictions: *Je t'appellerai.* I will call you.", "fr": "Les promesses et les prévisions : *Je t'appellerai.*" },
+   { "en": "After *quand* about the future, French uses the future too: *Quand je serai à Paris...*", "fr": "Après *quand* pour l'avenir : *Quand je serai à Paris...*" }
+  ],
+  "how": {
+   "en": "Take the whole infinitive (drop the last *e* of *-re*) and add *-ai, -as, -a, -ons, -ez, -ont*: *parlerai*, *finirai*, *prendrai*. Some common verbs have their own stem: *ser-*, *aur-*, *ir-*, *fer-*, *pourr-*.",
+   "fr": "Infinitif + *-ai, -as, -a, -ons, -ez, -ont* : *je parlerai*. Quelques radicaux à part : *ser-*, *aur-*, *ir-*, *fer-*."
+  },
+  "irr": { "tense": "fut", "verbs": ["être", "avoir", "aller", "faire", "pouvoir", "vouloir", "venir", "savoir", "voir", "devoir"] },
+  "ex": [
+   { "fr": "Nous partirons lundi.", "en": "We will leave on Monday." },
+   { "fr": "Tu seras là ce soir ?", "en": "Will you be there tonight?" },
+   { "fr": "Il ne viendra pas.", "en": "He won't come." }
+  ],
+  "tip": {
+   "en": "The endings are the present of *avoir*: *ai, as, a, (av)ons, (av)ez, ont*. In speech, *je vais partir* (going to) is often more natural.",
+   "fr": "Les terminaisons ressemblent à *avoir* : *ai, as, a, ons, ez, ont*."
+  }
+ },
+ "cond": {
+  "name": { "fr": "Le conditionnel", "en": "The conditional: would" },
+  "when": [
+   { "en": "Polite requests: *Je voudrais un café.* I would like a coffee.", "fr": "Pour demander poliment : *Je voudrais un café.*" },
+   { "en": "What would happen if: *Si j'avais le temps, je viendrais.*", "fr": "Une hypothèse : *Si j'avais le temps, je viendrais.*" },
+   { "en": "Advice with *devoir*: *Tu devrais dormir.* You should sleep.", "fr": "Un conseil : *Tu devrais dormir.*" }
+  ],
+  "how": {
+   "en": "The future stem plus the imperfect endings: *-ais, -ais, -ait, -ions, -iez, -aient*. *Parler-* gives *je parlerais*; *voudr-* gives *je voudrais*.",
+   "fr": "Radical du futur + terminaisons de l'imparfait : *je parlerais*, *je voudrais*."
+  },
+  "irr": { "tense": "cond", "verbs": ["être", "avoir", "aller", "faire", "pouvoir", "vouloir", "venir", "savoir", "voir", "devoir"] },
+  "ex": [
+   { "fr": "Je voudrais une table pour deux.", "en": "I would like a table for two." },
+   { "fr": "Pourriez-vous m'aider ?", "en": "Could you help me?" },
+   { "fr": "À ta place, je prendrais le train.", "en": "If I were you, I would take the train." }
+  ],
+  "tip": {
+   "en": "*Je parlerai* (will) and *je parlerais* (would) sound almost the same. After *si*, never use the conditional: *si j'avais*, not *si j'aurais*.",
+   "fr": "Jamais de conditionnel après *si* : *si j'avais*, pas *si j'aurais*."
+  }
+ },
+ "subj": {
+  "name": { "fr": "Le subjonctif présent", "en": "The subjunctive" },
+  "when": [
+   { "en": "After *il faut que*: *Il faut que tu partes.* You have to leave.", "fr": "Après *il faut que* : *Il faut que tu partes.*" },
+   { "en": "After wanting someone else to do something: *Je veux que tu viennes.*", "fr": "Après *vouloir que* : *Je veux que tu viennes.*" },
+   { "en": "The full list is on the card *Quand utiliser le subjonctif*.", "fr": "La liste complète est sur la fiche du subjonctif." }
+  ],
+  "how": {
+   "en": "Take the *ils* form of the present, drop *-ent*, and add *-e, -es, -e, -ions, -iez, -ent*. *Ils prennent* gives *que je prenne*. *Nous* and *vous* look like the imperfect: *que nous prenions*.",
+   "fr": "On prend *ils* au présent, on enlève *-ent* et on ajoute *-e, -es, -e, -ions, -iez, -ent*."
+  },
+  "irr": { "tense": "subj", "verbs": ["être", "avoir", "aller", "faire", "pouvoir", "vouloir", "venir", "prendre", "savoir"] },
+  "ex": [
+   { "fr": "Il faut que je finisse ce soir.", "en": "I have to finish tonight." },
+   { "fr": "Je veux que vous soyez contents.", "en": "I want you to be happy." },
+   { "fr": "Il faut qu'on aille à la banque.", "en": "We have to go to the bank." }
+  ],
+  "tip": {
+   "en": "For *-er* verbs, *que je parle* sounds just like the present. The verbs to learn are the strong ones: *sois*, *aie*, *aille*, *fasse*, *puisse*.",
+   "fr": "Pour les verbes en *-er*, le subjonctif sonne comme le présent. Apprends surtout *sois*, *aie*, *aille*, *fasse*."
+  }
+ },
+ "imper": {
+  "name": { "fr": "L'impératif", "en": "The imperative: commands" },
+  "when": [
+   { "en": "Telling someone to do something: *Viens !* Come!", "fr": "Pour donner un ordre : *Viens !*" },
+   { "en": "Instructions and advice: *Prenez la deuxième rue à droite.*", "fr": "Les instructions : *Prenez la deuxième rue à droite.*" },
+   { "en": "Let's: *Allons au parc !* Let's go to the park!", "fr": "Pour proposer : *Allons au parc !*" }
+  ],
+  "how": {
+   "en": "Use the present of *tu*, *nous* or *vous* without the pronoun. *-er* verbs drop the *s* of *tu*: *tu parles* gives *parle !* For don't, wrap it: *ne parle pas !*",
+   "fr": "Le présent sans le pronom : *parle*, *parlons*, *parlez*. Les verbes en *-er* perdent le *s* : *parle !*"
+  },
+  "irr": { "tense": "imper", "verbs": ["être", "avoir", "aller", "faire", "dire", "venir", "prendre", "savoir"] },
+  "ex": [
+   { "fr": "Ferme la porte, s'il te plaît.", "en": "Close the door, please." },
+   { "fr": "Attendez ici.", "en": "Wait here." },
+   { "fr": "Ne t'inquiète pas !", "en": "Don't worry!" }
+  ],
+  "tip": {
+   "en": "*Vous* is for more than one person and for anyone you say *vous* to. *Va !* has no *s*, but *vas-y !* (go on!) keeps it before *y*.",
+   "fr": "*Va !* mais *vas-y !*"
+  }
+ },
+ "pc": {
+  "name": { "fr": "Le passé composé", "en": "The perfect: did, have done" },
+  "when": [
+   { "en": "Something that happened and finished: *J'ai mangé.* I ate, or I have eaten.", "fr": "Une action finie : *J'ai mangé.*" },
+   { "en": "A list of events: *Je suis arrivé, j'ai pris un café, je suis parti.*", "fr": "Une suite d'actions : *Je suis arrivé, j'ai pris un café.*" },
+   { "en": "It is the normal past of everyday speech.", "fr": "C'est le passé de tous les jours." }
+  ],
+  "how": {
+   "en": "The present of *avoir* plus the participle: *j'ai parlé*. *-er* gives *-é*, *-ir* gives *-i*, many *-re* verbs give *-u*. A small group, like *aller*, uses *être*: *je suis allé*. With *être*, the participle agrees: *elle est allée*.",
+   "fr": "*Avoir* au présent + participe : *j'ai parlé*. Avec *être*, le participe s'accorde : *elle est allée*."
+  },
+  "irr": { "tense": "pc", "verbs": ["être", "avoir", "aller", "faire", "dire", "pouvoir", "vouloir", "venir", "prendre", "savoir", "voir", "devoir"] },
+  "ex": [
+   { "fr": "Hier, j'ai vu un bon film.", "en": "Yesterday I saw a good film." },
+   { "fr": "Elle est partie à huit heures.", "en": "She left at eight." },
+   { "fr": "Tu as fini tes devoirs ?", "en": "Have you finished your homework?" }
+  ],
+  "tip": {
+   "en": "*Ne ... pas* goes round the auxiliary, not the participle: *je n'ai pas mangé*.",
+   "fr": "La négation entoure l'auxiliaire : *je n'ai pas mangé*."
+  }
+ },
+ "ae": {
+  "name": { "fr": "Avoir ou être", "en": "Have or be in the past" },
+  "when": [
+   { "en": "Most verbs take *avoir* in the passé composé: *j'ai mangé*, *j'ai dormi*.", "fr": "La plupart des verbes prennent *avoir* : *j'ai mangé*." },
+   { "en": "About fifteen verbs of coming, going and becoming take *être*: *je suis allé*, *il est né*.", "fr": "Une quinzaine de verbes de mouvement prennent *être* : *je suis allé*." },
+   { "en": "Every verb with *se* takes *être*: *je me suis levé*.", "fr": "Tous les verbes avec *se* prennent *être* : *je me suis levé*." }
+  ],
+  "how": {
+   "en": "Learn the *être* verbs as pairs: *aller* and *venir*, *arriver* and *partir*, *entrer* and *sortir*, *monter* and *descendre*, *naître* and *mourir*, plus *rester*, *tomber*, *retourner*. With *être*, add *e* for a woman and *s* for more than one.",
+   "fr": "Les verbes avec *être* vont par paires : *aller, venir*, *arriver, partir*, *entrer, sortir*, *monter, descendre*, *naître, mourir*."
+  },
+  "table": {
+   "head": ["", "verb", "passé composé"],
+   "rows": [
+    ["most verbs", "manger (eat)", "j'[ai] mangé"],
+    ["go, come", "aller, venir", "je [suis] allé[(e)], je [suis] venu[(e)]"],
+    ["arrive, leave", "arriver, partir", "il [est] arrivé, elle [est] parti[e]"],
+    ["go in, go out", "entrer, sortir", "nous [sommes] entré[s], nous [sommes] sorti[s]"],
+    ["go up, go down", "monter, descendre", "je [suis] monté[(e)], je [suis] descendu[(e)]"],
+    ["be born, die", "naître, mourir", "il [est] né, elle [est] mort[e]"],
+    ["stay, fall", "rester, tomber", "je [suis] resté[(e)], il [est] tombé"],
+    ["with se", "se lever (get up)", "je me [suis] levé[(e)]"]
+   ]
+  },
+  "ex": [
+   { "fr": "Nous sommes arrivés en retard.", "en": "We arrived late." },
+   { "fr": "Elle est restée à la maison.", "en": "She stayed at home." },
+   { "fr": "Ils se sont couchés tôt.", "en": "They went to bed early." }
+  ],
+  "tip": {
+   "en": "*Sortir*, *monter*, *descendre* and *passer* take *avoir* when they have an object: *J'ai sorti le chien.* I took the dog out.",
+   "fr": "Avec un objet, *avoir* : *J'ai sorti le chien.* Sans objet, *être* : *Je suis sorti.*"
+  }
+ },
+ "pqp": {
+  "name": { "fr": "Le plus-que-parfait", "en": "The pluperfect: had done" },
+  "when": [
+   { "en": "Something that happened before another past moment: *Il était déjà parti.* He had already left.", "fr": "Une action avant une autre action passée : *Il était déjà parti.*" },
+   { "en": "Explaining a past event: *J'étais fatigué parce que j'avais mal dormi.*", "fr": "Pour expliquer : *J'avais mal dormi.*" },
+   { "en": "Regrets with *si*: *Si j'avais su...* If I had known...", "fr": "Les regrets : *Si j'avais su...*" }
+  ],
+  "how": {
+   "en": "Like the passé composé, but the auxiliary is in the imperfect: *j'avais parlé*, *j'étais allé*. The same verbs take *être*, and the same agreement applies: *elle était partie*.",
+   "fr": "L'auxiliaire à l'imparfait + participe : *j'avais parlé*, *j'étais allé*."
+  },
+  "ex": [
+   { "fr": "Quand je suis arrivé, le film avait commencé.", "en": "When I arrived, the film had started." },
+   { "fr": "Elle était déjà rentrée.", "en": "She had already come home." },
+   { "fr": "Nous n'avions jamais vu la mer.", "en": "We had never seen the sea." }
+  ],
+  "tip": {
+   "en": "If you know the passé composé, you know this tense: just swap *ai* for *avais* and *suis* for *étais*.",
+   "fr": "*Ai* devient *avais*, *suis* devient *étais*."
+  }
+ },
+ "fp": {
+  "name": { "fr": "Le futur proche", "en": "Going to" },
+  "when": [
+   { "en": "Plans and what is about to happen: *Je vais manger.* I'm going to eat.", "fr": "Un projet ou ce qui va arriver : *Je vais manger.*" },
+   { "en": "In everyday speech it is often used instead of the future: *On va voir.* We'll see.", "fr": "À l'oral, on l'utilise souvent : *On va voir.*" }
+  ],
+  "how": {
+   "en": "The present of *aller* plus the infinitive: *je vais partir*, *nous allons finir*. Only *aller* changes. For not, wrap *aller*: *je ne vais pas partir*.",
+   "fr": "*Aller* au présent + infinitif : *je vais partir*. La négation entoure *aller*."
+  },
+  "ex": [
+   { "fr": "Il va pleuvoir.", "en": "It's going to rain." },
+   { "fr": "Nous allons prendre un taxi.", "en": "We're going to take a taxi." },
+   { "fr": "Tu vas rester ici ?", "en": "Are you going to stay here?" }
+  ],
+  "tip": {
+   "en": "*Je vais aller* (I'm going to go) is correct French: *Je vais aller au marché.*",
+   "fr": "*Je vais aller au marché* est correct."
+  }
+ },
+ "groupes": {
+  "name": { "fr": "Les trois groupes de verbes", "en": "The three kinds of verb" },
+  "when": [
+   { "en": "French verbs fall into three groups by their infinitive. The group tells you the endings.", "fr": "Les verbes se rangent en trois groupes selon l'infinitif." },
+   { "en": "Most verbs end in *-er* and follow *parler*. New verbs join this group: *télécharger*.", "fr": "La plupart finissent en *-er* : *parler*, *télécharger*." },
+   { "en": "The third group holds the rest, including most of the common strong verbs: *être*, *faire*, *prendre*.", "fr": "Le troisième groupe contient les verbes irréguliers : *être*, *faire*, *prendre*." }
+  ],
+  "how": {
+   "en": "Group 1: *-er* (except *aller*). Group 2: *-ir* verbs that add *-iss-* in the plural, like *finir*, *choisir*. Group 3: everything else, like *vendre*, *partir*, *voir*, *prendre*.",
+   "fr": "1er groupe : *-er*. 2e groupe : *-ir* avec *-iss-* (*finir*). 3e groupe : tous les autres."
+  },
+  "table": {
+   "head": ["", "parler", "finir", "vendre"],
+   "rows": [
+    ["group", "1: -er", "2: -ir, -iss-", "3: the rest"],
+    ["je", "parl[e]", "fin[is]", "vend[s]"],
+    ["il / elle", "parl[e]", "fin[it]", "vend"],
+    ["nous", "parl[ons]", "fin[issons]", "vend[ons]"],
+    ["ils / elles", "parl[ent]", "fin[issent]", "vend[ent]"],
+    ["participle", "parl[é]", "fin[i]", "vend[u]"]
+   ]
+  },
+  "ex": [
+   { "fr": "Je choisis le menu du jour.", "en": "I'm choosing the set menu." },
+   { "fr": "Ils vendent des fleurs.", "en": "They sell flowers." },
+   { "fr": "Nous aimons la musique.", "en": "We like music." }
+  ],
+  "tip": {
+   "en": "*Partir* and *dormir* end in *-ir* but are group 3: *nous partons*, not *partissons*.",
+   "fr": "*Partir* et *dormir* sont du 3e groupe : *nous partons*."
+  }
+ },
+ "accord": {
+  "name": { "fr": "L'accord du participe passé", "en": "Participle agreement" },
+  "when": [
+   { "en": "With *être*, the participle agrees with the subject like an adjective: *elle est partie*, *ils sont partis*.", "fr": "Avec *être*, le participe s'accorde avec le sujet : *elle est partie*." },
+   { "en": "With *avoir*, it does not agree with the subject: *elle a mangé*.", "fr": "Avec *avoir*, pas d'accord avec le sujet : *elle a mangé*." },
+   { "en": "With *avoir*, it agrees with a direct object that comes before: *la pomme ? Je l'ai mangée.*", "fr": "Avec *avoir*, accord avec l'objet placé avant : *Je l'ai mangée.*" }
+  ],
+  "how": {
+   "en": "Add *e* for feminine, *s* for plural, *es* for both. Usually you cannot hear it: *parti* and *partie* sound the same. You can hear it on some: *mis*, *mise*; *fait*, *faite*.",
+   "fr": "*e* au féminin, *s* au pluriel : *partie*, *partis*, *parties*."
+  },
+  "table": {
+   "head": ["", "with avoir", "with être"],
+   "rows": [
+    ["he", "il a mangé", "il est parti"],
+    ["she", "elle a mangé", "elle est parti[e]"],
+    ["they (men, or mixed)", "ils ont mangé", "ils sont parti[s]"],
+    ["they (women)", "elles ont mangé", "elles sont parti[es]"],
+    ["object before", "je l'ai mangé[e] (la pomme)", "elle s'est levé[e]"]
+   ]
+  },
+  "ex": [
+   { "fr": "Marie est arrivée hier.", "en": "Marie arrived yesterday." },
+   { "fr": "Mes amies sont venues.", "en": "My friends (women) came." },
+   { "fr": "Les clés ? Je les ai prises.", "en": "The keys? I took them." }
+  ],
+  "tip": {
+   "en": "*Vous* for one woman is *vous êtes partie*; for a group, *partis* or *parties*. A mixed group always takes the masculine.",
+   "fr": "Un groupe mixte prend le masculin : *ils sont partis*."
+  }
+ },
+ "pronominaux": {
+  "name": { "fr": "Les verbes pronominaux", "en": "Verbs with se" },
+  "when": [
+   { "en": "Daily routine: *se lever* (get up), *se laver* (wash), *se coucher* (go to bed).", "fr": "La routine : *se lever*, *se laver*, *se coucher*." },
+   { "en": "Doing something to each other: *Ils s'aiment.* They love each other.", "fr": "Une action réciproque : *Ils s'aiment.*" },
+   { "en": "Some verbs simply come with *se*: *s'appeler* (be called), *se souvenir* (remember).", "fr": "Certains verbes ont toujours *se* : *s'appeler*, *se souvenir*." }
+  ],
+  "how": {
+   "en": "*Se* changes with the person: *me, te, se, nous, vous, se*. It goes before the verb, and becomes *m'*, *t'*, *s'* before a vowel. In the passé composé they always take *être*.",
+   "fr": "*Me, te, se, nous, vous, se* avant le verbe. Au passé composé, toujours *être*."
+  },
+  "table": {
+   "head": ["", "present", "passé composé"],
+   "rows": [
+    ["je", "je [me] lève", "je [me] suis levé(e)"],
+    ["tu", "tu [te] lèves", "tu [t']es levé(e)"],
+    ["il / elle", "il [se] lève", "il [s']est levé, elle [s']est levée"],
+    ["nous", "nous [nous] levons", "nous [nous] sommes levé(e)s"],
+    ["vous", "vous [vous] levez", "vous [vous] êtes levé(e)(s)"],
+    ["ils / elles", "ils [se] lèvent", "ils [se] sont levés"],
+    ["not", "je ne [me] lève pas", "je ne [me] suis pas levé(e)"],
+    ["command", "lève[-toi] !", "ne [te] lève pas !"]
+   ]
+  },
+  "ex": [
+   { "fr": "Je m'appelle Paul.", "en": "My name is Paul." },
+   { "fr": "Elle s'est réveillée à sept heures.", "en": "She woke up at seven." },
+   { "fr": "Dépêche-toi !", "en": "Hurry up!" }
+  ],
+  "tip": {
+   "en": "In a command the pronoun goes after, as *toi*: *assieds-toi !* (sit down). With not, it goes back in front: *ne t'assieds pas !*",
+   "fr": "À l'impératif : *assieds-toi !* mais *ne t'assieds pas !*"
+  }
+ },
+ "genre": {
+  "name": { "fr": "Masculin et féminin", "en": "Masculine and feminine: the, a, this, my" },
+  "when": [
+   { "en": "Every noun is masculine or feminine, even things: *le livre*, *la table*. Learn each noun with *le* or *la*.", "fr": "Chaque nom est masculin ou féminin : *le livre*, *la table*." },
+   { "en": "The gender decides the little word before it: the, a, this, my.", "fr": "Le genre décide de l'article et des petits mots : *ce*, *cette*, *mon*, *ma*." },
+   { "en": "Endings help: *-tion*, *-té* and *-ette* are usually feminine; *-ment*, *-age* and *-eau* usually masculine.", "fr": "*-tion*, *-té* : souvent féminin. *-ment*, *-age* : souvent masculin." }
+  ],
+  "how": {
+   "en": "Before a vowel or a silent *h*, *le* and *la* become *l'*, *ce* becomes *cet*, and *ma* becomes *mon*: *l'école*, *cet ami*, *mon amie*. The plural is the same for both genders.",
+   "fr": "Devant une voyelle : *l'école*, *cet ami*, *mon amie*. Au pluriel, un seul mot : *les*, *ces*, *mes*."
+  },
+  "table": {
+   "head": ["", "masculine", "feminine", "plural"],
+   "rows": [
+    ["the", "le livre", "la table", "les livres"],
+    ["the + vowel", "l'ami", "l'école", "les amis"],
+    ["a, some", "un livre", "une table", "des livres"],
+    ["this, that", "ce livre, [cet] ami", "cette table", "ces livres"],
+    ["my", "mon livre", "ma table, [mon] amie", "mes livres"],
+    ["your (tu)", "ton livre", "ta table", "tes livres"],
+    ["his, her", "son livre", "sa table", "ses livres"]
+   ]
+  },
+  "ex": [
+   { "fr": "J'ai un frère et une sœur.", "en": "I have a brother and a sister." },
+   { "fr": "Cette maison est grande.", "en": "This house is big." },
+   { "fr": "C'est mon amie Claire.", "en": "This is my friend Claire." }
+  ],
+  "tip": {
+   "en": "*Son* and *sa* follow the thing, not the owner: *sa voiture* is his car or her car.",
+   "fr": "*Sa voiture* : la voiture de Paul ou de Marie."
+  }
+ },
+ "partitif": {
+  "name": { "fr": "Du, de la, des ; au, aux", "en": "Some, and à or de with le" },
+  "when": [
+   { "en": "*Du*, *de la*, *des* mean some, for food and things you don't count: *du pain*, *de l'eau*. English often says nothing.", "fr": "Une quantité qu'on ne compte pas : *du pain*, *de l'eau*." },
+   { "en": "After not, they all become *de*: *Je n'ai pas de pain.*", "fr": "Après la négation, *de* : *pas de pain*." },
+   { "en": "*À* and *de* join with *le* and *les*: *au cinéma*, *aux États-Unis*, *le livre du prof*.", "fr": "*À* + *le* = *au*, *de* + *le* = *du* : *au cinéma*, *du marché*." }
+  ],
+  "how": {
+   "en": "*De* + *le* = *du*, *de* + *les* = *des*, *à* + *le* = *au*, *à* + *les* = *aux*. *La* and *l'* never join: *de la*, *à la*, *de l'*, *à l'*.",
+   "fr": "*De la*, *à la*, *de l'*, *à l'* ne changent pas."
+  },
+  "table": {
+   "head": ["", "à (to, at)", "de (of, from, some)"],
+   "rows": [
+    ["le", "[au] marché", "[du] pain"],
+    ["la", "à la gare", "de la confiture"],
+    ["l'", "à l'école", "de l'eau"],
+    ["les", "[aux] toilettes", "[des] pommes"],
+    ["not", "", "pas [de] pain, pas [d']eau"]
+   ]
+  },
+  "ex": [
+   { "fr": "Je voudrais du café, s'il vous plaît.", "en": "I'd like some coffee, please." },
+   { "fr": "Il n'y a pas de lait.", "en": "There is no milk." },
+   { "fr": "On va au parc ?", "en": "Shall we go to the park?" }
+  ],
+  "tip": {
+   "en": "With like and hate, use *le*, *la*, *les*, not *du*: *J'aime le café.* I like coffee.",
+   "fr": "*J'aime le café*, mais *je bois du café*."
+  }
+ },
+ "adj": {
+  "name": { "fr": "Les adjectifs", "en": "Adjectives: agreement and place" },
+  "when": [
+   { "en": "An adjective matches its noun: feminine, plural, or both: *une petite maison*, *des petits chats*.", "fr": "L'adjectif s'accorde avec le nom : *une petite maison*." },
+   { "en": "Most go after the noun: *un livre intéressant*, *une voiture rouge*.", "fr": "La plupart se placent après : *une voiture rouge*." },
+   { "en": "A few short common ones go before: *beau, bon, grand, petit, jeune, vieux, nouveau, joli*.", "fr": "Quelques courts avant : *beau, bon, grand, petit, jeune, vieux*." }
+  ],
+  "how": {
+   "en": "Add *e* for feminine (unless it already ends in *e*), *s* for plural. Some change more: *heureux*, *heureuse*; *bon*, *bonne*; *beau*, *belle*. Before a vowel, *beau* becomes *bel*: *un bel homme*.",
+   "fr": "*e* au féminin, *s* au pluriel. *Heureux*, *heureuse* ; *bon*, *bonne* ; *beau*, *belle*, *bel*."
+  },
+  "table": {
+   "head": ["", "masculine", "feminine"],
+   "rows": [
+    ["most", "petit, petit[s]", "petit[e], petit[es]"],
+    ["already -e", "jeune, jeune[s]", "jeune, jeune[s]"],
+    ["-x", "heureux, heureux", "heureu[se], heureu[ses]"],
+    ["double", "bon, bon[s]", "bon[ne], bon[nes]"],
+    ["special", "beau ([bel]), beau[x]", "[belle], [belles]"]
+   ]
+  },
+  "ex": [
+   { "fr": "C'est une belle journée.", "en": "It's a beautiful day." },
+   { "fr": "Mes parents sont très gentils.", "en": "My parents are very kind." },
+   { "fr": "J'ai acheté une robe noire.", "en": "I bought a black dress." }
+  ],
+  "tip": {
+   "en": "The feminine often makes the last consonant heard: *petit* (no t sound), *petite* (t sound).",
+   "fr": "Au féminin, on entend la consonne : *petit*, *petite*."
+  }
+ },
+ "pronoms": {
+  "name": { "fr": "Les pronoms", "en": "Pronouns: it, him, to her, me" },
+  "when": [
+   { "en": "*Le*, *la*, *les* replace a thing or person you act on: *Je vois Paul. Je le vois.*", "fr": "*Le*, *la*, *les* : *Je le vois.*" },
+   { "en": "*Lui*, *leur* replace *à* + a person: *Je parle à Marie. Je lui parle.*", "fr": "*Lui*, *leur* remplacent *à* + personne : *Je lui parle.*" },
+   { "en": "*Moi*, *toi*, *lui*, *elle*, *eux* stand alone or after a preposition: *avec moi*, *chez eux*, *Moi aussi !*", "fr": "*Moi*, *toi*, *eux* après une préposition : *avec moi*, *chez eux*." },
+   { "en": "*Qui* and *que* join sentences: *l'homme qui parle*, *le film que j'aime*.", "fr": "*Qui* sujet, *que* objet : *l'homme qui parle*, *le film que j'aime*." }
+  ],
+  "how": {
+   "en": "Object pronouns go before the verb: *je le vois*, *je ne le vois pas*. In the passé composé, before the auxiliary: *je l'ai vu*. With two verbs, before the infinitive: *je vais le voir*.",
+   "fr": "Avant le verbe : *je le vois*, *je l'ai vu*, *je vais le voir*."
+  },
+  "table": {
+   "head": ["", "direct", "indirect (to)", "alone, after with"],
+   "rows": [
+    ["me", "me (m')", "me (m')", "moi"],
+    ["you (tu)", "te (t')", "te (t')", "toi"],
+    ["him, it", "le (l')", "lui", "lui"],
+    ["her, it", "la (l')", "lui", "elle"],
+    ["us", "nous", "nous", "nous"],
+    ["you (vous)", "vous", "vous", "vous"],
+    ["them", "les", "leur", "eux, elles"]
+   ]
+  },
+  "ex": [
+   { "fr": "Ce livre ? Je l'ai lu.", "en": "This book? I've read it." },
+   { "fr": "Tu leur téléphones ce soir ?", "en": "Are you phoning them tonight?" },
+   { "fr": "Tu viens avec moi ?", "en": "Are you coming with me?" }
+  ],
+  "tip": {
+   "en": "In a yes command the pronoun goes after with a hyphen: *Regarde-moi !* *Donne-le-moi !* In a no command it stays in front: *Ne le touche pas !*",
+   "fr": "*Regarde-moi !* mais *Ne me regarde pas !*"
+  }
+ },
+ "y-en": {
+  "name": { "fr": "Y et en", "en": "y and en: there, of it, some" },
+  "when": [
+   { "en": "*Y* replaces a place, or *à* + a thing: *Tu vas à Paris ? Oui, j'y vais.*", "fr": "*Y* remplace un lieu ou *à* + chose : *J'y vais.*" },
+   { "en": "*En* replaces *du*, *de la*, *des* + a noun: *Tu veux du café ? Oui, j'en veux.*", "fr": "*En* remplace *du*, *de la*, *des* + nom : *J'en veux.*" },
+   { "en": "*En* also goes with numbers and amounts: *J'en ai deux.* I have two (of them).", "fr": "*En* avec un nombre : *J'en ai deux.*" }
+  ],
+  "how": {
+   "en": "Like other object pronouns, they go before the verb, and before the auxiliary: *j'y suis allé*, *j'en ai acheté*. *Je* becomes *j'* in front of them.",
+   "fr": "Avant le verbe ou l'auxiliaire : *j'y suis allé*, *j'en ai acheté*."
+  },
+  "table": {
+   "head": ["", "replaces", "example"],
+   "rows": [
+    ["y", "à + a place", "Tu vas à la plage ? J'[y] vais."],
+    ["y", "à + a thing", "Tu penses à l'examen ? J'[y] pense."],
+    ["en", "de + a place", "Tu viens de la gare ? J'[en] viens."],
+    ["en", "some (du, des)", "Tu veux du pain ? J'[en] veux."],
+    ["en", "a number", "Tu as des frères ? J'[en] ai deux."]
+   ]
+  },
+  "ex": [
+   { "fr": "Il y a un café ici.", "en": "There is a café here." },
+   { "fr": "Des pommes ? J'en ai acheté trois.", "en": "Apples? I bought three." },
+   { "fr": "On y va !", "en": "Let's go!" }
+  ],
+  "tip": {
+   "en": "Two set phrases to learn whole: *il y a* (there is, there are) and *on y va* (let's go).",
+   "fr": "À retenir : *il y a*, *on y va*."
+  }
+ },
+ "negation": {
+  "name": { "fr": "La négation", "en": "Saying no: ne ... pas" },
+  "when": [
+   { "en": "*Ne ... pas* wraps the verb: *Je ne parle pas.* I don't speak.", "fr": "*Ne ... pas* entoure le verbe : *Je ne parle pas.*" },
+   { "en": "Other words take the place of *pas*: *jamais* (never), *plus* (no longer), *rien* (nothing), *personne* (nobody).", "fr": "*Jamais*, *plus*, *rien*, *personne* prennent la place de *pas*." },
+   { "en": "After a negative, *un*, *une*, *du*, *des* become *de*: *Je n'ai pas de voiture.*", "fr": "Après la négation, *de* : *Je n'ai pas de voiture.*" }
+  ],
+  "how": {
+   "en": "*Ne* goes before the verb (and its pronouns), *pas* after. *Ne* becomes *n'* before a vowel. In the passé composé, wrap the auxiliary: *je n'ai pas mangé*. Before an infinitive, both go first: *ne pas fumer*.",
+   "fr": "*Ne* avant, *pas* après. Au passé composé : *je n'ai pas mangé*. À l'infinitif : *ne pas fumer*."
+  },
+  "table": {
+   "head": ["", "French", "English"],
+   "rows": [
+    ["not", "je ne travaille [pas]", "I don't work"],
+    ["never", "je ne travaille [jamais]", "I never work"],
+    ["no longer", "je ne travaille [plus]", "I don't work any more"],
+    ["nothing", "je ne vois [rien]", "I see nothing"],
+    ["nobody", "je ne vois [personne]", "I see nobody"],
+    ["only", "je n'ai [que] dix euros", "I only have ten euros"],
+    ["no (none)", "je n'ai pas [de] voiture", "I have no car"],
+    ["past", "je n'ai [pas] travaillé", "I didn't work"]
+   ]
+  },
+  "ex": [
+   { "fr": "Je ne mange pas de viande.", "en": "I don't eat meat." },
+   { "fr": "Il n'y a personne.", "en": "There's nobody here." },
+   { "fr": "Elle n'habite plus ici.", "en": "She doesn't live here any more." }
+  ],
+  "tip": {
+   "en": "In speech, people often drop *ne*: *Je sais pas.* You'll hear it everywhere, but write *ne*.",
+   "fr": "À l'oral, on dit souvent *je sais pas*. À l'écrit, garde le *ne*."
+  }
+ },
+ "prepositions": {
+  "name": { "fr": "Les prépositions", "en": "Little words: in, to, at, for" },
+  "when": [
+   { "en": "Places: *à* for towns, *en* for feminine countries, *au* for masculine ones, *chez* for someone's home.", "fr": "Les lieux : *à Paris*, *en France*, *au Japon*, *chez Marie*." },
+   { "en": "Time: *il y a* (ago), *depuis* (since, for and still going), *pendant* (during, for), *dans* (in, from now).", "fr": "Le temps : *il y a*, *depuis*, *pendant*, *dans*." },
+   { "en": "Travel: *en* if you sit inside (*en voiture*, *en train*), *à* if you sit on top or walk (*à vélo*, *à pied*).", "fr": "Le transport : *en voiture*, *à pied*, *à vélo*." },
+   { "en": "Some verbs need *à* or *de* before an infinitive: *commencer à*, *essayer de*, *finir de*.", "fr": "Certains verbes : *commencer à*, *essayer de*." }
+  ],
+  "how": {
+   "en": "Countries ending in *e* are mostly feminine: *en France*, *en Italie*. Others are masculine: *au Canada*, *au Japon*. Plural: *aux États-Unis*. For to and in, French uses the same word.",
+   "fr": "Pays en *e* : *en*. Les autres : *au*. Pluriel : *aux*."
+  },
+  "table": {
+   "head": ["", "French", "English"],
+   "rows": [
+    ["town", "[à] Paris", "in, to Paris"],
+    ["country (f)", "[en] France", "in, to France"],
+    ["country (m)", "[au] Japon", "in, to Japan"],
+    ["country (pl)", "[aux] États-Unis", "in, to the US"],
+    ["someone's place", "[chez] Marie", "at, to Marie's"],
+    ["ago", "[il y a] deux ans", "two years ago"],
+    ["still going", "[depuis] deux ans", "for two years (and still)"],
+    ["from now", "[dans] deux heures", "in two hours"],
+    ["transport", "[en] train, [à] pied", "by train, on foot"]
+   ]
+  },
+  "ex": [
+   { "fr": "J'habite à Marseille depuis trois ans.", "en": "I've lived in Marseille for three years." },
+   { "fr": "Je dîne chez mes parents ce soir.", "en": "I'm having dinner at my parents' tonight." },
+   { "fr": "J'ai dormi pendant tout le voyage.", "en": "I slept for the whole journey." }
+  ],
+  "tip": {
+   "en": "*Depuis* takes the present for something still going: *J'apprends le français depuis un an.* I have been learning French for a year.",
+   "fr": "*Depuis* + présent : *J'apprends le français depuis un an.*"
+  }
+ },
+ "subjonctif": {
+  "name": { "fr": "Quand utiliser le subjonctif", "en": "When to use the subjunctive" },
+  "when": [
+   { "en": "Necessity: *il faut que*, *il est important que*.", "fr": "La nécessité : *il faut que*." },
+   { "en": "Wanting, wishing and feelings about someone else: *je veux que*, *je préfère que*, *je suis content que*, *j'ai peur que*.", "fr": "La volonté et les sentiments : *je veux que*, *je suis content que*." },
+   { "en": "Doubt: *je ne pense pas que*, *je doute que*.", "fr": "Le doute : *je ne pense pas que*." },
+   { "en": "After some joining words: *pour que* (so that), *avant que* (before), *bien que* (although).", "fr": "Après *pour que*, *avant que*, *bien que*." }
+  ],
+  "how": {
+   "en": "It only comes after *que*, and only when the two parts have different people. Same person? Use the infinitive: *Je veux partir.* (I want to leave) but *Je veux que tu partes.* (I want you to leave).",
+   "fr": "Même sujet : infinitif, *je veux partir*. Deux sujets : subjonctif, *je veux que tu partes*."
+  },
+  "table": {
+   "head": ["", "trigger", "example"],
+   "rows": [
+    ["need", "il faut que", "il faut que tu [viennes]"],
+    ["want", "je veux que", "je veux qu'il [soit] là"],
+    ["feeling", "je suis content que", "je suis content que tu [sois] là"],
+    ["doubt", "je ne pense pas que", "je ne pense pas qu'il [puisse]"],
+    ["so that", "pour que", "pour que tu [comprennes]"],
+    ["same person", "je veux", "je veux [partir]"]
+   ]
+  },
+  "ex": [
+   { "fr": "Il faut que je parte.", "en": "I have to go." },
+   { "fr": "Je suis content que tu sois venu.", "en": "I'm glad you came." },
+   { "fr": "Parle plus fort pour qu'on t'entende.", "en": "Speak louder so we can hear you." }
+  ],
+  "tip": {
+   "en": "*Je pense que* (I think that) takes the normal present: *Je pense qu'il vient.* Only the negative, *je ne pense pas que*, takes the subjunctive.",
+   "fr": "*Je pense qu'il vient*, mais *je ne pense pas qu'il vienne*."
+  }
+ },
+ "nombres": {
+  "name": { "fr": "Les nombres", "en": "Numbers" },
+  "when": [
+   { "en": "Prices, times, ages, phone numbers: *Ça fait douze euros.* *J'ai trente ans.*", "fr": "Les prix, l'heure, l'âge : *Ça fait douze euros.*" },
+   { "en": "French says age with *avoir*: *J'ai vingt ans.* I am twenty.", "fr": "L'âge avec *avoir* : *J'ai vingt ans.*" }
+  ],
+  "how": {
+   "en": "Up to sixty it works like English. Then France counts in twenties: 70 is sixty ten, *soixante-dix*; 80 is four twenties, *quatre-vingts*; 90 is four twenties ten, *quatre-vingt-dix*. One goes in with *et*: *vingt et un*.",
+   "fr": "70 : *soixante-dix*. 80 : *quatre-vingts*. 90 : *quatre-vingt-dix*. *Vingt et un*, *trente et un*."
+  },
+  "table": {
+   "head": ["", "French", "how it works"],
+   "rows": [
+    ["1 to 10", "un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix", ""],
+    ["11 to 16", "onze, douze, treize, quatorze, quinze, seize", "own words"],
+    ["17 to 19", "dix-sept, dix-huit, dix-neuf", "ten seven, ten eight"],
+    ["20, 21, 22", "vingt, vingt [et] un, vingt-deux", "one takes et"],
+    ["30 to 60", "trente, quarante, cinquante, soixante", ""],
+    ["70, 71", "[soixante-dix], soixante [et] onze", "sixty ten"],
+    ["80, 81", "[quatre-vingts], quatre-vingt-un", "four twenties"],
+    ["90", "[quatre-vingt-dix]", "four twenties ten"],
+    ["100, 1000", "cent, deux cents, mille", ""]
+   ]
+  },
+  "ex": [
+   { "fr": "Il est huit heures et quart.", "en": "It's quarter past eight." },
+   { "fr": "Ça coûte quatre-vingt-quinze euros.", "en": "It costs ninety-five euros." },
+   { "fr": "Ma grand-mère a soixante-dix-huit ans.", "en": "My grandmother is seventy-eight." }
+  ],
+  "tip": {
+   "en": "In Belgium and Switzerland people say *septante* and *nonante* for 70 and 90, but in France it is *soixante-dix* and *quatre-vingt-dix*.",
+   "fr": "En France : *soixante-dix*, *quatre-vingt-dix*."
+  }
+ }
+}

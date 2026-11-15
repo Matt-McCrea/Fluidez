@@ -1,0 +1,1122 @@
+[
+ {
+  "q": "L'année prochaine, je ___ (être) en dernière année de fac.",
+  "v": "être",
+  "t": "fut",
+  "p": "je",
+  "e": "Next year I'll be in my final year at university.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand tu ___ (être) grand, tu feras quel métier ?",
+  "v": "être",
+  "t": "fut",
+  "p": "tu",
+  "e": "When you grow up, what job will you do?",
+  "b": "A2"
+ },
+ {
+  "q": "Dans dix ans, cette ville ___ (être) complètement différente.",
+  "v": "être",
+  "t": "fut",
+  "p": "il",
+  "e": "In ten years this town will be completely different.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (être) à Rome le mois prochain pour le mariage.",
+  "v": "être",
+  "t": "fut",
+  "p": "nous",
+  "e": "We'll be in Rome next month for the wedding.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (être) là à la réunion de jeudi prochain ?",
+  "v": "être",
+  "t": "fut",
+  "p": "vous",
+  "e": "Will you be at the meeting next Thursday?",
+  "b": "A2"
+ },
+ {
+  "q": "Les résultats ___ (être) en ligne la semaine prochaine.",
+  "v": "être",
+  "t": "fut",
+  "p": "ils",
+  "e": "The results will be online next week.",
+  "b": "A2"
+ },
+ {
+  "q": "J'___ (avoir) trente ans l'année prochaine.",
+  "v": "avoir",
+  "t": "fut",
+  "p": "je",
+  "e": "I'll be thirty next year.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (avoir) ton permis avant l'été, j'en suis sûr.",
+  "v": "avoir",
+  "t": "fut",
+  "p": "tu",
+  "e": "You'll get your licence before the summer, I'm sure.",
+  "b": "A2"
+ },
+ {
+  "q": "Demain, il y ___ (avoir) du soleil sur toute la France.",
+  "v": "avoir",
+  "t": "fut",
+  "p": "il",
+  "e": "Tomorrow there will be sunshine across France.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand ils ___ (avoir) assez d'argent, ils achèteront une maison.",
+  "v": "avoir",
+  "t": "fut",
+  "p": "ils",
+  "e": "When they have enough money, they'll buy a house.",
+  "b": "A2"
+ },
+ {
+  "q": "L'été prochain, tu ___ (aller) en Corse avec nous ?",
+  "v": "aller",
+  "t": "fut",
+  "p": "tu",
+  "e": "Will you go to Corsica with us next summer?",
+  "b": "A2"
+ },
+ {
+  "q": "Un jour, Théo ___ (aller) sur la Lune, il en est sûr.",
+  "v": "aller",
+  "t": "fut",
+  "p": "il",
+  "e": "One day Théo will go to the Moon, he's sure of it.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand il fera beau, nous ___ (aller) à la plage.",
+  "v": "aller",
+  "t": "fut",
+  "p": "nous",
+  "e": "When the weather's nice, we'll go to the beach.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand vous ___ (aller) à Paris, visitez le musée d'Orsay.",
+  "v": "aller",
+  "t": "fut",
+  "p": "vous",
+  "e": "When you go to Paris, visit the Musée d'Orsay.",
+  "b": "A2"
+ },
+ {
+  "q": "L'année prochaine, les jumeaux ___ (aller) au collège.",
+  "v": "aller",
+  "t": "fut",
+  "p": "ils",
+  "e": "Next year the twins will go to secondary school.",
+  "b": "A2"
+ },
+ {
+  "q": "Je te promets que je ___ (faire) attention.",
+  "v": "faire",
+  "t": "fut",
+  "p": "je",
+  "e": "I promise you I'll be careful.",
+  "b": "A2"
+ },
+ {
+  "q": "Qu'est-ce que tu ___ (faire) plus tard, après tes études ?",
+  "v": "faire",
+  "t": "fut",
+  "p": "tu",
+  "e": "What will you do later, after your studies?",
+  "b": "A2"
+ },
+ {
+  "q": "Demain, il ___ (faire) très chaud dans le Sud.",
+  "v": "faire",
+  "t": "fut",
+  "p": "il",
+  "e": "Tomorrow it will be very hot in the south.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (faire) la fête quand tu auras ton diplôme.",
+  "v": "faire",
+  "t": "fut",
+  "p": "nous",
+  "e": "We'll have a party when you get your degree.",
+  "b": "A2"
+ },
+ {
+  "q": "Mes parents ___ (faire) le tour du monde quand ils seront à la retraite.",
+  "v": "faire",
+  "t": "fut",
+  "p": "ils",
+  "e": "My parents will travel round the world when they retire.",
+  "b": "A2"
+ },
+ {
+  "q": "Si je finis tôt, je ___ (venir) te chercher à la gare.",
+  "v": "venir",
+  "t": "fut",
+  "p": "je",
+  "e": "If I finish early, I'll come and pick you up at the station.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (venir) à mon mariage l'année prochaine ?",
+  "v": "venir",
+  "t": "fut",
+  "p": "tu",
+  "e": "Will you come to my wedding next year?",
+  "b": "A2"
+ },
+ {
+  "q": "Le plombier ___ (venir) lundi prochain entre neuf heures et midi.",
+  "v": "venir",
+  "t": "fut",
+  "p": "il",
+  "e": "The plumber will come next Monday between nine and noon.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (venir) vous voir quand le bébé sera né.",
+  "v": "venir",
+  "t": "fut",
+  "p": "nous",
+  "e": "We'll come and see you when the baby is born.",
+  "b": "A2"
+ },
+ {
+  "q": "Combien de personnes ___ (venir) à la fête samedi prochain ?",
+  "v": "venir",
+  "t": "fut",
+  "p": "ils",
+  "e": "How many people will come to the party next Saturday?",
+  "b": "A2"
+ },
+ {
+  "q": "Avec ce nouveau travail, je ___ (pouvoir) enfin acheter une voiture.",
+  "v": "pouvoir",
+  "t": "fut",
+  "p": "je",
+  "e": "With this new job I'll finally be able to buy a car.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand tu auras dix-huit ans, tu ___ (pouvoir) voter.",
+  "v": "pouvoir",
+  "t": "fut",
+  "p": "tu",
+  "e": "When you're eighteen you'll be able to vote.",
+  "b": "A2"
+ },
+ {
+  "q": "Après les travaux, nous ___ (pouvoir) recevoir plus d'invités.",
+  "v": "pouvoir",
+  "t": "fut",
+  "p": "nous",
+  "e": "After the building work we'll be able to have more guests.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (pouvoir) récupérer vos photos dans une semaine.",
+  "v": "pouvoir",
+  "t": "fut",
+  "p": "vous",
+  "e": "You'll be able to collect your photos in a week.",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (savoir) les résultats la semaine prochaine.",
+  "v": "savoir",
+  "t": "fut",
+  "p": "je",
+  "e": "I'll know the results next week.",
+  "b": "A2"
+ },
+ {
+  "q": "Bientôt, tu ___ (savoir) lire tout seul.",
+  "v": "savoir",
+  "t": "fut",
+  "p": "tu",
+  "e": "Soon you'll be able to read on your own.",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (voir) mes cousins à Noël prochain.",
+  "v": "voir",
+  "t": "fut",
+  "p": "je",
+  "e": "I'll see my cousins next Christmas.",
+  "b": "A2"
+ },
+ {
+  "q": "Cet été, nous ___ (voir) la mer pour la première fois.",
+  "v": "voir",
+  "t": "fut",
+  "p": "nous",
+  "e": "This summer we'll see the sea for the first time.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (voir) la différence dans quelques semaines.",
+  "v": "voir",
+  "t": "fut",
+  "p": "vous",
+  "e": "You'll see the difference in a few weeks.",
+  "b": "A2"
+ },
+ {
+  "q": "Après mon opération, je ___ (devoir) rester au lit une semaine.",
+  "v": "devoir",
+  "t": "fut",
+  "p": "je",
+  "e": "After my operation I'll have to stay in bed for a week.",
+  "b": "A2"
+ },
+ {
+  "q": "Les étudiants ___ (devoir) rendre leur mémoire en juin prochain.",
+  "v": "devoir",
+  "t": "fut",
+  "p": "ils",
+  "e": "The students will have to hand in their dissertation next June.",
+  "b": "A2"
+ },
+ {
+  "q": "L'année prochaine, il ___ (falloir) changer le toit de la maison.",
+  "v": "falloir",
+  "t": "fut",
+  "p": "il",
+  "e": "Next year the roof of the house will need replacing.",
+  "b": "A2"
+ },
+ {
+  "q": "Selon la météo, il ___ (pleuvoir) tout le week-end prochain.",
+  "v": "pleuvoir",
+  "t": "fut",
+  "p": "il",
+  "e": "According to the forecast it will rain all next weekend.",
+  "b": "B1"
+ },
+ {
+  "q": "J'___ (envoyer) la facture dès mon retour de vacances.",
+  "v": "envoyer",
+  "t": "fut",
+  "p": "je",
+  "e": "I'll send the invoice as soon as I'm back from holiday.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous vous ___ (envoyer) les billets par mail demain matin.",
+  "v": "envoyer",
+  "t": "fut",
+  "p": "nous",
+  "e": "We'll email you the tickets tomorrow morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (courir) le marathon de Paris l'année prochaine.",
+  "v": "courir",
+  "t": "fut",
+  "p": "je",
+  "e": "I'll run the Paris marathon next year.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (recevoir) ton colis dans trois jours.",
+  "v": "recevoir",
+  "t": "fut",
+  "p": "tu",
+  "e": "You'll get your parcel in three days.",
+  "b": "A2"
+ },
+ {
+  "q": "Ne t'inquiète pas, il ___ (tenir) sa promesse.",
+  "v": "tenir",
+  "t": "fut",
+  "p": "il",
+  "e": "Don't worry, he'll keep his promise.",
+  "b": "A2"
+ },
+ {
+  "q": "J'___ (acheter) une maison quand j'aurai un travail stable.",
+  "v": "acheter",
+  "t": "fut",
+  "p": "je",
+  "e": "I'll buy a house when I have a steady job.",
+  "b": "A2"
+ },
+ {
+  "q": "J'___ (appeler) le médecin demain matin.",
+  "v": "appeler",
+  "t": "fut",
+  "p": "je",
+  "e": "I'll call the doctor tomorrow morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Le directeur vous ___ (appeler) la semaine prochaine.",
+  "v": "appeler",
+  "t": "fut",
+  "p": "il",
+  "e": "The manager will call you next week.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (jeter) ces vieux meubles quand nous déménagerons.",
+  "v": "jeter",
+  "t": "fut",
+  "p": "nous",
+  "e": "We'll throw out this old furniture when we move.",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (nettoyer) la voiture ce week-end, promis.",
+  "v": "nettoyer",
+  "t": "fut",
+  "p": "je",
+  "e": "I'll clean the car this weekend, I promise.",
+  "b": "B1"
+ },
+ {
+  "q": "Vous ___ (payer) le reste à la livraison, la semaine prochaine.",
+  "v": "payer",
+  "t": "fut",
+  "p": "vous",
+  "e": "You'll pay the rest on delivery next week.",
+  "b": "A2"
+ },
+ {
+  "q": "Sans eau, cette plante ___ (mourir) dans quelques jours.",
+  "v": "mourir",
+  "t": "fut",
+  "p": "il",
+  "e": "Without water this plant will die in a few days.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (aimer) ce film, j'en suis sûr.",
+  "v": "aimer",
+  "t": "fut",
+  "p": "tu",
+  "e": "You'll love this film, I'm sure.",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (parler) à ton professeur demain matin.",
+  "v": "parler",
+  "t": "fut",
+  "p": "je",
+  "e": "I'll talk to your teacher tomorrow morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Dans six mois, tu ___ (parler) français couramment.",
+  "v": "parler",
+  "t": "fut",
+  "p": "tu",
+  "e": "In six months you'll speak French fluently.",
+  "b": "A2"
+ },
+ {
+  "q": "L'an prochain, Nathan ___ (travailler) dans une banque à Genève.",
+  "v": "travailler",
+  "t": "fut",
+  "p": "il",
+  "e": "Next year Nathan will work in a bank in Geneva.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand vous arriverez, nous ___ (manger) tout de suite.",
+  "v": "manger",
+  "t": "fut",
+  "p": "nous",
+  "e": "When you arrive we'll eat straight away.",
+  "b": "A2"
+ },
+ {
+  "q": "En arrivant demain, vous ___ (trouver) la clé sous le paillasson.",
+  "v": "trouver",
+  "t": "fut",
+  "p": "vous",
+  "e": "When you arrive tomorrow, you'll find the key under the doormat.",
+  "b": "A2"
+ },
+ {
+  "q": "Nos invités ___ (arriver) vers vingt heures demain soir.",
+  "v": "arriver",
+  "t": "fut",
+  "p": "ils",
+  "e": "Our guests will arrive around eight tomorrow evening.",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (finir) ce livre pendant les prochaines vacances.",
+  "v": "finir",
+  "t": "fut",
+  "p": "je",
+  "e": "I'll finish this book during the next holidays.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (choisir) ton cadeau quand on sera au magasin.",
+  "v": "choisir",
+  "t": "fut",
+  "p": "tu",
+  "e": "You'll choose your present when we're at the shop.",
+  "b": "A2"
+ },
+ {
+  "q": "Avec du travail, Léa ___ (réussir) son examen en juin.",
+  "v": "réussir",
+  "t": "fut",
+  "p": "il",
+  "e": "With some work, Léa will pass her exam in June.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (partir) en vacances le premier août.",
+  "v": "partir",
+  "t": "fut",
+  "p": "nous",
+  "e": "We'll go on holiday on the first of August.",
+  "b": "A2"
+ },
+ {
+  "q": "Après le concert, vous ___ (sortir) par la porte de derrière.",
+  "v": "sortir",
+  "t": "fut",
+  "p": "vous",
+  "e": "After the concert you'll leave by the back door.",
+  "b": "A2"
+ },
+ {
+  "q": "Les enfants ___ (dormir) chez leurs grands-parents samedi prochain.",
+  "v": "dormir",
+  "t": "fut",
+  "p": "ils",
+  "e": "The children will sleep at their grandparents' next Saturday.",
+  "b": "A2"
+ },
+ {
+  "q": "J'___ (attendre) ta réponse jusqu'à vendredi.",
+  "v": "attendre",
+  "t": "fut",
+  "p": "je",
+  "e": "I'll wait for your answer until Friday.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand tu ___ (vendre) ta moto, préviens-moi.",
+  "v": "vendre",
+  "t": "fut",
+  "p": "tu",
+  "e": "When you sell your motorbike, let me know.",
+  "b": "A2"
+ },
+ {
+  "q": "Le service client vous ___ (répondre) sous quarante-huit heures.",
+  "v": "répondre",
+  "t": "fut",
+  "p": "il",
+  "e": "Customer service will reply to you within forty-eight hours.",
+  "b": "A2"
+ },
+ {
+  "q": "Demain, nous ___ (prendre) le train de huit heures.",
+  "v": "prendre",
+  "t": "fut",
+  "p": "nous",
+  "e": "Tomorrow we'll take the eight o'clock train.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand vous ___ (prendre) votre retraite, où irez-vous ?",
+  "v": "prendre",
+  "t": "fut",
+  "p": "vous",
+  "e": "When you retire, where will you go?",
+  "b": "A2"
+ },
+ {
+  "q": "Les ouvriers ___ (mettre) deux mois pour finir la maison.",
+  "v": "mettre",
+  "t": "fut",
+  "p": "ils",
+  "e": "The workers will take two months to finish the house.",
+  "b": "A2"
+ },
+ {
+  "q": "Je ne ___ (dire) rien à personne, promis.",
+  "v": "dire",
+  "t": "fut",
+  "p": "je",
+  "e": "I won't say anything to anyone, I promise.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (lire) ce roman quand tu seras plus grand.",
+  "v": "lire",
+  "t": "fut",
+  "p": "tu",
+  "e": "You'll read this novel when you're older.",
+  "b": "A2"
+ },
+ {
+  "q": "J'___ (écrire) un roman un jour, c'est mon rêve.",
+  "v": "écrire",
+  "t": "fut",
+  "p": "je",
+  "e": "I'll write a novel one day, it's my dream.",
+  "b": "A2"
+ },
+ {
+  "q": "Après l'opération, Marc ne ___ (boire) plus d'alcool.",
+  "v": "boire",
+  "t": "fut",
+  "p": "il",
+  "e": "After the operation Marc won't drink alcohol any more.",
+  "b": "A2"
+ },
+ {
+  "q": "Un jour, nous ___ (vivre) à la campagne.",
+  "v": "vivre",
+  "t": "fut",
+  "p": "nous",
+  "e": "One day we'll live in the country.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (comprendre) mieux quand vous aurez lu le livre.",
+  "v": "comprendre",
+  "t": "fut",
+  "p": "vous",
+  "e": "You'll understand better once you've read the book.",
+  "b": "A2"
+ },
+ {
+  "q": "L'année prochaine, les élèves ___ (apprendre) l'espagnol.",
+  "v": "apprendre",
+  "t": "fut",
+  "p": "ils",
+  "e": "Next year the pupils will learn Spanish.",
+  "b": "A2"
+ },
+ {
+  "q": "Bientôt, je ___ (connaître) tous les voisins de la rue.",
+  "v": "connaître",
+  "t": "fut",
+  "p": "je",
+  "e": "Soon I'll know all the neighbours in the street.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (ouvrir) tes cadeaux demain matin, pas avant !",
+  "v": "ouvrir",
+  "t": "fut",
+  "p": "tu",
+  "e": "You'll open your presents tomorrow morning, not before!",
+  "b": "A2"
+ },
+ {
+  "q": "L'an prochain, pour ses quarante ans, Antoine lui ___ (offrir) un voyage.",
+  "v": "offrir",
+  "t": "fut",
+  "p": "il",
+  "e": "Next year, for her fortieth birthday, Antoine will give her a trip.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (inviter) toute la famille pour Noël prochain.",
+  "v": "inviter",
+  "t": "fut",
+  "p": "nous",
+  "e": "We'll invite the whole family next Christmas.",
+  "b": "B1"
+ },
+ {
+  "q": "L'année prochaine, j'___ (organiser) une fête pour mes trente ans.",
+  "v": "organiser",
+  "t": "fut",
+  "p": "je",
+  "e": "Next year I'll throw a party for my thirtieth.",
+  "b": "B1"
+ },
+ {
+  "q": "Demain, vous ___ (visiter) le château de Versailles.",
+  "v": "visiter",
+  "t": "fut",
+  "p": "vous",
+  "e": "Tomorrow you'll visit the Palace of Versailles.",
+  "b": "B1"
+ },
+ {
+  "q": "Après le bac, ils ___ (voyager) en Amérique du Sud.",
+  "v": "voyager",
+  "t": "fut",
+  "p": "ils",
+  "e": "After their exams they'll travel round South America.",
+  "b": "B1"
+ },
+ {
+  "q": "Si tu es malade, je ___ (rester) avec toi.",
+  "v": "rester",
+  "t": "fut",
+  "p": "je",
+  "e": "If you're ill, I'll stay with you.",
+  "b": "A2"
+ },
+ {
+  "q": "Ne t'inquiète pas, je n'___ (oublier) pas ton anniversaire.",
+  "v": "oublier",
+  "t": "fut",
+  "p": "je",
+  "e": "Don't worry, I won't forget your birthday.",
+  "b": "A2"
+ },
+ {
+  "q": "Après les élections, beaucoup de choses ___ (changer).",
+  "v": "changer",
+  "t": "fut",
+  "p": "ils",
+  "e": "After the elections many things will change.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (commencer) les travaux en septembre prochain.",
+  "v": "commencer",
+  "t": "fut",
+  "p": "nous",
+  "e": "We'll start the building work next September.",
+  "b": "A2"
+ },
+ {
+  "q": "Si vous jouez comme ça, vous ___ (gagner) le match.",
+  "v": "gagner",
+  "t": "fut",
+  "p": "vous",
+  "e": "If you play like that, you'll win the match.",
+  "b": "A2"
+ },
+ {
+  "q": "Les enfants ___ (rentrer) de colonie dimanche prochain.",
+  "v": "rentrer",
+  "t": "fut",
+  "p": "ils",
+  "e": "The children will be back from summer camp next Sunday.",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (chercher) un appartement quand j'aurai trouvé un travail.",
+  "v": "chercher",
+  "t": "fut",
+  "p": "je",
+  "e": "I'll look for a flat when I've found a job.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (rencontrer) mes parents à Noël.",
+  "v": "rencontrer",
+  "t": "fut",
+  "p": "tu",
+  "e": "You'll meet my parents at Christmas.",
+  "b": "A2"
+ },
+ {
+  "q": "Le billet ___ (coûter) plus cher l'année prochaine.",
+  "v": "coûter",
+  "t": "fut",
+  "p": "il",
+  "e": "The ticket will cost more next year.",
+  "b": "B1"
+ },
+ {
+  "q": "Nous t'___ (aider) à déménager le week-end prochain.",
+  "v": "aider",
+  "t": "fut",
+  "p": "nous",
+  "e": "We'll help you move next weekend.",
+  "b": "A2"
+ },
+ {
+  "q": "Après la pause, vous ___ (continuer) l'exercice seuls.",
+  "v": "continuer",
+  "t": "fut",
+  "p": "vous",
+  "e": "After the break you'll carry on with the exercise on your own.",
+  "b": "A2"
+ },
+ {
+  "q": "Demain, les guides vous ___ (montrer) la vieille ville.",
+  "v": "montrer",
+  "t": "fut",
+  "p": "ils",
+  "e": "Tomorrow the guides will show you the old town.",
+  "b": "A2"
+ },
+ {
+  "q": "Je te ___ (rendre) ton livre la semaine prochaine.",
+  "v": "rendre",
+  "t": "fut",
+  "p": "je",
+  "e": "I'll give you your book back next week.",
+  "b": "A2"
+ },
+ {
+  "q": "Si tu ne te dépêches pas, tu ___ (perdre) ton train.",
+  "v": "perdre",
+  "t": "fut",
+  "p": "tu",
+  "e": "If you don't hurry up, you'll miss your train.",
+  "b": "A2"
+ },
+ {
+  "q": "Ce soir, vous ___ (entendre) un concert exceptionnel.",
+  "v": "entendre",
+  "t": "fut",
+  "p": "vous",
+  "e": "Tonight you'll hear an exceptional concert.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand le soleil se couchera, nous ___ (descendre) au village.",
+  "v": "descendre",
+  "t": "fut",
+  "p": "nous",
+  "e": "When the sun sets we'll go down to the village.",
+  "b": "A2"
+ },
+ {
+  "q": "Plus tard, je ___ (devenir) pilote d'avion.",
+  "v": "devenir",
+  "t": "fut",
+  "p": "je",
+  "e": "Later on I'll become an airline pilot.",
+  "b": "A2"
+ },
+ {
+  "q": "Je lui dirai dès qu'il ___ (revenir).",
+  "v": "revenir",
+  "t": "fut",
+  "p": "il",
+  "e": "I'll tell him as soon as he's back.",
+  "b": "A2"
+ },
+ {
+  "q": "Je t'enverrai un message dès que j'___ (arriver).",
+  "v": "arriver",
+  "t": "fut",
+  "p": "je",
+  "e": "I'll text you as soon as I arrive.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand tu ___ (avoir) le temps, tu m'aideras ?",
+  "v": "avoir",
+  "t": "fut",
+  "p": "tu",
+  "e": "When you have time, will you help me?",
+  "b": "A2"
+ },
+ {
+  "q": "Quand nous ___ (être) à la retraite, nous voyagerons.",
+  "v": "être",
+  "t": "fut",
+  "p": "nous",
+  "e": "When we retire we'll travel.",
+  "b": "A2"
+ },
+ {
+  "q": "Appelle-moi dès qu'ils ___ (savoir) quelque chose.",
+  "v": "savoir",
+  "t": "fut",
+  "p": "ils",
+  "e": "Call me as soon as they know something.",
+  "b": "A2"
+ },
+ {
+  "q": "Viens nous voir quand tu ___ (pouvoir).",
+  "v": "pouvoir",
+  "t": "fut",
+  "p": "tu",
+  "e": "Come and see us when you can.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous sortirons quand il ___ (faire) moins chaud.",
+  "v": "faire",
+  "t": "fut",
+  "p": "il",
+  "e": "We'll go out when it's less hot.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu partiras quand tu ___ (vouloir), rien ne presse.",
+  "v": "vouloir",
+  "t": "fut",
+  "p": "tu",
+  "e": "You'll leave when you want, there's no rush.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous paierons dès que nous ___ (recevoir) la facture.",
+  "v": "recevoir",
+  "t": "fut",
+  "p": "nous",
+  "e": "We'll pay as soon as we get the bill.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand les invités ___ (venir), on ouvrira le champagne.",
+  "v": "venir",
+  "t": "fut",
+  "p": "ils",
+  "e": "When the guests come, we'll open the champagne.",
+  "b": "A2"
+ },
+ {
+  "q": "Je te raconterai tout quand je te ___ (voir).",
+  "v": "voir",
+  "t": "fut",
+  "p": "je",
+  "e": "I'll tell you everything when I see you.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand vous ___ (être) prêts, nous partirons.",
+  "v": "être",
+  "t": "fut",
+  "p": "vous",
+  "e": "When you're ready, we'll leave.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand le dîner ___ (être) prêt, je t'appellerai.",
+  "v": "être",
+  "t": "fut",
+  "p": "il",
+  "e": "When dinner is ready, I'll call you.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand tu ___ (aller) mieux, on ira au cinéma.",
+  "v": "aller",
+  "t": "fut",
+  "p": "tu",
+  "e": "When you're feeling better, we'll go to the cinema.",
+  "b": "A2"
+ },
+ {
+  "q": "Je t'aiderai dès que je ___ (pouvoir).",
+  "v": "pouvoir",
+  "t": "fut",
+  "p": "je",
+  "e": "I'll help you as soon as I can.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous vous appellerons dès que nous ___ (savoir) l'heure du vol.",
+  "v": "savoir",
+  "t": "fut",
+  "p": "nous",
+  "e": "We'll call you as soon as we know the flight time.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand ils ___ (grandir), ils comprendront.",
+  "v": "grandir",
+  "t": "fut",
+  "p": "ils",
+  "e": "When they grow up, they'll understand.",
+  "b": "B1"
+ },
+ {
+  "q": "Tant que tu ___ (vivre) ici, tu respecteras les règles.",
+  "v": "vivre",
+  "t": "fut",
+  "p": "tu",
+  "e": "As long as you live here, you'll follow the rules.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand je ___ (être) grand, j'aurai un chien.",
+  "v": "être",
+  "t": "fut",
+  "p": "je",
+  "e": "When I grow up I'll have a dog.",
+  "b": "A2"
+ },
+ {
+  "q": "Si tu as peur, je ___ (venir) avec toi.",
+  "v": "venir",
+  "t": "fut",
+  "p": "je",
+  "e": "If you're scared, I'll come with you.",
+  "b": "A2"
+ },
+ {
+  "q": "S'il fait beau dimanche, nous ___ (aller) à la mer.",
+  "v": "aller",
+  "t": "fut",
+  "p": "nous",
+  "e": "If it's nice on Sunday, we'll go to the seaside.",
+  "b": "A2"
+ },
+ {
+  "q": "Si tu manges tout ça, tu ___ (avoir) mal au ventre.",
+  "v": "avoir",
+  "t": "fut",
+  "p": "tu",
+  "e": "If you eat all that, you'll have a stomach ache.",
+  "b": "A2"
+ },
+ {
+  "q": "Si le train a du retard, Sophie ___ (être) furieuse.",
+  "v": "être",
+  "t": "fut",
+  "p": "il",
+  "e": "If the train is late, Sophie will be furious.",
+  "b": "A2"
+ },
+ {
+  "q": "Si vous tournez à droite, vous ___ (voir) la poste.",
+  "v": "voir",
+  "t": "fut",
+  "p": "vous",
+  "e": "If you turn right, you'll see the post office.",
+  "b": "A2"
+ },
+ {
+  "q": "S'ils gagnent ce match, ils ___ (faire) la fête toute la nuit.",
+  "v": "faire",
+  "t": "fut",
+  "p": "ils",
+  "e": "If they win this match, they'll party all night.",
+  "b": "A2"
+ },
+ {
+  "q": "Si le bus ne vient pas, je ___ (prendre) un taxi.",
+  "v": "prendre",
+  "t": "fut",
+  "p": "je",
+  "e": "If the bus doesn't come, I'll take a taxi.",
+  "b": "A2"
+ },
+ {
+  "q": "Si tu rates le dernier bus, tu ___ (devoir) rentrer à pied.",
+  "v": "devoir",
+  "t": "fut",
+  "p": "tu",
+  "e": "If you miss the last bus, you'll have to walk home.",
+  "b": "A2"
+ },
+ {
+  "q": "Si tout va bien, nous ___ (partir) vendredi matin.",
+  "v": "partir",
+  "t": "fut",
+  "p": "nous",
+  "e": "If all goes well, we'll leave on Friday morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Si les prix augmentent encore, il ___ (falloir) faire des économies.",
+  "v": "falloir",
+  "t": "fut",
+  "p": "il",
+  "e": "If prices go up again, we'll have to save money.",
+  "b": "A2"
+ },
+ {
+  "q": "Si vous commandez avant midi, vous ___ (recevoir) le colis demain.",
+  "v": "recevoir",
+  "t": "fut",
+  "p": "vous",
+  "e": "If you order before noon, you'll get the parcel tomorrow.",
+  "b": "A2"
+ },
+ {
+  "q": "Si les enfants sont sages, ils ___ (pouvoir) regarder un film.",
+  "v": "pouvoir",
+  "t": "fut",
+  "p": "ils",
+  "e": "If the children are good, they'll be allowed to watch a film.",
+  "b": "A2"
+ },
+ {
+  "q": "Si j'ai le temps, je ___ (faire) une tarte aux pommes.",
+  "v": "faire",
+  "t": "fut",
+  "p": "je",
+  "e": "If I have time, I'll make an apple tart.",
+  "b": "A2"
+ },
+ {
+  "q": "Un jour, tu ___ (savoir) toute la vérité.",
+  "v": "savoir",
+  "t": "fut",
+  "p": "tu",
+  "e": "One day you'll know the whole truth.",
+  "b": "A2"
+ },
+ {
+  "q": "Un jour, ces enfants ___ (devenir) de grands musiciens.",
+  "v": "devenir",
+  "t": "fut",
+  "p": "ils",
+  "e": "One day these children will become great musicians.",
+  "b": "A2"
+ },
+ {
+  "q": "La mairie vous ___ (envoyer) une lettre de confirmation.",
+  "v": "envoyer",
+  "t": "fut",
+  "p": "il",
+  "e": "The town hall will send you a letter of confirmation.",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (tenir) compte de tes remarques la prochaine fois.",
+  "v": "tenir",
+  "t": "fut",
+  "p": "je",
+  "e": "I'll take your comments into account next time.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (avoir) des nouvelles de Paul dès son arrivée.",
+  "v": "avoir",
+  "t": "fut",
+  "p": "nous",
+  "e": "We'll have news of Paul as soon as he arrives.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand nous ___ (jouer) en finale, toute la ville viendra nous voir.",
+  "v": "jouer",
+  "t": "fut",
+  "p": "nous",
+  "e": "When we play in the final, the whole town will come and watch us.",
+  "b": "A2"
+ },
+ {
+  "q": "Le nouveau musée ___ (ouvrir) ses portes en mai prochain.",
+  "v": "ouvrir",
+  "t": "fut",
+  "p": "il",
+  "e": "The new museum will open its doors next May.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (faire) quoi quand vous serez à la retraite ?",
+  "v": "faire",
+  "t": "fut",
+  "p": "vous",
+  "e": "What will you do when you retire?",
+  "b": "A2"
+ }
+]

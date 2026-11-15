@@ -1,0 +1,1039 @@
+[
+ {
+  "q": "Je t'attends ___ une heure !",
+  "a": "depuis",
+  "o": [
+   "depuis",
+   "il y a",
+   "dans"
+  ],
+  "e": "I've been waiting for you for an hour!",
+  "w": "Something still going on now, with the present: depuis (for, since).",
+  "wf": "Action qui continue : depuis.",
+  "t": "temps",
+  "b": "A1"
+ },
+ {
+  "q": "J'habite à Paris ___ 2019.",
+  "a": "depuis",
+  "o": [
+   "depuis",
+   "pendant",
+   "il y a"
+  ],
+  "e": "I've lived in Paris since 2019.",
+  "w": "A starting point for something still true now: depuis (since).",
+  "wf": "Point de départ : depuis.",
+  "t": "temps",
+  "b": "A1"
+ },
+ {
+  "q": "Je suis arrivé ___ une semaine.",
+  "a": "il y a",
+  "o": [
+   "il y a",
+   "dans",
+   "pendant"
+  ],
+  "e": "I arrived a week ago.",
+  "w": "How long ago something happened: il y a (ago).",
+  "wf": "Il y a = ago.",
+  "t": "temps",
+  "b": "A1"
+ },
+ {
+  "q": "Le film commence ___ cinq minutes.",
+  "a": "dans",
+  "o": [
+   "dans",
+   "il y a",
+   "depuis"
+  ],
+  "e": "The film starts in five minutes.",
+  "w": "How long from now until something happens: dans (in).",
+  "wf": "Dans = à partir de maintenant.",
+  "t": "temps",
+  "b": "A1"
+ },
+ {
+  "q": "J'ai dormi ___ huit heures.",
+  "a": "pendant",
+  "o": [
+   "pendant",
+   "depuis",
+   "dans"
+  ],
+  "e": "I slept for eight hours.",
+  "w": "A finished length of time: pendant (for).",
+  "wf": "Durée finie : pendant.",
+  "t": "temps",
+  "b": "A1"
+ },
+ {
+  "q": "Je suis né ___ 1995.",
+  "a": "en",
+  "o": [
+   "en",
+   "dans",
+   "depuis"
+  ],
+  "e": "I was born in 1995.",
+  "w": "Years and months take en: en 2020, en mai.",
+  "wf": "Année, mois : en.",
+  "t": "temps",
+  "b": "A1"
+ },
+ {
+  "q": "On part en vacances ___ juillet.",
+  "a": "en",
+  "o": [
+   "en",
+   "dans",
+   "depuis"
+  ],
+  "e": "We're going on holiday in July.",
+  "w": "Years and months take en: en 2020, en mai.",
+  "wf": "Année, mois : en.",
+  "t": "temps",
+  "b": "A1"
+ },
+ {
+  "q": "Mon anniversaire est ___ mai.",
+  "a": "en",
+  "o": [
+   "en",
+   "dans",
+   "à"
+  ],
+  "e": "My birthday is in May.",
+  "w": "Years and months take en: en 2020, en mai.",
+  "wf": "Année, mois : en.",
+  "t": "temps",
+  "b": "A1"
+ },
+ {
+  "q": "Il fait chaud ___ août.",
+  "a": "en",
+  "o": [
+   "en",
+   "au",
+   "dans"
+  ],
+  "e": "It's hot in August.",
+  "w": "Years and months take en: en 2020, en mai.",
+  "wf": "Année, mois : en.",
+  "t": "temps",
+  "b": "A1"
+ },
+ {
+  "q": "Il fait froid ___ hiver.",
+  "a": "en",
+  "o": [
+   "en",
+   "au",
+   "dans"
+  ],
+  "e": "It's cold in winter.",
+  "w": "En hiver, en été, en automne, but au printemps.",
+  "wf": "en été, en hiver, au printemps.",
+  "t": "temps",
+  "b": "A1"
+ },
+ {
+  "q": "Les fleurs arrivent ___ printemps.",
+  "a": "au",
+  "o": [
+   "au",
+   "en",
+   "dans"
+  ],
+  "e": "The flowers come in spring.",
+  "w": "En hiver, en été, en automne, but au printemps.",
+  "wf": "en été, en hiver, au printemps.",
+  "t": "temps",
+  "b": "A1"
+ },
+ {
+  "q": "Le cours commence ___ neuf heures.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "depuis"
+  ],
+  "e": "The class starts at nine o'clock.",
+  "w": "Clock times take à: à huit heures.",
+  "wf": "L'heure : à.",
+  "t": "temps",
+  "b": "A1"
+ },
+ {
+  "q": "Je me lève ___ six heures.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "depuis"
+  ],
+  "e": "I get up at six.",
+  "w": "Clock times take à: à huit heures.",
+  "wf": "L'heure : à.",
+  "t": "temps",
+  "b": "A1"
+ },
+ {
+  "q": "On mange ___ midi.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "dans"
+  ],
+  "e": "We eat at noon.",
+  "w": "Clock times take à: à huit heures.",
+  "wf": "L'heure : à.",
+  "t": "temps",
+  "b": "A1"
+ },
+ {
+  "q": "Je reviens ___ deux minutes !",
+  "a": "dans",
+  "o": [
+   "dans",
+   "il y a",
+   "depuis"
+  ],
+  "e": "I'll be back in two minutes!",
+  "w": "How long from now until something happens: dans (in).",
+  "wf": "Dans = à partir de maintenant.",
+  "t": "temps",
+  "b": "A1"
+ },
+ {
+  "q": "Elle a téléphoné ___ dix minutes.",
+  "a": "il y a",
+  "o": [
+   "il y a",
+   "dans",
+   "depuis"
+  ],
+  "e": "She phoned ten minutes ago.",
+  "w": "How long ago something happened: il y a (ago).",
+  "wf": "Il y a = ago.",
+  "t": "temps",
+  "b": "A1"
+ },
+ {
+  "q": "Nous sommes ___ 2026.",
+  "a": "en",
+  "o": [
+   "en",
+   "dans",
+   "depuis"
+  ],
+  "e": "It's 2026.",
+  "w": "Years and months take en: en 2020, en mai.",
+  "wf": "Année, mois : en.",
+  "t": "temps",
+  "b": "A1"
+ },
+ {
+  "q": "Il pleut ___ ce matin.",
+  "a": "depuis",
+  "o": [
+   "depuis",
+   "il y a",
+   "pendant"
+  ],
+  "e": "It's been raining since this morning.",
+  "w": "A starting point for something still true now: depuis (since).",
+  "wf": "Point de départ : depuis.",
+  "t": "temps",
+  "b": "A1"
+ },
+ {
+  "q": "Nous avons marché ___ trois heures.",
+  "a": "pendant",
+  "o": [
+   "pendant",
+   "depuis",
+   "dans"
+  ],
+  "e": "We walked for three hours.",
+  "w": "A finished length of time: pendant (for).",
+  "wf": "Durée finie : pendant.",
+  "t": "temps",
+  "b": "A2"
+ },
+ {
+  "q": "Il est malade ___ lundi.",
+  "a": "depuis",
+  "o": [
+   "depuis",
+   "il y a",
+   "pendant"
+  ],
+  "e": "He's been ill since Monday.",
+  "w": "A starting point for something still true now: depuis (since).",
+  "wf": "Point de départ : depuis.",
+  "t": "temps",
+  "b": "A2"
+ },
+ {
+  "q": "J'ai lu ce livre ___ deux jours.",
+  "a": "en",
+  "o": [
+   "en",
+   "dans",
+   "depuis"
+  ],
+  "e": "I read this book in two days.",
+  "w": "How long something takes to do: en (in, within).",
+  "wf": "Temps pour faire : en.",
+  "t": "temps",
+  "b": "A2"
+ },
+ {
+  "q": "Ils sont mariés ___ dix ans.",
+  "a": "depuis",
+  "o": [
+   "depuis",
+   "il y a",
+   "pendant"
+  ],
+  "e": "They've been married for ten years.",
+  "w": "Something still going on now, with the present: depuis (for, since).",
+  "wf": "Action qui continue : depuis.",
+  "t": "temps",
+  "b": "A2"
+ },
+ {
+  "q": "Ils se sont mariés ___ dix ans.",
+  "a": "il y a",
+  "o": [
+   "il y a",
+   "depuis",
+   "dans",
+   "pendant"
+  ],
+  "e": "They got married ten years ago.",
+  "w": "How long ago something happened: il y a (ago).",
+  "wf": "Il y a = ago.",
+  "t": "temps",
+  "b": "A2"
+ },
+ {
+  "q": "J'ai vécu à Rome ___ un an.",
+  "a": "pendant",
+  "o": [
+   "pendant",
+   "depuis",
+   "dans"
+  ],
+  "e": "I lived in Rome for a year.",
+  "w": "A finished length of time: pendant (for).",
+  "wf": "Durée finie : pendant.",
+  "t": "temps",
+  "b": "A2"
+ },
+ {
+  "q": "Il a plu ___ toute la journée.",
+  "a": "pendant",
+  "o": [
+   "pendant",
+   "dans",
+   "il y a"
+  ],
+  "e": "It rained all day long.",
+  "w": "A finished length of time: pendant (for).",
+  "wf": "Durée finie : pendant.",
+  "t": "temps",
+  "b": "A2"
+ },
+ {
+  "q": "Le magasin ouvre ___ une demi-heure.",
+  "a": "dans",
+  "o": [
+   "dans",
+   "il y a",
+   "depuis"
+  ],
+  "e": "The shop opens in half an hour.",
+  "w": "How long from now until something happens: dans (in).",
+  "wf": "Dans = à partir de maintenant.",
+  "t": "temps",
+  "b": "A2"
+ },
+ {
+  "q": "J'ai fini mes devoirs ___ vingt minutes.",
+  "a": "en",
+  "o": [
+   "en",
+   "dans",
+   "depuis"
+  ],
+  "e": "I did my homework in twenty minutes.",
+  "w": "How long something takes to do: en (in, within).",
+  "wf": "Temps pour faire : en.",
+  "t": "temps",
+  "b": "A2"
+ },
+ {
+  "q": "On s'est rencontrés ___ 2015.",
+  "a": "en",
+  "o": [
+   "en",
+   "depuis",
+   "dans"
+  ],
+  "e": "We met in 2015.",
+  "w": "Years and months take en: en 2020, en mai.",
+  "wf": "Année, mois : en.",
+  "t": "temps",
+  "b": "A2"
+ },
+ {
+  "q": "Les soldes commencent ___ janvier.",
+  "a": "en",
+  "o": [
+   "en",
+   "dans",
+   "depuis"
+  ],
+  "e": "The sales start in January.",
+  "w": "Years and months take en: en 2020, en mai.",
+  "wf": "Année, mois : en.",
+  "t": "temps",
+  "b": "A2"
+ },
+ {
+  "q": "Nous partons ___ automne.",
+  "a": "en",
+  "o": [
+   "en",
+   "au",
+   "dans"
+  ],
+  "e": "We're leaving in the autumn.",
+  "w": "En hiver, en été, en automne, but au printemps.",
+  "wf": "en été, en hiver, au printemps.",
+  "t": "temps",
+  "b": "A2"
+ },
+ {
+  "q": "Il neige ___ trois jours.",
+  "a": "depuis",
+  "o": [
+   "depuis",
+   "il y a",
+   "en"
+  ],
+  "e": "It's been snowing for three days.",
+  "w": "Something still going on now, with the present: depuis (for, since).",
+  "wf": "Action qui continue : depuis.",
+  "t": "temps",
+  "b": "A2"
+ },
+ {
+  "q": "Elle reviendra ___ une semaine.",
+  "a": "dans",
+  "o": [
+   "dans",
+   "il y a",
+   "depuis"
+  ],
+  "e": "She'll be back in a week.",
+  "w": "How long from now until something happens: dans (in).",
+  "wf": "Dans = à partir de maintenant.",
+  "t": "temps",
+  "b": "A2"
+ },
+ {
+  "q": "J'ai attendu le bus ___ vingt minutes.",
+  "a": "pendant",
+  "o": [
+   "pendant",
+   "depuis",
+   "dans"
+  ],
+  "e": "I waited for the bus for twenty minutes.",
+  "w": "A finished length of time: pendant (for).",
+  "wf": "Durée finie : pendant.",
+  "t": "temps",
+  "b": "A2"
+ },
+ {
+  "q": "Le prochain bus passe ___ dix minutes.",
+  "a": "dans",
+  "o": [
+   "dans",
+   "il y a",
+   "depuis"
+  ],
+  "e": "The next bus comes in ten minutes.",
+  "w": "How long from now until something happens: dans (in).",
+  "wf": "Dans = à partir de maintenant.",
+  "t": "temps",
+  "b": "A2"
+ },
+ {
+  "q": "L'été dernier, j'ai travaillé ___ deux mois.",
+  "a": "pendant",
+  "o": [
+   "pendant",
+   "depuis",
+   "dans"
+  ],
+  "e": "Last summer I worked for two months.",
+  "w": "A finished length of time: pendant (for).",
+  "wf": "Durée finie : pendant.",
+  "t": "temps",
+  "b": "A2"
+ },
+ {
+  "q": "J'ai mal au dos ___ une semaine.",
+  "a": "depuis",
+  "o": [
+   "depuis",
+   "il y a",
+   "pendant"
+  ],
+  "e": "My back has been hurting for a week.",
+  "w": "Something still going on now, with the present: depuis (for, since).",
+  "wf": "Action qui continue : depuis.",
+  "t": "temps",
+  "b": "A2"
+ },
+ {
+  "q": "Elle est rentrée ___ minuit.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "depuis"
+  ],
+  "e": "She came home at midnight.",
+  "w": "Clock times take à: à huit heures.",
+  "wf": "L'heure : à.",
+  "t": "temps",
+  "b": "A2"
+ },
+ {
+  "q": "On a mangé ___ deux heures.",
+  "a": "il y a",
+  "o": [
+   "il y a",
+   "dans",
+   "depuis"
+  ],
+  "e": "We ate two hours ago.",
+  "w": "How long ago something happened: il y a (ago).",
+  "wf": "Il y a = ago.",
+  "t": "temps",
+  "b": "A2"
+ },
+ {
+  "q": "Je ne l'ai pas vu ___ des années.",
+  "a": "depuis",
+  "o": [
+   "depuis",
+   "dans",
+   "en"
+  ],
+  "e": "I haven't seen him for years.",
+  "w": "Not done for a while, still true now: ne... pas + passé composé + depuis.",
+  "wf": "Négation + depuis.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "Tu habites ici ___ combien de temps ?",
+  "a": "depuis",
+  "o": [
+   "depuis",
+   "pendant",
+   "dans"
+  ],
+  "e": "How long have you lived here?",
+  "w": "Asking how long something has been going on: depuis combien de temps.",
+  "wf": "depuis combien de temps ?",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "Tu es resté là-bas ___ combien de temps ?",
+  "a": "pendant",
+  "o": [
+   "pendant",
+   "depuis",
+   "il y a"
+  ],
+  "e": "How long did you stay there?",
+  "w": "Asking about a finished length of time: pendant combien de temps.",
+  "wf": "pendant combien de temps ?",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "Il a appris à lire ___ trois mois.",
+  "a": "en",
+  "o": [
+   "en",
+   "dans",
+   "depuis"
+  ],
+  "e": "He learned to read in three months.",
+  "w": "How long something takes to do: en (in, within).",
+  "wf": "Temps pour faire : en.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "Je serai prêt ___ cinq minutes.",
+  "a": "dans",
+  "o": [
+   "dans",
+   "il y a",
+   "depuis"
+  ],
+  "e": "I'll be ready in five minutes.",
+  "w": "How long from now until something happens: dans (in).",
+  "wf": "Dans = à partir de maintenant.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "J'ai rendez-vous ___ quinze heures trente.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "depuis"
+  ],
+  "e": "I have an appointment at half past three.",
+  "w": "Clock times take à: à huit heures.",
+  "wf": "L'heure : à.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "Elle a habité au Japon ___ son enfance.",
+  "a": "pendant",
+  "o": [
+   "pendant",
+   "il y a",
+   "dans"
+  ],
+  "e": "She lived in Japan during her childhood.",
+  "w": "During a named period: pendant + noun.",
+  "wf": "pendant + une période.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "On a beaucoup parlé ___ le repas.",
+  "a": "pendant",
+  "o": [
+   "pendant",
+   "depuis",
+   "dans"
+  ],
+  "e": "We talked a lot during the meal.",
+  "w": "During a named period: pendant + noun.",
+  "wf": "pendant le repas.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "Je l'ai rencontré ___ 2010.",
+  "a": "en",
+  "o": [
+   "en",
+   "depuis",
+   "il y a"
+  ],
+  "e": "I met him in 2010.",
+  "w": "Years and months take en: en 2020, en mai.",
+  "wf": "Année, mois : en.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "Je le connais ___ 2010.",
+  "a": "depuis",
+  "o": [
+   "depuis",
+   "en",
+   "il y a"
+  ],
+  "e": "I've known him since 2010.",
+  "w": "A starting point for something still true now: depuis (since).",
+  "wf": "Point de départ : depuis.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "On a construit la maison ___ six mois.",
+  "a": "en",
+  "o": [
+   "en",
+   "dans",
+   "depuis"
+  ],
+  "e": "We built the house in six months.",
+  "w": "How long something takes to do: en (in, within).",
+  "wf": "Temps pour faire : en.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "Ils ont déménagé ___ peu.",
+  "a": "il y a",
+  "o": [
+   "il y a",
+   "dans",
+   "pendant"
+  ],
+  "e": "They moved a short while ago.",
+  "w": "How long ago something happened: il y a (ago).",
+  "wf": "Il y a = ago.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "Tu dois rendre le livre ___ trois jours.",
+  "a": "dans",
+  "o": [
+   "dans",
+   "il y a",
+   "depuis"
+  ],
+  "e": "You have to return the book in three days.",
+  "w": "How long from now until something happens: dans (in).",
+  "wf": "Dans = à partir de maintenant.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "Je vais rester à Paris ___ une semaine.",
+  "a": "pendant",
+  "o": [
+   "pendant",
+   "depuis",
+   "il y a"
+  ],
+  "e": "I'm going to stay in Paris for a week.",
+  "w": "A planned length of time in the future also takes pendant.",
+  "wf": "Durée prévue : pendant.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "Il a été au chômage ___ un an.",
+  "a": "pendant",
+  "o": [
+   "pendant",
+   "depuis",
+   "dans"
+  ],
+  "e": "He was unemployed for a year.",
+  "w": "A finished length of time: pendant (for).",
+  "wf": "Durée finie : pendant.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "Elle est au chômage ___ un an.",
+  "a": "depuis",
+  "o": [
+   "depuis",
+   "pendant",
+   "dans"
+  ],
+  "e": "She's been unemployed for a year.",
+  "w": "Something still going on now, with the present: depuis (for, since).",
+  "wf": "Action qui continue : depuis.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "Il est mort ___ deux ans.",
+  "a": "il y a",
+  "o": [
+   "il y a",
+   "dans",
+   "pendant"
+  ],
+  "e": "He died two years ago.",
+  "w": "How long ago something happened: il y a (ago).",
+  "wf": "Il y a = ago.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "On a fait le trajet ___ trois heures.",
+  "a": "en",
+  "o": [
+   "en",
+   "dans",
+   "depuis"
+  ],
+  "e": "We did the journey in three hours.",
+  "w": "How long something takes to do: en (in, within).",
+  "wf": "Temps pour faire : en.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "Le colis arrivera ___ trois jours.",
+  "a": "dans",
+  "o": [
+   "dans",
+   "il y a",
+   "depuis"
+  ],
+  "e": "The parcel will arrive in three days.",
+  "w": "How long from now until something happens: dans (in).",
+  "wf": "Dans = à partir de maintenant.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "J'ai appris à conduire ___ deux semaines.",
+  "a": "en",
+  "o": [
+   "en",
+   "depuis",
+   "dans"
+  ],
+  "e": "I learned to drive in two weeks.",
+  "w": "How long something takes to do: en (in, within).",
+  "wf": "Temps pour faire : en.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "Je travaille ___ semaine, pas le week-end.",
+  "a": "en",
+  "o": [
+   "en",
+   "dans",
+   "au"
+  ],
+  "e": "I work on weekdays, not at the weekend.",
+  "w": "On weekdays is en semaine.",
+  "wf": "en semaine.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "Il a vécu ici ___ toute sa vie.",
+  "a": "pendant",
+  "o": [
+   "pendant",
+   "depuis",
+   "dans"
+  ],
+  "e": "He lived here all his life.",
+  "w": "A finished length of time: pendant (for).",
+  "wf": "Durée finie : pendant.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "Elle est partie ___ longtemps.",
+  "a": "il y a",
+  "o": [
+   "il y a",
+   "dans",
+   "en"
+  ],
+  "e": "She left a long time ago.",
+  "w": "How long ago something happened: il y a (ago).",
+  "wf": "Il y a = ago.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "Je fais du yoga ___ six mois.",
+  "a": "depuis",
+  "o": [
+   "depuis",
+   "il y a",
+   "en"
+  ],
+  "e": "I've been doing yoga for six months.",
+  "w": "Something still going on now, with the present: depuis (for, since).",
+  "wf": "Action qui continue : depuis.",
+  "t": "temps",
+  "b": "B1"
+ },
+ {
+  "q": "Elle dort ___ que je travaille.",
+  "a": "pendant",
+  "o": [
+   "pendant",
+   "dans",
+   "il y a"
+  ],
+  "e": "She sleeps while I work.",
+  "w": "While, before a verb: pendant que.",
+  "wf": "pendant que = while.",
+  "t": "temps",
+  "b": "B2"
+ },
+ {
+  "q": "Il fume ___ qu'il a quinze ans.",
+  "a": "depuis",
+  "o": [
+   "depuis",
+   "pendant",
+   "il y a"
+  ],
+  "e": "He's been smoking since he was fifteen.",
+  "w": "Ever since, before a verb: depuis que.",
+  "wf": "depuis que + verbe.",
+  "t": "temps",
+  "b": "B2"
+ },
+ {
+  "q": "Elle était là ___ une heure quand je suis arrivé.",
+  "a": "depuis",
+  "o": [
+   "depuis",
+   "pendant",
+   "il y a"
+  ],
+  "e": "She had been there for an hour when I arrived.",
+  "w": "Had been going on: imparfait + depuis.",
+  "wf": "Imparfait + depuis.",
+  "t": "temps",
+  "b": "B2"
+ },
+ {
+  "q": "Je n'avais pas dormi ___ deux jours.",
+  "a": "depuis",
+  "o": [
+   "depuis",
+   "dans",
+   "en"
+  ],
+  "e": "I hadn't slept for two days.",
+  "w": "Not done for a while up to a past moment: plus-que-parfait + depuis.",
+  "wf": "Plus-que-parfait + depuis.",
+  "t": "temps",
+  "b": "B2"
+ },
+ {
+  "q": "C'est arrivé ___ XIXe siècle.",
+  "a": "au",
+  "o": [
+   "au",
+   "en",
+   "dans"
+  ],
+  "e": "It happened in the nineteenth century.",
+  "w": "Centuries take au: au XIXe siècle.",
+  "wf": "Siècle : au.",
+  "t": "temps",
+  "b": "B2"
+ },
+ {
+  "q": "Elle a fait ses études ___ les années 90.",
+  "a": "dans",
+  "o": [
+   "dans",
+   "en",
+   "au"
+  ],
+  "e": "She studied in the nineties.",
+  "w": "Decades take dans les: dans les années 90.",
+  "wf": "dans les années 90.",
+  "t": "temps",
+  "b": "B2"
+ },
+ {
+  "q": "___ trois ans, je ne parlais pas un mot de français.",
+  "a": "il y a",
+  "o": [
+   "il y a",
+   "dans",
+   "en"
+  ],
+  "e": "Three years ago I didn't speak a word of French.",
+  "w": "How long ago something happened: il y a (ago).",
+  "wf": "Il y a = ago.",
+  "t": "temps",
+  "b": "B2"
+ },
+ {
+  "q": "Je te rappelle ___ quelques instants.",
+  "a": "dans",
+  "o": [
+   "dans",
+   "il y a",
+   "depuis"
+  ],
+  "e": "I'll call you back in a few moments.",
+  "w": "How long from now until something happens: dans (in).",
+  "wf": "Dans = à partir de maintenant.",
+  "t": "temps",
+  "b": "B2"
+ },
+ {
+  "q": "Il a écrit ce roman ___ moins d'un an.",
+  "a": "en",
+  "o": [
+   "en",
+   "dans",
+   "depuis"
+  ],
+  "e": "He wrote this novel in less than a year.",
+  "w": "How long something takes to do: en (in, within).",
+  "wf": "Temps pour faire : en.",
+  "t": "temps",
+  "b": "B2"
+ },
+ {
+  "q": "Ils ont discuté ___ plus de trois heures.",
+  "a": "pendant",
+  "o": [
+   "pendant",
+   "depuis",
+   "dans"
+  ],
+  "e": "They talked for over three hours.",
+  "w": "A finished length of time: pendant (for).",
+  "wf": "Durée finie : pendant.",
+  "t": "temps",
+  "b": "B2"
+ },
+ {
+  "q": "Ça fait longtemps ___ tu habites ici ?",
+  "a": "que",
+  "o": [
+   "que",
+   "depuis",
+   "pendant"
+  ],
+  "e": "Have you lived here long?",
+  "w": "Ça fait + time + que means the same as depuis.",
+  "wf": "ça fait... que = depuis.",
+  "t": "temps",
+  "b": "B2"
+ },
+ {
+  "q": "Je n'ai rien mangé ___ hier soir.",
+  "a": "depuis",
+  "o": [
+   "depuis",
+   "pendant",
+   "il y a"
+  ],
+  "e": "I haven't eaten anything since last night.",
+  "w": "A starting point for something still true now: depuis (since).",
+  "wf": "Point de départ : depuis.",
+  "t": "temps",
+  "b": "B2"
+ }
+]

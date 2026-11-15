@@ -1,0 +1,180 @@
+[
+ {
+  "id": "fr-meet", "en": "Meeting someone new", "th": "saluer", "b": "A1", "you": "a",
+  "roles": { "a": "You", "b": "Camille" },
+  "lines": [
+   { "who": "b", "fr": "Salut!", "en": "Hi!" },
+   { "who": "a", "fr": "Bonjour.", "en": "Hello." },
+   { "who": "b", "fr": "Je m'appelle Camille. Et toi, tu t'appelles comment?", "en": "My name's Camille. And you, what's your name?" },
+   { "who": "a", "fr": "Je m'appelle Tom.", "en": "My name's Tom." },
+   { "who": "b", "fr": "Tu viens d'où, Tom?", "en": "Where are you from, Tom?" },
+   { "who": "a", "fr": "Je viens d'Angleterre. Et toi?", "en": "I'm from England. And you?" },
+   { "who": "b", "fr": "Moi, je suis de Lyon. Enchantée!", "en": "I'm from Lyon. Nice to meet you!" },
+   { "who": "a", "fr": "Enchanté.", "en": "Nice to meet you too." }
+  ]
+ },
+ {
+  "id": "fr-cafe", "en": "Ordering in a café", "th": "magasin", "b": "A1", "you": "a",
+  "roles": { "a": "You", "b": "Julien, the waiter" },
+  "lines": [
+   { "who": "b", "fr": "Bonjour, qu'est-ce que je vous sers?", "en": "Hello, what can I get you?" },
+   { "who": "a", "fr": "Un café, s'il vous plaît.", "en": "A coffee, please." },
+   { "who": "b", "fr": "Un expresso ou un café crème?", "en": "An espresso or a white coffee?" },
+   { "who": "a", "fr": "Un café crème, s'il vous plaît.", "en": "A white coffee, please." },
+   { "who": "b", "fr": "Et avec ça?", "en": "Anything else?" },
+   { "who": "a", "fr": "Un croissant aussi.", "en": "A croissant too." },
+   { "who": "b", "fr": "Très bien. Ça fait cinq euros.", "en": "Very good. That's five euros." },
+   { "who": "a", "fr": "Voilà. Merci.", "en": "Here you are. Thank you." }
+  ]
+ },
+ {
+  "id": "fr-bakery", "en": "At the boulangerie", "th": "magasin", "b": "A1", "you": "a",
+  "roles": { "a": "You", "b": "Sophie, the baker" },
+  "lines": [
+   { "who": "b", "fr": "Bonjour! Vous désirez?", "en": "Good morning. What would you like?" },
+   { "who": "a", "fr": "Bonjour. Une baguette, s'il vous plaît.", "en": "Good morning. A baguette, please." },
+   { "who": "b", "fr": "Une baguette tradition?", "en": "A traditional baguette?" },
+   { "who": "a", "fr": "Oui, bien cuite, s'il vous plaît.", "en": "Yes, well baked, please." },
+   { "who": "b", "fr": "Voilà. Et avec ceci?", "en": "Here you are. Anything else?" },
+   { "who": "a", "fr": "Deux pains au chocolat, aussi.", "en": "Two pains au chocolat as well." },
+   { "who": "b", "fr": "Alors, ça fait quatre euros dix.", "en": "So that comes to four euros ten." },
+   { "who": "a", "fr": "Tenez. Merci, au revoir!", "en": "Here you go. Thanks, goodbye!" }
+  ]
+ },
+ {
+  "id": "fr-way", "en": "Asking the way", "th": "aide", "b": "A1", "you": "a",
+  "roles": { "a": "You", "b": "Nicolas, a passer-by" },
+  "lines": [
+   { "who": "a", "fr": "Excusez-moi, monsieur. La gare, c'est où?", "en": "Excuse me. Where's the station?" },
+   { "who": "b", "fr": "La gare? Ce n'est pas loin.", "en": "The station? It's not far." },
+   { "who": "b", "fr": "Allez tout droit, puis tournez à gauche.", "en": "Go straight on, then turn left." },
+   { "who": "a", "fr": "Tout droit, puis à gauche. C'est à pied?", "en": "Straight on, then left. Can I walk?" },
+   { "who": "b", "fr": "Oui, c'est à dix minutes à pied.", "en": "Yes, it's ten minutes on foot." },
+   { "who": "a", "fr": "Super, merci!", "en": "Great, thanks!" },
+   { "who": "b", "fr": "De rien. Bonne journée!", "en": "You're welcome. Have a good day!" },
+   { "who": "a", "fr": "Vous aussi. Au revoir!", "en": "You too. Goodbye!" }
+  ]
+ },
+ {
+  "id": "fr-weather", "en": "Talking about the weather", "th": "meteo", "b": "A1", "you": "a",
+  "roles": { "a": "You", "b": "Madame Durand, a neighbour" },
+  "lines": [
+   { "who": "b", "fr": "Bonjour! Quel temps aujourd'hui!", "en": "Hello! What weather today!" },
+   { "who": "a", "fr": "Oui, il pleut beaucoup.", "en": "Yes, it's raining a lot." },
+   { "who": "b", "fr": "Et il fait froid, en plus.", "en": "And it's cold, on top of that." },
+   { "who": "a", "fr": "Il va faire beau demain?", "en": "Is it going to be nice tomorrow?" },
+   { "who": "b", "fr": "Oui, on annonce du soleil pour demain.", "en": "Yes, they say sunshine tomorrow." },
+   { "who": "a", "fr": "Ah, tant mieux! J'aime le soleil.", "en": "Oh, good! I love the sun." },
+   { "who": "b", "fr": "Moi aussi. Bonne soirée!", "en": "Me too. Have a good evening!" },
+   { "who": "a", "fr": "Bonne soirée, madame.", "en": "Good evening to you too." }
+  ]
+ },
+ {
+  "id": "fr-class", "en": "In a French class", "th": "conversation", "b": "A1", "you": "a",
+  "roles": { "a": "You", "b": "Isabelle, the teacher" },
+  "lines": [
+   { "who": "b", "fr": "Bonjour à tous. Ouvrez vos livres, s'il vous plaît.", "en": "Hello, everyone. Open your books, please." },
+   { "who": "a", "fr": "Pardon, madame, à quelle page?", "en": "Sorry, at which page?" },
+   { "who": "b", "fr": "Page douze. Vous comprenez l'exercice?", "en": "Page twelve. Do you understand the exercise?" },
+   { "who": "a", "fr": "Non, pas très bien. Vous pouvez répéter?", "en": "No, not very well. Could you say that again?" },
+   { "who": "b", "fr": "Bien sûr. Lisez le texte et répondez aux questions.", "en": "Of course. Read the text and answer the questions." },
+   { "who": "a", "fr": "D'accord. Comment on dit \"homework\" en français?", "en": "OK. How do you say \"homework\" in French?" },
+   { "who": "b", "fr": "On dit \"les devoirs\".", "en": "You say \"les devoirs\"." },
+   { "who": "a", "fr": "Merci. Et les devoirs, c'est pour quand?", "en": "Thanks. And when is the homework for?" },
+   { "who": "b", "fr": "Pour lundi prochain.", "en": "For next Monday." }
+  ]
+ },
+ {
+  "id": "fr-family", "en": "Talking about family", "th": "moi", "b": "A2", "you": "a",
+  "roles": { "a": "You", "b": "Léa, a friend" },
+  "lines": [
+   { "who": "b", "fr": "C'est qui, sur la photo?", "en": "Who's that in the photo?" },
+   { "who": "a", "fr": "C'est ma sœur, Emma, avec son mari.", "en": "That's my sister, Emma, with her husband." },
+   { "who": "b", "fr": "Elle est jolie! Elle a quel âge?", "en": "She's pretty! How old is she?" },
+   { "who": "a", "fr": "Elle a trente ans. Elle est plus âgée que moi.", "en": "She's thirty. She's older than me." },
+   { "who": "b", "fr": "Ils ont des enfants?", "en": "Do they have children?" },
+   { "who": "a", "fr": "Oui, un petit garçon. Il s'appelle Léo.", "en": "Yes, a little boy. His name is Léo." },
+   { "who": "b", "fr": "Tu le vois souvent?", "en": "Do you see him often?" },
+   { "who": "a", "fr": "Pas assez. Ils habitent en Écosse.", "en": "Not enough. They live in Scotland." },
+   { "who": "b", "fr": "C'est loin! Moi, toute ma famille habite à Lyon.", "en": "That's far! All my family live in Lyon." }
+  ]
+ },
+ {
+  "id": "fr-weekend", "en": "Weekend plans", "th": "temps", "b": "A2", "you": "a",
+  "roles": { "a": "You", "b": "Hugo, a friend" },
+  "lines": [
+   { "who": "b", "fr": "Tu fais quoi ce week-end?", "en": "What are you doing this weekend?" },
+   { "who": "a", "fr": "Samedi, je vais au marché. Et toi?", "en": "On Saturday I'm going to the market. And you?" },
+   { "who": "b", "fr": "Rien de spécial. On va au cinéma dimanche?", "en": "Nothing special. Shall we go to the cinema on Sunday?" },
+   { "who": "a", "fr": "Bonne idée! Il y a un bon film?", "en": "Good idea! Is there a good film on?" },
+   { "who": "b", "fr": "Oui, le nouveau film de Jacques Audiard.", "en": "Yes, the new Jacques Audiard film." },
+   { "who": "a", "fr": "Parfait. La séance est à quelle heure?", "en": "Perfect. What time is the showing?" },
+   { "who": "b", "fr": "À dix-huit heures. On se retrouve devant le cinéma?", "en": "At six in the evening. Shall we meet outside the cinema?" },
+   { "who": "a", "fr": "D'accord. Et après, on peut manger quelque chose.", "en": "OK. And afterwards we can get something to eat." },
+   { "who": "b", "fr": "Avec plaisir. À dimanche!", "en": "I'd love to. See you Sunday!" }
+  ]
+ },
+ {
+  "id": "fr-doctor", "en": "At the doctor's", "th": "aide", "b": "A2", "you": "a",
+  "roles": { "a": "You", "b": "Docteur Martin" },
+  "lines": [
+   { "who": "b", "fr": "Bonjour. Qu'est-ce qui ne va pas?", "en": "Hello. What seems to be the problem?" },
+   { "who": "a", "fr": "J'ai mal à la gorge et j'ai de la fièvre.", "en": "I have a sore throat and a temperature." },
+   { "who": "b", "fr": "Depuis combien de temps?", "en": "For how long?" },
+   { "who": "a", "fr": "Depuis trois jours. Et je suis très fatigué.", "en": "For three days. And I'm very tired." },
+   { "who": "b", "fr": "Vous toussez aussi?", "en": "Are you coughing as well?" },
+   { "who": "a", "fr": "Un peu, surtout la nuit.", "en": "A little, mostly at night." },
+   { "who": "b", "fr": "C'est une angine. Je vais vous donner des médicaments.", "en": "It's a throat infection. I'm going to give you some medicine." },
+   { "who": "a", "fr": "Je dois rester à la maison?", "en": "Do I have to stay at home?" },
+   { "who": "b", "fr": "Oui, reposez-vous deux ou trois jours et buvez beaucoup d'eau.", "en": "Yes, rest for two or three days and drink plenty of water." }
+  ]
+ },
+ {
+  "id": "fr-phone", "en": "A phone call", "th": "conversation", "b": "A2", "you": "a",
+  "roles": { "a": "You", "b": "Madame Petit, Chloé's mother" },
+  "lines": [
+   { "who": "b", "fr": "Allô?", "en": "Hello?" },
+   { "who": "a", "fr": "Bonjour madame, c'est Tom. Est-ce que Chloé est là?", "en": "Hello, it's Tom. Is Chloé there?" },
+   { "who": "b", "fr": "Ah, bonjour Tom. Non, elle n'est pas encore rentrée.", "en": "Oh, hello Tom. No, she isn't home yet." },
+   { "who": "a", "fr": "Elle rentre à quelle heure?", "en": "What time will she be back?" },
+   { "who": "b", "fr": "Vers sept heures, je crois. Je peux lui laisser un message?", "en": "Around seven, I think. Can I give her a message?" },
+   { "who": "a", "fr": "Oui, merci. Vous pouvez lui dire de me rappeler?", "en": "Yes, thanks. Could you ask her to call me back?" },
+   { "who": "b", "fr": "Bien sûr. Elle a ton numéro?", "en": "Of course. Does she have your number?" },
+   { "who": "a", "fr": "Oui, elle l'a. Merci beaucoup, madame.", "en": "Yes, she has it. Thank you very much." },
+   { "who": "b", "fr": "Je t'en prie. Au revoir, Tom!", "en": "You're welcome. Goodbye, Tom!" }
+  ]
+ },
+ {
+  "id": "fr-birthday", "en": "At a birthday party", "th": "fete", "b": "B1", "you": "a",
+  "roles": { "a": "You", "b": "Antoine" },
+  "lines": [
+   { "who": "a", "fr": "Joyeux anniversaire, Antoine! Tiens, c'est pour toi.", "en": "Happy birthday, Antoine! Here, this is for you." },
+   { "who": "b", "fr": "Oh, merci! Il ne fallait pas. Je peux l'ouvrir maintenant?", "en": "Oh, thank you! You shouldn't have. Can I open it now?" },
+   { "who": "a", "fr": "Bien sûr. J'espère que ça va te plaire.", "en": "Of course. I hope you'll like it." },
+   { "who": "b", "fr": "Un livre de cuisine italienne! J'en voulais un justement.", "en": "An Italian cookbook! I was just wanting one." },
+   { "who": "a", "fr": "Je savais que tu adorais cuisiner.", "en": "I knew you loved cooking." },
+   { "who": "b", "fr": "C'est vrai. La prochaine fois, je t'invite à dîner.", "en": "That's true. Next time, I'll invite you to dinner." },
+   { "who": "a", "fr": "Volontiers! Il y a beaucoup de monde ce soir.", "en": "I'd love that! There are lots of people here tonight." },
+   { "who": "b", "fr": "Oui, presque tous mes collègues sont venus. Tu veux boire quelque chose?", "en": "Yes, nearly all my colleagues came. Would you like something to drink?" },
+   { "who": "a", "fr": "Je veux bien, un verre de vin blanc.", "en": "I'd love one, a glass of white wine." },
+   { "who": "b", "fr": "Je te l'apporte tout de suite. Fais comme chez toi!", "en": "I'll bring it right away. Make yourself at home!" }
+  ]
+ },
+ {
+  "id": "fr-flat", "en": "Renting a flat", "th": "maison", "b": "B1", "you": "a",
+  "roles": { "a": "You", "b": "Monsieur Bernard, the landlord" },
+  "lines": [
+   { "who": "a", "fr": "Bonjour, je vous appelle pour l'appartement dans la rue Victor Hugo.", "en": "Hello, I'm calling about the flat on Rue Victor Hugo." },
+   { "who": "b", "fr": "Oui, il est toujours libre. Vous voulez le visiter?", "en": "Yes, it's still available. Would you like to see it?" },
+   { "who": "a", "fr": "Oui, avec plaisir. Il fait combien de mètres carrés?", "en": "Yes, please. How many square metres is it?" },
+   { "who": "b", "fr": "Cinquante. Il y a deux chambres, un salon et une petite cuisine.", "en": "Fifty. There are two bedrooms, a living room and a small kitchen." },
+   { "who": "a", "fr": "Et le loyer, c'est combien par mois?", "en": "And how much is the rent a month?" },
+   { "who": "b", "fr": "Huit cents euros, charges comprises.", "en": "Eight hundred euros, bills included." },
+   { "who": "a", "fr": "Il faut payer une caution?", "en": "Do I have to pay a deposit?" },
+   { "who": "b", "fr": "Oui, un mois de loyer. Et vous devrez me donner vos trois dernières fiches de paie.", "en": "Yes, one month's rent. And you'll need to give me your last three payslips." },
+   { "who": "a", "fr": "Pas de problème. Je pourrais passer demain après le travail?", "en": "No problem. Could I come round tomorrow after work?" },
+   { "who": "b", "fr": "Demain à dix-huit heures, ça vous convient?", "en": "Tomorrow at six in the evening, does that suit you?" },
+   { "who": "a", "fr": "C'est parfait. À demain, monsieur.", "en": "That's perfect. See you tomorrow." }
+  ]
+ }
+]

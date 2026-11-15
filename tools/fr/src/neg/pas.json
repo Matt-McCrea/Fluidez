@@ -1,0 +1,1142 @@
+[
+ {
+  "q": "Je ___ (aimer) le café.",
+  "a": "n'aime pas",
+  "o": [
+   "n'aime pas",
+   "ne aime pas",
+   "ne pas aime",
+   "aime pas ne"
+  ],
+  "e": "I don't like coffee.",
+  "w": "Ne goes before the verb and pas after it; ne becomes n' before a vowel.",
+  "wf": "ne + verbe + pas, n' devant voyelle.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Il ___ (parler) anglais.",
+  "a": "ne parle pas",
+  "o": [
+   "ne parle pas",
+   "ne pas parle",
+   "parle ne pas"
+  ],
+  "x": [
+   "parle pas"
+  ],
+  "e": "He doesn't speak English.",
+  "w": "Ne and pas go round the conjugated verb.",
+  "wf": "ne ... pas autour du verbe.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Nous ___ (habiter) ici.",
+  "a": "n'habitons pas",
+  "o": [
+   "n'habitons pas",
+   "ne habitons pas",
+   "ne pas habitons"
+  ],
+  "x": [
+   "habitons pas"
+  ],
+  "e": "We don't live here.",
+  "w": "Before a vowel or a silent h, ne becomes n'.",
+  "wf": "n' devant voyelle ou h muet.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (travailler) le lundi ?",
+  "a": "ne travailles pas",
+  "o": [
+   "ne travailles pas",
+   "ne travailles",
+   "pas travailles ne"
+  ],
+  "x": [
+   "travailles pas"
+  ],
+  "e": "You don't work on Mondays?",
+  "w": "Written French needs both parts: ne before the verb, pas after it.",
+  "wf": "Il faut ne et pas.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Elle ___ (comprendre) la question.",
+  "a": "ne comprend pas",
+  "o": [
+   "ne comprend pas",
+   "ne pas comprend",
+   "comprend ne pas"
+  ],
+  "x": [
+   "comprend pas"
+  ],
+  "e": "She doesn't understand the question.",
+  "w": "Ne and pas go round the conjugated verb.",
+  "wf": "ne ... pas autour du verbe.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (être) fatigué.",
+  "a": "ne suis pas",
+  "o": [
+   "ne suis pas",
+   "ne pas suis",
+   "suis ne pas"
+  ],
+  "x": [
+   "suis pas"
+  ],
+  "e": "I'm not tired.",
+  "w": "Ne and pas go round être like any other verb.",
+  "wf": "ne ... pas autour du verbe.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Ils ___ (avoir) faim.",
+  "a": "n'ont pas",
+  "o": [
+   "n'ont pas",
+   "ne ont pas",
+   "ont pas ne"
+  ],
+  "x": [
+   "ont pas"
+  ],
+  "e": "They aren't hungry.",
+  "w": "Ont starts with a vowel, so ne becomes n'.",
+  "wf": "n' devant voyelle.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (fumer) ?",
+  "a": "ne fumez pas",
+  "o": [
+   "ne fumez pas",
+   "ne pas fumez",
+   "fumez ne pas"
+  ],
+  "x": [
+   "fumez pas"
+  ],
+  "e": "Don't you smoke?",
+  "w": "Ne and pas go round the conjugated verb.",
+  "wf": "ne ... pas autour du verbe.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "On ___ (savoir) pourquoi.",
+  "a": "ne sait pas",
+  "o": [
+   "ne sait pas",
+   "ne pas sait",
+   "sait ne pas"
+  ],
+  "x": [
+   "sait pas"
+  ],
+  "e": "We don't know why.",
+  "w": "Ne and pas go round the conjugated verb.",
+  "wf": "ne ... pas autour du verbe.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Ce restaurant ___ (être) cher.",
+  "a": "n'est pas",
+  "o": [
+   "n'est pas",
+   "ne est pas",
+   "est ne pas"
+  ],
+  "x": [
+   "est pas"
+  ],
+  "e": "This restaurant isn't expensive.",
+  "w": "Est starts with a vowel, so ne becomes n'.",
+  "wf": "n' devant voyelle.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Mon frère ___ (regarder) la télé.",
+  "a": "ne regarde pas",
+  "o": [
+   "ne regarde pas",
+   "ne pas regarde",
+   "regarde ne pas"
+  ],
+  "x": [
+   "regarde pas"
+  ],
+  "e": "My brother doesn't watch TV.",
+  "w": "Ne and pas go round the conjugated verb.",
+  "wf": "ne ... pas autour du verbe.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (trouver) mes clés.",
+  "a": "ne trouve pas",
+  "o": [
+   "ne trouve pas",
+   "ne pas trouve",
+   "trouve pas ne"
+  ],
+  "x": [
+   "trouve pas"
+  ],
+  "e": "I can't find my keys.",
+  "w": "Ne and pas go round the conjugated verb.",
+  "wf": "ne ... pas autour du verbe.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Il ___ (faire) froid aujourd'hui.",
+  "a": "ne fait pas",
+  "o": [
+   "ne fait pas",
+   "ne pas fait",
+   "fait ne pas"
+  ],
+  "x": [
+   "fait pas"
+  ],
+  "e": "It isn't cold today.",
+  "w": "Weather phrases with faire take ne ... pas round fait.",
+  "wf": "ne ... pas autour du verbe.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Les enfants ___ (aller) à l'école demain.",
+  "a": "ne vont pas",
+  "o": [
+   "ne vont pas",
+   "ne pas vont",
+   "vont ne pas"
+  ],
+  "x": [
+   "vont pas"
+  ],
+  "e": "The children aren't going to school tomorrow.",
+  "w": "Ne and pas go round the conjugated verb.",
+  "wf": "ne ... pas autour du verbe.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (pouvoir) venir ce soir.",
+  "a": "ne peux pas",
+  "o": [
+   "ne peux pas",
+   "ne pas peux",
+   "ne peux"
+  ],
+  "x": [
+   "peux pas"
+  ],
+  "e": "I can't come tonight.",
+  "w": "With a modal, ne ... pas goes round the modal, not the infinitive.",
+  "wf": "Autour du verbe conjugué.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Elle ___ (vouloir) partir.",
+  "a": "ne veut pas",
+  "o": [
+   "ne veut pas",
+   "ne pas veut",
+   "ne veut"
+  ],
+  "x": [
+   "veut pas"
+  ],
+  "e": "She doesn't want to leave.",
+  "w": "With vouloir plus infinitive, ne ... pas goes round veut.",
+  "wf": "Autour du verbe conjugué.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (aller) rester longtemps.",
+  "a": "ne vais pas",
+  "o": [
+   "ne vais pas",
+   "ne pas vais",
+   "ne vais"
+  ],
+  "x": [
+   "vais pas"
+  ],
+  "e": "I'm not going to stay long.",
+  "w": "In the near future, ne ... pas goes round aller, not the infinitive.",
+  "wf": "Futur proche : autour de aller.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (devoir) oublier le pain.",
+  "a": "ne devons pas",
+  "o": [
+   "ne devons pas",
+   "ne pas devons",
+   "ne devons"
+  ],
+  "x": [
+   "devons pas"
+  ],
+  "e": "We mustn't forget the bread.",
+  "w": "With devoir plus infinitive, ne ... pas goes round the modal.",
+  "wf": "Autour du verbe conjugué.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Ça ___ (marcher).",
+  "a": "ne marche pas",
+  "o": [
+   "ne marche pas",
+   "ne pas marche",
+   "marche ne pas"
+  ],
+  "x": [
+   "marche pas"
+  ],
+  "e": "It doesn't work.",
+  "w": "Ne and pas go round the conjugated verb.",
+  "wf": "ne ... pas autour du verbe.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (connaître) cette ville.",
+  "a": "ne connais pas",
+  "o": [
+   "ne connais pas",
+   "ne pas connais",
+   "connais ne pas"
+  ],
+  "x": [
+   "connais pas"
+  ],
+  "e": "I don't know this city.",
+  "w": "Ne and pas go round the conjugated verb.",
+  "wf": "ne ... pas autour du verbe.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (écouter) !",
+  "a": "n'écoutes pas",
+  "o": [
+   "n'écoutes pas",
+   "ne écoutes pas",
+   "ne pas écoutes"
+  ],
+  "x": [
+   "écoutes pas"
+  ],
+  "e": "You're not listening!",
+  "w": "Écoutes starts with a vowel, so ne becomes n'.",
+  "wf": "n' devant voyelle.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Ils ___ (attendre) le bus.",
+  "a": "n'attendent pas",
+  "o": [
+   "n'attendent pas",
+   "ne attendent pas",
+   "ne pas attendent"
+  ],
+  "x": [
+   "attendent pas"
+  ],
+  "e": "They aren't waiting for the bus.",
+  "w": "Attendent starts with a vowel, so ne becomes n'.",
+  "wf": "n' devant voyelle.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Ma sœur ___ (conduire).",
+  "a": "ne conduit pas",
+  "o": [
+   "ne conduit pas",
+   "ne pas conduit",
+   "conduit ne pas"
+  ],
+  "x": [
+   "conduit pas"
+  ],
+  "e": "My sister doesn't drive.",
+  "w": "Ne and pas go round the conjugated verb.",
+  "wf": "ne ... pas autour du verbe.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Le magasin ___ (ouvrir) le dimanche.",
+  "a": "n'ouvre pas",
+  "o": [
+   "n'ouvre pas",
+   "ne ouvre pas",
+   "ne pas ouvre"
+  ],
+  "x": [
+   "ouvre pas"
+  ],
+  "e": "The shop doesn't open on Sundays.",
+  "w": "Ouvre starts with a vowel, so ne becomes n'.",
+  "wf": "n' devant voyelle.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (croire) que c'est vrai.",
+  "a": "ne crois pas",
+  "o": [
+   "ne crois pas",
+   "ne pas crois",
+   "crois ne pas"
+  ],
+  "x": [
+   "crois pas"
+  ],
+  "e": "I don't think it's true.",
+  "w": "Ne and pas go round the conjugated verb.",
+  "wf": "ne ... pas autour du verbe.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Ce ___ (être) grave.",
+  "a": "n'est pas",
+  "o": [
+   "n'est pas",
+   "ne est pas",
+   "ne pas est"
+  ],
+  "e": "It's not serious.",
+  "w": "Before est, ne becomes n': ce n'est pas.",
+  "wf": "ce n'est pas.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (le, connaître).",
+  "a": "ne le connais pas",
+  "o": [
+   "ne le connais pas",
+   "ne connais pas le",
+   "le ne connais pas"
+  ],
+  "x": [
+   "le connais pas"
+  ],
+  "e": "I don't know him.",
+  "w": "An object pronoun stays next to the verb, inside ne ... pas.",
+  "wf": "ne + pronom + verbe + pas.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Elle ___ (me, croire).",
+  "a": "ne me croit pas",
+  "o": [
+   "ne me croit pas",
+   "me ne croit pas",
+   "ne croit pas me"
+  ],
+  "x": [
+   "me croit pas"
+  ],
+  "e": "She doesn't believe me.",
+  "w": "An object pronoun stays next to the verb, inside ne ... pas.",
+  "wf": "ne + pronom + verbe + pas.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (les, voir) souvent.",
+  "a": "ne les voyons pas",
+  "o": [
+   "ne les voyons pas",
+   "ne voyons pas les",
+   "les ne voyons pas"
+  ],
+  "x": [
+   "les voyons pas"
+  ],
+  "e": "We don't see them often.",
+  "w": "An object pronoun stays next to the verb, inside ne ... pas.",
+  "wf": "ne + pronom + verbe + pas.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (lui, dire) la vérité ?",
+  "a": "ne lui dis pas",
+  "o": [
+   "ne lui dis pas",
+   "ne dis pas lui",
+   "lui ne dis pas"
+  ],
+  "x": [
+   "lui dis pas"
+  ],
+  "e": "You're not telling him the truth?",
+  "w": "An object pronoun stays next to the verb, inside ne ... pas.",
+  "wf": "ne + pronom + verbe + pas.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (y, aller) ce week-end.",
+  "a": "n'y vais pas",
+  "o": [
+   "n'y vais pas",
+   "ne vais pas y",
+   "y ne vais pas"
+  ],
+  "e": "I'm not going there this weekend.",
+  "w": "Y sits between ne and the verb, and ne becomes n' before it.",
+  "wf": "n'y + verbe + pas.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Il ___ (en, vouloir).",
+  "a": "n'en veut pas",
+  "o": [
+   "n'en veut pas",
+   "ne veut pas en",
+   "en ne veut pas"
+  ],
+  "x": [
+   "en veut pas"
+  ],
+  "e": "He doesn't want any.",
+  "w": "En sits between ne and the verb, and ne becomes n' before it.",
+  "wf": "n'en + verbe + pas.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Ça ___ (me, plaire).",
+  "a": "ne me plaît pas",
+  "o": [
+   "ne me plaît pas",
+   "me ne plaît pas",
+   "ne plaît pas me"
+  ],
+  "x": [
+   "me plaît pas"
+  ],
+  "e": "I don't like it.",
+  "w": "An object pronoun stays next to the verb, inside ne ... pas.",
+  "wf": "ne + pronom + verbe + pas.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (nous, déranger).",
+  "a": "ne nous dérangez pas",
+  "o": [
+   "ne nous dérangez pas",
+   "ne dérangez pas nous",
+   "nous ne dérangez pas"
+  ],
+  "x": [
+   "nous dérangez pas"
+  ],
+  "e": "You're not bothering us.",
+  "w": "An object pronoun stays next to the verb, inside ne ... pas.",
+  "wf": "ne + pronom + verbe + pas.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (te, entendre) bien.",
+  "a": "ne t'entends pas",
+  "o": [
+   "ne t'entends pas",
+   "ne entends pas te",
+   "te ne entends pas"
+  ],
+  "x": [
+   "t'entends pas"
+  ],
+  "e": "I can't hear you well.",
+  "w": "Te becomes t' before a vowel and stays inside ne ... pas.",
+  "wf": "ne t' + verbe + pas.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "On ___ (leur, téléphoner) ce soir.",
+  "a": "ne leur téléphone pas",
+  "o": [
+   "ne leur téléphone pas",
+   "leur ne téléphone pas",
+   "ne téléphone pas leur"
+  ],
+  "x": [
+   "leur téléphone pas"
+  ],
+  "e": "We're not calling them tonight.",
+  "w": "An object pronoun stays next to the verb, inside ne ... pas.",
+  "wf": "ne + pronom + verbe + pas.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (se lever) tôt le dimanche.",
+  "a": "ne me lève pas",
+  "o": [
+   "ne me lève pas",
+   "me ne lève pas",
+   "ne lève pas me"
+  ],
+  "x": [
+   "me lève pas"
+  ],
+  "e": "I don't get up early on Sundays.",
+  "w": "The reflexive pronoun stays before the verb, inside ne ... pas.",
+  "wf": "ne + me + verbe + pas.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Il ___ (se souvenir) de son nom.",
+  "a": "ne se souvient pas",
+  "o": [
+   "ne se souvient pas",
+   "se ne souvient pas",
+   "ne souvient pas se"
+  ],
+  "x": [
+   "se souvient pas"
+  ],
+  "e": "He can't remember her name.",
+  "w": "The reflexive pronoun stays before the verb, inside ne ... pas.",
+  "wf": "ne + se + verbe + pas.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (s'inquiéter).",
+  "a": "ne nous inquiétons pas",
+  "o": [
+   "ne nous inquiétons pas",
+   "nous ne inquiétons pas",
+   "ne inquiétons pas nous"
+  ],
+  "x": [
+   "nous inquiétons pas"
+  ],
+  "e": "We're not worried.",
+  "w": "The reflexive pronoun stays before the verb, inside ne ... pas.",
+  "wf": "ne + nous + verbe + pas.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (s'ennuyer) ici ?",
+  "a": "ne t'ennuies pas",
+  "o": [
+   "ne t'ennuies pas",
+   "te ne ennuies pas",
+   "ne ennuies pas te"
+  ],
+  "x": [
+   "t'ennuies pas"
+  ],
+  "e": "Aren't you bored here?",
+  "w": "The reflexive pronoun stays before the verb, inside ne ... pas.",
+  "wf": "ne + te + verbe + pas.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ___ (s'entendre) bien.",
+  "a": "ne s'entendent pas",
+  "o": [
+   "ne s'entendent pas",
+   "se ne entendent pas",
+   "ne entendent pas se"
+  ],
+  "x": [
+   "s'entendent pas"
+  ],
+  "e": "They don't get on well.",
+  "w": "The reflexive pronoun stays before the verb, inside ne ... pas.",
+  "wf": "ne + se + verbe + pas.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (manger) ce matin.",
+  "a": "n'ai pas mangé",
+  "o": [
+   "n'ai pas mangé",
+   "n'ai mangé pas",
+   "ne pas ai mangé"
+  ],
+  "e": "I didn't eat this morning.",
+  "w": "In the passé composé, ne ... pas goes round the auxiliary, before the participle.",
+  "wf": "ne + auxiliaire + pas + participe.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Elle ___ (venir) à la fête.",
+  "a": "n'est pas venue",
+  "o": [
+   "n'est pas venue",
+   "n'est venue pas",
+   "ne pas est venue"
+  ],
+  "x": [
+   "est pas venue"
+  ],
+  "e": "She didn't come to the party.",
+  "w": "In the passé composé, ne ... pas goes round the auxiliary, before the participle.",
+  "wf": "ne + auxiliaire + pas + participe.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (voir) le film.",
+  "a": "n'avons pas vu",
+  "o": [
+   "n'avons pas vu",
+   "n'avons vu pas",
+   "ne pas avons vu"
+  ],
+  "x": [
+   "avons pas vu"
+  ],
+  "e": "We didn't see the film.",
+  "w": "In the passé composé, ne ... pas goes round the auxiliary, before the participle.",
+  "wf": "ne + auxiliaire + pas + participe.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ___ (finir) leurs devoirs.",
+  "a": "n'ont pas fini",
+  "o": [
+   "n'ont pas fini",
+   "n'ont fini pas",
+   "ne pas ont fini"
+  ],
+  "x": [
+   "ont pas fini"
+  ],
+  "e": "They haven't finished their homework.",
+  "w": "In the passé composé, ne ... pas goes round the auxiliary, before the participle.",
+  "wf": "ne + auxiliaire + pas + participe.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (dormir) cette nuit ?",
+  "a": "n'as pas dormi",
+  "o": [
+   "n'as pas dormi",
+   "n'as dormi pas",
+   "ne pas as dormi"
+  ],
+  "x": [
+   "as pas dormi"
+  ],
+  "e": "Didn't you sleep last night?",
+  "w": "In the passé composé, ne ... pas goes round the auxiliary, before the participle.",
+  "wf": "ne + auxiliaire + pas + participe.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Il ___ (comprendre) ma blague.",
+  "a": "n'a pas compris",
+  "o": [
+   "n'a pas compris",
+   "n'a compris pas",
+   "ne pas a compris"
+  ],
+  "x": [
+   "a pas compris"
+  ],
+  "e": "He didn't get my joke.",
+  "w": "In the passé composé, ne ... pas goes round the auxiliary, before the participle.",
+  "wf": "ne + auxiliaire + pas + participe.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (entendre) le réveil.",
+  "a": "n'ai pas entendu",
+  "o": [
+   "n'ai pas entendu",
+   "n'ai entendu pas",
+   "ne ai pas entendu"
+  ],
+  "e": "I didn't hear the alarm.",
+  "w": "Ai starts with a vowel, so ne becomes n', and pas comes before the participle.",
+  "wf": "n'ai pas + participe.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (partir) en vacances ?",
+  "a": "n'êtes pas partis",
+  "o": [
+   "n'êtes pas partis",
+   "n'êtes partis pas",
+   "ne êtes pas partis"
+  ],
+  "x": [
+   "êtes pas partis"
+  ],
+  "e": "Didn't you go on holiday?",
+  "w": "In the passé composé, ne ... pas goes round the auxiliary, before the participle.",
+  "wf": "ne + auxiliaire + pas + participe.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Le train ___ (arriver) à l'heure.",
+  "a": "n'est pas arrivé",
+  "o": [
+   "n'est pas arrivé",
+   "n'est arrivé pas",
+   "ne pas est arrivé"
+  ],
+  "x": [
+   "est pas arrivé"
+  ],
+  "e": "The train didn't arrive on time.",
+  "w": "In the passé composé, ne ... pas goes round the auxiliary, before the participle.",
+  "wf": "ne + auxiliaire + pas + participe.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (le, voir) hier.",
+  "a": "ne l'ai pas vu",
+  "o": [
+   "ne l'ai pas vu",
+   "ne ai pas le vu",
+   "l'ai ne pas vu"
+  ],
+  "x": [
+   "l'ai pas vu"
+  ],
+  "e": "I didn't see him yesterday.",
+  "w": "The pronoun goes before the auxiliary, ne before the pronoun, pas after the auxiliary.",
+  "wf": "ne l'ai pas vu.",
+  "t": "pas",
+  "b": "B1"
+ },
+ {
+  "q": "Elle ___ (se réveiller) à temps.",
+  "a": "ne s'est pas réveillée",
+  "o": [
+   "ne s'est pas réveillée",
+   "se n'est pas réveillée",
+   "ne s'est réveillée pas"
+  ],
+  "x": [
+   "s'est pas réveillée"
+  ],
+  "e": "She didn't wake up in time.",
+  "w": "Ne comes before the reflexive pronoun, pas after the auxiliary être.",
+  "wf": "ne s'est pas + participe.",
+  "t": "pas",
+  "b": "B1"
+ },
+ {
+  "q": "On ___ (pouvoir) entrer.",
+  "a": "n'a pas pu",
+  "o": [
+   "n'a pas pu",
+   "n'a pu pas",
+   "ne pas a pu"
+  ],
+  "x": [
+   "a pas pu"
+  ],
+  "e": "We couldn't get in.",
+  "w": "In the passé composé, ne ... pas goes round the auxiliary, before the participle.",
+  "wf": "ne + auxiliaire + pas + participe.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (lui, répondre) ?",
+  "a": "ne lui as pas répondu",
+  "o": [
+   "ne lui as pas répondu",
+   "ne as pas lui répondu",
+   "lui n'as pas répondu"
+  ],
+  "x": [
+   "lui as pas répondu"
+  ],
+  "e": "You didn't answer him?",
+  "w": "Ne comes before the pronoun, pas after the auxiliary, then the participle.",
+  "wf": "ne lui as pas répondu.",
+  "t": "pas",
+  "b": "B1"
+ },
+ {
+  "q": "Il préfère ___ (sortir) ce soir.",
+  "a": "ne pas sortir",
+  "o": [
+   "ne pas sortir",
+   "ne sortir pas",
+   "pas ne sortir"
+  ],
+  "e": "He'd rather not go out tonight.",
+  "w": "Before an infinitive, ne pas stay together in front of it.",
+  "wf": "ne pas + infinitif.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Je te demande de ___ (fumer) ici.",
+  "a": "ne pas fumer",
+  "o": [
+   "ne pas fumer",
+   "ne fumer pas",
+   "pas fumer ne"
+  ],
+  "e": "I'm asking you not to smoke here.",
+  "w": "Before an infinitive, ne pas stay together in front of it.",
+  "wf": "ne pas + infinitif.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Essaie de ___ (oublier) ton passeport.",
+  "a": "ne pas oublier",
+  "o": [
+   "ne pas oublier",
+   "n'oublier pas",
+   "ne oublier pas"
+  ],
+  "e": "Try not to forget your passport.",
+  "w": "Before an infinitive, ne pas stay together in front of it, with no elision.",
+  "wf": "ne pas + infinitif.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "___ (se pencher) par la fenêtre.",
+  "a": "Ne pas se pencher",
+  "o": [
+   "Ne pas se pencher",
+   "Ne se pencher pas",
+   "Se ne pas pencher"
+  ],
+  "e": "Do not lean out of the window.",
+  "w": "Signs and instructions use ne pas plus the infinitive, pronoun included.",
+  "wf": "ne pas + infinitif.",
+  "t": "pas",
+  "b": "B1"
+ },
+ {
+  "q": "Elle a décidé de ___ (venir).",
+  "a": "ne pas venir",
+  "o": [
+   "ne pas venir",
+   "ne venir pas",
+   "pas ne venir"
+  ],
+  "e": "She decided not to come.",
+  "w": "Before an infinitive, ne pas stay together in front of it.",
+  "wf": "ne pas + infinitif.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "C'est important de ___ (arriver) en retard.",
+  "a": "ne pas arriver",
+  "o": [
+   "ne pas arriver",
+   "n'arriver pas",
+   "ne arriver pas"
+  ],
+  "e": "It's important not to be late.",
+  "w": "Before an infinitive, ne pas stay together in front of it.",
+  "wf": "ne pas + infinitif.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "Il fait attention à ___ (se couper).",
+  "a": "ne pas se couper",
+  "o": [
+   "ne pas se couper",
+   "ne se couper pas",
+   "se ne pas couper"
+  ],
+  "e": "He's careful not to cut himself.",
+  "w": "Ne pas goes before the pronoun and the infinitive.",
+  "wf": "ne pas + pronom + infinitif.",
+  "t": "pas",
+  "b": "B1"
+ },
+ {
+  "q": "Je préfère ___ (en, parler).",
+  "a": "ne pas en parler",
+  "o": [
+   "ne pas en parler",
+   "n'en parler pas",
+   "en ne pas parler"
+  ],
+  "e": "I'd rather not talk about it.",
+  "w": "Ne pas goes before the pronoun and the infinitive.",
+  "wf": "ne pas + pronom + infinitif.",
+  "t": "pas",
+  "b": "B1"
+ },
+ {
+  "q": "___ (toucher) à ça.",
+  "a": "Ne touche pas",
+  "o": [
+   "Ne touche pas",
+   "Ne pas touche",
+   "Touche ne pas"
+  ],
+  "x": [
+   "Touche pas"
+  ],
+  "e": "Don't touch that.",
+  "w": "In a negative command, ne ... pas goes round the verb.",
+  "wf": "Ne + impératif + pas.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "___ (s'inquiéter), tout va bien.",
+  "a": "Ne t'inquiète pas",
+  "o": [
+   "Ne t'inquiète pas",
+   "Inquiète-toi pas",
+   "Ne inquiète pas toi"
+  ],
+  "x": [
+   "T'inquiète pas"
+  ],
+  "e": "Don't worry, everything's fine.",
+  "w": "A negative command keeps the pronoun before the verb: ne t'inquiète pas.",
+  "wf": "Ne + pronom + impératif + pas.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "___ (oublier) tes clés.",
+  "a": "N'oublie pas",
+  "o": [
+   "N'oublie pas",
+   "Ne oublie pas",
+   "Oublie ne pas"
+  ],
+  "x": [
+   "Oublie pas"
+  ],
+  "e": "Don't forget your keys.",
+  "w": "In a negative command, ne ... pas goes round the verb; ne becomes n' before a vowel.",
+  "wf": "N' + impératif + pas.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "___ (s'asseoir) ici, s'il vous plaît.",
+  "a": "Ne vous asseyez pas",
+  "o": [
+   "Ne vous asseyez pas",
+   "Asseyez-vous pas",
+   "Ne asseyez pas vous"
+  ],
+  "e": "Please don't sit here.",
+  "w": "A negative command puts the pronoun before the verb: ne vous asseyez pas.",
+  "wf": "Ne + pronom + impératif + pas.",
+  "t": "pas",
+  "b": "A2"
+ },
+ {
+  "q": "___ (parler) si vite, s'il te plaît.",
+  "a": "Ne parle pas",
+  "o": [
+   "Ne parle pas",
+   "Ne pas parle",
+   "Parle ne pas"
+  ],
+  "x": [
+   "Parle pas"
+  ],
+  "e": "Please don't talk so fast.",
+  "w": "In a negative command, ne ... pas goes round the verb.",
+  "wf": "Ne + impératif + pas.",
+  "t": "pas",
+  "b": "A1"
+ },
+ {
+  "q": "___ (avoir, tu) faim après cette longue marche ?",
+  "a": "N'as-tu pas",
+  "o": [
+   "N'as-tu pas",
+   "Ne as-tu pas",
+   "N'as pas tu"
+  ],
+  "e": "Aren't you hungry after that long walk?",
+  "w": "With inversion, ne ... pas goes round the verb and its pronoun: n'as-tu pas.",
+  "wf": "Inversion : n'as-tu pas.",
+  "t": "pas",
+  "b": "B1"
+ },
+ {
+  "q": "Pourquoi ___ (venir, vous) avec nous ?",
+  "a": "ne venez-vous pas",
+  "o": [
+   "ne venez-vous pas",
+   "ne venez pas vous",
+   "ne pas venez-vous"
+  ],
+  "e": "Why aren't you coming with us?",
+  "w": "With inversion, ne ... pas goes round the verb and its pronoun.",
+  "wf": "Inversion : ne venez-vous pas.",
+  "t": "pas",
+  "b": "B1"
+ },
+ {
+  "q": "___ (être, il) déjà parti ?",
+  "a": "N'est-il pas",
+  "o": [
+   "N'est-il pas",
+   "Ne est-il pas",
+   "N'est pas il"
+  ],
+  "e": "Hasn't he already left?",
+  "w": "With inversion, ne ... pas goes round the auxiliary and its pronoun.",
+  "wf": "Inversion : n'est-il pas.",
+  "t": "pas",
+  "b": "B1"
+ }
+]

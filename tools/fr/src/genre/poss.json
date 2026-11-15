@@ -1,0 +1,662 @@
+[
+ {
+  "q": "___ (my) amis sont très drôles.",
+  "n": "ami",
+  "t": "poss",
+  "e": "My friends are very funny.",
+  "b": "A1",
+  "a": "mes",
+  "pl": 1
+ },
+ {
+  "q": "___ (my) frère habite à Lyon.",
+  "n": "frère",
+  "t": "poss",
+  "e": "My brother lives in Lyon.",
+  "b": "A1",
+  "a": "mon"
+ },
+ {
+  "q": "___ (my) sœur est médecin.",
+  "n": "sœur",
+  "t": "poss",
+  "e": "My sister is a doctor.",
+  "b": "A1",
+  "a": "ma"
+ },
+ {
+  "q": "___ (my) parents sont en vacances.",
+  "n": "parent",
+  "t": "poss",
+  "e": "My parents are on holiday.",
+  "b": "A1",
+  "a": "mes",
+  "pl": 1
+ },
+ {
+  "q": "___ (my) amie Julie arrive demain.",
+  "n": "amie",
+  "t": "poss",
+  "e": "My friend Julie arrives tomorrow.",
+  "b": "A1",
+  "a": "mon"
+ },
+ {
+  "q": "___ (my) école est près d'ici.",
+  "n": "école",
+  "t": "poss",
+  "e": "My school is near here.",
+  "b": "A1",
+  "a": "mon"
+ },
+ {
+  "q": "___ (my) voiture est en panne.",
+  "n": "voiture",
+  "t": "poss",
+  "e": "My car has broken down.",
+  "b": "A1",
+  "a": "ma"
+ },
+ {
+  "q": "J'ai perdu ___ (my) clés.",
+  "n": "clé",
+  "t": "poss",
+  "e": "I've lost my keys.",
+  "b": "A1",
+  "a": "mes",
+  "pl": 1
+ },
+ {
+  "q": "___ (my) mère fait un gâteau.",
+  "n": "mère",
+  "t": "poss",
+  "e": "My mother is making a cake.",
+  "b": "A1",
+  "a": "ma"
+ },
+ {
+  "q": "___ (my) père travaille à la banque.",
+  "n": "père",
+  "t": "poss",
+  "e": "My father works at the bank.",
+  "b": "A1",
+  "a": "mon"
+ },
+ {
+  "q": "C'est ___ (my) histoire préférée.",
+  "n": "histoire",
+  "t": "poss",
+  "e": "It's my favourite story.",
+  "b": "A1",
+  "a": "mon"
+ },
+ {
+  "q": "___ (my) idée est simple.",
+  "n": "idée",
+  "t": "poss",
+  "e": "My idea is simple.",
+  "b": "A1",
+  "a": "mon"
+ },
+ {
+  "q": "Voici ___ (my) adresse.",
+  "n": "adresse",
+  "t": "poss",
+  "e": "Here's my address.",
+  "b": "A2",
+  "a": "mon"
+ },
+ {
+  "q": "___ (my) chambre est au premier étage.",
+  "n": "chambre",
+  "t": "poss",
+  "e": "My room is on the first floor.",
+  "b": "A1",
+  "a": "ma"
+ },
+ {
+  "q": "___ (my) enfants sont à l'école.",
+  "n": "enfant",
+  "t": "poss",
+  "e": "My children are at school.",
+  "b": "A1",
+  "a": "mes",
+  "pl": 1
+ },
+ {
+  "q": "___ (my) ordinateur ne marche plus.",
+  "n": "ordinateur",
+  "t": "poss",
+  "e": "My computer doesn't work any more.",
+  "b": "A2",
+  "a": "mon"
+ },
+ {
+  "q": "___ (my) équipe a gagné !",
+  "n": "équipe",
+  "t": "poss",
+  "e": "My team won!",
+  "b": "A1",
+  "a": "mon"
+ },
+ {
+  "q": "___ (my) tante habite à la campagne.",
+  "n": "tante",
+  "t": "poss",
+  "e": "My aunt lives in the country.",
+  "b": "A2",
+  "a": "ma"
+ },
+ {
+  "q": "___ (my) oncle est boulanger.",
+  "n": "oncle",
+  "t": "poss",
+  "e": "My uncle is a baker.",
+  "b": "A1",
+  "a": "mon"
+ },
+ {
+  "q": "___ (my) famille habite en Bretagne.",
+  "n": "famille",
+  "t": "poss",
+  "e": "My family lives in Brittany.",
+  "b": "A1",
+  "a": "ma"
+ },
+ {
+  "q": "Tu as ___ (your) téléphone ?",
+  "n": "téléphone",
+  "t": "poss",
+  "e": "Have you got your phone?",
+  "b": "A1",
+  "a": "ton"
+ },
+ {
+  "q": "Tu as vu ___ (your) sœur ce matin ?",
+  "n": "sœur",
+  "t": "poss",
+  "e": "Did you see your sister this morning?",
+  "b": "A1",
+  "a": "ta"
+ },
+ {
+  "q": "Tu as oublié ___ (your) clés !",
+  "n": "clé",
+  "t": "poss",
+  "e": "You've forgotten your keys!",
+  "b": "A1",
+  "a": "tes",
+  "pl": 1
+ },
+ {
+  "q": "Tu aimes ___ (your) école ?",
+  "n": "école",
+  "t": "poss",
+  "e": "Do you like your school?",
+  "b": "A1",
+  "a": "ton"
+ },
+ {
+  "q": "Tu peux prendre ___ (your) voiture ?",
+  "n": "voiture",
+  "t": "poss",
+  "e": "Can you take your car?",
+  "b": "A1",
+  "a": "ta"
+ },
+ {
+  "q": "Tu invites ___ (your) amis ?",
+  "n": "ami",
+  "t": "poss",
+  "e": "Are you inviting your friends?",
+  "b": "A1",
+  "a": "tes",
+  "pl": 1
+ },
+ {
+  "q": "Tu me donnes ___ (your) adresse ?",
+  "n": "adresse",
+  "t": "poss",
+  "e": "Will you give me your address?",
+  "b": "A2",
+  "a": "ton"
+ },
+ {
+  "q": "Tu vas bien ? Et ___ (your) mère ?",
+  "n": "mère",
+  "t": "poss",
+  "e": "Are you well? And your mother?",
+  "b": "A1",
+  "a": "ta"
+ },
+ {
+  "q": "Tu ranges ___ (your) chambre ?",
+  "n": "chambre",
+  "t": "poss",
+  "e": "Will you tidy your room?",
+  "b": "A1",
+  "a": "ta"
+ },
+ {
+  "q": "Tu as fini ___ (your) travail ?",
+  "n": "travail",
+  "t": "poss",
+  "e": "Have you finished your work?",
+  "b": "A1",
+  "a": "ton"
+ },
+ {
+  "q": "Tu aimes ___ (your) nouvelle maison ?",
+  "n": "maison",
+  "t": "poss",
+  "e": "Do you like your new house?",
+  "b": "A1",
+  "a": "ta"
+ },
+ {
+  "q": "Tu as pris ___ (your) médicaments ?",
+  "n": "médicament",
+  "t": "poss",
+  "e": "Have you taken your medicine?",
+  "b": "A2",
+  "a": "tes",
+  "pl": 1
+ },
+ {
+  "q": "Tu as une photo de ___ (your) amie ?",
+  "n": "amie",
+  "t": "poss",
+  "e": "Have you got a photo of your friend?",
+  "b": "A1",
+  "a": "ton"
+ },
+ {
+  "q": "Tu as ___ (your) billet ?",
+  "n": "billet",
+  "t": "poss",
+  "e": "Have you got your ticket?",
+  "b": "A2",
+  "a": "ton"
+ },
+ {
+  "q": "Tu peux enlever ___ (your) chaussures ?",
+  "n": "chaussure",
+  "t": "poss",
+  "e": "Can you take your shoes off?",
+  "b": "A2",
+  "a": "tes",
+  "pl": 1
+ },
+ {
+  "q": "Il appelle ___ (his) mère tous les soirs.",
+  "n": "mère",
+  "t": "poss",
+  "e": "He calls his mother every evening.",
+  "b": "A1",
+  "a": "sa"
+ },
+ {
+  "q": "Elle adore ___ (her) père.",
+  "n": "père",
+  "t": "poss",
+  "e": "She adores her father.",
+  "b": "A1",
+  "a": "son"
+ },
+ {
+  "q": "Paul cherche ___ (his) clés.",
+  "n": "clé",
+  "t": "poss",
+  "e": "Paul is looking for his keys.",
+  "b": "A1",
+  "a": "ses",
+  "pl": 1
+ },
+ {
+  "q": "Marie a vendu ___ (her) vélo.",
+  "n": "vélo",
+  "t": "poss",
+  "e": "Marie sold her bike.",
+  "b": "B1",
+  "a": "son"
+ },
+ {
+  "q": "Il range ___ (his) chambre.",
+  "n": "chambre",
+  "t": "poss",
+  "e": "He's tidying his room.",
+  "b": "A1",
+  "a": "sa"
+ },
+ {
+  "q": "Elle promène ___ (her) chien.",
+  "n": "chien",
+  "t": "poss",
+  "e": "She's walking her dog.",
+  "b": "A1",
+  "a": "son"
+ },
+ {
+  "q": "Julie a perdu ___ (her) montre.",
+  "n": "montre",
+  "t": "poss",
+  "e": "Julie has lost her watch.",
+  "b": "A2",
+  "a": "sa"
+ },
+ {
+  "q": "Il est venu avec ___ (his) amie.",
+  "n": "amie",
+  "t": "poss",
+  "e": "He came with his friend.",
+  "b": "A1",
+  "a": "son"
+ },
+ {
+  "q": "Elle aime beaucoup ___ (her) école.",
+  "n": "école",
+  "t": "poss",
+  "e": "She really likes her school.",
+  "b": "A1",
+  "a": "son"
+ },
+ {
+  "q": "Thomas parle souvent de ___ (his) enfants.",
+  "n": "enfant",
+  "t": "poss",
+  "e": "Thomas often talks about his children.",
+  "b": "A1",
+  "a": "ses",
+  "pl": 1
+ },
+ {
+  "q": "Léa prend ___ (her) voiture pour aller au travail.",
+  "n": "voiture",
+  "t": "poss",
+  "e": "Léa takes her car to work.",
+  "b": "A1",
+  "a": "sa"
+ },
+ {
+  "q": "Il oublie toujours ___ (his) sac.",
+  "n": "sac",
+  "t": "poss",
+  "e": "He always forgets his bag.",
+  "b": "A1",
+  "a": "son"
+ },
+ {
+  "q": "Elle lave ___ (her) robe préférée.",
+  "n": "robe",
+  "t": "poss",
+  "e": "She's washing her favourite dress.",
+  "b": "A2",
+  "a": "sa"
+ },
+ {
+  "q": "Il porte toujours ___ (his) chapeau.",
+  "n": "chapeau",
+  "t": "poss",
+  "e": "He always wears his hat.",
+  "b": "A2",
+  "a": "son"
+ },
+ {
+  "q": "Elle invite ___ (her) amis à dîner.",
+  "n": "ami",
+  "t": "poss",
+  "e": "She's inviting her friends to dinner.",
+  "b": "A1",
+  "a": "ses",
+  "pl": 1
+ },
+ {
+  "q": "Il raconte ___ (his) histoire.",
+  "n": "histoire",
+  "t": "poss",
+  "e": "He tells his story.",
+  "b": "A1",
+  "a": "son"
+ },
+ {
+  "q": "Elle téléphone à ___ (her) frère.",
+  "n": "frère",
+  "t": "poss",
+  "e": "She phones her brother.",
+  "b": "A1",
+  "a": "son"
+ },
+ {
+  "q": "Marc fête ___ (his) anniversaire samedi.",
+  "n": "anniversaire",
+  "t": "poss",
+  "e": "Marc is celebrating his birthday on Saturday.",
+  "b": "A1",
+  "a": "son"
+ },
+ {
+  "q": "Il présente ___ (his) femme à ses amis.",
+  "n": "femme",
+  "t": "poss",
+  "e": "He introduces his wife to his friends.",
+  "b": "A1",
+  "a": "sa"
+ },
+ {
+  "q": "Elle montre ___ (her) photos de vacances.",
+  "n": "photo",
+  "t": "poss",
+  "e": "She shows her holiday photos.",
+  "b": "A1",
+  "a": "ses",
+  "pl": 1
+ },
+ {
+  "q": "___ (our) maison est près de la mer.",
+  "n": "maison",
+  "t": "poss",
+  "e": "Our house is near the sea.",
+  "b": "A1",
+  "a": "notre"
+ },
+ {
+  "q": "___ (our) fils a dix ans.",
+  "n": "fils",
+  "t": "poss",
+  "e": "Our son is ten.",
+  "b": "A1",
+  "a": "notre"
+ },
+ {
+  "q": "___ (our) professeur est très gentil.",
+  "n": "professeur",
+  "t": "poss",
+  "e": "Our teacher is very kind.",
+  "b": "A2",
+  "a": "notre"
+ },
+ {
+  "q": "___ (our) enfants sont grands maintenant.",
+  "n": "enfant",
+  "t": "poss",
+  "e": "Our children are grown up now.",
+  "b": "A1",
+  "a": "nos",
+  "pl": 1
+ },
+ {
+  "q": "___ (our) amis arrivent ce soir.",
+  "n": "ami",
+  "t": "poss",
+  "e": "Our friends arrive this evening.",
+  "b": "A1",
+  "a": "nos",
+  "pl": 1
+ },
+ {
+  "q": "On adore ___ (our) quartier.",
+  "n": "quartier",
+  "t": "poss",
+  "e": "We love our neighbourhood.",
+  "b": "A2",
+  "a": "notre"
+ },
+ {
+  "q": "Nous cherchons ___ (our) chat.",
+  "n": "chat",
+  "t": "poss",
+  "e": "We're looking for our cat.",
+  "b": "A2",
+  "a": "notre"
+ },
+ {
+  "q": "Vous avez ___ (your) passeport ?",
+  "n": "passeport",
+  "t": "poss",
+  "e": "Do you have your passport?",
+  "b": "B1",
+  "a": "votre"
+ },
+ {
+  "q": "Vous pouvez épeler ___ (your) nom ?",
+  "n": "nom",
+  "t": "poss",
+  "e": "Can you spell your name?",
+  "b": "A1",
+  "a": "votre"
+ },
+ {
+  "q": "Monsieur, ___ (your) table est prête.",
+  "n": "table",
+  "t": "poss",
+  "e": "Sir, your table is ready.",
+  "b": "A1",
+  "a": "votre"
+ },
+ {
+  "q": "Madame, voici ___ (your) clé.",
+  "n": "clé",
+  "t": "poss",
+  "e": "Here's your key, madam.",
+  "b": "A1",
+  "a": "votre"
+ },
+ {
+  "q": "Vous avez ___ (your) billets ?",
+  "n": "billet",
+  "t": "poss",
+  "e": "Do you have your tickets?",
+  "b": "A2",
+  "a": "vos",
+  "pl": 1
+ },
+ {
+  "q": "Vous venez avec ___ (your) enfants ?",
+  "n": "enfant",
+  "t": "poss",
+  "e": "Are you coming with your children?",
+  "b": "A1",
+  "a": "vos",
+  "pl": 1
+ },
+ {
+  "q": "Quelle est ___ (your) adresse, madame ?",
+  "n": "adresse",
+  "t": "poss",
+  "e": "What is your address, madam?",
+  "b": "A2",
+  "a": "votre"
+ },
+ {
+  "q": "Vous aimez ___ (your) travail ?",
+  "n": "travail",
+  "t": "poss",
+  "e": "Do you like your job?",
+  "b": "A1",
+  "a": "votre"
+ },
+ {
+  "q": "Ils vendent ___ (their) maison.",
+  "n": "maison",
+  "t": "poss",
+  "e": "They're selling their house.",
+  "b": "A1",
+  "a": "leur"
+ },
+ {
+  "q": "Les voisins promènent ___ (their) chien.",
+  "n": "chien",
+  "t": "poss",
+  "e": "The neighbours are walking their dog.",
+  "b": "A1",
+  "a": "leur"
+ },
+ {
+  "q": "Ils adorent ___ (their) enfants.",
+  "n": "enfant",
+  "t": "poss",
+  "e": "They adore their children.",
+  "b": "A1",
+  "a": "leurs",
+  "pl": 1
+ },
+ {
+  "q": "Mes parents ont repeint ___ (their) cuisine.",
+  "n": "cuisine",
+  "t": "poss",
+  "e": "My parents repainted their kitchen.",
+  "b": "A2",
+  "a": "leur"
+ },
+ {
+  "q": "Elles ont perdu ___ (their) clés.",
+  "n": "clé",
+  "t": "poss",
+  "e": "They've lost their keys.",
+  "b": "A1",
+  "a": "leurs",
+  "pl": 1
+ },
+ {
+  "q": "Ils invitent ___ (their) amis.",
+  "n": "ami",
+  "t": "poss",
+  "e": "They're inviting their friends.",
+  "b": "A1",
+  "a": "leurs",
+  "pl": 1
+ },
+ {
+  "q": "Ils parlent souvent de ___ (their) voyage.",
+  "n": "voyage",
+  "t": "poss",
+  "e": "They often talk about their trip.",
+  "b": "A2",
+  "a": "leur"
+ },
+ {
+  "q": "Les élèves ouvrent ___ (their) livres.",
+  "n": "livre",
+  "t": "poss",
+  "e": "The pupils open their books.",
+  "b": "A2",
+  "a": "leurs",
+  "pl": 1
+ },
+ {
+  "q": "Mes grands-parents adorent ___ (their) jardin.",
+  "n": "jardin",
+  "t": "poss",
+  "e": "My grandparents love their garden.",
+  "b": "A2",
+  "a": "leur"
+ },
+ {
+  "q": "Ils ont une fille. ___ (their) fille s'appelle Inès.",
+  "n": "fille",
+  "t": "poss",
+  "e": "They have a daughter. Their daughter is called Inès.",
+  "b": "A1",
+  "a": "leur"
+ }
+]

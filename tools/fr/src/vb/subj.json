@@ -1,0 +1,1282 @@
+[
+ {
+  "q": "Il faut que je ___ (être) à la gare à huit heures.",
+  "v": "être",
+  "t": "subj",
+  "p": "je",
+  "e": "I have to be at the station at eight.",
+  "b": "B1"
+ },
+ {
+  "q": "Je veux que tu ___ (être) prudent sur la route.",
+  "v": "être",
+  "t": "subj",
+  "p": "tu",
+  "e": "I want you to be careful on the road.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien qu'il ___ (être) malade, Lucas est venu travailler.",
+  "v": "être",
+  "t": "subj",
+  "p": "il",
+  "e": "Although he's ill, Lucas came in to work.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que nous ___ (être) à l'heure demain.",
+  "v": "être",
+  "t": "subj",
+  "p": "nous",
+  "e": "We have to be on time tomorrow.",
+  "b": "B1"
+ },
+ {
+  "q": "Je voudrais que vous ___ (être) plus patients avec lui.",
+  "v": "être",
+  "t": "subj",
+  "p": "vous",
+  "e": "I'd like you to be more patient with him.",
+  "b": "B1"
+ },
+ {
+  "q": "Mes parents veulent que leurs enfants ___ (être) heureux.",
+  "v": "être",
+  "t": "subj",
+  "p": "ils",
+  "e": "My parents want their children to be happy.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que j'___ (avoir) mon passeport avant vendredi.",
+  "v": "avoir",
+  "t": "subj",
+  "p": "je",
+  "e": "I need to have my passport before Friday.",
+  "b": "B1"
+ },
+ {
+  "q": "Je veux que tu ___ (avoir) confiance en toi.",
+  "v": "avoir",
+  "t": "subj",
+  "p": "tu",
+  "e": "I want you to believe in yourself.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien qu'elle ___ (avoir) peu de temps, Claire nous aide toujours.",
+  "v": "avoir",
+  "t": "subj",
+  "p": "il",
+  "e": "Although she has little time, Claire always helps us.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que nous ___ (avoir) une réponse avant lundi.",
+  "v": "avoir",
+  "t": "subj",
+  "p": "nous",
+  "e": "We need to have an answer before Monday.",
+  "b": "B1"
+ },
+ {
+  "q": "Pour que vous ___ (avoir) moins froid, je ferme la fenêtre.",
+  "v": "avoir",
+  "t": "subj",
+  "p": "vous",
+  "e": "So that you're less cold, I'm closing the window.",
+  "b": "B1"
+ },
+ {
+  "q": "Je suis content que mes amis ___ (avoir) un nouveau travail.",
+  "v": "avoir",
+  "t": "subj",
+  "p": "ils",
+  "e": "I'm glad my friends have a new job.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que tu ___ (aller) chez le dentiste.",
+  "v": "aller",
+  "t": "subj",
+  "p": "tu",
+  "e": "You have to go to the dentist.",
+  "b": "B1"
+ },
+ {
+  "q": "Je veux qu'il ___ (aller) se coucher maintenant.",
+  "v": "aller",
+  "t": "subj",
+  "p": "il",
+  "e": "I want him to go to bed now.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que nous ___ (aller) à la banque ce matin.",
+  "v": "aller",
+  "t": "subj",
+  "p": "nous",
+  "e": "We need to go to the bank this morning.",
+  "b": "B1"
+ },
+ {
+  "q": "Avant que vous ___ (aller) au lit, brossez-vous les dents.",
+  "v": "aller",
+  "t": "subj",
+  "p": "vous",
+  "e": "Before you go to bed, brush your teeth.",
+  "b": "B1"
+ },
+ {
+  "q": "Je ne veux pas que les enfants ___ (aller) seuls au parc.",
+  "v": "aller",
+  "t": "subj",
+  "p": "ils",
+  "e": "I don't want the children to go to the park alone.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que je ___ (faire) les courses avant midi.",
+  "v": "faire",
+  "t": "subj",
+  "p": "je",
+  "e": "I have to do the shopping before noon.",
+  "b": "B1"
+ },
+ {
+  "q": "Je veux que tu ___ (faire) tes devoirs tout de suite.",
+  "v": "faire",
+  "t": "subj",
+  "p": "tu",
+  "e": "I want you to do your homework right now.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien qu'il ___ (faire) froid, nous allons à la plage.",
+  "v": "faire",
+  "t": "subj",
+  "p": "il",
+  "e": "Although it's cold, we're going to the beach.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que nous ___ (faire) attention à l'argent ce mois-ci.",
+  "v": "faire",
+  "t": "subj",
+  "p": "nous",
+  "e": "We need to be careful with money this month.",
+  "b": "B1"
+ },
+ {
+  "q": "Je veux que vous ___ (faire) moins de bruit le soir.",
+  "v": "faire",
+  "t": "subj",
+  "p": "vous",
+  "e": "I want you to make less noise in the evening.",
+  "b": "B1"
+ },
+ {
+  "q": "Le prof veut que les élèves ___ (faire) cet exercice à la maison.",
+  "v": "faire",
+  "t": "subj",
+  "p": "ils",
+  "e": "The teacher wants the pupils to do this exercise at home.",
+  "b": "B1"
+ },
+ {
+  "q": "Parle plus fort pour que je ___ (pouvoir) t'entendre.",
+  "v": "pouvoir",
+  "t": "subj",
+  "p": "je",
+  "e": "Speak louder so that I can hear you.",
+  "b": "B1"
+ },
+ {
+  "q": "Je t'explique encore pour que tu ___ (pouvoir) comprendre.",
+  "v": "pouvoir",
+  "t": "subj",
+  "p": "tu",
+  "e": "I'll explain again so that you can understand.",
+  "b": "B1"
+ },
+ {
+  "q": "Je laisse la porte ouverte pour que le chat ___ (pouvoir) sortir.",
+  "v": "pouvoir",
+  "t": "subj",
+  "p": "il",
+  "e": "I'm leaving the door open so that the cat can go out.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut partir tôt pour que nous ___ (pouvoir) trouver une place.",
+  "v": "pouvoir",
+  "t": "subj",
+  "p": "nous",
+  "e": "We have to leave early so that we can find a seat.",
+  "b": "B1"
+ },
+ {
+  "q": "Je vous donne ma clé pour que vous ___ (pouvoir) entrer.",
+  "v": "pouvoir",
+  "t": "subj",
+  "p": "vous",
+  "e": "I'm giving you my key so that you can get in.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien qu'ils ___ (pouvoir) venir, ils préfèrent rester chez eux.",
+  "v": "pouvoir",
+  "t": "subj",
+  "p": "ils",
+  "e": "Although they can come, they'd rather stay at home.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que je ___ (savoir) la réponse avant ce soir.",
+  "v": "savoir",
+  "t": "subj",
+  "p": "je",
+  "e": "I need to know the answer before tonight.",
+  "b": "B1"
+ },
+ {
+  "q": "Je veux que tu ___ (savoir) la vérité.",
+  "v": "savoir",
+  "t": "subj",
+  "p": "tu",
+  "e": "I want you to know the truth.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que Paul ___ (savoir) nager avant les vacances.",
+  "v": "savoir",
+  "t": "subj",
+  "p": "il",
+  "e": "Paul needs to be able to swim before the holidays.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que nous ___ (savoir) combien vous serez samedi.",
+  "v": "savoir",
+  "t": "subj",
+  "p": "nous",
+  "e": "We need to know how many of you there will be on Saturday.",
+  "b": "B1"
+ },
+ {
+  "q": "Je veux que vous ___ (savoir) que je suis là pour vous.",
+  "v": "savoir",
+  "t": "subj",
+  "p": "vous",
+  "e": "I want you to know that I'm here for you.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien qu'ils ___ (savoir) parler anglais, ils ont peur de se tromper.",
+  "v": "savoir",
+  "t": "subj",
+  "p": "ils",
+  "e": "Although they can speak English, they're afraid of making mistakes.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien que je ___ (vouloir) t'aider, je ne peux pas ce soir.",
+  "v": "vouloir",
+  "t": "subj",
+  "p": "je",
+  "e": "Although I want to help you, I can't tonight.",
+  "b": "B1"
+ },
+ {
+  "q": "Je ne pense pas que tu ___ (vouloir) vraiment partir.",
+  "v": "vouloir",
+  "t": "subj",
+  "p": "tu",
+  "e": "I don't think you really want to leave.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien qu'il ___ (vouloir) gagner, il reste modeste.",
+  "v": "vouloir",
+  "t": "subj",
+  "p": "il",
+  "e": "Although he wants to win, he stays modest.",
+  "b": "B1"
+ },
+ {
+  "q": "Il est normal qu'ils ___ (vouloir) voir leurs petits-enfants.",
+  "v": "vouloir",
+  "t": "subj",
+  "p": "ils",
+  "e": "It's natural that they want to see their grandchildren.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien que nous ___ (vouloir) partir, nous restons encore un peu.",
+  "v": "vouloir",
+  "t": "subj",
+  "p": "nous",
+  "e": "Although we want to leave, we're staying a little longer.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que je ___ (parler) à mon patron demain.",
+  "v": "parler",
+  "t": "subj",
+  "p": "je",
+  "e": "I have to talk to my boss tomorrow.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que tu ___ (finir) ton assiette avant le dessert.",
+  "v": "finir",
+  "t": "subj",
+  "p": "tu",
+  "e": "You have to finish your plate before dessert.",
+  "b": "B1"
+ },
+ {
+  "q": "Je veux que Julie ___ (venir) à mon anniversaire.",
+  "v": "venir",
+  "t": "subj",
+  "p": "il",
+  "e": "I want Julie to come to my birthday party.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que nous ___ (partir) avant la nuit.",
+  "v": "partir",
+  "t": "subj",
+  "p": "nous",
+  "e": "We have to leave before dark.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que vous ___ (prendre) ce médicament deux fois par jour.",
+  "v": "prendre",
+  "t": "subj",
+  "p": "vous",
+  "e": "You have to take this medicine twice a day.",
+  "b": "B1"
+ },
+ {
+  "q": "Je répète pour que les élèves ___ (comprendre) bien.",
+  "v": "comprendre",
+  "t": "subj",
+  "p": "ils",
+  "e": "I'm saying it again so that the pupils understand properly.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que je ___ (partir) maintenant, à demain !",
+  "v": "partir",
+  "t": "subj",
+  "p": "je",
+  "e": "I have to go now, see you tomorrow!",
+  "b": "B1"
+ },
+ {
+  "q": "Je veux que tu ___ (venir) avec moi chez le médecin.",
+  "v": "venir",
+  "t": "subj",
+  "p": "tu",
+  "e": "I want you to come with me to the doctor's.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut qu'il nous ___ (dire) la vérité.",
+  "v": "dire",
+  "t": "subj",
+  "p": "il",
+  "e": "He has to tell us the truth.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que nous ___ (prendre) une décision aujourd'hui.",
+  "v": "prendre",
+  "t": "subj",
+  "p": "nous",
+  "e": "We have to make a decision today.",
+  "b": "B1"
+ },
+ {
+  "q": "Je voudrais que vous ___ (venir) dîner samedi soir.",
+  "v": "venir",
+  "t": "subj",
+  "p": "vous",
+  "e": "I'd like you to come to dinner on Saturday evening.",
+  "b": "B1"
+ },
+ {
+  "q": "Je préfère que mes invités ___ (partir) avant minuit.",
+  "v": "partir",
+  "t": "subj",
+  "p": "ils",
+  "e": "I'd rather my guests left before midnight.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que je ___ (mettre) un manteau, il fait froid.",
+  "v": "mettre",
+  "t": "subj",
+  "p": "je",
+  "e": "I need to put a coat on, it's cold.",
+  "b": "B1"
+ },
+ {
+  "q": "Je veux que tu ___ (lire) ce livre, il est génial.",
+  "v": "lire",
+  "t": "subj",
+  "p": "tu",
+  "e": "I want you to read this book, it's brilliant.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que Thomas ___ (écrire) une lettre de motivation.",
+  "v": "écrire",
+  "t": "subj",
+  "p": "il",
+  "e": "Thomas needs to write a cover letter.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que nous ___ (attendre) le prochain train.",
+  "v": "attendre",
+  "t": "subj",
+  "p": "nous",
+  "e": "We have to wait for the next train.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que vous ___ (répondre) avant vendredi.",
+  "v": "répondre",
+  "t": "subj",
+  "p": "vous",
+  "e": "You have to reply before Friday.",
+  "b": "B1"
+ },
+ {
+  "q": "Je veux que mes enfants ___ (apprendre) une deuxième langue.",
+  "v": "apprendre",
+  "t": "subj",
+  "p": "ils",
+  "e": "I want my children to learn a second language.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que je ___ (dormir) un peu, je suis épuisé.",
+  "v": "dormir",
+  "t": "subj",
+  "p": "je",
+  "e": "I need to sleep a bit, I'm exhausted.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que tu ___ (boire) beaucoup d'eau quand il fait chaud.",
+  "v": "boire",
+  "t": "subj",
+  "p": "tu",
+  "e": "You need to drink lots of water when it's hot.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que le médecin ___ (voir) cette blessure.",
+  "v": "voir",
+  "t": "subj",
+  "p": "il",
+  "e": "The doctor needs to see this injury.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien que nous ne nous ___ (voir) pas souvent, nous restons amis.",
+  "v": "voir",
+  "t": "subj",
+  "p": "nous",
+  "e": "Although we don't see each other often, we're still friends.",
+  "b": "B1"
+ },
+ {
+  "q": "Je veux que vous me ___ (dire) ce que vous pensez.",
+  "v": "dire",
+  "t": "subj",
+  "p": "vous",
+  "e": "I want you to tell me what you think.",
+  "b": "B1"
+ },
+ {
+  "q": "Avant que les invités ___ (venir), je dois ranger le salon.",
+  "v": "venir",
+  "t": "subj",
+  "p": "ils",
+  "e": "Before the guests come, I have to tidy the living room.",
+  "b": "B1"
+ },
+ {
+  "q": "Mes parents veulent que je ___ (rentrer) avant minuit.",
+  "v": "rentrer",
+  "t": "subj",
+  "p": "je",
+  "e": "My parents want me to be home before midnight.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que tu ___ (choisir) entre les deux.",
+  "v": "choisir",
+  "t": "subj",
+  "p": "tu",
+  "e": "You have to choose between the two.",
+  "b": "B1"
+ },
+ {
+  "q": "Je travaille avec lui pour qu'il ___ (réussir) son examen.",
+  "v": "réussir",
+  "t": "subj",
+  "p": "il",
+  "e": "I work with him so that he passes his exam.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que nous ___ (finir) ce projet avant l'été.",
+  "v": "finir",
+  "t": "subj",
+  "p": "nous",
+  "e": "We have to finish this project before the summer.",
+  "b": "B1"
+ },
+ {
+  "q": "Ce soir, je veux que vous ___ (choisir) le restaurant.",
+  "v": "choisir",
+  "t": "subj",
+  "p": "vous",
+  "e": "Tonight I want you to choose the restaurant.",
+  "b": "B1"
+ },
+ {
+  "q": "Profitons de ces moments avant que les enfants ___ (grandir).",
+  "v": "grandir",
+  "t": "subj",
+  "p": "ils",
+  "e": "Let's make the most of these moments before the children grow up.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que je ___ (recevoir) le colis avant mon départ.",
+  "v": "recevoir",
+  "t": "subj",
+  "p": "je",
+  "e": "I need to get the parcel before I leave.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que tu ___ (connaître) mes parents, ils sont adorables.",
+  "v": "connaître",
+  "t": "subj",
+  "p": "tu",
+  "e": "You must meet my parents, they're lovely.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien qu'il ___ (devoir) travailler samedi, il viendra à la fête.",
+  "v": "devoir",
+  "t": "subj",
+  "p": "il",
+  "e": "Although he has to work on Saturday, he'll come to the party.",
+  "b": "B1"
+ },
+ {
+  "q": "Ma mère ne veut pas que je ___ (sortir) ce soir.",
+  "v": "sortir",
+  "t": "subj",
+  "p": "je",
+  "e": "My mother doesn't want me to go out tonight.",
+  "b": "B1"
+ },
+ {
+  "q": "Avant que tu ___ (sortir), mets ton écharpe.",
+  "v": "sortir",
+  "t": "subj",
+  "p": "tu",
+  "e": "Before you go out, put your scarf on.",
+  "b": "B1"
+ },
+ {
+  "q": "J'ai peur qu'il ___ (pleuvoir) demain.",
+  "v": "pleuvoir",
+  "t": "subj",
+  "p": "il",
+  "e": "I'm afraid it will rain tomorrow.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que j'___ (appeler) ma grand-mère ce soir.",
+  "v": "appeler",
+  "t": "subj",
+  "p": "je",
+  "e": "I have to call my grandmother tonight.",
+  "b": "B1"
+ },
+ {
+  "q": "Je veux que tu m'___ (appeler) dès ton arrivée.",
+  "v": "appeler",
+  "t": "subj",
+  "p": "tu",
+  "e": "I want you to call me as soon as you arrive.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que nous ___ (appeler) un plombier.",
+  "v": "appeler",
+  "t": "subj",
+  "p": "nous",
+  "e": "We need to call a plumber.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que vous ___ (acheter) vos billets à l'avance.",
+  "v": "acheter",
+  "t": "subj",
+  "p": "vous",
+  "e": "You need to buy your tickets in advance.",
+  "b": "B1"
+ },
+ {
+  "q": "Je veux que mes collègues m'___ (envoyer) le rapport ce soir.",
+  "v": "envoyer",
+  "t": "subj",
+  "p": "ils",
+  "e": "I want my colleagues to send me the report tonight.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que nous ___ (payer) le loyer avant le cinq.",
+  "v": "payer",
+  "t": "subj",
+  "p": "nous",
+  "e": "We have to pay the rent before the fifth.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que j'___ (aider) ma sœur à déménager.",
+  "v": "aider",
+  "t": "subj",
+  "p": "je",
+  "e": "I have to help my sister move.",
+  "b": "B1"
+ },
+ {
+  "q": "Je veux que tu m'___ (aider) à préparer le dîner.",
+  "v": "aider",
+  "t": "subj",
+  "p": "tu",
+  "e": "I want you to help me make dinner.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut qu'on ___ (aider) les voisins, ils sont âgés.",
+  "v": "aider",
+  "t": "subj",
+  "p": "il",
+  "e": "We have to help the neighbours, they're elderly.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que nous ___ (travailler) plus ensemble.",
+  "v": "travailler",
+  "t": "subj",
+  "p": "nous",
+  "e": "We need to work together more.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien que vous ___ (travailler) beaucoup, vous gardez le sourire.",
+  "v": "travailler",
+  "t": "subj",
+  "p": "vous",
+  "e": "Although you work a lot, you keep smiling.",
+  "b": "B1"
+ },
+ {
+  "q": "Je préfère que les enfants ___ (jouer) dehors.",
+  "v": "jouer",
+  "t": "subj",
+  "p": "ils",
+  "e": "I'd rather the children played outside.",
+  "b": "B1"
+ },
+ {
+  "q": "Le médecin veut que je ___ (manger) moins de sucre.",
+  "v": "manger",
+  "t": "subj",
+  "p": "je",
+  "e": "The doctor wants me to eat less sugar.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que nous ___ (manger) avant de partir.",
+  "v": "manger",
+  "t": "subj",
+  "p": "nous",
+  "e": "We need to eat before we leave.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que vous m'___ (écouter) attentivement.",
+  "v": "écouter",
+  "t": "subj",
+  "p": "vous",
+  "e": "You need to listen to me carefully.",
+  "b": "B1"
+ },
+ {
+  "q": "Je veux que tu ___ (écouter) cette chanson.",
+  "v": "écouter",
+  "t": "subj",
+  "p": "tu",
+  "e": "I want you to listen to this song.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien qu'ils ___ (parler) français, ils préfèrent l'anglais.",
+  "v": "parler",
+  "t": "subj",
+  "p": "ils",
+  "e": "Although they speak French, they prefer English.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que j'___ (attendre) le facteur ce matin.",
+  "v": "attendre",
+  "t": "subj",
+  "p": "je",
+  "e": "I have to wait for the postman this morning.",
+  "b": "B1"
+ },
+ {
+  "q": "Je veux qu'il m'___ (attendre) devant l'école.",
+  "v": "attendre",
+  "t": "subj",
+  "p": "il",
+  "e": "I want him to wait for me outside the school.",
+  "b": "B1"
+ },
+ {
+  "q": "Je préfère que tu ___ (rester) à la maison ce soir.",
+  "v": "rester",
+  "t": "subj",
+  "p": "tu",
+  "e": "I'd rather you stayed at home tonight.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que vous ___ (rester) au lit trois jours.",
+  "v": "rester",
+  "t": "subj",
+  "p": "vous",
+  "e": "You have to stay in bed for three days.",
+  "b": "B1"
+ },
+ {
+  "q": "Avant que le train ___ (arriver), achetons un café.",
+  "v": "arriver",
+  "t": "subj",
+  "p": "il",
+  "e": "Before the train arrives, let's buy a coffee.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que nous ___ (arriver) avant le début du film.",
+  "v": "arriver",
+  "t": "subj",
+  "p": "nous",
+  "e": "We need to get there before the film starts.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que tu me ___ (dire) ce qui se passe.",
+  "v": "dire",
+  "t": "subj",
+  "p": "tu",
+  "e": "You have to tell me what's going on.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que je ___ (lire) ce dossier ce soir.",
+  "v": "lire",
+  "t": "subj",
+  "p": "je",
+  "e": "I have to read this file tonight.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que vous ___ (mettre) vos noms sur la liste.",
+  "v": "mettre",
+  "t": "subj",
+  "p": "vous",
+  "e": "You need to put your names on the list.",
+  "b": "B1"
+ },
+ {
+  "q": "Le médecin veut que mon père ___ (boire) moins de café.",
+  "v": "boire",
+  "t": "subj",
+  "p": "il",
+  "e": "The doctor wants my father to drink less coffee.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que les enfants ___ (dormir) au moins dix heures.",
+  "v": "dormir",
+  "t": "subj",
+  "p": "ils",
+  "e": "The children need to sleep at least ten hours.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien que tu ___ (partir) demain, on peut encore se voir ce soir.",
+  "v": "partir",
+  "t": "subj",
+  "p": "tu",
+  "e": "Although you're leaving tomorrow, we can still see each other tonight.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien que nous ___ (sortir) peu, nous connaissons les restaurants du quartier.",
+  "v": "sortir",
+  "t": "subj",
+  "p": "nous",
+  "e": "Although we don't go out much, we know the local restaurants.",
+  "b": "B1"
+ },
+ {
+  "q": "Avant que vous ___ (partir), je voudrais vous remercier.",
+  "v": "partir",
+  "t": "subj",
+  "p": "vous",
+  "e": "Before you leave, I'd like to thank you.",
+  "b": "B1"
+ },
+ {
+  "q": "Il est possible que le magasin ___ (être) fermé lundi.",
+  "v": "être",
+  "t": "subj",
+  "p": "il",
+  "e": "The shop may be closed on Monday.",
+  "b": "B1"
+ },
+ {
+  "q": "Je ne crois pas qu'il y ___ (avoir) un bus le dimanche.",
+  "v": "avoir",
+  "t": "subj",
+  "p": "il",
+  "e": "I don't think there's a bus on Sundays.",
+  "b": "B1"
+ },
+ {
+  "q": "Je suis triste que mes amis ___ (être) si loin.",
+  "v": "être",
+  "t": "subj",
+  "p": "ils",
+  "e": "I'm sad that my friends are so far away.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien que tu ___ (être) fatigué, tu dois finir ce travail.",
+  "v": "être",
+  "t": "subj",
+  "p": "tu",
+  "e": "Although you're tired, you have to finish this work.",
+  "b": "B1"
+ },
+ {
+  "q": "Mes parents sont contents que je ___ (être) en bonne santé.",
+  "v": "être",
+  "t": "subj",
+  "p": "je",
+  "e": "My parents are glad I'm in good health.",
+  "b": "B1"
+ },
+ {
+  "q": "Pour que vous ___ (être) à l'aise, mettez-vous ici.",
+  "v": "être",
+  "t": "subj",
+  "p": "vous",
+  "e": "So that you're comfortable, sit here.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien que nous ___ (avoir) deux voitures, nous prenons souvent le vélo.",
+  "v": "avoir",
+  "t": "subj",
+  "p": "nous",
+  "e": "Although we have two cars, we often take the bike.",
+  "b": "B1"
+ },
+ {
+  "q": "Avant que tu ___ (avoir) froid, prends ce pull.",
+  "v": "avoir",
+  "t": "subj",
+  "p": "tu",
+  "e": "Before you get cold, take this jumper.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que les élèves ___ (avoir) leur cahier demain.",
+  "v": "avoir",
+  "t": "subj",
+  "p": "ils",
+  "e": "The pupils must have their exercise books tomorrow.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien que Louis ___ (aller) mieux, il reste à la maison.",
+  "v": "aller",
+  "t": "subj",
+  "p": "il",
+  "e": "Although Louis is better, he's staying at home.",
+  "b": "B1"
+ },
+ {
+  "q": "Je préfère que tu ___ (aller) au marché avant midi.",
+  "v": "aller",
+  "t": "subj",
+  "p": "tu",
+  "e": "I'd rather you went to the market before noon.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que vous ___ (aller) voir ce film, il est superbe.",
+  "v": "aller",
+  "t": "subj",
+  "p": "vous",
+  "e": "You must go and see this film, it's superb.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien qu'ils ___ (aller) à la même école, ils ne se parlent pas.",
+  "v": "aller",
+  "t": "subj",
+  "p": "ils",
+  "e": "Although they go to the same school, they don't talk to each other.",
+  "b": "B1"
+ },
+ {
+  "q": "Je veux que nous ___ (aller) ensemble à la fête.",
+  "v": "aller",
+  "t": "subj",
+  "p": "nous",
+  "e": "I want us to go to the party together.",
+  "b": "B1"
+ },
+ {
+  "q": "Mon chef veut que je ___ (faire) des heures supplémentaires.",
+  "v": "faire",
+  "t": "subj",
+  "p": "je",
+  "e": "My boss wants me to do overtime.",
+  "b": "B1"
+ },
+ {
+  "q": "Avant que tu ___ (faire) une bêtise, réfléchis bien.",
+  "v": "faire",
+  "t": "subj",
+  "p": "tu",
+  "e": "Before you do something silly, think carefully.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut qu'il ___ (faire) beau pour le pique-nique de samedi.",
+  "v": "faire",
+  "t": "subj",
+  "p": "il",
+  "e": "The weather has to be nice for Saturday's picnic.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien que vous ___ (faire) des efforts, il faut continuer.",
+  "v": "faire",
+  "t": "subj",
+  "p": "vous",
+  "e": "Although you're making an effort, you have to keep going.",
+  "b": "B1"
+ },
+ {
+  "q": "Je ne veux pas qu'ils ___ (faire) la fête trop tard.",
+  "v": "faire",
+  "t": "subj",
+  "p": "ils",
+  "e": "I don't want them to party too late.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien que je ___ (pouvoir) marcher, je préfère prendre le bus.",
+  "v": "pouvoir",
+  "t": "subj",
+  "p": "je",
+  "e": "Although I could walk, I prefer to take the bus.",
+  "b": "B1"
+ },
+ {
+  "q": "Je ne pense pas que tu ___ (pouvoir) entrer sans billet.",
+  "v": "pouvoir",
+  "t": "subj",
+  "p": "tu",
+  "e": "I don't think you can get in without a ticket.",
+  "b": "B1"
+ },
+ {
+  "q": "Il est possible qu'il ___ (pouvoir) venir demain.",
+  "v": "pouvoir",
+  "t": "subj",
+  "p": "il",
+  "e": "He may be able to come tomorrow.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien que vous ___ (pouvoir) entrer gratuitement, il faut réserver.",
+  "v": "pouvoir",
+  "t": "subj",
+  "p": "vous",
+  "e": "Although you can get in for free, you have to book.",
+  "b": "B1"
+ },
+ {
+  "q": "Je parle lentement pour que mes élèves ___ (pouvoir) suivre.",
+  "v": "pouvoir",
+  "t": "subj",
+  "p": "ils",
+  "e": "I speak slowly so that my pupils can follow.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien que nous ___ (pouvoir) choisir, nous prenons toujours le même plat.",
+  "v": "pouvoir",
+  "t": "subj",
+  "p": "nous",
+  "e": "Although we can choose, we always have the same dish.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien que je ___ (savoir) nager, j'ai peur de l'eau.",
+  "v": "savoir",
+  "t": "subj",
+  "p": "je",
+  "e": "Although I can swim, I'm afraid of water.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que tu ___ (savoir) ton texte par cœur pour lundi.",
+  "v": "savoir",
+  "t": "subj",
+  "p": "tu",
+  "e": "You need to know your lines by heart for Monday.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien qu'il ___ (savoir) cuisiner, Antoine mange toujours au restaurant.",
+  "v": "savoir",
+  "t": "subj",
+  "p": "il",
+  "e": "Although he can cook, Antoine always eats out.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que vous ___ (savoir) une chose importante.",
+  "v": "savoir",
+  "t": "subj",
+  "p": "vous",
+  "e": "There's something important you need to know.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que les enfants ___ (savoir) traverser la rue seuls.",
+  "v": "savoir",
+  "t": "subj",
+  "p": "ils",
+  "e": "Children need to know how to cross the road alone.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien que nous ___ (savoir) la réponse, nous ne disons rien.",
+  "v": "savoir",
+  "t": "subj",
+  "p": "nous",
+  "e": "Although we know the answer, we say nothing.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien que tu ___ (vouloir) rester, il faut partir.",
+  "v": "vouloir",
+  "t": "subj",
+  "p": "tu",
+  "e": "Although you want to stay, we have to leave.",
+  "b": "B1"
+ },
+ {
+  "q": "Je comprends que vous ___ (vouloir) partir plus tôt.",
+  "v": "vouloir",
+  "t": "subj",
+  "p": "vous",
+  "e": "I understand that you want to leave earlier.",
+  "b": "B1"
+ },
+ {
+  "q": "Je doute qu'il ___ (vouloir) venir avec nous.",
+  "v": "vouloir",
+  "t": "subj",
+  "p": "il",
+  "e": "I doubt he wants to come with us.",
+  "b": "B1"
+ },
+ {
+  "q": "Bien que mes amis ___ (vouloir) m'aider, ils n'ont pas le temps.",
+  "v": "vouloir",
+  "t": "subj",
+  "p": "ils",
+  "e": "Although my friends want to help me, they don't have time.",
+  "b": "B1"
+ },
+ {
+  "q": "Ma tante veut que je ___ (venir) la voir à Noël.",
+  "v": "venir",
+  "t": "subj",
+  "p": "je",
+  "e": "My aunt wants me to come and see her at Christmas.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que nous ___ (venir) te chercher à quelle heure ?",
+  "v": "venir",
+  "t": "subj",
+  "p": "nous",
+  "e": "What time do we need to come and pick you up?",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que les voyageurs ___ (prendre) leur billet à l'avance.",
+  "v": "prendre",
+  "t": "subj",
+  "p": "ils",
+  "e": "Travellers need to get their tickets in advance.",
+  "b": "B1"
+ },
+ {
+  "q": "Le médecin veut que je ___ (prendre) des vacances.",
+  "v": "prendre",
+  "t": "subj",
+  "p": "je",
+  "e": "The doctor wants me to take a holiday.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que tu ___ (prendre) le bus de sept heures.",
+  "v": "prendre",
+  "t": "subj",
+  "p": "tu",
+  "e": "You need to take the seven o'clock bus.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que Zoé ___ (mettre) ses bottes, il pleut.",
+  "v": "mettre",
+  "t": "subj",
+  "p": "il",
+  "e": "Zoé needs to put her boots on, it's raining.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que nous lui ___ (dire) merci.",
+  "v": "dire",
+  "t": "subj",
+  "p": "nous",
+  "e": "We have to say thank you to him.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que vous ___ (lire) les instructions avant de commencer.",
+  "v": "lire",
+  "t": "subj",
+  "p": "vous",
+  "e": "You must read the instructions before you start.",
+  "b": "B1"
+ },
+ {
+  "q": "Attends-moi, il faut que je ___ (finir) ce mail.",
+  "v": "finir",
+  "t": "subj",
+  "p": "je",
+  "e": "Wait for me, I have to finish this email.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que le chantier ___ (finir) avant l'hiver.",
+  "v": "finir",
+  "t": "subj",
+  "p": "il",
+  "e": "The building work has to be finished before winter.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que tu ___ (vendre) ta vieille voiture.",
+  "v": "vendre",
+  "t": "subj",
+  "p": "tu",
+  "e": "You need to sell your old car.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que nous ___ (descendre) au prochain arrêt.",
+  "v": "descendre",
+  "t": "subj",
+  "p": "nous",
+  "e": "We have to get off at the next stop.",
+  "b": "B1"
+ },
+ {
+  "q": "Je ne veux pas que mon équipe ___ (perdre) ce match.",
+  "v": "perdre",
+  "t": "subj",
+  "p": "il",
+  "e": "I don't want my team to lose this match.",
+  "b": "B1"
+ },
+ {
+  "q": "Je parle fort pour que vous m'___ (entendre) au fond.",
+  "v": "entendre",
+  "t": "subj",
+  "p": "vous",
+  "e": "I'm speaking loudly so that you can hear me at the back.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que je ___ (connaître) mieux la ville avant d'y habiter.",
+  "v": "connaître",
+  "t": "subj",
+  "p": "je",
+  "e": "I need to know the town better before I live there.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que tu ___ (courir) si tu veux attraper le bus.",
+  "v": "courir",
+  "t": "subj",
+  "p": "tu",
+  "e": "You have to run if you want to catch the bus.",
+  "b": "B1"
+ },
+ {
+  "q": "Il faut que les magasins ___ (ouvrir) plus tôt le samedi.",
+  "v": "ouvrir",
+  "t": "subj",
+  "p": "ils",
+  "e": "The shops need to open earlier on Saturdays.",
+  "b": "B1"
+ },
+ {
+  "q": "Je suis content que ce cadeau te ___ (plaire).",
+  "v": "plaire",
+  "t": "subj",
+  "p": "il",
+  "e": "I'm glad you like this present.",
+  "b": "B1"
+ }
+]

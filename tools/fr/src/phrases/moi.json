@@ -1,0 +1,551 @@
+[
+ {
+  "fr": "Je m'appelle Claire.",
+  "en": "My name is Claire.",
+  "th": "moi",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Moi, c'est Julien.",
+  "en": "I'm Julien.",
+  "th": "moi",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Comment tu t'appelles ?",
+  "en": "What's your name?",
+  "alt": [
+   "Tu t'appelles comment ?"
+  ],
+  "th": "moi",
+  "b": "A1",
+  "t": 1,
+  "n": "tu: with friends."
+ },
+ {
+  "fr": "Comment vous appelez-vous ?",
+  "en": "What's your name?",
+  "alt": [
+   "Vous vous appelez comment ?"
+  ],
+  "th": "moi",
+  "b": "A1",
+  "t": 1,
+  "n": "vous: polite."
+ },
+ {
+  "fr": "Mon nom de famille est Martin.",
+  "en": "My surname is Martin.",
+  "th": "moi",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "D'où viens-tu ?",
+  "en": "Where are you from?",
+  "alt": [
+   "Tu viens d'où ?"
+  ],
+  "th": "moi",
+  "b": "A1",
+  "t": 1,
+  "n": "tu: with friends."
+ },
+ {
+  "fr": "D'où venez-vous ?",
+  "en": "Where are you from?",
+  "alt": [
+   "Vous venez d'où ?"
+  ],
+  "th": "moi",
+  "b": "A1",
+  "t": 1,
+  "n": "vous: polite."
+ },
+ {
+  "fr": "Je viens d'Angleterre.",
+  "en": "I'm from England.",
+  "th": "moi",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Je viens des États-Unis.",
+  "en": "I'm from the United States.",
+  "th": "moi",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je suis de Londres.",
+  "en": "I'm from London.",
+  "th": "moi",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Je suis anglais.",
+  "en": "I'm English.",
+  "alt": [
+   "Je suis anglaise."
+  ],
+  "th": "moi",
+  "b": "A1",
+  "t": 1,
+  "n": "Anglaise if you are a woman. No capital letter."
+ },
+ {
+  "fr": "Je suis américaine.",
+  "en": "I'm American.",
+  "alt": [
+   "Je suis américain."
+  ],
+  "th": "moi",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "J'habite à Paris.",
+  "en": "I live in Paris.",
+  "th": "moi",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Où est-ce que tu habites ?",
+  "en": "Where do you live?",
+  "alt": [
+   "Tu habites où ?",
+   "Où habites-tu ?"
+  ],
+  "th": "moi",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "J'habite ici depuis deux ans.",
+  "en": "I've lived here for two years.",
+  "th": "moi",
+  "b": "A2",
+  "t": 2,
+  "n": "French uses the present with depuis."
+ },
+ {
+  "fr": "Je suis en France pour le travail.",
+  "en": "I'm in France for work.",
+  "th": "moi",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je suis ici en vacances.",
+  "en": "I'm here on holiday.",
+  "th": "moi",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "C'est ma première fois en France.",
+  "en": "It's my first time in France.",
+  "th": "moi",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Quel âge as-tu ?",
+  "en": "How old are you?",
+  "alt": [
+   "Tu as quel âge ?"
+  ],
+  "th": "moi",
+  "b": "A1",
+  "t": 1,
+  "n": "tu: with friends."
+ },
+ {
+  "fr": "J'ai trente ans.",
+  "en": "I'm thirty.",
+  "th": "moi",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: I have thirty years."
+ },
+ {
+  "fr": "J'ai presque quarante ans.",
+  "en": "I'm almost forty.",
+  "th": "moi",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Qu'est-ce que tu fais dans la vie ?",
+  "en": "What do you do for a living?",
+  "alt": [
+   "Tu fais quoi dans la vie ?"
+  ],
+  "th": "moi",
+  "b": "A2",
+  "t": 1,
+  "n": "Literally: what do you do in life?"
+ },
+ {
+  "fr": "Vous faites quoi comme travail ?",
+  "en": "What do you do for work?",
+  "alt": [
+   "Quel est votre métier ?"
+  ],
+  "th": "moi",
+  "b": "A2",
+  "t": 2,
+  "n": "vous: polite."
+ },
+ {
+  "fr": "Je suis professeur.",
+  "en": "I'm a teacher.",
+  "alt": [
+   "Je suis prof."
+  ],
+  "th": "moi",
+  "b": "A1",
+  "t": 1,
+  "n": "No un or une before a job."
+ },
+ {
+  "fr": "Je suis infirmière.",
+  "en": "I'm a nurse.",
+  "alt": [
+   "Je suis infirmier."
+  ],
+  "th": "moi",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je travaille dans un bureau.",
+  "en": "I work in an office.",
+  "th": "moi",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je travaille à la maison.",
+  "en": "I work from home.",
+  "alt": [
+   "Je fais du télétravail."
+  ],
+  "th": "moi",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je suis étudiant.",
+  "en": "I'm a student.",
+  "alt": [
+   "Je suis étudiante."
+  ],
+  "th": "moi",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "J'étudie la médecine.",
+  "en": "I study medicine.",
+  "th": "moi",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je suis à la retraite.",
+  "en": "I'm retired.",
+  "alt": [
+   "Je suis retraité.",
+   "Je suis retraitée."
+  ],
+  "th": "moi",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je cherche du travail.",
+  "en": "I'm looking for work.",
+  "alt": [
+   "Je cherche un emploi.",
+   "Je me cherche une job."
+  ],
+  "th": "moi",
+  "b": "A2",
+  "t": 2,
+  "n": "Une job is Québécois."
+ },
+ {
+  "fr": "Je suis marié.",
+  "en": "I'm married.",
+  "alt": [
+   "Je suis mariée."
+  ],
+  "th": "moi",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Je suis célibataire.",
+  "en": "I'm single.",
+  "th": "moi",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "J'ai un copain.",
+  "en": "I have a boyfriend.",
+  "alt": [
+   "J'ai un petit ami.",
+   "J'ai un chum."
+  ],
+  "th": "moi",
+  "b": "A2",
+  "t": 2,
+  "n": "Une copine is a girlfriend. Chum is Québécois."
+ },
+ {
+  "fr": "Voici mon mari.",
+  "en": "This is my husband.",
+  "th": "moi",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Je te présente ma femme.",
+  "en": "This is my wife.",
+  "alt": [
+   "Je vous présente ma femme."
+  ],
+  "th": "moi",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: I present my wife to you."
+ },
+ {
+  "fr": "J'ai deux enfants.",
+  "en": "I have two children.",
+  "th": "moi",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Je n'ai pas d'enfants.",
+  "en": "I don't have children.",
+  "th": "moi",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Tu as des frères et sœurs ?",
+  "en": "Do you have brothers and sisters?",
+  "alt": [
+   "Vous avez des frères et sœurs ?"
+  ],
+  "th": "moi",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "J'ai une sœur et un frère.",
+  "en": "I have a sister and a brother.",
+  "th": "moi",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je suis fils unique.",
+  "en": "I'm an only child.",
+  "alt": [
+   "Je suis fille unique."
+  ],
+  "th": "moi",
+  "b": "A2",
+  "t": 3,
+  "n": "Fille unique for a girl."
+ },
+ {
+  "fr": "Mes parents habitent en Écosse.",
+  "en": "My parents live in Scotland.",
+  "th": "moi",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Mon fils a cinq ans.",
+  "en": "My son is five.",
+  "th": "moi",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Ma fille va à l'école.",
+  "en": "My daughter goes to school.",
+  "th": "moi",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "J'ai un chien.",
+  "en": "I have a dog.",
+  "th": "moi",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Tu parles anglais ?",
+  "en": "Do you speak English?",
+  "alt": [
+   "Vous parlez anglais ?",
+   "Parlez-vous anglais ?"
+  ],
+  "th": "moi",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Je parle un peu français.",
+  "en": "I speak a little French.",
+  "alt": [
+   "Je parle un peu le français."
+  ],
+  "th": "moi",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "J'apprends le français.",
+  "en": "I'm learning French.",
+  "th": "moi",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "J'apprends depuis trois mois.",
+  "en": "I've been learning for three months.",
+  "th": "moi",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je suis débutant.",
+  "en": "I'm a beginner.",
+  "alt": [
+   "Je suis débutante."
+  ],
+  "th": "moi",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Mon français n'est pas très bon.",
+  "en": "My French isn't very good.",
+  "th": "moi",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je parle anglais et un peu d'espagnol.",
+  "en": "I speak English and a bit of Spanish.",
+  "th": "moi",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Ma langue maternelle est l'anglais.",
+  "en": "My native language is English.",
+  "th": "moi",
+  "b": "B1",
+  "t": 3,
+  "n": "Literally: my mother tongue."
+ },
+ {
+  "fr": "J'aime lire et cuisiner.",
+  "en": "I like reading and cooking.",
+  "th": "moi",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Qu'est-ce que tu aimes faire ?",
+  "en": "What do you like doing?",
+  "alt": [
+   "Tu aimes faire quoi ?"
+  ],
+  "th": "moi",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je joue au foot.",
+  "en": "I play football.",
+  "alt": [
+   "Je joue au soccer."
+  ],
+  "th": "moi",
+  "b": "A1",
+  "t": 2,
+  "n": "Soccer in Québec."
+ },
+ {
+  "fr": "Je fais du vélo.",
+  "en": "I go cycling.",
+  "th": "moi",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je suis né à Manchester.",
+  "en": "I was born in Manchester.",
+  "alt": [
+   "Je suis née à Manchester."
+  ],
+  "th": "moi",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "J'ai grandi à la campagne.",
+  "en": "I grew up in the countryside.",
+  "th": "moi",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Je suis assez timide.",
+  "en": "I'm quite shy.",
+  "th": "moi",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "J'ai les yeux bleus.",
+  "en": "I have blue eyes.",
+  "th": "moi",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Voici mon numéro.",
+  "en": "Here's my number.",
+  "th": "moi",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Quelle est ton adresse mail ?",
+  "en": "What's your email address?",
+  "alt": [
+   "Quelle est votre adresse e-mail ?",
+   "C'est quoi ton courriel ?"
+  ],
+  "th": "moi",
+  "b": "A2",
+  "t": 2,
+  "n": "Courriel is Québécois."
+ }
+]

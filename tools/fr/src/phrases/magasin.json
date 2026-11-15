@@ -1,0 +1,573 @@
+[
+ {
+  "fr": "Je voudrais un café, s'il vous plaît.",
+  "en": "I'd like a coffee, please.",
+  "th": "magasin",
+  "b": "A1",
+  "t": 1,
+  "n": "Un café is an espresso."
+ },
+ {
+  "fr": "Un crème, s'il vous plaît.",
+  "en": "A white coffee, please.",
+  "alt": [
+   "Un café crème, s'il vous plaît."
+  ],
+  "th": "magasin",
+  "b": "A2",
+  "t": 2,
+  "n": "Un crème is coffee with steamed milk."
+ },
+ {
+  "fr": "Un café allongé, s'il vous plaît.",
+  "en": "A long black coffee, please.",
+  "th": "magasin",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Une bouteille d'eau gazeuse.",
+  "en": "A bottle of sparkling water.",
+  "th": "magasin",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Un jus d'orange pressé.",
+  "en": "A fresh orange juice.",
+  "th": "magasin",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Un verre de vin rouge, s'il vous plaît.",
+  "en": "A glass of red wine, please.",
+  "th": "magasin",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Un demi, s'il vous plaît.",
+  "en": "A small beer, please.",
+  "th": "magasin",
+  "b": "A2",
+  "t": 2,
+  "n": "Un demi is a glass of draught beer, about 25 cl."
+ },
+ {
+  "fr": "Une baguette, s'il vous plaît.",
+  "en": "A baguette, please.",
+  "th": "magasin",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Une tradition bien cuite, s'il vous plaît.",
+  "en": "A traditional baguette, well baked, please.",
+  "th": "magasin",
+  "b": "A2",
+  "t": 3,
+  "n": "Une tradition is a baguette made the traditional way."
+ },
+ {
+  "fr": "Deux croissants, s'il vous plaît.",
+  "en": "Two croissants, please.",
+  "th": "magasin",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Un pain au chocolat, s'il vous plaît.",
+  "en": "A pain au chocolat, please.",
+  "alt": [
+   "Une chocolatine, s'il vous plaît."
+  ],
+  "th": "magasin",
+  "b": "A1",
+  "t": 1,
+  "n": "In the southwest of France and in Québec it's often une chocolatine."
+ },
+ {
+  "fr": "Et avec ça ?",
+  "en": "Anything else?",
+  "alt": [
+   "Et avec ceci ?"
+  ],
+  "th": "magasin",
+  "b": "A1",
+  "t": 2,
+  "n": "Literally: and with that?"
+ },
+ {
+  "fr": "Ce sera tout ?",
+  "en": "Will that be all?",
+  "alt": [
+   "Ça sera tout ?"
+  ],
+  "th": "magasin",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "C'est tout, merci.",
+  "en": "That's all, thanks.",
+  "th": "magasin",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "C'est combien ?",
+  "en": "How much is it?",
+  "th": "magasin",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Ça fait combien ?",
+  "en": "How much does that come to?",
+  "alt": [
+   "Combien je vous dois ?"
+  ],
+  "th": "magasin",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "C'est trop cher.",
+  "en": "It's too expensive.",
+  "th": "magasin",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Je peux payer par carte ?",
+  "en": "Can I pay by card?",
+  "th": "magasin",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Vous acceptez la carte ?",
+  "en": "Do you take cards?",
+  "th": "magasin",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Sans contact, c'est possible ?",
+  "en": "Can I pay contactless?",
+  "th": "magasin",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Le code, s'il vous plaît.",
+  "en": "Your PIN, please.",
+  "th": "magasin",
+  "b": "A2",
+  "t": 3,
+  "n": "Said when you pay by card."
+ },
+ {
+  "fr": "Je paie en espèces.",
+  "en": "I'll pay cash.",
+  "alt": [
+   "Je vais payer comptant."
+  ],
+  "th": "magasin",
+  "b": "A1",
+  "t": 2,
+  "n": "Comptant is common in Québec."
+ },
+ {
+  "fr": "Vous avez la monnaie sur cinquante euros ?",
+  "en": "Do you have change for fifty euros?",
+  "th": "magasin",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Gardez la monnaie.",
+  "en": "Keep the change.",
+  "th": "magasin",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je peux avoir un ticket ?",
+  "en": "Can I have a receipt?",
+  "alt": [
+   "Je peux avoir un reçu ?"
+  ],
+  "th": "magasin",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Vous voulez un sac ?",
+  "en": "Would you like a bag?",
+  "th": "magasin",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Non merci, j'ai mon sac.",
+  "en": "No thanks, I've got a bag.",
+  "th": "magasin",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Où est la caisse ?",
+  "en": "Where is the till?",
+  "th": "magasin",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "C'est la queue ?",
+  "en": "Is this the queue?",
+  "alt": [
+   "C'est la file ?"
+  ],
+  "th": "magasin",
+  "b": "A2",
+  "t": 3,
+  "n": "La file is common in Québec and Belgium."
+ },
+ {
+  "fr": "C'est à qui ?",
+  "en": "Who's next?",
+  "th": "magasin",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "C'est à moi, je crois.",
+  "en": "I think I'm next.",
+  "th": "magasin",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "C'est ouvert ?",
+  "en": "Are you open?",
+  "th": "magasin",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je regarde seulement, merci.",
+  "en": "I'm just looking, thanks.",
+  "alt": [
+   "Je regarde, merci."
+  ],
+  "th": "magasin",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Je cherche un cadeau pour ma mère.",
+  "en": "I'm looking for a present for my mother.",
+  "th": "magasin",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "C'est pour offrir ?",
+  "en": "Is it a gift?",
+  "th": "magasin",
+  "b": "A2",
+  "t": 2,
+  "n": "Asked in shops so they can wrap it."
+ },
+ {
+  "fr": "Vous pouvez faire un paquet cadeau ?",
+  "en": "Could you gift wrap it?",
+  "th": "magasin",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Je peux l'essayer ?",
+  "en": "Can I try it on?",
+  "th": "magasin",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Où sont les cabines d'essayage ?",
+  "en": "Where are the fitting rooms?",
+  "th": "magasin",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Ça me va ?",
+  "en": "Does it suit me?",
+  "th": "magasin",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "C'est un peu petit.",
+  "en": "It's a bit small.",
+  "th": "magasin",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Vous avez ça en plus grand ?",
+  "en": "Do you have this in a bigger size?",
+  "th": "magasin",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Vous l'avez en taille M ?",
+  "en": "Do you have it in a medium?",
+  "th": "magasin",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Vous l'avez en bleu ?",
+  "en": "Do you have it in blue?",
+  "th": "magasin",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "C'est en solde ?",
+  "en": "Is it on sale?",
+  "th": "magasin",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je le prends.",
+  "en": "I'll take it.",
+  "alt": [
+   "Je la prends."
+  ],
+  "th": "magasin",
+  "b": "A1",
+  "t": 1,
+  "n": "La for a feminine thing."
+ },
+ {
+  "fr": "Je peux l'échanger ?",
+  "en": "Can I exchange it?",
+  "th": "magasin",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je voudrais me faire rembourser.",
+  "en": "I'd like a refund.",
+  "th": "magasin",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Je voudrais un kilo de tomates.",
+  "en": "I'd like a kilo of tomatoes.",
+  "th": "magasin",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Vous en voulez combien ?",
+  "en": "How many would you like?",
+  "th": "magasin",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Une tranche de plus, s'il vous plaît.",
+  "en": "One more slice, please.",
+  "th": "magasin",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Une table pour deux, s'il vous plaît.",
+  "en": "A table for two, please.",
+  "th": "magasin",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "J'ai réservé au nom de Martin.",
+  "en": "I've booked under the name Martin.",
+  "th": "magasin",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "On peut s'asseoir en terrasse ?",
+  "en": "Can we sit outside?",
+  "th": "magasin",
+  "b": "A2",
+  "t": 2,
+  "n": "La terrasse is the outdoor seating."
+ },
+ {
+  "fr": "La carte, s'il vous plaît.",
+  "en": "Could we see the menu, please?",
+  "th": "magasin",
+  "b": "A1",
+  "t": 1,
+  "n": "La carte is the menu. Le menu is a set meal."
+ },
+ {
+  "fr": "Qu'est-ce que vous me conseillez ?",
+  "en": "What do you recommend?",
+  "alt": [
+   "Qu'est-ce que vous recommandez ?"
+  ],
+  "th": "magasin",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je vais prendre le plat du jour.",
+  "en": "I'll have the dish of the day.",
+  "th": "magasin",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Pour moi, le steak frites.",
+  "en": "Steak and chips for me.",
+  "th": "magasin",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Saignant, s'il vous plaît.",
+  "en": "Rare, please.",
+  "th": "magasin",
+  "b": "A2",
+  "t": 3,
+  "n": "À point is medium, bien cuit is well done."
+ },
+ {
+  "fr": "Je suis végétarien.",
+  "en": "I'm vegetarian.",
+  "alt": [
+   "Je suis végétarienne."
+  ],
+  "th": "magasin",
+  "b": "A1",
+  "t": 2,
+  "n": "Végétarienne for a woman."
+ },
+ {
+  "fr": "Je suis allergique aux noix.",
+  "en": "I'm allergic to nuts.",
+  "th": "magasin",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Vous avez du sans gluten ?",
+  "en": "Do you have anything gluten free?",
+  "th": "magasin",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Une carafe d'eau, s'il vous plaît.",
+  "en": "A jug of tap water, please.",
+  "th": "magasin",
+  "b": "A1",
+  "t": 1,
+  "n": "Tap water is free in French restaurants."
+ },
+ {
+  "fr": "Sur place ou à emporter ?",
+  "en": "Eat in or take away?",
+  "alt": [
+   "Pour ici ou pour emporter ?"
+  ],
+  "th": "magasin",
+  "b": "A1",
+  "t": 1,
+  "n": "Pour ici ou pour emporter is the Québécois way."
+ },
+ {
+  "fr": "À emporter, s'il vous plaît.",
+  "en": "To take away, please.",
+  "alt": [
+   "Pour emporter, s'il vous plaît."
+  ],
+  "th": "magasin",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Ce n'est pas ce que j'ai commandé.",
+  "en": "This isn't what I ordered.",
+  "th": "magasin",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Excusez-moi, on a commandé il y a longtemps.",
+  "en": "Excuse me, we ordered a while ago.",
+  "th": "magasin",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Il manque une fourchette.",
+  "en": "We're missing a fork.",
+  "th": "magasin",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "C'était parfait, merci.",
+  "en": "It was perfect, thanks.",
+  "th": "magasin",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "L'addition, s'il vous plaît.",
+  "en": "The bill, please.",
+  "alt": [
+   "On peut avoir l'addition ?",
+   "La facture, s'il vous plaît."
+  ],
+  "th": "magasin",
+  "b": "A1",
+  "t": 1,
+  "n": "In Québec, la facture is common."
+ },
+ {
+  "fr": "On paie séparément.",
+  "en": "We'll pay separately.",
+  "th": "magasin",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "C'est pour moi.",
+  "en": "It's on me.",
+  "alt": [
+   "Je t'invite."
+  ],
+  "th": "magasin",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Le service est compris ?",
+  "en": "Is service included?",
+  "th": "magasin",
+  "b": "A2",
+  "t": 3
+ }
+]

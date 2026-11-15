@@ -1,0 +1,1080 @@
+[
+ {
+  "q": "Je vais ___ Paris.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "au"
+  ],
+  "e": "I'm going to Paris.",
+  "w": "Cities take à: à Paris, à Londres.",
+  "wf": "Ville : à.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "J'habite ___ France.",
+  "a": "en",
+  "o": [
+   "en",
+   "au",
+   "à"
+  ],
+  "e": "I live in France.",
+  "w": "Feminine countries (most end in e) take en.",
+  "wf": "Pays féminin : en.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Il travaille ___ Japon.",
+  "a": "au",
+  "o": [
+   "au",
+   "en",
+   "à"
+  ],
+  "e": "He works in Japan.",
+  "w": "Masculine countries take au, which is à + le.",
+  "wf": "Pays masculin : au.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Nous allons ___ États-Unis.",
+  "a": "aux",
+  "o": [
+   "aux",
+   "au",
+   "en"
+  ],
+  "e": "We're going to the United States.",
+  "w": "Plural countries take aux, which is à + les.",
+  "wf": "Pays au pluriel : aux.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Elle est ___ Canada en ce moment.",
+  "a": "au",
+  "o": [
+   "au",
+   "en",
+   "aux"
+  ],
+  "e": "She's in Canada at the moment.",
+  "w": "Masculine countries take au, which is à + le.",
+  "wf": "Pays masculin : au.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Tu vas ___ Espagne cet été ?",
+  "a": "en",
+  "o": [
+   "en",
+   "au",
+   "à"
+  ],
+  "e": "Are you going to Spain this summer?",
+  "w": "Feminine countries (most end in e) take en.",
+  "wf": "Pays féminin : en.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Je suis né ___ Italie.",
+  "a": "en",
+  "o": [
+   "en",
+   "au",
+   "à"
+  ],
+  "e": "I was born in Italy.",
+  "w": "Feminine countries (most end in e) take en.",
+  "wf": "Pays féminin : en.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Ils habitent ___ Londres.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "au"
+  ],
+  "e": "They live in London.",
+  "w": "Cities take à: à Paris, à Londres.",
+  "wf": "Ville : à.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "On dîne ___ Marie ce soir.",
+  "a": "chez",
+  "o": [
+   "chez",
+   "à",
+   "en"
+  ],
+  "e": "We're having dinner at Marie's tonight.",
+  "w": "At or to someone's home or shop is chez + the person.",
+  "wf": "chez + une personne.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Je rentre ___ moi.",
+  "a": "chez",
+  "o": [
+   "chez",
+   "à",
+   "en"
+  ],
+  "e": "I'm going home.",
+  "w": "Chez moi means at or to my home.",
+  "wf": "chez moi = à la maison.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Il est ___ la boulangerie.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "chez"
+  ],
+  "e": "He's at the bakery.",
+  "w": "Before la or l', à stays as it is: à la plage, à l'école.",
+  "wf": "à la, à l'.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Je vais ___ cinéma.",
+  "a": "au",
+  "o": [
+   "au",
+   "à",
+   "en"
+  ],
+  "e": "I'm going to the cinema.",
+  "w": "à + le becomes au: au cinéma, au restaurant.",
+  "wf": "à + le = au.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Les enfants sont ___ l'école.",
+  "a": "à",
+  "o": [
+   "à",
+   "au",
+   "en"
+  ],
+  "e": "The children are at school.",
+  "w": "Before la or l', à stays as it is: à la plage, à l'école.",
+  "wf": "à la, à l'.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Nous allons ___ la plage.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "au"
+  ],
+  "e": "We're going to the beach.",
+  "w": "Before la or l', à stays as it is: à la plage, à l'école.",
+  "wf": "à la, à l'.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Elle habite ___ Portugal.",
+  "a": "au",
+  "o": [
+   "au",
+   "en",
+   "à"
+  ],
+  "e": "She lives in Portugal.",
+  "w": "Masculine countries take au, which is à + le.",
+  "wf": "Pays masculin : au.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Il part ___ Allemagne demain.",
+  "a": "en",
+  "o": [
+   "en",
+   "au",
+   "à"
+  ],
+  "e": "He's leaving for Germany tomorrow.",
+  "w": "Feminine countries (most end in e) take en.",
+  "wf": "Pays féminin : en.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Tu es ___ Berlin pour le travail ?",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "au"
+  ],
+  "e": "Are you in Berlin for work?",
+  "w": "Cities take à: à Paris, à Londres.",
+  "wf": "Ville : à.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Le chat est ___ (on) la table.",
+  "a": "sur",
+  "o": [
+   "sur",
+   "sous",
+   "dans"
+  ],
+  "e": "The cat is on the table.",
+  "w": "On top of something is sur.",
+  "wf": "Dessus : sur.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Les clés sont ___ (under) le lit.",
+  "a": "sous",
+  "o": [
+   "sous",
+   "sur",
+   "dans"
+  ],
+  "e": "The keys are under the bed.",
+  "w": "Under something is sous.",
+  "wf": "Dessous : sous.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Le lait est ___ le frigo.",
+  "a": "dans",
+  "o": [
+   "dans",
+   "en",
+   "chez"
+  ],
+  "e": "The milk is in the fridge.",
+  "w": "Inside a place named with un, une, le, ma...: dans.",
+  "wf": "À l'intérieur : dans.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "On se retrouve ___ restaurant ?",
+  "a": "au",
+  "o": [
+   "au",
+   "à",
+   "en"
+  ],
+  "e": "Shall we meet at the restaurant?",
+  "w": "à + le becomes au: au cinéma, au restaurant.",
+  "wf": "à + le = au.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Je vais ___ la poste.",
+  "a": "à",
+  "o": [
+   "à",
+   "au",
+   "en"
+  ],
+  "e": "I'm going to the post office.",
+  "w": "Before la or l', à stays as it is: à la plage, à l'école.",
+  "wf": "à la, à l'.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Tu viens ___ moi ce soir ?",
+  "a": "chez",
+  "o": [
+   "chez",
+   "à",
+   "en"
+  ],
+  "e": "Are you coming to my place tonight?",
+  "w": "At or to someone's home or shop is chez + the person.",
+  "wf": "chez + une personne.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "On est bien ___ la maison.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "chez"
+  ],
+  "e": "It's nice at home.",
+  "w": "At home is à la maison, or chez moi.",
+  "wf": "à la maison.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Ils vivent ___ Chine.",
+  "a": "en",
+  "o": [
+   "en",
+   "au",
+   "à"
+  ],
+  "e": "They live in China.",
+  "w": "Feminine countries (most end in e) take en.",
+  "wf": "Pays féminin : en.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Nous habitons ___ Marseille.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "au"
+  ],
+  "e": "We live in Marseille.",
+  "w": "Cities take à: à Paris, à Londres.",
+  "wf": "Ville : à.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Ma sœur est ___ Belgique.",
+  "a": "en",
+  "o": [
+   "en",
+   "au",
+   "à"
+  ],
+  "e": "My sister is in Belgium.",
+  "w": "Feminine countries (most end in e) take en.",
+  "wf": "Pays féminin : en.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Je vais ___ toilettes.",
+  "a": "aux",
+  "o": [
+   "aux",
+   "au",
+   "à"
+  ],
+  "e": "I'm going to the toilet.",
+  "w": "à + les becomes aux.",
+  "wf": "à + les = aux.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Il habite ___ Brésil.",
+  "a": "au",
+  "o": [
+   "au",
+   "en",
+   "aux"
+  ],
+  "e": "He lives in Brazil.",
+  "w": "Masculine countries take au, which is à + le.",
+  "wf": "Pays masculin : au.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Elle travaille ___ un hôpital.",
+  "a": "dans",
+  "o": [
+   "dans",
+   "à",
+   "chez"
+  ],
+  "e": "She works in a hospital.",
+  "w": "Inside a place named with un, une, le, ma...: dans.",
+  "wf": "À l'intérieur : dans.",
+  "t": "lieu",
+  "b": "A1"
+ },
+ {
+  "q": "Il est ___ l'hôpital depuis lundi.",
+  "a": "à",
+  "o": [
+   "à",
+   "au",
+   "en"
+  ],
+  "e": "He's been in hospital since Monday.",
+  "w": "Before la or l', à stays as it is: à la plage, à l'école.",
+  "wf": "à la, à l'.",
+  "t": "lieu",
+  "b": "A2"
+ },
+ {
+  "q": "Ils partent ___ Pays-Bas.",
+  "a": "aux",
+  "o": [
+   "aux",
+   "au",
+   "en"
+  ],
+  "e": "They're going to the Netherlands.",
+  "w": "Plural countries take aux, which is à + les.",
+  "wf": "Pays au pluriel : aux.",
+  "t": "lieu",
+  "b": "A2"
+ },
+ {
+  "q": "Elle habite ___ Mexique.",
+  "a": "au",
+  "o": [
+   "au",
+   "en",
+   "à"
+  ],
+  "e": "She lives in Mexico.",
+  "w": "Le Mexique is masculine despite its final e, so au.",
+  "wf": "le Mexique : au.",
+  "t": "lieu",
+  "b": "A2"
+ },
+ {
+  "q": "Mon cousin vit ___ Uruguay.",
+  "a": "en",
+  "o": [
+   "en",
+   "au",
+   "à"
+  ],
+  "e": "My cousin lives in Uruguay.",
+  "w": "A masculine country starting with a vowel takes en, not au.",
+  "wf": "Pays masculin à voyelle : en.",
+  "t": "lieu",
+  "b": "A2"
+ },
+ {
+  "q": "Je viens ___ France.",
+  "a": "de",
+  "o": [
+   "de",
+   "du",
+   "des"
+  ],
+  "e": "I come from France.",
+  "w": "Coming from a feminine country: de, with no article.",
+  "wf": "Venir de + pays féminin.",
+  "t": "lieu",
+  "b": "A2"
+ },
+ {
+  "q": "Il vient ___ Japon.",
+  "a": "du",
+  "o": [
+   "du",
+   "de",
+   "des"
+  ],
+  "e": "He comes from Japan.",
+  "w": "Coming from a masculine country: du, which is de + le.",
+  "wf": "de + le = du.",
+  "t": "lieu",
+  "b": "A2"
+ },
+ {
+  "q": "Elle revient ___ États-Unis.",
+  "a": "des",
+  "o": [
+   "des",
+   "du",
+   "de"
+  ],
+  "e": "She's coming back from the United States.",
+  "w": "Coming from a plural country: des, which is de + les.",
+  "wf": "de + les = des.",
+  "t": "lieu",
+  "b": "A2"
+ },
+ {
+  "q": "Tu viens ___ Canada ?",
+  "a": "du",
+  "o": [
+   "du",
+   "de",
+   "des"
+  ],
+  "e": "Do you come from Canada?",
+  "w": "Coming from a masculine country: du, which is de + le.",
+  "wf": "de + le = du.",
+  "t": "lieu",
+  "b": "A2"
+ },
+ {
+  "q": "Elle est originaire ___ Rome.",
+  "a": "de",
+  "o": [
+   "de",
+   "à",
+   "du"
+  ],
+  "e": "She's originally from Rome.",
+  "w": "Coming from a city: de, with no article.",
+  "wf": "Venir d'une ville : de.",
+  "t": "lieu",
+  "b": "A2"
+ },
+ {
+  "q": "Je dors ___ mes parents ce week-end.",
+  "a": "chez",
+  "o": [
+   "chez",
+   "à",
+   "aux"
+  ],
+  "e": "I'm sleeping at my parents' this weekend.",
+  "w": "At or to someone's home or shop is chez + the person.",
+  "wf": "chez + une personne.",
+  "t": "lieu",
+  "b": "A2"
+ },
+ {
+  "q": "J'achète mon pain ___ le boulanger.",
+  "a": "chez",
+  "o": [
+   "chez",
+   "à",
+   "en"
+  ],
+  "e": "I buy my bread at the baker's.",
+  "w": "With the person who runs the shop, use chez.",
+  "wf": "chez le boulanger, à la boulangerie.",
+  "t": "lieu",
+  "b": "A2"
+ },
+ {
+  "q": "J'ai rendez-vous ___ le dentiste.",
+  "a": "chez",
+  "o": [
+   "chez",
+   "à",
+   "en"
+  ],
+  "e": "I have an appointment at the dentist's.",
+  "w": "At or to someone's home or shop is chez + the person.",
+  "wf": "chez + une personne.",
+  "t": "lieu",
+  "b": "A2"
+ },
+ {
+  "q": "Il y a du monde ___ le train.",
+  "a": "dans",
+  "o": [
+   "dans",
+   "en",
+   "chez"
+  ],
+  "e": "There are lots of people on the train.",
+  "w": "Inside a place named with un, une, le, ma...: dans.",
+  "wf": "À l'intérieur : dans.",
+  "t": "lieu",
+  "b": "A2"
+ },
+ {
+  "q": "Je l'ai vu ___ la télé.",
+  "a": "à",
+  "o": [
+   "à",
+   "dans",
+   "en"
+  ],
+  "e": "I saw it on TV.",
+  "w": "On TV and on the radio: à la télé, à la radio.",
+  "wf": "à la télé, à la radio.",
+  "t": "lieu",
+  "b": "A2"
+ },
+ {
+  "q": "J'ai trouvé l'adresse ___ Internet.",
+  "a": "sur",
+  "o": [
+   "sur",
+   "dans",
+   "à"
+  ],
+  "e": "I found the address online.",
+  "w": "Online is sur Internet.",
+  "wf": "sur Internet.",
+  "t": "lieu",
+  "b": "A2"
+ },
+ {
+  "q": "Je suis ___ ville cet après-midi.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "au"
+  ],
+  "e": "I'm in town this afternoon.",
+  "w": "In town, going into town: en ville.",
+  "wf": "en ville.",
+  "t": "lieu",
+  "b": "A2"
+ },
+ {
+  "q": "Le jardin est ___ (behind) la maison.",
+  "a": "derrière",
+  "o": [
+   "derrière",
+   "devant",
+   "sur"
+  ],
+  "e": "The garden is behind the house.",
+  "w": "Behind is derrière; in front of is devant.",
+  "wf": "derrière / devant.",
+  "t": "lieu",
+  "b": "A2"
+ },
+ {
+  "q": "Le bus attend ___ (in front of) la gare.",
+  "a": "devant",
+  "o": [
+   "devant",
+   "derrière",
+   "sous"
+  ],
+  "e": "The bus is waiting in front of the station.",
+  "w": "In front of is devant.",
+  "wf": "devant = in front of.",
+  "t": "lieu",
+  "b": "A2"
+ },
+ {
+  "q": "Il a vécu dix ans ___ Pérou.",
+  "a": "au",
+  "o": [
+   "au",
+   "en",
+   "à"
+  ],
+  "e": "He lived in Peru for ten years.",
+  "w": "Masculine countries take au, which is à + le.",
+  "wf": "Pays masculin : au.",
+  "t": "lieu",
+  "b": "B1"
+ },
+ {
+  "q": "J'ai passé l'été ___ Grèce.",
+  "a": "en",
+  "o": [
+   "en",
+   "au",
+   "à"
+  ],
+  "e": "I spent the summer in Greece.",
+  "w": "Feminine countries (most end in e) take en.",
+  "wf": "Pays féminin : en.",
+  "t": "lieu",
+  "b": "B1"
+ },
+ {
+  "q": "Elle fait ses études ___ Danemark.",
+  "a": "au",
+  "o": [
+   "au",
+   "en",
+   "à"
+  ],
+  "e": "She's studying in Denmark.",
+  "w": "Masculine countries take au, which is à + le.",
+  "wf": "Pays masculin : au.",
+  "t": "lieu",
+  "b": "B1"
+ },
+ {
+  "q": "On part en vacances ___ Antilles.",
+  "a": "aux",
+  "o": [
+   "aux",
+   "au",
+   "en"
+  ],
+  "e": "We're going on holiday to the West Indies.",
+  "w": "Plural countries take aux, which is à + les.",
+  "wf": "Pays au pluriel : aux.",
+  "t": "lieu",
+  "b": "B1"
+ },
+ {
+  "q": "Mon frère travaille ___ Émirats arabes unis.",
+  "a": "aux",
+  "o": [
+   "aux",
+   "au",
+   "en"
+  ],
+  "e": "My brother works in the United Arab Emirates.",
+  "w": "Plural countries take aux, which is à + les.",
+  "wf": "Pays au pluriel : aux.",
+  "t": "lieu",
+  "b": "B1"
+ },
+ {
+  "q": "Elle a dormi ___ une amie.",
+  "a": "chez",
+  "o": [
+   "chez",
+   "à",
+   "en"
+  ],
+  "e": "She slept at a friend's place.",
+  "w": "At or to someone's home or shop is chez + the person.",
+  "wf": "chez + une personne.",
+  "t": "lieu",
+  "b": "B1"
+ },
+ {
+  "q": "Les enfants jouent ___ la rue.",
+  "a": "dans",
+  "o": [
+   "dans",
+   "en",
+   "chez"
+  ],
+  "e": "The children are playing in the street.",
+  "w": "In the street is dans la rue.",
+  "wf": "dans la rue.",
+  "t": "lieu",
+  "b": "B1"
+ },
+ {
+  "q": "Ils ont une maison ___ la campagne.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "chez"
+  ],
+  "e": "They have a house in the countryside.",
+  "w": "In the countryside and in the mountains: à la campagne, à la montagne.",
+  "wf": "à la campagne.",
+  "t": "lieu",
+  "b": "B1"
+ },
+ {
+  "q": "Elle travaille ___ banlieue.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "au"
+  ],
+  "e": "She works in the suburbs.",
+  "w": "In the suburbs is en banlieue.",
+  "wf": "en banlieue.",
+  "t": "lieu",
+  "b": "B1"
+ },
+ {
+  "q": "Il vit ___ Corse.",
+  "a": "en",
+  "o": [
+   "en",
+   "au",
+   "à"
+  ],
+  "e": "He lives in Corsica.",
+  "w": "Large feminine islands take en, like countries: en Corse.",
+  "wf": "Grande île féminine : en.",
+  "t": "lieu",
+  "b": "B1"
+ },
+ {
+  "q": "Elle va ___ Bretagne pour Pâques.",
+  "a": "en",
+  "o": [
+   "en",
+   "au",
+   "à"
+  ],
+  "e": "She's going to Brittany for Easter.",
+  "w": "Feminine regions and provinces take en, like countries.",
+  "wf": "Région féminine : en.",
+  "t": "lieu",
+  "b": "B1"
+ },
+ {
+  "q": "On va ___ Provence cet été.",
+  "a": "en",
+  "o": [
+   "en",
+   "au",
+   "à"
+  ],
+  "e": "We're going to Provence this summer.",
+  "w": "Feminine regions and provinces take en, like countries.",
+  "wf": "Région féminine : en.",
+  "t": "lieu",
+  "b": "B1"
+ },
+ {
+  "q": "Je suis allé ___ Suisse en train.",
+  "a": "en",
+  "o": [
+   "en",
+   "au",
+   "à"
+  ],
+  "e": "I went to Switzerland by train.",
+  "w": "Feminine countries (most end in e) take en.",
+  "wf": "Pays féminin : en.",
+  "t": "lieu",
+  "b": "B1"
+ },
+ {
+  "q": "Il a trouvé du travail ___ Irlande.",
+  "a": "en",
+  "o": [
+   "en",
+   "au",
+   "à"
+  ],
+  "e": "He found work in Ireland.",
+  "w": "Feminine countries (most end in e) take en.",
+  "wf": "Pays féminin : en.",
+  "t": "lieu",
+  "b": "B1"
+ },
+ {
+  "q": "Le musée est ___ (between) la gare et la mairie.",
+  "a": "entre",
+  "o": [
+   "entre",
+   "sur",
+   "dans"
+  ],
+  "e": "The museum is between the station and the town hall.",
+  "w": "Between two things is entre.",
+  "wf": "entre = between.",
+  "t": "lieu",
+  "b": "B1"
+ },
+ {
+  "q": "Nous rentrons ___ Maroc la semaine prochaine.",
+  "a": "du",
+  "o": [
+   "du",
+   "de",
+   "des"
+  ],
+  "e": "We're coming back from Morocco next week.",
+  "w": "Coming from a masculine country: du, which is de + le.",
+  "wf": "de + le = du.",
+  "t": "lieu",
+  "b": "B1"
+ },
+ {
+  "q": "Ce vin vient ___ Chili.",
+  "a": "du",
+  "o": [
+   "du",
+   "de",
+   "des"
+  ],
+  "e": "This wine comes from Chile.",
+  "w": "Coming from a masculine country: du, which is de + le.",
+  "wf": "de + le = du.",
+  "t": "lieu",
+  "b": "B1"
+ },
+ {
+  "q": "Elle arrive ___ Philippines demain.",
+  "a": "des",
+  "o": [
+   "des",
+   "du",
+   "de"
+  ],
+  "e": "She arrives from the Philippines tomorrow.",
+  "w": "Coming from a plural country: des, which is de + les.",
+  "wf": "de + les = des.",
+  "t": "lieu",
+  "b": "B1"
+ },
+ {
+  "q": "Je travaille ___ une petite entreprise.",
+  "a": "dans",
+  "o": [
+   "dans",
+   "à",
+   "chez"
+  ],
+  "e": "I work in a small company.",
+  "w": "Inside a place named with un, une, le, ma...: dans.",
+  "wf": "À l'intérieur : dans.",
+  "t": "lieu",
+  "b": "B1"
+ },
+ {
+  "q": "Ma tante a une maison ___ Madagascar.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "au"
+  ],
+  "e": "My aunt has a house in Madagascar.",
+  "w": "Small islands without an article take à: à Cuba, à Madagascar.",
+  "wf": "Petite île : à.",
+  "t": "lieu",
+  "b": "B2"
+ },
+ {
+  "q": "Ils sont partis ___ Cuba.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "au"
+  ],
+  "e": "They've gone to Cuba.",
+  "w": "Small islands without an article take à: à Cuba, à Madagascar.",
+  "wf": "Petite île : à.",
+  "t": "lieu",
+  "b": "B2"
+ },
+ {
+  "q": "Il a vécu deux ans ___ Israël.",
+  "a": "en",
+  "o": [
+   "en",
+   "au",
+   "à"
+  ],
+  "e": "He lived in Israel for two years.",
+  "w": "Israël takes no article and starts with a vowel, so en.",
+  "wf": "en Israël.",
+  "t": "lieu",
+  "b": "B2"
+ },
+ {
+  "q": "Nous allons ___ pays de Galles.",
+  "a": "au",
+  "o": [
+   "au",
+   "en",
+   "aux"
+  ],
+  "e": "We're going to Wales.",
+  "w": "Le pays de Galles is masculine, so au.",
+  "wf": "le pays de Galles : au.",
+  "t": "lieu",
+  "b": "B2"
+ },
+ {
+  "q": "Ils habitent ___ Texas.",
+  "a": "au",
+  "o": [
+   "au",
+   "en",
+   "à"
+  ],
+  "e": "They live in Texas.",
+  "w": "Masculine US states take au, feminine ones en.",
+  "wf": "État masculin : au, féminin : en.",
+  "t": "lieu",
+  "b": "B2"
+ },
+ {
+  "q": "Mon oncle vit ___ Californie.",
+  "a": "en",
+  "o": [
+   "en",
+   "au",
+   "à"
+  ],
+  "e": "My uncle lives in California.",
+  "w": "Masculine US states take au, feminine ones en.",
+  "wf": "État masculin : au, féminin : en.",
+  "t": "lieu",
+  "b": "B2"
+ },
+ {
+  "q": "Elle a émigré ___ Nouvelle-Zélande.",
+  "a": "en",
+  "o": [
+   "en",
+   "au",
+   "à"
+  ],
+  "e": "She emigrated to New Zealand.",
+  "w": "Feminine countries (most end in e) take en.",
+  "wf": "Pays féminin : en.",
+  "t": "lieu",
+  "b": "B2"
+ },
+ {
+  "q": "Il fait un stage ___ Cambodge.",
+  "a": "au",
+  "o": [
+   "au",
+   "en",
+   "à"
+  ],
+  "e": "He's doing an internship in Cambodia.",
+  "w": "Masculine countries take au, which is à + le.",
+  "wf": "Pays masculin : au.",
+  "t": "lieu",
+  "b": "B2"
+ },
+ {
+  "q": "On passe Noël ___ mes beaux-parents.",
+  "a": "chez",
+  "o": [
+   "chez",
+   "à",
+   "aux"
+  ],
+  "e": "We're spending Christmas at my in-laws'.",
+  "w": "At or to someone's home or shop is chez + the person.",
+  "wf": "chez + une personne.",
+  "t": "lieu",
+  "b": "B2"
+ },
+ {
+  "q": "C'est une habitude ___ les Français.",
+  "a": "chez",
+  "o": [
+   "chez",
+   "à",
+   "en"
+  ],
+  "e": "It's a habit among the French.",
+  "w": "Chez also means among a group or in someone's work: chez les Français.",
+  "wf": "chez = parmi.",
+  "t": "lieu",
+  "b": "B2"
+ }
+]

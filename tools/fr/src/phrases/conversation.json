@@ -1,0 +1,566 @@
+[
+ {
+  "fr": "Pardon ?",
+  "en": "Sorry?",
+  "alt": [
+   "Comment ?"
+  ],
+  "th": "conversation",
+  "b": "A1",
+  "t": 1,
+  "n": "When you didn't hear what was said."
+ },
+ {
+  "fr": "Vous pouvez répéter, s'il vous plaît ?",
+  "en": "Could you repeat that, please?",
+  "alt": [
+   "Pouvez-vous répéter ?",
+   "Tu peux répéter ?"
+  ],
+  "th": "conversation",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Je ne comprends pas.",
+  "en": "I don't understand.",
+  "alt": [
+   "Je comprends pas."
+  ],
+  "th": "conversation",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Je n'ai pas compris.",
+  "en": "I didn't understand.",
+  "alt": [
+   "J'ai pas compris."
+  ],
+  "th": "conversation",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "fr": "Vous pouvez parler plus lentement ?",
+  "en": "Can you speak more slowly?",
+  "alt": [
+   "Tu peux parler plus lentement ?"
+  ],
+  "th": "conversation",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Vous parlez trop vite pour moi.",
+  "en": "You're speaking too fast for me.",
+  "th": "conversation",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Comment dit-on « dog » en français ?",
+  "en": "How do you say \"dog\" in French?",
+  "alt": [
+   "Comment on dit « dog » en français ?"
+  ],
+  "th": "conversation",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Qu'est-ce que ça veut dire ?",
+  "en": "What does that mean?",
+  "alt": [
+   "Ça veut dire quoi ?"
+  ],
+  "th": "conversation",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Comment ça s'écrit ?",
+  "en": "How do you spell that?",
+  "alt": [
+   "Ça s'écrit comment ?"
+  ],
+  "th": "conversation",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Vous pouvez l'écrire ?",
+  "en": "Can you write it down?",
+  "alt": [
+   "Tu peux l'écrire ?"
+  ],
+  "th": "conversation",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je ne connais pas ce mot.",
+  "en": "I don't know this word.",
+  "th": "conversation",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je ne me souviens pas du mot.",
+  "en": "I can't remember the word.",
+  "alt": [
+   "Le mot m'échappe."
+  ],
+  "th": "conversation",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "En anglais, s'il vous plaît.",
+  "en": "In English, please.",
+  "th": "conversation",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "C'est quoi, ça ?",
+  "en": "What's that?",
+  "alt": [
+   "Qu'est-ce que c'est ?"
+  ],
+  "th": "conversation",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "J'ai une question.",
+  "en": "I have a question.",
+  "th": "conversation",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je peux vous poser une question ?",
+  "en": "Can I ask you a question?",
+  "alt": [
+   "Je peux te poser une question ?"
+  ],
+  "th": "conversation",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je ne sais pas.",
+  "en": "I don't know.",
+  "alt": [
+   "Je sais pas."
+  ],
+  "th": "conversation",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Aucune idée.",
+  "en": "No idea.",
+  "alt": [
+   "Je n'en ai aucune idée."
+  ],
+  "th": "conversation",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je ne suis pas sûr.",
+  "en": "I'm not sure.",
+  "alt": [
+   "Je ne suis pas sûre."
+  ],
+  "th": "conversation",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Oui, bien sûr.",
+  "en": "Yes, of course.",
+  "th": "conversation",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Non, merci.",
+  "en": "No, thanks.",
+  "th": "conversation",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "D'accord.",
+  "en": "OK.",
+  "alt": [
+   "OK.",
+   "Entendu."
+  ],
+  "th": "conversation",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Ça marche !",
+  "en": "Sounds good!",
+  "alt": [
+   "C'est correct."
+  ],
+  "th": "conversation",
+  "b": "A1",
+  "t": 2,
+  "n": "C'est correct is the Québécois way to say it's fine."
+ },
+ {
+  "fr": "Exactement.",
+  "en": "Exactly.",
+  "alt": [
+   "Tout à fait."
+  ],
+  "th": "conversation",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Tu as raison.",
+  "en": "You're right.",
+  "alt": [
+   "Vous avez raison."
+  ],
+  "th": "conversation",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: you have reason."
+ },
+ {
+  "fr": "Tu as tort.",
+  "en": "You're wrong.",
+  "alt": [
+   "Vous avez tort."
+  ],
+  "th": "conversation",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je suis d'accord.",
+  "en": "I agree.",
+  "th": "conversation",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Je ne suis pas d'accord.",
+  "en": "I don't agree.",
+  "th": "conversation",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Je pense que oui.",
+  "en": "I think so.",
+  "alt": [
+   "Je crois que oui."
+  ],
+  "th": "conversation",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Je ne pense pas.",
+  "en": "I don't think so.",
+  "alt": [
+   "Je ne crois pas.",
+   "Je pense que non."
+  ],
+  "th": "conversation",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "À mon avis, c'est trop cher.",
+  "en": "In my opinion, it's too expensive.",
+  "th": "conversation",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Qu'est-ce que tu en penses ?",
+  "en": "What do you think?",
+  "alt": [
+   "Vous en pensez quoi ?",
+   "T'en penses quoi ?"
+  ],
+  "th": "conversation",
+  "b": "A2",
+  "t": 1,
+  "n": "Literally: what do you think of it?"
+ },
+ {
+  "fr": "Je trouve ça génial.",
+  "en": "I think it's great.",
+  "alt": [
+   "Je trouve ça super."
+  ],
+  "th": "conversation",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "C'est vrai ?",
+  "en": "Really?",
+  "alt": [
+   "Ah bon ?",
+   "Vraiment ?"
+  ],
+  "th": "conversation",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Pas vraiment.",
+  "en": "Not really.",
+  "th": "conversation",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Peut-être.",
+  "en": "Maybe.",
+  "th": "conversation",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Ça dépend.",
+  "en": "It depends.",
+  "th": "conversation",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Ça m'est égal.",
+  "en": "I don't mind.",
+  "alt": [
+   "Peu importe."
+  ],
+  "th": "conversation",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: it's equal to me."
+ },
+ {
+  "fr": "Comme tu veux.",
+  "en": "As you like.",
+  "alt": [
+   "Comme vous voulez."
+  ],
+  "th": "conversation",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Bonne idée !",
+  "en": "Good idea!",
+  "th": "conversation",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Pourquoi pas ?",
+  "en": "Why not?",
+  "th": "conversation",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Attends, je réfléchis.",
+  "en": "Wait, let me think.",
+  "alt": [
+   "Attendez, je réfléchis."
+  ],
+  "th": "conversation",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Euh, comment dire...",
+  "en": "Um, how can I put it...",
+  "th": "conversation",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "C'est-à-dire ?",
+  "en": "Meaning what?",
+  "alt": [
+   "Tu veux dire quoi ?"
+  ],
+  "th": "conversation",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Par exemple ?",
+  "en": "For example?",
+  "th": "conversation",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Au fait, tu connais Paul ?",
+  "en": "By the way, do you know Paul?",
+  "th": "conversation",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Moi aussi.",
+  "en": "Me too.",
+  "th": "conversation",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Moi non plus.",
+  "en": "Me neither.",
+  "th": "conversation",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je vois.",
+  "en": "I see.",
+  "th": "conversation",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Ah, je comprends maintenant.",
+  "en": "Oh, now I understand.",
+  "th": "conversation",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Ah oui, c'est ça !",
+  "en": "Yes, that's it!",
+  "th": "conversation",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Pas exactement.",
+  "en": "Not exactly.",
+  "th": "conversation",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Voilà !",
+  "en": "There you go!",
+  "th": "conversation",
+  "b": "A1",
+  "t": 2,
+  "n": "Also means that's it, exactly."
+ },
+ {
+  "fr": "Il y a un problème ?",
+  "en": "Is there a problem?",
+  "th": "conversation",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Qu'est-ce qui se passe ?",
+  "en": "What's going on?",
+  "alt": [
+   "Qu'est-ce qu'il y a ?"
+  ],
+  "th": "conversation",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Tu es sûr ?",
+  "en": "Are you sure?",
+  "alt": [
+   "Tu es sûre ?",
+   "Vous êtes sûr ?"
+  ],
+  "th": "conversation",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Tu plaisantes ?",
+  "en": "Are you kidding?",
+  "alt": [
+   "Tu rigoles ?",
+   "Sérieux ?"
+  ],
+  "th": "conversation",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Sans doute.",
+  "en": "Probably.",
+  "th": "conversation",
+  "b": "B1",
+  "t": 3,
+  "n": "It means probably, not without doubt."
+ },
+ {
+  "fr": "Bien sûr que non !",
+  "en": "Of course not!",
+  "th": "conversation",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Pas du tout.",
+  "en": "Not at all.",
+  "th": "conversation",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Tant pis.",
+  "en": "Never mind.",
+  "alt": [
+   "Dommage."
+  ],
+  "th": "conversation",
+  "b": "A2",
+  "t": 2,
+  "n": "When something didn't work out."
+ },
+ {
+  "fr": "C'est dommage.",
+  "en": "That's a shame.",
+  "th": "conversation",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Ça ne me dit rien.",
+  "en": "That doesn't ring a bell.",
+  "th": "conversation",
+  "b": "B1",
+  "t": 3,
+  "n": "Literally: that says nothing to me."
+ },
+ {
+  "fr": "En fait, je préfère le thé.",
+  "en": "Actually, I prefer tea.",
+  "th": "conversation",
+  "b": "A2",
+  "t": 3,
+  "n": "En fait means actually, not in fact."
+ }
+]

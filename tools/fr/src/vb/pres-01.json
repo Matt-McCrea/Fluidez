@@ -1,0 +1,1362 @@
+[
+ {
+  "q": "Je ___ (travailler) dans une boulangerie tous les samedis.",
+  "v": "travailler",
+  "t": "pres",
+  "p": "je",
+  "e": "I work in a bakery every Saturday.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (parler) très bien anglais maintenant.",
+  "v": "parler",
+  "t": "pres",
+  "p": "tu",
+  "e": "You speak English very well now.",
+  "b": "A1"
+ },
+ {
+  "q": "Mon père ___ (regarder) les informations chaque soir.",
+  "v": "regarder",
+  "t": "pres",
+  "p": "il",
+  "e": "My father watches the news every evening.",
+  "b": "A1"
+ },
+ {
+  "q": "Nous ___ (habiter) près de la gare depuis deux ans.",
+  "v": "habiter",
+  "t": "pres",
+  "p": "nous",
+  "e": "We have lived near the station for two years.",
+  "b": "B1"
+ },
+ {
+  "q": "Vous ___ (chercher) quelque chose, madame ?",
+  "v": "chercher",
+  "t": "pres",
+  "p": "vous",
+  "e": "Are you looking for something, madam?",
+  "b": "A1"
+ },
+ {
+  "q": "Les enfants ___ (jouer) au foot après l'école.",
+  "v": "jouer",
+  "t": "pres",
+  "p": "ils",
+  "e": "The children play football after school.",
+  "b": "A1"
+ },
+ {
+  "q": "J'___ (aimer) beaucoup le chocolat noir.",
+  "v": "aimer",
+  "t": "pres",
+  "p": "je",
+  "e": "I really like dark chocolate.",
+  "b": "A1"
+ },
+ {
+  "q": "Chloé ___ (donner) toujours des fleurs à sa grand-mère.",
+  "v": "donner",
+  "t": "pres",
+  "p": "il",
+  "e": "Chloé always gives flowers to her grandmother.",
+  "b": "A1"
+ },
+ {
+  "q": "Le dimanche, nous ___ (regarder) un film en famille.",
+  "v": "regarder",
+  "t": "pres",
+  "p": "nous",
+  "e": "On Sundays we watch a film as a family.",
+  "b": "A1"
+ },
+ {
+  "q": "Mes voisins ___ (parler) souvent trop fort.",
+  "v": "parler",
+  "t": "pres",
+  "p": "ils",
+  "e": "My neighbours often talk too loudly.",
+  "b": "A1"
+ },
+ {
+  "q": "Qu'est-ce que tu ___ (chercher) dans ton sac ?",
+  "v": "chercher",
+  "t": "pres",
+  "p": "tu",
+  "e": "What are you looking for in your bag?",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (travailler) le samedi aussi ?",
+  "v": "travailler",
+  "t": "pres",
+  "p": "vous",
+  "e": "Do you work on Saturdays too?",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (penser) souvent à mes amis de Lyon.",
+  "v": "penser",
+  "t": "pres",
+  "p": "je",
+  "e": "I often think about my friends from Lyon.",
+  "b": "A1"
+ },
+ {
+  "q": "On ___ (trouver) des cafés partout dans ce quartier.",
+  "v": "trouver",
+  "t": "pres",
+  "p": "il",
+  "e": "You find cafés everywhere in this neighbourhood.",
+  "b": "A1"
+ },
+ {
+  "q": "Les touristes ___ (demander) toujours le chemin du musée.",
+  "v": "demander",
+  "t": "pres",
+  "p": "ils",
+  "e": "Tourists always ask the way to the museum.",
+  "b": "A1"
+ },
+ {
+  "q": "J'___ (écouter) la radio dans la voiture tous les matins.",
+  "v": "écouter",
+  "t": "pres",
+  "p": "je",
+  "e": "I listen to the radio in the car every morning.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (porter) souvent cette veste bleue.",
+  "v": "porter",
+  "t": "pres",
+  "p": "tu",
+  "e": "You often wear that blue jacket.",
+  "b": "A1"
+ },
+ {
+  "q": "Hugo ___ (rentrer) à la maison vers dix-neuf heures.",
+  "v": "rentrer",
+  "t": "pres",
+  "p": "il",
+  "e": "Hugo gets home around seven in the evening.",
+  "b": "A1"
+ },
+ {
+  "q": "Nous ___ (gagner) presque tous nos matchs cette saison.",
+  "v": "gagner",
+  "t": "pres",
+  "p": "nous",
+  "e": "We are winning almost all our matches this season.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (rester) combien de temps à Paris ?",
+  "v": "rester",
+  "t": "pres",
+  "p": "vous",
+  "e": "How long are you staying in Paris?",
+  "b": "A1"
+ },
+ {
+  "q": "Les oiseaux ___ (chanter) dès cinq heures du matin.",
+  "v": "chanter",
+  "t": "pres",
+  "p": "ils",
+  "e": "The birds sing from five in the morning.",
+  "b": "A2"
+ },
+ {
+  "q": "J'___ (arriver) au bureau à huit heures chaque jour.",
+  "v": "arriver",
+  "t": "pres",
+  "p": "je",
+  "e": "I get to the office at eight every day.",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (passer) mes vacances chez mes cousins chaque été.",
+  "v": "passer",
+  "t": "pres",
+  "p": "je",
+  "e": "I spend my holidays at my cousins' every summer.",
+  "b": "A1"
+ },
+ {
+  "q": "Mon grand-père ___ (marcher) une heure tous les matins.",
+  "v": "marcher",
+  "t": "pres",
+  "p": "il",
+  "e": "My grandfather walks for an hour every morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Ma sœur ___ (préparer) le dîner en ce moment.",
+  "v": "préparer",
+  "t": "pres",
+  "p": "il",
+  "e": "My sister is making dinner at the moment.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (dîner) souvent au restaurant le vendredi.",
+  "v": "dîner",
+  "t": "pres",
+  "p": "nous",
+  "e": "We often have dinner at a restaurant on Fridays.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (fermer) le magasin à quelle heure le samedi ?",
+  "v": "fermer",
+  "t": "pres",
+  "p": "vous",
+  "e": "What time do you close the shop on Saturdays?",
+  "b": "A2"
+ },
+ {
+  "q": "Mes parents ___ (danser) la salsa tous les jeudis.",
+  "v": "danser",
+  "t": "pres",
+  "p": "ils",
+  "e": "My parents dance salsa every Thursday.",
+  "b": "A2"
+ },
+ {
+  "q": "J'___ (adorer) les marchés de Provence en été.",
+  "v": "adorer",
+  "t": "pres",
+  "p": "je",
+  "e": "I love the Provence markets in summer.",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (garder) les enfants de ma voisine le mercredi.",
+  "v": "garder",
+  "t": "pres",
+  "p": "je",
+  "e": "I look after my neighbour's children on Wednesdays.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (travailler) toujours à l'hôpital ?",
+  "v": "travailler",
+  "t": "pres",
+  "p": "tu",
+  "e": "Do you still work at the hospital?",
+  "b": "A1"
+ },
+ {
+  "q": "Le petit Théo ___ (tomber) souvent de son vélo.",
+  "v": "tomber",
+  "t": "pres",
+  "p": "il",
+  "e": "Little Théo often falls off his bike.",
+  "b": "A1"
+ },
+ {
+  "q": "Nous ___ (aider) nos grands-parents tous les week-ends.",
+  "v": "aider",
+  "t": "pres",
+  "p": "nous",
+  "e": "We help our grandparents every weekend.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (parler) français à la maison ?",
+  "v": "parler",
+  "t": "pres",
+  "p": "vous",
+  "e": "Do you speak French at home?",
+  "b": "A1"
+ },
+ {
+  "q": "Ils ___ (rencontrer) leurs amis au café chaque samedi.",
+  "v": "rencontrer",
+  "t": "pres",
+  "p": "ils",
+  "e": "They meet their friends at the café every Saturday.",
+  "b": "A1"
+ },
+ {
+  "q": "J'___ (utiliser) mon vélo pour aller au travail.",
+  "v": "utiliser",
+  "t": "pres",
+  "p": "je",
+  "e": "I use my bike to get to work.",
+  "b": "A1"
+ },
+ {
+  "q": "Ce pain ___ (coûter) un euro vingt.",
+  "v": "coûter",
+  "t": "pres",
+  "p": "il",
+  "e": "This bread costs one euro twenty.",
+  "b": "B1"
+ },
+ {
+  "q": "Les trains ___ (arriver) souvent en retard ici.",
+  "v": "arriver",
+  "t": "pres",
+  "p": "ils",
+  "e": "Trains often arrive late here.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (rêver) encore de ce voyage au Japon ?",
+  "v": "rêver",
+  "t": "pres",
+  "p": "tu",
+  "e": "Are you still dreaming of that trip to Japan?",
+  "b": "A2"
+ },
+ {
+  "q": "Manon ___ (détester) le froid et la pluie.",
+  "v": "détester",
+  "t": "pres",
+  "p": "il",
+  "e": "Manon hates the cold and the rain.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (écouter) du jazz pendant le petit déjeuner.",
+  "v": "écouter",
+  "t": "pres",
+  "p": "nous",
+  "e": "We listen to jazz during breakfast.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (aimer) la cuisine italienne ?",
+  "v": "aimer",
+  "t": "pres",
+  "p": "vous",
+  "e": "Do you like Italian food?",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (refuser) de travailler le dimanche.",
+  "v": "refuser",
+  "t": "pres",
+  "p": "je",
+  "e": "I refuse to work on Sundays.",
+  "b": "A2"
+ },
+ {
+  "q": "Le bébé ___ (pleurer) chaque nuit vers trois heures.",
+  "v": "pleurer",
+  "t": "pres",
+  "p": "il",
+  "e": "The baby cries every night around three.",
+  "b": "A2"
+ },
+ {
+  "q": "Beaucoup de touristes ___ (visiter) Paris en août.",
+  "v": "visiter",
+  "t": "pres",
+  "p": "ils",
+  "e": "Lots of tourists visit Paris in August.",
+  "b": "B1"
+ },
+ {
+  "q": "Tu ___ (continuer) le piano cette année ?",
+  "v": "continuer",
+  "t": "pres",
+  "p": "tu",
+  "e": "Are you carrying on with the piano this year?",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (finir) le travail à dix-sept heures tous les jours.",
+  "v": "finir",
+  "t": "pres",
+  "p": "je",
+  "e": "I finish work at five every day.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (choisir) toujours le même dessert !",
+  "v": "choisir",
+  "t": "pres",
+  "p": "tu",
+  "e": "You always choose the same dessert!",
+  "b": "A2"
+ },
+ {
+  "q": "Karim ___ (réussir) tous ses examens sans problème.",
+  "v": "réussir",
+  "t": "pres",
+  "p": "il",
+  "e": "Karim passes all his exams without any trouble.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (finir) les cours à midi le mercredi.",
+  "v": "finir",
+  "t": "pres",
+  "p": "nous",
+  "e": "We finish lessons at noon on Wednesdays.",
+  "b": "A1"
+ },
+ {
+  "q": "Qu'est-ce que vous ___ (choisir) comme boisson ?",
+  "v": "choisir",
+  "t": "pres",
+  "p": "vous",
+  "e": "What are you having to drink?",
+  "b": "A2"
+ },
+ {
+  "q": "Les enfants ___ (grandir) si vite !",
+  "v": "grandir",
+  "t": "pres",
+  "p": "ils",
+  "e": "Children grow up so fast!",
+  "b": "B1"
+ },
+ {
+  "q": "Je ___ (réfléchir) encore à ta proposition.",
+  "v": "réfléchir",
+  "t": "pres",
+  "p": "je",
+  "e": "I'm still thinking about your offer.",
+  "b": "A2"
+ },
+ {
+  "q": "Le film ___ (finir) à vingt-deux heures.",
+  "v": "finir",
+  "t": "pres",
+  "p": "il",
+  "e": "The film ends at ten pm.",
+  "b": "A1"
+ },
+ {
+  "q": "Nous ___ (réfléchir) à un nouveau projet en ce moment.",
+  "v": "réfléchir",
+  "t": "pres",
+  "p": "nous",
+  "e": "We're thinking about a new project at the moment.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (finir) à quelle heure le vendredi ?",
+  "v": "finir",
+  "t": "pres",
+  "p": "vous",
+  "e": "What time do you finish on Fridays?",
+  "b": "A1"
+ },
+ {
+  "q": "Ces élèves ___ (réussir) toujours bien en maths.",
+  "v": "réussir",
+  "t": "pres",
+  "p": "ils",
+  "e": "These pupils always do well in maths.",
+  "b": "A2"
+ },
+ {
+  "q": "D'habitude, tu ___ (finir) tes devoirs avant le dîner ?",
+  "v": "finir",
+  "t": "pres",
+  "p": "tu",
+  "e": "Do you usually finish your homework before dinner?",
+  "b": "A1"
+ },
+ {
+  "q": "Il ___ (agir) toujours sans réfléchir.",
+  "v": "agir",
+  "t": "pres",
+  "p": "il",
+  "e": "He always acts without thinking.",
+  "b": "A2"
+ },
+ {
+  "q": "J'___ (attendre) le bus depuis vingt minutes.",
+  "v": "attendre",
+  "t": "pres",
+  "p": "je",
+  "e": "I've been waiting for the bus for twenty minutes.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (entendre) ce bruit dans la cuisine ?",
+  "v": "entendre",
+  "t": "pres",
+  "p": "tu",
+  "e": "Can you hear that noise in the kitchen?",
+  "b": "A1"
+ },
+ {
+  "q": "Mon oncle ___ (vendre) des fruits au marché.",
+  "v": "vendre",
+  "t": "pres",
+  "p": "il",
+  "e": "My uncle sells fruit at the market.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (attendre) nos amis devant le cinéma.",
+  "v": "attendre",
+  "t": "pres",
+  "p": "nous",
+  "e": "We are waiting for our friends outside the cinema.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (répondre) toujours vite à mes messages.",
+  "v": "répondre",
+  "t": "pres",
+  "p": "vous",
+  "e": "You always answer my messages quickly.",
+  "b": "A1"
+ },
+ {
+  "q": "Ils ___ (perdre) toujours leurs clés !",
+  "v": "perdre",
+  "t": "pres",
+  "p": "ils",
+  "e": "They always lose their keys!",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (perdre) souvent mon téléphone dans la maison.",
+  "v": "perdre",
+  "t": "pres",
+  "p": "je",
+  "e": "I often lose my phone around the house.",
+  "b": "A1"
+ },
+ {
+  "q": "Le voisin ___ (descendre) les poubelles chaque soir.",
+  "v": "descendre",
+  "t": "pres",
+  "p": "il",
+  "e": "The neighbour takes the bins down every evening.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (vendre) notre vieille voiture, elle consomme trop.",
+  "v": "vendre",
+  "t": "pres",
+  "p": "nous",
+  "e": "We are selling our old car, it uses too much petrol.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (entendre) bien au fond de la salle ?",
+  "v": "entendre",
+  "t": "pres",
+  "p": "vous",
+  "e": "Can you hear well at the back of the room?",
+  "b": "A1"
+ },
+ {
+  "q": "Les élèves ___ (répondre) aux questions du professeur.",
+  "v": "répondre",
+  "t": "pres",
+  "p": "ils",
+  "e": "The pupils answer the teacher's questions.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (attendre) qui, devant la porte ?",
+  "v": "attendre",
+  "t": "pres",
+  "p": "tu",
+  "e": "Who are you waiting for at the door?",
+  "b": "A1"
+ },
+ {
+  "q": "Sarah ___ (rendre) toujours ses livres à la bibliothèque à l'heure.",
+  "v": "rendre",
+  "t": "pres",
+  "p": "il",
+  "e": "Sarah always returns her library books on time.",
+  "b": "A1"
+ },
+ {
+  "q": "Ça ___ (dépendre) du temps qu'il fait.",
+  "v": "dépendre",
+  "t": "pres",
+  "p": "il",
+  "e": "It depends on the weather.",
+  "b": "B1"
+ },
+ {
+  "q": "Vous ___ (descendre) à la prochaine station ?",
+  "v": "descendre",
+  "t": "pres",
+  "p": "vous",
+  "e": "Are you getting off at the next stop?",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (être) très fatigué ce soir.",
+  "v": "être",
+  "t": "pres",
+  "p": "je",
+  "e": "I'm very tired this evening.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (être) prête ? Le taxi est là.",
+  "v": "être",
+  "t": "pres",
+  "p": "tu",
+  "e": "Are you ready? The taxi is here.",
+  "b": "A1"
+ },
+ {
+  "q": "Le musée ___ (être) fermé le mardi.",
+  "v": "être",
+  "t": "pres",
+  "p": "il",
+  "e": "The museum is closed on Tuesdays.",
+  "b": "A1"
+ },
+ {
+  "q": "Nous ___ (être) en vacances jusqu'à lundi.",
+  "v": "être",
+  "t": "pres",
+  "p": "nous",
+  "e": "We're on holiday until Monday.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (être) d'où, monsieur ?",
+  "v": "être",
+  "t": "pres",
+  "p": "vous",
+  "e": "Where are you from, sir?",
+  "b": "A1"
+ },
+ {
+  "q": "Mes parents ___ (être) à la retraite depuis un an.",
+  "v": "être",
+  "t": "pres",
+  "p": "ils",
+  "e": "My parents have been retired for a year.",
+  "b": "A1"
+ },
+ {
+  "q": "J'___ (avoir) deux frères et une sœur.",
+  "v": "avoir",
+  "t": "pres",
+  "p": "je",
+  "e": "I have two brothers and a sister.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (avoir) quel âge ?",
+  "v": "avoir",
+  "t": "pres",
+  "p": "tu",
+  "e": "How old are you?",
+  "b": "A1"
+ },
+ {
+  "q": "Ma grand-mère ___ (avoir) quatre-vingts ans aujourd'hui.",
+  "v": "avoir",
+  "t": "pres",
+  "p": "il",
+  "e": "My grandmother is eighty today.",
+  "b": "A1"
+ },
+ {
+  "q": "Nous ___ (avoir) un chat et deux poissons rouges.",
+  "v": "avoir",
+  "t": "pres",
+  "p": "nous",
+  "e": "We have a cat and two goldfish.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (avoir) une chambre pour ce soir ?",
+  "v": "avoir",
+  "t": "pres",
+  "p": "vous",
+  "e": "Do you have a room for tonight?",
+  "b": "A1"
+ },
+ {
+  "q": "Les Martin ___ (avoir) une maison à la campagne.",
+  "v": "avoir",
+  "t": "pres",
+  "p": "ils",
+  "e": "The Martins have a house in the country.",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (aller) à la piscine tous les mardis.",
+  "v": "aller",
+  "t": "pres",
+  "p": "je",
+  "e": "I go to the pool every Tuesday.",
+  "b": "A1"
+ },
+ {
+  "q": "Comment tu ___ (aller) aujourd'hui ?",
+  "v": "aller",
+  "t": "pres",
+  "p": "tu",
+  "e": "How are you today?",
+  "b": "A1"
+ },
+ {
+  "q": "Lucas ___ (aller) au lycée à vélo.",
+  "v": "aller",
+  "t": "pres",
+  "p": "il",
+  "e": "Lucas goes to secondary school by bike.",
+  "b": "A1"
+ },
+ {
+  "q": "Nous ___ (aller) au marché le samedi matin.",
+  "v": "aller",
+  "t": "pres",
+  "p": "nous",
+  "e": "We go to the market on Saturday mornings.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (aller) souvent au théâtre ?",
+  "v": "aller",
+  "t": "pres",
+  "p": "vous",
+  "e": "Do you often go to the theatre?",
+  "b": "A1"
+ },
+ {
+  "q": "Les enfants ___ (aller) chez leur grand-mère le mercredi.",
+  "v": "aller",
+  "t": "pres",
+  "p": "ils",
+  "e": "The children go to their grandmother's on Wednesdays.",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (faire) du yoga deux fois par semaine.",
+  "v": "faire",
+  "t": "pres",
+  "p": "je",
+  "e": "I do yoga twice a week.",
+  "b": "A1"
+ },
+ {
+  "q": "Qu'est-ce que tu ___ (faire) dans la vie ?",
+  "v": "faire",
+  "t": "pres",
+  "p": "tu",
+  "e": "What do you do for a living?",
+  "b": "A1"
+ },
+ {
+  "q": "Il ___ (faire) beau aujourd'hui.",
+  "v": "faire",
+  "t": "pres",
+  "p": "il",
+  "e": "The weather is lovely today.",
+  "b": "A1"
+ },
+ {
+  "q": "Nous ___ (faire) les courses le jeudi soir.",
+  "v": "faire",
+  "t": "pres",
+  "p": "nous",
+  "e": "We do the shopping on Thursday evenings.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (faire) du sport le week-end ?",
+  "v": "faire",
+  "t": "pres",
+  "p": "vous",
+  "e": "Do you do any sport at the weekend?",
+  "b": "A1"
+ },
+ {
+  "q": "Mes cousins ___ (faire) du ski chaque hiver.",
+  "v": "faire",
+  "t": "pres",
+  "p": "ils",
+  "e": "My cousins go skiing every winter.",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (prendre) le métro tous les matins.",
+  "v": "prendre",
+  "t": "pres",
+  "p": "je",
+  "e": "I take the metro every morning.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (prendre) un café ou un thé ?",
+  "v": "prendre",
+  "t": "pres",
+  "p": "tu",
+  "e": "Are you having a coffee or a tea?",
+  "b": "A1"
+ },
+ {
+  "q": "Nous ___ (prendre) le petit déjeuner à sept heures.",
+  "v": "prendre",
+  "t": "pres",
+  "p": "nous",
+  "e": "We have breakfast at seven.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (prendre) la carte bancaire ?",
+  "v": "prendre",
+  "t": "pres",
+  "p": "vous",
+  "e": "Do you take cards?",
+  "b": "A1"
+ },
+ {
+  "q": "Ils ___ (prendre) toujours le train pour aller à Marseille.",
+  "v": "prendre",
+  "t": "pres",
+  "p": "ils",
+  "e": "They always take the train to Marseille.",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (venir) de Bordeaux, et toi ?",
+  "v": "venir",
+  "t": "pres",
+  "p": "je",
+  "e": "I'm from Bordeaux, and you?",
+  "b": "A1"
+ },
+ {
+  "q": "Le facteur ___ (venir) vers onze heures chaque matin.",
+  "v": "venir",
+  "t": "pres",
+  "p": "il",
+  "e": "The postman comes around eleven every morning.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (venir) souvent dans ce restaurant ?",
+  "v": "venir",
+  "t": "pres",
+  "p": "vous",
+  "e": "Do you often come to this restaurant?",
+  "b": "A1"
+ },
+ {
+  "q": "Nos amis ___ (venir) toujours dîner chez nous le vendredi.",
+  "v": "venir",
+  "t": "pres",
+  "p": "ils",
+  "e": "Our friends always come to dinner at ours on Fridays.",
+  "b": "A1"
+ },
+ {
+  "q": "Nous ___ (venir) ici chaque été depuis dix ans.",
+  "v": "venir",
+  "t": "pres",
+  "p": "nous",
+  "e": "We've been coming here every summer for ten years.",
+  "b": "A1"
+ },
+ {
+  "q": "Je ne ___ (pouvoir) pas sortir, je travaille.",
+  "v": "pouvoir",
+  "t": "pres",
+  "p": "je",
+  "e": "I can't go out, I'm working.",
+  "b": "A1"
+ },
+ {
+  "q": "Maintenant, tu ___ (pouvoir) nager sans aide, bravo !",
+  "v": "pouvoir",
+  "t": "pres",
+  "p": "tu",
+  "e": "Now you can swim without help, well done!",
+  "b": "A1"
+ },
+ {
+  "q": "Mon frère ne ___ (pouvoir) pas manger de gluten.",
+  "v": "pouvoir",
+  "t": "pres",
+  "p": "il",
+  "e": "My brother can't eat gluten.",
+  "b": "A1"
+ },
+ {
+  "q": "Depuis lundi, nous ___ (pouvoir) travailler de chez nous.",
+  "v": "pouvoir",
+  "t": "pres",
+  "p": "nous",
+  "e": "Since Monday we've been able to work from home.",
+  "b": "A1"
+ },
+ {
+  "q": "Ici, vous ___ (pouvoir) payer par carte ou en espèces.",
+  "v": "pouvoir",
+  "t": "pres",
+  "p": "vous",
+  "e": "Here you can pay by card or in cash.",
+  "b": "A1"
+ },
+ {
+  "q": "Les enfants de moins de six ans ne ___ (pouvoir) pas entrer.",
+  "v": "pouvoir",
+  "t": "pres",
+  "p": "ils",
+  "e": "Children under six can't come in.",
+  "b": "A1"
+ },
+ {
+  "q": "Depuis des années, je ___ (vouloir) apprendre le piano.",
+  "v": "vouloir",
+  "t": "pres",
+  "p": "je",
+  "e": "I've wanted to learn the piano for years.",
+  "b": "A1"
+ },
+ {
+  "q": "Mon fils ___ (vouloir) un chien depuis Noël.",
+  "v": "vouloir",
+  "t": "pres",
+  "p": "il",
+  "e": "My son has wanted a dog since Christmas.",
+  "b": "A1"
+ },
+ {
+  "q": "Nous ne ___ (vouloir) pas déménager, nous aimons ce quartier.",
+  "v": "vouloir",
+  "t": "pres",
+  "p": "nous",
+  "e": "We don't want to move, we like this neighbourhood.",
+  "b": "A1"
+ },
+ {
+  "q": "Mes parents ___ (vouloir) visiter la Bretagne depuis longtemps.",
+  "v": "vouloir",
+  "t": "pres",
+  "p": "ils",
+  "e": "My parents have wanted to visit Brittany for a long time.",
+  "b": "A1"
+ },
+ {
+  "q": "Je ne ___ (savoir) pas où il habite.",
+  "v": "savoir",
+  "t": "pres",
+  "p": "je",
+  "e": "I don't know where he lives.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (savoir) nager depuis quel âge ?",
+  "v": "savoir",
+  "t": "pres",
+  "p": "tu",
+  "e": "How old were you when you learnt to swim?",
+  "b": "A1"
+ },
+ {
+  "q": "Personne ne ___ (savoir) la réponse.",
+  "v": "savoir",
+  "t": "pres",
+  "p": "il",
+  "e": "Nobody knows the answer.",
+  "b": "A1"
+ },
+ {
+  "q": "Nous ___ (savoir) déjà conduire tous les deux.",
+  "v": "savoir",
+  "t": "pres",
+  "p": "nous",
+  "e": "We both already know how to drive.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (savoir) où se trouve la gare ?",
+  "v": "savoir",
+  "t": "pres",
+  "p": "vous",
+  "e": "Do you know where the station is?",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (devoir) partir tôt chaque matin pour éviter les bouchons.",
+  "v": "devoir",
+  "t": "pres",
+  "p": "je",
+  "e": "I have to leave early every morning to avoid the traffic.",
+  "b": "A1"
+ },
+ {
+  "q": "Chaque élève ___ (devoir) porter un uniforme.",
+  "v": "devoir",
+  "t": "pres",
+  "p": "il",
+  "e": "Every pupil has to wear a uniform.",
+  "b": "A1"
+ },
+ {
+  "q": "Tous les lundis, nous ___ (devoir) rendre un rapport.",
+  "v": "devoir",
+  "t": "pres",
+  "p": "nous",
+  "e": "Every Monday we have to hand in a report.",
+  "b": "A1"
+ },
+ {
+  "q": "Les voyageurs ___ (devoir) valider leur billet avant de monter.",
+  "v": "devoir",
+  "t": "pres",
+  "p": "ils",
+  "e": "Passengers have to validate their ticket before boarding.",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (dire) toujours bonjour à la boulangère.",
+  "v": "dire",
+  "t": "pres",
+  "p": "je",
+  "e": "I always say hello to the woman at the bakery.",
+  "b": "A1"
+ },
+ {
+  "q": "Comment vous ___ (dire) ça en français ?",
+  "v": "dire",
+  "t": "pres",
+  "p": "vous",
+  "e": "How do you say that in French?",
+  "b": "A1"
+ },
+ {
+  "q": "Les gens ___ (dire) que ce restaurant est excellent.",
+  "v": "dire",
+  "t": "pres",
+  "p": "ils",
+  "e": "People say this restaurant is excellent.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (dire) toujours la vérité, toi.",
+  "v": "dire",
+  "t": "pres",
+  "p": "tu",
+  "e": "You always tell the truth, you do.",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (voir) mes grands-parents tous les dimanches.",
+  "v": "voir",
+  "t": "pres",
+  "p": "je",
+  "e": "I see my grandparents every Sunday.",
+  "b": "A1"
+ },
+ {
+  "q": "D'ici, on ___ (voir) la tour Eiffel.",
+  "v": "voir",
+  "t": "pres",
+  "p": "il",
+  "e": "You can see the Eiffel Tower from here.",
+  "b": "A1"
+ },
+ {
+  "q": "Nous ___ (voir) souvent nos voisins au parc.",
+  "v": "voir",
+  "t": "pres",
+  "p": "nous",
+  "e": "We often see our neighbours in the park.",
+  "b": "A1"
+ },
+ {
+  "q": "Mes parents ne ___ (voir) pas bien sans lunettes.",
+  "v": "voir",
+  "t": "pres",
+  "p": "ils",
+  "e": "My parents can't see well without glasses.",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (mettre) toujours du sucre dans mon café.",
+  "v": "mettre",
+  "t": "pres",
+  "p": "je",
+  "e": "I always put sugar in my coffee.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (mettre) combien de temps pour aller au travail ?",
+  "v": "mettre",
+  "t": "pres",
+  "p": "tu",
+  "e": "How long does it take you to get to work?",
+  "b": "A1"
+ },
+ {
+  "q": "Chez vous, vous ___ (mettre) le fromage avant le dessert ?",
+  "v": "mettre",
+  "t": "pres",
+  "p": "vous",
+  "e": "At your house, do you serve the cheese before dessert?",
+  "b": "A1"
+ },
+ {
+  "q": "Je ne ___ (boire) jamais de café le soir.",
+  "v": "boire",
+  "t": "pres",
+  "p": "je",
+  "e": "I never drink coffee in the evening.",
+  "b": "A1"
+ },
+ {
+  "q": "Mon père ___ (boire) un verre de vin à chaque repas.",
+  "v": "boire",
+  "t": "pres",
+  "p": "il",
+  "e": "My father drinks a glass of wine with every meal.",
+  "b": "A1"
+ },
+ {
+  "q": "Nous ___ (boire) beaucoup d'eau en été.",
+  "v": "boire",
+  "t": "pres",
+  "p": "nous",
+  "e": "We drink a lot of water in summer.",
+  "b": "A1"
+ },
+ {
+  "q": "Les Anglais ___ (boire) souvent du thé avec du lait.",
+  "v": "boire",
+  "t": "pres",
+  "p": "ils",
+  "e": "The English often drink tea with milk.",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (lire) le journal chaque matin dans le train.",
+  "v": "lire",
+  "t": "pres",
+  "p": "je",
+  "e": "I read the paper every morning on the train.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (lire) quoi en ce moment ?",
+  "v": "lire",
+  "t": "pres",
+  "p": "tu",
+  "e": "What are you reading at the moment?",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (lire) souvent des romans policiers ?",
+  "v": "lire",
+  "t": "pres",
+  "p": "vous",
+  "e": "Do you often read crime novels?",
+  "b": "A1"
+ },
+ {
+  "q": "J'___ (écrire) à ma correspondante une fois par mois.",
+  "v": "écrire",
+  "t": "pres",
+  "p": "je",
+  "e": "I write to my pen friend once a month.",
+  "b": "A2"
+ },
+ {
+  "q": "Les élèves ___ (écrire) leur nom en haut de la page.",
+  "v": "écrire",
+  "t": "pres",
+  "p": "ils",
+  "e": "The pupils write their name at the top of the page.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (écrire) nos cartes de vœux chaque décembre.",
+  "v": "écrire",
+  "t": "pres",
+  "p": "nous",
+  "e": "We write our greeting cards every December.",
+  "b": "A2"
+ },
+ {
+  "q": "En général, je ___ (dormir) huit heures par nuit.",
+  "v": "dormir",
+  "t": "pres",
+  "p": "je",
+  "e": "I generally sleep eight hours a night.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (dormir) encore ? Il est onze heures !",
+  "v": "dormir",
+  "t": "pres",
+  "p": "tu",
+  "e": "Are you still asleep? It's eleven o'clock!",
+  "b": "A1"
+ },
+ {
+  "q": "Les chats ___ (dormir) presque toute la journée.",
+  "v": "dormir",
+  "t": "pres",
+  "p": "ils",
+  "e": "Cats sleep nearly all day.",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (partir) au travail à sept heures et demie.",
+  "v": "partir",
+  "t": "pres",
+  "p": "je",
+  "e": "I leave for work at half past seven.",
+  "b": "A1"
+ },
+ {
+  "q": "Le dernier train ___ (partir) à minuit.",
+  "v": "partir",
+  "t": "pres",
+  "p": "il",
+  "e": "The last train leaves at midnight.",
+  "b": "A1"
+ },
+ {
+  "q": "Nous ___ (sortir) souvent le vendredi soir.",
+  "v": "sortir",
+  "t": "pres",
+  "p": "nous",
+  "e": "We often go out on Friday evenings.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (sortir) souvent avec tes collègues ?",
+  "v": "sortir",
+  "t": "pres",
+  "p": "tu",
+  "e": "Do you often go out with your colleagues?",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (connaître) bien ce quartier, j'y habite.",
+  "v": "connaître",
+  "t": "pres",
+  "p": "je",
+  "e": "I know this area well, I live here.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (connaître) un bon dentiste près d'ici ?",
+  "v": "connaître",
+  "t": "pres",
+  "p": "vous",
+  "e": "Do you know a good dentist near here?",
+  "b": "A1"
+ },
+ {
+  "q": "Mon petit frère ___ (croire) encore au père Noël.",
+  "v": "croire",
+  "t": "pres",
+  "p": "il",
+  "e": "My little brother still believes in Father Christmas.",
+  "b": "A1"
+ },
+ {
+  "q": "Nous ___ (vivre) à Lille depuis cinq ans.",
+  "v": "vivre",
+  "t": "pres",
+  "p": "nous",
+  "e": "We have lived in Lille for five years.",
+  "b": "A1"
+ },
+ {
+  "q": "Beaucoup de gens ___ (vivre) seuls dans les grandes villes.",
+  "v": "vivre",
+  "t": "pres",
+  "p": "ils",
+  "e": "Many people live alone in big cities.",
+  "b": "A1"
+ },
+ {
+  "q": "Je ne ___ (comprendre) pas cette question.",
+  "v": "comprendre",
+  "t": "pres",
+  "p": "je",
+  "e": "I don't understand this question.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (comprendre) quand je parle vite ?",
+  "v": "comprendre",
+  "t": "pres",
+  "p": "vous",
+  "e": "Do you understand when I speak fast?",
+  "b": "A1"
+ },
+ {
+  "q": "J'___ (apprendre) le français depuis six mois.",
+  "v": "apprendre",
+  "t": "pres",
+  "p": "je",
+  "e": "I've been learning French for six months.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (suivre) des cours de cuisine le jeudi ?",
+  "v": "suivre",
+  "t": "pres",
+  "p": "tu",
+  "e": "Do you take cooking classes on Thursdays?",
+  "b": "A1"
+ },
+ {
+  "q": "Les magasins ___ (ouvrir) à neuf heures.",
+  "v": "ouvrir",
+  "t": "pres",
+  "p": "ils",
+  "e": "The shops open at nine.",
+  "b": "A2"
+ },
+ {
+  "q": "Ma mère ___ (recevoir) beaucoup de lettres de ses amies.",
+  "v": "recevoir",
+  "t": "pres",
+  "p": "il",
+  "e": "My mother gets lots of letters from her friends.",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (courir) dans le parc tous les matins.",
+  "v": "courir",
+  "t": "pres",
+  "p": "je",
+  "e": "I run in the park every morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ___ (rire) toujours aux blagues de leur père.",
+  "v": "rire",
+  "t": "pres",
+  "p": "ils",
+  "e": "They always laugh at their father's jokes.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (conduire) trop vite dans cette rue !",
+  "v": "conduire",
+  "t": "pres",
+  "p": "vous",
+  "e": "You drive too fast in this street!",
+  "b": "A2"
+ },
+ {
+  "q": "J'___ (offrir) toujours des fleurs à ma mère pour son anniversaire.",
+  "v": "offrir",
+  "t": "pres",
+  "p": "je",
+  "e": "I always give my mother flowers for her birthday.",
+  "b": "A2"
+ }
+]

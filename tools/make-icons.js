@@ -60,9 +60,14 @@ const ICONS = {
     emoji: '🌷',
     bg: [29, 79, 168],           // #1d4fa8, De Stijl blue
     inset: 0.66
+  },
+  francais: {
+    emoji: '🥐',
+    bg: [163, 32, 46],           // #a3202e, rouge de Jouy
+    inset: 0.66
   }
 };
-if (!ICONS[TARGET]) { console.error('make-icons: unknown --target ' + TARGET + ' (juegos, gaeilge or nederlands)'); process.exit(1); }
+if (!ICONS[TARGET]) { console.error('make-icons: unknown --target ' + TARGET + ' (juegos, gaeilge, nederlands or francais)'); process.exit(1); }
 const ICON = ICONS[TARGET];
 const SIZES = [
   { file: 'icon-192.png', size: 192 },

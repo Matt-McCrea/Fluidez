@@ -1,0 +1,820 @@
+[
+ {
+  "q": "Je bois ___ café tous les matins.",
+  "n": "café",
+  "t": "part",
+  "e": "I drink coffee every morning.",
+  "b": "A1",
+  "a": "du"
+ },
+ {
+  "q": "Il y a ___ chats dans le jardin.",
+  "n": "chat",
+  "t": "part",
+  "e": "There are cats in the garden.",
+  "b": "A2",
+  "a": "des",
+  "pl": 1
+ },
+ {
+  "q": "Il a ___ chance, ce garçon !",
+  "n": "chance",
+  "t": "part",
+  "e": "That boy is lucky!",
+  "b": "A1",
+  "a": "de la"
+ },
+ {
+  "q": "Je mange ___ pain le matin.",
+  "n": "pain",
+  "t": "part",
+  "e": "I eat bread in the morning.",
+  "b": "A2",
+  "a": "du"
+ },
+ {
+  "q": "Tu veux ___ café ?",
+  "n": "café",
+  "t": "part",
+  "e": "Do you want some coffee?",
+  "b": "A1",
+  "a": "du"
+ },
+ {
+  "q": "Elle boit ___ thé vert.",
+  "n": "thé",
+  "t": "part",
+  "e": "She drinks green tea.",
+  "b": "A2",
+  "a": "du"
+ },
+ {
+  "q": "On achète ___ fromage au marché.",
+  "n": "fromage",
+  "t": "part",
+  "e": "We buy cheese at the market.",
+  "b": "B1",
+  "a": "du"
+ },
+ {
+  "q": "Mets ___ beurre sur ton pain.",
+  "n": "beurre",
+  "t": "part",
+  "e": "Put some butter on your bread.",
+  "b": "B1",
+  "a": "du"
+ },
+ {
+  "q": "Il met ___ sucre dans son café.",
+  "n": "sucre",
+  "t": "part",
+  "e": "He puts sugar in his coffee.",
+  "b": "B1",
+  "a": "du"
+ },
+ {
+  "q": "Ajoute ___ sel, c'est fade.",
+  "n": "sel",
+  "t": "part",
+  "e": "Add some salt, it's bland.",
+  "b": "B1",
+  "a": "du"
+ },
+ {
+  "q": "Ce soir, on mange ___ riz.",
+  "n": "riz",
+  "t": "part",
+  "e": "Tonight we're having rice.",
+  "b": "B1",
+  "a": "du"
+ },
+ {
+  "q": "Je voudrais ___ jus d'orange.",
+  "n": "jus",
+  "t": "part",
+  "e": "I'd like some orange juice.",
+  "b": "B1",
+  "a": "du"
+ },
+ {
+  "q": "Il boit ___ lait avant de dormir.",
+  "n": "lait",
+  "t": "part",
+  "e": "He drinks milk before going to sleep.",
+  "b": "A2",
+  "a": "du"
+ },
+ {
+  "q": "On boit ___ vin rouge avec le repas.",
+  "n": "vin",
+  "t": "part",
+  "e": "We drink red wine with the meal.",
+  "b": "A2",
+  "a": "du"
+ },
+ {
+  "q": "Il y a ___ poulet pour le dîner.",
+  "n": "poulet",
+  "t": "part",
+  "e": "There's chicken for dinner.",
+  "b": "A2",
+  "a": "du"
+ },
+ {
+  "q": "Je mange ___ poisson le vendredi.",
+  "n": "poisson",
+  "t": "part",
+  "e": "I eat fish on Fridays.",
+  "b": "A2",
+  "a": "du"
+ },
+ {
+  "q": "Tu reprends ___ gâteau ?",
+  "n": "gâteau",
+  "t": "part",
+  "e": "Will you have some more cake?",
+  "b": "A2",
+  "a": "du"
+ },
+ {
+  "q": "Il fait ___ sport tous les jours.",
+  "n": "sport",
+  "t": "part",
+  "e": "He does sport every day.",
+  "b": "A2",
+  "a": "du"
+ },
+ {
+  "q": "Les voisins font ___ bruit.",
+  "n": "bruit",
+  "t": "part",
+  "e": "The neighbours are making noise.",
+  "b": "A2",
+  "a": "du"
+ },
+ {
+  "q": "Il faut ___ courage pour dire ça.",
+  "n": "courage",
+  "t": "part",
+  "e": "It takes courage to say that.",
+  "b": "A2",
+  "a": "du"
+ },
+ {
+  "q": "Tu as ___ temps ce soir ?",
+  "n": "temps",
+  "t": "part",
+  "e": "Do you have time this evening?",
+  "b": "A1",
+  "a": "du"
+ },
+ {
+  "q": "Il y a ___ vent aujourd'hui.",
+  "n": "vent",
+  "t": "part",
+  "e": "It's windy today.",
+  "b": "A2",
+  "a": "du"
+ },
+ {
+  "q": "Il y a ___ soleil cet après-midi.",
+  "n": "soleil",
+  "t": "part",
+  "e": "It's sunny this afternoon.",
+  "b": "A2",
+  "a": "du"
+ },
+ {
+  "q": "J'ai ___ travail ce week-end.",
+  "n": "travail",
+  "t": "part",
+  "e": "I have work this weekend.",
+  "b": "A1",
+  "a": "du"
+ },
+ {
+  "q": "Il y a ___ monde au marché.",
+  "n": "monde",
+  "t": "part",
+  "e": "There are lots of people at the market.",
+  "b": "A1",
+  "a": "du"
+ },
+ {
+  "q": "Vous avez ___ feu ?",
+  "n": "feu",
+  "t": "part",
+  "e": "Have you got a light?",
+  "b": "A1",
+  "a": "du"
+ },
+ {
+  "q": "Elle fait ___ piano depuis dix ans.",
+  "n": "piano",
+  "t": "part",
+  "e": "She has played the piano for ten years.",
+  "b": "B1",
+  "a": "du"
+ },
+ {
+  "q": "Tu as ___ talent !",
+  "n": "talent",
+  "t": "part",
+  "e": "You've got talent!",
+  "b": "A2",
+  "a": "du"
+ },
+ {
+  "q": "Il a ___ charme.",
+  "n": "charme",
+  "t": "part",
+  "e": "He's got charm.",
+  "b": "B1",
+  "a": "du"
+ },
+ {
+  "q": "Il faut acheter ___ papier.",
+  "n": "papier",
+  "t": "part",
+  "e": "We need to buy some paper.",
+  "b": "A1",
+  "a": "du"
+ },
+ {
+  "q": "Il y a ___ champagne pour tout le monde.",
+  "n": "champagne",
+  "t": "part",
+  "e": "There's champagne for everyone.",
+  "b": "B1",
+  "a": "du"
+ },
+ {
+  "q": "Achète ___ savon, s'il te plaît.",
+  "n": "savon",
+  "t": "part",
+  "e": "Buy some soap, please.",
+  "b": "B1",
+  "a": "du"
+ },
+ {
+  "q": "On a ___ miel de la ferme.",
+  "n": "miel",
+  "t": "part",
+  "e": "We have honey from the farm.",
+  "b": "B1",
+  "a": "du"
+ },
+ {
+  "q": "Il y a ___ sable dans mes chaussures.",
+  "n": "sable",
+  "t": "part",
+  "e": "There's sand in my shoes.",
+  "b": "B1",
+  "a": "du"
+ },
+ {
+  "q": "Elle met ___ parfum avant de sortir.",
+  "n": "parfum",
+  "t": "part",
+  "e": "She puts on perfume before going out.",
+  "b": "B1",
+  "a": "du"
+ },
+ {
+  "q": "Il a ___ succès avec son livre.",
+  "n": "succès",
+  "t": "part",
+  "e": "His book is a success.",
+  "b": "A2",
+  "a": "du"
+ },
+ {
+  "q": "On fait ___ vélo le dimanche.",
+  "n": "vélo",
+  "t": "part",
+  "e": "We go cycling on Sundays.",
+  "b": "B1",
+  "a": "du"
+ },
+ {
+  "q": "Il y a ___ porc dans ce plat ?",
+  "n": "porc",
+  "t": "part",
+  "e": "Is there pork in this dish?",
+  "b": "B1",
+  "a": "du"
+ },
+ {
+  "q": "Je voudrais ___ soupe.",
+  "n": "soupe",
+  "t": "part",
+  "e": "I'd like some soup.",
+  "b": "B1",
+  "a": "de la"
+ },
+ {
+  "q": "On mange ___ viande ce soir.",
+  "n": "viande",
+  "t": "part",
+  "e": "We're having meat tonight.",
+  "b": "A2",
+  "a": "de la"
+ },
+ {
+  "q": "Tu veux ___ salade ?",
+  "n": "salade",
+  "t": "part",
+  "e": "Do you want some salad?",
+  "b": "B1",
+  "a": "de la"
+ },
+ {
+  "q": "Elle écoute ___ musique dans le train.",
+  "n": "musique",
+  "t": "part",
+  "e": "She listens to music on the train.",
+  "b": "A1",
+  "a": "de la"
+ },
+ {
+  "q": "Il faut ___ patience avec les enfants.",
+  "n": "patience",
+  "t": "part",
+  "e": "You need patience with children.",
+  "b": "B1",
+  "a": "de la"
+ },
+ {
+  "q": "J'ai eu ___ chance !",
+  "n": "chance",
+  "t": "part",
+  "e": "I was lucky!",
+  "b": "A1",
+  "a": "de la"
+ },
+ {
+  "q": "Il y a ___ neige sur la route.",
+  "n": "neige",
+  "t": "part",
+  "e": "There's snow on the road.",
+  "b": "A2",
+  "a": "de la"
+ },
+ {
+  "q": "Il reste ___ glace pour le dessert.",
+  "n": "glace",
+  "t": "part",
+  "e": "There's some ice cream left for dessert.",
+  "b": "A2",
+  "a": "de la"
+ },
+ {
+  "q": "Tu as ___ fièvre ?",
+  "n": "fièvre",
+  "t": "part",
+  "e": "Have you got a temperature?",
+  "b": "B1",
+  "a": "de la"
+ },
+ {
+  "q": "Achète ___ bière pour ce soir.",
+  "n": "bière",
+  "t": "part",
+  "e": "Buy some beer for tonight.",
+  "b": "A2",
+  "a": "de la"
+ },
+ {
+  "q": "Mets ___ crème dans la sauce.",
+  "n": "crème",
+  "t": "part",
+  "e": "Put some cream in the sauce.",
+  "b": "B1",
+  "a": "de la"
+ },
+ {
+  "q": "Elle fait ___ danse le mercredi.",
+  "n": "danse",
+  "t": "part",
+  "e": "She does dance on Wednesdays.",
+  "b": "A2",
+  "a": "de la"
+ },
+ {
+  "q": "Il fait ___ guitare avec ses amis.",
+  "n": "guitare",
+  "t": "part",
+  "e": "He plays the guitar with his friends.",
+  "b": "B1",
+  "a": "de la"
+ },
+ {
+  "q": "J'ai ___ peine pour lui.",
+  "n": "peine",
+  "t": "part",
+  "e": "I feel sorry for him.",
+  "b": "A1",
+  "a": "de la"
+ },
+ {
+  "q": "On a ___ place dans la voiture.",
+  "n": "place",
+  "t": "part",
+  "e": "We have room in the car.",
+  "b": "A1",
+  "a": "de la"
+ },
+ {
+  "q": "Il y a ___ lumière dans la cuisine.",
+  "n": "lumière",
+  "t": "part",
+  "e": "There's a light on in the kitchen.",
+  "b": "A1",
+  "a": "de la"
+ },
+ {
+  "q": "Elle a ___ force dans les bras.",
+  "n": "force",
+  "t": "part",
+  "e": "She's got strong arms.",
+  "b": "A2",
+  "a": "de la"
+ },
+ {
+  "q": "Ça demande ___ volonté.",
+  "n": "volonté",
+  "t": "part",
+  "e": "It takes willpower.",
+  "b": "A2",
+  "a": "de la"
+ },
+ {
+  "q": "Je mange ___ tarte aux pommes.",
+  "n": "tarte",
+  "t": "part",
+  "e": "I'm eating apple tart.",
+  "b": "B1",
+  "a": "de la"
+ },
+ {
+  "q": "Il y a ___ poussière partout.",
+  "n": "poussière",
+  "t": "part",
+  "e": "There's dust everywhere.",
+  "b": "B1",
+  "a": "de la"
+ },
+ {
+  "q": "On met ___ sauce tomate sur les pâtes.",
+  "n": "sauce",
+  "t": "part",
+  "e": "We put tomato sauce on the pasta.",
+  "b": "B1",
+  "a": "de la"
+ },
+ {
+  "q": "J'ai ___ famille à Marseille.",
+  "n": "famille",
+  "t": "part",
+  "e": "I have family in Marseille.",
+  "b": "A1",
+  "a": "de la"
+ },
+ {
+  "q": "Tu as ___ monnaie pour le parking ?",
+  "n": "monnaie",
+  "t": "part",
+  "e": "Have you got change for the car park?",
+  "b": "B1",
+  "a": "de la"
+ },
+ {
+  "q": "Les enfants mangent ___ pizza.",
+  "n": "pizza",
+  "t": "part",
+  "e": "The children are eating pizza.",
+  "b": "A2",
+  "a": "de la"
+ },
+ {
+  "q": "Tu as ___ colle ?",
+  "n": "colle",
+  "t": "part",
+  "e": "Have you got any glue?",
+  "b": "B1",
+  "a": "de la"
+ },
+ {
+  "q": "On a ___ visite ce soir.",
+  "n": "visite",
+  "t": "part",
+  "e": "We have visitors this evening.",
+  "b": "A2",
+  "a": "de la"
+ },
+ {
+  "q": "Il me faut ___ peinture bleue.",
+  "n": "peinture",
+  "t": "part",
+  "e": "I need some blue paint.",
+  "b": "A2",
+  "a": "de la"
+ },
+ {
+  "q": "Il fait ___ magie pour les enfants.",
+  "n": "magie",
+  "t": "part",
+  "e": "He does magic for the children.",
+  "b": "A2",
+  "a": "de la"
+ },
+ {
+  "q": "Je voudrais ___ eau, s'il vous plaît.",
+  "n": "eau",
+  "t": "part",
+  "e": "I'd like some water, please.",
+  "b": "A1",
+  "a": "de l'"
+ },
+ {
+  "q": "Mets ___ huile dans la poêle.",
+  "n": "huile",
+  "t": "part",
+  "e": "Put some oil in the frying pan.",
+  "b": "B1",
+  "a": "de l'"
+ },
+ {
+  "q": "Il faut ___ argent pour voyager.",
+  "n": "argent",
+  "t": "part",
+  "e": "You need money to travel.",
+  "b": "A1",
+  "a": "de l'"
+ },
+ {
+  "q": "Il a ___ humour.",
+  "n": "humour",
+  "t": "part",
+  "e": "He has a sense of humour.",
+  "b": "B1",
+  "a": "de l'"
+ },
+ {
+  "q": "Elle a ___ imagination.",
+  "n": "imagination",
+  "t": "part",
+  "e": "She has imagination.",
+  "b": "B1",
+  "a": "de l'"
+ },
+ {
+  "q": "Il faut ___ essence pour la voiture.",
+  "n": "essence",
+  "t": "part",
+  "e": "We need petrol for the car.",
+  "b": "B1",
+  "a": "de l'"
+ },
+ {
+  "q": "On a encore ___ espoir.",
+  "n": "espoir",
+  "t": "part",
+  "e": "We still have hope.",
+  "b": "A2",
+  "a": "de l'"
+ },
+ {
+  "q": "Il faut ___ énergie pour ce travail.",
+  "n": "énergie",
+  "t": "part",
+  "e": "This job takes energy.",
+  "b": "A2",
+  "a": "de l'"
+ },
+ {
+  "q": "Il y a ___ alcool dans ce gâteau.",
+  "n": "alcool",
+  "t": "part",
+  "e": "There's alcohol in this cake.",
+  "b": "A2",
+  "a": "de l'"
+ },
+ {
+  "q": "Il faut ___ air frais ici.",
+  "n": "air",
+  "t": "part",
+  "e": "We need some fresh air in here.",
+  "b": "A1",
+  "a": "de l'"
+ },
+ {
+  "q": "Tu as ___ expérience dans ce métier ?",
+  "n": "expérience",
+  "t": "part",
+  "e": "Do you have experience in this job?",
+  "b": "A2",
+  "a": "de l'"
+ },
+ {
+  "q": "Il y a ___ eau partout dans la salle de bain.",
+  "n": "eau",
+  "t": "part",
+  "e": "There's water all over the bathroom.",
+  "b": "A1",
+  "a": "de l'"
+ },
+ {
+  "q": "On a ___ avance sur le programme.",
+  "n": "avance",
+  "t": "part",
+  "e": "We're ahead of schedule.",
+  "b": "A2",
+  "a": "de l'"
+ },
+ {
+  "q": "Ça demande ___ intelligence.",
+  "n": "intelligence",
+  "t": "part",
+  "e": "It takes intelligence.",
+  "b": "B1",
+  "a": "de l'"
+ },
+ {
+  "q": "Il y a ___ électricité dans le village ?",
+  "n": "électricité",
+  "t": "part",
+  "e": "Is there electricity in the village?",
+  "b": "B1",
+  "a": "de l'"
+ },
+ {
+  "q": "Tu as ___ appétit ce matin !",
+  "n": "appétit",
+  "t": "part",
+  "e": "You're hungry this morning!",
+  "b": "B1",
+  "a": "de l'"
+ },
+ {
+  "q": "Il y a ___ herbe partout dans le jardin.",
+  "n": "herbe",
+  "t": "part",
+  "e": "There's grass all over the garden.",
+  "b": "A2",
+  "a": "de l'"
+ },
+ {
+  "q": "J'achète ___ pommes au marché.",
+  "n": "pomme",
+  "t": "part",
+  "e": "I buy apples at the market.",
+  "b": "A2",
+  "a": "des",
+  "pl": 1
+ },
+ {
+  "q": "Elle a ___ amis partout.",
+  "n": "ami",
+  "t": "part",
+  "e": "She has friends everywhere.",
+  "b": "A1",
+  "a": "des",
+  "pl": 1
+ },
+ {
+  "q": "Il y a ___ enfants dans le parc.",
+  "n": "enfant",
+  "t": "part",
+  "e": "There are children in the park.",
+  "b": "A1",
+  "a": "des",
+  "pl": 1
+ },
+ {
+  "q": "On mange ___ frites ce soir.",
+  "n": "frite",
+  "t": "part",
+  "e": "We're having chips tonight.",
+  "b": "B2",
+  "a": "des",
+  "pl": 1
+ },
+ {
+  "q": "J'ai ___ questions pour vous.",
+  "n": "question",
+  "t": "part",
+  "e": "I have some questions for you.",
+  "b": "A1",
+  "a": "des",
+  "pl": 1
+ },
+ {
+  "q": "Il y a ___ fleurs sur la table.",
+  "n": "fleur",
+  "t": "part",
+  "e": "There are flowers on the table.",
+  "b": "A2",
+  "a": "des",
+  "pl": 1
+ },
+ {
+  "q": "Tu veux ___ bonbons ?",
+  "n": "bonbon",
+  "t": "part",
+  "e": "Do you want some sweets?",
+  "b": "B1",
+  "a": "des",
+  "pl": 1
+ },
+ {
+  "q": "J'ai acheté ___ œufs pour le gâteau.",
+  "n": "œuf",
+  "t": "part",
+  "e": "I bought eggs for the cake.",
+  "b": "B1",
+  "a": "des",
+  "pl": 1
+ },
+ {
+  "q": "On a ___ problèmes avec la voiture.",
+  "n": "problème",
+  "t": "part",
+  "e": "We're having problems with the car.",
+  "b": "A1",
+  "a": "des",
+  "pl": 1
+ },
+ {
+  "q": "Il y a ___ gens bizarres ici.",
+  "n": "gens",
+  "t": "part",
+  "e": "There are some strange people here.",
+  "b": "A1",
+  "a": "des",
+  "pl": 1
+ },
+ {
+  "q": "Elle a toujours ___ idées géniales.",
+  "n": "idée",
+  "t": "part",
+  "e": "She always has great ideas.",
+  "b": "A1",
+  "a": "des",
+  "pl": 1
+ },
+ {
+  "q": "J'ai ___ cadeaux pour toi.",
+  "n": "cadeau",
+  "t": "part",
+  "e": "I've got presents for you.",
+  "b": "A1",
+  "a": "des",
+  "pl": 1
+ },
+ {
+  "q": "Il y a ___ fruits dans le panier.",
+  "n": "fruit",
+  "t": "part",
+  "e": "There's fruit in the basket.",
+  "b": "A2",
+  "a": "des",
+  "pl": 1
+ },
+ {
+  "q": "Elle lit ___ livres en anglais.",
+  "n": "livre",
+  "t": "part",
+  "e": "She reads books in English.",
+  "b": "A2",
+  "a": "des",
+  "pl": 1
+ },
+ {
+  "q": "Il y a ___ oiseaux dans le jardin.",
+  "n": "oiseau",
+  "t": "part",
+  "e": "There are birds in the garden.",
+  "b": "A2",
+  "a": "des",
+  "pl": 1
+ },
+ {
+  "q": "J'ai ___ cousins au Canada.",
+  "n": "cousin",
+  "t": "part",
+  "e": "I have cousins in Canada.",
+  "b": "A2",
+  "a": "des",
+  "pl": 1
+ },
+ {
+  "q": "Il y a ___ nuages ce matin.",
+  "n": "nuage",
+  "t": "part",
+  "e": "It's cloudy this morning.",
+  "b": "B1",
+  "a": "des",
+  "pl": 1
+ }
+]

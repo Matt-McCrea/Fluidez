@@ -1,0 +1,1300 @@
+[
+ {
+  "q": "Tu as ___ (comprendre) ce qu'elle voulait ?",
+  "v": "comprendre",
+  "t": "pc",
+  "p": "tu",
+  "e": "Did you understand what she wanted?",
+  "b": "A1"
+ },
+ {
+  "q": "Hier soir, nous avons ___ (discuter) des heures sur la terrasse.",
+  "v": "discuter",
+  "t": "pc",
+  "p": "nous",
+  "e": "Last night, we chatted for hours on the terrace.",
+  "b": "A2"
+ },
+ {
+  "q": "Ma mère a ___ (garder) son vieux manteau.",
+  "v": "garder",
+  "t": "pc",
+  "p": "il",
+  "e": "My mother kept her old coat.",
+  "b": "A1"
+ },
+ {
+  "q": "Les enfants ont ___ (construire) un château de sable.",
+  "v": "construire",
+  "t": "pc",
+  "p": "ils",
+  "e": "The children built a sandcastle.",
+  "b": "B1"
+ },
+ {
+  "q": "J'ai ___ (ouvrir) la fenêtre pour faire entrer l'air.",
+  "v": "ouvrir",
+  "t": "pc",
+  "p": "je",
+  "e": "I opened the window to let some air in.",
+  "b": "A2"
+ },
+ {
+  "q": "Le match a ___ (commencer) à huit heures.",
+  "v": "commencer",
+  "t": "pc",
+  "p": "il",
+  "e": "The match started at eight o'clock.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous avez ___ (manquer) la réunion de ce matin ?",
+  "v": "manquer",
+  "t": "pc",
+  "p": "vous",
+  "e": "Did you miss this morning's meeting?",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, Hélène a ___ (oublier) ses clés chez moi.",
+  "v": "oublier",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, Hélène forgot her keys at my place.",
+  "b": "A2"
+ },
+ {
+  "q": "L'année dernière, ils ont ___ (traverser) l'Espagne en vélo.",
+  "v": "traverser",
+  "t": "pc",
+  "p": "ils",
+  "e": "Last year, they crossed Spain by bike.",
+  "b": "B1"
+ },
+ {
+  "q": "Ce matin, j'ai ___ (prendre) un taxi pour aller à la gare.",
+  "v": "prendre",
+  "t": "pc",
+  "p": "je",
+  "e": "This morning, I took a taxi to the station.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu as ___ (voir) le dernier film de ce réalisateur ?",
+  "v": "voir",
+  "t": "pc",
+  "p": "tu",
+  "e": "Have you seen this director's latest film?",
+  "b": "A1"
+ },
+ {
+  "q": "Nous avons ___ (payer) notre chambre avant de partir.",
+  "v": "payer",
+  "t": "pc",
+  "p": "nous",
+  "e": "We paid for our room before leaving.",
+  "b": "A1"
+ },
+ {
+  "q": "Il a ___ (réfléchir) longtemps avant de répondre.",
+  "v": "réfléchir",
+  "t": "pc",
+  "p": "il",
+  "e": "He thought for a long time before answering.",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, Zoé a ___ (écrire) un poème pour sa mère.",
+  "v": "écrire",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, Zoé wrote a poem for her mother.",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ont ___ (faire) du vélo tout l'été.",
+  "v": "faire",
+  "t": "pc",
+  "p": "ils",
+  "e": "They went cycling all summer.",
+  "b": "A1"
+ },
+ {
+  "q": "J'ai ___ (chercher) mes clés partout ce matin.",
+  "v": "chercher",
+  "t": "pc",
+  "p": "je",
+  "e": "I looked everywhere for my keys this morning.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, l'équipe de France a ___ (gagner) le match.",
+  "v": "gagner",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, the French team won the match.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous avez ___ (parler) à vos parents ?",
+  "v": "parler",
+  "t": "pc",
+  "p": "vous",
+  "e": "Have you spoken to your parents?",
+  "b": "A1"
+ },
+ {
+  "q": "Ce matin, il a ___ (frapper) à ma porte.",
+  "v": "frapper",
+  "t": "pc",
+  "p": "il",
+  "e": "This morning, he knocked on my door.",
+  "b": "B1"
+ },
+ {
+  "q": "J'ai ___ (rester) trop longtemps au soleil hier.",
+  "v": "rester",
+  "t": "pc",
+  "p": "je",
+  "e": "I stayed in the sun too long yesterday.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu as ___ (accompagner) tes amis à la gare ?",
+  "v": "accompagner",
+  "t": "pc",
+  "p": "tu",
+  "e": "Did you take your friends to the station?",
+  "b": "B1"
+ },
+ {
+  "q": "Nous avons ___ (passer) nos vacances en Bretagne.",
+  "v": "passer",
+  "t": "pc",
+  "p": "nous",
+  "e": "We spent our holidays in Brittany.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, mon voisin m'a ___ (prêter) sa tondeuse.",
+  "v": "prêter",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, my neighbour lent me his lawnmower.",
+  "b": "A2"
+ },
+ {
+  "q": "L'an dernier, la ville a ___ (ouvrir) trois nouvelles écoles.",
+  "v": "ouvrir",
+  "t": "pc",
+  "p": "il",
+  "e": "Last year, the town opened three new schools.",
+  "b": "A2"
+ },
+ {
+  "q": "J'ai ___ (appeler) mon frère pour son anniversaire.",
+  "v": "appeler",
+  "t": "pc",
+  "p": "je",
+  "e": "I called my brother for his birthday.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, l'avion a ___ (avoir) deux heures de retard.",
+  "v": "avoir",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, the plane was two hours late.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous avez ___ (rencontrer) le nouveau collègue ?",
+  "v": "rencontrer",
+  "t": "pc",
+  "p": "vous",
+  "e": "Have you met the new colleague?",
+  "b": "A1"
+ },
+ {
+  "q": "Hier soir, j'ai ___ (cuisiner) un plat italien.",
+  "v": "cuisiner",
+  "t": "pc",
+  "p": "je",
+  "e": "Last night, I cooked an Italian dish.",
+  "b": "B1"
+ },
+ {
+  "q": "Tu as ___ (répondre) à tout le monde ?",
+  "v": "répondre",
+  "t": "pc",
+  "p": "tu",
+  "e": "Did you reply to everyone?",
+  "b": "A1"
+ },
+ {
+  "q": "Nous avons ___ (prendre) le dernier métro.",
+  "v": "prendre",
+  "t": "pc",
+  "p": "nous",
+  "e": "We took the last metro.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, elle a ___ (laisser) sa voiture au garage.",
+  "v": "laisser",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, she left her car at the garage.",
+  "b": "A1"
+ },
+ {
+  "q": "Ce matin, le patron a ___ (remercier) tout le monde.",
+  "v": "remercier",
+  "t": "pc",
+  "p": "il",
+  "e": "This morning, the boss thanked everyone.",
+  "b": "A2"
+ },
+ {
+  "q": "Mes amis m'ont ___ (offrir) un livre.",
+  "v": "offrir",
+  "t": "pc",
+  "p": "ils",
+  "e": "My friends gave me a book.",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, il a ___ (demander) de l'aide à son voisin.",
+  "v": "demander",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, he asked his neighbour for help.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous avez ___ (prendre) quel train ?",
+  "v": "prendre",
+  "t": "pc",
+  "p": "vous",
+  "e": "Which train did you take?",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, Mathilde a ___ (étudier) toute la journée.",
+  "v": "étudier",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, Mathilde studied all day.",
+  "b": "B1"
+ },
+ {
+  "q": "Les enfants ont ___ (manger) tous les bonbons.",
+  "v": "manger",
+  "t": "pc",
+  "p": "ils",
+  "e": "The children ate all the sweets.",
+  "b": "A1"
+ },
+ {
+  "q": "J'ai ___ (perdre) ma montre ce matin.",
+  "v": "perdre",
+  "t": "pc",
+  "p": "je",
+  "e": "I lost my watch this morning.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu as ___ (faire) ta valise ?",
+  "v": "faire",
+  "t": "pc",
+  "p": "tu",
+  "e": "Have you packed your suitcase?",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, nous avons ___ (avoir) une belle surprise.",
+  "v": "avoir",
+  "t": "pc",
+  "p": "nous",
+  "e": "Yesterday, we had a lovely surprise.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, Louis a ___ (jouer) le piano pendant trois heures.",
+  "v": "jouer",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, Louis played the piano for three hours.",
+  "b": "A1"
+ },
+ {
+  "q": "Ce matin, le boulanger a ___ (ouvrir) le magasin à sept heures.",
+  "v": "ouvrir",
+  "t": "pc",
+  "p": "il",
+  "e": "This morning, the baker opened the shop at seven.",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ont ___ (dire) la vérité à la police.",
+  "v": "dire",
+  "t": "pc",
+  "p": "ils",
+  "e": "They told the police the truth.",
+  "b": "A1"
+ },
+ {
+  "q": "L'été dernier, j'ai ___ (voyager) en Grèce.",
+  "v": "voyager",
+  "t": "pc",
+  "p": "je",
+  "e": "Last summer, I travelled in Greece.",
+  "b": "B1"
+ },
+ {
+  "q": "Le bébé a ___ (dormir) toute la matinée.",
+  "v": "dormir",
+  "t": "pc",
+  "p": "il",
+  "e": "The baby slept all morning.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous avez ___ (recevoir) le message de Claire ?",
+  "v": "recevoir",
+  "t": "pc",
+  "p": "vous",
+  "e": "Did you get Claire's message?",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, il a ___ (gagner) le gros lot.",
+  "v": "gagner",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, he won the jackpot.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, j'ai ___ (écrire) deux pages de mon roman.",
+  "v": "écrire",
+  "t": "pc",
+  "p": "je",
+  "e": "Yesterday, I wrote two pages of my novel.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu as ___ (oublier) ton portable chez moi.",
+  "v": "oublier",
+  "t": "pc",
+  "p": "tu",
+  "e": "You forgot your mobile at my place.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous avons ___ (vendre) la vieille voiture de mon père.",
+  "v": "vendre",
+  "t": "pc",
+  "p": "nous",
+  "e": "We sold my father's old car.",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, la police a ___ (arrêter) le voleur.",
+  "v": "arrêter",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, the police arrested the thief.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, Inès a ___ (recevoir) un bouquet de fleurs.",
+  "v": "recevoir",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, Inès got a bunch of flowers.",
+  "b": "A2"
+ },
+ {
+  "q": "J'ai ___ (attraper) le train de huit heures.",
+  "v": "attraper",
+  "t": "pc",
+  "p": "je",
+  "e": "I caught the eight o'clock train.",
+  "b": "A2"
+ },
+ {
+  "q": "Il a ___ (boire) trois verres d'eau.",
+  "v": "boire",
+  "t": "pc",
+  "p": "il",
+  "e": "He drank three glasses of water.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, vous avez ___ (travailler) jusqu'à quelle heure ?",
+  "v": "travailler",
+  "t": "pc",
+  "p": "vous",
+  "e": "How late did you work yesterday?",
+  "b": "A1"
+ },
+ {
+  "q": "L'année dernière, elle a ___ (changer) de travail.",
+  "v": "changer",
+  "t": "pc",
+  "p": "il",
+  "e": "Last year, she changed jobs.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, les enfants ont ___ (regarder) un film d'animation.",
+  "v": "regarder",
+  "t": "pc",
+  "p": "ils",
+  "e": "Yesterday, the children watched an animated film.",
+  "b": "A1"
+ },
+ {
+  "q": "Nous avons ___ (rester) trois jours à Lisbonne.",
+  "v": "rester",
+  "t": "pc",
+  "p": "nous",
+  "e": "We stayed three days in Lisbon.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, mon fils a ___ (apprendre) à faire du vélo.",
+  "v": "apprendre",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, my son learned to ride a bike.",
+  "b": "A1"
+ },
+ {
+  "q": "Ce matin, ma voisine a ___ (perdre) son chat.",
+  "v": "perdre",
+  "t": "pc",
+  "p": "il",
+  "e": "This morning, my neighbour lost her cat.",
+  "b": "A1"
+ },
+ {
+  "q": "Ils ont ___ (traverser) le pont à pied.",
+  "v": "traverser",
+  "t": "pc",
+  "p": "ils",
+  "e": "They crossed the bridge on foot.",
+  "b": "B1"
+ },
+ {
+  "q": "J'ai ___ (mettre) ma valise dans le coffre.",
+  "v": "mettre",
+  "t": "pc",
+  "p": "je",
+  "e": "I put my suitcase in the boot.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, il a ___ (porter) son vieux maillot de foot.",
+  "v": "porter",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, he wore his old football shirt.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous avez ___ (vérifier) les résultats ?",
+  "v": "vérifier",
+  "t": "pc",
+  "p": "vous",
+  "e": "Have you checked the results?",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, la maîtresse a ___ (raconter) une histoire aux enfants.",
+  "v": "raconter",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, the teacher told the children a story.",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ont ___ (prendre) un dernier verre au bar.",
+  "v": "prendre",
+  "t": "pc",
+  "p": "ils",
+  "e": "They had one last drink at the bar.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, j'ai ___ (attendre) le bus pendant vingt minutes.",
+  "v": "attendre",
+  "t": "pc",
+  "p": "je",
+  "e": "Yesterday, I waited twenty minutes for the bus.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu as ___ (avoir) quel âge hier ?",
+  "v": "avoir",
+  "t": "pc",
+  "p": "tu",
+  "e": "How old were you yesterday?",
+  "b": "A1"
+ },
+ {
+  "q": "Nous avons ___ (découvrir) ce film au festival.",
+  "v": "découvrir",
+  "t": "pc",
+  "p": "nous",
+  "e": "We discovered this film at the festival.",
+  "b": "A2"
+ },
+ {
+  "q": "Il a ___ (lire) son discours sans notes.",
+  "v": "lire",
+  "t": "pc",
+  "p": "il",
+  "e": "He read his speech without notes.",
+  "b": "A1"
+ },
+ {
+  "q": "Ce matin, Laure a ___ (prendre) un rendez-vous chez le médecin.",
+  "v": "prendre",
+  "t": "pc",
+  "p": "il",
+  "e": "This morning, Laure made a doctor's appointment.",
+  "b": "A1"
+ },
+ {
+  "q": "Mes parents ont ___ (annuler) leur voyage en Inde.",
+  "v": "annuler",
+  "t": "pc",
+  "p": "ils",
+  "e": "My parents cancelled their trip to India.",
+  "b": "B1"
+ },
+ {
+  "q": "J'ai ___ (attraper) un mauvais rhume la semaine dernière.",
+  "v": "attraper",
+  "t": "pc",
+  "p": "je",
+  "e": "I caught a bad cold last week.",
+  "b": "A2"
+ },
+ {
+  "q": "Le chien a ___ (sauter) dans la piscine.",
+  "v": "sauter",
+  "t": "pc",
+  "p": "il",
+  "e": "The dog jumped into the pool.",
+  "b": "B1"
+ },
+ {
+  "q": "Ils ont ___ (prendre) l'avion pour Montréal.",
+  "v": "prendre",
+  "t": "pc",
+  "p": "ils",
+  "e": "They took the plane to Montreal.",
+  "b": "A1"
+ },
+ {
+  "q": "J'ai ___ (marcher) dans ce parc toute la matinée.",
+  "v": "marcher",
+  "t": "pc",
+  "p": "je",
+  "e": "I walked in this park all morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu as ___ (changer) le mot de passe ?",
+  "v": "changer",
+  "t": "pc",
+  "p": "tu",
+  "e": "Did you change the password?",
+  "b": "A1"
+ },
+ {
+  "q": "Nous avons ___ (couper) le gâteau en huit parts.",
+  "v": "couper",
+  "t": "pc",
+  "p": "nous",
+  "e": "We cut the cake into eight slices.",
+  "b": "B1"
+ },
+ {
+  "q": "Hier, il a ___ (passer) toute la soirée devant la télé.",
+  "v": "passer",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, he spent the whole evening in front of the TV.",
+  "b": "A1"
+ },
+ {
+  "q": "Ce matin, elle a ___ (emmener) ses enfants à l'école.",
+  "v": "emmener",
+  "t": "pc",
+  "p": "il",
+  "e": "This morning, she took her children to school.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier soir, ils ont ___ (jouer) jusqu'à minuit.",
+  "v": "jouer",
+  "t": "pc",
+  "p": "ils",
+  "e": "Last night, they played until midnight.",
+  "b": "A1"
+ },
+ {
+  "q": "J'ai ___ (trouver) une belle maison à louer.",
+  "v": "trouver",
+  "t": "pc",
+  "p": "je",
+  "e": "I found a lovely house to rent.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, il a ___ (faire) très froid.",
+  "v": "faire",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, it was very cold.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous avez ___ (donner) la clé à Jean ?",
+  "v": "donner",
+  "t": "pc",
+  "p": "vous",
+  "e": "Did you give Jean the key?",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, Agathe a ___ (visiter) sa grand-mère à l'hôpital.",
+  "v": "visiter",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, Agathe visited her grandmother in hospital.",
+  "b": "B1"
+ },
+ {
+  "q": "Les élèves ont ___ (oublier) leurs cahiers.",
+  "v": "oublier",
+  "t": "pc",
+  "p": "ils",
+  "e": "The pupils forgot their exercise books.",
+  "b": "A2"
+ },
+ {
+  "q": "J'ai ___ (comprendre) ce qu'il voulait dire.",
+  "v": "comprendre",
+  "t": "pc",
+  "p": "je",
+  "e": "I understood what he meant.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu as ___ (écouter) le dernier album de Stromae ?",
+  "v": "écouter",
+  "t": "pc",
+  "p": "tu",
+  "e": "Have you listened to Stromae's latest album?",
+  "b": "A1"
+ },
+ {
+  "q": "Nous avons ___ (quitter) la maison avant midi.",
+  "v": "quitter",
+  "t": "pc",
+  "p": "nous",
+  "e": "We left the house before noon.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, mon grand-père a ___ (attraper) un poisson énorme.",
+  "v": "attraper",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, my grandfather caught a huge fish.",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, la serveuse nous a ___ (servir) un café.",
+  "v": "servir",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, the waitress served us a coffee.",
+  "b": "A1"
+ },
+ {
+  "q": "Ils ont ___ (organiser) leurs vacances à la dernière minute.",
+  "v": "organiser",
+  "t": "pc",
+  "p": "ils",
+  "e": "They organised their holiday at the last minute.",
+  "b": "B1"
+ },
+ {
+  "q": "Hier, j'ai ___ (avoir) ma mère au téléphone.",
+  "v": "avoir",
+  "t": "pc",
+  "p": "je",
+  "e": "Yesterday, I spoke to my mother on the phone.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, elle a ___ (courir) dix kilomètres.",
+  "v": "courir",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, she ran ten kilometres.",
+  "b": "A2"
+ },
+ {
+  "q": "Les clients ont ___ (demander) l'addition.",
+  "v": "demander",
+  "t": "pc",
+  "p": "ils",
+  "e": "The customers asked for the bill.",
+  "b": "A1"
+ },
+ {
+  "q": "J'ai ___ (passer) un bon moment avec toi.",
+  "v": "passer",
+  "t": "pc",
+  "p": "je",
+  "e": "I had a good time with you.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu as ___ (acheter) quoi au marché ?",
+  "v": "acheter",
+  "t": "pc",
+  "p": "tu",
+  "e": "What did you buy at the market?",
+  "b": "A1"
+ },
+ {
+  "q": "L'année dernière, nous avons ___ (installer) une nouvelle cuisine.",
+  "v": "installer",
+  "t": "pc",
+  "p": "nous",
+  "e": "Last year, we put in a new kitchen.",
+  "b": "B1"
+ },
+ {
+  "q": "Ce matin, Nina a ___ (trouver) la bonne réponse.",
+  "v": "trouver",
+  "t": "pc",
+  "p": "il",
+  "e": "This morning, Nina found the right answer.",
+  "b": "A1"
+ },
+ {
+  "q": "Ils ont ___ (trouver) la maison de leurs rêves.",
+  "v": "trouver",
+  "t": "pc",
+  "p": "ils",
+  "e": "They found their dream house.",
+  "b": "A1"
+ },
+ {
+  "q": "J'ai ___ (lire) la lettre deux fois.",
+  "v": "lire",
+  "t": "pc",
+  "p": "je",
+  "e": "I read the letter twice.",
+  "b": "A1"
+ },
+ {
+  "q": "Le chef a ___ (préparer) un excellent repas.",
+  "v": "préparer",
+  "t": "pc",
+  "p": "il",
+  "e": "The chef cooked an excellent meal.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous avez ___ (choisir) la date de la fête ?",
+  "v": "choisir",
+  "t": "pc",
+  "p": "vous",
+  "e": "Have you chosen the date of the party?",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, le facteur a ___ (livrer) un colis.",
+  "v": "livrer",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, the postman delivered a parcel.",
+  "b": "A2"
+ },
+ {
+  "q": "Les invités ont ___ (rire) toute la nuit.",
+  "v": "rire",
+  "t": "pc",
+  "p": "ils",
+  "e": "The guests laughed all night.",
+  "b": "A2"
+ },
+ {
+  "q": "J'ai ___ (manquer) le bus de justesse ce matin.",
+  "v": "manquer",
+  "t": "pc",
+  "p": "je",
+  "e": "I only just missed the bus this morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu as ___ (apporter) le vin pour ce soir ?",
+  "v": "apporter",
+  "t": "pc",
+  "p": "tu",
+  "e": "Have you brought the wine for tonight?",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, le gardien a ___ (fermer) la porte à clé.",
+  "v": "fermer",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, the caretaker locked the door.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous avez ___ (laisser) la voiture devant la maison ?",
+  "v": "laisser",
+  "t": "pc",
+  "p": "vous",
+  "e": "Did you leave the car in front of the house?",
+  "b": "A1"
+ },
+ {
+  "q": "Ce matin, le ministre a ___ (présenter) un nouveau plan.",
+  "v": "présenter",
+  "t": "pc",
+  "p": "il",
+  "e": "This morning, the minister presented a new plan.",
+  "b": "A2"
+ },
+ {
+  "q": "Il a ___ (boire) son café en lisant le journal.",
+  "v": "boire",
+  "t": "pc",
+  "p": "il",
+  "e": "He drank his coffee while reading the paper.",
+  "b": "A1"
+ },
+ {
+  "q": "Mes parents ont ___ (choisir) un vieux chien au refuge.",
+  "v": "choisir",
+  "t": "pc",
+  "p": "ils",
+  "e": "My parents chose an old dog at the shelter.",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ont ___ (trouver) un appartement près du centre.",
+  "v": "trouver",
+  "t": "pc",
+  "p": "ils",
+  "e": "They found a flat near the centre.",
+  "b": "A1"
+ },
+ {
+  "q": "Nous avons ___ (mettre) le tableau au-dessus du canapé.",
+  "v": "mettre",
+  "t": "pc",
+  "p": "nous",
+  "e": "We put the painting above the sofa.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, j'ai ___ (rencontrer) ma prof d'anglais au marché.",
+  "v": "rencontrer",
+  "t": "pc",
+  "p": "je",
+  "e": "Yesterday, I ran into my English teacher at the market.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu as ___ (essayer) ce fromage ?",
+  "v": "essayer",
+  "t": "pc",
+  "p": "tu",
+  "e": "Have you tried this cheese?",
+  "b": "A1"
+ },
+ {
+  "q": "Vous avez ___ (demander) quelque chose à boire ?",
+  "v": "demander",
+  "t": "pc",
+  "p": "vous",
+  "e": "Have you asked for something to drink?",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, Romain a ___ (nettoyer) toute sa cuisine.",
+  "v": "nettoyer",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, Romain cleaned his whole kitchen.",
+  "b": "B1"
+ },
+ {
+  "q": "Hier, Paul a ___ (emmener) son fils au zoo.",
+  "v": "emmener",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, Paul took his son to the zoo.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, Manon a ___ (parler) trois heures au téléphone.",
+  "v": "parler",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, Manon talked on the phone for three hours.",
+  "b": "A1"
+ },
+ {
+  "q": "Les voleurs ont ___ (attaquer) la banque en plein jour.",
+  "v": "attaquer",
+  "t": "pc",
+  "p": "ils",
+  "e": "The robbers attacked the bank in broad daylight.",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, j'ai ___ (donner) mon vieux vélo à mon neveu.",
+  "v": "donner",
+  "t": "pc",
+  "p": "je",
+  "e": "Yesterday, I gave my old bike to my nephew.",
+  "b": "A1"
+ },
+ {
+  "q": "L'année dernière, le prix du pain a ___ (changer) deux fois.",
+  "v": "changer",
+  "t": "pc",
+  "p": "il",
+  "e": "Last year, the price of bread changed twice.",
+  "b": "A1"
+ },
+ {
+  "q": "Ce matin, Alice a ___ (signer) le contrat.",
+  "v": "signer",
+  "t": "pc",
+  "p": "il",
+  "e": "This morning, Alice signed the contract.",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ont ___ (pardonner) leur fils pour son mensonge.",
+  "v": "pardonner",
+  "t": "pc",
+  "p": "ils",
+  "e": "They forgave their son for his lie.",
+  "b": "B1"
+ },
+ {
+  "q": "Hier, nous avons ___ (chercher) le chemin de la gare.",
+  "v": "chercher",
+  "t": "pc",
+  "p": "nous",
+  "e": "Yesterday, we looked for the way to the station.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous avez ___ (expliquer) quoi à vos enfants ?",
+  "v": "expliquer",
+  "t": "pc",
+  "p": "vous",
+  "e": "What did you explain to your children?",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, Jules a ___ (pousser) la porte trop fort.",
+  "v": "pousser",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, Jules pushed the door too hard.",
+  "b": "B1"
+ },
+ {
+  "q": "Hier, la tempête a ___ (détruire) trois arbres.",
+  "v": "détruire",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, the storm destroyed three trees.",
+  "b": "A2"
+ },
+ {
+  "q": "Ce matin, j'ai ___ (entendre) un drôle de bruit.",
+  "v": "entendre",
+  "t": "pc",
+  "p": "je",
+  "e": "This morning, I heard a strange noise.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu as ___ (laisser) ton chapeau dans la voiture ?",
+  "v": "laisser",
+  "t": "pc",
+  "p": "tu",
+  "e": "Did you leave your hat in the car?",
+  "b": "A1"
+ },
+ {
+  "q": "Il a ___ (vivre) toute sa vie dans ce village.",
+  "v": "vivre",
+  "t": "pc",
+  "p": "il",
+  "e": "He lived his whole life in this village.",
+  "b": "A1"
+ },
+ {
+  "q": "Les enfants ont ___ (jouer) toute la journée à la plage.",
+  "v": "jouer",
+  "t": "pc",
+  "p": "ils",
+  "e": "The children played at the beach all day.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier soir, il a ___ (rêver) de son voyage au Japon.",
+  "v": "rêver",
+  "t": "pc",
+  "p": "il",
+  "e": "Last night, he dreamed about his trip to Japan.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous avons ___ (attendre) un taxi sous la pluie.",
+  "v": "attendre",
+  "t": "pc",
+  "p": "nous",
+  "e": "We waited for a taxi in the rain.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, Élodie a ___ (ouvrir) la fenêtre de sa chambre.",
+  "v": "ouvrir",
+  "t": "pc",
+  "p": "il",
+  "e": "Yesterday, Élodie opened her bedroom window.",
+  "b": "A2"
+ },
+ {
+  "q": "Les étudiants ont ___ (remercier) le professeur à la fin du cours.",
+  "v": "remercier",
+  "t": "pc",
+  "p": "ils",
+  "e": "The students thanked the teacher at the end of the class.",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, j'ai ___ (avoir) une heure de retard au travail.",
+  "v": "avoir",
+  "t": "pc",
+  "p": "je",
+  "e": "Yesterday, I was an hour late for work.",
+  "b": "A1"
+ },
+ {
+  "q": "La réunion a ___ (durer) toute la matinée.",
+  "v": "durer",
+  "t": "pc",
+  "p": "il",
+  "e": "The meeting lasted all morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Hier soir, la police a ___ (fermer) la rue.",
+  "v": "fermer",
+  "t": "pc",
+  "p": "il",
+  "e": "Last night, the police closed the street.",
+  "b": "A2"
+ },
+ {
+  "q": "Ce matin, ma mère est ___ (aller) chez le coiffeur.",
+  "v": "aller",
+  "t": "pc",
+  "p": "il",
+  "agree": "f",
+  "e": "This morning, my mother went to the hairdresser's.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, Lola est ___ (rester) à la maison avec la grippe.",
+  "v": "rester",
+  "t": "pc",
+  "p": "il",
+  "agree": "f",
+  "e": "Yesterday, Lola stayed at home with flu.",
+  "b": "A1"
+ },
+ {
+  "q": "Les enfants sont ___ (tomber) du toboggan.",
+  "v": "tomber",
+  "t": "pc",
+  "p": "ils",
+  "agree": "mp",
+  "e": "The children fell off the slide.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier soir, la petite est ___ (sortir) dans le jardin.",
+  "v": "sortir",
+  "t": "pc",
+  "p": "il",
+  "agree": "f",
+  "e": "Last night, the little girl went out into the garden.",
+  "b": "A1"
+ },
+ {
+  "q": "Mes grands-parents sont ___ (revenir) de vacances hier.",
+  "v": "revenir",
+  "t": "pc",
+  "p": "ils",
+  "agree": "mp",
+  "e": "My grandparents came back from holiday yesterday.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, la directrice est ___ (entrer) dans la salle sans frapper.",
+  "v": "entrer",
+  "t": "pc",
+  "p": "il",
+  "agree": "f",
+  "e": "Yesterday, the headmistress came into the room without knocking.",
+  "b": "A1"
+ },
+ {
+  "q": "Mes cousines sont ___ (venir) chez nous en voiture.",
+  "v": "venir",
+  "t": "pc",
+  "p": "ils",
+  "agree": "fp",
+  "e": "My cousins came to our place by car.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, Agnès est ___ (monter) au sommet de la tour.",
+  "v": "monter",
+  "t": "pc",
+  "p": "il",
+  "agree": "f",
+  "e": "Yesterday, Agnès went up to the top of the tower.",
+  "b": "A2"
+ },
+ {
+  "q": "L'avion est ___ (arriver) à l'heure.",
+  "v": "arriver",
+  "t": "pc",
+  "p": "il",
+  "e": "The plane arrived on time.",
+  "b": "A1"
+ },
+ {
+  "q": "Ma tante est ___ (naître) en 1950 à Lille.",
+  "v": "naître",
+  "t": "pc",
+  "p": "il",
+  "agree": "f",
+  "e": "My aunt was born in Lille in 1950.",
+  "b": "B1"
+ },
+ {
+  "q": "Les vacances sont ___ (passer) trop vite.",
+  "v": "passer",
+  "t": "pc",
+  "p": "ils",
+  "agree": "fp",
+  "e": "The holidays went by too fast.",
+  "b": "A1"
+ },
+ {
+  "q": "Hier, mes voisines sont ___ (partir) en Espagne.",
+  "v": "partir",
+  "t": "pc",
+  "p": "ils",
+  "agree": "fp",
+  "e": "Yesterday, my neighbours left for Spain.",
+  "b": "A1"
+ },
+ {
+  "q": "Elle est ___ (devenir) très célèbre après ce film.",
+  "v": "devenir",
+  "t": "pc",
+  "p": "il",
+  "agree": "f",
+  "e": "She became very famous after that film.",
+  "b": "A1"
+ },
+ {
+  "q": "Elles se sont ___ (se lever) très tôt pour voir le soleil.",
+  "v": "se lever",
+  "t": "pc",
+  "p": "ils",
+  "agree": "fp",
+  "e": "They got up very early to see the sun.",
+  "b": "B1"
+ },
+ {
+  "q": "Hier, Nadia s'est ___ (se baigner) dans la mer.",
+  "v": "se baigner",
+  "t": "pc",
+  "p": "il",
+  "agree": "f",
+  "e": "Yesterday, Nadia swam in the sea.",
+  "b": "B1"
+ },
+ {
+  "q": "Les garçons se sont ___ (se disputer) pour un ballon.",
+  "v": "se disputer",
+  "t": "pc",
+  "p": "ils",
+  "agree": "mp",
+  "e": "The boys argued over a ball.",
+  "b": "B1"
+ },
+ {
+  "q": "Ce matin, elle s'est ___ (se tromper) de numéro.",
+  "v": "se tromper",
+  "t": "pc",
+  "p": "il",
+  "agree": "f",
+  "e": "This morning, she dialled the wrong number.",
+  "b": "B1"
+ },
+ {
+  "q": "Ils se sont ___ (se dépêcher) pour ne pas rater l'avion.",
+  "v": "se dépêcher",
+  "t": "pc",
+  "p": "ils",
+  "agree": "mp",
+  "e": "They hurried so as not to miss the plane.",
+  "b": "B1"
+ },
+ {
+  "q": "Hier, Romane s'est ___ (se préparer) pour son entretien.",
+  "v": "se préparer",
+  "t": "pc",
+  "p": "il",
+  "agree": "f",
+  "e": "Yesterday, Romane got ready for her interview.",
+  "b": "B1"
+ },
+ {
+  "q": "Mon frère s'est ___ (se marier) en juillet dernier.",
+  "v": "se marier",
+  "t": "pc",
+  "p": "il",
+  "e": "My brother got married last July.",
+  "b": "B1"
+ }
+]

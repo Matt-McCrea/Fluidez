@@ -1,0 +1,982 @@
+[
+ {
+  "q": "Je n'ai ___ voiture.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas d'",
+   "pas des"
+  ],
+  "e": "I don't have a car.",
+  "w": "After a negative, un, une, du, de la and des become de.",
+  "wf": "Après la négation : de.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Il ne boit ___ café.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas du",
+   "pas d'"
+  ],
+  "e": "He doesn't drink coffee.",
+  "w": "After a negative, du becomes de.",
+  "wf": "du devient de.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Nous n'avons ___ (enfants) pour l'instant.",
+  "a": "pas d'enfants",
+  "o": [
+   "pas d'enfants",
+   "pas des enfants",
+   "pas de enfants"
+  ],
+  "e": "We don't have children yet.",
+  "w": "After a negative, des becomes de, and d' before a vowel.",
+  "wf": "des devient d'.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Elle ne mange ___ viande.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas de la",
+   "pas d'"
+  ],
+  "e": "She doesn't eat meat.",
+  "w": "After a negative, de la becomes de.",
+  "wf": "de la devient de.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Il n'y a ___ lait dans le frigo.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas du",
+   "pas des"
+  ],
+  "e": "There's no milk in the fridge.",
+  "w": "Il n'y a pas takes de, never du.",
+  "wf": "il n'y a pas de.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Je ne veux ___ sucre, merci.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas du",
+   "pas des"
+  ],
+  "e": "I don't want any sugar, thanks.",
+  "w": "After a negative, du becomes de.",
+  "wf": "du devient de.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Tu n'as ___ frères ?",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas des",
+   "pas d'"
+  ],
+  "e": "You don't have any brothers?",
+  "w": "After a negative, des becomes de.",
+  "wf": "des devient de.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "On n'a ___ (argent) pour le loyer.",
+  "a": "pas d'argent",
+  "o": [
+   "pas d'argent",
+   "pas de l'argent",
+   "pas de argent"
+  ],
+  "e": "We have no money for the rent.",
+  "w": "After a negative, de l' becomes d'.",
+  "wf": "de l' devient d'.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Ils ne font ___ sport.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas du",
+   "pas le"
+  ],
+  "e": "They don't do any sport.",
+  "w": "Faire du sport becomes ne pas faire de sport.",
+  "wf": "du devient de.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Je ne prends ___ dessert.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas du",
+   "pas des"
+  ],
+  "e": "I'm not having dessert.",
+  "w": "After a negative, un or du becomes de.",
+  "wf": "Après la négation : de.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Il n'y a ___ problème.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas du",
+   "pas des"
+  ],
+  "e": "There's no problem.",
+  "w": "Il n'y a pas takes de before the noun.",
+  "wf": "il n'y a pas de.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Elle n'a ___ chat.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas des",
+   "pas d'"
+  ],
+  "e": "She doesn't have a cat.",
+  "w": "After a negative, un becomes de.",
+  "wf": "un devient de.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Je ne bois ___ (eau) gazeuse.",
+  "a": "pas d'eau",
+  "o": [
+   "pas d'eau",
+   "pas de l'eau",
+   "pas de eau"
+  ],
+  "e": "I don't drink sparkling water.",
+  "w": "After a negative, de l' becomes d'.",
+  "wf": "de l' devient d'.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Nous n'achetons ___ pain aujourd'hui.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas du",
+   "pas des"
+  ],
+  "e": "We're not buying bread today.",
+  "w": "After a negative, du becomes de.",
+  "wf": "du devient de.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Vous n'avez ___ questions ?",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas des",
+   "pas d'"
+  ],
+  "e": "Don't you have any questions?",
+  "w": "After a negative, des becomes de.",
+  "wf": "des devient de.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Il ne met ___ sel dans la soupe.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas du",
+   "pas des"
+  ],
+  "e": "He doesn't put salt in the soup.",
+  "w": "After a negative, du becomes de.",
+  "wf": "du devient de.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Je n'ai ___ (idée), désolé.",
+  "a": "pas d'idée",
+  "o": [
+   "pas d'idée",
+   "pas de idée",
+   "pas des idée"
+  ],
+  "e": "I've no idea, sorry.",
+  "w": "After a negative, une becomes de, and d' before a vowel.",
+  "wf": "une devient d'.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Il n'y a ___ bus le dimanche.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas des",
+   "pas du"
+  ],
+  "e": "There's no bus on Sundays.",
+  "w": "Il n'y a pas takes de before the noun.",
+  "wf": "il n'y a pas de.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Elle ne porte ___ lunettes.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas des",
+   "pas d'"
+  ],
+  "e": "She doesn't wear glasses.",
+  "w": "After a negative, des becomes de.",
+  "wf": "des devient de.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Je ne mange ___ (œufs) au petit déjeuner.",
+  "a": "pas d'œufs",
+  "o": [
+   "pas d'œufs",
+   "pas des œufs",
+   "pas de œufs"
+  ],
+  "e": "I don't eat eggs for breakfast.",
+  "w": "After a negative, des becomes de, and d' before a vowel.",
+  "wf": "des devient d'.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Ils n'ont ___ jardin.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas du",
+   "pas des"
+  ],
+  "e": "They don't have a garden.",
+  "w": "After a negative, un becomes de.",
+  "wf": "un devient de.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Je n'ai ___ monnaie.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas de la",
+   "pas d'"
+  ],
+  "e": "I don't have any change.",
+  "w": "After a negative, de la becomes de.",
+  "wf": "de la devient de.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ne veux ___ thé ?",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas du",
+   "pas des"
+  ],
+  "e": "Don't you want some tea?",
+  "w": "After a negative, du becomes de.",
+  "wf": "du devient de.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "On ne fait ___ bruit.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas du",
+   "pas des"
+  ],
+  "e": "We're not making any noise.",
+  "w": "After a negative, du becomes de.",
+  "wf": "du devient de.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Il ne reste ___ place.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas de la",
+   "pas des"
+  ],
+  "e": "There's no room left.",
+  "w": "After a negative, de la becomes de.",
+  "wf": "de la devient de.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Ce n'est ___ café, c'est du thé.",
+  "a": "pas du",
+  "o": [
+   "pas du",
+   "pas de",
+   "pas d'"
+  ],
+  "e": "That's not coffee, it's tea.",
+  "w": "After être, the article stays: ce n'est pas du café.",
+  "wf": "Avec être, l'article reste.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Ce n'est ___ problème.",
+  "a": "pas un",
+  "o": [
+   "pas un",
+   "pas de",
+   "pas d'"
+  ],
+  "e": "That's not a problem.",
+  "w": "After être, un stays: ce n'est pas un problème.",
+  "wf": "Avec être, l'article reste.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Ce ne sont ___ touristes, ils habitent ici.",
+  "a": "pas des",
+  "o": [
+   "pas des",
+   "pas de",
+   "pas d'"
+  ],
+  "e": "They aren't tourists, they live here.",
+  "w": "After être, des stays: ce ne sont pas des touristes.",
+  "wf": "Avec être, l'article reste.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Ce n'est ___ (eau), c'est de la vodka.",
+  "a": "pas de l'eau",
+  "o": [
+   "pas de l'eau",
+   "pas d'eau",
+   "pas de eau"
+  ],
+  "e": "That isn't water, it's vodka.",
+  "w": "After être, the article stays: ce n'est pas de l'eau.",
+  "wf": "Avec être, l'article reste.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Ce n'est ___ bonne idée.",
+  "a": "pas une",
+  "o": [
+   "pas une",
+   "pas de",
+   "pas d'"
+  ],
+  "e": "That's not a good idea.",
+  "w": "After être, une stays: ce n'est pas une bonne idée.",
+  "wf": "Avec être, l'article reste.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Ce n'est ___ viande, c'est du tofu.",
+  "a": "pas de la",
+  "o": [
+   "pas de la",
+   "pas de",
+   "pas d'"
+  ],
+  "e": "That's not meat, it's tofu.",
+  "w": "After être, the article stays: ce n'est pas de la viande.",
+  "wf": "Avec être, l'article reste.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Ce n'est ___ hasard.",
+  "a": "pas un",
+  "o": [
+   "pas un",
+   "pas de",
+   "pas d'"
+  ],
+  "e": "That's no accident.",
+  "w": "After être, un stays: ce n'est pas un hasard.",
+  "wf": "Avec être, l'article reste.",
+  "t": "pasde",
+  "b": "B1"
+ },
+ {
+  "q": "Ce n'était ___ erreur.",
+  "a": "pas une",
+  "o": [
+   "pas une",
+   "pas d'",
+   "pas de"
+  ],
+  "e": "It wasn't a mistake.",
+  "w": "After être, une stays: ce n'était pas une erreur.",
+  "wf": "Avec être, l'article reste.",
+  "t": "pasde",
+  "b": "B1"
+ },
+ {
+  "q": "Je n'aime ___ fromage.",
+  "a": "pas le",
+  "o": [
+   "pas le",
+   "pas de",
+   "pas du"
+  ],
+  "e": "I don't like cheese.",
+  "w": "Verbs of liking keep the definite article: je n'aime pas le fromage.",
+  "wf": "aimer + le, la, les.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Elle n'aime ___ chats.",
+  "a": "pas les",
+  "o": [
+   "pas les",
+   "pas de",
+   "pas des"
+  ],
+  "e": "She doesn't like cats.",
+  "w": "Verbs of liking keep the definite article: pas les chats.",
+  "wf": "aimer + le, la, les.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Nous n'aimons ___ (hiver) à Paris.",
+  "a": "pas l'hiver",
+  "o": [
+   "pas l'hiver",
+   "pas d'hiver",
+   "pas de l'hiver"
+  ],
+  "e": "We don't like winter in Paris.",
+  "w": "Verbs of liking keep the definite article: pas l'hiver.",
+  "wf": "aimer + le, la, les.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Tu n'aimes ___ musique classique ?",
+  "a": "pas la",
+  "o": [
+   "pas la",
+   "pas de",
+   "pas de la"
+  ],
+  "e": "Don't you like classical music?",
+  "w": "Verbs of liking keep the definite article: pas la musique.",
+  "wf": "aimer + le, la, les.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Je ne supporte ___ bruit.",
+  "a": "pas le",
+  "o": [
+   "pas le",
+   "pas de",
+   "pas du"
+  ],
+  "e": "I can't stand noise.",
+  "w": "Supporter, like aimer, keeps the definite article.",
+  "wf": "supporter + le, la, les.",
+  "t": "pasde",
+  "b": "B1"
+ },
+ {
+  "q": "Mon père n'aime ___ épinards.",
+  "a": "pas les",
+  "o": [
+   "pas les",
+   "pas d'",
+   "pas des"
+  ],
+  "e": "My dad doesn't like spinach.",
+  "w": "Verbs of liking keep the definite article: pas les épinards.",
+  "wf": "aimer + le, la, les.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Il n'y a ___ (no more) pain.",
+  "a": "plus de",
+  "o": [
+   "plus de",
+   "plus du",
+   "plus des"
+  ],
+  "e": "There's no more bread.",
+  "w": "Ne ... plus works like ne ... pas: du becomes de.",
+  "wf": "ne ... plus de.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Je ne bois ___ (never, alcool), je conduis.",
+  "a": "jamais d'alcool",
+  "o": [
+   "jamais d'alcool",
+   "jamais de l'alcool",
+   "jamais de alcool"
+  ],
+  "e": "I never drink alcohol, I'm driving.",
+  "w": "Ne ... jamais works like ne ... pas: de l' becomes d'.",
+  "wf": "ne ... jamais d'.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Nous n'avons ___ (no more) lait.",
+  "a": "plus de",
+  "o": [
+   "plus de",
+   "plus du",
+   "plus des"
+  ],
+  "e": "We've run out of milk.",
+  "w": "Ne ... plus works like ne ... pas: du becomes de.",
+  "wf": "ne ... plus de.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Elle ne mange ___ (never) sucre.",
+  "a": "jamais de",
+  "o": [
+   "jamais de",
+   "jamais du",
+   "jamais des"
+  ],
+  "e": "She never eats sugar.",
+  "w": "Ne ... jamais works like ne ... pas: du becomes de.",
+  "wf": "ne ... jamais de.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Il n'y a ___ (no more) places dans le train.",
+  "a": "plus de",
+  "o": [
+   "plus de",
+   "plus des",
+   "plus d'"
+  ],
+  "e": "There are no seats left on the train.",
+  "w": "Ne ... plus works like ne ... pas: des becomes de.",
+  "wf": "ne ... plus de.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Ils n'ont ___ (no longer) voiture.",
+  "a": "plus de",
+  "o": [
+   "plus de",
+   "plus des",
+   "plus d'"
+  ],
+  "e": "They don't have a car any more.",
+  "w": "Ne ... plus works like ne ... pas: une becomes de.",
+  "wf": "ne ... plus de.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ne prends ___ (never) vacances ?",
+  "a": "jamais de",
+  "o": [
+   "jamais de",
+   "jamais des",
+   "jamais d'"
+  ],
+  "e": "Do you never take holidays?",
+  "w": "Ne ... jamais works like ne ... pas: des becomes de.",
+  "wf": "ne ... jamais de.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Je n'ai pas acheté ___ fleurs.",
+  "a": "de",
+  "o": [
+   "de",
+   "des",
+   "d'"
+  ],
+  "e": "I didn't buy any flowers.",
+  "w": "In the passé composé, de still replaces des after the participle.",
+  "wf": "de après le participe.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Il n'a pas trouvé ___ travail.",
+  "a": "de",
+  "o": [
+   "de",
+   "du",
+   "des"
+  ],
+  "e": "He didn't find any work.",
+  "w": "In the passé composé, de still replaces du after the participle.",
+  "wf": "de après le participe.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Nous n'avons pas eu ___ chance.",
+  "a": "de",
+  "o": [
+   "de",
+   "de la",
+   "d'"
+  ],
+  "e": "We had no luck.",
+  "w": "In the passé composé, de still replaces de la after the participle.",
+  "wf": "de après le participe.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Elle n'a pas pris ___ photos.",
+  "a": "de",
+  "o": [
+   "de",
+   "des",
+   "d'"
+  ],
+  "e": "She didn't take any photos.",
+  "w": "In the passé composé, de still replaces des after the participle.",
+  "wf": "de après le participe.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "On n'a pas vu ___ (oiseaux) ce matin.",
+  "a": "d'oiseaux",
+  "o": [
+   "d'oiseaux",
+   "des oiseaux",
+   "de oiseaux"
+  ],
+  "e": "We didn't see any birds this morning.",
+  "w": "Des becomes de after a negative, and d' before a vowel.",
+  "wf": "des devient d'.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Tu n'as pas mis ___ beurre ?",
+  "a": "de",
+  "o": [
+   "de",
+   "du",
+   "des"
+  ],
+  "e": "Didn't you put any butter in?",
+  "w": "In the passé composé, de still replaces du after the participle.",
+  "wf": "de après le participe.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Je ne veux pas manger ___ pâtes ce soir.",
+  "a": "de",
+  "o": [
+   "de",
+   "des",
+   "d'"
+  ],
+  "e": "I don't want to eat pasta tonight.",
+  "w": "The de rule also holds after a negative verb plus infinitive.",
+  "wf": "Verbe + infinitif : de.",
+  "t": "pasde",
+  "b": "B1"
+ },
+ {
+  "q": "Tu ne dois pas boire ___ (alcool).",
+  "a": "d'alcool",
+  "o": [
+   "d'alcool",
+   "de l'alcool",
+   "de alcool"
+  ],
+  "e": "You mustn't drink alcohol.",
+  "w": "The de rule also holds after a negative modal plus infinitive.",
+  "wf": "Verbe + infinitif : d'.",
+  "t": "pasde",
+  "b": "B1"
+ },
+ {
+  "q": "Je préfère ne pas prendre ___ risques.",
+  "a": "de",
+  "o": [
+   "de",
+   "des",
+   "d'"
+  ],
+  "e": "I'd rather not take any risks.",
+  "w": "Ne pas plus infinitive also turns des into de.",
+  "wf": "ne pas + infinitif + de.",
+  "t": "pasde",
+  "b": "B1"
+ },
+ {
+  "q": "On ne peut pas avoir ___ (animaux) ici.",
+  "a": "d'animaux",
+  "o": [
+   "d'animaux",
+   "des animaux",
+   "de animaux"
+  ],
+  "e": "We can't have pets here.",
+  "w": "The de rule also holds after a negative modal plus infinitive.",
+  "wf": "Verbe + infinitif : d'.",
+  "t": "pasde",
+  "b": "B1"
+ },
+ {
+  "q": "Elle essaie de ne pas manger ___ chocolat.",
+  "a": "de",
+  "o": [
+   "de",
+   "du",
+   "des"
+  ],
+  "e": "She's trying not to eat chocolate.",
+  "w": "Ne pas plus infinitive also turns du into de.",
+  "wf": "ne pas + infinitif + de.",
+  "t": "pasde",
+  "b": "B1"
+ },
+ {
+  "q": "___ souci, je m'en occupe.",
+  "a": "Pas de",
+  "o": [
+   "Pas de",
+   "Pas du",
+   "Pas des"
+  ],
+  "e": "No worries, I'll take care of it.",
+  "w": "Pas de plus a noun works on its own, with no verb.",
+  "wf": "Pas de + nom.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "___ sucre pour moi, merci.",
+  "a": "Pas de",
+  "o": [
+   "Pas de",
+   "Pas du",
+   "Pas des"
+  ],
+  "e": "No sugar for me, thanks.",
+  "w": "Pas de plus a noun works on its own, with no verb.",
+  "wf": "Pas de + nom.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "___ problème, à demain.",
+  "a": "Pas de",
+  "o": [
+   "Pas de",
+   "Pas du",
+   "Pas des"
+  ],
+  "e": "No problem, see you tomorrow.",
+  "w": "Pas de plus a noun works on its own, with no verb.",
+  "wf": "Pas de + nom.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Il n'y a ___ (ascenseur) dans l'immeuble.",
+  "a": "pas d'ascenseur",
+  "o": [
+   "pas d'ascenseur",
+   "pas de ascenseur",
+   "pas des ascenseur"
+  ],
+  "e": "There's no lift in the building.",
+  "w": "Il n'y a pas takes de, and d' before a vowel.",
+  "wf": "il n'y a pas d'.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Je n'ai ___ nouvelles de lui.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas des",
+   "pas d'"
+  ],
+  "e": "I haven't heard from him.",
+  "w": "After a negative, des becomes de.",
+  "wf": "des devient de.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Elle n'a ___ (amis) ici.",
+  "a": "pas d'amis",
+  "o": [
+   "pas d'amis",
+   "pas des amis",
+   "pas de amis"
+  ],
+  "e": "She doesn't have any friends here.",
+  "w": "Des becomes de after a negative, and d' before a vowel.",
+  "wf": "des devient d'.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Il ne fait ___ (efforts).",
+  "a": "pas d'efforts",
+  "o": [
+   "pas d'efforts",
+   "pas des efforts",
+   "pas de efforts"
+  ],
+  "e": "He doesn't make any effort.",
+  "w": "Des becomes de after a negative, and d' before a vowel.",
+  "wf": "des devient d'.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Ne mets ___ (ail), s'il te plaît.",
+  "a": "pas d'ail",
+  "o": [
+   "pas d'ail",
+   "pas de l'ail",
+   "pas de ail"
+  ],
+  "e": "Please don't put any garlic in.",
+  "w": "A negative command also turns de l' into d'.",
+  "wf": "de l' devient d'.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Je ne connais ___ restaurants dans le quartier.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas des",
+   "pas d'"
+  ],
+  "e": "I don't know any restaurants around here.",
+  "w": "After a negative, des becomes de.",
+  "wf": "des devient de.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Pierre ne lit ___ livres.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas des",
+   "pas d'"
+  ],
+  "e": "Pierre doesn't read books.",
+  "w": "After a negative, des becomes de.",
+  "wf": "des devient de.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Il n'y a ___ neige cette année.",
+  "a": "pas de",
+  "o": [
+   "pas de",
+   "pas de la",
+   "pas d'"
+  ],
+  "e": "There's no snow this year.",
+  "w": "Il n'y a pas takes de, never de la.",
+  "wf": "il n'y a pas de.",
+  "t": "pasde",
+  "b": "A1"
+ },
+ {
+  "q": "Nous n'avons ___ (no more, essence).",
+  "a": "plus d'essence",
+  "o": [
+   "plus d'essence",
+   "plus de l'essence",
+   "plus de essence"
+  ],
+  "e": "We've run out of petrol.",
+  "w": "Ne ... plus works like ne ... pas: de l' becomes d'.",
+  "wf": "ne ... plus d'.",
+  "t": "pasde",
+  "b": "A2"
+ },
+ {
+  "q": "Je n'ai jamais eu ___ chien.",
+  "a": "de",
+  "o": [
+   "de",
+   "des",
+   "d'"
+  ],
+  "e": "I've never had a dog.",
+  "w": "After ne ... jamais, un becomes de.",
+  "wf": "ne ... jamais de.",
+  "t": "pasde",
+  "b": "B1"
+ }
+]

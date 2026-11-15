@@ -1,0 +1,494 @@
+[
+ {
+  "fr": "Quelle heure est-il ?",
+  "en": "What time is it?",
+  "alt": [
+   "Il est quelle heure ?"
+  ],
+  "th": "temps",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Vous avez l'heure ?",
+  "en": "Do you have the time?",
+  "alt": [
+   "Tu as l'heure ?"
+  ],
+  "th": "temps",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Il est trois heures.",
+  "en": "It's three o'clock.",
+  "th": "temps",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Il est midi.",
+  "en": "It's noon.",
+  "th": "temps",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Il est minuit.",
+  "en": "It's midnight.",
+  "th": "temps",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Il est huit heures et demie.",
+  "en": "It's half past eight.",
+  "th": "temps",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Il est dix heures et quart.",
+  "en": "It's quarter past ten.",
+  "th": "temps",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Il est cinq heures moins le quart.",
+  "en": "It's quarter to five.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Il est sept heures du soir.",
+  "en": "It's seven in the evening.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "À quelle heure ?",
+  "en": "At what time?",
+  "th": "temps",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "À quelle heure commence le film ?",
+  "en": "What time does the film start?",
+  "alt": [
+   "Le film commence à quelle heure ?"
+  ],
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "On est quel jour ?",
+  "en": "What day is it?",
+  "alt": [
+   "Quel jour sommes-nous ?"
+  ],
+  "th": "temps",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Aujourd'hui, c'est lundi.",
+  "en": "Today is Monday.",
+  "alt": [
+   "On est lundi."
+  ],
+  "th": "temps",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Hier, c'était dimanche.",
+  "en": "Yesterday was Sunday.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "On est le combien ?",
+  "en": "What's the date?",
+  "alt": [
+   "Quelle est la date aujourd'hui ?"
+  ],
+  "th": "temps",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: we are the how much?"
+ },
+ {
+  "fr": "On est le trois mai.",
+  "en": "It's the third of May.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2,
+  "n": "Dates use plain numbers, except le premier."
+ },
+ {
+  "fr": "Je travaille le lundi.",
+  "en": "I work on Mondays.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2,
+  "n": "Le lundi means every Monday."
+ },
+ {
+  "fr": "Le week-end, je me repose.",
+  "en": "At the weekend, I rest.",
+  "alt": [
+   "La fin de semaine, je me repose."
+  ],
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Qu'est-ce que tu fais ce soir ?",
+  "en": "What are you doing tonight?",
+  "alt": [
+   "Tu fais quoi ce soir ?"
+  ],
+  "th": "temps",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Je ne suis pas libre demain.",
+  "en": "I'm not free tomorrow.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "On se voit quand ?",
+  "en": "When shall we meet?",
+  "alt": [
+   "Quand est-ce qu'on se voit ?"
+  ],
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "On se retrouve à midi ?",
+  "en": "Shall we meet at noon?",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Ça te va, jeudi ?",
+  "en": "Does Thursday work for you?",
+  "alt": [
+   "Jeudi, ça vous va ?"
+  ],
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Vendredi, c'est parfait.",
+  "en": "Friday is perfect.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "J'ai rendez-vous à dix heures.",
+  "en": "I have an appointment at ten.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je suis en retard.",
+  "en": "I'm late.",
+  "th": "temps",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Je suis en avance.",
+  "en": "I'm early.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Tu es à l'heure.",
+  "en": "You're on time.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je n'ai pas le temps.",
+  "en": "I don't have time.",
+  "alt": [
+   "J'ai pas le temps."
+  ],
+  "th": "temps",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "fr": "J'ai tout mon temps.",
+  "en": "I've got plenty of time.",
+  "th": "temps",
+  "b": "A2",
+  "t": 3,
+  "n": "Literally: I have all my time."
+ },
+ {
+  "fr": "Dépêche-toi !",
+  "en": "Hurry up!",
+  "alt": [
+   "Dépêchez-vous !"
+  ],
+  "th": "temps",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Un instant, s'il vous plaît.",
+  "en": "Just a moment, please.",
+  "alt": [
+   "Un moment, s'il vous plaît."
+  ],
+  "th": "temps",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "J'arrive dans cinq minutes.",
+  "en": "I'll be there in five minutes.",
+  "th": "temps",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "fr": "Ça prend combien de temps ?",
+  "en": "How long does it take?",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Ça dure deux heures.",
+  "en": "It lasts two hours.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Depuis quand ?",
+  "en": "Since when?",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Il y a deux jours.",
+  "en": "Two days ago.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Dans une semaine.",
+  "en": "In a week.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "La semaine prochaine.",
+  "en": "Next week.",
+  "th": "temps",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "La semaine dernière.",
+  "en": "Last week.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "L'année dernière.",
+  "en": "Last year.",
+  "alt": [
+   "L'an dernier."
+  ],
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Le mois prochain, je pars en Italie.",
+  "en": "Next month, I'm going to Italy.",
+  "th": "temps",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Tous les jours.",
+  "en": "Every day.",
+  "th": "temps",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "De temps en temps.",
+  "en": "From time to time.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Parfois.",
+  "en": "Sometimes.",
+  "alt": [
+   "Quelquefois."
+  ],
+  "th": "temps",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Jamais le dimanche.",
+  "en": "Never on Sundays.",
+  "th": "temps",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Tôt le matin.",
+  "en": "Early in the morning.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Tard le soir.",
+  "en": "Late in the evening.",
+  "th": "temps",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Demain matin.",
+  "en": "Tomorrow morning.",
+  "th": "temps",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Après-demain.",
+  "en": "The day after tomorrow.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Avant-hier.",
+  "en": "The day before yesterday.",
+  "th": "temps",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "On en parle plus tard.",
+  "en": "Let's talk about it later.",
+  "th": "temps",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Tout de suite.",
+  "en": "Right away.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Pas maintenant.",
+  "en": "Not now.",
+  "th": "temps",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Le temps passe vite.",
+  "en": "Time flies.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: time passes quickly."
+ },
+ {
+  "fr": "Je vais faire les courses demain.",
+  "en": "I'm going shopping tomorrow.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Cet été, on va à la mer.",
+  "en": "This summer, we're going to the seaside.",
+  "th": "temps",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Mon anniversaire est en juin.",
+  "en": "My birthday is in June.",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "En quelle année ?",
+  "en": "What year?",
+  "th": "temps",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Au printemps.",
+  "en": "In spring.",
+  "th": "temps",
+  "b": "A2",
+  "t": 3,
+  "n": "Au printemps, but en été, en automne, en hiver."
+ },
+ {
+  "fr": "Le magasin est fermé le dimanche.",
+  "en": "The shop is closed on Sundays.",
+  "th": "temps",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "C'est pour quand ?",
+  "en": "When is it for?",
+  "th": "temps",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Ce n'est pas encore l'heure.",
+  "en": "It's not time yet.",
+  "th": "temps",
+  "b": "A2",
+  "t": 3
+ }
+]

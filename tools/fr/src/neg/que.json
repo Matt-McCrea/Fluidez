@@ -1,0 +1,716 @@
+[
+ {
+  "q": "Je ___ (boire) de l'eau.",
+  "a": "ne bois que",
+  "o": [
+   "ne bois que",
+   "ne que bois",
+   "ne bois pas que"
+  ],
+  "x": [
+   "bois que"
+  ],
+  "e": "I only drink water.",
+  "w": "Only is ne ... que: que goes right before the thing it limits.",
+  "wf": "ne ... que = seulement.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Il ___ (avoir) dix euros.",
+  "a": "n'a que",
+  "o": [
+   "n'a que",
+   "ne a que",
+   "n'a pas que"
+  ],
+  "x": [
+   "a que"
+  ],
+  "e": "He only has ten euros.",
+  "w": "Only is ne ... que; ne becomes n' before a vowel.",
+  "wf": "ne ... que = seulement.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (parler) français à la maison.",
+  "a": "ne parlons que",
+  "o": [
+   "ne parlons que",
+   "ne que parlons",
+   "parlons ne que"
+  ],
+  "x": [
+   "parlons que"
+  ],
+  "e": "We only speak French at home.",
+  "w": "Only is ne ... que: ne before the verb, que before what it limits.",
+  "wf": "ne ... que = seulement.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Elle ___ (manger) des légumes.",
+  "a": "ne mange que",
+  "o": [
+   "ne mange que",
+   "ne que mange",
+   "ne mange pas que"
+  ],
+  "x": [
+   "mange que"
+  ],
+  "e": "She only eats vegetables.",
+  "w": "Only is ne ... que; ne ... pas que means not only.",
+  "wf": "ne ... que = seulement.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Ce n'est ___ jeu.",
+  "a": "qu'un",
+  "o": [
+   "qu'un",
+   "que un",
+   "pas qu'un"
+  ],
+  "e": "It's only a game.",
+  "w": "Que becomes qu' before a vowel: ce n'est qu'un jeu.",
+  "wf": "qu' devant voyelle.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Je n'ai ___ sœur.",
+  "a": "qu'une",
+  "o": [
+   "qu'une",
+   "que une",
+   "pas qu'une"
+  ],
+  "e": "I only have one sister.",
+  "w": "Que becomes qu' before a vowel: qu'une sœur.",
+  "wf": "qu' devant voyelle.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Il ___ (rester) deux places.",
+  "a": "ne reste que",
+  "o": [
+   "ne reste que",
+   "ne que reste",
+   "ne reste pas que"
+  ],
+  "x": [
+   "reste que"
+  ],
+  "e": "There are only two seats left.",
+  "w": "Only is ne ... que round reste, que before deux places.",
+  "wf": "ne ... que = seulement.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (travailler) le matin.",
+  "a": "ne travaille que",
+  "o": [
+   "ne travaille que",
+   "ne que travaille",
+   "ne travaille pas que"
+  ],
+  "x": [
+   "travaille que"
+  ],
+  "e": "I only work in the mornings.",
+  "w": "Only is ne ... que; ne ... pas que means not only.",
+  "wf": "ne ... que = seulement.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ne penses ___ toi.",
+  "a": "qu'à",
+  "o": [
+   "qu'à",
+   "que à",
+   "pas qu'à"
+  ],
+  "e": "You only think about yourself.",
+  "w": "Que goes before the preposition and becomes qu' before à.",
+  "wf": "qu'à + nom.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "On ne vit ___ fois.",
+  "a": "qu'une",
+  "o": [
+   "qu'une",
+   "que une",
+   "pas qu'une"
+  ],
+  "e": "You only live once.",
+  "w": "Que becomes qu' before a vowel: qu'une fois.",
+  "wf": "qu' devant voyelle.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ___ (venir) le week-end.",
+  "a": "ne viennent que",
+  "o": [
+   "ne viennent que",
+   "ne que viennent",
+   "viennent ne que"
+  ],
+  "x": [
+   "viennent que"
+  ],
+  "e": "They only come at weekends.",
+  "w": "Only is ne ... que: que goes before le week-end.",
+  "wf": "ne ... que = seulement.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Le musée ___ (ouvrir) l'après-midi.",
+  "a": "n'ouvre que",
+  "o": [
+   "n'ouvre que",
+   "ne ouvre que",
+   "n'ouvre pas que"
+  ],
+  "x": [
+   "ouvre que"
+  ],
+  "e": "The museum only opens in the afternoon.",
+  "w": "Only is ne ... que; ne becomes n' before a vowel.",
+  "wf": "ne ... que = seulement.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (dormir) cinq heures cette nuit.",
+  "a": "n'ai dormi que",
+  "o": [
+   "n'ai dormi que",
+   "n'ai que dormi",
+   "ne ai dormi que"
+  ],
+  "e": "I only slept five hours last night.",
+  "w": "In the passé composé, que comes after the participle, before what it limits.",
+  "wf": "participe + que.",
+  "t": "que",
+  "b": "B1"
+ },
+ {
+  "q": "Elle ___ (boire) deux cafés ce matin.",
+  "a": "n'a bu que",
+  "o": [
+   "n'a bu que",
+   "n'a que bu",
+   "ne a bu que"
+  ],
+  "x": [
+   "a bu que"
+  ],
+  "e": "She only had two coffees this morning.",
+  "w": "In the passé composé, que comes after the participle, before what it limits.",
+  "wf": "participe + que.",
+  "t": "que",
+  "b": "B1"
+ },
+ {
+  "q": "Nous ___ (voir) la fin du film.",
+  "a": "n'avons vu que",
+  "o": [
+   "n'avons vu que",
+   "n'avons que vu",
+   "ne avons vu que"
+  ],
+  "x": [
+   "avons vu que"
+  ],
+  "e": "We only saw the end of the film.",
+  "w": "In the passé composé, que comes after the participle, before what it limits.",
+  "wf": "participe + que.",
+  "t": "que",
+  "b": "B1"
+ },
+ {
+  "q": "Il ___ (dire) la vérité.",
+  "a": "ne dit que",
+  "o": [
+   "ne dit que",
+   "ne que dit",
+   "ne dit pas que"
+  ],
+  "x": [
+   "dit que"
+  ],
+  "e": "He only tells the truth.",
+  "w": "Only is ne ... que; ne ... pas que means not only.",
+  "wf": "ne ... que = seulement.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Ça ___ (coûter) trois euros.",
+  "a": "ne coûte que",
+  "o": [
+   "ne coûte que",
+   "ne que coûte",
+   "coûte ne que"
+  ],
+  "x": [
+   "coûte que"
+  ],
+  "e": "It only costs three euros.",
+  "w": "Only is ne ... que: que goes before the price.",
+  "wf": "ne ... que = seulement.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (connaître) son prénom.",
+  "a": "ne connais que",
+  "o": [
+   "ne connais que",
+   "ne que connais",
+   "ne connais pas que"
+  ],
+  "x": [
+   "connais que"
+  ],
+  "e": "I only know her first name.",
+  "w": "Only is ne ... que; ne ... pas que means not only.",
+  "wf": "ne ... que = seulement.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Elle ___ (sortir) le samedi soir.",
+  "a": "ne sort que",
+  "o": [
+   "ne sort que",
+   "ne que sort",
+   "sort ne que"
+  ],
+  "x": [
+   "sort que"
+  ],
+  "e": "She only goes out on Saturday nights.",
+  "w": "Only is ne ... que: que goes before the time it limits.",
+  "wf": "ne ... que = seulement.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Il n'y a ___ trois chaises.",
+  "a": "que",
+  "o": [
+   "que",
+   "pas que",
+   "seulement"
+  ],
+  "e": "There are only three chairs.",
+  "w": "Il n'y a que means there is only; seulement never pairs with ne.",
+  "wf": "il n'y a que.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Je n'ai ___ cinq minutes.",
+  "a": "que",
+  "o": [
+   "que",
+   "pas que",
+   "seulement"
+  ],
+  "e": "I've only got five minutes.",
+  "w": "After ne, only is que; seulement never pairs with ne.",
+  "wf": "ne ... que.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Il ne mange que ___ pain.",
+  "a": "du",
+  "o": [
+   "du",
+   "de",
+   "d'"
+  ],
+  "e": "He only eats bread.",
+  "w": "Ne ... que is not a true negative, so du stays.",
+  "wf": "Avec ne ... que, l'article reste.",
+  "t": "que",
+  "b": "B1"
+ },
+ {
+  "q": "Je ne bois que ___ thé le matin.",
+  "a": "du",
+  "o": [
+   "du",
+   "de",
+   "d'"
+  ],
+  "e": "I only drink tea in the morning.",
+  "w": "Ne ... que is not a true negative, so du stays.",
+  "wf": "Avec ne ... que, l'article reste.",
+  "t": "que",
+  "b": "B1"
+ },
+ {
+  "q": "Elle n'achète que ___ légumes bio.",
+  "a": "des",
+  "o": [
+   "des",
+   "de",
+   "d'"
+  ],
+  "e": "She only buys organic vegetables.",
+  "w": "Ne ... que is not a true negative, so des stays.",
+  "wf": "Avec ne ... que, l'article reste.",
+  "t": "que",
+  "b": "B1"
+ },
+ {
+  "q": "On ne trouve que ___ (eau) minérale ici.",
+  "a": "de l'eau",
+  "o": [
+   "de l'eau",
+   "d'eau",
+   "de eau"
+  ],
+  "e": "You can only get mineral water here.",
+  "w": "Ne ... que is not a true negative, so de l' stays.",
+  "wf": "Avec ne ... que, l'article reste.",
+  "t": "que",
+  "b": "B1"
+ },
+ {
+  "q": "Il n'y a que ___ touristes en août.",
+  "a": "des",
+  "o": [
+   "des",
+   "de",
+   "d'"
+  ],
+  "e": "There are only tourists in August.",
+  "w": "Ne ... que is not a true negative, so des stays.",
+  "wf": "Avec ne ... que, l'article reste.",
+  "t": "que",
+  "b": "B1"
+ },
+ {
+  "q": "Tu ___ (avoir) demander.",
+  "a": "n'as qu'à",
+  "o": [
+   "n'as qu'à",
+   "n'as que à",
+   "n'as pas qu'à"
+  ],
+  "x": [
+   "as qu'à"
+  ],
+  "e": "All you have to do is ask.",
+  "w": "N'avoir qu'à plus infinitive means all you have to do is.",
+  "wf": "n'avoir qu'à + infinitif.",
+  "t": "que",
+  "b": "B1"
+ },
+ {
+  "q": "Vous ___ (avoir) appeler ce numéro.",
+  "a": "n'avez qu'à",
+  "o": [
+   "n'avez qu'à",
+   "n'avez que à",
+   "n'avez pas qu'à"
+  ],
+  "x": [
+   "avez qu'à"
+  ],
+  "e": "All you have to do is call this number.",
+  "w": "N'avoir qu'à plus infinitive means all you have to do is.",
+  "wf": "n'avoir qu'à + infinitif.",
+  "t": "que",
+  "b": "B1"
+ },
+ {
+  "q": "Il ___ (faire) se plaindre.",
+  "a": "ne fait que",
+  "o": [
+   "ne fait que",
+   "ne que fait",
+   "ne fait pas que"
+  ],
+  "x": [
+   "fait que"
+  ],
+  "e": "All he does is complain.",
+  "w": "Ne faire que plus infinitive means do nothing but.",
+  "wf": "ne faire que + infinitif.",
+  "t": "que",
+  "b": "B2"
+ },
+ {
+  "q": "Je ___ (faire) passer.",
+  "a": "ne fais que",
+  "o": [
+   "ne fais que",
+   "ne que fais",
+   "ne fais pas que"
+  ],
+  "x": [
+   "fais que"
+  ],
+  "e": "I'm just passing through.",
+  "w": "Ne faire que plus infinitive means only do, just.",
+  "wf": "ne faire que + infinitif.",
+  "t": "que",
+  "b": "B2"
+ },
+ {
+  "q": "Il ne rentre ___ minuit.",
+  "a": "qu'à",
+  "o": [
+   "qu'à",
+   "que à",
+   "pas qu'à"
+  ],
+  "e": "He doesn't get home until midnight.",
+  "w": "Ne ... que before a time means not until.",
+  "wf": "ne ... qu'à + heure.",
+  "t": "que",
+  "b": "B1"
+ },
+ {
+  "q": "Le magasin n'ouvre ___ neuf heures.",
+  "a": "qu'à",
+  "o": [
+   "qu'à",
+   "que à",
+   "pas qu'à"
+  ],
+  "e": "The shop doesn't open until nine.",
+  "w": "Ne ... que before a time means not until.",
+  "wf": "ne ... qu'à + heure.",
+  "t": "que",
+  "b": "B1"
+ },
+ {
+  "q": "Je ___ (le, savoir) depuis ce matin.",
+  "a": "ne le sais que",
+  "o": [
+   "ne le sais que",
+   "ne sais que le",
+   "le ne sais que"
+  ],
+  "e": "I've only known since this morning.",
+  "w": "The pronoun stays before the verb, inside ne ... que.",
+  "wf": "ne + pronom + verbe + que.",
+  "t": "que",
+  "b": "B1"
+ },
+ {
+  "q": "Je ___ (te, demander) de m'écouter.",
+  "a": "ne te demande que",
+  "o": [
+   "ne te demande que",
+   "ne demande que te",
+   "te ne demande que"
+  ],
+  "x": [
+   "te demande que"
+  ],
+  "e": "All I'm asking is that you listen to me.",
+  "w": "The pronoun stays before the verb, inside ne ... que.",
+  "wf": "ne + pronom + verbe + que.",
+  "t": "que",
+  "b": "B1"
+ },
+ {
+  "q": "Nous ___ (se voir) le dimanche.",
+  "a": "ne nous voyons que",
+  "o": [
+   "ne nous voyons que",
+   "nous ne voyons que",
+   "ne voyons que nous"
+  ],
+  "x": [
+   "nous voyons que"
+  ],
+  "e": "We only see each other on Sundays.",
+  "w": "The reflexive pronoun stays before the verb, inside ne ... que.",
+  "wf": "ne + nous + verbe + que.",
+  "t": "que",
+  "b": "B1"
+ },
+ {
+  "q": "Ce restaurant ___ (accepter) les espèces.",
+  "a": "n'accepte que",
+  "o": [
+   "n'accepte que",
+   "ne accepte que",
+   "n'accepte pas que"
+  ],
+  "x": [
+   "accepte que"
+  ],
+  "e": "This restaurant only takes cash.",
+  "w": "Only is ne ... que; ne becomes n' before a vowel.",
+  "wf": "ne ... que = seulement.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Mon fils ___ (regarder) des dessins animés.",
+  "a": "ne regarde que",
+  "o": [
+   "ne regarde que",
+   "ne que regarde",
+   "ne regarde pas que"
+  ],
+  "x": [
+   "regarde que"
+  ],
+  "e": "My son only watches cartoons.",
+  "w": "Only is ne ... que; ne ... pas que means not only.",
+  "wf": "ne ... que = seulement.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (prendre) le menu du jour.",
+  "a": "ne prends que",
+  "o": [
+   "ne prends que",
+   "ne que prends",
+   "prends ne que"
+  ],
+  "x": [
+   "prends que"
+  ],
+  "e": "I'll just have the set menu.",
+  "w": "Only is ne ... que: que goes before what it limits.",
+  "wf": "ne ... que = seulement.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Elle ___ (écrire) au crayon.",
+  "a": "n'écrit que",
+  "o": [
+   "n'écrit que",
+   "ne écrit que",
+   "n'écrit pas que"
+  ],
+  "e": "She only writes in pencil.",
+  "w": "Only is ne ... que; ne becomes n' before a vowel.",
+  "wf": "ne ... que = seulement.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (avoir) trente minutes pour manger.",
+  "a": "n'avons que",
+  "o": [
+   "n'avons que",
+   "ne avons que",
+   "n'avons pas que"
+  ],
+  "x": [
+   "avons que"
+  ],
+  "e": "We only have thirty minutes to eat.",
+  "w": "Only is ne ... que; ne becomes n' before a vowel.",
+  "wf": "ne ... que = seulement.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ___ (parler) de football.",
+  "a": "ne parlent que",
+  "o": [
+   "ne parlent que",
+   "ne que parlent",
+   "ne parlent pas que"
+  ],
+  "x": [
+   "parlent que"
+  ],
+  "e": "All they talk about is football.",
+  "w": "Only is ne ... que; ne ... pas que means not only.",
+  "wf": "ne ... que = seulement.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (lire) le soir.",
+  "a": "ne lis que",
+  "o": [
+   "ne lis que",
+   "ne que lis",
+   "lis ne que"
+  ],
+  "x": [
+   "lis que"
+  ],
+  "e": "I only read in the evening.",
+  "w": "Only is ne ... que: que goes before the time it limits.",
+  "wf": "ne ... que = seulement.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Il ___ (y avoir) deux solutions.",
+  "a": "n'y a que",
+  "o": [
+   "n'y a que",
+   "ne y a que",
+   "n'y a pas que"
+  ],
+  "x": [
+   "y a que"
+  ],
+  "e": "There are only two solutions.",
+  "w": "Il n'y a que means there is only; y becomes part of n'y.",
+  "wf": "il n'y a que.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Le cours ___ (durer) une heure.",
+  "a": "ne dure que",
+  "o": [
+   "ne dure que",
+   "ne que dure",
+   "ne dure pas que"
+  ],
+  "x": [
+   "dure que"
+  ],
+  "e": "The class only lasts an hour.",
+  "w": "Only is ne ... que: que goes before the length of time.",
+  "wf": "ne ... que = seulement.",
+  "t": "que",
+  "b": "A2"
+ },
+ {
+  "q": "Il ___ (s'agir) d'un malentendu.",
+  "a": "ne s'agit que",
+  "o": [
+   "ne s'agit que",
+   "se n'agit que",
+   "ne s'agit pas que"
+  ],
+  "e": "It's only a misunderstanding.",
+  "w": "Il ne s'agit que de means it is only, it is just.",
+  "wf": "il ne s'agit que de.",
+  "t": "que",
+  "b": "B2"
+ }
+]

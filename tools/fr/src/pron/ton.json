@@ -1,0 +1,902 @@
+[
+ {
+  "q": "C'est pour ___ ? (you, tu)",
+  "a": "toi",
+  "o": [
+   "toi",
+   "te",
+   "tu",
+   "ton"
+  ],
+  "e": "Is it for you?",
+  "w": "After a preposition, use a stressed pronoun: moi, toi, lui, elle, nous, vous, eux, elles.",
+  "wf": "après pour : toi.",
+  "t": "ton",
+  "b": "A1"
+ },
+ {
+  "q": "Tu viens avec ___ ? (me)",
+  "a": "moi",
+  "o": [
+   "moi",
+   "me",
+   "je",
+   "mon"
+  ],
+  "e": "Are you coming with me?",
+  "w": "After a preposition, use a stressed pronoun: moi, toi, lui, elle, nous, vous, eux, elles.",
+  "wf": "après avec : moi.",
+  "t": "ton",
+  "b": "A1"
+ },
+ {
+  "q": "Mes cousins ? Je dîne chez ___ ce soir.",
+  "a": "eux",
+  "o": [
+   "eux",
+   "leur",
+   "ils",
+   "les"
+  ],
+  "e": "My cousins? I'm having dinner at their place tonight.",
+  "w": "Chez + stressed pronoun: chez eux, at their place.",
+  "wf": "chez + pronom tonique.",
+  "t": "ton",
+  "b": "A1"
+ },
+ {
+  "q": "___, je m'appelle Léa.",
+  "a": "Moi",
+  "o": [
+   "Moi",
+   "Me",
+   "Je",
+   "Ma"
+  ],
+  "e": "Me, I'm Léa.",
+  "w": "To stress the subject, add a stressed pronoun at the front: moi, je...",
+  "wf": "moi, je : mise en relief.",
+  "t": "ton",
+  "b": "A1"
+ },
+ {
+  "q": "Et ___ ? Tu viens d'où ?",
+  "a": "toi",
+  "o": [
+   "toi",
+   "te",
+   "tu",
+   "ta"
+  ],
+  "e": "And you? Where are you from?",
+  "w": "Et + stressed pronoun asks back: et toi ?",
+  "wf": "et toi ? : pronom tonique.",
+  "t": "ton",
+  "b": "A1"
+ },
+ {
+  "q": "Qui est là ? C'est ___ !",
+  "a": "moi",
+  "o": [
+   "moi",
+   "me",
+   "je",
+   "mien"
+  ],
+  "e": "Who's there? It's me!",
+  "w": "After c'est, use a stressed pronoun: c'est moi, c'est lui.",
+  "wf": "c'est + pronom tonique.",
+  "t": "ton",
+  "b": "A1"
+ },
+ {
+  "q": "Ma sœur ? Ce cadeau est pour ___.",
+  "a": "elle",
+  "o": [
+   "elle",
+   "la",
+   "lui",
+   "sa"
+  ],
+  "e": "My sister? This present is for her.",
+  "w": "After a preposition, use a stressed pronoun: moi, toi, lui, elle, nous, vous, eux, elles.",
+  "wf": "après pour : elle.",
+  "t": "ton",
+  "b": "A1"
+ },
+ {
+  "q": "Mon frère ? Je pars sans ___.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "le",
+   "il",
+   "son"
+  ],
+  "e": "My brother? I'm leaving without him.",
+  "w": "After a preposition, use a stressed pronoun: moi, toi, lui, elle, nous, vous, eux, elles.",
+  "wf": "après sans : lui.",
+  "t": "ton",
+  "b": "A1"
+ },
+ {
+  "q": "Marie nous invite, on va chez ___ ce soir.",
+  "a": "elle",
+  "o": [
+   "elle",
+   "la",
+   "lui",
+   "sa"
+  ],
+  "e": "Marie's inviting us, we're going to hers tonight.",
+  "w": "Chez + stressed pronoun: chez elle, at her place.",
+  "wf": "chez + pronom tonique.",
+  "t": "ton",
+  "b": "A1"
+ },
+ {
+  "q": "Ton frère ? ___, il est très sympa.",
+  "a": "Lui",
+  "o": [
+   "Lui",
+   "Le",
+   "Il",
+   "Son"
+  ],
+  "e": "Your brother? He's really nice.",
+  "w": "To stress the subject, add a stressed pronoun at the front: moi, je...",
+  "wf": "lui, il : mise en relief.",
+  "t": "ton",
+  "b": "A1"
+ },
+ {
+  "q": "J'aime le chocolat. ___ aussi !",
+  "a": "Moi",
+  "o": [
+   "Moi",
+   "Me",
+   "Je",
+   "Mon"
+  ],
+  "e": "I love chocolate. Me too!",
+  "w": "Aussi and non plus take a stressed pronoun: moi aussi.",
+  "wf": "moi aussi : pronom tonique.",
+  "t": "ton",
+  "b": "A1"
+ },
+ {
+  "q": "Vous travaillez avec ___ ? (us)",
+  "a": "nous",
+  "o": [
+   "nous",
+   "notre",
+   "leur",
+   "les"
+  ],
+  "e": "Are you working with us?",
+  "w": "After a preposition, use a stressed pronoun: moi, toi, lui, elle, nous, vous, eux, elles.",
+  "wf": "après avec : nous.",
+  "t": "ton",
+  "b": "A1"
+ },
+ {
+  "q": "Ces filles ? Je joue au foot avec ___.",
+  "a": "elles",
+  "o": [
+   "elles",
+   "eux",
+   "les",
+   "leur"
+  ],
+  "e": "Those girls? I play football with them.",
+  "w": "For a group of women or girls, the stressed pronoun is elles.",
+  "wf": "groupe féminin : elles.",
+  "t": "ton",
+  "b": "A1"
+ },
+ {
+  "q": "Tes parents ? Tu as parlé avec ___ ?",
+  "a": "eux",
+  "o": [
+   "eux",
+   "leur",
+   "les",
+   "ils"
+  ],
+  "e": "Your parents? Have you talked with them?",
+  "w": "After a preposition, use a stressed pronoun: moi, toi, lui, elle, nous, vous, eux, elles.",
+  "wf": "après avec : eux.",
+  "t": "ton",
+  "b": "A1"
+ },
+ {
+  "q": "On mange chez ___ ou chez toi ?",
+  "a": "moi",
+  "o": [
+   "moi",
+   "me",
+   "je",
+   "mon"
+  ],
+  "e": "Shall we eat at mine or at yours?",
+  "w": "Chez + stressed pronoun: chez moi, at my place.",
+  "wf": "chez + pronom tonique.",
+  "t": "ton",
+  "b": "A1"
+ },
+ {
+  "q": "Je suis plus grand que ___. (you, tu)",
+  "a": "toi",
+  "o": [
+   "toi",
+   "te",
+   "tu",
+   "ton"
+  ],
+  "e": "I'm taller than you.",
+  "w": "After que in a comparison, use a stressed pronoun: plus grand que toi.",
+  "wf": "après que : toi.",
+  "t": "ton",
+  "b": "A2"
+ },
+ {
+  "q": "C'est à ___, ce sac ? (you, vous)",
+  "a": "vous",
+  "o": [
+   "vous",
+   "votre",
+   "te",
+   "leur"
+  ],
+  "e": "Is this bag yours?",
+  "w": "Être à + stressed pronoun shows who owns it: c'est à vous.",
+  "wf": "être à + pronom tonique.",
+  "t": "ton",
+  "b": "A2"
+ },
+ {
+  "q": "Mes voisins ? Je ne peux pas compter sur ___.",
+  "a": "eux",
+  "o": [
+   "eux",
+   "leur",
+   "les",
+   "ils"
+  ],
+  "e": "My neighbours? I can't count on them.",
+  "w": "After a preposition, use a stressed pronoun: moi, toi, lui, elle, nous, vous, eux, elles.",
+  "wf": "après sur : eux.",
+  "t": "ton",
+  "b": "A2"
+ },
+ {
+  "q": "Toi et ___, vous êtes amis ? (him)",
+  "a": "lui",
+  "o": [
+   "lui",
+   "le",
+   "il",
+   "eux"
+  ],
+  "e": "Are you and he friends?",
+  "w": "In a double subject, use stressed pronouns: toi et lui.",
+  "wf": "sujet double : pronoms toniques.",
+  "t": "ton",
+  "b": "A2"
+ },
+ {
+  "q": "Lui et ___, nous sommes frères. (me)",
+  "a": "moi",
+  "o": [
+   "moi",
+   "je",
+   "me",
+   "mon"
+  ],
+  "e": "He and I are brothers.",
+  "w": "In a double subject, use stressed pronouns: lui et moi, nous...",
+  "wf": "sujet double : pronoms toniques.",
+  "t": "ton",
+  "b": "A2"
+ },
+ {
+  "q": "Fais comme ___ ! (me)",
+  "a": "moi",
+  "o": [
+   "moi",
+   "me",
+   "je",
+   "mien"
+  ],
+  "e": "Do as I do!",
+  "w": "After a preposition, use a stressed pronoun: moi, toi, lui, elle, nous, vous, eux, elles.",
+  "wf": "après comme : moi.",
+  "t": "ton",
+  "b": "A2"
+ },
+ {
+  "q": "Assieds-___, je t'en prie.",
+  "a": "toi",
+  "o": [
+   "toi",
+   "te",
+   "tu",
+   "vous"
+  ],
+  "e": "Sit down, please.",
+  "w": "In a positive command, te becomes toi after the verb: assieds-toi.",
+  "wf": "Impératif : assieds-toi.",
+  "t": "ton",
+  "b": "A2"
+ },
+ {
+  "q": "Elle est partie avant ___. (me)",
+  "a": "moi",
+  "o": [
+   "moi",
+   "me",
+   "je",
+   "mon"
+  ],
+  "e": "She left before me.",
+  "w": "After a preposition, use a stressed pronoun: moi, toi, lui, elle, nous, vous, eux, elles.",
+  "wf": "après avant : moi.",
+  "t": "ton",
+  "b": "A2"
+ },
+ {
+  "q": "Qui a cassé le vase ? Pas ___ !",
+  "a": "moi",
+  "o": [
+   "moi",
+   "me",
+   "je",
+   "mon"
+  ],
+  "e": "Who broke the vase? Not me!",
+  "w": "Pas + stressed pronoun answers who: pas moi.",
+  "wf": "pas moi : pronom tonique.",
+  "t": "ton",
+  "b": "A2"
+ },
+ {
+  "q": "Sa copine ? Il pense toujours à ___.",
+  "a": "elle",
+  "o": [
+   "elle",
+   "la",
+   "lui",
+   "y"
+  ],
+  "e": "His girlfriend? He's always thinking of her.",
+  "w": "À + a person keeps à + stressed pronoun with these verbs; y is for things.",
+  "wf": "penser à une personne : à elle.",
+  "t": "ton",
+  "b": "A2"
+ },
+ {
+  "q": "Mes enfants ? Je suis fier d'___.",
+  "a": "eux",
+  "o": [
+   "eux",
+   "en",
+   "leur",
+   "les"
+  ],
+  "e": "My children? I'm proud of them.",
+  "w": "De + a person keeps de + stressed pronoun; en is for things.",
+  "wf": "fier de quelqu'un : d'eux.",
+  "t": "ton",
+  "b": "A2"
+ },
+ {
+  "q": "Le chef, c'est ___. (her)",
+  "a": "elle",
+  "o": [
+   "elle",
+   "la",
+   "lui",
+   "sa"
+  ],
+  "e": "She's the boss.",
+  "w": "After c'est, use a stressed pronoun: c'est moi, c'est lui.",
+  "wf": "c'est + pronom tonique.",
+  "t": "ton",
+  "b": "A2"
+ },
+ {
+  "q": "Après ___, s'il vous plaît. (you, vous)",
+  "a": "vous",
+  "o": [
+   "vous",
+   "votre",
+   "te",
+   "leur"
+  ],
+  "e": "After you, please.",
+  "w": "After a preposition, use a stressed pronoun: moi, toi, lui, elle, nous, vous, eux, elles.",
+  "wf": "après après : vous.",
+  "t": "ton",
+  "b": "A2"
+ },
+ {
+  "q": "Il est plus âgé qu'___. (her)",
+  "a": "elle",
+  "o": [
+   "elle",
+   "la",
+   "lui",
+   "sa"
+  ],
+  "e": "He's older than her.",
+  "w": "After que in a comparison, use a stressed pronoun: plus grand que toi.",
+  "wf": "après que : elle.",
+  "t": "ton",
+  "b": "A2"
+ },
+ {
+  "q": "À ___ de jouer ! (your turn, tu)",
+  "a": "toi",
+  "o": [
+   "toi",
+   "te",
+   "tu",
+   "ton"
+  ],
+  "e": "Your turn!",
+  "w": "À + stressed pronoun says whose turn it is: à toi.",
+  "wf": "à toi : c'est ton tour.",
+  "t": "ton",
+  "b": "A2"
+ },
+ {
+  "q": "Je suis allé au cinéma avec Léa et ___. (him)",
+  "a": "lui",
+  "o": [
+   "lui",
+   "le",
+   "il",
+   "son"
+  ],
+  "e": "I went to the cinema with Léa and him.",
+  "w": "After a preposition, use a stressed pronoun: moi, toi, lui, elle, nous, vous, eux, elles.",
+  "wf": "après avec : lui.",
+  "t": "ton",
+  "b": "A2"
+ },
+ {
+  "q": "Je compte sur ___. (you, vous)",
+  "a": "vous",
+  "o": [
+   "vous",
+   "votre",
+   "leur",
+   "te"
+  ],
+  "e": "I'm counting on you.",
+  "w": "After a preposition, use a stressed pronoun: moi, toi, lui, elle, nous, vous, eux, elles.",
+  "wf": "après sur : vous.",
+  "t": "ton",
+  "b": "A2"
+ },
+ {
+  "q": "Chacun pour ___.",
+  "a": "soi",
+  "o": [
+   "soi",
+   "lui",
+   "se",
+   "eux"
+  ],
+  "e": "Every man for himself.",
+  "w": "After chacun, on or personne, the stressed pronoun is soi.",
+  "wf": "chacun : soi.",
+  "t": "ton",
+  "b": "B2"
+ },
+ {
+  "q": "C'est ___ qui ont gagné. (them, the boys)",
+  "a": "eux",
+  "o": [
+   "eux",
+   "ils",
+   "leur",
+   "les"
+  ],
+  "e": "They were the ones who won.",
+  "w": "C'est + stressed pronoun + qui: c'est eux qui ont gagné.",
+  "wf": "c'est eux qui : mise en relief.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "C'est ___ qui paie aujourd'hui. (me)",
+  "a": "moi",
+  "o": [
+   "moi",
+   "je",
+   "me",
+   "mon"
+  ],
+  "e": "I'm paying today.",
+  "w": "C'est moi qui stresses the subject; the verb agrees with moi.",
+  "wf": "c'est moi qui : mise en relief.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "Le directeur ? Adressez-vous à ___.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "le",
+   "y",
+   "il"
+  ],
+  "e": "The director? Speak to him.",
+  "w": "S'adresser à + a person keeps à + stressed pronoun: à lui.",
+  "wf": "s'adresser à : à lui.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "Paul ? Je me méfie de ___.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "en",
+   "le",
+   "il"
+  ],
+  "e": "Paul? I don't trust him.",
+  "w": "De + a person keeps de + stressed pronoun; en is for things.",
+  "wf": "se méfier de quelqu'un : de lui.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "Ma grand-mère ? Je m'occupe d'___.",
+  "a": "elle",
+  "o": [
+   "elle",
+   "en",
+   "la",
+   "lui"
+  ],
+  "e": "My grandmother? I look after her.",
+  "w": "De + a person keeps de + stressed pronoun; en is for things.",
+  "wf": "s'occuper de quelqu'un : d'elle.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "Ces gens ? Je me souviens d'___.",
+  "a": "eux",
+  "o": [
+   "eux",
+   "en",
+   "les",
+   "leur"
+  ],
+  "e": "Those people? I remember them.",
+  "w": "De + a person keeps de + stressed pronoun; en is for things.",
+  "wf": "se souvenir de quelqu'un : d'eux.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "Mes amies ? Je tiens beaucoup à ___.",
+  "a": "elles",
+  "o": [
+   "elles",
+   "y",
+   "leur",
+   "les"
+  ],
+  "e": "My friends? They mean a lot to me.",
+  "w": "À + a person keeps à + stressed pronoun with these verbs; y is for things.",
+  "wf": "tenir à quelqu'un : à elles.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "Je l'ai fait ___-même.",
+  "a": "moi",
+  "o": [
+   "moi",
+   "me",
+   "je",
+   "soi"
+  ],
+  "e": "I did it myself.",
+  "w": "Même joins a stressed pronoun: moi-même, myself.",
+  "wf": "moi-même : pronom tonique.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "Ma mère et ___, on se ressemble. (me)",
+  "a": "moi",
+  "o": [
+   "moi",
+   "je",
+   "me",
+   "nous"
+  ],
+  "e": "My mum and I look alike.",
+  "w": "In a double subject, use a stressed pronoun: ma mère et moi.",
+  "wf": "sujet double : moi.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "Ce n'est pas à ___ de décider. (you, tu)",
+  "a": "toi",
+  "o": [
+   "toi",
+   "te",
+   "tu",
+   "ton"
+  ],
+  "e": "It's not up to you to decide.",
+  "w": "C'est à + stressed pronoun de says whose job it is.",
+  "wf": "c'est à toi de : pronom tonique.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "Sa nouvelle copine ? Il ne parle que d'___.",
+  "a": "elle",
+  "o": [
+   "elle",
+   "en",
+   "la",
+   "lui"
+  ],
+  "e": "His new girlfriend? He talks about nothing but her.",
+  "w": "De + a person keeps de + stressed pronoun; en is for things.",
+  "wf": "parler de quelqu'un : d'elle.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "Mes collègues ? Je travaille pour ___ depuis dix ans.",
+  "a": "eux",
+  "o": [
+   "eux",
+   "leur",
+   "les",
+   "ils"
+  ],
+  "e": "My colleagues? I've worked for them for ten years.",
+  "w": "After a preposition, use a stressed pronoun: moi, toi, lui, elle, nous, vous, eux, elles.",
+  "wf": "après pour : eux.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "Je ne peux pas vivre sans ___. (you, tu)",
+  "a": "toi",
+  "o": [
+   "toi",
+   "te",
+   "tu",
+   "ton"
+  ],
+  "e": "I can't live without you.",
+  "w": "After a preposition, use a stressed pronoun: moi, toi, lui, elle, nous, vous, eux, elles.",
+  "wf": "après sans : toi.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "Marc ? Elle s'intéresse beaucoup à ___.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "y",
+   "le",
+   "il"
+  ],
+  "e": "Marc? She's very interested in him.",
+  "w": "À + a person keeps à + stressed pronoun with these verbs; y is for things.",
+  "wf": "s'intéresser à quelqu'un : à lui.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "Mes sœurs ? Je pense souvent à ___.",
+  "a": "elles",
+  "o": [
+   "elles",
+   "y",
+   "leur",
+   "eux"
+  ],
+  "e": "My sisters? I often think of them.",
+  "w": "À + a person keeps à + stressed pronoun with these verbs; y is for things.",
+  "wf": "penser à des personnes : à elles.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "Mes cousins ? Eux, ___ ne viennent jamais.",
+  "a": "ils",
+  "o": [
+   "ils",
+   "eux",
+   "leur",
+   "les"
+  ],
+  "e": "My cousins? They never come.",
+  "w": "After the stressed eux at the front, the verb still needs the subject ils.",
+  "wf": "eux, ils : sujet ils.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "Vous partez ? Nous, ___ restons ici.",
+  "a": "nous",
+  "o": [
+   "nous",
+   "on",
+   "notre",
+   "eux"
+  ],
+  "e": "You're leaving? We're staying here.",
+  "w": "Nous, nous restons: the stressed nous is followed by the subject nous.",
+  "wf": "nous, nous : mise en relief.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "C'est ___ qui l'avez dit ! (you, vous)",
+  "a": "vous",
+  "o": [
+   "vous",
+   "votre",
+   "te",
+   "leur"
+  ],
+  "e": "You're the one who said it!",
+  "w": "C'est vous qui: the verb agrees with vous, so avez.",
+  "wf": "c'est vous qui : mise en relief.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "L'idée vient d'___, pas de moi. (her)",
+  "a": "elle",
+  "o": [
+   "elle",
+   "la",
+   "lui",
+   "sa"
+  ],
+  "e": "The idea came from her, not me.",
+  "w": "After a preposition, use a stressed pronoun: moi, toi, lui, elle, nous, vous, eux, elles.",
+  "wf": "après de : elle.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "Leurs enfants ? Ils sont partis en vacances sans ___.",
+  "a": "eux",
+  "o": [
+   "eux",
+   "leur",
+   "les",
+   "ils"
+  ],
+  "e": "Their children? They went on holiday without them.",
+  "w": "After a preposition, use a stressed pronoun: moi, toi, lui, elle, nous, vous, eux, elles.",
+  "wf": "après sans : eux.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "Mes tantes ? Cette maison est à ___.",
+  "a": "elles",
+  "o": [
+   "elles",
+   "eux",
+   "leur",
+   "leurs"
+  ],
+  "e": "My aunts? This house is theirs.",
+  "w": "Être à + stressed pronoun shows ownership: à elles for women.",
+  "wf": "être à elles : possession.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "Entre ___, je ne l'aime pas beaucoup.",
+  "a": "nous",
+  "o": [
+   "nous",
+   "notre",
+   "on",
+   "leur"
+  ],
+  "e": "Between you and me, I don't like him much.",
+  "w": "Entre nous means between ourselves; entre takes a stressed pronoun.",
+  "wf": "entre nous : pronom tonique.",
+  "t": "ton",
+  "b": "B1"
+ },
+ {
+  "q": "___-même ne le savait pas.",
+  "a": "Lui",
+  "o": [
+   "Lui",
+   "Il",
+   "Le",
+   "Soi"
+  ],
+  "e": "He himself didn't know.",
+  "w": "Même joins a stressed pronoun: lui-même, he himself.",
+  "wf": "lui-même : pronom tonique.",
+  "t": "ton",
+  "b": "B2"
+ },
+ {
+  "q": "On a toujours besoin d'un plus petit que ___.",
+  "a": "soi",
+  "o": [
+   "soi",
+   "lui",
+   "nous",
+   "eux"
+  ],
+  "e": "We always need someone smaller than ourselves.",
+  "w": "After on, the stressed pronoun is soi.",
+  "wf": "on : soi.",
+  "t": "ton",
+  "b": "B2"
+ },
+ {
+  "q": "Il faut avoir confiance en ___.",
+  "a": "soi",
+  "o": [
+   "soi",
+   "lui",
+   "se",
+   "nous"
+  ],
+  "e": "You have to believe in yourself.",
+  "w": "With an impersonal subject like il faut, the stressed pronoun is soi.",
+  "wf": "sujet indéfini : soi.",
+  "t": "ton",
+  "b": "B2"
+ },
+ {
+  "q": "Il se croit supérieur à ___. (us)",
+  "a": "nous",
+  "o": [
+   "nous",
+   "notre",
+   "leur",
+   "vous"
+  ],
+  "e": "He thinks he's better than us.",
+  "w": "After a preposition, use a stressed pronoun: moi, toi, lui, elle, nous, vous, eux, elles.",
+  "wf": "après à : nous.",
+  "t": "ton",
+  "b": "B2"
+ },
+ {
+  "q": "Il faut aussi penser à ___ de temps en temps.",
+  "a": "soi",
+  "o": [
+   "soi",
+   "lui",
+   "se",
+   "eux"
+  ],
+  "e": "You have to think of yourself now and then too.",
+  "w": "With an impersonal subject, the stressed pronoun is soi.",
+  "wf": "sujet indéfini : soi.",
+  "t": "ton",
+  "b": "B2"
+ }
+]

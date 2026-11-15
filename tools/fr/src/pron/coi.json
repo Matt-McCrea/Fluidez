@@ -1,0 +1,917 @@
+[
+ {
+  "q": "Tu téléphones à Paul ? Oui, je ___ téléphone.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "le",
+   "leur",
+   "y"
+  ],
+  "e": "Are you calling Paul? Yes, I'm calling him.",
+  "w": "Téléphoner à quelqu'un: à + a person becomes lui.",
+  "wf": "téléphoner à quelqu'un : lui.",
+  "t": "coi",
+  "b": "A1"
+ },
+ {
+  "q": "Tu parles à tes parents ? Oui, je ___ parle souvent.",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "Do you talk to your parents? Yes, I often talk to them.",
+  "w": "À + several people becomes leur, never leurs, placed before the verb.",
+  "wf": "à + plusieurs personnes : leur.",
+  "t": "coi",
+  "b": "A1"
+ },
+ {
+  "q": "Tu écris à Marie ? Oui, je ___ écris.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "la",
+   "leur",
+   "l'"
+  ],
+  "e": "Are you writing to Marie? Yes, I'm writing to her.",
+  "w": "Lui is for a woman too: écrire à Marie, je lui écris.",
+  "wf": "lui pour un homme ou une femme.",
+  "t": "coi",
+  "b": "A1"
+ },
+ {
+  "q": "Ma mère ? Je ___ donne un cadeau.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "la",
+   "leur",
+   "le"
+  ],
+  "e": "My mum? I'm giving her a present.",
+  "w": "Donner quelque chose à quelqu'un: the person becomes lui.",
+  "wf": "donner à quelqu'un : lui.",
+  "t": "coi",
+  "b": "A1"
+ },
+ {
+  "q": "Les enfants ? Je ___ lis une histoire.",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "The children? I'm reading them a story.",
+  "w": "À + several people becomes leur, never leurs, placed before the verb.",
+  "wf": "à + plusieurs personnes : leur.",
+  "t": "coi",
+  "b": "A1"
+ },
+ {
+  "q": "Le voisin ? Je ___ dis bonjour.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "le",
+   "leur",
+   "l'"
+  ],
+  "e": "The neighbour? I say hello to him.",
+  "w": "Dire à quelqu'un: the person becomes lui.",
+  "wf": "dire à quelqu'un : lui.",
+  "t": "coi",
+  "b": "A1"
+ },
+ {
+  "q": "Tes amis ? Tu ___ envoies un message ?",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "Your friends? Are you sending them a message?",
+  "w": "À + several people becomes leur, never leurs, placed before the verb.",
+  "wf": "envoyer à plusieurs personnes : leur.",
+  "t": "coi",
+  "b": "A1"
+ },
+ {
+  "q": "Sophie ? Je ___ prête mon livre.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "la",
+   "leur",
+   "le"
+  ],
+  "e": "Sophie? I'm lending her my book.",
+  "w": "Prêter quelque chose à quelqu'un: the person becomes lui.",
+  "wf": "prêter à quelqu'un : lui.",
+  "t": "coi",
+  "b": "A1"
+ },
+ {
+  "q": "Le serveur ? Je ___ demande l'addition.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "le",
+   "leur",
+   "l'"
+  ],
+  "e": "The waiter? I'm asking him for the bill.",
+  "w": "Demander quelque chose à quelqu'un: the person becomes lui.",
+  "wf": "demander à quelqu'un : lui.",
+  "t": "coi",
+  "b": "A1"
+ },
+ {
+  "q": "Les élèves ? Le prof ___ explique la leçon.",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "The pupils? The teacher explains the lesson to them.",
+  "w": "À + several people becomes leur, never leurs, placed before the verb.",
+  "wf": "expliquer à plusieurs personnes : leur.",
+  "t": "coi",
+  "b": "A1"
+ },
+ {
+  "q": "Tu peux ___ passer le sel, s'il te plaît ? (me)",
+  "a": "me",
+  "o": [
+   "me",
+   "moi",
+   "te",
+   "lui"
+  ],
+  "e": "Can you pass me the salt, please?",
+  "w": "Before the verb, to me is me, not moi.",
+  "wf": "Devant le verbe : me.",
+  "t": "coi",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ écris demain. (to you, tu)",
+  "a": "te",
+  "o": [
+   "te",
+   "toi",
+   "vous",
+   "lui"
+  ],
+  "e": "I'll write to you tomorrow.",
+  "w": "Before the verb, to you (tu) is te.",
+  "wf": "Devant le verbe : te.",
+  "t": "coi",
+  "b": "A1"
+ },
+ {
+  "q": "Il ___ parle en français. (to us)",
+  "a": "nous",
+  "o": [
+   "nous",
+   "vous",
+   "leur",
+   "lui"
+  ],
+  "e": "He speaks to us in French.",
+  "w": "To us is nous, the same form as the subject.",
+  "wf": "à nous : nous.",
+  "t": "coi",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ réponds tout de suite, madame.",
+  "a": "vous",
+  "o": [
+   "vous",
+   "te",
+   "lui",
+   "leur"
+  ],
+  "e": "I'll answer you right away, madam.",
+  "w": "Talking to a stranger, to you is vous: je vous réponds.",
+  "wf": "vouvoiement : vous.",
+  "t": "coi",
+  "b": "A1"
+ },
+ {
+  "q": "Ton frère ? Je ___ offre un livre pour Noël.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "le",
+   "leur",
+   "l'"
+  ],
+  "e": "Your brother? I'm giving him a book for Christmas.",
+  "w": "Offrir quelque chose à quelqu'un: the person becomes lui.",
+  "wf": "offrir à quelqu'un : lui.",
+  "t": "coi",
+  "b": "A1"
+ },
+ {
+  "q": "Le médecin ? Je ___ pose une question.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "le",
+   "leur",
+   "l'"
+  ],
+  "e": "The doctor? I'm asking him a question.",
+  "w": "Poser une question à quelqu'un: the person becomes lui.",
+  "wf": "poser une question à : lui.",
+  "t": "coi",
+  "b": "A1"
+ },
+ {
+  "q": "Mes collègues ? Je ___ apporte des croissants.",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "My colleagues? I'm bringing them croissants.",
+  "w": "À + several people becomes leur, never leurs, placed before the verb.",
+  "wf": "apporter à plusieurs personnes : leur.",
+  "t": "coi",
+  "b": "A1"
+ },
+ {
+  "q": "Mes grands-parents ? Je ___ rends visite le dimanche.",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "y"
+  ],
+  "e": "My grandparents? I visit them on Sundays.",
+  "w": "Rendre visite à quelqu'un: à + people becomes leur.",
+  "wf": "rendre visite à : leur.",
+  "t": "coi",
+  "b": "A2"
+ },
+ {
+  "q": "Tes parents ? Tu ___ ressembles beaucoup.",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "Your parents? You look a lot like them.",
+  "w": "Ressembler à quelqu'un: à + people becomes leur.",
+  "wf": "ressembler à : leur.",
+  "t": "coi",
+  "b": "A2"
+ },
+ {
+  "q": "Ta copine ? Tu ___ as dit la vérité ?",
+  "a": "lui",
+  "o": [
+   "lui",
+   "la",
+   "l'",
+   "leur"
+  ],
+  "e": "Your girlfriend? Did you tell her the truth?",
+  "w": "Lui goes before avoir in the passé composé: tu lui as dit.",
+  "wf": "tu lui as dit.",
+  "t": "coi",
+  "b": "A2"
+ },
+ {
+  "q": "Les clients ? Nous ___ avons envoyé la facture.",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "The customers? We sent them the invoice.",
+  "w": "À + several people becomes leur, never leurs, placed before the verb.",
+  "wf": "envoyer à plusieurs personnes : leur.",
+  "t": "coi",
+  "b": "A2"
+ },
+ {
+  "q": "Paul ? Je ne ___ ai pas encore répondu.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "l'",
+   "le",
+   "leur"
+  ],
+  "e": "Paul? I haven't answered him yet.",
+  "w": "Répondre à quelqu'un: lui, not l'. English answer has no to, French has à.",
+  "wf": "répondre à quelqu'un : lui.",
+  "t": "coi",
+  "b": "A2"
+ },
+ {
+  "q": "Ma sœur ? Je vais ___ téléphoner ce soir.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "la",
+   "l'",
+   "leur"
+  ],
+  "e": "My sister? I'm going to call her tonight.",
+  "w": "Téléphoner à: lui, placed before the infinitive.",
+  "wf": "Devant l'infinitif : lui téléphoner.",
+  "t": "coi",
+  "b": "A2"
+ },
+ {
+  "q": "Les invités ? Tu peux ___ servir le café ?",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "The guests? Can you serve them the coffee?",
+  "w": "Servir quelque chose à quelqu'un: à + people becomes leur.",
+  "wf": "servir à plusieurs personnes : leur.",
+  "t": "coi",
+  "b": "A2"
+ },
+ {
+  "q": "Ton père ? Dis-___ bonjour de ma part.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "le",
+   "leur",
+   "l'"
+  ],
+  "e": "Your dad? Say hello to him from me.",
+  "w": "In a positive command lui follows the verb with a hyphen: dis-lui.",
+  "wf": "Impératif : dis-lui.",
+  "t": "coi",
+  "b": "A2"
+ },
+ {
+  "q": "Tes amis ? Écris-___ une carte !",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "Your friends? Write them a card!",
+  "w": "In a positive command leur follows the verb: écris-leur.",
+  "wf": "Impératif : écris-leur.",
+  "t": "coi",
+  "b": "A2"
+ },
+ {
+  "q": "Marc ? Ne ___ dis rien !",
+  "a": "lui",
+  "o": [
+   "lui",
+   "le",
+   "leur",
+   "l'"
+  ],
+  "e": "Marc? Don't tell him anything!",
+  "w": "In a negative command lui goes back before the verb: ne lui dis rien.",
+  "wf": "Impératif négatif : ne lui dis rien.",
+  "t": "coi",
+  "b": "A2"
+ },
+ {
+  "q": "Donne-___ ton numéro ! (to me)",
+  "a": "moi",
+  "o": [
+   "moi",
+   "me",
+   "toi",
+   "lui"
+  ],
+  "e": "Give me your number!",
+  "w": "In a positive command, me becomes moi after the verb: donne-moi.",
+  "wf": "Impératif : donne-moi.",
+  "t": "coi",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ as menti ! (to me)",
+  "a": "m'",
+  "o": [
+   "m'",
+   "moi",
+   "lui",
+   "t'"
+  ],
+  "e": "You lied to me!",
+  "w": "Me becomes m' before a vowel: tu m'as menti.",
+  "wf": "me devient m' devant une voyelle.",
+  "t": "coi",
+  "b": "A2"
+ },
+ {
+  "q": "Les touristes ? Le guide ___ montre la cathédrale.",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "The tourists? The guide shows them the cathedral.",
+  "w": "À + several people becomes leur, never leurs, placed before the verb.",
+  "wf": "montrer à plusieurs personnes : leur.",
+  "t": "coi",
+  "b": "A2"
+ },
+ {
+  "q": "Mes voisins ? Je ___ ai prêté ma perceuse.",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "My neighbours? I lent them my drill.",
+  "w": "À + several people becomes leur, never leurs, placed before the verb.",
+  "wf": "prêter à plusieurs personnes : leur.",
+  "t": "coi",
+  "b": "A2"
+ },
+ {
+  "q": "Ton chef ? Tu ___ as demandé un jour de congé ?",
+  "a": "lui",
+  "o": [
+   "lui",
+   "l'",
+   "le",
+   "leur"
+  ],
+  "e": "Your boss? Did you ask him for a day off?",
+  "w": "Demander à quelqu'un: lui, before avoir.",
+  "wf": "demander à quelqu'un : lui.",
+  "t": "coi",
+  "b": "B1"
+ },
+ {
+  "q": "Ma mère ? Ce cadeau ___ plaît beaucoup.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "la",
+   "l'",
+   "leur"
+  ],
+  "e": "My mum? She really likes this present.",
+  "w": "Plaire à quelqu'un: the person who likes it becomes lui.",
+  "wf": "plaire à quelqu'un : lui.",
+  "t": "coi",
+  "b": "B1"
+ },
+ {
+  "q": "Les enfants ? Ce film ___ a fait peur.",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "The children? This film scared them.",
+  "w": "Faire peur à quelqu'un: à + people becomes leur.",
+  "wf": "faire peur à : leur.",
+  "t": "coi",
+  "b": "B1"
+ },
+ {
+  "q": "Mon grand-père ? Il ___ manque beaucoup. (I miss him)",
+  "a": "me",
+  "o": [
+   "me",
+   "moi",
+   "lui",
+   "le"
+  ],
+  "e": "My grandfather? I miss him a lot.",
+  "w": "Manquer à reverses English: il me manque means I miss him.",
+  "wf": "il me manque : je ressens son absence.",
+  "t": "coi",
+  "b": "B1"
+ },
+ {
+  "q": "Tes amis ? Tu ___ manques beaucoup. (they miss you)",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "te"
+  ],
+  "e": "Your friends? They miss you a lot.",
+  "w": "Manquer à reverses English: tu leur manques means they miss you.",
+  "wf": "tu leur manques : ils ressentent ton absence.",
+  "t": "coi",
+  "b": "B1"
+ },
+ {
+  "q": "Les étudiants ? Le directeur ___ a interdit de fumer.",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "The students? The head has banned them from smoking.",
+  "w": "Interdire à quelqu'un de faire: à + people becomes leur.",
+  "wf": "interdire à : leur.",
+  "t": "coi",
+  "b": "B1"
+ },
+ {
+  "q": "Ton fils ? Je ___ ai conseillé de partir tôt.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "l'",
+   "le",
+   "leur"
+  ],
+  "e": "Your son? I advised him to leave early.",
+  "w": "Conseiller à quelqu'un de faire: the person becomes lui.",
+  "wf": "conseiller à : lui.",
+  "t": "coi",
+  "b": "B1"
+ },
+ {
+  "q": "Le patron ? Ce projet ne ___ convient pas.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "le",
+   "l'",
+   "leur"
+  ],
+  "e": "The boss? This project doesn't suit him.",
+  "w": "Convenir à quelqu'un: the person becomes lui.",
+  "wf": "convenir à : lui.",
+  "t": "coi",
+  "b": "B1"
+ },
+ {
+  "q": "Tes parents ? Tu ___ obéis toujours ?",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "Your parents? Do you always obey them?",
+  "w": "Obéir à quelqu'un: à + people becomes leur, unlike English obey them.",
+  "wf": "obéir à : leur.",
+  "t": "coi",
+  "b": "B1"
+ },
+ {
+  "q": "Julie ? Je ___ ai souri, mais elle ne m'a pas vu.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "l'",
+   "la",
+   "leur"
+  ],
+  "e": "Julie? I smiled at her, but she didn't see me.",
+  "w": "Sourire à quelqu'un: the person becomes lui.",
+  "wf": "sourire à : lui.",
+  "t": "coi",
+  "b": "B1"
+ },
+ {
+  "q": "Les voisins ? Il ___ a promis de faire moins de bruit.",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "The neighbours? He promised them he'd make less noise.",
+  "w": "Promettre à quelqu'un: à + people becomes leur.",
+  "wf": "promettre à : leur.",
+  "t": "coi",
+  "b": "B1"
+ },
+ {
+  "q": "Ma copine ? Ça ___ fait plaisir de te voir.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "la",
+   "l'",
+   "leur"
+  ],
+  "e": "My girlfriend? She's glad to see you.",
+  "w": "Faire plaisir à quelqu'un: the person becomes lui.",
+  "wf": "faire plaisir à : lui.",
+  "t": "coi",
+  "b": "B1"
+ },
+ {
+  "q": "Ton prof ? Tu ___ as rendu ton devoir ?",
+  "a": "lui",
+  "o": [
+   "lui",
+   "l'",
+   "le",
+   "leur"
+  ],
+  "e": "Your teacher? Did you hand him your homework?",
+  "w": "Rendre quelque chose à quelqu'un: the person becomes lui.",
+  "wf": "rendre à quelqu'un : lui.",
+  "t": "coi",
+  "b": "B1"
+ },
+ {
+  "q": "Ma voisine ? Je ___ aide à porter ses courses.",
+  "a": "l'",
+  "o": [
+   "l'",
+   "lui",
+   "leur",
+   "les"
+  ],
+  "e": "My neighbour? I help her carry her shopping.",
+  "w": "Aider takes a direct object: aider quelqu'un, so l', not lui.",
+  "wf": "aider quelqu'un : COD.",
+  "t": "coi",
+  "b": "B1"
+ },
+ {
+  "q": "Le directeur ? Je ___ ai écrit une lettre officielle.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "l'",
+   "le",
+   "leur"
+  ],
+  "e": "The director? I wrote him a formal letter.",
+  "w": "Écrire à quelqu'un: the person becomes lui.",
+  "wf": "écrire à : lui.",
+  "t": "coi",
+  "b": "B1"
+ },
+ {
+  "q": "Les employés ? La direction ___ a annoncé la nouvelle.",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "The staff? Management announced the news to them.",
+  "w": "À + several people becomes leur, never leurs, placed before the verb.",
+  "wf": "annoncer à plusieurs personnes : leur.",
+  "t": "coi",
+  "b": "B1"
+ },
+ {
+  "q": "Votre mari ? Vous ___ avez parlé de ce problème ?",
+  "a": "lui",
+  "o": [
+   "lui",
+   "l'",
+   "le",
+   "leur"
+  ],
+  "e": "Your husband? Have you talked to him about this problem?",
+  "w": "Parler à quelqu'un: the person becomes lui.",
+  "wf": "parler à : lui.",
+  "t": "coi",
+  "b": "B1"
+ },
+ {
+  "q": "Les parents ? L'école ___ demande de signer le carnet.",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "The parents? The school asks them to sign the report book.",
+  "w": "Demander à quelqu'un de faire: à + people becomes leur.",
+  "wf": "demander à : leur.",
+  "t": "coi",
+  "b": "B1"
+ },
+ {
+  "q": "Pour finir, il ___ faut encore deux jours. (we need)",
+  "a": "nous",
+  "o": [
+   "nous",
+   "vous",
+   "leur",
+   "lui"
+  ],
+  "e": "To finish, we still need two days.",
+  "w": "Il faut + an indirect pronoun says who needs it: il nous faut, we need.",
+  "wf": "il nous faut : nous avons besoin.",
+  "t": "coi",
+  "b": "B2"
+ },
+ {
+  "q": "Mes parents ? Ce voyage ___ a coûté une fortune.",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "My parents? This trip cost them a fortune.",
+  "w": "Coûter à quelqu'un: the person who pays becomes leur.",
+  "wf": "coûter à : leur.",
+  "t": "coi",
+  "b": "B2"
+ },
+ {
+  "q": "Les candidats ? On ___ a reproché leur retard.",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "The candidates? They were criticised for being late.",
+  "w": "Reprocher quelque chose à quelqu'un: à + people becomes leur.",
+  "wf": "reprocher à : leur.",
+  "t": "coi",
+  "b": "B2"
+ },
+ {
+  "q": "Votre fille ? Je ___ ai déconseillé ce choix.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "l'",
+   "la",
+   "leur"
+  ],
+  "e": "Your daughter? I advised her against this choice.",
+  "w": "Déconseiller quelque chose à quelqu'un: the person becomes lui.",
+  "wf": "déconseiller à : lui.",
+  "t": "coi",
+  "b": "B2"
+ },
+ {
+  "q": "Ma tante ? Il ___ est arrivé un accident.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "la",
+   "l'",
+   "leur"
+  ],
+  "e": "My aunt? She had an accident.",
+  "w": "Il est arrivé quelque chose à quelqu'un: the person becomes lui.",
+  "wf": "arriver à quelqu'un : lui.",
+  "t": "coi",
+  "b": "B2"
+ },
+ {
+  "q": "Mon collègue ? Je ___ en veux encore.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "le",
+   "l'",
+   "leur"
+  ],
+  "e": "My colleague? I'm still angry with him.",
+  "w": "En vouloir à quelqu'un: the person becomes lui, before en.",
+  "wf": "en vouloir à : lui en.",
+  "t": "coi",
+  "b": "B2"
+ },
+ {
+  "q": "Les jeunes ? Ce métier ne ___ attire plus.",
+  "a": "les",
+  "o": [
+   "les",
+   "leur",
+   "lui",
+   "leurs"
+  ],
+  "e": "Young people? This job doesn't attract them any more.",
+  "w": "Attirer takes a direct object, so les, not leur.",
+  "wf": "attirer quelqu'un : COD.",
+  "t": "coi",
+  "b": "B2"
+ },
+ {
+  "q": "Tes enfants ? Tu ___ permets de sortir le soir ?",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "Your children? Do you let them go out in the evening?",
+  "w": "Permettre à quelqu'un de faire: à + people becomes leur.",
+  "wf": "permettre à : leur.",
+  "t": "coi",
+  "b": "B2"
+ },
+ {
+  "q": "Ce client ? Je ___ ai fourni tous les documents.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "l'",
+   "le",
+   "leur"
+  ],
+  "e": "This client? I've given him all the documents.",
+  "w": "Fournir quelque chose à quelqu'un: the person becomes lui.",
+  "wf": "fournir à : lui.",
+  "t": "coi",
+  "b": "B2"
+ },
+ {
+  "q": "Ma sœur ? Je ___ ai succédé à la tête de l'entreprise.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "l'",
+   "la",
+   "leur"
+  ],
+  "e": "My sister? I took over from her as head of the company.",
+  "w": "Succéder à quelqu'un: the person becomes lui.",
+  "wf": "succéder à : lui.",
+  "t": "coi",
+  "b": "B2"
+ },
+ {
+  "q": "Mes amis ? Je ne ___ dois plus rien.",
+  "a": "leur",
+  "o": [
+   "leur",
+   "les",
+   "lui",
+   "leurs"
+  ],
+  "e": "My friends? I don't owe them anything any more.",
+  "w": "Devoir quelque chose à quelqu'un: à + people becomes leur.",
+  "wf": "devoir à : leur.",
+  "t": "coi",
+  "b": "B2"
+ },
+ {
+  "q": "Ta mère ? Ce manteau ___ va très bien.",
+  "a": "lui",
+  "o": [
+   "lui",
+   "la",
+   "l'",
+   "leur"
+  ],
+  "e": "Your mum? This coat really suits her.",
+  "w": "Aller à quelqu'un (to suit): the person becomes lui.",
+  "wf": "aller bien à : lui.",
+  "t": "coi",
+  "b": "B2"
+ }
+]

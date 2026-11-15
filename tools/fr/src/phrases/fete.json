@@ -1,0 +1,383 @@
+[
+ {
+  "fr": "Bon anniversaire !",
+  "en": "Happy birthday!",
+  "alt": [
+   "Joyeux anniversaire !",
+   "Bonne fête !"
+  ],
+  "th": "fete",
+  "b": "A1",
+  "t": 1,
+  "n": "In Québec, bonne fête is the usual way."
+ },
+ {
+  "fr": "C'est mon anniversaire samedi.",
+  "en": "It's my birthday on Saturday.",
+  "th": "fete",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Tu as quel âge maintenant ?",
+  "en": "How old are you now?",
+  "th": "fete",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "C'est une surprise !",
+  "en": "It's a surprise!",
+  "th": "fete",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Voici ton cadeau.",
+  "en": "Here's your present.",
+  "th": "fete",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Tu n'aurais pas dû !",
+  "en": "You shouldn't have!",
+  "th": "fete",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Souffle les bougies !",
+  "en": "Blow out the candles!",
+  "th": "fete",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Fais un vœu !",
+  "en": "Make a wish!",
+  "th": "fete",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Qui veut du gâteau ?",
+  "en": "Who wants some cake?",
+  "th": "fete",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Santé !",
+  "en": "Cheers!",
+  "alt": [
+   "À la tienne !",
+   "À la vôtre !"
+  ],
+  "th": "fete",
+  "b": "A1",
+  "t": 1,
+  "n": "À la tienne is tu, à la vôtre is vous."
+ },
+ {
+  "fr": "On trinque !",
+  "en": "Let's raise a glass!",
+  "th": "fete",
+  "b": "A2",
+  "t": 2,
+  "n": "Trinquer is to clink glasses."
+ },
+ {
+  "fr": "À nous !",
+  "en": "To us!",
+  "th": "fete",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Félicitations !",
+  "en": "Congratulations!",
+  "th": "fete",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Joyeux Noël !",
+  "en": "Merry Christmas!",
+  "th": "fete",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Bonne année !",
+  "en": "Happy New Year!",
+  "th": "fete",
+  "b": "A1",
+  "t": 1,
+  "n": "Often followed by: et bonne santé!"
+ },
+ {
+  "fr": "Meilleurs vœux !",
+  "en": "Best wishes!",
+  "th": "fete",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je fais une fête samedi soir.",
+  "en": "I'm having a party on Saturday night.",
+  "th": "fete",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Tu es libre samedi ?",
+  "en": "Are you free on Saturday?",
+  "th": "fete",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Tu veux venir ?",
+  "en": "Do you want to come?",
+  "th": "fete",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Tu veux venir dîner samedi ?",
+  "en": "Do you want to come for dinner on Saturday?",
+  "th": "fete",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Ça te dit d'aller au cinéma ?",
+  "en": "Do you fancy going to the cinema?",
+  "th": "fete",
+  "b": "A2",
+  "t": 1,
+  "n": "Ça te dit is literally: does it tell you."
+ },
+ {
+  "fr": "Carrément !",
+  "en": "Absolutely!",
+  "th": "fete",
+  "b": "A2",
+  "t": 2,
+  "n": "Casual."
+ },
+ {
+  "fr": "Désolé, je ne peux pas.",
+  "en": "Sorry, I can't.",
+  "alt": [
+   "Désolée, je ne peux pas."
+  ],
+  "th": "fete",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Une autre fois, peut-être.",
+  "en": "Another time, maybe.",
+  "th": "fete",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "On se retrouve où ?",
+  "en": "Where shall we meet?",
+  "th": "fete",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "On se retrouve devant le cinéma.",
+  "en": "Let's meet outside the cinema.",
+  "th": "fete",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "J'apporte quelque chose ?",
+  "en": "Shall I bring anything?",
+  "th": "fete",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Apporte juste à boire.",
+  "en": "Just bring something to drink.",
+  "th": "fete",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Qu'est-ce que tu fais ce week-end ?",
+  "en": "What are you doing this weekend?",
+  "alt": [
+   "Tu fais quoi ce week-end ?",
+   "Qu'est-ce que tu fais en fin de semaine ?"
+  ],
+  "th": "fete",
+  "b": "A1",
+  "t": 1,
+  "n": "Fin de semaine is Québécois."
+ },
+ {
+  "fr": "Rien de spécial.",
+  "en": "Nothing special.",
+  "th": "fete",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Tu as passé un bon week-end ?",
+  "en": "Did you have a good weekend?",
+  "th": "fete",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "On sort ce soir ?",
+  "en": "Shall we go out tonight?",
+  "th": "fete",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "On va boire un verre ?",
+  "en": "Shall we go for a drink?",
+  "alt": [
+   "On va prendre un verre ?",
+   "On va prendre un pot ?"
+  ],
+  "th": "fete",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Je t'offre un verre.",
+  "en": "Let me buy you a drink.",
+  "th": "fete",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "C'est ma tournée !",
+  "en": "It's my round!",
+  "th": "fete",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "On danse ?",
+  "en": "Shall we dance?",
+  "th": "fete",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "J'adore cette chanson !",
+  "en": "I love this song!",
+  "th": "fete",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Il y a un concert ce soir.",
+  "en": "There's a concert tonight.",
+  "th": "fete",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "J'ai deux places pour le match.",
+  "en": "I've got two tickets for the match.",
+  "th": "fete",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "On commande des pizzas ?",
+  "en": "Shall we order pizza?",
+  "th": "fete",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "On fait un pique-nique ?",
+  "en": "Shall we have a picnic?",
+  "th": "fete",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "On fait un barbecue dimanche.",
+  "en": "We're having a barbecue on Sunday.",
+  "th": "fete",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "On va à la plage ?",
+  "en": "Shall we go to the beach?",
+  "th": "fete",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "La soirée était géniale.",
+  "en": "The party was great.",
+  "th": "fete",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "On s'est bien amusés.",
+  "en": "We had a great time.",
+  "th": "fete",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Il y avait du monde.",
+  "en": "It was packed.",
+  "th": "fete",
+  "b": "A2",
+  "t": 3,
+  "n": "Literally: there were people."
+ },
+ {
+  "fr": "Je rentre, il est tard.",
+  "en": "I'm heading home, it's late.",
+  "th": "fete",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je suis invité à un mariage.",
+  "en": "I've been invited to a wedding.",
+  "alt": [
+   "Je suis invitée à un mariage."
+  ],
+  "th": "fete",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Tu viens à mon pot de départ ?",
+  "en": "Are you coming to my leaving drinks?",
+  "th": "fete",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Venez nombreux !",
+  "en": "The more the merrier!",
+  "th": "fete",
+  "b": "B1",
+  "t": 3,
+  "n": "Literally: come in great numbers. Written on invitations."
+ }
+]

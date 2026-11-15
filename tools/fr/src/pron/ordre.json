@@ -1,0 +1,751 @@
+[
+ {
+  "q": "Le livre, Paul ? Je ___ donne demain.",
+  "a": "le lui",
+  "o": [
+   "le lui",
+   "lui le",
+   "le leur",
+   "la lui"
+  ],
+  "e": "The book, for Paul? I'll give it to him tomorrow.",
+  "w": "Le, la, les come before lui and leur: je le lui donne.",
+  "wf": "le, la, les avant lui, leur.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "Les photos ? Je ___ montre. (to you, tu)",
+  "a": "te les",
+  "o": [
+   "te les",
+   "les te",
+   "te le",
+   "les toi"
+  ],
+  "e": "The photos? I'll show them to you.",
+  "w": "Me, te, nous, vous come before le, la, les: je te le donne.",
+  "wf": "me, te, nous, vous avant le, la, les.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "La clé ? Tu ___ donnes ? (to me)",
+  "a": "me la",
+  "o": [
+   "me la",
+   "la me",
+   "me le",
+   "la moi"
+  ],
+  "e": "The key? Will you give it to me?",
+  "w": "Me, te, nous, vous come before le, la, les: je te le donne.",
+  "wf": "me avant la.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "Le message ? Je ___ envoie ce soir. (to them)",
+  "a": "le leur",
+  "o": [
+   "le leur",
+   "leur le",
+   "les leur",
+   "le lui"
+  ],
+  "e": "The message? I'll send it to them tonight.",
+  "w": "Le, la, les come before lui and leur: je le lui donne.",
+  "wf": "le avant leur.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "Le livre ? Donne-___ !",
+  "a": "le-moi",
+  "o": [
+   "le-moi",
+   "moi-le",
+   "me-le",
+   "le-me"
+  ],
+  "e": "The book? Give it to me!",
+  "w": "In a positive command, le, la, les come first and me becomes moi: donne-le-moi.",
+  "wf": "Impératif : donne-le-moi.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "Le livre ? Ne ___ donne pas !",
+  "a": "me le",
+  "o": [
+   "me le",
+   "le me",
+   "le-moi",
+   "moi le"
+  ],
+  "e": "The book? Don't give it to me!",
+  "w": "A negative command keeps the normal order before the verb: ne me le donne pas.",
+  "wf": "Impératif négatif : ne me le donne pas.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "Des pommes ? Donne-___ trois.",
+  "a": "m'en",
+  "o": [
+   "m'en",
+   "moi-en",
+   "en-moi",
+   "me les"
+  ],
+  "e": "Apples? Give me three.",
+  "w": "With en in a command, moi becomes m': donne-m'en.",
+  "wf": "Impératif : donne-m'en.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "Il y a du pain ? Oui, il ___ a.",
+  "a": "y en",
+  "o": [
+   "y en",
+   "en y",
+   "y le",
+   "le y"
+  ],
+  "e": "Is there any bread? Yes, there is.",
+  "w": "Y comes before en: il y en a.",
+  "wf": "y avant en.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "L'histoire ? Elle ___ a racontée. (to us)",
+  "a": "nous l'",
+  "o": [
+   "nous l'",
+   "l' nous",
+   "nous la",
+   "la nous"
+  ],
+  "e": "The story? She told it to us.",
+  "w": "Me, te, nous, vous come before le, la, les: je te le donne.",
+  "wf": "nous avant l'.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "Les clés ? Je ___ ai rendues. (to her)",
+  "a": "les lui",
+  "o": [
+   "les lui",
+   "lui les",
+   "les leur",
+   "la lui"
+  ],
+  "e": "The keys? I gave them back to her.",
+  "w": "Le, la, les come before lui and leur: je le lui donne.",
+  "wf": "les avant lui.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "Ton adresse ? Tu peux ___ écrire ? (to me)",
+  "a": "me l'",
+  "o": [
+   "me l'",
+   "l' me",
+   "me la",
+   "la moi"
+  ],
+  "e": "Your address? Can you write it down for me?",
+  "w": "Me, te, nous, vous come before le, la, les: je te le donne.",
+  "wf": "me avant l'.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "Ces gâteaux ? Je ___ apporte. (to you, vous)",
+  "a": "vous les",
+  "o": [
+   "vous les",
+   "les vous",
+   "vous le",
+   "les leur"
+  ],
+  "e": "These cakes? I'll bring them to you.",
+  "w": "Me, te, nous, vous come before le, la, les: je te le donne.",
+  "wf": "vous avant les.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "Du café ? Je ___ sers ? (to you, tu)",
+  "a": "t'en",
+  "o": [
+   "t'en",
+   "en te",
+   "te le",
+   "t'y"
+  ],
+  "e": "Coffee? Shall I pour you some?",
+  "w": "En always comes last: il m'en donne, je leur en parle.",
+  "wf": "en en dernier : je t'en sers.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "La voiture ? Il ___ prête. (to them)",
+  "a": "la leur",
+  "o": [
+   "la leur",
+   "leur la",
+   "les leur",
+   "la lui"
+  ],
+  "e": "The car? He lends it to them.",
+  "w": "Le, la, les come before lui and leur: je le lui donne.",
+  "wf": "la avant leur.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "La photo ? Montre-___ !",
+  "a": "la-nous",
+  "o": [
+   "la-nous",
+   "nous-la",
+   "nous la",
+   "la nous"
+  ],
+  "e": "The photo? Show it to us!",
+  "w": "In a positive command the object comes first, with hyphens: montre-la-nous.",
+  "wf": "Impératif : montre-la-nous.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "Ce secret ? Ne ___ dis pas !",
+  "a": "le leur",
+  "o": [
+   "le leur",
+   "leur le",
+   "le-leur",
+   "les leur"
+  ],
+  "e": "This secret? Don't tell them!",
+  "w": "A negative command keeps the normal order before the verb: ne me le donne pas.",
+  "wf": "Impératif négatif : ne le leur dis pas.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "La règle ? Je vais ___ expliquer. (to you, tu)",
+  "a": "te l'",
+  "o": [
+   "te l'",
+   "l' te",
+   "te la",
+   "la toi"
+  ],
+  "e": "The rule? I'll explain it to you.",
+  "w": "The group stays together before the infinitive: je vais te l'expliquer.",
+  "wf": "Devant l'infinitif : te l'expliquer.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "Les enfants veulent des bonbons ? Je ___ donne.",
+  "a": "leur en",
+  "o": [
+   "leur en",
+   "en leur",
+   "les leur",
+   "leur y"
+  ],
+  "e": "The children want sweets? I'll give them some.",
+  "w": "En always comes last: il m'en donne, je leur en parle.",
+  "wf": "en en dernier : je leur en donne.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "Tu as parlé du problème à Marc ? Oui, je ___ ai parlé.",
+  "a": "lui en",
+  "o": [
+   "lui en",
+   "en lui",
+   "le lui",
+   "lui y"
+  ],
+  "e": "Did you tell Marc about the problem? Yes, I did.",
+  "w": "En always comes last: il m'en donne, je leur en parle.",
+  "wf": "en en dernier : je lui en ai parlé.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "Les documents ? Envoyez-___ demain.",
+  "a": "les-moi",
+  "o": [
+   "les-moi",
+   "moi-les",
+   "me-les",
+   "les-me"
+  ],
+  "e": "The documents? Send them to me tomorrow.",
+  "w": "In a positive command, le, la, les come first and me becomes moi: donne-le-moi.",
+  "wf": "Impératif : envoyez-les-moi.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "Julie attend la réponse ? Dites-___ vite.",
+  "a": "la-lui",
+  "o": [
+   "la-lui",
+   "lui-la",
+   "la-leur",
+   "le-lui"
+  ],
+  "e": "Julie's waiting for the answer? Tell her quickly.",
+  "w": "In a positive command the object comes first: dites-la-lui.",
+  "wf": "Impératif : dites-la-lui.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "La nouvelle ? Elle ___ a dit ? (to you, tu)",
+  "a": "te l'",
+  "o": [
+   "te l'",
+   "l' te",
+   "te la",
+   "lui l'"
+  ],
+  "e": "The news? Did she tell you?",
+  "w": "Me, te, nous, vous come before le, la, les: je te le donne.",
+  "wf": "te avant l'.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "Ta voiture ? Tu peux ___ prêter ce week-end ? (to me)",
+  "a": "me la",
+  "o": [
+   "me la",
+   "la me",
+   "me le",
+   "la moi"
+  ],
+  "e": "Your car? Can you lend it to me this weekend?",
+  "w": "Me, te, nous, vous come before le, la, les: je te le donne.",
+  "wf": "me avant la.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "Ce livre ? Je ___ recommande vivement. (to you, vous)",
+  "a": "vous le",
+  "o": [
+   "vous le",
+   "le vous",
+   "vous l'",
+   "vous en"
+  ],
+  "e": "This book? I highly recommend it to you.",
+  "w": "Me, te, nous, vous come before le, la, les: je te le donne.",
+  "wf": "vous avant le.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "Les invitations ? Nous ___ enverrons demain. (to them)",
+  "a": "les leur",
+  "o": [
+   "les leur",
+   "leur les",
+   "leur en",
+   "les lui"
+  ],
+  "e": "The invitations? We'll send them out tomorrow.",
+  "w": "Le, la, les come before lui and leur: je le lui donne.",
+  "wf": "les avant leur.",
+  "t": "ordre",
+  "b": "A2"
+ },
+ {
+  "q": "Ce dossier ? Je voudrais ___ parler. (to you, vous)",
+  "a": "vous en",
+  "o": [
+   "vous en",
+   "en vous",
+   "vous le",
+   "vous y"
+  ],
+  "e": "This file? I'd like to talk to you about it.",
+  "w": "En always comes last: il m'en donne, je leur en parle.",
+  "wf": "en en dernier : vous en parler.",
+  "t": "ordre",
+  "b": "B1"
+ },
+ {
+  "q": "Mes parents à la plage ? Je ___ ai emmenés hier.",
+  "a": "les y",
+  "o": [
+   "les y",
+   "y les",
+   "leur y",
+   "les en"
+  ],
+  "e": "My parents to the beach? I took them yesterday.",
+  "w": "Le, la, les come before y: je les y ai emmenés.",
+  "wf": "les avant y.",
+  "t": "ordre",
+  "b": "B1"
+ },
+ {
+  "q": "Reste ici, ne ___ va pas !",
+  "a": "t'en",
+  "o": [
+   "t'en",
+   "en te",
+   "t'y",
+   "te la"
+  ],
+  "e": "Stay here, don't go!",
+  "w": "S'en aller: te comes before en, ne t'en va pas.",
+  "wf": "te avant en.",
+  "t": "ordre",
+  "b": "B1"
+ },
+ {
+  "q": "Ces fleurs ? Il ___ a offertes. (to her)",
+  "a": "les lui",
+  "o": [
+   "les lui",
+   "lui les",
+   "la lui",
+   "les leur"
+  ],
+  "e": "These flowers? He gave them to her.",
+  "w": "Le, la, les come before lui and leur: je le lui donne.",
+  "wf": "les avant lui.",
+  "t": "ordre",
+  "b": "B1"
+ },
+ {
+  "q": "Tes notes ? Tu ___ as montrées ? (to your parents)",
+  "a": "les leur",
+  "o": [
+   "les leur",
+   "leur les",
+   "les lui",
+   "leur en"
+  ],
+  "e": "Your marks? Did you show them to your parents?",
+  "w": "Le, la, les come before lui and leur: je le lui donne.",
+  "wf": "les avant leur.",
+  "t": "ordre",
+  "b": "B1"
+ },
+ {
+  "q": "Le vélo ? Je ___ ai prêté. (to him)",
+  "a": "le lui",
+  "o": [
+   "le lui",
+   "lui le",
+   "l' lui",
+   "le leur"
+  ],
+  "e": "The bike? I lent it to him.",
+  "w": "Le stays whole before lui, as lui starts with a consonant: je le lui ai prêté.",
+  "wf": "le avant lui.",
+  "t": "ordre",
+  "b": "B1"
+ },
+ {
+  "q": "Cette histoire ? Ne ___ parle plus !",
+  "a": "m'en",
+  "o": [
+   "m'en",
+   "me en",
+   "moi en",
+   "en moi"
+  ],
+  "e": "That story? Don't talk to me about it again!",
+  "w": "Me becomes m' before en, and en comes last: ne m'en parle plus.",
+  "wf": "m' avant en.",
+  "t": "ordre",
+  "b": "B1"
+ },
+ {
+  "q": "Ton idée ? Parle-___ ! (to him)",
+  "a": "lui-en",
+  "o": [
+   "lui-en",
+   "en-lui",
+   "le-lui",
+   "lui-y"
+  ],
+  "e": "Your idea? Tell him about it!",
+  "w": "En comes last, even in a command: parle-lui-en.",
+  "wf": "Impératif : parle-lui-en.",
+  "t": "ordre",
+  "b": "B1"
+ },
+ {
+  "q": "Ce secret ? Je ne ___ ai jamais dit. (to them)",
+  "a": "le leur",
+  "o": [
+   "le leur",
+   "leur le",
+   "les leur",
+   "lui le"
+  ],
+  "e": "This secret? I never told them.",
+  "w": "Ne goes before the whole group: je ne le leur ai jamais dit.",
+  "wf": "ne le leur ai jamais dit.",
+  "t": "ordre",
+  "b": "B1"
+ },
+ {
+  "q": "Ma démission ? Je ___ ai parlé hier. (to my boss)",
+  "a": "lui en",
+  "o": [
+   "lui en",
+   "en lui",
+   "le lui",
+   "y lui"
+  ],
+  "e": "My resignation? I told my boss about it yesterday.",
+  "w": "En always comes last: il m'en donne, je leur en parle.",
+  "wf": "lui en ai parlé.",
+  "t": "ordre",
+  "b": "B1"
+ },
+ {
+  "q": "La date ? Il faut ___ dire avant lundi. (to her)",
+  "a": "la lui",
+  "o": [
+   "la lui",
+   "lui la",
+   "la leur",
+   "le lui"
+  ],
+  "e": "The date? We need to tell her before Monday.",
+  "w": "Le, la, les come before lui and leur: je le lui donne.",
+  "wf": "la avant lui.",
+  "t": "ordre",
+  "b": "B1"
+ },
+ {
+  "q": "Le colis ? Ils ___ ont livré ce matin. (to us)",
+  "a": "nous l'",
+  "o": [
+   "nous l'",
+   "l' nous",
+   "nous le",
+   "le nous"
+  ],
+  "e": "The parcel? They delivered it to us this morning.",
+  "w": "Me, te, nous, vous come before le, la, les: je te le donne.",
+  "wf": "nous avant l'.",
+  "t": "ordre",
+  "b": "B1"
+ },
+ {
+  "q": "Leur ballon ? Rends-___ tout de suite !",
+  "a": "le-leur",
+  "o": [
+   "le-leur",
+   "leur-le",
+   "le-lui",
+   "les-leur"
+  ],
+  "e": "Their ball? Give it back to them right now!",
+  "w": "In a positive command, le, la, les come first and me becomes moi: donne-le-moi.",
+  "wf": "Impératif : rends-le-leur.",
+  "t": "ordre",
+  "b": "B1"
+ },
+ {
+  "q": "Des places ? Il ___ a encore deux.",
+  "a": "y en",
+  "o": [
+   "y en",
+   "en y",
+   "y les"
+  ],
+  "e": "Seats? There are still two.",
+  "w": "Y comes before en: il y en a.",
+  "wf": "y avant en.",
+  "t": "ordre",
+  "b": "B1"
+ },
+ {
+  "q": "Ce succès ? Je ___ dois. (to you, tu)",
+  "a": "te le",
+  "o": [
+   "te le",
+   "le te",
+   "te l'",
+   "le toi"
+  ],
+  "e": "This success? I owe it to you.",
+  "w": "Me, te, nous, vous come before le, la, les: je te le donne.",
+  "wf": "te avant le.",
+  "t": "ordre",
+  "b": "B1"
+ },
+ {
+  "q": "Les billets ? Elle ___ est occupée hier.",
+  "a": "s'en",
+  "o": [
+   "s'en",
+   "en s'",
+   "s'y",
+   "se les"
+  ],
+  "e": "The tickets? She took care of them yesterday.",
+  "w": "S'occuper de + a thing: se comes before en, elle s'en est occupée.",
+  "wf": "se avant en.",
+  "t": "ordre",
+  "b": "B1"
+ },
+ {
+  "q": "Les enfants au parc ? Emmène-___ cet après-midi.",
+  "a": "les-y",
+  "o": [
+   "les-y",
+   "y-les",
+   "leur-y",
+   "les-en"
+  ],
+  "e": "The children to the park? Take them there this afternoon.",
+  "w": "In a command, les comes before y: emmène-les-y.",
+  "wf": "Impératif : emmène-les-y.",
+  "t": "ordre",
+  "b": "B2"
+ },
+ {
+  "q": "Ton erreur ? Je ___ suis rendu compte trop tard.",
+  "a": "m'en",
+  "o": [
+   "m'en",
+   "en me",
+   "me le",
+   "m'y"
+  ],
+  "e": "Your mistake? I realised it too late.",
+  "w": "Se rendre compte de: me comes before en, je m'en suis rendu compte.",
+  "wf": "me avant en.",
+  "t": "ordre",
+  "b": "B2"
+ },
+ {
+  "q": "La ville ? Je vais ___ faire visiter. (to you, vous)",
+  "a": "vous la",
+  "o": [
+   "vous la",
+   "la vous",
+   "vous le",
+   "vous y"
+  ],
+  "e": "The town? I'll show you round it.",
+  "w": "With faire + infinitive the group goes before faire: je vais vous la faire visiter.",
+  "wf": "vous la avant faire.",
+  "t": "ordre",
+  "b": "B2"
+ },
+ {
+  "q": "Ce restaurant ? Ne ___ emmène plus jamais !",
+  "a": "m'y",
+  "o": [
+   "m'y",
+   "y me",
+   "me y",
+   "moi y"
+  ],
+  "e": "That restaurant? Never take me there again!",
+  "w": "Me becomes m' before y, and y comes after it: ne m'y emmène plus.",
+  "wf": "m' avant y.",
+  "t": "ordre",
+  "b": "B2"
+ },
+ {
+  "q": "Ce changement ? Personne ne ___ a parlé. (to us)",
+  "a": "nous en",
+  "o": [
+   "nous en",
+   "en nous",
+   "nous y",
+   "nous le"
+  ],
+  "e": "This change? Nobody told us about it.",
+  "w": "En always comes last: il m'en donne, je leur en parle.",
+  "wf": "nous avant en.",
+  "t": "ordre",
+  "b": "B2"
+ },
+ {
+  "q": "Des photos ? Envoie-___ quelques-unes. (to us)",
+  "a": "nous-en",
+  "o": [
+   "nous-en",
+   "en-nous",
+   "nous-les",
+   "les-nous"
+  ],
+  "e": "Photos? Send us a few.",
+  "w": "En comes last, even in a command: envoie-nous-en.",
+  "wf": "Impératif : envoie-nous-en.",
+  "t": "ordre",
+  "b": "B2"
+ },
+ {
+  "q": "Son erreur ? Je ___ ai fait remarquer poliment. (to him)",
+  "a": "la lui",
+  "o": [
+   "la lui",
+   "lui la",
+   "le lui",
+   "lui en"
+  ],
+  "e": "His mistake? I pointed it out to him politely.",
+  "w": "Le, la, les come before lui and leur: je le lui donne.",
+  "wf": "la avant lui.",
+  "t": "ordre",
+  "b": "B2"
+ },
+ {
+  "q": "Les invités ? Ils ___ sont allés vers minuit.",
+  "a": "s'en",
+  "o": [
+   "s'en",
+   "en se",
+   "s'y",
+   "se sont"
+  ],
+  "e": "The guests? They left around midnight.",
+  "w": "S'en aller keeps se before en in every tense: ils s'en sont allés.",
+  "wf": "se avant en.",
+  "t": "ordre",
+  "b": "B2"
+ },
+ {
+  "q": "Le résultat ? On ne ___ a pas encore communiqué. (to us)",
+  "a": "nous l'",
+  "o": [
+   "nous l'",
+   "l' nous",
+   "nous le",
+   "nous en"
+  ],
+  "e": "The result? We haven't been told it yet.",
+  "w": "Me, te, nous, vous come before le, la, les: je te le donne.",
+  "wf": "nous avant l'.",
+  "t": "ordre",
+  "b": "B2"
+ }
+]

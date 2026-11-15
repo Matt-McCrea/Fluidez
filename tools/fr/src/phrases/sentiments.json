@@ -1,0 +1,566 @@
+[
+ {
+  "fr": "Je suis content.",
+  "en": "I'm happy.",
+  "alt": [
+   "Je suis contente."
+  ],
+  "th": "sentiments",
+  "b": "A1",
+  "t": 1,
+  "n": "Contente if you are a woman."
+ },
+ {
+  "fr": "Je suis très heureux.",
+  "en": "I'm very happy.",
+  "alt": [
+   "Je suis très heureuse."
+  ],
+  "th": "sentiments",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je suis fatigué.",
+  "en": "I'm tired.",
+  "alt": [
+   "Je suis fatiguée.",
+   "Je suis crevé."
+  ],
+  "th": "sentiments",
+  "b": "A1",
+  "t": 1,
+  "n": "Crevé is casual: worn out."
+ },
+ {
+  "fr": "Je suis épuisé.",
+  "en": "I'm exhausted.",
+  "alt": [
+   "Je suis épuisée."
+  ],
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je suis triste.",
+  "en": "I'm sad.",
+  "th": "sentiments",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "J'ai faim.",
+  "en": "I'm hungry.",
+  "th": "sentiments",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: I have hunger."
+ },
+ {
+  "fr": "J'ai soif.",
+  "en": "I'm thirsty.",
+  "th": "sentiments",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: I have thirst."
+ },
+ {
+  "fr": "J'ai froid.",
+  "en": "I'm cold.",
+  "th": "sentiments",
+  "b": "A1",
+  "t": 1,
+  "n": "For the weather, say il fait froid."
+ },
+ {
+  "fr": "J'ai chaud.",
+  "en": "I'm hot.",
+  "th": "sentiments",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "J'ai sommeil.",
+  "en": "I'm sleepy.",
+  "th": "sentiments",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "J'ai peur.",
+  "en": "I'm scared.",
+  "th": "sentiments",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "J'ai peur des araignées.",
+  "en": "I'm scared of spiders.",
+  "th": "sentiments",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Je m'ennuie.",
+  "en": "I'm bored.",
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je suis stressé.",
+  "en": "I'm stressed.",
+  "alt": [
+   "Je suis stressée."
+  ],
+  "th": "sentiments",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je suis nerveux.",
+  "en": "I'm nervous.",
+  "alt": [
+   "Je suis nerveuse."
+  ],
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je suis en colère.",
+  "en": "I'm angry.",
+  "alt": [
+   "Je suis fâché.",
+   "Je suis fâchée."
+  ],
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Ça m'énerve !",
+  "en": "That annoys me!",
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je suis surpris.",
+  "en": "I'm surprised.",
+  "alt": [
+   "Je suis surprise."
+  ],
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je suis déçu.",
+  "en": "I'm disappointed.",
+  "alt": [
+   "Je suis déçue."
+  ],
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je suis inquiet.",
+  "en": "I'm worried.",
+  "alt": [
+   "Je suis inquiète."
+  ],
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je suis gêné.",
+  "en": "I'm embarrassed.",
+  "alt": [
+   "Je suis gênée."
+  ],
+  "th": "sentiments",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "J'ai honte.",
+  "en": "I'm ashamed.",
+  "th": "sentiments",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Je suis fier de toi.",
+  "en": "I'm proud of you.",
+  "alt": [
+   "Je suis fière de toi."
+  ],
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je suis amoureux.",
+  "en": "I'm in love.",
+  "alt": [
+   "Je suis amoureuse."
+  ],
+  "th": "sentiments",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Je t'aime.",
+  "en": "I love you.",
+  "th": "sentiments",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Tu me manques.",
+  "en": "I miss you.",
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: you are missing to me."
+ },
+ {
+  "fr": "Je suis de bonne humeur.",
+  "en": "I'm in a good mood.",
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je suis de mauvaise humeur.",
+  "en": "I'm in a bad mood.",
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je suis prêt.",
+  "en": "I'm ready.",
+  "alt": [
+   "Je suis prête."
+  ],
+  "th": "sentiments",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Je suis occupé.",
+  "en": "I'm busy.",
+  "alt": [
+   "Je suis occupée."
+  ],
+  "th": "sentiments",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je suis pressé.",
+  "en": "I'm in a hurry.",
+  "alt": [
+   "Je suis pressée."
+  ],
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je suis en forme.",
+  "en": "I'm feeling good.",
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: I'm in shape."
+ },
+ {
+  "fr": "Je ne suis pas en forme.",
+  "en": "I'm not feeling great.",
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je suis détendu.",
+  "en": "I'm relaxed.",
+  "alt": [
+   "Je suis détendue."
+  ],
+  "th": "sentiments",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Je me sens seul.",
+  "en": "I feel lonely.",
+  "alt": [
+   "Je me sens seule."
+  ],
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je me sens mieux.",
+  "en": "I feel better.",
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je me sens bien ici.",
+  "en": "I feel good here.",
+  "th": "sentiments",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Ça va mieux ?",
+  "en": "Feeling better?",
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "J'en ai marre !",
+  "en": "I'm fed up!",
+  "alt": [
+   "J'en ai assez !"
+  ],
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "J'ai hâte !",
+  "en": "I can't wait!",
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "J'ai hâte de te voir.",
+  "en": "I can't wait to see you.",
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Quelle bonne surprise !",
+  "en": "What a nice surprise!",
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Super !",
+  "en": "Great!",
+  "alt": [
+   "Génial !",
+   "Trop bien !"
+  ],
+  "th": "sentiments",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Je suis ravi.",
+  "en": "I'm delighted.",
+  "alt": [
+   "Je suis ravie."
+  ],
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Ça me fait plaisir.",
+  "en": "That makes me happy.",
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Ça me rend triste.",
+  "en": "That makes me sad.",
+  "th": "sentiments",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Je suis jaloux.",
+  "en": "I'm jealous.",
+  "alt": [
+   "Je suis jalouse."
+  ],
+  "th": "sentiments",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Ça me plaît.",
+  "en": "I like it.",
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Ça ne me plaît pas.",
+  "en": "I don't like it.",
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "J'adore ça !",
+  "en": "I love it!",
+  "th": "sentiments",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je déteste ça.",
+  "en": "I hate it.",
+  "th": "sentiments",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je suis tellement soulagé.",
+  "en": "I'm so relieved.",
+  "alt": [
+   "Je suis tellement soulagée."
+  ],
+  "th": "sentiments",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "J'ai le cafard.",
+  "en": "I'm feeling down.",
+  "alt": [
+   "J'ai le moral à zéro."
+  ],
+  "th": "sentiments",
+  "b": "B1",
+  "t": 3,
+  "n": "Literally: I have the cockroach."
+ },
+ {
+  "fr": "Tu as l'air fatigué.",
+  "en": "You look tired.",
+  "alt": [
+   "Vous avez l'air fatigué."
+  ],
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Qu'est-ce qui ne va pas ?",
+  "en": "What's wrong?",
+  "alt": [
+   "Ça ne va pas ?"
+  ],
+  "th": "sentiments",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "fr": "Tout va bien.",
+  "en": "Everything's fine.",
+  "th": "sentiments",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je suis motivé.",
+  "en": "I'm motivated.",
+  "alt": [
+   "Je suis motivée."
+  ],
+  "th": "sentiments",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Je suis curieux.",
+  "en": "I'm curious.",
+  "alt": [
+   "Je suis curieuse."
+  ],
+  "th": "sentiments",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Je suis sous le choc.",
+  "en": "I'm in shock.",
+  "th": "sentiments",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "J'ai envie de dormir.",
+  "en": "I feel like sleeping.",
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2,
+  "n": "Avoir envie de: to feel like."
+ },
+ {
+  "fr": "J'ai envie d'une glace.",
+  "en": "I fancy an ice cream.",
+  "th": "sentiments",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Je suis à l'aise.",
+  "en": "I feel comfortable.",
+  "th": "sentiments",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Je suis mal à l'aise.",
+  "en": "I feel uncomfortable.",
+  "th": "sentiments",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Je suis heureux pour toi.",
+  "en": "I'm happy for you.",
+  "alt": [
+   "Je suis heureuse pour toi."
+  ],
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Ne sois pas triste.",
+  "en": "Don't be sad.",
+  "th": "sentiments",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Calme-toi.",
+  "en": "Calm down.",
+  "alt": [
+   "Calmez-vous."
+  ],
+  "th": "sentiments",
+  "b": "A2",
+  "t": 2
+ }
+]

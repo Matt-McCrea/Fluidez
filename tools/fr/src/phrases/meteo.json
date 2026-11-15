@@ -1,0 +1,377 @@
+[
+ {
+  "fr": "Quel temps fait-il ?",
+  "en": "What's the weather like?",
+  "alt": [
+   "Il fait quel temps ?"
+  ],
+  "th": "meteo",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Il fait beau.",
+  "en": "It's nice weather.",
+  "th": "meteo",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Il fait mauvais.",
+  "en": "The weather's bad.",
+  "th": "meteo",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Il fait chaud.",
+  "en": "It's hot.",
+  "th": "meteo",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Il fait froid.",
+  "en": "It's cold.",
+  "th": "meteo",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Il fait frais.",
+  "en": "It's cool.",
+  "th": "meteo",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Il fait doux.",
+  "en": "It's mild.",
+  "th": "meteo",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Il y a du soleil.",
+  "en": "It's sunny.",
+  "alt": [
+   "Il fait soleil."
+  ],
+  "th": "meteo",
+  "b": "A1",
+  "t": 1,
+  "n": "Il fait soleil is Québécois."
+ },
+ {
+  "fr": "Il pleut.",
+  "en": "It's raining.",
+  "th": "meteo",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Il pleut à verse.",
+  "en": "It's pouring.",
+  "alt": [
+   "Il pleut des cordes."
+  ],
+  "th": "meteo",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Il neige.",
+  "en": "It's snowing.",
+  "th": "meteo",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Il y a du vent.",
+  "en": "It's windy.",
+  "alt": [
+   "Il vente."
+  ],
+  "th": "meteo",
+  "b": "A1",
+  "t": 1,
+  "n": "Il vente is common in Québec."
+ },
+ {
+  "fr": "Il y a du brouillard.",
+  "en": "It's foggy.",
+  "th": "meteo",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Il y a des nuages.",
+  "en": "It's cloudy.",
+  "alt": [
+   "C'est nuageux.",
+   "Le ciel est couvert."
+  ],
+  "th": "meteo",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Il y a de l'orage.",
+  "en": "There's a storm.",
+  "alt": [
+   "Il y a un orage."
+  ],
+  "th": "meteo",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Il fait gris.",
+  "en": "It's grey.",
+  "th": "meteo",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Il fait lourd.",
+  "en": "It's muggy.",
+  "th": "meteo",
+  "b": "B1",
+  "t": 3,
+  "n": "Literally: it's heavy."
+ },
+ {
+  "fr": "Il fait vingt degrés.",
+  "en": "It's twenty degrees.",
+  "th": "meteo",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Il fait moins cinq.",
+  "en": "It's minus five.",
+  "th": "meteo",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Il fait trente degrés à l'ombre.",
+  "en": "It's thirty degrees in the shade.",
+  "th": "meteo",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Il fait combien dehors ?",
+  "en": "What's the temperature outside?",
+  "th": "meteo",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "On gèle !",
+  "en": "It's freezing!",
+  "alt": [
+   "Il fait un froid de canard !"
+  ],
+  "th": "meteo",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Quelle chaleur !",
+  "en": "It's so hot!",
+  "alt": [
+   "Il fait une de ces chaleurs !"
+  ],
+  "th": "meteo",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Il fait un temps magnifique.",
+  "en": "The weather's gorgeous.",
+  "th": "meteo",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Quel sale temps !",
+  "en": "What awful weather!",
+  "alt": [
+   "Quel temps pourri !"
+  ],
+  "th": "meteo",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Il va pleuvoir.",
+  "en": "It's going to rain.",
+  "th": "meteo",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "fr": "Il va faire beau demain.",
+  "en": "It'll be nice tomorrow.",
+  "th": "meteo",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Il fera froid cette nuit.",
+  "en": "It will be cold tonight.",
+  "th": "meteo",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Il risque de neiger ce soir.",
+  "en": "It might snow tonight.",
+  "th": "meteo",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "La météo dit qu'il va pleuvoir.",
+  "en": "The forecast says it's going to rain.",
+  "th": "meteo",
+  "b": "B1",
+  "t": 2
+ },
+ {
+  "fr": "Tu as vu la météo ?",
+  "en": "Have you seen the forecast?",
+  "th": "meteo",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Prends un parapluie.",
+  "en": "Take an umbrella.",
+  "alt": [
+   "Prenez un parapluie."
+  ],
+  "th": "meteo",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "N'oublie pas ton manteau.",
+  "en": "Don't forget your coat.",
+  "th": "meteo",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Il faut mettre de la crème solaire.",
+  "en": "You need to put on sun cream.",
+  "th": "meteo",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Le soleil brille.",
+  "en": "The sun is shining.",
+  "th": "meteo",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Il commence à pleuvoir.",
+  "en": "It's starting to rain.",
+  "th": "meteo",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Il a plu toute la nuit.",
+  "en": "It rained all night.",
+  "th": "meteo",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Il a neigé hier.",
+  "en": "It snowed yesterday.",
+  "th": "meteo",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Il ne pleut plus.",
+  "en": "It's stopped raining.",
+  "th": "meteo",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: it isn't raining any more."
+ },
+ {
+  "fr": "Le ciel se dégage.",
+  "en": "The sky is clearing.",
+  "th": "meteo",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Il y a du verglas.",
+  "en": "There's black ice.",
+  "th": "meteo",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Les routes sont glissantes.",
+  "en": "The roads are slippery.",
+  "th": "meteo",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Je suis trempé !",
+  "en": "I'm soaked!",
+  "alt": [
+   "Je suis trempée !"
+  ],
+  "th": "meteo",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Il fait nuit.",
+  "en": "It's dark.",
+  "th": "meteo",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: it makes night."
+ },
+ {
+  "fr": "Il fait jour.",
+  "en": "It's light.",
+  "th": "meteo",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "C'est la canicule.",
+  "en": "It's a heatwave.",
+  "th": "meteo",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Il y a un arc-en-ciel !",
+  "en": "There's a rainbow!",
+  "th": "meteo",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Le vent souffle fort.",
+  "en": "The wind is blowing hard.",
+  "th": "meteo",
+  "b": "B1",
+  "t": 3
+ }
+]

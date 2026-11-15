@@ -1,0 +1,749 @@
+[
+ {
+  "q": "Je sors ___ (de) bureau à cinq heures.",
+  "n": "bureau",
+  "t": "contr",
+  "e": "I leave the office at five.",
+  "b": "A1",
+  "a": "du",
+  "p": "de"
+ },
+ {
+  "q": "Je vais ___ (à) cinéma ce soir.",
+  "n": "cinéma",
+  "t": "contr",
+  "e": "I'm going to the cinema tonight.",
+  "b": "A2",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "On se retrouve ___ (à) café ?",
+  "n": "café",
+  "t": "contr",
+  "e": "Shall we meet at the café?",
+  "b": "A1",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "Il va ___ (à) marché le samedi.",
+  "n": "marché",
+  "t": "contr",
+  "e": "He goes to the market on Saturdays.",
+  "b": "A2",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "Elle travaille ___ (à) bureau jusqu'à six heures.",
+  "n": "bureau",
+  "t": "contr",
+  "e": "She works at the office until six.",
+  "b": "A1",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "Mon fils va ___ (à) lycée à pied.",
+  "n": "lycée",
+  "t": "contr",
+  "e": "My son walks to secondary school.",
+  "b": "A2",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "On joue ___ (à) foot le mercredi.",
+  "n": "foot",
+  "t": "contr",
+  "e": "We play football on Wednesdays.",
+  "b": "B1",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "Ce soir, on mange ___ (à) restaurant.",
+  "n": "restaurant",
+  "t": "contr",
+  "e": "Tonight we're eating at a restaurant.",
+  "b": "A2",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "J'ai mal ___ (à) dos.",
+  "n": "dos",
+  "t": "contr",
+  "e": "My back hurts.",
+  "b": "A1",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "J'ai mal ___ (à) ventre.",
+  "n": "ventre",
+  "t": "contr",
+  "e": "I've got a stomach ache.",
+  "b": "A2",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "Elle est ___ (à) téléphone avec sa mère.",
+  "n": "téléphone",
+  "t": "contr",
+  "e": "She's on the phone with her mother.",
+  "b": "A1",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "Les enfants sont ___ (à) parc.",
+  "n": "parc",
+  "t": "contr",
+  "e": "The children are at the park.",
+  "b": "A2",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "On va ___ (à) musée dimanche.",
+  "n": "musée",
+  "t": "contr",
+  "e": "We're going to the museum on Sunday.",
+  "b": "B1",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "Il habite ___ (à) troisième étage.",
+  "n": "étage",
+  "t": "contr",
+  "e": "He lives on the third floor.",
+  "b": "A2",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "Je pense ___ (à) voyage de demain.",
+  "n": "voyage",
+  "t": "contr",
+  "e": "I'm thinking about tomorrow's trip.",
+  "b": "A2",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "Il parle ___ (à) professeur après le cours.",
+  "n": "professeur",
+  "t": "contr",
+  "e": "He talks to the teacher after the lesson.",
+  "b": "A2",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "Elle a écrit ___ (à) directeur.",
+  "n": "directeur",
+  "t": "contr",
+  "e": "She wrote to the head.",
+  "b": "A2",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "On va ___ (à) théâtre ce soir.",
+  "n": "théâtre",
+  "t": "contr",
+  "e": "We're going to the theatre tonight.",
+  "b": "A2",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "Un café ___ (à) lait, s'il vous plaît.",
+  "n": "lait",
+  "t": "contr",
+  "e": "A white coffee, please.",
+  "b": "A2",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "Je voudrais un sandwich ___ (à) fromage.",
+  "n": "fromage",
+  "t": "contr",
+  "e": "I'd like a cheese sandwich.",
+  "b": "B1",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "Il est ___ (à) lit depuis hier.",
+  "n": "lit",
+  "t": "contr",
+  "e": "He has been in bed since yesterday.",
+  "b": "A2",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "On va ___ (à) match ce soir ?",
+  "n": "match",
+  "t": "contr",
+  "e": "Shall we go to the match tonight?",
+  "b": "A2",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "Les enfants jouent ___ (à) jardin.",
+  "n": "jardin",
+  "t": "contr",
+  "e": "The children are playing in the garden.",
+  "b": "A2",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "Je l'attends ___ (à) coin de la rue.",
+  "n": "coin",
+  "t": "contr",
+  "e": "I'm waiting for him on the street corner.",
+  "b": "A1",
+  "a": "au",
+  "p": "à"
+ },
+ {
+  "q": "Il parle ___ (à) enfants avec douceur.",
+  "n": "enfant",
+  "t": "contr",
+  "e": "He talks gently to the children.",
+  "b": "A1",
+  "a": "aux",
+  "pl": 1,
+  "p": "à"
+ },
+ {
+  "q": "J'ai mal ___ (à) pieds.",
+  "n": "pied",
+  "t": "contr",
+  "e": "My feet hurt.",
+  "b": "A1",
+  "a": "aux",
+  "pl": 1,
+  "p": "à"
+ },
+ {
+  "q": "Le soir, on joue ___ (à) cartes.",
+  "n": "carte",
+  "t": "contr",
+  "e": "In the evening we play cards.",
+  "b": "A1",
+  "a": "aux",
+  "pl": 1,
+  "p": "à"
+ },
+ {
+  "q": "Je fais une tarte ___ (à) pommes.",
+  "n": "pomme",
+  "t": "contr",
+  "e": "I'm making an apple tart.",
+  "b": "A2",
+  "a": "aux",
+  "pl": 1,
+  "p": "à"
+ },
+ {
+  "q": "Elle donne à manger ___ (à) chats.",
+  "n": "chat",
+  "t": "contr",
+  "e": "She feeds the cats.",
+  "b": "A2",
+  "a": "aux",
+  "pl": 1,
+  "p": "à"
+ },
+ {
+  "q": "Il a mal ___ (à) yeux.",
+  "n": "œil",
+  "t": "contr",
+  "e": "His eyes hurt.",
+  "b": "A1",
+  "a": "aux",
+  "pl": 1,
+  "p": "à"
+ },
+ {
+  "q": "J'écris ___ (à) parents de Paul.",
+  "n": "parent",
+  "t": "contr",
+  "e": "I'm writing to Paul's parents.",
+  "b": "A1",
+  "a": "aux",
+  "pl": 1,
+  "p": "à"
+ },
+ {
+  "q": "Elle téléphone ___ (à) clients le matin.",
+  "n": "client",
+  "t": "contr",
+  "e": "She phones the clients in the morning.",
+  "b": "A1",
+  "a": "aux",
+  "pl": 1,
+  "p": "à"
+ },
+ {
+  "q": "On a parlé ___ (à) étudiants.",
+  "n": "étudiant",
+  "t": "contr",
+  "e": "We talked to the students.",
+  "b": "A2",
+  "a": "aux",
+  "pl": 1,
+  "p": "à"
+ },
+ {
+  "q": "C'est le garçon ___ (à) cheveux longs.",
+  "n": "cheveu",
+  "t": "contr",
+  "e": "He's the boy with long hair.",
+  "b": "A1",
+  "a": "aux",
+  "pl": 1,
+  "p": "à"
+ },
+ {
+  "q": "Il pose une question ___ (à) invités.",
+  "n": "invité",
+  "t": "contr",
+  "e": "He asks the guests a question.",
+  "b": "A2",
+  "a": "aux",
+  "pl": 1,
+  "p": "à"
+ },
+ {
+  "q": "J'ai mal ___ (à) jambes après le sport.",
+  "n": "jambe",
+  "t": "contr",
+  "e": "My legs hurt after sport.",
+  "b": "A1",
+  "a": "aux",
+  "pl": 1,
+  "p": "à"
+ },
+ {
+  "q": "Il pense déjà ___ (à) examens.",
+  "n": "examen",
+  "t": "contr",
+  "e": "He's already thinking about the exams.",
+  "b": "A2",
+  "a": "aux",
+  "pl": 1,
+  "p": "à"
+ },
+ {
+  "q": "Merci ___ (à) amis qui sont venus !",
+  "n": "ami",
+  "t": "contr",
+  "e": "Thanks to the friends who came!",
+  "b": "A1",
+  "a": "aux",
+  "pl": 1,
+  "p": "à"
+ },
+ {
+  "q": "Je viens ___ (de) bureau.",
+  "n": "bureau",
+  "t": "contr",
+  "e": "I'm coming from the office.",
+  "b": "A1",
+  "a": "du",
+  "p": "de"
+ },
+ {
+  "q": "Il revient ___ (de) marché avec des fleurs.",
+  "n": "marché",
+  "t": "contr",
+  "e": "He's coming back from the market with flowers.",
+  "b": "A2",
+  "a": "du",
+  "p": "de"
+ },
+ {
+  "q": "La porte ___ (de) garage est ouverte.",
+  "n": "garage",
+  "t": "contr",
+  "e": "The garage door is open.",
+  "b": "B1",
+  "a": "du",
+  "p": "de"
+ },
+ {
+  "q": "C'est le livre ___ (de) professeur.",
+  "n": "professeur",
+  "t": "contr",
+  "e": "It's the teacher's book.",
+  "b": "A2",
+  "a": "du",
+  "p": "de"
+ },
+ {
+  "q": "On parle ___ (de) film d'hier.",
+  "n": "film",
+  "t": "contr",
+  "e": "We're talking about yesterday's film.",
+  "b": "A1",
+  "a": "du",
+  "p": "de"
+ },
+ {
+  "q": "Elle sort ___ (de) cinéma à dix heures.",
+  "n": "cinéma",
+  "t": "contr",
+  "e": "She comes out of the cinema at ten.",
+  "b": "A2",
+  "a": "du",
+  "p": "de"
+ },
+ {
+  "q": "Il habite près ___ (de) parc.",
+  "n": "parc",
+  "t": "contr",
+  "e": "He lives near the park.",
+  "b": "A2",
+  "a": "du",
+  "p": "de"
+ },
+ {
+  "q": "La voiture est à côté ___ (de) restaurant.",
+  "n": "restaurant",
+  "t": "contr",
+  "e": "The car is next to the restaurant.",
+  "b": "A2",
+  "a": "du",
+  "p": "de"
+ },
+ {
+  "q": "Le prix ___ (de) billet est de dix euros.",
+  "n": "billet",
+  "t": "contr",
+  "e": "The ticket costs ten euros.",
+  "b": "A2",
+  "a": "du",
+  "p": "de"
+ },
+ {
+  "q": "Elle joue ___ (de) piano tous les soirs.",
+  "n": "piano",
+  "t": "contr",
+  "e": "She plays the piano every evening.",
+  "b": "B1",
+  "a": "du",
+  "p": "de"
+ },
+ {
+  "q": "J'ai peur ___ (de) chien des voisins.",
+  "n": "chien",
+  "t": "contr",
+  "e": "I'm scared of the neighbours' dog.",
+  "b": "A1",
+  "a": "du",
+  "p": "de"
+ },
+ {
+  "q": "La fin ___ (de) livre est triste.",
+  "n": "livre",
+  "t": "contr",
+  "e": "The end of the book is sad.",
+  "b": "A2",
+  "a": "du",
+  "p": "de"
+ },
+ {
+  "q": "Il rentre ___ (de) travail à six heures.",
+  "n": "travail",
+  "t": "contr",
+  "e": "He gets home from work at six.",
+  "b": "A1",
+  "a": "du",
+  "p": "de"
+ },
+ {
+  "q": "Je ne connais pas le nom ___ (de) village.",
+  "n": "village",
+  "t": "contr",
+  "e": "I don't know the name of the village.",
+  "b": "A2",
+  "a": "du",
+  "p": "de"
+ },
+ {
+  "q": "En face ___ (de) musée, il y a un café.",
+  "n": "musée",
+  "t": "contr",
+  "e": "Opposite the museum there's a café.",
+  "b": "B1",
+  "a": "du",
+  "p": "de"
+ },
+ {
+  "q": "On habite loin ___ (de) centre.",
+  "n": "centre",
+  "t": "contr",
+  "e": "We live a long way from the centre.",
+  "b": "A2",
+  "a": "du",
+  "p": "de"
+ },
+ {
+  "q": "La chambre ___ (de) enfants est en haut.",
+  "n": "enfant",
+  "t": "contr",
+  "e": "The children's room is upstairs.",
+  "b": "A1",
+  "a": "des",
+  "pl": 1,
+  "p": "de"
+ },
+ {
+  "q": "Il a peur ___ (de) chiens.",
+  "n": "chien",
+  "t": "contr",
+  "e": "He's afraid of dogs.",
+  "b": "A1",
+  "a": "des",
+  "pl": 1,
+  "p": "de"
+ },
+ {
+  "q": "On parle ___ (de) problèmes de la ville.",
+  "n": "problème",
+  "t": "contr",
+  "e": "We're talking about the town's problems.",
+  "b": "A1",
+  "a": "des",
+  "pl": 1,
+  "p": "de"
+ },
+ {
+  "q": "Le prix ___ (de) maisons a augmenté.",
+  "n": "maison",
+  "t": "contr",
+  "e": "House prices have gone up.",
+  "b": "A1",
+  "a": "des",
+  "pl": 1,
+  "p": "de"
+ },
+ {
+  "q": "La couleur ___ (de) murs est horrible.",
+  "n": "mur",
+  "t": "contr",
+  "e": "The colour of the walls is awful.",
+  "b": "A2",
+  "a": "des",
+  "pl": 1,
+  "p": "de"
+ },
+ {
+  "q": "C'est la fête ___ (de) mères dimanche.",
+  "n": "mère",
+  "t": "contr",
+  "e": "It's Mother's Day on Sunday.",
+  "b": "A1",
+  "a": "des",
+  "pl": 1,
+  "p": "de"
+ },
+ {
+  "q": "Le bruit ___ (de) voitures m'empêche de dormir.",
+  "n": "voiture",
+  "t": "contr",
+  "e": "The noise of the cars keeps me awake.",
+  "b": "A1",
+  "a": "des",
+  "pl": 1,
+  "p": "de"
+ },
+ {
+  "q": "Elle s'occupe ___ (de) chats de sa voisine.",
+  "n": "chat",
+  "t": "contr",
+  "e": "She looks after her neighbour's cats.",
+  "b": "A2",
+  "a": "des",
+  "pl": 1,
+  "p": "de"
+ },
+ {
+  "q": "La liste ___ (de) invités est prête.",
+  "n": "invité",
+  "t": "contr",
+  "e": "The guest list is ready.",
+  "b": "A2",
+  "a": "des",
+  "pl": 1,
+  "p": "de"
+ },
+ {
+  "q": "Je ne connais pas le nom ___ (de) rues.",
+  "n": "rue",
+  "t": "contr",
+  "e": "I don't know the street names.",
+  "b": "A1",
+  "a": "des",
+  "pl": 1,
+  "p": "de"
+ },
+ {
+  "q": "On habite près ___ (de) magasins.",
+  "n": "magasin",
+  "t": "contr",
+  "e": "We live near the shops.",
+  "b": "A2",
+  "a": "des",
+  "pl": 1,
+  "p": "de"
+ },
+ {
+  "q": "La plupart ___ (de) gens sont gentils.",
+  "n": "gens",
+  "t": "contr",
+  "e": "Most people are kind.",
+  "b": "A1",
+  "a": "des",
+  "pl": 1,
+  "p": "de"
+ },
+ {
+  "q": "Je vais ___ (à) plage cet après-midi.",
+  "n": "plage",
+  "t": "contr",
+  "e": "I'm going to the beach this afternoon.",
+  "b": "A2",
+  "a": "à la",
+  "p": "à"
+ },
+ {
+  "q": "On va ___ (à) piscine samedi ?",
+  "n": "piscine",
+  "t": "contr",
+  "e": "Shall we go to the pool on Saturday?",
+  "b": "B1",
+  "a": "à la",
+  "p": "à"
+ },
+ {
+  "q": "Il est ___ (à) hôpital depuis lundi.",
+  "n": "hôpital",
+  "t": "contr",
+  "e": "He has been in hospital since Monday.",
+  "b": "A1",
+  "a": "à l'",
+  "p": "à"
+ },
+ {
+  "q": "Elle va ___ (à) école à pied.",
+  "n": "école",
+  "t": "contr",
+  "e": "She walks to school.",
+  "b": "A1",
+  "a": "à l'",
+  "p": "à"
+ },
+ {
+  "q": "On se retrouve ___ (à) gare à midi.",
+  "n": "gare",
+  "t": "contr",
+  "e": "We'll meet at the station at noon.",
+  "b": "B1",
+  "a": "à la",
+  "p": "à"
+ },
+ {
+  "q": "Il a mal ___ (à) tête.",
+  "n": "tête",
+  "t": "contr",
+  "e": "He has a headache.",
+  "b": "A1",
+  "a": "à la",
+  "p": "à"
+ },
+ {
+  "q": "Je reviens ___ (de) boulangerie.",
+  "n": "boulangerie",
+  "t": "contr",
+  "e": "I'm coming back from the bakery.",
+  "b": "A2",
+  "a": "de la",
+  "p": "de"
+ },
+ {
+  "q": "La porte ___ (de) maison est fermée.",
+  "n": "maison",
+  "t": "contr",
+  "e": "The front door is shut.",
+  "b": "A1",
+  "a": "de la",
+  "p": "de"
+ },
+ {
+  "q": "Il sort ___ (de) hôtel à huit heures.",
+  "n": "hôtel",
+  "t": "contr",
+  "e": "He leaves the hotel at eight.",
+  "b": "A1",
+  "a": "de l'",
+  "p": "de"
+ },
+ {
+  "q": "On habite près ___ (de) église.",
+  "n": "église",
+  "t": "contr",
+  "e": "We live near the church.",
+  "b": "A2",
+  "a": "de l'",
+  "p": "de"
+ },
+ {
+  "q": "Elle joue ___ (de) guitare dans un groupe.",
+  "n": "guitare",
+  "t": "contr",
+  "e": "She plays guitar in a band.",
+  "b": "B1",
+  "a": "de la",
+  "p": "de"
+ },
+ {
+  "q": "Le centre ___ (de) ville est très joli.",
+  "n": "ville",
+  "t": "contr",
+  "e": "The town centre is very pretty.",
+  "b": "A1",
+  "a": "de la",
+  "p": "de"
+ },
+ {
+  "q": "Il travaille ___ (à) aéroport.",
+  "n": "aéroport",
+  "t": "contr",
+  "e": "He works at the airport.",
+  "b": "A2",
+  "a": "à l'",
+  "p": "à"
+ },
+ {
+  "q": "J'ai froid ___ (à) mains.",
+  "n": "main",
+  "t": "contr",
+  "e": "My hands are cold.",
+  "b": "A1",
+  "a": "aux",
+  "pl": 1,
+  "p": "à"
+ }
+]

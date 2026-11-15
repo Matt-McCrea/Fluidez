@@ -1,0 +1,1393 @@
+[
+ {
+  "q": "Hier, Marie ___ (avoir/être) partie très tôt.",
+  "v": "partir",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "Yesterday, Marie left very early.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (avoir/être) mangé à la cantine ce midi ?",
+  "v": "manger",
+  "t": "ae",
+  "p": "tu",
+  "tt": "pres",
+  "e": "Did you eat in the canteen at lunchtime?",
+  "b": "A2"
+ },
+ {
+  "q": "Hier soir, nous ___ (avoir/être) allés au cinéma.",
+  "v": "aller",
+  "t": "ae",
+  "p": "nous",
+  "tt": "pres",
+  "e": "Last night, we went to the cinema.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (avoir/être) vu le dernier film de Spielberg ?",
+  "v": "voir",
+  "t": "ae",
+  "p": "vous",
+  "tt": "pres",
+  "e": "Have you seen Spielberg's latest film?",
+  "b": "A2"
+ },
+ {
+  "q": "Mes parents ___ (avoir/être) arrivés à midi.",
+  "v": "arriver",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "e": "My parents arrived at noon.",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, Paul ___ (avoir/être) fini son travail à six heures.",
+  "v": "finir",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "Yesterday, Paul finished work at six.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (avoir/être) venu à pied ?",
+  "v": "venir",
+  "t": "ae",
+  "p": "tu",
+  "tt": "pres",
+  "e": "Did you come on foot?",
+  "b": "A2"
+ },
+ {
+  "q": "Les enfants ___ (avoir/être) joué dans le jardin tout l'après-midi.",
+  "v": "jouer",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "e": "The children played in the garden all afternoon.",
+  "b": "A2"
+ },
+ {
+  "q": "Ce matin, il ___ (avoir/être) pris le train pour Lyon.",
+  "v": "prendre",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "This morning, he took the train to Lyon.",
+  "b": "A2"
+ },
+ {
+  "q": "L'été dernier, nous ___ (avoir/être) restés deux semaines en Corse.",
+  "v": "rester",
+  "t": "ae",
+  "p": "nous",
+  "tt": "pres",
+  "e": "Last summer, we stayed two weeks in Corsica.",
+  "b": "A2"
+ },
+ {
+  "q": "Mon grand-père ___ (avoir/être) né en 1940.",
+  "v": "naître",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "My grandfather was born in 1940.",
+  "b": "B1"
+ },
+ {
+  "q": "Elles ___ (avoir/être) tombées dans l'escalier.",
+  "v": "tomber",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "e": "They fell on the stairs.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (avoir/être) fait bon voyage ?",
+  "v": "faire",
+  "t": "ae",
+  "p": "vous",
+  "tt": "pres",
+  "e": "Did you have a good trip?",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, il ___ (avoir/être) plu toute la journée.",
+  "v": "pleuvoir",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "Yesterday, it rained all day.",
+  "b": "B1"
+ },
+ {
+  "q": "Tu ___ (avoir/être) été malade la semaine dernière ?",
+  "v": "être",
+  "t": "ae",
+  "p": "tu",
+  "tt": "pres",
+  "e": "Were you ill last week?",
+  "b": "A2"
+ },
+ {
+  "q": "Elle ___ (avoir/être) eu de la chance au loto.",
+  "v": "avoir",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "She was lucky in the lottery.",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ___ (avoir/être) devenus amis à l'école.",
+  "v": "devenir",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "e": "They became friends at school.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (avoir/être) entrés dans le musée à dix heures.",
+  "v": "entrer",
+  "t": "ae",
+  "p": "nous",
+  "tt": "pres",
+  "e": "We went into the museum at ten.",
+  "b": "A2"
+ },
+ {
+  "q": "Le chat ___ (avoir/être) mort l'hiver dernier.",
+  "v": "mourir",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "The cat died last winter.",
+  "b": "A2"
+ },
+ {
+  "q": "Mes amis ___ (avoir/être) revenus de Grèce hier.",
+  "v": "revenir",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "e": "My friends came back from Greece yesterday.",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, Pierre ___ (avoir/être) monté les valises au grenier.",
+  "v": "monter",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "aux": "a",
+  "e": "Yesterday, Pierre carried the suitcases up to the attic.",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, Pierre ___ (avoir/être) monté au grenier.",
+  "v": "monter",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "aux": "e",
+  "e": "Yesterday, Pierre went up to the attic.",
+  "b": "A2"
+ },
+ {
+  "q": "Elle ___ (avoir/être) descendu la poubelle ce matin.",
+  "v": "descendre",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "aux": "a",
+  "e": "She took the rubbish down this morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Elle ___ (avoir/être) descendue à la cave.",
+  "v": "descendre",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "aux": "e",
+  "e": "She went down to the cellar.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (avoir/être) sorti le chien ce matin ?",
+  "v": "sortir",
+  "t": "ae",
+  "p": "tu",
+  "tt": "pres",
+  "aux": "a",
+  "e": "Did you take the dog out this morning?",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (avoir/être) sortie avec qui hier soir, Julie ?",
+  "v": "sortir",
+  "t": "ae",
+  "p": "tu",
+  "tt": "pres",
+  "aux": "e",
+  "e": "Who did you go out with last night, Julie?",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ___ (avoir/être) rentré les chaises avant l'orage.",
+  "v": "rentrer",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "aux": "a",
+  "e": "They brought the chairs in before the storm.",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ___ (avoir/être) rentrés très tard hier soir.",
+  "v": "rentrer",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "aux": "e",
+  "e": "They came home very late last night.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (avoir/être) passé une semaine magnifique à Nice.",
+  "v": "passer",
+  "t": "ae",
+  "p": "nous",
+  "tt": "pres",
+  "aux": "a",
+  "e": "We spent a wonderful week in Nice.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (avoir/être) passés chez toi, mais tu n'étais pas là.",
+  "v": "passer",
+  "t": "ae",
+  "p": "nous",
+  "tt": "pres",
+  "aux": "e",
+  "e": "We came by your place, but you weren't there.",
+  "b": "A2"
+ },
+ {
+  "q": "Il ___ (avoir/être) retourné la crêpe d'un seul coup.",
+  "v": "retourner",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "aux": "a",
+  "e": "He flipped the pancake in one go.",
+  "b": "A2"
+ },
+ {
+  "q": "Elle ___ (avoir/être) retournée dans son village natal.",
+  "v": "retourner",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "aux": "e",
+  "e": "She went back to her home village.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (avoir/être) monté l'escalier en courant ?",
+  "v": "monter",
+  "t": "ae",
+  "p": "vous",
+  "tt": "pres",
+  "aux": "a",
+  "e": "Did you run up the stairs?",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (avoir/être) montés à la tour Eiffel ?",
+  "v": "monter",
+  "t": "ae",
+  "p": "vous",
+  "tt": "pres",
+  "aux": "e",
+  "e": "Did you go up the Eiffel Tower?",
+  "b": "A2"
+ },
+ {
+  "q": "Le livreur ___ (avoir/être) passé ce matin.",
+  "v": "passer",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "aux": "e",
+  "e": "The delivery man came by this morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Mon père ___ (avoir/être) passé son permis à quarante ans.",
+  "v": "passer",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "aux": "a",
+  "e": "My father took his driving test at forty.",
+  "b": "A2"
+ },
+ {
+  "q": "Les déménageurs ___ (avoir/être) descendu le piano.",
+  "v": "descendre",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "aux": "a",
+  "e": "The removal men brought the piano down.",
+  "b": "A2"
+ },
+ {
+  "q": "Les touristes ___ (avoir/être) descendus du bus.",
+  "v": "descendre",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "aux": "e",
+  "e": "The tourists got off the bus.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (avoir/être) rentré le linge ?",
+  "v": "rentrer",
+  "t": "ae",
+  "p": "tu",
+  "tt": "pres",
+  "aux": "a",
+  "e": "Have you brought the washing in?",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, Hugo ___ (avoir/être) sorti de l'hôpital.",
+  "v": "sortir",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "aux": "e",
+  "e": "Yesterday, Hugo came out of hospital.",
+  "b": "A2"
+ },
+ {
+  "q": "Ce matin, elle s'___ (avoir/être) levée à six heures.",
+  "v": "se lever",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "This morning, she got up at six.",
+  "b": "B1"
+ },
+ {
+  "q": "Il s'___ (avoir/être) couché après minuit.",
+  "v": "se coucher",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "He went to bed after midnight.",
+  "b": "B1"
+ },
+ {
+  "q": "Tu t'___ (avoir/être) trompé de rue ?",
+  "v": "se tromper",
+  "t": "ae",
+  "p": "tu",
+  "tt": "pres",
+  "e": "Did you get the wrong street?",
+  "b": "B1"
+ },
+ {
+  "q": "Nous nous ___ (avoir/être) rencontrés à Paris.",
+  "v": "se rencontrer",
+  "t": "ae",
+  "p": "nous",
+  "tt": "pres",
+  "e": "We met in Paris.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous vous ___ (avoir/être) bien amusés à la fête ?",
+  "v": "s'amuser",
+  "t": "ae",
+  "p": "vous",
+  "tt": "pres",
+  "e": "Did you have a good time at the party?",
+  "b": "B1"
+ },
+ {
+  "q": "Hier, Léa s'___ (avoir/être) disputée avec sa sœur.",
+  "v": "se disputer",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "Yesterday, Léa argued with her sister.",
+  "b": "B1"
+ },
+ {
+  "q": "Il s'___ (avoir/être) marié l'année dernière.",
+  "v": "se marier",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "He got married last year.",
+  "b": "B1"
+ },
+ {
+  "q": "Tu t'___ (avoir/être) réveillée tard ce matin ?",
+  "v": "se réveiller",
+  "t": "ae",
+  "p": "tu",
+  "tt": "pres",
+  "e": "Did you wake up late this morning?",
+  "b": "B1"
+ },
+ {
+  "q": "Nous nous ___ (avoir/être) baignés dans le lac.",
+  "v": "se baigner",
+  "t": "ae",
+  "p": "nous",
+  "tt": "pres",
+  "e": "We swam in the lake.",
+  "b": "B1"
+ },
+ {
+  "q": "Vous vous ___ (avoir/être) reposés pendant les vacances ?",
+  "v": "se reposer",
+  "t": "ae",
+  "p": "vous",
+  "tt": "pres",
+  "e": "Did you rest during the holidays?",
+  "b": "B1"
+ },
+ {
+  "q": "Ce matin, mon fils s'___ (avoir/être) habillé tout seul.",
+  "v": "s'habiller",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "This morning, my son got dressed by himself.",
+  "b": "B1"
+ },
+ {
+  "q": "La voiture s'___ (avoir/être) arrêtée devant l'école.",
+  "v": "s'arrêter",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "The car stopped outside the school.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu t'___ (avoir/être) dépêché pour rien.",
+  "v": "se dépêcher",
+  "t": "ae",
+  "p": "tu",
+  "tt": "pres",
+  "e": "You hurried for nothing.",
+  "b": "B1"
+ },
+ {
+  "q": "Elle s'___ (avoir/être) assise près de la fenêtre.",
+  "v": "s'asseoir",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "She sat down by the window.",
+  "b": "B1"
+ },
+ {
+  "q": "Nous nous ___ (avoir/être) promenés au bord de la Seine.",
+  "v": "se promener",
+  "t": "ae",
+  "p": "nous",
+  "tt": "pres",
+  "e": "We walked along the Seine.",
+  "b": "B1"
+ },
+ {
+  "q": "Hier soir, il s'___ (avoir/être) ennuyé à la fête.",
+  "v": "s'ennuyer",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "Last night, he was bored at the party.",
+  "b": "B1"
+ },
+ {
+  "q": "Vous vous ___ (avoir/être) préparés pour l'examen ?",
+  "v": "se préparer",
+  "t": "ae",
+  "p": "vous",
+  "tt": "pres",
+  "e": "Did you get ready for the exam?",
+  "b": "B1"
+ },
+ {
+  "q": "Mon grand-père s'___ (avoir/être) souvenu de mon prénom.",
+  "v": "se souvenir",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "My grandfather remembered my name.",
+  "b": "B1"
+ },
+ {
+  "q": "Hier, ils ___ (avoir/être) acheté une nouvelle voiture.",
+  "v": "acheter",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "e": "Yesterday, they bought a new car.",
+  "b": "A2"
+ },
+ {
+  "q": "Il ___ (avoir/être) dormi dix heures cette nuit.",
+  "v": "dormir",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "He slept ten hours last night.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (avoir/être) lu le journal ce matin ?",
+  "v": "lire",
+  "t": "ae",
+  "p": "tu",
+  "tt": "pres",
+  "e": "Did you read the paper this morning?",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, nous ___ (avoir/être) marché jusqu'au port.",
+  "v": "marcher",
+  "t": "ae",
+  "p": "nous",
+  "tt": "pres",
+  "e": "Yesterday, we walked to the harbour.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (avoir/être) partis à quelle heure ?",
+  "v": "partir",
+  "t": "ae",
+  "p": "vous",
+  "tt": "pres",
+  "e": "What time did you leave?",
+  "b": "A2"
+ },
+ {
+  "q": "Le train ___ (avoir/être) parti sans nous.",
+  "v": "partir",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "The train left without us.",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ___ (avoir/être) couru pour attraper le bus.",
+  "v": "courir",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "e": "They ran to catch the bus.",
+  "b": "A2"
+ },
+ {
+  "q": "Elle ___ (avoir/être) écrit une lettre à son grand-père.",
+  "v": "écrire",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "She wrote a letter to her grandfather.",
+  "b": "A2"
+ },
+ {
+  "q": "Mes cousines ___ (avoir/être) venues pour Noël.",
+  "v": "venir",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "e": "My cousins came for Christmas.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (avoir/être) vécu trois ans au Canada.",
+  "v": "vivre",
+  "t": "ae",
+  "p": "nous",
+  "tt": "pres",
+  "e": "We lived in Canada for three years.",
+  "b": "A2"
+ },
+ {
+  "q": "Il ___ (avoir/être) resté au lit toute la journée.",
+  "v": "rester",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "He stayed in bed all day.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (avoir/être) allée chez le médecin, Sophie ?",
+  "v": "aller",
+  "t": "ae",
+  "p": "tu",
+  "tt": "pres",
+  "e": "Did you go to the doctor's, Sophie?",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, il ___ (avoir/être) fait très beau.",
+  "v": "faire",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "Yesterday, the weather was lovely.",
+  "b": "A2"
+ },
+ {
+  "q": "Elles ___ (avoir/être) entrées sans frapper.",
+  "v": "entrer",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "e": "They came in without knocking.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (avoir/être) compris la question ?",
+  "v": "comprendre",
+  "t": "ae",
+  "p": "vous",
+  "tt": "pres",
+  "e": "Did you understand the question?",
+  "b": "A2"
+ },
+ {
+  "q": "Ma fille ___ (avoir/être) tombée de son vélo.",
+  "v": "tomber",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "My daughter fell off her bike.",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ___ (avoir/être) voyagé en train de nuit.",
+  "v": "voyager",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "e": "They travelled by night train.",
+  "b": "B1"
+ },
+ {
+  "q": "Mon voisin ___ (avoir/être) arrivé hier de Montréal.",
+  "v": "arriver",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "My neighbour arrived from Montreal yesterday.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (avoir/être) attendu le bus pendant une heure.",
+  "v": "attendre",
+  "t": "ae",
+  "p": "nous",
+  "tt": "pres",
+  "e": "We waited for the bus for an hour.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (avoir/être) devenu très grand !",
+  "v": "devenir",
+  "t": "ae",
+  "p": "tu",
+  "tt": "pres",
+  "e": "You've grown very tall!",
+  "b": "A2"
+ },
+ {
+  "q": "Le bébé ___ (avoir/être) né à minuit.",
+  "v": "naître",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "The baby was born at midnight.",
+  "b": "B1"
+ },
+ {
+  "q": "Ils ___ (avoir/être) perdu leurs clés.",
+  "v": "perdre",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "e": "They lost their keys.",
+  "b": "A2"
+ },
+ {
+  "q": "L'année dernière, ma tante ___ (avoir/être) morte.",
+  "v": "mourir",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "Last year, my aunt died.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (avoir/être) revenus quand de Londres ?",
+  "v": "revenir",
+  "t": "ae",
+  "p": "vous",
+  "tt": "pres",
+  "e": "When did you come back from London?",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, Nicolas ___ (avoir/être) venu sans sa femme.",
+  "v": "venir",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "Yesterday, Nicolas came without his wife.",
+  "b": "A2"
+ },
+ {
+  "q": "Elle ___ (avoir/être) choisi la robe rouge.",
+  "v": "choisir",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "She chose the red dress.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (avoir/être) arrivés en retard au concert.",
+  "v": "arriver",
+  "t": "ae",
+  "p": "nous",
+  "tt": "pres",
+  "e": "We arrived late at the concert.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (avoir/être) téléphoné à tes parents ?",
+  "v": "téléphoner",
+  "t": "ae",
+  "p": "tu",
+  "tt": "pres",
+  "e": "Did you phone your parents?",
+  "b": "B1"
+ },
+ {
+  "q": "Les élèves ___ (avoir/être) sortis dans la cour.",
+  "v": "sortir",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "aux": "e",
+  "e": "The pupils went out into the playground.",
+  "b": "A2"
+ },
+ {
+  "q": "Elle ___ (avoir/être) sorti son portable de son sac.",
+  "v": "sortir",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "aux": "a",
+  "e": "She took her mobile out of her bag.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (avoir/être) monté les courses au cinquième étage.",
+  "v": "monter",
+  "t": "ae",
+  "p": "nous",
+  "tt": "pres",
+  "aux": "a",
+  "e": "We carried the shopping up to the fifth floor.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (avoir/être) descendu les escaliers trop vite.",
+  "v": "descendre",
+  "t": "ae",
+  "p": "tu",
+  "tt": "pres",
+  "aux": "a",
+  "e": "You came down the stairs too fast.",
+  "b": "A2"
+ },
+ {
+  "q": "Le prix de l'essence ___ (avoir/être) monté cette année.",
+  "v": "monter",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "aux": "e",
+  "e": "The price of petrol went up this year.",
+  "b": "A2"
+ },
+ {
+  "q": "Elle ___ (avoir/être) rentré la voiture dans le garage.",
+  "v": "rentrer",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "aux": "a",
+  "e": "She put the car in the garage.",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ___ (avoir/être) passé la soirée chez nous.",
+  "v": "passer",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "aux": "a",
+  "e": "They spent the evening at our place.",
+  "b": "A2"
+ },
+ {
+  "q": "Le bus ___ (avoir/être) passé devant chez moi sans s'arrêter.",
+  "v": "passer",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "aux": "e",
+  "e": "The bus went past my house without stopping.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (avoir/être) retourné la carte ?",
+  "v": "retourner",
+  "t": "ae",
+  "p": "vous",
+  "tt": "pres",
+  "aux": "a",
+  "e": "Did you turn the card over?",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ___ (avoir/être) retournés en Italie l'été dernier.",
+  "v": "retourner",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "aux": "e",
+  "e": "They went back to Italy last summer.",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, Max ___ (avoir/être) sorti la poubelle.",
+  "v": "sortir",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "aux": "a",
+  "e": "Yesterday, Max took the bin out.",
+  "b": "A2"
+ },
+ {
+  "q": "Nos voisins ___ (avoir/être) sortis dîner hier soir.",
+  "v": "sortir",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "aux": "e",
+  "e": "Our neighbours went out to dinner last night.",
+  "b": "A2"
+ },
+ {
+  "q": "Elle ___ (avoir/être) passé trois ans en Chine.",
+  "v": "passer",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "aux": "a",
+  "e": "She spent three years in China.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (avoir/être) passé une bonne journée ?",
+  "v": "passer",
+  "t": "ae",
+  "p": "tu",
+  "tt": "pres",
+  "aux": "a",
+  "e": "Did you have a good day?",
+  "b": "A2"
+ },
+ {
+  "q": "Ce matin, il ___ (avoir/être) descendu au café du coin.",
+  "v": "descendre",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "aux": "e",
+  "e": "This morning, he went down to the corner café.",
+  "b": "A2"
+ },
+ {
+  "q": "Mon frère ___ (avoir/être) monté une petite entreprise.",
+  "v": "monter",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "aux": "a",
+  "e": "My brother set up a small business.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand je suis arrivé, le film ___ (avoir/être) déjà commencé.",
+  "v": "commencer",
+  "t": "ae",
+  "p": "il",
+  "tt": "imp",
+  "e": "When I arrived, the film had already started.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand nous sommes arrivés, elle ___ (avoir/être) déjà partie.",
+  "v": "partir",
+  "t": "ae",
+  "p": "il",
+  "tt": "imp",
+  "e": "When we arrived, she had already left.",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ___ (avoir/être) déjà mangé quand on a sonné.",
+  "v": "manger",
+  "t": "ae",
+  "p": "ils",
+  "tt": "imp",
+  "e": "They had already eaten when we rang.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (avoir/être) déjà vu ce film quand on est allés au cinéma ?",
+  "v": "voir",
+  "t": "ae",
+  "p": "tu",
+  "tt": "imp",
+  "e": "Had you already seen this film when we went to the cinema?",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (avoir/être) déjà fini quand le patron est arrivé.",
+  "v": "finir",
+  "t": "ae",
+  "p": "nous",
+  "tt": "imp",
+  "e": "We had already finished when the boss arrived.",
+  "b": "A2"
+ },
+ {
+  "q": "Le train ___ (avoir/être) déjà parti quand nous sommes arrivés à la gare.",
+  "v": "partir",
+  "t": "ae",
+  "p": "il",
+  "tt": "imp",
+  "e": "The train had already left when we got to the station.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (avoir/être) déjà visité Paris avant ce voyage ?",
+  "v": "visiter",
+  "t": "ae",
+  "p": "vous",
+  "tt": "imp",
+  "e": "Had you already visited Paris before this trip?",
+  "b": "B1"
+ },
+ {
+  "q": "Mes amis ___ (avoir/être) déjà rentrés quand j'ai appelé.",
+  "v": "rentrer",
+  "t": "ae",
+  "p": "ils",
+  "tt": "imp",
+  "e": "My friends had already gone home when I called.",
+  "b": "A2"
+ },
+ {
+  "q": "Elle m'a dit qu'elle ___ (avoir/être) perdu ses clés.",
+  "v": "perdre",
+  "t": "ae",
+  "p": "il",
+  "tt": "imp",
+  "e": "She told me she had lost her keys.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu m'as dit que tu ___ (avoir/être) déjà lu ce livre.",
+  "v": "lire",
+  "t": "ae",
+  "p": "tu",
+  "tt": "imp",
+  "e": "You told me you had already read this book.",
+  "b": "A2"
+ },
+ {
+  "q": "Paul était triste parce que son chien ___ (avoir/être) mort.",
+  "v": "mourir",
+  "t": "ae",
+  "p": "il",
+  "tt": "imp",
+  "e": "Paul was sad because his dog had died.",
+  "b": "A2"
+ },
+ {
+  "q": "Elles ___ (avoir/être) déjà parties quand la pluie a commencé.",
+  "v": "partir",
+  "t": "ae",
+  "p": "ils",
+  "tt": "imp",
+  "e": "They had already left when the rain started.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (avoir/être) déjà vendu la maison l'année d'avant.",
+  "v": "vendre",
+  "t": "ae",
+  "p": "nous",
+  "tt": "imp",
+  "e": "We had already sold the house the year before.",
+  "b": "A2"
+ },
+ {
+  "q": "Il m'a raconté qu'il ___ (avoir/être) tombé dans la rue.",
+  "v": "tomber",
+  "t": "ae",
+  "p": "il",
+  "tt": "imp",
+  "e": "He told me he had fallen in the street.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (avoir/être) déjà mangé quand nous sommes passés ?",
+  "v": "manger",
+  "t": "ae",
+  "p": "vous",
+  "tt": "imp",
+  "e": "Had you already eaten when we came by?",
+  "b": "A2"
+ },
+ {
+  "q": "Quand je l'ai vue, elle ___ (avoir/être) beaucoup changé.",
+  "v": "changer",
+  "t": "ae",
+  "p": "il",
+  "tt": "imp",
+  "e": "When I saw her, she had changed a lot.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand je les ai vus, ils ___ (avoir/être) arrivés la veille.",
+  "v": "arriver",
+  "t": "ae",
+  "p": "ils",
+  "tt": "imp",
+  "e": "When I saw them, they had arrived the day before.",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, elle était fatiguée parce qu'elle ___ (avoir/être) mal dormi.",
+  "v": "dormir",
+  "t": "ae",
+  "p": "il",
+  "tt": "imp",
+  "e": "Yesterday, she was tired because she had slept badly.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (avoir/être) déjà parti quand je suis arrivé.",
+  "v": "partir",
+  "t": "ae",
+  "p": "tu",
+  "tt": "imp",
+  "e": "You had already left when I arrived.",
+  "b": "A2"
+ },
+ {
+  "q": "Elle s'___ (avoir/être) déjà couchée quand j'ai téléphoné.",
+  "v": "se coucher",
+  "t": "ae",
+  "p": "il",
+  "tt": "imp",
+  "e": "She had already gone to bed when I phoned.",
+  "b": "B1"
+ },
+ {
+  "q": "Nous nous ___ (avoir/être) rencontrés deux ans plus tôt.",
+  "v": "se rencontrer",
+  "t": "ae",
+  "p": "nous",
+  "tt": "imp",
+  "e": "We had met two years earlier.",
+  "b": "A2"
+ },
+ {
+  "q": "Il ___ (avoir/être) déjà monté les valises quand le taxi est arrivé.",
+  "v": "monter",
+  "t": "ae",
+  "p": "il",
+  "tt": "imp",
+  "aux": "a",
+  "e": "He had already carried the bags up when the taxi arrived.",
+  "b": "A2"
+ },
+ {
+  "q": "Ma mère ___ (avoir/être) déjà sortie quand je suis rentré.",
+  "v": "sortir",
+  "t": "ae",
+  "p": "il",
+  "tt": "imp",
+  "aux": "e",
+  "e": "My mother had already gone out when I got home.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand la police est arrivée, les voleurs ___ (avoir/être) déjà sortis.",
+  "v": "sortir",
+  "t": "ae",
+  "p": "ils",
+  "tt": "imp",
+  "aux": "e",
+  "e": "When the police arrived, the thieves had already left.",
+  "b": "A2"
+ },
+ {
+  "q": "À notre arrivée, le soleil ___ (avoir/être) déjà disparu.",
+  "v": "disparaître",
+  "t": "ae",
+  "p": "il",
+  "tt": "imp",
+  "e": "When we arrived, the sun had already disappeared.",
+  "b": "B1"
+ },
+ {
+  "q": "Hier, mon chef ___ (avoir/être) refusé mes vacances.",
+  "v": "refuser",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "Yesterday, my boss refused my holiday.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (avoir/être) invité tous nos amis.",
+  "v": "inviter",
+  "t": "ae",
+  "p": "nous",
+  "tt": "pres",
+  "e": "We invited all our friends.",
+  "b": "B1"
+ },
+ {
+  "q": "Tu ___ (avoir/être) oublié ton parapluie.",
+  "v": "oublier",
+  "t": "ae",
+  "p": "tu",
+  "tt": "pres",
+  "e": "You forgot your umbrella.",
+  "b": "A2"
+ },
+ {
+  "q": "Mes parents ___ (avoir/être) allés en Bretagne.",
+  "v": "aller",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "e": "My parents went to Brittany.",
+  "b": "A2"
+ },
+ {
+  "q": "Il ___ (avoir/être) entré dans la boutique.",
+  "v": "entrer",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "He went into the shop.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (avoir/être) restés combien de temps ?",
+  "v": "rester",
+  "t": "ae",
+  "p": "vous",
+  "tt": "pres",
+  "e": "How long did you stay?",
+  "b": "A2"
+ },
+ {
+  "q": "Elle ___ (avoir/être) devenue avocate.",
+  "v": "devenir",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "She became a lawyer.",
+  "b": "A2"
+ },
+ {
+  "q": "Les invités ___ (avoir/être) apporté des fleurs.",
+  "v": "apporter",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "e": "The guests brought flowers.",
+  "b": "A2"
+ },
+ {
+  "q": "Le chien ___ (avoir/être) tombé dans la piscine.",
+  "v": "tomber",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "The dog fell into the pool.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (avoir/être) arrivée quand, Claire ?",
+  "v": "arriver",
+  "t": "ae",
+  "p": "tu",
+  "tt": "pres",
+  "e": "When did you arrive, Claire?",
+  "b": "A2"
+ },
+ {
+  "q": "Ce matin, il ___ (avoir/être) reçu un colis.",
+  "v": "recevoir",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "This morning, he received a parcel.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (avoir/être) partis sans dire au revoir.",
+  "v": "partir",
+  "t": "ae",
+  "p": "nous",
+  "tt": "pres",
+  "e": "We left without saying goodbye.",
+  "b": "A2"
+ },
+ {
+  "q": "Elles ___ (avoir/être) chanté toute la soirée.",
+  "v": "chanter",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "e": "They sang all evening.",
+  "b": "A2"
+ },
+ {
+  "q": "Mon fils ___ (avoir/être) appris à nager cet été.",
+  "v": "apprendre",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "My son learned to swim this summer.",
+  "b": "A2"
+ },
+ {
+  "q": "Vous ___ (avoir/être) venus en voiture ?",
+  "v": "venir",
+  "t": "ae",
+  "p": "vous",
+  "tt": "pres",
+  "e": "Did you come by car?",
+  "b": "A2"
+ },
+ {
+  "q": "Elle ___ (avoir/être) restée chez elle tout le week-end.",
+  "v": "rester",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "She stayed at home all weekend.",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ___ (avoir/être) ouvert un restaurant à Lyon.",
+  "v": "ouvrir",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "e": "They opened a restaurant in Lyon.",
+  "b": "A2"
+ },
+ {
+  "q": "Hier, mon oncle ___ (avoir/être) revenu de l'armée.",
+  "v": "revenir",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "Yesterday, my uncle came back from the army.",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (avoir/être) pu dormir dans le train ?",
+  "v": "pouvoir",
+  "t": "ae",
+  "p": "tu",
+  "tt": "pres",
+  "e": "Were you able to sleep on the train?",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (avoir/être) dû partir plus tôt.",
+  "v": "devoir",
+  "t": "ae",
+  "p": "nous",
+  "tt": "pres",
+  "e": "We had to leave earlier.",
+  "b": "A2"
+ },
+ {
+  "q": "Elle ___ (avoir/être) voulu venir avec nous.",
+  "v": "vouloir",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "e": "She wanted to come with us.",
+  "b": "A2"
+ },
+ {
+  "q": "L'enfant ___ (avoir/être) descendu tout seul de l'arbre.",
+  "v": "descendre",
+  "t": "ae",
+  "p": "il",
+  "tt": "pres",
+  "aux": "e",
+  "e": "The child climbed down the tree on his own.",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ___ (avoir/être) montés dans le mauvais train.",
+  "v": "monter",
+  "t": "ae",
+  "p": "ils",
+  "tt": "pres",
+  "aux": "e",
+  "e": "They got on the wrong train.",
+  "b": "A2"
+ }
+]

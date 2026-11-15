@@ -1,0 +1,1871 @@
+[
+ {
+  "q": "C'est une ___ (petit) maison.",
+  "n": "maison",
+  "adj": "petit",
+  "t": "adj",
+  "e": "It's a small house.",
+  "b": "A1",
+  "a": "petite"
+ },
+ {
+  "q": "Il a un ___ (petit) chien.",
+  "n": "chien",
+  "adj": "petit",
+  "t": "adj",
+  "e": "He has a little dog.",
+  "b": "A1",
+  "a": "petit"
+ },
+ {
+  "q": "Elle a deux ___ (petit) chats.",
+  "n": "chat",
+  "adj": "petit",
+  "t": "adj",
+  "e": "She has two little cats.",
+  "b": "A2",
+  "a": "petits",
+  "pl": 1
+ },
+ {
+  "q": "Mes ___ (petit) sœurs sont à l'école.",
+  "n": "sœur",
+  "adj": "petit",
+  "t": "adj",
+  "e": "My little sisters are at school.",
+  "b": "A1",
+  "a": "petites",
+  "pl": 1
+ },
+ {
+  "q": "C'est un ___ (grand) appartement.",
+  "n": "appartement",
+  "adj": "grand",
+  "t": "adj",
+  "e": "It's a big flat.",
+  "b": "A2",
+  "a": "grand"
+ },
+ {
+  "q": "Paris est une ___ (grand) ville.",
+  "n": "ville",
+  "adj": "grand",
+  "t": "adj",
+  "e": "Paris is a big city.",
+  "b": "A1",
+  "a": "grande"
+ },
+ {
+  "q": "Les ___ (grand) magasins ferment tard.",
+  "n": "magasin",
+  "adj": "grand",
+  "t": "adj",
+  "e": "The department stores close late.",
+  "b": "A2",
+  "a": "grands",
+  "pl": 1
+ },
+ {
+  "q": "Il y a de ___ (grand) arbres dans le parc.",
+  "n": "arbre",
+  "adj": "grand",
+  "t": "adj",
+  "e": "There are big trees in the park.",
+  "b": "A2",
+  "a": "grands",
+  "pl": 1
+ },
+ {
+  "q": "Elle porte une ___ (joli) robe.",
+  "n": "robe",
+  "adj": "joli",
+  "t": "adj",
+  "e": "She's wearing a pretty dress.",
+  "b": "A2",
+  "a": "jolie"
+ },
+ {
+  "q": "Quel ___ (joli) jardin !",
+  "n": "jardin",
+  "adj": "joli",
+  "t": "adj",
+  "e": "What a pretty garden!",
+  "b": "A2",
+  "a": "joli"
+ },
+ {
+  "q": "Tu as de ___ (joli) yeux.",
+  "n": "œil",
+  "adj": "joli",
+  "t": "adj",
+  "e": "You have pretty eyes.",
+  "b": "A1",
+  "a": "jolis",
+  "pl": 1
+ },
+ {
+  "q": "Elles ont de ___ (joli) voix.",
+  "n": "voix",
+  "adj": "joli",
+  "t": "adj",
+  "e": "They have lovely voices.",
+  "b": "A1",
+  "a": "jolies",
+  "pl": 1
+ },
+ {
+  "q": "C'est un ___ (bon) restaurant.",
+  "n": "restaurant",
+  "adj": "bon",
+  "t": "adj",
+  "e": "It's a good restaurant.",
+  "b": "A2",
+  "a": "bon"
+ },
+ {
+  "q": "C'est une ___ (bon) idée !",
+  "n": "idée",
+  "adj": "bon",
+  "t": "adj",
+  "e": "That's a good idea!",
+  "b": "A1",
+  "a": "bonne"
+ },
+ {
+  "q": "J'ai de ___ (bon) amis.",
+  "n": "ami",
+  "adj": "bon",
+  "t": "adj",
+  "e": "I have good friends.",
+  "b": "A1",
+  "a": "bons",
+  "pl": 1
+ },
+ {
+  "q": "Elle fait de ___ (bon) gâteaux.",
+  "n": "gâteau",
+  "adj": "bon",
+  "t": "adj",
+  "e": "She makes good cakes.",
+  "b": "A2",
+  "a": "bons",
+  "pl": 1
+ },
+ {
+  "q": "On a passé une ___ (bon) soirée.",
+  "n": "soirée",
+  "adj": "bon",
+  "t": "adj",
+  "e": "We had a lovely evening.",
+  "b": "A1",
+  "a": "bonne"
+ },
+ {
+  "q": "Ce sont de ___ (bon) nouvelles.",
+  "n": "nouvelle",
+  "adj": "bon",
+  "t": "adj",
+  "e": "That's good news.",
+  "b": "A2",
+  "a": "bonnes",
+  "pl": 1
+ },
+ {
+  "q": "C'est une ___ (mauvais) idée.",
+  "n": "idée",
+  "adj": "mauvais",
+  "t": "adj",
+  "e": "It's a bad idea.",
+  "b": "A1",
+  "a": "mauvaise"
+ },
+ {
+  "q": "Il a passé une ___ (mauvais) nuit.",
+  "n": "nuit",
+  "adj": "mauvais",
+  "t": "adj",
+  "e": "He had a bad night.",
+  "b": "A1",
+  "a": "mauvaise"
+ },
+ {
+  "q": "C'est un ___ (mauvais) film.",
+  "n": "film",
+  "adj": "mauvais",
+  "t": "adj",
+  "e": "It's a bad film.",
+  "b": "A1",
+  "a": "mauvais"
+ },
+ {
+  "q": "Il a de ___ (mauvais) notes à l'école.",
+  "n": "note",
+  "adj": "mauvais",
+  "t": "adj",
+  "e": "He gets bad marks at school.",
+  "b": "B1",
+  "a": "mauvaises",
+  "pl": 1
+ },
+ {
+  "q": "C'est un ___ (jeune) homme très poli.",
+  "n": "homme",
+  "adj": "jeune",
+  "t": "adj",
+  "e": "He's a very polite young man.",
+  "b": "A1",
+  "a": "jeune"
+ },
+ {
+  "q": "Une ___ (jeune) femme attend le bus.",
+  "n": "femme",
+  "adj": "jeune",
+  "t": "adj",
+  "e": "A young woman is waiting for the bus.",
+  "b": "A1",
+  "a": "jeune"
+ },
+ {
+  "q": "Les ___ (jeune) gens aiment la musique.",
+  "n": "gens",
+  "adj": "jeune",
+  "t": "adj",
+  "e": "Young people like music.",
+  "b": "A1",
+  "a": "jeunes",
+  "pl": 1
+ },
+ {
+  "q": "C'est un ___ (gros) chat.",
+  "n": "chat",
+  "adj": "gros",
+  "t": "adj",
+  "e": "It's a fat cat.",
+  "b": "A2",
+  "a": "gros"
+ },
+ {
+  "q": "Elle a une ___ (gros) valise.",
+  "n": "valise",
+  "adj": "gros",
+  "t": "adj",
+  "e": "She has a big suitcase.",
+  "b": "A2",
+  "a": "grosse"
+ },
+ {
+  "q": "Il y a de ___ (gros) nuages ce soir.",
+  "n": "nuage",
+  "adj": "gros",
+  "t": "adj",
+  "e": "There are big clouds this evening.",
+  "b": "B1",
+  "a": "gros",
+  "pl": 1
+ },
+ {
+  "q": "J'ai fait une ___ (gros) erreur.",
+  "n": "erreur",
+  "adj": "gros",
+  "t": "adj",
+  "e": "I made a big mistake.",
+  "b": "A1",
+  "a": "grosse"
+ },
+ {
+  "q": "C'est une ___ (long) histoire.",
+  "n": "histoire",
+  "adj": "long",
+  "t": "adj",
+  "e": "It's a long story.",
+  "b": "A1",
+  "a": "longue"
+ },
+ {
+  "q": "Ils ont fait un ___ (long) voyage.",
+  "n": "voyage",
+  "adj": "long",
+  "t": "adj",
+  "e": "They went on a long journey.",
+  "b": "A2",
+  "a": "long"
+ },
+ {
+  "q": "Elle a de ___ (long) cheveux.",
+  "n": "cheveu",
+  "adj": "long",
+  "t": "adj",
+  "e": "She has long hair.",
+  "b": "A1",
+  "a": "longs",
+  "pl": 1
+ },
+ {
+  "q": "C'est le ___ (premier) jour des vacances.",
+  "n": "jour",
+  "adj": "premier",
+  "t": "adj",
+  "e": "It's the first day of the holidays.",
+  "b": "A1",
+  "a": "premier"
+ },
+ {
+  "q": "C'est la ___ (premier) fois que je viens ici.",
+  "n": "fois",
+  "adj": "premier",
+  "t": "adj",
+  "e": "It's the first time I've come here.",
+  "b": "A1",
+  "a": "première"
+ },
+ {
+  "q": "C'est la ___ (dernier) semaine du mois.",
+  "n": "semaine",
+  "adj": "dernier",
+  "t": "adj",
+  "e": "It's the last week of the month.",
+  "b": "A1",
+  "a": "dernière"
+ },
+ {
+  "q": "Les ___ (dernier) jours ont été difficiles.",
+  "n": "jour",
+  "adj": "dernier",
+  "t": "adj",
+  "e": "The last few days have been hard.",
+  "b": "A1",
+  "a": "derniers",
+  "pl": 1
+ },
+ {
+  "q": "Prends la ___ (premier) rue à gauche.",
+  "n": "rue",
+  "adj": "premier",
+  "t": "adj",
+  "e": "Take the first street on the left.",
+  "b": "A1",
+  "a": "première"
+ },
+ {
+  "q": "Les ___ (premier) minutes sont difficiles.",
+  "n": "minute",
+  "adj": "premier",
+  "t": "adj",
+  "e": "The first few minutes are hard.",
+  "b": "A1",
+  "a": "premières",
+  "pl": 1
+ },
+ {
+  "q": "C'est un ___ (beau) garçon.",
+  "n": "garçon",
+  "adj": "beau",
+  "t": "adj",
+  "e": "He's a handsome boy.",
+  "b": "A1",
+  "a": "beau"
+ },
+ {
+  "q": "Quel ___ (beau) arbre !",
+  "n": "arbre",
+  "adj": "beau",
+  "t": "adj",
+  "e": "What a beautiful tree!",
+  "b": "A2",
+  "a": "bel"
+ },
+ {
+  "q": "C'est un ___ (beau) homme.",
+  "n": "homme",
+  "adj": "beau",
+  "t": "adj",
+  "e": "He's a handsome man.",
+  "b": "A1",
+  "a": "bel"
+ },
+ {
+  "q": "C'est une ___ (beau) journée.",
+  "n": "journée",
+  "adj": "beau",
+  "t": "adj",
+  "e": "It's a beautiful day.",
+  "b": "A1",
+  "a": "belle"
+ },
+ {
+  "q": "Elle a de ___ (beau) yeux.",
+  "n": "œil",
+  "adj": "beau",
+  "t": "adj",
+  "e": "She has beautiful eyes.",
+  "b": "A1",
+  "a": "beaux",
+  "pl": 1
+ },
+ {
+  "q": "Il y a de ___ (beau) plages en Bretagne.",
+  "n": "plage",
+  "adj": "beau",
+  "t": "adj",
+  "e": "There are beautiful beaches in Brittany.",
+  "b": "A2",
+  "a": "belles",
+  "pl": 1
+ },
+ {
+  "q": "C'est un ___ (beau) appartement.",
+  "n": "appartement",
+  "adj": "beau",
+  "t": "adj",
+  "e": "It's a lovely flat.",
+  "b": "A2",
+  "a": "bel"
+ },
+ {
+  "q": "On a un ___ (beau) jardin.",
+  "n": "jardin",
+  "adj": "beau",
+  "t": "adj",
+  "e": "We have a beautiful garden.",
+  "b": "A2",
+  "a": "beau"
+ },
+ {
+  "q": "Quel ___ (beau) hôtel !",
+  "n": "hôtel",
+  "adj": "beau",
+  "t": "adj",
+  "e": "What a beautiful hotel!",
+  "b": "A1",
+  "a": "bel"
+ },
+ {
+  "q": "Lyon est une ___ (beau) ville.",
+  "n": "ville",
+  "adj": "beau",
+  "t": "adj",
+  "e": "Lyon is a beautiful city.",
+  "b": "A1",
+  "a": "belle"
+ },
+ {
+  "q": "Ce sont de ___ (beau) chaussures.",
+  "n": "chaussure",
+  "adj": "beau",
+  "t": "adj",
+  "e": "Those are lovely shoes.",
+  "b": "A2",
+  "a": "belles",
+  "pl": 1
+ },
+ {
+  "q": "Les ___ (beau) jours arrivent.",
+  "n": "jour",
+  "adj": "beau",
+  "t": "adj",
+  "e": "The fine weather is coming.",
+  "b": "A1",
+  "a": "beaux",
+  "pl": 1
+ },
+ {
+  "q": "C'est un ___ (vieux) ami.",
+  "n": "ami",
+  "adj": "vieux",
+  "t": "adj",
+  "e": "He's an old friend.",
+  "b": "A1",
+  "a": "vieil"
+ },
+ {
+  "q": "Un ___ (vieux) homme lit sur le banc.",
+  "n": "homme",
+  "adj": "vieux",
+  "t": "adj",
+  "e": "An old man is reading on the bench.",
+  "b": "A1",
+  "a": "vieil"
+ },
+ {
+  "q": "Ma grand-mère a une ___ (vieux) voiture.",
+  "n": "voiture",
+  "adj": "vieux",
+  "t": "adj",
+  "e": "My grandmother has an old car.",
+  "b": "A1",
+  "a": "vieille"
+ },
+ {
+  "q": "Il habite dans un ___ (vieux) immeuble.",
+  "n": "immeuble",
+  "adj": "vieux",
+  "t": "adj",
+  "e": "He lives in an old building.",
+  "b": "A2",
+  "a": "vieil"
+ },
+ {
+  "q": "C'est un ___ (vieux) château.",
+  "n": "château",
+  "adj": "vieux",
+  "t": "adj",
+  "e": "It's an old castle.",
+  "b": "B1",
+  "a": "vieux"
+ },
+ {
+  "q": "J'aime les ___ (vieux) films.",
+  "n": "film",
+  "adj": "vieux",
+  "t": "adj",
+  "e": "I like old films.",
+  "b": "A1",
+  "a": "vieux",
+  "pl": 1
+ },
+ {
+  "q": "Elle range ses ___ (vieux) photos.",
+  "n": "photo",
+  "adj": "vieux",
+  "t": "adj",
+  "e": "She's sorting out her old photos.",
+  "b": "A1",
+  "a": "vieilles",
+  "pl": 1
+ },
+ {
+  "q": "C'est une ___ (vieux) histoire.",
+  "n": "histoire",
+  "adj": "vieux",
+  "t": "adj",
+  "e": "It's an old story.",
+  "b": "A1",
+  "a": "vieille"
+ },
+ {
+  "q": "Le ___ (vieux) chien dort au soleil.",
+  "n": "chien",
+  "adj": "vieux",
+  "t": "adj",
+  "e": "The old dog is sleeping in the sun.",
+  "b": "A1",
+  "a": "vieux"
+ },
+ {
+  "q": "Il a un ___ (vieux) ordinateur.",
+  "n": "ordinateur",
+  "adj": "vieux",
+  "t": "adj",
+  "e": "He has an old computer.",
+  "b": "A2",
+  "a": "vieil"
+ },
+ {
+  "q": "Les ___ (vieux) maisons du quartier sont jolies.",
+  "n": "maison",
+  "adj": "vieux",
+  "t": "adj",
+  "e": "The old houses in the area are pretty.",
+  "b": "A1",
+  "a": "vieilles",
+  "pl": 1
+ },
+ {
+  "q": "J'ai un ___ (nouveau) ami.",
+  "n": "ami",
+  "adj": "nouveau",
+  "t": "adj",
+  "e": "I have a new friend.",
+  "b": "A1",
+  "a": "nouvel"
+ },
+ {
+  "q": "Elle a une ___ (nouveau) voiture.",
+  "n": "voiture",
+  "adj": "nouveau",
+  "t": "adj",
+  "e": "She has a new car.",
+  "b": "A1",
+  "a": "nouvelle"
+ },
+ {
+  "q": "On fête le ___ (nouveau) an chez Paul.",
+  "n": "an",
+  "adj": "nouveau",
+  "t": "adj",
+  "e": "We're celebrating New Year at Paul's.",
+  "b": "A1",
+  "a": "nouvel"
+ },
+ {
+  "q": "Il cherche un ___ (nouveau) appartement.",
+  "n": "appartement",
+  "adj": "nouveau",
+  "t": "adj",
+  "e": "He's looking for a new flat.",
+  "b": "A2",
+  "a": "nouvel"
+ },
+ {
+  "q": "Tu as vu le ___ (nouveau) film au cinéma ?",
+  "n": "film",
+  "adj": "nouveau",
+  "t": "adj",
+  "e": "Have you seen the new film at the cinema?",
+  "b": "A1",
+  "a": "nouveau"
+ },
+ {
+  "q": "Il a de ___ (nouveau) chaussures.",
+  "n": "chaussure",
+  "adj": "nouveau",
+  "t": "adj",
+  "e": "He has new shoes.",
+  "b": "A2",
+  "a": "nouvelles",
+  "pl": 1
+ },
+ {
+  "q": "Les ___ (nouveau) étudiants arrivent lundi.",
+  "n": "étudiant",
+  "adj": "nouveau",
+  "t": "adj",
+  "e": "The new students arrive on Monday.",
+  "b": "A2",
+  "a": "nouveaux",
+  "pl": 1
+ },
+ {
+  "q": "J'ai un ___ (nouveau) téléphone.",
+  "n": "téléphone",
+  "adj": "nouveau",
+  "t": "adj",
+  "e": "I have a new phone.",
+  "b": "A1",
+  "a": "nouveau"
+ },
+ {
+  "q": "C'est le ___ (nouveau) hôpital de la ville.",
+  "n": "hôpital",
+  "adj": "nouveau",
+  "t": "adj",
+  "e": "It's the town's new hospital.",
+  "b": "A1",
+  "a": "nouvel"
+ },
+ {
+  "q": "Elle a une ___ (nouveau) idée.",
+  "n": "idée",
+  "adj": "nouveau",
+  "t": "adj",
+  "e": "She has a new idea.",
+  "b": "A1",
+  "a": "nouvelle"
+ },
+ {
+  "q": "Elle porte une robe ___ (blanc).",
+  "n": "robe",
+  "adj": "blanc",
+  "t": "adj",
+  "e": "She's wearing a white dress.",
+  "b": "A2",
+  "a": "blanche"
+ },
+ {
+  "q": "Il a un chat ___ (blanc).",
+  "n": "chat",
+  "adj": "blanc",
+  "t": "adj",
+  "e": "He has a white cat.",
+  "b": "A2",
+  "a": "blanc"
+ },
+ {
+  "q": "J'aime les fleurs ___ (blanc).",
+  "n": "fleur",
+  "adj": "blanc",
+  "t": "adj",
+  "e": "I like white flowers.",
+  "b": "A2",
+  "a": "blanches",
+  "pl": 1
+ },
+ {
+  "q": "Mon grand-père a les cheveux ___ (blanc).",
+  "n": "cheveu",
+  "adj": "blanc",
+  "t": "adj",
+  "e": "My grandfather has white hair.",
+  "b": "A1",
+  "a": "blancs",
+  "pl": 1
+ },
+ {
+  "q": "On boit du vin ___ (blanc) avec le poisson.",
+  "n": "vin",
+  "adj": "blanc",
+  "t": "adj",
+  "e": "We drink white wine with fish.",
+  "b": "A2",
+  "a": "blanc"
+ },
+ {
+  "q": "La maison ___ (blanc) est à vendre.",
+  "n": "maison",
+  "adj": "blanc",
+  "t": "adj",
+  "e": "The white house is for sale.",
+  "b": "A1",
+  "a": "blanche"
+ },
+ {
+  "q": "Elle a les cheveux ___ (noir).",
+  "n": "cheveu",
+  "adj": "noir",
+  "t": "adj",
+  "e": "She has black hair.",
+  "b": "A1",
+  "a": "noirs",
+  "pl": 1
+ },
+ {
+  "q": "Il porte une veste ___ (noir).",
+  "n": "veste",
+  "adj": "noir",
+  "t": "adj",
+  "e": "He's wearing a black jacket.",
+  "b": "A2",
+  "a": "noire"
+ },
+ {
+  "q": "J'ai un chien ___ (noir).",
+  "n": "chien",
+  "adj": "noir",
+  "t": "adj",
+  "e": "I have a black dog.",
+  "b": "A1",
+  "a": "noir"
+ },
+ {
+  "q": "Elle aime les robes ___ (noir).",
+  "n": "robe",
+  "adj": "noir",
+  "t": "adj",
+  "e": "She likes black dresses.",
+  "b": "A2",
+  "a": "noires",
+  "pl": 1
+ },
+ {
+  "q": "Il a une voiture ___ (rouge).",
+  "n": "voiture",
+  "adj": "rouge",
+  "t": "adj",
+  "e": "He has a red car.",
+  "b": "A1",
+  "a": "rouge"
+ },
+ {
+  "q": "J'adore les pommes ___ (rouge).",
+  "n": "pomme",
+  "adj": "rouge",
+  "t": "adj",
+  "e": "I love red apples.",
+  "b": "A2",
+  "a": "rouges",
+  "pl": 1
+ },
+ {
+  "q": "Il a les yeux ___ (bleu).",
+  "n": "œil",
+  "adj": "bleu",
+  "t": "adj",
+  "e": "He has blue eyes.",
+  "b": "A2",
+  "a": "bleus",
+  "pl": 1
+ },
+ {
+  "q": "Elle a une chemise ___ (bleu).",
+  "n": "chemise",
+  "adj": "bleu",
+  "t": "adj",
+  "e": "She has a blue shirt.",
+  "b": "A2",
+  "a": "bleue"
+ },
+ {
+  "q": "La mer est ___ (bleu) aujourd'hui.",
+  "n": "mer",
+  "adj": "bleu",
+  "t": "adj",
+  "e": "The sea is blue today.",
+  "b": "A2",
+  "a": "bleue"
+ },
+ {
+  "q": "Les chaussures ___ (bleu) sont à moi.",
+  "n": "chaussure",
+  "adj": "bleu",
+  "t": "adj",
+  "e": "The blue shoes are mine.",
+  "b": "A2",
+  "a": "bleues",
+  "pl": 1
+ },
+ {
+  "q": "Elle a une robe ___ (vert).",
+  "n": "robe",
+  "adj": "vert",
+  "t": "adj",
+  "e": "She has a green dress.",
+  "b": "A2",
+  "a": "verte"
+ },
+ {
+  "q": "J'aime les yeux ___ (vert).",
+  "n": "œil",
+  "adj": "vert",
+  "t": "adj",
+  "e": "I like green eyes.",
+  "b": "A2",
+  "a": "verts",
+  "pl": 1
+ },
+ {
+  "q": "L'eau est ___ (froid).",
+  "n": "eau",
+  "adj": "froid",
+  "t": "adj",
+  "e": "The water is cold.",
+  "b": "A1",
+  "a": "froide"
+ },
+ {
+  "q": "Je voudrais un café ___ (chaud).",
+  "n": "café",
+  "adj": "chaud",
+  "t": "adj",
+  "e": "I'd like a hot coffee.",
+  "b": "A1",
+  "a": "chaud"
+ },
+ {
+  "q": "La soupe est trop ___ (chaud).",
+  "n": "soupe",
+  "adj": "chaud",
+  "t": "adj",
+  "e": "The soup is too hot.",
+  "b": "B1",
+  "a": "chaude"
+ },
+ {
+  "q": "Les nuits sont ___ (froid) en hiver.",
+  "n": "nuit",
+  "adj": "froid",
+  "t": "adj",
+  "e": "The nights are cold in winter.",
+  "b": "A1",
+  "a": "froides",
+  "pl": 1
+ },
+ {
+  "q": "Elle boit de l'eau ___ (frais).",
+  "n": "eau",
+  "adj": "frais",
+  "t": "adj",
+  "e": "She drinks cool water.",
+  "b": "A2",
+  "a": "fraîche"
+ },
+ {
+  "q": "Le pain est ___ (frais) ce matin.",
+  "n": "pain",
+  "adj": "frais",
+  "t": "adj",
+  "e": "The bread is fresh this morning.",
+  "b": "A2",
+  "a": "frais"
+ },
+ {
+  "q": "On mange des fruits ___ (frais).",
+  "n": "fruit",
+  "adj": "frais",
+  "t": "adj",
+  "e": "We eat fresh fruit.",
+  "b": "A2",
+  "a": "frais",
+  "pl": 1
+ },
+ {
+  "q": "C'est une actrice ___ (français).",
+  "n": "actrice",
+  "adj": "français",
+  "t": "adj",
+  "e": "She's a French actress.",
+  "b": "B1",
+  "a": "française"
+ },
+ {
+  "q": "J'adore la cuisine ___ (français).",
+  "n": "cuisine",
+  "adj": "français",
+  "t": "adj",
+  "e": "I love French cooking.",
+  "b": "A2",
+  "a": "française"
+ },
+ {
+  "q": "Il a des amis ___ (anglais).",
+  "n": "ami",
+  "adj": "anglais",
+  "t": "adj",
+  "e": "He has English friends.",
+  "b": "A2",
+  "a": "anglais",
+  "pl": 1
+ },
+ {
+  "q": "C'est une voiture ___ (américain).",
+  "n": "voiture",
+  "adj": "américain",
+  "t": "adj",
+  "e": "It's an American car.",
+  "b": "A1",
+  "a": "américaine"
+ },
+ {
+  "q": "Les vins ___ (français) sont célèbres.",
+  "n": "vin",
+  "adj": "français",
+  "t": "adj",
+  "e": "French wines are famous.",
+  "b": "A2",
+  "a": "français",
+  "pl": 1
+ },
+ {
+  "q": "Mon père est ___ (anglais).",
+  "n": "père",
+  "adj": "anglais",
+  "t": "adj",
+  "e": "My father is English.",
+  "b": "A2",
+  "a": "anglais"
+ },
+ {
+  "q": "Ma mère est ___ (anglais).",
+  "n": "mère",
+  "adj": "anglais",
+  "t": "adj",
+  "e": "My mother is English.",
+  "b": "A2",
+  "a": "anglaise"
+ },
+ {
+  "q": "Ma sœur est très ___ (heureux).",
+  "n": "sœur",
+  "adj": "heureux",
+  "t": "adj",
+  "e": "My sister is very happy.",
+  "b": "A1",
+  "a": "heureuse"
+ },
+ {
+  "q": "Mes parents sont ___ (heureux).",
+  "n": "parent",
+  "adj": "heureux",
+  "t": "adj",
+  "e": "My parents are happy.",
+  "b": "A1",
+  "a": "heureux",
+  "pl": 1
+ },
+ {
+  "q": "Mes tantes sont ___ (heureux) ici.",
+  "n": "tante",
+  "adj": "heureux",
+  "t": "adj",
+  "e": "My aunts are happy here.",
+  "b": "A2",
+  "a": "heureuses",
+  "pl": 1
+ },
+ {
+  "q": "C'est une fille très ___ (sérieux).",
+  "n": "fille",
+  "adj": "sérieux",
+  "t": "adj",
+  "e": "She's a very serious girl.",
+  "b": "A1",
+  "a": "sérieuse"
+ },
+ {
+  "q": "C'est une question ___ (sérieux).",
+  "n": "question",
+  "adj": "sérieux",
+  "t": "adj",
+  "e": "It's a serious question.",
+  "b": "A1",
+  "a": "sérieuse"
+ },
+ {
+  "q": "Mon frère est très ___ (sérieux).",
+  "n": "frère",
+  "adj": "sérieux",
+  "t": "adj",
+  "e": "My brother is very serious.",
+  "b": "A1",
+  "a": "sérieux"
+ },
+ {
+  "q": "Cette rue est ___ (dangereux) la nuit.",
+  "n": "rue",
+  "adj": "dangereux",
+  "t": "adj",
+  "e": "This street is dangerous at night.",
+  "b": "A1",
+  "a": "dangereuse"
+ },
+ {
+  "q": "Ces animaux sont ___ (dangereux).",
+  "n": "animal",
+  "adj": "dangereux",
+  "t": "adj",
+  "e": "These animals are dangerous.",
+  "b": "A2",
+  "a": "dangereux",
+  "pl": 1
+ },
+ {
+  "q": "La soupe est ___ (délicieux).",
+  "n": "soupe",
+  "adj": "délicieux",
+  "t": "adj",
+  "e": "The soup is delicious.",
+  "b": "B1",
+  "a": "délicieuse"
+ },
+ {
+  "q": "Tes gâteaux sont ___ (délicieux).",
+  "n": "gâteau",
+  "adj": "délicieux",
+  "t": "adj",
+  "e": "Your cakes are delicious.",
+  "b": "A2",
+  "a": "délicieux",
+  "pl": 1
+ },
+ {
+  "q": "Ma fille est très ___ (curieux).",
+  "n": "fille",
+  "adj": "curieux",
+  "t": "adj",
+  "e": "My daughter is very curious.",
+  "b": "A2",
+  "a": "curieuse"
+ },
+ {
+  "q": "Ma mère est ___ (inquiet).",
+  "n": "mère",
+  "adj": "inquiet",
+  "t": "adj",
+  "e": "My mother is worried.",
+  "b": "A2",
+  "a": "inquiète"
+ },
+ {
+  "q": "Ses parents sont ___ (inquiet).",
+  "n": "parent",
+  "adj": "inquiet",
+  "t": "adj",
+  "e": "His parents are worried.",
+  "b": "A2",
+  "a": "inquiets",
+  "pl": 1
+ },
+ {
+  "q": "Ta sœur est très ___ (gentil).",
+  "n": "sœur",
+  "adj": "gentil",
+  "t": "adj",
+  "e": "Your sister is very kind.",
+  "b": "A1",
+  "a": "gentille"
+ },
+ {
+  "q": "Tes amis sont très ___ (gentil).",
+  "n": "ami",
+  "adj": "gentil",
+  "t": "adj",
+  "e": "Your friends are very nice.",
+  "b": "A1",
+  "a": "gentils",
+  "pl": 1
+ },
+ {
+  "q": "Les filles sont ___ (gentil) avec lui.",
+  "n": "fille",
+  "adj": "gentil",
+  "t": "adj",
+  "e": "The girls are kind to him.",
+  "b": "A1",
+  "a": "gentilles",
+  "pl": 1
+ },
+ {
+  "q": "Cette robe est trop ___ (cher).",
+  "n": "robe",
+  "adj": "cher",
+  "t": "adj",
+  "e": "This dress is too expensive.",
+  "b": "A2",
+  "a": "chère"
+ },
+ {
+  "q": "Les hôtels sont ___ (cher) à Paris.",
+  "n": "hôtel",
+  "adj": "cher",
+  "t": "adj",
+  "e": "Hotels are expensive in Paris.",
+  "b": "A1",
+  "a": "chers",
+  "pl": 1
+ },
+ {
+  "q": "C'est un restaurant très ___ (cher).",
+  "n": "restaurant",
+  "adj": "cher",
+  "t": "adj",
+  "e": "It's a very expensive restaurant.",
+  "b": "A2",
+  "a": "cher"
+ },
+ {
+  "q": "C'est une idée ___ (fou) !",
+  "n": "idée",
+  "adj": "fou",
+  "t": "adj",
+  "e": "It's a crazy idea!",
+  "b": "A1",
+  "a": "folle"
+ },
+ {
+  "q": "Le chat est très ___ (doux).",
+  "n": "chat",
+  "adj": "doux",
+  "t": "adj",
+  "e": "The cat is very soft.",
+  "b": "A2",
+  "a": "doux"
+ },
+ {
+  "q": "Sa voix est très ___ (doux).",
+  "n": "voix",
+  "adj": "doux",
+  "t": "adj",
+  "e": "Her voice is very soft.",
+  "b": "A2",
+  "a": "douce"
+ },
+ {
+  "q": "Tu as donné une ___ (faux) adresse.",
+  "n": "adresse",
+  "adj": "faux",
+  "t": "adj",
+  "e": "You gave a false address.",
+  "b": "A2",
+  "a": "fausse"
+ },
+ {
+  "q": "Ils habitent dans une maison ___ (ancien).",
+  "n": "maison",
+  "adj": "ancien",
+  "t": "adj",
+  "e": "They live in an old house.",
+  "b": "A1",
+  "a": "ancienne"
+ },
+ {
+  "q": "J'aime les églises ___ (ancien).",
+  "n": "église",
+  "adj": "ancien",
+  "t": "adj",
+  "e": "I like old churches.",
+  "b": "A2",
+  "a": "anciennes",
+  "pl": 1
+ },
+ {
+  "q": "Ton chien est trop ___ (mignon).",
+  "n": "chien",
+  "adj": "mignon",
+  "t": "adj",
+  "e": "Your dog is so cute.",
+  "b": "A2",
+  "a": "mignon"
+ },
+ {
+  "q": "Ta fille est trop ___ (mignon).",
+  "n": "fille",
+  "adj": "mignon",
+  "t": "adj",
+  "e": "Your daughter is so cute.",
+  "b": "A2",
+  "a": "mignonne"
+ },
+ {
+  "q": "L'hôtel est ___ (complet) ce soir.",
+  "n": "hôtel",
+  "adj": "complet",
+  "t": "adj",
+  "e": "The hotel is full tonight.",
+  "b": "A2",
+  "a": "complet"
+ },
+ {
+  "q": "La salle est ___ (complet).",
+  "n": "salle",
+  "adj": "complet",
+  "t": "adj",
+  "e": "The room is full.",
+  "b": "A2",
+  "a": "complète"
+ },
+ {
+  "q": "C'est une mission ___ (secret).",
+  "n": "mission",
+  "adj": "secret",
+  "t": "adj",
+  "e": "It's a secret mission.",
+  "b": "A1",
+  "a": "secrète"
+ },
+ {
+  "q": "La route est très ___ (long).",
+  "n": "route",
+  "adj": "long",
+  "t": "adj",
+  "e": "The road is very long.",
+  "b": "A1",
+  "a": "longue"
+ },
+ {
+  "q": "Les journées sont ___ (court) en hiver.",
+  "n": "journée",
+  "adj": "court",
+  "t": "adj",
+  "e": "The days are short in winter.",
+  "b": "A2",
+  "a": "courtes",
+  "pl": 1
+ },
+ {
+  "q": "Il a les cheveux ___ (court).",
+  "n": "cheveu",
+  "adj": "court",
+  "t": "adj",
+  "e": "He has short hair.",
+  "b": "A2",
+  "a": "courts",
+  "pl": 1
+ },
+ {
+  "q": "Cette montagne est très ___ (haut).",
+  "n": "montagne",
+  "adj": "haut",
+  "t": "adj",
+  "e": "This mountain is very high.",
+  "b": "A2",
+  "a": "haute"
+ },
+ {
+  "q": "Parle à voix ___ (bas), s'il te plaît.",
+  "n": "voix",
+  "adj": "bas",
+  "t": "adj",
+  "e": "Speak quietly, please.",
+  "b": "A1",
+  "a": "basse"
+ },
+ {
+  "q": "Ma sœur est plus ___ (grand) que moi.",
+  "n": "sœur",
+  "adj": "grand",
+  "t": "adj",
+  "e": "My sister is taller than me.",
+  "b": "A1",
+  "a": "grande"
+ },
+ {
+  "q": "Mes frères sont très ___ (grand).",
+  "n": "frère",
+  "adj": "grand",
+  "t": "adj",
+  "e": "My brothers are very tall.",
+  "b": "A1",
+  "a": "grands",
+  "pl": 1
+ },
+ {
+  "q": "La cuisine est trop ___ (petit).",
+  "n": "cuisine",
+  "adj": "petit",
+  "t": "adj",
+  "e": "The kitchen is too small.",
+  "b": "A2",
+  "a": "petite"
+ },
+ {
+  "q": "Ces chaussures sont trop ___ (petit).",
+  "n": "chaussure",
+  "adj": "petit",
+  "t": "adj",
+  "e": "These shoes are too small.",
+  "b": "A2",
+  "a": "petites",
+  "pl": 1
+ },
+ {
+  "q": "Ma mère est très ___ (fatigué).",
+  "n": "mère",
+  "adj": "fatigué",
+  "t": "adj",
+  "e": "My mother is very tired.",
+  "b": "A2",
+  "a": "fatiguée"
+ },
+ {
+  "q": "Mes frères sont ___ (fatigué) ce soir.",
+  "n": "frère",
+  "adj": "fatigué",
+  "t": "adj",
+  "e": "My brothers are tired this evening.",
+  "b": "A2",
+  "a": "fatigués",
+  "pl": 1
+ },
+ {
+  "q": "Les filles sont ___ (prêt) ?",
+  "n": "fille",
+  "adj": "prêt",
+  "t": "adj",
+  "e": "Are the girls ready?",
+  "b": "A1",
+  "a": "prêtes",
+  "pl": 1
+ },
+ {
+  "q": "Le repas est ___ (prêt) !",
+  "n": "repas",
+  "adj": "prêt",
+  "t": "adj",
+  "e": "The meal is ready!",
+  "b": "A2",
+  "a": "prêt"
+ },
+ {
+  "q": "La porte est ___ (ouvert).",
+  "n": "porte",
+  "adj": "ouvert",
+  "t": "adj",
+  "e": "The door is open.",
+  "b": "A2",
+  "a": "ouverte"
+ },
+ {
+  "q": "Les magasins sont ___ (fermé) le dimanche.",
+  "n": "magasin",
+  "adj": "fermé",
+  "t": "adj",
+  "e": "The shops are closed on Sundays.",
+  "b": "A2",
+  "a": "fermés",
+  "pl": 1
+ },
+ {
+  "q": "La banque est ___ (fermé) aujourd'hui.",
+  "n": "banque",
+  "adj": "fermé",
+  "t": "adj",
+  "e": "The bank is closed today.",
+  "b": "A2",
+  "a": "fermée"
+ },
+ {
+  "q": "Ma tante est très ___ (content).",
+  "n": "tante",
+  "adj": "content",
+  "t": "adj",
+  "e": "My aunt is very pleased.",
+  "b": "A2",
+  "a": "contente"
+ },
+ {
+  "q": "Les fils de Paul sont ___ (content).",
+  "n": "fils",
+  "adj": "content",
+  "t": "adj",
+  "e": "Paul's sons are happy.",
+  "b": "A1",
+  "a": "contents",
+  "pl": 1
+ },
+ {
+  "q": "Ta chambre est ___ (propre) ?",
+  "n": "chambre",
+  "adj": "propre",
+  "t": "adj",
+  "e": "Is your room clean?",
+  "b": "A1",
+  "a": "propre"
+ },
+ {
+  "q": "Les verres sont ___ (propre).",
+  "n": "verre",
+  "adj": "propre",
+  "t": "adj",
+  "e": "The glasses are clean.",
+  "b": "A1",
+  "a": "propres",
+  "pl": 1
+ },
+ {
+  "q": "Cette table est ___ (libre) ?",
+  "n": "table",
+  "adj": "libre",
+  "t": "adj",
+  "e": "Is this table free?",
+  "b": "A1",
+  "a": "libre"
+ },
+ {
+  "q": "Ces places sont ___ (libre) ?",
+  "n": "place",
+  "adj": "libre",
+  "t": "adj",
+  "e": "Are these seats free?",
+  "b": "A1",
+  "a": "libres",
+  "pl": 1
+ },
+ {
+  "q": "Les rues sont ___ (calme) la nuit.",
+  "n": "rue",
+  "adj": "calme",
+  "t": "adj",
+  "e": "The streets are quiet at night.",
+  "b": "A1",
+  "a": "calmes",
+  "pl": 1
+ },
+ {
+  "q": "Les questions sont ___ (difficile).",
+  "n": "question",
+  "adj": "difficile",
+  "t": "adj",
+  "e": "The questions are difficult.",
+  "b": "A1",
+  "a": "difficiles",
+  "pl": 1
+ },
+ {
+  "q": "C'est une idée ___ (génial) !",
+  "n": "idée",
+  "adj": "génial",
+  "t": "adj",
+  "e": "That's a brilliant idea!",
+  "b": "A1",
+  "a": "géniale"
+ },
+ {
+  "q": "Tes amis sont ___ (génial).",
+  "n": "ami",
+  "adj": "génial",
+  "t": "adj",
+  "e": "Your friends are great.",
+  "b": "A1",
+  "a": "géniaux",
+  "pl": 1
+ },
+ {
+  "q": "Ces résultats sont ___ (normal).",
+  "n": "résultat",
+  "adj": "normal",
+  "t": "adj",
+  "e": "These results are normal.",
+  "b": "A2",
+  "a": "normaux",
+  "pl": 1
+ },
+ {
+  "q": "C'est la rue ___ (principal) du village.",
+  "n": "rue",
+  "adj": "principal",
+  "t": "adj",
+  "e": "It's the main street in the village.",
+  "b": "A2",
+  "a": "principale"
+ },
+ {
+  "q": "Ce sont les problèmes ___ (principal).",
+  "n": "problème",
+  "adj": "principal",
+  "t": "adj",
+  "e": "These are the main problems.",
+  "b": "A2",
+  "a": "principaux",
+  "pl": 1
+ },
+ {
+  "q": "C'est un jour ___ (spécial).",
+  "n": "jour",
+  "adj": "spécial",
+  "t": "adj",
+  "e": "It's a special day.",
+  "b": "A1",
+  "a": "spécial"
+ },
+ {
+  "q": "C'est une occasion ___ (spécial).",
+  "n": "occasion",
+  "adj": "spécial",
+  "t": "adj",
+  "e": "It's a special occasion.",
+  "b": "A2",
+  "a": "spéciale"
+ },
+ {
+  "q": "On achète des produits ___ (local).",
+  "n": "produit",
+  "adj": "local",
+  "t": "adj",
+  "e": "We buy local products.",
+  "b": "A2",
+  "a": "locaux",
+  "pl": 1
+ },
+ {
+  "q": "J'écoute la radio ___ (local).",
+  "n": "radio",
+  "adj": "local",
+  "t": "adj",
+  "e": "I listen to the local radio.",
+  "b": "A2",
+  "a": "locale"
+ },
+ {
+  "q": "Le quatorze juillet, c'est la fête ___ (national).",
+  "n": "fête",
+  "adj": "national",
+  "t": "adj",
+  "e": "The fourteenth of July is the national holiday.",
+  "b": "A2",
+  "a": "nationale"
+ },
+ {
+  "q": "Il passe trop de temps sur les réseaux ___ (social).",
+  "n": "réseau",
+  "adj": "social",
+  "t": "adj",
+  "e": "He spends too much time on social media.",
+  "b": "A2",
+  "a": "sociaux",
+  "pl": 1
+ },
+ {
+  "q": "La semaine ___ (dernier), j'étais malade.",
+  "n": "semaine",
+  "adj": "dernier",
+  "t": "adj",
+  "e": "Last week I was ill.",
+  "b": "A1",
+  "a": "dernière"
+ },
+ {
+  "q": "L'année ___ (prochain), on part en Grèce.",
+  "n": "année",
+  "adj": "prochain",
+  "t": "adj",
+  "e": "Next year we're going to Greece.",
+  "b": "A1",
+  "a": "prochaine"
+ },
+ {
+  "q": "Le mois ___ (prochain), je change de travail.",
+  "n": "mois",
+  "adj": "prochain",
+  "t": "adj",
+  "e": "Next month I'm changing jobs.",
+  "b": "A1",
+  "a": "prochain"
+ },
+ {
+  "q": "Elle parle une langue ___ (étranger).",
+  "n": "langue",
+  "adj": "étranger",
+  "t": "adj",
+  "e": "She speaks a foreign language.",
+  "b": "A2",
+  "a": "étrangère"
+ },
+ {
+  "q": "Il y a beaucoup d'étudiants ___ (étranger) ici.",
+  "n": "étudiant",
+  "adj": "étranger",
+  "t": "adj",
+  "e": "There are lots of foreign students here.",
+  "b": "A2",
+  "a": "étrangers",
+  "pl": 1
+ },
+ {
+  "q": "Mon père est ___ (fier) de moi.",
+  "n": "père",
+  "adj": "fier",
+  "t": "adj",
+  "e": "My father is proud of me.",
+  "b": "A1",
+  "a": "fier"
+ },
+ {
+  "q": "Ma mère est ___ (fier) de moi.",
+  "n": "mère",
+  "adj": "fier",
+  "t": "adj",
+  "e": "My mother is proud of me.",
+  "b": "A1",
+  "a": "fière"
+ },
+ {
+  "q": "Elle porte une robe ___ (léger).",
+  "n": "robe",
+  "adj": "léger",
+  "t": "adj",
+  "e": "She's wearing a light dress.",
+  "b": "A2",
+  "a": "légère"
+ },
+ {
+  "q": "Ce sac est très ___ (lourd).",
+  "n": "sac",
+  "adj": "lourd",
+  "t": "adj",
+  "e": "This bag is very heavy.",
+  "b": "A2",
+  "a": "lourd"
+ },
+ {
+  "q": "Ta valise est très ___ (lourd).",
+  "n": "valise",
+  "adj": "lourd",
+  "t": "adj",
+  "e": "Your suitcase is very heavy.",
+  "b": "A2",
+  "a": "lourde"
+ },
+ {
+  "q": "C'est un problème ___ (personnel).",
+  "n": "problème",
+  "adj": "personnel",
+  "t": "adj",
+  "e": "It's a personal problem.",
+  "b": "A1",
+  "a": "personnel"
+ },
+ {
+  "q": "C'est une question ___ (personnel).",
+  "n": "question",
+  "adj": "personnel",
+  "t": "adj",
+  "e": "It's a personal question.",
+  "b": "A1",
+  "a": "personnelle"
+ },
+ {
+  "q": "La maison est ___ (vide) depuis un an.",
+  "n": "maison",
+  "adj": "vide",
+  "t": "adj",
+  "e": "The house has been empty for a year.",
+  "b": "A2",
+  "a": "vide"
+ },
+ {
+  "q": "Les verres sont ___ (vide).",
+  "n": "verre",
+  "adj": "vide",
+  "t": "adj",
+  "e": "The glasses are empty.",
+  "b": "A2",
+  "a": "vides",
+  "pl": 1
+ },
+ {
+  "q": "Ces filles sont très ___ (intelligent).",
+  "n": "fille",
+  "adj": "intelligent",
+  "t": "adj",
+  "e": "These girls are very clever.",
+  "b": "A2",
+  "a": "intelligentes",
+  "pl": 1
+ },
+ {
+  "q": "C'est un livre ___ (intéressant).",
+  "n": "livre",
+  "adj": "intéressant",
+  "t": "adj",
+  "e": "It's an interesting book.",
+  "b": "A2",
+  "a": "intéressant"
+ },
+ {
+  "q": "C'est une histoire très ___ (intéressant).",
+  "n": "histoire",
+  "adj": "intéressant",
+  "t": "adj",
+  "e": "It's a very interesting story.",
+  "b": "A2",
+  "a": "intéressante"
+ },
+ {
+  "q": "Il y a des films ___ (intéressant) cette semaine.",
+  "n": "film",
+  "adj": "intéressant",
+  "t": "adj",
+  "e": "There are some interesting films this week.",
+  "b": "A2",
+  "a": "intéressants",
+  "pl": 1
+ },
+ {
+  "q": "C'est une femme ___ (charmant).",
+  "n": "femme",
+  "adj": "charmant",
+  "t": "adj",
+  "e": "She's a charming woman.",
+  "b": "A2",
+  "a": "charmante"
+ },
+ {
+  "q": "Ma grand-mère est très ___ (patient).",
+  "n": "grand-mère",
+  "adj": "patient",
+  "t": "adj",
+  "e": "My grandmother is very patient.",
+  "b": "A2",
+  "a": "patiente"
+ },
+ {
+  "q": "La réponse est ___ (faux).",
+  "n": "réponse",
+  "adj": "faux",
+  "t": "adj",
+  "e": "The answer is wrong.",
+  "b": "A1",
+  "a": "fausse"
+ },
+ {
+  "q": "Tes mains sont ___ (froid).",
+  "n": "main",
+  "adj": "froid",
+  "t": "adj",
+  "e": "Your hands are cold.",
+  "b": "A1",
+  "a": "froides",
+  "pl": 1
+ },
+ {
+  "q": "La viande est encore ___ (cru).",
+  "n": "viande",
+  "adj": "cru",
+  "t": "adj",
+  "e": "The meat is still raw.",
+  "b": "A2",
+  "a": "crue"
+ },
+ {
+  "q": "Ma sœur est ___ (marié) depuis deux ans.",
+  "n": "sœur",
+  "adj": "marié",
+  "t": "adj",
+  "e": "My sister has been married for two years.",
+  "b": "A1",
+  "a": "mariée"
+ },
+ {
+  "q": "Les fenêtres sont ___ (ouvert).",
+  "n": "fenêtre",
+  "adj": "ouvert",
+  "t": "adj",
+  "e": "The windows are open.",
+  "b": "A2",
+  "a": "ouvertes",
+  "pl": 1
+ },
+ {
+  "q": "La salle est ___ (plein) de monde.",
+  "n": "salle",
+  "adj": "plein",
+  "t": "adj",
+  "e": "The room is full of people.",
+  "b": "A1",
+  "a": "pleine"
+ },
+ {
+  "q": "Le verre est ___ (plein).",
+  "n": "verre",
+  "adj": "plein",
+  "t": "adj",
+  "e": "The glass is full.",
+  "b": "A1",
+  "a": "plein"
+ },
+ {
+  "q": "Cette chemise est trop ___ (grand) pour moi.",
+  "n": "chemise",
+  "adj": "grand",
+  "t": "adj",
+  "e": "This shirt is too big for me.",
+  "b": "A2",
+  "a": "grande"
+ },
+ {
+  "q": "Ma ___ (meilleur) amie s'appelle Sarah.",
+  "n": "amie",
+  "adj": "meilleur",
+  "t": "adj",
+  "e": "My best friend is called Sarah.",
+  "b": "A1",
+  "a": "meilleure"
+ },
+ {
+  "q": "C'est mon ___ (meilleur) ami.",
+  "n": "ami",
+  "adj": "meilleur",
+  "t": "adj",
+  "e": "He's my best friend.",
+  "b": "A1",
+  "a": "meilleur"
+ },
+ {
+  "q": "Ce sont les ___ (meilleur) frites du quartier.",
+  "n": "frite",
+  "adj": "meilleur",
+  "t": "adj",
+  "e": "These are the best chips in the neighbourhood.",
+  "b": "B2",
+  "a": "meilleures",
+  "pl": 1
+ },
+ {
+  "q": "C'est une ville ___ (allemand).",
+  "n": "ville",
+  "adj": "allemand",
+  "t": "adj",
+  "e": "It's a German town.",
+  "b": "A2",
+  "a": "allemande"
+ }
+]

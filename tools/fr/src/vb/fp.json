@@ -1,0 +1,642 @@
+[
+ {
+  "q": "Ce soir, nous ___ (aller) regarder un film à la maison.",
+  "v": "aller",
+  "t": "fp",
+  "p": "nous",
+  "e": "Tonight, we're going to watch a film at home.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (aller) avoir froid sans ton écharpe.",
+  "v": "aller",
+  "t": "fp",
+  "p": "tu",
+  "e": "You're going to be cold without your scarf.",
+  "b": "A1"
+ },
+ {
+  "q": "Regarde le ciel, il ___ (aller) pleuvoir.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "Look at the sky, it's going to rain.",
+  "b": "A1"
+ },
+ {
+  "q": "Ce week-end, mes parents ___ (aller) repeindre la cuisine.",
+  "v": "aller",
+  "t": "fp",
+  "p": "ils",
+  "e": "This weekend, my parents are going to repaint the kitchen.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (aller) prendre le train ou la voiture demain ?",
+  "v": "aller",
+  "t": "fp",
+  "p": "vous",
+  "e": "Are you going to take the train or the car tomorrow?",
+  "b": "A1"
+ },
+ {
+  "q": "Demain, Léa ___ (aller) commencer son nouveau travail.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "Tomorrow, Léa is going to start her new job.",
+  "b": "A1"
+ },
+ {
+  "q": "L'été prochain, nous ___ (aller) fêter nos dix ans de mariage.",
+  "v": "aller",
+  "t": "fp",
+  "p": "nous",
+  "e": "Next summer, we're going to celebrate ten years of marriage.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (aller) rater ton bus si tu ne te dépêches pas.",
+  "v": "aller",
+  "t": "fp",
+  "p": "tu",
+  "e": "You're going to miss your bus if you don't hurry.",
+  "b": "A1"
+ },
+ {
+  "q": "Dans cinq minutes, le film ___ (aller) commencer.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "The film is going to start in five minutes.",
+  "b": "A1"
+ },
+ {
+  "q": "Demain matin, les enfants ___ (aller) partir en colonie.",
+  "v": "aller",
+  "t": "fp",
+  "p": "ils",
+  "e": "Tomorrow morning, the children are going to leave for summer camp.",
+  "b": "A1"
+ },
+ {
+  "q": "Dépêchez-vous, vous ___ (aller) être en retard !",
+  "v": "aller",
+  "t": "fp",
+  "p": "vous",
+  "e": "Hurry up, you're going to be late!",
+  "b": "A1"
+ },
+ {
+  "q": "Attention, le verre ___ (aller) tomber !",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "Careful, the glass is going to fall!",
+  "b": "A1"
+ },
+ {
+  "q": "Demain, nous ___ (aller) avoir beaucoup de travail.",
+  "v": "aller",
+  "t": "fp",
+  "p": "nous",
+  "e": "Tomorrow, we're going to have a lot of work.",
+  "b": "A1"
+ },
+ {
+  "q": "Ce soir, tu ___ (aller) cuisiner quoi ?",
+  "v": "aller",
+  "t": "fp",
+  "p": "tu",
+  "e": "What are you going to cook tonight?",
+  "b": "A1"
+ },
+ {
+  "q": "L'année prochaine, mon frère ___ (aller) finir ses études.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "Next year, my brother is going to finish his studies.",
+  "b": "A1"
+ },
+ {
+  "q": "Bientôt, nos voisins ___ (aller) vendre leur maison.",
+  "v": "aller",
+  "t": "fp",
+  "p": "ils",
+  "e": "Soon, our neighbours are going to sell their house.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (aller) adorer ce restaurant, j'en suis sûr.",
+  "v": "aller",
+  "t": "fp",
+  "p": "vous",
+  "e": "You're going to love this restaurant, I'm sure.",
+  "b": "A1"
+ },
+ {
+  "q": "Cet après-midi, il ___ (aller) faire très chaud.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "This afternoon, it's going to be very hot.",
+  "b": "A1"
+ },
+ {
+  "q": "Samedi prochain, nous ___ (aller) fêter l'anniversaire de Paul.",
+  "v": "aller",
+  "t": "fp",
+  "p": "nous",
+  "e": "Next Saturday, we're going to celebrate Paul's birthday.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (aller) appeler ta mère ce soir ?",
+  "v": "aller",
+  "t": "fp",
+  "p": "tu",
+  "e": "Are you going to call your mother tonight?",
+  "b": "A1"
+ },
+ {
+  "q": "Demain, ma sœur ___ (aller) passer son examen.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "Tomorrow, my sister is going to sit her exam.",
+  "b": "A1"
+ },
+ {
+  "q": "Ce soir, mes amis ___ (aller) venir à la maison.",
+  "v": "aller",
+  "t": "fp",
+  "p": "ils",
+  "e": "Tonight, my friends are going to come round.",
+  "b": "A1"
+ },
+ {
+  "q": "Demain, vous ___ (aller) avoir une surprise.",
+  "v": "aller",
+  "t": "fp",
+  "p": "vous",
+  "e": "Tomorrow, you're going to get a surprise.",
+  "b": "A1"
+ },
+ {
+  "q": "Dans une heure, le magasin ___ (aller) fermer.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "The shop is going to close in an hour.",
+  "b": "A1"
+ },
+ {
+  "q": "Dans une minute, nous ___ (aller) savoir la réponse.",
+  "v": "aller",
+  "t": "fp",
+  "p": "nous",
+  "e": "In a minute, we're going to know the answer.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (aller) voir, c'est très facile.",
+  "v": "aller",
+  "t": "fp",
+  "p": "tu",
+  "e": "You'll see, it's very easy.",
+  "b": "A1"
+ },
+ {
+  "q": "La semaine prochaine, Hugo ___ (aller) déménager à Lille.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "Next week, Hugo is going to move to Lille.",
+  "b": "A1"
+ },
+ {
+  "q": "Les élèves ___ (aller) passer le bac en juin.",
+  "v": "aller",
+  "t": "fp",
+  "p": "ils",
+  "e": "The pupils are going to sit the baccalauréat in June.",
+  "b": "A1"
+ },
+ {
+  "q": "Demain, vous ___ (aller) rencontrer le directeur.",
+  "v": "aller",
+  "t": "fp",
+  "p": "vous",
+  "e": "Tomorrow, you're going to meet the director.",
+  "b": "A1"
+ },
+ {
+  "q": "Avec ce film, on ___ (aller) bien rire ce soir.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "With this film, we're going to have a good laugh tonight.",
+  "b": "A1"
+ },
+ {
+  "q": "Dimanche, nous ___ (aller) rester à la maison.",
+  "v": "aller",
+  "t": "fp",
+  "p": "nous",
+  "e": "On Sunday, we're going to stay at home.",
+  "b": "A1"
+ },
+ {
+  "q": "Demain, tu ___ (aller) te lever à quelle heure ?",
+  "v": "aller",
+  "t": "fp",
+  "p": "tu",
+  "e": "What time are you going to get up tomorrow?",
+  "b": "A1"
+ },
+ {
+  "q": "Le bébé ___ (aller) bientôt dormir.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "The baby is going to sleep soon.",
+  "b": "A1"
+ },
+ {
+  "q": "Mes cousins ___ (aller) arriver demain soir.",
+  "v": "aller",
+  "t": "fp",
+  "p": "ils",
+  "e": "My cousins are going to arrive tomorrow evening.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (aller) trouver la maison facilement.",
+  "v": "aller",
+  "t": "fp",
+  "p": "vous",
+  "e": "You're going to find the house easily.",
+  "b": "A1"
+ },
+ {
+  "q": "Demain, le président ___ (aller) parler à la télévision.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "Tomorrow, the president is going to speak on television.",
+  "b": "A1"
+ },
+ {
+  "q": "Cet hiver, nous ___ (aller) apprendre à skier.",
+  "v": "aller",
+  "t": "fp",
+  "p": "nous",
+  "e": "This winter, we're going to learn to ski.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (aller) prendre froid sans manteau.",
+  "v": "aller",
+  "t": "fp",
+  "p": "tu",
+  "e": "You're going to catch cold without a coat.",
+  "b": "A1"
+ },
+ {
+  "q": "Ce soir, ma mère ___ (aller) préparer une soupe.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "Tonight, my mother is going to make a soup.",
+  "b": "A1"
+ },
+ {
+  "q": "Le vieux toit ___ (aller) tomber si on ne le répare pas.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "The old roof is going to fall in if we don't repair it.",
+  "b": "A1"
+ },
+ {
+  "q": "Ce week-end, vous ___ (aller) partir à la mer ?",
+  "v": "aller",
+  "t": "fp",
+  "p": "vous",
+  "e": "Are you going to the seaside this weekend?",
+  "b": "A1"
+ },
+ {
+  "q": "Le train ___ (aller) partir dans deux minutes.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "The train is going to leave in two minutes.",
+  "b": "A1"
+ },
+ {
+  "q": "Demain, nous ___ (aller) nettoyer toute la maison.",
+  "v": "aller",
+  "t": "fp",
+  "p": "nous",
+  "e": "Tomorrow, we're going to clean the whole house.",
+  "b": "A1"
+ },
+ {
+  "q": "L'année prochaine, tu ___ (aller) avoir dix-huit ans.",
+  "v": "aller",
+  "t": "fp",
+  "p": "tu",
+  "e": "Next year, you're going to be eighteen.",
+  "b": "A1"
+ },
+ {
+  "q": "Bientôt, il ___ (aller) neiger sur les montagnes.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "Soon, it's going to snow on the mountains.",
+  "b": "A1"
+ },
+ {
+  "q": "Ce soir, elles ___ (aller) fêter leur victoire.",
+  "v": "aller",
+  "t": "fp",
+  "p": "ils",
+  "e": "Tonight, they're going to celebrate their victory.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (aller) manquer votre avion !",
+  "v": "aller",
+  "t": "fp",
+  "p": "vous",
+  "e": "You're going to miss your plane!",
+  "b": "A1"
+ },
+ {
+  "q": "Demain, mon père ___ (aller) conduire jusqu'à Bordeaux.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "Tomorrow, my father is going to drive to Bordeaux.",
+  "b": "A1"
+ },
+ {
+  "q": "Ce soir, nous ___ (aller) inviter les voisins.",
+  "v": "aller",
+  "t": "fp",
+  "p": "nous",
+  "e": "Tonight, we're going to invite the neighbours.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (aller) aimer ce livre.",
+  "v": "aller",
+  "t": "fp",
+  "p": "tu",
+  "e": "You're going to like this book.",
+  "b": "A1"
+ },
+ {
+  "q": "Demain, les supporters ___ (aller) être très nombreux.",
+  "v": "aller",
+  "t": "fp",
+  "p": "ils",
+  "e": "Tomorrow, there are going to be a lot of fans.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (aller) finir ce travail avant ce soir ?",
+  "v": "aller",
+  "t": "fp",
+  "p": "vous",
+  "e": "Are you going to finish this work before tonight?",
+  "b": "A1"
+ },
+ {
+  "q": "Dans dix minutes, Sophie ___ (aller) arriver à la gare.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "In ten minutes, Sophie is going to arrive at the station.",
+  "b": "A1"
+ },
+ {
+  "q": "Lundi prochain, nous ___ (aller) commencer les travaux.",
+  "v": "aller",
+  "t": "fp",
+  "p": "nous",
+  "e": "Next Monday, we're going to start the building work.",
+  "b": "A1"
+ },
+ {
+  "q": "Demain, tu ___ (aller) porter ta nouvelle robe ?",
+  "v": "aller",
+  "t": "fp",
+  "p": "tu",
+  "e": "Are you going to wear your new dress tomorrow?",
+  "b": "A1"
+ },
+ {
+  "q": "Cet été, Thomas ___ (aller) devenir papa.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "This summer, Thomas is going to become a dad.",
+  "b": "A1"
+ },
+ {
+  "q": "Mes parents ___ (aller) être contents de te voir.",
+  "v": "aller",
+  "t": "fp",
+  "p": "ils",
+  "e": "My parents are going to be pleased to see you.",
+  "b": "A1"
+ },
+ {
+  "q": "Bientôt, vous ___ (aller) parler français couramment.",
+  "v": "aller",
+  "t": "fp",
+  "p": "vous",
+  "e": "Soon, you're going to speak French fluently.",
+  "b": "A1"
+ },
+ {
+  "q": "Ne t'inquiète pas, tout ___ (aller) bien se passer.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "Don't worry, everything is going to be fine.",
+  "b": "A1"
+ },
+ {
+  "q": "Tout à l'heure, nous ___ (aller) jouer aux cartes.",
+  "v": "aller",
+  "t": "fp",
+  "p": "nous",
+  "e": "In a while, we're going to play cards.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (aller) dire quoi à ton patron ?",
+  "v": "aller",
+  "t": "fp",
+  "p": "tu",
+  "e": "What are you going to tell your boss?",
+  "b": "A1"
+ },
+ {
+  "q": "Demain, mon grand-père ___ (aller) fêter ses quatre-vingts ans.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "Tomorrow, my grandfather is going to celebrate his eightieth birthday.",
+  "b": "A1"
+ },
+ {
+  "q": "Les enfants ___ (aller) adorer ce cadeau.",
+  "v": "aller",
+  "t": "fp",
+  "p": "ils",
+  "e": "The children are going to love this present.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (aller) comprendre très vite, c'est simple.",
+  "v": "aller",
+  "t": "fp",
+  "p": "vous",
+  "e": "You're going to understand very quickly, it's simple.",
+  "b": "A1"
+ },
+ {
+  "q": "Le soleil ___ (aller) bientôt se coucher.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "The sun is going to set soon.",
+  "b": "A1"
+ },
+ {
+  "q": "L'année prochaine, nous ___ (aller) changer de voiture.",
+  "v": "aller",
+  "t": "fp",
+  "p": "nous",
+  "e": "Next year, we're going to change our car.",
+  "b": "A1"
+ },
+ {
+  "q": "Ce soir, tu ___ (aller) regarder le match ?",
+  "v": "aller",
+  "t": "fp",
+  "p": "tu",
+  "e": "Are you going to watch the match tonight?",
+  "b": "A1"
+ },
+ {
+  "q": "Demain, il ___ (aller) faire beau toute la journée.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "Tomorrow, it's going to be fine all day.",
+  "b": "A1"
+ },
+ {
+  "q": "Les invités ___ (aller) arriver d'une minute à l'autre.",
+  "v": "aller",
+  "t": "fp",
+  "p": "ils",
+  "e": "The guests are going to arrive any minute.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (aller) être surpris par le prix.",
+  "v": "aller",
+  "t": "fp",
+  "p": "vous",
+  "e": "You're going to be surprised by the price.",
+  "b": "A1"
+ },
+ {
+  "q": "Après le dîner, Paul ___ (aller) faire la vaisselle.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "After dinner, Paul is going to do the washing up.",
+  "b": "A1"
+ },
+ {
+  "q": "Demain, nous ___ (aller) écrire à nos cousins.",
+  "v": "aller",
+  "t": "fp",
+  "p": "nous",
+  "e": "Tomorrow, we're going to write to our cousins.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (aller) tomber si tu cours comme ça !",
+  "v": "aller",
+  "t": "fp",
+  "p": "tu",
+  "e": "You're going to fall if you run like that!",
+  "b": "A1"
+ },
+ {
+  "q": "La réunion ___ (aller) durer deux heures.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "The meeting is going to last two hours.",
+  "b": "A1"
+ },
+ {
+  "q": "Mes amis ___ (aller) m'aider à déménager samedi.",
+  "v": "aller",
+  "t": "fp",
+  "p": "ils",
+  "e": "My friends are going to help me move on Saturday.",
+  "b": "A1"
+ },
+ {
+  "q": "Vous ___ (aller) payer par carte ?",
+  "v": "aller",
+  "t": "fp",
+  "p": "vous",
+  "e": "Are you going to pay by card?",
+  "b": "A1"
+ },
+ {
+  "q": "Ce soir, mon chef ___ (aller) annoncer une grande nouvelle.",
+  "v": "aller",
+  "t": "fp",
+  "p": "il",
+  "e": "Tonight, my boss is going to announce some big news.",
+  "b": "A1"
+ },
+ {
+  "q": "Bientôt, nous ___ (aller) avoir un bébé.",
+  "v": "aller",
+  "t": "fp",
+  "p": "nous",
+  "e": "Soon, we're going to have a baby.",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (aller) regretter ta décision.",
+  "v": "aller",
+  "t": "fp",
+  "p": "tu",
+  "e": "You're going to regret your decision.",
+  "b": "A1"
+ },
+ {
+  "q": "L'été prochain, mes grands-parents ___ (aller) voyager en Inde.",
+  "v": "aller",
+  "t": "fp",
+  "p": "ils",
+  "e": "Next summer, my grandparents are going to travel to India.",
+  "b": "A1"
+ }
+]

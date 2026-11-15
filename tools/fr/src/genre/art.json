@@ -1,0 +1,1627 @@
+[
+ {
+  "q": "J'ai ___ voiture rouge.",
+  "n": "voiture",
+  "t": "art",
+  "e": "I have a red car.",
+  "b": "A1",
+  "a": "une"
+ },
+ {
+  "q": "___ gâteau de ma mère est délicieux.",
+  "n": "gâteau",
+  "t": "art",
+  "e": "My mother's cake is delicious.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ soleil se lève à six heures.",
+  "n": "soleil",
+  "t": "art",
+  "e": "The sun rises at six.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "Ferme ___ livre, s'il te plaît.",
+  "n": "livre",
+  "t": "art",
+  "e": "Close the book, please.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "J'aime beaucoup ___ thé vert.",
+  "n": "thé",
+  "t": "art",
+  "e": "I really like green tea.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ train de huit heures est en retard.",
+  "n": "train",
+  "t": "art",
+  "e": "The eight o'clock train is late.",
+  "b": "A1",
+  "a": "le"
+ },
+ {
+  "q": "Elle déteste ___ sport.",
+  "n": "sport",
+  "t": "art",
+  "e": "She hates sport.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ chien de mes voisins aboie toute la nuit.",
+  "n": "chien",
+  "t": "art",
+  "e": "My neighbours' dog barks all night.",
+  "b": "A1",
+  "a": "le"
+ },
+ {
+  "q": "Où est ___ sac de ta mère ?",
+  "n": "sac",
+  "t": "art",
+  "e": "Where is your mother's bag?",
+  "b": "A1",
+  "a": "le"
+ },
+ {
+  "q": "___ père de Julie est médecin.",
+  "n": "père",
+  "t": "art",
+  "e": "Julie's father is a doctor.",
+  "b": "A1",
+  "a": "le"
+ },
+ {
+  "q": "Je n'aime pas ___ vin rouge.",
+  "n": "vin",
+  "t": "art",
+  "e": "I don't like red wine.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ ciel est tout bleu aujourd'hui.",
+  "n": "ciel",
+  "t": "art",
+  "e": "The sky is completely blue today.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ bureau de mon père est au troisième étage.",
+  "n": "bureau",
+  "t": "art",
+  "e": "My father's office is on the third floor.",
+  "b": "A1",
+  "a": "le"
+ },
+ {
+  "q": "___ film de ce soir commence à neuf heures.",
+  "n": "film",
+  "t": "art",
+  "e": "Tonight's film starts at nine.",
+  "b": "A1",
+  "a": "le"
+ },
+ {
+  "q": "___ lait est dans le frigo.",
+  "n": "lait",
+  "t": "art",
+  "e": "The milk is in the fridge.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "Passe-moi ___ pain, s'il te plaît.",
+  "n": "pain",
+  "t": "art",
+  "e": "Pass me the bread, please.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ marché du village ouvre le samedi matin.",
+  "n": "marché",
+  "t": "art",
+  "e": "The village market opens on Saturday morning.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ jardin de ma grand-mère est magnifique.",
+  "n": "jardin",
+  "t": "art",
+  "e": "My grandmother's garden is beautiful.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "Je prends ___ métro tous les jours.",
+  "n": "métro",
+  "t": "art",
+  "e": "I take the metro every day.",
+  "b": "B1",
+  "a": "le"
+ },
+ {
+  "q": "___ vent souffle très fort ce soir.",
+  "n": "vent",
+  "t": "art",
+  "e": "The wind is blowing very hard tonight.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ mari de ma sœur est italien.",
+  "n": "mari",
+  "t": "art",
+  "e": "My sister's husband is Italian.",
+  "b": "A1",
+  "a": "le"
+ },
+ {
+  "q": "J'ai oublié ___ code de la porte.",
+  "n": "code",
+  "t": "art",
+  "e": "I've forgotten the door code.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ prix de cette robe est trop élevé.",
+  "n": "prix",
+  "t": "art",
+  "e": "The price of this dress is too high.",
+  "b": "A1",
+  "a": "le"
+ },
+ {
+  "q": "Elle préfère ___ poisson à la viande.",
+  "n": "poisson",
+  "t": "art",
+  "e": "She prefers fish to meat.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ magasin du coin ferme à dix-neuf heures.",
+  "n": "magasin",
+  "t": "art",
+  "e": "The corner shop closes at seven pm.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ professeur de mon fils est très gentil.",
+  "n": "professeur",
+  "t": "art",
+  "e": "My son's teacher is very kind.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ temps passe vite en vacances.",
+  "n": "temps",
+  "t": "art",
+  "e": "Time flies on holiday.",
+  "b": "A1",
+  "a": "le"
+ },
+ {
+  "q": "___ lit de l'hôtel est très confortable.",
+  "n": "lit",
+  "t": "art",
+  "e": "The hotel bed is very comfortable.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ fils des voisins joue du piano.",
+  "n": "fils",
+  "t": "art",
+  "e": "The neighbours' son plays the piano.",
+  "b": "A1",
+  "a": "le"
+ },
+ {
+  "q": "___ restaurant de Marc est fermé le lundi.",
+  "n": "restaurant",
+  "t": "art",
+  "e": "Marc's restaurant is closed on Mondays.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ quartier est très calme la nuit.",
+  "n": "quartier",
+  "t": "art",
+  "e": "The neighbourhood is very quiet at night.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ bruit de la rue m'empêche de dormir.",
+  "n": "bruit",
+  "t": "art",
+  "e": "The noise from the street keeps me awake.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ musée du Louvre est immense.",
+  "n": "musée",
+  "t": "art",
+  "e": "The Louvre museum is huge.",
+  "b": "B1",
+  "a": "le"
+ },
+ {
+  "q": "___ chat de Marie dort sur le canapé.",
+  "n": "chat",
+  "t": "art",
+  "e": "Marie's cat is sleeping on the sofa.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ cheval de mon oncle s'appelle Éclair.",
+  "n": "cheval",
+  "t": "art",
+  "e": "My uncle's horse is called Éclair.",
+  "b": "A1",
+  "a": "le"
+ },
+ {
+  "q": "___ week-end prochain, on part à la mer.",
+  "n": "week-end",
+  "t": "art",
+  "e": "Next weekend we're going to the seaside.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ pont de la ville est fermé pour travaux.",
+  "n": "pont",
+  "t": "art",
+  "e": "The town bridge is closed for repairs.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ héros du film meurt à la fin.",
+  "n": "héros",
+  "t": "art",
+  "e": "The hero of the film dies at the end.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "Tout le monde aime ___ héros de cette série.",
+  "n": "héros",
+  "t": "art",
+  "e": "Everyone loves the hero of this series.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ hasard fait bien les choses.",
+  "n": "hasard",
+  "t": "art",
+  "e": "Chance works things out nicely.",
+  "b": "A2",
+  "a": "le"
+ },
+ {
+  "q": "___ hall de l'hôtel est très grand.",
+  "n": "hall",
+  "t": "art",
+  "e": "The hotel lobby is very big.",
+  "b": "B1",
+  "a": "le"
+ },
+ {
+  "q": "___ hall de la gare est plein de monde.",
+  "n": "hall",
+  "t": "art",
+  "e": "The station concourse is packed.",
+  "b": "B1",
+  "a": "le"
+ },
+ {
+  "q": "___ hauteur de ce mur est de trois mètres.",
+  "n": "hauteur",
+  "t": "art",
+  "e": "The height of this wall is three metres.",
+  "b": "B1",
+  "a": "la"
+ },
+ {
+  "q": "___ haine ne mène à rien.",
+  "n": "haine",
+  "t": "art",
+  "e": "Hatred leads nowhere.",
+  "b": "B1",
+  "a": "la"
+ },
+ {
+  "q": "___ héros de ce livre sont des enfants.",
+  "n": "héros",
+  "t": "art",
+  "e": "The heroes of this book are children.",
+  "b": "A2",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "Ferme ___ porte, s'il te plaît.",
+  "n": "porte",
+  "t": "art",
+  "e": "Shut the door, please.",
+  "b": "A1",
+  "a": "la"
+ },
+ {
+  "q": "Ouvre ___ fenêtre, il fait chaud.",
+  "n": "fenêtre",
+  "t": "art",
+  "e": "Open the window, it's hot.",
+  "b": "A2",
+  "a": "la"
+ },
+ {
+  "q": "___ lune est pleine ce soir.",
+  "n": "lune",
+  "t": "art",
+  "e": "The moon is full tonight.",
+  "b": "A2",
+  "a": "la"
+ },
+ {
+  "q": "___ mer est encore froide en juin.",
+  "n": "mer",
+  "t": "art",
+  "e": "The sea is still cold in June.",
+  "b": "A2",
+  "a": "la"
+ },
+ {
+  "q": "Où est ___ gare, s'il vous plaît ?",
+  "n": "gare",
+  "t": "art",
+  "e": "Where is the station, please?",
+  "b": "B1",
+  "a": "la"
+ },
+ {
+  "q": "___ cuisine est à droite.",
+  "n": "cuisine",
+  "t": "art",
+  "e": "The kitchen is on the right.",
+  "b": "A2",
+  "a": "la"
+ },
+ {
+  "q": "J'aime ___ musique classique.",
+  "n": "musique",
+  "t": "art",
+  "e": "I like classical music.",
+  "b": "A1",
+  "a": "la"
+ },
+ {
+  "q": "___ mère de Paul est professeur.",
+  "n": "mère",
+  "t": "art",
+  "e": "Paul's mother is a teacher.",
+  "b": "A1",
+  "a": "la"
+ },
+ {
+  "q": "___ voiture de mon frère est en panne.",
+  "n": "voiture",
+  "t": "art",
+  "e": "My brother's car has broken down.",
+  "b": "A1",
+  "a": "la"
+ },
+ {
+  "q": "___ chambre des enfants est en haut.",
+  "n": "chambre",
+  "t": "art",
+  "e": "The children's bedroom is upstairs.",
+  "b": "A1",
+  "a": "la"
+ },
+ {
+  "q": "___ table est prête, venez manger !",
+  "n": "table",
+  "t": "art",
+  "e": "The table is set, come and eat!",
+  "b": "A1",
+  "a": "la"
+ },
+ {
+  "q": "___ ville est belle la nuit.",
+  "n": "ville",
+  "t": "art",
+  "e": "The city is beautiful at night.",
+  "b": "A1",
+  "a": "la"
+ },
+ {
+  "q": "___ pharmacie du coin ferme à midi.",
+  "n": "pharmacie",
+  "t": "art",
+  "e": "The local chemist's closes at noon.",
+  "b": "A2",
+  "a": "la"
+ },
+ {
+  "q": "___ boulangerie ouvre à sept heures.",
+  "n": "boulangerie",
+  "t": "art",
+  "e": "The bakery opens at seven.",
+  "b": "A2",
+  "a": "la"
+ },
+ {
+  "q": "___ plage est à cinq minutes à pied.",
+  "n": "plage",
+  "t": "art",
+  "e": "The beach is a five minute walk away.",
+  "b": "A2",
+  "a": "la"
+ },
+ {
+  "q": "___ banque est fermée le dimanche.",
+  "n": "banque",
+  "t": "art",
+  "e": "The bank is closed on Sundays.",
+  "b": "A2",
+  "a": "la"
+ },
+ {
+  "q": "Tu connais ___ réponse ?",
+  "n": "réponse",
+  "t": "art",
+  "e": "Do you know the answer?",
+  "b": "A1",
+  "a": "la"
+ },
+ {
+  "q": "___ clé est dans mon sac.",
+  "n": "clé",
+  "t": "art",
+  "e": "The key is in my bag.",
+  "b": "A1",
+  "a": "la"
+ },
+ {
+  "q": "___ pluie tombe depuis ce matin.",
+  "n": "pluie",
+  "t": "art",
+  "e": "It has been raining since this morning.",
+  "b": "A2",
+  "a": "la"
+ },
+ {
+  "q": "___ neige recouvre toute la ville.",
+  "n": "neige",
+  "t": "art",
+  "e": "Snow covers the whole town.",
+  "b": "A2",
+  "a": "la"
+ },
+ {
+  "q": "J'ai mal à ___ tête.",
+  "n": "tête",
+  "t": "art",
+  "e": "I've got a headache.",
+  "b": "A1",
+  "a": "la"
+ },
+ {
+  "q": "Il préfère ___ viande au poisson.",
+  "n": "viande",
+  "t": "art",
+  "e": "He prefers meat to fish.",
+  "b": "A2",
+  "a": "la"
+ },
+ {
+  "q": "___ sœur de Marc habite à Lyon.",
+  "n": "sœur",
+  "t": "art",
+  "e": "Marc's sister lives in Lyon.",
+  "b": "A1",
+  "a": "la"
+ },
+ {
+  "q": "___ robe rouge te va très bien.",
+  "n": "robe",
+  "t": "art",
+  "e": "The red dress really suits you.",
+  "b": "A2",
+  "a": "la"
+ },
+ {
+  "q": "___ tante de Sophie arrive demain.",
+  "n": "tante",
+  "t": "art",
+  "e": "Sophie's aunt arrives tomorrow.",
+  "b": "A2",
+  "a": "la"
+ },
+ {
+  "q": "Éteins ___ télé, on mange !",
+  "n": "télé",
+  "t": "art",
+  "e": "Turn off the TV, we're eating!",
+  "b": "A2",
+  "a": "la"
+ },
+ {
+  "q": "Allume ___ radio, s'il te plaît.",
+  "n": "radio",
+  "t": "art",
+  "e": "Turn on the radio, please.",
+  "b": "A2",
+  "a": "la"
+ },
+ {
+  "q": "___ chanson de ce film est magnifique.",
+  "n": "chanson",
+  "t": "art",
+  "e": "The song from this film is beautiful.",
+  "b": "A1",
+  "a": "la"
+ },
+ {
+  "q": "___ semaine prochaine, je suis en vacances.",
+  "n": "semaine",
+  "t": "art",
+  "e": "Next week I'm on holiday.",
+  "b": "A1",
+  "a": "la"
+ },
+ {
+  "q": "___ vie est belle.",
+  "n": "vie",
+  "t": "art",
+  "e": "Life is beautiful.",
+  "b": "A1",
+  "a": "la"
+ },
+ {
+  "q": "___ forêt est pleine d'oiseaux.",
+  "n": "forêt",
+  "t": "art",
+  "e": "The forest is full of birds.",
+  "b": "A2",
+  "a": "la"
+ },
+ {
+  "q": "___ montagne est magnifique en hiver.",
+  "n": "montagne",
+  "t": "art",
+  "e": "The mountains are beautiful in winter.",
+  "b": "A2",
+  "a": "la"
+ },
+ {
+  "q": "Passe-moi ___ salade, s'il te plaît.",
+  "n": "salade",
+  "t": "art",
+  "e": "Pass me the salad, please.",
+  "b": "B1",
+  "a": "la"
+ },
+ {
+  "q": "___ campagne est calme le dimanche.",
+  "n": "campagne",
+  "t": "art",
+  "e": "The countryside is quiet on Sundays.",
+  "b": "A2",
+  "a": "la"
+ },
+ {
+  "q": "___ piscine ouvre à neuf heures.",
+  "n": "piscine",
+  "t": "art",
+  "e": "The swimming pool opens at nine.",
+  "b": "B1",
+  "a": "la"
+ },
+ {
+  "q": "___ fille de nos voisins s'appelle Léa.",
+  "n": "fille",
+  "t": "art",
+  "e": "Our neighbours' daughter is called Léa.",
+  "b": "A1",
+  "a": "la"
+ },
+ {
+  "q": "___ bière belge est très forte.",
+  "n": "bière",
+  "t": "art",
+  "e": "Belgian beer is very strong.",
+  "b": "A2",
+  "a": "la"
+ },
+ {
+  "q": "___ famille de Thomas est très sympa.",
+  "n": "famille",
+  "t": "art",
+  "e": "Thomas's family is really nice.",
+  "b": "A1",
+  "a": "la"
+ },
+ {
+  "q": "Je connais ___ fin de l'histoire.",
+  "n": "fin",
+  "t": "art",
+  "e": "I know the end of the story.",
+  "b": "A1",
+  "a": "la"
+ },
+ {
+  "q": "___ porte du garage est ouverte.",
+  "n": "porte",
+  "t": "art",
+  "e": "The garage door is open.",
+  "b": "A1",
+  "a": "la"
+ },
+ {
+  "q": "___ école est fermée en août.",
+  "n": "école",
+  "t": "art",
+  "e": "The school is closed in August.",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "___ avion pour Rome part à midi.",
+  "n": "avion",
+  "t": "art",
+  "e": "The plane to Rome leaves at noon.",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "___ eau est trop froide pour nager.",
+  "n": "eau",
+  "t": "art",
+  "e": "The water is too cold for swimming.",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "___ arbre du jardin est très vieux.",
+  "n": "arbre",
+  "t": "art",
+  "e": "The tree in the garden is very old.",
+  "b": "A2",
+  "a": "l'"
+ },
+ {
+  "q": "___ appartement de Lucie est au cinquième étage.",
+  "n": "appartement",
+  "t": "art",
+  "e": "Lucie's flat is on the fifth floor.",
+  "b": "A2",
+  "a": "l'"
+ },
+ {
+  "q": "___ église du village est très ancienne.",
+  "n": "église",
+  "t": "art",
+  "e": "The village church is very old.",
+  "b": "A2",
+  "a": "l'"
+ },
+ {
+  "q": "___ hôpital est au bout de la rue.",
+  "n": "hôpital",
+  "t": "art",
+  "e": "The hospital is at the end of the street.",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "___ hôtel est près de la gare.",
+  "n": "hôtel",
+  "t": "art",
+  "e": "The hotel is near the station.",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "___ homme au chapeau est mon oncle.",
+  "n": "homme",
+  "t": "art",
+  "e": "The man in the hat is my uncle.",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "___ histoire de ce livre est triste.",
+  "n": "histoire",
+  "t": "art",
+  "e": "The story of this book is sad.",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "___ heure tourne, dépêche-toi !",
+  "n": "heure",
+  "t": "art",
+  "e": "Time's ticking, hurry up!",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "___ herbe est mouillée ce matin.",
+  "n": "herbe",
+  "t": "art",
+  "e": "The grass is wet this morning.",
+  "b": "A2",
+  "a": "l'"
+ },
+ {
+  "q": "___ hiver est long à la montagne.",
+  "n": "hiver",
+  "t": "art",
+  "e": "Winter is long in the mountains.",
+  "b": "B1",
+  "a": "l'"
+ },
+ {
+  "q": "___ huile d'olive est dans le placard.",
+  "n": "huile",
+  "t": "art",
+  "e": "The olive oil is in the cupboard.",
+  "b": "B1",
+  "a": "l'"
+ },
+ {
+  "q": "___ été dernier, on est allés en Grèce.",
+  "n": "été",
+  "t": "art",
+  "e": "Last summer we went to Greece.",
+  "b": "A2",
+  "a": "l'"
+ },
+ {
+  "q": "___ automne est ma saison préférée.",
+  "n": "automne",
+  "t": "art",
+  "e": "Autumn is my favourite season.",
+  "b": "A2",
+  "a": "l'"
+ },
+ {
+  "q": "___ anniversaire de Paul est le dix mai.",
+  "n": "anniversaire",
+  "t": "art",
+  "e": "Paul's birthday is on the tenth of May.",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "___ oncle de Marie est boulanger.",
+  "n": "oncle",
+  "t": "art",
+  "e": "Marie's uncle is a baker.",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "___ idée me plaît beaucoup.",
+  "n": "idée",
+  "t": "art",
+  "e": "I really like the idea.",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "___ ordinateur de mon père ne marche plus.",
+  "n": "ordinateur",
+  "t": "art",
+  "e": "My father's computer doesn't work any more.",
+  "b": "A2",
+  "a": "l'"
+ },
+ {
+  "q": "___ amie de Claire vient dîner ce soir.",
+  "n": "amie",
+  "t": "art",
+  "e": "Claire's friend is coming to dinner tonight.",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "___ ami de Paul est très sympa.",
+  "n": "ami",
+  "t": "art",
+  "e": "Paul's friend is really nice.",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "___ enfant de Paul dort dans sa chambre.",
+  "n": "enfant",
+  "t": "art",
+  "e": "Paul's child is asleep in his room.",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "___ oiseau de ma tante chante tout le temps.",
+  "n": "oiseau",
+  "t": "art",
+  "e": "My aunt's bird sings all the time.",
+  "b": "A2",
+  "a": "l'"
+ },
+ {
+  "q": "___ université est à côté du parc.",
+  "n": "université",
+  "t": "art",
+  "e": "The university is next to the park.",
+  "b": "A2",
+  "a": "l'"
+ },
+ {
+  "q": "___ île est petite mais très belle.",
+  "n": "île",
+  "t": "art",
+  "e": "The island is small but very beautiful.",
+  "b": "A2",
+  "a": "l'"
+ },
+ {
+  "q": "___ aéroport est loin du centre.",
+  "n": "aéroport",
+  "t": "art",
+  "e": "The airport is a long way from the centre.",
+  "b": "A2",
+  "a": "l'"
+ },
+ {
+  "q": "___ argent ne fait pas le bonheur.",
+  "n": "argent",
+  "t": "art",
+  "e": "Money doesn't buy happiness.",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "___ amour est aveugle.",
+  "n": "amour",
+  "t": "art",
+  "e": "Love is blind.",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "Tu as ___ adresse de Julie ?",
+  "n": "adresse",
+  "t": "art",
+  "e": "Have you got Julie's address?",
+  "b": "A2",
+  "a": "l'"
+ },
+ {
+  "q": "___ entrée du musée est gratuite.",
+  "n": "entrée",
+  "t": "art",
+  "e": "Entry to the museum is free.",
+  "b": "A2",
+  "a": "l'"
+ },
+ {
+  "q": "___ air est frais ce matin.",
+  "n": "air",
+  "t": "art",
+  "e": "The air is cool this morning.",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "Il a mal à ___ œil gauche.",
+  "n": "œil",
+  "t": "art",
+  "e": "His left eye hurts.",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "___ examen est demain matin.",
+  "n": "examen",
+  "t": "art",
+  "e": "The exam is tomorrow morning.",
+  "b": "A2",
+  "a": "l'"
+ },
+ {
+  "q": "___ ascenseur est en panne.",
+  "n": "ascenseur",
+  "t": "art",
+  "e": "The lift is out of order.",
+  "b": "B1",
+  "a": "l'"
+ },
+ {
+  "q": "___ océan est calme aujourd'hui.",
+  "n": "océan",
+  "t": "art",
+  "e": "The ocean is calm today.",
+  "b": "B1",
+  "a": "l'"
+ },
+ {
+  "q": "___ équipe de France a gagné !",
+  "n": "équipe",
+  "t": "art",
+  "e": "The French team won!",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "___ année dernière, j'habitais à Nice.",
+  "n": "année",
+  "t": "art",
+  "e": "Last year I lived in Nice.",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "___ usine ferme à dix-huit heures.",
+  "n": "usine",
+  "t": "art",
+  "e": "The factory closes at six pm.",
+  "b": "A2",
+  "a": "l'"
+ },
+ {
+  "q": "___ habitude, c'est difficile à changer.",
+  "n": "habitude",
+  "t": "art",
+  "e": "Habit is hard to change.",
+  "b": "A1",
+  "a": "l'"
+ },
+ {
+  "q": "___ enfants de Marie jouent dans le jardin.",
+  "n": "enfant",
+  "t": "art",
+  "e": "Marie's children are playing in the garden.",
+  "b": "A1",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "Où sont ___ clés de la voiture ?",
+  "n": "clé",
+  "t": "art",
+  "e": "Where are the car keys?",
+  "b": "A1",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "J'adore ___ chats.",
+  "n": "chat",
+  "t": "art",
+  "e": "I love cats.",
+  "b": "A2",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "___ fleurs du jardin sont magnifiques.",
+  "n": "fleur",
+  "t": "art",
+  "e": "The flowers in the garden are beautiful.",
+  "b": "A2",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "En France, ___ magasins ferment le dimanche.",
+  "n": "magasin",
+  "t": "art",
+  "e": "In France, shops close on Sundays.",
+  "b": "A2",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "Range ___ chaussures, s'il te plaît.",
+  "n": "chaussure",
+  "t": "art",
+  "e": "Put the shoes away, please.",
+  "b": "A2",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "___ yeux de ma fille sont bleus.",
+  "n": "œil",
+  "t": "art",
+  "e": "My daughter's eyes are blue.",
+  "b": "A1",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "___ parents de Thomas sont très gentils.",
+  "n": "parent",
+  "t": "art",
+  "e": "Thomas's parents are very kind.",
+  "b": "A1",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "Je n'aime pas ___ films d'horreur.",
+  "n": "film",
+  "t": "art",
+  "e": "I don't like horror films.",
+  "b": "A1",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "___ gens sont gentils ici.",
+  "n": "gens",
+  "t": "art",
+  "e": "People are friendly here.",
+  "b": "A1",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "___ chevaux de mon oncle courent dans le champ.",
+  "n": "cheval",
+  "t": "art",
+  "e": "My uncle's horses are running in the field.",
+  "b": "A1",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "Tous ___ matins, je bois un café.",
+  "n": "matin",
+  "t": "art",
+  "e": "Every morning I drink a coffee.",
+  "b": "A1",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "Tous ___ jours, il va à la plage.",
+  "n": "jour",
+  "t": "art",
+  "e": "Every day he goes to the beach.",
+  "b": "A1",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "___ hôtels de Paris sont chers.",
+  "n": "hôtel",
+  "t": "art",
+  "e": "Hotels in Paris are expensive.",
+  "b": "A1",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "Lave ___ verres, s'il te plaît.",
+  "n": "verre",
+  "t": "art",
+  "e": "Wash the glasses, please.",
+  "b": "A1",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "___ frères de Julie sont jumeaux.",
+  "n": "frère",
+  "t": "art",
+  "e": "Julie's brothers are twins.",
+  "b": "A1",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "___ animaux ont besoin d'eau.",
+  "n": "animal",
+  "t": "art",
+  "e": "Animals need water.",
+  "b": "A2",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "___ pommes de mon jardin sont délicieuses.",
+  "n": "pomme",
+  "t": "art",
+  "e": "The apples from my garden are delicious.",
+  "b": "A2",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "___ prix ont beaucoup augmenté.",
+  "n": "prix",
+  "t": "art",
+  "e": "Prices have gone up a lot.",
+  "b": "A1",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "Elle aime ___ chansons tristes.",
+  "n": "chanson",
+  "t": "art",
+  "e": "She likes sad songs.",
+  "b": "A1",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "___ fenêtres de la cuisine sont sales.",
+  "n": "fenêtre",
+  "t": "art",
+  "e": "The kitchen windows are dirty.",
+  "b": "A2",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "Tu as vu ___ photos de la fête ?",
+  "n": "photo",
+  "t": "art",
+  "e": "Have you seen the photos from the party?",
+  "b": "A1",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "___ étudiants de ma classe ont un examen lundi.",
+  "n": "étudiant",
+  "t": "art",
+  "e": "The students in my class have an exam on Monday.",
+  "b": "A2",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "___ chiens n'ont pas le droit d'entrer.",
+  "n": "chien",
+  "t": "art",
+  "e": "Dogs are not allowed in.",
+  "b": "A1",
+  "a": "les",
+  "pl": 1
+ },
+ {
+  "q": "J'ai ___ frère et deux sœurs.",
+  "n": "frère",
+  "t": "art",
+  "e": "I've got one brother and two sisters.",
+  "b": "A1",
+  "a": "un"
+ },
+ {
+  "q": "Je voudrais ___ café, s'il vous plaît.",
+  "n": "café",
+  "t": "art",
+  "e": "I'd like a coffee, please.",
+  "b": "A1",
+  "a": "un"
+ },
+ {
+  "q": "Il y a ___ chat dans la cuisine !",
+  "n": "chat",
+  "t": "art",
+  "e": "There's a cat in the kitchen!",
+  "b": "A2",
+  "a": "un"
+ },
+ {
+  "q": "C'est ___ ami de mon père.",
+  "n": "ami",
+  "t": "art",
+  "e": "He's a friend of my father's.",
+  "b": "A1",
+  "a": "un"
+ },
+ {
+  "q": "Elle a ___ chien très gentil.",
+  "n": "chien",
+  "t": "art",
+  "e": "She has a very sweet dog.",
+  "b": "A1",
+  "a": "un"
+ },
+ {
+  "q": "Il y a ___ problème avec la voiture.",
+  "n": "problème",
+  "t": "art",
+  "e": "There's a problem with the car.",
+  "b": "A1",
+  "a": "un"
+ },
+ {
+  "q": "J'habite dans ___ appartement au centre-ville.",
+  "n": "appartement",
+  "t": "art",
+  "e": "I live in a flat in the town centre.",
+  "b": "A2",
+  "a": "un"
+ },
+ {
+  "q": "C'est ___ film très drôle.",
+  "n": "film",
+  "t": "art",
+  "e": "It's a very funny film.",
+  "b": "A1",
+  "a": "un"
+ },
+ {
+  "q": "Il y a ___ restaurant italien près d'ici.",
+  "n": "restaurant",
+  "t": "art",
+  "e": "There's an Italian restaurant near here.",
+  "b": "A2",
+  "a": "un"
+ },
+ {
+  "q": "Tu as ___ stylo, s'il te plaît ?",
+  "n": "stylo",
+  "t": "art",
+  "e": "Have you got a pen, please?",
+  "b": "B1",
+  "a": "un"
+ },
+ {
+  "q": "Je cherche ___ hôtel pas trop cher.",
+  "n": "hôtel",
+  "t": "art",
+  "e": "I'm looking for a hotel that isn't too expensive.",
+  "b": "A1",
+  "a": "un"
+ },
+ {
+  "q": "Mon fils a ___ examen demain.",
+  "n": "examen",
+  "t": "art",
+  "e": "My son has an exam tomorrow.",
+  "b": "A2",
+  "a": "un"
+ },
+ {
+  "q": "C'est ___ homme très gentil.",
+  "n": "homme",
+  "t": "art",
+  "e": "He's a very kind man.",
+  "b": "A1",
+  "a": "un"
+ },
+ {
+  "q": "Il y a ___ arbre devant la maison.",
+  "n": "arbre",
+  "t": "art",
+  "e": "There's a tree in front of the house.",
+  "b": "A2",
+  "a": "un"
+ },
+ {
+  "q": "On a ___ jardin derrière la maison.",
+  "n": "jardin",
+  "t": "art",
+  "e": "We have a garden behind the house.",
+  "b": "A2",
+  "a": "un"
+ },
+ {
+  "q": "J'ai acheté ___ cadeau pour ma mère.",
+  "n": "cadeau",
+  "t": "art",
+  "e": "I bought a present for my mother.",
+  "b": "A1",
+  "a": "un"
+ },
+ {
+  "q": "Il y a ___ marché tous les samedis.",
+  "n": "marché",
+  "t": "art",
+  "e": "There's a market every Saturday.",
+  "b": "A2",
+  "a": "un"
+ },
+ {
+  "q": "C'est ___ bon livre.",
+  "n": "livre",
+  "t": "art",
+  "e": "It's a good book.",
+  "b": "A2",
+  "a": "un"
+ },
+ {
+  "q": "Il fait ___ temps magnifique.",
+  "n": "temps",
+  "t": "art",
+  "e": "The weather is gorgeous.",
+  "b": "A1",
+  "a": "un"
+ },
+ {
+  "q": "Prends ___ taxi, c'est plus rapide.",
+  "n": "taxi",
+  "t": "art",
+  "e": "Take a taxi, it's quicker.",
+  "b": "A2",
+  "a": "un"
+ },
+ {
+  "q": "Il y a ___ oiseau sur le toit.",
+  "n": "oiseau",
+  "t": "art",
+  "e": "There's a bird on the roof.",
+  "b": "A2",
+  "a": "un"
+ },
+ {
+  "q": "Elle a ___ oncle à Montréal.",
+  "n": "oncle",
+  "t": "art",
+  "e": "She has an uncle in Montreal.",
+  "b": "A1",
+  "a": "un"
+ },
+ {
+  "q": "J'ai ___ ordinateur tout neuf.",
+  "n": "ordinateur",
+  "t": "art",
+  "e": "I've got a brand new computer.",
+  "b": "A2",
+  "a": "un"
+ },
+ {
+  "q": "Il y a ___ héros dans chaque histoire.",
+  "n": "héros",
+  "t": "art",
+  "e": "There's a hero in every story.",
+  "b": "A2",
+  "a": "un"
+ },
+ {
+  "q": "Il y a ___ lit et une table.",
+  "n": "lit",
+  "t": "art",
+  "e": "There's a bed and a table.",
+  "b": "A2",
+  "a": "un"
+ },
+ {
+  "q": "Il y a ___ hall immense à l'entrée.",
+  "n": "hall",
+  "t": "art",
+  "e": "There's a huge hall at the entrance.",
+  "b": "B1",
+  "a": "un"
+ },
+ {
+  "q": "J'ai ___ idée !",
+  "n": "idée",
+  "t": "art",
+  "e": "I've got an idea!",
+  "b": "A1",
+  "a": "une"
+ },
+ {
+  "q": "Il y a ___ pharmacie près d'ici ?",
+  "n": "pharmacie",
+  "t": "art",
+  "e": "Is there a chemist's near here?",
+  "b": "A2",
+  "a": "une"
+ },
+ {
+  "q": "C'est ___ ville très agréable.",
+  "n": "ville",
+  "t": "art",
+  "e": "It's a very pleasant town.",
+  "b": "A1",
+  "a": "une"
+ },
+ {
+  "q": "J'ai ___ sœur à Paris.",
+  "n": "sœur",
+  "t": "art",
+  "e": "I have a sister in Paris.",
+  "b": "A1",
+  "a": "une"
+ },
+ {
+  "q": "Je voudrais ___ bière, s'il vous plaît.",
+  "n": "bière",
+  "t": "art",
+  "e": "I'd like a beer, please.",
+  "b": "A2",
+  "a": "une"
+ },
+ {
+  "q": "On habite dans ___ petite maison.",
+  "n": "maison",
+  "t": "art",
+  "e": "We live in a small house.",
+  "b": "A1",
+  "a": "une"
+ },
+ {
+  "q": "J'ai ___ question pour vous.",
+  "n": "question",
+  "t": "art",
+  "e": "I have a question for you.",
+  "b": "A1",
+  "a": "une"
+ },
+ {
+  "q": "C'est ___ amie d'enfance.",
+  "n": "amie",
+  "t": "art",
+  "e": "She's a childhood friend.",
+  "b": "A1",
+  "a": "une"
+ },
+ {
+  "q": "Il y a ___ voiture devant le garage.",
+  "n": "voiture",
+  "t": "art",
+  "e": "There's a car in front of the garage.",
+  "b": "A1",
+  "a": "une"
+ },
+ {
+  "q": "Elle porte ___ robe bleue.",
+  "n": "robe",
+  "t": "art",
+  "e": "She's wearing a blue dress.",
+  "b": "A2",
+  "a": "une"
+ },
+ {
+  "q": "C'est ___ bonne nouvelle !",
+  "n": "nouvelle",
+  "t": "art",
+  "e": "That's good news!",
+  "b": "A2",
+  "a": "une"
+ },
+ {
+  "q": "J'ai ___ réunion à dix heures.",
+  "n": "réunion",
+  "t": "art",
+  "e": "I have a meeting at ten.",
+  "b": "A2",
+  "a": "une"
+ },
+ {
+  "q": "Il y a ___ école dans le village.",
+  "n": "école",
+  "t": "art",
+  "e": "There's a school in the village.",
+  "b": "A1",
+  "a": "une"
+ },
+ {
+  "q": "Elle a ___ heure de retard.",
+  "n": "heure",
+  "t": "art",
+  "e": "She's an hour late.",
+  "b": "A1",
+  "a": "une"
+ },
+ {
+  "q": "C'est ___ histoire vraie.",
+  "n": "histoire",
+  "t": "art",
+  "e": "It's a true story.",
+  "b": "A1",
+  "a": "une"
+ },
+ {
+  "q": "Il y a ___ fête chez Paul samedi.",
+  "n": "fête",
+  "t": "art",
+  "e": "There's a party at Paul's on Saturday.",
+  "b": "A1",
+  "a": "une"
+ },
+ {
+  "q": "Tu veux ___ pomme ?",
+  "n": "pomme",
+  "t": "art",
+  "e": "Do you want an apple?",
+  "b": "A2",
+  "a": "une"
+ },
+ {
+  "q": "On a ___ chambre avec vue sur la mer.",
+  "n": "chambre",
+  "t": "art",
+  "e": "We have a room with a sea view.",
+  "b": "A1",
+  "a": "une"
+ },
+ {
+  "q": "Il y a ___ église sur la place.",
+  "n": "église",
+  "t": "art",
+  "e": "There's a church in the square.",
+  "b": "A2",
+  "a": "une"
+ },
+ {
+  "q": "Elle a ___ fille de cinq ans.",
+  "n": "fille",
+  "t": "art",
+  "e": "She has a five year old daughter.",
+  "b": "A1",
+  "a": "une"
+ },
+ {
+  "q": "J'ai trouvé ___ clé dans la rue.",
+  "n": "clé",
+  "t": "art",
+  "e": "I found a key in the street.",
+  "b": "A1",
+  "a": "une"
+ },
+ {
+  "q": "C'est ___ chanson très connue.",
+  "n": "chanson",
+  "t": "art",
+  "e": "It's a very well known song.",
+  "b": "A1",
+  "a": "une"
+ },
+ {
+  "q": "On prend ___ photo ensemble ?",
+  "n": "photo",
+  "t": "art",
+  "e": "Shall we take a photo together?",
+  "b": "A1",
+  "a": "une"
+ },
+ {
+  "q": "Il y a ___ plage tout près de l'hôtel.",
+  "n": "plage",
+  "t": "art",
+  "e": "There's a beach right next to the hotel.",
+  "b": "A2",
+  "a": "une"
+ },
+ {
+  "q": "C'est ___ île magnifique.",
+  "n": "île",
+  "t": "art",
+  "e": "It's a beautiful island.",
+  "b": "A2",
+  "a": "une"
+ }
+]

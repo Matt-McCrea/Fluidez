@@ -1,0 +1,493 @@
+[
+ {
+  "q": "Quand je suis entré, le concert avait déjà ___ (commencer).",
+  "v": "commencer",
+  "t": "pqp",
+  "p": "il",
+  "e": "When I went in, the concert had already started.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand nous sommes arrivés, le train était déjà ___ (partir).",
+  "v": "partir",
+  "t": "pqp",
+  "p": "il",
+  "e": "When we arrived, the train had already left.",
+  "b": "B1"
+ },
+ {
+  "q": "J'avais déjà ___ (manger) quand mes amis ont appelé.",
+  "v": "manger",
+  "t": "pqp",
+  "p": "je",
+  "e": "I had already eaten when my friends called.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand je suis passée, Lisa était déjà ___ (sortir).",
+  "v": "sortir",
+  "t": "pqp",
+  "p": "il",
+  "agree": "f",
+  "e": "When I came by, Lisa had already gone out.",
+  "b": "B1"
+ },
+ {
+  "q": "Ils avaient déjà ___ (vendre) la maison quand la crise est arrivée.",
+  "v": "vendre",
+  "t": "pqp",
+  "p": "ils",
+  "e": "They had already sold the house when the crisis came.",
+  "b": "B1"
+ },
+ {
+  "q": "Tu avais déjà ___ (lire) ce livre avant le cours ?",
+  "v": "lire",
+  "t": "pqp",
+  "p": "tu",
+  "e": "Had you already read this book before the class?",
+  "b": "B1"
+ },
+ {
+  "q": "Elle m'a dit qu'elle avait ___ (perdre) son passeport.",
+  "v": "perdre",
+  "t": "pqp",
+  "p": "il",
+  "e": "She told me she had lost her passport.",
+  "b": "B1"
+ },
+ {
+  "q": "Nous avions déjà ___ (acheter) nos billets.",
+  "v": "acheter",
+  "t": "pqp",
+  "p": "nous",
+  "e": "We had already bought our tickets.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand la police est arrivée, les voleurs étaient déjà ___ (partir).",
+  "v": "partir",
+  "t": "pqp",
+  "p": "ils",
+  "agree": "mp",
+  "e": "When the police arrived, the thieves had already left.",
+  "b": "B1"
+ },
+ {
+  "q": "Il était triste parce que son chat était ___ (mourir).",
+  "v": "mourir",
+  "t": "pqp",
+  "p": "il",
+  "e": "He was sad because his cat had died.",
+  "b": "B1"
+ },
+ {
+  "q": "Vous aviez déjà ___ (visiter) Lyon avant de vous installer ici ?",
+  "v": "visiter",
+  "t": "pqp",
+  "p": "vous",
+  "e": "Had you already visited Lyon before settling here?",
+  "b": "B1"
+ },
+ {
+  "q": "Je n'avais jamais ___ (voir) la mer avant mes vingt ans.",
+  "v": "voir",
+  "t": "pqp",
+  "p": "je",
+  "e": "I had never seen the sea before I was twenty.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand je l'ai rencontré, il avait déjà ___ (écrire) trois romans.",
+  "v": "écrire",
+  "t": "pqp",
+  "p": "il",
+  "e": "When I met him, he had already written three novels.",
+  "b": "B1"
+ },
+ {
+  "q": "Mes cousines étaient ___ (arriver) la veille.",
+  "v": "arriver",
+  "t": "pqp",
+  "p": "ils",
+  "agree": "fp",
+  "e": "My cousins had arrived the day before.",
+  "b": "B1"
+ },
+ {
+  "q": "Le magasin avait déjà ___ (fermer) quand je suis arrivé.",
+  "v": "fermer",
+  "t": "pqp",
+  "p": "il",
+  "e": "The shop had already closed when I arrived.",
+  "b": "B1"
+ },
+ {
+  "q": "Nous avions ___ (marcher) toute la journée, alors nous étions fatigués.",
+  "v": "marcher",
+  "t": "pqp",
+  "p": "nous",
+  "e": "We had walked all day, so we were tired.",
+  "b": "B1"
+ },
+ {
+  "q": "Elle était fatiguée parce qu'elle avait mal ___ (dormir).",
+  "v": "dormir",
+  "t": "pqp",
+  "p": "il",
+  "e": "She was tired because she had slept badly.",
+  "b": "B1"
+ },
+ {
+  "q": "Tu m'as dit que tu avais ___ (réussir) ton examen !",
+  "v": "réussir",
+  "t": "pqp",
+  "p": "tu",
+  "e": "You told me you had passed your exam!",
+  "b": "B1"
+ },
+ {
+  "q": "J'avais ___ (oublier) mon parapluie, alors j'étais trempé.",
+  "v": "oublier",
+  "t": "pqp",
+  "p": "je",
+  "e": "I had forgotten my umbrella, so I was soaked.",
+  "b": "B1"
+ },
+ {
+  "q": "Ils avaient ___ (annuler) la réunion la veille.",
+  "v": "annuler",
+  "t": "pqp",
+  "p": "ils",
+  "e": "They had cancelled the meeting the day before.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand je suis rentré, ma femme s'était déjà ___ (se coucher).",
+  "v": "se coucher",
+  "t": "pqp",
+  "p": "il",
+  "agree": "f",
+  "e": "When I got home, my wife had already gone to bed.",
+  "b": "B1"
+ },
+ {
+  "q": "Il m'a raconté qu'il était ___ (tomber) dans l'escalier.",
+  "v": "tomber",
+  "t": "pqp",
+  "p": "il",
+  "e": "He told me he had fallen on the stairs.",
+  "b": "B1"
+ },
+ {
+  "q": "Nous nous étions ___ (se rencontrer) deux ans plus tôt à Rome.",
+  "v": "se rencontrer",
+  "t": "pqp",
+  "p": "nous",
+  "agree": "mp",
+  "e": "We had met in Rome two years earlier.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand nous sommes arrivés, la neige avait tout ___ (couvrir).",
+  "v": "couvrir",
+  "t": "pqp",
+  "p": "il",
+  "e": "When we arrived, the snow had covered everything.",
+  "b": "B1"
+ },
+ {
+  "q": "Vous aviez déjà ___ (finir) quand je suis arrivée ?",
+  "v": "finir",
+  "t": "pqp",
+  "p": "vous",
+  "e": "Had you already finished when I arrived?",
+  "b": "B1"
+ },
+ {
+  "q": "Le voleur était ___ (passer) par la fenêtre de la cuisine.",
+  "v": "passer",
+  "t": "pqp",
+  "p": "il",
+  "e": "The thief had got in through the kitchen window.",
+  "b": "B1"
+ },
+ {
+  "q": "Mon grand-père avait ___ (servir) dans la marine pendant vingt ans.",
+  "v": "servir",
+  "t": "pqp",
+  "p": "il",
+  "e": "My grandfather had served in the navy for twenty years.",
+  "b": "B1"
+ },
+ {
+  "q": "Elles étaient ___ (partir) en vacances sans nous prévenir.",
+  "v": "partir",
+  "t": "pqp",
+  "p": "ils",
+  "agree": "fp",
+  "e": "They had gone on holiday without telling us.",
+  "b": "B1"
+ },
+ {
+  "q": "Je lui ai rendu le livre qu'il m'avait ___ (prêter).",
+  "v": "prêter",
+  "t": "pqp",
+  "p": "je",
+  "e": "I gave him back the book he had lent me.",
+  "b": "B1"
+ },
+ {
+  "q": "Elle avait ___ (travailler) toute la matinée pour ce gâteau.",
+  "v": "travailler",
+  "t": "pqp",
+  "p": "il",
+  "e": "She had worked all morning on this cake.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand nous sommes arrivés, le soleil avait déjà ___ (disparaître).",
+  "v": "disparaître",
+  "t": "pqp",
+  "p": "il",
+  "e": "When we arrived, the sun had already disappeared.",
+  "b": "B1"
+ },
+ {
+  "q": "L'année d'avant, Hugo était ___ (venir) à Paris.",
+  "v": "venir",
+  "t": "pqp",
+  "p": "il",
+  "e": "The year before, Hugo had come to Paris.",
+  "b": "B1"
+ },
+ {
+  "q": "Tu avais ___ (téléphoner) à tes parents avant de partir ?",
+  "v": "téléphoner",
+  "t": "pqp",
+  "p": "tu",
+  "e": "Had you phoned your parents before leaving?",
+  "b": "B1"
+ },
+ {
+  "q": "Les invités avaient déjà ___ (manger) tout le gâteau.",
+  "v": "manger",
+  "t": "pqp",
+  "p": "ils",
+  "e": "The guests had already eaten all the cake.",
+  "b": "B1"
+ },
+ {
+  "q": "Je n'avais jamais ___ (boire) un si bon vin.",
+  "v": "boire",
+  "t": "pqp",
+  "p": "je",
+  "e": "I had never drunk such a good wine.",
+  "b": "B1"
+ },
+ {
+  "q": "La réunion avait ___ (durer) trois heures.",
+  "v": "durer",
+  "t": "pqp",
+  "p": "il",
+  "e": "The meeting had lasted three hours.",
+  "b": "B1"
+ },
+ {
+  "q": "Nous avions ___ (laisser) la voiture devant la gare.",
+  "v": "laisser",
+  "t": "pqp",
+  "p": "nous",
+  "e": "We had left the car in front of the station.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand elle est arrivée, la fête avait déjà ___ (commencer).",
+  "v": "commencer",
+  "t": "pqp",
+  "p": "il",
+  "e": "When she arrived, the party had already started.",
+  "b": "B1"
+ },
+ {
+  "q": "Ce jour-là, ma mère était ___ (aller) au marché très tôt.",
+  "v": "aller",
+  "t": "pqp",
+  "p": "il",
+  "agree": "f",
+  "e": "That day, my mother had gone to the market very early.",
+  "b": "B1"
+ },
+ {
+  "q": "Ils avaient ___ (préparer) leur voyage pendant des mois.",
+  "v": "préparer",
+  "t": "pqp",
+  "p": "ils",
+  "e": "They had prepared their trip for months.",
+  "b": "B1"
+ },
+ {
+  "q": "Il pensait que tu avais ___ (oublier) son anniversaire.",
+  "v": "oublier",
+  "t": "pqp",
+  "p": "il",
+  "e": "He thought you had forgotten his birthday.",
+  "b": "B1"
+ },
+ {
+  "q": "Vous aviez ___ (fermer) la porte à clé ?",
+  "v": "fermer",
+  "t": "pqp",
+  "p": "vous",
+  "e": "Had you locked the door?",
+  "b": "B1"
+ },
+ {
+  "q": "Marc était ___ (rester) trois jours à l'hôpital.",
+  "v": "rester",
+  "t": "pqp",
+  "p": "il",
+  "e": "Marc had stayed three days in hospital.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand je l'ai revue, Claire avait beaucoup ___ (changer).",
+  "v": "changer",
+  "t": "pqp",
+  "p": "il",
+  "e": "When I saw her again, Claire had changed a lot.",
+  "b": "B1"
+ },
+ {
+  "q": "Mes parents avaient ___ (vivre) toute leur vie dans ce village.",
+  "v": "vivre",
+  "t": "pqp",
+  "p": "ils",
+  "e": "My parents had lived their whole lives in this village.",
+  "b": "B1"
+ },
+ {
+  "q": "Elle avait ___ (écrire) une lettre à son ami avant de partir.",
+  "v": "écrire",
+  "t": "pqp",
+  "p": "il",
+  "e": "She had written a letter to her friend before leaving.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand nous sommes sortis, il avait ___ (pleuvoir) toute la nuit.",
+  "v": "pleuvoir",
+  "t": "pqp",
+  "p": "il",
+  "e": "When we went out, it had rained all night.",
+  "b": "B1"
+ },
+ {
+  "q": "Nous étions ___ (rentrer) de vacances la veille.",
+  "v": "rentrer",
+  "t": "pqp",
+  "p": "nous",
+  "agree": "mp",
+  "e": "We had come back from holiday the day before.",
+  "b": "B1"
+ },
+ {
+  "q": "Les enfants avaient ___ (jouer) toute la journée.",
+  "v": "jouer",
+  "t": "pqp",
+  "p": "ils",
+  "e": "The children had played all day.",
+  "b": "B1"
+ },
+ {
+  "q": "Ma tante était ___ (partir) en Amérique en 1960.",
+  "v": "partir",
+  "t": "pqp",
+  "p": "il",
+  "agree": "f",
+  "e": "My aunt had left for America in 1960.",
+  "b": "B1"
+ },
+ {
+  "q": "Il avait ___ (boire) trop de café, alors il ne dormait pas.",
+  "v": "boire",
+  "t": "pqp",
+  "p": "il",
+  "e": "He had drunk too much coffee, so he could not sleep.",
+  "b": "B1"
+ },
+ {
+  "q": "La directrice avait ___ (organiser) une réunion pour le lundi.",
+  "v": "organiser",
+  "t": "pqp",
+  "p": "il",
+  "e": "The headmistress had organised a meeting for the Monday.",
+  "b": "B1"
+ },
+ {
+  "q": "J'avais ___ (voir) ce film trois fois avant de le comprendre.",
+  "v": "voir",
+  "t": "pqp",
+  "p": "je",
+  "e": "I had seen this film three times before I understood it.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand je suis arrivée, Paul avait déjà ___ (préparer) le repas.",
+  "v": "préparer",
+  "t": "pqp",
+  "p": "il",
+  "e": "When I arrived, Paul had already made the meal.",
+  "b": "B1"
+ },
+ {
+  "q": "Ils s'étaient ___ (se marier) en 2010.",
+  "v": "se marier",
+  "t": "pqp",
+  "p": "ils",
+  "agree": "mp",
+  "e": "They had got married in 2010.",
+  "b": "B1"
+ },
+ {
+  "q": "Léa s'était ___ (se lever) très tôt ce jour-là.",
+  "v": "se lever",
+  "t": "pqp",
+  "p": "il",
+  "agree": "f",
+  "e": "Léa had got up very early that day.",
+  "b": "B1"
+ },
+ {
+  "q": "Vous aviez ___ (recevoir) le message avant la réunion ?",
+  "v": "recevoir",
+  "t": "pqp",
+  "p": "vous",
+  "e": "Had you received the message before the meeting?",
+  "b": "B1"
+ },
+ {
+  "q": "Il était ___ (devenir) médecin après dix ans d'études.",
+  "v": "devenir",
+  "t": "pqp",
+  "p": "il",
+  "e": "He had become a doctor after ten years of study.",
+  "b": "B1"
+ },
+ {
+  "q": "Nous avions ___ (chercher) des heures pour trouver l'hôtel.",
+  "v": "chercher",
+  "t": "pqp",
+  "p": "nous",
+  "e": "We had looked for the hotel for hours.",
+  "b": "B1"
+ },
+ {
+  "q": "Ce jour-là, ils avaient ___ (quitter) la maison avant midi.",
+  "v": "quitter",
+  "t": "pqp",
+  "p": "ils",
+  "e": "That day, they had left the house before noon.",
+  "b": "B1"
+ }
+]

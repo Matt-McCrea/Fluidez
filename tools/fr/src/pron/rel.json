@@ -1,0 +1,905 @@
+[
+ {
+  "q": "C'est le garçon ___ habite ici.",
+  "a": "qui",
+  "o": [
+   "qui",
+   "que",
+   "dont",
+   "où"
+  ],
+  "e": "That's the boy who lives here.",
+  "w": "Qui is the subject of the next verb: it is followed directly by a verb.",
+  "wf": "qui + verbe : sujet.",
+  "t": "rel",
+  "b": "A1"
+ },
+ {
+  "q": "Le livre ___ je lis est super.",
+  "a": "que",
+  "o": [
+   "que",
+   "qui",
+   "dont",
+   "où"
+  ],
+  "e": "The book I'm reading is great.",
+  "w": "Que is the object of the next verb: it is followed by a subject (je, tu, elle...).",
+  "wf": "que + sujet : complément.",
+  "t": "rel",
+  "b": "A1"
+ },
+ {
+  "q": "La ville ___ j'habite est petite.",
+  "a": "où",
+  "o": [
+   "où",
+   "que",
+   "qui",
+   "dont"
+  ],
+  "e": "The town where I live is small.",
+  "w": "Où is for a place or a time: la ville où, le jour où.",
+  "wf": "où : lieu.",
+  "t": "rel",
+  "b": "A1"
+ },
+ {
+  "q": "J'ai un ami ___ parle chinois.",
+  "a": "qui",
+  "o": [
+   "qui",
+   "que",
+   "dont",
+   "où"
+  ],
+  "e": "I have a friend who speaks Chinese.",
+  "w": "Qui is the subject of the next verb: it is followed directly by a verb.",
+  "wf": "qui + verbe : sujet.",
+  "t": "rel",
+  "b": "A1"
+ },
+ {
+  "q": "C'est la maison ___ je suis né.",
+  "a": "où",
+  "o": [
+   "où",
+   "que",
+   "qui",
+   "dont"
+  ],
+  "e": "That's the house where I was born.",
+  "w": "Où is for a place or a time: la ville où, le jour où.",
+  "wf": "où : lieu.",
+  "t": "rel",
+  "b": "A1"
+ },
+ {
+  "q": "Voici la femme ___ travaille avec moi.",
+  "a": "qui",
+  "o": [
+   "qui",
+   "que",
+   "dont",
+   "où"
+  ],
+  "e": "Here's the woman who works with me.",
+  "w": "Qui is the subject of the next verb: it is followed directly by a verb.",
+  "wf": "qui + verbe : sujet.",
+  "t": "rel",
+  "b": "A1"
+ },
+ {
+  "q": "La robe ___ elle porte est jolie.",
+  "a": "que",
+  "o": [
+   "que",
+   "qui",
+   "dont",
+   "où"
+  ],
+  "e": "The dress she's wearing is pretty.",
+  "w": "Que is the object of the next verb: it is followed by a subject (je, tu, elle...).",
+  "wf": "que + sujet : complément.",
+  "t": "rel",
+  "b": "A1"
+ },
+ {
+  "q": "C'est un restaurant ___ on mange bien.",
+  "a": "où",
+  "o": [
+   "où",
+   "que",
+   "qui",
+   "dont"
+  ],
+  "e": "It's a restaurant where the food is good.",
+  "w": "Où is for a place or a time: la ville où, le jour où.",
+  "wf": "où : lieu.",
+  "t": "rel",
+  "b": "A1"
+ },
+ {
+  "q": "Le chat ___ dort sur le lit est à moi.",
+  "a": "qui",
+  "o": [
+   "qui",
+   "que",
+   "dont",
+   "où"
+  ],
+  "e": "The cat sleeping on the bed is mine.",
+  "w": "Qui is the subject of the next verb: it is followed directly by a verb.",
+  "wf": "qui + verbe : sujet.",
+  "t": "rel",
+  "b": "A1"
+ },
+ {
+  "q": "C'est le café ___ je préfère.",
+  "a": "que",
+  "o": [
+   "que",
+   "qui",
+   "dont",
+   "où"
+  ],
+  "e": "It's the coffee I like best.",
+  "w": "Que is the object of the next verb: it is followed by a subject (je, tu, elle...).",
+  "wf": "que + sujet : complément.",
+  "t": "rel",
+  "b": "A1"
+ },
+ {
+  "q": "Le bus ___ va à la gare part à huit heures.",
+  "a": "qui",
+  "o": [
+   "qui",
+   "que",
+   "dont",
+   "où"
+  ],
+  "e": "The bus that goes to the station leaves at eight.",
+  "w": "Qui is the subject of the next verb: it is followed directly by a verb.",
+  "wf": "qui + verbe : sujet.",
+  "t": "rel",
+  "b": "A1"
+ },
+ {
+  "q": "J'aime les chansons ___ parlent d'amour.",
+  "a": "qui",
+  "o": [
+   "qui",
+   "que",
+   "dont",
+   "où"
+  ],
+  "e": "I like songs about love.",
+  "w": "Qui is the subject of the next verb: it is followed directly by a verb.",
+  "wf": "qui + verbe : sujet.",
+  "t": "rel",
+  "b": "A1"
+ },
+ {
+  "q": "Le gâteau ___ tu as fait est délicieux.",
+  "a": "que",
+  "o": [
+   "que",
+   "qui",
+   "dont",
+   "où"
+  ],
+  "e": "The cake you made is delicious.",
+  "w": "Que is the object of the next verb: it is followed by a subject (je, tu, elle...).",
+  "wf": "que + sujet : complément.",
+  "t": "rel",
+  "b": "A1"
+ },
+ {
+  "q": "Le quartier ___ nous habitons est calme.",
+  "a": "où",
+  "o": [
+   "où",
+   "que",
+   "qui",
+   "dont"
+  ],
+  "e": "The area where we live is quiet.",
+  "w": "Où is for a place or a time: la ville où, le jour où.",
+  "wf": "où : lieu.",
+  "t": "rel",
+  "b": "A1"
+ },
+ {
+  "q": "Tu connais quelqu'un ___ parle anglais ?",
+  "a": "qui",
+  "o": [
+   "qui",
+   "que",
+   "dont",
+   "où"
+  ],
+  "e": "Do you know anyone who speaks English?",
+  "w": "Qui is the subject of the next verb: it is followed directly by a verb.",
+  "wf": "qui + verbe : sujet.",
+  "t": "rel",
+  "b": "A1"
+ },
+ {
+  "q": "La plage ___ on va est magnifique.",
+  "a": "où",
+  "o": [
+   "où",
+   "que",
+   "qui",
+   "dont"
+  ],
+  "e": "The beach we're going to is beautiful.",
+  "w": "Où is for a place or a time: la ville où, le jour où.",
+  "wf": "où : lieu.",
+  "t": "rel",
+  "b": "A1"
+ },
+ {
+  "q": "Le film ___ nous avons vu était long.",
+  "a": "que",
+  "o": [
+   "que",
+   "qui",
+   "dont",
+   "où"
+  ],
+  "e": "The film we saw was long.",
+  "w": "Que is the object of the next verb: it is followed by a subject (je, tu, elle...).",
+  "wf": "que + sujet : complément.",
+  "t": "rel",
+  "b": "A2"
+ },
+ {
+  "q": "Le jour ___ il est arrivé, il pleuvait.",
+  "a": "où",
+  "o": [
+   "où",
+   "que",
+   "qui",
+   "dont"
+  ],
+  "e": "The day he arrived, it was raining.",
+  "w": "After a time word like le jour or l'année, French uses où, not quand.",
+  "wf": "où : temps.",
+  "t": "rel",
+  "b": "A2"
+ },
+ {
+  "q": "Les gens ___ j'ai rencontrés sont sympas.",
+  "a": "que",
+  "o": [
+   "que",
+   "qui",
+   "dont",
+   "où"
+  ],
+  "e": "The people I met are nice.",
+  "w": "Que is the object of the next verb: it is followed by a subject (je, tu, elle...).",
+  "wf": "que + sujet : complément.",
+  "t": "rel",
+  "b": "A2"
+ },
+ {
+  "q": "C'est l'année ___ nous nous sommes mariés.",
+  "a": "où",
+  "o": [
+   "où",
+   "que",
+   "qui",
+   "dont"
+  ],
+  "e": "That's the year we got married.",
+  "w": "After a time word like l'année, French uses où.",
+  "wf": "où : temps.",
+  "t": "rel",
+  "b": "A2"
+ },
+ {
+  "q": "Le prof ___ j'aime le plus, c'est Mme Martin.",
+  "a": "que",
+  "o": [
+   "que",
+   "qui",
+   "dont",
+   "où"
+  ],
+  "e": "The teacher I like most is Mrs Martin.",
+  "w": "Que is the object of the next verb: it is followed by a subject (je, tu, elle...).",
+  "wf": "que + sujet : complément.",
+  "t": "rel",
+  "b": "A2"
+ },
+ {
+  "q": "C'est l'homme ___ je t'ai parlé.",
+  "a": "dont",
+  "o": [
+   "dont",
+   "que",
+   "qui",
+   "où"
+  ],
+  "e": "That's the man I told you about.",
+  "w": "Parler de quelqu'un: de + relative becomes dont.",
+  "wf": "parler de : dont.",
+  "t": "rel",
+  "b": "A2"
+ },
+ {
+  "q": "La fille ___ le père est médecin est ici.",
+  "a": "dont",
+  "o": [
+   "dont",
+   "que",
+   "qui",
+   "où"
+  ],
+  "e": "The girl whose father is a doctor is here.",
+  "w": "Dont shows possession, like whose: la fille dont le père...",
+  "wf": "dont : possession.",
+  "t": "rel",
+  "b": "A2"
+ },
+ {
+  "q": "Voici le livre ___ j'ai besoin.",
+  "a": "dont",
+  "o": [
+   "dont",
+   "que",
+   "qui",
+   "où"
+  ],
+  "e": "Here's the book I need.",
+  "w": "Avoir besoin de: de + relative becomes dont.",
+  "wf": "avoir besoin de : dont.",
+  "t": "rel",
+  "b": "A2"
+ },
+ {
+  "q": "C'est le moment ___ je préfère.",
+  "a": "que",
+  "o": [
+   "que",
+   "qui",
+   "où",
+   "dont"
+  ],
+  "e": "It's the moment I like best.",
+  "w": "Préférer takes a direct object, so que, even after moment.",
+  "wf": "préférer quelque chose : que.",
+  "t": "rel",
+  "b": "A2"
+ },
+ {
+  "q": "C'est le moment ___ il faut partir.",
+  "a": "où",
+  "o": [
+   "où",
+   "que",
+   "qui",
+   "dont"
+  ],
+  "e": "Now's the time to leave.",
+  "w": "After a time word like le moment, use où when it means when.",
+  "wf": "où : temps.",
+  "t": "rel",
+  "b": "A2"
+ },
+ {
+  "q": "La lettre ___ est arrivée ce matin est pour toi.",
+  "a": "qui",
+  "o": [
+   "qui",
+   "que",
+   "dont",
+   "où"
+  ],
+  "e": "The letter that came this morning is for you.",
+  "w": "Qui is the subject of the next verb: it is followed directly by a verb.",
+  "wf": "qui + verbe : sujet.",
+  "t": "rel",
+  "b": "A2"
+ },
+ {
+  "q": "Ce ___ tu dis est vrai.",
+  "a": "que",
+  "o": [
+   "que",
+   "qui",
+   "dont",
+   "où"
+  ],
+  "e": "What you're saying is true.",
+  "w": "Ce que means what, as the object: ce que tu dis.",
+  "wf": "ce que : complément.",
+  "t": "rel",
+  "b": "A2"
+ },
+ {
+  "q": "Ce ___ me plaît, c'est le calme.",
+  "a": "qui",
+  "o": [
+   "qui",
+   "que",
+   "dont",
+   "où"
+  ],
+  "e": "What I like is the peace and quiet.",
+  "w": "Ce qui means what, as the subject of the verb: ce qui me plaît.",
+  "wf": "ce qui : sujet.",
+  "t": "rel",
+  "b": "A2"
+ },
+ {
+  "q": "Le collègue ___ j'appelle est absent.",
+  "a": "que",
+  "o": [
+   "que",
+   "qui",
+   "dont",
+   "où"
+  ],
+  "e": "The colleague I'm calling is away.",
+  "w": "Que is the object of the next verb: it is followed by a subject (je, tu, elle...).",
+  "wf": "que + sujet : complément.",
+  "t": "rel",
+  "b": "A2"
+ },
+ {
+  "q": "C'est un projet ___ je suis fier.",
+  "a": "dont",
+  "o": [
+   "dont",
+   "que",
+   "qui",
+   "où"
+  ],
+  "e": "It's a project I'm proud of.",
+  "w": "Être fier de: de + relative becomes dont.",
+  "wf": "fier de : dont.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "Le stylo ___ tu te sers est à moi.",
+  "a": "dont",
+  "o": [
+   "dont",
+   "que",
+   "qui",
+   "où"
+  ],
+  "e": "The pen you're using is mine.",
+  "w": "Se servir de: de + relative becomes dont.",
+  "wf": "se servir de : dont.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "La voiture ___ il a envie coûte cher.",
+  "a": "dont",
+  "o": [
+   "dont",
+   "que",
+   "qui",
+   "où"
+  ],
+  "e": "The car he wants is expensive.",
+  "w": "Avoir envie de: de + relative becomes dont.",
+  "wf": "avoir envie de : dont.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "Ce ___ j'ai peur, c'est l'avion.",
+  "a": "dont",
+  "o": [
+   "dont",
+   "que",
+   "qui",
+   "où"
+  ],
+  "e": "What I'm afraid of is flying.",
+  "w": "Avoir peur de: ce + de becomes ce dont.",
+  "wf": "ce dont : avoir peur de.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "Une amie ___ le frère est acteur m'a invitée.",
+  "a": "dont",
+  "o": [
+   "dont",
+   "que",
+   "qui",
+   "où"
+  ],
+  "e": "A friend whose brother is an actor invited me.",
+  "w": "Dont shows possession, like whose: la fille dont le père...",
+  "wf": "dont : possession.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "Le problème ___ nous parlons est grave.",
+  "a": "dont",
+  "o": [
+   "dont",
+   "que",
+   "qui",
+   "où"
+  ],
+  "e": "The problem we're talking about is serious.",
+  "w": "Parler de: de + relative becomes dont.",
+  "wf": "parler de : dont.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "Le soir ___ on s'est rencontrés, il neigeait.",
+  "a": "où",
+  "o": [
+   "où",
+   "que",
+   "qui",
+   "dont"
+  ],
+  "e": "The evening we met, it was snowing.",
+  "w": "After a time word like le soir, French uses où.",
+  "wf": "où : temps.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "Les amis avec ___ je pars sont drôles.",
+  "a": "qui",
+  "o": [
+   "qui",
+   "que",
+   "dont",
+   "quoi"
+  ],
+  "x": [
+   "lesquels"
+  ],
+  "e": "The friends I'm going away with are funny.",
+  "w": "After a preposition, people take qui: avec qui.",
+  "wf": "préposition + qui pour une personne.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "Ce ___ il a besoin, c'est de repos.",
+  "a": "dont",
+  "o": [
+   "dont",
+   "que",
+   "qui",
+   "où"
+  ],
+  "e": "What he needs is rest.",
+  "w": "Avoir besoin de: ce + de becomes ce dont.",
+  "wf": "ce dont : avoir besoin de.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "Je ne sais pas ce ___ s'est passé.",
+  "a": "qui",
+  "o": [
+   "qui",
+   "que",
+   "dont",
+   "où"
+  ],
+  "e": "I don't know what happened.",
+  "w": "Ce qui is the subject of s'est passé.",
+  "wf": "ce qui : sujet.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "Dis-moi ce ___ tu veux.",
+  "a": "que",
+  "o": [
+   "que",
+   "qui",
+   "dont",
+   "où"
+  ],
+  "e": "Tell me what you want.",
+  "w": "Ce que is the object of tu veux.",
+  "wf": "ce que : complément.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "Le film ___ tout le monde parle sort demain.",
+  "a": "dont",
+  "o": [
+   "dont",
+   "que",
+   "qui",
+   "où"
+  ],
+  "e": "The film everyone's talking about comes out tomorrow.",
+  "w": "Parler de: de + relative becomes dont.",
+  "wf": "parler de : dont.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "C'est l'époque ___ tout était moins cher.",
+  "a": "où",
+  "o": [
+   "où",
+   "que",
+   "qui",
+   "dont"
+  ],
+  "e": "That was back when everything was cheaper.",
+  "w": "After a time word like l'époque, French uses où.",
+  "wf": "où : temps.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "Les documents ___ vous avez demandés sont prêts.",
+  "a": "que",
+  "o": [
+   "que",
+   "qui",
+   "dont",
+   "où"
+  ],
+  "e": "The documents you asked for are ready.",
+  "w": "Demander takes a direct object (no for), so que.",
+  "wf": "demander quelque chose : que.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "Voici les résultats ___ je suis satisfait.",
+  "a": "dont",
+  "o": [
+   "dont",
+   "que",
+   "qui",
+   "où"
+  ],
+  "e": "Here are the results I'm happy with.",
+  "w": "Être satisfait de: de + relative becomes dont.",
+  "wf": "satisfait de : dont.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "C'est quelqu'un à ___ on peut faire confiance.",
+  "a": "qui",
+  "o": [
+   "qui",
+   "que",
+   "dont",
+   "lequel"
+  ],
+  "e": "He's someone you can trust.",
+  "w": "After à, a person takes qui: à qui on peut faire confiance.",
+  "wf": "à qui pour une personne.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "C'est une région ___ le climat est doux.",
+  "a": "dont",
+  "o": [
+   "dont",
+   "que",
+   "qui",
+   "où"
+  ],
+  "e": "It's a region with a mild climate.",
+  "w": "Dont shows possession, like whose: la fille dont le père...",
+  "wf": "dont : possession.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "Le musée ___ je t'ai recommandé est fermé.",
+  "a": "que",
+  "o": [
+   "que",
+   "qui",
+   "dont",
+   "où"
+  ],
+  "e": "The museum I recommended to you is closed.",
+  "w": "Recommander takes a direct object, so que, even for a place.",
+  "wf": "recommander quelque chose : que.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "Tout ce ___ brille n'est pas or.",
+  "a": "qui",
+  "o": [
+   "qui",
+   "que",
+   "dont",
+   "où"
+  ],
+  "e": "All that glitters is not gold.",
+  "w": "Ce qui is the subject of brille.",
+  "wf": "ce qui : sujet.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "C'est exactement ce ___ je voulais dire.",
+  "a": "que",
+  "o": [
+   "que",
+   "qui",
+   "dont",
+   "où"
+  ],
+  "e": "That's exactly what I meant.",
+  "w": "Ce que is the object of vouloir dire.",
+  "wf": "ce que : complément.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "Le restaurant ___ nous avons dîné hier était excellent.",
+  "a": "où",
+  "o": [
+   "où",
+   "que",
+   "qui",
+   "dont"
+  ],
+  "e": "The restaurant where we had dinner yesterday was excellent.",
+  "w": "Où is for a place or a time: la ville où, le jour où.",
+  "wf": "où : lieu.",
+  "t": "rel",
+  "b": "B1"
+ },
+ {
+  "q": "C'est la raison pour ___ je suis parti.",
+  "a": "laquelle",
+  "o": [
+   "laquelle",
+   "lequel",
+   "qui",
+   "que"
+  ],
+  "e": "That's the reason I left.",
+  "w": "Raison is feminine; after pour, a thing takes laquelle.",
+  "wf": "pour laquelle : raison est féminin.",
+  "t": "rel",
+  "b": "B2"
+ },
+ {
+  "q": "L'entreprise pour ___ je travaille recrute.",
+  "a": "laquelle",
+  "o": [
+   "laquelle",
+   "lequel",
+   "lesquelles",
+   "que"
+  ],
+  "e": "The company I work for is hiring.",
+  "w": "After a preposition, a thing takes lequel, laquelle, lesquels or lesquelles.",
+  "wf": "préposition + laquelle.",
+  "t": "rel",
+  "b": "B2"
+ },
+ {
+  "q": "La table sur ___ j'ai posé mes clés est en bois.",
+  "a": "laquelle",
+  "o": [
+   "laquelle",
+   "qui",
+   "que",
+   "dont"
+  ],
+  "e": "The table I put my keys on is wooden.",
+  "w": "After a preposition, a thing takes lequel, laquelle, lesquels or lesquelles.",
+  "wf": "préposition + laquelle.",
+  "t": "rel",
+  "b": "B2"
+ },
+ {
+  "q": "C'est un sujet ___ je pense souvent.",
+  "a": "auquel",
+  "o": [
+   "auquel",
+   "dont",
+   "que",
+   "à qui"
+  ],
+  "e": "It's a subject I often think about.",
+  "w": "Penser à + a thing: à + lequel becomes auquel.",
+  "wf": "à + lequel : auquel.",
+  "t": "rel",
+  "b": "B2"
+ },
+ {
+  "q": "Le cas ___ il s'agit est délicat.",
+  "a": "dont",
+  "o": [
+   "dont",
+   "que",
+   "qui",
+   "où"
+  ],
+  "e": "The case in question is a delicate one.",
+  "w": "Il s'agit de: de + relative becomes dont.",
+  "wf": "il s'agit de : dont.",
+  "t": "rel",
+  "b": "B2"
+ },
+ {
+  "q": "Ce à ___ je m'attendais n'est jamais arrivé.",
+  "a": "quoi",
+  "o": [
+   "quoi",
+   "que",
+   "qui",
+   "lequel"
+  ],
+  "e": "What I was expecting never happened.",
+  "w": "After ce + preposition, use quoi: ce à quoi.",
+  "wf": "ce à quoi.",
+  "t": "rel",
+  "b": "B2"
+ },
+ {
+  "q": "L'homme à côté de ___ j'étais assis ronflait.",
+  "a": "qui",
+  "o": [
+   "qui",
+   "que",
+   "dont",
+   "lequel"
+  ],
+  "e": "The man I was sitting next to was snoring.",
+  "w": "After a preposition, a person takes qui; de lequel would contract to duquel.",
+  "wf": "préposition + qui pour une personne.",
+  "t": "rel",
+  "b": "B2"
+ },
+ {
+  "q": "Les raisons pour ___ il a démissionné restent floues.",
+  "a": "lesquelles",
+  "o": [
+   "lesquelles",
+   "lesquels",
+   "laquelle",
+   "qui"
+  ],
+  "e": "Why he resigned is still unclear.",
+  "w": "Raisons is feminine plural, so lesquelles after pour.",
+  "wf": "pour lesquelles : féminin pluriel.",
+  "t": "rel",
+  "b": "B2"
+ },
+ {
+  "q": "Le dossier sur ___ je travaille avance bien.",
+  "a": "lequel",
+  "o": [
+   "lequel",
+   "laquelle",
+   "qui",
+   "que"
+  ],
+  "e": "The file I'm working on is coming along well.",
+  "w": "Dossier is masculine; after sur, a thing takes lequel.",
+  "wf": "sur lequel : masculin.",
+  "t": "rel",
+  "b": "B2"
+ }
+]

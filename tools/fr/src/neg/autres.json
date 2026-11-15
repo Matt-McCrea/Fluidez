@@ -1,0 +1,1108 @@
+[
+ {
+  "q": "Je ___ (fumer), même en soirée.",
+  "a": "ne fume jamais",
+  "o": [
+   "ne fume jamais",
+   "ne jamais fume",
+   "ne fume pas jamais",
+   "ne fume plus"
+  ],
+  "x": [
+   "fume jamais"
+  ],
+  "e": "I never smoke, even at parties.",
+  "w": "Jamais replaces pas: ne before the verb, jamais after it.",
+  "wf": "ne ... jamais = never.",
+  "t": "autres",
+  "b": "A1"
+ },
+ {
+  "q": "Il ___ (être) à l'heure.",
+  "a": "n'est jamais",
+  "o": [
+   "n'est jamais",
+   "ne est jamais",
+   "n'est pas jamais",
+   "ne jamais est"
+  ],
+  "x": [
+   "est jamais"
+  ],
+  "e": "He's never on time.",
+  "w": "Jamais replaces pas, never added to it; ne becomes n' before a vowel.",
+  "wf": "ne ... jamais, sans pas.",
+  "t": "autres",
+  "b": "A1"
+ },
+ {
+  "q": "Nous ___ (aller) au cinéma.",
+  "a": "n'allons jamais",
+  "o": [
+   "n'allons jamais",
+   "ne jamais allons",
+   "n'allons pas jamais"
+  ],
+  "x": [
+   "allons jamais"
+  ],
+  "e": "We never go to the cinema.",
+  "w": "Jamais replaces pas: ne before the verb, jamais after it.",
+  "wf": "ne ... jamais = never.",
+  "t": "autres",
+  "b": "A1"
+ },
+ {
+  "q": "Elle ___ (boire) de café le soir.",
+  "a": "ne boit jamais",
+  "o": [
+   "ne boit jamais",
+   "ne jamais boit",
+   "ne boit plus"
+  ],
+  "x": [
+   "boit jamais"
+  ],
+  "e": "She never drinks coffee in the evening.",
+  "w": "Never is ne ... jamais; ne ... plus means no longer.",
+  "wf": "ne ... jamais = never.",
+  "t": "autres",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (écouter) ce que je dis.",
+  "a": "n'écoutes jamais",
+  "o": [
+   "n'écoutes jamais",
+   "ne écoutes jamais",
+   "n'écoutes pas jamais"
+  ],
+  "x": [
+   "écoutes jamais"
+  ],
+  "e": "You never listen to what I say.",
+  "w": "Jamais replaces pas: ne before the verb, jamais after it.",
+  "wf": "ne ... jamais = never.",
+  "t": "autres",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (aller) en Italie.",
+  "a": "ne suis jamais allé",
+  "o": [
+   "ne suis jamais allé",
+   "ne suis allé jamais",
+   "ne jamais suis allé"
+  ],
+  "x": [
+   "suis jamais allé"
+  ],
+  "e": "I've never been to Italy.",
+  "w": "In the passé composé, jamais sits between the auxiliary and the participle.",
+  "wf": "auxiliaire + jamais + participe.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ___ (voir) la mer.",
+  "a": "n'ont jamais vu",
+  "o": [
+   "n'ont jamais vu",
+   "n'ont vu jamais",
+   "ne jamais ont vu"
+  ],
+  "x": [
+   "ont jamais vu"
+  ],
+  "e": "They've never seen the sea.",
+  "w": "In the passé composé, jamais sits between the auxiliary and the participle.",
+  "wf": "auxiliaire + jamais + participe.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "On ___ (savoir).",
+  "a": "ne sait jamais",
+  "o": [
+   "ne sait jamais",
+   "ne jamais sait",
+   "ne sait rien"
+  ],
+  "x": [
+   "sait jamais"
+  ],
+  "e": "You never know.",
+  "w": "Never is ne ... jamais; ne ... rien means nothing.",
+  "wf": "On ne sait jamais.",
+  "t": "autres",
+  "b": "A1"
+ },
+ {
+  "q": "Il ___ (pleuvoir) ici en été.",
+  "a": "ne pleut jamais",
+  "o": [
+   "ne pleut jamais",
+   "ne jamais pleut",
+   "ne pleut pas jamais"
+  ],
+  "x": [
+   "pleut jamais"
+  ],
+  "e": "It never rains here in summer.",
+  "w": "Jamais replaces pas: ne before the verb, jamais after it.",
+  "wf": "ne ... jamais = never.",
+  "t": "autres",
+  "b": "A1"
+ },
+ {
+  "q": "Elle ___ (oublier) un anniversaire.",
+  "a": "n'oublie jamais",
+  "o": [
+   "n'oublie jamais",
+   "ne oublie jamais",
+   "n'oublie pas jamais"
+  ],
+  "x": [
+   "oublie jamais"
+  ],
+  "e": "She never forgets a birthday.",
+  "w": "Jamais replaces pas; ne becomes n' before a vowel.",
+  "wf": "ne ... jamais = never.",
+  "t": "autres",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (le, voir) le matin.",
+  "a": "ne le vois jamais",
+  "o": [
+   "ne le vois jamais",
+   "ne vois jamais le",
+   "le ne vois jamais"
+  ],
+  "x": [
+   "le vois jamais"
+  ],
+  "e": "I never see him in the morning.",
+  "w": "The object pronoun stays before the verb, inside ne ... jamais.",
+  "wf": "ne + pronom + verbe + jamais.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Mes parents ___ (se disputer).",
+  "a": "ne se disputent jamais",
+  "o": [
+   "ne se disputent jamais",
+   "se ne disputent jamais",
+   "ne disputent jamais se"
+  ],
+  "x": [
+   "se disputent jamais"
+  ],
+  "e": "My parents never argue.",
+  "w": "The reflexive pronoun stays before the verb, inside ne ... jamais.",
+  "wf": "ne + se + verbe + jamais.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (manger) d'huîtres.",
+  "a": "n'ai jamais mangé",
+  "o": [
+   "n'ai jamais mangé",
+   "n'ai mangé jamais",
+   "ne jamais ai mangé"
+  ],
+  "e": "I've never eaten oysters.",
+  "w": "In the passé composé, jamais sits between the auxiliary and the participle.",
+  "wf": "auxiliaire + jamais + participe.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Il vaut mieux ___ (dire) ça.",
+  "a": "ne jamais dire",
+  "o": [
+   "ne jamais dire",
+   "ne dire jamais",
+   "jamais ne dire"
+  ],
+  "e": "It's better never to say that.",
+  "w": "Before an infinitive, ne jamais stay together in front of it.",
+  "wf": "ne jamais + infinitif.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "Je ___ (habiter) à Lyon.",
+  "a": "n'habite plus",
+  "o": [
+   "n'habite plus",
+   "ne habite plus",
+   "n'habite pas plus",
+   "n'habite jamais"
+  ],
+  "e": "I don't live in Lyon any more.",
+  "w": "No longer is ne ... plus: plus takes the place of pas.",
+  "wf": "ne ... plus = no longer.",
+  "t": "autres",
+  "b": "A1"
+ },
+ {
+  "q": "Elle ___ (travailler) ici.",
+  "a": "ne travaille plus",
+  "o": [
+   "ne travaille plus",
+   "ne plus travaille",
+   "ne travaille pas plus"
+  ],
+  "x": [
+   "travaille plus"
+  ],
+  "e": "She doesn't work here any more.",
+  "w": "No longer is ne ... plus: plus takes the place of pas.",
+  "wf": "ne ... plus = no longer.",
+  "t": "autres",
+  "b": "A1"
+ },
+ {
+  "q": "Nous ___ (avoir) de pain.",
+  "a": "n'avons plus",
+  "o": [
+   "n'avons plus",
+   "ne avons plus",
+   "n'avons pas plus"
+  ],
+  "x": [
+   "avons plus"
+  ],
+  "e": "We've run out of bread.",
+  "w": "No more is ne ... plus, never pas plus.",
+  "wf": "ne ... plus = no more.",
+  "t": "autres",
+  "b": "A1"
+ },
+ {
+  "q": "Il ___ (fumer) depuis un an.",
+  "a": "ne fume plus",
+  "o": [
+   "ne fume plus",
+   "ne plus fume",
+   "ne fume jamais"
+  ],
+  "x": [
+   "fume plus"
+  ],
+  "e": "He hasn't smoked for a year.",
+  "w": "Stopping a habit is ne ... plus: he no longer smokes.",
+  "wf": "ne ... plus = no longer.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (pouvoir) attendre.",
+  "a": "ne peux plus",
+  "o": [
+   "ne peux plus",
+   "ne plus peux",
+   "ne peux pas plus"
+  ],
+  "x": [
+   "peux plus"
+  ],
+  "e": "I can't wait any longer.",
+  "w": "No longer is ne ... plus round the modal, never pas plus.",
+  "wf": "ne ... plus = no longer.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (me, aimer) ?",
+  "a": "ne m'aimes plus",
+  "o": [
+   "ne m'aimes plus",
+   "ne aimes plus me",
+   "me n'aimes plus"
+  ],
+  "x": [
+   "m'aimes plus"
+  ],
+  "e": "You don't love me any more?",
+  "w": "The pronoun stays before the verb, inside ne ... plus; me becomes m'.",
+  "wf": "ne m' + verbe + plus.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Ils ___ (se parler).",
+  "a": "ne se parlent plus",
+  "o": [
+   "ne se parlent plus",
+   "se ne parlent plus",
+   "ne parlent plus se"
+  ],
+  "x": [
+   "se parlent plus"
+  ],
+  "e": "They don't talk to each other any more.",
+  "w": "The reflexive pronoun stays before the verb, inside ne ... plus.",
+  "wf": "ne + se + verbe + plus.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Il ___ (rester) de place.",
+  "a": "ne reste plus",
+  "o": [
+   "ne reste plus",
+   "ne plus reste",
+   "ne reste pas plus"
+  ],
+  "x": [
+   "reste plus"
+  ],
+  "e": "There's no room left.",
+  "w": "Nothing left is ne ... plus round reste.",
+  "wf": "ne ... plus = no more.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (vouloir) en parler.",
+  "a": "ne veux plus",
+  "o": [
+   "ne veux plus",
+   "ne plus veux",
+   "ne veux pas plus"
+  ],
+  "x": [
+   "veux plus"
+  ],
+  "e": "I don't want to talk about it any more.",
+  "w": "No longer is ne ... plus round the modal.",
+  "wf": "ne ... plus = no longer.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Elle ___ (revenir) depuis.",
+  "a": "n'est plus revenue",
+  "o": [
+   "n'est plus revenue",
+   "n'est revenue plus",
+   "ne plus est revenue"
+  ],
+  "x": [
+   "est plus revenue"
+  ],
+  "e": "She hasn't come back since.",
+  "w": "In the passé composé, plus sits between the auxiliary and the participle.",
+  "wf": "auxiliaire + plus + participe.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "Le médecin m'a dit de ___ (boire) d'alcool.",
+  "a": "ne plus boire",
+  "o": [
+   "ne plus boire",
+   "ne boire plus",
+   "plus ne boire"
+  ],
+  "e": "The doctor told me not to drink alcohol any more.",
+  "w": "Before an infinitive, ne plus stay together in front of it.",
+  "wf": "ne plus + infinitif.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "On ___ (se voir) beaucoup.",
+  "a": "ne se voit plus",
+  "o": [
+   "ne se voit plus",
+   "se ne voit plus",
+   "ne voit plus se"
+  ],
+  "x": [
+   "se voit plus"
+  ],
+  "e": "We don't see each other much any more.",
+  "w": "The reflexive pronoun stays before the verb, inside ne ... plus.",
+  "wf": "ne + se + verbe + plus.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (comprendre) à ce film.",
+  "a": "ne comprends rien",
+  "o": [
+   "ne comprends rien",
+   "ne rien comprends",
+   "ne comprends pas rien"
+  ],
+  "x": [
+   "comprends rien"
+  ],
+  "e": "I don't understand a thing about this film.",
+  "w": "Nothing is ne ... rien: rien replaces pas.",
+  "wf": "ne ... rien = nothing.",
+  "t": "autres",
+  "b": "A1"
+ },
+ {
+  "q": "Il ___ (dire), il écoute.",
+  "a": "ne dit rien",
+  "o": [
+   "ne dit rien",
+   "ne rien dit",
+   "ne dit pas rien"
+  ],
+  "x": [
+   "dit rien"
+  ],
+  "e": "He says nothing, he just listens.",
+  "w": "Nothing is ne ... rien: rien replaces pas.",
+  "wf": "ne ... rien = nothing.",
+  "t": "autres",
+  "b": "A1"
+ },
+ {
+  "q": "Tu ___ (vouloir) manger ?",
+  "a": "ne veux rien",
+  "o": [
+   "ne veux rien",
+   "ne rien veux",
+   "ne veux pas rien"
+  ],
+  "x": [
+   "veux rien"
+  ],
+  "e": "You don't want anything to eat?",
+  "w": "Nothing is ne ... rien: rien replaces pas.",
+  "wf": "ne ... rien = nothing.",
+  "t": "autres",
+  "b": "A1"
+ },
+ {
+  "q": "Je ___ (voir) dans le noir.",
+  "a": "ne vois rien",
+  "o": [
+   "ne vois rien",
+   "ne rien vois",
+   "ne vois pas rien"
+  ],
+  "x": [
+   "vois rien"
+  ],
+  "e": "I can't see anything in the dark.",
+  "w": "Nothing is ne ... rien: rien replaces pas.",
+  "wf": "ne ... rien = nothing.",
+  "t": "autres",
+  "b": "A1"
+ },
+ {
+  "q": "Elle ___ (acheter) au marché.",
+  "a": "n'a rien acheté",
+  "o": [
+   "n'a rien acheté",
+   "n'a acheté rien",
+   "ne rien a acheté"
+  ],
+  "x": [
+   "a rien acheté"
+  ],
+  "e": "She didn't buy anything at the market.",
+  "w": "In the passé composé, rien sits between the auxiliary and the participle.",
+  "wf": "auxiliaire + rien + participe.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Nous ___ (entendre) cette nuit.",
+  "a": "n'avons rien entendu",
+  "o": [
+   "n'avons rien entendu",
+   "n'avons entendu rien",
+   "ne rien avons entendu"
+  ],
+  "x": [
+   "avons rien entendu"
+  ],
+  "e": "We didn't hear anything last night.",
+  "w": "In the passé composé, rien sits between the auxiliary and the participle.",
+  "wf": "auxiliaire + rien + participe.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "___ (être) facile dans la vie.",
+  "a": "Rien n'est",
+  "o": [
+   "Rien n'est",
+   "Rien est pas",
+   "Ne rien est"
+  ],
+  "e": "Nothing is easy in life.",
+  "w": "As the subject, rien comes first and ne still goes before the verb.",
+  "wf": "Rien sujet : rien ne + verbe.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "___ (changer) depuis ton départ.",
+  "a": "Rien n'a changé",
+  "o": [
+   "Rien n'a changé",
+   "Rien n'a pas changé",
+   "Rien a changé ne"
+  ],
+  "e": "Nothing has changed since you left.",
+  "w": "Rien as the subject takes ne before the verb and no pas.",
+  "wf": "Rien ne, sans pas.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "Ça ___ (faire).",
+  "a": "ne fait rien",
+  "o": [
+   "ne fait rien",
+   "ne rien fait",
+   "ne fait pas rien"
+  ],
+  "x": [
+   "fait rien"
+  ],
+  "e": "It doesn't matter.",
+  "w": "Ça ne fait rien is fixed: it doesn't matter.",
+  "wf": "ça ne fait rien.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Je préfère ___ (dire).",
+  "a": "ne rien dire",
+  "o": [
+   "ne rien dire",
+   "ne dire rien",
+   "rien ne dire"
+  ],
+  "e": "I'd rather not say anything.",
+  "w": "Before an infinitive, ne rien stay together in front of it.",
+  "wf": "ne rien + infinitif.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "Il ___ (faire) de la journée.",
+  "a": "n'a rien fait",
+  "o": [
+   "n'a rien fait",
+   "n'a fait rien",
+   "ne rien a fait"
+  ],
+  "x": [
+   "a rien fait"
+  ],
+  "e": "He did nothing all day.",
+  "w": "In the passé composé, rien sits between the auxiliary and the participle.",
+  "wf": "auxiliaire + rien + participe.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (avoir) à déclarer.",
+  "a": "n'ai rien",
+  "o": [
+   "n'ai rien",
+   "ne ai rien",
+   "n'ai pas rien"
+  ],
+  "e": "I have nothing to declare.",
+  "w": "Nothing is ne ... rien, never pas rien.",
+  "wf": "ne ... rien = nothing.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "On ___ (pouvoir) faire.",
+  "a": "ne peut rien",
+  "o": [
+   "ne peut rien",
+   "ne rien peut",
+   "ne peut pas rien"
+  ],
+  "x": [
+   "peut rien"
+  ],
+  "e": "There's nothing we can do.",
+  "w": "Nothing is ne ... rien round the modal.",
+  "wf": "ne ... rien = nothing.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (connaître) ici.",
+  "a": "ne connais personne",
+  "o": [
+   "ne connais personne",
+   "ne personne connais",
+   "ne connais pas personne"
+  ],
+  "x": [
+   "connais personne"
+  ],
+  "e": "I don't know anyone here.",
+  "w": "Nobody is ne ... personne: personne replaces pas.",
+  "wf": "ne ... personne = nobody.",
+  "t": "autres",
+  "b": "A1"
+ },
+ {
+  "q": "Il ___ (voir) dans la rue.",
+  "a": "ne voit personne",
+  "o": [
+   "ne voit personne",
+   "ne personne voit",
+   "ne voit pas personne"
+  ],
+  "x": [
+   "voit personne"
+  ],
+  "e": "He can't see anyone in the street.",
+  "w": "Nobody is ne ... personne: personne replaces pas.",
+  "wf": "ne ... personne = nobody.",
+  "t": "autres",
+  "b": "A1"
+ },
+ {
+  "q": "___ (répondre) au téléphone.",
+  "a": "Personne ne répond",
+  "o": [
+   "Personne ne répond",
+   "Ne personne répond",
+   "Personne ne répond pas"
+  ],
+  "e": "Nobody's answering the phone.",
+  "w": "As the subject, personne comes first, then ne before the verb, with no pas.",
+  "wf": "Personne ne, sans pas.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Elle ___ (inviter) à son mariage.",
+  "a": "n'a invité personne",
+  "o": [
+   "n'a invité personne",
+   "n'a personne invité",
+   "ne personne a invité"
+  ],
+  "x": [
+   "a invité personne"
+  ],
+  "e": "She didn't invite anyone to her wedding.",
+  "w": "Unlike rien, personne goes after the participle: je n'ai vu personne.",
+  "wf": "participe + personne.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "Nous ___ (rencontrer) sur le chemin.",
+  "a": "n'avons rencontré personne",
+  "o": [
+   "n'avons rencontré personne",
+   "n'avons personne rencontré",
+   "n'avons pas rencontré personne"
+  ],
+  "x": [
+   "avons rencontré personne"
+  ],
+  "e": "We didn't meet anyone on the way.",
+  "w": "Personne goes after the participle, and replaces pas.",
+  "wf": "participe + personne.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "___ (venir) à la réunion.",
+  "a": "Personne n'est venu",
+  "o": [
+   "Personne n'est venu",
+   "Personne n'est pas venu",
+   "Ne personne est venu"
+  ],
+  "e": "Nobody came to the meeting.",
+  "w": "Personne as the subject takes ne before the auxiliary and no pas.",
+  "wf": "Personne ne, sans pas.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "Tu ___ (attendre) ?",
+  "a": "n'attends personne",
+  "o": [
+   "n'attends personne",
+   "ne attends personne",
+   "n'attends pas personne"
+  ],
+  "x": [
+   "attends personne"
+  ],
+  "e": "Aren't you waiting for anyone?",
+  "w": "Nobody is ne ... personne; ne becomes n' before a vowel.",
+  "wf": "ne ... personne = nobody.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (parler) de mes problèmes.",
+  "a": "ne parle à personne",
+  "o": [
+   "ne parle à personne",
+   "ne personne parle à",
+   "ne parle pas à personne"
+  ],
+  "x": [
+   "parle à personne"
+  ],
+  "e": "I don't talk to anyone about my problems.",
+  "w": "Personne keeps its preposition: ne parler à personne.",
+  "wf": "ne ... à personne.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "___ (savoir) où il est.",
+  "a": "Personne ne sait",
+  "o": [
+   "Personne ne sait",
+   "Ne sait personne",
+   "Personne ne sait pas"
+  ],
+  "e": "Nobody knows where he is.",
+  "w": "As the subject, personne comes first, then ne before the verb, with no pas.",
+  "wf": "Personne ne, sans pas.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Il n'y a ___ à la maison.",
+  "a": "personne",
+  "o": [
+   "personne",
+   "pas personne",
+   "rien"
+  ],
+  "e": "There's nobody at home.",
+  "w": "Nobody is personne, never pas personne.",
+  "wf": "il n'y a personne.",
+  "t": "autres",
+  "b": "A1"
+ },
+ {
+  "q": "Je n'en ai ___ (no) idée.",
+  "a": "aucune",
+  "o": [
+   "aucune",
+   "aucun",
+   "pas aucune"
+  ],
+  "e": "I have no idea at all.",
+  "w": "Aucun agrees with its noun: idée is feminine, so aucune.",
+  "wf": "aucune + nom féminin.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Ça ne pose ___ (no) problème.",
+  "a": "aucun",
+  "o": [
+   "aucun",
+   "aucune",
+   "pas aucun"
+  ],
+  "e": "That's no problem at all.",
+  "w": "Aucun replaces pas and agrees with problème, masculine.",
+  "wf": "aucun + nom masculin.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "Elle n'a ___ (no) chance de gagner.",
+  "a": "aucune",
+  "o": [
+   "aucune",
+   "aucun",
+   "pas aucune"
+  ],
+  "e": "She has no chance of winning.",
+  "w": "Aucun agrees with its noun: chance is feminine, so aucune.",
+  "wf": "aucune + nom féminin.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "___ (no) magasin n'est ouvert ce soir.",
+  "a": "Aucun",
+  "o": [
+   "Aucun",
+   "Aucune",
+   "Pas aucun"
+  ],
+  "e": "No shop is open tonight.",
+  "w": "Aucun can be the subject, with ne before the verb and no pas.",
+  "wf": "Aucun ... ne.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "Je n'ai vu ___ (no) film cette année.",
+  "a": "aucun",
+  "o": [
+   "aucun",
+   "aucune",
+   "pas aucun"
+  ],
+  "e": "I haven't seen a single film this year.",
+  "w": "Aucun goes before the noun, after the participle, and agrees with film.",
+  "wf": "aucun + nom masculin.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "Nous n'avons reçu ___ (no) réponse.",
+  "a": "aucune",
+  "o": [
+   "aucune",
+   "aucun",
+   "pas aucune"
+  ],
+  "e": "We haven't had any reply.",
+  "w": "Aucun agrees with its noun: réponse is feminine, so aucune.",
+  "wf": "aucune + nom féminin.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "Il ne fait ___ (no) effort pour comprendre.",
+  "a": "aucun",
+  "o": [
+   "aucun",
+   "aucune",
+   "pas aucun"
+  ],
+  "e": "He makes no effort to understand.",
+  "w": "Aucun agrees with effort, masculine, and replaces pas.",
+  "wf": "aucun + nom masculin.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "___ (none) de mes amis n'est venu.",
+  "a": "Aucun",
+  "o": [
+   "Aucun",
+   "Aucune",
+   "Pas aucun"
+  ],
+  "e": "None of my friends came.",
+  "w": "Aucun de takes ne and agrees with amis, masculine.",
+  "wf": "Aucun de ... ne.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "Je n'ai ___ (no) doute.",
+  "a": "aucun",
+  "o": [
+   "aucun",
+   "aucune",
+   "pas aucun"
+  ],
+  "e": "I have no doubt at all.",
+  "w": "Aucun agrees with doute, masculine, and replaces pas.",
+  "wf": "aucun + nom masculin.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Je ne bois ___ (coffee, tea).",
+  "a": "ni café ni thé",
+  "o": [
+   "ni café ni thé",
+   "ni du café ni du thé",
+   "pas café ni thé"
+  ],
+  "e": "I drink neither coffee nor tea.",
+  "w": "With ni ... ni, the partitive article drops: ni café ni thé.",
+  "wf": "ne ... ni ... ni, sans article.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "Il n'est ___ (tall, short).",
+  "a": "ni grand ni petit",
+  "o": [
+   "ni grand ni petit",
+   "pas grand ni petit",
+   "ni grand pas petit"
+  ],
+  "e": "He's neither tall nor short.",
+  "w": "Neither ... nor is ni before each word, with no pas.",
+  "wf": "ne ... ni ... ni.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "Elle ne parle ___ (English, Spanish).",
+  "a": "ni anglais ni espagnol",
+  "o": [
+   "ni anglais ni espagnol",
+   "pas anglais ni espagnol",
+   "ni anglais pas espagnol"
+  ],
+  "x": [
+   "ni l'anglais ni l'espagnol"
+  ],
+  "e": "She speaks neither English nor Spanish.",
+  "w": "Neither ... nor is ni before each word, with no pas.",
+  "wf": "ne ... ni ... ni.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "___ (my brother, my sister) ne sont venus.",
+  "a": "Ni mon frère ni ma sœur",
+  "o": [
+   "Ni mon frère ni ma sœur",
+   "Pas mon frère ni ma sœur",
+   "Ni mon frère pas ma sœur"
+  ],
+  "e": "Neither my brother nor my sister came.",
+  "w": "Ni ... ni can open the sentence as the subject, with ne before the verb.",
+  "wf": "Ni ... ni ... ne.",
+  "t": "autres",
+  "b": "B2"
+ },
+ {
+  "q": "Je n'aime ___ (cheese, wine).",
+  "a": "ni le fromage ni le vin",
+  "o": [
+   "ni le fromage ni le vin",
+   "ni du fromage ni du vin",
+   "pas le fromage ni le vin"
+  ],
+  "e": "I like neither cheese nor wine.",
+  "w": "After aimer, ni ... ni keeps the definite article.",
+  "wf": "aimer : ni le ... ni le.",
+  "t": "autres",
+  "b": "B2"
+ },
+ {
+  "q": "Nous n'avons ___ (car, bike).",
+  "a": "ni voiture ni vélo",
+  "o": [
+   "ni voiture ni vélo",
+   "ni de voiture ni de vélo",
+   "pas voiture ni vélo"
+  ],
+  "e": "We have neither a car nor a bike.",
+  "w": "With ni ... ni, un and de drop: ni voiture ni vélo.",
+  "wf": "ne ... ni ... ni, sans article.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "Ce n'est ___ (good, bad).",
+  "a": "ni bon ni mauvais",
+  "o": [
+   "ni bon ni mauvais",
+   "pas bon ni mauvais",
+   "ni bon pas mauvais"
+  ],
+  "e": "It's neither good nor bad.",
+  "w": "Neither ... nor is ni before each word, with no pas.",
+  "wf": "ne ... ni ... ni.",
+  "t": "autres",
+  "b": "B1"
+ },
+ {
+  "q": "Je ___ (voir) ça de ma vie.",
+  "a": "n'ai jamais vu",
+  "o": [
+   "n'ai jamais vu",
+   "n'ai vu jamais",
+   "ne jamais ai vu"
+  ],
+  "e": "I've never seen that in my life.",
+  "w": "In the passé composé, jamais sits between the auxiliary and the participle.",
+  "wf": "auxiliaire + jamais + participe.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Tu ___ (manger) depuis ce matin ?",
+  "a": "n'as rien mangé",
+  "o": [
+   "n'as rien mangé",
+   "n'as mangé rien",
+   "ne rien as mangé"
+  ],
+  "x": [
+   "as rien mangé"
+  ],
+  "e": "Haven't you eaten anything since this morning?",
+  "w": "In the passé composé, rien sits between the auxiliary and the participle.",
+  "wf": "auxiliaire + rien + participe.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Il ___ (être) là, il est parti.",
+  "a": "n'est plus",
+  "o": [
+   "n'est plus",
+   "ne est plus",
+   "n'est jamais"
+  ],
+  "x": [
+   "est plus"
+  ],
+  "e": "He's not here any more, he's left.",
+  "w": "Not any more is ne ... plus; jamais would mean never.",
+  "wf": "ne ... plus = no longer.",
+  "t": "autres",
+  "b": "A1"
+ },
+ {
+  "q": "Ils ___ (savoir) encore.",
+  "a": "ne savent rien",
+  "o": [
+   "ne savent rien",
+   "ne rien savent",
+   "ne savent pas rien"
+  ],
+  "x": [
+   "savent rien"
+  ],
+  "e": "They don't know anything yet.",
+  "w": "Nothing is ne ... rien: rien replaces pas.",
+  "wf": "ne ... rien = nothing.",
+  "t": "autres",
+  "b": "A2"
+ },
+ {
+  "q": "Personne ___ (me, dire).",
+  "a": "ne m'a rien dit",
+  "o": [
+   "ne m'a rien dit",
+   "ne m'a pas rien dit",
+   "m'a ne rien dit"
+  ],
+  "e": "Nobody told me anything.",
+  "w": "Two negative words share one ne, with no pas: personne ne m'a rien dit.",
+  "wf": "Deux négations, un seul ne.",
+  "t": "autres",
+  "b": "B2"
+ }
+]

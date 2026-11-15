@@ -18,3 +18,7 @@ tools/es/vendor/
 # Vlot: kaikki Dutch extract and FrequencyWords (see docs/vlot-spec.md)
 tools/nl/vendor/
 tools/nl/judge/
+
+# Couramment: kaikki French extract and FrequencyWords (see docs/couramment-spec.md)
+tools/fr/vendor/
+tools/fr/judge/

@@ -1,0 +1,660 @@
+[
+ {
+  "q": "___ (these) verres sont sales.",
+  "n": "verre",
+  "t": "dem",
+  "e": "These glasses are dirty.",
+  "b": "A1",
+  "a": "ces",
+  "pl": 1
+ },
+ {
+  "q": "___ (this) livre est passionnant.",
+  "n": "livre",
+  "t": "dem",
+  "e": "This book is gripping.",
+  "b": "A2",
+  "a": "ce"
+ },
+ {
+  "q": "___ (that) film est trop long.",
+  "n": "film",
+  "t": "dem",
+  "e": "That film is too long.",
+  "b": "A1",
+  "a": "ce"
+ },
+ {
+  "q": "J'adore ___ (this) restaurant.",
+  "n": "restaurant",
+  "t": "dem",
+  "e": "I love this restaurant.",
+  "b": "A2",
+  "a": "ce"
+ },
+ {
+  "q": "___ (this) quartier est très calme.",
+  "n": "quartier",
+  "t": "dem",
+  "e": "This neighbourhood is very quiet.",
+  "b": "A2",
+  "a": "ce"
+ },
+ {
+  "q": "Tu connais ___ (that) garçon ?",
+  "n": "garçon",
+  "t": "dem",
+  "e": "Do you know that boy?",
+  "b": "A1",
+  "a": "ce"
+ },
+ {
+  "q": "___ (this) pantalon est trop petit.",
+  "n": "pantalon",
+  "t": "dem",
+  "e": "These trousers are too small.",
+  "b": "A2",
+  "a": "ce"
+ },
+ {
+  "q": "___ (this) chapeau te va bien.",
+  "n": "chapeau",
+  "t": "dem",
+  "e": "This hat suits you.",
+  "b": "A2",
+  "a": "ce"
+ },
+ {
+  "q": "On prend ___ (this) chemin ?",
+  "n": "chemin",
+  "t": "dem",
+  "e": "Shall we take this path?",
+  "b": "A1",
+  "a": "ce"
+ },
+ {
+  "q": "___ (that) chien aboie tout le temps.",
+  "n": "chien",
+  "t": "dem",
+  "e": "That dog barks all the time.",
+  "b": "A1",
+  "a": "ce"
+ },
+ {
+  "q": "___ (this) gâteau est délicieux.",
+  "n": "gâteau",
+  "t": "dem",
+  "e": "This cake is delicious.",
+  "b": "A2",
+  "a": "ce"
+ },
+ {
+  "q": "___ (this) village est magnifique.",
+  "n": "village",
+  "t": "dem",
+  "e": "This village is beautiful.",
+  "b": "A2",
+  "a": "ce"
+ },
+ {
+  "q": "J'aime bien ___ (that) tableau.",
+  "n": "tableau",
+  "t": "dem",
+  "e": "I quite like that painting.",
+  "b": "A2",
+  "a": "ce"
+ },
+ {
+  "q": "___ (this) matin, il fait froid.",
+  "n": "matin",
+  "t": "dem",
+  "e": "It's cold this morning.",
+  "b": "A1",
+  "a": "ce"
+ },
+ {
+  "q": "___ (this) soir, on sort.",
+  "n": "soir",
+  "t": "dem",
+  "e": "We're going out this evening.",
+  "b": "A1",
+  "a": "ce"
+ },
+ {
+  "q": "___ (this) week-end, je travaille.",
+  "n": "week-end",
+  "t": "dem",
+  "e": "I'm working this weekend.",
+  "b": "A2",
+  "a": "ce"
+ },
+ {
+  "q": "___ (this) café est trop sucré.",
+  "n": "café",
+  "t": "dem",
+  "e": "This coffee is too sweet.",
+  "b": "A1",
+  "a": "ce"
+ },
+ {
+  "q": "Regarde ___ (that) bateau !",
+  "n": "bateau",
+  "t": "dem",
+  "e": "Look at that boat!",
+  "b": "A1",
+  "a": "ce"
+ },
+ {
+  "q": "___ (that) héros est mon préféré.",
+  "n": "héros",
+  "t": "dem",
+  "e": "That hero is my favourite.",
+  "b": "A2",
+  "a": "ce"
+ },
+ {
+  "q": "___ (this) hall est immense.",
+  "n": "hall",
+  "t": "dem",
+  "e": "This hall is huge.",
+  "b": "B1",
+  "a": "ce"
+ },
+ {
+  "q": "Je ne comprends pas ___ (this) mot.",
+  "n": "mot",
+  "t": "dem",
+  "e": "I don't understand this word.",
+  "b": "A1",
+  "a": "ce"
+ },
+ {
+  "q": "___ (this) jardin est plein de fleurs.",
+  "n": "jardin",
+  "t": "dem",
+  "e": "This garden is full of flowers.",
+  "b": "A2",
+  "a": "ce"
+ },
+ {
+  "q": "___ (that) magasin est fermé le lundi.",
+  "n": "magasin",
+  "t": "dem",
+  "e": "That shop is closed on Mondays.",
+  "b": "A2",
+  "a": "ce"
+ },
+ {
+  "q": "___ (this) homme est mon oncle.",
+  "n": "homme",
+  "t": "dem",
+  "e": "This man is my uncle.",
+  "b": "A1",
+  "a": "cet"
+ },
+ {
+  "q": "___ (this) hôtel est très cher.",
+  "n": "hôtel",
+  "t": "dem",
+  "e": "This hotel is very expensive.",
+  "b": "A1",
+  "a": "cet"
+ },
+ {
+  "q": "___ (that) arbre a cent ans.",
+  "n": "arbre",
+  "t": "dem",
+  "e": "That tree is a hundred years old.",
+  "b": "A2",
+  "a": "cet"
+ },
+ {
+  "q": "___ (this) appartement est trop petit.",
+  "n": "appartement",
+  "t": "dem",
+  "e": "This flat is too small.",
+  "b": "A2",
+  "a": "cet"
+ },
+ {
+  "q": "___ (this) été, on va en Italie.",
+  "n": "été",
+  "t": "dem",
+  "e": "This summer we're going to Italy.",
+  "b": "A2",
+  "a": "cet"
+ },
+ {
+  "q": "___ (this) hiver, il a beaucoup neigé.",
+  "n": "hiver",
+  "t": "dem",
+  "e": "It snowed a lot this winter.",
+  "b": "B1",
+  "a": "cet"
+ },
+ {
+  "q": "___ (this) ordinateur est très lent.",
+  "n": "ordinateur",
+  "t": "dem",
+  "e": "This computer is very slow.",
+  "b": "A2",
+  "a": "cet"
+ },
+ {
+  "q": "Tu connais ___ (that) acteur ?",
+  "n": "acteur",
+  "t": "dem",
+  "e": "Do you know that actor?",
+  "b": "A2",
+  "a": "cet"
+ },
+ {
+  "q": "___ (this) exercice est difficile.",
+  "n": "exercice",
+  "t": "dem",
+  "e": "This exercise is difficult.",
+  "b": "B1",
+  "a": "cet"
+ },
+ {
+  "q": "___ (this) oiseau chante très bien.",
+  "n": "oiseau",
+  "t": "dem",
+  "e": "This bird sings beautifully.",
+  "b": "A2",
+  "a": "cet"
+ },
+ {
+  "q": "___ (that) avion part pour Rome.",
+  "n": "avion",
+  "t": "dem",
+  "e": "That plane is leaving for Rome.",
+  "b": "A1",
+  "a": "cet"
+ },
+ {
+  "q": "___ (this) examen est très important.",
+  "n": "examen",
+  "t": "dem",
+  "e": "This exam is very important.",
+  "b": "A2",
+  "a": "cet"
+ },
+ {
+  "q": "J'adore ___ (this) endroit.",
+  "n": "endroit",
+  "t": "dem",
+  "e": "I love this place.",
+  "b": "A1",
+  "a": "cet"
+ },
+ {
+  "q": "___ (this) animal est dangereux.",
+  "n": "animal",
+  "t": "dem",
+  "e": "This animal is dangerous.",
+  "b": "A2",
+  "a": "cet"
+ },
+ {
+  "q": "___ (that) homme parle trop fort.",
+  "n": "homme",
+  "t": "dem",
+  "e": "That man talks too loudly.",
+  "b": "A1",
+  "a": "cet"
+ },
+ {
+  "q": "___ (this) hôpital est tout neuf.",
+  "n": "hôpital",
+  "t": "dem",
+  "e": "This hospital is brand new.",
+  "b": "A1",
+  "a": "cet"
+ },
+ {
+  "q": "___ (this) automne, je commence l'université.",
+  "n": "automne",
+  "t": "dem",
+  "e": "This autumn I start university.",
+  "b": "A2",
+  "a": "cet"
+ },
+ {
+  "q": "___ (this) ami vient de Lyon.",
+  "n": "ami",
+  "t": "dem",
+  "e": "This friend comes from Lyon.",
+  "b": "A1",
+  "a": "cet"
+ },
+ {
+  "q": "___ (this) maison est à vendre.",
+  "n": "maison",
+  "t": "dem",
+  "e": "This house is for sale.",
+  "b": "A1",
+  "a": "cette"
+ },
+ {
+  "q": "___ (this) robe est magnifique.",
+  "n": "robe",
+  "t": "dem",
+  "e": "This dress is gorgeous.",
+  "b": "A2",
+  "a": "cette"
+ },
+ {
+  "q": "___ (that) femme est ma tante.",
+  "n": "femme",
+  "t": "dem",
+  "e": "That woman is my aunt.",
+  "b": "A1",
+  "a": "cette"
+ },
+ {
+  "q": "___ (this) semaine, je travaille beaucoup.",
+  "n": "semaine",
+  "t": "dem",
+  "e": "I'm working a lot this week.",
+  "b": "A1",
+  "a": "cette"
+ },
+ {
+  "q": "___ (this) année, on part au Japon.",
+  "n": "année",
+  "t": "dem",
+  "e": "This year we're going to Japan.",
+  "b": "A1",
+  "a": "cette"
+ },
+ {
+  "q": "___ (this) chanson me rend triste.",
+  "n": "chanson",
+  "t": "dem",
+  "e": "This song makes me sad.",
+  "b": "A1",
+  "a": "cette"
+ },
+ {
+  "q": "J'adore ___ (this) ville.",
+  "n": "ville",
+  "t": "dem",
+  "e": "I love this city.",
+  "b": "A1",
+  "a": "cette"
+ },
+ {
+  "q": "___ (this) idée est géniale.",
+  "n": "idée",
+  "t": "dem",
+  "e": "This idea is brilliant.",
+  "b": "A1",
+  "a": "cette"
+ },
+ {
+  "q": "___ (that) voiture est à moi.",
+  "n": "voiture",
+  "t": "dem",
+  "e": "That car is mine.",
+  "b": "A1",
+  "a": "cette"
+ },
+ {
+  "q": "___ (this) chambre est trop petite.",
+  "n": "chambre",
+  "t": "dem",
+  "e": "This room is too small.",
+  "b": "A1",
+  "a": "cette"
+ },
+ {
+  "q": "___ (this) histoire est vraie.",
+  "n": "histoire",
+  "t": "dem",
+  "e": "This story is true.",
+  "b": "A1",
+  "a": "cette"
+ },
+ {
+  "q": "___ (this) école est très bonne.",
+  "n": "école",
+  "t": "dem",
+  "e": "This school is very good.",
+  "b": "A1",
+  "a": "cette"
+ },
+ {
+  "q": "___ (this) fois, c'est toi qui paies.",
+  "n": "fois",
+  "t": "dem",
+  "e": "This time you're paying.",
+  "b": "A1",
+  "a": "cette"
+ },
+ {
+  "q": "___ (that) fille est dans ma classe.",
+  "n": "fille",
+  "t": "dem",
+  "e": "That girl is in my class.",
+  "b": "A1",
+  "a": "cette"
+ },
+ {
+  "q": "___ (this) table est réservée.",
+  "n": "table",
+  "t": "dem",
+  "e": "This table is reserved.",
+  "b": "A1",
+  "a": "cette"
+ },
+ {
+  "q": "___ (this) photo est très belle.",
+  "n": "photo",
+  "t": "dem",
+  "e": "This photo is very beautiful.",
+  "b": "A1",
+  "a": "cette"
+ },
+ {
+  "q": "___ (this) nuit, j'ai mal dormi.",
+  "n": "nuit",
+  "t": "dem",
+  "e": "I slept badly last night.",
+  "b": "A1",
+  "a": "cette"
+ },
+ {
+  "q": "___ (this) plage est déserte.",
+  "n": "plage",
+  "t": "dem",
+  "e": "This beach is deserted.",
+  "b": "A2",
+  "a": "cette"
+ },
+ {
+  "q": "___ (this) question est difficile.",
+  "n": "question",
+  "t": "dem",
+  "e": "This question is difficult.",
+  "b": "A1",
+  "a": "cette"
+ },
+ {
+  "q": "___ (that) église est très ancienne.",
+  "n": "église",
+  "t": "dem",
+  "e": "That church is very old.",
+  "b": "A2",
+  "a": "cette"
+ },
+ {
+  "q": "___ (this) pizza est froide.",
+  "n": "pizza",
+  "t": "dem",
+  "e": "This pizza is cold.",
+  "b": "A2",
+  "a": "cette"
+ },
+ {
+  "q": "___ (this) veste est trop chère.",
+  "n": "veste",
+  "t": "dem",
+  "e": "This jacket is too expensive.",
+  "b": "A2",
+  "a": "cette"
+ },
+ {
+  "q": "___ (these) chaussures sont trop petites.",
+  "n": "chaussure",
+  "t": "dem",
+  "e": "These shoes are too small.",
+  "b": "A2",
+  "a": "ces",
+  "pl": 1
+ },
+ {
+  "q": "___ (those) fleurs sont pour toi.",
+  "n": "fleur",
+  "t": "dem",
+  "e": "Those flowers are for you.",
+  "b": "A2",
+  "a": "ces",
+  "pl": 1
+ },
+ {
+  "q": "___ (these) enfants sont très sages.",
+  "n": "enfant",
+  "t": "dem",
+  "e": "These children are very good.",
+  "b": "A1",
+  "a": "ces",
+  "pl": 1
+ },
+ {
+  "q": "Tu connais ___ (those) gens ?",
+  "n": "gens",
+  "t": "dem",
+  "e": "Do you know those people?",
+  "b": "A1",
+  "a": "ces",
+  "pl": 1
+ },
+ {
+  "q": "___ (these) livres sont à moi.",
+  "n": "livre",
+  "t": "dem",
+  "e": "These books are mine.",
+  "b": "A2",
+  "a": "ces",
+  "pl": 1
+ },
+ {
+  "q": "___ (these) pommes sont délicieuses.",
+  "n": "pomme",
+  "t": "dem",
+  "e": "These apples are delicious.",
+  "b": "A2",
+  "a": "ces",
+  "pl": 1
+ },
+ {
+  "q": "___ (those) arbres sont très vieux.",
+  "n": "arbre",
+  "t": "dem",
+  "e": "Those trees are very old.",
+  "b": "A2",
+  "a": "ces",
+  "pl": 1
+ },
+ {
+  "q": "___ (these) hôtels sont complets.",
+  "n": "hôtel",
+  "t": "dem",
+  "e": "These hotels are full.",
+  "b": "A1",
+  "a": "ces",
+  "pl": 1
+ },
+ {
+  "q": "___ (these) photos sont magnifiques.",
+  "n": "photo",
+  "t": "dem",
+  "e": "These photos are wonderful.",
+  "b": "A1",
+  "a": "ces",
+  "pl": 1
+ },
+ {
+  "q": "___ (those) garçons jouent au foot.",
+  "n": "garçon",
+  "t": "dem",
+  "e": "Those boys are playing football.",
+  "b": "A1",
+  "a": "ces",
+  "pl": 1
+ },
+ {
+  "q": "___ (these) jours, il fait chaud.",
+  "n": "jour",
+  "t": "dem",
+  "e": "It's hot these days.",
+  "b": "A1",
+  "a": "ces",
+  "pl": 1
+ },
+ {
+  "q": "___ (those) maisons sont très chères.",
+  "n": "maison",
+  "t": "dem",
+  "e": "Those houses are very expensive.",
+  "b": "A1",
+  "a": "ces",
+  "pl": 1
+ },
+ {
+  "q": "___ (these) questions sont faciles.",
+  "n": "question",
+  "t": "dem",
+  "e": "These questions are easy.",
+  "b": "A1",
+  "a": "ces",
+  "pl": 1
+ },
+ {
+  "q": "___ (these) cadeaux sont pour les enfants.",
+  "n": "cadeau",
+  "t": "dem",
+  "e": "These presents are for the children.",
+  "b": "A1",
+  "a": "ces",
+  "pl": 1
+ },
+ {
+  "q": "___ (those) oiseaux chantent fort.",
+  "n": "oiseau",
+  "t": "dem",
+  "e": "Those birds are singing loudly.",
+  "b": "A2",
+  "a": "ces",
+  "pl": 1
+ },
+ {
+  "q": "___ (these) chansons sont tristes.",
+  "n": "chanson",
+  "t": "dem",
+  "e": "These songs are sad.",
+  "b": "A1",
+  "a": "ces",
+  "pl": 1
+ },
+ {
+  "q": "___ (those) chiens aboient toute la nuit.",
+  "n": "chien",
+  "t": "dem",
+  "e": "Those dogs bark all night.",
+  "b": "A1",
+  "a": "ces",
+  "pl": 1
+ }
+]

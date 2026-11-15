@@ -1,0 +1,1842 @@
+[
+ {
+  "q": "Quand j'étais petit, je ___ (jouer) au foot tous les mercredis.",
+  "v": "jouer",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was little, I played football every Wednesday.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, mon grand-père ___ (travailler) dans une usine de chaussures.",
+  "v": "travailler",
+  "t": "imp",
+  "p": "il",
+  "e": "My grandfather used to work in a shoe factory.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais petit, mes cousins ___ (venir) chez nous tous les étés.",
+  "v": "venir",
+  "t": "imp",
+  "p": "ils",
+  "e": "When I was little, my cousins came to our place every summer.",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, nous ___ (habiter) dans un petit appartement à Lyon.",
+  "v": "habiter",
+  "t": "imp",
+  "p": "nous",
+  "e": "At the time, we lived in a small flat in Lyon.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand tu étais petite, tu ___ (boire) un verre de lait chaque soir.",
+  "v": "boire",
+  "t": "imp",
+  "p": "tu",
+  "e": "When you were little, you drank a glass of milk every evening.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand elle avait dix ans, elle ___ (parler) déjà trois langues.",
+  "v": "parler",
+  "t": "imp",
+  "p": "il",
+  "e": "When she was ten, she already spoke three languages.",
+  "b": "A2"
+ },
+ {
+  "q": "Avant, vous ___ (aller) toujours au bureau en voiture.",
+  "v": "aller",
+  "t": "imp",
+  "p": "vous",
+  "e": "You always used to go to the office by car.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, les gens ___ (écrire) leurs lettres à la main.",
+  "v": "écrire",
+  "t": "imp",
+  "p": "ils",
+  "e": "In the old days, people wrote their letters by hand.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais enfant, j'___ (avoir) peur du noir.",
+  "v": "avoir",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was a child, I was afraid of the dark.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand nous étions petits, maman ___ (faire) des crêpes le dimanche.",
+  "v": "faire",
+  "t": "imp",
+  "p": "il",
+  "e": "When we were little, Mum made pancakes on Sundays.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'avais vingt ans, je ___ (sortir) tous les soirs avec mes amis.",
+  "v": "sortir",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was twenty, I went out every evening with my friends.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, il ___ (pleuvoir) beaucoup plus souvent en été.",
+  "v": "pleuvoir",
+  "t": "imp",
+  "p": "il",
+  "e": "In the past, it rained much more often in summer.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand tu étais au lycée, tu ___ (arriver) toujours en retard.",
+  "v": "arriver",
+  "t": "imp",
+  "p": "tu",
+  "e": "When you were at secondary school, you always arrived late.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand nous étions enfants, nous ___ (aller) à la plage chaque été.",
+  "v": "aller",
+  "t": "imp",
+  "p": "nous",
+  "e": "When we were children, we went to the beach every summer.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand ils étaient étudiants, ils ___ (dormir) jusqu'à midi le samedi.",
+  "v": "dormir",
+  "t": "imp",
+  "p": "ils",
+  "e": "When they were students, they slept until noon on Saturdays.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais petit, notre chien s'___ (s'appeler) Filou.",
+  "v": "s'appeler",
+  "t": "imp",
+  "p": "il",
+  "e": "When I was little, our dog was called Filou.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand j'habitais à Paris, je ___ (prendre) le métro tous les jours.",
+  "v": "prendre",
+  "t": "imp",
+  "p": "je",
+  "e": "When I lived in Paris, I took the metro every day.",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, une baguette ___ (coûter) moins d'un euro.",
+  "v": "coûter",
+  "t": "imp",
+  "p": "il",
+  "e": "At the time, a baguette cost less than a euro.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand elle était jeune, ma tante ___ (chanter) dans une chorale.",
+  "v": "chanter",
+  "t": "imp",
+  "p": "il",
+  "e": "When she was young, my aunt sang in a choir.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand vous étiez enfants, vous ___ (regarder) beaucoup la télévision ?",
+  "v": "regarder",
+  "t": "imp",
+  "p": "vous",
+  "e": "When you were children, did you watch a lot of television?",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, les enfants ___ (marcher) jusqu'à l'école.",
+  "v": "marcher",
+  "t": "imp",
+  "p": "ils",
+  "e": "In the old days, children walked to school.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais au lycée, je ___ (lire) beaucoup de romans policiers.",
+  "v": "lire",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was at secondary school, I read a lot of crime novels.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, mon oncle ___ (passer) toutes ses vacances en Espagne.",
+  "v": "passer",
+  "t": "imp",
+  "p": "il",
+  "e": "My uncle used to spend all his holidays in Spain.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand nous étions petits, nous ___ (courir) dans le jardin après l'école.",
+  "v": "courir",
+  "t": "imp",
+  "p": "nous",
+  "e": "When we were little, we ran around the garden after school.",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, on ___ (utiliser) des cabines téléphoniques dans la rue.",
+  "v": "utiliser",
+  "t": "imp",
+  "p": "il",
+  "e": "At the time, people used phone boxes in the street.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais petite, je ___ (vouloir) devenir vétérinaire.",
+  "v": "vouloir",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was little, I wanted to become a vet.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand tu avais cinq ans, tu ___ (savoir) déjà lire.",
+  "v": "savoir",
+  "t": "imp",
+  "p": "tu",
+  "e": "When you were five, you could already read.",
+  "b": "A2"
+ },
+ {
+  "q": "Il y a vingt ans, ce quartier ___ (être) très calme.",
+  "v": "être",
+  "t": "imp",
+  "p": "il",
+  "e": "Twenty years ago, this neighbourhood was very quiet.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand ils habitaient à Marseille, ils ___ (manger) souvent du poisson.",
+  "v": "manger",
+  "t": "imp",
+  "p": "ils",
+  "e": "When they lived in Marseille, they often ate fish.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, vous ___ (partir) à la campagne tous les week-ends.",
+  "v": "partir",
+  "t": "imp",
+  "p": "vous",
+  "e": "You used to go off to the countryside every weekend.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais étudiant, je ___ (travailler) dans un café le soir.",
+  "v": "travailler",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was a student, I worked in a café in the evenings.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand Paul était petit, il se ___ (se disputer) souvent avec son frère.",
+  "v": "se disputer",
+  "t": "imp",
+  "p": "il",
+  "e": "When Paul was little, he often argued with his brother.",
+  "b": "B1"
+ },
+ {
+  "q": "À l'époque, nous ne ___ (gagner) pas beaucoup d'argent.",
+  "v": "gagner",
+  "t": "imp",
+  "p": "nous",
+  "e": "At the time, we didn't earn much money.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand ma grand-mère était jeune, elle ___ (faire) ses robes elle-même.",
+  "v": "faire",
+  "t": "imp",
+  "p": "il",
+  "e": "When my grandmother was young, she made her dresses herself.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, mes parents ___ (écouter) la radio pendant le dîner.",
+  "v": "écouter",
+  "t": "imp",
+  "p": "ils",
+  "e": "My parents used to listen to the radio during dinner.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'avais dix ans, j'___ (adorer) les dessins animés japonais.",
+  "v": "adorer",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was ten, I loved Japanese cartoons.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand tu habitais à Nice, tu te ___ (se baigner) tous les jours ?",
+  "v": "se baigner",
+  "t": "imp",
+  "p": "tu",
+  "e": "When you lived in Nice, did you swim every day?",
+  "b": "B1"
+ },
+ {
+  "q": "Autrefois, le train ___ (passer) par notre village.",
+  "v": "passer",
+  "t": "imp",
+  "p": "il",
+  "e": "In the past, the train went through our village.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand vous étiez jeunes, vous ___ (voyager) beaucoup ?",
+  "v": "voyager",
+  "t": "imp",
+  "p": "vous",
+  "e": "When you were young, did you travel a lot?",
+  "b": "B1"
+ },
+ {
+  "q": "Quand j'étais petit, je me ___ (se coucher) toujours à huit heures.",
+  "v": "se coucher",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was little, I always went to bed at eight.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand il était jeune, mon père ___ (fumer) beaucoup.",
+  "v": "fumer",
+  "t": "imp",
+  "p": "il",
+  "e": "When he was young, my father smoked a lot.",
+  "b": "B1"
+ },
+ {
+  "q": "Pendant mon enfance, mes grands-parents ___ (avoir) une ferme en Normandie.",
+  "v": "avoir",
+  "t": "imp",
+  "p": "ils",
+  "e": "During my childhood, my grandparents had a farm in Normandy.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand nous étions au collège, nous ___ (prendre) le bus ensemble.",
+  "v": "prendre",
+  "t": "imp",
+  "p": "nous",
+  "e": "When we were at school, we took the bus together.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, un vieux monsieur ___ (tenir) le magasin du coin.",
+  "v": "tenir",
+  "t": "imp",
+  "p": "il",
+  "e": "In the past, an old man ran the corner shop.",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, je ne ___ (comprendre) pas un mot d'anglais.",
+  "v": "comprendre",
+  "t": "imp",
+  "p": "je",
+  "e": "At the time, I didn't understand a word of English.",
+  "b": "A2"
+ },
+ {
+  "q": "Avant, tu ___ (boire) toujours ton café sans sucre.",
+  "v": "boire",
+  "t": "imp",
+  "p": "tu",
+  "e": "You always used to drink your coffee without sugar.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand Léa était petite, elle ___ (avoir) peur des chiens.",
+  "v": "avoir",
+  "t": "imp",
+  "p": "il",
+  "e": "When Léa was little, she was afraid of dogs.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, les magasins ___ (fermer) le dimanche.",
+  "v": "fermer",
+  "t": "imp",
+  "p": "ils",
+  "e": "In the past, shops closed on Sundays.",
+  "b": "A2"
+ },
+ {
+  "q": "Il y a dix ans, nous ___ (retrouver) nos amis au café tous les samedis.",
+  "v": "retrouver",
+  "t": "imp",
+  "p": "nous",
+  "e": "Ten years ago, we met our friends at the café every Saturday.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais enfant, j'___ (habiter) dans une petite ville du Sud.",
+  "v": "habiter",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was a child, I lived in a small town in the south.",
+  "b": "B1"
+ },
+ {
+  "q": "Autrefois, il ___ (faire) très froid en hiver ici.",
+  "v": "faire",
+  "t": "imp",
+  "p": "il",
+  "e": "In the past, it was very cold here in winter.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand vous viviez à Rome, vous ___ (parler) italien à la maison ?",
+  "v": "parler",
+  "t": "imp",
+  "p": "vous",
+  "e": "When you lived in Rome, did you speak Italian at home?",
+  "b": "A2"
+ },
+ {
+  "q": "Quand ils étaient petits, ils ___ (chanter) toujours la même chanson.",
+  "v": "chanter",
+  "t": "imp",
+  "p": "ils",
+  "e": "When they were little, they always sang the same song.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais jeune, je ___ (pouvoir) courir dix kilomètres sans problème.",
+  "v": "pouvoir",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was young, I could run ten kilometres without any trouble.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand tu étais petit, tu ___ (finir) toujours ton assiette ?",
+  "v": "finir",
+  "t": "imp",
+  "p": "tu",
+  "e": "When you were little, did you always finish your plate?",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, mon frère ___ (jouer) du piano tous les soirs.",
+  "v": "jouer",
+  "t": "imp",
+  "p": "il",
+  "e": "At the time, my brother played the piano every evening.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, nous ___ (passer) nos vacances chez ma tante.",
+  "v": "passer",
+  "t": "imp",
+  "p": "nous",
+  "e": "We used to spend our holidays at my aunt's.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand elles étaient jeunes, elles ___ (danser) en boîte le samedi soir.",
+  "v": "danser",
+  "t": "imp",
+  "p": "ils",
+  "e": "When they were young, they went dancing in clubs on Saturday nights.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'habitais à Lille, je ___ (venir) au travail à vélo.",
+  "v": "venir",
+  "t": "imp",
+  "p": "je",
+  "e": "When I lived in Lille, I came to work by bike.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais petit, il y ___ (avoir) un cinéma dans notre rue.",
+  "v": "avoir",
+  "t": "imp",
+  "p": "il",
+  "e": "When I was little, there was a cinema in our street.",
+  "b": "A2"
+ },
+ {
+  "q": "Avant, vous ___ (vivre) en ville ou à la campagne ?",
+  "v": "vivre",
+  "t": "imp",
+  "p": "vous",
+  "e": "Did you use to live in town or in the country?",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, les paysans se ___ (se lever) très tôt le matin.",
+  "v": "se lever",
+  "t": "imp",
+  "p": "ils",
+  "e": "In the old days, farmers got up very early in the morning.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand j'étais étudiante, je ___ (faire) des petits boulots l'été.",
+  "v": "faire",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was a student, I did odd jobs in the summer.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand il avait six ans, Hugo ___ (savoir) déjà nager.",
+  "v": "savoir",
+  "t": "imp",
+  "p": "il",
+  "e": "When he was six, Hugo could already swim.",
+  "b": "A2"
+ },
+ {
+  "q": "Il y a quelques années, tu ___ (porter) toujours des baskets rouges.",
+  "v": "porter",
+  "t": "imp",
+  "p": "tu",
+  "e": "A few years ago, you always wore red trainers.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand nous étions jeunes, nous ___ (discuter) des heures au téléphone.",
+  "v": "discuter",
+  "t": "imp",
+  "p": "nous",
+  "e": "When we were young, we chatted for hours on the phone.",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, mes voisins ___ (garder) des poules dans leur jardin.",
+  "v": "garder",
+  "t": "imp",
+  "p": "ils",
+  "e": "At the time, my neighbours kept hens in their garden.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais petit, j'___ (accompagner) toujours mon père au marché.",
+  "v": "accompagner",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was little, I always went with my father to the market.",
+  "b": "B1"
+ },
+ {
+  "q": "Autrefois, ma mère nous ___ (lire) une histoire chaque soir.",
+  "v": "lire",
+  "t": "imp",
+  "p": "il",
+  "e": "My mother used to read us a story every evening.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand vous étiez étudiants, vous ___ (habiter) où ?",
+  "v": "habiter",
+  "t": "imp",
+  "p": "vous",
+  "e": "Where did you live when you were students?",
+  "b": "B1"
+ },
+ {
+  "q": "Quand ils étaient petits, ils ___ (voir) leurs grands-parents chaque dimanche.",
+  "v": "voir",
+  "t": "imp",
+  "p": "ils",
+  "e": "When they were little, they saw their grandparents every Sunday.",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, je ___ (croire) que tout était facile.",
+  "v": "croire",
+  "t": "imp",
+  "p": "je",
+  "e": "At the time, I thought everything was easy.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand tu étais jeune, tu ___ (faire) beaucoup de sport.",
+  "v": "faire",
+  "t": "imp",
+  "p": "tu",
+  "e": "When you were young, you did a lot of sport.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand il vivait à Londres, Marc ___ (boire) du thé tous les matins.",
+  "v": "boire",
+  "t": "imp",
+  "p": "il",
+  "e": "When he lived in London, Marc drank tea every morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, nous ___ (prendre) toujours le train de sept heures.",
+  "v": "prendre",
+  "t": "imp",
+  "p": "nous",
+  "e": "We always used to take the seven o'clock train.",
+  "b": "A2"
+ },
+ {
+  "q": "Il y a cent ans, on ___ (vivre) sans électricité.",
+  "v": "vivre",
+  "t": "imp",
+  "p": "il",
+  "e": "A hundred years ago, people lived without electricity.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand ils étaient au lycée, mes frères se ___ (se disputer) tout le temps.",
+  "v": "se disputer",
+  "t": "imp",
+  "p": "ils",
+  "e": "When they were at secondary school, my brothers argued all the time.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand j'étais enfant, je ___ (dormir) avec la lumière allumée.",
+  "v": "dormir",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was a child, I slept with the light on.",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, la boulangerie ___ (ouvrir) à six heures du matin.",
+  "v": "ouvrir",
+  "t": "imp",
+  "p": "il",
+  "e": "At the time, the bakery opened at six in the morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Avant, vous vous ___ (se lever) tôt le dimanche ?",
+  "v": "se lever",
+  "t": "imp",
+  "p": "vous",
+  "e": "Did you use to get up early on Sundays?",
+  "b": "B1"
+ },
+ {
+  "q": "Autrefois, les femmes ___ (aller) rarement à l'université.",
+  "v": "aller",
+  "t": "imp",
+  "p": "ils",
+  "e": "In the past, women rarely went to university.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'avais quinze ans, j'___ (écouter) les Beatles en boucle.",
+  "v": "écouter",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was fifteen, I listened to the Beatles on repeat.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand elle était petite, Chloé ___ (lire) sous l'arbre du jardin.",
+  "v": "lire",
+  "t": "imp",
+  "p": "il",
+  "e": "When she was little, Chloé read under the tree in the garden.",
+  "b": "A2"
+ },
+ {
+  "q": "Avant, tu ___ (prendre) du café ou du thé le matin ?",
+  "v": "prendre",
+  "t": "imp",
+  "p": "tu",
+  "e": "Did you use to have coffee or tea in the morning?",
+  "b": "A2"
+ },
+ {
+  "q": "Quand nous habitions au bord de la mer, nous nous ___ (se baigner) tous les jours.",
+  "v": "se baigner",
+  "t": "imp",
+  "p": "nous",
+  "e": "When we lived by the sea, we swam every day.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand ils étaient enfants, ils ___ (jouer) toujours aux cartes.",
+  "v": "jouer",
+  "t": "imp",
+  "p": "ils",
+  "e": "When they were children, they always played cards.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, ce restaurant ___ (servir) les meilleures pizzas de la ville.",
+  "v": "servir",
+  "t": "imp",
+  "p": "il",
+  "e": "This restaurant used to serve the best pizzas in town.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais petit, je ___ (faire) souvent des cauchemars.",
+  "v": "faire",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was little, I often had nightmares.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand vous étiez petits, vous ___ (dormir) dans la même chambre ?",
+  "v": "dormir",
+  "t": "imp",
+  "p": "vous",
+  "e": "When you were little, did you sleep in the same room?",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, mon père ___ (conduire) une vieille voiture rouge.",
+  "v": "conduire",
+  "t": "imp",
+  "p": "il",
+  "e": "At the time, my father drove an old red car.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, les élèves se ___ (se lever) quand le professeur entrait.",
+  "v": "se lever",
+  "t": "imp",
+  "p": "ils",
+  "e": "In the past, pupils stood up when the teacher came in.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand je vivais en Italie, je ___ (manger) des pâtes tous les jours.",
+  "v": "manger",
+  "t": "imp",
+  "p": "je",
+  "e": "When I lived in Italy, I ate pasta every day.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand tu étais bébé, tu ___ (pleurer) beaucoup.",
+  "v": "pleurer",
+  "t": "imp",
+  "p": "tu",
+  "e": "When you were a baby, you cried a lot.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand nous étions jeunes, nous ___ (partir) en camping chaque été.",
+  "v": "partir",
+  "t": "imp",
+  "p": "nous",
+  "e": "When we were young, we went camping every summer.",
+  "b": "A2"
+ },
+ {
+  "q": "Il y a trente ans, ce village ___ (être) très vivant.",
+  "v": "être",
+  "t": "imp",
+  "p": "il",
+  "e": "Thirty years ago, this village was very lively.",
+  "b": "A2"
+ },
+ {
+  "q": "Avant, mes parents m'___ (envoyer) une carte postale de chaque voyage.",
+  "v": "envoyer",
+  "t": "imp",
+  "p": "ils",
+  "e": "My parents used to send me a postcard from every trip.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, notre voisin ___ (connaître) tous les enfants du quartier.",
+  "v": "connaître",
+  "t": "imp",
+  "p": "il",
+  "e": "In the past, our neighbour knew all the children in the area.",
+  "b": "A2"
+ },
+ {
+  "q": "Avant, vous ___ (faire) vos courses au marché ?",
+  "v": "faire",
+  "t": "imp",
+  "p": "vous",
+  "e": "Did you use to do your shopping at the market?",
+  "b": "A2"
+ },
+ {
+  "q": "Quand Julie était étudiante, elle ___ (vivre) chez ses parents.",
+  "v": "vivre",
+  "t": "imp",
+  "p": "il",
+  "e": "When Julie was a student, she lived with her parents.",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, les gens ___ (manger) moins de viande.",
+  "v": "manger",
+  "t": "imp",
+  "p": "ils",
+  "e": "At the time, people ate less meat.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais jeune, je ___ (mettre) toujours un livre dans mon sac.",
+  "v": "mettre",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was young, I always put a book in my bag.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand tu travaillais à Lyon, tu ___ (finir) à quelle heure ?",
+  "v": "finir",
+  "t": "imp",
+  "p": "tu",
+  "e": "When you worked in Lyon, what time did you finish?",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais petit, nous ___ (aller) en vacances chez ma grand-mère.",
+  "v": "aller",
+  "t": "imp",
+  "p": "nous",
+  "e": "When I was little, we went on holiday to my grandmother's.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, le facteur ___ (apporter) le courrier deux fois par jour.",
+  "v": "apporter",
+  "t": "imp",
+  "p": "il",
+  "e": "In the past, the postman brought the post twice a day.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand ils étaient jeunes, ils ___ (jouer) dans un groupe de rock.",
+  "v": "jouer",
+  "t": "imp",
+  "p": "ils",
+  "e": "When they were young, they played in a rock band.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'avais douze ans, j'___ (aimer) les romans d'aventure.",
+  "v": "aimer",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was twelve, I loved adventure novels.",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, la vie ___ (sembler) plus simple.",
+  "v": "sembler",
+  "t": "imp",
+  "p": "il",
+  "e": "At the time, life seemed simpler.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand vous étiez jeunes, vous ___ (aller) souvent au cinéma ?",
+  "v": "aller",
+  "t": "imp",
+  "p": "vous",
+  "e": "When you were young, did you often go to the cinema?",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, les familles ___ (dîner) ensemble tous les soirs.",
+  "v": "dîner",
+  "t": "imp",
+  "p": "ils",
+  "e": "In the past, families had dinner together every evening.",
+  "b": "A2"
+ },
+ {
+  "q": "Avant, je ___ (perdre) toujours mes clés.",
+  "v": "perdre",
+  "t": "imp",
+  "p": "je",
+  "e": "I always used to lose my keys.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand elle était petite, ma sœur ___ (rire) tout le temps.",
+  "v": "rire",
+  "t": "imp",
+  "p": "il",
+  "e": "When she was little, my sister laughed all the time.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand tu avais dix ans, tu ___ (vouloir) faire quel métier ?",
+  "v": "vouloir",
+  "t": "imp",
+  "p": "tu",
+  "e": "When you were ten, what job did you want to do?",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, nous ___ (faire) tout à pied.",
+  "v": "faire",
+  "t": "imp",
+  "p": "nous",
+  "e": "At the time, we did everything on foot.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand ils vivaient à la campagne, ils ___ (vendre) leurs légumes au marché.",
+  "v": "vendre",
+  "t": "imp",
+  "p": "ils",
+  "e": "When they lived in the country, they sold their vegetables at the market.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, il ___ (tomber) beaucoup de neige dans les Alpes.",
+  "v": "tomber",
+  "t": "imp",
+  "p": "il",
+  "e": "In the past, a lot of snow fell in the Alps.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais petit, je ___ (rendre) visite à mes grands-parents le dimanche.",
+  "v": "rendre",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was little, I visited my grandparents on Sundays.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand vous habitiez ici, vous ___ (connaître) les voisins ?",
+  "v": "connaître",
+  "t": "imp",
+  "p": "vous",
+  "e": "When you lived here, did you know the neighbours?",
+  "b": "A2"
+ },
+ {
+  "q": "Il y a dix ans, mon cousin ___ (habiter) à Montréal.",
+  "v": "habiter",
+  "t": "imp",
+  "p": "il",
+  "e": "Ten years ago, my cousin lived in Montreal.",
+  "b": "B1"
+ },
+ {
+  "q": "Autrefois, les enfants ___ (construire) leurs jouets eux-mêmes.",
+  "v": "construire",
+  "t": "imp",
+  "p": "ils",
+  "e": "In the old days, children built their own toys.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand j'étais enfant, je ___ (croire) au père Noël.",
+  "v": "croire",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was a child, I believed in Father Christmas.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand tu étais étudiant, tu ___ (vivre) en colocation ?",
+  "v": "vivre",
+  "t": "imp",
+  "p": "tu",
+  "e": "When you were a student, did you live in a flat share?",
+  "b": "A2"
+ },
+ {
+  "q": "Quand nous étions petits, nous ___ (acheter) des bonbons à la boulangerie.",
+  "v": "acheter",
+  "t": "imp",
+  "p": "nous",
+  "e": "When we were little, we bought sweets at the bakery.",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, mon grand-père ___ (porter) toujours un chapeau.",
+  "v": "porter",
+  "t": "imp",
+  "p": "il",
+  "e": "At the time, my grandfather always wore a hat.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand mes enfants étaient petits, ils se ___ (se réveiller) à six heures.",
+  "v": "se réveiller",
+  "t": "imp",
+  "p": "ils",
+  "e": "When my children were little, they woke up at six.",
+  "b": "B1"
+ },
+ {
+  "q": "Il y a cinq ans, j'___ (habiter) encore à Bordeaux.",
+  "v": "habiter",
+  "t": "imp",
+  "p": "je",
+  "e": "Five years ago, I still lived in Bordeaux.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand il était petit, Thomas ___ (vouloir) devenir pompier.",
+  "v": "vouloir",
+  "t": "imp",
+  "p": "il",
+  "e": "When he was little, Thomas wanted to become a firefighter.",
+  "b": "A2"
+ },
+ {
+  "q": "Avant, vous ___ (téléphoner) souvent à vos parents ?",
+  "v": "téléphoner",
+  "t": "imp",
+  "p": "vous",
+  "e": "Did you use to phone your parents often?",
+  "b": "B1"
+ },
+ {
+  "q": "Autrefois, cette usine ___ (construire) des voitures.",
+  "v": "construire",
+  "t": "imp",
+  "p": "il",
+  "e": "This factory used to build cars.",
+  "b": "B1"
+ },
+ {
+  "q": "À l'époque, les familles se ___ (retrouver) toujours à Noël.",
+  "v": "retrouver",
+  "t": "imp",
+  "p": "ils",
+  "e": "At the time, families always got together at Christmas.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais petit, je ___ (demander) toujours le dessert en premier.",
+  "v": "demander",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was little, I always asked for dessert first.",
+  "b": "A2"
+ },
+ {
+  "q": "Avant, tu ___ (cuisiner) tous les soirs.",
+  "v": "cuisiner",
+  "t": "imp",
+  "p": "tu",
+  "e": "You used to cook every evening.",
+  "b": "B1"
+ },
+ {
+  "q": "À l'époque, nous ___ (inviter) souvent nos voisins à dîner.",
+  "v": "inviter",
+  "t": "imp",
+  "p": "nous",
+  "e": "At the time, we often invited our neighbours to dinner.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand Sophie était jeune, elle ___ (courir) dans le parc tous les matins.",
+  "v": "courir",
+  "t": "imp",
+  "p": "il",
+  "e": "When Sophie was young, she ran in the park every morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, mes grands-parents ___ (vivre) dans un petit village.",
+  "v": "vivre",
+  "t": "imp",
+  "p": "ils",
+  "e": "My grandparents used to live in a small village.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais au lycée, j'___ (étudier) souvent tard le soir.",
+  "v": "étudier",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was at secondary school, I often studied late at night.",
+  "b": "B1"
+ },
+ {
+  "q": "À l'époque, notre professeur ___ (raconter) toujours les mêmes blagues.",
+  "v": "raconter",
+  "t": "imp",
+  "p": "il",
+  "e": "At the time, our teacher always told the same jokes.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand vous étiez enfants, vous ___ (avoir) des animaux ?",
+  "v": "avoir",
+  "t": "imp",
+  "p": "vous",
+  "e": "When you were children, did you have pets?",
+  "b": "A2"
+ },
+ {
+  "q": "Quand ils étaient jeunes, mes parents se ___ (se promener) souvent au bord de la mer.",
+  "v": "se promener",
+  "t": "imp",
+  "p": "ils",
+  "e": "When they were young, my parents often went for walks by the sea.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand j'étais enfant, je ___ (partager) ma chambre avec mon frère.",
+  "v": "partager",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was a child, I shared my room with my brother.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand tu étais petit, tu ___ (poser) tout le temps des questions.",
+  "v": "poser",
+  "t": "imp",
+  "p": "tu",
+  "e": "When you were little, you asked questions all the time.",
+  "b": "A2"
+ },
+ {
+  "q": "Avant, nous ___ (dîner) chez mes grands-parents chaque dimanche.",
+  "v": "dîner",
+  "t": "imp",
+  "p": "nous",
+  "e": "We used to have dinner at my grandparents' every Sunday.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, le boulanger ___ (préparer) son pain la nuit.",
+  "v": "préparer",
+  "t": "imp",
+  "p": "il",
+  "e": "In the past, the baker made his bread at night.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand ils étaient petits, les jumeaux se ___ (ressembler) beaucoup.",
+  "v": "ressembler",
+  "t": "imp",
+  "p": "ils",
+  "e": "When they were little, the twins looked very alike.",
+  "b": "A2"
+ },
+ {
+  "q": "Avant, j'___ (écrire) beaucoup de lettres à mes amis.",
+  "v": "écrire",
+  "t": "imp",
+  "p": "je",
+  "e": "I used to write a lot of letters to my friends.",
+  "b": "A2"
+ },
+ {
+  "q": "Il y a quelques années, mon frère ___ (servir) dans un restaurant chic.",
+  "v": "servir",
+  "t": "imp",
+  "p": "il",
+  "e": "A few years ago, my brother waited tables in a smart restaurant.",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, vous ___ (avoir) quel âge ?",
+  "v": "avoir",
+  "t": "imp",
+  "p": "vous",
+  "e": "How old were you at the time?",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, les gens ___ (chanter) pendant les fêtes de village.",
+  "v": "chanter",
+  "t": "imp",
+  "p": "ils",
+  "e": "In the past, people sang during the village festivals.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais jeune, je ne ___ (manger) jamais de légumes.",
+  "v": "manger",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was young, I never ate vegetables.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand tu étais petite, tu ___ (ressembler) beaucoup à ta grand-mère.",
+  "v": "ressembler",
+  "t": "imp",
+  "p": "tu",
+  "e": "When you were little, you looked a lot like your grandmother.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand nous étions étudiants, nous ___ (danser) jusqu'à trois heures du matin.",
+  "v": "danser",
+  "t": "imp",
+  "p": "nous",
+  "e": "When we were students, we danced until three in the morning.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, le village ___ (compter) plus de mille habitants.",
+  "v": "compter",
+  "t": "imp",
+  "p": "il",
+  "e": "In the past, the village had more than a thousand inhabitants.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand elles étaient au lycée, mes sœurs ___ (passer) des heures à se coiffer.",
+  "v": "passer",
+  "t": "imp",
+  "p": "ils",
+  "e": "When they were at secondary school, my sisters spent hours doing their hair.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'habitais à la montagne, je ___ (marcher) des heures dans la forêt.",
+  "v": "marcher",
+  "t": "imp",
+  "p": "je",
+  "e": "When I lived in the mountains, I walked for hours in the forest.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand il était jeune, mon père ___ (servir) dans la marine.",
+  "v": "servir",
+  "t": "imp",
+  "p": "il",
+  "e": "When he was young, my father served in the navy.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais petit, j'___ (attendre) le bus devant l'école.",
+  "v": "attendre",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was little, I waited for the bus outside the school.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, ma grand-mère m'___ (appeler) tous les dimanches.",
+  "v": "appeler",
+  "t": "imp",
+  "p": "il",
+  "e": "My grandmother used to call me every Sunday.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand tu étais au lycée, tu ___ (aider) tes parents à la maison ?",
+  "v": "aider",
+  "t": "imp",
+  "p": "tu",
+  "e": "When you were at secondary school, did you help your parents at home?",
+  "b": "A2"
+ },
+ {
+  "q": "Avant, nous ___ (offrir) toujours des fleurs à notre professeur.",
+  "v": "offrir",
+  "t": "imp",
+  "p": "nous",
+  "e": "We always used to give our teacher flowers.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand ils étaient petits, mes enfants me ___ (demander) toujours la même histoire.",
+  "v": "demander",
+  "t": "imp",
+  "p": "ils",
+  "e": "When they were little, my children always asked me for the same story.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'avais seize ans, je ___ (rêver) de voyager autour du monde.",
+  "v": "rêver",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was sixteen, I dreamed of travelling around the world.",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, le voyage en train ___ (durer) dix heures.",
+  "v": "durer",
+  "t": "imp",
+  "p": "il",
+  "e": "At the time, the train journey lasted ten hours.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand vous étiez enfants, vous ___ (nettoyer) vos chambres vous-mêmes ?",
+  "v": "nettoyer",
+  "t": "imp",
+  "p": "vous",
+  "e": "When you were children, did you clean your rooms yourselves?",
+  "b": "B1"
+ },
+ {
+  "q": "Quand il était petit, mon fils ___ (détester) les épinards.",
+  "v": "détester",
+  "t": "imp",
+  "p": "il",
+  "e": "When he was little, my son hated spinach.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, les bergers ___ (garder) leurs moutons dans la montagne.",
+  "v": "garder",
+  "t": "imp",
+  "p": "ils",
+  "e": "In the old days, shepherds looked after their sheep in the mountains.",
+  "b": "A2"
+ },
+ {
+  "q": "Avant, je ___ (payer) toujours en liquide.",
+  "v": "payer",
+  "t": "imp",
+  "p": "je",
+  "e": "I always used to pay in cash.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand tu habitais à Rome, tu ___ (recevoir) souvent des amis chez toi ?",
+  "v": "recevoir",
+  "t": "imp",
+  "p": "tu",
+  "e": "When you lived in Rome, did you often have friends round?",
+  "b": "A2"
+ },
+ {
+  "q": "Quand nous étions petits, notre père nous ___ (apprendre) à faire du vélo.",
+  "v": "apprendre",
+  "t": "imp",
+  "p": "il",
+  "e": "When we were little, our father taught us to ride a bike.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, ce café ___ (être) toujours plein le samedi.",
+  "v": "être",
+  "t": "imp",
+  "p": "il",
+  "e": "This café used to be full every Saturday.",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, les clients ___ (compter) encore en francs.",
+  "v": "compter",
+  "t": "imp",
+  "p": "ils",
+  "e": "At the time, customers still counted in francs.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais enfant, je ___ (finir) toujours mes devoirs à la dernière minute.",
+  "v": "finir",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was a child, I always finished my homework at the last minute.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand elle était jeune, ma mère ___ (vendre) des fleurs au marché.",
+  "v": "vendre",
+  "t": "imp",
+  "p": "il",
+  "e": "When she was young, my mother sold flowers at the market.",
+  "b": "A2"
+ },
+ {
+  "q": "Avant, tu ___ (préférer) le thé au café.",
+  "v": "préférer",
+  "t": "imp",
+  "p": "tu",
+  "e": "You used to prefer tea to coffee.",
+  "b": "A2"
+ },
+ {
+  "q": "Il y a vingt ans, nous ___ (habiter) dans le même immeuble.",
+  "v": "habiter",
+  "t": "imp",
+  "p": "nous",
+  "e": "Twenty years ago, we lived in the same building.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand ils étaient jeunes, mes grands-parents ___ (voyager) beaucoup.",
+  "v": "voyager",
+  "t": "imp",
+  "p": "ils",
+  "e": "When they were young, my grandparents travelled a lot.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand j'étais étudiant, je ___ (déjeuner) toujours dans le même café.",
+  "v": "déjeuner",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was a student, I always had lunch in the same café.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, mon grand-père nous ___ (raconter) des histoires de pirates.",
+  "v": "raconter",
+  "t": "imp",
+  "p": "il",
+  "e": "My grandfather used to tell us pirate stories.",
+  "b": "A2"
+ },
+ {
+  "q": "Avant, vous ___ (fermer) la porte à clé ?",
+  "v": "fermer",
+  "t": "imp",
+  "p": "vous",
+  "e": "Did you use to lock the door?",
+  "b": "A2"
+ },
+ {
+  "q": "Quand ils étaient enfants, ils ___ (souffrir) souvent de maux de dents.",
+  "v": "souffrir",
+  "t": "imp",
+  "p": "ils",
+  "e": "When they were children, they often suffered from toothache.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais petit, je ___ (deviner) toujours la fin des films.",
+  "v": "deviner",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was little, I always guessed the end of films.",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, mon père ___ (couper) du bois pour l'hiver.",
+  "v": "couper",
+  "t": "imp",
+  "p": "il",
+  "e": "At the time, my father cut wood for the winter.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand tu étais bébé, tu nous ___ (réveiller) toutes les nuits.",
+  "v": "réveiller",
+  "t": "imp",
+  "p": "tu",
+  "e": "When you were a baby, you woke us up every night.",
+  "b": "B1"
+ },
+ {
+  "q": "Avant, nous ___ (cuisiner) tous ensemble le dimanche.",
+  "v": "cuisiner",
+  "t": "imp",
+  "p": "nous",
+  "e": "We used to cook all together on Sundays.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand j'étais à l'étranger, mes parents me ___ (téléphoner) tous les soirs.",
+  "v": "téléphoner",
+  "t": "imp",
+  "p": "ils",
+  "e": "When I was abroad, my parents phoned me every evening.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand j'habitais à Rome, je ___ (visiter) un musée chaque semaine.",
+  "v": "visiter",
+  "t": "imp",
+  "p": "je",
+  "e": "When I lived in Rome, I visited a museum every week.",
+  "b": "B1"
+ },
+ {
+  "q": "Autrefois, ma tante ___ (inviter) toute la famille à Noël.",
+  "v": "inviter",
+  "t": "imp",
+  "p": "il",
+  "e": "My aunt used to invite the whole family at Christmas.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand vous étiez jeunes, vous ___ (fumer) beaucoup ?",
+  "v": "fumer",
+  "t": "imp",
+  "p": "vous",
+  "e": "When you were young, did you smoke a lot?",
+  "b": "B1"
+ },
+ {
+  "q": "Quand il était petit, Lucas ___ (grandir) très vite.",
+  "v": "grandir",
+  "t": "imp",
+  "p": "il",
+  "e": "When he was little, Lucas grew very fast.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand elles avaient vingt ans, elles ___ (étudier) à Paris.",
+  "v": "étudier",
+  "t": "imp",
+  "p": "ils",
+  "e": "When they were twenty, they studied in Paris.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand j'avais six ans, je ___ (savoir) déjà nager.",
+  "v": "savoir",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was six, I could already swim.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand tu étais petit, tu ___ (dire) toujours la vérité.",
+  "v": "dire",
+  "t": "imp",
+  "p": "tu",
+  "e": "When you were little, you always told the truth.",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, nous ___ (partager) tout entre amis.",
+  "v": "partager",
+  "t": "imp",
+  "p": "nous",
+  "e": "At the time, we shared everything among friends.",
+  "b": "B1"
+ },
+ {
+  "q": "Avant, le magasin ___ (ouvrir) aussi le dimanche matin.",
+  "v": "ouvrir",
+  "t": "imp",
+  "p": "il",
+  "e": "The shop used to open on Sunday mornings too.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, les voisins se ___ (connaître) tous.",
+  "v": "connaître",
+  "t": "imp",
+  "p": "ils",
+  "e": "In the past, the neighbours all knew each other.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais petit, je ___ (descendre) les escaliers en courant.",
+  "v": "descendre",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was little, I ran down the stairs.",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, vous ___ (travailler) dans quelle entreprise ?",
+  "v": "travailler",
+  "t": "imp",
+  "p": "vous",
+  "e": "At the time, which company did you work for?",
+  "b": "A2"
+ },
+ {
+  "q": "Quand ils étaient petits, ils ___ (jouer) au ballon dans la rue.",
+  "v": "jouer",
+  "t": "imp",
+  "p": "ils",
+  "e": "When they were little, they played ball in the street.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais jeune, je ___ (chanter) à l'église chaque dimanche.",
+  "v": "chanter",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was young, I sang in church every Sunday.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, cette boutique ___ (vendre) des chapeaux.",
+  "v": "vendre",
+  "t": "imp",
+  "p": "il",
+  "e": "This shop used to sell hats.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand tu étais au collège, tu ___ (apprendre) quelle langue ?",
+  "v": "apprendre",
+  "t": "imp",
+  "p": "tu",
+  "e": "When you were at school, which language did you learn?",
+  "b": "A2"
+ },
+ {
+  "q": "Quand nous étions petits, nous ___ (avoir) peur de l'orage.",
+  "v": "avoir",
+  "t": "imp",
+  "p": "nous",
+  "e": "When we were little, we were afraid of storms.",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, mes parents ___ (rentrer) très tard du travail.",
+  "v": "rentrer",
+  "t": "imp",
+  "p": "ils",
+  "e": "At the time, my parents came home very late from work.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'habitais chez mes parents, je ___ (nettoyer) ma chambre le samedi.",
+  "v": "nettoyer",
+  "t": "imp",
+  "p": "je",
+  "e": "When I lived with my parents, I cleaned my room on Saturdays.",
+  "b": "B1"
+ },
+ {
+  "q": "Quand il vivait en Espagne, mon frère ___ (faire) la sieste chaque jour.",
+  "v": "faire",
+  "t": "imp",
+  "p": "il",
+  "e": "When he lived in Spain, my brother had a nap every day.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand vous étiez petits, vous ___ (aller) au parc après l'école ?",
+  "v": "aller",
+  "t": "imp",
+  "p": "vous",
+  "e": "When you were little, did you go to the park after school?",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, les gens ___ (rester) plus longtemps à table.",
+  "v": "rester",
+  "t": "imp",
+  "p": "ils",
+  "e": "In the past, people stayed at the table longer.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais enfant, j'___ (aider) mon grand-père au jardin.",
+  "v": "aider",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was a child, I helped my grandfather in the garden.",
+  "b": "A2"
+ },
+ {
+  "q": "Avant, ma mère ___ (prendre) toujours le bus de huit heures.",
+  "v": "prendre",
+  "t": "imp",
+  "p": "il",
+  "e": "My mother always used to take the eight o'clock bus.",
+  "b": "A2"
+ },
+ {
+  "q": "Il y a dix ans, tu ___ (avoir) les cheveux longs.",
+  "v": "avoir",
+  "t": "imp",
+  "p": "tu",
+  "e": "Ten years ago, you had long hair.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, nous ___ (écrire) avec un stylo plume.",
+  "v": "écrire",
+  "t": "imp",
+  "p": "nous",
+  "e": "We used to write with a fountain pen.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand ils étaient jeunes, ils ___ (rêver) de devenir riches.",
+  "v": "rêver",
+  "t": "imp",
+  "p": "ils",
+  "e": "When they were young, they dreamed of becoming rich.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais petite, j'___ (emmener) toujours ma poupée avec moi.",
+  "v": "emmener",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was little, I always took my doll with me.",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, le bureau se ___ (se trouver) au centre-ville.",
+  "v": "se trouver",
+  "t": "imp",
+  "p": "il",
+  "e": "At the time, the office was in the town centre.",
+  "b": "A2"
+ },
+ {
+  "q": "Avant, vous ___ (boire) du vin à table ?",
+  "v": "boire",
+  "t": "imp",
+  "p": "vous",
+  "e": "Did you use to drink wine with meals?",
+  "b": "A2"
+ },
+ {
+  "q": "Quand ils habitaient en Grèce, ils se ___ (se baigner) chaque matin.",
+  "v": "se baigner",
+  "t": "imp",
+  "p": "ils",
+  "e": "When they lived in Greece, they swam every morning.",
+  "b": "B1"
+ },
+ {
+  "q": "Avant, je ___ (perdre) beaucoup de temps sur mon téléphone.",
+  "v": "perdre",
+  "t": "imp",
+  "p": "je",
+  "e": "I used to waste a lot of time on my phone.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand elle était étudiante, Inès ___ (vendre) des livres dans une librairie.",
+  "v": "vendre",
+  "t": "imp",
+  "p": "il",
+  "e": "When she was a student, Inès sold books in a bookshop.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand tu étais petit, tu ___ (chanter) sous la douche.",
+  "v": "chanter",
+  "t": "imp",
+  "p": "tu",
+  "e": "When you were little, you sang in the shower.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand nous vivions à Lyon, nous ___ (aller) souvent au restaurant.",
+  "v": "aller",
+  "t": "imp",
+  "p": "nous",
+  "e": "When we lived in Lyon, we often went to restaurants.",
+  "b": "A2"
+ },
+ {
+  "q": "Autrefois, les élèves ___ (porter) des blouses grises.",
+  "v": "porter",
+  "t": "imp",
+  "p": "ils",
+  "e": "In the past, pupils wore grey smocks.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais petit, j'___ (énerver) souvent mon grand frère.",
+  "v": "énerver",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was little, I often annoyed my big brother.",
+  "b": "B1"
+ },
+ {
+  "q": "Il y a cinquante ans, on ___ (regarder) la télévision en noir et blanc.",
+  "v": "regarder",
+  "t": "imp",
+  "p": "il",
+  "e": "Fifty years ago, people watched television in black and white.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand vous étiez étudiants, vous ___ (organiser) des fêtes ?",
+  "v": "organiser",
+  "t": "imp",
+  "p": "vous",
+  "e": "When you were students, did you throw parties?",
+  "b": "B1"
+ },
+ {
+  "q": "À l'époque, les trains ___ (arriver) souvent en retard.",
+  "v": "arriver",
+  "t": "imp",
+  "p": "ils",
+  "e": "At the time, the trains often arrived late.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'avais vingt ans, j'___ (inviter) souvent mes amis à dîner.",
+  "v": "inviter",
+  "t": "imp",
+  "p": "je",
+  "e": "When I was twenty, I often invited my friends to dinner.",
+  "b": "B1"
+ },
+ {
+  "q": "Autrefois, mon chat ___ (dormir) toute la journée au soleil.",
+  "v": "dormir",
+  "t": "imp",
+  "p": "il",
+  "e": "My cat used to sleep in the sun all day.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand tu étais enfant, tu ___ (voir) souvent tes cousins ?",
+  "v": "voir",
+  "t": "imp",
+  "p": "tu",
+  "e": "When you were a child, did you often see your cousins?",
+  "b": "A2"
+ },
+ {
+  "q": "Avant, nous ___ (laisser) toujours la clé sous le paillasson.",
+  "v": "laisser",
+  "t": "imp",
+  "p": "nous",
+  "e": "We always used to leave the key under the doormat.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand ils étaient petits, mes enfants ___ (courir) partout.",
+  "v": "courir",
+  "t": "imp",
+  "p": "ils",
+  "e": "When they were little, my children ran everywhere.",
+  "b": "A2"
+ },
+ {
+  "q": "Quand j'étais petit, il ___ (falloir) se lever tôt pour aller à l'école.",
+  "v": "falloir",
+  "t": "imp",
+  "p": "il",
+  "e": "When I was little, you had to get up early to go to school.",
+  "b": "A2"
+ },
+ {
+  "q": "À l'époque, mon voisin ___ (tourner) des films pour la télévision.",
+  "v": "tourner",
+  "t": "imp",
+  "p": "il",
+  "e": "At the time, my neighbour made films for television.",
+  "b": "A2"
+ }
+]

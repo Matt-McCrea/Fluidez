@@ -52,3 +52,14 @@ Mondrian and Rietveld: white, black lines, primary colour blocks. Bright, flat, 
 - **Líofa:** knotwork by Mercat's rule (tools/ga/knot-lib.js): the medial graph of a square grid with breaks, drawn alternating over and under, the way George Bain laid out the Book of Kells panels on dot grids. Rosettes linked by plait, at 16% behind everything; a two-strand cable (gold and red lead) under headings and across Imir. Regenerate with `node tools/ga/make-knot.js`.
 - **Ṭalāqa:** the khatam star-and-cross of Mamluk Cairo and Damascus (the Umayyad Mosque doors and grilles): eight-pointed star outlines on a centred square lattice, the crosses left between them, a small octagon in each star, as gold strapwork at 22%. Regenerate with `node tools/ar/make-pattern.js`.
 Both are inline SVG data URIs in the CSS, so they work offline.
+
+## Couramment (French): Toile de Jouy (15 Nov 2026)
+Linen and madder red, like an 18th century Jouy print. Light, calm and elegant (Matthew: no small caps, no drop caps, no italics on headings). Spec: docs/couramment-spec.md. CSS: francais/css/couramment.css (Vlot's De Stijl block was removed, not layered over).
+- Light theme. `--bg #f6efe1` (linen), `--panel #fffaf0`, `--panel-2 #efe5d0`, `--border #d9c9a8`, `--text #2a1d1a`, `--muted #6b5a4e`.
+- `--accent #a3202e` (rouge de Jouy), `--accent-2 #c43a48`, toile blue `#2c4a8a`, `--gold #8a6413` (records), good `#1f7a48`, bad `#b3261e`.
+- Headings and the wordmark only: `"Didot", "Bodoni 72", "Bodoni MT", Georgia, serif`, weight 700, upright. Everything else the system sans.
+- Tiles are cream panels with a thin hue edge and a 6px hue bar, text in ink (hues are too light or too saturated for text on them). Jouer is a cartouche: madder border, inner gold line, a faint gold wash. Pills and chosen chips use the hue mixed 30% towards the ink, so white text passes on all nine.
+- Tile hues: Jouer `#b8860b`, Verbes `#a3202e`, Mots `#2c4a8a`, Phrases `#4f7a4a`, Conversations `#7a5aa6`, Le ou la `#b84a6e`, Pronoms `#a86b12`, Négation `#4a5a6a`, Prépositions `#21706b`.
+- Background: the treillage of a Versailles garden, a diagonal lattice with a small four petal rosette at every crossing, madder red at 10%. Regenerate with `node tools/fr/make-pattern.js --write` (inline SVG data URI in the `--treillage` property, offline). It sits on `body` only: lesson text, chips and the little page stand on solid panels.
+- Icon: 🥐 on `#a3202e` (`node tools/make-icons.js --target francais`).
+- Checked with `node tools/check-card-contrast.js couramment` (0 problems, no text straight on the pattern).

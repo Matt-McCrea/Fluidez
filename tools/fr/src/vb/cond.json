@@ -1,0 +1,962 @@
+[
+ {
+  "q": "Si j'avais plus d'argent, je ___ (voyager) en Asie.",
+  "v": "voyager",
+  "t": "cond",
+  "p": "je",
+  "e": "If I had more money, I'd travel in Asia.",
+  "b": "B1"
+ },
+ {
+  "q": "Si tu dormais plus, tu ___ (être) moins fatigué.",
+  "v": "être",
+  "t": "cond",
+  "p": "tu",
+  "e": "If you slept more, you'd be less tired.",
+  "b": "B1"
+ },
+ {
+  "q": "Si Marc gagnait au loto, il ___ (acheter) un bateau.",
+  "v": "acheter",
+  "t": "cond",
+  "p": "il",
+  "e": "If Marc won the lottery, he'd buy a boat.",
+  "b": "B1"
+ },
+ {
+  "q": "Si nous avions une voiture, nous ___ (aller) à la montagne.",
+  "v": "aller",
+  "t": "cond",
+  "p": "nous",
+  "e": "If we had a car, we'd go to the mountains.",
+  "b": "B1"
+ },
+ {
+  "q": "Si vous habitiez plus près, vous ___ (pouvoir) venir à pied.",
+  "v": "pouvoir",
+  "t": "cond",
+  "p": "vous",
+  "e": "If you lived closer, you could come on foot.",
+  "b": "B1"
+ },
+ {
+  "q": "S'ils avaient le temps, ils ___ (faire) du sport.",
+  "v": "faire",
+  "t": "cond",
+  "p": "ils",
+  "e": "If they had time, they'd do some sport.",
+  "b": "B1"
+ },
+ {
+  "q": "Je ___ (vouloir) un café crème, s'il vous plaît.",
+  "v": "vouloir",
+  "t": "cond",
+  "p": "je",
+  "e": "I'd like a white coffee, please.",
+  "b": "A2"
+ },
+ {
+  "q": "Bonjour, je ___ (vouloir) deux baguettes, s'il vous plaît.",
+  "v": "vouloir",
+  "t": "cond",
+  "p": "je",
+  "e": "Hello, I'd like two baguettes, please.",
+  "b": "A2"
+ },
+ {
+  "q": "J'___ (aimer) réserver une table pour quatre, s'il vous plaît.",
+  "v": "aimer",
+  "t": "cond",
+  "p": "je",
+  "e": "I'd like to book a table for four, please.",
+  "b": "A2"
+ },
+ {
+  "q": "Si tu avais une minute, tu ___ (pouvoir) m'aider ?",
+  "v": "pouvoir",
+  "t": "cond",
+  "p": "tu",
+  "e": "If you had a minute, could you help me?",
+  "b": "B1"
+ },
+ {
+  "q": "Excusez-moi, vous ___ (pouvoir) parler plus lentement ?",
+  "v": "pouvoir",
+  "t": "cond",
+  "p": "vous",
+  "e": "Excuse me, could you speak more slowly?",
+  "b": "A2"
+ },
+ {
+  "q": "Vous n'___ (avoir) pas une taille plus petite, par hasard ?",
+  "v": "avoir",
+  "t": "cond",
+  "p": "vous",
+  "e": "You wouldn't have a smaller size, by any chance?",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (vouloir) bien t'aider, mais je n'ai pas le temps.",
+  "v": "vouloir",
+  "t": "cond",
+  "p": "je",
+  "e": "I'd like to help you, but I don't have time.",
+  "b": "A2"
+ },
+ {
+  "q": "J'___ (aimer) bien venir, mais je travaille samedi.",
+  "v": "aimer",
+  "t": "cond",
+  "p": "je",
+  "e": "I'd love to come, but I'm working on Saturday.",
+  "b": "A2"
+ },
+ {
+  "q": "À ta place, je ___ (partir) tout de suite.",
+  "v": "partir",
+  "t": "cond",
+  "p": "je",
+  "e": "If I were you, I'd leave right away.",
+  "b": "B1"
+ },
+ {
+  "q": "À ta place, je ne ___ (dire) rien à personne.",
+  "v": "dire",
+  "t": "cond",
+  "p": "je",
+  "e": "If I were you, I wouldn't say anything to anyone.",
+  "b": "B1"
+ },
+ {
+  "q": "À votre place, je ___ (prendre) le train plutôt que la voiture.",
+  "v": "prendre",
+  "t": "cond",
+  "p": "je",
+  "e": "In your position I'd take the train rather than the car.",
+  "b": "B1"
+ },
+ {
+  "q": "S'il neigeait demain, il ___ (falloir) annuler le match.",
+  "v": "falloir",
+  "t": "cond",
+  "p": "il",
+  "e": "If it snowed tomorrow, we'd have to cancel the match.",
+  "b": "B1"
+ },
+ {
+  "q": "Ce ___ (être) génial si tu pouvais venir.",
+  "v": "être",
+  "t": "cond",
+  "p": "il",
+  "e": "It would be great if you could come.",
+  "b": "B1"
+ },
+ {
+  "q": "Sans toi, la fête ne ___ (être) pas la même.",
+  "v": "être",
+  "t": "cond",
+  "p": "il",
+  "e": "Without you the party wouldn't be the same.",
+  "b": "B1"
+ },
+ {
+  "q": "Si nous étions riches, nous ___ (vivre) au bord de la mer.",
+  "v": "vivre",
+  "t": "cond",
+  "p": "nous",
+  "e": "If we were rich, we'd live by the sea.",
+  "b": "B1"
+ },
+ {
+  "q": "Vous ___ (venir) avec nous si vous n'étiez pas malade ?",
+  "v": "venir",
+  "t": "cond",
+  "p": "vous",
+  "e": "Would you come with us if you weren't ill?",
+  "b": "B1"
+ },
+ {
+  "q": "Mes parents ___ (être) fiers de toi s'ils te voyaient.",
+  "v": "être",
+  "t": "cond",
+  "p": "ils",
+  "e": "My parents would be proud of you if they saw you.",
+  "b": "B1"
+ },
+ {
+  "q": "Si tu me posais la question, je ne ___ (savoir) pas quoi répondre.",
+  "v": "savoir",
+  "t": "cond",
+  "p": "je",
+  "e": "If you asked me, I wouldn't know what to say.",
+  "b": "B1"
+ },
+ {
+  "q": "Si tu pouvais, tu ___ (aimer) vivre à l'étranger ?",
+  "v": "aimer",
+  "t": "cond",
+  "p": "tu",
+  "e": "If you could, would you like to live abroad?",
+  "b": "B1"
+ },
+ {
+  "q": "Karim m'a dit qu'il ___ (venir) à la fête.",
+  "v": "venir",
+  "t": "cond",
+  "p": "il",
+  "e": "Karim told me he would come to the party.",
+  "b": "B1"
+ },
+ {
+  "q": "Julie a promis qu'elle m'___ (appeler) ce soir.",
+  "v": "appeler",
+  "t": "cond",
+  "p": "il",
+  "e": "Julie promised she would call me this evening.",
+  "b": "B1"
+ },
+ {
+  "q": "Ils avaient dit qu'ils ___ (arriver) avant midi.",
+  "v": "arriver",
+  "t": "cond",
+  "p": "ils",
+  "e": "They had said they would arrive before noon.",
+  "b": "B1"
+ },
+ {
+  "q": "Je savais que tu ___ (réussir) ton examen !",
+  "v": "réussir",
+  "t": "cond",
+  "p": "tu",
+  "e": "I knew you would pass your exam!",
+  "b": "B1"
+ },
+ {
+  "q": "Le prof nous a dit que nous ___ (avoir) un contrôle vendredi.",
+  "v": "avoir",
+  "t": "cond",
+  "p": "nous",
+  "e": "The teacher told us we would have a test on Friday.",
+  "b": "B1"
+ },
+ {
+  "q": "La météo disait qu'il ___ (faire) beau aujourd'hui.",
+  "v": "faire",
+  "t": "cond",
+  "p": "il",
+  "e": "The forecast said it would be nice today.",
+  "b": "B1"
+ },
+ {
+  "q": "Si vous pouviez choisir, vous ___ (aimer) vivre où ?",
+  "v": "aimer",
+  "t": "cond",
+  "p": "vous",
+  "e": "If you could choose, where would you like to live?",
+  "b": "B1"
+ },
+ {
+  "q": "Sans mes amis, je ___ (être) perdu ici.",
+  "v": "être",
+  "t": "cond",
+  "p": "je",
+  "e": "Without my friends I'd be lost here.",
+  "b": "B1"
+ },
+ {
+  "q": "Qu'est-ce que tu ___ (faire) si tu gagnais un million ?",
+  "v": "faire",
+  "t": "cond",
+  "p": "tu",
+  "e": "What would you do if you won a million?",
+  "b": "B1"
+ },
+ {
+  "q": "Si Paul parlait anglais, il ___ (pouvoir) travailler à Londres.",
+  "v": "pouvoir",
+  "t": "cond",
+  "p": "il",
+  "e": "If Paul spoke English, he could work in London.",
+  "b": "B1"
+ },
+ {
+  "q": "Si la maison était moins chère, nous l'___ (acheter) tout de suite.",
+  "v": "acheter",
+  "t": "cond",
+  "p": "nous",
+  "e": "If the house were cheaper, we'd buy it straight away.",
+  "b": "B1"
+ },
+ {
+  "q": "Si vous aviez une semaine de libre, vous ___ (aller) où ?",
+  "v": "aller",
+  "t": "cond",
+  "p": "vous",
+  "e": "If you had a week off, where would you go?",
+  "b": "B1"
+ },
+ {
+  "q": "Si les billets coûtaient moins cher, ils ___ (venir) plus souvent.",
+  "v": "venir",
+  "t": "cond",
+  "p": "ils",
+  "e": "If tickets were cheaper, they'd come more often.",
+  "b": "B1"
+ },
+ {
+  "q": "Si j'étais toi, je ___ (vendre) cette vieille voiture.",
+  "v": "vendre",
+  "t": "cond",
+  "p": "je",
+  "e": "If I were you, I'd sell that old car.",
+  "b": "B1"
+ },
+ {
+  "q": "Si tu lisais le livre, tu ___ (comprendre) mieux le film.",
+  "v": "comprendre",
+  "t": "cond",
+  "p": "tu",
+  "e": "If you read the book, you'd understand the film better.",
+  "b": "B1"
+ },
+ {
+  "q": "Si le bébé dormait mieux, sa mère ___ (dormir) mieux aussi.",
+  "v": "dormir",
+  "t": "cond",
+  "p": "il",
+  "e": "If the baby slept better, his mother would sleep better too.",
+  "b": "B1"
+ },
+ {
+  "q": "Si nous finissions plus tôt, nous ___ (partir) en week-end.",
+  "v": "partir",
+  "t": "cond",
+  "p": "nous",
+  "e": "If we finished earlier, we'd go away for the weekend.",
+  "b": "B1"
+ },
+ {
+  "q": "Si vous montiez sur la tour, vous ___ (voir) toute la ville.",
+  "v": "voir",
+  "t": "cond",
+  "p": "vous",
+  "e": "If you went up the tower, you'd see the whole town.",
+  "b": "B1"
+ },
+ {
+  "q": "Si on leur demandait, ils ___ (aimer) rester plus longtemps.",
+  "v": "aimer",
+  "t": "cond",
+  "p": "ils",
+  "e": "If we asked them, they'd like to stay longer.",
+  "b": "B1"
+ },
+ {
+  "q": "Si je n'étais pas au régime, je ___ (manger) ce gâteau entier.",
+  "v": "manger",
+  "t": "cond",
+  "p": "je",
+  "e": "If I weren't on a diet, I'd eat this whole cake.",
+  "b": "B1"
+ },
+ {
+  "q": "Si tu te couchais plus tôt, tu ___ (avoir) plus d'énergie.",
+  "v": "avoir",
+  "t": "cond",
+  "p": "tu",
+  "e": "If you went to bed earlier, you'd have more energy.",
+  "b": "B1"
+ },
+ {
+  "q": "Si Hugo avait le temps, il nous ___ (aider).",
+  "v": "aider",
+  "t": "cond",
+  "p": "il",
+  "e": "If Hugo had time, he'd help us.",
+  "b": "B1"
+ },
+ {
+  "q": "Si le bus ne passait pas, nous ___ (prendre) un taxi.",
+  "v": "prendre",
+  "t": "cond",
+  "p": "nous",
+  "e": "If the bus didn't come, we'd take a taxi.",
+  "b": "B1"
+ },
+ {
+  "q": "Si vous étiez à ma place, vous ___ (être) d'accord avec moi.",
+  "v": "être",
+  "t": "cond",
+  "p": "vous",
+  "e": "If you were in my position, you'd agree with me.",
+  "b": "B1"
+ },
+ {
+  "q": "Si les magasins ouvraient le dimanche, les gens ___ (pouvoir) y aller.",
+  "v": "pouvoir",
+  "t": "cond",
+  "p": "ils",
+  "e": "If shops opened on Sundays, people could go then.",
+  "b": "B1"
+ },
+ {
+  "q": "Je ___ (venir) volontiers, mais j'ai déjà un rendez-vous.",
+  "v": "venir",
+  "t": "cond",
+  "p": "je",
+  "e": "I'd gladly come, but I already have an appointment.",
+  "b": "A2"
+ },
+ {
+  "q": "Si tu pouvais, tu ___ (vouloir) habiter dans quelle ville ?",
+  "v": "vouloir",
+  "t": "cond",
+  "p": "tu",
+  "e": "If you could, which town would you want to live in?",
+  "b": "B1"
+ },
+ {
+  "q": "Si j'étais ministre, je ___ (faire) construire des écoles partout.",
+  "v": "faire",
+  "t": "cond",
+  "p": "je",
+  "e": "If I were a minister, I'd have schools built everywhere.",
+  "b": "B1"
+ },
+ {
+  "q": "Si tu écoutais en cours, tu ___ (savoir) la réponse.",
+  "v": "savoir",
+  "t": "cond",
+  "p": "tu",
+  "e": "If you listened in class, you'd know the answer.",
+  "b": "B1"
+ },
+ {
+  "q": "Mon père ___ (aimer) beaucoup te rencontrer un jour.",
+  "v": "aimer",
+  "t": "cond",
+  "p": "il",
+  "e": "My father would really like to meet you one day.",
+  "b": "A2"
+ },
+ {
+  "q": "Bonjour, nous ___ (vouloir) réserver deux chambres, s'il vous plaît.",
+  "v": "vouloir",
+  "t": "cond",
+  "p": "nous",
+  "e": "Hello, we'd like to book two rooms, please.",
+  "b": "A2"
+ },
+ {
+  "q": "S'il faisait beau, mes amis ___ (partir) en randonnée.",
+  "v": "partir",
+  "t": "cond",
+  "p": "ils",
+  "e": "If the weather were nice, my friends would go hiking.",
+  "b": "B1"
+ },
+ {
+  "q": "Si tu m'invitais, je ___ (rester) dîner.",
+  "v": "rester",
+  "t": "cond",
+  "p": "je",
+  "e": "If you invited me, I'd stay for dinner.",
+  "b": "B1"
+ },
+ {
+  "q": "Si tu cherchais mieux, tu ___ (trouver) tes clés.",
+  "v": "trouver",
+  "t": "cond",
+  "p": "tu",
+  "e": "If you looked properly, you'd find your keys.",
+  "b": "B1"
+ },
+ {
+  "q": "Si elle avait moins peur, Inès ___ (chanter) sur scène.",
+  "v": "chanter",
+  "t": "cond",
+  "p": "il",
+  "e": "If she were less scared, Inès would sing on stage.",
+  "b": "B1"
+ },
+ {
+  "q": "S'il ne pleuvait pas, nous ___ (jouer) dans le jardin.",
+  "v": "jouer",
+  "t": "cond",
+  "p": "nous",
+  "e": "If it weren't raining, we'd play in the garden.",
+  "b": "B1"
+ },
+ {
+  "q": "Si vous travailliez ensemble, vous ___ (gagner) plus facilement.",
+  "v": "gagner",
+  "t": "cond",
+  "p": "vous",
+  "e": "If you worked together, you'd win more easily.",
+  "b": "B1"
+ },
+ {
+  "q": "Si les cours étaient gratuits, ils ___ (apprendre) le chinois.",
+  "v": "apprendre",
+  "t": "cond",
+  "p": "ils",
+  "e": "If the lessons were free, they'd learn Chinese.",
+  "b": "B1"
+ },
+ {
+  "q": "Si j'avais moins de travail, je ___ (lire) plus de romans.",
+  "v": "lire",
+  "t": "cond",
+  "p": "je",
+  "e": "If I had less work, I'd read more novels.",
+  "b": "B1"
+ },
+ {
+  "q": "À ta place, je ne ___ (boire) pas ce lait, il sent bizarre.",
+  "v": "boire",
+  "t": "cond",
+  "p": "je",
+  "e": "If I were you, I wouldn't drink that milk, it smells odd.",
+  "b": "B1"
+ },
+ {
+  "q": "Si Louis avait plus de temps, il ___ (écrire) un livre.",
+  "v": "écrire",
+  "t": "cond",
+  "p": "il",
+  "e": "If Louis had more time, he'd write a book.",
+  "b": "B1"
+ },
+ {
+  "q": "Si notre appartement était plus grand, nous ___ (inviter) tout le monde.",
+  "v": "inviter",
+  "t": "cond",
+  "p": "nous",
+  "e": "If our flat were bigger, we'd invite everyone.",
+  "b": "B1"
+ },
+ {
+  "q": "Si vous pouviez changer de métier, vous ___ (choisir) lequel ?",
+  "v": "choisir",
+  "t": "cond",
+  "p": "vous",
+  "e": "If you could change jobs, which one would you choose?",
+  "b": "B1"
+ },
+ {
+  "q": "S'ils trouvaient du travail, ils ___ (habiter) à Montpellier.",
+  "v": "habiter",
+  "t": "cond",
+  "p": "ils",
+  "e": "If they found work, they'd live in Montpellier.",
+  "b": "B1"
+ },
+ {
+  "q": "Si je recommençais ma vie, je ___ (devenir) musicien.",
+  "v": "devenir",
+  "t": "cond",
+  "p": "je",
+  "e": "If I started my life again, I'd become a musician.",
+  "b": "B1"
+ },
+ {
+  "q": "Si tu étais invité au mariage, tu ___ (mettre) quoi ?",
+  "v": "mettre",
+  "t": "cond",
+  "p": "tu",
+  "e": "If you were invited to the wedding, what would you wear?",
+  "b": "B1"
+ },
+ {
+  "q": "La météo a dit qu'il ___ (pleuvoir) cet après-midi.",
+  "v": "pleuvoir",
+  "t": "cond",
+  "p": "il",
+  "e": "The forecast said it would rain this afternoon.",
+  "b": "B1"
+ },
+ {
+  "q": "Le chef nous a dit que nous ___ (finir) tôt vendredi.",
+  "v": "finir",
+  "t": "cond",
+  "p": "nous",
+  "e": "The boss told us we would finish early on Friday.",
+  "b": "B1"
+ },
+ {
+  "q": "On m'a dit que vous ___ (recevoir) le colis lundi.",
+  "v": "recevoir",
+  "t": "cond",
+  "p": "vous",
+  "e": "I was told you would get the parcel on Monday.",
+  "b": "B1"
+ },
+ {
+  "q": "Les enfants ont promis qu'ils ___ (rentrer) avant minuit.",
+  "v": "rentrer",
+  "t": "cond",
+  "p": "ils",
+  "e": "The children promised they would be home before midnight.",
+  "b": "B1"
+ },
+ {
+  "q": "J'ai promis que je ___ (être) à l'heure.",
+  "v": "être",
+  "t": "cond",
+  "p": "je",
+  "e": "I promised I would be on time.",
+  "b": "B1"
+ },
+ {
+  "q": "Tu avais dit que tu ___ (venir) me chercher à la gare.",
+  "v": "venir",
+  "t": "cond",
+  "p": "tu",
+  "e": "You'd said you would come and pick me up at the station.",
+  "b": "B1"
+ },
+ {
+  "q": "Ça ___ (faire) plaisir à ta grand-mère si tu l'appelais.",
+  "v": "faire",
+  "t": "cond",
+  "p": "il",
+  "e": "It would make your grandmother happy if you called her.",
+  "b": "B1"
+ },
+ {
+  "q": "Ce ___ (être) plus simple si tout le monde parlait la même langue.",
+  "v": "être",
+  "t": "cond",
+  "p": "il",
+  "e": "It would be simpler if everyone spoke the same language.",
+  "b": "B1"
+ },
+ {
+  "q": "Si nous nous levions plus tôt, nous ___ (pouvoir) voir le lever du soleil.",
+  "v": "pouvoir",
+  "t": "cond",
+  "p": "nous",
+  "e": "If we got up earlier, we could see the sunrise.",
+  "b": "B1"
+ },
+ {
+  "q": "Si j'avais une voiture, je ___ (pouvoir) t'emmener à l'aéroport.",
+  "v": "pouvoir",
+  "t": "cond",
+  "p": "je",
+  "e": "If I had a car, I could take you to the airport.",
+  "b": "B1"
+ },
+ {
+  "q": "Si tu voulais, tu ___ (pouvoir) dormir chez nous ce soir.",
+  "v": "pouvoir",
+  "t": "cond",
+  "p": "tu",
+  "e": "If you wanted, you could sleep at our place tonight.",
+  "b": "B1"
+ },
+ {
+  "q": "Si les élèves révisaient, ils ___ (savoir) répondre.",
+  "v": "savoir",
+  "t": "cond",
+  "p": "ils",
+  "e": "If the pupils revised, they'd be able to answer.",
+  "b": "B1"
+ },
+ {
+  "q": "Mon frère ___ (vouloir) bien venir, mais il est malade.",
+  "v": "vouloir",
+  "t": "cond",
+  "p": "il",
+  "e": "My brother would like to come, but he's ill.",
+  "b": "A2"
+ },
+ {
+  "q": "Si vous aimiez la mer, vous ___ (adorer) cette région.",
+  "v": "adorer",
+  "t": "cond",
+  "p": "vous",
+  "e": "If you liked the sea, you'd love this region.",
+  "b": "B1"
+ },
+ {
+  "q": "Si on leur demandait gentiment, ils nous ___ (attendre).",
+  "v": "attendre",
+  "t": "cond",
+  "p": "ils",
+  "e": "If we asked them nicely, they'd wait for us.",
+  "b": "B1"
+ },
+ {
+  "q": "Si j'étais toi, je ne ___ (répondre) pas à ce message.",
+  "v": "répondre",
+  "t": "cond",
+  "p": "je",
+  "e": "If I were you, I wouldn't reply to that message.",
+  "b": "B1"
+ },
+ {
+  "q": "Si tu rangeais ta chambre, tu ne ___ (perdre) pas tes affaires.",
+  "v": "perdre",
+  "t": "cond",
+  "p": "tu",
+  "e": "If you tidied your room, you wouldn't lose your things.",
+  "b": "B1"
+ },
+ {
+  "q": "Si Théo finissait ses devoirs, il ___ (sortir) avec ses amis.",
+  "v": "sortir",
+  "t": "cond",
+  "p": "il",
+  "e": "If Théo finished his homework, he'd go out with his friends.",
+  "b": "B1"
+ },
+ {
+  "q": "Si le restaurant était ouvert, nous y ___ (manger) ce soir.",
+  "v": "manger",
+  "t": "cond",
+  "p": "nous",
+  "e": "If the restaurant were open, we'd eat there tonight.",
+  "b": "B1"
+ },
+ {
+  "q": "À votre place, je ___ (faire) très attention à ce contrat.",
+  "v": "faire",
+  "t": "cond",
+  "p": "je",
+  "e": "In your position I'd be very careful with this contract.",
+  "b": "B1"
+ },
+ {
+  "q": "Si mes voisins déménageaient, ils me ___ (donner) leurs plantes.",
+  "v": "donner",
+  "t": "cond",
+  "p": "ils",
+  "e": "If my neighbours moved, they'd give me their plants.",
+  "b": "B1"
+ },
+ {
+  "q": "Si je pouvais, je ___ (travailler) seulement quatre jours par semaine.",
+  "v": "travailler",
+  "t": "cond",
+  "p": "je",
+  "e": "If I could, I'd work only four days a week.",
+  "b": "B1"
+ },
+ {
+  "q": "Si tu vivais en France, tu ___ (parler) vite français.",
+  "v": "parler",
+  "t": "cond",
+  "p": "tu",
+  "e": "If you lived in France, you'd soon speak French.",
+  "b": "B1"
+ },
+ {
+  "q": "Si mon chien était plus jeune, il ___ (courir) plus vite.",
+  "v": "courir",
+  "t": "cond",
+  "p": "il",
+  "e": "If my dog were younger, he'd run faster.",
+  "b": "B1"
+ },
+ {
+  "q": "S'il y avait moins de bruit, nous ___ (dormir) mieux.",
+  "v": "dormir",
+  "t": "cond",
+  "p": "nous",
+  "e": "If there were less noise, we'd sleep better.",
+  "b": "B1"
+ },
+ {
+  "q": "Si vous parliez moins vite, je ___ (comprendre) mieux.",
+  "v": "comprendre",
+  "t": "cond",
+  "p": "je",
+  "e": "If you spoke more slowly, I'd understand better.",
+  "b": "B1"
+ },
+ {
+  "q": "Si c'était moins loin, mes parents ___ (aller) plus souvent chez ma sœur.",
+  "v": "aller",
+  "t": "cond",
+  "p": "ils",
+  "e": "If it were closer, my parents would visit my sister more often.",
+  "b": "B1"
+ },
+ {
+  "q": "Je ___ (dormir) bien encore une heure.",
+  "v": "dormir",
+  "t": "cond",
+  "p": "je",
+  "e": "I'd happily sleep for another hour.",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (boire) bien un verre d'eau fraîche.",
+  "v": "boire",
+  "t": "cond",
+  "p": "je",
+  "e": "I could do with a glass of cold water.",
+  "b": "A2"
+ },
+ {
+  "q": "Je ___ (manger) bien une crêpe au chocolat.",
+  "v": "manger",
+  "t": "cond",
+  "p": "je",
+  "e": "I'd love a chocolate crêpe.",
+  "b": "A2"
+ },
+ {
+  "q": "Si on leur laissait le choix, les enfants ___ (préférer) la plage.",
+  "v": "préférer",
+  "t": "cond",
+  "p": "ils",
+  "e": "If they were given the choice, the children would prefer the beach.",
+  "b": "B1"
+ },
+ {
+  "q": "Si je trouvais un meilleur travail, je ___ (quitter) cette entreprise.",
+  "v": "quitter",
+  "t": "cond",
+  "p": "je",
+  "e": "If I found a better job, I'd leave this company.",
+  "b": "B1"
+ },
+ {
+  "q": "Tu ___ (rire) si tu voyais sa tête !",
+  "v": "rire",
+  "t": "cond",
+  "p": "tu",
+  "e": "You'd laugh if you saw his face!",
+  "b": "B1"
+ },
+ {
+  "q": "Si la télé marchait, nous ___ (regarder) le match ce soir.",
+  "v": "regarder",
+  "t": "cond",
+  "p": "nous",
+  "e": "If the TV worked, we'd watch the match tonight.",
+  "b": "B1"
+ },
+ {
+  "q": "Vous ___ (vendre) votre maison si on vous en offrait un bon prix ?",
+  "v": "vendre",
+  "t": "cond",
+  "p": "vous",
+  "e": "Would you sell your house if someone offered you a good price?",
+  "b": "B1"
+ },
+ {
+  "q": "Si le terrain n'était pas mouillé, les garçons ___ (jouer) au foot.",
+  "v": "jouer",
+  "t": "cond",
+  "p": "ils",
+  "e": "If the pitch weren't wet, the boys would play football.",
+  "b": "B1"
+ },
+ {
+  "q": "Si j'étais toi, je ___ (mettre) un manteau, il fait froid.",
+  "v": "mettre",
+  "t": "cond",
+  "p": "je",
+  "e": "If I were you, I'd put a coat on, it's cold.",
+  "b": "B1"
+ },
+ {
+  "q": "Si tu t'entraînais plus, tu ___ (devenir) champion.",
+  "v": "devenir",
+  "t": "cond",
+  "p": "tu",
+  "e": "If you trained more, you'd become a champion.",
+  "b": "B1"
+ },
+ {
+  "q": "Si je devais choisir, je ___ (choisir) la robe rouge.",
+  "v": "choisir",
+  "t": "cond",
+  "p": "je",
+  "e": "If I had to choose, I'd pick the red dress.",
+  "b": "B1"
+ },
+ {
+  "q": "Si nous avions de l'argent, nous ___ (ouvrir) un petit café.",
+  "v": "ouvrir",
+  "t": "cond",
+  "p": "nous",
+  "e": "If we had the money, we'd open a little café.",
+  "b": "B1"
+ },
+ {
+  "q": "Si vous vous taisiez, vous ___ (entendre) les oiseaux.",
+  "v": "entendre",
+  "t": "cond",
+  "p": "vous",
+  "e": "If you were quiet, you'd hear the birds.",
+  "b": "B1"
+ },
+ {
+  "q": "Si le train partait à l'heure, il ___ (arriver) à midi.",
+  "v": "arriver",
+  "t": "cond",
+  "p": "il",
+  "e": "If the train left on time, it would arrive at noon.",
+  "b": "B1"
+ },
+ {
+  "q": "Tu ne me ___ (croire) pas si je te racontais ça.",
+  "v": "croire",
+  "t": "cond",
+  "p": "tu",
+  "e": "You wouldn't believe me if I told you that.",
+  "b": "B1"
+ },
+ {
+  "q": "S'il faisait beau, les touristes ___ (rester) plus longtemps.",
+  "v": "rester",
+  "t": "cond",
+  "p": "ils",
+  "e": "If the weather were nice, the tourists would stay longer.",
+  "b": "B1"
+ },
+ {
+  "q": "Si je connaissais son adresse, je lui ___ (écrire).",
+  "v": "écrire",
+  "t": "cond",
+  "p": "je",
+  "e": "If I knew her address, I'd write to her.",
+  "b": "B1"
+ },
+ {
+  "q": "Si j'avais son numéro, je l'___ (appeler) tout de suite.",
+  "v": "appeler",
+  "t": "cond",
+  "p": "je",
+  "e": "If I had his number, I'd call him right away.",
+  "b": "B1"
+ },
+ {
+  "q": "Sans internet, beaucoup de gens ___ (vivre) autrement.",
+  "v": "vivre",
+  "t": "cond",
+  "p": "ils",
+  "e": "Without the internet, lots of people would live differently.",
+  "b": "B1"
+ },
+ {
+  "q": "Si nous ne travaillions pas, nous ___ (voyager) toute l'année.",
+  "v": "voyager",
+  "t": "cond",
+  "p": "nous",
+  "e": "If we didn't work, we'd travel all year.",
+  "b": "B1"
+ },
+ {
+  "q": "Vous ___ (dire) quoi à ma place ?",
+  "v": "dire",
+  "t": "cond",
+  "p": "vous",
+  "e": "What would you say in my position?",
+  "b": "B1"
+ }
+]

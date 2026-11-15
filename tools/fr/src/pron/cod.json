@@ -1,0 +1,881 @@
+[
+ {
+  "q": "Tu vois Paul ? Oui, je ___ vois.",
+  "a": "le",
+  "o": [
+   "le",
+   "la",
+   "les",
+   "lui"
+  ],
+  "e": "Do you see Paul? Yes, I see him.",
+  "w": "A masculine direct object (no à) becomes le, placed before the verb.",
+  "wf": "COD masculin : le.",
+  "t": "cod",
+  "b": "A1"
+ },
+ {
+  "q": "Tu connais Julie ? Oui, je ___ connais.",
+  "a": "la",
+  "o": [
+   "la",
+   "le",
+   "lui",
+   "les"
+  ],
+  "e": "Do you know Julie? Yes, I know her.",
+  "w": "A feminine direct object (no à) becomes la, placed before the verb.",
+  "wf": "COD féminin : la.",
+  "t": "cod",
+  "b": "A1"
+ },
+ {
+  "q": "Tu aimes les fraises ? Oui, je ___ adore.",
+  "a": "les",
+  "o": [
+   "les",
+   "la",
+   "le",
+   "leur"
+  ],
+  "e": "Do you like strawberries? Yes, I love them.",
+  "w": "A plural direct object becomes les, whatever the gender; leur is only for à + people.",
+  "wf": "COD pluriel : les.",
+  "t": "cod",
+  "b": "A1"
+ },
+ {
+  "q": "Tu prends le bus ? Oui, je ___ prends.",
+  "a": "le",
+  "o": [
+   "le",
+   "la",
+   "les",
+   "lui"
+  ],
+  "e": "Are you taking the bus? Yes, I'm taking it.",
+  "w": "A masculine direct object (no à) becomes le, placed before the verb.",
+  "wf": "COD masculin : le.",
+  "t": "cod",
+  "b": "A1"
+ },
+ {
+  "q": "Où est ma clé ? Je ne ___ trouve pas.",
+  "a": "la",
+  "o": [
+   "la",
+   "le",
+   "lui",
+   "les"
+  ],
+  "e": "Where's my key? I can't find it.",
+  "w": "Clé is feminine, so la; it sits between ne and the verb.",
+  "wf": "Clé est féminin : la.",
+  "t": "cod",
+  "b": "A1"
+ },
+ {
+  "q": "Tu regardes la télé ? Non, je ne ___ regarde pas.",
+  "a": "la",
+  "o": [
+   "la",
+   "le",
+   "les",
+   "lui"
+  ],
+  "e": "Are you watching TV? No, I'm not watching it.",
+  "w": "A feminine direct object (no à) becomes la, placed before the verb.",
+  "wf": "COD féminin : la.",
+  "t": "cod",
+  "b": "A1"
+ },
+ {
+  "q": "Vous avez les billets ? Oui, nous ___ avons.",
+  "a": "les",
+  "o": [
+   "les",
+   "le",
+   "leur",
+   "la"
+  ],
+  "e": "Do you have the tickets? Yes, we have them.",
+  "w": "A plural direct object becomes les, whatever the gender; leur is only for à + people.",
+  "wf": "COD pluriel : les.",
+  "t": "cod",
+  "b": "A1"
+ },
+ {
+  "q": "Tu aimes ce film ? Oui, je ___ aime beaucoup.",
+  "a": "l'",
+  "o": [
+   "l'",
+   "lui",
+   "les"
+  ],
+  "e": "Do you like this film? Yes, I really like it.",
+  "w": "Le and la become l' before a vowel or a silent h.",
+  "wf": "le devient l' devant une voyelle.",
+  "t": "cod",
+  "b": "A1"
+ },
+ {
+  "q": "Tu manges ta soupe ? Oui, je ___ mange.",
+  "a": "la",
+  "o": [
+   "la",
+   "le",
+   "les",
+   "lui"
+  ],
+  "e": "Are you eating your soup? Yes, I'm eating it.",
+  "w": "A feminine direct object (no à) becomes la, placed before the verb.",
+  "wf": "COD féminin : la.",
+  "t": "cod",
+  "b": "A1"
+ },
+ {
+  "q": "Tu écoutes la radio ? Oui, je ___ écoute.",
+  "a": "l'",
+  "o": [
+   "l'",
+   "lui",
+   "les"
+  ],
+  "e": "Do you listen to the radio? Yes, I listen to it.",
+  "w": "Écouter takes a direct object, and la becomes l' before a vowel.",
+  "wf": "écouter + COD ; la devient l'.",
+  "t": "cod",
+  "b": "A1"
+ },
+ {
+  "q": "Il appelle ses parents ? Oui, il ___ appelle.",
+  "a": "les",
+  "o": [
+   "les",
+   "leur",
+   "lui",
+   "la"
+  ],
+  "e": "Is he calling his parents? Yes, he's calling them.",
+  "w": "Appeler takes a direct object: appeler quelqu'un, so les, not leur.",
+  "wf": "appeler quelqu'un : les.",
+  "t": "cod",
+  "b": "A1"
+ },
+ {
+  "q": "Elle invite Marc ? Oui, elle ___ invite.",
+  "a": "l'",
+  "o": [
+   "l'",
+   "lui",
+   "les"
+  ],
+  "e": "Is she inviting Marc? Yes, she's inviting him.",
+  "w": "Inviter takes a direct object; le becomes l' before a vowel.",
+  "wf": "inviter quelqu'un : l'.",
+  "t": "cod",
+  "b": "A1"
+ },
+ {
+  "q": "Tu fais tes devoirs ? Oui, je ___ fais maintenant.",
+  "a": "les",
+  "o": [
+   "les",
+   "leur",
+   "la",
+   "le"
+  ],
+  "e": "Are you doing your homework? Yes, I'm doing it now.",
+  "w": "Devoirs is plural in French, so les.",
+  "wf": "COD pluriel : les.",
+  "t": "cod",
+  "b": "A1"
+ },
+ {
+  "q": "Le café, tu ___ veux avec du sucre ?",
+  "a": "le",
+  "o": [
+   "le",
+   "la",
+   "les",
+   "lui"
+  ],
+  "e": "The coffee, do you want it with sugar?",
+  "w": "A masculine direct object (no à) becomes le, placed before the verb.",
+  "wf": "COD masculin : le.",
+  "t": "cod",
+  "b": "A1"
+ },
+ {
+  "q": "Ces chaussures, je ___ achète !",
+  "a": "les",
+  "o": [
+   "les",
+   "leur",
+   "la",
+   "lui"
+  ],
+  "e": "These shoes, I'm buying them!",
+  "w": "A plural direct object becomes les, whatever the gender; leur is only for à + people.",
+  "wf": "COD pluriel : les.",
+  "t": "cod",
+  "b": "A1"
+ },
+ {
+  "q": "Tu connais l'adresse ? Non, je ne ___ connais pas.",
+  "a": "la",
+  "o": [
+   "la",
+   "le",
+   "lui",
+   "les"
+  ],
+  "e": "Do you know the address? No, I don't know it.",
+  "w": "Adresse is feminine, so la, between ne and the verb.",
+  "wf": "Adresse est féminin : la.",
+  "t": "cod",
+  "b": "A1"
+ },
+ {
+  "q": "Tu bois ton café ? Oui, je ___ bois.",
+  "a": "le",
+  "o": [
+   "le",
+   "la",
+   "lui",
+   "les"
+  ],
+  "e": "Are you drinking your coffee? Yes, I'm drinking it.",
+  "w": "A masculine direct object (no à) becomes le, placed before the verb.",
+  "wf": "COD masculin : le.",
+  "t": "cod",
+  "b": "A1"
+ },
+ {
+  "q": "Tu lis le journal ? Oui, je ___ lis tous les matins.",
+  "a": "le",
+  "o": [
+   "le",
+   "la",
+   "les",
+   "lui"
+  ],
+  "e": "Do you read the paper? Yes, I read it every morning.",
+  "w": "A masculine direct object (no à) becomes le, placed before the verb.",
+  "wf": "COD masculin : le.",
+  "t": "cod",
+  "b": "A1"
+ },
+ {
+  "q": "Vous voyez la mer ? Oui, on ___ voit d'ici.",
+  "a": "la",
+  "o": [
+   "la",
+   "le",
+   "les",
+   "lui"
+  ],
+  "e": "Can you see the sea? Yes, you can see it from here.",
+  "w": "A feminine direct object (no à) becomes la, placed before the verb.",
+  "wf": "COD féminin : la.",
+  "t": "cod",
+  "b": "A1"
+ },
+ {
+  "q": "Tes parents ? Je ___ vois le dimanche.",
+  "a": "les",
+  "o": [
+   "les",
+   "leur",
+   "lui",
+   "la"
+  ],
+  "e": "Your parents? I see them on Sundays.",
+  "w": "Voir takes a direct object, so les for people too, not leur.",
+  "wf": "voir quelqu'un : les.",
+  "t": "cod",
+  "b": "A1"
+ },
+ {
+  "q": "Tu cherches ton téléphone ? Je ___ ai vu sur la table.",
+  "a": "l'",
+  "o": [
+   "l'",
+   "lui",
+   "les"
+  ],
+  "e": "Looking for your phone? I saw it on the table.",
+  "w": "In the passé composé the pronoun goes before avoir, and le or la becomes l'.",
+  "wf": "Au passé composé : je l'ai vu.",
+  "t": "cod",
+  "b": "A2"
+ },
+ {
+  "q": "La lettre ? Je ___ ai écrite hier.",
+  "a": "l'",
+  "o": [
+   "l'",
+   "lui",
+   "les"
+  ],
+  "e": "The letter? I wrote it yesterday.",
+  "w": "In the passé composé the pronoun goes before avoir, and le or la becomes l'.",
+  "wf": "Au passé composé : je l'ai écrite.",
+  "t": "cod",
+  "b": "A2"
+ },
+ {
+  "q": "Les clés ? Je ___ ai laissées dans la voiture.",
+  "a": "les",
+  "o": [
+   "les",
+   "leur",
+   "l'"
+  ],
+  "e": "The keys? I left them in the car.",
+  "w": "Les goes before avoir, and the participle agrees: laissées.",
+  "wf": "les + ai laissées.",
+  "t": "cod",
+  "b": "A2"
+ },
+ {
+  "q": "Ton frère ? Je ne ___ ai pas vu.",
+  "a": "l'",
+  "o": [
+   "l'",
+   "lui",
+   "les"
+  ],
+  "e": "Your brother? I haven't seen him.",
+  "w": "Ne goes before the pronoun and avoir: je ne l'ai pas vu.",
+  "wf": "ne l'ai pas vu.",
+  "t": "cod",
+  "b": "A2"
+ },
+ {
+  "q": "Sophie ? Je vais ___ appeler ce soir.",
+  "a": "l'",
+  "o": [
+   "l'",
+   "lui",
+   "les"
+  ],
+  "e": "Sophie? I'm going to call her tonight.",
+  "w": "With a verb plus infinitive, the pronoun goes just before the infinitive.",
+  "wf": "Devant l'infinitif : je vais l'appeler.",
+  "t": "cod",
+  "b": "A2"
+ },
+ {
+  "q": "Ce livre, tu peux ___ lire ce week-end.",
+  "a": "le",
+  "o": [
+   "le",
+   "la",
+   "lui",
+   "les"
+  ],
+  "e": "This book, you can read it this weekend.",
+  "w": "With a verb plus infinitive, the pronoun goes just before the infinitive.",
+  "wf": "Devant l'infinitif : le lire.",
+  "t": "cod",
+  "b": "A2"
+ },
+ {
+  "q": "Mes lunettes ? Je ne peux pas ___ trouver.",
+  "a": "les",
+  "o": [
+   "les",
+   "leur",
+   "la",
+   "le"
+  ],
+  "e": "My glasses? I can't find them.",
+  "w": "With a verb plus infinitive, the pronoun goes just before the infinitive.",
+  "wf": "Devant l'infinitif : les trouver.",
+  "t": "cod",
+  "b": "A2"
+ },
+ {
+  "q": "La fenêtre ? Ouvre-___, s'il te plaît.",
+  "a": "la",
+  "o": [
+   "la",
+   "le",
+   "lui",
+   "les"
+  ],
+  "e": "The window? Open it, please.",
+  "w": "In a positive command the pronoun follows the verb with a hyphen: ouvre-la.",
+  "wf": "Impératif : ouvre-la.",
+  "t": "cod",
+  "b": "A2"
+ },
+ {
+  "q": "Tes devoirs ? Fais-___ tout de suite !",
+  "a": "les",
+  "o": [
+   "les",
+   "leur",
+   "la",
+   "le"
+  ],
+  "e": "Your homework? Do it right now!",
+  "w": "In a positive command the pronoun follows the verb: fais-les.",
+  "wf": "Impératif : fais-les.",
+  "t": "cod",
+  "b": "A2"
+ },
+ {
+  "q": "Le gâteau ? Ne ___ mange pas tout !",
+  "a": "le",
+  "o": [
+   "le",
+   "la",
+   "lui",
+   "les"
+  ],
+  "e": "The cake? Don't eat all of it!",
+  "w": "In a negative command the pronoun goes back before the verb: ne le mange pas.",
+  "wf": "Impératif négatif : ne le mange pas.",
+  "t": "cod",
+  "b": "A2"
+ },
+ {
+  "q": "Cette chanson, je ___ écoute en boucle.",
+  "a": "l'",
+  "o": [
+   "l'",
+   "les",
+   "lui"
+  ],
+  "e": "I listen to this song on repeat.",
+  "w": "Chanson is feminine; la becomes l' before a vowel.",
+  "wf": "la devient l' devant une voyelle.",
+  "t": "cod",
+  "b": "A2"
+ },
+ {
+  "q": "Tu as fini le rapport ? Oui, je ___ ai fini.",
+  "a": "l'",
+  "o": [
+   "l'",
+   "lui",
+   "les"
+  ],
+  "e": "Have you finished the report? Yes, I've finished it.",
+  "w": "In the passé composé the pronoun goes before avoir, and le or la becomes l'.",
+  "wf": "Au passé composé : je l'ai fini.",
+  "t": "cod",
+  "b": "A2"
+ },
+ {
+  "q": "Ces fleurs, c'est Marie qui ___ a choisies.",
+  "a": "les",
+  "o": [
+   "les",
+   "leur",
+   "l'"
+  ],
+  "e": "These flowers, Marie chose them.",
+  "w": "Les comes before avoir, and choisies agrees with it.",
+  "wf": "les + a choisies.",
+  "t": "cod",
+  "b": "B1"
+ },
+ {
+  "q": "Ma voiture, je ___ ai vendue l'année dernière.",
+  "a": "l'",
+  "o": [
+   "l'",
+   "les",
+   "lui"
+  ],
+  "e": "My car, I sold it last year.",
+  "w": "La becomes l' before avoir; vendue agrees with the feminine object.",
+  "wf": "je l'ai vendue.",
+  "t": "cod",
+  "b": "B1"
+ },
+ {
+  "q": "Le film ? Je viens de ___ voir.",
+  "a": "le",
+  "o": [
+   "le",
+   "la",
+   "lui",
+   "les"
+  ],
+  "e": "The film? I've just seen it.",
+  "w": "After venir de, the pronoun goes before the infinitive: je viens de le voir.",
+  "wf": "venir de le voir.",
+  "t": "cod",
+  "b": "B1"
+ },
+ {
+  "q": "Ce travail, je ne veux pas ___ faire seul.",
+  "a": "le",
+  "o": [
+   "le",
+   "la",
+   "lui",
+   "les"
+  ],
+  "e": "I don't want to do this job alone.",
+  "w": "With a verb plus infinitive, the pronoun goes just before the infinitive.",
+  "wf": "Devant l'infinitif : le faire.",
+  "t": "cod",
+  "b": "B1"
+ },
+ {
+  "q": "Les enfants ? Je ___ ai entendus rentrer.",
+  "a": "les",
+  "o": [
+   "les",
+   "leur",
+   "lui",
+   "la"
+  ],
+  "e": "The children? I heard them come home.",
+  "w": "Entendre takes a direct object; les goes before avoir and entendus agrees.",
+  "wf": "entendre quelqu'un : les.",
+  "t": "cod",
+  "b": "B1"
+ },
+ {
+  "q": "Tes parents, il faut ___ prévenir avant midi.",
+  "a": "les",
+  "o": [
+   "les",
+   "leur",
+   "lui",
+   "la"
+  ],
+  "e": "Your parents, you need to let them know before noon.",
+  "w": "Prévenir takes a direct object: prévenir quelqu'un, so les.",
+  "wf": "prévenir quelqu'un : les.",
+  "t": "cod",
+  "b": "B1"
+ },
+ {
+  "q": "Claire ? Je ___ ai attendue une heure !",
+  "a": "l'",
+  "o": [
+   "l'",
+   "lui",
+   "les"
+  ],
+  "e": "Claire? I waited an hour for her!",
+  "w": "Attendre takes a direct object in French (no for), so l', not lui.",
+  "wf": "attendre quelqu'un : l'.",
+  "t": "cod",
+  "b": "B1"
+ },
+ {
+  "q": "Ton chef ? Tu dois ___ écouter.",
+  "a": "l'",
+  "o": [
+   "l'",
+   "lui",
+   "les"
+  ],
+  "e": "Your boss? You have to listen to him.",
+  "w": "Écouter takes a direct object (no to), so l', not lui.",
+  "wf": "écouter quelqu'un : l'.",
+  "t": "cod",
+  "b": "B1"
+ },
+ {
+  "q": "Les voisins ? Je ___ aide souvent.",
+  "a": "les",
+  "o": [
+   "les",
+   "leur",
+   "lui",
+   "la"
+  ],
+  "e": "The neighbours? I often help them.",
+  "w": "Aider takes a direct object: aider quelqu'un, so les, not leur.",
+  "wf": "aider quelqu'un : les.",
+  "t": "cod",
+  "b": "B1"
+ },
+ {
+  "q": "Ta grand-mère ? Je ___ remercie pour le cadeau.",
+  "a": "la",
+  "o": [
+   "la",
+   "lui",
+   "le",
+   "les"
+  ],
+  "e": "Your grandmother? I'm thanking her for the present.",
+  "w": "Remercier takes a direct object: remercier quelqu'un, so la, not lui.",
+  "wf": "remercier quelqu'un : la.",
+  "t": "cod",
+  "b": "B1"
+ },
+ {
+  "q": "Le prof ? On ___ a cherché partout.",
+  "a": "l'",
+  "o": [
+   "l'",
+   "lui",
+   "les"
+  ],
+  "e": "The teacher? We looked for him everywhere.",
+  "w": "Chercher takes a direct object (no for), so l'.",
+  "wf": "chercher quelqu'un : l'.",
+  "t": "cod",
+  "b": "B1"
+ },
+ {
+  "q": "Ta sœur ? Je ___ ai rencontrée à Lyon.",
+  "a": "l'",
+  "o": [
+   "l'",
+   "lui",
+   "les"
+  ],
+  "e": "Your sister? I met her in Lyon.",
+  "w": "La becomes l' before avoir; rencontrée agrees with it.",
+  "wf": "je l'ai rencontrée.",
+  "t": "cod",
+  "b": "B1"
+ },
+ {
+  "q": "Les résultats, on ne ___ connaît pas encore.",
+  "a": "les",
+  "o": [
+   "les",
+   "leur",
+   "la",
+   "le"
+  ],
+  "e": "We don't know the results yet.",
+  "w": "A plural direct object becomes les, whatever the gender; leur is only for à + people.",
+  "wf": "COD pluriel : les.",
+  "t": "cod",
+  "b": "B1"
+ },
+ {
+  "q": "Cette robe, je ___ trouve très jolie.",
+  "a": "la",
+  "o": [
+   "la",
+   "le",
+   "lui",
+   "les"
+  ],
+  "e": "I think this dress is really pretty.",
+  "w": "Trouver + object + adjective: the object pronoun is la.",
+  "wf": "trouver quelque chose joli : la.",
+  "t": "cod",
+  "b": "B1"
+ },
+ {
+  "q": "Ton dossier, je ___ ai transmis au directeur.",
+  "a": "l'",
+  "o": [
+   "l'",
+   "lui",
+   "les"
+  ],
+  "e": "Your file, I passed it on to the director.",
+  "w": "In the passé composé the pronoun goes before avoir, and le or la becomes l'.",
+  "wf": "Au passé composé : je l'ai transmis.",
+  "t": "cod",
+  "b": "B1"
+ },
+ {
+  "q": "La vérité, il faut ___ dire.",
+  "a": "la",
+  "o": [
+   "la",
+   "le",
+   "lui",
+   "les"
+  ],
+  "e": "The truth, you have to tell it.",
+  "w": "With a verb plus infinitive, the pronoun goes just before the infinitive.",
+  "wf": "Devant l'infinitif : la dire.",
+  "t": "cod",
+  "b": "B1"
+ },
+ {
+  "q": "Ces erreurs, je ___ ai faites sans le vouloir.",
+  "a": "les",
+  "o": [
+   "les",
+   "leur",
+   "l'"
+  ],
+  "e": "I made these mistakes without meaning to.",
+  "w": "Les goes before avoir, and faites agrees with it.",
+  "wf": "les + ai faites.",
+  "t": "cod",
+  "b": "B1"
+ },
+ {
+  "q": "Tu savais qu'il part ? Oui, je ___ savais.",
+  "a": "le",
+  "o": [
+   "le",
+   "la",
+   "lui",
+   "en"
+  ],
+  "e": "Did you know he's leaving? Yes, I knew.",
+  "w": "Le can stand for a whole idea or clause: je le savais.",
+  "wf": "le neutre reprend une idée.",
+  "t": "cod",
+  "b": "B2"
+ },
+ {
+  "q": "Elle est fatiguée ? Oui, elle ___ est.",
+  "a": "l'",
+  "o": [
+   "l'",
+   "en",
+   "lui"
+  ],
+  "e": "Is she tired? Yes, she is.",
+  "w": "Le stands for an adjective after être, with no agreement: elle l'est.",
+  "wf": "le neutre reprend un adjectif.",
+  "t": "cod",
+  "b": "B2"
+ },
+ {
+  "q": "Tu crois qu'il viendra ? Je ne ___ crois pas.",
+  "a": "le",
+  "o": [
+   "le",
+   "la",
+   "lui",
+   "les"
+  ],
+  "e": "Do you think he'll come? I don't think so.",
+  "w": "Neutral le stands for the clause: je ne le crois pas, I don't think so.",
+  "wf": "le neutre : je ne le crois pas.",
+  "t": "cod",
+  "b": "B2"
+ },
+ {
+  "q": "Il est plus riche qu'on ne ___ pense.",
+  "a": "le",
+  "o": [
+   "le",
+   "la",
+   "lui",
+   "les"
+  ],
+  "e": "He's richer than people think.",
+  "w": "Comparisons often take a neutral le for the idea: qu'on ne le pense.",
+  "wf": "le neutre dans la comparaison.",
+  "t": "cod",
+  "b": "B2"
+ },
+ {
+  "q": "La maison, ils ___ ont fait construire.",
+  "a": "l'",
+  "o": [
+   "l'",
+   "lui",
+   "les"
+  ],
+  "e": "The house, they had it built.",
+  "w": "With faire + infinitive the pronoun goes before faire; fait never agrees.",
+  "wf": "l'ont fait construire.",
+  "t": "cod",
+  "b": "B2"
+ },
+ {
+  "q": "Ton vélo ? Je ___ fais réparer demain.",
+  "a": "le",
+  "o": [
+   "le",
+   "la",
+   "lui",
+   "les"
+  ],
+  "e": "Your bike? I'm having it repaired tomorrow.",
+  "w": "With faire + infinitive the pronoun goes before faire: je le fais réparer.",
+  "wf": "le fais réparer.",
+  "t": "cod",
+  "b": "B2"
+ },
+ {
+  "q": "Les enfants, je ___ laisse jouer dehors.",
+  "a": "les",
+  "o": [
+   "les",
+   "leur",
+   "lui",
+   "la"
+  ],
+  "e": "I let the children play outside.",
+  "w": "With laisser + infinitive the pronoun goes before laisser: je les laisse jouer.",
+  "wf": "les laisse jouer.",
+  "t": "cod",
+  "b": "B2"
+ },
+ {
+  "q": "Comme je te ___ ai dit, la réunion est annulée.",
+  "a": "l'",
+  "o": [
+   "l'",
+   "lui",
+   "les"
+  ],
+  "e": "As I told you, the meeting is cancelled.",
+  "w": "Neutral le stands for what was said: comme je te l'ai dit.",
+  "wf": "le neutre : comme je te l'ai dit.",
+  "t": "cod",
+  "b": "B2"
+ },
+ {
+  "q": "Venez demain si vous ___ voulez.",
+  "a": "le",
+  "o": [
+   "le",
+   "la",
+   "lui",
+   "les"
+  ],
+  "e": "Come tomorrow if you like.",
+  "w": "Neutral le can stand for an idea: si vous le voulez.",
+  "wf": "le neutre reprend l'idée.",
+  "t": "cod",
+  "b": "B2"
+ },
+ {
+  "q": "Elle est médecin, et sa fille ___ deviendra aussi.",
+  "a": "le",
+  "o": [
+   "le",
+   "la",
+   "lui",
+   "les"
+  ],
+  "e": "She's a doctor, and her daughter will become one too.",
+  "w": "Neutral le stands for a role after devenir or être, with no agreement.",
+  "wf": "le neutre : elle le deviendra.",
+  "t": "cod",
+  "b": "B2"
+ },
+ {
+  "q": "Cette solution, je ___ juge trop risquée.",
+  "a": "la",
+  "o": [
+   "la",
+   "le",
+   "lui",
+   "les"
+  ],
+  "e": "I consider this solution too risky.",
+  "w": "Juger + object + adjective: la for a feminine noun.",
+  "wf": "juger quelque chose risqué : la.",
+  "t": "cod",
+  "b": "B2"
+ }
+]

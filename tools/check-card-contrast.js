@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* check-card-contrast.js: opens a tense card in each of the five apps in headless
+/* check-card-contrast.js: opens a tense card in each of the six apps in headless
  * Chrome (via a temporary harness page, deleted afterwards), resolves every
  * text colour (custom properties included) and its real background, and fails
  * under 4.5:1 or when text sits straight on a patterned page background.
@@ -16,7 +16,8 @@ const APPS = {
   liofa: { dir: 'gaeilge', profile: 'liofa.profile', verbs: /Verbs/ },
   talaqa: { dir: 'arabiya', profile: 'talaqa.profile', verbs: /Verbs/, extra: { 'talaqa.mode': 'script', 'talaqa.huruf': '{"exam":{"passed":true}}' } },
   svobodno: { dir: 'russkiy', profile: 'svobodno.profile', verbs: /Verbs/, extra: { 'svobodno.mode': 'script', 'svobodno.bukvy': '{"exam":{"passed":true}}' } },
-  vlot: { dir: 'nederlands', profile: 'vlot.profile', verbs: /Verbs/ }
+  vlot: { dir: 'nederlands', profile: 'vlot.profile', verbs: /Verbs/ },
+  couramment: { dir: 'francais', profile: 'couramment.profile', verbs: /Verbes/ }
 };
 const args = process.argv.slice(2);
 let shotDir = null;

@@ -1,0 +1,603 @@
+[
+ {
+  "fr": "Bonjour.",
+  "en": "Hello.",
+  "th": "saluer",
+  "b": "A1",
+  "t": 1,
+  "n": "Used all day, until the evening."
+ },
+ {
+  "fr": "Bonsoir.",
+  "en": "Good evening.",
+  "th": "saluer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Salut !",
+  "en": "Hi!",
+  "th": "saluer",
+  "b": "A1",
+  "t": 1,
+  "n": "Informal, with friends. It also means bye."
+ },
+ {
+  "fr": "Coucou !",
+  "en": "Hey there!",
+  "th": "saluer",
+  "b": "A1",
+  "t": 2,
+  "n": "Very friendly, for family and close friends."
+ },
+ {
+  "fr": "Bonjour madame.",
+  "en": "Hello (to a woman).",
+  "th": "saluer",
+  "b": "A1",
+  "t": 1,
+  "n": "Adding madame or monsieur is polite, especially in shops."
+ },
+ {
+  "fr": "Bonjour monsieur.",
+  "en": "Hello (to a man).",
+  "th": "saluer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Bonjour à tous.",
+  "en": "Hello everyone.",
+  "alt": [
+   "Salut tout le monde."
+  ],
+  "th": "saluer",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Comment allez-vous ?",
+  "en": "How are you?",
+  "alt": [
+   "Vous allez bien ?"
+  ],
+  "th": "saluer",
+  "b": "A1",
+  "t": 1,
+  "n": "vous: polite, or to several people."
+ },
+ {
+  "fr": "Comment ça va ?",
+  "en": "How's it going?",
+  "alt": [
+   "Ça va ?"
+  ],
+  "th": "saluer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Ça va bien, et toi ?",
+  "en": "I'm fine, and you?",
+  "alt": [
+   "Ça va, et toi ?"
+  ],
+  "th": "saluer",
+  "b": "A1",
+  "t": 1,
+  "n": "tu: with friends."
+ },
+ {
+  "fr": "Très bien, merci.",
+  "en": "Very well, thanks.",
+  "th": "saluer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Je vais bien, merci.",
+  "en": "I'm well, thank you.",
+  "th": "saluer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Et vous ?",
+  "en": "And you?",
+  "th": "saluer",
+  "b": "A1",
+  "t": 1,
+  "n": "vous: polite."
+ },
+ {
+  "fr": "Pas mal.",
+  "en": "Not bad.",
+  "th": "saluer",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Comme ci, comme ça.",
+  "en": "So so.",
+  "alt": [
+   "Bof."
+  ],
+  "th": "saluer",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Ça fait longtemps !",
+  "en": "Long time no see!",
+  "th": "saluer",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: it's been a long time."
+ },
+ {
+  "fr": "Enchanté.",
+  "en": "Pleased to meet you.",
+  "alt": [
+   "Enchantée."
+  ],
+  "th": "saluer",
+  "b": "A1",
+  "t": 1,
+  "n": "Written with an extra e if you are a woman."
+ },
+ {
+  "fr": "Ravi de vous rencontrer.",
+  "en": "Nice to meet you.",
+  "alt": [
+   "Ravie de vous rencontrer."
+  ],
+  "th": "saluer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Au revoir.",
+  "en": "Goodbye.",
+  "th": "saluer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "À bientôt !",
+  "en": "See you soon!",
+  "th": "saluer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "À plus tard !",
+  "en": "See you later!",
+  "alt": [
+   "À plus !",
+   "À tantôt !"
+  ],
+  "th": "saluer",
+  "b": "A1",
+  "t": 1,
+  "n": "À tantôt is common in Belgium."
+ },
+ {
+  "fr": "À demain !",
+  "en": "See you tomorrow!",
+  "th": "saluer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "À tout à l'heure !",
+  "en": "See you in a bit!",
+  "alt": [
+   "À tout de suite !"
+  ],
+  "th": "saluer",
+  "b": "A1",
+  "t": 2,
+  "n": "Later the same day."
+ },
+ {
+  "fr": "Bonne journée !",
+  "en": "Have a nice day!",
+  "th": "saluer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Bonne soirée !",
+  "en": "Have a nice evening!",
+  "th": "saluer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Bonne nuit.",
+  "en": "Good night.",
+  "th": "saluer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Bon week-end !",
+  "en": "Have a good weekend!",
+  "alt": [
+   "Bonne fin de semaine !"
+  ],
+  "th": "saluer",
+  "b": "A1",
+  "t": 2,
+  "n": "Bonne fin de semaine is the Québécois way."
+ },
+ {
+  "fr": "Bonne semaine !",
+  "en": "Have a good week!",
+  "th": "saluer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Salut, à la prochaine !",
+  "en": "Bye, until next time!",
+  "th": "saluer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je dois y aller.",
+  "en": "I have to go.",
+  "alt": [
+   "Il faut que j'y aille."
+  ],
+  "th": "saluer",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "fr": "Prends soin de toi.",
+  "en": "Take care.",
+  "alt": [
+   "Prenez soin de vous."
+  ],
+  "th": "saluer",
+  "b": "A2",
+  "t": 2,
+  "n": "tu: with friends."
+ },
+ {
+  "fr": "Merci.",
+  "en": "Thank you.",
+  "th": "saluer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Merci beaucoup.",
+  "en": "Thank you very much.",
+  "alt": [
+   "Merci bien."
+  ],
+  "th": "saluer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Merci mille fois !",
+  "en": "Thanks a million!",
+  "th": "saluer",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: thanks a thousand times."
+ },
+ {
+  "fr": "Merci pour tout.",
+  "en": "Thanks for everything.",
+  "th": "saluer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Merci pour ton aide.",
+  "en": "Thanks for your help.",
+  "alt": [
+   "Merci pour votre aide."
+  ],
+  "th": "saluer",
+  "b": "A2",
+  "t": 1,
+  "n": "tu: with friends."
+ },
+ {
+  "fr": "C'est très gentil.",
+  "en": "That's very kind.",
+  "alt": [
+   "C'est gentil de ta part."
+  ],
+  "th": "saluer",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "De rien.",
+  "en": "You're welcome.",
+  "alt": [
+   "Bienvenue."
+  ],
+  "th": "saluer",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: of nothing. Bienvenue is the Québécois reply."
+ },
+ {
+  "fr": "Je vous en prie.",
+  "en": "You're welcome.",
+  "alt": [
+   "Je t'en prie."
+  ],
+  "th": "saluer",
+  "b": "A2",
+  "t": 2,
+  "n": "Polite, with vous."
+ },
+ {
+  "fr": "Il n'y a pas de quoi.",
+  "en": "Don't mention it.",
+  "alt": [
+   "Pas de quoi."
+  ],
+  "th": "saluer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Avec plaisir.",
+  "en": "With pleasure.",
+  "th": "saluer",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Oh, pardon !",
+  "en": "Oops, sorry!",
+  "th": "saluer",
+  "b": "A1",
+  "t": 1,
+  "n": "For small things, like bumping into someone."
+ },
+ {
+  "fr": "Excusez-moi.",
+  "en": "Excuse me.",
+  "alt": [
+   "Excuse-moi."
+  ],
+  "th": "saluer",
+  "b": "A1",
+  "t": 1,
+  "n": "vous: polite. Excuse-moi with a friend."
+ },
+ {
+  "fr": "Je suis désolé.",
+  "en": "I'm sorry.",
+  "alt": [
+   "Je suis désolée."
+  ],
+  "th": "saluer",
+  "b": "A1",
+  "t": 1,
+  "n": "Désolée if you are a woman."
+ },
+ {
+  "fr": "Désolé, c'est ma faute.",
+  "en": "Sorry, it's my fault.",
+  "alt": [
+   "Désolée, c'est ma faute."
+  ],
+  "th": "saluer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Toutes mes excuses.",
+  "en": "My apologies.",
+  "th": "saluer",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Désolé du retard.",
+  "en": "Sorry I'm late.",
+  "alt": [
+   "Désolée du retard.",
+   "Excusez-moi du retard."
+  ],
+  "th": "saluer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je m'excuse.",
+  "en": "I apologise.",
+  "th": "saluer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Ce n'est pas grave.",
+  "en": "It's no big deal.",
+  "alt": [
+   "C'est pas grave."
+  ],
+  "th": "saluer",
+  "b": "A1",
+  "t": 1,
+  "n": "The usual answer to an apology."
+ },
+ {
+  "fr": "Pas de souci.",
+  "en": "No worries.",
+  "alt": [
+   "Pas de problème.",
+   "Pas de soucis."
+  ],
+  "th": "saluer",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Ne t'inquiète pas.",
+  "en": "Don't worry.",
+  "alt": [
+   "Ne vous inquiétez pas.",
+   "T'inquiète."
+  ],
+  "th": "saluer",
+  "b": "A2",
+  "t": 2,
+  "n": "tu: with friends."
+ },
+ {
+  "fr": "Ça ne fait rien.",
+  "en": "It doesn't matter.",
+  "th": "saluer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Bienvenue !",
+  "en": "Welcome!",
+  "th": "saluer",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Bienvenue chez nous.",
+  "en": "Welcome to our home.",
+  "th": "saluer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Bonne chance !",
+  "en": "Good luck!",
+  "th": "saluer",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Bon voyage !",
+  "en": "Have a good trip!",
+  "th": "saluer",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Bonne continuation !",
+  "en": "All the best!",
+  "th": "saluer",
+  "b": "A2",
+  "t": 3,
+  "n": "Said when parting, wishing someone well with what they are doing."
+ },
+ {
+  "fr": "Bon courage !",
+  "en": "Hang in there!",
+  "th": "saluer",
+  "b": "A2",
+  "t": 2,
+  "n": "Wishing someone strength for something hard."
+ },
+ {
+  "fr": "Dis bonjour à ta mère.",
+  "en": "Say hi to your mother.",
+  "alt": [
+   "Dites bonjour à votre mère."
+  ],
+  "th": "saluer",
+  "b": "A2",
+  "t": 2,
+  "n": "tu: with friends."
+ },
+ {
+  "fr": "Embrasse ta famille pour moi.",
+  "en": "Give your family my love.",
+  "th": "saluer",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "On se fait la bise ?",
+  "en": "Shall we greet with a kiss?",
+  "th": "saluer",
+  "b": "B1",
+  "t": 3,
+  "n": "La bise is the kiss on each cheek French friends greet with."
+ },
+ {
+  "fr": "Bonjour, vous allez bien ?",
+  "en": "Hello, are you well?",
+  "th": "saluer",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Allô ?",
+  "en": "Hello?",
+  "alt": [
+   "Allô, oui ?"
+  ],
+  "th": "saluer",
+  "b": "A1",
+  "t": 2,
+  "n": "Only on the phone."
+ },
+ {
+  "fr": "Merci, vous aussi.",
+  "en": "Thanks, you too.",
+  "alt": [
+   "Merci, toi aussi."
+  ],
+  "th": "saluer",
+  "b": "A1",
+  "t": 1,
+  "n": "The reply to bonne journée and the like."
+ },
+ {
+  "fr": "Pareillement.",
+  "en": "Likewise.",
+  "alt": [
+   "Vous de même.",
+   "Toi de même."
+  ],
+  "th": "saluer",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je vous remercie.",
+  "en": "Thank you.",
+  "th": "saluer",
+  "b": "A2",
+  "t": 2,
+  "n": "More formal than merci."
+ },
+ {
+  "fr": "C'est moi qui vous remercie.",
+  "en": "No, thank you!",
+  "alt": [
+   "C'est moi qui te remercie."
+  ],
+  "th": "saluer",
+  "b": "B1",
+  "t": 3,
+  "n": "Literally: it's me who thanks you."
+ },
+ {
+  "fr": "Rebonjour !",
+  "en": "Hello again!",
+  "th": "saluer",
+  "b": "B1",
+  "t": 3
+ }
+]

@@ -1,0 +1,642 @@
+[
+ {
+  "q": "___ (fermer) la porte, s'il te plaît.",
+  "v": "fermer",
+  "t": "imper",
+  "p": "tu",
+  "e": "Close the door, please.",
+  "b": "A2"
+ },
+ {
+  "q": "Maman, ___ (regarder) ! Il neige dehors !",
+  "v": "regarder",
+  "t": "imper",
+  "p": "tu",
+  "e": "Mum, look! It's snowing outside!",
+  "b": "A1"
+ },
+ {
+  "q": "___ (manger) tes légumes, mon chéri.",
+  "v": "manger",
+  "t": "imper",
+  "p": "tu",
+  "e": "Eat your vegetables, darling.",
+  "b": "A1"
+ },
+ {
+  "q": "___ (parler) moins fort, ton frère dort.",
+  "v": "parler",
+  "t": "imper",
+  "p": "tu",
+  "e": "Speak more quietly, your brother is asleep.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (écouter) bien ce que je te dis.",
+  "v": "écouter",
+  "t": "imper",
+  "p": "tu",
+  "e": "Listen carefully to what I'm telling you.",
+  "b": "A2"
+ },
+ {
+  "q": "___-moi (attendre) devant la gare, j'arrive.",
+  "v": "attendre",
+  "t": "imper",
+  "p": "tu",
+  "e": "Wait for me outside the station, I'm coming.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (finir) ton assiette, s'il te plaît.",
+  "v": "finir",
+  "t": "imper",
+  "p": "tu",
+  "e": "Finish your plate, please.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (choisir) un dessert, c'est moi qui paie.",
+  "v": "choisir",
+  "t": "imper",
+  "p": "tu",
+  "e": "Pick a dessert, it's my treat.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (venir) ici tout de suite, Lucas !",
+  "v": "venir",
+  "t": "imper",
+  "p": "tu",
+  "e": "Come here right now, Lucas!",
+  "b": "A1"
+ },
+ {
+  "q": "___ (aller) te coucher, il est tard.",
+  "v": "aller",
+  "t": "imper",
+  "p": "tu",
+  "e": "Go to bed, it's late.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (faire) attention en traversant, Léo.",
+  "v": "faire",
+  "t": "imper",
+  "p": "tu",
+  "e": "Be careful when you cross, Léo.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (être) sage chez ta grand-mère.",
+  "v": "être",
+  "t": "imper",
+  "p": "tu",
+  "e": "Be good at your grandmother's.",
+  "b": "A2"
+ },
+ {
+  "q": "N'___ (avoir) pas peur, mon chéri, le chien est gentil.",
+  "v": "avoir",
+  "t": "imper",
+  "p": "tu",
+  "e": "Don't be scared, darling, the dog is friendly.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (prendre) ton parapluie, il va pleuvoir.",
+  "v": "prendre",
+  "t": "imper",
+  "p": "tu",
+  "e": "Take your umbrella, it's going to rain.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (mettre) ton manteau, il fait froid.",
+  "v": "mettre",
+  "t": "imper",
+  "p": "tu",
+  "e": "Put your coat on, it's cold.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (dire) bonjour à la dame, Zoé.",
+  "v": "dire",
+  "t": "imper",
+  "p": "tu",
+  "e": "Say hello to the lady, Zoé.",
+  "b": "A2"
+ },
+ {
+  "q": "___-moi (appeler) quand tu arrives.",
+  "v": "appeler",
+  "t": "imper",
+  "p": "tu",
+  "e": "Call me when you get there.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (acheter) du pain en rentrant, s'il te plaît.",
+  "v": "acheter",
+  "t": "imper",
+  "p": "tu",
+  "e": "Buy some bread on your way home, please.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (ouvrir) la fenêtre, s'il te plaît, il fait chaud.",
+  "v": "ouvrir",
+  "t": "imper",
+  "p": "tu",
+  "e": "Open the window, please, it's hot.",
+  "b": "A2"
+ },
+ {
+  "q": "___-moi (envoyer) un message quand tu pars.",
+  "v": "envoyer",
+  "t": "imper",
+  "p": "tu",
+  "e": "Send me a message when you leave.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (savoir) que je serai toujours là pour toi.",
+  "v": "savoir",
+  "t": "imper",
+  "p": "tu",
+  "e": "Know that I'll always be there for you.",
+  "b": "B1"
+ },
+ {
+  "q": "___ (descendre) de là, tu vas tomber !",
+  "v": "descendre",
+  "t": "imper",
+  "p": "tu",
+  "e": "Get down from there, you're going to fall!",
+  "b": "A2"
+ },
+ {
+  "q": "___ (lire) ce livre, tu vas adorer.",
+  "v": "lire",
+  "t": "imper",
+  "p": "tu",
+  "e": "Read this book, you'll love it.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (boire) ton lait avant qu'il refroidisse.",
+  "v": "boire",
+  "t": "imper",
+  "p": "tu",
+  "e": "Drink your milk before it gets cold.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (répondre) au téléphone, s'il te plaît !",
+  "v": "répondre",
+  "t": "imper",
+  "p": "tu",
+  "e": "Answer the phone, please!",
+  "b": "A2"
+ },
+ {
+  "q": "___ (tourner) à gauche après la boulangerie, tu verras.",
+  "v": "tourner",
+  "t": "imper",
+  "p": "tu",
+  "e": "Turn left after the bakery, you'll see.",
+  "b": "A2"
+ },
+ {
+  "q": "___-moi (aider) à porter ces sacs, s'il te plaît.",
+  "v": "aider",
+  "t": "imper",
+  "p": "tu",
+  "e": "Help me carry these bags, please.",
+  "b": "A2"
+ },
+ {
+  "q": "N'___ (oublier) pas tes clés, cette fois !",
+  "v": "oublier",
+  "t": "imper",
+  "p": "tu",
+  "e": "Don't forget your keys this time!",
+  "b": "A2"
+ },
+ {
+  "q": "___ (courir), Léa, le bus arrive !",
+  "v": "courir",
+  "t": "imper",
+  "p": "tu",
+  "e": "Run, Léa, the bus is coming!",
+  "b": "A2"
+ },
+ {
+  "q": "___-toi (se lever), il est déjà huit heures !",
+  "v": "se lever",
+  "t": "imper",
+  "p": "tu",
+  "e": "Get up, it's already eight o'clock!",
+  "b": "B1"
+ },
+ {
+  "q": "___-toi (se dépêcher), on va rater le train !",
+  "v": "se dépêcher",
+  "t": "imper",
+  "p": "tu",
+  "e": "Hurry up, we're going to miss the train!",
+  "b": "B1"
+ },
+ {
+  "q": "___-toi (s'habiller) vite, on part dans cinq minutes.",
+  "v": "s'habiller",
+  "t": "imper",
+  "p": "tu",
+  "e": "Get dressed quickly, we're leaving in five minutes.",
+  "b": "B1"
+ },
+ {
+  "q": "___-toi (se reposer) un peu, tu travailles trop.",
+  "v": "se reposer",
+  "t": "imper",
+  "p": "tu",
+  "e": "Have a little rest, you work too much.",
+  "b": "B1"
+ },
+ {
+  "q": "___-toi (se coucher) tôt ce soir, demain c'est l'école.",
+  "v": "se coucher",
+  "t": "imper",
+  "p": "tu",
+  "e": "Go to bed early tonight, it's school tomorrow.",
+  "b": "B1"
+ },
+ {
+  "q": "___-toi (se laver) les mains avant de manger.",
+  "v": "se laver",
+  "t": "imper",
+  "p": "tu",
+  "e": "Wash your hands before eating.",
+  "b": "B1"
+ },
+ {
+  "q": "___-toi (s'amuser) bien à la fête !",
+  "v": "s'amuser",
+  "t": "imper",
+  "p": "tu",
+  "e": "Have fun at the party!",
+  "b": "B1"
+ },
+ {
+  "q": "___-toi (se réveiller), le petit déjeuner est prêt !",
+  "v": "se réveiller",
+  "t": "imper",
+  "p": "tu",
+  "e": "Wake up, breakfast is ready!",
+  "b": "B1"
+ },
+ {
+  "q": "___-toi (se souvenir) de fermer la porte à clé.",
+  "v": "se souvenir",
+  "t": "imper",
+  "p": "tu",
+  "e": "Remember to lock the door.",
+  "b": "B1"
+ },
+ {
+  "q": "___-toi (s'occuper) de ton frère pendant une heure.",
+  "v": "s'occuper",
+  "t": "imper",
+  "p": "tu",
+  "e": "Look after your brother for an hour.",
+  "b": "A2"
+ },
+ {
+  "q": "___-toi (se préparer), le taxi arrive.",
+  "v": "se préparer",
+  "t": "imper",
+  "p": "tu",
+  "e": "Get ready, the taxi is coming.",
+  "b": "B1"
+ },
+ {
+  "q": "Ne t'___ (s'inquiéter) pas, tout va bien se passer.",
+  "v": "s'inquiéter",
+  "t": "imper",
+  "p": "tu",
+  "e": "Don't worry, everything will be fine.",
+  "b": "A2"
+ },
+ {
+  "q": "___-toi (se promener) un peu, ça te fera du bien.",
+  "v": "se promener",
+  "t": "imper",
+  "p": "tu",
+  "e": "Go for a little walk, it'll do you good.",
+  "b": "B1"
+ },
+ {
+  "q": "Nous sommes en retard, ___ (partir) tout de suite !",
+  "v": "partir",
+  "t": "imper",
+  "p": "nous",
+  "e": "We're late, let's leave right away!",
+  "b": "A2"
+ },
+ {
+  "q": "___-y (aller) ensemble, nous serons plus rapides.",
+  "v": "aller",
+  "t": "imper",
+  "p": "nous",
+  "e": "Let's go together, we'll be quicker.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous avons faim, ___ (manger) quelque chose avant le film.",
+  "v": "manger",
+  "t": "imper",
+  "p": "nous",
+  "e": "We're hungry, let's eat something before the film.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (faire) un pique-nique, toi et moi !",
+  "v": "faire",
+  "t": "imper",
+  "p": "nous",
+  "e": "Let's have a picnic, you and me!",
+  "b": "A2"
+ },
+ {
+  "q": "Nous sommes fatigués, ___ (prendre) un taxi.",
+  "v": "prendre",
+  "t": "imper",
+  "p": "nous",
+  "e": "We're tired, let's take a taxi.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous sommes perdus, ___ (appeler) Paul pour demander le chemin.",
+  "v": "appeler",
+  "t": "imper",
+  "p": "nous",
+  "e": "We're lost, let's call Paul and ask the way.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (attendre) encore cinq minutes, nous ne sommes pas pressés.",
+  "v": "attendre",
+  "t": "imper",
+  "p": "nous",
+  "e": "Let's wait five more minutes, we're not in a hurry.",
+  "b": "A2"
+ },
+ {
+  "q": "Entre nous, ___ (être) honnêtes, ce film était nul.",
+  "v": "être",
+  "t": "imper",
+  "p": "nous",
+  "e": "Between us, let's be honest, that film was rubbish.",
+  "b": "B1"
+ },
+ {
+  "q": "Toi et moi, ___ (choisir) un cadeau pour maman.",
+  "v": "choisir",
+  "t": "imper",
+  "p": "nous",
+  "e": "You and I, let's choose a present for Mum.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (parler) d'autre chose, nous ne sommes pas d'accord.",
+  "v": "parler",
+  "t": "imper",
+  "p": "nous",
+  "e": "Let's talk about something else, we don't agree.",
+  "b": "A2"
+ },
+ {
+  "q": "Nous sommes tous là, ___ (commencer) la réunion.",
+  "v": "commencer",
+  "t": "imper",
+  "p": "nous",
+  "e": "We're all here, let's start the meeting.",
+  "b": "A2"
+ },
+ {
+  "q": "___-nous (se dépêcher), le magasin ferme à midi !",
+  "v": "se dépêcher",
+  "t": "imper",
+  "p": "nous",
+  "e": "Let's hurry, the shop closes at noon!",
+  "b": "B1"
+ },
+ {
+  "q": "___-nous (se promener) au bord du lac cet après-midi.",
+  "v": "se promener",
+  "t": "imper",
+  "p": "nous",
+  "e": "Let's go for a walk by the lake this afternoon.",
+  "b": "B1"
+ },
+ {
+  "q": "___-nous (se reposer) un peu avant de continuer.",
+  "v": "se reposer",
+  "t": "imper",
+  "p": "nous",
+  "e": "Let's rest a little before we carry on.",
+  "b": "B1"
+ },
+ {
+  "q": "___-nous (s'arrêter) ici pour boire un café.",
+  "v": "s'arrêter",
+  "t": "imper",
+  "p": "nous",
+  "e": "Let's stop here for a coffee.",
+  "b": "A2"
+ },
+ {
+  "q": "___-nous (se préparer), les invités arrivent dans une heure.",
+  "v": "se préparer",
+  "t": "imper",
+  "p": "nous",
+  "e": "Let's get ready, the guests arrive in an hour.",
+  "b": "B1"
+ },
+ {
+  "q": "Toi et moi, ___ (danser) jusqu'au matin !",
+  "v": "danser",
+  "t": "imper",
+  "p": "nous",
+  "e": "You and me, let's dance till morning!",
+  "b": "A2"
+ },
+ {
+  "q": "Nous avons le temps, ___ (essayer) ce nouveau restaurant.",
+  "v": "essayer",
+  "t": "imper",
+  "p": "nous",
+  "e": "We've got time, let's try that new restaurant.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (entrer), je vous en prie, monsieur.",
+  "v": "entrer",
+  "t": "imper",
+  "p": "vous",
+  "e": "Come in, please, sir.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (ouvrir) vos livres à la page vingt, s'il vous plaît.",
+  "v": "ouvrir",
+  "t": "imper",
+  "p": "vous",
+  "e": "Open your books at page twenty, please.",
+  "b": "A2"
+ },
+ {
+  "q": "Les enfants, ___ (écouter) bien la consigne.",
+  "v": "écouter",
+  "t": "imper",
+  "p": "vous",
+  "e": "Children, listen carefully to the instructions.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (répéter) après moi, s'il vous plaît.",
+  "v": "répéter",
+  "t": "imper",
+  "p": "vous",
+  "e": "Repeat after me, please.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (tourner) à droite au deuxième feu, madame.",
+  "v": "tourner",
+  "t": "imper",
+  "p": "vous",
+  "e": "Turn right at the second set of lights, madam.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (prendre) la première rue à gauche, monsieur.",
+  "v": "prendre",
+  "t": "imper",
+  "p": "vous",
+  "e": "Take the first street on the left, sir.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (être) prudents sur la route, les enfants.",
+  "v": "être",
+  "t": "imper",
+  "p": "vous",
+  "e": "Be careful on the road, children.",
+  "b": "A2"
+ },
+ {
+  "q": "N'___ (avoir) pas peur, monsieur, le chien ne mord pas.",
+  "v": "avoir",
+  "t": "imper",
+  "p": "vous",
+  "e": "Don't be afraid, sir, the dog doesn't bite.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (faire) comme chez vous, madame.",
+  "v": "faire",
+  "t": "imper",
+  "p": "vous",
+  "e": "Make yourself at home, madam.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (venir) avec nous, monsieur, il y a de la place.",
+  "v": "venir",
+  "t": "imper",
+  "p": "vous",
+  "e": "Come with us, sir, there's room.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (attendre) ici, s'il vous plaît, le médecin arrive.",
+  "v": "attendre",
+  "t": "imper",
+  "p": "vous",
+  "e": "Wait here, please, the doctor is coming.",
+  "b": "A2"
+ },
+ {
+  "q": "___ (mettre) votre ceinture, s'il vous plaît.",
+  "v": "mettre",
+  "t": "imper",
+  "p": "vous",
+  "e": "Fasten your seat belt, please.",
+  "b": "A2"
+ },
+ {
+  "q": "Les enfants, ___-vous (se lever), la directrice arrive.",
+  "v": "se lever",
+  "t": "imper",
+  "p": "vous",
+  "e": "Children, stand up, the head teacher is coming.",
+  "b": "B1"
+ },
+ {
+  "q": "___-vous (se dépêcher), madame, le train va partir !",
+  "v": "se dépêcher",
+  "t": "imper",
+  "p": "vous",
+  "e": "Hurry, madam, the train is about to leave!",
+  "b": "B1"
+ },
+ {
+  "q": "___-vous (s'amuser) bien ce soir, les jeunes !",
+  "v": "s'amuser",
+  "t": "imper",
+  "p": "vous",
+  "e": "Have fun tonight, you lot!",
+  "b": "B1"
+ },
+ {
+  "q": "Ne vous ___ (s'inquiéter) pas, madame, tout va bien.",
+  "v": "s'inquiéter",
+  "t": "imper",
+  "p": "vous",
+  "e": "Don't worry, madam, everything is fine.",
+  "b": "A2"
+ },
+ {
+  "q": "___-vous (se reposer) bien, monsieur, et buvez beaucoup d'eau.",
+  "v": "se reposer",
+  "t": "imper",
+  "p": "vous",
+  "e": "Get plenty of rest, sir, and drink lots of water.",
+  "b": "B1"
+ },
+ {
+  "q": "___-vous (s'occuper) des enfants pendant mon absence, s'il vous plaît.",
+  "v": "s'occuper",
+  "t": "imper",
+  "p": "vous",
+  "e": "Please look after the children while I'm away.",
+  "b": "A2"
+ },
+ {
+  "q": "___-vous (se souvenir) de prendre vos billets, madame.",
+  "v": "se souvenir",
+  "t": "imper",
+  "p": "vous",
+  "e": "Remember to take your tickets, madam.",
+  "b": "B1"
+ },
+ {
+  "q": "Il fait froid, ___-vous (s'habiller) chaudement, les enfants.",
+  "v": "s'habiller",
+  "t": "imper",
+  "p": "vous",
+  "e": "It's cold, wrap up warm, children.",
+  "b": "B1"
+ }
+]

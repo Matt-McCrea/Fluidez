@@ -1,0 +1,5 @@
+{
+  "e": ["aller", "venir", "arriver", "partir", "entrer", "sortir", "monter", "descendre", "naître", "mourir", "rester", "tomber", "retourner", "devenir", "revenir", "rentrer", "passer"],
+  "ae": ["monter", "descendre", "sortir", "rentrer", "passer", "retourner"],
+  "pron": { "se lever": "lever", "se coucher": "coucher", "se laver": "laver", "se réveiller": "réveiller", "s'habiller": "habiller", "se promener": "promener", "se souvenir": "se souvenir", "s'appeler": "s'appeler", "se rappeler": "rappeler", "s'asseoir": "asseoir", "se sentir": "sentir", "se trouver": "trouver", "s'arrêter": "arrêter", "se marier": "marier", "se dépêcher": "dépêcher", "s'ennuyer": "ennuyer", "se reposer": "reposer", "s'occuper": "occuper", "s'inquiéter": "inquiéter", "se préparer": "préparer", "s'amuser": "amuser", "se tromper": "tromper", "se disputer": "disputer", "se rencontrer": "rencontrer", "se baigner": "baigner" }
+}

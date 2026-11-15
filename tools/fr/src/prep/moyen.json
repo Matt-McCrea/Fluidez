@@ -1,0 +1,1085 @@
+[
+ {
+  "q": "Je vais au travail ___ voiture.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "par"
+  ],
+  "e": "I go to work by car.",
+  "w": "Transport you sit inside takes en: en voiture, en train, en bus.",
+  "wf": "Transport fermé : en.",
+  "t": "moyen",
+  "b": "A1"
+ },
+ {
+  "q": "Je viens ___ pied.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "par"
+  ],
+  "e": "I'm coming on foot.",
+  "w": "Transport you sit on, or your own feet, takes à: à pied, à vélo, à cheval.",
+  "wf": "Sur le véhicule, ou à pied : à.",
+  "t": "moyen",
+  "b": "A1"
+ },
+ {
+  "q": "Elle va à l'école ___ vélo.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "par"
+  ],
+  "e": "She goes to school by bike.",
+  "w": "Transport you sit on, or your own feet, takes à: à pied, à vélo, à cheval.",
+  "wf": "Sur le véhicule, ou à pied : à.",
+  "t": "moyen",
+  "b": "A1"
+ },
+ {
+  "q": "On part à Lyon ___ train.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "par"
+  ],
+  "e": "We're going to Lyon by train.",
+  "w": "Transport you sit inside takes en: en voiture, en train, en bus.",
+  "wf": "Transport fermé : en.",
+  "t": "moyen",
+  "b": "A1"
+ },
+ {
+  "q": "Il rentre ___ bus.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "dans"
+  ],
+  "e": "He's going home by bus.",
+  "w": "Transport you sit inside takes en: en voiture, en train, en bus.",
+  "wf": "Transport fermé : en.",
+  "t": "moyen",
+  "b": "A1"
+ },
+ {
+  "q": "Nous voyageons ___ avion.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "dans"
+  ],
+  "e": "We're travelling by plane.",
+  "w": "Transport you sit inside takes en: en voiture, en train, en bus.",
+  "wf": "Transport fermé : en.",
+  "t": "moyen",
+  "b": "A1"
+ },
+ {
+  "q": "Tu vas au centre ___ métro ?",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "dans"
+  ],
+  "e": "Are you going into the centre by metro?",
+  "w": "Transport you sit inside takes en: en voiture, en train, en bus.",
+  "wf": "Transport fermé : en.",
+  "t": "moyen",
+  "b": "A1"
+ },
+ {
+  "q": "Ils traversent la Manche ___ bateau.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "dans"
+  ],
+  "e": "They're crossing the Channel by boat.",
+  "w": "Transport you sit inside takes en: en voiture, en train, en bus.",
+  "wf": "Transport fermé : en.",
+  "t": "moyen",
+  "b": "A1"
+ },
+ {
+  "q": "Je rentre ___ taxi ce soir.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "dans"
+  ],
+  "e": "I'm getting a taxi home tonight.",
+  "w": "Transport you sit inside takes en: en voiture, en train, en bus.",
+  "wf": "Transport fermé : en.",
+  "t": "moyen",
+  "b": "A1"
+ },
+ {
+  "q": "On se promène ___ cheval.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "dans"
+  ],
+  "e": "We go horse riding.",
+  "w": "Transport you sit on, or your own feet, takes à: à pied, à vélo, à cheval.",
+  "wf": "Sur le véhicule, ou à pied : à.",
+  "t": "moyen",
+  "b": "A1"
+ },
+ {
+  "q": "C'est à dix minutes ___ pied.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "par"
+  ],
+  "e": "It's ten minutes on foot.",
+  "w": "Transport you sit on, or your own feet, takes à: à pied, à vélo, à cheval.",
+  "wf": "Sur le véhicule, ou à pied : à.",
+  "t": "moyen",
+  "b": "A1"
+ },
+ {
+  "q": "Tu peux me répondre ___ email ?",
+  "a": "par",
+  "o": [
+   "par",
+   "à",
+   "dans"
+  ],
+  "e": "Can you answer me by email?",
+  "w": "How a message or payment is sent: par (par téléphone, par carte).",
+  "wf": "Moyen d'envoi : par.",
+  "t": "moyen",
+  "b": "A1"
+ },
+ {
+  "q": "Je paie ___ carte.",
+  "a": "par",
+  "o": [
+   "par",
+   "à",
+   "dans"
+  ],
+  "e": "I'm paying by card.",
+  "w": "How a message or payment is sent: par (par téléphone, par carte).",
+  "wf": "Moyen d'envoi : par.",
+  "t": "moyen",
+  "b": "A1"
+ },
+ {
+  "q": "Vous payez ___ espèces ?",
+  "a": "en",
+  "o": [
+   "en",
+   "par",
+   "à"
+  ],
+  "e": "Are you paying in cash?",
+  "w": "In cash is en espèces, or en liquide.",
+  "wf": "en espèces, en liquide.",
+  "t": "moyen",
+  "b": "A1"
+ },
+ {
+  "q": "Dis-le ___ français, s'il te plaît.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "dans"
+  ],
+  "e": "Say it in French, please.",
+  "w": "In a language: en français, en anglais.",
+  "wf": "Langue : en.",
+  "t": "moyen",
+  "b": "A1"
+ },
+ {
+  "q": "Le livre est écrit ___ anglais.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "dans"
+  ],
+  "e": "The book is written in English.",
+  "w": "In a language: en français, en anglais.",
+  "wf": "Langue : en.",
+  "t": "moyen",
+  "b": "A1"
+ },
+ {
+  "q": "C'est une table ___ bois.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "par"
+  ],
+  "x": [
+   "de"
+  ],
+  "e": "It's a wooden table.",
+  "w": "Made of a material: en bois, en or, en verre.",
+  "wf": "Matière : en.",
+  "t": "moyen",
+  "b": "A1"
+ },
+ {
+  "q": "Je coupe le pain ___ un couteau.",
+  "a": "avec",
+  "o": [
+   "avec",
+   "en",
+   "par"
+  ],
+  "e": "I cut the bread with a knife.",
+  "w": "Using a tool named with un, le, mon...: avec.",
+  "wf": "Outil avec article : avec.",
+  "t": "moyen",
+  "b": "A1"
+ },
+ {
+  "q": "Il est ___ retard.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "dans"
+  ],
+  "e": "He's late.",
+  "w": "Late is en retard, early is en avance.",
+  "wf": "en retard, en avance.",
+  "t": "moyen",
+  "b": "A1"
+ },
+ {
+  "q": "Le train est ___ l'heure.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "dans"
+  ],
+  "e": "The train is on time.",
+  "w": "On time is à l'heure.",
+  "wf": "à l'heure.",
+  "t": "moyen",
+  "b": "A1"
+ },
+ {
+  "q": "Je t'appelle ___ téléphone.",
+  "a": "par",
+  "o": [
+   "par",
+   "à",
+   "dans"
+  ],
+  "x": [
+   "au"
+  ],
+  "e": "I'll call you by phone.",
+  "w": "How a message or payment is sent: par (par téléphone, par carte).",
+  "wf": "Moyen d'envoi : par.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "Elle parle ___ téléphone avec sa mère.",
+  "a": "au",
+  "o": [
+   "au",
+   "en",
+   "dans"
+  ],
+  "e": "She's on the phone with her mother.",
+  "w": "Being on the phone is au téléphone.",
+  "wf": "au téléphone.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "J'ai envoyé la lettre ___ la poste.",
+  "a": "par",
+  "o": [
+   "par",
+   "à",
+   "en"
+  ],
+  "e": "I sent the letter by post.",
+  "w": "How a message or payment is sent: par (par téléphone, par carte).",
+  "wf": "Moyen d'envoi : par.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "Je l'ai prévenu ___ SMS.",
+  "a": "par",
+  "o": [
+   "par",
+   "à",
+   "dans"
+  ],
+  "e": "I let him know by text.",
+  "w": "How a message or payment is sent: par (par téléphone, par carte).",
+  "wf": "Moyen d'envoi : par.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "J'achète mes billets ___ ligne.",
+  "a": "en",
+  "o": [
+   "en",
+   "par",
+   "dans"
+  ],
+  "e": "I buy my tickets online.",
+  "w": "Online is en ligne, or sur Internet.",
+  "wf": "en ligne.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "On a oublié les sacs ___ la voiture.",
+  "a": "dans",
+  "o": [
+   "dans",
+   "en",
+   "à"
+  ],
+  "e": "We left the bags in the car.",
+  "w": "With un, le, mon... before the vehicle, inside it is dans.",
+  "wf": "Avec un article : dans.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "Il a lu tout le trajet ___ le train.",
+  "a": "dans",
+  "o": [
+   "dans",
+   "en",
+   "à"
+  ],
+  "e": "He read the whole journey on the train.",
+  "w": "With un, le, mon... before the vehicle, inside it is dans.",
+  "wf": "Avec un article : dans.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "Je suis tombé ___ mon vélo.",
+  "a": "de",
+  "o": [
+   "de",
+   "en",
+   "dans"
+  ],
+  "e": "I fell off my bike.",
+  "w": "Falling off something is tomber de.",
+  "wf": "tomber de.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "Elle est montée ___ son vélo.",
+  "a": "sur",
+  "o": [
+   "sur",
+   "en",
+   "dans"
+  ],
+  "e": "She got on her bike.",
+  "w": "On top of a vehicle with mon, un, le...: sur mon vélo.",
+  "wf": "Avec un article : sur.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "On va à la gare ___ tram.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "dans"
+  ],
+  "e": "We're going to the station by tram.",
+  "w": "Transport you sit inside takes en: en voiture, en train, en bus.",
+  "wf": "Transport fermé : en.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "Ils partent au ski ___ car.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "dans"
+  ],
+  "e": "They're going skiing by coach.",
+  "w": "Transport you sit inside takes en: en voiture, en train, en bus.",
+  "wf": "Transport fermé : en.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "J'ai écrit la carte ___ la main.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "par"
+  ],
+  "e": "I wrote the card by hand.",
+  "w": "By hand is à la main.",
+  "wf": "à la main.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "Je l'ai rencontré ___ hasard.",
+  "a": "par",
+  "o": [
+   "par",
+   "en",
+   "à"
+  ],
+  "e": "I met him by chance.",
+  "w": "By chance is par hasard.",
+  "wf": "par hasard.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "Elle connaît le poème ___ cœur.",
+  "a": "par",
+  "o": [
+   "par",
+   "en",
+   "à"
+  ],
+  "e": "She knows the poem by heart.",
+  "w": "By heart is par cœur.",
+  "wf": "par cœur.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "Lis le texte ___ voix haute.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "par"
+  ],
+  "e": "Read the text aloud.",
+  "w": "Aloud is à voix haute; quietly is à voix basse.",
+  "wf": "à voix haute.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "Les enfants mangent ___ silence.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "par"
+  ],
+  "e": "The children eat in silence.",
+  "w": "In silence is en silence.",
+  "wf": "en silence.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "Il est arrivé ___ avance.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "dans"
+  ],
+  "e": "He arrived early.",
+  "w": "Early is en avance, late is en retard.",
+  "wf": "en avance.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "C'est une bague ___ or.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "par"
+  ],
+  "x": [
+   "d'"
+  ],
+  "e": "It's a gold ring.",
+  "w": "Made of a material: en bois, en or, en verre.",
+  "wf": "Matière : en.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "Elle a ouvert la boîte ___ un tournevis.",
+  "a": "avec",
+  "o": [
+   "avec",
+   "en",
+   "par"
+  ],
+  "e": "She opened the box with a screwdriver.",
+  "w": "Using a tool named with un, le, mon...: avec.",
+  "wf": "Outil avec article : avec.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "Elle préfère voyager ___ train de nuit.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "dans"
+  ],
+  "e": "She prefers to travel by night train.",
+  "w": "Transport you sit inside takes en: en voiture, en train, en bus.",
+  "wf": "Transport fermé : en.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "Je préfère payer ___ chèque.",
+  "a": "par",
+  "o": [
+   "par",
+   "en",
+   "à"
+  ],
+  "e": "I'd rather pay by cheque.",
+  "w": "How a message or payment is sent: par (par téléphone, par carte).",
+  "wf": "Moyen d'envoi : par.",
+  "t": "moyen",
+  "b": "A2"
+ },
+ {
+  "q": "Il a traduit la lettre ___ espagnol.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "dans"
+  ],
+  "e": "He translated the letter into Spanish.",
+  "w": "Into a language is also en: traduire en espagnol.",
+  "wf": "Traduire en + langue.",
+  "t": "moyen",
+  "b": "B1"
+ },
+ {
+  "q": "On a fait le tour de l'île ___ scooter.",
+  "a": "à",
+  "o": [
+   "à",
+   "par",
+   "dans"
+  ],
+  "x": [
+   "en"
+  ],
+  "e": "We went round the island by scooter.",
+  "w": "Transport you sit on, or your own feet, takes à: à pied, à vélo, à cheval.",
+  "wf": "Sur le véhicule, ou à pied : à.",
+  "t": "moyen",
+  "b": "B1"
+ },
+ {
+  "q": "Ils ont fait Paris Marseille ___ moto.",
+  "a": "à",
+  "o": [
+   "à",
+   "par",
+   "dans"
+  ],
+  "x": [
+   "en"
+  ],
+  "e": "They rode from Paris to Marseille by motorbike.",
+  "w": "Transport you sit on, or your own feet, takes à: à pied, à vélo, à cheval.",
+  "wf": "Sur le véhicule, ou à pied : à.",
+  "t": "moyen",
+  "b": "B1"
+ },
+ {
+  "q": "Elle descend la piste ___ ski.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "par"
+  ],
+  "e": "She skis down the slope.",
+  "w": "Transport you sit on, or your own feet, takes à: à pied, à vélo, à cheval.",
+  "wf": "Sur le véhicule, ou à pied : à.",
+  "t": "moyen",
+  "b": "B1"
+ },
+ {
+  "q": "Je vais au bureau ___ trottinette.",
+  "a": "à",
+  "o": [
+   "à",
+   "par",
+   "dans"
+  ],
+  "x": [
+   "en"
+  ],
+  "e": "I go to the office by scooter.",
+  "w": "Transport you sit on, or your own feet, takes à: à pied, à vélo, à cheval.",
+  "wf": "Sur le véhicule, ou à pied : à.",
+  "t": "moyen",
+  "b": "B1"
+ },
+ {
+  "q": "Il y a de la place ___ le bus ?",
+  "a": "dans",
+  "o": [
+   "dans",
+   "en",
+   "à"
+  ],
+  "e": "Is there room on the bus?",
+  "w": "With un, le, mon... before the vehicle, inside it is dans.",
+  "wf": "Avec un article : dans.",
+  "t": "moyen",
+  "b": "B1"
+ },
+ {
+  "q": "On a voyagé ___ un vieux bateau.",
+  "a": "sur",
+  "o": [
+   "sur",
+   "en",
+   "à"
+  ],
+  "x": [
+   "dans"
+  ],
+  "e": "We travelled on an old boat.",
+  "w": "On board a ship named with un or le: sur.",
+  "wf": "Sur un bateau.",
+  "t": "moyen",
+  "b": "B1"
+ },
+ {
+  "q": "Le colis est arrivé ___ avion.",
+  "a": "par",
+  "o": [
+   "par",
+   "à",
+   "dans"
+  ],
+  "e": "The parcel came by air.",
+  "w": "Goods sent by air or sea: par avion, par bateau.",
+  "wf": "Envoi : par avion.",
+  "t": "moyen",
+  "b": "B1"
+ },
+ {
+  "q": "Ce document se signe ___ stylo bleu.",
+  "a": "au",
+  "o": [
+   "au",
+   "en",
+   "par"
+  ],
+  "e": "This document is signed in blue pen.",
+  "w": "Writing tools: au stylo, au crayon.",
+  "wf": "Écrire au stylo.",
+  "t": "moyen",
+  "b": "B1"
+ },
+ {
+  "q": "Écris ton nom ___ crayon.",
+  "a": "au",
+  "o": [
+   "au",
+   "en",
+   "par"
+  ],
+  "e": "Write your name in pencil.",
+  "w": "Writing tools: au stylo, au crayon.",
+  "wf": "Écrire au crayon.",
+  "t": "moyen",
+  "b": "B1"
+ },
+ {
+  "q": "Ce pull se lave ___ la main.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "par"
+  ],
+  "e": "This jumper is washed by hand.",
+  "w": "By hand is à la main; by machine, à la machine.",
+  "wf": "à la main.",
+  "t": "moyen",
+  "b": "B1"
+ },
+ {
+  "q": "J'ai lavé les draps ___ la machine.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "par"
+  ],
+  "e": "I washed the sheets in the machine.",
+  "w": "By machine is à la machine.",
+  "wf": "à la machine.",
+  "t": "moyen",
+  "b": "B1"
+ },
+ {
+  "q": "La salle est ___ travaux.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "par"
+  ],
+  "e": "The room is being renovated.",
+  "w": "En + noun describes a state: en travaux, en panne.",
+  "wf": "en + état.",
+  "t": "moyen",
+  "b": "B1"
+ },
+ {
+  "q": "Ma voiture est ___ panne.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "dans"
+  ],
+  "e": "My car has broken down.",
+  "w": "En + noun describes a state: en panne, en travaux.",
+  "wf": "en panne.",
+  "t": "moyen",
+  "b": "B1"
+ },
+ {
+  "q": "On s'est parlé ___ vidéo hier.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "dans"
+  ],
+  "x": [
+   "par"
+  ],
+  "e": "We talked on video yesterday.",
+  "w": "On a video call is en vidéo, or par vidéo.",
+  "wf": "en vidéo.",
+  "t": "moyen",
+  "b": "B1"
+ },
+ {
+  "q": "Les billets sont vendus ___ deux.",
+  "a": "par",
+  "o": [
+   "par",
+   "en",
+   "à"
+  ],
+  "e": "The tickets are sold in pairs.",
+  "w": "In groups of is par: par deux, par dix.",
+  "wf": "par deux = in pairs.",
+  "t": "moyen",
+  "b": "B1"
+ },
+ {
+  "q": "Elle gagne deux mille euros ___ mois.",
+  "a": "par",
+  "o": [
+   "par",
+   "en",
+   "à"
+  ],
+  "e": "She earns two thousand euros a month.",
+  "w": "Per, each: par mois, par jour.",
+  "wf": "par = per.",
+  "t": "moyen",
+  "b": "B1"
+ },
+ {
+  "q": "C'est une maison ___ pierre.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "par"
+  ],
+  "x": [
+   "de"
+  ],
+  "e": "It's a stone house.",
+  "w": "Made of a material: en bois, en or, en verre.",
+  "wf": "Matière : en.",
+  "t": "moyen",
+  "b": "B1"
+ },
+ {
+  "q": "Il a réparé la chaise ___ de la colle.",
+  "a": "avec",
+  "o": [
+   "avec",
+   "en",
+   "par"
+  ],
+  "e": "He fixed the chair with glue.",
+  "w": "Using a tool named with un, le, mon...: avec.",
+  "wf": "Outil avec article : avec.",
+  "t": "moyen",
+  "b": "B1"
+ },
+ {
+  "q": "Je suis allé ___ Bordeaux en train.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "au"
+  ],
+  "e": "I went to Bordeaux by train.",
+  "w": "Cities take à; the train takes en.",
+  "wf": "à + ville, en train.",
+  "t": "moyen",
+  "b": "B1"
+ },
+ {
+  "q": "Il a été renversé ___ une voiture.",
+  "a": "par",
+  "o": [
+   "par",
+   "en",
+   "à"
+  ],
+  "e": "He was knocked down by a car.",
+  "w": "After a passive verb, by is par.",
+  "wf": "Passif : par.",
+  "t": "moyen",
+  "b": "B2"
+ },
+ {
+  "q": "La loi a été votée ___ le Parlement.",
+  "a": "par",
+  "o": [
+   "par",
+   "en",
+   "à"
+  ],
+  "e": "The law was passed by Parliament.",
+  "w": "After a passive verb, by is par.",
+  "wf": "Passif : par.",
+  "t": "moyen",
+  "b": "B2"
+ },
+ {
+  "q": "Il est respecté ___ tous ses collègues.",
+  "a": "de",
+  "o": [
+   "de",
+   "en",
+   "à"
+  ],
+  "x": [
+   "par"
+  ],
+  "e": "He's respected by all his colleagues.",
+  "w": "Verbs of feeling in the passive often take de: respecté de tous.",
+  "wf": "Passif de sentiment : de.",
+  "t": "moyen",
+  "b": "B2"
+ },
+ {
+  "q": "Ce tableau a été peint ___ l'huile.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "par"
+  ],
+  "e": "This picture was painted in oils.",
+  "w": "Painting media: à l'huile, à l'aquarelle.",
+  "wf": "Peint à l'huile.",
+  "t": "moyen",
+  "b": "B2"
+ },
+ {
+  "q": "Ils sont venus ___ nombre.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "par"
+  ],
+  "e": "They came in large numbers.",
+  "w": "In large numbers is en nombre.",
+  "wf": "en nombre.",
+  "t": "moyen",
+  "b": "B2"
+ },
+ {
+  "q": "Il a répondu ___ un sourire.",
+  "a": "par",
+  "o": [
+   "par",
+   "en",
+   "à"
+  ],
+  "e": "He answered with a smile.",
+  "w": "Answering with a gesture or act is répondre par.",
+  "wf": "répondre par un geste.",
+  "t": "moyen",
+  "b": "B2"
+ },
+ {
+  "q": "Elle a fini ___ beauté.",
+  "a": "en",
+  "o": [
+   "en",
+   "à",
+   "par"
+  ],
+  "e": "She finished in style.",
+  "w": "In style, on a high note: finir en beauté.",
+  "wf": "finir en beauté.",
+  "t": "moyen",
+  "b": "B2"
+ },
+ {
+  "q": "Je l'ai appris ___ la radio.",
+  "a": "par",
+  "o": [
+   "par",
+   "en",
+   "dans"
+  ],
+  "x": [
+   "à"
+  ],
+  "e": "I heard about it on the radio.",
+  "w": "Learning news through a source is par.",
+  "wf": "Apprendre par une source.",
+  "t": "moyen",
+  "b": "B2"
+ },
+ {
+  "q": "On a fait le voyage ___ étapes.",
+  "a": "par",
+  "o": [
+   "par",
+   "à",
+   "dans"
+  ],
+  "e": "We did the journey in stages.",
+  "w": "In stages, step by step: par étapes.",
+  "wf": "par étapes.",
+  "t": "moyen",
+  "b": "B2"
+ },
+ {
+  "q": "Ce vin se boit ___ température ambiante.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "par"
+  ],
+  "e": "This wine is drunk at room temperature.",
+  "w": "At a temperature or speed: à.",
+  "wf": "à + température.",
+  "t": "moyen",
+  "b": "B2"
+ },
+ {
+  "q": "Il roulait ___ cent à l'heure.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "par"
+  ],
+  "e": "He was driving at a hundred kilometres an hour.",
+  "w": "At a speed: à cent à l'heure.",
+  "wf": "Vitesse : à.",
+  "t": "moyen",
+  "b": "B2"
+ },
+ {
+  "q": "Nous avons dîné ___ la lumière des bougies.",
+  "a": "à",
+  "o": [
+   "à",
+   "en",
+   "par"
+  ],
+  "e": "We had dinner by candlelight.",
+  "w": "By candlelight is à la lumière des bougies.",
+  "wf": "à la lumière de.",
+  "t": "moyen",
+  "b": "B2"
+ },
+ {
+  "q": "Il a fait tout le chemin ___ stop.",
+  "a": "en",
+  "o": [
+   "en",
+   "par",
+   "dans"
+  ],
+  "e": "He hitchhiked all the way.",
+  "w": "Hitchhiking is faire du stop, travelling en stop.",
+  "wf": "en stop.",
+  "t": "moyen",
+  "b": "B2"
+ },
+ {
+  "q": "Elle a payé le loyer ___ virement.",
+  "a": "par",
+  "o": [
+   "par",
+   "en",
+   "à"
+  ],
+  "e": "She paid the rent by bank transfer.",
+  "w": "How a message or payment is sent: par (par téléphone, par carte).",
+  "wf": "Moyen d'envoi : par.",
+  "t": "moyen",
+  "b": "B2"
+ }
+]

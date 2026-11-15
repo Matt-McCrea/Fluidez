@@ -1,0 +1,496 @@
+[
+ {
+  "fr": "Au secours !",
+  "en": "Help!",
+  "th": "aide",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Appelez une ambulance !",
+  "en": "Call an ambulance!",
+  "th": "aide",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Appelez la police !",
+  "en": "Call the police!",
+  "th": "aide",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Au feu !",
+  "en": "Fire!",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Attention !",
+  "en": "Watch out!",
+  "th": "aide",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Arrêtez !",
+  "en": "Stop!",
+  "th": "aide",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Laissez-moi tranquille !",
+  "en": "Leave me alone!",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "C'est une urgence.",
+  "en": "It's an emergency.",
+  "th": "aide",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Il y a eu un accident.",
+  "en": "There's been an accident.",
+  "th": "aide",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "fr": "Le numéro d'urgence, c'est le 112.",
+  "en": "The emergency number is 112.",
+  "th": "aide",
+  "b": "A2",
+  "t": 1,
+  "n": "112 works across Europe. In France, 15 is the ambulance."
+ },
+ {
+  "fr": "Quelqu'un parle anglais ?",
+  "en": "Does anyone speak English?",
+  "th": "aide",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "On m'a volé mon portefeuille.",
+  "en": "My wallet has been stolen.",
+  "th": "aide",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "fr": "J'ai perdu mon passeport.",
+  "en": "I've lost my passport.",
+  "th": "aide",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Où est le commissariat ?",
+  "en": "Where is the police station?",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Où est l'ambassade britannique ?",
+  "en": "Where is the British embassy?",
+  "th": "aide",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Vous pouvez m'aider ?",
+  "en": "Can you help me?",
+  "alt": [
+   "Pouvez-vous m'aider ?"
+  ],
+  "th": "aide",
+  "b": "A1",
+  "t": 1,
+  "n": "Vous."
+ },
+ {
+  "fr": "Excusez-moi, je suis perdu.",
+  "en": "Excuse me, I'm lost.",
+  "alt": [
+   "Excusez-moi, je suis perdue."
+  ],
+  "th": "aide",
+  "b": "A1",
+  "t": 1,
+  "n": "Perdue for a woman."
+ },
+ {
+  "fr": "Je cherche cette adresse.",
+  "en": "I'm looking for this address.",
+  "th": "aide",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Où est la gare ?",
+  "en": "Where is the station?",
+  "th": "aide",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "C'est loin d'ici ?",
+  "en": "Is it far from here?",
+  "th": "aide",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "C'est à cinq minutes à pied.",
+  "en": "It's five minutes' walk.",
+  "th": "aide",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Allez tout droit.",
+  "en": "Go straight on.",
+  "th": "aide",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Tournez à gauche.",
+  "en": "Turn left.",
+  "th": "aide",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Tournez à droite au feu.",
+  "en": "Turn right at the lights.",
+  "th": "aide",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Prenez la deuxième rue à droite.",
+  "en": "Take the second street on the right.",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "C'est juste en face.",
+  "en": "It's right opposite.",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "C'est au coin de la rue.",
+  "en": "It's on the corner.",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Vous pouvez me montrer sur la carte ?",
+  "en": "Can you show me on the map?",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Il y a un métro près d'ici ?",
+  "en": "Is there a metro station near here?",
+  "th": "aide",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Un ticket de métro, s'il vous plaît.",
+  "en": "A metro ticket, please.",
+  "th": "aide",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Quelle ligne pour aller à Châtelet ?",
+  "en": "Which line goes to Châtelet?",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Il faut changer à République.",
+  "en": "You change at République.",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "C'est quel arrêt ?",
+  "en": "Which stop is it?",
+  "th": "aide",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je descends au prochain arrêt.",
+  "en": "I'm getting off at the next stop.",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Pardon, je descends.",
+  "en": "Excuse me, this is my stop.",
+  "th": "aide",
+  "b": "A2",
+  "t": 2,
+  "n": "Said to get past people in a crowded train."
+ },
+ {
+  "fr": "Le métro est en grève.",
+  "en": "The metro is on strike.",
+  "th": "aide",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Où est l'arrêt de bus ?",
+  "en": "Where is the bus stop?",
+  "th": "aide",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Ce bus va au centre-ville ?",
+  "en": "Does this bus go to the town centre?",
+  "th": "aide",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Un aller simple pour Lyon, s'il vous plaît.",
+  "en": "A single to Lyon, please.",
+  "th": "aide",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "fr": "Un aller-retour pour Lille.",
+  "en": "A return ticket to Lille.",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Le train part de quel quai ?",
+  "en": "Which platform does the train leave from?",
+  "alt": [
+   "De quelle voie part le train ?"
+  ],
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Le train a du retard.",
+  "en": "The train is late.",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Cette place est libre ?",
+  "en": "Is this seat free?",
+  "th": "aide",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "J'ai raté mon train.",
+  "en": "I missed my train.",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Vous pouvez m'appeler un taxi ?",
+  "en": "Could you call me a taxi?",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Ma voiture est en panne.",
+  "en": "My car has broken down.",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Mon téléphone n'a plus de batterie.",
+  "en": "My phone's battery is dead.",
+  "th": "aide",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Je peux charger mon téléphone ?",
+  "en": "Can I charge my phone?",
+  "th": "aide",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Je ne me sens pas bien.",
+  "en": "I don't feel well.",
+  "th": "aide",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "J'ai besoin d'un médecin.",
+  "en": "I need a doctor.",
+  "th": "aide",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "J'ai mal à la tête.",
+  "en": "I've got a headache.",
+  "th": "aide",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "J'ai mal au ventre.",
+  "en": "I've got a stomach ache.",
+  "th": "aide",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "J'ai mal à la gorge.",
+  "en": "I've got a sore throat.",
+  "th": "aide",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Ça fait mal ici.",
+  "en": "It hurts here.",
+  "th": "aide",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "J'ai de la fièvre.",
+  "en": "I've got a temperature.",
+  "th": "aide",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je tousse beaucoup.",
+  "en": "I'm coughing a lot.",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je me suis coupé.",
+  "en": "I've cut myself.",
+  "alt": [
+   "Je me suis coupée."
+  ],
+  "th": "aide",
+  "b": "A2",
+  "t": 2,
+  "n": "Coupée for a woman."
+ },
+ {
+  "fr": "Je me suis tordu la cheville.",
+  "en": "I've twisted my ankle.",
+  "th": "aide",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Je suis enceinte.",
+  "en": "I'm pregnant.",
+  "th": "aide",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Je suis diabétique.",
+  "en": "I'm diabetic.",
+  "th": "aide",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Je suis allergique à la pénicilline.",
+  "en": "I'm allergic to penicillin.",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Où sont les urgences ?",
+  "en": "Where is the emergency department?",
+  "th": "aide",
+  "b": "A2",
+  "t": 2,
+  "n": "Les urgences is the hospital's emergency department."
+ },
+ {
+  "fr": "Je voudrais prendre rendez-vous.",
+  "en": "I'd like to make an appointment.",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Où est la pharmacie la plus proche ?",
+  "en": "Where is the nearest pharmacy?",
+  "th": "aide",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Vous avez quelque chose contre la toux ?",
+  "en": "Do you have anything for a cough?",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "J'ai une ordonnance.",
+  "en": "I have a prescription.",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Ça se vend sans ordonnance ?",
+  "en": "Can I get it without a prescription?",
+  "th": "aide",
+  "b": "B1",
+  "t": 3
+ },
+ {
+  "fr": "Combien de fois par jour ?",
+  "en": "How many times a day?",
+  "th": "aide",
+  "b": "A2",
+  "t": 2
+ }
+]

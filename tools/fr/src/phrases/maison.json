@@ -1,0 +1,574 @@
+[
+ {
+  "fr": "Entre !",
+  "en": "Come in!",
+  "alt": [
+   "Entrez !"
+  ],
+  "th": "maison",
+  "b": "A1",
+  "t": 1,
+  "n": "Tu. Entrez is vous."
+ },
+ {
+  "fr": "Fais comme chez toi.",
+  "en": "Make yourself at home.",
+  "alt": [
+   "Faites comme chez vous."
+  ],
+  "th": "maison",
+  "b": "A2",
+  "t": 1,
+  "n": "Literally: do as if at your place. Tu."
+ },
+ {
+  "fr": "Assieds-toi.",
+  "en": "Have a seat.",
+  "alt": [
+   "Asseyez-vous.",
+   "Assois-toi."
+  ],
+  "th": "maison",
+  "b": "A1",
+  "t": 1,
+  "n": "Tu. Asseyez-vous is vous."
+ },
+ {
+  "fr": "Mets-toi à l'aise.",
+  "en": "Make yourself comfortable.",
+  "th": "maison",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Tu veux boire quelque chose ?",
+  "en": "Would you like something to drink?",
+  "alt": [
+   "Tu veux quelque chose à boire ?"
+  ],
+  "th": "maison",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Tu veux un café ou un thé ?",
+  "en": "Would you like coffee or tea?",
+  "th": "maison",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Oui, volontiers.",
+  "en": "Yes, I'd love to.",
+  "alt": [
+   "Oui, avec plaisir.",
+   "Oui, je veux bien."
+  ],
+  "th": "maison",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Non merci, ça va.",
+  "en": "No thanks, I'm fine.",
+  "th": "maison",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Juste un verre d'eau, s'il te plaît.",
+  "en": "Just a glass of water, please.",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Tu prends du sucre ?",
+  "en": "Do you take sugar?",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je te fais visiter ?",
+  "en": "Shall I show you around?",
+  "th": "maison",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: I make you visit?"
+ },
+ {
+  "fr": "Voici le salon.",
+  "en": "This is the living room.",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "La cuisine est par là.",
+  "en": "The kitchen is through there.",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Où sont les toilettes ?",
+  "en": "Where is the toilet?",
+  "th": "maison",
+  "b": "A1",
+  "t": 1,
+  "n": "Toilettes is always plural."
+ },
+ {
+  "fr": "C'est la porte au fond du couloir.",
+  "en": "It's the door at the end of the hall.",
+  "th": "maison",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Donne-moi ton manteau.",
+  "en": "Let me take your coat.",
+  "th": "maison",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: give me your coat."
+ },
+ {
+  "fr": "Tu peux enlever tes chaussures ?",
+  "en": "Could you take your shoes off?",
+  "th": "maison",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Pas besoin d'enlever tes chaussures.",
+  "en": "No need to take your shoes off.",
+  "th": "maison",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Excuse le désordre.",
+  "en": "Sorry about the mess.",
+  "alt": [
+   "Désolé pour le bazar."
+  ],
+  "th": "maison",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Tu as trouvé facilement ?",
+  "en": "Did you find the place easily?",
+  "th": "maison",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Merci de m'avoir invité.",
+  "en": "Thanks for having me.",
+  "alt": [
+   "Merci de m'avoir invitée.",
+   "Merci pour l'invitation."
+  ],
+  "th": "maison",
+  "b": "A2",
+  "t": 1,
+  "n": "Invitée if you are a woman."
+ },
+ {
+  "fr": "Tu es le bienvenu.",
+  "en": "You're very welcome here.",
+  "alt": [
+   "Tu es la bienvenue."
+  ],
+  "th": "maison",
+  "b": "A2",
+  "t": 2,
+  "n": "La bienvenue to a woman."
+ },
+ {
+  "fr": "Tu veux un coup de main ?",
+  "en": "Do you want a hand?",
+  "th": "maison",
+  "b": "A2",
+  "t": 2,
+  "n": "Literally: a blow of the hand. A friendly offer of help."
+ },
+ {
+  "fr": "Je peux faire quelque chose ?",
+  "en": "Can I do anything?",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "C'est prêt !",
+  "en": "It's ready!",
+  "th": "maison",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "À table !",
+  "en": "Food's ready!",
+  "th": "maison",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: to the table! Called out for any meal."
+ },
+ {
+  "fr": "Bon appétit !",
+  "en": "Enjoy your meal!",
+  "th": "maison",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Ça sent bon !",
+  "en": "That smells good!",
+  "th": "maison",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "C'est délicieux.",
+  "en": "It's delicious.",
+  "alt": [
+   "C'est très bon."
+  ],
+  "th": "maison",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "C'est toi qui as fait ça ?",
+  "en": "Did you make this yourself?",
+  "th": "maison",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Tu me donneras la recette ?",
+  "en": "Will you give me the recipe?",
+  "th": "maison",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Tu en veux encore ?",
+  "en": "Would you like some more?",
+  "alt": [
+   "Tu en reprends ?"
+  ],
+  "th": "maison",
+  "b": "A2",
+  "t": 1
+ },
+ {
+  "fr": "Oui, juste un peu.",
+  "en": "Yes, just a little.",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je n'ai plus faim.",
+  "en": "I'm full.",
+  "alt": [
+   "J'ai bien mangé."
+  ],
+  "th": "maison",
+  "b": "A1",
+  "t": 1,
+  "n": "Literally: I'm not hungry any more. Avoid je suis plein."
+ },
+ {
+  "fr": "Encore un peu de vin ?",
+  "en": "A little more wine?",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Tu veux du dessert ?",
+  "en": "Would you like some dessert?",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Tu peux me passer le sel ?",
+  "en": "Could you pass me the salt?",
+  "alt": [
+   "Tu me passes le sel ?"
+  ],
+  "th": "maison",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Sers-toi.",
+  "en": "Help yourself.",
+  "alt": [
+   "Servez-vous."
+  ],
+  "th": "maison",
+  "b": "A1",
+  "t": 1,
+  "n": "Tu. Servez-vous is vous."
+ },
+ {
+  "fr": "Qu'est-ce qu'on mange ce soir ?",
+  "en": "What are we having tonight?",
+  "alt": [
+   "On mange quoi ce soir ?"
+  ],
+  "th": "maison",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Je fais des pâtes.",
+  "en": "I'm making pasta.",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Tu restes dîner ?",
+  "en": "Are you staying for dinner?",
+  "alt": [
+   "Tu restes souper ?"
+  ],
+  "th": "maison",
+  "b": "A2",
+  "t": 2,
+  "n": "In Québec and Belgium, souper is the evening meal."
+ },
+ {
+  "fr": "Le petit déjeuner est prêt.",
+  "en": "Breakfast is ready.",
+  "alt": [
+   "Le déjeuner est prêt."
+  ],
+  "th": "maison",
+  "b": "A1",
+  "t": 2,
+  "n": "In Québec and Belgium, déjeuner is breakfast."
+ },
+ {
+  "fr": "Il y a du pain dans le placard.",
+  "en": "There's bread in the cupboard.",
+  "th": "maison",
+  "b": "A1",
+  "t": 3
+ },
+ {
+  "fr": "Tu peux mettre la table ?",
+  "en": "Can you set the table?",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je vais débarrasser.",
+  "en": "I'll clear the table.",
+  "th": "maison",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Je fais la vaisselle.",
+  "en": "I'll do the dishes.",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "C'est à ton tour de cuisiner.",
+  "en": "It's your turn to cook.",
+  "th": "maison",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Il n'y a plus de lait.",
+  "en": "We're out of milk.",
+  "th": "maison",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Le frigo est vide.",
+  "en": "The fridge is empty.",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je fais les courses demain.",
+  "en": "I'm doing the food shopping tomorrow.",
+  "th": "maison",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Tu peux sortir la poubelle ?",
+  "en": "Can you take the bin out?",
+  "alt": [
+   "Tu peux sortir les poubelles ?"
+  ],
+  "th": "maison",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Tu peux allumer la lumière ?",
+  "en": "Can you turn the light on?",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Tu peux éteindre la télé ?",
+  "en": "Can you turn off the TV?",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Tu peux baisser le son ?",
+  "en": "Can you turn it down?",
+  "th": "maison",
+  "b": "A2",
+  "t": 2
+ },
+ {
+  "fr": "Ferme la porte, s'il te plaît.",
+  "en": "Close the door, please.",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Tu peux ouvrir la fenêtre ?",
+  "en": "Could you open the window?",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Quel est le code du wifi ?",
+  "en": "What's the wifi password?",
+  "alt": [
+   "C'est quoi, le code wifi ?"
+  ],
+  "th": "maison",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Le chauffage ne marche pas.",
+  "en": "The heating isn't working.",
+  "th": "maison",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Les clés sont sur la table.",
+  "en": "The keys are on the table.",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "J'ai oublié mes clés.",
+  "en": "I forgot my keys.",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Sonne, c'est au deuxième étage.",
+  "en": "Ring the bell, it's on the second floor.",
+  "th": "maison",
+  "b": "A2",
+  "t": 3,
+  "n": "Two floors up. The ground floor is le rez-de-chaussée."
+ },
+ {
+  "fr": "On regarde un film ?",
+  "en": "Shall we watch a film?",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Tu dors ici ce soir ?",
+  "en": "Are you sleeping here tonight?",
+  "th": "maison",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Voici ta chambre.",
+  "en": "Here's your room.",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Les serviettes sont dans la salle de bain.",
+  "en": "The towels are in the bathroom.",
+  "th": "maison",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Je peux prendre une douche ?",
+  "en": "Can I take a shower?",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Tu veux une couverture ?",
+  "en": "Would you like a blanket?",
+  "alt": [
+   "Tu veux un plaid ?"
+  ],
+  "th": "maison",
+  "b": "A2",
+  "t": 3
+ },
+ {
+  "fr": "Je vais me coucher.",
+  "en": "I'm going to bed.",
+  "th": "maison",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Dors bien.",
+  "en": "Sleep well.",
+  "th": "maison",
+  "b": "A1",
+  "t": 1
+ },
+ {
+  "fr": "Fais de beaux rêves.",
+  "en": "Sweet dreams.",
+  "th": "maison",
+  "b": "A1",
+  "t": 2
+ },
+ {
+  "fr": "Je te raccompagne.",
+  "en": "I'll see you out.",
+  "th": "maison",
+  "b": "A2",
+  "t": 2
+ }
+]
