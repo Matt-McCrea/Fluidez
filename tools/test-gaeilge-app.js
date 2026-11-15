@@ -56,7 +56,7 @@ ok(new RegExp("BUILD = '" + cacheVer + "'").test(perfSrc), 'Perf.BUILD must equa
 const css = fs.readFileSync(path.join(GE, 'css/liofa.css'), 'utf8');
 ['#c9a24e', '#0f3a2a', '#164a36', '#f6efdc', '#d6bc80', '#c8573e'].forEach(c =>
   ok(css.toLowerCase().indexOf(c) !== -1, 'liofa.css lacks the spec colour ' + c));
-ok(!/@import|url\(|fonts\.g/.test(css), 'liofa.css must be self-contained, no web fonts');
+ok(!/@import|url\((?!"data:)|fonts\.g/.test(css), "liofa.css must be self-contained: no web fonts, only inline data: images");
 // no dashes in what the app shows: UI strings in the app scripts (spelling hyphens in n-/t- are fine)
 ['ga-arcade.js', 'gameround.js', 'ga-items.js', 'ga-check.js', 'ga-convo.js'].forEach(f => {
   const src = fs.readFileSync(path.join(GE, 'js', f), 'utf8');

@@ -47,3 +47,8 @@ Mondrian and Rietveld: white, black lines, primary colour blocks. Bright, flat, 
 
 ## Round three for Líofa (14 Nov 2026, Matthew)
 "Colours good, more ornamentation in the background, more knotty, but the script is too much and the gold a little too bright. Better script, more chill." So: gold softened to `#c9a24e` / `#d6bc80`, the serif headings, small caps and drop cap removed (plain sans, only the Líofa wordmark keeps a quiet serif), card emphasis upright, a chain-knot lattice of interlaced rings over the whole background, and a ring-chain knot band under headings and across Imir.
+
+## Real patterns (15 Nov 2026, Matthew: "use a real Celtic knot", "better backgrounds for the Arabic one, look up real examples")
+- **Líofa:** knotwork by Mercat's rule (tools/ga/knot-lib.js): the medial graph of a square grid with breaks, drawn alternating over and under, the way George Bain laid out the Book of Kells panels on dot grids. Rosettes linked by plait, at 16% behind everything; a two-strand cable (gold and red lead) under headings and across Imir. Regenerate with `node tools/ga/make-knot.js`.
+- **Ṭalāqa:** the khatam star-and-cross of Mamluk Cairo and Damascus (the Umayyad Mosque doors and grilles): eight-pointed star outlines on a centred square lattice, the crosses left between them, a small octagon in each star, as gold strapwork at 22%. Regenerate with `node tools/ar/make-pattern.js`.
+Both are inline SVG data URIs in the CSS, so they work offline.
