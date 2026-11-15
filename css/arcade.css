@@ -645,3 +645,6 @@ a.arc-mode { text-decoration:none; }
 .g-name { background:var(--chiva-green) !important; color:#fff !important; }
 .g-band { background:var(--chiva-blue) !important; color:#fff !important; }
 .g-score { color:var(--chiva-red); font-weight:900; }
+
+/* the ? next to each chip, solid like the chips */
+.arc-chipq { background:#fff; color:var(--text); border:2px solid #1d1d1b; }

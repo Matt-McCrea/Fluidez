@@ -917,3 +917,8 @@ h2, .g-prompt, .g-over-score, .arc-stats-top h2, .arc-jugar-k, .arc-name, .arc-m
 .arc-chip.on { background:var(--accent); color:#fff; border-color:#111; }
 .arc-chipq { border-radius:0 !important; border:2px solid #111; color:#111; }
 .arc-chip { color:#111; } .arc-chip.on { color:#fff; }
+
+/* chips sit on a solid panel, so the background pattern never runs behind their text */
+.arc-chip:not(.on), .arc-chipq, .arc-tchip, .arc-irr-tab:not(.on) { background:var(--panel); color:var(--text); }
+.arc-chipq:hover { background:var(--panel-2); }
+.arc-back, .arc-lang, .arc-level, .g-exit { background:var(--panel); }

@@ -863,3 +863,8 @@ h2, .arc-stats-top h2, .arc-top {
 .arc-guided > :not(.arc-top):not(.arc-spot):not(.arc-seg) { opacity:.5; }
 .arc-spot-k { color:var(--ink); }
 .arc-irish { font-style:normal; font-weight:600; color:var(--accent-2); }
+
+/* chips sit on a solid panel, so the background pattern never runs behind their text */
+.arc-chip:not(.on), .arc-chipq, .arc-tchip, .arc-irr-tab:not(.on) { background:var(--panel); color:var(--text); }
+.arc-chipq:hover { background:var(--panel-2); }
+.arc-back, .arc-lang, .arc-level, .g-exit { background:var(--panel); }

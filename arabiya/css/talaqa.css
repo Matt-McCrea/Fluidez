@@ -1014,3 +1014,8 @@ body {
   background:var(--teal); transform:rotate(45deg); box-shadow:0 0 0 3px var(--panel), 0 0 0 5px var(--gold);
 }
 .arc-jugar > * { position:relative; z-index:1; }
+
+/* chips sit on a solid panel, so the background pattern never runs behind their text */
+.arc-chip:not(.on), .arc-chipq, .arc-tchip, .arc-irr-tab:not(.on) { background:var(--panel); color:var(--text); }
+.arc-chipq:hover { background:var(--panel-2); }
+.arc-back, .arc-lang, .arc-level, .g-exit { background:var(--panel); }

@@ -974,3 +974,8 @@ h1, h2 { text-transform:none; letter-spacing:0; font-weight:700; }
 .arc-jugar .arc-jugar-k { color:#fff; }
 .arc-jugar * { color:inherit; }
 @media (prefers-reduced-motion: reduce) { * { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; } }
+
+/* chips sit on a solid panel, so the background pattern never runs behind their text */
+.arc-chip:not(.on), .arc-chipq, .arc-tchip, .arc-irr-tab:not(.on) { background:var(--panel); color:var(--text); }
+.arc-chipq:hover { background:var(--panel-2); }
+.arc-back, .arc-lang, .arc-level, .g-exit { background:var(--panel); }
